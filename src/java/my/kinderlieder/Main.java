@@ -3,17 +3,7 @@
  */
 package my.kinderlieder;
 
-import org.xmlvm.iphone.CGRect;
-import org.xmlvm.iphone.UIApplication;
-import org.xmlvm.iphone.UIApplicationDelegate;
-import org.xmlvm.iphone.UIColor;
-import org.xmlvm.iphone.UIImage;
-import org.xmlvm.iphone.UIImageView;
-import org.xmlvm.iphone.UILabel;
-import org.xmlvm.iphone.UIScreen;
-import org.xmlvm.iphone.UITextAlignment;
-import org.xmlvm.iphone.UIView;
-import org.xmlvm.iphone.UIWindow;
+import org.xmlvm.iphone.*;
 
 public class Main extends UIApplicationDelegate {
 
@@ -29,11 +19,14 @@ public class Main extends UIApplicationDelegate {
         title.setText("Hello");
         title.setTextAlignment(UITextAlignment.Center);
 
-        UIImageView img = new UIImageView(new CGRect(60, 200, 200, 140));
-        img.setImage(UIImage.imageNamed("demo.png"));
+        UIWebView pdfView=new UIWebView(new CGRect(60, 200, 200, 140));
+        pdfView.setScalesPageToFit(true);
+        String pdfPath = NSBundle.mainBundle().pathForResource("die-gedanken-sind-frei-5-strophen-diegedankensindfrei","pdf");
+        pdfView.loadRequest(NSURLRequest.requestWithURL(NSURL.fileURLWithPath(pdfPath)));
+
 
         mainView.addSubview(title);
-        mainView.addSubview(img);
+        mainView.addSubview(pdfView);
 
         window.makeKeyAndVisible();
     }
