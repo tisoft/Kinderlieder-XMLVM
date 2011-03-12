@@ -15,17 +15,11 @@ public class Main extends UIApplicationDelegate {
         mainView.setBackgroundColor(UIColor.whiteColor);
         window.addSubview(mainView);
 
-        UILabel title = new UILabel(new CGRect(0, 150, 320, 40));
-        title.setText("Hello");
-        title.setTextAlignment(UITextAlignment.Center);
-
-        UIWebView pdfView=new UIWebView(new CGRect(60, 200, 200, 140));
+        UIWebView pdfView=new UIWebView(UIScreen.mainScreen().getApplicationFrame());
         pdfView.setScalesPageToFit(true);
         String pdfPath = NSBundle.mainBundle().pathForResource("die-gedanken-sind-frei-5-strophen-diegedankensindfrei","pdf");
         pdfView.loadRequest(NSURLRequest.requestWithURL(NSURL.fileURLWithPath(pdfPath)));
 
-
-        mainView.addSubview(title);
         mainView.addSubview(pdfView);
 
         window.makeKeyAndVisible();
