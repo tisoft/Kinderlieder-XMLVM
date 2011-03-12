@@ -100,7 +100,7 @@
 			<jvmarg value="-Xmx512m"/>
 			<arg value="--in=${out.dir}/classes"/>
 			<arg value="--out=${out.dir}/.xcode"/>
-			<arg value="--target=iphone"/>
+			<arg value="--target=iphonec"/>
 			<arg value="--app-name=${ant.project.name}"/>
 			<arg value="--lib=${xmlvm.lib}"/>
 			<arg value="--resource=${xmlvm.resouce.all}"/>
