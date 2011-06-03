@@ -19,6 +19,7 @@ public class Main extends UIApplicationDelegate {
         songInfos.add(new SongInfo("Die Gedanken sind frei", NSBundle.mainBundle().pathForResource("die-gedanken-sind-frei-5-strophen-diegedankensindfrei", "pdf")));
         songInfos.add(new SongInfo("Hänschen klein", NSBundle.mainBundle().pathForResource("haenschen-klein-haenschenkleinc_0", "pdf")));
         songInfos.add(new SongInfo("Mein Hut der hat drei Ecken", NSBundle.mainBundle().pathForResource("mein-hut-der-hat-drei-ecken-mein-hut-der-hat-drei-ecken-d-dur", "pdf")));
+        songInfos.add(new SongInfo("Ein Männlein steht im Walde", NSBundle.mainBundle().pathForResource("ein-maennlein-steht-im-walde-einmaennleinstehtimwalde", "pdf")));
 
         UIViewController rootViewController = new UIViewController() {
             @Override
