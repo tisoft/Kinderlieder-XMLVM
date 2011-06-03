@@ -14,23 +14,30 @@ public class Main extends UIApplicationDelegate {
     public void applicationDidFinishLaunching(UIApplication app) {
         final UIWindow window = new UIWindow(UIScreen.mainScreen().getBounds());
 
-        final List<SongInfo> songInfos=new ArrayList<SongInfo>();
-        songInfos.add(new SongInfo("Die Gedanken sind frei",NSBundle.mainBundle().pathForResource("die-gedanken-sind-frei-5-strophen-diegedankensindfrei", "pdf")));
+        final List<SongInfo> songInfos = new ArrayList<SongInfo>();
+        songInfos.add(new SongInfo("Alle meine Entchen", NSBundle.mainBundle().pathForResource("alle-meine-entchen-allemeineentchen", "pdf")));
+        songInfos.add(new SongInfo("Die Gedanken sind frei", NSBundle.mainBundle().pathForResource("die-gedanken-sind-frei-5-strophen-diegedankensindfrei", "pdf")));
         songInfos.add(new SongInfo("Hänschen klein", NSBundle.mainBundle().pathForResource("haenschen-klein-haenschenkleinc_0", "pdf")));
         songInfos.add(new SongInfo("Mein Hut der hat drei Ecken", NSBundle.mainBundle().pathForResource("mein-hut-der-hat-drei-ecken-mein-hut-der-hat-drei-ecken-d-dur", "pdf")));
 
-        UIViewController rootViewController = new UIViewController();
+        UIViewController rootViewController = new UIViewController() {
+            @Override
+            public boolean shouldAutorotateToInterfaceOrientation(int uiInterfaceOrientation) {
+                return uiInterfaceOrientation == UIInterfaceOrientation.Portrait ||
+                        uiInterfaceOrientation == UIInterfaceOrientation.LandscapeLeft ||
+                        uiInterfaceOrientation == UIInterfaceOrientation.LandscapeRight;
+            }
+        };
         final UINavigationController navigationController = new UINavigationController(rootViewController);
         window.addSubview(navigationController.getView());
 
         UITableView mainView = new UITableView(window.getFrame(), UITableViewStyle.Plain);
         rootViewController.setView(mainView);
-
         mainView.setDataSource(new UITableViewDataSource() {
             @Override
             public UITableViewCell cellForRowAtIndexPath(UITableView table, NSIndexPath idx) {
 
-                UITableViewCell cell=new UITableViewCell(UITableViewCellStyle.Default, null);
+                UITableViewCell cell = new UITableViewCell(UITableViewCellStyle.Default, null);
                 cell.getTextLabel().setText(songInfos.get(idx.getRow()).name);
                 return cell;
             }
@@ -55,7 +62,7 @@ public class Main extends UIApplicationDelegate {
             }
         });
 
-         window.makeKeyAndVisible();
+        window.makeKeyAndVisible();
     }
 
     public static void main(String[] args) {
