@@ -72,8 +72,18 @@
 
     -->
 
-	<target name="-pre-compile" depends="-xmlvm-exists"/>
-	<target name="-post-clean" depends="-xcode-clean"/>
-	<target name="-post-compile" depends="-xcode-resources"/>
+    <target name="-pre-compile" depends="-xmlvm-exists">
+        <apply executable="lilypond" dir="resources">
+            <arg value="--header=title"/>
+            <fileset dir="src/ly">
+                <patternset>
+                    <include name="*.ly"/>
+                    <exclude name="default.ly"/>
+                </patternset>
+            </fileset>
+        </apply>
+    </target>
+    <target name="-post-clean" depends="-xcode-clean"/>
+    <target name="-post-compile" depends="-xcode-resources"/>
 
 </project>

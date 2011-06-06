@@ -5,7 +5,10 @@ package my.kinderlieder;
 
 import org.xmlvm.iphone.*;
 
+import java.io.*;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class Main extends UIApplicationDelegate {
@@ -14,12 +17,24 @@ public class Main extends UIApplicationDelegate {
     public void applicationDidFinishLaunching(UIApplication app) {
         final UIWindow window = new UIWindow(UIScreen.mainScreen().getBounds());
 
+        File f = new File(NSBundle.mainBundle().pathForResource(".", null));
+
         final List<SongInfo> songInfos = new ArrayList<SongInfo>();
-        songInfos.add(new SongInfo("Alle meine Entchen", NSBundle.mainBundle().pathForResource("alle-meine-entchen-allemeineentchen", "pdf")));
-        songInfos.add(new SongInfo("Die Gedanken sind frei", NSBundle.mainBundle().pathForResource("die-gedanken-sind-frei-5-strophen-diegedankensindfrei", "pdf")));
-        songInfos.add(new SongInfo("Hänschen klein", NSBundle.mainBundle().pathForResource("haenschen-klein-haenschenkleinc_0", "pdf")));
-        songInfos.add(new SongInfo("Mein Hut der hat drei Ecken", NSBundle.mainBundle().pathForResource("mein-hut-der-hat-drei-ecken-mein-hut-der-hat-drei-ecken-d-dur", "pdf")));
-        songInfos.add(new SongInfo("Ein Männlein steht im Walde", NSBundle.mainBundle().pathForResource("ein-maennlein-steht-im-walde-einmaennleinstehtimwalde", "pdf")));
+
+        for (File file : f.listFiles(new FilenameFilter() {
+            public boolean accept(File dir, String name) {
+                return name.endsWith("title");
+            }
+        })) {
+            System.out.println(file);
+            songInfos.add(new SongInfo(NSString.stringWithContentsOfFile(file.getAbsolutePath()), NSBundle.mainBundle().pathForResource(file.getName().substring(0, file.getName().length() - 6), "pdf")));
+        }
+
+        Collections.sort(songInfos, new Comparator<SongInfo>() {
+            public int compare(SongInfo o1, SongInfo o2) {
+                return o1.name.compareToIgnoreCase(o2.name);
+            }
+        });
 
         UIViewController rootViewController = new UIViewController() {
             @Override
