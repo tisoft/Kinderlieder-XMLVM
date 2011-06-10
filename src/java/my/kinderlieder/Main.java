@@ -6,13 +6,9 @@ package my.kinderlieder;
 import org.xmlvm.iphone.*;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class Main extends UIApplicationDelegate {
-
     @Override
     public void applicationDidFinishLaunching(UIApplication app) {
         final UIWindow window = new UIWindow(UIScreen.mainScreen().getBounds());
@@ -65,15 +61,32 @@ public class Main extends UIApplicationDelegate {
         });
 
         mainView.setDelegate(new UITableViewDelegate() {
+            //this should be local, but can't since we need it inside the delegate
+            private UIBarButtonItem rightBarButtonItem;
+
             @Override
             public void didSelectRowAtIndexPath(UITableView tableview, NSIndexPath indexPath) {
                 UIViewController pdfViewController = new UIViewController();
                 UIWebView pdfView = new UIWebView(window.getFrame());
                 pdfViewController.setView(pdfView);
                 pdfView.setScalesPageToFit(true);
-                pdfView.loadRequest(NSURLRequest.requestWithURL(NSURL.fileURLWithPath(songInfos.get(indexPath.getRow()).pdfPath)));
+                final NSURL pdfURL = NSURL.fileURLWithPath(songInfos.get(indexPath.getRow()).pdfPath);
+                pdfView.loadRequest(NSURLRequest.requestWithURL(pdfURL));
+                rightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Action, new UIBarButtonItemDelegate() {
+                    public void clicked() {
+                        System.out.println(this);
+                        System.out.println(pdfURL);
+                        UIPrintInteractionController print = UIPrintInteractionController.sharedPrintController();
+                        print.setPrintingItem(pdfURL);
+                        print.presentFromBarButtonItem(rightBarButtonItem, true, new UIPrintInteractionController.UIPrintInteractionCompletionHandler() {
 
-
+                            public void completed(UIPrintInteractionController controller, boolean b, NSError nsError) {
+                                System.out.println("finished: " + b + ", error: " + nsError);
+                            }
+                        });
+                    }
+                });
+                pdfViewController.getNavigationItem().setRightBarButtonItem(rightBarButtonItem);
                 navigationController.pushViewController(pdfViewController, true);
             }
         });
