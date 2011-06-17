@@ -72,8 +72,14 @@
 
     -->
 
-    <target name="-pre-compile" depends="-xmlvm-exists">
-        <apply executable="lilypond" dir="resources">
+    <target name="-pre-compile" depends="-xmlvm-exists,generate-resources"/>
+    <target name="-post-clean" depends="-xcode-clean,delete-resources"/>
+    <target name="-post-compile" depends="-xcode-resources"/>
+
+    <target name="-process-ly">
+        <mkdir dir="generated/tmp"/>
+        <apply executable="lilypond" dir="generated/tmp">
+            <globmapper from="*.ly" to="generated/tmp/*.pdf"/>
             <arg value="--header=title"/>
             <fileset dir="src/ly">
                 <patternset>
@@ -83,7 +89,50 @@
             </fileset>
         </apply>
     </target>
-    <target name="-post-clean" depends="-xcode-clean"/>
-    <target name="-post-compile" depends="-xcode-resources"/>
 
+    <target name="-process-midi" depends="-process-ly">
+        <apply executable="fluidsynth" dir="generated/tmp">
+            <globmapper from="*.midi" to="generated/tmp/*.wav"/>
+            <arg value="-l -i -a file"/>
+            <arg value="-F"/>
+            <targetfile/>
+            <arg value="../../FluidR3_GM.sf2"/>
+            <srcfile/>
+            <fileset dir="generated/tmp">
+                <patternset>
+                    <include name="*.midi"/>
+                </patternset>
+            </fileset>
+        </apply>
+    </target>
+
+    <target name="-process-wav" depends="-process-midi">
+        <apply executable="ffmpeg" dir="generated/tmp">
+            <globmapper from="*.wav" to="generated/tmp/*.m4a"/>
+            <arg value="-y"/>
+            <arg value="-i"/>
+            <srcfile/>
+            <targetfile/>
+            <fileset dir="generated/tmp">
+                <patternset>
+                    <include name="*.wav"/>
+                </patternset>
+            </fileset>
+        </apply>
+    </target>
+
+    <target name="generate-resources" depends="-process-wav">
+        <mkdir dir="generated/resources"/>
+        <copy todir="generated/resources">
+            <fileset dir="generated/tmp">
+                <include name="**/*.pdf"/>
+                <include name="**/*.m4a"/>
+                <include name="**/*.title"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="delete-resources">
+        <delete dir="generated"/>
+    </target>
 </project>
