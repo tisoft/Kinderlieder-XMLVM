@@ -26,6 +26,7 @@ akkorde = \chordmode {
 global = {
   \autoBeamOff
   \time 4/4
+  \tempo 4 = 120
   \key d \major
 }
 
@@ -54,6 +55,8 @@ text = \lyricmode {
     \new Voice = "Lied" { \melodie }
     \new Lyrics \lyricsto "Lied" { \text }
   >>
+  \layout {}
+  \midi {}
 }
 
 \markup {

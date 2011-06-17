@@ -52,7 +52,7 @@ Harmonien = \chordmode {
   >>
 
   \layout { }
-  % \midi { }
+  \midi { }
 }
 \markup {
   \fill-line {

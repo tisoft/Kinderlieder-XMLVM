@@ -42,11 +42,14 @@ theChords = \chordmode {
       \autoBeamOff
       \clef treble
       \key e \major
+      \tempo 4 = 160
       \time 4/4
       \AvoiceAA
     }
     \new Lyrics \lyricsto "Lied" { \ApartAverseA }
   >>
+ \layout {}
+ \midi {}
 }
 
 \markup {

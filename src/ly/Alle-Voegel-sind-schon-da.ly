@@ -20,6 +20,7 @@ global = {
   \autoBeamOff
   \key d \major
   \time 4/4
+  \tempo 4 = 160
 }
 
 harmonies = \chordmode {
@@ -53,7 +54,7 @@ text = \lyricmode {
   \layout {
     indent = #0 % Einzug beim ersten System auf 0 setzen
   }
-  % \midi {}
+  \midi {}
 }
 
 \markup {

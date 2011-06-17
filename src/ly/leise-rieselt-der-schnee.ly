@@ -23,6 +23,7 @@ AvoiceAA = \relative c''{
   \autoBeamOff
   \clef treble
   \key g \major
+  \tempo 4 = 80
   \time 6/8
   h4 h8 a h a      | % 1
   g2.      | % 2
@@ -56,6 +57,8 @@ theChords = \chordmode {
     >>
     \context Lyrics = ApartAverseA\lyricsto AvoiceAA  \ApartAverseA
   >>
+ \layout {}
+ \midi {}
 }%% end of score-block
 
  \markup {

@@ -44,6 +44,7 @@ wideleVoice = \new Staff {
   \autoBeamOff
   \time 3/4
   \key g \major
+  \tempo 4 = 160
   \clef treble
   \relative c'' {
     \context Voice = "wideleMelody" {
@@ -96,7 +97,14 @@ wideleHarmonies = \chordmode {
 
   \layout {  indent = #0
   }
-
+}
+\score {
+  \unfoldRepeats
+  <<
+    \context ChordNames { \wideleHarmonies }
+    \wideleVoice
+  >>
+  \midi {}
 }
 
 \markup {

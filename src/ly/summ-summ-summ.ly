@@ -21,6 +21,7 @@
 common = {
   \time 4/4
   \key f \major
+  \tempo 4 = 160
   \autoBeamOff
 }
 
@@ -60,6 +61,8 @@ Stropheeins = \lyrics {
     \new Voice = "mel" { \common \Singstimme }
     \new Lyrics \lyricsto mel \Stropheeins
   >>
+ \layout {}
+ \midi {}
 }
 
 \markup {

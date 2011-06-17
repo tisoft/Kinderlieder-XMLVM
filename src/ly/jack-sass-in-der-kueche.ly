@@ -52,10 +52,13 @@ harmonies = \chordmode {
       \autoBeamOff
       \time 4/4
       \key d \major
+      \tempo 4 = 180
       \transpose d g \Singstimme
     }
     \new Lyrics \lyricsto mel \Stropheeins
   >>
+ \layout {}
+ \midi {}
 }
 
  % some settings % vim: sw=2 et

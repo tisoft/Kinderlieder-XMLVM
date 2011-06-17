@@ -22,6 +22,7 @@ AvoiceAA = \relative c'{
   \autoBeamOff
   \clef treble
   \key f \major
+  \tempo 4 = 160
   \time 4/4
   f4 c d c      | % 1
   d8[ f] e[ g] f4 c      | % 2
@@ -56,6 +57,8 @@ ApartAverseA = \lyricmode {
     >>
     \context Lyrics = ApartAverseA\lyricsto AvoiceAA  \ApartAverseA
   >>
+ \layout {}
+ \midi {}
 }
  \markup {
    \fill-line {

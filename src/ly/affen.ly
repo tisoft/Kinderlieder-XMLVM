@@ -64,11 +64,29 @@ text = \lyricmode {
       \clef "treble"
       \time 4/4
       \key c\major
+      \tempo 4 = 200
       \autoBeamOff
       \strophe
     }
     \new Lyrics \lyricsto "Lied" { \text }
   >>
+  \layout {}
+}
+\score {
+  \unfoldRepeats
+  <<
+    \new ChordNames { \akkordea }
+    \new Voice = "Lied" {
+      \clef "treble"
+      \time 4/4
+      \key c\major
+      \tempo 4 = 200
+      \autoBeamOff
+      \strophe
+    }
+    \new Lyrics \lyricsto "Lied" { \text }
+  >>
+  \midi {}
 }
 
  \markup {

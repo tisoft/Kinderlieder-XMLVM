@@ -79,6 +79,8 @@ text = \lyricmode {
     }
     \new Lyrics \lyricsto "Lied" { \text }
   >>
+ \layout {}
+ \midi {}
 }
 
 % some settings % vim: sw=2 et

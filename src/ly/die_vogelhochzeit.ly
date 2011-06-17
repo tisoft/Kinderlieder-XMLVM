@@ -62,6 +62,8 @@ text = \lyricmode {
     }
     \new Lyrics \lyricsto "Lied" { \text }
   >>
+ \layout {}
+ \midi {}
 }
 \markup {
   \fill-line {

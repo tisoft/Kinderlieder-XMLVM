@@ -23,6 +23,7 @@ AvoiceAA = \relative c'{
   \autoBeamOff
   \clef treble
   \key g \major
+  \tempo 4 = 120
   \time 3/4
   \partial 4*1
   d4     g g a      | % 1
@@ -58,7 +59,8 @@ theChords = \chordmode {
 
     \set Score.majorSevenSymbol = \markup {maj7}
   >>
-
+ \layout {}
+ \midi {}
 }%% end of score-block
 
 \markup {

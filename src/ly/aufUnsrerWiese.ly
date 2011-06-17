@@ -57,10 +57,13 @@ akkorde = \chordmode {
       \autoBeamOff
       \clef treble
       \key g \major
+      \tempo 4 = 120
       \time 4/4
       \melodie
     }
   >>
+ \layout {}
+ \midi {}
 }
 
 \markup {

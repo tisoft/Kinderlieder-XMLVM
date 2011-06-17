@@ -56,10 +56,13 @@ text = \lyricmode {
       \clef "treble"
       \time 4/4
       \key f\major
+      \tempo 4 = 160
       \melodie
     }
     \new Lyrics \lyricsto "Lied" { \text }
   >>
+ \layout {}
+ \midi {}
 }
 
 \markup {

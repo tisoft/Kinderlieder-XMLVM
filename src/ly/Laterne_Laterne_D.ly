@@ -35,6 +35,7 @@ laterneVoice = \new Staff {
         
   \time 4/4
   \key d \major
+  \tempo 4 = 180
   \clef treble
   \relative c'' {
     \context Voice = "laterneMelody" {
@@ -75,6 +76,8 @@ laterneHarmonies = \chordmode {
       \lyricsto "laterneMelody" \laterneVerse
     }
   >>
+ \layout {}
+ \midi {}
 }
 
 \markup {

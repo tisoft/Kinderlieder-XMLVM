@@ -12,7 +12,7 @@
 #(set-global-staff-size 16)
 
 akkordea = \chordmode {
-  g1 R1 d1 g1 d1 g1 c2 d2 g4 d4 g4
+  g1 R1 d1 g1 \repeat volta 2 {d1 g1 c2 d2 g4 d4 g2}
 }
 
 
@@ -47,11 +47,29 @@ wdh = \lyricmode {
       \clef "treble"
       \time 4/4
       \key g\major
+      \tempo 4 = 160
       \strophe \refrain
     }
     \new Lyrics \lyricsto "Lied" { \text \wdh}
   >>
+ \layout {}
 }
+\score {
+ \unfoldRepeats
+  <<
+    \new ChordNames { \akkordea }
+    \new Voice = "Lied" {
+      \autoBeamOff
+      \clef "treble"
+      \time 4/4
+      \key g\major
+      \tempo 4 = 160
+      \strophe \refrain
+    }
+  >>
+ \midi {}
+}
+
 
 \markup {
   \fill-line {

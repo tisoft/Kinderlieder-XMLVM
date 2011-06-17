@@ -56,10 +56,13 @@
       \autoBeamOff
       \key f \major
       \time 3/4
+      \tempo 4 = 160
       \refrain \verse
     }
     \new Lyrics \lyricsto "Lied" { \refrainWords \verseOne}
   >>
+ \layout {}
+ \midi {}
 }
 
 \markup {

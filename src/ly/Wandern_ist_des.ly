@@ -65,11 +65,14 @@ text = \lyricmode {
       \clef "treble"
       \time 4/4
       \key g \major
+      \tempo 4 = 160
       \autoBeamOff
       \melodie
     }
     \new Lyrics \lyricsto "Lied" { \text }
   >>
+ \layout {}
+ \midi {}
 }
 \markup {
   \fill-line {

@@ -61,11 +61,14 @@ vLyrics = \lyricmode {
       \autoBeamOff
       \clef treble
       \key f \major
+      \tempo 4 = 80
       \time 2/4
       \vMelody
     }
     \new Lyrics \lyricsto "Lied" { \vLyrics }
   >>
+ \layout {}
+ \midi {}
 }
 
 \markup {

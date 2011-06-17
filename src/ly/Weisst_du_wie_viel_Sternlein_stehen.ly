@@ -38,6 +38,7 @@
     \relative c' {
       \autoBeamOff
       \key d \major
+      \tempo 4 = 100
       \time 3/4
 
       \repeat unfold 2 {
@@ -71,6 +72,9 @@
       an der gan -- zen gro -- ßen Zahl.
     }
   >>
+ \layout {}
+ \midi {}
+
 }
 
 \markup {

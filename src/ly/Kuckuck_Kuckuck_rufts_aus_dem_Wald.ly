@@ -15,6 +15,7 @@
 
 global = {
   \key f \major
+  \tempo 4 = 200
   \time 3/4
 }
 
@@ -56,6 +57,8 @@ text = \lyricmode {
     }
     \new Lyrics \lyricsto "Lied" { \text }
   >>
+ \layout {}
+ \midi {}
 }
 
 \markup {

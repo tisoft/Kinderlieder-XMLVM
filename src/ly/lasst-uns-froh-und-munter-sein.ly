@@ -41,11 +41,14 @@ harmonies = \chords {
     \new Voice = "Lied" {
       \autoBeamOff
       \key c \major
+      \tempo 4 = 160
       \time 4/4
       \verse
     }
     \new Lyrics \lyricsto "Lied" { \verseOne}
   >>
+ \layout {}
+ \midi {}
 }
 
  \markup {

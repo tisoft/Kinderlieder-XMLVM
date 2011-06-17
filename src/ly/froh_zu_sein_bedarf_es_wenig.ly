@@ -26,6 +26,7 @@ vChords = \chordmode {
 vMelody = \relative c'' {
   \clef treble
   \key g \major
+  \tempo 4 = 120
   \time 4/4
   d4.^"1."%-1
 %  \mark \default
@@ -54,6 +55,8 @@ vLyrics = \lyricmode {
     \new Voice = "Lied" { \repeat volta 2 \vMelody }
     \new Lyrics \lyricsto "Lied" { \vLyrics }
   >>
+ \layout {}
+ \midi {}
 }
 
  % some settings % vim: sw=2 et

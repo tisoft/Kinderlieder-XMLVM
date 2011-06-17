@@ -33,7 +33,8 @@
 AvoiceAA = \relative c'{
   \autoBeamOff
   \clef treble
-  \key d \major 
+  \key d \major
+  \tempo 4 = 160
   \time 4/4 
   a'4 a h h      | % 1
   a a fis2      | % 2
@@ -73,6 +74,8 @@ theChords = \chordmode {
     >>
     \context Lyrics = ApartAverseA\lyricsto AvoiceAA  \ApartAverseA
   >>
+ \layout {}
+ \midi {}
 }%% end of score-block
 
  % some settings % vim: sw=2 et

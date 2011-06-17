@@ -62,6 +62,7 @@ vLyrics = \lyricmode {
           \autoBeamOff
           \clef treble
           \key d \major
+          \tempo 4 = 80
           \time 2/4
           \vMelody
         }
@@ -75,6 +76,7 @@ vLyrics = \lyricmode {
        \accepts "Lyrics"
      }
   }
+  \midi {}
 }
 
 \markup {

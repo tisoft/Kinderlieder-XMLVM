@@ -51,12 +51,13 @@ Text=\lyricmode {
       \autoBeamOff
       \clef violin
       \key d \major
+      \tempo 4 = 80
       \time 2/4
       \Melodie
     }
     \new Lyrics = Strophe \lyricsto Melodie \Text
   >>
-  %\midi{}
+  \midi{}
 }
 
 

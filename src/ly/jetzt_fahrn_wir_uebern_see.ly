@@ -82,12 +82,32 @@ text = \lyricmode {
       \clef "treble"
       \time 2/4
       \key d \major
+      \tempo 4 = 120
       \autoBeamOff
       \melodie
     }
     \new Lyrics \lyricsto "Lied" { \text }
   >>
+ \layout {}
 }
+
+\score {
+  \unfoldRepeats
+  \transpose d f
+  <<
+    \new ChordNames { \akkorde }
+    \new Voice = "Lied" {
+      \clef "treble"
+      \time 2/4
+      \key d \major
+      \tempo 4 = 120
+      \autoBeamOff
+      \melodie
+    }
+  >>
+ \midi {}
+}
+
 
 \markup {
   \fill-line {

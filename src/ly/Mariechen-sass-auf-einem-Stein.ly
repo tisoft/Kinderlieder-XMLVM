@@ -16,6 +16,7 @@
 global = {
   \key f \major
   \time 2/4
+  \tempo 4 = 120
   \autoBeamOff
 }
 
@@ -44,7 +45,7 @@ text = \lyricmode {
   \layout {
     indent = #0 % Einzug beim ersten System auf 0 setzen
   }
-  % \midi {}
+  \midi {}
 }
 
 \markup {

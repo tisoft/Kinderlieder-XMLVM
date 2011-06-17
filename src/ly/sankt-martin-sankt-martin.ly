@@ -71,12 +71,15 @@ akkorde = \chordmode {
       \autoBeamOff
       \time 4/4
       \key g \major
+      \tempo 4 = 160
       \clef treble
       \dynamicUp
       \melodie
     }
     \new Lyrics \lyricsto "Lied" { \verse }
   >>
+ \layout {}
+ \midi {}
 }
 
 

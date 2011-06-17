@@ -23,6 +23,7 @@ AvoiceAA = \relative c'{
   \autoBeamOff
   \clef treble
   \key c \major
+  \tempo 4 = 60
   \time 6/8
    g'8. [a16] g8 e4.      | % 1
   g8. a16 g8 e4.      | % 2
@@ -62,6 +63,8 @@ theChords = \chordmode {
     \new Voice = "Lied" { \AvoiceAA}
     \new Lyrics \lyricsto "Lied" { \ApartAverseB}
   >>
+ \layout {}
+ \midi {}
 }
 
 \markup {

@@ -20,6 +20,7 @@
 
 #(set-global-staff-size 16)
 
+\score {
 <<
  \chords {
    \germanChords
@@ -29,6 +30,7 @@
   \relative c' {
     \autoBeamOff
     \key f \major
+    \tempo 4 = 100
     \time 6/8
     \partial 8
       c8
@@ -74,6 +76,9 @@
     }
 %}
 >>
+\layout {}
+\midi {}
+}
 
 \markup {
   \fill-line {

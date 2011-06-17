@@ -16,6 +16,7 @@
 global = {
   \autoBeamOff
   \key c \major
+  \tempo 4 = 120
   \time 3/4
   \partial 4
 }
@@ -61,6 +62,8 @@ text = \lyricmode {
     }
     \new Lyrics \lyricsto "Lied" { \text }
   >>
+ \layout {}
+ \midi {}
 }
 
 \markup {

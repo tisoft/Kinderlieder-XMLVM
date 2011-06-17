@@ -42,6 +42,7 @@ haeschenVoice = \new Staff {
   \time 2/4
 
   \key d \major
+  \tempo 4 = 120
   \clef treble
   \relative c' {
     \context Voice = "haeschenMelody" {
@@ -82,10 +83,8 @@ haeschenHarmonies = \chordmode {
   >>
   \layout {  indent = #0
   }
-%{
   \midi {
   }
-%}
 }
 
  % some settings % vim: sw=2 et

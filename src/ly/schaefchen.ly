@@ -16,6 +16,7 @@
 global = {
   \time 4/4
   \key c \major % für transpose
+  \tempo 4 = 160
   \partial 4
   \autoBeamOff \dynamicUp
 }
@@ -58,6 +59,7 @@ textA = \lyricmode {
   \layout {
     indent = 0
   }
+  \midi {}
 }
 
 \markup {

@@ -15,13 +15,14 @@
 global = {
   \autoBeamOff
   \key f \major
+  \tempo 4 = 100
   \time 6/8
   \partial 8
 }
 
 akkorde = \chordmode {
   \set chordChanges = ##t
-  s8 f1*6/8 f c:7 f f f c:7 f f f c f1*5/8
+  s8 f1*6/8 f c:7 f f f c:7 f1*5/8 \repeat volta 2 {f8 f1*6/8 f c f1*5/8}
 }
 
 refrainmelodie = \relative c' {
@@ -39,11 +40,11 @@ refrainmelodie = \relative c' {
 }
 
 versmelodie = \relative c''{
-  \bar "|:" a8 |
+  \repeat volta 2 { a8 |
   c4 a8 f4 a8 |
   c4 a8 f4 f8 |
   g8 g g g a g |
-  f4 r8 r4 \bar ":|"
+  f4 r8 r4 }
 }
 
 refraintext = \lyricmode {
@@ -69,6 +70,18 @@ verstext = \lyricmode {
     \new Lyrics \lyricsto "Refrain" { \refraintext }
     \new Lyrics \lyricsto "Strophe" { \verstext }
   >>
+ \layout {}
+}
+\score {
+  \unfoldRepeats
+  <<
+    \new ChordNames { \akkorde }
+    \new Voice = "Refrain" {
+      \refrainmelodie
+      \new Voice = "Strophe" { \versmelodie }
+    }
+  >>
+ \midi {}
 }
 
 \markup {
