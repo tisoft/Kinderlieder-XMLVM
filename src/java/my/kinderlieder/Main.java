@@ -112,6 +112,9 @@ public class Main extends UIApplicationDelegate {
                     pdfViewController.getNavigationItem().setRightBarButtonItem(rightBarButtonItem);
                 }
 
+                if (audioPlayer != null) {
+                    audioPlayer.stop();
+                }
                 audioPlayer = AVAudioPlayer.audioPlayerWithContentsOfURL(NSURL.fileURLWithPath(songInfo.m4aPath), null);
                 audioPlayer.prepareToPlay();
                 playButton = new UIBarButtonItem(UIBarButtonSystemItem.Play, new UIBarButtonItemDelegate() {
