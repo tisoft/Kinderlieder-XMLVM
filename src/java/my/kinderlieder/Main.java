@@ -86,11 +86,12 @@ public class Main extends UIApplicationDelegate {
 
             @Override
             public void didSelectRowAtIndexPath(UITableView tableview, NSIndexPath indexPath) {
+                final SongInfo songInfo = songInfos.get(indexPath.getRow());
                 final UIViewController pdfViewController = new UIViewController();
+                pdfViewController.setTitle(songInfo.name);
                 UIWebView pdfView = new UIWebView(window.getFrame());
                 pdfViewController.setView(pdfView);
                 pdfView.setScalesPageToFit(true);
-                final SongInfo songInfo = songInfos.get(indexPath.getRow());
                 final NSURL pdfURL = NSURL.fileURLWithPath(songInfo.pdfPath);
                 pdfView.loadRequest(NSURLRequest.requestWithURL(pdfURL));
                 if (UIPrintInteractionController.isPrintingAvailable()) {
