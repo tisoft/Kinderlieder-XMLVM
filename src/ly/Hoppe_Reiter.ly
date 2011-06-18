@@ -45,6 +45,7 @@ Harmonien = \chordmode {
     \new Voice = "eins" {
       \clef violin
       \key d \major
+      \tempo 4 = 200
       \time 4/4
       \autoBeamOff \Melodie
     }
