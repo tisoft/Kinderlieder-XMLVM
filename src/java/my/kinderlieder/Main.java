@@ -5,7 +5,8 @@ package my.kinderlieder;
 
 import org.xmlvm.iphone.*;
 
-import java.io.*;
+import java.io.File;
+import java.io.FilenameFilter;
 import java.util.*;
 
 public class Main extends UIApplicationDelegate {
@@ -65,20 +66,23 @@ public class Main extends UIApplicationDelegate {
             public void raiseEvent(UIControl sender, int uiControlEvent) {
                 UIViewController infoController = new UIViewController();
                 final UIWebView infoView = new UIWebView(window.getFrame());
+                infoView.setDelegate(new UIWebViewDelegate() {
+                    @Override
+                    public boolean shouldStartLoadWithRequest(UIWebView webView, NSURLRequest request, int uiWebViewNavigationType) {
+
+                        final NSURL url = request.URL();
+                        if(url.absoluteString().startsWith("file")){
+                            return true;
+                        } else {
+                            UIApplication.sharedApplication().openURL(url);
+                            return false;
+                        }
+                    }
+                });
                 infoView.setScalesPageToFit(true);
                 infoView.loadRequest(NSURLRequest.requestWithURL(NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("info", "html"))));
                 infoController.setTitle("Info");
-
                 infoController.setView(infoView);
-                UIButton backButton = UIButton.buttonWithType(UIButtonType.RoundedRect);
-                backButton.setFrame(new CGRect(0,0,30,30));
-                backButton.setTitle("\u25C0", UIControlState.Normal);
-                backButton.addTarget(new UIControlDelegate() {
-                    public void raiseEvent(UIControl sender, int uiControlEvent) {
-                        infoView.goBack();
-                    }
-                }, UIControlEvent.TouchUpInside);
-                infoController.setToolbarItems(new ArrayList<UIBarButtonItem>(Arrays.asList(new UIBarButtonItem(backButton))));
                 navigationController.pushViewController(infoController, true);
             }
         }, UIControlEvent.TouchUpInside);
