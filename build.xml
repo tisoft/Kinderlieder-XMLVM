@@ -112,6 +112,8 @@
             <arg value="-y"/>
             <arg value="-i"/>
             <srcfile/>
+            <arg value="-vol"/>
+            <arg value="1024"/>
             <targetfile/>
             <fileset dir="generated/tmp">
                 <patternset>
