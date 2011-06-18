@@ -45,7 +45,8 @@ public class Main extends UIApplicationDelegate {
         };
         final UINavigationController navigationController = new UINavigationController(rootViewController);
         navigationController.setToolbarHidden(false);
-        /*navigationController.setDelegate*/System.out.println(new UINavigationControllerDelegate() {
+        /*navigationController.setDelegate*/
+        System.out.println(new UINavigationControllerDelegate() {
             public void willShowViewController(UINavigationController navigationController, UIViewController viewController, boolean animated) {
             }
 
@@ -58,6 +59,30 @@ public class Main extends UIApplicationDelegate {
         window.addSubview(navigationController.getView());
 
         UITableView mainView = new UITableView(window.getFrame(), UITableViewStyle.Plain);
+        rootViewController.setTitle("Kinderlieder");
+        final UIButton infoButton = UIButton.buttonWithType(UIButtonType.InfoLight);
+        infoButton.addTarget(new UIControlDelegate() {
+            public void raiseEvent(UIControl sender, int uiControlEvent) {
+                UIViewController infoController = new UIViewController();
+                final UIWebView infoView = new UIWebView(window.getFrame());
+                infoView.setScalesPageToFit(true);
+                infoView.loadRequest(NSURLRequest.requestWithURL(NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("info", "html"))));
+                infoController.setTitle("Info");
+
+                infoController.setView(infoView);
+                UIButton backButton = UIButton.buttonWithType(UIButtonType.RoundedRect);
+                backButton.setFrame(new CGRect(0,0,30,30));
+                backButton.setTitle("\u25C0", UIControlState.Normal);
+                backButton.addTarget(new UIControlDelegate() {
+                    public void raiseEvent(UIControl sender, int uiControlEvent) {
+                        infoView.goBack();
+                    }
+                }, UIControlEvent.TouchUpInside);
+                infoController.setToolbarItems(new ArrayList<UIBarButtonItem>(Arrays.asList(new UIBarButtonItem(backButton))));
+                navigationController.pushViewController(infoController, true);
+            }
+        }, UIControlEvent.TouchUpInside);
+        rootViewController.setToolbarItems(new ArrayList<UIBarButtonItem>(Arrays.asList(new UIBarButtonItem(infoButton))));
         rootViewController.setView(mainView);
         mainView.setDataSource(new UITableViewDataSource() {
             @Override
