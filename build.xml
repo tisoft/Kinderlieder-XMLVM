@@ -73,7 +73,7 @@
     -->
 
     <target name="-pre-compile" depends="-xmlvm-exists,generate-resources"/>
-    <target name="-post-clean" depends="-xcode-clean,delete-resources"/>
+    <target name="-post-clean" depends="-xcode-clean"/>
     <target name="-post-compile" depends="-xcode-resources"/>
 
     <target name="-process-ly">
