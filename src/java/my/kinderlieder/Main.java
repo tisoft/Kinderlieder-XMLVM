@@ -36,14 +36,7 @@ public class Main extends UIApplicationDelegate {
             }
         });
 
-        UIViewController rootViewController = new UIViewController() {
-            @Override
-            public boolean shouldAutorotateToInterfaceOrientation(int uiInterfaceOrientation) {
-                return uiInterfaceOrientation == UIInterfaceOrientation.Portrait ||
-                        uiInterfaceOrientation == UIInterfaceOrientation.LandscapeLeft ||
-                        uiInterfaceOrientation == UIInterfaceOrientation.LandscapeRight;
-            }
-        };
+        UIViewController rootViewController = new RotatingViewController();
         final UINavigationController navigationController = new UINavigationController(rootViewController);
         navigationController.setToolbarHidden(false);
         /*navigationController.setDelegate*/
@@ -64,7 +57,7 @@ public class Main extends UIApplicationDelegate {
         final UIButton infoButton = UIButton.buttonWithType(UIButtonType.InfoLight);
         infoButton.addTarget(new UIControlDelegate() {
             public void raiseEvent(UIControl sender, int uiControlEvent) {
-                UIViewController infoController = new UIViewController();
+                UIViewController infoController = new RotatingViewController();
                 final UIWebView infoView = new UIWebView(window.getFrame());
                 infoView.setDelegate(new UIWebViewDelegate() {
                     @Override
@@ -116,7 +109,7 @@ public class Main extends UIApplicationDelegate {
             @Override
             public void didSelectRowAtIndexPath(UITableView tableview, NSIndexPath indexPath) {
                 final SongInfo songInfo = songInfos.get(indexPath.getRow());
-                final UIViewController pdfViewController = new UIViewController();
+                final UIViewController pdfViewController = new RotatingViewController();
                 pdfViewController.setTitle(songInfo.name);
                 UIWebView pdfView = new UIWebView(window.getFrame());
                 pdfViewController.setView(pdfView);
@@ -198,5 +191,14 @@ public class Main extends UIApplicationDelegate {
 
     public static void main(String[] args) {
         UIApplication.main(args, null, Main.class);
+    }
+
+    private static class RotatingViewController extends UIViewController {
+        @Override
+        public boolean shouldAutorotateToInterfaceOrientation(int uiInterfaceOrientation) {
+            return uiInterfaceOrientation == UIInterfaceOrientation.Portrait ||
+                    uiInterfaceOrientation == UIInterfaceOrientation.LandscapeLeft ||
+                    uiInterfaceOrientation == UIInterfaceOrientation.LandscapeRight;
+        }
     }
 }
