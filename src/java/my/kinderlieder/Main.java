@@ -64,7 +64,7 @@ public class Main extends UIApplicationDelegate {
                     public boolean shouldStartLoadWithRequest(UIWebView webView, NSURLRequest request, int uiWebViewNavigationType) {
 
                         final NSURL url = request.URL();
-                        if(url.absoluteString().startsWith("file")){
+                        if (url.absoluteString().startsWith("file")) {
                             return true;
                         } else {
                             UIApplication.sharedApplication().openURL(url);
@@ -119,8 +119,6 @@ public class Main extends UIApplicationDelegate {
                 if (UIPrintInteractionController.isPrintingAvailable()) {
                     rightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Action, new UIBarButtonItemDelegate() {
                         public void clicked() {
-                            System.out.println(this);
-                            System.out.println(pdfURL);
                             UIPrintInteractionController print = UIPrintInteractionController.sharedPrintController();
                             print.setPrintingItem(pdfURL);
                             print.presentFromBarButtonItem(rightBarButtonItem, true, new UIPrintInteractionController.UIPrintInteractionCompletionHandler() {
