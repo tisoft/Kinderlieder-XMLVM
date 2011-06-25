@@ -5,7 +5,8 @@
         <data xmlns="http://www.netbeans.org/ns/j2se-project/3">
             <name>Kinderlieder</name>
             <source-roots>
-                <root id="src.java.dir" name="Java Source Packages"/>
+                <root id="src.java.dir" name="Java sources"/>
+                <root id="src.gen.dir" name="Generated Sources"/>
             </source-roots>
             <test-roots/>
         </data>
