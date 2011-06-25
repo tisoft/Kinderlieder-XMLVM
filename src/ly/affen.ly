@@ -26,11 +26,15 @@ akkordea = \chordmode {
   c2 a2:m
   g1:7
   c2 c2:7
-  f1
-  c1
-  g1
-  c1
-  c1*7/8
+  \repeat volta 2 {
+    f1
+    c1
+    g1
+  }
+  \alternative{
+    {c1}
+    {c1*7/8}
+  }
 }
 
 
