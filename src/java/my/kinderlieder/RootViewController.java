@@ -13,27 +13,7 @@ class RootViewController extends RotatingViewController {
         final UIButton infoButton = UIButton.buttonWithType(UIButtonType.InfoLight);
         infoButton.addTarget(new UIControlDelegate() {
             public void raiseEvent(UIControl sender, int uiControlEvent) {
-                UIViewController infoController = new RotatingViewController() {{
-                    final UIWebView infoView = new UIWebView(window.getFrame());
-                    infoView.setDelegate(new UIWebViewDelegate() {
-                        @Override
-                        public boolean shouldStartLoadWithRequest(UIWebView webView, NSURLRequest request, int uiWebViewNavigationType) {
-
-                            final NSURL url = request.URL();
-                            if (url.absoluteString().startsWith("file")) {
-                                return true;
-                            } else {
-                                UIApplication.sharedApplication().openURL(url);
-                                return false;
-                            }
-                        }
-                    });
-                    infoView.setScalesPageToFit(true);
-                    infoView.loadRequest(NSURLRequest.requestWithURL(NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("info", "html"))));
-                    setTitle("Info");
-                    setView(infoView);
-
-                }};
+                UIViewController infoController = new InfoViewController(window);
                 getNavigationController().pushViewController(infoController, true);
             }
         }, UIControlEvent.TouchUpInside);
@@ -65,6 +45,4 @@ class RootViewController extends RotatingViewController {
         });
 
     }
-
-
 }

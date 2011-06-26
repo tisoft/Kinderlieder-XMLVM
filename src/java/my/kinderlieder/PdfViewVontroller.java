@@ -9,9 +9,6 @@ import java.util.List;
 class PdfViewVontroller extends RotatingViewController {
     //these should be local, but can't since we need them inside the delegate
     private UIBarButtonItem rightBarButtonItem;
-    private UIBarButtonItem playButton;
-    private UIBarButtonItem pauseButton;
-    private UIBarButtonItem stopButton;
     public UIBarButtonItem repeatButton;
     private List<UIBarButtonItem> buttonsPlay;
     private List<UIBarButtonItem> buttonsPauseStop;
@@ -47,7 +44,7 @@ class PdfViewVontroller extends RotatingViewController {
         }
         Main.setAudioPlayer(AVAudioPlayer.audioPlayerWithContentsOfURL(NSURL.fileURLWithPath(songInfo.m4aPath), null));
         Main.getAudioPlayer().prepareToPlay();
-        playButton = new UIBarButtonItem(UIBarButtonSystemItem.Play, new UIBarButtonItemDelegate() {
+        UIBarButtonItem playButton = new UIBarButtonItem(UIBarButtonSystemItem.Play, new UIBarButtonItemDelegate() {
             public void clicked() {
                 Main.getAudioPlayer().play();
                 Main.getAudioPlayer().setDelegate(new AVAudioPlayerDelegate() {
@@ -69,13 +66,13 @@ class PdfViewVontroller extends RotatingViewController {
 
             }
         });
-        pauseButton = new UIBarButtonItem(UIBarButtonSystemItem.Pause, new UIBarButtonItemDelegate() {
+        UIBarButtonItem pauseButton = new UIBarButtonItem(UIBarButtonSystemItem.Pause, new UIBarButtonItemDelegate() {
             public void clicked() {
                 Main.getAudioPlayer().pause();
                 setToolbarItems(new ArrayList<UIBarButtonItem>(buttonsPlayStop));
             }
         });
-        stopButton = new UIBarButtonItem(UIBarButtonSystemItem.Stop, new UIBarButtonItemDelegate() {
+        UIBarButtonItem stopButton = new UIBarButtonItem(UIBarButtonSystemItem.Stop, new UIBarButtonItemDelegate() {
             public void clicked() {
                 Main.getAudioPlayer().stop();
                 Main.getAudioPlayer().setCurrentTime(0d);
