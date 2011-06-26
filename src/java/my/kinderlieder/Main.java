@@ -102,9 +102,11 @@ public class Main extends UIApplicationDelegate {
             private UIBarButtonItem playButton;
             private UIBarButtonItem pauseButton;
             private UIBarButtonItem stopButton;
+            public UIBarButtonItem repeatButton;
             private List<UIBarButtonItem> buttonsPlay;
             private List<UIBarButtonItem> buttonsPauseStop;
             private List<UIBarButtonItem> buttonsPlayStop;
+            boolean repeat;
 
             @Override
             public void didSelectRowAtIndexPath(UITableView tableview, NSIndexPath indexPath) {
@@ -174,10 +176,21 @@ public class Main extends UIApplicationDelegate {
                         pdfViewController.setToolbarItems(new ArrayList<UIBarButtonItem>(buttonsPlay));
                     }
                 });
-
-                buttonsPlay = Arrays.asList(playButton);
-                buttonsPauseStop = Arrays.asList(pauseButton, stopButton);
-                buttonsPlayStop = Arrays.asList(playButton, stopButton);
+                repeatButton = new UIBarButtonItem(UIImage.imageNamed("no-repeat.png"), UIBarButtonItemStyle.Plain, new UIBarButtonItemDelegate() {
+                    public void clicked() {
+                        if (repeat) {
+                            audioPlayer.setNumberOfLoops(-1);
+                            repeatButton.setImage(UIImage.imageNamed("no-repeat.png"));
+                        } else {
+                            audioPlayer.setNumberOfLoops(1);
+                            repeatButton.setImage(UIImage.imageNamed("repeat.png"));
+                        }
+                        repeat = !repeat;
+                    }
+                });
+                buttonsPlay = Arrays.asList(playButton, repeatButton);
+                buttonsPauseStop = Arrays.asList(pauseButton, stopButton, repeatButton);
+                buttonsPlayStop = Arrays.asList(playButton, stopButton, repeatButton);
                 pdfViewController.setToolbarItems(new ArrayList<UIBarButtonItem>(buttonsPlay));
                 navigationController.setToolbarHidden(false, true);
                 navigationController.pushViewController(pdfViewController, true);
