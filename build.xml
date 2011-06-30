@@ -43,6 +43,8 @@
             <srcfile/>
             <arg value="-vol"/>
             <arg value="1024"/>
+            <arg value="-ac"/>
+            <arg value="1"/>
             <targetfile/>
             <fileset dir="generated/tmp">
                 <patternset>
