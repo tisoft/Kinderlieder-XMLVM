@@ -1,4 +1,4 @@
-﻿% Dieses Notenblatt wurde erstellt von Michael "Bosso" Beck
+% Dieses Notenblatt wurde erstellt von Michael "Bosso" Beck
 %
 % Kontakt: michi_beck86@web.de
 %
@@ -68,7 +68,7 @@ text = \lyricmode {
       \autoBeamOff
       \clef "treble"
       \time 4/4
-      \tempo 4 = 160
+      \tempo 4 = 100
       \key g\major
       \melodie
     }
