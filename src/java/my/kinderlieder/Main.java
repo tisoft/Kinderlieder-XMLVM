@@ -49,8 +49,7 @@ public class Main extends UIApplicationDelegate {
         UIViewController rootViewController = new RootViewController(window, songInfos);
         final UINavigationController navigationController = new UINavigationController(rootViewController);
         navigationController.setToolbarHidden(false);
-        /*navigationController.setDelegate*/
-        System.out.println(new UINavigationControllerDelegate() {
+        /*navigationController.setDelegate(new UINavigationControllerDelegate() {
             public void willShowViewController(UINavigationController navigationController, UIViewController viewController, boolean animated) {
             }
 
@@ -59,7 +58,7 @@ public class Main extends UIApplicationDelegate {
                 if (audioPlayer != null)
                     audioPlayer.stop();
             }
-        });
+        });*/
         window.addSubview(navigationController.getView());
 
         window.makeKeyAndVisible();
