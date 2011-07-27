@@ -80,13 +80,15 @@ class PdfViewVontroller extends RotatingViewController {
                 setToolbarItems(new ArrayList<UIBarButtonItem>(buttonsPlay));
             }
         });
-        repeatButton = new UIBarButtonItem(UIImage.imageNamed("no-repeat.png"), UIBarButtonItemStyle.Plain, new UIBarButtonItemDelegate() {
+        repeat=false;
+        Main.getAudioPlayer().setNumberOfLoops(0);
+        repeatButton = new UIBarButtonItem(UIImage.imageNamed("repeat.png"), UIBarButtonItemStyle.Plain, new UIBarButtonItemDelegate() {
             public void clicked() {
-                if (repeat) {
+                if (!repeat) {
                     Main.getAudioPlayer().setNumberOfLoops(-1);
                     repeatButton.setImage(UIImage.imageNamed("no-repeat.png"));
                 } else {
-                    Main.getAudioPlayer().setNumberOfLoops(1);
+                    Main.getAudioPlayer().setNumberOfLoops(0);
                     repeatButton.setImage(UIImage.imageNamed("repeat.png"));
                 }
                 repeat = !repeat;
