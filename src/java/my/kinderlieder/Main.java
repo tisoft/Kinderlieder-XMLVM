@@ -67,6 +67,4 @@ public class Main extends UIApplicationDelegate {
     public static void main(String[] args) {
         UIApplication.main(args, null, Main.class);
     }
-
-
 }

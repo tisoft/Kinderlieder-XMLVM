@@ -41,7 +41,7 @@ class RootViewController extends RotatingViewController {
                 final UIViewController pdfViewController = new PdfViewVontroller(songInfo, window);
                 getNavigationController().setToolbarHidden(false, true);
                 getNavigationController().pushViewController(pdfViewController, true);
-            }
+            }            
         });
 
     }
