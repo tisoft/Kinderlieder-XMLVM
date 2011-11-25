@@ -8,3 +8,5 @@ out
 .DS_Store
 generated
 nbproject/private
+target
+

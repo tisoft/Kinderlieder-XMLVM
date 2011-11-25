@@ -1,0 +1,96 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>de.tisoft.kinderlieder</groupId>
+	<artifactId>iphone</artifactId>
+	<version>1.4-SNAPSHOT</version>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.xmlvm</groupId>
+			<artifactId>objc-compat-lib</artifactId>
+			<version>0.1-SNAPSHOT</version>
+			<scope>system</scope>
+			<systemPath>${xmlvm.sdk.path}/dist/lib/objc-compat.jar</systemPath>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>com.pyx4me</groupId>
+				<artifactId>proguard-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>proguard</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<obfuscate>false</obfuscate>
+					<libs>
+						<lib>${xmlvm.sdk.path}/lib/harmony6-build.jar</lib>
+					</libs>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>prepare</id>
+						<phase>package</phase>
+						<configuration>
+							<tasks>
+								<echo message="package phase" />
+								<unzip src="target/${build.finalName}.jar" dest="target/extracted/classes">
+									<patternset>
+										<include name="**/*.class" />
+									</patternset>
+								</unzip>
+								<unzip src="target/${build.finalName}.jar" dest="target/extracted/resources">
+									<patternset>
+										<exclude name="**/*.class" />
+										<exclude name="META-INF/**" />
+									</patternset>
+								</unzip>
+							</tasks>
+						</configuration>
+						<goals>
+							<goal>run</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>de.tisoft.xmlvm</groupId>
+				<artifactId>xmlvm-maven-plugin</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+				<executions>
+					<execution>
+						<id>generate</id>
+						<goals>
+							<goal>generate-xmlvm</goal>
+						</goals>
+						<phase>package</phase>
+						<configuration>
+							<app_name>Kinderlieder</app_name>
+							<xcodeProject>ios</xcodeProject>
+							<bundleIdentifier>de.tisoft.kinderlieder</bundleIdentifier>
+							<target>iphonec</target>
+							<in>${project.build.directory}/extracted/classes</in>
+							<out>${project.build.directory}</out>
+							<resources>
+								<resource>extracted/resources/</resource>
+							</resources>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+		</plugins>
+	</build>
+</project>

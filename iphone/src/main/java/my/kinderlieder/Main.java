@@ -25,7 +25,7 @@ public class Main extends UIApplicationDelegate {
 
     @Override
     public void applicationDidFinishLaunching(UIApplication app) {
-        final UIWindow window = new UIWindow(UIScreen.mainScreen().getBounds());
+        final UIWindow window = new UIWindow(org.xmlvm.iphone.UIScreen.mainScreen().getBounds());
 
         File f = new File(NSBundle.mainBundle().pathForResource("info", "html")).getParentFile();//can't get directory path on iOS 3.2 directly
 

@@ -17,14 +17,14 @@ class RootViewController extends RotatingViewController {
                 getNavigationController().pushViewController(infoController, true);
             }
         }, UIControlEvent.TouchUpInside);
-        final UIButton shopButton = UIButton.buttonWithType(UIButtonType.Custom);
+        final UIButton shopButton = UIButton.buttonWithType(UIButtonType.InfoLight);
         shopButton.setTitle("Shop", UIControlState.Normal);
         shopButton.addTarget(new UIControlDelegate() {
-             public void raiseEvent(UIControl sender, int uiControlEvent) {
-                 UIViewController shopController = new ShopViewController(window);
-                 getNavigationController().pushViewController(shopController, true);
-             }
-         }, UIControlEvent.TouchUpInside);
+            public void raiseEvent(UIControl sender, int uiControlEvent) {
+                UIViewController shopController = new ShopViewController(window);
+                getNavigationController().pushViewController(shopController, true);
+            }
+        }, UIControlEvent.TouchUpInside);
         setToolbarItems(new ArrayList<UIBarButtonItem>(Arrays.asList(new UIBarButtonItem(infoButton), new UIBarButtonItem(shopButton))));
         setView(mainView);
         mainView.setDataSource(new UITableViewDataSource() {
@@ -49,7 +49,7 @@ class RootViewController extends RotatingViewController {
                 final UIViewController pdfViewController = new PdfViewVontroller(songInfo, window);
                 getNavigationController().setToolbarHidden(false, true);
                 getNavigationController().pushViewController(pdfViewController, true);
-            }            
+            }
         });
 
     }

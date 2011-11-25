@@ -56,10 +56,10 @@ public class ShopViewController extends RotatingViewController {
         setView(infoView);
 
         try {
-            URL url=new URL("http://192.168.178.23:8080/api/products");
-            BufferedReader br=new BufferedReader(new InputStreamReader(url.openStream()));
+            URL url = new URL("http://192.168.178.23:8080/api/products");
+            BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));
             String line;
-            while((line=br.readLine())!=null){
+            while ((line = br.readLine()) != null) {
                 System.out.println(line);
             }
         } catch (MalformedURLException e) {
