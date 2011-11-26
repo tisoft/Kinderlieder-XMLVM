@@ -1,5 +1,9 @@
 package my.kinderlieder;
 
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.json.JSONTokener;
 import org.xmlvm.iphone.*;
 
 import java.io.BufferedReader;
@@ -9,6 +13,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class ShopViewController extends RotatingViewController {
     public ShopViewController(UIWindow window) {
@@ -56,17 +61,57 @@ public class ShopViewController extends RotatingViewController {
         setView(infoView);
 
         try {
-            URL url = new URL("http://192.168.178.23:8080/api/products");
-            BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));
-            String line;
-            while ((line = br.readLine()) != null) {
-                System.out.println(line);
-            }
-        } catch (MalformedURLException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        } catch (IOException e) {
+            loadProducts();
+        } catch (JSONException e) {
             e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
         }
 
     }
+
+    static class FreeProduct {
+        private String id;
+        private String name;
+        private String description;
+        private URL downloadURL;
+
+
+    }
+
+    private static List<FreeProduct> loadProducts() throws JSONException {
+        List<FreeProduct> ret = new ArrayList<FreeProduct>();
+        try {
+            URL url = new URL("http://192.168.178.23:8080/api/products");
+            BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));
+            JSONTokener tokener = new JSONTokener(br);
+            JSONArray products = new JSONArray(tokener);
+            for (int i = 0; i < products.length(); i++) {
+                JSONObject product = products.getJSONObject(i);
+                if ("FreeProduct".equals(product.getString("productType")))
+                {
+                    FreeProduct fp = new FreeProduct();
+                    fp.id = product.getString("_id");
+                    fp.name = product.getString("name");
+                    fp.description = product.getString("description");
+                    fp.downloadURL = new URL(product.getString("downloadURL"));
+                }
+            }
+            System.out.println(products);
+        } catch (MalformedURLException e) {
+            throw new JSONException(e);
+        } catch (IOException e) {
+            throw new JSONException(e);
+        }
+
+        return ret;
+    }
+
+  /*  public static void main(String... args) {
+        try {
+            loadProducts();
+        } catch (JSONException e) {
+            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+        }
+    }  */
+
+
 }
