@@ -27,6 +27,9 @@ public class Main extends UIApplicationDelegate {
     public void applicationDidFinishLaunching(UIApplication app) {
         final UIWindow window = new UIWindow(org.xmlvm.iphone.UIScreen.mainScreen().getBounds());
 
+        //don't go to sleep
+        UIApplication.sharedApplication().setIdleTimerDisabled(true);
+
         File f = new File(NSBundle.mainBundle().pathForResource("info", "html")).getParentFile();//can't get directory path on iOS 3.2 directly
 
         final List<SongInfo> songInfos = new ArrayList<SongInfo>();
