@@ -39,6 +39,15 @@
                     <libs>
                         <lib>${xmlvm.sdk.path}/lib/harmony6-build.jar</lib>
                     </libs>
+                    <assembly>
+                        <inclusions>
+                            <inclusion>
+                                <groupId>org.json</groupId>
+                                <artifactId>json</artifactId>
+                                <library>false</library>
+                            </inclusion>
+                        </inclusions>
+                    </assembly>
                 </configuration>
             </plugin>
 
@@ -63,6 +72,11 @@
                                         <exclude name="META-INF/**"/>
                                     </patternset>
                                 </unzip>
+                                <copy todir="target/extracted/resources">
+                                    <fileset dir="generated/resources"
+                                             includes="**"
+                                            />
+                                </copy>
                             </tasks>
                         </configuration>
                         <goals>
@@ -90,7 +104,7 @@
                             <in>${project.build.directory}/extracted/classes</in>
                             <out>${project.build.directory}</out>
                             <resources>
-                                <resource>extracted/resources/</resource>
+                                <resource>${project.build.directory}/extracted/resources/</resource>
                             </resources>
                         </configuration>
                     </execution>

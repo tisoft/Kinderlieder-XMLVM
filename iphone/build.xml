@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Kinderlieder" default="default" basedir=".">
 	<description>Builds, tests, and runs the project Kinderlieder.</description>
-	<import file="nbproject/xmlvm.xml"/>
-
-    <target name="-pre-compile" depends="generate-resources"/>
 
     <target name="-process-ly">
         <mkdir dir="generated/tmp"/>
         <apply executable="lilypond" dir="generated/tmp">
             <globmapper from="*.ly" to="generated/tmp/*.pdf"/>
             <arg value="--header=title"/>
-            <fileset dir="src/ly">
+            <fileset dir="iphone/src/main/ly">
                 <patternset>
                     <include name="*.ly"/>
                     <exclude name="default.ly"/>
