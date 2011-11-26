@@ -12,60 +12,38 @@ import java.io.InputStreamReader;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class ShopViewController extends RotatingViewController {
     public ShopViewController(UIWindow window) {
-        final UIWebView infoView = new UIWebView(window.getFrame());
-        infoView.setDelegate(new UIWebViewDelegate() {
-            @Override
-            public boolean shouldStartLoadWithRequest(UIWebView webView, NSURLRequest request, int uiWebViewNavigationType) {
+        final UITableView shopView = new UITableView(window.getFrame(), UITableViewStyle.Plain);
+        setTitle("Downloads");
+        setView(shopView);
 
-                final NSURL url = request.URL();
-                if (url.absoluteString().startsWith("file")) {
-                    return true;
-                } else if (url.absoluteString().startsWith("mailto") && MFMailComposeViewController.canSendMail()) {
-                    MFMailComposeViewController mailComposeViewController = new MFMailComposeViewController();
-                    mailComposeViewController.setToRecipients(new ArrayList<String>(Arrays.asList(url.absoluteString().split(":", 2)[1])));
-                    mailComposeViewController.setMailComposeDelegate(new MFMailComposeViewControllerDelegate() {
+        Runnable runnable = new Runnable() {
+            public void run() {
+                try {
+                    final List<FreeProduct> products = loadProducts();
+                    shopView.setDataSource(new UITableViewDataSource() {
                         @Override
-                        public void didFinishWithResult(MFMailComposeViewController controller, int MFMailComposeResult, NSError error) {
-                            getNavigationController().dismissModalViewControllerAnimated(true);
+                        public UITableViewCell cellForRowAtIndexPath(UITableView table, NSIndexPath idx) {
+                            UITableViewCell cell = new UITableViewCell(UITableViewCellStyle.Default, null);
+                            cell.getTextLabel().setText(products.get(idx.getRow()).name);
+                            return cell;
+                        }
+
+                        @Override
+                        public int numberOfRowsInSection(UITableView table, int section) {
+                            return products.size();
                         }
                     });
-                    getNavigationController().presentModalViewController(mailComposeViewController, true);
-                    return false;
-                } else {
-                    UIAlertView alertView = new UIAlertView("Browser", "Link in Safari öffnen?", new UIAlertViewDelegate() {
-                        @Override
-                        public void clickedButtonAtIndex(UIAlertView alertView, int buttonIndex) {
-                            System.out.println(buttonIndex);
-                            if (buttonIndex == 1) {
-                                UIApplication.sharedApplication().openURL(url);
-                            }
-                        }
-                    }, "Nein");
-
-                    alertView.addButtonWithTitle("Ja");
-
-                    alertView.show();
-
-                    return false;
+                } catch (JSONException e) {
+                    e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
                 }
             }
-        });
-        infoView.setScalesPageToFit(true);
-        infoView.loadRequest(NSURLRequest.requestWithURL(NSURL.fileURLWithPath(NSBundle.mainBundle().pathForResource("info", "html"))));
-        setTitle("Info");
-        setView(infoView);
+        };
 
-        try {
-            loadProducts();
-        } catch (JSONException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        }
-
+        new Thread(runnable).start();
     }
 
     static class FreeProduct {
@@ -86,8 +64,7 @@ public class ShopViewController extends RotatingViewController {
             JSONArray products = new JSONArray(tokener);
             for (int i = 0; i < products.length(); i++) {
                 JSONObject product = products.getJSONObject(i);
-                if ("FreeProduct".equals(product.getString("productType")))
-                {
+                if ("FreeProduct".equals(product.getString("productType"))) {
                     FreeProduct fp = new FreeProduct();
                     fp.id = product.getString("_id");
                     fp.name = product.getString("name");
@@ -105,13 +82,13 @@ public class ShopViewController extends RotatingViewController {
         return ret;
     }
 
-  /*  public static void main(String... args) {
-        try {
-            loadProducts();
-        } catch (JSONException e) {
-            e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
-        }
-    }  */
+    /*  public static void main(String... args) {
+      try {
+          loadProducts();
+      } catch (JSONException e) {
+          e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+      }
+  }  */
 
 
 }
