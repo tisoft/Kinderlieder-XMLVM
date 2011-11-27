@@ -9,4 +9,7 @@ out
 generated
 nbproject/private
 target
+.settings
+.project
+.classpath
 
