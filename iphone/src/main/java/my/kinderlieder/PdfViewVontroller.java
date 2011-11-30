@@ -1,7 +1,9 @@
 package my.kinderlieder;
 
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 import org.xmlvm.iphone.AVAudioPlayer;
@@ -9,6 +11,8 @@ import org.xmlvm.iphone.AVAudioPlayerDelegate;
 import org.xmlvm.iphone.NSError;
 import org.xmlvm.iphone.NSURL;
 import org.xmlvm.iphone.NSURLRequest;
+import org.xmlvm.iphone.UIAlertView;
+import org.xmlvm.iphone.UIAlertViewDelegate;
 import org.xmlvm.iphone.UIBarButtonItem;
 import org.xmlvm.iphone.UIBarButtonItemDelegate;
 import org.xmlvm.iphone.UIBarButtonItemStyle;
@@ -27,12 +31,12 @@ class PdfViewVontroller extends RotatingViewController {
 	private List<UIBarButtonItem> buttonsPlayStop;
 	boolean repeat;
 
-	public PdfViewVontroller(SongInfo songInfo, UIWindow window) {
-		setTitle(songInfo.name);
+	public PdfViewVontroller(final SongInfo songInfo, UIWindow window) {
+		setTitle(songInfo.getName());
 		UIWebView pdfView = new UIWebView(window.getFrame());
 		setView(pdfView);
 		pdfView.setScalesPageToFit(true);
-		final NSURL pdfURL = NSURL.fileURLWithPath(songInfo.pdfPath);
+		final NSURL pdfURL = NSURL.fileURLWithPath(songInfo.getPdfPath().getPath());
 		pdfView.loadRequest(NSURLRequest.requestWithURL(pdfURL));
 		if (UIPrintInteractionController.isPrintingAvailable()) {
 			rightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Action, new UIBarButtonItemDelegate() {
@@ -56,10 +60,32 @@ class PdfViewVontroller extends RotatingViewController {
 		if (Main.getAudioPlayer() != null) {
 			Main.getAudioPlayer().stop();
 		}
-		Main.setAudioPlayer(AVAudioPlayer.audioPlayerWithContentsOfURL(NSURL.fileURLWithPath(songInfo.m4aPath), null));
-		Main.getAudioPlayer().prepareToPlay();
 		UIBarButtonItem playButton = new UIBarButtonItem(UIBarButtonSystemItem.Play, new UIBarButtonItemDelegate() {
 			public void clicked() {
+				if ((Main.getAudioPlayer() == null || Main.getAudioPlayer().getCurrentTime() == 0.d)
+						&& songInfo.getMusicPath().size() > 1) {
+					// player is stopped and we have multiple music files
+					UIAlertView selectMusicView = new UIAlertView("Play", "Lied wählen", new UIAlertViewDelegate() {
+
+						@Override
+						public void clickedButtonAtIndex(UIAlertView alertView, int buttonIndex) {
+							Main.setAudioPlayer(AVAudioPlayer.audioPlayerWithContentsOfURL(
+									NSURL.fileURLWithPath(songInfo.getMusicPath().get(buttonIndex).getPath()), null));
+							Main.getAudioPlayer().prepareToPlay();
+							play();
+						}
+					}, null);
+					for (File s : songInfo.getMusicPath()) {
+						selectMusicView.addButtonWithTitle(s.getName());
+					}
+
+					selectMusicView.show();
+				} else {
+					play();
+				}
+			}
+
+			private void play() {
 				Main.getAudioPlayer().play();
 				Main.getAudioPlayer().setDelegate(new AVAudioPlayerDelegate() {
 					public void audioPlayerDidFinishPlaying(AVAudioPlayer player, boolean successfully) {
@@ -77,7 +103,6 @@ class PdfViewVontroller extends RotatingViewController {
 					}
 				});
 				setToolbarItems(new ArrayList<UIBarButtonItem>(buttonsPauseStop));
-
 			}
 		});
 		UIBarButtonItem pauseButton = new UIBarButtonItem(UIBarButtonSystemItem.Pause, new UIBarButtonItemDelegate() {
@@ -94,8 +119,17 @@ class PdfViewVontroller extends RotatingViewController {
 				setToolbarItems(new ArrayList<UIBarButtonItem>(buttonsPlay));
 			}
 		});
+
+		if (songInfo.getMusicPath().size() == 0) {
+
+		} else if (songInfo.getMusicPath().size() == 1) {
+			Main.setAudioPlayer(AVAudioPlayer.audioPlayerWithContentsOfURL(
+					NSURL.fileURLWithPath(songInfo.getMusicPath().get(0).getPath()), null));
+			Main.getAudioPlayer().prepareToPlay();
+			Main.getAudioPlayer().setNumberOfLoops(0);
+		}
+
 		repeat = false;
-		Main.getAudioPlayer().setNumberOfLoops(0);
 		repeatButton = new UIBarButtonItem(UIImage.imageNamed("repeat.png"), UIBarButtonItemStyle.Plain,
 				new UIBarButtonItemDelegate() {
 					public void clicked() {

@@ -27,6 +27,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.JSONTokener;
 import org.xmlvm.iphone.NSIndexPath;
+import org.xmlvm.iphone.NSObject;
+import org.xmlvm.iphone.NSSelector;
 import org.xmlvm.iphone.UITableView;
 import org.xmlvm.iphone.UITableViewCell;
 import org.xmlvm.iphone.UITableViewCellAccessoryType;
@@ -88,10 +90,19 @@ public class ShopViewController extends RotatingViewController {
 			public void run() {
 				try {
 					products.addAll(loadProducts());
-					shopView.reloadData();
+					reloadDataOnMainThread(shopView);
 				} catch (JSONException e) {
 					e.printStackTrace();
 				}
+			}
+
+			private void reloadDataOnMainThread(final UITableView shopView) {
+				NSObject.performSelectorOnMainThread(new NSSelector<UITableView>() {
+
+					public void invokeWithArgument(UITableView arg) {
+						arg.reloadData();
+					}
+				}, shopView, false);
 			}
 		};
 
@@ -208,7 +219,7 @@ public class ShopViewController extends RotatingViewController {
 		bw.close();
 	}
 
-	public static void main(String... args) {
+	/*public static void main(String... args) {
 		try {
 			List<FreeProduct> products = loadProducts();
 			for (FreeProduct product : products) {
@@ -226,6 +237,6 @@ public class ShopViewController extends RotatingViewController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-	}
+	}*/
 
 }

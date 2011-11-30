@@ -48,7 +48,7 @@ class RootViewController extends RotatingViewController {
 			public UITableViewCell cellForRowAtIndexPath(UITableView table, NSIndexPath idx) {
 
 				UITableViewCell cell = new UITableViewCell(UITableViewCellStyle.Default, null);
-				cell.getTextLabel().setText(songInfos.get(idx.getRow()).name);
+				cell.getTextLabel().setText(songInfos.get(idx.getRow()).getName());
 				return cell;
 			}
 
