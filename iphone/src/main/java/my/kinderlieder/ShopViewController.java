@@ -120,18 +120,18 @@ public class ShopViewController extends RotatingViewController {
 	private static List<FreeProduct> loadProducts() throws JSONException {
 		List<FreeProduct> ret = new ArrayList<FreeProduct>();
 		try {
-			URL url = new URL("http://192.168.178.23:8080/api/products");
+			URL url = new URL("http://kessel.t-srv.de/api/products");
 			BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));
 			JSONTokener tokener = new JSONTokener(br);
 			JSONArray products = new JSONArray(tokener);
 			for (int i = 0; i < products.length(); i++) {
 				JSONObject product = products.getJSONObject(i);
-				if ("FreeProduct".equals(product.getString("productType"))) {
+				if ("FreeProduct".equals(product.getString("type"))) {
 					FreeProduct fp = new FreeProduct();
 					fp.id = product.getString("_id");
 					fp.name = product.getString("name");
 					fp.description = product.getString("description");
-					fp.downloadURL = new URL(product.getString("downloadURL"));
+					fp.downloadURL = new URL("http://kessel.t-srv.de/api/file/"+fp.id);
 					fp.json = product.toString();
 					ret.add(fp);
 				}
