@@ -75,8 +75,7 @@ class PdfViewVontroller extends RotatingViewController {
                 Main.getAudioPlayer().play();
                 Main.getAudioPlayer().setDelegate(new AVAudioPlayerDelegate() {
                     public void audioPlayerDidFinishPlaying(AVAudioPlayer player, boolean successfully) {
-                        player.prepareToPlay();
-                        setToolbarItems(new ArrayList<UIBarButtonItem>(buttonsPlay));
+                        stop();
                     }
 
                     public void audioPlayerDecodeErrorDidOccur(AVAudioPlayer player, NSError error) {
@@ -137,7 +136,6 @@ class PdfViewVontroller extends RotatingViewController {
     private void stop() {
         if (Main.getAudioPlayer() != null) {
             Main.getAudioPlayer().stop();
-            Main.getAudioPlayer().setCurrentTime(0d);
             if (Main.library.getMusicInfos(songInfo).size() > 1) {
                 Main.setAudioPlayer(null);
             } else {
