@@ -1,17 +1,12 @@
 package my.kinderlieder;
 
-import java.io.BufferedInputStream;
-import java.io.BufferedOutputStream;
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.OutputStreamWriter;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.json.JSONTokener;
+import org.xmlvm.iphone.*;
+
+import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -21,22 +16,6 @@ import java.util.List;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipException;
 import java.util.zip.ZipFile;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.json.JSONTokener;
-import org.xmlvm.iphone.NSIndexPath;
-import org.xmlvm.iphone.NSObject;
-import org.xmlvm.iphone.NSSelector;
-import org.xmlvm.iphone.UITableView;
-import org.xmlvm.iphone.UITableViewCell;
-import org.xmlvm.iphone.UITableViewCellAccessoryType;
-import org.xmlvm.iphone.UITableViewCellStyle;
-import org.xmlvm.iphone.UITableViewDataSource;
-import org.xmlvm.iphone.UITableViewDelegate;
-import org.xmlvm.iphone.UITableViewStyle;
-import org.xmlvm.iphone.UIWindow;
 
 public class ShopViewController extends RotatingViewController {
 	final List<FreeProduct> products = new ArrayList<ShopViewController.FreeProduct>();
@@ -217,6 +196,8 @@ public class ShopViewController extends RotatingViewController {
 		bw.write(product.json + "\n");
 		bw.flush();
 		bw.close();
+
+        Main.library.loadProduct(targetDir);
 	}
 
 	/*public static void main(String... args) {

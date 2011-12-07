@@ -81,27 +81,31 @@ public class Library {
                 return pathname.isDirectory();
             }
         })) {
-            CollectionInfo addon = new CollectionInfo(product.getName()) {
-                @Override
-                protected void load() {
-                    for (File f : product.listFiles()) {
-                        String baseName = f.getName().substring(0, f.getName().indexOf('.'));
-                        //first try to get the songinfo in the current collection
-                        SongInfo songInfo = getSongInfo(baseName);
-                        //now try all collections
-                        if(songInfo==null){
-                            songInfo=Library.this.getSongInfo(baseName);
-                        }
-                        if (songInfo != null) {
-                            add(songInfo, new MusicInfo(this, songInfo.getName() + " " + this.getName(), f));
-                        }
-                    }
-                }
-            };
-            collectionInfos.add(addon);
+            loadProduct(product);
 
         }
 
 
+    }
+
+    public void loadProduct(final File product) {
+        CollectionInfo addon = new CollectionInfo(product.getName()) {
+            @Override
+            protected void load() {
+                for (File f : product.listFiles()) {
+                    String baseName = f.getName().substring(0, f.getName().indexOf('.'));
+                    //first try to get the songinfo in the current collection
+                    SongInfo songInfo = getSongInfo(baseName);
+                    //now try all collections
+                    if(songInfo==null){
+                        songInfo=Library.this.getSongInfo(baseName);
+                    }
+                    if (songInfo != null) {
+                        add(songInfo, new MusicInfo(this, songInfo.getName() + " " + this.getName(), f));
+                    }
+                }
+            }
+        };
+        collectionInfos.add(addon);
     }
 }
