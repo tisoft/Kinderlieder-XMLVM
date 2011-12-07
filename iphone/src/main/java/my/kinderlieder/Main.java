@@ -3,23 +3,9 @@
  */
 package my.kinderlieder;
 
-import java.io.File;
-import java.io.FileFilter;
-import java.io.FilenameFilter;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import org.xmlvm.iphone.*;
 
-import org.xmlvm.iphone.AVAudioPlayer;
-import org.xmlvm.iphone.Foundation;
-import org.xmlvm.iphone.NSBundle;
-import org.xmlvm.iphone.NSString;
-import org.xmlvm.iphone.UIApplication;
-import org.xmlvm.iphone.UIApplicationDelegate;
-import org.xmlvm.iphone.UINavigationController;
-import org.xmlvm.iphone.UIViewController;
-import org.xmlvm.iphone.UIWindow;
+import java.io.File;
 
 public class Main extends UIApplicationDelegate {
 
@@ -39,9 +25,12 @@ public class Main extends UIApplicationDelegate {
 
 	static {
 		PRODUCTS_DIR.mkdirs();
+        library=new Library();
 	}
 
 	private static AVAudioPlayer audioPlayer;
+
+    public static final Library library;
 
 	public static void setAudioPlayer(AVAudioPlayer audioPlayer) {
 		Main.audioPlayer = audioPlayer;
@@ -58,42 +47,8 @@ public class Main extends UIApplicationDelegate {
 		// don't go to sleep
 		UIApplication.sharedApplication().setIdleTimerDisabled(true);
 
-		final List<SongInfo> songInfos = new ArrayList<SongInfo>();
 
-		for (File file : APP_DIR.listFiles(new FilenameFilter() {
-			public boolean accept(File dir, String name) {
-				return name.endsWith("title");
-			}
-		})) {
-			final String baseName = file.getName().substring(0, file.getName().length() - 6);
-			songInfos.add(new SongInfo(NSString.stringWithContentsOfFile(file.getAbsolutePath()), new File(NSBundle
-					.mainBundle().pathForResource(baseName, "pdf")), new File(NSBundle.mainBundle().pathForResource(
-					baseName, "m4a"))));
-		}
-
-		Collections.sort(songInfos, new Comparator<SongInfo>() {
-			public int compare(SongInfo o1, SongInfo o2) {
-				return o1.getName().compareToIgnoreCase(o2.getName());
-			}
-		});
-
-		for (File product : PRODUCTS_DIR.listFiles(new FileFilter() {
-
-			public boolean accept(File pathname) {
-				return pathname.isDirectory();
-			}
-		})) {
-			for (File f : product.listFiles()) {
-				String baseName = f.getName().substring(0, f.getName().indexOf('.'));
-				for (SongInfo si : songInfos) {
-					if (si.getPdfPath().getName().startsWith(baseName)) {
-						si.getMusicPath().add(f);
-					}
-				}
-			}
-		}
-
-		UIViewController rootViewController = new RootViewController(window, songInfos);
+		UIViewController rootViewController = new RootViewController(window, library.getSongInfos());
 		final UINavigationController navigationController = new UINavigationController(rootViewController);
 		navigationController.setToolbarHidden(false);
 		/*

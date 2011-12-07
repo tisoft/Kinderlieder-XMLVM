@@ -1,26 +1,10 @@
 package my.kinderlieder;
 
-import java.io.File;
+import org.xmlvm.iphone.*;
+
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Iterator;
 import java.util.List;
-
-import org.xmlvm.iphone.AVAudioPlayer;
-import org.xmlvm.iphone.AVAudioPlayerDelegate;
-import org.xmlvm.iphone.NSError;
-import org.xmlvm.iphone.NSURL;
-import org.xmlvm.iphone.NSURLRequest;
-import org.xmlvm.iphone.UIAlertView;
-import org.xmlvm.iphone.UIAlertViewDelegate;
-import org.xmlvm.iphone.UIBarButtonItem;
-import org.xmlvm.iphone.UIBarButtonItemDelegate;
-import org.xmlvm.iphone.UIBarButtonItemStyle;
-import org.xmlvm.iphone.UIBarButtonSystemItem;
-import org.xmlvm.iphone.UIImage;
-import org.xmlvm.iphone.UIPrintInteractionController;
-import org.xmlvm.iphone.UIWebView;
-import org.xmlvm.iphone.UIWindow;
 
 class PdfViewVontroller extends RotatingViewController {
 	// these should be local, but can't since we need them inside the delegate
@@ -63,19 +47,19 @@ class PdfViewVontroller extends RotatingViewController {
 		UIBarButtonItem playButton = new UIBarButtonItem(UIBarButtonSystemItem.Play, new UIBarButtonItemDelegate() {
 			public void clicked() {
 				if ((Main.getAudioPlayer() == null || Main.getAudioPlayer().getCurrentTime() == 0.d)
-						&& songInfo.getMusicPath().size() > 1) {
+						&& Main.library.getMusicInfos(songInfo).size() > 1) {
 					// player is stopped and we have multiple music files
 					UIAlertView selectMusicView = new UIAlertView("Play", "Lied wählen", new UIAlertViewDelegate() {
 
 						@Override
 						public void clickedButtonAtIndex(UIAlertView alertView, int buttonIndex) {
 							Main.setAudioPlayer(AVAudioPlayer.audioPlayerWithContentsOfURL(
-									NSURL.fileURLWithPath(songInfo.getMusicPath().get(buttonIndex).getPath()), null));
+									NSURL.fileURLWithPath(Main.library.getMusicInfos(songInfo).get(buttonIndex).getMusicPath().getPath()), null));
 							Main.getAudioPlayer().prepareToPlay();
 							play();
 						}
 					}, null);
-					for (File s : songInfo.getMusicPath()) {
+					for (MusicInfo s : Main.library.getMusicInfos(songInfo)) {
 						selectMusicView.addButtonWithTitle(s.getName());
 					}
 
@@ -120,11 +104,11 @@ class PdfViewVontroller extends RotatingViewController {
 			}
 		});
 
-		if (songInfo.getMusicPath().size() == 0) {
+		if (Main.library.getMusicInfos(songInfo).size() == 0) {
 
-		} else if (songInfo.getMusicPath().size() == 1) {
+		} else if (Main.library.getMusicInfos(songInfo).size() == 1) {
 			Main.setAudioPlayer(AVAudioPlayer.audioPlayerWithContentsOfURL(
-					NSURL.fileURLWithPath(songInfo.getMusicPath().get(0).getPath()), null));
+					NSURL.fileURLWithPath(Main.library.getMusicInfos(songInfo).get(0).getMusicPath().getPath()), null));
 			Main.getAudioPlayer().prepareToPlay();
 			Main.getAudioPlayer().setNumberOfLoops(0);
 		}

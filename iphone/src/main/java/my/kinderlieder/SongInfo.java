@@ -1,23 +1,25 @@
 package my.kinderlieder;
 
 import java.io.File;
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Set;
 
 public class SongInfo {
-	private final String name;
-	private final File pdfPath;
-	private final List<File> musicPath=new LinkedList<File>();
+    private final String id;
+    private final CollectionInfo collectionInfo;
+    private final String name;
+    private final File pdfPath;
 
-	public SongInfo(String name, File pdfPath, File m4aPath) {
-		this.name = name;
+	public SongInfo(CollectionInfo collectionInfo, String id, String name, File pdfPath) {
+        this.collectionInfo = collectionInfo;
+        this.id = id;
+        this.name = name;
 		this.pdfPath = pdfPath;
-		this.musicPath.add(m4aPath);
 	}
 
-	public String getName() {
+    public CollectionInfo getCollectionInfo() {
+        return collectionInfo;
+    }
+
+    public String getName() {
 		return name;
 	}
 
@@ -25,9 +27,7 @@ public class SongInfo {
 		return pdfPath;
 	}
 
-	public List<File> getMusicPath() {
-		return musicPath;
-	}
-	
-	
+    public String getId() {
+        return id;
+    }
 }
