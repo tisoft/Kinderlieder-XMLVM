@@ -139,6 +139,7 @@ spart = {
     poet = "Text: Paul Gerhardt"
     opus = "BWV 469"
     tagline = ""
+    id = "6b566aeed3edd36406088c218ecbcd1499448a8a"
   }
   
 %  #(set-global-staff-size 19)

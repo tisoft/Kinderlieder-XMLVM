@@ -6,6 +6,7 @@
         <mkdir dir="generated/tmp"/>
         <apply executable="lilypond" dir="generated/tmp">
             <globmapper from="*.ly" to="generated/tmp/*.pdf"/>
+            <arg value="--header=id"/>
             <arg value="--header=title"/>
             <fileset dir="src/main/ly">
                 <patternset>
@@ -22,7 +23,7 @@
             <arg value="-l -i -a file"/>
             <arg value="-F"/>
             <targetfile/>
-            <arg value="../../FluidR3_GM.sf2"/>
+            <arg value="../../../FluidR3_GM.sf2"/>
             <srcfile/>
             <fileset dir="generated/tmp">
                 <patternset>

@@ -6,6 +6,7 @@
     title = "Vom Himmel hoch, da komm’ ich her"
     composer = "Text und Musik: Martin Luther (1535)"
     tagline = ""
+    id = "5e241ea6d8018b5aa0156acb21275d0b9a56baa9"
 }
 
 melody = \relative c'' {

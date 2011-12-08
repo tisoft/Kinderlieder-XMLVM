@@ -8,6 +8,7 @@
   poet = "Text: Wilhelm Hey (1789–1854)"
   composer = "Musik: Friedrich Silcher (1789–1860)"
   tagline = ""
+  id = "98eb1a80f799dec38f0dc6f745f1ab3e0167ce89"
 }
 
 AlleJahreWiederXaGlobal = {

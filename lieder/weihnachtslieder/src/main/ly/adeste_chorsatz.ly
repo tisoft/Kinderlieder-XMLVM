@@ -7,6 +7,7 @@
 	poet = \markup {\line{ Text: \column{ "Deutsch: Friedrich Heinrich Ranke" "Latein: John Francis Wade" }}}
     composer = "Musik: John Francis Wade"
     tagline = ##f
+    id = "b9ba42a08a956e2f1a5345282498ae2ed292aee8"
 }
 
 upper = 

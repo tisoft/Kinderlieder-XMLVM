@@ -7,6 +7,7 @@
   composer="Musik: Volkslied (16. Jh.)"
   poet=\markup { \column { "Text: " } \column { "Str. 1 Joachim August Zarnack (1819)""Str. 2 u. 3 Ernst Anschütz (1824)" } }
   tagline = ""
+  id = "cc4fc18754b206a7e9d15c117cda7d35e7076783"
 }
 
 

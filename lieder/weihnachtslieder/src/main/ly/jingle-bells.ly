@@ -8,6 +8,7 @@
   composer="Text und Musik: James Lord Pierpont (1850)"
 %  poet="Text: James Lord Pierpont (1850)"
   tagline = ""
+  id = "6e91ae5f6d6c758f1265d27382ea9bb7b5bb85ea"
 }
 
 Melodie=\relative c' {

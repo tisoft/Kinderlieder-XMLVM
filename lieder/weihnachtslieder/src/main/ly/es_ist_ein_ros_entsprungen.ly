@@ -7,6 +7,7 @@
   composer = "Text und Musik: Michael Praetorius / Friedrich Layriz"
   poet = ""
   tagline = ##f
+  id = "4c1f0168d0f9204cf83db46b30fd9dde622adfa0"
 }
 
 global = {

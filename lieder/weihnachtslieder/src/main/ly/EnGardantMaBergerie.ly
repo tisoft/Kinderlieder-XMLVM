@@ -24,6 +24,7 @@
   enteredby = "Sigrid Peuker"
   maintainerEmail = "mail@sigridpeuker.de"
   lastupdated = "2011/Dec/6"
+  id = "840e711a3c6d3b43e4f66495d7ca92ffdbc834c2"
 }
 
 % Beginnpunkt auf das mittlere C setzen
