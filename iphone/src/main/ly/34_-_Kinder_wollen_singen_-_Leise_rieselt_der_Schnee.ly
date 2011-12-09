@@ -13,6 +13,7 @@
   poet = "Text und Melodie: Eduard Ebel (um 1900)"
   copyright = "Gemeinfrei. Kann beliebig vervielfältigt und weitergegeben werden."
   tagline = ""
+id="8c516fb82a3c601fd50457a4dfa33ed0d6235a8b"
 }
 
 #(set-global-staff-size 16)

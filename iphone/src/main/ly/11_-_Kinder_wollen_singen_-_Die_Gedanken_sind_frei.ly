@@ -5,6 +5,7 @@
   composer = "Melodie: Volksweise aus Bern"
   copyright = "Gemeinfrei. Kann beliebig vervielfältigt und weitergegeben werden."
   tagline = ""
+id="7ae2b0898936b5628ca8d2306fb4fbcc29a2c280"
 }
 
 \include "deutsch.ly" %deutsche Noten- und Akkordbezeichnungen

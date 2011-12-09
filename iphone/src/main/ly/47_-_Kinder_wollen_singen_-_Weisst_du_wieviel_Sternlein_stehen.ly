@@ -5,6 +5,7 @@
   title = "Weißt du, wie viel’ Sternlein stehen"
   copyright = "Gemeinfrei. Kann beliebig vervielfältigt und weitergegeben werden."
   tagline = ""
+id="6eaf9e0751258e4bf423dda29e14bff0066f0778"
   poet = "Text: Wilhelm Hey"
   composer = "Musik: Volksweise"
 }

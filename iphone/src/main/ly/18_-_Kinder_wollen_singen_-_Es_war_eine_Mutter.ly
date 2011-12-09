@@ -15,6 +15,7 @@
   poet = "Text und Melodie: Volksweise aus Baden"
   copyright = "Gemeinfrei. Kann beliebig vervielfältigt und weitergegeben werden"
   tagline = ""
+id="dae268f4a3af5e868c27c25fd3790e7fc1b85d83"
  }
 
 #(set-global-staff-size 16)

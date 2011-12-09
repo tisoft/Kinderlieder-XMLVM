@@ -7,6 +7,7 @@
   poet = "Text: Hedwig Haberkern "
   copyright = "Gemeinfrei. Kann beliebig vervielfältigt und weitergegeben werden."
   tagline = ""
+id="ef8ecc3370af84dcc36af9e930d857eaa89950d1"
 }
 
 #(set-global-staff-size 16)

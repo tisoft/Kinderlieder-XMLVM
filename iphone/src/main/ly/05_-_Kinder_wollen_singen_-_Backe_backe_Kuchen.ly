@@ -13,6 +13,7 @@
   poet = "Text und Melodie: Volksweise aus Sachsen und Thüringen (19. Jh.)"
   copyright = "Gemeinfrei. Kann beliebig vervielfältigt und weitergegeben werden."
   tagline = ""
+id="1aafcfd069d80ba7973b4fea15b4382682b8bf71"
 }
 
 #(set-global-staff-size 16)

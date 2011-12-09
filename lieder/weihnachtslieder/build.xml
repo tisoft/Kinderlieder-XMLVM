@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Kinderlieder" default="default" basedir="">
-	<description>Builds, tests, and runs the project Kinderlieder.</description>
+    <description>Builds, tests, and runs the project Kinderlieder.</description>
 
     <target name="-process-ly">
         <mkdir dir="generated/tmp"/>
@@ -52,6 +52,22 @@
         </apply>
     </target>
 
+    <target name="lala">
+        <concat fixlastline="yes" eol="unix">
+            <header>{</header>
+            <concat fixlastline="yes" eol="unix">
+                <header>test</header>
+                <fileset dir="generated/tmp/" includes="*.id"/>
+                <filterchain>
+                    <concatfilter />
+                    <prefixlines prefix="\t{id="/>
+                    <suffixlines suffix="}"/>
+                </filterchain>
+            </concat>
+            <footer>}</footer>
+        </concat>
+    </target>
+
     <target name="generate-resources" depends="-process-wav">
         <mkdir dir="generated/resources"/>
         <copy todir="generated/resources">
@@ -59,6 +75,7 @@
                 <include name="**/*.pdf"/>
                 <include name="**/*.m4a"/>
                 <include name="**/*.title"/>
+                <include name="**/*.id"/>
             </fileset>
         </copy>
     </target>

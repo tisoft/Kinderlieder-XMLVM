@@ -15,6 +15,7 @@
   poet = "Text und Melodie: Volksweise"
   copyright = "Gemeinfrei. Kann beliebig vervielfältigt und weitergegeben werden"
   tagline = ""
+id="d8f02cc1bc0deac944d195984338ea09914b58a7"
 }
 
 #(set-global-staff-size 16)
