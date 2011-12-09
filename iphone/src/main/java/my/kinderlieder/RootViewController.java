@@ -32,9 +32,9 @@ class RootViewController extends RotatingViewController {
         mainView.setDataSource(new UITableViewDataSource() {
             @Override
             public UITableViewCell cellForRowAtIndexPath(UITableView table, NSIndexPath idx) {
-
-                UITableViewCell cell = new UITableViewCell(UITableViewCellStyle.Default, null);
-                cell.getTextLabel().setText(songInfos.get(idx.getRow()).getName());
+                final SongInfo songInfo = songInfos.get(idx.getRow());
+                UITableViewCell cell = new UITableViewCell(UITableViewCellStyle.Default, songInfo.getId());
+                cell.getTextLabel().setText(songInfo.getName()+" "+ songInfo.getCollectionInfo().getName());
                 return cell;
             }
 

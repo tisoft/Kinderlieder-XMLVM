@@ -10,7 +10,7 @@ public abstract class CollectionInfo {
 
     private final Map<String, SongInfo> songInfos=new LinkedHashMap<String, SongInfo>();
  
-    private final Map<SongInfo, List<MusicInfo>> musicInfoMap=new HashMap<SongInfo, List<MusicInfo>>();
+    private final Map<String, List<MusicInfo>> musicInfoMap=new HashMap<String, List<MusicInfo>>();
     
     
     public CollectionInfo(String name) {
@@ -27,18 +27,18 @@ public abstract class CollectionInfo {
     }
     
     public List<MusicInfo> getMusicInfos(SongInfo song){
-        return musicInfoMap.get(song);
+        return musicInfoMap.get(song.getId());
     }  
 
     protected final void add(SongInfo songInfo){
         songInfos.put(songInfo.getId(), songInfo);
     }
 
-    protected final void add(SongInfo songInfo, MusicInfo musicInfo){
-        List<MusicInfo> musicInfos=musicInfoMap.get(songInfo);
+    protected final void add(String songInfoID, MusicInfo musicInfo){
+        List<MusicInfo> musicInfos=musicInfoMap.get(songInfoID);
         if(musicInfos==null){
             musicInfos=new ArrayList<MusicInfo>();
-            musicInfoMap.put(songInfo, musicInfos);
+            musicInfoMap.put(songInfoID, musicInfos);
         }
         musicInfos.add(musicInfo);
     }

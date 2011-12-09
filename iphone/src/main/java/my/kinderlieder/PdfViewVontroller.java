@@ -50,7 +50,7 @@ class PdfViewVontroller extends RotatingViewController {
                 if (Main.getAudioPlayer() == null && musicInfos.size() > 1) {
                     String[] titles=new String[musicInfos.size()];
                     for(int i=0;i<titles.length;i++){
-                        titles[i]=musicInfos.get(i).getName();
+                        titles[i]=musicInfos.get(i).getCollectionInfo().getName();
                     }
 
                     // player is stopped and we have multiple music files
