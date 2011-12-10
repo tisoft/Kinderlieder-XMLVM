@@ -31,8 +31,10 @@ public class Main extends UIApplicationDelegate {
 	private static AVAudioPlayer audioPlayer;
 
     public static final Library library;
+    //as field so it doesn't get GC'd
+    private static UINavigationController navigationController;
 
-	public static void setAudioPlayer(AVAudioPlayer audioPlayer) {
+    public static void setAudioPlayer(AVAudioPlayer audioPlayer) {
 		Main.audioPlayer = audioPlayer;
 	}
 
@@ -49,7 +51,7 @@ public class Main extends UIApplicationDelegate {
 
 
 		UIViewController rootViewController = new RootViewController(window, library.getSongInfos());
-		final UINavigationController navigationController = new UINavigationController(rootViewController);
+        navigationController = new UINavigationController(rootViewController);
 		navigationController.setToolbarHidden(false);
 		/*
 		 * navigationController.setDelegate(new UINavigationControllerDelegate()
