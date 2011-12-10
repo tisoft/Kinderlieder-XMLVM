@@ -2,15 +2,16 @@ package my.kinderlieder;
 
 import org.xmlvm.iphone.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 class RootViewController extends RotatingViewController {
+    private Map<SongInfo, UITableViewCell> cells=new HashMap<SongInfo, UITableViewCell>();
+    private final UIButton infoButton;
+
     public RootViewController(final UIWindow window, final List<SongInfo> songInfos) {
         UITableView mainView = new UITableView(window.getFrame(), UITableViewStyle.Plain);
         setTitle("Kinderlieder");
-        final UIButton infoButton = UIButton.buttonWithType(UIButtonType.InfoLight);
+        infoButton = UIButton.buttonWithType(UIButtonType.InfoLight);
         infoButton.addTarget(new UIControlDelegate() {
             public void raiseEvent(UIControl sender, int uiControlEvent) {
                 UIViewController infoController = new InfoViewController(window);
@@ -33,8 +34,12 @@ class RootViewController extends RotatingViewController {
             @Override
             public UITableViewCell cellForRowAtIndexPath(UITableView table, NSIndexPath idx) {
                 final SongInfo songInfo = songInfos.get(idx.getRow());
-                UITableViewCell cell = new UITableViewCell(UITableViewCellStyle.Default, songInfo.getId());
-                cell.getTextLabel().setText(songInfo.getName()+" "+ songInfo.getCollectionInfo().getName());
+                UITableViewCell cell = cells.get(songInfo);
+                if(cell==null){
+                    cell=new UITableViewCell(UITableViewCellStyle.Default, null);
+                    cell.getTextLabel().setText(songInfo.getName()+" "+ songInfo.getCollectionInfo().getName());
+                    cells.put(songInfo, cell);
+                }
                 return cell;
             }
 
