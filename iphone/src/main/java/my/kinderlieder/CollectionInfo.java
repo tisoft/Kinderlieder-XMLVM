@@ -48,4 +48,8 @@ public abstract class CollectionInfo {
     public String getName() {
         return name;
     }
+
+    public String getId() {
+        return name;  //TODO store real id
+    }
 }

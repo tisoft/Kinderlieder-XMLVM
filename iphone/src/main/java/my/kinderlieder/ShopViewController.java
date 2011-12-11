@@ -59,8 +59,9 @@ public class ShopViewController extends RotatingViewController {
                 final FreeProduct product = products.get(idx.getRow());
                 UITableViewCell cell = cells.get(product);
                 if (cell == null) {
-                    cell = new UITableViewCell(UITableViewCellStyle.Default, null);
+                    cell = new UITableViewCell(UITableViewCellStyle.Subtitle, null);
                     cell.getTextLabel().setText(product.name);
+                    cell.getDetailTextLabel().setText(Main.library.isInstalled(product.id)?"installiert":"kostenlos");
                     cell.setAccessoryType(UITableViewCellAccessoryType.DetailDisclosureButton);
                     cells.put(product, cell);
                 }

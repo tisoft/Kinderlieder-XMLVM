@@ -134,4 +134,13 @@ public class Library {
         };
         collectionInfos.add(addon);
     }
+
+
+    public boolean isInstalled(String id) {
+        for (CollectionInfo c:collectionInfos){
+            if(id.equals(c.getId()))
+                return true;
+        }
+        return false;
+    }
 }
