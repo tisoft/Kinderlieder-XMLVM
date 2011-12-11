@@ -48,9 +48,9 @@ class PdfViewVontroller extends RotatingViewController {
             public void clicked() {
                 final List<MusicInfo> musicInfos = Main.library.getMusicInfos(songInfo);
                 if (Main.getAudioPlayer() == null && musicInfos.size() > 1) {
-                    String[] titles=new String[musicInfos.size()];
-                    for(int i=0;i<titles.length;i++){
-                        titles[i]=musicInfos.get(i).getCollectionInfo().getName();
+                    String[] titles = new String[musicInfos.size()];
+                    for (int i = 0; i < titles.length; i++) {
+                        titles[i] = musicInfos.get(i).getCollectionInfo().getName();
                     }
 
                     // player is stopped and we have multiple music files
@@ -64,8 +64,8 @@ class PdfViewVontroller extends RotatingViewController {
 
                         }
                     }, null, null, titles);
-                   uiActionSheet.showFromBarButtonItem(playButton, true);
-                   
+                    uiActionSheet.showFromBarButtonItem(playButton, true);
+
                 } else {
                     play();
                 }
@@ -102,15 +102,6 @@ class PdfViewVontroller extends RotatingViewController {
             }
         });
 
-        if (Main.library.getMusicInfos(songInfo).size() == 0) {
-
-        } else if (Main.library.getMusicInfos(songInfo).size() == 1) {
-            Main.setAudioPlayer(AVAudioPlayer.audioPlayerWithContentsOfURL(
-                    NSURL.fileURLWithPath(Main.library.getMusicInfos(songInfo).get(0).getMusicPath().getPath()), null));
-            Main.getAudioPlayer().prepareToPlay();
-            Main.getAudioPlayer().setNumberOfLoops(0);
-        }
-
         repeat = false;
         repeatButton = new UIBarButtonItem(UIImage.imageNamed("repeat.png"), UIBarButtonItemStyle.Plain,
                 new UIBarButtonItemDelegate() {
@@ -129,6 +120,17 @@ class PdfViewVontroller extends RotatingViewController {
         buttonsPauseStop = Arrays.asList(pauseButton, stopButton, repeatButton);
         buttonsPlayStop = Arrays.asList(playButton, stopButton, repeatButton);
         setToolbarItems(new ArrayList<UIBarButtonItem>(buttonsPlay));
+
+        if (Main.library.getMusicInfos(songInfo).size() == 0) {
+            playButton.setEnabled(false);
+            repeatButton.setEnabled(false);
+        } else if (Main.library.getMusicInfos(songInfo).size() == 1) {
+            Main.setAudioPlayer(AVAudioPlayer.audioPlayerWithContentsOfURL(
+                    NSURL.fileURLWithPath(Main.library.getMusicInfos(songInfo).get(0).getMusicPath().getPath()), null));
+            Main.getAudioPlayer().prepareToPlay();
+            Main.getAudioPlayer().setNumberOfLoops(0);
+        }
+
 
         stop();
     }
