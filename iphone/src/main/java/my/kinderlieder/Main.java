@@ -33,6 +33,7 @@ public class Main extends UIApplicationDelegate {
     public static final Library library;
     //as field so it doesn't get GC'd
     private static UINavigationController navigationController;
+    private static UIViewController rootViewController;
 
     public static void setAudioPlayer(AVAudioPlayer audioPlayer) {
 		Main.audioPlayer = audioPlayer;
@@ -50,7 +51,7 @@ public class Main extends UIApplicationDelegate {
 		UIApplication.sharedApplication().setIdleTimerDisabled(true);
 
 
-		UIViewController rootViewController = new RootViewController(window, library.getSongInfos());
+        rootViewController = new RootViewController(window, library.getSongInfos());
         navigationController = new UINavigationController(rootViewController);
 		navigationController.setToolbarHidden(false);
 		/*

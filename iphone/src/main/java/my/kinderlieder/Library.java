@@ -57,6 +57,7 @@ public class Library {
     }
 
     public void load() {
+        collectionInfos.clear();
         CollectionInfo builtin = new CollectionInfo("Kinder wollen singen") {
 
             @Override

@@ -7,9 +7,15 @@ import java.util.*;
 class RootViewController extends RotatingViewController {
     private Map<SongInfo, UITableViewCell> cells=new HashMap<SongInfo, UITableViewCell>();
     private final UIButton infoButton;
+    private UIViewController shopViewController;
+    private final UITableView mainView;
+    private final UITableViewDataSource dataSource;
+    private final UITableViewDelegate delegate;
+    private List<SongInfo> songInfos;
 
-    public RootViewController(final UIWindow window, final List<SongInfo> songInfos) {
-        UITableView mainView = new UITableView(window.getFrame(), UITableViewStyle.Plain);
+    public RootViewController(final UIWindow window, List<SongInfo> songInfos) {
+        this.songInfos = songInfos;
+        mainView = new UITableView(window.getFrame(), UITableViewStyle.Plain);
         setTitle("Kinderlieder");
         infoButton = UIButton.buttonWithType(UIButtonType.InfoLight);
         infoButton.addTarget(new UIControlDelegate() {
@@ -21,8 +27,8 @@ class RootViewController extends RotatingViewController {
         final UIBarButtonItem shopButton = new UIBarButtonItem(UIImage.imageNamed("arrow_down_24.png"), UIBarButtonItemStyle.Plain, new UIBarButtonItemDelegate() {
 
             public void clicked() {
-                UIViewController shopController = new ShopViewController(window);
-                getNavigationController().pushViewController(shopController, true);
+                shopViewController = new ShopViewController(RootViewController.this, window);
+                getNavigationController().pushViewController(shopViewController, true);
             }
         });
         shopButton.setTitle("Download");
@@ -30,14 +36,14 @@ class RootViewController extends RotatingViewController {
         setToolbarItems(new ArrayList<UIBarButtonItem>(Arrays.asList(new UIBarButtonItem(infoButton),
                 shopButton)));
         setView(mainView);
-        mainView.setDataSource(new UITableViewDataSource() {
+        dataSource = new UITableViewDataSource() {
             @Override
             public UITableViewCell cellForRowAtIndexPath(UITableView table, NSIndexPath idx) {
-                final SongInfo songInfo = songInfos.get(idx.getRow());
+                final SongInfo songInfo = RootViewController.this.songInfos.get(idx.getRow());
                 UITableViewCell cell = cells.get(songInfo);
-                if(cell==null){
-                    cell=new UITableViewCell(UITableViewCellStyle.Default, null);
-                    cell.getTextLabel().setText(songInfo.getName()+" "+ songInfo.getCollectionInfo().getName());
+                if (cell == null) {
+                    cell = new UITableViewCell(UITableViewCellStyle.Default, null);
+                    cell.getTextLabel().setText(songInfo.getName() + " " + songInfo.getCollectionInfo().getName());
                     cells.put(songInfo, cell);
                 }
                 return cell;
@@ -45,19 +51,36 @@ class RootViewController extends RotatingViewController {
 
             @Override
             public int numberOfRowsInSection(UITableView table, int section) {
-                return songInfos.size();
+                return RootViewController.this.songInfos.size();
             }
-        });
+        };
+        mainView.setDataSource(dataSource);
 
-        mainView.setDelegate(new UITableViewDelegate() {
+        delegate = new UITableViewDelegate() {
             @Override
             public void didSelectRowAtIndexPath(UITableView tableview, NSIndexPath indexPath) {
-                final SongInfo songInfo = songInfos.get(indexPath.getRow());
+                final SongInfo songInfo = RootViewController.this.songInfos.get(indexPath.getRow());
                 final UIViewController pdfViewController = new PdfViewVontroller(songInfo, window);
                 getNavigationController().setToolbarHidden(false, true);
                 getNavigationController().pushViewController(pdfViewController, true);
             }
-        });
+        };
+        mainView.setDelegate(delegate);
 
+    }
+    
+    private void reloadDataOnMainThread() {
+        NSObject.performSelectorOnMainThread(new NSSelector<Void>() {
+
+            public void invokeWithArgument(Void ignore) {
+                mainView.reloadData();
+            }
+        }, null, false);
+    }
+
+    public void reloadSongList() {
+        songInfos.clear();
+        songInfos.addAll(Main.library.getSongInfos());
+        reloadDataOnMainThread();
     }
 }
