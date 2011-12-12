@@ -16,11 +16,12 @@ import java.util.zip.ZipException;
 import java.util.zip.ZipFile;
 
 public class ShopViewController extends RotatingViewController {
-    private Map<FreeProduct, UITableViewCell> cells = new HashMap<FreeProduct, UITableViewCell>();
-    final List<FreeProduct> products = new ArrayList<ShopViewController.FreeProduct>();
+    private Map<Product, UITableViewCell> cells = new HashMap<Product, UITableViewCell>();
+    final List<Product> products = new ArrayList<Product>();
     private final UITableView shopView;
     private final UITableViewDataSource dataSource;
     private final UITableViewDelegate tableViewDelegate;
+    private SKProductsRequestDelegate skProductsRequestDelegate;
 
     public ShopViewController(final RootViewController rootViewController, UIWindow window) {
         shopView = new UITableView(window.getFrame(), UITableViewStyle.Plain);
@@ -30,25 +31,32 @@ public class ShopViewController extends RotatingViewController {
         tableViewDelegate = new UITableViewDelegate() {
             @Override
             public void didSelectRowAtIndexPath(UITableView tableview, NSIndexPath indexPath) {
-                final FreeProduct product = products.get(indexPath.getRow());
-                Runnable downloader = new Runnable() {
+                final Product product = products.get(indexPath.getRow());
+                if (product instanceof FreeProduct) {
+                    final FreeProduct freeProduct = (FreeProduct) product;
+                    Runnable downloader = new Runnable() {
 
-                    public void run() {
-                        try {
-                            download(product);
-                            rootViewController.reloadSongList();
-                        } catch (FileNotFoundException e) {
-                            // TODO Auto-generated catch block
-                            e.printStackTrace();
-                        } catch (IOException e) {
-                            // TODO Auto-generated catch block
-                            e.printStackTrace();
+                        public void run() {
+                            try {
+                                download(freeProduct);
+                                rootViewController.reloadSongList();
+                            } catch (FileNotFoundException e) {
+                                // TODO Auto-generated catch block
+                                e.printStackTrace();
+                            } catch (IOException e) {
+                                // TODO Auto-generated catch block
+                                e.printStackTrace();
+                            }
                         }
-                    }
 
-                };
+                    };
 
-                new Thread(downloader).start();
+                    new Thread(downloader).start();
+                } else {
+                    UIAlertView view = new UIAlertView("Clicked", product.name, null, null);
+                    view.show();
+                }
+
             }
         };
         shopView.setDelegate(tableViewDelegate);
@@ -56,12 +64,19 @@ public class ShopViewController extends RotatingViewController {
         dataSource = new UITableViewDataSource() {
             @Override
             public UITableViewCell cellForRowAtIndexPath(UITableView table, NSIndexPath idx) {
-                final FreeProduct product = products.get(idx.getRow());
-                UITableViewCell cell = cells.get(product);
+                final Product product = products.get(idx.getRow());
+                UITableViewCell cell = null;//cells.get(product);
                 if (cell == null) {
                     cell = new UITableViewCell(UITableViewCellStyle.Subtitle, null);
                     cell.getTextLabel().setText(product.name);
-                    cell.getDetailTextLabel().setText(Main.library.isInstalled(product.id)?"installiert":"kostenlos");
+                    if (Main.library.isInstalled(product.id)) {
+                        cell.getDetailTextLabel().setText("installiert");
+                    } else if (product instanceof FreeProduct) {
+                        cell.getDetailTextLabel().setText("kostenlos");
+                    } else if (product instanceof InAppProduct) {
+                        cell.getDetailTextLabel().setText("" + ((InAppProduct) product).price);
+                    }
+
                     cell.setAccessoryType(UITableViewCellAccessoryType.DetailDisclosureButton);
                     cells.put(product, cell);
                 }
@@ -79,12 +94,42 @@ public class ShopViewController extends RotatingViewController {
             public void run() {
                 try {
                     products.addAll(loadProducts());
+                    Set<String> iaps = new HashSet<String>();
+                    for (Product p : products) {
+                        if (p instanceof InAppProduct)
+                            iaps.add(((InAppProduct) p).appleProductId);
+                    }
+                    if (!iaps.isEmpty()) {
+                        SKProductsRequest productsRequest = new SKProductsRequest(iaps);
+                        skProductsRequestDelegate = new SKProductsRequestDelegate() {
+                            @Override
+                            public void didReceiveResponse(SKProductsRequest request, SKProductsResponse response) {
+                                //System.out.println("invalid: " + new ArrayList<String>(response.getInvalidProductIdentifiers()));
+                                List<SKProduct> products = response.getProducts();
+                                for (SKProduct skp : products) {
+                                    System.out.println(skp.getProductIdentifier() + " " + skp.getPrice() /*+ " " + skp.getPriceLocale()*/);
+                                    for (Product p : ShopViewController.this.products) {
+                                        if (p instanceof InAppProduct) {
+                                            InAppProduct iap = (InAppProduct) p;
+                                            if (iap.appleProductId.equals(skp.getProductIdentifier())) {
+                                                iap.price = skp.getPrice();
+                                            }
+                                        }
+                                    }
+                                }
+                                reloadDataOnMainThread();
+                            }
+                        };
+                        productsRequest.setProductsDelegate(skProductsRequestDelegate);
+
+                        productsRequest.start();
+                    }
                     reloadDataOnMainThread();
                 } catch (JSONException e) {
-                    UIAlertView alertView=new UIAlertView("Fehler", e.getMessage(), new UIAlertViewDelegate() {
+                    UIAlertView alertView = new UIAlertView("Fehler", e.getMessage(), new UIAlertViewDelegate() {
                         @Override
                         public void clickedButtonAtIndex(UIAlertView alertView, int buttonIndex) {
-                            getNavigationController().popViewControllerAnimated(true);
+                            //getNavigationController().popViewControllerAnimated(true);
                         }
                     }, "OK");
 
@@ -106,16 +151,17 @@ public class ShopViewController extends RotatingViewController {
         }, null, false);
     }
 
-    static class FreeProduct {
-        private String id;
-        private String name;
-        private String description;
-        private URL downloadURL;
-        private String json;
+    static class FreeProduct extends Product {
+        public URL downloadURL;
     }
 
-    private static List<FreeProduct> loadProducts() throws JSONException {
-        List<FreeProduct> ret = new ArrayList<FreeProduct>();
+    static class InAppProduct extends Product {
+        public String appleProductId;
+        public double price;
+    }
+
+    private static List<Product> loadProducts() throws JSONException {
+        List<Product> ret = new ArrayList<Product>();
         try {
             URL url = new URL("http://kessel.t-srv.de/api/products");
             BufferedReader br = new BufferedReader(new InputStreamReader(url.openStream()));
@@ -131,6 +177,16 @@ public class ShopViewController extends RotatingViewController {
                     fp.downloadURL = new URL("http://kessel.t-srv.de/api/file/" + fp.id);
                     fp.json = product.toString();
                     ret.add(fp);
+                } else if ("InAppProduct".equals(product.getString("type"))) {
+                    final InAppProduct iap = new InAppProduct();
+                    iap.id = product.getString("_id");
+                    iap.name = product.getString("name");
+                    iap.description = product.getString("description");
+                    iap.appleProductId = product.getString("appleProductId");
+                    //iap.downloadURL = new URL("http://kessel.t-srv.de/api/file/" + fp.id);
+
+                    iap.json = product.toString();
+                    ret.add(iap);
                 }
             }
             System.out.println(products);

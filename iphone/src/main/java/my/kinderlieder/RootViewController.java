@@ -12,25 +12,29 @@ class RootViewController extends RotatingViewController {
     private final UITableViewDataSource dataSource;
     private final UITableViewDelegate delegate;
     private List<SongInfo> songInfos;
+    private final UIBarButtonItemDelegate shopAction;
+    private final UIControlDelegate infoAction;
 
     public RootViewController(final UIWindow window, List<SongInfo> songInfos) {
         this.songInfos = songInfos;
         mainView = new UITableView(window.getFrame(), UITableViewStyle.Plain);
         setTitle("Kinderlieder");
         infoButton = UIButton.buttonWithType(UIButtonType.InfoLight);
-        infoButton.addTarget(new UIControlDelegate() {
+        infoAction = new UIControlDelegate() {
             public void raiseEvent(UIControl sender, int uiControlEvent) {
                 UIViewController infoController = new InfoViewController(window);
                 getNavigationController().pushViewController(infoController, true);
             }
-        }, UIControlEvent.TouchUpInside);
-        final UIBarButtonItem shopButton = new UIBarButtonItem(UIImage.imageNamed("arrow_down_24.png"), UIBarButtonItemStyle.Plain, new UIBarButtonItemDelegate() {
+        };
+        infoButton.addTarget(infoAction, UIControlEvent.TouchUpInside);
+        shopAction = new UIBarButtonItemDelegate() {
 
             public void clicked() {
                 shopViewController = new ShopViewController(RootViewController.this, window);
                 getNavigationController().pushViewController(shopViewController, true);
             }
-        });
+        };
+        final UIBarButtonItem shopButton = new UIBarButtonItem(UIImage.imageNamed("arrow_down_24.png"), UIBarButtonItemStyle.Plain, shopAction);
         shopButton.setTitle("Download");
 
         setToolbarItems(new ArrayList<UIBarButtonItem>(Arrays.asList(new UIBarButtonItem(infoButton),
