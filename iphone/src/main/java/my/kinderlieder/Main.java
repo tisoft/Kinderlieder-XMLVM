@@ -68,6 +68,9 @@ public class Main extends UIApplicationDelegate {
 		window.addSubview(navigationController.getView());
 
 		window.makeKeyAndVisible();
+
+        //get the instance once, to ensure registration of SKPaymentQueue
+        ShopService.getInstance();
 	}
 
 	public static void main(String[] args) {
