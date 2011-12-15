@@ -25,7 +25,8 @@ public class Base64 {
             int j = ((bytes[i] & 0xff) << 16) +
                     ((bytes[i + 1] & 0xff) << 8) +
                     (bytes[i + 2] & 0xff);
-            encoded += base64code.charAt((j >> 18) & 0x3f) +
+            encoded = encoded +
+                    base64code.charAt((j >> 18) & 0x3f) +
                     base64code.charAt((j >> 12) & 0x3f) +
                     base64code.charAt((j >> 6) & 0x3f) +
                     base64code.charAt(j & 0x3f);

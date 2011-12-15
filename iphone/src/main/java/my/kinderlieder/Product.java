@@ -5,4 +5,5 @@ public abstract class Product {
     public String name;
     public String description;
     public String json;
+    public boolean active;
 }
