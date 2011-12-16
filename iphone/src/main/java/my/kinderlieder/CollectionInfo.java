@@ -16,9 +16,13 @@ public abstract class CollectionInfo {
     private final Map<String, List<MusicInfo>> musicInfoMap=new HashMap<String, List<MusicInfo>>();
     
     
-    public CollectionInfo(String name) throws FileNotFoundException, JSONException {
+    public CollectionInfo(String name) throws JSONException {
         this.name = name;
-        load();
+        try {
+            load();
+        } catch (FileNotFoundException e) {
+            throw new JSONException(e);
+        }
     }
 
     public SongInfo getSongInfo(String id){

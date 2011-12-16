@@ -230,6 +230,7 @@ public class ShopService {
         Runnable runnable = new Runnable() {
             public void run() {
                 try {
+                    products.clear();
                     products.addAll(ShopService.getInstance().loadProducts());
                     Set<String> iaps = new HashSet<String>();
                     for (Product p : products) {

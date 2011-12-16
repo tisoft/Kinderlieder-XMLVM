@@ -6,6 +6,7 @@ import org.json.JSONObject;
 import org.json.JSONTokener;
 
 import java.io.*;
+import java.nio.charset.Charset;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
@@ -65,10 +66,8 @@ public class Library {
         })) {
             try {
                 loadProduct(product);
-            } catch (FileNotFoundException e) {
-                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
             } catch (JSONException e) {
-                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+                System.out.println("Could not load Product "+product+" "+e.getMessage());
             }
 
         }
@@ -76,21 +75,21 @@ public class Library {
 
     }
 
-    public void loadProduct(final File product) throws FileNotFoundException, JSONException {
+    public void loadProduct(final File product) throws JSONException {
         CollectionInfo addon = new CollectionInfo(product.getName()) {
             @Override
             protected void load() throws FileNotFoundException, JSONException {
                 File infoFile = new File(product, "info.json");
                 if (infoFile.exists()) {
 
-                    BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(infoFile)));
+                    BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(infoFile), Charset.forName("UTF-8")));
                     JSONArray songs = new JSONArray(new JSONTokener(br));
 
                     for (int i = 0; i < songs.length(); i++) {
                         JSONObject song = songs.getJSONObject(i);
                         String id = song.getString("id");
-                        String name = song.optString("name");
-                        String file = song.optString("file");
+                        String name = song.optString("name", null);
+                        String file = song.optString("file", null);
                         if (name != null && file != null) {
                             add(new SongInfo(this, id, name, new File(product, file)));
                         }
