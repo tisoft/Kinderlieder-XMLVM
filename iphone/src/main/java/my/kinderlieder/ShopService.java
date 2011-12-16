@@ -173,7 +173,11 @@ public class ShopService {
         bw.flush();
         bw.close();
 
-        Main.library.loadProduct(targetDir);
+        try {
+            Main.library.loadProduct(targetDir);
+        } catch (JSONException e) {
+            throw new IOException(e);
+        }
     }
 
     List<Product> loadProducts() throws JSONException {

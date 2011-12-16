@@ -1,5 +1,8 @@
 package my.kinderlieder;
 
+import org.json.JSONException;
+
+import java.io.FileNotFoundException;
 import java.util.*;
 
 /**
@@ -13,7 +16,7 @@ public abstract class CollectionInfo {
     private final Map<String, List<MusicInfo>> musicInfoMap=new HashMap<String, List<MusicInfo>>();
     
     
-    public CollectionInfo(String name) {
+    public CollectionInfo(String name) throws FileNotFoundException, JSONException {
         this.name = name;
         load();
     }
@@ -43,7 +46,7 @@ public abstract class CollectionInfo {
         musicInfos.add(musicInfo);
     }
     
-    protected abstract void load();
+    protected abstract void load() throws FileNotFoundException, JSONException;
 
     public String getName() {
         return name;

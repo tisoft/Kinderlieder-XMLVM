@@ -1,19 +1,17 @@
 package my.kinderlieder;
 
-import org.xmlvm.iphone.NSBundle;
-import org.xmlvm.iphone.NSString;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.json.JSONTokener;
 
-import java.io.File;
-import java.io.FileFilter;
-import java.io.FilenameFilter;
+import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 
 public class Library {
-
-    public static final String[] SUPPORTED_MEDIA = new String[]{"mp3", "m4a"};
 
     public Library() {
         load();
@@ -58,37 +56,6 @@ public class Library {
 
     public void load() {
         collectionInfos.clear();
-        CollectionInfo builtin = new CollectionInfo("Kinder wollen singen") {
-
-            @Override
-            protected void load() {
-                for (File file : Main.APP_DIR.listFiles(new FilenameFilter() {
-                    public boolean accept(File dir, String name) {
-                        return name.endsWith(".id");
-                    }
-                })) {
-                    final String baseName = file.getName().substring(0, file.getName().length() - 3);
-                    final String id = NSString.stringWithContentsOfFile(file.getAbsolutePath());
-                    final String name = NSString.stringWithContentsOfFile(new File(NSBundle
-                            .mainBundle().pathForResource(baseName, "title")).getAbsolutePath());
-                    SongInfo songInfo = new SongInfo(this, id, name, new File(NSBundle
-                            .mainBundle().pathForResource(baseName, "pdf")));
-                    add(songInfo);
-                    MusicInfo musicInfo = new MusicInfo(this, new File(NSBundle.mainBundle().pathForResource(
-                            baseName, "m4a")));
-                    add(id, musicInfo);
-                }
-            }
-        };
-
-        collectionInfos.add(builtin);
-
-        /*Collections.sort(songInfos, new Comparator<SongInfo>() {
-            public int compare(SongInfo o1, SongInfo o2) {
-                return o1.getName().compareToIgnoreCase(o2.getName());
-            }
-        });*/
-
 
         for (final File product : Main.PRODUCTS_DIR.listFiles(new FileFilter() {
 
@@ -96,39 +63,50 @@ public class Library {
                 return pathname.isDirectory();
             }
         })) {
-            loadProduct(product);
+            try {
+                loadProduct(product);
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            } catch (JSONException e) {
+                e.printStackTrace();  //To change body of catch statement use File | Settings | File Templates.
+            }
 
         }
 
 
     }
 
-    public void loadProduct(final File product) {
+    public void loadProduct(final File product) throws FileNotFoundException, JSONException {
         CollectionInfo addon = new CollectionInfo(product.getName()) {
             @Override
-            protected void load() {
-                for (File file : product.listFiles(new FileFilter() {
-                    public boolean accept(File file) {
-                        return file.getName().endsWith(".id");
-                    }
-                })) {
-                    final String baseName = file.getName().substring(0, file.getName().length() - 3);
-                    final String id = NSString.stringWithContentsOfFile(file.getAbsolutePath());
-                    File titleFile = new File(product, baseName + ".title");
-                    if (titleFile.exists()) {
-                        //load pdf
-                        final String name = NSString.stringWithContentsOfFile(titleFile.getAbsolutePath());
-                        SongInfo songInfo = new SongInfo(this, id, name, new File(product, baseName + ".pdf"));
-                        add(songInfo);
-                    }
+            protected void load() throws FileNotFoundException, JSONException {
+                File infoFile = new File(product, "info.json");
+                if (infoFile.exists()) {
 
-                    for (String extension : SUPPORTED_MEDIA) {
-                        File musicFile = new File(product, baseName + "." + extension);
-                        if (musicFile.exists()) {
-                            MusicInfo musicInfo = new MusicInfo(this, musicFile);
-                            add(id, musicInfo);
+                    BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream(infoFile)));
+                    JSONArray songs = new JSONArray(new JSONTokener(br));
+
+                    for (int i = 0; i < songs.length(); i++) {
+                        JSONObject song = songs.getJSONObject(i);
+                        String id = song.getString("id");
+                        String name = song.optString("name");
+                        String file = song.optString("file");
+                        if (name != null && file != null) {
+                            add(new SongInfo(this, id, name, new File(product, file)));
+                        }
+
+                        JSONArray musics = song.optJSONArray("music");
+                        if (musics != null) {
+                            for (int j = 0; j < musics.length(); j++) {
+                                JSONObject music=musics.getJSONObject(j);
+                                String musicName=music.getString("name");
+                                String musicFile=music.getString("file");
+                                add(id, new MusicInfo(this, musicName, new File(product, musicFile)));
+                            }
                         }
                     }
+               } else {
+                    throw new FileNotFoundException("No info.json in " + product);
                 }
             }
         };
@@ -137,8 +115,8 @@ public class Library {
 
 
     public boolean isInstalled(String id) {
-        for (CollectionInfo c:collectionInfos){
-            if(id.equals(c.getId()))
+        for (CollectionInfo c : collectionInfos) {
+            if (id.equals(c.getId()))
                 return true;
         }
         return false;
