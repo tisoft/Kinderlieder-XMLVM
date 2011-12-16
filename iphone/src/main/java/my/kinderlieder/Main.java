@@ -6,6 +6,7 @@ package my.kinderlieder;
 import org.xmlvm.iphone.*;
 
 import java.io.File;
+import java.io.IOException;
 
 public class Main extends UIApplicationDelegate {
 
@@ -25,8 +26,10 @@ public class Main extends UIApplicationDelegate {
 
 	static {
 		PRODUCTS_DIR.mkdirs();
+
         library=new Library();
-	}
+        
+ 	}
 
 	private static AVAudioPlayer audioPlayer;
 
@@ -69,9 +72,17 @@ public class Main extends UIApplicationDelegate {
 
 		window.makeKeyAndVisible();
 
-        //get the instance once, to ensure registration of SKPaymentQueue
-        ShopService.getInstance();
-	}
+        //ensure that our builtin product is installed
+        BuildInProduct buildInProduct=new BuildInProduct();
+        buildInProduct.id="4edc8421e4b0d3affed54df1";
+        buildInProduct.name="Kinder wollen Singen";
+        buildInProduct.file=new File(APP_DIR, "kinder-wollen-singen.zip");
+        try {
+            ShopService.getInstance().download(buildInProduct,null);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
 
 	public static void main(String[] args) {
 		UIApplication.main(args, null, Main.class);

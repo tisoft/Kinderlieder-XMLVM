@@ -74,8 +74,11 @@
             <fileset dir="generated/tmp">
                 <include name="**/*.pdf"/>
                 <include name="**/*.m4a"/>
-                <include name="**/*.title"/>
-                <include name="**/*.id"/>
+            </fileset>
+        </copy>
+        <copy todir="generated/resources">
+            <fileset dir=".">
+                <include name="info.json"/>
             </fileset>
         </copy>
     </target>

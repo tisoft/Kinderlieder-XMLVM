@@ -85,7 +85,7 @@ public class ShopService {
         out.close();
     }
 
-    void download(final DownloadableProduct product, SKPaymentTransaction transaction) throws IOException {
+    void download(final Product product, SKPaymentTransaction transaction) throws IOException {
         File productsDir = Main.PRODUCTS_DIR;
         File targetDir = new File(productsDir, product.id);
         File markerFile = new File(productsDir, product.id + ".json");
@@ -95,41 +95,50 @@ public class ShopService {
             return;
         }
 
-        System.out.println("Downloading " + product.name + " " + product.id);
+        File tmpFile;
 
-        File tmpFile = new File(productsDir, product.id + ".tmp");
-        HttpURLConnection connection = (HttpURLConnection) product.downloadURL.openConnection();
+        if (product instanceof DownloadableProduct) {
+            DownloadableProduct downloadableProduct = (DownloadableProduct) product;
+            System.out.println("Downloading " + product.name + " " + product.id);
 
-        int downloaded = 0;
-        if (tmpFile.exists()) {
-            downloaded = (int) tmpFile.length();
+            tmpFile = new File(productsDir, product.id + ".tmp");
+            HttpURLConnection connection = (HttpURLConnection) downloadableProduct.downloadURL.openConnection();
+
+            int downloaded = 0;
+            if (tmpFile.exists()) {
+                downloaded = (int) tmpFile.length();
+            }
+
+            connection.setRequestProperty("Range", "bytes=" + downloaded + "-");
+
+            connection.setDoInput(true);
+            connection.setDoOutput(true);
+
+            if (transaction != null) {
+                System.out.println("Using transaction receipt for download");
+                connection.setRequestMethod("POST");
+                PrintStream ps = new PrintStream(connection.getOutputStream());
+                ps.print("mode=sandbox");
+                final String receipt = Base64.encode(transaction.getTransactionReceipt().getBytes());
+                ps.print("&receipt=" + receipt);
+                ps.flush();
+                ps.close();
+                System.out.println(receipt);
+            }
+
+            // progressBar.setMax(connection.getContentLength());
+            System.out.println(connection.getHeaderFields());
+
+
+            BufferedInputStream in = new BufferedInputStream(connection.getInputStream());
+            FileOutputStream fos = (downloaded == 0) ? new FileOutputStream(tmpFile) : new FileOutputStream(tmpFile, true);
+            BufferedOutputStream bout = new BufferedOutputStream(fos, 1024);
+            copyInputStream(in, bout);
+        } else if(product instanceof BuildInProduct){
+            tmpFile=((BuildInProduct)product).file;
+        } else {
+            throw new IllegalArgumentException("Unknown Product type: "+product.getClass());
         }
-
-        connection.setRequestProperty("Range", "bytes=" + downloaded + "-");
-
-        connection.setDoInput(true);
-        connection.setDoOutput(true);
-
-        if (transaction != null) {
-            System.out.println("Using transaction receipt for download");
-            connection.setRequestMethod("POST");
-            PrintStream ps = new PrintStream(connection.getOutputStream());
-            ps.print("mode=sandbox");
-            final String receipt = Base64.encode(transaction.getTransactionReceipt().getBytes());
-            ps.print("&receipt=" + receipt);
-            ps.flush();
-            ps.close();
-            System.out.println(receipt);
-        }
-
-        // progressBar.setMax(connection.getContentLength());
-        System.out.println(connection.getHeaderFields());
-
-
-        BufferedInputStream in = new BufferedInputStream(connection.getInputStream());
-        FileOutputStream fos = (downloaded == 0) ? new FileOutputStream(tmpFile) : new FileOutputStream(tmpFile, true);
-        BufferedOutputStream bout = new BufferedOutputStream(fos, 1024);
-        copyInputStream(in, bout);
 
         // finished download
         targetDir.mkdir();

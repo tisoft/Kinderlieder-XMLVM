@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Kinderlieder" default="default" basedir=".">
-	<description>Builds, tests, and runs the project Kinderlieder.</description>
+<project name="Kinderlieder" default="default" basedir="">
+    <description>Builds, tests, and runs the project Kinderlieder.</description>
 
     <target name="-process-ly">
         <mkdir dir="generated/tmp"/>
@@ -23,7 +23,7 @@
             <arg value="-l -i -a file"/>
             <arg value="-F"/>
             <targetfile/>
-            <arg value="../../../lieder/FluidR3_GM.sf2"/>
+            <arg value="../../../FluidR3_GM.sf2"/>
             <srcfile/>
             <fileset dir="generated/tmp">
                 <patternset>
@@ -52,14 +52,33 @@
         </apply>
     </target>
 
+    <target name="lala">
+        <concat fixlastline="yes" eol="unix">
+            <header>{</header>
+            <concat fixlastline="yes" eol="unix">
+                <header>test</header>
+                <fileset dir="generated/tmp/" includes="*.id"/>
+                <filterchain>
+                    <concatfilter />
+                    <prefixlines prefix="\t{id="/>
+                    <suffixlines suffix="}"/>
+                </filterchain>
+            </concat>
+            <footer>}</footer>
+        </concat>
+    </target>
+
     <target name="generate-resources" depends="-process-wav">
         <mkdir dir="generated/resources"/>
         <copy todir="generated/resources">
             <fileset dir="generated/tmp">
                 <include name="**/*.pdf"/>
                 <include name="**/*.m4a"/>
-                <include name="**/*.id"/>
-                <include name="**/*.title"/>
+            </fileset>
+        </copy>
+        <copy todir="generated/resources">
+            <fileset dir=".">
+                <include name="info.json"/>
             </fileset>
         </copy>
     </target>

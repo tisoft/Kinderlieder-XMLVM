@@ -72,9 +72,6 @@
 										<exclude name="META-INF/**" />
 									</patternset>
 								</unzip>
-								<copy todir="target/extracted/resources">
-									<fileset dir="generated/resources" includes="**" />
-								</copy>
 							</tasks>
 						</configuration>
 						<goals>
