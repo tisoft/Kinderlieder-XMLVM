@@ -198,6 +198,17 @@
 		]
 	},
 	{
+		"id":"0369043e0d7baf05d676eaf58ed214e7b71d843d",
+		"name":"Froh zu sein bedarf es wenig",
+		"file":"19_-_Kinder_wollen_singen_-_Froh_zu_sein_bedarf_es_wenig.pdf",
+		"music":[
+			{
+			"name":"Melodie",
+			"file":"19_-_Kinder_wollen_singen_-_Froh_zu_sein_bedarf_es_wenig.m4a"
+			}
+		]
+	},
+	{
 		"id":"9c03b44c9ab33e650b3cbfa3018da6fbfcf52231",
 		"name":"Grün, grün, grün sind alle meine Kleider",
 		"file":"20_-_Kinder_wollen_singen_-_Gruen_gruen_gruen_sind_alle_meine_Kleider.pdf",
@@ -526,5 +537,5 @@
 			"file":"49_-_Kinder_wollen_singen_-_Widele_wedele.m4a"
 			}
 		]
-	}
+	},
 ]

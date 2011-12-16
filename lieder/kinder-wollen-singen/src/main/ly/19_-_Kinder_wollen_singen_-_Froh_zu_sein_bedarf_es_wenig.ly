@@ -14,6 +14,7 @@
   poet      = "Text und Melodie: August Mühling (1776 – 1847)"
   copyright = "Gemeinfrei. Kann beliebig vervielfältigt und weitergegeben werden."
   tagline   = ""
+id="0369043e0d7baf05d676eaf58ed214e7b71d843d"
 }
 
 #(set-global-staff-size 16)
