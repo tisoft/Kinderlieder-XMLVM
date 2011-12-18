@@ -78,7 +78,7 @@ public class Library {
     public void loadProduct(final File product) throws JSONException {
         CollectionInfo addon = new CollectionInfo(product.getName()) {
             @Override
-            protected void load() throws FileNotFoundException, JSONException {
+            protected void load() throws FileNotFoundException, JSONException, UnsupportedEncodingException {
                 File infoFile = new File(product, "info.json");
                 if (infoFile.exists()) {
 

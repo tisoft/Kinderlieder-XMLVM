@@ -10,6 +10,7 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.net.URLEncoder;
 import java.util.*;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
@@ -129,15 +130,27 @@ public class ShopService {
             // progressBar.setMax(connection.getContentLength());
             System.out.println(connection.getHeaderFields());
 
+            if(connection.getResponseCode()!=200){
+                throw new IOException("Server returned error: "+connection.getResponseCode());
+            }
+
+            if (!"bytes".equals(connection.getHeaderField("Accept-Ranges"))) {
+                System.out.println("Server does not support resume. Starting over.");
+                downloaded = 0;
+            }
 
             BufferedInputStream in = new BufferedInputStream(connection.getInputStream());
             FileOutputStream fos = (downloaded == 0) ? new FileOutputStream(tmpFile) : new FileOutputStream(tmpFile, true);
             BufferedOutputStream bout = new BufferedOutputStream(fos, 1024);
             copyInputStream(in, bout);
-        } else if(product instanceof BuildInProduct){
-            tmpFile=((BuildInProduct)product).file;
+
+            /*if(tmpFile.length()!=downloadableProduct.size){
+                System.out.println("File Size does not match: "+tmpFile.length()+" "+downloadableProduct.size);
+            }*/
+        } else if (product instanceof BuildInProduct) {
+            tmpFile = ((BuildInProduct) product).file;
         } else {
-            throw new IllegalArgumentException("Unknown Product type: "+product.getClass());
+            throw new IllegalArgumentException("Unknown Product type: " + product.getClass());
         }
 
         // finished download
@@ -148,7 +161,7 @@ public class ShopService {
         Enumeration<? extends ZipEntry> entries = zipFile.entries();
 
         while (entries.hasMoreElements()) {
-            ZipEntry entry = (ZipEntry) entries.nextElement();
+            ZipEntry entry = entries.nextElement();
 
             if (entry.isDirectory()) {
                 // Assume directories are stored parents
@@ -159,10 +172,9 @@ public class ShopService {
                 (new File(targetDir, entry.getName())).mkdir();
                 continue;
             }
-
             System.out.println("Extracting file: " + entry.getName());
             copyInputStream(zipFile.getInputStream(entry), new BufferedOutputStream(new FileOutputStream(new File(
-                    targetDir, entry.getName()))));
+                    targetDir, Util.fixEncoding(entry.getName())))));
         }
 
         zipFile.close();
@@ -201,7 +213,7 @@ public class ShopService {
                         ret.add(fp);
                 } else if ("InAppProduct".equals(product.getString("type"))) {
                     final InAppProduct iap = new InAppProduct();
-                    iap.id = product.getString("_id");
+                    iap.id = product.getString("id");
                     iap.active = product.getBoolean("active");
                     iap.name = product.getString("name");
                     iap.description = product.getString("description");

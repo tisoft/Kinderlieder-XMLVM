@@ -3,6 +3,7 @@ package my.kinderlieder;
 import org.json.JSONException;
 
 import java.io.FileNotFoundException;
+import java.io.UnsupportedEncodingException;
 import java.util.*;
 
 /**
@@ -21,6 +22,8 @@ public abstract class CollectionInfo {
         try {
             load();
         } catch (FileNotFoundException e) {
+            throw new JSONException(e);
+        } catch (UnsupportedEncodingException e) {
             throw new JSONException(e);
         }
     }
@@ -50,7 +53,7 @@ public abstract class CollectionInfo {
         musicInfos.add(musicInfo);
     }
     
-    protected abstract void load() throws FileNotFoundException, JSONException;
+    protected abstract void load() throws FileNotFoundException, JSONException, UnsupportedEncodingException;
 
     public String getName() {
         return name;
