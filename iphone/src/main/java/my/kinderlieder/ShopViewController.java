@@ -76,13 +76,13 @@ public class ShopViewController extends RotatingViewController implements Observ
                                 cell.getDetailTextLabel().setText("kostenlos");
                             } else if (product instanceof InAppProduct) {
                                 final InAppProduct inAppProduct = (InAppProduct) product;
-                                if (inAppProduct.skProduct == null) {
-                                    cell.getDetailTextLabel().setText("lade Informationen");
-                                } else {
-                                    cell.getDetailTextLabel().setText("" + inAppProduct.skProduct.getPrice());
-                                }
+                                cell.getDetailTextLabel().setText("" + inAppProduct.skProduct.getPrice());
                             }
+                            break;
                         }
+                        case INFO:
+                            cell.getDetailTextLabel().setText("lade Informationen");
+                            break;
                     }
 
 

@@ -239,6 +239,9 @@ public class ShopService extends Observable {
                     fillInfo(product, iap);
                     iap.appleProductId = product.getString("appleProductId");
                     iap.downloadURL = new URL("http://kessel.t-srv.de/api/file/" + iap.id);
+                    if(iap.state!= Product.State.INSTALLED){
+                        iap.state= Product.State.INFO;
+                    }
                     if (iap.active)
                         ret.add(iap);
                 }
@@ -291,6 +294,8 @@ public class ShopService extends Observable {
                                             InAppProduct iap = (InAppProduct) p;
                                             if (iap.appleProductId.equals(skp.getProductIdentifier())) {
                                                 iap.skProduct = skp;
+                                                if(iap.state== Product.State.INFO)
+                                                    iap.state= Product.State.AVAILABLE;
                                             }
                                         }
                                     }

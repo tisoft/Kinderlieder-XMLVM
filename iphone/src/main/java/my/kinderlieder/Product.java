@@ -10,6 +10,6 @@ public abstract class Product {
     public int percent;
 
     public enum State{
-        AVAILABLE, DOWNLOAD, EXTRACT, INSTALLED;
+        INFO, AVAILABLE, DOWNLOAD, EXTRACT, INSTALLED;
     }
 }
