@@ -26,9 +26,8 @@ public class Main extends UIApplicationDelegate {
 
 	static {
 		PRODUCTS_DIR.mkdirs();
-
         library=new Library();
-        
+        NSFileManager.setSkipBackupAttribute(PRODUCTS_DIR.getAbsolutePath());
  	}
 
 	private static AVAudioPlayer audioPlayer;
