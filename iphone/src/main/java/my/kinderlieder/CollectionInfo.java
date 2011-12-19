@@ -10,15 +10,15 @@ import java.util.*;
  * A collection of Songs
  */
 public abstract class CollectionInfo {
-    private final String name;
+    private final String id;
 
     private final Map<String, SongInfo> songInfos=new LinkedHashMap<String, SongInfo>();
  
     private final Map<String, List<MusicInfo>> musicInfoMap=new HashMap<String, List<MusicInfo>>();
     
     
-    public CollectionInfo(String name) throws JSONException {
-        this.name = name;
+    public CollectionInfo(String id) throws JSONException {
+        this.id = id;
         try {
             load();
         } catch (FileNotFoundException e) {
@@ -56,10 +56,10 @@ public abstract class CollectionInfo {
     protected abstract void load() throws FileNotFoundException, JSONException, UnsupportedEncodingException;
 
     public String getName() {
-        return name;
+        return id;//return real name
     }
 
     public String getId() {
-        return name;  //TODO store real id
+        return id;
     }
 }
