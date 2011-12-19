@@ -2,11 +2,9 @@ package my.kinderlieder;
 
 import org.xmlvm.iphone.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
-class PdfViewVontroller extends RotatingViewController {
+class PdfViewController extends RotatingViewController {
     // these should be local, but can't since we need them inside the delegate
     private UIBarButtonItem rightBarButtonItem;
     public UIBarButtonItem repeatButton;
@@ -15,17 +13,24 @@ class PdfViewVontroller extends RotatingViewController {
     private List<UIBarButtonItem> buttonsPlayStop;
     boolean repeat;
     private SongInfo songInfo;
-    private final UIBarButtonItem playButton;
-    private final NSURLRequest request;
+    private UIBarButtonItem playButton;
+    private Map<SongInfo,NSURLRequest> requests=new HashMap<SongInfo, NSURLRequest>();
+    private final UIWebView pdfView;
 
-    public PdfViewVontroller(final SongInfo songInfo, UIWindow window) {
-        this.songInfo = songInfo;
-        setTitle(songInfo.getName());
-        UIWebView pdfView = new UIWebView(window.getFrame());
+    public PdfViewController(UIWindow window) {
+        pdfView = new UIWebView(window.getFrame());
         setView(pdfView);
         pdfView.setScalesPageToFit(true);
+    }
+    public void show(final SongInfo songInfo){
+        this.songInfo = songInfo;
+        setTitle(songInfo.getName());
         final NSURL pdfURL = NSURL.fileURLWithPath(songInfo.getPdfPath().getPath());
-        request = NSURLRequest.requestWithURL(pdfURL);
+        NSURLRequest request = requests.get(songInfo);
+        if(request==null){
+            request=NSURLRequest.requestWithURL(pdfURL);
+            requests.put(songInfo, request);
+        }
         pdfView.loadRequest(request);
         if (UIPrintInteractionController.isPrintingAvailable()) {
             rightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Action, new UIBarButtonItemDelegate() {

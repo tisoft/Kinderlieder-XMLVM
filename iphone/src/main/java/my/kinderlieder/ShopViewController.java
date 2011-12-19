@@ -2,7 +2,6 @@ package my.kinderlieder;
 
 import org.xmlvm.iphone.*;
 
-import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Observable;
@@ -13,42 +12,23 @@ public class ShopViewController extends RotatingViewController implements Observ
     private final UITableView shopView;
     private final UITableViewDataSource dataSource;
     private final UITableViewDelegate tableViewDelegate;
+    private final ShopDetailViewController detailViewController;
 
-    public ShopViewController(final RootViewController rootViewController, UIWindow window) {
+    public ShopViewController(final UIWindow window) {
         shopView = new UITableView(window.getFrame(), UITableViewStyle.Plain);
         setTitle("Downloads");
         setView(shopView);
+
+        detailViewController = new ShopDetailViewController(window);
 
         tableViewDelegate = new UITableViewDelegate() {
             @Override
             public void didSelectRowAtIndexPath(UITableView tableview, NSIndexPath indexPath) {
                 final Product product = ShopService.getInstance().getProducts().get(indexPath.getRow());
-                if (product instanceof FreeProduct) {
-                    final FreeProduct freeProduct = (FreeProduct) product;
-                    Runnable downloader = new Runnable() {
-
-                        public void run() {
-                            try {
-                                ShopService.getInstance().download(freeProduct, null);
-                            } catch (IOException e) {
-                                Util.showErrorDialog(e);
-                            }
-                        }
-
-                    };
-
-                    new Thread(downloader).start();
-                } else if (product instanceof InAppProduct) {
-                    InAppProduct inAppProduct = (InAppProduct) product;
-                    if (inAppProduct.skProduct != null) {
-                        SKPayment payment = SKPayment.paymentWithProduct(inAppProduct.skProduct);
-                        SKPaymentQueue.defaultQueue().addPayment(payment);
-                    }
-                } else {
-                    UIAlertView view = new UIAlertView("Clicked", product.name, null, null);
-                    view.show();
+                if(product.state!= Product.State.INFO){
+                    detailViewController.show(product);
+                    getNavigationController().pushViewController(detailViewController, true);
                 }
-
             }
         };
         shopView.setDelegate(tableViewDelegate);
@@ -71,6 +51,9 @@ public class ShopViewController extends RotatingViewController implements Observ
                         case DOWNLOAD:
                             cell.getDetailTextLabel().setText("lade "+product.percent+"%");
                             break;
+                        case BUYING:
+                            cell.getDetailTextLabel().setText("kaufe");
+                            break;
                         case AVAILABLE: {
                             if (product instanceof FreeProduct) {
                                 cell.getDetailTextLabel().setText("kostenlos");
@@ -85,9 +68,13 @@ public class ShopViewController extends RotatingViewController implements Observ
                             break;
                     }
 
-
-                    cell.setAccessoryType(UITableViewCellAccessoryType.DetailDisclosureButton);
-                    cells.put(product, cell);
+                    if(product.state!= Product.State.INFO){
+                        cell.setAccessoryType(UITableViewCellAccessoryType.DetailDisclosureButton);
+                    } else {
+                        cell.setAccessoryType(UITableViewCellAccessoryType.None);
+                    }
+                    
+                   cells.put(product, cell);
                 }
                 return cell;
             }

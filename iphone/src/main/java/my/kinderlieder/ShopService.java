@@ -16,6 +16,7 @@ import java.util.zip.ZipFile;
 
 public class ShopService extends Observable {
     private static ShopService ourInstance = new ShopService();
+    public static final String MODE = "buy";//sandbox or buy
 
     public static ShopService getInstance() {
         return ourInstance;
@@ -80,6 +81,15 @@ public class ShopService extends Observable {
         SKPaymentQueue.defaultQueue().addTransactionObserver(skPaymentTransactionObserver);
     }
 
+    void buy(InAppProduct inAppProduct) {
+        if (inAppProduct.skProduct != null) {
+            SKPayment payment = SKPayment.paymentWithProduct(inAppProduct.skProduct);
+            SKPaymentQueue.defaultQueue().addPayment(payment);
+            inAppProduct.state= Product.State.BUYING;
+            doNotify();
+        }
+    }
+
     private final void copyInputStream(Product p, int downloaded, int size, InputStream in, OutputStream out) throws IOException {
         byte[] buffer = new byte[1024];
         int len;
@@ -140,7 +150,7 @@ public class ShopService extends Observable {
                 System.out.println("Using transaction receipt for download");
                 connection.setRequestMethod("POST");
                 PrintStream ps = new PrintStream(connection.getOutputStream());
-                ps.print("mode=sandbox");
+                ps.print("mode="+ MODE);
                 final String receipt = Base64.encode(transaction.getTransactionReceipt().getBytes());
                 ps.print("&receipt=" + receipt);
                 ps.flush();

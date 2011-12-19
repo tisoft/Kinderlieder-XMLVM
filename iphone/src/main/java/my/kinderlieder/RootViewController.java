@@ -14,9 +14,11 @@ class RootViewController extends RotatingViewController implements Observer{
     private List<SongInfo> songInfos;
     private final UIBarButtonItemDelegate shopAction;
     private final UIControlDelegate infoAction;
+    private PdfViewController pdfViewController;
 
     public RootViewController(final UIWindow window, List<SongInfo> songInfos) {
         this.songInfos = songInfos;
+        pdfViewController=new PdfViewController(window);
         mainView = new UITableView(window.getFrame(), UITableViewStyle.Plain);
         setTitle("Kinderlieder");
         infoButton = UIButton.buttonWithType(UIButtonType.InfoLight);
@@ -30,7 +32,9 @@ class RootViewController extends RotatingViewController implements Observer{
         shopAction = new UIBarButtonItemDelegate() {
 
             public void clicked() {
-                shopViewController = new ShopViewController(RootViewController.this, window);
+                if(shopViewController==null){
+                    shopViewController = new ShopViewController(window);
+                }
                 getNavigationController().pushViewController(shopViewController, true);
             }
         };
@@ -65,7 +69,7 @@ class RootViewController extends RotatingViewController implements Observer{
             @Override
             public void didSelectRowAtIndexPath(UITableView tableview, NSIndexPath indexPath) {
                 final SongInfo songInfo = RootViewController.this.songInfos.get(indexPath.getRow());
-                final UIViewController pdfViewController = new PdfViewVontroller(songInfo, window);
+                pdfViewController.show(songInfo);
                 getNavigationController().setToolbarHidden(false, true);
                 getNavigationController().pushViewController(pdfViewController, true);
             }
