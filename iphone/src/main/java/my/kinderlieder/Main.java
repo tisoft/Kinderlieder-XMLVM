@@ -53,18 +53,6 @@ public class Main extends UIApplicationDelegate {
 		// don't go to sleep
 		UIApplication.sharedApplication().setIdleTimerDisabled(true);
 
-
-        //ensure that our builtin product is installed
-        BuildInProduct buildInProduct=new BuildInProduct();
-        buildInProduct.id="4edc8421e4b0d3affed54df1";
-        buildInProduct.name="Kinder wollen Singen";
-        buildInProduct.file=new File(APP_DIR, "kinder-wollen-singen.zip");
-        try {
-            ShopService.getInstance().download(buildInProduct,null);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
         rootViewController = new RootViewController(window, library.getSongInfos());
         navigationController = new UINavigationController(rootViewController);
 		navigationController.setToolbarHidden(false);
@@ -82,6 +70,25 @@ public class Main extends UIApplicationDelegate {
 		window.addSubview(navigationController.getView());
 
 		window.makeKeyAndVisible();
+
+
+        Runnable runnable = new Runnable() {
+            public void run() {
+                //ensure that our builtin product is installed
+                BuildInProduct buildInProduct=new BuildInProduct();
+                buildInProduct.id="0";
+                buildInProduct.name="Kinder wollen Singen";
+                buildInProduct.file=new File(APP_DIR, "kinder-wollen-singen.zip");
+                try {
+                    ShopService.getInstance().download(buildInProduct,null);
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        };
+
+        new Thread(runnable).start();
+
     }
 
 	public static void main(String[] args) {

@@ -4,7 +4,7 @@ import org.xmlvm.iphone.*;
 
 import java.util.*;
 
-class RootViewController extends RotatingViewController {
+class RootViewController extends RotatingViewController implements Observer{
     private Map<SongInfo, UITableViewCell> cells=new HashMap<SongInfo, UITableViewCell>();
     private final UIButton infoButton;
     private UIViewController shopViewController;
@@ -71,6 +71,7 @@ class RootViewController extends RotatingViewController {
         };
         mainView.setDelegate(delegate);
 
+        Main.library.addObserver(this);
     }
     
     private void reloadDataOnMainThread() {
@@ -86,5 +87,11 @@ class RootViewController extends RotatingViewController {
         songInfos.clear();
         songInfos.addAll(Main.library.getSongInfos());
         reloadDataOnMainThread();
+    }
+
+    public void update(Observable o, Object arg) {
+        if(o==Main.library){
+            reloadSongList();
+        }
     }
 }

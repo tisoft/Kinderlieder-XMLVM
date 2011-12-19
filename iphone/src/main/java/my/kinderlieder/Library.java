@@ -7,12 +7,9 @@ import org.json.JSONTokener;
 
 import java.io.*;
 import java.nio.charset.Charset;
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
-public class Library {
+public class Library extends Observable{
 
     public Library() {
         load();
@@ -110,6 +107,9 @@ public class Library {
             }
         };
         collectionInfos.add(addon);
+        setChanged();
+        notifyObservers();
+        clearChanged();
     }
 
 

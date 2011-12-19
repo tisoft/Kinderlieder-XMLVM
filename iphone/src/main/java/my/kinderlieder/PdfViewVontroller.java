@@ -16,6 +16,7 @@ class PdfViewVontroller extends RotatingViewController {
     boolean repeat;
     private SongInfo songInfo;
     private final UIBarButtonItem playButton;
+    private final NSURLRequest request;
 
     public PdfViewVontroller(final SongInfo songInfo, UIWindow window) {
         this.songInfo = songInfo;
@@ -24,7 +25,8 @@ class PdfViewVontroller extends RotatingViewController {
         setView(pdfView);
         pdfView.setScalesPageToFit(true);
         final NSURL pdfURL = NSURL.fileURLWithPath(songInfo.getPdfPath().getPath());
-        pdfView.loadRequest(NSURLRequest.requestWithURL(pdfURL));
+        request = NSURLRequest.requestWithURL(pdfURL);
+        pdfView.loadRequest(request);
         if (UIPrintInteractionController.isPrintingAvailable()) {
             rightBarButtonItem = new UIBarButtonItem(UIBarButtonSystemItem.Action, new UIBarButtonItemDelegate() {
                 public void clicked() {
