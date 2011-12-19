@@ -80,12 +80,25 @@ public class ShopService extends Observable {
         SKPaymentQueue.defaultQueue().addTransactionObserver(skPaymentTransactionObserver);
     }
 
-    private final static void copyInputStream(InputStream in, OutputStream out) throws IOException {
+    private final void copyInputStream(Product p, int downloaded, int size, InputStream in, OutputStream out) throws IOException {
         byte[] buffer = new byte[1024];
         int len;
 
-        while ((len = in.read(buffer)) >= 0)
+        if (size != 0) {
+            p.percent = downloaded * 100 / size;
+        }
+
+        while ((len = in.read(buffer)) >= 0) {
             out.write(buffer, 0, len);
+            downloaded+=len;
+            if (size != 0) {
+                int percent = downloaded * 100 / size;
+                if (p.percent != percent) {
+                    p.percent = percent;
+                    doNotify();
+                }
+            }
+        }
 
         in.close();
         out.close();
@@ -135,7 +148,6 @@ public class ShopService extends Observable {
                 System.out.println(receipt);
             }
 
-            // progressBar.setMax(connection.getContentLength());
             System.out.println(connection.getHeaderFields());
 
             if (connection.getResponseCode() != 200) {
@@ -147,10 +159,12 @@ public class ShopService extends Observable {
                 downloaded = 0;
             }
 
+            int size = connection.getContentLength();
+
             BufferedInputStream in = new BufferedInputStream(connection.getInputStream());
             FileOutputStream fos = (downloaded == 0) ? new FileOutputStream(tmpFile) : new FileOutputStream(tmpFile, true);
             BufferedOutputStream bout = new BufferedOutputStream(fos, 1024);
-            copyInputStream(in, bout);
+            copyInputStream(product, downloaded, size, in, bout);
 
             /*if(tmpFile.length()!=downloadableProduct.size){
                 System.out.println("File Size does not match: "+tmpFile.length()+" "+downloadableProduct.size);
@@ -183,7 +197,7 @@ public class ShopService extends Observable {
                 continue;
             }
             System.out.println("Extracting file: " + entry.getName());
-            copyInputStream(zipFile.getInputStream(entry), new BufferedOutputStream(new FileOutputStream(new File(
+            copyInputStream(product, 0, 0, zipFile.getInputStream(entry), new BufferedOutputStream(new FileOutputStream(new File(
                     targetDir, Util.fixEncoding(entry.getName())))));
         }
 

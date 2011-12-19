@@ -7,7 +7,8 @@ public abstract class Product {
     public String json;
     public boolean active;
     public State state;
-    
+    public int percent;
+
     public enum State{
         AVAILABLE, DOWNLOAD, EXTRACT, INSTALLED;
     }

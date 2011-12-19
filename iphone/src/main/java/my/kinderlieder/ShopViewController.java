@@ -69,7 +69,7 @@ public class ShopViewController extends RotatingViewController implements Observ
                             cell.getDetailTextLabel().setText("extrahiere");
                             break;
                         case DOWNLOAD:
-                            cell.getDetailTextLabel().setText("lade ");
+                            cell.getDetailTextLabel().setText("lade "+product.percent+"%");
                             break;
                         case AVAILABLE: {
                             if (product instanceof FreeProduct) {
