@@ -1,5 +1,8 @@
 package my.kinderlieder;
 
+import org.xmlvm.iphone.UIAlertView;
+import org.xmlvm.iphone.UIAlertViewDelegate;
+
 import java.io.UnsupportedEncodingException;
 
 public class Util {
@@ -15,5 +18,16 @@ public class Util {
         s=s.replace("\u0075\u0308","ü");
         s=s.replace("\u0055\u0308","Ü");
         return s;
+    }
+
+    static void showErrorDialog(Exception e) {
+        UIAlertView alertView = new UIAlertView("Fehler", e.getMessage(), new UIAlertViewDelegate() {
+            @Override
+            public void clickedButtonAtIndex(UIAlertView alertView, int buttonIndex) {
+                //getNavigationController().popViewControllerAnimated(true);
+            }
+        }, "OK");
+
+        alertView.show();
     }
 }

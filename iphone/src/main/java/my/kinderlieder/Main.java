@@ -82,7 +82,7 @@ public class Main extends UIApplicationDelegate {
                 try {
                     ShopService.getInstance().download(buildInProduct,null);
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    Util.showErrorDialog(e);
                 }
             }
         };

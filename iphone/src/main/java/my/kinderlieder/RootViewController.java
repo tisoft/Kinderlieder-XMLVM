@@ -47,7 +47,8 @@ class RootViewController extends RotatingViewController implements Observer{
                 UITableViewCell cell = cells.get(songInfo);
                 if (cell == null) {
                     cell = new UITableViewCell(UITableViewCellStyle.Default, null);
-                    cell.getTextLabel().setText(songInfo.getName() + " " + songInfo.getCollectionInfo().getName());
+                    cell.getTextLabel().setText(songInfo.getName());
+                    //cell.getDetailTextLabel().setText(songInfo.getCollectionInfo().getName());
                     cells.put(songInfo, cell);
                 }
                 return cell;

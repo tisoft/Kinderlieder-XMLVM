@@ -10,12 +10,11 @@ import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
-import java.net.URLEncoder;
 import java.util.*;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipFile;
 
-public class ShopService {
+public class ShopService extends Observable {
     private static ShopService ourInstance = new ShopService();
 
     public static ShopService getInstance() {
@@ -28,7 +27,7 @@ public class ShopService {
     final SKPaymentTransactionObserver skPaymentTransactionObserver = new SKPaymentTransactionObserver() {
         @Override
         public void updatedTransactions(SKPaymentQueue queue, ArrayList<SKPaymentTransaction> transactions) {
-            for (SKPaymentTransaction transaction : transactions) {
+            for (final SKPaymentTransaction transaction : transactions) {
                 SKPaymentTransaction originalTransaction = transaction;
                 while (originalTransaction.getOriginalTransaction() != null) {
                     originalTransaction = originalTransaction.getOriginalTransaction();
@@ -38,28 +37,34 @@ public class ShopService {
                     switch (originalTransaction.getTransactionState()) {
                         case SKPaymentTransactionState.Purchased:
                         case SKPaymentTransactionState.Restored: {
+                            queue.finishTransaction(transaction);
                             System.out.println("Successful transaction: " + originalTransaction.getTransactionIdentifier() + " " + originalTransaction.getPayment().getProductIdentifier());
-                            try {
-                                for (Product product : products) {
-                                    if (product instanceof InAppProduct) {
-                                        InAppProduct inAppProduct = (InAppProduct) product;
-                                        if (inAppProduct.appleProductId.equals(transaction.getPayment().getProductIdentifier())) {
-                                            download(inAppProduct, originalTransaction);
-                                            break;
+                            final SKPaymentTransaction finalOriginalTransaction = originalTransaction;
+                            Runnable runnable = new Runnable() {
+                                public void run() {
+                                    try {
+                                        for (Product product : products) {
+                                            if (product instanceof InAppProduct) {
+                                                InAppProduct inAppProduct = (InAppProduct) product;
+                                                if (inAppProduct.appleProductId.equals(transaction.getPayment().getProductIdentifier())) {
+                                                    download(inAppProduct, finalOriginalTransaction);
+                                                    break;
+                                                }
+                                            }
                                         }
+                                    } catch (IOException e) {
+                                        UIAlertView alertView = new UIAlertView("Fehler", e.getMessage(), new UIAlertViewDelegate() {
+                                            @Override
+                                            public void clickedButtonAtIndex(UIAlertView alertView, int buttonIndex) {
+                                                //getNavigationController().popViewControllerAnimated(true);
+                                            }
+                                        }, "OK");
+
+                                        alertView.show();
                                     }
                                 }
-                            } catch (IOException e) {
-                                UIAlertView alertView = new UIAlertView("Fehler", e.getMessage(), new UIAlertViewDelegate() {
-                                    @Override
-                                    public void clickedButtonAtIndex(UIAlertView alertView, int buttonIndex) {
-                                        //getNavigationController().popViewControllerAnimated(true);
-                                    }
-                                }, "OK");
-
-                                alertView.show();
-                            }
-                            queue.finishTransaction(transaction);
+                            };
+                            new Thread(runnable).start();
                         }
                         case SKPaymentTransactionState.Failed: {
                             System.out.println("Failed transaction: " + originalTransaction.getTransactionIdentifier() + " " + originalTransaction.getPayment().getProductIdentifier());
@@ -100,6 +105,9 @@ public class ShopService {
 
         if (product instanceof DownloadableProduct) {
             DownloadableProduct downloadableProduct = (DownloadableProduct) product;
+            downloadableProduct.state = Product.State.DOWNLOAD;
+            doNotify();
+
             System.out.println("Downloading " + product.name + " " + product.id);
 
             tmpFile = new File(productsDir, product.id + ".tmp");
@@ -130,8 +138,8 @@ public class ShopService {
             // progressBar.setMax(connection.getContentLength());
             System.out.println(connection.getHeaderFields());
 
-            if(connection.getResponseCode()!=200){
-                throw new IOException("Server returned error: "+connection.getResponseCode());
+            if (connection.getResponseCode() != 200) {
+                throw new IOException("Server returned error: " + connection.getResponseCode());
             }
 
             if (!"bytes".equals(connection.getHeaderField("Accept-Ranges"))) {
@@ -157,6 +165,8 @@ public class ShopService {
         targetDir.mkdir();
         // extract
         ZipFile zipFile = new ZipFile(tmpFile);
+        product.state = Product.State.EXTRACT;
+        doNotify();
 
         Enumeration<? extends ZipEntry> entries = zipFile.entries();
 
@@ -185,6 +195,9 @@ public class ShopService {
         bw.flush();
         bw.close();
 
+        product.state = Product.State.INSTALLED;
+        doNotify();
+
         try {
             Main.library.loadProduct(targetDir);
         } catch (JSONException e) {
@@ -203,23 +216,15 @@ public class ShopService {
                 JSONObject product = products.getJSONObject(i);
                 if ("FreeProduct".equals(product.getString("type"))) {
                     FreeProduct fp = new FreeProduct();
-                    fp.id = product.getString("_id");
-                    fp.active = product.getBoolean("active");
-                    fp.name = product.getString("name");
-                    fp.description = product.getString("description");
+                    fillInfo(product, fp);
                     fp.downloadURL = new URL("http://kessel.t-srv.de/api/file/" + fp.id);
-                    fp.json = product.toString();
                     if (fp.active)
                         ret.add(fp);
                 } else if ("InAppProduct".equals(product.getString("type"))) {
                     final InAppProduct iap = new InAppProduct();
-                    iap.id = product.getString("id");
-                    iap.active = product.getBoolean("active");
-                    iap.name = product.getString("name");
-                    iap.description = product.getString("description");
+                    fillInfo(product, iap);
                     iap.appleProductId = product.getString("appleProductId");
                     iap.downloadURL = new URL("http://kessel.t-srv.de/api/file/" + iap.id);
-                    iap.json = product.toString();
                     if (iap.active)
                         ret.add(iap);
                 }
@@ -234,11 +239,20 @@ public class ShopService {
         return ret;
     }
 
+    private void fillInfo(JSONObject jp, Product p) throws JSONException {
+        p.id = jp.getString("id");
+        p.active = jp.getBoolean("active");
+        p.name = jp.getString("name");
+        p.description = jp.getString("description");
+        p.json = jp.toString();
+        p.state = Main.library.isInstalled(p.id) ? Product.State.INSTALLED : Product.State.AVAILABLE;
+    }
+
     public List<Product> getProducts() {
         return products;
     }
 
-    void refreshProducts(final ShopViewController shopViewController) {
+    void refreshProducts() {
         Runnable runnable = new Runnable() {
             public void run() {
                 try {
@@ -267,28 +281,26 @@ public class ShopService {
                                         }
                                     }
                                 }
-                                shopViewController.reloadDataOnMainThread();
+                                doNotify();
                             }
                         };
                         productsRequest.setProductsDelegate(skProductsRequestDelegate);
 
                         productsRequest.start();
                     }
-                    shopViewController.reloadDataOnMainThread();
+                    doNotify();
                 } catch (JSONException e) {
-                    UIAlertView alertView = new UIAlertView("Fehler", e.getMessage(), new UIAlertViewDelegate() {
-                        @Override
-                        public void clickedButtonAtIndex(UIAlertView alertView, int buttonIndex) {
-                            //getNavigationController().popViewControllerAnimated(true);
-                        }
-                    }, "OK");
-
-                    alertView.show();
+                    Util.showErrorDialog(e);
                 }
             }
 
         };
 
         new Thread(runnable).start();
+    }
+
+    private void doNotify() {
+        setChanged();
+        notifyObservers();
     }
 }

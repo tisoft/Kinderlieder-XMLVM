@@ -5,8 +5,10 @@ import org.xmlvm.iphone.*;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Observable;
+import java.util.Observer;
 
-public class ShopViewController extends RotatingViewController {
+public class ShopViewController extends RotatingViewController implements Observer {
     private Map<Product, UITableViewCell> cells = new HashMap<Product, UITableViewCell>();
     private final UITableView shopView;
     private final UITableViewDataSource dataSource;
@@ -28,20 +30,18 @@ public class ShopViewController extends RotatingViewController {
                         public void run() {
                             try {
                                 ShopService.getInstance().download(freeProduct, null);
-                                rootViewController.reloadSongList();
                             } catch (IOException e) {
-                                // TODO Auto-generated catch block
-                                e.printStackTrace();
+                                Util.showErrorDialog(e);
                             }
                         }
 
                     };
 
                     new Thread(downloader).start();
-                } else if (product instanceof InAppProduct){
-                    InAppProduct inAppProduct=(InAppProduct)product;
-                    if(inAppProduct.skProduct!=null){
-                        SKPayment payment=SKPayment.paymentWithProduct(inAppProduct.skProduct);
+                } else if (product instanceof InAppProduct) {
+                    InAppProduct inAppProduct = (InAppProduct) product;
+                    if (inAppProduct.skProduct != null) {
+                        SKPayment payment = SKPayment.paymentWithProduct(inAppProduct.skProduct);
                         SKPaymentQueue.defaultQueue().addPayment(payment);
                     }
                 } else {
@@ -61,18 +61,30 @@ public class ShopViewController extends RotatingViewController {
                 if (cell == null) {
                     cell = new UITableViewCell(UITableViewCellStyle.Subtitle, null);
                     cell.getTextLabel().setText(product.name);
-                    if (Main.library.isInstalled(product.id)) {
-                        cell.getDetailTextLabel().setText("installiert");
-                    } else if (product instanceof FreeProduct) {
-                        cell.getDetailTextLabel().setText("kostenlos");
-                    } else if (product instanceof InAppProduct) {
-                        final InAppProduct inAppProduct = (InAppProduct) product;
-                        if(inAppProduct.skProduct==null){
-                            cell.getDetailTextLabel().setText("lade Informationen");
-                        } else {
-                            cell.getDetailTextLabel().setText("" + inAppProduct.skProduct.getPrice());
+                    switch (product.state) {
+                        case INSTALLED:
+                            cell.getDetailTextLabel().setText("installiert");
+                            break;
+                        case EXTRACT:
+                            cell.getDetailTextLabel().setText("extrahiere");
+                            break;
+                        case DOWNLOAD:
+                            cell.getDetailTextLabel().setText("lade ");
+                            break;
+                        case AVAILABLE: {
+                            if (product instanceof FreeProduct) {
+                                cell.getDetailTextLabel().setText("kostenlos");
+                            } else if (product instanceof InAppProduct) {
+                                final InAppProduct inAppProduct = (InAppProduct) product;
+                                if (inAppProduct.skProduct == null) {
+                                    cell.getDetailTextLabel().setText("lade Informationen");
+                                } else {
+                                    cell.getDetailTextLabel().setText("" + inAppProduct.skProduct.getPrice());
+                                }
+                            }
                         }
                     }
+
 
                     cell.setAccessoryType(UITableViewCellAccessoryType.DetailDisclosureButton);
                     cells.put(product, cell);
@@ -87,7 +99,8 @@ public class ShopViewController extends RotatingViewController {
         };
         shopView.setDataSource(dataSource);
 
-        ShopService.getInstance().refreshProducts(this);
+        ShopService.getInstance().addObserver(this);
+        ShopService.getInstance().refreshProducts();
     }
 
 
@@ -100,24 +113,7 @@ public class ShopViewController extends RotatingViewController {
         }, null, false);
     }
 
-    /*public static void main(String... args) {
-         try {
-             List<FreeProduct> products = loadProducts();
-             for (FreeProduct product : products) {
-                 download(product);
-             }
-         } catch (JSONException e) {
-             e.printStackTrace();
-         } catch (FileNotFoundException e) {
-             // TODO Auto-generated catch block
-             e.printStackTrace();
-         } catch (ZipException e) {
-             // TODO Auto-generated catch block
-             e.printStackTrace();
-         } catch (IOException e) {
-             // TODO Auto-generated catch block
-             e.printStackTrace();
-         }
-     }*/
-
+    public void update(Observable o, Object arg) {
+        reloadDataOnMainThread();
+    }
 }
