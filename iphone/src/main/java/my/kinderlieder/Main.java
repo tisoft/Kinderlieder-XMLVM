@@ -10,6 +10,8 @@ import java.io.IOException;
 
 public class Main extends UIApplicationDelegate {
 
+    public static final boolean DEBUG=true;
+
 	public static final File APP_DIR = new File(NSBundle.mainBundle().pathForResource("info", "html")).getParentFile();// can't
 	// get
 	// directory

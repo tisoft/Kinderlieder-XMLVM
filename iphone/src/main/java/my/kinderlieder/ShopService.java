@@ -16,7 +16,7 @@ import java.util.zip.ZipFile;
 
 public class ShopService extends Observable {
     private static ShopService ourInstance = new ShopService();
-    public static final String MODE = "buy";//sandbox or buy
+    public static final String MODE = Main.DEBUG?"sandbox":"buy";//sandbox or buy
 
     public static ShopService getInstance() {
         return ourInstance;
@@ -242,7 +242,7 @@ public class ShopService extends Observable {
                     FreeProduct fp = new FreeProduct();
                     fillInfo(product, fp);
                     fp.downloadURL = new URL("http://kessel.t-srv.de/api/file/" + fp.id);
-                    if (fp.active)
+                    if (Main.DEBUG||fp.active)
                         ret.add(fp);
                 } else if ("InAppProduct".equals(product.getString("type"))) {
                     final InAppProduct iap = new InAppProduct();
@@ -252,7 +252,7 @@ public class ShopService extends Observable {
                     if(iap.state!= Product.State.INSTALLED){
                         iap.state= Product.State.INFO;
                     }
-                    if (iap.active)
+                    if (Main.DEBUG||iap.active)
                         ret.add(iap);
                 }
             }
