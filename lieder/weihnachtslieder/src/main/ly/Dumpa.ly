@@ -120,7 +120,9 @@ Wdhd = \lyricmode {
     \new Lyrics = Strophe \lyricsto Melodie \Textd
     \new Lyrics = Strophe \lyricsto Melodie \Wdhd
   >>
-  %\midi {}
+
+  \layout {}
+  \midi { \context { \Score tempoWholesPerMinute = #(ly:make-moment 120 4) } }
 }
   
 

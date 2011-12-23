@@ -181,6 +181,9 @@ spart = {
       >>
       
     >>
+
+    \layout{}
+    \midi{}
   }
 }
           

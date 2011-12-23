@@ -101,7 +101,8 @@ g2 c4
     %\new Lyrics = Strophe \lyricsto Melodie \choraltextfour
     %\new Lyrics = Strophe \lyricsto Melodie \choraltextnine
   >>
-  %\midi{}
+  \layout{}
+  \midi{}
 }
 
 

@@ -53,7 +53,7 @@ harmonies = \chordmode {
 %            \remove "Bar_number_engraver"
         }
     }
-    \midi {}
+  \midi { \context { \Score tempoWholesPerMinute = #(ly:make-moment 120 4) } }
 }
 
 \markup {

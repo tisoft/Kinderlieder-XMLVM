@@ -54,7 +54,8 @@ Text=\lyricmode {
     }
     \new Lyrics = Strophe \lyricsto Melodie \Text
   >>
-  %\midi{}
+  \layout{}
+  \midi { \context { \Score tempoWholesPerMinute = #(ly:make-moment 120 4) } }
 }
 
 \markup {

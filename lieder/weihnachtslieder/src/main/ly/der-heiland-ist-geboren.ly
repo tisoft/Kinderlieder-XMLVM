@@ -78,7 +78,7 @@ sonst4 wär’n2 wir4 gar2 ver4 -- lor2. -- ren2 in4 al2 -- le4 E2 -- wig4 -- ke
 
   \layout{
   }
-  %\midi{}
+  \midi { \context { \Score tempoWholesPerMinute = #(ly:make-moment 120 4) } }
 }
 
   

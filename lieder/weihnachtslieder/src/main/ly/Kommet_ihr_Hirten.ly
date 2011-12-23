@@ -47,7 +47,7 @@ wdh = \lyricmode {
     \new Lyrics \lyricsto "Lied" { \wdh }
   >>
   \layout{}
-  %\midi {\context {  \Score  tempoWholesPerMinute = #(ly:make-moment 110 4)  } }
+  \midi {\context {  \Score  tempoWholesPerMinute = #(ly:make-moment 110 4)  } }
 }
 
 \markup {

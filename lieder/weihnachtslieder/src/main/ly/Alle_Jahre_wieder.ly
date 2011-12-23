@@ -40,7 +40,8 @@ AlleJahreWiederXa = \score {<<
     \new Voice = "melodie" {\AlleJahreWiederXaMelodie}
     \new Lyrics \lyricsto "melodie" {\AlleJahreWiederXaTextStropheEins}
   >>
-  %\midi{}
+  \layout{}
+  \midi { \context { \Score tempoWholesPerMinute = #(ly:make-moment 120 4) } }
 }
 
 

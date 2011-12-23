@@ -57,7 +57,8 @@ Text = \lyricmode {
     \new Voice = "Lied" \transpose es c { \Melodie }
     \new Lyrics \lyricsto "Lied" { \Text }
   >>
-  %\midi {\context {  \Score  tempoWholesPerMinute = #(ly:make-moment 100 4)  } }
+  \layout{}
+  \midi {\context {  \Score  tempoWholesPerMinute = #(ly:make-moment 100 4)  } }
 }
 
 

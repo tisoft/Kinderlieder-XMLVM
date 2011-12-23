@@ -51,7 +51,8 @@ Text=\lyricmode {
     }
     \new Lyrics = Strophe \lyricsto Melodie \Text
   >>
-  %\midi{}
+  \layout{}
+  \midi{}
 }
 
 \markup {

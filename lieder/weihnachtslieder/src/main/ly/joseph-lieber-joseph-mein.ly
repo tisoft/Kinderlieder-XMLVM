@@ -50,9 +50,9 @@ Gott, der wird dein Loh -- ner  sein im Him -- mel -- reich,  der Jung -- frau  
   }
   \new Lyrics \lyricsto "melodie" { \SongText } 
   >>
-  %\layout{}
-  %\midi{}
-} 
+  \layout{}
+  \midi { \context { \Score tempoWholesPerMinute = #(ly:make-moment 120 4) } }
+}
 
   
 \markup {

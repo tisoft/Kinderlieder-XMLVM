@@ -5,7 +5,9 @@
 \layout {
 	indent = 15\mm
 }
+\midi {
 
+}
 \paper {
   line-width    = 185\mm
   left-margin   = 15\mm
@@ -29,7 +31,7 @@
 
 % Beginnpunkt auf das mittlere C setzen
 
-
+\score{
 <<
 
 \relative c'' {
@@ -175,7 +177,8 @@ Cet -- te voix plai -- sante e bel -- le que si doux j’oy -- ais chan -- tant,
   } 
 
 >>
-
-
+    \layout {}
+    \midi { \context { \Score tempoWholesPerMinute = #(ly:make-moment 120 4) } }
+}
 
 
