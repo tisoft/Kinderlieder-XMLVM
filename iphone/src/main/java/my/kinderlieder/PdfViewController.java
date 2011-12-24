@@ -14,7 +14,7 @@ class PdfViewController extends RotatingViewController {
     boolean repeat;
     private SongInfo songInfo;
     private UIBarButtonItem playButton;
-    private Map<SongInfo,NSURLRequest> requests=new HashMap<SongInfo, NSURLRequest>();
+    private Map<SongInfo, NSURLRequest> requests = new HashMap<SongInfo, NSURLRequest>();
     private final UIWebView pdfView;
 
     public PdfViewController(UIWindow window) {
@@ -22,13 +22,14 @@ class PdfViewController extends RotatingViewController {
         setView(pdfView);
         pdfView.setScalesPageToFit(true);
     }
-    public void show(final SongInfo songInfo){
+
+    public void show(final SongInfo songInfo) {
         this.songInfo = songInfo;
         setTitle(songInfo.getName());
         final NSURL pdfURL = NSURL.fileURLWithPath(songInfo.getPdfPath().getPath());
         NSURLRequest request = requests.get(songInfo);
-        if(request==null){
-            request=NSURLRequest.requestWithURL(pdfURL);
+        if (request == null) {
+            request = NSURLRequest.requestWithURL(pdfURL);
             requests.put(songInfo, request);
         }
         pdfView.loadRequest(request);
@@ -128,29 +129,25 @@ class PdfViewController extends RotatingViewController {
         buttonsPlayStop = Arrays.asList(playButton, stopButton, repeatButton);
         setToolbarItems(new ArrayList<UIBarButtonItem>(buttonsPlay));
 
-        if (Main.library.getMusicInfos(songInfo).size() == 0) {
-            playButton.setEnabled(false);
-            repeatButton.setEnabled(false);
-        } else if (Main.library.getMusicInfos(songInfo).size() == 1) {
-            Main.setAudioPlayer(AVAudioPlayer.audioPlayerWithContentsOfURL(
-                    NSURL.fileURLWithPath(Main.library.getMusicInfos(songInfo).get(0).getMusicPath().getPath()), null));
-            Main.getAudioPlayer().prepareToPlay();
-            Main.getAudioPlayer().setNumberOfLoops(0);
-        }
-
-
         stop();
     }
 
     private void stop() {
         if (Main.getAudioPlayer() != null) {
             Main.getAudioPlayer().stop();
-            if (Main.library.getMusicInfos(songInfo).size() > 1) {
-                Main.setAudioPlayer(null);
-            } else {
-                Main.getAudioPlayer().prepareToPlay();
-            }
-            setToolbarItems(new ArrayList<UIBarButtonItem>(buttonsPlay));
         }
+
+        if (Main.library.getMusicInfos(songInfo).size() == 0) {
+            playButton.setEnabled(false);
+            repeatButton.setEnabled(false);
+        } else if (Main.library.getMusicInfos(songInfo).size() > 1) {
+            Main.setAudioPlayer(null);
+        } else {
+            Main.setAudioPlayer(AVAudioPlayer.audioPlayerWithContentsOfURL(
+                    NSURL.fileURLWithPath(Main.library.getMusicInfos(songInfo).get(0).getMusicPath().getPath()), null));
+            Main.getAudioPlayer().prepareToPlay();
+            Main.getAudioPlayer().setNumberOfLoops(repeat ? -1 : 0);
+        }
+        setToolbarItems(new ArrayList<UIBarButtonItem>(buttonsPlay));
     }
 }
