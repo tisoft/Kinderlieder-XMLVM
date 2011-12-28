@@ -2,10 +2,7 @@ package my.kinderlieder;
 
 import org.xmlvm.iphone.*;
 
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Observable;
-import java.util.Observer;
+import java.util.*;
 
 public class ShopViewController extends RotatingViewController implements Observer {
     private Map<Product, UITableViewCell> cells = new HashMap<Product, UITableViewCell>();
@@ -19,15 +16,32 @@ public class ShopViewController extends RotatingViewController implements Observ
         setTitle("Downloads");
         setView(shopView);
 
+        setToolbarItems(new ArrayList<UIBarButtonItem>(Arrays.asList(new UIBarButtonItem(UIBarButtonSystemItem.Refresh, new UIBarButtonItemDelegate() {
+            public void clicked() {
+                SKPaymentQueue.defaultQueue().restoreCompletedTransactions();
+            }
+        }))));
+
+
         detailViewController = new ShopDetailViewController(window);
 
         tableViewDelegate = new UITableViewDelegate() {
             @Override
             public void didSelectRowAtIndexPath(UITableView tableview, NSIndexPath indexPath) {
                 final Product product = ShopService.getInstance().getProducts().get(indexPath.getRow());
-                if(product.state!= Product.State.INFO){
+                if (product.state != Product.State.INFO) {
                     detailViewController.show(product);
                     getNavigationController().pushViewController(detailViewController, true);
+                }
+            }
+
+            @Override
+            public int editingStyleForRowAtIndexPath(UITableView tableview, NSIndexPath indexPath) {
+                final Product product = ShopService.getInstance().getProducts().get(indexPath.getRow());
+                if (product instanceof BuildInProduct) {
+                    return UITableViewCellEditingStyle.None;
+                } else {
+                    return UITableViewCellEditingStyle.Delete;
                 }
             }
         };
@@ -49,7 +63,7 @@ public class ShopViewController extends RotatingViewController implements Observ
                             cell.getDetailTextLabel().setText("extrahiere");
                             break;
                         case DOWNLOAD:
-                            cell.getDetailTextLabel().setText("lade "+product.percent+"%");
+                            cell.getDetailTextLabel().setText("lade " + product.percent + "%");
                             break;
                         case BUYING:
                             cell.getDetailTextLabel().setText("kaufe");
@@ -68,13 +82,13 @@ public class ShopViewController extends RotatingViewController implements Observ
                             break;
                     }
 
-                    if(product.state!= Product.State.INFO){
+                    if (product.state != Product.State.INFO) {
                         cell.setAccessoryType(UITableViewCellAccessoryType.DetailDisclosureButton);
                     } else {
                         cell.setAccessoryType(UITableViewCellAccessoryType.None);
                     }
-                    
-                   cells.put(product, cell);
+
+                    cells.put(product, cell);
                 }
                 return cell;
             }
@@ -82,6 +96,30 @@ public class ShopViewController extends RotatingViewController implements Observ
             @Override
             public int numberOfRowsInSection(UITableView table, int section) {
                 return ShopService.getInstance().getProducts().size();
+            }
+
+            @Override
+            public boolean canEditRowAtIndexPath(UITableView table, NSIndexPath indexPath) {
+                final Product product = ShopService.getInstance().getProducts().get(indexPath.getRow());
+                if (product instanceof BuildInProduct) {
+                    return false;
+                } else {
+                    return product.state == Product.State.INSTALLED;
+                }
+            }
+
+            @Override
+            public void commitEditingStyle(UITableView table, int editingStyle, NSIndexPath indexPath) {
+                final Product product = ShopService.getInstance().getProducts().get(indexPath.getRow());
+                if (editingStyle == UITableViewCellEditingStyle.Delete) {
+
+                    Runnable deleteThread = new Runnable() {
+                        public void run() {
+                            ShopService.getInstance().delete(product);
+                        }
+                    };
+                    new Thread(deleteThread).start();
+                }
             }
         };
         shopView.setDataSource(dataSource);

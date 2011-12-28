@@ -114,6 +114,33 @@ public class ShopService extends Observable {
         out.close();
     }
 
+    public void delete(Product product) {
+        File productsDir = Main.PRODUCTS_DIR;
+        File targetDir = new File(productsDir, product.id);
+        File markerFile = new File(productsDir, product.id + ".json");
+
+        try {
+            deleteRecursive(markerFile);
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+        try {
+            deleteRecursive(targetDir);
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+        }
+        doNotify();
+    }
+
+    void deleteRecursive(File f) throws IOException {
+      if (f.isDirectory()) {
+        for (File c : f.listFiles())
+          deleteRecursive(c);
+      }
+      if (!f.delete())
+        throw new FileNotFoundException("Failed to deleteRecursive file: " + f);
+    }
+
     void download(final Product product, SKPaymentTransaction transaction) throws IOException {
         File productsDir = Main.PRODUCTS_DIR;
         File targetDir = new File(productsDir, product.id);
