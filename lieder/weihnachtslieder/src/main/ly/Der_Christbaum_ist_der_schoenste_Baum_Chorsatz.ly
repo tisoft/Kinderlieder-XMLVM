@@ -1,6 +1,6 @@
 \version "2.12.3"
 \header {
-    mutopiatitle = "Der Christbaum ist der schönste Baum"
+    mutopiatitle = "Der Christbaum ist der schönste Baum (Chorsatz)"
     mutopiacomposer = ""
     mutopiapoet = "Traditional"
     mutopiainstrument = "SATB"

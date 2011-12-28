@@ -134,7 +134,7 @@ spart = {
 \bookpart {
   
   \header {
-    title = "Ich steh an deiner Krippe hier"
+    title = "Ich steh an deiner Krippe hier (Chorsatz)"
     composer = "Musik: Johann Sebastian Bach"
     poet = "Text: Paul Gerhardt"
     opus = "BWV 469"

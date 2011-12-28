@@ -3,7 +3,7 @@
 \include "default.ly"
 
 \header {
-    title = "Herbei, o ihr Gläub’gen – Adeste Fideles"
+    title = "Herbei, o ihr Gläub’gen – Adeste Fideles (Chorsatz)"
 	poet = \markup {\line{ Text: \column{ "Deutsch: Friedrich Heinrich Ranke" "Latein: John Francis Wade" }}}
     composer = "Musik: John Francis Wade"
     tagline = ##f

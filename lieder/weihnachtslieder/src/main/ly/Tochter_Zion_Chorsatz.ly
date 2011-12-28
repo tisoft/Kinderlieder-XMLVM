@@ -3,7 +3,7 @@
 \include "default.ly"
 
 \header {
-	title = "Tochter Zion, freue dich"
+	title = "Tochter Zion, freue dich (Chorsatz)"
 	composer="Musik: Georg Friedrich Händel (1747)"
 	poet="Text: Friedrich Heinrich Ranke (1823)"
 	tagline=""
