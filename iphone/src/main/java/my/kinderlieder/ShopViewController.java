@@ -10,17 +10,19 @@ public class ShopViewController extends RotatingViewController implements Observ
     private final UITableViewDataSource dataSource;
     private final UITableViewDelegate tableViewDelegate;
     private final ShopDetailViewController detailViewController;
+    private final UIBarButtonItemDelegate restoreAction;
 
     public ShopViewController(final UIWindow window) {
         shopView = new UITableView(window.getFrame(), UITableViewStyle.Plain);
         setTitle("Downloads");
         setView(shopView);
 
-        setToolbarItems(new ArrayList<UIBarButtonItem>(Arrays.asList(new UIBarButtonItem(UIBarButtonSystemItem.Refresh, new UIBarButtonItemDelegate() {
+        restoreAction = new UIBarButtonItemDelegate() {
             public void clicked() {
                 SKPaymentQueue.defaultQueue().restoreCompletedTransactions();
             }
-        }))));
+        };
+        setToolbarItems(new ArrayList<UIBarButtonItem>(Arrays.asList(new UIBarButtonItem("Restore",UIBarButtonItemStyle.Bordered, restoreAction))));
 
 
         detailViewController = new ShopDetailViewController(window);
