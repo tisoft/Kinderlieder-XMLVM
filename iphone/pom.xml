@@ -96,6 +96,7 @@
 							<xcodeProject>ios</xcodeProject>
 							<bundleIdentifier>de.tisoft.kinderlieder</bundleIdentifier>
 							<target>iphonec</target>
+                            <xcodeProperties></xcodeProperties>
 							<in>${project.build.directory}/extracted/classes</in>
 							<out>${project.build.directory}</out>
 							<resources>
