@@ -47,8 +47,11 @@ public class Main extends UIApplicationDelegate {
 		return audioPlayer;
 	}
 
+    public native void registerCrashReporter();
+
 	@Override
 	public void applicationDidFinishLaunching(UIApplication app) {
+        registerCrashReporter();
 		final UIWindow window = new UIWindow(org.xmlvm.iphone.UIScreen.mainScreen().getBounds());
 
 		// don't go to sleep

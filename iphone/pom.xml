@@ -99,9 +99,16 @@
                             <xcodeProperties></xcodeProperties>
 							<in>${project.build.directory}/extracted/classes</in>
 							<out>${project.build.directory}</out>
+                            <libs>
+                                <lib>SystemConfiguration.framework</lib>
+                                <lib>${project.basedir}/frameworks/CrashReporter.framework</lib>
+                            </libs>
 							<resources>
 								<resource>${project.build.directory}/extracted/resources/</resource>
 							</resources>
+                            <rawArguments>
+                                <rawArgument>--native-libs=${project.basedir}/src/main/native/</rawArgument>
+                            </rawArguments>
 						</configuration>
 					</execution>
 				</executions>
