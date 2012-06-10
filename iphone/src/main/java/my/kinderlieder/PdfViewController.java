@@ -117,15 +117,14 @@ class PdfViewController extends RotatingViewController {
         repeatButton = new UIBarButtonItem(UIImage.imageNamed("repeat.png"), UIBarButtonItemStyle.Plain,
                 new UIBarButtonItemDelegate() {
                     public void clicked() {
-                        if (!repeat) {
+                        repeat = !repeat;
+                        if (repeat) {
                             repeatButton.setImage(UIImage.imageNamed("no-repeat.png"));
                         } else {
                             repeatButton.setImage(UIImage.imageNamed("repeat.png"));
                         }
-
                         updateRepeatMode();
 
-                        repeat = !repeat;
                     }
                 });
         buttonsPlay = Arrays.asList(playButton, repeatButton);
@@ -138,7 +137,7 @@ class PdfViewController extends RotatingViewController {
 
     private void updateRepeatMode() {
         if (Main.getAudioPlayer() != null) {
-            if (!repeat) {
+            if (repeat) {
                 Main.getAudioPlayer().setNumberOfLoops(-1);
             } else {
                 Main.getAudioPlayer().setNumberOfLoops(0);
