@@ -1021,6 +1021,7 @@ void xmlvm_init_native_my_kinderlieder_Main(){
 }
 
 void my_kinderlieder_Main_registerCrashReporter__(JAVA_OBJECT me){
+    [[BWQuincyManager sharedQuincyManager] setFeedbackActivated:YES];
     [[BWQuincyManager sharedQuincyManager] setLoggingEnabled:YES];
     [[BWQuincyManager sharedQuincyManager] setSubmissionURL:@"https://monitor.t-srv.de/QuincyKit/server/crash_v200.php"];
     //[[BWQuincyManager sharedQuincyManager] setDelegate:((org_xmlvm_iphone_NSObject*)me)->fields.org_xmlvm_iphone_NSObject.wrappedObjCObj];
