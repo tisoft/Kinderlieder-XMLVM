@@ -80,6 +80,7 @@ class PdfViewController extends RotatingViewController {
             }
 
             private void play() {
+                updateRepeatMode();
                 Main.getAudioPlayer().play();
                 Main.getAudioPlayer().setDelegate(new AVAudioPlayerDelegate() {
                     public void audioPlayerDidFinishPlaying(AVAudioPlayer player, boolean successfully) {
@@ -115,12 +116,13 @@ class PdfViewController extends RotatingViewController {
                 new UIBarButtonItemDelegate() {
                     public void clicked() {
                         if (!repeat) {
-                            Main.getAudioPlayer().setNumberOfLoops(-1);
                             repeatButton.setImage(UIImage.imageNamed("no-repeat.png"));
                         } else {
-                            Main.getAudioPlayer().setNumberOfLoops(0);
                             repeatButton.setImage(UIImage.imageNamed("repeat.png"));
                         }
+
+                        updateRepeatMode();
+
                         repeat = !repeat;
                     }
                 });
@@ -130,6 +132,16 @@ class PdfViewController extends RotatingViewController {
         setToolbarItems(new ArrayList<UIBarButtonItem>(buttonsPlay));
 
         stop();
+    }
+
+    private void updateRepeatMode() {
+        if (Main.getAudioPlayer() != null) {
+            if (!repeat) {
+                Main.getAudioPlayer().setNumberOfLoops(-1);
+            } else {
+                Main.getAudioPlayer().setNumberOfLoops(0);
+            }
+        }
     }
 
     private void stop() {
