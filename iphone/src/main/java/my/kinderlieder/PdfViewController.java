@@ -16,6 +16,8 @@ class PdfViewController extends RotatingViewController {
     private UIBarButtonItem playButton;
     private Map<SongInfo, NSURLRequest> requests = new HashMap<SongInfo, NSURLRequest>();
     private final UIWebView pdfView;
+    private UIBarButtonItem pauseButton;
+    private UIBarButtonItem stopButton;
 
     public PdfViewController(UIWindow window) {
         pdfView = new UIWebView(window.getFrame());
@@ -99,13 +101,13 @@ class PdfViewController extends RotatingViewController {
                 setToolbarItems(new ArrayList<UIBarButtonItem>(buttonsPauseStop));
             }
         });
-        UIBarButtonItem pauseButton = new UIBarButtonItem(UIBarButtonSystemItem.Pause, new UIBarButtonItemDelegate() {
+        pauseButton = new UIBarButtonItem(UIBarButtonSystemItem.Pause, new UIBarButtonItemDelegate() {
             public void clicked() {
                 Main.getAudioPlayer().pause();
                 setToolbarItems(new ArrayList<UIBarButtonItem>(buttonsPlayStop));
             }
         });
-        UIBarButtonItem stopButton = new UIBarButtonItem(UIBarButtonSystemItem.Stop, new UIBarButtonItemDelegate() {
+        stopButton = new UIBarButtonItem(UIBarButtonSystemItem.Stop, new UIBarButtonItemDelegate() {
             public void clicked() {
                 stop();
             }

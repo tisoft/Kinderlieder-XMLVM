@@ -15,6 +15,7 @@ class RootViewController extends RotatingViewController implements Observer{
     private final UIBarButtonItemDelegate shopAction;
     private final UIControlDelegate infoAction;
     private PdfViewController pdfViewController;
+    private final UIBarButtonItem shopButton;
 
     public RootViewController(final UIWindow window, List<SongInfo> songInfos) {
         this.songInfos = songInfos;
@@ -38,7 +39,7 @@ class RootViewController extends RotatingViewController implements Observer{
                 getNavigationController().pushViewController(shopViewController, true);
             }
         };
-        final UIBarButtonItem shopButton = new UIBarButtonItem(UIImage.imageNamed("arrow_down_24.png"), UIBarButtonItemStyle.Plain, shopAction);
+        shopButton = new UIBarButtonItem(UIImage.imageNamed("arrow_down_24.png"), UIBarButtonItemStyle.Plain, shopAction);
         shopButton.setTitle("Download");
 
         setToolbarItems(new ArrayList<UIBarButtonItem>(Arrays.asList(new UIBarButtonItem(infoButton),
