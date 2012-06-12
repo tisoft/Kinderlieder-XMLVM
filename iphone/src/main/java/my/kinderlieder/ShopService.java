@@ -34,7 +34,7 @@ public class ShopService extends Observable {
                     originalTransaction = originalTransaction.getOriginalTransaction();
                 }
 
-                if (originalTransaction.getTransactionIdentifier() != null && originalTransaction.getPayment() != null) {
+                if (originalTransaction.getTransactionIdentifier() != null && originalTransaction.getPayment() != null && originalTransaction.getTransactionReceipt() != null) {
                     switch (originalTransaction.getTransactionState()) {
                         case SKPaymentTransactionState.Purchased:
                         case SKPaymentTransactionState.Restored: {
