@@ -1,0 +1,76 @@
+#ifndef __ORG_APACHE_HARMONY_NIO_FILECHANNELFACTORY__
+#define __ORG_APACHE_HARMONY_NIO_FILECHANNELFACTORY__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_apache_harmony_nio_FileChannelFactory 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_RuntimeException
+#define XMLVM_FORWARD_DECL_java_lang_RuntimeException
+XMLVM_FORWARD_DECL(java_lang_RuntimeException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_channels_FileChannel
+#define XMLVM_FORWARD_DECL_java_nio_channels_FileChannel
+XMLVM_FORWARD_DECL(java_nio_channels_FileChannel)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_nio_internal_ReadOnlyFileChannel
+#define XMLVM_FORWARD_DECL_org_apache_harmony_nio_internal_ReadOnlyFileChannel
+XMLVM_FORWARD_DECL(org_apache_harmony_nio_internal_ReadOnlyFileChannel)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_nio_internal_ReadWriteFileChannel
+#define XMLVM_FORWARD_DECL_org_apache_harmony_nio_internal_ReadWriteFileChannel
+XMLVM_FORWARD_DECL(org_apache_harmony_nio_internal_ReadWriteFileChannel)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_nio_internal_WriteOnlyFileChannel
+#define XMLVM_FORWARD_DECL_org_apache_harmony_nio_internal_WriteOnlyFileChannel
+XMLVM_FORWARD_DECL(org_apache_harmony_nio_internal_WriteOnlyFileChannel)
+#endif
+// Class declarations for org.apache.harmony.nio.FileChannelFactory
+XMLVM_DEFINE_CLASS(org_apache_harmony_nio_FileChannelFactory, 6, XMLVM_ITABLE_SIZE_org_apache_harmony_nio_FileChannelFactory)
+
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_FileChannelFactory;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_FileChannelFactory_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_FileChannelFactory_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_FileChannelFactory_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_nio_FileChannelFactory
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_apache_harmony_nio_FileChannelFactory \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_nio_FileChannelFactory \
+    } org_apache_harmony_nio_FileChannelFactory
+
+struct org_apache_harmony_nio_FileChannelFactory {
+    __TIB_DEFINITION_org_apache_harmony_nio_FileChannelFactory* tib;
+    struct {
+        __INSTANCE_FIELDS_org_apache_harmony_nio_FileChannelFactory;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_nio_FileChannelFactory
+#define XMLVM_FORWARD_DECL_org_apache_harmony_nio_FileChannelFactory
+typedef struct org_apache_harmony_nio_FileChannelFactory org_apache_harmony_nio_FileChannelFactory;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_apache_harmony_nio_FileChannelFactory 6
+
+void __INIT_org_apache_harmony_nio_FileChannelFactory();
+void __INIT_IMPL_org_apache_harmony_nio_FileChannelFactory();
+void __DELETE_org_apache_harmony_nio_FileChannelFactory(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_apache_harmony_nio_FileChannelFactory(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_apache_harmony_nio_FileChannelFactory();
+JAVA_OBJECT __NEW_INSTANCE_org_apache_harmony_nio_FileChannelFactory();
+void org_apache_harmony_nio_FileChannelFactory___INIT___(JAVA_OBJECT me);
+JAVA_OBJECT org_apache_harmony_nio_FileChannelFactory_getFileChannel___java_lang_Object_long_int(JAVA_OBJECT n1, JAVA_LONG n2, JAVA_INT n3);
+
+#endif

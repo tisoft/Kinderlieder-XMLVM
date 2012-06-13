@@ -1,0 +1,92 @@
+#ifndef __MY_KINDERLIEDER_INFOVIEWCONTROLLER__
+#define __MY_KINDERLIEDER_INFOVIEWCONTROLLER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_my_kinderlieder_InfoViewController 0
+// Implemented interfaces:
+// Super Class:
+#include "my_kinderlieder_RotatingViewController.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_InfoViewController_1
+#define XMLVM_FORWARD_DECL_my_kinderlieder_InfoViewController_1
+XMLVM_FORWARD_DECL(my_kinderlieder_InfoViewController_1)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_CGRect
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_CGRect
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_CGRect)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSBundle
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSBundle
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_NSBundle)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSURL
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSURL
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_NSURL)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSURLRequest
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSURLRequest
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_NSURLRequest)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIWebView
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIWebView
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_UIWebView)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIWebViewDelegate
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIWebViewDelegate
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_UIWebViewDelegate)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIWindow
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIWindow
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_UIWindow)
+#endif
+// Class declarations for my.kinderlieder.InfoViewController
+XMLVM_DEFINE_CLASS(my_kinderlieder_InfoViewController, 12, XMLVM_ITABLE_SIZE_my_kinderlieder_InfoViewController)
+
+extern JAVA_OBJECT __CLASS_my_kinderlieder_InfoViewController;
+extern JAVA_OBJECT __CLASS_my_kinderlieder_InfoViewController_1ARRAY;
+extern JAVA_OBJECT __CLASS_my_kinderlieder_InfoViewController_2ARRAY;
+extern JAVA_OBJECT __CLASS_my_kinderlieder_InfoViewController_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_my_kinderlieder_InfoViewController
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_my_kinderlieder_InfoViewController \
+    __INSTANCE_FIELDS_my_kinderlieder_RotatingViewController; \
+    struct { \
+        JAVA_OBJECT infoView_; \
+        JAVA_OBJECT infoViewDelegate_; \
+        __ADDITIONAL_INSTANCE_FIELDS_my_kinderlieder_InfoViewController \
+    } my_kinderlieder_InfoViewController
+
+struct my_kinderlieder_InfoViewController {
+    __TIB_DEFINITION_my_kinderlieder_InfoViewController* tib;
+    struct {
+        __INSTANCE_FIELDS_my_kinderlieder_InfoViewController;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_InfoViewController
+#define XMLVM_FORWARD_DECL_my_kinderlieder_InfoViewController
+typedef struct my_kinderlieder_InfoViewController my_kinderlieder_InfoViewController;
+#endif
+
+#define XMLVM_VTABLE_SIZE_my_kinderlieder_InfoViewController 12
+#define XMLVM_VTABLE_IDX_my_kinderlieder_InfoViewController_shouldAutorotateToInterfaceOrientation___int 10
+
+void __INIT_my_kinderlieder_InfoViewController();
+void __INIT_IMPL_my_kinderlieder_InfoViewController();
+void __DELETE_my_kinderlieder_InfoViewController(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_my_kinderlieder_InfoViewController(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_my_kinderlieder_InfoViewController();
+JAVA_OBJECT __NEW_INSTANCE_my_kinderlieder_InfoViewController();
+void my_kinderlieder_InfoViewController___INIT____org_xmlvm_iphone_UIWindow(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 10
+JAVA_BOOLEAN my_kinderlieder_InfoViewController_shouldAutorotateToInterfaceOrientation___int(JAVA_OBJECT me, JAVA_INT n1);
+
+#endif

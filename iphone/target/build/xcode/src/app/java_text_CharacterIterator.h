@@ -1,0 +1,40 @@
+#ifndef __JAVA_TEXT_CHARACTERITERATOR__
+#define __JAVA_TEXT_CHARACTERITERATOR__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_java_text_CharacterIterator_clone__ 19
+#define XMLVM_ITABLE_IDX_java_text_CharacterIterator_current__ 20
+#define XMLVM_ITABLE_IDX_java_text_CharacterIterator_first__ 21
+#define XMLVM_ITABLE_IDX_java_text_CharacterIterator_getBeginIndex__ 22
+#define XMLVM_ITABLE_IDX_java_text_CharacterIterator_getEndIndex__ 23
+#define XMLVM_ITABLE_IDX_java_text_CharacterIterator_getIndex__ 24
+#define XMLVM_ITABLE_IDX_java_text_CharacterIterator_last__ 25
+#define XMLVM_ITABLE_IDX_java_text_CharacterIterator_next__ 26
+#define XMLVM_ITABLE_IDX_java_text_CharacterIterator_previous__ 27
+#define XMLVM_ITABLE_IDX_java_text_CharacterIterator_setIndex___int 28
+// Implemented interfaces:
+#include "java_lang_Cloneable.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+
+XMLVM_DEFINE_CLASS(java_text_CharacterIterator, 0, 0)
+
+extern JAVA_OBJECT __CLASS_java_text_CharacterIterator;
+extern JAVA_OBJECT __CLASS_java_text_CharacterIterator_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_text_CharacterIterator_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_text_CharacterIterator_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_java_text_CharacterIterator
+#define XMLVM_FORWARD_DECL_java_text_CharacterIterator
+typedef struct java_text_CharacterIterator java_text_CharacterIterator;
+#endif
+
+void __INIT_java_text_CharacterIterator();
+void __INIT_IMPL_java_text_CharacterIterator();
+JAVA_CHAR java_text_CharacterIterator_GET_DONE();
+void java_text_CharacterIterator_PUT_DONE(JAVA_CHAR v);
+
+#endif

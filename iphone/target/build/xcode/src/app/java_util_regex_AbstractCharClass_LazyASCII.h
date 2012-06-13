@@ -1,0 +1,66 @@
+#ifndef __JAVA_UTIL_REGEX_ABSTRACTCHARCLASS_LAZYASCII__
+#define __JAVA_UTIL_REGEX_ABSTRACTCHARCLASS_LAZYASCII__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_regex_AbstractCharClass_LazyASCII 0
+// Implemented interfaces:
+// Super Class:
+#include "java_util_regex_AbstractCharClass_LazyCharClass.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_regex_AbstractCharClass
+#define XMLVM_FORWARD_DECL_java_util_regex_AbstractCharClass
+XMLVM_FORWARD_DECL(java_util_regex_AbstractCharClass)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_regex_CharClass
+#define XMLVM_FORWARD_DECL_java_util_regex_CharClass
+XMLVM_FORWARD_DECL(java_util_regex_CharClass)
+#endif
+// Class declarations for java.util.regex.AbstractCharClass$LazyASCII
+XMLVM_DEFINE_CLASS(java_util_regex_AbstractCharClass_LazyASCII, 7, XMLVM_ITABLE_SIZE_java_util_regex_AbstractCharClass_LazyASCII)
+
+extern JAVA_OBJECT __CLASS_java_util_regex_AbstractCharClass_LazyASCII;
+extern JAVA_OBJECT __CLASS_java_util_regex_AbstractCharClass_LazyASCII_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_regex_AbstractCharClass_LazyASCII_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_regex_AbstractCharClass_LazyASCII_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_regex_AbstractCharClass_LazyASCII
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_regex_AbstractCharClass_LazyASCII \
+    __INSTANCE_FIELDS_java_util_regex_AbstractCharClass_LazyCharClass; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_regex_AbstractCharClass_LazyASCII \
+    } java_util_regex_AbstractCharClass_LazyASCII
+
+struct java_util_regex_AbstractCharClass_LazyASCII {
+    __TIB_DEFINITION_java_util_regex_AbstractCharClass_LazyASCII* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_regex_AbstractCharClass_LazyASCII;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_regex_AbstractCharClass_LazyASCII
+#define XMLVM_FORWARD_DECL_java_util_regex_AbstractCharClass_LazyASCII
+typedef struct java_util_regex_AbstractCharClass_LazyASCII java_util_regex_AbstractCharClass_LazyASCII;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_regex_AbstractCharClass_LazyASCII 7
+#define XMLVM_VTABLE_IDX_java_util_regex_AbstractCharClass_LazyASCII_computeValue__ 6
+
+void __INIT_java_util_regex_AbstractCharClass_LazyASCII();
+void __INIT_IMPL_java_util_regex_AbstractCharClass_LazyASCII();
+void __DELETE_java_util_regex_AbstractCharClass_LazyASCII(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_regex_AbstractCharClass_LazyASCII(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_regex_AbstractCharClass_LazyASCII();
+JAVA_OBJECT __NEW_INSTANCE_java_util_regex_AbstractCharClass_LazyASCII();
+void java_util_regex_AbstractCharClass_LazyASCII___INIT___(JAVA_OBJECT me);
+// Vtable index: 6
+JAVA_OBJECT java_util_regex_AbstractCharClass_LazyASCII_computeValue__(JAVA_OBJECT me);
+
+#endif

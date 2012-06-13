@@ -1,0 +1,43 @@
+#ifndef __JAVAX_XML_XPATH_XPATHEXPRESSION__
+#define __JAVAX_XML_XPATH_XPATHEXPRESSION__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_javax_xml_xpath_XPathExpression_evaluate___java_lang_Object_javax_xml_namespace_QName 1
+#define XMLVM_ITABLE_IDX_javax_xml_xpath_XPathExpression_evaluate___java_lang_Object 0
+#define XMLVM_ITABLE_IDX_javax_xml_xpath_XPathExpression_evaluate___org_xml_sax_InputSource_javax_xml_namespace_QName 3
+#define XMLVM_ITABLE_IDX_javax_xml_xpath_XPathExpression_evaluate___org_xml_sax_InputSource 2
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_javax_xml_namespace_QName
+#define XMLVM_FORWARD_DECL_javax_xml_namespace_QName
+XMLVM_FORWARD_DECL(javax_xml_namespace_QName)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_InputSource
+#define XMLVM_FORWARD_DECL_org_xml_sax_InputSource
+XMLVM_FORWARD_DECL(org_xml_sax_InputSource)
+#endif
+
+XMLVM_DEFINE_CLASS(javax_xml_xpath_XPathExpression, 0, 0)
+
+extern JAVA_OBJECT __CLASS_javax_xml_xpath_XPathExpression;
+extern JAVA_OBJECT __CLASS_javax_xml_xpath_XPathExpression_1ARRAY;
+extern JAVA_OBJECT __CLASS_javax_xml_xpath_XPathExpression_2ARRAY;
+extern JAVA_OBJECT __CLASS_javax_xml_xpath_XPathExpression_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_javax_xml_xpath_XPathExpression
+#define XMLVM_FORWARD_DECL_javax_xml_xpath_XPathExpression
+typedef struct javax_xml_xpath_XPathExpression javax_xml_xpath_XPathExpression;
+#endif
+
+void __INIT_javax_xml_xpath_XPathExpression();
+void __INIT_IMPL_javax_xml_xpath_XPathExpression();
+
+#endif

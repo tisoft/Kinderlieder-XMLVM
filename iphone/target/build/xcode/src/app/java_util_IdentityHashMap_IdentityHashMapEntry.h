@@ -1,0 +1,83 @@
+#ifndef __JAVA_UTIL_IDENTITYHASHMAP_IDENTITYHASHMAPENTRY__
+#define __JAVA_UTIL_IDENTITYHASHMAP_IDENTITYHASHMAPENTRY__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_IdentityHashMap_IdentityHashMapEntry 5
+// Implemented interfaces:
+// Super Class:
+#include "java_util_MapEntry.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_System
+#define XMLVM_FORWARD_DECL_java_lang_System
+XMLVM_FORWARD_DECL(java_lang_System)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Map_Entry
+#define XMLVM_FORWARD_DECL_java_util_Map_Entry
+XMLVM_FORWARD_DECL(java_util_Map_Entry)
+#endif
+// Class declarations for java.util.IdentityHashMap$IdentityHashMapEntry
+XMLVM_DEFINE_CLASS(java_util_IdentityHashMap_IdentityHashMapEntry, 9, XMLVM_ITABLE_SIZE_java_util_IdentityHashMap_IdentityHashMapEntry)
+
+extern JAVA_OBJECT __CLASS_java_util_IdentityHashMap_IdentityHashMapEntry;
+extern JAVA_OBJECT __CLASS_java_util_IdentityHashMap_IdentityHashMapEntry_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_IdentityHashMap_IdentityHashMapEntry_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_IdentityHashMap_IdentityHashMapEntry_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_IdentityHashMap_IdentityHashMapEntry
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_IdentityHashMap_IdentityHashMapEntry \
+    __INSTANCE_FIELDS_java_util_MapEntry; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_IdentityHashMap_IdentityHashMapEntry \
+    } java_util_IdentityHashMap_IdentityHashMapEntry
+
+struct java_util_IdentityHashMap_IdentityHashMapEntry {
+    __TIB_DEFINITION_java_util_IdentityHashMap_IdentityHashMapEntry* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_IdentityHashMap_IdentityHashMapEntry;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_IdentityHashMap_IdentityHashMapEntry
+#define XMLVM_FORWARD_DECL_java_util_IdentityHashMap_IdentityHashMapEntry
+typedef struct java_util_IdentityHashMap_IdentityHashMapEntry java_util_IdentityHashMap_IdentityHashMapEntry;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_IdentityHashMap_IdentityHashMapEntry 9
+#define XMLVM_VTABLE_IDX_java_util_IdentityHashMap_IdentityHashMapEntry_clone__ 0
+#define XMLVM_VTABLE_IDX_java_util_IdentityHashMap_IdentityHashMapEntry_equals___java_lang_Object 1
+#define XMLVM_VTABLE_IDX_java_util_IdentityHashMap_IdentityHashMapEntry_hashCode__ 4
+#define XMLVM_VTABLE_IDX_java_util_IdentityHashMap_IdentityHashMapEntry_toString__ 5
+
+void __INIT_java_util_IdentityHashMap_IdentityHashMapEntry();
+void __INIT_IMPL_java_util_IdentityHashMap_IdentityHashMapEntry();
+void __DELETE_java_util_IdentityHashMap_IdentityHashMapEntry(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_IdentityHashMap_IdentityHashMapEntry(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_IdentityHashMap_IdentityHashMapEntry();
+JAVA_OBJECT __NEW_INSTANCE_java_util_IdentityHashMap_IdentityHashMapEntry();
+void java_util_IdentityHashMap_IdentityHashMapEntry___INIT____java_lang_Object_java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 0
+JAVA_OBJECT java_util_IdentityHashMap_IdentityHashMapEntry_clone__(JAVA_OBJECT me);
+// Vtable index: 1
+JAVA_BOOLEAN java_util_IdentityHashMap_IdentityHashMapEntry_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 4
+JAVA_INT java_util_IdentityHashMap_IdentityHashMapEntry_hashCode__(JAVA_OBJECT me);
+// Vtable index: 5
+JAVA_OBJECT java_util_IdentityHashMap_IdentityHashMapEntry_toString__(JAVA_OBJECT me);
+
+#endif

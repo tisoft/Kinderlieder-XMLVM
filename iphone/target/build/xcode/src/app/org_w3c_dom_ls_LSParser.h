@@ -1,0 +1,70 @@
+#ifndef __ORG_W3C_DOM_LS_LSPARSER__
+#define __ORG_W3C_DOM_LS_LSPARSER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSParser_getDomConfig__ 10
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSParser_getFilter__ 11
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSParser_setFilter___org_w3c_dom_ls_LSParserFilter 15
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSParser_getAsync__ 8
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSParser_getBusy__ 9
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSParser_parse___org_w3c_dom_ls_LSInput 14
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSParser_parseURI___java_lang_String 12
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSParser_parseWithContext___org_w3c_dom_ls_LSInput_org_w3c_dom_Node_short 13
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSParser_abort__ 7
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_DOMConfiguration
+#define XMLVM_FORWARD_DECL_org_w3c_dom_DOMConfiguration
+XMLVM_FORWARD_DECL(org_w3c_dom_DOMConfiguration)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Document
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Document
+XMLVM_FORWARD_DECL(org_w3c_dom_Document)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Node
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Node
+XMLVM_FORWARD_DECL(org_w3c_dom_Node)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSInput
+#define XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSInput
+XMLVM_FORWARD_DECL(org_w3c_dom_ls_LSInput)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSParserFilter
+#define XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSParserFilter
+XMLVM_FORWARD_DECL(org_w3c_dom_ls_LSParserFilter)
+#endif
+
+XMLVM_DEFINE_CLASS(org_w3c_dom_ls_LSParser, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_w3c_dom_ls_LSParser;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_ls_LSParser_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_ls_LSParser_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_ls_LSParser_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSParser
+#define XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSParser
+typedef struct org_w3c_dom_ls_LSParser org_w3c_dom_ls_LSParser;
+#endif
+
+void __INIT_org_w3c_dom_ls_LSParser();
+void __INIT_IMPL_org_w3c_dom_ls_LSParser();
+JAVA_SHORT org_w3c_dom_ls_LSParser_GET_ACTION_APPEND_AS_CHILDREN();
+void org_w3c_dom_ls_LSParser_PUT_ACTION_APPEND_AS_CHILDREN(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_ls_LSParser_GET_ACTION_REPLACE_CHILDREN();
+void org_w3c_dom_ls_LSParser_PUT_ACTION_REPLACE_CHILDREN(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_ls_LSParser_GET_ACTION_INSERT_BEFORE();
+void org_w3c_dom_ls_LSParser_PUT_ACTION_INSERT_BEFORE(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_ls_LSParser_GET_ACTION_INSERT_AFTER();
+void org_w3c_dom_ls_LSParser_PUT_ACTION_INSERT_AFTER(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_ls_LSParser_GET_ACTION_REPLACE();
+void org_w3c_dom_ls_LSParser_PUT_ACTION_REPLACE(JAVA_SHORT v);
+
+#endif

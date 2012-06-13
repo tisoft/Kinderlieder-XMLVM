@@ -1,0 +1,95 @@
+#ifndef __JAVA_UTIL_ABSTRACTLIST_FULLLISTITERATOR__
+#define __JAVA_UTIL_ABSTRACTLIST_FULLLISTITERATOR__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_AbstractList_FullListIterator 12
+// Implemented interfaces:
+#include "java_util_ListIterator.h"
+// Super Class:
+#include "java_util_AbstractList_SimpleListIterator.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+XMLVM_FORWARD_DECL(java_lang_IllegalStateException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IndexOutOfBoundsException
+#define XMLVM_FORWARD_DECL_java_lang_IndexOutOfBoundsException
+XMLVM_FORWARD_DECL(java_lang_IndexOutOfBoundsException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_AbstractList
+#define XMLVM_FORWARD_DECL_java_util_AbstractList
+XMLVM_FORWARD_DECL(java_util_AbstractList)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ConcurrentModificationException
+#define XMLVM_FORWARD_DECL_java_util_ConcurrentModificationException
+XMLVM_FORWARD_DECL(java_util_ConcurrentModificationException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_NoSuchElementException
+#define XMLVM_FORWARD_DECL_java_util_NoSuchElementException
+XMLVM_FORWARD_DECL(java_util_NoSuchElementException)
+#endif
+// Class declarations for java.util.AbstractList$FullListIterator
+XMLVM_DEFINE_CLASS(java_util_AbstractList_FullListIterator, 15, XMLVM_ITABLE_SIZE_java_util_AbstractList_FullListIterator)
+
+extern JAVA_OBJECT __CLASS_java_util_AbstractList_FullListIterator;
+extern JAVA_OBJECT __CLASS_java_util_AbstractList_FullListIterator_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_AbstractList_FullListIterator_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_AbstractList_FullListIterator_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_AbstractList_FullListIterator
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_AbstractList_FullListIterator \
+    __INSTANCE_FIELDS_java_util_AbstractList_SimpleListIterator; \
+    struct { \
+        JAVA_OBJECT this_0_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_AbstractList_FullListIterator \
+    } java_util_AbstractList_FullListIterator
+
+struct java_util_AbstractList_FullListIterator {
+    __TIB_DEFINITION_java_util_AbstractList_FullListIterator* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_AbstractList_FullListIterator;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_AbstractList_FullListIterator
+#define XMLVM_FORWARD_DECL_java_util_AbstractList_FullListIterator
+typedef struct java_util_AbstractList_FullListIterator java_util_AbstractList_FullListIterator;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_AbstractList_FullListIterator 15
+#define XMLVM_VTABLE_IDX_java_util_AbstractList_FullListIterator_add___java_lang_Object 9
+#define XMLVM_VTABLE_IDX_java_util_AbstractList_FullListIterator_hasPrevious__ 10
+#define XMLVM_VTABLE_IDX_java_util_AbstractList_FullListIterator_nextIndex__ 11
+#define XMLVM_VTABLE_IDX_java_util_AbstractList_FullListIterator_previous__ 13
+#define XMLVM_VTABLE_IDX_java_util_AbstractList_FullListIterator_previousIndex__ 12
+#define XMLVM_VTABLE_IDX_java_util_AbstractList_FullListIterator_set___java_lang_Object 14
+
+void __INIT_java_util_AbstractList_FullListIterator();
+void __INIT_IMPL_java_util_AbstractList_FullListIterator();
+void __DELETE_java_util_AbstractList_FullListIterator(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_AbstractList_FullListIterator(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_AbstractList_FullListIterator();
+JAVA_OBJECT __NEW_INSTANCE_java_util_AbstractList_FullListIterator();
+void java_util_AbstractList_FullListIterator___INIT____java_util_AbstractList_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2);
+// Vtable index: 9
+void java_util_AbstractList_FullListIterator_add___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 10
+JAVA_BOOLEAN java_util_AbstractList_FullListIterator_hasPrevious__(JAVA_OBJECT me);
+// Vtable index: 11
+JAVA_INT java_util_AbstractList_FullListIterator_nextIndex__(JAVA_OBJECT me);
+// Vtable index: 13
+JAVA_OBJECT java_util_AbstractList_FullListIterator_previous__(JAVA_OBJECT me);
+// Vtable index: 12
+JAVA_INT java_util_AbstractList_FullListIterator_previousIndex__(JAVA_OBJECT me);
+// Vtable index: 14
+void java_util_AbstractList_FullListIterator_set___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

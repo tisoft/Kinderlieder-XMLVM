@@ -1,0 +1,66 @@
+#ifndef __ORG_APACHE_HARMONY_NIO_INTERNAL_FILELOCKIMPL__
+#define __ORG_APACHE_HARMONY_NIO_INTERNAL_FILELOCKIMPL__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_apache_harmony_nio_internal_FileLockImpl 0
+// Implemented interfaces:
+// Super Class:
+#include "java_nio_channels_FileLock.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_nio_channels_FileChannel
+#define XMLVM_FORWARD_DECL_java_nio_channels_FileChannel
+XMLVM_FORWARD_DECL(java_nio_channels_FileChannel)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_nio_internal_FileChannelImpl
+#define XMLVM_FORWARD_DECL_org_apache_harmony_nio_internal_FileChannelImpl
+XMLVM_FORWARD_DECL(org_apache_harmony_nio_internal_FileChannelImpl)
+#endif
+// Class declarations for org.apache.harmony.nio.internal.FileLockImpl
+XMLVM_DEFINE_CLASS(org_apache_harmony_nio_internal_FileLockImpl, 8, XMLVM_ITABLE_SIZE_org_apache_harmony_nio_internal_FileLockImpl)
+
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_internal_FileLockImpl;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_internal_FileLockImpl_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_internal_FileLockImpl_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_internal_FileLockImpl_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_nio_internal_FileLockImpl
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_apache_harmony_nio_internal_FileLockImpl \
+    __INSTANCE_FIELDS_java_nio_channels_FileLock; \
+    struct { \
+        JAVA_BOOLEAN isReleased_; \
+        __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_nio_internal_FileLockImpl \
+    } org_apache_harmony_nio_internal_FileLockImpl
+
+struct org_apache_harmony_nio_internal_FileLockImpl {
+    __TIB_DEFINITION_org_apache_harmony_nio_internal_FileLockImpl* tib;
+    struct {
+        __INSTANCE_FIELDS_org_apache_harmony_nio_internal_FileLockImpl;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_nio_internal_FileLockImpl
+#define XMLVM_FORWARD_DECL_org_apache_harmony_nio_internal_FileLockImpl
+typedef struct org_apache_harmony_nio_internal_FileLockImpl org_apache_harmony_nio_internal_FileLockImpl;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_apache_harmony_nio_internal_FileLockImpl 8
+#define XMLVM_VTABLE_IDX_org_apache_harmony_nio_internal_FileLockImpl_isValid__ 6
+#define XMLVM_VTABLE_IDX_org_apache_harmony_nio_internal_FileLockImpl_release__ 7
+
+void __INIT_org_apache_harmony_nio_internal_FileLockImpl();
+void __INIT_IMPL_org_apache_harmony_nio_internal_FileLockImpl();
+void __DELETE_org_apache_harmony_nio_internal_FileLockImpl(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_apache_harmony_nio_internal_FileLockImpl(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_apache_harmony_nio_internal_FileLockImpl();
+JAVA_OBJECT __NEW_INSTANCE_org_apache_harmony_nio_internal_FileLockImpl();
+void org_apache_harmony_nio_internal_FileLockImpl___INIT____java_nio_channels_FileChannel_long_long_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_LONG n2, JAVA_LONG n3, JAVA_BOOLEAN n4);
+// Vtable index: 6
+JAVA_BOOLEAN org_apache_harmony_nio_internal_FileLockImpl_isValid__(JAVA_OBJECT me);
+// Vtable index: 7
+void org_apache_harmony_nio_internal_FileLockImpl_release__(JAVA_OBJECT me);
+
+#endif

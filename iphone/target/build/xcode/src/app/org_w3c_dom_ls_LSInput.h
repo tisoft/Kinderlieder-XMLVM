@@ -1,0 +1,55 @@
+#ifndef __ORG_W3C_DOM_LS_LSINPUT__
+#define __ORG_W3C_DOM_LS_LSINPUT__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSInput_getCharacterStream__ 3
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSInput_setCharacterStream___java_io_Reader 11
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSInput_getByteStream__ 1
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSInput_setByteStream___java_io_InputStream 9
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSInput_getStringData__ 6
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSInput_setStringData___java_lang_String 14
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSInput_getSystemId__ 7
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSInput_setSystemId___java_lang_String 15
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSInput_getPublicId__ 5
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSInput_setPublicId___java_lang_String 13
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSInput_getBaseURI__ 0
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSInput_setBaseURI___java_lang_String 8
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSInput_getEncoding__ 4
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSInput_setEncoding___java_lang_String 12
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSInput_getCertifiedText__ 2
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSInput_setCertifiedText___boolean 10
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_io_InputStream
+#define XMLVM_FORWARD_DECL_java_io_InputStream
+XMLVM_FORWARD_DECL(java_io_InputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_Reader
+#define XMLVM_FORWARD_DECL_java_io_Reader
+XMLVM_FORWARD_DECL(java_io_Reader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+
+XMLVM_DEFINE_CLASS(org_w3c_dom_ls_LSInput, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_w3c_dom_ls_LSInput;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_ls_LSInput_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_ls_LSInput_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_ls_LSInput_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSInput
+#define XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSInput
+typedef struct org_w3c_dom_ls_LSInput org_w3c_dom_ls_LSInput;
+#endif
+
+void __INIT_org_w3c_dom_ls_LSInput();
+void __INIT_IMPL_org_w3c_dom_ls_LSInput();
+
+#endif

@@ -1,0 +1,108 @@
+#ifndef __ORG_XML_SAX_EXT_DEFAULTHANDLER2__
+#define __ORG_XML_SAX_EXT_DEFAULTHANDLER2__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_xml_sax_ext_DefaultHandler2 33
+// Implemented interfaces:
+#include "org_xml_sax_ext_DeclHandler.h"
+#include "org_xml_sax_ext_EntityResolver2.h"
+#include "org_xml_sax_ext_LexicalHandler.h"
+// Super Class:
+#include "org_xml_sax_helpers_DefaultHandler.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_InputSource
+#define XMLVM_FORWARD_DECL_org_xml_sax_InputSource
+XMLVM_FORWARD_DECL(org_xml_sax_InputSource)
+#endif
+// Class declarations for org.xml.sax.ext.DefaultHandler2
+XMLVM_DEFINE_CLASS(org_xml_sax_ext_DefaultHandler2, 36, XMLVM_ITABLE_SIZE_org_xml_sax_ext_DefaultHandler2)
+
+extern JAVA_OBJECT __CLASS_org_xml_sax_ext_DefaultHandler2;
+extern JAVA_OBJECT __CLASS_org_xml_sax_ext_DefaultHandler2_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_ext_DefaultHandler2_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_ext_DefaultHandler2_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_xml_sax_ext_DefaultHandler2
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_xml_sax_ext_DefaultHandler2 \
+    __INSTANCE_FIELDS_org_xml_sax_helpers_DefaultHandler; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_org_xml_sax_ext_DefaultHandler2 \
+    } org_xml_sax_ext_DefaultHandler2
+
+struct org_xml_sax_ext_DefaultHandler2 {
+    __TIB_DEFINITION_org_xml_sax_ext_DefaultHandler2* tib;
+    struct {
+        __INSTANCE_FIELDS_org_xml_sax_ext_DefaultHandler2;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_ext_DefaultHandler2
+#define XMLVM_FORWARD_DECL_org_xml_sax_ext_DefaultHandler2
+typedef struct org_xml_sax_ext_DefaultHandler2 org_xml_sax_ext_DefaultHandler2;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_xml_sax_ext_DefaultHandler2 36
+#define XMLVM_VTABLE_IDX_org_xml_sax_ext_DefaultHandler2_startCDATA__ 33
+#define XMLVM_VTABLE_IDX_org_xml_sax_ext_DefaultHandler2_endCDATA__ 26
+#define XMLVM_VTABLE_IDX_org_xml_sax_ext_DefaultHandler2_startDTD___java_lang_String_java_lang_String_java_lang_String 34
+#define XMLVM_VTABLE_IDX_org_xml_sax_ext_DefaultHandler2_endDTD__ 27
+#define XMLVM_VTABLE_IDX_org_xml_sax_ext_DefaultHandler2_startEntity___java_lang_String 35
+#define XMLVM_VTABLE_IDX_org_xml_sax_ext_DefaultHandler2_endEntity___java_lang_String 28
+#define XMLVM_VTABLE_IDX_org_xml_sax_ext_DefaultHandler2_comment___char_1ARRAY_int_int 24
+#define XMLVM_VTABLE_IDX_org_xml_sax_ext_DefaultHandler2_attributeDecl___java_lang_String_java_lang_String_java_lang_String_java_lang_String_java_lang_String 23
+#define XMLVM_VTABLE_IDX_org_xml_sax_ext_DefaultHandler2_elementDecl___java_lang_String_java_lang_String 25
+#define XMLVM_VTABLE_IDX_org_xml_sax_ext_DefaultHandler2_externalEntityDecl___java_lang_String_java_lang_String_java_lang_String 29
+#define XMLVM_VTABLE_IDX_org_xml_sax_ext_DefaultHandler2_internalEntityDecl___java_lang_String_java_lang_String 31
+#define XMLVM_VTABLE_IDX_org_xml_sax_ext_DefaultHandler2_getExternalSubset___java_lang_String_java_lang_String 30
+#define XMLVM_VTABLE_IDX_org_xml_sax_ext_DefaultHandler2_resolveEntity___java_lang_String_java_lang_String_java_lang_String_java_lang_String 32
+#define XMLVM_VTABLE_IDX_org_xml_sax_ext_DefaultHandler2_resolveEntity___java_lang_String_java_lang_String 15
+
+void __INIT_org_xml_sax_ext_DefaultHandler2();
+void __INIT_IMPL_org_xml_sax_ext_DefaultHandler2();
+void __DELETE_org_xml_sax_ext_DefaultHandler2(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_xml_sax_ext_DefaultHandler2(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_xml_sax_ext_DefaultHandler2();
+JAVA_OBJECT __NEW_INSTANCE_org_xml_sax_ext_DefaultHandler2();
+void org_xml_sax_ext_DefaultHandler2___INIT___(JAVA_OBJECT me);
+// Vtable index: 33
+void org_xml_sax_ext_DefaultHandler2_startCDATA__(JAVA_OBJECT me);
+// Vtable index: 26
+void org_xml_sax_ext_DefaultHandler2_endCDATA__(JAVA_OBJECT me);
+// Vtable index: 34
+void org_xml_sax_ext_DefaultHandler2_startDTD___java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 27
+void org_xml_sax_ext_DefaultHandler2_endDTD__(JAVA_OBJECT me);
+// Vtable index: 35
+void org_xml_sax_ext_DefaultHandler2_startEntity___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 28
+void org_xml_sax_ext_DefaultHandler2_endEntity___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 24
+void org_xml_sax_ext_DefaultHandler2_comment___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+// Vtable index: 23
+void org_xml_sax_ext_DefaultHandler2_attributeDecl___java_lang_String_java_lang_String_java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3, JAVA_OBJECT n4, JAVA_OBJECT n5);
+// Vtable index: 25
+void org_xml_sax_ext_DefaultHandler2_elementDecl___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 29
+void org_xml_sax_ext_DefaultHandler2_externalEntityDecl___java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 31
+void org_xml_sax_ext_DefaultHandler2_internalEntityDecl___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 30
+JAVA_OBJECT org_xml_sax_ext_DefaultHandler2_getExternalSubset___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 32
+JAVA_OBJECT org_xml_sax_ext_DefaultHandler2_resolveEntity___java_lang_String_java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3, JAVA_OBJECT n4);
+// Vtable index: 15
+JAVA_OBJECT org_xml_sax_ext_DefaultHandler2_resolveEntity___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+
+#endif

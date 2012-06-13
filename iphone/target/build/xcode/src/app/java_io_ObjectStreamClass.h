@@ -1,0 +1,352 @@
+#ifndef __JAVA_IO_OBJECTSTREAMCLASS__
+#define __JAVA_IO_OBJECTSTREAMCLASS__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_io_ObjectStreamClass 0
+// Implemented interfaces:
+#include "java_io_Serializable.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_io_ByteArrayOutputStream
+#define XMLVM_FORWARD_DECL_java_io_ByteArrayOutputStream
+XMLVM_FORWARD_DECL(java_io_ByteArrayOutputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_DataOutputStream
+#define XMLVM_FORWARD_DECL_java_io_DataOutputStream
+XMLVM_FORWARD_DECL(java_io_DataOutputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_Externalizable
+#define XMLVM_FORWARD_DECL_java_io_Externalizable
+XMLVM_FORWARD_DECL(java_io_Externalizable)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_IOException
+#define XMLVM_FORWARD_DECL_java_io_IOException
+XMLVM_FORWARD_DECL(java_io_IOException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectInputStream
+#define XMLVM_FORWARD_DECL_java_io_ObjectInputStream
+XMLVM_FORWARD_DECL(java_io_ObjectInputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectOutputStream
+#define XMLVM_FORWARD_DECL_java_io_ObjectOutputStream
+XMLVM_FORWARD_DECL(java_io_ObjectOutputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectStreamClass_1
+#define XMLVM_FORWARD_DECL_java_io_ObjectStreamClass_1
+XMLVM_FORWARD_DECL(java_io_ObjectStreamClass_1)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectStreamClass_2
+#define XMLVM_FORWARD_DECL_java_io_ObjectStreamClass_2
+XMLVM_FORWARD_DECL(java_io_ObjectStreamClass_2)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectStreamClass_3
+#define XMLVM_FORWARD_DECL_java_io_ObjectStreamClass_3
+XMLVM_FORWARD_DECL(java_io_ObjectStreamClass_3)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectStreamClass_4
+#define XMLVM_FORWARD_DECL_java_io_ObjectStreamClass_4
+XMLVM_FORWARD_DECL(java_io_ObjectStreamClass_4)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectStreamField
+#define XMLVM_FORWARD_DECL_java_io_ObjectStreamField
+XMLVM_FORWARD_DECL(java_io_ObjectStreamField)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_AssertionError
+#define XMLVM_FORWARD_DECL_java_lang_AssertionError
+XMLVM_FORWARD_DECL(java_lang_AssertionError)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Boolean
+#define XMLVM_FORWARD_DECL_java_lang_Boolean
+XMLVM_FORWARD_DECL(java_lang_Boolean)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Byte
+#define XMLVM_FORWARD_DECL_java_lang_Byte
+XMLVM_FORWARD_DECL(java_lang_Byte)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Character
+#define XMLVM_FORWARD_DECL_java_lang_Character
+XMLVM_FORWARD_DECL(java_lang_Character)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_ClassNotFoundException
+#define XMLVM_FORWARD_DECL_java_lang_ClassNotFoundException
+XMLVM_FORWARD_DECL(java_lang_ClassNotFoundException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Double
+#define XMLVM_FORWARD_DECL_java_lang_Double
+XMLVM_FORWARD_DECL(java_lang_Double)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Enum
+#define XMLVM_FORWARD_DECL_java_lang_Enum
+XMLVM_FORWARD_DECL(java_lang_Enum)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Error
+#define XMLVM_FORWARD_DECL_java_lang_Error
+XMLVM_FORWARD_DECL(java_lang_Error)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Float
+#define XMLVM_FORWARD_DECL_java_lang_Float
+XMLVM_FORWARD_DECL(java_lang_Float)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalAccessException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalAccessException
+XMLVM_FORWARD_DECL(java_lang_IllegalAccessException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Integer
+#define XMLVM_FORWARD_DECL_java_lang_Integer
+XMLVM_FORWARD_DECL(java_lang_Integer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Long
+#define XMLVM_FORWARD_DECL_java_lang_Long
+XMLVM_FORWARD_DECL(java_lang_Long)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NoSuchFieldException
+#define XMLVM_FORWARD_DECL_java_lang_NoSuchFieldException
+XMLVM_FORWARD_DECL(java_lang_NoSuchFieldException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NoSuchMethodException
+#define XMLVM_FORWARD_DECL_java_lang_NoSuchMethodException
+XMLVM_FORWARD_DECL(java_lang_NoSuchMethodException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_RuntimeException
+#define XMLVM_FORWARD_DECL_java_lang_RuntimeException
+XMLVM_FORWARD_DECL(java_lang_RuntimeException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Short
+#define XMLVM_FORWARD_DECL_java_lang_Short
+XMLVM_FORWARD_DECL(java_lang_Short)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Void
+#define XMLVM_FORWARD_DECL_java_lang_Void
+XMLVM_FORWARD_DECL(java_lang_Void)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_ref_WeakReference
+#define XMLVM_FORWARD_DECL_java_lang_ref_WeakReference
+XMLVM_FORWARD_DECL(java_lang_ref_WeakReference)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Constructor
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Constructor
+XMLVM_FORWARD_DECL(java_lang_reflect_Constructor)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Field
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Field
+XMLVM_FORWARD_DECL(java_lang_reflect_Field)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Method
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Method
+XMLVM_FORWARD_DECL(java_lang_reflect_Method)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Modifier
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Modifier
+XMLVM_FORWARD_DECL(java_lang_reflect_Modifier)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Proxy
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Proxy
+XMLVM_FORWARD_DECL(java_lang_reflect_Proxy)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_security_AccessController
+#define XMLVM_FORWARD_DECL_java_security_AccessController
+XMLVM_FORWARD_DECL(java_security_AccessController)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ArrayList
+#define XMLVM_FORWARD_DECL_java_util_ArrayList
+XMLVM_FORWARD_DECL(java_util_ArrayList)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Arrays
+#define XMLVM_FORWARD_DECL_java_util_Arrays
+XMLVM_FORWARD_DECL(java_util_Arrays)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_List
+#define XMLVM_FORWARD_DECL_java_util_List
+XMLVM_FORWARD_DECL(java_util_List)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_WeakHashMap
+#define XMLVM_FORWARD_DECL_java_util_WeakHashMap
+XMLVM_FORWARD_DECL(java_util_WeakHashMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_internal_nls_Messages
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_internal_nls_Messages
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_internal_nls_Messages)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_PriviAction
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_PriviAction
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_util_PriviAction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_ThreadLocalCache
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_ThreadLocalCache
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_util_ThreadLocalCache)
+#endif
+// Class declarations for java.io.ObjectStreamClass
+XMLVM_DEFINE_CLASS(java_io_ObjectStreamClass, 6, XMLVM_ITABLE_SIZE_java_io_ObjectStreamClass)
+
+extern JAVA_OBJECT __CLASS_java_io_ObjectStreamClass;
+extern JAVA_OBJECT __CLASS_java_io_ObjectStreamClass_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_io_ObjectStreamClass_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_io_ObjectStreamClass_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_io_ObjectStreamClass
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_io_ObjectStreamClass \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT methodWriteReplace_; \
+        JAVA_OBJECT methodReadResolve_; \
+        JAVA_OBJECT methodWriteObject_; \
+        JAVA_OBJECT methodReadObject_; \
+        JAVA_OBJECT methodReadObjectNoData_; \
+        JAVA_BOOLEAN arePropertiesResolved_; \
+        JAVA_BOOLEAN isSerializable_; \
+        JAVA_BOOLEAN isExternalizable_; \
+        JAVA_BOOLEAN isProxy_; \
+        JAVA_BOOLEAN isEnum_; \
+        JAVA_OBJECT className_; \
+        JAVA_OBJECT resolvedClass_; \
+        JAVA_LONG svUID_; \
+        JAVA_BYTE flags_; \
+        JAVA_OBJECT superclass_; \
+        JAVA_OBJECT fields_; \
+        JAVA_OBJECT loadFields_; \
+        JAVA_LONG constructor_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_io_ObjectStreamClass \
+    } java_io_ObjectStreamClass
+
+struct java_io_ObjectStreamClass {
+    __TIB_DEFINITION_java_io_ObjectStreamClass* tib;
+    struct {
+        __INSTANCE_FIELDS_java_io_ObjectStreamClass;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectStreamClass
+#define XMLVM_FORWARD_DECL_java_io_ObjectStreamClass
+typedef struct java_io_ObjectStreamClass java_io_ObjectStreamClass;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_io_ObjectStreamClass 6
+#define XMLVM_VTABLE_IDX_java_io_ObjectStreamClass_toString__ 5
+
+void __INIT_java_io_ObjectStreamClass();
+void __INIT_IMPL_java_io_ObjectStreamClass();
+void __DELETE_java_io_ObjectStreamClass(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_io_ObjectStreamClass(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_io_ObjectStreamClass();
+JAVA_OBJECT __NEW_INSTANCE_java_io_ObjectStreamClass();
+JAVA_LONG java_io_ObjectStreamClass_GET_serialVersionUID();
+void java_io_ObjectStreamClass_PUT_serialVersionUID(JAVA_LONG v);
+JAVA_OBJECT java_io_ObjectStreamClass_GET_UID_FIELD_NAME();
+void java_io_ObjectStreamClass_PUT_UID_FIELD_NAME(JAVA_OBJECT v);
+JAVA_LONG java_io_ObjectStreamClass_GET_CONSTRUCTOR_IS_NOT_RESOLVED();
+void java_io_ObjectStreamClass_PUT_CONSTRUCTOR_IS_NOT_RESOLVED(JAVA_LONG v);
+JAVA_INT java_io_ObjectStreamClass_GET_CLASS_MODIFIERS_MASK();
+void java_io_ObjectStreamClass_PUT_CLASS_MODIFIERS_MASK(JAVA_INT v);
+JAVA_INT java_io_ObjectStreamClass_GET_FIELD_MODIFIERS_MASK();
+void java_io_ObjectStreamClass_PUT_FIELD_MODIFIERS_MASK(JAVA_INT v);
+JAVA_INT java_io_ObjectStreamClass_GET_METHOD_MODIFIERS_MASK();
+void java_io_ObjectStreamClass_PUT_METHOD_MODIFIERS_MASK(JAVA_INT v);
+JAVA_OBJECT java_io_ObjectStreamClass_GET_READ_PARAM_TYPES();
+void java_io_ObjectStreamClass_PUT_READ_PARAM_TYPES(JAVA_OBJECT v);
+JAVA_OBJECT java_io_ObjectStreamClass_GET_WRITE_PARAM_TYPES();
+void java_io_ObjectStreamClass_PUT_WRITE_PARAM_TYPES(JAVA_OBJECT v);
+JAVA_OBJECT java_io_ObjectStreamClass_GET_EMPTY_CONSTRUCTOR_PARAM_TYPES();
+void java_io_ObjectStreamClass_PUT_EMPTY_CONSTRUCTOR_PARAM_TYPES(JAVA_OBJECT v);
+JAVA_OBJECT java_io_ObjectStreamClass_GET_VOID_CLASS();
+void java_io_ObjectStreamClass_PUT_VOID_CLASS(JAVA_OBJECT v);
+JAVA_OBJECT java_io_ObjectStreamClass_GET_UNSHARED_PARAM_TYPES();
+void java_io_ObjectStreamClass_PUT_UNSHARED_PARAM_TYPES(JAVA_OBJECT v);
+JAVA_OBJECT java_io_ObjectStreamClass_GET_NO_FIELDS();
+void java_io_ObjectStreamClass_PUT_NO_FIELDS(JAVA_OBJECT v);
+JAVA_OBJECT java_io_ObjectStreamClass_GET_ARRAY_OF_FIELDS();
+void java_io_ObjectStreamClass_PUT_ARRAY_OF_FIELDS(JAVA_OBJECT v);
+JAVA_OBJECT java_io_ObjectStreamClass_GET_CLINIT_NAME();
+void java_io_ObjectStreamClass_PUT_CLINIT_NAME(JAVA_OBJECT v);
+JAVA_INT java_io_ObjectStreamClass_GET_CLINIT_MODIFIERS();
+void java_io_ObjectStreamClass_PUT_CLINIT_MODIFIERS(JAVA_INT v);
+JAVA_OBJECT java_io_ObjectStreamClass_GET_CLINIT_SIGNATURE();
+void java_io_ObjectStreamClass_PUT_CLINIT_SIGNATURE(JAVA_OBJECT v);
+JAVA_OBJECT java_io_ObjectStreamClass_GET_SERIALIZABLE();
+void java_io_ObjectStreamClass_PUT_SERIALIZABLE(JAVA_OBJECT v);
+JAVA_OBJECT java_io_ObjectStreamClass_GET_EXTERNALIZABLE();
+void java_io_ObjectStreamClass_PUT_EXTERNALIZABLE(JAVA_OBJECT v);
+JAVA_OBJECT java_io_ObjectStreamClass_GET_STRINGCLASS();
+void java_io_ObjectStreamClass_PUT_STRINGCLASS(JAVA_OBJECT v);
+JAVA_OBJECT java_io_ObjectStreamClass_GET_CLASSCLASS();
+void java_io_ObjectStreamClass_PUT_CLASSCLASS(JAVA_OBJECT v);
+JAVA_OBJECT java_io_ObjectStreamClass_GET_OBJECTSTREAMCLASSCLASS();
+void java_io_ObjectStreamClass_PUT_OBJECTSTREAMCLASSCLASS(JAVA_OBJECT v);
+void java_io_ObjectStreamClass___CLINIT_();
+void java_io_ObjectStreamClass_oneTimeInitialization__();
+void java_io_ObjectStreamClass_setConstructor___long(JAVA_OBJECT me, JAVA_LONG n1);
+JAVA_LONG java_io_ObjectStreamClass_getConstructor__(JAVA_OBJECT me);
+void java_io_ObjectStreamClass___INIT___(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectStreamClass_createClassDesc___java_lang_Class(JAVA_OBJECT n1);
+void java_io_ObjectStreamClass_buildFieldDescriptors___java_lang_reflect_Field_1ARRAY(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_LONG java_io_ObjectStreamClass_computeSerialVersionUID___java_lang_Class_java_lang_reflect_Field_1ARRAY(JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT java_io_ObjectStreamClass_descriptorForFieldSignature___java_lang_String(JAVA_OBJECT n1);
+JAVA_OBJECT java_io_ObjectStreamClass_descriptorForSignature___java_lang_String(JAVA_OBJECT n1);
+JAVA_OBJECT java_io_ObjectStreamClass_fieldSerialPersistentFields___java_lang_Class(JAVA_OBJECT n1);
+JAVA_OBJECT java_io_ObjectStreamClass_forClass__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectStreamClass_getConstructorSignature___java_lang_reflect_Constructor(JAVA_OBJECT n1);
+JAVA_OBJECT java_io_ObjectStreamClass_getField___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT java_io_ObjectStreamClass_fields__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectStreamClass_getFields__(JAVA_OBJECT me);
+void java_io_ObjectStreamClass_copyFieldAttributes__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectStreamClass_getLoadFields__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectStreamClass_getFieldSignature___java_lang_reflect_Field(JAVA_OBJECT n1);
+JAVA_BYTE java_io_ObjectStreamClass_getFlags__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectStreamClass_getMethodSignature___java_lang_reflect_Method(JAVA_OBJECT n1);
+JAVA_OBJECT java_io_ObjectStreamClass_getName__(JAVA_OBJECT me);
+JAVA_LONG java_io_ObjectStreamClass_getSerialVersionUID__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectStreamClass_getSuperclass__(JAVA_OBJECT me);
+JAVA_BOOLEAN java_io_ObjectStreamClass_hasClinit___java_lang_Class(JAVA_OBJECT n1);
+JAVA_BOOLEAN java_io_ObjectStreamClass_isExternalizable___java_lang_Class(JAVA_OBJECT n1);
+JAVA_BOOLEAN java_io_ObjectStreamClass_isPrimitiveType___char(JAVA_CHAR n1);
+JAVA_BOOLEAN java_io_ObjectStreamClass_isSerializable___java_lang_Class(JAVA_OBJECT n1);
+void java_io_ObjectStreamClass_resolveProperties__(JAVA_OBJECT me);
+JAVA_BOOLEAN java_io_ObjectStreamClass_isSerializable__(JAVA_OBJECT me);
+JAVA_BOOLEAN java_io_ObjectStreamClass_isExternalizable__(JAVA_OBJECT me);
+JAVA_BOOLEAN java_io_ObjectStreamClass_isProxy__(JAVA_OBJECT me);
+JAVA_BOOLEAN java_io_ObjectStreamClass_isEnum__(JAVA_OBJECT me);
+JAVA_LONG java_io_ObjectStreamClass_littleEndianLongAt___byte_1ARRAY_int(JAVA_OBJECT n1, JAVA_INT n2);
+JAVA_OBJECT java_io_ObjectStreamClass_lookup___java_lang_Class(JAVA_OBJECT n1);
+JAVA_OBJECT java_io_ObjectStreamClass_lookupAny___java_lang_Class(JAVA_OBJECT n1);
+JAVA_OBJECT java_io_ObjectStreamClass_lookupStreamClass___java_lang_Class(JAVA_OBJECT n1);
+JAVA_OBJECT java_io_ObjectStreamClass_findMethod___java_lang_Class_java_lang_String(JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT java_io_ObjectStreamClass_findPrivateMethod___java_lang_Class_java_lang_String_java_lang_Class_1ARRAY(JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+JAVA_BOOLEAN java_io_ObjectStreamClass_hasMethodWriteReplace__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectStreamClass_getMethodWriteReplace__(JAVA_OBJECT me);
+JAVA_BOOLEAN java_io_ObjectStreamClass_hasMethodReadResolve__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectStreamClass_getMethodReadResolve__(JAVA_OBJECT me);
+JAVA_BOOLEAN java_io_ObjectStreamClass_hasMethodWriteObject__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectStreamClass_getMethodWriteObject__(JAVA_OBJECT me);
+JAVA_BOOLEAN java_io_ObjectStreamClass_hasMethodReadObject__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectStreamClass_getMethodReadObject__(JAVA_OBJECT me);
+JAVA_BOOLEAN java_io_ObjectStreamClass_hasMethodReadObjectNoData__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectStreamClass_getMethodReadObjectNoData__(JAVA_OBJECT me);
+void java_io_ObjectStreamClass_initPrivateFields___java_io_ObjectStreamClass(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_io_ObjectStreamClass_setClass___java_lang_Class(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_io_ObjectStreamClass_setFields___java_io_ObjectStreamField_1ARRAY(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_io_ObjectStreamClass_setLoadFields___java_io_ObjectStreamField_1ARRAY(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_io_ObjectStreamClass_setFlags___byte(JAVA_OBJECT me, JAVA_BYTE n1);
+void java_io_ObjectStreamClass_setName___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_io_ObjectStreamClass_setSerialVersionUID___long(JAVA_OBJECT me, JAVA_LONG n1);
+void java_io_ObjectStreamClass_setSuperclass___java_io_ObjectStreamClass(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_INT java_io_ObjectStreamClass_primitiveSize___java_lang_Class(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 5
+JAVA_OBJECT java_io_ObjectStreamClass_toString__(JAVA_OBJECT me);
+
+#endif

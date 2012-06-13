@@ -1,0 +1,109 @@
+#ifndef __JAVA_NIO_CHANNELS_SPI_ABSTRACTINTERRUPTIBLECHANNEL__
+#define __JAVA_NIO_CHANNELS_SPI_ABSTRACTINTERRUPTIBLECHANNEL__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_nio_channels_spi_AbstractInterruptibleChannel 14
+// Implemented interfaces:
+#include "java_nio_channels_Channel.h"
+#include "java_nio_channels_InterruptibleChannel.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Exception
+#define XMLVM_FORWARD_DECL_java_lang_Exception
+XMLVM_FORWARD_DECL(java_lang_Exception)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_RuntimeException
+#define XMLVM_FORWARD_DECL_java_lang_RuntimeException
+XMLVM_FORWARD_DECL(java_lang_RuntimeException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Thread
+#define XMLVM_FORWARD_DECL_java_lang_Thread
+XMLVM_FORWARD_DECL(java_lang_Thread)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Throwable
+#define XMLVM_FORWARD_DECL_java_lang_Throwable
+XMLVM_FORWARD_DECL(java_lang_Throwable)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Method
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Method
+XMLVM_FORWARD_DECL(java_lang_reflect_Method)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_channels_spi_AbstractInterruptibleChannel_1
+#define XMLVM_FORWARD_DECL_java_nio_channels_spi_AbstractInterruptibleChannel_1
+XMLVM_FORWARD_DECL(java_nio_channels_spi_AbstractInterruptibleChannel_1)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_channels_spi_AbstractInterruptibleChannel_2
+#define XMLVM_FORWARD_DECL_java_nio_channels_spi_AbstractInterruptibleChannel_2
+XMLVM_FORWARD_DECL(java_nio_channels_spi_AbstractInterruptibleChannel_2)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_security_AccessController
+#define XMLVM_FORWARD_DECL_java_security_AccessController
+XMLVM_FORWARD_DECL(java_security_AccessController)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_security_PrivilegedActionException
+#define XMLVM_FORWARD_DECL_java_security_PrivilegedActionException
+XMLVM_FORWARD_DECL(java_security_PrivilegedActionException)
+#endif
+// Class declarations for java.nio.channels.spi.AbstractInterruptibleChannel
+XMLVM_DEFINE_CLASS(java_nio_channels_spi_AbstractInterruptibleChannel, 9, XMLVM_ITABLE_SIZE_java_nio_channels_spi_AbstractInterruptibleChannel)
+
+extern JAVA_OBJECT __CLASS_java_nio_channels_spi_AbstractInterruptibleChannel;
+extern JAVA_OBJECT __CLASS_java_nio_channels_spi_AbstractInterruptibleChannel_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_nio_channels_spi_AbstractInterruptibleChannel_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_nio_channels_spi_AbstractInterruptibleChannel_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_nio_channels_spi_AbstractInterruptibleChannel
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_nio_channels_spi_AbstractInterruptibleChannel \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_BOOLEAN closed_; \
+        JAVA_BOOLEAN interrupted_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_nio_channels_spi_AbstractInterruptibleChannel \
+    } java_nio_channels_spi_AbstractInterruptibleChannel
+
+struct java_nio_channels_spi_AbstractInterruptibleChannel {
+    __TIB_DEFINITION_java_nio_channels_spi_AbstractInterruptibleChannel* tib;
+    struct {
+        __INSTANCE_FIELDS_java_nio_channels_spi_AbstractInterruptibleChannel;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_nio_channels_spi_AbstractInterruptibleChannel
+#define XMLVM_FORWARD_DECL_java_nio_channels_spi_AbstractInterruptibleChannel
+typedef struct java_nio_channels_spi_AbstractInterruptibleChannel java_nio_channels_spi_AbstractInterruptibleChannel;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_nio_channels_spi_AbstractInterruptibleChannel 9
+#define XMLVM_VTABLE_IDX_java_nio_channels_spi_AbstractInterruptibleChannel_isOpen__ 8
+#define XMLVM_VTABLE_IDX_java_nio_channels_spi_AbstractInterruptibleChannel_close__ 6
+#define XMLVM_VTABLE_IDX_java_nio_channels_spi_AbstractInterruptibleChannel_implCloseChannel__ 7
+
+void __INIT_java_nio_channels_spi_AbstractInterruptibleChannel();
+void __INIT_IMPL_java_nio_channels_spi_AbstractInterruptibleChannel();
+void __DELETE_java_nio_channels_spi_AbstractInterruptibleChannel(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_nio_channels_spi_AbstractInterruptibleChannel(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_nio_channels_spi_AbstractInterruptibleChannel();
+JAVA_OBJECT __NEW_INSTANCE_java_nio_channels_spi_AbstractInterruptibleChannel();
+JAVA_OBJECT java_nio_channels_spi_AbstractInterruptibleChannel_GET_setInterruptAction();
+void java_nio_channels_spi_AbstractInterruptibleChannel_PUT_setInterruptAction(JAVA_OBJECT v);
+void java_nio_channels_spi_AbstractInterruptibleChannel___CLINIT_();
+void java_nio_channels_spi_AbstractInterruptibleChannel___INIT___(JAVA_OBJECT me);
+// Vtable index: 8
+JAVA_BOOLEAN java_nio_channels_spi_AbstractInterruptibleChannel_isOpen__(JAVA_OBJECT me);
+// Vtable index: 6
+void java_nio_channels_spi_AbstractInterruptibleChannel_close__(JAVA_OBJECT me);
+void java_nio_channels_spi_AbstractInterruptibleChannel_begin__(JAVA_OBJECT me);
+void java_nio_channels_spi_AbstractInterruptibleChannel_end___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+// Vtable index: 7
+void java_nio_channels_spi_AbstractInterruptibleChannel_implCloseChannel__(JAVA_OBJECT me);
+
+#endif

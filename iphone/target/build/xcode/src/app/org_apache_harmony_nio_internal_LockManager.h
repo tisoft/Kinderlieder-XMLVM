@@ -1,0 +1,83 @@
+#ifndef __ORG_APACHE_HARMONY_NIO_INTERNAL_LOCKMANAGER__
+#define __ORG_APACHE_HARMONY_NIO_INTERNAL_LOCKMANAGER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_apache_harmony_nio_internal_LockManager 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Throwable
+#define XMLVM_FORWARD_DECL_java_lang_Throwable
+XMLVM_FORWARD_DECL(java_lang_Throwable)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_channels_FileLock
+#define XMLVM_FORWARD_DECL_java_nio_channels_FileLock
+XMLVM_FORWARD_DECL(java_nio_channels_FileLock)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Comparator
+#define XMLVM_FORWARD_DECL_java_util_Comparator
+XMLVM_FORWARD_DECL(java_util_Comparator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Iterator
+#define XMLVM_FORWARD_DECL_java_util_Iterator
+XMLVM_FORWARD_DECL(java_util_Iterator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_SortedSet
+#define XMLVM_FORWARD_DECL_java_util_SortedSet
+XMLVM_FORWARD_DECL(java_util_SortedSet)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_TreeSet
+#define XMLVM_FORWARD_DECL_java_util_TreeSet
+XMLVM_FORWARD_DECL(java_util_TreeSet)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_nio_internal_LockManager_1
+#define XMLVM_FORWARD_DECL_org_apache_harmony_nio_internal_LockManager_1
+XMLVM_FORWARD_DECL(org_apache_harmony_nio_internal_LockManager_1)
+#endif
+// Class declarations for org.apache.harmony.nio.internal.LockManager
+XMLVM_DEFINE_CLASS(org_apache_harmony_nio_internal_LockManager, 6, XMLVM_ITABLE_SIZE_org_apache_harmony_nio_internal_LockManager)
+
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_internal_LockManager;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_internal_LockManager_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_internal_LockManager_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_internal_LockManager_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_nio_internal_LockManager
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_apache_harmony_nio_internal_LockManager \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT lockComparator_; \
+        JAVA_OBJECT locks_; \
+        __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_nio_internal_LockManager \
+    } org_apache_harmony_nio_internal_LockManager
+
+struct org_apache_harmony_nio_internal_LockManager {
+    __TIB_DEFINITION_org_apache_harmony_nio_internal_LockManager* tib;
+    struct {
+        __INSTANCE_FIELDS_org_apache_harmony_nio_internal_LockManager;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_nio_internal_LockManager
+#define XMLVM_FORWARD_DECL_org_apache_harmony_nio_internal_LockManager
+typedef struct org_apache_harmony_nio_internal_LockManager org_apache_harmony_nio_internal_LockManager;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_apache_harmony_nio_internal_LockManager 6
+
+void __INIT_org_apache_harmony_nio_internal_LockManager();
+void __INIT_IMPL_org_apache_harmony_nio_internal_LockManager();
+void __DELETE_org_apache_harmony_nio_internal_LockManager(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_apache_harmony_nio_internal_LockManager(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_apache_harmony_nio_internal_LockManager();
+JAVA_OBJECT __NEW_INSTANCE_org_apache_harmony_nio_internal_LockManager();
+void org_apache_harmony_nio_internal_LockManager___INIT___(JAVA_OBJECT me);
+void org_apache_harmony_nio_internal_LockManager_addLock___java_nio_channels_FileLock(JAVA_OBJECT me, JAVA_OBJECT n1);
+void org_apache_harmony_nio_internal_LockManager_removeLock___java_nio_channels_FileLock(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

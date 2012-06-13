@@ -1,0 +1,117 @@
+#ifndef __JAVA_UTIL_COLLECTIONS_SYNCHRONIZEDCOLLECTION__
+#define __JAVA_UTIL_COLLECTIONS_SYNCHRONIZEDCOLLECTION__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_Collections_SynchronizedCollection 16
+// Implemented interfaces:
+#include "java_io_Serializable.h"
+#include "java_util_Collection.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectOutputStream
+#define XMLVM_FORWARD_DECL_java_io_ObjectOutputStream
+XMLVM_FORWARD_DECL(java_io_ObjectOutputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Iterator
+#define XMLVM_FORWARD_DECL_java_util_Iterator
+XMLVM_FORWARD_DECL(java_util_Iterator)
+#endif
+// Class declarations for java.util.Collections$SynchronizedCollection
+XMLVM_DEFINE_CLASS(java_util_Collections_SynchronizedCollection, 19, XMLVM_ITABLE_SIZE_java_util_Collections_SynchronizedCollection)
+
+extern JAVA_OBJECT __CLASS_java_util_Collections_SynchronizedCollection;
+extern JAVA_OBJECT __CLASS_java_util_Collections_SynchronizedCollection_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_Collections_SynchronizedCollection_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_Collections_SynchronizedCollection_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_Collections_SynchronizedCollection
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_Collections_SynchronizedCollection \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT c_; \
+        JAVA_OBJECT mutex_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_Collections_SynchronizedCollection \
+    } java_util_Collections_SynchronizedCollection
+
+struct java_util_Collections_SynchronizedCollection {
+    __TIB_DEFINITION_java_util_Collections_SynchronizedCollection* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_Collections_SynchronizedCollection;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_Collections_SynchronizedCollection
+#define XMLVM_FORWARD_DECL_java_util_Collections_SynchronizedCollection
+typedef struct java_util_Collections_SynchronizedCollection java_util_Collections_SynchronizedCollection;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_Collections_SynchronizedCollection 19
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedCollection_add___java_lang_Object 7
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedCollection_addAll___java_util_Collection 6
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedCollection_clear__ 8
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedCollection_contains___java_lang_Object 10
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedCollection_containsAll___java_util_Collection 9
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedCollection_isEmpty__ 11
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedCollection_iterator__ 12
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedCollection_remove___java_lang_Object 14
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedCollection_removeAll___java_util_Collection 13
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedCollection_retainAll___java_util_Collection 15
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedCollection_size__ 16
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedCollection_toArray__ 17
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedCollection_toString__ 5
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedCollection_toArray___java_lang_Object_1ARRAY 18
+
+void __INIT_java_util_Collections_SynchronizedCollection();
+void __INIT_IMPL_java_util_Collections_SynchronizedCollection();
+void __DELETE_java_util_Collections_SynchronizedCollection(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_Collections_SynchronizedCollection(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_Collections_SynchronizedCollection();
+JAVA_OBJECT __NEW_INSTANCE_java_util_Collections_SynchronizedCollection();
+JAVA_LONG java_util_Collections_SynchronizedCollection_GET_serialVersionUID();
+void java_util_Collections_SynchronizedCollection_PUT_serialVersionUID(JAVA_LONG v);
+void java_util_Collections_SynchronizedCollection___INIT____java_util_Collection(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_util_Collections_SynchronizedCollection___INIT____java_util_Collection_java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 7
+JAVA_BOOLEAN java_util_Collections_SynchronizedCollection_add___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 6
+JAVA_BOOLEAN java_util_Collections_SynchronizedCollection_addAll___java_util_Collection(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 8
+void java_util_Collections_SynchronizedCollection_clear__(JAVA_OBJECT me);
+// Vtable index: 10
+JAVA_BOOLEAN java_util_Collections_SynchronizedCollection_contains___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 9
+JAVA_BOOLEAN java_util_Collections_SynchronizedCollection_containsAll___java_util_Collection(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 11
+JAVA_BOOLEAN java_util_Collections_SynchronizedCollection_isEmpty__(JAVA_OBJECT me);
+// Vtable index: 12
+JAVA_OBJECT java_util_Collections_SynchronizedCollection_iterator__(JAVA_OBJECT me);
+// Vtable index: 14
+JAVA_BOOLEAN java_util_Collections_SynchronizedCollection_remove___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 13
+JAVA_BOOLEAN java_util_Collections_SynchronizedCollection_removeAll___java_util_Collection(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 15
+JAVA_BOOLEAN java_util_Collections_SynchronizedCollection_retainAll___java_util_Collection(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 16
+JAVA_INT java_util_Collections_SynchronizedCollection_size__(JAVA_OBJECT me);
+// Vtable index: 17
+JAVA_OBJECT java_util_Collections_SynchronizedCollection_toArray__(JAVA_OBJECT me);
+// Vtable index: 5
+JAVA_OBJECT java_util_Collections_SynchronizedCollection_toString__(JAVA_OBJECT me);
+// Vtable index: 18
+JAVA_OBJECT java_util_Collections_SynchronizedCollection_toArray___java_lang_Object_1ARRAY(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_util_Collections_SynchronizedCollection_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

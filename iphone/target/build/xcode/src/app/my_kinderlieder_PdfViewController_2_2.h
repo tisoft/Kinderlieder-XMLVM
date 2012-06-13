@@ -1,0 +1,81 @@
+#ifndef __MY_KINDERLIEDER_PDFVIEWCONTROLLER_2_2__
+#define __MY_KINDERLIEDER_PDFVIEWCONTROLLER_2_2__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_my_kinderlieder_PdfViewController_2_2 4
+// Implemented interfaces:
+#include "org_xmlvm_iphone_AVAudioPlayerDelegate.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_PdfViewController
+#define XMLVM_FORWARD_DECL_my_kinderlieder_PdfViewController
+XMLVM_FORWARD_DECL(my_kinderlieder_PdfViewController)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_PdfViewController_2
+#define XMLVM_FORWARD_DECL_my_kinderlieder_PdfViewController_2
+XMLVM_FORWARD_DECL(my_kinderlieder_PdfViewController_2)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_AVAudioPlayer
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_AVAudioPlayer
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_AVAudioPlayer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSError
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSError
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_NSError)
+#endif
+// Class declarations for my.kinderlieder.PdfViewController$2$2
+XMLVM_DEFINE_CLASS(my_kinderlieder_PdfViewController_2_2, 10, XMLVM_ITABLE_SIZE_my_kinderlieder_PdfViewController_2_2)
+
+extern JAVA_OBJECT __CLASS_my_kinderlieder_PdfViewController_2_2;
+extern JAVA_OBJECT __CLASS_my_kinderlieder_PdfViewController_2_2_1ARRAY;
+extern JAVA_OBJECT __CLASS_my_kinderlieder_PdfViewController_2_2_2ARRAY;
+extern JAVA_OBJECT __CLASS_my_kinderlieder_PdfViewController_2_2_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_my_kinderlieder_PdfViewController_2_2
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_my_kinderlieder_PdfViewController_2_2 \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT this_1_; \
+        __ADDITIONAL_INSTANCE_FIELDS_my_kinderlieder_PdfViewController_2_2 \
+    } my_kinderlieder_PdfViewController_2_2
+
+struct my_kinderlieder_PdfViewController_2_2 {
+    __TIB_DEFINITION_my_kinderlieder_PdfViewController_2_2* tib;
+    struct {
+        __INSTANCE_FIELDS_my_kinderlieder_PdfViewController_2_2;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_PdfViewController_2_2
+#define XMLVM_FORWARD_DECL_my_kinderlieder_PdfViewController_2_2
+typedef struct my_kinderlieder_PdfViewController_2_2 my_kinderlieder_PdfViewController_2_2;
+#endif
+
+#define XMLVM_VTABLE_SIZE_my_kinderlieder_PdfViewController_2_2 10
+#define XMLVM_VTABLE_IDX_my_kinderlieder_PdfViewController_2_2_audioPlayerDidFinishPlaying___org_xmlvm_iphone_AVAudioPlayer_boolean 8
+#define XMLVM_VTABLE_IDX_my_kinderlieder_PdfViewController_2_2_audioPlayerDecodeErrorDidOccur___org_xmlvm_iphone_AVAudioPlayer_org_xmlvm_iphone_NSError 7
+#define XMLVM_VTABLE_IDX_my_kinderlieder_PdfViewController_2_2_audioPlayerBeginInterruption___org_xmlvm_iphone_AVAudioPlayer 6
+#define XMLVM_VTABLE_IDX_my_kinderlieder_PdfViewController_2_2_audioPlayerEndInterruption___org_xmlvm_iphone_AVAudioPlayer 9
+
+void __INIT_my_kinderlieder_PdfViewController_2_2();
+void __INIT_IMPL_my_kinderlieder_PdfViewController_2_2();
+void __DELETE_my_kinderlieder_PdfViewController_2_2(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_my_kinderlieder_PdfViewController_2_2(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_my_kinderlieder_PdfViewController_2_2();
+JAVA_OBJECT __NEW_INSTANCE_my_kinderlieder_PdfViewController_2_2();
+void my_kinderlieder_PdfViewController_2_2___INIT____my_kinderlieder_PdfViewController_2(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 8
+void my_kinderlieder_PdfViewController_2_2_audioPlayerDidFinishPlaying___org_xmlvm_iphone_AVAudioPlayer_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_BOOLEAN n2);
+// Vtable index: 7
+void my_kinderlieder_PdfViewController_2_2_audioPlayerDecodeErrorDidOccur___org_xmlvm_iphone_AVAudioPlayer_org_xmlvm_iphone_NSError(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 6
+void my_kinderlieder_PdfViewController_2_2_audioPlayerBeginInterruption___org_xmlvm_iphone_AVAudioPlayer(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 9
+void my_kinderlieder_PdfViewController_2_2_audioPlayerEndInterruption___org_xmlvm_iphone_AVAudioPlayer(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

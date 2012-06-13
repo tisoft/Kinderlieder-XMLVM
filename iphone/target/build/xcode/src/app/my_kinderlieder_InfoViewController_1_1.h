@@ -1,0 +1,75 @@
+#ifndef __MY_KINDERLIEDER_INFOVIEWCONTROLLER_1_1__
+#define __MY_KINDERLIEDER_INFOVIEWCONTROLLER_1_1__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_my_kinderlieder_InfoViewController_1_1 0
+// Implemented interfaces:
+// Super Class:
+#include "org_xmlvm_iphone_MFMailComposeViewControllerDelegate.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_InfoViewController
+#define XMLVM_FORWARD_DECL_my_kinderlieder_InfoViewController
+XMLVM_FORWARD_DECL(my_kinderlieder_InfoViewController)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_InfoViewController_1
+#define XMLVM_FORWARD_DECL_my_kinderlieder_InfoViewController_1
+XMLVM_FORWARD_DECL(my_kinderlieder_InfoViewController_1)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_MFMailComposeViewController
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_MFMailComposeViewController
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_MFMailComposeViewController)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSError
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSError
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_NSError)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UINavigationController
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UINavigationController
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_UINavigationController)
+#endif
+// Class declarations for my.kinderlieder.InfoViewController$1$1
+XMLVM_DEFINE_CLASS(my_kinderlieder_InfoViewController_1_1, 7, XMLVM_ITABLE_SIZE_my_kinderlieder_InfoViewController_1_1)
+
+extern JAVA_OBJECT __CLASS_my_kinderlieder_InfoViewController_1_1;
+extern JAVA_OBJECT __CLASS_my_kinderlieder_InfoViewController_1_1_1ARRAY;
+extern JAVA_OBJECT __CLASS_my_kinderlieder_InfoViewController_1_1_2ARRAY;
+extern JAVA_OBJECT __CLASS_my_kinderlieder_InfoViewController_1_1_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_my_kinderlieder_InfoViewController_1_1
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_my_kinderlieder_InfoViewController_1_1 \
+    __INSTANCE_FIELDS_org_xmlvm_iphone_MFMailComposeViewControllerDelegate; \
+    struct { \
+        JAVA_OBJECT this_1_; \
+        __ADDITIONAL_INSTANCE_FIELDS_my_kinderlieder_InfoViewController_1_1 \
+    } my_kinderlieder_InfoViewController_1_1
+
+struct my_kinderlieder_InfoViewController_1_1 {
+    __TIB_DEFINITION_my_kinderlieder_InfoViewController_1_1* tib;
+    struct {
+        __INSTANCE_FIELDS_my_kinderlieder_InfoViewController_1_1;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_InfoViewController_1_1
+#define XMLVM_FORWARD_DECL_my_kinderlieder_InfoViewController_1_1
+typedef struct my_kinderlieder_InfoViewController_1_1 my_kinderlieder_InfoViewController_1_1;
+#endif
+
+#define XMLVM_VTABLE_SIZE_my_kinderlieder_InfoViewController_1_1 7
+#define XMLVM_VTABLE_IDX_my_kinderlieder_InfoViewController_1_1_didFinishWithResult___org_xmlvm_iphone_MFMailComposeViewController_int_org_xmlvm_iphone_NSError 6
+
+void __INIT_my_kinderlieder_InfoViewController_1_1();
+void __INIT_IMPL_my_kinderlieder_InfoViewController_1_1();
+void __DELETE_my_kinderlieder_InfoViewController_1_1(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_my_kinderlieder_InfoViewController_1_1(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_my_kinderlieder_InfoViewController_1_1();
+JAVA_OBJECT __NEW_INSTANCE_my_kinderlieder_InfoViewController_1_1();
+void my_kinderlieder_InfoViewController_1_1___INIT____my_kinderlieder_InfoViewController_1(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 6
+void my_kinderlieder_InfoViewController_1_1_didFinishWithResult___org_xmlvm_iphone_MFMailComposeViewController_int_org_xmlvm_iphone_NSError(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_OBJECT n3);
+
+#endif

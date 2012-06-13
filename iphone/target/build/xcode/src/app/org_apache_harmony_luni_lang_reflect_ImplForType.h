@@ -1,0 +1,103 @@
+#ifndef __ORG_APACHE_HARMONY_LUNI_LANG_REFLECT_IMPLFORTYPE__
+#define __ORG_APACHE_HARMONY_LUNI_LANG_REFLECT_IMPLFORTYPE__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_apache_harmony_luni_lang_reflect_ImplForType 3
+// Implemented interfaces:
+#include "java_lang_reflect_ParameterizedType.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_ClassLoader
+#define XMLVM_FORWARD_DECL_java_lang_ClassLoader
+XMLVM_FORWARD_DECL(java_lang_ClassLoader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_ClassNotFoundException
+#define XMLVM_FORWARD_DECL_java_lang_ClassNotFoundException
+XMLVM_FORWARD_DECL(java_lang_ClassNotFoundException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_TypeNotPresentException
+#define XMLVM_FORWARD_DECL_java_lang_TypeNotPresentException
+XMLVM_FORWARD_DECL(java_lang_TypeNotPresentException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Type
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Type
+XMLVM_FORWARD_DECL(java_lang_reflect_Type)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ListOfTypes
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ListOfTypes
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_lang_reflect_ListOfTypes)
+#endif
+// Class declarations for org.apache.harmony.luni.lang.reflect.ImplForType
+XMLVM_DEFINE_CLASS(org_apache_harmony_luni_lang_reflect_ImplForType, 9, XMLVM_ITABLE_SIZE_org_apache_harmony_luni_lang_reflect_ImplForType)
+
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_lang_reflect_ImplForType;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_lang_reflect_ImplForType_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_lang_reflect_ImplForType_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_lang_reflect_ImplForType_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_lang_reflect_ImplForType
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_apache_harmony_luni_lang_reflect_ImplForType \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT args_; \
+        JAVA_OBJECT ownerType0_; \
+        JAVA_OBJECT ownerTypeRes_; \
+        JAVA_OBJECT rawType_; \
+        JAVA_OBJECT rawTypeName_; \
+        JAVA_OBJECT loader_; \
+        __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_lang_reflect_ImplForType \
+    } org_apache_harmony_luni_lang_reflect_ImplForType
+
+struct org_apache_harmony_luni_lang_reflect_ImplForType {
+    __TIB_DEFINITION_org_apache_harmony_luni_lang_reflect_ImplForType* tib;
+    struct {
+        __INSTANCE_FIELDS_org_apache_harmony_luni_lang_reflect_ImplForType;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ImplForType
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ImplForType
+typedef struct org_apache_harmony_luni_lang_reflect_ImplForType org_apache_harmony_luni_lang_reflect_ImplForType;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_apache_harmony_luni_lang_reflect_ImplForType 9
+#define XMLVM_VTABLE_IDX_org_apache_harmony_luni_lang_reflect_ImplForType_getActualTypeArguments__ 6
+#define XMLVM_VTABLE_IDX_org_apache_harmony_luni_lang_reflect_ImplForType_getOwnerType__ 7
+#define XMLVM_VTABLE_IDX_org_apache_harmony_luni_lang_reflect_ImplForType_getRawType__ 8
+#define XMLVM_VTABLE_IDX_org_apache_harmony_luni_lang_reflect_ImplForType_toString__ 5
+
+void __INIT_org_apache_harmony_luni_lang_reflect_ImplForType();
+void __INIT_IMPL_org_apache_harmony_luni_lang_reflect_ImplForType();
+void __DELETE_org_apache_harmony_luni_lang_reflect_ImplForType(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_apache_harmony_luni_lang_reflect_ImplForType(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_apache_harmony_luni_lang_reflect_ImplForType();
+JAVA_OBJECT __NEW_INSTANCE_org_apache_harmony_luni_lang_reflect_ImplForType();
+void org_apache_harmony_luni_lang_reflect_ImplForType___INIT____org_apache_harmony_luni_lang_reflect_ImplForType_java_lang_String_org_apache_harmony_luni_lang_reflect_ListOfTypes_java_lang_ClassLoader(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3, JAVA_OBJECT n4);
+// Vtable index: 6
+JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForType_getActualTypeArguments__(JAVA_OBJECT me);
+// Vtable index: 7
+JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForType_getOwnerType__(JAVA_OBJECT me);
+// Vtable index: 8
+JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForType_getRawType__(JAVA_OBJECT me);
+JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForType_getResolvedType__(JAVA_OBJECT me);
+// Vtable index: 5
+JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForType_toString__(JAVA_OBJECT me);
+
+#endif

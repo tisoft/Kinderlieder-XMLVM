@@ -1,0 +1,62 @@
+#ifndef __JAVAX_XML_XPATH_XPATHFACTORYCONFIGURATIONEXCEPTION__
+#define __JAVAX_XML_XPATH_XPATHFACTORYCONFIGURATIONEXCEPTION__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_javax_xml_xpath_XPathFactoryConfigurationException 0
+// Implemented interfaces:
+// Super Class:
+#include "javax_xml_xpath_XPathException.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Throwable
+#define XMLVM_FORWARD_DECL_java_lang_Throwable
+XMLVM_FORWARD_DECL(java_lang_Throwable)
+#endif
+// Class declarations for javax.xml.xpath.XPathFactoryConfigurationException
+XMLVM_DEFINE_CLASS(javax_xml_xpath_XPathFactoryConfigurationException, 11, XMLVM_ITABLE_SIZE_javax_xml_xpath_XPathFactoryConfigurationException)
+
+extern JAVA_OBJECT __CLASS_javax_xml_xpath_XPathFactoryConfigurationException;
+extern JAVA_OBJECT __CLASS_javax_xml_xpath_XPathFactoryConfigurationException_1ARRAY;
+extern JAVA_OBJECT __CLASS_javax_xml_xpath_XPathFactoryConfigurationException_2ARRAY;
+extern JAVA_OBJECT __CLASS_javax_xml_xpath_XPathFactoryConfigurationException_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_javax_xml_xpath_XPathFactoryConfigurationException
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_javax_xml_xpath_XPathFactoryConfigurationException \
+    __INSTANCE_FIELDS_javax_xml_xpath_XPathException; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_javax_xml_xpath_XPathFactoryConfigurationException \
+    } javax_xml_xpath_XPathFactoryConfigurationException
+
+struct javax_xml_xpath_XPathFactoryConfigurationException {
+    __TIB_DEFINITION_javax_xml_xpath_XPathFactoryConfigurationException* tib;
+    struct {
+        __INSTANCE_FIELDS_javax_xml_xpath_XPathFactoryConfigurationException;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_javax_xml_xpath_XPathFactoryConfigurationException
+#define XMLVM_FORWARD_DECL_javax_xml_xpath_XPathFactoryConfigurationException
+typedef struct javax_xml_xpath_XPathFactoryConfigurationException javax_xml_xpath_XPathFactoryConfigurationException;
+#endif
+
+#define XMLVM_VTABLE_SIZE_javax_xml_xpath_XPathFactoryConfigurationException 11
+
+void __INIT_javax_xml_xpath_XPathFactoryConfigurationException();
+void __INIT_IMPL_javax_xml_xpath_XPathFactoryConfigurationException();
+void __DELETE_javax_xml_xpath_XPathFactoryConfigurationException(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_javax_xml_xpath_XPathFactoryConfigurationException(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_javax_xml_xpath_XPathFactoryConfigurationException();
+JAVA_OBJECT __NEW_INSTANCE_javax_xml_xpath_XPathFactoryConfigurationException();
+JAVA_LONG javax_xml_xpath_XPathFactoryConfigurationException_GET_serialVersionUID();
+void javax_xml_xpath_XPathFactoryConfigurationException_PUT_serialVersionUID(JAVA_LONG v);
+void javax_xml_xpath_XPathFactoryConfigurationException___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+void javax_xml_xpath_XPathFactoryConfigurationException___INIT____java_lang_Throwable(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

@@ -1,0 +1,96 @@
+#ifndef __JAVA_UTIL_TREEMAP_DESCENDINGSUBMAPITERATOR__
+#define __JAVA_UTIL_TREEMAP_DESCENDINGSUBMAPITERATOR__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_TreeMap_DescendingSubMapIterator 0
+// Implemented interfaces:
+// Super Class:
+#include "java_util_TreeMap_AbstractSubMapIterator.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+XMLVM_FORWARD_DECL(java_lang_IllegalStateException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ConcurrentModificationException
+#define XMLVM_FORWARD_DECL_java_util_ConcurrentModificationException
+XMLVM_FORWARD_DECL(java_util_ConcurrentModificationException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_NoSuchElementException
+#define XMLVM_FORWARD_DECL_java_util_NoSuchElementException
+XMLVM_FORWARD_DECL(java_util_NoSuchElementException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_TreeMap
+#define XMLVM_FORWARD_DECL_java_util_TreeMap
+XMLVM_FORWARD_DECL(java_util_TreeMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_TreeMap_Entry
+#define XMLVM_FORWARD_DECL_java_util_TreeMap_Entry
+XMLVM_FORWARD_DECL(java_util_TreeMap_Entry)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_TreeMap_NavigableSubMap
+#define XMLVM_FORWARD_DECL_java_util_TreeMap_NavigableSubMap
+XMLVM_FORWARD_DECL(java_util_TreeMap_NavigableSubMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_TreeMap_Node
+#define XMLVM_FORWARD_DECL_java_util_TreeMap_Node
+XMLVM_FORWARD_DECL(java_util_TreeMap_Node)
+#endif
+// Class declarations for java.util.TreeMap$DescendingSubMapIterator
+XMLVM_DEFINE_CLASS(java_util_TreeMap_DescendingSubMapIterator, 10, XMLVM_ITABLE_SIZE_java_util_TreeMap_DescendingSubMapIterator)
+
+extern JAVA_OBJECT __CLASS_java_util_TreeMap_DescendingSubMapIterator;
+extern JAVA_OBJECT __CLASS_java_util_TreeMap_DescendingSubMapIterator_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_TreeMap_DescendingSubMapIterator_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_TreeMap_DescendingSubMapIterator_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_TreeMap_DescendingSubMapIterator
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_TreeMap_DescendingSubMapIterator \
+    __INSTANCE_FIELDS_java_util_TreeMap_AbstractSubMapIterator; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_TreeMap_DescendingSubMapIterator \
+    } java_util_TreeMap_DescendingSubMapIterator
+
+struct java_util_TreeMap_DescendingSubMapIterator {
+    __TIB_DEFINITION_java_util_TreeMap_DescendingSubMapIterator* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_TreeMap_DescendingSubMapIterator;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_TreeMap_DescendingSubMapIterator
+#define XMLVM_FORWARD_DECL_java_util_TreeMap_DescendingSubMapIterator
+typedef struct java_util_TreeMap_DescendingSubMapIterator java_util_TreeMap_DescendingSubMapIterator;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_TreeMap_DescendingSubMapIterator 10
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMapIterator_getStartNode__ 7
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMapIterator_getBoundaryNode__ 6
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMapIterator_hasNext__ 8
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMapIterator_remove__ 9
+
+void __INIT_java_util_TreeMap_DescendingSubMapIterator();
+void __INIT_IMPL_java_util_TreeMap_DescendingSubMapIterator();
+void __DELETE_java_util_TreeMap_DescendingSubMapIterator(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_TreeMap_DescendingSubMapIterator(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_TreeMap_DescendingSubMapIterator();
+JAVA_OBJECT __NEW_INSTANCE_java_util_TreeMap_DescendingSubMapIterator();
+void java_util_TreeMap_DescendingSubMapIterator___INIT____java_util_TreeMap_NavigableSubMap(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 7
+JAVA_OBJECT java_util_TreeMap_DescendingSubMapIterator_getStartNode__(JAVA_OBJECT me);
+// Vtable index: 6
+JAVA_OBJECT java_util_TreeMap_DescendingSubMapIterator_getBoundaryNode__(JAVA_OBJECT me);
+JAVA_OBJECT java_util_TreeMap_DescendingSubMapIterator_getNext__(JAVA_OBJECT me);
+// Vtable index: 8
+JAVA_BOOLEAN java_util_TreeMap_DescendingSubMapIterator_hasNext__(JAVA_OBJECT me);
+// Vtable index: 9
+void java_util_TreeMap_DescendingSubMapIterator_remove__(JAVA_OBJECT me);
+
+#endif

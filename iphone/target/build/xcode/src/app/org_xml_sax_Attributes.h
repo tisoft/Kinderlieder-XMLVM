@@ -1,0 +1,43 @@
+#ifndef __ORG_XML_SAX_ATTRIBUTES__
+#define __ORG_XML_SAX_ATTRIBUTES__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_xml_sax_Attributes_getLength__ 8
+#define XMLVM_ITABLE_IDX_org_xml_sax_Attributes_getURI___int 14
+#define XMLVM_ITABLE_IDX_org_xml_sax_Attributes_getLocalName___int 9
+#define XMLVM_ITABLE_IDX_org_xml_sax_Attributes_getQName___int 10
+#define XMLVM_ITABLE_IDX_org_xml_sax_Attributes_getType___int 11
+#define XMLVM_ITABLE_IDX_org_xml_sax_Attributes_getValue___int 15
+#define XMLVM_ITABLE_IDX_org_xml_sax_Attributes_getIndex___java_lang_String_java_lang_String 7
+#define XMLVM_ITABLE_IDX_org_xml_sax_Attributes_getIndex___java_lang_String 6
+#define XMLVM_ITABLE_IDX_org_xml_sax_Attributes_getType___java_lang_String_java_lang_String 13
+#define XMLVM_ITABLE_IDX_org_xml_sax_Attributes_getType___java_lang_String 12
+#define XMLVM_ITABLE_IDX_org_xml_sax_Attributes_getValue___java_lang_String_java_lang_String 17
+#define XMLVM_ITABLE_IDX_org_xml_sax_Attributes_getValue___java_lang_String 16
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+
+XMLVM_DEFINE_CLASS(org_xml_sax_Attributes, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_xml_sax_Attributes;
+extern JAVA_OBJECT __CLASS_org_xml_sax_Attributes_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_Attributes_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_Attributes_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_Attributes
+#define XMLVM_FORWARD_DECL_org_xml_sax_Attributes
+typedef struct org_xml_sax_Attributes org_xml_sax_Attributes;
+#endif
+
+void __INIT_org_xml_sax_Attributes();
+void __INIT_IMPL_org_xml_sax_Attributes();
+
+#endif

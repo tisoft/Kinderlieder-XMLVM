@@ -1,0 +1,42 @@
+#ifndef __ORG_W3C_DOM_TRAVERSAL_NODEITERATOR__
+#define __ORG_W3C_DOM_TRAVERSAL_NODEITERATOR__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_NodeIterator_getRoot__ 4
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_NodeIterator_getWhatToShow__ 5
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_NodeIterator_getFilter__ 3
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_NodeIterator_getExpandEntityReferences__ 2
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_NodeIterator_nextNode__ 6
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_NodeIterator_previousNode__ 7
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_NodeIterator_detach__ 1
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Node
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Node
+XMLVM_FORWARD_DECL(org_w3c_dom_Node)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_traversal_NodeFilter
+#define XMLVM_FORWARD_DECL_org_w3c_dom_traversal_NodeFilter
+XMLVM_FORWARD_DECL(org_w3c_dom_traversal_NodeFilter)
+#endif
+
+XMLVM_DEFINE_CLASS(org_w3c_dom_traversal_NodeIterator, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_w3c_dom_traversal_NodeIterator;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_traversal_NodeIterator_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_traversal_NodeIterator_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_traversal_NodeIterator_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_traversal_NodeIterator
+#define XMLVM_FORWARD_DECL_org_w3c_dom_traversal_NodeIterator
+typedef struct org_w3c_dom_traversal_NodeIterator org_w3c_dom_traversal_NodeIterator;
+#endif
+
+void __INIT_org_w3c_dom_traversal_NodeIterator();
+void __INIT_IMPL_org_w3c_dom_traversal_NodeIterator();
+
+#endif

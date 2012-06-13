@@ -1,0 +1,324 @@
+#ifndef __JAVA_NET_URLCONNECTION__
+#define __JAVA_NET_URLCONNECTION__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_net_URLConnection 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_io_InputStream
+#define XMLVM_FORWARD_DECL_java_io_InputStream
+XMLVM_FORWARD_DECL(java_io_InputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_OutputStream
+#define XMLVM_FORWARD_DECL_java_io_OutputStream
+XMLVM_FORWARD_DECL(java_io_OutputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Character
+#define XMLVM_FORWARD_DECL_java_lang_Character
+XMLVM_FORWARD_DECL(java_lang_Character)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_ClassLoader
+#define XMLVM_FORWARD_DECL_java_lang_ClassLoader
+XMLVM_FORWARD_DECL(java_lang_ClassLoader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_ClassNotFoundException
+#define XMLVM_FORWARD_DECL_java_lang_ClassNotFoundException
+XMLVM_FORWARD_DECL(java_lang_ClassNotFoundException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Error
+#define XMLVM_FORWARD_DECL_java_lang_Error
+XMLVM_FORWARD_DECL(java_lang_Error)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Exception
+#define XMLVM_FORWARD_DECL_java_lang_Exception
+XMLVM_FORWARD_DECL(java_lang_Exception)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalAccessError
+#define XMLVM_FORWARD_DECL_java_lang_IllegalAccessError
+XMLVM_FORWARD_DECL(java_lang_IllegalAccessError)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalAccessException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalAccessException
+XMLVM_FORWARD_DECL(java_lang_IllegalAccessException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+XMLVM_FORWARD_DECL(java_lang_IllegalArgumentException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+XMLVM_FORWARD_DECL(java_lang_IllegalStateException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_InstantiationException
+#define XMLVM_FORWARD_DECL_java_lang_InstantiationException
+XMLVM_FORWARD_DECL(java_lang_InstantiationException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Integer
+#define XMLVM_FORWARD_DECL_java_lang_Integer
+XMLVM_FORWARD_DECL(java_lang_Integer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NullPointerException
+#define XMLVM_FORWARD_DECL_java_lang_NullPointerException
+XMLVM_FORWARD_DECL(java_lang_NullPointerException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NumberFormatException
+#define XMLVM_FORWARD_DECL_java_lang_NumberFormatException
+XMLVM_FORWARD_DECL(java_lang_NumberFormatException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_SecurityManager
+#define XMLVM_FORWARD_DECL_java_lang_SecurityManager
+XMLVM_FORWARD_DECL(java_lang_SecurityManager)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_System
+#define XMLVM_FORWARD_DECL_java_lang_System
+XMLVM_FORWARD_DECL(java_lang_System)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Throwable
+#define XMLVM_FORWARD_DECL_java_lang_Throwable
+XMLVM_FORWARD_DECL(java_lang_Throwable)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_ContentHandler
+#define XMLVM_FORWARD_DECL_java_net_ContentHandler
+XMLVM_FORWARD_DECL(java_net_ContentHandler)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_ContentHandlerFactory
+#define XMLVM_FORWARD_DECL_java_net_ContentHandlerFactory
+XMLVM_FORWARD_DECL(java_net_ContentHandlerFactory)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_FileNameMap
+#define XMLVM_FORWARD_DECL_java_net_FileNameMap
+XMLVM_FORWARD_DECL(java_net_FileNameMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_URL
+#define XMLVM_FORWARD_DECL_java_net_URL
+XMLVM_FORWARD_DECL(java_net_URL)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_URLConnection_1
+#define XMLVM_FORWARD_DECL_java_net_URLConnection_1
+XMLVM_FORWARD_DECL(java_net_URLConnection_1)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_URLConnection_DefaultContentHandler
+#define XMLVM_FORWARD_DECL_java_net_URLConnection_DefaultContentHandler
+XMLVM_FORWARD_DECL(java_net_URLConnection_DefaultContentHandler)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_UnknownServiceException
+#define XMLVM_FORWARD_DECL_java_net_UnknownServiceException
+XMLVM_FORWARD_DECL(java_net_UnknownServiceException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_security_AccessController
+#define XMLVM_FORWARD_DECL_java_security_AccessController
+XMLVM_FORWARD_DECL(java_security_AccessController)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_security_Permission
+#define XMLVM_FORWARD_DECL_java_security_Permission
+XMLVM_FORWARD_DECL(java_security_Permission)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ArrayList
+#define XMLVM_FORWARD_DECL_java_util_ArrayList
+XMLVM_FORWARD_DECL(java_util_ArrayList)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Collections
+#define XMLVM_FORWARD_DECL_java_util_Collections
+XMLVM_FORWARD_DECL(java_util_Collections)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Date
+#define XMLVM_FORWARD_DECL_java_util_Date
+XMLVM_FORWARD_DECL(java_util_Date)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_HashMap
+#define XMLVM_FORWARD_DECL_java_util_HashMap
+XMLVM_FORWARD_DECL(java_util_HashMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Hashtable
+#define XMLVM_FORWARD_DECL_java_util_Hashtable
+XMLVM_FORWARD_DECL(java_util_Hashtable)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Iterator
+#define XMLVM_FORWARD_DECL_java_util_Iterator
+XMLVM_FORWARD_DECL(java_util_Iterator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_List
+#define XMLVM_FORWARD_DECL_java_util_List
+XMLVM_FORWARD_DECL(java_util_List)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Map
+#define XMLVM_FORWARD_DECL_java_util_Map
+XMLVM_FORWARD_DECL(java_util_Map)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Set
+#define XMLVM_FORWARD_DECL_java_util_Set
+XMLVM_FORWARD_DECL(java_util_Set)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_StringTokenizer
+#define XMLVM_FORWARD_DECL_java_util_StringTokenizer
+XMLVM_FORWARD_DECL(java_util_StringTokenizer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_internal_nls_Messages
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_internal_nls_Messages
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_internal_nls_Messages)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_PriviAction
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_PriviAction
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_util_PriviAction)
+#endif
+// Class declarations for java.net.URLConnection
+XMLVM_DEFINE_CLASS(java_net_URLConnection, 20, XMLVM_ITABLE_SIZE_java_net_URLConnection)
+
+extern JAVA_OBJECT __CLASS_java_net_URLConnection;
+extern JAVA_OBJECT __CLASS_java_net_URLConnection_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_net_URLConnection_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_net_URLConnection_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_net_URLConnection
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_net_URLConnection \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT url_; \
+        JAVA_OBJECT contentType_; \
+        JAVA_OBJECT defaultHandler_; \
+        JAVA_LONG lastModified_; \
+        JAVA_LONG ifModifiedSince_; \
+        JAVA_BOOLEAN useCaches_; \
+        JAVA_BOOLEAN connected_; \
+        JAVA_BOOLEAN doOutput_; \
+        JAVA_BOOLEAN doInput_; \
+        JAVA_BOOLEAN allowUserInteraction_; \
+        JAVA_INT readTimeout_; \
+        JAVA_INT connectTimeout_; \
+        JAVA_OBJECT requestProperties_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_net_URLConnection \
+    } java_net_URLConnection
+
+struct java_net_URLConnection {
+    __TIB_DEFINITION_java_net_URLConnection* tib;
+    struct {
+        __INSTANCE_FIELDS_java_net_URLConnection;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_net_URLConnection
+#define XMLVM_FORWARD_DECL_java_net_URLConnection
+typedef struct java_net_URLConnection java_net_URLConnection;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_net_URLConnection 20
+#define XMLVM_VTABLE_IDX_java_net_URLConnection_connect__ 7
+#define XMLVM_VTABLE_IDX_java_net_URLConnection_getHeaderField___int 10
+#define XMLVM_VTABLE_IDX_java_net_URLConnection_getHeaderFields__ 12
+#define XMLVM_VTABLE_IDX_java_net_URLConnection_getRequestProperties__ 16
+#define XMLVM_VTABLE_IDX_java_net_URLConnection_addRequestProperty___java_lang_String_java_lang_String 6
+#define XMLVM_VTABLE_IDX_java_net_URLConnection_getHeaderField___java_lang_String 11
+#define XMLVM_VTABLE_IDX_java_net_URLConnection_getHeaderFieldDate___java_lang_String_long 8
+#define XMLVM_VTABLE_IDX_java_net_URLConnection_getHeaderFieldKey___int 9
+#define XMLVM_VTABLE_IDX_java_net_URLConnection_getInputStream__ 13
+#define XMLVM_VTABLE_IDX_java_net_URLConnection_getOutputStream__ 14
+#define XMLVM_VTABLE_IDX_java_net_URLConnection_getPermission__ 15
+#define XMLVM_VTABLE_IDX_java_net_URLConnection_getRequestProperty___java_lang_String 17
+#define XMLVM_VTABLE_IDX_java_net_URLConnection_setIfModifiedSince___long 18
+#define XMLVM_VTABLE_IDX_java_net_URLConnection_setRequestProperty___java_lang_String_java_lang_String 19
+#define XMLVM_VTABLE_IDX_java_net_URLConnection_toString__ 5
+
+void __INIT_java_net_URLConnection();
+void __INIT_IMPL_java_net_URLConnection();
+void __DELETE_java_net_URLConnection(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_net_URLConnection(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_net_URLConnection();
+JAVA_OBJECT __NEW_INSTANCE_java_net_URLConnection();
+JAVA_BOOLEAN java_net_URLConnection_GET_defaultAllowUserInteraction();
+void java_net_URLConnection_PUT_defaultAllowUserInteraction(JAVA_BOOLEAN v);
+JAVA_BOOLEAN java_net_URLConnection_GET_defaultUseCaches();
+void java_net_URLConnection_PUT_defaultUseCaches(JAVA_BOOLEAN v);
+JAVA_OBJECT java_net_URLConnection_GET_contentHandlerFactory();
+void java_net_URLConnection_PUT_contentHandlerFactory(JAVA_OBJECT v);
+JAVA_OBJECT java_net_URLConnection_GET_contentHandlers();
+void java_net_URLConnection_PUT_contentHandlers(JAVA_OBJECT v);
+JAVA_OBJECT java_net_URLConnection_GET_fileNameMap();
+void java_net_URLConnection_PUT_fileNameMap(JAVA_OBJECT v);
+void java_net_URLConnection___CLINIT_();
+void java_net_URLConnection___INIT____java_net_URL(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 7
+void java_net_URLConnection_connect__(JAVA_OBJECT me);
+JAVA_BOOLEAN java_net_URLConnection_getAllowUserInteraction__(JAVA_OBJECT me);
+JAVA_OBJECT java_net_URLConnection_getContent__(JAVA_OBJECT me);
+JAVA_OBJECT java_net_URLConnection_getContent___java_lang_Class_1ARRAY(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT java_net_URLConnection_getContentEncoding__(JAVA_OBJECT me);
+JAVA_OBJECT java_net_URLConnection_getContentHandler___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_INT java_net_URLConnection_getContentLength__(JAVA_OBJECT me);
+JAVA_OBJECT java_net_URLConnection_getContentType__(JAVA_OBJECT me);
+JAVA_LONG java_net_URLConnection_getDate__(JAVA_OBJECT me);
+JAVA_BOOLEAN java_net_URLConnection_getDefaultAllowUserInteraction__();
+JAVA_OBJECT java_net_URLConnection_getDefaultRequestProperty___java_lang_String(JAVA_OBJECT n1);
+JAVA_BOOLEAN java_net_URLConnection_getDefaultUseCaches__(JAVA_OBJECT me);
+JAVA_BOOLEAN java_net_URLConnection_getDoInput__(JAVA_OBJECT me);
+JAVA_BOOLEAN java_net_URLConnection_getDoOutput__(JAVA_OBJECT me);
+JAVA_LONG java_net_URLConnection_getExpiration__(JAVA_OBJECT me);
+JAVA_OBJECT java_net_URLConnection_getFileNameMap__();
+// Vtable index: 10
+JAVA_OBJECT java_net_URLConnection_getHeaderField___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 12
+JAVA_OBJECT java_net_URLConnection_getHeaderFields__(JAVA_OBJECT me);
+// Vtable index: 16
+JAVA_OBJECT java_net_URLConnection_getRequestProperties__(JAVA_OBJECT me);
+// Vtable index: 6
+void java_net_URLConnection_addRequestProperty___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 11
+JAVA_OBJECT java_net_URLConnection_getHeaderField___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 8
+JAVA_LONG java_net_URLConnection_getHeaderFieldDate___java_lang_String_long(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_LONG n2);
+JAVA_INT java_net_URLConnection_getHeaderFieldInt___java_lang_String_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2);
+// Vtable index: 9
+JAVA_OBJECT java_net_URLConnection_getHeaderFieldKey___int(JAVA_OBJECT me, JAVA_INT n1);
+JAVA_LONG java_net_URLConnection_getIfModifiedSince__(JAVA_OBJECT me);
+// Vtable index: 13
+JAVA_OBJECT java_net_URLConnection_getInputStream__(JAVA_OBJECT me);
+JAVA_LONG java_net_URLConnection_getLastModified__(JAVA_OBJECT me);
+// Vtable index: 14
+JAVA_OBJECT java_net_URLConnection_getOutputStream__(JAVA_OBJECT me);
+// Vtable index: 15
+JAVA_OBJECT java_net_URLConnection_getPermission__(JAVA_OBJECT me);
+// Vtable index: 17
+JAVA_OBJECT java_net_URLConnection_getRequestProperty___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT java_net_URLConnection_getURL__(JAVA_OBJECT me);
+JAVA_BOOLEAN java_net_URLConnection_getUseCaches__(JAVA_OBJECT me);
+JAVA_OBJECT java_net_URLConnection_guessContentTypeFromName___java_lang_String(JAVA_OBJECT n1);
+JAVA_OBJECT java_net_URLConnection_guessContentTypeFromStream___java_io_InputStream(JAVA_OBJECT n1);
+JAVA_OBJECT java_net_URLConnection_parseTypeString___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_net_URLConnection_setAllowUserInteraction___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+void java_net_URLConnection_setContentHandlerFactory___java_net_ContentHandlerFactory(JAVA_OBJECT n1);
+void java_net_URLConnection_setDefaultAllowUserInteraction___boolean(JAVA_BOOLEAN n1);
+void java_net_URLConnection_setDefaultRequestProperty___java_lang_String_java_lang_String(JAVA_OBJECT n1, JAVA_OBJECT n2);
+void java_net_URLConnection_setDefaultUseCaches___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+void java_net_URLConnection_setDoInput___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+void java_net_URLConnection_setDoOutput___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+void java_net_URLConnection_setFileNameMap___java_net_FileNameMap(JAVA_OBJECT n1);
+// Vtable index: 18
+void java_net_URLConnection_setIfModifiedSince___long(JAVA_OBJECT me, JAVA_LONG n1);
+// Vtable index: 19
+void java_net_URLConnection_setRequestProperty___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+void java_net_URLConnection_setUseCaches___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+void java_net_URLConnection_setConnectTimeout___int(JAVA_OBJECT me, JAVA_INT n1);
+JAVA_INT java_net_URLConnection_getConnectTimeout__(JAVA_OBJECT me);
+void java_net_URLConnection_setReadTimeout___int(JAVA_OBJECT me, JAVA_INT n1);
+JAVA_INT java_net_URLConnection_getReadTimeout__(JAVA_OBJECT me);
+// Vtable index: 5
+JAVA_OBJECT java_net_URLConnection_toString__(JAVA_OBJECT me);
+
+#endif

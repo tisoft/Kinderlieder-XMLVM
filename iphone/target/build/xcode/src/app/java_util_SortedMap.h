@@ -1,0 +1,52 @@
+#ifndef __JAVA_UTIL_SORTEDMAP__
+#define __JAVA_UTIL_SORTEDMAP__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_java_util_SortedMap_comparator__ 53
+#define XMLVM_ITABLE_IDX_java_util_SortedMap_firstKey__ 58
+#define XMLVM_ITABLE_IDX_java_util_SortedMap_headMap___java_lang_Object 61
+#define XMLVM_ITABLE_IDX_java_util_SortedMap_lastKey__ 64
+#define XMLVM_ITABLE_IDX_java_util_SortedMap_subMap___java_lang_Object_java_lang_Object 69
+#define XMLVM_ITABLE_IDX_java_util_SortedMap_tailMap___java_lang_Object 70
+#define XMLVM_ITABLE_IDX_java_util_SortedMap_clear__ 52
+#define XMLVM_ITABLE_IDX_java_util_SortedMap_containsKey___java_lang_Object 54
+#define XMLVM_ITABLE_IDX_java_util_SortedMap_containsValue___java_lang_Object 55
+#define XMLVM_ITABLE_IDX_java_util_SortedMap_entrySet__ 56
+#define XMLVM_ITABLE_IDX_java_util_SortedMap_equals___java_lang_Object 57
+#define XMLVM_ITABLE_IDX_java_util_SortedMap_get___java_lang_Object 59
+#define XMLVM_ITABLE_IDX_java_util_SortedMap_hashCode__ 60
+#define XMLVM_ITABLE_IDX_java_util_SortedMap_isEmpty__ 62
+#define XMLVM_ITABLE_IDX_java_util_SortedMap_keySet__ 63
+#define XMLVM_ITABLE_IDX_java_util_SortedMap_putAll___java_util_Map 65
+#define XMLVM_ITABLE_IDX_java_util_SortedMap_put___java_lang_Object_java_lang_Object 66
+#define XMLVM_ITABLE_IDX_java_util_SortedMap_remove___java_lang_Object 67
+#define XMLVM_ITABLE_IDX_java_util_SortedMap_size__ 68
+#define XMLVM_ITABLE_IDX_java_util_SortedMap_values__ 71
+// Implemented interfaces:
+#include "java_util_Map.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_util_Comparator
+#define XMLVM_FORWARD_DECL_java_util_Comparator
+XMLVM_FORWARD_DECL(java_util_Comparator)
+#endif
+
+XMLVM_DEFINE_CLASS(java_util_SortedMap, 0, 0)
+
+extern JAVA_OBJECT __CLASS_java_util_SortedMap;
+extern JAVA_OBJECT __CLASS_java_util_SortedMap_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_SortedMap_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_SortedMap_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_java_util_SortedMap
+#define XMLVM_FORWARD_DECL_java_util_SortedMap
+typedef struct java_util_SortedMap java_util_SortedMap;
+#endif
+
+void __INIT_java_util_SortedMap();
+void __INIT_IMPL_java_util_SortedMap();
+
+#endif

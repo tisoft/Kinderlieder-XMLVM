@@ -1,0 +1,98 @@
+#ifndef __ORG_APACHE_HARMONY_LUNI_UTIL_INET6UTIL__
+#define __ORG_APACHE_HARMONY_LUNI_UTIL_INET6UTIL__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_apache_harmony_luni_util_Inet6Util 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Character
+#define XMLVM_FORWARD_DECL_java_lang_Character
+XMLVM_FORWARD_DECL(java_lang_Character)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Integer
+#define XMLVM_FORWARD_DECL_java_lang_Integer
+XMLVM_FORWARD_DECL(java_lang_Integer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Long
+#define XMLVM_FORWARD_DECL_java_lang_Long
+XMLVM_FORWARD_DECL(java_lang_Long)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NumberFormatException
+#define XMLVM_FORWARD_DECL_java_lang_NumberFormatException
+XMLVM_FORWARD_DECL(java_lang_NumberFormatException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ArrayList
+#define XMLVM_FORWARD_DECL_java_util_ArrayList
+XMLVM_FORWARD_DECL(java_util_ArrayList)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_StringTokenizer
+#define XMLVM_FORWARD_DECL_java_util_StringTokenizer
+XMLVM_FORWARD_DECL(java_util_StringTokenizer)
+#endif
+// Class declarations for org.apache.harmony.luni.util.Inet6Util
+XMLVM_DEFINE_CLASS(org_apache_harmony_luni_util_Inet6Util, 6, XMLVM_ITABLE_SIZE_org_apache_harmony_luni_util_Inet6Util)
+
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_Inet6Util;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_Inet6Util_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_Inet6Util_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_Inet6Util_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_util_Inet6Util
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_apache_harmony_luni_util_Inet6Util \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_util_Inet6Util \
+    } org_apache_harmony_luni_util_Inet6Util
+
+struct org_apache_harmony_luni_util_Inet6Util {
+    __TIB_DEFINITION_org_apache_harmony_luni_util_Inet6Util* tib;
+    struct {
+        __INSTANCE_FIELDS_org_apache_harmony_luni_util_Inet6Util;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_Inet6Util
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_Inet6Util
+typedef struct org_apache_harmony_luni_util_Inet6Util org_apache_harmony_luni_util_Inet6Util;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_apache_harmony_luni_util_Inet6Util 6
+
+void __INIT_org_apache_harmony_luni_util_Inet6Util();
+void __INIT_IMPL_org_apache_harmony_luni_util_Inet6Util();
+void __DELETE_org_apache_harmony_luni_util_Inet6Util(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_apache_harmony_luni_util_Inet6Util(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_apache_harmony_luni_util_Inet6Util();
+JAVA_OBJECT __NEW_INSTANCE_org_apache_harmony_luni_util_Inet6Util();
+JAVA_OBJECT org_apache_harmony_luni_util_Inet6Util_GET_hexCharacters();
+void org_apache_harmony_luni_util_Inet6Util_PUT_hexCharacters(JAVA_OBJECT v);
+void org_apache_harmony_luni_util_Inet6Util___CLINIT_();
+void org_apache_harmony_luni_util_Inet6Util___INIT___(JAVA_OBJECT me);
+JAVA_OBJECT org_apache_harmony_luni_util_Inet6Util_createByteArrayFromIPAddressString___java_lang_String(JAVA_OBJECT n1);
+JAVA_OBJECT org_apache_harmony_luni_util_Inet6Util_createIPAddrStringFromByteArray___byte_1ARRAY(JAVA_OBJECT n1);
+void org_apache_harmony_luni_util_Inet6Util_convertToBytes___java_lang_String_byte_1ARRAY_int(JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_INT n3);
+JAVA_INT org_apache_harmony_luni_util_Inet6Util_getIntValue___char(JAVA_CHAR n1);
+JAVA_BOOLEAN org_apache_harmony_luni_util_Inet6Util_isIPv4MappedAddress___byte_1ARRAY(JAVA_OBJECT n1);
+JAVA_INT org_apache_harmony_luni_util_Inet6Util_bytesToInt___byte_1ARRAY_int(JAVA_OBJECT n1, JAVA_INT n2);
+JAVA_OBJECT org_apache_harmony_luni_util_Inet6Util_addressToString___int(JAVA_INT n1);
+JAVA_BOOLEAN org_apache_harmony_luni_util_Inet6Util_isIP6AddressInFullForm___java_lang_String(JAVA_OBJECT n1);
+JAVA_BOOLEAN org_apache_harmony_luni_util_Inet6Util_isValidIP6Address___java_lang_String(JAVA_OBJECT n1);
+JAVA_BOOLEAN org_apache_harmony_luni_util_Inet6Util_isValidIP4Word___java_lang_String(JAVA_OBJECT n1);
+JAVA_BOOLEAN org_apache_harmony_luni_util_Inet6Util_isValidHexChar___char(JAVA_CHAR n1);
+JAVA_BOOLEAN org_apache_harmony_luni_util_Inet6Util_isValidIPV4Address___java_lang_String(JAVA_OBJECT n1);
+
+#endif

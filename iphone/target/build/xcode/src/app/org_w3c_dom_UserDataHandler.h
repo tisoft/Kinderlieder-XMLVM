@@ -1,0 +1,46 @@
+#ifndef __ORG_W3C_DOM_USERDATAHANDLER__
+#define __ORG_W3C_DOM_USERDATAHANDLER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_w3c_dom_UserDataHandler_handle___short_java_lang_String_java_lang_Object_org_w3c_dom_Node_org_w3c_dom_Node 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Node
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Node
+XMLVM_FORWARD_DECL(org_w3c_dom_Node)
+#endif
+
+XMLVM_DEFINE_CLASS(org_w3c_dom_UserDataHandler, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_w3c_dom_UserDataHandler;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_UserDataHandler_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_UserDataHandler_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_UserDataHandler_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_UserDataHandler
+#define XMLVM_FORWARD_DECL_org_w3c_dom_UserDataHandler
+typedef struct org_w3c_dom_UserDataHandler org_w3c_dom_UserDataHandler;
+#endif
+
+void __INIT_org_w3c_dom_UserDataHandler();
+void __INIT_IMPL_org_w3c_dom_UserDataHandler();
+JAVA_SHORT org_w3c_dom_UserDataHandler_GET_NODE_CLONED();
+void org_w3c_dom_UserDataHandler_PUT_NODE_CLONED(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_UserDataHandler_GET_NODE_IMPORTED();
+void org_w3c_dom_UserDataHandler_PUT_NODE_IMPORTED(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_UserDataHandler_GET_NODE_DELETED();
+void org_w3c_dom_UserDataHandler_PUT_NODE_DELETED(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_UserDataHandler_GET_NODE_RENAMED();
+void org_w3c_dom_UserDataHandler_PUT_NODE_RENAMED(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_UserDataHandler_GET_NODE_ADOPTED();
+void org_w3c_dom_UserDataHandler_PUT_NODE_ADOPTED(JAVA_SHORT v);
+
+#endif

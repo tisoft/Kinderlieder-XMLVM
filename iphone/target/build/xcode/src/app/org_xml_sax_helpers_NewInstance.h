@@ -1,0 +1,89 @@
+#ifndef __ORG_XML_SAX_HELPERS_NEWINSTANCE__
+#define __ORG_XML_SAX_HELPERS_NEWINSTANCE__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_xml_sax_helpers_NewInstance 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_ClassLoader
+#define XMLVM_FORWARD_DECL_java_lang_ClassLoader
+XMLVM_FORWARD_DECL(java_lang_ClassLoader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalAccessException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalAccessException
+XMLVM_FORWARD_DECL(java_lang_IllegalAccessException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NoSuchMethodException
+#define XMLVM_FORWARD_DECL_java_lang_NoSuchMethodException
+XMLVM_FORWARD_DECL(java_lang_NoSuchMethodException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Thread
+#define XMLVM_FORWARD_DECL_java_lang_Thread
+XMLVM_FORWARD_DECL(java_lang_Thread)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_UnknownError
+#define XMLVM_FORWARD_DECL_java_lang_UnknownError
+XMLVM_FORWARD_DECL(java_lang_UnknownError)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_InvocationTargetException
+#define XMLVM_FORWARD_DECL_java_lang_reflect_InvocationTargetException
+XMLVM_FORWARD_DECL(java_lang_reflect_InvocationTargetException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Method
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Method
+XMLVM_FORWARD_DECL(java_lang_reflect_Method)
+#endif
+// Class declarations for org.xml.sax.helpers.NewInstance
+XMLVM_DEFINE_CLASS(org_xml_sax_helpers_NewInstance, 6, XMLVM_ITABLE_SIZE_org_xml_sax_helpers_NewInstance)
+
+extern JAVA_OBJECT __CLASS_org_xml_sax_helpers_NewInstance;
+extern JAVA_OBJECT __CLASS_org_xml_sax_helpers_NewInstance_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_helpers_NewInstance_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_helpers_NewInstance_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_xml_sax_helpers_NewInstance
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_xml_sax_helpers_NewInstance \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_org_xml_sax_helpers_NewInstance \
+    } org_xml_sax_helpers_NewInstance
+
+struct org_xml_sax_helpers_NewInstance {
+    __TIB_DEFINITION_org_xml_sax_helpers_NewInstance* tib;
+    struct {
+        __INSTANCE_FIELDS_org_xml_sax_helpers_NewInstance;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_helpers_NewInstance
+#define XMLVM_FORWARD_DECL_org_xml_sax_helpers_NewInstance
+typedef struct org_xml_sax_helpers_NewInstance org_xml_sax_helpers_NewInstance;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_xml_sax_helpers_NewInstance 6
+
+void __INIT_org_xml_sax_helpers_NewInstance();
+void __INIT_IMPL_org_xml_sax_helpers_NewInstance();
+void __DELETE_org_xml_sax_helpers_NewInstance(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_xml_sax_helpers_NewInstance(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_xml_sax_helpers_NewInstance();
+JAVA_OBJECT __NEW_INSTANCE_org_xml_sax_helpers_NewInstance();
+void org_xml_sax_helpers_NewInstance___INIT___(JAVA_OBJECT me);
+JAVA_OBJECT org_xml_sax_helpers_NewInstance_newInstance___java_lang_ClassLoader_java_lang_String(JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT org_xml_sax_helpers_NewInstance_getClassLoader__();
+
+#endif

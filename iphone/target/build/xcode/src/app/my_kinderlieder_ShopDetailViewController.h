@@ -1,0 +1,160 @@
+#ifndef __MY_KINDERLIEDER_SHOPDETAILVIEWCONTROLLER__
+#define __MY_KINDERLIEDER_SHOPDETAILVIEWCONTROLLER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_my_kinderlieder_ShopDetailViewController 0
+// Implemented interfaces:
+// Super Class:
+#include "my_kinderlieder_RotatingViewController.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Runnable
+#define XMLVM_FORWARD_DECL_java_lang_Runnable
+XMLVM_FORWARD_DECL(java_lang_Runnable)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Thread
+#define XMLVM_FORWARD_DECL_java_lang_Thread
+XMLVM_FORWARD_DECL(java_lang_Thread)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ArrayList
+#define XMLVM_FORWARD_DECL_java_util_ArrayList
+XMLVM_FORWARD_DECL(java_util_ArrayList)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Arrays
+#define XMLVM_FORWARD_DECL_java_util_Arrays
+XMLVM_FORWARD_DECL(java_util_Arrays)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_HashMap
+#define XMLVM_FORWARD_DECL_java_util_HashMap
+XMLVM_FORWARD_DECL(java_util_HashMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_List
+#define XMLVM_FORWARD_DECL_java_util_List
+XMLVM_FORWARD_DECL(java_util_List)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Map
+#define XMLVM_FORWARD_DECL_java_util_Map
+XMLVM_FORWARD_DECL(java_util_Map)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_FreeProduct
+#define XMLVM_FORWARD_DECL_my_kinderlieder_FreeProduct
+XMLVM_FORWARD_DECL(my_kinderlieder_FreeProduct)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_InAppProduct
+#define XMLVM_FORWARD_DECL_my_kinderlieder_InAppProduct
+XMLVM_FORWARD_DECL(my_kinderlieder_InAppProduct)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_Product
+#define XMLVM_FORWARD_DECL_my_kinderlieder_Product
+XMLVM_FORWARD_DECL(my_kinderlieder_Product)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_Product_State
+#define XMLVM_FORWARD_DECL_my_kinderlieder_Product_State
+XMLVM_FORWARD_DECL(my_kinderlieder_Product_State)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_ShopDetailViewController_1
+#define XMLVM_FORWARD_DECL_my_kinderlieder_ShopDetailViewController_1
+XMLVM_FORWARD_DECL(my_kinderlieder_ShopDetailViewController_1)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_ShopDetailViewController_2
+#define XMLVM_FORWARD_DECL_my_kinderlieder_ShopDetailViewController_2
+XMLVM_FORWARD_DECL(my_kinderlieder_ShopDetailViewController_2)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_ShopService
+#define XMLVM_FORWARD_DECL_my_kinderlieder_ShopService
+XMLVM_FORWARD_DECL(my_kinderlieder_ShopService)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_CGRect
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_CGRect
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_CGRect)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSURL
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSURL
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_NSURL)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSURLRequest
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSURLRequest
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_NSURLRequest)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_SKProduct
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_SKProduct
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_SKProduct)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIBarButtonItem
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIBarButtonItem
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_UIBarButtonItem)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UINavigationController
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UINavigationController
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_UINavigationController)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIWebView
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIWebView
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_UIWebView)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIWindow
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIWindow
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_UIWindow)
+#endif
+// Class declarations for my.kinderlieder.ShopDetailViewController
+XMLVM_DEFINE_CLASS(my_kinderlieder_ShopDetailViewController, 12, XMLVM_ITABLE_SIZE_my_kinderlieder_ShopDetailViewController)
+
+extern JAVA_OBJECT __CLASS_my_kinderlieder_ShopDetailViewController;
+extern JAVA_OBJECT __CLASS_my_kinderlieder_ShopDetailViewController_1ARRAY;
+extern JAVA_OBJECT __CLASS_my_kinderlieder_ShopDetailViewController_2ARRAY;
+extern JAVA_OBJECT __CLASS_my_kinderlieder_ShopDetailViewController_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_my_kinderlieder_ShopDetailViewController
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_my_kinderlieder_ShopDetailViewController \
+    __INSTANCE_FIELDS_my_kinderlieder_RotatingViewController; \
+    struct { \
+        JAVA_OBJECT product_; \
+        JAVA_OBJECT requests_; \
+        JAVA_OBJECT infoView_; \
+        __ADDITIONAL_INSTANCE_FIELDS_my_kinderlieder_ShopDetailViewController \
+    } my_kinderlieder_ShopDetailViewController
+
+struct my_kinderlieder_ShopDetailViewController {
+    __TIB_DEFINITION_my_kinderlieder_ShopDetailViewController* tib;
+    struct {
+        __INSTANCE_FIELDS_my_kinderlieder_ShopDetailViewController;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_ShopDetailViewController
+#define XMLVM_FORWARD_DECL_my_kinderlieder_ShopDetailViewController
+typedef struct my_kinderlieder_ShopDetailViewController my_kinderlieder_ShopDetailViewController;
+#endif
+
+#define XMLVM_VTABLE_SIZE_my_kinderlieder_ShopDetailViewController 12
+#define XMLVM_VTABLE_IDX_my_kinderlieder_ShopDetailViewController_shouldAutorotateToInterfaceOrientation___int 10
+
+void __INIT_my_kinderlieder_ShopDetailViewController();
+void __INIT_IMPL_my_kinderlieder_ShopDetailViewController();
+void __DELETE_my_kinderlieder_ShopDetailViewController(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_my_kinderlieder_ShopDetailViewController(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_my_kinderlieder_ShopDetailViewController();
+JAVA_OBJECT __NEW_INSTANCE_my_kinderlieder_ShopDetailViewController();
+void my_kinderlieder_ShopDetailViewController___INIT____org_xmlvm_iphone_UIWindow(JAVA_OBJECT me, JAVA_OBJECT n1);
+void my_kinderlieder_ShopDetailViewController_show___my_kinderlieder_Product(JAVA_OBJECT me, JAVA_OBJECT n1);
+void my_kinderlieder_ShopDetailViewController_click__(JAVA_OBJECT me);
+// Vtable index: 10
+JAVA_BOOLEAN my_kinderlieder_ShopDetailViewController_shouldAutorotateToInterfaceOrientation___int(JAVA_OBJECT me, JAVA_INT n1);
+void my_kinderlieder_ShopDetailViewController_access$000___my_kinderlieder_ShopDetailViewController(JAVA_OBJECT n1);
+
+#endif

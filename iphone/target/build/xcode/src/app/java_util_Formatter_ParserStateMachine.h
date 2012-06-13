@@ -1,0 +1,122 @@
+#ifndef __JAVA_UTIL_FORMATTER_PARSERSTATEMACHINE__
+#define __JAVA_UTIL_FORMATTER_PARSERSTATEMACHINE__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_Formatter_ParserStateMachine 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_CharSequence
+#define XMLVM_FORWARD_DECL_java_lang_CharSequence
+XMLVM_FORWARD_DECL(java_lang_CharSequence)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Character
+#define XMLVM_FORWARD_DECL_java_lang_Character
+XMLVM_FORWARD_DECL(java_lang_Character)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Integer
+#define XMLVM_FORWARD_DECL_java_lang_Integer
+XMLVM_FORWARD_DECL(java_lang_Integer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NumberFormatException
+#define XMLVM_FORWARD_DECL_java_lang_NumberFormatException
+XMLVM_FORWARD_DECL(java_lang_NumberFormatException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_CharBuffer
+#define XMLVM_FORWARD_DECL_java_nio_CharBuffer
+XMLVM_FORWARD_DECL(java_nio_CharBuffer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Formatter_FormatToken
+#define XMLVM_FORWARD_DECL_java_util_Formatter_FormatToken
+XMLVM_FORWARD_DECL(java_util_Formatter_FormatToken)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_MissingFormatArgumentException
+#define XMLVM_FORWARD_DECL_java_util_MissingFormatArgumentException
+XMLVM_FORWARD_DECL(java_util_MissingFormatArgumentException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_UnknownFormatConversionException
+#define XMLVM_FORWARD_DECL_java_util_UnknownFormatConversionException
+XMLVM_FORWARD_DECL(java_util_UnknownFormatConversionException)
+#endif
+// Class declarations for java.util.Formatter$ParserStateMachine
+XMLVM_DEFINE_CLASS(java_util_Formatter_ParserStateMachine, 6, XMLVM_ITABLE_SIZE_java_util_Formatter_ParserStateMachine)
+
+extern JAVA_OBJECT __CLASS_java_util_Formatter_ParserStateMachine;
+extern JAVA_OBJECT __CLASS_java_util_Formatter_ParserStateMachine_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_Formatter_ParserStateMachine_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_Formatter_ParserStateMachine_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_Formatter_ParserStateMachine
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_Formatter_ParserStateMachine \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT token_; \
+        JAVA_INT state_; \
+        JAVA_CHAR currentChar_; \
+        JAVA_OBJECT format_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_Formatter_ParserStateMachine \
+    } java_util_Formatter_ParserStateMachine
+
+struct java_util_Formatter_ParserStateMachine {
+    __TIB_DEFINITION_java_util_Formatter_ParserStateMachine* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_Formatter_ParserStateMachine;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_Formatter_ParserStateMachine
+#define XMLVM_FORWARD_DECL_java_util_Formatter_ParserStateMachine
+typedef struct java_util_Formatter_ParserStateMachine java_util_Formatter_ParserStateMachine;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_Formatter_ParserStateMachine 6
+
+void __INIT_java_util_Formatter_ParserStateMachine();
+void __INIT_IMPL_java_util_Formatter_ParserStateMachine();
+void __DELETE_java_util_Formatter_ParserStateMachine(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_Formatter_ParserStateMachine(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_Formatter_ParserStateMachine();
+JAVA_OBJECT __NEW_INSTANCE_java_util_Formatter_ParserStateMachine();
+JAVA_CHAR java_util_Formatter_ParserStateMachine_GET_EOS();
+void java_util_Formatter_ParserStateMachine_PUT_EOS(JAVA_CHAR v);
+JAVA_INT java_util_Formatter_ParserStateMachine_GET_EXIT_STATE();
+void java_util_Formatter_ParserStateMachine_PUT_EXIT_STATE(JAVA_INT v);
+JAVA_INT java_util_Formatter_ParserStateMachine_GET_ENTRY_STATE();
+void java_util_Formatter_ParserStateMachine_PUT_ENTRY_STATE(JAVA_INT v);
+JAVA_INT java_util_Formatter_ParserStateMachine_GET_START_CONVERSION_STATE();
+void java_util_Formatter_ParserStateMachine_PUT_START_CONVERSION_STATE(JAVA_INT v);
+JAVA_INT java_util_Formatter_ParserStateMachine_GET_FLAGS_STATE();
+void java_util_Formatter_ParserStateMachine_PUT_FLAGS_STATE(JAVA_INT v);
+JAVA_INT java_util_Formatter_ParserStateMachine_GET_WIDTH_STATE();
+void java_util_Formatter_ParserStateMachine_PUT_WIDTH_STATE(JAVA_INT v);
+JAVA_INT java_util_Formatter_ParserStateMachine_GET_PRECISION_STATE();
+void java_util_Formatter_ParserStateMachine_PUT_PRECISION_STATE(JAVA_INT v);
+JAVA_INT java_util_Formatter_ParserStateMachine_GET_CONVERSION_TYPE_STATE();
+void java_util_Formatter_ParserStateMachine_PUT_CONVERSION_TYPE_STATE(JAVA_INT v);
+JAVA_INT java_util_Formatter_ParserStateMachine_GET_SUFFIX_STATE();
+void java_util_Formatter_ParserStateMachine_PUT_SUFFIX_STATE(JAVA_INT v);
+void java_util_Formatter_ParserStateMachine___INIT____java_nio_CharBuffer(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_util_Formatter_ParserStateMachine_reset__(JAVA_OBJECT me);
+JAVA_OBJECT java_util_Formatter_ParserStateMachine_getNextFormatToken__(JAVA_OBJECT me);
+JAVA_CHAR java_util_Formatter_ParserStateMachine_getNextFormatChar__(JAVA_OBJECT me);
+JAVA_OBJECT java_util_Formatter_ParserStateMachine_getFormatString__(JAVA_OBJECT me);
+void java_util_Formatter_ParserStateMachine_process_ENTRY_STATE__(JAVA_OBJECT me);
+void java_util_Formatter_ParserStateMachine_process_START_CONVERSION_STATE__(JAVA_OBJECT me);
+void java_util_Formatter_ParserStateMachine_process_FlAGS_STATE__(JAVA_OBJECT me);
+void java_util_Formatter_ParserStateMachine_process_WIDTH_STATE__(JAVA_OBJECT me);
+void java_util_Formatter_ParserStateMachine_process_PRECISION_STATE__(JAVA_OBJECT me);
+void java_util_Formatter_ParserStateMachine_process_CONVERSION_TYPE_STATE__(JAVA_OBJECT me);
+void java_util_Formatter_ParserStateMachine_process_SUFFIX_STATE__(JAVA_OBJECT me);
+void java_util_Formatter_ParserStateMachine_process_EXIT_STATE__(JAVA_OBJECT me);
+JAVA_INT java_util_Formatter_ParserStateMachine_parseInt___java_nio_CharBuffer(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

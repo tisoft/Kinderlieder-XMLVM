@@ -1,0 +1,85 @@
+#ifndef __JAVA_UTIL_REGEX_COMPOSITEGROUPQUANTIFIERSET__
+#define __JAVA_UTIL_REGEX_COMPOSITEGROUPQUANTIFIERSET__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_regex_CompositeGroupQuantifierSet 0
+// Implemented interfaces:
+// Super Class:
+#include "java_util_regex_GroupQuantifierSet.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_CharSequence
+#define XMLVM_FORWARD_DECL_java_lang_CharSequence
+XMLVM_FORWARD_DECL(java_lang_CharSequence)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_regex_AbstractSet
+#define XMLVM_FORWARD_DECL_java_util_regex_AbstractSet
+XMLVM_FORWARD_DECL(java_util_regex_AbstractSet)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_regex_MatchResultImpl
+#define XMLVM_FORWARD_DECL_java_util_regex_MatchResultImpl
+XMLVM_FORWARD_DECL(java_util_regex_MatchResultImpl)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_regex_Quantifier
+#define XMLVM_FORWARD_DECL_java_util_regex_Quantifier
+XMLVM_FORWARD_DECL(java_util_regex_Quantifier)
+#endif
+// Class declarations for java.util.regex.CompositeGroupQuantifierSet
+XMLVM_DEFINE_CLASS(java_util_regex_CompositeGroupQuantifierSet, 18, XMLVM_ITABLE_SIZE_java_util_regex_CompositeGroupQuantifierSet)
+
+extern JAVA_OBJECT __CLASS_java_util_regex_CompositeGroupQuantifierSet;
+extern JAVA_OBJECT __CLASS_java_util_regex_CompositeGroupQuantifierSet_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_regex_CompositeGroupQuantifierSet_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_regex_CompositeGroupQuantifierSet_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_regex_CompositeGroupQuantifierSet
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_regex_CompositeGroupQuantifierSet \
+    __INSTANCE_FIELDS_java_util_regex_GroupQuantifierSet; \
+    struct { \
+        JAVA_OBJECT quantifier_; \
+        JAVA_INT setCounter_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_regex_CompositeGroupQuantifierSet \
+    } java_util_regex_CompositeGroupQuantifierSet
+
+struct java_util_regex_CompositeGroupQuantifierSet {
+    __TIB_DEFINITION_java_util_regex_CompositeGroupQuantifierSet* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_regex_CompositeGroupQuantifierSet;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_regex_CompositeGroupQuantifierSet
+#define XMLVM_FORWARD_DECL_java_util_regex_CompositeGroupQuantifierSet
+typedef struct java_util_regex_CompositeGroupQuantifierSet java_util_regex_CompositeGroupQuantifierSet;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_regex_CompositeGroupQuantifierSet 18
+#define XMLVM_VTABLE_IDX_java_util_regex_CompositeGroupQuantifierSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl 13
+#define XMLVM_VTABLE_IDX_java_util_regex_CompositeGroupQuantifierSet_getName__ 9
+
+void __INIT_java_util_regex_CompositeGroupQuantifierSet();
+void __INIT_IMPL_java_util_regex_CompositeGroupQuantifierSet();
+void __DELETE_java_util_regex_CompositeGroupQuantifierSet(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_regex_CompositeGroupQuantifierSet(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_regex_CompositeGroupQuantifierSet();
+JAVA_OBJECT __NEW_INSTANCE_java_util_regex_CompositeGroupQuantifierSet();
+void java_util_regex_CompositeGroupQuantifierSet___INIT____java_util_regex_Quantifier_java_util_regex_AbstractSet_java_util_regex_AbstractSet_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3, JAVA_INT n4, JAVA_INT n5);
+// Vtable index: 13
+JAVA_INT java_util_regex_CompositeGroupQuantifierSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl(JAVA_OBJECT me, JAVA_INT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+void java_util_regex_CompositeGroupQuantifierSet_reset__(JAVA_OBJECT me);
+// Vtable index: 9
+JAVA_OBJECT java_util_regex_CompositeGroupQuantifierSet_getName__(JAVA_OBJECT me);
+void java_util_regex_CompositeGroupQuantifierSet_setQuantifier___java_util_regex_Quantifier(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

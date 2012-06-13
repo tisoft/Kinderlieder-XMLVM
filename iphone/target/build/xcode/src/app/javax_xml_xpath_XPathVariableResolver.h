@@ -1,0 +1,32 @@
+#ifndef __JAVAX_XML_XPATH_XPATHVARIABLERESOLVER__
+#define __JAVAX_XML_XPATH_XPATHVARIABLERESOLVER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_javax_xml_xpath_XPathVariableResolver_resolveVariable___javax_xml_namespace_QName 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_javax_xml_namespace_QName
+#define XMLVM_FORWARD_DECL_javax_xml_namespace_QName
+XMLVM_FORWARD_DECL(javax_xml_namespace_QName)
+#endif
+
+XMLVM_DEFINE_CLASS(javax_xml_xpath_XPathVariableResolver, 0, 0)
+
+extern JAVA_OBJECT __CLASS_javax_xml_xpath_XPathVariableResolver;
+extern JAVA_OBJECT __CLASS_javax_xml_xpath_XPathVariableResolver_1ARRAY;
+extern JAVA_OBJECT __CLASS_javax_xml_xpath_XPathVariableResolver_2ARRAY;
+extern JAVA_OBJECT __CLASS_javax_xml_xpath_XPathVariableResolver_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_javax_xml_xpath_XPathVariableResolver
+#define XMLVM_FORWARD_DECL_javax_xml_xpath_XPathVariableResolver
+typedef struct javax_xml_xpath_XPathVariableResolver javax_xml_xpath_XPathVariableResolver;
+#endif
+
+void __INIT_javax_xml_xpath_XPathVariableResolver();
+void __INIT_IMPL_javax_xml_xpath_XPathVariableResolver();
+
+#endif

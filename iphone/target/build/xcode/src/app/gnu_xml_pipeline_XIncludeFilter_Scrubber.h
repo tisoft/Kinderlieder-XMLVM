@@ -1,0 +1,91 @@
+#ifndef __GNU_XML_PIPELINE_XINCLUDEFILTER_SCRUBBER__
+#define __GNU_XML_PIPELINE_XINCLUDEFILTER_SCRUBBER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_pipeline_XIncludeFilter_Scrubber 33
+// Implemented interfaces:
+// Super Class:
+#include "gnu_xml_pipeline_EventFilter.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_pipeline_XIncludeFilter
+#define XMLVM_FORWARD_DECL_gnu_xml_pipeline_XIncludeFilter
+XMLVM_FORWARD_DECL(gnu_xml_pipeline_XIncludeFilter)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_Locator
+#define XMLVM_FORWARD_DECL_org_xml_sax_Locator
+XMLVM_FORWARD_DECL(org_xml_sax_Locator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_SAXParseException
+#define XMLVM_FORWARD_DECL_org_xml_sax_SAXParseException
+XMLVM_FORWARD_DECL(org_xml_sax_SAXParseException)
+#endif
+// Class declarations for gnu.xml.pipeline.XIncludeFilter$Scrubber
+XMLVM_DEFINE_CLASS(gnu_xml_pipeline_XIncludeFilter_Scrubber, 34, XMLVM_ITABLE_SIZE_gnu_xml_pipeline_XIncludeFilter_Scrubber)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_XIncludeFilter_Scrubber;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_XIncludeFilter_Scrubber_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_XIncludeFilter_Scrubber_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_XIncludeFilter_Scrubber_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_pipeline_XIncludeFilter_Scrubber
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_pipeline_XIncludeFilter_Scrubber \
+    __INSTANCE_FIELDS_gnu_xml_pipeline_EventFilter; \
+    struct { \
+        JAVA_OBJECT this_0_; \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_pipeline_XIncludeFilter_Scrubber \
+    } gnu_xml_pipeline_XIncludeFilter_Scrubber
+
+struct gnu_xml_pipeline_XIncludeFilter_Scrubber {
+    __TIB_DEFINITION_gnu_xml_pipeline_XIncludeFilter_Scrubber* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_pipeline_XIncludeFilter_Scrubber;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_pipeline_XIncludeFilter_Scrubber
+#define XMLVM_FORWARD_DECL_gnu_xml_pipeline_XIncludeFilter_Scrubber
+typedef struct gnu_xml_pipeline_XIncludeFilter_Scrubber gnu_xml_pipeline_XIncludeFilter_Scrubber;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_pipeline_XIncludeFilter_Scrubber 34
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_Scrubber_setDocumentLocator___org_xml_sax_Locator 24
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_Scrubber_startDocument__ 29
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_Scrubber_endDocument__ 12
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_Scrubber_startDTD___java_lang_String_java_lang_String_java_lang_String 28
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_Scrubber_endDTD__ 11
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_Scrubber_skippedEntity___java_lang_String 26
+
+void __INIT_gnu_xml_pipeline_XIncludeFilter_Scrubber();
+void __INIT_IMPL_gnu_xml_pipeline_XIncludeFilter_Scrubber();
+void __DELETE_gnu_xml_pipeline_XIncludeFilter_Scrubber(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_pipeline_XIncludeFilter_Scrubber(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_pipeline_XIncludeFilter_Scrubber();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_pipeline_XIncludeFilter_Scrubber();
+void gnu_xml_pipeline_XIncludeFilter_Scrubber___INIT____gnu_xml_pipeline_XIncludeFilter_gnu_xml_pipeline_EventFilter(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 24
+void gnu_xml_pipeline_XIncludeFilter_Scrubber_setDocumentLocator___org_xml_sax_Locator(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 29
+void gnu_xml_pipeline_XIncludeFilter_Scrubber_startDocument__(JAVA_OBJECT me);
+// Vtable index: 12
+void gnu_xml_pipeline_XIncludeFilter_Scrubber_endDocument__(JAVA_OBJECT me);
+void gnu_xml_pipeline_XIncludeFilter_Scrubber_reject___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 28
+void gnu_xml_pipeline_XIncludeFilter_Scrubber_startDTD___java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 11
+void gnu_xml_pipeline_XIncludeFilter_Scrubber_endDTD__(JAVA_OBJECT me);
+// Vtable index: 26
+void gnu_xml_pipeline_XIncludeFilter_Scrubber_skippedEntity___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

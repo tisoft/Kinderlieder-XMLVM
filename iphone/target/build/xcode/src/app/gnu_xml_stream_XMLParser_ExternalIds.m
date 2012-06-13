@@ -1,0 +1,227 @@
+#include "xmlvm.h"
+#include "gnu_xml_stream_XMLParser.h"
+#include "java_lang_String.h"
+
+#include "gnu_xml_stream_XMLParser_ExternalIds.h"
+
+#define XMLVM_CURRENT_CLASS_NAME XMLParser_ExternalIds
+#define XMLVM_CURRENT_PKG_CLASS_NAME gnu_xml_stream_XMLParser_ExternalIds
+
+__TIB_DEFINITION_gnu_xml_stream_XMLParser_ExternalIds __TIB_gnu_xml_stream_XMLParser_ExternalIds = {
+    0, // classInitializationBegan
+    0, // classInitialized
+    -1, // initializerThreadId
+    __INIT_gnu_xml_stream_XMLParser_ExternalIds, // classInitializer
+    "gnu.xml.stream.XMLParser$ExternalIds", // className
+    "gnu.xml.stream", // package
+    JAVA_NULL, // enclosingClassName
+    JAVA_NULL, // enclosingMethodName
+    JAVA_NULL, // signature
+    (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_lang_Object, // extends
+    sizeof(gnu_xml_stream_XMLParser_ExternalIds), // sizeInstance
+    XMLVM_TYPE_CLASS};
+
+JAVA_OBJECT __CLASS_gnu_xml_stream_XMLParser_ExternalIds;
+JAVA_OBJECT __CLASS_gnu_xml_stream_XMLParser_ExternalIds_1ARRAY;
+JAVA_OBJECT __CLASS_gnu_xml_stream_XMLParser_ExternalIds_2ARRAY;
+JAVA_OBJECT __CLASS_gnu_xml_stream_XMLParser_ExternalIds_3ARRAY;
+//XMLVM_BEGIN_IMPLEMENTATION
+//XMLVM_END_IMPLEMENTATION
+
+
+#include "xmlvm-reflection.h"
+
+static XMLVM_FIELD_REFLECTION_DATA __field_reflection_data[] = {
+    {"publicId",
+    &__CLASS_java_lang_String,
+    0,
+    XMLVM_OFFSETOF(gnu_xml_stream_XMLParser_ExternalIds, fields.gnu_xml_stream_XMLParser_ExternalIds.publicId_),
+    0,
+    "",
+    JAVA_NULL},
+    {"systemId",
+    &__CLASS_java_lang_String,
+    0,
+    XMLVM_OFFSETOF(gnu_xml_stream_XMLParser_ExternalIds, fields.gnu_xml_stream_XMLParser_ExternalIds.systemId_),
+    0,
+    "",
+    JAVA_NULL},
+    {"notationName",
+    &__CLASS_java_lang_String,
+    0,
+    XMLVM_OFFSETOF(gnu_xml_stream_XMLParser_ExternalIds, fields.gnu_xml_stream_XMLParser_ExternalIds.notationName_),
+    0,
+    "",
+    JAVA_NULL},
+    {"this$0",
+    &__CLASS_gnu_xml_stream_XMLParser,
+    0,
+    XMLVM_OFFSETOF(gnu_xml_stream_XMLParser_ExternalIds, fields.gnu_xml_stream_XMLParser_ExternalIds.this_0_),
+    0,
+    "",
+    JAVA_NULL},
+};
+
+static JAVA_OBJECT* __constructor0_arg_types[] = {
+    &__CLASS_gnu_xml_stream_XMLParser,
+};
+
+static XMLVM_CONSTRUCTOR_REFLECTION_DATA __constructor_reflection_data[] = {
+    {&__constructor0_arg_types[0],
+    sizeof(__constructor0_arg_types) / sizeof(JAVA_OBJECT*),
+    JAVA_NULL,
+    0,
+    0,
+    "(Lgnu/xml/stream/XMLParser;)V",
+    JAVA_NULL,
+    JAVA_NULL},
+};
+
+static JAVA_OBJECT constructor_dispatcher(JAVA_OBJECT constructor, JAVA_OBJECT arguments)
+{
+    JAVA_OBJECT obj = __NEW_gnu_xml_stream_XMLParser_ExternalIds();
+    java_lang_reflect_Constructor* c = (java_lang_reflect_Constructor*) constructor;
+    org_xmlvm_runtime_XMLVMArray* args = (org_xmlvm_runtime_XMLVMArray*) arguments;
+    JAVA_ARRAY_OBJECT* argsArray = (JAVA_ARRAY_OBJECT*) args->fields.org_xmlvm_runtime_XMLVMArray.array_;
+    switch (c->fields.java_lang_reflect_Constructor.slot_) {
+    case 0:
+        gnu_xml_stream_XMLParser_ExternalIds___INIT____gnu_xml_stream_XMLParser(obj, argsArray[0]);
+        break;
+    default:
+        XMLVM_INTERNAL_ERROR();
+        break;
+    }
+    return obj;
+}
+
+static XMLVM_METHOD_REFLECTION_DATA __method_reflection_data[] = {
+};
+
+static JAVA_OBJECT method_dispatcher(JAVA_OBJECT method, JAVA_OBJECT receiver, JAVA_OBJECT arguments)
+{
+    JAVA_OBJECT result = JAVA_NULL;
+    java_lang_Object* obj = receiver;
+    java_lang_reflect_Method* m = (java_lang_reflect_Method*) method;
+    org_xmlvm_runtime_XMLVMArray* args = (org_xmlvm_runtime_XMLVMArray*) arguments;
+    JAVA_ARRAY_OBJECT* argsArray = (JAVA_ARRAY_OBJECT*) args->fields.org_xmlvm_runtime_XMLVMArray.array_;
+    XMLVMElem conversion;
+    switch (m->fields.java_lang_reflect_Method.slot_) {
+    default:
+        XMLVM_INTERNAL_ERROR();
+        break;
+    }
+    return result;
+}
+
+void __INIT_gnu_xml_stream_XMLParser_ExternalIds()
+{
+    staticInitializerLock(&__TIB_gnu_xml_stream_XMLParser_ExternalIds);
+
+    // While the static initializer mutex is locked, locally store the value of
+    // whether class initialization began or not
+    int initBegan = __TIB_gnu_xml_stream_XMLParser_ExternalIds.classInitializationBegan;
+
+    // Whether or not class initialization had already began, it has begun now
+    __TIB_gnu_xml_stream_XMLParser_ExternalIds.classInitializationBegan = 1;
+
+    staticInitializerUnlock(&__TIB_gnu_xml_stream_XMLParser_ExternalIds);
+
+    JAVA_LONG curThreadId = (JAVA_LONG)pthread_self();
+    if (initBegan) {
+        if (__TIB_gnu_xml_stream_XMLParser_ExternalIds.initializerThreadId != curThreadId) {
+            // Busy wait until the other thread finishes initializing this class
+            while (!__TIB_gnu_xml_stream_XMLParser_ExternalIds.classInitialized) {
+                // do nothing
+            }
+        }
+    } else {
+        __TIB_gnu_xml_stream_XMLParser_ExternalIds.initializerThreadId = curThreadId;
+        __INIT_IMPL_gnu_xml_stream_XMLParser_ExternalIds();
+    }
+}
+
+void __INIT_IMPL_gnu_xml_stream_XMLParser_ExternalIds()
+{
+    // Initialize base class if necessary
+    if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
+    __TIB_gnu_xml_stream_XMLParser_ExternalIds.newInstanceFunc = __NEW_INSTANCE_gnu_xml_stream_XMLParser_ExternalIds;
+    // Copy vtable from base class
+    XMLVM_MEMCPY(__TIB_gnu_xml_stream_XMLParser_ExternalIds.vtable, __TIB_java_lang_Object.vtable, sizeof(__TIB_java_lang_Object.vtable));
+    // Initialize vtable for this class
+    // Initialize interface information
+    __TIB_gnu_xml_stream_XMLParser_ExternalIds.numImplementedInterfaces = 0;
+    __TIB_gnu_xml_stream_XMLParser_ExternalIds.implementedInterfaces = (__TIB_DEFINITION_TEMPLATE* (*)[1]) XMLVM_MALLOC(sizeof(__TIB_DEFINITION_TEMPLATE*) * 0);
+
+    // Initialize interfaces if necessary and assign tib to implementedInterfaces
+
+    __TIB_gnu_xml_stream_XMLParser_ExternalIds.declaredFields = &__field_reflection_data[0];
+    __TIB_gnu_xml_stream_XMLParser_ExternalIds.numDeclaredFields = sizeof(__field_reflection_data) / sizeof(XMLVM_FIELD_REFLECTION_DATA);
+    __TIB_gnu_xml_stream_XMLParser_ExternalIds.constructorDispatcherFunc = constructor_dispatcher;
+    __TIB_gnu_xml_stream_XMLParser_ExternalIds.declaredConstructors = &__constructor_reflection_data[0];
+    __TIB_gnu_xml_stream_XMLParser_ExternalIds.numDeclaredConstructors = sizeof(__constructor_reflection_data) / sizeof(XMLVM_CONSTRUCTOR_REFLECTION_DATA);
+    __TIB_gnu_xml_stream_XMLParser_ExternalIds.methodDispatcherFunc = method_dispatcher;
+    __TIB_gnu_xml_stream_XMLParser_ExternalIds.declaredMethods = &__method_reflection_data[0];
+    __TIB_gnu_xml_stream_XMLParser_ExternalIds.numDeclaredMethods = sizeof(__method_reflection_data) / sizeof(XMLVM_METHOD_REFLECTION_DATA);
+    __CLASS_gnu_xml_stream_XMLParser_ExternalIds = XMLVM_CREATE_CLASS_OBJECT(&__TIB_gnu_xml_stream_XMLParser_ExternalIds);
+    __TIB_gnu_xml_stream_XMLParser_ExternalIds.clazz = __CLASS_gnu_xml_stream_XMLParser_ExternalIds;
+    __TIB_gnu_xml_stream_XMLParser_ExternalIds.baseType = JAVA_NULL;
+    __CLASS_gnu_xml_stream_XMLParser_ExternalIds_1ARRAY = XMLVM_CREATE_ARRAY_CLASS_OBJECT(__CLASS_gnu_xml_stream_XMLParser_ExternalIds);
+    __CLASS_gnu_xml_stream_XMLParser_ExternalIds_2ARRAY = XMLVM_CREATE_ARRAY_CLASS_OBJECT(__CLASS_gnu_xml_stream_XMLParser_ExternalIds_1ARRAY);
+    __CLASS_gnu_xml_stream_XMLParser_ExternalIds_3ARRAY = XMLVM_CREATE_ARRAY_CLASS_OBJECT(__CLASS_gnu_xml_stream_XMLParser_ExternalIds_2ARRAY);
+    //XMLVM_BEGIN_WRAPPER[__INIT_gnu_xml_stream_XMLParser_ExternalIds]
+    //XMLVM_END_WRAPPER
+
+    __TIB_gnu_xml_stream_XMLParser_ExternalIds.classInitialized = 1;
+}
+
+void __DELETE_gnu_xml_stream_XMLParser_ExternalIds(void* me, void* client_data)
+{
+    //XMLVM_BEGIN_WRAPPER[__DELETE_gnu_xml_stream_XMLParser_ExternalIds]
+    //XMLVM_END_WRAPPER
+}
+
+void __INIT_INSTANCE_MEMBERS_gnu_xml_stream_XMLParser_ExternalIds(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer)
+{
+    __INIT_INSTANCE_MEMBERS_java_lang_Object(me, 0 || derivedClassWillRegisterFinalizer);
+    ((gnu_xml_stream_XMLParser_ExternalIds*) me)->fields.gnu_xml_stream_XMLParser_ExternalIds.publicId_ = (java_lang_String*) JAVA_NULL;
+    ((gnu_xml_stream_XMLParser_ExternalIds*) me)->fields.gnu_xml_stream_XMLParser_ExternalIds.systemId_ = (java_lang_String*) JAVA_NULL;
+    ((gnu_xml_stream_XMLParser_ExternalIds*) me)->fields.gnu_xml_stream_XMLParser_ExternalIds.notationName_ = (java_lang_String*) JAVA_NULL;
+    ((gnu_xml_stream_XMLParser_ExternalIds*) me)->fields.gnu_xml_stream_XMLParser_ExternalIds.this_0_ = (gnu_xml_stream_XMLParser*) JAVA_NULL;
+    //XMLVM_BEGIN_WRAPPER[__INIT_INSTANCE_MEMBERS_gnu_xml_stream_XMLParser_ExternalIds]
+    //XMLVM_END_WRAPPER
+}
+
+JAVA_OBJECT __NEW_gnu_xml_stream_XMLParser_ExternalIds()
+{
+    if (!__TIB_gnu_xml_stream_XMLParser_ExternalIds.classInitialized) __INIT_gnu_xml_stream_XMLParser_ExternalIds();
+    gnu_xml_stream_XMLParser_ExternalIds* me = (gnu_xml_stream_XMLParser_ExternalIds*) XMLVM_MALLOC(sizeof(gnu_xml_stream_XMLParser_ExternalIds));
+    me->tib = &__TIB_gnu_xml_stream_XMLParser_ExternalIds;
+    __INIT_INSTANCE_MEMBERS_gnu_xml_stream_XMLParser_ExternalIds(me, 0);
+    //XMLVM_BEGIN_WRAPPER[__NEW_gnu_xml_stream_XMLParser_ExternalIds]
+    //XMLVM_END_WRAPPER
+    return me;
+}
+
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_stream_XMLParser_ExternalIds()
+{
+    JAVA_OBJECT me = JAVA_NULL;
+    return me;
+}
+
+void gnu_xml_stream_XMLParser_ExternalIds___INIT____gnu_xml_stream_XMLParser(JAVA_OBJECT me, JAVA_OBJECT n1)
+{
+    //XMLVM_BEGIN_WRAPPER[gnu_xml_stream_XMLParser_ExternalIds___INIT____gnu_xml_stream_XMLParser]
+    XMLVM_ENTER_METHOD("gnu.xml.stream.XMLParser$ExternalIds", "<init>", "?")
+    XMLVMElem _r0;
+    XMLVMElem _r1;
+    _r0.o = me;
+    _r1.o = n1;
+    XMLVM_SOURCE_POSITION("XMLParser.java", 4789)
+    ((gnu_xml_stream_XMLParser_ExternalIds*) _r0.o)->fields.gnu_xml_stream_XMLParser_ExternalIds.this_0_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
+    java_lang_Object___INIT___(_r0.o);
+    XMLVM_EXIT_METHOD()
+    return;
+    //XMLVM_END_WRAPPER
+}
+

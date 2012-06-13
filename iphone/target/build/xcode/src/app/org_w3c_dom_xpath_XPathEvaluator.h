@@ -1,0 +1,46 @@
+#ifndef __ORG_W3C_DOM_XPATH_XPATHEVALUATOR__
+#define __ORG_W3C_DOM_XPATH_XPATHEVALUATOR__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_w3c_dom_xpath_XPathEvaluator_createExpression___java_lang_String_org_w3c_dom_xpath_XPathNSResolver 201
+#define XMLVM_ITABLE_IDX_org_w3c_dom_xpath_XPathEvaluator_createNSResolver___org_w3c_dom_Node 202
+#define XMLVM_ITABLE_IDX_org_w3c_dom_xpath_XPathEvaluator_evaluate___java_lang_String_org_w3c_dom_Node_org_w3c_dom_xpath_XPathNSResolver_short_java_lang_Object 203
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Node
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Node
+XMLVM_FORWARD_DECL(org_w3c_dom_Node)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_xpath_XPathExpression
+#define XMLVM_FORWARD_DECL_org_w3c_dom_xpath_XPathExpression
+XMLVM_FORWARD_DECL(org_w3c_dom_xpath_XPathExpression)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_xpath_XPathNSResolver
+#define XMLVM_FORWARD_DECL_org_w3c_dom_xpath_XPathNSResolver
+XMLVM_FORWARD_DECL(org_w3c_dom_xpath_XPathNSResolver)
+#endif
+
+XMLVM_DEFINE_CLASS(org_w3c_dom_xpath_XPathEvaluator, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_w3c_dom_xpath_XPathEvaluator;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_xpath_XPathEvaluator_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_xpath_XPathEvaluator_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_xpath_XPathEvaluator_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_xpath_XPathEvaluator
+#define XMLVM_FORWARD_DECL_org_w3c_dom_xpath_XPathEvaluator
+typedef struct org_w3c_dom_xpath_XPathEvaluator org_w3c_dom_xpath_XPathEvaluator;
+#endif
+
+void __INIT_org_w3c_dom_xpath_XPathEvaluator();
+void __INIT_IMPL_org_w3c_dom_xpath_XPathEvaluator();
+
+#endif

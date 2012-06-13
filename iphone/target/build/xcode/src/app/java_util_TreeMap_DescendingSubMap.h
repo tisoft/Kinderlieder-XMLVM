@@ -1,0 +1,185 @@
+#ifndef __JAVA_UTIL_TREEMAP_DESCENDINGSUBMAP__
+#define __JAVA_UTIL_TREEMAP_DESCENDINGSUBMAP__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_TreeMap_DescendingSubMap 72
+// Implemented interfaces:
+#include "java_io_Serializable.h"
+// Super Class:
+#include "java_util_TreeMap_NavigableSubMap.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Comparable
+#define XMLVM_FORWARD_DECL_java_lang_Comparable
+XMLVM_FORWARD_DECL(java_lang_Comparable)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+XMLVM_FORWARD_DECL(java_lang_IllegalArgumentException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_AbstractMap_SimpleImmutableEntry
+#define XMLVM_FORWARD_DECL_java_util_AbstractMap_SimpleImmutableEntry
+XMLVM_FORWARD_DECL(java_util_AbstractMap_SimpleImmutableEntry)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Collection
+#define XMLVM_FORWARD_DECL_java_util_Collection
+XMLVM_FORWARD_DECL(java_util_Collection)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Collections
+#define XMLVM_FORWARD_DECL_java_util_Collections
+XMLVM_FORWARD_DECL(java_util_Collections)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Comparator
+#define XMLVM_FORWARD_DECL_java_util_Comparator
+XMLVM_FORWARD_DECL(java_util_Comparator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Map_Entry
+#define XMLVM_FORWARD_DECL_java_util_Map_Entry
+XMLVM_FORWARD_DECL(java_util_Map_Entry)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_NavigableMap
+#define XMLVM_FORWARD_DECL_java_util_NavigableMap
+XMLVM_FORWARD_DECL(java_util_NavigableMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_NavigableSet
+#define XMLVM_FORWARD_DECL_java_util_NavigableSet
+XMLVM_FORWARD_DECL(java_util_NavigableSet)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Set
+#define XMLVM_FORWARD_DECL_java_util_Set
+XMLVM_FORWARD_DECL(java_util_Set)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_SortedMap
+#define XMLVM_FORWARD_DECL_java_util_SortedMap
+XMLVM_FORWARD_DECL(java_util_SortedMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_TreeMap
+#define XMLVM_FORWARD_DECL_java_util_TreeMap
+XMLVM_FORWARD_DECL(java_util_TreeMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_TreeMap_AscendingSubMap
+#define XMLVM_FORWARD_DECL_java_util_TreeMap_AscendingSubMap
+XMLVM_FORWARD_DECL(java_util_TreeMap_AscendingSubMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_TreeMap_DescendingSubMap_DescendingSubMapValuesCollection
+#define XMLVM_FORWARD_DECL_java_util_TreeMap_DescendingSubMap_DescendingSubMapValuesCollection
+XMLVM_FORWARD_DECL(java_util_TreeMap_DescendingSubMap_DescendingSubMapValuesCollection)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_TreeMap_DescendingSubMapEntrySet
+#define XMLVM_FORWARD_DECL_java_util_TreeMap_DescendingSubMapEntrySet
+XMLVM_FORWARD_DECL(java_util_TreeMap_DescendingSubMapEntrySet)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_TreeMap_DescendingSubMapKeySet
+#define XMLVM_FORWARD_DECL_java_util_TreeMap_DescendingSubMapKeySet
+XMLVM_FORWARD_DECL(java_util_TreeMap_DescendingSubMapKeySet)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_TreeMap_Entry
+#define XMLVM_FORWARD_DECL_java_util_TreeMap_Entry
+XMLVM_FORWARD_DECL(java_util_TreeMap_Entry)
+#endif
+// Class declarations for java.util.TreeMap$DescendingSubMap
+XMLVM_DEFINE_CLASS(java_util_TreeMap_DescendingSubMap, 43, XMLVM_ITABLE_SIZE_java_util_TreeMap_DescendingSubMap)
+
+extern JAVA_OBJECT __CLASS_java_util_TreeMap_DescendingSubMap;
+extern JAVA_OBJECT __CLASS_java_util_TreeMap_DescendingSubMap_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_TreeMap_DescendingSubMap_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_TreeMap_DescendingSubMap_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_TreeMap_DescendingSubMap
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_TreeMap_DescendingSubMap \
+    __INSTANCE_FIELDS_java_util_TreeMap_NavigableSubMap; \
+    struct { \
+        JAVA_OBJECT reverseComparator_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_TreeMap_DescendingSubMap \
+    } java_util_TreeMap_DescendingSubMap
+
+struct java_util_TreeMap_DescendingSubMap {
+    __TIB_DEFINITION_java_util_TreeMap_DescendingSubMap* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_TreeMap_DescendingSubMap;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_TreeMap_DescendingSubMap
+#define XMLVM_FORWARD_DECL_java_util_TreeMap_DescendingSubMap
+typedef struct java_util_TreeMap_DescendingSubMap java_util_TreeMap_DescendingSubMap;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_TreeMap_DescendingSubMap 43
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMap_comparator__ 20
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMap_subMap___java_lang_Object_java_lang_Object 40
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMap_firstEntry__ 24
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMap_lastEntry__ 32
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMap_pollFirstEntry__ 37
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMap_pollLastEntry__ 38
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMap_higherEntry___java_lang_Object 30
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMap_lowerEntry___java_lang_Object 34
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMap_ceilingEntry___java_lang_Object 18
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMap_floorEntry___java_lang_Object 26
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMap_entrySet__ 9
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMap_navigableKeySet__ 36
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMap_descendingMap__ 22
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMap_subMap___java_lang_Object_boolean_java_lang_Object_boolean 39
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMap_headMap___java_lang_Object_boolean 29
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMap_tailMap___java_lang_Object_boolean 42
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMap_values__ 17
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_DescendingSubMap_descendingSubMap__ 23
+
+void __INIT_java_util_TreeMap_DescendingSubMap();
+void __INIT_IMPL_java_util_TreeMap_DescendingSubMap();
+void __DELETE_java_util_TreeMap_DescendingSubMap(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_TreeMap_DescendingSubMap(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_TreeMap_DescendingSubMap();
+JAVA_OBJECT __NEW_INSTANCE_java_util_TreeMap_DescendingSubMap();
+JAVA_LONG java_util_TreeMap_DescendingSubMap_GET_serialVersionUID();
+void java_util_TreeMap_DescendingSubMap_PUT_serialVersionUID(JAVA_LONG v);
+void java_util_TreeMap_DescendingSubMap___INIT____java_lang_Object_boolean_java_util_TreeMap_java_lang_Object_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_BOOLEAN n2, JAVA_OBJECT n3, JAVA_OBJECT n4, JAVA_BOOLEAN n5);
+void java_util_TreeMap_DescendingSubMap___INIT____java_lang_Object_boolean_java_util_TreeMap(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_BOOLEAN n2, JAVA_OBJECT n3);
+void java_util_TreeMap_DescendingSubMap___INIT____java_util_TreeMap_java_lang_Object_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_BOOLEAN n3);
+void java_util_TreeMap_DescendingSubMap___INIT____java_util_TreeMap(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 20
+JAVA_OBJECT java_util_TreeMap_DescendingSubMap_comparator__(JAVA_OBJECT me);
+// Vtable index: 40
+JAVA_OBJECT java_util_TreeMap_DescendingSubMap_subMap___java_lang_Object_java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 24
+JAVA_OBJECT java_util_TreeMap_DescendingSubMap_firstEntry__(JAVA_OBJECT me);
+// Vtable index: 32
+JAVA_OBJECT java_util_TreeMap_DescendingSubMap_lastEntry__(JAVA_OBJECT me);
+// Vtable index: 37
+JAVA_OBJECT java_util_TreeMap_DescendingSubMap_pollFirstEntry__(JAVA_OBJECT me);
+// Vtable index: 38
+JAVA_OBJECT java_util_TreeMap_DescendingSubMap_pollLastEntry__(JAVA_OBJECT me);
+// Vtable index: 30
+JAVA_OBJECT java_util_TreeMap_DescendingSubMap_higherEntry___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 34
+JAVA_OBJECT java_util_TreeMap_DescendingSubMap_lowerEntry___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 18
+JAVA_OBJECT java_util_TreeMap_DescendingSubMap_ceilingEntry___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 26
+JAVA_OBJECT java_util_TreeMap_DescendingSubMap_floorEntry___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 9
+JAVA_OBJECT java_util_TreeMap_DescendingSubMap_entrySet__(JAVA_OBJECT me);
+// Vtable index: 36
+JAVA_OBJECT java_util_TreeMap_DescendingSubMap_navigableKeySet__(JAVA_OBJECT me);
+// Vtable index: 22
+JAVA_OBJECT java_util_TreeMap_DescendingSubMap_descendingMap__(JAVA_OBJECT me);
+JAVA_INT java_util_TreeMap_DescendingSubMap_keyCompare___java_lang_Object_java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 39
+JAVA_OBJECT java_util_TreeMap_DescendingSubMap_subMap___java_lang_Object_boolean_java_lang_Object_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_BOOLEAN n2, JAVA_OBJECT n3, JAVA_BOOLEAN n4);
+// Vtable index: 29
+JAVA_OBJECT java_util_TreeMap_DescendingSubMap_headMap___java_lang_Object_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_BOOLEAN n2);
+// Vtable index: 42
+JAVA_OBJECT java_util_TreeMap_DescendingSubMap_tailMap___java_lang_Object_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_BOOLEAN n2);
+// Vtable index: 17
+JAVA_OBJECT java_util_TreeMap_DescendingSubMap_values__(JAVA_OBJECT me);
+// Vtable index: 23
+JAVA_OBJECT java_util_TreeMap_DescendingSubMap_descendingSubMap__(JAVA_OBJECT me);
+
+#endif

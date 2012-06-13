@@ -1,0 +1,251 @@
+#ifndef __GNU_XML_PIPELINE_DOMCONSUMER_HANDLER__
+#define __GNU_XML_PIPELINE_DOMCONSUMER_HANDLER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_pipeline_DomConsumer_Handler 33
+// Implemented interfaces:
+#include "org_xml_sax_ContentHandler.h"
+#include "org_xml_sax_DTDHandler.h"
+#include "org_xml_sax_ext_DeclHandler.h"
+#include "org_xml_sax_ext_LexicalHandler.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_pipeline_DomConsumer
+#define XMLVM_FORWARD_DECL_gnu_xml_pipeline_DomConsumer
+XMLVM_FORWARD_DECL(gnu_xml_pipeline_DomConsumer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_pipeline_EventConsumer
+#define XMLVM_FORWARD_DECL_gnu_xml_pipeline_EventConsumer
+XMLVM_FORWARD_DECL(gnu_xml_pipeline_EventConsumer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_pipeline_EventFilter
+#define XMLVM_FORWARD_DECL_gnu_xml_pipeline_EventFilter
+XMLVM_FORWARD_DECL(gnu_xml_pipeline_EventFilter)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_util_DomParser
+#define XMLVM_FORWARD_DECL_gnu_xml_util_DomParser
+XMLVM_FORWARD_DECL(gnu_xml_util_DomParser)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Exception
+#define XMLVM_FORWARD_DECL_java_lang_Exception
+XMLVM_FORWARD_DECL(java_lang_Exception)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Attr
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Attr
+XMLVM_FORWARD_DECL(org_w3c_dom_Attr)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_CDATASection
+#define XMLVM_FORWARD_DECL_org_w3c_dom_CDATASection
+XMLVM_FORWARD_DECL(org_w3c_dom_CDATASection)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_CharacterData
+#define XMLVM_FORWARD_DECL_org_w3c_dom_CharacterData
+XMLVM_FORWARD_DECL(org_w3c_dom_CharacterData)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Comment
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Comment
+XMLVM_FORWARD_DECL(org_w3c_dom_Comment)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementation
+#define XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementation
+XMLVM_FORWARD_DECL(org_w3c_dom_DOMImplementation)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Document
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Document
+XMLVM_FORWARD_DECL(org_w3c_dom_Document)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Element
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Element
+XMLVM_FORWARD_DECL(org_w3c_dom_Element)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_EntityReference
+#define XMLVM_FORWARD_DECL_org_w3c_dom_EntityReference
+XMLVM_FORWARD_DECL(org_w3c_dom_EntityReference)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Node
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Node
+XMLVM_FORWARD_DECL(org_w3c_dom_Node)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_ProcessingInstruction
+#define XMLVM_FORWARD_DECL_org_w3c_dom_ProcessingInstruction
+XMLVM_FORWARD_DECL(org_w3c_dom_ProcessingInstruction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Text
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Text
+XMLVM_FORWARD_DECL(org_w3c_dom_Text)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_Attributes
+#define XMLVM_FORWARD_DECL_org_xml_sax_Attributes
+XMLVM_FORWARD_DECL(org_xml_sax_Attributes)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_ErrorHandler
+#define XMLVM_FORWARD_DECL_org_xml_sax_ErrorHandler
+XMLVM_FORWARD_DECL(org_xml_sax_ErrorHandler)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_Locator
+#define XMLVM_FORWARD_DECL_org_xml_sax_Locator
+XMLVM_FORWARD_DECL(org_xml_sax_Locator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_SAXParseException
+#define XMLVM_FORWARD_DECL_org_xml_sax_SAXParseException
+XMLVM_FORWARD_DECL(org_xml_sax_SAXParseException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_helpers_AttributesImpl
+#define XMLVM_FORWARD_DECL_org_xml_sax_helpers_AttributesImpl
+XMLVM_FORWARD_DECL(org_xml_sax_helpers_AttributesImpl)
+#endif
+// Class declarations for gnu.xml.pipeline.DomConsumer$Handler
+XMLVM_DEFINE_CLASS(gnu_xml_pipeline_DomConsumer_Handler, 32, XMLVM_ITABLE_SIZE_gnu_xml_pipeline_DomConsumer_Handler)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_DomConsumer_Handler;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_DomConsumer_Handler_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_DomConsumer_Handler_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_DomConsumer_Handler_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_pipeline_DomConsumer_Handler
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_pipeline_DomConsumer_Handler \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT consumer_; \
+        JAVA_OBJECT impl_; \
+        JAVA_OBJECT document_; \
+        JAVA_BOOLEAN isL2_; \
+        JAVA_OBJECT locator_; \
+        JAVA_OBJECT top_; \
+        JAVA_BOOLEAN inCDATA_; \
+        JAVA_BOOLEAN mergeCDATA_; \
+        JAVA_BOOLEAN inDTD_; \
+        JAVA_OBJECT currentEntity_; \
+        JAVA_BOOLEAN recreatedAttrs_; \
+        JAVA_OBJECT attributes_; \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_pipeline_DomConsumer_Handler \
+    } gnu_xml_pipeline_DomConsumer_Handler
+
+struct gnu_xml_pipeline_DomConsumer_Handler {
+    __TIB_DEFINITION_gnu_xml_pipeline_DomConsumer_Handler* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_pipeline_DomConsumer_Handler;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_pipeline_DomConsumer_Handler
+#define XMLVM_FORWARD_DECL_gnu_xml_pipeline_DomConsumer_Handler
+typedef struct gnu_xml_pipeline_DomConsumer_Handler gnu_xml_pipeline_DomConsumer_Handler;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_pipeline_DomConsumer_Handler 32
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_setDocumentLocator___org_xml_sax_Locator 23
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_startDocument__ 27
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_endDocument__ 14
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_processingInstruction___java_lang_String_java_lang_String 22
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_createText___boolean_char_1ARRAY_int_int 10
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_characters___char_1ARRAY_int_int 8
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_skippedEntity___java_lang_String 24
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_startPrefixMapping___java_lang_String_java_lang_String 30
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_endPrefixMapping___java_lang_String 17
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_startElement___java_lang_String_java_lang_String_java_lang_String_org_xml_sax_Attributes 28
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_endElement___java_lang_String_java_lang_String_java_lang_String 15
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_ignorableWhitespace___char_1ARRAY_int_int 19
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_startCDATA__ 25
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_endCDATA__ 12
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_startDTD___java_lang_String_java_lang_String_java_lang_String 26
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_endDTD__ 13
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_comment___char_1ARRAY_int_int 9
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_canPopulateEntityRefs__ 7
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_startEntity___java_lang_String 29
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_endEntity___java_lang_String 16
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_notationDecl___java_lang_String_java_lang_String_java_lang_String 21
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_unparsedEntityDecl___java_lang_String_java_lang_String_java_lang_String_java_lang_String 31
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_elementDecl___java_lang_String_java_lang_String 11
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_attributeDecl___java_lang_String_java_lang_String_java_lang_String_java_lang_String_java_lang_String 6
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_internalEntityDecl___java_lang_String_java_lang_String 20
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_DomConsumer_Handler_externalEntityDecl___java_lang_String_java_lang_String_java_lang_String 18
+
+void __INIT_gnu_xml_pipeline_DomConsumer_Handler();
+void __INIT_IMPL_gnu_xml_pipeline_DomConsumer_Handler();
+void __DELETE_gnu_xml_pipeline_DomConsumer_Handler(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_pipeline_DomConsumer_Handler(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_pipeline_DomConsumer_Handler();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_pipeline_DomConsumer_Handler();
+JAVA_OBJECT gnu_xml_pipeline_DomConsumer_Handler_GET_xmlnsURI();
+void gnu_xml_pipeline_DomConsumer_Handler_PUT_xmlnsURI(JAVA_OBJECT v);
+void gnu_xml_pipeline_DomConsumer_Handler___INIT____gnu_xml_pipeline_DomConsumer(JAVA_OBJECT me, JAVA_OBJECT n1);
+void gnu_xml_pipeline_DomConsumer_Handler_fatal___java_lang_String_java_lang_Exception(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT gnu_xml_pipeline_DomConsumer_Handler_clearDocument__(JAVA_OBJECT me);
+JAVA_OBJECT gnu_xml_pipeline_DomConsumer_Handler_getDocument__(JAVA_OBJECT me);
+JAVA_OBJECT gnu_xml_pipeline_DomConsumer_Handler_getTop__(JAVA_OBJECT me);
+// Vtable index: 23
+void gnu_xml_pipeline_DomConsumer_Handler_setDocumentLocator___org_xml_sax_Locator(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 27
+void gnu_xml_pipeline_DomConsumer_Handler_startDocument__(JAVA_OBJECT me);
+// Vtable index: 14
+void gnu_xml_pipeline_DomConsumer_Handler_endDocument__(JAVA_OBJECT me);
+// Vtable index: 22
+void gnu_xml_pipeline_DomConsumer_Handler_processingInstruction___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 10
+JAVA_OBJECT gnu_xml_pipeline_DomConsumer_Handler_createText___boolean_char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_BOOLEAN n1, JAVA_OBJECT n2, JAVA_INT n3, JAVA_INT n4);
+// Vtable index: 8
+void gnu_xml_pipeline_DomConsumer_Handler_characters___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+// Vtable index: 24
+void gnu_xml_pipeline_DomConsumer_Handler_skippedEntity___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 30
+void gnu_xml_pipeline_DomConsumer_Handler_startPrefixMapping___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 17
+void gnu_xml_pipeline_DomConsumer_Handler_endPrefixMapping___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 28
+void gnu_xml_pipeline_DomConsumer_Handler_startElement___java_lang_String_java_lang_String_java_lang_String_org_xml_sax_Attributes(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3, JAVA_OBJECT n4);
+void gnu_xml_pipeline_DomConsumer_Handler_populateAttributes___org_w3c_dom_Element_org_xml_sax_Attributes(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT gnu_xml_pipeline_DomConsumer_Handler_getPrefix___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_pipeline_DomConsumer_Handler_getNamespace___java_lang_String_org_xml_sax_Attributes(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 15
+void gnu_xml_pipeline_DomConsumer_Handler_endElement___java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 19
+void gnu_xml_pipeline_DomConsumer_Handler_ignorableWhitespace___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+// Vtable index: 25
+void gnu_xml_pipeline_DomConsumer_Handler_startCDATA__(JAVA_OBJECT me);
+// Vtable index: 12
+void gnu_xml_pipeline_DomConsumer_Handler_endCDATA__(JAVA_OBJECT me);
+// Vtable index: 26
+void gnu_xml_pipeline_DomConsumer_Handler_startDTD___java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 13
+void gnu_xml_pipeline_DomConsumer_Handler_endDTD__(JAVA_OBJECT me);
+// Vtable index: 9
+void gnu_xml_pipeline_DomConsumer_Handler_comment___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+// Vtable index: 7
+JAVA_BOOLEAN gnu_xml_pipeline_DomConsumer_Handler_canPopulateEntityRefs__(JAVA_OBJECT me);
+// Vtable index: 29
+void gnu_xml_pipeline_DomConsumer_Handler_startEntity___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 16
+void gnu_xml_pipeline_DomConsumer_Handler_endEntity___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 21
+void gnu_xml_pipeline_DomConsumer_Handler_notationDecl___java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 31
+void gnu_xml_pipeline_DomConsumer_Handler_unparsedEntityDecl___java_lang_String_java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3, JAVA_OBJECT n4);
+// Vtable index: 11
+void gnu_xml_pipeline_DomConsumer_Handler_elementDecl___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 6
+void gnu_xml_pipeline_DomConsumer_Handler_attributeDecl___java_lang_String_java_lang_String_java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3, JAVA_OBJECT n4, JAVA_OBJECT n5);
+// Vtable index: 20
+void gnu_xml_pipeline_DomConsumer_Handler_internalEntityDecl___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 18
+void gnu_xml_pipeline_DomConsumer_Handler_externalEntityDecl___java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+void gnu_xml_pipeline_DomConsumer_Handler_namespaceError___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

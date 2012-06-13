@@ -1,0 +1,47 @@
+#ifndef __ORG_XML_SAX_DOCUMENTHANDLER__
+#define __ORG_XML_SAX_DOCUMENTHANDLER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_setDocumentLocator___org_xml_sax_Locator 5
+#define XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_startDocument__ 6
+#define XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_endDocument__ 1
+#define XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_startElement___java_lang_String_org_xml_sax_AttributeList 7
+#define XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_endElement___java_lang_String 2
+#define XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_characters___char_1ARRAY_int_int 0
+#define XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_ignorableWhitespace___char_1ARRAY_int_int 3
+#define XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_processingInstruction___java_lang_String_java_lang_String 4
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_AttributeList
+#define XMLVM_FORWARD_DECL_org_xml_sax_AttributeList
+XMLVM_FORWARD_DECL(org_xml_sax_AttributeList)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_Locator
+#define XMLVM_FORWARD_DECL_org_xml_sax_Locator
+XMLVM_FORWARD_DECL(org_xml_sax_Locator)
+#endif
+
+XMLVM_DEFINE_CLASS(org_xml_sax_DocumentHandler, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_xml_sax_DocumentHandler;
+extern JAVA_OBJECT __CLASS_org_xml_sax_DocumentHandler_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_DocumentHandler_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_DocumentHandler_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_DocumentHandler
+#define XMLVM_FORWARD_DECL_org_xml_sax_DocumentHandler
+typedef struct org_xml_sax_DocumentHandler org_xml_sax_DocumentHandler;
+#endif
+
+void __INIT_org_xml_sax_DocumentHandler();
+void __INIT_IMPL_org_xml_sax_DocumentHandler();
+
+#endif

@@ -1,0 +1,71 @@
+#ifndef __JAVAX_XML_PARSERS_FACTORYCONFIGURATIONERROR__
+#define __JAVAX_XML_PARSERS_FACTORYCONFIGURATIONERROR__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_javax_xml_parsers_FactoryConfigurationError 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Error.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Exception
+#define XMLVM_FORWARD_DECL_java_lang_Exception
+XMLVM_FORWARD_DECL(java_lang_Exception)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+// Class declarations for javax.xml.parsers.FactoryConfigurationError
+XMLVM_DEFINE_CLASS(javax_xml_parsers_FactoryConfigurationError, 11, XMLVM_ITABLE_SIZE_javax_xml_parsers_FactoryConfigurationError)
+
+extern JAVA_OBJECT __CLASS_javax_xml_parsers_FactoryConfigurationError;
+extern JAVA_OBJECT __CLASS_javax_xml_parsers_FactoryConfigurationError_1ARRAY;
+extern JAVA_OBJECT __CLASS_javax_xml_parsers_FactoryConfigurationError_2ARRAY;
+extern JAVA_OBJECT __CLASS_javax_xml_parsers_FactoryConfigurationError_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_javax_xml_parsers_FactoryConfigurationError
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_javax_xml_parsers_FactoryConfigurationError \
+    __INSTANCE_FIELDS_java_lang_Error; \
+    struct { \
+        JAVA_OBJECT exception_; \
+        __ADDITIONAL_INSTANCE_FIELDS_javax_xml_parsers_FactoryConfigurationError \
+    } javax_xml_parsers_FactoryConfigurationError
+
+struct javax_xml_parsers_FactoryConfigurationError {
+    __TIB_DEFINITION_javax_xml_parsers_FactoryConfigurationError* tib;
+    struct {
+        __INSTANCE_FIELDS_javax_xml_parsers_FactoryConfigurationError;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_javax_xml_parsers_FactoryConfigurationError
+#define XMLVM_FORWARD_DECL_javax_xml_parsers_FactoryConfigurationError
+typedef struct javax_xml_parsers_FactoryConfigurationError javax_xml_parsers_FactoryConfigurationError;
+#endif
+
+#define XMLVM_VTABLE_SIZE_javax_xml_parsers_FactoryConfigurationError 11
+#define XMLVM_VTABLE_IDX_javax_xml_parsers_FactoryConfigurationError_getMessage__ 7
+
+void __INIT_javax_xml_parsers_FactoryConfigurationError();
+void __INIT_IMPL_javax_xml_parsers_FactoryConfigurationError();
+void __DELETE_javax_xml_parsers_FactoryConfigurationError(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_javax_xml_parsers_FactoryConfigurationError(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_javax_xml_parsers_FactoryConfigurationError();
+JAVA_OBJECT __NEW_INSTANCE_javax_xml_parsers_FactoryConfigurationError();
+void javax_xml_parsers_FactoryConfigurationError___INIT___(JAVA_OBJECT me);
+void javax_xml_parsers_FactoryConfigurationError___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+void javax_xml_parsers_FactoryConfigurationError___INIT____java_lang_Exception(JAVA_OBJECT me, JAVA_OBJECT n1);
+void javax_xml_parsers_FactoryConfigurationError___INIT____java_lang_Exception_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 7
+JAVA_OBJECT javax_xml_parsers_FactoryConfigurationError_getMessage__(JAVA_OBJECT me);
+JAVA_OBJECT javax_xml_parsers_FactoryConfigurationError_getException__(JAVA_OBJECT me);
+
+#endif

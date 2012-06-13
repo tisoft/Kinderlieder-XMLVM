@@ -1,0 +1,191 @@
+#ifndef __GNU_XML_DOM_LS_DOMLSSERIALIZER__
+#define __GNU_XML_DOM_LS_DOMLSSERIALIZER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_dom_ls_DomLSSerializer 15
+// Implemented interfaces:
+#include "org_w3c_dom_DOMConfiguration.h"
+#include "org_w3c_dom_DOMStringList.h"
+#include "org_w3c_dom_ls_LSSerializer.h"
+// Super Class:
+#include "gnu_xml_transform_StreamSerializer.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_DomDOMException
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_DomDOMException
+XMLVM_FORWARD_DECL(gnu_xml_dom_DomDOMException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_ls_DomLSException
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_ls_DomLSException
+XMLVM_FORWARD_DECL(gnu_xml_dom_ls_DomLSException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_ls_DomLSOutput
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_ls_DomLSOutput
+XMLVM_FORWARD_DECL(gnu_xml_dom_ls_DomLSOutput)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_File
+#define XMLVM_FORWARD_DECL_java_io_File
+XMLVM_FORWARD_DECL(java_io_File)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_FileOutputStream
+#define XMLVM_FORWARD_DECL_java_io_FileOutputStream
+XMLVM_FORWARD_DECL(java_io_FileOutputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_IOException
+#define XMLVM_FORWARD_DECL_java_io_IOException
+XMLVM_FORWARD_DECL(java_io_IOException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_OutputStream
+#define XMLVM_FORWARD_DECL_java_io_OutputStream
+XMLVM_FORWARD_DECL(java_io_OutputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_StringWriter
+#define XMLVM_FORWARD_DECL_java_io_StringWriter
+XMLVM_FORWARD_DECL(java_io_StringWriter)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_System
+#define XMLVM_FORWARD_DECL_java_lang_System
+XMLVM_FORWARD_DECL(java_lang_System)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_HttpURLConnection
+#define XMLVM_FORWARD_DECL_java_net_HttpURLConnection
+XMLVM_FORWARD_DECL(java_net_HttpURLConnection)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_MalformedURLException
+#define XMLVM_FORWARD_DECL_java_net_MalformedURLException
+XMLVM_FORWARD_DECL(java_net_MalformedURLException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_URL
+#define XMLVM_FORWARD_DECL_java_net_URL
+XMLVM_FORWARD_DECL(java_net_URL)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_URLConnection
+#define XMLVM_FORWARD_DECL_java_net_URLConnection
+XMLVM_FORWARD_DECL(java_net_URLConnection)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Arrays
+#define XMLVM_FORWARD_DECL_java_util_Arrays
+XMLVM_FORWARD_DECL(java_util_Arrays)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_List
+#define XMLVM_FORWARD_DECL_java_util_List
+XMLVM_FORWARD_DECL(java_util_List)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Node
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Node
+XMLVM_FORWARD_DECL(org_w3c_dom_Node)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSOutput
+#define XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSOutput
+XMLVM_FORWARD_DECL(org_w3c_dom_ls_LSOutput)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSSerializerFilter
+#define XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSSerializerFilter
+XMLVM_FORWARD_DECL(org_w3c_dom_ls_LSSerializerFilter)
+#endif
+// Class declarations for gnu.xml.dom.ls.DomLSSerializer
+XMLVM_DEFINE_CLASS(gnu_xml_dom_ls_DomLSSerializer, 22, XMLVM_ITABLE_SIZE_gnu_xml_dom_ls_DomLSSerializer)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_ls_DomLSSerializer;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_ls_DomLSSerializer_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_ls_DomLSSerializer_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_ls_DomLSSerializer_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_ls_DomLSSerializer
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_dom_ls_DomLSSerializer \
+    __INSTANCE_FIELDS_gnu_xml_transform_StreamSerializer; \
+    struct { \
+        JAVA_OBJECT filter_; \
+        JAVA_OBJECT serializer_; \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_ls_DomLSSerializer \
+    } gnu_xml_dom_ls_DomLSSerializer
+
+struct gnu_xml_dom_ls_DomLSSerializer {
+    __TIB_DEFINITION_gnu_xml_dom_ls_DomLSSerializer* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_dom_ls_DomLSSerializer;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_ls_DomLSSerializer
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_ls_DomLSSerializer
+typedef struct gnu_xml_dom_ls_DomLSSerializer gnu_xml_dom_ls_DomLSSerializer;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_dom_ls_DomLSSerializer 22
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_ls_DomLSSerializer_getDomConfig__ 9
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_ls_DomLSSerializer_getNewLine__ 12
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_ls_DomLSSerializer_setNewLine___java_lang_String 17
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_ls_DomLSSerializer_getFilter__ 10
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_ls_DomLSSerializer_setFilter___org_w3c_dom_ls_LSSerializerFilter 16
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_ls_DomLSSerializer_write___org_w3c_dom_Node_org_w3c_dom_ls_LSOutput 21
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_ls_DomLSSerializer_writeToURI___org_w3c_dom_Node_java_lang_String 20
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_ls_DomLSSerializer_writeToString___org_w3c_dom_Node 19
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_ls_DomLSSerializer_serialize___org_w3c_dom_Node_java_io_OutputStream 6
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_ls_DomLSSerializer_setParameter___java_lang_String_java_lang_Object 18
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_ls_DomLSSerializer_getParameter___java_lang_String 14
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_ls_DomLSSerializer_canSetParameter___java_lang_String_java_lang_Object 7
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_ls_DomLSSerializer_getParameterNames__ 13
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_ls_DomLSSerializer_item___int 15
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_ls_DomLSSerializer_getLength__ 11
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_ls_DomLSSerializer_contains___java_lang_String 8
+
+void __INIT_gnu_xml_dom_ls_DomLSSerializer();
+void __INIT_IMPL_gnu_xml_dom_ls_DomLSSerializer();
+void __DELETE_gnu_xml_dom_ls_DomLSSerializer(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_dom_ls_DomLSSerializer(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_dom_ls_DomLSSerializer();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_dom_ls_DomLSSerializer();
+JAVA_OBJECT gnu_xml_dom_ls_DomLSSerializer_GET_SUPPORTED_PARAMETERS();
+void gnu_xml_dom_ls_DomLSSerializer_PUT_SUPPORTED_PARAMETERS(JAVA_OBJECT v);
+void gnu_xml_dom_ls_DomLSSerializer___CLINIT_();
+void gnu_xml_dom_ls_DomLSSerializer___INIT___(JAVA_OBJECT me);
+// Vtable index: 9
+JAVA_OBJECT gnu_xml_dom_ls_DomLSSerializer_getDomConfig__(JAVA_OBJECT me);
+// Vtable index: 12
+JAVA_OBJECT gnu_xml_dom_ls_DomLSSerializer_getNewLine__(JAVA_OBJECT me);
+// Vtable index: 17
+void gnu_xml_dom_ls_DomLSSerializer_setNewLine___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 10
+JAVA_OBJECT gnu_xml_dom_ls_DomLSSerializer_getFilter__(JAVA_OBJECT me);
+// Vtable index: 16
+void gnu_xml_dom_ls_DomLSSerializer_setFilter___org_w3c_dom_ls_LSSerializerFilter(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 21
+JAVA_BOOLEAN gnu_xml_dom_ls_DomLSSerializer_write___org_w3c_dom_Node_org_w3c_dom_ls_LSOutput(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 20
+JAVA_BOOLEAN gnu_xml_dom_ls_DomLSSerializer_writeToURI___org_w3c_dom_Node_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 19
+JAVA_OBJECT gnu_xml_dom_ls_DomLSSerializer_writeToString___org_w3c_dom_Node(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 6
+void gnu_xml_dom_ls_DomLSSerializer_serialize___org_w3c_dom_Node_java_io_OutputStream(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 18
+void gnu_xml_dom_ls_DomLSSerializer_setParameter___java_lang_String_java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 14
+JAVA_OBJECT gnu_xml_dom_ls_DomLSSerializer_getParameter___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 7
+JAVA_BOOLEAN gnu_xml_dom_ls_DomLSSerializer_canSetParameter___java_lang_String_java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 13
+JAVA_OBJECT gnu_xml_dom_ls_DomLSSerializer_getParameterNames__(JAVA_OBJECT me);
+// Vtable index: 15
+JAVA_OBJECT gnu_xml_dom_ls_DomLSSerializer_item___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 11
+JAVA_INT gnu_xml_dom_ls_DomLSSerializer_getLength__(JAVA_OBJECT me);
+// Vtable index: 8
+JAVA_BOOLEAN gnu_xml_dom_ls_DomLSSerializer_contains___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

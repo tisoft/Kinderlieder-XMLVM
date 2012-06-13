@@ -1,0 +1,36 @@
+#ifndef __JAVA_NET_CONTENTHANDLERFACTORY__
+#define __JAVA_NET_CONTENTHANDLERFACTORY__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_java_net_ContentHandlerFactory_createContentHandler___java_lang_String 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_ContentHandler
+#define XMLVM_FORWARD_DECL_java_net_ContentHandler
+XMLVM_FORWARD_DECL(java_net_ContentHandler)
+#endif
+
+XMLVM_DEFINE_CLASS(java_net_ContentHandlerFactory, 0, 0)
+
+extern JAVA_OBJECT __CLASS_java_net_ContentHandlerFactory;
+extern JAVA_OBJECT __CLASS_java_net_ContentHandlerFactory_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_net_ContentHandlerFactory_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_net_ContentHandlerFactory_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_java_net_ContentHandlerFactory
+#define XMLVM_FORWARD_DECL_java_net_ContentHandlerFactory
+typedef struct java_net_ContentHandlerFactory java_net_ContentHandlerFactory;
+#endif
+
+void __INIT_java_net_ContentHandlerFactory();
+void __INIT_IMPL_java_net_ContentHandlerFactory();
+
+#endif

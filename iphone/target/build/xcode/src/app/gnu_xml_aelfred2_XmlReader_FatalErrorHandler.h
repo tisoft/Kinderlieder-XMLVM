@@ -1,0 +1,58 @@
+#ifndef __GNU_XML_AELFRED2_XMLREADER_FATALERRORHANDLER__
+#define __GNU_XML_AELFRED2_XMLREADER_FATALERRORHANDLER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_aelfred2_XmlReader_FatalErrorHandler 33
+// Implemented interfaces:
+// Super Class:
+#include "org_xml_sax_ext_DefaultHandler2.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_SAXParseException
+#define XMLVM_FORWARD_DECL_org_xml_sax_SAXParseException
+XMLVM_FORWARD_DECL(org_xml_sax_SAXParseException)
+#endif
+// Class declarations for gnu.xml.aelfred2.XmlReader$FatalErrorHandler
+XMLVM_DEFINE_CLASS(gnu_xml_aelfred2_XmlReader_FatalErrorHandler, 36, XMLVM_ITABLE_SIZE_gnu_xml_aelfred2_XmlReader_FatalErrorHandler)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_aelfred2_XmlReader_FatalErrorHandler;
+extern JAVA_OBJECT __CLASS_gnu_xml_aelfred2_XmlReader_FatalErrorHandler_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_aelfred2_XmlReader_FatalErrorHandler_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_aelfred2_XmlReader_FatalErrorHandler_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_aelfred2_XmlReader_FatalErrorHandler
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_aelfred2_XmlReader_FatalErrorHandler \
+    __INSTANCE_FIELDS_org_xml_sax_ext_DefaultHandler2; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_aelfred2_XmlReader_FatalErrorHandler \
+    } gnu_xml_aelfred2_XmlReader_FatalErrorHandler
+
+struct gnu_xml_aelfred2_XmlReader_FatalErrorHandler {
+    __TIB_DEFINITION_gnu_xml_aelfred2_XmlReader_FatalErrorHandler* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_aelfred2_XmlReader_FatalErrorHandler;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_aelfred2_XmlReader_FatalErrorHandler
+#define XMLVM_FORWARD_DECL_gnu_xml_aelfred2_XmlReader_FatalErrorHandler
+typedef struct gnu_xml_aelfred2_XmlReader_FatalErrorHandler gnu_xml_aelfred2_XmlReader_FatalErrorHandler;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_aelfred2_XmlReader_FatalErrorHandler 36
+#define XMLVM_VTABLE_IDX_gnu_xml_aelfred2_XmlReader_FatalErrorHandler_error___org_xml_sax_SAXParseException 10
+
+void __INIT_gnu_xml_aelfred2_XmlReader_FatalErrorHandler();
+void __INIT_IMPL_gnu_xml_aelfred2_XmlReader_FatalErrorHandler();
+void __DELETE_gnu_xml_aelfred2_XmlReader_FatalErrorHandler(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_aelfred2_XmlReader_FatalErrorHandler(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_aelfred2_XmlReader_FatalErrorHandler();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_aelfred2_XmlReader_FatalErrorHandler();
+void gnu_xml_aelfred2_XmlReader_FatalErrorHandler___INIT___(JAVA_OBJECT me);
+// Vtable index: 10
+void gnu_xml_aelfred2_XmlReader_FatalErrorHandler_error___org_xml_sax_SAXParseException(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

@@ -1,0 +1,63 @@
+#ifndef __ORG_APACHE_HARMONY_LUNI_UTIL_HISTORICALNAMESUTIL__
+#define __ORG_APACHE_HARMONY_LUNI_UTIL_HISTORICALNAMESUTIL__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_apache_harmony_luni_util_HistoricalNamesUtil 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_HashMap
+#define XMLVM_FORWARD_DECL_java_util_HashMap
+XMLVM_FORWARD_DECL(java_util_HashMap)
+#endif
+// Class declarations for org.apache.harmony.luni.util.HistoricalNamesUtil
+XMLVM_DEFINE_CLASS(org_apache_harmony_luni_util_HistoricalNamesUtil, 6, XMLVM_ITABLE_SIZE_org_apache_harmony_luni_util_HistoricalNamesUtil)
+
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_HistoricalNamesUtil;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_HistoricalNamesUtil_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_HistoricalNamesUtil_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_HistoricalNamesUtil_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_util_HistoricalNamesUtil
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_apache_harmony_luni_util_HistoricalNamesUtil \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_util_HistoricalNamesUtil \
+    } org_apache_harmony_luni_util_HistoricalNamesUtil
+
+struct org_apache_harmony_luni_util_HistoricalNamesUtil {
+    __TIB_DEFINITION_org_apache_harmony_luni_util_HistoricalNamesUtil* tib;
+    struct {
+        __INSTANCE_FIELDS_org_apache_harmony_luni_util_HistoricalNamesUtil;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_HistoricalNamesUtil
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_HistoricalNamesUtil
+typedef struct org_apache_harmony_luni_util_HistoricalNamesUtil org_apache_harmony_luni_util_HistoricalNamesUtil;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_apache_harmony_luni_util_HistoricalNamesUtil 6
+
+void __INIT_org_apache_harmony_luni_util_HistoricalNamesUtil();
+void __INIT_IMPL_org_apache_harmony_luni_util_HistoricalNamesUtil();
+void __DELETE_org_apache_harmony_luni_util_HistoricalNamesUtil(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_apache_harmony_luni_util_HistoricalNamesUtil(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_apache_harmony_luni_util_HistoricalNamesUtil();
+JAVA_OBJECT __NEW_INSTANCE_org_apache_harmony_luni_util_HistoricalNamesUtil();
+JAVA_OBJECT org_apache_harmony_luni_util_HistoricalNamesUtil_GET_historicalNames();
+void org_apache_harmony_luni_util_HistoricalNamesUtil_PUT_historicalNames(JAVA_OBJECT v);
+void org_apache_harmony_luni_util_HistoricalNamesUtil___CLINIT_();
+void org_apache_harmony_luni_util_HistoricalNamesUtil___INIT___(JAVA_OBJECT me);
+JAVA_OBJECT org_apache_harmony_luni_util_HistoricalNamesUtil_getHistoricalName___java_lang_String(JAVA_OBJECT n1);
+
+#endif

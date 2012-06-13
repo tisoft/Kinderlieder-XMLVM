@@ -1,0 +1,180 @@
+#ifndef __JAVA_TEXT_ATTRIBUTEDSTRING_ATTRIBUTEDITERATOR__
+#define __JAVA_TEXT_ATTRIBUTEDSTRING_ATTRIBUTEDITERATOR__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_text_AttributedString_AttributedIterator 29
+// Implemented interfaces:
+#include "java_text_AttributedCharacterIterator.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_CloneNotSupportedException
+#define XMLVM_FORWARD_DECL_java_lang_CloneNotSupportedException
+XMLVM_FORWARD_DECL(java_lang_CloneNotSupportedException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+XMLVM_FORWARD_DECL(java_lang_IllegalArgumentException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_text_AttributedCharacterIterator_Attribute
+#define XMLVM_FORWARD_DECL_java_text_AttributedCharacterIterator_Attribute
+XMLVM_FORWARD_DECL(java_text_AttributedCharacterIterator_Attribute)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_text_AttributedString
+#define XMLVM_FORWARD_DECL_java_text_AttributedString
+XMLVM_FORWARD_DECL(java_text_AttributedString)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_text_AttributedString_Range
+#define XMLVM_FORWARD_DECL_java_text_AttributedString_Range
+XMLVM_FORWARD_DECL(java_text_AttributedString_Range)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ArrayList
+#define XMLVM_FORWARD_DECL_java_util_ArrayList
+XMLVM_FORWARD_DECL(java_util_ArrayList)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_HashMap
+#define XMLVM_FORWARD_DECL_java_util_HashMap
+XMLVM_FORWARD_DECL(java_util_HashMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_HashSet
+#define XMLVM_FORWARD_DECL_java_util_HashSet
+XMLVM_FORWARD_DECL(java_util_HashSet)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Iterator
+#define XMLVM_FORWARD_DECL_java_util_Iterator
+XMLVM_FORWARD_DECL(java_util_Iterator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_List
+#define XMLVM_FORWARD_DECL_java_util_List
+XMLVM_FORWARD_DECL(java_util_List)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ListIterator
+#define XMLVM_FORWARD_DECL_java_util_ListIterator
+XMLVM_FORWARD_DECL(java_util_ListIterator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Map
+#define XMLVM_FORWARD_DECL_java_util_Map
+XMLVM_FORWARD_DECL(java_util_Map)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Map_Entry
+#define XMLVM_FORWARD_DECL_java_util_Map_Entry
+XMLVM_FORWARD_DECL(java_util_Map_Entry)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Set
+#define XMLVM_FORWARD_DECL_java_util_Set
+XMLVM_FORWARD_DECL(java_util_Set)
+#endif
+// Class declarations for java.text.AttributedString$AttributedIterator
+XMLVM_DEFINE_CLASS(java_text_AttributedString_AttributedIterator, 24, XMLVM_ITABLE_SIZE_java_text_AttributedString_AttributedIterator)
+
+extern JAVA_OBJECT __CLASS_java_text_AttributedString_AttributedIterator;
+extern JAVA_OBJECT __CLASS_java_text_AttributedString_AttributedIterator_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_text_AttributedString_AttributedIterator_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_text_AttributedString_AttributedIterator_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_text_AttributedString_AttributedIterator
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_text_AttributedString_AttributedIterator \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_INT begin_; \
+        JAVA_INT end_; \
+        JAVA_INT offset_; \
+        JAVA_OBJECT attrString_; \
+        JAVA_OBJECT attributesAllowed_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_text_AttributedString_AttributedIterator \
+    } java_text_AttributedString_AttributedIterator
+
+struct java_text_AttributedString_AttributedIterator {
+    __TIB_DEFINITION_java_text_AttributedString_AttributedIterator* tib;
+    struct {
+        __INSTANCE_FIELDS_java_text_AttributedString_AttributedIterator;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_text_AttributedString_AttributedIterator
+#define XMLVM_FORWARD_DECL_java_text_AttributedString_AttributedIterator
+typedef struct java_text_AttributedString_AttributedIterator java_text_AttributedString_AttributedIterator;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_text_AttributedString_AttributedIterator 24
+#define XMLVM_VTABLE_IDX_java_text_AttributedString_AttributedIterator_clone__ 0
+#define XMLVM_VTABLE_IDX_java_text_AttributedString_AttributedIterator_current__ 6
+#define XMLVM_VTABLE_IDX_java_text_AttributedString_AttributedIterator_first__ 7
+#define XMLVM_VTABLE_IDX_java_text_AttributedString_AttributedIterator_getBeginIndex__ 11
+#define XMLVM_VTABLE_IDX_java_text_AttributedString_AttributedIterator_getEndIndex__ 12
+#define XMLVM_VTABLE_IDX_java_text_AttributedString_AttributedIterator_getIndex__ 13
+#define XMLVM_VTABLE_IDX_java_text_AttributedString_AttributedIterator_getAllAttributeKeys__ 8
+#define XMLVM_VTABLE_IDX_java_text_AttributedString_AttributedIterator_getAttribute___java_text_AttributedCharacterIterator_Attribute 9
+#define XMLVM_VTABLE_IDX_java_text_AttributedString_AttributedIterator_getAttributes__ 10
+#define XMLVM_VTABLE_IDX_java_text_AttributedString_AttributedIterator_getRunLimit__ 14
+#define XMLVM_VTABLE_IDX_java_text_AttributedString_AttributedIterator_getRunLimit___java_text_AttributedCharacterIterator_Attribute 15
+#define XMLVM_VTABLE_IDX_java_text_AttributedString_AttributedIterator_getRunLimit___java_util_Set 16
+#define XMLVM_VTABLE_IDX_java_text_AttributedString_AttributedIterator_getRunStart__ 17
+#define XMLVM_VTABLE_IDX_java_text_AttributedString_AttributedIterator_getRunStart___java_text_AttributedCharacterIterator_Attribute 18
+#define XMLVM_VTABLE_IDX_java_text_AttributedString_AttributedIterator_getRunStart___java_util_Set 19
+#define XMLVM_VTABLE_IDX_java_text_AttributedString_AttributedIterator_last__ 20
+#define XMLVM_VTABLE_IDX_java_text_AttributedString_AttributedIterator_next__ 21
+#define XMLVM_VTABLE_IDX_java_text_AttributedString_AttributedIterator_previous__ 22
+#define XMLVM_VTABLE_IDX_java_text_AttributedString_AttributedIterator_setIndex___int 23
+
+void __INIT_java_text_AttributedString_AttributedIterator();
+void __INIT_IMPL_java_text_AttributedString_AttributedIterator();
+void __DELETE_java_text_AttributedString_AttributedIterator(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_text_AttributedString_AttributedIterator(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_text_AttributedString_AttributedIterator();
+JAVA_OBJECT __NEW_INSTANCE_java_text_AttributedString_AttributedIterator();
+void java_text_AttributedString_AttributedIterator___INIT____java_text_AttributedString(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_text_AttributedString_AttributedIterator___INIT____java_text_AttributedString_java_text_AttributedCharacterIterator_Attribute_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_INT n3, JAVA_INT n4);
+// Vtable index: 0
+JAVA_OBJECT java_text_AttributedString_AttributedIterator_clone__(JAVA_OBJECT me);
+// Vtable index: 6
+JAVA_CHAR java_text_AttributedString_AttributedIterator_current__(JAVA_OBJECT me);
+// Vtable index: 7
+JAVA_CHAR java_text_AttributedString_AttributedIterator_first__(JAVA_OBJECT me);
+// Vtable index: 11
+JAVA_INT java_text_AttributedString_AttributedIterator_getBeginIndex__(JAVA_OBJECT me);
+// Vtable index: 12
+JAVA_INT java_text_AttributedString_AttributedIterator_getEndIndex__(JAVA_OBJECT me);
+// Vtable index: 13
+JAVA_INT java_text_AttributedString_AttributedIterator_getIndex__(JAVA_OBJECT me);
+JAVA_BOOLEAN java_text_AttributedString_AttributedIterator_inRange___java_text_AttributedString_Range(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_BOOLEAN java_text_AttributedString_AttributedIterator_inRange___java_util_List(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 8
+JAVA_OBJECT java_text_AttributedString_AttributedIterator_getAllAttributeKeys__(JAVA_OBJECT me);
+JAVA_OBJECT java_text_AttributedString_AttributedIterator_currentValue___java_util_List(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 9
+JAVA_OBJECT java_text_AttributedString_AttributedIterator_getAttribute___java_text_AttributedCharacterIterator_Attribute(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 10
+JAVA_OBJECT java_text_AttributedString_AttributedIterator_getAttributes__(JAVA_OBJECT me);
+// Vtable index: 14
+JAVA_INT java_text_AttributedString_AttributedIterator_getRunLimit__(JAVA_OBJECT me);
+JAVA_INT java_text_AttributedString_AttributedIterator_runLimit___java_util_List(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 15
+JAVA_INT java_text_AttributedString_AttributedIterator_getRunLimit___java_text_AttributedCharacterIterator_Attribute(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 16
+JAVA_INT java_text_AttributedString_AttributedIterator_getRunLimit___java_util_Set(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 17
+JAVA_INT java_text_AttributedString_AttributedIterator_getRunStart__(JAVA_OBJECT me);
+JAVA_INT java_text_AttributedString_AttributedIterator_runStart___java_util_List(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 18
+JAVA_INT java_text_AttributedString_AttributedIterator_getRunStart___java_text_AttributedCharacterIterator_Attribute(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 19
+JAVA_INT java_text_AttributedString_AttributedIterator_getRunStart___java_util_Set(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 20
+JAVA_CHAR java_text_AttributedString_AttributedIterator_last__(JAVA_OBJECT me);
+// Vtable index: 21
+JAVA_CHAR java_text_AttributedString_AttributedIterator_next__(JAVA_OBJECT me);
+// Vtable index: 22
+JAVA_CHAR java_text_AttributedString_AttributedIterator_previous__(JAVA_OBJECT me);
+// Vtable index: 23
+JAVA_CHAR java_text_AttributedString_AttributedIterator_setIndex___int(JAVA_OBJECT me, JAVA_INT n1);
+
+#endif

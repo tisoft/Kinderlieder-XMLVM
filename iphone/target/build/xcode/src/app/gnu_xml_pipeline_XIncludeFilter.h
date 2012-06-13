@@ -1,0 +1,219 @@
+#ifndef __GNU_XML_PIPELINE_XINCLUDEFILTER__
+#define __GNU_XML_PIPELINE_XINCLUDEFILTER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_pipeline_XIncludeFilter 33
+// Implemented interfaces:
+#include "org_xml_sax_Locator.h"
+// Super Class:
+#include "gnu_xml_pipeline_EventFilter.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_pipeline_EventConsumer
+#define XMLVM_FORWARD_DECL_gnu_xml_pipeline_EventConsumer
+XMLVM_FORWARD_DECL(gnu_xml_pipeline_EventConsumer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_pipeline_XIncludeFilter_Scrubber
+#define XMLVM_FORWARD_DECL_gnu_xml_pipeline_XIncludeFilter_Scrubber
+XMLVM_FORWARD_DECL(gnu_xml_pipeline_XIncludeFilter_Scrubber)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_util_Resolver
+#define XMLVM_FORWARD_DECL_gnu_xml_util_Resolver
+XMLVM_FORWARD_DECL(gnu_xml_util_Resolver)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_IOException
+#define XMLVM_FORWARD_DECL_java_io_IOException
+XMLVM_FORWARD_DECL(java_io_IOException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_InputStream
+#define XMLVM_FORWARD_DECL_java_io_InputStream
+XMLVM_FORWARD_DECL(java_io_InputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_InputStreamReader
+#define XMLVM_FORWARD_DECL_java_io_InputStreamReader
+XMLVM_FORWARD_DECL(java_io_InputStreamReader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Exception
+#define XMLVM_FORWARD_DECL_java_lang_Exception
+XMLVM_FORWARD_DECL(java_lang_Exception)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_URL
+#define XMLVM_FORWARD_DECL_java_net_URL
+XMLVM_FORWARD_DECL(java_net_URL)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_URLConnection
+#define XMLVM_FORWARD_DECL_java_net_URLConnection
+XMLVM_FORWARD_DECL(java_net_URLConnection)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Hashtable
+#define XMLVM_FORWARD_DECL_java_util_Hashtable
+XMLVM_FORWARD_DECL(java_util_Hashtable)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Stack
+#define XMLVM_FORWARD_DECL_java_util_Stack
+XMLVM_FORWARD_DECL(java_util_Stack)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Vector
+#define XMLVM_FORWARD_DECL_java_util_Vector
+XMLVM_FORWARD_DECL(java_util_Vector)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_Attributes
+#define XMLVM_FORWARD_DECL_org_xml_sax_Attributes
+XMLVM_FORWARD_DECL(org_xml_sax_Attributes)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_ErrorHandler
+#define XMLVM_FORWARD_DECL_org_xml_sax_ErrorHandler
+XMLVM_FORWARD_DECL(org_xml_sax_ErrorHandler)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_InputSource
+#define XMLVM_FORWARD_DECL_org_xml_sax_InputSource
+XMLVM_FORWARD_DECL(org_xml_sax_InputSource)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_SAXParseException
+#define XMLVM_FORWARD_DECL_org_xml_sax_SAXParseException
+XMLVM_FORWARD_DECL(org_xml_sax_SAXParseException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_XMLReader
+#define XMLVM_FORWARD_DECL_org_xml_sax_XMLReader
+XMLVM_FORWARD_DECL(org_xml_sax_XMLReader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_helpers_XMLReaderFactory
+#define XMLVM_FORWARD_DECL_org_xml_sax_helpers_XMLReaderFactory
+XMLVM_FORWARD_DECL(org_xml_sax_helpers_XMLReaderFactory)
+#endif
+// Class declarations for gnu.xml.pipeline.XIncludeFilter
+XMLVM_DEFINE_CLASS(gnu_xml_pipeline_XIncludeFilter, 38, XMLVM_ITABLE_SIZE_gnu_xml_pipeline_XIncludeFilter)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_XIncludeFilter;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_XIncludeFilter_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_XIncludeFilter_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_XIncludeFilter_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_pipeline_XIncludeFilter
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_pipeline_XIncludeFilter \
+    __INSTANCE_FIELDS_gnu_xml_pipeline_EventFilter; \
+    struct { \
+        JAVA_OBJECT extEntities_; \
+        JAVA_INT ignoreCount_; \
+        JAVA_OBJECT uris_; \
+        JAVA_OBJECT locator_; \
+        JAVA_OBJECT inclusions_; \
+        JAVA_BOOLEAN savingPrefixes_; \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_pipeline_XIncludeFilter \
+    } gnu_xml_pipeline_XIncludeFilter
+
+struct gnu_xml_pipeline_XIncludeFilter {
+    __TIB_DEFINITION_gnu_xml_pipeline_XIncludeFilter* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_pipeline_XIncludeFilter;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_pipeline_XIncludeFilter
+#define XMLVM_FORWARD_DECL_gnu_xml_pipeline_XIncludeFilter
+typedef struct gnu_xml_pipeline_XIncludeFilter gnu_xml_pipeline_XIncludeFilter;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_pipeline_XIncludeFilter 38
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_setDocumentLocator___org_xml_sax_Locator 24
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_getSystemId__ 37
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_getPublicId__ 36
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_getLineNumber__ 35
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_getColumnNumber__ 34
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_startDocument__ 29
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_endDocument__ 12
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_externalEntityDecl___java_lang_String_java_lang_String_java_lang_String 16
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_startEntity___java_lang_String 31
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_endEntity___java_lang_String 14
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_startElement___java_lang_String_java_lang_String_java_lang_String_org_xml_sax_Attributes 30
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_endElement___java_lang_String_java_lang_String_java_lang_String 13
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_characters___char_1ARRAY_int_int 7
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_processingInstruction___java_lang_String_java_lang_String 23
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_ignorableWhitespace___char_1ARRAY_int_int 20
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_comment___char_1ARRAY_int_int 8
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_startCDATA__ 27
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_endCDATA__ 10
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_startPrefixMapping___java_lang_String_java_lang_String 32
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_endPrefixMapping___java_lang_String 15
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_XIncludeFilter_skippedEntity___java_lang_String 26
+
+void __INIT_gnu_xml_pipeline_XIncludeFilter();
+void __INIT_IMPL_gnu_xml_pipeline_XIncludeFilter();
+void __DELETE_gnu_xml_pipeline_XIncludeFilter(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_pipeline_XIncludeFilter(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_pipeline_XIncludeFilter();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_pipeline_XIncludeFilter();
+void gnu_xml_pipeline_XIncludeFilter___INIT____gnu_xml_pipeline_EventConsumer(JAVA_OBJECT me, JAVA_OBJECT n1);
+void gnu_xml_pipeline_XIncludeFilter_fatal___org_xml_sax_SAXParseException(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 24
+void gnu_xml_pipeline_XIncludeFilter_setDocumentLocator___org_xml_sax_Locator(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 37
+JAVA_OBJECT gnu_xml_pipeline_XIncludeFilter_getSystemId__(JAVA_OBJECT me);
+// Vtable index: 36
+JAVA_OBJECT gnu_xml_pipeline_XIncludeFilter_getPublicId__(JAVA_OBJECT me);
+// Vtable index: 35
+JAVA_INT gnu_xml_pipeline_XIncludeFilter_getLineNumber__(JAVA_OBJECT me);
+// Vtable index: 34
+JAVA_INT gnu_xml_pipeline_XIncludeFilter_getColumnNumber__(JAVA_OBJECT me);
+void gnu_xml_pipeline_XIncludeFilter_setSavingPrefixes___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+JAVA_BOOLEAN gnu_xml_pipeline_XIncludeFilter_isSavingPrefixes__(JAVA_OBJECT me);
+JAVA_OBJECT gnu_xml_pipeline_XIncludeFilter_addMarker___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+void gnu_xml_pipeline_XIncludeFilter_pop___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 29
+void gnu_xml_pipeline_XIncludeFilter_startDocument__(JAVA_OBJECT me);
+// Vtable index: 12
+void gnu_xml_pipeline_XIncludeFilter_endDocument__(JAVA_OBJECT me);
+// Vtable index: 16
+void gnu_xml_pipeline_XIncludeFilter_externalEntityDecl___java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 31
+void gnu_xml_pipeline_XIncludeFilter_startEntity___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 14
+void gnu_xml_pipeline_XIncludeFilter_endEntity___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 30
+void gnu_xml_pipeline_XIncludeFilter_startElement___java_lang_String_java_lang_String_java_lang_String_org_xml_sax_Attributes(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3, JAVA_OBJECT n4);
+// Vtable index: 13
+void gnu_xml_pipeline_XIncludeFilter_endElement___java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 7
+void gnu_xml_pipeline_XIncludeFilter_characters___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+// Vtable index: 23
+void gnu_xml_pipeline_XIncludeFilter_processingInstruction___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 20
+void gnu_xml_pipeline_XIncludeFilter_ignorableWhitespace___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+// Vtable index: 8
+void gnu_xml_pipeline_XIncludeFilter_comment___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+// Vtable index: 27
+void gnu_xml_pipeline_XIncludeFilter_startCDATA__(JAVA_OBJECT me);
+// Vtable index: 10
+void gnu_xml_pipeline_XIncludeFilter_endCDATA__(JAVA_OBJECT me);
+// Vtable index: 32
+void gnu_xml_pipeline_XIncludeFilter_startPrefixMapping___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 15
+void gnu_xml_pipeline_XIncludeFilter_endPrefixMapping___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 26
+void gnu_xml_pipeline_XIncludeFilter_skippedEntity___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+void gnu_xml_pipeline_XIncludeFilter_setLocator___org_xml_sax_Locator(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_pipeline_XIncludeFilter_getLocator__(JAVA_OBJECT me);
+JAVA_OBJECT gnu_xml_pipeline_XIncludeFilter_xinclude___java_net_URL_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT gnu_xml_pipeline_XIncludeFilter_readText___java_net_URL_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+void gnu_xml_pipeline_XIncludeFilter_access$0___gnu_xml_pipeline_XIncludeFilter_org_xml_sax_SAXParseException(JAVA_OBJECT n1, JAVA_OBJECT n2);
+
+#endif

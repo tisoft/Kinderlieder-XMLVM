@@ -1,0 +1,131 @@
+#ifndef __JAVAX_XML_PARSERS_DOCUMENTBUILDER__
+#define __JAVAX_XML_PARSERS_DOCUMENTBUILDER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_javax_xml_parsers_DocumentBuilder 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_io_File
+#define XMLVM_FORWARD_DECL_java_io_File
+XMLVM_FORWARD_DECL(java_io_File)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_FileInputStream
+#define XMLVM_FORWARD_DECL_java_io_FileInputStream
+XMLVM_FORWARD_DECL(java_io_FileInputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_InputStream
+#define XMLVM_FORWARD_DECL_java_io_InputStream
+XMLVM_FORWARD_DECL(java_io_InputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+XMLVM_FORWARD_DECL(java_lang_IllegalArgumentException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_URL
+#define XMLVM_FORWARD_DECL_java_net_URL
+XMLVM_FORWARD_DECL(java_net_URL)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementation
+#define XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementation
+XMLVM_FORWARD_DECL(org_w3c_dom_DOMImplementation)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Document
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Document
+XMLVM_FORWARD_DECL(org_w3c_dom_Document)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_EntityResolver
+#define XMLVM_FORWARD_DECL_org_xml_sax_EntityResolver
+XMLVM_FORWARD_DECL(org_xml_sax_EntityResolver)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_ErrorHandler
+#define XMLVM_FORWARD_DECL_org_xml_sax_ErrorHandler
+XMLVM_FORWARD_DECL(org_xml_sax_ErrorHandler)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_InputSource
+#define XMLVM_FORWARD_DECL_org_xml_sax_InputSource
+XMLVM_FORWARD_DECL(org_xml_sax_InputSource)
+#endif
+// Class declarations for javax.xml.parsers.DocumentBuilder
+XMLVM_DEFINE_CLASS(javax_xml_parsers_DocumentBuilder, 17, XMLVM_ITABLE_SIZE_javax_xml_parsers_DocumentBuilder)
+
+extern JAVA_OBJECT __CLASS_javax_xml_parsers_DocumentBuilder;
+extern JAVA_OBJECT __CLASS_javax_xml_parsers_DocumentBuilder_1ARRAY;
+extern JAVA_OBJECT __CLASS_javax_xml_parsers_DocumentBuilder_2ARRAY;
+extern JAVA_OBJECT __CLASS_javax_xml_parsers_DocumentBuilder_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_javax_xml_parsers_DocumentBuilder
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_javax_xml_parsers_DocumentBuilder \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_javax_xml_parsers_DocumentBuilder \
+    } javax_xml_parsers_DocumentBuilder
+
+struct javax_xml_parsers_DocumentBuilder {
+    __TIB_DEFINITION_javax_xml_parsers_DocumentBuilder* tib;
+    struct {
+        __INSTANCE_FIELDS_javax_xml_parsers_DocumentBuilder;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_javax_xml_parsers_DocumentBuilder
+#define XMLVM_FORWARD_DECL_javax_xml_parsers_DocumentBuilder
+typedef struct javax_xml_parsers_DocumentBuilder javax_xml_parsers_DocumentBuilder;
+#endif
+
+#define XMLVM_VTABLE_SIZE_javax_xml_parsers_DocumentBuilder 17
+#define XMLVM_VTABLE_IDX_javax_xml_parsers_DocumentBuilder_parse___java_io_InputStream 11
+#define XMLVM_VTABLE_IDX_javax_xml_parsers_DocumentBuilder_parse___java_io_InputStream_java_lang_String 12
+#define XMLVM_VTABLE_IDX_javax_xml_parsers_DocumentBuilder_parse___java_lang_String 13
+#define XMLVM_VTABLE_IDX_javax_xml_parsers_DocumentBuilder_parse___org_xml_sax_InputSource 14
+#define XMLVM_VTABLE_IDX_javax_xml_parsers_DocumentBuilder_isNamespaceAware__ 7
+#define XMLVM_VTABLE_IDX_javax_xml_parsers_DocumentBuilder_isValidating__ 8
+#define XMLVM_VTABLE_IDX_javax_xml_parsers_DocumentBuilder_setEntityResolver___org_xml_sax_EntityResolver 15
+#define XMLVM_VTABLE_IDX_javax_xml_parsers_DocumentBuilder_setErrorHandler___org_xml_sax_ErrorHandler 16
+#define XMLVM_VTABLE_IDX_javax_xml_parsers_DocumentBuilder_newDocument__ 10
+#define XMLVM_VTABLE_IDX_javax_xml_parsers_DocumentBuilder_getDOMImplementation__ 6
+#define XMLVM_VTABLE_IDX_javax_xml_parsers_DocumentBuilder_isXIncludeAware__ 9
+
+void __INIT_javax_xml_parsers_DocumentBuilder();
+void __INIT_IMPL_javax_xml_parsers_DocumentBuilder();
+void __DELETE_javax_xml_parsers_DocumentBuilder(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_javax_xml_parsers_DocumentBuilder(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_javax_xml_parsers_DocumentBuilder();
+JAVA_OBJECT __NEW_INSTANCE_javax_xml_parsers_DocumentBuilder();
+void javax_xml_parsers_DocumentBuilder___INIT___(JAVA_OBJECT me);
+// Vtable index: 11
+JAVA_OBJECT javax_xml_parsers_DocumentBuilder_parse___java_io_InputStream(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 12
+JAVA_OBJECT javax_xml_parsers_DocumentBuilder_parse___java_io_InputStream_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 13
+JAVA_OBJECT javax_xml_parsers_DocumentBuilder_parse___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT javax_xml_parsers_DocumentBuilder_parse___java_io_File(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 14
+JAVA_OBJECT javax_xml_parsers_DocumentBuilder_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 7
+JAVA_BOOLEAN javax_xml_parsers_DocumentBuilder_isNamespaceAware__(JAVA_OBJECT me);
+// Vtable index: 8
+JAVA_BOOLEAN javax_xml_parsers_DocumentBuilder_isValidating__(JAVA_OBJECT me);
+// Vtable index: 15
+void javax_xml_parsers_DocumentBuilder_setEntityResolver___org_xml_sax_EntityResolver(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 16
+void javax_xml_parsers_DocumentBuilder_setErrorHandler___org_xml_sax_ErrorHandler(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 10
+JAVA_OBJECT javax_xml_parsers_DocumentBuilder_newDocument__(JAVA_OBJECT me);
+// Vtable index: 6
+JAVA_OBJECT javax_xml_parsers_DocumentBuilder_getDOMImplementation__(JAVA_OBJECT me);
+void javax_xml_parsers_DocumentBuilder_reset__(JAVA_OBJECT me);
+JAVA_OBJECT javax_xml_parsers_DocumentBuilder_getSchema__(JAVA_OBJECT me);
+// Vtable index: 9
+JAVA_BOOLEAN javax_xml_parsers_DocumentBuilder_isXIncludeAware__(JAVA_OBJECT me);
+
+#endif

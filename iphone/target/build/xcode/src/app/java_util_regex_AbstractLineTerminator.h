@@ -1,0 +1,71 @@
+#ifndef __JAVA_UTIL_REGEX_ABSTRACTLINETERMINATOR__
+#define __JAVA_UTIL_REGEX_ABSTRACTLINETERMINATOR__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_regex_AbstractLineTerminator 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_util_regex_AbstractLineTerminator_1
+#define XMLVM_FORWARD_DECL_java_util_regex_AbstractLineTerminator_1
+XMLVM_FORWARD_DECL(java_util_regex_AbstractLineTerminator_1)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_regex_AbstractLineTerminator_2
+#define XMLVM_FORWARD_DECL_java_util_regex_AbstractLineTerminator_2
+XMLVM_FORWARD_DECL(java_util_regex_AbstractLineTerminator_2)
+#endif
+// Class declarations for java.util.regex.AbstractLineTerminator
+XMLVM_DEFINE_CLASS(java_util_regex_AbstractLineTerminator, 8, XMLVM_ITABLE_SIZE_java_util_regex_AbstractLineTerminator)
+
+extern JAVA_OBJECT __CLASS_java_util_regex_AbstractLineTerminator;
+extern JAVA_OBJECT __CLASS_java_util_regex_AbstractLineTerminator_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_regex_AbstractLineTerminator_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_regex_AbstractLineTerminator_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_regex_AbstractLineTerminator
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_regex_AbstractLineTerminator \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_regex_AbstractLineTerminator \
+    } java_util_regex_AbstractLineTerminator
+
+struct java_util_regex_AbstractLineTerminator {
+    __TIB_DEFINITION_java_util_regex_AbstractLineTerminator* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_regex_AbstractLineTerminator;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_regex_AbstractLineTerminator
+#define XMLVM_FORWARD_DECL_java_util_regex_AbstractLineTerminator
+typedef struct java_util_regex_AbstractLineTerminator java_util_regex_AbstractLineTerminator;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_regex_AbstractLineTerminator 8
+#define XMLVM_VTABLE_IDX_java_util_regex_AbstractLineTerminator_isLineTerminator___int 7
+#define XMLVM_VTABLE_IDX_java_util_regex_AbstractLineTerminator_isAfterLineTerminator___int_int 6
+
+void __INIT_java_util_regex_AbstractLineTerminator();
+void __INIT_IMPL_java_util_regex_AbstractLineTerminator();
+void __DELETE_java_util_regex_AbstractLineTerminator(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_regex_AbstractLineTerminator(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_regex_AbstractLineTerminator();
+JAVA_OBJECT __NEW_INSTANCE_java_util_regex_AbstractLineTerminator();
+JAVA_OBJECT java_util_regex_AbstractLineTerminator_GET_unixLT();
+void java_util_regex_AbstractLineTerminator_PUT_unixLT(JAVA_OBJECT v);
+JAVA_OBJECT java_util_regex_AbstractLineTerminator_GET_unicodeLT();
+void java_util_regex_AbstractLineTerminator_PUT_unicodeLT(JAVA_OBJECT v);
+void java_util_regex_AbstractLineTerminator___CLINIT_();
+void java_util_regex_AbstractLineTerminator___INIT___(JAVA_OBJECT me);
+// Vtable index: 7
+JAVA_BOOLEAN java_util_regex_AbstractLineTerminator_isLineTerminator___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 6
+JAVA_BOOLEAN java_util_regex_AbstractLineTerminator_isAfterLineTerminator___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2);
+JAVA_OBJECT java_util_regex_AbstractLineTerminator_getInstance___int(JAVA_INT n1);
+
+#endif

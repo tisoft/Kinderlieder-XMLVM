@@ -1,0 +1,247 @@
+#ifndef __JAVA_TEXT_SIMPLEDATEFORMAT__
+#define __JAVA_TEXT_SIMPLEDATEFORMAT__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_text_SimpleDateFormat 0
+// Implemented interfaces:
+// Super Class:
+#include "java_text_DateFormat.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_java_lang_CPStringBuilder
+#define XMLVM_FORWARD_DECL_gnu_java_lang_CPStringBuilder
+XMLVM_FORWARD_DECL(gnu_java_lang_CPStringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_java_text_AttributedFormatBuffer
+#define XMLVM_FORWARD_DECL_gnu_java_text_AttributedFormatBuffer
+XMLVM_FORWARD_DECL(gnu_java_text_AttributedFormatBuffer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_java_text_FormatBuffer
+#define XMLVM_FORWARD_DECL_gnu_java_text_FormatBuffer
+XMLVM_FORWARD_DECL(gnu_java_text_FormatBuffer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_java_text_FormatCharacterIterator
+#define XMLVM_FORWARD_DECL_gnu_java_text_FormatCharacterIterator
+XMLVM_FORWARD_DECL(gnu_java_text_FormatCharacterIterator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_java_text_StringFormatBuffer
+#define XMLVM_FORWARD_DECL_gnu_java_text_StringFormatBuffer
+XMLVM_FORWARD_DECL(gnu_java_text_StringFormatBuffer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_InvalidObjectException
+#define XMLVM_FORWARD_DECL_java_io_InvalidObjectException
+XMLVM_FORWARD_DECL(java_io_InvalidObjectException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectInputStream
+#define XMLVM_FORWARD_DECL_java_io_ObjectInputStream
+XMLVM_FORWARD_DECL(java_io_ObjectInputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Character
+#define XMLVM_FORWARD_DECL_java_lang_Character
+XMLVM_FORWARD_DECL(java_lang_Character)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+XMLVM_FORWARD_DECL(java_lang_IllegalArgumentException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+XMLVM_FORWARD_DECL(java_lang_IllegalStateException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Integer
+#define XMLVM_FORWARD_DECL_java_lang_Integer
+XMLVM_FORWARD_DECL(java_lang_Integer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Long
+#define XMLVM_FORWARD_DECL_java_lang_Long
+XMLVM_FORWARD_DECL(java_lang_Long)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Math
+#define XMLVM_FORWARD_DECL_java_lang_Math
+XMLVM_FORWARD_DECL(java_lang_Math)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NullPointerException
+#define XMLVM_FORWARD_DECL_java_lang_NullPointerException
+XMLVM_FORWARD_DECL(java_lang_NullPointerException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Number
+#define XMLVM_FORWARD_DECL_java_lang_Number
+XMLVM_FORWARD_DECL(java_lang_Number)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuffer
+#define XMLVM_FORWARD_DECL_java_lang_StringBuffer
+XMLVM_FORWARD_DECL(java_lang_StringBuffer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_text_AttributedCharacterIterator
+#define XMLVM_FORWARD_DECL_java_text_AttributedCharacterIterator
+XMLVM_FORWARD_DECL(java_text_AttributedCharacterIterator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_text_AttributedCharacterIterator_Attribute
+#define XMLVM_FORWARD_DECL_java_text_AttributedCharacterIterator_Attribute
+XMLVM_FORWARD_DECL(java_text_AttributedCharacterIterator_Attribute)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_text_DateFormat_Field
+#define XMLVM_FORWARD_DECL_java_text_DateFormat_Field
+XMLVM_FORWARD_DECL(java_text_DateFormat_Field)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_text_DateFormatSymbols
+#define XMLVM_FORWARD_DECL_java_text_DateFormatSymbols
+XMLVM_FORWARD_DECL(java_text_DateFormatSymbols)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_text_Format_Field
+#define XMLVM_FORWARD_DECL_java_text_Format_Field
+XMLVM_FORWARD_DECL(java_text_Format_Field)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_text_SimpleDateFormat_CompiledField
+#define XMLVM_FORWARD_DECL_java_text_SimpleDateFormat_CompiledField
+XMLVM_FORWARD_DECL(java_text_SimpleDateFormat_CompiledField)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ArrayList
+#define XMLVM_FORWARD_DECL_java_util_ArrayList
+XMLVM_FORWARD_DECL(java_util_ArrayList)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Calendar
+#define XMLVM_FORWARD_DECL_java_util_Calendar
+XMLVM_FORWARD_DECL(java_util_Calendar)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Date
+#define XMLVM_FORWARD_DECL_java_util_Date
+XMLVM_FORWARD_DECL(java_util_Date)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_GregorianCalendar
+#define XMLVM_FORWARD_DECL_java_util_GregorianCalendar
+XMLVM_FORWARD_DECL(java_util_GregorianCalendar)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_HashMap
+#define XMLVM_FORWARD_DECL_java_util_HashMap
+XMLVM_FORWARD_DECL(java_util_HashMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Iterator
+#define XMLVM_FORWARD_DECL_java_util_Iterator
+XMLVM_FORWARD_DECL(java_util_Iterator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Locale
+#define XMLVM_FORWARD_DECL_java_util_Locale
+XMLVM_FORWARD_DECL(java_util_Locale)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_TimeZone
+#define XMLVM_FORWARD_DECL_java_util_TimeZone
+XMLVM_FORWARD_DECL(java_util_TimeZone)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_regex_Matcher
+#define XMLVM_FORWARD_DECL_java_util_regex_Matcher
+XMLVM_FORWARD_DECL(java_util_regex_Matcher)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_regex_Pattern
+#define XMLVM_FORWARD_DECL_java_util_regex_Pattern
+XMLVM_FORWARD_DECL(java_util_regex_Pattern)
+#endif
+// Class declarations for java.text.SimpleDateFormat
+XMLVM_DEFINE_CLASS(java_text_SimpleDateFormat, 11, XMLVM_ITABLE_SIZE_java_text_SimpleDateFormat)
+
+extern JAVA_OBJECT __CLASS_java_text_SimpleDateFormat;
+extern JAVA_OBJECT __CLASS_java_text_SimpleDateFormat_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_text_SimpleDateFormat_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_text_SimpleDateFormat_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_text_SimpleDateFormat
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_text_SimpleDateFormat \
+    __INSTANCE_FIELDS_java_text_DateFormat; \
+    struct { \
+        JAVA_OBJECT tokens_; \
+        JAVA_OBJECT formatData_; \
+        JAVA_OBJECT defaultCenturyStart_; \
+        JAVA_INT defaultCentury_; \
+        JAVA_OBJECT pattern_; \
+        JAVA_INT serialVersionOnStream_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_text_SimpleDateFormat \
+    } java_text_SimpleDateFormat
+
+struct java_text_SimpleDateFormat {
+    __TIB_DEFINITION_java_text_SimpleDateFormat* tib;
+    struct {
+        __INSTANCE_FIELDS_java_text_SimpleDateFormat;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_text_SimpleDateFormat
+#define XMLVM_FORWARD_DECL_java_text_SimpleDateFormat
+typedef struct java_text_SimpleDateFormat java_text_SimpleDateFormat;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_text_SimpleDateFormat 11
+#define XMLVM_VTABLE_IDX_java_text_SimpleDateFormat_toString__ 5
+#define XMLVM_VTABLE_IDX_java_text_SimpleDateFormat_equals___java_lang_Object 1
+#define XMLVM_VTABLE_IDX_java_text_SimpleDateFormat_hashCode__ 4
+#define XMLVM_VTABLE_IDX_java_text_SimpleDateFormat_format___java_util_Date_java_lang_StringBuffer_java_text_FieldPosition 9
+#define XMLVM_VTABLE_IDX_java_text_SimpleDateFormat_formatToCharacterIterator___java_lang_Object 6
+#define XMLVM_VTABLE_IDX_java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParsePosition 10
+#define XMLVM_VTABLE_IDX_java_text_SimpleDateFormat_clone__ 0
+
+void __INIT_java_text_SimpleDateFormat();
+void __INIT_IMPL_java_text_SimpleDateFormat();
+void __DELETE_java_text_SimpleDateFormat(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_text_SimpleDateFormat(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_text_SimpleDateFormat();
+JAVA_OBJECT __NEW_INSTANCE_java_text_SimpleDateFormat();
+JAVA_LONG java_text_SimpleDateFormat_GET_serialVersionUID();
+void java_text_SimpleDateFormat_PUT_serialVersionUID(JAVA_LONG v);
+JAVA_OBJECT java_text_SimpleDateFormat_GET_standardChars();
+void java_text_SimpleDateFormat_PUT_standardChars(JAVA_OBJECT v);
+JAVA_INT java_text_SimpleDateFormat_GET_RFC822_TIMEZONE_FIELD();
+void java_text_SimpleDateFormat_PUT_RFC822_TIMEZONE_FIELD(JAVA_INT v);
+void java_text_SimpleDateFormat_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_text_SimpleDateFormat_compileFormat___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 5
+JAVA_OBJECT java_text_SimpleDateFormat_toString__(JAVA_OBJECT me);
+void java_text_SimpleDateFormat___INIT___(JAVA_OBJECT me);
+void java_text_SimpleDateFormat___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_text_SimpleDateFormat___INIT____java_lang_String_java_util_Locale(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+void java_text_SimpleDateFormat___INIT____java_lang_String_java_text_DateFormatSymbols(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT java_text_SimpleDateFormat_toPattern__(JAVA_OBJECT me);
+JAVA_OBJECT java_text_SimpleDateFormat_toLocalizedPattern__(JAVA_OBJECT me);
+void java_text_SimpleDateFormat_applyPattern___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_text_SimpleDateFormat_applyLocalizedPattern___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT java_text_SimpleDateFormat_translateLocalizedPattern___java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+JAVA_OBJECT java_text_SimpleDateFormat_get2DigitYearStart__(JAVA_OBJECT me);
+void java_text_SimpleDateFormat_set2DigitYearStart___java_util_Date(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT java_text_SimpleDateFormat_getDateFormatSymbols__(JAVA_OBJECT me);
+void java_text_SimpleDateFormat_setDateFormatSymbols___java_text_DateFormatSymbols(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 1
+JAVA_BOOLEAN java_text_SimpleDateFormat_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 4
+JAVA_INT java_text_SimpleDateFormat_hashCode__(JAVA_OBJECT me);
+void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_text_FormatBuffer_java_text_FieldPosition(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 9
+JAVA_OBJECT java_text_SimpleDateFormat_format___java_util_Date_java_lang_StringBuffer_java_text_FieldPosition(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 6
+JAVA_OBJECT java_text_SimpleDateFormat_formatToCharacterIterator___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_text_SimpleDateFormat_withLeadingZeros___int_int_gnu_java_text_FormatBuffer(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2, JAVA_OBJECT n3);
+JAVA_BOOLEAN java_text_SimpleDateFormat_expect___java_lang_String_java_text_ParsePosition_char(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_CHAR n3);
+// Vtable index: 10
+JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParsePosition(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT java_text_SimpleDateFormat_computeOffset___java_lang_String_java_text_ParsePosition(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+void java_text_SimpleDateFormat_computeCenturyStart__(JAVA_OBJECT me);
+// Vtable index: 0
+JAVA_OBJECT java_text_SimpleDateFormat_clone__(JAVA_OBJECT me);
+
+#endif

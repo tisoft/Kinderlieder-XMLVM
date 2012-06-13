@@ -1,0 +1,51 @@
+#ifndef __ORG_W3C_DOM_EVENTS_EVENT__
+#define __ORG_W3C_DOM_EVENTS_EVENT__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_Event_getType__ 6
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_Event_getTarget__ 4
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_Event_getCurrentTarget__ 2
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_Event_getEventPhase__ 3
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_Event_getBubbles__ 0
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_Event_getCancelable__ 1
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_Event_getTimeStamp__ 5
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_Event_stopPropagation__ 9
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_Event_preventDefault__ 8
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_Event_initEvent___java_lang_String_boolean_boolean 7
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_events_EventTarget
+#define XMLVM_FORWARD_DECL_org_w3c_dom_events_EventTarget
+XMLVM_FORWARD_DECL(org_w3c_dom_events_EventTarget)
+#endif
+
+XMLVM_DEFINE_CLASS(org_w3c_dom_events_Event, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_w3c_dom_events_Event;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_events_Event_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_events_Event_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_events_Event_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_events_Event
+#define XMLVM_FORWARD_DECL_org_w3c_dom_events_Event
+typedef struct org_w3c_dom_events_Event org_w3c_dom_events_Event;
+#endif
+
+void __INIT_org_w3c_dom_events_Event();
+void __INIT_IMPL_org_w3c_dom_events_Event();
+JAVA_SHORT org_w3c_dom_events_Event_GET_CAPTURING_PHASE();
+void org_w3c_dom_events_Event_PUT_CAPTURING_PHASE(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_events_Event_GET_AT_TARGET();
+void org_w3c_dom_events_Event_PUT_AT_TARGET(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_events_Event_GET_BUBBLING_PHASE();
+void org_w3c_dom_events_Event_PUT_BUBBLING_PHASE(JAVA_SHORT v);
+
+#endif

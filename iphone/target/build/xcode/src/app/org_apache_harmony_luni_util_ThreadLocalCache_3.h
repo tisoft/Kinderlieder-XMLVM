@@ -1,0 +1,62 @@
+#ifndef __ORG_APACHE_HARMONY_LUNI_UTIL_THREADLOCALCACHE_3__
+#define __ORG_APACHE_HARMONY_LUNI_UTIL_THREADLOCALCACHE_3__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_apache_harmony_luni_util_ThreadLocalCache_3 0
+// Implemented interfaces:
+// Super Class:
+#include "org_apache_harmony_luni_util_ThreadLocalCache.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_ByteBuffer
+#define XMLVM_FORWARD_DECL_java_nio_ByteBuffer
+XMLVM_FORWARD_DECL(java_nio_ByteBuffer)
+#endif
+// Class declarations for org.apache.harmony.luni.util.ThreadLocalCache$3
+XMLVM_DEFINE_CLASS(org_apache_harmony_luni_util_ThreadLocalCache_3, 7, XMLVM_ITABLE_SIZE_org_apache_harmony_luni_util_ThreadLocalCache_3)
+
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_ThreadLocalCache_3;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_ThreadLocalCache_3_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_ThreadLocalCache_3_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_ThreadLocalCache_3_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_util_ThreadLocalCache_3
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_apache_harmony_luni_util_ThreadLocalCache_3 \
+    __INSTANCE_FIELDS_org_apache_harmony_luni_util_ThreadLocalCache; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_util_ThreadLocalCache_3 \
+    } org_apache_harmony_luni_util_ThreadLocalCache_3
+
+struct org_apache_harmony_luni_util_ThreadLocalCache_3 {
+    __TIB_DEFINITION_org_apache_harmony_luni_util_ThreadLocalCache_3* tib;
+    struct {
+        __INSTANCE_FIELDS_org_apache_harmony_luni_util_ThreadLocalCache_3;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_ThreadLocalCache_3
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_ThreadLocalCache_3
+typedef struct org_apache_harmony_luni_util_ThreadLocalCache_3 org_apache_harmony_luni_util_ThreadLocalCache_3;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_apache_harmony_luni_util_ThreadLocalCache_3 7
+#define XMLVM_VTABLE_IDX_org_apache_harmony_luni_util_ThreadLocalCache_3_initialValue__ 6
+
+void __INIT_org_apache_harmony_luni_util_ThreadLocalCache_3();
+void __INIT_IMPL_org_apache_harmony_luni_util_ThreadLocalCache_3();
+void __DELETE_org_apache_harmony_luni_util_ThreadLocalCache_3(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_apache_harmony_luni_util_ThreadLocalCache_3(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_apache_harmony_luni_util_ThreadLocalCache_3();
+JAVA_OBJECT __NEW_INSTANCE_org_apache_harmony_luni_util_ThreadLocalCache_3();
+void org_apache_harmony_luni_util_ThreadLocalCache_3___INIT___(JAVA_OBJECT me);
+// Vtable index: 6
+JAVA_OBJECT org_apache_harmony_luni_util_ThreadLocalCache_3_initialValue__(JAVA_OBJECT me);
+
+#endif

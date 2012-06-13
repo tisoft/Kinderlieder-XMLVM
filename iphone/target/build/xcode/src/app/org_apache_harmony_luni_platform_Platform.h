@@ -1,0 +1,86 @@
+#ifndef __ORG_APACHE_HARMONY_LUNI_PLATFORM_PLATFORM__
+#define __ORG_APACHE_HARMONY_LUNI_PLATFORM_PLATFORM__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_apache_harmony_luni_platform_Platform 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_platform_IFileSystem
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_platform_IFileSystem
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_platform_IFileSystem)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_platform_IMemorySystem
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_platform_IMemorySystem
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_platform_IMemorySystem)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_platform_INetworkSystem
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_platform_INetworkSystem
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_platform_INetworkSystem)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_platform_OSFileSystem
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_platform_OSFileSystem
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_platform_OSFileSystem)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_platform_OSMemory
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_platform_OSMemory
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_platform_OSMemory)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_platform_OSNetworkSystem
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_platform_OSNetworkSystem
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_platform_OSNetworkSystem)
+#endif
+// Class declarations for org.apache.harmony.luni.platform.Platform
+XMLVM_DEFINE_CLASS(org_apache_harmony_luni_platform_Platform, 6, XMLVM_ITABLE_SIZE_org_apache_harmony_luni_platform_Platform)
+
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_platform_Platform;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_platform_Platform_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_platform_Platform_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_platform_Platform_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_platform_Platform
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_apache_harmony_luni_platform_Platform \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_platform_Platform \
+    } org_apache_harmony_luni_platform_Platform
+
+struct org_apache_harmony_luni_platform_Platform {
+    __TIB_DEFINITION_org_apache_harmony_luni_platform_Platform* tib;
+    struct {
+        __INSTANCE_FIELDS_org_apache_harmony_luni_platform_Platform;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_platform_Platform
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_platform_Platform
+typedef struct org_apache_harmony_luni_platform_Platform org_apache_harmony_luni_platform_Platform;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_apache_harmony_luni_platform_Platform 6
+
+void __INIT_org_apache_harmony_luni_platform_Platform();
+void __INIT_IMPL_org_apache_harmony_luni_platform_Platform();
+void __DELETE_org_apache_harmony_luni_platform_Platform(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_apache_harmony_luni_platform_Platform(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_apache_harmony_luni_platform_Platform();
+JAVA_OBJECT __NEW_INSTANCE_org_apache_harmony_luni_platform_Platform();
+JAVA_OBJECT org_apache_harmony_luni_platform_Platform_GET_FILE_SYSTEM();
+void org_apache_harmony_luni_platform_Platform_PUT_FILE_SYSTEM(JAVA_OBJECT v);
+JAVA_OBJECT org_apache_harmony_luni_platform_Platform_GET_MEMORY_SYSTEM();
+void org_apache_harmony_luni_platform_Platform_PUT_MEMORY_SYSTEM(JAVA_OBJECT v);
+JAVA_OBJECT org_apache_harmony_luni_platform_Platform_GET_NETWORK_SYSTEM();
+void org_apache_harmony_luni_platform_Platform_PUT_NETWORK_SYSTEM(JAVA_OBJECT v);
+void org_apache_harmony_luni_platform_Platform___INIT___(JAVA_OBJECT me);
+void org_apache_harmony_luni_platform_Platform_accessCheck__();
+JAVA_OBJECT org_apache_harmony_luni_platform_Platform_getFileSystem__();
+JAVA_OBJECT org_apache_harmony_luni_platform_Platform_getMemorySystem__();
+JAVA_OBJECT org_apache_harmony_luni_platform_Platform_getNetworkSystem__();
+void org_apache_harmony_luni_platform_Platform___CLINIT_();
+
+#endif

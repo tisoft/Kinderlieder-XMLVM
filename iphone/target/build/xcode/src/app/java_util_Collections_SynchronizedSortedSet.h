@@ -1,0 +1,91 @@
+#ifndef __JAVA_UTIL_COLLECTIONS_SYNCHRONIZEDSORTEDSET__
+#define __JAVA_UTIL_COLLECTIONS_SYNCHRONIZEDSORTEDSET__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_Collections_SynchronizedSortedSet 84
+// Implemented interfaces:
+#include "java_util_SortedSet.h"
+// Super Class:
+#include "java_util_Collections_SynchronizedSet.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectOutputStream
+#define XMLVM_FORWARD_DECL_java_io_ObjectOutputStream
+XMLVM_FORWARD_DECL(java_io_ObjectOutputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Comparator
+#define XMLVM_FORWARD_DECL_java_util_Comparator
+XMLVM_FORWARD_DECL(java_util_Comparator)
+#endif
+// Class declarations for java.util.Collections$SynchronizedSortedSet
+XMLVM_DEFINE_CLASS(java_util_Collections_SynchronizedSortedSet, 25, XMLVM_ITABLE_SIZE_java_util_Collections_SynchronizedSortedSet)
+
+extern JAVA_OBJECT __CLASS_java_util_Collections_SynchronizedSortedSet;
+extern JAVA_OBJECT __CLASS_java_util_Collections_SynchronizedSortedSet_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_Collections_SynchronizedSortedSet_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_Collections_SynchronizedSortedSet_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_Collections_SynchronizedSortedSet
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_Collections_SynchronizedSortedSet \
+    __INSTANCE_FIELDS_java_util_Collections_SynchronizedSet; \
+    struct { \
+        JAVA_OBJECT ss_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_Collections_SynchronizedSortedSet \
+    } java_util_Collections_SynchronizedSortedSet
+
+struct java_util_Collections_SynchronizedSortedSet {
+    __TIB_DEFINITION_java_util_Collections_SynchronizedSortedSet* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_Collections_SynchronizedSortedSet;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_Collections_SynchronizedSortedSet
+#define XMLVM_FORWARD_DECL_java_util_Collections_SynchronizedSortedSet
+typedef struct java_util_Collections_SynchronizedSortedSet java_util_Collections_SynchronizedSortedSet;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_Collections_SynchronizedSortedSet 25
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedSortedSet_comparator__ 19
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedSortedSet_first__ 20
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedSortedSet_headSet___java_lang_Object 21
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedSortedSet_last__ 22
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedSortedSet_subSet___java_lang_Object_java_lang_Object 23
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedSortedSet_tailSet___java_lang_Object 24
+
+void __INIT_java_util_Collections_SynchronizedSortedSet();
+void __INIT_IMPL_java_util_Collections_SynchronizedSortedSet();
+void __DELETE_java_util_Collections_SynchronizedSortedSet(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_Collections_SynchronizedSortedSet(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_Collections_SynchronizedSortedSet();
+JAVA_OBJECT __NEW_INSTANCE_java_util_Collections_SynchronizedSortedSet();
+JAVA_LONG java_util_Collections_SynchronizedSortedSet_GET_serialVersionUID();
+void java_util_Collections_SynchronizedSortedSet_PUT_serialVersionUID(JAVA_LONG v);
+void java_util_Collections_SynchronizedSortedSet___INIT____java_util_SortedSet(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_util_Collections_SynchronizedSortedSet___INIT____java_util_SortedSet_java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 19
+JAVA_OBJECT java_util_Collections_SynchronizedSortedSet_comparator__(JAVA_OBJECT me);
+// Vtable index: 20
+JAVA_OBJECT java_util_Collections_SynchronizedSortedSet_first__(JAVA_OBJECT me);
+// Vtable index: 21
+JAVA_OBJECT java_util_Collections_SynchronizedSortedSet_headSet___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 22
+JAVA_OBJECT java_util_Collections_SynchronizedSortedSet_last__(JAVA_OBJECT me);
+// Vtable index: 23
+JAVA_OBJECT java_util_Collections_SynchronizedSortedSet_subSet___java_lang_Object_java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 24
+JAVA_OBJECT java_util_Collections_SynchronizedSortedSet_tailSet___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_util_Collections_SynchronizedSortedSet_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

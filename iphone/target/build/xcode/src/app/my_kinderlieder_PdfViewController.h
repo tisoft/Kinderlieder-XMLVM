@@ -1,0 +1,180 @@
+#ifndef __MY_KINDERLIEDER_PDFVIEWCONTROLLER__
+#define __MY_KINDERLIEDER_PDFVIEWCONTROLLER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_my_kinderlieder_PdfViewController 0
+// Implemented interfaces:
+// Super Class:
+#include "my_kinderlieder_RotatingViewController.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_io_File
+#define XMLVM_FORWARD_DECL_java_io_File
+XMLVM_FORWARD_DECL(java_io_File)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ArrayList
+#define XMLVM_FORWARD_DECL_java_util_ArrayList
+XMLVM_FORWARD_DECL(java_util_ArrayList)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Arrays
+#define XMLVM_FORWARD_DECL_java_util_Arrays
+XMLVM_FORWARD_DECL(java_util_Arrays)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_HashMap
+#define XMLVM_FORWARD_DECL_java_util_HashMap
+XMLVM_FORWARD_DECL(java_util_HashMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_List
+#define XMLVM_FORWARD_DECL_java_util_List
+XMLVM_FORWARD_DECL(java_util_List)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Map
+#define XMLVM_FORWARD_DECL_java_util_Map
+XMLVM_FORWARD_DECL(java_util_Map)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_Library
+#define XMLVM_FORWARD_DECL_my_kinderlieder_Library
+XMLVM_FORWARD_DECL(my_kinderlieder_Library)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_Main
+#define XMLVM_FORWARD_DECL_my_kinderlieder_Main
+XMLVM_FORWARD_DECL(my_kinderlieder_Main)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_MusicInfo
+#define XMLVM_FORWARD_DECL_my_kinderlieder_MusicInfo
+XMLVM_FORWARD_DECL(my_kinderlieder_MusicInfo)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_PdfViewController_1
+#define XMLVM_FORWARD_DECL_my_kinderlieder_PdfViewController_1
+XMLVM_FORWARD_DECL(my_kinderlieder_PdfViewController_1)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_PdfViewController_2
+#define XMLVM_FORWARD_DECL_my_kinderlieder_PdfViewController_2
+XMLVM_FORWARD_DECL(my_kinderlieder_PdfViewController_2)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_PdfViewController_3
+#define XMLVM_FORWARD_DECL_my_kinderlieder_PdfViewController_3
+XMLVM_FORWARD_DECL(my_kinderlieder_PdfViewController_3)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_PdfViewController_4
+#define XMLVM_FORWARD_DECL_my_kinderlieder_PdfViewController_4
+XMLVM_FORWARD_DECL(my_kinderlieder_PdfViewController_4)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_PdfViewController_5
+#define XMLVM_FORWARD_DECL_my_kinderlieder_PdfViewController_5
+XMLVM_FORWARD_DECL(my_kinderlieder_PdfViewController_5)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_SongInfo
+#define XMLVM_FORWARD_DECL_my_kinderlieder_SongInfo
+XMLVM_FORWARD_DECL(my_kinderlieder_SongInfo)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_AVAudioPlayer
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_AVAudioPlayer
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_AVAudioPlayer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_CGRect
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_CGRect
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_CGRect)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSURL
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSURL
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_NSURL)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSURLRequest
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSURLRequest
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_NSURLRequest)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIBarButtonItem
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIBarButtonItem
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_UIBarButtonItem)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIImage
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIImage
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_UIImage)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UINavigationItem
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UINavigationItem
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_UINavigationItem)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIPrintInteractionController
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIPrintInteractionController
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_UIPrintInteractionController)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIWebView
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIWebView
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_UIWebView)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIWindow
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIWindow
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_UIWindow)
+#endif
+// Class declarations for my.kinderlieder.PdfViewController
+XMLVM_DEFINE_CLASS(my_kinderlieder_PdfViewController, 12, XMLVM_ITABLE_SIZE_my_kinderlieder_PdfViewController)
+
+extern JAVA_OBJECT __CLASS_my_kinderlieder_PdfViewController;
+extern JAVA_OBJECT __CLASS_my_kinderlieder_PdfViewController_1ARRAY;
+extern JAVA_OBJECT __CLASS_my_kinderlieder_PdfViewController_2ARRAY;
+extern JAVA_OBJECT __CLASS_my_kinderlieder_PdfViewController_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_my_kinderlieder_PdfViewController
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_my_kinderlieder_PdfViewController \
+    __INSTANCE_FIELDS_my_kinderlieder_RotatingViewController; \
+    struct { \
+        JAVA_OBJECT rightBarButtonItem_; \
+        JAVA_OBJECT repeatButton_; \
+        JAVA_OBJECT buttonsPlay_; \
+        JAVA_OBJECT buttonsPauseStop_; \
+        JAVA_OBJECT buttonsPlayStop_; \
+        JAVA_BOOLEAN repeat_; \
+        JAVA_OBJECT songInfo_; \
+        JAVA_OBJECT playButton_; \
+        JAVA_OBJECT requests_; \
+        JAVA_OBJECT pdfView_; \
+        JAVA_OBJECT pauseButton_; \
+        JAVA_OBJECT stopButton_; \
+        __ADDITIONAL_INSTANCE_FIELDS_my_kinderlieder_PdfViewController \
+    } my_kinderlieder_PdfViewController
+
+struct my_kinderlieder_PdfViewController {
+    __TIB_DEFINITION_my_kinderlieder_PdfViewController* tib;
+    struct {
+        __INSTANCE_FIELDS_my_kinderlieder_PdfViewController;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_PdfViewController
+#define XMLVM_FORWARD_DECL_my_kinderlieder_PdfViewController
+typedef struct my_kinderlieder_PdfViewController my_kinderlieder_PdfViewController;
+#endif
+
+#define XMLVM_VTABLE_SIZE_my_kinderlieder_PdfViewController 12
+
+void __INIT_my_kinderlieder_PdfViewController();
+void __INIT_IMPL_my_kinderlieder_PdfViewController();
+void __DELETE_my_kinderlieder_PdfViewController(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_my_kinderlieder_PdfViewController(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_my_kinderlieder_PdfViewController();
+JAVA_OBJECT __NEW_INSTANCE_my_kinderlieder_PdfViewController();
+void my_kinderlieder_PdfViewController___INIT____org_xmlvm_iphone_UIWindow(JAVA_OBJECT me, JAVA_OBJECT n1);
+void my_kinderlieder_PdfViewController_show___my_kinderlieder_SongInfo(JAVA_OBJECT me, JAVA_OBJECT n1);
+void my_kinderlieder_PdfViewController_updateRepeatMode__(JAVA_OBJECT me);
+void my_kinderlieder_PdfViewController_stop__(JAVA_OBJECT me);
+JAVA_OBJECT my_kinderlieder_PdfViewController_access$000___my_kinderlieder_PdfViewController(JAVA_OBJECT n1);
+JAVA_OBJECT my_kinderlieder_PdfViewController_access$200___my_kinderlieder_PdfViewController(JAVA_OBJECT n1);
+void my_kinderlieder_PdfViewController_access$300___my_kinderlieder_PdfViewController(JAVA_OBJECT n1);
+void my_kinderlieder_PdfViewController_access$400___my_kinderlieder_PdfViewController(JAVA_OBJECT n1);
+JAVA_OBJECT my_kinderlieder_PdfViewController_access$500___my_kinderlieder_PdfViewController(JAVA_OBJECT n1);
+JAVA_OBJECT my_kinderlieder_PdfViewController_access$600___my_kinderlieder_PdfViewController(JAVA_OBJECT n1);
+
+#endif

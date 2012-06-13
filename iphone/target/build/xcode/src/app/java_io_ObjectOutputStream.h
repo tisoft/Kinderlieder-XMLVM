@@ -1,0 +1,337 @@
+#ifndef __JAVA_IO_OBJECTOUTPUTSTREAM__
+#define __JAVA_IO_OBJECTOUTPUTSTREAM__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_io_ObjectOutputStream 33
+// Implemented interfaces:
+#include "java_io_ObjectOutput.h"
+#include "java_io_ObjectStreamConstants.h"
+// Super Class:
+#include "java_io_OutputStream.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_io_ByteArrayOutputStream
+#define XMLVM_FORWARD_DECL_java_io_ByteArrayOutputStream
+XMLVM_FORWARD_DECL(java_io_ByteArrayOutputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_DataOutputStream
+#define XMLVM_FORWARD_DECL_java_io_DataOutputStream
+XMLVM_FORWARD_DECL(java_io_DataOutputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_EmulatedFields
+#define XMLVM_FORWARD_DECL_java_io_EmulatedFields
+XMLVM_FORWARD_DECL(java_io_EmulatedFields)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_EmulatedFields_ObjectSlot
+#define XMLVM_FORWARD_DECL_java_io_EmulatedFields_ObjectSlot
+XMLVM_FORWARD_DECL(java_io_EmulatedFields_ObjectSlot)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_EmulatedFieldsForDumping
+#define XMLVM_FORWARD_DECL_java_io_EmulatedFieldsForDumping
+XMLVM_FORWARD_DECL(java_io_EmulatedFieldsForDumping)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_Externalizable
+#define XMLVM_FORWARD_DECL_java_io_Externalizable
+XMLVM_FORWARD_DECL(java_io_Externalizable)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_IOException
+#define XMLVM_FORWARD_DECL_java_io_IOException
+XMLVM_FORWARD_DECL(java_io_IOException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_InvalidClassException
+#define XMLVM_FORWARD_DECL_java_io_InvalidClassException
+XMLVM_FORWARD_DECL(java_io_InvalidClassException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_NotActiveException
+#define XMLVM_FORWARD_DECL_java_io_NotActiveException
+XMLVM_FORWARD_DECL(java_io_NotActiveException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_NotSerializableException
+#define XMLVM_FORWARD_DECL_java_io_NotSerializableException
+XMLVM_FORWARD_DECL(java_io_NotSerializableException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectOutputStream_PutField
+#define XMLVM_FORWARD_DECL_java_io_ObjectOutputStream_PutField
+XMLVM_FORWARD_DECL(java_io_ObjectOutputStream_PutField)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectStreamClass
+#define XMLVM_FORWARD_DECL_java_io_ObjectStreamClass
+XMLVM_FORWARD_DECL(java_io_ObjectStreamClass)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectStreamException
+#define XMLVM_FORWARD_DECL_java_io_ObjectStreamException
+XMLVM_FORWARD_DECL(java_io_ObjectStreamException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectStreamField
+#define XMLVM_FORWARD_DECL_java_io_ObjectStreamField
+XMLVM_FORWARD_DECL(java_io_ObjectStreamField)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_SerializablePermission
+#define XMLVM_FORWARD_DECL_java_io_SerializablePermission
+XMLVM_FORWARD_DECL(java_io_SerializablePermission)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_StreamCorruptedException
+#define XMLVM_FORWARD_DECL_java_io_StreamCorruptedException
+XMLVM_FORWARD_DECL(java_io_StreamCorruptedException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Boolean
+#define XMLVM_FORWARD_DECL_java_lang_Boolean
+XMLVM_FORWARD_DECL(java_lang_Boolean)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Byte
+#define XMLVM_FORWARD_DECL_java_lang_Byte
+XMLVM_FORWARD_DECL(java_lang_Byte)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Character
+#define XMLVM_FORWARD_DECL_java_lang_Character
+XMLVM_FORWARD_DECL(java_lang_Character)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Double
+#define XMLVM_FORWARD_DECL_java_lang_Double
+XMLVM_FORWARD_DECL(java_lang_Double)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Enum
+#define XMLVM_FORWARD_DECL_java_lang_Enum
+XMLVM_FORWARD_DECL(java_lang_Enum)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Error
+#define XMLVM_FORWARD_DECL_java_lang_Error
+XMLVM_FORWARD_DECL(java_lang_Error)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Exception
+#define XMLVM_FORWARD_DECL_java_lang_Exception
+XMLVM_FORWARD_DECL(java_lang_Exception)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Float
+#define XMLVM_FORWARD_DECL_java_lang_Float
+XMLVM_FORWARD_DECL(java_lang_Float)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalAccessException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalAccessException
+XMLVM_FORWARD_DECL(java_lang_IllegalAccessException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+XMLVM_FORWARD_DECL(java_lang_IllegalArgumentException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+XMLVM_FORWARD_DECL(java_lang_IllegalStateException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Integer
+#define XMLVM_FORWARD_DECL_java_lang_Integer
+XMLVM_FORWARD_DECL(java_lang_Integer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Long
+#define XMLVM_FORWARD_DECL_java_lang_Long
+XMLVM_FORWARD_DECL(java_lang_Long)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NoSuchFieldError
+#define XMLVM_FORWARD_DECL_java_lang_NoSuchFieldError
+XMLVM_FORWARD_DECL(java_lang_NoSuchFieldError)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NoSuchMethodException
+#define XMLVM_FORWARD_DECL_java_lang_NoSuchMethodException
+XMLVM_FORWARD_DECL(java_lang_NoSuchMethodException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_RuntimeException
+#define XMLVM_FORWARD_DECL_java_lang_RuntimeException
+XMLVM_FORWARD_DECL(java_lang_RuntimeException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_SecurityManager
+#define XMLVM_FORWARD_DECL_java_lang_SecurityManager
+XMLVM_FORWARD_DECL(java_lang_SecurityManager)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Short
+#define XMLVM_FORWARD_DECL_java_lang_Short
+XMLVM_FORWARD_DECL(java_lang_Short)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_System
+#define XMLVM_FORWARD_DECL_java_lang_System
+XMLVM_FORWARD_DECL(java_lang_System)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Throwable
+#define XMLVM_FORWARD_DECL_java_lang_Throwable
+XMLVM_FORWARD_DECL(java_lang_Throwable)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_InvocationTargetException
+#define XMLVM_FORWARD_DECL_java_lang_reflect_InvocationTargetException
+XMLVM_FORWARD_DECL(java_lang_reflect_InvocationTargetException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Method
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Method
+XMLVM_FORWARD_DECL(java_lang_reflect_Method)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Proxy
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Proxy
+XMLVM_FORWARD_DECL(java_lang_reflect_Proxy)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_IdentityHashMap
+#define XMLVM_FORWARD_DECL_java_util_IdentityHashMap
+XMLVM_FORWARD_DECL(java_util_IdentityHashMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_internal_nls_Messages
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_internal_nls_Messages
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_internal_nls_Messages)
+#endif
+// Class declarations for java.io.ObjectOutputStream
+XMLVM_DEFINE_CLASS(java_io_ObjectOutputStream, 24, XMLVM_ITABLE_SIZE_java_io_ObjectOutputStream)
+
+extern JAVA_OBJECT __CLASS_java_io_ObjectOutputStream;
+extern JAVA_OBJECT __CLASS_java_io_ObjectOutputStream_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_io_ObjectOutputStream_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_io_ObjectOutputStream_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_io_ObjectOutputStream
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_io_ObjectOutputStream \
+    __INSTANCE_FIELDS_java_io_OutputStream; \
+    struct { \
+        JAVA_INT nestedLevels_; \
+        JAVA_OBJECT output_; \
+        JAVA_BOOLEAN enableReplace_; \
+        JAVA_OBJECT primitiveTypes_; \
+        JAVA_OBJECT primitiveTypesBuffer_; \
+        JAVA_OBJECT objectsWritten_; \
+        JAVA_INT currentHandle_; \
+        JAVA_OBJECT currentObject_; \
+        JAVA_OBJECT currentClass_; \
+        JAVA_INT protocolVersion_; \
+        JAVA_OBJECT nestedException_; \
+        JAVA_OBJECT currentPutField_; \
+        JAVA_BOOLEAN subclassOverridingImplementation_; \
+        JAVA_OBJECT accessor_; \
+        JAVA_OBJECT proxyClassDesc_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_io_ObjectOutputStream \
+    } java_io_ObjectOutputStream
+
+struct java_io_ObjectOutputStream {
+    __TIB_DEFINITION_java_io_ObjectOutputStream* tib;
+    struct {
+        __INSTANCE_FIELDS_java_io_ObjectOutputStream;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectOutputStream
+#define XMLVM_FORWARD_DECL_java_io_ObjectOutputStream
+typedef struct java_io_ObjectOutputStream java_io_ObjectOutputStream;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_io_ObjectOutputStream 24
+#define XMLVM_VTABLE_IDX_java_io_ObjectOutputStream_close__ 7
+#define XMLVM_VTABLE_IDX_java_io_ObjectOutputStream_flush__ 8
+#define XMLVM_VTABLE_IDX_java_io_ObjectOutputStream_write___byte_1ARRAY 9
+#define XMLVM_VTABLE_IDX_java_io_ObjectOutputStream_write___byte_1ARRAY_int_int 10
+#define XMLVM_VTABLE_IDX_java_io_ObjectOutputStream_write___int 11
+#define XMLVM_VTABLE_IDX_java_io_ObjectOutputStream_writeBoolean___boolean 12
+#define XMLVM_VTABLE_IDX_java_io_ObjectOutputStream_writeByte___int 13
+#define XMLVM_VTABLE_IDX_java_io_ObjectOutputStream_writeBytes___java_lang_String 14
+#define XMLVM_VTABLE_IDX_java_io_ObjectOutputStream_writeChar___int 15
+#define XMLVM_VTABLE_IDX_java_io_ObjectOutputStream_writeChars___java_lang_String 16
+#define XMLVM_VTABLE_IDX_java_io_ObjectOutputStream_writeDouble___double 17
+#define XMLVM_VTABLE_IDX_java_io_ObjectOutputStream_writeFloat___float 18
+#define XMLVM_VTABLE_IDX_java_io_ObjectOutputStream_writeInt___int 19
+#define XMLVM_VTABLE_IDX_java_io_ObjectOutputStream_writeLong___long 20
+#define XMLVM_VTABLE_IDX_java_io_ObjectOutputStream_writeObject___java_lang_Object 21
+#define XMLVM_VTABLE_IDX_java_io_ObjectOutputStream_writeShort___int 22
+#define XMLVM_VTABLE_IDX_java_io_ObjectOutputStream_writeUTF___java_lang_String 23
+
+void __INIT_java_io_ObjectOutputStream();
+void __INIT_IMPL_java_io_ObjectOutputStream();
+void __DELETE_java_io_ObjectOutputStream(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_io_ObjectOutputStream(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_io_ObjectOutputStream();
+JAVA_OBJECT __NEW_INSTANCE_java_io_ObjectOutputStream();
+JAVA_BYTE java_io_ObjectOutputStream_GET_NOT_SC_BLOCK_DATA();
+void java_io_ObjectOutputStream_PUT_NOT_SC_BLOCK_DATA(JAVA_BYTE v);
+void java_io_ObjectOutputStream___INIT___(JAVA_OBJECT me);
+void java_io_ObjectOutputStream___INIT____java_io_OutputStream(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_io_ObjectOutputStream_annotateClass___java_lang_Class(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_io_ObjectOutputStream_annotateProxyClass___java_lang_Class(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_io_ObjectOutputStream_checkWritePrimitiveTypes__(JAVA_OBJECT me);
+// Vtable index: 7
+void java_io_ObjectOutputStream_close__(JAVA_OBJECT me);
+void java_io_ObjectOutputStream_computePutField__(JAVA_OBJECT me);
+void java_io_ObjectOutputStream_defaultWriteObject__(JAVA_OBJECT me);
+void java_io_ObjectOutputStream_drain__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectOutputStream_dumpCycle___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_BOOLEAN java_io_ObjectOutputStream_enableReplaceObject___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+// Vtable index: 8
+void java_io_ObjectOutputStream_flush__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectOutputStream_nextHandle__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectOutputStream_putFields__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectOutputStream_registerObjectWritten___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_io_ObjectOutputStream_removeUnsharedReference___java_lang_Object_java_lang_Integer(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT java_io_ObjectOutputStream_replaceObject___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_io_ObjectOutputStream_reset__(JAVA_OBJECT me);
+void java_io_ObjectOutputStream_resetSeenObjects__(JAVA_OBJECT me);
+void java_io_ObjectOutputStream_resetState__(JAVA_OBJECT me);
+void java_io_ObjectOutputStream_useProtocolVersion___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 9
+void java_io_ObjectOutputStream_write___byte_1ARRAY(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 10
+void java_io_ObjectOutputStream_write___byte_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+// Vtable index: 11
+void java_io_ObjectOutputStream_write___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 12
+void java_io_ObjectOutputStream_writeBoolean___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+// Vtable index: 13
+void java_io_ObjectOutputStream_writeByte___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 14
+void java_io_ObjectOutputStream_writeBytes___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 15
+void java_io_ObjectOutputStream_writeChar___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 16
+void java_io_ObjectOutputStream_writeChars___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT java_io_ObjectOutputStream_writeClassDesc___java_io_ObjectStreamClass_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_BOOLEAN n2);
+void java_io_ObjectOutputStream_writeCyclicReference___java_lang_Integer(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 17
+void java_io_ObjectOutputStream_writeDouble___double(JAVA_OBJECT me, JAVA_DOUBLE n1);
+void java_io_ObjectOutputStream_writeFieldDescriptors___java_io_ObjectStreamClass_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_BOOLEAN n2);
+void java_io_ObjectOutputStream_writeFields__(JAVA_OBJECT me);
+void java_io_ObjectOutputStream_writeFieldValues___java_io_EmulatedFieldsForDumping(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_io_ObjectOutputStream_writeFieldValues___java_lang_Object_java_io_ObjectStreamClass(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 18
+void java_io_ObjectOutputStream_writeFloat___float(JAVA_OBJECT me, JAVA_FLOAT n1);
+void java_io_ObjectOutputStream_writeHierarchy___java_lang_Object_java_io_ObjectStreamClass(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 19
+void java_io_ObjectOutputStream_writeInt___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 20
+void java_io_ObjectOutputStream_writeLong___long(JAVA_OBJECT me, JAVA_LONG n1);
+JAVA_OBJECT java_io_ObjectOutputStream_writeNewArray___java_lang_Object_java_lang_Class_java_io_ObjectStreamClass_java_lang_Class_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3, JAVA_OBJECT n4, JAVA_BOOLEAN n5);
+JAVA_OBJECT java_io_ObjectOutputStream_writeNewClass___java_lang_Class_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_BOOLEAN n2);
+void java_io_ObjectOutputStream_writeNewClassDesc___java_io_ObjectStreamClass(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_io_ObjectOutputStream_writeClassDescriptor___java_io_ObjectStreamClass(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_io_ObjectOutputStream_writeNewException___java_lang_Exception(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT java_io_ObjectOutputStream_writeNewObject___java_lang_Object_java_lang_Class_java_io_ObjectStreamClass_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3, JAVA_BOOLEAN n4);
+JAVA_OBJECT java_io_ObjectOutputStream_writeNewString___java_lang_String_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_BOOLEAN n2);
+void java_io_ObjectOutputStream_writeNull__(JAVA_OBJECT me);
+// Vtable index: 21
+void java_io_ObjectOutputStream_writeObject___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_io_ObjectOutputStream_writeUnshared___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_io_ObjectOutputStream_writeObject___java_lang_Object_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_BOOLEAN n2);
+JAVA_OBJECT java_io_ObjectOutputStream_writeObjectInternal___java_lang_Object_boolean_boolean_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_BOOLEAN n2, JAVA_BOOLEAN n3, JAVA_BOOLEAN n4);
+JAVA_OBJECT java_io_ObjectOutputStream_writeEnumDesc___java_lang_Class_java_io_ObjectStreamClass_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_BOOLEAN n3);
+JAVA_OBJECT java_io_ObjectOutputStream_writeNewEnum___java_lang_Object_java_lang_Class_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_BOOLEAN n3);
+void java_io_ObjectOutputStream_writeObjectOverride___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 22
+void java_io_ObjectOutputStream_writeShort___int(JAVA_OBJECT me, JAVA_INT n1);
+void java_io_ObjectOutputStream_writeStreamHeader__(JAVA_OBJECT me);
+// Vtable index: 23
+void java_io_ObjectOutputStream_writeUTF___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

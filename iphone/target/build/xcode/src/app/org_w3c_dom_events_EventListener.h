@@ -1,0 +1,32 @@
+#ifndef __ORG_W3C_DOM_EVENTS_EVENTLISTENER__
+#define __ORG_W3C_DOM_EVENTS_EVENTLISTENER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_EventListener_handleEvent___org_w3c_dom_events_Event 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_events_Event
+#define XMLVM_FORWARD_DECL_org_w3c_dom_events_Event
+XMLVM_FORWARD_DECL(org_w3c_dom_events_Event)
+#endif
+
+XMLVM_DEFINE_CLASS(org_w3c_dom_events_EventListener, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_w3c_dom_events_EventListener;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_events_EventListener_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_events_EventListener_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_events_EventListener_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_events_EventListener
+#define XMLVM_FORWARD_DECL_org_w3c_dom_events_EventListener
+typedef struct org_w3c_dom_events_EventListener org_w3c_dom_events_EventListener;
+#endif
+
+void __INIT_org_w3c_dom_events_EventListener();
+void __INIT_IMPL_org_w3c_dom_events_EventListener();
+
+#endif

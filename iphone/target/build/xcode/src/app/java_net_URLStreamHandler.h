@@ -1,0 +1,128 @@
+#ifndef __JAVA_NET_URLSTREAMHANDLER__
+#define __JAVA_NET_URLSTREAMHANDLER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_net_URLStreamHandler 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Exception
+#define XMLVM_FORWARD_DECL_java_lang_Exception
+XMLVM_FORWARD_DECL(java_lang_Exception)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Integer
+#define XMLVM_FORWARD_DECL_java_lang_Integer
+XMLVM_FORWARD_DECL(java_lang_Integer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_SecurityException
+#define XMLVM_FORWARD_DECL_java_lang_SecurityException
+XMLVM_FORWARD_DECL(java_lang_SecurityException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringIndexOutOfBoundsException
+#define XMLVM_FORWARD_DECL_java_lang_StringIndexOutOfBoundsException
+XMLVM_FORWARD_DECL(java_lang_StringIndexOutOfBoundsException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_UnsupportedOperationException
+#define XMLVM_FORWARD_DECL_java_lang_UnsupportedOperationException
+XMLVM_FORWARD_DECL(java_lang_UnsupportedOperationException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_InetAddress
+#define XMLVM_FORWARD_DECL_java_net_InetAddress
+XMLVM_FORWARD_DECL(java_net_InetAddress)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_Proxy
+#define XMLVM_FORWARD_DECL_java_net_Proxy
+XMLVM_FORWARD_DECL(java_net_Proxy)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_URL
+#define XMLVM_FORWARD_DECL_java_net_URL
+XMLVM_FORWARD_DECL(java_net_URL)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_URLConnection
+#define XMLVM_FORWARD_DECL_java_net_URLConnection
+XMLVM_FORWARD_DECL(java_net_URLConnection)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_UnknownHostException
+#define XMLVM_FORWARD_DECL_java_net_UnknownHostException
+XMLVM_FORWARD_DECL(java_net_UnknownHostException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_internal_nls_Messages
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_internal_nls_Messages
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_internal_nls_Messages)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_URLUtil
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_URLUtil
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_util_URLUtil)
+#endif
+// Class declarations for java.net.URLStreamHandler
+XMLVM_DEFINE_CLASS(java_net_URLStreamHandler, 10, XMLVM_ITABLE_SIZE_java_net_URLStreamHandler)
+
+extern JAVA_OBJECT __CLASS_java_net_URLStreamHandler;
+extern JAVA_OBJECT __CLASS_java_net_URLStreamHandler_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_net_URLStreamHandler_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_net_URLStreamHandler_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_net_URLStreamHandler
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_net_URLStreamHandler \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_java_net_URLStreamHandler \
+    } java_net_URLStreamHandler
+
+struct java_net_URLStreamHandler {
+    __TIB_DEFINITION_java_net_URLStreamHandler* tib;
+    struct {
+        __INSTANCE_FIELDS_java_net_URLStreamHandler;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_net_URLStreamHandler
+#define XMLVM_FORWARD_DECL_java_net_URLStreamHandler
+typedef struct java_net_URLStreamHandler java_net_URLStreamHandler;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_net_URLStreamHandler 10
+#define XMLVM_VTABLE_IDX_java_net_URLStreamHandler_openConnection___java_net_URL 7
+#define XMLVM_VTABLE_IDX_java_net_URLStreamHandler_openConnection___java_net_URL_java_net_Proxy 8
+#define XMLVM_VTABLE_IDX_java_net_URLStreamHandler_parseURL___java_net_URL_java_lang_String_int_int 9
+#define XMLVM_VTABLE_IDX_java_net_URLStreamHandler_getDefaultPort__ 6
+
+void __INIT_java_net_URLStreamHandler();
+void __INIT_IMPL_java_net_URLStreamHandler();
+void __DELETE_java_net_URLStreamHandler(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_net_URLStreamHandler(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_net_URLStreamHandler();
+JAVA_OBJECT __NEW_INSTANCE_java_net_URLStreamHandler();
+void java_net_URLStreamHandler___INIT___(JAVA_OBJECT me);
+// Vtable index: 7
+JAVA_OBJECT java_net_URLStreamHandler_openConnection___java_net_URL(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 8
+JAVA_OBJECT java_net_URLStreamHandler_openConnection___java_net_URL_java_net_Proxy(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 9
+void java_net_URLStreamHandler_parseURL___java_net_URL_java_lang_String_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_INT n3, JAVA_INT n4);
+void java_net_URLStreamHandler_setURL___java_net_URL_java_lang_String_java_lang_String_int_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3, JAVA_INT n4, JAVA_OBJECT n5, JAVA_OBJECT n6);
+void java_net_URLStreamHandler_setURL___java_net_URL_java_lang_String_java_lang_String_int_java_lang_String_java_lang_String_java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3, JAVA_INT n4, JAVA_OBJECT n5, JAVA_OBJECT n6, JAVA_OBJECT n7, JAVA_OBJECT n8, JAVA_OBJECT n9);
+JAVA_OBJECT java_net_URLStreamHandler_toExternalForm___java_net_URL(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_BOOLEAN java_net_URLStreamHandler_equals___java_net_URL_java_net_URL(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 6
+JAVA_INT java_net_URLStreamHandler_getDefaultPort__(JAVA_OBJECT me);
+JAVA_OBJECT java_net_URLStreamHandler_getHostAddress___java_net_URL(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_INT java_net_URLStreamHandler_hashCode___java_net_URL(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_BOOLEAN java_net_URLStreamHandler_hostsEqual___java_net_URL_java_net_URL(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_BOOLEAN java_net_URLStreamHandler_sameFile___java_net_URL_java_net_URL(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT java_net_URLStreamHandler_getHost___java_net_URL(JAVA_OBJECT n1);
+
+#endif

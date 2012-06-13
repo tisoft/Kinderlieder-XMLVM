@@ -1,0 +1,28 @@
+#ifndef __JAVA_SECURITY_PRIVILEGEDEXCEPTIONACTION__
+#define __JAVA_SECURITY_PRIVILEGEDEXCEPTIONACTION__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_java_security_PrivilegedExceptionAction_run__ 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+
+XMLVM_DEFINE_CLASS(java_security_PrivilegedExceptionAction, 0, 0)
+
+extern JAVA_OBJECT __CLASS_java_security_PrivilegedExceptionAction;
+extern JAVA_OBJECT __CLASS_java_security_PrivilegedExceptionAction_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_security_PrivilegedExceptionAction_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_security_PrivilegedExceptionAction_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_java_security_PrivilegedExceptionAction
+#define XMLVM_FORWARD_DECL_java_security_PrivilegedExceptionAction
+typedef struct java_security_PrivilegedExceptionAction java_security_PrivilegedExceptionAction;
+#endif
+
+void __INIT_java_security_PrivilegedExceptionAction();
+void __INIT_IMPL_java_security_PrivilegedExceptionAction();
+
+#endif

@@ -1,0 +1,79 @@
+#ifndef __JAVA_UTIL_LINKEDHASHMAP_ABSTRACTMAPITERATOR__
+#define __JAVA_UTIL_LINKEDHASHMAP_ABSTRACTMAPITERATOR__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_LinkedHashMap_AbstractMapIterator 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+XMLVM_FORWARD_DECL(java_lang_IllegalStateException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ConcurrentModificationException
+#define XMLVM_FORWARD_DECL_java_util_ConcurrentModificationException
+XMLVM_FORWARD_DECL(java_util_ConcurrentModificationException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_LinkedHashMap
+#define XMLVM_FORWARD_DECL_java_util_LinkedHashMap
+XMLVM_FORWARD_DECL(java_util_LinkedHashMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_LinkedHashMap_LinkedHashMapEntry
+#define XMLVM_FORWARD_DECL_java_util_LinkedHashMap_LinkedHashMapEntry
+XMLVM_FORWARD_DECL(java_util_LinkedHashMap_LinkedHashMapEntry)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_NoSuchElementException
+#define XMLVM_FORWARD_DECL_java_util_NoSuchElementException
+XMLVM_FORWARD_DECL(java_util_NoSuchElementException)
+#endif
+// Class declarations for java.util.LinkedHashMap$AbstractMapIterator
+XMLVM_DEFINE_CLASS(java_util_LinkedHashMap_AbstractMapIterator, 6, XMLVM_ITABLE_SIZE_java_util_LinkedHashMap_AbstractMapIterator)
+
+extern JAVA_OBJECT __CLASS_java_util_LinkedHashMap_AbstractMapIterator;
+extern JAVA_OBJECT __CLASS_java_util_LinkedHashMap_AbstractMapIterator_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_LinkedHashMap_AbstractMapIterator_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_LinkedHashMap_AbstractMapIterator_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_LinkedHashMap_AbstractMapIterator
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_LinkedHashMap_AbstractMapIterator \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_INT expectedModCount_; \
+        JAVA_OBJECT futureEntry_; \
+        JAVA_OBJECT currentEntry_; \
+        JAVA_OBJECT associatedMap_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_LinkedHashMap_AbstractMapIterator \
+    } java_util_LinkedHashMap_AbstractMapIterator
+
+struct java_util_LinkedHashMap_AbstractMapIterator {
+    __TIB_DEFINITION_java_util_LinkedHashMap_AbstractMapIterator* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_LinkedHashMap_AbstractMapIterator;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_LinkedHashMap_AbstractMapIterator
+#define XMLVM_FORWARD_DECL_java_util_LinkedHashMap_AbstractMapIterator
+typedef struct java_util_LinkedHashMap_AbstractMapIterator java_util_LinkedHashMap_AbstractMapIterator;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_LinkedHashMap_AbstractMapIterator 6
+
+void __INIT_java_util_LinkedHashMap_AbstractMapIterator();
+void __INIT_IMPL_java_util_LinkedHashMap_AbstractMapIterator();
+void __DELETE_java_util_LinkedHashMap_AbstractMapIterator(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_LinkedHashMap_AbstractMapIterator(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_LinkedHashMap_AbstractMapIterator();
+JAVA_OBJECT __NEW_INSTANCE_java_util_LinkedHashMap_AbstractMapIterator();
+void java_util_LinkedHashMap_AbstractMapIterator___INIT____java_util_LinkedHashMap(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_BOOLEAN java_util_LinkedHashMap_AbstractMapIterator_hasNext__(JAVA_OBJECT me);
+void java_util_LinkedHashMap_AbstractMapIterator_checkConcurrentMod__(JAVA_OBJECT me);
+void java_util_LinkedHashMap_AbstractMapIterator_makeNext__(JAVA_OBJECT me);
+void java_util_LinkedHashMap_AbstractMapIterator_remove__(JAVA_OBJECT me);
+
+#endif

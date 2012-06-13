@@ -1,0 +1,183 @@
+#ifndef __JAVA_UTIL_RESOURCEBUNDLE_CONTROL__
+#define __JAVA_UTIL_RESOURCEBUNDLE_CONTROL__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_ResourceBundle_Control 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_io_File
+#define XMLVM_FORWARD_DECL_java_io_File
+XMLVM_FORWARD_DECL(java_io_File)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_IOException
+#define XMLVM_FORWARD_DECL_java_io_IOException
+XMLVM_FORWARD_DECL(java_io_IOException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_InputStream
+#define XMLVM_FORWARD_DECL_java_io_InputStream
+XMLVM_FORWARD_DECL(java_io_InputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_InputStreamReader
+#define XMLVM_FORWARD_DECL_java_io_InputStreamReader
+XMLVM_FORWARD_DECL(java_io_InputStreamReader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_ClassLoader
+#define XMLVM_FORWARD_DECL_java_lang_ClassLoader
+XMLVM_FORWARD_DECL(java_lang_ClassLoader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+XMLVM_FORWARD_DECL(java_lang_IllegalArgumentException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NullPointerException
+#define XMLVM_FORWARD_DECL_java_lang_NullPointerException
+XMLVM_FORWARD_DECL(java_lang_NullPointerException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_URL
+#define XMLVM_FORWARD_DECL_java_net_URL
+XMLVM_FORWARD_DECL(java_net_URL)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_URLConnection
+#define XMLVM_FORWARD_DECL_java_net_URLConnection
+XMLVM_FORWARD_DECL(java_net_URLConnection)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_security_AccessController
+#define XMLVM_FORWARD_DECL_java_security_AccessController
+XMLVM_FORWARD_DECL(java_security_AccessController)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ArrayList
+#define XMLVM_FORWARD_DECL_java_util_ArrayList
+XMLVM_FORWARD_DECL(java_util_ArrayList)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Collections
+#define XMLVM_FORWARD_DECL_java_util_Collections
+XMLVM_FORWARD_DECL(java_util_Collections)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_List
+#define XMLVM_FORWARD_DECL_java_util_List
+XMLVM_FORWARD_DECL(java_util_List)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Locale
+#define XMLVM_FORWARD_DECL_java_util_Locale
+XMLVM_FORWARD_DECL(java_util_Locale)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_PropertyResourceBundle
+#define XMLVM_FORWARD_DECL_java_util_PropertyResourceBundle
+XMLVM_FORWARD_DECL(java_util_PropertyResourceBundle)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ResourceBundle
+#define XMLVM_FORWARD_DECL_java_util_ResourceBundle
+XMLVM_FORWARD_DECL(java_util_ResourceBundle)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ResourceBundle_Control_1
+#define XMLVM_FORWARD_DECL_java_util_ResourceBundle_Control_1
+XMLVM_FORWARD_DECL(java_util_ResourceBundle_Control_1)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ResourceBundle_Control_2
+#define XMLVM_FORWARD_DECL_java_util_ResourceBundle_Control_2
+XMLVM_FORWARD_DECL(java_util_ResourceBundle_Control_2)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ResourceBundle_NoFallbackControl
+#define XMLVM_FORWARD_DECL_java_util_ResourceBundle_NoFallbackControl
+XMLVM_FORWARD_DECL(java_util_ResourceBundle_NoFallbackControl)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ResourceBundle_SimpleControl
+#define XMLVM_FORWARD_DECL_java_util_ResourceBundle_SimpleControl
+XMLVM_FORWARD_DECL(java_util_ResourceBundle_SimpleControl)
+#endif
+// Class declarations for java.util.ResourceBundle$Control
+XMLVM_DEFINE_CLASS(java_util_ResourceBundle_Control, 7, XMLVM_ITABLE_SIZE_java_util_ResourceBundle_Control)
+
+extern JAVA_OBJECT __CLASS_java_util_ResourceBundle_Control;
+extern JAVA_OBJECT __CLASS_java_util_ResourceBundle_Control_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_ResourceBundle_Control_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_ResourceBundle_Control_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_ResourceBundle_Control
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_ResourceBundle_Control \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT format_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_ResourceBundle_Control \
+    } java_util_ResourceBundle_Control
+
+struct java_util_ResourceBundle_Control {
+    __TIB_DEFINITION_java_util_ResourceBundle_Control* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_ResourceBundle_Control;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_ResourceBundle_Control
+#define XMLVM_FORWARD_DECL_java_util_ResourceBundle_Control
+typedef struct java_util_ResourceBundle_Control java_util_ResourceBundle_Control;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_ResourceBundle_Control 7
+#define XMLVM_VTABLE_IDX_java_util_ResourceBundle_Control_getFallbackLocale___java_lang_String_java_util_Locale 6
+
+void __INIT_java_util_ResourceBundle_Control();
+void __INIT_IMPL_java_util_ResourceBundle_Control();
+void __DELETE_java_util_ResourceBundle_Control(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_ResourceBundle_Control(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_ResourceBundle_Control();
+JAVA_OBJECT __NEW_INSTANCE_java_util_ResourceBundle_Control();
+JAVA_OBJECT java_util_ResourceBundle_Control_GET_listDefault();
+void java_util_ResourceBundle_Control_PUT_listDefault(JAVA_OBJECT v);
+JAVA_OBJECT java_util_ResourceBundle_Control_GET_listClass();
+void java_util_ResourceBundle_Control_PUT_listClass(JAVA_OBJECT v);
+JAVA_OBJECT java_util_ResourceBundle_Control_GET_listProperties();
+void java_util_ResourceBundle_Control_PUT_listProperties(JAVA_OBJECT v);
+JAVA_OBJECT java_util_ResourceBundle_Control_GET_JAVACLASS();
+void java_util_ResourceBundle_Control_PUT_JAVACLASS(JAVA_OBJECT v);
+JAVA_OBJECT java_util_ResourceBundle_Control_GET_JAVAPROPERTIES();
+void java_util_ResourceBundle_Control_PUT_JAVAPROPERTIES(JAVA_OBJECT v);
+JAVA_OBJECT java_util_ResourceBundle_Control_GET_FORMAT_DEFAULT();
+void java_util_ResourceBundle_Control_PUT_FORMAT_DEFAULT(JAVA_OBJECT v);
+JAVA_OBJECT java_util_ResourceBundle_Control_GET_FORMAT_CLASS();
+void java_util_ResourceBundle_Control_PUT_FORMAT_CLASS(JAVA_OBJECT v);
+JAVA_OBJECT java_util_ResourceBundle_Control_GET_FORMAT_PROPERTIES();
+void java_util_ResourceBundle_Control_PUT_FORMAT_PROPERTIES(JAVA_OBJECT v);
+JAVA_LONG java_util_ResourceBundle_Control_GET_TTL_DONT_CACHE();
+void java_util_ResourceBundle_Control_PUT_TTL_DONT_CACHE(JAVA_LONG v);
+JAVA_LONG java_util_ResourceBundle_Control_GET_TTL_NO_EXPIRATION_CONTROL();
+void java_util_ResourceBundle_Control_PUT_TTL_NO_EXPIRATION_CONTROL(JAVA_LONG v);
+JAVA_OBJECT java_util_ResourceBundle_Control_GET_FORMAT_PROPERTIES_CONTROL();
+void java_util_ResourceBundle_Control_PUT_FORMAT_PROPERTIES_CONTROL(JAVA_OBJECT v);
+JAVA_OBJECT java_util_ResourceBundle_Control_GET_FORMAT_CLASS_CONTROL();
+void java_util_ResourceBundle_Control_PUT_FORMAT_CLASS_CONTROL(JAVA_OBJECT v);
+JAVA_OBJECT java_util_ResourceBundle_Control_GET_FORMAT_DEFAULT_CONTROL();
+void java_util_ResourceBundle_Control_PUT_FORMAT_DEFAULT_CONTROL(JAVA_OBJECT v);
+void java_util_ResourceBundle_Control___CLINIT_();
+void java_util_ResourceBundle_Control___INIT___(JAVA_OBJECT me);
+JAVA_OBJECT java_util_ResourceBundle_Control_getControl___java_util_List(JAVA_OBJECT n1);
+JAVA_OBJECT java_util_ResourceBundle_Control_getNoFallbackControl___java_util_List(JAVA_OBJECT n1);
+JAVA_OBJECT java_util_ResourceBundle_Control_getCandidateLocales___java_lang_String_java_util_Locale(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT java_util_ResourceBundle_Control_getFormats___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 6
+JAVA_OBJECT java_util_ResourceBundle_Control_getFallbackLocale___java_lang_String_java_util_Locale(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT java_util_ResourceBundle_Control_newBundle___java_lang_String_java_util_Locale_java_lang_String_java_lang_ClassLoader_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3, JAVA_OBJECT n4, JAVA_BOOLEAN n5);
+JAVA_LONG java_util_ResourceBundle_Control_getTimeToLive___java_lang_String_java_util_Locale(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_BOOLEAN java_util_ResourceBundle_Control_needsReload___java_lang_String_java_util_Locale_java_lang_String_java_lang_ClassLoader_java_util_ResourceBundle_long(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3, JAVA_OBJECT n4, JAVA_OBJECT n5, JAVA_LONG n6);
+JAVA_OBJECT java_util_ResourceBundle_Control_toBundleName___java_lang_String_java_util_Locale(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT java_util_ResourceBundle_Control_toResourceName___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+
+#endif

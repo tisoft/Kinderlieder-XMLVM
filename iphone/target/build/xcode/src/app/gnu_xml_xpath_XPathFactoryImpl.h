@@ -1,0 +1,99 @@
+#ifndef __GNU_XML_XPATH_XPATHFACTORYIMPL__
+#define __GNU_XML_XPATH_XPATHFACTORYIMPL__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_xpath_XPathFactoryImpl 0
+// Implemented interfaces:
+// Super Class:
+#include "javax_xml_xpath_XPathFactory.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathImpl
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathImpl
+XMLVM_FORWARD_DECL(gnu_xml_xpath_XPathImpl)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_javax_xml_xpath_XPath
+#define XMLVM_FORWARD_DECL_javax_xml_xpath_XPath
+XMLVM_FORWARD_DECL(javax_xml_xpath_XPath)
+#endif
+#ifndef XMLVM_FORWARD_DECL_javax_xml_xpath_XPathFactoryConfigurationException
+#define XMLVM_FORWARD_DECL_javax_xml_xpath_XPathFactoryConfigurationException
+XMLVM_FORWARD_DECL(javax_xml_xpath_XPathFactoryConfigurationException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_javax_xml_xpath_XPathFunctionResolver
+#define XMLVM_FORWARD_DECL_javax_xml_xpath_XPathFunctionResolver
+XMLVM_FORWARD_DECL(javax_xml_xpath_XPathFunctionResolver)
+#endif
+#ifndef XMLVM_FORWARD_DECL_javax_xml_xpath_XPathVariableResolver
+#define XMLVM_FORWARD_DECL_javax_xml_xpath_XPathVariableResolver
+XMLVM_FORWARD_DECL(javax_xml_xpath_XPathVariableResolver)
+#endif
+// Class declarations for gnu.xml.xpath.XPathFactoryImpl
+XMLVM_DEFINE_CLASS(gnu_xml_xpath_XPathFactoryImpl, 12, XMLVM_ITABLE_SIZE_gnu_xml_xpath_XPathFactoryImpl)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_xpath_XPathFactoryImpl;
+extern JAVA_OBJECT __CLASS_gnu_xml_xpath_XPathFactoryImpl_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_xpath_XPathFactoryImpl_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_xpath_XPathFactoryImpl_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_xpath_XPathFactoryImpl
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_xpath_XPathFactoryImpl \
+    __INSTANCE_FIELDS_javax_xml_xpath_XPathFactory; \
+    struct { \
+        JAVA_OBJECT variableResolver_; \
+        JAVA_OBJECT functionResolver_; \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_xpath_XPathFactoryImpl \
+    } gnu_xml_xpath_XPathFactoryImpl
+
+struct gnu_xml_xpath_XPathFactoryImpl {
+    __TIB_DEFINITION_gnu_xml_xpath_XPathFactoryImpl* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_xpath_XPathFactoryImpl;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathFactoryImpl
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathFactoryImpl
+typedef struct gnu_xml_xpath_XPathFactoryImpl gnu_xml_xpath_XPathFactoryImpl;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_xpath_XPathFactoryImpl 12
+#define XMLVM_VTABLE_IDX_gnu_xml_xpath_XPathFactoryImpl_isObjectModelSupported___java_lang_String 7
+#define XMLVM_VTABLE_IDX_gnu_xml_xpath_XPathFactoryImpl_setFeature___java_lang_String_boolean 9
+#define XMLVM_VTABLE_IDX_gnu_xml_xpath_XPathFactoryImpl_getFeature___java_lang_String 6
+#define XMLVM_VTABLE_IDX_gnu_xml_xpath_XPathFactoryImpl_setXPathVariableResolver___javax_xml_xpath_XPathVariableResolver 11
+#define XMLVM_VTABLE_IDX_gnu_xml_xpath_XPathFactoryImpl_setXPathFunctionResolver___javax_xml_xpath_XPathFunctionResolver 10
+#define XMLVM_VTABLE_IDX_gnu_xml_xpath_XPathFactoryImpl_newXPath__ 8
+
+void __INIT_gnu_xml_xpath_XPathFactoryImpl();
+void __INIT_IMPL_gnu_xml_xpath_XPathFactoryImpl();
+void __DELETE_gnu_xml_xpath_XPathFactoryImpl(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_xpath_XPathFactoryImpl(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_xpath_XPathFactoryImpl();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_xpath_XPathFactoryImpl();
+void gnu_xml_xpath_XPathFactoryImpl___INIT___(JAVA_OBJECT me);
+// Vtable index: 7
+JAVA_BOOLEAN gnu_xml_xpath_XPathFactoryImpl_isObjectModelSupported___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 9
+void gnu_xml_xpath_XPathFactoryImpl_setFeature___java_lang_String_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_BOOLEAN n2);
+// Vtable index: 6
+JAVA_BOOLEAN gnu_xml_xpath_XPathFactoryImpl_getFeature___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 11
+void gnu_xml_xpath_XPathFactoryImpl_setXPathVariableResolver___javax_xml_xpath_XPathVariableResolver(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 10
+void gnu_xml_xpath_XPathFactoryImpl_setXPathFunctionResolver___javax_xml_xpath_XPathFunctionResolver(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 8
+JAVA_OBJECT gnu_xml_xpath_XPathFactoryImpl_newXPath__(JAVA_OBJECT me);
+
+#endif

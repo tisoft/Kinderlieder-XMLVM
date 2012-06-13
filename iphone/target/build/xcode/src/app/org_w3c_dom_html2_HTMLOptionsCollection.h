@@ -1,0 +1,39 @@
+#ifndef __ORG_W3C_DOM_HTML2_HTMLOPTIONSCOLLECTION__
+#define __ORG_W3C_DOM_HTML2_HTMLOPTIONSCOLLECTION__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_w3c_dom_html2_HTMLOptionsCollection_getLength__ 3
+#define XMLVM_ITABLE_IDX_org_w3c_dom_html2_HTMLOptionsCollection_setLength___int 6
+#define XMLVM_ITABLE_IDX_org_w3c_dom_html2_HTMLOptionsCollection_item___int 4
+#define XMLVM_ITABLE_IDX_org_w3c_dom_html2_HTMLOptionsCollection_namedItem___java_lang_String 5
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Node
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Node
+XMLVM_FORWARD_DECL(org_w3c_dom_Node)
+#endif
+
+XMLVM_DEFINE_CLASS(org_w3c_dom_html2_HTMLOptionsCollection, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_w3c_dom_html2_HTMLOptionsCollection;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_html2_HTMLOptionsCollection_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_html2_HTMLOptionsCollection_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_html2_HTMLOptionsCollection_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_html2_HTMLOptionsCollection
+#define XMLVM_FORWARD_DECL_org_w3c_dom_html2_HTMLOptionsCollection
+typedef struct org_w3c_dom_html2_HTMLOptionsCollection org_w3c_dom_html2_HTMLOptionsCollection;
+#endif
+
+void __INIT_org_w3c_dom_html2_HTMLOptionsCollection();
+void __INIT_IMPL_org_w3c_dom_html2_HTMLOptionsCollection();
+
+#endif

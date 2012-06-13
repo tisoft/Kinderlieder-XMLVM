@@ -1,0 +1,48 @@
+#ifndef __ORG_W3C_DOM_TRAVERSAL_TREEWALKER__
+#define __ORG_W3C_DOM_TRAVERSAL_TREEWALKER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_TreeWalker_getRoot__ 11
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_TreeWalker_getWhatToShow__ 12
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_TreeWalker_getFilter__ 10
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_TreeWalker_getExpandEntityReferences__ 9
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_TreeWalker_getCurrentNode__ 8
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_TreeWalker_setCurrentNode___org_w3c_dom_Node 19
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_TreeWalker_parentNode__ 16
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_TreeWalker_firstChild__ 0
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_TreeWalker_lastChild__ 13
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_TreeWalker_previousSibling__ 18
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_TreeWalker_nextSibling__ 15
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_TreeWalker_previousNode__ 17
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_TreeWalker_nextNode__ 14
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Node
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Node
+XMLVM_FORWARD_DECL(org_w3c_dom_Node)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_traversal_NodeFilter
+#define XMLVM_FORWARD_DECL_org_w3c_dom_traversal_NodeFilter
+XMLVM_FORWARD_DECL(org_w3c_dom_traversal_NodeFilter)
+#endif
+
+XMLVM_DEFINE_CLASS(org_w3c_dom_traversal_TreeWalker, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_w3c_dom_traversal_TreeWalker;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_traversal_TreeWalker_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_traversal_TreeWalker_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_traversal_TreeWalker_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_traversal_TreeWalker
+#define XMLVM_FORWARD_DECL_org_w3c_dom_traversal_TreeWalker
+typedef struct org_w3c_dom_traversal_TreeWalker org_w3c_dom_traversal_TreeWalker;
+#endif
+
+void __INIT_org_w3c_dom_traversal_TreeWalker();
+void __INIT_IMPL_org_w3c_dom_traversal_TreeWalker();
+
+#endif

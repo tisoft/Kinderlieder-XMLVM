@@ -1,0 +1,41 @@
+#ifndef __ORG_W3C_DOM_DOMIMPLEMENTATIONSOURCE__
+#define __ORG_W3C_DOM_DOMIMPLEMENTATIONSOURCE__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_w3c_dom_DOMImplementationSource_getDOMImplementation___java_lang_String 1
+#define XMLVM_ITABLE_IDX_org_w3c_dom_DOMImplementationSource_getDOMImplementationList___java_lang_String 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementation
+#define XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementation
+XMLVM_FORWARD_DECL(org_w3c_dom_DOMImplementation)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementationList
+#define XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementationList
+XMLVM_FORWARD_DECL(org_w3c_dom_DOMImplementationList)
+#endif
+
+XMLVM_DEFINE_CLASS(org_w3c_dom_DOMImplementationSource, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_w3c_dom_DOMImplementationSource;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_DOMImplementationSource_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_DOMImplementationSource_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_DOMImplementationSource_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementationSource
+#define XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementationSource
+typedef struct org_w3c_dom_DOMImplementationSource org_w3c_dom_DOMImplementationSource;
+#endif
+
+void __INIT_org_w3c_dom_DOMImplementationSource();
+void __INIT_IMPL_org_w3c_dom_DOMImplementationSource();
+
+#endif

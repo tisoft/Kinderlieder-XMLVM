@@ -1,0 +1,67 @@
+#ifndef __JAVA_NIO_CHARSET_UNSUPPORTEDCHARSETEXCEPTION__
+#define __JAVA_NIO_CHARSET_UNSUPPORTEDCHARSETEXCEPTION__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_nio_charset_UnsupportedCharsetException 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_IllegalArgumentException.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_niochar_internal_nls_Messages
+#define XMLVM_FORWARD_DECL_org_apache_harmony_niochar_internal_nls_Messages
+XMLVM_FORWARD_DECL(org_apache_harmony_niochar_internal_nls_Messages)
+#endif
+// Class declarations for java.nio.charset.UnsupportedCharsetException
+XMLVM_DEFINE_CLASS(java_nio_charset_UnsupportedCharsetException, 11, XMLVM_ITABLE_SIZE_java_nio_charset_UnsupportedCharsetException)
+
+extern JAVA_OBJECT __CLASS_java_nio_charset_UnsupportedCharsetException;
+extern JAVA_OBJECT __CLASS_java_nio_charset_UnsupportedCharsetException_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_nio_charset_UnsupportedCharsetException_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_nio_charset_UnsupportedCharsetException_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_nio_charset_UnsupportedCharsetException
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_nio_charset_UnsupportedCharsetException \
+    __INSTANCE_FIELDS_java_lang_IllegalArgumentException; \
+    struct { \
+        JAVA_OBJECT charsetName_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_nio_charset_UnsupportedCharsetException \
+    } java_nio_charset_UnsupportedCharsetException
+
+struct java_nio_charset_UnsupportedCharsetException {
+    __TIB_DEFINITION_java_nio_charset_UnsupportedCharsetException* tib;
+    struct {
+        __INSTANCE_FIELDS_java_nio_charset_UnsupportedCharsetException;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_nio_charset_UnsupportedCharsetException
+#define XMLVM_FORWARD_DECL_java_nio_charset_UnsupportedCharsetException
+typedef struct java_nio_charset_UnsupportedCharsetException java_nio_charset_UnsupportedCharsetException;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_nio_charset_UnsupportedCharsetException 11
+
+void __INIT_java_nio_charset_UnsupportedCharsetException();
+void __INIT_IMPL_java_nio_charset_UnsupportedCharsetException();
+void __DELETE_java_nio_charset_UnsupportedCharsetException(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_nio_charset_UnsupportedCharsetException(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_nio_charset_UnsupportedCharsetException();
+JAVA_OBJECT __NEW_INSTANCE_java_nio_charset_UnsupportedCharsetException();
+JAVA_LONG java_nio_charset_UnsupportedCharsetException_GET_serialVersionUID();
+void java_nio_charset_UnsupportedCharsetException_PUT_serialVersionUID(JAVA_LONG v);
+void java_nio_charset_UnsupportedCharsetException___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT java_nio_charset_UnsupportedCharsetException_getCharsetName__(JAVA_OBJECT me);
+
+#endif

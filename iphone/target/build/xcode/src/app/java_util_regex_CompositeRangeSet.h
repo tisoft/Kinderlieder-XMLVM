@@ -1,0 +1,98 @@
+#ifndef __JAVA_UTIL_REGEX_COMPOSITERANGESET__
+#define __JAVA_UTIL_REGEX_COMPOSITERANGESET__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_regex_CompositeRangeSet 0
+// Implemented interfaces:
+// Super Class:
+#include "java_util_regex_JointSet.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_CharSequence
+#define XMLVM_FORWARD_DECL_java_lang_CharSequence
+XMLVM_FORWARD_DECL(java_lang_CharSequence)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_regex_AbstractSet
+#define XMLVM_FORWARD_DECL_java_util_regex_AbstractSet
+XMLVM_FORWARD_DECL(java_util_regex_AbstractSet)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_regex_MatchResultImpl
+#define XMLVM_FORWARD_DECL_java_util_regex_MatchResultImpl
+XMLVM_FORWARD_DECL(java_util_regex_MatchResultImpl)
+#endif
+// Class declarations for java.util.regex.CompositeRangeSet
+XMLVM_DEFINE_CLASS(java_util_regex_CompositeRangeSet, 17, XMLVM_ITABLE_SIZE_java_util_regex_CompositeRangeSet)
+
+extern JAVA_OBJECT __CLASS_java_util_regex_CompositeRangeSet;
+extern JAVA_OBJECT __CLASS_java_util_regex_CompositeRangeSet_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_regex_CompositeRangeSet_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_regex_CompositeRangeSet_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_regex_CompositeRangeSet
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_regex_CompositeRangeSet \
+    __INSTANCE_FIELDS_java_util_regex_JointSet; \
+    struct { \
+        JAVA_OBJECT withoutSurrogates_; \
+        JAVA_OBJECT withSurrogates_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_regex_CompositeRangeSet \
+    } java_util_regex_CompositeRangeSet
+
+struct java_util_regex_CompositeRangeSet {
+    __TIB_DEFINITION_java_util_regex_CompositeRangeSet* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_regex_CompositeRangeSet;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_regex_CompositeRangeSet
+#define XMLVM_FORWARD_DECL_java_util_regex_CompositeRangeSet
+typedef struct java_util_regex_CompositeRangeSet java_util_regex_CompositeRangeSet;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_regex_CompositeRangeSet 17
+#define XMLVM_VTABLE_IDX_java_util_regex_CompositeRangeSet_getNext__ 10
+#define XMLVM_VTABLE_IDX_java_util_regex_CompositeRangeSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl 13
+#define XMLVM_VTABLE_IDX_java_util_regex_CompositeRangeSet_setNext___java_util_regex_AbstractSet 16
+#define XMLVM_VTABLE_IDX_java_util_regex_CompositeRangeSet_getName__ 9
+#define XMLVM_VTABLE_IDX_java_util_regex_CompositeRangeSet_hasConsumed___java_util_regex_MatchResultImpl 12
+#define XMLVM_VTABLE_IDX_java_util_regex_CompositeRangeSet_first___java_util_regex_AbstractSet 8
+
+void __INIT_java_util_regex_CompositeRangeSet();
+void __INIT_IMPL_java_util_regex_CompositeRangeSet();
+void __DELETE_java_util_regex_CompositeRangeSet(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_regex_CompositeRangeSet(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_regex_CompositeRangeSet();
+JAVA_OBJECT __NEW_INSTANCE_java_util_regex_CompositeRangeSet();
+void java_util_regex_CompositeRangeSet___INIT____java_util_regex_AbstractSet_java_util_regex_AbstractSet_java_util_regex_AbstractSet(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+void java_util_regex_CompositeRangeSet___INIT____java_util_regex_AbstractSet_java_util_regex_AbstractSet(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 10
+JAVA_OBJECT java_util_regex_CompositeRangeSet_getNext__(JAVA_OBJECT me);
+// Vtable index: 13
+JAVA_INT java_util_regex_CompositeRangeSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl(JAVA_OBJECT me, JAVA_INT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 16
+void java_util_regex_CompositeRangeSet_setNext___java_util_regex_AbstractSet(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT java_util_regex_CompositeRangeSet_getSurrogates__(JAVA_OBJECT me);
+JAVA_OBJECT java_util_regex_CompositeRangeSet_getWithoutSurrogates__(JAVA_OBJECT me);
+// Vtable index: 9
+JAVA_OBJECT java_util_regex_CompositeRangeSet_getName__(JAVA_OBJECT me);
+// Vtable index: 12
+JAVA_BOOLEAN java_util_regex_CompositeRangeSet_hasConsumed___java_util_regex_MatchResultImpl(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 8
+JAVA_BOOLEAN java_util_regex_CompositeRangeSet_first___java_util_regex_AbstractSet(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

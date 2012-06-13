@@ -1,0 +1,168 @@
+#ifndef __GNU_JAVA_TEXT_FORMATCHARACTERITERATOR__
+#define __GNU_JAVA_TEXT_FORMATCHARACTERITERATOR__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_java_text_FormatCharacterIterator 29
+// Implemented interfaces:
+#include "java_text_AttributedCharacterIterator.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+XMLVM_FORWARD_DECL(java_lang_IllegalArgumentException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Integer
+#define XMLVM_FORWARD_DECL_java_lang_Integer
+XMLVM_FORWARD_DECL(java_lang_Integer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_System
+#define XMLVM_FORWARD_DECL_java_lang_System
+XMLVM_FORWARD_DECL(java_lang_System)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_text_AttributedCharacterIterator_Attribute
+#define XMLVM_FORWARD_DECL_java_text_AttributedCharacterIterator_Attribute
+XMLVM_FORWARD_DECL(java_text_AttributedCharacterIterator_Attribute)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_HashMap
+#define XMLVM_FORWARD_DECL_java_util_HashMap
+XMLVM_FORWARD_DECL(java_util_HashMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_HashSet
+#define XMLVM_FORWARD_DECL_java_util_HashSet
+XMLVM_FORWARD_DECL(java_util_HashSet)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Map
+#define XMLVM_FORWARD_DECL_java_util_Map
+XMLVM_FORWARD_DECL(java_util_Map)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Set
+#define XMLVM_FORWARD_DECL_java_util_Set
+XMLVM_FORWARD_DECL(java_util_Set)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Vector
+#define XMLVM_FORWARD_DECL_java_util_Vector
+XMLVM_FORWARD_DECL(java_util_Vector)
+#endif
+// Class declarations for gnu.java.text.FormatCharacterIterator
+XMLVM_DEFINE_CLASS(gnu_java_text_FormatCharacterIterator, 24, XMLVM_ITABLE_SIZE_gnu_java_text_FormatCharacterIterator)
+
+extern JAVA_OBJECT __CLASS_gnu_java_text_FormatCharacterIterator;
+extern JAVA_OBJECT __CLASS_gnu_java_text_FormatCharacterIterator_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_java_text_FormatCharacterIterator_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_java_text_FormatCharacterIterator_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_java_text_FormatCharacterIterator
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_java_text_FormatCharacterIterator \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT formattedString_; \
+        JAVA_INT charIndex_; \
+        JAVA_INT attributeIndex_; \
+        JAVA_OBJECT ranges_; \
+        JAVA_OBJECT attributes_; \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_java_text_FormatCharacterIterator \
+    } gnu_java_text_FormatCharacterIterator
+
+struct gnu_java_text_FormatCharacterIterator {
+    __TIB_DEFINITION_gnu_java_text_FormatCharacterIterator* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_java_text_FormatCharacterIterator;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_java_text_FormatCharacterIterator
+#define XMLVM_FORWARD_DECL_gnu_java_text_FormatCharacterIterator
+typedef struct gnu_java_text_FormatCharacterIterator gnu_java_text_FormatCharacterIterator;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_java_text_FormatCharacterIterator 24
+#define XMLVM_VTABLE_IDX_gnu_java_text_FormatCharacterIterator_getAllAttributeKeys__ 8
+#define XMLVM_VTABLE_IDX_gnu_java_text_FormatCharacterIterator_getAttributes__ 10
+#define XMLVM_VTABLE_IDX_gnu_java_text_FormatCharacterIterator_getAttribute___java_text_AttributedCharacterIterator_Attribute 9
+#define XMLVM_VTABLE_IDX_gnu_java_text_FormatCharacterIterator_getRunLimit___java_util_Set 16
+#define XMLVM_VTABLE_IDX_gnu_java_text_FormatCharacterIterator_getRunLimit___java_text_AttributedCharacterIterator_Attribute 15
+#define XMLVM_VTABLE_IDX_gnu_java_text_FormatCharacterIterator_getRunLimit__ 14
+#define XMLVM_VTABLE_IDX_gnu_java_text_FormatCharacterIterator_getRunStart___java_util_Set 19
+#define XMLVM_VTABLE_IDX_gnu_java_text_FormatCharacterIterator_getRunStart__ 17
+#define XMLVM_VTABLE_IDX_gnu_java_text_FormatCharacterIterator_getRunStart___java_text_AttributedCharacterIterator_Attribute 18
+#define XMLVM_VTABLE_IDX_gnu_java_text_FormatCharacterIterator_clone__ 0
+#define XMLVM_VTABLE_IDX_gnu_java_text_FormatCharacterIterator_current__ 6
+#define XMLVM_VTABLE_IDX_gnu_java_text_FormatCharacterIterator_first__ 7
+#define XMLVM_VTABLE_IDX_gnu_java_text_FormatCharacterIterator_getBeginIndex__ 11
+#define XMLVM_VTABLE_IDX_gnu_java_text_FormatCharacterIterator_getEndIndex__ 12
+#define XMLVM_VTABLE_IDX_gnu_java_text_FormatCharacterIterator_getIndex__ 13
+#define XMLVM_VTABLE_IDX_gnu_java_text_FormatCharacterIterator_last__ 20
+#define XMLVM_VTABLE_IDX_gnu_java_text_FormatCharacterIterator_next__ 21
+#define XMLVM_VTABLE_IDX_gnu_java_text_FormatCharacterIterator_previous__ 22
+#define XMLVM_VTABLE_IDX_gnu_java_text_FormatCharacterIterator_setIndex___int 23
+
+void __INIT_gnu_java_text_FormatCharacterIterator();
+void __INIT_IMPL_gnu_java_text_FormatCharacterIterator();
+void __DELETE_gnu_java_text_FormatCharacterIterator(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_java_text_FormatCharacterIterator(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_java_text_FormatCharacterIterator();
+JAVA_OBJECT __NEW_INSTANCE_gnu_java_text_FormatCharacterIterator();
+JAVA_BOOLEAN gnu_java_text_FormatCharacterIterator_GET_DEBUG();
+void gnu_java_text_FormatCharacterIterator_PUT_DEBUG(JAVA_BOOLEAN v);
+void gnu_java_text_FormatCharacterIterator___INIT___(JAVA_OBJECT me);
+void gnu_java_text_FormatCharacterIterator___INIT____java_lang_String_int_1ARRAY_java_util_HashMap_1ARRAY(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 8
+JAVA_OBJECT gnu_java_text_FormatCharacterIterator_getAllAttributeKeys__(JAVA_OBJECT me);
+// Vtable index: 10
+JAVA_OBJECT gnu_java_text_FormatCharacterIterator_getAttributes__(JAVA_OBJECT me);
+// Vtable index: 9
+JAVA_OBJECT gnu_java_text_FormatCharacterIterator_getAttribute___java_text_AttributedCharacterIterator_Attribute(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 16
+JAVA_INT gnu_java_text_FormatCharacterIterator_getRunLimit___java_util_Set(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 15
+JAVA_INT gnu_java_text_FormatCharacterIterator_getRunLimit___java_text_AttributedCharacterIterator_Attribute(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 14
+JAVA_INT gnu_java_text_FormatCharacterIterator_getRunLimit__(JAVA_OBJECT me);
+// Vtable index: 19
+JAVA_INT gnu_java_text_FormatCharacterIterator_getRunStart___java_util_Set(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 17
+JAVA_INT gnu_java_text_FormatCharacterIterator_getRunStart__(JAVA_OBJECT me);
+// Vtable index: 18
+JAVA_INT gnu_java_text_FormatCharacterIterator_getRunStart___java_text_AttributedCharacterIterator_Attribute(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 0
+JAVA_OBJECT gnu_java_text_FormatCharacterIterator_clone__(JAVA_OBJECT me);
+// Vtable index: 6
+JAVA_CHAR gnu_java_text_FormatCharacterIterator_current__(JAVA_OBJECT me);
+// Vtable index: 7
+JAVA_CHAR gnu_java_text_FormatCharacterIterator_first__(JAVA_OBJECT me);
+// Vtable index: 11
+JAVA_INT gnu_java_text_FormatCharacterIterator_getBeginIndex__(JAVA_OBJECT me);
+// Vtable index: 12
+JAVA_INT gnu_java_text_FormatCharacterIterator_getEndIndex__(JAVA_OBJECT me);
+// Vtable index: 13
+JAVA_INT gnu_java_text_FormatCharacterIterator_getIndex__(JAVA_OBJECT me);
+// Vtable index: 20
+JAVA_CHAR gnu_java_text_FormatCharacterIterator_last__(JAVA_OBJECT me);
+// Vtable index: 21
+JAVA_CHAR gnu_java_text_FormatCharacterIterator_next__(JAVA_OBJECT me);
+// Vtable index: 22
+JAVA_CHAR gnu_java_text_FormatCharacterIterator_previous__(JAVA_OBJECT me);
+// Vtable index: 23
+JAVA_CHAR gnu_java_text_FormatCharacterIterator_setIndex___int(JAVA_OBJECT me, JAVA_INT n1);
+void gnu_java_text_FormatCharacterIterator_mergeAttributes___java_util_HashMap_1ARRAY_int_1ARRAY(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+void gnu_java_text_FormatCharacterIterator_append___java_text_AttributedCharacterIterator(JAVA_OBJECT me, JAVA_OBJECT n1);
+void gnu_java_text_FormatCharacterIterator_append___java_lang_String_java_util_HashMap(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+void gnu_java_text_FormatCharacterIterator_append___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+void gnu_java_text_FormatCharacterIterator_addAttributes___java_util_HashMap_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+void gnu_java_text_FormatCharacterIterator_debug___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+void gnu_java_text_FormatCharacterIterator_dumpTable__(JAVA_OBJECT me);
+
+#endif

@@ -1,0 +1,38 @@
+#ifndef __JAVAX_XML_NAMESPACE_NAMESPACECONTEXT__
+#define __JAVAX_XML_NAMESPACE_NAMESPACECONTEXT__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_javax_xml_namespace_NamespaceContext_getNamespaceURI___java_lang_String 0
+#define XMLVM_ITABLE_IDX_javax_xml_namespace_NamespaceContext_getPrefix___java_lang_String 1
+#define XMLVM_ITABLE_IDX_javax_xml_namespace_NamespaceContext_getPrefixes___java_lang_String 5
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Iterator
+#define XMLVM_FORWARD_DECL_java_util_Iterator
+XMLVM_FORWARD_DECL(java_util_Iterator)
+#endif
+
+XMLVM_DEFINE_CLASS(javax_xml_namespace_NamespaceContext, 0, 0)
+
+extern JAVA_OBJECT __CLASS_javax_xml_namespace_NamespaceContext;
+extern JAVA_OBJECT __CLASS_javax_xml_namespace_NamespaceContext_1ARRAY;
+extern JAVA_OBJECT __CLASS_javax_xml_namespace_NamespaceContext_2ARRAY;
+extern JAVA_OBJECT __CLASS_javax_xml_namespace_NamespaceContext_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_javax_xml_namespace_NamespaceContext
+#define XMLVM_FORWARD_DECL_javax_xml_namespace_NamespaceContext
+typedef struct javax_xml_namespace_NamespaceContext javax_xml_namespace_NamespaceContext;
+#endif
+
+void __INIT_javax_xml_namespace_NamespaceContext();
+void __INIT_IMPL_javax_xml_namespace_NamespaceContext();
+
+#endif

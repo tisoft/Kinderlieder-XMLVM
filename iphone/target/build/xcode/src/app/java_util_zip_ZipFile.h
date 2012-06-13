@@ -1,0 +1,184 @@
+#ifndef __JAVA_UTIL_ZIP_ZIPFILE__
+#define __JAVA_UTIL_ZIP_ZIPFILE__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_zip_ZipFile 0
+// Implemented interfaces:
+#include "java_util_zip_ZipConstants.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_io_BufferedInputStream
+#define XMLVM_FORWARD_DECL_java_io_BufferedInputStream
+XMLVM_FORWARD_DECL(java_io_BufferedInputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_File
+#define XMLVM_FORWARD_DECL_java_io_File
+XMLVM_FORWARD_DECL(java_io_File)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_InputStream
+#define XMLVM_FORWARD_DECL_java_io_InputStream
+XMLVM_FORWARD_DECL(java_io_InputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_RandomAccessFile
+#define XMLVM_FORWARD_DECL_java_io_RandomAccessFile
+XMLVM_FORWARD_DECL(java_io_RandomAccessFile)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+XMLVM_FORWARD_DECL(java_lang_IllegalArgumentException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+XMLVM_FORWARD_DECL(java_lang_IllegalStateException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Math
+#define XMLVM_FORWARD_DECL_java_lang_Math
+XMLVM_FORWARD_DECL(java_lang_Math)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NullPointerException
+#define XMLVM_FORWARD_DECL_java_lang_NullPointerException
+XMLVM_FORWARD_DECL(java_lang_NullPointerException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_SecurityManager
+#define XMLVM_FORWARD_DECL_java_lang_SecurityManager
+XMLVM_FORWARD_DECL(java_lang_SecurityManager)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_System
+#define XMLVM_FORWARD_DECL_java_lang_System
+XMLVM_FORWARD_DECL(java_lang_System)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_security_AccessController
+#define XMLVM_FORWARD_DECL_java_security_AccessController
+XMLVM_FORWARD_DECL(java_security_AccessController)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Collection
+#define XMLVM_FORWARD_DECL_java_util_Collection
+XMLVM_FORWARD_DECL(java_util_Collection)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Enumeration
+#define XMLVM_FORWARD_DECL_java_util_Enumeration
+XMLVM_FORWARD_DECL(java_util_Enumeration)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Iterator
+#define XMLVM_FORWARD_DECL_java_util_Iterator
+XMLVM_FORWARD_DECL(java_util_Iterator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_LinkedHashMap
+#define XMLVM_FORWARD_DECL_java_util_LinkedHashMap
+XMLVM_FORWARD_DECL(java_util_LinkedHashMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_zip_Inflater
+#define XMLVM_FORWARD_DECL_java_util_zip_Inflater
+XMLVM_FORWARD_DECL(java_util_zip_Inflater)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_zip_ZipEntry
+#define XMLVM_FORWARD_DECL_java_util_zip_ZipEntry
+XMLVM_FORWARD_DECL(java_util_zip_ZipEntry)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_zip_ZipEntry_LittleEndianReader
+#define XMLVM_FORWARD_DECL_java_util_zip_ZipEntry_LittleEndianReader
+XMLVM_FORWARD_DECL(java_util_zip_ZipEntry_LittleEndianReader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_zip_ZipException
+#define XMLVM_FORWARD_DECL_java_util_zip_ZipException
+XMLVM_FORWARD_DECL(java_util_zip_ZipException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_zip_ZipFile_1
+#define XMLVM_FORWARD_DECL_java_util_zip_ZipFile_1
+XMLVM_FORWARD_DECL(java_util_zip_ZipFile_1)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_zip_ZipFile_2
+#define XMLVM_FORWARD_DECL_java_util_zip_ZipFile_2
+XMLVM_FORWARD_DECL(java_util_zip_ZipFile_2)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_zip_ZipFile_RAFStream
+#define XMLVM_FORWARD_DECL_java_util_zip_ZipFile_RAFStream
+XMLVM_FORWARD_DECL(java_util_zip_ZipFile_RAFStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_zip_ZipFile_ZipInflaterInputStream
+#define XMLVM_FORWARD_DECL_java_util_zip_ZipFile_ZipInflaterInputStream
+XMLVM_FORWARD_DECL(java_util_zip_ZipFile_ZipInflaterInputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_archive_internal_nls_Messages
+#define XMLVM_FORWARD_DECL_org_apache_harmony_archive_internal_nls_Messages
+XMLVM_FORWARD_DECL(org_apache_harmony_archive_internal_nls_Messages)
+#endif
+// Class declarations for java.util.zip.ZipFile
+XMLVM_DEFINE_CLASS(java_util_zip_ZipFile, 6, XMLVM_ITABLE_SIZE_java_util_zip_ZipFile)
+
+extern JAVA_OBJECT __CLASS_java_util_zip_ZipFile;
+extern JAVA_OBJECT __CLASS_java_util_zip_ZipFile_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_zip_ZipFile_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_zip_ZipFile_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_zip_ZipFile
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_zip_ZipFile \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT fileName_; \
+        JAVA_OBJECT fileToDeleteOnClose_; \
+        JAVA_OBJECT mRaf_; \
+        JAVA_OBJECT ler_; \
+        JAVA_OBJECT mEntries_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_zip_ZipFile \
+    } java_util_zip_ZipFile
+
+struct java_util_zip_ZipFile {
+    __TIB_DEFINITION_java_util_zip_ZipFile* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_zip_ZipFile;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_zip_ZipFile
+#define XMLVM_FORWARD_DECL_java_util_zip_ZipFile
+typedef struct java_util_zip_ZipFile java_util_zip_ZipFile;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_zip_ZipFile 6
+#define XMLVM_VTABLE_IDX_java_util_zip_ZipFile_finalize_java_util_zip_ZipFile__ 2
+
+void __INIT_java_util_zip_ZipFile();
+void __INIT_IMPL_java_util_zip_ZipFile();
+void __DELETE_java_util_zip_ZipFile(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_zip_ZipFile(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_zip_ZipFile();
+JAVA_OBJECT __NEW_INSTANCE_java_util_zip_ZipFile();
+JAVA_INT java_util_zip_ZipFile_GET_OPEN_READ();
+void java_util_zip_ZipFile_PUT_OPEN_READ(JAVA_INT v);
+JAVA_INT java_util_zip_ZipFile_GET_OPEN_DELETE();
+void java_util_zip_ZipFile_PUT_OPEN_DELETE(JAVA_INT v);
+void java_util_zip_ZipFile___INIT____java_io_File(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_util_zip_ZipFile___INIT____java_io_File_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2);
+void java_util_zip_ZipFile___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 2
+void java_util_zip_ZipFile_finalize_java_util_zip_ZipFile__(JAVA_OBJECT me);
+void java_util_zip_ZipFile_close__(JAVA_OBJECT me);
+void java_util_zip_ZipFile_checkNotClosed__(JAVA_OBJECT me);
+JAVA_OBJECT java_util_zip_ZipFile_entries__(JAVA_OBJECT me);
+JAVA_OBJECT java_util_zip_ZipFile_getEntry___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT java_util_zip_ZipFile_getInputStream___java_util_zip_ZipEntry(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT java_util_zip_ZipFile_getName__(JAVA_OBJECT me);
+JAVA_INT java_util_zip_ZipFile_size__(JAVA_OBJECT me);
+void java_util_zip_ZipFile_readCentralDir__(JAVA_OBJECT me);
+JAVA_OBJECT java_util_zip_ZipFile_access$0___java_util_zip_ZipFile(JAVA_OBJECT n1);
+void java_util_zip_ZipFile_access$1___java_util_zip_ZipFile(JAVA_OBJECT n1);
+
+#endif

@@ -1,0 +1,159 @@
+#ifndef __JAVA_IO_OUTPUTSTREAMWRITER__
+#define __JAVA_IO_OUTPUTSTREAMWRITER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_io_OutputStreamWriter 5
+// Implemented interfaces:
+// Super Class:
+#include "java_io_Writer.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_io_IOException
+#define XMLVM_FORWARD_DECL_java_io_IOException
+XMLVM_FORWARD_DECL(java_io_IOException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_OutputStream
+#define XMLVM_FORWARD_DECL_java_io_OutputStream
+XMLVM_FORWARD_DECL(java_io_OutputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_UnsupportedEncodingException
+#define XMLVM_FORWARD_DECL_java_io_UnsupportedEncodingException
+XMLVM_FORWARD_DECL(java_io_UnsupportedEncodingException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Exception
+#define XMLVM_FORWARD_DECL_java_lang_Exception
+XMLVM_FORWARD_DECL(java_lang_Exception)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IndexOutOfBoundsException
+#define XMLVM_FORWARD_DECL_java_lang_IndexOutOfBoundsException
+XMLVM_FORWARD_DECL(java_lang_IndexOutOfBoundsException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NullPointerException
+#define XMLVM_FORWARD_DECL_java_lang_NullPointerException
+XMLVM_FORWARD_DECL(java_lang_NullPointerException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringIndexOutOfBoundsException
+#define XMLVM_FORWARD_DECL_java_lang_StringIndexOutOfBoundsException
+XMLVM_FORWARD_DECL(java_lang_StringIndexOutOfBoundsException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_ByteBuffer
+#define XMLVM_FORWARD_DECL_java_nio_ByteBuffer
+XMLVM_FORWARD_DECL(java_nio_ByteBuffer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_CharBuffer
+#define XMLVM_FORWARD_DECL_java_nio_CharBuffer
+XMLVM_FORWARD_DECL(java_nio_CharBuffer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_charset_Charset
+#define XMLVM_FORWARD_DECL_java_nio_charset_Charset
+XMLVM_FORWARD_DECL(java_nio_charset_Charset)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_charset_CharsetEncoder
+#define XMLVM_FORWARD_DECL_java_nio_charset_CharsetEncoder
+XMLVM_FORWARD_DECL(java_nio_charset_CharsetEncoder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_charset_CoderResult
+#define XMLVM_FORWARD_DECL_java_nio_charset_CoderResult
+XMLVM_FORWARD_DECL(java_nio_charset_CoderResult)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_charset_CodingErrorAction
+#define XMLVM_FORWARD_DECL_java_nio_charset_CodingErrorAction
+XMLVM_FORWARD_DECL(java_nio_charset_CodingErrorAction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_security_AccessController
+#define XMLVM_FORWARD_DECL_java_security_AccessController
+XMLVM_FORWARD_DECL(java_security_AccessController)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_internal_nls_Messages
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_internal_nls_Messages
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_internal_nls_Messages)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_HistoricalNamesUtil
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_HistoricalNamesUtil
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_util_HistoricalNamesUtil)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_PriviAction
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_PriviAction
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_util_PriviAction)
+#endif
+// Class declarations for java.io.OutputStreamWriter
+XMLVM_DEFINE_CLASS(java_io_OutputStreamWriter, 17, XMLVM_ITABLE_SIZE_java_io_OutputStreamWriter)
+
+extern JAVA_OBJECT __CLASS_java_io_OutputStreamWriter;
+extern JAVA_OBJECT __CLASS_java_io_OutputStreamWriter_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_io_OutputStreamWriter_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_io_OutputStreamWriter_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_io_OutputStreamWriter
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_io_OutputStreamWriter \
+    __INSTANCE_FIELDS_java_io_Writer; \
+    struct { \
+        JAVA_OBJECT out_; \
+        JAVA_OBJECT encoder_; \
+        JAVA_OBJECT bytes_; \
+        JAVA_BOOLEAN encoderFlush_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_io_OutputStreamWriter \
+    } java_io_OutputStreamWriter
+
+struct java_io_OutputStreamWriter {
+    __TIB_DEFINITION_java_io_OutputStreamWriter* tib;
+    struct {
+        __INSTANCE_FIELDS_java_io_OutputStreamWriter;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_io_OutputStreamWriter
+#define XMLVM_FORWARD_DECL_java_io_OutputStreamWriter
+typedef struct java_io_OutputStreamWriter java_io_OutputStreamWriter;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_io_OutputStreamWriter 17
+#define XMLVM_VTABLE_IDX_java_io_OutputStreamWriter_close__ 10
+#define XMLVM_VTABLE_IDX_java_io_OutputStreamWriter_flush__ 11
+#define XMLVM_VTABLE_IDX_java_io_OutputStreamWriter_write___char_1ARRAY_int_int 13
+#define XMLVM_VTABLE_IDX_java_io_OutputStreamWriter_write___int 14
+#define XMLVM_VTABLE_IDX_java_io_OutputStreamWriter_write___java_lang_String_int_int 16
+#define XMLVM_VTABLE_IDX_java_io_OutputStreamWriter_checkError__ 9
+
+void __INIT_java_io_OutputStreamWriter();
+void __INIT_IMPL_java_io_OutputStreamWriter();
+void __DELETE_java_io_OutputStreamWriter(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_io_OutputStreamWriter(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_io_OutputStreamWriter();
+JAVA_OBJECT __NEW_INSTANCE_java_io_OutputStreamWriter();
+void java_io_OutputStreamWriter___INIT____java_io_OutputStream(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_io_OutputStreamWriter___INIT____java_io_OutputStream_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+void java_io_OutputStreamWriter___INIT____java_io_OutputStream_java_nio_charset_Charset(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+void java_io_OutputStreamWriter___INIT____java_io_OutputStream_java_nio_charset_CharsetEncoder(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 10
+void java_io_OutputStreamWriter_close__(JAVA_OBJECT me);
+// Vtable index: 11
+void java_io_OutputStreamWriter_flush__(JAVA_OBJECT me);
+void java_io_OutputStreamWriter_checkStatus__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_OutputStreamWriter_getEncoding__(JAVA_OBJECT me);
+// Vtable index: 13
+void java_io_OutputStreamWriter_write___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+void java_io_OutputStreamWriter_convert___java_nio_CharBuffer(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 14
+void java_io_OutputStreamWriter_write___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 16
+void java_io_OutputStreamWriter_write___java_lang_String_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+// Vtable index: 9
+JAVA_BOOLEAN java_io_OutputStreamWriter_checkError__(JAVA_OBJECT me);
+
+#endif

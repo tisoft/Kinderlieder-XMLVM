@@ -1,0 +1,47 @@
+#ifndef __ORG_W3C_DOM_LS_LSOUTPUT__
+#define __ORG_W3C_DOM_LS_LSOUTPUT__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSOutput_getCharacterStream__ 1
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSOutput_setCharacterStream___java_io_Writer 5
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSOutput_getByteStream__ 0
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSOutput_setByteStream___java_io_OutputStream 4
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSOutput_getSystemId__ 3
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSOutput_setSystemId___java_lang_String 7
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSOutput_getEncoding__ 2
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSOutput_setEncoding___java_lang_String 6
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_io_OutputStream
+#define XMLVM_FORWARD_DECL_java_io_OutputStream
+XMLVM_FORWARD_DECL(java_io_OutputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_Writer
+#define XMLVM_FORWARD_DECL_java_io_Writer
+XMLVM_FORWARD_DECL(java_io_Writer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+
+XMLVM_DEFINE_CLASS(org_w3c_dom_ls_LSOutput, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_w3c_dom_ls_LSOutput;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_ls_LSOutput_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_ls_LSOutput_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_ls_LSOutput_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSOutput
+#define XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSOutput
+typedef struct org_w3c_dom_ls_LSOutput org_w3c_dom_ls_LSOutput;
+#endif
+
+void __INIT_org_w3c_dom_ls_LSOutput();
+void __INIT_IMPL_org_w3c_dom_ls_LSOutput();
+
+#endif

@@ -1,0 +1,53 @@
+#ifndef __JAVA_UTIL_SORTEDSET__
+#define __JAVA_UTIL_SORTEDSET__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_java_util_SortedSet_comparator__ 66
+#define XMLVM_ITABLE_IDX_java_util_SortedSet_first__ 70
+#define XMLVM_ITABLE_IDX_java_util_SortedSet_headSet___java_lang_Object 72
+#define XMLVM_ITABLE_IDX_java_util_SortedSet_last__ 75
+#define XMLVM_ITABLE_IDX_java_util_SortedSet_subSet___java_lang_Object_java_lang_Object 80
+#define XMLVM_ITABLE_IDX_java_util_SortedSet_tailSet___java_lang_Object 81
+#define XMLVM_ITABLE_IDX_java_util_SortedSet_addAll___java_util_Collection 63
+#define XMLVM_ITABLE_IDX_java_util_SortedSet_add___java_lang_Object 64
+#define XMLVM_ITABLE_IDX_java_util_SortedSet_clear__ 65
+#define XMLVM_ITABLE_IDX_java_util_SortedSet_containsAll___java_util_Collection 67
+#define XMLVM_ITABLE_IDX_java_util_SortedSet_contains___java_lang_Object 68
+#define XMLVM_ITABLE_IDX_java_util_SortedSet_equals___java_lang_Object 69
+#define XMLVM_ITABLE_IDX_java_util_SortedSet_hashCode__ 71
+#define XMLVM_ITABLE_IDX_java_util_SortedSet_isEmpty__ 73
+#define XMLVM_ITABLE_IDX_java_util_SortedSet_iterator__ 74
+#define XMLVM_ITABLE_IDX_java_util_SortedSet_removeAll___java_util_Collection 76
+#define XMLVM_ITABLE_IDX_java_util_SortedSet_remove___java_lang_Object 77
+#define XMLVM_ITABLE_IDX_java_util_SortedSet_retainAll___java_util_Collection 78
+#define XMLVM_ITABLE_IDX_java_util_SortedSet_size__ 79
+#define XMLVM_ITABLE_IDX_java_util_SortedSet_toArray__ 82
+#define XMLVM_ITABLE_IDX_java_util_SortedSet_toArray___java_lang_Object_1ARRAY 83
+// Implemented interfaces:
+#include "java_util_Set.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_util_Comparator
+#define XMLVM_FORWARD_DECL_java_util_Comparator
+XMLVM_FORWARD_DECL(java_util_Comparator)
+#endif
+
+XMLVM_DEFINE_CLASS(java_util_SortedSet, 0, 0)
+
+extern JAVA_OBJECT __CLASS_java_util_SortedSet;
+extern JAVA_OBJECT __CLASS_java_util_SortedSet_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_SortedSet_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_SortedSet_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_java_util_SortedSet
+#define XMLVM_FORWARD_DECL_java_util_SortedSet
+typedef struct java_util_SortedSet java_util_SortedSet;
+#endif
+
+void __INIT_java_util_SortedSet();
+void __INIT_IMPL_java_util_SortedSet();
+
+#endif

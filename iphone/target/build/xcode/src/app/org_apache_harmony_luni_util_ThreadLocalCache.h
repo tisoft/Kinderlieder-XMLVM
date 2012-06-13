@@ -1,0 +1,96 @@
+#ifndef __ORG_APACHE_HARMONY_LUNI_UTIL_THREADLOCALCACHE__
+#define __ORG_APACHE_HARMONY_LUNI_UTIL_THREADLOCALCACHE__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_apache_harmony_luni_util_ThreadLocalCache 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_ThreadLocal
+#define XMLVM_FORWARD_DECL_java_lang_ThreadLocal
+XMLVM_FORWARD_DECL(java_lang_ThreadLocal)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_ref_SoftReference
+#define XMLVM_FORWARD_DECL_java_lang_ref_SoftReference
+XMLVM_FORWARD_DECL(java_lang_ref_SoftReference)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_ThreadLocalCache_1
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_ThreadLocalCache_1
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_util_ThreadLocalCache_1)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_ThreadLocalCache_2
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_ThreadLocalCache_2
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_util_ThreadLocalCache_2)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_ThreadLocalCache_3
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_ThreadLocalCache_3
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_util_ThreadLocalCache_3)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_ThreadLocalCache_4
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_ThreadLocalCache_4
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_util_ThreadLocalCache_4)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_ThreadLocalCache_5
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_ThreadLocalCache_5
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_util_ThreadLocalCache_5)
+#endif
+// Class declarations for org.apache.harmony.luni.util.ThreadLocalCache
+XMLVM_DEFINE_CLASS(org_apache_harmony_luni_util_ThreadLocalCache, 7, XMLVM_ITABLE_SIZE_org_apache_harmony_luni_util_ThreadLocalCache)
+
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_ThreadLocalCache;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_ThreadLocalCache_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_ThreadLocalCache_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_ThreadLocalCache_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_util_ThreadLocalCache
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_apache_harmony_luni_util_ThreadLocalCache \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT storage_; \
+        __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_util_ThreadLocalCache \
+    } org_apache_harmony_luni_util_ThreadLocalCache
+
+struct org_apache_harmony_luni_util_ThreadLocalCache {
+    __TIB_DEFINITION_org_apache_harmony_luni_util_ThreadLocalCache* tib;
+    struct {
+        __INSTANCE_FIELDS_org_apache_harmony_luni_util_ThreadLocalCache;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_ThreadLocalCache
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_ThreadLocalCache
+typedef struct org_apache_harmony_luni_util_ThreadLocalCache org_apache_harmony_luni_util_ThreadLocalCache;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_apache_harmony_luni_util_ThreadLocalCache 7
+#define XMLVM_VTABLE_IDX_org_apache_harmony_luni_util_ThreadLocalCache_initialValue__ 6
+
+void __INIT_org_apache_harmony_luni_util_ThreadLocalCache();
+void __INIT_IMPL_org_apache_harmony_luni_util_ThreadLocalCache();
+void __DELETE_org_apache_harmony_luni_util_ThreadLocalCache(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_apache_harmony_luni_util_ThreadLocalCache(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_apache_harmony_luni_util_ThreadLocalCache();
+JAVA_OBJECT __NEW_INSTANCE_org_apache_harmony_luni_util_ThreadLocalCache();
+JAVA_OBJECT org_apache_harmony_luni_util_ThreadLocalCache_GET_utf8Decoder();
+void org_apache_harmony_luni_util_ThreadLocalCache_PUT_utf8Decoder(JAVA_OBJECT v);
+JAVA_OBJECT org_apache_harmony_luni_util_ThreadLocalCache_GET_utf8Encoder();
+void org_apache_harmony_luni_util_ThreadLocalCache_PUT_utf8Encoder(JAVA_OBJECT v);
+JAVA_OBJECT org_apache_harmony_luni_util_ThreadLocalCache_GET_byteBuffer();
+void org_apache_harmony_luni_util_ThreadLocalCache_PUT_byteBuffer(JAVA_OBJECT v);
+JAVA_OBJECT org_apache_harmony_luni_util_ThreadLocalCache_GET_charBuffer();
+void org_apache_harmony_luni_util_ThreadLocalCache_PUT_charBuffer(JAVA_OBJECT v);
+void org_apache_harmony_luni_util_ThreadLocalCache___CLINIT_();
+void org_apache_harmony_luni_util_ThreadLocalCache___INIT___(JAVA_OBJECT me);
+JAVA_OBJECT org_apache_harmony_luni_util_ThreadLocalCache_getThreadLocal__(JAVA_OBJECT me);
+// Vtable index: 6
+JAVA_OBJECT org_apache_harmony_luni_util_ThreadLocalCache_initialValue__(JAVA_OBJECT me);
+JAVA_OBJECT org_apache_harmony_luni_util_ThreadLocalCache_get__(JAVA_OBJECT me);
+void org_apache_harmony_luni_util_ThreadLocalCache_set___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+void org_apache_harmony_luni_util_ThreadLocalCache_remove__(JAVA_OBJECT me);
+
+#endif

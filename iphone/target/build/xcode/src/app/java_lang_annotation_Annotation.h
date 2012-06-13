@@ -1,0 +1,39 @@
+#ifndef __JAVA_LANG_ANNOTATION_ANNOTATION__
+#define __JAVA_LANG_ANNOTATION_ANNOTATION__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_java_lang_annotation_Annotation_annotationType__ 0
+#define XMLVM_ITABLE_IDX_java_lang_annotation_Annotation_equals___java_lang_Object 1
+#define XMLVM_ITABLE_IDX_java_lang_annotation_Annotation_hashCode__ 2
+#define XMLVM_ITABLE_IDX_java_lang_annotation_Annotation_toString__ 3
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+
+XMLVM_DEFINE_CLASS(java_lang_annotation_Annotation, 0, 0)
+
+extern JAVA_OBJECT __CLASS_java_lang_annotation_Annotation;
+extern JAVA_OBJECT __CLASS_java_lang_annotation_Annotation_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_lang_annotation_Annotation_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_lang_annotation_Annotation_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_java_lang_annotation_Annotation
+#define XMLVM_FORWARD_DECL_java_lang_annotation_Annotation
+typedef struct java_lang_annotation_Annotation java_lang_annotation_Annotation;
+#endif
+
+void __INIT_java_lang_annotation_Annotation();
+void __INIT_IMPL_java_lang_annotation_Annotation();
+
+#endif

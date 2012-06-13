@@ -1,0 +1,86 @@
+#ifndef __ORG_APACHE_HARMONY_NIOCHAR_CHARSET_ISO_8859_7_ENCODER__
+#define __ORG_APACHE_HARMONY_NIOCHAR_CHARSET_ISO_8859_7_ENCODER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder 0
+// Implemented interfaces:
+// Super Class:
+#include "java_nio_charset_CharsetEncoder.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_ByteBuffer
+#define XMLVM_FORWARD_DECL_java_nio_ByteBuffer
+XMLVM_FORWARD_DECL(java_nio_ByteBuffer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_CharBuffer
+#define XMLVM_FORWARD_DECL_java_nio_CharBuffer
+XMLVM_FORWARD_DECL(java_nio_CharBuffer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_charset_Charset
+#define XMLVM_FORWARD_DECL_java_nio_charset_Charset
+XMLVM_FORWARD_DECL(java_nio_charset_Charset)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_charset_CoderResult
+#define XMLVM_FORWARD_DECL_java_nio_charset_CoderResult
+XMLVM_FORWARD_DECL(java_nio_charset_CoderResult)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_niochar_CharsetProviderImpl
+#define XMLVM_FORWARD_DECL_org_apache_harmony_niochar_CharsetProviderImpl
+XMLVM_FORWARD_DECL(org_apache_harmony_niochar_CharsetProviderImpl)
+#endif
+// Class declarations for org.apache.harmony.niochar.charset.ISO_8859_7$Encoder
+XMLVM_DEFINE_CLASS(org_apache_harmony_niochar_charset_ISO_8859_7_Encoder, 7, XMLVM_ITABLE_SIZE_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder)
+
+extern JAVA_OBJECT __CLASS_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder \
+    __INSTANCE_FIELDS_java_nio_charset_CharsetEncoder; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder \
+    } org_apache_harmony_niochar_charset_ISO_8859_7_Encoder
+
+struct org_apache_harmony_niochar_charset_ISO_8859_7_Encoder {
+    __TIB_DEFINITION_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder* tib;
+    struct {
+        __INSTANCE_FIELDS_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder
+#define XMLVM_FORWARD_DECL_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder
+typedef struct org_apache_harmony_niochar_charset_ISO_8859_7_Encoder org_apache_harmony_niochar_charset_ISO_8859_7_Encoder;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder 7
+#define XMLVM_VTABLE_IDX_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder_encodeLoop___java_nio_CharBuffer_java_nio_ByteBuffer 6
+
+void __INIT_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder();
+void __INIT_IMPL_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder();
+void __DELETE_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder();
+JAVA_OBJECT __NEW_INSTANCE_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder();
+void xmlvm_init_native_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder();
+JAVA_OBJECT org_apache_harmony_niochar_charset_ISO_8859_7_Encoder_GET_arr();
+void org_apache_harmony_niochar_charset_ISO_8859_7_Encoder_PUT_arr(JAVA_OBJECT v);
+JAVA_OBJECT org_apache_harmony_niochar_charset_ISO_8859_7_Encoder_GET_encodeIndex();
+void org_apache_harmony_niochar_charset_ISO_8859_7_Encoder_PUT_encodeIndex(JAVA_OBJECT v);
+void org_apache_harmony_niochar_charset_ISO_8859_7_Encoder___CLINIT_();
+void org_apache_harmony_niochar_charset_ISO_8859_7_Encoder___INIT____java_nio_charset_Charset(JAVA_OBJECT me, JAVA_OBJECT n1);
+void org_apache_harmony_niochar_charset_ISO_8859_7_Encoder_nEncode___long_int_char_1ARRAY_int_int_1ARRAY(JAVA_OBJECT me, JAVA_LONG n1, JAVA_INT n2, JAVA_OBJECT n3, JAVA_INT n4, JAVA_OBJECT n5);
+// Vtable index: 6
+JAVA_OBJECT org_apache_harmony_niochar_charset_ISO_8859_7_Encoder_encodeLoop___java_nio_CharBuffer_java_nio_ByteBuffer(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+void org_apache_harmony_niochar_charset_ISO_8859_7_Encoder___INIT____java_nio_charset_Charset_org_apache_harmony_niochar_charset_ISO_8859_7_Encoder(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+
+#endif

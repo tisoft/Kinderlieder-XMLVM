@@ -1,0 +1,124 @@
+#ifndef __JAVA_UTIL_PROPERTYPERMISSIONCOLLECTION__
+#define __JAVA_UTIL_PROPERTYPERMISSIONCOLLECTION__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_PropertyPermissionCollection 0
+// Implemented interfaces:
+// Super Class:
+#include "java_security_PermissionCollection.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectInputStream
+#define XMLVM_FORWARD_DECL_java_io_ObjectInputStream
+XMLVM_FORWARD_DECL(java_io_ObjectInputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectInputStream_GetField
+#define XMLVM_FORWARD_DECL_java_io_ObjectInputStream_GetField
+XMLVM_FORWARD_DECL(java_io_ObjectInputStream_GetField)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectOutputStream
+#define XMLVM_FORWARD_DECL_java_io_ObjectOutputStream
+XMLVM_FORWARD_DECL(java_io_ObjectOutputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectOutputStream_PutField
+#define XMLVM_FORWARD_DECL_java_io_ObjectOutputStream_PutField
+XMLVM_FORWARD_DECL(java_io_ObjectOutputStream_PutField)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectStreamField
+#define XMLVM_FORWARD_DECL_java_io_ObjectStreamField
+XMLVM_FORWARD_DECL(java_io_ObjectStreamField)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Boolean
+#define XMLVM_FORWARD_DECL_java_lang_Boolean
+XMLVM_FORWARD_DECL(java_lang_Boolean)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+XMLVM_FORWARD_DECL(java_lang_IllegalStateException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_security_Permission
+#define XMLVM_FORWARD_DECL_java_security_Permission
+XMLVM_FORWARD_DECL(java_security_Permission)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Enumeration
+#define XMLVM_FORWARD_DECL_java_util_Enumeration
+XMLVM_FORWARD_DECL(java_util_Enumeration)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Hashtable
+#define XMLVM_FORWARD_DECL_java_util_Hashtable
+XMLVM_FORWARD_DECL(java_util_Hashtable)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_PropertyPermission
+#define XMLVM_FORWARD_DECL_java_util_PropertyPermission
+XMLVM_FORWARD_DECL(java_util_PropertyPermission)
+#endif
+// Class declarations for java.util.PropertyPermissionCollection
+XMLVM_DEFINE_CLASS(java_util_PropertyPermissionCollection, 9, XMLVM_ITABLE_SIZE_java_util_PropertyPermissionCollection)
+
+extern JAVA_OBJECT __CLASS_java_util_PropertyPermissionCollection;
+extern JAVA_OBJECT __CLASS_java_util_PropertyPermissionCollection_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_PropertyPermissionCollection_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_PropertyPermissionCollection_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_PropertyPermissionCollection
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_PropertyPermissionCollection \
+    __INSTANCE_FIELDS_java_security_PermissionCollection; \
+    struct { \
+        JAVA_OBJECT permissions_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_PropertyPermissionCollection \
+    } java_util_PropertyPermissionCollection
+
+struct java_util_PropertyPermissionCollection {
+    __TIB_DEFINITION_java_util_PropertyPermissionCollection* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_PropertyPermissionCollection;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_PropertyPermissionCollection
+#define XMLVM_FORWARD_DECL_java_util_PropertyPermissionCollection
+typedef struct java_util_PropertyPermissionCollection java_util_PropertyPermissionCollection;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_PropertyPermissionCollection 9
+#define XMLVM_VTABLE_IDX_java_util_PropertyPermissionCollection_add___java_security_Permission 6
+#define XMLVM_VTABLE_IDX_java_util_PropertyPermissionCollection_elements__ 7
+#define XMLVM_VTABLE_IDX_java_util_PropertyPermissionCollection_implies___java_security_Permission 8
+
+void __INIT_java_util_PropertyPermissionCollection();
+void __INIT_IMPL_java_util_PropertyPermissionCollection();
+void __DELETE_java_util_PropertyPermissionCollection(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_PropertyPermissionCollection(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_PropertyPermissionCollection();
+JAVA_OBJECT __NEW_INSTANCE_java_util_PropertyPermissionCollection();
+JAVA_LONG java_util_PropertyPermissionCollection_GET_serialVersionUID();
+void java_util_PropertyPermissionCollection_PUT_serialVersionUID(JAVA_LONG v);
+JAVA_OBJECT java_util_PropertyPermissionCollection_GET_serialPersistentFields();
+void java_util_PropertyPermissionCollection_PUT_serialPersistentFields(JAVA_OBJECT v);
+void java_util_PropertyPermissionCollection___CLINIT_();
+void java_util_PropertyPermissionCollection___INIT___(JAVA_OBJECT me);
+// Vtable index: 6
+void java_util_PropertyPermissionCollection_add___java_security_Permission(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 7
+JAVA_OBJECT java_util_PropertyPermissionCollection_elements__(JAVA_OBJECT me);
+// Vtable index: 8
+JAVA_BOOLEAN java_util_PropertyPermissionCollection_implies___java_security_Permission(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_util_PropertyPermissionCollection_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_util_PropertyPermissionCollection_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

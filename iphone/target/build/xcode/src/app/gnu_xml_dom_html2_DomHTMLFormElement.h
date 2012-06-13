@@ -1,0 +1,124 @@
+#ifndef __GNU_XML_DOM_HTML2_DOMHTMLFORMELEMENT__
+#define __GNU_XML_DOM_HTML2_DOMHTMLFORMELEMENT__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_dom_html2_DomHTMLFormElement 261
+// Implemented interfaces:
+#include "org_w3c_dom_html2_HTMLFormElement.h"
+// Super Class:
+#include "gnu_xml_dom_html2_DomHTMLElement.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLCollection
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLCollection
+XMLVM_FORWARD_DECL(gnu_xml_dom_html2_DomHTMLCollection)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLDocument
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLDocument
+XMLVM_FORWARD_DECL(gnu_xml_dom_html2_DomHTMLDocument)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Document
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Document
+XMLVM_FORWARD_DECL(org_w3c_dom_Document)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_html2_HTMLCollection
+#define XMLVM_FORWARD_DECL_org_w3c_dom_html2_HTMLCollection
+XMLVM_FORWARD_DECL(org_w3c_dom_html2_HTMLCollection)
+#endif
+// Class declarations for gnu.xml.dom.html2.DomHTMLFormElement
+XMLVM_DEFINE_CLASS(gnu_xml_dom_html2_DomHTMLFormElement, 96, XMLVM_ITABLE_SIZE_gnu_xml_dom_html2_DomHTMLFormElement)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLFormElement;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLFormElement_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLFormElement_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLFormElement_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLFormElement
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLFormElement \
+    __INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLElement; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLFormElement \
+    } gnu_xml_dom_html2_DomHTMLFormElement
+
+struct gnu_xml_dom_html2_DomHTMLFormElement {
+    __TIB_DEFINITION_gnu_xml_dom_html2_DomHTMLFormElement* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLFormElement;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLFormElement
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLFormElement
+typedef struct gnu_xml_dom_html2_DomHTMLFormElement gnu_xml_dom_html2_DomHTMLFormElement;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_dom_html2_DomHTMLFormElement 96
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLFormElement_getElements__ 83
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLFormElement_getLength__ 19
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLFormElement_getName__ 86
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLFormElement_setName___java_lang_String 93
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLFormElement_getAcceptCharset__ 81
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLFormElement_setAcceptCharset___java_lang_String 89
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLFormElement_getAction__ 82
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLFormElement_setAction___java_lang_String 90
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLFormElement_getEnctype__ 84
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLFormElement_setEnctype___java_lang_String 91
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLFormElement_getMethod__ 85
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLFormElement_setMethod___java_lang_String 92
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLFormElement_getTarget__ 87
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLFormElement_setTarget___java_lang_String 94
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLFormElement_submit__ 95
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLFormElement_reset__ 88
+
+void __INIT_gnu_xml_dom_html2_DomHTMLFormElement();
+void __INIT_IMPL_gnu_xml_dom_html2_DomHTMLFormElement();
+void __DELETE_gnu_xml_dom_html2_DomHTMLFormElement(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_dom_html2_DomHTMLFormElement(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_dom_html2_DomHTMLFormElement();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_dom_html2_DomHTMLFormElement();
+void gnu_xml_dom_html2_DomHTMLFormElement___INIT____gnu_xml_dom_html2_DomHTMLDocument_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 83
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLFormElement_getElements__(JAVA_OBJECT me);
+// Vtable index: 19
+JAVA_INT gnu_xml_dom_html2_DomHTMLFormElement_getLength__(JAVA_OBJECT me);
+// Vtable index: 86
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLFormElement_getName__(JAVA_OBJECT me);
+// Vtable index: 93
+void gnu_xml_dom_html2_DomHTMLFormElement_setName___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 81
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLFormElement_getAcceptCharset__(JAVA_OBJECT me);
+// Vtable index: 89
+void gnu_xml_dom_html2_DomHTMLFormElement_setAcceptCharset___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 82
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLFormElement_getAction__(JAVA_OBJECT me);
+// Vtable index: 90
+void gnu_xml_dom_html2_DomHTMLFormElement_setAction___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 84
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLFormElement_getEnctype__(JAVA_OBJECT me);
+// Vtable index: 91
+void gnu_xml_dom_html2_DomHTMLFormElement_setEnctype___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 85
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLFormElement_getMethod__(JAVA_OBJECT me);
+// Vtable index: 92
+void gnu_xml_dom_html2_DomHTMLFormElement_setMethod___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 87
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLFormElement_getTarget__(JAVA_OBJECT me);
+// Vtable index: 94
+void gnu_xml_dom_html2_DomHTMLFormElement_setTarget___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 95
+void gnu_xml_dom_html2_DomHTMLFormElement_submit__(JAVA_OBJECT me);
+// Vtable index: 88
+void gnu_xml_dom_html2_DomHTMLFormElement_reset__(JAVA_OBJECT me);
+
+#endif

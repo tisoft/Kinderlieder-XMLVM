@@ -1,0 +1,106 @@
+#ifndef __GNU_XML_AELFRED2_SAXDRIVER_ADAPTER__
+#define __GNU_XML_AELFRED2_SAXDRIVER_ADAPTER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_aelfred2_SAXDriver_Adapter 15
+// Implemented interfaces:
+#include "org_xml_sax_ContentHandler.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_AttributeList
+#define XMLVM_FORWARD_DECL_org_xml_sax_AttributeList
+XMLVM_FORWARD_DECL(org_xml_sax_AttributeList)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_Attributes
+#define XMLVM_FORWARD_DECL_org_xml_sax_Attributes
+XMLVM_FORWARD_DECL(org_xml_sax_Attributes)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_DocumentHandler
+#define XMLVM_FORWARD_DECL_org_xml_sax_DocumentHandler
+XMLVM_FORWARD_DECL(org_xml_sax_DocumentHandler)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_Locator
+#define XMLVM_FORWARD_DECL_org_xml_sax_Locator
+XMLVM_FORWARD_DECL(org_xml_sax_Locator)
+#endif
+// Class declarations for gnu.xml.aelfred2.SAXDriver$Adapter
+XMLVM_DEFINE_CLASS(gnu_xml_aelfred2_SAXDriver_Adapter, 17, XMLVM_ITABLE_SIZE_gnu_xml_aelfred2_SAXDriver_Adapter)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_aelfred2_SAXDriver_Adapter;
+extern JAVA_OBJECT __CLASS_gnu_xml_aelfred2_SAXDriver_Adapter_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_aelfred2_SAXDriver_Adapter_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_aelfred2_SAXDriver_Adapter_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_aelfred2_SAXDriver_Adapter
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_aelfred2_SAXDriver_Adapter \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT docHandler_; \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_aelfred2_SAXDriver_Adapter \
+    } gnu_xml_aelfred2_SAXDriver_Adapter
+
+struct gnu_xml_aelfred2_SAXDriver_Adapter {
+    __TIB_DEFINITION_gnu_xml_aelfred2_SAXDriver_Adapter* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_aelfred2_SAXDriver_Adapter;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_aelfred2_SAXDriver_Adapter
+#define XMLVM_FORWARD_DECL_gnu_xml_aelfred2_SAXDriver_Adapter
+typedef struct gnu_xml_aelfred2_SAXDriver_Adapter gnu_xml_aelfred2_SAXDriver_Adapter;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_aelfred2_SAXDriver_Adapter 17
+#define XMLVM_VTABLE_IDX_gnu_xml_aelfred2_SAXDriver_Adapter_setDocumentLocator___org_xml_sax_Locator 12
+#define XMLVM_VTABLE_IDX_gnu_xml_aelfred2_SAXDriver_Adapter_startDocument__ 14
+#define XMLVM_VTABLE_IDX_gnu_xml_aelfred2_SAXDriver_Adapter_processingInstruction___java_lang_String_java_lang_String 11
+#define XMLVM_VTABLE_IDX_gnu_xml_aelfred2_SAXDriver_Adapter_startPrefixMapping___java_lang_String_java_lang_String 16
+#define XMLVM_VTABLE_IDX_gnu_xml_aelfred2_SAXDriver_Adapter_startElement___java_lang_String_java_lang_String_java_lang_String_org_xml_sax_Attributes 15
+#define XMLVM_VTABLE_IDX_gnu_xml_aelfred2_SAXDriver_Adapter_characters___char_1ARRAY_int_int 6
+#define XMLVM_VTABLE_IDX_gnu_xml_aelfred2_SAXDriver_Adapter_ignorableWhitespace___char_1ARRAY_int_int 10
+#define XMLVM_VTABLE_IDX_gnu_xml_aelfred2_SAXDriver_Adapter_skippedEntity___java_lang_String 13
+#define XMLVM_VTABLE_IDX_gnu_xml_aelfred2_SAXDriver_Adapter_endElement___java_lang_String_java_lang_String_java_lang_String 8
+#define XMLVM_VTABLE_IDX_gnu_xml_aelfred2_SAXDriver_Adapter_endPrefixMapping___java_lang_String 9
+#define XMLVM_VTABLE_IDX_gnu_xml_aelfred2_SAXDriver_Adapter_endDocument__ 7
+
+void __INIT_gnu_xml_aelfred2_SAXDriver_Adapter();
+void __INIT_IMPL_gnu_xml_aelfred2_SAXDriver_Adapter();
+void __DELETE_gnu_xml_aelfred2_SAXDriver_Adapter(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_aelfred2_SAXDriver_Adapter(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_aelfred2_SAXDriver_Adapter();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_aelfred2_SAXDriver_Adapter();
+void gnu_xml_aelfred2_SAXDriver_Adapter___INIT____org_xml_sax_DocumentHandler(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 12
+void gnu_xml_aelfred2_SAXDriver_Adapter_setDocumentLocator___org_xml_sax_Locator(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 14
+void gnu_xml_aelfred2_SAXDriver_Adapter_startDocument__(JAVA_OBJECT me);
+// Vtable index: 11
+void gnu_xml_aelfred2_SAXDriver_Adapter_processingInstruction___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 16
+void gnu_xml_aelfred2_SAXDriver_Adapter_startPrefixMapping___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 15
+void gnu_xml_aelfred2_SAXDriver_Adapter_startElement___java_lang_String_java_lang_String_java_lang_String_org_xml_sax_Attributes(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3, JAVA_OBJECT n4);
+// Vtable index: 6
+void gnu_xml_aelfred2_SAXDriver_Adapter_characters___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+// Vtable index: 10
+void gnu_xml_aelfred2_SAXDriver_Adapter_ignorableWhitespace___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+// Vtable index: 13
+void gnu_xml_aelfred2_SAXDriver_Adapter_skippedEntity___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 8
+void gnu_xml_aelfred2_SAXDriver_Adapter_endElement___java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 9
+void gnu_xml_aelfred2_SAXDriver_Adapter_endPrefixMapping___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 7
+void gnu_xml_aelfred2_SAXDriver_Adapter_endDocument__(JAVA_OBJECT me);
+
+#endif

@@ -1,0 +1,92 @@
+#ifndef __ORG_APACHE_HARMONY_LUNI_UTIL_MSG__
+#define __ORG_APACHE_HARMONY_LUNI_UTIL_MSG__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_apache_harmony_luni_util_Msg 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Integer
+#define XMLVM_FORWARD_DECL_java_lang_Integer
+XMLVM_FORWARD_DECL(java_lang_Integer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Throwable
+#define XMLVM_FORWARD_DECL_java_lang_Throwable
+XMLVM_FORWARD_DECL(java_lang_Throwable)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Locale
+#define XMLVM_FORWARD_DECL_java_util_Locale
+XMLVM_FORWARD_DECL(java_util_Locale)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_MissingResourceException
+#define XMLVM_FORWARD_DECL_java_util_MissingResourceException
+XMLVM_FORWARD_DECL(java_util_MissingResourceException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ResourceBundle
+#define XMLVM_FORWARD_DECL_java_util_ResourceBundle
+XMLVM_FORWARD_DECL(java_util_ResourceBundle)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_internal_nls_Messages
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_internal_nls_Messages
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_internal_nls_Messages)
+#endif
+// Class declarations for org.apache.harmony.luni.util.Msg
+XMLVM_DEFINE_CLASS(org_apache_harmony_luni_util_Msg, 6, XMLVM_ITABLE_SIZE_org_apache_harmony_luni_util_Msg)
+
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_Msg;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_Msg_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_Msg_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_Msg_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_util_Msg
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_apache_harmony_luni_util_Msg \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_util_Msg \
+    } org_apache_harmony_luni_util_Msg
+
+struct org_apache_harmony_luni_util_Msg {
+    __TIB_DEFINITION_org_apache_harmony_luni_util_Msg* tib;
+    struct {
+        __INSTANCE_FIELDS_org_apache_harmony_luni_util_Msg;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_Msg
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_Msg
+typedef struct org_apache_harmony_luni_util_Msg org_apache_harmony_luni_util_Msg;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_apache_harmony_luni_util_Msg 6
+
+void __INIT_org_apache_harmony_luni_util_Msg();
+void __INIT_IMPL_org_apache_harmony_luni_util_Msg();
+void __DELETE_org_apache_harmony_luni_util_Msg(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_apache_harmony_luni_util_Msg(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_apache_harmony_luni_util_Msg();
+JAVA_OBJECT __NEW_INSTANCE_org_apache_harmony_luni_util_Msg();
+JAVA_OBJECT org_apache_harmony_luni_util_Msg_GET_bundle();
+void org_apache_harmony_luni_util_Msg_PUT_bundle(JAVA_OBJECT v);
+void org_apache_harmony_luni_util_Msg___CLINIT_();
+void org_apache_harmony_luni_util_Msg___INIT___(JAVA_OBJECT me);
+JAVA_OBJECT org_apache_harmony_luni_util_Msg_getString___java_lang_String(JAVA_OBJECT n1);
+JAVA_OBJECT org_apache_harmony_luni_util_Msg_getString___java_lang_String_java_lang_Object(JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT org_apache_harmony_luni_util_Msg_getString___java_lang_String_int(JAVA_OBJECT n1, JAVA_INT n2);
+JAVA_OBJECT org_apache_harmony_luni_util_Msg_getString___java_lang_String_char(JAVA_OBJECT n1, JAVA_CHAR n2);
+JAVA_OBJECT org_apache_harmony_luni_util_Msg_getString___java_lang_String_java_lang_Object_java_lang_Object(JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+JAVA_OBJECT org_apache_harmony_luni_util_Msg_getString___java_lang_String_java_lang_Object_1ARRAY(JAVA_OBJECT n1, JAVA_OBJECT n2);
+
+#endif

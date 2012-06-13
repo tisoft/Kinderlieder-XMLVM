@@ -1,0 +1,78 @@
+#ifndef __JAVA_UTIL_COLLECTIONS_SYNCHRONIZEDSET__
+#define __JAVA_UTIL_COLLECTIONS_SYNCHRONIZEDSET__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_Collections_SynchronizedSet 63
+// Implemented interfaces:
+#include "java_util_Set.h"
+// Super Class:
+#include "java_util_Collections_SynchronizedCollection.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectOutputStream
+#define XMLVM_FORWARD_DECL_java_io_ObjectOutputStream
+XMLVM_FORWARD_DECL(java_io_ObjectOutputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Collection
+#define XMLVM_FORWARD_DECL_java_util_Collection
+XMLVM_FORWARD_DECL(java_util_Collection)
+#endif
+// Class declarations for java.util.Collections$SynchronizedSet
+XMLVM_DEFINE_CLASS(java_util_Collections_SynchronizedSet, 19, XMLVM_ITABLE_SIZE_java_util_Collections_SynchronizedSet)
+
+extern JAVA_OBJECT __CLASS_java_util_Collections_SynchronizedSet;
+extern JAVA_OBJECT __CLASS_java_util_Collections_SynchronizedSet_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_Collections_SynchronizedSet_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_Collections_SynchronizedSet_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_Collections_SynchronizedSet
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_Collections_SynchronizedSet \
+    __INSTANCE_FIELDS_java_util_Collections_SynchronizedCollection; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_Collections_SynchronizedSet \
+    } java_util_Collections_SynchronizedSet
+
+struct java_util_Collections_SynchronizedSet {
+    __TIB_DEFINITION_java_util_Collections_SynchronizedSet* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_Collections_SynchronizedSet;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_Collections_SynchronizedSet
+#define XMLVM_FORWARD_DECL_java_util_Collections_SynchronizedSet
+typedef struct java_util_Collections_SynchronizedSet java_util_Collections_SynchronizedSet;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_Collections_SynchronizedSet 19
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedSet_equals___java_lang_Object 1
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedSet_hashCode__ 4
+
+void __INIT_java_util_Collections_SynchronizedSet();
+void __INIT_IMPL_java_util_Collections_SynchronizedSet();
+void __DELETE_java_util_Collections_SynchronizedSet(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_Collections_SynchronizedSet(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_Collections_SynchronizedSet();
+JAVA_OBJECT __NEW_INSTANCE_java_util_Collections_SynchronizedSet();
+JAVA_LONG java_util_Collections_SynchronizedSet_GET_serialVersionUID();
+void java_util_Collections_SynchronizedSet_PUT_serialVersionUID(JAVA_LONG v);
+void java_util_Collections_SynchronizedSet___INIT____java_util_Set(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_util_Collections_SynchronizedSet___INIT____java_util_Set_java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 1
+JAVA_BOOLEAN java_util_Collections_SynchronizedSet_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 4
+JAVA_INT java_util_Collections_SynchronizedSet_hashCode__(JAVA_OBJECT me);
+void java_util_Collections_SynchronizedSet_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

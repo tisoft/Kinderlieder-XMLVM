@@ -1,0 +1,173 @@
+#ifndef __ORG_XML_SAX_HELPERS_XMLREADERADAPTER__
+#define __ORG_XML_SAX_HELPERS_XMLREADERADAPTER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_xml_sax_helpers_XMLReaderAdapter 29
+// Implemented interfaces:
+#include "org_xml_sax_ContentHandler.h"
+#include "org_xml_sax_Parser.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_NullPointerException
+#define XMLVM_FORWARD_DECL_java_lang_NullPointerException
+XMLVM_FORWARD_DECL(java_lang_NullPointerException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Locale
+#define XMLVM_FORWARD_DECL_java_util_Locale
+XMLVM_FORWARD_DECL(java_util_Locale)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_Attributes
+#define XMLVM_FORWARD_DECL_org_xml_sax_Attributes
+XMLVM_FORWARD_DECL(org_xml_sax_Attributes)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_DTDHandler
+#define XMLVM_FORWARD_DECL_org_xml_sax_DTDHandler
+XMLVM_FORWARD_DECL(org_xml_sax_DTDHandler)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_DocumentHandler
+#define XMLVM_FORWARD_DECL_org_xml_sax_DocumentHandler
+XMLVM_FORWARD_DECL(org_xml_sax_DocumentHandler)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_EntityResolver
+#define XMLVM_FORWARD_DECL_org_xml_sax_EntityResolver
+XMLVM_FORWARD_DECL(org_xml_sax_EntityResolver)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_ErrorHandler
+#define XMLVM_FORWARD_DECL_org_xml_sax_ErrorHandler
+XMLVM_FORWARD_DECL(org_xml_sax_ErrorHandler)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_InputSource
+#define XMLVM_FORWARD_DECL_org_xml_sax_InputSource
+XMLVM_FORWARD_DECL(org_xml_sax_InputSource)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_Locator
+#define XMLVM_FORWARD_DECL_org_xml_sax_Locator
+XMLVM_FORWARD_DECL(org_xml_sax_Locator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_SAXException
+#define XMLVM_FORWARD_DECL_org_xml_sax_SAXException
+XMLVM_FORWARD_DECL(org_xml_sax_SAXException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_SAXNotSupportedException
+#define XMLVM_FORWARD_DECL_org_xml_sax_SAXNotSupportedException
+XMLVM_FORWARD_DECL(org_xml_sax_SAXNotSupportedException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_XMLReader
+#define XMLVM_FORWARD_DECL_org_xml_sax_XMLReader
+XMLVM_FORWARD_DECL(org_xml_sax_XMLReader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter
+#define XMLVM_FORWARD_DECL_org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter
+XMLVM_FORWARD_DECL(org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_helpers_XMLReaderFactory
+#define XMLVM_FORWARD_DECL_org_xml_sax_helpers_XMLReaderFactory
+XMLVM_FORWARD_DECL(org_xml_sax_helpers_XMLReaderFactory)
+#endif
+// Class declarations for org.xml.sax.helpers.XMLReaderAdapter
+XMLVM_DEFINE_CLASS(org_xml_sax_helpers_XMLReaderAdapter, 24, XMLVM_ITABLE_SIZE_org_xml_sax_helpers_XMLReaderAdapter)
+
+extern JAVA_OBJECT __CLASS_org_xml_sax_helpers_XMLReaderAdapter;
+extern JAVA_OBJECT __CLASS_org_xml_sax_helpers_XMLReaderAdapter_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_helpers_XMLReaderAdapter_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_helpers_XMLReaderAdapter_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_xml_sax_helpers_XMLReaderAdapter
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_xml_sax_helpers_XMLReaderAdapter \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT xmlReader_; \
+        JAVA_OBJECT documentHandler_; \
+        JAVA_OBJECT qAtts_; \
+        __ADDITIONAL_INSTANCE_FIELDS_org_xml_sax_helpers_XMLReaderAdapter \
+    } org_xml_sax_helpers_XMLReaderAdapter
+
+struct org_xml_sax_helpers_XMLReaderAdapter {
+    __TIB_DEFINITION_org_xml_sax_helpers_XMLReaderAdapter* tib;
+    struct {
+        __INSTANCE_FIELDS_org_xml_sax_helpers_XMLReaderAdapter;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_helpers_XMLReaderAdapter
+#define XMLVM_FORWARD_DECL_org_xml_sax_helpers_XMLReaderAdapter
+typedef struct org_xml_sax_helpers_XMLReaderAdapter org_xml_sax_helpers_XMLReaderAdapter;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_xml_sax_helpers_XMLReaderAdapter 24
+#define XMLVM_VTABLE_IDX_org_xml_sax_helpers_XMLReaderAdapter_setLocale___java_util_Locale 19
+#define XMLVM_VTABLE_IDX_org_xml_sax_helpers_XMLReaderAdapter_setEntityResolver___org_xml_sax_EntityResolver 17
+#define XMLVM_VTABLE_IDX_org_xml_sax_helpers_XMLReaderAdapter_setDTDHandler___org_xml_sax_DTDHandler 14
+#define XMLVM_VTABLE_IDX_org_xml_sax_helpers_XMLReaderAdapter_setDocumentHandler___org_xml_sax_DocumentHandler 15
+#define XMLVM_VTABLE_IDX_org_xml_sax_helpers_XMLReaderAdapter_setErrorHandler___org_xml_sax_ErrorHandler 18
+#define XMLVM_VTABLE_IDX_org_xml_sax_helpers_XMLReaderAdapter_parse___java_lang_String 11
+#define XMLVM_VTABLE_IDX_org_xml_sax_helpers_XMLReaderAdapter_parse___org_xml_sax_InputSource 12
+#define XMLVM_VTABLE_IDX_org_xml_sax_helpers_XMLReaderAdapter_setDocumentLocator___org_xml_sax_Locator 16
+#define XMLVM_VTABLE_IDX_org_xml_sax_helpers_XMLReaderAdapter_startDocument__ 21
+#define XMLVM_VTABLE_IDX_org_xml_sax_helpers_XMLReaderAdapter_endDocument__ 7
+#define XMLVM_VTABLE_IDX_org_xml_sax_helpers_XMLReaderAdapter_startPrefixMapping___java_lang_String_java_lang_String 23
+#define XMLVM_VTABLE_IDX_org_xml_sax_helpers_XMLReaderAdapter_endPrefixMapping___java_lang_String 9
+#define XMLVM_VTABLE_IDX_org_xml_sax_helpers_XMLReaderAdapter_startElement___java_lang_String_java_lang_String_java_lang_String_org_xml_sax_Attributes 22
+#define XMLVM_VTABLE_IDX_org_xml_sax_helpers_XMLReaderAdapter_endElement___java_lang_String_java_lang_String_java_lang_String 8
+#define XMLVM_VTABLE_IDX_org_xml_sax_helpers_XMLReaderAdapter_characters___char_1ARRAY_int_int 6
+#define XMLVM_VTABLE_IDX_org_xml_sax_helpers_XMLReaderAdapter_ignorableWhitespace___char_1ARRAY_int_int 10
+#define XMLVM_VTABLE_IDX_org_xml_sax_helpers_XMLReaderAdapter_processingInstruction___java_lang_String_java_lang_String 13
+#define XMLVM_VTABLE_IDX_org_xml_sax_helpers_XMLReaderAdapter_skippedEntity___java_lang_String 20
+
+void __INIT_org_xml_sax_helpers_XMLReaderAdapter();
+void __INIT_IMPL_org_xml_sax_helpers_XMLReaderAdapter();
+void __DELETE_org_xml_sax_helpers_XMLReaderAdapter(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_xml_sax_helpers_XMLReaderAdapter(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_xml_sax_helpers_XMLReaderAdapter();
+JAVA_OBJECT __NEW_INSTANCE_org_xml_sax_helpers_XMLReaderAdapter();
+void org_xml_sax_helpers_XMLReaderAdapter___INIT___(JAVA_OBJECT me);
+void org_xml_sax_helpers_XMLReaderAdapter___INIT____org_xml_sax_XMLReader(JAVA_OBJECT me, JAVA_OBJECT n1);
+void org_xml_sax_helpers_XMLReaderAdapter_setup___org_xml_sax_XMLReader(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 19
+void org_xml_sax_helpers_XMLReaderAdapter_setLocale___java_util_Locale(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 17
+void org_xml_sax_helpers_XMLReaderAdapter_setEntityResolver___org_xml_sax_EntityResolver(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 14
+void org_xml_sax_helpers_XMLReaderAdapter_setDTDHandler___org_xml_sax_DTDHandler(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 15
+void org_xml_sax_helpers_XMLReaderAdapter_setDocumentHandler___org_xml_sax_DocumentHandler(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 18
+void org_xml_sax_helpers_XMLReaderAdapter_setErrorHandler___org_xml_sax_ErrorHandler(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 11
+void org_xml_sax_helpers_XMLReaderAdapter_parse___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 12
+void org_xml_sax_helpers_XMLReaderAdapter_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JAVA_OBJECT n1);
+void org_xml_sax_helpers_XMLReaderAdapter_setupXMLReader__(JAVA_OBJECT me);
+// Vtable index: 16
+void org_xml_sax_helpers_XMLReaderAdapter_setDocumentLocator___org_xml_sax_Locator(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 21
+void org_xml_sax_helpers_XMLReaderAdapter_startDocument__(JAVA_OBJECT me);
+// Vtable index: 7
+void org_xml_sax_helpers_XMLReaderAdapter_endDocument__(JAVA_OBJECT me);
+// Vtable index: 23
+void org_xml_sax_helpers_XMLReaderAdapter_startPrefixMapping___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 9
+void org_xml_sax_helpers_XMLReaderAdapter_endPrefixMapping___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 22
+void org_xml_sax_helpers_XMLReaderAdapter_startElement___java_lang_String_java_lang_String_java_lang_String_org_xml_sax_Attributes(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3, JAVA_OBJECT n4);
+// Vtable index: 8
+void org_xml_sax_helpers_XMLReaderAdapter_endElement___java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 6
+void org_xml_sax_helpers_XMLReaderAdapter_characters___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+// Vtable index: 10
+void org_xml_sax_helpers_XMLReaderAdapter_ignorableWhitespace___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+// Vtable index: 13
+void org_xml_sax_helpers_XMLReaderAdapter_processingInstruction___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 20
+void org_xml_sax_helpers_XMLReaderAdapter_skippedEntity___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

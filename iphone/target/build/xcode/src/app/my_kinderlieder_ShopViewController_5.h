@@ -1,0 +1,65 @@
+#ifndef __MY_KINDERLIEDER_SHOPVIEWCONTROLLER_5__
+#define __MY_KINDERLIEDER_SHOPVIEWCONTROLLER_5__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_my_kinderlieder_ShopViewController_5 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_NoSuchFieldError
+#define XMLVM_FORWARD_DECL_java_lang_NoSuchFieldError
+XMLVM_FORWARD_DECL(java_lang_NoSuchFieldError)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_Product_State
+#define XMLVM_FORWARD_DECL_my_kinderlieder_Product_State
+XMLVM_FORWARD_DECL(my_kinderlieder_Product_State)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_ShopViewController
+#define XMLVM_FORWARD_DECL_my_kinderlieder_ShopViewController
+XMLVM_FORWARD_DECL(my_kinderlieder_ShopViewController)
+#endif
+// Class declarations for my.kinderlieder.ShopViewController$5
+XMLVM_DEFINE_CLASS(my_kinderlieder_ShopViewController_5, 6, XMLVM_ITABLE_SIZE_my_kinderlieder_ShopViewController_5)
+
+extern JAVA_OBJECT __CLASS_my_kinderlieder_ShopViewController_5;
+extern JAVA_OBJECT __CLASS_my_kinderlieder_ShopViewController_5_1ARRAY;
+extern JAVA_OBJECT __CLASS_my_kinderlieder_ShopViewController_5_2ARRAY;
+extern JAVA_OBJECT __CLASS_my_kinderlieder_ShopViewController_5_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_my_kinderlieder_ShopViewController_5
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_my_kinderlieder_ShopViewController_5 \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_my_kinderlieder_ShopViewController_5 \
+    } my_kinderlieder_ShopViewController_5
+
+struct my_kinderlieder_ShopViewController_5 {
+    __TIB_DEFINITION_my_kinderlieder_ShopViewController_5* tib;
+    struct {
+        __INSTANCE_FIELDS_my_kinderlieder_ShopViewController_5;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_ShopViewController_5
+#define XMLVM_FORWARD_DECL_my_kinderlieder_ShopViewController_5
+typedef struct my_kinderlieder_ShopViewController_5 my_kinderlieder_ShopViewController_5;
+#endif
+
+#define XMLVM_VTABLE_SIZE_my_kinderlieder_ShopViewController_5 6
+
+void __INIT_my_kinderlieder_ShopViewController_5();
+void __INIT_IMPL_my_kinderlieder_ShopViewController_5();
+void __DELETE_my_kinderlieder_ShopViewController_5(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_my_kinderlieder_ShopViewController_5(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_my_kinderlieder_ShopViewController_5();
+JAVA_OBJECT __NEW_INSTANCE_my_kinderlieder_ShopViewController_5();
+JAVA_OBJECT my_kinderlieder_ShopViewController_5_GET__SwitchMap_my_kinderlieder_Product_State();
+void my_kinderlieder_ShopViewController_5_PUT__SwitchMap_my_kinderlieder_Product_State(JAVA_OBJECT v);
+void my_kinderlieder_ShopViewController_5___CLINIT_();
+
+#endif

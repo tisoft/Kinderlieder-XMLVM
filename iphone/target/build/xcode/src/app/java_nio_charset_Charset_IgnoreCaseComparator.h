@@ -1,0 +1,64 @@
+#ifndef __JAVA_NIO_CHARSET_CHARSET_IGNORECASECOMPARATOR__
+#define __JAVA_NIO_CHARSET_CHARSET_IGNORECASECOMPARATOR__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_nio_charset_Charset_IgnoreCaseComparator 2
+// Implemented interfaces:
+#include "java_util_Comparator.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+// Class declarations for java.nio.charset.Charset$IgnoreCaseComparator
+XMLVM_DEFINE_CLASS(java_nio_charset_Charset_IgnoreCaseComparator, 7, XMLVM_ITABLE_SIZE_java_nio_charset_Charset_IgnoreCaseComparator)
+
+extern JAVA_OBJECT __CLASS_java_nio_charset_Charset_IgnoreCaseComparator;
+extern JAVA_OBJECT __CLASS_java_nio_charset_Charset_IgnoreCaseComparator_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_nio_charset_Charset_IgnoreCaseComparator_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_nio_charset_Charset_IgnoreCaseComparator_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_nio_charset_Charset_IgnoreCaseComparator
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_nio_charset_Charset_IgnoreCaseComparator \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_java_nio_charset_Charset_IgnoreCaseComparator \
+    } java_nio_charset_Charset_IgnoreCaseComparator
+
+struct java_nio_charset_Charset_IgnoreCaseComparator {
+    __TIB_DEFINITION_java_nio_charset_Charset_IgnoreCaseComparator* tib;
+    struct {
+        __INSTANCE_FIELDS_java_nio_charset_Charset_IgnoreCaseComparator;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_nio_charset_Charset_IgnoreCaseComparator
+#define XMLVM_FORWARD_DECL_java_nio_charset_Charset_IgnoreCaseComparator
+typedef struct java_nio_charset_Charset_IgnoreCaseComparator java_nio_charset_Charset_IgnoreCaseComparator;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_nio_charset_Charset_IgnoreCaseComparator 7
+#define XMLVM_VTABLE_IDX_java_nio_charset_Charset_IgnoreCaseComparator_compare___java_lang_Object_java_lang_Object 6
+
+void __INIT_java_nio_charset_Charset_IgnoreCaseComparator();
+void __INIT_IMPL_java_nio_charset_Charset_IgnoreCaseComparator();
+void __DELETE_java_nio_charset_Charset_IgnoreCaseComparator(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_nio_charset_Charset_IgnoreCaseComparator(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_nio_charset_Charset_IgnoreCaseComparator();
+JAVA_OBJECT __NEW_INSTANCE_java_nio_charset_Charset_IgnoreCaseComparator();
+JAVA_OBJECT java_nio_charset_Charset_IgnoreCaseComparator_GET_c();
+void java_nio_charset_Charset_IgnoreCaseComparator_PUT_c(JAVA_OBJECT v);
+void java_nio_charset_Charset_IgnoreCaseComparator___CLINIT_();
+void java_nio_charset_Charset_IgnoreCaseComparator___INIT___(JAVA_OBJECT me);
+JAVA_OBJECT java_nio_charset_Charset_IgnoreCaseComparator_getInstance__();
+JAVA_INT java_nio_charset_Charset_IgnoreCaseComparator_compare___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 6
+JAVA_INT java_nio_charset_Charset_IgnoreCaseComparator_compare___java_lang_Object_java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+
+#endif

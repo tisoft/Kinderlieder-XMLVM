@@ -1,0 +1,203 @@
+#ifndef __GNU_XML_DOM_HTML2_DOMHTMLTABLEELEMENT__
+#define __GNU_XML_DOM_HTML2_DOMHTMLTABLEELEMENT__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_dom_html2_DomHTMLTableElement 269
+// Implemented interfaces:
+#include "org_w3c_dom_html2_HTMLTableElement.h"
+// Super Class:
+#include "gnu_xml_dom_html2_DomHTMLElement.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_DomDOMException
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_DomDOMException
+XMLVM_FORWARD_DECL(gnu_xml_dom_DomDOMException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLCollection
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLCollection
+XMLVM_FORWARD_DECL(gnu_xml_dom_html2_DomHTMLCollection)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLDocument
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLDocument
+XMLVM_FORWARD_DECL(gnu_xml_dom_html2_DomHTMLDocument)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Document
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Document
+XMLVM_FORWARD_DECL(org_w3c_dom_Document)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Element
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Element
+XMLVM_FORWARD_DECL(org_w3c_dom_Element)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Node
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Node
+XMLVM_FORWARD_DECL(org_w3c_dom_Node)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_html2_HTMLCollection
+#define XMLVM_FORWARD_DECL_org_w3c_dom_html2_HTMLCollection
+XMLVM_FORWARD_DECL(org_w3c_dom_html2_HTMLCollection)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_html2_HTMLElement
+#define XMLVM_FORWARD_DECL_org_w3c_dom_html2_HTMLElement
+XMLVM_FORWARD_DECL(org_w3c_dom_html2_HTMLElement)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_html2_HTMLTableCaptionElement
+#define XMLVM_FORWARD_DECL_org_w3c_dom_html2_HTMLTableCaptionElement
+XMLVM_FORWARD_DECL(org_w3c_dom_html2_HTMLTableCaptionElement)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_html2_HTMLTableSectionElement
+#define XMLVM_FORWARD_DECL_org_w3c_dom_html2_HTMLTableSectionElement
+XMLVM_FORWARD_DECL(org_w3c_dom_html2_HTMLTableSectionElement)
+#endif
+// Class declarations for gnu.xml.dom.html2.DomHTMLTableElement
+XMLVM_DEFINE_CLASS(gnu_xml_dom_html2_DomHTMLTableElement, 115, XMLVM_ITABLE_SIZE_gnu_xml_dom_html2_DomHTMLTableElement)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLTableElement;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLTableElement_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLTableElement_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLTableElement_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLTableElement
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLTableElement \
+    __INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLElement; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLTableElement \
+    } gnu_xml_dom_html2_DomHTMLTableElement
+
+struct gnu_xml_dom_html2_DomHTMLTableElement {
+    __TIB_DEFINITION_gnu_xml_dom_html2_DomHTMLTableElement* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLTableElement;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLTableElement
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLTableElement
+typedef struct gnu_xml_dom_html2_DomHTMLTableElement gnu_xml_dom_html2_DomHTMLTableElement;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_dom_html2_DomHTMLTableElement 115
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_getCaption__ 91
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_setCaption___org_w3c_dom_html2_HTMLTableCaptionElement 106
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_getTHead__ 100
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_setTHead___org_w3c_dom_html2_HTMLTableSectionElement 113
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_getTFoot__ 99
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_setTFoot___org_w3c_dom_html2_HTMLTableSectionElement 112
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_getRows__ 95
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_getTBodies__ 98
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_getAlign__ 88
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_setAlign___java_lang_String 103
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_getBgColor__ 89
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_setBgColor___java_lang_String 104
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_getBorder__ 90
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_setBorder___java_lang_String 105
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_getCellPadding__ 92
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_setCellPadding___java_lang_String 107
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_getCellSpacing__ 93
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_setCellSpacing___java_lang_String 108
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_getFrame__ 94
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_setFrame___java_lang_String 109
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_getRules__ 96
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_setRules___java_lang_String 110
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_getSummary__ 97
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_setSummary___java_lang_String 111
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_getWidth__ 101
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_setWidth___java_lang_String 114
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_createTHead__ 83
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_deleteTHead__ 87
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_createTFoot__ 82
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_deleteTFoot__ 86
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_createCaption__ 81
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_deleteCaption__ 84
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_insertRow___int 102
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLTableElement_deleteRow___int 85
+
+void __INIT_gnu_xml_dom_html2_DomHTMLTableElement();
+void __INIT_IMPL_gnu_xml_dom_html2_DomHTMLTableElement();
+void __DELETE_gnu_xml_dom_html2_DomHTMLTableElement(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_dom_html2_DomHTMLTableElement(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_dom_html2_DomHTMLTableElement();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_dom_html2_DomHTMLTableElement();
+void gnu_xml_dom_html2_DomHTMLTableElement___INIT____gnu_xml_dom_html2_DomHTMLDocument_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 91
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableElement_getCaption__(JAVA_OBJECT me);
+// Vtable index: 106
+void gnu_xml_dom_html2_DomHTMLTableElement_setCaption___org_w3c_dom_html2_HTMLTableCaptionElement(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 100
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableElement_getTHead__(JAVA_OBJECT me);
+// Vtable index: 113
+void gnu_xml_dom_html2_DomHTMLTableElement_setTHead___org_w3c_dom_html2_HTMLTableSectionElement(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 99
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableElement_getTFoot__(JAVA_OBJECT me);
+// Vtable index: 112
+void gnu_xml_dom_html2_DomHTMLTableElement_setTFoot___org_w3c_dom_html2_HTMLTableSectionElement(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 95
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableElement_getRows__(JAVA_OBJECT me);
+// Vtable index: 98
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableElement_getTBodies__(JAVA_OBJECT me);
+// Vtable index: 88
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableElement_getAlign__(JAVA_OBJECT me);
+// Vtable index: 103
+void gnu_xml_dom_html2_DomHTMLTableElement_setAlign___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 89
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableElement_getBgColor__(JAVA_OBJECT me);
+// Vtable index: 104
+void gnu_xml_dom_html2_DomHTMLTableElement_setBgColor___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 90
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableElement_getBorder__(JAVA_OBJECT me);
+// Vtable index: 105
+void gnu_xml_dom_html2_DomHTMLTableElement_setBorder___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 92
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableElement_getCellPadding__(JAVA_OBJECT me);
+// Vtable index: 107
+void gnu_xml_dom_html2_DomHTMLTableElement_setCellPadding___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 93
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableElement_getCellSpacing__(JAVA_OBJECT me);
+// Vtable index: 108
+void gnu_xml_dom_html2_DomHTMLTableElement_setCellSpacing___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 94
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableElement_getFrame__(JAVA_OBJECT me);
+// Vtable index: 109
+void gnu_xml_dom_html2_DomHTMLTableElement_setFrame___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 96
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableElement_getRules__(JAVA_OBJECT me);
+// Vtable index: 110
+void gnu_xml_dom_html2_DomHTMLTableElement_setRules___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 97
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableElement_getSummary__(JAVA_OBJECT me);
+// Vtable index: 111
+void gnu_xml_dom_html2_DomHTMLTableElement_setSummary___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 101
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableElement_getWidth__(JAVA_OBJECT me);
+// Vtable index: 114
+void gnu_xml_dom_html2_DomHTMLTableElement_setWidth___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 83
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableElement_createTHead__(JAVA_OBJECT me);
+// Vtable index: 87
+void gnu_xml_dom_html2_DomHTMLTableElement_deleteTHead__(JAVA_OBJECT me);
+// Vtable index: 82
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableElement_createTFoot__(JAVA_OBJECT me);
+// Vtable index: 86
+void gnu_xml_dom_html2_DomHTMLTableElement_deleteTFoot__(JAVA_OBJECT me);
+// Vtable index: 81
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableElement_createCaption__(JAVA_OBJECT me);
+// Vtable index: 84
+void gnu_xml_dom_html2_DomHTMLTableElement_deleteCaption__(JAVA_OBJECT me);
+// Vtable index: 102
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableElement_insertRow___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 85
+void gnu_xml_dom_html2_DomHTMLTableElement_deleteRow___int(JAVA_OBJECT me, JAVA_INT n1);
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableElement_getRow___int(JAVA_OBJECT me, JAVA_INT n1);
+
+#endif

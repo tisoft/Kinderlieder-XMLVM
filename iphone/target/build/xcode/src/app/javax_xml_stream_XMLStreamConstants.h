@@ -1,0 +1,57 @@
+#ifndef __JAVAX_XML_STREAM_XMLSTREAMCONSTANTS__
+#define __JAVAX_XML_STREAM_XMLSTREAMCONSTANTS__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+
+XMLVM_DEFINE_CLASS(javax_xml_stream_XMLStreamConstants, 0, 0)
+
+extern JAVA_OBJECT __CLASS_javax_xml_stream_XMLStreamConstants;
+extern JAVA_OBJECT __CLASS_javax_xml_stream_XMLStreamConstants_1ARRAY;
+extern JAVA_OBJECT __CLASS_javax_xml_stream_XMLStreamConstants_2ARRAY;
+extern JAVA_OBJECT __CLASS_javax_xml_stream_XMLStreamConstants_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_javax_xml_stream_XMLStreamConstants
+#define XMLVM_FORWARD_DECL_javax_xml_stream_XMLStreamConstants
+typedef struct javax_xml_stream_XMLStreamConstants javax_xml_stream_XMLStreamConstants;
+#endif
+
+void __INIT_javax_xml_stream_XMLStreamConstants();
+void __INIT_IMPL_javax_xml_stream_XMLStreamConstants();
+JAVA_INT javax_xml_stream_XMLStreamConstants_GET_START_ELEMENT();
+void javax_xml_stream_XMLStreamConstants_PUT_START_ELEMENT(JAVA_INT v);
+JAVA_INT javax_xml_stream_XMLStreamConstants_GET_END_ELEMENT();
+void javax_xml_stream_XMLStreamConstants_PUT_END_ELEMENT(JAVA_INT v);
+JAVA_INT javax_xml_stream_XMLStreamConstants_GET_PROCESSING_INSTRUCTION();
+void javax_xml_stream_XMLStreamConstants_PUT_PROCESSING_INSTRUCTION(JAVA_INT v);
+JAVA_INT javax_xml_stream_XMLStreamConstants_GET_CHARACTERS();
+void javax_xml_stream_XMLStreamConstants_PUT_CHARACTERS(JAVA_INT v);
+JAVA_INT javax_xml_stream_XMLStreamConstants_GET_COMMENT();
+void javax_xml_stream_XMLStreamConstants_PUT_COMMENT(JAVA_INT v);
+JAVA_INT javax_xml_stream_XMLStreamConstants_GET_SPACE();
+void javax_xml_stream_XMLStreamConstants_PUT_SPACE(JAVA_INT v);
+JAVA_INT javax_xml_stream_XMLStreamConstants_GET_START_DOCUMENT();
+void javax_xml_stream_XMLStreamConstants_PUT_START_DOCUMENT(JAVA_INT v);
+JAVA_INT javax_xml_stream_XMLStreamConstants_GET_END_DOCUMENT();
+void javax_xml_stream_XMLStreamConstants_PUT_END_DOCUMENT(JAVA_INT v);
+JAVA_INT javax_xml_stream_XMLStreamConstants_GET_ENTITY_REFERENCE();
+void javax_xml_stream_XMLStreamConstants_PUT_ENTITY_REFERENCE(JAVA_INT v);
+JAVA_INT javax_xml_stream_XMLStreamConstants_GET_ATTRIBUTE();
+void javax_xml_stream_XMLStreamConstants_PUT_ATTRIBUTE(JAVA_INT v);
+JAVA_INT javax_xml_stream_XMLStreamConstants_GET_DTD();
+void javax_xml_stream_XMLStreamConstants_PUT_DTD(JAVA_INT v);
+JAVA_INT javax_xml_stream_XMLStreamConstants_GET_CDATA();
+void javax_xml_stream_XMLStreamConstants_PUT_CDATA(JAVA_INT v);
+JAVA_INT javax_xml_stream_XMLStreamConstants_GET_NAMESPACE();
+void javax_xml_stream_XMLStreamConstants_PUT_NAMESPACE(JAVA_INT v);
+JAVA_INT javax_xml_stream_XMLStreamConstants_GET_NOTATION_DECLARATION();
+void javax_xml_stream_XMLStreamConstants_PUT_NOTATION_DECLARATION(JAVA_INT v);
+JAVA_INT javax_xml_stream_XMLStreamConstants_GET_ENTITY_DECLARATION();
+void javax_xml_stream_XMLStreamConstants_PUT_ENTITY_DECLARATION(JAVA_INT v);
+
+#endif

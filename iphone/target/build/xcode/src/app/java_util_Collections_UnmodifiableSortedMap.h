@@ -1,0 +1,81 @@
+#ifndef __JAVA_UTIL_COLLECTIONS_UNMODIFIABLESORTEDMAP__
+#define __JAVA_UTIL_COLLECTIONS_UNMODIFIABLESORTEDMAP__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_Collections_UnmodifiableSortedMap 72
+// Implemented interfaces:
+#include "java_util_SortedMap.h"
+// Super Class:
+#include "java_util_Collections_UnmodifiableMap.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Comparator
+#define XMLVM_FORWARD_DECL_java_util_Comparator
+XMLVM_FORWARD_DECL(java_util_Comparator)
+#endif
+// Class declarations for java.util.Collections$UnmodifiableSortedMap
+XMLVM_DEFINE_CLASS(java_util_Collections_UnmodifiableSortedMap, 24, XMLVM_ITABLE_SIZE_java_util_Collections_UnmodifiableSortedMap)
+
+extern JAVA_OBJECT __CLASS_java_util_Collections_UnmodifiableSortedMap;
+extern JAVA_OBJECT __CLASS_java_util_Collections_UnmodifiableSortedMap_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_Collections_UnmodifiableSortedMap_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_Collections_UnmodifiableSortedMap_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_Collections_UnmodifiableSortedMap
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_Collections_UnmodifiableSortedMap \
+    __INSTANCE_FIELDS_java_util_Collections_UnmodifiableMap; \
+    struct { \
+        JAVA_OBJECT sm_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_Collections_UnmodifiableSortedMap \
+    } java_util_Collections_UnmodifiableSortedMap
+
+struct java_util_Collections_UnmodifiableSortedMap {
+    __TIB_DEFINITION_java_util_Collections_UnmodifiableSortedMap* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_Collections_UnmodifiableSortedMap;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_Collections_UnmodifiableSortedMap
+#define XMLVM_FORWARD_DECL_java_util_Collections_UnmodifiableSortedMap
+typedef struct java_util_Collections_UnmodifiableSortedMap java_util_Collections_UnmodifiableSortedMap;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_Collections_UnmodifiableSortedMap 24
+#define XMLVM_VTABLE_IDX_java_util_Collections_UnmodifiableSortedMap_comparator__ 18
+#define XMLVM_VTABLE_IDX_java_util_Collections_UnmodifiableSortedMap_firstKey__ 19
+#define XMLVM_VTABLE_IDX_java_util_Collections_UnmodifiableSortedMap_headMap___java_lang_Object 20
+#define XMLVM_VTABLE_IDX_java_util_Collections_UnmodifiableSortedMap_lastKey__ 21
+#define XMLVM_VTABLE_IDX_java_util_Collections_UnmodifiableSortedMap_subMap___java_lang_Object_java_lang_Object 22
+#define XMLVM_VTABLE_IDX_java_util_Collections_UnmodifiableSortedMap_tailMap___java_lang_Object 23
+
+void __INIT_java_util_Collections_UnmodifiableSortedMap();
+void __INIT_IMPL_java_util_Collections_UnmodifiableSortedMap();
+void __DELETE_java_util_Collections_UnmodifiableSortedMap(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_Collections_UnmodifiableSortedMap(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_Collections_UnmodifiableSortedMap();
+JAVA_OBJECT __NEW_INSTANCE_java_util_Collections_UnmodifiableSortedMap();
+JAVA_LONG java_util_Collections_UnmodifiableSortedMap_GET_serialVersionUID();
+void java_util_Collections_UnmodifiableSortedMap_PUT_serialVersionUID(JAVA_LONG v);
+void java_util_Collections_UnmodifiableSortedMap___INIT____java_util_SortedMap(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 18
+JAVA_OBJECT java_util_Collections_UnmodifiableSortedMap_comparator__(JAVA_OBJECT me);
+// Vtable index: 19
+JAVA_OBJECT java_util_Collections_UnmodifiableSortedMap_firstKey__(JAVA_OBJECT me);
+// Vtable index: 20
+JAVA_OBJECT java_util_Collections_UnmodifiableSortedMap_headMap___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 21
+JAVA_OBJECT java_util_Collections_UnmodifiableSortedMap_lastKey__(JAVA_OBJECT me);
+// Vtable index: 22
+JAVA_OBJECT java_util_Collections_UnmodifiableSortedMap_subMap___java_lang_Object_java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 23
+JAVA_OBJECT java_util_Collections_UnmodifiableSortedMap_tailMap___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

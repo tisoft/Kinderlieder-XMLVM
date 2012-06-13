@@ -1,0 +1,463 @@
+#ifndef __GNU_XML_XPATH_XPATHPARSER__
+#define __GNU_XML_XPATH_XPATHPARSER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_xpath_XPathParser 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_AndExpr
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_AndExpr
+XMLVM_FORWARD_DECL(gnu_xml_xpath_AndExpr)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_ArithmeticExpr
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_ArithmeticExpr
+XMLVM_FORWARD_DECL(gnu_xml_xpath_ArithmeticExpr)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_BooleanFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_BooleanFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_BooleanFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_CeilingFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_CeilingFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_CeilingFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_ConcatFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_ConcatFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_ConcatFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_Constant
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_Constant
+XMLVM_FORWARD_DECL(gnu_xml_xpath_Constant)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_ContainsFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_ContainsFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_ContainsFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_CountFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_CountFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_CountFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_EqualityExpr
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_EqualityExpr
+XMLVM_FORWARD_DECL(gnu_xml_xpath_EqualityExpr)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_Expr
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_Expr
+XMLVM_FORWARD_DECL(gnu_xml_xpath_Expr)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_FalseFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_FalseFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_FalseFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_FloorFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_FloorFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_FloorFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_Function
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_Function
+XMLVM_FORWARD_DECL(gnu_xml_xpath_Function)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_FunctionCall
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_FunctionCall
+XMLVM_FORWARD_DECL(gnu_xml_xpath_FunctionCall)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_IdFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_IdFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_IdFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_LangFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_LangFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_LangFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_LastFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_LastFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_LastFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_LocalNameFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_LocalNameFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_LocalNameFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_NameFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_NameFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_NameFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_NameTest
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_NameTest
+XMLVM_FORWARD_DECL(gnu_xml_xpath_NameTest)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_NamespaceUriFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_NamespaceUriFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_NamespaceUriFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_NegativeExpr
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_NegativeExpr
+XMLVM_FORWARD_DECL(gnu_xml_xpath_NegativeExpr)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_NodeTypeTest
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_NodeTypeTest
+XMLVM_FORWARD_DECL(gnu_xml_xpath_NodeTypeTest)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_NormalizeSpaceFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_NormalizeSpaceFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_NormalizeSpaceFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_NotFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_NotFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_NotFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_NumberFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_NumberFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_NumberFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_OrExpr
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_OrExpr
+XMLVM_FORWARD_DECL(gnu_xml_xpath_OrExpr)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_ParenthesizedExpr
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_ParenthesizedExpr
+XMLVM_FORWARD_DECL(gnu_xml_xpath_ParenthesizedExpr)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_PositionFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_PositionFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_PositionFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_Predicate
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_Predicate
+XMLVM_FORWARD_DECL(gnu_xml_xpath_Predicate)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_RelationalExpr
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_RelationalExpr
+XMLVM_FORWARD_DECL(gnu_xml_xpath_RelationalExpr)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_Root
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_Root
+XMLVM_FORWARD_DECL(gnu_xml_xpath_Root)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_RoundFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_RoundFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_RoundFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_Selector
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_Selector
+XMLVM_FORWARD_DECL(gnu_xml_xpath_Selector)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_StartsWithFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_StartsWithFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_StartsWithFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_Steps
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_Steps
+XMLVM_FORWARD_DECL(gnu_xml_xpath_Steps)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_StringFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_StringFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_StringFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_StringLengthFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_StringLengthFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_StringLengthFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_SubstringAfterFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_SubstringAfterFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_SubstringAfterFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_SubstringBeforeFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_SubstringBeforeFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_SubstringBeforeFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_SubstringFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_SubstringFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_SubstringFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_SumFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_SumFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_SumFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_Test
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_Test
+XMLVM_FORWARD_DECL(gnu_xml_xpath_Test)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_TranslateFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_TranslateFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_TranslateFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_TrueFunction
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_TrueFunction
+XMLVM_FORWARD_DECL(gnu_xml_xpath_TrueFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_UnionExpr
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_UnionExpr
+XMLVM_FORWARD_DECL(gnu_xml_xpath_UnionExpr)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_VariableReference
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_VariableReference
+XMLVM_FORWARD_DECL(gnu_xml_xpath_VariableReference)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_YyCheckClass
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_YyCheckClass
+XMLVM_FORWARD_DECL(gnu_xml_xpath_XPathParser_YyCheckClass)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_YyDefRedClass
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_YyDefRedClass
+XMLVM_FORWARD_DECL(gnu_xml_xpath_XPathParser_YyDefRedClass)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_YyDgotoClass
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_YyDgotoClass
+XMLVM_FORWARD_DECL(gnu_xml_xpath_XPathParser_YyDgotoClass)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_YyGindexClass
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_YyGindexClass
+XMLVM_FORWARD_DECL(gnu_xml_xpath_XPathParser_YyGindexClass)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_YyLenClass
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_YyLenClass
+XMLVM_FORWARD_DECL(gnu_xml_xpath_XPathParser_YyLenClass)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_YyLhsClass
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_YyLhsClass
+XMLVM_FORWARD_DECL(gnu_xml_xpath_XPathParser_YyLhsClass)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_YyNameClass
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_YyNameClass
+XMLVM_FORWARD_DECL(gnu_xml_xpath_XPathParser_YyNameClass)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_YyRindexClass
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_YyRindexClass
+XMLVM_FORWARD_DECL(gnu_xml_xpath_XPathParser_YyRindexClass)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_YySindexClass
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_YySindexClass
+XMLVM_FORWARD_DECL(gnu_xml_xpath_XPathParser_YySindexClass)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_YyTableClass
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_YyTableClass
+XMLVM_FORWARD_DECL(gnu_xml_xpath_XPathParser_YyTableClass)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_yyException
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_yyException
+XMLVM_FORWARD_DECL(gnu_xml_xpath_XPathParser_yyException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_yyInput
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser_yyInput
+XMLVM_FORWARD_DECL(gnu_xml_xpath_XPathParser_yyInput)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_PrintStream
+#define XMLVM_FORWARD_DECL_java_io_PrintStream
+XMLVM_FORWARD_DECL(java_io_PrintStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Double
+#define XMLVM_FORWARD_DECL_java_lang_Double
+XMLVM_FORWARD_DECL(java_lang_Double)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Integer
+#define XMLVM_FORWARD_DECL_java_lang_Integer
+XMLVM_FORWARD_DECL(java_lang_Integer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Short
+#define XMLVM_FORWARD_DECL_java_lang_Short
+XMLVM_FORWARD_DECL(java_lang_Short)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_System
+#define XMLVM_FORWARD_DECL_java_lang_System
+XMLVM_FORWARD_DECL(java_lang_System)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ArrayList
+#define XMLVM_FORWARD_DECL_java_util_ArrayList
+XMLVM_FORWARD_DECL(java_util_ArrayList)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Collections
+#define XMLVM_FORWARD_DECL_java_util_Collections
+XMLVM_FORWARD_DECL(java_util_Collections)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_LinkedList
+#define XMLVM_FORWARD_DECL_java_util_LinkedList
+XMLVM_FORWARD_DECL(java_util_LinkedList)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_List
+#define XMLVM_FORWARD_DECL_java_util_List
+XMLVM_FORWARD_DECL(java_util_List)
+#endif
+#ifndef XMLVM_FORWARD_DECL_javax_xml_namespace_NamespaceContext
+#define XMLVM_FORWARD_DECL_javax_xml_namespace_NamespaceContext
+XMLVM_FORWARD_DECL(javax_xml_namespace_NamespaceContext)
+#endif
+#ifndef XMLVM_FORWARD_DECL_javax_xml_namespace_QName
+#define XMLVM_FORWARD_DECL_javax_xml_namespace_QName
+XMLVM_FORWARD_DECL(javax_xml_namespace_QName)
+#endif
+#ifndef XMLVM_FORWARD_DECL_javax_xml_xpath_XPathFunction
+#define XMLVM_FORWARD_DECL_javax_xml_xpath_XPathFunction
+XMLVM_FORWARD_DECL(javax_xml_xpath_XPathFunction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_javax_xml_xpath_XPathFunctionResolver
+#define XMLVM_FORWARD_DECL_javax_xml_xpath_XPathFunctionResolver
+XMLVM_FORWARD_DECL(javax_xml_xpath_XPathFunctionResolver)
+#endif
+#ifndef XMLVM_FORWARD_DECL_javax_xml_xpath_XPathVariableResolver
+#define XMLVM_FORWARD_DECL_javax_xml_xpath_XPathVariableResolver
+XMLVM_FORWARD_DECL(javax_xml_xpath_XPathVariableResolver)
+#endif
+// Class declarations for gnu.xml.xpath.XPathParser
+XMLVM_DEFINE_CLASS(gnu_xml_xpath_XPathParser, 6, XMLVM_ITABLE_SIZE_gnu_xml_xpath_XPathParser)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_xpath_XPathParser;
+extern JAVA_OBJECT __CLASS_gnu_xml_xpath_XPathParser_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_xpath_XPathParser_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_xpath_XPathParser_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_xpath_XPathParser
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_xpath_XPathParser \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT namespaceContext_; \
+        JAVA_OBJECT variableResolver_; \
+        JAVA_OBJECT functionResolver_; \
+        JAVA_INT yyMax_; \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_xpath_XPathParser \
+    } gnu_xml_xpath_XPathParser
+
+struct gnu_xml_xpath_XPathParser {
+    __TIB_DEFINITION_gnu_xml_xpath_XPathParser* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_xpath_XPathParser;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser
+#define XMLVM_FORWARD_DECL_gnu_xml_xpath_XPathParser
+typedef struct gnu_xml_xpath_XPathParser gnu_xml_xpath_XPathParser;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_xpath_XPathParser 6
+
+void __INIT_gnu_xml_xpath_XPathParser();
+void __INIT_IMPL_gnu_xml_xpath_XPathParser();
+void __DELETE_gnu_xml_xpath_XPathParser(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_xpath_XPathParser(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_xpath_XPathParser();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_xpath_XPathParser();
+JAVA_INT gnu_xml_xpath_XPathParser_GET_LITERAL();
+void gnu_xml_xpath_XPathParser_PUT_LITERAL(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_DIGITS();
+void gnu_xml_xpath_XPathParser_PUT_DIGITS(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_NAME();
+void gnu_xml_xpath_XPathParser_PUT_NAME(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_LP();
+void gnu_xml_xpath_XPathParser_PUT_LP(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_RP();
+void gnu_xml_xpath_XPathParser_PUT_RP(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_LB();
+void gnu_xml_xpath_XPathParser_PUT_LB(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_RB();
+void gnu_xml_xpath_XPathParser_PUT_RB(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_COMMA();
+void gnu_xml_xpath_XPathParser_PUT_COMMA(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_PIPE();
+void gnu_xml_xpath_XPathParser_PUT_PIPE(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_SLASH();
+void gnu_xml_xpath_XPathParser_PUT_SLASH(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_DOUBLE_SLASH();
+void gnu_xml_xpath_XPathParser_PUT_DOUBLE_SLASH(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_EQ();
+void gnu_xml_xpath_XPathParser_PUT_EQ(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_NE();
+void gnu_xml_xpath_XPathParser_PUT_NE(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_GT();
+void gnu_xml_xpath_XPathParser_PUT_GT(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_LT();
+void gnu_xml_xpath_XPathParser_PUT_LT(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_GTE();
+void gnu_xml_xpath_XPathParser_PUT_GTE(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_LTE();
+void gnu_xml_xpath_XPathParser_PUT_LTE(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_PLUS();
+void gnu_xml_xpath_XPathParser_PUT_PLUS(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_MINUS();
+void gnu_xml_xpath_XPathParser_PUT_MINUS(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_AT();
+void gnu_xml_xpath_XPathParser_PUT_AT(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_STAR();
+void gnu_xml_xpath_XPathParser_PUT_STAR(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_DOLLAR();
+void gnu_xml_xpath_XPathParser_PUT_DOLLAR(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_COLON();
+void gnu_xml_xpath_XPathParser_PUT_COLON(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_DOUBLE_COLON();
+void gnu_xml_xpath_XPathParser_PUT_DOUBLE_COLON(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_DOT();
+void gnu_xml_xpath_XPathParser_PUT_DOT(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_DOUBLE_DOT();
+void gnu_xml_xpath_XPathParser_PUT_DOUBLE_DOT(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_ANCESTOR();
+void gnu_xml_xpath_XPathParser_PUT_ANCESTOR(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_ANCESTOR_OR_SELF();
+void gnu_xml_xpath_XPathParser_PUT_ANCESTOR_OR_SELF(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_ATTRIBUTE();
+void gnu_xml_xpath_XPathParser_PUT_ATTRIBUTE(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_CHILD();
+void gnu_xml_xpath_XPathParser_PUT_CHILD(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_DESCENDANT();
+void gnu_xml_xpath_XPathParser_PUT_DESCENDANT(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_DESCENDANT_OR_SELF();
+void gnu_xml_xpath_XPathParser_PUT_DESCENDANT_OR_SELF(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_FOLLOWING();
+void gnu_xml_xpath_XPathParser_PUT_FOLLOWING(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_FOLLOWING_SIBLING();
+void gnu_xml_xpath_XPathParser_PUT_FOLLOWING_SIBLING(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_NAMESPACE();
+void gnu_xml_xpath_XPathParser_PUT_NAMESPACE(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_PARENT();
+void gnu_xml_xpath_XPathParser_PUT_PARENT(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_PRECEDING();
+void gnu_xml_xpath_XPathParser_PUT_PRECEDING(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_PRECEDING_SIBLING();
+void gnu_xml_xpath_XPathParser_PUT_PRECEDING_SIBLING(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_SELF();
+void gnu_xml_xpath_XPathParser_PUT_SELF(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_DIV();
+void gnu_xml_xpath_XPathParser_PUT_DIV(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_MOD();
+void gnu_xml_xpath_XPathParser_PUT_MOD(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_OR();
+void gnu_xml_xpath_XPathParser_PUT_OR(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_AND();
+void gnu_xml_xpath_XPathParser_PUT_AND(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_COMMENT();
+void gnu_xml_xpath_XPathParser_PUT_COMMENT(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_PROCESSING_INSTRUCTION();
+void gnu_xml_xpath_XPathParser_PUT_PROCESSING_INSTRUCTION(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_TEXT();
+void gnu_xml_xpath_XPathParser_PUT_TEXT(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_NODE();
+void gnu_xml_xpath_XPathParser_PUT_NODE(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_UNARY();
+void gnu_xml_xpath_XPathParser_PUT_UNARY(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_yyErrorCode();
+void gnu_xml_xpath_XPathParser_PUT_yyErrorCode(JAVA_INT v);
+JAVA_INT gnu_xml_xpath_XPathParser_GET_yyFinal();
+void gnu_xml_xpath_XPathParser_PUT_yyFinal(JAVA_INT v);
+void gnu_xml_xpath_XPathParser___INIT___(JAVA_OBJECT me);
+JAVA_OBJECT gnu_xml_xpath_XPathParser_getQName___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_util_List(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+void gnu_xml_xpath_XPathParser_yyerror___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+void gnu_xml_xpath_XPathParser_yyerror___java_lang_String_java_lang_String_1ARRAY(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT gnu_xml_xpath_XPathParser_yyExpecting___int(JAVA_OBJECT me, JAVA_INT n1);
+JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInput_java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT gnu_xml_xpath_XPathParser_yyDefault___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInput(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

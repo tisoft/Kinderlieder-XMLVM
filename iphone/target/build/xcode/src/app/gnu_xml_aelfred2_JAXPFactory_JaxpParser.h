@@ -1,0 +1,103 @@
+#ifndef __GNU_XML_AELFRED2_JAXPFACTORY_JAXPPARSER__
+#define __GNU_XML_AELFRED2_JAXPFACTORY_JAXPPARSER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_aelfred2_JAXPFactory_JaxpParser 0
+// Implemented interfaces:
+// Super Class:
+#include "javax_xml_parsers_SAXParser.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_aelfred2_XmlReader
+#define XMLVM_FORWARD_DECL_gnu_xml_aelfred2_XmlReader
+XMLVM_FORWARD_DECL(gnu_xml_aelfred2_XmlReader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Error
+#define XMLVM_FORWARD_DECL_java_lang_Error
+XMLVM_FORWARD_DECL(java_lang_Error)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Exception
+#define XMLVM_FORWARD_DECL_java_lang_Exception
+XMLVM_FORWARD_DECL(java_lang_Exception)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_Parser
+#define XMLVM_FORWARD_DECL_org_xml_sax_Parser
+XMLVM_FORWARD_DECL(org_xml_sax_Parser)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_XMLReader
+#define XMLVM_FORWARD_DECL_org_xml_sax_XMLReader
+XMLVM_FORWARD_DECL(org_xml_sax_XMLReader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_helpers_XMLReaderAdapter
+#define XMLVM_FORWARD_DECL_org_xml_sax_helpers_XMLReaderAdapter
+XMLVM_FORWARD_DECL(org_xml_sax_helpers_XMLReaderAdapter)
+#endif
+// Class declarations for gnu.xml.aelfred2.JAXPFactory$JaxpParser
+XMLVM_DEFINE_CLASS(gnu_xml_aelfred2_JAXPFactory_JaxpParser, 14, XMLVM_ITABLE_SIZE_gnu_xml_aelfred2_JAXPFactory_JaxpParser)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_aelfred2_JAXPFactory_JaxpParser;
+extern JAVA_OBJECT __CLASS_gnu_xml_aelfred2_JAXPFactory_JaxpParser_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_aelfred2_JAXPFactory_JaxpParser_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_aelfred2_JAXPFactory_JaxpParser_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_aelfred2_JAXPFactory_JaxpParser
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_aelfred2_JAXPFactory_JaxpParser \
+    __INSTANCE_FIELDS_javax_xml_parsers_SAXParser; \
+    struct { \
+        JAVA_OBJECT ae2_; \
+        JAVA_OBJECT parser_; \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_aelfred2_JAXPFactory_JaxpParser \
+    } gnu_xml_aelfred2_JAXPFactory_JaxpParser
+
+struct gnu_xml_aelfred2_JAXPFactory_JaxpParser {
+    __TIB_DEFINITION_gnu_xml_aelfred2_JAXPFactory_JaxpParser* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_aelfred2_JAXPFactory_JaxpParser;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_aelfred2_JAXPFactory_JaxpParser
+#define XMLVM_FORWARD_DECL_gnu_xml_aelfred2_JAXPFactory_JaxpParser
+typedef struct gnu_xml_aelfred2_JAXPFactory_JaxpParser gnu_xml_aelfred2_JAXPFactory_JaxpParser;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_aelfred2_JAXPFactory_JaxpParser 14
+#define XMLVM_VTABLE_IDX_gnu_xml_aelfred2_JAXPFactory_JaxpParser_setProperty___java_lang_String_java_lang_Object 13
+#define XMLVM_VTABLE_IDX_gnu_xml_aelfred2_JAXPFactory_JaxpParser_getProperty___java_lang_String 7
+#define XMLVM_VTABLE_IDX_gnu_xml_aelfred2_JAXPFactory_JaxpParser_getParser__ 6
+#define XMLVM_VTABLE_IDX_gnu_xml_aelfred2_JAXPFactory_JaxpParser_getXMLReader__ 8
+#define XMLVM_VTABLE_IDX_gnu_xml_aelfred2_JAXPFactory_JaxpParser_isNamespaceAware__ 9
+#define XMLVM_VTABLE_IDX_gnu_xml_aelfred2_JAXPFactory_JaxpParser_isValidating__ 10
+
+void __INIT_gnu_xml_aelfred2_JAXPFactory_JaxpParser();
+void __INIT_IMPL_gnu_xml_aelfred2_JAXPFactory_JaxpParser();
+void __DELETE_gnu_xml_aelfred2_JAXPFactory_JaxpParser(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_aelfred2_JAXPFactory_JaxpParser(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_aelfred2_JAXPFactory_JaxpParser();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_aelfred2_JAXPFactory_JaxpParser();
+void gnu_xml_aelfred2_JAXPFactory_JaxpParser___INIT___(JAVA_OBJECT me);
+// Vtable index: 13
+void gnu_xml_aelfred2_JAXPFactory_JaxpParser_setProperty___java_lang_String_java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 7
+JAVA_OBJECT gnu_xml_aelfred2_JAXPFactory_JaxpParser_getProperty___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 6
+JAVA_OBJECT gnu_xml_aelfred2_JAXPFactory_JaxpParser_getParser__(JAVA_OBJECT me);
+// Vtable index: 8
+JAVA_OBJECT gnu_xml_aelfred2_JAXPFactory_JaxpParser_getXMLReader__(JAVA_OBJECT me);
+// Vtable index: 9
+JAVA_BOOLEAN gnu_xml_aelfred2_JAXPFactory_JaxpParser_isNamespaceAware__(JAVA_OBJECT me);
+// Vtable index: 10
+JAVA_BOOLEAN gnu_xml_aelfred2_JAXPFactory_JaxpParser_isValidating__(JAVA_OBJECT me);
+
+#endif

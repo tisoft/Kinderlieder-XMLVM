@@ -1,0 +1,185 @@
+#ifndef __ORG_APACHE_HARMONY_LUNI_LANG_REFLECT_GENERICSIGNATUREPARSER__
+#define __ORG_APACHE_HARMONY_LUNI_LANG_REFLECT_GENERICSIGNATUREPARSER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_apache_harmony_luni_lang_reflect_GenericSignatureParser 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Boolean
+#define XMLVM_FORWARD_DECL_java_lang_Boolean
+XMLVM_FORWARD_DECL(java_lang_Boolean)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Byte
+#define XMLVM_FORWARD_DECL_java_lang_Byte
+XMLVM_FORWARD_DECL(java_lang_Byte)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Character
+#define XMLVM_FORWARD_DECL_java_lang_Character
+XMLVM_FORWARD_DECL(java_lang_Character)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_ClassLoader
+#define XMLVM_FORWARD_DECL_java_lang_ClassLoader
+XMLVM_FORWARD_DECL(java_lang_ClassLoader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Double
+#define XMLVM_FORWARD_DECL_java_lang_Double
+XMLVM_FORWARD_DECL(java_lang_Double)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Float
+#define XMLVM_FORWARD_DECL_java_lang_Float
+XMLVM_FORWARD_DECL(java_lang_Float)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Integer
+#define XMLVM_FORWARD_DECL_java_lang_Integer
+XMLVM_FORWARD_DECL(java_lang_Integer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Long
+#define XMLVM_FORWARD_DECL_java_lang_Long
+XMLVM_FORWARD_DECL(java_lang_Long)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Short
+#define XMLVM_FORWARD_DECL_java_lang_Short
+XMLVM_FORWARD_DECL(java_lang_Short)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Void
+#define XMLVM_FORWARD_DECL_java_lang_Void
+XMLVM_FORWARD_DECL(java_lang_Void)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Constructor
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Constructor
+XMLVM_FORWARD_DECL(java_lang_reflect_Constructor)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_GenericDeclaration
+#define XMLVM_FORWARD_DECL_java_lang_reflect_GenericDeclaration
+XMLVM_FORWARD_DECL(java_lang_reflect_GenericDeclaration)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_GenericSignatureFormatError
+#define XMLVM_FORWARD_DECL_java_lang_reflect_GenericSignatureFormatError
+XMLVM_FORWARD_DECL(java_lang_reflect_GenericSignatureFormatError)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Method
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Method
+XMLVM_FORWARD_DECL(java_lang_reflect_Method)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Type
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Type
+XMLVM_FORWARD_DECL(java_lang_reflect_Type)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_TypeVariable
+#define XMLVM_FORWARD_DECL_java_lang_reflect_TypeVariable
+XMLVM_FORWARD_DECL(java_lang_reflect_TypeVariable)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ImplForArray
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ImplForArray
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_lang_reflect_ImplForArray)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ImplForType
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ImplForType
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_lang_reflect_ImplForType)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ImplForVariable
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ImplForVariable
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_lang_reflect_ImplForVariable)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ImplForWildcard
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ImplForWildcard
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_lang_reflect_ImplForWildcard)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ListOfTypes
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ListOfTypes
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_lang_reflect_ListOfTypes)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ListOfVariables
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ListOfVariables
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_lang_reflect_ListOfVariables)
+#endif
+// Class declarations for org.apache.harmony.luni.lang.reflect.GenericSignatureParser
+XMLVM_DEFINE_CLASS(org_apache_harmony_luni_lang_reflect_GenericSignatureParser, 6, XMLVM_ITABLE_SIZE_org_apache_harmony_luni_lang_reflect_GenericSignatureParser)
+
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_lang_reflect_GenericSignatureParser;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_lang_reflect_GenericSignatureParser_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_lang_reflect_GenericSignatureParser_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_lang_reflect_GenericSignatureParser_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_lang_reflect_GenericSignatureParser
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_apache_harmony_luni_lang_reflect_GenericSignatureParser \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT exceptionTypes_; \
+        JAVA_OBJECT parameterTypes_; \
+        JAVA_OBJECT formalTypeParameters_; \
+        JAVA_OBJECT returnType_; \
+        JAVA_OBJECT fieldType_; \
+        JAVA_OBJECT interfaceTypes_; \
+        JAVA_OBJECT superclassType_; \
+        JAVA_OBJECT loader_; \
+        JAVA_OBJECT genericDecl_; \
+        JAVA_CHAR symbol_; \
+        JAVA_OBJECT identifier_; \
+        JAVA_BOOLEAN eof_; \
+        JAVA_OBJECT buffer_; \
+        JAVA_INT pos_; \
+        __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_lang_reflect_GenericSignatureParser \
+    } org_apache_harmony_luni_lang_reflect_GenericSignatureParser
+
+struct org_apache_harmony_luni_lang_reflect_GenericSignatureParser {
+    __TIB_DEFINITION_org_apache_harmony_luni_lang_reflect_GenericSignatureParser* tib;
+    struct {
+        __INSTANCE_FIELDS_org_apache_harmony_luni_lang_reflect_GenericSignatureParser;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_GenericSignatureParser
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_GenericSignatureParser
+typedef struct org_apache_harmony_luni_lang_reflect_GenericSignatureParser org_apache_harmony_luni_lang_reflect_GenericSignatureParser;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_apache_harmony_luni_lang_reflect_GenericSignatureParser 6
+
+void __INIT_org_apache_harmony_luni_lang_reflect_GenericSignatureParser();
+void __INIT_IMPL_org_apache_harmony_luni_lang_reflect_GenericSignatureParser();
+void __DELETE_org_apache_harmony_luni_lang_reflect_GenericSignatureParser(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_apache_harmony_luni_lang_reflect_GenericSignatureParser(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_apache_harmony_luni_lang_reflect_GenericSignatureParser();
+JAVA_OBJECT __NEW_INSTANCE_org_apache_harmony_luni_lang_reflect_GenericSignatureParser();
+void org_apache_harmony_luni_lang_reflect_GenericSignatureParser___INIT____java_lang_ClassLoader(JAVA_OBJECT me, JAVA_OBJECT n1);
+void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_setInput___java_lang_reflect_GenericDeclaration_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseForClass___java_lang_reflect_GenericDeclaration_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseForMethod___java_lang_reflect_GenericDeclaration_java_lang_String_java_lang_Class_1ARRAY(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseForConstructor___java_lang_reflect_GenericDeclaration_java_lang_String_java_lang_Class_1ARRAY(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseForField___java_lang_reflect_GenericDeclaration_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseClassSignature__(JAVA_OBJECT me);
+void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseOptFormalTypeParameters__(JAVA_OBJECT me);
+JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseFormalTypeParameter__(JAVA_OBJECT me);
+JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseFieldTypeSignature__(JAVA_OBJECT me);
+JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseClassTypeSignature__(JAVA_OBJECT me);
+JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseOptTypeArguments__(JAVA_OBJECT me);
+JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseTypeArgument__(JAVA_OBJECT me);
+JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseTypeVariableSignature__(JAVA_OBJECT me);
+JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseTypeSignature__(JAVA_OBJECT me);
+void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseMethodTypeSignature___java_lang_Class_1ARRAY(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseReturnType__(JAVA_OBJECT me);
+void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_scanSymbol__(JAVA_OBJECT me);
+void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_expect___char(JAVA_OBJECT me, JAVA_CHAR n1);
+JAVA_BOOLEAN org_apache_harmony_luni_lang_reflect_GenericSignatureParser_isStopSymbol___char(JAVA_OBJECT me, JAVA_CHAR n1);
+void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_scanIdentifier__(JAVA_OBJECT me);
+
+#endif

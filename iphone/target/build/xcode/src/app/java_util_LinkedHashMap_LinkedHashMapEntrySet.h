@@ -1,0 +1,74 @@
+#ifndef __JAVA_UTIL_LINKEDHASHMAP_LINKEDHASHMAPENTRYSET__
+#define __JAVA_UTIL_LINKEDHASHMAP_LINKEDHASHMAPENTRYSET__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_LinkedHashMap_LinkedHashMapEntrySet 63
+// Implemented interfaces:
+// Super Class:
+#include "java_util_HashMap_HashMapEntrySet.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_HashMap
+#define XMLVM_FORWARD_DECL_java_util_HashMap
+XMLVM_FORWARD_DECL(java_util_HashMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Iterator
+#define XMLVM_FORWARD_DECL_java_util_Iterator
+XMLVM_FORWARD_DECL(java_util_Iterator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_LinkedHashMap
+#define XMLVM_FORWARD_DECL_java_util_LinkedHashMap
+XMLVM_FORWARD_DECL(java_util_LinkedHashMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_LinkedHashMap_EntryIterator
+#define XMLVM_FORWARD_DECL_java_util_LinkedHashMap_EntryIterator
+XMLVM_FORWARD_DECL(java_util_LinkedHashMap_EntryIterator)
+#endif
+// Class declarations for java.util.LinkedHashMap$LinkedHashMapEntrySet
+XMLVM_DEFINE_CLASS(java_util_LinkedHashMap_LinkedHashMapEntrySet, 19, XMLVM_ITABLE_SIZE_java_util_LinkedHashMap_LinkedHashMapEntrySet)
+
+extern JAVA_OBJECT __CLASS_java_util_LinkedHashMap_LinkedHashMapEntrySet;
+extern JAVA_OBJECT __CLASS_java_util_LinkedHashMap_LinkedHashMapEntrySet_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_LinkedHashMap_LinkedHashMapEntrySet_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_LinkedHashMap_LinkedHashMapEntrySet_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_LinkedHashMap_LinkedHashMapEntrySet
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_LinkedHashMap_LinkedHashMapEntrySet \
+    __INSTANCE_FIELDS_java_util_HashMap_HashMapEntrySet; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_LinkedHashMap_LinkedHashMapEntrySet \
+    } java_util_LinkedHashMap_LinkedHashMapEntrySet
+
+struct java_util_LinkedHashMap_LinkedHashMapEntrySet {
+    __TIB_DEFINITION_java_util_LinkedHashMap_LinkedHashMapEntrySet* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_LinkedHashMap_LinkedHashMapEntrySet;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_LinkedHashMap_LinkedHashMapEntrySet
+#define XMLVM_FORWARD_DECL_java_util_LinkedHashMap_LinkedHashMapEntrySet
+typedef struct java_util_LinkedHashMap_LinkedHashMapEntrySet java_util_LinkedHashMap_LinkedHashMapEntrySet;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_LinkedHashMap_LinkedHashMapEntrySet 19
+#define XMLVM_VTABLE_IDX_java_util_LinkedHashMap_LinkedHashMapEntrySet_iterator__ 12
+
+void __INIT_java_util_LinkedHashMap_LinkedHashMapEntrySet();
+void __INIT_IMPL_java_util_LinkedHashMap_LinkedHashMapEntrySet();
+void __DELETE_java_util_LinkedHashMap_LinkedHashMapEntrySet(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_LinkedHashMap_LinkedHashMapEntrySet(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_LinkedHashMap_LinkedHashMapEntrySet();
+JAVA_OBJECT __NEW_INSTANCE_java_util_LinkedHashMap_LinkedHashMapEntrySet();
+void java_util_LinkedHashMap_LinkedHashMapEntrySet___INIT____java_util_LinkedHashMap(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 12
+JAVA_OBJECT java_util_LinkedHashMap_LinkedHashMapEntrySet_iterator__(JAVA_OBJECT me);
+
+#endif

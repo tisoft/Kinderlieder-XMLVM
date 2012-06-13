@@ -1,0 +1,84 @@
+#ifndef __ORG_APACHE_HARMONY_NIOCHAR_CHARSET_US_ASCII__
+#define __ORG_APACHE_HARMONY_NIOCHAR_CHARSET_US_ASCII__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_apache_harmony_niochar_charset_US_ASCII 8
+// Implemented interfaces:
+// Super Class:
+#include "java_nio_charset_Charset.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_charset_CharsetDecoder
+#define XMLVM_FORWARD_DECL_java_nio_charset_CharsetDecoder
+XMLVM_FORWARD_DECL(java_nio_charset_CharsetDecoder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_charset_CharsetEncoder
+#define XMLVM_FORWARD_DECL_java_nio_charset_CharsetEncoder
+XMLVM_FORWARD_DECL(java_nio_charset_CharsetEncoder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_niochar_charset_US_ASCII_Decoder
+#define XMLVM_FORWARD_DECL_org_apache_harmony_niochar_charset_US_ASCII_Decoder
+XMLVM_FORWARD_DECL(org_apache_harmony_niochar_charset_US_ASCII_Decoder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_niochar_charset_US_ASCII_Encoder
+#define XMLVM_FORWARD_DECL_org_apache_harmony_niochar_charset_US_ASCII_Encoder
+XMLVM_FORWARD_DECL(org_apache_harmony_niochar_charset_US_ASCII_Encoder)
+#endif
+// Class declarations for org.apache.harmony.niochar.charset.US_ASCII
+XMLVM_DEFINE_CLASS(org_apache_harmony_niochar_charset_US_ASCII, 10, XMLVM_ITABLE_SIZE_org_apache_harmony_niochar_charset_US_ASCII)
+
+extern JAVA_OBJECT __CLASS_org_apache_harmony_niochar_charset_US_ASCII;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_niochar_charset_US_ASCII_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_niochar_charset_US_ASCII_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_niochar_charset_US_ASCII_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_niochar_charset_US_ASCII
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_apache_harmony_niochar_charset_US_ASCII \
+    __INSTANCE_FIELDS_java_nio_charset_Charset; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_niochar_charset_US_ASCII \
+    } org_apache_harmony_niochar_charset_US_ASCII
+
+struct org_apache_harmony_niochar_charset_US_ASCII {
+    __TIB_DEFINITION_org_apache_harmony_niochar_charset_US_ASCII* tib;
+    struct {
+        __INSTANCE_FIELDS_org_apache_harmony_niochar_charset_US_ASCII;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_niochar_charset_US_ASCII
+#define XMLVM_FORWARD_DECL_org_apache_harmony_niochar_charset_US_ASCII
+typedef struct org_apache_harmony_niochar_charset_US_ASCII org_apache_harmony_niochar_charset_US_ASCII;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_apache_harmony_niochar_charset_US_ASCII 10
+#define XMLVM_VTABLE_IDX_org_apache_harmony_niochar_charset_US_ASCII_newEncoder__ 9
+#define XMLVM_VTABLE_IDX_org_apache_harmony_niochar_charset_US_ASCII_newDecoder__ 8
+#define XMLVM_VTABLE_IDX_org_apache_harmony_niochar_charset_US_ASCII_contains___java_nio_charset_Charset 7
+
+void __INIT_org_apache_harmony_niochar_charset_US_ASCII();
+void __INIT_IMPL_org_apache_harmony_niochar_charset_US_ASCII();
+void __DELETE_org_apache_harmony_niochar_charset_US_ASCII(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_apache_harmony_niochar_charset_US_ASCII(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_apache_harmony_niochar_charset_US_ASCII();
+JAVA_OBJECT __NEW_INSTANCE_org_apache_harmony_niochar_charset_US_ASCII();
+void org_apache_harmony_niochar_charset_US_ASCII___INIT____java_lang_String_java_lang_String_1ARRAY(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 9
+JAVA_OBJECT org_apache_harmony_niochar_charset_US_ASCII_newEncoder__(JAVA_OBJECT me);
+// Vtable index: 8
+JAVA_OBJECT org_apache_harmony_niochar_charset_US_ASCII_newDecoder__(JAVA_OBJECT me);
+// Vtable index: 7
+JAVA_BOOLEAN org_apache_harmony_niochar_charset_US_ASCII_contains___java_nio_charset_Charset(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

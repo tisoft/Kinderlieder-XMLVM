@@ -1,0 +1,93 @@
+#ifndef __JAVA_UTIL_REGEX_LEAFQUANTIFIERSET__
+#define __JAVA_UTIL_REGEX_LEAFQUANTIFIERSET__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_regex_LeafQuantifierSet 0
+// Implemented interfaces:
+// Super Class:
+#include "java_util_regex_QuantifierSet.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_CharSequence
+#define XMLVM_FORWARD_DECL_java_lang_CharSequence
+XMLVM_FORWARD_DECL(java_lang_CharSequence)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_RuntimeException
+#define XMLVM_FORWARD_DECL_java_lang_RuntimeException
+XMLVM_FORWARD_DECL(java_lang_RuntimeException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_regex_AbstractSet
+#define XMLVM_FORWARD_DECL_java_util_regex_AbstractSet
+XMLVM_FORWARD_DECL(java_util_regex_AbstractSet)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_regex_LeafSet
+#define XMLVM_FORWARD_DECL_java_util_regex_LeafSet
+XMLVM_FORWARD_DECL(java_util_regex_LeafSet)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_regex_MatchResultImpl
+#define XMLVM_FORWARD_DECL_java_util_regex_MatchResultImpl
+XMLVM_FORWARD_DECL(java_util_regex_MatchResultImpl)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_regex_internal_nls_Messages
+#define XMLVM_FORWARD_DECL_org_apache_harmony_regex_internal_nls_Messages
+XMLVM_FORWARD_DECL(org_apache_harmony_regex_internal_nls_Messages)
+#endif
+// Class declarations for java.util.regex.LeafQuantifierSet
+XMLVM_DEFINE_CLASS(java_util_regex_LeafQuantifierSet, 18, XMLVM_ITABLE_SIZE_java_util_regex_LeafQuantifierSet)
+
+extern JAVA_OBJECT __CLASS_java_util_regex_LeafQuantifierSet;
+extern JAVA_OBJECT __CLASS_java_util_regex_LeafQuantifierSet_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_regex_LeafQuantifierSet_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_regex_LeafQuantifierSet_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_regex_LeafQuantifierSet
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_regex_LeafQuantifierSet \
+    __INSTANCE_FIELDS_java_util_regex_QuantifierSet; \
+    struct { \
+        JAVA_OBJECT leaf_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_regex_LeafQuantifierSet \
+    } java_util_regex_LeafQuantifierSet
+
+struct java_util_regex_LeafQuantifierSet {
+    __TIB_DEFINITION_java_util_regex_LeafQuantifierSet* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_regex_LeafQuantifierSet;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_regex_LeafQuantifierSet
+#define XMLVM_FORWARD_DECL_java_util_regex_LeafQuantifierSet
+typedef struct java_util_regex_LeafQuantifierSet java_util_regex_LeafQuantifierSet;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_regex_LeafQuantifierSet 18
+#define XMLVM_VTABLE_IDX_java_util_regex_LeafQuantifierSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl 13
+#define XMLVM_VTABLE_IDX_java_util_regex_LeafQuantifierSet_getName__ 9
+#define XMLVM_VTABLE_IDX_java_util_regex_LeafQuantifierSet_setInnerSet___java_util_regex_AbstractSet 17
+
+void __INIT_java_util_regex_LeafQuantifierSet();
+void __INIT_IMPL_java_util_regex_LeafQuantifierSet();
+void __DELETE_java_util_regex_LeafQuantifierSet(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_regex_LeafQuantifierSet(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_regex_LeafQuantifierSet();
+JAVA_OBJECT __NEW_INSTANCE_java_util_regex_LeafQuantifierSet();
+void java_util_regex_LeafQuantifierSet___INIT____java_util_regex_LeafSet_java_util_regex_AbstractSet_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_INT n3);
+// Vtable index: 13
+JAVA_INT java_util_regex_LeafQuantifierSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl(JAVA_OBJECT me, JAVA_INT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 9
+JAVA_OBJECT java_util_regex_LeafQuantifierSet_getName__(JAVA_OBJECT me);
+// Vtable index: 17
+void java_util_regex_LeafQuantifierSet_setInnerSet___java_util_regex_AbstractSet(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

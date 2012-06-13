@@ -1,0 +1,218 @@
+#ifndef __GNU_XML_TRANSFORM_STREAMSERIALIZER__
+#define __GNU_XML_TRANSFORM_STREAMSERIALIZER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_transform_StreamSerializer 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_java_lang_CPStringBuilder
+#define XMLVM_FORWARD_DECL_gnu_java_lang_CPStringBuilder
+XMLVM_FORWARD_DECL(gnu_java_lang_CPStringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ByteArrayOutputStream
+#define XMLVM_FORWARD_DECL_java_io_ByteArrayOutputStream
+XMLVM_FORWARD_DECL(java_io_ByteArrayOutputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_IOException
+#define XMLVM_FORWARD_DECL_java_io_IOException
+XMLVM_FORWARD_DECL(java_io_IOException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_OutputStream
+#define XMLVM_FORWARD_DECL_java_io_OutputStream
+XMLVM_FORWARD_DECL(java_io_OutputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_PrintStream
+#define XMLVM_FORWARD_DECL_java_io_PrintStream
+XMLVM_FORWARD_DECL(java_io_PrintStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Integer
+#define XMLVM_FORWARD_DECL_java_lang_Integer
+XMLVM_FORWARD_DECL(java_lang_Integer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NullPointerException
+#define XMLVM_FORWARD_DECL_java_lang_NullPointerException
+XMLVM_FORWARD_DECL(java_lang_NullPointerException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_RuntimeException
+#define XMLVM_FORWARD_DECL_java_lang_RuntimeException
+XMLVM_FORWARD_DECL(java_lang_RuntimeException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_System
+#define XMLVM_FORWARD_DECL_java_lang_System
+XMLVM_FORWARD_DECL(java_lang_System)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_ByteBuffer
+#define XMLVM_FORWARD_DECL_java_nio_ByteBuffer
+XMLVM_FORWARD_DECL(java_nio_ByteBuffer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_CharBuffer
+#define XMLVM_FORWARD_DECL_java_nio_CharBuffer
+XMLVM_FORWARD_DECL(java_nio_CharBuffer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_charset_Charset
+#define XMLVM_FORWARD_DECL_java_nio_charset_Charset
+XMLVM_FORWARD_DECL(java_nio_charset_Charset)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_charset_CharsetEncoder
+#define XMLVM_FORWARD_DECL_java_nio_charset_CharsetEncoder
+XMLVM_FORWARD_DECL(java_nio_charset_CharsetEncoder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Collection
+#define XMLVM_FORWARD_DECL_java_util_Collection
+XMLVM_FORWARD_DECL(java_util_Collection)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Collections
+#define XMLVM_FORWARD_DECL_java_util_Collections
+XMLVM_FORWARD_DECL(java_util_Collections)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_HashMap
+#define XMLVM_FORWARD_DECL_java_util_HashMap
+XMLVM_FORWARD_DECL(java_util_HashMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_HashSet
+#define XMLVM_FORWARD_DECL_java_util_HashSet
+XMLVM_FORWARD_DECL(java_util_HashSet)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Iterator
+#define XMLVM_FORWARD_DECL_java_util_Iterator
+XMLVM_FORWARD_DECL(java_util_Iterator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_LinkedList
+#define XMLVM_FORWARD_DECL_java_util_LinkedList
+XMLVM_FORWARD_DECL(java_util_LinkedList)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Map
+#define XMLVM_FORWARD_DECL_java_util_Map
+XMLVM_FORWARD_DECL(java_util_Map)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Set
+#define XMLVM_FORWARD_DECL_java_util_Set
+XMLVM_FORWARD_DECL(java_util_Set)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Attr
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Attr
+XMLVM_FORWARD_DECL(org_w3c_dom_Attr)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Document
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Document
+XMLVM_FORWARD_DECL(org_w3c_dom_Document)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_DocumentType
+#define XMLVM_FORWARD_DECL_org_w3c_dom_DocumentType
+XMLVM_FORWARD_DECL(org_w3c_dom_DocumentType)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Element
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Element
+XMLVM_FORWARD_DECL(org_w3c_dom_Element)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_NamedNodeMap
+#define XMLVM_FORWARD_DECL_org_w3c_dom_NamedNodeMap
+XMLVM_FORWARD_DECL(org_w3c_dom_NamedNodeMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Node
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Node
+XMLVM_FORWARD_DECL(org_w3c_dom_Node)
+#endif
+// Class declarations for gnu.xml.transform.StreamSerializer
+XMLVM_DEFINE_CLASS(gnu_xml_transform_StreamSerializer, 7, XMLVM_ITABLE_SIZE_gnu_xml_transform_StreamSerializer)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_transform_StreamSerializer;
+extern JAVA_OBJECT __CLASS_gnu_xml_transform_StreamSerializer_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_transform_StreamSerializer_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_transform_StreamSerializer_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_transform_StreamSerializer
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_transform_StreamSerializer \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT encoding_; \
+        JAVA_OBJECT charset_; \
+        JAVA_OBJECT encoder_; \
+        JAVA_INT mode_; \
+        JAVA_OBJECT namespaces_; \
+        JAVA_OBJECT eol_; \
+        JAVA_OBJECT cdataSectionElements_; \
+        JAVA_BOOLEAN discardDefaultContent_; \
+        JAVA_BOOLEAN xmlDeclaration_; \
+        JAVA_BOOLEAN htmlEncoded_; \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_transform_StreamSerializer \
+    } gnu_xml_transform_StreamSerializer
+
+struct gnu_xml_transform_StreamSerializer {
+    __TIB_DEFINITION_gnu_xml_transform_StreamSerializer* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_transform_StreamSerializer;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_transform_StreamSerializer
+#define XMLVM_FORWARD_DECL_gnu_xml_transform_StreamSerializer
+typedef struct gnu_xml_transform_StreamSerializer gnu_xml_transform_StreamSerializer;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_transform_StreamSerializer 7
+#define XMLVM_VTABLE_IDX_gnu_xml_transform_StreamSerializer_serialize___org_w3c_dom_Node_java_io_OutputStream 6
+
+void __INIT_gnu_xml_transform_StreamSerializer();
+void __INIT_IMPL_gnu_xml_transform_StreamSerializer();
+void __DELETE_gnu_xml_transform_StreamSerializer(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_transform_StreamSerializer(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_transform_StreamSerializer();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_transform_StreamSerializer();
+JAVA_INT gnu_xml_transform_StreamSerializer_GET_SPACE();
+void gnu_xml_transform_StreamSerializer_PUT_SPACE(JAVA_INT v);
+JAVA_INT gnu_xml_transform_StreamSerializer_GET_BANG();
+void gnu_xml_transform_StreamSerializer_PUT_BANG(JAVA_INT v);
+JAVA_INT gnu_xml_transform_StreamSerializer_GET_APOS();
+void gnu_xml_transform_StreamSerializer_PUT_APOS(JAVA_INT v);
+JAVA_INT gnu_xml_transform_StreamSerializer_GET_SLASH();
+void gnu_xml_transform_StreamSerializer_PUT_SLASH(JAVA_INT v);
+JAVA_INT gnu_xml_transform_StreamSerializer_GET_BRA();
+void gnu_xml_transform_StreamSerializer_PUT_BRA(JAVA_INT v);
+JAVA_INT gnu_xml_transform_StreamSerializer_GET_KET();
+void gnu_xml_transform_StreamSerializer_PUT_KET(JAVA_INT v);
+JAVA_INT gnu_xml_transform_StreamSerializer_GET_EQ();
+void gnu_xml_transform_StreamSerializer_PUT_EQ(JAVA_INT v);
+JAVA_OBJECT gnu_xml_transform_StreamSerializer_GET_HTML_BOOLEAN_ATTRIBUTES();
+void gnu_xml_transform_StreamSerializer_PUT_HTML_BOOLEAN_ATTRIBUTES(JAVA_OBJECT v);
+JAVA_OBJECT gnu_xml_transform_StreamSerializer_GET_HTML_URIS();
+void gnu_xml_transform_StreamSerializer_PUT_HTML_URIS(JAVA_OBJECT v);
+void gnu_xml_transform_StreamSerializer___CLINIT_();
+void gnu_xml_transform_StreamSerializer___INIT___(JAVA_OBJECT me);
+void gnu_xml_transform_StreamSerializer___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+void gnu_xml_transform_StreamSerializer___INIT____int_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_INT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+void gnu_xml_transform_StreamSerializer_setCdataSectionElements___java_util_Collection(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 6
+void gnu_xml_transform_StreamSerializer_serialize___org_w3c_dom_Node_java_io_OutputStream(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+void gnu_xml_transform_StreamSerializer_serialize___org_w3c_dom_Node_java_io_OutputStream_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_BOOLEAN n3);
+void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_OutputStream_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_BOOLEAN n3);
+JAVA_BOOLEAN gnu_xml_transform_StreamSerializer_isHTMLElement___org_w3c_dom_Node_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_BOOLEAN gnu_xml_transform_StreamSerializer_isDefined___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+void gnu_xml_transform_StreamSerializer_pushNamespaceContext__(JAVA_OBJECT me);
+JAVA_OBJECT gnu_xml_transform_StreamSerializer_define___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+void gnu_xml_transform_StreamSerializer_popNamespaceContext__(JAVA_OBJECT me);
+JAVA_OBJECT gnu_xml_transform_StreamSerializer_encodeText___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_transform_StreamSerializer_encode___java_lang_String_boolean_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_BOOLEAN n2, JAVA_BOOLEAN n3);
+JAVA_OBJECT gnu_xml_transform_StreamSerializer_toString___org_w3c_dom_Node(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_BOOLEAN gnu_xml_transform_StreamSerializer_isHTMLBoolean___org_w3c_dom_Attr_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT gnu_xml_transform_StreamSerializer_getHTMLCharacterEntity___char(JAVA_CHAR n1);
+
+#endif

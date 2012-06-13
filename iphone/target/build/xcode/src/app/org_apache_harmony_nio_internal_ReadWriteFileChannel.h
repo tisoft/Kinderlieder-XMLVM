@@ -1,0 +1,74 @@
+#ifndef __ORG_APACHE_HARMONY_NIO_INTERNAL_READWRITEFILECHANNEL__
+#define __ORG_APACHE_HARMONY_NIO_INTERNAL_READWRITEFILECHANNEL__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_apache_harmony_nio_internal_ReadWriteFileChannel 25
+// Implemented interfaces:
+// Super Class:
+#include "org_apache_harmony_nio_internal_FileChannelImpl.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+XMLVM_FORWARD_DECL(java_lang_IllegalArgumentException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NullPointerException
+#define XMLVM_FORWARD_DECL_java_lang_NullPointerException
+XMLVM_FORWARD_DECL(java_lang_NullPointerException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_MappedByteBuffer
+#define XMLVM_FORWARD_DECL_java_nio_MappedByteBuffer
+XMLVM_FORWARD_DECL(java_nio_MappedByteBuffer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_channels_FileChannel_MapMode
+#define XMLVM_FORWARD_DECL_java_nio_channels_FileChannel_MapMode
+XMLVM_FORWARD_DECL(java_nio_channels_FileChannel_MapMode)
+#endif
+// Class declarations for org.apache.harmony.nio.internal.ReadWriteFileChannel
+XMLVM_DEFINE_CLASS(org_apache_harmony_nio_internal_ReadWriteFileChannel, 28, XMLVM_ITABLE_SIZE_org_apache_harmony_nio_internal_ReadWriteFileChannel)
+
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_internal_ReadWriteFileChannel;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_internal_ReadWriteFileChannel_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_internal_ReadWriteFileChannel_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_internal_ReadWriteFileChannel_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_nio_internal_ReadWriteFileChannel
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_apache_harmony_nio_internal_ReadWriteFileChannel \
+    __INSTANCE_FIELDS_org_apache_harmony_nio_internal_FileChannelImpl; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_nio_internal_ReadWriteFileChannel \
+    } org_apache_harmony_nio_internal_ReadWriteFileChannel
+
+struct org_apache_harmony_nio_internal_ReadWriteFileChannel {
+    __TIB_DEFINITION_org_apache_harmony_nio_internal_ReadWriteFileChannel* tib;
+    struct {
+        __INSTANCE_FIELDS_org_apache_harmony_nio_internal_ReadWriteFileChannel;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_nio_internal_ReadWriteFileChannel
+#define XMLVM_FORWARD_DECL_org_apache_harmony_nio_internal_ReadWriteFileChannel
+typedef struct org_apache_harmony_nio_internal_ReadWriteFileChannel org_apache_harmony_nio_internal_ReadWriteFileChannel;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_apache_harmony_nio_internal_ReadWriteFileChannel 28
+#define XMLVM_VTABLE_IDX_org_apache_harmony_nio_internal_ReadWriteFileChannel_map___java_nio_channels_FileChannel_MapMode_long_long 11
+
+void __INIT_org_apache_harmony_nio_internal_ReadWriteFileChannel();
+void __INIT_IMPL_org_apache_harmony_nio_internal_ReadWriteFileChannel();
+void __DELETE_org_apache_harmony_nio_internal_ReadWriteFileChannel(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_apache_harmony_nio_internal_ReadWriteFileChannel(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_apache_harmony_nio_internal_ReadWriteFileChannel();
+JAVA_OBJECT __NEW_INSTANCE_org_apache_harmony_nio_internal_ReadWriteFileChannel();
+void org_apache_harmony_nio_internal_ReadWriteFileChannel___INIT____java_lang_Object_long(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_LONG n2);
+// Vtable index: 11
+JAVA_OBJECT org_apache_harmony_nio_internal_ReadWriteFileChannel_map___java_nio_channels_FileChannel_MapMode_long_long(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_LONG n2, JAVA_LONG n3);
+
+#endif

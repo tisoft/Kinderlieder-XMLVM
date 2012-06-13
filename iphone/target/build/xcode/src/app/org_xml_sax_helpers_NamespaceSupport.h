@@ -1,0 +1,104 @@
+#ifndef __ORG_XML_SAX_HELPERS_NAMESPACESUPPORT__
+#define __ORG_XML_SAX_HELPERS_NAMESPACESUPPORT__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_xml_sax_helpers_NamespaceSupport 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+XMLVM_FORWARD_DECL(java_lang_IllegalStateException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_System
+#define XMLVM_FORWARD_DECL_java_lang_System
+XMLVM_FORWARD_DECL(java_lang_System)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_EmptyStackException
+#define XMLVM_FORWARD_DECL_java_util_EmptyStackException
+XMLVM_FORWARD_DECL(java_util_EmptyStackException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Enumeration
+#define XMLVM_FORWARD_DECL_java_util_Enumeration
+XMLVM_FORWARD_DECL(java_util_Enumeration)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Vector
+#define XMLVM_FORWARD_DECL_java_util_Vector
+XMLVM_FORWARD_DECL(java_util_Vector)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_helpers_NamespaceSupport_Context
+#define XMLVM_FORWARD_DECL_org_xml_sax_helpers_NamespaceSupport_Context
+XMLVM_FORWARD_DECL(org_xml_sax_helpers_NamespaceSupport_Context)
+#endif
+// Class declarations for org.xml.sax.helpers.NamespaceSupport
+XMLVM_DEFINE_CLASS(org_xml_sax_helpers_NamespaceSupport, 6, XMLVM_ITABLE_SIZE_org_xml_sax_helpers_NamespaceSupport)
+
+extern JAVA_OBJECT __CLASS_org_xml_sax_helpers_NamespaceSupport;
+extern JAVA_OBJECT __CLASS_org_xml_sax_helpers_NamespaceSupport_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_helpers_NamespaceSupport_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_helpers_NamespaceSupport_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_xml_sax_helpers_NamespaceSupport
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_xml_sax_helpers_NamespaceSupport \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT contexts_; \
+        JAVA_OBJECT currentContext_; \
+        JAVA_INT contextPos_; \
+        JAVA_BOOLEAN namespaceDeclUris_; \
+        __ADDITIONAL_INSTANCE_FIELDS_org_xml_sax_helpers_NamespaceSupport \
+    } org_xml_sax_helpers_NamespaceSupport
+
+struct org_xml_sax_helpers_NamespaceSupport {
+    __TIB_DEFINITION_org_xml_sax_helpers_NamespaceSupport* tib;
+    struct {
+        __INSTANCE_FIELDS_org_xml_sax_helpers_NamespaceSupport;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_helpers_NamespaceSupport
+#define XMLVM_FORWARD_DECL_org_xml_sax_helpers_NamespaceSupport
+typedef struct org_xml_sax_helpers_NamespaceSupport org_xml_sax_helpers_NamespaceSupport;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_xml_sax_helpers_NamespaceSupport 6
+
+void __INIT_org_xml_sax_helpers_NamespaceSupport();
+void __INIT_IMPL_org_xml_sax_helpers_NamespaceSupport();
+void __DELETE_org_xml_sax_helpers_NamespaceSupport(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_xml_sax_helpers_NamespaceSupport(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_xml_sax_helpers_NamespaceSupport();
+JAVA_OBJECT __NEW_INSTANCE_org_xml_sax_helpers_NamespaceSupport();
+JAVA_OBJECT org_xml_sax_helpers_NamespaceSupport_GET_XMLNS();
+void org_xml_sax_helpers_NamespaceSupport_PUT_XMLNS(JAVA_OBJECT v);
+JAVA_OBJECT org_xml_sax_helpers_NamespaceSupport_GET_NSDECL();
+void org_xml_sax_helpers_NamespaceSupport_PUT_NSDECL(JAVA_OBJECT v);
+JAVA_OBJECT org_xml_sax_helpers_NamespaceSupport_GET_EMPTY_ENUMERATION();
+void org_xml_sax_helpers_NamespaceSupport_PUT_EMPTY_ENUMERATION(JAVA_OBJECT v);
+void org_xml_sax_helpers_NamespaceSupport___CLINIT_();
+void org_xml_sax_helpers_NamespaceSupport___INIT___(JAVA_OBJECT me);
+void org_xml_sax_helpers_NamespaceSupport_reset__(JAVA_OBJECT me);
+void org_xml_sax_helpers_NamespaceSupport_pushContext__(JAVA_OBJECT me);
+void org_xml_sax_helpers_NamespaceSupport_popContext__(JAVA_OBJECT me);
+JAVA_BOOLEAN org_xml_sax_helpers_NamespaceSupport_declarePrefix___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT org_xml_sax_helpers_NamespaceSupport_processName___java_lang_String_java_lang_String_1ARRAY_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_BOOLEAN n3);
+JAVA_OBJECT org_xml_sax_helpers_NamespaceSupport_getURI___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT org_xml_sax_helpers_NamespaceSupport_getPrefixes__(JAVA_OBJECT me);
+JAVA_OBJECT org_xml_sax_helpers_NamespaceSupport_getPrefix___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT org_xml_sax_helpers_NamespaceSupport_getPrefixes___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT org_xml_sax_helpers_NamespaceSupport_getDeclaredPrefixes__(JAVA_OBJECT me);
+void org_xml_sax_helpers_NamespaceSupport_setNamespaceDeclUris___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+JAVA_BOOLEAN org_xml_sax_helpers_NamespaceSupport_isNamespaceDeclUris__(JAVA_OBJECT me);
+JAVA_BOOLEAN org_xml_sax_helpers_NamespaceSupport_access$0___org_xml_sax_helpers_NamespaceSupport(JAVA_OBJECT n1);
+JAVA_OBJECT org_xml_sax_helpers_NamespaceSupport_access$1__();
+
+#endif

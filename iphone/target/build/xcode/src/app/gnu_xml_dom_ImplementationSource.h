@@ -1,0 +1,114 @@
+#ifndef __GNU_XML_DOM_IMPLEMENTATIONSOURCE__
+#define __GNU_XML_DOM_IMPLEMENTATIONSOURCE__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_dom_ImplementationSource 2
+// Implemented interfaces:
+#include "org_w3c_dom_DOMImplementationSource.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_DomImpl
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_DomImpl
+XMLVM_FORWARD_DECL(gnu_xml_dom_DomImpl)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_ImplementationList
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_ImplementationList
+XMLVM_FORWARD_DECL(gnu_xml_dom_ImplementationList)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Exception
+#define XMLVM_FORWARD_DECL_java_lang_Exception
+XMLVM_FORWARD_DECL(java_lang_Exception)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_UnsatisfiedLinkError
+#define XMLVM_FORWARD_DECL_java_lang_UnsatisfiedLinkError
+XMLVM_FORWARD_DECL(java_lang_UnsatisfiedLinkError)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ArrayList
+#define XMLVM_FORWARD_DECL_java_util_ArrayList
+XMLVM_FORWARD_DECL(java_util_ArrayList)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Arrays
+#define XMLVM_FORWARD_DECL_java_util_Arrays
+XMLVM_FORWARD_DECL(java_util_Arrays)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Iterator
+#define XMLVM_FORWARD_DECL_java_util_Iterator
+XMLVM_FORWARD_DECL(java_util_Iterator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_List
+#define XMLVM_FORWARD_DECL_java_util_List
+XMLVM_FORWARD_DECL(java_util_List)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementation
+#define XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementation
+XMLVM_FORWARD_DECL(org_w3c_dom_DOMImplementation)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementationList
+#define XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementationList
+XMLVM_FORWARD_DECL(org_w3c_dom_DOMImplementationList)
+#endif
+// Class declarations for gnu.xml.dom.ImplementationSource
+XMLVM_DEFINE_CLASS(gnu_xml_dom_ImplementationSource, 8, XMLVM_ITABLE_SIZE_gnu_xml_dom_ImplementationSource)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_ImplementationSource;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_ImplementationSource_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_ImplementationSource_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_ImplementationSource_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_ImplementationSource
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_dom_ImplementationSource \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_ImplementationSource \
+    } gnu_xml_dom_ImplementationSource
+
+struct gnu_xml_dom_ImplementationSource {
+    __TIB_DEFINITION_gnu_xml_dom_ImplementationSource* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_dom_ImplementationSource;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_ImplementationSource
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_ImplementationSource
+typedef struct gnu_xml_dom_ImplementationSource gnu_xml_dom_ImplementationSource;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_dom_ImplementationSource 8
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_ImplementationSource_getDOMImplementation___java_lang_String 7
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_ImplementationSource_getDOMImplementationList___java_lang_String 6
+
+void __INIT_gnu_xml_dom_ImplementationSource();
+void __INIT_IMPL_gnu_xml_dom_ImplementationSource();
+void __DELETE_gnu_xml_dom_ImplementationSource(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_dom_ImplementationSource(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_dom_ImplementationSource();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_dom_ImplementationSource();
+JAVA_OBJECT gnu_xml_dom_ImplementationSource_GET_DIGITS();
+void gnu_xml_dom_ImplementationSource_PUT_DIGITS(JAVA_OBJECT v);
+JAVA_OBJECT gnu_xml_dom_ImplementationSource_GET_implementations();
+void gnu_xml_dom_ImplementationSource_PUT_implementations(JAVA_OBJECT v);
+void gnu_xml_dom_ImplementationSource___CLINIT_();
+void gnu_xml_dom_ImplementationSource___INIT___(JAVA_OBJECT me);
+// Vtable index: 7
+JAVA_OBJECT gnu_xml_dom_ImplementationSource_getDOMImplementation___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 6
+JAVA_OBJECT gnu_xml_dom_ImplementationSource_getDOMImplementationList___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_dom_ImplementationSource_getImplementations___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_dom_ImplementationSource_parseFeatures___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_dom_ImplementationSource_getFeature___java_lang_String_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+
+#endif

@@ -1,0 +1,55 @@
+#ifndef __ORG_W3C_DOM_LS_DOMIMPLEMENTATIONLS__
+#define __ORG_W3C_DOM_LS_DOMIMPLEMENTATIONLS__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_DOMImplementationLS_createLSParser___short_java_lang_String 6
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_DOMImplementationLS_createLSSerializer__ 7
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_DOMImplementationLS_createLSInput__ 4
+#define XMLVM_ITABLE_IDX_org_w3c_dom_ls_DOMImplementationLS_createLSOutput__ 5
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSInput
+#define XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSInput
+XMLVM_FORWARD_DECL(org_w3c_dom_ls_LSInput)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSOutput
+#define XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSOutput
+XMLVM_FORWARD_DECL(org_w3c_dom_ls_LSOutput)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSParser
+#define XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSParser
+XMLVM_FORWARD_DECL(org_w3c_dom_ls_LSParser)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSSerializer
+#define XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSSerializer
+XMLVM_FORWARD_DECL(org_w3c_dom_ls_LSSerializer)
+#endif
+
+XMLVM_DEFINE_CLASS(org_w3c_dom_ls_DOMImplementationLS, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_w3c_dom_ls_DOMImplementationLS;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_ls_DOMImplementationLS_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_ls_DOMImplementationLS_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_ls_DOMImplementationLS_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_ls_DOMImplementationLS
+#define XMLVM_FORWARD_DECL_org_w3c_dom_ls_DOMImplementationLS
+typedef struct org_w3c_dom_ls_DOMImplementationLS org_w3c_dom_ls_DOMImplementationLS;
+#endif
+
+void __INIT_org_w3c_dom_ls_DOMImplementationLS();
+void __INIT_IMPL_org_w3c_dom_ls_DOMImplementationLS();
+JAVA_SHORT org_w3c_dom_ls_DOMImplementationLS_GET_MODE_SYNCHRONOUS();
+void org_w3c_dom_ls_DOMImplementationLS_PUT_MODE_SYNCHRONOUS(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_ls_DOMImplementationLS_GET_MODE_ASYNCHRONOUS();
+void org_w3c_dom_ls_DOMImplementationLS_PUT_MODE_ASYNCHRONOUS(JAVA_SHORT v);
+
+#endif

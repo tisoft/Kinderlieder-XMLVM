@@ -1,0 +1,134 @@
+#ifndef __GNU_XML_DOM_DOMDOCUMENTBUILDERFACTORY__
+#define __GNU_XML_DOM_DOMDOCUMENTBUILDERFACTORY__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_dom_DomDocumentBuilderFactory 0
+// Implemented interfaces:
+// Super Class:
+#include "javax_xml_parsers_DocumentBuilderFactory.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_DomDocumentBuilder
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_DomDocumentBuilder
+XMLVM_FORWARD_DECL(gnu_xml_dom_DomDocumentBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Boolean
+#define XMLVM_FORWARD_DECL_java_lang_Boolean
+XMLVM_FORWARD_DECL(java_lang_Boolean)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Exception
+#define XMLVM_FORWARD_DECL_java_lang_Exception
+XMLVM_FORWARD_DECL(java_lang_Exception)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NullPointerException
+#define XMLVM_FORWARD_DECL_java_lang_NullPointerException
+XMLVM_FORWARD_DECL(java_lang_NullPointerException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_javax_xml_parsers_DocumentBuilder
+#define XMLVM_FORWARD_DECL_javax_xml_parsers_DocumentBuilder
+XMLVM_FORWARD_DECL(javax_xml_parsers_DocumentBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_javax_xml_parsers_FactoryConfigurationError
+#define XMLVM_FORWARD_DECL_javax_xml_parsers_FactoryConfigurationError
+XMLVM_FORWARD_DECL(javax_xml_parsers_FactoryConfigurationError)
+#endif
+#ifndef XMLVM_FORWARD_DECL_javax_xml_parsers_ParserConfigurationException
+#define XMLVM_FORWARD_DECL_javax_xml_parsers_ParserConfigurationException
+XMLVM_FORWARD_DECL(javax_xml_parsers_ParserConfigurationException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_DOMConfiguration
+#define XMLVM_FORWARD_DECL_org_w3c_dom_DOMConfiguration
+XMLVM_FORWARD_DECL(org_w3c_dom_DOMConfiguration)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_DOMException
+#define XMLVM_FORWARD_DECL_org_w3c_dom_DOMException
+XMLVM_FORWARD_DECL(org_w3c_dom_DOMException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementation
+#define XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementation
+XMLVM_FORWARD_DECL(org_w3c_dom_DOMImplementation)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_bootstrap_DOMImplementationRegistry
+#define XMLVM_FORWARD_DECL_org_w3c_dom_bootstrap_DOMImplementationRegistry
+XMLVM_FORWARD_DECL(org_w3c_dom_bootstrap_DOMImplementationRegistry)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_ls_DOMImplementationLS
+#define XMLVM_FORWARD_DECL_org_w3c_dom_ls_DOMImplementationLS
+XMLVM_FORWARD_DECL(org_w3c_dom_ls_DOMImplementationLS)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSParser
+#define XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSParser
+XMLVM_FORWARD_DECL(org_w3c_dom_ls_LSParser)
+#endif
+// Class declarations for gnu.xml.dom.DomDocumentBuilderFactory
+XMLVM_DEFINE_CLASS(gnu_xml_dom_DomDocumentBuilderFactory, 11, XMLVM_ITABLE_SIZE_gnu_xml_dom_DomDocumentBuilderFactory)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_DomDocumentBuilderFactory;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_DomDocumentBuilderFactory_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_DomDocumentBuilderFactory_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_DomDocumentBuilderFactory_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_DomDocumentBuilderFactory
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_dom_DomDocumentBuilderFactory \
+    __INSTANCE_FIELDS_javax_xml_parsers_DocumentBuilderFactory; \
+    struct { \
+        JAVA_OBJECT impl_; \
+        JAVA_OBJECT ls_; \
+        JAVA_BOOLEAN secureProcessing_; \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_DomDocumentBuilderFactory \
+    } gnu_xml_dom_DomDocumentBuilderFactory
+
+struct gnu_xml_dom_DomDocumentBuilderFactory {
+    __TIB_DEFINITION_gnu_xml_dom_DomDocumentBuilderFactory* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_dom_DomDocumentBuilderFactory;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_DomDocumentBuilderFactory
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_DomDocumentBuilderFactory
+typedef struct gnu_xml_dom_DomDocumentBuilderFactory gnu_xml_dom_DomDocumentBuilderFactory;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_dom_DomDocumentBuilderFactory 11
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_DomDocumentBuilderFactory_newDocumentBuilder__ 8
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_DomDocumentBuilderFactory_getAttribute___java_lang_String 6
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_DomDocumentBuilderFactory_setAttribute___java_lang_String_java_lang_Object 9
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_DomDocumentBuilderFactory_setFeature___java_lang_String_boolean 10
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_DomDocumentBuilderFactory_getFeature___java_lang_String 7
+
+void __INIT_gnu_xml_dom_DomDocumentBuilderFactory();
+void __INIT_IMPL_gnu_xml_dom_DomDocumentBuilderFactory();
+void __DELETE_gnu_xml_dom_DomDocumentBuilderFactory(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_dom_DomDocumentBuilderFactory(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_dom_DomDocumentBuilderFactory();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_dom_DomDocumentBuilderFactory();
+void gnu_xml_dom_DomDocumentBuilderFactory___INIT___(JAVA_OBJECT me);
+// Vtable index: 8
+JAVA_OBJECT gnu_xml_dom_DomDocumentBuilderFactory_newDocumentBuilder__(JAVA_OBJECT me);
+void gnu_xml_dom_DomDocumentBuilderFactory_setParameter___org_w3c_dom_DOMConfiguration_java_lang_String_java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 6
+JAVA_OBJECT gnu_xml_dom_DomDocumentBuilderFactory_getAttribute___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 9
+void gnu_xml_dom_DomDocumentBuilderFactory_setAttribute___java_lang_String_java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 10
+void gnu_xml_dom_DomDocumentBuilderFactory_setFeature___java_lang_String_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_BOOLEAN n2);
+// Vtable index: 7
+JAVA_BOOLEAN gnu_xml_dom_DomDocumentBuilderFactory_getFeature___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

@@ -1,0 +1,79 @@
+#ifndef __GNU_XML_DOM_HTML2_DOMHTMLEMBEDELEMENT__
+#define __GNU_XML_DOM_HTML2_DOMHTMLEMBEDELEMENT__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_dom_html2_DomHTMLEmbedElement 261
+// Implemented interfaces:
+// Super Class:
+#include "gnu_xml_dom_html2_DomHTMLAppletElement.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLDocument
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLDocument
+XMLVM_FORWARD_DECL(gnu_xml_dom_html2_DomHTMLDocument)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+// Class declarations for gnu.xml.dom.html2.DomHTMLEmbedElement
+XMLVM_DEFINE_CLASS(gnu_xml_dom_html2_DomHTMLEmbedElement, 103, XMLVM_ITABLE_SIZE_gnu_xml_dom_html2_DomHTMLEmbedElement)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLEmbedElement;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLEmbedElement_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLEmbedElement_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLEmbedElement_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLEmbedElement
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLEmbedElement \
+    __INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLAppletElement; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLEmbedElement \
+    } gnu_xml_dom_html2_DomHTMLEmbedElement
+
+struct gnu_xml_dom_html2_DomHTMLEmbedElement {
+    __TIB_DEFINITION_gnu_xml_dom_html2_DomHTMLEmbedElement* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLEmbedElement;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLEmbedElement
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLEmbedElement
+typedef struct gnu_xml_dom_html2_DomHTMLEmbedElement gnu_xml_dom_html2_DomHTMLEmbedElement;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_dom_html2_DomHTMLEmbedElement 103
+
+void __INIT_gnu_xml_dom_html2_DomHTMLEmbedElement();
+void __INIT_IMPL_gnu_xml_dom_html2_DomHTMLEmbedElement();
+void __DELETE_gnu_xml_dom_html2_DomHTMLEmbedElement(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_dom_html2_DomHTMLEmbedElement(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_dom_html2_DomHTMLEmbedElement();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_dom_html2_DomHTMLEmbedElement();
+void gnu_xml_dom_html2_DomHTMLEmbedElement___INIT____gnu_xml_dom_html2_DomHTMLDocument_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLEmbedElement_getJavaObject__(JAVA_OBJECT me);
+void gnu_xml_dom_html2_DomHTMLEmbedElement_setJavaObject___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLEmbedElement_getJavaCodeBase__(JAVA_OBJECT me);
+void gnu_xml_dom_html2_DomHTMLEmbedElement_setJavaCodeBase___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLEmbedElement_getJavaArchive__(JAVA_OBJECT me);
+void gnu_xml_dom_html2_DomHTMLEmbedElement_setJavaArchive___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+void gnu_xml_dom_html2_DomHTMLEmbedElement_setJavaCode___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLEmbedElement_getJavaCode__(JAVA_OBJECT me);
+void gnu_xml_dom_html2_DomHTMLEmbedElement_setJavaType___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLEmbedElement_getJavaType__(JAVA_OBJECT me);
+void gnu_xml_dom_html2_DomHTMLEmbedElement_setType___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLEmbedElement_getType__(JAVA_OBJECT me);
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLEmbedElement_getPluginsPage__(JAVA_OBJECT me);
+void gnu_xml_dom_html2_DomHTMLEmbedElement_setPluginsPage___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLEmbedElement_getMayscript__(JAVA_OBJECT me);
+void gnu_xml_dom_html2_DomHTMLEmbedElement_setMayscript___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

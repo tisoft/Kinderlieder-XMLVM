@@ -1,0 +1,47 @@
+#ifndef __JAVA_UTIL_SET__
+#define __JAVA_UTIL_SET__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_java_util_Set_add___java_lang_Object 49
+#define XMLVM_ITABLE_IDX_java_util_Set_addAll___java_util_Collection 48
+#define XMLVM_ITABLE_IDX_java_util_Set_clear__ 50
+#define XMLVM_ITABLE_IDX_java_util_Set_contains___java_lang_Object 52
+#define XMLVM_ITABLE_IDX_java_util_Set_containsAll___java_util_Collection 51
+#define XMLVM_ITABLE_IDX_java_util_Set_equals___java_lang_Object 53
+#define XMLVM_ITABLE_IDX_java_util_Set_hashCode__ 54
+#define XMLVM_ITABLE_IDX_java_util_Set_isEmpty__ 55
+#define XMLVM_ITABLE_IDX_java_util_Set_iterator__ 56
+#define XMLVM_ITABLE_IDX_java_util_Set_remove___java_lang_Object 58
+#define XMLVM_ITABLE_IDX_java_util_Set_removeAll___java_util_Collection 57
+#define XMLVM_ITABLE_IDX_java_util_Set_retainAll___java_util_Collection 59
+#define XMLVM_ITABLE_IDX_java_util_Set_size__ 60
+#define XMLVM_ITABLE_IDX_java_util_Set_toArray__ 61
+#define XMLVM_ITABLE_IDX_java_util_Set_toArray___java_lang_Object_1ARRAY 62
+// Implemented interfaces:
+#include "java_util_Collection.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_util_Iterator
+#define XMLVM_FORWARD_DECL_java_util_Iterator
+XMLVM_FORWARD_DECL(java_util_Iterator)
+#endif
+
+XMLVM_DEFINE_CLASS(java_util_Set, 0, 0)
+
+extern JAVA_OBJECT __CLASS_java_util_Set;
+extern JAVA_OBJECT __CLASS_java_util_Set_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_Set_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_Set_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_java_util_Set
+#define XMLVM_FORWARD_DECL_java_util_Set
+typedef struct java_util_Set java_util_Set;
+#endif
+
+void __INIT_java_util_Set();
+void __INIT_IMPL_java_util_Set();
+
+#endif

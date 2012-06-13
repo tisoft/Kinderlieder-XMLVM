@@ -1,0 +1,79 @@
+#ifndef __ORG_APACHE_HARMONY_LUNI_LANG_REFLECT_IMPLFORARRAY__
+#define __ORG_APACHE_HARMONY_LUNI_LANG_REFLECT_IMPLFORARRAY__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_apache_harmony_luni_lang_reflect_ImplForArray 0
+// Implemented interfaces:
+#include "java_lang_reflect_GenericArrayType.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_ClassCastException
+#define XMLVM_FORWARD_DECL_java_lang_ClassCastException
+XMLVM_FORWARD_DECL(java_lang_ClassCastException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Type
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Type
+XMLVM_FORWARD_DECL(java_lang_reflect_Type)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ImplForType
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ImplForType
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_lang_reflect_ImplForType)
+#endif
+// Class declarations for org.apache.harmony.luni.lang.reflect.ImplForArray
+XMLVM_DEFINE_CLASS(org_apache_harmony_luni_lang_reflect_ImplForArray, 7, XMLVM_ITABLE_SIZE_org_apache_harmony_luni_lang_reflect_ImplForArray)
+
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_lang_reflect_ImplForArray;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_lang_reflect_ImplForArray_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_lang_reflect_ImplForArray_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_lang_reflect_ImplForArray_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_lang_reflect_ImplForArray
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_apache_harmony_luni_lang_reflect_ImplForArray \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT componentType_; \
+        __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_lang_reflect_ImplForArray \
+    } org_apache_harmony_luni_lang_reflect_ImplForArray
+
+struct org_apache_harmony_luni_lang_reflect_ImplForArray {
+    __TIB_DEFINITION_org_apache_harmony_luni_lang_reflect_ImplForArray* tib;
+    struct {
+        __INSTANCE_FIELDS_org_apache_harmony_luni_lang_reflect_ImplForArray;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ImplForArray
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ImplForArray
+typedef struct org_apache_harmony_luni_lang_reflect_ImplForArray org_apache_harmony_luni_lang_reflect_ImplForArray;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_apache_harmony_luni_lang_reflect_ImplForArray 7
+#define XMLVM_VTABLE_IDX_org_apache_harmony_luni_lang_reflect_ImplForArray_getGenericComponentType__ 6
+#define XMLVM_VTABLE_IDX_org_apache_harmony_luni_lang_reflect_ImplForArray_toString__ 5
+
+void __INIT_org_apache_harmony_luni_lang_reflect_ImplForArray();
+void __INIT_IMPL_org_apache_harmony_luni_lang_reflect_ImplForArray();
+void __DELETE_org_apache_harmony_luni_lang_reflect_ImplForArray(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_apache_harmony_luni_lang_reflect_ImplForArray(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_apache_harmony_luni_lang_reflect_ImplForArray();
+JAVA_OBJECT __NEW_INSTANCE_org_apache_harmony_luni_lang_reflect_ImplForArray();
+void org_apache_harmony_luni_lang_reflect_ImplForArray___INIT____java_lang_reflect_Type(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 6
+JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForArray_getGenericComponentType__(JAVA_OBJECT me);
+// Vtable index: 5
+JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForArray_toString__(JAVA_OBJECT me);
+
+#endif

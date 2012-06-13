@@ -1,0 +1,58 @@
+#ifndef __ORG_APACHE_HARMONY_LUNI_UTIL_FLOATINGPOINTPARSER_STRINGEXPONENTPAIR__
+#define __ORG_APACHE_HARMONY_LUNI_UTIL_FLOATINGPOINTPARSER_STRINGEXPONENTPAIR__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+// Class declarations for org.apache.harmony.luni.util.FloatingPointParser$StringExponentPair
+XMLVM_DEFINE_CLASS(org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair, 6, XMLVM_ITABLE_SIZE_org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair)
+
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT s_; \
+        JAVA_INT e_; \
+        JAVA_BOOLEAN negative_; \
+        __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair \
+    } org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair
+
+struct org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair {
+    __TIB_DEFINITION_org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair* tib;
+    struct {
+        __INSTANCE_FIELDS_org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair
+typedef struct org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair 6
+
+void __INIT_org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair();
+void __INIT_IMPL_org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair();
+void __DELETE_org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair();
+JAVA_OBJECT __NEW_INSTANCE_org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair();
+void org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair___INIT____java_lang_String_int_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_BOOLEAN n3);
+
+#endif

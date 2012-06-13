@@ -1,0 +1,66 @@
+#ifndef __JAVA_UTIL_COLLECTIONS_REVERSECOMPARATORWITHCOMPARATOR__
+#define __JAVA_UTIL_COLLECTIONS_REVERSECOMPARATORWITHCOMPARATOR__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_Collections_ReverseComparatorWithComparator 2
+// Implemented interfaces:
+#include "java_io_Serializable.h"
+#include "java_util_Comparator.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+// Class declarations for java.util.Collections$ReverseComparatorWithComparator
+XMLVM_DEFINE_CLASS(java_util_Collections_ReverseComparatorWithComparator, 7, XMLVM_ITABLE_SIZE_java_util_Collections_ReverseComparatorWithComparator)
+
+extern JAVA_OBJECT __CLASS_java_util_Collections_ReverseComparatorWithComparator;
+extern JAVA_OBJECT __CLASS_java_util_Collections_ReverseComparatorWithComparator_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_Collections_ReverseComparatorWithComparator_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_Collections_ReverseComparatorWithComparator_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_Collections_ReverseComparatorWithComparator
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_Collections_ReverseComparatorWithComparator \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT comparator_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_Collections_ReverseComparatorWithComparator \
+    } java_util_Collections_ReverseComparatorWithComparator
+
+struct java_util_Collections_ReverseComparatorWithComparator {
+    __TIB_DEFINITION_java_util_Collections_ReverseComparatorWithComparator* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_Collections_ReverseComparatorWithComparator;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_Collections_ReverseComparatorWithComparator
+#define XMLVM_FORWARD_DECL_java_util_Collections_ReverseComparatorWithComparator
+typedef struct java_util_Collections_ReverseComparatorWithComparator java_util_Collections_ReverseComparatorWithComparator;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_Collections_ReverseComparatorWithComparator 7
+#define XMLVM_VTABLE_IDX_java_util_Collections_ReverseComparatorWithComparator_compare___java_lang_Object_java_lang_Object 6
+#define XMLVM_VTABLE_IDX_java_util_Collections_ReverseComparatorWithComparator_equals___java_lang_Object 1
+#define XMLVM_VTABLE_IDX_java_util_Collections_ReverseComparatorWithComparator_hashCode__ 4
+
+void __INIT_java_util_Collections_ReverseComparatorWithComparator();
+void __INIT_IMPL_java_util_Collections_ReverseComparatorWithComparator();
+void __DELETE_java_util_Collections_ReverseComparatorWithComparator(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_Collections_ReverseComparatorWithComparator(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_Collections_ReverseComparatorWithComparator();
+JAVA_OBJECT __NEW_INSTANCE_java_util_Collections_ReverseComparatorWithComparator();
+JAVA_LONG java_util_Collections_ReverseComparatorWithComparator_GET_serialVersionUID();
+void java_util_Collections_ReverseComparatorWithComparator_PUT_serialVersionUID(JAVA_LONG v);
+void java_util_Collections_ReverseComparatorWithComparator___INIT____java_util_Comparator(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 6
+JAVA_INT java_util_Collections_ReverseComparatorWithComparator_compare___java_lang_Object_java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 1
+JAVA_BOOLEAN java_util_Collections_ReverseComparatorWithComparator_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 4
+JAVA_INT java_util_Collections_ReverseComparatorWithComparator_hashCode__(JAVA_OBJECT me);
+JAVA_OBJECT java_util_Collections_ReverseComparatorWithComparator_access$0___java_util_Collections_ReverseComparatorWithComparator(JAVA_OBJECT n1);
+
+#endif

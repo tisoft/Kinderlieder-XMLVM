@@ -1,0 +1,34 @@
+#ifndef __ORG_XML_SAX_ERRORHANDLER__
+#define __ORG_XML_SAX_ERRORHANDLER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_xml_sax_ErrorHandler_warning___org_xml_sax_SAXParseException 20
+#define XMLVM_ITABLE_IDX_org_xml_sax_ErrorHandler_error___org_xml_sax_SAXParseException 18
+#define XMLVM_ITABLE_IDX_org_xml_sax_ErrorHandler_fatalError___org_xml_sax_SAXParseException 19
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_SAXParseException
+#define XMLVM_FORWARD_DECL_org_xml_sax_SAXParseException
+XMLVM_FORWARD_DECL(org_xml_sax_SAXParseException)
+#endif
+
+XMLVM_DEFINE_CLASS(org_xml_sax_ErrorHandler, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_xml_sax_ErrorHandler;
+extern JAVA_OBJECT __CLASS_org_xml_sax_ErrorHandler_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_ErrorHandler_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_ErrorHandler_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_ErrorHandler
+#define XMLVM_FORWARD_DECL_org_xml_sax_ErrorHandler
+typedef struct org_xml_sax_ErrorHandler org_xml_sax_ErrorHandler;
+#endif
+
+void __INIT_org_xml_sax_ErrorHandler();
+void __INIT_IMPL_org_xml_sax_ErrorHandler();
+
+#endif

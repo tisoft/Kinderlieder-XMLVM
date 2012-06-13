@@ -1,0 +1,157 @@
+#ifndef __GNU_XML_DOM_JAXPFACTORY_JAXPBUILDER__
+#define __GNU_XML_DOM_JAXPFACTORY_JAXPBUILDER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_dom_JAXPFactory_JAXPBuilder 21
+// Implemented interfaces:
+#include "org_xml_sax_ErrorHandler.h"
+// Super Class:
+#include "javax_xml_parsers_DocumentBuilder.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_Consumer
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_Consumer
+XMLVM_FORWARD_DECL(gnu_xml_dom_Consumer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_DomDocument
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_DomDocument
+XMLVM_FORWARD_DECL(gnu_xml_dom_DomDocument)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_DomImpl
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_DomImpl
+XMLVM_FORWARD_DECL(gnu_xml_dom_DomImpl)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_JAXPFactory
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_JAXPFactory
+XMLVM_FORWARD_DECL(gnu_xml_dom_JAXPFactory)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_RuntimeException
+#define XMLVM_FORWARD_DECL_java_lang_RuntimeException
+XMLVM_FORWARD_DECL(java_lang_RuntimeException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_javax_xml_parsers_ParserConfigurationException
+#define XMLVM_FORWARD_DECL_javax_xml_parsers_ParserConfigurationException
+XMLVM_FORWARD_DECL(javax_xml_parsers_ParserConfigurationException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementation
+#define XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementation
+XMLVM_FORWARD_DECL(org_w3c_dom_DOMImplementation)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Document
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Document
+XMLVM_FORWARD_DECL(org_w3c_dom_Document)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_ContentHandler
+#define XMLVM_FORWARD_DECL_org_xml_sax_ContentHandler
+XMLVM_FORWARD_DECL(org_xml_sax_ContentHandler)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_DTDHandler
+#define XMLVM_FORWARD_DECL_org_xml_sax_DTDHandler
+XMLVM_FORWARD_DECL(org_xml_sax_DTDHandler)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_EntityResolver
+#define XMLVM_FORWARD_DECL_org_xml_sax_EntityResolver
+XMLVM_FORWARD_DECL(org_xml_sax_EntityResolver)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_InputSource
+#define XMLVM_FORWARD_DECL_org_xml_sax_InputSource
+XMLVM_FORWARD_DECL(org_xml_sax_InputSource)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_SAXException
+#define XMLVM_FORWARD_DECL_org_xml_sax_SAXException
+XMLVM_FORWARD_DECL(org_xml_sax_SAXException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_SAXParseException
+#define XMLVM_FORWARD_DECL_org_xml_sax_SAXParseException
+XMLVM_FORWARD_DECL(org_xml_sax_SAXParseException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_XMLReader
+#define XMLVM_FORWARD_DECL_org_xml_sax_XMLReader
+XMLVM_FORWARD_DECL(org_xml_sax_XMLReader)
+#endif
+// Class declarations for gnu.xml.dom.JAXPFactory$JAXPBuilder
+XMLVM_DEFINE_CLASS(gnu_xml_dom_JAXPFactory_JAXPBuilder, 20, XMLVM_ITABLE_SIZE_gnu_xml_dom_JAXPFactory_JAXPBuilder)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_JAXPFactory_JAXPBuilder;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_JAXPFactory_JAXPBuilder_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_JAXPFactory_JAXPBuilder_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_JAXPFactory_JAXPBuilder_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_JAXPFactory_JAXPBuilder
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_dom_JAXPFactory_JAXPBuilder \
+    __INSTANCE_FIELDS_javax_xml_parsers_DocumentBuilder; \
+    struct { \
+        JAVA_OBJECT consumer_; \
+        JAVA_OBJECT producer_; \
+        JAVA_OBJECT impl_; \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_JAXPFactory_JAXPBuilder \
+    } gnu_xml_dom_JAXPFactory_JAXPBuilder
+
+struct gnu_xml_dom_JAXPFactory_JAXPBuilder {
+    __TIB_DEFINITION_gnu_xml_dom_JAXPFactory_JAXPBuilder* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_dom_JAXPFactory_JAXPBuilder;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_JAXPFactory_JAXPBuilder
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_JAXPFactory_JAXPBuilder
+typedef struct gnu_xml_dom_JAXPFactory_JAXPBuilder gnu_xml_dom_JAXPFactory_JAXPBuilder;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_dom_JAXPFactory_JAXPBuilder 20
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_JAXPFactory_JAXPBuilder_parse___org_xml_sax_InputSource 14
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_JAXPFactory_JAXPBuilder_isNamespaceAware__ 7
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_JAXPFactory_JAXPBuilder_isValidating__ 8
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_JAXPFactory_JAXPBuilder_setEntityResolver___org_xml_sax_EntityResolver 15
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_JAXPFactory_JAXPBuilder_setErrorHandler___org_xml_sax_ErrorHandler 16
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_JAXPFactory_JAXPBuilder_getDOMImplementation__ 6
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_JAXPFactory_JAXPBuilder_newDocument__ 10
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_JAXPFactory_JAXPBuilder_fatalError___org_xml_sax_SAXParseException 18
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_JAXPFactory_JAXPBuilder_error___org_xml_sax_SAXParseException 17
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_JAXPFactory_JAXPBuilder_warning___org_xml_sax_SAXParseException 19
+
+void __INIT_gnu_xml_dom_JAXPFactory_JAXPBuilder();
+void __INIT_IMPL_gnu_xml_dom_JAXPFactory_JAXPBuilder();
+void __DELETE_gnu_xml_dom_JAXPFactory_JAXPBuilder(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_dom_JAXPFactory_JAXPBuilder(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_dom_JAXPFactory_JAXPBuilder();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_dom_JAXPFactory_JAXPBuilder();
+void gnu_xml_dom_JAXPFactory_JAXPBuilder___INIT____org_xml_sax_XMLReader_gnu_xml_dom_JAXPFactory(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 14
+JAVA_OBJECT gnu_xml_dom_JAXPFactory_JAXPBuilder_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 7
+JAVA_BOOLEAN gnu_xml_dom_JAXPFactory_JAXPBuilder_isNamespaceAware__(JAVA_OBJECT me);
+// Vtable index: 8
+JAVA_BOOLEAN gnu_xml_dom_JAXPFactory_JAXPBuilder_isValidating__(JAVA_OBJECT me);
+// Vtable index: 15
+void gnu_xml_dom_JAXPFactory_JAXPBuilder_setEntityResolver___org_xml_sax_EntityResolver(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 16
+void gnu_xml_dom_JAXPFactory_JAXPBuilder_setErrorHandler___org_xml_sax_ErrorHandler(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 6
+JAVA_OBJECT gnu_xml_dom_JAXPFactory_JAXPBuilder_getDOMImplementation__(JAVA_OBJECT me);
+// Vtable index: 10
+JAVA_OBJECT gnu_xml_dom_JAXPFactory_JAXPBuilder_newDocument__(JAVA_OBJECT me);
+// Vtable index: 18
+void gnu_xml_dom_JAXPFactory_JAXPBuilder_fatalError___org_xml_sax_SAXParseException(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 17
+void gnu_xml_dom_JAXPFactory_JAXPBuilder_error___org_xml_sax_SAXParseException(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 19
+void gnu_xml_dom_JAXPFactory_JAXPBuilder_warning___org_xml_sax_SAXParseException(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

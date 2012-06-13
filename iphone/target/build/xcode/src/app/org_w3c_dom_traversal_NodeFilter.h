@@ -1,0 +1,64 @@
+#ifndef __ORG_W3C_DOM_TRAVERSAL_NODEFILTER__
+#define __ORG_W3C_DOM_TRAVERSAL_NODEFILTER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_NodeFilter_acceptNode___org_w3c_dom_Node 7
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Node
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Node
+XMLVM_FORWARD_DECL(org_w3c_dom_Node)
+#endif
+
+XMLVM_DEFINE_CLASS(org_w3c_dom_traversal_NodeFilter, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_w3c_dom_traversal_NodeFilter;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_traversal_NodeFilter_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_traversal_NodeFilter_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_traversal_NodeFilter_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_traversal_NodeFilter
+#define XMLVM_FORWARD_DECL_org_w3c_dom_traversal_NodeFilter
+typedef struct org_w3c_dom_traversal_NodeFilter org_w3c_dom_traversal_NodeFilter;
+#endif
+
+void __INIT_org_w3c_dom_traversal_NodeFilter();
+void __INIT_IMPL_org_w3c_dom_traversal_NodeFilter();
+JAVA_SHORT org_w3c_dom_traversal_NodeFilter_GET_FILTER_ACCEPT();
+void org_w3c_dom_traversal_NodeFilter_PUT_FILTER_ACCEPT(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_traversal_NodeFilter_GET_FILTER_REJECT();
+void org_w3c_dom_traversal_NodeFilter_PUT_FILTER_REJECT(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_traversal_NodeFilter_GET_FILTER_SKIP();
+void org_w3c_dom_traversal_NodeFilter_PUT_FILTER_SKIP(JAVA_SHORT v);
+JAVA_INT org_w3c_dom_traversal_NodeFilter_GET_SHOW_ALL();
+void org_w3c_dom_traversal_NodeFilter_PUT_SHOW_ALL(JAVA_INT v);
+JAVA_INT org_w3c_dom_traversal_NodeFilter_GET_SHOW_ELEMENT();
+void org_w3c_dom_traversal_NodeFilter_PUT_SHOW_ELEMENT(JAVA_INT v);
+JAVA_INT org_w3c_dom_traversal_NodeFilter_GET_SHOW_ATTRIBUTE();
+void org_w3c_dom_traversal_NodeFilter_PUT_SHOW_ATTRIBUTE(JAVA_INT v);
+JAVA_INT org_w3c_dom_traversal_NodeFilter_GET_SHOW_TEXT();
+void org_w3c_dom_traversal_NodeFilter_PUT_SHOW_TEXT(JAVA_INT v);
+JAVA_INT org_w3c_dom_traversal_NodeFilter_GET_SHOW_CDATA_SECTION();
+void org_w3c_dom_traversal_NodeFilter_PUT_SHOW_CDATA_SECTION(JAVA_INT v);
+JAVA_INT org_w3c_dom_traversal_NodeFilter_GET_SHOW_ENTITY_REFERENCE();
+void org_w3c_dom_traversal_NodeFilter_PUT_SHOW_ENTITY_REFERENCE(JAVA_INT v);
+JAVA_INT org_w3c_dom_traversal_NodeFilter_GET_SHOW_ENTITY();
+void org_w3c_dom_traversal_NodeFilter_PUT_SHOW_ENTITY(JAVA_INT v);
+JAVA_INT org_w3c_dom_traversal_NodeFilter_GET_SHOW_PROCESSING_INSTRUCTION();
+void org_w3c_dom_traversal_NodeFilter_PUT_SHOW_PROCESSING_INSTRUCTION(JAVA_INT v);
+JAVA_INT org_w3c_dom_traversal_NodeFilter_GET_SHOW_COMMENT();
+void org_w3c_dom_traversal_NodeFilter_PUT_SHOW_COMMENT(JAVA_INT v);
+JAVA_INT org_w3c_dom_traversal_NodeFilter_GET_SHOW_DOCUMENT();
+void org_w3c_dom_traversal_NodeFilter_PUT_SHOW_DOCUMENT(JAVA_INT v);
+JAVA_INT org_w3c_dom_traversal_NodeFilter_GET_SHOW_DOCUMENT_TYPE();
+void org_w3c_dom_traversal_NodeFilter_PUT_SHOW_DOCUMENT_TYPE(JAVA_INT v);
+JAVA_INT org_w3c_dom_traversal_NodeFilter_GET_SHOW_DOCUMENT_FRAGMENT();
+void org_w3c_dom_traversal_NodeFilter_PUT_SHOW_DOCUMENT_FRAGMENT(JAVA_INT v);
+JAVA_INT org_w3c_dom_traversal_NodeFilter_GET_SHOW_NOTATION();
+void org_w3c_dom_traversal_NodeFilter_PUT_SHOW_NOTATION(JAVA_INT v);
+
+#endif

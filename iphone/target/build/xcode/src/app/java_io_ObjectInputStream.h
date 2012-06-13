@@ -1,0 +1,442 @@
+#ifndef __JAVA_IO_OBJECTINPUTSTREAM__
+#define __JAVA_IO_OBJECTINPUTSTREAM__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_io_ObjectInputStream 38
+// Implemented interfaces:
+#include "java_io_ObjectInput.h"
+#include "java_io_ObjectStreamConstants.h"
+// Super Class:
+#include "java_io_InputStream.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_io_ByteArrayInputStream
+#define XMLVM_FORWARD_DECL_java_io_ByteArrayInputStream
+XMLVM_FORWARD_DECL(java_io_ByteArrayInputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_DataInputStream
+#define XMLVM_FORWARD_DECL_java_io_DataInputStream
+XMLVM_FORWARD_DECL(java_io_DataInputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_EmulatedFields
+#define XMLVM_FORWARD_DECL_java_io_EmulatedFields
+XMLVM_FORWARD_DECL(java_io_EmulatedFields)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_EmulatedFields_ObjectSlot
+#define XMLVM_FORWARD_DECL_java_io_EmulatedFields_ObjectSlot
+XMLVM_FORWARD_DECL(java_io_EmulatedFields_ObjectSlot)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_EmulatedFieldsForLoading
+#define XMLVM_FORWARD_DECL_java_io_EmulatedFieldsForLoading
+XMLVM_FORWARD_DECL(java_io_EmulatedFieldsForLoading)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_Externalizable
+#define XMLVM_FORWARD_DECL_java_io_Externalizable
+XMLVM_FORWARD_DECL(java_io_Externalizable)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_IOException
+#define XMLVM_FORWARD_DECL_java_io_IOException
+XMLVM_FORWARD_DECL(java_io_IOException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_InvalidClassException
+#define XMLVM_FORWARD_DECL_java_io_InvalidClassException
+XMLVM_FORWARD_DECL(java_io_InvalidClassException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_InvalidObjectException
+#define XMLVM_FORWARD_DECL_java_io_InvalidObjectException
+XMLVM_FORWARD_DECL(java_io_InvalidObjectException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_NotActiveException
+#define XMLVM_FORWARD_DECL_java_io_NotActiveException
+XMLVM_FORWARD_DECL(java_io_NotActiveException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectInputStream_1
+#define XMLVM_FORWARD_DECL_java_io_ObjectInputStream_1
+XMLVM_FORWARD_DECL(java_io_ObjectInputStream_1)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectInputStream_2
+#define XMLVM_FORWARD_DECL_java_io_ObjectInputStream_2
+XMLVM_FORWARD_DECL(java_io_ObjectInputStream_2)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectInputStream_GetField
+#define XMLVM_FORWARD_DECL_java_io_ObjectInputStream_GetField
+XMLVM_FORWARD_DECL(java_io_ObjectInputStream_GetField)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectInputStream_InputValidationDesc
+#define XMLVM_FORWARD_DECL_java_io_ObjectInputStream_InputValidationDesc
+XMLVM_FORWARD_DECL(java_io_ObjectInputStream_InputValidationDesc)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectInputValidation
+#define XMLVM_FORWARD_DECL_java_io_ObjectInputValidation
+XMLVM_FORWARD_DECL(java_io_ObjectInputValidation)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectStreamClass
+#define XMLVM_FORWARD_DECL_java_io_ObjectStreamClass
+XMLVM_FORWARD_DECL(java_io_ObjectStreamClass)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectStreamException
+#define XMLVM_FORWARD_DECL_java_io_ObjectStreamException
+XMLVM_FORWARD_DECL(java_io_ObjectStreamException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectStreamField
+#define XMLVM_FORWARD_DECL_java_io_ObjectStreamField
+XMLVM_FORWARD_DECL(java_io_ObjectStreamField)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_OptionalDataException
+#define XMLVM_FORWARD_DECL_java_io_OptionalDataException
+XMLVM_FORWARD_DECL(java_io_OptionalDataException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_SerializablePermission
+#define XMLVM_FORWARD_DECL_java_io_SerializablePermission
+XMLVM_FORWARD_DECL(java_io_SerializablePermission)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_StreamCorruptedException
+#define XMLVM_FORWARD_DECL_java_io_StreamCorruptedException
+XMLVM_FORWARD_DECL(java_io_StreamCorruptedException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_WriteAbortedException
+#define XMLVM_FORWARD_DECL_java_io_WriteAbortedException
+XMLVM_FORWARD_DECL(java_io_WriteAbortedException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_ArrayIndexOutOfBoundsException
+#define XMLVM_FORWARD_DECL_java_lang_ArrayIndexOutOfBoundsException
+XMLVM_FORWARD_DECL(java_lang_ArrayIndexOutOfBoundsException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Boolean
+#define XMLVM_FORWARD_DECL_java_lang_Boolean
+XMLVM_FORWARD_DECL(java_lang_Boolean)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Byte
+#define XMLVM_FORWARD_DECL_java_lang_Byte
+XMLVM_FORWARD_DECL(java_lang_Byte)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Character
+#define XMLVM_FORWARD_DECL_java_lang_Character
+XMLVM_FORWARD_DECL(java_lang_Character)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_ClassCastException
+#define XMLVM_FORWARD_DECL_java_lang_ClassCastException
+XMLVM_FORWARD_DECL(java_lang_ClassCastException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_ClassLoader
+#define XMLVM_FORWARD_DECL_java_lang_ClassLoader
+XMLVM_FORWARD_DECL(java_lang_ClassLoader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_ClassNotFoundException
+#define XMLVM_FORWARD_DECL_java_lang_ClassNotFoundException
+XMLVM_FORWARD_DECL(java_lang_ClassNotFoundException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Double
+#define XMLVM_FORWARD_DECL_java_lang_Double
+XMLVM_FORWARD_DECL(java_lang_Double)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Enum
+#define XMLVM_FORWARD_DECL_java_lang_Enum
+XMLVM_FORWARD_DECL(java_lang_Enum)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Error
+#define XMLVM_FORWARD_DECL_java_lang_Error
+XMLVM_FORWARD_DECL(java_lang_Error)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Exception
+#define XMLVM_FORWARD_DECL_java_lang_Exception
+XMLVM_FORWARD_DECL(java_lang_Exception)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Float
+#define XMLVM_FORWARD_DECL_java_lang_Float
+XMLVM_FORWARD_DECL(java_lang_Float)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalAccessException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalAccessException
+XMLVM_FORWARD_DECL(java_lang_IllegalAccessException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+XMLVM_FORWARD_DECL(java_lang_IllegalArgumentException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Integer
+#define XMLVM_FORWARD_DECL_java_lang_Integer
+XMLVM_FORWARD_DECL(java_lang_Integer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Long
+#define XMLVM_FORWARD_DECL_java_lang_Long
+XMLVM_FORWARD_DECL(java_lang_Long)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NoSuchFieldError
+#define XMLVM_FORWARD_DECL_java_lang_NoSuchFieldError
+XMLVM_FORWARD_DECL(java_lang_NoSuchFieldError)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NoSuchMethodException
+#define XMLVM_FORWARD_DECL_java_lang_NoSuchMethodException
+XMLVM_FORWARD_DECL(java_lang_NoSuchMethodException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NullPointerException
+#define XMLVM_FORWARD_DECL_java_lang_NullPointerException
+XMLVM_FORWARD_DECL(java_lang_NullPointerException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_RuntimeException
+#define XMLVM_FORWARD_DECL_java_lang_RuntimeException
+XMLVM_FORWARD_DECL(java_lang_RuntimeException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_SecurityManager
+#define XMLVM_FORWARD_DECL_java_lang_SecurityManager
+XMLVM_FORWARD_DECL(java_lang_SecurityManager)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Short
+#define XMLVM_FORWARD_DECL_java_lang_Short
+XMLVM_FORWARD_DECL(java_lang_Short)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_System
+#define XMLVM_FORWARD_DECL_java_lang_System
+XMLVM_FORWARD_DECL(java_lang_System)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Throwable
+#define XMLVM_FORWARD_DECL_java_lang_Throwable
+XMLVM_FORWARD_DECL(java_lang_Throwable)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Void
+#define XMLVM_FORWARD_DECL_java_lang_Void
+XMLVM_FORWARD_DECL(java_lang_Void)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Array
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Array
+XMLVM_FORWARD_DECL(java_lang_reflect_Array)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Constructor
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Constructor
+XMLVM_FORWARD_DECL(java_lang_reflect_Constructor)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_InvocationTargetException
+#define XMLVM_FORWARD_DECL_java_lang_reflect_InvocationTargetException
+XMLVM_FORWARD_DECL(java_lang_reflect_InvocationTargetException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Method
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Method
+XMLVM_FORWARD_DECL(java_lang_reflect_Method)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Modifier
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Modifier
+XMLVM_FORWARD_DECL(java_lang_reflect_Modifier)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Proxy
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Proxy
+XMLVM_FORWARD_DECL(java_lang_reflect_Proxy)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_security_AccessController
+#define XMLVM_FORWARD_DECL_java_security_AccessController
+XMLVM_FORWARD_DECL(java_security_AccessController)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ArrayList
+#define XMLVM_FORWARD_DECL_java_util_ArrayList
+XMLVM_FORWARD_DECL(java_util_ArrayList)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_HashMap
+#define XMLVM_FORWARD_DECL_java_util_HashMap
+XMLVM_FORWARD_DECL(java_util_HashMap)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Iterator
+#define XMLVM_FORWARD_DECL_java_util_Iterator
+XMLVM_FORWARD_DECL(java_util_Iterator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_internal_nls_Messages
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_internal_nls_Messages
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_internal_nls_Messages)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_PriviAction
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_util_PriviAction
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_util_PriviAction)
+#endif
+// Class declarations for java.io.ObjectInputStream
+XMLVM_DEFINE_CLASS(java_io_ObjectInputStream, 31, XMLVM_ITABLE_SIZE_java_io_ObjectInputStream)
+
+extern JAVA_OBJECT __CLASS_java_io_ObjectInputStream;
+extern JAVA_OBJECT __CLASS_java_io_ObjectInputStream_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_io_ObjectInputStream_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_io_ObjectInputStream_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_io_ObjectInputStream
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_io_ObjectInputStream \
+    __INSTANCE_FIELDS_java_io_InputStream; \
+    struct { \
+        JAVA_OBJECT emptyStream_; \
+        JAVA_BOOLEAN hasPushbackTC_; \
+        JAVA_BYTE pushbackTC_; \
+        JAVA_INT nestedLevels_; \
+        JAVA_INT currentHandle_; \
+        JAVA_OBJECT input_; \
+        JAVA_OBJECT primitiveTypes_; \
+        JAVA_OBJECT primitiveData_; \
+        JAVA_BOOLEAN enableResolve_; \
+        JAVA_OBJECT objectsRead_; \
+        JAVA_OBJECT currentObject_; \
+        JAVA_OBJECT currentClass_; \
+        JAVA_OBJECT validations_; \
+        JAVA_BOOLEAN subclassOverridingImplementation_; \
+        JAVA_OBJECT callerClassLoader_; \
+        JAVA_BOOLEAN mustResolve_; \
+        JAVA_OBJECT descriptorHandle_; \
+        JAVA_OBJECT accessor_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_io_ObjectInputStream \
+    } java_io_ObjectInputStream
+
+struct java_io_ObjectInputStream {
+    __TIB_DEFINITION_java_io_ObjectInputStream* tib;
+    struct {
+        __INSTANCE_FIELDS_java_io_ObjectInputStream;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectInputStream
+#define XMLVM_FORWARD_DECL_java_io_ObjectInputStream
+typedef struct java_io_ObjectInputStream java_io_ObjectInputStream;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_io_ObjectInputStream 31
+#define XMLVM_VTABLE_IDX_java_io_ObjectInputStream_available__ 6
+#define XMLVM_VTABLE_IDX_java_io_ObjectInputStream_close__ 7
+#define XMLVM_VTABLE_IDX_java_io_ObjectInputStream_read__ 10
+#define XMLVM_VTABLE_IDX_java_io_ObjectInputStream_read___byte_1ARRAY_int_int 12
+#define XMLVM_VTABLE_IDX_java_io_ObjectInputStream_readBoolean__ 15
+#define XMLVM_VTABLE_IDX_java_io_ObjectInputStream_readByte__ 16
+#define XMLVM_VTABLE_IDX_java_io_ObjectInputStream_readChar__ 17
+#define XMLVM_VTABLE_IDX_java_io_ObjectInputStream_readDouble__ 18
+#define XMLVM_VTABLE_IDX_java_io_ObjectInputStream_readFloat__ 19
+#define XMLVM_VTABLE_IDX_java_io_ObjectInputStream_readFully___byte_1ARRAY 20
+#define XMLVM_VTABLE_IDX_java_io_ObjectInputStream_readFully___byte_1ARRAY_int_int 21
+#define XMLVM_VTABLE_IDX_java_io_ObjectInputStream_readInt__ 22
+#define XMLVM_VTABLE_IDX_java_io_ObjectInputStream_readLine__ 23
+#define XMLVM_VTABLE_IDX_java_io_ObjectInputStream_readLong__ 24
+#define XMLVM_VTABLE_IDX_java_io_ObjectInputStream_readObject__ 25
+#define XMLVM_VTABLE_IDX_java_io_ObjectInputStream_readShort__ 26
+#define XMLVM_VTABLE_IDX_java_io_ObjectInputStream_readUnsignedByte__ 28
+#define XMLVM_VTABLE_IDX_java_io_ObjectInputStream_readUnsignedShort__ 29
+#define XMLVM_VTABLE_IDX_java_io_ObjectInputStream_readUTF__ 27
+#define XMLVM_VTABLE_IDX_java_io_ObjectInputStream_skipBytes___int 30
+
+void __INIT_java_io_ObjectInputStream();
+void __INIT_IMPL_java_io_ObjectInputStream();
+void __DELETE_java_io_ObjectInputStream(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_io_ObjectInputStream(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_io_ObjectInputStream();
+JAVA_OBJECT __NEW_INSTANCE_java_io_ObjectInputStream();
+JAVA_OBJECT java_io_ObjectInputStream_GET_UNSHARED_OBJ();
+void java_io_ObjectInputStream_PUT_UNSHARED_OBJ(JAVA_OBJECT v);
+JAVA_OBJECT java_io_ObjectInputStream_GET_PRIMITIVE_CLASSES();
+void java_io_ObjectInputStream_PUT_PRIMITIVE_CLASSES(JAVA_OBJECT v);
+void java_io_ObjectInputStream___CLINIT_();
+void java_io_ObjectInputStream___INIT___(JAVA_OBJECT me);
+void java_io_ObjectInputStream___INIT____java_io_InputStream(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 6
+JAVA_INT java_io_ObjectInputStream_available__(JAVA_OBJECT me);
+void java_io_ObjectInputStream_checkReadPrimitiveTypes__(JAVA_OBJECT me);
+// Vtable index: 7
+void java_io_ObjectInputStream_close__(JAVA_OBJECT me);
+void java_io_ObjectInputStream_defaultReadObject__(JAVA_OBJECT me);
+JAVA_BOOLEAN java_io_ObjectInputStream_enableResolveObject___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+JAVA_BOOLEAN java_io_ObjectInputStream_inSamePackage___java_lang_Class_java_lang_Class(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT java_io_ObjectInputStream_nextHandle__(JAVA_OBJECT me);
+JAVA_BYTE java_io_ObjectInputStream_nextTC__(JAVA_OBJECT me);
+void java_io_ObjectInputStream_pushbackTC__(JAVA_OBJECT me);
+// Vtable index: 10
+JAVA_INT java_io_ObjectInputStream_read__(JAVA_OBJECT me);
+// Vtable index: 12
+JAVA_INT java_io_ObjectInputStream_read___byte_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+JAVA_OBJECT java_io_ObjectInputStream_readBlockData__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectInputStream_readBlockDataLong__(JAVA_OBJECT me);
+// Vtable index: 15
+JAVA_BOOLEAN java_io_ObjectInputStream_readBoolean__(JAVA_OBJECT me);
+// Vtable index: 16
+JAVA_BYTE java_io_ObjectInputStream_readByte__(JAVA_OBJECT me);
+// Vtable index: 17
+JAVA_CHAR java_io_ObjectInputStream_readChar__(JAVA_OBJECT me);
+void java_io_ObjectInputStream_discardData__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectInputStream_readClassDesc__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectInputStream_readContent___byte(JAVA_OBJECT me, JAVA_BYTE n1);
+JAVA_OBJECT java_io_ObjectInputStream_readNonPrimitiveContent___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+JAVA_OBJECT java_io_ObjectInputStream_readCyclicReference__(JAVA_OBJECT me);
+// Vtable index: 18
+JAVA_DOUBLE java_io_ObjectInputStream_readDouble__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectInputStream_readException__(JAVA_OBJECT me);
+void java_io_ObjectInputStream_readFieldDescriptors___java_io_ObjectStreamClass(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT java_io_ObjectInputStream_formatClassSig___java_lang_String(JAVA_OBJECT n1);
+JAVA_OBJECT java_io_ObjectInputStream_readFields__(JAVA_OBJECT me);
+void java_io_ObjectInputStream_readFieldValues___java_io_EmulatedFieldsForLoading(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_io_ObjectInputStream_readFieldValues___java_lang_Object_java_io_ObjectStreamClass(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT java_io_ObjectInputStream_getFieldClass___java_lang_Object_java_lang_String(JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 19
+JAVA_FLOAT java_io_ObjectInputStream_readFloat__(JAVA_OBJECT me);
+// Vtable index: 20
+void java_io_ObjectInputStream_readFully___byte_1ARRAY(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 21
+void java_io_ObjectInputStream_readFully___byte_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+void java_io_ObjectInputStream_readHierarchy___java_lang_Object_java_io_ObjectStreamClass(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_INT java_io_ObjectInputStream_findStreamSuperclass___java_lang_Class_java_util_ArrayList_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_INT n3);
+void java_io_ObjectInputStream_readObjectNoData___java_lang_Object_java_lang_Class_java_io_ObjectStreamClass(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+void java_io_ObjectInputStream_readObjectForClass___java_lang_Object_java_io_ObjectStreamClass(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 22
+JAVA_INT java_io_ObjectInputStream_readInt__(JAVA_OBJECT me);
+// Vtable index: 23
+JAVA_OBJECT java_io_ObjectInputStream_readLine__(JAVA_OBJECT me);
+// Vtable index: 24
+JAVA_LONG java_io_ObjectInputStream_readLong__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectInputStream_readNewArray___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+JAVA_OBJECT java_io_ObjectInputStream_readNewClass___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+JAVA_OBJECT java_io_ObjectInputStream_readEnumDesc__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectInputStream_readEnumDescInternal__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectInputStream_readEnum___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+JAVA_OBJECT java_io_ObjectInputStream_readNewClassDesc___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+JAVA_OBJECT java_io_ObjectInputStream_readNewProxyClassDesc__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectInputStream_readClassDescriptor__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectInputStream_resolveProxyClass___java_lang_String_1ARRAY(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_INT java_io_ObjectInputStream_readNewHandle__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectInputStream_resolveConstructorClass___java_lang_Class_boolean_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_BOOLEAN n2, JAVA_BOOLEAN n3);
+JAVA_OBJECT java_io_ObjectInputStream_readNewObject___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+JAVA_OBJECT java_io_ObjectInputStream_readNewString___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+JAVA_OBJECT java_io_ObjectInputStream_readNewLongString___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+// Vtable index: 25
+JAVA_OBJECT java_io_ObjectInputStream_readObject__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectInputStream_readUnshared__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectInputStream_readObject___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+JAVA_OBJECT java_io_ObjectInputStream_readObjectOverride__(JAVA_OBJECT me);
+// Vtable index: 26
+JAVA_SHORT java_io_ObjectInputStream_readShort__(JAVA_OBJECT me);
+void java_io_ObjectInputStream_readStreamHeader__(JAVA_OBJECT me);
+// Vtable index: 28
+JAVA_INT java_io_ObjectInputStream_readUnsignedByte__(JAVA_OBJECT me);
+// Vtable index: 29
+JAVA_INT java_io_ObjectInputStream_readUnsignedShort__(JAVA_OBJECT me);
+// Vtable index: 27
+JAVA_OBJECT java_io_ObjectInputStream_readUTF__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectInputStream_registeredObjectRead___java_lang_Integer(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_io_ObjectInputStream_registerObjectRead___java_lang_Object_java_lang_Integer_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_BOOLEAN n3);
+void java_io_ObjectInputStream_registerValidation___java_io_ObjectInputValidation_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2);
+void java_io_ObjectInputStream_resetSeenObjects__(JAVA_OBJECT me);
+void java_io_ObjectInputStream_resetState__(JAVA_OBJECT me);
+JAVA_OBJECT java_io_ObjectInputStream_resolveClass___java_io_ObjectStreamClass(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT java_io_ObjectInputStream_resolveObject___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 30
+JAVA_INT java_io_ObjectInputStream_skipBytes___int(JAVA_OBJECT me, JAVA_INT n1);
+void java_io_ObjectInputStream_verifyAndInit___java_io_ObjectStreamClass(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT java_io_ObjectInputStream_getBaseName___java_lang_String(JAVA_OBJECT n1);
+void java_io_ObjectInputStream_checkedSetSuperClassDesc___java_io_ObjectStreamClass_java_io_ObjectStreamClass(JAVA_OBJECT n1, JAVA_OBJECT n2);
+
+#endif

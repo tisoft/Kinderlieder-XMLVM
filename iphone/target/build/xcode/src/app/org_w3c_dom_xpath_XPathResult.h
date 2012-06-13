@@ -1,0 +1,64 @@
+#ifndef __ORG_W3C_DOM_XPATH_XPATHRESULT__
+#define __ORG_W3C_DOM_XPATH_XPATHRESULT__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_w3c_dom_xpath_XPathResult_getResultType__ 3
+#define XMLVM_ITABLE_IDX_org_w3c_dom_xpath_XPathResult_getNumberValue__ 2
+#define XMLVM_ITABLE_IDX_org_w3c_dom_xpath_XPathResult_getStringValue__ 6
+#define XMLVM_ITABLE_IDX_org_w3c_dom_xpath_XPathResult_getBooleanValue__ 0
+#define XMLVM_ITABLE_IDX_org_w3c_dom_xpath_XPathResult_getSingleNodeValue__ 4
+#define XMLVM_ITABLE_IDX_org_w3c_dom_xpath_XPathResult_getInvalidIteratorState__ 1
+#define XMLVM_ITABLE_IDX_org_w3c_dom_xpath_XPathResult_getSnapshotLength__ 5
+#define XMLVM_ITABLE_IDX_org_w3c_dom_xpath_XPathResult_iterateNext__ 7
+#define XMLVM_ITABLE_IDX_org_w3c_dom_xpath_XPathResult_snapshotItem___int 8
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Node
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Node
+XMLVM_FORWARD_DECL(org_w3c_dom_Node)
+#endif
+
+XMLVM_DEFINE_CLASS(org_w3c_dom_xpath_XPathResult, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_w3c_dom_xpath_XPathResult;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_xpath_XPathResult_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_xpath_XPathResult_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_xpath_XPathResult_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_xpath_XPathResult
+#define XMLVM_FORWARD_DECL_org_w3c_dom_xpath_XPathResult
+typedef struct org_w3c_dom_xpath_XPathResult org_w3c_dom_xpath_XPathResult;
+#endif
+
+void __INIT_org_w3c_dom_xpath_XPathResult();
+void __INIT_IMPL_org_w3c_dom_xpath_XPathResult();
+JAVA_SHORT org_w3c_dom_xpath_XPathResult_GET_ANY_TYPE();
+void org_w3c_dom_xpath_XPathResult_PUT_ANY_TYPE(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_xpath_XPathResult_GET_NUMBER_TYPE();
+void org_w3c_dom_xpath_XPathResult_PUT_NUMBER_TYPE(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_xpath_XPathResult_GET_STRING_TYPE();
+void org_w3c_dom_xpath_XPathResult_PUT_STRING_TYPE(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_xpath_XPathResult_GET_BOOLEAN_TYPE();
+void org_w3c_dom_xpath_XPathResult_PUT_BOOLEAN_TYPE(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_xpath_XPathResult_GET_UNORDERED_NODE_ITERATOR_TYPE();
+void org_w3c_dom_xpath_XPathResult_PUT_UNORDERED_NODE_ITERATOR_TYPE(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_xpath_XPathResult_GET_ORDERED_NODE_ITERATOR_TYPE();
+void org_w3c_dom_xpath_XPathResult_PUT_ORDERED_NODE_ITERATOR_TYPE(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_xpath_XPathResult_GET_UNORDERED_NODE_SNAPSHOT_TYPE();
+void org_w3c_dom_xpath_XPathResult_PUT_UNORDERED_NODE_SNAPSHOT_TYPE(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_xpath_XPathResult_GET_ORDERED_NODE_SNAPSHOT_TYPE();
+void org_w3c_dom_xpath_XPathResult_PUT_ORDERED_NODE_SNAPSHOT_TYPE(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_xpath_XPathResult_GET_ANY_UNORDERED_NODE_TYPE();
+void org_w3c_dom_xpath_XPathResult_PUT_ANY_UNORDERED_NODE_TYPE(JAVA_SHORT v);
+JAVA_SHORT org_w3c_dom_xpath_XPathResult_GET_FIRST_ORDERED_NODE_TYPE();
+void org_w3c_dom_xpath_XPathResult_PUT_FIRST_ORDERED_NODE_TYPE(JAVA_SHORT v);
+
+#endif

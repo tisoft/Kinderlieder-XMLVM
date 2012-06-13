@@ -1,0 +1,152 @@
+#ifndef __GNU_XML_PIPELINE_WELLFORMEDNESSFILTER__
+#define __GNU_XML_PIPELINE_WELLFORMEDNESSFILTER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_pipeline_WellFormednessFilter 33
+// Implemented interfaces:
+// Super Class:
+#include "gnu_xml_pipeline_EventFilter.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_pipeline_EventConsumer
+#define XMLVM_FORWARD_DECL_gnu_xml_pipeline_EventConsumer
+XMLVM_FORWARD_DECL(gnu_xml_pipeline_EventConsumer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+XMLVM_FORWARD_DECL(java_lang_IllegalStateException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_EmptyStackException
+#define XMLVM_FORWARD_DECL_java_util_EmptyStackException
+XMLVM_FORWARD_DECL(java_util_EmptyStackException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Stack
+#define XMLVM_FORWARD_DECL_java_util_Stack
+XMLVM_FORWARD_DECL(java_util_Stack)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_Attributes
+#define XMLVM_FORWARD_DECL_org_xml_sax_Attributes
+XMLVM_FORWARD_DECL(org_xml_sax_Attributes)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_ErrorHandler
+#define XMLVM_FORWARD_DECL_org_xml_sax_ErrorHandler
+XMLVM_FORWARD_DECL(org_xml_sax_ErrorHandler)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_Locator
+#define XMLVM_FORWARD_DECL_org_xml_sax_Locator
+XMLVM_FORWARD_DECL(org_xml_sax_Locator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_SAXException
+#define XMLVM_FORWARD_DECL_org_xml_sax_SAXException
+XMLVM_FORWARD_DECL(org_xml_sax_SAXException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_SAXParseException
+#define XMLVM_FORWARD_DECL_org_xml_sax_SAXParseException
+XMLVM_FORWARD_DECL(org_xml_sax_SAXParseException)
+#endif
+// Class declarations for gnu.xml.pipeline.WellFormednessFilter
+XMLVM_DEFINE_CLASS(gnu_xml_pipeline_WellFormednessFilter, 34, XMLVM_ITABLE_SIZE_gnu_xml_pipeline_WellFormednessFilter)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_WellFormednessFilter;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_WellFormednessFilter_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_WellFormednessFilter_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_WellFormednessFilter_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_pipeline_WellFormednessFilter
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_pipeline_WellFormednessFilter \
+    __INSTANCE_FIELDS_gnu_xml_pipeline_EventFilter; \
+    struct { \
+        JAVA_BOOLEAN startedDoc_; \
+        JAVA_OBJECT elementStack_; \
+        JAVA_BOOLEAN startedCDATA_; \
+        JAVA_OBJECT dtdState_; \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_pipeline_WellFormednessFilter \
+    } gnu_xml_pipeline_WellFormednessFilter
+
+struct gnu_xml_pipeline_WellFormednessFilter {
+    __TIB_DEFINITION_gnu_xml_pipeline_WellFormednessFilter* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_pipeline_WellFormednessFilter;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_pipeline_WellFormednessFilter
+#define XMLVM_FORWARD_DECL_gnu_xml_pipeline_WellFormednessFilter
+typedef struct gnu_xml_pipeline_WellFormednessFilter gnu_xml_pipeline_WellFormednessFilter;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_pipeline_WellFormednessFilter 34
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_WellFormednessFilter_setDocumentLocator___org_xml_sax_Locator 24
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_WellFormednessFilter_startDocument__ 29
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_WellFormednessFilter_startElement___java_lang_String_java_lang_String_java_lang_String_org_xml_sax_Attributes 30
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_WellFormednessFilter_endElement___java_lang_String_java_lang_String_java_lang_String 13
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_WellFormednessFilter_endDocument__ 12
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_WellFormednessFilter_startDTD___java_lang_String_java_lang_String_java_lang_String 28
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_WellFormednessFilter_notationDecl___java_lang_String_java_lang_String_java_lang_String 22
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_WellFormednessFilter_unparsedEntityDecl___java_lang_String_java_lang_String_java_lang_String_java_lang_String 33
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_WellFormednessFilter_endDTD__ 11
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_WellFormednessFilter_characters___char_1ARRAY_int_int 7
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_WellFormednessFilter_ignorableWhitespace___char_1ARRAY_int_int 20
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_WellFormednessFilter_processingInstruction___java_lang_String_java_lang_String 23
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_WellFormednessFilter_comment___char_1ARRAY_int_int 8
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_WellFormednessFilter_startCDATA__ 27
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_WellFormednessFilter_endCDATA__ 10
+
+void __INIT_gnu_xml_pipeline_WellFormednessFilter();
+void __INIT_IMPL_gnu_xml_pipeline_WellFormednessFilter();
+void __DELETE_gnu_xml_pipeline_WellFormednessFilter(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_pipeline_WellFormednessFilter(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_pipeline_WellFormednessFilter();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_pipeline_WellFormednessFilter();
+void gnu_xml_pipeline_WellFormednessFilter___INIT___(JAVA_OBJECT me);
+void gnu_xml_pipeline_WellFormednessFilter___INIT____gnu_xml_pipeline_EventConsumer(JAVA_OBJECT me, JAVA_OBJECT n1);
+void gnu_xml_pipeline_WellFormednessFilter_reset__(JAVA_OBJECT me);
+JAVA_OBJECT gnu_xml_pipeline_WellFormednessFilter_getException___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+void gnu_xml_pipeline_WellFormednessFilter_fatalError___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 24
+void gnu_xml_pipeline_WellFormednessFilter_setDocumentLocator___org_xml_sax_Locator(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 29
+void gnu_xml_pipeline_WellFormednessFilter_startDocument__(JAVA_OBJECT me);
+// Vtable index: 30
+void gnu_xml_pipeline_WellFormednessFilter_startElement___java_lang_String_java_lang_String_java_lang_String_org_xml_sax_Attributes(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3, JAVA_OBJECT n4);
+// Vtable index: 13
+void gnu_xml_pipeline_WellFormednessFilter_endElement___java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 12
+void gnu_xml_pipeline_WellFormednessFilter_endDocument__(JAVA_OBJECT me);
+// Vtable index: 28
+void gnu_xml_pipeline_WellFormednessFilter_startDTD___java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 22
+void gnu_xml_pipeline_WellFormednessFilter_notationDecl___java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 33
+void gnu_xml_pipeline_WellFormednessFilter_unparsedEntityDecl___java_lang_String_java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3, JAVA_OBJECT n4);
+// Vtable index: 11
+void gnu_xml_pipeline_WellFormednessFilter_endDTD__(JAVA_OBJECT me);
+// Vtable index: 7
+void gnu_xml_pipeline_WellFormednessFilter_characters___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+// Vtable index: 20
+void gnu_xml_pipeline_WellFormednessFilter_ignorableWhitespace___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+// Vtable index: 23
+void gnu_xml_pipeline_WellFormednessFilter_processingInstruction___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 8
+void gnu_xml_pipeline_WellFormednessFilter_comment___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+// Vtable index: 27
+void gnu_xml_pipeline_WellFormednessFilter_startCDATA__(JAVA_OBJECT me);
+// Vtable index: 10
+void gnu_xml_pipeline_WellFormednessFilter_endCDATA__(JAVA_OBJECT me);
+
+#endif

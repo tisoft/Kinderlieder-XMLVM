@@ -1,0 +1,277 @@
+#ifndef __GNU_XML_PIPELINE_EVENTFILTER__
+#define __GNU_XML_PIPELINE_EVENTFILTER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_pipeline_EventFilter 33
+// Implemented interfaces:
+#include "gnu_xml_pipeline_EventConsumer.h"
+#include "org_xml_sax_ContentHandler.h"
+#include "org_xml_sax_DTDHandler.h"
+#include "org_xml_sax_ext_DeclHandler.h"
+#include "org_xml_sax_ext_LexicalHandler.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_pipeline_ValidationConsumer
+#define XMLVM_FORWARD_DECL_gnu_xml_pipeline_ValidationConsumer
+XMLVM_FORWARD_DECL(gnu_xml_pipeline_ValidationConsumer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_pipeline_WellFormednessFilter
+#define XMLVM_FORWARD_DECL_gnu_xml_pipeline_WellFormednessFilter
+XMLVM_FORWARD_DECL(gnu_xml_pipeline_WellFormednessFilter)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_pipeline_XIncludeFilter
+#define XMLVM_FORWARD_DECL_gnu_xml_pipeline_XIncludeFilter
+XMLVM_FORWARD_DECL(gnu_xml_pipeline_XIncludeFilter)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_ClassCastException
+#define XMLVM_FORWARD_DECL_java_lang_ClassCastException
+XMLVM_FORWARD_DECL(java_lang_ClassCastException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_ClassLoader
+#define XMLVM_FORWARD_DECL_java_lang_ClassLoader
+XMLVM_FORWARD_DECL(java_lang_ClassLoader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Exception
+#define XMLVM_FORWARD_DECL_java_lang_Exception
+XMLVM_FORWARD_DECL(java_lang_Exception)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalAccessException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalAccessException
+XMLVM_FORWARD_DECL(java_lang_IllegalAccessException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+XMLVM_FORWARD_DECL(java_lang_IllegalStateException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NoSuchMethodException
+#define XMLVM_FORWARD_DECL_java_lang_NoSuchMethodException
+XMLVM_FORWARD_DECL(java_lang_NoSuchMethodException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Thread
+#define XMLVM_FORWARD_DECL_java_lang_Thread
+XMLVM_FORWARD_DECL(java_lang_Thread)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_UnknownError
+#define XMLVM_FORWARD_DECL_java_lang_UnknownError
+XMLVM_FORWARD_DECL(java_lang_UnknownError)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_InvocationTargetException
+#define XMLVM_FORWARD_DECL_java_lang_reflect_InvocationTargetException
+XMLVM_FORWARD_DECL(java_lang_reflect_InvocationTargetException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Method
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Method
+XMLVM_FORWARD_DECL(java_lang_reflect_Method)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_Attributes
+#define XMLVM_FORWARD_DECL_org_xml_sax_Attributes
+XMLVM_FORWARD_DECL(org_xml_sax_Attributes)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_ErrorHandler
+#define XMLVM_FORWARD_DECL_org_xml_sax_ErrorHandler
+XMLVM_FORWARD_DECL(org_xml_sax_ErrorHandler)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_Locator
+#define XMLVM_FORWARD_DECL_org_xml_sax_Locator
+XMLVM_FORWARD_DECL(org_xml_sax_Locator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_SAXException
+#define XMLVM_FORWARD_DECL_org_xml_sax_SAXException
+XMLVM_FORWARD_DECL(org_xml_sax_SAXException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_SAXNotRecognizedException
+#define XMLVM_FORWARD_DECL_org_xml_sax_SAXNotRecognizedException
+XMLVM_FORWARD_DECL(org_xml_sax_SAXNotRecognizedException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_SAXNotSupportedException
+#define XMLVM_FORWARD_DECL_org_xml_sax_SAXNotSupportedException
+XMLVM_FORWARD_DECL(org_xml_sax_SAXNotSupportedException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_XMLReader
+#define XMLVM_FORWARD_DECL_org_xml_sax_XMLReader
+XMLVM_FORWARD_DECL(org_xml_sax_XMLReader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_ext_DefaultHandler2
+#define XMLVM_FORWARD_DECL_org_xml_sax_ext_DefaultHandler2
+XMLVM_FORWARD_DECL(org_xml_sax_ext_DefaultHandler2)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_helpers_XMLFilterImpl
+#define XMLVM_FORWARD_DECL_org_xml_sax_helpers_XMLFilterImpl
+XMLVM_FORWARD_DECL(org_xml_sax_helpers_XMLFilterImpl)
+#endif
+// Class declarations for gnu.xml.pipeline.EventFilter
+XMLVM_DEFINE_CLASS(gnu_xml_pipeline_EventFilter, 34, XMLVM_ITABLE_SIZE_gnu_xml_pipeline_EventFilter)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_EventFilter;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_EventFilter_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_EventFilter_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_EventFilter_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_pipeline_EventFilter
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_pipeline_EventFilter \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT docHandler_; \
+        JAVA_OBJECT docNext_; \
+        JAVA_OBJECT dtdHandler_; \
+        JAVA_OBJECT dtdNext_; \
+        JAVA_OBJECT lexHandler_; \
+        JAVA_OBJECT lexNext_; \
+        JAVA_OBJECT declHandler_; \
+        JAVA_OBJECT declNext_; \
+        JAVA_OBJECT locator_; \
+        JAVA_OBJECT next_; \
+        JAVA_OBJECT errHandler_; \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_pipeline_EventFilter \
+    } gnu_xml_pipeline_EventFilter
+
+struct gnu_xml_pipeline_EventFilter {
+    __TIB_DEFINITION_gnu_xml_pipeline_EventFilter* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_pipeline_EventFilter;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_pipeline_EventFilter
+#define XMLVM_FORWARD_DECL_gnu_xml_pipeline_EventFilter
+typedef struct gnu_xml_pipeline_EventFilter gnu_xml_pipeline_EventFilter;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_pipeline_EventFilter 34
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_setErrorHandler___org_xml_sax_ErrorHandler 25
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_getContentHandler__ 17
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_getDTDHandler__ 18
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_getProperty___java_lang_String 19
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_setDocumentLocator___org_xml_sax_Locator 24
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_startDocument__ 29
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_skippedEntity___java_lang_String 26
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_processingInstruction___java_lang_String_java_lang_String 23
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_characters___char_1ARRAY_int_int 7
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_ignorableWhitespace___char_1ARRAY_int_int 20
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_startPrefixMapping___java_lang_String_java_lang_String 32
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_startElement___java_lang_String_java_lang_String_java_lang_String_org_xml_sax_Attributes 30
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_endElement___java_lang_String_java_lang_String_java_lang_String 13
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_endPrefixMapping___java_lang_String 15
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_endDocument__ 12
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_unparsedEntityDecl___java_lang_String_java_lang_String_java_lang_String_java_lang_String 33
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_notationDecl___java_lang_String_java_lang_String_java_lang_String 22
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_startDTD___java_lang_String_java_lang_String_java_lang_String 28
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_endDTD__ 11
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_comment___char_1ARRAY_int_int 8
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_startCDATA__ 27
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_endCDATA__ 10
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_startEntity___java_lang_String 31
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_endEntity___java_lang_String 14
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_elementDecl___java_lang_String_java_lang_String 9
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_attributeDecl___java_lang_String_java_lang_String_java_lang_String_java_lang_String_java_lang_String 6
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_externalEntityDecl___java_lang_String_java_lang_String_java_lang_String 16
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_EventFilter_internalEntityDecl___java_lang_String_java_lang_String 21
+
+void __INIT_gnu_xml_pipeline_EventFilter();
+void __INIT_IMPL_gnu_xml_pipeline_EventFilter();
+void __DELETE_gnu_xml_pipeline_EventFilter(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_pipeline_EventFilter(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_pipeline_EventFilter();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_pipeline_EventFilter();
+JAVA_OBJECT gnu_xml_pipeline_EventFilter_GET_FEATURE_URI();
+void gnu_xml_pipeline_EventFilter_PUT_FEATURE_URI(JAVA_OBJECT v);
+JAVA_OBJECT gnu_xml_pipeline_EventFilter_GET_PROPERTY_URI();
+void gnu_xml_pipeline_EventFilter_PUT_PROPERTY_URI(JAVA_OBJECT v);
+JAVA_OBJECT gnu_xml_pipeline_EventFilter_GET_DECL_HANDLER();
+void gnu_xml_pipeline_EventFilter_PUT_DECL_HANDLER(JAVA_OBJECT v);
+JAVA_OBJECT gnu_xml_pipeline_EventFilter_GET_LEXICAL_HANDLER();
+void gnu_xml_pipeline_EventFilter_PUT_LEXICAL_HANDLER(JAVA_OBJECT v);
+JAVA_BOOLEAN gnu_xml_pipeline_EventFilter_GET_loaded();
+void gnu_xml_pipeline_EventFilter_PUT_loaded(JAVA_BOOLEAN v);
+JAVA_OBJECT gnu_xml_pipeline_EventFilter_GET_nsClass();
+void gnu_xml_pipeline_EventFilter_PUT_nsClass(JAVA_OBJECT v);
+JAVA_OBJECT gnu_xml_pipeline_EventFilter_GET_validClass();
+void gnu_xml_pipeline_EventFilter_PUT_validClass(JAVA_OBJECT v);
+JAVA_OBJECT gnu_xml_pipeline_EventFilter_GET_wfClass();
+void gnu_xml_pipeline_EventFilter_PUT_wfClass(JAVA_OBJECT v);
+JAVA_OBJECT gnu_xml_pipeline_EventFilter_GET_xincClass();
+void gnu_xml_pipeline_EventFilter_PUT_xincClass(JAVA_OBJECT v);
+JAVA_OBJECT gnu_xml_pipeline_EventFilter_getClassLoader__();
+JAVA_OBJECT gnu_xml_pipeline_EventFilter_loadClass___java_lang_ClassLoader_java_lang_String(JAVA_OBJECT n1, JAVA_OBJECT n2);
+void gnu_xml_pipeline_EventFilter_loadClasses__();
+void gnu_xml_pipeline_EventFilter_bind___org_xml_sax_XMLReader_gnu_xml_pipeline_EventConsumer(JAVA_OBJECT n1, JAVA_OBJECT n2);
+void gnu_xml_pipeline_EventFilter___INIT___(JAVA_OBJECT me);
+void gnu_xml_pipeline_EventFilter___INIT____gnu_xml_pipeline_EventConsumer(JAVA_OBJECT me, JAVA_OBJECT n1);
+void gnu_xml_pipeline_EventFilter_chainTo___org_xml_sax_helpers_XMLFilterImpl(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 25
+void gnu_xml_pipeline_EventFilter_setErrorHandler___org_xml_sax_ErrorHandler(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_pipeline_EventFilter_getErrorHandler__(JAVA_OBJECT me);
+JAVA_OBJECT gnu_xml_pipeline_EventFilter_getNext__(JAVA_OBJECT me);
+void gnu_xml_pipeline_EventFilter_setContentHandler___org_xml_sax_ContentHandler(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 17
+JAVA_OBJECT gnu_xml_pipeline_EventFilter_getContentHandler__(JAVA_OBJECT me);
+void gnu_xml_pipeline_EventFilter_setDTDHandler___org_xml_sax_DTDHandler(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 18
+JAVA_OBJECT gnu_xml_pipeline_EventFilter_getDTDHandler__(JAVA_OBJECT me);
+void gnu_xml_pipeline_EventFilter_setProperty___java_lang_String_java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 19
+JAVA_OBJECT gnu_xml_pipeline_EventFilter_getProperty___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_pipeline_EventFilter_getDocumentLocator__(JAVA_OBJECT me);
+// Vtable index: 24
+void gnu_xml_pipeline_EventFilter_setDocumentLocator___org_xml_sax_Locator(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 29
+void gnu_xml_pipeline_EventFilter_startDocument__(JAVA_OBJECT me);
+// Vtable index: 26
+void gnu_xml_pipeline_EventFilter_skippedEntity___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 23
+void gnu_xml_pipeline_EventFilter_processingInstruction___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 7
+void gnu_xml_pipeline_EventFilter_characters___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+// Vtable index: 20
+void gnu_xml_pipeline_EventFilter_ignorableWhitespace___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+// Vtable index: 32
+void gnu_xml_pipeline_EventFilter_startPrefixMapping___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 30
+void gnu_xml_pipeline_EventFilter_startElement___java_lang_String_java_lang_String_java_lang_String_org_xml_sax_Attributes(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3, JAVA_OBJECT n4);
+// Vtable index: 13
+void gnu_xml_pipeline_EventFilter_endElement___java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 15
+void gnu_xml_pipeline_EventFilter_endPrefixMapping___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 12
+void gnu_xml_pipeline_EventFilter_endDocument__(JAVA_OBJECT me);
+// Vtable index: 33
+void gnu_xml_pipeline_EventFilter_unparsedEntityDecl___java_lang_String_java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3, JAVA_OBJECT n4);
+// Vtable index: 22
+void gnu_xml_pipeline_EventFilter_notationDecl___java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 28
+void gnu_xml_pipeline_EventFilter_startDTD___java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 11
+void gnu_xml_pipeline_EventFilter_endDTD__(JAVA_OBJECT me);
+// Vtable index: 8
+void gnu_xml_pipeline_EventFilter_comment___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+// Vtable index: 27
+void gnu_xml_pipeline_EventFilter_startCDATA__(JAVA_OBJECT me);
+// Vtable index: 10
+void gnu_xml_pipeline_EventFilter_endCDATA__(JAVA_OBJECT me);
+// Vtable index: 31
+void gnu_xml_pipeline_EventFilter_startEntity___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 14
+void gnu_xml_pipeline_EventFilter_endEntity___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 9
+void gnu_xml_pipeline_EventFilter_elementDecl___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 6
+void gnu_xml_pipeline_EventFilter_attributeDecl___java_lang_String_java_lang_String_java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3, JAVA_OBJECT n4, JAVA_OBJECT n5);
+// Vtable index: 16
+void gnu_xml_pipeline_EventFilter_externalEntityDecl___java_lang_String_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 21
+void gnu_xml_pipeline_EventFilter_internalEntityDecl___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+
+#endif

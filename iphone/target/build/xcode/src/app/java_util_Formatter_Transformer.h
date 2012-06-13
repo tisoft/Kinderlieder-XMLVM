@@ -1,0 +1,213 @@
+#ifndef __JAVA_UTIL_FORMATTER_TRANSFORMER__
+#define __JAVA_UTIL_FORMATTER_TRANSFORMER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_Formatter_Transformer 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Boolean
+#define XMLVM_FORWARD_DECL_java_lang_Boolean
+XMLVM_FORWARD_DECL(java_lang_Boolean)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Byte
+#define XMLVM_FORWARD_DECL_java_lang_Byte
+XMLVM_FORWARD_DECL(java_lang_Byte)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Character
+#define XMLVM_FORWARD_DECL_java_lang_Character
+XMLVM_FORWARD_DECL(java_lang_Character)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Double
+#define XMLVM_FORWARD_DECL_java_lang_Double
+XMLVM_FORWARD_DECL(java_lang_Double)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Float
+#define XMLVM_FORWARD_DECL_java_lang_Float
+XMLVM_FORWARD_DECL(java_lang_Float)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Integer
+#define XMLVM_FORWARD_DECL_java_lang_Integer
+XMLVM_FORWARD_DECL(java_lang_Integer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Long
+#define XMLVM_FORWARD_DECL_java_lang_Long
+XMLVM_FORWARD_DECL(java_lang_Long)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Math
+#define XMLVM_FORWARD_DECL_java_lang_Math
+XMLVM_FORWARD_DECL(java_lang_Math)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Number
+#define XMLVM_FORWARD_DECL_java_lang_Number
+XMLVM_FORWARD_DECL(java_lang_Number)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Short
+#define XMLVM_FORWARD_DECL_java_lang_Short
+XMLVM_FORWARD_DECL(java_lang_Short)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_math_BigDecimal
+#define XMLVM_FORWARD_DECL_java_math_BigDecimal
+XMLVM_FORWARD_DECL(java_math_BigDecimal)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_math_BigInteger
+#define XMLVM_FORWARD_DECL_java_math_BigInteger
+XMLVM_FORWARD_DECL(java_math_BigInteger)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_security_AccessController
+#define XMLVM_FORWARD_DECL_java_security_AccessController
+XMLVM_FORWARD_DECL(java_security_AccessController)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Arrays
+#define XMLVM_FORWARD_DECL_java_util_Arrays
+XMLVM_FORWARD_DECL(java_util_Arrays)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Calendar
+#define XMLVM_FORWARD_DECL_java_util_Calendar
+XMLVM_FORWARD_DECL(java_util_Calendar)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Date
+#define XMLVM_FORWARD_DECL_java_util_Date
+XMLVM_FORWARD_DECL(java_util_Date)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_FormatFlagsConversionMismatchException
+#define XMLVM_FORWARD_DECL_java_util_FormatFlagsConversionMismatchException
+XMLVM_FORWARD_DECL(java_util_FormatFlagsConversionMismatchException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Formattable
+#define XMLVM_FORWARD_DECL_java_util_Formattable
+XMLVM_FORWARD_DECL(java_util_Formattable)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Formatter
+#define XMLVM_FORWARD_DECL_java_util_Formatter
+XMLVM_FORWARD_DECL(java_util_Formatter)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Formatter_DateTimeUtil
+#define XMLVM_FORWARD_DECL_java_util_Formatter_DateTimeUtil
+XMLVM_FORWARD_DECL(java_util_Formatter_DateTimeUtil)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Formatter_FloatUtil
+#define XMLVM_FORWARD_DECL_java_util_Formatter_FloatUtil
+XMLVM_FORWARD_DECL(java_util_Formatter_FloatUtil)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Formatter_FormatToken
+#define XMLVM_FORWARD_DECL_java_util_Formatter_FormatToken
+XMLVM_FORWARD_DECL(java_util_Formatter_FormatToken)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Formatter_Transformer_1
+#define XMLVM_FORWARD_DECL_java_util_Formatter_Transformer_1
+XMLVM_FORWARD_DECL(java_util_Formatter_Transformer_1)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_IllegalFormatCodePointException
+#define XMLVM_FORWARD_DECL_java_util_IllegalFormatCodePointException
+XMLVM_FORWARD_DECL(java_util_IllegalFormatCodePointException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_IllegalFormatConversionException
+#define XMLVM_FORWARD_DECL_java_util_IllegalFormatConversionException
+XMLVM_FORWARD_DECL(java_util_IllegalFormatConversionException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_IllegalFormatFlagsException
+#define XMLVM_FORWARD_DECL_java_util_IllegalFormatFlagsException
+XMLVM_FORWARD_DECL(java_util_IllegalFormatFlagsException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_IllegalFormatPrecisionException
+#define XMLVM_FORWARD_DECL_java_util_IllegalFormatPrecisionException
+XMLVM_FORWARD_DECL(java_util_IllegalFormatPrecisionException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_IllegalFormatWidthException
+#define XMLVM_FORWARD_DECL_java_util_IllegalFormatWidthException
+XMLVM_FORWARD_DECL(java_util_IllegalFormatWidthException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Locale
+#define XMLVM_FORWARD_DECL_java_util_Locale
+XMLVM_FORWARD_DECL(java_util_Locale)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_MissingFormatWidthException
+#define XMLVM_FORWARD_DECL_java_util_MissingFormatWidthException
+XMLVM_FORWARD_DECL(java_util_MissingFormatWidthException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_UnknownFormatConversionException
+#define XMLVM_FORWARD_DECL_java_util_UnknownFormatConversionException
+XMLVM_FORWARD_DECL(java_util_UnknownFormatConversionException)
+#endif
+// Class declarations for java.util.Formatter$Transformer
+XMLVM_DEFINE_CLASS(java_util_Formatter_Transformer, 6, XMLVM_ITABLE_SIZE_java_util_Formatter_Transformer)
+
+extern JAVA_OBJECT __CLASS_java_util_Formatter_Transformer;
+extern JAVA_OBJECT __CLASS_java_util_Formatter_Transformer_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_Formatter_Transformer_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_Formatter_Transformer_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_Formatter_Transformer
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_Formatter_Transformer \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT formatter_; \
+        JAVA_OBJECT formatToken_; \
+        JAVA_OBJECT arg_; \
+        JAVA_OBJECT locale_; \
+        JAVA_OBJECT numberFormat_; \
+        JAVA_OBJECT decimalFormatSymbols_; \
+        JAVA_OBJECT dateTimeUtil_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_Formatter_Transformer \
+    } java_util_Formatter_Transformer
+
+struct java_util_Formatter_Transformer {
+    __TIB_DEFINITION_java_util_Formatter_Transformer* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_Formatter_Transformer;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_Formatter_Transformer
+#define XMLVM_FORWARD_DECL_java_util_Formatter_Transformer
+typedef struct java_util_Formatter_Transformer java_util_Formatter_Transformer;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_Formatter_Transformer 6
+
+void __INIT_java_util_Formatter_Transformer();
+void __INIT_IMPL_java_util_Formatter_Transformer();
+void __DELETE_java_util_Formatter_Transformer(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_Formatter_Transformer(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_Formatter_Transformer();
+JAVA_OBJECT __NEW_INSTANCE_java_util_Formatter_Transformer();
+JAVA_OBJECT java_util_Formatter_Transformer_GET_lineSeparator();
+void java_util_Formatter_Transformer_PUT_lineSeparator(JAVA_OBJECT v);
+void java_util_Formatter_Transformer___INIT____java_util_Formatter_java_util_Locale(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT java_util_Formatter_Transformer_getNumberFormat__(JAVA_OBJECT me);
+JAVA_OBJECT java_util_Formatter_Transformer_getDecimalFormatSymbols__(JAVA_OBJECT me);
+JAVA_OBJECT java_util_Formatter_Transformer_transform___java_util_Formatter_FormatToken_java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT java_util_Formatter_Transformer_transformFromBoolean__(JAVA_OBJECT me);
+JAVA_OBJECT java_util_Formatter_Transformer_transformFromHashCode__(JAVA_OBJECT me);
+JAVA_OBJECT java_util_Formatter_Transformer_transformFromString__(JAVA_OBJECT me);
+JAVA_OBJECT java_util_Formatter_Transformer_transformFromCharacter__(JAVA_OBJECT me);
+JAVA_OBJECT java_util_Formatter_Transformer_transformFromPercent__(JAVA_OBJECT me);
+JAVA_OBJECT java_util_Formatter_Transformer_transformFromLineSeparator__(JAVA_OBJECT me);
+JAVA_OBJECT java_util_Formatter_Transformer_padding___java_lang_StringBuilder_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2);
+JAVA_OBJECT java_util_Formatter_Transformer_transformFromInteger__(JAVA_OBJECT me);
+JAVA_OBJECT java_util_Formatter_Transformer_wrapParentheses___java_lang_StringBuilder(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT java_util_Formatter_Transformer_transformFromSpecialNumber__(JAVA_OBJECT me);
+JAVA_OBJECT java_util_Formatter_Transformer_transformFromNull__(JAVA_OBJECT me);
+JAVA_OBJECT java_util_Formatter_Transformer_transformFromBigInteger__(JAVA_OBJECT me);
+JAVA_OBJECT java_util_Formatter_Transformer_transformFromFloat__(JAVA_OBJECT me);
+JAVA_OBJECT java_util_Formatter_Transformer_transformFromDateTime__(JAVA_OBJECT me);
+
+#endif

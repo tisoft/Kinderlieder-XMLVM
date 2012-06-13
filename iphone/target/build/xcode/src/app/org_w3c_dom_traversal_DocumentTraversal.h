@@ -1,0 +1,45 @@
+#ifndef __ORG_W3C_DOM_TRAVERSAL_DOCUMENTTRAVERSAL__
+#define __ORG_W3C_DOM_TRAVERSAL_DOCUMENTTRAVERSAL__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_DocumentTraversal_createNodeIterator___org_w3c_dom_Node_int_org_w3c_dom_traversal_NodeFilter_boolean 199
+#define XMLVM_ITABLE_IDX_org_w3c_dom_traversal_DocumentTraversal_createTreeWalker___org_w3c_dom_Node_int_org_w3c_dom_traversal_NodeFilter_boolean 200
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Node
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Node
+XMLVM_FORWARD_DECL(org_w3c_dom_Node)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_traversal_NodeFilter
+#define XMLVM_FORWARD_DECL_org_w3c_dom_traversal_NodeFilter
+XMLVM_FORWARD_DECL(org_w3c_dom_traversal_NodeFilter)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_traversal_NodeIterator
+#define XMLVM_FORWARD_DECL_org_w3c_dom_traversal_NodeIterator
+XMLVM_FORWARD_DECL(org_w3c_dom_traversal_NodeIterator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_traversal_TreeWalker
+#define XMLVM_FORWARD_DECL_org_w3c_dom_traversal_TreeWalker
+XMLVM_FORWARD_DECL(org_w3c_dom_traversal_TreeWalker)
+#endif
+
+XMLVM_DEFINE_CLASS(org_w3c_dom_traversal_DocumentTraversal, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_w3c_dom_traversal_DocumentTraversal;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_traversal_DocumentTraversal_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_traversal_DocumentTraversal_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_traversal_DocumentTraversal_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_traversal_DocumentTraversal
+#define XMLVM_FORWARD_DECL_org_w3c_dom_traversal_DocumentTraversal
+typedef struct org_w3c_dom_traversal_DocumentTraversal org_w3c_dom_traversal_DocumentTraversal;
+#endif
+
+void __INIT_org_w3c_dom_traversal_DocumentTraversal();
+void __INIT_IMPL_org_w3c_dom_traversal_DocumentTraversal();
+
+#endif

@@ -1,0 +1,43 @@
+#ifndef __ORG_W3C_DOM_NAMEDNODEMAP__
+#define __ORG_W3C_DOM_NAMEDNODEMAP__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_w3c_dom_NamedNodeMap_getNamedItem___java_lang_String 2
+#define XMLVM_ITABLE_IDX_org_w3c_dom_NamedNodeMap_setNamedItem___org_w3c_dom_Node 7
+#define XMLVM_ITABLE_IDX_org_w3c_dom_NamedNodeMap_removeNamedItem___java_lang_String 5
+#define XMLVM_ITABLE_IDX_org_w3c_dom_NamedNodeMap_item___int 3
+#define XMLVM_ITABLE_IDX_org_w3c_dom_NamedNodeMap_getLength__ 0
+#define XMLVM_ITABLE_IDX_org_w3c_dom_NamedNodeMap_getNamedItemNS___java_lang_String_java_lang_String 1
+#define XMLVM_ITABLE_IDX_org_w3c_dom_NamedNodeMap_setNamedItemNS___org_w3c_dom_Node 6
+#define XMLVM_ITABLE_IDX_org_w3c_dom_NamedNodeMap_removeNamedItemNS___java_lang_String_java_lang_String 4
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Node
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Node
+XMLVM_FORWARD_DECL(org_w3c_dom_Node)
+#endif
+
+XMLVM_DEFINE_CLASS(org_w3c_dom_NamedNodeMap, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_w3c_dom_NamedNodeMap;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_NamedNodeMap_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_NamedNodeMap_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_NamedNodeMap_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_NamedNodeMap
+#define XMLVM_FORWARD_DECL_org_w3c_dom_NamedNodeMap
+typedef struct org_w3c_dom_NamedNodeMap org_w3c_dom_NamedNodeMap;
+#endif
+
+void __INIT_org_w3c_dom_NamedNodeMap();
+void __INIT_IMPL_org_w3c_dom_NamedNodeMap();
+
+#endif

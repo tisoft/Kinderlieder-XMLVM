@@ -1,0 +1,113 @@
+#ifndef __ORG_APACHE_HARMONY_NIO_INTERNAL_WRITEONLYFILECHANNEL__
+#define __ORG_APACHE_HARMONY_NIO_INTERNAL_WRITEONLYFILECHANNEL__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_apache_harmony_nio_internal_WriteOnlyFileChannel 25
+// Implemented interfaces:
+// Super Class:
+#include "org_apache_harmony_nio_internal_FileChannelImpl.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+XMLVM_FORWARD_DECL(java_lang_IllegalArgumentException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IndexOutOfBoundsException
+#define XMLVM_FORWARD_DECL_java_lang_IndexOutOfBoundsException
+XMLVM_FORWARD_DECL(java_lang_IndexOutOfBoundsException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NullPointerException
+#define XMLVM_FORWARD_DECL_java_lang_NullPointerException
+XMLVM_FORWARD_DECL(java_lang_NullPointerException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_ByteBuffer
+#define XMLVM_FORWARD_DECL_java_nio_ByteBuffer
+XMLVM_FORWARD_DECL(java_nio_ByteBuffer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_MappedByteBuffer
+#define XMLVM_FORWARD_DECL_java_nio_MappedByteBuffer
+XMLVM_FORWARD_DECL(java_nio_MappedByteBuffer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_channels_FileChannel_MapMode
+#define XMLVM_FORWARD_DECL_java_nio_channels_FileChannel_MapMode
+XMLVM_FORWARD_DECL(java_nio_channels_FileChannel_MapMode)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_channels_FileLock
+#define XMLVM_FORWARD_DECL_java_nio_channels_FileLock
+XMLVM_FORWARD_DECL(java_nio_channels_FileLock)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_nio_channels_WritableByteChannel
+#define XMLVM_FORWARD_DECL_java_nio_channels_WritableByteChannel
+XMLVM_FORWARD_DECL(java_nio_channels_WritableByteChannel)
+#endif
+// Class declarations for org.apache.harmony.nio.internal.WriteOnlyFileChannel
+XMLVM_DEFINE_CLASS(org_apache_harmony_nio_internal_WriteOnlyFileChannel, 28, XMLVM_ITABLE_SIZE_org_apache_harmony_nio_internal_WriteOnlyFileChannel)
+
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_internal_WriteOnlyFileChannel;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_internal_WriteOnlyFileChannel_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_internal_WriteOnlyFileChannel_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_internal_WriteOnlyFileChannel_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_nio_internal_WriteOnlyFileChannel
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_apache_harmony_nio_internal_WriteOnlyFileChannel \
+    __INSTANCE_FIELDS_org_apache_harmony_nio_internal_FileChannelImpl; \
+    struct { \
+        JAVA_BOOLEAN append_; \
+        __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_nio_internal_WriteOnlyFileChannel \
+    } org_apache_harmony_nio_internal_WriteOnlyFileChannel
+
+struct org_apache_harmony_nio_internal_WriteOnlyFileChannel {
+    __TIB_DEFINITION_org_apache_harmony_nio_internal_WriteOnlyFileChannel* tib;
+    struct {
+        __INSTANCE_FIELDS_org_apache_harmony_nio_internal_WriteOnlyFileChannel;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_nio_internal_WriteOnlyFileChannel
+#define XMLVM_FORWARD_DECL_org_apache_harmony_nio_internal_WriteOnlyFileChannel
+typedef struct org_apache_harmony_nio_internal_WriteOnlyFileChannel org_apache_harmony_nio_internal_WriteOnlyFileChannel;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_apache_harmony_nio_internal_WriteOnlyFileChannel 28
+#define XMLVM_VTABLE_IDX_org_apache_harmony_nio_internal_WriteOnlyFileChannel_position__ 12
+#define XMLVM_VTABLE_IDX_org_apache_harmony_nio_internal_WriteOnlyFileChannel_transferTo___long_long_java_nio_channels_WritableByteChannel 20
+#define XMLVM_VTABLE_IDX_org_apache_harmony_nio_internal_WriteOnlyFileChannel_read___java_nio_ByteBuffer_1ARRAY_int_int 16
+#define XMLVM_VTABLE_IDX_org_apache_harmony_nio_internal_WriteOnlyFileChannel_read___java_nio_ByteBuffer 14
+#define XMLVM_VTABLE_IDX_org_apache_harmony_nio_internal_WriteOnlyFileChannel_read___java_nio_ByteBuffer_long 17
+#define XMLVM_VTABLE_IDX_org_apache_harmony_nio_internal_WriteOnlyFileChannel_map___java_nio_channels_FileChannel_MapMode_long_long 11
+#define XMLVM_VTABLE_IDX_org_apache_harmony_nio_internal_WriteOnlyFileChannel_write___java_nio_ByteBuffer 23
+#define XMLVM_VTABLE_IDX_org_apache_harmony_nio_internal_WriteOnlyFileChannel_basicLock___long_long_boolean_boolean 27
+
+void __INIT_org_apache_harmony_nio_internal_WriteOnlyFileChannel();
+void __INIT_IMPL_org_apache_harmony_nio_internal_WriteOnlyFileChannel();
+void __DELETE_org_apache_harmony_nio_internal_WriteOnlyFileChannel(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_apache_harmony_nio_internal_WriteOnlyFileChannel(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_apache_harmony_nio_internal_WriteOnlyFileChannel();
+JAVA_OBJECT __NEW_INSTANCE_org_apache_harmony_nio_internal_WriteOnlyFileChannel();
+void org_apache_harmony_nio_internal_WriteOnlyFileChannel___INIT____java_lang_Object_long(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_LONG n2);
+void org_apache_harmony_nio_internal_WriteOnlyFileChannel___INIT____java_lang_Object_long_boolean(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_LONG n2, JAVA_BOOLEAN n3);
+// Vtable index: 12
+JAVA_LONG org_apache_harmony_nio_internal_WriteOnlyFileChannel_position__(JAVA_OBJECT me);
+// Vtable index: 20
+JAVA_LONG org_apache_harmony_nio_internal_WriteOnlyFileChannel_transferTo___long_long_java_nio_channels_WritableByteChannel(JAVA_OBJECT me, JAVA_LONG n1, JAVA_LONG n2, JAVA_OBJECT n3);
+// Vtable index: 16
+JAVA_LONG org_apache_harmony_nio_internal_WriteOnlyFileChannel_read___java_nio_ByteBuffer_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+// Vtable index: 14
+JAVA_INT org_apache_harmony_nio_internal_WriteOnlyFileChannel_read___java_nio_ByteBuffer(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 17
+JAVA_INT org_apache_harmony_nio_internal_WriteOnlyFileChannel_read___java_nio_ByteBuffer_long(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_LONG n2);
+// Vtable index: 11
+JAVA_OBJECT org_apache_harmony_nio_internal_WriteOnlyFileChannel_map___java_nio_channels_FileChannel_MapMode_long_long(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_LONG n2, JAVA_LONG n3);
+// Vtable index: 23
+JAVA_INT org_apache_harmony_nio_internal_WriteOnlyFileChannel_write___java_nio_ByteBuffer(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 27
+JAVA_OBJECT org_apache_harmony_nio_internal_WriteOnlyFileChannel_basicLock___long_long_boolean_boolean(JAVA_OBJECT me, JAVA_LONG n1, JAVA_LONG n2, JAVA_BOOLEAN n3, JAVA_BOOLEAN n4);
+
+#endif

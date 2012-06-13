@@ -1,0 +1,91 @@
+#ifndef __JAVA_UTIL_COLLECTIONS_SYNCHRONIZEDSORTEDMAP__
+#define __JAVA_UTIL_COLLECTIONS_SYNCHRONIZEDSORTEDMAP__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_Collections_SynchronizedSortedMap 72
+// Implemented interfaces:
+#include "java_util_SortedMap.h"
+// Super Class:
+#include "java_util_Collections_SynchronizedMap.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectOutputStream
+#define XMLVM_FORWARD_DECL_java_io_ObjectOutputStream
+XMLVM_FORWARD_DECL(java_io_ObjectOutputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Comparator
+#define XMLVM_FORWARD_DECL_java_util_Comparator
+XMLVM_FORWARD_DECL(java_util_Comparator)
+#endif
+// Class declarations for java.util.Collections$SynchronizedSortedMap
+XMLVM_DEFINE_CLASS(java_util_Collections_SynchronizedSortedMap, 24, XMLVM_ITABLE_SIZE_java_util_Collections_SynchronizedSortedMap)
+
+extern JAVA_OBJECT __CLASS_java_util_Collections_SynchronizedSortedMap;
+extern JAVA_OBJECT __CLASS_java_util_Collections_SynchronizedSortedMap_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_Collections_SynchronizedSortedMap_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_Collections_SynchronizedSortedMap_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_Collections_SynchronizedSortedMap
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_Collections_SynchronizedSortedMap \
+    __INSTANCE_FIELDS_java_util_Collections_SynchronizedMap; \
+    struct { \
+        JAVA_OBJECT sm_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_Collections_SynchronizedSortedMap \
+    } java_util_Collections_SynchronizedSortedMap
+
+struct java_util_Collections_SynchronizedSortedMap {
+    __TIB_DEFINITION_java_util_Collections_SynchronizedSortedMap* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_Collections_SynchronizedSortedMap;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_Collections_SynchronizedSortedMap
+#define XMLVM_FORWARD_DECL_java_util_Collections_SynchronizedSortedMap
+typedef struct java_util_Collections_SynchronizedSortedMap java_util_Collections_SynchronizedSortedMap;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_Collections_SynchronizedSortedMap 24
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedSortedMap_comparator__ 18
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedSortedMap_firstKey__ 19
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedSortedMap_headMap___java_lang_Object 20
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedSortedMap_lastKey__ 21
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedSortedMap_subMap___java_lang_Object_java_lang_Object 22
+#define XMLVM_VTABLE_IDX_java_util_Collections_SynchronizedSortedMap_tailMap___java_lang_Object 23
+
+void __INIT_java_util_Collections_SynchronizedSortedMap();
+void __INIT_IMPL_java_util_Collections_SynchronizedSortedMap();
+void __DELETE_java_util_Collections_SynchronizedSortedMap(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_Collections_SynchronizedSortedMap(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_Collections_SynchronizedSortedMap();
+JAVA_OBJECT __NEW_INSTANCE_java_util_Collections_SynchronizedSortedMap();
+JAVA_LONG java_util_Collections_SynchronizedSortedMap_GET_serialVersionUID();
+void java_util_Collections_SynchronizedSortedMap_PUT_serialVersionUID(JAVA_LONG v);
+void java_util_Collections_SynchronizedSortedMap___INIT____java_util_SortedMap(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_util_Collections_SynchronizedSortedMap___INIT____java_util_SortedMap_java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 18
+JAVA_OBJECT java_util_Collections_SynchronizedSortedMap_comparator__(JAVA_OBJECT me);
+// Vtable index: 19
+JAVA_OBJECT java_util_Collections_SynchronizedSortedMap_firstKey__(JAVA_OBJECT me);
+// Vtable index: 20
+JAVA_OBJECT java_util_Collections_SynchronizedSortedMap_headMap___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 21
+JAVA_OBJECT java_util_Collections_SynchronizedSortedMap_lastKey__(JAVA_OBJECT me);
+// Vtable index: 22
+JAVA_OBJECT java_util_Collections_SynchronizedSortedMap_subMap___java_lang_Object_java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 23
+JAVA_OBJECT java_util_Collections_SynchronizedSortedMap_tailMap___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+void java_util_Collections_SynchronizedSortedMap_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

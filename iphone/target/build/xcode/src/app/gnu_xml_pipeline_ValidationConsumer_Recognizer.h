@@ -1,0 +1,72 @@
+#ifndef __GNU_XML_PIPELINE_VALIDATIONCONSUMER_RECOGNIZER__
+#define __GNU_XML_PIPELINE_VALIDATIONCONSUMER_RECOGNIZER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_pipeline_ValidationConsumer_Recognizer 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_pipeline_ValidationConsumer_ElementInfo
+#define XMLVM_FORWARD_DECL_gnu_xml_pipeline_ValidationConsumer_ElementInfo
+XMLVM_FORWARD_DECL(gnu_xml_pipeline_ValidationConsumer_ElementInfo)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+// Class declarations for gnu.xml.pipeline.ValidationConsumer$Recognizer
+XMLVM_DEFINE_CLASS(gnu_xml_pipeline_ValidationConsumer_Recognizer, 9, XMLVM_ITABLE_SIZE_gnu_xml_pipeline_ValidationConsumer_Recognizer)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_ValidationConsumer_Recognizer;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_ValidationConsumer_Recognizer_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_ValidationConsumer_Recognizer_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_ValidationConsumer_Recognizer_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_pipeline_ValidationConsumer_Recognizer
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_pipeline_ValidationConsumer_Recognizer \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT type_; \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_pipeline_ValidationConsumer_Recognizer \
+    } gnu_xml_pipeline_ValidationConsumer_Recognizer
+
+struct gnu_xml_pipeline_ValidationConsumer_Recognizer {
+    __TIB_DEFINITION_gnu_xml_pipeline_ValidationConsumer_Recognizer* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_pipeline_ValidationConsumer_Recognizer;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_pipeline_ValidationConsumer_Recognizer
+#define XMLVM_FORWARD_DECL_gnu_xml_pipeline_ValidationConsumer_Recognizer
+typedef struct gnu_xml_pipeline_ValidationConsumer_Recognizer gnu_xml_pipeline_ValidationConsumer_Recognizer;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_pipeline_ValidationConsumer_Recognizer 9
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_ValidationConsumer_Recognizer_acceptCharacters__ 6
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_ValidationConsumer_Recognizer_acceptElement___java_lang_String 7
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_ValidationConsumer_Recognizer_completed__ 8
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_ValidationConsumer_Recognizer_toString__ 5
+
+void __INIT_gnu_xml_pipeline_ValidationConsumer_Recognizer();
+void __INIT_IMPL_gnu_xml_pipeline_ValidationConsumer_Recognizer();
+void __DELETE_gnu_xml_pipeline_ValidationConsumer_Recognizer(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_pipeline_ValidationConsumer_Recognizer(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_pipeline_ValidationConsumer_Recognizer();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_pipeline_ValidationConsumer_Recognizer();
+void gnu_xml_pipeline_ValidationConsumer_Recognizer___INIT____gnu_xml_pipeline_ValidationConsumer_ElementInfo(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 6
+JAVA_BOOLEAN gnu_xml_pipeline_ValidationConsumer_Recognizer_acceptCharacters__(JAVA_OBJECT me);
+// Vtable index: 7
+JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_Recognizer_acceptElement___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 8
+JAVA_BOOLEAN gnu_xml_pipeline_ValidationConsumer_Recognizer_completed__(JAVA_OBJECT me);
+// Vtable index: 5
+JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_Recognizer_toString__(JAVA_OBJECT me);
+
+#endif

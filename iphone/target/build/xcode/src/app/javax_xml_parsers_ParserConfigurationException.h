@@ -1,0 +1,56 @@
+#ifndef __JAVAX_XML_PARSERS_PARSERCONFIGURATIONEXCEPTION__
+#define __JAVAX_XML_PARSERS_PARSERCONFIGURATIONEXCEPTION__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_javax_xml_parsers_ParserConfigurationException 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Exception.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+// Class declarations for javax.xml.parsers.ParserConfigurationException
+XMLVM_DEFINE_CLASS(javax_xml_parsers_ParserConfigurationException, 11, XMLVM_ITABLE_SIZE_javax_xml_parsers_ParserConfigurationException)
+
+extern JAVA_OBJECT __CLASS_javax_xml_parsers_ParserConfigurationException;
+extern JAVA_OBJECT __CLASS_javax_xml_parsers_ParserConfigurationException_1ARRAY;
+extern JAVA_OBJECT __CLASS_javax_xml_parsers_ParserConfigurationException_2ARRAY;
+extern JAVA_OBJECT __CLASS_javax_xml_parsers_ParserConfigurationException_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_javax_xml_parsers_ParserConfigurationException
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_javax_xml_parsers_ParserConfigurationException \
+    __INSTANCE_FIELDS_java_lang_Exception; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_javax_xml_parsers_ParserConfigurationException \
+    } javax_xml_parsers_ParserConfigurationException
+
+struct javax_xml_parsers_ParserConfigurationException {
+    __TIB_DEFINITION_javax_xml_parsers_ParserConfigurationException* tib;
+    struct {
+        __INSTANCE_FIELDS_javax_xml_parsers_ParserConfigurationException;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_javax_xml_parsers_ParserConfigurationException
+#define XMLVM_FORWARD_DECL_javax_xml_parsers_ParserConfigurationException
+typedef struct javax_xml_parsers_ParserConfigurationException javax_xml_parsers_ParserConfigurationException;
+#endif
+
+#define XMLVM_VTABLE_SIZE_javax_xml_parsers_ParserConfigurationException 11
+
+void __INIT_javax_xml_parsers_ParserConfigurationException();
+void __INIT_IMPL_javax_xml_parsers_ParserConfigurationException();
+void __DELETE_javax_xml_parsers_ParserConfigurationException(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_javax_xml_parsers_ParserConfigurationException(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_javax_xml_parsers_ParserConfigurationException();
+JAVA_OBJECT __NEW_INSTANCE_javax_xml_parsers_ParserConfigurationException();
+void javax_xml_parsers_ParserConfigurationException___INIT___(JAVA_OBJECT me);
+void javax_xml_parsers_ParserConfigurationException___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

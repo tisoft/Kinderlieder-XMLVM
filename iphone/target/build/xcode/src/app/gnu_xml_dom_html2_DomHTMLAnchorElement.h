@@ -1,0 +1,142 @@
+#ifndef __GNU_XML_DOM_HTML2_DOMHTMLANCHORELEMENT__
+#define __GNU_XML_DOM_HTML2_DOMHTMLANCHORELEMENT__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_dom_html2_DomHTMLAnchorElement 261
+// Implemented interfaces:
+#include "org_w3c_dom_html2_HTMLAnchorElement.h"
+// Super Class:
+#include "gnu_xml_dom_html2_DomHTMLElement.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLDocument
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLDocument
+XMLVM_FORWARD_DECL(gnu_xml_dom_html2_DomHTMLDocument)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+// Class declarations for gnu.xml.dom.html2.DomHTMLAnchorElement
+XMLVM_DEFINE_CLASS(gnu_xml_dom_html2_DomHTMLAnchorElement, 107, XMLVM_ITABLE_SIZE_gnu_xml_dom_html2_DomHTMLAnchorElement)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLAnchorElement;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLAnchorElement_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLAnchorElement_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLAnchorElement_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLAnchorElement
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLAnchorElement \
+    __INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLElement; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLAnchorElement \
+    } gnu_xml_dom_html2_DomHTMLAnchorElement
+
+struct gnu_xml_dom_html2_DomHTMLAnchorElement {
+    __TIB_DEFINITION_gnu_xml_dom_html2_DomHTMLAnchorElement* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLAnchorElement;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLAnchorElement
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLAnchorElement
+typedef struct gnu_xml_dom_html2_DomHTMLAnchorElement gnu_xml_dom_html2_DomHTMLAnchorElement;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_dom_html2_DomHTMLAnchorElement 107
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_getAccessKey__ 83
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_setAccessKey___java_lang_String 95
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_getCharset__ 84
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_setCharset___java_lang_String 96
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_getCoords__ 85
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_setCoords___java_lang_String 97
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_getHref__ 86
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_setHref___java_lang_String 98
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_getHreflang__ 87
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_setHreflang___java_lang_String 99
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_getName__ 88
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_setName___java_lang_String 100
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_getRel__ 89
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_setRel___java_lang_String 101
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_getRev__ 90
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_setRev___java_lang_String 102
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_getShape__ 91
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_setShape___java_lang_String 103
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_getTabIndex__ 92
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_setTabIndex___int 104
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_getTarget__ 93
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_setTarget___java_lang_String 105
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_getType__ 94
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_setType___java_lang_String 106
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_blur__ 81
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAnchorElement_focus__ 82
+
+void __INIT_gnu_xml_dom_html2_DomHTMLAnchorElement();
+void __INIT_IMPL_gnu_xml_dom_html2_DomHTMLAnchorElement();
+void __DELETE_gnu_xml_dom_html2_DomHTMLAnchorElement(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_dom_html2_DomHTMLAnchorElement(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_dom_html2_DomHTMLAnchorElement();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_dom_html2_DomHTMLAnchorElement();
+void gnu_xml_dom_html2_DomHTMLAnchorElement___INIT____gnu_xml_dom_html2_DomHTMLDocument_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 83
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLAnchorElement_getAccessKey__(JAVA_OBJECT me);
+// Vtable index: 95
+void gnu_xml_dom_html2_DomHTMLAnchorElement_setAccessKey___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 84
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLAnchorElement_getCharset__(JAVA_OBJECT me);
+// Vtable index: 96
+void gnu_xml_dom_html2_DomHTMLAnchorElement_setCharset___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 85
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLAnchorElement_getCoords__(JAVA_OBJECT me);
+// Vtable index: 97
+void gnu_xml_dom_html2_DomHTMLAnchorElement_setCoords___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 86
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLAnchorElement_getHref__(JAVA_OBJECT me);
+// Vtable index: 98
+void gnu_xml_dom_html2_DomHTMLAnchorElement_setHref___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 87
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLAnchorElement_getHreflang__(JAVA_OBJECT me);
+// Vtable index: 99
+void gnu_xml_dom_html2_DomHTMLAnchorElement_setHreflang___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 88
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLAnchorElement_getName__(JAVA_OBJECT me);
+// Vtable index: 100
+void gnu_xml_dom_html2_DomHTMLAnchorElement_setName___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 89
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLAnchorElement_getRel__(JAVA_OBJECT me);
+// Vtable index: 101
+void gnu_xml_dom_html2_DomHTMLAnchorElement_setRel___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 90
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLAnchorElement_getRev__(JAVA_OBJECT me);
+// Vtable index: 102
+void gnu_xml_dom_html2_DomHTMLAnchorElement_setRev___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 91
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLAnchorElement_getShape__(JAVA_OBJECT me);
+// Vtable index: 103
+void gnu_xml_dom_html2_DomHTMLAnchorElement_setShape___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 92
+JAVA_INT gnu_xml_dom_html2_DomHTMLAnchorElement_getTabIndex__(JAVA_OBJECT me);
+// Vtable index: 104
+void gnu_xml_dom_html2_DomHTMLAnchorElement_setTabIndex___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 93
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLAnchorElement_getTarget__(JAVA_OBJECT me);
+// Vtable index: 105
+void gnu_xml_dom_html2_DomHTMLAnchorElement_setTarget___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 94
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLAnchorElement_getType__(JAVA_OBJECT me);
+// Vtable index: 106
+void gnu_xml_dom_html2_DomHTMLAnchorElement_setType___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 81
+void gnu_xml_dom_html2_DomHTMLAnchorElement_blur__(JAVA_OBJECT me);
+// Vtable index: 82
+void gnu_xml_dom_html2_DomHTMLAnchorElement_focus__(JAVA_OBJECT me);
+
+#endif

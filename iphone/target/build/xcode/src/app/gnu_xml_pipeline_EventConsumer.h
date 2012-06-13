@@ -1,0 +1,47 @@
+#ifndef __GNU_XML_PIPELINE_EVENTCONSUMER__
+#define __GNU_XML_PIPELINE_EVENTCONSUMER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_gnu_xml_pipeline_EventConsumer_getContentHandler__ 0
+#define XMLVM_ITABLE_IDX_gnu_xml_pipeline_EventConsumer_getDTDHandler__ 1
+#define XMLVM_ITABLE_IDX_gnu_xml_pipeline_EventConsumer_getProperty___java_lang_String 2
+#define XMLVM_ITABLE_IDX_gnu_xml_pipeline_EventConsumer_setErrorHandler___org_xml_sax_ErrorHandler 3
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_ContentHandler
+#define XMLVM_FORWARD_DECL_org_xml_sax_ContentHandler
+XMLVM_FORWARD_DECL(org_xml_sax_ContentHandler)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_DTDHandler
+#define XMLVM_FORWARD_DECL_org_xml_sax_DTDHandler
+XMLVM_FORWARD_DECL(org_xml_sax_DTDHandler)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_ErrorHandler
+#define XMLVM_FORWARD_DECL_org_xml_sax_ErrorHandler
+XMLVM_FORWARD_DECL(org_xml_sax_ErrorHandler)
+#endif
+
+XMLVM_DEFINE_CLASS(gnu_xml_pipeline_EventConsumer, 0, 0)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_EventConsumer;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_EventConsumer_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_EventConsumer_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_EventConsumer_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_pipeline_EventConsumer
+#define XMLVM_FORWARD_DECL_gnu_xml_pipeline_EventConsumer
+typedef struct gnu_xml_pipeline_EventConsumer gnu_xml_pipeline_EventConsumer;
+#endif
+
+void __INIT_gnu_xml_pipeline_EventConsumer();
+void __INIT_IMPL_gnu_xml_pipeline_EventConsumer();
+
+#endif

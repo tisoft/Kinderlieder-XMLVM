@@ -1,0 +1,67 @@
+#ifndef __JAVA_UTIL_TREEMAP_ASCENDINGSUBMAPKEYITERATOR__
+#define __JAVA_UTIL_TREEMAP_ASCENDINGSUBMAPKEYITERATOR__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_TreeMap_AscendingSubMapKeyIterator 5
+// Implemented interfaces:
+#include "java_util_Iterator.h"
+// Super Class:
+#include "java_util_TreeMap_AscendingSubMapIterator.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_TreeMap_Entry
+#define XMLVM_FORWARD_DECL_java_util_TreeMap_Entry
+XMLVM_FORWARD_DECL(java_util_TreeMap_Entry)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_TreeMap_NavigableSubMap
+#define XMLVM_FORWARD_DECL_java_util_TreeMap_NavigableSubMap
+XMLVM_FORWARD_DECL(java_util_TreeMap_NavigableSubMap)
+#endif
+// Class declarations for java.util.TreeMap$AscendingSubMapKeyIterator
+XMLVM_DEFINE_CLASS(java_util_TreeMap_AscendingSubMapKeyIterator, 11, XMLVM_ITABLE_SIZE_java_util_TreeMap_AscendingSubMapKeyIterator)
+
+extern JAVA_OBJECT __CLASS_java_util_TreeMap_AscendingSubMapKeyIterator;
+extern JAVA_OBJECT __CLASS_java_util_TreeMap_AscendingSubMapKeyIterator_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_TreeMap_AscendingSubMapKeyIterator_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_TreeMap_AscendingSubMapKeyIterator_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_TreeMap_AscendingSubMapKeyIterator
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_TreeMap_AscendingSubMapKeyIterator \
+    __INSTANCE_FIELDS_java_util_TreeMap_AscendingSubMapIterator; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_TreeMap_AscendingSubMapKeyIterator \
+    } java_util_TreeMap_AscendingSubMapKeyIterator
+
+struct java_util_TreeMap_AscendingSubMapKeyIterator {
+    __TIB_DEFINITION_java_util_TreeMap_AscendingSubMapKeyIterator* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_TreeMap_AscendingSubMapKeyIterator;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_TreeMap_AscendingSubMapKeyIterator
+#define XMLVM_FORWARD_DECL_java_util_TreeMap_AscendingSubMapKeyIterator
+typedef struct java_util_TreeMap_AscendingSubMapKeyIterator java_util_TreeMap_AscendingSubMapKeyIterator;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_TreeMap_AscendingSubMapKeyIterator 11
+#define XMLVM_VTABLE_IDX_java_util_TreeMap_AscendingSubMapKeyIterator_next__ 10
+
+void __INIT_java_util_TreeMap_AscendingSubMapKeyIterator();
+void __INIT_IMPL_java_util_TreeMap_AscendingSubMapKeyIterator();
+void __DELETE_java_util_TreeMap_AscendingSubMapKeyIterator(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_TreeMap_AscendingSubMapKeyIterator(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_TreeMap_AscendingSubMapKeyIterator();
+JAVA_OBJECT __NEW_INSTANCE_java_util_TreeMap_AscendingSubMapKeyIterator();
+void java_util_TreeMap_AscendingSubMapKeyIterator___INIT____java_util_TreeMap_NavigableSubMap(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 10
+JAVA_OBJECT java_util_TreeMap_AscendingSubMapKeyIterator_next__(JAVA_OBJECT me);
+
+#endif

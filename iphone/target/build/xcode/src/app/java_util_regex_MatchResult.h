@@ -1,0 +1,38 @@
+#ifndef __JAVA_UTIL_REGEX_MATCHRESULT__
+#define __JAVA_UTIL_REGEX_MATCHRESULT__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_java_util_regex_MatchResult_end__ 0
+#define XMLVM_ITABLE_IDX_java_util_regex_MatchResult_end___int 1
+#define XMLVM_ITABLE_IDX_java_util_regex_MatchResult_group__ 3
+#define XMLVM_ITABLE_IDX_java_util_regex_MatchResult_group___int 4
+#define XMLVM_ITABLE_IDX_java_util_regex_MatchResult_groupCount__ 2
+#define XMLVM_ITABLE_IDX_java_util_regex_MatchResult_start__ 5
+#define XMLVM_ITABLE_IDX_java_util_regex_MatchResult_start___int 6
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+
+XMLVM_DEFINE_CLASS(java_util_regex_MatchResult, 0, 0)
+
+extern JAVA_OBJECT __CLASS_java_util_regex_MatchResult;
+extern JAVA_OBJECT __CLASS_java_util_regex_MatchResult_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_regex_MatchResult_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_regex_MatchResult_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_java_util_regex_MatchResult
+#define XMLVM_FORWARD_DECL_java_util_regex_MatchResult
+typedef struct java_util_regex_MatchResult java_util_regex_MatchResult;
+#endif
+
+void __INIT_java_util_regex_MatchResult();
+void __INIT_IMPL_java_util_regex_MatchResult();
+
+#endif

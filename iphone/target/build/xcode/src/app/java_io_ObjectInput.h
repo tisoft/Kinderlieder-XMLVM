@@ -1,0 +1,50 @@
+#ifndef __JAVA_IO_OBJECTINPUT__
+#define __JAVA_IO_OBJECTINPUT__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_available__ 16
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_close__ 17
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_read__ 33
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_read___byte_1ARRAY 34
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_read___byte_1ARRAY_int_int 35
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_readObject__ 28
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_skip___long 37
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_readBoolean__ 18
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_readByte__ 19
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_readChar__ 20
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_readDouble__ 21
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_readFloat__ 22
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_readFully___byte_1ARRAY 23
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_readFully___byte_1ARRAY_int_int 24
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_readInt__ 25
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_readLine__ 26
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_readLong__ 27
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_readShort__ 29
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_readUTF__ 30
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_readUnsignedByte__ 31
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_readUnsignedShort__ 32
+#define XMLVM_ITABLE_IDX_java_io_ObjectInput_skipBytes___int 36
+// Implemented interfaces:
+#include "java_io_DataInput.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+
+XMLVM_DEFINE_CLASS(java_io_ObjectInput, 0, 0)
+
+extern JAVA_OBJECT __CLASS_java_io_ObjectInput;
+extern JAVA_OBJECT __CLASS_java_io_ObjectInput_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_io_ObjectInput_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_io_ObjectInput_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_java_io_ObjectInput
+#define XMLVM_FORWARD_DECL_java_io_ObjectInput
+typedef struct java_io_ObjectInput java_io_ObjectInput;
+#endif
+
+void __INIT_java_io_ObjectInput();
+void __INIT_IMPL_java_io_ObjectInput();
+
+#endif

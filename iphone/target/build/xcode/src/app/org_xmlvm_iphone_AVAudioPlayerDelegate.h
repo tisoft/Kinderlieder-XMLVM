@@ -1,0 +1,46 @@
+#ifndef __ORG_XMLVM_IPHONE_AVAUDIOPLAYERDELEGATE__
+#define __ORG_XMLVM_IPHONE_AVAUDIOPLAYERDELEGATE__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_xmlvm_iphone_AVAudioPlayerDelegate_audioPlayerDidFinishPlaying___org_xmlvm_iphone_AVAudioPlayer_boolean 2
+#define XMLVM_ITABLE_IDX_org_xmlvm_iphone_AVAudioPlayerDelegate_audioPlayerDecodeErrorDidOccur___org_xmlvm_iphone_AVAudioPlayer_org_xmlvm_iphone_NSError 1
+#define XMLVM_ITABLE_IDX_org_xmlvm_iphone_AVAudioPlayerDelegate_audioPlayerBeginInterruption___org_xmlvm_iphone_AVAudioPlayer 0
+#define XMLVM_ITABLE_IDX_org_xmlvm_iphone_AVAudioPlayerDelegate_audioPlayerEndInterruption___org_xmlvm_iphone_AVAudioPlayer 3
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_AVAudioPlayer
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_AVAudioPlayer
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_AVAudioPlayer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSError
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSError
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_NSError)
+#endif
+
+XMLVM_DEFINE_CLASS(org_xmlvm_iphone_AVAudioPlayerDelegate, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_xmlvm_iphone_AVAudioPlayerDelegate;
+extern JAVA_OBJECT __CLASS_org_xmlvm_iphone_AVAudioPlayerDelegate_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_xmlvm_iphone_AVAudioPlayerDelegate_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_xmlvm_iphone_AVAudioPlayerDelegate_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_AVAudioPlayerDelegate
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_AVAudioPlayerDelegate
+typedef struct org_xmlvm_iphone_AVAudioPlayerDelegate org_xmlvm_iphone_AVAudioPlayerDelegate;
+#endif
+
+void __INIT_org_xmlvm_iphone_AVAudioPlayerDelegate();
+void __INIT_IMPL_org_xmlvm_iphone_AVAudioPlayerDelegate();
+
+// Define a Macro for the method declarations of the Obj-C wrapper class so that subclass wrappers may easily include these too
+#define XMLVM_OBJC_OVERRIDE_CLASS_DECLARATIONS_org_xmlvm_iphone_AVAudioPlayerDelegate \
+
+// Define a Macro for the entire contents of the Obj-C wrapper class
+#define XMLVM_OBJC_OVERRIDE_CLASS_DEFINITIONS_org_xmlvm_iphone_AVAudioPlayerDelegate \
+
+
+#endif

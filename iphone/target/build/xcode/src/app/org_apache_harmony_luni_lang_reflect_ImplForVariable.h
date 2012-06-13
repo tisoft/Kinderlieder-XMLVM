@@ -1,0 +1,115 @@
+#ifndef __ORG_APACHE_HARMONY_LUNI_LANG_REFLECT_IMPLFORVARIABLE__
+#define __ORG_APACHE_HARMONY_LUNI_LANG_REFLECT_IMPLFORVARIABLE__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_apache_harmony_luni_lang_reflect_ImplForVariable 3
+// Implemented interfaces:
+#include "java_lang_reflect_TypeVariable.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_RuntimeException
+#define XMLVM_FORWARD_DECL_java_lang_RuntimeException
+XMLVM_FORWARD_DECL(java_lang_RuntimeException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Constructor
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Constructor
+XMLVM_FORWARD_DECL(java_lang_reflect_Constructor)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_GenericDeclaration
+#define XMLVM_FORWARD_DECL_java_lang_reflect_GenericDeclaration
+XMLVM_FORWARD_DECL(java_lang_reflect_GenericDeclaration)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Method
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Method
+XMLVM_FORWARD_DECL(java_lang_reflect_Method)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_reflect_Type
+#define XMLVM_FORWARD_DECL_java_lang_reflect_Type
+XMLVM_FORWARD_DECL(java_lang_reflect_Type)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ListOfTypes
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ListOfTypes
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_lang_reflect_ListOfTypes)
+#endif
+// Class declarations for org.apache.harmony.luni.lang.reflect.ImplForVariable
+XMLVM_DEFINE_CLASS(org_apache_harmony_luni_lang_reflect_ImplForVariable, 9, XMLVM_ITABLE_SIZE_org_apache_harmony_luni_lang_reflect_ImplForVariable)
+
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_lang_reflect_ImplForVariable;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_lang_reflect_ImplForVariable_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_lang_reflect_ImplForVariable_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_lang_reflect_ImplForVariable_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_lang_reflect_ImplForVariable
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_apache_harmony_luni_lang_reflect_ImplForVariable \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT formalVar_; \
+        JAVA_OBJECT declOfVarUser_; \
+        JAVA_OBJECT name_; \
+        JAVA_OBJECT genericDeclaration_; \
+        JAVA_OBJECT bounds_; \
+        __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_lang_reflect_ImplForVariable \
+    } org_apache_harmony_luni_lang_reflect_ImplForVariable
+
+struct org_apache_harmony_luni_lang_reflect_ImplForVariable {
+    __TIB_DEFINITION_org_apache_harmony_luni_lang_reflect_ImplForVariable* tib;
+    struct {
+        __INSTANCE_FIELDS_org_apache_harmony_luni_lang_reflect_ImplForVariable;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ImplForVariable
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_lang_reflect_ImplForVariable
+typedef struct org_apache_harmony_luni_lang_reflect_ImplForVariable org_apache_harmony_luni_lang_reflect_ImplForVariable;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_apache_harmony_luni_lang_reflect_ImplForVariable 9
+#define XMLVM_VTABLE_IDX_org_apache_harmony_luni_lang_reflect_ImplForVariable_equals___java_lang_Object 1
+#define XMLVM_VTABLE_IDX_org_apache_harmony_luni_lang_reflect_ImplForVariable_hashCode__ 4
+#define XMLVM_VTABLE_IDX_org_apache_harmony_luni_lang_reflect_ImplForVariable_getBounds__ 6
+#define XMLVM_VTABLE_IDX_org_apache_harmony_luni_lang_reflect_ImplForVariable_getGenericDeclaration__ 7
+#define XMLVM_VTABLE_IDX_org_apache_harmony_luni_lang_reflect_ImplForVariable_getName__ 8
+#define XMLVM_VTABLE_IDX_org_apache_harmony_luni_lang_reflect_ImplForVariable_toString__ 5
+
+void __INIT_org_apache_harmony_luni_lang_reflect_ImplForVariable();
+void __INIT_IMPL_org_apache_harmony_luni_lang_reflect_ImplForVariable();
+void __DELETE_org_apache_harmony_luni_lang_reflect_ImplForVariable(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_apache_harmony_luni_lang_reflect_ImplForVariable(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_apache_harmony_luni_lang_reflect_ImplForVariable();
+JAVA_OBJECT __NEW_INSTANCE_org_apache_harmony_luni_lang_reflect_ImplForVariable();
+// Vtable index: 1
+JAVA_BOOLEAN org_apache_harmony_luni_lang_reflect_ImplForVariable_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 4
+JAVA_INT org_apache_harmony_luni_lang_reflect_ImplForVariable_hashCode__(JAVA_OBJECT me);
+void org_apache_harmony_luni_lang_reflect_ImplForVariable___INIT____java_lang_reflect_GenericDeclaration_java_lang_String_org_apache_harmony_luni_lang_reflect_ListOfTypes(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+void org_apache_harmony_luni_lang_reflect_ImplForVariable___INIT____java_lang_reflect_GenericDeclaration_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForVariable_findFormalVar___java_lang_reflect_GenericDeclaration_java_lang_String(JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForVariable_nextLayer___java_lang_reflect_GenericDeclaration(JAVA_OBJECT n1);
+void org_apache_harmony_luni_lang_reflect_ImplForVariable_resolve__(JAVA_OBJECT me);
+// Vtable index: 6
+JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForVariable_getBounds__(JAVA_OBJECT me);
+// Vtable index: 7
+JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForVariable_getGenericDeclaration__(JAVA_OBJECT me);
+// Vtable index: 8
+JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForVariable_getName__(JAVA_OBJECT me);
+// Vtable index: 5
+JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForVariable_toString__(JAVA_OBJECT me);
+
+#endif

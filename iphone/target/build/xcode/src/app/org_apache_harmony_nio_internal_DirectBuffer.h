@@ -1,0 +1,33 @@
+#ifndef __ORG_APACHE_HARMONY_NIO_INTERNAL_DIRECTBUFFER__
+#define __ORG_APACHE_HARMONY_NIO_INTERNAL_DIRECTBUFFER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_apache_harmony_nio_internal_DirectBuffer_getEffectiveAddress__ 13
+#define XMLVM_ITABLE_IDX_org_apache_harmony_nio_internal_DirectBuffer_getBaseAddress__ 11
+#define XMLVM_ITABLE_IDX_org_apache_harmony_nio_internal_DirectBuffer_isAddressValid__ 14
+#define XMLVM_ITABLE_IDX_org_apache_harmony_nio_internal_DirectBuffer_addressValidityCheck__ 9
+#define XMLVM_ITABLE_IDX_org_apache_harmony_nio_internal_DirectBuffer_free__ 10
+#define XMLVM_ITABLE_IDX_org_apache_harmony_nio_internal_DirectBuffer_getByteCapacity__ 12
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+
+XMLVM_DEFINE_CLASS(org_apache_harmony_nio_internal_DirectBuffer, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_internal_DirectBuffer;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_internal_DirectBuffer_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_internal_DirectBuffer_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_nio_internal_DirectBuffer_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_nio_internal_DirectBuffer
+#define XMLVM_FORWARD_DECL_org_apache_harmony_nio_internal_DirectBuffer
+typedef struct org_apache_harmony_nio_internal_DirectBuffer org_apache_harmony_nio_internal_DirectBuffer;
+#endif
+
+void __INIT_org_apache_harmony_nio_internal_DirectBuffer();
+void __INIT_IMPL_org_apache_harmony_nio_internal_DirectBuffer();
+
+#endif

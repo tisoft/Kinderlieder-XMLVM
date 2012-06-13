@@ -1,0 +1,216 @@
+#ifndef __JAVAX_XML_STREAM_UTIL_READERDELEGATE__
+#define __JAVAX_XML_STREAM_UTIL_READERDELEGATE__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_javax_xml_stream_util_ReaderDelegate 48
+// Implemented interfaces:
+#include "javax_xml_stream_XMLStreamConstants.h"
+#include "javax_xml_stream_XMLStreamReader.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+XMLVM_FORWARD_DECL(java_lang_IllegalArgumentException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_javax_xml_namespace_NamespaceContext
+#define XMLVM_FORWARD_DECL_javax_xml_namespace_NamespaceContext
+XMLVM_FORWARD_DECL(javax_xml_namespace_NamespaceContext)
+#endif
+#ifndef XMLVM_FORWARD_DECL_javax_xml_namespace_QName
+#define XMLVM_FORWARD_DECL_javax_xml_namespace_QName
+XMLVM_FORWARD_DECL(javax_xml_namespace_QName)
+#endif
+#ifndef XMLVM_FORWARD_DECL_javax_xml_stream_Location
+#define XMLVM_FORWARD_DECL_javax_xml_stream_Location
+XMLVM_FORWARD_DECL(javax_xml_stream_Location)
+#endif
+#ifndef XMLVM_FORWARD_DECL_javax_xml_stream_XMLStreamException
+#define XMLVM_FORWARD_DECL_javax_xml_stream_XMLStreamException
+XMLVM_FORWARD_DECL(javax_xml_stream_XMLStreamException)
+#endif
+// Class declarations for javax.xml.stream.util.ReaderDelegate
+XMLVM_DEFINE_CLASS(javax_xml_stream_util_ReaderDelegate, 51, XMLVM_ITABLE_SIZE_javax_xml_stream_util_ReaderDelegate)
+
+extern JAVA_OBJECT __CLASS_javax_xml_stream_util_ReaderDelegate;
+extern JAVA_OBJECT __CLASS_javax_xml_stream_util_ReaderDelegate_1ARRAY;
+extern JAVA_OBJECT __CLASS_javax_xml_stream_util_ReaderDelegate_2ARRAY;
+extern JAVA_OBJECT __CLASS_javax_xml_stream_util_ReaderDelegate_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_javax_xml_stream_util_ReaderDelegate
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_javax_xml_stream_util_ReaderDelegate \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT parent_; \
+        __ADDITIONAL_INSTANCE_FIELDS_javax_xml_stream_util_ReaderDelegate \
+    } javax_xml_stream_util_ReaderDelegate
+
+struct javax_xml_stream_util_ReaderDelegate {
+    __TIB_DEFINITION_javax_xml_stream_util_ReaderDelegate* tib;
+    struct {
+        __INSTANCE_FIELDS_javax_xml_stream_util_ReaderDelegate;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_javax_xml_stream_util_ReaderDelegate
+#define XMLVM_FORWARD_DECL_javax_xml_stream_util_ReaderDelegate
+typedef struct javax_xml_stream_util_ReaderDelegate javax_xml_stream_util_ReaderDelegate;
+#endif
+
+#define XMLVM_VTABLE_SIZE_javax_xml_stream_util_ReaderDelegate 51
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_next__ 48
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_nextTag__ 47
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getElementText__ 16
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_require___int_java_lang_String_java_lang_String 49
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_hasNext__ 39
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_close__ 6
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getNamespaceURI___java_lang_String 27
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getNamespaceContext__ 22
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_isStartElement__ 45
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_isEndElement__ 43
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_isCharacters__ 42
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_isWhiteSpace__ 46
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getAttributeValue___java_lang_String_java_lang_String 14
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getAttributeCount__ 7
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getAttributeName___int 9
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getAttributePrefix___int 11
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getAttributeNamespace___int 10
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getAttributeLocalName___int 8
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getAttributeType___int 12
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getAttributeValue___int 13
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_isAttributeSpecified___int 41
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getNamespaceCount__ 23
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getNamespacePrefix___int 24
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getNamespaceURI___int 26
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getEventType__ 18
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getText__ 36
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getTextCharacters___int_char_1ARRAY_int_int 33
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getTextCharacters__ 32
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getTextStart__ 35
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getTextLength__ 34
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getEncoding__ 17
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_hasText__ 40
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getLocation__ 20
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getName__ 21
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getLocalName__ 19
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_hasName__ 38
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getNamespaceURI__ 25
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getPrefix__ 30
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getVersion__ 37
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_isStandalone__ 44
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_standaloneSet__ 50
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getCharacterEncodingScheme__ 15
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getPITarget__ 29
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getPIData__ 28
+#define XMLVM_VTABLE_IDX_javax_xml_stream_util_ReaderDelegate_getProperty___java_lang_String 31
+
+void __INIT_javax_xml_stream_util_ReaderDelegate();
+void __INIT_IMPL_javax_xml_stream_util_ReaderDelegate();
+void __DELETE_javax_xml_stream_util_ReaderDelegate(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_javax_xml_stream_util_ReaderDelegate(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_javax_xml_stream_util_ReaderDelegate();
+JAVA_OBJECT __NEW_INSTANCE_javax_xml_stream_util_ReaderDelegate();
+void javax_xml_stream_util_ReaderDelegate___INIT___(JAVA_OBJECT me);
+void javax_xml_stream_util_ReaderDelegate___INIT____javax_xml_stream_XMLStreamReader(JAVA_OBJECT me, JAVA_OBJECT n1);
+void javax_xml_stream_util_ReaderDelegate_setParent___javax_xml_stream_XMLStreamReader(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getParent__(JAVA_OBJECT me);
+// Vtable index: 48
+JAVA_INT javax_xml_stream_util_ReaderDelegate_next__(JAVA_OBJECT me);
+// Vtable index: 47
+JAVA_INT javax_xml_stream_util_ReaderDelegate_nextTag__(JAVA_OBJECT me);
+// Vtable index: 16
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getElementText__(JAVA_OBJECT me);
+// Vtable index: 49
+void javax_xml_stream_util_ReaderDelegate_require___int_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_INT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 39
+JAVA_BOOLEAN javax_xml_stream_util_ReaderDelegate_hasNext__(JAVA_OBJECT me);
+// Vtable index: 6
+void javax_xml_stream_util_ReaderDelegate_close__(JAVA_OBJECT me);
+// Vtable index: 27
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getNamespaceURI___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 22
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getNamespaceContext__(JAVA_OBJECT me);
+// Vtable index: 45
+JAVA_BOOLEAN javax_xml_stream_util_ReaderDelegate_isStartElement__(JAVA_OBJECT me);
+// Vtable index: 43
+JAVA_BOOLEAN javax_xml_stream_util_ReaderDelegate_isEndElement__(JAVA_OBJECT me);
+// Vtable index: 42
+JAVA_BOOLEAN javax_xml_stream_util_ReaderDelegate_isCharacters__(JAVA_OBJECT me);
+// Vtable index: 46
+JAVA_BOOLEAN javax_xml_stream_util_ReaderDelegate_isWhiteSpace__(JAVA_OBJECT me);
+// Vtable index: 14
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getAttributeValue___java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 7
+JAVA_INT javax_xml_stream_util_ReaderDelegate_getAttributeCount__(JAVA_OBJECT me);
+// Vtable index: 9
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getAttributeName___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 11
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getAttributePrefix___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 10
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getAttributeNamespace___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 8
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getAttributeLocalName___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 12
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getAttributeType___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 13
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getAttributeValue___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 41
+JAVA_BOOLEAN javax_xml_stream_util_ReaderDelegate_isAttributeSpecified___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 23
+JAVA_INT javax_xml_stream_util_ReaderDelegate_getNamespaceCount__(JAVA_OBJECT me);
+// Vtable index: 24
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getNamespacePrefix___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 26
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getNamespaceURI___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 18
+JAVA_INT javax_xml_stream_util_ReaderDelegate_getEventType__(JAVA_OBJECT me);
+// Vtable index: 36
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getText__(JAVA_OBJECT me);
+// Vtable index: 33
+JAVA_INT javax_xml_stream_util_ReaderDelegate_getTextCharacters___int_char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_OBJECT n2, JAVA_INT n3, JAVA_INT n4);
+// Vtable index: 32
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getTextCharacters__(JAVA_OBJECT me);
+// Vtable index: 35
+JAVA_INT javax_xml_stream_util_ReaderDelegate_getTextStart__(JAVA_OBJECT me);
+// Vtable index: 34
+JAVA_INT javax_xml_stream_util_ReaderDelegate_getTextLength__(JAVA_OBJECT me);
+// Vtable index: 17
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getEncoding__(JAVA_OBJECT me);
+// Vtable index: 40
+JAVA_BOOLEAN javax_xml_stream_util_ReaderDelegate_hasText__(JAVA_OBJECT me);
+// Vtable index: 20
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getLocation__(JAVA_OBJECT me);
+// Vtable index: 21
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getName__(JAVA_OBJECT me);
+// Vtable index: 19
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getLocalName__(JAVA_OBJECT me);
+// Vtable index: 38
+JAVA_BOOLEAN javax_xml_stream_util_ReaderDelegate_hasName__(JAVA_OBJECT me);
+// Vtable index: 25
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getNamespaceURI__(JAVA_OBJECT me);
+// Vtable index: 30
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getPrefix__(JAVA_OBJECT me);
+// Vtable index: 37
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getVersion__(JAVA_OBJECT me);
+// Vtable index: 44
+JAVA_BOOLEAN javax_xml_stream_util_ReaderDelegate_isStandalone__(JAVA_OBJECT me);
+// Vtable index: 50
+JAVA_BOOLEAN javax_xml_stream_util_ReaderDelegate_standaloneSet__(JAVA_OBJECT me);
+// Vtable index: 15
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getCharacterEncodingScheme__(JAVA_OBJECT me);
+// Vtable index: 29
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getPITarget__(JAVA_OBJECT me);
+// Vtable index: 28
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getPIData__(JAVA_OBJECT me);
+// Vtable index: 31
+JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getProperty___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

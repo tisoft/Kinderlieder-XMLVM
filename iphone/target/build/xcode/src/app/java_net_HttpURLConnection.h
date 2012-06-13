@@ -1,0 +1,218 @@
+#ifndef __JAVA_NET_HTTPURLCONNECTION__
+#define __JAVA_NET_HTTPURLCONNECTION__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_net_HttpURLConnection 0
+// Implemented interfaces:
+// Super Class:
+#include "java_net_URLConnection.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_io_InputStream
+#define XMLVM_FORWARD_DECL_java_io_InputStream
+XMLVM_FORWARD_DECL(java_io_InputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalArgumentException
+XMLVM_FORWARD_DECL(java_lang_IllegalArgumentException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalStateException
+XMLVM_FORWARD_DECL(java_lang_IllegalStateException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Integer
+#define XMLVM_FORWARD_DECL_java_lang_Integer
+XMLVM_FORWARD_DECL(java_lang_Integer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_SecurityManager
+#define XMLVM_FORWARD_DECL_java_lang_SecurityManager
+XMLVM_FORWARD_DECL(java_lang_SecurityManager)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_System
+#define XMLVM_FORWARD_DECL_java_lang_System
+XMLVM_FORWARD_DECL(java_lang_System)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_ProtocolException
+#define XMLVM_FORWARD_DECL_java_net_ProtocolException
+XMLVM_FORWARD_DECL(java_net_ProtocolException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_SocketPermission
+#define XMLVM_FORWARD_DECL_java_net_SocketPermission
+XMLVM_FORWARD_DECL(java_net_SocketPermission)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_URL
+#define XMLVM_FORWARD_DECL_java_net_URL
+XMLVM_FORWARD_DECL(java_net_URL)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_security_Permission
+#define XMLVM_FORWARD_DECL_java_security_Permission
+XMLVM_FORWARD_DECL(java_security_Permission)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_internal_nls_Messages
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_internal_nls_Messages
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_internal_nls_Messages)
+#endif
+// Class declarations for java.net.HttpURLConnection
+XMLVM_DEFINE_CLASS(java_net_HttpURLConnection, 24, XMLVM_ITABLE_SIZE_java_net_HttpURLConnection)
+
+extern JAVA_OBJECT __CLASS_java_net_HttpURLConnection;
+extern JAVA_OBJECT __CLASS_java_net_HttpURLConnection_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_net_HttpURLConnection_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_net_HttpURLConnection_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_net_HttpURLConnection
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_net_HttpURLConnection \
+    __INSTANCE_FIELDS_java_net_URLConnection; \
+    struct { \
+        JAVA_OBJECT methodTokens_; \
+        JAVA_OBJECT method_; \
+        JAVA_INT responseCode_; \
+        JAVA_OBJECT responseMessage_; \
+        JAVA_BOOLEAN instanceFollowRedirects_; \
+        JAVA_INT chunkLength_; \
+        JAVA_INT fixedContentLength_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_net_HttpURLConnection \
+    } java_net_HttpURLConnection
+
+struct java_net_HttpURLConnection {
+    __TIB_DEFINITION_java_net_HttpURLConnection* tib;
+    struct {
+        __INSTANCE_FIELDS_java_net_HttpURLConnection;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_net_HttpURLConnection
+#define XMLVM_FORWARD_DECL_java_net_HttpURLConnection
+typedef struct java_net_HttpURLConnection java_net_HttpURLConnection;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_net_HttpURLConnection 24
+#define XMLVM_VTABLE_IDX_java_net_HttpURLConnection_disconnect__ 20
+#define XMLVM_VTABLE_IDX_java_net_HttpURLConnection_getErrorStream__ 21
+#define XMLVM_VTABLE_IDX_java_net_HttpURLConnection_getPermission__ 15
+#define XMLVM_VTABLE_IDX_java_net_HttpURLConnection_getResponseCode__ 22
+#define XMLVM_VTABLE_IDX_java_net_HttpURLConnection_usingProxy__ 23
+#define XMLVM_VTABLE_IDX_java_net_HttpURLConnection_getHeaderFieldDate___java_lang_String_long 8
+
+void __INIT_java_net_HttpURLConnection();
+void __INIT_IMPL_java_net_HttpURLConnection();
+void __DELETE_java_net_HttpURLConnection(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_net_HttpURLConnection(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_net_HttpURLConnection();
+JAVA_OBJECT __NEW_INSTANCE_java_net_HttpURLConnection();
+JAVA_BOOLEAN java_net_HttpURLConnection_GET_followRedirects();
+void java_net_HttpURLConnection_PUT_followRedirects(JAVA_BOOLEAN v);
+JAVA_INT java_net_HttpURLConnection_GET_DEFAULT_CHUNK_LENGTH();
+void java_net_HttpURLConnection_PUT_DEFAULT_CHUNK_LENGTH(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_ACCEPTED();
+void java_net_HttpURLConnection_PUT_HTTP_ACCEPTED(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_BAD_GATEWAY();
+void java_net_HttpURLConnection_PUT_HTTP_BAD_GATEWAY(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_BAD_METHOD();
+void java_net_HttpURLConnection_PUT_HTTP_BAD_METHOD(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_BAD_REQUEST();
+void java_net_HttpURLConnection_PUT_HTTP_BAD_REQUEST(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_CLIENT_TIMEOUT();
+void java_net_HttpURLConnection_PUT_HTTP_CLIENT_TIMEOUT(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_CONFLICT();
+void java_net_HttpURLConnection_PUT_HTTP_CONFLICT(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_CREATED();
+void java_net_HttpURLConnection_PUT_HTTP_CREATED(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_ENTITY_TOO_LARGE();
+void java_net_HttpURLConnection_PUT_HTTP_ENTITY_TOO_LARGE(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_FORBIDDEN();
+void java_net_HttpURLConnection_PUT_HTTP_FORBIDDEN(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_GATEWAY_TIMEOUT();
+void java_net_HttpURLConnection_PUT_HTTP_GATEWAY_TIMEOUT(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_GONE();
+void java_net_HttpURLConnection_PUT_HTTP_GONE(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_INTERNAL_ERROR();
+void java_net_HttpURLConnection_PUT_HTTP_INTERNAL_ERROR(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_LENGTH_REQUIRED();
+void java_net_HttpURLConnection_PUT_HTTP_LENGTH_REQUIRED(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_MOVED_PERM();
+void java_net_HttpURLConnection_PUT_HTTP_MOVED_PERM(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_MOVED_TEMP();
+void java_net_HttpURLConnection_PUT_HTTP_MOVED_TEMP(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_MULT_CHOICE();
+void java_net_HttpURLConnection_PUT_HTTP_MULT_CHOICE(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_NO_CONTENT();
+void java_net_HttpURLConnection_PUT_HTTP_NO_CONTENT(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_NOT_ACCEPTABLE();
+void java_net_HttpURLConnection_PUT_HTTP_NOT_ACCEPTABLE(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_NOT_AUTHORITATIVE();
+void java_net_HttpURLConnection_PUT_HTTP_NOT_AUTHORITATIVE(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_NOT_FOUND();
+void java_net_HttpURLConnection_PUT_HTTP_NOT_FOUND(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_NOT_IMPLEMENTED();
+void java_net_HttpURLConnection_PUT_HTTP_NOT_IMPLEMENTED(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_NOT_MODIFIED();
+void java_net_HttpURLConnection_PUT_HTTP_NOT_MODIFIED(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_OK();
+void java_net_HttpURLConnection_PUT_HTTP_OK(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_PARTIAL();
+void java_net_HttpURLConnection_PUT_HTTP_PARTIAL(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_PAYMENT_REQUIRED();
+void java_net_HttpURLConnection_PUT_HTTP_PAYMENT_REQUIRED(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_PRECON_FAILED();
+void java_net_HttpURLConnection_PUT_HTTP_PRECON_FAILED(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_PROXY_AUTH();
+void java_net_HttpURLConnection_PUT_HTTP_PROXY_AUTH(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_REQ_TOO_LONG();
+void java_net_HttpURLConnection_PUT_HTTP_REQ_TOO_LONG(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_RESET();
+void java_net_HttpURLConnection_PUT_HTTP_RESET(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_SEE_OTHER();
+void java_net_HttpURLConnection_PUT_HTTP_SEE_OTHER(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_SERVER_ERROR();
+void java_net_HttpURLConnection_PUT_HTTP_SERVER_ERROR(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_USE_PROXY();
+void java_net_HttpURLConnection_PUT_HTTP_USE_PROXY(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_UNAUTHORIZED();
+void java_net_HttpURLConnection_PUT_HTTP_UNAUTHORIZED(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_UNSUPPORTED_TYPE();
+void java_net_HttpURLConnection_PUT_HTTP_UNSUPPORTED_TYPE(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_UNAVAILABLE();
+void java_net_HttpURLConnection_PUT_HTTP_UNAVAILABLE(JAVA_INT v);
+JAVA_INT java_net_HttpURLConnection_GET_HTTP_VERSION();
+void java_net_HttpURLConnection_PUT_HTTP_VERSION(JAVA_INT v);
+void java_net_HttpURLConnection___CLINIT_();
+void java_net_HttpURLConnection___INIT____java_net_URL(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 20
+void java_net_HttpURLConnection_disconnect__(JAVA_OBJECT me);
+// Vtable index: 21
+JAVA_OBJECT java_net_HttpURLConnection_getErrorStream__(JAVA_OBJECT me);
+JAVA_BOOLEAN java_net_HttpURLConnection_getFollowRedirects__();
+// Vtable index: 15
+JAVA_OBJECT java_net_HttpURLConnection_getPermission__(JAVA_OBJECT me);
+JAVA_OBJECT java_net_HttpURLConnection_getRequestMethod__(JAVA_OBJECT me);
+// Vtable index: 22
+JAVA_INT java_net_HttpURLConnection_getResponseCode__(JAVA_OBJECT me);
+JAVA_OBJECT java_net_HttpURLConnection_getResponseMessage__(JAVA_OBJECT me);
+void java_net_HttpURLConnection_setFollowRedirects___boolean(JAVA_BOOLEAN n1);
+void java_net_HttpURLConnection_setRequestMethod___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 23
+JAVA_BOOLEAN java_net_HttpURLConnection_usingProxy__(JAVA_OBJECT me);
+JAVA_BOOLEAN java_net_HttpURLConnection_getInstanceFollowRedirects__(JAVA_OBJECT me);
+void java_net_HttpURLConnection_setInstanceFollowRedirects___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+// Vtable index: 8
+JAVA_LONG java_net_HttpURLConnection_getHeaderFieldDate___java_lang_String_long(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_LONG n2);
+void java_net_HttpURLConnection_setFixedLengthStreamingMode___int(JAVA_OBJECT me, JAVA_INT n1);
+void java_net_HttpURLConnection_setChunkedStreamingMode___int(JAVA_OBJECT me, JAVA_INT n1);
+
+#endif

@@ -1,0 +1,100 @@
+#ifndef __ORG_XML_SAX_HELPERS_XMLREADERFACTORY__
+#define __ORG_XML_SAX_HELPERS_XMLREADERFACTORY__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_xml_sax_helpers_XMLReaderFactory 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_stream_SAXParser
+#define XMLVM_FORWARD_DECL_gnu_xml_stream_SAXParser
+XMLVM_FORWARD_DECL(gnu_xml_stream_SAXParser)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_ClassCastException
+#define XMLVM_FORWARD_DECL_java_lang_ClassCastException
+XMLVM_FORWARD_DECL(java_lang_ClassCastException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_ClassLoader
+#define XMLVM_FORWARD_DECL_java_lang_ClassLoader
+XMLVM_FORWARD_DECL(java_lang_ClassLoader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_ClassNotFoundException
+#define XMLVM_FORWARD_DECL_java_lang_ClassNotFoundException
+XMLVM_FORWARD_DECL(java_lang_ClassNotFoundException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_IllegalAccessException
+#define XMLVM_FORWARD_DECL_java_lang_IllegalAccessException
+XMLVM_FORWARD_DECL(java_lang_IllegalAccessException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_InstantiationException
+#define XMLVM_FORWARD_DECL_java_lang_InstantiationException
+XMLVM_FORWARD_DECL(java_lang_InstantiationException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_SAXException
+#define XMLVM_FORWARD_DECL_org_xml_sax_SAXException
+XMLVM_FORWARD_DECL(org_xml_sax_SAXException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_XMLReader
+#define XMLVM_FORWARD_DECL_org_xml_sax_XMLReader
+XMLVM_FORWARD_DECL(org_xml_sax_XMLReader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_helpers_NewInstance
+#define XMLVM_FORWARD_DECL_org_xml_sax_helpers_NewInstance
+XMLVM_FORWARD_DECL(org_xml_sax_helpers_NewInstance)
+#endif
+// Class declarations for org.xml.sax.helpers.XMLReaderFactory
+XMLVM_DEFINE_CLASS(org_xml_sax_helpers_XMLReaderFactory, 6, XMLVM_ITABLE_SIZE_org_xml_sax_helpers_XMLReaderFactory)
+
+extern JAVA_OBJECT __CLASS_org_xml_sax_helpers_XMLReaderFactory;
+extern JAVA_OBJECT __CLASS_org_xml_sax_helpers_XMLReaderFactory_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_helpers_XMLReaderFactory_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_helpers_XMLReaderFactory_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_xml_sax_helpers_XMLReaderFactory
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_xml_sax_helpers_XMLReaderFactory \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_org_xml_sax_helpers_XMLReaderFactory \
+    } org_xml_sax_helpers_XMLReaderFactory
+
+struct org_xml_sax_helpers_XMLReaderFactory {
+    __TIB_DEFINITION_org_xml_sax_helpers_XMLReaderFactory* tib;
+    struct {
+        __INSTANCE_FIELDS_org_xml_sax_helpers_XMLReaderFactory;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_helpers_XMLReaderFactory
+#define XMLVM_FORWARD_DECL_org_xml_sax_helpers_XMLReaderFactory
+typedef struct org_xml_sax_helpers_XMLReaderFactory org_xml_sax_helpers_XMLReaderFactory;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_xml_sax_helpers_XMLReaderFactory 6
+
+void __INIT_org_xml_sax_helpers_XMLReaderFactory();
+void __INIT_IMPL_org_xml_sax_helpers_XMLReaderFactory();
+void __DELETE_org_xml_sax_helpers_XMLReaderFactory(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_xml_sax_helpers_XMLReaderFactory(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_xml_sax_helpers_XMLReaderFactory();
+JAVA_OBJECT __NEW_INSTANCE_org_xml_sax_helpers_XMLReaderFactory();
+JAVA_OBJECT org_xml_sax_helpers_XMLReaderFactory_GET_property();
+void org_xml_sax_helpers_XMLReaderFactory_PUT_property(JAVA_OBJECT v);
+void org_xml_sax_helpers_XMLReaderFactory___INIT___(JAVA_OBJECT me);
+JAVA_OBJECT org_xml_sax_helpers_XMLReaderFactory_createXMLReader__();
+JAVA_OBJECT org_xml_sax_helpers_XMLReaderFactory_createXMLReader___java_lang_String(JAVA_OBJECT n1);
+JAVA_OBJECT org_xml_sax_helpers_XMLReaderFactory_loadClass___java_lang_ClassLoader_java_lang_String(JAVA_OBJECT n1, JAVA_OBJECT n2);
+
+#endif

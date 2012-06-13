@@ -1,0 +1,37 @@
+#ifndef __JAVA_NIO_CHANNELS_SCATTERINGBYTECHANNEL__
+#define __JAVA_NIO_CHANNELS_SCATTERINGBYTECHANNEL__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_java_nio_channels_ScatteringByteChannel_read___java_nio_ByteBuffer_1ARRAY 20
+#define XMLVM_ITABLE_IDX_java_nio_channels_ScatteringByteChannel_read___java_nio_ByteBuffer_1ARRAY_int_int 21
+#define XMLVM_ITABLE_IDX_java_nio_channels_ScatteringByteChannel_close__ 17
+#define XMLVM_ITABLE_IDX_java_nio_channels_ScatteringByteChannel_isOpen__ 18
+#define XMLVM_ITABLE_IDX_java_nio_channels_ScatteringByteChannel_read___java_nio_ByteBuffer 19
+// Implemented interfaces:
+#include "java_nio_channels_ReadableByteChannel.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_nio_ByteBuffer
+#define XMLVM_FORWARD_DECL_java_nio_ByteBuffer
+XMLVM_FORWARD_DECL(java_nio_ByteBuffer)
+#endif
+
+XMLVM_DEFINE_CLASS(java_nio_channels_ScatteringByteChannel, 0, 0)
+
+extern JAVA_OBJECT __CLASS_java_nio_channels_ScatteringByteChannel;
+extern JAVA_OBJECT __CLASS_java_nio_channels_ScatteringByteChannel_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_nio_channels_ScatteringByteChannel_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_nio_channels_ScatteringByteChannel_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_java_nio_channels_ScatteringByteChannel
+#define XMLVM_FORWARD_DECL_java_nio_channels_ScatteringByteChannel
+typedef struct java_nio_channels_ScatteringByteChannel java_nio_channels_ScatteringByteChannel;
+#endif
+
+void __INIT_java_nio_channels_ScatteringByteChannel();
+void __INIT_IMPL_java_nio_channels_ScatteringByteChannel();
+
+#endif

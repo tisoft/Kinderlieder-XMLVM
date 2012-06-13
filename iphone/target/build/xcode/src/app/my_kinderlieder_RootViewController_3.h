@@ -1,0 +1,98 @@
+#ifndef __MY_KINDERLIEDER_ROOTVIEWCONTROLLER_3__
+#define __MY_KINDERLIEDER_ROOTVIEWCONTROLLER_3__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_my_kinderlieder_RootViewController_3 0
+// Implemented interfaces:
+// Super Class:
+#include "org_xmlvm_iphone_UITableViewDataSource.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_List
+#define XMLVM_FORWARD_DECL_java_util_List
+XMLVM_FORWARD_DECL(java_util_List)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Map
+#define XMLVM_FORWARD_DECL_java_util_Map
+XMLVM_FORWARD_DECL(java_util_Map)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_RootViewController
+#define XMLVM_FORWARD_DECL_my_kinderlieder_RootViewController
+XMLVM_FORWARD_DECL(my_kinderlieder_RootViewController)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_SongInfo
+#define XMLVM_FORWARD_DECL_my_kinderlieder_SongInfo
+XMLVM_FORWARD_DECL(my_kinderlieder_SongInfo)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSIndexPath
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSIndexPath
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_NSIndexPath)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UILabel
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UILabel
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_UILabel)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UITableView
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UITableView
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_UITableView)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UITableViewCell
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UITableViewCell
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_UITableViewCell)
+#endif
+// Class declarations for my.kinderlieder.RootViewController$3
+XMLVM_DEFINE_CLASS(my_kinderlieder_RootViewController_3, 10, XMLVM_ITABLE_SIZE_my_kinderlieder_RootViewController_3)
+
+extern JAVA_OBJECT __CLASS_my_kinderlieder_RootViewController_3;
+extern JAVA_OBJECT __CLASS_my_kinderlieder_RootViewController_3_1ARRAY;
+extern JAVA_OBJECT __CLASS_my_kinderlieder_RootViewController_3_2ARRAY;
+extern JAVA_OBJECT __CLASS_my_kinderlieder_RootViewController_3_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_my_kinderlieder_RootViewController_3
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_my_kinderlieder_RootViewController_3 \
+    __INSTANCE_FIELDS_org_xmlvm_iphone_UITableViewDataSource; \
+    struct { \
+        JAVA_OBJECT this_0_; \
+        __ADDITIONAL_INSTANCE_FIELDS_my_kinderlieder_RootViewController_3 \
+    } my_kinderlieder_RootViewController_3
+
+struct my_kinderlieder_RootViewController_3 {
+    __TIB_DEFINITION_my_kinderlieder_RootViewController_3* tib;
+    struct {
+        __INSTANCE_FIELDS_my_kinderlieder_RootViewController_3;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_RootViewController_3
+#define XMLVM_FORWARD_DECL_my_kinderlieder_RootViewController_3
+typedef struct my_kinderlieder_RootViewController_3 my_kinderlieder_RootViewController_3;
+#endif
+
+#define XMLVM_VTABLE_SIZE_my_kinderlieder_RootViewController_3 10
+#define XMLVM_VTABLE_IDX_my_kinderlieder_RootViewController_3_cellForRowAtIndexPath___org_xmlvm_iphone_UITableView_org_xmlvm_iphone_NSIndexPath 7
+#define XMLVM_VTABLE_IDX_my_kinderlieder_RootViewController_3_numberOfRowsInSection___org_xmlvm_iphone_UITableView_int 9
+
+void __INIT_my_kinderlieder_RootViewController_3();
+void __INIT_IMPL_my_kinderlieder_RootViewController_3();
+void __DELETE_my_kinderlieder_RootViewController_3(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_my_kinderlieder_RootViewController_3(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_my_kinderlieder_RootViewController_3();
+JAVA_OBJECT __NEW_INSTANCE_my_kinderlieder_RootViewController_3();
+void my_kinderlieder_RootViewController_3___INIT____my_kinderlieder_RootViewController(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 7
+JAVA_OBJECT my_kinderlieder_RootViewController_3_cellForRowAtIndexPath___org_xmlvm_iphone_UITableView_org_xmlvm_iphone_NSIndexPath(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 9
+JAVA_INT my_kinderlieder_RootViewController_3_numberOfRowsInSection___org_xmlvm_iphone_UITableView_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2);
+
+#endif

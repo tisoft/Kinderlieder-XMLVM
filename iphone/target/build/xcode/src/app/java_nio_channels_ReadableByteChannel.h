@@ -1,0 +1,35 @@
+#ifndef __JAVA_NIO_CHANNELS_READABLEBYTECHANNEL__
+#define __JAVA_NIO_CHANNELS_READABLEBYTECHANNEL__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_java_nio_channels_ReadableByteChannel_read___java_nio_ByteBuffer 16
+#define XMLVM_ITABLE_IDX_java_nio_channels_ReadableByteChannel_close__ 14
+#define XMLVM_ITABLE_IDX_java_nio_channels_ReadableByteChannel_isOpen__ 15
+// Implemented interfaces:
+#include "java_nio_channels_Channel.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_nio_ByteBuffer
+#define XMLVM_FORWARD_DECL_java_nio_ByteBuffer
+XMLVM_FORWARD_DECL(java_nio_ByteBuffer)
+#endif
+
+XMLVM_DEFINE_CLASS(java_nio_channels_ReadableByteChannel, 0, 0)
+
+extern JAVA_OBJECT __CLASS_java_nio_channels_ReadableByteChannel;
+extern JAVA_OBJECT __CLASS_java_nio_channels_ReadableByteChannel_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_nio_channels_ReadableByteChannel_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_nio_channels_ReadableByteChannel_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_java_nio_channels_ReadableByteChannel
+#define XMLVM_FORWARD_DECL_java_nio_channels_ReadableByteChannel
+typedef struct java_nio_channels_ReadableByteChannel java_nio_channels_ReadableByteChannel;
+#endif
+
+void __INIT_java_nio_channels_ReadableByteChannel();
+void __INIT_IMPL_java_nio_channels_ReadableByteChannel();
+
+#endif

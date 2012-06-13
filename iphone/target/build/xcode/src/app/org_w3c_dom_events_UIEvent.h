@@ -1,0 +1,45 @@
+#ifndef __ORG_W3C_DOM_EVENTS_UIEVENT__
+#define __ORG_W3C_DOM_EVENTS_UIEVENT__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_UIEvent_getView__ 18
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_UIEvent_getDetail__ 13
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_UIEvent_initUIEvent___java_lang_String_boolean_boolean_org_w3c_dom_views_AbstractView_int 20
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_UIEvent_getBubbles__ 10
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_UIEvent_getCancelable__ 11
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_UIEvent_getCurrentTarget__ 12
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_UIEvent_getEventPhase__ 14
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_UIEvent_getTarget__ 15
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_UIEvent_getTimeStamp__ 16
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_UIEvent_getType__ 17
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_UIEvent_initEvent___java_lang_String_boolean_boolean 19
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_UIEvent_preventDefault__ 21
+#define XMLVM_ITABLE_IDX_org_w3c_dom_events_UIEvent_stopPropagation__ 22
+// Implemented interfaces:
+#include "org_w3c_dom_events_Event.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+
+XMLVM_DEFINE_CLASS(org_w3c_dom_events_UIEvent, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_w3c_dom_events_UIEvent;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_events_UIEvent_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_events_UIEvent_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_events_UIEvent_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_events_UIEvent
+#define XMLVM_FORWARD_DECL_org_w3c_dom_events_UIEvent
+typedef struct org_w3c_dom_events_UIEvent org_w3c_dom_events_UIEvent;
+#endif
+
+void __INIT_org_w3c_dom_events_UIEvent();
+void __INIT_IMPL_org_w3c_dom_events_UIEvent();
+
+#endif

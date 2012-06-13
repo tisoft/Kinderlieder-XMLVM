@@ -1,0 +1,83 @@
+#ifndef __GNU_XML_PIPELINE_VALIDATIONCONSUMER_MIXEDRECOGNIZER__
+#define __GNU_XML_PIPELINE_VALIDATIONCONSUMER_MIXEDRECOGNIZER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer 0
+// Implemented interfaces:
+// Super Class:
+#include "gnu_xml_pipeline_ValidationConsumer_Recognizer.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_pipeline_ValidationConsumer
+#define XMLVM_FORWARD_DECL_gnu_xml_pipeline_ValidationConsumer
+XMLVM_FORWARD_DECL(gnu_xml_pipeline_ValidationConsumer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_pipeline_ValidationConsumer_ElementInfo
+#define XMLVM_FORWARD_DECL_gnu_xml_pipeline_ValidationConsumer_ElementInfo
+XMLVM_FORWARD_DECL(gnu_xml_pipeline_ValidationConsumer_ElementInfo)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_StringBuilder
+#define XMLVM_FORWARD_DECL_java_lang_StringBuilder
+XMLVM_FORWARD_DECL(java_lang_StringBuilder)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_StringTokenizer
+#define XMLVM_FORWARD_DECL_java_util_StringTokenizer
+XMLVM_FORWARD_DECL(java_util_StringTokenizer)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Vector
+#define XMLVM_FORWARD_DECL_java_util_Vector
+XMLVM_FORWARD_DECL(java_util_Vector)
+#endif
+// Class declarations for gnu.xml.pipeline.ValidationConsumer$MixedRecognizer
+XMLVM_DEFINE_CLASS(gnu_xml_pipeline_ValidationConsumer_MixedRecognizer, 9, XMLVM_ITABLE_SIZE_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer \
+    __INSTANCE_FIELDS_gnu_xml_pipeline_ValidationConsumer_Recognizer; \
+    struct { \
+        JAVA_OBJECT permitted_; \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer \
+    } gnu_xml_pipeline_ValidationConsumer_MixedRecognizer
+
+struct gnu_xml_pipeline_ValidationConsumer_MixedRecognizer {
+    __TIB_DEFINITION_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer
+#define XMLVM_FORWARD_DECL_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer
+typedef struct gnu_xml_pipeline_ValidationConsumer_MixedRecognizer gnu_xml_pipeline_ValidationConsumer_MixedRecognizer;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer 9
+#define XMLVM_VTABLE_IDX_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer_acceptElement___java_lang_String 7
+
+void __INIT_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer();
+void __INIT_IMPL_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer();
+void __DELETE_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer();
+void gnu_xml_pipeline_ValidationConsumer_MixedRecognizer___INIT____gnu_xml_pipeline_ValidationConsumer_ElementInfo_gnu_xml_pipeline_ValidationConsumer(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 7
+JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_MixedRecognizer_acceptElement___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

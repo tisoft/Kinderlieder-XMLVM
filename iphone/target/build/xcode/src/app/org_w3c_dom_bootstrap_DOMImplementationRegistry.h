@@ -1,0 +1,130 @@
+#ifndef __ORG_W3C_DOM_BOOTSTRAP_DOMIMPLEMENTATIONREGISTRY__
+#define __ORG_W3C_DOM_BOOTSTRAP_DOMIMPLEMENTATIONREGISTRY__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_w3c_dom_bootstrap_DOMImplementationRegistry 0
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_ImplementationSource
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_ImplementationSource
+XMLVM_FORWARD_DECL(gnu_xml_dom_ImplementationSource)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_BufferedReader
+#define XMLVM_FORWARD_DECL_java_io_BufferedReader
+XMLVM_FORWARD_DECL(java_io_BufferedReader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_InputStream
+#define XMLVM_FORWARD_DECL_java_io_InputStream
+XMLVM_FORWARD_DECL(java_io_InputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_InputStreamReader
+#define XMLVM_FORWARD_DECL_java_io_InputStreamReader
+XMLVM_FORWARD_DECL(java_io_InputStreamReader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_UnsupportedEncodingException
+#define XMLVM_FORWARD_DECL_java_io_UnsupportedEncodingException
+XMLVM_FORWARD_DECL(java_io_UnsupportedEncodingException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_ClassLoader
+#define XMLVM_FORWARD_DECL_java_lang_ClassLoader
+XMLVM_FORWARD_DECL(java_lang_ClassLoader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Exception
+#define XMLVM_FORWARD_DECL_java_lang_Exception
+XMLVM_FORWARD_DECL(java_lang_Exception)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NullPointerException
+#define XMLVM_FORWARD_DECL_java_lang_NullPointerException
+XMLVM_FORWARD_DECL(java_lang_NullPointerException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_System
+#define XMLVM_FORWARD_DECL_java_lang_System
+XMLVM_FORWARD_DECL(java_lang_System)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_security_AccessController
+#define XMLVM_FORWARD_DECL_java_security_AccessController
+XMLVM_FORWARD_DECL(java_security_AccessController)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Vector
+#define XMLVM_FORWARD_DECL_java_util_Vector
+XMLVM_FORWARD_DECL(java_util_Vector)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementation
+#define XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementation
+XMLVM_FORWARD_DECL(org_w3c_dom_DOMImplementation)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementationList
+#define XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementationList
+XMLVM_FORWARD_DECL(org_w3c_dom_DOMImplementationList)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementationSource
+#define XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementationSource
+XMLVM_FORWARD_DECL(org_w3c_dom_DOMImplementationSource)
+#endif
+// Class declarations for org.w3c.dom.bootstrap.DOMImplementationRegistry
+XMLVM_DEFINE_CLASS(org_w3c_dom_bootstrap_DOMImplementationRegistry, 6, XMLVM_ITABLE_SIZE_org_w3c_dom_bootstrap_DOMImplementationRegistry)
+
+extern JAVA_OBJECT __CLASS_org_w3c_dom_bootstrap_DOMImplementationRegistry;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_bootstrap_DOMImplementationRegistry_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_bootstrap_DOMImplementationRegistry_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_w3c_dom_bootstrap_DOMImplementationRegistry_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_w3c_dom_bootstrap_DOMImplementationRegistry
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_w3c_dom_bootstrap_DOMImplementationRegistry \
+    __INSTANCE_FIELDS_java_lang_Object; \
+    struct { \
+        JAVA_OBJECT sources_; \
+        __ADDITIONAL_INSTANCE_FIELDS_org_w3c_dom_bootstrap_DOMImplementationRegistry \
+    } org_w3c_dom_bootstrap_DOMImplementationRegistry
+
+struct org_w3c_dom_bootstrap_DOMImplementationRegistry {
+    __TIB_DEFINITION_org_w3c_dom_bootstrap_DOMImplementationRegistry* tib;
+    struct {
+        __INSTANCE_FIELDS_org_w3c_dom_bootstrap_DOMImplementationRegistry;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_bootstrap_DOMImplementationRegistry
+#define XMLVM_FORWARD_DECL_org_w3c_dom_bootstrap_DOMImplementationRegistry
+typedef struct org_w3c_dom_bootstrap_DOMImplementationRegistry org_w3c_dom_bootstrap_DOMImplementationRegistry;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_w3c_dom_bootstrap_DOMImplementationRegistry 6
+
+void __INIT_org_w3c_dom_bootstrap_DOMImplementationRegistry();
+void __INIT_IMPL_org_w3c_dom_bootstrap_DOMImplementationRegistry();
+void __DELETE_org_w3c_dom_bootstrap_DOMImplementationRegistry(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_w3c_dom_bootstrap_DOMImplementationRegistry(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_w3c_dom_bootstrap_DOMImplementationRegistry();
+JAVA_OBJECT __NEW_INSTANCE_org_w3c_dom_bootstrap_DOMImplementationRegistry();
+JAVA_OBJECT org_w3c_dom_bootstrap_DOMImplementationRegistry_GET_PROPERTY();
+void org_w3c_dom_bootstrap_DOMImplementationRegistry_PUT_PROPERTY(JAVA_OBJECT v);
+JAVA_INT org_w3c_dom_bootstrap_DOMImplementationRegistry_GET_DEFAULT_LINE_LENGTH();
+void org_w3c_dom_bootstrap_DOMImplementationRegistry_PUT_DEFAULT_LINE_LENGTH(JAVA_INT v);
+void org_w3c_dom_bootstrap_DOMImplementationRegistry___INIT____java_util_Vector(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT org_w3c_dom_bootstrap_DOMImplementationRegistry_newInstance__();
+JAVA_OBJECT org_w3c_dom_bootstrap_DOMImplementationRegistry_getDOMImplementation___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT org_w3c_dom_bootstrap_DOMImplementationRegistry_getDOMImplementationList___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+void org_w3c_dom_bootstrap_DOMImplementationRegistry_addSource___org_w3c_dom_DOMImplementationSource(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT org_w3c_dom_bootstrap_DOMImplementationRegistry_getClassLoader__();
+JAVA_OBJECT org_w3c_dom_bootstrap_DOMImplementationRegistry_getServiceValue___java_lang_ClassLoader(JAVA_OBJECT n1);
+JAVA_BOOLEAN org_w3c_dom_bootstrap_DOMImplementationRegistry_isJRE11__();
+JAVA_OBJECT org_w3c_dom_bootstrap_DOMImplementationRegistry_getContextClassLoader__();
+JAVA_OBJECT org_w3c_dom_bootstrap_DOMImplementationRegistry_getSystemProperty___java_lang_String(JAVA_OBJECT n1);
+JAVA_OBJECT org_w3c_dom_bootstrap_DOMImplementationRegistry_getResourceAsStream___java_lang_ClassLoader_java_lang_String(JAVA_OBJECT n1, JAVA_OBJECT n2);
+
+#endif

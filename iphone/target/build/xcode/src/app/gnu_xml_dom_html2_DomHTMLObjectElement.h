@@ -1,0 +1,200 @@
+#ifndef __GNU_XML_DOM_HTML2_DOMHTMLOBJECTELEMENT__
+#define __GNU_XML_DOM_HTML2_DOMHTMLOBJECTELEMENT__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_dom_html2_DomHTMLObjectElement 271
+// Implemented interfaces:
+#include "org_w3c_dom_html2_HTMLObjectElement.h"
+// Super Class:
+#include "gnu_xml_dom_html2_DomHTMLElement.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLDocument
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLDocument
+XMLVM_FORWARD_DECL(gnu_xml_dom_html2_DomHTMLDocument)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Document
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Document
+XMLVM_FORWARD_DECL(org_w3c_dom_Document)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Node
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Node
+XMLVM_FORWARD_DECL(org_w3c_dom_Node)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_html2_HTMLFormElement
+#define XMLVM_FORWARD_DECL_org_w3c_dom_html2_HTMLFormElement
+XMLVM_FORWARD_DECL(org_w3c_dom_html2_HTMLFormElement)
+#endif
+// Class declarations for gnu.xml.dom.html2.DomHTMLObjectElement
+XMLVM_DEFINE_CLASS(gnu_xml_dom_html2_DomHTMLObjectElement, 117, XMLVM_ITABLE_SIZE_gnu_xml_dom_html2_DomHTMLObjectElement)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLObjectElement;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLObjectElement_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLObjectElement_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLObjectElement_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLObjectElement
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLObjectElement \
+    __INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLElement; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLObjectElement \
+    } gnu_xml_dom_html2_DomHTMLObjectElement
+
+struct gnu_xml_dom_html2_DomHTMLObjectElement {
+    __TIB_DEFINITION_gnu_xml_dom_html2_DomHTMLObjectElement* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLObjectElement;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLObjectElement
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLObjectElement
+typedef struct gnu_xml_dom_html2_DomHTMLObjectElement gnu_xml_dom_html2_DomHTMLObjectElement;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_dom_html2_DomHTMLObjectElement 117
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_getForm__ 90
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_getCode__ 86
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_setCode___java_lang_String 105
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_getAlign__ 81
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_setAlign___java_lang_String 100
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_getArchive__ 82
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_setArchive___java_lang_String 101
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_getBorder__ 83
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_setBorder___java_lang_String 102
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_getCodeBase__ 84
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_setCodeBase___java_lang_String 103
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_getCodeType__ 85
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_setCodeType___java_lang_String 104
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_getData__ 88
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_setData___java_lang_String 106
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_getDeclare__ 89
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_setDeclare___boolean 107
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_getHeight__ 91
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_setHeight___java_lang_String 108
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_getHspace__ 92
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_setHspace___int 109
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_getName__ 93
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_setName___java_lang_String 110
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_getStandby__ 94
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_setStandby___java_lang_String 111
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_getTabIndex__ 95
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_setTabIndex___int 112
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_getType__ 96
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_setType___java_lang_String 113
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_getUseMap__ 97
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_setUseMap___java_lang_String 114
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_getVspace__ 98
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_setVspace___int 115
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_getWidth__ 99
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_setWidth___java_lang_String 116
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLObjectElement_getContentDocument__ 87
+
+void __INIT_gnu_xml_dom_html2_DomHTMLObjectElement();
+void __INIT_IMPL_gnu_xml_dom_html2_DomHTMLObjectElement();
+void __DELETE_gnu_xml_dom_html2_DomHTMLObjectElement(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_dom_html2_DomHTMLObjectElement(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_dom_html2_DomHTMLObjectElement();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_dom_html2_DomHTMLObjectElement();
+void gnu_xml_dom_html2_DomHTMLObjectElement___INIT____gnu_xml_dom_html2_DomHTMLDocument_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 90
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getForm__(JAVA_OBJECT me);
+// Vtable index: 86
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getCode__(JAVA_OBJECT me);
+// Vtable index: 105
+void gnu_xml_dom_html2_DomHTMLObjectElement_setCode___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getJavaCode__(JAVA_OBJECT me);
+void gnu_xml_dom_html2_DomHTMLObjectElement_setJavaCode___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getObject__(JAVA_OBJECT me);
+void gnu_xml_dom_html2_DomHTMLObjectElement_setObject___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getJavaObject__(JAVA_OBJECT me);
+void gnu_xml_dom_html2_DomHTMLObjectElement_setJavaObject___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 81
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getAlign__(JAVA_OBJECT me);
+// Vtable index: 100
+void gnu_xml_dom_html2_DomHTMLObjectElement_setAlign___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 82
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getArchive__(JAVA_OBJECT me);
+// Vtable index: 101
+void gnu_xml_dom_html2_DomHTMLObjectElement_setArchive___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getJavaArchive__(JAVA_OBJECT me);
+void gnu_xml_dom_html2_DomHTMLObjectElement_setJavaArchive___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 83
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getBorder__(JAVA_OBJECT me);
+// Vtable index: 102
+void gnu_xml_dom_html2_DomHTMLObjectElement_setBorder___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 84
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getCodeBase__(JAVA_OBJECT me);
+// Vtable index: 103
+void gnu_xml_dom_html2_DomHTMLObjectElement_setCodeBase___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getJavaCodeBase__(JAVA_OBJECT me);
+void gnu_xml_dom_html2_DomHTMLObjectElement_setJavaCodeBase___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 85
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getCodeType__(JAVA_OBJECT me);
+// Vtable index: 104
+void gnu_xml_dom_html2_DomHTMLObjectElement_setCodeType___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 88
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getData__(JAVA_OBJECT me);
+// Vtable index: 106
+void gnu_xml_dom_html2_DomHTMLObjectElement_setData___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 89
+JAVA_BOOLEAN gnu_xml_dom_html2_DomHTMLObjectElement_getDeclare__(JAVA_OBJECT me);
+// Vtable index: 107
+void gnu_xml_dom_html2_DomHTMLObjectElement_setDeclare___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+// Vtable index: 91
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getHeight__(JAVA_OBJECT me);
+// Vtable index: 108
+void gnu_xml_dom_html2_DomHTMLObjectElement_setHeight___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 92
+JAVA_INT gnu_xml_dom_html2_DomHTMLObjectElement_getHspace__(JAVA_OBJECT me);
+// Vtable index: 109
+void gnu_xml_dom_html2_DomHTMLObjectElement_setHspace___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 93
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getName__(JAVA_OBJECT me);
+// Vtable index: 110
+void gnu_xml_dom_html2_DomHTMLObjectElement_setName___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 94
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getStandby__(JAVA_OBJECT me);
+// Vtable index: 111
+void gnu_xml_dom_html2_DomHTMLObjectElement_setStandby___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 95
+JAVA_INT gnu_xml_dom_html2_DomHTMLObjectElement_getTabIndex__(JAVA_OBJECT me);
+// Vtable index: 112
+void gnu_xml_dom_html2_DomHTMLObjectElement_setTabIndex___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 96
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getType__(JAVA_OBJECT me);
+// Vtable index: 113
+void gnu_xml_dom_html2_DomHTMLObjectElement_setType___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getJavaType__(JAVA_OBJECT me);
+void gnu_xml_dom_html2_DomHTMLObjectElement_setJavaType___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 97
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getUseMap__(JAVA_OBJECT me);
+// Vtable index: 114
+void gnu_xml_dom_html2_DomHTMLObjectElement_setUseMap___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 98
+JAVA_INT gnu_xml_dom_html2_DomHTMLObjectElement_getVspace__(JAVA_OBJECT me);
+// Vtable index: 115
+void gnu_xml_dom_html2_DomHTMLObjectElement_setVspace___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 99
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getWidth__(JAVA_OBJECT me);
+// Vtable index: 116
+void gnu_xml_dom_html2_DomHTMLObjectElement_setWidth___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 87
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getContentDocument__(JAVA_OBJECT me);
+void gnu_xml_dom_html2_DomHTMLObjectElement_setMayscript___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getMayscript__(JAVA_OBJECT me);
+void gnu_xml_dom_html2_DomHTMLObjectElement_setScriptable___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getScriptable__(JAVA_OBJECT me);
+
+#endif

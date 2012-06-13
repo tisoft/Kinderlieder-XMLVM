@@ -1,0 +1,39 @@
+#ifndef __ORG_XML_SAX_EXT_ENTITYRESOLVER2__
+#define __ORG_XML_SAX_EXT_ENTITYRESOLVER2__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_xml_sax_ext_EntityResolver2_getExternalSubset___java_lang_String_java_lang_String 0
+#define XMLVM_ITABLE_IDX_org_xml_sax_ext_EntityResolver2_resolveEntity___java_lang_String_java_lang_String_java_lang_String_java_lang_String 2
+#define XMLVM_ITABLE_IDX_org_xml_sax_ext_EntityResolver2_resolveEntity___java_lang_String_java_lang_String 1
+// Implemented interfaces:
+#include "org_xml_sax_EntityResolver.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_InputSource
+#define XMLVM_FORWARD_DECL_org_xml_sax_InputSource
+XMLVM_FORWARD_DECL(org_xml_sax_InputSource)
+#endif
+
+XMLVM_DEFINE_CLASS(org_xml_sax_ext_EntityResolver2, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_xml_sax_ext_EntityResolver2;
+extern JAVA_OBJECT __CLASS_org_xml_sax_ext_EntityResolver2_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_ext_EntityResolver2_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_ext_EntityResolver2_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_ext_EntityResolver2
+#define XMLVM_FORWARD_DECL_org_xml_sax_ext_EntityResolver2
+typedef struct org_xml_sax_ext_EntityResolver2 org_xml_sax_ext_EntityResolver2;
+#endif
+
+void __INIT_org_xml_sax_ext_EntityResolver2();
+void __INIT_IMPL_org_xml_sax_ext_EntityResolver2();
+
+#endif

@@ -1,0 +1,35 @@
+#ifndef __ORG_XML_SAX_EXT_DECLHANDLER__
+#define __ORG_XML_SAX_EXT_DECLHANDLER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_xml_sax_ext_DeclHandler_elementDecl___java_lang_String_java_lang_String 23
+#define XMLVM_ITABLE_IDX_org_xml_sax_ext_DeclHandler_attributeDecl___java_lang_String_java_lang_String_java_lang_String_java_lang_String_java_lang_String 22
+#define XMLVM_ITABLE_IDX_org_xml_sax_ext_DeclHandler_internalEntityDecl___java_lang_String_java_lang_String 25
+#define XMLVM_ITABLE_IDX_org_xml_sax_ext_DeclHandler_externalEntityDecl___java_lang_String_java_lang_String_java_lang_String 24
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+
+XMLVM_DEFINE_CLASS(org_xml_sax_ext_DeclHandler, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_xml_sax_ext_DeclHandler;
+extern JAVA_OBJECT __CLASS_org_xml_sax_ext_DeclHandler_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_ext_DeclHandler_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_ext_DeclHandler_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_ext_DeclHandler
+#define XMLVM_FORWARD_DECL_org_xml_sax_ext_DeclHandler
+typedef struct org_xml_sax_ext_DeclHandler org_xml_sax_ext_DeclHandler;
+#endif
+
+void __INIT_org_xml_sax_ext_DeclHandler();
+void __INIT_IMPL_org_xml_sax_ext_DeclHandler();
+
+#endif

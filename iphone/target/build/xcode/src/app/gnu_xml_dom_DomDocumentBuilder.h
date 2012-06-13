@@ -1,0 +1,175 @@
+#ifndef __GNU_XML_DOM_DOMDOCUMENTBUILDER__
+#define __GNU_XML_DOM_DOMDOCUMENTBUILDER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_dom_DomDocumentBuilder 0
+// Implemented interfaces:
+// Super Class:
+#include "javax_xml_parsers_DocumentBuilder.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_io_File
+#define XMLVM_FORWARD_DECL_java_io_File
+XMLVM_FORWARD_DECL(java_io_File)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_IOException
+#define XMLVM_FORWARD_DECL_java_io_IOException
+XMLVM_FORWARD_DECL(java_io_IOException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_InputStream
+#define XMLVM_FORWARD_DECL_java_io_InputStream
+XMLVM_FORWARD_DECL(java_io_InputStream)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_io_Reader
+#define XMLVM_FORWARD_DECL_java_io_Reader
+XMLVM_FORWARD_DECL(java_io_Reader)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Boolean
+#define XMLVM_FORWARD_DECL_java_lang_Boolean
+XMLVM_FORWARD_DECL(java_lang_Boolean)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Class
+#define XMLVM_FORWARD_DECL_java_lang_Class
+XMLVM_FORWARD_DECL(java_lang_Class)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_System
+#define XMLVM_FORWARD_DECL_java_lang_System
+XMLVM_FORWARD_DECL(java_lang_System)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Throwable
+#define XMLVM_FORWARD_DECL_java_lang_Throwable
+XMLVM_FORWARD_DECL(java_lang_Throwable)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_MalformedURLException
+#define XMLVM_FORWARD_DECL_java_net_MalformedURLException
+XMLVM_FORWARD_DECL(java_net_MalformedURLException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_URL
+#define XMLVM_FORWARD_DECL_java_net_URL
+XMLVM_FORWARD_DECL(java_net_URL)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_DOMConfiguration
+#define XMLVM_FORWARD_DECL_org_w3c_dom_DOMConfiguration
+XMLVM_FORWARD_DECL(org_w3c_dom_DOMConfiguration)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementation
+#define XMLVM_FORWARD_DECL_org_w3c_dom_DOMImplementation
+XMLVM_FORWARD_DECL(org_w3c_dom_DOMImplementation)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_Document
+#define XMLVM_FORWARD_DECL_org_w3c_dom_Document
+XMLVM_FORWARD_DECL(org_w3c_dom_Document)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_ls_DOMImplementationLS
+#define XMLVM_FORWARD_DECL_org_w3c_dom_ls_DOMImplementationLS
+XMLVM_FORWARD_DECL(org_w3c_dom_ls_DOMImplementationLS)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSException
+#define XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSException
+XMLVM_FORWARD_DECL(org_w3c_dom_ls_LSException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSInput
+#define XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSInput
+XMLVM_FORWARD_DECL(org_w3c_dom_ls_LSInput)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSParser
+#define XMLVM_FORWARD_DECL_org_w3c_dom_ls_LSParser
+XMLVM_FORWARD_DECL(org_w3c_dom_ls_LSParser)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_EntityResolver
+#define XMLVM_FORWARD_DECL_org_xml_sax_EntityResolver
+XMLVM_FORWARD_DECL(org_xml_sax_EntityResolver)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_ErrorHandler
+#define XMLVM_FORWARD_DECL_org_xml_sax_ErrorHandler
+XMLVM_FORWARD_DECL(org_xml_sax_ErrorHandler)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_InputSource
+#define XMLVM_FORWARD_DECL_org_xml_sax_InputSource
+XMLVM_FORWARD_DECL(org_xml_sax_InputSource)
+#endif
+// Class declarations for gnu.xml.dom.DomDocumentBuilder
+XMLVM_DEFINE_CLASS(gnu_xml_dom_DomDocumentBuilder, 17, XMLVM_ITABLE_SIZE_gnu_xml_dom_DomDocumentBuilder)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_DomDocumentBuilder;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_DomDocumentBuilder_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_DomDocumentBuilder_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_DomDocumentBuilder_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_DomDocumentBuilder
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_dom_DomDocumentBuilder \
+    __INSTANCE_FIELDS_javax_xml_parsers_DocumentBuilder; \
+    struct { \
+        JAVA_OBJECT impl_; \
+        JAVA_OBJECT ls_; \
+        JAVA_OBJECT parser_; \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_DomDocumentBuilder \
+    } gnu_xml_dom_DomDocumentBuilder
+
+struct gnu_xml_dom_DomDocumentBuilder {
+    __TIB_DEFINITION_gnu_xml_dom_DomDocumentBuilder* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_dom_DomDocumentBuilder;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_DomDocumentBuilder
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_DomDocumentBuilder
+typedef struct gnu_xml_dom_DomDocumentBuilder gnu_xml_dom_DomDocumentBuilder;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_dom_DomDocumentBuilder 17
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_DomDocumentBuilder_isNamespaceAware__ 7
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_DomDocumentBuilder_isValidating__ 8
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_DomDocumentBuilder_isXIncludeAware__ 9
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_DomDocumentBuilder_setEntityResolver___org_xml_sax_EntityResolver 15
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_DomDocumentBuilder_setErrorHandler___org_xml_sax_ErrorHandler 16
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_DomDocumentBuilder_getDOMImplementation__ 6
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_DomDocumentBuilder_newDocument__ 10
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_DomDocumentBuilder_parse___java_io_InputStream 11
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_DomDocumentBuilder_parse___java_io_InputStream_java_lang_String 12
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_DomDocumentBuilder_parse___java_lang_String 13
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_DomDocumentBuilder_parse___org_xml_sax_InputSource 14
+
+void __INIT_gnu_xml_dom_DomDocumentBuilder();
+void __INIT_IMPL_gnu_xml_dom_DomDocumentBuilder();
+void __DELETE_gnu_xml_dom_DomDocumentBuilder(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_dom_DomDocumentBuilder(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_dom_DomDocumentBuilder();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_dom_DomDocumentBuilder();
+void gnu_xml_dom_DomDocumentBuilder___INIT____org_w3c_dom_DOMImplementation_org_w3c_dom_ls_DOMImplementationLS_org_w3c_dom_ls_LSParser(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 7
+JAVA_BOOLEAN gnu_xml_dom_DomDocumentBuilder_isNamespaceAware__(JAVA_OBJECT me);
+// Vtable index: 8
+JAVA_BOOLEAN gnu_xml_dom_DomDocumentBuilder_isValidating__(JAVA_OBJECT me);
+// Vtable index: 9
+JAVA_BOOLEAN gnu_xml_dom_DomDocumentBuilder_isXIncludeAware__(JAVA_OBJECT me);
+// Vtable index: 15
+void gnu_xml_dom_DomDocumentBuilder_setEntityResolver___org_xml_sax_EntityResolver(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 16
+void gnu_xml_dom_DomDocumentBuilder_setErrorHandler___org_xml_sax_ErrorHandler(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 6
+JAVA_OBJECT gnu_xml_dom_DomDocumentBuilder_getDOMImplementation__(JAVA_OBJECT me);
+// Vtable index: 10
+JAVA_OBJECT gnu_xml_dom_DomDocumentBuilder_newDocument__(JAVA_OBJECT me);
+// Vtable index: 11
+JAVA_OBJECT gnu_xml_dom_DomDocumentBuilder_parse___java_io_InputStream(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 12
+JAVA_OBJECT gnu_xml_dom_DomDocumentBuilder_parse___java_io_InputStream_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+// Vtable index: 13
+JAVA_OBJECT gnu_xml_dom_DomDocumentBuilder_parse___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 14
+JAVA_OBJECT gnu_xml_dom_DomDocumentBuilder_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

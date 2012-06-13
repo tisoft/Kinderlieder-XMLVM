@@ -1,0 +1,88 @@
+#ifndef __ORG_APACHE_HARMONY_LUNI_NET_SOCKETOUTPUTSTREAM__
+#define __ORG_APACHE_HARMONY_LUNI_NET_SOCKETOUTPUTSTREAM__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_org_apache_harmony_luni_net_SocketOutputStream 2
+// Implemented interfaces:
+// Super Class:
+#include "java_io_OutputStream.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_ArrayIndexOutOfBoundsException
+#define XMLVM_FORWARD_DECL_java_lang_ArrayIndexOutOfBoundsException
+XMLVM_FORWARD_DECL(java_lang_ArrayIndexOutOfBoundsException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_NullPointerException
+#define XMLVM_FORWARD_DECL_java_lang_NullPointerException
+XMLVM_FORWARD_DECL(java_lang_NullPointerException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_net_SocketImpl
+#define XMLVM_FORWARD_DECL_java_net_SocketImpl
+XMLVM_FORWARD_DECL(java_net_SocketImpl)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_internal_nls_Messages
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_internal_nls_Messages
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_internal_nls_Messages)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_net_PlainSocketImpl
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_net_PlainSocketImpl
+XMLVM_FORWARD_DECL(org_apache_harmony_luni_net_PlainSocketImpl)
+#endif
+// Class declarations for org.apache.harmony.luni.net.SocketOutputStream
+XMLVM_DEFINE_CLASS(org_apache_harmony_luni_net_SocketOutputStream, 12, XMLVM_ITABLE_SIZE_org_apache_harmony_luni_net_SocketOutputStream)
+
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_net_SocketOutputStream;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_net_SocketOutputStream_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_net_SocketOutputStream_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_apache_harmony_luni_net_SocketOutputStream_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_net_SocketOutputStream
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_org_apache_harmony_luni_net_SocketOutputStream \
+    __INSTANCE_FIELDS_java_io_OutputStream; \
+    struct { \
+        JAVA_OBJECT socket_; \
+        __ADDITIONAL_INSTANCE_FIELDS_org_apache_harmony_luni_net_SocketOutputStream \
+    } org_apache_harmony_luni_net_SocketOutputStream
+
+struct org_apache_harmony_luni_net_SocketOutputStream {
+    __TIB_DEFINITION_org_apache_harmony_luni_net_SocketOutputStream* tib;
+    struct {
+        __INSTANCE_FIELDS_org_apache_harmony_luni_net_SocketOutputStream;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_org_apache_harmony_luni_net_SocketOutputStream
+#define XMLVM_FORWARD_DECL_org_apache_harmony_luni_net_SocketOutputStream
+typedef struct org_apache_harmony_luni_net_SocketOutputStream org_apache_harmony_luni_net_SocketOutputStream;
+#endif
+
+#define XMLVM_VTABLE_SIZE_org_apache_harmony_luni_net_SocketOutputStream 12
+#define XMLVM_VTABLE_IDX_org_apache_harmony_luni_net_SocketOutputStream_close__ 7
+#define XMLVM_VTABLE_IDX_org_apache_harmony_luni_net_SocketOutputStream_write___byte_1ARRAY 9
+#define XMLVM_VTABLE_IDX_org_apache_harmony_luni_net_SocketOutputStream_write___byte_1ARRAY_int_int 10
+#define XMLVM_VTABLE_IDX_org_apache_harmony_luni_net_SocketOutputStream_write___int 11
+
+void __INIT_org_apache_harmony_luni_net_SocketOutputStream();
+void __INIT_IMPL_org_apache_harmony_luni_net_SocketOutputStream();
+void __DELETE_org_apache_harmony_luni_net_SocketOutputStream(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_org_apache_harmony_luni_net_SocketOutputStream(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_org_apache_harmony_luni_net_SocketOutputStream();
+JAVA_OBJECT __NEW_INSTANCE_org_apache_harmony_luni_net_SocketOutputStream();
+void org_apache_harmony_luni_net_SocketOutputStream___INIT____java_net_SocketImpl(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 7
+void org_apache_harmony_luni_net_SocketOutputStream_close__(JAVA_OBJECT me);
+// Vtable index: 9
+void org_apache_harmony_luni_net_SocketOutputStream_write___byte_1ARRAY(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 10
+void org_apache_harmony_luni_net_SocketOutputStream_write___byte_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3);
+// Vtable index: 11
+void org_apache_harmony_luni_net_SocketOutputStream_write___int(JAVA_OBJECT me, JAVA_INT n1);
+
+#endif

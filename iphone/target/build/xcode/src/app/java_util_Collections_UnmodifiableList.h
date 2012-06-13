@@ -1,0 +1,120 @@
+#ifndef __JAVA_UTIL_COLLECTIONS_UNMODIFIABLELIST__
+#define __JAVA_UTIL_COLLECTIONS_UNMODIFIABLELIST__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_java_util_Collections_UnmodifiableList 78
+// Implemented interfaces:
+#include "java_util_List.h"
+// Super Class:
+#include "java_util_Collections_UnmodifiableCollection.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_UnsupportedOperationException
+#define XMLVM_FORWARD_DECL_java_lang_UnsupportedOperationException
+XMLVM_FORWARD_DECL(java_lang_UnsupportedOperationException)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Collection
+#define XMLVM_FORWARD_DECL_java_util_Collection
+XMLVM_FORWARD_DECL(java_util_Collection)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Collections_UnmodifiableList_1
+#define XMLVM_FORWARD_DECL_java_util_Collections_UnmodifiableList_1
+XMLVM_FORWARD_DECL(java_util_Collections_UnmodifiableList_1)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Collections_UnmodifiableRandomAccessList
+#define XMLVM_FORWARD_DECL_java_util_Collections_UnmodifiableRandomAccessList
+XMLVM_FORWARD_DECL(java_util_Collections_UnmodifiableRandomAccessList)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_ListIterator
+#define XMLVM_FORWARD_DECL_java_util_ListIterator
+XMLVM_FORWARD_DECL(java_util_ListIterator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_RandomAccess
+#define XMLVM_FORWARD_DECL_java_util_RandomAccess
+XMLVM_FORWARD_DECL(java_util_RandomAccess)
+#endif
+// Class declarations for java.util.Collections$UnmodifiableList
+XMLVM_DEFINE_CLASS(java_util_Collections_UnmodifiableList, 29, XMLVM_ITABLE_SIZE_java_util_Collections_UnmodifiableList)
+
+extern JAVA_OBJECT __CLASS_java_util_Collections_UnmodifiableList;
+extern JAVA_OBJECT __CLASS_java_util_Collections_UnmodifiableList_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_Collections_UnmodifiableList_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_util_Collections_UnmodifiableList_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_java_util_Collections_UnmodifiableList
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_java_util_Collections_UnmodifiableList \
+    __INSTANCE_FIELDS_java_util_Collections_UnmodifiableCollection; \
+    struct { \
+        JAVA_OBJECT list_; \
+        __ADDITIONAL_INSTANCE_FIELDS_java_util_Collections_UnmodifiableList \
+    } java_util_Collections_UnmodifiableList
+
+struct java_util_Collections_UnmodifiableList {
+    __TIB_DEFINITION_java_util_Collections_UnmodifiableList* tib;
+    struct {
+        __INSTANCE_FIELDS_java_util_Collections_UnmodifiableList;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_java_util_Collections_UnmodifiableList
+#define XMLVM_FORWARD_DECL_java_util_Collections_UnmodifiableList
+typedef struct java_util_Collections_UnmodifiableList java_util_Collections_UnmodifiableList;
+#endif
+
+#define XMLVM_VTABLE_SIZE_java_util_Collections_UnmodifiableList 29
+#define XMLVM_VTABLE_IDX_java_util_Collections_UnmodifiableList_add___int_java_lang_Object 20
+#define XMLVM_VTABLE_IDX_java_util_Collections_UnmodifiableList_addAll___int_java_util_Collection 19
+#define XMLVM_VTABLE_IDX_java_util_Collections_UnmodifiableList_equals___java_lang_Object 1
+#define XMLVM_VTABLE_IDX_java_util_Collections_UnmodifiableList_get___int 21
+#define XMLVM_VTABLE_IDX_java_util_Collections_UnmodifiableList_hashCode__ 4
+#define XMLVM_VTABLE_IDX_java_util_Collections_UnmodifiableList_indexOf___java_lang_Object 22
+#define XMLVM_VTABLE_IDX_java_util_Collections_UnmodifiableList_lastIndexOf___java_lang_Object 23
+#define XMLVM_VTABLE_IDX_java_util_Collections_UnmodifiableList_listIterator__ 24
+#define XMLVM_VTABLE_IDX_java_util_Collections_UnmodifiableList_listIterator___int 25
+#define XMLVM_VTABLE_IDX_java_util_Collections_UnmodifiableList_remove___int 26
+#define XMLVM_VTABLE_IDX_java_util_Collections_UnmodifiableList_set___int_java_lang_Object 27
+#define XMLVM_VTABLE_IDX_java_util_Collections_UnmodifiableList_subList___int_int 28
+
+void __INIT_java_util_Collections_UnmodifiableList();
+void __INIT_IMPL_java_util_Collections_UnmodifiableList();
+void __DELETE_java_util_Collections_UnmodifiableList(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_java_util_Collections_UnmodifiableList(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_java_util_Collections_UnmodifiableList();
+JAVA_OBJECT __NEW_INSTANCE_java_util_Collections_UnmodifiableList();
+JAVA_LONG java_util_Collections_UnmodifiableList_GET_serialVersionUID();
+void java_util_Collections_UnmodifiableList_PUT_serialVersionUID(JAVA_LONG v);
+void java_util_Collections_UnmodifiableList___INIT____java_util_List(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 20
+void java_util_Collections_UnmodifiableList_add___int_java_lang_Object(JAVA_OBJECT me, JAVA_INT n1, JAVA_OBJECT n2);
+// Vtable index: 19
+JAVA_BOOLEAN java_util_Collections_UnmodifiableList_addAll___int_java_util_Collection(JAVA_OBJECT me, JAVA_INT n1, JAVA_OBJECT n2);
+// Vtable index: 1
+JAVA_BOOLEAN java_util_Collections_UnmodifiableList_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 21
+JAVA_OBJECT java_util_Collections_UnmodifiableList_get___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 4
+JAVA_INT java_util_Collections_UnmodifiableList_hashCode__(JAVA_OBJECT me);
+// Vtable index: 22
+JAVA_INT java_util_Collections_UnmodifiableList_indexOf___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 23
+JAVA_INT java_util_Collections_UnmodifiableList_lastIndexOf___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 24
+JAVA_OBJECT java_util_Collections_UnmodifiableList_listIterator__(JAVA_OBJECT me);
+// Vtable index: 25
+JAVA_OBJECT java_util_Collections_UnmodifiableList_listIterator___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 26
+JAVA_OBJECT java_util_Collections_UnmodifiableList_remove___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 27
+JAVA_OBJECT java_util_Collections_UnmodifiableList_set___int_java_lang_Object(JAVA_OBJECT me, JAVA_INT n1, JAVA_OBJECT n2);
+// Vtable index: 28
+JAVA_OBJECT java_util_Collections_UnmodifiableList_subList___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2);
+JAVA_OBJECT java_util_Collections_UnmodifiableList_readResolve__(JAVA_OBJECT me);
+
+#endif

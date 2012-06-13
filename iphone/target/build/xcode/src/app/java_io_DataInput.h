@@ -1,0 +1,46 @@
+#ifndef __JAVA_IO_DATAINPUT__
+#define __JAVA_IO_DATAINPUT__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_java_io_DataInput_readBoolean__ 1
+#define XMLVM_ITABLE_IDX_java_io_DataInput_readByte__ 2
+#define XMLVM_ITABLE_IDX_java_io_DataInput_readChar__ 3
+#define XMLVM_ITABLE_IDX_java_io_DataInput_readDouble__ 4
+#define XMLVM_ITABLE_IDX_java_io_DataInput_readFloat__ 5
+#define XMLVM_ITABLE_IDX_java_io_DataInput_readFully___byte_1ARRAY 6
+#define XMLVM_ITABLE_IDX_java_io_DataInput_readFully___byte_1ARRAY_int_int 7
+#define XMLVM_ITABLE_IDX_java_io_DataInput_readInt__ 8
+#define XMLVM_ITABLE_IDX_java_io_DataInput_readLine__ 9
+#define XMLVM_ITABLE_IDX_java_io_DataInput_readLong__ 10
+#define XMLVM_ITABLE_IDX_java_io_DataInput_readShort__ 11
+#define XMLVM_ITABLE_IDX_java_io_DataInput_readUnsignedByte__ 13
+#define XMLVM_ITABLE_IDX_java_io_DataInput_readUnsignedShort__ 14
+#define XMLVM_ITABLE_IDX_java_io_DataInput_readUTF__ 12
+#define XMLVM_ITABLE_IDX_java_io_DataInput_skipBytes___int 15
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+
+XMLVM_DEFINE_CLASS(java_io_DataInput, 0, 0)
+
+extern JAVA_OBJECT __CLASS_java_io_DataInput;
+extern JAVA_OBJECT __CLASS_java_io_DataInput_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_io_DataInput_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_io_DataInput_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_java_io_DataInput
+#define XMLVM_FORWARD_DECL_java_io_DataInput
+typedef struct java_io_DataInput java_io_DataInput;
+#endif
+
+void __INIT_java_io_DataInput();
+void __INIT_IMPL_java_io_DataInput();
+
+#endif

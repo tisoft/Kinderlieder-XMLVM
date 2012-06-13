@@ -1,0 +1,112 @@
+#ifndef __GNU_XML_DOM_HTML2_DOMHTMLAREAELEMENT__
+#define __GNU_XML_DOM_HTML2_DOMHTMLAREAELEMENT__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_SIZE_gnu_xml_dom_html2_DomHTMLAreaElement 261
+// Implemented interfaces:
+#include "org_w3c_dom_html2_HTMLAreaElement.h"
+// Super Class:
+#include "gnu_xml_dom_html2_DomHTMLElement.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLDocument
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLDocument
+XMLVM_FORWARD_DECL(gnu_xml_dom_html2_DomHTMLDocument)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_Object
+#define XMLVM_FORWARD_DECL_java_lang_Object
+XMLVM_FORWARD_DECL(java_lang_Object)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+// Class declarations for gnu.xml.dom.html2.DomHTMLAreaElement
+XMLVM_DEFINE_CLASS(gnu_xml_dom_html2_DomHTMLAreaElement, 97, XMLVM_ITABLE_SIZE_gnu_xml_dom_html2_DomHTMLAreaElement)
+
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLAreaElement;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLAreaElement_1ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLAreaElement_2ARRAY;
+extern JAVA_OBJECT __CLASS_gnu_xml_dom_html2_DomHTMLAreaElement_3ARRAY;
+//XMLVM_BEGIN_DECLARATIONS
+#define __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLAreaElement
+//XMLVM_END_DECLARATIONS
+
+#define __INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLAreaElement \
+    __INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLElement; \
+    struct { \
+        __ADDITIONAL_INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLAreaElement \
+    } gnu_xml_dom_html2_DomHTMLAreaElement
+
+struct gnu_xml_dom_html2_DomHTMLAreaElement {
+    __TIB_DEFINITION_gnu_xml_dom_html2_DomHTMLAreaElement* tib;
+    struct {
+        __INSTANCE_FIELDS_gnu_xml_dom_html2_DomHTMLAreaElement;
+    } fields;
+};
+#ifndef XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLAreaElement
+#define XMLVM_FORWARD_DECL_gnu_xml_dom_html2_DomHTMLAreaElement
+typedef struct gnu_xml_dom_html2_DomHTMLAreaElement gnu_xml_dom_html2_DomHTMLAreaElement;
+#endif
+
+#define XMLVM_VTABLE_SIZE_gnu_xml_dom_html2_DomHTMLAreaElement 97
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAreaElement_getAccessKey__ 81
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAreaElement_setAccessKey___java_lang_String 89
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAreaElement_getAlt__ 82
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAreaElement_setAlt___java_lang_String 90
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAreaElement_getCoords__ 83
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAreaElement_setCoords___java_lang_String 91
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAreaElement_getHref__ 84
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAreaElement_setHref___java_lang_String 92
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAreaElement_getNoHref__ 85
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAreaElement_setNoHref___boolean 93
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAreaElement_getShape__ 86
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAreaElement_setShape___java_lang_String 94
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAreaElement_getTabIndex__ 87
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAreaElement_setTabIndex___int 95
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAreaElement_getTarget__ 88
+#define XMLVM_VTABLE_IDX_gnu_xml_dom_html2_DomHTMLAreaElement_setTarget___java_lang_String 96
+
+void __INIT_gnu_xml_dom_html2_DomHTMLAreaElement();
+void __INIT_IMPL_gnu_xml_dom_html2_DomHTMLAreaElement();
+void __DELETE_gnu_xml_dom_html2_DomHTMLAreaElement(void* me, void* client_data);
+void __INIT_INSTANCE_MEMBERS_gnu_xml_dom_html2_DomHTMLAreaElement(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
+JAVA_OBJECT __NEW_gnu_xml_dom_html2_DomHTMLAreaElement();
+JAVA_OBJECT __NEW_INSTANCE_gnu_xml_dom_html2_DomHTMLAreaElement();
+void gnu_xml_dom_html2_DomHTMLAreaElement___INIT____gnu_xml_dom_html2_DomHTMLDocument_java_lang_String_java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+// Vtable index: 81
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLAreaElement_getAccessKey__(JAVA_OBJECT me);
+// Vtable index: 89
+void gnu_xml_dom_html2_DomHTMLAreaElement_setAccessKey___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 82
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLAreaElement_getAlt__(JAVA_OBJECT me);
+// Vtable index: 90
+void gnu_xml_dom_html2_DomHTMLAreaElement_setAlt___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 83
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLAreaElement_getCoords__(JAVA_OBJECT me);
+// Vtable index: 91
+void gnu_xml_dom_html2_DomHTMLAreaElement_setCoords___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 84
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLAreaElement_getHref__(JAVA_OBJECT me);
+// Vtable index: 92
+void gnu_xml_dom_html2_DomHTMLAreaElement_setHref___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 85
+JAVA_BOOLEAN gnu_xml_dom_html2_DomHTMLAreaElement_getNoHref__(JAVA_OBJECT me);
+// Vtable index: 93
+void gnu_xml_dom_html2_DomHTMLAreaElement_setNoHref___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1);
+// Vtable index: 86
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLAreaElement_getShape__(JAVA_OBJECT me);
+// Vtable index: 94
+void gnu_xml_dom_html2_DomHTMLAreaElement_setShape___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+// Vtable index: 87
+JAVA_INT gnu_xml_dom_html2_DomHTMLAreaElement_getTabIndex__(JAVA_OBJECT me);
+// Vtable index: 95
+void gnu_xml_dom_html2_DomHTMLAreaElement_setTabIndex___int(JAVA_OBJECT me, JAVA_INT n1);
+// Vtable index: 88
+JAVA_OBJECT gnu_xml_dom_html2_DomHTMLAreaElement_getTarget__(JAVA_OBJECT me);
+// Vtable index: 96
+void gnu_xml_dom_html2_DomHTMLAreaElement_setTarget___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1);
+
+#endif

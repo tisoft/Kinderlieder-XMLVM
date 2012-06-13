@@ -1,0 +1,30 @@
+#ifndef __JAVA_NIO_CHANNELS_INTERRUPTIBLECHANNEL__
+#define __JAVA_NIO_CHANNELS_INTERRUPTIBLECHANNEL__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_java_nio_channels_InterruptibleChannel_close__ 12
+#define XMLVM_ITABLE_IDX_java_nio_channels_InterruptibleChannel_isOpen__ 13
+// Implemented interfaces:
+#include "java_nio_channels_Channel.h"
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+
+XMLVM_DEFINE_CLASS(java_nio_channels_InterruptibleChannel, 0, 0)
+
+extern JAVA_OBJECT __CLASS_java_nio_channels_InterruptibleChannel;
+extern JAVA_OBJECT __CLASS_java_nio_channels_InterruptibleChannel_1ARRAY;
+extern JAVA_OBJECT __CLASS_java_nio_channels_InterruptibleChannel_2ARRAY;
+extern JAVA_OBJECT __CLASS_java_nio_channels_InterruptibleChannel_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_java_nio_channels_InterruptibleChannel
+#define XMLVM_FORWARD_DECL_java_nio_channels_InterruptibleChannel
+typedef struct java_nio_channels_InterruptibleChannel java_nio_channels_InterruptibleChannel;
+#endif
+
+void __INIT_java_nio_channels_InterruptibleChannel();
+void __INIT_IMPL_java_nio_channels_InterruptibleChannel();
+
+#endif

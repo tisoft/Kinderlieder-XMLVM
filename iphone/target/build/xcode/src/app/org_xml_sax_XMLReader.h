@@ -1,0 +1,65 @@
+#ifndef __ORG_XML_SAX_XMLREADER__
+#define __ORG_XML_SAX_XMLREADER__
+
+#include "xmlvm.h"
+
+// Preprocessor constants for interfaces:
+#define XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_getFeature___java_lang_String 37
+#define XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setFeature___java_lang_String_boolean 45
+#define XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_getProperty___java_lang_String 38
+#define XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setProperty___java_lang_String_java_lang_Object 46
+#define XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setEntityResolver___org_xml_sax_EntityResolver 43
+#define XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_getEntityResolver__ 35
+#define XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setDTDHandler___org_xml_sax_DTDHandler 42
+#define XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_getDTDHandler__ 34
+#define XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setContentHandler___org_xml_sax_ContentHandler 41
+#define XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_getContentHandler__ 33
+#define XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setErrorHandler___org_xml_sax_ErrorHandler 44
+#define XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_getErrorHandler__ 36
+#define XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_parse___org_xml_sax_InputSource 40
+#define XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_parse___java_lang_String 39
+// Implemented interfaces:
+// Super Class:
+#include "java_lang_Object.h"
+
+// Circular references:
+#ifndef XMLVM_FORWARD_DECL_java_lang_String
+#define XMLVM_FORWARD_DECL_java_lang_String
+XMLVM_FORWARD_DECL(java_lang_String)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_ContentHandler
+#define XMLVM_FORWARD_DECL_org_xml_sax_ContentHandler
+XMLVM_FORWARD_DECL(org_xml_sax_ContentHandler)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_DTDHandler
+#define XMLVM_FORWARD_DECL_org_xml_sax_DTDHandler
+XMLVM_FORWARD_DECL(org_xml_sax_DTDHandler)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_EntityResolver
+#define XMLVM_FORWARD_DECL_org_xml_sax_EntityResolver
+XMLVM_FORWARD_DECL(org_xml_sax_EntityResolver)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_ErrorHandler
+#define XMLVM_FORWARD_DECL_org_xml_sax_ErrorHandler
+XMLVM_FORWARD_DECL(org_xml_sax_ErrorHandler)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_InputSource
+#define XMLVM_FORWARD_DECL_org_xml_sax_InputSource
+XMLVM_FORWARD_DECL(org_xml_sax_InputSource)
+#endif
+
+XMLVM_DEFINE_CLASS(org_xml_sax_XMLReader, 0, 0)
+
+extern JAVA_OBJECT __CLASS_org_xml_sax_XMLReader;
+extern JAVA_OBJECT __CLASS_org_xml_sax_XMLReader_1ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_XMLReader_2ARRAY;
+extern JAVA_OBJECT __CLASS_org_xml_sax_XMLReader_3ARRAY;
+#ifndef XMLVM_FORWARD_DECL_org_xml_sax_XMLReader
+#define XMLVM_FORWARD_DECL_org_xml_sax_XMLReader
+typedef struct org_xml_sax_XMLReader org_xml_sax_XMLReader;
+#endif
+
+void __INIT_org_xml_sax_XMLReader();
+void __INIT_IMPL_org_xml_sax_XMLReader();
+
+#endif
