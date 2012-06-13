@@ -1,0 +1,4 @@
+#Don't ignore the generated c files.
+#Keep them to be able to match them to bug reports of previous versions
+!target/dist
+!target/build

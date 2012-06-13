@@ -8,7 +8,9 @@ out
 .DS_Store
 generated
 nbproject/private
-target
+#ignore everything inside target, but not target itself, 
+#to be able to unignore something inside target
+**/target/*
 .settings
 .project
 .classpath
