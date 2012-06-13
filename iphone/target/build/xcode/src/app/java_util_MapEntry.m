@@ -390,24 +390,24 @@ JAVA_OBJECT java_util_MapEntry_clone__(JAVA_OBJECT me)
     XMLVMElem _r0;
     XMLVMElem _r1;
     _r1.o = me;
-    XMLVM_TRY_BEGIN(w23450aaab4b1b2)
+    XMLVM_TRY_BEGIN(w23481aaab4b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("MapEntry.java", 44)
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_Object_clone__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23450aaab4b1b2)
-        XMLVM_CATCH_SPECIFIC(w23450aaab4b1b2,java_lang_CloneNotSupportedException,5)
-    XMLVM_CATCH_END(w23450aaab4b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23450aaab4b1b2)
+    XMLVM_CATCH_BEGIN(w23481aaab4b1b2)
+        XMLVM_CATCH_SPECIFIC(w23481aaab4b1b2,java_lang_CloneNotSupportedException,5)
+    XMLVM_CATCH_END(w23481aaab4b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23481aaab4b1b2)
     label4:;
     XMLVM_SOURCE_POSITION("MapEntry.java", 46)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label5:;
-    java_lang_Thread* curThread_w23450aaab4b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w23450aaab4b1b7->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w23481aaab4b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w23481aaab4b1b7->fields.java_lang_Thread.xmlvmException_;
     _r0.o = JAVA_NULL;
     goto label4;
     //XMLVM_END_WRAPPER

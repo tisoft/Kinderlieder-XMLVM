@@ -850,7 +850,7 @@ void gnu_xml_stream_XMLParser_Input___INIT____java_io_InputStream_java_io_Reader
     XMLVM_SOURCE_POSITION("XMLParser.java", 5012)
     _r1.o = __NEW_java_lang_IllegalStateException();
     // "both byte and char streams specified"
-    _r2.o = xmlvm_create_java_string_from_pool(1014);
+    _r2.o = xmlvm_create_java_string_from_pool(1017);
     XMLVM_CHECK_NPE(1)
     java_lang_IllegalStateException___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_THROW_CUSTOM(_r1.o)
@@ -1262,7 +1262,7 @@ void gnu_xml_stream_XMLParser_Input_detectEncoding__(JAVA_OBJECT me)
     _r4.i = 4;
     _r3.i = 1;
     // "no byte-order mark for UCS-2 entity"
-    _r5.o = xmlvm_create_java_string_from_pool(1015);
+    _r5.o = xmlvm_create_java_string_from_pool(1018);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5190)
     if (!__TIB_int.classInitialized) __INIT_int();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_int, _r4.i);
@@ -1317,7 +1317,7 @@ void gnu_xml_stream_XMLParser_Input_detectEncoding__(JAVA_OBJECT me)
     (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_io_InputStream*) _r2.o)->tib->vtable[10])(_r2.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5203)
     // "UTF-32BE"
-    _r2.o = xmlvm_create_java_string_from_pool(1016);
+    _r2.o = xmlvm_create_java_string_from_pool(1019);
     XMLVM_CHECK_NPE(6)
     gnu_xml_stream_XMLParser_Input_setInputEncoding___java_lang_String(_r6.o, _r2.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5204)
@@ -1353,7 +1353,7 @@ void gnu_xml_stream_XMLParser_Input_detectEncoding__(JAVA_OBJECT me)
     (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_io_InputStream*) _r2.o)->tib->vtable[10])(_r2.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5212)
     // "UTF-32LE"
-    _r2.o = xmlvm_create_java_string_from_pool(1017);
+    _r2.o = xmlvm_create_java_string_from_pool(1020);
     XMLVM_CHECK_NPE(6)
     gnu_xml_stream_XMLParser_Input_setInputEncoding___java_lang_String(_r6.o, _r2.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5213)
@@ -1371,7 +1371,7 @@ void gnu_xml_stream_XMLParser_Input_detectEncoding__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("XMLParser.java", 5217)
     _r2.o = __NEW_java_io_UnsupportedEncodingException();
     // "unsupported UCS-4 byte ordering"
-    _r3.o = xmlvm_create_java_string_from_pool(1018);
+    _r3.o = xmlvm_create_java_string_from_pool(1021);
     XMLVM_CHECK_NPE(2)
     java_io_UnsupportedEncodingException___INIT____java_lang_String(_r2.o, _r3.o);
     XMLVM_THROW_CUSTOM(_r2.o)
@@ -1429,7 +1429,7 @@ void gnu_xml_stream_XMLParser_Input_detectEncoding__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("XMLParser.java", 5237)
     _r2.o = __NEW_java_io_UnsupportedEncodingException();
     // "no byte-order mark for UCS-2 entity"
-    _r3.o = xmlvm_create_java_string_from_pool(1015);
+    _r3.o = xmlvm_create_java_string_from_pool(1018);
     XMLVM_CHECK_NPE(2)
     java_io_UnsupportedEncodingException___INIT____java_lang_String(_r2.o, _r5.o);
     XMLVM_THROW_CUSTOM(_r2.o)
@@ -1441,7 +1441,7 @@ void gnu_xml_stream_XMLParser_Input_detectEncoding__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("XMLParser.java", 5242)
     _r2.o = __NEW_java_io_UnsupportedEncodingException();
     // "no byte-order mark for UCS-2 entity"
-    _r3.o = xmlvm_create_java_string_from_pool(1015);
+    _r3.o = xmlvm_create_java_string_from_pool(1018);
     XMLVM_CHECK_NPE(2)
     java_io_UnsupportedEncodingException___INIT____java_lang_String(_r2.o, _r5.o);
     XMLVM_THROW_CUSTOM(_r2.o)
@@ -1532,7 +1532,7 @@ void gnu_xml_stream_XMLParser_Input_setInputEncoding___java_lang_String(JAVA_OBJ
     _r3.o = me;
     _r4.o = n1;
     // "UTF-16"
-    _r2.o = xmlvm_create_java_string_from_pool(1019);
+    _r2.o = xmlvm_create_java_string_from_pool(1022);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5272)
     _r0.o = ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.inputEncoding_;
     //java_lang_String_equals___java_lang_Object[1]
@@ -1546,13 +1546,13 @@ void gnu_xml_stream_XMLParser_Input_setInputEncoding___java_lang_String(JAVA_OBJ
     label11:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5274)
     // "UTF-16"
-    _r0.o = xmlvm_create_java_string_from_pool(1019);
+    _r0.o = xmlvm_create_java_string_from_pool(1022);
     XMLVM_CHECK_NPE(2)
     _r0.i = java_lang_String_equalsIgnoreCase___java_lang_String(_r2.o, _r4.o);
     if (_r0.i == 0) goto label29;
     _r0.o = ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.inputEncoding_;
     // "UTF-16"
-    _r1.o = xmlvm_create_java_string_from_pool(1019);
+    _r1.o = xmlvm_create_java_string_from_pool(1022);
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_String_startsWith___java_lang_String(_r0.o, _r2.o);
     if (_r0.i != 0) goto label10;
@@ -1566,7 +1566,7 @@ void gnu_xml_stream_XMLParser_Input_setInputEncoding___java_lang_String(JAVA_OBJ
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT___(_r1.o);
     // "document is not in its declared encoding "
-    _r2.o = xmlvm_create_java_string_from_pool(1020);
+    _r2.o = xmlvm_create_java_string_from_pool(1023);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.inputEncoding_;

@@ -902,7 +902,7 @@ JAVA_OBJECT java_net_Inet6Address_getByAddress___java_lang_String_byte_1ARRAY_in
     XMLVM_SOURCE_POSITION("Inet6Address.java", 109)
     _r0.o = __NEW_java_net_UnknownHostException();
     // "luni.62"
-    _r1.o = xmlvm_create_java_string_from_pool(2584);
+    _r1.o = xmlvm_create_java_string_from_pool(2587);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_net_UnknownHostException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -1000,7 +1000,7 @@ JAVA_OBJECT java_net_Inet6Address_getByAddress___java_lang_String_byte_1ARRAY_ja
     XMLVM_SOURCE_POSITION("Inet6Address.java", 167)
     _r6.o = __NEW_java_net_UnknownHostException();
     // "luni.63"
-    _r7.o = xmlvm_create_java_string_from_pool(2585);
+    _r7.o = xmlvm_create_java_string_from_pool(2588);
     _r7.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r7.o);
     XMLVM_CHECK_NPE(6)
     java_net_UnknownHostException___INIT____java_lang_String(_r6.o, _r7.o);
@@ -1599,7 +1599,7 @@ void java_net_Inet6Address_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT 
     _r3.o = me;
     _r4.o = n1;
     // "ipaddress"
-    _r2.o = xmlvm_create_java_string_from_pool(2586);
+    _r2.o = xmlvm_create_java_string_from_pool(2589);
     XMLVM_SOURCE_POSITION("Inet6Address.java", 456)
     XMLVM_CHECK_NPE(4)
     _r0.o = java_io_ObjectOutputStream_putFields__(_r4.o);
@@ -1608,7 +1608,7 @@ void java_net_Inet6Address_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT 
     if (_r1.o != JAVA_NULL) goto label48;
     XMLVM_SOURCE_POSITION("Inet6Address.java", 458)
     // "ipaddress"
-    _r1.o = xmlvm_create_java_string_from_pool(2586);
+    _r1.o = xmlvm_create_java_string_from_pool(2589);
     _r1.o = JAVA_NULL;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_java_lang_Object[12]
     XMLVM_CHECK_NPE(0)
@@ -1616,28 +1616,28 @@ void java_net_Inet6Address_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT 
     label16:;
     XMLVM_SOURCE_POSITION("Inet6Address.java", 463)
     // "scope_id"
-    _r1.o = xmlvm_create_java_string_from_pool(2587);
+    _r1.o = xmlvm_create_java_string_from_pool(2590);
     _r2.i = ((java_net_Inet6Address*) _r3.o)->fields.java_net_Inet6Address.scope_id_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_int[11]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectOutputStream_PutField*) _r0.o)->tib->vtable[11])(_r0.o, _r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("Inet6Address.java", 464)
     // "scope_id_set"
-    _r1.o = xmlvm_create_java_string_from_pool(2588);
+    _r1.o = xmlvm_create_java_string_from_pool(2591);
     _r2.i = ((java_net_Inet6Address*) _r3.o)->fields.java_net_Inet6Address.scope_id_set_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_boolean[6]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) ((java_io_ObjectOutputStream_PutField*) _r0.o)->tib->vtable[6])(_r0.o, _r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("Inet6Address.java", 465)
     // "scope_ifname_set"
-    _r1.o = xmlvm_create_java_string_from_pool(2589);
+    _r1.o = xmlvm_create_java_string_from_pool(2592);
     _r2.i = ((java_net_Inet6Address*) _r3.o)->fields.java_net_Inet6Address.scope_ifname_set_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_boolean[6]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) ((java_io_ObjectOutputStream_PutField*) _r0.o)->tib->vtable[6])(_r0.o, _r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("Inet6Address.java", 466)
     // "ifname"
-    _r1.o = xmlvm_create_java_string_from_pool(2590);
+    _r1.o = xmlvm_create_java_string_from_pool(2593);
     _r2.o = ((java_net_Inet6Address*) _r3.o)->fields.java_net_Inet6Address.ifname_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_java_lang_Object[12]
     XMLVM_CHECK_NPE(0)
@@ -1651,7 +1651,7 @@ void java_net_Inet6Address_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT 
     label48:;
     XMLVM_SOURCE_POSITION("Inet6Address.java", 460)
     // "ipaddress"
-    _r1.o = xmlvm_create_java_string_from_pool(2586);
+    _r1.o = xmlvm_create_java_string_from_pool(2589);
     _r1.o = ((java_net_InetAddress*) _r3.o)->fields.java_net_InetAddress.ipaddress_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_java_lang_Object[12]
     XMLVM_CHECK_NPE(0)
@@ -1679,7 +1679,7 @@ void java_net_Inet6Address_readObject___java_io_ObjectInputStream(JAVA_OBJECT me
     _r0.o = java_io_ObjectInputStream_readFields__(_r5.o);
     XMLVM_SOURCE_POSITION("Inet6Address.java", 473)
     // "ipaddress"
-    _r1.o = xmlvm_create_java_string_from_pool(2586);
+    _r1.o = xmlvm_create_java_string_from_pool(2589);
     //java_io_ObjectInputStream_GetField_get___java_lang_String_java_lang_Object[14]
     XMLVM_CHECK_NPE(0)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[14])(_r0.o, _r1.o, _r3.o);
@@ -1688,21 +1688,21 @@ void java_net_Inet6Address_readObject___java_io_ObjectInputStream(JAVA_OBJECT me
     ((java_net_InetAddress*) _r4.o)->fields.java_net_InetAddress.ipaddress_ = _r1.o;
     XMLVM_SOURCE_POSITION("Inet6Address.java", 474)
     // "scope_id"
-    _r1.o = xmlvm_create_java_string_from_pool(2587);
+    _r1.o = xmlvm_create_java_string_from_pool(2590);
     //java_io_ObjectInputStream_GetField_get___java_lang_String_int[13]
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[13])(_r0.o, _r1.o, _r2.i);
     ((java_net_Inet6Address*) _r4.o)->fields.java_net_Inet6Address.scope_id_ = _r1.i;
     XMLVM_SOURCE_POSITION("Inet6Address.java", 475)
     // "scope_id_set"
-    _r1.o = xmlvm_create_java_string_from_pool(2588);
+    _r1.o = xmlvm_create_java_string_from_pool(2591);
     //java_io_ObjectInputStream_GetField_get___java_lang_String_boolean[8]
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[8])(_r0.o, _r1.o, _r2.i);
     ((java_net_Inet6Address*) _r4.o)->fields.java_net_Inet6Address.scope_id_set_ = _r1.i;
     XMLVM_SOURCE_POSITION("Inet6Address.java", 476)
     // "ifname"
-    _r1.o = xmlvm_create_java_string_from_pool(2590);
+    _r1.o = xmlvm_create_java_string_from_pool(2593);
     //java_io_ObjectInputStream_GetField_get___java_lang_String_java_lang_Object[14]
     XMLVM_CHECK_NPE(0)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[14])(_r0.o, _r1.o, _r3.o);
@@ -1710,7 +1710,7 @@ void java_net_Inet6Address_readObject___java_io_ObjectInputStream(JAVA_OBJECT me
     ((java_net_Inet6Address*) _r4.o)->fields.java_net_Inet6Address.ifname_ = _r1.o;
     XMLVM_SOURCE_POSITION("Inet6Address.java", 477)
     // "scope_ifname_set"
-    _r1.o = xmlvm_create_java_string_from_pool(2589);
+    _r1.o = xmlvm_create_java_string_from_pool(2592);
     //java_io_ObjectInputStream_GetField_get___java_lang_String_boolean[8]
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[8])(_r0.o, _r1.o, _r2.i);
@@ -1741,7 +1741,7 @@ JAVA_OBJECT java_net_Inet6Address_toString__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     // "%"
-    _r2.o = xmlvm_create_java_string_from_pool(1030);
+    _r2.o = xmlvm_create_java_string_from_pool(1033);
     XMLVM_SOURCE_POSITION("Inet6Address.java", 491)
     _r0.o = ((java_net_Inet6Address*) _r3.o)->fields.java_net_Inet6Address.ifname_;
     if (_r0.o == JAVA_NULL) goto label36;
@@ -1754,7 +1754,7 @@ JAVA_OBJECT java_net_Inet6Address_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     // "%"
-    _r1.o = xmlvm_create_java_string_from_pool(1030);
+    _r1.o = xmlvm_create_java_string_from_pool(1033);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r2.o);
     _r1.o = ((java_net_Inet6Address*) _r3.o)->fields.java_net_Inet6Address.ifname_;
@@ -1780,7 +1780,7 @@ JAVA_OBJECT java_net_Inet6Address_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     // "%"
-    _r1.o = xmlvm_create_java_string_from_pool(1030);
+    _r1.o = xmlvm_create_java_string_from_pool(1033);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r2.o);
     _r1.i = ((java_net_Inet6Address*) _r3.o)->fields.java_net_Inet6Address.scope_id_;
@@ -1828,7 +1828,7 @@ void java_net_Inet6Address___CLINIT_()
     _r0.o = __NEW_java_net_Inet6Address();
     _r1.o = java_net_Inet6Address_GET_localhost_bytes();
     // "localhost"
-    _r2.o = xmlvm_create_java_string_from_pool(1023);
+    _r2.o = xmlvm_create_java_string_from_pool(1026);
     XMLVM_CHECK_NPE(0)
     java_net_Inet6Address___INIT____byte_1ARRAY_java_lang_String(_r0.o, _r1.o, _r2.o);
     java_net_Inet6Address_PUT_LOOPBACK( _r0.o);
@@ -1838,7 +1838,7 @@ void java_net_Inet6Address___CLINIT_()
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_io_ObjectStreamField, _r0.i);
     _r1.o = __NEW_java_io_ObjectStreamField();
     // "ipaddress"
-    _r2.o = xmlvm_create_java_string_from_pool(2586);
+    _r2.o = xmlvm_create_java_string_from_pool(2589);
     if (!__TIB_byte.classInitialized) __INIT_byte();
     _r3.o = XMLVMArray_createSingleDimension(__CLASS_byte, _r4.i);
     //java_lang_Object_getClass__[3]
@@ -1852,7 +1852,7 @@ void java_net_Inet6Address___CLINIT_()
     _r1.i = 1;
     _r2.o = __NEW_java_io_ObjectStreamField();
     // "scope_id"
-    _r3.o = xmlvm_create_java_string_from_pool(2587);
+    _r3.o = xmlvm_create_java_string_from_pool(2590);
     _r4.o = java_lang_Integer_GET_TYPE();
     XMLVM_CHECK_NPE(2)
     java_io_ObjectStreamField___INIT____java_lang_String_java_lang_Class(_r2.o, _r3.o, _r4.o);
@@ -1862,7 +1862,7 @@ void java_net_Inet6Address___CLINIT_()
     _r1.i = 2;
     _r2.o = __NEW_java_io_ObjectStreamField();
     // "scope_id_set"
-    _r3.o = xmlvm_create_java_string_from_pool(2588);
+    _r3.o = xmlvm_create_java_string_from_pool(2591);
     _r4.o = java_lang_Boolean_GET_TYPE();
     XMLVM_CHECK_NPE(2)
     java_io_ObjectStreamField___INIT____java_lang_String_java_lang_Class(_r2.o, _r3.o, _r4.o);
@@ -1872,7 +1872,7 @@ void java_net_Inet6Address___CLINIT_()
     _r1.i = 3;
     _r2.o = __NEW_java_io_ObjectStreamField();
     // "scope_ifname_set"
-    _r3.o = xmlvm_create_java_string_from_pool(2589);
+    _r3.o = xmlvm_create_java_string_from_pool(2592);
     _r4.o = java_lang_Boolean_GET_TYPE();
     XMLVM_CHECK_NPE(2)
     java_io_ObjectStreamField___INIT____java_lang_String_java_lang_Class(_r2.o, _r3.o, _r4.o);
@@ -1882,7 +1882,7 @@ void java_net_Inet6Address___CLINIT_()
     _r1.i = 4;
     _r2.o = __NEW_java_io_ObjectStreamField();
     // "ifname"
-    _r3.o = xmlvm_create_java_string_from_pool(2590);
+    _r3.o = xmlvm_create_java_string_from_pool(2593);
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
     _r4.o = __CLASS_java_lang_String;
     XMLVM_CHECK_NPE(2)

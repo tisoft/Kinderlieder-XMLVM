@@ -10,8 +10,13 @@ import java.util.Map;
 
 public class ShopDetailViewController extends RotatingViewController {
     private Product product;
-    private Map<Product, NSURLRequest> requests=new HashMap<Product, NSURLRequest>();
+    private Map<Product, NSURLRequest> requests = new HashMap<Product, NSURLRequest>();
     private final UIWebView infoView;
+    private UIBarButtonItemDelegate action = new UIBarButtonItemDelegate() {
+        public void clicked() {
+            ShopDetailViewController.this.click();
+        }
+    };
 
     public ShopDetailViewController(UIWindow window) {
         infoView = new UIWebView(window.getFrame());
@@ -22,8 +27,8 @@ public class ShopDetailViewController extends RotatingViewController {
     public void show(Product product) {
         this.product = product;
         NSURLRequest nsurlRequest = requests.get(product);
-        if(nsurlRequest==null){
-            nsurlRequest=NSURLRequest.requestWithURL(NSURL.URLWithString("http://kessel.t-srv.de/product/" + product.id));
+        if (nsurlRequest == null) {
+            nsurlRequest = NSURLRequest.requestWithURL(NSURL.URLWithString("http://kessel.t-srv.de/product/" + product.id));
             requests.put(product, nsurlRequest);
         }
         infoView.loadRequest(nsurlRequest);
@@ -40,12 +45,7 @@ public class ShopDetailViewController extends RotatingViewController {
         }
 
         if (buttonTitle != null) {
-            setToolbarItems(new ArrayList<UIBarButtonItem>(Arrays.asList(new UIBarButtonItem(buttonTitle, UIBarButtonItemStyle.Bordered, new UIBarButtonItemDelegate() {
-
-                public void clicked() {
-                    ShopDetailViewController.this.click();
-                }
-            }))));
+            setToolbarItems(new ArrayList<UIBarButtonItem>(Arrays.asList(new UIBarButtonItem(buttonTitle, UIBarButtonItemStyle.Bordered, action))));
         } else {
             setToolbarItems(new ArrayList<UIBarButtonItem>());
         }

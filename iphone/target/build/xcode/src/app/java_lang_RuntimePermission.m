@@ -548,7 +548,7 @@ void java_lang_RuntimePermission___CLINIT_()
     _r0.o = __NEW_java_lang_RuntimePermission();
     XMLVM_SOURCE_POSITION("RuntimePermission.java", 35)
     // "setSecurityManager"
-    _r1.o = xmlvm_create_java_string_from_pool(3074);
+    _r1.o = xmlvm_create_java_string_from_pool(3077);
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimePermission___INIT____java_lang_String(_r0.o, _r1.o);
     java_lang_RuntimePermission_PUT_permissionToSetSecurityManager( _r0.o);
@@ -556,7 +556,7 @@ void java_lang_RuntimePermission___CLINIT_()
     _r0.o = __NEW_java_lang_RuntimePermission();
     XMLVM_SOURCE_POSITION("RuntimePermission.java", 38)
     // "createSecurityManager"
-    _r1.o = xmlvm_create_java_string_from_pool(3075);
+    _r1.o = xmlvm_create_java_string_from_pool(3078);
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimePermission___INIT____java_lang_String(_r0.o, _r1.o);
     java_lang_RuntimePermission_PUT_permissionToCreateSecurityManager( _r0.o);
@@ -564,7 +564,7 @@ void java_lang_RuntimePermission___CLINIT_()
     _r0.o = __NEW_java_lang_RuntimePermission();
     XMLVM_SOURCE_POSITION("RuntimePermission.java", 41)
     // "getProtectionDomain"
-    _r1.o = xmlvm_create_java_string_from_pool(3076);
+    _r1.o = xmlvm_create_java_string_from_pool(3079);
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimePermission___INIT____java_lang_String(_r0.o, _r1.o);
     java_lang_RuntimePermission_PUT_permissionToGetProtectionDomain( _r0.o);
@@ -572,7 +572,7 @@ void java_lang_RuntimePermission___CLINIT_()
     _r0.o = __NEW_java_lang_RuntimePermission();
     XMLVM_SOURCE_POSITION("RuntimePermission.java", 44)
     // "getClassLoader"
-    _r1.o = xmlvm_create_java_string_from_pool(3077);
+    _r1.o = xmlvm_create_java_string_from_pool(3080);
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimePermission___INIT____java_lang_String(_r0.o, _r1.o);
     java_lang_RuntimePermission_PUT_permissionToGetClassLoader( _r0.o);
@@ -580,7 +580,7 @@ void java_lang_RuntimePermission___CLINIT_()
     _r0.o = __NEW_java_lang_RuntimePermission();
     XMLVM_SOURCE_POSITION("RuntimePermission.java", 47)
     // "createClassLoader"
-    _r1.o = xmlvm_create_java_string_from_pool(3078);
+    _r1.o = xmlvm_create_java_string_from_pool(3081);
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimePermission___INIT____java_lang_String(_r0.o, _r1.o);
     java_lang_RuntimePermission_PUT_permissionToCreateClassLoader( _r0.o);
@@ -588,7 +588,7 @@ void java_lang_RuntimePermission___CLINIT_()
     _r0.o = __NEW_java_lang_RuntimePermission();
     XMLVM_SOURCE_POSITION("RuntimePermission.java", 50)
     // "modifyThread"
-    _r1.o = xmlvm_create_java_string_from_pool(3079);
+    _r1.o = xmlvm_create_java_string_from_pool(3082);
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimePermission___INIT____java_lang_String(_r0.o, _r1.o);
     java_lang_RuntimePermission_PUT_permissionToModifyThread( _r0.o);
@@ -596,7 +596,7 @@ void java_lang_RuntimePermission___CLINIT_()
     _r0.o = __NEW_java_lang_RuntimePermission();
     XMLVM_SOURCE_POSITION("RuntimePermission.java", 53)
     // "modifyThreadGroup"
-    _r1.o = xmlvm_create_java_string_from_pool(3080);
+    _r1.o = xmlvm_create_java_string_from_pool(3083);
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimePermission___INIT____java_lang_String(_r0.o, _r1.o);
     java_lang_RuntimePermission_PUT_permissionToModifyThreadGroup( _r0.o);
@@ -612,7 +612,7 @@ void java_lang_RuntimePermission___CLINIT_()
     _r0.o = __NEW_java_lang_RuntimePermission();
     XMLVM_SOURCE_POSITION("RuntimePermission.java", 59)
     // "readFileDescriptor"
-    _r1.o = xmlvm_create_java_string_from_pool(3081);
+    _r1.o = xmlvm_create_java_string_from_pool(3084);
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimePermission___INIT____java_lang_String(_r0.o, _r1.o);
     java_lang_RuntimePermission_PUT_permissionToReadFileDescriptor( _r0.o);
@@ -620,7 +620,7 @@ void java_lang_RuntimePermission___CLINIT_()
     _r0.o = __NEW_java_lang_RuntimePermission();
     XMLVM_SOURCE_POSITION("RuntimePermission.java", 62)
     // "writeFileDescriptor"
-    _r1.o = xmlvm_create_java_string_from_pool(3082);
+    _r1.o = xmlvm_create_java_string_from_pool(3085);
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimePermission___INIT____java_lang_String(_r0.o, _r1.o);
     java_lang_RuntimePermission_PUT_permissionToWriteFileDescriptor( _r0.o);
@@ -628,7 +628,7 @@ void java_lang_RuntimePermission___CLINIT_()
     _r0.o = __NEW_java_lang_RuntimePermission();
     XMLVM_SOURCE_POSITION("RuntimePermission.java", 65)
     // "queuePrintJob"
-    _r1.o = xmlvm_create_java_string_from_pool(3083);
+    _r1.o = xmlvm_create_java_string_from_pool(3086);
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimePermission___INIT____java_lang_String(_r0.o, _r1.o);
     java_lang_RuntimePermission_PUT_permissionToQueuePrintJob( _r0.o);
@@ -636,7 +636,7 @@ void java_lang_RuntimePermission___CLINIT_()
     _r0.o = __NEW_java_lang_RuntimePermission();
     XMLVM_SOURCE_POSITION("RuntimePermission.java", 68)
     // "setFactory"
-    _r1.o = xmlvm_create_java_string_from_pool(3084);
+    _r1.o = xmlvm_create_java_string_from_pool(3087);
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimePermission___INIT____java_lang_String(_r0.o, _r1.o);
     java_lang_RuntimePermission_PUT_permissionToSetFactory( _r0.o);
@@ -644,7 +644,7 @@ void java_lang_RuntimePermission___CLINIT_()
     _r0.o = __NEW_java_lang_RuntimePermission();
     XMLVM_SOURCE_POSITION("RuntimePermission.java", 71)
     // "setIO"
-    _r1.o = xmlvm_create_java_string_from_pool(3085);
+    _r1.o = xmlvm_create_java_string_from_pool(3088);
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimePermission___INIT____java_lang_String(_r0.o, _r1.o);
     java_lang_RuntimePermission_PUT_permissionToSetIO( _r0.o);
@@ -652,7 +652,7 @@ void java_lang_RuntimePermission___CLINIT_()
     _r0.o = __NEW_java_lang_RuntimePermission();
     XMLVM_SOURCE_POSITION("RuntimePermission.java", 74)
     // "stopThread"
-    _r1.o = xmlvm_create_java_string_from_pool(3086);
+    _r1.o = xmlvm_create_java_string_from_pool(3089);
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimePermission___INIT____java_lang_String(_r0.o, _r1.o);
     java_lang_RuntimePermission_PUT_permissionToStopThread( _r0.o);
@@ -660,7 +660,7 @@ void java_lang_RuntimePermission___CLINIT_()
     _r0.o = __NEW_java_lang_RuntimePermission();
     XMLVM_SOURCE_POSITION("RuntimePermission.java", 77)
     // "setContextClassLoader"
-    _r1.o = xmlvm_create_java_string_from_pool(3087);
+    _r1.o = xmlvm_create_java_string_from_pool(3090);
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimePermission___INIT____java_lang_String(_r0.o, _r1.o);
     java_lang_RuntimePermission_PUT_permissionToSetContextClassLoader( _r0.o);

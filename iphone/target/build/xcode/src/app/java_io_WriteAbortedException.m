@@ -291,7 +291,7 @@ JAVA_OBJECT java_io_WriteAbortedException_getMessage__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r0.o);
     // "; "
-    _r0.o = xmlvm_create_java_string_from_pool(1170);
+    _r0.o = xmlvm_create_java_string_from_pool(1173);
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r0.o);
     _r1.o = ((java_io_WriteAbortedException*) _r2.o)->fields.java_io_WriteAbortedException.detail_;

@@ -485,7 +485,7 @@ JAVA_OBJECT gnu_xml_stream_XMLParser_Attribute_toString__(JAVA_OBJECT me)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((gnu_java_lang_CPStringBuilder*) _r0.o)->tib->vtable[6])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("XMLParser.java", 4465)
     // "name="
-    _r1.o = xmlvm_create_java_string_from_pool(859);
+    _r1.o = xmlvm_create_java_string_from_pool(862);
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 4466)
@@ -510,7 +510,7 @@ JAVA_OBJECT gnu_xml_stream_XMLParser_Attribute_toString__(JAVA_OBJECT me)
     if (_r1.o == JAVA_NULL) goto label56;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4474)
     // ",type="
-    _r1.o = xmlvm_create_java_string_from_pool(860);
+    _r1.o = xmlvm_create_java_string_from_pool(863);
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 4475)
@@ -523,7 +523,7 @@ JAVA_OBJECT gnu_xml_stream_XMLParser_Attribute_toString__(JAVA_OBJECT me)
     if (_r1.i == 0) goto label65;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4478)
     // ",specified"
-    _r1.o = xmlvm_create_java_string_from_pool(861);
+    _r1.o = xmlvm_create_java_string_from_pool(864);
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label65:;

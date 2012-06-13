@@ -915,7 +915,7 @@ void java_lang_Runtime_addShutdownHook___java_lang_Thread(JAVA_OBJECT me, JAVA_O
     XMLVM_SOURCE_POSITION("Runtime.java", 403)
     _r0.o = __NEW_java_lang_NullPointerException();
     // "null is not allowed here"
-    _r1.o = xmlvm_create_java_string_from_pool(1508);
+    _r1.o = xmlvm_create_java_string_from_pool(1511);
     XMLVM_CHECK_NPE(0)
     java_lang_NullPointerException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -941,7 +941,7 @@ JAVA_BOOLEAN java_lang_Runtime_removeShutdownHook___java_lang_Thread(JAVA_OBJECT
     XMLVM_SOURCE_POSITION("Runtime.java", 424)
     _r0.o = __NEW_java_lang_NullPointerException();
     // "null is not allowed here"
-    _r1.o = xmlvm_create_java_string_from_pool(1508);
+    _r1.o = xmlvm_create_java_string_from_pool(1511);
     XMLVM_CHECK_NPE(0)
     java_lang_NullPointerException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)

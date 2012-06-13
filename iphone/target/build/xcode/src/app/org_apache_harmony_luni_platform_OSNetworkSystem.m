@@ -1672,7 +1672,7 @@ JAVA_BOOLEAN org_apache_harmony_luni_platform_OSNetworkSystem_select___java_io_F
     if (_r0.i != 0) goto label34;
     _r0.o = __NEW_java_lang_AssertionError();
     // "Invalid file descriptor arrays"
-    _r1.o = xmlvm_create_java_string_from_pool(1384);
+    _r1.o = xmlvm_create_java_string_from_pool(1387);
     XMLVM_CHECK_NPE(0)
     java_lang_AssertionError___INIT____java_lang_Object(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)

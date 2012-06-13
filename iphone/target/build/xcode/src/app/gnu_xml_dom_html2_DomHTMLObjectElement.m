@@ -1639,7 +1639,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getBorder__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLObjectElement.java", 137)
     // "border"
-    _r0.o = xmlvm_create_java_string_from_pool(1468);
+    _r0.o = xmlvm_create_java_string_from_pool(1471);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1658,7 +1658,7 @@ void gnu_xml_dom_html2_DomHTMLObjectElement_setBorder___java_lang_String(JAVA_OB
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLObjectElement.java", 142)
     // "border"
-    _r0.o = xmlvm_create_java_string_from_pool(1468);
+    _r0.o = xmlvm_create_java_string_from_pool(1471);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLObjectElement.java", 143)
@@ -1750,7 +1750,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getCodeType__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLObjectElement.java", 167)
     // "codetype"
-    _r0.o = xmlvm_create_java_string_from_pool(3344);
+    _r0.o = xmlvm_create_java_string_from_pool(3347);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1769,7 +1769,7 @@ void gnu_xml_dom_html2_DomHTMLObjectElement_setCodeType___java_lang_String(JAVA_
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLObjectElement.java", 172)
     // "codetype"
-    _r0.o = xmlvm_create_java_string_from_pool(3344);
+    _r0.o = xmlvm_create_java_string_from_pool(3347);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLObjectElement.java", 173)
@@ -1787,7 +1787,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getData__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLObjectElement.java", 177)
     // "data"
-    _r0.o = xmlvm_create_java_string_from_pool(3345);
+    _r0.o = xmlvm_create_java_string_from_pool(3348);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1806,7 +1806,7 @@ void gnu_xml_dom_html2_DomHTMLObjectElement_setData___java_lang_String(JAVA_OBJE
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLObjectElement.java", 182)
     // "data"
-    _r0.o = xmlvm_create_java_string_from_pool(3345);
+    _r0.o = xmlvm_create_java_string_from_pool(3348);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLObjectElement.java", 183)
@@ -1824,7 +1824,7 @@ JAVA_BOOLEAN gnu_xml_dom_html2_DomHTMLObjectElement_getDeclare__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLObjectElement.java", 187)
     // "declare"
-    _r0.o = xmlvm_create_java_string_from_pool(1694);
+    _r0.o = xmlvm_create_java_string_from_pool(1697);
     XMLVM_CHECK_NPE(1)
     _r0.i = gnu_xml_dom_html2_DomHTMLElement_getBooleanHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1843,7 +1843,7 @@ void gnu_xml_dom_html2_DomHTMLObjectElement_setDeclare___boolean(JAVA_OBJECT me,
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DomHTMLObjectElement.java", 192)
     // "declare"
-    _r0.o = xmlvm_create_java_string_from_pool(1694);
+    _r0.o = xmlvm_create_java_string_from_pool(1697);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setBooleanHTMLAttribute___java_lang_String_boolean(_r1.o, _r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("DomHTMLObjectElement.java", 193)
@@ -1972,7 +1972,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getStandby__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLObjectElement.java", 227)
     // "standby"
-    _r0.o = xmlvm_create_java_string_from_pool(3346);
+    _r0.o = xmlvm_create_java_string_from_pool(3349);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1991,7 +1991,7 @@ void gnu_xml_dom_html2_DomHTMLObjectElement_setStandby___java_lang_String(JAVA_O
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLObjectElement.java", 232)
     // "standby"
-    _r0.o = xmlvm_create_java_string_from_pool(3346);
+    _r0.o = xmlvm_create_java_string_from_pool(3349);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLObjectElement.java", 233)
@@ -2120,7 +2120,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getUseMap__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLObjectElement.java", 267)
     // "usemap"
-    _r0.o = xmlvm_create_java_string_from_pool(2351);
+    _r0.o = xmlvm_create_java_string_from_pool(2354);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -2139,7 +2139,7 @@ void gnu_xml_dom_html2_DomHTMLObjectElement_setUseMap___java_lang_String(JAVA_OB
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLObjectElement.java", 272)
     // "usemap"
-    _r0.o = xmlvm_create_java_string_from_pool(2351);
+    _r0.o = xmlvm_create_java_string_from_pool(2354);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLObjectElement.java", 273)
@@ -2284,7 +2284,7 @@ void gnu_xml_dom_html2_DomHTMLObjectElement_setScriptable___java_lang_String(JAV
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLObjectElement.java", 313)
     // "scriptable"
-    _r0.o = xmlvm_create_java_string_from_pool(3347);
+    _r0.o = xmlvm_create_java_string_from_pool(3350);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLObjectElement.java", 314)
@@ -2302,7 +2302,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLObjectElement_getScriptable__(JAVA_OBJECT m
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLObjectElement.java", 318)
     // "scriptable"
-    _r0.o = xmlvm_create_java_string_from_pool(3347);
+    _r0.o = xmlvm_create_java_string_from_pool(3350);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()

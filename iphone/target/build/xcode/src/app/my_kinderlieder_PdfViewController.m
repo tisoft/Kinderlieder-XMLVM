@@ -489,7 +489,7 @@ void my_kinderlieder_PdfViewController_show___my_kinderlieder_SongInfo(JAVA_OBJE
     XMLVM_SOURCE_POSITION("PdfViewController.java", 117)
     _r2.o = __NEW_org_xmlvm_iphone_UIBarButtonItem();
     // "repeat.png"
-    _r3.o = xmlvm_create_java_string_from_pool(1119);
+    _r3.o = xmlvm_create_java_string_from_pool(1122);
     _r3.o = org_xmlvm_iphone_UIImage_imageNamed___java_lang_String(_r3.o);
     _r4.o = __NEW_my_kinderlieder_PdfViewController_5();
     XMLVM_CHECK_NPE(4)

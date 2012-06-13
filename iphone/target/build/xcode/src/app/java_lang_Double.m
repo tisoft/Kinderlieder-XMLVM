@@ -1421,14 +1421,14 @@ JAVA_OBJECT java_lang_Double_toHexString___double(JAVA_DOUBLE n1)
     XMLVM_SOURCE_POSITION("Double.java", 441)
     if (_r0.i == 0) goto label70;
     // "-0x0.0p0"
-    _r11.o = xmlvm_create_java_string_from_pool(980);
+    _r11.o = xmlvm_create_java_string_from_pool(983);
     goto label6;
     label68:;
     _r0.i = 0;
     goto label39;
     label70:;
     // "0x0.0p0"
-    _r11.o = xmlvm_create_java_string_from_pool(981);
+    _r11.o = xmlvm_create_java_string_from_pool(984);
     goto label6;
     label73:;
     XMLVM_SOURCE_POSITION("Double.java", 444)
@@ -1440,7 +1440,7 @@ JAVA_OBJECT java_lang_Double_toHexString___double(JAVA_DOUBLE n1)
     if (_r0.i == 0) goto label157;
     XMLVM_SOURCE_POSITION("Double.java", 446)
     // "-0x"
-    _r0.o = xmlvm_create_java_string_from_pool(982);
+    _r0.o = xmlvm_create_java_string_from_pool(985);
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuilder_append___java_lang_String(_r3.o, _r0.o);
     label87:;
@@ -1494,7 +1494,7 @@ JAVA_OBJECT java_lang_Double_toHexString___double(JAVA_DOUBLE n1)
     java_lang_StringBuilder_append___java_lang_String(_r3.o, _r12.o);
     XMLVM_SOURCE_POSITION("Double.java", 472)
     // "p-1022"
-    _r11.o = xmlvm_create_java_string_from_pool(1473);
+    _r11.o = xmlvm_create_java_string_from_pool(1476);
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuilder_append___java_lang_String(_r3.o, _r11.o);
     label151:;
@@ -1505,7 +1505,7 @@ JAVA_OBJECT java_lang_Double_toHexString___double(JAVA_DOUBLE n1)
     label157:;
     XMLVM_SOURCE_POSITION("Double.java", 448)
     // "0x"
-    _r0.o = xmlvm_create_java_string_from_pool(984);
+    _r0.o = xmlvm_create_java_string_from_pool(987);
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuilder_append___java_lang_String(_r3.o, _r0.o);
     goto label87;
@@ -1527,7 +1527,7 @@ JAVA_OBJECT java_lang_Double_toHexString___double(JAVA_DOUBLE n1)
     label175:;
     XMLVM_SOURCE_POSITION("Double.java", 474)
     // "1."
-    _r0.o = xmlvm_create_java_string_from_pool(985);
+    _r0.o = xmlvm_create_java_string_from_pool(988);
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuilder_append___java_lang_String(_r3.o, _r0.o);
     XMLVM_SOURCE_POSITION("Double.java", 476)

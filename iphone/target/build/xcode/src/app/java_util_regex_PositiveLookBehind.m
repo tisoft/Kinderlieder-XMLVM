@@ -365,7 +365,7 @@ JAVA_OBJECT java_util_regex_PositiveLookBehind_getName__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("PositiveLookBehind.java", 71)
     // "PosBehindJointSet"
-    _r0.o = xmlvm_create_java_string_from_pool(2389);
+    _r0.o = xmlvm_create_java_string_from_pool(2392);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

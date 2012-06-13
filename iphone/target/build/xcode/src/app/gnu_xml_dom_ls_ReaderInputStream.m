@@ -709,7 +709,7 @@ void gnu_xml_dom_ls_ReaderInputStream_mark___int(JAVA_OBJECT me, JAVA_INT n1)
     _r0.i = ((gnu_xml_dom_ls_ReaderInputStream*) _r4.o)->fields.gnu_xml_dom_ls_ReaderInputStream.pos_;
     ((gnu_xml_dom_ls_ReaderInputStream*) _r4.o)->fields.gnu_xml_dom_ls_ReaderInputStream.pos_marked_ = _r0.i;
     label26:;
-    XMLVM_TRY_BEGIN(w17691aaac13b1c22)
+    XMLVM_TRY_BEGIN(w17722aaac13b1c22)
     // Begin try
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 171)
     _r0.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r4.o)->fields.gnu_xml_dom_ls_ReaderInputStream.reader_;
@@ -718,10 +718,10 @@ void gnu_xml_dom_ls_ReaderInputStream_mark___int(JAVA_OBJECT me, JAVA_INT n1)
     (*(void (*)(JAVA_OBJECT, JAVA_INT)) ((java_io_Reader*) _r0.o)->tib->vtable[8])(_r0.o, _r5.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17691aaac13b1c22)
-        XMLVM_CATCH_SPECIFIC(w17691aaac13b1c22,java_io_IOException,36)
-    XMLVM_CATCH_END(w17691aaac13b1c22)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17691aaac13b1c22)
+    XMLVM_CATCH_BEGIN(w17722aaac13b1c22)
+        XMLVM_CATCH_SPECIFIC(w17722aaac13b1c22,java_io_IOException,36)
+    XMLVM_CATCH_END(w17722aaac13b1c22)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17722aaac13b1c22)
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 177)
     XMLVM_EXIT_METHOD()
     return;
@@ -732,8 +732,8 @@ void gnu_xml_dom_ls_ReaderInputStream_mark___int(JAVA_OBJECT me, JAVA_INT n1)
     goto label26;
     label36:;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 173)
-    java_lang_Thread* curThread_w17691aaac13b1c32 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w17691aaac13b1c32->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w17722aaac13b1c32 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w17722aaac13b1c32->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 175)
     _r1.o = __NEW_java_lang_RuntimeException();
     XMLVM_CHECK_NPE(1)
@@ -892,7 +892,7 @@ JAVA_OBJECT gnu_xml_dom_ls_ReaderInputStream_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     // "["
-    _r1.o = xmlvm_create_java_string_from_pool(1370);
+    _r1.o = xmlvm_create_java_string_from_pool(1373);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     _r1.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r2.o)->fields.gnu_xml_dom_ls_ReaderInputStream.reader_;

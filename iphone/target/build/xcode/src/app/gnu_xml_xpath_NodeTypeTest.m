@@ -534,7 +534,7 @@ JAVA_OBJECT gnu_xml_xpath_NodeTypeTest_toString__(JAVA_OBJECT me)
     label11:;
     XMLVM_SOURCE_POSITION("NodeTypeTest.java", 125)
     // "node()"
-    _r0.o = xmlvm_create_java_string_from_pool(3348);
+    _r0.o = xmlvm_create_java_string_from_pool(3351);
     label13:;
     XMLVM_SOURCE_POSITION("NodeTypeTest.java", 135)
     XMLVM_EXIT_METHOD()
@@ -542,12 +542,12 @@ JAVA_OBJECT gnu_xml_xpath_NodeTypeTest_toString__(JAVA_OBJECT me)
     label14:;
     XMLVM_SOURCE_POSITION("NodeTypeTest.java", 127)
     // "text()"
-    _r0.o = xmlvm_create_java_string_from_pool(3349);
+    _r0.o = xmlvm_create_java_string_from_pool(3352);
     goto label13;
     label17:;
     XMLVM_SOURCE_POSITION("NodeTypeTest.java", 129)
     // "comment()"
-    _r0.o = xmlvm_create_java_string_from_pool(3350);
+    _r0.o = xmlvm_create_java_string_from_pool(3353);
     goto label13;
     label20:;
     XMLVM_SOURCE_POSITION("NodeTypeTest.java", 131)
@@ -556,14 +556,14 @@ JAVA_OBJECT gnu_xml_xpath_NodeTypeTest_toString__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("NodeTypeTest.java", 133)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "processing-instruction('"
-    _r1.o = xmlvm_create_java_string_from_pool(3351);
+    _r1.o = xmlvm_create_java_string_from_pool(3354);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     _r1.o = ((gnu_xml_xpath_NodeTypeTest*) _r2.o)->fields.gnu_xml_xpath_NodeTypeTest.data_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     // "')"
-    _r1.o = xmlvm_create_java_string_from_pool(3352);
+    _r1.o = xmlvm_create_java_string_from_pool(3355);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     //java_lang_StringBuilder_toString__[5]
@@ -572,7 +572,7 @@ JAVA_OBJECT gnu_xml_xpath_NodeTypeTest_toString__(JAVA_OBJECT me)
     goto label13;
     label48:;
     // "processing-instruction()"
-    _r0.o = xmlvm_create_java_string_from_pool(3353);
+    _r0.o = xmlvm_create_java_string_from_pool(3356);
     goto label13;
     label52:;
     //XMLVM_END_WRAPPER

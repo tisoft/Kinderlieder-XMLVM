@@ -453,7 +453,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     _r1.o = org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl_readln__(_r2.o);
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 268)
     // ";"
-    _r2.o = xmlvm_create_java_string_from_pool(1660);
+    _r2.o = xmlvm_create_java_string_from_pool(1663);
     XMLVM_CHECK_NPE(1)
     _r0.i = java_lang_String_indexOf___java_lang_String(_r1.o, _r2.o);
     if (_r0.i < 0) goto label33;

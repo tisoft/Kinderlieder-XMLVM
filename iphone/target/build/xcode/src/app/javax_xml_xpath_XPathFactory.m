@@ -283,8 +283,8 @@ void __INIT_IMPL_javax_xml_xpath_XPathFactory()
     __TIB_javax_xml_xpath_XPathFactory.implementedInterfaces = (__TIB_DEFINITION_TEMPLATE* (*)[1]) XMLVM_MALLOC(sizeof(__TIB_DEFINITION_TEMPLATE*) * 0);
 
     // Initialize interfaces if necessary and assign tib to implementedInterfaces
-    _STATIC_javax_xml_xpath_XPathFactory_DEFAULT_PROPERTY_NAME = (java_lang_String*) xmlvm_create_java_string_from_pool(3091);
-    _STATIC_javax_xml_xpath_XPathFactory_DEFAULT_OBJECT_MODEL_URI = (java_lang_String*) xmlvm_create_java_string_from_pool(974);
+    _STATIC_javax_xml_xpath_XPathFactory_DEFAULT_PROPERTY_NAME = (java_lang_String*) xmlvm_create_java_string_from_pool(3094);
+    _STATIC_javax_xml_xpath_XPathFactory_DEFAULT_OBJECT_MODEL_URI = (java_lang_String*) xmlvm_create_java_string_from_pool(977);
 
     __TIB_javax_xml_xpath_XPathFactory.declaredFields = &__field_reflection_data[0];
     __TIB_javax_xml_xpath_XPathFactory.numDeclaredFields = sizeof(__field_reflection_data) / sizeof(XMLVM_FIELD_REFLECTION_DATA);
@@ -385,24 +385,24 @@ JAVA_OBJECT javax_xml_xpath_XPathFactory_newInstance__()
     XMLVMElem _r0;
     XMLVMElem _r1;
     XMLVMElem _r2;
-    XMLVM_TRY_BEGIN(w38492aaab3b1b1)
+    XMLVM_TRY_BEGIN(w38527aaab3b1b1)
     // Begin try
     XMLVM_SOURCE_POSITION("XPathFactory.java", 74)
     // "http://java.sun.com/jaxp/xpath/dom"
-    _r1.o = xmlvm_create_java_string_from_pool(974);
+    _r1.o = xmlvm_create_java_string_from_pool(977);
     _r1.o = javax_xml_xpath_XPathFactory_newInstance___java_lang_String(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38492aaab3b1b1)
-        XMLVM_CATCH_SPECIFIC(w38492aaab3b1b1,javax_xml_xpath_XPathFactoryConfigurationException,7)
-    XMLVM_CATCH_END(w38492aaab3b1b1)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38492aaab3b1b1)
+    XMLVM_CATCH_BEGIN(w38527aaab3b1b1)
+        XMLVM_CATCH_SPECIFIC(w38527aaab3b1b1,javax_xml_xpath_XPathFactoryConfigurationException,7)
+    XMLVM_CATCH_END(w38527aaab3b1b1)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38527aaab3b1b1)
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label7:;
     XMLVM_SOURCE_POSITION("XPathFactory.java", 76)
-    java_lang_Thread* curThread_w38492aaab3b1b5 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w38492aaab3b1b5->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38527aaab3b1b5 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w38527aaab3b1b5->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r1;
     XMLVM_SOURCE_POSITION("XPathFactory.java", 78)
     _r1.o = __NEW_java_lang_RuntimeException();
@@ -444,7 +444,7 @@ JAVA_OBJECT javax_xml_xpath_XPathFactory_newInstance___java_lang_String(JAVA_OBJ
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuilder___INIT___(_r2.o);
     // "no factories with support for "
-    _r3.o = xmlvm_create_java_string_from_pool(3092);
+    _r3.o = xmlvm_create_java_string_from_pool(3095);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r3.o);
     XMLVM_CHECK_NPE(2)

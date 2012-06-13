@@ -350,7 +350,7 @@ JAVA_OBJECT java_util_IllegalFormatConversionException_getMessage__(JAVA_OBJECT 
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("IllegalFormatConversionException.java", 81)
     // " is incompatible with "
-    _r1.o = xmlvm_create_java_string_from_pool(1443);
+    _r1.o = xmlvm_create_java_string_from_pool(1446);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("IllegalFormatConversionException.java", 82)

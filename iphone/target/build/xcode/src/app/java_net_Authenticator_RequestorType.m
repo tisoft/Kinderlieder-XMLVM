@@ -297,14 +297,14 @@ void java_net_Authenticator_RequestorType___CLINIT_()
     XMLVM_SOURCE_POSITION("Authenticator.java", 324)
     _r0.o = __NEW_java_net_Authenticator_RequestorType();
     // "PROXY"
-    _r1.o = xmlvm_create_java_string_from_pool(2383);
+    _r1.o = xmlvm_create_java_string_from_pool(2386);
     XMLVM_CHECK_NPE(0)
     java_net_Authenticator_RequestorType___INIT____java_lang_String_int(_r0.o, _r1.o, _r2.i);
     java_net_Authenticator_RequestorType_PUT_PROXY( _r0.o);
     XMLVM_SOURCE_POSITION("Authenticator.java", 329)
     _r0.o = __NEW_java_net_Authenticator_RequestorType();
     // "SERVER"
-    _r1.o = xmlvm_create_java_string_from_pool(2384);
+    _r1.o = xmlvm_create_java_string_from_pool(2387);
     XMLVM_CHECK_NPE(0)
     java_net_Authenticator_RequestorType___INIT____java_lang_String_int(_r0.o, _r1.o, _r3.i);
     java_net_Authenticator_RequestorType_PUT_SERVER( _r0.o);

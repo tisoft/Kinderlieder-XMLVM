@@ -400,7 +400,7 @@ JAVA_OBJECT gnu_xml_util_Resolver_fileToURL___java_io_File(JAVA_OBJECT n1)
     _r0.o = __NEW_java_io_IOException();
     _r1.o = __NEW_java_lang_StringBuilder();
     // "no such file: "
-    _r2.o = xmlvm_create_java_string_from_pool(1385);
+    _r2.o = xmlvm_create_java_string_from_pool(1388);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(4)
@@ -468,7 +468,7 @@ JAVA_OBJECT gnu_xml_util_Resolver_fileToURL___java_io_File(JAVA_OBJECT n1)
     XMLVM_SOURCE_POSITION("Resolver.java", 143)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "file:"
-    _r2.o = xmlvm_create_java_string_from_pool(1386);
+    _r2.o = xmlvm_create_java_string_from_pool(1389);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(1)
@@ -489,23 +489,23 @@ JAVA_OBJECT gnu_xml_util_Resolver_getURL___java_lang_String(JAVA_OBJECT n1)
     XMLVMElem _r0;
     XMLVMElem _r1;
     _r1.o = n1;
-    XMLVM_TRY_BEGIN(w18418aaab4b1b2)
+    XMLVM_TRY_BEGIN(w18449aaab4b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("Resolver.java", 158)
     _r0.o = gnu_xml_util_Resolver_fileNameToURL___java_lang_String(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w18418aaab4b1b2)
-        XMLVM_CATCH_SPECIFIC(w18418aaab4b1b2,java_lang_Exception,5)
-    XMLVM_CATCH_END(w18418aaab4b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w18418aaab4b1b2)
+    XMLVM_CATCH_BEGIN(w18449aaab4b1b2)
+        XMLVM_CATCH_SPECIFIC(w18449aaab4b1b2,java_lang_Exception,5)
+    XMLVM_CATCH_END(w18449aaab4b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w18449aaab4b1b2)
     label4:;
     XMLVM_SOURCE_POSITION("Resolver.java", 160)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label5:;
-    java_lang_Thread* curThread_w18418aaab4b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w18418aaab4b1b7->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w18449aaab4b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w18449aaab4b1b7->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r1;
     goto label4;
     //XMLVM_END_WRAPPER
@@ -549,13 +549,13 @@ JAVA_OBJECT gnu_xml_util_Resolver_getEncoding___java_lang_String(JAVA_OBJECT n1)
     _r0.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("Resolver.java", 210)
     // "text/"
-    _r1.o = xmlvm_create_java_string_from_pool(1387);
+    _r1.o = xmlvm_create_java_string_from_pool(1390);
     XMLVM_CHECK_NPE(6)
     _r1.i = java_lang_String_startsWith___java_lang_String(_r6.o, _r1.o);
     if (_r1.i == 0) goto label22;
     XMLVM_SOURCE_POSITION("Resolver.java", 211)
     // "text/html"
-    _r0.o = xmlvm_create_java_string_from_pool(1388);
+    _r0.o = xmlvm_create_java_string_from_pool(1391);
     XMLVM_CHECK_NPE(6)
     _r0.i = java_lang_String_startsWith___java_lang_String(_r6.o, _r0.o);
     if (_r0.i == 0) goto label39;

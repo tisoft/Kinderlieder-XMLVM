@@ -420,7 +420,7 @@ void java_text_AttributedString___INIT____java_text_AttributedCharacterIterator(
     XMLVM_SOURCE_POSITION("AttributedString.java", 393)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "text.0A"
-    _r1.o = xmlvm_create_java_string_from_pool(3356);
+    _r1.o = xmlvm_create_java_string_from_pool(3359);
 
     
     // Red class access removed: org.apache.harmony.text.internal.nls.Messages::getString
@@ -804,7 +804,7 @@ void java_text_AttributedString___INIT____java_lang_String_java_util_Map(JAVA_OB
     XMLVM_SOURCE_POSITION("AttributedString.java", 551)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "text.0B"
-    _r1.o = xmlvm_create_java_string_from_pool(3357);
+    _r1.o = xmlvm_create_java_string_from_pool(3360);
 
     
     // Red class access removed: org.apache.harmony.text.internal.nls.Messages::getString

@@ -350,7 +350,7 @@ JAVA_OBJECT java_util_regex_LeafQuantifierSet_getName__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("LeafQuantifierSet.java", 60)
     // "<Quant>"
-    _r0.o = xmlvm_create_java_string_from_pool(1084);
+    _r0.o = xmlvm_create_java_string_from_pool(1087);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

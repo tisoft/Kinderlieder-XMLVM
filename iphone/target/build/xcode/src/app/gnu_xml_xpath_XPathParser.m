@@ -1551,7 +1551,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r8.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_size__])(_r8.o);
     XMLVM_SOURCE_POSITION("XPathParser.java", 85)
     // "position"
-    _r2.o = xmlvm_create_java_string_from_pool(2637);
+    _r2.o = xmlvm_create_java_string_from_pool(2640);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
@@ -1568,7 +1568,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     label23:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 89)
     // "last"
-    _r2.o = xmlvm_create_java_string_from_pool(2638);
+    _r2.o = xmlvm_create_java_string_from_pool(2641);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
@@ -1582,7 +1582,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     label39:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 93)
     // "string"
-    _r2.o = xmlvm_create_java_string_from_pool(2639);
+    _r2.o = xmlvm_create_java_string_from_pool(2642);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
@@ -1598,7 +1598,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     label57:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 97)
     // "number"
-    _r2.o = xmlvm_create_java_string_from_pool(2640);
+    _r2.o = xmlvm_create_java_string_from_pool(2643);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
@@ -1628,7 +1628,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     label91:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 105)
     // "count"
-    _r2.o = xmlvm_create_java_string_from_pool(2641);
+    _r2.o = xmlvm_create_java_string_from_pool(2644);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
@@ -1642,7 +1642,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     label107:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 109)
     // "not"
-    _r2.o = xmlvm_create_java_string_from_pool(1734);
+    _r2.o = xmlvm_create_java_string_from_pool(1737);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
@@ -1670,7 +1670,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     label139:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 117)
     // "concat"
-    _r2.o = xmlvm_create_java_string_from_pool(2642);
+    _r2.o = xmlvm_create_java_string_from_pool(2645);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
@@ -1728,7 +1728,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     label209:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 133)
     // "local-name"
-    _r2.o = xmlvm_create_java_string_from_pool(2643);
+    _r2.o = xmlvm_create_java_string_from_pool(2646);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
@@ -1744,7 +1744,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     label228:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 137)
     // "namespace-uri"
-    _r2.o = xmlvm_create_java_string_from_pool(2644);
+    _r2.o = xmlvm_create_java_string_from_pool(2647);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
@@ -1760,7 +1760,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     label247:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 141)
     // "starts-with"
-    _r2.o = xmlvm_create_java_string_from_pool(2645);
+    _r2.o = xmlvm_create_java_string_from_pool(2648);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
@@ -1774,7 +1774,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     label264:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 145)
     // "contains"
-    _r2.o = xmlvm_create_java_string_from_pool(2646);
+    _r2.o = xmlvm_create_java_string_from_pool(2649);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
@@ -1788,7 +1788,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     label281:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 149)
     // "string-length"
-    _r2.o = xmlvm_create_java_string_from_pool(2647);
+    _r2.o = xmlvm_create_java_string_from_pool(2650);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
@@ -1804,7 +1804,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     label300:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 153)
     // "translate"
-    _r2.o = xmlvm_create_java_string_from_pool(2648);
+    _r2.o = xmlvm_create_java_string_from_pool(2651);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
@@ -1818,7 +1818,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     label317:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 157)
     // "normalize-space"
-    _r2.o = xmlvm_create_java_string_from_pool(2649);
+    _r2.o = xmlvm_create_java_string_from_pool(2652);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
@@ -1834,7 +1834,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     label336:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 161)
     // "substring"
-    _r2.o = xmlvm_create_java_string_from_pool(2650);
+    _r2.o = xmlvm_create_java_string_from_pool(2653);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
@@ -1850,7 +1850,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     label355:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 165)
     // "substring-before"
-    _r2.o = xmlvm_create_java_string_from_pool(2651);
+    _r2.o = xmlvm_create_java_string_from_pool(2654);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
@@ -1864,7 +1864,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     label372:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 169)
     // "substring-after"
-    _r2.o = xmlvm_create_java_string_from_pool(2652);
+    _r2.o = xmlvm_create_java_string_from_pool(2655);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
@@ -1892,7 +1892,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     label406:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 177)
     // "sum"
-    _r2.o = xmlvm_create_java_string_from_pool(2653);
+    _r2.o = xmlvm_create_java_string_from_pool(2656);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
@@ -1906,7 +1906,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     label423:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 181)
     // "floor"
-    _r2.o = xmlvm_create_java_string_from_pool(2654);
+    _r2.o = xmlvm_create_java_string_from_pool(2657);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
@@ -1920,7 +1920,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     label440:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 185)
     // "ceiling"
-    _r2.o = xmlvm_create_java_string_from_pool(2655);
+    _r2.o = xmlvm_create_java_string_from_pool(2658);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
@@ -1934,7 +1934,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     label457:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 189)
     // "round"
-    _r2.o = xmlvm_create_java_string_from_pool(2656);
+    _r2.o = xmlvm_create_java_string_from_pool(2659);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
@@ -2028,7 +2028,7 @@ void gnu_xml_xpath_XPathParser_yyerror___java_lang_String_java_lang_String_1ARRA
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     // ", expecting"
-    _r2.o = xmlvm_create_java_string_from_pool(2657);
+    _r2.o = xmlvm_create_java_string_from_pool(2660);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     //java_lang_StringBuilder_toString__[5]
@@ -2582,7 +2582,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInpu
     label214:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 440)
     // "syntax error"
-    _r1.o = xmlvm_create_java_string_from_pool(2658);
+    _r1.o = xmlvm_create_java_string_from_pool(2661);
     XMLVM_CHECK_NPE(13)
     _r3.o = gnu_xml_xpath_XPathParser_yyExpecting___int(_r13.o, _r6.i);
     XMLVM_CHECK_NPE(13)
@@ -2636,7 +2636,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInpu
     XMLVM_SOURCE_POSITION("XPathParser.java", 458)
     _r0.o = __NEW_gnu_xml_xpath_XPathParser_yyException();
     // "irrecoverable syntax error"
-    _r1.o = xmlvm_create_java_string_from_pool(2659);
+    _r1.o = xmlvm_create_java_string_from_pool(2662);
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathParser_yyException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -2646,7 +2646,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInpu
     XMLVM_SOURCE_POSITION("XPathParser.java", 463)
     _r0.o = __NEW_gnu_xml_xpath_XPathParser_yyException();
     // "irrecoverable syntax error at end-of-file"
-    _r1.o = xmlvm_create_java_string_from_pool(2660);
+    _r1.o = xmlvm_create_java_string_from_pool(2663);
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathParser_yyException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)

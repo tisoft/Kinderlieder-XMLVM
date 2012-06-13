@@ -412,7 +412,7 @@ JAVA_OBJECT java_security_PermissionCollection_toString__(JAVA_OBJECT me)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r4.o, _r2.o);
     XMLVM_SOURCE_POSITION("PermissionCollection.java", 114)
     // " ("
-    _r2.o = xmlvm_create_java_string_from_pool(992);
+    _r2.o = xmlvm_create_java_string_from_pool(995);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("PermissionCollection.java", 115)
@@ -421,7 +421,7 @@ JAVA_OBJECT java_security_PermissionCollection_toString__(JAVA_OBJECT me)
     if (_r2.i < _r3.i) goto label85;
     XMLVM_SOURCE_POSITION("PermissionCollection.java", 118)
     // "\012)\012"
-    _r0.o = xmlvm_create_java_string_from_pool(2470);
+    _r0.o = xmlvm_create_java_string_from_pool(2473);
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r0.o);
     //java_lang_StringBuilder_toString__[5]
@@ -449,7 +449,7 @@ JAVA_OBJECT java_security_PermissionCollection_toString__(JAVA_OBJECT me)
     label85:;
     XMLVM_SOURCE_POSITION("PermissionCollection.java", 116)
     // "\012 "
-    _r4.o = xmlvm_create_java_string_from_pool(2471);
+    _r4.o = xmlvm_create_java_string_from_pool(2474);
     XMLVM_CHECK_NPE(1)
     _r4.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
     XMLVM_CHECK_NPE(0)

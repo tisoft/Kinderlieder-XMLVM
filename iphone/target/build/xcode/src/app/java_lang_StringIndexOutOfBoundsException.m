@@ -260,7 +260,7 @@ void java_lang_StringIndexOutOfBoundsException___INIT____int(JAVA_OBJECT me, JAV
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("StringIndexOutOfBoundsException.java", 48)
     // "luni.55"
-    _r0.o = xmlvm_create_java_string_from_pool(1118);
+    _r0.o = xmlvm_create_java_string_from_pool(1121);
     _r0.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_int(_r0.o, _r2.i);
     XMLVM_CHECK_NPE(1)
     java_lang_IndexOutOfBoundsException___INIT____java_lang_String(_r1.o, _r0.o);

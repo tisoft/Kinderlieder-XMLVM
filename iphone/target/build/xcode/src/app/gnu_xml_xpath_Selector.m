@@ -2029,7 +2029,7 @@ JAVA_OBJECT gnu_xml_xpath_Selector_toString__(JAVA_OBJECT me)
     if (_r0.i != 0) goto label171;
     XMLVM_SOURCE_POSITION("Selector.java", 494)
     // "[error]"
-    _r0.o = xmlvm_create_java_string_from_pool(1085);
+    _r0.o = xmlvm_create_java_string_from_pool(1088);
     XMLVM_CHECK_NPE(1)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r1.o, _r0.o);
     label21:;
@@ -2043,14 +2043,14 @@ JAVA_OBJECT gnu_xml_xpath_Selector_toString__(JAVA_OBJECT me)
     label26:;
     XMLVM_SOURCE_POSITION("Selector.java", 442)
     // "ancestor::"
-    _r0.o = xmlvm_create_java_string_from_pool(1086);
+    _r0.o = xmlvm_create_java_string_from_pool(1089);
     XMLVM_CHECK_NPE(1)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r1.o, _r0.o);
     goto label11;
     label32:;
     XMLVM_SOURCE_POSITION("Selector.java", 445)
     // "ancestor-or-self::"
-    _r0.o = xmlvm_create_java_string_from_pool(1087);
+    _r0.o = xmlvm_create_java_string_from_pool(1090);
     XMLVM_CHECK_NPE(1)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r1.o, _r0.o);
     goto label11;
@@ -2077,42 +2077,42 @@ JAVA_OBJECT gnu_xml_xpath_Selector_toString__(JAVA_OBJECT me)
     label57:;
     XMLVM_SOURCE_POSITION("Selector.java", 452)
     // "attribute::"
-    _r0.o = xmlvm_create_java_string_from_pool(1088);
+    _r0.o = xmlvm_create_java_string_from_pool(1091);
     XMLVM_CHECK_NPE(1)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r1.o, _r0.o);
     goto label11;
     label63:;
     XMLVM_SOURCE_POSITION("Selector.java", 458)
     // "descendant::"
-    _r0.o = xmlvm_create_java_string_from_pool(1089);
+    _r0.o = xmlvm_create_java_string_from_pool(1092);
     XMLVM_CHECK_NPE(1)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r1.o, _r0.o);
     goto label11;
     label69:;
     XMLVM_SOURCE_POSITION("Selector.java", 461)
     // "descendant-or-self::"
-    _r0.o = xmlvm_create_java_string_from_pool(1090);
+    _r0.o = xmlvm_create_java_string_from_pool(1093);
     XMLVM_CHECK_NPE(1)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r1.o, _r0.o);
     goto label11;
     label75:;
     XMLVM_SOURCE_POSITION("Selector.java", 464)
     // "following::"
-    _r0.o = xmlvm_create_java_string_from_pool(1091);
+    _r0.o = xmlvm_create_java_string_from_pool(1094);
     XMLVM_CHECK_NPE(1)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r1.o, _r0.o);
     goto label11;
     label81:;
     XMLVM_SOURCE_POSITION("Selector.java", 467)
     // "following-sibling::"
-    _r0.o = xmlvm_create_java_string_from_pool(1092);
+    _r0.o = xmlvm_create_java_string_from_pool(1095);
     XMLVM_CHECK_NPE(1)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r1.o, _r0.o);
     goto label11;
     label87:;
     XMLVM_SOURCE_POSITION("Selector.java", 470)
     // "namespace::"
-    _r0.o = xmlvm_create_java_string_from_pool(1093);
+    _r0.o = xmlvm_create_java_string_from_pool(1096);
     XMLVM_CHECK_NPE(1)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r1.o, _r0.o);
     goto label11;
@@ -2140,26 +2140,26 @@ JAVA_OBJECT gnu_xml_xpath_Selector_toString__(JAVA_OBJECT me)
     label116:;
     XMLVM_SOURCE_POSITION("Selector.java", 476)
     // ".."
-    _r0.o = xmlvm_create_java_string_from_pool(1094);
+    _r0.o = xmlvm_create_java_string_from_pool(1097);
     goto label25;
     label119:;
     XMLVM_SOURCE_POSITION("Selector.java", 477)
     // "parent::"
-    _r0.o = xmlvm_create_java_string_from_pool(1095);
+    _r0.o = xmlvm_create_java_string_from_pool(1098);
     XMLVM_CHECK_NPE(1)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r1.o, _r0.o);
     goto label11;
     label125:;
     XMLVM_SOURCE_POSITION("Selector.java", 480)
     // "preceding::"
-    _r0.o = xmlvm_create_java_string_from_pool(1096);
+    _r0.o = xmlvm_create_java_string_from_pool(1099);
     XMLVM_CHECK_NPE(1)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r1.o, _r0.o);
     goto label11;
     label131:;
     XMLVM_SOURCE_POSITION("Selector.java", 483)
     // "preceding-sibling::"
-    _r0.o = xmlvm_create_java_string_from_pool(1097);
+    _r0.o = xmlvm_create_java_string_from_pool(1100);
     XMLVM_CHECK_NPE(1)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r1.o, _r0.o);
     goto label11;
@@ -2192,7 +2192,7 @@ JAVA_OBJECT gnu_xml_xpath_Selector_toString__(JAVA_OBJECT me)
     label164:;
     XMLVM_SOURCE_POSITION("Selector.java", 490)
     // "self::"
-    _r0.o = xmlvm_create_java_string_from_pool(1098);
+    _r0.o = xmlvm_create_java_string_from_pool(1101);
     XMLVM_CHECK_NPE(1)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r1.o, _r0.o);
     goto label11;

@@ -177,7 +177,7 @@ void __INIT_IMPL_javax_xml_xpath_XPathConstants()
     _STATIC_javax_xml_xpath_XPathConstants_BOOLEAN = (javax_xml_namespace_QName*) JAVA_NULL;
     _STATIC_javax_xml_xpath_XPathConstants_NODESET = (javax_xml_namespace_QName*) JAVA_NULL;
     _STATIC_javax_xml_xpath_XPathConstants_NODE = (javax_xml_namespace_QName*) JAVA_NULL;
-    _STATIC_javax_xml_xpath_XPathConstants_DOM_OBJECT_MODEL = (java_lang_String*) xmlvm_create_java_string_from_pool(974);
+    _STATIC_javax_xml_xpath_XPathConstants_DOM_OBJECT_MODEL = (java_lang_String*) xmlvm_create_java_string_from_pool(977);
 
     __TIB_javax_xml_xpath_XPathConstants.declaredFields = &__field_reflection_data[0];
     __TIB_javax_xml_xpath_XPathConstants.numDeclaredFields = sizeof(__field_reflection_data) / sizeof(XMLVM_FIELD_REFLECTION_DATA);
@@ -315,7 +315,7 @@ void javax_xml_xpath_XPathConstants___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathConstants.java", 59)
     _r0.o = __NEW_javax_xml_namespace_QName();
     // "http://java.sun.com/jaxp/xpath/dom#number"
-    _r1.o = xmlvm_create_java_string_from_pool(975);
+    _r1.o = xmlvm_create_java_string_from_pool(978);
     // ""
     _r2.o = xmlvm_create_java_string_from_pool(0);
     XMLVM_CHECK_NPE(0)
@@ -325,7 +325,7 @@ void javax_xml_xpath_XPathConstants___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathConstants.java", 65)
     _r0.o = __NEW_javax_xml_namespace_QName();
     // "http://java.sun.com/jaxp/xpath/dom#string"
-    _r1.o = xmlvm_create_java_string_from_pool(976);
+    _r1.o = xmlvm_create_java_string_from_pool(979);
     // ""
     _r2.o = xmlvm_create_java_string_from_pool(0);
     XMLVM_CHECK_NPE(0)
@@ -335,7 +335,7 @@ void javax_xml_xpath_XPathConstants___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathConstants.java", 71)
     _r0.o = __NEW_javax_xml_namespace_QName();
     // "http://java.sun.com/jaxp/xpath/dom#boolean"
-    _r1.o = xmlvm_create_java_string_from_pool(977);
+    _r1.o = xmlvm_create_java_string_from_pool(980);
     // ""
     _r2.o = xmlvm_create_java_string_from_pool(0);
     XMLVM_CHECK_NPE(0)
@@ -345,7 +345,7 @@ void javax_xml_xpath_XPathConstants___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathConstants.java", 77)
     _r0.o = __NEW_javax_xml_namespace_QName();
     // "http://java.sun.com/jaxp/xpath/dom#node-set"
-    _r1.o = xmlvm_create_java_string_from_pool(978);
+    _r1.o = xmlvm_create_java_string_from_pool(981);
     // ""
     _r2.o = xmlvm_create_java_string_from_pool(0);
     XMLVM_CHECK_NPE(0)
@@ -355,7 +355,7 @@ void javax_xml_xpath_XPathConstants___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathConstants.java", 83)
     _r0.o = __NEW_javax_xml_namespace_QName();
     // "http://java.sun.com/jaxp/xpath/dom#node"
-    _r1.o = xmlvm_create_java_string_from_pool(979);
+    _r1.o = xmlvm_create_java_string_from_pool(982);
     // ""
     _r2.o = xmlvm_create_java_string_from_pool(0);
     XMLVM_CHECK_NPE(0)

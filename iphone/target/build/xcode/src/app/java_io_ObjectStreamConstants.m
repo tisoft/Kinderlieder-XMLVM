@@ -346,7 +346,7 @@ void java_io_ObjectStreamConstants___CLINIT_()
     _r0.o = __NEW_java_io_SerializablePermission();
     XMLVM_SOURCE_POSITION("ObjectStreamConstants.java", 140)
     // "enableSubclassImplementation"
-    _r1.o = xmlvm_create_java_string_from_pool(2394);
+    _r1.o = xmlvm_create_java_string_from_pool(2397);
     XMLVM_CHECK_NPE(0)
     java_io_SerializablePermission___INIT____java_lang_String(_r0.o, _r1.o);
     java_io_ObjectStreamConstants_PUT_SUBCLASS_IMPLEMENTATION_PERMISSION( _r0.o);
@@ -354,7 +354,7 @@ void java_io_ObjectStreamConstants___CLINIT_()
     _r0.o = __NEW_java_io_SerializablePermission();
     XMLVM_SOURCE_POSITION("ObjectStreamConstants.java", 147)
     // "enableSubstitution"
-    _r1.o = xmlvm_create_java_string_from_pool(2395);
+    _r1.o = xmlvm_create_java_string_from_pool(2398);
     XMLVM_CHECK_NPE(0)
     java_io_SerializablePermission___INIT____java_lang_String(_r0.o, _r1.o);
     java_io_ObjectStreamConstants_PUT_SUBSTITUTION_PERMISSION( _r0.o);

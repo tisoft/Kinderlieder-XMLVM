@@ -7,13 +7,20 @@
 #include "java_lang_System.h"
 #include "java_lang_Thread.h"
 #include "java_util_ArrayList.h"
+#include "java_util_Arrays.h"
 #include "java_util_Iterator.h"
+#include "java_util_List.h"
+#include "my_kinderlieder_InAppProduct.h"
+#include "my_kinderlieder_Product_State.h"
 #include "my_kinderlieder_ShopService.h"
 #include "my_kinderlieder_ShopService_1_1.h"
+#include "my_kinderlieder_ShopService_1_2.h"
 #include "org_xmlvm_iphone_NSData.h"
+#include "org_xmlvm_iphone_NSError.h"
 #include "org_xmlvm_iphone_SKPayment.h"
 #include "org_xmlvm_iphone_SKPaymentQueue.h"
 #include "org_xmlvm_iphone_SKPaymentTransaction.h"
+#include "org_xmlvm_iphone_UIAlertView.h"
 
 #include "my_kinderlieder_ShopService_1.h"
 
@@ -248,135 +255,257 @@ void my_kinderlieder_ShopService_1_updatedTransactions___org_xmlvm_iphone_SKPaym
     XMLVMElem _r9;
     XMLVMElem _r10;
     XMLVMElem _r11;
-    _r9.o = me;
-    _r10.o = n1;
-    _r11.o = n2;
+    XMLVMElem _r12;
+    XMLVMElem _r13;
+    _r11.o = me;
+    _r12.o = n1;
+    _r13.o = n2;
     // " "
-    _r8.o = xmlvm_create_java_string_from_pool(28);
+    _r10.o = xmlvm_create_java_string_from_pool(28);
     XMLVM_SOURCE_POSITION("ShopService.java", 31)
     //java_util_ArrayList_iterator__[12]
-    XMLVM_CHECK_NPE(11)
-    _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_ArrayList*) _r11.o)->tib->vtable[12])(_r11.o);
+    XMLVM_CHECK_NPE(13)
+    _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_ArrayList*) _r13.o)->tib->vtable[12])(_r13.o);
     label6:;
-    XMLVM_CHECK_NPE(1)
-    _r5.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_hasNext__])(_r1.o);
-    if (_r5.i == 0) goto label170;
-    XMLVM_CHECK_NPE(1)
-    _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_next__])(_r1.o);
-    _r4.o = _r4.o;
-    _r2 = _r4;
-    label19:;
+    XMLVM_CHECK_NPE(2)
+    _r6.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_hasNext__])(_r2.o);
+    if (_r6.i == 0) goto label357;
+    XMLVM_CHECK_NPE(2)
+    _r5.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_next__])(_r2.o);
+    _r5.o = _r5.o;
     XMLVM_SOURCE_POSITION("ShopService.java", 32)
+    XMLVM_CHECK_NPE(5)
+    _r6.i = org_xmlvm_iphone_SKPaymentTransaction_getTransactionState__(_r5.o);
+    if (_r6.i == 0) goto label27;
     XMLVM_SOURCE_POSITION("ShopService.java", 33)
-    XMLVM_CHECK_NPE(2)
-    _r5.o = org_xmlvm_iphone_SKPaymentTransaction_getOriginalTransaction__(_r2.o);
-    if (_r5.o == JAVA_NULL) goto label30;
-    XMLVM_SOURCE_POSITION("ShopService.java", 34)
-    XMLVM_CHECK_NPE(2)
-    _r2.o = org_xmlvm_iphone_SKPaymentTransaction_getOriginalTransaction__(_r2.o);
-    goto label19;
-    label30:;
+    XMLVM_CHECK_NPE(12)
+    org_xmlvm_iphone_SKPaymentQueue_finishTransaction___org_xmlvm_iphone_SKPaymentTransaction(_r12.o, _r5.o);
+    label27:;
+    XMLVM_SOURCE_POSITION("ShopService.java", 35)
+    _r6.o = ((my_kinderlieder_ShopService_1*) _r11.o)->fields.my_kinderlieder_ShopService_1.this_0_;
+    _r3.o = my_kinderlieder_ShopService_access$000___my_kinderlieder_ShopService_org_xmlvm_iphone_SKPaymentTransaction(_r6.o, _r5.o);
+    if (_r3.o != JAVA_NULL) goto label68;
     XMLVM_SOURCE_POSITION("ShopService.java", 37)
-    XMLVM_CHECK_NPE(2)
-    _r5.o = org_xmlvm_iphone_SKPaymentTransaction_getTransactionIdentifier__(_r2.o);
-    if (_r5.o == JAVA_NULL) goto label6;
-    XMLVM_CHECK_NPE(2)
-    _r5.o = org_xmlvm_iphone_SKPaymentTransaction_getPayment__(_r2.o);
-    if (_r5.o == JAVA_NULL) goto label6;
-    XMLVM_CHECK_NPE(2)
-    _r5.o = org_xmlvm_iphone_SKPaymentTransaction_getTransactionReceipt__(_r2.o);
-    if (_r5.o == JAVA_NULL) goto label6;
     XMLVM_SOURCE_POSITION("ShopService.java", 38)
-    XMLVM_CHECK_NPE(2)
-    _r5.i = org_xmlvm_iphone_SKPaymentTransaction_getTransactionState__(_r2.o);
-    switch (_r5.i) {
-    case 1: goto label56;
-    case 2: goto label119;
-    case 3: goto label56;
+    _r6.o = java_lang_System_GET_out();
+    _r7.o = __NEW_java_lang_StringBuilder();
+    XMLVM_CHECK_NPE(7)
+    java_lang_StringBuilder___INIT___(_r7.o);
+    // "Got transaction for unknown product: "
+    _r8.o = xmlvm_create_java_string_from_pool(857);
+    XMLVM_CHECK_NPE(7)
+    _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r8.o);
+    XMLVM_CHECK_NPE(5)
+    _r8.o = org_xmlvm_iphone_SKPaymentTransaction_getPayment__(_r5.o);
+    XMLVM_CHECK_NPE(8)
+    _r8.o = org_xmlvm_iphone_SKPayment_getProductIdentifier__(_r8.o);
+    XMLVM_CHECK_NPE(7)
+    _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r8.o);
+    //java_lang_StringBuilder_toString__[5]
+    XMLVM_CHECK_NPE(7)
+    _r7.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r7.o)->tib->vtable[5])(_r7.o);
+    XMLVM_CHECK_NPE(6)
+    java_io_PrintStream_println___java_lang_String(_r6.o, _r7.o);
+    goto label6;
+    label68:;
+    XMLVM_SOURCE_POSITION("ShopService.java", 41)
+    XMLVM_CHECK_NPE(5)
+    _r6.i = org_xmlvm_iphone_SKPaymentTransaction_getTransactionState__(_r5.o);
+    switch (_r6.i) {
+    case 1: goto label76;
+    case 2: goto label242;
+    case 3: goto label158;
     }
     goto label6;
-    label56:;
-    XMLVM_SOURCE_POSITION("ShopService.java", 41)
-    XMLVM_CHECK_NPE(10)
-    org_xmlvm_iphone_SKPaymentQueue_finishTransaction___org_xmlvm_iphone_SKPaymentTransaction(_r10.o, _r4.o);
-    XMLVM_SOURCE_POSITION("ShopService.java", 42)
-    _r5.o = java_lang_System_GET_out();
-    _r6.o = __NEW_java_lang_StringBuilder();
-    XMLVM_CHECK_NPE(6)
-    java_lang_StringBuilder___INIT___(_r6.o);
-    // "Successful transaction: "
-    _r7.o = xmlvm_create_java_string_from_pool(857);
-    XMLVM_CHECK_NPE(6)
-    _r6.o = java_lang_StringBuilder_append___java_lang_String(_r6.o, _r7.o);
-    XMLVM_CHECK_NPE(2)
-    _r7.o = org_xmlvm_iphone_SKPaymentTransaction_getTransactionIdentifier__(_r2.o);
-    XMLVM_CHECK_NPE(6)
-    _r6.o = java_lang_StringBuilder_append___java_lang_String(_r6.o, _r7.o);
-    // " "
-    _r7.o = xmlvm_create_java_string_from_pool(28);
-    XMLVM_CHECK_NPE(6)
-    _r6.o = java_lang_StringBuilder_append___java_lang_String(_r6.o, _r8.o);
-    XMLVM_CHECK_NPE(2)
-    _r7.o = org_xmlvm_iphone_SKPaymentTransaction_getPayment__(_r2.o);
+    label76:;
+    XMLVM_SOURCE_POSITION("ShopService.java", 47)
+    _r6.o = java_lang_System_GET_out();
+    _r7.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(7)
-    _r7.o = org_xmlvm_iphone_SKPayment_getProductIdentifier__(_r7.o);
-    XMLVM_CHECK_NPE(6)
-    _r6.o = java_lang_StringBuilder_append___java_lang_String(_r6.o, _r7.o);
-    //java_lang_StringBuilder_toString__[5]
-    XMLVM_CHECK_NPE(6)
-    _r6.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r6.o)->tib->vtable[5])(_r6.o);
+    java_lang_StringBuilder___INIT___(_r7.o);
+    // "Purchased transaction: "
+    _r8.o = xmlvm_create_java_string_from_pool(858);
+    XMLVM_CHECK_NPE(7)
+    _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r8.o);
     XMLVM_CHECK_NPE(5)
-    java_io_PrintStream_println___java_lang_String(_r5.o, _r6.o);
-    XMLVM_SOURCE_POSITION("ShopService.java", 43)
-    _r0 = _r2;
-    XMLVM_SOURCE_POSITION("ShopService.java", 44)
-    _r3.o = __NEW_my_kinderlieder_ShopService_1_1();
-    XMLVM_CHECK_NPE(3)
-    my_kinderlieder_ShopService_1_1___INIT____my_kinderlieder_ShopService_1_org_xmlvm_iphone_SKPaymentTransaction_org_xmlvm_iphone_SKPaymentTransaction(_r3.o, _r9.o, _r4.o, _r0.o);
+    _r8.o = org_xmlvm_iphone_SKPaymentTransaction_getTransactionIdentifier__(_r5.o);
+    XMLVM_CHECK_NPE(7)
+    _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r8.o);
+    // " "
+    _r8.o = xmlvm_create_java_string_from_pool(28);
+    XMLVM_CHECK_NPE(7)
+    _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r10.o);
+    XMLVM_CHECK_NPE(5)
+    _r8.o = org_xmlvm_iphone_SKPaymentTransaction_getPayment__(_r5.o);
+    XMLVM_CHECK_NPE(8)
+    _r8.o = org_xmlvm_iphone_SKPayment_getProductIdentifier__(_r8.o);
+    XMLVM_CHECK_NPE(7)
+    _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r8.o);
+    // " "
+    _r8.o = xmlvm_create_java_string_from_pool(28);
+    XMLVM_CHECK_NPE(7)
+    _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r10.o);
+    XMLVM_CHECK_NPE(5)
+    _r8.o = org_xmlvm_iphone_SKPaymentTransaction_getTransactionReceipt__(_r5.o);
+    XMLVM_CHECK_NPE(7)
+    _r7.o = java_lang_StringBuilder_append___java_lang_Object(_r7.o, _r8.o);
+    //java_lang_StringBuilder_toString__[5]
+    XMLVM_CHECK_NPE(7)
+    _r7.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r7.o)->tib->vtable[5])(_r7.o);
+    XMLVM_CHECK_NPE(6)
+    java_io_PrintStream_println___java_lang_String(_r6.o, _r7.o);
+    XMLVM_SOURCE_POSITION("ShopService.java", 48)
+    XMLVM_CHECK_NPE(5)
+    _r6.o = org_xmlvm_iphone_SKPaymentTransaction_getTransactionReceipt__(_r5.o);
+    if (_r6.o == JAVA_NULL) goto label6;
+    XMLVM_SOURCE_POSITION("ShopService.java", 49)
+    _r1 = _r5;
+    XMLVM_SOURCE_POSITION("ShopService.java", 50)
+    _r4.o = __NEW_my_kinderlieder_ShopService_1_1();
+    XMLVM_CHECK_NPE(4)
+    my_kinderlieder_ShopService_1_1___INIT____my_kinderlieder_ShopService_1_my_kinderlieder_InAppProduct_org_xmlvm_iphone_SKPaymentTransaction(_r4.o, _r11.o, _r3.o, _r1.o);
     XMLVM_SOURCE_POSITION("ShopService.java", 68)
-    _r5.o = __NEW_java_lang_Thread();
-    XMLVM_CHECK_NPE(5)
-    java_lang_Thread___INIT____java_lang_Runnable(_r5.o, _r3.o);
-    XMLVM_CHECK_NPE(5)
-    java_lang_Thread_start__(_r5.o);
-    label119:;
-    XMLVM_SOURCE_POSITION("ShopService.java", 71)
-    _r5.o = java_lang_System_GET_out();
-    _r6.o = __NEW_java_lang_StringBuilder();
+    _r6.o = __NEW_java_lang_Thread();
     XMLVM_CHECK_NPE(6)
-    java_lang_StringBuilder___INIT___(_r6.o);
-    // "Failed transaction: "
-    _r7.o = xmlvm_create_java_string_from_pool(858);
+    java_lang_Thread___INIT____java_lang_Runnable(_r6.o, _r4.o);
     XMLVM_CHECK_NPE(6)
-    _r6.o = java_lang_StringBuilder_append___java_lang_String(_r6.o, _r7.o);
-    XMLVM_CHECK_NPE(2)
-    _r7.o = org_xmlvm_iphone_SKPaymentTransaction_getTransactionIdentifier__(_r2.o);
-    XMLVM_CHECK_NPE(6)
-    _r6.o = java_lang_StringBuilder_append___java_lang_String(_r6.o, _r7.o);
-    // " "
-    _r7.o = xmlvm_create_java_string_from_pool(28);
-    XMLVM_CHECK_NPE(6)
-    _r6.o = java_lang_StringBuilder_append___java_lang_String(_r6.o, _r8.o);
-    XMLVM_CHECK_NPE(2)
-    _r7.o = org_xmlvm_iphone_SKPaymentTransaction_getPayment__(_r2.o);
-    XMLVM_CHECK_NPE(7)
-    _r7.o = org_xmlvm_iphone_SKPayment_getProductIdentifier__(_r7.o);
-    XMLVM_CHECK_NPE(6)
-    _r6.o = java_lang_StringBuilder_append___java_lang_String(_r6.o, _r7.o);
-    //java_lang_StringBuilder_toString__[5]
-    XMLVM_CHECK_NPE(6)
-    _r6.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r6.o)->tib->vtable[5])(_r6.o);
-    XMLVM_CHECK_NPE(5)
-    java_io_PrintStream_println___java_lang_String(_r5.o, _r6.o);
-    XMLVM_SOURCE_POSITION("ShopService.java", 72)
-    XMLVM_CHECK_NPE(10)
-    org_xmlvm_iphone_SKPaymentQueue_finishTransaction___org_xmlvm_iphone_SKPaymentTransaction(_r10.o, _r4.o);
+    java_lang_Thread_start__(_r6.o);
     goto label6;
-    label170:;
-    XMLVM_SOURCE_POSITION("ShopService.java", 77)
+    label158:;
+    XMLVM_SOURCE_POSITION("ShopService.java", 43)
+    _r6.o = java_lang_System_GET_out();
+    _r7.o = __NEW_java_lang_StringBuilder();
+    XMLVM_CHECK_NPE(7)
+    java_lang_StringBuilder___INIT___(_r7.o);
+    // "Restored transaction: "
+    _r8.o = xmlvm_create_java_string_from_pool(859);
+    XMLVM_CHECK_NPE(7)
+    _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r8.o);
+    XMLVM_CHECK_NPE(5)
+    _r8.o = org_xmlvm_iphone_SKPaymentTransaction_getTransactionIdentifier__(_r5.o);
+    XMLVM_CHECK_NPE(7)
+    _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r8.o);
+    // " "
+    _r8.o = xmlvm_create_java_string_from_pool(28);
+    XMLVM_CHECK_NPE(7)
+    _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r10.o);
+    XMLVM_CHECK_NPE(5)
+    _r8.o = org_xmlvm_iphone_SKPaymentTransaction_getPayment__(_r5.o);
+    XMLVM_CHECK_NPE(8)
+    _r8.o = org_xmlvm_iphone_SKPayment_getProductIdentifier__(_r8.o);
+    XMLVM_CHECK_NPE(7)
+    _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r8.o);
+    // " "
+    _r8.o = xmlvm_create_java_string_from_pool(28);
+    XMLVM_CHECK_NPE(7)
+    _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r10.o);
+    XMLVM_CHECK_NPE(5)
+    _r8.o = org_xmlvm_iphone_SKPaymentTransaction_getTransactionReceipt__(_r5.o);
+    XMLVM_CHECK_NPE(7)
+    _r7.o = java_lang_StringBuilder_append___java_lang_Object(_r7.o, _r8.o);
+    //java_lang_StringBuilder_toString__[5]
+    XMLVM_CHECK_NPE(7)
+    _r7.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r7.o)->tib->vtable[5])(_r7.o);
+    XMLVM_CHECK_NPE(6)
+    java_io_PrintStream_println___java_lang_String(_r6.o, _r7.o);
+    XMLVM_SOURCE_POSITION("ShopService.java", 44)
+    _r6.o = __NEW_java_util_ArrayList();
+    _r7.i = 1;
+    if (!__TIB_org_xmlvm_iphone_SKPaymentTransaction.classInitialized) __INIT_org_xmlvm_iphone_SKPaymentTransaction();
+    _r7.o = XMLVMArray_createSingleDimension(__CLASS_org_xmlvm_iphone_SKPaymentTransaction, _r7.i);
+    _r8.i = 0;
+    XMLVM_CHECK_NPE(5)
+    _r9.o = org_xmlvm_iphone_SKPaymentTransaction_getOriginalTransaction__(_r5.o);
+    XMLVM_CHECK_NPE(7)
+    XMLVM_CHECK_ARRAY_BOUNDS(_r7.o, _r8.i);
+    ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r7.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r9.o;
+    _r7.o = java_util_Arrays_asList___java_lang_Object_1ARRAY(_r7.o);
+    XMLVM_CHECK_NPE(6)
+    java_util_ArrayList___INIT____java_util_Collection(_r6.o, _r7.o);
+    //my_kinderlieder_ShopService_1_updatedTransactions___org_xmlvm_iphone_SKPaymentQueue_java_util_ArrayList[6]
+    XMLVM_CHECK_NPE(11)
+    (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((my_kinderlieder_ShopService_1*) _r11.o)->tib->vtable[6])(_r11.o, _r12.o, _r6.o);
+    goto label76;
+    label242:;
+    XMLVM_SOURCE_POSITION("ShopService.java", 73)
+    _r6.o = java_lang_System_GET_out();
+    _r7.o = __NEW_java_lang_StringBuilder();
+    XMLVM_CHECK_NPE(7)
+    java_lang_StringBuilder___INIT___(_r7.o);
+    // "Failed transaction: "
+    _r8.o = xmlvm_create_java_string_from_pool(860);
+    XMLVM_CHECK_NPE(7)
+    _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r8.o);
+    XMLVM_CHECK_NPE(5)
+    _r8.o = org_xmlvm_iphone_SKPaymentTransaction_getTransactionIdentifier__(_r5.o);
+    XMLVM_CHECK_NPE(7)
+    _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r8.o);
+    // " "
+    _r8.o = xmlvm_create_java_string_from_pool(28);
+    XMLVM_CHECK_NPE(7)
+    _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r10.o);
+    XMLVM_CHECK_NPE(5)
+    _r8.o = org_xmlvm_iphone_SKPaymentTransaction_getPayment__(_r5.o);
+    XMLVM_CHECK_NPE(8)
+    _r8.o = org_xmlvm_iphone_SKPayment_getProductIdentifier__(_r8.o);
+    XMLVM_CHECK_NPE(7)
+    _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r8.o);
+    //java_lang_StringBuilder_toString__[5]
+    XMLVM_CHECK_NPE(7)
+    _r7.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r7.o)->tib->vtable[5])(_r7.o);
+    XMLVM_CHECK_NPE(6)
+    java_io_PrintStream_println___java_lang_String(_r6.o, _r7.o);
+    XMLVM_SOURCE_POSITION("ShopService.java", 74)
+    XMLVM_CHECK_NPE(5)
+    _r6.o = org_xmlvm_iphone_SKPaymentTransaction_getError__(_r5.o);
+    if (_r6.o == JAVA_NULL) goto label6;
+    XMLVM_SOURCE_POSITION("ShopService.java", 75)
+    _r6.o = java_lang_System_GET_out();
+    _r7.o = __NEW_java_lang_StringBuilder();
+    XMLVM_CHECK_NPE(7)
+    java_lang_StringBuilder___INIT___(_r7.o);
+    // "Error: "
+    _r8.o = xmlvm_create_java_string_from_pool(861);
+    XMLVM_CHECK_NPE(7)
+    _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r8.o);
+    XMLVM_CHECK_NPE(5)
+    _r8.o = org_xmlvm_iphone_SKPaymentTransaction_getError__(_r5.o);
+    XMLVM_CHECK_NPE(8)
+    _r8.o = org_xmlvm_iphone_NSError_description__(_r8.o);
+    XMLVM_CHECK_NPE(7)
+    _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r8.o);
+    //java_lang_StringBuilder_toString__[5]
+    XMLVM_CHECK_NPE(7)
+    _r7.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r7.o)->tib->vtable[5])(_r7.o);
+    XMLVM_CHECK_NPE(6)
+    java_io_PrintStream_println___java_lang_String(_r6.o, _r7.o);
+    XMLVM_SOURCE_POSITION("ShopService.java", 76)
+    _r0.o = __NEW_org_xmlvm_iphone_UIAlertView();
+    // "Fehler"
+    _r6.o = xmlvm_create_java_string_from_pool(129);
+    XMLVM_CHECK_NPE(5)
+    _r7.o = org_xmlvm_iphone_SKPaymentTransaction_getError__(_r5.o);
+    XMLVM_CHECK_NPE(7)
+    _r7.o = org_xmlvm_iphone_NSError_description__(_r7.o);
+    _r8.o = __NEW_my_kinderlieder_ShopService_1_2();
+    XMLVM_CHECK_NPE(8)
+    my_kinderlieder_ShopService_1_2___INIT____my_kinderlieder_ShopService_1(_r8.o, _r11.o);
+    // "OK"
+    _r9.o = xmlvm_create_java_string_from_pool(130);
+    XMLVM_CHECK_NPE(0)
+    org_xmlvm_iphone_UIAlertView___INIT____java_lang_String_java_lang_String_org_xmlvm_iphone_UIAlertViewDelegate_java_lang_String(_r0.o, _r6.o, _r7.o, _r8.o, _r9.o);
+    XMLVM_SOURCE_POSITION("ShopService.java", 83)
+    _r6.o = my_kinderlieder_Product_State_GET_AVAILABLE();
+    ((my_kinderlieder_Product*) _r3.o)->fields.my_kinderlieder_Product.state_ = _r6.o;
+    XMLVM_SOURCE_POSITION("ShopService.java", 84)
+    XMLVM_CHECK_NPE(0)
+    org_xmlvm_iphone_UIAlertView_show__(_r0.o);
+    goto label6;
+    label357:;
+    XMLVM_SOURCE_POSITION("ShopService.java", 92)
     XMLVM_EXIT_METHOD()
     return;
-    label172:;
+    label358:;
     //XMLVM_END_WRAPPER
 }
 

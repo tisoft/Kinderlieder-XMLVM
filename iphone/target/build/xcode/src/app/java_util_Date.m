@@ -958,40 +958,40 @@ void java_util_Date___CLINIT_()
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_String, _r0.i);
     // "Sun"
-    _r1.o = xmlvm_create_java_string_from_pool(2353);
+    _r1.o = xmlvm_create_java_string_from_pool(2356);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r3.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i] = _r1.o;
     // "Mon"
-    _r1.o = xmlvm_create_java_string_from_pool(2354);
+    _r1.o = xmlvm_create_java_string_from_pool(2357);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r1.o;
     // "Tue"
-    _r1.o = xmlvm_create_java_string_from_pool(2355);
+    _r1.o = xmlvm_create_java_string_from_pool(2358);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r5.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r5.i] = _r1.o;
     // "Wed"
-    _r1.o = xmlvm_create_java_string_from_pool(2356);
+    _r1.o = xmlvm_create_java_string_from_pool(2359);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r1.o;
     XMLVM_SOURCE_POSITION("Date.java", 50)
     // "Thu"
-    _r1.o = xmlvm_create_java_string_from_pool(2357);
+    _r1.o = xmlvm_create_java_string_from_pool(2360);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r1.o;
     _r1.i = 5;
     // "Fri"
-    _r2.o = xmlvm_create_java_string_from_pool(2358);
+    _r2.o = xmlvm_create_java_string_from_pool(2361);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 6;
     // "Sat"
-    _r2.o = xmlvm_create_java_string_from_pool(2359);
+    _r2.o = xmlvm_create_java_string_from_pool(2362);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
@@ -1001,70 +1001,70 @@ void java_util_Date___CLINIT_()
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_String, _r0.i);
     // "Jan"
-    _r1.o = xmlvm_create_java_string_from_pool(2360);
+    _r1.o = xmlvm_create_java_string_from_pool(2363);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r3.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i] = _r1.o;
     // "Feb"
-    _r1.o = xmlvm_create_java_string_from_pool(2361);
+    _r1.o = xmlvm_create_java_string_from_pool(2364);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r1.o;
     // "Mar"
-    _r1.o = xmlvm_create_java_string_from_pool(2362);
+    _r1.o = xmlvm_create_java_string_from_pool(2365);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r5.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r5.i] = _r1.o;
     // "Apr"
-    _r1.o = xmlvm_create_java_string_from_pool(2363);
+    _r1.o = xmlvm_create_java_string_from_pool(2366);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r1.o;
     // "May"
-    _r1.o = xmlvm_create_java_string_from_pool(2364);
+    _r1.o = xmlvm_create_java_string_from_pool(2367);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r1.o;
     _r1.i = 5;
     XMLVM_SOURCE_POSITION("Date.java", 54)
     // "Jun"
-    _r2.o = xmlvm_create_java_string_from_pool(2365);
+    _r2.o = xmlvm_create_java_string_from_pool(2368);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 6;
     // "Jul"
-    _r2.o = xmlvm_create_java_string_from_pool(2366);
+    _r2.o = xmlvm_create_java_string_from_pool(2369);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 7;
     // "Aug"
-    _r2.o = xmlvm_create_java_string_from_pool(2367);
+    _r2.o = xmlvm_create_java_string_from_pool(2370);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 8;
     // "Sep"
-    _r2.o = xmlvm_create_java_string_from_pool(2368);
+    _r2.o = xmlvm_create_java_string_from_pool(2371);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 9;
     // "Oct"
-    _r2.o = xmlvm_create_java_string_from_pool(2369);
+    _r2.o = xmlvm_create_java_string_from_pool(2372);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 10;
     // "Nov"
-    _r2.o = xmlvm_create_java_string_from_pool(2370);
+    _r2.o = xmlvm_create_java_string_from_pool(2373);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 11;
     // "Dec"
-    _r2.o = xmlvm_create_java_string_from_pool(2371);
+    _r2.o = xmlvm_create_java_string_from_pool(2374);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
@@ -1332,24 +1332,24 @@ JAVA_OBJECT java_util_Date_clone__(JAVA_OBJECT me)
     XMLVMElem _r0;
     XMLVMElem _r1;
     _r1.o = me;
-    XMLVM_TRY_BEGIN(w27988aaac14b1b2)
+    XMLVM_TRY_BEGIN(w28014aaac14b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("Date.java", 195)
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_Object_clone__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w27988aaac14b1b2)
-        XMLVM_CATCH_SPECIFIC(w27988aaac14b1b2,java_lang_CloneNotSupportedException,5)
-    XMLVM_CATCH_END(w27988aaac14b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w27988aaac14b1b2)
+    XMLVM_CATCH_BEGIN(w28014aaac14b1b2)
+        XMLVM_CATCH_SPECIFIC(w28014aaac14b1b2,java_lang_CloneNotSupportedException,5)
+    XMLVM_CATCH_END(w28014aaac14b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28014aaac14b1b2)
     label4:;
     XMLVM_SOURCE_POSITION("Date.java", 197)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label5:;
-    java_lang_Thread* curThread_w27988aaac14b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w27988aaac14b1b7->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w28014aaac14b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w28014aaac14b1b7->fields.java_lang_Thread.xmlvmException_;
     _r0.o = JAVA_NULL;
     goto label4;
     //XMLVM_END_WRAPPER
@@ -1741,7 +1741,7 @@ JAVA_LONG java_util_Date_parse___java_lang_String(JAVA_OBJECT n1)
     XMLVM_SOURCE_POSITION("Date.java", 384)
     _r25.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.06"
-    _r3.o = xmlvm_create_java_string_from_pool(2372);
+    _r3.o = xmlvm_create_java_string_from_pool(2375);
     _r3.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r3.o);
     _r0 = _r25;
     _r1 = _r3;
@@ -2071,7 +2071,7 @@ JAVA_LONG java_util_Date_parse___java_lang_String(JAVA_OBJECT n1)
     _r20.i = java_lang_Character_isSpace___char(_r15.i);
     if (_r20.i != 0) goto label230;
     // ",+-:/"
-    _r20.o = xmlvm_create_java_string_from_pool(2373);
+    _r20.o = xmlvm_create_java_string_from_pool(2376);
     _r0 = _r20;
     _r1 = _r15;
     XMLVM_CHECK_NPE(0)
@@ -2405,7 +2405,7 @@ JAVA_LONG java_util_Date_parse___java_lang_String(JAVA_OBJECT n1)
     label837:;
     XMLVM_SOURCE_POSITION("Date.java", 490)
     // "AM"
-    _r20.o = xmlvm_create_java_string_from_pool(2374);
+    _r20.o = xmlvm_create_java_string_from_pool(2377);
     _r0 = _r13;
     _r1 = _r20;
     //java_lang_String_equals___java_lang_Object[1]
@@ -2443,7 +2443,7 @@ JAVA_LONG java_util_Date_parse___java_lang_String(JAVA_OBJECT n1)
     label881:;
     XMLVM_SOURCE_POSITION("Date.java", 496)
     // "PM"
-    _r20.o = xmlvm_create_java_string_from_pool(2375);
+    _r20.o = xmlvm_create_java_string_from_pool(2378);
     _r0 = _r13;
     _r1 = _r20;
     //java_lang_String_equals___java_lang_Object[1]
@@ -2524,14 +2524,14 @@ JAVA_LONG java_util_Date_parse___java_lang_String(JAVA_OBJECT n1)
     _r4.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r13.o)->tib->vtable[1])(_r13.o, _r4.o);
     if (_r4.i != 0) goto label1003;
     // "UT"
-    _r4.o = xmlvm_create_java_string_from_pool(2376);
+    _r4.o = xmlvm_create_java_string_from_pool(2379);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(13)
     _r4.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r13.o)->tib->vtable[1])(_r13.o, _r4.o);
     if (_r4.i != 0) goto label1003;
     XMLVM_SOURCE_POSITION("Date.java", 512)
     // "UTC"
-    _r4.o = xmlvm_create_java_string_from_pool(1972);
+    _r4.o = xmlvm_create_java_string_from_pool(1975);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(13)
     _r4.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r13.o)->tib->vtable[1])(_r13.o, _r4.o);
@@ -2873,7 +2873,7 @@ JAVA_OBJECT java_util_Date_toGMTString__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Date.java", 679)
     _r0.o = __NEW_java_text_SimpleDateFormat();
     // "d MMM "
-    _r1.o = xmlvm_create_java_string_from_pool(2377);
+    _r1.o = xmlvm_create_java_string_from_pool(2380);
     _r2.o = java_util_Locale_GET_US();
     XMLVM_CHECK_NPE(0)
     java_text_SimpleDateFormat___INIT____java_lang_String_java_util_Locale(_r0.o, _r1.o, _r2.o);
@@ -2881,7 +2881,7 @@ JAVA_OBJECT java_util_Date_toGMTString__(JAVA_OBJECT me)
     _r1.o = __NEW_java_text_SimpleDateFormat();
     XMLVM_SOURCE_POSITION("Date.java", 681)
     // " HH:mm:ss 'GMT'"
-    _r2.o = xmlvm_create_java_string_from_pool(2378);
+    _r2.o = xmlvm_create_java_string_from_pool(2381);
     _r3.o = java_util_Locale_GET_US();
     XMLVM_CHECK_NPE(1)
     java_text_SimpleDateFormat___INIT____java_lang_String_java_util_Locale(_r1.o, _r2.o, _r3.o);
@@ -3190,7 +3190,7 @@ JAVA_INT java_util_Date_zone___java_lang_String(JAVA_OBJECT n1)
     _r1.i = -7;
     XMLVM_SOURCE_POSITION("Date.java", 776)
     // "EST"
-    _r0.o = xmlvm_create_java_string_from_pool(1966);
+    _r0.o = xmlvm_create_java_string_from_pool(1969);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(4)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r0.o);
@@ -3204,7 +3204,7 @@ JAVA_INT java_util_Date_zone___java_lang_String(JAVA_OBJECT n1)
     label13:;
     XMLVM_SOURCE_POSITION("Date.java", 779)
     // "EDT"
-    _r0.o = xmlvm_create_java_string_from_pool(2379);
+    _r0.o = xmlvm_create_java_string_from_pool(2382);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(4)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r0.o);
@@ -3215,7 +3215,7 @@ JAVA_INT java_util_Date_zone___java_lang_String(JAVA_OBJECT n1)
     label23:;
     XMLVM_SOURCE_POSITION("Date.java", 782)
     // "CST"
-    _r0.o = xmlvm_create_java_string_from_pool(1965);
+    _r0.o = xmlvm_create_java_string_from_pool(1968);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(4)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r0.o);
@@ -3226,7 +3226,7 @@ JAVA_INT java_util_Date_zone___java_lang_String(JAVA_OBJECT n1)
     label33:;
     XMLVM_SOURCE_POSITION("Date.java", 785)
     // "CDT"
-    _r0.o = xmlvm_create_java_string_from_pool(2380);
+    _r0.o = xmlvm_create_java_string_from_pool(2383);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(4)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r0.o);
@@ -3237,7 +3237,7 @@ JAVA_INT java_util_Date_zone___java_lang_String(JAVA_OBJECT n1)
     label43:;
     XMLVM_SOURCE_POSITION("Date.java", 788)
     // "MST"
-    _r0.o = xmlvm_create_java_string_from_pool(1963);
+    _r0.o = xmlvm_create_java_string_from_pool(1966);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(4)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r0.o);
@@ -3248,7 +3248,7 @@ JAVA_INT java_util_Date_zone___java_lang_String(JAVA_OBJECT n1)
     label53:;
     XMLVM_SOURCE_POSITION("Date.java", 791)
     // "MDT"
-    _r0.o = xmlvm_create_java_string_from_pool(2381);
+    _r0.o = xmlvm_create_java_string_from_pool(2384);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(4)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r0.o);
@@ -3259,7 +3259,7 @@ JAVA_INT java_util_Date_zone___java_lang_String(JAVA_OBJECT n1)
     label63:;
     XMLVM_SOURCE_POSITION("Date.java", 794)
     // "PST"
-    _r0.o = xmlvm_create_java_string_from_pool(1962);
+    _r0.o = xmlvm_create_java_string_from_pool(1965);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(4)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r0.o);
@@ -3270,7 +3270,7 @@ JAVA_INT java_util_Date_zone___java_lang_String(JAVA_OBJECT n1)
     label73:;
     XMLVM_SOURCE_POSITION("Date.java", 797)
     // "PDT"
-    _r0.o = xmlvm_create_java_string_from_pool(2382);
+    _r0.o = xmlvm_create_java_string_from_pool(2385);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(4)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r0.o);

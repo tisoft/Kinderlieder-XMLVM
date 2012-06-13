@@ -274,7 +274,7 @@ void java_nio_charset_CodingErrorAction___CLINIT_()
     _r0.o = __NEW_java_nio_charset_CodingErrorAction();
     XMLVM_SOURCE_POSITION("CodingErrorAction.java", 30)
     // "IGNORE"
-    _r1.o = xmlvm_create_java_string_from_pool(1589);
+    _r1.o = xmlvm_create_java_string_from_pool(1592);
     XMLVM_CHECK_NPE(0)
     java_nio_charset_CodingErrorAction___INIT____java_lang_String(_r0.o, _r1.o);
     java_nio_charset_CodingErrorAction_PUT_IGNORE( _r0.o);
@@ -282,7 +282,7 @@ void java_nio_charset_CodingErrorAction___CLINIT_()
     _r0.o = __NEW_java_nio_charset_CodingErrorAction();
     XMLVM_SOURCE_POSITION("CodingErrorAction.java", 37)
     // "REPLACE"
-    _r1.o = xmlvm_create_java_string_from_pool(2328);
+    _r1.o = xmlvm_create_java_string_from_pool(2331);
     XMLVM_CHECK_NPE(0)
     java_nio_charset_CodingErrorAction___INIT____java_lang_String(_r0.o, _r1.o);
     java_nio_charset_CodingErrorAction_PUT_REPLACE( _r0.o);
@@ -290,7 +290,7 @@ void java_nio_charset_CodingErrorAction___CLINIT_()
     _r0.o = __NEW_java_nio_charset_CodingErrorAction();
     XMLVM_SOURCE_POSITION("CodingErrorAction.java", 45)
     // "REPORT"
-    _r1.o = xmlvm_create_java_string_from_pool(2329);
+    _r1.o = xmlvm_create_java_string_from_pool(2332);
     XMLVM_CHECK_NPE(0)
     java_nio_charset_CodingErrorAction___INIT____java_lang_String(_r0.o, _r1.o);
     java_nio_charset_CodingErrorAction_PUT_REPORT( _r0.o);
@@ -330,7 +330,7 @@ JAVA_OBJECT java_nio_charset_CodingErrorAction_toString__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("CodingErrorAction.java", 64)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "Action: "
-    _r1.o = xmlvm_create_java_string_from_pool(2330);
+    _r1.o = xmlvm_create_java_string_from_pool(2333);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     _r1.o = ((java_nio_charset_CodingErrorAction*) _r2.o)->fields.java_nio_charset_CodingErrorAction.action_;

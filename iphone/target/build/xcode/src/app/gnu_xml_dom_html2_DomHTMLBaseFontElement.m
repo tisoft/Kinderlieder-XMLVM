@@ -581,7 +581,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLBaseFontElement_getColor__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLBaseFontElement.java", 60)
     // "color"
-    _r0.o = xmlvm_create_java_string_from_pool(1109);
+    _r0.o = xmlvm_create_java_string_from_pool(1112);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -600,7 +600,7 @@ void gnu_xml_dom_html2_DomHTMLBaseFontElement_setColor___java_lang_String(JAVA_O
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLBaseFontElement.java", 65)
     // "color"
-    _r0.o = xmlvm_create_java_string_from_pool(1109);
+    _r0.o = xmlvm_create_java_string_from_pool(1112);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLBaseFontElement.java", 66)
@@ -618,7 +618,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLBaseFontElement_getFace__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLBaseFontElement.java", 70)
     // "face"
-    _r0.o = xmlvm_create_java_string_from_pool(1110);
+    _r0.o = xmlvm_create_java_string_from_pool(1113);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -637,7 +637,7 @@ void gnu_xml_dom_html2_DomHTMLBaseFontElement_setFace___java_lang_String(JAVA_OB
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLBaseFontElement.java", 75)
     // "face"
-    _r0.o = xmlvm_create_java_string_from_pool(1110);
+    _r0.o = xmlvm_create_java_string_from_pool(1113);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLBaseFontElement.java", 76)
@@ -655,7 +655,7 @@ JAVA_INT gnu_xml_dom_html2_DomHTMLBaseFontElement_getSize__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLBaseFontElement.java", 80)
     // "size"
-    _r0.o = xmlvm_create_java_string_from_pool(988);
+    _r0.o = xmlvm_create_java_string_from_pool(991);
     XMLVM_CHECK_NPE(1)
     _r0.i = gnu_xml_dom_html2_DomHTMLElement_getIntHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -674,7 +674,7 @@ void gnu_xml_dom_html2_DomHTMLBaseFontElement_setSize___int(JAVA_OBJECT me, JAVA
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DomHTMLBaseFontElement.java", 85)
     // "size"
-    _r0.o = xmlvm_create_java_string_from_pool(988);
+    _r0.o = xmlvm_create_java_string_from_pool(991);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setIntHTMLAttribute___java_lang_String_int(_r1.o, _r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("DomHTMLBaseFontElement.java", 86)

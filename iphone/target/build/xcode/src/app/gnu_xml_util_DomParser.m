@@ -1070,17 +1070,17 @@ void gnu_xml_util_DomParser_parse__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     _r2.o = JAVA_NULL;
-    XMLVM_TRY_BEGIN(w16367aaac30b1b3)
+    XMLVM_TRY_BEGIN(w16396aaac30b1b3)
     // Begin try
     XMLVM_SOURCE_POSITION("DomParser.java", 293)
     XMLVM_CHECK_NPE(3)
     gnu_xml_util_DomParser_walk__(_r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16367aaac30b1b3)
-        XMLVM_CATCH_SPECIFIC(w16367aaac30b1b3,java_lang_Object,21)
-    XMLVM_CATCH_END(w16367aaac30b1b3)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16367aaac30b1b3)
+    XMLVM_CATCH_BEGIN(w16396aaac30b1b3)
+        XMLVM_CATCH_SPECIFIC(w16396aaac30b1b3,java_lang_Object,21)
+    XMLVM_CATCH_END(w16396aaac30b1b3)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16396aaac30b1b3)
     XMLVM_SOURCE_POSITION("DomParser.java", 295)
     _r0.i = ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.isDocument_;
     if (_r0.i == 0) goto label13;
@@ -1100,8 +1100,8 @@ void gnu_xml_util_DomParser_parse__(JAVA_OBJECT me)
     return;
     label21:;
     XMLVM_SOURCE_POSITION("DomParser.java", 294)
-    java_lang_Thread* curThread_w16367aaac30b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w16367aaac30b1c20->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w16396aaac30b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w16396aaac30b1c20->fields.java_lang_Thread.xmlvmException_;
     _r1.i = ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.isDocument_;
     if (_r1.i == 0) goto label31;
     _r1.o = ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.contentHandler_;
@@ -1141,7 +1141,7 @@ JAVA_BOOLEAN gnu_xml_util_DomParser_getIsL2___org_w3c_dom_Node(JAVA_OBJECT me, J
     XMLVM_SOURCE_POSITION("DomParser.java", 312)
     _r0.o = __NEW_java_lang_RuntimeException();
     // "? unowned node - L2 DTD ?"
-    _r1.o = xmlvm_create_java_string_from_pool(1121);
+    _r1.o = xmlvm_create_java_string_from_pool(1124);
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimeException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -1156,7 +1156,7 @@ JAVA_BOOLEAN gnu_xml_util_DomParser_getIsL2___org_w3c_dom_Node(JAVA_OBJECT me, J
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Document_getImplementation__])(_r0.o);
     XMLVM_SOURCE_POSITION("DomParser.java", 314)
     // "XML"
-    _r1.o = xmlvm_create_java_string_from_pool(1122);
+    _r1.o = xmlvm_create_java_string_from_pool(1125);
     // "2.0"
     _r2.o = xmlvm_create_java_string_from_pool(401);
     XMLVM_CHECK_NPE(0)
@@ -1293,7 +1293,7 @@ JAVA_OBJECT gnu_xml_util_DomParser_getProperty___java_lang_String(JAVA_OBJECT me
     label39:;
     XMLVM_SOURCE_POSITION("DomParser.java", 362)
     // "http://xml.org/sax/properties/dom-node"
-    _r0.o = xmlvm_create_java_string_from_pool(1123);
+    _r0.o = xmlvm_create_java_string_from_pool(1126);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r4.o);
@@ -1323,14 +1323,14 @@ void gnu_xml_util_DomParser_setFeature___java_lang_String_boolean(JAVA_OBJECT me
     _r4.o = n1;
     _r5.i = n2;
     // "Illegal namespace processing configuration"
-    _r2.o = xmlvm_create_java_string_from_pool(1124);
+    _r2.o = xmlvm_create_java_string_from_pool(1127);
     XMLVM_SOURCE_POSITION("DomParser.java", 376)
     _r0.o = ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.current_;
     if (_r0.o == JAVA_NULL) goto label14;
     XMLVM_SOURCE_POSITION("DomParser.java", 377)
     _r0.o = __NEW_java_lang_IllegalStateException();
     // "feature change midparse"
-    _r1.o = xmlvm_create_java_string_from_pool(1125);
+    _r1.o = xmlvm_create_java_string_from_pool(1128);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalStateException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -1360,7 +1360,7 @@ void gnu_xml_util_DomParser_setFeature___java_lang_String_boolean(JAVA_OBJECT me
     XMLVM_SOURCE_POSITION("DomParser.java", 386)
     _r0.o = __NEW_org_xml_sax_SAXNotSupportedException();
     // "Illegal namespace processing configuration"
-    _r1.o = xmlvm_create_java_string_from_pool(1124);
+    _r1.o = xmlvm_create_java_string_from_pool(1127);
     XMLVM_CHECK_NPE(0)
     org_xml_sax_SAXNotSupportedException___INIT____java_lang_String(_r0.o, _r2.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -1383,7 +1383,7 @@ void gnu_xml_util_DomParser_setFeature___java_lang_String_boolean(JAVA_OBJECT me
     XMLVM_SOURCE_POSITION("DomParser.java", 393)
     _r0.o = __NEW_org_xml_sax_SAXNotSupportedException();
     // "Illegal namespace processing configuration"
-    _r1.o = xmlvm_create_java_string_from_pool(1124);
+    _r1.o = xmlvm_create_java_string_from_pool(1127);
     XMLVM_CHECK_NPE(0)
     org_xml_sax_SAXNotSupportedException___INIT____java_lang_String(_r0.o, _r2.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -1464,7 +1464,7 @@ void gnu_xml_util_DomParser_setProperty___java_lang_String_java_lang_Object(JAVA
     label50:;
     XMLVM_SOURCE_POSITION("DomParser.java", 427)
     // "http://xml.org/sax/properties/dom-node"
-    _r0.o = xmlvm_create_java_string_from_pool(1123);
+    _r0.o = xmlvm_create_java_string_from_pool(1126);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r4.o);
@@ -1483,7 +1483,7 @@ void gnu_xml_util_DomParser_setProperty___java_lang_String_java_lang_Object(JAVA
     XMLVM_SOURCE_POSITION("DomParser.java", 431)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "property is readonly during parse:  "
-    _r2.o = xmlvm_create_java_string_from_pool(1126);
+    _r2.o = xmlvm_create_java_string_from_pool(1129);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(1)
@@ -1504,7 +1504,7 @@ void gnu_xml_util_DomParser_setProperty___java_lang_String_java_lang_Object(JAVA
     XMLVM_SOURCE_POSITION("DomParser.java", 435)
     _r0.o = __NEW_org_xml_sax_SAXNotSupportedException();
     // "not a DOM Node"
-    _r1.o = xmlvm_create_java_string_from_pool(1127);
+    _r1.o = xmlvm_create_java_string_from_pool(1130);
     XMLVM_CHECK_NPE(0)
     org_xml_sax_SAXNotSupportedException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -1572,39 +1572,39 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     org_xml_sax_helpers_AttributesImpl___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("DomParser.java", 464)
     java_lang_Object_acquireLockRecursive__(_r12.o);
-    XMLVM_TRY_BEGIN(w16367aaac37b1b7)
+    XMLVM_TRY_BEGIN(w16396aaac37b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("DomParser.java", 465)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
-    if (_r2.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w16367aaac37b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w16367aaac37b1b7, sizeof(XMLVM_JMP_BUF)); goto label21; };
+    if (_r2.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w16396aaac37b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w16396aaac37b1b7, sizeof(XMLVM_JMP_BUF)); goto label21; };
     XMLVM_SOURCE_POSITION("DomParser.java", 466)
     _r1.o = __NEW_java_lang_IllegalStateException();
     // "already walking tree"
-    _r2.o = xmlvm_create_java_string_from_pool(1128);
+    _r2.o = xmlvm_create_java_string_from_pool(1131);
     XMLVM_CHECK_NPE(1)
     java_lang_IllegalStateException___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_THROW_CUSTOM(_r1.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16367aaac37b1b7)
-        XMLVM_CATCH_SPECIFIC(w16367aaac37b1b7,java_lang_Object,18)
-    XMLVM_CATCH_END(w16367aaac37b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16367aaac37b1b7)
+    XMLVM_CATCH_BEGIN(w16396aaac37b1b7)
+        XMLVM_CATCH_SPECIFIC(w16396aaac37b1b7,java_lang_Object,18)
+    XMLVM_CATCH_END(w16396aaac37b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16396aaac37b1b7)
     label18:;
-    XMLVM_TRY_BEGIN(w16367aaac37b1b9)
+    XMLVM_TRY_BEGIN(w16396aaac37b1b9)
     // Begin try
-    java_lang_Thread* curThread_w16367aaac37b1b9aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w16367aaac37b1b9aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w16396aaac37b1b9aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w16396aaac37b1b9aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r12.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16367aaac37b1b9)
-        XMLVM_CATCH_SPECIFIC(w16367aaac37b1b9,java_lang_Object,18)
-    XMLVM_CATCH_END(w16367aaac37b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16367aaac37b1b9)
+    XMLVM_CATCH_BEGIN(w16396aaac37b1b9)
+        XMLVM_CATCH_SPECIFIC(w16396aaac37b1b9,java_lang_Object,18)
+    XMLVM_CATCH_END(w16396aaac37b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16396aaac37b1b9)
     XMLVM_THROW_CUSTOM(_r1.o)
     label21:;
-    XMLVM_TRY_BEGIN(w16367aaac37b1c12)
+    XMLVM_TRY_BEGIN(w16396aaac37b1c12)
     // Begin try
     XMLVM_SOURCE_POSITION("DomParser.java", 470)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.start_;
@@ -1612,10 +1612,10 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     java_lang_Object_releaseLockRecursive__(_r12.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16367aaac37b1c12)
-        XMLVM_CATCH_SPECIFIC(w16367aaac37b1c12,java_lang_Object,18)
-    XMLVM_CATCH_END(w16367aaac37b1c12)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16367aaac37b1c12)
+    XMLVM_CATCH_BEGIN(w16396aaac37b1c12)
+        XMLVM_CATCH_SPECIFIC(w16396aaac37b1c12,java_lang_Object,18)
+    XMLVM_CATCH_END(w16396aaac37b1c12)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16396aaac37b1c12)
     label26:;
     XMLVM_SOURCE_POSITION("DomParser.java", 474)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
@@ -1636,7 +1636,7 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     _r1.o = __NEW_org_xml_sax_SAXException();
     _r2.o = __NEW_java_lang_StringBuilder();
     // "Illegal DOM Node type in Document:  "
-    _r3.o = xmlvm_create_java_string_from_pool(1129);
+    _r3.o = xmlvm_create_java_string_from_pool(1132);
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuilder___INIT____java_lang_String(_r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("DomParser.java", 695)
@@ -1674,7 +1674,7 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DomParser.java", 752)
     _r2.o = __NEW_java_lang_StringBuilder();
     // "Illegal DOM Node type found:  "
-    _r3.o = xmlvm_create_java_string_from_pool(1130);
+    _r3.o = xmlvm_create_java_string_from_pool(1133);
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuilder___INIT____java_lang_String(_r2.o, _r3.o);
     _r3.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
@@ -1836,7 +1836,7 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     _r1.o = __NEW_java_lang_RuntimeException();
     XMLVM_SOURCE_POSITION("DomParser.java", 533)
     // "NYI, ns lookup when parsing L1 DOM"
-    _r2.o = xmlvm_create_java_string_from_pool(1131);
+    _r2.o = xmlvm_create_java_string_from_pool(1134);
     XMLVM_CHECK_NPE(1)
     java_lang_RuntimeException___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_THROW_CUSTOM(_r1.o)
@@ -1851,7 +1851,7 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     _r1.o = __NEW_java_lang_RuntimeException();
     XMLVM_SOURCE_POSITION("DomParser.java", 550)
     // "NYI, ns lookup when parsing L1 DOM"
-    _r2.o = xmlvm_create_java_string_from_pool(1131);
+    _r2.o = xmlvm_create_java_string_from_pool(1134);
     XMLVM_CHECK_NPE(1)
     java_lang_RuntimeException___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_THROW_CUSTOM(_r1.o)
@@ -1927,7 +1927,7 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     if (_r2.o == JAVA_NULL) goto label429;
     XMLVM_SOURCE_POSITION("DomParser.java", 612)
     // " Full DTD known; can't be shown using SAX2. "
-    _r2.o = xmlvm_create_java_string_from_pool(1132);
+    _r2.o = xmlvm_create_java_string_from_pool(1135);
     label375:;
     XMLVM_SOURCE_POSITION("DomParser.java", 623)
     XMLVM_CHECK_NPE(2)
@@ -1979,7 +1979,7 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     label429:;
     XMLVM_SOURCE_POSITION("DomParser.java", 621)
     // " This DTD was was recreated using incomplete DOM L2 records. "
-    _r2.o = xmlvm_create_java_string_from_pool(1133);
+    _r2.o = xmlvm_create_java_string_from_pool(1136);
     goto label375;
     label432:;
     XMLVM_SOURCE_POSITION("DomParser.java", 631)
@@ -2169,7 +2169,7 @@ void gnu_xml_util_DomParser_callEnd___org_w3c_dom_Node(JAVA_OBJECT me, JAVA_OBJE
     XMLVM_SOURCE_POSITION("DomParser.java", 800)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "Illegal DOM container type found:  "
-    _r2.o = xmlvm_create_java_string_from_pool(1134);
+    _r2.o = xmlvm_create_java_string_from_pool(1137);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomParser.java", 801)
@@ -2227,7 +2227,7 @@ void gnu_xml_util_DomParser_callEnd___org_w3c_dom_Node(JAVA_OBJECT me, JAVA_OBJE
     _r0.o = __NEW_java_lang_RuntimeException();
     XMLVM_SOURCE_POSITION("DomParser.java", 777)
     // "NYI, ns lookup when parsing L1 DOM"
-    _r1.o = xmlvm_create_java_string_from_pool(1131);
+    _r1.o = xmlvm_create_java_string_from_pool(1134);
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimeException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)

@@ -333,7 +333,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Lower"
-    _r2.o = xmlvm_create_java_string_from_pool(1171);
+    _r2.o = xmlvm_create_java_string_from_pool(1174);
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r2.o;
@@ -350,7 +350,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Upper"
-    _r2.o = xmlvm_create_java_string_from_pool(1172);
+    _r2.o = xmlvm_create_java_string_from_pool(1175);
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r2.o;
@@ -384,7 +384,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Alpha"
-    _r2.o = xmlvm_create_java_string_from_pool(1173);
+    _r2.o = xmlvm_create_java_string_from_pool(1176);
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r2.o;
@@ -401,7 +401,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Digit"
-    _r2.o = xmlvm_create_java_string_from_pool(1174);
+    _r2.o = xmlvm_create_java_string_from_pool(1177);
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r2.o;
@@ -417,7 +417,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Alnum"
-    _r3.o = xmlvm_create_java_string_from_pool(1175);
+    _r3.o = xmlvm_create_java_string_from_pool(1178);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -435,7 +435,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Punct"
-    _r3.o = xmlvm_create_java_string_from_pool(1176);
+    _r3.o = xmlvm_create_java_string_from_pool(1179);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -453,7 +453,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Graph"
-    _r3.o = xmlvm_create_java_string_from_pool(1177);
+    _r3.o = xmlvm_create_java_string_from_pool(1180);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -471,7 +471,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Print"
-    _r3.o = xmlvm_create_java_string_from_pool(1178);
+    _r3.o = xmlvm_create_java_string_from_pool(1181);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -489,7 +489,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Blank"
-    _r3.o = xmlvm_create_java_string_from_pool(1179);
+    _r3.o = xmlvm_create_java_string_from_pool(1182);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -507,7 +507,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Cntrl"
-    _r3.o = xmlvm_create_java_string_from_pool(1180);
+    _r3.o = xmlvm_create_java_string_from_pool(1183);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -525,7 +525,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "XDigit"
-    _r3.o = xmlvm_create_java_string_from_pool(1181);
+    _r3.o = xmlvm_create_java_string_from_pool(1184);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -543,7 +543,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "javaLowerCase"
-    _r3.o = xmlvm_create_java_string_from_pool(1182);
+    _r3.o = xmlvm_create_java_string_from_pool(1185);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -561,7 +561,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "javaUpperCase"
-    _r3.o = xmlvm_create_java_string_from_pool(1183);
+    _r3.o = xmlvm_create_java_string_from_pool(1186);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -579,7 +579,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "javaWhitespace"
-    _r3.o = xmlvm_create_java_string_from_pool(1184);
+    _r3.o = xmlvm_create_java_string_from_pool(1187);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -597,7 +597,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "javaMirrored"
-    _r3.o = xmlvm_create_java_string_from_pool(1185);
+    _r3.o = xmlvm_create_java_string_from_pool(1188);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -615,7 +615,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "javaDefined"
-    _r3.o = xmlvm_create_java_string_from_pool(1186);
+    _r3.o = xmlvm_create_java_string_from_pool(1189);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -633,7 +633,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "javaDigit"
-    _r3.o = xmlvm_create_java_string_from_pool(1187);
+    _r3.o = xmlvm_create_java_string_from_pool(1190);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -651,7 +651,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "javaIdentifierIgnorable"
-    _r3.o = xmlvm_create_java_string_from_pool(1188);
+    _r3.o = xmlvm_create_java_string_from_pool(1191);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -669,7 +669,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "javaISOControl"
-    _r3.o = xmlvm_create_java_string_from_pool(1189);
+    _r3.o = xmlvm_create_java_string_from_pool(1192);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -687,7 +687,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "javaJavaIdentifierPart"
-    _r3.o = xmlvm_create_java_string_from_pool(1190);
+    _r3.o = xmlvm_create_java_string_from_pool(1193);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -705,7 +705,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "javaJavaIdentifierStart"
-    _r3.o = xmlvm_create_java_string_from_pool(1191);
+    _r3.o = xmlvm_create_java_string_from_pool(1194);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -723,7 +723,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "javaLetter"
-    _r3.o = xmlvm_create_java_string_from_pool(1192);
+    _r3.o = xmlvm_create_java_string_from_pool(1195);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -741,7 +741,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "javaLetterOrDigit"
-    _r3.o = xmlvm_create_java_string_from_pool(1193);
+    _r3.o = xmlvm_create_java_string_from_pool(1196);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -759,7 +759,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "javaSpaceChar"
-    _r3.o = xmlvm_create_java_string_from_pool(1194);
+    _r3.o = xmlvm_create_java_string_from_pool(1197);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -777,7 +777,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "javaTitleCase"
-    _r3.o = xmlvm_create_java_string_from_pool(1195);
+    _r3.o = xmlvm_create_java_string_from_pool(1198);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -795,7 +795,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "javaUnicodeIdentifierPart"
-    _r3.o = xmlvm_create_java_string_from_pool(1196);
+    _r3.o = xmlvm_create_java_string_from_pool(1199);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -813,7 +813,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "javaUnicodeIdentifierStart"
-    _r3.o = xmlvm_create_java_string_from_pool(1197);
+    _r3.o = xmlvm_create_java_string_from_pool(1200);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -831,7 +831,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Space"
-    _r3.o = xmlvm_create_java_string_from_pool(1198);
+    _r3.o = xmlvm_create_java_string_from_pool(1201);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -847,7 +847,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "w"
-    _r3.o = xmlvm_create_java_string_from_pool(1199);
+    _r3.o = xmlvm_create_java_string_from_pool(1202);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -865,7 +865,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "W"
-    _r3.o = xmlvm_create_java_string_from_pool(1200);
+    _r3.o = xmlvm_create_java_string_from_pool(1203);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -883,7 +883,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "s"
-    _r3.o = xmlvm_create_java_string_from_pool(1201);
+    _r3.o = xmlvm_create_java_string_from_pool(1204);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -899,7 +899,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "S"
-    _r3.o = xmlvm_create_java_string_from_pool(1202);
+    _r3.o = xmlvm_create_java_string_from_pool(1205);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -917,7 +917,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "d"
-    _r3.o = xmlvm_create_java_string_from_pool(1203);
+    _r3.o = xmlvm_create_java_string_from_pool(1206);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -933,7 +933,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "D"
-    _r3.o = xmlvm_create_java_string_from_pool(1204);
+    _r3.o = xmlvm_create_java_string_from_pool(1207);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -951,7 +951,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "BasicLatin"
-    _r3.o = xmlvm_create_java_string_from_pool(1205);
+    _r3.o = xmlvm_create_java_string_from_pool(1208);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -970,7 +970,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Latin-1Supplement"
-    _r3.o = xmlvm_create_java_string_from_pool(1206);
+    _r3.o = xmlvm_create_java_string_from_pool(1209);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -990,7 +990,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "LatinExtended-A"
-    _r3.o = xmlvm_create_java_string_from_pool(1207);
+    _r3.o = xmlvm_create_java_string_from_pool(1210);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1010,7 +1010,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "LatinExtended-B"
-    _r3.o = xmlvm_create_java_string_from_pool(1208);
+    _r3.o = xmlvm_create_java_string_from_pool(1211);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1030,7 +1030,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "IPAExtensions"
-    _r3.o = xmlvm_create_java_string_from_pool(1209);
+    _r3.o = xmlvm_create_java_string_from_pool(1212);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1050,7 +1050,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "SpacingModifierLetters"
-    _r3.o = xmlvm_create_java_string_from_pool(1210);
+    _r3.o = xmlvm_create_java_string_from_pool(1213);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1070,7 +1070,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "CombiningDiacriticalMarks"
-    _r3.o = xmlvm_create_java_string_from_pool(1211);
+    _r3.o = xmlvm_create_java_string_from_pool(1214);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1090,7 +1090,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Greek"
-    _r3.o = xmlvm_create_java_string_from_pool(1212);
+    _r3.o = xmlvm_create_java_string_from_pool(1215);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1110,7 +1110,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Cyrillic"
-    _r3.o = xmlvm_create_java_string_from_pool(1213);
+    _r3.o = xmlvm_create_java_string_from_pool(1216);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1130,7 +1130,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "CyrillicSupplement"
-    _r3.o = xmlvm_create_java_string_from_pool(1214);
+    _r3.o = xmlvm_create_java_string_from_pool(1217);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1150,7 +1150,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Armenian"
-    _r3.o = xmlvm_create_java_string_from_pool(1215);
+    _r3.o = xmlvm_create_java_string_from_pool(1218);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1170,7 +1170,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Hebrew"
-    _r3.o = xmlvm_create_java_string_from_pool(1216);
+    _r3.o = xmlvm_create_java_string_from_pool(1219);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1190,7 +1190,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Arabic"
-    _r3.o = xmlvm_create_java_string_from_pool(1217);
+    _r3.o = xmlvm_create_java_string_from_pool(1220);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1210,7 +1210,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Syriac"
-    _r3.o = xmlvm_create_java_string_from_pool(1218);
+    _r3.o = xmlvm_create_java_string_from_pool(1221);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1230,7 +1230,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "ArabicSupplement"
-    _r3.o = xmlvm_create_java_string_from_pool(1219);
+    _r3.o = xmlvm_create_java_string_from_pool(1222);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1250,7 +1250,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Thaana"
-    _r3.o = xmlvm_create_java_string_from_pool(1220);
+    _r3.o = xmlvm_create_java_string_from_pool(1223);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1270,7 +1270,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Devanagari"
-    _r3.o = xmlvm_create_java_string_from_pool(1221);
+    _r3.o = xmlvm_create_java_string_from_pool(1224);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1290,7 +1290,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Bengali"
-    _r3.o = xmlvm_create_java_string_from_pool(1222);
+    _r3.o = xmlvm_create_java_string_from_pool(1225);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1310,7 +1310,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Gurmukhi"
-    _r3.o = xmlvm_create_java_string_from_pool(1223);
+    _r3.o = xmlvm_create_java_string_from_pool(1226);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1330,7 +1330,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Gujarati"
-    _r3.o = xmlvm_create_java_string_from_pool(1224);
+    _r3.o = xmlvm_create_java_string_from_pool(1227);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1350,7 +1350,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Oriya"
-    _r3.o = xmlvm_create_java_string_from_pool(1225);
+    _r3.o = xmlvm_create_java_string_from_pool(1228);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1370,7 +1370,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Tamil"
-    _r3.o = xmlvm_create_java_string_from_pool(1226);
+    _r3.o = xmlvm_create_java_string_from_pool(1229);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1390,7 +1390,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Telugu"
-    _r3.o = xmlvm_create_java_string_from_pool(1227);
+    _r3.o = xmlvm_create_java_string_from_pool(1230);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1410,7 +1410,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Kannada"
-    _r3.o = xmlvm_create_java_string_from_pool(1228);
+    _r3.o = xmlvm_create_java_string_from_pool(1231);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1430,7 +1430,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Malayalam"
-    _r3.o = xmlvm_create_java_string_from_pool(1229);
+    _r3.o = xmlvm_create_java_string_from_pool(1232);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1450,7 +1450,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Sinhala"
-    _r3.o = xmlvm_create_java_string_from_pool(1230);
+    _r3.o = xmlvm_create_java_string_from_pool(1233);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1470,7 +1470,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Thai"
-    _r3.o = xmlvm_create_java_string_from_pool(1231);
+    _r3.o = xmlvm_create_java_string_from_pool(1234);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1490,7 +1490,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Lao"
-    _r3.o = xmlvm_create_java_string_from_pool(1232);
+    _r3.o = xmlvm_create_java_string_from_pool(1235);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1510,7 +1510,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Tibetan"
-    _r3.o = xmlvm_create_java_string_from_pool(1233);
+    _r3.o = xmlvm_create_java_string_from_pool(1236);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1530,7 +1530,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Myanmar"
-    _r3.o = xmlvm_create_java_string_from_pool(1234);
+    _r3.o = xmlvm_create_java_string_from_pool(1237);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1550,7 +1550,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Georgian"
-    _r3.o = xmlvm_create_java_string_from_pool(1235);
+    _r3.o = xmlvm_create_java_string_from_pool(1238);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1570,7 +1570,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "HangulJamo"
-    _r3.o = xmlvm_create_java_string_from_pool(1236);
+    _r3.o = xmlvm_create_java_string_from_pool(1239);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1590,7 +1590,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Ethiopic"
-    _r3.o = xmlvm_create_java_string_from_pool(1237);
+    _r3.o = xmlvm_create_java_string_from_pool(1240);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1610,7 +1610,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "EthiopicSupplement"
-    _r3.o = xmlvm_create_java_string_from_pool(1238);
+    _r3.o = xmlvm_create_java_string_from_pool(1241);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1630,7 +1630,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Cherokee"
-    _r3.o = xmlvm_create_java_string_from_pool(1239);
+    _r3.o = xmlvm_create_java_string_from_pool(1242);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1650,7 +1650,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "UnifiedCanadianAboriginalSyllabics"
-    _r3.o = xmlvm_create_java_string_from_pool(1240);
+    _r3.o = xmlvm_create_java_string_from_pool(1243);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1671,7 +1671,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Ogham"
-    _r3.o = xmlvm_create_java_string_from_pool(1241);
+    _r3.o = xmlvm_create_java_string_from_pool(1244);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1691,7 +1691,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Runic"
-    _r3.o = xmlvm_create_java_string_from_pool(1242);
+    _r3.o = xmlvm_create_java_string_from_pool(1245);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1711,7 +1711,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Tagalog"
-    _r3.o = xmlvm_create_java_string_from_pool(1243);
+    _r3.o = xmlvm_create_java_string_from_pool(1246);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1731,7 +1731,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Hanunoo"
-    _r3.o = xmlvm_create_java_string_from_pool(1244);
+    _r3.o = xmlvm_create_java_string_from_pool(1247);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1751,7 +1751,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Buhid"
-    _r3.o = xmlvm_create_java_string_from_pool(1245);
+    _r3.o = xmlvm_create_java_string_from_pool(1248);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1771,7 +1771,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Tagbanwa"
-    _r3.o = xmlvm_create_java_string_from_pool(1246);
+    _r3.o = xmlvm_create_java_string_from_pool(1249);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1791,7 +1791,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Khmer"
-    _r3.o = xmlvm_create_java_string_from_pool(1247);
+    _r3.o = xmlvm_create_java_string_from_pool(1250);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1811,7 +1811,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Mongolian"
-    _r3.o = xmlvm_create_java_string_from_pool(1248);
+    _r3.o = xmlvm_create_java_string_from_pool(1251);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1831,7 +1831,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Limbu"
-    _r3.o = xmlvm_create_java_string_from_pool(1249);
+    _r3.o = xmlvm_create_java_string_from_pool(1252);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1851,7 +1851,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "TaiLe"
-    _r3.o = xmlvm_create_java_string_from_pool(1250);
+    _r3.o = xmlvm_create_java_string_from_pool(1253);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1871,7 +1871,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "NewTaiLue"
-    _r3.o = xmlvm_create_java_string_from_pool(1251);
+    _r3.o = xmlvm_create_java_string_from_pool(1254);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1891,7 +1891,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "KhmerSymbols"
-    _r3.o = xmlvm_create_java_string_from_pool(1252);
+    _r3.o = xmlvm_create_java_string_from_pool(1255);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1911,7 +1911,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Buginese"
-    _r3.o = xmlvm_create_java_string_from_pool(1253);
+    _r3.o = xmlvm_create_java_string_from_pool(1256);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1931,7 +1931,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "PhoneticExtensions"
-    _r3.o = xmlvm_create_java_string_from_pool(1254);
+    _r3.o = xmlvm_create_java_string_from_pool(1257);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1951,7 +1951,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "PhoneticExtensionsSupplement"
-    _r3.o = xmlvm_create_java_string_from_pool(1255);
+    _r3.o = xmlvm_create_java_string_from_pool(1258);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1971,7 +1971,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "CombiningDiacriticalMarksSupplement"
-    _r3.o = xmlvm_create_java_string_from_pool(1256);
+    _r3.o = xmlvm_create_java_string_from_pool(1259);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1992,7 +1992,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "LatinExtendedAdditional"
-    _r3.o = xmlvm_create_java_string_from_pool(1257);
+    _r3.o = xmlvm_create_java_string_from_pool(1260);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2012,7 +2012,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "GreekExtended"
-    _r3.o = xmlvm_create_java_string_from_pool(1258);
+    _r3.o = xmlvm_create_java_string_from_pool(1261);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2032,7 +2032,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "GeneralPunctuation"
-    _r3.o = xmlvm_create_java_string_from_pool(1259);
+    _r3.o = xmlvm_create_java_string_from_pool(1262);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2052,7 +2052,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "SuperscriptsandSubscripts"
-    _r3.o = xmlvm_create_java_string_from_pool(1260);
+    _r3.o = xmlvm_create_java_string_from_pool(1263);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2072,7 +2072,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "CurrencySymbols"
-    _r3.o = xmlvm_create_java_string_from_pool(1261);
+    _r3.o = xmlvm_create_java_string_from_pool(1264);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2092,7 +2092,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "CombiningMarksforSymbols"
-    _r3.o = xmlvm_create_java_string_from_pool(1262);
+    _r3.o = xmlvm_create_java_string_from_pool(1265);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2112,7 +2112,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "LetterlikeSymbols"
-    _r3.o = xmlvm_create_java_string_from_pool(1263);
+    _r3.o = xmlvm_create_java_string_from_pool(1266);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2132,7 +2132,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "NumberForms"
-    _r3.o = xmlvm_create_java_string_from_pool(1264);
+    _r3.o = xmlvm_create_java_string_from_pool(1267);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2152,7 +2152,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Arrows"
-    _r3.o = xmlvm_create_java_string_from_pool(1265);
+    _r3.o = xmlvm_create_java_string_from_pool(1268);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2172,7 +2172,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "MathematicalOperators"
-    _r3.o = xmlvm_create_java_string_from_pool(1266);
+    _r3.o = xmlvm_create_java_string_from_pool(1269);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2192,7 +2192,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "MiscellaneousTechnical"
-    _r3.o = xmlvm_create_java_string_from_pool(1267);
+    _r3.o = xmlvm_create_java_string_from_pool(1270);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2212,7 +2212,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "ControlPictures"
-    _r3.o = xmlvm_create_java_string_from_pool(1268);
+    _r3.o = xmlvm_create_java_string_from_pool(1271);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2232,7 +2232,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "OpticalCharacterRecognition"
-    _r3.o = xmlvm_create_java_string_from_pool(1269);
+    _r3.o = xmlvm_create_java_string_from_pool(1272);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2252,7 +2252,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "EnclosedAlphanumerics"
-    _r3.o = xmlvm_create_java_string_from_pool(1270);
+    _r3.o = xmlvm_create_java_string_from_pool(1273);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2272,7 +2272,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "BoxDrawing"
-    _r3.o = xmlvm_create_java_string_from_pool(1271);
+    _r3.o = xmlvm_create_java_string_from_pool(1274);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2292,7 +2292,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "BlockElements"
-    _r3.o = xmlvm_create_java_string_from_pool(1272);
+    _r3.o = xmlvm_create_java_string_from_pool(1275);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2312,7 +2312,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "GeometricShapes"
-    _r3.o = xmlvm_create_java_string_from_pool(1273);
+    _r3.o = xmlvm_create_java_string_from_pool(1276);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2332,7 +2332,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "MiscellaneousSymbols"
-    _r3.o = xmlvm_create_java_string_from_pool(1274);
+    _r3.o = xmlvm_create_java_string_from_pool(1277);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2352,7 +2352,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Dingbats"
-    _r3.o = xmlvm_create_java_string_from_pool(1275);
+    _r3.o = xmlvm_create_java_string_from_pool(1278);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2372,7 +2372,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "MiscellaneousMathematicalSymbols-A"
-    _r3.o = xmlvm_create_java_string_from_pool(1276);
+    _r3.o = xmlvm_create_java_string_from_pool(1279);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2393,7 +2393,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "SupplementalArrows-A"
-    _r3.o = xmlvm_create_java_string_from_pool(1277);
+    _r3.o = xmlvm_create_java_string_from_pool(1280);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2413,7 +2413,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "BraillePatterns"
-    _r3.o = xmlvm_create_java_string_from_pool(1278);
+    _r3.o = xmlvm_create_java_string_from_pool(1281);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2433,7 +2433,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "SupplementalArrows-B"
-    _r3.o = xmlvm_create_java_string_from_pool(1279);
+    _r3.o = xmlvm_create_java_string_from_pool(1282);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2453,7 +2453,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "MiscellaneousMathematicalSymbols-B"
-    _r3.o = xmlvm_create_java_string_from_pool(1280);
+    _r3.o = xmlvm_create_java_string_from_pool(1283);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2474,7 +2474,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "SupplementalMathematicalOperators"
-    _r3.o = xmlvm_create_java_string_from_pool(1281);
+    _r3.o = xmlvm_create_java_string_from_pool(1284);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2495,7 +2495,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "MiscellaneousSymbolsandArrows"
-    _r3.o = xmlvm_create_java_string_from_pool(1282);
+    _r3.o = xmlvm_create_java_string_from_pool(1285);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2516,7 +2516,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Glagolitic"
-    _r3.o = xmlvm_create_java_string_from_pool(1283);
+    _r3.o = xmlvm_create_java_string_from_pool(1286);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2536,7 +2536,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Coptic"
-    _r3.o = xmlvm_create_java_string_from_pool(1284);
+    _r3.o = xmlvm_create_java_string_from_pool(1287);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2556,7 +2556,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "GeorgianSupplement"
-    _r3.o = xmlvm_create_java_string_from_pool(1285);
+    _r3.o = xmlvm_create_java_string_from_pool(1288);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2576,7 +2576,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Tifinagh"
-    _r3.o = xmlvm_create_java_string_from_pool(1286);
+    _r3.o = xmlvm_create_java_string_from_pool(1289);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2596,7 +2596,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "EthiopicExtended"
-    _r3.o = xmlvm_create_java_string_from_pool(1287);
+    _r3.o = xmlvm_create_java_string_from_pool(1290);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2616,7 +2616,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "SupplementalPunctuation"
-    _r3.o = xmlvm_create_java_string_from_pool(1288);
+    _r3.o = xmlvm_create_java_string_from_pool(1291);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2636,7 +2636,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "CJKRadicalsSupplement"
-    _r3.o = xmlvm_create_java_string_from_pool(1289);
+    _r3.o = xmlvm_create_java_string_from_pool(1292);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2656,7 +2656,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "KangxiRadicals"
-    _r3.o = xmlvm_create_java_string_from_pool(1290);
+    _r3.o = xmlvm_create_java_string_from_pool(1293);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2676,7 +2676,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "IdeographicDescriptionCharacters"
-    _r3.o = xmlvm_create_java_string_from_pool(1291);
+    _r3.o = xmlvm_create_java_string_from_pool(1294);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2697,7 +2697,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "CJKSymbolsandPunctuation"
-    _r3.o = xmlvm_create_java_string_from_pool(1292);
+    _r3.o = xmlvm_create_java_string_from_pool(1295);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2717,7 +2717,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Hiragana"
-    _r3.o = xmlvm_create_java_string_from_pool(1293);
+    _r3.o = xmlvm_create_java_string_from_pool(1296);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2737,7 +2737,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Katakana"
-    _r3.o = xmlvm_create_java_string_from_pool(1294);
+    _r3.o = xmlvm_create_java_string_from_pool(1297);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2757,7 +2757,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Bopomofo"
-    _r3.o = xmlvm_create_java_string_from_pool(1295);
+    _r3.o = xmlvm_create_java_string_from_pool(1298);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2777,7 +2777,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "HangulCompatibilityJamo"
-    _r3.o = xmlvm_create_java_string_from_pool(1296);
+    _r3.o = xmlvm_create_java_string_from_pool(1299);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2797,7 +2797,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Kanbun"
-    _r3.o = xmlvm_create_java_string_from_pool(1297);
+    _r3.o = xmlvm_create_java_string_from_pool(1300);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2817,7 +2817,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "BopomofoExtended"
-    _r3.o = xmlvm_create_java_string_from_pool(1298);
+    _r3.o = xmlvm_create_java_string_from_pool(1301);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2837,7 +2837,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "CJKStrokes"
-    _r3.o = xmlvm_create_java_string_from_pool(1299);
+    _r3.o = xmlvm_create_java_string_from_pool(1302);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2857,7 +2857,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "KatakanaPhoneticExtensions"
-    _r3.o = xmlvm_create_java_string_from_pool(1300);
+    _r3.o = xmlvm_create_java_string_from_pool(1303);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2877,7 +2877,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "EnclosedCJKLettersandMonths"
-    _r3.o = xmlvm_create_java_string_from_pool(1301);
+    _r3.o = xmlvm_create_java_string_from_pool(1304);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2897,7 +2897,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "CJKCompatibility"
-    _r3.o = xmlvm_create_java_string_from_pool(1302);
+    _r3.o = xmlvm_create_java_string_from_pool(1305);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2917,7 +2917,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "CJKUnifiedIdeographsExtensionA"
-    _r3.o = xmlvm_create_java_string_from_pool(1303);
+    _r3.o = xmlvm_create_java_string_from_pool(1306);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2938,7 +2938,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "YijingHexagramSymbols"
-    _r3.o = xmlvm_create_java_string_from_pool(1304);
+    _r3.o = xmlvm_create_java_string_from_pool(1307);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2958,7 +2958,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "CJKUnifiedIdeographs"
-    _r3.o = xmlvm_create_java_string_from_pool(1305);
+    _r3.o = xmlvm_create_java_string_from_pool(1308);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2978,7 +2978,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "YiSyllables"
-    _r3.o = xmlvm_create_java_string_from_pool(1306);
+    _r3.o = xmlvm_create_java_string_from_pool(1309);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -2998,7 +2998,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "YiRadicals"
-    _r3.o = xmlvm_create_java_string_from_pool(1307);
+    _r3.o = xmlvm_create_java_string_from_pool(1310);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3018,7 +3018,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "ModifierToneLetters"
-    _r3.o = xmlvm_create_java_string_from_pool(1308);
+    _r3.o = xmlvm_create_java_string_from_pool(1311);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3038,7 +3038,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "SylotiNagri"
-    _r3.o = xmlvm_create_java_string_from_pool(1309);
+    _r3.o = xmlvm_create_java_string_from_pool(1312);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3058,7 +3058,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "HangulSyllables"
-    _r3.o = xmlvm_create_java_string_from_pool(1310);
+    _r3.o = xmlvm_create_java_string_from_pool(1313);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3078,7 +3078,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "HighSurrogates"
-    _r3.o = xmlvm_create_java_string_from_pool(1311);
+    _r3.o = xmlvm_create_java_string_from_pool(1314);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3098,7 +3098,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "HighPrivateUseSurrogates"
-    _r3.o = xmlvm_create_java_string_from_pool(1312);
+    _r3.o = xmlvm_create_java_string_from_pool(1315);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3118,7 +3118,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "LowSurrogates"
-    _r3.o = xmlvm_create_java_string_from_pool(1313);
+    _r3.o = xmlvm_create_java_string_from_pool(1316);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3138,7 +3138,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "PrivateUseArea"
-    _r3.o = xmlvm_create_java_string_from_pool(1314);
+    _r3.o = xmlvm_create_java_string_from_pool(1317);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3158,7 +3158,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "CJKCompatibilityIdeographs"
-    _r3.o = xmlvm_create_java_string_from_pool(1315);
+    _r3.o = xmlvm_create_java_string_from_pool(1318);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3178,7 +3178,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "AlphabeticPresentationForms"
-    _r3.o = xmlvm_create_java_string_from_pool(1316);
+    _r3.o = xmlvm_create_java_string_from_pool(1319);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3198,7 +3198,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "ArabicPresentationForms-A"
-    _r3.o = xmlvm_create_java_string_from_pool(1317);
+    _r3.o = xmlvm_create_java_string_from_pool(1320);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3218,7 +3218,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "VariationSelectors"
-    _r3.o = xmlvm_create_java_string_from_pool(1318);
+    _r3.o = xmlvm_create_java_string_from_pool(1321);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3238,7 +3238,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "VerticalForms"
-    _r3.o = xmlvm_create_java_string_from_pool(1319);
+    _r3.o = xmlvm_create_java_string_from_pool(1322);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3258,7 +3258,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "CombiningHalfMarks"
-    _r3.o = xmlvm_create_java_string_from_pool(1320);
+    _r3.o = xmlvm_create_java_string_from_pool(1323);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3278,7 +3278,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "CJKCompatibilityForms"
-    _r3.o = xmlvm_create_java_string_from_pool(1321);
+    _r3.o = xmlvm_create_java_string_from_pool(1324);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3298,7 +3298,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "SmallFormVariants"
-    _r3.o = xmlvm_create_java_string_from_pool(1322);
+    _r3.o = xmlvm_create_java_string_from_pool(1325);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3318,7 +3318,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "ArabicPresentationForms-B"
-    _r3.o = xmlvm_create_java_string_from_pool(1323);
+    _r3.o = xmlvm_create_java_string_from_pool(1326);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3338,7 +3338,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "HalfwidthandFullwidthForms"
-    _r3.o = xmlvm_create_java_string_from_pool(1324);
+    _r3.o = xmlvm_create_java_string_from_pool(1327);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3358,7 +3358,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "all"
-    _r3.o = xmlvm_create_java_string_from_pool(1325);
+    _r3.o = xmlvm_create_java_string_from_pool(1328);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3377,7 +3377,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Specials"
-    _r3.o = xmlvm_create_java_string_from_pool(1326);
+    _r3.o = xmlvm_create_java_string_from_pool(1329);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3395,7 +3395,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Cn"
-    _r3.o = xmlvm_create_java_string_from_pool(1327);
+    _r3.o = xmlvm_create_java_string_from_pool(1330);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3413,7 +3413,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "IsL"
-    _r3.o = xmlvm_create_java_string_from_pool(1328);
+    _r3.o = xmlvm_create_java_string_from_pool(1331);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3432,7 +3432,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Lu"
-    _r3.o = xmlvm_create_java_string_from_pool(1329);
+    _r3.o = xmlvm_create_java_string_from_pool(1332);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3450,7 +3450,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Ll"
-    _r3.o = xmlvm_create_java_string_from_pool(1330);
+    _r3.o = xmlvm_create_java_string_from_pool(1333);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3468,7 +3468,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Lt"
-    _r3.o = xmlvm_create_java_string_from_pool(1331);
+    _r3.o = xmlvm_create_java_string_from_pool(1334);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3486,7 +3486,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Lm"
-    _r3.o = xmlvm_create_java_string_from_pool(1332);
+    _r3.o = xmlvm_create_java_string_from_pool(1335);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3504,7 +3504,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Lo"
-    _r3.o = xmlvm_create_java_string_from_pool(1333);
+    _r3.o = xmlvm_create_java_string_from_pool(1336);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3523,7 +3523,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "IsM"
-    _r3.o = xmlvm_create_java_string_from_pool(1334);
+    _r3.o = xmlvm_create_java_string_from_pool(1337);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3542,7 +3542,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Mn"
-    _r3.o = xmlvm_create_java_string_from_pool(1335);
+    _r3.o = xmlvm_create_java_string_from_pool(1338);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3561,7 +3561,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Me"
-    _r3.o = xmlvm_create_java_string_from_pool(1336);
+    _r3.o = xmlvm_create_java_string_from_pool(1339);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3580,7 +3580,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Mc"
-    _r3.o = xmlvm_create_java_string_from_pool(1337);
+    _r3.o = xmlvm_create_java_string_from_pool(1340);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3599,7 +3599,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "N"
-    _r3.o = xmlvm_create_java_string_from_pool(1338);
+    _r3.o = xmlvm_create_java_string_from_pool(1341);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3618,7 +3618,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Nd"
-    _r3.o = xmlvm_create_java_string_from_pool(1339);
+    _r3.o = xmlvm_create_java_string_from_pool(1342);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3637,7 +3637,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Nl"
-    _r3.o = xmlvm_create_java_string_from_pool(1340);
+    _r3.o = xmlvm_create_java_string_from_pool(1343);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3656,7 +3656,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "No"
-    _r3.o = xmlvm_create_java_string_from_pool(1341);
+    _r3.o = xmlvm_create_java_string_from_pool(1344);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3675,7 +3675,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "IsZ"
-    _r3.o = xmlvm_create_java_string_from_pool(1342);
+    _r3.o = xmlvm_create_java_string_from_pool(1345);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3694,7 +3694,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Zs"
-    _r3.o = xmlvm_create_java_string_from_pool(1343);
+    _r3.o = xmlvm_create_java_string_from_pool(1346);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3713,7 +3713,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Zl"
-    _r3.o = xmlvm_create_java_string_from_pool(1344);
+    _r3.o = xmlvm_create_java_string_from_pool(1347);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3732,7 +3732,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Zp"
-    _r3.o = xmlvm_create_java_string_from_pool(1345);
+    _r3.o = xmlvm_create_java_string_from_pool(1348);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3751,7 +3751,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "IsC"
-    _r3.o = xmlvm_create_java_string_from_pool(1346);
+    _r3.o = xmlvm_create_java_string_from_pool(1349);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3770,7 +3770,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Cc"
-    _r3.o = xmlvm_create_java_string_from_pool(1347);
+    _r3.o = xmlvm_create_java_string_from_pool(1350);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3789,7 +3789,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Cf"
-    _r3.o = xmlvm_create_java_string_from_pool(1348);
+    _r3.o = xmlvm_create_java_string_from_pool(1351);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3808,7 +3808,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Co"
-    _r3.o = xmlvm_create_java_string_from_pool(1349);
+    _r3.o = xmlvm_create_java_string_from_pool(1352);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3827,7 +3827,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Cs"
-    _r3.o = xmlvm_create_java_string_from_pool(1350);
+    _r3.o = xmlvm_create_java_string_from_pool(1353);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3846,7 +3846,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "IsP"
-    _r3.o = xmlvm_create_java_string_from_pool(1351);
+    _r3.o = xmlvm_create_java_string_from_pool(1354);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3866,7 +3866,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Pd"
-    _r3.o = xmlvm_create_java_string_from_pool(1352);
+    _r3.o = xmlvm_create_java_string_from_pool(1355);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3885,7 +3885,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Ps"
-    _r3.o = xmlvm_create_java_string_from_pool(1353);
+    _r3.o = xmlvm_create_java_string_from_pool(1356);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3904,7 +3904,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Pe"
-    _r3.o = xmlvm_create_java_string_from_pool(1354);
+    _r3.o = xmlvm_create_java_string_from_pool(1357);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3923,7 +3923,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Pc"
-    _r3.o = xmlvm_create_java_string_from_pool(1355);
+    _r3.o = xmlvm_create_java_string_from_pool(1358);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3942,7 +3942,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Po"
-    _r3.o = xmlvm_create_java_string_from_pool(1356);
+    _r3.o = xmlvm_create_java_string_from_pool(1359);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3961,7 +3961,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "IsS"
-    _r3.o = xmlvm_create_java_string_from_pool(1357);
+    _r3.o = xmlvm_create_java_string_from_pool(1360);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3980,7 +3980,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Sm"
-    _r3.o = xmlvm_create_java_string_from_pool(1358);
+    _r3.o = xmlvm_create_java_string_from_pool(1361);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -3999,7 +3999,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Sc"
-    _r3.o = xmlvm_create_java_string_from_pool(1359);
+    _r3.o = xmlvm_create_java_string_from_pool(1362);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -4018,7 +4018,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Sk"
-    _r3.o = xmlvm_create_java_string_from_pool(1360);
+    _r3.o = xmlvm_create_java_string_from_pool(1363);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -4037,7 +4037,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "So"
-    _r3.o = xmlvm_create_java_string_from_pool(1361);
+    _r3.o = xmlvm_create_java_string_from_pool(1364);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -4056,7 +4056,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Pi"
-    _r3.o = xmlvm_create_java_string_from_pool(1362);
+    _r3.o = xmlvm_create_java_string_from_pool(1365);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -4075,7 +4075,7 @@ void java_util_regex_AbstractCharClass_PredefinedCharacterClasses___CLINIT_()
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r8.i);
     // "Pf"
-    _r3.o = xmlvm_create_java_string_from_pool(1363);
+    _r3.o = xmlvm_create_java_string_from_pool(1366);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;

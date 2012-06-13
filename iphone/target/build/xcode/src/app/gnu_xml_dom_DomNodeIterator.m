@@ -534,7 +534,7 @@ void gnu_xml_dom_DomNodeIterator___INIT____org_w3c_dom_Node_int_org_w3c_dom_trav
     _r0.o = __NEW_org_w3c_dom_DOMException();
     _r1.i = 9;
     // "null root"
-    _r2.o = xmlvm_create_java_string_from_pool(1467);
+    _r2.o = xmlvm_create_java_string_from_pool(1470);
     XMLVM_CHECK_NPE(0)
     org_w3c_dom_DOMException___INIT____short_java_lang_String(_r0.o, _r1.i, _r2.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -630,7 +630,7 @@ JAVA_OBJECT gnu_xml_dom_DomNodeIterator_nextNode__(JAVA_OBJECT me)
     _r0.o = __NEW_org_w3c_dom_DOMException();
     _r1.i = 11;
     // "null root"
-    _r2.o = xmlvm_create_java_string_from_pool(1467);
+    _r2.o = xmlvm_create_java_string_from_pool(1470);
     XMLVM_CHECK_NPE(0)
     org_w3c_dom_DOMException___INIT____short_java_lang_String(_r0.o, _r1.i, _r2.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -747,7 +747,7 @@ JAVA_OBJECT gnu_xml_dom_DomNodeIterator_previousNode__(JAVA_OBJECT me)
     _r0.o = __NEW_org_w3c_dom_DOMException();
     _r1.i = 11;
     // "null root"
-    _r2.o = xmlvm_create_java_string_from_pool(1467);
+    _r2.o = xmlvm_create_java_string_from_pool(1470);
     XMLVM_CHECK_NPE(0)
     org_w3c_dom_DOMException___INIT____short_java_lang_String(_r0.o, _r1.i, _r2.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -878,7 +878,7 @@ void gnu_xml_dom_DomNodeIterator_setCurrentNode___org_w3c_dom_Node(JAVA_OBJECT m
     _r0.o = __NEW_org_w3c_dom_DOMException();
     _r1.i = 9;
     // "null root"
-    _r2.o = xmlvm_create_java_string_from_pool(1467);
+    _r2.o = xmlvm_create_java_string_from_pool(1470);
     XMLVM_CHECK_NPE(0)
     org_w3c_dom_DOMException___INIT____short_java_lang_String(_r0.o, _r1.i, _r2.o);
     XMLVM_THROW_CUSTOM(_r0.o)

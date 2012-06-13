@@ -1224,7 +1224,7 @@ JAVA_BOOLEAN gnu_xml_dom_html2_DomHTMLInputElement_getDefaultChecked__(JAVA_OBJE
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 74)
     // "checked"
-    _r0.o = xmlvm_create_java_string_from_pool(1698);
+    _r0.o = xmlvm_create_java_string_from_pool(1701);
     XMLVM_CHECK_NPE(1)
     _r0.i = gnu_xml_dom_html2_DomHTMLElement_getBooleanHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1243,7 +1243,7 @@ void gnu_xml_dom_html2_DomHTMLInputElement_setDefaultChecked___boolean(JAVA_OBJE
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 79)
     // "checked"
-    _r0.o = xmlvm_create_java_string_from_pool(1698);
+    _r0.o = xmlvm_create_java_string_from_pool(1701);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setBooleanHTMLAttribute___java_lang_String_boolean(_r1.o, _r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 80)
@@ -1508,7 +1508,7 @@ JAVA_INT gnu_xml_dom_html2_DomHTMLInputElement_getMaxLength__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 153)
     // "maxLength"
-    _r0.o = xmlvm_create_java_string_from_pool(3401);
+    _r0.o = xmlvm_create_java_string_from_pool(3404);
     XMLVM_CHECK_NPE(1)
     _r0.i = gnu_xml_dom_html2_DomHTMLElement_getIntHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1527,7 +1527,7 @@ void gnu_xml_dom_html2_DomHTMLInputElement_setMaxLength___int(JAVA_OBJECT me, JA
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 158)
     // "maxLength"
-    _r0.o = xmlvm_create_java_string_from_pool(3401);
+    _r0.o = xmlvm_create_java_string_from_pool(3404);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setIntHTMLAttribute___java_lang_String_int(_r1.o, _r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 159)
@@ -1619,7 +1619,7 @@ JAVA_INT gnu_xml_dom_html2_DomHTMLInputElement_getSize__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 183)
     // "size"
-    _r0.o = xmlvm_create_java_string_from_pool(988);
+    _r0.o = xmlvm_create_java_string_from_pool(991);
     XMLVM_CHECK_NPE(1)
     _r0.i = gnu_xml_dom_html2_DomHTMLElement_getIntHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1638,7 +1638,7 @@ void gnu_xml_dom_html2_DomHTMLInputElement_setSize___int(JAVA_OBJECT me, JAVA_IN
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 188)
     // "size"
-    _r0.o = xmlvm_create_java_string_from_pool(988);
+    _r0.o = xmlvm_create_java_string_from_pool(991);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setIntHTMLAttribute___java_lang_String_int(_r1.o, _r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 189)
@@ -1767,7 +1767,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLInputElement_getUseMap__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 223)
     // "usemap"
-    _r0.o = xmlvm_create_java_string_from_pool(2351);
+    _r0.o = xmlvm_create_java_string_from_pool(2354);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1786,7 +1786,7 @@ void gnu_xml_dom_html2_DomHTMLInputElement_setUseMap___java_lang_String(JAVA_OBJ
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 228)
     // "usemap"
-    _r0.o = xmlvm_create_java_string_from_pool(2351);
+    _r0.o = xmlvm_create_java_string_from_pool(2354);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 229)
@@ -1897,7 +1897,7 @@ void gnu_xml_dom_html2_DomHTMLInputElement_click__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 262)
     // "click"
-    _r0.o = xmlvm_create_java_string_from_pool(3402);
+    _r0.o = xmlvm_create_java_string_from_pool(3405);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_dispatchUIEvent___java_lang_String(_r1.o, _r0.o);
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 263)

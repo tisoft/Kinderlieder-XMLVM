@@ -298,7 +298,7 @@ JAVA_OBJECT java_util_regex_UCISupplCharSet_getName__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("UCISupplCharSet.java", 108)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "UCI "
-    _r1.o = xmlvm_create_java_string_from_pool(2285);
+    _r1.o = xmlvm_create_java_string_from_pool(2288);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     _r1.o = __NEW_java_lang_String();

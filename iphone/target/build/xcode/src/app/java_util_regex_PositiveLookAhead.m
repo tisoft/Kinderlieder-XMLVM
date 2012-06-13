@@ -338,7 +338,7 @@ JAVA_OBJECT java_util_regex_PositiveLookAhead_getName__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("PositiveLookAhead.java", 61)
     // "PosLookaheadJointSet"
-    _r0.o = xmlvm_create_java_string_from_pool(2316);
+    _r0.o = xmlvm_create_java_string_from_pool(2319);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

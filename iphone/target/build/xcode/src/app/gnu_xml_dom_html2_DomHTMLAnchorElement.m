@@ -1004,7 +1004,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLAnchorElement_getCoords__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLAnchorElement.java", 80)
     // "coords"
-    _r0.o = xmlvm_create_java_string_from_pool(1376);
+    _r0.o = xmlvm_create_java_string_from_pool(1379);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1023,7 +1023,7 @@ void gnu_xml_dom_html2_DomHTMLAnchorElement_setCoords___java_lang_String(JAVA_OB
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLAnchorElement.java", 85)
     // "coords"
-    _r0.o = xmlvm_create_java_string_from_pool(1376);
+    _r0.o = xmlvm_create_java_string_from_pool(1379);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLAnchorElement.java", 86)
@@ -1226,7 +1226,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLAnchorElement_getShape__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLAnchorElement.java", 140)
     // "shape"
-    _r0.o = xmlvm_create_java_string_from_pool(1378);
+    _r0.o = xmlvm_create_java_string_from_pool(1381);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1245,7 +1245,7 @@ void gnu_xml_dom_html2_DomHTMLAnchorElement_setShape___java_lang_String(JAVA_OBJ
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLAnchorElement.java", 145)
     // "shape"
-    _r0.o = xmlvm_create_java_string_from_pool(1378);
+    _r0.o = xmlvm_create_java_string_from_pool(1381);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLAnchorElement.java", 146)

@@ -246,7 +246,7 @@ void java_nio_charset_spi_CharsetProvider___CLINIT_()
     _r0.o = __NEW_java_lang_RuntimePermission();
     XMLVM_SOURCE_POSITION("CharsetProvider.java", 29)
     // "charsetProvider"
-    _r1.o = xmlvm_create_java_string_from_pool(1381);
+    _r1.o = xmlvm_create_java_string_from_pool(1384);
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimePermission___INIT____java_lang_String(_r0.o, _r1.o);
     java_nio_charset_spi_CharsetProvider_PUT_CONSTRUCT_PERM( _r0.o);

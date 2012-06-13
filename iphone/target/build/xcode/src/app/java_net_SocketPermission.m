@@ -685,7 +685,7 @@ void java_net_SocketPermission___INIT____java_lang_String_java_lang_String(JAVA_
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r3.o)->tib->vtable[1])(_r3.o, _r1.o);
     if (_r0.i == 0) goto label41;
     // "localhost"
-    _r0.o = xmlvm_create_java_string_from_pool(1023);
+    _r0.o = xmlvm_create_java_string_from_pool(1026);
     label12:;
     XMLVM_CHECK_NPE(2)
     java_security_Permission___INIT____java_lang_String(_r2.o, _r0.o);
@@ -1016,7 +1016,7 @@ void java_net_SocketPermission_setActions___java_lang_String(JAVA_OBJECT me, JAV
     XMLVM_SOURCE_POSITION("SocketPermission.java", 236)
     _r7.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.7A"
-    _r8.o = xmlvm_create_java_string_from_pool(2496);
+    _r8.o = xmlvm_create_java_string_from_pool(2499);
     _r8.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object(_r8.o, _r0.o);
     XMLVM_CHECK_NPE(7)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r7.o, _r8.o);
@@ -1039,7 +1039,7 @@ JAVA_BOOLEAN java_net_SocketPermission_implies___java_security_Permission(JAVA_O
     _r6.o = me;
     _r7.o = n1;
     _r5.i = 0;
-    XMLVM_TRY_BEGIN(w31986aaac22b1b4)
+    XMLVM_TRY_BEGIN(w32012aaac22b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("SocketPermission.java", 259)
     _r0 = _r7;
@@ -1047,10 +1047,10 @@ JAVA_BOOLEAN java_net_SocketPermission_implies___java_security_Permission(JAVA_O
     _r2 = _r0;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w31986aaac22b1b4)
-        XMLVM_CATCH_SPECIFIC(w31986aaac22b1b4,java_lang_ClassCastException,18)
-    XMLVM_CATCH_END(w31986aaac22b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w31986aaac22b1b4)
+    XMLVM_CATCH_BEGIN(w32012aaac22b1b4)
+        XMLVM_CATCH_SPECIFIC(w32012aaac22b1b4,java_lang_ClassCastException,18)
+    XMLVM_CATCH_END(w32012aaac22b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32012aaac22b1b4)
     XMLVM_SOURCE_POSITION("SocketPermission.java", 266)
     if (_r2.o == JAVA_NULL) goto label16;
     _r3.i = ((java_net_SocketPermission*) _r6.o)->fields.java_net_SocketPermission.actionsMask_;
@@ -1067,8 +1067,8 @@ JAVA_BOOLEAN java_net_SocketPermission_implies___java_security_Permission(JAVA_O
     return _r3.i;
     label18:;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 260)
-    java_lang_Thread* curThread_w31986aaac22b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w31986aaac22b1c20->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32012aaac22b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w32012aaac22b1c20->fields.java_lang_Thread.xmlvmException_;
     _r3 = _r5;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 261)
     goto label17;
@@ -1151,7 +1151,7 @@ void java_net_SocketPermission_parsePort___java_lang_String_java_lang_String(JAV
     _r6.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r3.o);
     if (_r6.i != 0) goto label25;
     // ":*"
-    _r6.o = xmlvm_create_java_string_from_pool(2497);
+    _r6.o = xmlvm_create_java_string_from_pool(2500);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(6)
     _r6.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r6.o)->tib->vtable[1])(_r6.o, _r3.o);
@@ -1184,7 +1184,7 @@ void java_net_SocketPermission_parsePort___java_lang_String_java_lang_String(JAV
     _r5 = _r3;
     _r4 = _r3;
     label51:;
-    XMLVM_TRY_BEGIN(w31986aaac24b1c41)
+    XMLVM_TRY_BEGIN(w32012aaac24b1c41)
     // Begin try
     XMLVM_SOURCE_POSITION("SocketPermission.java", 319)
     XMLVM_SOURCE_POSITION("SocketPermission.java", 331)
@@ -1202,30 +1202,30 @@ void java_net_SocketPermission_parsePort___java_lang_String_java_lang_String(JAV
     XMLVM_SOURCE_POSITION("SocketPermission.java", 334)
     _r6.i = ((java_net_SocketPermission*) _r8.o)->fields.java_net_SocketPermission.portMin_;
     _r7.i = ((java_net_SocketPermission*) _r8.o)->fields.java_net_SocketPermission.portMax_;
-    if (_r6.i <= _r7.i) { XMLVM_MEMCPY(curThread_w31986aaac24b1c41->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w31986aaac24b1c41, sizeof(XMLVM_JMP_BUF)); goto label32; };
+    if (_r6.i <= _r7.i) { XMLVM_MEMCPY(curThread_w32012aaac24b1c41->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32012aaac24b1c41, sizeof(XMLVM_JMP_BUF)); goto label32; };
     XMLVM_SOURCE_POSITION("SocketPermission.java", 336)
     _r6.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.7B"
-    _r7.o = xmlvm_create_java_string_from_pool(2498);
+    _r7.o = xmlvm_create_java_string_from_pool(2501);
     _r7.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object(_r7.o, _r3.o);
     XMLVM_CHECK_NPE(6)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r6.o, _r7.o);
     XMLVM_THROW_CUSTOM(_r6.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w31986aaac24b1c41)
-        XMLVM_CATCH_SPECIFIC(w31986aaac24b1c41,java_lang_NumberFormatException,89)
-    XMLVM_CATCH_END(w31986aaac24b1c41)
-    XMLVM_RESTORE_EXCEPTION_ENV(w31986aaac24b1c41)
+    XMLVM_CATCH_BEGIN(w32012aaac24b1c41)
+        XMLVM_CATCH_SPECIFIC(w32012aaac24b1c41,java_lang_NumberFormatException,89)
+    XMLVM_CATCH_END(w32012aaac24b1c41)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32012aaac24b1c41)
     label89:;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 338)
-    java_lang_Thread* curThread_w31986aaac24b1c44 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r6.o = curThread_w31986aaac24b1c44->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32012aaac24b1c44 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r6.o = curThread_w32012aaac24b1c44->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r6;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 340)
     _r6.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.7C"
-    _r7.o = xmlvm_create_java_string_from_pool(2499);
+    _r7.o = xmlvm_create_java_string_from_pool(2502);
     _r7.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object(_r7.o, _r3.o);
     XMLVM_CHECK_NPE(6)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r6.o, _r7.o);
@@ -1254,7 +1254,7 @@ void java_net_SocketPermission_parsePort___java_lang_String_java_lang_String(JAV
     if (_r6.i == 0) goto label51;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 327)
     // "65535"
-    _r4.o = xmlvm_create_java_string_from_pool(2500);
+    _r4.o = xmlvm_create_java_string_from_pool(2503);
     goto label51;
     //XMLVM_END_WRAPPER
 }
@@ -1385,7 +1385,7 @@ JAVA_OBJECT java_net_SocketPermission_getIPString___boolean(JAVA_OBJECT me, JAVA
     XMLVM_SOURCE_POSITION("SocketPermission.java", 377)
     _r0.i = ((java_net_SocketPermission*) _r1.o)->fields.java_net_SocketPermission.resolved_;
     if (_r0.i != 0) goto label15;
-    XMLVM_TRY_BEGIN(w31986aaac26b1b6)
+    XMLVM_TRY_BEGIN(w32012aaac26b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("SocketPermission.java", 379)
     _r0.o = ((java_net_SocketPermission*) _r1.o)->fields.java_net_SocketPermission.hostName_;
@@ -1393,10 +1393,10 @@ JAVA_OBJECT java_net_SocketPermission_getIPString___boolean(JAVA_OBJECT me, JAVA
     ((java_net_SocketPermission*) _r1.o)->fields.java_net_SocketPermission.ipString_ = _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w31986aaac26b1b6)
-        XMLVM_CATCH_SPECIFIC(w31986aaac26b1b6,java_net_UnknownHostException,18)
-    XMLVM_CATCH_END(w31986aaac26b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w31986aaac26b1b6)
+    XMLVM_CATCH_BEGIN(w32012aaac26b1b6)
+        XMLVM_CATCH_SPECIFIC(w32012aaac26b1b6,java_net_UnknownHostException,18)
+    XMLVM_CATCH_END(w32012aaac26b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32012aaac26b1b6)
     label12:;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 383)
     _r0.i = 1;
@@ -1408,8 +1408,8 @@ JAVA_OBJECT java_net_SocketPermission_getIPString___boolean(JAVA_OBJECT me, JAVA
     return _r0.o;
     label18:;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 380)
-    java_lang_Thread* curThread_w31986aaac26b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w31986aaac26b1c17->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32012aaac26b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w32012aaac26b1c17->fields.java_lang_Thread.xmlvmException_;
     goto label12;
     //XMLVM_END_WRAPPER
 }
@@ -1440,7 +1440,7 @@ JAVA_OBJECT java_net_SocketPermission_getHostString___java_lang_String(JAVA_OBJE
     _r9.i = 1;
     _r8.i = 0;
     // "luni.7C"
-    _r12.o = xmlvm_create_java_string_from_pool(2499);
+    _r12.o = xmlvm_create_java_string_from_pool(2502);
     XMLVM_SOURCE_POSITION("SocketPermission.java", 405)
     XMLVM_CHECK_NPE(14)
     _r14.o = java_lang_String_trim__(_r14.o);
@@ -1568,7 +1568,7 @@ JAVA_OBJECT java_net_SocketPermission_getHostString___java_lang_String(JAVA_OBJE
     XMLVM_SOURCE_POSITION("SocketPermission.java", 448)
     _r6.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.7C"
-    _r7.o = xmlvm_create_java_string_from_pool(2499);
+    _r7.o = xmlvm_create_java_string_from_pool(2502);
     _r7.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object(_r12.o, _r14.o);
     XMLVM_CHECK_NPE(6)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r6.o, _r7.o);
@@ -1583,7 +1583,7 @@ JAVA_OBJECT java_net_SocketPermission_getHostString___java_lang_String(JAVA_OBJE
     XMLVM_SOURCE_POSITION("SocketPermission.java", 455)
     _r6.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.7C"
-    _r7.o = xmlvm_create_java_string_from_pool(2499);
+    _r7.o = xmlvm_create_java_string_from_pool(2502);
     _r7.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object(_r12.o, _r14.o);
     XMLVM_CHECK_NPE(6)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r6.o, _r7.o);
@@ -1603,7 +1603,7 @@ JAVA_OBJECT java_net_SocketPermission_getHostString___java_lang_String(JAVA_OBJE
     XMLVM_SOURCE_POSITION("SocketPermission.java", 462)
     _r6.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.7C"
-    _r7.o = xmlvm_create_java_string_from_pool(2499);
+    _r7.o = xmlvm_create_java_string_from_pool(2502);
     _r7.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object(_r12.o, _r14.o);
     XMLVM_CHECK_NPE(6)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r6.o, _r7.o);

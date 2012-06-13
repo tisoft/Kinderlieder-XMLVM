@@ -16,7 +16,7 @@ import java.util.zip.ZipFile;
 
 public class ShopService extends Observable {
     private static ShopService ourInstance = new ShopService();
-    public static final String MODE = Main.DEBUG?"sandbox":"buy";//sandbox or buy
+    public static final String MODE = Main.DEBUG ? "sandbox" : "buy";//sandbox or buy
 
     public static ShopService getInstance() {
         return ourInstance;
@@ -29,30 +29,30 @@ public class ShopService extends Observable {
         @Override
         public void updatedTransactions(SKPaymentQueue queue, ArrayList<SKPaymentTransaction> transactions) {
             for (final SKPaymentTransaction transaction : transactions) {
-                SKPaymentTransaction originalTransaction = transaction;
-                while (originalTransaction.getOriginalTransaction() != null) {
-                    originalTransaction = originalTransaction.getOriginalTransaction();
+                if(transaction.getTransactionState()!=SKPaymentTransactionState.Purchasing){
+                    queue.finishTransaction(transaction);
                 }
+                final InAppProduct inAppProduct = getProduct(transaction);
 
-                if (originalTransaction.getTransactionIdentifier() != null && originalTransaction.getPayment() != null && originalTransaction.getTransactionReceipt() != null) {
-                    switch (originalTransaction.getTransactionState()) {
-                        case SKPaymentTransactionState.Purchased:
-                        case SKPaymentTransactionState.Restored: {
-                            queue.finishTransaction(transaction);
-                            System.out.println("Successful transaction: " + originalTransaction.getTransactionIdentifier() + " " + originalTransaction.getPayment().getProductIdentifier());
-                            final SKPaymentTransaction finalOriginalTransaction = originalTransaction;
+                if(inAppProduct==null){
+                    System.out.println("Got transaction for unknown product: "+transaction.getPayment().getProductIdentifier());
+                    continue;
+                }
+                switch (transaction.getTransactionState()) {
+                    case SKPaymentTransactionState.Restored:
+                        System.out.println("Restored transaction: " + transaction.getTransactionIdentifier() + " " + transaction.getPayment().getProductIdentifier() + " " + transaction.getTransactionReceipt());
+                        updatedTransactions(queue, new ArrayList<SKPaymentTransaction>(Arrays.asList(transaction.getOriginalTransaction())));
+                        //break; //fall through, sometimes the receipt is inside the restored transaction, so try that too
+                    case SKPaymentTransactionState.Purchased: {
+                        System.out.println("Purchased transaction: " + transaction.getTransactionIdentifier() + " " + transaction.getPayment().getProductIdentifier() + " " + transaction.getTransactionReceipt());
+                        if (transaction.getTransactionReceipt() != null) {
+                            final SKPaymentTransaction finalOriginalTransaction = transaction;
                             Runnable runnable = new Runnable() {
                                 public void run() {
                                     try {
-                                        for (Product product : products) {
-                                            if (product instanceof InAppProduct) {
-                                                InAppProduct inAppProduct = (InAppProduct) product;
-                                                if (inAppProduct.appleProductId.equals(transaction.getPayment().getProductIdentifier())) {
                                                     download(inAppProduct, finalOriginalTransaction);
-                                                    break;
-                                                }
-                                            }
-                                        }
+
+
                                     } catch (IOException e) {
                                         UIAlertView alertView = new UIAlertView("Fehler", e.getMessage(), new UIAlertViewDelegate() {
                                             @Override
@@ -60,22 +60,52 @@ public class ShopService extends Observable {
                                                 //getNavigationController().popViewControllerAnimated(true);
                                             }
                                         }, "OK");
-
+                                        inAppProduct.state= Product.State.AVAILABLE;
                                         alertView.show();
                                     }
                                 }
                             };
                             new Thread(runnable).start();
                         }
-                        case SKPaymentTransactionState.Failed: {
-                            System.out.println("Failed transaction: " + originalTransaction.getTransactionIdentifier() + " " + originalTransaction.getPayment().getProductIdentifier());
-                            queue.finishTransaction(transaction);
+                        break;
+                    }
+                    case SKPaymentTransactionState.Failed: {
+                        System.out.println("Failed transaction: " + transaction.getTransactionIdentifier() + " " + transaction.getPayment().getProductIdentifier());
+                        if (transaction.getError() != null){
+                            System.out.println("Error: " + transaction.getError().description());
+                            UIAlertView alertView = new UIAlertView("Fehler", transaction.getError().description(), new UIAlertViewDelegate() {
+                                @Override
+                                public void clickedButtonAtIndex(UIAlertView alertView, int buttonIndex) {
+                                    //getNavigationController().popViewControllerAnimated(true);
+                                }
+                            }, "OK");
+
+                            inAppProduct.state= Product.State.AVAILABLE;
+                            alertView.show();
+
                         }
+                        break;
                     }
                 }
+
             }
         }
     };
+
+    private InAppProduct getProduct(SKPaymentTransaction transaction) {
+        InAppProduct inAppProduct=null;
+        for (Product product : products) {
+              if (product instanceof InAppProduct) {
+                  InAppProduct iap = (InAppProduct) product;
+                  if (iap.appleProductId.equals(transaction.getPayment().getProductIdentifier())) {
+                    inAppProduct=iap;
+                      break;
+                  }
+
+              }
+        }
+        return inAppProduct;
+    }
 
     private ShopService() {
         SKPaymentQueue.defaultQueue().addTransactionObserver(skPaymentTransactionObserver);
@@ -85,7 +115,7 @@ public class ShopService extends Observable {
         if (inAppProduct.skProduct != null) {
             SKPayment payment = SKPayment.paymentWithProduct(inAppProduct.skProduct);
             SKPaymentQueue.defaultQueue().addPayment(payment);
-            inAppProduct.state= Product.State.BUYING;
+            inAppProduct.state = Product.State.BUYING;
             doNotify();
         }
     }
@@ -100,7 +130,7 @@ public class ShopService extends Observable {
 
         while ((len = in.read(buffer)) >= 0) {
             out.write(buffer, 0, len);
-            downloaded+=len;
+            downloaded += len;
             if (size != 0) {
                 int percent = downloaded * 100 / size;
                 if (p.percent != percent) {
@@ -130,17 +160,17 @@ public class ShopService extends Observable {
             System.out.println(e.getMessage());
         }
         Main.library.load();
-        product.state= Product.State.AVAILABLE;
+        product.state = Product.State.AVAILABLE;
         doNotify();
     }
 
     void deleteRecursive(File f) throws IOException {
-      if (f.isDirectory()) {
-        for (File c : f.listFiles())
-          deleteRecursive(c);
-      }
-      if (!f.delete())
-        throw new FileNotFoundException("Failed to deleteRecursive file: " + f);
+        if (f.isDirectory()) {
+            for (File c : f.listFiles())
+                deleteRecursive(c);
+        }
+        if (!f.delete())
+            throw new FileNotFoundException("Failed to deleteRecursive file: " + f);
     }
 
     void download(final Product product, SKPaymentTransaction transaction) throws IOException {
@@ -179,7 +209,7 @@ public class ShopService extends Observable {
                 System.out.println("Using transaction receipt for download");
                 connection.setRequestMethod("POST");
                 PrintStream ps = new PrintStream(connection.getOutputStream());
-                ps.print("mode="+ MODE);
+                ps.print("mode=" + MODE);
                 final String receipt = Base64.encode(transaction.getTransactionReceipt().getBytes());
                 ps.print("&receipt=" + receipt);
                 ps.flush();
@@ -271,17 +301,17 @@ public class ShopService extends Observable {
                     FreeProduct fp = new FreeProduct();
                     fillInfo(product, fp);
                     fp.downloadURL = new URL("http://kessel.t-srv.de/api/file/" + fp.id);
-                    if (Main.DEBUG||fp.active)
+                    if (Main.DEBUG || fp.active)
                         ret.add(fp);
                 } else if ("InAppProduct".equals(product.getString("type"))) {
                     final InAppProduct iap = new InAppProduct();
                     fillInfo(product, iap);
                     iap.appleProductId = product.getString("appleProductId");
                     iap.downloadURL = new URL("http://kessel.t-srv.de/api/file/" + iap.id);
-                    if(iap.state!= Product.State.INSTALLED){
-                        iap.state= Product.State.INFO;
+                    if (iap.state != Product.State.INSTALLED) {
+                        iap.state = Product.State.INFO;
                     }
-                    if (Main.DEBUG||iap.active)
+                    if (Main.DEBUG || iap.active)
                         ret.add(iap);
                 }
             }
@@ -333,8 +363,8 @@ public class ShopService extends Observable {
                                             InAppProduct iap = (InAppProduct) p;
                                             if (iap.appleProductId.equals(skp.getProductIdentifier())) {
                                                 iap.skProduct = skp;
-                                                if(iap.state== Product.State.INFO)
-                                                    iap.state= Product.State.AVAILABLE;
+                                                if (iap.state == Product.State.INFO)
+                                                    iap.state = Product.State.AVAILABLE;
                                             }
                                         }
                                     }

@@ -386,7 +386,7 @@ void my_kinderlieder_RootViewController___INIT____org_xmlvm_iphone_UIWindow_java
     ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.mainView_ = _r0.o;
     XMLVM_SOURCE_POSITION("RootViewController.java", 24)
     // "Kinderlieder"
-    _r0.o = xmlvm_create_java_string_from_pool(862);
+    _r0.o = xmlvm_create_java_string_from_pool(865);
     XMLVM_CHECK_NPE(5)
     org_xmlvm_iphone_UIViewController_setTitle___java_lang_String(_r5.o, _r0.o);
     XMLVM_SOURCE_POSITION("RootViewController.java", 25)
@@ -412,7 +412,7 @@ void my_kinderlieder_RootViewController___INIT____org_xmlvm_iphone_UIWindow_java
     XMLVM_SOURCE_POSITION("RootViewController.java", 42)
     _r0.o = __NEW_org_xmlvm_iphone_UIBarButtonItem();
     // "arrow_down_24.png"
-    _r1.o = xmlvm_create_java_string_from_pool(863);
+    _r1.o = xmlvm_create_java_string_from_pool(866);
     _r1.o = org_xmlvm_iphone_UIImage_imageNamed___java_lang_String(_r1.o);
     _r2.o = ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.shopAction_;
     XMLVM_CHECK_NPE(0)
@@ -421,7 +421,7 @@ void my_kinderlieder_RootViewController___INIT____org_xmlvm_iphone_UIWindow_java
     XMLVM_SOURCE_POSITION("RootViewController.java", 43)
     _r0.o = ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.shopButton_;
     // "Download"
-    _r1.o = xmlvm_create_java_string_from_pool(864);
+    _r1.o = xmlvm_create_java_string_from_pool(867);
     //org_xmlvm_iphone_UIBarButtonItem_setTitle___java_lang_String[6]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((org_xmlvm_iphone_UIBarButtonItem*) _r0.o)->tib->vtable[6])(_r0.o, _r1.o);

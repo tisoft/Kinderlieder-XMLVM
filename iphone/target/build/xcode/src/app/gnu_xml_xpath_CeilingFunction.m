@@ -412,7 +412,7 @@ JAVA_OBJECT gnu_xml_xpath_CeilingFunction_toString__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("CeilingFunction.java", 86)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "ceiling("
-    _r1.o = xmlvm_create_java_string_from_pool(2387);
+    _r1.o = xmlvm_create_java_string_from_pool(2390);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     _r1.o = ((gnu_xml_xpath_CeilingFunction*) _r2.o)->fields.gnu_xml_xpath_CeilingFunction.arg_;

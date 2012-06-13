@@ -313,7 +313,7 @@ JAVA_OBJECT java_util_regex_SOLSet_getName__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SOLSet.java", 45)
     // "<SOL>"
-    _r0.o = xmlvm_create_java_string_from_pool(2569);
+    _r0.o = xmlvm_create_java_string_from_pool(2572);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

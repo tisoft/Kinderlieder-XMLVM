@@ -711,7 +711,7 @@ JAVA_OBJECT java_util_regex_DecomposedCharSet_getName__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 209)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "decomposed char:"
-    _r1.o = xmlvm_create_java_string_from_pool(989);
+    _r1.o = xmlvm_create_java_string_from_pool(992);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_CHECK_NPE(2)

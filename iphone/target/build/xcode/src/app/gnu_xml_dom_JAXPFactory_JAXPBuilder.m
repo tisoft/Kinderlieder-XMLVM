@@ -417,7 +417,7 @@ void gnu_xml_dom_JAXPFactory_JAXPBuilder___INIT____org_xml_sax_XMLReader_gnu_xml
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_DomImpl___INIT___(_r0.o);
     ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.impl_ = _r0.o;
-    XMLVM_TRY_BEGIN(w25887aaab3b1c10)
+    XMLVM_TRY_BEGIN(w25913aaab3b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 181)
     _r0.o = __NEW_gnu_xml_dom_Consumer();
@@ -426,10 +426,10 @@ void gnu_xml_dom_JAXPFactory_JAXPBuilder___INIT____org_xml_sax_XMLReader_gnu_xml
     ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.consumer_ = _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25887aaab3b1c10)
-        XMLVM_CATCH_SPECIFIC(w25887aaab3b1c10,org_xml_sax_SAXException,142)
-    XMLVM_CATCH_END(w25887aaab3b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25887aaab3b1c10)
+    XMLVM_CATCH_BEGIN(w25913aaab3b1c10)
+        XMLVM_CATCH_SPECIFIC(w25913aaab3b1c10,org_xml_sax_SAXException,142)
+    XMLVM_CATCH_END(w25913aaab3b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25913aaab3b1c10)
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 189)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.consumer_;
     XMLVM_CHECK_NPE(5)
@@ -472,12 +472,12 @@ void gnu_xml_dom_JAXPFactory_JAXPBuilder___INIT____org_xml_sax_XMLReader_gnu_xml
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((gnu_xml_dom_Consumer*) _r1.o)->tib->vtable[7])(_r1.o);
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setDTDHandler___org_xml_sax_DTDHandler])(_r0.o, _r1.o);
-    XMLVM_TRY_BEGIN(w25887aaab3b1c39)
+    XMLVM_TRY_BEGIN(w25913aaab3b1c39)
     // Begin try
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 205)
     XMLVM_CHECK_NPE(5)
     _r0.i = javax_xml_parsers_DocumentBuilderFactory_isValidating__(_r5.o);
-    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w25887aaab3b1c39->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25887aaab3b1c39, sizeof(XMLVM_JMP_BUF)); goto label96; };
+    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w25913aaab3b1c39->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25913aaab3b1c39, sizeof(XMLVM_JMP_BUF)); goto label96; };
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 207)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.producer_;
     // "http://xml.org/sax/features/validation"
@@ -491,12 +491,12 @@ void gnu_xml_dom_JAXPFactory_JAXPBuilder___INIT____org_xml_sax_XMLReader_gnu_xml
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setErrorHandler___org_xml_sax_ErrorHandler])(_r0.o, _r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25887aaab3b1c39)
-        XMLVM_CATCH_SPECIFIC(w25887aaab3b1c39,org_xml_sax_SAXException,153)
-    XMLVM_CATCH_END(w25887aaab3b1c39)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25887aaab3b1c39)
+    XMLVM_CATCH_BEGIN(w25913aaab3b1c39)
+        XMLVM_CATCH_SPECIFIC(w25913aaab3b1c39,org_xml_sax_SAXException,153)
+    XMLVM_CATCH_END(w25913aaab3b1c39)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25913aaab3b1c39)
     label96:;
-    XMLVM_TRY_BEGIN(w25887aaab3b1c41)
+    XMLVM_TRY_BEGIN(w25913aaab3b1c41)
     // Begin try
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 212)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.producer_;
@@ -538,17 +538,17 @@ void gnu_xml_dom_JAXPFactory_JAXPBuilder___INIT____org_xml_sax_XMLReader_gnu_xml
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setProperty___java_lang_String_java_lang_Object])(_r1.o, _r0.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25887aaab3b1c41)
-        XMLVM_CATCH_SPECIFIC(w25887aaab3b1c41,org_xml_sax_SAXException,153)
-    XMLVM_CATCH_END(w25887aaab3b1c41)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25887aaab3b1c41)
+    XMLVM_CATCH_BEGIN(w25913aaab3b1c41)
+        XMLVM_CATCH_SPECIFIC(w25913aaab3b1c41,org_xml_sax_SAXException,153)
+    XMLVM_CATCH_END(w25913aaab3b1c41)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25913aaab3b1c41)
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 228)
     XMLVM_EXIT_METHOD()
     return;
     label142:;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 183)
-    java_lang_Thread* curThread_w25887aaab3b1c46 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25887aaab3b1c46->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w25913aaab3b1c46 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25913aaab3b1c46->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 185)
     _r1.o = __NEW_javax_xml_parsers_ParserConfigurationException();
     //org_xml_sax_SAXException_getMessage__[7]
@@ -559,8 +559,8 @@ void gnu_xml_dom_JAXPFactory_JAXPBuilder___INIT____org_xml_sax_XMLReader_gnu_xml
     XMLVM_THROW_CUSTOM(_r1.o)
     label153:;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 224)
-    java_lang_Thread* curThread_w25887aaab3b1c54 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25887aaab3b1c54->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w25913aaab3b1c54 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25913aaab3b1c54->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 226)
     _r1.o = __NEW_javax_xml_parsers_ParserConfigurationException();
     //org_xml_sax_SAXException_getMessage__[7]
@@ -609,7 +609,7 @@ JAVA_BOOLEAN gnu_xml_dom_JAXPFactory_JAXPBuilder_isNamespaceAware__(JAVA_OBJECT 
     XMLVMElem _r1;
     XMLVMElem _r2;
     _r2.o = me;
-    XMLVM_TRY_BEGIN(w25887aaab5b1b2)
+    XMLVM_TRY_BEGIN(w25913aaab5b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 244)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r2.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.producer_;
@@ -619,16 +619,16 @@ JAVA_BOOLEAN gnu_xml_dom_JAXPFactory_JAXPBuilder_isNamespaceAware__(JAVA_OBJECT 
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_getFeature___java_lang_String])(_r0.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25887aaab5b1b2)
-        XMLVM_CATCH_SPECIFIC(w25887aaab5b1b2,org_xml_sax_SAXException,9)
-    XMLVM_CATCH_END(w25887aaab5b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25887aaab5b1b2)
+    XMLVM_CATCH_BEGIN(w25913aaab5b1b2)
+        XMLVM_CATCH_SPECIFIC(w25913aaab5b1b2,org_xml_sax_SAXException,9)
+    XMLVM_CATCH_END(w25913aaab5b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25913aaab5b1b2)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label9:;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 246)
-    java_lang_Thread* curThread_w25887aaab5b1b6 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25887aaab5b1b6->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w25913aaab5b1b6 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25913aaab5b1b6->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 249)
     _r1.o = __NEW_java_lang_RuntimeException();
     //org_xml_sax_SAXException_getMessage__[7]
@@ -648,7 +648,7 @@ JAVA_BOOLEAN gnu_xml_dom_JAXPFactory_JAXPBuilder_isValidating__(JAVA_OBJECT me)
     XMLVMElem _r1;
     XMLVMElem _r2;
     _r2.o = me;
-    XMLVM_TRY_BEGIN(w25887aaab6b1b2)
+    XMLVM_TRY_BEGIN(w25913aaab6b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 257)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r2.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.producer_;
@@ -658,16 +658,16 @@ JAVA_BOOLEAN gnu_xml_dom_JAXPFactory_JAXPBuilder_isValidating__(JAVA_OBJECT me)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_getFeature___java_lang_String])(_r0.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25887aaab6b1b2)
-        XMLVM_CATCH_SPECIFIC(w25887aaab6b1b2,org_xml_sax_SAXException,9)
-    XMLVM_CATCH_END(w25887aaab6b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25887aaab6b1b2)
+    XMLVM_CATCH_BEGIN(w25913aaab6b1b2)
+        XMLVM_CATCH_SPECIFIC(w25913aaab6b1b2,org_xml_sax_SAXException,9)
+    XMLVM_CATCH_END(w25913aaab6b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25913aaab6b1b2)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label9:;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 259)
-    java_lang_Thread* curThread_w25887aaab6b1b6 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25887aaab6b1b6->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w25913aaab6b1b6 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25913aaab6b1b6->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 262)
     _r1.o = __NEW_java_lang_RuntimeException();
     //org_xml_sax_SAXException_getMessage__[7]

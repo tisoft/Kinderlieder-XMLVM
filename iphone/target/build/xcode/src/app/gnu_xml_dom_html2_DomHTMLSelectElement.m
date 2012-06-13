@@ -1053,7 +1053,7 @@ JAVA_INT gnu_xml_dom_html2_DomHTMLSelectElement_getLength__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLSelectElement.java", 111)
     // "length"
-    _r0.o = xmlvm_create_java_string_from_pool(986);
+    _r0.o = xmlvm_create_java_string_from_pool(989);
     XMLVM_CHECK_NPE(1)
     _r0.i = gnu_xml_dom_html2_DomHTMLElement_getIntHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1072,7 +1072,7 @@ void gnu_xml_dom_html2_DomHTMLSelectElement_setLength___int(JAVA_OBJECT me, JAVA
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DomHTMLSelectElement.java", 116)
     // "length"
-    _r0.o = xmlvm_create_java_string_from_pool(986);
+    _r0.o = xmlvm_create_java_string_from_pool(989);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setIntHTMLAttribute___java_lang_String_int(_r1.o, _r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("DomHTMLSelectElement.java", 117)
@@ -1175,7 +1175,7 @@ JAVA_BOOLEAN gnu_xml_dom_html2_DomHTMLSelectElement_getMultiple__(JAVA_OBJECT me
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLSelectElement.java", 145)
     // "multiple"
-    _r0.o = xmlvm_create_java_string_from_pool(987);
+    _r0.o = xmlvm_create_java_string_from_pool(990);
     XMLVM_CHECK_NPE(1)
     _r0.i = gnu_xml_dom_html2_DomHTMLElement_getBooleanHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1194,7 +1194,7 @@ void gnu_xml_dom_html2_DomHTMLSelectElement_setMultiple___boolean(JAVA_OBJECT me
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DomHTMLSelectElement.java", 150)
     // "multiple"
-    _r0.o = xmlvm_create_java_string_from_pool(987);
+    _r0.o = xmlvm_create_java_string_from_pool(990);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setBooleanHTMLAttribute___java_lang_String_boolean(_r1.o, _r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("DomHTMLSelectElement.java", 151)
@@ -1249,7 +1249,7 @@ JAVA_INT gnu_xml_dom_html2_DomHTMLSelectElement_getSize__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLSelectElement.java", 165)
     // "size"
-    _r0.o = xmlvm_create_java_string_from_pool(988);
+    _r0.o = xmlvm_create_java_string_from_pool(991);
     XMLVM_CHECK_NPE(1)
     _r0.i = gnu_xml_dom_html2_DomHTMLElement_getIntHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1268,7 +1268,7 @@ void gnu_xml_dom_html2_DomHTMLSelectElement_setSize___int(JAVA_OBJECT me, JAVA_I
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DomHTMLSelectElement.java", 170)
     // "size"
-    _r0.o = xmlvm_create_java_string_from_pool(988);
+    _r0.o = xmlvm_create_java_string_from_pool(991);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setIntHTMLAttribute___java_lang_String_int(_r1.o, _r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("DomHTMLSelectElement.java", 171)

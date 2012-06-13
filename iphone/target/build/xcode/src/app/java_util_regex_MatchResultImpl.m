@@ -1473,7 +1473,7 @@ void java_util_regex_MatchResultImpl_checkGroup___int(JAVA_OBJECT me, JAVA_INT n
     XMLVM_SOURCE_POSITION("MatchResultImpl.java", 179)
     _r0.o = __NEW_java_lang_IllegalStateException();
     // "regex.05"
-    _r1.o = xmlvm_create_java_string_from_pool(1079);
+    _r1.o = xmlvm_create_java_string_from_pool(1082);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalStateException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -1488,7 +1488,7 @@ void java_util_regex_MatchResultImpl_checkGroup___int(JAVA_OBJECT me, JAVA_INT n
     _r0.o = __NEW_java_lang_IndexOutOfBoundsException();
     XMLVM_SOURCE_POSITION("MatchResultImpl.java", 184)
     // "regex.06"
-    _r1.o = xmlvm_create_java_string_from_pool(1080);
+    _r1.o = xmlvm_create_java_string_from_pool(1083);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String_int(_r1.o, _r3.i);
     XMLVM_CHECK_NPE(0)
     java_lang_IndexOutOfBoundsException___INIT____java_lang_String(_r0.o, _r1.o);

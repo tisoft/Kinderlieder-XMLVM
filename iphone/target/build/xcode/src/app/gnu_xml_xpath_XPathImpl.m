@@ -622,7 +622,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathImpl_compile___java_lang_String(JAVA_OBJECT me, J
     _r0.o = __NEW_gnu_xml_xpath_XPathTokenizer();
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer___INIT____java_lang_String(_r0.o, _r3.o);
-    XMLVM_TRY_BEGIN(w15420aaac12b1b6)
+    XMLVM_TRY_BEGIN(w15449aaac12b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("XPathImpl.java", 118)
     _r1.o = ((gnu_xml_xpath_XPathImpl*) _r2.o)->fields.gnu_xml_xpath_XPathImpl.parser_;
@@ -631,17 +631,17 @@ JAVA_OBJECT gnu_xml_xpath_XPathImpl_compile___java_lang_String(JAVA_OBJECT me, J
     _r2.o = _r2.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w15420aaac12b1b6)
-        XMLVM_CATCH_SPECIFIC(w15420aaac12b1b6,java_io_IOException,14)
-        XMLVM_CATCH_SPECIFIC(w15420aaac12b1b6,gnu_xml_xpath_XPathParser_yyException,21)
-    XMLVM_CATCH_END(w15420aaac12b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w15420aaac12b1b6)
+    XMLVM_CATCH_BEGIN(w15449aaac12b1b6)
+        XMLVM_CATCH_SPECIFIC(w15449aaac12b1b6,java_io_IOException,14)
+        XMLVM_CATCH_SPECIFIC(w15449aaac12b1b6,gnu_xml_xpath_XPathParser_yyException,21)
+    XMLVM_CATCH_END(w15449aaac12b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w15449aaac12b1b6)
     XMLVM_EXIT_METHOD()
     return _r2.o;
     label14:;
     XMLVM_SOURCE_POSITION("XPathImpl.java", 120)
-    java_lang_Thread* curThread_w15420aaac12b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w15420aaac12b1c10->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w15449aaac12b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w15449aaac12b1c10->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("XPathImpl.java", 122)
     _r1.o = __NEW_javax_xml_xpath_XPathExpressionException();
     XMLVM_CHECK_NPE(1)
@@ -649,8 +649,8 @@ JAVA_OBJECT gnu_xml_xpath_XPathImpl_compile___java_lang_String(JAVA_OBJECT me, J
     XMLVM_THROW_CUSTOM(_r1.o)
     label21:;
     XMLVM_SOURCE_POSITION("XPathImpl.java", 126)
-    java_lang_Thread* curThread_w15420aaac12b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w15420aaac12b1c17->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w15449aaac12b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w15449aaac12b1c17->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_javax_xml_xpath_XPathExpressionException();
     XMLVM_CHECK_NPE(0)
     javax_xml_xpath_XPathExpressionException___INIT____java_lang_String(_r0.o, _r3.o);

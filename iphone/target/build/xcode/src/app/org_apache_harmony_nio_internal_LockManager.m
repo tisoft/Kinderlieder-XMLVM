@@ -277,7 +277,7 @@ void org_apache_harmony_nio_internal_LockManager_addLock___java_nio_channels_Fil
     _r9.o = n1;
     XMLVM_SOURCE_POSITION("LockManager.java", 58)
     java_lang_Object_acquireLockRecursive__(_r8.o);
-    XMLVM_TRY_BEGIN(w25824aaab3b1b5)
+    XMLVM_TRY_BEGIN(w25850aaab3b1b5)
     // Begin try
     XMLVM_CHECK_NPE(9)
     _r0.l = java_nio_channels_FileLock_position__(_r9.o);
@@ -290,24 +290,24 @@ void org_apache_harmony_nio_internal_LockManager_addLock___java_nio_channels_Fil
     _r3.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedSet_iterator__])(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25824aaab3b1b5)
-        XMLVM_CATCH_SPECIFIC(w25824aaab3b1b5,java_lang_Object,64)
-    XMLVM_CATCH_END(w25824aaab3b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25824aaab3b1b5)
+    XMLVM_CATCH_BEGIN(w25850aaab3b1b5)
+        XMLVM_CATCH_SPECIFIC(w25850aaab3b1b5,java_lang_Object,64)
+    XMLVM_CATCH_END(w25850aaab3b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25850aaab3b1b5)
     label17:;
-    XMLVM_TRY_BEGIN(w25824aaab3b1b7)
+    XMLVM_TRY_BEGIN(w25850aaab3b1b7)
     // Begin try
     XMLVM_CHECK_NPE(3)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_hasNext__])(_r3.o);
-    if (_r0.i != 0) { XMLVM_MEMCPY(curThread_w25824aaab3b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25824aaab3b1b7, sizeof(XMLVM_JMP_BUF)); goto label30; };
+    if (_r0.i != 0) { XMLVM_MEMCPY(curThread_w25850aaab3b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25850aaab3b1b7, sizeof(XMLVM_JMP_BUF)); goto label30; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25824aaab3b1b7)
-        XMLVM_CATCH_SPECIFIC(w25824aaab3b1b7,java_lang_Object,64)
-    XMLVM_CATCH_END(w25824aaab3b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25824aaab3b1b7)
+    XMLVM_CATCH_BEGIN(w25850aaab3b1b7)
+        XMLVM_CATCH_SPECIFIC(w25850aaab3b1b7,java_lang_Object,64)
+    XMLVM_CATCH_END(w25850aaab3b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25850aaab3b1b7)
     label23:;
-    XMLVM_TRY_BEGIN(w25824aaab3b1b9)
+    XMLVM_TRY_BEGIN(w25850aaab3b1b9)
     // Begin try
     XMLVM_SOURCE_POSITION("LockManager.java", 70)
     _r0.o = ((org_apache_harmony_nio_internal_LockManager*) _r8.o)->fields.org_apache_harmony_nio_internal_LockManager.locks_;
@@ -315,16 +315,16 @@ void org_apache_harmony_nio_internal_LockManager_addLock___java_nio_channels_Fil
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedSet_add___java_lang_Object])(_r0.o, _r9.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25824aaab3b1b9)
-        XMLVM_CATCH_SPECIFIC(w25824aaab3b1b9,java_lang_Object,64)
-    XMLVM_CATCH_END(w25824aaab3b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25824aaab3b1b9)
+    XMLVM_CATCH_BEGIN(w25850aaab3b1b9)
+        XMLVM_CATCH_SPECIFIC(w25850aaab3b1b9,java_lang_Object,64)
+    XMLVM_CATCH_END(w25850aaab3b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25850aaab3b1b9)
     XMLVM_SOURCE_POSITION("LockManager.java", 71)
     java_lang_Object_releaseLockRecursive__(_r8.o);
     XMLVM_EXIT_METHOD()
     return;
     label30:;
-    XMLVM_TRY_BEGIN(w25824aaab3b1c14)
+    XMLVM_TRY_BEGIN(w25850aaab3b1c14)
     // Begin try
     XMLVM_SOURCE_POSITION("LockManager.java", 60)
     XMLVM_CHECK_NPE(3)
@@ -334,7 +334,7 @@ void org_apache_harmony_nio_internal_LockManager_addLock___java_nio_channels_Fil
     XMLVM_CHECK_NPE(0)
     _r4.l = java_nio_channels_FileLock_position__(_r0.o);
     _r4.i = _r4.l > _r1.l ? 1 : (_r4.l == _r1.l ? 0 : -1);
-    if (_r4.i > 0) { XMLVM_MEMCPY(curThread_w25824aaab3b1c14->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25824aaab3b1c14, sizeof(XMLVM_JMP_BUF)); goto label23; };
+    if (_r4.i > 0) { XMLVM_MEMCPY(curThread_w25850aaab3b1c14->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25850aaab3b1c14, sizeof(XMLVM_JMP_BUF)); goto label23; };
     XMLVM_SOURCE_POSITION("LockManager.java", 66)
     XMLVM_CHECK_NPE(9)
     _r4.l = java_nio_channels_FileLock_position__(_r9.o);
@@ -342,7 +342,7 @@ void org_apache_harmony_nio_internal_LockManager_addLock___java_nio_channels_Fil
     _r6.l = java_nio_channels_FileLock_size__(_r9.o);
     XMLVM_CHECK_NPE(0)
     _r0.i = java_nio_channels_FileLock_overlaps___long_long(_r0.o, _r4.l, _r6.l);
-    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w25824aaab3b1c14->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25824aaab3b1c14, sizeof(XMLVM_JMP_BUF)); goto label17; };
+    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w25850aaab3b1c14->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25850aaab3b1c14, sizeof(XMLVM_JMP_BUF)); goto label17; };
     XMLVM_SOURCE_POSITION("LockManager.java", 67)
 
     
@@ -355,13 +355,13 @@ void org_apache_harmony_nio_internal_LockManager_addLock___java_nio_channels_Fil
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25824aaab3b1c14)
-        XMLVM_CATCH_SPECIFIC(w25824aaab3b1c14,java_lang_Object,64)
-    XMLVM_CATCH_END(w25824aaab3b1c14)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25824aaab3b1c14)
+    XMLVM_CATCH_BEGIN(w25850aaab3b1c14)
+        XMLVM_CATCH_SPECIFIC(w25850aaab3b1c14,java_lang_Object,64)
+    XMLVM_CATCH_END(w25850aaab3b1c14)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25850aaab3b1c14)
     label64:;
-    java_lang_Thread* curThread_w25824aaab3b1c16 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25824aaab3b1c16->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w25850aaab3b1c16 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25850aaab3b1c16->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r8.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER
@@ -378,24 +378,24 @@ void org_apache_harmony_nio_internal_LockManager_removeLock___java_nio_channels_
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("LockManager.java", 78)
     java_lang_Object_acquireLockRecursive__(_r1.o);
-    XMLVM_TRY_BEGIN(w25824aaab4b1b5)
+    XMLVM_TRY_BEGIN(w25850aaab4b1b5)
     // Begin try
     _r0.o = ((org_apache_harmony_nio_internal_LockManager*) _r1.o)->fields.org_apache_harmony_nio_internal_LockManager.locks_;
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedSet_remove___java_lang_Object])(_r0.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25824aaab4b1b5)
-        XMLVM_CATCH_SPECIFIC(w25824aaab4b1b5,java_lang_Object,8)
-    XMLVM_CATCH_END(w25824aaab4b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25824aaab4b1b5)
+    XMLVM_CATCH_BEGIN(w25850aaab4b1b5)
+        XMLVM_CATCH_SPECIFIC(w25850aaab4b1b5,java_lang_Object,8)
+    XMLVM_CATCH_END(w25850aaab4b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25850aaab4b1b5)
     XMLVM_SOURCE_POSITION("LockManager.java", 79)
     java_lang_Object_releaseLockRecursive__(_r1.o);
     XMLVM_EXIT_METHOD()
     return;
     label8:;
-    java_lang_Thread* curThread_w25824aaab4b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25824aaab4b1c10->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w25850aaab4b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25850aaab4b1c10->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER

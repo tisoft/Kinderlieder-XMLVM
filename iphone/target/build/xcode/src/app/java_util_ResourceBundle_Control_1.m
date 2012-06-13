@@ -263,7 +263,7 @@ JAVA_OBJECT java_util_ResourceBundle_Control_1_run__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     _r2.o = JAVA_NULL;
-    XMLVM_TRY_BEGIN(w43483aaab4b1b3)
+    XMLVM_TRY_BEGIN(w43518aaab4b1b3)
     // Begin try
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 965)
     _r0.o = ((java_util_ResourceBundle_Control_1*) _r3.o)->fields.java_util_ResourceBundle_Control_1.val_clsloader_;
@@ -272,24 +272,24 @@ JAVA_OBJECT java_util_ResourceBundle_Control_1_run__(JAVA_OBJECT me)
     _r0.o = java_lang_ClassLoader_loadClass___java_lang_String(_r0.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w43483aaab4b1b3)
-        XMLVM_CATCH_SPECIFIC(w43483aaab4b1b3,java_lang_Exception,10)
-        XMLVM_CATCH_SPECIFIC(w43483aaab4b1b3,java_lang_NoClassDefFoundError,13)
-    XMLVM_CATCH_END(w43483aaab4b1b3)
-    XMLVM_RESTORE_EXCEPTION_ENV(w43483aaab4b1b3)
+    XMLVM_CATCH_BEGIN(w43518aaab4b1b3)
+        XMLVM_CATCH_SPECIFIC(w43518aaab4b1b3,java_lang_Exception,10)
+        XMLVM_CATCH_SPECIFIC(w43518aaab4b1b3,java_lang_NoClassDefFoundError,13)
+    XMLVM_CATCH_END(w43518aaab4b1b3)
+    XMLVM_RESTORE_EXCEPTION_ENV(w43518aaab4b1b3)
     label9:;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 969)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label10:;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 967)
-    java_lang_Thread* curThread_w43483aaab4b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w43483aaab4b1b9->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w43518aaab4b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w43518aaab4b1b9->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r2;
     goto label9;
     label13:;
-    java_lang_Thread* curThread_w43483aaab4b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w43483aaab4b1c13->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w43518aaab4b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w43518aaab4b1c13->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r2;
     goto label9;
     //XMLVM_END_WRAPPER

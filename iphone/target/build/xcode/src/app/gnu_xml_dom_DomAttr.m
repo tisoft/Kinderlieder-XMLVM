@@ -1232,14 +1232,14 @@ void gnu_xml_dom_DomAttr_mutating___java_lang_String_java_lang_String_short(JAVA
     label11:;
     XMLVM_SOURCE_POSITION("DomAttr.java", 360)
     // "MutationEvents"
-    _r0.o = xmlvm_create_java_string_from_pool(1957);
+    _r0.o = xmlvm_create_java_string_from_pool(1960);
     //gnu_xml_dom_DomAttr_createEvent___java_lang_String[11]
     XMLVM_CHECK_NPE(9)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_dom_DomAttr*) _r9.o)->tib->vtable[11])(_r9.o, _r0.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("DomAttr.java", 361)
     // "DOMAttrModified"
-    _r1.o = xmlvm_create_java_string_from_pool(3234);
+    _r1.o = xmlvm_create_java_string_from_pool(3237);
     XMLVM_SOURCE_POSITION("DomAttr.java", 362)
     _r2.i = 1;
     _r3.i = 0;

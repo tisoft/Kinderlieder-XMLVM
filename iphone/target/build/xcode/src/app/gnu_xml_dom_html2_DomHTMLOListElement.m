@@ -620,7 +620,7 @@ JAVA_INT gnu_xml_dom_html2_DomHTMLOListElement_getStart__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLOListElement.java", 70)
     // "start"
-    _r0.o = xmlvm_create_java_string_from_pool(2494);
+    _r0.o = xmlvm_create_java_string_from_pool(2497);
     XMLVM_CHECK_NPE(1)
     _r0.i = gnu_xml_dom_html2_DomHTMLElement_getIntHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -639,7 +639,7 @@ void gnu_xml_dom_html2_DomHTMLOListElement_setStart___int(JAVA_OBJECT me, JAVA_I
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DomHTMLOListElement.java", 75)
     // "start"
-    _r0.o = xmlvm_create_java_string_from_pool(2494);
+    _r0.o = xmlvm_create_java_string_from_pool(2497);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setIntHTMLAttribute___java_lang_String_int(_r1.o, _r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("DomHTMLOListElement.java", 76)

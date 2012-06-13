@@ -433,7 +433,7 @@ JAVA_OBJECT org_apache_harmony_luni_util_FloatingPointParser_initialParse___java
     XMLVM_SOURCE_POSITION("FloatingPointParser.java", 121)
     _r2.i = _r2.i + 1;
     label102:;
-    XMLVM_TRY_BEGIN(w13861aaab3b1c74)
+    XMLVM_TRY_BEGIN(w13890aaab3b1c74)
     // Begin try
     XMLVM_SOURCE_POSITION("FloatingPointParser.java", 124)
     XMLVM_CHECK_NPE(12)
@@ -441,10 +441,10 @@ JAVA_OBJECT org_apache_harmony_luni_util_FloatingPointParser_initialParse___java
     _r2.i = java_lang_Integer_parseInt___java_lang_String(_r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w13861aaab3b1c74)
-        XMLVM_CATCH_SPECIFIC(w13861aaab3b1c74,java_lang_NumberFormatException,121)
-    XMLVM_CATCH_END(w13861aaab3b1c74)
-    XMLVM_RESTORE_EXCEPTION_ENV(w13861aaab3b1c74)
+    XMLVM_CATCH_BEGIN(w13890aaab3b1c74)
+        XMLVM_CATCH_SPECIFIC(w13890aaab3b1c74,java_lang_NumberFormatException,121)
+    XMLVM_CATCH_END(w13890aaab3b1c74)
+    XMLVM_RESTORE_EXCEPTION_ENV(w13890aaab3b1c74)
     _r11 = _r2;
     _r2 = _r1;
     _r1 = _r11;
@@ -458,8 +458,8 @@ JAVA_OBJECT org_apache_harmony_luni_util_FloatingPointParser_initialParse___java
     XMLVM_THROW_CUSTOM(_r0.o)
     label121:;
     XMLVM_SOURCE_POSITION("FloatingPointParser.java", 130)
-    java_lang_Thread* curThread_w13861aaab3b1c87 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w13861aaab3b1c87->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w13890aaab3b1c87 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w13890aaab3b1c87->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_java_lang_NumberFormatException();
     XMLVM_CHECK_NPE(0)
     java_lang_NumberFormatException___INIT____java_lang_String(_r0.o, _r12.o);
@@ -866,7 +866,7 @@ JAVA_DOUBLE org_apache_harmony_luni_util_FloatingPointParser_parseDouble___java_
     XMLVM_CHECK_NPE(0)
     _r2.o = java_lang_String_toLowerCase__(_r0.o);
     // "0x"
-    _r3.o = xmlvm_create_java_string_from_pool(984);
+    _r3.o = xmlvm_create_java_string_from_pool(987);
     XMLVM_CHECK_NPE(2)
     _r2.i = java_lang_String_indexOf___java_lang_String(_r2.o, _r3.o);
     _r3.i = -1;
@@ -942,7 +942,7 @@ JAVA_FLOAT org_apache_harmony_luni_util_FloatingPointParser_parseFloat___java_la
     XMLVM_CHECK_NPE(0)
     _r2.o = java_lang_String_toLowerCase__(_r0.o);
     // "0x"
-    _r3.o = xmlvm_create_java_string_from_pool(984);
+    _r3.o = xmlvm_create_java_string_from_pool(987);
     XMLVM_CHECK_NPE(2)
     _r2.i = java_lang_String_indexOf___java_lang_String(_r2.o, _r3.o);
     _r3.i = -1;

@@ -228,7 +228,7 @@ void __INIT_IMPL_java_net_URIEncoderDecoder()
     __TIB_java_net_URIEncoderDecoder.implementedInterfaces = (__TIB_DEFINITION_TEMPLATE* (*)[1]) XMLVM_MALLOC(sizeof(__TIB_DEFINITION_TEMPLATE*) * 0);
 
     // Initialize interfaces if necessary and assign tib to implementedInterfaces
-    _STATIC_java_net_URIEncoderDecoder_digits = (java_lang_String*) xmlvm_create_java_string_from_pool(1159);
+    _STATIC_java_net_URIEncoderDecoder_digits = (java_lang_String*) xmlvm_create_java_string_from_pool(1162);
     _STATIC_java_net_URIEncoderDecoder_encoding = (java_lang_String*) xmlvm_create_java_string_from_pool(557);
 
     __TIB_java_net_URIEncoderDecoder.declaredFields = &__field_reflection_data[0];
@@ -366,7 +366,7 @@ void java_net_URIEncoderDecoder_validate___java_lang_String_java_lang_String(JAV
     XMLVM_SOURCE_POSITION("URIEncoderDecoder.java", 57)
     _r1.o = __NEW_java_net_URISyntaxException();
     // "luni.7D"
-    _r2.o = xmlvm_create_java_string_from_pool(1160);
+    _r2.o = xmlvm_create_java_string_from_pool(1163);
     _r2.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r2.o);
     XMLVM_CHECK_NPE(1)
     java_net_URISyntaxException___INIT____java_lang_String_java_lang_String_int(_r1.o, _r6.o, _r2.o, _r0.i);
@@ -391,7 +391,7 @@ void java_net_URIEncoderDecoder_validate___java_lang_String_java_lang_String(JAV
     XMLVM_SOURCE_POSITION("URIEncoderDecoder.java", 63)
     _r1.o = __NEW_java_net_URISyntaxException();
     // "luni.7E"
-    _r2.o = xmlvm_create_java_string_from_pool(1161);
+    _r2.o = xmlvm_create_java_string_from_pool(1164);
     XMLVM_SOURCE_POSITION("URIEncoderDecoder.java", 64)
     _r3.i = _r0.i + 3;
     XMLVM_CHECK_NPE(6)
@@ -446,7 +446,7 @@ void java_net_URIEncoderDecoder_validate___java_lang_String_java_lang_String(JAV
     XMLVM_SOURCE_POSITION("URIEncoderDecoder.java", 76)
     _r1.o = __NEW_java_net_URISyntaxException();
     // "luni.7F"
-    _r2.o = xmlvm_create_java_string_from_pool(1162);
+    _r2.o = xmlvm_create_java_string_from_pool(1165);
     _r2.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r2.o);
     XMLVM_CHECK_NPE(1)
     java_net_URISyntaxException___INIT____java_lang_String_java_lang_String_int(_r1.o, _r6.o, _r2.o, _r0.i);
@@ -509,7 +509,7 @@ void java_net_URIEncoderDecoder_validateSimple___java_lang_String_java_lang_Stri
     XMLVM_SOURCE_POSITION("URIEncoderDecoder.java", 88)
     _r1.o = __NEW_java_net_URISyntaxException();
     // "luni.7F"
-    _r2.o = xmlvm_create_java_string_from_pool(1162);
+    _r2.o = xmlvm_create_java_string_from_pool(1165);
     _r2.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r2.o);
     XMLVM_CHECK_NPE(1)
     java_net_URISyntaxException___INIT____java_lang_String_java_lang_String_int(_r1.o, _r3.o, _r2.o, _r0.i);
@@ -539,7 +539,7 @@ JAVA_OBJECT java_net_URIEncoderDecoder_quoteIllegal___java_lang_String_java_lang
     _r8.o = n2;
     _r5.i = 0;
     // "0123456789ABCDEF"
-    _r6.o = xmlvm_create_java_string_from_pool(1159);
+    _r6.o = xmlvm_create_java_string_from_pool(1162);
     XMLVM_SOURCE_POSITION("URIEncoderDecoder.java", 115)
     _r0.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(0)
@@ -628,7 +628,7 @@ JAVA_OBJECT java_net_URIEncoderDecoder_quoteIllegal___java_lang_String_java_lang
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r4.i);
     XMLVM_SOURCE_POSITION("URIEncoderDecoder.java", 129)
     // "0123456789ABCDEF"
-    _r4.o = xmlvm_create_java_string_from_pool(1159);
+    _r4.o = xmlvm_create_java_string_from_pool(1162);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
     _r4.i = ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i];
@@ -642,7 +642,7 @@ JAVA_OBJECT java_net_URIEncoderDecoder_quoteIllegal___java_lang_String_java_lang
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r4.i);
     XMLVM_SOURCE_POSITION("URIEncoderDecoder.java", 130)
     // "0123456789ABCDEF"
-    _r4.o = xmlvm_create_java_string_from_pool(1159);
+    _r4.o = xmlvm_create_java_string_from_pool(1162);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
     _r4.i = ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i];
@@ -674,7 +674,7 @@ JAVA_OBJECT java_net_URIEncoderDecoder_encodeOthers___java_lang_String(JAVA_OBJE
     _r7.o = n1;
     _r5.i = 0;
     // "0123456789ABCDEF"
-    _r6.o = xmlvm_create_java_string_from_pool(1159);
+    _r6.o = xmlvm_create_java_string_from_pool(1162);
     XMLVM_SOURCE_POSITION("URIEncoderDecoder.java", 151)
     _r0.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(0)
@@ -734,7 +734,7 @@ JAVA_OBJECT java_net_URIEncoderDecoder_encodeOthers___java_lang_String(JAVA_OBJE
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r4.i);
     XMLVM_SOURCE_POSITION("URIEncoderDecoder.java", 160)
     // "0123456789ABCDEF"
-    _r4.o = xmlvm_create_java_string_from_pool(1159);
+    _r4.o = xmlvm_create_java_string_from_pool(1162);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
     _r4.i = ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i];
@@ -748,7 +748,7 @@ JAVA_OBJECT java_net_URIEncoderDecoder_encodeOthers___java_lang_String(JAVA_OBJE
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r4.i);
     XMLVM_SOURCE_POSITION("URIEncoderDecoder.java", 161)
     // "0123456789ABCDEF"
-    _r4.o = xmlvm_create_java_string_from_pool(1159);
+    _r4.o = xmlvm_create_java_string_from_pool(1162);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
     _r4.i = ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i];
@@ -824,7 +824,7 @@ JAVA_OBJECT java_net_URIEncoderDecoder_decode___java_lang_String(JAVA_OBJECT n1)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     XMLVM_SOURCE_POSITION("URIEncoderDecoder.java", 195)
     // "luni.80"
-    _r1.o = xmlvm_create_java_string_from_pool(1163);
+    _r1.o = xmlvm_create_java_string_from_pool(1166);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_int(_r1.o, _r2.i);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -850,7 +850,7 @@ JAVA_OBJECT java_net_URIEncoderDecoder_decode___java_lang_String(JAVA_OBJECT n1)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     XMLVM_SOURCE_POSITION("URIEncoderDecoder.java", 201)
     // "luni.81"
-    _r1.o = xmlvm_create_java_string_from_pool(1164);
+    _r1.o = xmlvm_create_java_string_from_pool(1167);
     _r3.i = _r2.i + 3;
     XMLVM_CHECK_NPE(8)
     _r3.o = java_lang_String_substring___int_int(_r8.o, _r2.i, _r3.i);

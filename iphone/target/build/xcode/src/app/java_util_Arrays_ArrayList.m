@@ -517,7 +517,7 @@ JAVA_OBJECT java_util_Arrays_ArrayList_get___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVMElem _r2;
     _r1.o = me;
     _r2.i = n1;
-    XMLVM_TRY_BEGIN(w25075aaab4b1b3)
+    XMLVM_TRY_BEGIN(w25106aaab4b1b3)
     // Begin try
     XMLVM_SOURCE_POSITION("Arrays.java", 70)
     _r0.o = ((java_util_Arrays_ArrayList*) _r1.o)->fields.java_util_Arrays_ArrayList.a_;
@@ -526,16 +526,16 @@ JAVA_OBJECT java_util_Arrays_ArrayList_get___int(JAVA_OBJECT me, JAVA_INT n1)
     _r0.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25075aaab4b1b3)
-        XMLVM_CATCH_SPECIFIC(w25075aaab4b1b3,java_lang_ArrayIndexOutOfBoundsException,5)
-    XMLVM_CATCH_END(w25075aaab4b1b3)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25075aaab4b1b3)
+    XMLVM_CATCH_BEGIN(w25106aaab4b1b3)
+        XMLVM_CATCH_SPECIFIC(w25106aaab4b1b3,java_lang_ArrayIndexOutOfBoundsException,5)
+    XMLVM_CATCH_END(w25106aaab4b1b3)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25106aaab4b1b3)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label5:;
     XMLVM_SOURCE_POSITION("Arrays.java", 72)
-    java_lang_Thread* curThread_w25075aaab4b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25075aaab4b1b7->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w25106aaab4b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25106aaab4b1b7->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_java_lang_IndexOutOfBoundsException();
     XMLVM_CHECK_NPE(0)
     java_lang_IndexOutOfBoundsException___INIT___(_r0.o);
@@ -663,7 +663,7 @@ JAVA_OBJECT java_util_Arrays_ArrayList_set___int_java_lang_Object(JAVA_OBJECT me
     _r2.o = me;
     _r3.i = n1;
     _r4.o = n2;
-    XMLVM_TRY_BEGIN(w25075aaab7b1b4)
+    XMLVM_TRY_BEGIN(w25106aaab7b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("Arrays.java", 115)
     _r0.o = ((java_util_Arrays_ArrayList*) _r2.o)->fields.java_util_Arrays_ArrayList.a_;
@@ -677,26 +677,26 @@ JAVA_OBJECT java_util_Arrays_ArrayList_set___int_java_lang_Object(JAVA_OBJECT me
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i] = _r4.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25075aaab7b1b4)
-        XMLVM_CATCH_SPECIFIC(w25075aaab7b1b4,java_lang_ArrayIndexOutOfBoundsException,9)
-        XMLVM_CATCH_SPECIFIC(w25075aaab7b1b4,java_lang_ArrayStoreException,16)
-    XMLVM_CATCH_END(w25075aaab7b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25075aaab7b1b4)
+    XMLVM_CATCH_BEGIN(w25106aaab7b1b4)
+        XMLVM_CATCH_SPECIFIC(w25106aaab7b1b4,java_lang_ArrayIndexOutOfBoundsException,9)
+        XMLVM_CATCH_SPECIFIC(w25106aaab7b1b4,java_lang_ArrayStoreException,16)
+    XMLVM_CATCH_END(w25106aaab7b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25106aaab7b1b4)
     XMLVM_SOURCE_POSITION("Arrays.java", 117)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label9:;
     XMLVM_SOURCE_POSITION("Arrays.java", 119)
-    java_lang_Thread* curThread_w25075aaab7b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25075aaab7b1b9->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w25106aaab7b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25106aaab7b1b9->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_java_lang_IndexOutOfBoundsException();
     XMLVM_CHECK_NPE(0)
     java_lang_IndexOutOfBoundsException___INIT___(_r0.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label16:;
     XMLVM_SOURCE_POSITION("Arrays.java", 121)
-    java_lang_Thread* curThread_w25075aaab7b1c15 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25075aaab7b1c15->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w25106aaab7b1c15 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25106aaab7b1c15->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_java_lang_ClassCastException();
     XMLVM_CHECK_NPE(0)
     java_lang_ClassCastException___INIT___(_r0.o);

@@ -343,7 +343,7 @@ JAVA_OBJECT java_util_regex_NegativeLookBehind_getName__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("NegativeLookBehind.java", 68)
     // "NegBehindJointSet"
-    _r0.o = xmlvm_create_java_string_from_pool(1373);
+    _r0.o = xmlvm_create_java_string_from_pool(1376);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

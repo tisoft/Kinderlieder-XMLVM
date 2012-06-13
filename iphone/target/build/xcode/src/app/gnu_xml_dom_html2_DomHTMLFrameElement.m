@@ -959,7 +959,7 @@ JAVA_BOOLEAN gnu_xml_dom_html2_DomHTMLFrameElement_getNoResize__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLFrameElement.java", 111)
     // "noresize"
-    _r0.o = xmlvm_create_java_string_from_pool(1700);
+    _r0.o = xmlvm_create_java_string_from_pool(1703);
     XMLVM_CHECK_NPE(1)
     _r0.i = gnu_xml_dom_html2_DomHTMLElement_getBooleanHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -978,7 +978,7 @@ void gnu_xml_dom_html2_DomHTMLFrameElement_setNoResize___boolean(JAVA_OBJECT me,
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DomHTMLFrameElement.java", 116)
     // "noresize"
-    _r0.o = xmlvm_create_java_string_from_pool(1700);
+    _r0.o = xmlvm_create_java_string_from_pool(1703);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setBooleanHTMLAttribute___java_lang_String_boolean(_r1.o, _r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("DomHTMLFrameElement.java", 117)

@@ -385,7 +385,7 @@ JAVA_OBJECT gnu_xml_dom_DomComment_getNodeName__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomComment.java", 77)
     // "#comment"
-    _r0.o = xmlvm_create_java_string_from_pool(2317);
+    _r0.o = xmlvm_create_java_string_from_pool(2320);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

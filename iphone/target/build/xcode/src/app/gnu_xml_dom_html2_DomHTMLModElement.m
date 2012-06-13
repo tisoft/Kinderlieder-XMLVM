@@ -544,7 +544,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLModElement_getCite__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLModElement.java", 60)
     // "cite"
-    _r0.o = xmlvm_create_java_string_from_pool(1075);
+    _r0.o = xmlvm_create_java_string_from_pool(1078);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -563,7 +563,7 @@ void gnu_xml_dom_html2_DomHTMLModElement_setCite___java_lang_String(JAVA_OBJECT 
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLModElement.java", 65)
     // "cite"
-    _r0.o = xmlvm_create_java_string_from_pool(1075);
+    _r0.o = xmlvm_create_java_string_from_pool(1078);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLModElement.java", 66)
@@ -581,7 +581,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLModElement_getDateTime__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLModElement.java", 70)
     // "datetime"
-    _r0.o = xmlvm_create_java_string_from_pool(1076);
+    _r0.o = xmlvm_create_java_string_from_pool(1079);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -600,7 +600,7 @@ void gnu_xml_dom_html2_DomHTMLModElement_setDateTime___java_lang_String(JAVA_OBJ
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLModElement.java", 75)
     // "datetime"
-    _r0.o = xmlvm_create_java_string_from_pool(1076);
+    _r0.o = xmlvm_create_java_string_from_pool(1079);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLModElement.java", 76)

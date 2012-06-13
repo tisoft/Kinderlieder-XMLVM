@@ -451,7 +451,7 @@ JAVA_OBJECT java_net_URISyntaxException_getMessage__(JAVA_OBJECT me)
     if (_r1.i == _r2.i) goto label36;
     XMLVM_SOURCE_POSITION("URISyntaxException.java", 130)
     // "luni.92"
-    _r1.o = xmlvm_create_java_string_from_pool(1393);
+    _r1.o = xmlvm_create_java_string_from_pool(1396);
     XMLVM_SOURCE_POSITION("URISyntaxException.java", 131)
     _r2.i = 3;
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
@@ -475,7 +475,7 @@ JAVA_OBJECT java_net_URISyntaxException_getMessage__(JAVA_OBJECT me)
     return _r0.o;
     label36:;
     // "luni.93"
-    _r1.o = xmlvm_create_java_string_from_pool(1394);
+    _r1.o = xmlvm_create_java_string_from_pool(1397);
     XMLVM_SOURCE_POSITION("URISyntaxException.java", 134)
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_String, _r5.i);

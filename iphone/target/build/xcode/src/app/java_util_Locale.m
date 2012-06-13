@@ -1198,11 +1198,11 @@ void java_util_Locale___INIT___(JAVA_OBJECT me)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("Locale.java", 191)
     // "en"
-    _r0.o = xmlvm_create_java_string_from_pool(990);
+    _r0.o = xmlvm_create_java_string_from_pool(993);
     ((java_util_Locale*) _r1.o)->fields.java_util_Locale.languageCode_ = _r0.o;
     XMLVM_SOURCE_POSITION("Locale.java", 192)
     // "US"
-    _r0.o = xmlvm_create_java_string_from_pool(991);
+    _r0.o = xmlvm_create_java_string_from_pool(994);
     ((java_util_Locale*) _r1.o)->fields.java_util_Locale.countryCode_ = _r0.o;
     XMLVM_SOURCE_POSITION("Locale.java", 193)
     // ""
@@ -1333,25 +1333,25 @@ JAVA_OBJECT java_util_Locale_clone__(JAVA_OBJECT me)
     XMLVMElem _r1;
     XMLVMElem _r2;
     _r2.o = me;
-    XMLVM_TRY_BEGIN(w12542aaac33b1b2)
+    XMLVM_TRY_BEGIN(w12571aaac33b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("Locale.java", 274)
     XMLVM_CHECK_NPE(2)
     _r1.o = java_lang_Object_clone__(_r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w12542aaac33b1b2)
-        XMLVM_CATCH_SPECIFIC(w12542aaac33b1b2,java_lang_CloneNotSupportedException,5)
-    XMLVM_CATCH_END(w12542aaac33b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w12542aaac33b1b2)
+    XMLVM_CATCH_BEGIN(w12571aaac33b1b2)
+        XMLVM_CATCH_SPECIFIC(w12571aaac33b1b2,java_lang_CloneNotSupportedException,5)
+    XMLVM_CATCH_END(w12571aaac33b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w12571aaac33b1b2)
     label4:;
     XMLVM_SOURCE_POSITION("Locale.java", 276)
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label5:;
     XMLVM_SOURCE_POSITION("Locale.java", 275)
-    java_lang_Thread* curThread_w12542aaac33b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w12542aaac33b1b8->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w12571aaac33b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w12571aaac33b1b8->fields.java_lang_Thread.xmlvmException_;
     _r1.o = JAVA_NULL;
     goto label4;
     //XMLVM_END_WRAPPER
@@ -1561,7 +1561,7 @@ JAVA_OBJECT java_util_Locale_getDisplayName___java_util_Locale(JAVA_OBJECT me, J
     _r6.o = n1;
     _r3.i = 1;
     // " ("
-    _r4.o = xmlvm_create_java_string_from_pool(992);
+    _r4.o = xmlvm_create_java_string_from_pool(995);
     XMLVM_SOURCE_POSITION("Locale.java", 412)
     _r1.i = 0;
     XMLVM_SOURCE_POSITION("Locale.java", 413)
@@ -1592,7 +1592,7 @@ JAVA_OBJECT java_util_Locale_getDisplayName___java_util_Locale(JAVA_OBJECT me, J
     if (_r1.i != _r3.i) goto label41;
     XMLVM_SOURCE_POSITION("Locale.java", 420)
     // " ("
-    _r2.o = xmlvm_create_java_string_from_pool(992);
+    _r2.o = xmlvm_create_java_string_from_pool(995);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r4.o);
     label41:;
@@ -1614,7 +1614,7 @@ JAVA_OBJECT java_util_Locale_getDisplayName___java_util_Locale(JAVA_OBJECT me, J
     if (_r1.i != _r3.i) goto label86;
     XMLVM_SOURCE_POSITION("Locale.java", 427)
     // " ("
-    _r2.o = xmlvm_create_java_string_from_pool(992);
+    _r2.o = xmlvm_create_java_string_from_pool(995);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r4.o);
     label65:;
@@ -1787,7 +1787,7 @@ JAVA_INT java_util_Locale_hashCode__(JAVA_OBJECT me)
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Locale.java", 547)
     java_lang_Object_acquireLockRecursive__(_r2.o);
-    XMLVM_TRY_BEGIN(w12542aaac52b1b4)
+    XMLVM_TRY_BEGIN(w12571aaac52b1b4)
     // Begin try
     _r0.o = ((java_util_Locale*) _r2.o)->fields.java_util_Locale.countryCode_;
     //java_lang_String_hashCode__[4]
@@ -1804,17 +1804,17 @@ JAVA_INT java_util_Locale_hashCode__(JAVA_OBJECT me)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[4])(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w12542aaac52b1b4)
-        XMLVM_CATCH_SPECIFIC(w12542aaac52b1b4,java_lang_Object,23)
-    XMLVM_CATCH_END(w12542aaac52b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w12542aaac52b1b4)
+    XMLVM_CATCH_BEGIN(w12571aaac52b1b4)
+        XMLVM_CATCH_SPECIFIC(w12571aaac52b1b4,java_lang_Object,23)
+    XMLVM_CATCH_END(w12571aaac52b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w12571aaac52b1b4)
     _r0.i = _r0.i + _r1.i;
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label23:;
-    java_lang_Thread* curThread_w12542aaac52b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w12542aaac52b1b9->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w12571aaac52b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w12571aaac52b1b9->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER
@@ -1834,22 +1834,22 @@ void java_util_Locale_setDefault___java_util_Locale(JAVA_OBJECT n1)
     _r0.o = __CLASS_java_util_Locale;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     if (_r2.o == JAVA_NULL) goto label9;
-    XMLVM_TRY_BEGIN(w12542aaac53b1b6)
+    XMLVM_TRY_BEGIN(w12571aaac53b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("Locale.java", 566)
     java_util_Locale_PUT_defaultLocale( _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w12542aaac53b1b6)
-        XMLVM_CATCH_SPECIFIC(w12542aaac53b1b6,java_lang_Object,15)
-    XMLVM_CATCH_END(w12542aaac53b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w12542aaac53b1b6)
+    XMLVM_CATCH_BEGIN(w12571aaac53b1b6)
+        XMLVM_CATCH_SPECIFIC(w12571aaac53b1b6,java_lang_Object,15)
+    XMLVM_CATCH_END(w12571aaac53b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w12571aaac53b1b6)
     XMLVM_SOURCE_POSITION("Locale.java", 570)
     java_lang_Object_releaseLockRecursive__(_r0.o);
     XMLVM_EXIT_METHOD()
     return;
     label9:;
-    XMLVM_TRY_BEGIN(w12542aaac53b1c11)
+    XMLVM_TRY_BEGIN(w12571aaac53b1c11)
     // Begin try
     XMLVM_SOURCE_POSITION("Locale.java", 568)
     _r1.o = __NEW_java_lang_NullPointerException();
@@ -1858,13 +1858,13 @@ void java_util_Locale_setDefault___java_util_Locale(JAVA_OBJECT n1)
     XMLVM_THROW_CUSTOM(_r1.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w12542aaac53b1c11)
-        XMLVM_CATCH_SPECIFIC(w12542aaac53b1c11,java_lang_Object,15)
-    XMLVM_CATCH_END(w12542aaac53b1c11)
-    XMLVM_RESTORE_EXCEPTION_ENV(w12542aaac53b1c11)
+    XMLVM_CATCH_BEGIN(w12571aaac53b1c11)
+        XMLVM_CATCH_SPECIFIC(w12571aaac53b1c11,java_lang_Object,15)
+    XMLVM_CATCH_END(w12571aaac53b1c11)
+    XMLVM_RESTORE_EXCEPTION_ENV(w12571aaac53b1c11)
     label15:;
-    java_lang_Thread* curThread_w12542aaac53b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w12542aaac53b1c13->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w12571aaac53b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w12571aaac53b1c13->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     XMLVM_THROW_CUSTOM(_r1.o)
     //XMLVM_END_WRAPPER
@@ -1920,7 +1920,7 @@ JAVA_OBJECT java_util_Locale_toString__(JAVA_OBJECT me)
     if (_r1.i != 0) goto label65;
     XMLVM_SOURCE_POSITION("Locale.java", 595)
     // "__"
-    _r1.o = xmlvm_create_java_string_from_pool(993);
+    _r1.o = xmlvm_create_java_string_from_pool(996);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label55:;
@@ -1960,28 +1960,28 @@ void java_util_Locale_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me, J
     _r0.o = java_io_ObjectOutputStream_putFields__(_r4.o);
     XMLVM_SOURCE_POSITION("Locale.java", 612)
     // "country"
-    _r1.o = xmlvm_create_java_string_from_pool(994);
+    _r1.o = xmlvm_create_java_string_from_pool(997);
     _r2.o = ((java_util_Locale*) _r3.o)->fields.java_util_Locale.countryCode_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_java_lang_Object[12]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_io_ObjectOutputStream_PutField*) _r0.o)->tib->vtable[12])(_r0.o, _r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("Locale.java", 613)
     // "hashcode"
-    _r1.o = xmlvm_create_java_string_from_pool(995);
+    _r1.o = xmlvm_create_java_string_from_pool(998);
     _r2.i = -1;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_int[11]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectOutputStream_PutField*) _r0.o)->tib->vtable[11])(_r0.o, _r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("Locale.java", 614)
     // "language"
-    _r1.o = xmlvm_create_java_string_from_pool(996);
+    _r1.o = xmlvm_create_java_string_from_pool(999);
     _r2.o = ((java_util_Locale*) _r3.o)->fields.java_util_Locale.languageCode_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_java_lang_Object[12]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_io_ObjectOutputStream_PutField*) _r0.o)->tib->vtable[12])(_r0.o, _r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("Locale.java", 615)
     // "variant"
-    _r1.o = xmlvm_create_java_string_from_pool(997);
+    _r1.o = xmlvm_create_java_string_from_pool(1000);
     _r2.o = ((java_util_Locale*) _r3.o)->fields.java_util_Locale.variantCode_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_java_lang_Object[12]
     XMLVM_CHECK_NPE(0)
@@ -2014,7 +2014,7 @@ void java_util_Locale_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, JAV
     _r0.o = java_io_ObjectInputStream_readFields__(_r5.o);
     XMLVM_SOURCE_POSITION("Locale.java", 622)
     // "country"
-    _r1.o = xmlvm_create_java_string_from_pool(994);
+    _r1.o = xmlvm_create_java_string_from_pool(997);
     // ""
     _r2.o = xmlvm_create_java_string_from_pool(0);
     //java_io_ObjectInputStream_GetField_get___java_lang_String_java_lang_Object[14]
@@ -2024,7 +2024,7 @@ void java_util_Locale_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, JAV
     ((java_util_Locale*) _r4.o)->fields.java_util_Locale.countryCode_ = _r1.o;
     XMLVM_SOURCE_POSITION("Locale.java", 623)
     // "language"
-    _r1.o = xmlvm_create_java_string_from_pool(996);
+    _r1.o = xmlvm_create_java_string_from_pool(999);
     // ""
     _r2.o = xmlvm_create_java_string_from_pool(0);
     //java_io_ObjectInputStream_GetField_get___java_lang_String_java_lang_Object[14]
@@ -2034,7 +2034,7 @@ void java_util_Locale_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, JAV
     ((java_util_Locale*) _r4.o)->fields.java_util_Locale.languageCode_ = _r1.o;
     XMLVM_SOURCE_POSITION("Locale.java", 624)
     // "variant"
-    _r1.o = xmlvm_create_java_string_from_pool(997);
+    _r1.o = xmlvm_create_java_string_from_pool(1000);
     // ""
     _r2.o = xmlvm_create_java_string_from_pool(0);
     //java_io_ObjectInputStream_GetField_get___java_lang_String_java_lang_Object[14]
@@ -2060,13 +2060,13 @@ void java_util_Locale___CLINIT_()
     XMLVMElem _r5;
     XMLVMElem _r6;
     // "fr"
-    _r2.o = xmlvm_create_java_string_from_pool(998);
+    _r2.o = xmlvm_create_java_string_from_pool(1001);
     // "CN"
-    _r6.o = xmlvm_create_java_string_from_pool(999);
+    _r6.o = xmlvm_create_java_string_from_pool(1002);
     // "en"
-    _r5.o = xmlvm_create_java_string_from_pool(990);
+    _r5.o = xmlvm_create_java_string_from_pool(993);
     // "zh"
-    _r4.o = xmlvm_create_java_string_from_pool(1000);
+    _r4.o = xmlvm_create_java_string_from_pool(1003);
     // ""
     _r3.o = xmlvm_create_java_string_from_pool(0);
     XMLVM_SOURCE_POSITION("Locale.java", 53)
@@ -2074,34 +2074,34 @@ void java_util_Locale___CLINIT_()
     XMLVM_SOURCE_POSITION("Locale.java", 59)
     _r0.o = __NEW_java_util_Locale();
     // "en"
-    _r1.o = xmlvm_create_java_string_from_pool(990);
+    _r1.o = xmlvm_create_java_string_from_pool(993);
     // "CA"
-    _r1.o = xmlvm_create_java_string_from_pool(1001);
+    _r1.o = xmlvm_create_java_string_from_pool(1004);
     XMLVM_CHECK_NPE(0)
     java_util_Locale___INIT____java_lang_String_java_lang_String(_r0.o, _r5.o, _r1.o);
     java_util_Locale_PUT_CANADA( _r0.o);
     XMLVM_SOURCE_POSITION("Locale.java", 64)
     _r0.o = __NEW_java_util_Locale();
     // "fr"
-    _r1.o = xmlvm_create_java_string_from_pool(998);
-    // "CA"
     _r1.o = xmlvm_create_java_string_from_pool(1001);
+    // "CA"
+    _r1.o = xmlvm_create_java_string_from_pool(1004);
     XMLVM_CHECK_NPE(0)
     java_util_Locale___INIT____java_lang_String_java_lang_String(_r0.o, _r2.o, _r1.o);
     java_util_Locale_PUT_CANADA_FRENCH( _r0.o);
     XMLVM_SOURCE_POSITION("Locale.java", 69)
     _r0.o = __NEW_java_util_Locale();
     // "zh"
-    _r1.o = xmlvm_create_java_string_from_pool(1000);
+    _r1.o = xmlvm_create_java_string_from_pool(1003);
     // "CN"
-    _r1.o = xmlvm_create_java_string_from_pool(999);
+    _r1.o = xmlvm_create_java_string_from_pool(1002);
     XMLVM_CHECK_NPE(0)
     java_util_Locale___INIT____java_lang_String_java_lang_String(_r0.o, _r4.o, _r6.o);
     java_util_Locale_PUT_CHINA( _r0.o);
     XMLVM_SOURCE_POSITION("Locale.java", 74)
     _r0.o = __NEW_java_util_Locale();
     // "zh"
-    _r1.o = xmlvm_create_java_string_from_pool(1000);
+    _r1.o = xmlvm_create_java_string_from_pool(1003);
     // ""
     _r1.o = xmlvm_create_java_string_from_pool(0);
     XMLVM_CHECK_NPE(0)
@@ -2110,7 +2110,7 @@ void java_util_Locale___CLINIT_()
     XMLVM_SOURCE_POSITION("Locale.java", 79)
     _r0.o = __NEW_java_util_Locale();
     // "en"
-    _r1.o = xmlvm_create_java_string_from_pool(990);
+    _r1.o = xmlvm_create_java_string_from_pool(993);
     // ""
     _r1.o = xmlvm_create_java_string_from_pool(0);
     XMLVM_CHECK_NPE(0)
@@ -2119,16 +2119,16 @@ void java_util_Locale___CLINIT_()
     XMLVM_SOURCE_POSITION("Locale.java", 84)
     _r0.o = __NEW_java_util_Locale();
     // "fr"
-    _r1.o = xmlvm_create_java_string_from_pool(998);
+    _r1.o = xmlvm_create_java_string_from_pool(1001);
     // "FR"
-    _r1.o = xmlvm_create_java_string_from_pool(1002);
+    _r1.o = xmlvm_create_java_string_from_pool(1005);
     XMLVM_CHECK_NPE(0)
     java_util_Locale___INIT____java_lang_String_java_lang_String(_r0.o, _r2.o, _r1.o);
     java_util_Locale_PUT_FRANCE( _r0.o);
     XMLVM_SOURCE_POSITION("Locale.java", 89)
     _r0.o = __NEW_java_util_Locale();
     // "fr"
-    _r1.o = xmlvm_create_java_string_from_pool(998);
+    _r1.o = xmlvm_create_java_string_from_pool(1001);
     // ""
     _r1.o = xmlvm_create_java_string_from_pool(0);
     XMLVM_CHECK_NPE(0)
@@ -2137,7 +2137,7 @@ void java_util_Locale___CLINIT_()
     XMLVM_SOURCE_POSITION("Locale.java", 94)
     _r0.o = __NEW_java_util_Locale();
     // "de"
-    _r1.o = xmlvm_create_java_string_from_pool(1003);
+    _r1.o = xmlvm_create_java_string_from_pool(1006);
     // ""
     _r2.o = xmlvm_create_java_string_from_pool(0);
     XMLVM_CHECK_NPE(0)
@@ -2146,16 +2146,16 @@ void java_util_Locale___CLINIT_()
     XMLVM_SOURCE_POSITION("Locale.java", 99)
     _r0.o = __NEW_java_util_Locale();
     // "de"
-    _r1.o = xmlvm_create_java_string_from_pool(1003);
+    _r1.o = xmlvm_create_java_string_from_pool(1006);
     // "DE"
-    _r2.o = xmlvm_create_java_string_from_pool(1004);
+    _r2.o = xmlvm_create_java_string_from_pool(1007);
     XMLVM_CHECK_NPE(0)
     java_util_Locale___INIT____java_lang_String_java_lang_String(_r0.o, _r1.o, _r2.o);
     java_util_Locale_PUT_GERMANY( _r0.o);
     XMLVM_SOURCE_POSITION("Locale.java", 104)
     _r0.o = __NEW_java_util_Locale();
     // "it"
-    _r1.o = xmlvm_create_java_string_from_pool(1005);
+    _r1.o = xmlvm_create_java_string_from_pool(1008);
     // ""
     _r2.o = xmlvm_create_java_string_from_pool(0);
     XMLVM_CHECK_NPE(0)
@@ -2164,25 +2164,25 @@ void java_util_Locale___CLINIT_()
     XMLVM_SOURCE_POSITION("Locale.java", 109)
     _r0.o = __NEW_java_util_Locale();
     // "it"
-    _r1.o = xmlvm_create_java_string_from_pool(1005);
+    _r1.o = xmlvm_create_java_string_from_pool(1008);
     // "IT"
-    _r2.o = xmlvm_create_java_string_from_pool(1006);
+    _r2.o = xmlvm_create_java_string_from_pool(1009);
     XMLVM_CHECK_NPE(0)
     java_util_Locale___INIT____java_lang_String_java_lang_String(_r0.o, _r1.o, _r2.o);
     java_util_Locale_PUT_ITALY( _r0.o);
     XMLVM_SOURCE_POSITION("Locale.java", 114)
     _r0.o = __NEW_java_util_Locale();
     // "ja"
-    _r1.o = xmlvm_create_java_string_from_pool(1007);
+    _r1.o = xmlvm_create_java_string_from_pool(1010);
     // "JP"
-    _r2.o = xmlvm_create_java_string_from_pool(1008);
+    _r2.o = xmlvm_create_java_string_from_pool(1011);
     XMLVM_CHECK_NPE(0)
     java_util_Locale___INIT____java_lang_String_java_lang_String(_r0.o, _r1.o, _r2.o);
     java_util_Locale_PUT_JAPAN( _r0.o);
     XMLVM_SOURCE_POSITION("Locale.java", 119)
     _r0.o = __NEW_java_util_Locale();
     // "ja"
-    _r1.o = xmlvm_create_java_string_from_pool(1007);
+    _r1.o = xmlvm_create_java_string_from_pool(1010);
     // ""
     _r2.o = xmlvm_create_java_string_from_pool(0);
     XMLVM_CHECK_NPE(0)
@@ -2191,16 +2191,16 @@ void java_util_Locale___CLINIT_()
     XMLVM_SOURCE_POSITION("Locale.java", 124)
     _r0.o = __NEW_java_util_Locale();
     // "ko"
-    _r1.o = xmlvm_create_java_string_from_pool(1009);
+    _r1.o = xmlvm_create_java_string_from_pool(1012);
     // "KR"
-    _r2.o = xmlvm_create_java_string_from_pool(1010);
+    _r2.o = xmlvm_create_java_string_from_pool(1013);
     XMLVM_CHECK_NPE(0)
     java_util_Locale___INIT____java_lang_String_java_lang_String(_r0.o, _r1.o, _r2.o);
     java_util_Locale_PUT_KOREA( _r0.o);
     XMLVM_SOURCE_POSITION("Locale.java", 129)
     _r0.o = __NEW_java_util_Locale();
     // "ko"
-    _r1.o = xmlvm_create_java_string_from_pool(1009);
+    _r1.o = xmlvm_create_java_string_from_pool(1012);
     // ""
     _r2.o = xmlvm_create_java_string_from_pool(0);
     XMLVM_CHECK_NPE(0)
@@ -2209,54 +2209,54 @@ void java_util_Locale___CLINIT_()
     XMLVM_SOURCE_POSITION("Locale.java", 134)
     _r0.o = __NEW_java_util_Locale();
     // "zh"
-    _r1.o = xmlvm_create_java_string_from_pool(1000);
+    _r1.o = xmlvm_create_java_string_from_pool(1003);
     // "CN"
-    _r1.o = xmlvm_create_java_string_from_pool(999);
+    _r1.o = xmlvm_create_java_string_from_pool(1002);
     XMLVM_CHECK_NPE(0)
     java_util_Locale___INIT____java_lang_String_java_lang_String(_r0.o, _r4.o, _r6.o);
     java_util_Locale_PUT_PRC( _r0.o);
     XMLVM_SOURCE_POSITION("Locale.java", 139)
     _r0.o = __NEW_java_util_Locale();
     // "zh"
-    _r1.o = xmlvm_create_java_string_from_pool(1000);
+    _r1.o = xmlvm_create_java_string_from_pool(1003);
     // "CN"
-    _r1.o = xmlvm_create_java_string_from_pool(999);
+    _r1.o = xmlvm_create_java_string_from_pool(1002);
     XMLVM_CHECK_NPE(0)
     java_util_Locale___INIT____java_lang_String_java_lang_String(_r0.o, _r4.o, _r6.o);
     java_util_Locale_PUT_SIMPLIFIED_CHINESE( _r0.o);
     XMLVM_SOURCE_POSITION("Locale.java", 144)
     _r0.o = __NEW_java_util_Locale();
     // "zh"
-    _r1.o = xmlvm_create_java_string_from_pool(1000);
+    _r1.o = xmlvm_create_java_string_from_pool(1003);
     // "TW"
-    _r1.o = xmlvm_create_java_string_from_pool(1011);
+    _r1.o = xmlvm_create_java_string_from_pool(1014);
     XMLVM_CHECK_NPE(0)
     java_util_Locale___INIT____java_lang_String_java_lang_String(_r0.o, _r4.o, _r1.o);
     java_util_Locale_PUT_TAIWAN( _r0.o);
     XMLVM_SOURCE_POSITION("Locale.java", 149)
     _r0.o = __NEW_java_util_Locale();
     // "zh"
-    _r1.o = xmlvm_create_java_string_from_pool(1000);
+    _r1.o = xmlvm_create_java_string_from_pool(1003);
     // "TW"
-    _r1.o = xmlvm_create_java_string_from_pool(1011);
+    _r1.o = xmlvm_create_java_string_from_pool(1014);
     XMLVM_CHECK_NPE(0)
     java_util_Locale___INIT____java_lang_String_java_lang_String(_r0.o, _r4.o, _r1.o);
     java_util_Locale_PUT_TRADITIONAL_CHINESE( _r0.o);
     XMLVM_SOURCE_POSITION("Locale.java", 154)
     _r0.o = __NEW_java_util_Locale();
     // "en"
-    _r1.o = xmlvm_create_java_string_from_pool(990);
+    _r1.o = xmlvm_create_java_string_from_pool(993);
     // "GB"
-    _r1.o = xmlvm_create_java_string_from_pool(1012);
+    _r1.o = xmlvm_create_java_string_from_pool(1015);
     XMLVM_CHECK_NPE(0)
     java_util_Locale___INIT____java_lang_String_java_lang_String(_r0.o, _r5.o, _r1.o);
     java_util_Locale_PUT_UK( _r0.o);
     XMLVM_SOURCE_POSITION("Locale.java", 159)
     _r0.o = __NEW_java_util_Locale();
     // "en"
-    _r1.o = xmlvm_create_java_string_from_pool(990);
+    _r1.o = xmlvm_create_java_string_from_pool(993);
     // "US"
-    _r1.o = xmlvm_create_java_string_from_pool(991);
+    _r1.o = xmlvm_create_java_string_from_pool(994);
     XMLVM_CHECK_NPE(0)
     java_util_Locale___INIT____java_lang_String_java_lang_String(_r0.o, _r5.o, _r1.o);
     java_util_Locale_PUT_US( _r0.o);
@@ -2274,9 +2274,9 @@ void java_util_Locale___CLINIT_()
     XMLVM_SOURCE_POSITION("Locale.java", 177)
     _r0.o = __NEW_java_util_Locale();
     // "en"
-    _r1.o = xmlvm_create_java_string_from_pool(990);
+    _r1.o = xmlvm_create_java_string_from_pool(993);
     // "us"
-    _r1.o = xmlvm_create_java_string_from_pool(1013);
+    _r1.o = xmlvm_create_java_string_from_pool(1016);
     // ""
     _r2.o = xmlvm_create_java_string_from_pool(0);
     XMLVM_CHECK_NPE(0)
@@ -2289,7 +2289,7 @@ void java_util_Locale___CLINIT_()
     _r1.i = 0;
     _r2.o = __NEW_java_io_ObjectStreamField();
     // "country"
-    _r3.o = xmlvm_create_java_string_from_pool(994);
+    _r3.o = xmlvm_create_java_string_from_pool(997);
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
     _r4.o = __CLASS_java_lang_String;
     XMLVM_CHECK_NPE(2)
@@ -2300,7 +2300,7 @@ void java_util_Locale___CLINIT_()
     _r1.i = 1;
     _r2.o = __NEW_java_io_ObjectStreamField();
     // "hashcode"
-    _r3.o = xmlvm_create_java_string_from_pool(995);
+    _r3.o = xmlvm_create_java_string_from_pool(998);
     _r4.o = java_lang_Integer_GET_TYPE();
     XMLVM_CHECK_NPE(2)
     java_io_ObjectStreamField___INIT____java_lang_String_java_lang_Class(_r2.o, _r3.o, _r4.o);
@@ -2310,7 +2310,7 @@ void java_util_Locale___CLINIT_()
     _r1.i = 2;
     _r2.o = __NEW_java_io_ObjectStreamField();
     // "language"
-    _r3.o = xmlvm_create_java_string_from_pool(996);
+    _r3.o = xmlvm_create_java_string_from_pool(999);
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
     _r4.o = __CLASS_java_lang_String;
     XMLVM_CHECK_NPE(2)
@@ -2321,7 +2321,7 @@ void java_util_Locale___CLINIT_()
     _r1.i = 3;
     _r2.o = __NEW_java_io_ObjectStreamField();
     // "variant"
-    _r3.o = xmlvm_create_java_string_from_pool(997);
+    _r3.o = xmlvm_create_java_string_from_pool(1000);
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
     _r4.o = __CLASS_java_lang_String;
     XMLVM_CHECK_NPE(2)

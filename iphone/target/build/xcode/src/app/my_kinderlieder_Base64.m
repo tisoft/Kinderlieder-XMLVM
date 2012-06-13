@@ -267,7 +267,7 @@ JAVA_OBJECT my_kinderlieder_Base64_encode___byte_1ARRAY(JAVA_OBJECT n1)
     _r8.o = n1;
     _r7.i = 0;
     // "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
-    _r6.o = xmlvm_create_java_string_from_pool(1099);
+    _r6.o = xmlvm_create_java_string_from_pool(1102);
     XMLVM_SOURCE_POSITION("Base64.java", 16)
     // ""
     _r0.o = xmlvm_create_java_string_from_pool(0);
@@ -312,7 +312,7 @@ JAVA_OBJECT my_kinderlieder_Base64_encode___byte_1ARRAY(JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(4)
     _r4.o = java_lang_StringBuilder_append___java_lang_String(_r4.o, _r0.o);
     // "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
-    _r5.o = xmlvm_create_java_string_from_pool(1099);
+    _r5.o = xmlvm_create_java_string_from_pool(1102);
     _r5.i = _r2.i >> 18;
     _r5.i = _r5.i & 63;
     //java_lang_String_charAt___int[6]
@@ -322,7 +322,7 @@ JAVA_OBJECT my_kinderlieder_Base64_encode___byte_1ARRAY(JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(4)
     _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r4.o)->tib->vtable[21])(_r4.o, _r5.i);
     // "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
-    _r5.o = xmlvm_create_java_string_from_pool(1099);
+    _r5.o = xmlvm_create_java_string_from_pool(1102);
     _r5.i = _r2.i >> 12;
     _r5.i = _r5.i & 63;
     //java_lang_String_charAt___int[6]
@@ -332,7 +332,7 @@ JAVA_OBJECT my_kinderlieder_Base64_encode___byte_1ARRAY(JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(4)
     _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r4.o)->tib->vtable[21])(_r4.o, _r5.i);
     // "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
-    _r5.o = xmlvm_create_java_string_from_pool(1099);
+    _r5.o = xmlvm_create_java_string_from_pool(1102);
     _r5.i = _r2.i >> 6;
     _r5.i = _r5.i & 63;
     //java_lang_String_charAt___int[6]
@@ -342,7 +342,7 @@ JAVA_OBJECT my_kinderlieder_Base64_encode___byte_1ARRAY(JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(4)
     _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r4.o)->tib->vtable[21])(_r4.o, _r5.i);
     // "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/"
-    _r5.o = xmlvm_create_java_string_from_pool(1099);
+    _r5.o = xmlvm_create_java_string_from_pool(1102);
     _r5.i = _r2.i & 63;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(6)
@@ -369,7 +369,7 @@ JAVA_OBJECT my_kinderlieder_Base64_encode___byte_1ARRAY(JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(4)
     _r4.o = java_lang_StringBuilder_append___java_lang_String(_r4.o, _r5.o);
     // "=="
-    _r5.o = xmlvm_create_java_string_from_pool(1100);
+    _r5.o = xmlvm_create_java_string_from_pool(1103);
     XMLVM_CHECK_NPE(5)
     _r5.o = java_lang_String_substring___int_int(_r5.o, _r7.i, _r3.i);
     XMLVM_CHECK_NPE(4)

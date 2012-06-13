@@ -37,8 +37,8 @@
 #include "gnu_xml_xpath_LangFunction.h"
 #include "org_apache_harmony_luni_util_NumberConverter.h"
 #include "java_util_AbstractMap_1.h"
-#include "gnu_xml_stream_SAXParser.h"
 #include "my_kinderlieder_InAppProduct.h"
+#include "gnu_xml_stream_SAXParser.h"
 #include "java_lang_ref_ReferenceQueue.h"
 #include "org_w3c_dom_html2_HTMLTableElement.h"
 #include "java_util_Formattable.h"
@@ -804,6 +804,7 @@
 #include "java_lang_ThreadLocal.h"
 #include "javax_xml_parsers_DocumentBuilderFactory.h"
 #include "java_util_HashMap_KeyIterator.h"
+#include "my_kinderlieder_ShopService_1_2.h"
 #include "org_w3c_dom_html2_HTMLMetaElement.h"
 #include "java_util_regex_NegativeLookAhead.h"
 #include "gnu_xml_pipeline_XIncludeFilter.h"
@@ -1116,8 +1117,8 @@
 #include "org_apache_harmony_niochar_charset_ISO_8859_7_Decoder.h"
 #include "gnu_xml_xpath_XPathParser_YyCheckClass.h"
 #include "java_io_FileInputStream_RepositioningLock.h"
-#include "org_xmlvm_iphone_UIWindow.h"
 #include "java_util_LinkedList_ReverseLinkIterator.h"
+#include "org_xmlvm_iphone_UIWindow.h"
 #include "java_net_BindException.h"
 #include "gnu_xml_dom_DomEvent_DomMutationEvent.h"
 #include "java_util_regex_AbstractCharClass_LazyJavaLowerCase.h"
@@ -1382,8 +1383,8 @@
 #include "gnu_xml_dom_DTDElementTypeInfo.h"
 #include "java_lang_Integer.h"
 #include "java_util_regex_UCIDecomposedCharSet.h"
-#include "java_io_File_TempFileLocker.h"
 #include "java_lang_Short.h"
+#include "java_io_File_TempFileLocker.h"
 #include "org_xmlvm_iphone_UIBarButtonItem.h"
 #include "org_w3c_dom_html2_HTMLOptGroupElement.h"
 #include "java_util_Collections_ReverseComparator.h"
@@ -1474,8 +1475,8 @@ __TIB_DEFINITION_TEMPLATE* __xmlvm_tib_list[] = {
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_gnu_xml_xpath_LangFunction,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_apache_harmony_luni_util_NumberConverter,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_AbstractMap_1,
-    (__TIB_DEFINITION_TEMPLATE*) &__TIB_gnu_xml_stream_SAXParser,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_my_kinderlieder_InAppProduct,
+    (__TIB_DEFINITION_TEMPLATE*) &__TIB_gnu_xml_stream_SAXParser,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_lang_ref_ReferenceQueue,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_w3c_dom_html2_HTMLTableElement,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_Formattable,
@@ -2241,6 +2242,7 @@ __TIB_DEFINITION_TEMPLATE* __xmlvm_tib_list[] = {
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_lang_ThreadLocal,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_javax_xml_parsers_DocumentBuilderFactory,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_HashMap_KeyIterator,
+    (__TIB_DEFINITION_TEMPLATE*) &__TIB_my_kinderlieder_ShopService_1_2,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_w3c_dom_html2_HTMLMetaElement,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_regex_NegativeLookAhead,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_gnu_xml_pipeline_XIncludeFilter,
@@ -2553,8 +2555,8 @@ __TIB_DEFINITION_TEMPLATE* __xmlvm_tib_list[] = {
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_apache_harmony_niochar_charset_ISO_8859_7_Decoder,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_gnu_xml_xpath_XPathParser_YyCheckClass,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_io_FileInputStream_RepositioningLock,
-    (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_xmlvm_iphone_UIWindow,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_LinkedList_ReverseLinkIterator,
+    (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_xmlvm_iphone_UIWindow,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_net_BindException,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_gnu_xml_dom_DomEvent_DomMutationEvent,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_regex_AbstractCharClass_LazyJavaLowerCase,
@@ -2819,8 +2821,8 @@ __TIB_DEFINITION_TEMPLATE* __xmlvm_tib_list[] = {
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_gnu_xml_dom_DTDElementTypeInfo,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_lang_Integer,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_regex_UCIDecomposedCharSet,
-    (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_io_File_TempFileLocker,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_lang_Short,
+    (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_io_File_TempFileLocker,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_xmlvm_iphone_UIBarButtonItem,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_w3c_dom_html2_HTMLOptGroupElement,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_Collections_ReverseComparator,

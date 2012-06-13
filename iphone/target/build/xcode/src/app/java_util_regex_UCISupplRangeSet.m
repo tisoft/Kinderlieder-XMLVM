@@ -300,7 +300,7 @@ JAVA_OBJECT java_util_regex_UCISupplRangeSet_getName__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("UCISupplRangeSet.java", 106)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "UCI range:"
-    _r1.o = xmlvm_create_java_string_from_pool(1400);
+    _r1.o = xmlvm_create_java_string_from_pool(1403);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     _r1.i = ((java_util_regex_SupplRangeSet*) _r2.o)->fields.java_util_regex_SupplRangeSet.alt_;

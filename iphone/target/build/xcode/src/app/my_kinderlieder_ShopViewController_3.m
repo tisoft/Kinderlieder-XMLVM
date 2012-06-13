@@ -379,7 +379,7 @@ JAVA_OBJECT my_kinderlieder_ShopViewController_3_cellForRowAtIndexPath___org_xml
     XMLVM_CHECK_NPE(1)
     _r4.o = org_xmlvm_iphone_UITableViewCell_getDetailTextLabel__(_r1.o);
     // "installiert"
-    _r5.o = xmlvm_create_java_string_from_pool(1062);
+    _r5.o = xmlvm_create_java_string_from_pool(1065);
     XMLVM_CHECK_NPE(4)
     org_xmlvm_iphone_UILabel_setText___java_lang_String(_r4.o, _r5.o);
     goto label50;
@@ -388,7 +388,7 @@ JAVA_OBJECT my_kinderlieder_ShopViewController_3_cellForRowAtIndexPath___org_xml
     XMLVM_CHECK_NPE(1)
     _r4.o = org_xmlvm_iphone_UITableViewCell_getDetailTextLabel__(_r1.o);
     // "extrahiere"
-    _r5.o = xmlvm_create_java_string_from_pool(1063);
+    _r5.o = xmlvm_create_java_string_from_pool(1066);
     XMLVM_CHECK_NPE(4)
     org_xmlvm_iphone_UILabel_setText___java_lang_String(_r4.o, _r5.o);
     goto label50;
@@ -400,14 +400,14 @@ JAVA_OBJECT my_kinderlieder_ShopViewController_3_cellForRowAtIndexPath___org_xml
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder___INIT___(_r5.o);
     // "lade "
-    _r6.o = xmlvm_create_java_string_from_pool(1064);
+    _r6.o = xmlvm_create_java_string_from_pool(1067);
     XMLVM_CHECK_NPE(5)
     _r5.o = java_lang_StringBuilder_append___java_lang_String(_r5.o, _r6.o);
     _r6.i = ((my_kinderlieder_Product*) _r3.o)->fields.my_kinderlieder_Product.percent_;
     XMLVM_CHECK_NPE(5)
     _r5.o = java_lang_StringBuilder_append___int(_r5.o, _r6.i);
     // "%"
-    _r6.o = xmlvm_create_java_string_from_pool(1030);
+    _r6.o = xmlvm_create_java_string_from_pool(1033);
     XMLVM_CHECK_NPE(5)
     _r5.o = java_lang_StringBuilder_append___java_lang_String(_r5.o, _r6.o);
     //java_lang_StringBuilder_toString__[5]
@@ -421,7 +421,7 @@ JAVA_OBJECT my_kinderlieder_ShopViewController_3_cellForRowAtIndexPath___org_xml
     XMLVM_CHECK_NPE(1)
     _r4.o = org_xmlvm_iphone_UITableViewCell_getDetailTextLabel__(_r1.o);
     // "kaufe"
-    _r5.o = xmlvm_create_java_string_from_pool(1065);
+    _r5.o = xmlvm_create_java_string_from_pool(1068);
     XMLVM_CHECK_NPE(4)
     org_xmlvm_iphone_UILabel_setText___java_lang_String(_r4.o, _r5.o);
     goto label50;
@@ -434,7 +434,7 @@ JAVA_OBJECT my_kinderlieder_ShopViewController_3_cellForRowAtIndexPath___org_xml
     XMLVM_CHECK_NPE(1)
     _r4.o = org_xmlvm_iphone_UITableViewCell_getDetailTextLabel__(_r1.o);
     // "kostenlos"
-    _r5.o = xmlvm_create_java_string_from_pool(1066);
+    _r5.o = xmlvm_create_java_string_from_pool(1069);
     XMLVM_CHECK_NPE(4)
     org_xmlvm_iphone_UILabel_setText___java_lang_String(_r4.o, _r5.o);
     goto label50;
@@ -473,7 +473,7 @@ JAVA_OBJECT my_kinderlieder_ShopViewController_3_cellForRowAtIndexPath___org_xml
     XMLVM_CHECK_NPE(1)
     _r4.o = org_xmlvm_iphone_UITableViewCell_getDetailTextLabel__(_r1.o);
     // "lade Informationen"
-    _r5.o = xmlvm_create_java_string_from_pool(1067);
+    _r5.o = xmlvm_create_java_string_from_pool(1070);
     XMLVM_CHECK_NPE(4)
     org_xmlvm_iphone_UILabel_setText___java_lang_String(_r4.o, _r5.o);
     goto label50;

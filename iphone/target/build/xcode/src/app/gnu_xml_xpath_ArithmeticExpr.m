@@ -744,7 +744,7 @@ JAVA_OBJECT gnu_xml_xpath_ArithmeticExpr_toString__(JAVA_OBJECT me)
     label57:;
     XMLVM_SOURCE_POSITION("ArithmeticExpr.java", 162)
     // "mod"
-    _r1.o = xmlvm_create_java_string_from_pool(1044);
+    _r1.o = xmlvm_create_java_string_from_pool(1047);
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     goto label20;

@@ -1899,7 +1899,7 @@ JAVA_OBJECT java_util_TreeMap_clone__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     _r3.o = JAVA_NULL;
-    XMLVM_TRY_BEGIN(w29903aaac14b1b3)
+    XMLVM_TRY_BEGIN(w29929aaac14b1b3)
     // Begin try
     XMLVM_SOURCE_POSITION("TreeMap.java", 3827)
     XMLVM_CHECK_NPE(4)
@@ -1910,7 +1910,7 @@ JAVA_OBJECT java_util_TreeMap_clone__(JAVA_OBJECT me)
     ((java_util_TreeMap*) _r0.o)->fields.java_util_TreeMap.entrySet_ = _r1.o;
     XMLVM_SOURCE_POSITION("TreeMap.java", 3829)
     _r1.o = ((java_util_TreeMap*) _r4.o)->fields.java_util_TreeMap.root_;
-    if (_r1.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w29903aaac14b1b3->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29903aaac14b1b3, sizeof(XMLVM_JMP_BUF)); goto label35; };
+    if (_r1.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w29929aaac14b1b3->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29929aaac14b1b3, sizeof(XMLVM_JMP_BUF)); goto label35; };
     XMLVM_SOURCE_POSITION("TreeMap.java", 3830)
     _r1.o = ((java_util_TreeMap*) _r4.o)->fields.java_util_TreeMap.root_;
     _r2.o = JAVA_NULL;
@@ -1922,38 +1922,38 @@ JAVA_OBJECT java_util_TreeMap_clone__(JAVA_OBJECT me)
     _r1.o = java_util_TreeMap_minimum___java_util_TreeMap_Node(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w29903aaac14b1b3)
-        XMLVM_CATCH_SPECIFIC(w29903aaac14b1b3,java_lang_CloneNotSupportedException,42)
-    XMLVM_CATCH_END(w29903aaac14b1b3)
-    XMLVM_RESTORE_EXCEPTION_ENV(w29903aaac14b1b3)
+    XMLVM_CATCH_BEGIN(w29929aaac14b1b3)
+        XMLVM_CATCH_SPECIFIC(w29929aaac14b1b3,java_lang_CloneNotSupportedException,42)
+    XMLVM_CATCH_END(w29929aaac14b1b3)
+    XMLVM_RESTORE_EXCEPTION_ENV(w29929aaac14b1b3)
     label29:;
-    XMLVM_TRY_BEGIN(w29903aaac14b1b5)
+    XMLVM_TRY_BEGIN(w29929aaac14b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("TreeMap.java", 3834)
     _r2.o = java_util_TreeMap_successor___java_util_TreeMap_Node(_r1.o);
     XMLVM_SOURCE_POSITION("TreeMap.java", 3835)
-    if (_r2.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w29903aaac14b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29903aaac14b1b5, sizeof(XMLVM_JMP_BUF)); goto label36; };
+    if (_r2.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w29929aaac14b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29929aaac14b1b5, sizeof(XMLVM_JMP_BUF)); goto label36; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w29903aaac14b1b5)
-        XMLVM_CATCH_SPECIFIC(w29903aaac14b1b5,java_lang_CloneNotSupportedException,42)
-    XMLVM_CATCH_END(w29903aaac14b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w29903aaac14b1b5)
+    XMLVM_CATCH_BEGIN(w29929aaac14b1b5)
+        XMLVM_CATCH_SPECIFIC(w29929aaac14b1b5,java_lang_CloneNotSupportedException,42)
+    XMLVM_CATCH_END(w29929aaac14b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w29929aaac14b1b5)
     label35:;
-    XMLVM_TRY_BEGIN(w29903aaac14b1b7)
+    XMLVM_TRY_BEGIN(w29929aaac14b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("TreeMap.java", 3845)
-    XMLVM_MEMCPY(curThread_w29903aaac14b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29903aaac14b1b7, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w29929aaac14b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29929aaac14b1b7, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w29903aaac14b1b7)
-        XMLVM_CATCH_SPECIFIC(w29903aaac14b1b7,java_lang_CloneNotSupportedException,42)
-    XMLVM_CATCH_END(w29903aaac14b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w29903aaac14b1b7)
+    XMLVM_CATCH_BEGIN(w29929aaac14b1b7)
+        XMLVM_CATCH_SPECIFIC(w29929aaac14b1b7,java_lang_CloneNotSupportedException,42)
+    XMLVM_CATCH_END(w29929aaac14b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w29929aaac14b1b7)
     label36:;
-    XMLVM_TRY_BEGIN(w29903aaac14b1b9)
+    XMLVM_TRY_BEGIN(w29929aaac14b1b9)
     // Begin try
     XMLVM_SOURCE_POSITION("TreeMap.java", 3838)
     ((java_util_TreeMap_Node*) _r2.o)->fields.java_util_TreeMap_Node.prev_ = _r1.o;
@@ -1961,16 +1961,16 @@ JAVA_OBJECT java_util_TreeMap_clone__(JAVA_OBJECT me)
     ((java_util_TreeMap_Node*) _r1.o)->fields.java_util_TreeMap_Node.next_ = _r2.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w29903aaac14b1b9)
-        XMLVM_CATCH_SPECIFIC(w29903aaac14b1b9,java_lang_CloneNotSupportedException,42)
-    XMLVM_CATCH_END(w29903aaac14b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w29903aaac14b1b9)
+    XMLVM_CATCH_BEGIN(w29929aaac14b1b9)
+        XMLVM_CATCH_SPECIFIC(w29929aaac14b1b9,java_lang_CloneNotSupportedException,42)
+    XMLVM_CATCH_END(w29929aaac14b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w29929aaac14b1b9)
     _r1 = _r2;
     XMLVM_SOURCE_POSITION("TreeMap.java", 3833)
     goto label29;
     label42:;
-    java_lang_Thread* curThread_w29903aaac14b1c14 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w29903aaac14b1c14->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w29929aaac14b1c14 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w29929aaac14b1c14->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r3;
     goto label35;
     //XMLVM_END_WRAPPER

@@ -820,7 +820,7 @@ void java_util_ArrayList___CLINIT_()
     _r2.o = __NEW_java_io_ObjectStreamField();
     XMLVM_SOURCE_POSITION("ArrayList.java", 691)
     // "size"
-    _r3.o = xmlvm_create_java_string_from_pool(988);
+    _r3.o = xmlvm_create_java_string_from_pool(991);
     _r4.o = java_lang_Integer_GET_TYPE();
     XMLVM_CHECK_NPE(2)
     java_io_ObjectStreamField___INIT____java_lang_String_java_lang_Class(_r2.o, _r3.o, _r4.o);
@@ -972,7 +972,7 @@ void java_util_ArrayList_add___int_java_lang_Object(JAVA_OBJECT me, JAVA_INT n1,
     _r0.o = __NEW_java_lang_IndexOutOfBoundsException();
     XMLVM_SOURCE_POSITION("ArrayList.java", 113)
     // "luni.0A"
-    _r1.o = xmlvm_create_java_string_from_pool(1397);
+    _r1.o = xmlvm_create_java_string_from_pool(1400);
     XMLVM_SOURCE_POSITION("ArrayList.java", 114)
     _r2.o = java_lang_Integer_valueOf___int(_r6.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 115)
@@ -1168,7 +1168,7 @@ JAVA_BOOLEAN java_util_ArrayList_addAll___int_java_util_Collection(JAVA_OBJECT m
     _r0.o = __NEW_java_lang_IndexOutOfBoundsException();
     XMLVM_SOURCE_POSITION("ArrayList.java", 183)
     // "luni.0A"
-    _r1.o = xmlvm_create_java_string_from_pool(1397);
+    _r1.o = xmlvm_create_java_string_from_pool(1400);
     XMLVM_SOURCE_POSITION("ArrayList.java", 184)
     _r2.o = java_lang_Integer_valueOf___int(_r9.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 185)
@@ -1412,7 +1412,7 @@ JAVA_OBJECT java_util_ArrayList_clone__(JAVA_OBJECT me)
     XMLVMElem _r1;
     XMLVMElem _r2;
     _r2.o = me;
-    XMLVM_TRY_BEGIN(w19074aaac15b1b2)
+    XMLVM_TRY_BEGIN(w19105aaac15b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("ArrayList.java", 286)
     XMLVM_CHECK_NPE(2)
@@ -1427,17 +1427,17 @@ JAVA_OBJECT java_util_ArrayList_clone__(JAVA_OBJECT me)
     ((java_util_ArrayList*) _r0.o)->fields.java_util_ArrayList.array_ = _r2.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w19074aaac15b1b2)
-        XMLVM_CATCH_SPECIFIC(w19074aaac15b1b2,java_lang_CloneNotSupportedException,17)
-    XMLVM_CATCH_END(w19074aaac15b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w19074aaac15b1b2)
+    XMLVM_CATCH_BEGIN(w19105aaac15b1b2)
+        XMLVM_CATCH_SPECIFIC(w19105aaac15b1b2,java_lang_CloneNotSupportedException,17)
+    XMLVM_CATCH_END(w19105aaac15b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w19105aaac15b1b2)
     label16:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 290)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label17:;
-    java_lang_Thread* curThread_w19074aaac15b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w19074aaac15b1b7->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w19105aaac15b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w19105aaac15b1b7->fields.java_lang_Thread.xmlvmException_;
     _r0.o = JAVA_NULL;
     goto label16;
     //XMLVM_END_WRAPPER
@@ -1563,7 +1563,7 @@ JAVA_OBJECT java_util_ArrayList_get___int(JAVA_OBJECT me, JAVA_INT n1)
     _r0.o = __NEW_java_lang_IndexOutOfBoundsException();
     XMLVM_SOURCE_POSITION("ArrayList.java", 346)
     // "luni.0A"
-    _r1.o = xmlvm_create_java_string_from_pool(1397);
+    _r1.o = xmlvm_create_java_string_from_pool(1400);
     XMLVM_SOURCE_POSITION("ArrayList.java", 347)
     _r2.o = java_lang_Integer_valueOf___int(_r5.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 348)
@@ -2008,7 +2008,7 @@ JAVA_OBJECT java_util_ArrayList_remove___int(JAVA_OBJECT me, JAVA_INT n1)
     _r0.o = __NEW_java_lang_IndexOutOfBoundsException();
     XMLVM_SOURCE_POSITION("ArrayList.java", 497)
     // "luni.0A"
-    _r1.o = xmlvm_create_java_string_from_pool(1397);
+    _r1.o = xmlvm_create_java_string_from_pool(1400);
     XMLVM_SOURCE_POSITION("ArrayList.java", 498)
     _r2.o = java_lang_Integer_valueOf___int(_r9.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 499)
@@ -2184,7 +2184,7 @@ void java_util_ArrayList_removeRange___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA
     _r0.o = __NEW_java_lang_IndexOutOfBoundsException();
     XMLVM_SOURCE_POSITION("ArrayList.java", 561)
     // "luni.0B"
-    _r1.o = xmlvm_create_java_string_from_pool(1398);
+    _r1.o = xmlvm_create_java_string_from_pool(1401);
     XMLVM_SOURCE_POSITION("ArrayList.java", 562)
     _r2.o = java_lang_Integer_valueOf___int(_r7.i);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object(_r1.o, _r2.o);
@@ -2199,7 +2199,7 @@ void java_util_ArrayList_removeRange___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA
     _r0.o = __NEW_java_lang_IndexOutOfBoundsException();
     XMLVM_SOURCE_POSITION("ArrayList.java", 567)
     // "luni.0A"
-    _r1.o = xmlvm_create_java_string_from_pool(1397);
+    _r1.o = xmlvm_create_java_string_from_pool(1400);
     XMLVM_SOURCE_POSITION("ArrayList.java", 568)
     _r2.o = java_lang_Integer_valueOf___int(_r8.i);
     _r3.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.size_;
@@ -2215,7 +2215,7 @@ void java_util_ArrayList_removeRange___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA
     _r0.o = __NEW_java_lang_IndexOutOfBoundsException();
     XMLVM_SOURCE_POSITION("ArrayList.java", 572)
     // "luni.35"
-    _r1.o = xmlvm_create_java_string_from_pool(1399);
+    _r1.o = xmlvm_create_java_string_from_pool(1402);
     XMLVM_SOURCE_POSITION("ArrayList.java", 573)
     _r2.o = java_lang_Integer_valueOf___int(_r7.i);
     _r3.o = java_lang_Integer_valueOf___int(_r8.i);
@@ -2315,7 +2315,7 @@ JAVA_OBJECT java_util_ArrayList_set___int_java_lang_Object(JAVA_OBJECT me, JAVA_
     _r0.o = __NEW_java_lang_IndexOutOfBoundsException();
     XMLVM_SOURCE_POSITION("ArrayList.java", 613)
     // "luni.0A"
-    _r1.o = xmlvm_create_java_string_from_pool(1397);
+    _r1.o = xmlvm_create_java_string_from_pool(1400);
     XMLVM_SOURCE_POSITION("ArrayList.java", 614)
     _r2.o = java_lang_Integer_valueOf___int(_r5.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 615)
@@ -2490,7 +2490,7 @@ void java_util_ArrayList_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me
     _r0.o = java_io_ObjectOutputStream_putFields__(_r4.o);
     XMLVM_SOURCE_POSITION("ArrayList.java", 695)
     // "size"
-    _r1.o = xmlvm_create_java_string_from_pool(988);
+    _r1.o = xmlvm_create_java_string_from_pool(991);
     _r2.i = ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.size_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_int[11]
     XMLVM_CHECK_NPE(0)
@@ -2544,7 +2544,7 @@ void java_util_ArrayList_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, 
     _r0.o = java_io_ObjectInputStream_readFields__(_r4.o);
     XMLVM_SOURCE_POSITION("ArrayList.java", 708)
     // "size"
-    _r1.o = xmlvm_create_java_string_from_pool(988);
+    _r1.o = xmlvm_create_java_string_from_pool(991);
     //java_io_ObjectInputStream_GetField_get___java_lang_String_int[13]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[13])(_r0.o, _r1.o, _r2.i);

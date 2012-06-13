@@ -2025,7 +2025,7 @@ void java_lang_System_ensureProperties__()
     XMLVMElem _r13;
     _r12.i = 1;
     // "console.encoding"
-    _r13.o = xmlvm_create_java_string_from_pool(2507);
+    _r13.o = xmlvm_create_java_string_from_pool(2510);
     XMLVM_SOURCE_POSITION("System.java", 497)
     _r9.o = __NEW_java_util_Properties();
     XMLVM_CHECK_NPE(9)
@@ -2061,7 +2061,7 @@ void java_lang_System_ensureProperties__()
     XMLVM_SOURCE_POSITION("System.java", 523)
     _r9.o = java_lang_System_GET_systemProperties();
     // "os.encoding"
-    _r10.o = xmlvm_create_java_string_from_pool(2508);
+    _r10.o = xmlvm_create_java_string_from_pool(2511);
     //java_util_Properties_put___java_lang_Object_java_lang_Object[10]
     XMLVM_CHECK_NPE(9)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Properties*) _r9.o)->tib->vtable[10])(_r9.o, _r10.o, _r7.o);
@@ -2076,43 +2076,43 @@ void java_lang_System_ensureProperties__()
     XMLVM_SOURCE_POSITION("System.java", 528)
     _r9.o = java_lang_System_GET_systemProperties();
     // "java.version"
-    _r10.o = xmlvm_create_java_string_from_pool(1910);
+    _r10.o = xmlvm_create_java_string_from_pool(1913);
     // "1.5 subset"
-    _r11.o = xmlvm_create_java_string_from_pool(2509);
+    _r11.o = xmlvm_create_java_string_from_pool(2512);
     //java_util_Properties_put___java_lang_Object_java_lang_Object[10]
     XMLVM_CHECK_NPE(9)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Properties*) _r9.o)->tib->vtable[10])(_r9.o, _r10.o, _r11.o);
     XMLVM_SOURCE_POSITION("System.java", 529)
     _r9.o = java_lang_System_GET_systemProperties();
     // "java.specification.version"
-    _r10.o = xmlvm_create_java_string_from_pool(2510);
+    _r10.o = xmlvm_create_java_string_from_pool(2513);
     // "1.5"
-    _r11.o = xmlvm_create_java_string_from_pool(2511);
+    _r11.o = xmlvm_create_java_string_from_pool(2514);
     //java_util_Properties_put___java_lang_Object_java_lang_Object[10]
     XMLVM_CHECK_NPE(9)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Properties*) _r9.o)->tib->vtable[10])(_r9.o, _r10.o, _r11.o);
     XMLVM_SOURCE_POSITION("System.java", 531)
     _r9.o = java_lang_System_GET_systemProperties();
     // "java.specification.vendor"
-    _r10.o = xmlvm_create_java_string_from_pool(2512);
+    _r10.o = xmlvm_create_java_string_from_pool(2515);
     // "Sun Microsystems Inc."
-    _r11.o = xmlvm_create_java_string_from_pool(2513);
+    _r11.o = xmlvm_create_java_string_from_pool(2516);
     //java_util_Properties_put___java_lang_Object_java_lang_Object[10]
     XMLVM_CHECK_NPE(9)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Properties*) _r9.o)->tib->vtable[10])(_r9.o, _r10.o, _r11.o);
     XMLVM_SOURCE_POSITION("System.java", 532)
     _r9.o = java_lang_System_GET_systemProperties();
     // "java.specification.name"
-    _r10.o = xmlvm_create_java_string_from_pool(2514);
+    _r10.o = xmlvm_create_java_string_from_pool(2517);
     // "Java Platform API Specification"
-    _r11.o = xmlvm_create_java_string_from_pool(2515);
+    _r11.o = xmlvm_create_java_string_from_pool(2518);
     //java_util_Properties_put___java_lang_Object_java_lang_Object[10]
     XMLVM_CHECK_NPE(9)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Properties*) _r9.o)->tib->vtable[10])(_r9.o, _r10.o, _r11.o);
     XMLVM_SOURCE_POSITION("System.java", 534)
     _r9.o = java_lang_System_GET_systemProperties();
     // "com.ibm.oti.configuration"
-    _r10.o = xmlvm_create_java_string_from_pool(2516);
+    _r10.o = xmlvm_create_java_string_from_pool(2519);
     // "clear"
     _r11.o = xmlvm_create_java_string_from_pool(798);
     //java_util_Properties_put___java_lang_Object_java_lang_Object[10]
@@ -2121,9 +2121,9 @@ void java_lang_System_ensureProperties__()
     XMLVM_SOURCE_POSITION("System.java", 535)
     _r9.o = java_lang_System_GET_systemProperties();
     // "com.ibm.oti.configuration.dir"
-    _r10.o = xmlvm_create_java_string_from_pool(2517);
+    _r10.o = xmlvm_create_java_string_from_pool(2520);
     // "jclClear"
-    _r11.o = xmlvm_create_java_string_from_pool(2518);
+    _r11.o = xmlvm_create_java_string_from_pool(2521);
     //java_util_Properties_put___java_lang_Object_java_lang_Object[10]
     XMLVM_CHECK_NPE(9)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Properties*) _r9.o)->tib->vtable[10])(_r9.o, _r10.o, _r11.o);
@@ -2144,7 +2144,7 @@ void java_lang_System_ensureProperties__()
     XMLVM_SOURCE_POSITION("System.java", 546)
     _r9.o = java_lang_System_GET_systemProperties();
     // "console.encoding"
-    _r10.o = xmlvm_create_java_string_from_pool(2507);
+    _r10.o = xmlvm_create_java_string_from_pool(2510);
     //java_util_Properties_get___java_lang_Object[7]
     XMLVM_CHECK_NPE(9)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Properties*) _r9.o)->tib->vtable[7])(_r9.o, _r13.o);
@@ -2161,7 +2161,7 @@ void java_lang_System_ensureProperties__()
     XMLVM_SOURCE_POSITION("System.java", 552)
     _r9.o = java_lang_System_GET_systemProperties();
     // "console.encoding"
-    _r10.o = xmlvm_create_java_string_from_pool(2507);
+    _r10.o = xmlvm_create_java_string_from_pool(2510);
     //java_util_Properties_put___java_lang_Object_java_lang_Object[10]
     XMLVM_CHECK_NPE(9)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Properties*) _r9.o)->tib->vtable[10])(_r9.o, _r13.o, _r0.o);
@@ -2243,7 +2243,7 @@ JAVA_OBJECT java_lang_System_getenv___java_lang_String(JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuilder___INIT___(_r2.o);
     // "getenv."
-    _r3.o = xmlvm_create_java_string_from_pool(2519);
+    _r3.o = xmlvm_create_java_string_from_pool(2522);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r3.o);
     XMLVM_CHECK_NPE(2)
@@ -2279,7 +2279,7 @@ JAVA_OBJECT java_lang_System_getenv__()
     XMLVM_SOURCE_POSITION("System.java", 626)
     _r1.o = __NEW_java_lang_RuntimePermission();
     // "getenv.*"
-    _r2.o = xmlvm_create_java_string_from_pool(2520);
+    _r2.o = xmlvm_create_java_string_from_pool(2523);
     XMLVM_CHECK_NPE(1)
     java_lang_RuntimePermission___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(0)
@@ -2388,7 +2388,7 @@ JAVA_OBJECT java_lang_System_getProperty___java_lang_String_java_lang_String(JAV
     label12:;
     XMLVM_SOURCE_POSITION("System.java", 729)
     // "file.separator"
-    _r1.o = xmlvm_create_java_string_from_pool(2521);
+    _r1.o = xmlvm_create_java_string_from_pool(2524);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
@@ -2403,7 +2403,7 @@ JAVA_OBJECT java_lang_System_getProperty___java_lang_String_java_lang_String(JAV
     label23:;
     XMLVM_SOURCE_POSITION("System.java", 732)
     // "path.separator"
-    _r1.o = xmlvm_create_java_string_from_pool(2522);
+    _r1.o = xmlvm_create_java_string_from_pool(2525);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
@@ -2415,7 +2415,7 @@ JAVA_OBJECT java_lang_System_getProperty___java_lang_String_java_lang_String(JAV
     label34:;
     XMLVM_SOURCE_POSITION("System.java", 735)
     // "user.dir"
-    _r1.o = xmlvm_create_java_string_from_pool(1571);
+    _r1.o = xmlvm_create_java_string_from_pool(1574);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
@@ -2426,7 +2426,7 @@ JAVA_OBJECT java_lang_System_getProperty___java_lang_String_java_lang_String(JAV
     label47:;
     XMLVM_SOURCE_POSITION("System.java", 738)
     // "javax.xml.parsers.DocumentBuilderFactory"
-    _r1.o = xmlvm_create_java_string_from_pool(2523);
+    _r1.o = xmlvm_create_java_string_from_pool(2526);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
@@ -2586,7 +2586,7 @@ void java_lang_System_loadLibrary___java_lang_String(JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r3.o);
     // " couldn't be loaded. Library loading is not yet implemented"
-    _r2.o = xmlvm_create_java_string_from_pool(2524);
+    _r2.o = xmlvm_create_java_string_from_pool(2527);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     //java_lang_StringBuilder_toString__[5]

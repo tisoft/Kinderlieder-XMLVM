@@ -326,7 +326,7 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentFragment_getNodeName__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomDocumentFragment.java", 72)
     // "#document-fragment"
-    _r0.o = xmlvm_create_java_string_from_pool(2690);
+    _r0.o = xmlvm_create_java_string_from_pool(2693);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

@@ -384,7 +384,7 @@ JAVA_OBJECT gnu_xml_xpath_Predicate_toString__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Predicate.java", 82)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "["
-    _r1.o = xmlvm_create_java_string_from_pool(1370);
+    _r1.o = xmlvm_create_java_string_from_pool(1373);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     _r1.o = ((gnu_xml_xpath_Predicate*) _r2.o)->fields.gnu_xml_xpath_Predicate.expr_;

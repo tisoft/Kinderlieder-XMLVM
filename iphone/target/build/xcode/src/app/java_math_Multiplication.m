@@ -1474,7 +1474,7 @@ JAVA_OBJECT java_math_Multiplication_powerOf10___long(JAVA_LONG n1)
     XMLVM_SOURCE_POSITION("Multiplication.java", 443)
     _r0.o = __NEW_java_lang_ArithmeticException();
     // "math.01"
-    _r1.o = xmlvm_create_java_string_from_pool(1836);
+    _r1.o = xmlvm_create_java_string_from_pool(1839);
     _r1.o = org_apache_harmony_math_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_ArithmeticException___INIT____java_lang_String(_r0.o, _r1.o);

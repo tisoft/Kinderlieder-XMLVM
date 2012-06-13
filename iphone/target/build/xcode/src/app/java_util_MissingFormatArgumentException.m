@@ -296,7 +296,7 @@ JAVA_OBJECT java_util_MissingFormatArgumentException_getMessage__(JAVA_OBJECT me
     _r2.o = me;
     XMLVM_SOURCE_POSITION("MissingFormatArgumentException.java", 63)
     // "luni.39"
-    _r0.o = xmlvm_create_java_string_from_pool(3231);
+    _r0.o = xmlvm_create_java_string_from_pool(3234);
     _r1.o = ((java_util_MissingFormatArgumentException*) _r2.o)->fields.java_util_MissingFormatArgumentException.s_;
     _r0.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object(_r0.o, _r1.o);
     XMLVM_EXIT_METHOD()

@@ -483,7 +483,7 @@ void gnu_xml_dom_DomIterator___INIT____org_w3c_dom_Node_int_org_w3c_dom_traversa
     java_lang_Object___INIT___(_r4.o);
     XMLVM_SOURCE_POSITION("DomIterator.java", 76)
     // "MutationEvents"
-    _r0.o = xmlvm_create_java_string_from_pool(1957);
+    _r0.o = xmlvm_create_java_string_from_pool(1960);
     // "2.0"
     _r1.o = xmlvm_create_java_string_from_pool(401);
     XMLVM_CHECK_NPE(5)
@@ -494,7 +494,7 @@ void gnu_xml_dom_DomIterator___INIT____org_w3c_dom_Node_int_org_w3c_dom_traversa
     _r1.i = 9;
     XMLVM_SOURCE_POSITION("DomIterator.java", 79)
     // "Iterator needs mutation events"
-    _r2.o = xmlvm_create_java_string_from_pool(3235);
+    _r2.o = xmlvm_create_java_string_from_pool(3238);
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_DomDOMException___INIT____short_java_lang_String_org_w3c_dom_Node_int(_r0.o, _r1.i, _r2.o, _r5.o, _r3.i);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -517,7 +517,7 @@ void gnu_xml_dom_DomIterator___INIT____org_w3c_dom_Node_int_org_w3c_dom_traversa
     _r5.o = _r5.o;
     XMLVM_SOURCE_POSITION("DomIterator.java", 92)
     // "DOMNodeRemoved"
-    _r0.o = xmlvm_create_java_string_from_pool(3053);
+    _r0.o = xmlvm_create_java_string_from_pool(3056);
     XMLVM_CHECK_NPE(5)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_events_EventTarget_addEventListener___java_lang_String_org_w3c_dom_events_EventListener_boolean])(_r5.o, _r0.o, _r4.o, _r3.i);
     XMLVM_SOURCE_POSITION("DomIterator.java", 93)
@@ -540,7 +540,7 @@ void gnu_xml_dom_DomIterator_detach__(JAVA_OBJECT me)
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("DomIterator.java", 104)
     // "DOMNodeRemoved"
-    _r1.o = xmlvm_create_java_string_from_pool(3053);
+    _r1.o = xmlvm_create_java_string_from_pool(3056);
     _r2.i = 0;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_events_EventTarget_removeEventListener___java_lang_String_org_w3c_dom_events_EventListener_boolean])(_r0.o, _r1.o, _r3.o, _r2.i);
@@ -919,7 +919,7 @@ void gnu_xml_dom_DomIterator_handleEvent___org_w3c_dom_events_Event(JAVA_OBJECT 
     if (_r0.o == JAVA_NULL) goto label23;
     XMLVM_SOURCE_POSITION("DomIterator.java", 329)
     // "DOMNodeRemoved"
-    _r0.o = xmlvm_create_java_string_from_pool(3053);
+    _r0.o = xmlvm_create_java_string_from_pool(3056);
     XMLVM_CHECK_NPE(4)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r4.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_events_Event_getType__])(_r4.o);
     //java_lang_String_equals___java_lang_Object[1]

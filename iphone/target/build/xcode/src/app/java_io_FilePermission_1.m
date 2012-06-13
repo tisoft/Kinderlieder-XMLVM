@@ -247,7 +247,7 @@ JAVA_OBJECT java_io_FilePermission_1_run__(JAVA_OBJECT me)
     XMLVMElem _r1;
     XMLVMElem _r2;
     _r2.o = me;
-    XMLVM_TRY_BEGIN(w26035aaab3b1b2)
+    XMLVM_TRY_BEGIN(w26061aaab3b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("FilePermission.java", 110)
     _r0.o = __NEW_java_io_File();
@@ -258,17 +258,17 @@ JAVA_OBJECT java_io_FilePermission_1_run__(JAVA_OBJECT me)
     _r0.o = java_io_File_getCanonicalPath__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w26035aaab3b1b2)
-        XMLVM_CATCH_SPECIFIC(w26035aaab3b1b2,java_io_IOException,12)
-    XMLVM_CATCH_END(w26035aaab3b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w26035aaab3b1b2)
+    XMLVM_CATCH_BEGIN(w26061aaab3b1b2)
+        XMLVM_CATCH_SPECIFIC(w26061aaab3b1b2,java_io_IOException,12)
+    XMLVM_CATCH_END(w26061aaab3b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w26061aaab3b1b2)
     label11:;
     XMLVM_SOURCE_POSITION("FilePermission.java", 112)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label12:;
-    java_lang_Thread* curThread_w26035aaab3b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w26035aaab3b1b7->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w26061aaab3b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w26061aaab3b1b7->fields.java_lang_Thread.xmlvmException_;
     _r0.o = ((java_io_FilePermission_1*) _r2.o)->fields.java_io_FilePermission_1.val_path_;
     goto label11;
     //XMLVM_END_WRAPPER

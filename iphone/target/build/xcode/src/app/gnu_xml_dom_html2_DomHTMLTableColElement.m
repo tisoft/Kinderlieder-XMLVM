@@ -797,7 +797,7 @@ JAVA_INT gnu_xml_dom_html2_DomHTMLTableColElement_getSpan__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLTableColElement.java", 91)
     // "span"
-    _r0.o = xmlvm_create_java_string_from_pool(2534);
+    _r0.o = xmlvm_create_java_string_from_pool(2537);
     XMLVM_CHECK_NPE(1)
     _r0.i = gnu_xml_dom_html2_DomHTMLElement_getIntHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -816,7 +816,7 @@ void gnu_xml_dom_html2_DomHTMLTableColElement_setSpan___int(JAVA_OBJECT me, JAVA
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DomHTMLTableColElement.java", 96)
     // "span"
-    _r0.o = xmlvm_create_java_string_from_pool(2534);
+    _r0.o = xmlvm_create_java_string_from_pool(2537);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setIntHTMLAttribute___java_lang_String_int(_r1.o, _r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("DomHTMLTableColElement.java", 97)

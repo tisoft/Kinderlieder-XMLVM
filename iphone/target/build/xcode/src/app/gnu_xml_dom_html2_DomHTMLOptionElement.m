@@ -737,7 +737,7 @@ JAVA_BOOLEAN gnu_xml_dom_html2_DomHTMLOptionElement_getDefaultSelected__(JAVA_OB
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLOptionElement.java", 68)
     // "selected"
-    _r0.o = xmlvm_create_java_string_from_pool(1379);
+    _r0.o = xmlvm_create_java_string_from_pool(1382);
     XMLVM_CHECK_NPE(1)
     _r0.i = gnu_xml_dom_html2_DomHTMLElement_getBooleanHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -756,7 +756,7 @@ void gnu_xml_dom_html2_DomHTMLOptionElement_setDefaultSelected___boolean(JAVA_OB
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DomHTMLOptionElement.java", 73)
     // "selected"
-    _r0.o = xmlvm_create_java_string_from_pool(1379);
+    _r0.o = xmlvm_create_java_string_from_pool(1382);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setBooleanHTMLAttribute___java_lang_String_boolean(_r1.o, _r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("DomHTMLOptionElement.java", 74)

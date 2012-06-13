@@ -897,7 +897,7 @@ void java_io_DataInputStream_readFully___byte_1ARRAY_int_int(JAVA_OBJECT me, JAV
     XMLVM_SOURCE_POSITION("DataInputStream.java", 247)
     _r0.o = __NEW_java_lang_NullPointerException();
     // "luni.AA"
-    _r1.o = xmlvm_create_java_string_from_pool(3054);
+    _r1.o = xmlvm_create_java_string_from_pool(3057);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_NullPointerException___INIT____java_lang_String(_r0.o, _r1.o);

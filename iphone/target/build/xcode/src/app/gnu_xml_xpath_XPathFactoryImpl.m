@@ -329,7 +329,7 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathFactoryImpl_isObjectModelSupported___java_lang_S
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XPathFactoryImpl.java", 60)
     // "http://java.sun.com/jaxp/xpath/dom"
-    _r0.o = xmlvm_create_java_string_from_pool(974);
+    _r0.o = xmlvm_create_java_string_from_pool(977);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r2.o);

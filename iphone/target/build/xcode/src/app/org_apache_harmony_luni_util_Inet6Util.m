@@ -423,7 +423,7 @@ void org_apache_harmony_luni_util_Inet6Util___CLINIT_()
     XMLVMElem _r0;
     XMLVM_SOURCE_POSITION("Inet6Util.java", 147)
     // "0123456789ABCDEF"
-    _r0.o = xmlvm_create_java_string_from_pool(1159);
+    _r0.o = xmlvm_create_java_string_from_pool(1162);
     org_apache_harmony_luni_util_Inet6Util_PUT_hexCharacters( _r0.o);
     XMLVM_SOURCE_POSITION("Inet6Util.java", 25)
     XMLVM_EXIT_METHOD()
@@ -527,7 +527,7 @@ JAVA_OBJECT org_apache_harmony_luni_util_Inet6Util_createByteArrayFromIPAddressS
     XMLVM_SOURCE_POSITION("Inet6Util.java", 52)
     _r1.o = __NEW_java_util_StringTokenizer();
     // ":."
-    _r2.o = xmlvm_create_java_string_from_pool(2449);
+    _r2.o = xmlvm_create_java_string_from_pool(2452);
     XMLVM_CHECK_NPE(1)
     java_util_StringTokenizer___INIT____java_lang_String_java_lang_String_boolean(_r1.o, _r0.o, _r2.o, _r9.i);
     XMLVM_SOURCE_POSITION("Inet6Util.java", 53)
@@ -1331,7 +1331,7 @@ JAVA_BOOLEAN org_apache_harmony_luni_util_Inet6Util_isIP6AddressInFullForm___jav
     if (_r0.i == 0) goto label19;
     XMLVM_SOURCE_POSITION("Inet6Util.java", 311)
     // "::"
-    _r0.o = xmlvm_create_java_string_from_pool(2450);
+    _r0.o = xmlvm_create_java_string_from_pool(2453);
     XMLVM_CHECK_NPE(2)
     _r0.i = java_lang_String_indexOf___java_lang_String(_r2.o, _r0.o);
     XMLVM_SOURCE_POSITION("Inet6Util.java", 312)
@@ -1618,17 +1618,17 @@ JAVA_BOOLEAN org_apache_harmony_luni_util_Inet6Util_isValidIP6Address___java_lan
     label217:;
     XMLVM_SOURCE_POSITION("Inet6Util.java", 415)
     _r5.i = _r1.i + 1;
-    XMLVM_TRY_BEGIN(w30872aaac11b1d222)
+    XMLVM_TRY_BEGIN(w30898aaac11b1d222)
     // Begin try
     XMLVM_CHECK_NPE(15)
     _r5.o = java_lang_String_substring___int(_r15.o, _r5.i);
     java_lang_Integer_parseInt___java_lang_String(_r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w30872aaac11b1d222)
-        XMLVM_CATCH_SPECIFIC(w30872aaac11b1d222,java_lang_NumberFormatException,233)
-    XMLVM_CATCH_END(w30872aaac11b1d222)
-    XMLVM_RESTORE_EXCEPTION_ENV(w30872aaac11b1d222)
+    XMLVM_CATCH_BEGIN(w30898aaac11b1d222)
+        XMLVM_CATCH_SPECIFIC(w30898aaac11b1d222,java_lang_NumberFormatException,233)
+    XMLVM_CATCH_END(w30898aaac11b1d222)
+    XMLVM_RESTORE_EXCEPTION_ENV(w30898aaac11b1d222)
     _r5 = _r6;
     _r6 = _r7;
     _r7 = _r8;
@@ -1638,8 +1638,8 @@ JAVA_BOOLEAN org_apache_harmony_luni_util_Inet6Util_isValidIP6Address___java_lan
     goto label160;
     label233:;
     XMLVM_SOURCE_POSITION("Inet6Util.java", 420)
-    java_lang_Thread* curThread_w30872aaac11b1d232 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r15.o = curThread_w30872aaac11b1d232->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w30898aaac11b1d232 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r15.o = curThread_w30898aaac11b1d232->fields.java_lang_Thread.xmlvmException_;
     _r15.i = 0;
     goto label16;
     label237:;
@@ -1839,7 +1839,7 @@ JAVA_BOOLEAN org_apache_harmony_luni_util_Inet6Util_isValidIPV4Address___java_la
     _r4.i = 0;
     XMLVM_SOURCE_POSITION("Inet6Util.java", 494)
     // "[\134p\173Digit\175\134.]*"
-    _r0.o = xmlvm_create_java_string_from_pool(2451);
+    _r0.o = xmlvm_create_java_string_from_pool(2454);
     XMLVM_CHECK_NPE(6)
     _r0.i = java_lang_String_matches___java_lang_String(_r6.o, _r0.o);
     if (_r0.i != 0) goto label12;

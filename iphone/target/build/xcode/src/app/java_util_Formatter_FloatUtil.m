@@ -526,7 +526,7 @@ void java_util_Formatter_FloatUtil_transform_e__(JAVA_OBJECT me)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r3.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2036)
     // "+00"
-    _r1.o = xmlvm_create_java_string_from_pool(1382);
+    _r1.o = xmlvm_create_java_string_from_pool(1385);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2037)
@@ -566,7 +566,7 @@ void java_util_Formatter_FloatUtil_transform_e__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Formatter.java", 2045)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.result_;
     // "e"
-    _r1.o = xmlvm_create_java_string_from_pool(1383);
+    _r1.o = xmlvm_create_java_string_from_pool(1386);
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_AbstractStringBuilder_indexOf___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2046)

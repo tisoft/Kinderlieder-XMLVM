@@ -474,7 +474,7 @@ void gnu_xml_pipeline_XIncludeFilter_Scrubber_startDTD___java_lang_String_java_l
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 489)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "XIncluded DTD: "
-    _r1.o = xmlvm_create_java_string_from_pool(2321);
+    _r1.o = xmlvm_create_java_string_from_pool(2324);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_CHECK_NPE(0)
@@ -498,7 +498,7 @@ void gnu_xml_pipeline_XIncludeFilter_Scrubber_endDTD__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 492)
     // "XIncluded DTD"
-    _r0.o = xmlvm_create_java_string_from_pool(2322);
+    _r0.o = xmlvm_create_java_string_from_pool(2325);
     XMLVM_CHECK_NPE(1)
     gnu_xml_pipeline_XIncludeFilter_Scrubber_reject___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -519,7 +519,7 @@ void gnu_xml_pipeline_XIncludeFilter_Scrubber_skippedEntity___java_lang_String(J
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 495)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "XInclude skipped entity: "
-    _r1.o = xmlvm_create_java_string_from_pool(2323);
+    _r1.o = xmlvm_create_java_string_from_pool(2326);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_CHECK_NPE(0)

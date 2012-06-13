@@ -1720,7 +1720,7 @@ JAVA_OBJECT java_util_LinkedList_clone__(JAVA_OBJECT me)
     XMLVMElem _r6;
     _r6.o = me;
     _r5.o = JAVA_NULL;
-    XMLVM_TRY_BEGIN(w12927aaac14b1b3)
+    XMLVM_TRY_BEGIN(w12956aaac14b1b3)
     // Begin try
     XMLVM_SOURCE_POSITION("LinkedList.java", 458)
     XMLVM_CHECK_NPE(6)
@@ -1751,17 +1751,17 @@ JAVA_OBJECT java_util_LinkedList_clone__(JAVA_OBJECT me)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_LinkedList*) _r0.o)->tib->vtable[6])(_r0.o, _r6.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w12927aaac14b1b3)
-        XMLVM_CATCH_SPECIFIC(w12927aaac14b1b3,java_lang_CloneNotSupportedException,36)
-    XMLVM_CATCH_END(w12927aaac14b1b3)
-    XMLVM_RESTORE_EXCEPTION_ENV(w12927aaac14b1b3)
+    XMLVM_CATCH_BEGIN(w12956aaac14b1b3)
+        XMLVM_CATCH_SPECIFIC(w12956aaac14b1b3,java_lang_CloneNotSupportedException,36)
+    XMLVM_CATCH_END(w12956aaac14b1b3)
+    XMLVM_RESTORE_EXCEPTION_ENV(w12956aaac14b1b3)
     label35:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 466)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label36:;
-    java_lang_Thread* curThread_w12927aaac14b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w12927aaac14b1b8->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w12956aaac14b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w12956aaac14b1b8->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r5;
     goto label35;
     //XMLVM_END_WRAPPER

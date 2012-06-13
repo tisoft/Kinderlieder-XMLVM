@@ -193,7 +193,7 @@ void gnu_xml_dom_DomNode_DomEventException___INIT___(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DomNode.java", 1514)
     _r0.i = 0;
     // "unspecified event type"
-    _r1.o = xmlvm_create_java_string_from_pool(2662);
+    _r1.o = xmlvm_create_java_string_from_pool(2665);
     XMLVM_CHECK_NPE(2)
     org_w3c_dom_events_EventException___INIT____short_java_lang_String(_r2.o, _r0.i, _r1.o);
     XMLVM_SOURCE_POSITION("DomNode.java", 1515)

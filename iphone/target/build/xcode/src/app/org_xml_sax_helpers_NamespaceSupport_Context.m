@@ -528,7 +528,7 @@ void org_xml_sax_helpers_NamespaceSupport_Context_declarePrefix___java_lang_Stri
     _r0.o = __NEW_java_lang_IllegalStateException();
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 599)
     // "can't declare any more prefixes in this context"
-    _r1.o = xmlvm_create_java_string_from_pool(2617);
+    _r1.o = xmlvm_create_java_string_from_pool(2620);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalStateException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -679,7 +679,7 @@ JAVA_OBJECT org_xml_sax_helpers_NamespaceSupport_Context_processName___java_lang
     if (_r2.i == 0) goto label73;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 670)
     // "http://www.w3.org/xmlns/2000/"
-    _r2.o = xmlvm_create_java_string_from_pool(1474);
+    _r2.o = xmlvm_create_java_string_from_pool(1477);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r2.o;

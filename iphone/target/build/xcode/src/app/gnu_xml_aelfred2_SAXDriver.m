@@ -1807,7 +1807,7 @@ void gnu_xml_aelfred2_SAXDriver_setLocale___java_util_Locale(JAVA_OBJECT me, JAV
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 203)
     // "en"
-    _r0.o = xmlvm_create_java_string_from_pool(990);
+    _r0.o = xmlvm_create_java_string_from_pool(993);
     XMLVM_CHECK_NPE(3)
     _r1.o = java_util_Locale_getLanguage__(_r3.o);
     //java_lang_String_equals___java_lang_Object[1]
@@ -1821,7 +1821,7 @@ void gnu_xml_aelfred2_SAXDriver_setLocale___java_util_Locale(JAVA_OBJECT me, JAV
     XMLVM_SOURCE_POSITION("SAXDriver.java", 207)
     _r0.o = __NEW_org_xml_sax_SAXException();
     // "AElfred2 only supports English locales."
-    _r1.o = xmlvm_create_java_string_from_pool(2287);
+    _r1.o = xmlvm_create_java_string_from_pool(2290);
     XMLVM_CHECK_NPE(0)
     org_xml_sax_SAXException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -2073,7 +2073,7 @@ void gnu_xml_aelfred2_SAXDriver_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     XMLVM_SOURCE_POSITION("SAXDriver.java", 346)
     _r6.o = ((gnu_xml_aelfred2_SAXDriver*) _r7.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
     java_lang_Object_acquireLockRecursive__(_r6.o);
-    XMLVM_TRY_BEGIN(w25366aaac37b1b6)
+    XMLVM_TRY_BEGIN(w25392aaac37b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXDriver.java", 348)
     _r0.o = __NEW_gnu_xml_aelfred2_XmlParser();
@@ -2082,7 +2082,7 @@ void gnu_xml_aelfred2_SAXDriver_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     ((gnu_xml_aelfred2_SAXDriver*) _r7.o)->fields.gnu_xml_aelfred2_SAXDriver.parser_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 349)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r7.o)->fields.gnu_xml_aelfred2_SAXDriver.namespaces_;
-    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w25366aaac37b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25366aaac37b1b6, sizeof(XMLVM_JMP_BUF)); goto label61; };
+    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w25392aaac37b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25392aaac37b1b6, sizeof(XMLVM_JMP_BUF)); goto label61; };
     XMLVM_SOURCE_POSITION("SAXDriver.java", 351)
     _r0.o = __NEW_org_xml_sax_helpers_NamespaceSupport();
     XMLVM_CHECK_NPE(0)
@@ -2090,12 +2090,12 @@ void gnu_xml_aelfred2_SAXDriver_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     ((gnu_xml_aelfred2_SAXDriver*) _r7.o)->fields.gnu_xml_aelfred2_SAXDriver.prefixStack_ = _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25366aaac37b1b6)
-        XMLVM_CATCH_SPECIFIC(w25366aaac37b1b6,java_lang_Object,71)
-    XMLVM_CATCH_END(w25366aaac37b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25366aaac37b1b6)
+    XMLVM_CATCH_BEGIN(w25392aaac37b1b6)
+        XMLVM_CATCH_SPECIFIC(w25392aaac37b1b6,java_lang_Object,71)
+    XMLVM_CATCH_END(w25392aaac37b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25392aaac37b1b6)
     label21:;
-    XMLVM_TRY_BEGIN(w25366aaac37b1b8)
+    XMLVM_TRY_BEGIN(w25392aaac37b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXDriver.java", 357)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r7.o)->fields.gnu_xml_aelfred2_SAXDriver.parser_;
@@ -2103,11 +2103,11 @@ void gnu_xml_aelfred2_SAXDriver_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     gnu_xml_aelfred2_XmlParser_setHandler___gnu_xml_aelfred2_SAXDriver(_r0.o, _r7.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25366aaac37b1b8)
-        XMLVM_CATCH_SPECIFIC(w25366aaac37b1b8,java_lang_Object,71)
-    XMLVM_CATCH_END(w25366aaac37b1b8)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25366aaac37b1b8)
-    XMLVM_TRY_BEGIN(w25366aaac37b1b9)
+    XMLVM_CATCH_BEGIN(w25392aaac37b1b8)
+        XMLVM_CATCH_SPECIFIC(w25392aaac37b1b8,java_lang_Object,71)
+    XMLVM_CATCH_END(w25392aaac37b1b8)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25392aaac37b1b8)
+    XMLVM_TRY_BEGIN(w25392aaac37b1b9)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXDriver.java", 361)
     XMLVM_CHECK_NPE(8)
@@ -2129,15 +2129,15 @@ void gnu_xml_aelfred2_SAXDriver_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     gnu_xml_aelfred2_XmlParser_doParse___java_lang_String_java_lang_String_java_io_Reader_java_io_InputStream_java_lang_String(_r0.o, _r1.o, _r2.o, _r3.o, _r4.o, _r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25366aaac37b1b9)
-        XMLVM_CATCH_SPECIFIC(w25366aaac37b1b9,org_xml_sax_SAXException,74)
-        XMLVM_CATCH_SPECIFIC(w25366aaac37b1b9,java_io_IOException,86)
-        XMLVM_CATCH_SPECIFIC(w25366aaac37b1b9,java_lang_RuntimeException,88)
-        XMLVM_CATCH_SPECIFIC(w25366aaac37b1b9,java_lang_Exception,90)
-        XMLVM_CATCH_SPECIFIC(w25366aaac37b1b9,java_lang_Object,76)
-    XMLVM_CATCH_END(w25366aaac37b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25366aaac37b1b9)
-    XMLVM_TRY_BEGIN(w25366aaac37b1c10)
+    XMLVM_CATCH_BEGIN(w25392aaac37b1b9)
+        XMLVM_CATCH_SPECIFIC(w25392aaac37b1b9,org_xml_sax_SAXException,74)
+        XMLVM_CATCH_SPECIFIC(w25392aaac37b1b9,java_io_IOException,86)
+        XMLVM_CATCH_SPECIFIC(w25392aaac37b1b9,java_lang_RuntimeException,88)
+        XMLVM_CATCH_SPECIFIC(w25392aaac37b1b9,java_lang_Exception,90)
+        XMLVM_CATCH_SPECIFIC(w25392aaac37b1b9,java_lang_Object,76)
+    XMLVM_CATCH_END(w25392aaac37b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25392aaac37b1b9)
+    XMLVM_TRY_BEGIN(w25392aaac37b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXDriver.java", 388)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r7.o)->fields.gnu_xml_aelfred2_SAXDriver.contentHandler_;
@@ -2148,21 +2148,21 @@ void gnu_xml_aelfred2_SAXDriver_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     gnu_xml_aelfred2_SAXDriver_reset__(_r7.o);
     java_lang_Object_releaseLockRecursive__(_r6.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 392)
-    XMLVM_MEMCPY(curThread_w25366aaac37b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25366aaac37b1c10, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w25392aaac37b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25392aaac37b1c10, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25366aaac37b1c10)
-        XMLVM_CATCH_SPECIFIC(w25366aaac37b1c10,java_lang_Object,71)
-    XMLVM_CATCH_END(w25366aaac37b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25366aaac37b1c10)
+    XMLVM_CATCH_BEGIN(w25392aaac37b1c10)
+        XMLVM_CATCH_SPECIFIC(w25392aaac37b1c10,java_lang_Object,71)
+    XMLVM_CATCH_END(w25392aaac37b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25392aaac37b1c10)
     label61:;
-    XMLVM_TRY_BEGIN(w25366aaac37b1c12)
+    XMLVM_TRY_BEGIN(w25392aaac37b1c12)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXDriver.java", 353)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r7.o)->fields.gnu_xml_aelfred2_SAXDriver.xmlNames_;
-    if (_r0.i != 0) { XMLVM_MEMCPY(curThread_w25366aaac37b1c12->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25366aaac37b1c12, sizeof(XMLVM_JMP_BUF)); goto label21; };
+    if (_r0.i != 0) { XMLVM_MEMCPY(curThread_w25392aaac37b1c12->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25392aaac37b1c12, sizeof(XMLVM_JMP_BUF)); goto label21; };
     XMLVM_SOURCE_POSITION("SAXDriver.java", 355)
     _r0.o = __NEW_java_lang_IllegalStateException();
     XMLVM_CHECK_NPE(0)
@@ -2170,42 +2170,42 @@ void gnu_xml_aelfred2_SAXDriver_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25366aaac37b1c12)
-        XMLVM_CATCH_SPECIFIC(w25366aaac37b1c12,java_lang_Object,71)
-    XMLVM_CATCH_END(w25366aaac37b1c12)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25366aaac37b1c12)
+    XMLVM_CATCH_BEGIN(w25392aaac37b1c12)
+        XMLVM_CATCH_SPECIFIC(w25392aaac37b1c12,java_lang_Object,71)
+    XMLVM_CATCH_END(w25392aaac37b1c12)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25392aaac37b1c12)
     label71:;
-    XMLVM_TRY_BEGIN(w25366aaac37b1c14)
+    XMLVM_TRY_BEGIN(w25392aaac37b1c14)
     // Begin try
-    java_lang_Thread* curThread_w25366aaac37b1c14aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25366aaac37b1c14aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w25392aaac37b1c14aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25392aaac37b1c14aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r6.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25366aaac37b1c14)
-        XMLVM_CATCH_SPECIFIC(w25366aaac37b1c14,java_lang_Object,71)
-    XMLVM_CATCH_END(w25366aaac37b1c14)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25366aaac37b1c14)
+    XMLVM_CATCH_BEGIN(w25392aaac37b1c14)
+        XMLVM_CATCH_SPECIFIC(w25392aaac37b1c14,java_lang_Object,71)
+    XMLVM_CATCH_END(w25392aaac37b1c14)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25392aaac37b1c14)
     XMLVM_THROW_CUSTOM(_r0.o)
     label74:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 370)
-    java_lang_Thread* curThread_w25366aaac37b1c18 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25366aaac37b1c18->fields.java_lang_Thread.xmlvmException_;
-    XMLVM_TRY_BEGIN(w25366aaac37b1c19)
+    java_lang_Thread* curThread_w25392aaac37b1c18 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25392aaac37b1c18->fields.java_lang_Thread.xmlvmException_;
+    XMLVM_TRY_BEGIN(w25392aaac37b1c19)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXDriver.java", 372)
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25366aaac37b1c19)
-        XMLVM_CATCH_SPECIFIC(w25366aaac37b1c19,java_lang_Object,76)
-    XMLVM_CATCH_END(w25366aaac37b1c19)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25366aaac37b1c19)
+    XMLVM_CATCH_BEGIN(w25392aaac37b1c19)
+        XMLVM_CATCH_SPECIFIC(w25392aaac37b1c19,java_lang_Object,76)
+    XMLVM_CATCH_END(w25392aaac37b1c19)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25392aaac37b1c19)
     label76:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 387)
-    java_lang_Thread* curThread_w25366aaac37b1c22 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25366aaac37b1c22->fields.java_lang_Thread.xmlvmException_;
-    XMLVM_TRY_BEGIN(w25366aaac37b1c23)
+    java_lang_Thread* curThread_w25392aaac37b1c22 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25392aaac37b1c22->fields.java_lang_Thread.xmlvmException_;
+    XMLVM_TRY_BEGIN(w25392aaac37b1c23)
     // Begin try
     _r1.o = ((gnu_xml_aelfred2_SAXDriver*) _r7.o)->fields.gnu_xml_aelfred2_SAXDriver.contentHandler_;
     XMLVM_CHECK_NPE(1)
@@ -2216,44 +2216,44 @@ void gnu_xml_aelfred2_SAXDriver_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25366aaac37b1c23)
-        XMLVM_CATCH_SPECIFIC(w25366aaac37b1c23,java_lang_Object,71)
-    XMLVM_CATCH_END(w25366aaac37b1c23)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25366aaac37b1c23)
+    XMLVM_CATCH_BEGIN(w25392aaac37b1c23)
+        XMLVM_CATCH_SPECIFIC(w25392aaac37b1c23,java_lang_Object,71)
+    XMLVM_CATCH_END(w25392aaac37b1c23)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25392aaac37b1c23)
     label86:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 374)
-    java_lang_Thread* curThread_w25366aaac37b1c26 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25366aaac37b1c26->fields.java_lang_Thread.xmlvmException_;
-    XMLVM_TRY_BEGIN(w25366aaac37b1c27)
+    java_lang_Thread* curThread_w25392aaac37b1c26 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25392aaac37b1c26->fields.java_lang_Thread.xmlvmException_;
+    XMLVM_TRY_BEGIN(w25392aaac37b1c27)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXDriver.java", 376)
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25366aaac37b1c27)
-        XMLVM_CATCH_SPECIFIC(w25366aaac37b1c27,java_lang_Object,76)
-    XMLVM_CATCH_END(w25366aaac37b1c27)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25366aaac37b1c27)
+    XMLVM_CATCH_BEGIN(w25392aaac37b1c27)
+        XMLVM_CATCH_SPECIFIC(w25392aaac37b1c27,java_lang_Object,76)
+    XMLVM_CATCH_END(w25392aaac37b1c27)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25392aaac37b1c27)
     label88:;
-    XMLVM_TRY_BEGIN(w25366aaac37b1c29)
+    XMLVM_TRY_BEGIN(w25392aaac37b1c29)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXDriver.java", 378)
-    java_lang_Thread* curThread_w25366aaac37b1c29ab1 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25366aaac37b1c29ab1->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w25392aaac37b1c29ab1 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25392aaac37b1c29ab1->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 380)
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25366aaac37b1c29)
-        XMLVM_CATCH_SPECIFIC(w25366aaac37b1c29,java_lang_Object,76)
-    XMLVM_CATCH_END(w25366aaac37b1c29)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25366aaac37b1c29)
+    XMLVM_CATCH_BEGIN(w25392aaac37b1c29)
+        XMLVM_CATCH_SPECIFIC(w25392aaac37b1c29,java_lang_Object,76)
+    XMLVM_CATCH_END(w25392aaac37b1c29)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25392aaac37b1c29)
     label90:;
-    XMLVM_TRY_BEGIN(w25366aaac37b1c31)
+    XMLVM_TRY_BEGIN(w25392aaac37b1c31)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXDriver.java", 382)
-    java_lang_Thread* curThread_w25366aaac37b1c31ab1 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25366aaac37b1c31ab1->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w25392aaac37b1c31ab1 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25392aaac37b1c31ab1->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 384)
     _r1.o = __NEW_org_xml_sax_SAXParseException();
     //java_lang_Exception_getMessage__[7]
@@ -2264,10 +2264,10 @@ void gnu_xml_aelfred2_SAXDriver_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     XMLVM_THROW_CUSTOM(_r1.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25366aaac37b1c31)
-        XMLVM_CATCH_SPECIFIC(w25366aaac37b1c31,java_lang_Object,76)
-    XMLVM_CATCH_END(w25366aaac37b1c31)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25366aaac37b1c31)
+    XMLVM_CATCH_BEGIN(w25392aaac37b1c31)
+        XMLVM_CATCH_SPECIFIC(w25392aaac37b1c31,java_lang_Object,76)
+    XMLVM_CATCH_END(w25392aaac37b1c31)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25392aaac37b1c31)
     //XMLVM_END_WRAPPER
 }
 
@@ -2364,7 +2364,7 @@ JAVA_BOOLEAN gnu_xml_aelfred2_SAXDriver_getFeature___java_lang_String(JAVA_OBJEC
     label55:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 447)
     // "http://xml.org/sax/features/lexical-handler/parameter-entities"
-    _r0.o = xmlvm_create_java_string_from_pool(2288);
+    _r0.o = xmlvm_create_java_string_from_pool(2291);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
@@ -2419,7 +2419,7 @@ JAVA_BOOLEAN gnu_xml_aelfred2_SAXDriver_getFeature___java_lang_String(JAVA_OBJEC
     label111:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 477)
     // "http://xml.org/sax/features/resolve-dtd-uris"
-    _r0.o = xmlvm_create_java_string_from_pool(2289);
+    _r0.o = xmlvm_create_java_string_from_pool(2292);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
@@ -2560,7 +2560,7 @@ void gnu_xml_aelfred2_SAXDriver_setFeature___java_lang_String_boolean(JAVA_OBJEC
     XMLVM_SOURCE_POSITION("SAXDriver.java", 544)
     _r0.o = __NEW_org_xml_sax_SAXNotSupportedException();
     // "not while parsing"
-    _r1.o = xmlvm_create_java_string_from_pool(2290);
+    _r1.o = xmlvm_create_java_string_from_pool(2293);
     XMLVM_CHECK_NPE(0)
     org_xml_sax_SAXNotSupportedException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -2621,7 +2621,7 @@ void gnu_xml_aelfred2_SAXDriver_setFeature___java_lang_String_boolean(JAVA_OBJEC
     label76:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 580)
     // "http://xml.org/sax/features/resolve-dtd-uris"
-    _r0.o = xmlvm_create_java_string_from_pool(2289);
+    _r0.o = xmlvm_create_java_string_from_pool(2292);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
@@ -2940,15 +2940,15 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_absolutize___java_lang_String_java_lang_S
     _r6.i = n3;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 730)
     if (_r4.o != JAVA_NULL) goto label34;
-    XMLVM_TRY_BEGIN(w25366aaac49b1b7)
+    XMLVM_TRY_BEGIN(w25392aaac49b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXDriver.java", 732)
     _r0.i = gnu_xml_aelfred2_XmlParser_GET_uriWarnings();
-    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w25366aaac49b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25366aaac49b1b7, sizeof(XMLVM_JMP_BUF)); goto label24; };
+    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w25392aaac49b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25392aaac49b1b7, sizeof(XMLVM_JMP_BUF)); goto label24; };
     XMLVM_SOURCE_POSITION("SAXDriver.java", 734)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "No base URI; hope this SYSTEM id is absolute: "
-    _r1.o = xmlvm_create_java_string_from_pool(2291);
+    _r1.o = xmlvm_create_java_string_from_pool(2294);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 735)
@@ -2961,12 +2961,12 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_absolutize___java_lang_String_java_lang_S
     gnu_xml_aelfred2_SAXDriver_warn___java_lang_String(_r3.o, _r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25366aaac49b1b7)
-        XMLVM_CATCH_SPECIFIC(w25366aaac49b1b7,java_net_MalformedURLException,49)
-    XMLVM_CATCH_END(w25366aaac49b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25366aaac49b1b7)
+    XMLVM_CATCH_BEGIN(w25392aaac49b1b7)
+        XMLVM_CATCH_SPECIFIC(w25392aaac49b1b7,java_net_MalformedURLException,49)
+    XMLVM_CATCH_END(w25392aaac49b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25392aaac49b1b7)
     label24:;
-    XMLVM_TRY_BEGIN(w25366aaac49b1b9)
+    XMLVM_TRY_BEGIN(w25392aaac49b1b9)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXDriver.java", 737)
     _r0.o = __NEW_java_net_URL();
@@ -2977,25 +2977,25 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_absolutize___java_lang_String_java_lang_S
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_net_URL*) _r0.o)->tib->vtable[5])(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25366aaac49b1b9)
-        XMLVM_CATCH_SPECIFIC(w25366aaac49b1b9,java_net_MalformedURLException,49)
-    XMLVM_CATCH_END(w25366aaac49b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25366aaac49b1b9)
+    XMLVM_CATCH_BEGIN(w25392aaac49b1b9)
+        XMLVM_CATCH_SPECIFIC(w25392aaac49b1b9,java_net_MalformedURLException,49)
+    XMLVM_CATCH_END(w25392aaac49b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25392aaac49b1b9)
     label33:;
-    XMLVM_TRY_BEGIN(w25366aaac49b1c11)
+    XMLVM_TRY_BEGIN(w25392aaac49b1c11)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXDriver.java", 756)
-    XMLVM_MEMCPY(curThread_w25366aaac49b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25366aaac49b1c11, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w25392aaac49b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25392aaac49b1c11, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25366aaac49b1c11)
-        XMLVM_CATCH_SPECIFIC(w25366aaac49b1c11,java_net_MalformedURLException,49)
-    XMLVM_CATCH_END(w25366aaac49b1c11)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25366aaac49b1c11)
+    XMLVM_CATCH_BEGIN(w25392aaac49b1c11)
+        XMLVM_CATCH_SPECIFIC(w25392aaac49b1c11,java_net_MalformedURLException,49)
+    XMLVM_CATCH_END(w25392aaac49b1c11)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25392aaac49b1c11)
     label34:;
-    XMLVM_TRY_BEGIN(w25366aaac49b1c13)
+    XMLVM_TRY_BEGIN(w25392aaac49b1c13)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXDriver.java", 741)
     _r0.o = __NEW_java_net_URL();
@@ -3009,15 +3009,15 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_absolutize___java_lang_String_java_lang_S
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_net_URL*) _r0.o)->tib->vtable[5])(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25366aaac49b1c13)
-        XMLVM_CATCH_SPECIFIC(w25366aaac49b1c13,java_net_MalformedURLException,49)
-    XMLVM_CATCH_END(w25366aaac49b1c13)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25366aaac49b1c13)
+    XMLVM_CATCH_BEGIN(w25392aaac49b1c13)
+        XMLVM_CATCH_SPECIFIC(w25392aaac49b1c13,java_net_MalformedURLException,49)
+    XMLVM_CATCH_END(w25392aaac49b1c13)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25392aaac49b1c13)
     goto label33;
     label49:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 744)
-    java_lang_Thread* curThread_w25366aaac49b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25366aaac49b1c17->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w25392aaac49b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25392aaac49b1c17->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 748)
     if (_r6.i != 0) goto label53;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 750)
@@ -3026,7 +3026,7 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_absolutize___java_lang_String_java_lang_S
     XMLVM_SOURCE_POSITION("SAXDriver.java", 755)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "Can't absolutize SYSTEM id: "
-    _r2.o = xmlvm_create_java_string_from_pool(2292);
+    _r2.o = xmlvm_create_java_string_from_pool(2295);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     //java_net_MalformedURLException_getMessage__[7]
@@ -3085,7 +3085,7 @@ void gnu_xml_aelfred2_SAXDriver_endExternalEntity___java_lang_String(JAVA_OBJECT
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 780)
     // "[document]"
-    _r0.o = xmlvm_create_java_string_from_pool(2293);
+    _r0.o = xmlvm_create_java_string_from_pool(2296);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r2.o);
@@ -3183,35 +3183,35 @@ void gnu_xml_aelfred2_SAXDriver_notationDecl___java_lang_String_java_lang_String
     _r5.o = n2;
     _r6.o = n3;
     _r7.o = n4;
-    XMLVM_TRY_BEGIN(w25366aaac55b1b6)
+    XMLVM_TRY_BEGIN(w25392aaac55b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXDriver.java", 818)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.dtdHandler_;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 819)
     _r1.i = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.resolveAll_;
-    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w25366aaac55b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25366aaac55b1b6, sizeof(XMLVM_JMP_BUF)); goto label17; };
-    if (_r6.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w25366aaac55b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25366aaac55b1b6, sizeof(XMLVM_JMP_BUF)); goto label17; };
+    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w25392aaac55b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25392aaac55b1b6, sizeof(XMLVM_JMP_BUF)); goto label17; };
+    if (_r6.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w25392aaac55b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25392aaac55b1b6, sizeof(XMLVM_JMP_BUF)); goto label17; };
     XMLVM_SOURCE_POSITION("SAXDriver.java", 820)
     _r1.i = 1;
     XMLVM_CHECK_NPE(3)
     _r1.o = gnu_xml_aelfred2_SAXDriver_absolutize___java_lang_String_java_lang_String_boolean(_r3.o, _r7.o, _r6.o, _r1.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25366aaac55b1b6)
-        XMLVM_CATCH_SPECIFIC(w25366aaac55b1b6,java_io_IOException,19)
-    XMLVM_CATCH_END(w25366aaac55b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25366aaac55b1b6)
+    XMLVM_CATCH_BEGIN(w25392aaac55b1b6)
+        XMLVM_CATCH_SPECIFIC(w25392aaac55b1b6,java_io_IOException,19)
+    XMLVM_CATCH_END(w25392aaac55b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25392aaac55b1b6)
     label13:;
-    XMLVM_TRY_BEGIN(w25366aaac55b1b8)
+    XMLVM_TRY_BEGIN(w25392aaac55b1b8)
     // Begin try
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_DTDHandler_notationDecl___java_lang_String_java_lang_String_java_lang_String])(_r0.o, _r4.o, _r5.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25366aaac55b1b8)
-        XMLVM_CATCH_SPECIFIC(w25366aaac55b1b8,java_io_IOException,19)
-    XMLVM_CATCH_END(w25366aaac55b1b8)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25366aaac55b1b8)
+    XMLVM_CATCH_BEGIN(w25392aaac55b1b8)
+        XMLVM_CATCH_SPECIFIC(w25392aaac55b1b8,java_io_IOException,19)
+    XMLVM_CATCH_END(w25392aaac55b1b8)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25392aaac55b1b8)
     XMLVM_SOURCE_POSITION("SAXDriver.java", 828)
     XMLVM_EXIT_METHOD()
     return;
@@ -3221,8 +3221,8 @@ void gnu_xml_aelfred2_SAXDriver_notationDecl___java_lang_String_java_lang_String
     goto label13;
     label19:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 823)
-    java_lang_Thread* curThread_w25366aaac55b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25366aaac55b1c17->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w25392aaac55b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25392aaac55b1c17->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 826)
     _r1.o = __NEW_org_xml_sax_SAXParseException();
     //java_io_IOException_getMessage__[7]
@@ -3253,34 +3253,34 @@ void gnu_xml_aelfred2_SAXDriver_unparsedEntityDecl___java_lang_String_java_lang_
     _r6.o = n3;
     _r7.o = n4;
     _r8.o = n5;
-    XMLVM_TRY_BEGIN(w25366aaac56b1b7)
+    XMLVM_TRY_BEGIN(w25392aaac56b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXDriver.java", 836)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.dtdHandler_;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 837)
     _r1.i = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.resolveAll_;
-    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w25366aaac56b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25366aaac56b1b7, sizeof(XMLVM_JMP_BUF)); goto label15; };
+    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w25392aaac56b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25392aaac56b1b7, sizeof(XMLVM_JMP_BUF)); goto label15; };
     XMLVM_SOURCE_POSITION("SAXDriver.java", 838)
     _r1.i = 1;
     XMLVM_CHECK_NPE(3)
     _r1.o = gnu_xml_aelfred2_SAXDriver_absolutize___java_lang_String_java_lang_String_boolean(_r3.o, _r7.o, _r6.o, _r1.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25366aaac56b1b7)
-        XMLVM_CATCH_SPECIFIC(w25366aaac56b1b7,java_io_IOException,17)
-    XMLVM_CATCH_END(w25366aaac56b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25366aaac56b1b7)
+    XMLVM_CATCH_BEGIN(w25392aaac56b1b7)
+        XMLVM_CATCH_SPECIFIC(w25392aaac56b1b7,java_io_IOException,17)
+    XMLVM_CATCH_END(w25392aaac56b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25392aaac56b1b7)
     label11:;
-    XMLVM_TRY_BEGIN(w25366aaac56b1b9)
+    XMLVM_TRY_BEGIN(w25392aaac56b1b9)
     // Begin try
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_DTDHandler_unparsedEntityDecl___java_lang_String_java_lang_String_java_lang_String_java_lang_String])(_r0.o, _r4.o, _r5.o, _r1.o, _r8.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25366aaac56b1b9)
-        XMLVM_CATCH_SPECIFIC(w25366aaac56b1b9,java_io_IOException,17)
-    XMLVM_CATCH_END(w25366aaac56b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25366aaac56b1b9)
+    XMLVM_CATCH_BEGIN(w25392aaac56b1b9)
+        XMLVM_CATCH_SPECIFIC(w25392aaac56b1b9,java_io_IOException,17)
+    XMLVM_CATCH_END(w25392aaac56b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25392aaac56b1b9)
     XMLVM_SOURCE_POSITION("SAXDriver.java", 847)
     XMLVM_EXIT_METHOD()
     return;
@@ -3290,8 +3290,8 @@ void gnu_xml_aelfred2_SAXDriver_unparsedEntityDecl___java_lang_String_java_lang_
     goto label11;
     label17:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 842)
-    java_lang_Thread* curThread_w25366aaac56b1c18 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25366aaac56b1c18->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w25392aaac56b1c18 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25392aaac56b1c18->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 845)
     _r1.o = __NEW_org_xml_sax_SAXParseException();
     //java_io_IOException_getMessage__[7]
@@ -3347,7 +3347,7 @@ void gnu_xml_aelfred2_SAXDriver_declarePrefix___java_lang_String_java_lang_Strin
     XMLVM_SOURCE_POSITION("SAXDriver.java", 864)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "relative URI for namespace: "
-    _r1.o = xmlvm_create_java_string_from_pool(2294);
+    _r1.o = xmlvm_create_java_string_from_pool(2297);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_CHECK_NPE(0)
@@ -3379,7 +3379,7 @@ void gnu_xml_aelfred2_SAXDriver_declarePrefix___java_lang_String_java_lang_Strin
     label53:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 876)
     // "xml is by definition bound to the namespace name http://www.w3.org/XML/1998/namespace"
-    _r2.o = xmlvm_create_java_string_from_pool(2295);
+    _r2.o = xmlvm_create_java_string_from_pool(2298);
     XMLVM_CHECK_NPE(3)
     gnu_xml_aelfred2_SAXDriver_fatal___java_lang_String(_r3.o, _r2.o);
     label58:;
@@ -3412,7 +3412,7 @@ void gnu_xml_aelfred2_SAXDriver_declarePrefix___java_lang_String_java_lang_Strin
     label83:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 891)
     // "http://www.w3.org/2000/xmlns/ is by definition bound to prefix xmlns"
-    _r2.o = xmlvm_create_java_string_from_pool(2296);
+    _r2.o = xmlvm_create_java_string_from_pool(2299);
     XMLVM_CHECK_NPE(3)
     gnu_xml_aelfred2_SAXDriver_fatal___java_lang_String(_r3.o, _r2.o);
     label88:;
@@ -3421,7 +3421,7 @@ void gnu_xml_aelfred2_SAXDriver_declarePrefix___java_lang_String_java_lang_Strin
     if (_r1.i == 0) goto label97;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 899)
     // "declaring the xmlns prefix is illegal"
-    _r0.o = xmlvm_create_java_string_from_pool(2297);
+    _r0.o = xmlvm_create_java_string_from_pool(2300);
     XMLVM_CHECK_NPE(3)
     gnu_xml_aelfred2_SAXDriver_fatal___java_lang_String(_r3.o, _r0.o);
     label97:;
@@ -3524,7 +3524,7 @@ void gnu_xml_aelfred2_SAXDriver_attribute___java_lang_String_java_lang_String_bo
     if (_r1.i == 0) goto label77;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 944)
     // "missing prefix in namespace declaration attribute"
-    _r1.o = xmlvm_create_java_string_from_pool(2298);
+    _r1.o = xmlvm_create_java_string_from_pool(2301);
     XMLVM_CHECK_NPE(6)
     gnu_xml_aelfred2_SAXDriver_fatal___java_lang_String(_r6.o, _r1.o);
     label77:;
@@ -3536,7 +3536,7 @@ void gnu_xml_aelfred2_SAXDriver_attribute___java_lang_String_java_lang_String_bo
     XMLVM_SOURCE_POSITION("SAXDriver.java", 949)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "missing URI in namespace declaration attribute: "
-    _r1.o = xmlvm_create_java_string_from_pool(2299);
+    _r1.o = xmlvm_create_java_string_from_pool(2302);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 950)
@@ -3608,7 +3608,7 @@ void gnu_xml_aelfred2_SAXDriver_attribute___java_lang_String_java_lang_String_bo
     XMLVM_SOURCE_POSITION("SAXDriver.java", 980)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "missing URI in namespace decl attribute: "
-    _r1.o = xmlvm_create_java_string_from_pool(2300);
+    _r1.o = xmlvm_create_java_string_from_pool(2303);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 981)
@@ -3683,7 +3683,7 @@ void gnu_xml_aelfred2_SAXDriver_startElement___java_lang_String(JAVA_OBJECT me, 
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1088)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "undeclared element prefix in: "
-    _r2.o = xmlvm_create_java_string_from_pool(2301);
+    _r2.o = xmlvm_create_java_string_from_pool(2304);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r2.o);
     XMLVM_CHECK_NPE(0)
@@ -3768,7 +3768,7 @@ void gnu_xml_aelfred2_SAXDriver_startElement___java_lang_String(JAVA_OBJECT me, 
     if (_r4.i == 0) goto label135;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1058)
     // "namespace names consisting of a single colon character are invalid"
-    _r4.o = xmlvm_create_java_string_from_pool(2302);
+    _r4.o = xmlvm_create_java_string_from_pool(2305);
     XMLVM_CHECK_NPE(10)
     gnu_xml_aelfred2_SAXDriver_fatal___java_lang_String(_r10.o, _r4.o);
     label135:;
@@ -3794,7 +3794,7 @@ void gnu_xml_aelfred2_SAXDriver_startElement___java_lang_String(JAVA_OBJECT me, 
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1072)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "undeclared attribute prefix in: "
-    _r4.o = xmlvm_create_java_string_from_pool(2303);
+    _r4.o = xmlvm_create_java_string_from_pool(2306);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r4.o);
     XMLVM_CHECK_NPE(0)

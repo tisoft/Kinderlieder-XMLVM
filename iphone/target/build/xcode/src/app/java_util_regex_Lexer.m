@@ -3042,7 +3042,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Lexer.java", 547)
     // "regex.10"
-    _r1.o = xmlvm_create_java_string_from_pool(2479);
+    _r1.o = xmlvm_create_java_string_from_pool(2482);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r1.o);
     //java_util_regex_Lexer_toString__[5]
     XMLVM_CHECK_NPE(9)
@@ -3061,7 +3061,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     if (_r1.i != _r2.i) goto label771;
     _r1 = _r6;
     label161:;
-    XMLVM_TRY_BEGIN(w31350aaac88b1d131)
+    XMLVM_TRY_BEGIN(w31376aaac88b1d131)
     // Begin try
     XMLVM_SOURCE_POSITION("Lexer.java", 554)
     XMLVM_SOURCE_POSITION("Lexer.java", 558)
@@ -3070,10 +3070,10 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAheadST_ = _r1.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w31350aaac88b1d131)
-        XMLVM_CATCH_SPECIFIC(w31350aaac88b1d131,java_util_MissingResourceException,171)
-    XMLVM_CATCH_END(w31350aaac88b1d131)
-    XMLVM_RESTORE_EXCEPTION_ENV(w31350aaac88b1d131)
+    XMLVM_CATCH_BEGIN(w31376aaac88b1d131)
+        XMLVM_CATCH_SPECIFIC(w31376aaac88b1d131,java_util_MissingResourceException,171)
+    XMLVM_CATCH_END(w31376aaac88b1d131)
+    XMLVM_RESTORE_EXCEPTION_ENV(w31376aaac88b1d131)
     XMLVM_SOURCE_POSITION("Lexer.java", 564)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r4.i;
     _r0 = _r4;
@@ -3081,12 +3081,12 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     goto label125;
     label171:;
     XMLVM_SOURCE_POSITION("Lexer.java", 560)
-    java_lang_Thread* curThread_w31350aaac88b1d139 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w31350aaac88b1d139->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w31376aaac88b1d139 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w31376aaac88b1d139->fields.java_lang_Thread.xmlvmException_;
     _r1.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Lexer.java", 561)
     // "regex.11"
-    _r2.o = xmlvm_create_java_string_from_pool(2480);
+    _r2.o = xmlvm_create_java_string_from_pool(2483);
     _r0.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String_java_lang_Object(_r2.o, _r0.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 562)
     //java_util_regex_Lexer_toString__[5]
@@ -3185,7 +3185,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label275:;
     XMLVM_SOURCE_POSITION("Lexer.java", 625)
     // "hexadecimal"
-    _r0.o = xmlvm_create_java_string_from_pool(2481);
+    _r0.o = xmlvm_create_java_string_from_pool(2484);
     XMLVM_CHECK_NPE(9)
     _r0.i = java_util_regex_Lexer_readHex___java_lang_String_int(_r9.o, _r0.o, _r5.i);
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
@@ -3195,7 +3195,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label286:;
     XMLVM_SOURCE_POSITION("Lexer.java", 628)
     // "Unicode"
-    _r0.o = xmlvm_create_java_string_from_pool(2482);
+    _r0.o = xmlvm_create_java_string_from_pool(2485);
     XMLVM_CHECK_NPE(9)
     _r0.i = java_util_regex_Lexer_readHex___java_lang_String_int(_r9.o, _r0.o, _r7.i);
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
@@ -3267,7 +3267,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Lexer.java", 656)
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     // "regex.12"
-    _r1.o = xmlvm_create_java_string_from_pool(2483);
+    _r1.o = xmlvm_create_java_string_from_pool(2486);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 657)
     //java_util_regex_Lexer_toString__[5]
@@ -3281,7 +3281,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Lexer.java", 687)
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     // "regex.13"
-    _r1.o = xmlvm_create_java_string_from_pool(2484);
+    _r1.o = xmlvm_create_java_string_from_pool(2487);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 688)
     //java_util_regex_Lexer_toString__[5]
@@ -3504,7 +3504,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Lexer.java", 789)
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     // "regex.14"
-    _r1.o = xmlvm_create_java_string_from_pool(2485);
+    _r1.o = xmlvm_create_java_string_from_pool(2488);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 790)
     //java_util_regex_Lexer_toString__[5]
@@ -3671,7 +3671,7 @@ JAVA_OBJECT java_util_regex_Lexer_parseCharClassName__(JAVA_OBJECT me)
     _r6.i = 1;
     _r4.i = 2;
     // "Is"
-    _r5.o = xmlvm_create_java_string_from_pool(2486);
+    _r5.o = xmlvm_create_java_string_from_pool(2489);
     XMLVM_SOURCE_POSITION("Lexer.java", 854)
     _r0.o = __NEW_java_lang_StringBuilder();
     _r1.i = 10;
@@ -3694,7 +3694,7 @@ JAVA_OBJECT java_util_regex_Lexer_parseCharClassName__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Lexer.java", 858)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "Is"
-    _r1.o = xmlvm_create_java_string_from_pool(2486);
+    _r1.o = xmlvm_create_java_string_from_pool(2489);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r5.o);
     _r1.o = __NEW_java_lang_String();
@@ -3740,7 +3740,7 @@ JAVA_OBJECT java_util_regex_Lexer_parseCharClassName__(JAVA_OBJECT me)
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Lexer.java", 869)
     // "regex.15"
-    _r1.o = xmlvm_create_java_string_from_pool(2487);
+    _r1.o = xmlvm_create_java_string_from_pool(2490);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 870)
     //java_util_regex_Lexer_toString__[5]
@@ -3765,7 +3765,7 @@ JAVA_OBJECT java_util_regex_Lexer_parseCharClassName__(JAVA_OBJECT me)
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Lexer.java", 875)
     // "regex.16"
-    _r1.o = xmlvm_create_java_string_from_pool(2488);
+    _r1.o = xmlvm_create_java_string_from_pool(2491);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r1.o);
     //java_util_regex_Lexer_toString__[5]
     XMLVM_CHECK_NPE(8)
@@ -3788,7 +3788,7 @@ JAVA_OBJECT java_util_regex_Lexer_parseCharClassName__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Lexer.java", 880)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "Is"
-    _r2.o = xmlvm_create_java_string_from_pool(2486);
+    _r2.o = xmlvm_create_java_string_from_pool(2489);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r5.o);
     XMLVM_CHECK_NPE(1)
@@ -3804,13 +3804,13 @@ JAVA_OBJECT java_util_regex_Lexer_parseCharClassName__(JAVA_OBJECT me)
     _r2.i = 3;
     if (_r1.i <= _r2.i) goto label57;
     // "Is"
-    _r1.o = xmlvm_create_java_string_from_pool(2486);
+    _r1.o = xmlvm_create_java_string_from_pool(2489);
     XMLVM_CHECK_NPE(0)
     _r1.i = java_lang_String_startsWith___java_lang_String(_r0.o, _r5.o);
     if (_r1.i != 0) goto label177;
     XMLVM_SOURCE_POSITION("Lexer.java", 882)
     // "In"
-    _r1.o = xmlvm_create_java_string_from_pool(2489);
+    _r1.o = xmlvm_create_java_string_from_pool(2492);
     XMLVM_CHECK_NPE(0)
     _r1.i = java_lang_String_startsWith___java_lang_String(_r0.o, _r1.o);
     if (_r1.i == 0) goto label57;
@@ -3839,7 +3839,7 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     _r9.i = n1;
     _r7.i = 125;
     // "regex.17"
-    _r6.o = xmlvm_create_java_string_from_pool(2490);
+    _r6.o = xmlvm_create_java_string_from_pool(2493);
     XMLVM_SOURCE_POSITION("Lexer.java", 889)
     _r0.o = __NEW_java_lang_StringBuilder();
     _r1.i = 4;
@@ -3869,7 +3869,7 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Lexer.java", 908)
     // "regex.17"
-    _r1.o = xmlvm_create_java_string_from_pool(2490);
+    _r1.o = xmlvm_create_java_string_from_pool(2493);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r6.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 909)
     //java_util_regex_Lexer_toString__[5]
@@ -3884,7 +3884,7 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     _r4.i = 44;
     if (_r3.i != _r4.i) goto label96;
     if (_r1.i >= 0) goto label96;
-    XMLVM_TRY_BEGIN(w31350aaac90b1c41)
+    XMLVM_TRY_BEGIN(w31376aaac90b1c41)
     // Begin try
     XMLVM_SOURCE_POSITION("Lexer.java", 895)
     //java_lang_StringBuilder_toString__[5]
@@ -3900,19 +3900,19 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     java_lang_StringBuilder_delete___int_int(_r0.o, _r4.i, _r5.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w31350aaac90b1c41)
-        XMLVM_CATCH_SPECIFIC(w31350aaac90b1c41,java_lang_NumberFormatException,77)
-    XMLVM_CATCH_END(w31350aaac90b1c41)
-    XMLVM_RESTORE_EXCEPTION_ENV(w31350aaac90b1c41)
+    XMLVM_CATCH_BEGIN(w31376aaac90b1c41)
+        XMLVM_CATCH_SPECIFIC(w31376aaac90b1c41,java_lang_NumberFormatException,77)
+    XMLVM_CATCH_END(w31376aaac90b1c41)
+    XMLVM_RESTORE_EXCEPTION_ENV(w31376aaac90b1c41)
     goto label15;
     label77:;
     XMLVM_SOURCE_POSITION("Lexer.java", 898)
-    java_lang_Thread* curThread_w31350aaac90b1c45 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w31350aaac90b1c45->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w31376aaac90b1c45 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w31376aaac90b1c45->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Lexer.java", 899)
     // "regex.17"
-    _r1.o = xmlvm_create_java_string_from_pool(2490);
+    _r1.o = xmlvm_create_java_string_from_pool(2493);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r6.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 900)
     //java_util_regex_Lexer_toString__[5]
@@ -3934,7 +3934,7 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     XMLVM_CHECK_NPE(0)
     _r3.i = java_lang_AbstractStringBuilder_length__(_r0.o);
     if (_r3.i <= 0) goto label164;
-    XMLVM_TRY_BEGIN(w31350aaac90b1c64)
+    XMLVM_TRY_BEGIN(w31376aaac90b1c64)
     // Begin try
     XMLVM_SOURCE_POSITION("Lexer.java", 913)
     //java_lang_StringBuilder_toString__[5]
@@ -3944,10 +3944,10 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     _r0.i = java_lang_Integer_parseInt___java_lang_String_int(_r0.o, _r2.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w31350aaac90b1c64)
-        XMLVM_CATCH_SPECIFIC(w31350aaac90b1c64,java_lang_NumberFormatException,145)
-    XMLVM_CATCH_END(w31350aaac90b1c64)
-    XMLVM_RESTORE_EXCEPTION_ENV(w31350aaac90b1c64)
+    XMLVM_CATCH_BEGIN(w31376aaac90b1c64)
+        XMLVM_CATCH_SPECIFIC(w31376aaac90b1c64,java_lang_NumberFormatException,145)
+    XMLVM_CATCH_END(w31376aaac90b1c64)
+    XMLVM_RESTORE_EXCEPTION_ENV(w31376aaac90b1c64)
     XMLVM_SOURCE_POSITION("Lexer.java", 914)
     if (_r1.i >= 0) goto label120;
     _r1 = _r0;
@@ -3962,7 +3962,7 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Lexer.java", 928)
     // "regex.17"
-    _r1.o = xmlvm_create_java_string_from_pool(2490);
+    _r1.o = xmlvm_create_java_string_from_pool(2493);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r6.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 929)
     //java_util_regex_Lexer_toString__[5]
@@ -3974,12 +3974,12 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     XMLVM_THROW_CUSTOM(_r0.o)
     label145:;
     XMLVM_SOURCE_POSITION("Lexer.java", 917)
-    java_lang_Thread* curThread_w31350aaac90b1c87 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w31350aaac90b1c87->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w31376aaac90b1c87 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w31376aaac90b1c87->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Lexer.java", 918)
     // "regex.17"
-    _r1.o = xmlvm_create_java_string_from_pool(2490);
+    _r1.o = xmlvm_create_java_string_from_pool(2493);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r6.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 919)
     //java_util_regex_Lexer_toString__[5]
@@ -3996,7 +3996,7 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Lexer.java", 923)
     // "regex.17"
-    _r1.o = xmlvm_create_java_string_from_pool(2490);
+    _r1.o = xmlvm_create_java_string_from_pool(2493);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r6.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 924)
     //java_util_regex_Lexer_toString__[5]
@@ -4278,7 +4278,7 @@ JAVA_INT java_util_regex_Lexer_readHex___java_lang_String_int(JAVA_OBJECT me, JA
     label17:;
     XMLVM_SOURCE_POSITION("Lexer.java", 1014)
     if (_r2.i != _r7.i) goto label45;
-    XMLVM_TRY_BEGIN(w31350aaac99b1c21)
+    XMLVM_TRY_BEGIN(w31376aaac99b1c21)
     // Begin try
     XMLVM_SOURCE_POSITION("Lexer.java", 1016)
     //java_lang_StringBuilder_toString__[5]
@@ -4288,10 +4288,10 @@ JAVA_INT java_util_regex_Lexer_readHex___java_lang_String_int(JAVA_OBJECT me, JA
     _r0.i = java_lang_Integer_parseInt___java_lang_String_int(_r0.o, _r1.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w31350aaac99b1c21)
-        XMLVM_CATCH_SPECIFIC(w31350aaac99b1c21,java_lang_NumberFormatException,44)
-    XMLVM_CATCH_END(w31350aaac99b1c21)
-    XMLVM_RESTORE_EXCEPTION_ENV(w31350aaac99b1c21)
+    XMLVM_CATCH_BEGIN(w31376aaac99b1c21)
+        XMLVM_CATCH_SPECIFIC(w31376aaac99b1c21,java_lang_NumberFormatException,44)
+    XMLVM_CATCH_END(w31376aaac99b1c21)
+    XMLVM_RESTORE_EXCEPTION_ENV(w31376aaac99b1c21)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label30:;
@@ -4308,13 +4308,13 @@ JAVA_INT java_util_regex_Lexer_readHex___java_lang_String_int(JAVA_OBJECT me, JA
     _r2.i = _r2.i + 1;
     goto label11;
     label44:;
-    java_lang_Thread* curThread_w31350aaac99b1c32 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w31350aaac99b1c32->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w31376aaac99b1c32 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w31376aaac99b1c32->fields.java_lang_Thread.xmlvmException_;
     label45:;
     XMLVM_SOURCE_POSITION("Lexer.java", 1021)
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     // "regex.18"
-    _r1.o = xmlvm_create_java_string_from_pool(2491);
+    _r1.o = xmlvm_create_java_string_from_pool(2494);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String_java_lang_Object(_r1.o, _r6.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 1022)
     //java_util_regex_Lexer_toString__[5]
@@ -4393,7 +4393,7 @@ JAVA_INT java_util_regex_Lexer_readOctals__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Lexer.java", 1037)
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     // "regex.19"
-    _r1.o = xmlvm_create_java_string_from_pool(2492);
+    _r1.o = xmlvm_create_java_string_from_pool(2495);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 1038)
     //java_util_regex_Lexer_toString__[5]
@@ -4433,7 +4433,7 @@ JAVA_INT java_util_regex_Lexer_readFlags__(JAVA_OBJECT me)
     XMLVMElem _r6;
     _r6.o = me;
     // "regex.1A"
-    _r4.o = xmlvm_create_java_string_from_pool(2493);
+    _r4.o = xmlvm_create_java_string_from_pool(2496);
     XMLVM_SOURCE_POSITION("Lexer.java", 1062)
     _r0.i = 1;
     XMLVM_SOURCE_POSITION("Lexer.java", 1063)
@@ -4450,7 +4450,7 @@ JAVA_INT java_util_regex_Lexer_readFlags__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Lexer.java", 1125)
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     // "regex.1A"
-    _r1.o = xmlvm_create_java_string_from_pool(2493);
+    _r1.o = xmlvm_create_java_string_from_pool(2496);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r4.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 1126)
     //java_util_regex_Lexer_toString__[5]
@@ -4490,7 +4490,7 @@ JAVA_INT java_util_regex_Lexer_readFlags__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Lexer.java", 1070)
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     // "regex.1A"
-    _r1.o = xmlvm_create_java_string_from_pool(2493);
+    _r1.o = xmlvm_create_java_string_from_pool(2496);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r4.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 1071)
     //java_util_regex_Lexer_toString__[5]

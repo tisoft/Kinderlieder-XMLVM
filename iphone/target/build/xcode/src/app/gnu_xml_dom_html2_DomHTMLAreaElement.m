@@ -832,7 +832,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLAreaElement_getCoords__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLAreaElement.java", 80)
     // "coords"
-    _r0.o = xmlvm_create_java_string_from_pool(1376);
+    _r0.o = xmlvm_create_java_string_from_pool(1379);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -851,7 +851,7 @@ void gnu_xml_dom_html2_DomHTMLAreaElement_setCoords___java_lang_String(JAVA_OBJE
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLAreaElement.java", 85)
     // "coords"
-    _r0.o = xmlvm_create_java_string_from_pool(1376);
+    _r0.o = xmlvm_create_java_string_from_pool(1379);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLAreaElement.java", 86)
@@ -906,7 +906,7 @@ JAVA_BOOLEAN gnu_xml_dom_html2_DomHTMLAreaElement_getNoHref__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLAreaElement.java", 100)
     // "nohref"
-    _r0.o = xmlvm_create_java_string_from_pool(1377);
+    _r0.o = xmlvm_create_java_string_from_pool(1380);
     XMLVM_CHECK_NPE(1)
     _r0.i = gnu_xml_dom_html2_DomHTMLElement_getBooleanHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -925,7 +925,7 @@ void gnu_xml_dom_html2_DomHTMLAreaElement_setNoHref___boolean(JAVA_OBJECT me, JA
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DomHTMLAreaElement.java", 105)
     // "nohref"
-    _r0.o = xmlvm_create_java_string_from_pool(1377);
+    _r0.o = xmlvm_create_java_string_from_pool(1380);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setBooleanHTMLAttribute___java_lang_String_boolean(_r1.o, _r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("DomHTMLAreaElement.java", 106)
@@ -943,7 +943,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLAreaElement_getShape__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLAreaElement.java", 110)
     // "shape"
-    _r0.o = xmlvm_create_java_string_from_pool(1378);
+    _r0.o = xmlvm_create_java_string_from_pool(1381);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -962,7 +962,7 @@ void gnu_xml_dom_html2_DomHTMLAreaElement_setShape___java_lang_String(JAVA_OBJEC
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLAreaElement.java", 115)
     // "shape"
-    _r0.o = xmlvm_create_java_string_from_pool(1378);
+    _r0.o = xmlvm_create_java_string_from_pool(1381);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLAreaElement.java", 116)

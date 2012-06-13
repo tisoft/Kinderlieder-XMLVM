@@ -256,7 +256,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForArray_getGenericComponen
     XMLVMElem _r1;
     XMLVMElem _r2;
     _r2.o = me;
-    XMLVM_TRY_BEGIN(w28466aaab2b1b2)
+    XMLVM_TRY_BEGIN(w28492aaab2b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("ImplForArray.java", 31)
     _r1.o = ((org_apache_harmony_luni_lang_reflect_ImplForArray*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForArray.componentType_;
@@ -265,18 +265,18 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForArray_getGenericComponen
     _r1.o = org_apache_harmony_luni_lang_reflect_ImplForType_getResolvedType__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28466aaab2b1b2)
-        XMLVM_CATCH_SPECIFIC(w28466aaab2b1b2,java_lang_ClassCastException,9)
-    XMLVM_CATCH_END(w28466aaab2b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28466aaab2b1b2)
+    XMLVM_CATCH_BEGIN(w28492aaab2b1b2)
+        XMLVM_CATCH_SPECIFIC(w28492aaab2b1b2,java_lang_ClassCastException,9)
+    XMLVM_CATCH_END(w28492aaab2b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28492aaab2b1b2)
     label8:;
     XMLVM_SOURCE_POSITION("ImplForArray.java", 33)
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label9:;
     XMLVM_SOURCE_POSITION("ImplForArray.java", 32)
-    java_lang_Thread* curThread_w28466aaab2b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w28466aaab2b1b8->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w28492aaab2b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w28492aaab2b1b8->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r1;
     _r1.o = ((org_apache_harmony_luni_lang_reflect_ImplForArray*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForArray.componentType_;
     goto label8;

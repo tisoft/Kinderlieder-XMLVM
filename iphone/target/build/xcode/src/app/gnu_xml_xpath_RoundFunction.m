@@ -427,7 +427,7 @@ JAVA_OBJECT gnu_xml_xpath_RoundFunction_toString__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("RoundFunction.java", 94)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "round("
-    _r1.o = xmlvm_create_java_string_from_pool(2618);
+    _r1.o = xmlvm_create_java_string_from_pool(2621);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     _r1.o = ((gnu_xml_xpath_RoundFunction*) _r2.o)->fields.gnu_xml_xpath_RoundFunction.arg_;

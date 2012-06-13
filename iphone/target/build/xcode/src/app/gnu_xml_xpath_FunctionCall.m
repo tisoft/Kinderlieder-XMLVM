@@ -442,16 +442,16 @@ JAVA_OBJECT gnu_xml_xpath_FunctionCall_evaluate___org_w3c_dom_Node_int_int(JAVA_
     _r5 = _r1;
     label55:;
     if (_r5.i < _r3.i) goto label62;
-    XMLVM_TRY_BEGIN(w31286aaab5b1c47)
+    XMLVM_TRY_BEGIN(w31312aaab5b1c47)
     // Begin try
     XMLVM_CHECK_NPE(2)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_xpath_XPathFunction_evaluate___java_util_List])(_r2.o, _r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w31286aaab5b1c47)
-        XMLVM_CATCH_SPECIFIC(w31286aaab5b1c47,javax_xml_xpath_XPathFunctionException,81)
-    XMLVM_CATCH_END(w31286aaab5b1c47)
-    XMLVM_RESTORE_EXCEPTION_ENV(w31286aaab5b1c47)
+    XMLVM_CATCH_BEGIN(w31312aaab5b1c47)
+        XMLVM_CATCH_SPECIFIC(w31312aaab5b1c47,javax_xml_xpath_XPathFunctionException,81)
+    XMLVM_CATCH_END(w31312aaab5b1c47)
+    XMLVM_RESTORE_EXCEPTION_ENV(w31312aaab5b1c47)
     goto label47;
     label62:;
     XMLVM_SOURCE_POSITION("FunctionCall.java", 104)
@@ -470,8 +470,8 @@ JAVA_OBJECT gnu_xml_xpath_FunctionCall_evaluate___org_w3c_dom_Node_int_int(JAVA_
     goto label55;
     label81:;
     XMLVM_SOURCE_POSITION("FunctionCall.java", 111)
-    java_lang_Thread* curThread_w31286aaab5b1c62 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w31286aaab5b1c62->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w31312aaab5b1c62 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w31312aaab5b1c62->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("FunctionCall.java", 113)
     _r2.o = java_lang_System_GET_err();
     //javax_xml_xpath_XPathFunctionException_printStackTrace___java_io_PrintStream[9]
@@ -490,7 +490,7 @@ JAVA_OBJECT gnu_xml_xpath_FunctionCall_evaluate___org_w3c_dom_Node_int_int(JAVA_
     _r1.o = __NEW_java_lang_IllegalArgumentException();
     _r2.o = __NEW_java_lang_StringBuilder();
     // "Invalid function call: "
-    _r3.o = xmlvm_create_java_string_from_pool(2475);
+    _r3.o = xmlvm_create_java_string_from_pool(2478);
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuilder___INIT____java_lang_String(_r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("FunctionCall.java", 120)

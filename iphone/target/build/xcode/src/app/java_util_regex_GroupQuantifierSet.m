@@ -293,7 +293,7 @@ JAVA_OBJECT java_util_regex_GroupQuantifierSet_getName__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("GroupQuantifierSet.java", 53)
     // "<GroupQuant>"
-    _r0.o = xmlvm_create_java_string_from_pool(2599);
+    _r0.o = xmlvm_create_java_string_from_pool(2602);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

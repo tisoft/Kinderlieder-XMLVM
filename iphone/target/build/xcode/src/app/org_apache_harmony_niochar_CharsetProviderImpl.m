@@ -836,7 +836,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getPackageName__(JAVA
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CharsetProviderImpl.java", 232)
     // "org.apache.harmony.niochar.charset"
-    _r0.o = xmlvm_create_java_string_from_pool(2692);
+    _r0.o = xmlvm_create_java_string_from_pool(2695);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER
@@ -871,7 +871,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "US_ASCII"
-    _r2.o = xmlvm_create_java_string_from_pool(2693);
+    _r2.o = xmlvm_create_java_string_from_pool(2696);
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r2.o;
@@ -887,29 +887,29 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
     // "ANSI_X3.4-1968"
-    _r3.o = xmlvm_create_java_string_from_pool(2694);
+    _r3.o = xmlvm_create_java_string_from_pool(2697);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
     // "ANSI_X3.4-1986"
-    _r3.o = xmlvm_create_java_string_from_pool(2695);
+    _r3.o = xmlvm_create_java_string_from_pool(2698);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r3.o;
     // "iso-ir-6"
-    _r3.o = xmlvm_create_java_string_from_pool(2696);
+    _r3.o = xmlvm_create_java_string_from_pool(2699);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r3.o;
     _r3.i = 4;
     // "iso_646.irv:1983"
-    _r4.o = xmlvm_create_java_string_from_pool(2697);
+    _r4.o = xmlvm_create_java_string_from_pool(2700);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i] = _r4.o;
     _r3.i = 5;
     // "ISO_646.irv:1991"
-    _r4.o = xmlvm_create_java_string_from_pool(2698);
+    _r4.o = xmlvm_create_java_string_from_pool(2701);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i] = _r4.o;
@@ -921,37 +921,37 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i] = _r4.o;
     _r3.i = 7;
     // "ISO646-US"
-    _r4.o = xmlvm_create_java_string_from_pool(2699);
+    _r4.o = xmlvm_create_java_string_from_pool(2702);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i] = _r4.o;
     _r3.i = 8;
     // "us"
-    _r4.o = xmlvm_create_java_string_from_pool(1013);
+    _r4.o = xmlvm_create_java_string_from_pool(1016);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i] = _r4.o;
     _r3.i = 9;
     // "cp367"
-    _r4.o = xmlvm_create_java_string_from_pool(2700);
+    _r4.o = xmlvm_create_java_string_from_pool(2703);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i] = _r4.o;
     _r3.i = 10;
     // "ascii7"
-    _r4.o = xmlvm_create_java_string_from_pool(2701);
+    _r4.o = xmlvm_create_java_string_from_pool(2704);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i] = _r4.o;
     _r3.i = 11;
     // "646"
-    _r4.o = xmlvm_create_java_string_from_pool(2702);
+    _r4.o = xmlvm_create_java_string_from_pool(2705);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i] = _r4.o;
     _r3.i = 12;
     // "csASCII"
-    _r4.o = xmlvm_create_java_string_from_pool(2703);
+    _r4.o = xmlvm_create_java_string_from_pool(2706);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i] = _r4.o;
@@ -979,7 +979,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
     // "csKOI8R"
-    _r3.o = xmlvm_create_java_string_from_pool(2704);
+    _r3.o = xmlvm_create_java_string_from_pool(2707);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -992,7 +992,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "CP_1250"
-    _r2.o = xmlvm_create_java_string_from_pool(2705);
+    _r2.o = xmlvm_create_java_string_from_pool(2708);
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r2.o;
@@ -1007,7 +1007,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
     // "cp1250"
-    _r3.o = xmlvm_create_java_string_from_pool(2706);
+    _r3.o = xmlvm_create_java_string_from_pool(2709);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1020,7 +1020,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "CP_1251"
-    _r2.o = xmlvm_create_java_string_from_pool(2707);
+    _r2.o = xmlvm_create_java_string_from_pool(2710);
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r2.o;
@@ -1035,7 +1035,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
     // "cp1251"
-    _r3.o = xmlvm_create_java_string_from_pool(2708);
+    _r3.o = xmlvm_create_java_string_from_pool(2711);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
@@ -1049,7 +1049,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "CP_1252"
-    _r3.o = xmlvm_create_java_string_from_pool(2709);
+    _r3.o = xmlvm_create_java_string_from_pool(2712);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -1064,7 +1064,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp1252"
-    _r4.o = xmlvm_create_java_string_from_pool(2710);
+    _r4.o = xmlvm_create_java_string_from_pool(2713);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
@@ -1078,7 +1078,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "CP_1253"
-    _r3.o = xmlvm_create_java_string_from_pool(2711);
+    _r3.o = xmlvm_create_java_string_from_pool(2714);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -1093,7 +1093,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp1253"
-    _r4.o = xmlvm_create_java_string_from_pool(2712);
+    _r4.o = xmlvm_create_java_string_from_pool(2715);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
@@ -1107,7 +1107,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "CP_1254"
-    _r3.o = xmlvm_create_java_string_from_pool(2713);
+    _r3.o = xmlvm_create_java_string_from_pool(2716);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -1122,7 +1122,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp1254"
-    _r4.o = xmlvm_create_java_string_from_pool(2714);
+    _r4.o = xmlvm_create_java_string_from_pool(2717);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
@@ -1136,7 +1136,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "CP_1257"
-    _r3.o = xmlvm_create_java_string_from_pool(2715);
+    _r3.o = xmlvm_create_java_string_from_pool(2718);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -1151,7 +1151,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp1257"
-    _r4.o = xmlvm_create_java_string_from_pool(2716);
+    _r4.o = xmlvm_create_java_string_from_pool(2719);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
@@ -1165,7 +1165,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "ISO_8859_1"
-    _r3.o = xmlvm_create_java_string_from_pool(2717);
+    _r3.o = xmlvm_create_java_string_from_pool(2720);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -1181,12 +1181,12 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "8859_1"
-    _r4.o = xmlvm_create_java_string_from_pool(2718);
+    _r4.o = xmlvm_create_java_string_from_pool(2721);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ISO8859-1"
-    _r4.o = xmlvm_create_java_string_from_pool(2719);
+    _r4.o = xmlvm_create_java_string_from_pool(2722);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -1197,67 +1197,67 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
     _r4.i = 4;
     // "ISO_8859-1:1987"
-    _r5.o = xmlvm_create_java_string_from_pool(2720);
+    _r5.o = xmlvm_create_java_string_from_pool(2723);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 5;
     // "iso-ir-100"
-    _r5.o = xmlvm_create_java_string_from_pool(2721);
+    _r5.o = xmlvm_create_java_string_from_pool(2724);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 6;
     // "ISO_8859-1"
-    _r5.o = xmlvm_create_java_string_from_pool(2722);
+    _r5.o = xmlvm_create_java_string_from_pool(2725);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 7;
     // "latin1"
-    _r5.o = xmlvm_create_java_string_from_pool(2723);
+    _r5.o = xmlvm_create_java_string_from_pool(2726);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 8;
     // "l1"
-    _r5.o = xmlvm_create_java_string_from_pool(2724);
+    _r5.o = xmlvm_create_java_string_from_pool(2727);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 9;
     // "IBM819"
-    _r5.o = xmlvm_create_java_string_from_pool(2725);
+    _r5.o = xmlvm_create_java_string_from_pool(2728);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 10;
     // "ISO_8859_1"
-    _r5.o = xmlvm_create_java_string_from_pool(2717);
+    _r5.o = xmlvm_create_java_string_from_pool(2720);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 11;
     // "IBM-819"
-    _r5.o = xmlvm_create_java_string_from_pool(2726);
+    _r5.o = xmlvm_create_java_string_from_pool(2729);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 12;
     // "CP819"
-    _r5.o = xmlvm_create_java_string_from_pool(2727);
+    _r5.o = xmlvm_create_java_string_from_pool(2730);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 13;
     // "819"
-    _r5.o = xmlvm_create_java_string_from_pool(2728);
+    _r5.o = xmlvm_create_java_string_from_pool(2731);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 14;
     // "csISOLatin1"
-    _r5.o = xmlvm_create_java_string_from_pool(2729);
+    _r5.o = xmlvm_create_java_string_from_pool(2732);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
@@ -1271,7 +1271,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "ISO_8859_2"
-    _r3.o = xmlvm_create_java_string_from_pool(2730);
+    _r3.o = xmlvm_create_java_string_from_pool(2733);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -1287,41 +1287,41 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "8859_2"
-    _r4.o = xmlvm_create_java_string_from_pool(2731);
+    _r4.o = xmlvm_create_java_string_from_pool(2734);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ISO_8859-2:1987"
-    _r4.o = xmlvm_create_java_string_from_pool(2732);
+    _r4.o = xmlvm_create_java_string_from_pool(2735);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "iso-ir-101"
-    _r4.o = xmlvm_create_java_string_from_pool(2733);
+    _r4.o = xmlvm_create_java_string_from_pool(2736);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
     _r4.i = 4;
     // "ISO_8859-2"
-    _r5.o = xmlvm_create_java_string_from_pool(2734);
+    _r5.o = xmlvm_create_java_string_from_pool(2737);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 5;
     // "latin2"
-    _r5.o = xmlvm_create_java_string_from_pool(2735);
+    _r5.o = xmlvm_create_java_string_from_pool(2738);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 6;
     // "l2"
-    _r5.o = xmlvm_create_java_string_from_pool(2736);
+    _r5.o = xmlvm_create_java_string_from_pool(2739);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 7;
     // "csISOLatin2"
-    _r5.o = xmlvm_create_java_string_from_pool(2737);
+    _r5.o = xmlvm_create_java_string_from_pool(2740);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
@@ -1335,7 +1335,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "ISO_8859_4"
-    _r3.o = xmlvm_create_java_string_from_pool(2738);
+    _r3.o = xmlvm_create_java_string_from_pool(2741);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -1351,41 +1351,41 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "8859_4"
-    _r4.o = xmlvm_create_java_string_from_pool(2739);
+    _r4.o = xmlvm_create_java_string_from_pool(2742);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ISO_8859-4:1988"
-    _r4.o = xmlvm_create_java_string_from_pool(2740);
+    _r4.o = xmlvm_create_java_string_from_pool(2743);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "iso-ir-110"
-    _r4.o = xmlvm_create_java_string_from_pool(2741);
+    _r4.o = xmlvm_create_java_string_from_pool(2744);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
     _r4.i = 4;
     // "ISO_8859-4"
-    _r5.o = xmlvm_create_java_string_from_pool(2742);
+    _r5.o = xmlvm_create_java_string_from_pool(2745);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 5;
     // "latin4"
-    _r5.o = xmlvm_create_java_string_from_pool(2743);
+    _r5.o = xmlvm_create_java_string_from_pool(2746);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 6;
     // "l4"
-    _r5.o = xmlvm_create_java_string_from_pool(2744);
+    _r5.o = xmlvm_create_java_string_from_pool(2747);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 7;
     // "csISOLatin4"
-    _r5.o = xmlvm_create_java_string_from_pool(2745);
+    _r5.o = xmlvm_create_java_string_from_pool(2748);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
@@ -1399,7 +1399,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "ISO_8859_5"
-    _r3.o = xmlvm_create_java_string_from_pool(2746);
+    _r3.o = xmlvm_create_java_string_from_pool(2749);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -1415,35 +1415,35 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "8859_5"
-    _r4.o = xmlvm_create_java_string_from_pool(2747);
+    _r4.o = xmlvm_create_java_string_from_pool(2750);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ISO_8859-5:1988"
-    _r4.o = xmlvm_create_java_string_from_pool(2748);
+    _r4.o = xmlvm_create_java_string_from_pool(2751);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "iso-ir-144"
-    _r4.o = xmlvm_create_java_string_from_pool(2749);
+    _r4.o = xmlvm_create_java_string_from_pool(2752);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
     _r4.i = 4;
     // "ISO_8859-5"
-    _r5.o = xmlvm_create_java_string_from_pool(2750);
+    _r5.o = xmlvm_create_java_string_from_pool(2753);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 5;
     // "cyrillic"
-    _r5.o = xmlvm_create_java_string_from_pool(2751);
+    _r5.o = xmlvm_create_java_string_from_pool(2754);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 6;
     // "csISOLatinCyrillic"
-    _r5.o = xmlvm_create_java_string_from_pool(2752);
+    _r5.o = xmlvm_create_java_string_from_pool(2755);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
@@ -1457,7 +1457,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "ISO_8859_7"
-    _r3.o = xmlvm_create_java_string_from_pool(2753);
+    _r3.o = xmlvm_create_java_string_from_pool(2756);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -1473,47 +1473,47 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "ISO_8859-7:1987"
-    _r4.o = xmlvm_create_java_string_from_pool(2754);
+    _r4.o = xmlvm_create_java_string_from_pool(2757);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ISO_8859-7"
-    _r4.o = xmlvm_create_java_string_from_pool(2755);
+    _r4.o = xmlvm_create_java_string_from_pool(2758);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "iso-ir-126"
-    _r4.o = xmlvm_create_java_string_from_pool(2756);
+    _r4.o = xmlvm_create_java_string_from_pool(2759);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
     _r4.i = 4;
     // "ELOT_928"
-    _r5.o = xmlvm_create_java_string_from_pool(2757);
+    _r5.o = xmlvm_create_java_string_from_pool(2760);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 5;
     // "ECMA-118"
-    _r5.o = xmlvm_create_java_string_from_pool(2758);
+    _r5.o = xmlvm_create_java_string_from_pool(2761);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 6;
     // "greek"
-    _r5.o = xmlvm_create_java_string_from_pool(2759);
+    _r5.o = xmlvm_create_java_string_from_pool(2762);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 7;
     // "greek8"
-    _r5.o = xmlvm_create_java_string_from_pool(2760);
+    _r5.o = xmlvm_create_java_string_from_pool(2763);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 8;
     // "csISOLatinGreek"
-    _r5.o = xmlvm_create_java_string_from_pool(2761);
+    _r5.o = xmlvm_create_java_string_from_pool(2764);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
@@ -1527,7 +1527,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "ISO_8859_9"
-    _r3.o = xmlvm_create_java_string_from_pool(2762);
+    _r3.o = xmlvm_create_java_string_from_pool(2765);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -1543,35 +1543,35 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "ISO_8859-9:1989"
-    _r4.o = xmlvm_create_java_string_from_pool(2763);
+    _r4.o = xmlvm_create_java_string_from_pool(2766);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "iso-ir-148"
-    _r4.o = xmlvm_create_java_string_from_pool(2764);
+    _r4.o = xmlvm_create_java_string_from_pool(2767);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "ISO_8859-9"
-    _r4.o = xmlvm_create_java_string_from_pool(2765);
+    _r4.o = xmlvm_create_java_string_from_pool(2768);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
     _r4.i = 4;
     // "latin5"
-    _r5.o = xmlvm_create_java_string_from_pool(2766);
+    _r5.o = xmlvm_create_java_string_from_pool(2769);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 5;
     // "l5"
-    _r5.o = xmlvm_create_java_string_from_pool(2767);
+    _r5.o = xmlvm_create_java_string_from_pool(2770);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 6;
     // "csISOLatin5"
-    _r5.o = xmlvm_create_java_string_from_pool(2768);
+    _r5.o = xmlvm_create_java_string_from_pool(2771);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
@@ -1585,7 +1585,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "ISO_8859_13"
-    _r3.o = xmlvm_create_java_string_from_pool(2769);
+    _r3.o = xmlvm_create_java_string_from_pool(2772);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -1609,7 +1609,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "ISO_8859_15"
-    _r3.o = xmlvm_create_java_string_from_pool(2770);
+    _r3.o = xmlvm_create_java_string_from_pool(2773);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -1624,12 +1624,12 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "ISO_8859-15"
-    _r4.o = xmlvm_create_java_string_from_pool(2771);
+    _r4.o = xmlvm_create_java_string_from_pool(2774);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "Latin-9"
-    _r4.o = xmlvm_create_java_string_from_pool(2772);
+    _r4.o = xmlvm_create_java_string_from_pool(2775);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -1643,7 +1643,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "UTF_8"
-    _r3.o = xmlvm_create_java_string_from_pool(2773);
+    _r3.o = xmlvm_create_java_string_from_pool(2776);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -1672,7 +1672,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "UTF_16"
-    _r3.o = xmlvm_create_java_string_from_pool(2774);
+    _r3.o = xmlvm_create_java_string_from_pool(2777);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -1682,17 +1682,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
     _r3.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_String, _r9.i);
     // "UTF-16"
-    _r4.o = xmlvm_create_java_string_from_pool(1019);
+    _r4.o = xmlvm_create_java_string_from_pool(1022);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "UTF16"
-    _r4.o = xmlvm_create_java_string_from_pool(2775);
+    _r4.o = xmlvm_create_java_string_from_pool(2778);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "UTF_16"
-    _r4.o = xmlvm_create_java_string_from_pool(2774);
+    _r4.o = xmlvm_create_java_string_from_pool(2777);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -1706,7 +1706,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "UTF_16LE"
-    _r3.o = xmlvm_create_java_string_from_pool(2776);
+    _r3.o = xmlvm_create_java_string_from_pool(2779);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -1721,12 +1721,12 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "X-UTF-16LE"
-    _r4.o = xmlvm_create_java_string_from_pool(2777);
+    _r4.o = xmlvm_create_java_string_from_pool(2780);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "UTF_16LE"
-    _r4.o = xmlvm_create_java_string_from_pool(2776);
+    _r4.o = xmlvm_create_java_string_from_pool(2779);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -1740,7 +1740,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "UTF_16BE"
-    _r3.o = xmlvm_create_java_string_from_pool(2778);
+    _r3.o = xmlvm_create_java_string_from_pool(2781);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -1755,12 +1755,12 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "X-UTF-16BE"
-    _r4.o = xmlvm_create_java_string_from_pool(2779);
+    _r4.o = xmlvm_create_java_string_from_pool(2782);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "UTF_16BE"
-    _r4.o = xmlvm_create_java_string_from_pool(2778);
+    _r4.o = xmlvm_create_java_string_from_pool(2781);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -1790,17 +1790,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp866"
-    _r4.o = xmlvm_create_java_string_from_pool(2780);
+    _r4.o = xmlvm_create_java_string_from_pool(2783);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "866"
-    _r4.o = xmlvm_create_java_string_from_pool(2781);
+    _r4.o = xmlvm_create_java_string_from_pool(2784);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "csIBM866"
-    _r4.o = xmlvm_create_java_string_from_pool(2782);
+    _r4.o = xmlvm_create_java_string_from_pool(2785);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -1814,7 +1814,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.windows_1255"
-    _r3.o = xmlvm_create_java_string_from_pool(2783);
+    _r3.o = xmlvm_create_java_string_from_pool(2786);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -1829,7 +1829,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp1255"
-    _r4.o = xmlvm_create_java_string_from_pool(2784);
+    _r4.o = xmlvm_create_java_string_from_pool(2787);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
@@ -1843,7 +1843,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.windows_1256"
-    _r3.o = xmlvm_create_java_string_from_pool(2785);
+    _r3.o = xmlvm_create_java_string_from_pool(2788);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -1858,7 +1858,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp1256"
-    _r4.o = xmlvm_create_java_string_from_pool(2786);
+    _r4.o = xmlvm_create_java_string_from_pool(2789);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
@@ -1872,7 +1872,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM1026"
-    _r3.o = xmlvm_create_java_string_from_pool(2787);
+    _r3.o = xmlvm_create_java_string_from_pool(2790);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -1887,12 +1887,12 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "CP1026"
-    _r4.o = xmlvm_create_java_string_from_pool(2788);
+    _r4.o = xmlvm_create_java_string_from_pool(2791);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "csIBM1026"
-    _r4.o = xmlvm_create_java_string_from_pool(2789);
+    _r4.o = xmlvm_create_java_string_from_pool(2792);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -1906,7 +1906,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM1047"
-    _r3.o = xmlvm_create_java_string_from_pool(2790);
+    _r3.o = xmlvm_create_java_string_from_pool(2793);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -1922,17 +1922,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "1047"
-    _r4.o = xmlvm_create_java_string_from_pool(2791);
+    _r4.o = xmlvm_create_java_string_from_pool(2794);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "cp1047"
-    _r4.o = xmlvm_create_java_string_from_pool(2792);
+    _r4.o = xmlvm_create_java_string_from_pool(2795);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "ibm-1047"
-    _r4.o = xmlvm_create_java_string_from_pool(2793);
+    _r4.o = xmlvm_create_java_string_from_pool(2796);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -1946,7 +1946,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM037"
-    _r3.o = xmlvm_create_java_string_from_pool(2794);
+    _r3.o = xmlvm_create_java_string_from_pool(2797);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -1962,35 +1962,35 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp037"
-    _r4.o = xmlvm_create_java_string_from_pool(2795);
+    _r4.o = xmlvm_create_java_string_from_pool(2798);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ebcdic-cp-us"
-    _r4.o = xmlvm_create_java_string_from_pool(2796);
+    _r4.o = xmlvm_create_java_string_from_pool(2799);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "ebcdic-cp-ca"
-    _r4.o = xmlvm_create_java_string_from_pool(2797);
+    _r4.o = xmlvm_create_java_string_from_pool(2800);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
     _r4.i = 4;
     // "ebcdic-cp-wt"
-    _r5.o = xmlvm_create_java_string_from_pool(2798);
+    _r5.o = xmlvm_create_java_string_from_pool(2801);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 5;
     // "ebcdic-cp-nl"
-    _r5.o = xmlvm_create_java_string_from_pool(2799);
+    _r5.o = xmlvm_create_java_string_from_pool(2802);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 6;
     // "csIBM037"
-    _r5.o = xmlvm_create_java_string_from_pool(2800);
+    _r5.o = xmlvm_create_java_string_from_pool(2803);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
@@ -2004,7 +2004,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM424"
-    _r3.o = xmlvm_create_java_string_from_pool(2801);
+    _r3.o = xmlvm_create_java_string_from_pool(2804);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2020,17 +2020,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp424"
-    _r4.o = xmlvm_create_java_string_from_pool(2802);
+    _r4.o = xmlvm_create_java_string_from_pool(2805);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ebcdic-cp-he"
-    _r4.o = xmlvm_create_java_string_from_pool(2803);
+    _r4.o = xmlvm_create_java_string_from_pool(2806);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "csIBM424"
-    _r4.o = xmlvm_create_java_string_from_pool(2804);
+    _r4.o = xmlvm_create_java_string_from_pool(2807);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -2044,7 +2044,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM437"
-    _r3.o = xmlvm_create_java_string_from_pool(2805);
+    _r3.o = xmlvm_create_java_string_from_pool(2808);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2060,17 +2060,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp437"
-    _r4.o = xmlvm_create_java_string_from_pool(2806);
+    _r4.o = xmlvm_create_java_string_from_pool(2809);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "437"
-    _r4.o = xmlvm_create_java_string_from_pool(2807);
+    _r4.o = xmlvm_create_java_string_from_pool(2810);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "csPC8CodePage437"
-    _r4.o = xmlvm_create_java_string_from_pool(2808);
+    _r4.o = xmlvm_create_java_string_from_pool(2811);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -2084,7 +2084,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM500"
-    _r3.o = xmlvm_create_java_string_from_pool(2809);
+    _r3.o = xmlvm_create_java_string_from_pool(2812);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2100,23 +2100,23 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "CP500"
-    _r4.o = xmlvm_create_java_string_from_pool(2810);
+    _r4.o = xmlvm_create_java_string_from_pool(2813);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ebcdic-cp-be"
-    _r4.o = xmlvm_create_java_string_from_pool(2811);
+    _r4.o = xmlvm_create_java_string_from_pool(2814);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "ebcdic-cp-ch"
-    _r4.o = xmlvm_create_java_string_from_pool(2812);
+    _r4.o = xmlvm_create_java_string_from_pool(2815);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
     _r4.i = 4;
     // "csIBM500"
-    _r5.o = xmlvm_create_java_string_from_pool(2813);
+    _r5.o = xmlvm_create_java_string_from_pool(2816);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
@@ -2130,7 +2130,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM775"
-    _r3.o = xmlvm_create_java_string_from_pool(2814);
+    _r3.o = xmlvm_create_java_string_from_pool(2817);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2145,12 +2145,12 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp775"
-    _r4.o = xmlvm_create_java_string_from_pool(2815);
+    _r4.o = xmlvm_create_java_string_from_pool(2818);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "csPC775Baltic"
-    _r4.o = xmlvm_create_java_string_from_pool(2816);
+    _r4.o = xmlvm_create_java_string_from_pool(2819);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -2164,7 +2164,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM850"
-    _r3.o = xmlvm_create_java_string_from_pool(2817);
+    _r3.o = xmlvm_create_java_string_from_pool(2820);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2180,17 +2180,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp850"
-    _r4.o = xmlvm_create_java_string_from_pool(2818);
+    _r4.o = xmlvm_create_java_string_from_pool(2821);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "850"
-    _r4.o = xmlvm_create_java_string_from_pool(2819);
+    _r4.o = xmlvm_create_java_string_from_pool(2822);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "csPC850Multilingual"
-    _r4.o = xmlvm_create_java_string_from_pool(2820);
+    _r4.o = xmlvm_create_java_string_from_pool(2823);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -2204,7 +2204,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM852"
-    _r3.o = xmlvm_create_java_string_from_pool(2821);
+    _r3.o = xmlvm_create_java_string_from_pool(2824);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2220,17 +2220,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp852"
-    _r4.o = xmlvm_create_java_string_from_pool(2822);
+    _r4.o = xmlvm_create_java_string_from_pool(2825);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "852"
-    _r4.o = xmlvm_create_java_string_from_pool(2823);
+    _r4.o = xmlvm_create_java_string_from_pool(2826);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "csPCp852"
-    _r4.o = xmlvm_create_java_string_from_pool(2824);
+    _r4.o = xmlvm_create_java_string_from_pool(2827);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -2244,7 +2244,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM855"
-    _r3.o = xmlvm_create_java_string_from_pool(2825);
+    _r3.o = xmlvm_create_java_string_from_pool(2828);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2260,17 +2260,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp855"
-    _r4.o = xmlvm_create_java_string_from_pool(2826);
+    _r4.o = xmlvm_create_java_string_from_pool(2829);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "855"
-    _r4.o = xmlvm_create_java_string_from_pool(2827);
+    _r4.o = xmlvm_create_java_string_from_pool(2830);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "csIBM855"
-    _r4.o = xmlvm_create_java_string_from_pool(2828);
+    _r4.o = xmlvm_create_java_string_from_pool(2831);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -2284,7 +2284,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM857"
-    _r3.o = xmlvm_create_java_string_from_pool(2829);
+    _r3.o = xmlvm_create_java_string_from_pool(2832);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2300,17 +2300,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp857"
-    _r4.o = xmlvm_create_java_string_from_pool(2830);
+    _r4.o = xmlvm_create_java_string_from_pool(2833);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "857"
-    _r4.o = xmlvm_create_java_string_from_pool(2831);
+    _r4.o = xmlvm_create_java_string_from_pool(2834);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "csIBM857"
-    _r4.o = xmlvm_create_java_string_from_pool(2832);
+    _r4.o = xmlvm_create_java_string_from_pool(2835);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -2324,7 +2324,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM860"
-    _r3.o = xmlvm_create_java_string_from_pool(2833);
+    _r3.o = xmlvm_create_java_string_from_pool(2836);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2340,17 +2340,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp860"
-    _r4.o = xmlvm_create_java_string_from_pool(2834);
+    _r4.o = xmlvm_create_java_string_from_pool(2837);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "860"
-    _r4.o = xmlvm_create_java_string_from_pool(2835);
+    _r4.o = xmlvm_create_java_string_from_pool(2838);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "csIBM860"
-    _r4.o = xmlvm_create_java_string_from_pool(2836);
+    _r4.o = xmlvm_create_java_string_from_pool(2839);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -2364,7 +2364,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM861"
-    _r3.o = xmlvm_create_java_string_from_pool(2837);
+    _r3.o = xmlvm_create_java_string_from_pool(2840);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2380,23 +2380,23 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp861"
-    _r4.o = xmlvm_create_java_string_from_pool(2838);
+    _r4.o = xmlvm_create_java_string_from_pool(2841);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "861"
-    _r4.o = xmlvm_create_java_string_from_pool(2839);
+    _r4.o = xmlvm_create_java_string_from_pool(2842);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "cp-is"
-    _r4.o = xmlvm_create_java_string_from_pool(2840);
+    _r4.o = xmlvm_create_java_string_from_pool(2843);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
     _r4.i = 4;
     // "csIBM861"
-    _r5.o = xmlvm_create_java_string_from_pool(2841);
+    _r5.o = xmlvm_create_java_string_from_pool(2844);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
@@ -2410,7 +2410,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM862"
-    _r3.o = xmlvm_create_java_string_from_pool(2842);
+    _r3.o = xmlvm_create_java_string_from_pool(2845);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2426,17 +2426,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp862"
-    _r4.o = xmlvm_create_java_string_from_pool(2843);
+    _r4.o = xmlvm_create_java_string_from_pool(2846);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "862"
-    _r4.o = xmlvm_create_java_string_from_pool(2844);
+    _r4.o = xmlvm_create_java_string_from_pool(2847);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "csPC862LatinHebrew"
-    _r4.o = xmlvm_create_java_string_from_pool(2845);
+    _r4.o = xmlvm_create_java_string_from_pool(2848);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -2450,7 +2450,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM863"
-    _r3.o = xmlvm_create_java_string_from_pool(2846);
+    _r3.o = xmlvm_create_java_string_from_pool(2849);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2466,17 +2466,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp863"
-    _r4.o = xmlvm_create_java_string_from_pool(2847);
+    _r4.o = xmlvm_create_java_string_from_pool(2850);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "863"
-    _r4.o = xmlvm_create_java_string_from_pool(2848);
+    _r4.o = xmlvm_create_java_string_from_pool(2851);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "csIBM863"
-    _r4.o = xmlvm_create_java_string_from_pool(2849);
+    _r4.o = xmlvm_create_java_string_from_pool(2852);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -2490,7 +2490,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM865"
-    _r3.o = xmlvm_create_java_string_from_pool(2850);
+    _r3.o = xmlvm_create_java_string_from_pool(2853);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2506,17 +2506,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp865"
-    _r4.o = xmlvm_create_java_string_from_pool(2851);
+    _r4.o = xmlvm_create_java_string_from_pool(2854);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "865"
-    _r4.o = xmlvm_create_java_string_from_pool(2852);
+    _r4.o = xmlvm_create_java_string_from_pool(2855);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "csIBM865"
-    _r4.o = xmlvm_create_java_string_from_pool(2853);
+    _r4.o = xmlvm_create_java_string_from_pool(2856);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -2530,7 +2530,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM869"
-    _r3.o = xmlvm_create_java_string_from_pool(2854);
+    _r3.o = xmlvm_create_java_string_from_pool(2857);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2546,23 +2546,23 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp869"
-    _r4.o = xmlvm_create_java_string_from_pool(2855);
+    _r4.o = xmlvm_create_java_string_from_pool(2858);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "869"
-    _r4.o = xmlvm_create_java_string_from_pool(2856);
+    _r4.o = xmlvm_create_java_string_from_pool(2859);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "cp-gr"
-    _r4.o = xmlvm_create_java_string_from_pool(2857);
+    _r4.o = xmlvm_create_java_string_from_pool(2860);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
     _r4.i = 4;
     // "csIBM869"
-    _r5.o = xmlvm_create_java_string_from_pool(2858);
+    _r5.o = xmlvm_create_java_string_from_pool(2861);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
@@ -2576,7 +2576,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM00858"
-    _r3.o = xmlvm_create_java_string_from_pool(2859);
+    _r3.o = xmlvm_create_java_string_from_pool(2862);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2592,17 +2592,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp858"
-    _r4.o = xmlvm_create_java_string_from_pool(2860);
+    _r4.o = xmlvm_create_java_string_from_pool(2863);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "CCSID00858"
-    _r4.o = xmlvm_create_java_string_from_pool(2861);
+    _r4.o = xmlvm_create_java_string_from_pool(2864);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "CP00858"
-    _r4.o = xmlvm_create_java_string_from_pool(2862);
+    _r4.o = xmlvm_create_java_string_from_pool(2865);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -2616,7 +2616,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM01140"
-    _r3.o = xmlvm_create_java_string_from_pool(2863);
+    _r3.o = xmlvm_create_java_string_from_pool(2866);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2632,17 +2632,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp1140"
-    _r4.o = xmlvm_create_java_string_from_pool(2864);
+    _r4.o = xmlvm_create_java_string_from_pool(2867);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "CCSID01140"
-    _r4.o = xmlvm_create_java_string_from_pool(2865);
+    _r4.o = xmlvm_create_java_string_from_pool(2868);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "CP01140"
-    _r4.o = xmlvm_create_java_string_from_pool(2866);
+    _r4.o = xmlvm_create_java_string_from_pool(2869);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -2656,7 +2656,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM01141"
-    _r3.o = xmlvm_create_java_string_from_pool(2867);
+    _r3.o = xmlvm_create_java_string_from_pool(2870);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2672,17 +2672,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp1141"
-    _r4.o = xmlvm_create_java_string_from_pool(2868);
+    _r4.o = xmlvm_create_java_string_from_pool(2871);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "CCSID01141"
-    _r4.o = xmlvm_create_java_string_from_pool(2869);
+    _r4.o = xmlvm_create_java_string_from_pool(2872);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "CP01141"
-    _r4.o = xmlvm_create_java_string_from_pool(2870);
+    _r4.o = xmlvm_create_java_string_from_pool(2873);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -2696,7 +2696,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM01142"
-    _r3.o = xmlvm_create_java_string_from_pool(2871);
+    _r3.o = xmlvm_create_java_string_from_pool(2874);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2712,17 +2712,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp1142"
-    _r4.o = xmlvm_create_java_string_from_pool(2872);
+    _r4.o = xmlvm_create_java_string_from_pool(2875);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "CCSID01142"
-    _r4.o = xmlvm_create_java_string_from_pool(2873);
+    _r4.o = xmlvm_create_java_string_from_pool(2876);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "CP01142"
-    _r4.o = xmlvm_create_java_string_from_pool(2874);
+    _r4.o = xmlvm_create_java_string_from_pool(2877);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -2736,7 +2736,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM01143"
-    _r3.o = xmlvm_create_java_string_from_pool(2875);
+    _r3.o = xmlvm_create_java_string_from_pool(2878);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2752,17 +2752,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp1143"
-    _r4.o = xmlvm_create_java_string_from_pool(2876);
+    _r4.o = xmlvm_create_java_string_from_pool(2879);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "CCSID01143"
-    _r4.o = xmlvm_create_java_string_from_pool(2877);
+    _r4.o = xmlvm_create_java_string_from_pool(2880);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "CP01143"
-    _r4.o = xmlvm_create_java_string_from_pool(2878);
+    _r4.o = xmlvm_create_java_string_from_pool(2881);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -2776,7 +2776,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM01144"
-    _r3.o = xmlvm_create_java_string_from_pool(2879);
+    _r3.o = xmlvm_create_java_string_from_pool(2882);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2792,17 +2792,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp1144"
-    _r4.o = xmlvm_create_java_string_from_pool(2880);
+    _r4.o = xmlvm_create_java_string_from_pool(2883);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "CCSID01144"
-    _r4.o = xmlvm_create_java_string_from_pool(2881);
+    _r4.o = xmlvm_create_java_string_from_pool(2884);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "CP01144"
-    _r4.o = xmlvm_create_java_string_from_pool(2882);
+    _r4.o = xmlvm_create_java_string_from_pool(2885);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -2816,7 +2816,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM01145"
-    _r3.o = xmlvm_create_java_string_from_pool(2883);
+    _r3.o = xmlvm_create_java_string_from_pool(2886);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2832,17 +2832,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp1145"
-    _r4.o = xmlvm_create_java_string_from_pool(2884);
+    _r4.o = xmlvm_create_java_string_from_pool(2887);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "CCSID01145"
-    _r4.o = xmlvm_create_java_string_from_pool(2885);
+    _r4.o = xmlvm_create_java_string_from_pool(2888);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "CP01145"
-    _r4.o = xmlvm_create_java_string_from_pool(2886);
+    _r4.o = xmlvm_create_java_string_from_pool(2889);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -2856,7 +2856,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM01146"
-    _r3.o = xmlvm_create_java_string_from_pool(2887);
+    _r3.o = xmlvm_create_java_string_from_pool(2890);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2872,17 +2872,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp1146"
-    _r4.o = xmlvm_create_java_string_from_pool(2888);
+    _r4.o = xmlvm_create_java_string_from_pool(2891);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "CCSID01146"
-    _r4.o = xmlvm_create_java_string_from_pool(2889);
+    _r4.o = xmlvm_create_java_string_from_pool(2892);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "CP01146"
-    _r4.o = xmlvm_create_java_string_from_pool(2890);
+    _r4.o = xmlvm_create_java_string_from_pool(2893);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -2896,7 +2896,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM01147"
-    _r3.o = xmlvm_create_java_string_from_pool(2891);
+    _r3.o = xmlvm_create_java_string_from_pool(2894);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2912,17 +2912,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp1147"
-    _r4.o = xmlvm_create_java_string_from_pool(2892);
+    _r4.o = xmlvm_create_java_string_from_pool(2895);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "CCSID01147"
-    _r4.o = xmlvm_create_java_string_from_pool(2893);
+    _r4.o = xmlvm_create_java_string_from_pool(2896);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "CP01147"
-    _r4.o = xmlvm_create_java_string_from_pool(2894);
+    _r4.o = xmlvm_create_java_string_from_pool(2897);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -2936,7 +2936,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM01148"
-    _r3.o = xmlvm_create_java_string_from_pool(2895);
+    _r3.o = xmlvm_create_java_string_from_pool(2898);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2952,17 +2952,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp1148"
-    _r4.o = xmlvm_create_java_string_from_pool(2896);
+    _r4.o = xmlvm_create_java_string_from_pool(2899);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "CCSID01148"
-    _r4.o = xmlvm_create_java_string_from_pool(2897);
+    _r4.o = xmlvm_create_java_string_from_pool(2900);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "CP01148"
-    _r4.o = xmlvm_create_java_string_from_pool(2898);
+    _r4.o = xmlvm_create_java_string_from_pool(2901);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -2976,7 +2976,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM01149"
-    _r3.o = xmlvm_create_java_string_from_pool(2899);
+    _r3.o = xmlvm_create_java_string_from_pool(2902);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -2992,17 +2992,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp1149"
-    _r4.o = xmlvm_create_java_string_from_pool(2900);
+    _r4.o = xmlvm_create_java_string_from_pool(2903);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "CCSID01149"
-    _r4.o = xmlvm_create_java_string_from_pool(2901);
+    _r4.o = xmlvm_create_java_string_from_pool(2904);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "CP01149"
-    _r4.o = xmlvm_create_java_string_from_pool(2902);
+    _r4.o = xmlvm_create_java_string_from_pool(2905);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -3016,7 +3016,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM273"
-    _r3.o = xmlvm_create_java_string_from_pool(2903);
+    _r3.o = xmlvm_create_java_string_from_pool(2906);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3031,12 +3031,12 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp273"
-    _r4.o = xmlvm_create_java_string_from_pool(2904);
+    _r4.o = xmlvm_create_java_string_from_pool(2907);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "csIBM273"
-    _r4.o = xmlvm_create_java_string_from_pool(2905);
+    _r4.o = xmlvm_create_java_string_from_pool(2908);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -3050,7 +3050,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM277"
-    _r3.o = xmlvm_create_java_string_from_pool(2906);
+    _r3.o = xmlvm_create_java_string_from_pool(2909);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3066,23 +3066,23 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp277"
-    _r4.o = xmlvm_create_java_string_from_pool(2907);
+    _r4.o = xmlvm_create_java_string_from_pool(2910);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "EBCDIC-CP-DK"
-    _r4.o = xmlvm_create_java_string_from_pool(2908);
+    _r4.o = xmlvm_create_java_string_from_pool(2911);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "EBCDIC-CP-NO"
-    _r4.o = xmlvm_create_java_string_from_pool(2909);
+    _r4.o = xmlvm_create_java_string_from_pool(2912);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
     _r4.i = 4;
     // "csIBM277"
-    _r5.o = xmlvm_create_java_string_from_pool(2910);
+    _r5.o = xmlvm_create_java_string_from_pool(2913);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
@@ -3096,7 +3096,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM278"
-    _r3.o = xmlvm_create_java_string_from_pool(2911);
+    _r3.o = xmlvm_create_java_string_from_pool(2914);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3112,23 +3112,23 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp278"
-    _r4.o = xmlvm_create_java_string_from_pool(2912);
+    _r4.o = xmlvm_create_java_string_from_pool(2915);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ebcdic-cp-fi"
-    _r4.o = xmlvm_create_java_string_from_pool(2913);
+    _r4.o = xmlvm_create_java_string_from_pool(2916);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "ebcdic-cp-se"
-    _r4.o = xmlvm_create_java_string_from_pool(2914);
+    _r4.o = xmlvm_create_java_string_from_pool(2917);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
     _r4.i = 4;
     // "csIBM278"
-    _r5.o = xmlvm_create_java_string_from_pool(2915);
+    _r5.o = xmlvm_create_java_string_from_pool(2918);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
@@ -3142,7 +3142,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM280"
-    _r3.o = xmlvm_create_java_string_from_pool(2916);
+    _r3.o = xmlvm_create_java_string_from_pool(2919);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3158,17 +3158,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp280"
-    _r4.o = xmlvm_create_java_string_from_pool(2917);
+    _r4.o = xmlvm_create_java_string_from_pool(2920);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ebcdic-cp-it"
-    _r4.o = xmlvm_create_java_string_from_pool(2918);
+    _r4.o = xmlvm_create_java_string_from_pool(2921);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "csIBM280"
-    _r4.o = xmlvm_create_java_string_from_pool(2919);
+    _r4.o = xmlvm_create_java_string_from_pool(2922);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -3182,7 +3182,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM284"
-    _r3.o = xmlvm_create_java_string_from_pool(2920);
+    _r3.o = xmlvm_create_java_string_from_pool(2923);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3198,17 +3198,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp284"
-    _r4.o = xmlvm_create_java_string_from_pool(2921);
+    _r4.o = xmlvm_create_java_string_from_pool(2924);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ebcdic-cp-es"
-    _r4.o = xmlvm_create_java_string_from_pool(2922);
+    _r4.o = xmlvm_create_java_string_from_pool(2925);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "csIBM284"
-    _r4.o = xmlvm_create_java_string_from_pool(2923);
+    _r4.o = xmlvm_create_java_string_from_pool(2926);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -3222,7 +3222,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM285"
-    _r3.o = xmlvm_create_java_string_from_pool(2924);
+    _r3.o = xmlvm_create_java_string_from_pool(2927);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3238,17 +3238,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp285"
-    _r4.o = xmlvm_create_java_string_from_pool(2925);
+    _r4.o = xmlvm_create_java_string_from_pool(2928);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ebcdic-cp-gb"
-    _r4.o = xmlvm_create_java_string_from_pool(2926);
+    _r4.o = xmlvm_create_java_string_from_pool(2929);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "csIBM285"
-    _r4.o = xmlvm_create_java_string_from_pool(2927);
+    _r4.o = xmlvm_create_java_string_from_pool(2930);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -3262,7 +3262,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM297"
-    _r3.o = xmlvm_create_java_string_from_pool(2928);
+    _r3.o = xmlvm_create_java_string_from_pool(2931);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3278,17 +3278,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp297"
-    _r4.o = xmlvm_create_java_string_from_pool(2929);
+    _r4.o = xmlvm_create_java_string_from_pool(2932);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ebcdic-cp-fr"
-    _r4.o = xmlvm_create_java_string_from_pool(2930);
+    _r4.o = xmlvm_create_java_string_from_pool(2933);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "csIBM297"
-    _r4.o = xmlvm_create_java_string_from_pool(2931);
+    _r4.o = xmlvm_create_java_string_from_pool(2934);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -3302,7 +3302,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM870"
-    _r3.o = xmlvm_create_java_string_from_pool(2932);
+    _r3.o = xmlvm_create_java_string_from_pool(2935);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3318,23 +3318,23 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp870"
-    _r4.o = xmlvm_create_java_string_from_pool(2933);
+    _r4.o = xmlvm_create_java_string_from_pool(2936);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ebcdic-cp-roece"
-    _r4.o = xmlvm_create_java_string_from_pool(2934);
+    _r4.o = xmlvm_create_java_string_from_pool(2937);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "ebcdic-cp-yu"
-    _r4.o = xmlvm_create_java_string_from_pool(2935);
+    _r4.o = xmlvm_create_java_string_from_pool(2938);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
     _r4.i = 4;
     // "csIBM870"
-    _r5.o = xmlvm_create_java_string_from_pool(2936);
+    _r5.o = xmlvm_create_java_string_from_pool(2939);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
@@ -3348,7 +3348,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM871"
-    _r3.o = xmlvm_create_java_string_from_pool(2937);
+    _r3.o = xmlvm_create_java_string_from_pool(2940);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3364,17 +3364,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp871"
-    _r4.o = xmlvm_create_java_string_from_pool(2938);
+    _r4.o = xmlvm_create_java_string_from_pool(2941);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ebcdic-cp-is"
-    _r4.o = xmlvm_create_java_string_from_pool(2939);
+    _r4.o = xmlvm_create_java_string_from_pool(2942);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "csIBM871"
-    _r4.o = xmlvm_create_java_string_from_pool(2940);
+    _r4.o = xmlvm_create_java_string_from_pool(2943);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -3388,7 +3388,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM918"
-    _r3.o = xmlvm_create_java_string_from_pool(2941);
+    _r3.o = xmlvm_create_java_string_from_pool(2944);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3404,17 +3404,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp918"
-    _r4.o = xmlvm_create_java_string_from_pool(2942);
+    _r4.o = xmlvm_create_java_string_from_pool(2945);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ebcdic-cp-ar2"
-    _r4.o = xmlvm_create_java_string_from_pool(2943);
+    _r4.o = xmlvm_create_java_string_from_pool(2946);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "csIBM918"
-    _r4.o = xmlvm_create_java_string_from_pool(2944);
+    _r4.o = xmlvm_create_java_string_from_pool(2947);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -3428,7 +3428,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM420"
-    _r3.o = xmlvm_create_java_string_from_pool(2945);
+    _r3.o = xmlvm_create_java_string_from_pool(2948);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3444,17 +3444,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp420"
-    _r4.o = xmlvm_create_java_string_from_pool(2946);
+    _r4.o = xmlvm_create_java_string_from_pool(2949);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ebcdic-cp-ar1"
-    _r4.o = xmlvm_create_java_string_from_pool(2947);
+    _r4.o = xmlvm_create_java_string_from_pool(2950);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "csIBM420"
-    _r4.o = xmlvm_create_java_string_from_pool(2948);
+    _r4.o = xmlvm_create_java_string_from_pool(2951);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -3468,7 +3468,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM864"
-    _r3.o = xmlvm_create_java_string_from_pool(2949);
+    _r3.o = xmlvm_create_java_string_from_pool(2952);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3483,12 +3483,12 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp864"
-    _r4.o = xmlvm_create_java_string_from_pool(2950);
+    _r4.o = xmlvm_create_java_string_from_pool(2953);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "csIBM864"
-    _r4.o = xmlvm_create_java_string_from_pool(2951);
+    _r4.o = xmlvm_create_java_string_from_pool(2954);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -3502,7 +3502,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM868"
-    _r3.o = xmlvm_create_java_string_from_pool(2952);
+    _r3.o = xmlvm_create_java_string_from_pool(2955);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3518,17 +3518,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp868"
-    _r4.o = xmlvm_create_java_string_from_pool(2953);
+    _r4.o = xmlvm_create_java_string_from_pool(2956);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "cp-ar"
-    _r4.o = xmlvm_create_java_string_from_pool(2954);
+    _r4.o = xmlvm_create_java_string_from_pool(2957);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "csIBM868"
-    _r4.o = xmlvm_create_java_string_from_pool(2955);
+    _r4.o = xmlvm_create_java_string_from_pool(2958);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
@@ -3542,7 +3542,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.ISO_8859_3"
-    _r3.o = xmlvm_create_java_string_from_pool(2956);
+    _r3.o = xmlvm_create_java_string_from_pool(2959);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3558,47 +3558,47 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "8859_3"
-    _r4.o = xmlvm_create_java_string_from_pool(2957);
+    _r4.o = xmlvm_create_java_string_from_pool(2960);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ISO_8859_3"
-    _r4.o = xmlvm_create_java_string_from_pool(2958);
+    _r4.o = xmlvm_create_java_string_from_pool(2961);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "ISO_8859_2:1998"
-    _r4.o = xmlvm_create_java_string_from_pool(2959);
+    _r4.o = xmlvm_create_java_string_from_pool(2962);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
     _r4.i = 4;
     // "iso-ir-109"
-    _r5.o = xmlvm_create_java_string_from_pool(2960);
+    _r5.o = xmlvm_create_java_string_from_pool(2963);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 5;
     // "ISO_8859-3"
-    _r5.o = xmlvm_create_java_string_from_pool(2961);
+    _r5.o = xmlvm_create_java_string_from_pool(2964);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 6;
     // "latin3"
-    _r5.o = xmlvm_create_java_string_from_pool(2962);
+    _r5.o = xmlvm_create_java_string_from_pool(2965);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 7;
     // "l3"
-    _r5.o = xmlvm_create_java_string_from_pool(2963);
+    _r5.o = xmlvm_create_java_string_from_pool(2966);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 8;
     // "csISOLatin3"
-    _r5.o = xmlvm_create_java_string_from_pool(2964);
+    _r5.o = xmlvm_create_java_string_from_pool(2967);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
@@ -3612,7 +3612,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.ISO_8859_6"
-    _r3.o = xmlvm_create_java_string_from_pool(2965);
+    _r3.o = xmlvm_create_java_string_from_pool(2968);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3628,47 +3628,47 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "ISO_8859_6"
-    _r4.o = xmlvm_create_java_string_from_pool(2966);
+    _r4.o = xmlvm_create_java_string_from_pool(2969);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ISO_8859-6:1987"
-    _r4.o = xmlvm_create_java_string_from_pool(2967);
+    _r4.o = xmlvm_create_java_string_from_pool(2970);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "iso-ir-127"
-    _r4.o = xmlvm_create_java_string_from_pool(2968);
+    _r4.o = xmlvm_create_java_string_from_pool(2971);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
     _r4.i = 4;
     // "ISO_8859-6"
-    _r5.o = xmlvm_create_java_string_from_pool(2969);
+    _r5.o = xmlvm_create_java_string_from_pool(2972);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 5;
     // "ECMA-114"
-    _r5.o = xmlvm_create_java_string_from_pool(2970);
+    _r5.o = xmlvm_create_java_string_from_pool(2973);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 6;
     // "ASMO-708"
-    _r5.o = xmlvm_create_java_string_from_pool(2971);
+    _r5.o = xmlvm_create_java_string_from_pool(2974);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 7;
     // "arabic"
-    _r5.o = xmlvm_create_java_string_from_pool(2972);
+    _r5.o = xmlvm_create_java_string_from_pool(2975);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 8;
     // "csISOLatinArabic"
-    _r5.o = xmlvm_create_java_string_from_pool(2973);
+    _r5.o = xmlvm_create_java_string_from_pool(2976);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
@@ -3682,7 +3682,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.ISO_8859_8"
-    _r3.o = xmlvm_create_java_string_from_pool(2974);
+    _r3.o = xmlvm_create_java_string_from_pool(2977);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3698,35 +3698,35 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "ISO_8859_8"
-    _r4.o = xmlvm_create_java_string_from_pool(2975);
+    _r4.o = xmlvm_create_java_string_from_pool(2978);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ISO_8859-8:1988"
-    _r4.o = xmlvm_create_java_string_from_pool(2976);
+    _r4.o = xmlvm_create_java_string_from_pool(2979);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "iso-ir-138"
-    _r4.o = xmlvm_create_java_string_from_pool(2977);
+    _r4.o = xmlvm_create_java_string_from_pool(2980);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
     _r4.i = 4;
     // "ISO_8859-8"
-    _r5.o = xmlvm_create_java_string_from_pool(2978);
+    _r5.o = xmlvm_create_java_string_from_pool(2981);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 5;
     // "hebrew"
-    _r5.o = xmlvm_create_java_string_from_pool(2979);
+    _r5.o = xmlvm_create_java_string_from_pool(2982);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 6;
     // "csISOLatinHebrew"
-    _r5.o = xmlvm_create_java_string_from_pool(2980);
+    _r5.o = xmlvm_create_java_string_from_pool(2983);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
@@ -3740,7 +3740,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.IBM_Thai"
-    _r3.o = xmlvm_create_java_string_from_pool(2981);
+    _r3.o = xmlvm_create_java_string_from_pool(2984);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3755,7 +3755,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp838"
-    _r4.o = xmlvm_create_java_string_from_pool(2982);
+    _r4.o = xmlvm_create_java_string_from_pool(2985);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
@@ -3769,7 +3769,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.x_IBM737"
-    _r3.o = xmlvm_create_java_string_from_pool(2983);
+    _r3.o = xmlvm_create_java_string_from_pool(2986);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3784,12 +3784,12 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "x-ibm-737_P100-1997"
-    _r4.o = xmlvm_create_java_string_from_pool(2984);
+    _r4.o = xmlvm_create_java_string_from_pool(2987);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "cp737"
-    _r4.o = xmlvm_create_java_string_from_pool(2985);
+    _r4.o = xmlvm_create_java_string_from_pool(2988);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -3803,7 +3803,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.x_IBM856"
-    _r3.o = xmlvm_create_java_string_from_pool(2986);
+    _r3.o = xmlvm_create_java_string_from_pool(2989);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3818,7 +3818,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp856"
-    _r4.o = xmlvm_create_java_string_from_pool(2987);
+    _r4.o = xmlvm_create_java_string_from_pool(2990);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
@@ -3832,7 +3832,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.x_IBM874"
-    _r3.o = xmlvm_create_java_string_from_pool(2988);
+    _r3.o = xmlvm_create_java_string_from_pool(2991);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3852,7 +3852,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "cp874"
-    _r4.o = xmlvm_create_java_string_from_pool(2989);
+    _r4.o = xmlvm_create_java_string_from_pool(2992);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -3866,7 +3866,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.x_IBM875"
-    _r3.o = xmlvm_create_java_string_from_pool(2990);
+    _r3.o = xmlvm_create_java_string_from_pool(2993);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3881,12 +3881,12 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "x-ibm-875_P100-1995"
-    _r4.o = xmlvm_create_java_string_from_pool(2991);
+    _r4.o = xmlvm_create_java_string_from_pool(2994);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "cp875"
-    _r4.o = xmlvm_create_java_string_from_pool(2992);
+    _r4.o = xmlvm_create_java_string_from_pool(2995);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -3900,7 +3900,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.x_IBM922"
-    _r3.o = xmlvm_create_java_string_from_pool(2993);
+    _r3.o = xmlvm_create_java_string_from_pool(2996);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3915,7 +3915,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp922"
-    _r4.o = xmlvm_create_java_string_from_pool(2994);
+    _r4.o = xmlvm_create_java_string_from_pool(2997);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
@@ -3929,7 +3929,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.x_IBM1006"
-    _r3.o = xmlvm_create_java_string_from_pool(2995);
+    _r3.o = xmlvm_create_java_string_from_pool(2998);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3944,12 +3944,12 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "x-ibm-1006_P100-1995"
-    _r4.o = xmlvm_create_java_string_from_pool(2996);
+    _r4.o = xmlvm_create_java_string_from_pool(2999);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "cp1006"
-    _r4.o = xmlvm_create_java_string_from_pool(2997);
+    _r4.o = xmlvm_create_java_string_from_pool(3000);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -3963,7 +3963,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.x_IBM1025"
-    _r3.o = xmlvm_create_java_string_from_pool(2998);
+    _r3.o = xmlvm_create_java_string_from_pool(3001);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -3978,12 +3978,12 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "x-ibm-1025_P100-1995"
-    _r4.o = xmlvm_create_java_string_from_pool(2999);
+    _r4.o = xmlvm_create_java_string_from_pool(3002);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "cp1025"
-    _r4.o = xmlvm_create_java_string_from_pool(3000);
+    _r4.o = xmlvm_create_java_string_from_pool(3003);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -3997,7 +3997,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.x_IBM1112"
-    _r3.o = xmlvm_create_java_string_from_pool(3001);
+    _r3.o = xmlvm_create_java_string_from_pool(3004);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -4012,12 +4012,12 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "x-ibm-1112_P100-1995"
-    _r4.o = xmlvm_create_java_string_from_pool(3002);
+    _r4.o = xmlvm_create_java_string_from_pool(3005);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "cp1112"
-    _r4.o = xmlvm_create_java_string_from_pool(3003);
+    _r4.o = xmlvm_create_java_string_from_pool(3006);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -4031,7 +4031,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.x_IBM1122"
-    _r3.o = xmlvm_create_java_string_from_pool(3004);
+    _r3.o = xmlvm_create_java_string_from_pool(3007);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -4046,12 +4046,12 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "x-ibm-1122_P100-1999"
-    _r4.o = xmlvm_create_java_string_from_pool(3005);
+    _r4.o = xmlvm_create_java_string_from_pool(3008);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "cp1122"
-    _r4.o = xmlvm_create_java_string_from_pool(3006);
+    _r4.o = xmlvm_create_java_string_from_pool(3009);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -4065,7 +4065,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.x_IBM1123"
-    _r3.o = xmlvm_create_java_string_from_pool(3007);
+    _r3.o = xmlvm_create_java_string_from_pool(3010);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -4080,12 +4080,12 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "x-ibm-1123_P100-1995"
-    _r4.o = xmlvm_create_java_string_from_pool(3008);
+    _r4.o = xmlvm_create_java_string_from_pool(3011);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "cp1123"
-    _r4.o = xmlvm_create_java_string_from_pool(3009);
+    _r4.o = xmlvm_create_java_string_from_pool(3012);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -4099,7 +4099,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.x_IBM1124"
-    _r3.o = xmlvm_create_java_string_from_pool(3010);
+    _r3.o = xmlvm_create_java_string_from_pool(3013);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -4114,12 +4114,12 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "x-ibm-1124_P100-1996"
-    _r4.o = xmlvm_create_java_string_from_pool(3011);
+    _r4.o = xmlvm_create_java_string_from_pool(3014);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "cp1124"
-    _r4.o = xmlvm_create_java_string_from_pool(3012);
+    _r4.o = xmlvm_create_java_string_from_pool(3015);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -4133,7 +4133,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.x_IBM1097"
-    _r3.o = xmlvm_create_java_string_from_pool(3013);
+    _r3.o = xmlvm_create_java_string_from_pool(3016);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -4148,12 +4148,12 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "x-ibm-1097_P100-1995"
-    _r4.o = xmlvm_create_java_string_from_pool(3014);
+    _r4.o = xmlvm_create_java_string_from_pool(3017);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "cp1097"
-    _r4.o = xmlvm_create_java_string_from_pool(3015);
+    _r4.o = xmlvm_create_java_string_from_pool(3018);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -4167,7 +4167,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.x_IBM1098"
-    _r3.o = xmlvm_create_java_string_from_pool(3016);
+    _r3.o = xmlvm_create_java_string_from_pool(3019);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -4182,12 +4182,12 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "x-ibm-1098_P100-1995"
-    _r4.o = xmlvm_create_java_string_from_pool(3017);
+    _r4.o = xmlvm_create_java_string_from_pool(3020);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "cp1098"
-    _r4.o = xmlvm_create_java_string_from_pool(3018);
+    _r4.o = xmlvm_create_java_string_from_pool(3021);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -4201,7 +4201,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.x_MacCyrillic"
-    _r3.o = xmlvm_create_java_string_from_pool(3019);
+    _r3.o = xmlvm_create_java_string_from_pool(3022);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -4216,7 +4216,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "x-mac-cyrillic"
-    _r4.o = xmlvm_create_java_string_from_pool(3020);
+    _r4.o = xmlvm_create_java_string_from_pool(3023);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
@@ -4235,7 +4235,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.x_MacGreek"
-    _r3.o = xmlvm_create_java_string_from_pool(3021);
+    _r3.o = xmlvm_create_java_string_from_pool(3024);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -4250,7 +4250,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "x-mac-greek"
-    _r4.o = xmlvm_create_java_string_from_pool(3022);
+    _r4.o = xmlvm_create_java_string_from_pool(3025);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
@@ -4269,7 +4269,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.x_MacTurkish"
-    _r3.o = xmlvm_create_java_string_from_pool(3023);
+    _r3.o = xmlvm_create_java_string_from_pool(3026);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -4284,7 +4284,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "x-mac-turkish"
-    _r4.o = xmlvm_create_java_string_from_pool(3024);
+    _r4.o = xmlvm_create_java_string_from_pool(3027);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
@@ -4303,7 +4303,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.windows_31j"
-    _r3.o = xmlvm_create_java_string_from_pool(3025);
+    _r3.o = xmlvm_create_java_string_from_pool(3028);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -4329,37 +4329,37 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
     // "windows-932"
-    _r4.o = xmlvm_create_java_string_from_pool(3026);
+    _r4.o = xmlvm_create_java_string_from_pool(3029);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r4.o;
     _r4.i = 4;
     // "cp932"
-    _r5.o = xmlvm_create_java_string_from_pool(3027);
+    _r5.o = xmlvm_create_java_string_from_pool(3030);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 5;
     // "csWindows31J"
-    _r5.o = xmlvm_create_java_string_from_pool(3028);
+    _r5.o = xmlvm_create_java_string_from_pool(3031);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 6;
     // "cp943c"
-    _r5.o = xmlvm_create_java_string_from_pool(3029);
+    _r5.o = xmlvm_create_java_string_from_pool(3032);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 7;
     // "x-ms-cp932"
-    _r5.o = xmlvm_create_java_string_from_pool(3030);
+    _r5.o = xmlvm_create_java_string_from_pool(3033);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 8;
     // "ibm-943"
-    _r5.o = xmlvm_create_java_string_from_pool(3031);
+    _r5.o = xmlvm_create_java_string_from_pool(3034);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
@@ -4373,7 +4373,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.Big5"
-    _r3.o = xmlvm_create_java_string_from_pool(3032);
+    _r3.o = xmlvm_create_java_string_from_pool(3035);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -4383,17 +4383,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
     _r3.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_String, _r9.i);
     // "Big5"
-    _r4.o = xmlvm_create_java_string_from_pool(3033);
+    _r4.o = xmlvm_create_java_string_from_pool(3036);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "csBig5"
-    _r4.o = xmlvm_create_java_string_from_pool(3034);
+    _r4.o = xmlvm_create_java_string_from_pool(3037);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "windows-950"
-    _r4.o = xmlvm_create_java_string_from_pool(3035);
+    _r4.o = xmlvm_create_java_string_from_pool(3038);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -4407,7 +4407,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.Big5_HKSCS"
-    _r3.o = xmlvm_create_java_string_from_pool(3036);
+    _r3.o = xmlvm_create_java_string_from_pool(3039);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -4422,7 +4422,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "ibm-1375"
-    _r4.o = xmlvm_create_java_string_from_pool(3037);
+    _r4.o = xmlvm_create_java_string_from_pool(3040);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
@@ -4436,7 +4436,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.EUC_KR"
-    _r3.o = xmlvm_create_java_string_from_pool(3038);
+    _r3.o = xmlvm_create_java_string_from_pool(3041);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -4451,12 +4451,12 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "windows-51949"
-    _r4.o = xmlvm_create_java_string_from_pool(3039);
+    _r4.o = xmlvm_create_java_string_from_pool(3042);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ibm-970"
-    _r4.o = xmlvm_create_java_string_from_pool(3040);
+    _r4.o = xmlvm_create_java_string_from_pool(3043);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -4470,7 +4470,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.GBK"
-    _r3.o = xmlvm_create_java_string_from_pool(3041);
+    _r3.o = xmlvm_create_java_string_from_pool(3044);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -4480,7 +4480,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
     _r3.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_String, _r7.i);
     // "GBK"
-    _r4.o = xmlvm_create_java_string_from_pool(3042);
+    _r4.o = xmlvm_create_java_string_from_pool(3045);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
@@ -4494,7 +4494,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.x_MS950_HKSCS"
-    _r3.o = xmlvm_create_java_string_from_pool(3043);
+    _r3.o = xmlvm_create_java_string_from_pool(3046);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -4504,7 +4504,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
     _r3.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_String, _r9.i);
     // "x-ibm-1375_P100-2003"
-    _r4.o = xmlvm_create_java_string_from_pool(3044);
+    _r4.o = xmlvm_create_java_string_from_pool(3047);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
@@ -4528,7 +4528,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.x_windows_949"
-    _r3.o = xmlvm_create_java_string_from_pool(3045);
+    _r3.o = xmlvm_create_java_string_from_pool(3048);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -4557,7 +4557,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.GB18030"
-    _r3.o = xmlvm_create_java_string_from_pool(3046);
+    _r3.o = xmlvm_create_java_string_from_pool(3049);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -4567,17 +4567,17 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
     _r3.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_String, _r9.i);
     // "GB18030"
-    _r4.o = xmlvm_create_java_string_from_pool(3047);
+    _r4.o = xmlvm_create_java_string_from_pool(3050);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "windows-54936"
-    _r4.o = xmlvm_create_java_string_from_pool(3048);
+    _r4.o = xmlvm_create_java_string_from_pool(3051);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
     // "ibm-1392"
-    _r4.o = xmlvm_create_java_string_from_pool(3049);
+    _r4.o = xmlvm_create_java_string_from_pool(3052);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r4.o;
@@ -4591,7 +4591,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r9.i);
     // "additional.GB2312"
-    _r3.o = xmlvm_create_java_string_from_pool(3050);
+    _r3.o = xmlvm_create_java_string_from_pool(3053);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
@@ -4606,7 +4606,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(JAV
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r4.o;
     // "cp1383"
-    _r4.o = xmlvm_create_java_string_from_pool(3051);
+    _r4.o = xmlvm_create_java_string_from_pool(3054);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r4.o;
@@ -4637,23 +4637,23 @@ void org_apache_harmony_niochar_CharsetProviderImpl___CLINIT_()
     org_apache_harmony_niochar_CharsetProviderImpl_PUT_HAS_LOADED_NATIVES( _r0.i);
     XMLVM_SOURCE_POSITION("CharsetProviderImpl.java", 55)
     _r0.i = 1;
-    XMLVM_TRY_BEGIN(w37603aaac16b1b6)
+    XMLVM_TRY_BEGIN(w37638aaac16b1b6)
     // Begin try
     org_apache_harmony_niochar_CharsetProviderImpl_PUT_HAS_LOADED_NATIVES( _r0.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w37603aaac16b1b6)
-        XMLVM_CATCH_SPECIFIC(w37603aaac16b1b6,java_lang_UnsatisfiedLinkError,7)
-    XMLVM_CATCH_END(w37603aaac16b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w37603aaac16b1b6)
+    XMLVM_CATCH_BEGIN(w37638aaac16b1b6)
+        XMLVM_CATCH_SPECIFIC(w37638aaac16b1b6,java_lang_UnsatisfiedLinkError,7)
+    XMLVM_CATCH_END(w37638aaac16b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w37638aaac16b1b6)
     label6:;
     XMLVM_SOURCE_POSITION("CharsetProviderImpl.java", 59)
     XMLVM_EXIT_METHOD()
     return;
     label7:;
     XMLVM_SOURCE_POSITION("CharsetProviderImpl.java", 56)
-    java_lang_Thread* curThread_w37603aaac16b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w37603aaac16b1c12->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w37638aaac16b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w37638aaac16b1c12->fields.java_lang_Thread.xmlvmException_;
     goto label6;
     //XMLVM_END_WRAPPER
 }

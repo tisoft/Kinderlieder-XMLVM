@@ -440,37 +440,37 @@ void my_kinderlieder_Product_State___CLINIT_()
     XMLVM_SOURCE_POSITION("Product.java", 13)
     _r0.o = __NEW_my_kinderlieder_Product_State();
     // "INFO"
-    _r1.o = xmlvm_create_java_string_from_pool(3258);
+    _r1.o = xmlvm_create_java_string_from_pool(3261);
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_Product_State___INIT____java_lang_String_int(_r0.o, _r1.o, _r3.i);
     my_kinderlieder_Product_State_PUT_INFO( _r0.o);
     _r0.o = __NEW_my_kinderlieder_Product_State();
     // "AVAILABLE"
-    _r1.o = xmlvm_create_java_string_from_pool(3259);
+    _r1.o = xmlvm_create_java_string_from_pool(3262);
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_Product_State___INIT____java_lang_String_int(_r0.o, _r1.o, _r4.i);
     my_kinderlieder_Product_State_PUT_AVAILABLE( _r0.o);
     _r0.o = __NEW_my_kinderlieder_Product_State();
     // "BUYING"
-    _r1.o = xmlvm_create_java_string_from_pool(3260);
+    _r1.o = xmlvm_create_java_string_from_pool(3263);
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_Product_State___INIT____java_lang_String_int(_r0.o, _r1.o, _r5.i);
     my_kinderlieder_Product_State_PUT_BUYING( _r0.o);
     _r0.o = __NEW_my_kinderlieder_Product_State();
     // "DOWNLOAD"
-    _r1.o = xmlvm_create_java_string_from_pool(3261);
+    _r1.o = xmlvm_create_java_string_from_pool(3264);
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_Product_State___INIT____java_lang_String_int(_r0.o, _r1.o, _r6.i);
     my_kinderlieder_Product_State_PUT_DOWNLOAD( _r0.o);
     _r0.o = __NEW_my_kinderlieder_Product_State();
     // "EXTRACT"
-    _r1.o = xmlvm_create_java_string_from_pool(3262);
+    _r1.o = xmlvm_create_java_string_from_pool(3265);
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_Product_State___INIT____java_lang_String_int(_r0.o, _r1.o, _r7.i);
     my_kinderlieder_Product_State_PUT_EXTRACT( _r0.o);
     _r0.o = __NEW_my_kinderlieder_Product_State();
     // "INSTALLED"
-    _r1.o = xmlvm_create_java_string_from_pool(3263);
+    _r1.o = xmlvm_create_java_string_from_pool(3266);
     _r2.i = 5;
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_Product_State___INIT____java_lang_String_int(_r0.o, _r1.o, _r2.i);

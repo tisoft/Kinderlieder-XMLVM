@@ -417,7 +417,7 @@ void org_json_JSONArray___INIT____org_json_JSONTokener(JAVA_OBJECT me, JAVA_OBJE
     label29:;
     XMLVM_SOURCE_POSITION("JSONArray.java", 115)
     // "A JSONArray text must start with '['"
-    _r2.o = xmlvm_create_java_string_from_pool(1500);
+    _r2.o = xmlvm_create_java_string_from_pool(1503);
     XMLVM_CHECK_NPE(6)
     _r2.o = org_json_JSONTokener_syntaxError___java_lang_String(_r6.o, _r2.o);
     XMLVM_THROW_CUSTOM(_r2.o)
@@ -453,7 +453,7 @@ void org_json_JSONArray___INIT____org_json_JSONTokener(JAVA_OBJECT me, JAVA_OBJE
     }
     XMLVM_SOURCE_POSITION("JSONArray.java", 145)
     // "Expected a ',' or ']'"
-    _r2.o = xmlvm_create_java_string_from_pool(1501);
+    _r2.o = xmlvm_create_java_string_from_pool(1504);
     XMLVM_CHECK_NPE(6)
     _r2.o = org_json_JSONTokener_syntaxError___java_lang_String(_r6.o, _r2.o);
     XMLVM_THROW_CUSTOM(_r2.o)
@@ -486,7 +486,7 @@ void org_json_JSONArray___INIT____org_json_JSONTokener(JAVA_OBJECT me, JAVA_OBJE
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuffer___INIT___(_r2.o);
     // "Expected a '"
-    _r3.o = xmlvm_create_java_string_from_pool(1502);
+    _r3.o = xmlvm_create_java_string_from_pool(1505);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuffer_append___java_lang_String(_r2.o, _r3.o);
     _r3.o = __NEW_java_lang_Character();
@@ -576,7 +576,7 @@ void org_json_JSONArray___INIT____java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n
     XMLVM_SOURCE_POSITION("JSONArray.java", 202)
     _r2.o = __NEW_org_json_JSONException();
     // "JSONArray initial value should be a string or collection or array."
-    _r3.o = xmlvm_create_java_string_from_pool(1503);
+    _r3.o = xmlvm_create_java_string_from_pool(1506);
     XMLVM_CHECK_NPE(2)
     org_json_JSONException___INIT____java_lang_String(_r2.o, _r3.o);
     XMLVM_THROW_CUSTOM(_r2.o)
@@ -610,13 +610,13 @@ JAVA_OBJECT org_json_JSONArray_get___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuffer___INIT___(_r2.o);
     // "JSONArray["
-    _r3.o = xmlvm_create_java_string_from_pool(1504);
+    _r3.o = xmlvm_create_java_string_from_pool(1507);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuffer_append___java_lang_String(_r2.o, _r3.o);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuffer_append___int(_r2.o, _r5.i);
     // "] not found."
-    _r3.o = xmlvm_create_java_string_from_pool(1505);
+    _r3.o = xmlvm_create_java_string_from_pool(1508);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuffer_append___java_lang_String(_r2.o, _r3.o);
     //java_lang_StringBuffer_toString__[5]
@@ -662,13 +662,13 @@ JAVA_OBJECT org_json_JSONArray_getJSONObject___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuffer___INIT___(_r2.o);
     // "JSONArray["
-    _r3.o = xmlvm_create_java_string_from_pool(1504);
+    _r3.o = xmlvm_create_java_string_from_pool(1507);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuffer_append___java_lang_String(_r2.o, _r3.o);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuffer_append___int(_r2.o, _r5.i);
     // "] is not a JSONObject."
-    _r3.o = xmlvm_create_java_string_from_pool(1506);
+    _r3.o = xmlvm_create_java_string_from_pool(1509);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuffer_append___java_lang_String(_r2.o, _r3.o);
     //java_lang_StringBuffer_toString__[5]
@@ -803,7 +803,7 @@ JAVA_OBJECT org_json_JSONArray_toString__(JAVA_OBJECT me)
     XMLVMElem _r2;
     XMLVMElem _r3;
     _r3.o = me;
-    XMLVM_TRY_BEGIN(w20792aaac11b1b2)
+    XMLVM_TRY_BEGIN(w20823aaac11b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("JSONArray.java", 834)
     _r1.o = __NEW_java_lang_StringBuffer();
@@ -828,18 +828,18 @@ JAVA_OBJECT org_json_JSONArray_toString__(JAVA_OBJECT me)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuffer*) _r1.o)->tib->vtable[5])(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w20792aaac11b1b2)
-        XMLVM_CATCH_SPECIFIC(w20792aaac11b1b2,java_lang_Exception,32)
-    XMLVM_CATCH_END(w20792aaac11b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w20792aaac11b1b2)
+    XMLVM_CATCH_BEGIN(w20823aaac11b1b2)
+        XMLVM_CATCH_SPECIFIC(w20823aaac11b1b2,java_lang_Exception,32)
+    XMLVM_CATCH_END(w20823aaac11b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w20823aaac11b1b2)
     label31:;
     XMLVM_SOURCE_POSITION("JSONArray.java", 836)
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label32:;
     XMLVM_SOURCE_POSITION("JSONArray.java", 835)
-    java_lang_Thread* curThread_w20792aaac11b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w20792aaac11b1b8->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w20823aaac11b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w20823aaac11b1b8->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r1;
     _r1.o = JAVA_NULL;
     goto label31;

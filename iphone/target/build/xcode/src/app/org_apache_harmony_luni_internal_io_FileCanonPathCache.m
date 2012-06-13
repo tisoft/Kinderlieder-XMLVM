@@ -432,7 +432,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_io_FileCanonPathCache_get___java_la
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 72)
     _r1.o = org_apache_harmony_luni_internal_io_FileCanonPathCache_GET_lock();
     java_lang_Object_acquireLockRecursive__(_r1.o);
-    XMLVM_TRY_BEGIN(w17616aaab7b1b7)
+    XMLVM_TRY_BEGIN(w17647aaab7b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 73)
     _r0.o = org_apache_harmony_luni_internal_io_FileCanonPathCache_GET_cache();
@@ -442,40 +442,40 @@ JAVA_OBJECT org_apache_harmony_luni_internal_io_FileCanonPathCache_get___java_la
     _r0.o = _r0.o;
     java_lang_Object_releaseLockRecursive__(_r1.o);
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 76)
-    if (_r0.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w17616aaab7b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17616aaab7b1b7, sizeof(XMLVM_JMP_BUF)); goto label20; };
+    if (_r0.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w17647aaab7b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17647aaab7b1b7, sizeof(XMLVM_JMP_BUF)); goto label20; };
     _r0 = _r5;
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 77)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17616aaab7b1b7)
-        XMLVM_CATCH_SPECIFIC(w17616aaab7b1b7,java_lang_Object,17)
-    XMLVM_CATCH_END(w17616aaab7b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17616aaab7b1b7)
+    XMLVM_CATCH_BEGIN(w17647aaab7b1b7)
+        XMLVM_CATCH_SPECIFIC(w17647aaab7b1b7,java_lang_Object,17)
+    XMLVM_CATCH_END(w17647aaab7b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17647aaab7b1b7)
     label16:;
-    XMLVM_TRY_BEGIN(w17616aaab7b1b9)
+    XMLVM_TRY_BEGIN(w17647aaab7b1b9)
     // Begin try
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 95)
-    XMLVM_MEMCPY(curThread_w17616aaab7b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17616aaab7b1b9, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w17647aaab7b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17647aaab7b1b9, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17616aaab7b1b9)
-        XMLVM_CATCH_SPECIFIC(w17616aaab7b1b9,java_lang_Object,17)
-    XMLVM_CATCH_END(w17616aaab7b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17616aaab7b1b9)
+    XMLVM_CATCH_BEGIN(w17647aaab7b1b9)
+        XMLVM_CATCH_SPECIFIC(w17647aaab7b1b9,java_lang_Object,17)
+    XMLVM_CATCH_END(w17647aaab7b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17647aaab7b1b9)
     label17:;
-    XMLVM_TRY_BEGIN(w17616aaab7b1c11)
+    XMLVM_TRY_BEGIN(w17647aaab7b1c11)
     // Begin try
-    java_lang_Thread* curThread_w17616aaab7b1c11aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w17616aaab7b1c11aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w17647aaab7b1c11aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w17647aaab7b1c11aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17616aaab7b1c11)
-        XMLVM_CATCH_SPECIFIC(w17616aaab7b1c11,java_lang_Object,17)
-    XMLVM_CATCH_END(w17616aaab7b1c11)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17616aaab7b1c11)
+    XMLVM_CATCH_BEGIN(w17647aaab7b1c11)
+        XMLVM_CATCH_SPECIFIC(w17647aaab7b1c11,java_lang_Object,17)
+    XMLVM_CATCH_END(w17647aaab7b1c11)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17647aaab7b1c11)
     XMLVM_THROW_CUSTOM(_r0.o)
     label20:;
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 80)
@@ -489,22 +489,22 @@ JAVA_OBJECT org_apache_harmony_luni_internal_io_FileCanonPathCache_get___java_la
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 83)
     _r1.o = org_apache_harmony_luni_internal_io_FileCanonPathCache_GET_lock();
     java_lang_Object_acquireLockRecursive__(_r1.o);
-    XMLVM_TRY_BEGIN(w17616aaab7b1c25)
+    XMLVM_TRY_BEGIN(w17647aaab7b1c25)
     // Begin try
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 84)
     _r0.o = org_apache_harmony_luni_internal_io_FileCanonPathCache_GET_cache();
     //java_util_HashMap_get___java_lang_Object[10]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_HashMap*) _r0.o)->tib->vtable[10])(_r0.o, _r6.o);
-    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w17616aaab7b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17616aaab7b1c25, sizeof(XMLVM_JMP_BUF)); goto label63; };
+    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w17647aaab7b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17647aaab7b1c25, sizeof(XMLVM_JMP_BUF)); goto label63; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17616aaab7b1c25)
-        XMLVM_CATCH_SPECIFIC(w17616aaab7b1c25,java_lang_Object,66)
-    XMLVM_CATCH_END(w17616aaab7b1c25)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17616aaab7b1c25)
+    XMLVM_CATCH_BEGIN(w17647aaab7b1c25)
+        XMLVM_CATCH_SPECIFIC(w17647aaab7b1c25,java_lang_Object,66)
+    XMLVM_CATCH_END(w17647aaab7b1c25)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17647aaab7b1c25)
     label44:;
-    XMLVM_TRY_BEGIN(w17616aaab7b1c27)
+    XMLVM_TRY_BEGIN(w17647aaab7b1c27)
     // Begin try
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 87)
     _r0.o = org_apache_harmony_luni_internal_io_FileCanonPathCache_GET_list();
@@ -522,38 +522,38 @@ JAVA_OBJECT org_apache_harmony_luni_internal_io_FileCanonPathCache_get___java_la
     XMLVM_CHECK_NPE(6)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r6.o)->tib->vtable[1])(_r6.o, _r0.o);
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 86)
-    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w17616aaab7b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17616aaab7b1c27, sizeof(XMLVM_JMP_BUF)); goto label44; };
+    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w17647aaab7b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17647aaab7b1c27, sizeof(XMLVM_JMP_BUF)); goto label44; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17616aaab7b1c27)
-        XMLVM_CATCH_SPECIFIC(w17616aaab7b1c27,java_lang_Object,66)
-    XMLVM_CATCH_END(w17616aaab7b1c27)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17616aaab7b1c27)
+    XMLVM_CATCH_BEGIN(w17647aaab7b1c27)
+        XMLVM_CATCH_SPECIFIC(w17647aaab7b1c27,java_lang_Object,66)
+    XMLVM_CATCH_END(w17647aaab7b1c27)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17647aaab7b1c27)
     label63:;
-    XMLVM_TRY_BEGIN(w17616aaab7b1c29)
+    XMLVM_TRY_BEGIN(w17647aaab7b1c29)
     // Begin try
     java_lang_Object_releaseLockRecursive__(_r1.o);
     _r0 = _r5;
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 92)
-    { XMLVM_MEMCPY(curThread_w17616aaab7b1c29->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17616aaab7b1c29, sizeof(XMLVM_JMP_BUF)); goto label16; };
+    { XMLVM_MEMCPY(curThread_w17647aaab7b1c29->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17647aaab7b1c29, sizeof(XMLVM_JMP_BUF)); goto label16; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17616aaab7b1c29)
-        XMLVM_CATCH_SPECIFIC(w17616aaab7b1c29,java_lang_Object,66)
-    XMLVM_CATCH_END(w17616aaab7b1c29)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17616aaab7b1c29)
+    XMLVM_CATCH_BEGIN(w17647aaab7b1c29)
+        XMLVM_CATCH_SPECIFIC(w17647aaab7b1c29,java_lang_Object,66)
+    XMLVM_CATCH_END(w17647aaab7b1c29)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17647aaab7b1c29)
     label66:;
-    XMLVM_TRY_BEGIN(w17616aaab7b1c31)
+    XMLVM_TRY_BEGIN(w17647aaab7b1c31)
     // Begin try
-    java_lang_Thread* curThread_w17616aaab7b1c31aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w17616aaab7b1c31aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w17647aaab7b1c31aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w17647aaab7b1c31aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17616aaab7b1c31)
-        XMLVM_CATCH_SPECIFIC(w17616aaab7b1c31,java_lang_Object,66)
-    XMLVM_CATCH_END(w17616aaab7b1c31)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17616aaab7b1c31)
+    XMLVM_CATCH_BEGIN(w17647aaab7b1c31)
+        XMLVM_CATCH_SPECIFIC(w17647aaab7b1c31,java_lang_Object,66)
+    XMLVM_CATCH_END(w17647aaab7b1c31)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17647aaab7b1c31)
     XMLVM_THROW_CUSTOM(_r0.o)
     label69:;
     _r0.o = ((org_apache_harmony_luni_internal_io_FileCanonPathCache_CacheElement*) _r0.o)->fields.org_apache_harmony_luni_internal_io_FileCanonPathCache_CacheElement.canonicalPath_;
@@ -581,7 +581,7 @@ void org_apache_harmony_luni_internal_io_FileCanonPathCache_put___java_lang_Stri
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 108)
     _r2.o = org_apache_harmony_luni_internal_io_FileCanonPathCache_GET_lock();
     java_lang_Object_acquireLockRecursive__(_r2.o);
-    XMLVM_TRY_BEGIN(w17616aaab8b1b9)
+    XMLVM_TRY_BEGIN(w17647aaab8b1b9)
     // Begin try
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 109)
     _r0.o = org_apache_harmony_luni_internal_io_FileCanonPathCache_GET_cache();
@@ -589,7 +589,7 @@ void org_apache_harmony_luni_internal_io_FileCanonPathCache_put___java_lang_Stri
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_util_HashMap*) _r0.o)->tib->vtable[16])(_r0.o);
     _r3.i = 256;
-    if (_r0.i < _r3.i) { XMLVM_MEMCPY(curThread_w17616aaab8b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17616aaab8b1b9, sizeof(XMLVM_JMP_BUF)); goto label31; };
+    if (_r0.i < _r3.i) { XMLVM_MEMCPY(curThread_w17647aaab8b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17647aaab8b1b9, sizeof(XMLVM_JMP_BUF)); goto label31; };
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 111)
     _r0.o = org_apache_harmony_luni_internal_io_FileCanonPathCache_GET_list();
     //java_util_LinkedList_removeFirst__[48]
@@ -603,12 +603,12 @@ void org_apache_harmony_luni_internal_io_FileCanonPathCache_put___java_lang_Stri
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_HashMap*) _r3.o)->tib->vtable[15])(_r3.o, _r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17616aaab8b1b9)
-        XMLVM_CATCH_SPECIFIC(w17616aaab8b1b9,java_lang_Object,43)
-    XMLVM_CATCH_END(w17616aaab8b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17616aaab8b1b9)
+    XMLVM_CATCH_BEGIN(w17647aaab8b1b9)
+        XMLVM_CATCH_SPECIFIC(w17647aaab8b1b9,java_lang_Object,43)
+    XMLVM_CATCH_END(w17647aaab8b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17647aaab8b1b9)
     label31:;
-    XMLVM_TRY_BEGIN(w17616aaab8b1c11)
+    XMLVM_TRY_BEGIN(w17647aaab8b1c11)
     // Begin try
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 114)
     _r0.o = org_apache_harmony_luni_internal_io_FileCanonPathCache_GET_cache();
@@ -622,27 +622,27 @@ void org_apache_harmony_luni_internal_io_FileCanonPathCache_put___java_lang_Stri
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_LinkedList*) _r0.o)->tib->vtable[31])(_r0.o, _r4.o);
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 117)
-    XMLVM_MEMCPY(curThread_w17616aaab8b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17616aaab8b1c11, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w17647aaab8b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17647aaab8b1c11, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17616aaab8b1c11)
-        XMLVM_CATCH_SPECIFIC(w17616aaab8b1c11,java_lang_Object,43)
-    XMLVM_CATCH_END(w17616aaab8b1c11)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17616aaab8b1c11)
+    XMLVM_CATCH_BEGIN(w17647aaab8b1c11)
+        XMLVM_CATCH_SPECIFIC(w17647aaab8b1c11,java_lang_Object,43)
+    XMLVM_CATCH_END(w17647aaab8b1c11)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17647aaab8b1c11)
     label43:;
-    XMLVM_TRY_BEGIN(w17616aaab8b1c13)
+    XMLVM_TRY_BEGIN(w17647aaab8b1c13)
     // Begin try
-    java_lang_Thread* curThread_w17616aaab8b1c13aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w17616aaab8b1c13aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w17647aaab8b1c13aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w17647aaab8b1c13aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17616aaab8b1c13)
-        XMLVM_CATCH_SPECIFIC(w17616aaab8b1c13,java_lang_Object,43)
-    XMLVM_CATCH_END(w17616aaab8b1c13)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17616aaab8b1c13)
+    XMLVM_CATCH_BEGIN(w17647aaab8b1c13)
+        XMLVM_CATCH_SPECIFIC(w17647aaab8b1c13,java_lang_Object,43)
+    XMLVM_CATCH_END(w17647aaab8b1c13)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17647aaab8b1c13)
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER
 }
@@ -657,7 +657,7 @@ void org_apache_harmony_luni_internal_io_FileCanonPathCache_clear__()
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 123)
     _r0.o = org_apache_harmony_luni_internal_io_FileCanonPathCache_GET_lock();
     java_lang_Object_acquireLockRecursive__(_r0.o);
-    XMLVM_TRY_BEGIN(w17616aaab9b1b4)
+    XMLVM_TRY_BEGIN(w17647aaab9b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 124)
     _r1.o = org_apache_harmony_luni_internal_io_FileCanonPathCache_GET_cache();
@@ -671,27 +671,27 @@ void org_apache_harmony_luni_internal_io_FileCanonPathCache_clear__()
     (*(void (*)(JAVA_OBJECT)) ((java_util_LinkedList*) _r1.o)->tib->vtable[8])(_r1.o);
     java_lang_Object_releaseLockRecursive__(_r0.o);
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 127)
-    XMLVM_MEMCPY(curThread_w17616aaab9b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17616aaab9b1b4, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w17647aaab9b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17647aaab9b1b4, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17616aaab9b1b4)
-        XMLVM_CATCH_SPECIFIC(w17616aaab9b1b4,java_lang_Object,15)
-    XMLVM_CATCH_END(w17616aaab9b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17616aaab9b1b4)
+    XMLVM_CATCH_BEGIN(w17647aaab9b1b4)
+        XMLVM_CATCH_SPECIFIC(w17647aaab9b1b4,java_lang_Object,15)
+    XMLVM_CATCH_END(w17647aaab9b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17647aaab9b1b4)
     label15:;
-    XMLVM_TRY_BEGIN(w17616aaab9b1b6)
+    XMLVM_TRY_BEGIN(w17647aaab9b1b6)
     // Begin try
-    java_lang_Thread* curThread_w17616aaab9b1b6aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w17616aaab9b1b6aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w17647aaab9b1b6aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w17647aaab9b1b6aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17616aaab9b1b6)
-        XMLVM_CATCH_SPECIFIC(w17616aaab9b1b6,java_lang_Object,15)
-    XMLVM_CATCH_END(w17616aaab9b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17616aaab9b1b6)
+    XMLVM_CATCH_BEGIN(w17647aaab9b1b6)
+        XMLVM_CATCH_SPECIFIC(w17647aaab9b1b6,java_lang_Object,15)
+    XMLVM_CATCH_END(w17647aaab9b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17647aaab9b1b6)
     XMLVM_THROW_CUSTOM(_r1.o)
     //XMLVM_END_WRAPPER
 }

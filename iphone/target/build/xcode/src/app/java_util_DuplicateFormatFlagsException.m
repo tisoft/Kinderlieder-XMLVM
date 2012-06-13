@@ -300,7 +300,7 @@ JAVA_OBJECT java_util_DuplicateFormatFlagsException_getMessage__(JAVA_OBJECT me)
     java_lang_StringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("DuplicateFormatFlagsException.java", 62)
     // "Flags of the DuplicateFormatFlagsException is'"
-    _r1.o = xmlvm_create_java_string_from_pool(1145);
+    _r1.o = xmlvm_create_java_string_from_pool(1148);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("DuplicateFormatFlagsException.java", 63)

@@ -375,7 +375,7 @@ void __INIT_IMPL_org_xml_sax_helpers_NamespaceSupport()
 
     // Initialize interfaces if necessary and assign tib to implementedInterfaces
     _STATIC_org_xml_sax_helpers_NamespaceSupport_XMLNS = (java_lang_String*) xmlvm_create_java_string_from_pool(66);
-    _STATIC_org_xml_sax_helpers_NamespaceSupport_NSDECL = (java_lang_String*) xmlvm_create_java_string_from_pool(1474);
+    _STATIC_org_xml_sax_helpers_NamespaceSupport_NSDECL = (java_lang_String*) xmlvm_create_java_string_from_pool(1477);
     _STATIC_org_xml_sax_helpers_NamespaceSupport_EMPTY_ENUMERATION = (java_util_Enumeration*) JAVA_NULL;
 
     __TIB_org_xml_sax_helpers_NamespaceSupport.declaredFields = &__field_reflection_data[0];
@@ -929,7 +929,7 @@ void org_xml_sax_helpers_NamespaceSupport_setNamespaceDeclUris___boolean(JAVA_OB
     // "xmlns"
     _r1.o = xmlvm_create_java_string_from_pool(705);
     // "http://www.w3.org/xmlns/2000/"
-    _r2.o = xmlvm_create_java_string_from_pool(1474);
+    _r2.o = xmlvm_create_java_string_from_pool(1477);
     XMLVM_CHECK_NPE(0)
     org_xml_sax_helpers_NamespaceSupport_Context_declarePrefix___java_lang_String_java_lang_String(_r0.o, _r1.o, _r2.o);
     goto label14;

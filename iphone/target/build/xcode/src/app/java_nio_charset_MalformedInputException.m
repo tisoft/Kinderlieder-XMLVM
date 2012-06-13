@@ -288,7 +288,7 @@ JAVA_OBJECT java_nio_charset_MalformedInputException_getMessage__(JAVA_OBJECT me
     _r2.o = me;
     XMLVM_SOURCE_POSITION("MalformedInputException.java", 64)
     // "niochar.05"
-    _r0.o = xmlvm_create_java_string_from_pool(3360);
+    _r0.o = xmlvm_create_java_string_from_pool(3363);
     _r1.i = ((java_nio_charset_MalformedInputException*) _r2.o)->fields.java_nio_charset_MalformedInputException.inputLength_;
     _r0.o = org_apache_harmony_niochar_internal_nls_Messages_getString___java_lang_String_int(_r0.o, _r1.i);
     XMLVM_EXIT_METHOD()

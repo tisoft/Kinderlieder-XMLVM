@@ -872,7 +872,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLFormElement_getAcceptCharset__(JAVA_OBJECT 
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLFormElement.java", 91)
     // "accept-charset"
-    _r0.o = xmlvm_create_java_string_from_pool(1103);
+    _r0.o = xmlvm_create_java_string_from_pool(1106);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -891,7 +891,7 @@ void gnu_xml_dom_html2_DomHTMLFormElement_setAcceptCharset___java_lang_String(JA
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLFormElement.java", 96)
     // "accept-charset"
-    _r0.o = xmlvm_create_java_string_from_pool(1103);
+    _r0.o = xmlvm_create_java_string_from_pool(1106);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLFormElement.java", 97)
@@ -909,7 +909,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLFormElement_getAction__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLFormElement.java", 101)
     // "action"
-    _r0.o = xmlvm_create_java_string_from_pool(1104);
+    _r0.o = xmlvm_create_java_string_from_pool(1107);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -928,7 +928,7 @@ void gnu_xml_dom_html2_DomHTMLFormElement_setAction___java_lang_String(JAVA_OBJE
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLFormElement.java", 106)
     // "action"
-    _r0.o = xmlvm_create_java_string_from_pool(1104);
+    _r0.o = xmlvm_create_java_string_from_pool(1107);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLFormElement.java", 107)
@@ -946,7 +946,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLFormElement_getEnctype__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLFormElement.java", 111)
     // "enctype"
-    _r0.o = xmlvm_create_java_string_from_pool(1105);
+    _r0.o = xmlvm_create_java_string_from_pool(1108);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -965,7 +965,7 @@ void gnu_xml_dom_html2_DomHTMLFormElement_setEnctype___java_lang_String(JAVA_OBJ
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLFormElement.java", 116)
     // "enctype"
-    _r0.o = xmlvm_create_java_string_from_pool(1105);
+    _r0.o = xmlvm_create_java_string_from_pool(1108);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLFormElement.java", 117)
@@ -983,7 +983,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLFormElement_getMethod__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLFormElement.java", 121)
     // "method"
-    _r0.o = xmlvm_create_java_string_from_pool(1106);
+    _r0.o = xmlvm_create_java_string_from_pool(1109);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1002,7 +1002,7 @@ void gnu_xml_dom_html2_DomHTMLFormElement_setMethod___java_lang_String(JAVA_OBJE
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLFormElement.java", 126)
     // "method"
-    _r0.o = xmlvm_create_java_string_from_pool(1106);
+    _r0.o = xmlvm_create_java_string_from_pool(1109);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLFormElement.java", 127)
@@ -1057,7 +1057,7 @@ void gnu_xml_dom_html2_DomHTMLFormElement_submit__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLFormElement.java", 141)
     // "submit"
-    _r0.o = xmlvm_create_java_string_from_pool(1107);
+    _r0.o = xmlvm_create_java_string_from_pool(1110);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_dispatchUIEvent___java_lang_String(_r1.o, _r0.o);
     XMLVM_SOURCE_POSITION("DomHTMLFormElement.java", 142)
@@ -1075,7 +1075,7 @@ void gnu_xml_dom_html2_DomHTMLFormElement_reset__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLFormElement.java", 146)
     // "reset"
-    _r0.o = xmlvm_create_java_string_from_pool(1108);
+    _r0.o = xmlvm_create_java_string_from_pool(1111);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_dispatchUIEvent___java_lang_String(_r1.o, _r0.o);
     XMLVM_SOURCE_POSITION("DomHTMLFormElement.java", 147)

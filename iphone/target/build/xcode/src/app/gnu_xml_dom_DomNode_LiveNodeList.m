@@ -399,13 +399,13 @@ void gnu_xml_dom_DomNode_LiveNodeList___INIT____gnu_xml_dom_DomNode_java_lang_St
     ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.matchAnyName_ = _r0.i;
     XMLVM_SOURCE_POSITION("DomNode.java", 1287)
     // "DOMNodeInserted"
-    _r0.o = xmlvm_create_java_string_from_pool(3052);
+    _r0.o = xmlvm_create_java_string_from_pool(3055);
     //gnu_xml_dom_DomNode_addEventListener___java_lang_String_org_w3c_dom_events_EventListener_boolean[6]
     XMLVM_CHECK_NPE(4)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) ((gnu_xml_dom_DomNode*) _r4.o)->tib->vtable[6])(_r4.o, _r0.o, _r3.o, _r1.i);
     XMLVM_SOURCE_POSITION("DomNode.java", 1288)
     // "DOMNodeRemoved"
-    _r0.o = xmlvm_create_java_string_from_pool(3053);
+    _r0.o = xmlvm_create_java_string_from_pool(3056);
     //gnu_xml_dom_DomNode_addEventListener___java_lang_String_org_w3c_dom_events_EventListener_boolean[6]
     XMLVM_CHECK_NPE(4)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) ((gnu_xml_dom_DomNode*) _r4.o)->tib->vtable[6])(_r4.o, _r0.o, _r3.o, _r1.i);
@@ -439,14 +439,14 @@ void gnu_xml_dom_DomNode_LiveNodeList_detach__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DomNode.java", 1297)
     _r0.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.this_0_;
     // "DOMNodeInserted"
-    _r1.o = xmlvm_create_java_string_from_pool(3052);
+    _r1.o = xmlvm_create_java_string_from_pool(3055);
     //gnu_xml_dom_DomNode_removeEventListener___java_lang_String_org_w3c_dom_events_EventListener_boolean[45]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) ((gnu_xml_dom_DomNode*) _r0.o)->tib->vtable[45])(_r0.o, _r1.o, _r3.o, _r2.i);
     XMLVM_SOURCE_POSITION("DomNode.java", 1298)
     _r0.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.this_0_;
     // "DOMNodeRemoved"
-    _r1.o = xmlvm_create_java_string_from_pool(3053);
+    _r1.o = xmlvm_create_java_string_from_pool(3056);
     //gnu_xml_dom_DomNode_removeEventListener___java_lang_String_org_w3c_dom_events_EventListener_boolean[45]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) ((gnu_xml_dom_DomNode*) _r0.o)->tib->vtable[45])(_r0.o, _r1.o, _r3.o, _r2.i);

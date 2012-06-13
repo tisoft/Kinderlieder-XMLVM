@@ -587,7 +587,7 @@ void java_io_FilePermission_init___java_lang_String_java_lang_String(JAVA_OBJECT
     XMLVM_SOURCE_POSITION("FilePermission.java", 96)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.B7"
-    _r1.o = xmlvm_create_java_string_from_pool(2444);
+    _r1.o = xmlvm_create_java_string_from_pool(2447);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -602,7 +602,7 @@ void java_io_FilePermission_init___java_lang_String_java_lang_String(JAVA_OBJECT
     XMLVM_SOURCE_POSITION("FilePermission.java", 101)
     _r0.o = __NEW_java_lang_NullPointerException();
     // "luni.B8"
-    _r1.o = xmlvm_create_java_string_from_pool(2445);
+    _r1.o = xmlvm_create_java_string_from_pool(2448);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_NullPointerException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -855,7 +855,7 @@ JAVA_INT java_io_FilePermission_getMask___java_lang_String(JAVA_OBJECT me, JAVA_
     _r1.o = __NEW_java_lang_IllegalArgumentException();
     XMLVM_SOURCE_POSITION("FilePermission.java", 185)
     // "luni.B9"
-    _r2.o = xmlvm_create_java_string_from_pool(2446);
+    _r2.o = xmlvm_create_java_string_from_pool(2449);
     _r0.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object(_r2.o, _r0.o);
     XMLVM_CHECK_NPE(1)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r1.o, _r0.o);

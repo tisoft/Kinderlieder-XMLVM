@@ -518,7 +518,7 @@ JAVA_OBJECT gnu_xml_xpath_UnionExpr_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);
     // " \174 "
-    _r1.o = xmlvm_create_java_string_from_pool(1046);
+    _r1.o = xmlvm_create_java_string_from_pool(1049);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     _r1.o = ((gnu_xml_xpath_UnionExpr*) _r2.o)->fields.gnu_xml_xpath_UnionExpr.rhs_;

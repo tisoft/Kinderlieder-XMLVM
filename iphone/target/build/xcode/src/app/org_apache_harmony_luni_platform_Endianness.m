@@ -251,7 +251,7 @@ void org_apache_harmony_luni_platform_Endianness___CLINIT_()
     XMLVM_SOURCE_POSITION("Endianness.java", 28)
     _r0.o = __NEW_org_apache_harmony_luni_platform_Endianness();
     // "BIG_ENDIAN"
-    _r1.o = xmlvm_create_java_string_from_pool(2549);
+    _r1.o = xmlvm_create_java_string_from_pool(2552);
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_platform_Endianness___INIT____java_lang_String(_r0.o, _r1.o);
     org_apache_harmony_luni_platform_Endianness_PUT_BIG_ENDIAN( _r0.o);
@@ -259,7 +259,7 @@ void org_apache_harmony_luni_platform_Endianness___CLINIT_()
     _r0.o = __NEW_org_apache_harmony_luni_platform_Endianness();
     XMLVM_SOURCE_POSITION("Endianness.java", 34)
     // "LITTLE_ENDIAN"
-    _r1.o = xmlvm_create_java_string_from_pool(2550);
+    _r1.o = xmlvm_create_java_string_from_pool(2553);
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_platform_Endianness___INIT____java_lang_String(_r0.o, _r1.o);
     org_apache_harmony_luni_platform_Endianness_PUT_LITTLE_ENDIAN( _r0.o);

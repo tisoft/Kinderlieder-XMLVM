@@ -1052,7 +1052,7 @@ JAVA_OBJECT java_lang_reflect_Modifier_toString___int(JAVA_INT n1)
     if (_r1.i == 0) goto label16;
     XMLVM_SOURCE_POSITION("Modifier.java", 285)
     // "public "
-    _r1.o = xmlvm_create_java_string_from_pool(1455);
+    _r1.o = xmlvm_create_java_string_from_pool(1458);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label16:;
@@ -1061,7 +1061,7 @@ JAVA_OBJECT java_lang_reflect_Modifier_toString___int(JAVA_INT n1)
     if (_r1.i == 0) goto label27;
     XMLVM_SOURCE_POSITION("Modifier.java", 288)
     // "protected "
-    _r1.o = xmlvm_create_java_string_from_pool(1456);
+    _r1.o = xmlvm_create_java_string_from_pool(1459);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label27:;
@@ -1070,7 +1070,7 @@ JAVA_OBJECT java_lang_reflect_Modifier_toString___int(JAVA_INT n1)
     if (_r1.i == 0) goto label38;
     XMLVM_SOURCE_POSITION("Modifier.java", 291)
     // "private "
-    _r1.o = xmlvm_create_java_string_from_pool(1457);
+    _r1.o = xmlvm_create_java_string_from_pool(1460);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label38:;
@@ -1079,7 +1079,7 @@ JAVA_OBJECT java_lang_reflect_Modifier_toString___int(JAVA_INT n1)
     if (_r1.i == 0) goto label49;
     XMLVM_SOURCE_POSITION("Modifier.java", 294)
     // "abstract "
-    _r1.o = xmlvm_create_java_string_from_pool(1458);
+    _r1.o = xmlvm_create_java_string_from_pool(1461);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label49:;
@@ -1088,7 +1088,7 @@ JAVA_OBJECT java_lang_reflect_Modifier_toString___int(JAVA_INT n1)
     if (_r1.i == 0) goto label60;
     XMLVM_SOURCE_POSITION("Modifier.java", 297)
     // "static "
-    _r1.o = xmlvm_create_java_string_from_pool(1459);
+    _r1.o = xmlvm_create_java_string_from_pool(1462);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label60:;
@@ -1097,7 +1097,7 @@ JAVA_OBJECT java_lang_reflect_Modifier_toString___int(JAVA_INT n1)
     if (_r1.i == 0) goto label71;
     XMLVM_SOURCE_POSITION("Modifier.java", 300)
     // "final "
-    _r1.o = xmlvm_create_java_string_from_pool(1460);
+    _r1.o = xmlvm_create_java_string_from_pool(1463);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label71:;
@@ -1106,7 +1106,7 @@ JAVA_OBJECT java_lang_reflect_Modifier_toString___int(JAVA_INT n1)
     if (_r1.i == 0) goto label82;
     XMLVM_SOURCE_POSITION("Modifier.java", 303)
     // "transient "
-    _r1.o = xmlvm_create_java_string_from_pool(1461);
+    _r1.o = xmlvm_create_java_string_from_pool(1464);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label82:;
@@ -1115,7 +1115,7 @@ JAVA_OBJECT java_lang_reflect_Modifier_toString___int(JAVA_INT n1)
     if (_r1.i == 0) goto label93;
     XMLVM_SOURCE_POSITION("Modifier.java", 306)
     // "volatile "
-    _r1.o = xmlvm_create_java_string_from_pool(1462);
+    _r1.o = xmlvm_create_java_string_from_pool(1465);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label93:;
@@ -1124,7 +1124,7 @@ JAVA_OBJECT java_lang_reflect_Modifier_toString___int(JAVA_INT n1)
     if (_r1.i == 0) goto label104;
     XMLVM_SOURCE_POSITION("Modifier.java", 309)
     // "synchronized "
-    _r1.o = xmlvm_create_java_string_from_pool(1463);
+    _r1.o = xmlvm_create_java_string_from_pool(1466);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label104:;
@@ -1133,7 +1133,7 @@ JAVA_OBJECT java_lang_reflect_Modifier_toString___int(JAVA_INT n1)
     if (_r1.i == 0) goto label115;
     XMLVM_SOURCE_POSITION("Modifier.java", 312)
     // "native "
-    _r1.o = xmlvm_create_java_string_from_pool(1464);
+    _r1.o = xmlvm_create_java_string_from_pool(1467);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label115:;
@@ -1142,7 +1142,7 @@ JAVA_OBJECT java_lang_reflect_Modifier_toString___int(JAVA_INT n1)
     if (_r1.i == 0) goto label126;
     XMLVM_SOURCE_POSITION("Modifier.java", 315)
     // "strictfp "
-    _r1.o = xmlvm_create_java_string_from_pool(1465);
+    _r1.o = xmlvm_create_java_string_from_pool(1468);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label126:;
@@ -1151,7 +1151,7 @@ JAVA_OBJECT java_lang_reflect_Modifier_toString___int(JAVA_INT n1)
     if (_r1.i == 0) goto label137;
     XMLVM_SOURCE_POSITION("Modifier.java", 318)
     // "interface "
-    _r1.o = xmlvm_create_java_string_from_pool(1466);
+    _r1.o = xmlvm_create_java_string_from_pool(1469);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label137:;

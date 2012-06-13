@@ -864,7 +864,7 @@ void java_io_PushbackInputStream_unread___byte_1ARRAY_int_int(JAVA_OBJECT me, JA
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 297)
     _r0.o = __NEW_java_io_IOException();
     // "luni.D3"
-    _r1.o = xmlvm_create_java_string_from_pool(2541);
+    _r1.o = xmlvm_create_java_string_from_pool(2544);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_io_IOException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -952,7 +952,7 @@ void java_io_PushbackInputStream_unread___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 336)
     _r0.o = __NEW_java_io_IOException();
     // "luni.D3"
-    _r1.o = xmlvm_create_java_string_from_pool(2541);
+    _r1.o = xmlvm_create_java_string_from_pool(2544);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_io_IOException___INIT____java_lang_String(_r0.o, _r1.o);

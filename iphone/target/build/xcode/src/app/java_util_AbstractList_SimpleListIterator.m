@@ -372,7 +372,7 @@ JAVA_OBJECT java_util_AbstractList_SimpleListIterator_next__(JAVA_OBJECT me)
     java_util_ConcurrentModificationException___INIT___(_r0.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
-    XMLVM_TRY_BEGIN(w16611aaab6b1c12)
+    XMLVM_TRY_BEGIN(w16640aaab6b1c12)
     // Begin try
     XMLVM_SOURCE_POSITION("AbstractList.java", 53)
     _r0.o = ((java_util_AbstractList_SimpleListIterator*) _r3.o)->fields.java_util_AbstractList_SimpleListIterator.this_0_;
@@ -395,17 +395,17 @@ JAVA_OBJECT java_util_AbstractList_SimpleListIterator_next__(JAVA_OBJECT me)
     ((java_util_AbstractList_SimpleListIterator*) _r3.o)->fields.java_util_AbstractList_SimpleListIterator.numLeft_ = _r0.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16611aaab6b1c12)
-        XMLVM_CATCH_SPECIFIC(w16611aaab6b1c12,java_lang_IndexOutOfBoundsException,38)
-    XMLVM_CATCH_END(w16611aaab6b1c12)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16611aaab6b1c12)
+    XMLVM_CATCH_BEGIN(w16640aaab6b1c12)
+        XMLVM_CATCH_SPECIFIC(w16640aaab6b1c12,java_lang_IndexOutOfBoundsException,38)
+    XMLVM_CATCH_END(w16640aaab6b1c12)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16640aaab6b1c12)
     XMLVM_SOURCE_POSITION("AbstractList.java", 57)
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label38:;
     XMLVM_SOURCE_POSITION("AbstractList.java", 59)
-    java_lang_Thread* curThread_w16611aaab6b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w16611aaab6b1c17->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w16640aaab6b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w16640aaab6b1c17->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_java_util_NoSuchElementException();
     XMLVM_CHECK_NPE(0)
     java_util_NoSuchElementException___INIT___(_r0.o);
@@ -444,7 +444,7 @@ void java_util_AbstractList_SimpleListIterator_remove__(JAVA_OBJECT me)
     java_util_ConcurrentModificationException___INIT___(_r0.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label25:;
-    XMLVM_TRY_BEGIN(w16611aaab7b1c21)
+    XMLVM_TRY_BEGIN(w16640aaab7b1c21)
     // Begin try
     XMLVM_SOURCE_POSITION("AbstractList.java", 72)
     _r0.i = ((java_util_AbstractList_SimpleListIterator*) _r4.o)->fields.java_util_AbstractList_SimpleListIterator.lastPosition_;
@@ -454,7 +454,7 @@ void java_util_AbstractList_SimpleListIterator_remove__(JAVA_OBJECT me)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_util_AbstractList*) _r1.o)->tib->vtable[16])(_r1.o);
     _r2.i = ((java_util_AbstractList_SimpleListIterator*) _r4.o)->fields.java_util_AbstractList_SimpleListIterator.numLeft_;
     _r1.i = _r1.i - _r2.i;
-    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w16611aaab7b1c21->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w16611aaab7b1c21, sizeof(XMLVM_JMP_BUF)); goto label44; };
+    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w16640aaab7b1c21->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w16640aaab7b1c21, sizeof(XMLVM_JMP_BUF)); goto label44; };
     XMLVM_SOURCE_POSITION("AbstractList.java", 73)
     _r0.i = ((java_util_AbstractList_SimpleListIterator*) _r4.o)->fields.java_util_AbstractList_SimpleListIterator.numLeft_;
     _r1.i = 1;
@@ -462,12 +462,12 @@ void java_util_AbstractList_SimpleListIterator_remove__(JAVA_OBJECT me)
     ((java_util_AbstractList_SimpleListIterator*) _r4.o)->fields.java_util_AbstractList_SimpleListIterator.numLeft_ = _r0.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16611aaab7b1c21)
-        XMLVM_CATCH_SPECIFIC(w16611aaab7b1c21,java_lang_IndexOutOfBoundsException,60)
-    XMLVM_CATCH_END(w16611aaab7b1c21)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16611aaab7b1c21)
+    XMLVM_CATCH_BEGIN(w16640aaab7b1c21)
+        XMLVM_CATCH_SPECIFIC(w16640aaab7b1c21,java_lang_IndexOutOfBoundsException,60)
+    XMLVM_CATCH_END(w16640aaab7b1c21)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16640aaab7b1c21)
     label44:;
-    XMLVM_TRY_BEGIN(w16611aaab7b1c23)
+    XMLVM_TRY_BEGIN(w16640aaab7b1c23)
     // Begin try
     XMLVM_SOURCE_POSITION("AbstractList.java", 75)
     _r0.o = ((java_util_AbstractList_SimpleListIterator*) _r4.o)->fields.java_util_AbstractList_SimpleListIterator.this_0_;
@@ -477,10 +477,10 @@ void java_util_AbstractList_SimpleListIterator_remove__(JAVA_OBJECT me)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) ((java_util_AbstractList*) _r0.o)->tib->vtable[27])(_r0.o, _r1.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16611aaab7b1c23)
-        XMLVM_CATCH_SPECIFIC(w16611aaab7b1c23,java_lang_IndexOutOfBoundsException,60)
-    XMLVM_CATCH_END(w16611aaab7b1c23)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16611aaab7b1c23)
+    XMLVM_CATCH_BEGIN(w16640aaab7b1c23)
+        XMLVM_CATCH_SPECIFIC(w16640aaab7b1c23,java_lang_IndexOutOfBoundsException,60)
+    XMLVM_CATCH_END(w16640aaab7b1c23)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16640aaab7b1c23)
     XMLVM_SOURCE_POSITION("AbstractList.java", 80)
     _r0.o = ((java_util_AbstractList_SimpleListIterator*) _r4.o)->fields.java_util_AbstractList_SimpleListIterator.this_0_;
     _r0.i = ((java_util_AbstractList*) _r0.o)->fields.java_util_AbstractList.modCount_;
@@ -492,8 +492,8 @@ void java_util_AbstractList_SimpleListIterator_remove__(JAVA_OBJECT me)
     return;
     label60:;
     XMLVM_SOURCE_POSITION("AbstractList.java", 77)
-    java_lang_Thread* curThread_w16611aaab7b1c34 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w16611aaab7b1c34->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w16640aaab7b1c34 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w16640aaab7b1c34->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_java_util_ConcurrentModificationException();
     XMLVM_CHECK_NPE(0)
     java_util_ConcurrentModificationException___INIT___(_r0.o);

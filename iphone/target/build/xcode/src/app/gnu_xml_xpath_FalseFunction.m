@@ -338,7 +338,7 @@ JAVA_OBJECT gnu_xml_xpath_FalseFunction_toString__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FalseFunction.java", 69)
     // "false()"
-    _r0.o = xmlvm_create_java_string_from_pool(3359);
+    _r0.o = xmlvm_create_java_string_from_pool(3362);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

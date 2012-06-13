@@ -323,7 +323,7 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_Recognizer_toString__(JAVA_OBJEC
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_Recognizer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_Recognizer.type_;
     if (_r0.o != JAVA_NULL) goto label7;
     // "ANY"
-    _r0.o = xmlvm_create_java_string_from_pool(921);
+    _r0.o = xmlvm_create_java_string_from_pool(924);
     label6:;
     XMLVM_EXIT_METHOD()
     return _r0.o;

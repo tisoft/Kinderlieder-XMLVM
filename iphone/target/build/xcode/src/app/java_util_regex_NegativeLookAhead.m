@@ -337,7 +337,7 @@ JAVA_OBJECT java_util_regex_NegativeLookAhead_getName__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("NegativeLookAhead.java", 57)
     // "NegLookaheadJointSet"
-    _r0.o = xmlvm_create_java_string_from_pool(2286);
+    _r0.o = xmlvm_create_java_string_from_pool(2289);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

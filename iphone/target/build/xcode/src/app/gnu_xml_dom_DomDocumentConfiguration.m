@@ -416,56 +416,56 @@ void gnu_xml_dom_DomDocumentConfiguration___CLINIT_()
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_String, _r0.i);
     _r1.i = 0;
     // "cdata-sections"
-    _r2.o = xmlvm_create_java_string_from_pool(1148);
+    _r2.o = xmlvm_create_java_string_from_pool(1151);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 1;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 58)
     // "comments"
-    _r2.o = xmlvm_create_java_string_from_pool(1149);
+    _r2.o = xmlvm_create_java_string_from_pool(1152);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 2;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 59)
     // "element-content-whitespace"
-    _r2.o = xmlvm_create_java_string_from_pool(1150);
+    _r2.o = xmlvm_create_java_string_from_pool(1153);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 3;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 60)
     // "entities"
-    _r2.o = xmlvm_create_java_string_from_pool(1444);
+    _r2.o = xmlvm_create_java_string_from_pool(1447);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 4;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 61)
     // "error-handler"
-    _r2.o = xmlvm_create_java_string_from_pool(1157);
+    _r2.o = xmlvm_create_java_string_from_pool(1160);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 5;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 62)
     // "namespace-declarations"
-    _r2.o = xmlvm_create_java_string_from_pool(1445);
+    _r2.o = xmlvm_create_java_string_from_pool(1448);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 6;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 63)
     // "split-cdata-sections"
-    _r2.o = xmlvm_create_java_string_from_pool(1446);
+    _r2.o = xmlvm_create_java_string_from_pool(1449);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 7;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 64)
     // "infoset"
-    _r2.o = xmlvm_create_java_string_from_pool(1447);
+    _r2.o = xmlvm_create_java_string_from_pool(1450);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
@@ -533,7 +533,7 @@ void gnu_xml_dom_DomDocumentConfiguration_setParameter___java_lang_String_java_l
     _r1.o = java_lang_String_toLowerCase__(_r8.o);
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 78)
     // "cdata-sections"
-    _r2.o = xmlvm_create_java_string_from_pool(1148);
+    _r2.o = xmlvm_create_java_string_from_pool(1151);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
@@ -555,7 +555,7 @@ void gnu_xml_dom_DomDocumentConfiguration_setParameter___java_lang_String_java_l
     label30:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 82)
     // "comments"
-    _r2.o = xmlvm_create_java_string_from_pool(1149);
+    _r2.o = xmlvm_create_java_string_from_pool(1152);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
@@ -574,7 +574,7 @@ void gnu_xml_dom_DomDocumentConfiguration_setParameter___java_lang_String_java_l
     label51:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 86)
     // "element-content-whitespace"
-    _r2.o = xmlvm_create_java_string_from_pool(1150);
+    _r2.o = xmlvm_create_java_string_from_pool(1153);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
@@ -593,7 +593,7 @@ void gnu_xml_dom_DomDocumentConfiguration_setParameter___java_lang_String_java_l
     label72:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 90)
     // "entities"
-    _r2.o = xmlvm_create_java_string_from_pool(1444);
+    _r2.o = xmlvm_create_java_string_from_pool(1447);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
@@ -612,12 +612,12 @@ void gnu_xml_dom_DomDocumentConfiguration_setParameter___java_lang_String_java_l
     label93:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 94)
     // "error-handler"
-    _r2.o = xmlvm_create_java_string_from_pool(1157);
+    _r2.o = xmlvm_create_java_string_from_pool(1160);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
     if (_r2.i == 0) goto label125;
-    XMLVM_TRY_BEGIN(w19957aaac10b1c60)
+    XMLVM_TRY_BEGIN(w19988aaac10b1c60)
     // Begin try
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 98)
     _r0 = _r9;
@@ -626,15 +626,15 @@ void gnu_xml_dom_DomDocumentConfiguration_setParameter___java_lang_String_java_l
     ((gnu_xml_dom_DomDocumentConfiguration*) _r7.o)->fields.gnu_xml_dom_DomDocumentConfiguration.errorHandler_ = _r1.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w19957aaac10b1c60)
-        XMLVM_CATCH_SPECIFIC(w19957aaac10b1c60,java_lang_ClassCastException,108)
-    XMLVM_CATCH_END(w19957aaac10b1c60)
-    XMLVM_RESTORE_EXCEPTION_ENV(w19957aaac10b1c60)
+    XMLVM_CATCH_BEGIN(w19988aaac10b1c60)
+        XMLVM_CATCH_SPECIFIC(w19988aaac10b1c60,java_lang_ClassCastException,108)
+    XMLVM_CATCH_END(w19988aaac10b1c60)
+    XMLVM_RESTORE_EXCEPTION_ENV(w19988aaac10b1c60)
     goto label29;
     label108:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 102)
-    java_lang_Thread* curThread_w19957aaac10b1c64 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w19957aaac10b1c64->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w19988aaac10b1c64 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w19988aaac10b1c64->fields.java_lang_Thread.xmlvmException_;
     _r1.o = __NEW_gnu_xml_dom_DomDOMException();
     _r2.i = 17;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 103)
@@ -649,7 +649,7 @@ void gnu_xml_dom_DomDocumentConfiguration_setParameter___java_lang_String_java_l
     label125:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 106)
     // "namespace-declarations"
-    _r2.o = xmlvm_create_java_string_from_pool(1445);
+    _r2.o = xmlvm_create_java_string_from_pool(1448);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
@@ -668,7 +668,7 @@ void gnu_xml_dom_DomDocumentConfiguration_setParameter___java_lang_String_java_l
     label146:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 110)
     // "split-cdata-sections"
-    _r2.o = xmlvm_create_java_string_from_pool(1446);
+    _r2.o = xmlvm_create_java_string_from_pool(1449);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
@@ -687,7 +687,7 @@ void gnu_xml_dom_DomDocumentConfiguration_setParameter___java_lang_String_java_l
     label168:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 114)
     // "infoset"
-    _r2.o = xmlvm_create_java_string_from_pool(1447);
+    _r2.o = xmlvm_create_java_string_from_pool(1450);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
@@ -716,42 +716,42 @@ void gnu_xml_dom_DomDocumentConfiguration_setParameter___java_lang_String_java_l
     label200:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 125)
     // "canonical-form"
-    _r2.o = xmlvm_create_java_string_from_pool(1448);
+    _r2.o = xmlvm_create_java_string_from_pool(1451);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
     if (_r2.i != 0) goto label248;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 126)
     // "check-character-normalization"
-    _r2.o = xmlvm_create_java_string_from_pool(1449);
+    _r2.o = xmlvm_create_java_string_from_pool(1452);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
     if (_r2.i != 0) goto label248;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 127)
     // "datatype-normalization"
-    _r2.o = xmlvm_create_java_string_from_pool(1450);
+    _r2.o = xmlvm_create_java_string_from_pool(1453);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
     if (_r2.i != 0) goto label248;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 128)
     // "normalize-characters"
-    _r2.o = xmlvm_create_java_string_from_pool(1451);
+    _r2.o = xmlvm_create_java_string_from_pool(1454);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
     if (_r2.i != 0) goto label248;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 129)
     // "validate"
-    _r2.o = xmlvm_create_java_string_from_pool(1452);
+    _r2.o = xmlvm_create_java_string_from_pool(1455);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
     if (_r2.i != 0) goto label248;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 130)
     // "validate-if-schema"
-    _r2.o = xmlvm_create_java_string_from_pool(1453);
+    _r2.o = xmlvm_create_java_string_from_pool(1456);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
@@ -770,14 +770,14 @@ void gnu_xml_dom_DomDocumentConfiguration_setParameter___java_lang_String_java_l
     label260:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 135)
     // "namespaces"
-    _r2.o = xmlvm_create_java_string_from_pool(1151);
+    _r2.o = xmlvm_create_java_string_from_pool(1154);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
     if (_r2.i != 0) goto label276;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 136)
     // "well-formed"
-    _r2.o = xmlvm_create_java_string_from_pool(1454);
+    _r2.o = xmlvm_create_java_string_from_pool(1457);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
@@ -821,7 +821,7 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentConfiguration_getParameter___java_lang_String
     _r0.o = java_lang_String_toLowerCase__(_r6.o);
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 152)
     // "cdata-sections"
-    _r1.o = xmlvm_create_java_string_from_pool(1148);
+    _r1.o = xmlvm_create_java_string_from_pool(1151);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
@@ -840,7 +840,7 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentConfiguration_getParameter___java_lang_String
     label22:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 156)
     // "comments"
-    _r1.o = xmlvm_create_java_string_from_pool(1149);
+    _r1.o = xmlvm_create_java_string_from_pool(1152);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
@@ -856,7 +856,7 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentConfiguration_getParameter___java_lang_String
     label40:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 160)
     // "element-content-whitespace"
-    _r1.o = xmlvm_create_java_string_from_pool(1150);
+    _r1.o = xmlvm_create_java_string_from_pool(1153);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
@@ -872,7 +872,7 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentConfiguration_getParameter___java_lang_String
     label58:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 164)
     // "entities"
-    _r1.o = xmlvm_create_java_string_from_pool(1444);
+    _r1.o = xmlvm_create_java_string_from_pool(1447);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
@@ -888,7 +888,7 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentConfiguration_getParameter___java_lang_String
     label76:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 168)
     // "error-handler"
-    _r1.o = xmlvm_create_java_string_from_pool(1157);
+    _r1.o = xmlvm_create_java_string_from_pool(1160);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
@@ -899,7 +899,7 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentConfiguration_getParameter___java_lang_String
     label87:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 172)
     // "namespace-declarations"
-    _r1.o = xmlvm_create_java_string_from_pool(1445);
+    _r1.o = xmlvm_create_java_string_from_pool(1448);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
@@ -915,7 +915,7 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentConfiguration_getParameter___java_lang_String
     label105:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 176)
     // "split-cdata-sections"
-    _r1.o = xmlvm_create_java_string_from_pool(1446);
+    _r1.o = xmlvm_create_java_string_from_pool(1449);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
@@ -931,42 +931,42 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentConfiguration_getParameter___java_lang_String
     label123:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 180)
     // "canonical-form"
-    _r1.o = xmlvm_create_java_string_from_pool(1448);
+    _r1.o = xmlvm_create_java_string_from_pool(1451);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
     if (_r1.i != 0) goto label171;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 181)
     // "check-character-normalization"
-    _r1.o = xmlvm_create_java_string_from_pool(1449);
+    _r1.o = xmlvm_create_java_string_from_pool(1452);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
     if (_r1.i != 0) goto label171;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 182)
     // "datatype-normalization"
-    _r1.o = xmlvm_create_java_string_from_pool(1450);
+    _r1.o = xmlvm_create_java_string_from_pool(1453);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
     if (_r1.i != 0) goto label171;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 183)
     // "normalize-characters"
-    _r1.o = xmlvm_create_java_string_from_pool(1451);
+    _r1.o = xmlvm_create_java_string_from_pool(1454);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
     if (_r1.i != 0) goto label171;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 184)
     // "validate"
-    _r1.o = xmlvm_create_java_string_from_pool(1452);
+    _r1.o = xmlvm_create_java_string_from_pool(1455);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
     if (_r1.i != 0) goto label171;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 185)
     // "validate-if-schema"
-    _r1.o = xmlvm_create_java_string_from_pool(1453);
+    _r1.o = xmlvm_create_java_string_from_pool(1456);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
@@ -978,14 +978,14 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentConfiguration_getParameter___java_lang_String
     label175:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 189)
     // "namespaces"
-    _r1.o = xmlvm_create_java_string_from_pool(1151);
+    _r1.o = xmlvm_create_java_string_from_pool(1154);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
     if (_r1.i != 0) goto label191;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 190)
     // "well-formed"
-    _r1.o = xmlvm_create_java_string_from_pool(1454);
+    _r1.o = xmlvm_create_java_string_from_pool(1457);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
@@ -997,7 +997,7 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentConfiguration_getParameter___java_lang_String
     label195:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 194)
     // "infoset"
-    _r1.o = xmlvm_create_java_string_from_pool(1447);
+    _r1.o = xmlvm_create_java_string_from_pool(1450);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
@@ -1051,7 +1051,7 @@ JAVA_BOOLEAN gnu_xml_dom_DomDocumentConfiguration_canSetParameter___java_lang_St
     _r0.o = java_lang_String_toLowerCase__(_r5.o);
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 207)
     // "error-handler"
-    _r1.o = xmlvm_create_java_string_from_pool(1157);
+    _r1.o = xmlvm_create_java_string_from_pool(1160);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
@@ -1081,42 +1081,42 @@ JAVA_BOOLEAN gnu_xml_dom_DomDocumentConfiguration_canSetParameter___java_lang_St
     label32:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 215)
     // "canonical-form"
-    _r1.o = xmlvm_create_java_string_from_pool(1448);
+    _r1.o = xmlvm_create_java_string_from_pool(1451);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
     if (_r1.i != 0) goto label80;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 216)
     // "check-character-normalization"
-    _r1.o = xmlvm_create_java_string_from_pool(1449);
+    _r1.o = xmlvm_create_java_string_from_pool(1452);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
     if (_r1.i != 0) goto label80;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 217)
     // "datatype-normalization"
-    _r1.o = xmlvm_create_java_string_from_pool(1450);
+    _r1.o = xmlvm_create_java_string_from_pool(1453);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
     if (_r1.i != 0) goto label80;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 218)
     // "normalize-characters"
-    _r1.o = xmlvm_create_java_string_from_pool(1451);
+    _r1.o = xmlvm_create_java_string_from_pool(1454);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
     if (_r1.i != 0) goto label80;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 219)
     // "validate"
-    _r1.o = xmlvm_create_java_string_from_pool(1452);
+    _r1.o = xmlvm_create_java_string_from_pool(1455);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
     if (_r1.i != 0) goto label80;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 220)
     // "validate-if-schema"
-    _r1.o = xmlvm_create_java_string_from_pool(1453);
+    _r1.o = xmlvm_create_java_string_from_pool(1456);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
@@ -1135,14 +1135,14 @@ JAVA_BOOLEAN gnu_xml_dom_DomDocumentConfiguration_canSetParameter___java_lang_St
     label91:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 224)
     // "namespaces"
-    _r1.o = xmlvm_create_java_string_from_pool(1151);
+    _r1.o = xmlvm_create_java_string_from_pool(1154);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
     if (_r1.i != 0) goto label107;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 225)
     // "well-formed"
-    _r1.o = xmlvm_create_java_string_from_pool(1454);
+    _r1.o = xmlvm_create_java_string_from_pool(1457);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
@@ -1185,7 +1185,7 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentConfiguration_item___int(JAVA_OBJECT me, JAVA
     XMLVMElem _r2;
     _r1.o = me;
     _r2.i = n1;
-    XMLVM_TRY_BEGIN(w19957aaac14b1b3)
+    XMLVM_TRY_BEGIN(w19988aaac14b1b3)
     // Begin try
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 241)
     _r0.o = gnu_xml_dom_DomDocumentConfiguration_GET_SUPPORTED_PARAMETERS();
@@ -1194,18 +1194,18 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentConfiguration_item___int(JAVA_OBJECT me, JAVA
     _r1.o = _r1.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w19957aaac14b1b3)
-        XMLVM_CATCH_SPECIFIC(w19957aaac14b1b3,java_lang_IndexOutOfBoundsException,10)
-    XMLVM_CATCH_END(w19957aaac14b1b3)
-    XMLVM_RESTORE_EXCEPTION_ENV(w19957aaac14b1b3)
+    XMLVM_CATCH_BEGIN(w19988aaac14b1b3)
+        XMLVM_CATCH_SPECIFIC(w19988aaac14b1b3,java_lang_IndexOutOfBoundsException,10)
+    XMLVM_CATCH_END(w19988aaac14b1b3)
+    XMLVM_RESTORE_EXCEPTION_ENV(w19988aaac14b1b3)
     _r0 = _r1;
     label9:;
     XMLVM_SOURCE_POSITION("DomDocumentConfiguration.java", 245)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label10:;
-    java_lang_Thread* curThread_w19957aaac14b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w19957aaac14b1b9->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w19988aaac14b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w19988aaac14b1b9->fields.java_lang_Thread.xmlvmException_;
     _r0.o = JAVA_NULL;
     goto label9;
     //XMLVM_END_WRAPPER

@@ -341,7 +341,7 @@ JAVA_OBJECT java_util_regex_DotAllQuantifierSet_getName__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DotAllQuantifierSet.java", 57)
     // "<DotAllQuant>"
-    _r0.o = xmlvm_create_java_string_from_pool(2506);
+    _r0.o = xmlvm_create_java_string_from_pool(2509);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

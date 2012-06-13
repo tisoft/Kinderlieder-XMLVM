@@ -499,7 +499,7 @@ JAVA_INT java_util_Random_next___int(JAVA_OBJECT me, JAVA_INT n1)
     _r5.i = n1;
     XMLVM_SOURCE_POSITION("Random.java", 96)
     java_lang_Object_acquireLockRecursive__(_r4.o);
-    XMLVM_TRY_BEGIN(w34817aaab7b1b5)
+    XMLVM_TRY_BEGIN(w34843aaab7b1b5)
     // Begin try
     _r0.l = ((java_util_Random*) _r4.o)->fields.java_util_Random.seed_;
     _r2.l = 25214903917;
@@ -513,10 +513,10 @@ JAVA_INT java_util_Random_next___int(JAVA_OBJECT me, JAVA_INT n1)
     _r0.l = ((java_util_Random*) _r4.o)->fields.java_util_Random.seed_;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w34817aaab7b1b5)
-        XMLVM_CATCH_SPECIFIC(w34817aaab7b1b5,java_lang_Object,29)
-    XMLVM_CATCH_END(w34817aaab7b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w34817aaab7b1b5)
+    XMLVM_CATCH_BEGIN(w34843aaab7b1b5)
+        XMLVM_CATCH_SPECIFIC(w34843aaab7b1b5,java_lang_Object,29)
+    XMLVM_CATCH_END(w34843aaab7b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w34843aaab7b1b5)
     _r2.i = 48;
     _r2.i = _r2.i - _r5.i;
     _r0.l = ((JAVA_ULONG) _r0.l) >> (0x3f & ((JAVA_ULONG) _r2.l));
@@ -525,8 +525,8 @@ JAVA_INT java_util_Random_next___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label29:;
-    java_lang_Thread* curThread_w34817aaab7b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w34817aaab7b1c13->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w34843aaab7b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w34843aaab7b1c13->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r4.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER
@@ -681,10 +681,10 @@ JAVA_DOUBLE java_util_Random_nextGaussian__(JAVA_OBJECT me)
     _r8.d = 1.0;
     XMLVM_SOURCE_POSITION("Random.java", 166)
     java_lang_Object_acquireLockRecursive__(_r12.o);
-    XMLVM_TRY_BEGIN(w34817aaac12b1b6)
+    XMLVM_TRY_BEGIN(w34843aaac12b1b6)
     // Begin try
     _r0.i = ((java_util_Random*) _r12.o)->fields.java_util_Random.haveNextNextGaussian_;
-    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w34817aaac12b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w34817aaac12b1b6, sizeof(XMLVM_JMP_BUF)); goto label16; };
+    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w34843aaac12b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w34843aaac12b1b6, sizeof(XMLVM_JMP_BUF)); goto label16; };
     XMLVM_SOURCE_POSITION("Random.java", 168)
     _r0.i = 0;
     ((java_util_Random*) _r12.o)->fields.java_util_Random.haveNextNextGaussian_ = _r0.i;
@@ -692,17 +692,17 @@ JAVA_DOUBLE java_util_Random_nextGaussian__(JAVA_OBJECT me)
     _r0.d = ((java_util_Random*) _r12.o)->fields.java_util_Random.nextNextGaussian_;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w34817aaac12b1b6)
-        XMLVM_CATCH_SPECIFIC(w34817aaac12b1b6,java_lang_Object,58)
-    XMLVM_CATCH_END(w34817aaac12b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w34817aaac12b1b6)
+    XMLVM_CATCH_BEGIN(w34843aaac12b1b6)
+        XMLVM_CATCH_SPECIFIC(w34843aaac12b1b6,java_lang_Object,58)
+    XMLVM_CATCH_END(w34843aaac12b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w34843aaac12b1b6)
     label14:;
     XMLVM_SOURCE_POSITION("Random.java", 183)
     java_lang_Object_releaseLockRecursive__(_r12.o);
     XMLVM_EXIT_METHOD()
     return _r0.d;
     label16:;
-    XMLVM_TRY_BEGIN(w34817aaac12b1c12)
+    XMLVM_TRY_BEGIN(w34843aaac12b1c12)
     // Begin try
     XMLVM_SOURCE_POSITION("Random.java", 174)
     XMLVM_CHECK_NPE(12)
@@ -718,7 +718,7 @@ JAVA_DOUBLE java_util_Random_nextGaussian__(JAVA_OBJECT me)
     _r6.d = _r2.d * _r2.d;
     _r4.d = _r4.d + _r6.d;
     _r6.i = _r4.d > _r8.d ? 1 : (_r4.d == _r8.d ? 0 : -1);
-    if (_r6.i >= 0) { XMLVM_MEMCPY(curThread_w34817aaac12b1c12->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w34817aaac12b1c12, sizeof(XMLVM_JMP_BUF)); goto label16; };
+    if (_r6.i >= 0) { XMLVM_MEMCPY(curThread_w34843aaac12b1c12->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w34843aaac12b1c12, sizeof(XMLVM_JMP_BUF)); goto label16; };
     XMLVM_SOURCE_POSITION("Random.java", 178)
     XMLVM_SOURCE_POSITION("Random.java", 179)
     _r6.d = -2.0;
@@ -734,15 +734,15 @@ JAVA_DOUBLE java_util_Random_nextGaussian__(JAVA_OBJECT me)
     ((java_util_Random*) _r12.o)->fields.java_util_Random.haveNextNextGaussian_ = _r2.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w34817aaac12b1c12)
-        XMLVM_CATCH_SPECIFIC(w34817aaac12b1c12,java_lang_Object,58)
-    XMLVM_CATCH_END(w34817aaac12b1c12)
-    XMLVM_RESTORE_EXCEPTION_ENV(w34817aaac12b1c12)
+    XMLVM_CATCH_BEGIN(w34843aaac12b1c12)
+        XMLVM_CATCH_SPECIFIC(w34843aaac12b1c12,java_lang_Object,58)
+    XMLVM_CATCH_END(w34843aaac12b1c12)
+    XMLVM_RESTORE_EXCEPTION_ENV(w34843aaac12b1c12)
     _r0.d = _r0.d * _r4.d;
     goto label14;
     label58:;
-    java_lang_Thread* curThread_w34817aaac12b1c16 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w34817aaac12b1c16->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w34843aaac12b1c16 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w34843aaac12b1c16->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r12.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER
@@ -863,7 +863,7 @@ void java_util_Random_setSeed___long(JAVA_OBJECT me, JAVA_LONG n1)
     _r0.l = _r0.l ^ _r5.l;
     _r2.l = 281474976710655;
     _r0.l = _r0.l & _r2.l;
-    XMLVM_TRY_BEGIN(w34817aaac16b1b9)
+    XMLVM_TRY_BEGIN(w34843aaac16b1b9)
     // Begin try
     ((java_util_Random*) _r4.o)->fields.java_util_Random.seed_ = _r0.l;
     XMLVM_SOURCE_POSITION("Random.java", 251)
@@ -871,17 +871,17 @@ void java_util_Random_setSeed___long(JAVA_OBJECT me, JAVA_LONG n1)
     ((java_util_Random*) _r4.o)->fields.java_util_Random.haveNextNextGaussian_ = _r0.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w34817aaac16b1b9)
-        XMLVM_CATCH_SPECIFIC(w34817aaac16b1b9,java_lang_Object,20)
-    XMLVM_CATCH_END(w34817aaac16b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w34817aaac16b1b9)
+    XMLVM_CATCH_BEGIN(w34843aaac16b1b9)
+        XMLVM_CATCH_SPECIFIC(w34843aaac16b1b9,java_lang_Object,20)
+    XMLVM_CATCH_END(w34843aaac16b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w34843aaac16b1b9)
     XMLVM_SOURCE_POSITION("Random.java", 252)
     java_lang_Object_releaseLockRecursive__(_r4.o);
     XMLVM_EXIT_METHOD()
     return;
     label20:;
-    java_lang_Thread* curThread_w34817aaac16b1c14 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w34817aaac16b1c14->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w34843aaac16b1c14 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w34843aaac16b1c14->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r4.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER

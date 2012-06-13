@@ -524,7 +524,7 @@ void org_json_JSONObject___INIT____org_json_JSONTokener(JAVA_OBJECT me, JAVA_OBJ
     if (_r2.i == _r3.i) goto label21;
     XMLVM_SOURCE_POSITION("JSONObject.java", 180)
     // "A JSONObject text must begin with '\173'"
-    _r2.o = xmlvm_create_java_string_from_pool(3420);
+    _r2.o = xmlvm_create_java_string_from_pool(3423);
     XMLVM_CHECK_NPE(5)
     _r2.o = org_json_JSONTokener_syntaxError___java_lang_String(_r5.o, _r2.o);
     XMLVM_THROW_CUSTOM(_r2.o)
@@ -580,14 +580,14 @@ void org_json_JSONObject___INIT____org_json_JSONTokener(JAVA_OBJECT me, JAVA_OBJ
     }
     XMLVM_SOURCE_POSITION("JSONObject.java", 223)
     // "Expected a ',' or '\175'"
-    _r2.o = xmlvm_create_java_string_from_pool(3421);
+    _r2.o = xmlvm_create_java_string_from_pool(3424);
     XMLVM_CHECK_NPE(5)
     _r2.o = org_json_JSONTokener_syntaxError___java_lang_String(_r5.o, _r2.o);
     XMLVM_THROW_CUSTOM(_r2.o)
     label79:;
     XMLVM_SOURCE_POSITION("JSONObject.java", 186)
     // "A JSONObject text must end with '\175'"
-    _r2.o = xmlvm_create_java_string_from_pool(3422);
+    _r2.o = xmlvm_create_java_string_from_pool(3425);
     XMLVM_CHECK_NPE(5)
     _r2.o = org_json_JSONTokener_syntaxError___java_lang_String(_r5.o, _r2.o);
     XMLVM_THROW_CUSTOM(_r2.o)
@@ -597,7 +597,7 @@ void org_json_JSONObject___INIT____org_json_JSONTokener(JAVA_OBJECT me, JAVA_OBJ
     if (_r0.i == _r2.i) goto label58;
     XMLVM_SOURCE_POSITION("JSONObject.java", 204)
     // "Expected a ':' after a key"
-    _r2.o = xmlvm_create_java_string_from_pool(3423);
+    _r2.o = xmlvm_create_java_string_from_pool(3426);
     XMLVM_CHECK_NPE(5)
     _r2.o = org_json_JSONTokener_syntaxError___java_lang_String(_r5.o, _r2.o);
     XMLVM_THROW_CUSTOM(_r2.o)
@@ -667,14 +667,14 @@ JAVA_OBJECT org_json_JSONObject_get___java_lang_String(JAVA_OBJECT me, JAVA_OBJE
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuffer___INIT___(_r2.o);
     // "JSONObject["
-    _r3.o = xmlvm_create_java_string_from_pool(3424);
+    _r3.o = xmlvm_create_java_string_from_pool(3427);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuffer_append___java_lang_String(_r2.o, _r3.o);
     _r3.o = org_json_JSONObject_quote___java_lang_String(_r5.o);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuffer_append___java_lang_String(_r2.o, _r3.o);
     // "] not found."
-    _r3.o = xmlvm_create_java_string_from_pool(1505);
+    _r3.o = xmlvm_create_java_string_from_pool(1508);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuffer_append___java_lang_String(_r2.o, _r3.o);
     //java_lang_StringBuffer_toString__[5]
@@ -756,14 +756,14 @@ JAVA_BOOLEAN org_json_JSONObject_getBoolean___java_lang_String(JAVA_OBJECT me, J
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuffer___INIT___(_r3.o);
     // "JSONObject["
-    _r4.o = xmlvm_create_java_string_from_pool(3424);
+    _r4.o = xmlvm_create_java_string_from_pool(3427);
     XMLVM_CHECK_NPE(3)
     _r3.o = java_lang_StringBuffer_append___java_lang_String(_r3.o, _r4.o);
     _r4.o = org_json_JSONObject_quote___java_lang_String(_r6.o);
     XMLVM_CHECK_NPE(3)
     _r3.o = java_lang_StringBuffer_append___java_lang_String(_r3.o, _r4.o);
     // "] is not a Boolean."
-    _r4.o = xmlvm_create_java_string_from_pool(3425);
+    _r4.o = xmlvm_create_java_string_from_pool(3428);
     XMLVM_CHECK_NPE(3)
     _r3.o = java_lang_StringBuffer_append___java_lang_String(_r3.o, _r4.o);
     //java_lang_StringBuffer_toString__[5]
@@ -831,7 +831,7 @@ JAVA_OBJECT org_json_JSONObject_numberToString___java_lang_Number(JAVA_OBJECT n1
     XMLVM_SOURCE_POSITION("JSONObject.java", 740)
     _r1.o = __NEW_org_json_JSONException();
     // "Null pointer"
-    _r2.o = xmlvm_create_java_string_from_pool(3426);
+    _r2.o = xmlvm_create_java_string_from_pool(3429);
     XMLVM_CHECK_NPE(1)
     org_json_JSONException___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_THROW_CUSTOM(_r1.o)
@@ -988,7 +988,7 @@ JAVA_OBJECT org_json_JSONObject_put___java_lang_String_java_lang_Object(JAVA_OBJ
     XMLVM_SOURCE_POSITION("JSONObject.java", 1053)
     _r0.o = __NEW_org_json_JSONException();
     // "Null key."
-    _r1.o = xmlvm_create_java_string_from_pool(3427);
+    _r1.o = xmlvm_create_java_string_from_pool(3430);
     XMLVM_CHECK_NPE(0)
     org_json_JSONException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -1042,7 +1042,7 @@ JAVA_OBJECT org_json_JSONObject_quote___java_lang_String(JAVA_OBJECT n1)
     label12:;
     XMLVM_SOURCE_POSITION("JSONObject.java", 1093)
     // "\042\042"
-    _r6.o = xmlvm_create_java_string_from_pool(3428);
+    _r6.o = xmlvm_create_java_string_from_pool(3431);
     label14:;
     XMLVM_SOURCE_POSITION("JSONObject.java", 1145)
     XMLVM_EXIT_METHOD()
@@ -1102,7 +1102,7 @@ JAVA_OBJECT org_json_JSONObject_quote___java_lang_String(JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(6)
     java_lang_StringBuffer___INIT___(_r6.o);
     // "000"
-    _r7.o = xmlvm_create_java_string_from_pool(3429);
+    _r7.o = xmlvm_create_java_string_from_pool(3432);
     XMLVM_CHECK_NPE(6)
     _r6.o = java_lang_StringBuffer_append___java_lang_String(_r6.o, _r7.o);
     _r7.o = java_lang_Integer_toHexString___int(_r1.i);
@@ -1116,7 +1116,7 @@ JAVA_OBJECT org_json_JSONObject_quote___java_lang_String(JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(6)
     java_lang_StringBuffer___INIT___(_r6.o);
     // "\134u"
-    _r7.o = xmlvm_create_java_string_from_pool(3430);
+    _r7.o = xmlvm_create_java_string_from_pool(3433);
     XMLVM_CHECK_NPE(6)
     _r6.o = java_lang_StringBuffer_append___java_lang_String(_r6.o, _r7.o);
     //java_lang_String_length__[8]
@@ -1163,35 +1163,35 @@ JAVA_OBJECT org_json_JSONObject_quote___java_lang_String(JAVA_OBJECT n1)
     label137:;
     XMLVM_SOURCE_POSITION("JSONObject.java", 1120)
     // "\134b"
-    _r6.o = xmlvm_create_java_string_from_pool(3431);
+    _r6.o = xmlvm_create_java_string_from_pool(3434);
     XMLVM_CHECK_NPE(4)
     java_lang_StringBuffer_append___java_lang_String(_r4.o, _r6.o);
     goto label116;
     label143:;
     XMLVM_SOURCE_POSITION("JSONObject.java", 1123)
     // "\134t"
-    _r6.o = xmlvm_create_java_string_from_pool(1690);
+    _r6.o = xmlvm_create_java_string_from_pool(1693);
     XMLVM_CHECK_NPE(4)
     java_lang_StringBuffer_append___java_lang_String(_r4.o, _r6.o);
     goto label116;
     label149:;
     XMLVM_SOURCE_POSITION("JSONObject.java", 1126)
     // "\134n"
-    _r6.o = xmlvm_create_java_string_from_pool(1691);
+    _r6.o = xmlvm_create_java_string_from_pool(1694);
     XMLVM_CHECK_NPE(4)
     java_lang_StringBuffer_append___java_lang_String(_r4.o, _r6.o);
     goto label116;
     label155:;
     XMLVM_SOURCE_POSITION("JSONObject.java", 1129)
     // "\134f"
-    _r6.o = xmlvm_create_java_string_from_pool(3286);
+    _r6.o = xmlvm_create_java_string_from_pool(3289);
     XMLVM_CHECK_NPE(4)
     java_lang_StringBuffer_append___java_lang_String(_r4.o, _r6.o);
     goto label116;
     label161:;
     XMLVM_SOURCE_POSITION("JSONObject.java", 1132)
     // "\134r"
-    _r6.o = xmlvm_create_java_string_from_pool(1692);
+    _r6.o = xmlvm_create_java_string_from_pool(1695);
     XMLVM_CHECK_NPE(4)
     java_lang_StringBuffer_append___java_lang_String(_r4.o, _r6.o);
     goto label116;
@@ -1244,7 +1244,7 @@ void org_json_JSONObject_testValidity___java_lang_Object(JAVA_OBJECT n1)
     XMLVMElem _r4;
     _r4.o = n1;
     // "JSON does not allow non-finite numbers."
-    _r3.o = xmlvm_create_java_string_from_pool(3432);
+    _r3.o = xmlvm_create_java_string_from_pool(3435);
     XMLVM_SOURCE_POSITION("JSONObject.java", 1174)
     if (_r4.o == JAVA_NULL) goto label64;
     XMLVM_SOURCE_POSITION("JSONObject.java", 1175)
@@ -1266,7 +1266,7 @@ void org_json_JSONObject_testValidity___java_lang_Object(JAVA_OBJECT n1)
     XMLVM_SOURCE_POSITION("JSONObject.java", 1177)
     _r1.o = __NEW_org_json_JSONException();
     // "JSON does not allow non-finite numbers."
-    _r2.o = xmlvm_create_java_string_from_pool(3432);
+    _r2.o = xmlvm_create_java_string_from_pool(3435);
     XMLVM_CHECK_NPE(1)
     org_json_JSONException___INIT____java_lang_String(_r1.o, _r3.o);
     XMLVM_THROW_CUSTOM(_r1.o)
@@ -1290,7 +1290,7 @@ void org_json_JSONObject_testValidity___java_lang_Object(JAVA_OBJECT n1)
     XMLVM_SOURCE_POSITION("JSONObject.java", 1182)
     _r1.o = __NEW_org_json_JSONException();
     // "JSON does not allow non-finite numbers."
-    _r2.o = xmlvm_create_java_string_from_pool(3432);
+    _r2.o = xmlvm_create_java_string_from_pool(3435);
     XMLVM_CHECK_NPE(1)
     org_json_JSONException___INIT____java_lang_String(_r1.o, _r3.o);
     XMLVM_THROW_CUSTOM(_r1.o)
@@ -1313,7 +1313,7 @@ JAVA_OBJECT org_json_JSONObject_toString__(JAVA_OBJECT me)
     XMLVMElem _r5;
     XMLVMElem _r6;
     _r6.o = me;
-    XMLVM_TRY_BEGIN(w46572aaac17b1b2)
+    XMLVM_TRY_BEGIN(w46607aaac17b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("JSONObject.java", 1223)
     XMLVM_CHECK_NPE(6)
@@ -1321,27 +1321,27 @@ JAVA_OBJECT org_json_JSONObject_toString__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("JSONObject.java", 1224)
     _r3.o = __NEW_java_lang_StringBuffer();
     // "\173"
-    _r4.o = xmlvm_create_java_string_from_pool(1818);
+    _r4.o = xmlvm_create_java_string_from_pool(1821);
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuffer___INIT____java_lang_String(_r3.o, _r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w46572aaac17b1b2)
-        XMLVM_CATCH_SPECIFIC(w46572aaac17b1b2,java_lang_Exception,63)
-    XMLVM_CATCH_END(w46572aaac17b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w46572aaac17b1b2)
+    XMLVM_CATCH_BEGIN(w46607aaac17b1b2)
+        XMLVM_CATCH_SPECIFIC(w46607aaac17b1b2,java_lang_Exception,63)
+    XMLVM_CATCH_END(w46607aaac17b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w46607aaac17b1b2)
     label11:;
-    XMLVM_TRY_BEGIN(w46572aaac17b1b4)
+    XMLVM_TRY_BEGIN(w46607aaac17b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("JSONObject.java", 1226)
     XMLVM_CHECK_NPE(1)
     _r4.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_hasNext__])(_r1.o);
-    if (_r4.i == 0) { XMLVM_MEMCPY(curThread_w46572aaac17b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w46572aaac17b1b4, sizeof(XMLVM_JMP_BUF)); goto label67; };
+    if (_r4.i == 0) { XMLVM_MEMCPY(curThread_w46607aaac17b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w46607aaac17b1b4, sizeof(XMLVM_JMP_BUF)); goto label67; };
     XMLVM_SOURCE_POSITION("JSONObject.java", 1227)
     XMLVM_CHECK_NPE(3)
     _r4.i = java_lang_AbstractStringBuilder_length__(_r3.o);
     _r5.i = 1;
-    if (_r4.i <= _r5.i) { XMLVM_MEMCPY(curThread_w46572aaac17b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w46572aaac17b1b4, sizeof(XMLVM_JMP_BUF)); goto label29; };
+    if (_r4.i <= _r5.i) { XMLVM_MEMCPY(curThread_w46607aaac17b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w46607aaac17b1b4, sizeof(XMLVM_JMP_BUF)); goto label29; };
     XMLVM_SOURCE_POSITION("JSONObject.java", 1228)
     _r4.i = 44;
     //java_lang_StringBuffer_append___char[21]
@@ -1349,12 +1349,12 @@ JAVA_OBJECT org_json_JSONObject_toString__(JAVA_OBJECT me)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuffer*) _r3.o)->tib->vtable[21])(_r3.o, _r4.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w46572aaac17b1b4)
-        XMLVM_CATCH_SPECIFIC(w46572aaac17b1b4,java_lang_Exception,63)
-    XMLVM_CATCH_END(w46572aaac17b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w46572aaac17b1b4)
+    XMLVM_CATCH_BEGIN(w46607aaac17b1b4)
+        XMLVM_CATCH_SPECIFIC(w46607aaac17b1b4,java_lang_Exception,63)
+    XMLVM_CATCH_END(w46607aaac17b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w46607aaac17b1b4)
     label29:;
-    XMLVM_TRY_BEGIN(w46572aaac17b1b6)
+    XMLVM_TRY_BEGIN(w46607aaac17b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("JSONObject.java", 1230)
     XMLVM_CHECK_NPE(1)
@@ -1378,42 +1378,42 @@ JAVA_OBJECT org_json_JSONObject_toString__(JAVA_OBJECT me)
     _r4.o = org_json_JSONObject_valueToString___java_lang_Object(_r4.o);
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuffer_append___java_lang_String(_r3.o, _r4.o);
-    { XMLVM_MEMCPY(curThread_w46572aaac17b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w46572aaac17b1b6, sizeof(XMLVM_JMP_BUF)); goto label11; };
+    { XMLVM_MEMCPY(curThread_w46607aaac17b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w46607aaac17b1b6, sizeof(XMLVM_JMP_BUF)); goto label11; };
     XMLVM_SOURCE_POSITION("JSONObject.java", 1237)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w46572aaac17b1b6)
-        XMLVM_CATCH_SPECIFIC(w46572aaac17b1b6,java_lang_Exception,63)
-    XMLVM_CATCH_END(w46572aaac17b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w46572aaac17b1b6)
+    XMLVM_CATCH_BEGIN(w46607aaac17b1b6)
+        XMLVM_CATCH_SPECIFIC(w46607aaac17b1b6,java_lang_Exception,63)
+    XMLVM_CATCH_END(w46607aaac17b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w46607aaac17b1b6)
     label63:;
-    XMLVM_TRY_BEGIN(w46572aaac17b1b8)
+    XMLVM_TRY_BEGIN(w46607aaac17b1b8)
     // Begin try
-    java_lang_Thread* curThread_w46572aaac17b1b8aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r4.o = curThread_w46572aaac17b1b8aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w46607aaac17b1b8aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r4.o = curThread_w46607aaac17b1b8aa->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r4;
     _r4.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("JSONObject.java", 1238)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w46572aaac17b1b8)
-        XMLVM_CATCH_SPECIFIC(w46572aaac17b1b8,java_lang_Exception,63)
-    XMLVM_CATCH_END(w46572aaac17b1b8)
-    XMLVM_RESTORE_EXCEPTION_ENV(w46572aaac17b1b8)
+    XMLVM_CATCH_BEGIN(w46607aaac17b1b8)
+        XMLVM_CATCH_SPECIFIC(w46607aaac17b1b8,java_lang_Exception,63)
+    XMLVM_CATCH_END(w46607aaac17b1b8)
+    XMLVM_RESTORE_EXCEPTION_ENV(w46607aaac17b1b8)
     label66:;
-    XMLVM_TRY_BEGIN(w46572aaac17b1c10)
+    XMLVM_TRY_BEGIN(w46607aaac17b1c10)
     // Begin try
-    XMLVM_MEMCPY(curThread_w46572aaac17b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w46572aaac17b1c10, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w46607aaac17b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w46607aaac17b1c10, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r4.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w46572aaac17b1c10)
-        XMLVM_CATCH_SPECIFIC(w46572aaac17b1c10,java_lang_Exception,63)
-    XMLVM_CATCH_END(w46572aaac17b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w46572aaac17b1c10)
+    XMLVM_CATCH_BEGIN(w46607aaac17b1c10)
+        XMLVM_CATCH_SPECIFIC(w46607aaac17b1c10,java_lang_Exception,63)
+    XMLVM_CATCH_END(w46607aaac17b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w46607aaac17b1c10)
     label67:;
-    XMLVM_TRY_BEGIN(w46572aaac17b1c12)
+    XMLVM_TRY_BEGIN(w46607aaac17b1c12)
     // Begin try
     XMLVM_SOURCE_POSITION("JSONObject.java", 1235)
     _r4.i = 125;
@@ -1426,10 +1426,10 @@ JAVA_OBJECT org_json_JSONObject_toString__(JAVA_OBJECT me)
     _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuffer*) _r3.o)->tib->vtable[5])(_r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w46572aaac17b1c12)
-        XMLVM_CATCH_SPECIFIC(w46572aaac17b1c12,java_lang_Exception,63)
-    XMLVM_CATCH_END(w46572aaac17b1c12)
-    XMLVM_RESTORE_EXCEPTION_ENV(w46572aaac17b1c12)
+    XMLVM_CATCH_BEGIN(w46607aaac17b1c12)
+        XMLVM_CATCH_SPECIFIC(w46607aaac17b1c12,java_lang_Exception,63)
+    XMLVM_CATCH_END(w46607aaac17b1c12)
+    XMLVM_RESTORE_EXCEPTION_ENV(w46607aaac17b1c12)
     goto label66;
     //XMLVM_END_WRAPPER
 }
@@ -1466,7 +1466,7 @@ JAVA_OBJECT org_json_JSONObject_valueToString___java_lang_Object(JAVA_OBJECT n1)
     if (!__TIB_org_json_JSONString.classInitialized) __INIT_org_json_JSONString();
     _r2.i = XMLVM_ISA(_r5.o, __CLASS_org_json_JSONString);
     if (_r2.i == 0) goto label63;
-    XMLVM_TRY_BEGIN(w46572aaac18b1c17)
+    XMLVM_TRY_BEGIN(w46607aaac18b1c17)
     // Begin try
     XMLVM_SOURCE_POSITION("JSONObject.java", 1345)
     _r5.o = _r5.o;
@@ -1474,10 +1474,10 @@ JAVA_OBJECT org_json_JSONObject_valueToString___java_lang_Object(JAVA_OBJECT n1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_json_JSONString_toJSONString__])(_r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w46572aaac18b1c17)
-        XMLVM_CATCH_SPECIFIC(w46572aaac18b1c17,java_lang_Exception,30)
-    XMLVM_CATCH_END(w46572aaac18b1c17)
-    XMLVM_RESTORE_EXCEPTION_ENV(w46572aaac18b1c17)
+    XMLVM_CATCH_BEGIN(w46607aaac18b1c17)
+        XMLVM_CATCH_SPECIFIC(w46607aaac18b1c17,java_lang_Exception,30)
+    XMLVM_CATCH_END(w46607aaac18b1c17)
+    XMLVM_RESTORE_EXCEPTION_ENV(w46607aaac18b1c17)
     XMLVM_SOURCE_POSITION("JSONObject.java", 1349)
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
     _r2.i = XMLVM_ISA(_r1.o, __CLASS_java_lang_String);
@@ -1488,8 +1488,8 @@ JAVA_OBJECT org_json_JSONObject_valueToString___java_lang_Object(JAVA_OBJECT n1)
     goto label11;
     label30:;
     XMLVM_SOURCE_POSITION("JSONObject.java", 1346)
-    java_lang_Thread* curThread_w46572aaac18b1c27 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w46572aaac18b1c27->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w46607aaac18b1c27 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w46607aaac18b1c27->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r2;
     XMLVM_SOURCE_POSITION("JSONObject.java", 1347)
     _r2.o = __NEW_org_json_JSONException();
@@ -1503,7 +1503,7 @@ JAVA_OBJECT org_json_JSONObject_valueToString___java_lang_Object(JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuffer___INIT___(_r3.o);
     // "Bad value from toJSONString: "
-    _r4.o = xmlvm_create_java_string_from_pool(3433);
+    _r4.o = xmlvm_create_java_string_from_pool(3436);
     XMLVM_CHECK_NPE(3)
     _r3.o = java_lang_StringBuffer_append___java_lang_String(_r3.o, _r4.o);
     XMLVM_CHECK_NPE(3)

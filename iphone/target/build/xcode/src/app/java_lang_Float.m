@@ -1411,14 +1411,14 @@ JAVA_OBJECT java_lang_Float_toHexString___float(JAVA_FLOAT n1)
     XMLVM_SOURCE_POSITION("Float.java", 446)
     if (_r1.i == 0) goto label60;
     // "-0x0.0p0"
-    _r0.o = xmlvm_create_java_string_from_pool(980);
+    _r0.o = xmlvm_create_java_string_from_pool(983);
     goto label9;
     label58:;
     _r1.i = 0;
     goto label38;
     label60:;
     // "0x0.0p0"
-    _r0.o = xmlvm_create_java_string_from_pool(981);
+    _r0.o = xmlvm_create_java_string_from_pool(984);
     goto label9;
     label63:;
     XMLVM_SOURCE_POSITION("Float.java", 449)
@@ -1430,7 +1430,7 @@ JAVA_OBJECT java_lang_Float_toHexString___float(JAVA_FLOAT n1)
     if (_r1.i == 0) goto label126;
     XMLVM_SOURCE_POSITION("Float.java", 451)
     // "-0x"
-    _r1.o = xmlvm_create_java_string_from_pool(982);
+    _r1.o = xmlvm_create_java_string_from_pool(985);
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuilder_append___java_lang_String(_r3.o, _r1.o);
     label77:;
@@ -1472,7 +1472,7 @@ JAVA_OBJECT java_lang_Float_toHexString___float(JAVA_FLOAT n1)
     java_lang_StringBuilder_append___java_lang_String(_r3.o, _r2.o);
     XMLVM_SOURCE_POSITION("Float.java", 477)
     // "p-126"
-    _r0.o = xmlvm_create_java_string_from_pool(983);
+    _r0.o = xmlvm_create_java_string_from_pool(986);
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuilder_append___java_lang_String(_r3.o, _r0.o);
     label121:;
@@ -1483,7 +1483,7 @@ JAVA_OBJECT java_lang_Float_toHexString___float(JAVA_FLOAT n1)
     label126:;
     XMLVM_SOURCE_POSITION("Float.java", 453)
     // "0x"
-    _r1.o = xmlvm_create_java_string_from_pool(984);
+    _r1.o = xmlvm_create_java_string_from_pool(987);
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuilder_append___java_lang_String(_r3.o, _r1.o);
     goto label77;
@@ -1503,7 +1503,7 @@ JAVA_OBJECT java_lang_Float_toHexString___float(JAVA_FLOAT n1)
     label142:;
     XMLVM_SOURCE_POSITION("Float.java", 479)
     // "1."
-    _r1.o = xmlvm_create_java_string_from_pool(985);
+    _r1.o = xmlvm_create_java_string_from_pool(988);
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuilder_append___java_lang_String(_r3.o, _r1.o);
     _r1 = _r0;

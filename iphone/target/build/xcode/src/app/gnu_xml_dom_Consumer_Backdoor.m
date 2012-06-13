@@ -575,7 +575,7 @@ JAVA_OBJECT gnu_xml_dom_Consumer_Backdoor_getDoctype__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Consumer.java", 126)
     _r0.o = __NEW_org_xml_sax_SAXException();
     // "doctype missing!"
-    _r1.o = xmlvm_create_java_string_from_pool(2501);
+    _r1.o = xmlvm_create_java_string_from_pool(2504);
     XMLVM_CHECK_NPE(0)
     org_xml_sax_SAXException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)

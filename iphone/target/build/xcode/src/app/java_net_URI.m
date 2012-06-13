@@ -1025,12 +1025,12 @@ void __INIT_IMPL_java_net_URI()
     __TIB_java_net_URI.itable[XMLVM_ITABLE_IDX_java_lang_Comparable_compareTo___java_lang_Object] = __TIB_java_net_URI.vtable[6];
 
     _STATIC_java_net_URI_serialVersionUID = -6052424284110960213;
-    _STATIC_java_net_URI_unreserved = (java_lang_String*) xmlvm_create_java_string_from_pool(3405);
-    _STATIC_java_net_URI_punct = (java_lang_String*) xmlvm_create_java_string_from_pool(3406);
-    _STATIC_java_net_URI_reserved = (java_lang_String*) xmlvm_create_java_string_from_pool(3407);
-    _STATIC_java_net_URI_someLegal = (java_lang_String*) xmlvm_create_java_string_from_pool(3408);
-    _STATIC_java_net_URI_queryLegal = (java_lang_String*) xmlvm_create_java_string_from_pool(3183);
-    _STATIC_java_net_URI_allLegal = (java_lang_String*) xmlvm_create_java_string_from_pool(3177);
+    _STATIC_java_net_URI_unreserved = (java_lang_String*) xmlvm_create_java_string_from_pool(3408);
+    _STATIC_java_net_URI_punct = (java_lang_String*) xmlvm_create_java_string_from_pool(3409);
+    _STATIC_java_net_URI_reserved = (java_lang_String*) xmlvm_create_java_string_from_pool(3410);
+    _STATIC_java_net_URI_someLegal = (java_lang_String*) xmlvm_create_java_string_from_pool(3411);
+    _STATIC_java_net_URI_queryLegal = (java_lang_String*) xmlvm_create_java_string_from_pool(3186);
+    _STATIC_java_net_URI_allLegal = (java_lang_String*) xmlvm_create_java_string_from_pool(3180);
 
     __TIB_java_net_URI.declaredFields = &__field_reflection_data[0];
     __TIB_java_net_URI.numDeclaredFields = sizeof(__field_reflection_data) / sizeof(XMLVM_FIELD_REFLECTION_DATA);
@@ -1258,7 +1258,7 @@ void java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String(J
     _r3.i = 0;
     _r0.i = -1;
     // "_-!.\176'()*,;:$&+=?/[]@"
-    _r2.o = xmlvm_create_java_string_from_pool(3177);
+    _r2.o = xmlvm_create_java_string_from_pool(3180);
     XMLVM_SOURCE_POSITION("URI.java", 109)
     XMLVM_CHECK_NPE(4)
     java_lang_Object___INIT___(_r4.o);
@@ -1287,7 +1287,7 @@ void java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String(J
     if (_r6.o == JAVA_NULL) goto label39;
     XMLVM_SOURCE_POSITION("URI.java", 118)
     // "_-!.\176'()*,;:$&+=?/[]@"
-    _r1.o = xmlvm_create_java_string_from_pool(3177);
+    _r1.o = xmlvm_create_java_string_from_pool(3180);
     XMLVM_CHECK_NPE(4)
     _r1.o = java_net_URI_quoteComponent___java_lang_String_java_lang_String(_r4.o, _r6.o, _r2.o);
     XMLVM_CHECK_NPE(0)
@@ -1302,7 +1302,7 @@ void java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String(J
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("URI.java", 123)
     // "_-!.\176'()*,;:$&+=?/[]@"
-    _r1.o = xmlvm_create_java_string_from_pool(3177);
+    _r1.o = xmlvm_create_java_string_from_pool(3180);
     XMLVM_CHECK_NPE(4)
     _r1.o = java_net_URI_quoteComponent___java_lang_String_java_lang_String(_r4.o, _r7.o, _r2.o);
     XMLVM_CHECK_NPE(0)
@@ -1353,7 +1353,7 @@ void java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String_i
     _r4.i = 58;
     _r3.i = -1;
     // "_-!.\176'()*,;:$&+=?/[]@"
-    _r5.o = xmlvm_create_java_string_from_pool(3177);
+    _r5.o = xmlvm_create_java_string_from_pool(3180);
     XMLVM_SOURCE_POSITION("URI.java", 156)
     XMLVM_CHECK_NPE(6)
     java_lang_Object___INIT___(_r6.o);
@@ -1396,7 +1396,7 @@ void java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String_i
     XMLVM_SOURCE_POSITION("URI.java", 168)
     _r0.o = __NEW_java_net_URISyntaxException();
     // "luni.82"
-    _r1.o = xmlvm_create_java_string_from_pool(3409);
+    _r1.o = xmlvm_create_java_string_from_pool(3412);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_net_URISyntaxException___INIT____java_lang_String_java_lang_String(_r0.o, _r11.o, _r1.o);
@@ -1423,7 +1423,7 @@ void java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String_i
     label81:;
     XMLVM_SOURCE_POSITION("URI.java", 178)
     // "//"
-    _r1.o = xmlvm_create_java_string_from_pool(1932);
+    _r1.o = xmlvm_create_java_string_from_pool(1935);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label86:;
@@ -1431,7 +1431,7 @@ void java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String_i
     if (_r8.o == JAVA_NULL) goto label102;
     XMLVM_SOURCE_POSITION("URI.java", 183)
     // "_-!.\176'()*,;:$&+="
-    _r1.o = xmlvm_create_java_string_from_pool(3408);
+    _r1.o = xmlvm_create_java_string_from_pool(3411);
     XMLVM_CHECK_NPE(6)
     _r1.o = java_net_URI_quoteComponent___java_lang_String_java_lang_String(_r6.o, _r8.o, _r1.o);
     XMLVM_CHECK_NPE(0)
@@ -1460,7 +1460,7 @@ void java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String_i
     XMLVM_SOURCE_POSITION("URI.java", 192)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "["
-    _r2.o = xmlvm_create_java_string_from_pool(1370);
+    _r2.o = xmlvm_create_java_string_from_pool(1373);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(1)
@@ -1491,7 +1491,7 @@ void java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String_i
     if (_r11.o == JAVA_NULL) goto label169;
     XMLVM_SOURCE_POSITION("URI.java", 204)
     // "/@_-!.\176'()*,;:$&+="
-    _r1.o = xmlvm_create_java_string_from_pool(3181);
+    _r1.o = xmlvm_create_java_string_from_pool(3184);
     XMLVM_CHECK_NPE(6)
     _r1.o = java_net_URI_quoteComponent___java_lang_String_java_lang_String(_r6.o, _r11.o, _r1.o);
     XMLVM_CHECK_NPE(0)
@@ -1506,7 +1506,7 @@ void java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String_i
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("URI.java", 210)
     // "_-!.\176'()*,;:$&+=?/[]@"
-    _r1.o = xmlvm_create_java_string_from_pool(3177);
+    _r1.o = xmlvm_create_java_string_from_pool(3180);
     XMLVM_CHECK_NPE(6)
     _r1.o = java_net_URI_quoteComponent___java_lang_String_java_lang_String(_r6.o, _r12.o, _r5.o);
     XMLVM_CHECK_NPE(0)
@@ -1521,7 +1521,7 @@ void java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String_i
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("URI.java", 216)
     // "_-!.\176'()*,;:$&+=?/[]@"
-    _r1.o = xmlvm_create_java_string_from_pool(3177);
+    _r1.o = xmlvm_create_java_string_from_pool(3180);
     XMLVM_CHECK_NPE(6)
     _r1.o = java_net_URI_quoteComponent___java_lang_String_java_lang_String(_r6.o, _r13.o, _r5.o);
     XMLVM_CHECK_NPE(0)
@@ -1606,7 +1606,7 @@ void java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String_j
     _r0.i = -1;
     _r3.i = 0;
     // "_-!.\176'()*,;:$&+=?/[]@"
-    _r2.o = xmlvm_create_java_string_from_pool(3177);
+    _r2.o = xmlvm_create_java_string_from_pool(3180);
     XMLVM_SOURCE_POSITION("URI.java", 268)
     XMLVM_CHECK_NPE(4)
     java_lang_Object___INIT___(_r4.o);
@@ -1632,7 +1632,7 @@ void java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String_j
     XMLVM_SOURCE_POSITION("URI.java", 272)
     _r0.o = __NEW_java_net_URISyntaxException();
     // "luni.82"
-    _r1.o = xmlvm_create_java_string_from_pool(3409);
+    _r1.o = xmlvm_create_java_string_from_pool(3412);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_net_URISyntaxException___INIT____java_lang_String_java_lang_String(_r0.o, _r7.o, _r1.o);
@@ -1657,12 +1657,12 @@ void java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String_j
     if (_r6.o == JAVA_NULL) goto label74;
     XMLVM_SOURCE_POSITION("URI.java", 281)
     // "//"
-    _r1.o = xmlvm_create_java_string_from_pool(1932);
+    _r1.o = xmlvm_create_java_string_from_pool(1935);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("URI.java", 283)
     // "@[]_-!.\176'()*,;:$&+="
-    _r1.o = xmlvm_create_java_string_from_pool(3179);
+    _r1.o = xmlvm_create_java_string_from_pool(3182);
     XMLVM_CHECK_NPE(4)
     _r1.o = java_net_URI_quoteComponent___java_lang_String_java_lang_String(_r4.o, _r6.o, _r1.o);
     XMLVM_CHECK_NPE(0)
@@ -1672,7 +1672,7 @@ void java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String_j
     if (_r7.o == JAVA_NULL) goto label85;
     XMLVM_SOURCE_POSITION("URI.java", 288)
     // "/@_-!.\176'()*,;:$&+="
-    _r1.o = xmlvm_create_java_string_from_pool(3181);
+    _r1.o = xmlvm_create_java_string_from_pool(3184);
     XMLVM_CHECK_NPE(4)
     _r1.o = java_net_URI_quoteComponent___java_lang_String_java_lang_String(_r4.o, _r7.o, _r1.o);
     XMLVM_CHECK_NPE(0)
@@ -1687,7 +1687,7 @@ void java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String_j
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("URI.java", 293)
     // "_-!.\176'()*,;:$&+=?/[]@"
-    _r1.o = xmlvm_create_java_string_from_pool(3177);
+    _r1.o = xmlvm_create_java_string_from_pool(3180);
     XMLVM_CHECK_NPE(4)
     _r1.o = java_net_URI_quoteComponent___java_lang_String_java_lang_String(_r4.o, _r8.o, _r2.o);
     XMLVM_CHECK_NPE(0)
@@ -1702,7 +1702,7 @@ void java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String_j
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("URI.java", 298)
     // "_-!.\176'()*,;:$&+=?/[]@"
-    _r1.o = xmlvm_create_java_string_from_pool(3177);
+    _r1.o = xmlvm_create_java_string_from_pool(3180);
     XMLVM_CHECK_NPE(4)
     _r1.o = java_net_URI_quoteComponent___java_lang_String_java_lang_String(_r4.o, _r9.o, _r2.o);
     XMLVM_CHECK_NPE(0)
@@ -1735,22 +1735,22 @@ JAVA_OBJECT java_net_URI_quoteComponent___java_lang_String_java_lang_String(JAVA
     _r2.o = me;
     _r3.o = n1;
     _r4.o = n2;
-    XMLVM_TRY_BEGIN(w45814aaac27b1b4)
+    XMLVM_TRY_BEGIN(w45849aaac27b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("URI.java", 834)
     _r0.o = java_net_URIEncoderDecoder_quoteIllegal___java_lang_String_java_lang_String(_r3.o, _r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w45814aaac27b1b4)
-        XMLVM_CATCH_SPECIFIC(w45814aaac27b1b4,java_io_UnsupportedEncodingException,5)
-    XMLVM_CATCH_END(w45814aaac27b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w45814aaac27b1b4)
+    XMLVM_CATCH_BEGIN(w45849aaac27b1b4)
+        XMLVM_CATCH_SPECIFIC(w45849aaac27b1b4,java_io_UnsupportedEncodingException,5)
+    XMLVM_CATCH_END(w45849aaac27b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w45849aaac27b1b4)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label5:;
     XMLVM_SOURCE_POSITION("URI.java", 835)
-    java_lang_Thread* curThread_w45814aaac27b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w45814aaac27b1b8->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w45849aaac27b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w45849aaac27b1b8->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("URI.java", 836)
     _r1.o = __NEW_java_lang_RuntimeException();
     //java_io_UnsupportedEncodingException_toString__[5]
@@ -2010,7 +2010,7 @@ JAVA_OBJECT java_net_URI_create___java_lang_String(JAVA_OBJECT n1)
     XMLVMElem _r1;
     XMLVMElem _r2;
     _r2.o = n1;
-    XMLVM_TRY_BEGIN(w45814aaac29b1b2)
+    XMLVM_TRY_BEGIN(w45849aaac29b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("URI.java", 968)
     XMLVM_SOURCE_POSITION("URI.java", 970)
@@ -2019,17 +2019,17 @@ JAVA_OBJECT java_net_URI_create___java_lang_String(JAVA_OBJECT n1)
     java_net_URI___INIT____java_lang_String(_r0.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w45814aaac29b1b2)
-        XMLVM_CATCH_SPECIFIC(w45814aaac29b1b2,java_net_URISyntaxException,6)
-    XMLVM_CATCH_END(w45814aaac29b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w45814aaac29b1b2)
+    XMLVM_CATCH_BEGIN(w45849aaac29b1b2)
+        XMLVM_CATCH_SPECIFIC(w45849aaac29b1b2,java_net_URISyntaxException,6)
+    XMLVM_CATCH_END(w45849aaac29b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w45849aaac29b1b2)
     XMLVM_SOURCE_POSITION("URI.java", 974)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label6:;
     XMLVM_SOURCE_POSITION("URI.java", 971)
-    java_lang_Thread* curThread_w45814aaac29b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w45814aaac29b1b7->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w45849aaac29b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w45849aaac29b1b7->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("URI.java", 972)
     _r1.o = __NEW_java_lang_IllegalArgumentException();
     //java_net_URISyntaxException_getMessage__[7]
@@ -2814,7 +2814,7 @@ JAVA_OBJECT java_net_URI_normalize___java_lang_String(JAVA_OBJECT me, JAVA_OBJEC
     _r8.i = 47;
     _r7.i = 0;
     // ".."
-    _r11.o = xmlvm_create_java_string_from_pool(1094);
+    _r11.o = xmlvm_create_java_string_from_pool(1097);
     XMLVM_SOURCE_POSITION("URI.java", 1311)
     XMLVM_SOURCE_POSITION("URI.java", 1312)
     //java_lang_String_length__[8]
@@ -2930,7 +2930,7 @@ JAVA_OBJECT java_net_URI_normalize___java_lang_String(JAVA_OBJECT me, JAVA_OBJEC
     label129:;
     XMLVM_SOURCE_POSITION("URI.java", 1389)
     // "./"
-    _r1.o = xmlvm_create_java_string_from_pool(1574);
+    _r1.o = xmlvm_create_java_string_from_pool(1577);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_insert___int_java_lang_String(_r0.o, _r7.i, _r1.o);
     XMLVM_SOURCE_POSITION("URI.java", 1390)
@@ -2979,7 +2979,7 @@ JAVA_OBJECT java_net_URI_normalize___java_lang_String(JAVA_OBJECT me, JAVA_OBJEC
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
     _r4.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
     // ".."
-    _r5.o = xmlvm_create_java_string_from_pool(1094);
+    _r5.o = xmlvm_create_java_string_from_pool(1097);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(4)
     _r4.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r11.o);
@@ -3000,7 +3000,7 @@ JAVA_OBJECT java_net_URI_normalize___java_lang_String(JAVA_OBJECT me, JAVA_OBJEC
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r4.i);
     _r5.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     // ".."
-    _r6.o = xmlvm_create_java_string_from_pool(1094);
+    _r6.o = xmlvm_create_java_string_from_pool(1097);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(5)
     _r5.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r5.o)->tib->vtable[1])(_r5.o, _r11.o);
@@ -3400,7 +3400,7 @@ void java_net_URI_setSchemeSpecificPart__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("URI.java", 1555)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "//"
-    _r2.o = xmlvm_create_java_string_from_pool(1932);
+    _r2.o = xmlvm_create_java_string_from_pool(1935);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     _r2.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.authority_;
@@ -3480,22 +3480,22 @@ JAVA_OBJECT java_net_URI_encodeOthers___java_lang_String(JAVA_OBJECT me, JAVA_OB
     XMLVMElem _r3;
     _r2.o = me;
     _r3.o = n1;
-    XMLVM_TRY_BEGIN(w45814aaac59b1b3)
+    XMLVM_TRY_BEGIN(w45849aaac59b1b3)
     // Begin try
     XMLVM_SOURCE_POSITION("URI.java", 1600)
     _r0.o = java_net_URIEncoderDecoder_encodeOthers___java_lang_String(_r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w45814aaac59b1b3)
-        XMLVM_CATCH_SPECIFIC(w45814aaac59b1b3,java_io_UnsupportedEncodingException,5)
-    XMLVM_CATCH_END(w45814aaac59b1b3)
-    XMLVM_RESTORE_EXCEPTION_ENV(w45814aaac59b1b3)
+    XMLVM_CATCH_BEGIN(w45849aaac59b1b3)
+        XMLVM_CATCH_SPECIFIC(w45849aaac59b1b3,java_io_UnsupportedEncodingException,5)
+    XMLVM_CATCH_END(w45849aaac59b1b3)
+    XMLVM_RESTORE_EXCEPTION_ENV(w45849aaac59b1b3)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label5:;
     XMLVM_SOURCE_POSITION("URI.java", 1601)
-    java_lang_Thread* curThread_w45814aaac59b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w45814aaac59b1b7->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w45849aaac59b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w45849aaac59b1b7->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("URI.java", 1602)
     _r1.o = __NEW_java_lang_RuntimeException();
     //java_io_UnsupportedEncodingException_toString__[5]
@@ -3526,20 +3526,20 @@ JAVA_OBJECT java_net_URI_decode___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label4:;
-    XMLVM_TRY_BEGIN(w45814aaac60b1c11)
+    XMLVM_TRY_BEGIN(w45849aaac60b1c11)
     // Begin try
     _r0.o = java_net_URIEncoderDecoder_decode___java_lang_String(_r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w45814aaac60b1c11)
-        XMLVM_CATCH_SPECIFIC(w45814aaac60b1c11,java_io_UnsupportedEncodingException,9)
-    XMLVM_CATCH_END(w45814aaac60b1c11)
-    XMLVM_RESTORE_EXCEPTION_ENV(w45814aaac60b1c11)
+    XMLVM_CATCH_BEGIN(w45849aaac60b1c11)
+        XMLVM_CATCH_SPECIFIC(w45849aaac60b1c11,java_io_UnsupportedEncodingException,9)
+    XMLVM_CATCH_END(w45849aaac60b1c11)
+    XMLVM_RESTORE_EXCEPTION_ENV(w45849aaac60b1c11)
     goto label3;
     label9:;
     XMLVM_SOURCE_POSITION("URI.java", 1613)
-    java_lang_Thread* curThread_w45814aaac60b1c15 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w45814aaac60b1c15->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w45849aaac60b1c15 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w45849aaac60b1c15->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("URI.java", 1614)
     _r1.o = __NEW_java_lang_RuntimeException();
     //java_io_UnsupportedEncodingException_toString__[5]
@@ -3634,7 +3634,7 @@ JAVA_OBJECT java_net_URI_toString__(JAVA_OBJECT me)
     if (_r1.o == JAVA_NULL) goto label69;
     XMLVM_SOURCE_POSITION("URI.java", 1645)
     // "//"
-    _r1.o = xmlvm_create_java_string_from_pool(1932);
+    _r1.o = xmlvm_create_java_string_from_pool(1935);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("URI.java", 1646)
@@ -3729,7 +3729,7 @@ JAVA_OBJECT java_net_URI_getHashString__(JAVA_OBJECT me)
     if (_r1.o == JAVA_NULL) goto label73;
     XMLVM_SOURCE_POSITION("URI.java", 1684)
     // "//"
-    _r1.o = xmlvm_create_java_string_from_pool(1932);
+    _r1.o = xmlvm_create_java_string_from_pool(1935);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("URI.java", 1685)
@@ -3772,7 +3772,7 @@ JAVA_OBJECT java_net_URI_getHashString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     // "@"
-    _r2.o = xmlvm_create_java_string_from_pool(972);
+    _r2.o = xmlvm_create_java_string_from_pool(975);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     //java_lang_StringBuilder_toString__[5]
@@ -3825,7 +3825,7 @@ JAVA_OBJECT java_net_URI_toURL__(JAVA_OBJECT me)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     _r1.o = __NEW_java_lang_StringBuilder();
     // "luni.91"
-    _r2.o = xmlvm_create_java_string_from_pool(3410);
+    _r2.o = xmlvm_create_java_string_from_pool(3413);
     _r2.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r2.o);
     _r2.o = java_lang_String_valueOf___java_lang_Object(_r2.o);
     XMLVM_CHECK_NPE(1)
@@ -3873,7 +3873,7 @@ void java_net_URI_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, JAVA_OB
     XMLVM_SOURCE_POSITION("URI.java", 1734)
     XMLVM_CHECK_NPE(4)
     java_io_ObjectInputStream_defaultReadObject__(_r4.o);
-    XMLVM_TRY_BEGIN(w45814aaac65b1b5)
+    XMLVM_TRY_BEGIN(w45849aaac65b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("URI.java", 1736)
     _r0.o = __NEW_java_net_URI_Helper();
@@ -3885,17 +3885,17 @@ void java_net_URI_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, JAVA_OB
     java_net_URI_Helper_access$1___java_net_URI_Helper_java_lang_String_boolean(_r0.o, _r1.o, _r2.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w45814aaac65b1b5)
-        XMLVM_CATCH_SPECIFIC(w45814aaac65b1b5,java_net_URISyntaxException,16)
-    XMLVM_CATCH_END(w45814aaac65b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w45814aaac65b1b5)
+    XMLVM_CATCH_BEGIN(w45849aaac65b1b5)
+        XMLVM_CATCH_SPECIFIC(w45849aaac65b1b5,java_net_URISyntaxException,16)
+    XMLVM_CATCH_END(w45849aaac65b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w45849aaac65b1b5)
     XMLVM_SOURCE_POSITION("URI.java", 1740)
     XMLVM_EXIT_METHOD()
     return;
     label16:;
     XMLVM_SOURCE_POSITION("URI.java", 1737)
-    java_lang_Thread* curThread_w45814aaac65b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w45814aaac65b1c10->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w45849aaac65b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w45849aaac65b1c10->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("URI.java", 1738)
     _r1.o = __NEW_java_io_IOException();
     //java_net_URISyntaxException_toString__[5]

@@ -530,7 +530,7 @@ void java_io_OutputStreamWriter___INIT____java_io_OutputStream_java_lang_String(
     label22:;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 92)
     ((java_io_OutputStreamWriter*) _r2.o)->fields.java_io_OutputStreamWriter.out_ = _r3.o;
-    XMLVM_TRY_BEGIN(w17517aaab5b1c22)
+    XMLVM_TRY_BEGIN(w17548aaab5b1c22)
     // Begin try
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 94)
     _r0.o = java_nio_charset_Charset_forName___java_lang_String(_r4.o);
@@ -540,10 +540,10 @@ void java_io_OutputStreamWriter___INIT____java_io_OutputStream_java_lang_String(
     ((java_io_OutputStreamWriter*) _r2.o)->fields.java_io_OutputStreamWriter.encoder_ = _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaab5b1c22)
-        XMLVM_CATCH_SPECIFIC(w17517aaab5b1c22,java_lang_Exception,49)
-    XMLVM_CATCH_END(w17517aaab5b1c22)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaab5b1c22)
+    XMLVM_CATCH_BEGIN(w17548aaab5b1c22)
+        XMLVM_CATCH_SPECIFIC(w17548aaab5b1c22,java_lang_Exception,49)
+    XMLVM_CATCH_END(w17548aaab5b1c22)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaab5b1c22)
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 98)
     _r0.o = ((java_io_OutputStreamWriter*) _r2.o)->fields.java_io_OutputStreamWriter.encoder_;
     _r1.o = java_nio_charset_CodingErrorAction_GET_REPLACE();
@@ -559,8 +559,8 @@ void java_io_OutputStreamWriter___INIT____java_io_OutputStream_java_lang_String(
     return;
     label49:;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 96)
-    java_lang_Thread* curThread_w17517aaab5b1c35 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w17517aaab5b1c35->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w17548aaab5b1c35 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w17548aaab5b1c35->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_java_io_UnsupportedEncodingException();
     XMLVM_CHECK_NPE(0)
     java_io_UnsupportedEncodingException___INIT____java_lang_String(_r0.o, _r4.o);
@@ -659,14 +659,14 @@ void java_io_OutputStreamWriter_close__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 150)
     _r0.o = ((java_io_Writer*) _r3.o)->fields.java_io_Writer.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
-    XMLVM_TRY_BEGIN(w17517aaab8b1b5)
+    XMLVM_TRY_BEGIN(w17548aaab8b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 151)
     _r1.o = ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.encoder_;
-    if (_r1.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w17517aaab8b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17517aaab8b1b5, sizeof(XMLVM_JMP_BUF)); goto label44; };
+    if (_r1.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w17548aaab8b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17548aaab8b1b5, sizeof(XMLVM_JMP_BUF)); goto label44; };
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 152)
     _r1.i = ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.encoderFlush_;
-    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w17517aaab8b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17517aaab8b1b5, sizeof(XMLVM_JMP_BUF)); goto label25; };
+    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w17548aaab8b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17548aaab8b1b5, sizeof(XMLVM_JMP_BUF)); goto label25; };
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 153)
     _r1.o = ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.encoder_;
     _r2.o = ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.bytes_;
@@ -674,25 +674,25 @@ void java_io_OutputStreamWriter_close__(JAVA_OBJECT me)
     _r1.o = java_nio_charset_CharsetEncoder_flush___java_nio_ByteBuffer(_r1.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaab8b1b5)
-        XMLVM_CATCH_SPECIFIC(w17517aaab8b1b5,java_lang_Object,68)
-    XMLVM_CATCH_END(w17517aaab8b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaab8b1b5)
+    XMLVM_CATCH_BEGIN(w17548aaab8b1b5)
+        XMLVM_CATCH_SPECIFIC(w17548aaab8b1b5,java_lang_Object,68)
+    XMLVM_CATCH_END(w17548aaab8b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaab8b1b5)
     label19:;
-    XMLVM_TRY_BEGIN(w17517aaab8b1b7)
+    XMLVM_TRY_BEGIN(w17548aaab8b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 154)
     XMLVM_CHECK_NPE(1)
     _r2.i = java_nio_charset_CoderResult_isUnderflow__(_r1.o);
-    if (_r2.i == 0) { XMLVM_MEMCPY(curThread_w17517aaab8b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17517aaab8b1b7, sizeof(XMLVM_JMP_BUF)); goto label46; };
+    if (_r2.i == 0) { XMLVM_MEMCPY(curThread_w17548aaab8b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17548aaab8b1b7, sizeof(XMLVM_JMP_BUF)); goto label46; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaab8b1b7)
-        XMLVM_CATCH_SPECIFIC(w17517aaab8b1b7,java_lang_Object,68)
-    XMLVM_CATCH_END(w17517aaab8b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaab8b1b7)
+    XMLVM_CATCH_BEGIN(w17548aaab8b1b7)
+        XMLVM_CATCH_SPECIFIC(w17548aaab8b1b7,java_lang_Object,68)
+    XMLVM_CATCH_END(w17548aaab8b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaab8b1b7)
     label25:;
-    XMLVM_TRY_BEGIN(w17517aaab8b1b9)
+    XMLVM_TRY_BEGIN(w17548aaab8b1b9)
     // Begin try
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 164)
     //java_io_OutputStreamWriter_flush__[11]
@@ -716,31 +716,31 @@ void java_io_OutputStreamWriter_close__(JAVA_OBJECT me)
     ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.bytes_ = _r1.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaab8b1b9)
-        XMLVM_CATCH_SPECIFIC(w17517aaab8b1b9,java_lang_Object,68)
-    XMLVM_CATCH_END(w17517aaab8b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaab8b1b9)
+    XMLVM_CATCH_BEGIN(w17548aaab8b1b9)
+        XMLVM_CATCH_SPECIFIC(w17548aaab8b1b9,java_lang_Object,68)
+    XMLVM_CATCH_END(w17548aaab8b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaab8b1b9)
     label44:;
-    XMLVM_TRY_BEGIN(w17517aaab8b1c11)
+    XMLVM_TRY_BEGIN(w17548aaab8b1c11)
     // Begin try
     java_lang_Object_releaseLockRecursive__(_r0.o);
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 171)
-    XMLVM_MEMCPY(curThread_w17517aaab8b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17517aaab8b1c11, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w17548aaab8b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17548aaab8b1c11, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaab8b1c11)
-        XMLVM_CATCH_SPECIFIC(w17517aaab8b1c11,java_lang_Object,68)
-    XMLVM_CATCH_END(w17517aaab8b1c11)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaab8b1c11)
+    XMLVM_CATCH_BEGIN(w17548aaab8b1c11)
+        XMLVM_CATCH_SPECIFIC(w17548aaab8b1c11,java_lang_Object,68)
+    XMLVM_CATCH_END(w17548aaab8b1c11)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaab8b1c11)
     label46:;
-    XMLVM_TRY_BEGIN(w17517aaab8b1c13)
+    XMLVM_TRY_BEGIN(w17548aaab8b1c13)
     // Begin try
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 155)
     XMLVM_CHECK_NPE(1)
     _r2.i = java_nio_charset_CoderResult_isOverflow__(_r1.o);
-    if (_r2.i == 0) { XMLVM_MEMCPY(curThread_w17517aaab8b1c13->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17517aaab8b1c13, sizeof(XMLVM_JMP_BUF)); goto label64; };
+    if (_r2.i == 0) { XMLVM_MEMCPY(curThread_w17548aaab8b1c13->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17548aaab8b1c13, sizeof(XMLVM_JMP_BUF)); goto label64; };
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 156)
     //java_io_OutputStreamWriter_flush__[11]
     XMLVM_CHECK_NPE(3)
@@ -750,38 +750,38 @@ void java_io_OutputStreamWriter_close__(JAVA_OBJECT me)
     _r2.o = ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.bytes_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_nio_charset_CharsetEncoder_flush___java_nio_ByteBuffer(_r1.o, _r2.o);
-    { XMLVM_MEMCPY(curThread_w17517aaab8b1c13->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17517aaab8b1c13, sizeof(XMLVM_JMP_BUF)); goto label19; };
+    { XMLVM_MEMCPY(curThread_w17548aaab8b1c13->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17548aaab8b1c13, sizeof(XMLVM_JMP_BUF)); goto label19; };
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 159)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaab8b1c13)
-        XMLVM_CATCH_SPECIFIC(w17517aaab8b1c13,java_lang_Object,68)
-    XMLVM_CATCH_END(w17517aaab8b1c13)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaab8b1c13)
+    XMLVM_CATCH_BEGIN(w17548aaab8b1c13)
+        XMLVM_CATCH_SPECIFIC(w17548aaab8b1c13,java_lang_Object,68)
+    XMLVM_CATCH_END(w17548aaab8b1c13)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaab8b1c13)
     label64:;
-    XMLVM_TRY_BEGIN(w17517aaab8b1c15)
+    XMLVM_TRY_BEGIN(w17548aaab8b1c15)
     // Begin try
     XMLVM_CHECK_NPE(1)
     java_nio_charset_CoderResult_throwException__(_r1.o);
-    { XMLVM_MEMCPY(curThread_w17517aaab8b1c15->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17517aaab8b1c15, sizeof(XMLVM_JMP_BUF)); goto label19; };
+    { XMLVM_MEMCPY(curThread_w17548aaab8b1c15->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17548aaab8b1c15, sizeof(XMLVM_JMP_BUF)); goto label19; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaab8b1c15)
-        XMLVM_CATCH_SPECIFIC(w17517aaab8b1c15,java_lang_Object,68)
-    XMLVM_CATCH_END(w17517aaab8b1c15)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaab8b1c15)
+    XMLVM_CATCH_BEGIN(w17548aaab8b1c15)
+        XMLVM_CATCH_SPECIFIC(w17548aaab8b1c15,java_lang_Object,68)
+    XMLVM_CATCH_END(w17548aaab8b1c15)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaab8b1c15)
     label68:;
-    XMLVM_TRY_BEGIN(w17517aaab8b1c17)
+    XMLVM_TRY_BEGIN(w17548aaab8b1c17)
     // Begin try
-    java_lang_Thread* curThread_w17517aaab8b1c17aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w17517aaab8b1c17aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w17548aaab8b1c17aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w17548aaab8b1c17aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaab8b1c17)
-        XMLVM_CATCH_SPECIFIC(w17517aaab8b1c17,java_lang_Object,68)
-    XMLVM_CATCH_END(w17517aaab8b1c17)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaab8b1c17)
+    XMLVM_CATCH_BEGIN(w17548aaab8b1c17)
+        XMLVM_CATCH_SPECIFIC(w17548aaab8b1c17,java_lang_Object,68)
+    XMLVM_CATCH_END(w17548aaab8b1c17)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaab8b1c17)
     XMLVM_THROW_CUSTOM(_r1.o)
     //XMLVM_END_WRAPPER
 }
@@ -800,7 +800,7 @@ void java_io_OutputStreamWriter_flush__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 183)
     _r0.o = ((java_io_Writer*) _r5.o)->fields.java_io_Writer.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
-    XMLVM_TRY_BEGIN(w17517aaab9b1b5)
+    XMLVM_TRY_BEGIN(w17548aaab9b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 184)
     XMLVM_CHECK_NPE(5)
@@ -809,7 +809,7 @@ void java_io_OutputStreamWriter_flush__(JAVA_OBJECT me)
     _r1.o = ((java_io_OutputStreamWriter*) _r5.o)->fields.java_io_OutputStreamWriter.bytes_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_nio_Buffer_position__(_r1.o);
-    if (_r1.i <= 0) { XMLVM_MEMCPY(curThread_w17517aaab9b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17517aaab9b1b5, sizeof(XMLVM_JMP_BUF)); goto label36; };
+    if (_r1.i <= 0) { XMLVM_MEMCPY(curThread_w17548aaab9b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17548aaab9b1b5, sizeof(XMLVM_JMP_BUF)); goto label36; };
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 187)
     _r2.o = ((java_io_OutputStreamWriter*) _r5.o)->fields.java_io_OutputStreamWriter.bytes_;
     XMLVM_CHECK_NPE(2)
@@ -830,12 +830,12 @@ void java_io_OutputStreamWriter_flush__(JAVA_OBJECT me)
     java_nio_Buffer_clear__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaab9b1b5)
-        XMLVM_CATCH_SPECIFIC(w17517aaab9b1b5,java_lang_Object,43)
-    XMLVM_CATCH_END(w17517aaab9b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaab9b1b5)
+    XMLVM_CATCH_BEGIN(w17548aaab9b1b5)
+        XMLVM_CATCH_SPECIFIC(w17548aaab9b1b5,java_lang_Object,43)
+    XMLVM_CATCH_END(w17548aaab9b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaab9b1b5)
     label36:;
-    XMLVM_TRY_BEGIN(w17517aaab9b1b7)
+    XMLVM_TRY_BEGIN(w17548aaab9b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 191)
     _r1.o = ((java_io_OutputStreamWriter*) _r5.o)->fields.java_io_OutputStreamWriter.out_;
@@ -844,27 +844,27 @@ void java_io_OutputStreamWriter_flush__(JAVA_OBJECT me)
     (*(void (*)(JAVA_OBJECT)) ((java_io_OutputStream*) _r1.o)->tib->vtable[8])(_r1.o);
     java_lang_Object_releaseLockRecursive__(_r0.o);
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 193)
-    XMLVM_MEMCPY(curThread_w17517aaab9b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17517aaab9b1b7, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w17548aaab9b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17548aaab9b1b7, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaab9b1b7)
-        XMLVM_CATCH_SPECIFIC(w17517aaab9b1b7,java_lang_Object,43)
-    XMLVM_CATCH_END(w17517aaab9b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaab9b1b7)
+    XMLVM_CATCH_BEGIN(w17548aaab9b1b7)
+        XMLVM_CATCH_SPECIFIC(w17548aaab9b1b7,java_lang_Object,43)
+    XMLVM_CATCH_END(w17548aaab9b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaab9b1b7)
     label43:;
-    XMLVM_TRY_BEGIN(w17517aaab9b1b9)
+    XMLVM_TRY_BEGIN(w17548aaab9b1b9)
     // Begin try
-    java_lang_Thread* curThread_w17517aaab9b1b9aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w17517aaab9b1b9aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w17548aaab9b1b9aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w17548aaab9b1b9aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaab9b1b9)
-        XMLVM_CATCH_SPECIFIC(w17517aaab9b1b9,java_lang_Object,43)
-    XMLVM_CATCH_END(w17517aaab9b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaab9b1b9)
+    XMLVM_CATCH_BEGIN(w17548aaab9b1b9)
+        XMLVM_CATCH_SPECIFIC(w17548aaab9b1b9,java_lang_Object,43)
+    XMLVM_CATCH_END(w17548aaab9b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaab9b1b9)
     XMLVM_THROW_CUSTOM(_r1.o)
     //XMLVM_END_WRAPPER
 }
@@ -883,7 +883,7 @@ void java_io_OutputStreamWriter_checkStatus__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 198)
     _r0.o = __NEW_java_io_IOException();
     // "luni.A7"
-    _r1.o = xmlvm_create_java_string_from_pool(1364);
+    _r1.o = xmlvm_create_java_string_from_pool(1367);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_io_IOException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -939,25 +939,25 @@ void java_io_OutputStreamWriter_write___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 238)
     _r0.o = ((java_io_Writer*) _r2.o)->fields.java_io_Writer.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
-    XMLVM_TRY_BEGIN(w17517aaac12b1b8)
+    XMLVM_TRY_BEGIN(w17548aaac12b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 239)
     XMLVM_CHECK_NPE(2)
     java_io_OutputStreamWriter_checkStatus__(_r2.o);
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 240)
-    if (_r4.i < 0) { XMLVM_MEMCPY(curThread_w17517aaac12b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17517aaac12b1b8, sizeof(XMLVM_JMP_BUF)); goto label14; };
+    if (_r4.i < 0) { XMLVM_MEMCPY(curThread_w17548aaac12b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17548aaac12b1b8, sizeof(XMLVM_JMP_BUF)); goto label14; };
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r3.o));
     _r1.i = _r1.i - _r5.i;
-    if (_r4.i > _r1.i) { XMLVM_MEMCPY(curThread_w17517aaac12b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17517aaac12b1b8, sizeof(XMLVM_JMP_BUF)); goto label14; };
-    if (_r5.i >= 0) { XMLVM_MEMCPY(curThread_w17517aaac12b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17517aaac12b1b8, sizeof(XMLVM_JMP_BUF)); goto label23; };
+    if (_r4.i > _r1.i) { XMLVM_MEMCPY(curThread_w17548aaac12b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17548aaac12b1b8, sizeof(XMLVM_JMP_BUF)); goto label14; };
+    if (_r5.i >= 0) { XMLVM_MEMCPY(curThread_w17548aaac12b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17548aaac12b1b8, sizeof(XMLVM_JMP_BUF)); goto label23; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaac12b1b8)
-        XMLVM_CATCH_SPECIFIC(w17517aaac12b1b8,java_lang_Object,20)
-    XMLVM_CATCH_END(w17517aaac12b1b8)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaac12b1b8)
+    XMLVM_CATCH_BEGIN(w17548aaac12b1b8)
+        XMLVM_CATCH_SPECIFIC(w17548aaac12b1b8,java_lang_Object,20)
+    XMLVM_CATCH_END(w17548aaac12b1b8)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaac12b1b8)
     label14:;
-    XMLVM_TRY_BEGIN(w17517aaac12b1c10)
+    XMLVM_TRY_BEGIN(w17548aaac12b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 241)
     _r1.o = __NEW_java_lang_IndexOutOfBoundsException();
@@ -966,25 +966,25 @@ void java_io_OutputStreamWriter_write___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA
     XMLVM_THROW_CUSTOM(_r1.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaac12b1c10)
-        XMLVM_CATCH_SPECIFIC(w17517aaac12b1c10,java_lang_Object,20)
-    XMLVM_CATCH_END(w17517aaac12b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaac12b1c10)
+    XMLVM_CATCH_BEGIN(w17548aaac12b1c10)
+        XMLVM_CATCH_SPECIFIC(w17548aaac12b1c10,java_lang_Object,20)
+    XMLVM_CATCH_END(w17548aaac12b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaac12b1c10)
     label20:;
-    XMLVM_TRY_BEGIN(w17517aaac12b1c12)
+    XMLVM_TRY_BEGIN(w17548aaac12b1c12)
     // Begin try
-    java_lang_Thread* curThread_w17517aaac12b1c12aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w17517aaac12b1c12aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w17548aaac12b1c12aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w17548aaac12b1c12aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaac12b1c12)
-        XMLVM_CATCH_SPECIFIC(w17517aaac12b1c12,java_lang_Object,20)
-    XMLVM_CATCH_END(w17517aaac12b1c12)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaac12b1c12)
+    XMLVM_CATCH_BEGIN(w17548aaac12b1c12)
+        XMLVM_CATCH_SPECIFIC(w17548aaac12b1c12,java_lang_Object,20)
+    XMLVM_CATCH_END(w17548aaac12b1c12)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaac12b1c12)
     XMLVM_THROW_CUSTOM(_r1.o)
     label23:;
-    XMLVM_TRY_BEGIN(w17517aaac12b1c15)
+    XMLVM_TRY_BEGIN(w17548aaac12b1c15)
     // Begin try
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 243)
     _r1.o = java_nio_CharBuffer_wrap___char_1ARRAY_int_int(_r3.o, _r4.i, _r5.i);
@@ -994,10 +994,10 @@ void java_io_OutputStreamWriter_write___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaac12b1c15)
-        XMLVM_CATCH_SPECIFIC(w17517aaac12b1c15,java_lang_Object,20)
-    XMLVM_CATCH_END(w17517aaac12b1c15)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaac12b1c15)
+    XMLVM_CATCH_BEGIN(w17548aaac12b1c15)
+        XMLVM_CATCH_SPECIFIC(w17548aaac12b1c15,java_lang_Object,20)
+    XMLVM_CATCH_END(w17548aaac12b1c15)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaac12b1c15)
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 246)
     XMLVM_EXIT_METHOD()
     return;
@@ -1073,7 +1073,7 @@ void java_io_OutputStreamWriter_write___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 277)
     _r0.o = ((java_io_Writer*) _r4.o)->fields.java_io_Writer.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
-    XMLVM_TRY_BEGIN(w17517aaac14b1b6)
+    XMLVM_TRY_BEGIN(w17548aaac14b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 278)
     XMLVM_CHECK_NPE(4)
@@ -1093,27 +1093,27 @@ void java_io_OutputStreamWriter_write___int(JAVA_OBJECT me, JAVA_INT n1)
     java_io_OutputStreamWriter_convert___java_nio_CharBuffer(_r4.o, _r1.o);
     java_lang_Object_releaseLockRecursive__(_r0.o);
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 282)
-    XMLVM_MEMCPY(curThread_w17517aaac14b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17517aaac14b1b6, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w17548aaac14b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17548aaac14b1b6, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaac14b1b6)
-        XMLVM_CATCH_SPECIFIC(w17517aaac14b1b6,java_lang_Object,22)
-    XMLVM_CATCH_END(w17517aaac14b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaac14b1b6)
+    XMLVM_CATCH_BEGIN(w17548aaac14b1b6)
+        XMLVM_CATCH_SPECIFIC(w17548aaac14b1b6,java_lang_Object,22)
+    XMLVM_CATCH_END(w17548aaac14b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaac14b1b6)
     label22:;
-    XMLVM_TRY_BEGIN(w17517aaac14b1b8)
+    XMLVM_TRY_BEGIN(w17548aaac14b1b8)
     // Begin try
-    java_lang_Thread* curThread_w17517aaac14b1b8aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w17517aaac14b1b8aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w17548aaac14b1b8aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w17548aaac14b1b8aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaac14b1b8)
-        XMLVM_CATCH_SPECIFIC(w17517aaac14b1b8,java_lang_Object,22)
-    XMLVM_CATCH_END(w17517aaac14b1b8)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaac14b1b8)
+    XMLVM_CATCH_BEGIN(w17548aaac14b1b8)
+        XMLVM_CATCH_SPECIFIC(w17548aaac14b1b8,java_lang_Object,22)
+    XMLVM_CATCH_END(w17548aaac14b1b8)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaac14b1b8)
     XMLVM_THROW_CUSTOM(_r1.o)
     //XMLVM_END_WRAPPER
 }
@@ -1137,7 +1137,7 @@ void java_io_OutputStreamWriter_write___java_lang_String_int_int(JAVA_OBJECT me,
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 308)
     if (_r5.i >= 0) goto label14;
-    XMLVM_TRY_BEGIN(w17517aaac15b1c10)
+    XMLVM_TRY_BEGIN(w17548aaac15b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 309)
     _r1.o = __NEW_java_lang_IndexOutOfBoundsException();
@@ -1146,41 +1146,41 @@ void java_io_OutputStreamWriter_write___java_lang_String_int_int(JAVA_OBJECT me,
     XMLVM_THROW_CUSTOM(_r1.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaac15b1c10)
-        XMLVM_CATCH_SPECIFIC(w17517aaac15b1c10,java_lang_Object,11)
-    XMLVM_CATCH_END(w17517aaac15b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaac15b1c10)
+    XMLVM_CATCH_BEGIN(w17548aaac15b1c10)
+        XMLVM_CATCH_SPECIFIC(w17548aaac15b1c10,java_lang_Object,11)
+    XMLVM_CATCH_END(w17548aaac15b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaac15b1c10)
     label11:;
-    XMLVM_TRY_BEGIN(w17517aaac15b1c12)
+    XMLVM_TRY_BEGIN(w17548aaac15b1c12)
     // Begin try
-    java_lang_Thread* curThread_w17517aaac15b1c12aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w17517aaac15b1c12aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w17548aaac15b1c12aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w17548aaac15b1c12aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaac15b1c12)
-        XMLVM_CATCH_SPECIFIC(w17517aaac15b1c12,java_lang_Object,11)
-    XMLVM_CATCH_END(w17517aaac15b1c12)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaac15b1c12)
+    XMLVM_CATCH_BEGIN(w17548aaac15b1c12)
+        XMLVM_CATCH_SPECIFIC(w17548aaac15b1c12,java_lang_Object,11)
+    XMLVM_CATCH_END(w17548aaac15b1c12)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaac15b1c12)
     XMLVM_THROW_CUSTOM(_r1.o)
     label14:;
-    XMLVM_TRY_BEGIN(w17517aaac15b1c15)
+    XMLVM_TRY_BEGIN(w17548aaac15b1c15)
     // Begin try
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 311)
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(3)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r3.o)->tib->vtable[8])(_r3.o);
     _r1.i = _r1.i - _r5.i;
-    if (_r4.i > _r1.i) { XMLVM_MEMCPY(curThread_w17517aaac15b1c15->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17517aaac15b1c15, sizeof(XMLVM_JMP_BUF)); goto label23; };
-    if (_r4.i >= 0) { XMLVM_MEMCPY(curThread_w17517aaac15b1c15->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17517aaac15b1c15, sizeof(XMLVM_JMP_BUF)); goto label29; };
+    if (_r4.i > _r1.i) { XMLVM_MEMCPY(curThread_w17548aaac15b1c15->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17548aaac15b1c15, sizeof(XMLVM_JMP_BUF)); goto label23; };
+    if (_r4.i >= 0) { XMLVM_MEMCPY(curThread_w17548aaac15b1c15->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17548aaac15b1c15, sizeof(XMLVM_JMP_BUF)); goto label29; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaac15b1c15)
-        XMLVM_CATCH_SPECIFIC(w17517aaac15b1c15,java_lang_Object,11)
-    XMLVM_CATCH_END(w17517aaac15b1c15)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaac15b1c15)
+    XMLVM_CATCH_BEGIN(w17548aaac15b1c15)
+        XMLVM_CATCH_SPECIFIC(w17548aaac15b1c15,java_lang_Object,11)
+    XMLVM_CATCH_END(w17548aaac15b1c15)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaac15b1c15)
     label23:;
-    XMLVM_TRY_BEGIN(w17517aaac15b1c17)
+    XMLVM_TRY_BEGIN(w17548aaac15b1c17)
     // Begin try
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 312)
     _r1.o = __NEW_java_lang_StringIndexOutOfBoundsException();
@@ -1189,12 +1189,12 @@ void java_io_OutputStreamWriter_write___java_lang_String_int_int(JAVA_OBJECT me,
     XMLVM_THROW_CUSTOM(_r1.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaac15b1c17)
-        XMLVM_CATCH_SPECIFIC(w17517aaac15b1c17,java_lang_Object,11)
-    XMLVM_CATCH_END(w17517aaac15b1c17)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaac15b1c17)
+    XMLVM_CATCH_BEGIN(w17548aaac15b1c17)
+        XMLVM_CATCH_SPECIFIC(w17548aaac15b1c17,java_lang_Object,11)
+    XMLVM_CATCH_END(w17548aaac15b1c17)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaac15b1c17)
     label29:;
-    XMLVM_TRY_BEGIN(w17517aaac15b1c19)
+    XMLVM_TRY_BEGIN(w17548aaac15b1c19)
     // Begin try
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 314)
     XMLVM_CHECK_NPE(2)
@@ -1208,10 +1208,10 @@ void java_io_OutputStreamWriter_write___java_lang_String_int_int(JAVA_OBJECT me,
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17517aaac15b1c19)
-        XMLVM_CATCH_SPECIFIC(w17517aaac15b1c19,java_lang_Object,11)
-    XMLVM_CATCH_END(w17517aaac15b1c19)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17517aaac15b1c19)
+    XMLVM_CATCH_BEGIN(w17548aaac15b1c19)
+        XMLVM_CATCH_SPECIFIC(w17548aaac15b1c19,java_lang_Object,11)
+    XMLVM_CATCH_END(w17548aaac15b1c19)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17548aaac15b1c19)
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 318)
     XMLVM_EXIT_METHOD()
     return;

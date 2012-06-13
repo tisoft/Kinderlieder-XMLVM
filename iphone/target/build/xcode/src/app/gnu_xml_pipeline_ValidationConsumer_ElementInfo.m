@@ -270,7 +270,7 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_ElementInfo_getRecognizer___gnu_
     if (_r0.o != JAVA_NULL) goto label20;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1299)
     // "ANY"
-    _r0.o = xmlvm_create_java_string_from_pool(921);
+    _r0.o = xmlvm_create_java_string_from_pool(924);
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.model_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -287,7 +287,7 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_ElementInfo_getRecognizer___gnu_
     label23:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1301)
     // "EMPTY"
-    _r0.o = xmlvm_create_java_string_from_pool(1594);
+    _r0.o = xmlvm_create_java_string_from_pool(1597);
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.model_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)

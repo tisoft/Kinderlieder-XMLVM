@@ -272,7 +272,7 @@ JAVA_OBJECT java_util_regex_BehindFSet_getName__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("BehindFSet.java", 45)
     // "BehindFSet"
-    _r0.o = xmlvm_create_java_string_from_pool(1886);
+    _r0.o = xmlvm_create_java_string_from_pool(1889);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

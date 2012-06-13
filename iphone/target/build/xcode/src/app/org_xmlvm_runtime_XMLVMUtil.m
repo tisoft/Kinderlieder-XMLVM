@@ -272,7 +272,7 @@ void org_xmlvm_runtime_XMLVMUtil_notImplemented__()
     XMLVM_SOURCE_POSITION("XMLVMUtil.java", 44)
     _r0.o = java_lang_System_GET_err();
     // "XMLVMUtil.notImplemented()"
-    _r1.o = xmlvm_create_java_string_from_pool(3058);
+    _r1.o = xmlvm_create_java_string_from_pool(3061);
     XMLVM_CHECK_NPE(0)
     java_io_PrintStream_println___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("XMLVMUtil.java", 45)

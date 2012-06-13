@@ -42,9 +42,25 @@ XMLVM_FORWARD_DECL(java_lang_Thread)
 #define XMLVM_FORWARD_DECL_java_util_ArrayList
 XMLVM_FORWARD_DECL(java_util_ArrayList)
 #endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Arrays
+#define XMLVM_FORWARD_DECL_java_util_Arrays
+XMLVM_FORWARD_DECL(java_util_Arrays)
+#endif
 #ifndef XMLVM_FORWARD_DECL_java_util_Iterator
 #define XMLVM_FORWARD_DECL_java_util_Iterator
 XMLVM_FORWARD_DECL(java_util_Iterator)
+#endif
+#ifndef XMLVM_FORWARD_DECL_java_util_List
+#define XMLVM_FORWARD_DECL_java_util_List
+XMLVM_FORWARD_DECL(java_util_List)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_InAppProduct
+#define XMLVM_FORWARD_DECL_my_kinderlieder_InAppProduct
+XMLVM_FORWARD_DECL(my_kinderlieder_InAppProduct)
+#endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_Product_State
+#define XMLVM_FORWARD_DECL_my_kinderlieder_Product_State
+XMLVM_FORWARD_DECL(my_kinderlieder_Product_State)
 #endif
 #ifndef XMLVM_FORWARD_DECL_my_kinderlieder_ShopService
 #define XMLVM_FORWARD_DECL_my_kinderlieder_ShopService
@@ -54,9 +70,17 @@ XMLVM_FORWARD_DECL(my_kinderlieder_ShopService)
 #define XMLVM_FORWARD_DECL_my_kinderlieder_ShopService_1_1
 XMLVM_FORWARD_DECL(my_kinderlieder_ShopService_1_1)
 #endif
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_ShopService_1_2
+#define XMLVM_FORWARD_DECL_my_kinderlieder_ShopService_1_2
+XMLVM_FORWARD_DECL(my_kinderlieder_ShopService_1_2)
+#endif
 #ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSData
 #define XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSData
 XMLVM_FORWARD_DECL(org_xmlvm_iphone_NSData)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSError
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_NSError
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_NSError)
 #endif
 #ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_SKPayment
 #define XMLVM_FORWARD_DECL_org_xmlvm_iphone_SKPayment
@@ -69,6 +93,10 @@ XMLVM_FORWARD_DECL(org_xmlvm_iphone_SKPaymentQueue)
 #ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_SKPaymentTransaction
 #define XMLVM_FORWARD_DECL_org_xmlvm_iphone_SKPaymentTransaction
 XMLVM_FORWARD_DECL(org_xmlvm_iphone_SKPaymentTransaction)
+#endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIAlertView
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIAlertView
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_UIAlertView)
 #endif
 // Class declarations for my.kinderlieder.ShopService$1
 XMLVM_DEFINE_CLASS(my_kinderlieder_ShopService_1, 7, XMLVM_ITABLE_SIZE_my_kinderlieder_ShopService_1)

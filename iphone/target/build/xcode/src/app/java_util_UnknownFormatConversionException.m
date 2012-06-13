@@ -296,7 +296,7 @@ JAVA_OBJECT java_util_UnknownFormatConversionException_getMessage__(JAVA_OBJECT 
     _r2.o = me;
     XMLVM_SOURCE_POSITION("UnknownFormatConversionException.java", 61)
     // "luni.45"
-    _r0.o = xmlvm_create_java_string_from_pool(2320);
+    _r0.o = xmlvm_create_java_string_from_pool(2323);
     _r1.o = ((java_util_UnknownFormatConversionException*) _r2.o)->fields.java_util_UnknownFormatConversionException.s_;
     _r0.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object(_r0.o, _r1.o);
     XMLVM_EXIT_METHOD()

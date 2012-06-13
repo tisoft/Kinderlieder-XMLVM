@@ -657,7 +657,7 @@ void org_xml_sax_helpers_XMLReaderAdapter_setup___org_xml_sax_XMLReader(JAVA_OBJ
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 103)
     _r0.o = __NEW_java_lang_NullPointerException();
     // "XMLReader must not be null"
-    _r1.o = xmlvm_create_java_string_from_pool(1366);
+    _r1.o = xmlvm_create_java_string_from_pool(1369);
     XMLVM_CHECK_NPE(0)
     java_lang_NullPointerException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -688,7 +688,7 @@ void org_xml_sax_helpers_XMLReaderAdapter_setLocale___java_util_Locale(JAVA_OBJE
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 129)
     _r0.o = __NEW_org_xml_sax_SAXNotSupportedException();
     // "setLocale not supported"
-    _r1.o = xmlvm_create_java_string_from_pool(1367);
+    _r1.o = xmlvm_create_java_string_from_pool(1370);
     XMLVM_CHECK_NPE(0)
     org_xml_sax_SAXNotSupportedException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -828,7 +828,7 @@ void org_xml_sax_helpers_XMLReaderAdapter_setupXMLReader__(JAVA_OBJECT me)
     _r2.i = 1;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setFeature___java_lang_String_boolean])(_r0.o, _r1.o, _r2.i);
-    XMLVM_TRY_BEGIN(w17632aaac13b1b7)
+    XMLVM_TRY_BEGIN(w17663aaac13b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 237)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r3.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.xmlReader_;
@@ -840,10 +840,10 @@ void org_xml_sax_helpers_XMLReaderAdapter_setupXMLReader__(JAVA_OBJECT me)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setFeature___java_lang_String_boolean])(_r0.o, _r1.o, _r2.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17632aaac13b1b7)
-        XMLVM_CATCH_SPECIFIC(w17632aaac13b1b7,org_xml_sax_SAXException,22)
-    XMLVM_CATCH_END(w17632aaac13b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17632aaac13b1b7)
+    XMLVM_CATCH_BEGIN(w17663aaac13b1b7)
+        XMLVM_CATCH_SPECIFIC(w17663aaac13b1b7,org_xml_sax_SAXException,22)
+    XMLVM_CATCH_END(w17663aaac13b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17663aaac13b1b7)
     label16:;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 242)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r3.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.xmlReader_;
@@ -853,8 +853,8 @@ void org_xml_sax_helpers_XMLReaderAdapter_setupXMLReader__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return;
     label22:;
-    java_lang_Thread* curThread_w17632aaac13b1c15 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w17632aaac13b1c15->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w17663aaac13b1c15 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w17663aaac13b1c15->fields.java_lang_Thread.xmlvmException_;
     goto label16;
     //XMLVM_END_WRAPPER
 }

@@ -244,13 +244,13 @@ void java_lang_TypeNotPresentException___INIT____java_lang_String_java_lang_Thro
     XMLVM_SOURCE_POSITION("TypeNotPresentException.java", 43)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "Type "
-    _r1.o = xmlvm_create_java_string_from_pool(2545);
+    _r1.o = xmlvm_create_java_string_from_pool(2548);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r3.o);
     // " not present"
-    _r1.o = xmlvm_create_java_string_from_pool(2546);
+    _r1.o = xmlvm_create_java_string_from_pool(2549);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     //java_lang_StringBuilder_toString__[5]

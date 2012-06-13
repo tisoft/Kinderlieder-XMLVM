@@ -6754,7 +6754,7 @@ void java_util_Arrays_checkBounds___int_int_int(JAVA_INT n1, JAVA_INT n2, JAVA_I
     XMLVM_SOURCE_POSITION("Arrays.java", 1991)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.35"
-    _r1.o = xmlvm_create_java_string_from_pool(1399);
+    _r1.o = xmlvm_create_java_string_from_pool(1402);
     XMLVM_SOURCE_POSITION("Arrays.java", 1992)
     _r2.o = java_lang_Integer_valueOf___int(_r5.i);
     _r3.o = java_lang_Integer_valueOf___int(_r6.i);
@@ -11627,7 +11627,7 @@ JAVA_OBJECT java_util_Arrays_deepToStringImpl___java_lang_Object_1ARRAY_java_lan
     if (_r3.i == 0) goto label267;
     XMLVM_SOURCE_POSITION("Arrays.java", 3685)
     // "[...]"
-    _r0.o = xmlvm_create_java_string_from_pool(2567);
+    _r0.o = xmlvm_create_java_string_from_pool(2570);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder_append___java_lang_String(_r1.o, _r0.o);
     goto label63;

@@ -343,7 +343,7 @@ JAVA_OBJECT java_util_regex_UCIBackReferenceSet_getName__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("UCIBackReferenceSet.java", 57)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "UCI back reference: "
-    _r1.o = xmlvm_create_java_string_from_pool(2688);
+    _r1.o = xmlvm_create_java_string_from_pool(2691);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     _r1.i = ((java_util_regex_UCIBackReferenceSet*) _r2.o)->fields.java_util_regex_UCIBackReferenceSet.groupIndex_;

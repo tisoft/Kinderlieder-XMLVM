@@ -430,14 +430,14 @@ JAVA_OBJECT gnu_xml_xpath_StringFunction_toString__(JAVA_OBJECT me)
     _r0.o = ((gnu_xml_xpath_StringFunction*) _r2.o)->fields.gnu_xml_xpath_StringFunction.arg_;
     if (_r0.o != JAVA_NULL) goto label7;
     // "string()"
-    _r0.o = xmlvm_create_java_string_from_pool(1368);
+    _r0.o = xmlvm_create_java_string_from_pool(1371);
     label6:;
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label7:;
     _r0.o = __NEW_java_lang_StringBuilder();
     // "string("
-    _r1.o = xmlvm_create_java_string_from_pool(1369);
+    _r1.o = xmlvm_create_java_string_from_pool(1372);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     _r1.o = ((gnu_xml_xpath_StringFunction*) _r2.o)->fields.gnu_xml_xpath_StringFunction.arg_;

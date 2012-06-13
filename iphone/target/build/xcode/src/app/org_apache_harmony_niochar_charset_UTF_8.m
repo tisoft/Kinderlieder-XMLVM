@@ -506,7 +506,7 @@ JAVA_BOOLEAN org_apache_harmony_niochar_charset_UTF_8_contains___java_nio_charse
     XMLVM_CHECK_NPE(3)
     _r0.o = java_nio_charset_Charset_name__(_r3.o);
     // "ISO-8859-10"
-    _r1.o = xmlvm_create_java_string_from_pool(2592);
+    _r1.o = xmlvm_create_java_string_from_pool(2595);
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_String_equalsIgnoreCase___java_lang_String(_r0.o, _r1.o);
     if (_r0.i != 0) goto label278;
@@ -522,7 +522,7 @@ JAVA_BOOLEAN org_apache_harmony_niochar_charset_UTF_8_contains___java_nio_charse
     XMLVM_CHECK_NPE(3)
     _r0.o = java_nio_charset_Charset_name__(_r3.o);
     // "ISO-8859-14"
-    _r1.o = xmlvm_create_java_string_from_pool(2593);
+    _r1.o = xmlvm_create_java_string_from_pool(2596);
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_String_equalsIgnoreCase___java_lang_String(_r0.o, _r1.o);
     if (_r0.i != 0) goto label278;
@@ -538,7 +538,7 @@ JAVA_BOOLEAN org_apache_harmony_niochar_charset_UTF_8_contains___java_nio_charse
     XMLVM_CHECK_NPE(3)
     _r0.o = java_nio_charset_Charset_name__(_r3.o);
     // "ISO-8859-16"
-    _r1.o = xmlvm_create_java_string_from_pool(2594);
+    _r1.o = xmlvm_create_java_string_from_pool(2597);
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_String_equalsIgnoreCase___java_lang_String(_r0.o, _r1.o);
     if (_r0.i != 0) goto label278;
@@ -546,7 +546,7 @@ JAVA_BOOLEAN org_apache_harmony_niochar_charset_UTF_8_contains___java_nio_charse
     XMLVM_CHECK_NPE(3)
     _r0.o = java_nio_charset_Charset_name__(_r3.o);
     // "UTF-16"
-    _r1.o = xmlvm_create_java_string_from_pool(1019);
+    _r1.o = xmlvm_create_java_string_from_pool(1022);
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_String_equalsIgnoreCase___java_lang_String(_r0.o, _r1.o);
     if (_r0.i != 0) goto label278;

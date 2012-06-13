@@ -355,7 +355,7 @@ void java_net_Proxy___INIT____java_net_Proxy_Type_java_net_SocketAddress(JAVA_OB
     XMLVM_SOURCE_POSITION("Proxy.java", 65)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.6E"
-    _r1.o = xmlvm_create_java_string_from_pool(971);
+    _r1.o = xmlvm_create_java_string_from_pool(974);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -447,7 +447,7 @@ JAVA_OBJECT java_net_Proxy_toString__(JAVA_OBJECT me)
     label18:;
     XMLVM_SOURCE_POSITION("Proxy.java", 112)
     // "@"
-    _r1.o = xmlvm_create_java_string_from_pool(972);
+    _r1.o = xmlvm_create_java_string_from_pool(975);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("Proxy.java", 113)

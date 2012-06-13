@@ -344,7 +344,7 @@ JAVA_OBJECT java_util_FormatFlagsConversionMismatchException_getMessage__(JAVA_O
     java_lang_StringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("FormatFlagsConversionMismatchException.java", 79)
     // "Mismatched Convertor ="
-    _r1.o = xmlvm_create_java_string_from_pool(2333);
+    _r1.o = xmlvm_create_java_string_from_pool(2336);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("FormatFlagsConversionMismatchException.java", 80)
@@ -354,7 +354,7 @@ JAVA_OBJECT java_util_FormatFlagsConversionMismatchException_getMessage__(JAVA_O
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("FormatFlagsConversionMismatchException.java", 81)
     // ", Flags= "
-    _r1.o = xmlvm_create_java_string_from_pool(2334);
+    _r1.o = xmlvm_create_java_string_from_pool(2337);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("FormatFlagsConversionMismatchException.java", 82)

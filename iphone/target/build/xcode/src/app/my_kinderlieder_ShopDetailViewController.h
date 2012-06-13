@@ -98,6 +98,10 @@ XMLVM_FORWARD_DECL(org_xmlvm_iphone_SKProduct)
 #define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIBarButtonItem
 XMLVM_FORWARD_DECL(org_xmlvm_iphone_UIBarButtonItem)
 #endif
+#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIBarButtonItemDelegate
+#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIBarButtonItemDelegate
+XMLVM_FORWARD_DECL(org_xmlvm_iphone_UIBarButtonItemDelegate)
+#endif
 #ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UINavigationController
 #define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UINavigationController
 XMLVM_FORWARD_DECL(org_xmlvm_iphone_UINavigationController)
@@ -127,6 +131,7 @@ extern JAVA_OBJECT __CLASS_my_kinderlieder_ShopDetailViewController_3ARRAY;
         JAVA_OBJECT product_; \
         JAVA_OBJECT requests_; \
         JAVA_OBJECT infoView_; \
+        JAVA_OBJECT action_; \
         __ADDITIONAL_INSTANCE_FIELDS_my_kinderlieder_ShopDetailViewController \
     } my_kinderlieder_ShopDetailViewController
 

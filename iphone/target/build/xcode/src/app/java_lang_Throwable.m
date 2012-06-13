@@ -824,7 +824,7 @@ void java_lang_Throwable_printStackTrace___java_io_PrintStream(JAVA_OBJECT me, J
     _r10.o = n1;
     _r6.i = 0;
     // "\011at "
-    _r7.o = xmlvm_create_java_string_from_pool(2432);
+    _r7.o = xmlvm_create_java_string_from_pool(2435);
     XMLVM_SOURCE_POSITION("Throwable.java", 263)
     //java_lang_Throwable_toString__[5]
     XMLVM_CHECK_NPE(9)
@@ -859,7 +859,7 @@ void java_lang_Throwable_printStackTrace___java_io_PrintStream(JAVA_OBJECT me, J
     XMLVM_SOURCE_POSITION("Throwable.java", 268)
     _r4.o = __NEW_java_lang_StringBuilder();
     // "\011at "
-    _r5.o = xmlvm_create_java_string_from_pool(2432);
+    _r5.o = xmlvm_create_java_string_from_pool(2435);
     XMLVM_CHECK_NPE(4)
     java_lang_StringBuilder___INIT____java_lang_String(_r4.o, _r7.o);
     XMLVM_CHECK_NPE(4)
@@ -874,7 +874,7 @@ void java_lang_Throwable_printStackTrace___java_io_PrintStream(JAVA_OBJECT me, J
     label51:;
     XMLVM_SOURCE_POSITION("Throwable.java", 274)
     // "Caused by: "
-    _r2.o = xmlvm_create_java_string_from_pool(2433);
+    _r2.o = xmlvm_create_java_string_from_pool(2436);
     XMLVM_CHECK_NPE(10)
     java_io_PrintStream_print___java_lang_String(_r10.o, _r2.o);
     XMLVM_SOURCE_POSITION("Throwable.java", 275)
@@ -896,13 +896,13 @@ void java_lang_Throwable_printStackTrace___java_io_PrintStream(JAVA_OBJECT me, J
     XMLVM_SOURCE_POSITION("Throwable.java", 282)
     _r3.o = __NEW_java_lang_StringBuilder();
     // "\011... "
-    _r4.o = xmlvm_create_java_string_from_pool(2434);
+    _r4.o = xmlvm_create_java_string_from_pool(2437);
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuilder___INIT____java_lang_String(_r3.o, _r4.o);
     XMLVM_CHECK_NPE(3)
     _r1.o = java_lang_StringBuilder_append___int(_r3.o, _r1.i);
     // " more"
-    _r3.o = xmlvm_create_java_string_from_pool(2435);
+    _r3.o = xmlvm_create_java_string_from_pool(2438);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r3.o);
     //java_lang_StringBuilder_toString__[5]
@@ -921,7 +921,7 @@ void java_lang_Throwable_printStackTrace___java_io_PrintStream(JAVA_OBJECT me, J
     XMLVM_SOURCE_POSITION("Throwable.java", 279)
     _r4.o = __NEW_java_lang_StringBuilder();
     // "\011at "
-    _r5.o = xmlvm_create_java_string_from_pool(2432);
+    _r5.o = xmlvm_create_java_string_from_pool(2435);
     XMLVM_CHECK_NPE(4)
     java_lang_StringBuilder___INIT____java_lang_String(_r4.o, _r7.o);
     XMLVM_CHECK_NPE(2)
@@ -958,7 +958,7 @@ void java_lang_Throwable_printStackTrace___java_io_PrintWriter(JAVA_OBJECT me, J
     _r10.o = n1;
     _r6.i = 0;
     // "\011at "
-    _r7.o = xmlvm_create_java_string_from_pool(2432);
+    _r7.o = xmlvm_create_java_string_from_pool(2435);
     XMLVM_SOURCE_POSITION("Throwable.java", 299)
     //java_lang_Throwable_toString__[5]
     XMLVM_CHECK_NPE(9)
@@ -993,7 +993,7 @@ void java_lang_Throwable_printStackTrace___java_io_PrintWriter(JAVA_OBJECT me, J
     XMLVM_SOURCE_POSITION("Throwable.java", 304)
     _r4.o = __NEW_java_lang_StringBuilder();
     // "\011at "
-    _r5.o = xmlvm_create_java_string_from_pool(2432);
+    _r5.o = xmlvm_create_java_string_from_pool(2435);
     XMLVM_CHECK_NPE(4)
     java_lang_StringBuilder___INIT____java_lang_String(_r4.o, _r7.o);
     XMLVM_CHECK_NPE(4)
@@ -1008,7 +1008,7 @@ void java_lang_Throwable_printStackTrace___java_io_PrintWriter(JAVA_OBJECT me, J
     label51:;
     XMLVM_SOURCE_POSITION("Throwable.java", 310)
     // "Caused by: "
-    _r2.o = xmlvm_create_java_string_from_pool(2433);
+    _r2.o = xmlvm_create_java_string_from_pool(2436);
     XMLVM_CHECK_NPE(10)
     java_io_PrintWriter_print___java_lang_String(_r10.o, _r2.o);
     XMLVM_SOURCE_POSITION("Throwable.java", 311)
@@ -1030,13 +1030,13 @@ void java_lang_Throwable_printStackTrace___java_io_PrintWriter(JAVA_OBJECT me, J
     XMLVM_SOURCE_POSITION("Throwable.java", 318)
     _r3.o = __NEW_java_lang_StringBuilder();
     // "\011... "
-    _r4.o = xmlvm_create_java_string_from_pool(2434);
+    _r4.o = xmlvm_create_java_string_from_pool(2437);
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuilder___INIT____java_lang_String(_r3.o, _r4.o);
     XMLVM_CHECK_NPE(3)
     _r1.o = java_lang_StringBuilder_append___int(_r3.o, _r1.i);
     // " more"
-    _r3.o = xmlvm_create_java_string_from_pool(2435);
+    _r3.o = xmlvm_create_java_string_from_pool(2438);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r3.o);
     //java_lang_StringBuilder_toString__[5]
@@ -1055,7 +1055,7 @@ void java_lang_Throwable_printStackTrace___java_io_PrintWriter(JAVA_OBJECT me, J
     XMLVM_SOURCE_POSITION("Throwable.java", 315)
     _r4.o = __NEW_java_lang_StringBuilder();
     // "\011at "
-    _r5.o = xmlvm_create_java_string_from_pool(2432);
+    _r5.o = xmlvm_create_java_string_from_pool(2435);
     XMLVM_CHECK_NPE(4)
     java_lang_StringBuilder___INIT____java_lang_String(_r4.o, _r7.o);
     XMLVM_CHECK_NPE(2)
@@ -1141,61 +1141,61 @@ JAVA_OBJECT java_lang_Throwable_initCause___java_lang_Throwable(JAVA_OBJECT me, 
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Throwable.java", 349)
     java_lang_Object_acquireLockRecursive__(_r2.o);
-    XMLVM_TRY_BEGIN(w29158aaac20b1b5)
+    XMLVM_TRY_BEGIN(w29184aaac20b1b5)
     // Begin try
     _r0.o = ((java_lang_Throwable*) _r2.o)->fields.java_lang_Throwable.cause_;
-    if (_r0.o != _r2.o) { XMLVM_MEMCPY(curThread_w29158aaac20b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29158aaac20b1b5, sizeof(XMLVM_JMP_BUF)); goto label22; };
+    if (_r0.o != _r2.o) { XMLVM_MEMCPY(curThread_w29184aaac20b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29184aaac20b1b5, sizeof(XMLVM_JMP_BUF)); goto label22; };
     XMLVM_SOURCE_POSITION("Throwable.java", 350)
-    if (_r3.o == _r2.o) { XMLVM_MEMCPY(curThread_w29158aaac20b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29158aaac20b1b5, sizeof(XMLVM_JMP_BUF)); goto label11; };
+    if (_r3.o == _r2.o) { XMLVM_MEMCPY(curThread_w29184aaac20b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29184aaac20b1b5, sizeof(XMLVM_JMP_BUF)); goto label11; };
     XMLVM_SOURCE_POSITION("Throwable.java", 351)
     ((java_lang_Throwable*) _r2.o)->fields.java_lang_Throwable.cause_ = _r3.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w29158aaac20b1b5)
-        XMLVM_CATCH_SPECIFIC(w29158aaac20b1b5,java_lang_Object,19)
-    XMLVM_CATCH_END(w29158aaac20b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w29158aaac20b1b5)
+    XMLVM_CATCH_BEGIN(w29184aaac20b1b5)
+        XMLVM_CATCH_SPECIFIC(w29184aaac20b1b5,java_lang_Object,19)
+    XMLVM_CATCH_END(w29184aaac20b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w29184aaac20b1b5)
     XMLVM_SOURCE_POSITION("Throwable.java", 352)
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_EXIT_METHOD()
     return _r2.o;
     label11:;
-    XMLVM_TRY_BEGIN(w29158aaac20b1c10)
+    XMLVM_TRY_BEGIN(w29184aaac20b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("Throwable.java", 354)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "Cause cannot be the receiver"
-    _r1.o = xmlvm_create_java_string_from_pool(2436);
+    _r1.o = xmlvm_create_java_string_from_pool(2439);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w29158aaac20b1c10)
-        XMLVM_CATCH_SPECIFIC(w29158aaac20b1c10,java_lang_Object,19)
-    XMLVM_CATCH_END(w29158aaac20b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w29158aaac20b1c10)
+    XMLVM_CATCH_BEGIN(w29184aaac20b1c10)
+        XMLVM_CATCH_SPECIFIC(w29184aaac20b1c10,java_lang_Object,19)
+    XMLVM_CATCH_END(w29184aaac20b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w29184aaac20b1c10)
     label19:;
-    java_lang_Thread* curThread_w29158aaac20b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w29158aaac20b1c12->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w29184aaac20b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w29184aaac20b1c12->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label22:;
-    XMLVM_TRY_BEGIN(w29158aaac20b1c16)
+    XMLVM_TRY_BEGIN(w29184aaac20b1c16)
     // Begin try
     XMLVM_SOURCE_POSITION("Throwable.java", 356)
     _r0.o = __NEW_java_lang_IllegalStateException();
     // "Cause already initialized"
-    _r1.o = xmlvm_create_java_string_from_pool(2437);
+    _r1.o = xmlvm_create_java_string_from_pool(2440);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalStateException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w29158aaac20b1c16)
-        XMLVM_CATCH_SPECIFIC(w29158aaac20b1c16,java_lang_Object,19)
-    XMLVM_CATCH_END(w29158aaac20b1c16)
-    XMLVM_RESTORE_EXCEPTION_ENV(w29158aaac20b1c16)
+    XMLVM_CATCH_BEGIN(w29184aaac20b1c16)
+        XMLVM_CATCH_SPECIFIC(w29184aaac20b1c16,java_lang_Object,19)
+    XMLVM_CATCH_END(w29184aaac20b1c16)
+    XMLVM_RESTORE_EXCEPTION_ENV(w29184aaac20b1c16)
     //XMLVM_END_WRAPPER
 }
 

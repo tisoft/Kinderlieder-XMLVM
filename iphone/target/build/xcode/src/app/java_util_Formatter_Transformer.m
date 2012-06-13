@@ -1337,7 +1337,7 @@ JAVA_OBJECT java_util_Formatter_Transformer_transformFromPercent__(JAVA_OBJECT m
     XMLVM_SOURCE_POSITION("Formatter.java", 1418)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "%"
-    _r1.o = xmlvm_create_java_string_from_pool(1030);
+    _r1.o = xmlvm_create_java_string_from_pool(1033);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 1420)
@@ -1871,7 +1871,7 @@ JAVA_OBJECT java_util_Formatter_Transformer_transformFromInteger__(JAVA_OBJECT m
     label314:;
     XMLVM_SOURCE_POSITION("Formatter.java", 1576)
     // "0x"
-    _r0.o = xmlvm_create_java_string_from_pool(984);
+    _r0.o = xmlvm_create_java_string_from_pool(987);
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuilder_append___java_lang_String(_r3.o, _r0.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 1577)
@@ -2189,7 +2189,7 @@ JAVA_OBJECT java_util_Formatter_Transformer_transformFromSpecialNumber__(JAVA_OB
     if (_r0.i == 0) goto label87;
     XMLVM_SOURCE_POSITION("Formatter.java", 1677)
     // "+Infinity"
-    _r0.o = xmlvm_create_java_string_from_pool(2438);
+    _r0.o = xmlvm_create_java_string_from_pool(2441);
     goto label31;
     label87:;
     XMLVM_SOURCE_POSITION("Formatter.java", 1678)
@@ -2200,7 +2200,7 @@ JAVA_OBJECT java_util_Formatter_Transformer_transformFromSpecialNumber__(JAVA_OB
     if (_r0.i == 0) goto label100;
     XMLVM_SOURCE_POSITION("Formatter.java", 1679)
     // " Infinity"
-    _r0.o = xmlvm_create_java_string_from_pool(2439);
+    _r0.o = xmlvm_create_java_string_from_pool(2442);
     goto label31;
     label100:;
     XMLVM_SOURCE_POSITION("Formatter.java", 1681)
@@ -2216,7 +2216,7 @@ JAVA_OBJECT java_util_Formatter_Transformer_transformFromSpecialNumber__(JAVA_OB
     if (_r0.i == 0) goto label116;
     XMLVM_SOURCE_POSITION("Formatter.java", 1685)
     // "(Infinity)"
-    _r0.o = xmlvm_create_java_string_from_pool(2440);
+    _r0.o = xmlvm_create_java_string_from_pool(2443);
     goto label31;
     label116:;
     XMLVM_SOURCE_POSITION("Formatter.java", 1687)
@@ -2548,7 +2548,7 @@ JAVA_OBJECT java_util_Formatter_Transformer_transformFromBigInteger__(JAVA_OBJEC
     label332:;
     XMLVM_SOURCE_POSITION("Formatter.java", 1780)
     // "0x"
-    _r2.o = xmlvm_create_java_string_from_pool(984);
+    _r2.o = xmlvm_create_java_string_from_pool(987);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder_insert___int_java_lang_String(_r1.o, _r0.i, _r2.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 1781)

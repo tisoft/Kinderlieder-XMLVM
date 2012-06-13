@@ -294,7 +294,7 @@ JAVA_OBJECT java_util_regex_NonCapFSet_getName__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("NonCapFSet.java", 44)
     // "NonCapFSet"
-    _r0.o = xmlvm_create_java_string_from_pool(2342);
+    _r0.o = xmlvm_create_java_string_from_pool(2345);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

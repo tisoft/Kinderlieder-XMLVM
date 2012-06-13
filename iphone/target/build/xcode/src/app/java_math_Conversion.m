@@ -670,7 +670,7 @@ JAVA_OBJECT java_math_Conversion_toDecimalScaledString___java_math_BigInteger_in
     if (_r21.i >= 0) goto label70;
     XMLVM_SOURCE_POSITION("Conversion.java", 163)
     // "0E+"
-    _r5.o = xmlvm_create_java_string_from_pool(2625);
+    _r5.o = xmlvm_create_java_string_from_pool(2628);
     _r0 = _r20;
     _r1 = _r5;
     XMLVM_CHECK_NPE(0)
@@ -703,32 +703,32 @@ JAVA_OBJECT java_math_Conversion_toDecimalScaledString___java_math_BigInteger_in
     label55:;
     XMLVM_SOURCE_POSITION("Conversion.java", 151)
     // "0.00"
-    _r20.o = xmlvm_create_java_string_from_pool(2626);
+    _r20.o = xmlvm_create_java_string_from_pool(2629);
     goto label48;
     label58:;
     XMLVM_SOURCE_POSITION("Conversion.java", 153)
     // "0.000"
-    _r20.o = xmlvm_create_java_string_from_pool(2627);
+    _r20.o = xmlvm_create_java_string_from_pool(2630);
     goto label48;
     label61:;
     XMLVM_SOURCE_POSITION("Conversion.java", 155)
     // "0.0000"
-    _r20.o = xmlvm_create_java_string_from_pool(2628);
+    _r20.o = xmlvm_create_java_string_from_pool(2631);
     goto label48;
     label64:;
     XMLVM_SOURCE_POSITION("Conversion.java", 157)
     // "0.00000"
-    _r20.o = xmlvm_create_java_string_from_pool(2629);
+    _r20.o = xmlvm_create_java_string_from_pool(2632);
     goto label48;
     label67:;
     XMLVM_SOURCE_POSITION("Conversion.java", 159)
     // "0.000000"
-    _r20.o = xmlvm_create_java_string_from_pool(2630);
+    _r20.o = xmlvm_create_java_string_from_pool(2633);
     goto label48;
     label70:;
     XMLVM_SOURCE_POSITION("Conversion.java", 165)
     // "0E"
-    _r5.o = xmlvm_create_java_string_from_pool(2631);
+    _r5.o = xmlvm_create_java_string_from_pool(2634);
     _r0 = _r20;
     _r1 = _r5;
     XMLVM_CHECK_NPE(0)
@@ -1221,7 +1221,7 @@ JAVA_OBJECT java_math_Conversion_toDecimalScaledString___long_int(JAVA_LONG n1, 
     if (_r12.i >= 0) goto label68;
     XMLVM_SOURCE_POSITION("Conversion.java", 315)
     // "0E+"
-    _r11.o = xmlvm_create_java_string_from_pool(2625);
+    _r11.o = xmlvm_create_java_string_from_pool(2628);
     XMLVM_CHECK_NPE(10)
     java_lang_StringBuilder_append___java_lang_String(_r10.o, _r11.o);
     label31:;
@@ -1229,7 +1229,7 @@ JAVA_OBJECT java_math_Conversion_toDecimalScaledString___long_int(JAVA_LONG n1, 
     _r11.i = -2147483648;
     if (_r12.i != _r11.i) goto label74;
     // "2147483648"
-    _r11.o = xmlvm_create_java_string_from_pool(2632);
+    _r11.o = xmlvm_create_java_string_from_pool(2635);
     label37:;
     XMLVM_CHECK_NPE(10)
     java_lang_StringBuilder_append___java_lang_String(_r10.o, _r11.o);
@@ -1257,32 +1257,32 @@ JAVA_OBJECT java_math_Conversion_toDecimalScaledString___long_int(JAVA_LONG n1, 
     label53:;
     XMLVM_SOURCE_POSITION("Conversion.java", 307)
     // "0.00"
-    _r10.o = xmlvm_create_java_string_from_pool(2626);
+    _r10.o = xmlvm_create_java_string_from_pool(2629);
     goto label44;
     label56:;
     XMLVM_SOURCE_POSITION("Conversion.java", 308)
     // "0.000"
-    _r10.o = xmlvm_create_java_string_from_pool(2627);
+    _r10.o = xmlvm_create_java_string_from_pool(2630);
     goto label44;
     label59:;
     XMLVM_SOURCE_POSITION("Conversion.java", 309)
     // "0.0000"
-    _r10.o = xmlvm_create_java_string_from_pool(2628);
+    _r10.o = xmlvm_create_java_string_from_pool(2631);
     goto label44;
     label62:;
     XMLVM_SOURCE_POSITION("Conversion.java", 310)
     // "0.00000"
-    _r10.o = xmlvm_create_java_string_from_pool(2629);
+    _r10.o = xmlvm_create_java_string_from_pool(2632);
     goto label44;
     label65:;
     XMLVM_SOURCE_POSITION("Conversion.java", 311)
     // "0.000000"
-    _r10.o = xmlvm_create_java_string_from_pool(2630);
+    _r10.o = xmlvm_create_java_string_from_pool(2633);
     goto label44;
     label68:;
     XMLVM_SOURCE_POSITION("Conversion.java", 317)
     // "0E"
-    _r11.o = xmlvm_create_java_string_from_pool(2631);
+    _r11.o = xmlvm_create_java_string_from_pool(2634);
     XMLVM_CHECK_NPE(10)
     java_lang_StringBuilder_append___java_lang_String(_r10.o, _r11.o);
     goto label31;

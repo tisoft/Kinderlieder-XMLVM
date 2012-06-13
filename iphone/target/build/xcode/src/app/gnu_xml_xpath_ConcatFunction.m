@@ -438,7 +438,7 @@ JAVA_OBJECT gnu_xml_xpath_ConcatFunction_toString__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("ConcatFunction.java", 101)
     _r0.o = __NEW_gnu_java_lang_CPStringBuilder();
     // "concat("
-    _r1.o = xmlvm_create_java_string_from_pool(3274);
+    _r1.o = xmlvm_create_java_string_from_pool(3277);
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("ConcatFunction.java", 102)

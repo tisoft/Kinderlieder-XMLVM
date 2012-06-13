@@ -454,7 +454,7 @@ JAVA_OBJECT java_security_Permission_toString__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Permission.java", 159)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "("
-    _r2.o = xmlvm_create_java_string_from_pool(1082);
+    _r2.o = xmlvm_create_java_string_from_pool(1085);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     //java_lang_Object_getClass__[3]

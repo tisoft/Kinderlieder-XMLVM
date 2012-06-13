@@ -212,303 +212,303 @@ void gnu_xml_xpath_XPathParser_YyNameClass___CLINIT_()
     _r1.i = 0;
     XMLVM_SOURCE_POSITION("XPathParser.java", 1442)
     // "end-of-file"
-    _r2.o = xmlvm_create_java_string_from_pool(1837);
+    _r2.o = xmlvm_create_java_string_from_pool(1840);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 257;
     XMLVM_SOURCE_POSITION("XPathParser.java", 1460)
     // "LITERAL"
-    _r2.o = xmlvm_create_java_string_from_pool(1838);
+    _r2.o = xmlvm_create_java_string_from_pool(1841);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 258;
     // "DIGITS"
-    _r2.o = xmlvm_create_java_string_from_pool(1839);
+    _r2.o = xmlvm_create_java_string_from_pool(1842);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 259;
     // "NAME"
-    _r2.o = xmlvm_create_java_string_from_pool(1840);
+    _r2.o = xmlvm_create_java_string_from_pool(1843);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 260;
     // "LP"
-    _r2.o = xmlvm_create_java_string_from_pool(1841);
+    _r2.o = xmlvm_create_java_string_from_pool(1844);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 261;
     XMLVM_SOURCE_POSITION("XPathParser.java", 1461)
     // "RP"
-    _r2.o = xmlvm_create_java_string_from_pool(1842);
+    _r2.o = xmlvm_create_java_string_from_pool(1845);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 262;
     // "LB"
-    _r2.o = xmlvm_create_java_string_from_pool(1843);
+    _r2.o = xmlvm_create_java_string_from_pool(1846);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 263;
     // "RB"
-    _r2.o = xmlvm_create_java_string_from_pool(1844);
+    _r2.o = xmlvm_create_java_string_from_pool(1847);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 264;
     // "COMMA"
-    _r2.o = xmlvm_create_java_string_from_pool(1845);
+    _r2.o = xmlvm_create_java_string_from_pool(1848);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 265;
     // "PIPE"
-    _r2.o = xmlvm_create_java_string_from_pool(1846);
+    _r2.o = xmlvm_create_java_string_from_pool(1849);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 266;
     // "SLASH"
-    _r2.o = xmlvm_create_java_string_from_pool(1847);
+    _r2.o = xmlvm_create_java_string_from_pool(1850);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 267;
     // "DOUBLE_SLASH"
-    _r2.o = xmlvm_create_java_string_from_pool(1848);
+    _r2.o = xmlvm_create_java_string_from_pool(1851);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 268;
     // "EQ"
-    _r2.o = xmlvm_create_java_string_from_pool(1849);
+    _r2.o = xmlvm_create_java_string_from_pool(1852);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 269;
     // "NE"
-    _r2.o = xmlvm_create_java_string_from_pool(1850);
+    _r2.o = xmlvm_create_java_string_from_pool(1853);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 270;
     // "GT"
-    _r2.o = xmlvm_create_java_string_from_pool(1851);
+    _r2.o = xmlvm_create_java_string_from_pool(1854);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 271;
     XMLVM_SOURCE_POSITION("XPathParser.java", 1462)
     // "LT"
-    _r2.o = xmlvm_create_java_string_from_pool(1852);
+    _r2.o = xmlvm_create_java_string_from_pool(1855);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 272;
     // "GTE"
-    _r2.o = xmlvm_create_java_string_from_pool(1853);
+    _r2.o = xmlvm_create_java_string_from_pool(1856);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 273;
     // "LTE"
-    _r2.o = xmlvm_create_java_string_from_pool(1854);
+    _r2.o = xmlvm_create_java_string_from_pool(1857);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 274;
     // "PLUS"
-    _r2.o = xmlvm_create_java_string_from_pool(1855);
+    _r2.o = xmlvm_create_java_string_from_pool(1858);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 275;
     // "MINUS"
-    _r2.o = xmlvm_create_java_string_from_pool(1856);
+    _r2.o = xmlvm_create_java_string_from_pool(1859);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 276;
     // "AT"
-    _r2.o = xmlvm_create_java_string_from_pool(1857);
+    _r2.o = xmlvm_create_java_string_from_pool(1860);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 277;
     // "STAR"
-    _r2.o = xmlvm_create_java_string_from_pool(1858);
+    _r2.o = xmlvm_create_java_string_from_pool(1861);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 278;
     // "DOLLAR"
-    _r2.o = xmlvm_create_java_string_from_pool(1859);
+    _r2.o = xmlvm_create_java_string_from_pool(1862);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 279;
     // "COLON"
-    _r2.o = xmlvm_create_java_string_from_pool(1860);
+    _r2.o = xmlvm_create_java_string_from_pool(1863);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 280;
     XMLVM_SOURCE_POSITION("XPathParser.java", 1463)
     // "DOUBLE_COLON"
-    _r2.o = xmlvm_create_java_string_from_pool(1861);
+    _r2.o = xmlvm_create_java_string_from_pool(1864);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 281;
     // "DOT"
-    _r2.o = xmlvm_create_java_string_from_pool(1862);
+    _r2.o = xmlvm_create_java_string_from_pool(1865);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 282;
     // "DOUBLE_DOT"
-    _r2.o = xmlvm_create_java_string_from_pool(1863);
+    _r2.o = xmlvm_create_java_string_from_pool(1866);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 283;
     // "ANCESTOR"
-    _r2.o = xmlvm_create_java_string_from_pool(1864);
+    _r2.o = xmlvm_create_java_string_from_pool(1867);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 284;
     // "ANCESTOR_OR_SELF"
-    _r2.o = xmlvm_create_java_string_from_pool(1865);
+    _r2.o = xmlvm_create_java_string_from_pool(1868);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 285;
     XMLVM_SOURCE_POSITION("XPathParser.java", 1464)
     // "ATTRIBUTE"
-    _r2.o = xmlvm_create_java_string_from_pool(1866);
+    _r2.o = xmlvm_create_java_string_from_pool(1869);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 286;
     // "CHILD"
-    _r2.o = xmlvm_create_java_string_from_pool(1867);
+    _r2.o = xmlvm_create_java_string_from_pool(1870);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 287;
     // "DESCENDANT"
-    _r2.o = xmlvm_create_java_string_from_pool(1868);
+    _r2.o = xmlvm_create_java_string_from_pool(1871);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 288;
     // "DESCENDANT_OR_SELF"
-    _r2.o = xmlvm_create_java_string_from_pool(1869);
+    _r2.o = xmlvm_create_java_string_from_pool(1872);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 289;
     // "FOLLOWING"
-    _r2.o = xmlvm_create_java_string_from_pool(1870);
+    _r2.o = xmlvm_create_java_string_from_pool(1873);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 290;
     XMLVM_SOURCE_POSITION("XPathParser.java", 1465)
     // "FOLLOWING_SIBLING"
-    _r2.o = xmlvm_create_java_string_from_pool(1871);
+    _r2.o = xmlvm_create_java_string_from_pool(1874);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 291;
     // "NAMESPACE"
-    _r2.o = xmlvm_create_java_string_from_pool(1872);
+    _r2.o = xmlvm_create_java_string_from_pool(1875);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 292;
     // "PARENT"
-    _r2.o = xmlvm_create_java_string_from_pool(1873);
+    _r2.o = xmlvm_create_java_string_from_pool(1876);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 293;
     // "PRECEDING"
-    _r2.o = xmlvm_create_java_string_from_pool(1874);
+    _r2.o = xmlvm_create_java_string_from_pool(1877);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 294;
     XMLVM_SOURCE_POSITION("XPathParser.java", 1466)
     // "PRECEDING_SIBLING"
-    _r2.o = xmlvm_create_java_string_from_pool(1875);
+    _r2.o = xmlvm_create_java_string_from_pool(1878);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 295;
     // "SELF"
-    _r2.o = xmlvm_create_java_string_from_pool(1876);
+    _r2.o = xmlvm_create_java_string_from_pool(1879);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 296;
     // "DIV"
-    _r2.o = xmlvm_create_java_string_from_pool(1877);
+    _r2.o = xmlvm_create_java_string_from_pool(1880);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 297;
     // "MOD"
-    _r2.o = xmlvm_create_java_string_from_pool(1878);
+    _r2.o = xmlvm_create_java_string_from_pool(1881);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 298;
     // "OR"
-    _r2.o = xmlvm_create_java_string_from_pool(1879);
+    _r2.o = xmlvm_create_java_string_from_pool(1882);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 299;
     // "AND"
-    _r2.o = xmlvm_create_java_string_from_pool(1880);
+    _r2.o = xmlvm_create_java_string_from_pool(1883);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 300;
     // "COMMENT"
-    _r2.o = xmlvm_create_java_string_from_pool(1881);
+    _r2.o = xmlvm_create_java_string_from_pool(1884);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 301;
     XMLVM_SOURCE_POSITION("XPathParser.java", 1467)
     // "PROCESSING_INSTRUCTION"
-    _r2.o = xmlvm_create_java_string_from_pool(1882);
+    _r2.o = xmlvm_create_java_string_from_pool(1885);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 302;
     // "TEXT"
-    _r2.o = xmlvm_create_java_string_from_pool(1883);
+    _r2.o = xmlvm_create_java_string_from_pool(1886);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 303;
     // "NODE"
-    _r2.o = xmlvm_create_java_string_from_pool(1884);
+    _r2.o = xmlvm_create_java_string_from_pool(1887);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 304;
     // "UNARY"
-    _r2.o = xmlvm_create_java_string_from_pool(1885);
+    _r2.o = xmlvm_create_java_string_from_pool(1888);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;

@@ -242,7 +242,7 @@ void __INIT_IMPL_gnu_xml_dom_ImplementationSource()
     __TIB_gnu_xml_dom_ImplementationSource.itable[XMLVM_ITABLE_IDX_org_w3c_dom_DOMImplementationSource_getDOMImplementationList___java_lang_String] = __TIB_gnu_xml_dom_ImplementationSource.vtable[6];
     __TIB_gnu_xml_dom_ImplementationSource.itable[XMLVM_ITABLE_IDX_org_w3c_dom_DOMImplementationSource_getDOMImplementation___java_lang_String] = __TIB_gnu_xml_dom_ImplementationSource.vtable[7];
 
-    _STATIC_gnu_xml_dom_ImplementationSource_DIGITS = (java_lang_String*) xmlvm_create_java_string_from_pool(2547);
+    _STATIC_gnu_xml_dom_ImplementationSource_DIGITS = (java_lang_String*) xmlvm_create_java_string_from_pool(2550);
     _STATIC_gnu_xml_dom_ImplementationSource_implementations = (org_xmlvm_runtime_XMLVMArray*) JAVA_NULL;
 
     __TIB_gnu_xml_dom_ImplementationSource.declaredFields = &__field_reflection_data[0];
@@ -338,11 +338,11 @@ void gnu_xml_dom_ImplementationSource___CLINIT_()
     gnu_xml_dom_DomImpl___INIT___(_r1.o);
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_add___java_lang_Object])(_r0.o, _r1.o);
-    XMLVM_TRY_BEGIN(w33274aaab2b1b8)
+    XMLVM_TRY_BEGIN(w33300aaab2b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("ImplementationSource.java", 70)
     // "gnu.xml.libxmlj.dom.GnomeDocumentBuilder"
-    _r1.o = xmlvm_create_java_string_from_pool(2548);
+    _r1.o = xmlvm_create_java_string_from_pool(2551);
     _r1.o = java_lang_Class_forName___java_lang_String(_r1.o);
     XMLVM_SOURCE_POSITION("ImplementationSource.java", 71)
     //java_lang_Class_newInstance__[12]
@@ -352,11 +352,11 @@ void gnu_xml_dom_ImplementationSource___CLINIT_()
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_add___java_lang_Object])(_r0.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w33274aaab2b1b8)
-        XMLVM_CATCH_SPECIFIC(w33274aaab2b1b8,java_lang_Exception,42)
-        XMLVM_CATCH_SPECIFIC(w33274aaab2b1b8,java_lang_UnsatisfiedLinkError,40)
-    XMLVM_CATCH_END(w33274aaab2b1b8)
-    XMLVM_RESTORE_EXCEPTION_ENV(w33274aaab2b1b8)
+    XMLVM_CATCH_BEGIN(w33300aaab2b1b8)
+        XMLVM_CATCH_SPECIFIC(w33300aaab2b1b8,java_lang_Exception,42)
+        XMLVM_CATCH_SPECIFIC(w33300aaab2b1b8,java_lang_UnsatisfiedLinkError,40)
+    XMLVM_CATCH_END(w33300aaab2b1b8)
+    XMLVM_RESTORE_EXCEPTION_ENV(w33300aaab2b1b8)
     label26:;
     XMLVM_SOURCE_POSITION("ImplementationSource.java", 81)
     XMLVM_CHECK_NPE(0)
@@ -372,13 +372,13 @@ void gnu_xml_dom_ImplementationSource___CLINIT_()
     XMLVM_EXIT_METHOD()
     return;
     label40:;
-    java_lang_Thread* curThread_w33274aaab2b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w33274aaab2b1c20->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w33300aaab2b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w33300aaab2b1c20->fields.java_lang_Thread.xmlvmException_;
     goto label26;
     label42:;
     XMLVM_SOURCE_POSITION("ImplementationSource.java", 73)
-    java_lang_Thread* curThread_w33274aaab2b1c24 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w33274aaab2b1c24->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w33300aaab2b1c24 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w33300aaab2b1c24->fields.java_lang_Thread.xmlvmException_;
     goto label26;
     //XMLVM_END_WRAPPER
 }
@@ -583,7 +583,7 @@ JAVA_OBJECT gnu_xml_dom_ImplementationSource_parseFeatures___java_lang_String(JA
     if (_r4.i >= _r1.i) goto label59;
     XMLVM_SOURCE_POSITION("ImplementationSource.java", 144)
     // "1234567890"
-    _r4.o = xmlvm_create_java_string_from_pool(2547);
+    _r4.o = xmlvm_create_java_string_from_pool(2550);
     _r5.i = _r3.i + 1;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(7)

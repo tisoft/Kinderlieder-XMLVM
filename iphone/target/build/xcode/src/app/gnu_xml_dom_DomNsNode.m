@@ -673,7 +673,7 @@ void gnu_xml_dom_DomNsNode_setPrefix___java_lang_String(JAVA_OBJECT me, JAVA_OBJ
     _r0.o = __NEW_gnu_xml_dom_DomDOMException();
     XMLVM_SOURCE_POSITION("DomNsNode.java", 177)
     // "can't set prefix, node has no namespace URI"
-    _r1.o = xmlvm_create_java_string_from_pool(1510);
+    _r1.o = xmlvm_create_java_string_from_pool(1513);
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_DomDOMException___INIT____short_java_lang_String_org_w3c_dom_Node_int(_r0.o, _r4.i, _r1.o, _r6.o, _r3.i);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -700,7 +700,7 @@ void gnu_xml_dom_DomNsNode_setPrefix___java_lang_String(JAVA_OBJECT me, JAVA_OBJ
     XMLVM_SOURCE_POSITION("DomNsNode.java", 185)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "illegal prefix "
-    _r2.o = xmlvm_create_java_string_from_pool(1511);
+    _r2.o = xmlvm_create_java_string_from_pool(1514);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(1)
@@ -755,7 +755,7 @@ void gnu_xml_dom_DomNsNode_setPrefix___java_lang_String(JAVA_OBJECT me, JAVA_OBJ
     _r0.o = __NEW_gnu_xml_dom_DomDOMException();
     XMLVM_SOURCE_POSITION("DomNsNode.java", 201)
     // "xmlns attribute prefix is reserved"
-    _r1.o = xmlvm_create_java_string_from_pool(1512);
+    _r1.o = xmlvm_create_java_string_from_pool(1515);
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_DomDOMException___INIT____short_java_lang_String_org_w3c_dom_Node_int(_r0.o, _r4.i, _r1.o, _r6.o, _r3.i);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -785,7 +785,7 @@ void gnu_xml_dom_DomNsNode_setPrefix___java_lang_String(JAVA_OBJECT me, JAVA_OBJ
     _r0.o = __NEW_gnu_xml_dom_DomDOMException();
     XMLVM_SOURCE_POSITION("DomNsNode.java", 210)
     // "namespace declarations can't change names"
-    _r1.o = xmlvm_create_java_string_from_pool(1513);
+    _r1.o = xmlvm_create_java_string_from_pool(1516);
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_DomDOMException___INIT____short_java_lang_String_org_w3c_dom_Node_int(_r0.o, _r4.i, _r1.o, _r6.o, _r3.i);
     XMLVM_THROW_CUSTOM(_r0.o)

@@ -553,7 +553,7 @@ JAVA_OBJECT java_lang_StackTraceElement_getClassName__(JAVA_OBJECT me)
     _r0.o = ((java_lang_StackTraceElement*) _r1.o)->fields.java_lang_StackTraceElement.declaringClass_;
     if (_r0.o != JAVA_NULL) goto label7;
     // "<unknown class>"
-    _r0.o = xmlvm_create_java_string_from_pool(2595);
+    _r0.o = xmlvm_create_java_string_from_pool(2598);
     label6:;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -602,7 +602,7 @@ JAVA_OBJECT java_lang_StackTraceElement_getMethodName__(JAVA_OBJECT me)
     _r0.o = ((java_lang_StackTraceElement*) _r1.o)->fields.java_lang_StackTraceElement.methodName_;
     if (_r0.o != JAVA_NULL) goto label7;
     // "<unknown method>"
-    _r0.o = xmlvm_create_java_string_from_pool(2596);
+    _r0.o = xmlvm_create_java_string_from_pool(2599);
     label6:;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -701,7 +701,7 @@ JAVA_OBJECT java_lang_StackTraceElement_toString__(JAVA_OBJECT me)
     if (_r1.i == 0) goto label42;
     XMLVM_SOURCE_POSITION("StackTraceElement.java", 215)
     // "(Native Method)"
-    _r1.o = xmlvm_create_java_string_from_pool(2597);
+    _r1.o = xmlvm_create_java_string_from_pool(2600);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label37:;
@@ -719,7 +719,7 @@ JAVA_OBJECT java_lang_StackTraceElement_toString__(JAVA_OBJECT me)
     if (_r1.o != JAVA_NULL) goto label54;
     XMLVM_SOURCE_POSITION("StackTraceElement.java", 220)
     // "(Unknown Source)"
-    _r1.o = xmlvm_create_java_string_from_pool(2598);
+    _r1.o = xmlvm_create_java_string_from_pool(2601);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     goto label37;

@@ -983,7 +983,7 @@ void gnu_xml_pipeline_DomConsumer_Handler___INIT____gnu_xml_pipeline_DomConsumer
     XMLVM_SOURCE_POSITION("DomConsumer.java", 361)
     _r0.o = ((gnu_xml_pipeline_DomConsumer_Handler*) _r3.o)->fields.gnu_xml_pipeline_DomConsumer_Handler.impl_;
     // "XML"
-    _r1.o = xmlvm_create_java_string_from_pool(1122);
+    _r1.o = xmlvm_create_java_string_from_pool(1125);
     // "2.0"
     _r2.o = xmlvm_create_java_string_from_pool(401);
     XMLVM_CHECK_NPE(0)
@@ -1127,16 +1127,16 @@ void gnu_xml_pipeline_DomConsumer_Handler_startDocument__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DomConsumer.java", 417)
     _r0.o = ((gnu_xml_pipeline_DomConsumer_Handler*) _r4.o)->fields.gnu_xml_pipeline_DomConsumer_Handler.document_;
     if (_r0.o != JAVA_NULL) goto label31;
-    XMLVM_TRY_BEGIN(w35218aaac19b1b5)
+    XMLVM_TRY_BEGIN(w35244aaac19b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("DomConsumer.java", 419)
     _r0.i = ((gnu_xml_pipeline_DomConsumer_Handler*) _r4.o)->fields.gnu_xml_pipeline_DomConsumer_Handler.isL2_;
-    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w35218aaac19b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w35218aaac19b1b5, sizeof(XMLVM_JMP_BUF)); goto label36; };
+    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w35244aaac19b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w35244aaac19b1b5, sizeof(XMLVM_JMP_BUF)); goto label36; };
     XMLVM_SOURCE_POSITION("DomConsumer.java", 421)
     _r0.o = ((gnu_xml_pipeline_DomConsumer_Handler*) _r4.o)->fields.gnu_xml_pipeline_DomConsumer_Handler.impl_;
     _r1.o = JAVA_NULL;
     // "foo"
-    _r2.o = xmlvm_create_java_string_from_pool(2574);
+    _r2.o = xmlvm_create_java_string_from_pool(2577);
     _r3.o = JAVA_NULL;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_DOMImplementation_createDocument___java_lang_String_java_lang_String_org_w3c_dom_DocumentType])(_r0.o, _r1.o, _r2.o, _r3.o);
@@ -1150,10 +1150,10 @@ void gnu_xml_pipeline_DomConsumer_Handler_startDocument__(JAVA_OBJECT me)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Document_removeChild___org_w3c_dom_Node])(_r0.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w35218aaac19b1b5)
-        XMLVM_CATCH_SPECIFIC(w35218aaac19b1b5,java_lang_Exception,45)
-    XMLVM_CATCH_END(w35218aaac19b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w35218aaac19b1b5)
+    XMLVM_CATCH_BEGIN(w35244aaac19b1b5)
+        XMLVM_CATCH_SPECIFIC(w35244aaac19b1b5,java_lang_Exception,45)
+    XMLVM_CATCH_END(w35244aaac19b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w35244aaac19b1b5)
     label31:;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 429)
     _r0.o = ((gnu_xml_pipeline_DomConsumer_Handler*) _r4.o)->fields.gnu_xml_pipeline_DomConsumer_Handler.document_;
@@ -1162,7 +1162,7 @@ void gnu_xml_pipeline_DomConsumer_Handler_startDocument__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return;
     label36:;
-    XMLVM_TRY_BEGIN(w35218aaac19b1c13)
+    XMLVM_TRY_BEGIN(w35244aaac19b1c13)
     // Begin try
     XMLVM_SOURCE_POSITION("DomConsumer.java", 424)
     _r0.o = ((gnu_xml_pipeline_DomConsumer_Handler*) _r4.o)->fields.gnu_xml_pipeline_DomConsumer_Handler.consumer_;
@@ -1170,18 +1170,18 @@ void gnu_xml_pipeline_DomConsumer_Handler_startDocument__(JAVA_OBJECT me)
     ((gnu_xml_pipeline_DomConsumer_Handler*) _r4.o)->fields.gnu_xml_pipeline_DomConsumer_Handler.document_ = _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w35218aaac19b1c13)
-        XMLVM_CATCH_SPECIFIC(w35218aaac19b1c13,java_lang_Exception,45)
-    XMLVM_CATCH_END(w35218aaac19b1c13)
-    XMLVM_RESTORE_EXCEPTION_ENV(w35218aaac19b1c13)
+    XMLVM_CATCH_BEGIN(w35244aaac19b1c13)
+        XMLVM_CATCH_SPECIFIC(w35244aaac19b1c13,java_lang_Exception,45)
+    XMLVM_CATCH_END(w35244aaac19b1c13)
+    XMLVM_RESTORE_EXCEPTION_ENV(w35244aaac19b1c13)
     goto label31;
     label45:;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 426)
-    java_lang_Thread* curThread_w35218aaac19b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w35218aaac19b1c17->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w35244aaac19b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w35244aaac19b1c17->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 427)
     // "DOM create document"
-    _r1.o = xmlvm_create_java_string_from_pool(2575);
+    _r1.o = xmlvm_create_java_string_from_pool(2578);
     XMLVM_CHECK_NPE(4)
     gnu_xml_pipeline_DomConsumer_Handler_fatal___java_lang_String_java_lang_Exception(_r4.o, _r1.o, _r0.o);
     goto label31;
@@ -1198,15 +1198,15 @@ void gnu_xml_pipeline_DomConsumer_Handler_endDocument__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     _r2.o = JAVA_NULL;
-    XMLVM_TRY_BEGIN(w35218aaac20b1b3)
+    XMLVM_TRY_BEGIN(w35244aaac20b1b3)
     // Begin try
     XMLVM_SOURCE_POSITION("DomConsumer.java", 437)
     _r0.o = ((gnu_xml_pipeline_DomConsumer_Handler*) _r3.o)->fields.gnu_xml_pipeline_DomConsumer_Handler.consumer_;
     XMLVM_CHECK_NPE(0)
     _r0.o = gnu_xml_pipeline_DomConsumer_getNext__(_r0.o);
-    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w35218aaac20b1b3->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w35218aaac20b1b3, sizeof(XMLVM_JMP_BUF)); goto label34; };
+    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w35244aaac20b1b3->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w35244aaac20b1b3, sizeof(XMLVM_JMP_BUF)); goto label34; };
     _r0.o = ((gnu_xml_pipeline_DomConsumer_Handler*) _r3.o)->fields.gnu_xml_pipeline_DomConsumer_Handler.document_;
-    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w35218aaac20b1b3->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w35218aaac20b1b3, sizeof(XMLVM_JMP_BUF)); goto label34; };
+    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w35244aaac20b1b3->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w35244aaac20b1b3, sizeof(XMLVM_JMP_BUF)); goto label34; };
     XMLVM_SOURCE_POSITION("DomConsumer.java", 438)
     _r0.o = __NEW_gnu_xml_util_DomParser();
     _r1.o = ((gnu_xml_pipeline_DomConsumer_Handler*) _r3.o)->fields.gnu_xml_pipeline_DomConsumer_Handler.document_;
@@ -1219,16 +1219,16 @@ void gnu_xml_pipeline_DomConsumer_Handler_endDocument__(JAVA_OBJECT me)
     gnu_xml_pipeline_EventFilter_bind___org_xml_sax_XMLReader_gnu_xml_pipeline_EventConsumer(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("DomConsumer.java", 441)
     // "ignored"
-    _r1.o = xmlvm_create_java_string_from_pool(2576);
+    _r1.o = xmlvm_create_java_string_from_pool(2579);
     //gnu_xml_util_DomParser_parse___java_lang_String[12]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_util_DomParser*) _r0.o)->tib->vtable[12])(_r0.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w35218aaac20b1b3)
-        XMLVM_CATCH_SPECIFIC(w35218aaac20b1b3,java_lang_Object,37)
-    XMLVM_CATCH_END(w35218aaac20b1b3)
-    XMLVM_RESTORE_EXCEPTION_ENV(w35218aaac20b1b3)
+    XMLVM_CATCH_BEGIN(w35244aaac20b1b3)
+        XMLVM_CATCH_SPECIFIC(w35244aaac20b1b3,java_lang_Object,37)
+    XMLVM_CATCH_END(w35244aaac20b1b3)
+    XMLVM_RESTORE_EXCEPTION_ENV(w35244aaac20b1b3)
     label34:;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 444)
     ((gnu_xml_pipeline_DomConsumer_Handler*) _r3.o)->fields.gnu_xml_pipeline_DomConsumer_Handler.top_ = _r2.o;
@@ -1237,8 +1237,8 @@ void gnu_xml_pipeline_DomConsumer_Handler_endDocument__(JAVA_OBJECT me)
     return;
     label37:;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 443)
-    java_lang_Thread* curThread_w35218aaac20b1c11 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w35218aaac20b1c11->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w35244aaac20b1c11 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w35244aaac20b1c11->fields.java_lang_Thread.xmlvmException_;
     ((gnu_xml_pipeline_DomConsumer_Handler*) _r3.o)->fields.gnu_xml_pipeline_DomConsumer_Handler.top_ = _r2.o;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 445)
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -1277,7 +1277,7 @@ void gnu_xml_pipeline_DomConsumer_Handler_processingInstruction___java_lang_Stri
     XMLVM_SOURCE_POSITION("DomConsumer.java", 463)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "PI target name is namespace nonconformant: "
-    _r1.o = xmlvm_create_java_string_from_pool(2577);
+    _r1.o = xmlvm_create_java_string_from_pool(2580);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("DomConsumer.java", 464)
@@ -1455,7 +1455,7 @@ void gnu_xml_pipeline_DomConsumer_Handler_skippedEntity___java_lang_String(JAVA_
     XMLVM_SOURCE_POSITION("DomConsumer.java", 541)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "skipped entity: "
-    _r1.o = xmlvm_create_java_string_from_pool(2578);
+    _r1.o = xmlvm_create_java_string_from_pool(2581);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_CHECK_NPE(0)
@@ -1812,7 +1812,7 @@ void gnu_xml_pipeline_DomConsumer_Handler_populateAttributes___org_w3c_dom_Eleme
     if (_r5.i != 0) goto label122;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 661)
     // "NMTOKENS"
-    _r5.o = xmlvm_create_java_string_from_pool(868);
+    _r5.o = xmlvm_create_java_string_from_pool(871);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(5)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r5.o)->tib->vtable[1])(_r5.o, _r2.o);
@@ -1826,7 +1826,7 @@ void gnu_xml_pipeline_DomConsumer_Handler_populateAttributes___org_w3c_dom_Eleme
     XMLVM_SOURCE_POSITION("DomConsumer.java", 664)
     _r2.o = __NEW_java_lang_StringBuilder();
     // "namespace nonconformant attribute value: <"
-    _r5.o = xmlvm_create_java_string_from_pool(2579);
+    _r5.o = xmlvm_create_java_string_from_pool(2582);
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuilder___INIT____java_lang_String(_r2.o, _r5.o);
     XMLVM_SOURCE_POSITION("DomConsumer.java", 665)
@@ -1842,13 +1842,13 @@ void gnu_xml_pipeline_DomConsumer_Handler_populateAttributes___org_w3c_dom_Eleme
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r4.o);
     // "='"
-    _r5.o = xmlvm_create_java_string_from_pool(2580);
+    _r5.o = xmlvm_create_java_string_from_pool(2583);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r5.o);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r3.o);
     // "' ...>"
-    _r5.o = xmlvm_create_java_string_from_pool(2581);
+    _r5.o = xmlvm_create_java_string_from_pool(2584);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r5.o);
     //java_lang_StringBuilder_toString__[5]
@@ -1878,7 +1878,7 @@ void gnu_xml_pipeline_DomConsumer_Handler_populateAttributes___org_w3c_dom_Eleme
     XMLVM_SOURCE_POSITION("DomConsumer.java", 677)
     _r2.o = __NEW_java_lang_StringBuilder();
     // "illegal null namespace decl, "
-    _r5.o = xmlvm_create_java_string_from_pool(2582);
+    _r5.o = xmlvm_create_java_string_from_pool(2585);
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuilder___INIT____java_lang_String(_r2.o, _r5.o);
     XMLVM_CHECK_NPE(2)
@@ -2118,7 +2118,7 @@ JAVA_OBJECT gnu_xml_pipeline_DomConsumer_Handler_getNamespace___java_lang_String
     XMLVM_SOURCE_POSITION("DomConsumer.java", 758)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "Undeclared namespace prefix: "
-    _r2.o = xmlvm_create_java_string_from_pool(2583);
+    _r2.o = xmlvm_create_java_string_from_pool(2586);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(1)

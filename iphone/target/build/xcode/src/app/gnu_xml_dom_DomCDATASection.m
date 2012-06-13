@@ -494,7 +494,7 @@ JAVA_OBJECT gnu_xml_dom_DomCDATASection_getNodeName__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomCDATASection.java", 87)
     // "#cdata-section"
-    _r0.o = xmlvm_create_java_string_from_pool(2332);
+    _r0.o = xmlvm_create_java_string_from_pool(2335);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

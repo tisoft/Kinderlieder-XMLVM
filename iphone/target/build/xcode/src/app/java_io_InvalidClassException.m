@@ -304,7 +304,7 @@ JAVA_OBJECT java_io_InvalidClassException_getMessage__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     // "; "
-    _r2.o = xmlvm_create_java_string_from_pool(1170);
+    _r2.o = xmlvm_create_java_string_from_pool(1173);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(1)

@@ -264,7 +264,7 @@ JAVA_BOOLEAN my_kinderlieder_InfoViewController_1_shouldStartLoadWithRequest___o
     XMLVM_CHECK_NPE(2)
     _r3.o = org_xmlvm_iphone_NSURL_absoluteString__(_r2.o);
     // "file"
-    _r4.o = xmlvm_create_java_string_from_pool(2345);
+    _r4.o = xmlvm_create_java_string_from_pool(2348);
     XMLVM_CHECK_NPE(3)
     _r3.i = java_lang_String_startsWith___java_lang_String(_r3.o, _r4.o);
     if (_r3.i == 0) goto label20;
@@ -279,7 +279,7 @@ JAVA_BOOLEAN my_kinderlieder_InfoViewController_1_shouldStartLoadWithRequest___o
     XMLVM_CHECK_NPE(2)
     _r3.o = org_xmlvm_iphone_NSURL_absoluteString__(_r2.o);
     // "mailto"
-    _r4.o = xmlvm_create_java_string_from_pool(2346);
+    _r4.o = xmlvm_create_java_string_from_pool(2349);
     XMLVM_CHECK_NPE(3)
     _r3.i = java_lang_String_startsWith___java_lang_String(_r3.o, _r4.o);
     if (_r3.i == 0) goto label91;
@@ -330,19 +330,19 @@ JAVA_BOOLEAN my_kinderlieder_InfoViewController_1_shouldStartLoadWithRequest___o
     XMLVM_SOURCE_POSITION("InfoViewController.java", 37)
     _r0.o = __NEW_org_xmlvm_iphone_UIAlertView();
     // "Browser"
-    _r3.o = xmlvm_create_java_string_from_pool(2347);
+    _r3.o = xmlvm_create_java_string_from_pool(2350);
     // "Link in Safari \21032\21002ffnen?"
-    _r4.o = xmlvm_create_java_string_from_pool(2348);
+    _r4.o = xmlvm_create_java_string_from_pool(2351);
     _r5.o = __NEW_my_kinderlieder_InfoViewController_1_2();
     XMLVM_CHECK_NPE(5)
     my_kinderlieder_InfoViewController_1_2___INIT____my_kinderlieder_InfoViewController_1_org_xmlvm_iphone_NSURL(_r5.o, _r10.o, _r2.o);
     // "Nein"
-    _r6.o = xmlvm_create_java_string_from_pool(2349);
+    _r6.o = xmlvm_create_java_string_from_pool(2352);
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UIAlertView___INIT____java_lang_String_java_lang_String_org_xmlvm_iphone_UIAlertViewDelegate_java_lang_String(_r0.o, _r3.o, _r4.o, _r5.o, _r6.o);
     XMLVM_SOURCE_POSITION("InfoViewController.java", 48)
     // "Ja"
-    _r3.o = xmlvm_create_java_string_from_pool(2350);
+    _r3.o = xmlvm_create_java_string_from_pool(2353);
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UIAlertView_addButtonWithTitle___java_lang_String(_r0.o, _r3.o);
     XMLVM_SOURCE_POSITION("InfoViewController.java", 50)

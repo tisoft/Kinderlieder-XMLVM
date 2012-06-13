@@ -295,7 +295,7 @@ JAVA_OBJECT java_util_IllegalFormatCodePointException_getMessage__(JAVA_OBJECT m
     java_lang_StringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("IllegalFormatCodePointException.java", 62)
     // "Code point is "
-    _r1.o = xmlvm_create_java_string_from_pool(1392);
+    _r1.o = xmlvm_create_java_string_from_pool(1395);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("IllegalFormatCodePointException.java", 63)

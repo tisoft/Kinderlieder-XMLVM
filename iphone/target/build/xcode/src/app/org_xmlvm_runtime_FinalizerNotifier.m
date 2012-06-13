@@ -444,11 +444,11 @@ JAVA_OBJECT org_xmlvm_runtime_FinalizerNotifier_startFinalizerThread__()
     if (!__TIB_org_xmlvm_runtime_FinalizerNotifier.classInitialized) __INIT_org_xmlvm_runtime_FinalizerNotifier();
     _r0.o = __CLASS_org_xmlvm_runtime_FinalizerNotifier;
     java_lang_Object_acquireLockRecursive__(_r0.o);
-    XMLVM_TRY_BEGIN(w25128aaab6b1b4)
+    XMLVM_TRY_BEGIN(w25159aaab6b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("FinalizerNotifier.java", 33)
     _r1.o = org_xmlvm_runtime_FinalizerNotifier_GET_finalizerThread();
-    if (_r1.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w25128aaab6b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25128aaab6b1b4, sizeof(XMLVM_JMP_BUF)); goto label32; };
+    if (_r1.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w25159aaab6b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25159aaab6b1b4, sizeof(XMLVM_JMP_BUF)); goto label32; };
     XMLVM_SOURCE_POSITION("FinalizerNotifier.java", 34)
     _r1.o = __NEW_org_xmlvm_runtime_FinalizerNotifier_1();
     XMLVM_CHECK_NPE(1)
@@ -457,7 +457,7 @@ JAVA_OBJECT org_xmlvm_runtime_FinalizerNotifier_startFinalizerThread__()
     XMLVM_SOURCE_POSITION("FinalizerNotifier.java", 79)
     _r1.o = org_xmlvm_runtime_FinalizerNotifier_GET_finalizerThread();
     // "Finalizer-thread"
-    _r2.o = xmlvm_create_java_string_from_pool(2284);
+    _r2.o = xmlvm_create_java_string_from_pool(2287);
     XMLVM_CHECK_NPE(1)
     java_lang_Thread_setName___java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("FinalizerNotifier.java", 83)
@@ -471,37 +471,37 @@ JAVA_OBJECT org_xmlvm_runtime_FinalizerNotifier_startFinalizerThread__()
     java_lang_Thread_start__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25128aaab6b1b4)
-        XMLVM_CATCH_SPECIFIC(w25128aaab6b1b4,java_lang_Object,36)
-    XMLVM_CATCH_END(w25128aaab6b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25128aaab6b1b4)
+    XMLVM_CATCH_BEGIN(w25159aaab6b1b4)
+        XMLVM_CATCH_SPECIFIC(w25159aaab6b1b4,java_lang_Object,36)
+    XMLVM_CATCH_END(w25159aaab6b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25159aaab6b1b4)
     label32:;
-    XMLVM_TRY_BEGIN(w25128aaab6b1b6)
+    XMLVM_TRY_BEGIN(w25159aaab6b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("FinalizerNotifier.java", 87)
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25128aaab6b1b6)
-        XMLVM_CATCH_SPECIFIC(w25128aaab6b1b6,java_lang_Object,36)
-    XMLVM_CATCH_END(w25128aaab6b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25128aaab6b1b6)
+    XMLVM_CATCH_BEGIN(w25159aaab6b1b6)
+        XMLVM_CATCH_SPECIFIC(w25159aaab6b1b6,java_lang_Object,36)
+    XMLVM_CATCH_END(w25159aaab6b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25159aaab6b1b6)
     XMLVM_SOURCE_POSITION("FinalizerNotifier.java", 89)
     _r0.o = org_xmlvm_runtime_FinalizerNotifier_GET_finalizerThread();
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label36:;
-    java_lang_Thread* curThread_w25128aaab6b1c11 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w25128aaab6b1c11->fields.java_lang_Thread.xmlvmException_;
-    XMLVM_TRY_BEGIN(w25128aaab6b1c12)
+    java_lang_Thread* curThread_w25159aaab6b1c11 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w25159aaab6b1c11->fields.java_lang_Thread.xmlvmException_;
+    XMLVM_TRY_BEGIN(w25159aaab6b1c12)
     // Begin try
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25128aaab6b1c12)
-        XMLVM_CATCH_SPECIFIC(w25128aaab6b1c12,java_lang_Object,36)
-    XMLVM_CATCH_END(w25128aaab6b1c12)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25128aaab6b1c12)
+    XMLVM_CATCH_BEGIN(w25159aaab6b1c12)
+        XMLVM_CATCH_SPECIFIC(w25159aaab6b1c12,java_lang_Object,36)
+    XMLVM_CATCH_END(w25159aaab6b1c12)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25159aaab6b1c12)
     XMLVM_THROW_CUSTOM(_r1.o)
     //XMLVM_END_WRAPPER
 }

@@ -283,7 +283,7 @@ void java_lang_ClassCastException___INIT____java_lang_Class_java_lang_Class(JAVA
     _r5.o = n2;
     XMLVM_SOURCE_POSITION("ClassCastException.java", 58)
     // "luni.4B"
-    _r0.o = xmlvm_create_java_string_from_pool(1117);
+    _r0.o = xmlvm_create_java_string_from_pool(1120);
     XMLVM_CHECK_NPE(4)
     _r1.o = java_lang_Class_getName__(_r4.o);
     XMLVM_SOURCE_POSITION("ClassCastException.java", 59)

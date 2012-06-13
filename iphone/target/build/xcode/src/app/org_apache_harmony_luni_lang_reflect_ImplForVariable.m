@@ -663,7 +663,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForVariable_nextLayer___jav
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuilder___INIT___(_r3.o);
     // "unknown GenericDeclaration2: "
-    _r4.o = xmlvm_create_java_string_from_pool(2502);
+    _r4.o = xmlvm_create_java_string_from_pool(2505);
     XMLVM_CHECK_NPE(3)
     _r3.o = java_lang_StringBuilder_append___java_lang_String(_r3.o, _r4.o);
     //java_lang_Object_toString__[5]

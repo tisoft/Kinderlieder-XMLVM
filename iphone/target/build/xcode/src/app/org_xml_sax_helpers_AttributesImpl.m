@@ -1771,7 +1771,7 @@ void org_xml_sax_helpers_AttributesImpl_badIndex___int(JAVA_OBJECT me, JAVA_INT 
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 602)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "Attempt to modify attribute at illegal index: "
-    _r1.o = xmlvm_create_java_string_from_pool(2495);
+    _r1.o = xmlvm_create_java_string_from_pool(2498);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_CHECK_NPE(0)

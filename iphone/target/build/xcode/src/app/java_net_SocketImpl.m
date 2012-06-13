@@ -760,7 +760,7 @@ JAVA_OBJECT java_net_SocketImpl_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____int(_r0.o, _r1.i);
     // "Socket[addr="
-    _r1.o = xmlvm_create_java_string_from_pool(1070);
+    _r1.o = xmlvm_create_java_string_from_pool(1073);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SocketImpl.java", 261)
@@ -769,7 +769,7 @@ JAVA_OBJECT java_net_SocketImpl_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);
     // ",port="
-    _r1.o = xmlvm_create_java_string_from_pool(1071);
+    _r1.o = xmlvm_create_java_string_from_pool(1074);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     _r1.i = ((java_net_SocketImpl*) _r2.o)->fields.java_net_SocketImpl.port_;
@@ -777,7 +777,7 @@ JAVA_OBJECT java_net_SocketImpl_toString__(JAVA_OBJECT me)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("SocketImpl.java", 262)
     // ",localport="
-    _r1.o = xmlvm_create_java_string_from_pool(1072);
+    _r1.o = xmlvm_create_java_string_from_pool(1075);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_CHECK_NPE(2)
@@ -853,7 +853,7 @@ void java_net_SocketImpl_shutdownInput__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("SocketImpl.java", 298)
     _r0.o = __NEW_java_io_IOException();
     // "luni.72"
-    _r1.o = xmlvm_create_java_string_from_pool(1073);
+    _r1.o = xmlvm_create_java_string_from_pool(1076);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_io_IOException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -872,7 +872,7 @@ void java_net_SocketImpl_shutdownOutput__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("SocketImpl.java", 312)
     _r0.o = __NEW_java_io_IOException();
     // "luni.72"
-    _r1.o = xmlvm_create_java_string_from_pool(1073);
+    _r1.o = xmlvm_create_java_string_from_pool(1076);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_io_IOException___INIT____java_lang_String(_r0.o, _r1.o);

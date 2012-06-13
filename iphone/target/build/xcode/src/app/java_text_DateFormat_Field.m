@@ -753,7 +753,7 @@ JAVA_OBJECT java_text_DateFormat_Field_ofCalendarField___int(JAVA_INT n1)
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT___(_r1.o);
     // "no such calendar field ("
-    _r2.o = xmlvm_create_java_string_from_pool(1475);
+    _r2.o = xmlvm_create_java_string_from_pool(1478);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(1)
@@ -827,7 +827,7 @@ JAVA_OBJECT java_text_DateFormat_Field_readResolve__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuilder___INIT___(_r3.o);
     // "no such DateFormat field called "
-    _r4.o = xmlvm_create_java_string_from_pool(1476);
+    _r4.o = xmlvm_create_java_string_from_pool(1479);
     XMLVM_CHECK_NPE(3)
     _r3.o = java_lang_StringBuilder_append___java_lang_String(_r3.o, _r4.o);
     XMLVM_CHECK_NPE(3)
@@ -861,28 +861,28 @@ void java_text_DateFormat_Field___CLINIT_()
     XMLVM_SOURCE_POSITION("DateFormat.java", 229)
     _r0.o = __NEW_java_text_DateFormat_Field();
     // "era"
-    _r1.o = xmlvm_create_java_string_from_pool(1477);
+    _r1.o = xmlvm_create_java_string_from_pool(1480);
     XMLVM_CHECK_NPE(0)
     java_text_DateFormat_Field___INIT____java_lang_String_int(_r0.o, _r1.o, _r5.i);
     java_text_DateFormat_Field_PUT_ERA( _r0.o);
     XMLVM_SOURCE_POSITION("DateFormat.java", 231)
     _r0.o = __NEW_java_text_DateFormat_Field();
     // "year"
-    _r1.o = xmlvm_create_java_string_from_pool(1478);
+    _r1.o = xmlvm_create_java_string_from_pool(1481);
     XMLVM_CHECK_NPE(0)
     java_text_DateFormat_Field___INIT____java_lang_String_int(_r0.o, _r1.o, _r6.i);
     java_text_DateFormat_Field_PUT_YEAR( _r0.o);
     XMLVM_SOURCE_POSITION("DateFormat.java", 233)
     _r0.o = __NEW_java_text_DateFormat_Field();
     // "month"
-    _r1.o = xmlvm_create_java_string_from_pool(1479);
+    _r1.o = xmlvm_create_java_string_from_pool(1482);
     XMLVM_CHECK_NPE(0)
     java_text_DateFormat_Field___INIT____java_lang_String_int(_r0.o, _r1.o, _r7.i);
     java_text_DateFormat_Field_PUT_MONTH( _r0.o);
     XMLVM_SOURCE_POSITION("DateFormat.java", 235)
     _r0.o = __NEW_java_text_DateFormat_Field();
     // "day of month"
-    _r1.o = xmlvm_create_java_string_from_pool(1480);
+    _r1.o = xmlvm_create_java_string_from_pool(1483);
     _r2.i = 5;
     XMLVM_CHECK_NPE(0)
     java_text_DateFormat_Field___INIT____java_lang_String_int(_r0.o, _r1.o, _r2.i);
@@ -890,21 +890,21 @@ void java_text_DateFormat_Field___CLINIT_()
     XMLVM_SOURCE_POSITION("DateFormat.java", 237)
     _r0.o = __NEW_java_text_DateFormat_Field();
     // "hour of day 1"
-    _r1.o = xmlvm_create_java_string_from_pool(1481);
+    _r1.o = xmlvm_create_java_string_from_pool(1484);
     XMLVM_CHECK_NPE(0)
     java_text_DateFormat_Field___INIT____java_lang_String_int(_r0.o, _r1.o, _r4.i);
     java_text_DateFormat_Field_PUT_HOUR_OF_DAY1( _r0.o);
     XMLVM_SOURCE_POSITION("DateFormat.java", 239)
     _r0.o = __NEW_java_text_DateFormat_Field();
     // "hour of day 0"
-    _r1.o = xmlvm_create_java_string_from_pool(1482);
+    _r1.o = xmlvm_create_java_string_from_pool(1485);
     XMLVM_CHECK_NPE(0)
     java_text_DateFormat_Field___INIT____java_lang_String_int(_r0.o, _r1.o, _r4.i);
     java_text_DateFormat_Field_PUT_HOUR_OF_DAY0( _r0.o);
     XMLVM_SOURCE_POSITION("DateFormat.java", 241)
     _r0.o = __NEW_java_text_DateFormat_Field();
     // "minute"
-    _r1.o = xmlvm_create_java_string_from_pool(1483);
+    _r1.o = xmlvm_create_java_string_from_pool(1486);
     _r2.i = 12;
     XMLVM_CHECK_NPE(0)
     java_text_DateFormat_Field___INIT____java_lang_String_int(_r0.o, _r1.o, _r2.i);
@@ -912,7 +912,7 @@ void java_text_DateFormat_Field___CLINIT_()
     XMLVM_SOURCE_POSITION("DateFormat.java", 243)
     _r0.o = __NEW_java_text_DateFormat_Field();
     // "second"
-    _r1.o = xmlvm_create_java_string_from_pool(1484);
+    _r1.o = xmlvm_create_java_string_from_pool(1487);
     _r2.i = 13;
     XMLVM_CHECK_NPE(0)
     java_text_DateFormat_Field___INIT____java_lang_String_int(_r0.o, _r1.o, _r2.i);
@@ -920,7 +920,7 @@ void java_text_DateFormat_Field___CLINIT_()
     XMLVM_SOURCE_POSITION("DateFormat.java", 245)
     _r0.o = __NEW_java_text_DateFormat_Field();
     // "millisecond"
-    _r1.o = xmlvm_create_java_string_from_pool(1485);
+    _r1.o = xmlvm_create_java_string_from_pool(1488);
     _r2.i = 14;
     XMLVM_CHECK_NPE(0)
     java_text_DateFormat_Field___INIT____java_lang_String_int(_r0.o, _r1.o, _r2.i);
@@ -928,7 +928,7 @@ void java_text_DateFormat_Field___CLINIT_()
     XMLVM_SOURCE_POSITION("DateFormat.java", 247)
     _r0.o = __NEW_java_text_DateFormat_Field();
     // "day of week"
-    _r1.o = xmlvm_create_java_string_from_pool(1486);
+    _r1.o = xmlvm_create_java_string_from_pool(1489);
     _r2.i = 7;
     XMLVM_CHECK_NPE(0)
     java_text_DateFormat_Field___INIT____java_lang_String_int(_r0.o, _r1.o, _r2.i);
@@ -936,7 +936,7 @@ void java_text_DateFormat_Field___CLINIT_()
     XMLVM_SOURCE_POSITION("DateFormat.java", 249)
     _r0.o = __NEW_java_text_DateFormat_Field();
     // "day of year"
-    _r1.o = xmlvm_create_java_string_from_pool(1487);
+    _r1.o = xmlvm_create_java_string_from_pool(1490);
     _r2.i = 6;
     XMLVM_CHECK_NPE(0)
     java_text_DateFormat_Field___INIT____java_lang_String_int(_r0.o, _r1.o, _r2.i);
@@ -944,7 +944,7 @@ void java_text_DateFormat_Field___CLINIT_()
     XMLVM_SOURCE_POSITION("DateFormat.java", 251)
     _r0.o = __NEW_java_text_DateFormat_Field();
     // "day of week in month"
-    _r1.o = xmlvm_create_java_string_from_pool(1488);
+    _r1.o = xmlvm_create_java_string_from_pool(1491);
     _r2.i = 8;
     XMLVM_CHECK_NPE(0)
     java_text_DateFormat_Field___INIT____java_lang_String_int(_r0.o, _r1.o, _r2.i);
@@ -952,7 +952,7 @@ void java_text_DateFormat_Field___CLINIT_()
     XMLVM_SOURCE_POSITION("DateFormat.java", 253)
     _r0.o = __NEW_java_text_DateFormat_Field();
     // "week of year"
-    _r1.o = xmlvm_create_java_string_from_pool(1489);
+    _r1.o = xmlvm_create_java_string_from_pool(1492);
     _r2.i = 3;
     XMLVM_CHECK_NPE(0)
     java_text_DateFormat_Field___INIT____java_lang_String_int(_r0.o, _r1.o, _r2.i);
@@ -960,7 +960,7 @@ void java_text_DateFormat_Field___CLINIT_()
     XMLVM_SOURCE_POSITION("DateFormat.java", 255)
     _r0.o = __NEW_java_text_DateFormat_Field();
     // "week of month"
-    _r1.o = xmlvm_create_java_string_from_pool(1490);
+    _r1.o = xmlvm_create_java_string_from_pool(1493);
     _r2.i = 4;
     XMLVM_CHECK_NPE(0)
     java_text_DateFormat_Field___INIT____java_lang_String_int(_r0.o, _r1.o, _r2.i);
@@ -968,7 +968,7 @@ void java_text_DateFormat_Field___CLINIT_()
     XMLVM_SOURCE_POSITION("DateFormat.java", 257)
     _r0.o = __NEW_java_text_DateFormat_Field();
     // "am/pm"
-    _r1.o = xmlvm_create_java_string_from_pool(1491);
+    _r1.o = xmlvm_create_java_string_from_pool(1494);
     _r2.i = 9;
     XMLVM_CHECK_NPE(0)
     java_text_DateFormat_Field___INIT____java_lang_String_int(_r0.o, _r1.o, _r2.i);
@@ -976,21 +976,21 @@ void java_text_DateFormat_Field___CLINIT_()
     XMLVM_SOURCE_POSITION("DateFormat.java", 259)
     _r0.o = __NEW_java_text_DateFormat_Field();
     // "hour1"
-    _r1.o = xmlvm_create_java_string_from_pool(1492);
+    _r1.o = xmlvm_create_java_string_from_pool(1495);
     XMLVM_CHECK_NPE(0)
     java_text_DateFormat_Field___INIT____java_lang_String_int(_r0.o, _r1.o, _r3.i);
     java_text_DateFormat_Field_PUT_HOUR1( _r0.o);
     XMLVM_SOURCE_POSITION("DateFormat.java", 261)
     _r0.o = __NEW_java_text_DateFormat_Field();
     // "hour0"
-    _r1.o = xmlvm_create_java_string_from_pool(1493);
+    _r1.o = xmlvm_create_java_string_from_pool(1496);
     XMLVM_CHECK_NPE(0)
     java_text_DateFormat_Field___INIT____java_lang_String_int(_r0.o, _r1.o, _r3.i);
     java_text_DateFormat_Field_PUT_HOUR0( _r0.o);
     XMLVM_SOURCE_POSITION("DateFormat.java", 263)
     _r0.o = __NEW_java_text_DateFormat_Field();
     // "timezone"
-    _r1.o = xmlvm_create_java_string_from_pool(1494);
+    _r1.o = xmlvm_create_java_string_from_pool(1497);
     _r2.i = 15;
     XMLVM_CHECK_NPE(0)
     java_text_DateFormat_Field___INIT____java_lang_String_int(_r0.o, _r1.o, _r2.i);

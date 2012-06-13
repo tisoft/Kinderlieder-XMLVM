@@ -452,7 +452,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForWildcard_toString__(JAVA
     if (_r1.i <= 0) goto label31;
     XMLVM_SOURCE_POSITION("ImplForWildcard.java", 63)
     // " extends "
-    _r1.o = xmlvm_create_java_string_from_pool(3278);
+    _r1.o = xmlvm_create_java_string_from_pool(3281);
     XMLVM_CHECK_NPE(0)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     _r2.o = ((org_apache_harmony_luni_lang_reflect_ImplForWildcard*) _r3.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForWildcard.extendsBound_;
@@ -473,7 +473,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForWildcard_toString__(JAVA
     if (_r1.i <= 0) goto label26;
     XMLVM_SOURCE_POSITION("ImplForWildcard.java", 65)
     // " super "
-    _r1.o = xmlvm_create_java_string_from_pool(3279);
+    _r1.o = xmlvm_create_java_string_from_pool(3282);
     XMLVM_CHECK_NPE(0)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     _r2.o = ((org_apache_harmony_luni_lang_reflect_ImplForWildcard*) _r3.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForWildcard.superBound_;

@@ -1024,10 +1024,10 @@ void __INIT_IMPL_org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLC
     __TIB_org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.implementedInterfaces = (__TIB_DEFINITION_TEMPLATE* (*)[1]) XMLVM_MALLOC(sizeof(__TIB_DEFINITION_TEMPLATE*) * 0);
 
     // Initialize interfaces if necessary and assign tib to implementedInterfaces
-    _STATIC_org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl_POST = (java_lang_String*) xmlvm_create_java_string_from_pool(1139);
-    _STATIC_org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl_GET = (java_lang_String*) xmlvm_create_java_string_from_pool(1135);
+    _STATIC_org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl_POST = (java_lang_String*) xmlvm_create_java_string_from_pool(1142);
+    _STATIC_org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl_GET = (java_lang_String*) xmlvm_create_java_string_from_pool(1138);
     _STATIC_org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl_PUT = (java_lang_String*) xmlvm_create_java_string_from_pool(831);
-    _STATIC_org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl_HEAD = (java_lang_String*) xmlvm_create_java_string_from_pool(1137);
+    _STATIC_org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl_HEAD = (java_lang_String*) xmlvm_create_java_string_from_pool(1140);
     _STATIC_org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl_defaultReqHeader = (org_apache_harmony_luni_internal_net_www_protocol_http_Header*) JAVA_NULL;
 
     __TIB_org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.declaredFields = &__field_reflection_data[0];
@@ -1211,7 +1211,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r0.o)->tib->vtable[0])(_r0.o);
     _r0.o = _r0.o;
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r1.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.reqHeader_ = _r0.o;
-    XMLVM_TRY_BEGIN(w24357aaac28b1c19)
+    XMLVM_TRY_BEGIN(w24388aaac28b1c19)
     // Begin try
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 572)
     XMLVM_CHECK_NPE(2)
@@ -1219,10 +1219,10 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r1.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.uri_ = _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w24357aaac28b1c19)
-        XMLVM_CATCH_SPECIFIC(w24357aaac28b1c19,java_net_URISyntaxException,34)
-    XMLVM_CATCH_END(w24357aaac28b1c19)
-    XMLVM_RESTORE_EXCEPTION_ENV(w24357aaac28b1c19)
+    XMLVM_CATCH_BEGIN(w24388aaac28b1c19)
+        XMLVM_CATCH_SPECIFIC(w24388aaac28b1c19,java_net_URISyntaxException,34)
+    XMLVM_CATCH_END(w24388aaac28b1c19)
+    XMLVM_RESTORE_EXCEPTION_ENV(w24388aaac28b1c19)
     label27:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 576)
     _r0.o = java_net_ResponseCache_getDefault__();
@@ -1232,8 +1232,8 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     return;
     label34:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 573)
-    java_lang_Thread* curThread_w24357aaac28b1c28 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w24357aaac28b1c28->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w24388aaac28b1c28 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w24388aaac28b1c28->fields.java_lang_Thread.xmlvmException_;
     goto label27;
     //XMLVM_END_WRAPPER
 }
@@ -1288,7 +1288,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     XMLVM_CHECK_NPE(8)
     _r5.i = org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl_getFromCache__(_r8.o);
     if (_r5.i != 0) goto label5;
-    XMLVM_TRY_BEGIN(w24357aaac30b1c13)
+    XMLVM_TRY_BEGIN(w24388aaac30b1c13)
     // Begin try
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 621)
     _r5.o = __NEW_java_net_URL();
@@ -1307,10 +1307,10 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r8.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.uri_ = _r5.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w24357aaac30b1c13)
-        XMLVM_CATCH_SPECIFIC(w24357aaac30b1c13,java_net_URISyntaxException,136)
-    XMLVM_CATCH_END(w24357aaac30b1c13)
-    XMLVM_RESTORE_EXCEPTION_ENV(w24357aaac30b1c13)
+    XMLVM_CATCH_BEGIN(w24388aaac30b1c13)
+        XMLVM_CATCH_SPECIFIC(w24388aaac30b1c13,java_net_URISyntaxException,136)
+    XMLVM_CATCH_END(w24388aaac30b1c13)
+    XMLVM_RESTORE_EXCEPTION_ENV(w24388aaac30b1c13)
     label37:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 627)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r8.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.connection_ = _r7.o;
@@ -1370,7 +1370,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     _r5.o = java_net_Proxy_type__(_r3.o);
     _r6.o = java_net_Proxy_Type_GET_DIRECT();
     if (_r5.o == _r6.o) goto label95;
-    XMLVM_TRY_BEGIN(w24357aaac30b1c62)
+    XMLVM_TRY_BEGIN(w24388aaac30b1c62)
     // Begin try
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 646)
     XMLVM_CHECK_NPE(8)
@@ -1380,15 +1380,15 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r8.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.proxy_ = _r3.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w24357aaac30b1c62)
-        XMLVM_CATCH_SPECIFIC(w24357aaac30b1c62,java_io_IOException,124)
-    XMLVM_CATCH_END(w24357aaac30b1c62)
-    XMLVM_RESTORE_EXCEPTION_ENV(w24357aaac30b1c62)
+    XMLVM_CATCH_BEGIN(w24388aaac30b1c62)
+        XMLVM_CATCH_SPECIFIC(w24388aaac30b1c62,java_io_IOException,124)
+    XMLVM_CATCH_END(w24388aaac30b1c62)
+    XMLVM_RESTORE_EXCEPTION_ENV(w24388aaac30b1c62)
     goto label51;
     label124:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 649)
-    java_lang_Thread* curThread_w24357aaac30b1c66 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r5.o = curThread_w24357aaac30b1c66->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w24388aaac30b1c66 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r5.o = curThread_w24388aaac30b1c66->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r5;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 651)
     _r5.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r8.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.uri_;
@@ -1400,8 +1400,8 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     goto label95;
     label136:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 623)
-    java_lang_Thread* curThread_w24357aaac30b1c75 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r5.o = curThread_w24357aaac30b1c75->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w24388aaac30b1c75 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r5.o = curThread_w24388aaac30b1c75->fields.java_lang_Thread.xmlvmException_;
     goto label37;
     //XMLVM_END_WRAPPER
 }
@@ -1711,7 +1711,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     if (_r0.i == 0) goto label19;
     _r0.o = ((java_net_HttpURLConnection*) _r2.o)->fields.java_net_HttpURLConnection.method_;
     // "HEAD"
-    _r1.o = xmlvm_create_java_string_from_pool(1137);
+    _r1.o = xmlvm_create_java_string_from_pool(1140);
     if (_r0.o == _r1.o) goto label19;
     _r0.i = ((java_net_HttpURLConnection*) _r2.o)->fields.java_net_HttpURLConnection.responseCode_;
     _r1.i = 400;
@@ -1737,7 +1737,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     XMLVMElem _r2;
     _r1.o = me;
     _r2.i = n1;
-    XMLVM_TRY_BEGIN(w24357aaac40b1b3)
+    XMLVM_TRY_BEGIN(w24388aaac40b1b3)
     // Begin try
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 796)
     //org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl_getInputStream__[13]
@@ -1745,10 +1745,10 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r1.o)->tib->vtable[13])(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w24357aaac40b1b3)
-        XMLVM_CATCH_SPECIFIC(w24357aaac40b1b3,java_io_IOException,16)
-    XMLVM_CATCH_END(w24357aaac40b1b3)
-    XMLVM_RESTORE_EXCEPTION_ENV(w24357aaac40b1b3)
+    XMLVM_CATCH_BEGIN(w24388aaac40b1b3)
+        XMLVM_CATCH_SPECIFIC(w24388aaac40b1b3,java_io_IOException,16)
+    XMLVM_CATCH_END(w24388aaac40b1b3)
+    XMLVM_RESTORE_EXCEPTION_ENV(w24388aaac40b1b3)
     label3:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 800)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r1.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.resHeader_;
@@ -1766,8 +1766,8 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     goto label8;
     label16:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 797)
-    java_lang_Thread* curThread_w24357aaac40b1c19 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w24357aaac40b1c19->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w24388aaac40b1c19 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w24388aaac40b1c19->fields.java_lang_Thread.xmlvmException_;
     goto label3;
     //XMLVM_END_WRAPPER
 }
@@ -1781,7 +1781,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     XMLVMElem _r2;
     _r1.o = me;
     _r2.o = n1;
-    XMLVM_TRY_BEGIN(w24357aaac41b1b3)
+    XMLVM_TRY_BEGIN(w24388aaac41b1b3)
     // Begin try
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 823)
     //org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl_getInputStream__[13]
@@ -1789,10 +1789,10 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r1.o)->tib->vtable[13])(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w24357aaac41b1b3)
-        XMLVM_CATCH_SPECIFIC(w24357aaac41b1b3,java_io_IOException,16)
-    XMLVM_CATCH_END(w24357aaac41b1b3)
-    XMLVM_RESTORE_EXCEPTION_ENV(w24357aaac41b1b3)
+    XMLVM_CATCH_BEGIN(w24388aaac41b1b3)
+        XMLVM_CATCH_SPECIFIC(w24388aaac41b1b3,java_io_IOException,16)
+    XMLVM_CATCH_END(w24388aaac41b1b3)
+    XMLVM_RESTORE_EXCEPTION_ENV(w24388aaac41b1b3)
     label3:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 827)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r1.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.resHeader_;
@@ -1810,8 +1810,8 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     goto label8;
     label16:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 824)
-    java_lang_Thread* curThread_w24357aaac41b1c19 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w24357aaac41b1c19->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w24388aaac41b1c19 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w24388aaac41b1c19->fields.java_lang_Thread.xmlvmException_;
     goto label3;
     //XMLVM_END_WRAPPER
 }
@@ -1825,7 +1825,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     XMLVMElem _r2;
     _r1.o = me;
     _r2.i = n1;
-    XMLVM_TRY_BEGIN(w24357aaac42b1b3)
+    XMLVM_TRY_BEGIN(w24388aaac42b1b3)
     // Begin try
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 836)
     //org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl_getInputStream__[13]
@@ -1833,10 +1833,10 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r1.o)->tib->vtable[13])(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w24357aaac42b1b3)
-        XMLVM_CATCH_SPECIFIC(w24357aaac42b1b3,java_io_IOException,16)
-    XMLVM_CATCH_END(w24357aaac42b1b3)
-    XMLVM_RESTORE_EXCEPTION_ENV(w24357aaac42b1b3)
+    XMLVM_CATCH_BEGIN(w24388aaac42b1b3)
+        XMLVM_CATCH_SPECIFIC(w24388aaac42b1b3,java_io_IOException,16)
+    XMLVM_CATCH_END(w24388aaac42b1b3)
+    XMLVM_RESTORE_EXCEPTION_ENV(w24388aaac42b1b3)
     label3:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 840)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r1.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.resHeader_;
@@ -1854,8 +1854,8 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     goto label8;
     label16:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 837)
-    java_lang_Thread* curThread_w24357aaac42b1c19 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w24357aaac42b1c19->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w24388aaac42b1c19 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w24388aaac42b1c19->fields.java_lang_Thread.xmlvmException_;
     goto label3;
     //XMLVM_END_WRAPPER
 }
@@ -1867,7 +1867,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     XMLVMElem _r0;
     XMLVMElem _r1;
     _r1.o = me;
-    XMLVM_TRY_BEGIN(w24357aaac43b1b2)
+    XMLVM_TRY_BEGIN(w24388aaac43b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 859)
     //org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl_getInputStream__[13]
@@ -1875,10 +1875,10 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r1.o)->tib->vtable[13])(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w24357aaac43b1b2)
-        XMLVM_CATCH_SPECIFIC(w24357aaac43b1b2,java_io_IOException,16)
-    XMLVM_CATCH_END(w24357aaac43b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w24357aaac43b1b2)
+    XMLVM_CATCH_BEGIN(w24388aaac43b1b2)
+        XMLVM_CATCH_SPECIFIC(w24388aaac43b1b2,java_io_IOException,16)
+    XMLVM_CATCH_END(w24388aaac43b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w24388aaac43b1b2)
     label3:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 863)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r1.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.resHeader_;
@@ -1896,8 +1896,8 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     goto label8;
     label16:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 860)
-    java_lang_Thread* curThread_w24357aaac43b1c18 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w24357aaac43b1c18->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w24388aaac43b1c18 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w24388aaac43b1c18->fields.java_lang_Thread.xmlvmException_;
     goto label3;
     //XMLVM_END_WRAPPER
 }
@@ -1916,7 +1916,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 872)
     _r0.o = __NEW_java_lang_IllegalStateException();
     // "luni.27"
-    _r1.o = xmlvm_create_java_string_from_pool(1890);
+    _r1.o = xmlvm_create_java_string_from_pool(1893);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalStateException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -1945,7 +1945,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 880)
     _r0.o = __NEW_java_net_ProtocolException();
     // "luni.28"
-    _r1.o = xmlvm_create_java_string_from_pool(1891);
+    _r1.o = xmlvm_create_java_string_from_pool(1894);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_net_ProtocolException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -2003,7 +2003,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 905)
     _r3.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r5.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.resHeader_;
     // "Transfer-Encoding"
-    _r4.o = xmlvm_create_java_string_from_pool(1892);
+    _r4.o = xmlvm_create_java_string_from_pool(1895);
     XMLVM_CHECK_NPE(3)
     _r0.o = org_apache_harmony_luni_internal_net_www_protocol_http_Header_get___java_lang_String(_r3.o, _r4.o);
     if (_r0.o == JAVA_NULL) goto label37;
@@ -2011,7 +2011,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     XMLVM_CHECK_NPE(0)
     _r3.o = java_lang_String_toLowerCase__(_r0.o);
     // "chunked"
-    _r4.o = xmlvm_create_java_string_from_pool(1893);
+    _r4.o = xmlvm_create_java_string_from_pool(1896);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(3)
     _r3.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r3.o)->tib->vtable[1])(_r3.o, _r4.o);
@@ -2026,11 +2026,11 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 910)
     _r3.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r5.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.resHeader_;
     // "Content-Length"
-    _r4.o = xmlvm_create_java_string_from_pool(1894);
+    _r4.o = xmlvm_create_java_string_from_pool(1897);
     XMLVM_CHECK_NPE(3)
     _r2.o = org_apache_harmony_luni_internal_net_www_protocol_http_Header_get___java_lang_String(_r3.o, _r4.o);
     if (_r2.o == JAVA_NULL) goto label60;
-    XMLVM_TRY_BEGIN(w24357aaac46b1c32)
+    XMLVM_TRY_BEGIN(w24388aaac46b1c32)
     // Begin try
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 911)
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 913)
@@ -2042,15 +2042,15 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r5.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.uis_ = _r3.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w24357aaac46b1c32)
-        XMLVM_CATCH_SPECIFIC(w24357aaac46b1c32,java_lang_NumberFormatException,59)
-    XMLVM_CATCH_END(w24357aaac46b1c32)
-    XMLVM_RESTORE_EXCEPTION_ENV(w24357aaac46b1c32)
+    XMLVM_CATCH_BEGIN(w24388aaac46b1c32)
+        XMLVM_CATCH_SPECIFIC(w24388aaac46b1c32,java_lang_NumberFormatException,59)
+    XMLVM_CATCH_END(w24388aaac46b1c32)
+    XMLVM_RESTORE_EXCEPTION_ENV(w24388aaac46b1c32)
     goto label6;
     label59:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 915)
-    java_lang_Thread* curThread_w24357aaac46b1c36 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r3.o = curThread_w24357aaac46b1c36->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w24388aaac46b1c36 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r3.o = curThread_w24388aaac46b1c36->fields.java_lang_Thread.xmlvmException_;
     label60:;
     _r3.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r5.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.is_;
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r5.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.uis_ = _r3.o;
@@ -2074,14 +2074,14 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     _r8.o = me;
     _r6.i = 1;
     // "POST"
-    _r7.o = xmlvm_create_java_string_from_pool(1139);
+    _r7.o = xmlvm_create_java_string_from_pool(1142);
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 923)
     _r4.i = ((java_net_URLConnection*) _r8.o)->fields.java_net_URLConnection.doOutput_;
     if (_r4.i != 0) goto label19;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 924)
     _r4.o = __NEW_java_net_ProtocolException();
     // "luni.29"
-    _r5.o = xmlvm_create_java_string_from_pool(1895);
+    _r5.o = xmlvm_create_java_string_from_pool(1898);
     _r5.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r5.o);
     XMLVM_CHECK_NPE(4)
     java_net_ProtocolException___INIT____java_lang_String(_r4.o, _r5.o);
@@ -2093,7 +2093,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 929)
     _r4.o = __NEW_java_net_ProtocolException();
     // "luni.2A"
-    _r5.o = xmlvm_create_java_string_from_pool(1896);
+    _r5.o = xmlvm_create_java_string_from_pool(1899);
     _r5.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r5.o);
     XMLVM_CHECK_NPE(4)
     java_net_ProtocolException___INIT____java_lang_String(_r4.o, _r5.o);
@@ -2112,11 +2112,11 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 937)
     _r4.o = ((java_net_HttpURLConnection*) _r8.o)->fields.java_net_HttpURLConnection.method_;
     // "GET"
-    _r5.o = xmlvm_create_java_string_from_pool(1135);
+    _r5.o = xmlvm_create_java_string_from_pool(1138);
     if (_r4.o != _r5.o) goto label52;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 938)
     // "POST"
-    _r4.o = xmlvm_create_java_string_from_pool(1139);
+    _r4.o = xmlvm_create_java_string_from_pool(1142);
     ((java_net_HttpURLConnection*) _r8.o)->fields.java_net_HttpURLConnection.method_ = _r7.o;
     label52:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 942)
@@ -2126,12 +2126,12 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     if (_r4.o == _r5.o) goto label78;
     _r4.o = ((java_net_HttpURLConnection*) _r8.o)->fields.java_net_HttpURLConnection.method_;
     // "POST"
-    _r5.o = xmlvm_create_java_string_from_pool(1139);
+    _r5.o = xmlvm_create_java_string_from_pool(1142);
     if (_r4.o == _r7.o) goto label78;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 943)
     _r4.o = __NEW_java_net_ProtocolException();
     // "luni.2B"
-    _r5.o = xmlvm_create_java_string_from_pool(1897);
+    _r5.o = xmlvm_create_java_string_from_pool(1900);
     _r6.o = ((java_net_HttpURLConnection*) _r8.o)->fields.java_net_HttpURLConnection.method_;
     _r5.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object(_r5.o, _r6.o);
     XMLVM_CHECK_NPE(4)
@@ -2143,7 +2143,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 947)
     _r4.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r8.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.reqHeader_;
     // "Content-Length"
-    _r5.o = xmlvm_create_java_string_from_pool(1894);
+    _r5.o = xmlvm_create_java_string_from_pool(1897);
     XMLVM_CHECK_NPE(4)
     _r0.o = org_apache_harmony_luni_internal_net_www_protocol_http_Header_get___java_lang_String(_r4.o, _r5.o);
     if (_r0.o == JAVA_NULL) goto label93;
@@ -2154,7 +2154,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 952)
     _r4.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r8.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.reqHeader_;
     // "Transfer-Encoding"
-    _r5.o = xmlvm_create_java_string_from_pool(1892);
+    _r5.o = xmlvm_create_java_string_from_pool(1895);
     XMLVM_CHECK_NPE(4)
     _r1.o = org_apache_harmony_luni_internal_net_www_protocol_http_Header_get___java_lang_String(_r4.o, _r5.o);
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 953)
@@ -2166,7 +2166,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     _r1.o = java_lang_String_toLowerCase__(_r1.o);
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 955)
     // "chunked"
-    _r4.o = xmlvm_create_java_string_from_pool(1893);
+    _r4.o = xmlvm_create_java_string_from_pool(1896);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(4)
     _r4.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r1.o);
@@ -2499,7 +2499,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1086)
     _r1.o = ((java_net_HttpURLConnection*) _r4.o)->fields.java_net_HttpURLConnection.method_;
     // "HEAD"
-    _r2.o = xmlvm_create_java_string_from_pool(1137);
+    _r2.o = xmlvm_create_java_string_from_pool(1140);
     if (_r1.o == _r2.o) goto label72;
     _r1.i = ((java_net_HttpURLConnection*) _r4.o)->fields.java_net_HttpURLConnection.responseCode_;
     if (_r1.i < _r3.i) goto label60;
@@ -2570,7 +2570,7 @@ JAVA_INT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectio
     if (_r2.o == JAVA_NULL) goto label30;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1106)
     // "HTTP/"
-    _r3.o = xmlvm_create_java_string_from_pool(1898);
+    _r3.o = xmlvm_create_java_string_from_pool(1901);
     XMLVM_CHECK_NPE(2)
     _r3.i = java_lang_String_startsWith___java_lang_String(_r2.o, _r3.o);
     if (_r3.i != 0) goto label32;
@@ -2717,9 +2717,9 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     _r12.o = me;
     _r9.i = 32;
     // "content-length"
-    _r11.o = xmlvm_create_java_string_from_pool(1899);
+    _r11.o = xmlvm_create_java_string_from_pool(1902);
     // "\015\012"
-    _r10.o = xmlvm_create_java_string_from_pool(1900);
+    _r10.o = xmlvm_create_java_string_from_pool(1903);
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1144)
     _r5.o = __NEW_java_lang_StringBuilder();
     _r8.i = 256;
@@ -2744,7 +2744,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r5.o)->tib->vtable[21])(_r5.o, _r9.i);
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1149)
     // "HTTP/1."
-    _r8.o = xmlvm_create_java_string_from_pool(1901);
+    _r8.o = xmlvm_create_java_string_from_pool(1904);
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder_append___java_lang_String(_r5.o, _r8.o);
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1150)
@@ -2752,7 +2752,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     if (_r8.i != 0) goto label141;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1151)
     // "0\015\012"
-    _r8.o = xmlvm_create_java_string_from_pool(1902);
+    _r8.o = xmlvm_create_java_string_from_pool(1905);
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder_append___java_lang_String(_r5.o, _r8.o);
     label45:;
@@ -2783,13 +2783,13 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     if (_r8.i == 0) goto label95;
     label79:;
     // "transfer-encoding"
-    _r8.o = xmlvm_create_java_string_from_pool(1903);
+    _r8.o = xmlvm_create_java_string_from_pool(1906);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(4)
     _r8.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r8.o);
     if (_r8.i != 0) goto label138;
     // "content-length"
-    _r8.o = xmlvm_create_java_string_from_pool(1899);
+    _r8.o = xmlvm_create_java_string_from_pool(1902);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(4)
     _r8.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r11.o);
@@ -2804,7 +2804,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     _r7.o = org_apache_harmony_luni_internal_net_www_protocol_http_Header_get___int(_r8.o, _r2.i);
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1170)
     // "content-length"
-    _r8.o = xmlvm_create_java_string_from_pool(1899);
+    _r8.o = xmlvm_create_java_string_from_pool(1902);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(4)
     _r8.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r11.o);
@@ -2831,7 +2831,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     label133:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1184)
     // "\015\012"
-    _r8.o = xmlvm_create_java_string_from_pool(1900);
+    _r8.o = xmlvm_create_java_string_from_pool(1903);
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder_append___java_lang_String(_r5.o, _r10.o);
     label138:;
@@ -2840,7 +2840,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     label141:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1153)
     // "1\015\012"
-    _r8.o = xmlvm_create_java_string_from_pool(1904);
+    _r8.o = xmlvm_create_java_string_from_pool(1907);
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder_append___java_lang_String(_r5.o, _r8.o);
     goto label45;
@@ -2851,7 +2851,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     if (_r1.i != 0) goto label172;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1189)
     // "content-length: "
-    _r8.o = xmlvm_create_java_string_from_pool(1905);
+    _r8.o = xmlvm_create_java_string_from_pool(1908);
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder_append___java_lang_String(_r5.o, _r8.o);
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1190)
@@ -2861,37 +2861,37 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     java_lang_StringBuilder_append___java_lang_String(_r5.o, _r8.o);
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1191)
     // "\015\012"
-    _r8.o = xmlvm_create_java_string_from_pool(1900);
+    _r8.o = xmlvm_create_java_string_from_pool(1903);
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder_append___java_lang_String(_r5.o, _r10.o);
     label172:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1194)
     _r8.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r12.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.reqHeader_;
     // "User-Agent"
-    _r9.o = xmlvm_create_java_string_from_pool(1906);
+    _r9.o = xmlvm_create_java_string_from_pool(1909);
     XMLVM_CHECK_NPE(8)
     _r8.o = org_apache_harmony_luni_internal_net_www_protocol_http_Header_get___java_lang_String(_r8.o, _r9.o);
     if (_r8.o != JAVA_NULL) goto label214;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1195)
     // "User-Agent: "
-    _r8.o = xmlvm_create_java_string_from_pool(1907);
+    _r8.o = xmlvm_create_java_string_from_pool(1910);
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder_append___java_lang_String(_r5.o, _r8.o);
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1196)
     // "http.agent"
-    _r8.o = xmlvm_create_java_string_from_pool(1908);
+    _r8.o = xmlvm_create_java_string_from_pool(1911);
     XMLVM_CHECK_NPE(12)
     _r0.o = org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl_getSystemProperty___java_lang_String(_r12.o, _r8.o);
     if (_r0.o != JAVA_NULL) goto label377;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1197)
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1198)
     // "Java"
-    _r8.o = xmlvm_create_java_string_from_pool(1909);
+    _r8.o = xmlvm_create_java_string_from_pool(1912);
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder_append___java_lang_String(_r5.o, _r8.o);
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1199)
     // "java.version"
-    _r8.o = xmlvm_create_java_string_from_pool(1910);
+    _r8.o = xmlvm_create_java_string_from_pool(1913);
     XMLVM_CHECK_NPE(12)
     _r8.o = org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl_getSystemProperty___java_lang_String(_r12.o, _r8.o);
     XMLVM_CHECK_NPE(5)
@@ -2899,20 +2899,20 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     label209:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1203)
     // "\015\012"
-    _r8.o = xmlvm_create_java_string_from_pool(1900);
+    _r8.o = xmlvm_create_java_string_from_pool(1903);
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder_append___java_lang_String(_r5.o, _r10.o);
     label214:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1205)
     _r8.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r12.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.reqHeader_;
     // "Host"
-    _r9.o = xmlvm_create_java_string_from_pool(1911);
+    _r9.o = xmlvm_create_java_string_from_pool(1914);
     XMLVM_CHECK_NPE(8)
     _r8.o = org_apache_harmony_luni_internal_net_www_protocol_http_Header_get___java_lang_String(_r8.o, _r9.o);
     if (_r8.o != JAVA_NULL) goto label267;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1206)
     // "Host: "
-    _r8.o = xmlvm_create_java_string_from_pool(1912);
+    _r8.o = xmlvm_create_java_string_from_pool(1915);
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder_append___java_lang_String(_r5.o, _r8.o);
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1207)
@@ -2941,7 +2941,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     label262:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1213)
     // "\015\012"
-    _r8.o = xmlvm_create_java_string_from_pool(1900);
+    _r8.o = xmlvm_create_java_string_from_pool(1903);
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder_append___java_lang_String(_r5.o, _r10.o);
     label267:;
@@ -2954,7 +2954,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     if (_r8.o != JAVA_NULL) goto label282;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1216)
     // "Accept: *; */*\015\012"
-    _r8.o = xmlvm_create_java_string_from_pool(1913);
+    _r8.o = xmlvm_create_java_string_from_pool(1916);
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder_append___java_lang_String(_r5.o, _r8.o);
     label282:;
@@ -2963,13 +2963,13 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     if (_r8.i <= 0) goto label301;
     _r8.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r12.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.reqHeader_;
     // "Connection"
-    _r9.o = xmlvm_create_java_string_from_pool(1914);
+    _r9.o = xmlvm_create_java_string_from_pool(1917);
     XMLVM_CHECK_NPE(8)
     _r8.o = org_apache_harmony_luni_internal_net_www_protocol_http_Header_get___java_lang_String(_r8.o, _r9.o);
     if (_r8.o != JAVA_NULL) goto label301;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1219)
     // "Connection: Keep-Alive\015\012"
-    _r8.o = xmlvm_create_java_string_from_pool(1915);
+    _r8.o = xmlvm_create_java_string_from_pool(1918);
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder_append___java_lang_String(_r5.o, _r8.o);
     label301:;
@@ -2979,13 +2979,13 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1224)
     _r8.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r12.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.reqHeader_;
     // "Content-Type"
-    _r9.o = xmlvm_create_java_string_from_pool(1711);
+    _r9.o = xmlvm_create_java_string_from_pool(1714);
     XMLVM_CHECK_NPE(8)
     _r8.o = org_apache_harmony_luni_internal_net_www_protocol_http_Header_get___java_lang_String(_r8.o, _r9.o);
     if (_r8.o != JAVA_NULL) goto label320;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1225)
     // "Content-Type: application/x-www-form-urlencoded\015\012"
-    _r8.o = xmlvm_create_java_string_from_pool(1916);
+    _r8.o = xmlvm_create_java_string_from_pool(1919);
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder_append___java_lang_String(_r5.o, _r8.o);
     label320:;
@@ -2997,13 +2997,13 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1228)
     _r8.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r12.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.reqHeader_;
     // "Content-Length"
-    _r9.o = xmlvm_create_java_string_from_pool(1894);
+    _r9.o = xmlvm_create_java_string_from_pool(1897);
     XMLVM_CHECK_NPE(8)
     _r8.o = org_apache_harmony_luni_internal_net_www_protocol_http_Header_get___java_lang_String(_r8.o, _r9.o);
     if (_r8.o != JAVA_NULL) goto label361;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1229)
     // "Content-Length: "
-    _r8.o = xmlvm_create_java_string_from_pool(1917);
+    _r8.o = xmlvm_create_java_string_from_pool(1920);
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder_append___java_lang_String(_r5.o, _r8.o);
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1230)
@@ -3015,13 +3015,13 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     java_lang_StringBuilder_append___java_lang_String(_r5.o, _r8.o);
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1231)
     // "\015\012"
-    _r8.o = xmlvm_create_java_string_from_pool(1900);
+    _r8.o = xmlvm_create_java_string_from_pool(1903);
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder_append___java_lang_String(_r5.o, _r10.o);
     label361:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1238)
     // "\015\012"
-    _r8.o = xmlvm_create_java_string_from_pool(1900);
+    _r8.o = xmlvm_create_java_string_from_pool(1903);
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder_append___java_lang_String(_r5.o, _r10.o);
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1239)
@@ -3047,7 +3047,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     if (_r8.i == 0) goto label361;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1234)
     // "Transfer-Encoding: chunked\015\012"
-    _r8.o = xmlvm_create_java_string_from_pool(1918);
+    _r8.o = xmlvm_create_java_string_from_pool(1921);
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder_append___java_lang_String(_r5.o, _r8.o);
     goto label361;
@@ -3093,7 +3093,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1272)
     _r1.o = __NEW_java_text_SimpleDateFormat();
     // "E, dd MMM yyyy HH:mm:ss 'GMT'"
-    _r2.o = xmlvm_create_java_string_from_pool(1919);
+    _r2.o = xmlvm_create_java_string_from_pool(1922);
     _r3.o = java_util_Locale_GET_US();
     XMLVM_CHECK_NPE(1)
     java_text_SimpleDateFormat___INIT____java_lang_String_java_util_Locale(_r1.o, _r2.o, _r3.o);
@@ -3112,7 +3112,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1276)
     _r2.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r4.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.reqHeader_;
     // "If-Modified-Since"
-    _r3.o = xmlvm_create_java_string_from_pool(1920);
+    _r3.o = xmlvm_create_java_string_from_pool(1923);
     XMLVM_CHECK_NPE(2)
     org_apache_harmony_luni_internal_net_www_protocol_http_Header_add___java_lang_String_java_lang_String(_r2.o, _r3.o, _r0.o);
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1277)
@@ -3139,7 +3139,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1282)
     _r0.o = __NEW_java_lang_IllegalStateException();
     // "luni.2C"
-    _r1.o = xmlvm_create_java_string_from_pool(1921);
+    _r1.o = xmlvm_create_java_string_from_pool(1924);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalStateException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -3181,7 +3181,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1293)
     _r0.o = __NEW_java_lang_IllegalAccessError();
     // "luni.2C"
-    _r1.o = xmlvm_create_java_string_from_pool(1921);
+    _r1.o = xmlvm_create_java_string_from_pool(1924);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalAccessError___INIT____java_lang_String(_r0.o, _r1.o);
@@ -3338,14 +3338,14 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1354)
     // "http.agent"
-    _r0.o = xmlvm_create_java_string_from_pool(1908);
+    _r0.o = xmlvm_create_java_string_from_pool(1911);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r0.o);
     if (_r0.i == 0) goto label11;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1355)
     // "XMLVM"
-    _r0.o = xmlvm_create_java_string_from_pool(1922);
+    _r0.o = xmlvm_create_java_string_from_pool(1925);
     label10:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1363)
     XMLVM_EXIT_METHOD()
@@ -3353,14 +3353,14 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     label11:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1357)
     // "java.version"
-    _r0.o = xmlvm_create_java_string_from_pool(1910);
+    _r0.o = xmlvm_create_java_string_from_pool(1913);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r0.o);
     if (_r0.i == 0) goto label22;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1358)
     // "1.6"
-    _r0.o = xmlvm_create_java_string_from_pool(1923);
+    _r0.o = xmlvm_create_java_string_from_pool(1926);
     goto label10;
     label22:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1361)
@@ -3475,7 +3475,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1402)
     _r5.o = __NEW_java_io_IOException();
     // "luni.2D"
-    _r6.o = xmlvm_create_java_string_from_pool(1924);
+    _r6.o = xmlvm_create_java_string_from_pool(1927);
     _r6.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r6.o);
     XMLVM_CHECK_NPE(5)
     java_io_IOException___INIT____java_lang_String(_r5.o, _r6.o);
@@ -3484,7 +3484,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1406)
     _r5.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r9.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.resHeader_;
     // "Proxy-Authenticate"
-    _r6.o = xmlvm_create_java_string_from_pool(1925);
+    _r6.o = xmlvm_create_java_string_from_pool(1928);
     XMLVM_CHECK_NPE(5)
     _r0.o = org_apache_harmony_luni_internal_net_www_protocol_http_Header_get___java_lang_String(_r5.o, _r6.o);
     if (_r0.o != JAVA_NULL) goto label57;
@@ -3492,7 +3492,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1409)
     _r5.o = __NEW_java_io_IOException();
     // "luni.2E"
-    _r6.o = xmlvm_create_java_string_from_pool(1926);
+    _r6.o = xmlvm_create_java_string_from_pool(1929);
     _r6.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r6.o);
     XMLVM_CHECK_NPE(5)
     java_io_IOException___INIT____java_lang_String(_r5.o, _r6.o);
@@ -3520,7 +3520,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     label75:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1422)
     // "Proxy-Authorization"
-    _r5.o = xmlvm_create_java_string_from_pool(1927);
+    _r5.o = xmlvm_create_java_string_from_pool(1930);
     //org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl_setRequestProperty___java_lang_String_java_lang_String[19]
     XMLVM_CHECK_NPE(9)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r9.o)->tib->vtable[19])(_r9.o, _r5.o, _r1.o);
@@ -3533,7 +3533,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1429)
     _r5.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r9.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.resHeader_;
     // "WWW-Authenticate"
-    _r6.o = xmlvm_create_java_string_from_pool(1928);
+    _r6.o = xmlvm_create_java_string_from_pool(1931);
     XMLVM_CHECK_NPE(5)
     _r0.o = org_apache_harmony_luni_internal_net_www_protocol_http_Header_get___java_lang_String(_r5.o, _r6.o);
     if (_r0.o == JAVA_NULL) goto label71;
@@ -3554,7 +3554,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1439)
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1444)
     // "Authorization"
-    _r5.o = xmlvm_create_java_string_from_pool(1929);
+    _r5.o = xmlvm_create_java_string_from_pool(1932);
     //org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl_setRequestProperty___java_lang_String_java_lang_String[19]
     XMLVM_CHECK_NPE(9)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r9.o)->tib->vtable[19])(_r9.o, _r5.o, _r1.o);
@@ -3589,7 +3589,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1461)
     _r5.o = __NEW_java_net_ProtocolException();
     // "luni.2F"
-    _r6.o = xmlvm_create_java_string_from_pool(1930);
+    _r6.o = xmlvm_create_java_string_from_pool(1933);
     _r6.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r6.o);
     XMLVM_CHECK_NPE(5)
     java_net_ProtocolException___INIT____java_lang_String(_r5.o, _r6.o);
@@ -3597,7 +3597,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     label172:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1463)
     // "Location"
-    _r5.o = xmlvm_create_java_string_from_pool(1931);
+    _r5.o = xmlvm_create_java_string_from_pool(1934);
     //org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl_getHeaderField___java_lang_String[11]
     XMLVM_CHECK_NPE(9)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r9.o)->tib->vtable[11])(_r9.o, _r5.o);
@@ -3638,7 +3638,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     label228:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1471)
     // "//"
-    _r5.o = xmlvm_create_java_string_from_pool(1932);
+    _r5.o = xmlvm_create_java_string_from_pool(1935);
     XMLVM_CHECK_NPE(2)
     _r5.i = java_lang_String_startsWith___java_lang_String_int(_r2.o, _r5.o, _r4.i);
     if (_r5.i == 0) goto label238;
@@ -3717,7 +3717,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnec
     _r7.o = java_lang_String_substring___int_int(_r14.o, _r8.i, _r3.i);
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1507)
     // "realm=\042"
-    _r8.o = xmlvm_create_java_string_from_pool(1933);
+    _r8.o = xmlvm_create_java_string_from_pool(1936);
     XMLVM_CHECK_NPE(14)
     _r8.i = java_lang_String_indexOf___java_lang_String(_r14.o, _r8.o);
     _r6.i = _r8.i + 7;
@@ -3839,17 +3839,17 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     _r3.i = _r1.i + 1;
     XMLVM_CHECK_NPE(6)
     _r2.o = java_lang_String_substring___int(_r6.o, _r3.i);
-    XMLVM_TRY_BEGIN(w24357aaac68b1c25)
+    XMLVM_TRY_BEGIN(w24388aaac68b1c25)
     // Begin try
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1540)
     _r3.i = java_lang_Integer_parseInt___java_lang_String(_r2.o);
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r5.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.hostPort_ = _r3.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w24357aaac68b1c25)
-        XMLVM_CATCH_SPECIFIC(w24357aaac68b1c25,java_lang_NumberFormatException,58)
-    XMLVM_CATCH_END(w24357aaac68b1c25)
-    XMLVM_RESTORE_EXCEPTION_ENV(w24357aaac68b1c25)
+    XMLVM_CATCH_BEGIN(w24388aaac68b1c25)
+        XMLVM_CATCH_SPECIFIC(w24388aaac68b1c25,java_lang_NumberFormatException,58)
+    XMLVM_CATCH_END(w24388aaac68b1c25)
+    XMLVM_RESTORE_EXCEPTION_ENV(w24388aaac68b1c25)
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1544)
     _r3.i = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl*) _r5.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImpl.hostPort_;
     if (_r3.i < 0) goto label46;
@@ -3860,20 +3860,20 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpURLConnectionImp
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1545)
     _r3.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.31"
-    _r4.o = xmlvm_create_java_string_from_pool(1934);
+    _r4.o = xmlvm_create_java_string_from_pool(1937);
     _r4.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r4.o);
     XMLVM_CHECK_NPE(3)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r3.o, _r4.o);
     XMLVM_THROW_CUSTOM(_r3.o)
     label58:;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1541)
-    java_lang_Thread* curThread_w24357aaac68b1c41 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r3.o = curThread_w24357aaac68b1c41->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w24388aaac68b1c41 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r3.o = curThread_w24388aaac68b1c41->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r3;
     XMLVM_SOURCE_POSITION("HttpURLConnectionImpl.java", 1542)
     _r3.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.30"
-    _r4.o = xmlvm_create_java_string_from_pool(1935);
+    _r4.o = xmlvm_create_java_string_from_pool(1938);
     _r4.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object(_r4.o, _r2.o);
     XMLVM_CHECK_NPE(3)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r3.o, _r4.o);

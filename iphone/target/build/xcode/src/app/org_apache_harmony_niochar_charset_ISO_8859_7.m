@@ -272,14 +272,14 @@ JAVA_BOOLEAN org_apache_harmony_niochar_charset_ISO_8859_7_contains___java_nio_c
     XMLVM_CHECK_NPE(3)
     _r0.o = java_nio_charset_Charset_name__(_r3.o);
     // "IBM367"
-    _r1.o = xmlvm_create_java_string_from_pool(969);
+    _r1.o = xmlvm_create_java_string_from_pool(972);
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_String_equalsIgnoreCase___java_lang_String(_r0.o, _r1.o);
     if (_r0.i != 0) goto label38;
     XMLVM_CHECK_NPE(3)
     _r0.o = java_nio_charset_Charset_name__(_r3.o);
     // "iso-8859-7"
-    _r1.o = xmlvm_create_java_string_from_pool(970);
+    _r1.o = xmlvm_create_java_string_from_pool(973);
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_String_equalsIgnoreCase___java_lang_String(_r0.o, _r1.o);
     if (_r0.i != 0) goto label38;

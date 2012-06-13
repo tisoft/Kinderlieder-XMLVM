@@ -338,7 +338,7 @@ JAVA_OBJECT gnu_xml_xpath_TrueFunction_toString__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("TrueFunction.java", 69)
     // "true()"
-    _r0.o = xmlvm_create_java_string_from_pool(3358);
+    _r0.o = xmlvm_create_java_string_from_pool(3361);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

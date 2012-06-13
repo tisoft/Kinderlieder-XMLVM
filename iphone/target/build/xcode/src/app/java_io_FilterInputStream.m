@@ -417,7 +417,7 @@ void java_io_FilterInputStream_mark___int(JAVA_OBJECT me, JAVA_INT n1)
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("FilterInputStream.java", 89)
     java_lang_Object_acquireLockRecursive__(_r1.o);
-    XMLVM_TRY_BEGIN(w18537aaab4b1b5)
+    XMLVM_TRY_BEGIN(w18568aaab4b1b5)
     // Begin try
     _r0.o = ((java_io_FilterInputStream*) _r1.o)->fields.java_io_FilterInputStream.in_;
     //java_io_InputStream_mark___int[9]
@@ -425,17 +425,17 @@ void java_io_FilterInputStream_mark___int(JAVA_OBJECT me, JAVA_INT n1)
     (*(void (*)(JAVA_OBJECT, JAVA_INT)) ((java_io_InputStream*) _r0.o)->tib->vtable[9])(_r0.o, _r2.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w18537aaab4b1b5)
-        XMLVM_CATCH_SPECIFIC(w18537aaab4b1b5,java_lang_Object,8)
-    XMLVM_CATCH_END(w18537aaab4b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w18537aaab4b1b5)
+    XMLVM_CATCH_BEGIN(w18568aaab4b1b5)
+        XMLVM_CATCH_SPECIFIC(w18568aaab4b1b5,java_lang_Object,8)
+    XMLVM_CATCH_END(w18568aaab4b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w18568aaab4b1b5)
     XMLVM_SOURCE_POSITION("FilterInputStream.java", 90)
     java_lang_Object_releaseLockRecursive__(_r1.o);
     XMLVM_EXIT_METHOD()
     return;
     label8:;
-    java_lang_Thread* curThread_w18537aaab4b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w18537aaab4b1c10->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w18568aaab4b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w18568aaab4b1c10->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER
@@ -528,7 +528,7 @@ void java_io_FilterInputStream_reset__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FilterInputStream.java", 178)
     java_lang_Object_acquireLockRecursive__(_r1.o);
-    XMLVM_TRY_BEGIN(w18537aaab9b1b4)
+    XMLVM_TRY_BEGIN(w18568aaab9b1b4)
     // Begin try
     _r0.o = ((java_io_FilterInputStream*) _r1.o)->fields.java_io_FilterInputStream.in_;
     //java_io_InputStream_reset__[13]
@@ -536,17 +536,17 @@ void java_io_FilterInputStream_reset__(JAVA_OBJECT me)
     (*(void (*)(JAVA_OBJECT)) ((java_io_InputStream*) _r0.o)->tib->vtable[13])(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w18537aaab9b1b4)
-        XMLVM_CATCH_SPECIFIC(w18537aaab9b1b4,java_lang_Object,8)
-    XMLVM_CATCH_END(w18537aaab9b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w18537aaab9b1b4)
+    XMLVM_CATCH_BEGIN(w18568aaab9b1b4)
+        XMLVM_CATCH_SPECIFIC(w18568aaab9b1b4,java_lang_Object,8)
+    XMLVM_CATCH_END(w18568aaab9b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w18568aaab9b1b4)
     XMLVM_SOURCE_POSITION("FilterInputStream.java", 179)
     java_lang_Object_releaseLockRecursive__(_r1.o);
     XMLVM_EXIT_METHOD()
     return;
     label8:;
-    java_lang_Thread* curThread_w18537aaab9b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w18537aaab9b1b9->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w18568aaab9b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w18568aaab9b1b9->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER

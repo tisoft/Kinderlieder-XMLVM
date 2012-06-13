@@ -14,7 +14,7 @@ __TIB_DEFINITION_my_kinderlieder_ShopDetailViewController_1 __TIB_my_kinderliede
     "my.kinderlieder.ShopDetailViewController$1", // className
     "my.kinderlieder", // package
     "my.kinderlieder.ShopDetailViewController", // enclosingClassName
-    "show:(Lmy/kinderlieder/Product;)V", // enclosingMethodName
+    JAVA_NULL, // enclosingMethodName
     JAVA_NULL, // signature
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_lang_Object, // extends
     sizeof(my_kinderlieder_ShopDetailViewController_1), // sizeInstance
@@ -214,7 +214,7 @@ void my_kinderlieder_ShopDetailViewController_1___INIT____my_kinderlieder_ShopDe
     XMLVMElem _r1;
     _r0.o = me;
     _r1.o = n1;
-    XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 43)
+    XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 15)
     ((my_kinderlieder_ShopDetailViewController_1*) _r0.o)->fields.my_kinderlieder_ShopDetailViewController_1.this_0_ = _r1.o;
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
@@ -230,10 +230,10 @@ void my_kinderlieder_ShopDetailViewController_1_clicked__(JAVA_OBJECT me)
     XMLVMElem _r0;
     XMLVMElem _r1;
     _r1.o = me;
-    XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 46)
+    XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 17)
     _r0.o = ((my_kinderlieder_ShopDetailViewController_1*) _r1.o)->fields.my_kinderlieder_ShopDetailViewController_1.this_0_;
     my_kinderlieder_ShopDetailViewController_access$000___my_kinderlieder_ShopDetailViewController(_r0.o);
-    XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 47)
+    XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 18)
     XMLVM_EXIT_METHOD()
     return;
     //XMLVM_END_WRAPPER

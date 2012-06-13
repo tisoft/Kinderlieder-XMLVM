@@ -322,7 +322,7 @@ JAVA_OBJECT java_util_regex_EOISet_getName__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("EOISet.java", 51)
     // "EOI"
-    _r0.o = xmlvm_create_java_string_from_pool(2600);
+    _r0.o = xmlvm_create_java_string_from_pool(2603);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

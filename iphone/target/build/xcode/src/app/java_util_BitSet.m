@@ -1017,7 +1017,7 @@ JAVA_OBJECT java_util_BitSet_clone__(JAVA_OBJECT me)
     XMLVMElem _r1;
     XMLVMElem _r2;
     _r2.o = me;
-    XMLVM_TRY_BEGIN(w24147aaac13b1b2)
+    XMLVM_TRY_BEGIN(w24178aaac13b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("BitSet.java", 130)
     XMLVM_CHECK_NPE(2)
@@ -1032,17 +1032,17 @@ JAVA_OBJECT java_util_BitSet_clone__(JAVA_OBJECT me)
     ((java_util_BitSet*) _r0.o)->fields.java_util_BitSet.bits_ = _r2.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w24147aaac13b1b2)
-        XMLVM_CATCH_SPECIFIC(w24147aaac13b1b2,java_lang_CloneNotSupportedException,17)
-    XMLVM_CATCH_END(w24147aaac13b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w24147aaac13b1b2)
+    XMLVM_CATCH_BEGIN(w24178aaac13b1b2)
+        XMLVM_CATCH_SPECIFIC(w24178aaac13b1b2,java_lang_CloneNotSupportedException,17)
+    XMLVM_CATCH_END(w24178aaac13b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w24178aaac13b1b2)
     label16:;
     XMLVM_SOURCE_POSITION("BitSet.java", 134)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label17:;
-    java_lang_Thread* curThread_w24147aaac13b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w24147aaac13b1b7->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w24178aaac13b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w24178aaac13b1b7->fields.java_lang_Thread.xmlvmException_;
     _r0.o = JAVA_NULL;
     goto label16;
     //XMLVM_END_WRAPPER
@@ -1296,7 +1296,7 @@ JAVA_BOOLEAN java_util_BitSet_get___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("BitSet.java", 243)
     _r0.o = __NEW_java_lang_IndexOutOfBoundsException();
     // "luni.37"
-    _r1.o = xmlvm_create_java_string_from_pool(1889);
+    _r1.o = xmlvm_create_java_string_from_pool(1892);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IndexOutOfBoundsException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -1364,7 +1364,7 @@ JAVA_OBJECT java_util_BitSet_get___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT
     XMLVM_SOURCE_POSITION("BitSet.java", 270)
     _r0.o = __NEW_java_lang_IndexOutOfBoundsException();
     // "luni.37"
-    _r1.o = xmlvm_create_java_string_from_pool(1889);
+    _r1.o = xmlvm_create_java_string_from_pool(1892);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IndexOutOfBoundsException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -1595,7 +1595,7 @@ void java_util_BitSet_set___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("BitSet.java", 341)
     _r0.o = __NEW_java_lang_IndexOutOfBoundsException();
     // "luni.37"
-    _r1.o = xmlvm_create_java_string_from_pool(1889);
+    _r1.o = xmlvm_create_java_string_from_pool(1892);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IndexOutOfBoundsException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -1703,7 +1703,7 @@ void java_util_BitSet_set___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     XMLVM_SOURCE_POSITION("BitSet.java", 391)
     _r0.o = __NEW_java_lang_IndexOutOfBoundsException();
     // "luni.37"
-    _r1.o = xmlvm_create_java_string_from_pool(1889);
+    _r1.o = xmlvm_create_java_string_from_pool(1892);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IndexOutOfBoundsException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -1912,7 +1912,7 @@ void java_util_BitSet_clear___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("BitSet.java", 480)
     _r0.o = __NEW_java_lang_IndexOutOfBoundsException();
     // "luni.37"
-    _r1.o = xmlvm_create_java_string_from_pool(1889);
+    _r1.o = xmlvm_create_java_string_from_pool(1892);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IndexOutOfBoundsException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -1994,7 +1994,7 @@ void java_util_BitSet_clear___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     XMLVM_SOURCE_POSITION("BitSet.java", 510)
     _r0.o = __NEW_java_lang_IndexOutOfBoundsException();
     // "luni.37"
-    _r1.o = xmlvm_create_java_string_from_pool(1889);
+    _r1.o = xmlvm_create_java_string_from_pool(1892);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IndexOutOfBoundsException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -2125,7 +2125,7 @@ void java_util_BitSet_flip___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("BitSet.java", 555)
     _r0.o = __NEW_java_lang_IndexOutOfBoundsException();
     // "luni.37"
-    _r1.o = xmlvm_create_java_string_from_pool(1889);
+    _r1.o = xmlvm_create_java_string_from_pool(1892);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IndexOutOfBoundsException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -2223,7 +2223,7 @@ void java_util_BitSet_flip___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     XMLVM_SOURCE_POSITION("BitSet.java", 585)
     _r0.o = __NEW_java_lang_IndexOutOfBoundsException();
     // "luni.37"
-    _r1.o = xmlvm_create_java_string_from_pool(1889);
+    _r1.o = xmlvm_create_java_string_from_pool(1892);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IndexOutOfBoundsException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -3116,7 +3116,7 @@ JAVA_INT java_util_BitSet_nextSetBit___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("BitSet.java", 854)
     _r0.o = __NEW_java_lang_IndexOutOfBoundsException();
     // "luni.37"
-    _r1.o = xmlvm_create_java_string_from_pool(1889);
+    _r1.o = xmlvm_create_java_string_from_pool(1892);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IndexOutOfBoundsException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -3249,7 +3249,7 @@ JAVA_INT java_util_BitSet_nextClearBit___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("BitSet.java", 900)
     _r0.o = __NEW_java_lang_IndexOutOfBoundsException();
     // "luni.37"
-    _r1.o = xmlvm_create_java_string_from_pool(1889);
+    _r1.o = xmlvm_create_java_string_from_pool(1892);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IndexOutOfBoundsException___INIT____java_lang_String(_r0.o, _r1.o);

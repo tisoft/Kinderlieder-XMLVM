@@ -316,29 +316,29 @@ void org_apache_harmony_luni_util_Msg___CLINIT_()
     XMLVM_SOURCE_POSITION("Msg.java", 47)
     _r0.o = JAVA_NULL;
     org_apache_harmony_luni_util_Msg_PUT_bundle( _r0.o);
-    XMLVM_TRY_BEGIN(w46265aaab1b1b4)
+    XMLVM_TRY_BEGIN(w46300aaab1b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("Msg.java", 52)
     _r0.o = java_util_Locale_getDefault__();
     XMLVM_SOURCE_POSITION("Msg.java", 53)
     // "org.apache.harmony.luni.util.ExternalMessages"
-    _r1.o = xmlvm_create_java_string_from_pool(3419);
+    _r1.o = xmlvm_create_java_string_from_pool(3422);
     _r0.o = org_apache_harmony_luni_internal_nls_Messages_setLocale___java_util_Locale_java_lang_String(_r0.o, _r1.o);
     org_apache_harmony_luni_util_Msg_PUT_bundle( _r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w46265aaab1b1b4)
-        XMLVM_CATCH_SPECIFIC(w46265aaab1b1b4,java_lang_Throwable,16)
-    XMLVM_CATCH_END(w46265aaab1b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w46265aaab1b1b4)
+    XMLVM_CATCH_BEGIN(w46300aaab1b1b4)
+        XMLVM_CATCH_SPECIFIC(w46300aaab1b1b4,java_lang_Throwable,16)
+    XMLVM_CATCH_END(w46300aaab1b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w46300aaab1b1b4)
     label15:;
     XMLVM_SOURCE_POSITION("Msg.java", 44)
     XMLVM_EXIT_METHOD()
     return;
     label16:;
     XMLVM_SOURCE_POSITION("Msg.java", 54)
-    java_lang_Thread* curThread_w46265aaab1b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w46265aaab1b1c10->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w46300aaab1b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w46300aaab1b1c10->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("Msg.java", 55)
     //java_lang_Throwable_printStackTrace__[8]
     XMLVM_CHECK_NPE(0)
@@ -379,7 +379,7 @@ JAVA_OBJECT org_apache_harmony_luni_util_Msg_getString___java_lang_String(JAVA_O
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label6:;
-    XMLVM_TRY_BEGIN(w46265aaab3b1c11)
+    XMLVM_TRY_BEGIN(w46300aaab3b1c11)
     // Begin try
     XMLVM_SOURCE_POSITION("Msg.java", 70)
     _r0.o = org_apache_harmony_luni_util_Msg_GET_bundle();
@@ -387,14 +387,14 @@ JAVA_OBJECT org_apache_harmony_luni_util_Msg_getString___java_lang_String(JAVA_O
     _r0.o = java_util_ResourceBundle_getString___java_lang_String(_r0.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w46265aaab3b1c11)
-        XMLVM_CATCH_SPECIFIC(w46265aaab3b1c11,java_util_MissingResourceException,13)
-    XMLVM_CATCH_END(w46265aaab3b1c11)
-    XMLVM_RESTORE_EXCEPTION_ENV(w46265aaab3b1c11)
+    XMLVM_CATCH_BEGIN(w46300aaab3b1c11)
+        XMLVM_CATCH_SPECIFIC(w46300aaab3b1c11,java_util_MissingResourceException,13)
+    XMLVM_CATCH_END(w46300aaab3b1c11)
+    XMLVM_RESTORE_EXCEPTION_ENV(w46300aaab3b1c11)
     goto label5;
     label13:;
-    java_lang_Thread* curThread_w46265aaab3b1c14 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w46265aaab3b1c14->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w46300aaab3b1c14 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w46300aaab3b1c14->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r1;
     goto label5;
     //XMLVM_END_WRAPPER
@@ -524,7 +524,7 @@ JAVA_OBJECT org_apache_harmony_luni_util_Msg_getString___java_lang_String_java_l
     XMLVM_SOURCE_POSITION("Msg.java", 142)
     _r0.o = org_apache_harmony_luni_util_Msg_GET_bundle();
     if (_r0.o == JAVA_NULL) goto label16;
-    XMLVM_TRY_BEGIN(w46265aaab8b1b7)
+    XMLVM_TRY_BEGIN(w46300aaab8b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("Msg.java", 144)
     _r0.o = org_apache_harmony_luni_util_Msg_GET_bundle();
@@ -532,18 +532,18 @@ JAVA_OBJECT org_apache_harmony_luni_util_Msg_getString___java_lang_String_java_l
     _r0.o = java_util_ResourceBundle_getString___java_lang_String(_r0.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w46265aaab8b1b7)
-        XMLVM_CATCH_SPECIFIC(w46265aaab8b1b7,java_util_MissingResourceException,15)
-    XMLVM_CATCH_END(w46265aaab8b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w46265aaab8b1b7)
+    XMLVM_CATCH_BEGIN(w46300aaab8b1b7)
+        XMLVM_CATCH_SPECIFIC(w46300aaab8b1b7,java_util_MissingResourceException,15)
+    XMLVM_CATCH_END(w46300aaab8b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w46300aaab8b1b7)
     label10:;
     XMLVM_SOURCE_POSITION("Msg.java", 149)
     _r0.o = org_apache_harmony_luni_internal_nls_Messages_format___java_lang_String_java_lang_Object_1ARRAY(_r0.o, _r2.o);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label15:;
-    java_lang_Thread* curThread_w46265aaab8b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w46265aaab8b1c13->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w46300aaab8b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w46300aaab8b1c13->fields.java_lang_Thread.xmlvmException_;
     label16:;
     _r0 = _r1;
     goto label10;

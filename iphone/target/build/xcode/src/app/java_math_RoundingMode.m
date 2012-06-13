@@ -458,42 +458,42 @@ void java_math_RoundingMode___CLINIT_()
     XMLVM_SOURCE_POSITION("RoundingMode.java", 34)
     _r0.o = __NEW_java_math_RoundingMode();
     // "UP"
-    _r1.o = xmlvm_create_java_string_from_pool(3264);
+    _r1.o = xmlvm_create_java_string_from_pool(3267);
     XMLVM_CHECK_NPE(0)
     java_math_RoundingMode___INIT____java_lang_String_int_int(_r0.o, _r1.o, _r4.i, _r4.i);
     java_math_RoundingMode_PUT_UP( _r0.o);
     XMLVM_SOURCE_POSITION("RoundingMode.java", 41)
     _r0.o = __NEW_java_math_RoundingMode();
     // "DOWN"
-    _r1.o = xmlvm_create_java_string_from_pool(3265);
+    _r1.o = xmlvm_create_java_string_from_pool(3268);
     XMLVM_CHECK_NPE(0)
     java_math_RoundingMode___INIT____java_lang_String_int_int(_r0.o, _r1.o, _r5.i, _r5.i);
     java_math_RoundingMode_PUT_DOWN( _r0.o);
     XMLVM_SOURCE_POSITION("RoundingMode.java", 50)
     _r0.o = __NEW_java_math_RoundingMode();
     // "CEILING"
-    _r1.o = xmlvm_create_java_string_from_pool(3266);
+    _r1.o = xmlvm_create_java_string_from_pool(3269);
     XMLVM_CHECK_NPE(0)
     java_math_RoundingMode___INIT____java_lang_String_int_int(_r0.o, _r1.o, _r6.i, _r6.i);
     java_math_RoundingMode_PUT_CEILING( _r0.o);
     XMLVM_SOURCE_POSITION("RoundingMode.java", 59)
     _r0.o = __NEW_java_math_RoundingMode();
     // "FLOOR"
-    _r1.o = xmlvm_create_java_string_from_pool(3267);
+    _r1.o = xmlvm_create_java_string_from_pool(3270);
     XMLVM_CHECK_NPE(0)
     java_math_RoundingMode___INIT____java_lang_String_int_int(_r0.o, _r1.o, _r7.i, _r7.i);
     java_math_RoundingMode_PUT_FLOOR( _r0.o);
     XMLVM_SOURCE_POSITION("RoundingMode.java", 65)
     _r0.o = __NEW_java_math_RoundingMode();
     // "HALF_UP"
-    _r1.o = xmlvm_create_java_string_from_pool(3268);
+    _r1.o = xmlvm_create_java_string_from_pool(3271);
     XMLVM_CHECK_NPE(0)
     java_math_RoundingMode___INIT____java_lang_String_int_int(_r0.o, _r1.o, _r8.i, _r8.i);
     java_math_RoundingMode_PUT_HALF_UP( _r0.o);
     XMLVM_SOURCE_POSITION("RoundingMode.java", 71)
     _r0.o = __NEW_java_math_RoundingMode();
     // "HALF_DOWN"
-    _r1.o = xmlvm_create_java_string_from_pool(3269);
+    _r1.o = xmlvm_create_java_string_from_pool(3272);
     _r2.i = 5;
     _r3.i = 5;
     XMLVM_CHECK_NPE(0)
@@ -502,7 +502,7 @@ void java_math_RoundingMode___CLINIT_()
     XMLVM_SOURCE_POSITION("RoundingMode.java", 77)
     _r0.o = __NEW_java_math_RoundingMode();
     // "HALF_EVEN"
-    _r1.o = xmlvm_create_java_string_from_pool(3270);
+    _r1.o = xmlvm_create_java_string_from_pool(3273);
     _r2.i = 6;
     _r3.i = 6;
     XMLVM_CHECK_NPE(0)
@@ -511,7 +511,7 @@ void java_math_RoundingMode___CLINIT_()
     XMLVM_SOURCE_POSITION("RoundingMode.java", 84)
     _r0.o = __NEW_java_math_RoundingMode();
     // "UNNECESSARY"
-    _r1.o = xmlvm_create_java_string_from_pool(3271);
+    _r1.o = xmlvm_create_java_string_from_pool(3274);
     _r2.i = 7;
     _r3.i = 7;
     XMLVM_CHECK_NPE(0)
@@ -608,7 +608,7 @@ JAVA_OBJECT java_math_RoundingMode_valueOf___int(JAVA_INT n1)
     XMLVM_SOURCE_POSITION("RoundingMode.java", 122)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "math.00"
-    _r1.o = xmlvm_create_java_string_from_pool(3272);
+    _r1.o = xmlvm_create_java_string_from_pool(3275);
     _r1.o = org_apache_harmony_math_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r0.o, _r1.o);

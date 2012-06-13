@@ -276,7 +276,7 @@ JAVA_OBJECT java_util_regex_FSet_PossessiveFSet_getName__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FSet.java", 78)
     // "posFSet"
-    _r0.o = xmlvm_create_java_string_from_pool(3398);
+    _r0.o = xmlvm_create_java_string_from_pool(3401);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

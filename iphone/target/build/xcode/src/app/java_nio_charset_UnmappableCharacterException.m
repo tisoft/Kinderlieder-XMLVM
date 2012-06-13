@@ -288,7 +288,7 @@ JAVA_OBJECT java_nio_charset_UnmappableCharacterException_getMessage__(JAVA_OBJE
     _r2.o = me;
     XMLVM_SOURCE_POSITION("UnmappableCharacterException.java", 64)
     // "niochar.0A"
-    _r0.o = xmlvm_create_java_string_from_pool(3355);
+    _r0.o = xmlvm_create_java_string_from_pool(3358);
     _r1.i = ((java_nio_charset_UnmappableCharacterException*) _r2.o)->fields.java_nio_charset_UnmappableCharacterException.inputLength_;
     _r0.o = org_apache_harmony_niochar_internal_nls_Messages_getString___java_lang_String_int(_r0.o, _r1.i);
     XMLVM_EXIT_METHOD()

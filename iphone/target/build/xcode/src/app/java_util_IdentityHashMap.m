@@ -1819,7 +1819,7 @@ JAVA_OBJECT java_util_IdentityHashMap_clone__(JAVA_OBJECT me)
     XMLVMElem _r5;
     XMLVMElem _r6;
     _r6.o = me;
-    XMLVM_TRY_BEGIN(w35562aaac33b1b2)
+    XMLVM_TRY_BEGIN(w35588aaac33b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 754)
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 755)
@@ -1843,17 +1843,17 @@ JAVA_OBJECT java_util_IdentityHashMap_clone__(JAVA_OBJECT me)
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r2.i, _r3.o, _r4.i, _r5.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w35562aaac33b1b2)
-        XMLVM_CATCH_SPECIFIC(w35562aaac33b1b2,java_lang_CloneNotSupportedException,28)
-    XMLVM_CATCH_END(w35562aaac33b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w35562aaac33b1b2)
+    XMLVM_CATCH_BEGIN(w35588aaac33b1b2)
+        XMLVM_CATCH_SPECIFIC(w35588aaac33b1b2,java_lang_CloneNotSupportedException,28)
+    XMLVM_CATCH_END(w35588aaac33b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w35588aaac33b1b2)
     label27:;
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 761)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label28:;
-    java_lang_Thread* curThread_w35562aaac33b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w35562aaac33b1b7->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w35588aaac33b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w35588aaac33b1b7->fields.java_lang_Thread.xmlvmException_;
     _r0.o = JAVA_NULL;
     goto label27;
     //XMLVM_END_WRAPPER

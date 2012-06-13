@@ -19,21 +19,13 @@ XMLVM_FORWARD_DECL(java_io_IOException)
 #define XMLVM_FORWARD_DECL_java_lang_String
 XMLVM_FORWARD_DECL(java_lang_String)
 #endif
-#ifndef XMLVM_FORWARD_DECL_java_util_Iterator
-#define XMLVM_FORWARD_DECL_java_util_Iterator
-XMLVM_FORWARD_DECL(java_util_Iterator)
-#endif
-#ifndef XMLVM_FORWARD_DECL_java_util_List
-#define XMLVM_FORWARD_DECL_java_util_List
-XMLVM_FORWARD_DECL(java_util_List)
-#endif
 #ifndef XMLVM_FORWARD_DECL_my_kinderlieder_InAppProduct
 #define XMLVM_FORWARD_DECL_my_kinderlieder_InAppProduct
 XMLVM_FORWARD_DECL(my_kinderlieder_InAppProduct)
 #endif
-#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_Product
-#define XMLVM_FORWARD_DECL_my_kinderlieder_Product
-XMLVM_FORWARD_DECL(my_kinderlieder_Product)
+#ifndef XMLVM_FORWARD_DECL_my_kinderlieder_Product_State
+#define XMLVM_FORWARD_DECL_my_kinderlieder_Product_State
+XMLVM_FORWARD_DECL(my_kinderlieder_Product_State)
 #endif
 #ifndef XMLVM_FORWARD_DECL_my_kinderlieder_ShopService
 #define XMLVM_FORWARD_DECL_my_kinderlieder_ShopService
@@ -46,10 +38,6 @@ XMLVM_FORWARD_DECL(my_kinderlieder_ShopService_1)
 #ifndef XMLVM_FORWARD_DECL_my_kinderlieder_ShopService_1_1_1
 #define XMLVM_FORWARD_DECL_my_kinderlieder_ShopService_1_1_1
 XMLVM_FORWARD_DECL(my_kinderlieder_ShopService_1_1_1)
-#endif
-#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_SKPayment
-#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_SKPayment
-XMLVM_FORWARD_DECL(org_xmlvm_iphone_SKPayment)
 #endif
 #ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_SKPaymentTransaction
 #define XMLVM_FORWARD_DECL_org_xmlvm_iphone_SKPaymentTransaction
@@ -73,7 +61,7 @@ extern JAVA_OBJECT __CLASS_my_kinderlieder_ShopService_1_1_3ARRAY;
 #define __INSTANCE_FIELDS_my_kinderlieder_ShopService_1_1 \
     __INSTANCE_FIELDS_java_lang_Object; \
     struct { \
-        JAVA_OBJECT val_transaction_; \
+        JAVA_OBJECT val_inAppProduct_; \
         JAVA_OBJECT val_finalOriginalTransaction_; \
         JAVA_OBJECT this_1_; \
         __ADDITIONAL_INSTANCE_FIELDS_my_kinderlieder_ShopService_1_1 \
@@ -99,7 +87,7 @@ void __DELETE_my_kinderlieder_ShopService_1_1(void* me, void* client_data);
 void __INIT_INSTANCE_MEMBERS_my_kinderlieder_ShopService_1_1(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
 JAVA_OBJECT __NEW_my_kinderlieder_ShopService_1_1();
 JAVA_OBJECT __NEW_INSTANCE_my_kinderlieder_ShopService_1_1();
-void my_kinderlieder_ShopService_1_1___INIT____my_kinderlieder_ShopService_1_org_xmlvm_iphone_SKPaymentTransaction_org_xmlvm_iphone_SKPaymentTransaction(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
+void my_kinderlieder_ShopService_1_1___INIT____my_kinderlieder_ShopService_1_my_kinderlieder_InAppProduct_org_xmlvm_iphone_SKPaymentTransaction(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2, JAVA_OBJECT n3);
 // Vtable index: 6
 void my_kinderlieder_ShopService_1_1_run__(JAVA_OBJECT me);
 

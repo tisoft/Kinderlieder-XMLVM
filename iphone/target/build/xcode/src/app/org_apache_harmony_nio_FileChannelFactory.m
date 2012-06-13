@@ -238,7 +238,7 @@ JAVA_OBJECT org_apache_harmony_nio_FileChannelFactory_getFileChannel___java_lang
     XMLVM_SOURCE_POSITION("FileChannelFactory.java", 46)
     _r0.o = __NEW_java_lang_RuntimeException();
     // "nio.09"
-    _r1.o = xmlvm_create_java_string_from_pool(968);
+    _r1.o = xmlvm_create_java_string_from_pool(971);
 
     
     // Red class access removed: org.apache.harmony.nio.internal.nls.Messages::getString

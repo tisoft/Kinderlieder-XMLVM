@@ -374,7 +374,7 @@ JAVA_OBJECT java_util_regex_DotAllSet_getName__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DotAllSet.java", 52)
     // "DotAll"
-    _r0.o = xmlvm_create_java_string_from_pool(2344);
+    _r0.o = xmlvm_create_java_string_from_pool(2347);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

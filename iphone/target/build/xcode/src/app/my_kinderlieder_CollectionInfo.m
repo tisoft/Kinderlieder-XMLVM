@@ -330,7 +330,7 @@ void my_kinderlieder_CollectionInfo___INIT____java_lang_String(JAVA_OBJECT me, J
     ((my_kinderlieder_CollectionInfo*) _r2.o)->fields.my_kinderlieder_CollectionInfo.musicInfoMap_ = _r1.o;
     XMLVM_SOURCE_POSITION("CollectionInfo.java", 21)
     ((my_kinderlieder_CollectionInfo*) _r2.o)->fields.my_kinderlieder_CollectionInfo.id_ = _r3.o;
-    XMLVM_TRY_BEGIN(w20856aaab3b1c15)
+    XMLVM_TRY_BEGIN(w20887aaab3b1c15)
     // Begin try
     XMLVM_SOURCE_POSITION("CollectionInfo.java", 23)
     //my_kinderlieder_CollectionInfo_load__[6]
@@ -338,18 +338,18 @@ void my_kinderlieder_CollectionInfo___INIT____java_lang_String(JAVA_OBJECT me, J
     (*(void (*)(JAVA_OBJECT)) ((my_kinderlieder_CollectionInfo*) _r2.o)->tib->vtable[6])(_r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w20856aaab3b1c15)
-        XMLVM_CATCH_SPECIFIC(w20856aaab3b1c15,java_io_FileNotFoundException,23)
-        XMLVM_CATCH_SPECIFIC(w20856aaab3b1c15,java_io_UnsupportedEncodingException,30)
-    XMLVM_CATCH_END(w20856aaab3b1c15)
-    XMLVM_RESTORE_EXCEPTION_ENV(w20856aaab3b1c15)
+    XMLVM_CATCH_BEGIN(w20887aaab3b1c15)
+        XMLVM_CATCH_SPECIFIC(w20887aaab3b1c15,java_io_FileNotFoundException,23)
+        XMLVM_CATCH_SPECIFIC(w20887aaab3b1c15,java_io_UnsupportedEncodingException,30)
+    XMLVM_CATCH_END(w20887aaab3b1c15)
+    XMLVM_RESTORE_EXCEPTION_ENV(w20887aaab3b1c15)
     XMLVM_SOURCE_POSITION("CollectionInfo.java", 29)
     XMLVM_EXIT_METHOD()
     return;
     label23:;
     XMLVM_SOURCE_POSITION("CollectionInfo.java", 24)
-    java_lang_Thread* curThread_w20856aaab3b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w20856aaab3b1c20->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w20887aaab3b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w20887aaab3b1c20->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("CollectionInfo.java", 25)
     _r1.o = __NEW_org_json_JSONException();
     XMLVM_CHECK_NPE(1)
@@ -357,8 +357,8 @@ void my_kinderlieder_CollectionInfo___INIT____java_lang_String(JAVA_OBJECT me, J
     XMLVM_THROW_CUSTOM(_r1.o)
     label30:;
     XMLVM_SOURCE_POSITION("CollectionInfo.java", 26)
-    java_lang_Thread* curThread_w20856aaab3b1c27 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w20856aaab3b1c27->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w20887aaab3b1c27 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w20887aaab3b1c27->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("CollectionInfo.java", 27)
     _r1.o = __NEW_org_json_JSONException();
     XMLVM_CHECK_NPE(1)

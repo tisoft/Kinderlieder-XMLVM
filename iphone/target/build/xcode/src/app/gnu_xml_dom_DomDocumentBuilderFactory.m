@@ -332,43 +332,43 @@ void gnu_xml_dom_DomDocumentBuilderFactory___INIT___(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 66)
     XMLVM_CHECK_NPE(2)
     javax_xml_parsers_DocumentBuilderFactory___INIT___(_r2.o);
-    XMLVM_TRY_BEGIN(w29774aaab3b1b4)
+    XMLVM_TRY_BEGIN(w29800aaab3b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 71)
     _r0.o = org_w3c_dom_bootstrap_DOMImplementationRegistry_newInstance__();
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 72)
     // "LS 3.0"
-    _r1.o = xmlvm_create_java_string_from_pool(2441);
+    _r1.o = xmlvm_create_java_string_from_pool(2444);
     XMLVM_CHECK_NPE(0)
     _r0.o = org_w3c_dom_bootstrap_DOMImplementationRegistry_getDOMImplementation___java_lang_String(_r0.o, _r1.o);
     ((gnu_xml_dom_DomDocumentBuilderFactory*) _r2.o)->fields.gnu_xml_dom_DomDocumentBuilderFactory.impl_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 73)
     _r0.o = ((gnu_xml_dom_DomDocumentBuilderFactory*) _r2.o)->fields.gnu_xml_dom_DomDocumentBuilderFactory.impl_;
-    if (_r0.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w29774aaab3b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29774aaab3b1b4, sizeof(XMLVM_JMP_BUF)); goto label34; };
+    if (_r0.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w29800aaab3b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29800aaab3b1b4, sizeof(XMLVM_JMP_BUF)); goto label34; };
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 75)
     _r0.o = __NEW_javax_xml_parsers_FactoryConfigurationError();
     // "no LS implementations found"
-    _r1.o = xmlvm_create_java_string_from_pool(2442);
+    _r1.o = xmlvm_create_java_string_from_pool(2445);
     XMLVM_CHECK_NPE(0)
     javax_xml_parsers_FactoryConfigurationError___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w29774aaab3b1b4)
-        XMLVM_CATCH_SPECIFIC(w29774aaab3b1b4,java_lang_Exception,27)
-    XMLVM_CATCH_END(w29774aaab3b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w29774aaab3b1b4)
+    XMLVM_CATCH_BEGIN(w29800aaab3b1b4)
+        XMLVM_CATCH_SPECIFIC(w29800aaab3b1b4,java_lang_Exception,27)
+    XMLVM_CATCH_END(w29800aaab3b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w29800aaab3b1b4)
     label27:;
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 79)
-    java_lang_Thread* curThread_w29774aaab3b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w29774aaab3b1b7->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w29800aaab3b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w29800aaab3b1b7->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 81)
     _r1.o = __NEW_javax_xml_parsers_FactoryConfigurationError();
     XMLVM_CHECK_NPE(1)
     javax_xml_parsers_FactoryConfigurationError___INIT____java_lang_Exception(_r1.o, _r0.o);
     XMLVM_THROW_CUSTOM(_r1.o)
     label34:;
-    XMLVM_TRY_BEGIN(w29774aaab3b1c13)
+    XMLVM_TRY_BEGIN(w29800aaab3b1c13)
     // Begin try
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 77)
     _r0.o = ((gnu_xml_dom_DomDocumentBuilderFactory*) _r2.o)->fields.gnu_xml_dom_DomDocumentBuilderFactory.impl_;
@@ -376,10 +376,10 @@ void gnu_xml_dom_DomDocumentBuilderFactory___INIT___(JAVA_OBJECT me)
     ((gnu_xml_dom_DomDocumentBuilderFactory*) _r2.o)->fields.gnu_xml_dom_DomDocumentBuilderFactory.ls_ = _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w29774aaab3b1c13)
-        XMLVM_CATCH_SPECIFIC(w29774aaab3b1c13,java_lang_Exception,27)
-    XMLVM_CATCH_END(w29774aaab3b1c13)
-    XMLVM_RESTORE_EXCEPTION_ENV(w29774aaab3b1c13)
+    XMLVM_CATCH_BEGIN(w29800aaab3b1c13)
+        XMLVM_CATCH_SPECIFIC(w29800aaab3b1c13,java_lang_Exception,27)
+    XMLVM_CATCH_END(w29800aaab3b1c13)
+    XMLVM_RESTORE_EXCEPTION_ENV(w29800aaab3b1c13)
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 83)
     XMLVM_EXIT_METHOD()
     return;
@@ -398,7 +398,7 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentBuilderFactory_newDocumentBuilder__(JAVA_OBJE
     _r4.o = me;
     // "http://www.w3.org/TR/REC-xml"
     _r0.o = xmlvm_create_java_string_from_pool(832);
-    XMLVM_TRY_BEGIN(w29774aaab4b1b3)
+    XMLVM_TRY_BEGIN(w29800aaab4b1b3)
     // Begin try
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 88)
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 91)
@@ -411,17 +411,17 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentBuilderFactory_newDocumentBuilder__(JAVA_OBJE
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_SHORT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_ls_DOMImplementationLS_createLSParser___short_java_lang_String])(_r0.o, _r1.i, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w29774aaab4b1b3)
-        XMLVM_CATCH_SPECIFIC(w29774aaab4b1b3,org_w3c_dom_DOMException,116)
-    XMLVM_CATCH_END(w29774aaab4b1b3)
-    XMLVM_RESTORE_EXCEPTION_ENV(w29774aaab4b1b3)
+    XMLVM_CATCH_BEGIN(w29800aaab4b1b3)
+        XMLVM_CATCH_SPECIFIC(w29800aaab4b1b3,org_w3c_dom_DOMException,116)
+    XMLVM_CATCH_END(w29800aaab4b1b3)
+    XMLVM_RESTORE_EXCEPTION_ENV(w29800aaab4b1b3)
     label11:;
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 120)
     XMLVM_CHECK_NPE(0)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSParser_getDomConfig__])(_r0.o);
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 121)
     // "namespaces"
-    _r2.o = xmlvm_create_java_string_from_pool(1151);
+    _r2.o = xmlvm_create_java_string_from_pool(1154);
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 122)
     XMLVM_CHECK_NPE(4)
     _r3.i = javax_xml_parsers_DocumentBuilderFactory_isNamespaceAware__(_r4.o);
@@ -432,7 +432,7 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentBuilderFactory_newDocumentBuilder__(JAVA_OBJE
     gnu_xml_dom_DomDocumentBuilderFactory_setParameter___org_w3c_dom_DOMConfiguration_java_lang_String_java_lang_Object(_r4.o, _r1.o, _r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 123)
     // "element-content-whitespace"
-    _r2.o = xmlvm_create_java_string_from_pool(1150);
+    _r2.o = xmlvm_create_java_string_from_pool(1153);
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 124)
     XMLVM_CHECK_NPE(4)
     _r3.i = javax_xml_parsers_DocumentBuilderFactory_isIgnoringElementContentWhitespace__(_r4.o);
@@ -443,7 +443,7 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentBuilderFactory_newDocumentBuilder__(JAVA_OBJE
     gnu_xml_dom_DomDocumentBuilderFactory_setParameter___org_w3c_dom_DOMConfiguration_java_lang_String_java_lang_Object(_r4.o, _r1.o, _r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 126)
     // "comments"
-    _r2.o = xmlvm_create_java_string_from_pool(1149);
+    _r2.o = xmlvm_create_java_string_from_pool(1152);
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 127)
     XMLVM_CHECK_NPE(4)
     _r3.i = javax_xml_parsers_DocumentBuilderFactory_isIgnoringComments__(_r4.o);
@@ -454,7 +454,7 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentBuilderFactory_newDocumentBuilder__(JAVA_OBJE
     gnu_xml_dom_DomDocumentBuilderFactory_setParameter___org_w3c_dom_DOMConfiguration_java_lang_String_java_lang_Object(_r4.o, _r1.o, _r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 128)
     // "expand-entity-references"
-    _r2.o = xmlvm_create_java_string_from_pool(1152);
+    _r2.o = xmlvm_create_java_string_from_pool(1155);
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 129)
     XMLVM_CHECK_NPE(4)
     _r3.i = javax_xml_parsers_DocumentBuilderFactory_isExpandEntityReferences__(_r4.o);
@@ -465,7 +465,7 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentBuilderFactory_newDocumentBuilder__(JAVA_OBJE
     gnu_xml_dom_DomDocumentBuilderFactory_setParameter___org_w3c_dom_DOMConfiguration_java_lang_String_java_lang_Object(_r4.o, _r1.o, _r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 130)
     // "coalescing"
-    _r2.o = xmlvm_create_java_string_from_pool(1153);
+    _r2.o = xmlvm_create_java_string_from_pool(1156);
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 131)
     XMLVM_CHECK_NPE(4)
     _r3.i = javax_xml_parsers_DocumentBuilderFactory_isCoalescing__(_r4.o);
@@ -476,7 +476,7 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentBuilderFactory_newDocumentBuilder__(JAVA_OBJE
     gnu_xml_dom_DomDocumentBuilderFactory_setParameter___org_w3c_dom_DOMConfiguration_java_lang_String_java_lang_Object(_r4.o, _r1.o, _r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 132)
     // "validating"
-    _r2.o = xmlvm_create_java_string_from_pool(1154);
+    _r2.o = xmlvm_create_java_string_from_pool(1157);
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 133)
     XMLVM_CHECK_NPE(4)
     _r3.i = javax_xml_parsers_DocumentBuilderFactory_isValidating__(_r4.o);
@@ -487,7 +487,7 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentBuilderFactory_newDocumentBuilder__(JAVA_OBJE
     gnu_xml_dom_DomDocumentBuilderFactory_setParameter___org_w3c_dom_DOMConfiguration_java_lang_String_java_lang_Object(_r4.o, _r1.o, _r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 134)
     // "xinclude-aware"
-    _r2.o = xmlvm_create_java_string_from_pool(1155);
+    _r2.o = xmlvm_create_java_string_from_pool(1158);
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 135)
     XMLVM_CHECK_NPE(4)
     _r3.i = javax_xml_parsers_DocumentBuilderFactory_isXIncludeAware__(_r4.o);
@@ -506,13 +506,13 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentBuilderFactory_newDocumentBuilder__(JAVA_OBJE
     return _r1.o;
     label116:;
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 94)
-    java_lang_Thread* curThread_w29774aaab4b1c71 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w29774aaab4b1c71->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w29800aaab4b1c71 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w29800aaab4b1c71->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 96)
     _r1.i = ((org_w3c_dom_DOMException*) _r0.o)->fields.org_w3c_dom_DOMException.code_;
     _r2.i = 9;
     if (_r1.i != _r2.i) goto label143;
-    XMLVM_TRY_BEGIN(w29774aaab4b1c76)
+    XMLVM_TRY_BEGIN(w29800aaab4b1c76)
     // Begin try
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 101)
     _r0.o = ((gnu_xml_dom_DomDocumentBuilderFactory*) _r4.o)->fields.gnu_xml_dom_DomDocumentBuilderFactory.ls_;
@@ -524,15 +524,15 @@ JAVA_OBJECT gnu_xml_dom_DomDocumentBuilderFactory_newDocumentBuilder__(JAVA_OBJE
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_SHORT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_ls_DOMImplementationLS_createLSParser___short_java_lang_String])(_r0.o, _r1.i, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w29774aaab4b1c76)
-        XMLVM_CATCH_SPECIFIC(w29774aaab4b1c76,org_w3c_dom_DOMException,133)
-    XMLVM_CATCH_END(w29774aaab4b1c76)
-    XMLVM_RESTORE_EXCEPTION_ENV(w29774aaab4b1c76)
+    XMLVM_CATCH_BEGIN(w29800aaab4b1c76)
+        XMLVM_CATCH_SPECIFIC(w29800aaab4b1c76,org_w3c_dom_DOMException,133)
+    XMLVM_CATCH_END(w29800aaab4b1c76)
+    XMLVM_RESTORE_EXCEPTION_ENV(w29800aaab4b1c76)
     goto label11;
     label133:;
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 104)
-    java_lang_Thread* curThread_w29774aaab4b1c80 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w29774aaab4b1c80->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w29800aaab4b1c80 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w29800aaab4b1c80->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 107)
     _r1.o = __NEW_javax_xml_parsers_ParserConfigurationException();
     XMLVM_CHECK_NPE(1)
@@ -662,7 +662,7 @@ void gnu_xml_dom_DomDocumentBuilderFactory_setFeature___java_lang_String_boolean
     label8:;
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 165)
     // "http://javax.xml.XMLConstants/feature/secure-processing"
-    _r0.o = xmlvm_create_java_string_from_pool(2443);
+    _r0.o = xmlvm_create_java_string_from_pool(2446);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r2.o);
@@ -693,7 +693,7 @@ JAVA_BOOLEAN gnu_xml_dom_DomDocumentBuilderFactory_getFeature___java_lang_String
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomDocumentBuilderFactory.java", 176)
     // "http://javax.xml.XMLConstants/feature/secure-processing"
-    _r0.o = xmlvm_create_java_string_from_pool(2443);
+    _r0.o = xmlvm_create_java_string_from_pool(2446);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r2.o);

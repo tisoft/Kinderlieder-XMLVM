@@ -341,7 +341,7 @@ JAVA_OBJECT java_util_regex_UCISequenceSet_getName__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("UCISequenceSet.java", 55)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "UCI sequence: "
-    _r1.o = xmlvm_create_java_string_from_pool(3171);
+    _r1.o = xmlvm_create_java_string_from_pool(3174);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     _r1.o = ((java_util_regex_UCISequenceSet*) _r2.o)->fields.java_util_regex_UCISequenceSet.string_;

@@ -306,7 +306,7 @@ JAVA_OBJECT java_util_regex_PreviousMatch_getName__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("PreviousMatch.java", 47)
     // "PreviousMatch"
-    _r0.o = xmlvm_create_java_string_from_pool(1375);
+    _r0.o = xmlvm_create_java_string_from_pool(1378);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

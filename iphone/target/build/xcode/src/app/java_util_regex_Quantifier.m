@@ -493,7 +493,7 @@ JAVA_OBJECT java_util_regex_Quantifier_toString__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Quantifier.java", 68)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "\173"
-    _r1.o = xmlvm_create_java_string_from_pool(1818);
+    _r1.o = xmlvm_create_java_string_from_pool(1821);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("Quantifier.java", 69)
@@ -516,7 +516,7 @@ JAVA_OBJECT java_util_regex_Quantifier_toString__(JAVA_OBJECT me)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("Quantifier.java", 72)
     // "\175"
-    _r1.o = xmlvm_create_java_string_from_pool(1819);
+    _r1.o = xmlvm_create_java_string_from_pool(1822);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     //java_lang_StringBuilder_toString__[5]

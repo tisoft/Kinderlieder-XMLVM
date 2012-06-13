@@ -359,7 +359,7 @@ void java_net_ResponseCache___CLINIT_()
     _r0.o = __NEW_java_net_NetPermission();
     XMLVM_SOURCE_POSITION("ResponseCache.java", 58)
     // "getResponseCache"
-    _r1.o = xmlvm_create_java_string_from_pool(1825);
+    _r1.o = xmlvm_create_java_string_from_pool(1828);
     XMLVM_CHECK_NPE(0)
     java_net_NetPermission___INIT____java_lang_String(_r0.o, _r1.o);
     java_net_ResponseCache_PUT_getResponseCachepermission( _r0.o);
@@ -367,7 +367,7 @@ void java_net_ResponseCache___CLINIT_()
     _r0.o = __NEW_java_net_NetPermission();
     XMLVM_SOURCE_POSITION("ResponseCache.java", 65)
     // "setResponseCache"
-    _r1.o = xmlvm_create_java_string_from_pool(1826);
+    _r1.o = xmlvm_create_java_string_from_pool(1829);
     XMLVM_CHECK_NPE(0)
     java_net_NetPermission___INIT____java_lang_String(_r0.o, _r1.o);
     java_net_ResponseCache_PUT_setResponseCachepermission( _r0.o);

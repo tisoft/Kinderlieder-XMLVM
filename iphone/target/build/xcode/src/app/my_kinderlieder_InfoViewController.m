@@ -241,7 +241,7 @@ void my_kinderlieder_InfoViewController___INIT____org_xmlvm_iphone_UIWindow(JAVA
     _r0.o = ((my_kinderlieder_InfoViewController*) _r4.o)->fields.my_kinderlieder_InfoViewController.infoView_;
     _r1.o = org_xmlvm_iphone_NSBundle_mainBundle__();
     // "info"
-    _r2.o = xmlvm_create_java_string_from_pool(2318);
+    _r2.o = xmlvm_create_java_string_from_pool(2321);
     // "html"
     _r3.o = xmlvm_create_java_string_from_pool(739);
     XMLVM_CHECK_NPE(1)
@@ -252,7 +252,7 @@ void my_kinderlieder_InfoViewController___INIT____org_xmlvm_iphone_UIWindow(JAVA
     org_xmlvm_iphone_UIWebView_loadRequest___org_xmlvm_iphone_NSURLRequest(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("InfoViewController.java", 60)
     // "Info"
-    _r0.o = xmlvm_create_java_string_from_pool(2319);
+    _r0.o = xmlvm_create_java_string_from_pool(2322);
     XMLVM_CHECK_NPE(4)
     org_xmlvm_iphone_UIViewController_setTitle___java_lang_String(_r4.o, _r0.o);
     XMLVM_SOURCE_POSITION("InfoViewController.java", 61)

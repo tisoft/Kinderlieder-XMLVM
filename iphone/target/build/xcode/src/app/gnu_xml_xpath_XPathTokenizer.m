@@ -388,7 +388,7 @@ void gnu_xml_xpath_XPathTokenizer___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 98)
     _r0.o = gnu_xml_xpath_XPathTokenizer_GET_keywords();
     // "ancestor"
-    _r1.o = xmlvm_create_java_string_from_pool(2452);
+    _r1.o = xmlvm_create_java_string_from_pool(2455);
     _r2.o = __NEW_java_lang_Integer();
     _r3.i = 283;
     XMLVM_CHECK_NPE(2)
@@ -398,7 +398,7 @@ void gnu_xml_xpath_XPathTokenizer___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 99)
     _r0.o = gnu_xml_xpath_XPathTokenizer_GET_keywords();
     // "ancestor-or-self"
-    _r1.o = xmlvm_create_java_string_from_pool(2453);
+    _r1.o = xmlvm_create_java_string_from_pool(2456);
     _r2.o = __NEW_java_lang_Integer();
     _r3.i = 284;
     XMLVM_CHECK_NPE(2)
@@ -408,7 +408,7 @@ void gnu_xml_xpath_XPathTokenizer___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 100)
     _r0.o = gnu_xml_xpath_XPathTokenizer_GET_keywords();
     // "attribute"
-    _r1.o = xmlvm_create_java_string_from_pool(2454);
+    _r1.o = xmlvm_create_java_string_from_pool(2457);
     _r2.o = __NEW_java_lang_Integer();
     _r3.i = 285;
     XMLVM_CHECK_NPE(2)
@@ -418,7 +418,7 @@ void gnu_xml_xpath_XPathTokenizer___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 101)
     _r0.o = gnu_xml_xpath_XPathTokenizer_GET_keywords();
     // "child"
-    _r1.o = xmlvm_create_java_string_from_pool(2455);
+    _r1.o = xmlvm_create_java_string_from_pool(2458);
     _r2.o = __NEW_java_lang_Integer();
     _r3.i = 286;
     XMLVM_CHECK_NPE(2)
@@ -428,7 +428,7 @@ void gnu_xml_xpath_XPathTokenizer___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 102)
     _r0.o = gnu_xml_xpath_XPathTokenizer_GET_keywords();
     // "descendant"
-    _r1.o = xmlvm_create_java_string_from_pool(2456);
+    _r1.o = xmlvm_create_java_string_from_pool(2459);
     _r2.o = __NEW_java_lang_Integer();
     _r3.i = 287;
     XMLVM_CHECK_NPE(2)
@@ -438,7 +438,7 @@ void gnu_xml_xpath_XPathTokenizer___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 103)
     _r0.o = gnu_xml_xpath_XPathTokenizer_GET_keywords();
     // "descendant-or-self"
-    _r1.o = xmlvm_create_java_string_from_pool(2457);
+    _r1.o = xmlvm_create_java_string_from_pool(2460);
     _r2.o = __NEW_java_lang_Integer();
     _r3.i = 288;
     XMLVM_CHECK_NPE(2)
@@ -448,7 +448,7 @@ void gnu_xml_xpath_XPathTokenizer___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 104)
     _r0.o = gnu_xml_xpath_XPathTokenizer_GET_keywords();
     // "following"
-    _r1.o = xmlvm_create_java_string_from_pool(2458);
+    _r1.o = xmlvm_create_java_string_from_pool(2461);
     _r2.o = __NEW_java_lang_Integer();
     _r3.i = 289;
     XMLVM_CHECK_NPE(2)
@@ -458,7 +458,7 @@ void gnu_xml_xpath_XPathTokenizer___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 105)
     _r0.o = gnu_xml_xpath_XPathTokenizer_GET_keywords();
     // "following-sibling"
-    _r1.o = xmlvm_create_java_string_from_pool(2459);
+    _r1.o = xmlvm_create_java_string_from_pool(2462);
     _r2.o = __NEW_java_lang_Integer();
     _r3.i = 290;
     XMLVM_CHECK_NPE(2)
@@ -468,7 +468,7 @@ void gnu_xml_xpath_XPathTokenizer___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 106)
     _r0.o = gnu_xml_xpath_XPathTokenizer_GET_keywords();
     // "namespace"
-    _r1.o = xmlvm_create_java_string_from_pool(2460);
+    _r1.o = xmlvm_create_java_string_from_pool(2463);
     _r2.o = __NEW_java_lang_Integer();
     _r3.i = 291;
     XMLVM_CHECK_NPE(2)
@@ -478,7 +478,7 @@ void gnu_xml_xpath_XPathTokenizer___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 107)
     _r0.o = gnu_xml_xpath_XPathTokenizer_GET_keywords();
     // "parent"
-    _r1.o = xmlvm_create_java_string_from_pool(2461);
+    _r1.o = xmlvm_create_java_string_from_pool(2464);
     _r2.o = __NEW_java_lang_Integer();
     _r3.i = 292;
     XMLVM_CHECK_NPE(2)
@@ -488,7 +488,7 @@ void gnu_xml_xpath_XPathTokenizer___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 108)
     _r0.o = gnu_xml_xpath_XPathTokenizer_GET_keywords();
     // "preceding"
-    _r1.o = xmlvm_create_java_string_from_pool(2462);
+    _r1.o = xmlvm_create_java_string_from_pool(2465);
     _r2.o = __NEW_java_lang_Integer();
     _r3.i = 293;
     XMLVM_CHECK_NPE(2)
@@ -498,7 +498,7 @@ void gnu_xml_xpath_XPathTokenizer___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 109)
     _r0.o = gnu_xml_xpath_XPathTokenizer_GET_keywords();
     // "preceding-sibling"
-    _r1.o = xmlvm_create_java_string_from_pool(2463);
+    _r1.o = xmlvm_create_java_string_from_pool(2466);
     _r2.o = __NEW_java_lang_Integer();
     _r3.i = 294;
     XMLVM_CHECK_NPE(2)
@@ -508,7 +508,7 @@ void gnu_xml_xpath_XPathTokenizer___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 110)
     _r0.o = gnu_xml_xpath_XPathTokenizer_GET_keywords();
     // "self"
-    _r1.o = xmlvm_create_java_string_from_pool(2464);
+    _r1.o = xmlvm_create_java_string_from_pool(2467);
     _r2.o = __NEW_java_lang_Integer();
     _r3.i = 295;
     XMLVM_CHECK_NPE(2)
@@ -528,7 +528,7 @@ void gnu_xml_xpath_XPathTokenizer___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 112)
     _r0.o = gnu_xml_xpath_XPathTokenizer_GET_keywords();
     // "mod"
-    _r1.o = xmlvm_create_java_string_from_pool(1044);
+    _r1.o = xmlvm_create_java_string_from_pool(1047);
     _r2.o = __NEW_java_lang_Integer();
     _r3.i = 297;
     XMLVM_CHECK_NPE(2)
@@ -538,7 +538,7 @@ void gnu_xml_xpath_XPathTokenizer___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 113)
     _r0.o = gnu_xml_xpath_XPathTokenizer_GET_keywords();
     // "or"
-    _r1.o = xmlvm_create_java_string_from_pool(2465);
+    _r1.o = xmlvm_create_java_string_from_pool(2468);
     _r2.o = __NEW_java_lang_Integer();
     _r3.i = 298;
     XMLVM_CHECK_NPE(2)
@@ -548,7 +548,7 @@ void gnu_xml_xpath_XPathTokenizer___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 114)
     _r0.o = gnu_xml_xpath_XPathTokenizer_GET_keywords();
     // "and"
-    _r1.o = xmlvm_create_java_string_from_pool(2466);
+    _r1.o = xmlvm_create_java_string_from_pool(2469);
     _r2.o = __NEW_java_lang_Integer();
     _r3.i = 299;
     XMLVM_CHECK_NPE(2)
@@ -558,7 +558,7 @@ void gnu_xml_xpath_XPathTokenizer___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 115)
     _r0.o = gnu_xml_xpath_XPathTokenizer_GET_keywords();
     // "comment"
-    _r1.o = xmlvm_create_java_string_from_pool(2467);
+    _r1.o = xmlvm_create_java_string_from_pool(2470);
     _r2.o = __NEW_java_lang_Integer();
     _r3.i = 300;
     XMLVM_CHECK_NPE(2)
@@ -568,7 +568,7 @@ void gnu_xml_xpath_XPathTokenizer___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 116)
     _r0.o = gnu_xml_xpath_XPathTokenizer_GET_keywords();
     // "processing-instruction"
-    _r1.o = xmlvm_create_java_string_from_pool(2468);
+    _r1.o = xmlvm_create_java_string_from_pool(2471);
     _r2.o = __NEW_java_lang_Integer();
     _r3.i = 301;
     XMLVM_CHECK_NPE(2)
@@ -588,7 +588,7 @@ void gnu_xml_xpath_XPathTokenizer___CLINIT_()
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 118)
     _r0.o = gnu_xml_xpath_XPathTokenizer_GET_keywords();
     // "node"
-    _r1.o = xmlvm_create_java_string_from_pool(2469);
+    _r1.o = xmlvm_create_java_string_from_pool(2472);
     _r2.o = __NEW_java_lang_Integer();
     _r3.i = 303;
     XMLVM_CHECK_NPE(2)

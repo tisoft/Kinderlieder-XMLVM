@@ -521,7 +521,7 @@ void java_net_ProxySelectorImpl_connectFailed___java_net_URI_java_net_SocketAddr
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 79)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.4D"
-    _r1.o = xmlvm_create_java_string_from_pool(2391);
+    _r1.o = xmlvm_create_java_string_from_pool(2394);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -552,7 +552,7 @@ JAVA_OBJECT java_net_ProxySelectorImpl_select___java_net_URI(JAVA_OBJECT me, JAV
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 88)
     _r4.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.4D"
-    _r5.o = xmlvm_create_java_string_from_pool(2391);
+    _r5.o = xmlvm_create_java_string_from_pool(2394);
     _r5.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r5.o);
     XMLVM_CHECK_NPE(4)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r4.o, _r5.o);
@@ -576,7 +576,7 @@ JAVA_OBJECT java_net_ProxySelectorImpl_select___java_net_URI(JAVA_OBJECT me, JAV
     _r1.o = java_net_Proxy_GET_NO_PROXY();
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 99)
     // "http"
-    _r4.o = xmlvm_create_java_string_from_pool(3059);
+    _r4.o = xmlvm_create_java_string_from_pool(3062);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(4)
     _r4.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r3.o);
@@ -611,7 +611,7 @@ JAVA_OBJECT java_net_ProxySelectorImpl_select___java_net_URI(JAVA_OBJECT me, JAV
     label67:;
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 103)
     // "ftp"
-    _r4.o = xmlvm_create_java_string_from_pool(1102);
+    _r4.o = xmlvm_create_java_string_from_pool(1105);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(4)
     _r4.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r3.o);
@@ -623,7 +623,7 @@ JAVA_OBJECT java_net_ProxySelectorImpl_select___java_net_URI(JAVA_OBJECT me, JAV
     label80:;
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 105)
     // "socket"
-    _r4.o = xmlvm_create_java_string_from_pool(3060);
+    _r4.o = xmlvm_create_java_string_from_pool(3063);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(4)
     _r4.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r3.o);
@@ -657,16 +657,16 @@ JAVA_OBJECT java_net_ProxySelectorImpl_selectHttpProxy___java_lang_String(JAVA_O
     _r8.i = 1080;
     _r7.i = 80;
     // "proxyPort"
-    _r10.o = xmlvm_create_java_string_from_pool(3061);
+    _r10.o = xmlvm_create_java_string_from_pool(3064);
     // "http.proxyPort"
-    _r9.o = xmlvm_create_java_string_from_pool(3062);
+    _r9.o = xmlvm_create_java_string_from_pool(3065);
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 123)
     _r3.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 124)
     _r4.o = java_net_Proxy_Type_GET_DIRECT();
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 126)
     // "http.nonProxyHosts"
-    _r5.o = xmlvm_create_java_string_from_pool(3063);
+    _r5.o = xmlvm_create_java_string_from_pool(3066);
     XMLVM_CHECK_NPE(11)
     _r2.o = java_net_ProxySelectorImpl_getSystemProperty___java_lang_String(_r11.o, _r5.o);
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 128)
@@ -682,7 +682,7 @@ JAVA_OBJECT java_net_ProxySelectorImpl_selectHttpProxy___java_lang_String(JAVA_O
     label26:;
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 132)
     // "http.proxyHost"
-    _r5.o = xmlvm_create_java_string_from_pool(3064);
+    _r5.o = xmlvm_create_java_string_from_pool(3067);
     XMLVM_CHECK_NPE(11)
     _r1.o = java_net_ProxySelectorImpl_getSystemProperty___java_lang_String(_r11.o, _r5.o);
     if (_r1.o == JAVA_NULL) goto label58;
@@ -691,9 +691,9 @@ JAVA_OBJECT java_net_ProxySelectorImpl_selectHttpProxy___java_lang_String(JAVA_O
     _r4.o = java_net_Proxy_Type_GET_HTTP();
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 136)
     // "http.proxyPort"
-    _r5.o = xmlvm_create_java_string_from_pool(3062);
+    _r5.o = xmlvm_create_java_string_from_pool(3065);
     // "proxyPort"
-    _r5.o = xmlvm_create_java_string_from_pool(3061);
+    _r5.o = xmlvm_create_java_string_from_pool(3064);
     _r5.o = java_lang_String_valueOf___int(_r7.i);
     XMLVM_CHECK_NPE(11)
     _r3.o = java_net_ProxySelectorImpl_getSystemPropertyOrAlternative___java_lang_String_java_lang_String_java_lang_String(_r11.o, _r9.o, _r10.o, _r5.o);
@@ -709,7 +709,7 @@ JAVA_OBJECT java_net_ProxySelectorImpl_selectHttpProxy___java_lang_String(JAVA_O
     label58:;
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 138)
     // "proxyHost"
-    _r5.o = xmlvm_create_java_string_from_pool(3065);
+    _r5.o = xmlvm_create_java_string_from_pool(3068);
     _r6.o = JAVA_NULL;
     XMLVM_CHECK_NPE(11)
     _r1.o = java_net_ProxySelectorImpl_getSystemProperty___java_lang_String_java_lang_String(_r11.o, _r5.o, _r6.o);
@@ -718,9 +718,9 @@ JAVA_OBJECT java_net_ProxySelectorImpl_selectHttpProxy___java_lang_String(JAVA_O
     _r4.o = java_net_Proxy_Type_GET_HTTP();
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 141)
     // "proxyPort"
-    _r5.o = xmlvm_create_java_string_from_pool(3061);
+    _r5.o = xmlvm_create_java_string_from_pool(3064);
     // "http.proxyPort"
-    _r5.o = xmlvm_create_java_string_from_pool(3062);
+    _r5.o = xmlvm_create_java_string_from_pool(3065);
     _r5.o = java_lang_String_valueOf___int(_r7.i);
     XMLVM_CHECK_NPE(11)
     _r3.o = java_net_ProxySelectorImpl_getSystemPropertyOrAlternative___java_lang_String_java_lang_String_java_lang_String(_r11.o, _r10.o, _r9.o, _r5.o);
@@ -728,7 +728,7 @@ JAVA_OBJECT java_net_ProxySelectorImpl_selectHttpProxy___java_lang_String(JAVA_O
     label82:;
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 144)
     // "socksProxyHost"
-    _r5.o = xmlvm_create_java_string_from_pool(3066);
+    _r5.o = xmlvm_create_java_string_from_pool(3069);
     XMLVM_CHECK_NPE(11)
     _r1.o = java_net_ProxySelectorImpl_getSystemProperty___java_lang_String(_r11.o, _r5.o);
     if (_r1.o == JAVA_NULL) goto label48;
@@ -736,7 +736,7 @@ JAVA_OBJECT java_net_ProxySelectorImpl_selectHttpProxy___java_lang_String(JAVA_O
     _r4.o = java_net_Proxy_Type_GET_SOCKS();
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 147)
     // "socksProxyPort"
-    _r5.o = xmlvm_create_java_string_from_pool(3067);
+    _r5.o = xmlvm_create_java_string_from_pool(3070);
     _r6.o = java_lang_String_valueOf___int(_r8.i);
     XMLVM_CHECK_NPE(11)
     _r3.o = java_net_ProxySelectorImpl_getSystemProperty___java_lang_String_java_lang_String(_r11.o, _r5.o, _r6.o);
@@ -769,7 +769,7 @@ JAVA_OBJECT java_net_ProxySelectorImpl_selectHttpsProxy__(JAVA_OBJECT me)
     _r3.o = java_net_Proxy_Type_GET_DIRECT();
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 163)
     // "https.proxyHost"
-    _r4.o = xmlvm_create_java_string_from_pool(3068);
+    _r4.o = xmlvm_create_java_string_from_pool(3071);
     XMLVM_CHECK_NPE(8)
     _r1.o = java_net_ProxySelectorImpl_getSystemProperty___java_lang_String(_r8.o, _r4.o);
     if (_r1.o == JAVA_NULL) goto label37;
@@ -778,7 +778,7 @@ JAVA_OBJECT java_net_ProxySelectorImpl_selectHttpsProxy__(JAVA_OBJECT me)
     _r3.o = java_net_Proxy_Type_GET_HTTP();
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 167)
     // "https.proxyPort"
-    _r4.o = xmlvm_create_java_string_from_pool(3069);
+    _r4.o = xmlvm_create_java_string_from_pool(3072);
     _r5.o = java_lang_String_valueOf___int(_r6.i);
     XMLVM_CHECK_NPE(8)
     _r2.o = java_net_ProxySelectorImpl_getSystemProperty___java_lang_String_java_lang_String(_r8.o, _r4.o, _r5.o);
@@ -796,7 +796,7 @@ JAVA_OBJECT java_net_ProxySelectorImpl_selectHttpsProxy__(JAVA_OBJECT me)
     label37:;
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 170)
     // "socksProxyHost"
-    _r4.o = xmlvm_create_java_string_from_pool(3066);
+    _r4.o = xmlvm_create_java_string_from_pool(3069);
     XMLVM_CHECK_NPE(8)
     _r1.o = java_net_ProxySelectorImpl_getSystemProperty___java_lang_String(_r8.o, _r4.o);
     if (_r1.o == JAVA_NULL) goto label27;
@@ -805,7 +805,7 @@ JAVA_OBJECT java_net_ProxySelectorImpl_selectHttpsProxy__(JAVA_OBJECT me)
     _r3.o = java_net_Proxy_Type_GET_SOCKS();
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 174)
     // "socksProxyPort"
-    _r4.o = xmlvm_create_java_string_from_pool(3067);
+    _r4.o = xmlvm_create_java_string_from_pool(3070);
     _r5.o = java_lang_String_valueOf___int(_r7.i);
     XMLVM_CHECK_NPE(8)
     _r2.o = java_net_ProxySelectorImpl_getSystemProperty___java_lang_String_java_lang_String(_r8.o, _r4.o, _r5.o);
@@ -841,7 +841,7 @@ JAVA_OBJECT java_net_ProxySelectorImpl_selectFtpProxy___java_lang_String(JAVA_OB
     _r4.o = java_net_Proxy_Type_GET_DIRECT();
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 190)
     // "ftp.nonProxyHosts"
-    _r5.o = xmlvm_create_java_string_from_pool(3070);
+    _r5.o = xmlvm_create_java_string_from_pool(3073);
     XMLVM_CHECK_NPE(9)
     _r2.o = java_net_ProxySelectorImpl_getSystemProperty___java_lang_String(_r9.o, _r5.o);
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 192)
@@ -857,7 +857,7 @@ JAVA_OBJECT java_net_ProxySelectorImpl_selectFtpProxy___java_lang_String(JAVA_OB
     label22:;
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 196)
     // "ftp.proxyHost"
-    _r5.o = xmlvm_create_java_string_from_pool(3071);
+    _r5.o = xmlvm_create_java_string_from_pool(3074);
     XMLVM_CHECK_NPE(9)
     _r1.o = java_net_ProxySelectorImpl_getSystemProperty___java_lang_String(_r9.o, _r5.o);
     if (_r1.o == JAVA_NULL) goto label52;
@@ -866,7 +866,7 @@ JAVA_OBJECT java_net_ProxySelectorImpl_selectFtpProxy___java_lang_String(JAVA_OB
     _r4.o = java_net_Proxy_Type_GET_HTTP();
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 200)
     // "ftp.proxyPort"
-    _r5.o = xmlvm_create_java_string_from_pool(3072);
+    _r5.o = xmlvm_create_java_string_from_pool(3075);
     _r6.o = java_lang_String_valueOf___int(_r7.i);
     XMLVM_CHECK_NPE(9)
     _r3.o = java_net_ProxySelectorImpl_getSystemProperty___java_lang_String_java_lang_String(_r9.o, _r5.o, _r6.o);
@@ -882,7 +882,7 @@ JAVA_OBJECT java_net_ProxySelectorImpl_selectFtpProxy___java_lang_String(JAVA_OB
     label52:;
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 203)
     // "socksProxyHost"
-    _r5.o = xmlvm_create_java_string_from_pool(3066);
+    _r5.o = xmlvm_create_java_string_from_pool(3069);
     XMLVM_CHECK_NPE(9)
     _r1.o = java_net_ProxySelectorImpl_getSystemProperty___java_lang_String(_r9.o, _r5.o);
     if (_r1.o == JAVA_NULL) goto label42;
@@ -891,7 +891,7 @@ JAVA_OBJECT java_net_ProxySelectorImpl_selectFtpProxy___java_lang_String(JAVA_OB
     _r4.o = java_net_Proxy_Type_GET_SOCKS();
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 207)
     // "socksProxyPort"
-    _r5.o = xmlvm_create_java_string_from_pool(3067);
+    _r5.o = xmlvm_create_java_string_from_pool(3070);
     _r6.o = java_lang_String_valueOf___int(_r8.i);
     XMLVM_CHECK_NPE(9)
     _r3.o = java_net_ProxySelectorImpl_getSystemProperty___java_lang_String_java_lang_String(_r9.o, _r5.o, _r6.o);
@@ -921,7 +921,7 @@ JAVA_OBJECT java_net_ProxySelectorImpl_selectSocksProxy__(JAVA_OBJECT me)
     _r2.o = java_net_Proxy_Type_GET_DIRECT();
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 224)
     // "socksProxyHost"
-    _r3.o = xmlvm_create_java_string_from_pool(3066);
+    _r3.o = xmlvm_create_java_string_from_pool(3069);
     XMLVM_CHECK_NPE(6)
     _r0.o = java_net_ProxySelectorImpl_getSystemProperty___java_lang_String(_r6.o, _r3.o);
     if (_r0.o == JAVA_NULL) goto label25;
@@ -930,7 +930,7 @@ JAVA_OBJECT java_net_ProxySelectorImpl_selectSocksProxy__(JAVA_OBJECT me)
     _r2.o = java_net_Proxy_Type_GET_SOCKS();
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 227)
     // "socksProxyPort"
-    _r3.o = xmlvm_create_java_string_from_pool(3067);
+    _r3.o = xmlvm_create_java_string_from_pool(3070);
     _r4.o = java_lang_String_valueOf___int(_r5.i);
     XMLVM_CHECK_NPE(6)
     _r1.o = java_net_ProxySelectorImpl_getSystemProperty___java_lang_String_java_lang_String(_r6.o, _r3.o, _r4.o);
@@ -1011,7 +1011,7 @@ JAVA_BOOLEAN java_net_ProxySelectorImpl_isNonProxyHost___java_lang_String_java_l
     label41:;
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 253)
     // ".*"
-    _r5.o = xmlvm_create_java_string_from_pool(3073);
+    _r5.o = xmlvm_create_java_string_from_pool(3076);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r5.o);
     goto label32;
@@ -1055,7 +1055,7 @@ JAVA_OBJECT java_net_ProxySelectorImpl_createProxy___java_net_Proxy_Type_java_la
     XMLVM_EXIT_METHOD()
     return _r2.o;
     label7:;
-    XMLVM_TRY_BEGIN(w38249aaac13b1c15)
+    XMLVM_TRY_BEGIN(w38284aaac13b1c15)
     // Begin try
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 275)
     _r3.o = java_lang_Integer_valueOf___java_lang_String(_r7.o);
@@ -1064,10 +1064,10 @@ JAVA_OBJECT java_net_ProxySelectorImpl_createProxy___java_net_Proxy_Type_java_la
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_Integer*) _r3.o)->tib->vtable[9])(_r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38249aaac13b1c15)
-        XMLVM_CATCH_SPECIFIC(w38249aaac13b1c15,java_lang_NumberFormatException,25)
-    XMLVM_CATCH_END(w38249aaac13b1c15)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38249aaac13b1c15)
+    XMLVM_CATCH_BEGIN(w38284aaac13b1c15)
+        XMLVM_CATCH_SPECIFIC(w38284aaac13b1c15,java_lang_NumberFormatException,25)
+    XMLVM_CATCH_END(w38284aaac13b1c15)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38284aaac13b1c15)
     label15:;
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 279)
     _r2.o = __NEW_java_net_Proxy();
@@ -1077,8 +1077,8 @@ JAVA_OBJECT java_net_ProxySelectorImpl_createProxy___java_net_Proxy_Type_java_la
     goto label6;
     label25:;
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 276)
-    java_lang_Thread* curThread_w38249aaac13b1c24 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r3.o = curThread_w38249aaac13b1c24->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38284aaac13b1c24 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r3.o = curThread_w38284aaac13b1c24->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r3;
     _r1 = _r8;
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 277)

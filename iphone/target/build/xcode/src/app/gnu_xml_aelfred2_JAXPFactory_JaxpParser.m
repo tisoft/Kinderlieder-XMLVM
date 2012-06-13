@@ -414,7 +414,7 @@ JAVA_BOOLEAN gnu_xml_aelfred2_JAXPFactory_JaxpParser_isNamespaceAware__(JAVA_OBJ
     XMLVMElem _r1;
     XMLVMElem _r2;
     _r2.o = me;
-    XMLVM_TRY_BEGIN(w28477aaab7b1b2)
+    XMLVM_TRY_BEGIN(w28503aaab7b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 206)
     _r0.o = ((gnu_xml_aelfred2_JAXPFactory_JaxpParser*) _r2.o)->fields.gnu_xml_aelfred2_JAXPFactory_JaxpParser.ae2_;
@@ -425,16 +425,16 @@ JAVA_BOOLEAN gnu_xml_aelfred2_JAXPFactory_JaxpParser_isNamespaceAware__(JAVA_OBJ
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_aelfred2_XmlReader*) _r0.o)->tib->vtable[10])(_r0.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28477aaab7b1b2)
-        XMLVM_CATCH_SPECIFIC(w28477aaab7b1b2,java_lang_Exception,9)
-    XMLVM_CATCH_END(w28477aaab7b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28477aaab7b1b2)
+    XMLVM_CATCH_BEGIN(w28503aaab7b1b2)
+        XMLVM_CATCH_SPECIFIC(w28503aaab7b1b2,java_lang_Exception,9)
+    XMLVM_CATCH_END(w28503aaab7b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28503aaab7b1b2)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label9:;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 210)
-    java_lang_Thread* curThread_w28477aaab7b1b6 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w28477aaab7b1b6->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w28503aaab7b1b6 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w28503aaab7b1b6->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_java_lang_Error();
     XMLVM_CHECK_NPE(0)
     java_lang_Error___INIT___(_r0.o);
@@ -450,7 +450,7 @@ JAVA_BOOLEAN gnu_xml_aelfred2_JAXPFactory_JaxpParser_isValidating__(JAVA_OBJECT 
     XMLVMElem _r1;
     XMLVMElem _r2;
     _r2.o = me;
-    XMLVM_TRY_BEGIN(w28477aaab8b1b2)
+    XMLVM_TRY_BEGIN(w28503aaab8b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 218)
     _r0.o = ((gnu_xml_aelfred2_JAXPFactory_JaxpParser*) _r2.o)->fields.gnu_xml_aelfred2_JAXPFactory_JaxpParser.ae2_;
@@ -461,16 +461,16 @@ JAVA_BOOLEAN gnu_xml_aelfred2_JAXPFactory_JaxpParser_isValidating__(JAVA_OBJECT 
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_aelfred2_XmlReader*) _r0.o)->tib->vtable[10])(_r0.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28477aaab8b1b2)
-        XMLVM_CATCH_SPECIFIC(w28477aaab8b1b2,java_lang_Exception,9)
-    XMLVM_CATCH_END(w28477aaab8b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28477aaab8b1b2)
+    XMLVM_CATCH_BEGIN(w28503aaab8b1b2)
+        XMLVM_CATCH_SPECIFIC(w28503aaab8b1b2,java_lang_Exception,9)
+    XMLVM_CATCH_END(w28503aaab8b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28503aaab8b1b2)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label9:;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 222)
-    java_lang_Thread* curThread_w28477aaab8b1b6 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w28477aaab8b1b6->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w28503aaab8b1b6 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w28503aaab8b1b6->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_java_lang_Error();
     XMLVM_CHECK_NPE(0)
     java_lang_Error___INIT___(_r0.o);

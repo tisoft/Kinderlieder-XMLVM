@@ -753,7 +753,7 @@ void gnu_xml_stream_XMLParser_Doctype_addElementDecl___java_lang_String_java_lan
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT___(_r1.o);
     // "E"
-    _r2.o = xmlvm_create_java_string_from_pool(2526);
+    _r2.o = xmlvm_create_java_string_from_pool(2529);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(1)
@@ -814,7 +814,7 @@ void gnu_xml_stream_XMLParser_Doctype_addAttributeDecl___java_lang_String_java_l
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuilder___INIT___(_r2.o);
     // "A"
-    _r3.o = xmlvm_create_java_string_from_pool(2527);
+    _r3.o = xmlvm_create_java_string_from_pool(2530);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r3.o);
     XMLVM_CHECK_NPE(2)
@@ -884,7 +884,7 @@ void gnu_xml_stream_XMLParser_Doctype_addEntityDecl___java_lang_String_java_lang
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT___(_r1.o);
     // "e"
-    _r2.o = xmlvm_create_java_string_from_pool(1383);
+    _r2.o = xmlvm_create_java_string_from_pool(1386);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(1)
@@ -943,7 +943,7 @@ void gnu_xml_stream_XMLParser_Doctype_addEntityDecl___java_lang_String_gnu_xml_s
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT___(_r1.o);
     // "e"
-    _r2.o = xmlvm_create_java_string_from_pool(1383);
+    _r2.o = xmlvm_create_java_string_from_pool(1386);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(1)
@@ -1002,7 +1002,7 @@ void gnu_xml_stream_XMLParser_Doctype_addNotationDecl___java_lang_String_gnu_xml
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT___(_r1.o);
     // "n"
-    _r2.o = xmlvm_create_java_string_from_pool(2528);
+    _r2.o = xmlvm_create_java_string_from_pool(2531);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(1)
@@ -1052,7 +1052,7 @@ void gnu_xml_stream_XMLParser_Doctype_addComment___java_lang_String(JAVA_OBJECT 
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuilder___INIT___(_r2.o);
     // "c"
-    _r3.o = xmlvm_create_java_string_from_pool(2529);
+    _r3.o = xmlvm_create_java_string_from_pool(2532);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r3.o);
     XMLVM_CHECK_NPE(2)

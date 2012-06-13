@@ -386,7 +386,7 @@ JAVA_OBJECT gnu_xml_xpath_ParenthesizedExpr_toString__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("ParenthesizedExpr.java", 92)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "("
-    _r1.o = xmlvm_create_java_string_from_pool(1082);
+    _r1.o = xmlvm_create_java_string_from_pool(1085);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     _r1.o = ((gnu_xml_xpath_ParenthesizedExpr*) _r2.o)->fields.gnu_xml_xpath_ParenthesizedExpr.expr_;

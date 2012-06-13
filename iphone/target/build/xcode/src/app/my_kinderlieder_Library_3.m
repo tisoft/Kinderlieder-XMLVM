@@ -280,7 +280,7 @@ void my_kinderlieder_Library_3_load__(JAVA_OBJECT me)
     _r0.o = ((my_kinderlieder_Library_3*) _r0.o)->fields.my_kinderlieder_Library_3.val_product_;
     _r19 = _r0;
     // "info.json"
-    _r20.o = xmlvm_create_java_string_from_pool(2663);
+    _r20.o = xmlvm_create_java_string_from_pool(2666);
     _r0 = _r10;
     _r1 = _r19;
     _r2 = _r20;
@@ -347,7 +347,7 @@ void my_kinderlieder_Library_3_load__(JAVA_OBJECT me)
     _r16.o = org_json_JSONObject_optString___java_lang_String_java_lang_String(_r0.o, _r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("Library.java", 89)
     // "file"
-    _r19.o = xmlvm_create_java_string_from_pool(2345);
+    _r19.o = xmlvm_create_java_string_from_pool(2348);
     _r20.o = JAVA_NULL;
     _r0 = _r17;
     _r1 = _r19;
@@ -382,7 +382,7 @@ void my_kinderlieder_Library_3_load__(JAVA_OBJECT me)
     label160:;
     XMLVM_SOURCE_POSITION("Library.java", 94)
     // "music"
-    _r19.o = xmlvm_create_java_string_from_pool(2664);
+    _r19.o = xmlvm_create_java_string_from_pool(2667);
     _r0 = _r17;
     _r1 = _r19;
     XMLVM_CHECK_NPE(0)
@@ -409,7 +409,7 @@ void my_kinderlieder_Library_3_load__(JAVA_OBJECT me)
     _r14.o = org_json_JSONObject_getString___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("Library.java", 99)
     // "file"
-    _r19.o = xmlvm_create_java_string_from_pool(2345);
+    _r19.o = xmlvm_create_java_string_from_pool(2348);
     _r0 = _r12;
     _r1 = _r19;
     XMLVM_CHECK_NPE(0)
@@ -442,7 +442,7 @@ void my_kinderlieder_Library_3_load__(JAVA_OBJECT me)
     _r8.i = _r8.i + 1;
     goto label65;
     label247:;
-    XMLVM_TRY_BEGIN(w36849aaab3b1d139)
+    XMLVM_TRY_BEGIN(w36875aaab3b1d139)
     // Begin try
     XMLVM_SOURCE_POSITION("Library.java", 106)
     //java_io_BufferedReader_close__[6]
@@ -450,17 +450,17 @@ void my_kinderlieder_Library_3_load__(JAVA_OBJECT me)
     (*(void (*)(JAVA_OBJECT)) ((java_io_BufferedReader*) _r5.o)->tib->vtable[6])(_r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36849aaab3b1d139)
-        XMLVM_CATCH_SPECIFIC(w36849aaab3b1d139,java_io_IOException,251)
-    XMLVM_CATCH_END(w36849aaab3b1d139)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36849aaab3b1d139)
+    XMLVM_CATCH_BEGIN(w36875aaab3b1d139)
+        XMLVM_CATCH_SPECIFIC(w36875aaab3b1d139,java_io_IOException,251)
+    XMLVM_CATCH_END(w36875aaab3b1d139)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36875aaab3b1d139)
     XMLVM_SOURCE_POSITION("Library.java", 113)
     XMLVM_EXIT_METHOD()
     return;
     label251:;
     XMLVM_SOURCE_POSITION("Library.java", 107)
-    java_lang_Thread* curThread_w36849aaab3b1d144 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r6.o = curThread_w36849aaab3b1d144->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36875aaab3b1d144 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r6.o = curThread_w36875aaab3b1d144->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("Library.java", 108)
     _r19.o = __NEW_org_json_JSONException();
     _r0 = _r19;
@@ -475,7 +475,7 @@ void my_kinderlieder_Library_3_load__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(20)
     java_lang_StringBuilder___INIT___(_r20.o);
     // "No info.json in "
-    _r21.o = xmlvm_create_java_string_from_pool(2665);
+    _r21.o = xmlvm_create_java_string_from_pool(2668);
     XMLVM_CHECK_NPE(20)
     _r20.o = java_lang_StringBuilder_append___java_lang_String(_r20.o, _r21.o);
     _r0 = _r22;

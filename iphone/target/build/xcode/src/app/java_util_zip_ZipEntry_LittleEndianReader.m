@@ -295,7 +295,7 @@ JAVA_INT java_util_zip_ZipEntry_LittleEndianReader_readShortLE___java_io_InputSt
     XMLVM_SOURCE_POSITION("ZipEntry.java", 463)
     _r0.o = __NEW_java_io_EOFException();
     // "archive.3C"
-    _r1.o = xmlvm_create_java_string_from_pool(1077);
+    _r1.o = xmlvm_create_java_string_from_pool(1080);
     _r1.o = org_apache_harmony_archive_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_io_EOFException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -365,7 +365,7 @@ JAVA_LONG java_util_zip_ZipEntry_LittleEndianReader_readIntLE___java_io_InputStr
     XMLVM_SOURCE_POSITION("ZipEntry.java", 478)
     _r0.o = __NEW_java_io_EOFException();
     // "archive.3D"
-    _r1.o = xmlvm_create_java_string_from_pool(1078);
+    _r1.o = xmlvm_create_java_string_from_pool(1081);
     _r1.o = org_apache_harmony_archive_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_io_EOFException___INIT____java_lang_String(_r0.o, _r1.o);

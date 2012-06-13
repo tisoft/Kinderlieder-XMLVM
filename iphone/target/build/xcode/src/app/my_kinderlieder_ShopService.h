@@ -118,6 +118,10 @@ XMLVM_FORWARD_DECL(java_util_ArrayList)
 #define XMLVM_FORWARD_DECL_java_util_Enumeration
 XMLVM_FORWARD_DECL(java_util_Enumeration)
 #endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Iterator
+#define XMLVM_FORWARD_DECL_java_util_Iterator
+XMLVM_FORWARD_DECL(java_util_Iterator)
+#endif
 #ifndef XMLVM_FORWARD_DECL_java_util_List
 #define XMLVM_FORWARD_DECL_java_util_List
 XMLVM_FORWARD_DECL(java_util_List)
@@ -268,6 +272,7 @@ JAVA_OBJECT __NEW_INSTANCE_my_kinderlieder_ShopService();
 JAVA_OBJECT my_kinderlieder_ShopService_GET_ourInstance();
 void my_kinderlieder_ShopService_PUT_ourInstance(JAVA_OBJECT v);
 JAVA_OBJECT my_kinderlieder_ShopService_getInstance__();
+JAVA_OBJECT my_kinderlieder_ShopService_getProduct___org_xmlvm_iphone_SKPaymentTransaction(JAVA_OBJECT me, JAVA_OBJECT n1);
 void my_kinderlieder_ShopService___INIT___(JAVA_OBJECT me);
 void my_kinderlieder_ShopService_buy___my_kinderlieder_InAppProduct(JAVA_OBJECT me, JAVA_OBJECT n1);
 void my_kinderlieder_ShopService_copyInputStream___my_kinderlieder_Product_int_int_java_io_InputStream_java_io_OutputStream(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_INT n2, JAVA_INT n3, JAVA_OBJECT n4, JAVA_OBJECT n5);
@@ -279,9 +284,10 @@ void my_kinderlieder_ShopService_fillInfo___org_json_JSONObject_my_kinderlieder_
 JAVA_OBJECT my_kinderlieder_ShopService_getProducts__(JAVA_OBJECT me);
 void my_kinderlieder_ShopService_refreshProducts__(JAVA_OBJECT me);
 void my_kinderlieder_ShopService_doNotify__(JAVA_OBJECT me);
-JAVA_OBJECT my_kinderlieder_ShopService_access$002___my_kinderlieder_ShopService_org_xmlvm_iphone_SKProductsRequestDelegate(JAVA_OBJECT n1, JAVA_OBJECT n2);
-void my_kinderlieder_ShopService_access$100___my_kinderlieder_ShopService(JAVA_OBJECT n1);
-JAVA_OBJECT my_kinderlieder_ShopService_access$000___my_kinderlieder_ShopService(JAVA_OBJECT n1);
+JAVA_OBJECT my_kinderlieder_ShopService_access$000___my_kinderlieder_ShopService_org_xmlvm_iphone_SKPaymentTransaction(JAVA_OBJECT n1, JAVA_OBJECT n2);
+JAVA_OBJECT my_kinderlieder_ShopService_access$102___my_kinderlieder_ShopService_org_xmlvm_iphone_SKProductsRequestDelegate(JAVA_OBJECT n1, JAVA_OBJECT n2);
+void my_kinderlieder_ShopService_access$200___my_kinderlieder_ShopService(JAVA_OBJECT n1);
+JAVA_OBJECT my_kinderlieder_ShopService_access$100___my_kinderlieder_ShopService(JAVA_OBJECT n1);
 void my_kinderlieder_ShopService___CLINIT_();
 
 #endif

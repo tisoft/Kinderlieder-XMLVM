@@ -1015,7 +1015,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLImageElement_getBorder__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLImageElement.java", 90)
     // "border"
-    _r0.o = xmlvm_create_java_string_from_pool(1468);
+    _r0.o = xmlvm_create_java_string_from_pool(1471);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1034,7 +1034,7 @@ void gnu_xml_dom_html2_DomHTMLImageElement_setBorder___java_lang_String(JAVA_OBJ
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLImageElement.java", 95)
     // "border"
-    _r0.o = xmlvm_create_java_string_from_pool(1468);
+    _r0.o = xmlvm_create_java_string_from_pool(1471);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLImageElement.java", 96)
@@ -1126,7 +1126,7 @@ JAVA_BOOLEAN gnu_xml_dom_html2_DomHTMLImageElement_getIsMap__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLImageElement.java", 120)
     // "ismap"
-    _r0.o = xmlvm_create_java_string_from_pool(1693);
+    _r0.o = xmlvm_create_java_string_from_pool(1696);
     XMLVM_CHECK_NPE(1)
     _r0.i = gnu_xml_dom_html2_DomHTMLElement_getBooleanHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1145,7 +1145,7 @@ void gnu_xml_dom_html2_DomHTMLImageElement_setIsMap___boolean(JAVA_OBJECT me, JA
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DomHTMLImageElement.java", 125)
     // "ismap"
-    _r0.o = xmlvm_create_java_string_from_pool(1693);
+    _r0.o = xmlvm_create_java_string_from_pool(1696);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setBooleanHTMLAttribute___java_lang_String_boolean(_r1.o, _r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("DomHTMLImageElement.java", 126)
@@ -1237,7 +1237,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLImageElement_getUseMap__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLImageElement.java", 150)
     // "usemap"
-    _r0.o = xmlvm_create_java_string_from_pool(2351);
+    _r0.o = xmlvm_create_java_string_from_pool(2354);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1256,7 +1256,7 @@ void gnu_xml_dom_html2_DomHTMLImageElement_setUseMap___java_lang_String(JAVA_OBJ
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLImageElement.java", 155)
     // "usemap"
-    _r0.o = xmlvm_create_java_string_from_pool(2351);
+    _r0.o = xmlvm_create_java_string_from_pool(2354);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLImageElement.java", 156)

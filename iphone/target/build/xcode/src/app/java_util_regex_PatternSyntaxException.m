@@ -391,7 +391,7 @@ JAVA_OBJECT java_util_regex_PatternSyntaxException_getMessage__(JAVA_OBJECT me)
     _r2.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[8])(_r2.o);
     if (_r2.i == 0) goto label81;
     // "regex.07"
-    _r2.o = xmlvm_create_java_string_from_pool(2570);
+    _r2.o = xmlvm_create_java_string_from_pool(2573);
     XMLVM_SOURCE_POSITION("PatternSyntaxException.java", 105)
     _r3.i = 3;
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();

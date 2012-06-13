@@ -688,7 +688,7 @@ JAVA_OBJECT java_net_NetworkInterface_getInetAddresses__(JAVA_OBJECT me)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r4.i);
     _r2.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     if (_r6.o == JAVA_NULL) goto label78;
-    XMLVM_TRY_BEGIN(w42838aaac13b1c39)
+    XMLVM_TRY_BEGIN(w42873aaac13b1c39)
     // Begin try
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 163)
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 169)
@@ -696,21 +696,21 @@ JAVA_OBJECT java_net_NetworkInterface_getInetAddresses__(JAVA_OBJECT me)
     _r3.o = java_net_InetAddress_getHostName__(_r2.o);
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 170)
     // "::"
-    _r8.o = xmlvm_create_java_string_from_pool(2450);
+    _r8.o = xmlvm_create_java_string_from_pool(2453);
     XMLVM_CHECK_NPE(3)
     _r8.i = java_lang_String_contains___java_lang_CharSequence(_r3.o, _r8.o);
-    if (_r8.i == 0) { XMLVM_MEMCPY(curThread_w42838aaac13b1c39->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42838aaac13b1c39, sizeof(XMLVM_JMP_BUF)); goto label71; };
+    if (_r8.i == 0) { XMLVM_MEMCPY(curThread_w42873aaac13b1c39->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42873aaac13b1c39, sizeof(XMLVM_JMP_BUF)); goto label71; };
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 171)
     XMLVM_CHECK_NPE(10)
     _r3.o = java_net_NetworkInterface_getFullFormOfCompressedIPV6Address___java_lang_String(_r10.o, _r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42838aaac13b1c39)
-        XMLVM_CATCH_SPECIFIC(w42838aaac13b1c39,java_lang_SecurityException,106)
-    XMLVM_CATCH_END(w42838aaac13b1c39)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42838aaac13b1c39)
+    XMLVM_CATCH_BEGIN(w42873aaac13b1c39)
+        XMLVM_CATCH_SPECIFIC(w42873aaac13b1c39,java_lang_SecurityException,106)
+    XMLVM_CATCH_END(w42873aaac13b1c39)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42873aaac13b1c39)
     label71:;
-    XMLVM_TRY_BEGIN(w42838aaac13b1c41)
+    XMLVM_TRY_BEGIN(w42873aaac13b1c41)
     // Begin try
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 173)
     _r8.i = -1;
@@ -722,10 +722,10 @@ JAVA_OBJECT java_net_NetworkInterface_getInetAddresses__(JAVA_OBJECT me)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Vector*) _r0.o)->tib->vtable[7])(_r0.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42838aaac13b1c41)
-        XMLVM_CATCH_SPECIFIC(w42838aaac13b1c41,java_lang_SecurityException,106)
-    XMLVM_CATCH_END(w42838aaac13b1c41)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42838aaac13b1c41)
+    XMLVM_CATCH_BEGIN(w42873aaac13b1c41)
+        XMLVM_CATCH_SPECIFIC(w42873aaac13b1c41,java_lang_SecurityException,106)
+    XMLVM_CATCH_END(w42873aaac13b1c41)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42873aaac13b1c41)
     label78:;
     _r4.i = _r4.i + 1;
     goto label49;
@@ -750,8 +750,8 @@ JAVA_OBJECT java_net_NetworkInterface_getInetAddresses__(JAVA_OBJECT me)
     goto label14;
     label106:;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 176)
-    java_lang_Thread* curThread_w42838aaac13b1c61 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r8.o = curThread_w42838aaac13b1c61->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w42873aaac13b1c61 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r8.o = curThread_w42873aaac13b1c61->fields.java_lang_Thread.xmlvmException_;
     goto label78;
     //XMLVM_END_WRAPPER
 }
@@ -781,7 +781,7 @@ JAVA_OBJECT java_net_NetworkInterface_getFullFormOfCompressedIPV6Address___java_
     // ""
     _r12.o = xmlvm_create_java_string_from_pool(0);
     // "::"
-    _r10.o = xmlvm_create_java_string_from_pool(2450);
+    _r10.o = xmlvm_create_java_string_from_pool(2453);
     // ":"
     _r9.o = xmlvm_create_java_string_from_pool(60);
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 191)
@@ -797,13 +797,13 @@ JAVA_OBJECT java_net_NetworkInterface_getFullFormOfCompressedIPV6Address___java_
     _r3.o = java_lang_String_split___java_lang_String(_r14.o, _r9.o);
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 198)
     // "::"
-    _r8.o = xmlvm_create_java_string_from_pool(2450);
+    _r8.o = xmlvm_create_java_string_from_pool(2453);
     XMLVM_CHECK_NPE(14)
     _r8.i = java_lang_String_startsWith___java_lang_String(_r14.o, _r10.o);
     if (_r8.i == 0) goto label68;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 199)
     // "::"
-    _r8.o = xmlvm_create_java_string_from_pool(2450);
+    _r8.o = xmlvm_create_java_string_from_pool(2453);
     // ""
     _r8.o = xmlvm_create_java_string_from_pool(0);
     XMLVM_CHECK_NPE(14)
@@ -839,13 +839,13 @@ JAVA_OBJECT java_net_NetworkInterface_getFullFormOfCompressedIPV6Address___java_
     label68:;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 204)
     // "::"
-    _r8.o = xmlvm_create_java_string_from_pool(2450);
+    _r8.o = xmlvm_create_java_string_from_pool(2453);
     XMLVM_CHECK_NPE(14)
     _r8.i = java_lang_String_endsWith___java_lang_String(_r14.o, _r10.o);
     if (_r8.i == 0) goto label100;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 205)
     // "::"
-    _r8.o = xmlvm_create_java_string_from_pool(2450);
+    _r8.o = xmlvm_create_java_string_from_pool(2453);
     // ""
     _r8.o = xmlvm_create_java_string_from_pool(0);
     XMLVM_CHECK_NPE(14)
@@ -1021,7 +1021,7 @@ JAVA_OBJECT java_net_NetworkInterface_getByName___java_lang_String(JAVA_OBJECT n
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 280)
     _r2.o = __NEW_java_lang_NullPointerException();
     // "luni.6D"
-    _r3.o = xmlvm_create_java_string_from_pool(3275);
+    _r3.o = xmlvm_create_java_string_from_pool(3278);
     _r3.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r3.o);
     XMLVM_CHECK_NPE(2)
     java_lang_NullPointerException___INIT____java_lang_String(_r2.o, _r3.o);
@@ -1076,7 +1076,7 @@ JAVA_OBJECT java_net_NetworkInterface_getByInetAddress___java_net_InetAddress(JA
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 316)
     _r3.o = __NEW_java_lang_NullPointerException();
     // "luni.68"
-    _r4.o = xmlvm_create_java_string_from_pool(3276);
+    _r4.o = xmlvm_create_java_string_from_pool(3279);
     _r4.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r4.o);
     XMLVM_CHECK_NPE(3)
     java_lang_NullPointerException___INIT____java_lang_String(_r3.o, _r4.o);
@@ -1418,7 +1418,7 @@ JAVA_OBJECT java_net_NetworkInterface_toString__(JAVA_OBJECT me)
     // "]"
     _r5.o = xmlvm_create_java_string_from_pool(139);
     // "["
-    _r4.o = xmlvm_create_java_string_from_pool(1370);
+    _r4.o = xmlvm_create_java_string_from_pool(1373);
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 482)
     _r1.o = __NEW_java_lang_StringBuilder();
     _r3.i = 25;
@@ -1426,7 +1426,7 @@ JAVA_OBJECT java_net_NetworkInterface_toString__(JAVA_OBJECT me)
     java_lang_StringBuilder___INIT____int(_r1.o, _r3.i);
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 483)
     // "["
-    _r3.o = xmlvm_create_java_string_from_pool(1370);
+    _r3.o = xmlvm_create_java_string_from_pool(1373);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 484)
@@ -1435,7 +1435,7 @@ JAVA_OBJECT java_net_NetworkInterface_toString__(JAVA_OBJECT me)
     java_lang_StringBuilder_append___java_lang_String(_r1.o, _r3.o);
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 485)
     // "]["
-    _r3.o = xmlvm_create_java_string_from_pool(3277);
+    _r3.o = xmlvm_create_java_string_from_pool(3280);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder_append___java_lang_String(_r1.o, _r3.o);
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 486)
@@ -1463,7 +1463,7 @@ JAVA_OBJECT java_net_NetworkInterface_toString__(JAVA_OBJECT me)
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 497)
     // "["
-    _r3.o = xmlvm_create_java_string_from_pool(1370);
+    _r3.o = xmlvm_create_java_string_from_pool(1373);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 498)

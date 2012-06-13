@@ -806,7 +806,7 @@ void __INIT_IMPL_gnu_xml_pipeline_ValidationConsumer()
     __TIB_gnu_xml_pipeline_ValidationConsumer.itable[XMLVM_ITABLE_IDX_org_xml_sax_ext_LexicalHandler_startEntity___java_lang_String] = __TIB_gnu_xml_pipeline_ValidationConsumer.vtable[31];
 
     _STATIC_gnu_xml_pipeline_ValidationConsumer_warnNonDeterministic = 0;
-    _STATIC_gnu_xml_pipeline_ValidationConsumer_fakeRootName = (java_lang_String*) xmlvm_create_java_string_from_pool(865);
+    _STATIC_gnu_xml_pipeline_ValidationConsumer_fakeRootName = (java_lang_String*) xmlvm_create_java_string_from_pool(868);
     _STATIC_gnu_xml_pipeline_ValidationConsumer_types = (org_xmlvm_runtime_XMLVMArray*) JAVA_NULL;
     _STATIC_gnu_xml_pipeline_ValidationConsumer_ANY = (gnu_xml_pipeline_ValidationConsumer_Recognizer*) JAVA_NULL;
     _STATIC_gnu_xml_pipeline_ValidationConsumer_F_LOOPHEAD = 1;
@@ -987,13 +987,13 @@ void gnu_xml_pipeline_ValidationConsumer___CLINIT_()
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 2;
     // "IDREF"
-    _r2.o = xmlvm_create_java_string_from_pool(866);
+    _r2.o = xmlvm_create_java_string_from_pool(869);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 3;
     // "IDREFS"
-    _r2.o = xmlvm_create_java_string_from_pool(867);
+    _r2.o = xmlvm_create_java_string_from_pool(870);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
@@ -1006,20 +1006,20 @@ void gnu_xml_pipeline_ValidationConsumer___CLINIT_()
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 5;
     // "NMTOKENS"
-    _r2.o = xmlvm_create_java_string_from_pool(868);
+    _r2.o = xmlvm_create_java_string_from_pool(871);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 6;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 621)
     // "ENTITY"
-    _r2.o = xmlvm_create_java_string_from_pool(869);
+    _r2.o = xmlvm_create_java_string_from_pool(872);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 7;
     // "ENTITIES"
-    _r2.o = xmlvm_create_java_string_from_pool(870);
+    _r2.o = xmlvm_create_java_string_from_pool(873);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
@@ -1108,7 +1108,7 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____gnu_xml_pipeline_EventConsume
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 268)
     XMLVM_CHECK_NPE(2)
     gnu_xml_pipeline_EventFilter_setDTDHandler___org_xml_sax_DTDHandler(_r2.o, _r2.o);
-    XMLVM_TRY_BEGIN(w11459aaac19b1c38)
+    XMLVM_TRY_BEGIN(w11488aaac19b1c38)
     // Begin try
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 269)
     // "http://xml.org/sax/properties/declaration-handler"
@@ -1117,12 +1117,12 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____gnu_xml_pipeline_EventConsume
     gnu_xml_pipeline_EventFilter_setProperty___java_lang_String_java_lang_Object(_r2.o, _r0.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w11459aaac19b1c38)
-        XMLVM_CATCH_SPECIFIC(w11459aaac19b1c38,java_lang_Exception,72)
-    XMLVM_CATCH_END(w11459aaac19b1c38)
-    XMLVM_RESTORE_EXCEPTION_ENV(w11459aaac19b1c38)
+    XMLVM_CATCH_BEGIN(w11488aaac19b1c38)
+        XMLVM_CATCH_SPECIFIC(w11488aaac19b1c38,java_lang_Exception,72)
+    XMLVM_CATCH_END(w11488aaac19b1c38)
+    XMLVM_RESTORE_EXCEPTION_ENV(w11488aaac19b1c38)
     label64:;
-    XMLVM_TRY_BEGIN(w11459aaac19b1c40)
+    XMLVM_TRY_BEGIN(w11488aaac19b1c40)
     // Begin try
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 271)
     // "http://xml.org/sax/properties/lexical-handler"
@@ -1131,21 +1131,21 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____gnu_xml_pipeline_EventConsume
     gnu_xml_pipeline_EventFilter_setProperty___java_lang_String_java_lang_Object(_r2.o, _r0.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w11459aaac19b1c40)
-        XMLVM_CATCH_SPECIFIC(w11459aaac19b1c40,java_lang_Exception,70)
-    XMLVM_CATCH_END(w11459aaac19b1c40)
-    XMLVM_RESTORE_EXCEPTION_ENV(w11459aaac19b1c40)
+    XMLVM_CATCH_BEGIN(w11488aaac19b1c40)
+        XMLVM_CATCH_SPECIFIC(w11488aaac19b1c40,java_lang_Exception,70)
+    XMLVM_CATCH_END(w11488aaac19b1c40)
+    XMLVM_RESTORE_EXCEPTION_ENV(w11488aaac19b1c40)
     label69:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 273)
     XMLVM_EXIT_METHOD()
     return;
     label70:;
-    java_lang_Thread* curThread_w11459aaac19b1c45 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w11459aaac19b1c45->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w11488aaac19b1c45 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w11488aaac19b1c45->fields.java_lang_Thread.xmlvmException_;
     goto label69;
     label72:;
-    java_lang_Thread* curThread_w11459aaac19b1c48 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w11459aaac19b1c48->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w11488aaac19b1c48 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w11488aaac19b1c48->fields.java_lang_Thread.xmlvmException_;
     goto label64;
     //XMLVM_END_WRAPPER
 }
@@ -1181,7 +1181,7 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____java_lang_String_java_lang_St
     // "\012"
     _r3.o = xmlvm_create_java_string_from_pool(144);
     // ":Nobody:in:their_Right.Mind_would:use:this-name:1x:"
-    _r5.o = xmlvm_create_java_string_from_pool(865);
+    _r5.o = xmlvm_create_java_string_from_pool(868);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 320)
     XMLVM_CHECK_NPE(8)
     gnu_xml_pipeline_ValidationConsumer___INIT____gnu_xml_pipeline_EventConsumer(_r8.o, _r7.o);
@@ -1191,7 +1191,7 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____java_lang_String_java_lang_St
     if (_r9.o != JAVA_NULL) goto label164;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 324)
     // ":Nobody:in:their_Right.Mind_would:use:this-name:1x:"
-    _r0.o = xmlvm_create_java_string_from_pool(865);
+    _r0.o = xmlvm_create_java_string_from_pool(868);
     _r0 = _r5;
     label16:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 332)
@@ -1200,7 +1200,7 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____java_lang_String_java_lang_St
     java_io_StringWriter___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 334)
     // "<!DOCTYPE "
-    _r2.o = xmlvm_create_java_string_from_pool(871);
+    _r2.o = xmlvm_create_java_string_from_pool(874);
     //java_io_StringWriter_write___java_lang_String[15]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_io_StringWriter*) _r1.o)->tib->vtable[15])(_r1.o, _r2.o);
@@ -1212,7 +1212,7 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____java_lang_String_java_lang_St
     if (_r11.o == JAVA_NULL) goto label59;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 337)
     // "\012  "
-    _r2.o = xmlvm_create_java_string_from_pool(872);
+    _r2.o = xmlvm_create_java_string_from_pool(875);
     //java_io_StringWriter_write___java_lang_String[15]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_io_StringWriter*) _r1.o)->tib->vtable[15])(_r1.o, _r2.o);
@@ -1220,7 +1220,7 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____java_lang_String_java_lang_St
     if (_r10.o == JAVA_NULL) goto label144;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 339)
     // "PUBLIC '"
-    _r2.o = xmlvm_create_java_string_from_pool(873);
+    _r2.o = xmlvm_create_java_string_from_pool(876);
     //java_io_StringWriter_write___java_lang_String[15]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_io_StringWriter*) _r1.o)->tib->vtable[15])(_r1.o, _r2.o);
@@ -1230,7 +1230,7 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____java_lang_String_java_lang_St
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_io_StringWriter*) _r1.o)->tib->vtable[15])(_r1.o, _r10.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 341)
     // "'\012\011'"
-    _r2.o = xmlvm_create_java_string_from_pool(874);
+    _r2.o = xmlvm_create_java_string_from_pool(877);
     //java_io_StringWriter_write___java_lang_String[15]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_io_StringWriter*) _r1.o)->tib->vtable[15])(_r1.o, _r2.o);
@@ -1248,17 +1248,17 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____java_lang_String_java_lang_St
     label59:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 347)
     // " [ "
-    _r2.o = xmlvm_create_java_string_from_pool(875);
+    _r2.o = xmlvm_create_java_string_from_pool(878);
     //java_io_StringWriter_write___java_lang_String[15]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_io_StringWriter*) _r1.o)->tib->vtable[15])(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 348)
     // ":Nobody:in:their_Right.Mind_would:use:this-name:1x:"
-    _r2.o = xmlvm_create_java_string_from_pool(865);
+    _r2.o = xmlvm_create_java_string_from_pool(868);
     if (_r0.o != _r5.o) goto label81;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 349)
     // "\012<!ELEMENT "
-    _r2.o = xmlvm_create_java_string_from_pool(876);
+    _r2.o = xmlvm_create_java_string_from_pool(879);
     //java_io_StringWriter_write___java_lang_String[15]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_io_StringWriter*) _r1.o)->tib->vtable[15])(_r1.o, _r2.o);
@@ -1268,7 +1268,7 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____java_lang_String_java_lang_St
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_io_StringWriter*) _r1.o)->tib->vtable[15])(_r1.o, _r0.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 351)
     // " EMPTY>"
-    _r2.o = xmlvm_create_java_string_from_pool(877);
+    _r2.o = xmlvm_create_java_string_from_pool(880);
     //java_io_StringWriter_write___java_lang_String[15]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_io_StringWriter*) _r1.o)->tib->vtable[15])(_r1.o, _r2.o);
@@ -1282,7 +1282,7 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____java_lang_String_java_lang_St
     label86:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 355)
     // "\012 ]>"
-    _r2.o = xmlvm_create_java_string_from_pool(878);
+    _r2.o = xmlvm_create_java_string_from_pool(881);
     //java_io_StringWriter_write___java_lang_String[15]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_io_StringWriter*) _r1.o)->tib->vtable[15])(_r1.o, _r2.o);
@@ -1333,7 +1333,7 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____java_lang_String_java_lang_St
     ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.disableDeclarations_ = _r6.i;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 385)
     // ":Nobody:in:their_Right.Mind_would:use:this-name:1x:"
-    _r1.o = xmlvm_create_java_string_from_pool(865);
+    _r1.o = xmlvm_create_java_string_from_pool(868);
     if (_r0.o != _r5.o) goto label143;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 386)
     ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.rootName_ = _r7.o;
@@ -1344,7 +1344,7 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____java_lang_String_java_lang_St
     label144:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 343)
     // "SYSTEM '"
-    _r2.o = xmlvm_create_java_string_from_pool(879);
+    _r2.o = xmlvm_create_java_string_from_pool(882);
     //java_io_StringWriter_write___java_lang_String[15]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_io_StringWriter*) _r1.o)->tib->vtable[15])(_r1.o, _r2.o);
@@ -1352,7 +1352,7 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____java_lang_String_java_lang_St
     label150:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 362)
     // " <"
-    _r2.o = xmlvm_create_java_string_from_pool(880);
+    _r2.o = xmlvm_create_java_string_from_pool(883);
     //java_io_StringWriter_write___java_lang_String[15]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_io_StringWriter*) _r1.o)->tib->vtable[15])(_r1.o, _r2.o);
@@ -1362,7 +1362,7 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____java_lang_String_java_lang_St
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_io_StringWriter*) _r1.o)->tib->vtable[15])(_r1.o, _r0.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 364)
     // "/>\012"
-    _r2.o = xmlvm_create_java_string_from_pool(881);
+    _r2.o = xmlvm_create_java_string_from_pool(884);
     //java_io_StringWriter_write___java_lang_String[15]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_io_StringWriter*) _r1.o)->tib->vtable[15])(_r1.o, _r2.o);
@@ -1670,7 +1670,7 @@ JAVA_BOOLEAN gnu_xml_pipeline_ValidationConsumer_isName___java_lang_String_java_
     if (_r1.i != 0) goto label73;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 477)
     // ":_"
-    _r1.o = xmlvm_create_java_string_from_pool(882);
+    _r1.o = xmlvm_create_java_string_from_pool(885);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r6.i);
     _r2.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i];
@@ -1685,26 +1685,26 @@ JAVA_BOOLEAN gnu_xml_pipeline_ValidationConsumer_isName___java_lang_String_java_
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 491)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "In "
-    _r2.o = xmlvm_create_java_string_from_pool(883);
+    _r2.o = xmlvm_create_java_string_from_pool(886);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r10.o);
     // " for "
-    _r2.o = xmlvm_create_java_string_from_pool(884);
+    _r2.o = xmlvm_create_java_string_from_pool(887);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r11.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 492)
     // ", '"
-    _r2.o = xmlvm_create_java_string_from_pool(885);
+    _r2.o = xmlvm_create_java_string_from_pool(888);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r9.o);
     // "' is not a name"
-    _r2.o = xmlvm_create_java_string_from_pool(886);
+    _r2.o = xmlvm_create_java_string_from_pool(889);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     //java_lang_StringBuilder_toString__[5]
@@ -1737,7 +1737,7 @@ JAVA_BOOLEAN gnu_xml_pipeline_ValidationConsumer_isName___java_lang_String_java_
     if (_r5.i != 0) goto label104;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 484)
     // ":-_."
-    _r5.o = xmlvm_create_java_string_from_pool(887);
+    _r5.o = xmlvm_create_java_string_from_pool(890);
     XMLVM_CHECK_NPE(5)
     _r5.i = java_lang_String_indexOf___int(_r5.o, _r4.i);
     if (_r5.i != _r7.i) goto label104;
@@ -1792,26 +1792,26 @@ JAVA_BOOLEAN gnu_xml_pipeline_ValidationConsumer_isNmtoken___java_lang_String_ja
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 515)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "In "
-    _r1.o = xmlvm_create_java_string_from_pool(883);
+    _r1.o = xmlvm_create_java_string_from_pool(886);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r10.o);
     // " for "
-    _r1.o = xmlvm_create_java_string_from_pool(884);
+    _r1.o = xmlvm_create_java_string_from_pool(887);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r11.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 516)
     // ", '"
-    _r1.o = xmlvm_create_java_string_from_pool(885);
+    _r1.o = xmlvm_create_java_string_from_pool(888);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r9.o);
     // "' is not a name token"
-    _r1.o = xmlvm_create_java_string_from_pool(888);
+    _r1.o = xmlvm_create_java_string_from_pool(891);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     //java_lang_StringBuilder_toString__[5]
@@ -1833,7 +1833,7 @@ JAVA_BOOLEAN gnu_xml_pipeline_ValidationConsumer_isNmtoken___java_lang_String_ja
     if (_r5.i != 0) goto label84;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 509)
     // ":-_."
-    _r5.o = xmlvm_create_java_string_from_pool(887);
+    _r5.o = xmlvm_create_java_string_from_pool(890);
     XMLVM_CHECK_NPE(5)
     _r5.i = java_lang_String_indexOf___int(_r5.o, _r4.i);
     _r6.i = -1;
@@ -1869,21 +1869,21 @@ void gnu_xml_pipeline_ValidationConsumer_checkEnumeration___java_lang_String_jav
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 525)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "Value '"
-    _r1.o = xmlvm_create_java_string_from_pool(889);
+    _r1.o = xmlvm_create_java_string_from_pool(892);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r3.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 526)
     // "' for attribute '"
-    _r1.o = xmlvm_create_java_string_from_pool(890);
+    _r1.o = xmlvm_create_java_string_from_pool(893);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r5.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 527)
     // "' is not permitted: "
-    _r1.o = xmlvm_create_java_string_from_pool(891);
+    _r1.o = xmlvm_create_java_string_from_pool(894);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_CHECK_NPE(0)
@@ -2020,7 +2020,7 @@ void gnu_xml_pipeline_ValidationConsumer_endDTD__(JAVA_OBJECT me)
     _r7.o = me;
     _r5.i = 0;
     // "' which was never declared"
-    _r6.o = xmlvm_create_java_string_from_pool(892);
+    _r6.o = xmlvm_create_java_string_from_pool(895);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 580)
     _r0.i = ((gnu_xml_pipeline_ValidationConsumer*) _r7.o)->fields.gnu_xml_pipeline_ValidationConsumer.disableDeclarations_;
     if (_r0.i == 0) goto label8;
@@ -2074,14 +2074,14 @@ void gnu_xml_pipeline_ValidationConsumer_endDTD__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 593)
     _r3.o = __NEW_java_lang_StringBuilder();
     // "A declaration referred to notation '"
-    _r4.o = xmlvm_create_java_string_from_pool(893);
+    _r4.o = xmlvm_create_java_string_from_pool(896);
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuilder___INIT____java_lang_String(_r3.o, _r4.o);
     XMLVM_CHECK_NPE(3)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r3.o, _r0.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 594)
     // "' which was never declared"
-    _r3.o = xmlvm_create_java_string_from_pool(892);
+    _r3.o = xmlvm_create_java_string_from_pool(895);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r6.o);
     //java_lang_StringBuilder_toString__[5]
@@ -2108,14 +2108,14 @@ void gnu_xml_pipeline_ValidationConsumer_endDTD__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 605)
     _r3.o = __NEW_java_lang_StringBuilder();
     // "An attribute default referred to entity '"
-    _r4.o = xmlvm_create_java_string_from_pool(894);
+    _r4.o = xmlvm_create_java_string_from_pool(897);
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuilder___INIT____java_lang_String(_r3.o, _r4.o);
     XMLVM_CHECK_NPE(3)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r3.o, _r0.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 606)
     // "' which was never declared"
-    _r3.o = xmlvm_create_java_string_from_pool(892);
+    _r3.o = xmlvm_create_java_string_from_pool(895);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r6.o);
     //java_lang_StringBuilder_toString__[5]
@@ -2234,14 +2234,14 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 675)
     _r6.o = __NEW_java_lang_StringBuilder();
     // "ID attribute '"
-    _r7.o = xmlvm_create_java_string_from_pool(895);
+    _r7.o = xmlvm_create_java_string_from_pool(898);
     XMLVM_CHECK_NPE(6)
     java_lang_StringBuilder___INIT____java_lang_String(_r6.o, _r7.o);
     XMLVM_CHECK_NPE(6)
     _r6.o = java_lang_StringBuilder_append___java_lang_String(_r6.o, _r11.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 676)
     // "' must be #IMPLIED or #REQUIRED"
-    _r7.o = xmlvm_create_java_string_from_pool(896);
+    _r7.o = xmlvm_create_java_string_from_pool(899);
     XMLVM_CHECK_NPE(6)
     _r6.o = java_lang_StringBuilder_append___java_lang_String(_r6.o, _r7.o);
     //java_lang_StringBuilder_toString__[5]
@@ -2275,7 +2275,7 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     if (_r6.o != _r3.o) goto label383;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 722)
     // "attribute default"
-    _r2.o = xmlvm_create_java_string_from_pool(897);
+    _r2.o = xmlvm_create_java_string_from_pool(900);
     XMLVM_CHECK_NPE(9)
     gnu_xml_pipeline_ValidationConsumer_isNmtoken___java_lang_String_java_lang_String_java_lang_String(_r9.o, _r14.o, _r2.o, _r11.o);
     label127:;
@@ -2300,28 +2300,28 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     if (_r0.i == 0) goto label204;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 784)
     // "(default\174preserve)"
-    _r0.o = xmlvm_create_java_string_from_pool(898);
+    _r0.o = xmlvm_create_java_string_from_pool(901);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
     if (_r0.i != 0) goto label204;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 785)
     // "(preserve\174default)"
-    _r0.o = xmlvm_create_java_string_from_pool(899);
+    _r0.o = xmlvm_create_java_string_from_pool(902);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
     if (_r0.i != 0) goto label204;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 789)
     // "(preserve)"
-    _r0.o = xmlvm_create_java_string_from_pool(900);
+    _r0.o = xmlvm_create_java_string_from_pool(903);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
     if (_r0.i != 0) goto label204;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 790)
     // "(default)"
-    _r0.o = xmlvm_create_java_string_from_pool(901);
+    _r0.o = xmlvm_create_java_string_from_pool(904);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
@@ -2329,7 +2329,7 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 793)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "xml:space attribute type must be like '(default\174preserve)' not '"
-    _r1.o = xmlvm_create_java_string_from_pool(902);
+    _r1.o = xmlvm_create_java_string_from_pool(905);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 794)
@@ -2393,7 +2393,7 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 679)
     if (_r5.i != 0) goto label98;
     // "NOTATION "
-    _r6.o = xmlvm_create_java_string_from_pool(903);
+    _r6.o = xmlvm_create_java_string_from_pool(906);
     XMLVM_CHECK_NPE(3)
     _r6.i = java_lang_String_startsWith___java_lang_String(_r3.o, _r6.o);
     if (_r6.i == 0) goto label98;
@@ -2410,7 +2410,7 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     _r7.o = java_lang_String_substring___int_int(_r3.o, _r7.i, _r8.i);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 685)
     // "\174"
-    _r8.o = xmlvm_create_java_string_from_pool(904);
+    _r8.o = xmlvm_create_java_string_from_pool(907);
     XMLVM_CHECK_NPE(6)
     java_util_StringTokenizer___INIT____java_lang_String_java_lang_String(_r6.o, _r7.o, _r8.o);
     label277:;
@@ -2451,40 +2451,40 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 704)
     _r7.o = __NEW_java_lang_StringBuilder();
     // "Element '"
-    _r8.o = xmlvm_create_java_string_from_pool(905);
+    _r8.o = xmlvm_create_java_string_from_pool(908);
     XMLVM_CHECK_NPE(7)
     java_lang_StringBuilder___INIT____java_lang_String(_r7.o, _r8.o);
     XMLVM_CHECK_NPE(7)
     _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r10.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 705)
     // "' already has an attribute of type "
-    _r8.o = xmlvm_create_java_string_from_pool(906);
+    _r8.o = xmlvm_create_java_string_from_pool(909);
     XMLVM_CHECK_NPE(7)
     _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r8.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 706)
     if (_r5.i == 0) goto label381;
     // "NOTATION"
-    _r8.o = xmlvm_create_java_string_from_pool(907);
+    _r8.o = xmlvm_create_java_string_from_pool(910);
     label342:;
     XMLVM_CHECK_NPE(7)
     _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r8.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 707)
     // " ('"
-    _r8.o = xmlvm_create_java_string_from_pool(908);
+    _r8.o = xmlvm_create_java_string_from_pool(911);
     XMLVM_CHECK_NPE(7)
     _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r8.o);
     XMLVM_CHECK_NPE(7)
     _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r12.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 708)
     // "') so '"
-    _r8.o = xmlvm_create_java_string_from_pool(909);
+    _r8.o = xmlvm_create_java_string_from_pool(912);
     XMLVM_CHECK_NPE(7)
     _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r8.o);
     XMLVM_CHECK_NPE(7)
     _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r11.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 709)
     // "' is a validity error"
-    _r8.o = xmlvm_create_java_string_from_pool(910);
+    _r8.o = xmlvm_create_java_string_from_pool(913);
     XMLVM_CHECK_NPE(7)
     _r7.o = java_lang_StringBuilder_append___java_lang_String(_r7.o, _r8.o);
     //java_lang_StringBuilder_toString__[5]
@@ -2499,7 +2499,7 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     label383:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 724)
     // "NMTOKENS"
-    _r6.o = xmlvm_create_java_string_from_pool(868);
+    _r6.o = xmlvm_create_java_string_from_pool(871);
     if (_r6.o != _r3.o) goto label441;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 726)
     _r2.o = __NEW_java_util_StringTokenizer();
@@ -2512,14 +2512,14 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 728)
     _r2.o = __NEW_java_lang_StringBuilder();
     // "Default for attribute '"
-    _r5.o = xmlvm_create_java_string_from_pool(911);
+    _r5.o = xmlvm_create_java_string_from_pool(914);
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuilder___INIT____java_lang_String(_r2.o, _r5.o);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r11.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 729)
     // "' must have at least one name token."
-    _r5.o = xmlvm_create_java_string_from_pool(912);
+    _r5.o = xmlvm_create_java_string_from_pool(915);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r5.o);
     //java_lang_StringBuilder_toString__[5]
@@ -2534,7 +2534,7 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     _r5.o = java_util_StringTokenizer_nextToken__(_r2.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 732)
     // "attribute default"
-    _r6.o = xmlvm_create_java_string_from_pool(897);
+    _r6.o = xmlvm_create_java_string_from_pool(900);
     XMLVM_CHECK_NPE(9)
     gnu_xml_pipeline_ValidationConsumer_isNmtoken___java_lang_String_java_lang_String_java_lang_String(_r9.o, _r5.o, _r6.o, _r11.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 733)
@@ -2546,20 +2546,20 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     label441:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 735)
     // "IDREF"
-    _r6.o = xmlvm_create_java_string_from_pool(866);
+    _r6.o = xmlvm_create_java_string_from_pool(869);
     if (_r6.o == _r3.o) goto label449;
     // "ENTITY"
-    _r6.o = xmlvm_create_java_string_from_pool(869);
+    _r6.o = xmlvm_create_java_string_from_pool(872);
     if (_r6.o != _r3.o) goto label473;
     label449:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 738)
     // "attribute default"
-    _r2.o = xmlvm_create_java_string_from_pool(897);
+    _r2.o = xmlvm_create_java_string_from_pool(900);
     XMLVM_CHECK_NPE(9)
     gnu_xml_pipeline_ValidationConsumer_isName___java_lang_String_java_lang_String_java_lang_String(_r9.o, _r14.o, _r2.o, _r11.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 739)
     // "ENTITY"
-    _r2.o = xmlvm_create_java_string_from_pool(869);
+    _r2.o = xmlvm_create_java_string_from_pool(872);
     if (_r2.o != _r3.o) goto label127;
     _r2.o = ((gnu_xml_pipeline_ValidationConsumer*) _r9.o)->fields.gnu_xml_pipeline_ValidationConsumer.unparsed_;
     //java_util_Vector_contains___java_lang_Object[10]
@@ -2574,10 +2574,10 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     label473:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 742)
     // "IDREFS"
-    _r6.o = xmlvm_create_java_string_from_pool(867);
+    _r6.o = xmlvm_create_java_string_from_pool(870);
     if (_r6.o == _r3.o) goto label481;
     // "ENTITIES"
-    _r6.o = xmlvm_create_java_string_from_pool(870);
+    _r6.o = xmlvm_create_java_string_from_pool(873);
     if (_r6.o != _r3.o) goto label552;
     label481:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 745)
@@ -2591,14 +2591,14 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 747)
     _r2.o = __NEW_java_lang_StringBuilder();
     // "Default for attribute '"
-    _r5.o = xmlvm_create_java_string_from_pool(911);
+    _r5.o = xmlvm_create_java_string_from_pool(914);
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuilder___INIT____java_lang_String(_r2.o, _r5.o);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r11.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 748)
     // "' must have at least one name."
-    _r5.o = xmlvm_create_java_string_from_pool(913);
+    _r5.o = xmlvm_create_java_string_from_pool(916);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r5.o);
     //java_lang_StringBuilder_toString__[5]
@@ -2613,12 +2613,12 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     _r5.o = java_util_StringTokenizer_nextToken__(_r2.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 751)
     // "attribute default"
-    _r6.o = xmlvm_create_java_string_from_pool(897);
+    _r6.o = xmlvm_create_java_string_from_pool(900);
     XMLVM_CHECK_NPE(9)
     gnu_xml_pipeline_ValidationConsumer_isName___java_lang_String_java_lang_String_java_lang_String(_r9.o, _r5.o, _r6.o, _r11.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 752)
     // "ENTITIES"
-    _r6.o = xmlvm_create_java_string_from_pool(870);
+    _r6.o = xmlvm_create_java_string_from_pool(873);
     if (_r6.o != _r3.o) goto label544;
     _r6.o = ((gnu_xml_pipeline_ValidationConsumer*) _r9.o)->fields.gnu_xml_pipeline_ValidationConsumer.unparsed_;
     //java_util_Vector_contains___java_lang_Object[10]
@@ -2654,7 +2654,7 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     if (_r2.i == 0) goto label593;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 762)
     // "attribute default"
-    _r2.o = xmlvm_create_java_string_from_pool(897);
+    _r2.o = xmlvm_create_java_string_from_pool(900);
     XMLVM_CHECK_NPE(9)
     gnu_xml_pipeline_ValidationConsumer_isName___java_lang_String_java_lang_String_java_lang_String(_r9.o, _r14.o, _r2.o, _r11.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 765)
@@ -2681,7 +2681,7 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     _r0.o = __NEW_java_lang_RuntimeException();
     _r1.o = __NEW_java_lang_StringBuilder();
     // "illegal attribute type: "
-    _r2.o = xmlvm_create_java_string_from_pool(914);
+    _r2.o = xmlvm_create_java_string_from_pool(917);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(1)
@@ -2743,14 +2743,14 @@ void gnu_xml_pipeline_ValidationConsumer_elementDecl___java_lang_String_java_lan
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 823)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "Element type '"
-    _r1.o = xmlvm_create_java_string_from_pool(915);
+    _r1.o = xmlvm_create_java_string_from_pool(918);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r4.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 824)
     // "' was already declared."
-    _r1.o = xmlvm_create_java_string_from_pool(916);
+    _r1.o = xmlvm_create_java_string_from_pool(919);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     //java_lang_StringBuilder_toString__[5]
@@ -2965,7 +2965,7 @@ void gnu_xml_pipeline_ValidationConsumer_skippedEntity___java_lang_String(JAVA_O
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 924)
     // "may not skip entities"
-    _r0.o = xmlvm_create_java_string_from_pool(917);
+    _r0.o = xmlvm_create_java_string_from_pool(920);
     XMLVM_CHECK_NPE(1)
     gnu_xml_pipeline_ValidationConsumer_fatalError___java_lang_String(_r1.o, _r0.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 925)
@@ -2999,7 +2999,7 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_expandDefaultRefs___java_lang_St
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 937)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "Can't expand refs in attribute default: "
-    _r1.o = xmlvm_create_java_string_from_pool(918);
+    _r1.o = xmlvm_create_java_string_from_pool(921);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_CHECK_NPE(0)
@@ -3054,7 +3054,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     if (_r0.o != JAVA_NULL) goto label109;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 962)
     // "This document has no DTD, can't be valid"
-    _r0.o = xmlvm_create_java_string_from_pool(919);
+    _r0.o = xmlvm_create_java_string_from_pool(922);
     XMLVM_CHECK_NPE(8)
     gnu_xml_pipeline_ValidationConsumer_warning___java_lang_String(_r8.o, _r0.o);
     label25:;
@@ -3072,13 +3072,13 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 999)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "Element type '"
-    _r2.o = xmlvm_create_java_string_from_pool(915);
+    _r2.o = xmlvm_create_java_string_from_pool(918);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r11.o);
     // "' was not declared"
-    _r2.o = xmlvm_create_java_string_from_pool(920);
+    _r2.o = xmlvm_create_java_string_from_pool(923);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     //java_lang_StringBuilder_toString__[5]
@@ -3093,7 +3093,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     java_util_Stack_push___java_lang_Object(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1003)
     // "ANY"
-    _r1.o = xmlvm_create_java_string_from_pool(921);
+    _r1.o = xmlvm_create_java_string_from_pool(924);
     //gnu_xml_pipeline_ValidationConsumer_elementDecl___java_lang_String_java_lang_String[9]
     XMLVM_CHECK_NPE(8)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->tib->vtable[9])(_r8.o, _r11.o, _r1.o);
@@ -3139,14 +3139,14 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 964)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "Root element type '"
-    _r1.o = xmlvm_create_java_string_from_pool(922);
+    _r1.o = xmlvm_create_java_string_from_pool(925);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r11.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 965)
     // "' was declared to be '"
-    _r1.o = xmlvm_create_java_string_from_pool(923);
+    _r1.o = xmlvm_create_java_string_from_pool(926);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.rootName_;
@@ -3179,14 +3179,14 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 974)
     _r2.o = __NEW_java_lang_StringBuilder();
     // "Element type '"
-    _r3.o = xmlvm_create_java_string_from_pool(915);
+    _r3.o = xmlvm_create_java_string_from_pool(918);
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuilder___INIT____java_lang_String(_r2.o, _r3.o);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r11.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 975)
     // "' in element '"
-    _r3.o = xmlvm_create_java_string_from_pool(924);
+    _r3.o = xmlvm_create_java_string_from_pool(927);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r3.o);
     _r3.o = ((gnu_xml_pipeline_ValidationConsumer_Recognizer*) _r0.o)->fields.gnu_xml_pipeline_ValidationConsumer_Recognizer.type_;
@@ -3195,7 +3195,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 976)
     // "' violates content model "
-    _r3.o = xmlvm_create_java_string_from_pool(925);
+    _r3.o = xmlvm_create_java_string_from_pool(928);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r3.o);
     _r3.o = ((gnu_xml_pipeline_ValidationConsumer_Recognizer*) _r0.o)->fields.gnu_xml_pipeline_ValidationConsumer_Recognizer.type_;
@@ -3249,14 +3249,14 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1026)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "Attribute '"
-    _r5.o = xmlvm_create_java_string_from_pool(926);
+    _r5.o = xmlvm_create_java_string_from_pool(929);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r5.o);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1027)
     // "' was not declared for element type "
-    _r4.o = xmlvm_create_java_string_from_pool(927);
+    _r4.o = xmlvm_create_java_string_from_pool(930);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
     XMLVM_CHECK_NPE(1)
@@ -3291,14 +3291,14 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1041)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "Attribute '"
-    _r5.o = xmlvm_create_java_string_from_pool(926);
+    _r5.o = xmlvm_create_java_string_from_pool(929);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r5.o);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1042)
     // "' must match "
-    _r4.o = xmlvm_create_java_string_from_pool(928);
+    _r4.o = xmlvm_create_java_string_from_pool(931);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
     XMLVM_CHECK_NPE(1)
@@ -3322,7 +3322,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     if (_r6.o != _r7.o) goto label410;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1058)
     // "ID attribute"
-    _r1.o = xmlvm_create_java_string_from_pool(929);
+    _r1.o = xmlvm_create_java_string_from_pool(932);
     XMLVM_CHECK_NPE(8)
     _r1.i = gnu_xml_pipeline_ValidationConsumer_isName___java_lang_String_java_lang_String_java_lang_String(_r8.o, _r5.o, _r1.o, _r4.o);
     if (_r1.i == 0) goto label281;
@@ -3336,21 +3336,21 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1061)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "ID attribute "
-    _r6.o = xmlvm_create_java_string_from_pool(930);
+    _r6.o = xmlvm_create_java_string_from_pool(933);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r6.o);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1062)
     // " uses an ID value '"
-    _r4.o = xmlvm_create_java_string_from_pool(931);
+    _r4.o = xmlvm_create_java_string_from_pool(934);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r5.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1063)
     // "' which was already declared."
-    _r4.o = xmlvm_create_java_string_from_pool(932);
+    _r4.o = xmlvm_create_java_string_from_pool(935);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
     //java_lang_StringBuilder_toString__[5]
@@ -3370,12 +3370,12 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     label410:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1071)
     // "IDREF"
-    _r6.o = xmlvm_create_java_string_from_pool(866);
+    _r6.o = xmlvm_create_java_string_from_pool(869);
     _r7.o = ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.type_;
     if (_r6.o != _r7.o) goto label441;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1073)
     // "IDREF attribute"
-    _r1.o = xmlvm_create_java_string_from_pool(933);
+    _r1.o = xmlvm_create_java_string_from_pool(936);
     XMLVM_CHECK_NPE(8)
     _r1.i = gnu_xml_pipeline_ValidationConsumer_isName___java_lang_String_java_lang_String_java_lang_String(_r8.o, _r5.o, _r1.o, _r4.o);
     if (_r1.i == 0) goto label281;
@@ -3395,7 +3395,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     label441:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1082)
     // "IDREFS"
-    _r6.o = xmlvm_create_java_string_from_pool(867);
+    _r6.o = xmlvm_create_java_string_from_pool(870);
     _r7.o = ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.type_;
     if (_r6.o != _r7.o) goto label521;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1083)
@@ -3411,14 +3411,14 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1087)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "IDREFS attribute "
-    _r5.o = xmlvm_create_java_string_from_pool(934);
+    _r5.o = xmlvm_create_java_string_from_pool(937);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r5.o);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1088)
     // " must have at least one ID ref"
-    _r4.o = xmlvm_create_java_string_from_pool(935);
+    _r4.o = xmlvm_create_java_string_from_pool(938);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
     //java_lang_StringBuilder_toString__[5]
@@ -3433,7 +3433,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     _r5.o = java_util_StringTokenizer_nextToken__(_r1.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1093)
     // "IDREFS attribute"
-    _r6.o = xmlvm_create_java_string_from_pool(936);
+    _r6.o = xmlvm_create_java_string_from_pool(939);
     XMLVM_CHECK_NPE(8)
     _r6.i = gnu_xml_pipeline_ValidationConsumer_isName___java_lang_String_java_lang_String_java_lang_String(_r8.o, _r5.o, _r6.o, _r4.o);
     if (_r6.i == 0) goto label513;
@@ -3464,14 +3464,14 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     if (_r6.o != _r7.o) goto label534;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1105)
     // "NMTOKEN attribute"
-    _r1.o = xmlvm_create_java_string_from_pool(937);
+    _r1.o = xmlvm_create_java_string_from_pool(940);
     XMLVM_CHECK_NPE(8)
     gnu_xml_pipeline_ValidationConsumer_isNmtoken___java_lang_String_java_lang_String_java_lang_String(_r8.o, _r5.o, _r1.o, _r4.o);
     goto label281;
     label534:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1109)
     // "NMTOKENS"
-    _r6.o = xmlvm_create_java_string_from_pool(868);
+    _r6.o = xmlvm_create_java_string_from_pool(871);
     _r7.o = ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.type_;
     if (_r6.o != _r7.o) goto label596;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1110)
@@ -3487,14 +3487,14 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1114)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "NMTOKENS attribute "
-    _r5.o = xmlvm_create_java_string_from_pool(938);
+    _r5.o = xmlvm_create_java_string_from_pool(941);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r5.o);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1115)
     // " must have at least one name token"
-    _r4.o = xmlvm_create_java_string_from_pool(939);
+    _r4.o = xmlvm_create_java_string_from_pool(942);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
     //java_lang_StringBuilder_toString__[5]
@@ -3509,7 +3509,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     _r5.o = java_util_StringTokenizer_nextToken__(_r1.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1120)
     // "NMTOKENS attribute"
-    _r6.o = xmlvm_create_java_string_from_pool(940);
+    _r6.o = xmlvm_create_java_string_from_pool(943);
     XMLVM_CHECK_NPE(8)
     gnu_xml_pipeline_ValidationConsumer_isNmtoken___java_lang_String_java_lang_String_java_lang_String(_r8.o, _r5.o, _r6.o, _r4.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1121)
@@ -3521,7 +3521,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     label596:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1125)
     // "ENTITY"
-    _r6.o = xmlvm_create_java_string_from_pool(869);
+    _r6.o = xmlvm_create_java_string_from_pool(872);
     _r7.o = ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.type_;
     if (_r6.o != _r7.o) goto label646;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1126)
@@ -3533,21 +3533,21 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1128)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "Value of attribute '"
-    _r6.o = xmlvm_create_java_string_from_pool(941);
+    _r6.o = xmlvm_create_java_string_from_pool(944);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r6.o);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1129)
     // "' refers to unparsed entity '"
-    _r4.o = xmlvm_create_java_string_from_pool(942);
+    _r4.o = xmlvm_create_java_string_from_pool(945);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r5.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1130)
     // "' which was not declared."
-    _r4.o = xmlvm_create_java_string_from_pool(943);
+    _r4.o = xmlvm_create_java_string_from_pool(946);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
     //java_lang_StringBuilder_toString__[5]
@@ -3559,7 +3559,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     label646:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1134)
     // "ENTITIES"
-    _r6.o = xmlvm_create_java_string_from_pool(870);
+    _r6.o = xmlvm_create_java_string_from_pool(873);
     _r7.o = ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.type_;
     if (_r6.o != _r7.o) goto label745;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1135)
@@ -3575,14 +3575,14 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1139)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "ENTITIES attribute "
-    _r5.o = xmlvm_create_java_string_from_pool(944);
+    _r5.o = xmlvm_create_java_string_from_pool(947);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r5.o);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1140)
     // " must have at least one name token"
-    _r4.o = xmlvm_create_java_string_from_pool(939);
+    _r4.o = xmlvm_create_java_string_from_pool(942);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
     //java_lang_StringBuilder_toString__[5]
@@ -3604,21 +3604,21 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1146)
     _r6.o = __NEW_java_lang_StringBuilder();
     // "Value of attribute '"
-    _r7.o = xmlvm_create_java_string_from_pool(941);
+    _r7.o = xmlvm_create_java_string_from_pool(944);
     XMLVM_CHECK_NPE(6)
     java_lang_StringBuilder___INIT____java_lang_String(_r6.o, _r7.o);
     XMLVM_CHECK_NPE(6)
     _r6.o = java_lang_StringBuilder_append___java_lang_String(_r6.o, _r4.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1147)
     // "' refers to unparsed entity '"
-    _r7.o = xmlvm_create_java_string_from_pool(942);
+    _r7.o = xmlvm_create_java_string_from_pool(945);
     XMLVM_CHECK_NPE(6)
     _r6.o = java_lang_StringBuilder_append___java_lang_String(_r6.o, _r7.o);
     XMLVM_CHECK_NPE(6)
     _r5.o = java_lang_StringBuilder_append___java_lang_String(_r6.o, _r5.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1148)
     // "' which was not declared."
-    _r6.o = xmlvm_create_java_string_from_pool(943);
+    _r6.o = xmlvm_create_java_string_from_pool(946);
     XMLVM_CHECK_NPE(5)
     _r5.o = java_lang_StringBuilder_append___java_lang_String(_r5.o, _r6.o);
     //java_lang_StringBuilder_toString__[5]
@@ -3645,7 +3645,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1157)
     _r6.o = ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.type_;
     // "NOTATION "
-    _r7.o = xmlvm_create_java_string_from_pool(903);
+    _r7.o = xmlvm_create_java_string_from_pool(906);
     XMLVM_CHECK_NPE(6)
     _r6.i = java_lang_String_startsWith___java_lang_String(_r6.o, _r7.o);
     if (_r6.i == 0) goto label281;
@@ -3677,18 +3677,18 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1184)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "Attribute '"
-    _r4.o = xmlvm_create_java_string_from_pool(926);
+    _r4.o = xmlvm_create_java_string_from_pool(929);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r4.o);
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r0.o);
     // "' must be specified "
-    _r1.o = xmlvm_create_java_string_from_pool(945);
+    _r1.o = xmlvm_create_java_string_from_pool(948);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1185)
     // "for element type "
-    _r1.o = xmlvm_create_java_string_from_pool(946);
+    _r1.o = xmlvm_create_java_string_from_pool(949);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_CHECK_NPE(0)
@@ -3734,7 +3734,7 @@ void gnu_xml_pipeline_ValidationConsumer_characters___char_1ARRAY_int_int(JAVA_O
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1214)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "Character content not allowed in element "
-    _r2.o = xmlvm_create_java_string_from_pool(947);
+    _r2.o = xmlvm_create_java_string_from_pool(950);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1215)
@@ -3779,7 +3779,7 @@ void gnu_xml_pipeline_ValidationConsumer_endElement___java_lang_String_java_lang
     _r4.o = n1;
     _r5.o = n2;
     _r6.o = n3;
-    XMLVM_TRY_BEGIN(w11459aaac44b1b5)
+    XMLVM_TRY_BEGIN(w11488aaac44b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1231)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer.contentStack_;
@@ -3787,15 +3787,15 @@ void gnu_xml_pipeline_ValidationConsumer_endElement___java_lang_String_java_lang
     _r0.o = java_util_Stack_pop__(_r0.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1233)
-    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w11459aaac44b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w11459aaac44b1b5, sizeof(XMLVM_JMP_BUF)); goto label52; };
+    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w11488aaac44b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w11488aaac44b1b5, sizeof(XMLVM_JMP_BUF)); goto label52; };
     //gnu_xml_pipeline_ValidationConsumer_Recognizer_completed__[8]
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) ((gnu_xml_pipeline_ValidationConsumer_Recognizer*) _r0.o)->tib->vtable[8])(_r0.o);
-    if (_r1.i != 0) { XMLVM_MEMCPY(curThread_w11459aaac44b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w11459aaac44b1b5, sizeof(XMLVM_JMP_BUF)); goto label52; };
+    if (_r1.i != 0) { XMLVM_MEMCPY(curThread_w11488aaac44b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w11488aaac44b1b5, sizeof(XMLVM_JMP_BUF)); goto label52; };
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1235)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "Premature end for element '"
-    _r2.o = xmlvm_create_java_string_from_pool(948);
+    _r2.o = xmlvm_create_java_string_from_pool(951);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1236)
@@ -3805,7 +3805,7 @@ void gnu_xml_pipeline_ValidationConsumer_endElement___java_lang_String_java_lang
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1237)
     // "', content model "
-    _r2.o = xmlvm_create_java_string_from_pool(949);
+    _r2.o = xmlvm_create_java_string_from_pool(952);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1238)
@@ -3820,10 +3820,10 @@ void gnu_xml_pipeline_ValidationConsumer_endElement___java_lang_String_java_lang
     gnu_xml_pipeline_ValidationConsumer_error___java_lang_String(_r3.o, _r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w11459aaac44b1b5)
-        XMLVM_CATCH_SPECIFIC(w11459aaac44b1b5,java_util_EmptyStackException,56)
-    XMLVM_CATCH_END(w11459aaac44b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w11459aaac44b1b5)
+    XMLVM_CATCH_BEGIN(w11488aaac44b1b5)
+        XMLVM_CATCH_SPECIFIC(w11488aaac44b1b5,java_util_EmptyStackException,56)
+    XMLVM_CATCH_END(w11488aaac44b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w11488aaac44b1b5)
     label52:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1249)
     XMLVM_CHECK_NPE(3)
@@ -3833,11 +3833,11 @@ void gnu_xml_pipeline_ValidationConsumer_endElement___java_lang_String_java_lang
     return;
     label56:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1244)
-    java_lang_Thread* curThread_w11459aaac44b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w11459aaac44b1c13->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w11488aaac44b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w11488aaac44b1c13->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_java_lang_StringBuilder();
     // "endElement without startElement: "
-    _r1.o = xmlvm_create_java_string_from_pool(950);
+    _r1.o = xmlvm_create_java_string_from_pool(953);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_CHECK_NPE(0)
@@ -3860,19 +3860,19 @@ void gnu_xml_pipeline_ValidationConsumer_endElement___java_lang_String_java_lang
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1247)
     _r1.o = __NEW_java_lang_StringBuilder();
     // " \173 '"
-    _r2.o = xmlvm_create_java_string_from_pool(951);
+    _r2.o = xmlvm_create_java_string_from_pool(954);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
     // "', "
-    _r2.o = xmlvm_create_java_string_from_pool(952);
+    _r2.o = xmlvm_create_java_string_from_pool(955);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r5.o);
     // " \175"
-    _r2.o = xmlvm_create_java_string_from_pool(953);
+    _r2.o = xmlvm_create_java_string_from_pool(956);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     //java_lang_StringBuilder_toString__[5]
@@ -3926,14 +3926,14 @@ void gnu_xml_pipeline_ValidationConsumer_endDocument__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1269)
     _r2.o = __NEW_java_lang_StringBuilder();
     // "Undeclared ID value '"
-    _r3.o = xmlvm_create_java_string_from_pool(954);
+    _r3.o = xmlvm_create_java_string_from_pool(957);
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuilder___INIT____java_lang_String(_r2.o, _r3.o);
     XMLVM_CHECK_NPE(2)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r0.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1270)
     // "' was referred to by an IDREF/IDREFS attribute"
-    _r2.o = xmlvm_create_java_string_from_pool(955);
+    _r2.o = xmlvm_create_java_string_from_pool(958);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r2.o);
     //java_lang_StringBuilder_toString__[5]

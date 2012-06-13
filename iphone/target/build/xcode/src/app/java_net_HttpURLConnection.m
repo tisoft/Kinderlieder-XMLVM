@@ -1320,7 +1320,7 @@ void java_net_HttpURLConnection___INIT____java_net_URL(JAVA_OBJECT me, JAVA_OBJE
     _r6.o = n1;
     _r3.i = -1;
     // "GET"
-    _r4.o = xmlvm_create_java_string_from_pool(1135);
+    _r4.o = xmlvm_create_java_string_from_pool(1138);
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 282)
     XMLVM_CHECK_NPE(5)
     java_net_URLConnection___INIT____java_net_URL(_r5.o, _r6.o);
@@ -1330,32 +1330,32 @@ void java_net_HttpURLConnection___INIT____java_net_URL(JAVA_OBJECT me, JAVA_OBJE
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_String, _r0.i);
     _r1.i = 0;
     // "GET"
-    _r2.o = xmlvm_create_java_string_from_pool(1135);
+    _r2.o = xmlvm_create_java_string_from_pool(1138);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r4.o;
     _r1.i = 1;
     // "DELETE"
-    _r2.o = xmlvm_create_java_string_from_pool(1136);
+    _r2.o = xmlvm_create_java_string_from_pool(1139);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 2;
     // "HEAD"
-    _r2.o = xmlvm_create_java_string_from_pool(1137);
+    _r2.o = xmlvm_create_java_string_from_pool(1140);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 3;
     // "OPTIONS"
-    _r2.o = xmlvm_create_java_string_from_pool(1138);
+    _r2.o = xmlvm_create_java_string_from_pool(1141);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 4;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 36)
     // "POST"
-    _r2.o = xmlvm_create_java_string_from_pool(1139);
+    _r2.o = xmlvm_create_java_string_from_pool(1142);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
@@ -1367,14 +1367,14 @@ void java_net_HttpURLConnection___INIT____java_net_URL(JAVA_OBJECT me, JAVA_OBJE
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     _r1.i = 6;
     // "TRACE"
-    _r2.o = xmlvm_create_java_string_from_pool(1140);
+    _r2.o = xmlvm_create_java_string_from_pool(1143);
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     ((java_net_HttpURLConnection*) _r5.o)->fields.java_net_HttpURLConnection.methodTokens_ = _r0.o;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 42)
     // "GET"
-    _r0.o = xmlvm_create_java_string_from_pool(1135);
+    _r0.o = xmlvm_create_java_string_from_pool(1138);
     ((java_net_HttpURLConnection*) _r5.o)->fields.java_net_HttpURLConnection.method_ = _r4.o;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 54)
     ((java_net_HttpURLConnection*) _r5.o)->fields.java_net_HttpURLConnection.responseCode_ = _r3.i;
@@ -1457,7 +1457,7 @@ JAVA_OBJECT java_net_HttpURLConnection_getPermission__(JAVA_OBJECT me)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[5])(_r0.o);
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 334)
     // "connect, resolve"
-    _r2.o = xmlvm_create_java_string_from_pool(1141);
+    _r2.o = xmlvm_create_java_string_from_pool(1144);
     XMLVM_CHECK_NPE(1)
     java_net_SocketPermission___INIT____java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_EXIT_METHOD()
@@ -1623,7 +1623,7 @@ void java_net_HttpURLConnection_setRequestMethod___java_lang_String(JAVA_OBJECT 
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 429)
     _r0.o = __NEW_java_net_ProtocolException();
     // "luni.5E"
-    _r1.o = xmlvm_create_java_string_from_pool(1142);
+    _r1.o = xmlvm_create_java_string_from_pool(1145);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_net_ProtocolException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -1732,7 +1732,7 @@ void java_net_HttpURLConnection_setFixedLengthStreamingMode___int(JAVA_OBJECT me
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 505)
     _r0.o = __NEW_java_lang_IllegalStateException();
     // "luni.5F"
-    _r1.o = xmlvm_create_java_string_from_pool(1143);
+    _r1.o = xmlvm_create_java_string_from_pool(1146);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalStateException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -1744,7 +1744,7 @@ void java_net_HttpURLConnection_setFixedLengthStreamingMode___int(JAVA_OBJECT me
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 508)
     _r0.o = __NEW_java_lang_IllegalStateException();
     // "luni.60"
-    _r1.o = xmlvm_create_java_string_from_pool(1144);
+    _r1.o = xmlvm_create_java_string_from_pool(1147);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalStateException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -1755,7 +1755,7 @@ void java_net_HttpURLConnection_setFixedLengthStreamingMode___int(JAVA_OBJECT me
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 511)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.61"
-    _r1.o = xmlvm_create_java_string_from_pool(1026);
+    _r1.o = xmlvm_create_java_string_from_pool(1029);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -1785,7 +1785,7 @@ void java_net_HttpURLConnection_setChunkedStreamingMode___int(JAVA_OBJECT me, JA
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 530)
     _r0.o = __NEW_java_lang_IllegalStateException();
     // "luni.5F"
-    _r1.o = xmlvm_create_java_string_from_pool(1143);
+    _r1.o = xmlvm_create_java_string_from_pool(1146);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalStateException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -1797,7 +1797,7 @@ void java_net_HttpURLConnection_setChunkedStreamingMode___int(JAVA_OBJECT me, JA
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 533)
     _r0.o = __NEW_java_lang_IllegalStateException();
     // "luni.60"
-    _r1.o = xmlvm_create_java_string_from_pool(1144);
+    _r1.o = xmlvm_create_java_string_from_pool(1147);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalStateException___INIT____java_lang_String(_r0.o, _r1.o);

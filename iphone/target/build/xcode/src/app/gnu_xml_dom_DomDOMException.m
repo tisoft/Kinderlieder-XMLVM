@@ -417,7 +417,7 @@ JAVA_OBJECT gnu_xml_dom_DomDOMException_getMessage__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r0.o);
     // "\012More Information: "
-    _r0.o = xmlvm_create_java_string_from_pool(1936);
+    _r0.o = xmlvm_create_java_string_from_pool(1939);
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r0.o);
     _r1.o = ((gnu_xml_dom_DomDOMException*) _r2.o)->fields.gnu_xml_dom_DomDOMException.data_;
@@ -436,7 +436,7 @@ JAVA_OBJECT gnu_xml_dom_DomDOMException_getMessage__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r0.o);
     // "\012Number: "
-    _r0.o = xmlvm_create_java_string_from_pool(1937);
+    _r0.o = xmlvm_create_java_string_from_pool(1940);
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r0.o);
     _r1.i = ((gnu_xml_dom_DomDOMException*) _r2.o)->fields.gnu_xml_dom_DomDOMException.value_;
@@ -455,7 +455,7 @@ JAVA_OBJECT gnu_xml_dom_DomDOMException_getMessage__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r0.o);
     // "\012Node Name: "
-    _r0.o = xmlvm_create_java_string_from_pool(1938);
+    _r0.o = xmlvm_create_java_string_from_pool(1941);
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r0.o);
     _r1.o = ((gnu_xml_dom_DomDOMException*) _r2.o)->fields.gnu_xml_dom_DomDOMException.node_;
@@ -504,7 +504,7 @@ JAVA_OBJECT gnu_xml_dom_DomDOMException_diagnostic___short(JAVA_SHORT n1)
     XMLVM_SOURCE_POSITION("DomDOMException.java", 171)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "Reserved exception number: "
-    _r1.o = xmlvm_create_java_string_from_pool(1939);
+    _r1.o = xmlvm_create_java_string_from_pool(1942);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_CHECK_NPE(0)
@@ -518,82 +518,82 @@ JAVA_OBJECT gnu_xml_dom_DomDOMException_diagnostic___short(JAVA_SHORT n1)
     label19:;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 137)
     // "An index or size is out of range."
-    _r0.o = xmlvm_create_java_string_from_pool(1940);
+    _r0.o = xmlvm_create_java_string_from_pool(1943);
     goto label18;
     label22:;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 139)
     // "A string is too big."
-    _r0.o = xmlvm_create_java_string_from_pool(1941);
+    _r0.o = xmlvm_create_java_string_from_pool(1944);
     goto label18;
     label25:;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 141)
     // "The node doesn't belong here."
-    _r0.o = xmlvm_create_java_string_from_pool(1942);
+    _r0.o = xmlvm_create_java_string_from_pool(1945);
     goto label18;
     label28:;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 143)
     // "The node belongs in another document."
-    _r0.o = xmlvm_create_java_string_from_pool(1943);
+    _r0.o = xmlvm_create_java_string_from_pool(1946);
     goto label18;
     label31:;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 145)
     // "That character is not permitted."
-    _r0.o = xmlvm_create_java_string_from_pool(1944);
+    _r0.o = xmlvm_create_java_string_from_pool(1947);
     goto label18;
     label34:;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 147)
     // "This node does not permit data."
-    _r0.o = xmlvm_create_java_string_from_pool(1945);
+    _r0.o = xmlvm_create_java_string_from_pool(1948);
     goto label18;
     label37:;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 149)
     // "No changes are allowed."
-    _r0.o = xmlvm_create_java_string_from_pool(1946);
+    _r0.o = xmlvm_create_java_string_from_pool(1949);
     goto label18;
     label40:;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 151)
     // "The node was not found in that context."
-    _r0.o = xmlvm_create_java_string_from_pool(1947);
+    _r0.o = xmlvm_create_java_string_from_pool(1950);
     goto label18;
     label43:;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 153)
     // "That object is not supported."
-    _r0.o = xmlvm_create_java_string_from_pool(1948);
+    _r0.o = xmlvm_create_java_string_from_pool(1951);
     goto label18;
     label46:;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 155)
     // "The attribute belongs to a different element."
-    _r0.o = xmlvm_create_java_string_from_pool(1949);
+    _r0.o = xmlvm_create_java_string_from_pool(1952);
     goto label18;
     label49:;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 159)
     // "The object is not usable."
-    _r0.o = xmlvm_create_java_string_from_pool(1950);
+    _r0.o = xmlvm_create_java_string_from_pool(1953);
     goto label18;
     label52:;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 161)
     // "An illegal string was provided."
-    _r0.o = xmlvm_create_java_string_from_pool(1951);
+    _r0.o = xmlvm_create_java_string_from_pool(1954);
     goto label18;
     label55:;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 163)
     // "An object's type may not be changed."
-    _r0.o = xmlvm_create_java_string_from_pool(1952);
+    _r0.o = xmlvm_create_java_string_from_pool(1955);
     goto label18;
     label58:;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 165)
     // "The operation violates XML Namespaces."
-    _r0.o = xmlvm_create_java_string_from_pool(1953);
+    _r0.o = xmlvm_create_java_string_from_pool(1956);
     goto label18;
     label61:;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 167)
     // "Parameter or operation isn't supported by this node."
-    _r0.o = xmlvm_create_java_string_from_pool(1954);
+    _r0.o = xmlvm_create_java_string_from_pool(1957);
     goto label18;
     label64:;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 169)
     // "The type of the argument is incompatible with the expected type."
-    _r0.o = xmlvm_create_java_string_from_pool(1955);
+    _r0.o = xmlvm_create_java_string_from_pool(1958);
     goto label18;
     label68:;
     //XMLVM_END_WRAPPER

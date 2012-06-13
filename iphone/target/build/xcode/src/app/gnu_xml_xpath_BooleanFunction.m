@@ -410,7 +410,7 @@ JAVA_OBJECT gnu_xml_xpath_BooleanFunction_toString__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("BooleanFunction.java", 92)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "boolean("
-    _r1.o = xmlvm_create_java_string_from_pool(1507);
+    _r1.o = xmlvm_create_java_string_from_pool(1510);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     _r1.o = ((gnu_xml_xpath_BooleanFunction*) _r2.o)->fields.gnu_xml_xpath_BooleanFunction.arg_;

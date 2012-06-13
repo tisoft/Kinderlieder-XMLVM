@@ -371,21 +371,21 @@ void java_text_AttributedCharacterIterator_Attribute___CLINIT_()
     _r0.o = __NEW_java_text_AttributedCharacterIterator_Attribute();
     XMLVM_SOURCE_POSITION("AttributedCharacterIterator.java", 52)
     // "input_method_segment"
-    _r1.o = xmlvm_create_java_string_from_pool(1439);
+    _r1.o = xmlvm_create_java_string_from_pool(1442);
     XMLVM_CHECK_NPE(0)
     java_text_AttributedCharacterIterator_Attribute___INIT____java_lang_String(_r0.o, _r1.o);
     java_text_AttributedCharacterIterator_Attribute_PUT_INPUT_METHOD_SEGMENT( _r0.o);
     XMLVM_SOURCE_POSITION("AttributedCharacterIterator.java", 58)
     _r0.o = __NEW_java_text_AttributedCharacterIterator_Attribute();
     // "language"
-    _r1.o = xmlvm_create_java_string_from_pool(996);
+    _r1.o = xmlvm_create_java_string_from_pool(999);
     XMLVM_CHECK_NPE(0)
     java_text_AttributedCharacterIterator_Attribute___INIT____java_lang_String(_r0.o, _r1.o);
     java_text_AttributedCharacterIterator_Attribute_PUT_LANGUAGE( _r0.o);
     XMLVM_SOURCE_POSITION("AttributedCharacterIterator.java", 66)
     _r0.o = __NEW_java_text_AttributedCharacterIterator_Attribute();
     // "reading"
-    _r1.o = xmlvm_create_java_string_from_pool(1440);
+    _r1.o = xmlvm_create_java_string_from_pool(1443);
     XMLVM_CHECK_NPE(0)
     java_text_AttributedCharacterIterator_Attribute___INIT____java_lang_String(_r0.o, _r1.o);
     java_text_AttributedCharacterIterator_Attribute_PUT_READING( _r0.o);
@@ -482,7 +482,7 @@ JAVA_OBJECT java_text_AttributedCharacterIterator_Attribute_readResolve__(JAVA_O
     XMLVM_SOURCE_POSITION("AttributedCharacterIterator.java", 127)
     _r0.o = __NEW_java_io_InvalidObjectException();
     // "text.0C"
-    _r1.o = xmlvm_create_java_string_from_pool(1441);
+    _r1.o = xmlvm_create_java_string_from_pool(1444);
 
     
     // Red class access removed: org.apache.harmony.text.internal.nls.Messages::getString
@@ -538,7 +538,7 @@ JAVA_OBJECT java_text_AttributedCharacterIterator_Attribute_readResolve__(JAVA_O
     XMLVM_SOURCE_POSITION("AttributedCharacterIterator.java", 139)
     _r0.o = __NEW_java_io_InvalidObjectException();
     // "text.02"
-    _r1.o = xmlvm_create_java_string_from_pool(1442);
+    _r1.o = xmlvm_create_java_string_from_pool(1445);
 
     
     // Red class access removed: org.apache.harmony.text.internal.nls.Messages::getString

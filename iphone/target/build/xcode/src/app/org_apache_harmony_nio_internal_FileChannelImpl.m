@@ -803,7 +803,7 @@ void org_apache_harmony_nio_internal_FileChannelImpl___CLINIT_()
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 48)
     _r0.o = org_apache_harmony_luni_platform_Platform_getFileSystem__();
     org_apache_harmony_nio_internal_FileChannelImpl_PUT_fileSystem( _r0.o);
-    XMLVM_TRY_BEGIN(w38539aaab6b1b4)
+    XMLVM_TRY_BEGIN(w38574aaab6b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 54)
     _r0.o = org_apache_harmony_nio_internal_FileChannelImpl_GET_fileSystem();
@@ -812,17 +812,17 @@ void org_apache_harmony_nio_internal_FileChannelImpl___CLINIT_()
     org_apache_harmony_nio_internal_FileChannelImpl_PUT_ALLOC_GRANULARITY( _r0.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaab6b1b4)
-        XMLVM_CATCH_SPECIFIC(w38539aaab6b1b4,java_io_IOException,15)
-    XMLVM_CATCH_END(w38539aaab6b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaab6b1b4)
+    XMLVM_CATCH_BEGIN(w38574aaab6b1b4)
+        XMLVM_CATCH_SPECIFIC(w38574aaab6b1b4,java_io_IOException,15)
+    XMLVM_CATCH_END(w38574aaab6b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaab6b1b4)
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 45)
     XMLVM_EXIT_METHOD()
     return;
     label15:;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 55)
-    java_lang_Thread* curThread_w38539aaab6b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w38539aaab6b1b9->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaab6b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w38574aaab6b1b9->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 56)
     _r1.o = __NEW_java_lang_Error();
     XMLVM_CHECK_NPE(1)
@@ -958,7 +958,7 @@ JAVA_OBJECT org_apache_harmony_nio_internal_FileChannelImpl_basicLock___long_lon
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 109)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "nio.0A"
-    _r1.o = xmlvm_create_java_string_from_pool(3093);
+    _r1.o = xmlvm_create_java_string_from_pool(3096);
 
     
     // Red class access removed: org.apache.harmony.nio.internal.nls.Messages::getString
@@ -1041,7 +1041,7 @@ JAVA_OBJECT org_apache_harmony_nio_internal_FileChannelImpl_lock___long_long_boo
     org_apache_harmony_nio_internal_FileChannelImpl_openCheck__(_r9.o);
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 136)
     _r7.i = 0;
-    XMLVM_TRY_BEGIN(w38539aaac11b1c10)
+    XMLVM_TRY_BEGIN(w38574aaac11b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 138)
     XMLVM_CHECK_NPE(9)
@@ -1057,10 +1057,10 @@ JAVA_OBJECT org_apache_harmony_nio_internal_FileChannelImpl_lock___long_long_boo
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_LONG, JAVA_LONG, JAVA_BOOLEAN, JAVA_BOOLEAN)) ((org_apache_harmony_nio_internal_FileChannelImpl*) _r0.o)->tib->vtable[27])(_r0.o, _r1.l, _r3.l, _r5.i, _r6.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac11b1c10)
-        XMLVM_CATCH_SPECIFIC(w38539aaac11b1c10,java_lang_Object,21)
-    XMLVM_CATCH_END(w38539aaac11b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac11b1c10)
+    XMLVM_CATCH_BEGIN(w38574aaac11b1c10)
+        XMLVM_CATCH_SPECIFIC(w38574aaac11b1c10,java_lang_Object,21)
+    XMLVM_CATCH_END(w38574aaac11b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac11b1c10)
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 142)
     XMLVM_CHECK_NPE(9)
     java_nio_channels_spi_AbstractInterruptibleChannel_end___boolean(_r9.o, _r8.i);
@@ -1069,8 +1069,8 @@ JAVA_OBJECT org_apache_harmony_nio_internal_FileChannelImpl_lock___long_long_boo
     return _r0.o;
     label21:;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 141)
-    java_lang_Thread* curThread_w38539aaac11b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w38539aaac11b1c17->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac11b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w38574aaac11b1c17->fields.java_lang_Thread.xmlvmException_;
     XMLVM_CHECK_NPE(9)
     java_nio_channels_spi_AbstractInterruptibleChannel_end___boolean(_r9.o, _r7.i);
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 143)
@@ -1234,7 +1234,7 @@ JAVA_OBJECT org_apache_harmony_nio_internal_FileChannelImpl_mapImpl___int_long_l
     
     // Red class access removed: org.apache.harmony.luni.platform.PlatformAddressFactory::allocMap
     XMLVM_RED_CLASS_DEPENDENCY();
-    XMLVM_TRY_BEGIN(w38539aaac16b1c30)
+    XMLVM_TRY_BEGIN(w38574aaac16b1c30)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 195)
 
@@ -1243,17 +1243,17 @@ JAVA_OBJECT org_apache_harmony_nio_internal_FileChannelImpl_mapImpl___int_long_l
     XMLVM_RED_CLASS_DEPENDENCY();
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac16b1c30)
-        XMLVM_CATCH_SPECIFIC(w38539aaac16b1c30,java_lang_Exception,43)
-    XMLVM_CATCH_END(w38539aaac16b1c30)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac16b1c30)
+    XMLVM_CATCH_BEGIN(w38574aaac16b1c30)
+        XMLVM_CATCH_SPECIFIC(w38574aaac16b1c30,java_lang_Exception,43)
+    XMLVM_CATCH_END(w38574aaac16b1c30)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac16b1c30)
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 200)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label43:;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 197)
-    java_lang_Thread* curThread_w38539aaac16b1c35 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w38539aaac16b1c35->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac16b1c35 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w38574aaac16b1c35->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 198)
     _r1.o = __NEW_java_io_IOException();
     //java_lang_Exception_getMessage__[7]
@@ -1318,7 +1318,7 @@ JAVA_OBJECT org_apache_harmony_nio_internal_FileChannelImpl_position___long(JAVA
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 218)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "nio.0B"
-    _r1.o = xmlvm_create_java_string_from_pool(3094);
+    _r1.o = xmlvm_create_java_string_from_pool(3097);
 
     
     // Red class access removed: org.apache.harmony.nio.internal.nls.Messages::getString
@@ -1330,7 +1330,7 @@ JAVA_OBJECT org_apache_harmony_nio_internal_FileChannelImpl_position___long(JAVA
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 221)
     _r6.o = ((org_apache_harmony_nio_internal_FileChannelImpl*) _r7.o)->fields.org_apache_harmony_nio_internal_FileChannelImpl.repositioningLock_;
     java_lang_Object_acquireLockRecursive__(_r6.o);
-    XMLVM_TRY_BEGIN(w38539aaac18b1c19)
+    XMLVM_TRY_BEGIN(w38574aaac18b1c19)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 222)
     _r0.o = org_apache_harmony_nio_internal_FileChannelImpl_GET_fileSystem();
@@ -1341,27 +1341,27 @@ JAVA_OBJECT org_apache_harmony_nio_internal_FileChannelImpl_position___long(JAVA
     (*(JAVA_LONG (*)(JAVA_OBJECT, JAVA_LONG, JAVA_LONG, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_IFileSystem_seek___long_long_int])(_r0.o, _r1.l, _r3.l, _r5.i);
     java_lang_Object_releaseLockRecursive__(_r6.o);
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 224)
-    XMLVM_MEMCPY(curThread_w38539aaac18b1c19->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38539aaac18b1c19, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w38574aaac18b1c19->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38574aaac18b1c19, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r7.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac18b1c19)
-        XMLVM_CATCH_SPECIFIC(w38539aaac18b1c19,java_lang_Object,35)
-    XMLVM_CATCH_END(w38539aaac18b1c19)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac18b1c19)
+    XMLVM_CATCH_BEGIN(w38574aaac18b1c19)
+        XMLVM_CATCH_SPECIFIC(w38574aaac18b1c19,java_lang_Object,35)
+    XMLVM_CATCH_END(w38574aaac18b1c19)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac18b1c19)
     label35:;
-    XMLVM_TRY_BEGIN(w38539aaac18b1c21)
+    XMLVM_TRY_BEGIN(w38574aaac18b1c21)
     // Begin try
-    java_lang_Thread* curThread_w38539aaac18b1c21aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w38539aaac18b1c21aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac18b1c21aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w38574aaac18b1c21aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r6.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac18b1c21)
-        XMLVM_CATCH_SPECIFIC(w38539aaac18b1c21,java_lang_Object,35)
-    XMLVM_CATCH_END(w38539aaac18b1c21)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac18b1c21)
+    XMLVM_CATCH_BEGIN(w38574aaac18b1c21)
+        XMLVM_CATCH_SPECIFIC(w38574aaac18b1c21,java_lang_Object,35)
+    XMLVM_CATCH_END(w38574aaac18b1c21)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac18b1c21)
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER
 }
@@ -1416,7 +1416,7 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_read___java_nio_ByteBuf
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 238)
     _r0.o = ((org_apache_harmony_nio_internal_FileChannelImpl*) _r4.o)->fields.org_apache_harmony_nio_internal_FileChannelImpl.repositioningLock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
-    XMLVM_TRY_BEGIN(w38539aaac19b1c34)
+    XMLVM_TRY_BEGIN(w38574aaac19b1c34)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 240)
     //org_apache_harmony_nio_internal_FileChannelImpl_position__[12]
@@ -1428,11 +1428,11 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_read___java_nio_ByteBuf
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_LONG)) ((org_apache_harmony_nio_internal_FileChannelImpl*) _r4.o)->tib->vtable[13])(_r4.o, _r6.l);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac19b1c34)
-        XMLVM_CATCH_SPECIFIC(w38539aaac19b1c34,java_lang_Object,56)
-    XMLVM_CATCH_END(w38539aaac19b1c34)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac19b1c34)
-    XMLVM_TRY_BEGIN(w38539aaac19b1c35)
+    XMLVM_CATCH_BEGIN(w38574aaac19b1c34)
+        XMLVM_CATCH_SPECIFIC(w38574aaac19b1c34,java_lang_Object,56)
+    XMLVM_CATCH_END(w38574aaac19b1c34)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac19b1c34)
+    XMLVM_TRY_BEGIN(w38574aaac19b1c35)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 243)
     //org_apache_harmony_nio_internal_FileChannelImpl_read___java_nio_ByteBuffer[14]
@@ -1440,11 +1440,11 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_read___java_nio_ByteBuf
     _r3.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((org_apache_harmony_nio_internal_FileChannelImpl*) _r4.o)->tib->vtable[14])(_r4.o, _r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac19b1c35)
-        XMLVM_CATCH_SPECIFIC(w38539aaac19b1c35,java_lang_Object,51)
-    XMLVM_CATCH_END(w38539aaac19b1c35)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac19b1c35)
-    XMLVM_TRY_BEGIN(w38539aaac19b1c36)
+    XMLVM_CATCH_BEGIN(w38574aaac19b1c35)
+        XMLVM_CATCH_SPECIFIC(w38574aaac19b1c35,java_lang_Object,51)
+    XMLVM_CATCH_END(w38574aaac19b1c35)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac19b1c35)
+    XMLVM_TRY_BEGIN(w38574aaac19b1c36)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 245)
     //org_apache_harmony_nio_internal_FileChannelImpl_position___long[13]
@@ -1452,19 +1452,19 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_read___java_nio_ByteBuf
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_LONG)) ((org_apache_harmony_nio_internal_FileChannelImpl*) _r4.o)->tib->vtable[13])(_r4.o, _r1.l);
     java_lang_Object_releaseLockRecursive__(_r0.o);
     _r0 = _r3;
-    { XMLVM_MEMCPY(curThread_w38539aaac19b1c36->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38539aaac19b1c36, sizeof(XMLVM_JMP_BUF)); goto label30; };
+    { XMLVM_MEMCPY(curThread_w38574aaac19b1c36->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38574aaac19b1c36, sizeof(XMLVM_JMP_BUF)); goto label30; };
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 244)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac19b1c36)
-        XMLVM_CATCH_SPECIFIC(w38539aaac19b1c36,java_lang_Object,56)
-    XMLVM_CATCH_END(w38539aaac19b1c36)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac19b1c36)
+    XMLVM_CATCH_BEGIN(w38574aaac19b1c36)
+        XMLVM_CATCH_SPECIFIC(w38574aaac19b1c36,java_lang_Object,56)
+    XMLVM_CATCH_END(w38574aaac19b1c36)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac19b1c36)
     label51:;
-    XMLVM_TRY_BEGIN(w38539aaac19b1c38)
+    XMLVM_TRY_BEGIN(w38574aaac19b1c38)
     // Begin try
-    java_lang_Thread* curThread_w38539aaac19b1c38aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r3.o = curThread_w38539aaac19b1c38aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac19b1c38aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r3.o = curThread_w38574aaac19b1c38aa->fields.java_lang_Thread.xmlvmException_;
     //org_apache_harmony_nio_internal_FileChannelImpl_position___long[13]
     XMLVM_CHECK_NPE(4)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_LONG)) ((org_apache_harmony_nio_internal_FileChannelImpl*) _r4.o)->tib->vtable[13])(_r4.o, _r1.l);
@@ -1472,22 +1472,22 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_read___java_nio_ByteBuf
     XMLVM_THROW_CUSTOM(_r3.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac19b1c38)
-        XMLVM_CATCH_SPECIFIC(w38539aaac19b1c38,java_lang_Object,56)
-    XMLVM_CATCH_END(w38539aaac19b1c38)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac19b1c38)
+    XMLVM_CATCH_BEGIN(w38574aaac19b1c38)
+        XMLVM_CATCH_SPECIFIC(w38574aaac19b1c38,java_lang_Object,56)
+    XMLVM_CATCH_END(w38574aaac19b1c38)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac19b1c38)
     label56:;
-    XMLVM_TRY_BEGIN(w38539aaac19b1c40)
+    XMLVM_TRY_BEGIN(w38574aaac19b1c40)
     // Begin try
-    java_lang_Thread* curThread_w38539aaac19b1c40aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w38539aaac19b1c40aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac19b1c40aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w38574aaac19b1c40aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac19b1c40)
-        XMLVM_CATCH_SPECIFIC(w38539aaac19b1c40,java_lang_Object,56)
-    XMLVM_CATCH_END(w38539aaac19b1c40)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac19b1c40)
+    XMLVM_CATCH_BEGIN(w38574aaac19b1c40)
+        XMLVM_CATCH_SPECIFIC(w38574aaac19b1c40,java_lang_Object,56)
+    XMLVM_CATCH_END(w38574aaac19b1c40)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac19b1c40)
     XMLVM_THROW_CUSTOM(_r1.o)
     //XMLVM_END_WRAPPER
 }
@@ -1530,13 +1530,13 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_read___java_nio_ByteBuf
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 258)
     _r8.o = ((org_apache_harmony_nio_internal_FileChannelImpl*) _r11.o)->fields.org_apache_harmony_nio_internal_FileChannelImpl.repositioningLock_;
     java_lang_Object_acquireLockRecursive__(_r8.o);
-    XMLVM_TRY_BEGIN(w38539aaac20b1c19)
+    XMLVM_TRY_BEGIN(w38574aaac20b1c19)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 259)
     //java_nio_ByteBuffer_isDirect__[9]
     XMLVM_CHECK_NPE(12)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) ((java_nio_ByteBuffer*) _r12.o)->tib->vtable[9])(_r12.o);
-    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w38539aaac20b1c19->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38539aaac20b1c19, sizeof(XMLVM_JMP_BUF)); goto label91; };
+    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w38574aaac20b1c19->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38574aaac20b1c19, sizeof(XMLVM_JMP_BUF)); goto label91; };
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 260)
     _r0 = _r12;
     _r0.o = _r0.o;
@@ -1550,11 +1550,11 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_read___java_nio_ByteBuf
     XMLVM_RED_CLASS_DEPENDENCY();
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac20b1c19)
-        XMLVM_CATCH_SPECIFIC(w38539aaac20b1c19,java_lang_Object,74)
-    XMLVM_CATCH_END(w38539aaac20b1c19)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac20b1c19)
-    XMLVM_TRY_BEGIN(w38539aaac20b1c20)
+    XMLVM_CATCH_BEGIN(w38574aaac20b1c19)
+        XMLVM_CATCH_SPECIFIC(w38574aaac20b1c19,java_lang_Object,74)
+    XMLVM_CATCH_END(w38574aaac20b1c19)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac20b1c19)
+    XMLVM_TRY_BEGIN(w38574aaac20b1c20)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 263)
     XMLVM_CHECK_NPE(11)
@@ -1571,10 +1571,10 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_read___java_nio_ByteBuf
     _r1.l = (*(JAVA_LONG (*)(JAVA_OBJECT, JAVA_LONG, JAVA_LONG, JAVA_INT, JAVA_INT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_IFileSystem_readDirect___long_long_int_int])(_r1.o, _r2.l, _r4.l, _r6.i, _r7.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac20b1c20)
-        XMLVM_CATCH_SPECIFIC(w38539aaac20b1c20,java_lang_Object,77)
-    XMLVM_CATCH_END(w38539aaac20b1c20)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac20b1c20)
+    XMLVM_CATCH_BEGIN(w38574aaac20b1c20)
+        XMLVM_CATCH_SPECIFIC(w38574aaac20b1c20,java_lang_Object,77)
+    XMLVM_CATCH_END(w38574aaac20b1c20)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac20b1c20)
     _r1.i = (JAVA_INT) _r1.l;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 269)
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 271)
@@ -1582,21 +1582,21 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_read___java_nio_ByteBuf
     if (_r1.i < 0) goto label89;
     _r2 = _r10;
     label59:;
-    XMLVM_TRY_BEGIN(w38539aaac20b1c28)
+    XMLVM_TRY_BEGIN(w38574aaac20b1c28)
     // Begin try
     XMLVM_CHECK_NPE(11)
     java_nio_channels_spi_AbstractInterruptibleChannel_end___boolean(_r11.o, _r2.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac20b1c28)
-        XMLVM_CATCH_SPECIFIC(w38539aaac20b1c28,java_lang_Object,74)
-    XMLVM_CATCH_END(w38539aaac20b1c28)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac20b1c28)
+    XMLVM_CATCH_BEGIN(w38574aaac20b1c28)
+        XMLVM_CATCH_SPECIFIC(w38574aaac20b1c28,java_lang_Object,74)
+    XMLVM_CATCH_END(w38574aaac20b1c28)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac20b1c28)
     label62:;
-    XMLVM_TRY_BEGIN(w38539aaac20b1c30)
+    XMLVM_TRY_BEGIN(w38574aaac20b1c30)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 287)
-    if (_r1.i <= 0) { XMLVM_MEMCPY(curThread_w38539aaac20b1c30->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38539aaac20b1c30, sizeof(XMLVM_JMP_BUF)); goto label72; };
+    if (_r1.i <= 0) { XMLVM_MEMCPY(curThread_w38574aaac20b1c30->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38574aaac20b1c30, sizeof(XMLVM_JMP_BUF)); goto label72; };
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 288)
     XMLVM_CHECK_NPE(12)
     _r2.i = java_nio_Buffer_position__(_r12.o);
@@ -1605,43 +1605,43 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_read___java_nio_ByteBuf
     java_nio_Buffer_position___int(_r12.o, _r2.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac20b1c30)
-        XMLVM_CATCH_SPECIFIC(w38539aaac20b1c30,java_lang_Object,74)
-    XMLVM_CATCH_END(w38539aaac20b1c30)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac20b1c30)
+    XMLVM_CATCH_BEGIN(w38574aaac20b1c30)
+        XMLVM_CATCH_SPECIFIC(w38574aaac20b1c30,java_lang_Object,74)
+    XMLVM_CATCH_END(w38574aaac20b1c30)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac20b1c30)
     label72:;
-    XMLVM_TRY_BEGIN(w38539aaac20b1c32)
+    XMLVM_TRY_BEGIN(w38574aaac20b1c32)
     // Begin try
     java_lang_Object_releaseLockRecursive__(_r8.o);
-    { XMLVM_MEMCPY(curThread_w38539aaac20b1c32->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38539aaac20b1c32, sizeof(XMLVM_JMP_BUF)); goto label12; };
+    { XMLVM_MEMCPY(curThread_w38574aaac20b1c32->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38574aaac20b1c32, sizeof(XMLVM_JMP_BUF)); goto label12; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac20b1c32)
-        XMLVM_CATCH_SPECIFIC(w38539aaac20b1c32,java_lang_Object,74)
-    XMLVM_CATCH_END(w38539aaac20b1c32)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac20b1c32)
+    XMLVM_CATCH_BEGIN(w38574aaac20b1c32)
+        XMLVM_CATCH_SPECIFIC(w38574aaac20b1c32,java_lang_Object,74)
+    XMLVM_CATCH_END(w38574aaac20b1c32)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac20b1c32)
     label74:;
-    XMLVM_TRY_BEGIN(w38539aaac20b1c34)
+    XMLVM_TRY_BEGIN(w38574aaac20b1c34)
     // Begin try
-    java_lang_Thread* curThread_w38539aaac20b1c34aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w38539aaac20b1c34aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac20b1c34aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w38574aaac20b1c34aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r8.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac20b1c34)
-        XMLVM_CATCH_SPECIFIC(w38539aaac20b1c34,java_lang_Object,74)
-    XMLVM_CATCH_END(w38539aaac20b1c34)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac20b1c34)
+    XMLVM_CATCH_BEGIN(w38574aaac20b1c34)
+        XMLVM_CATCH_SPECIFIC(w38574aaac20b1c34,java_lang_Object,74)
+    XMLVM_CATCH_END(w38574aaac20b1c34)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac20b1c34)
     XMLVM_THROW_CUSTOM(_r1.o)
     label77:;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 270)
-    java_lang_Thread* curThread_w38539aaac20b1c38 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w38539aaac20b1c38->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac20b1c38 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w38574aaac20b1c38->fields.java_lang_Thread.xmlvmException_;
     if (_r9.i == 0) goto label87;
     if (_r9.i < 0) goto label87;
     _r2 = _r10;
     label83:;
-    XMLVM_TRY_BEGIN(w38539aaac20b1c43)
+    XMLVM_TRY_BEGIN(w38574aaac20b1c43)
     // Begin try
     XMLVM_CHECK_NPE(11)
     java_nio_channels_spi_AbstractInterruptibleChannel_end___boolean(_r11.o, _r2.i);
@@ -1649,10 +1649,10 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_read___java_nio_ByteBuf
     XMLVM_THROW_CUSTOM(_r1.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac20b1c43)
-        XMLVM_CATCH_SPECIFIC(w38539aaac20b1c43,java_lang_Object,74)
-    XMLVM_CATCH_END(w38539aaac20b1c43)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac20b1c43)
+    XMLVM_CATCH_BEGIN(w38574aaac20b1c43)
+        XMLVM_CATCH_SPECIFIC(w38574aaac20b1c43,java_lang_Object,74)
+    XMLVM_CATCH_END(w38574aaac20b1c43)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac20b1c43)
     label87:;
     _r2 = _r9;
     goto label83;
@@ -1660,7 +1660,7 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_read___java_nio_ByteBuf
     _r2 = _r9;
     goto label59;
     label91:;
-    XMLVM_TRY_BEGIN(w38539aaac20b1c51)
+    XMLVM_TRY_BEGIN(w38574aaac20b1c51)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 275)
     XMLVM_CHECK_NPE(11)
@@ -1685,10 +1685,10 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_read___java_nio_ByteBuf
     _r1.l = (*(JAVA_LONG (*)(JAVA_OBJECT, JAVA_LONG, JAVA_OBJECT, JAVA_INT, JAVA_INT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_IFileSystem_read___long_byte_1ARRAY_int_int])(_r1.o, _r2.l, _r4.o, _r5.i, _r6.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac20b1c51)
-        XMLVM_CATCH_SPECIFIC(w38539aaac20b1c51,java_lang_Object,129)
-    XMLVM_CATCH_END(w38539aaac20b1c51)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac20b1c51)
+    XMLVM_CATCH_BEGIN(w38574aaac20b1c51)
+        XMLVM_CATCH_SPECIFIC(w38574aaac20b1c51,java_lang_Object,129)
+    XMLVM_CATCH_END(w38574aaac20b1c51)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac20b1c51)
     _r1.i = (JAVA_INT) _r1.l;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 282)
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 284)
@@ -1696,34 +1696,34 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_read___java_nio_ByteBuf
     if (_r1.i < 0) goto label141;
     _r2 = _r10;
     label125:;
-    XMLVM_TRY_BEGIN(w38539aaac20b1c59)
+    XMLVM_TRY_BEGIN(w38574aaac20b1c59)
     // Begin try
     XMLVM_CHECK_NPE(11)
     java_nio_channels_spi_AbstractInterruptibleChannel_end___boolean(_r11.o, _r2.i);
-    { XMLVM_MEMCPY(curThread_w38539aaac20b1c59->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38539aaac20b1c59, sizeof(XMLVM_JMP_BUF)); goto label62; };
+    { XMLVM_MEMCPY(curThread_w38574aaac20b1c59->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38574aaac20b1c59, sizeof(XMLVM_JMP_BUF)); goto label62; };
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 283)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac20b1c59)
-        XMLVM_CATCH_SPECIFIC(w38539aaac20b1c59,java_lang_Object,74)
-    XMLVM_CATCH_END(w38539aaac20b1c59)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac20b1c59)
+    XMLVM_CATCH_BEGIN(w38574aaac20b1c59)
+        XMLVM_CATCH_SPECIFIC(w38574aaac20b1c59,java_lang_Object,74)
+    XMLVM_CATCH_END(w38574aaac20b1c59)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac20b1c59)
     label129:;
-    XMLVM_TRY_BEGIN(w38539aaac20b1c61)
+    XMLVM_TRY_BEGIN(w38574aaac20b1c61)
     // Begin try
-    java_lang_Thread* curThread_w38539aaac20b1c61aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w38539aaac20b1c61aa->fields.java_lang_Thread.xmlvmException_;
-    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w38539aaac20b1c61->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38539aaac20b1c61, sizeof(XMLVM_JMP_BUF)); goto label139; };
-    if (_r9.i < 0) { XMLVM_MEMCPY(curThread_w38539aaac20b1c61->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38539aaac20b1c61, sizeof(XMLVM_JMP_BUF)); goto label139; };
+    java_lang_Thread* curThread_w38574aaac20b1c61aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w38574aaac20b1c61aa->fields.java_lang_Thread.xmlvmException_;
+    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w38574aaac20b1c61->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38574aaac20b1c61, sizeof(XMLVM_JMP_BUF)); goto label139; };
+    if (_r9.i < 0) { XMLVM_MEMCPY(curThread_w38574aaac20b1c61->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38574aaac20b1c61, sizeof(XMLVM_JMP_BUF)); goto label139; };
     _r2 = _r10;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac20b1c61)
-        XMLVM_CATCH_SPECIFIC(w38539aaac20b1c61,java_lang_Object,74)
-    XMLVM_CATCH_END(w38539aaac20b1c61)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac20b1c61)
+    XMLVM_CATCH_BEGIN(w38574aaac20b1c61)
+        XMLVM_CATCH_SPECIFIC(w38574aaac20b1c61,java_lang_Object,74)
+    XMLVM_CATCH_END(w38574aaac20b1c61)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac20b1c61)
     label135:;
-    XMLVM_TRY_BEGIN(w38539aaac20b1c63)
+    XMLVM_TRY_BEGIN(w38574aaac20b1c63)
     // Begin try
     XMLVM_CHECK_NPE(11)
     java_nio_channels_spi_AbstractInterruptibleChannel_end___boolean(_r11.o, _r2.i);
@@ -1731,10 +1731,10 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_read___java_nio_ByteBuf
     XMLVM_THROW_CUSTOM(_r1.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac20b1c63)
-        XMLVM_CATCH_SPECIFIC(w38539aaac20b1c63,java_lang_Object,74)
-    XMLVM_CATCH_END(w38539aaac20b1c63)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac20b1c63)
+    XMLVM_CATCH_BEGIN(w38574aaac20b1c63)
+        XMLVM_CATCH_SPECIFIC(w38574aaac20b1c63,java_lang_Object,74)
+    XMLVM_CATCH_END(w38574aaac20b1c63)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac20b1c63)
     label139:;
     _r2 = _r9;
     goto label135;
@@ -1826,7 +1826,7 @@ JAVA_LONG org_apache_harmony_nio_internal_FileChannelImpl_read___java_nio_ByteBu
     if (_r0.i < _r1.i) goto label122;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 322)
     _r10.i = 0;
-    XMLVM_TRY_BEGIN(w38539aaac21b1c53)
+    XMLVM_TRY_BEGIN(w38574aaac21b1c53)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 324)
     XMLVM_CHECK_NPE(14)
@@ -1836,11 +1836,11 @@ JAVA_LONG org_apache_harmony_nio_internal_FileChannelImpl_read___java_nio_ByteBu
     java_lang_Object_acquireLockRecursive__(_r11.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac21b1c53)
-        XMLVM_CATCH_SPECIFIC(w38539aaac21b1c53,java_lang_Object,181)
-    XMLVM_CATCH_END(w38539aaac21b1c53)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac21b1c53)
-    XMLVM_TRY_BEGIN(w38539aaac21b1c54)
+    XMLVM_CATCH_BEGIN(w38574aaac21b1c53)
+        XMLVM_CATCH_SPECIFIC(w38574aaac21b1c53,java_lang_Object,181)
+    XMLVM_CATCH_END(w38574aaac21b1c53)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac21b1c53)
+    XMLVM_TRY_BEGIN(w38574aaac21b1c54)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 326)
     _r2.o = org_apache_harmony_nio_internal_FileChannelImpl_GET_fileSystem();
@@ -1851,10 +1851,10 @@ JAVA_LONG org_apache_harmony_nio_internal_FileChannelImpl_read___java_nio_ByteBu
     java_lang_Object_releaseLockRecursive__(_r11.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac21b1c54)
-        XMLVM_CATCH_SPECIFIC(w38539aaac21b1c54,java_lang_Object,178)
-    XMLVM_CATCH_END(w38539aaac21b1c54)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac21b1c54)
+    XMLVM_CATCH_BEGIN(w38574aaac21b1c54)
+        XMLVM_CATCH_SPECIFIC(w38574aaac21b1c54,java_lang_Object,178)
+    XMLVM_CATCH_END(w38574aaac21b1c54)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac21b1c54)
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 330)
     _r4.i = 1;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 335)
@@ -1964,30 +1964,30 @@ JAVA_LONG org_apache_harmony_nio_internal_FileChannelImpl_read___java_nio_ByteBu
     _r3 = _r2;
     goto label146;
     label178:;
-    java_lang_Thread* curThread_w38539aaac21b1d128 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w38539aaac21b1d128->fields.java_lang_Thread.xmlvmException_;
-    XMLVM_TRY_BEGIN(w38539aaac21b1d129)
+    java_lang_Thread* curThread_w38574aaac21b1d128 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w38574aaac21b1d128->fields.java_lang_Thread.xmlvmException_;
+    XMLVM_TRY_BEGIN(w38574aaac21b1d129)
     // Begin try
     java_lang_Object_releaseLockRecursive__(_r11.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac21b1d129)
-        XMLVM_CATCH_SPECIFIC(w38539aaac21b1d129,java_lang_Object,178)
-    XMLVM_CATCH_END(w38539aaac21b1d129)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac21b1d129)
-    XMLVM_TRY_BEGIN(w38539aaac21b1d130)
+    XMLVM_CATCH_BEGIN(w38574aaac21b1d129)
+        XMLVM_CATCH_SPECIFIC(w38574aaac21b1d129,java_lang_Object,178)
+    XMLVM_CATCH_END(w38574aaac21b1d129)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac21b1d129)
+    XMLVM_TRY_BEGIN(w38574aaac21b1d130)
     // Begin try
     XMLVM_THROW_CUSTOM(_r2.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac21b1d130)
-        XMLVM_CATCH_SPECIFIC(w38539aaac21b1d130,java_lang_Object,181)
-    XMLVM_CATCH_END(w38539aaac21b1d130)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac21b1d130)
+    XMLVM_CATCH_BEGIN(w38574aaac21b1d130)
+        XMLVM_CATCH_SPECIFIC(w38574aaac21b1d130,java_lang_Object,181)
+    XMLVM_CATCH_END(w38574aaac21b1d130)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac21b1d130)
     label181:;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 334)
-    java_lang_Thread* curThread_w38539aaac21b1d133 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w38539aaac21b1d133->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac21b1d133 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w38574aaac21b1d133->fields.java_lang_Thread.xmlvmException_;
     XMLVM_CHECK_NPE(14)
     java_nio_channels_spi_AbstractInterruptibleChannel_end___boolean(_r14.o, _r10.i);
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 336)
@@ -2142,12 +2142,12 @@ JAVA_LONG org_apache_harmony_nio_internal_FileChannelImpl_transferFrom___java_ni
     label41:;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 389)
     _r7.o = JAVA_NULL;
-    XMLVM_TRY_BEGIN(w38539aaac23b1c39)
+    XMLVM_TRY_BEGIN(w38574aaac23b1c39)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 392)
     if (!__TIB_java_nio_channels_FileChannel.classInitialized) __INIT_java_nio_channels_FileChannel();
     _r1.i = XMLVM_ISA(_r9.o, __CLASS_java_nio_channels_FileChannel);
-    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w38539aaac23b1c39->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38539aaac23b1c39, sizeof(XMLVM_JMP_BUF)); goto label90; };
+    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w38574aaac23b1c39->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38574aaac23b1c39, sizeof(XMLVM_JMP_BUF)); goto label90; };
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 393)
     _r0 = _r9;
     _r0.o = _r0.o;
@@ -2170,36 +2170,36 @@ JAVA_LONG org_apache_harmony_nio_internal_FileChannelImpl_transferFrom___java_ni
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_LONG, JAVA_LONG)) ((java_nio_channels_FileChannel*) _r1.o)->tib->vtable[11])(_r1.o, _r2.o, _r3.l, _r5.l);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac23b1c39)
-        XMLVM_CATCH_SPECIFIC(w38539aaac23b1c39,java_lang_Object,113)
-    XMLVM_CATCH_END(w38539aaac23b1c39)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac23b1c39)
+    XMLVM_CATCH_BEGIN(w38574aaac23b1c39)
+        XMLVM_CATCH_SPECIFIC(w38574aaac23b1c39,java_lang_Object,113)
+    XMLVM_CATCH_END(w38574aaac23b1c39)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac23b1c39)
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 398)
     _r3.l = _r3.l + _r5.l;
-    XMLVM_TRY_BEGIN(w38539aaac23b1c42)
+    XMLVM_TRY_BEGIN(w38574aaac23b1c42)
     // Begin try
     //java_nio_channels_FileChannel_position___long[13]
     XMLVM_CHECK_NPE(1)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_LONG)) ((java_nio_channels_FileChannel*) _r1.o)->tib->vtable[13])(_r1.o, _r3.l);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac23b1c42)
-        XMLVM_CATCH_SPECIFIC(w38539aaac23b1c42,java_lang_Object,116)
-    XMLVM_CATCH_END(w38539aaac23b1c42)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac23b1c42)
+    XMLVM_CATCH_BEGIN(w38574aaac23b1c42)
+        XMLVM_CATCH_SPECIFIC(w38574aaac23b1c42,java_lang_Object,116)
+    XMLVM_CATCH_END(w38574aaac23b1c42)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac23b1c42)
     _r1 = _r2;
     label74:;
-    XMLVM_TRY_BEGIN(w38539aaac23b1c45)
+    XMLVM_TRY_BEGIN(w38574aaac23b1c45)
     // Begin try
     //org_apache_harmony_nio_internal_FileChannelImpl_write___java_nio_ByteBuffer_long[26]
     XMLVM_CHECK_NPE(8)
     _r2.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_LONG)) ((org_apache_harmony_nio_internal_FileChannelImpl*) _r8.o)->tib->vtable[26])(_r8.o, _r1.o, _r10.l);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac23b1c45)
-        XMLVM_CATCH_SPECIFIC(w38539aaac23b1c45,java_lang_Object,119)
-    XMLVM_CATCH_END(w38539aaac23b1c45)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac23b1c45)
+    XMLVM_CATCH_BEGIN(w38574aaac23b1c45)
+        XMLVM_CATCH_SPECIFIC(w38574aaac23b1c45,java_lang_Object,119)
+    XMLVM_CATCH_END(w38574aaac23b1c45)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac23b1c45)
     _r2.l = (JAVA_LONG) _r2.i;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 407)
     if (_r1.o == JAVA_NULL) goto label88;
@@ -2215,16 +2215,16 @@ JAVA_LONG org_apache_harmony_nio_internal_FileChannelImpl_transferFrom___java_ni
     label90:;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 400)
     _r1.i = (JAVA_INT) _r12.l;
-    XMLVM_TRY_BEGIN(w38539aaac23b1c60)
+    XMLVM_TRY_BEGIN(w38574aaac23b1c60)
     // Begin try
     _r1.o = java_nio_ByteBuffer_allocateDirect___int(_r1.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac23b1c60)
-        XMLVM_CATCH_SPECIFIC(w38539aaac23b1c60,java_lang_Object,113)
-    XMLVM_CATCH_END(w38539aaac23b1c60)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac23b1c60)
-    XMLVM_TRY_BEGIN(w38539aaac23b1c61)
+    XMLVM_CATCH_BEGIN(w38574aaac23b1c60)
+        XMLVM_CATCH_SPECIFIC(w38574aaac23b1c60,java_lang_Object,113)
+    XMLVM_CATCH_END(w38574aaac23b1c60)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac23b1c60)
+    XMLVM_TRY_BEGIN(w38574aaac23b1c61)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 401)
     XMLVM_CHECK_NPE(9)
@@ -2234,15 +2234,15 @@ JAVA_LONG org_apache_harmony_nio_internal_FileChannelImpl_transferFrom___java_ni
     java_nio_Buffer_flip__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac23b1c61)
-        XMLVM_CATCH_SPECIFIC(w38539aaac23b1c61,java_lang_Object,102)
-    XMLVM_CATCH_END(w38539aaac23b1c61)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac23b1c61)
+    XMLVM_CATCH_BEGIN(w38574aaac23b1c61)
+        XMLVM_CATCH_SPECIFIC(w38574aaac23b1c61,java_lang_Object,102)
+    XMLVM_CATCH_END(w38574aaac23b1c61)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac23b1c61)
     goto label74;
     label102:;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 405)
-    java_lang_Thread* curThread_w38539aaac23b1c65 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w38539aaac23b1c65->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac23b1c65 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w38574aaac23b1c65->fields.java_lang_Thread.xmlvmException_;
     _r8 = _r1;
     _r1 = _r2;
     label105:;
@@ -2254,18 +2254,18 @@ JAVA_LONG org_apache_harmony_nio_internal_FileChannelImpl_transferFrom___java_ni
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 412)
     XMLVM_THROW_CUSTOM(_r1.o)
     label113:;
-    java_lang_Thread* curThread_w38539aaac23b1c76 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w38539aaac23b1c76->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac23b1c76 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w38574aaac23b1c76->fields.java_lang_Thread.xmlvmException_;
     _r8 = _r7;
     goto label105;
     label116:;
-    java_lang_Thread* curThread_w38539aaac23b1c80 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w38539aaac23b1c80->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac23b1c80 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w38574aaac23b1c80->fields.java_lang_Thread.xmlvmException_;
     _r8 = _r2;
     goto label105;
     label119:;
-    java_lang_Thread* curThread_w38539aaac23b1c84 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w38539aaac23b1c84->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac23b1c84 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w38574aaac23b1c84->fields.java_lang_Thread.xmlvmException_;
     _r8 = _r1;
     _r1 = _r2;
     goto label105;
@@ -2386,7 +2386,7 @@ JAVA_LONG org_apache_harmony_nio_internal_FileChannelImpl_transferTo___long_long
     _r0.l = org_apache_harmony_nio_internal_FileChannelImpl_kernelTransfer___long_java_io_FileDescriptor_long_long(_r0.o, _r1.l, _r3.o, _r4.l, _r6.l);
     goto label54;
     label84:;
-    XMLVM_TRY_BEGIN(w38539aaac24b1c66)
+    XMLVM_TRY_BEGIN(w38574aaac24b1c66)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 440)
     _r3.o = java_nio_channels_FileChannel_MapMode_GET_READ_ONLY();
@@ -2397,20 +2397,20 @@ JAVA_LONG org_apache_harmony_nio_internal_FileChannelImpl_transferTo___long_long
     _r8.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_LONG, JAVA_LONG)) ((org_apache_harmony_nio_internal_FileChannelImpl*) _r2.o)->tib->vtable[11])(_r2.o, _r3.o, _r4.l, _r6.l);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac24b1c66)
-        XMLVM_CATCH_SPECIFIC(w38539aaac24b1c66,java_lang_Object,105)
-    XMLVM_CATCH_END(w38539aaac24b1c66)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac24b1c66)
-    XMLVM_TRY_BEGIN(w38539aaac24b1c67)
+    XMLVM_CATCH_BEGIN(w38574aaac24b1c66)
+        XMLVM_CATCH_SPECIFIC(w38574aaac24b1c66,java_lang_Object,105)
+    XMLVM_CATCH_END(w38574aaac24b1c66)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac24b1c66)
+    XMLVM_TRY_BEGIN(w38574aaac24b1c67)
     // Begin try
     XMLVM_CHECK_NPE(13)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r13.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_nio_channels_WritableByteChannel_write___java_nio_ByteBuffer])(_r13.o, _r8.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac24b1c67)
-        XMLVM_CATCH_SPECIFIC(w38539aaac24b1c67,java_lang_Object,116)
-    XMLVM_CATCH_END(w38539aaac24b1c67)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac24b1c67)
+    XMLVM_CATCH_BEGIN(w38574aaac24b1c67)
+        XMLVM_CATCH_SPECIFIC(w38574aaac24b1c67,java_lang_Object,116)
+    XMLVM_CATCH_END(w38574aaac24b1c67)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac24b1c67)
     _r0.l = (JAVA_LONG) _r0.i;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 444)
     if (_r8.o == JAVA_NULL) goto label54;
@@ -2421,8 +2421,8 @@ JAVA_LONG org_apache_harmony_nio_internal_FileChannelImpl_transferTo___long_long
     goto label54;
     label105:;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 442)
-    java_lang_Thread* curThread_w38539aaac24b1c77 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w38539aaac24b1c77->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac24b1c77 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w38574aaac24b1c77->fields.java_lang_Thread.xmlvmException_;
     _r8 = _r0;
     _r0 = _r1;
     label108:;
@@ -2434,8 +2434,8 @@ JAVA_LONG org_apache_harmony_nio_internal_FileChannelImpl_transferTo___long_long
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 449)
     XMLVM_THROW_CUSTOM(_r0.o)
     label116:;
-    java_lang_Thread* curThread_w38539aaac24b1c88 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w38539aaac24b1c88->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac24b1c88 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w38574aaac24b1c88->fields.java_lang_Thread.xmlvmException_;
     goto label108;
     //XMLVM_END_WRAPPER
 }
@@ -2468,7 +2468,7 @@ JAVA_LONG org_apache_harmony_nio_internal_FileChannelImpl_kernelTransfer___long_
     _r15.l = n4;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 454)
     _r8.i = 0;
-    XMLVM_TRY_BEGIN(w38539aaac25b1b8)
+    XMLVM_TRY_BEGIN(w38574aaac25b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 456)
     XMLVM_CHECK_NPE(9)
@@ -2483,10 +2483,10 @@ JAVA_LONG org_apache_harmony_nio_internal_FileChannelImpl_kernelTransfer___long_
     _r0.l = (*(JAVA_LONG (*)(JAVA_OBJECT, JAVA_LONG, JAVA_OBJECT, JAVA_LONG, JAVA_LONG)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_IFileSystem_transfer___long_java_io_FileDescriptor_long_long])(_r0.o, _r1.l, _r3.o, _r4.l, _r6.l);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac25b1b8)
-        XMLVM_CATCH_SPECIFIC(w38539aaac25b1b8,java_lang_Object,19)
-    XMLVM_CATCH_END(w38539aaac25b1b8)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac25b1b8)
+    XMLVM_CATCH_BEGIN(w38574aaac25b1b8)
+        XMLVM_CATCH_SPECIFIC(w38574aaac25b1b8,java_lang_Object,19)
+    XMLVM_CATCH_END(w38574aaac25b1b8)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac25b1b8)
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 458)
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 459)
@@ -2497,8 +2497,8 @@ JAVA_LONG org_apache_harmony_nio_internal_FileChannelImpl_kernelTransfer___long_
     return _r0.l;
     label19:;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 460)
-    java_lang_Thread* curThread_w38539aaac25b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w38539aaac25b1c17->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac25b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w38574aaac25b1c17->fields.java_lang_Thread.xmlvmException_;
     XMLVM_CHECK_NPE(9)
     java_nio_channels_spi_AbstractInterruptibleChannel_end___boolean(_r9.o, _r8.i);
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 462)
@@ -2543,7 +2543,7 @@ JAVA_OBJECT org_apache_harmony_nio_internal_FileChannelImpl_truncate___long(JAVA
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 471)
     _r0.o = ((org_apache_harmony_nio_internal_FileChannelImpl*) _r6.o)->fields.org_apache_harmony_nio_internal_FileChannelImpl.repositioningLock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
-    XMLVM_TRY_BEGIN(w38539aaac26b1c21)
+    XMLVM_TRY_BEGIN(w38574aaac26b1c21)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 472)
     //org_apache_harmony_nio_internal_FileChannelImpl_position__[12]
@@ -2556,16 +2556,16 @@ JAVA_OBJECT org_apache_harmony_nio_internal_FileChannelImpl_truncate___long(JAVA
     (*(void (*)(JAVA_OBJECT, JAVA_LONG, JAVA_LONG)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_IFileSystem_truncate___long_long])(_r3.o, _r4.l, _r7.l);
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 480)
     _r3.i = _r1.l > _r7.l ? 1 : (_r1.l == _r7.l ? 0 : -1);
-    if (_r3.i <= 0) { XMLVM_MEMCPY(curThread_w38539aaac26b1c21->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38539aaac26b1c21, sizeof(XMLVM_JMP_BUF)); goto label42; };
+    if (_r3.i <= 0) { XMLVM_MEMCPY(curThread_w38574aaac26b1c21->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38574aaac26b1c21, sizeof(XMLVM_JMP_BUF)); goto label42; };
     _r1 = _r7;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac26b1c21)
-        XMLVM_CATCH_SPECIFIC(w38539aaac26b1c21,java_lang_Object,47)
-    XMLVM_CATCH_END(w38539aaac26b1c21)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac26b1c21)
+    XMLVM_CATCH_BEGIN(w38574aaac26b1c21)
+        XMLVM_CATCH_SPECIFIC(w38574aaac26b1c21,java_lang_Object,47)
+    XMLVM_CATCH_END(w38574aaac26b1c21)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac26b1c21)
     label42:;
-    XMLVM_TRY_BEGIN(w38539aaac26b1c23)
+    XMLVM_TRY_BEGIN(w38574aaac26b1c23)
     // Begin try
     //org_apache_harmony_nio_internal_FileChannelImpl_position___long[13]
     XMLVM_CHECK_NPE(6)
@@ -2573,35 +2573,35 @@ JAVA_OBJECT org_apache_harmony_nio_internal_FileChannelImpl_truncate___long(JAVA
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac26b1c23)
-        XMLVM_CATCH_SPECIFIC(w38539aaac26b1c23,java_lang_Object,47)
-    XMLVM_CATCH_END(w38539aaac26b1c23)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac26b1c23)
+    XMLVM_CATCH_BEGIN(w38574aaac26b1c23)
+        XMLVM_CATCH_SPECIFIC(w38574aaac26b1c23,java_lang_Object,47)
+    XMLVM_CATCH_END(w38574aaac26b1c23)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac26b1c23)
     label46:;
-    XMLVM_TRY_BEGIN(w38539aaac26b1c25)
+    XMLVM_TRY_BEGIN(w38574aaac26b1c25)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 483)
-    XMLVM_MEMCPY(curThread_w38539aaac26b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38539aaac26b1c25, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w38574aaac26b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38574aaac26b1c25, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r6.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac26b1c25)
-        XMLVM_CATCH_SPECIFIC(w38539aaac26b1c25,java_lang_Object,47)
-    XMLVM_CATCH_END(w38539aaac26b1c25)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac26b1c25)
+    XMLVM_CATCH_BEGIN(w38574aaac26b1c25)
+        XMLVM_CATCH_SPECIFIC(w38574aaac26b1c25,java_lang_Object,47)
+    XMLVM_CATCH_END(w38574aaac26b1c25)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac26b1c25)
     label47:;
-    XMLVM_TRY_BEGIN(w38539aaac26b1c27)
+    XMLVM_TRY_BEGIN(w38574aaac26b1c27)
     // Begin try
-    java_lang_Thread* curThread_w38539aaac26b1c27aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w38539aaac26b1c27aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac26b1c27aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w38574aaac26b1c27aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac26b1c27)
-        XMLVM_CATCH_SPECIFIC(w38539aaac26b1c27,java_lang_Object,47)
-    XMLVM_CATCH_END(w38539aaac26b1c27)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac26b1c27)
+    XMLVM_CATCH_BEGIN(w38574aaac26b1c27)
+        XMLVM_CATCH_SPECIFIC(w38574aaac26b1c27,java_lang_Object,47)
+    XMLVM_CATCH_END(w38574aaac26b1c27)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac26b1c27)
     XMLVM_THROW_CUSTOM(_r1.o)
     //XMLVM_END_WRAPPER
 }
@@ -2656,7 +2656,7 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_write___java_nio_ByteBu
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 504)
     _r0.o = ((org_apache_harmony_nio_internal_FileChannelImpl*) _r4.o)->fields.org_apache_harmony_nio_internal_FileChannelImpl.repositioningLock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
-    XMLVM_TRY_BEGIN(w38539aaac27b1c34)
+    XMLVM_TRY_BEGIN(w38574aaac27b1c34)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 505)
     //org_apache_harmony_nio_internal_FileChannelImpl_position__[12]
@@ -2668,22 +2668,22 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_write___java_nio_ByteBu
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_LONG)) ((org_apache_harmony_nio_internal_FileChannelImpl*) _r4.o)->tib->vtable[13])(_r4.o, _r6.l);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac27b1c34)
-        XMLVM_CATCH_SPECIFIC(w38539aaac27b1c34,java_lang_Object,56)
-    XMLVM_CATCH_END(w38539aaac27b1c34)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac27b1c34)
-    XMLVM_TRY_BEGIN(w38539aaac27b1c35)
+    XMLVM_CATCH_BEGIN(w38574aaac27b1c34)
+        XMLVM_CATCH_SPECIFIC(w38574aaac27b1c34,java_lang_Object,56)
+    XMLVM_CATCH_END(w38574aaac27b1c34)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac27b1c34)
+    XMLVM_TRY_BEGIN(w38574aaac27b1c35)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 508)
     XMLVM_CHECK_NPE(4)
     _r3.i = org_apache_harmony_nio_internal_FileChannelImpl_writeImpl___java_nio_ByteBuffer(_r4.o, _r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac27b1c35)
-        XMLVM_CATCH_SPECIFIC(w38539aaac27b1c35,java_lang_Object,51)
-    XMLVM_CATCH_END(w38539aaac27b1c35)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac27b1c35)
-    XMLVM_TRY_BEGIN(w38539aaac27b1c36)
+    XMLVM_CATCH_BEGIN(w38574aaac27b1c35)
+        XMLVM_CATCH_SPECIFIC(w38574aaac27b1c35,java_lang_Object,51)
+    XMLVM_CATCH_END(w38574aaac27b1c35)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac27b1c35)
+    XMLVM_TRY_BEGIN(w38574aaac27b1c36)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 510)
     //org_apache_harmony_nio_internal_FileChannelImpl_position___long[13]
@@ -2691,19 +2691,19 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_write___java_nio_ByteBu
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_LONG)) ((org_apache_harmony_nio_internal_FileChannelImpl*) _r4.o)->tib->vtable[13])(_r4.o, _r1.l);
     java_lang_Object_releaseLockRecursive__(_r0.o);
     _r0 = _r3;
-    { XMLVM_MEMCPY(curThread_w38539aaac27b1c36->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38539aaac27b1c36, sizeof(XMLVM_JMP_BUF)); goto label30; };
+    { XMLVM_MEMCPY(curThread_w38574aaac27b1c36->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38574aaac27b1c36, sizeof(XMLVM_JMP_BUF)); goto label30; };
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 509)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac27b1c36)
-        XMLVM_CATCH_SPECIFIC(w38539aaac27b1c36,java_lang_Object,56)
-    XMLVM_CATCH_END(w38539aaac27b1c36)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac27b1c36)
+    XMLVM_CATCH_BEGIN(w38574aaac27b1c36)
+        XMLVM_CATCH_SPECIFIC(w38574aaac27b1c36,java_lang_Object,56)
+    XMLVM_CATCH_END(w38574aaac27b1c36)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac27b1c36)
     label51:;
-    XMLVM_TRY_BEGIN(w38539aaac27b1c38)
+    XMLVM_TRY_BEGIN(w38574aaac27b1c38)
     // Begin try
-    java_lang_Thread* curThread_w38539aaac27b1c38aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r3.o = curThread_w38539aaac27b1c38aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac27b1c38aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r3.o = curThread_w38574aaac27b1c38aa->fields.java_lang_Thread.xmlvmException_;
     //org_apache_harmony_nio_internal_FileChannelImpl_position___long[13]
     XMLVM_CHECK_NPE(4)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_LONG)) ((org_apache_harmony_nio_internal_FileChannelImpl*) _r4.o)->tib->vtable[13])(_r4.o, _r1.l);
@@ -2711,22 +2711,22 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_write___java_nio_ByteBu
     XMLVM_THROW_CUSTOM(_r3.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac27b1c38)
-        XMLVM_CATCH_SPECIFIC(w38539aaac27b1c38,java_lang_Object,56)
-    XMLVM_CATCH_END(w38539aaac27b1c38)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac27b1c38)
+    XMLVM_CATCH_BEGIN(w38574aaac27b1c38)
+        XMLVM_CATCH_SPECIFIC(w38574aaac27b1c38,java_lang_Object,56)
+    XMLVM_CATCH_END(w38574aaac27b1c38)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac27b1c38)
     label56:;
-    XMLVM_TRY_BEGIN(w38539aaac27b1c40)
+    XMLVM_TRY_BEGIN(w38574aaac27b1c40)
     // Begin try
-    java_lang_Thread* curThread_w38539aaac27b1c40aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w38539aaac27b1c40aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac27b1c40aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w38574aaac27b1c40aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac27b1c40)
-        XMLVM_CATCH_SPECIFIC(w38539aaac27b1c40,java_lang_Object,56)
-    XMLVM_CATCH_END(w38539aaac27b1c40)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac27b1c40)
+    XMLVM_CATCH_BEGIN(w38574aaac27b1c40)
+        XMLVM_CATCH_SPECIFIC(w38574aaac27b1c40,java_lang_Object,56)
+    XMLVM_CATCH_END(w38574aaac27b1c40)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac27b1c40)
     XMLVM_THROW_CUSTOM(_r1.o)
     //XMLVM_END_WRAPPER
 }
@@ -2774,13 +2774,13 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_writeImpl___java_nio_By
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 524)
     _r9.o = ((org_apache_harmony_nio_internal_FileChannelImpl*) _r10.o)->fields.org_apache_harmony_nio_internal_FileChannelImpl.repositioningLock_;
     java_lang_Object_acquireLockRecursive__(_r9.o);
-    XMLVM_TRY_BEGIN(w38539aaac29b1b8)
+    XMLVM_TRY_BEGIN(w38574aaac29b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 525)
     //java_nio_ByteBuffer_isDirect__[9]
     XMLVM_CHECK_NPE(11)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) ((java_nio_ByteBuffer*) _r11.o)->tib->vtable[9])(_r11.o);
-    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w38539aaac29b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38539aaac29b1b8, sizeof(XMLVM_JMP_BUF)); goto label66; };
+    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w38574aaac29b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38574aaac29b1b8, sizeof(XMLVM_JMP_BUF)); goto label66; };
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 526)
     _r0 = _r11;
     _r0.o = _r0.o;
@@ -2794,11 +2794,11 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_writeImpl___java_nio_By
     XMLVM_RED_CLASS_DEPENDENCY();
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac29b1b8)
-        XMLVM_CATCH_SPECIFIC(w38539aaac29b1b8,java_lang_Object,63)
-    XMLVM_CATCH_END(w38539aaac29b1b8)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac29b1b8)
-    XMLVM_TRY_BEGIN(w38539aaac29b1b9)
+    XMLVM_CATCH_BEGIN(w38574aaac29b1b8)
+        XMLVM_CATCH_SPECIFIC(w38574aaac29b1b8,java_lang_Object,63)
+    XMLVM_CATCH_END(w38574aaac29b1b8)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac29b1b8)
+    XMLVM_TRY_BEGIN(w38574aaac29b1b9)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 529)
     XMLVM_CHECK_NPE(10)
@@ -2815,13 +2815,13 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_writeImpl___java_nio_By
     _r1.l = (*(JAVA_LONG (*)(JAVA_OBJECT, JAVA_LONG, JAVA_LONG, JAVA_INT, JAVA_INT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_IFileSystem_writeDirect___long_long_int_int])(_r1.o, _r2.l, _r4.l, _r6.i, _r7.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac29b1b9)
-        XMLVM_CATCH_SPECIFIC(w38539aaac29b1b9,java_lang_Object,58)
-    XMLVM_CATCH_END(w38539aaac29b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac29b1b9)
+    XMLVM_CATCH_BEGIN(w38574aaac29b1b9)
+        XMLVM_CATCH_SPECIFIC(w38574aaac29b1b9,java_lang_Object,58)
+    XMLVM_CATCH_END(w38574aaac29b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac29b1b9)
     _r1.i = (JAVA_INT) _r1.l;
     _r2.i = 1;
-    XMLVM_TRY_BEGIN(w38539aaac29b1c12)
+    XMLVM_TRY_BEGIN(w38574aaac29b1c12)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 532)
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 534)
@@ -2829,15 +2829,15 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_writeImpl___java_nio_By
     java_nio_channels_spi_AbstractInterruptibleChannel_end___boolean(_r10.o, _r2.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac29b1c12)
-        XMLVM_CATCH_SPECIFIC(w38539aaac29b1c12,java_lang_Object,63)
-    XMLVM_CATCH_END(w38539aaac29b1c12)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac29b1c12)
+    XMLVM_CATCH_BEGIN(w38574aaac29b1c12)
+        XMLVM_CATCH_SPECIFIC(w38574aaac29b1c12,java_lang_Object,63)
+    XMLVM_CATCH_END(w38574aaac29b1c12)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac29b1c12)
     label46:;
-    XMLVM_TRY_BEGIN(w38539aaac29b1c14)
+    XMLVM_TRY_BEGIN(w38574aaac29b1c14)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 547)
-    if (_r1.i <= 0) { XMLVM_MEMCPY(curThread_w38539aaac29b1c14->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38539aaac29b1c14, sizeof(XMLVM_JMP_BUF)); goto label56; };
+    if (_r1.i <= 0) { XMLVM_MEMCPY(curThread_w38574aaac29b1c14->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38574aaac29b1c14, sizeof(XMLVM_JMP_BUF)); goto label56; };
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 548)
     XMLVM_CHECK_NPE(11)
     _r2.i = java_nio_Buffer_position__(_r11.o);
@@ -2846,55 +2846,55 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_writeImpl___java_nio_By
     java_nio_Buffer_position___int(_r11.o, _r2.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac29b1c14)
-        XMLVM_CATCH_SPECIFIC(w38539aaac29b1c14,java_lang_Object,63)
-    XMLVM_CATCH_END(w38539aaac29b1c14)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac29b1c14)
+    XMLVM_CATCH_BEGIN(w38574aaac29b1c14)
+        XMLVM_CATCH_SPECIFIC(w38574aaac29b1c14,java_lang_Object,63)
+    XMLVM_CATCH_END(w38574aaac29b1c14)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac29b1c14)
     label56:;
-    XMLVM_TRY_BEGIN(w38539aaac29b1c16)
+    XMLVM_TRY_BEGIN(w38574aaac29b1c16)
     // Begin try
     java_lang_Object_releaseLockRecursive__(_r9.o);
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 551)
-    XMLVM_MEMCPY(curThread_w38539aaac29b1c16->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38539aaac29b1c16, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w38574aaac29b1c16->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38574aaac29b1c16, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r1.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac29b1c16)
-        XMLVM_CATCH_SPECIFIC(w38539aaac29b1c16,java_lang_Object,63)
-    XMLVM_CATCH_END(w38539aaac29b1c16)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac29b1c16)
+    XMLVM_CATCH_BEGIN(w38574aaac29b1c16)
+        XMLVM_CATCH_SPECIFIC(w38574aaac29b1c16,java_lang_Object,63)
+    XMLVM_CATCH_END(w38574aaac29b1c16)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac29b1c16)
     label58:;
-    XMLVM_TRY_BEGIN(w38539aaac29b1c18)
+    XMLVM_TRY_BEGIN(w38574aaac29b1c18)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 533)
-    java_lang_Thread* curThread_w38539aaac29b1c18ab1 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w38539aaac29b1c18ab1->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac29b1c18ab1 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w38574aaac29b1c18ab1->fields.java_lang_Thread.xmlvmException_;
     XMLVM_CHECK_NPE(10)
     java_nio_channels_spi_AbstractInterruptibleChannel_end___boolean(_r10.o, _r8.i);
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 535)
     XMLVM_THROW_CUSTOM(_r1.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac29b1c18)
-        XMLVM_CATCH_SPECIFIC(w38539aaac29b1c18,java_lang_Object,63)
-    XMLVM_CATCH_END(w38539aaac29b1c18)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac29b1c18)
+    XMLVM_CATCH_BEGIN(w38574aaac29b1c18)
+        XMLVM_CATCH_SPECIFIC(w38574aaac29b1c18,java_lang_Object,63)
+    XMLVM_CATCH_END(w38574aaac29b1c18)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac29b1c18)
     label63:;
-    XMLVM_TRY_BEGIN(w38539aaac29b1c20)
+    XMLVM_TRY_BEGIN(w38574aaac29b1c20)
     // Begin try
-    java_lang_Thread* curThread_w38539aaac29b1c20aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w38539aaac29b1c20aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac29b1c20aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w38574aaac29b1c20aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r9.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac29b1c20)
-        XMLVM_CATCH_SPECIFIC(w38539aaac29b1c20,java_lang_Object,63)
-    XMLVM_CATCH_END(w38539aaac29b1c20)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac29b1c20)
+    XMLVM_CATCH_BEGIN(w38574aaac29b1c20)
+        XMLVM_CATCH_SPECIFIC(w38574aaac29b1c20,java_lang_Object,63)
+    XMLVM_CATCH_END(w38574aaac29b1c20)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac29b1c20)
     XMLVM_THROW_CUSTOM(_r1.o)
     label66:;
-    XMLVM_TRY_BEGIN(w38539aaac29b1c23)
+    XMLVM_TRY_BEGIN(w38574aaac29b1c23)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 538)
     XMLVM_CHECK_NPE(10)
@@ -2919,41 +2919,41 @@ JAVA_INT org_apache_harmony_nio_internal_FileChannelImpl_writeImpl___java_nio_By
     _r1.l = (*(JAVA_LONG (*)(JAVA_OBJECT, JAVA_LONG, JAVA_OBJECT, JAVA_INT, JAVA_INT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_IFileSystem_write___long_byte_1ARRAY_int_int])(_r1.o, _r2.l, _r4.o, _r5.i, _r6.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac29b1c23)
-        XMLVM_CATCH_SPECIFIC(w38539aaac29b1c23,java_lang_Object,100)
-    XMLVM_CATCH_END(w38539aaac29b1c23)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac29b1c23)
+    XMLVM_CATCH_BEGIN(w38574aaac29b1c23)
+        XMLVM_CATCH_SPECIFIC(w38574aaac29b1c23,java_lang_Object,100)
+    XMLVM_CATCH_END(w38574aaac29b1c23)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac29b1c23)
     _r1.i = (JAVA_INT) _r1.l;
     _r2.i = 1;
-    XMLVM_TRY_BEGIN(w38539aaac29b1c26)
+    XMLVM_TRY_BEGIN(w38574aaac29b1c26)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 542)
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 544)
     XMLVM_CHECK_NPE(10)
     java_nio_channels_spi_AbstractInterruptibleChannel_end___boolean(_r10.o, _r2.i);
-    { XMLVM_MEMCPY(curThread_w38539aaac29b1c26->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38539aaac29b1c26, sizeof(XMLVM_JMP_BUF)); goto label46; };
+    { XMLVM_MEMCPY(curThread_w38574aaac29b1c26->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38574aaac29b1c26, sizeof(XMLVM_JMP_BUF)); goto label46; };
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 543)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac29b1c26)
-        XMLVM_CATCH_SPECIFIC(w38539aaac29b1c26,java_lang_Object,63)
-    XMLVM_CATCH_END(w38539aaac29b1c26)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac29b1c26)
+    XMLVM_CATCH_BEGIN(w38574aaac29b1c26)
+        XMLVM_CATCH_SPECIFIC(w38574aaac29b1c26,java_lang_Object,63)
+    XMLVM_CATCH_END(w38574aaac29b1c26)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac29b1c26)
     label100:;
-    XMLVM_TRY_BEGIN(w38539aaac29b1c28)
+    XMLVM_TRY_BEGIN(w38574aaac29b1c28)
     // Begin try
-    java_lang_Thread* curThread_w38539aaac29b1c28aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w38539aaac29b1c28aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac29b1c28aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w38574aaac29b1c28aa->fields.java_lang_Thread.xmlvmException_;
     XMLVM_CHECK_NPE(10)
     java_nio_channels_spi_AbstractInterruptibleChannel_end___boolean(_r10.o, _r8.i);
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 545)
     XMLVM_THROW_CUSTOM(_r1.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac29b1c28)
-        XMLVM_CATCH_SPECIFIC(w38539aaac29b1c28,java_lang_Object,63)
-    XMLVM_CATCH_END(w38539aaac29b1c28)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac29b1c28)
+    XMLVM_CATCH_BEGIN(w38574aaac29b1c28)
+        XMLVM_CATCH_SPECIFIC(w38574aaac29b1c28,java_lang_Object,63)
+    XMLVM_CATCH_END(w38574aaac29b1c28)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac29b1c28)
     //XMLVM_END_WRAPPER
 }
 
@@ -3024,7 +3024,7 @@ JAVA_LONG org_apache_harmony_nio_internal_FileChannelImpl_write___java_nio_ByteB
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 591)
     _r8.o = ((org_apache_harmony_nio_internal_FileChannelImpl*) _r9.o)->fields.org_apache_harmony_nio_internal_FileChannelImpl.repositioningLock_;
     java_lang_Object_acquireLockRecursive__(_r8.o);
-    XMLVM_TRY_BEGIN(w38539aaac30b1c44)
+    XMLVM_TRY_BEGIN(w38574aaac30b1c44)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 593)
     XMLVM_CHECK_NPE(9)
@@ -3037,13 +3037,13 @@ JAVA_LONG org_apache_harmony_nio_internal_FileChannelImpl_write___java_nio_ByteB
     _r0.l = (*(JAVA_LONG (*)(JAVA_OBJECT, JAVA_LONG, JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_IFileSystem_writev___long_java_lang_Object_1ARRAY_int_1ARRAY_int_1ARRAY_int])(_r0.o, _r1.l, _r3.o, _r4.o, _r5.o, _r6.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac30b1c44)
-        XMLVM_CATCH_SPECIFIC(w38539aaac30b1c44,java_lang_Object,169)
-    XMLVM_CATCH_END(w38539aaac30b1c44)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac30b1c44)
+    XMLVM_CATCH_BEGIN(w38574aaac30b1c44)
+        XMLVM_CATCH_SPECIFIC(w38574aaac30b1c44,java_lang_Object,169)
+    XMLVM_CATCH_END(w38574aaac30b1c44)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac30b1c44)
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 596)
     _r2.i = 1;
-    XMLVM_TRY_BEGIN(w38539aaac30b1c47)
+    XMLVM_TRY_BEGIN(w38574aaac30b1c47)
     // Begin try
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 598)
     XMLVM_CHECK_NPE(9)
@@ -3051,10 +3051,10 @@ JAVA_LONG org_apache_harmony_nio_internal_FileChannelImpl_write___java_nio_ByteB
     java_lang_Object_releaseLockRecursive__(_r8.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac30b1c47)
-        XMLVM_CATCH_SPECIFIC(w38539aaac30b1c47,java_lang_Object,174)
-    XMLVM_CATCH_END(w38539aaac30b1c47)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac30b1c47)
+    XMLVM_CATCH_BEGIN(w38574aaac30b1c47)
+        XMLVM_CATCH_SPECIFIC(w38574aaac30b1c47,java_lang_Object,174)
+    XMLVM_CATCH_END(w38574aaac30b1c47)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac30b1c47)
     _r2 = _r11;
     _r3 = _r0;
     label60:;
@@ -3172,9 +3172,9 @@ JAVA_LONG org_apache_harmony_nio_internal_FileChannelImpl_write___java_nio_ByteB
     goto label125;
     label169:;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 597)
-    java_lang_Thread* curThread_w38539aaac30b1d122 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w38539aaac30b1d122->fields.java_lang_Thread.xmlvmException_;
-    XMLVM_TRY_BEGIN(w38539aaac30b1d123)
+    java_lang_Thread* curThread_w38574aaac30b1d122 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w38574aaac30b1d122->fields.java_lang_Thread.xmlvmException_;
+    XMLVM_TRY_BEGIN(w38574aaac30b1d123)
     // Begin try
     XMLVM_CHECK_NPE(9)
     java_nio_channels_spi_AbstractInterruptibleChannel_end___boolean(_r9.o, _r7.i);
@@ -3182,22 +3182,22 @@ JAVA_LONG org_apache_harmony_nio_internal_FileChannelImpl_write___java_nio_ByteB
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac30b1d123)
-        XMLVM_CATCH_SPECIFIC(w38539aaac30b1d123,java_lang_Object,174)
-    XMLVM_CATCH_END(w38539aaac30b1d123)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac30b1d123)
+    XMLVM_CATCH_BEGIN(w38574aaac30b1d123)
+        XMLVM_CATCH_SPECIFIC(w38574aaac30b1d123,java_lang_Object,174)
+    XMLVM_CATCH_END(w38574aaac30b1d123)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac30b1d123)
     label174:;
-    XMLVM_TRY_BEGIN(w38539aaac30b1d125)
+    XMLVM_TRY_BEGIN(w38574aaac30b1d125)
     // Begin try
-    java_lang_Thread* curThread_w38539aaac30b1d125aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w38539aaac30b1d125aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38574aaac30b1d125aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w38574aaac30b1d125aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r8.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38539aaac30b1d125)
-        XMLVM_CATCH_SPECIFIC(w38539aaac30b1d125,java_lang_Object,174)
-    XMLVM_CATCH_END(w38539aaac30b1d125)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38539aaac30b1d125)
+    XMLVM_CATCH_BEGIN(w38574aaac30b1d125)
+        XMLVM_CATCH_SPECIFIC(w38574aaac30b1d125,java_lang_Object,174)
+    XMLVM_CATCH_END(w38574aaac30b1d125)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38574aaac30b1d125)
     XMLVM_THROW_CUSTOM(_r0.o)
     label177:;
     XMLVM_SOURCE_POSITION("FileChannelImpl.java", 609)

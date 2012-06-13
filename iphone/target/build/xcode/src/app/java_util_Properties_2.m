@@ -246,10 +246,10 @@ JAVA_OBJECT java_util_Properties_2_resolveEntity___java_lang_String_java_lang_St
     _r5.o = n1;
     _r6.o = n2;
     // "http://java.sun.com/dtd/properties.dtd"
-    _r3.o = xmlvm_create_java_string_from_pool(1495);
+    _r3.o = xmlvm_create_java_string_from_pool(1498);
     XMLVM_SOURCE_POSITION("Properties.java", 762)
     // "http://java.sun.com/dtd/properties.dtd"
-    _r0.o = xmlvm_create_java_string_from_pool(1495);
+    _r0.o = xmlvm_create_java_string_from_pool(1498);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(6)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r6.o)->tib->vtable[1])(_r6.o, _r3.o);
@@ -259,14 +259,14 @@ JAVA_OBJECT java_util_Properties_2_resolveEntity___java_lang_String_java_lang_St
     _r1.o = __NEW_java_io_StringReader();
     XMLVM_SOURCE_POSITION("Properties.java", 764)
     // "<?xml version=\0421.0\042 encoding=\042UTF-8\042?>    <!ELEMENT properties (comment?, entry*) >    <!ATTLIST properties version CDATA #FIXED \0421.0\042 >    <!ELEMENT comment (#PCDATA) >    <!ELEMENT entry (#PCDATA) >    <!ATTLIST entry key CDATA #REQUIRED >"
-    _r2.o = xmlvm_create_java_string_from_pool(1496);
+    _r2.o = xmlvm_create_java_string_from_pool(1499);
     XMLVM_CHECK_NPE(1)
     java_io_StringReader___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(0)
     org_xml_sax_InputSource___INIT____java_io_Reader(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("Properties.java", 765)
     // "http://java.sun.com/dtd/properties.dtd"
-    _r1.o = xmlvm_create_java_string_from_pool(1495);
+    _r1.o = xmlvm_create_java_string_from_pool(1498);
     XMLVM_CHECK_NPE(0)
     org_xml_sax_InputSource_setSystemId___java_lang_String(_r0.o, _r3.o);
     XMLVM_SOURCE_POSITION("Properties.java", 766)
@@ -277,7 +277,7 @@ JAVA_OBJECT java_util_Properties_2_resolveEntity___java_lang_String_java_lang_St
     _r0.o = __NEW_org_xml_sax_SAXException();
     _r1.o = __NEW_java_lang_StringBuilder();
     // "Invalid DOCTYPE declaration: "
-    _r2.o = xmlvm_create_java_string_from_pool(1497);
+    _r2.o = xmlvm_create_java_string_from_pool(1500);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("Properties.java", 769)

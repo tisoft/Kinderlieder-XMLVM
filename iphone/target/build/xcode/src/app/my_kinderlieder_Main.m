@@ -670,7 +670,7 @@ void my_kinderlieder_Main___CLINIT_()
     _r0.o = __NEW_java_io_File();
     _r1.o = org_xmlvm_iphone_NSBundle_mainBundle__();
     // "info"
-    _r2.o = xmlvm_create_java_string_from_pool(2318);
+    _r2.o = xmlvm_create_java_string_from_pool(2321);
     // "html"
     _r3.o = xmlvm_create_java_string_from_pool(739);
     XMLVM_CHECK_NPE(1)
@@ -689,7 +689,7 @@ void my_kinderlieder_Main___CLINIT_()
     _r0.o = __NEW_java_io_File();
     _r1.o = my_kinderlieder_Main_GET_ROOT_DIR();
     // "Library"
-    _r2.o = xmlvm_create_java_string_from_pool(2542);
+    _r2.o = xmlvm_create_java_string_from_pool(2545);
     XMLVM_CHECK_NPE(0)
     java_io_File___INIT____java_io_File_java_lang_String(_r0.o, _r1.o, _r2.o);
     my_kinderlieder_Main_PUT_LIBRARY_DIR( _r0.o);
@@ -697,7 +697,7 @@ void my_kinderlieder_Main___CLINIT_()
     _r0.o = __NEW_java_io_File();
     _r1.o = my_kinderlieder_Main_GET_LIBRARY_DIR();
     // "Caches"
-    _r2.o = xmlvm_create_java_string_from_pool(2543);
+    _r2.o = xmlvm_create_java_string_from_pool(2546);
     XMLVM_CHECK_NPE(0)
     java_io_File___INIT____java_io_File_java_lang_String(_r0.o, _r1.o, _r2.o);
     my_kinderlieder_Main_PUT_CACHES_DIR( _r0.o);
@@ -705,7 +705,7 @@ void my_kinderlieder_Main___CLINIT_()
     _r0.o = __NEW_java_io_File();
     _r1.o = my_kinderlieder_Main_GET_CACHES_DIR();
     // "products"
-    _r2.o = xmlvm_create_java_string_from_pool(2544);
+    _r2.o = xmlvm_create_java_string_from_pool(2547);
     XMLVM_CHECK_NPE(0)
     java_io_File___INIT____java_io_File_java_lang_String(_r0.o, _r1.o, _r2.o);
     my_kinderlieder_Main_PUT_PRODUCTS_DIR( _r0.o);

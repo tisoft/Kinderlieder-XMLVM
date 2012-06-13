@@ -1300,7 +1300,7 @@ JAVA_OBJECT java_util_regex_Pattern_compile___java_lang_String_int(JAVA_OBJECT n
     XMLVM_SOURCE_POSITION("Pattern.java", 314)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "regex.1C"
-    _r1.o = xmlvm_create_java_string_from_pool(3219);
+    _r1.o = xmlvm_create_java_string_from_pool(3222);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -1359,7 +1359,7 @@ JAVA_OBJECT java_util_regex_Pattern_compileImpl___java_lang_String_int(JAVA_OBJE
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Pattern.java", 341)
     // "regex.08"
-    _r1.o = xmlvm_create_java_string_from_pool(3220);
+    _r1.o = xmlvm_create_java_string_from_pool(3223);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r1.o);
     _r2.o = ((java_util_regex_Pattern*) _r4.o)->fields.java_util_regex_Pattern.lexemes_;
     //java_util_regex_Lexer_toString__[5]
@@ -2345,7 +2345,7 @@ JAVA_OBJECT java_util_regex_Pattern_processSubExpression___java_util_regex_Abstr
     _r1.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Pattern.java", 640)
     // "regex.09"
-    _r2.o = xmlvm_create_java_string_from_pool(3221);
+    _r2.o = xmlvm_create_java_string_from_pool(3224);
     _r2.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r2.o);
     _r3.o = ((java_util_regex_Pattern*) _r6.o)->fields.java_util_regex_Pattern.lexemes_;
     //java_util_regex_Lexer_toString__[5]
@@ -2850,7 +2850,7 @@ JAVA_OBJECT java_util_regex_Pattern_processTerminal___java_util_regex_AbstractSe
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Pattern.java", 875)
     // "regex.0A"
-    _r1.o = xmlvm_create_java_string_from_pool(3222);
+    _r1.o = xmlvm_create_java_string_from_pool(3225);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r1.o);
     _r2.o = ((java_util_regex_Pattern*) _r9.o)->fields.java_util_regex_Pattern.lexemes_;
     //java_util_regex_Lexer_toString__[5]
@@ -2941,7 +2941,7 @@ JAVA_OBJECT java_util_regex_Pattern_processTerminal___java_util_regex_AbstractSe
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Pattern.java", 893)
     // "regex.0B"
-    _r1.o = xmlvm_create_java_string_from_pool(3223);
+    _r1.o = xmlvm_create_java_string_from_pool(3226);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r1.o);
     _r2.o = ((java_util_regex_Pattern*) _r9.o)->fields.java_util_regex_Pattern.lexemes_;
     //java_util_regex_Lexer_toString__[5]
@@ -3189,7 +3189,7 @@ JAVA_OBJECT java_util_regex_Pattern_processTerminal___java_util_regex_AbstractSe
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Pattern.java", 1007)
     // "regex.0C"
-    _r1.o = xmlvm_create_java_string_from_pool(3224);
+    _r1.o = xmlvm_create_java_string_from_pool(3227);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_SOURCE_POSITION("Pattern.java", 1008)
     _r2.o = ((java_util_regex_Pattern*) _r9.o)->fields.java_util_regex_Pattern.lexemes_;
@@ -3256,7 +3256,7 @@ JAVA_OBJECT java_util_regex_Pattern_processTerminal___java_util_regex_AbstractSe
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Pattern.java", 1037)
     // "regex.09"
-    _r1.o = xmlvm_create_java_string_from_pool(3221);
+    _r1.o = xmlvm_create_java_string_from_pool(3224);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r1.o);
     _r2.o = ((java_util_regex_Pattern*) _r9.o)->fields.java_util_regex_Pattern.lexemes_;
     //java_util_regex_Lexer_toString__[5]
@@ -3280,7 +3280,7 @@ JAVA_OBJECT java_util_regex_Pattern_processTerminal___java_util_regex_AbstractSe
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Pattern.java", 1044)
     // "regex.0D"
-    _r2.o = xmlvm_create_java_string_from_pool(3225);
+    _r2.o = xmlvm_create_java_string_from_pool(3228);
     XMLVM_SOURCE_POSITION("Pattern.java", 1045)
     _r3.o = ((java_util_regex_Pattern*) _r9.o)->fields.java_util_regex_Pattern.lexemes_;
     XMLVM_CHECK_NPE(3)
@@ -3410,7 +3410,7 @@ JAVA_OBJECT java_util_regex_Pattern_processRangeExpression___boolean(JAVA_OBJECT
     XMLVM_SOURCE_POSITION("Pattern.java", 1225)
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     // "regex.0F"
-    _r1.o = xmlvm_create_java_string_from_pool(3226);
+    _r1.o = xmlvm_create_java_string_from_pool(3229);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_SOURCE_POSITION("Pattern.java", 1226)
     XMLVM_CHECK_NPE(13)
@@ -3656,32 +3656,32 @@ JAVA_OBJECT java_util_regex_Pattern_processRangeExpression___boolean(JAVA_OBJECT
     if (_r5.i == _r11.i) goto label338;
     if (_r3.i >= 0) goto label384;
     label338:;
-    XMLVM_TRY_BEGIN(w40643aaac37b1d244)
+    XMLVM_TRY_BEGIN(w40678aaac37b1d244)
     // Begin try
     XMLVM_SOURCE_POSITION("Pattern.java", 1169)
     _r5.i = java_util_regex_Lexer_isLetter___int(_r0.i);
-    if (_r5.i != 0) { XMLVM_MEMCPY(curThread_w40643aaac37b1d244->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w40643aaac37b1d244, sizeof(XMLVM_JMP_BUF)); goto label348; };
+    if (_r5.i != 0) { XMLVM_MEMCPY(curThread_w40678aaac37b1d244->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w40678aaac37b1d244, sizeof(XMLVM_JMP_BUF)); goto label348; };
     XMLVM_SOURCE_POSITION("Pattern.java", 1170)
     _r5.i = 65535;
     _r0.i = _r0.i & _r5.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40643aaac37b1d244)
-        XMLVM_CATCH_SPECIFIC(w40643aaac37b1d244,java_lang_Exception,361)
-    XMLVM_CATCH_END(w40643aaac37b1d244)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40643aaac37b1d244)
+    XMLVM_CATCH_BEGIN(w40678aaac37b1d244)
+        XMLVM_CATCH_SPECIFIC(w40678aaac37b1d244,java_lang_Exception,361)
+    XMLVM_CATCH_END(w40678aaac37b1d244)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40678aaac37b1d244)
     label348:;
-    XMLVM_TRY_BEGIN(w40643aaac37b1d246)
+    XMLVM_TRY_BEGIN(w40678aaac37b1d246)
     // Begin try
     XMLVM_SOURCE_POSITION("Pattern.java", 1172)
     XMLVM_CHECK_NPE(4)
     java_util_regex_CharClass_add___int_int(_r4.o, _r3.i, _r0.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40643aaac37b1d246)
-        XMLVM_CATCH_SPECIFIC(w40643aaac37b1d246,java_lang_Exception,361)
-    XMLVM_CATCH_END(w40643aaac37b1d246)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40643aaac37b1d246)
+    XMLVM_CATCH_BEGIN(w40678aaac37b1d246)
+        XMLVM_CATCH_SPECIFIC(w40678aaac37b1d246,java_lang_Exception,361)
+    XMLVM_CATCH_END(w40678aaac37b1d246)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40678aaac37b1d246)
     XMLVM_SOURCE_POSITION("Pattern.java", 1178)
     _r0.o = ((java_util_regex_Pattern*) _r13.o)->fields.java_util_regex_Pattern.lexemes_;
     XMLVM_CHECK_NPE(0)
@@ -3693,12 +3693,12 @@ JAVA_OBJECT java_util_regex_Pattern_processRangeExpression___boolean(JAVA_OBJECT
     goto label101;
     label361:;
     XMLVM_SOURCE_POSITION("Pattern.java", 1174)
-    java_lang_Thread* curThread_w40643aaac37b1d257 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w40643aaac37b1d257->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w40678aaac37b1d257 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w40678aaac37b1d257->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Pattern.java", 1175)
     // "regex.0E"
-    _r1.o = xmlvm_create_java_string_from_pool(3227);
+    _r1.o = xmlvm_create_java_string_from_pool(3230);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_SOURCE_POSITION("Pattern.java", 1176)
     XMLVM_CHECK_NPE(13)
@@ -3714,7 +3714,7 @@ JAVA_OBJECT java_util_regex_Pattern_processRangeExpression___boolean(JAVA_OBJECT
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Pattern.java", 1182)
     // "regex.0E"
-    _r1.o = xmlvm_create_java_string_from_pool(3227);
+    _r1.o = xmlvm_create_java_string_from_pool(3230);
     _r1.o = org_apache_harmony_regex_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_SOURCE_POSITION("Pattern.java", 1183)
     XMLVM_CHECK_NPE(13)
@@ -4124,13 +4124,13 @@ JAVA_OBJECT java_util_regex_Pattern_quote___java_lang_String(JAVA_OBJECT n1)
     XMLVMElem _r5;
     _r5.o = n1;
     // "\134E"
-    _r4.o = xmlvm_create_java_string_from_pool(3228);
+    _r4.o = xmlvm_create_java_string_from_pool(3231);
     XMLVM_SOURCE_POSITION("Pattern.java", 1380)
     _r0.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
     // "\134Q"
-    _r1.o = xmlvm_create_java_string_from_pool(3229);
+    _r1.o = xmlvm_create_java_string_from_pool(3232);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("Pattern.java", 1381)
@@ -4138,7 +4138,7 @@ JAVA_OBJECT java_util_regex_Pattern_quote___java_lang_String(JAVA_OBJECT n1)
     label14:;
     XMLVM_SOURCE_POSITION("Pattern.java", 1383)
     // "\134E"
-    _r2.o = xmlvm_create_java_string_from_pool(3228);
+    _r2.o = xmlvm_create_java_string_from_pool(3231);
     XMLVM_CHECK_NPE(5)
     _r2.i = java_lang_String_indexOf___java_lang_String_int(_r5.o, _r4.o, _r1.i);
     if (_r2.i >= 0) goto label41;
@@ -4148,7 +4148,7 @@ JAVA_OBJECT java_util_regex_Pattern_quote___java_lang_String(JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     // "\134E"
-    _r1.o = xmlvm_create_java_string_from_pool(3228);
+    _r1.o = xmlvm_create_java_string_from_pool(3231);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r4.o);
     //java_lang_StringBuilder_toString__[5]
@@ -4164,7 +4164,7 @@ JAVA_OBJECT java_util_regex_Pattern_quote___java_lang_String(JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(0)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     // "\134\134E\134Q"
-    _r3.o = xmlvm_create_java_string_from_pool(3230);
+    _r3.o = xmlvm_create_java_string_from_pool(3233);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder_append___java_lang_String(_r1.o, _r3.o);
     XMLVM_SOURCE_POSITION("Pattern.java", 1385)

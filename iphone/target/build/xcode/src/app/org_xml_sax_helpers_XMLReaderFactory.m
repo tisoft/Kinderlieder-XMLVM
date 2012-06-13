@@ -189,7 +189,7 @@ void __INIT_IMPL_org_xml_sax_helpers_XMLReaderFactory()
     __TIB_org_xml_sax_helpers_XMLReaderFactory.implementedInterfaces = (__TIB_DEFINITION_TEMPLATE* (*)[1]) XMLVM_MALLOC(sizeof(__TIB_DEFINITION_TEMPLATE*) * 0);
 
     // Initialize interfaces if necessary and assign tib to implementedInterfaces
-    _STATIC_org_xml_sax_helpers_XMLReaderFactory_property = (java_lang_String*) xmlvm_create_java_string_from_pool(1111);
+    _STATIC_org_xml_sax_helpers_XMLReaderFactory_property = (java_lang_String*) xmlvm_create_java_string_from_pool(1114);
 
     __TIB_org_xml_sax_helpers_XMLReaderFactory.declaredFields = &__field_reflection_data[0];
     __TIB_org_xml_sax_helpers_XMLReaderFactory.numDeclaredFields = sizeof(__field_reflection_data) / sizeof(XMLVM_FIELD_REFLECTION_DATA);
@@ -317,27 +317,27 @@ JAVA_OBJECT org_xml_sax_helpers_XMLReaderFactory_loadClass___java_lang_ClassLoad
     _r8.o = n1;
     _r9.o = n2;
     // "SAX2 driver class "
-    _r7.o = xmlvm_create_java_string_from_pool(1112);
-    XMLVM_TRY_BEGIN(w15801aaab4b1b4)
+    _r7.o = xmlvm_create_java_string_from_pool(1115);
+    XMLVM_TRY_BEGIN(w15830aaab4b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLReaderFactory.java", 136)
     _r8.o = org_xml_sax_helpers_NewInstance_newInstance___java_lang_ClassLoader_java_lang_String(_r8.o, _r9.o);
     _r8.o = _r8.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w15801aaab4b1b4)
-        XMLVM_CATCH_SPECIFIC(w15801aaab4b1b4,java_lang_ClassNotFoundException,9)
-        XMLVM_CATCH_SPECIFIC(w15801aaab4b1b4,java_lang_IllegalAccessException,42)
-        XMLVM_CATCH_SPECIFIC(w15801aaab4b1b4,java_lang_InstantiationException,75)
-        XMLVM_CATCH_SPECIFIC(w15801aaab4b1b4,java_lang_ClassCastException,108)
-    XMLVM_CATCH_END(w15801aaab4b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w15801aaab4b1b4)
+    XMLVM_CATCH_BEGIN(w15830aaab4b1b4)
+        XMLVM_CATCH_SPECIFIC(w15830aaab4b1b4,java_lang_ClassNotFoundException,9)
+        XMLVM_CATCH_SPECIFIC(w15830aaab4b1b4,java_lang_IllegalAccessException,42)
+        XMLVM_CATCH_SPECIFIC(w15830aaab4b1b4,java_lang_InstantiationException,75)
+        XMLVM_CATCH_SPECIFIC(w15830aaab4b1b4,java_lang_ClassCastException,108)
+    XMLVM_CATCH_END(w15830aaab4b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w15830aaab4b1b4)
     XMLVM_EXIT_METHOD()
     return _r8.o;
     label9:;
     XMLVM_SOURCE_POSITION("XMLReaderFactory.java", 137)
-    java_lang_Thread* curThread_w15801aaab4b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r4.o = curThread_w15801aaab4b1b8->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w15830aaab4b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r4.o = curThread_w15830aaab4b1b8->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("XMLReaderFactory.java", 138)
     _r4.o = __NEW_org_xml_sax_SAXException();
@@ -345,13 +345,13 @@ JAVA_OBJECT org_xml_sax_helpers_XMLReaderFactory_loadClass___java_lang_ClassLoad
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder___INIT___(_r5.o);
     // "SAX2 driver class "
-    _r6.o = xmlvm_create_java_string_from_pool(1112);
+    _r6.o = xmlvm_create_java_string_from_pool(1115);
     XMLVM_CHECK_NPE(5)
     _r5.o = java_lang_StringBuilder_append___java_lang_String(_r5.o, _r7.o);
     XMLVM_CHECK_NPE(5)
     _r5.o = java_lang_StringBuilder_append___java_lang_String(_r5.o, _r9.o);
     // " not found"
-    _r6.o = xmlvm_create_java_string_from_pool(1113);
+    _r6.o = xmlvm_create_java_string_from_pool(1116);
     XMLVM_CHECK_NPE(5)
     _r5.o = java_lang_StringBuilder_append___java_lang_String(_r5.o, _r6.o);
     //java_lang_StringBuilder_toString__[5]
@@ -362,8 +362,8 @@ JAVA_OBJECT org_xml_sax_helpers_XMLReaderFactory_loadClass___java_lang_ClassLoad
     XMLVM_THROW_CUSTOM(_r4.o)
     label42:;
     XMLVM_SOURCE_POSITION("XMLReaderFactory.java", 140)
-    java_lang_Thread* curThread_w15801aaab4b1c24 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r4.o = curThread_w15801aaab4b1c24->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w15830aaab4b1c24 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r4.o = curThread_w15830aaab4b1c24->fields.java_lang_Thread.xmlvmException_;
     _r1 = _r4;
     XMLVM_SOURCE_POSITION("XMLReaderFactory.java", 141)
     _r4.o = __NEW_org_xml_sax_SAXException();
@@ -371,13 +371,13 @@ JAVA_OBJECT org_xml_sax_helpers_XMLReaderFactory_loadClass___java_lang_ClassLoad
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder___INIT___(_r5.o);
     // "SAX2 driver class "
-    _r6.o = xmlvm_create_java_string_from_pool(1112);
+    _r6.o = xmlvm_create_java_string_from_pool(1115);
     XMLVM_CHECK_NPE(5)
     _r5.o = java_lang_StringBuilder_append___java_lang_String(_r5.o, _r7.o);
     XMLVM_CHECK_NPE(5)
     _r5.o = java_lang_StringBuilder_append___java_lang_String(_r5.o, _r9.o);
     // " found but cannot be loaded"
-    _r6.o = xmlvm_create_java_string_from_pool(1114);
+    _r6.o = xmlvm_create_java_string_from_pool(1117);
     XMLVM_CHECK_NPE(5)
     _r5.o = java_lang_StringBuilder_append___java_lang_String(_r5.o, _r6.o);
     //java_lang_StringBuilder_toString__[5]
@@ -388,8 +388,8 @@ JAVA_OBJECT org_xml_sax_helpers_XMLReaderFactory_loadClass___java_lang_ClassLoad
     XMLVM_THROW_CUSTOM(_r4.o)
     label75:;
     XMLVM_SOURCE_POSITION("XMLReaderFactory.java", 143)
-    java_lang_Thread* curThread_w15801aaab4b1c40 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r4.o = curThread_w15801aaab4b1c40->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w15830aaab4b1c40 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r4.o = curThread_w15830aaab4b1c40->fields.java_lang_Thread.xmlvmException_;
     _r2 = _r4;
     XMLVM_SOURCE_POSITION("XMLReaderFactory.java", 144)
     _r4.o = __NEW_org_xml_sax_SAXException();
@@ -397,13 +397,13 @@ JAVA_OBJECT org_xml_sax_helpers_XMLReaderFactory_loadClass___java_lang_ClassLoad
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder___INIT___(_r5.o);
     // "SAX2 driver class "
-    _r6.o = xmlvm_create_java_string_from_pool(1112);
+    _r6.o = xmlvm_create_java_string_from_pool(1115);
     XMLVM_CHECK_NPE(5)
     _r5.o = java_lang_StringBuilder_append___java_lang_String(_r5.o, _r7.o);
     XMLVM_CHECK_NPE(5)
     _r5.o = java_lang_StringBuilder_append___java_lang_String(_r5.o, _r9.o);
     // " loaded but cannot be instantiated (no empty public constructor?)"
-    _r6.o = xmlvm_create_java_string_from_pool(1115);
+    _r6.o = xmlvm_create_java_string_from_pool(1118);
     XMLVM_CHECK_NPE(5)
     _r5.o = java_lang_StringBuilder_append___java_lang_String(_r5.o, _r6.o);
     //java_lang_StringBuilder_toString__[5]
@@ -414,8 +414,8 @@ JAVA_OBJECT org_xml_sax_helpers_XMLReaderFactory_loadClass___java_lang_ClassLoad
     XMLVM_THROW_CUSTOM(_r4.o)
     label108:;
     XMLVM_SOURCE_POSITION("XMLReaderFactory.java", 147)
-    java_lang_Thread* curThread_w15801aaab4b1c56 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r4.o = curThread_w15801aaab4b1c56->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w15830aaab4b1c56 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r4.o = curThread_w15830aaab4b1c56->fields.java_lang_Thread.xmlvmException_;
     _r3 = _r4;
     XMLVM_SOURCE_POSITION("XMLReaderFactory.java", 148)
     _r4.o = __NEW_org_xml_sax_SAXException();
@@ -423,13 +423,13 @@ JAVA_OBJECT org_xml_sax_helpers_XMLReaderFactory_loadClass___java_lang_ClassLoad
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder___INIT___(_r5.o);
     // "SAX2 driver class "
-    _r6.o = xmlvm_create_java_string_from_pool(1112);
+    _r6.o = xmlvm_create_java_string_from_pool(1115);
     XMLVM_CHECK_NPE(5)
     _r5.o = java_lang_StringBuilder_append___java_lang_String(_r5.o, _r7.o);
     XMLVM_CHECK_NPE(5)
     _r5.o = java_lang_StringBuilder_append___java_lang_String(_r5.o, _r9.o);
     // " does not implement XMLReader"
-    _r6.o = xmlvm_create_java_string_from_pool(1116);
+    _r6.o = xmlvm_create_java_string_from_pool(1119);
     XMLVM_CHECK_NPE(5)
     _r5.o = java_lang_StringBuilder_append___java_lang_String(_r5.o, _r6.o);
     //java_lang_StringBuilder_toString__[5]

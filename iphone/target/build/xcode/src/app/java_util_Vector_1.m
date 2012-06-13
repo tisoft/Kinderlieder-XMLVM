@@ -293,13 +293,13 @@ JAVA_OBJECT java_util_Vector_1_nextElement__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Vector.java", 352)
     _r0.o = ((java_util_Vector_1*) _r4.o)->fields.java_util_Vector_1.this_0_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
-    XMLVM_TRY_BEGIN(w14703aaab4b1b5)
+    XMLVM_TRY_BEGIN(w14732aaab4b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("Vector.java", 353)
     _r1.i = ((java_util_Vector_1*) _r4.o)->fields.java_util_Vector_1.pos_;
     _r2.o = ((java_util_Vector_1*) _r4.o)->fields.java_util_Vector_1.this_0_;
     _r2.i = ((java_util_Vector*) _r2.o)->fields.java_util_Vector.elementCount_;
-    if (_r1.i >= _r2.i) { XMLVM_MEMCPY(curThread_w14703aaab4b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w14703aaab4b1b5, sizeof(XMLVM_JMP_BUF)); goto label25; };
+    if (_r1.i >= _r2.i) { XMLVM_MEMCPY(curThread_w14732aaab4b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w14732aaab4b1b5, sizeof(XMLVM_JMP_BUF)); goto label25; };
     XMLVM_SOURCE_POSITION("Vector.java", 354)
     _r1.o = ((java_util_Vector_1*) _r4.o)->fields.java_util_Vector_1.this_0_;
     _r1.o = ((java_util_Vector*) _r1.o)->fields.java_util_Vector.elementData_;
@@ -310,42 +310,42 @@ JAVA_OBJECT java_util_Vector_1_nextElement__(JAVA_OBJECT me)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     _r1.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
     java_lang_Object_releaseLockRecursive__(_r0.o);
-    XMLVM_MEMCPY(curThread_w14703aaab4b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w14703aaab4b1b5, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w14732aaab4b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w14732aaab4b1b5, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r1.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w14703aaab4b1b5)
-        XMLVM_CATCH_SPECIFIC(w14703aaab4b1b5,java_lang_Object,32)
-    XMLVM_CATCH_END(w14703aaab4b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w14703aaab4b1b5)
+    XMLVM_CATCH_BEGIN(w14732aaab4b1b5)
+        XMLVM_CATCH_SPECIFIC(w14732aaab4b1b5,java_lang_Object,32)
+    XMLVM_CATCH_END(w14732aaab4b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w14732aaab4b1b5)
     label25:;
-    XMLVM_TRY_BEGIN(w14703aaab4b1b7)
+    XMLVM_TRY_BEGIN(w14732aaab4b1b7)
     // Begin try
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w14703aaab4b1b7)
-        XMLVM_CATCH_SPECIFIC(w14703aaab4b1b7,java_lang_Object,32)
-    XMLVM_CATCH_END(w14703aaab4b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w14703aaab4b1b7)
+    XMLVM_CATCH_BEGIN(w14732aaab4b1b7)
+        XMLVM_CATCH_SPECIFIC(w14732aaab4b1b7,java_lang_Object,32)
+    XMLVM_CATCH_END(w14732aaab4b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w14732aaab4b1b7)
     XMLVM_SOURCE_POSITION("Vector.java", 357)
     _r0.o = __NEW_java_util_NoSuchElementException();
     XMLVM_CHECK_NPE(0)
     java_util_NoSuchElementException___INIT___(_r0.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label32:;
-    java_lang_Thread* curThread_w14703aaab4b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w14703aaab4b1c13->fields.java_lang_Thread.xmlvmException_;
-    XMLVM_TRY_BEGIN(w14703aaab4b1c14)
+    java_lang_Thread* curThread_w14732aaab4b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w14732aaab4b1c13->fields.java_lang_Thread.xmlvmException_;
+    XMLVM_TRY_BEGIN(w14732aaab4b1c14)
     // Begin try
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w14703aaab4b1c14)
-        XMLVM_CATCH_SPECIFIC(w14703aaab4b1c14,java_lang_Object,32)
-    XMLVM_CATCH_END(w14703aaab4b1c14)
-    XMLVM_RESTORE_EXCEPTION_ENV(w14703aaab4b1c14)
+    XMLVM_CATCH_BEGIN(w14732aaab4b1c14)
+        XMLVM_CATCH_SPECIFIC(w14732aaab4b1c14,java_lang_Object,32)
+    XMLVM_CATCH_END(w14732aaab4b1c14)
+    XMLVM_RESTORE_EXCEPTION_ENV(w14732aaab4b1c14)
     XMLVM_THROW_CUSTOM(_r1.o)
     //XMLVM_END_WRAPPER
 }

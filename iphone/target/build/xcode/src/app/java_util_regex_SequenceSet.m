@@ -596,7 +596,7 @@ JAVA_OBJECT java_util_regex_SequenceSet_getName__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("SequenceSet.java", 99)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "sequence: "
-    _r1.o = xmlvm_create_java_string_from_pool(2505);
+    _r1.o = xmlvm_create_java_string_from_pool(2508);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     _r1.o = ((java_util_regex_SequenceSet*) _r2.o)->fields.java_util_regex_SequenceSet.string_;

@@ -313,7 +313,7 @@ void my_kinderlieder_PdfViewController_2_clicked__(JAVA_OBJECT me)
     label47:;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 67)
     // "Play"
-    _r4.o = xmlvm_create_java_string_from_pool(1956);
+    _r4.o = xmlvm_create_java_string_from_pool(1959);
     _r5.o = __NEW_my_kinderlieder_PdfViewController_2_1();
     XMLVM_CHECK_NPE(5)
     my_kinderlieder_PdfViewController_2_1___INIT____my_kinderlieder_PdfViewController_2_java_util_List(_r5.o, _r8.o, _r1.o);

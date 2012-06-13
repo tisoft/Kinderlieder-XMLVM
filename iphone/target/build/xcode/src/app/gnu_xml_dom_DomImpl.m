@@ -440,7 +440,7 @@ JAVA_BOOLEAN gnu_xml_dom_DomImpl_hasFeature___java_lang_String_java_lang_String(
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
     if (_r1.i != 0) goto label48;
     // "core"
-    _r1.o = xmlvm_create_java_string_from_pool(1048);
+    _r1.o = xmlvm_create_java_string_from_pool(1051);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
@@ -484,13 +484,13 @@ JAVA_BOOLEAN gnu_xml_dom_DomImpl_hasFeature___java_lang_String_java_lang_String(
     label86:;
     XMLVM_SOURCE_POSITION("DomImpl.java", 108)
     // "ls"
-    _r1.o = xmlvm_create_java_string_from_pool(1049);
+    _r1.o = xmlvm_create_java_string_from_pool(1052);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
     if (_r1.i != 0) goto label102;
     // "ls-async"
-    _r1.o = xmlvm_create_java_string_from_pool(1050);
+    _r1.o = xmlvm_create_java_string_from_pool(1053);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
@@ -520,28 +520,28 @@ JAVA_BOOLEAN gnu_xml_dom_DomImpl_hasFeature___java_lang_String_java_lang_String(
     label124:;
     XMLVM_SOURCE_POSITION("DomImpl.java", 114)
     // "events"
-    _r1.o = xmlvm_create_java_string_from_pool(1051);
+    _r1.o = xmlvm_create_java_string_from_pool(1054);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
     if (_r1.i != 0) goto label156;
     XMLVM_SOURCE_POSITION("DomImpl.java", 115)
     // "mutationevents"
-    _r1.o = xmlvm_create_java_string_from_pool(1052);
+    _r1.o = xmlvm_create_java_string_from_pool(1055);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
     if (_r1.i != 0) goto label156;
     XMLVM_SOURCE_POSITION("DomImpl.java", 116)
     // "uievents"
-    _r1.o = xmlvm_create_java_string_from_pool(1053);
+    _r1.o = xmlvm_create_java_string_from_pool(1056);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
     if (_r1.i != 0) goto label156;
     XMLVM_SOURCE_POSITION("DomImpl.java", 118)
     // "htmlevents"
-    _r1.o = xmlvm_create_java_string_from_pool(1054);
+    _r1.o = xmlvm_create_java_string_from_pool(1057);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
@@ -571,7 +571,7 @@ JAVA_BOOLEAN gnu_xml_dom_DomImpl_hasFeature___java_lang_String_java_lang_String(
     label180:;
     XMLVM_SOURCE_POSITION("DomImpl.java", 128)
     // "user-events"
-    _r1.o = xmlvm_create_java_string_from_pool(1055);
+    _r1.o = xmlvm_create_java_string_from_pool(1058);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
@@ -587,7 +587,7 @@ JAVA_BOOLEAN gnu_xml_dom_DomImpl_hasFeature___java_lang_String_java_lang_String(
     if (_r0.i != 0) goto label209;
     XMLVM_SOURCE_POSITION("DomImpl.java", 132)
     // "0.1"
-    _r0.o = xmlvm_create_java_string_from_pool(1056);
+    _r0.o = xmlvm_create_java_string_from_pool(1059);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r10.o);
@@ -600,7 +600,7 @@ JAVA_BOOLEAN gnu_xml_dom_DomImpl_hasFeature___java_lang_String_java_lang_String(
     label212:;
     XMLVM_SOURCE_POSITION("DomImpl.java", 142)
     // "traversal"
-    _r1.o = xmlvm_create_java_string_from_pool(1057);
+    _r1.o = xmlvm_create_java_string_from_pool(1060);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
@@ -629,7 +629,7 @@ JAVA_BOOLEAN gnu_xml_dom_DomImpl_hasFeature___java_lang_String_java_lang_String(
     label244:;
     XMLVM_SOURCE_POSITION("DomImpl.java", 148)
     // "xpath"
-    _r1.o = xmlvm_create_java_string_from_pool(1058);
+    _r1.o = xmlvm_create_java_string_from_pool(1061);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
@@ -664,7 +664,7 @@ JAVA_BOOLEAN gnu_xml_dom_DomImpl_hasFeature___java_lang_String_java_lang_String(
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
     if (_r1.i != 0) goto label292;
     // "xhtml"
-    _r1.o = xmlvm_create_java_string_from_pool(1059);
+    _r1.o = xmlvm_create_java_string_from_pool(1062);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
@@ -836,7 +836,7 @@ JAVA_OBJECT gnu_xml_dom_DomImpl_getFeature___java_lang_String_java_lang_String(J
     if (_r0.i != 0) goto label22;
     XMLVM_SOURCE_POSITION("DomImpl.java", 245)
     // "xhtml"
-    _r0.o = xmlvm_create_java_string_from_pool(1059);
+    _r0.o = xmlvm_create_java_string_from_pool(1062);
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_String_equalsIgnoreCase___java_lang_String(_r0.o, _r2.o);
     if (_r0.i == 0) goto label28;

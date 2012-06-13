@@ -345,7 +345,7 @@ JAVA_OBJECT java_util_regex_MultiLineSOLSet_getName__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("MultiLineSOLSet.java", 54)
     // "^"
-    _r0.o = xmlvm_create_java_string_from_pool(1396);
+    _r0.o = xmlvm_create_java_string_from_pool(1399);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

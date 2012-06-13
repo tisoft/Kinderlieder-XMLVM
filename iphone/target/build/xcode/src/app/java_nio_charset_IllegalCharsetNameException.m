@@ -238,7 +238,7 @@ void java_nio_charset_IllegalCharsetNameException___INIT____java_lang_String(JAV
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("IllegalCharsetNameException.java", 46)
     // "niochar.0F"
-    _r0.o = xmlvm_create_java_string_from_pool(1835);
+    _r0.o = xmlvm_create_java_string_from_pool(1838);
     _r0.o = org_apache_harmony_niochar_internal_nls_Messages_getString___java_lang_String_java_lang_Object(_r0.o, _r2.o);
     XMLVM_CHECK_NPE(1)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r1.o, _r0.o);

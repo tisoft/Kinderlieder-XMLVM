@@ -1005,7 +1005,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableCellElement_getAbbr__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLTableCellElement.java", 66)
     // "abbr"
-    _r0.o = xmlvm_create_java_string_from_pool(2535);
+    _r0.o = xmlvm_create_java_string_from_pool(2538);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1024,7 +1024,7 @@ void gnu_xml_dom_html2_DomHTMLTableCellElement_setAbbr___java_lang_String(JAVA_O
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLTableCellElement.java", 71)
     // "abbr"
-    _r0.o = xmlvm_create_java_string_from_pool(2535);
+    _r0.o = xmlvm_create_java_string_from_pool(2538);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLTableCellElement.java", 72)
@@ -1079,7 +1079,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableCellElement_getAxis__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLTableCellElement.java", 86)
     // "axis"
-    _r0.o = xmlvm_create_java_string_from_pool(2536);
+    _r0.o = xmlvm_create_java_string_from_pool(2539);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1098,7 +1098,7 @@ void gnu_xml_dom_html2_DomHTMLTableCellElement_setAxis___java_lang_String(JAVA_O
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLTableCellElement.java", 91)
     // "axis"
-    _r0.o = xmlvm_create_java_string_from_pool(2536);
+    _r0.o = xmlvm_create_java_string_from_pool(2539);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLTableCellElement.java", 92)
@@ -1227,7 +1227,7 @@ JAVA_INT gnu_xml_dom_html2_DomHTMLTableCellElement_getColSpan__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLTableCellElement.java", 126)
     // "colspan"
-    _r0.o = xmlvm_create_java_string_from_pool(2537);
+    _r0.o = xmlvm_create_java_string_from_pool(2540);
     XMLVM_CHECK_NPE(1)
     _r0.i = gnu_xml_dom_html2_DomHTMLElement_getIntHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1246,7 +1246,7 @@ void gnu_xml_dom_html2_DomHTMLTableCellElement_setColSpan___int(JAVA_OBJECT me, 
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DomHTMLTableCellElement.java", 131)
     // "colspan"
-    _r0.o = xmlvm_create_java_string_from_pool(2537);
+    _r0.o = xmlvm_create_java_string_from_pool(2540);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setIntHTMLAttribute___java_lang_String_int(_r1.o, _r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("DomHTMLTableCellElement.java", 132)
@@ -1264,7 +1264,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableCellElement_getHeaders__(JAVA_OBJECT m
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLTableCellElement.java", 136)
     // "headers"
-    _r0.o = xmlvm_create_java_string_from_pool(2538);
+    _r0.o = xmlvm_create_java_string_from_pool(2541);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1283,7 +1283,7 @@ void gnu_xml_dom_html2_DomHTMLTableCellElement_setHeaders___java_lang_String(JAV
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLTableCellElement.java", 141)
     // "headers"
-    _r0.o = xmlvm_create_java_string_from_pool(2538);
+    _r0.o = xmlvm_create_java_string_from_pool(2541);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLTableCellElement.java", 142)
@@ -1338,7 +1338,7 @@ JAVA_BOOLEAN gnu_xml_dom_html2_DomHTMLTableCellElement_getNoWrap__(JAVA_OBJECT m
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLTableCellElement.java", 156)
     // "nowrap"
-    _r0.o = xmlvm_create_java_string_from_pool(1699);
+    _r0.o = xmlvm_create_java_string_from_pool(1702);
     XMLVM_CHECK_NPE(1)
     _r0.i = gnu_xml_dom_html2_DomHTMLElement_getBooleanHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1357,7 +1357,7 @@ void gnu_xml_dom_html2_DomHTMLTableCellElement_setNoWrap___boolean(JAVA_OBJECT m
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DomHTMLTableCellElement.java", 161)
     // "nowrap"
-    _r0.o = xmlvm_create_java_string_from_pool(1699);
+    _r0.o = xmlvm_create_java_string_from_pool(1702);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setBooleanHTMLAttribute___java_lang_String_boolean(_r1.o, _r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("DomHTMLTableCellElement.java", 162)
@@ -1375,7 +1375,7 @@ JAVA_INT gnu_xml_dom_html2_DomHTMLTableCellElement_getRowSpan__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLTableCellElement.java", 166)
     // "rowspan"
-    _r0.o = xmlvm_create_java_string_from_pool(2539);
+    _r0.o = xmlvm_create_java_string_from_pool(2542);
     XMLVM_CHECK_NPE(1)
     _r0.i = gnu_xml_dom_html2_DomHTMLElement_getIntHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1394,7 +1394,7 @@ void gnu_xml_dom_html2_DomHTMLTableCellElement_setRowSpan___int(JAVA_OBJECT me, 
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DomHTMLTableCellElement.java", 171)
     // "rowspan"
-    _r0.o = xmlvm_create_java_string_from_pool(2539);
+    _r0.o = xmlvm_create_java_string_from_pool(2542);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setIntHTMLAttribute___java_lang_String_int(_r1.o, _r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("DomHTMLTableCellElement.java", 172)
@@ -1412,7 +1412,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTableCellElement_getScope__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLTableCellElement.java", 176)
     // "scope"
-    _r0.o = xmlvm_create_java_string_from_pool(2540);
+    _r0.o = xmlvm_create_java_string_from_pool(2543);
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_html2_DomHTMLElement_getHTMLAttribute___java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -1431,7 +1431,7 @@ void gnu_xml_dom_html2_DomHTMLTableCellElement_setScope___java_lang_String(JAVA_
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLTableCellElement.java", 181)
     // "scope"
-    _r0.o = xmlvm_create_java_string_from_pool(2540);
+    _r0.o = xmlvm_create_java_string_from_pool(2543);
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_html2_DomHTMLElement_setHTMLAttribute___java_lang_String_java_lang_String(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomHTMLTableCellElement.java", 182)

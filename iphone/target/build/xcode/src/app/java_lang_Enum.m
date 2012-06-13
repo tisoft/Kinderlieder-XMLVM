@@ -530,7 +530,7 @@ JAVA_OBJECT java_lang_Enum_clone__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Enum.java", 117)
     _r0.o = __NEW_java_lang_CloneNotSupportedException();
     // "luni.4C"
-    _r1.o = xmlvm_create_java_string_from_pool(2390);
+    _r1.o = xmlvm_create_java_string_from_pool(2393);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_CloneNotSupportedException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -608,7 +608,7 @@ JAVA_OBJECT java_lang_Enum_valueOf___java_lang_Class_java_lang_String(JAVA_OBJEC
     XMLVM_SOURCE_POSITION("Enum.java", 171)
     _r0.o = __NEW_java_lang_NullPointerException();
     // "luni.4D"
-    _r1.o = xmlvm_create_java_string_from_pool(2391);
+    _r1.o = xmlvm_create_java_string_from_pool(2394);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_NullPointerException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -621,7 +621,7 @@ JAVA_OBJECT java_lang_Enum_valueOf___java_lang_Class_java_lang_String(JAVA_OBJEC
     XMLVM_SOURCE_POSITION("Enum.java", 176)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.4E"
-    _r1.o = xmlvm_create_java_string_from_pool(2392);
+    _r1.o = xmlvm_create_java_string_from_pool(2395);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object(_r1.o, _r5.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -635,7 +635,7 @@ JAVA_OBJECT java_lang_Enum_valueOf___java_lang_Class_java_lang_String(JAVA_OBJEC
     XMLVM_SOURCE_POSITION("Enum.java", 184)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.4F"
-    _r1.o = xmlvm_create_java_string_from_pool(2393);
+    _r1.o = xmlvm_create_java_string_from_pool(2396);
     XMLVM_SOURCE_POSITION("Enum.java", 185)
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object_java_lang_Object(_r1.o, _r6.o, _r5.o);
     XMLVM_CHECK_NPE(0)
@@ -671,7 +671,7 @@ JAVA_OBJECT java_lang_Enum_getValues___java_lang_Class(JAVA_OBJECT n1)
     XMLVMElem _r3;
     _r3.o = n1;
     _r2.o = JAVA_NULL;
-    XMLVM_TRY_BEGIN(w28431aaac13b1b3)
+    XMLVM_TRY_BEGIN(w28457aaac13b1b3)
     // Begin try
     XMLVM_SOURCE_POSITION("Enum.java", 196)
     _r0.o = __NEW_java_lang_Enum_1();
@@ -687,18 +687,18 @@ JAVA_OBJECT java_lang_Enum_getValues___java_lang_Class(JAVA_OBJECT n1)
     _r3.o = _r3.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28431aaac13b1b3)
-        XMLVM_CATCH_SPECIFIC(w28431aaac13b1b3,java_lang_Exception,21)
-    XMLVM_CATCH_END(w28431aaac13b1b3)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28431aaac13b1b3)
+    XMLVM_CATCH_BEGIN(w28457aaac13b1b3)
+        XMLVM_CATCH_SPECIFIC(w28457aaac13b1b3,java_lang_Exception,21)
+    XMLVM_CATCH_END(w28457aaac13b1b3)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28457aaac13b1b3)
     _r0 = _r3;
     label20:;
     XMLVM_SOURCE_POSITION("Enum.java", 206)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label21:;
-    java_lang_Thread* curThread_w28431aaac13b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w28431aaac13b1b9->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w28457aaac13b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w28457aaac13b1b9->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r2;
     goto label20;
     //XMLVM_END_WRAPPER

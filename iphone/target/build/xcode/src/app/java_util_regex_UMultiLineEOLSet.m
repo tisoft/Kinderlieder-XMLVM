@@ -372,7 +372,7 @@ JAVA_OBJECT java_util_regex_UMultiLineEOLSet_getName__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("UMultiLineEOLSet.java", 59)
     // "<Unix MultiLine $>"
-    _r0.o = xmlvm_create_java_string_from_pool(3326);
+    _r0.o = xmlvm_create_java_string_from_pool(3329);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

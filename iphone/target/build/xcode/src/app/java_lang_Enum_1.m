@@ -239,7 +239,7 @@ JAVA_OBJECT java_lang_Enum_1_run__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Enum.java", 198)
     _r0.o = ((java_lang_Enum_1*) _r3.o)->fields.java_lang_Enum_1.val_enumType_;
     // "values"
-    _r1.o = xmlvm_create_java_string_from_pool(3095);
+    _r1.o = xmlvm_create_java_string_from_pool(3098);
     XMLVM_SOURCE_POSITION("Enum.java", 199)
     _r2.o = JAVA_NULL;
     //java_lang_Class_getMethod___java_lang_String_java_lang_Class_1ARRAY[9]

@@ -583,7 +583,7 @@ void java_math_MathContext___INIT____int_java_math_RoundingMode(JAVA_OBJECT me, 
     XMLVM_SOURCE_POSITION("MathContext.java", 134)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "math.0C"
-    _r1.o = xmlvm_create_java_string_from_pool(1828);
+    _r1.o = xmlvm_create_java_string_from_pool(1831);
     _r1.o = org_apache_harmony_math_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -594,7 +594,7 @@ void java_math_MathContext___INIT____int_java_math_RoundingMode(JAVA_OBJECT me, 
     XMLVM_SOURCE_POSITION("MathContext.java", 138)
     _r0.o = __NEW_java_lang_NullPointerException();
     // "math.0D"
-    _r1.o = xmlvm_create_java_string_from_pool(1829);
+    _r1.o = xmlvm_create_java_string_from_pool(1832);
     _r1.o = org_apache_harmony_math_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_NullPointerException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -630,7 +630,7 @@ void java_math_MathContext___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJEC
     _r6.i = 0;
     _r4.i = -1;
     // "math.0E"
-    _r5.o = xmlvm_create_java_string_from_pool(1830);
+    _r5.o = xmlvm_create_java_string_from_pool(1833);
     XMLVM_SOURCE_POSITION("MathContext.java", 158)
     XMLVM_CHECK_NPE(8)
     java_lang_Object___INIT___(_r8.o);
@@ -648,7 +648,7 @@ void java_math_MathContext___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJEC
     XMLVM_SOURCE_POSITION("MathContext.java", 166)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "math.0E"
-    _r1.o = xmlvm_create_java_string_from_pool(1830);
+    _r1.o = xmlvm_create_java_string_from_pool(1833);
     _r1.o = org_apache_harmony_math_internal_nls_Messages_getString___java_lang_String(_r5.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -676,7 +676,7 @@ void java_math_MathContext___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJEC
     XMLVM_SOURCE_POSITION("MathContext.java", 175)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "math.0E"
-    _r1.o = xmlvm_create_java_string_from_pool(1830);
+    _r1.o = xmlvm_create_java_string_from_pool(1833);
     _r1.o = org_apache_harmony_math_internal_nls_Messages_getString___java_lang_String(_r5.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -695,7 +695,7 @@ void java_math_MathContext___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJEC
     XMLVM_SOURCE_POSITION("MathContext.java", 181)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "math.0E"
-    _r1.o = xmlvm_create_java_string_from_pool(1830);
+    _r1.o = xmlvm_create_java_string_from_pool(1833);
     _r1.o = org_apache_harmony_math_internal_nls_Messages_getString___java_lang_String(_r5.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -749,7 +749,7 @@ void java_math_MathContext___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJEC
     XMLVM_SOURCE_POSITION("MathContext.java", 214)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "math.0E"
-    _r1.o = xmlvm_create_java_string_from_pool(1830);
+    _r1.o = xmlvm_create_java_string_from_pool(1833);
     _r1.o = org_apache_harmony_math_internal_nls_Messages_getString___java_lang_String(_r5.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -758,7 +758,7 @@ void java_math_MathContext___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJEC
     XMLVM_SOURCE_POSITION("MathContext.java", 196)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "math.0E"
-    _r1.o = xmlvm_create_java_string_from_pool(1830);
+    _r1.o = xmlvm_create_java_string_from_pool(1833);
     _r1.o = org_apache_harmony_math_internal_nls_Messages_getString___java_lang_String(_r5.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -775,7 +775,7 @@ void java_math_MathContext___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJEC
     XMLVM_SOURCE_POSITION("MathContext.java", 202)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "math.0E"
-    _r1.o = xmlvm_create_java_string_from_pool(1830);
+    _r1.o = xmlvm_create_java_string_from_pool(1833);
     _r1.o = org_apache_harmony_math_internal_nls_Messages_getString___java_lang_String(_r5.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -952,7 +952,7 @@ void java_math_MathContext_readObject___java_io_ObjectInputStream(JAVA_OBJECT me
     XMLVM_SOURCE_POSITION("MathContext.java", 320)
     _r0.o = __NEW_java_io_StreamCorruptedException();
     // "math.0F"
-    _r1.o = xmlvm_create_java_string_from_pool(1831);
+    _r1.o = xmlvm_create_java_string_from_pool(1834);
     _r1.o = org_apache_harmony_math_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_io_StreamCorruptedException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -964,7 +964,7 @@ void java_math_MathContext_readObject___java_io_ObjectInputStream(JAVA_OBJECT me
     XMLVM_SOURCE_POSITION("MathContext.java", 324)
     _r0.o = __NEW_java_io_StreamCorruptedException();
     // "math.10"
-    _r1.o = xmlvm_create_java_string_from_pool(1832);
+    _r1.o = xmlvm_create_java_string_from_pool(1835);
     _r1.o = org_apache_harmony_math_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_io_StreamCorruptedException___INIT____java_lang_String(_r0.o, _r1.o);

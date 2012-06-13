@@ -238,7 +238,7 @@ void gnu_xml_pipeline_ValidationConsumer_MixedRecognizer___INIT____gnu_xml_pipel
     _r1.o = java_lang_String_substring___int_int(_r1.o, _r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1392)
     // "\174"
-    _r2.o = xmlvm_create_java_string_from_pool(904);
+    _r2.o = xmlvm_create_java_string_from_pool(907);
     XMLVM_CHECK_NPE(0)
     java_util_StringTokenizer___INIT____java_lang_String_java_lang_String(_r0.o, _r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1393)
@@ -279,14 +279,14 @@ void gnu_xml_pipeline_ValidationConsumer_MixedRecognizer___INIT____gnu_xml_pipel
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1399)
     _r3.o = __NEW_java_lang_StringBuilder();
     // "element "
-    _r4.o = xmlvm_create_java_string_from_pool(3089);
+    _r4.o = xmlvm_create_java_string_from_pool(3092);
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuilder___INIT____java_lang_String(_r3.o, _r4.o);
     XMLVM_CHECK_NPE(3)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r3.o, _r2.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1400)
     // " is repeated in mixed content model: "
-    _r3.o = xmlvm_create_java_string_from_pool(3090);
+    _r3.o = xmlvm_create_java_string_from_pool(3093);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1401)

@@ -253,13 +253,13 @@ void my_kinderlieder_PdfViewController_1_1_completed___org_xmlvm_iphone_UIPrintI
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT___(_r1.o);
     // "finished: "
-    _r2.o = xmlvm_create_java_string_from_pool(956);
+    _r2.o = xmlvm_create_java_string_from_pool(959);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___boolean(_r1.o, _r5.i);
     // ", error: "
-    _r2.o = xmlvm_create_java_string_from_pool(957);
+    _r2.o = xmlvm_create_java_string_from_pool(960);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     XMLVM_CHECK_NPE(1)

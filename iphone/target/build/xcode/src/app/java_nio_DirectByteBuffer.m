@@ -1501,7 +1501,7 @@ void java_nio_DirectByteBuffer_addressValidityCheck__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DirectByteBuffer.java", 207)
     _r0.o = __NEW_java_lang_IllegalStateException();
     // "nio.08"
-    _r1.o = xmlvm_create_java_string_from_pool(3088);
+    _r1.o = xmlvm_create_java_string_from_pool(3091);
 
     
     // Red class access removed: org.apache.harmony.nio.internal.nls.Messages::getString

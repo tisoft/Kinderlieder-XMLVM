@@ -289,7 +289,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_file_Handler_openC
     XMLVM_SOURCE_POSITION("Handler.java", 70)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.1B"
-    _r1.o = xmlvm_create_java_string_from_pool(1101);
+    _r1.o = xmlvm_create_java_string_from_pool(1104);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r0.o, _r1.o);
@@ -306,7 +306,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_file_Handler_openC
     if (_r1.i == 0) goto label34;
     XMLVM_SOURCE_POSITION("Handler.java", 75)
     // "localhost"
-    _r1.o = xmlvm_create_java_string_from_pool(1023);
+    _r1.o = xmlvm_create_java_string_from_pool(1026);
     XMLVM_CHECK_NPE(0)
     _r1.i = java_lang_String_equalsIgnoreCase___java_lang_String(_r0.o, _r1.o);
     if (_r1.i == 0) goto label40;
@@ -328,7 +328,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_file_Handler_openC
     XMLVM_SOURCE_POSITION("Handler.java", 80)
     _r1.o = __NEW_java_net_URL();
     // "ftp"
-    _r2.o = xmlvm_create_java_string_from_pool(1102);
+    _r2.o = xmlvm_create_java_string_from_pool(1105);
     XMLVM_CHECK_NPE(5)
     _r3.o = java_net_URL_getFile__(_r5.o);
     XMLVM_CHECK_NPE(1)

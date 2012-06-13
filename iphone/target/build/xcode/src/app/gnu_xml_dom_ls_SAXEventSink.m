@@ -1035,35 +1035,35 @@ void gnu_xml_dom_ls_SAXEventSink___CLINIT_()
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 85)
     _r0.o = gnu_xml_dom_ls_SAXEventSink_GET_PREDEFINED_ENTITIES();
     // "amp"
-    _r1.o = xmlvm_create_java_string_from_pool(1514);
+    _r1.o = xmlvm_create_java_string_from_pool(1517);
     //java_util_HashSet_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_HashSet*) _r0.o)->tib->vtable[7])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 86)
     _r0.o = gnu_xml_dom_ls_SAXEventSink_GET_PREDEFINED_ENTITIES();
     // "lt"
-    _r1.o = xmlvm_create_java_string_from_pool(1515);
+    _r1.o = xmlvm_create_java_string_from_pool(1518);
     //java_util_HashSet_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_HashSet*) _r0.o)->tib->vtable[7])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 87)
     _r0.o = gnu_xml_dom_ls_SAXEventSink_GET_PREDEFINED_ENTITIES();
     // "gt"
-    _r1.o = xmlvm_create_java_string_from_pool(1516);
+    _r1.o = xmlvm_create_java_string_from_pool(1519);
     //java_util_HashSet_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_HashSet*) _r0.o)->tib->vtable[7])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 88)
     _r0.o = gnu_xml_dom_ls_SAXEventSink_GET_PREDEFINED_ENTITIES();
     // "quot"
-    _r1.o = xmlvm_create_java_string_from_pool(1517);
+    _r1.o = xmlvm_create_java_string_from_pool(1520);
     //java_util_HashSet_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_HashSet*) _r0.o)->tib->vtable[7])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 89)
     _r0.o = gnu_xml_dom_ls_SAXEventSink_GET_PREDEFINED_ENTITIES();
     // "apos"
-    _r1.o = xmlvm_create_java_string_from_pool(1518);
+    _r1.o = xmlvm_create_java_string_from_pool(1521);
     //java_util_HashSet_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_HashSet*) _r0.o)->tib->vtable[7])(_r0.o, _r1.o);
@@ -1220,7 +1220,7 @@ void gnu_xml_dom_ls_SAXEventSink_startDocument__(JAVA_OBJECT me)
     //gnu_xml_dom_DomDocument_setXmlStandalone___boolean[84]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_BOOLEAN)) ((gnu_xml_dom_DomDocument*) _r1.o)->tib->vtable[84])(_r1.o, _r0.i);
-    XMLVM_TRY_BEGIN(w21046aaac24b1c38)
+    XMLVM_TRY_BEGIN(w21077aaac24b1c38)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 159)
     _r0.o = ((gnu_xml_dom_ls_SAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_SAXEventSink.reader_;
@@ -1236,13 +1236,13 @@ void gnu_xml_dom_ls_SAXEventSink_startDocument__(JAVA_OBJECT me)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_dom_DomDocument*) _r1.o)->tib->vtable[85])(_r1.o, _r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21046aaac24b1c38)
-        XMLVM_CATCH_SPECIFIC(w21046aaac24b1c38,org_xml_sax_SAXNotRecognizedException,116)
-        XMLVM_CATCH_SPECIFIC(w21046aaac24b1c38,org_xml_sax_SAXNotSupportedException,114)
-    XMLVM_CATCH_END(w21046aaac24b1c38)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21046aaac24b1c38)
+    XMLVM_CATCH_BEGIN(w21077aaac24b1c38)
+        XMLVM_CATCH_SPECIFIC(w21077aaac24b1c38,org_xml_sax_SAXNotRecognizedException,116)
+        XMLVM_CATCH_SPECIFIC(w21077aaac24b1c38,org_xml_sax_SAXNotSupportedException,114)
+    XMLVM_CATCH_END(w21077aaac24b1c38)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21077aaac24b1c38)
     label71:;
-    XMLVM_TRY_BEGIN(w21046aaac24b1c40)
+    XMLVM_TRY_BEGIN(w21077aaac24b1c40)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 171)
     _r0.o = ((gnu_xml_dom_ls_SAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_SAXEventSink.reader_;
@@ -1257,11 +1257,11 @@ void gnu_xml_dom_ls_SAXEventSink_startDocument__(JAVA_OBJECT me)
     gnu_xml_dom_DomDocument_setXmlEncoding___java_lang_String(_r1.o, _r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21046aaac24b1c40)
-        XMLVM_CATCH_SPECIFIC(w21046aaac24b1c40,org_xml_sax_SAXNotRecognizedException,112)
-        XMLVM_CATCH_SPECIFIC(w21046aaac24b1c40,org_xml_sax_SAXNotSupportedException,110)
-    XMLVM_CATCH_END(w21046aaac24b1c40)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21046aaac24b1c40)
+    XMLVM_CATCH_BEGIN(w21077aaac24b1c40)
+        XMLVM_CATCH_SPECIFIC(w21077aaac24b1c40,org_xml_sax_SAXNotRecognizedException,112)
+        XMLVM_CATCH_SPECIFIC(w21077aaac24b1c40,org_xml_sax_SAXNotSupportedException,110)
+    XMLVM_CATCH_END(w21077aaac24b1c40)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21077aaac24b1c40)
     label86:;
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 182)
     _r0.o = ((gnu_xml_dom_ls_SAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_SAXEventSink.locator_;
@@ -1284,22 +1284,22 @@ void gnu_xml_dom_ls_SAXEventSink_startDocument__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return;
     label110:;
-    java_lang_Thread* curThread_w21046aaac24b1c59 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w21046aaac24b1c59->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w21077aaac24b1c59 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w21077aaac24b1c59->fields.java_lang_Thread.xmlvmException_;
     goto label86;
     label112:;
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 175)
-    java_lang_Thread* curThread_w21046aaac24b1c63 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w21046aaac24b1c63->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w21077aaac24b1c63 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w21077aaac24b1c63->fields.java_lang_Thread.xmlvmException_;
     goto label86;
     label114:;
-    java_lang_Thread* curThread_w21046aaac24b1c66 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w21046aaac24b1c66->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w21077aaac24b1c66 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w21077aaac24b1c66->fields.java_lang_Thread.xmlvmException_;
     goto label71;
     label116:;
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 163)
-    java_lang_Thread* curThread_w21046aaac24b1c70 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w21046aaac24b1c70->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w21077aaac24b1c70 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w21077aaac24b1c70->fields.java_lang_Thread.xmlvmException_;
     goto label71;
     //XMLVM_END_WRAPPER
 }
@@ -1986,7 +1986,7 @@ void gnu_xml_dom_ls_SAXEventSink_startEntity___java_lang_String(JAVA_OBJECT me, 
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 420)
     _r0.o = __NEW_org_xml_sax_SAXException();
     // "SAX parser error: reference to entity in undeclared doctype"
-    _r1.o = xmlvm_create_java_string_from_pool(1519);
+    _r1.o = xmlvm_create_java_string_from_pool(1522);
     XMLVM_CHECK_NPE(0)
     org_xml_sax_SAXException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -2023,7 +2023,7 @@ void gnu_xml_dom_ls_SAXEventSink_startEntity___java_lang_String(JAVA_OBJECT me, 
     _r0.o = __NEW_org_xml_sax_SAXException();
     _r1.o = __NEW_java_lang_StringBuilder();
     // "SAX parser error: reference to undeclared entity: "
-    _r2.o = xmlvm_create_java_string_from_pool(1520);
+    _r2.o = xmlvm_create_java_string_from_pool(1523);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 433)
@@ -2121,7 +2121,7 @@ void gnu_xml_dom_ls_SAXEventSink_endEntity___java_lang_String(JAVA_OBJECT me, JA
     _r2.o = __NEW_org_xml_sax_SAXException();
     _r3.o = __NEW_java_lang_StringBuilder();
     // "expecting end of "
-    _r4.o = xmlvm_create_java_string_from_pool(1521);
+    _r4.o = xmlvm_create_java_string_from_pool(1524);
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuilder___INIT____java_lang_String(_r3.o, _r4.o);
     XMLVM_CHECK_NPE(1)
@@ -2129,7 +2129,7 @@ void gnu_xml_dom_ls_SAXEventSink_endEntity___java_lang_String(JAVA_OBJECT me, JA
     XMLVM_CHECK_NPE(3)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r3.o, _r1.o);
     // " entity"
-    _r3.o = xmlvm_create_java_string_from_pool(1522);
+    _r3.o = xmlvm_create_java_string_from_pool(1525);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r3.o);
     //java_lang_StringBuilder_toString__[5]
@@ -2304,7 +2304,7 @@ void gnu_xml_dom_ls_SAXEventSink_notationDecl___java_lang_String_java_lang_Strin
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 516)
     _r0.o = __NEW_org_xml_sax_SAXException();
     // "notation decl outside DTD"
-    _r1.o = xmlvm_create_java_string_from_pool(1523);
+    _r1.o = xmlvm_create_java_string_from_pool(1526);
     XMLVM_CHECK_NPE(0)
     org_xml_sax_SAXException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -2349,7 +2349,7 @@ void gnu_xml_dom_ls_SAXEventSink_unparsedEntityDecl___java_lang_String_java_lang
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 530)
     _r0.o = __NEW_org_xml_sax_SAXException();
     // "unparsed entity decl outside DTD"
-    _r1.o = xmlvm_create_java_string_from_pool(1524);
+    _r1.o = xmlvm_create_java_string_from_pool(1527);
     XMLVM_CHECK_NPE(0)
     org_xml_sax_SAXException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -2390,7 +2390,7 @@ void gnu_xml_dom_ls_SAXEventSink_elementDecl___java_lang_String_java_lang_String
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 546)
     _r0.o = __NEW_org_xml_sax_SAXException();
     // "element decl outside DTD"
-    _r1.o = xmlvm_create_java_string_from_pool(1525);
+    _r1.o = xmlvm_create_java_string_from_pool(1528);
     XMLVM_CHECK_NPE(0)
     org_xml_sax_SAXException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -2446,7 +2446,7 @@ void gnu_xml_dom_ls_SAXEventSink_attributeDecl___java_lang_String_java_lang_Stri
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 567)
     _r0.o = __NEW_org_xml_sax_SAXException();
     // "attribute decl outside DTD"
-    _r1.o = xmlvm_create_java_string_from_pool(1526);
+    _r1.o = xmlvm_create_java_string_from_pool(1529);
     XMLVM_CHECK_NPE(0)
     org_xml_sax_SAXException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -2493,7 +2493,7 @@ void gnu_xml_dom_ls_SAXEventSink_internalEntityDecl___java_lang_String_java_lang
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 580)
     _r0.o = __NEW_org_xml_sax_SAXException();
     // "internal entity decl outside DTD"
-    _r1.o = xmlvm_create_java_string_from_pool(1527);
+    _r1.o = xmlvm_create_java_string_from_pool(1530);
     XMLVM_CHECK_NPE(0)
     org_xml_sax_SAXException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -2546,7 +2546,7 @@ void gnu_xml_dom_ls_SAXEventSink_externalEntityDecl___java_lang_String_java_lang
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 598)
     _r0.o = __NEW_org_xml_sax_SAXException();
     // "external entity decl outside DTD"
-    _r1.o = xmlvm_create_java_string_from_pool(1528);
+    _r1.o = xmlvm_create_java_string_from_pool(1531);
     XMLVM_CHECK_NPE(0)
     org_xml_sax_SAXException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)

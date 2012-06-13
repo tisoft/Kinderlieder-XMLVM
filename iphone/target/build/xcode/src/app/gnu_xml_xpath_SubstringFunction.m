@@ -533,7 +533,7 @@ JAVA_OBJECT gnu_xml_xpath_SubstringFunction_toString__(JAVA_OBJECT me)
     XMLVMElem _r5;
     _r5.o = me;
     // "substring("
-    _r4.o = xmlvm_create_java_string_from_pool(2331);
+    _r4.o = xmlvm_create_java_string_from_pool(2334);
     // ")"
     _r3.o = xmlvm_create_java_string_from_pool(3);
     // ","
@@ -543,7 +543,7 @@ JAVA_OBJECT gnu_xml_xpath_SubstringFunction_toString__(JAVA_OBJECT me)
     if (_r0.o != JAVA_NULL) goto label46;
     _r0.o = __NEW_java_lang_StringBuilder();
     // "substring("
-    _r1.o = xmlvm_create_java_string_from_pool(2331);
+    _r1.o = xmlvm_create_java_string_from_pool(2334);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r4.o);
     _r1.o = ((gnu_xml_xpath_SubstringFunction*) _r5.o)->fields.gnu_xml_xpath_SubstringFunction.arg1_;
@@ -570,7 +570,7 @@ JAVA_OBJECT gnu_xml_xpath_SubstringFunction_toString__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("SubstringFunction.java", 116)
     _r0.o = __NEW_java_lang_StringBuilder();
     // "substring("
-    _r1.o = xmlvm_create_java_string_from_pool(2331);
+    _r1.o = xmlvm_create_java_string_from_pool(2334);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r4.o);
     _r1.o = ((gnu_xml_xpath_SubstringFunction*) _r5.o)->fields.gnu_xml_xpath_SubstringFunction.arg1_;

@@ -330,7 +330,7 @@ JAVA_OBJECT java_util_regex_AtomicFSet_getName__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AtomicFSet.java", 49)
     // "AtomicFSet"
-    _r0.o = xmlvm_create_java_string_from_pool(2691);
+    _r0.o = xmlvm_create_java_string_from_pool(2694);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER

@@ -250,7 +250,7 @@ void my_kinderlieder_PdfViewController_5_clicked__(JAVA_OBJECT me)
     _r0.o = ((my_kinderlieder_PdfViewController_5*) _r2.o)->fields.my_kinderlieder_PdfViewController_5.this_0_;
     _r0.o = ((my_kinderlieder_PdfViewController*) _r0.o)->fields.my_kinderlieder_PdfViewController.repeatButton_;
     // "no-repeat.png"
-    _r1.o = xmlvm_create_java_string_from_pool(2352);
+    _r1.o = xmlvm_create_java_string_from_pool(2355);
     _r1.o = org_xmlvm_iphone_UIImage_imageNamed___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UIBarItem_setImage___org_xmlvm_iphone_UIImage(_r0.o, _r1.o);
@@ -269,7 +269,7 @@ void my_kinderlieder_PdfViewController_5_clicked__(JAVA_OBJECT me)
     _r0.o = ((my_kinderlieder_PdfViewController_5*) _r2.o)->fields.my_kinderlieder_PdfViewController_5.this_0_;
     _r0.o = ((my_kinderlieder_PdfViewController*) _r0.o)->fields.my_kinderlieder_PdfViewController.repeatButton_;
     // "repeat.png"
-    _r1.o = xmlvm_create_java_string_from_pool(1119);
+    _r1.o = xmlvm_create_java_string_from_pool(1122);
     _r1.o = org_xmlvm_iphone_UIImage_imageNamed___java_lang_String(_r1.o);
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UIBarItem_setImage___org_xmlvm_iphone_UIImage(_r0.o, _r1.o);

@@ -647,7 +647,7 @@ JAVA_OBJECT gnu_xml_dom_DomEvent_toString__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DomEvent.java", 190)
     _r0.o = __NEW_gnu_java_lang_CPStringBuilder();
     // "[Event "
-    _r1.o = xmlvm_create_java_string_from_pool(2335);
+    _r1.o = xmlvm_create_java_string_from_pool(2338);
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("DomEvent.java", 191)
@@ -663,7 +663,7 @@ JAVA_OBJECT gnu_xml_dom_DomEvent_toString__(JAVA_OBJECT me)
     }
     XMLVM_SOURCE_POSITION("DomEvent.java", 204)
     // ", (inactive)"
-    _r1.o = xmlvm_create_java_string_from_pool(2336);
+    _r1.o = xmlvm_create_java_string_from_pool(2339);
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label22:;
@@ -675,7 +675,7 @@ JAVA_OBJECT gnu_xml_dom_DomEvent_toString__(JAVA_OBJECT me)
     if (_r1.i == _r2.i) goto label36;
     XMLVM_SOURCE_POSITION("DomEvent.java", 209)
     // ", bubbles"
-    _r1.o = xmlvm_create_java_string_from_pool(2337);
+    _r1.o = xmlvm_create_java_string_from_pool(2340);
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label36:;
@@ -684,7 +684,7 @@ JAVA_OBJECT gnu_xml_dom_DomEvent_toString__(JAVA_OBJECT me)
     if (_r1.i == 0) goto label45;
     XMLVM_SOURCE_POSITION("DomEvent.java", 213)
     // ", can cancel"
-    _r1.o = xmlvm_create_java_string_from_pool(2338);
+    _r1.o = xmlvm_create_java_string_from_pool(2341);
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label45:;
@@ -702,21 +702,21 @@ JAVA_OBJECT gnu_xml_dom_DomEvent_toString__(JAVA_OBJECT me)
     label55:;
     XMLVM_SOURCE_POSITION("DomEvent.java", 195)
     // ", CAPTURING"
-    _r1.o = xmlvm_create_java_string_from_pool(2339);
+    _r1.o = xmlvm_create_java_string_from_pool(2342);
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     goto label22;
     label61:;
     XMLVM_SOURCE_POSITION("DomEvent.java", 198)
     // ", AT TARGET"
-    _r1.o = xmlvm_create_java_string_from_pool(2340);
+    _r1.o = xmlvm_create_java_string_from_pool(2343);
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     goto label22;
     label67:;
     XMLVM_SOURCE_POSITION("DomEvent.java", 201)
     // ", BUBBLING"
-    _r1.o = xmlvm_create_java_string_from_pool(2341);
+    _r1.o = xmlvm_create_java_string_from_pool(2344);
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     goto label22;

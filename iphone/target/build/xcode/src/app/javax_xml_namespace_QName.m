@@ -656,10 +656,10 @@ JAVA_OBJECT javax_xml_namespace_QName_toString__(JAVA_OBJECT me)
     _r2.o = me;
     XMLVM_SOURCE_POSITION("QName.java", 129)
     java_lang_Object_acquireLockRecursive__(_r2.o);
-    XMLVM_TRY_BEGIN(w20954aaac14b1b4)
+    XMLVM_TRY_BEGIN(w20985aaac14b1b4)
     // Begin try
     _r0.o = ((javax_xml_namespace_QName*) _r2.o)->fields.javax_xml_namespace_QName.qName_;
-    if (_r0.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w20954aaac14b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w20954aaac14b1b4, sizeof(XMLVM_JMP_BUF)); goto label62; };
+    if (_r0.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w20985aaac14b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w20985aaac14b1b4, sizeof(XMLVM_JMP_BUF)); goto label62; };
     XMLVM_SOURCE_POSITION("QName.java", 131)
     _r0.o = __NEW_gnu_java_lang_CPStringBuilder();
     XMLVM_CHECK_NPE(0)
@@ -669,7 +669,7 @@ JAVA_OBJECT javax_xml_namespace_QName_toString__(JAVA_OBJECT me)
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[8])(_r1.o);
-    if (_r1.i <= 0) { XMLVM_MEMCPY(curThread_w20954aaac14b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w20954aaac14b1b4, sizeof(XMLVM_JMP_BUF)); goto label33; };
+    if (_r1.i <= 0) { XMLVM_MEMCPY(curThread_w20985aaac14b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w20985aaac14b1b4, sizeof(XMLVM_JMP_BUF)); goto label33; };
     XMLVM_SOURCE_POSITION("QName.java", 134)
     _r1.i = 123;
     //gnu_java_lang_CPStringBuilder_append___char[6]
@@ -686,19 +686,19 @@ JAVA_OBJECT javax_xml_namespace_QName_toString__(JAVA_OBJECT me)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((gnu_java_lang_CPStringBuilder*) _r0.o)->tib->vtable[6])(_r0.o, _r1.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w20954aaac14b1b4)
-        XMLVM_CATCH_SPECIFIC(w20954aaac14b1b4,java_lang_Object,66)
-    XMLVM_CATCH_END(w20954aaac14b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w20954aaac14b1b4)
+    XMLVM_CATCH_BEGIN(w20985aaac14b1b4)
+        XMLVM_CATCH_SPECIFIC(w20985aaac14b1b4,java_lang_Object,66)
+    XMLVM_CATCH_END(w20985aaac14b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w20985aaac14b1b4)
     label33:;
-    XMLVM_TRY_BEGIN(w20954aaac14b1b6)
+    XMLVM_TRY_BEGIN(w20985aaac14b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("QName.java", 138)
     _r1.o = ((javax_xml_namespace_QName*) _r2.o)->fields.javax_xml_namespace_QName.prefix_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[8])(_r1.o);
-    if (_r1.i <= 0) { XMLVM_MEMCPY(curThread_w20954aaac14b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w20954aaac14b1b6, sizeof(XMLVM_JMP_BUF)); goto label51; };
+    if (_r1.i <= 0) { XMLVM_MEMCPY(curThread_w20985aaac14b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w20985aaac14b1b6, sizeof(XMLVM_JMP_BUF)); goto label51; };
     XMLVM_SOURCE_POSITION("QName.java", 140)
     _r1.o = ((javax_xml_namespace_QName*) _r2.o)->fields.javax_xml_namespace_QName.prefix_;
     XMLVM_CHECK_NPE(0)
@@ -710,12 +710,12 @@ JAVA_OBJECT javax_xml_namespace_QName_toString__(JAVA_OBJECT me)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((gnu_java_lang_CPStringBuilder*) _r0.o)->tib->vtable[6])(_r0.o, _r1.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w20954aaac14b1b6)
-        XMLVM_CATCH_SPECIFIC(w20954aaac14b1b6,java_lang_Object,66)
-    XMLVM_CATCH_END(w20954aaac14b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w20954aaac14b1b6)
+    XMLVM_CATCH_BEGIN(w20985aaac14b1b6)
+        XMLVM_CATCH_SPECIFIC(w20985aaac14b1b6,java_lang_Object,66)
+    XMLVM_CATCH_END(w20985aaac14b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w20985aaac14b1b6)
     label51:;
-    XMLVM_TRY_BEGIN(w20954aaac14b1b8)
+    XMLVM_TRY_BEGIN(w20985aaac14b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("QName.java", 143)
     _r1.o = ((javax_xml_namespace_QName*) _r2.o)->fields.javax_xml_namespace_QName.localPart_;
@@ -728,27 +728,27 @@ JAVA_OBJECT javax_xml_namespace_QName_toString__(JAVA_OBJECT me)
     ((javax_xml_namespace_QName*) _r2.o)->fields.javax_xml_namespace_QName.qName_ = _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w20954aaac14b1b8)
-        XMLVM_CATCH_SPECIFIC(w20954aaac14b1b8,java_lang_Object,66)
-    XMLVM_CATCH_END(w20954aaac14b1b8)
-    XMLVM_RESTORE_EXCEPTION_ENV(w20954aaac14b1b8)
+    XMLVM_CATCH_BEGIN(w20985aaac14b1b8)
+        XMLVM_CATCH_SPECIFIC(w20985aaac14b1b8,java_lang_Object,66)
+    XMLVM_CATCH_END(w20985aaac14b1b8)
+    XMLVM_RESTORE_EXCEPTION_ENV(w20985aaac14b1b8)
     label62:;
-    XMLVM_TRY_BEGIN(w20954aaac14b1c10)
+    XMLVM_TRY_BEGIN(w20985aaac14b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("QName.java", 146)
     _r0.o = ((javax_xml_namespace_QName*) _r2.o)->fields.javax_xml_namespace_QName.qName_;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w20954aaac14b1c10)
-        XMLVM_CATCH_SPECIFIC(w20954aaac14b1c10,java_lang_Object,66)
-    XMLVM_CATCH_END(w20954aaac14b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w20954aaac14b1c10)
+    XMLVM_CATCH_BEGIN(w20985aaac14b1c10)
+        XMLVM_CATCH_SPECIFIC(w20985aaac14b1c10,java_lang_Object,66)
+    XMLVM_CATCH_END(w20985aaac14b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w20985aaac14b1c10)
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label66:;
-    java_lang_Thread* curThread_w20954aaac14b1c14 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w20954aaac14b1c14->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w20985aaac14b1c14 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w20985aaac14b1c14->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER
@@ -772,7 +772,7 @@ JAVA_OBJECT javax_xml_namespace_QName_valueOf___java_lang_String(JAVA_OBJECT n1)
     XMLVM_SOURCE_POSITION("QName.java", 152)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "qNameAsString can't be null"
-    _r1.o = xmlvm_create_java_string_from_pool(1509);
+    _r1.o = xmlvm_create_java_string_from_pool(1512);
     XMLVM_CHECK_NPE(0)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)

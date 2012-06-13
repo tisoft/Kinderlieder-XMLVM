@@ -760,7 +760,7 @@ void gnu_xml_transform_StreamSerializer___CLINIT_()
     // "readonly"
     _r5.o = xmlvm_create_java_string_from_pool(153);
     // "ismap"
-    _r4.o = xmlvm_create_java_string_from_pool(1693);
+    _r4.o = xmlvm_create_java_string_from_pool(1696);
     // "disabled"
     _r3.o = xmlvm_create_java_string_from_pool(150);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 82)
@@ -774,7 +774,7 @@ void gnu_xml_transform_StreamSerializer___CLINIT_()
     java_util_HashSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 88)
     // "nohref"
-    _r1.o = xmlvm_create_java_string_from_pool(1377);
+    _r1.o = xmlvm_create_java_string_from_pool(1380);
     //java_util_HashSet_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_HashSet*) _r0.o)->tib->vtable[7])(_r0.o, _r1.o);
@@ -790,7 +790,7 @@ void gnu_xml_transform_StreamSerializer___CLINIT_()
     java_util_HashSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 92)
     // "ismap"
-    _r1.o = xmlvm_create_java_string_from_pool(1693);
+    _r1.o = xmlvm_create_java_string_from_pool(1696);
     //java_util_HashSet_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_HashSet*) _r0.o)->tib->vtable[7])(_r0.o, _r4.o);
@@ -806,7 +806,7 @@ void gnu_xml_transform_StreamSerializer___CLINIT_()
     java_util_HashSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 96)
     // "declare"
-    _r1.o = xmlvm_create_java_string_from_pool(1694);
+    _r1.o = xmlvm_create_java_string_from_pool(1697);
     //java_util_HashSet_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_HashSet*) _r0.o)->tib->vtable[7])(_r0.o, _r1.o);
@@ -822,14 +822,14 @@ void gnu_xml_transform_StreamSerializer___CLINIT_()
     java_util_HashSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 100)
     // "noshade"
-    _r1.o = xmlvm_create_java_string_from_pool(1695);
+    _r1.o = xmlvm_create_java_string_from_pool(1698);
     //java_util_HashSet_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_HashSet*) _r0.o)->tib->vtable[7])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 101)
     _r1.o = gnu_xml_transform_StreamSerializer_GET_HTML_BOOLEAN_ATTRIBUTES();
     // "hr"
-    _r2.o = xmlvm_create_java_string_from_pool(1696);
+    _r2.o = xmlvm_create_java_string_from_pool(1699);
     XMLVM_CHECK_NPE(1)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_put___java_lang_Object_java_lang_Object])(_r1.o, _r2.o, _r0.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 103)
@@ -845,7 +845,7 @@ void gnu_xml_transform_StreamSerializer___CLINIT_()
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 105)
     _r1.o = gnu_xml_transform_StreamSerializer_GET_HTML_BOOLEAN_ATTRIBUTES();
     // "dl"
-    _r2.o = xmlvm_create_java_string_from_pool(1697);
+    _r2.o = xmlvm_create_java_string_from_pool(1700);
     XMLVM_CHECK_NPE(1)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_put___java_lang_Object_java_lang_Object])(_r1.o, _r2.o, _r0.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 106)
@@ -878,7 +878,7 @@ void gnu_xml_transform_StreamSerializer___CLINIT_()
     java_util_HashSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 112)
     // "checked"
-    _r1.o = xmlvm_create_java_string_from_pool(1698);
+    _r1.o = xmlvm_create_java_string_from_pool(1701);
     //java_util_HashSet_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_HashSet*) _r0.o)->tib->vtable[7])(_r0.o, _r1.o);
@@ -896,7 +896,7 @@ void gnu_xml_transform_StreamSerializer___CLINIT_()
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_HashSet*) _r0.o)->tib->vtable[7])(_r0.o, _r5.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 115)
     // "ismap"
-    _r1.o = xmlvm_create_java_string_from_pool(1693);
+    _r1.o = xmlvm_create_java_string_from_pool(1696);
     //java_util_HashSet_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_HashSet*) _r0.o)->tib->vtable[7])(_r0.o, _r4.o);
@@ -912,7 +912,7 @@ void gnu_xml_transform_StreamSerializer___CLINIT_()
     java_util_HashSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 119)
     // "multiple"
-    _r1.o = xmlvm_create_java_string_from_pool(987);
+    _r1.o = xmlvm_create_java_string_from_pool(990);
     //java_util_HashSet_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_HashSet*) _r0.o)->tib->vtable[7])(_r0.o, _r1.o);
@@ -950,7 +950,7 @@ void gnu_xml_transform_StreamSerializer___CLINIT_()
     java_util_HashSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 128)
     // "selected"
-    _r1.o = xmlvm_create_java_string_from_pool(1379);
+    _r1.o = xmlvm_create_java_string_from_pool(1382);
     //java_util_HashSet_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_HashSet*) _r0.o)->tib->vtable[7])(_r0.o, _r1.o);
@@ -1010,7 +1010,7 @@ void gnu_xml_transform_StreamSerializer___CLINIT_()
     java_util_HashSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 142)
     // "nowrap"
-    _r1.o = xmlvm_create_java_string_from_pool(1699);
+    _r1.o = xmlvm_create_java_string_from_pool(1702);
     //java_util_HashSet_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_HashSet*) _r0.o)->tib->vtable[7])(_r0.o, _r1.o);
@@ -1032,7 +1032,7 @@ void gnu_xml_transform_StreamSerializer___CLINIT_()
     java_util_HashSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 147)
     // "noresize"
-    _r1.o = xmlvm_create_java_string_from_pool(1700);
+    _r1.o = xmlvm_create_java_string_from_pool(1703);
     //java_util_HashSet_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_HashSet*) _r0.o)->tib->vtable[7])(_r0.o, _r1.o);
@@ -1297,7 +1297,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 225)
     _r4.o = __NEW_java_lang_NullPointerException();
     // "no output stream"
-    _r5.o = xmlvm_create_java_string_from_pool(1701);
+    _r5.o = xmlvm_create_java_string_from_pool(1704);
     XMLVM_CHECK_NPE(4)
     java_lang_NullPointerException___INIT____java_lang_String(_r4.o, _r5.o);
     XMLVM_THROW_CUSTOM(_r4.o)
@@ -1337,7 +1337,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     _r4.o = java_lang_System_GET_err();
     _r6.o = __NEW_java_lang_StringBuilder();
     // "Unhandled node type: "
-    _r7.o = xmlvm_create_java_string_from_pool(1702);
+    _r7.o = xmlvm_create_java_string_from_pool(1705);
     XMLVM_CHECK_NPE(6)
     java_lang_StringBuilder___INIT____java_lang_String(_r6.o, _r7.o);
     XMLVM_CHECK_NPE(6)
@@ -1826,9 +1826,9 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r20.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeValue__])(_r20.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 328)
     // "yes"
-    _r5.o = xmlvm_create_java_string_from_pool(1581);
+    _r5.o = xmlvm_create_java_string_from_pool(1584);
     // "disable-output-escaping"
-    _r6.o = xmlvm_create_java_string_from_pool(1703);
+    _r6.o = xmlvm_create_java_string_from_pool(1706);
     _r0 = _r20;
     _r1 = _r6;
     XMLVM_CHECK_NPE(0)
@@ -1883,7 +1883,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 346)
     _r4.o = __NEW_java_lang_StringBuilder();
     // "<![CDATA["
-    _r6.o = xmlvm_create_java_string_from_pool(1532);
+    _r6.o = xmlvm_create_java_string_from_pool(1535);
     XMLVM_CHECK_NPE(4)
     java_lang_StringBuilder___INIT____java_lang_String(_r4.o, _r6.o);
     XMLVM_CHECK_NPE(4)
@@ -1914,7 +1914,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 341)
     _r7.o = __NEW_java_lang_StringBuilder();
     // "<![CDATA["
-    _r8.o = xmlvm_create_java_string_from_pool(1532);
+    _r8.o = xmlvm_create_java_string_from_pool(1535);
     XMLVM_CHECK_NPE(7)
     java_lang_StringBuilder___INIT____java_lang_String(_r7.o, _r8.o);
     XMLVM_CHECK_NPE(7)
@@ -1952,7 +1952,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 349)
     _r4.o = __NEW_java_lang_StringBuilder();
     // "<!--"
-    _r5.o = xmlvm_create_java_string_from_pool(1530);
+    _r5.o = xmlvm_create_java_string_from_pool(1533);
     XMLVM_CHECK_NPE(4)
     java_lang_StringBuilder___INIT____java_lang_String(_r4.o, _r5.o);
     XMLVM_CHECK_NPE(20)
@@ -1960,7 +1960,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     XMLVM_CHECK_NPE(4)
     _r4.o = java_lang_StringBuilder_append___java_lang_String(_r4.o, _r5.o);
     // "-->"
-    _r5.o = xmlvm_create_java_string_from_pool(1704);
+    _r5.o = xmlvm_create_java_string_from_pool(1707);
     XMLVM_CHECK_NPE(4)
     _r4.o = java_lang_StringBuilder_append___java_lang_String(_r4.o, _r5.o);
     //java_lang_StringBuilder_toString__[5]
@@ -2007,7 +2007,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     if (_r4.i != 0) goto label1179;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 359)
     // "UTF-16"
-    _r4.o = xmlvm_create_java_string_from_pool(1019);
+    _r4.o = xmlvm_create_java_string_from_pool(1022);
     _r0 = _r19;
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r0.o)->fields.gnu_xml_transform_StreamSerializer.encoding_;
     _r5 = _r0;
@@ -2031,9 +2031,9 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     label919:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 364)
     // "yes"
-    _r4.o = xmlvm_create_java_string_from_pool(1581);
+    _r4.o = xmlvm_create_java_string_from_pool(1584);
     // "omit-xml-declaration"
-    _r5.o = xmlvm_create_java_string_from_pool(1705);
+    _r5.o = xmlvm_create_java_string_from_pool(1708);
     _r0 = _r20;
     _r1 = _r5;
     XMLVM_CHECK_NPE(0)
@@ -2068,7 +2068,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     if (_r4.o != JAVA_NULL) goto label975;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 371)
     // "version"
-    _r4.o = xmlvm_create_java_string_from_pool(1499);
+    _r4.o = xmlvm_create_java_string_from_pool(1502);
     _r0 = _r20;
     _r1 = _r4;
     XMLVM_CHECK_NPE(0)
@@ -2097,7 +2097,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     (*(void (*)(JAVA_OBJECT, JAVA_INT)) ((java_io_OutputStream*) _r0.o)->tib->vtable[11])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 376)
     // "xml version=\042"
-    _r6.o = xmlvm_create_java_string_from_pool(1706);
+    _r6.o = xmlvm_create_java_string_from_pool(1709);
     // "US-ASCII"
     _r7.o = xmlvm_create_java_string_from_pool(551);
     XMLVM_CHECK_NPE(6)
@@ -2135,7 +2135,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     if (_r4.i != 0) goto label1081;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 381)
     // " encoding=\042"
-    _r4.o = xmlvm_create_java_string_from_pool(1707);
+    _r4.o = xmlvm_create_java_string_from_pool(1710);
     // "US-ASCII"
     _r6.o = xmlvm_create_java_string_from_pool(551);
     XMLVM_CHECK_NPE(4)
@@ -2174,9 +2174,9 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     label1089:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 386)
     // "yes"
-    _r4.o = xmlvm_create_java_string_from_pool(1581);
+    _r4.o = xmlvm_create_java_string_from_pool(1584);
     // "standalone"
-    _r5.o = xmlvm_create_java_string_from_pool(1579);
+    _r5.o = xmlvm_create_java_string_from_pool(1582);
     _r0 = _r20;
     _r1 = _r5;
     XMLVM_CHECK_NPE(0)
@@ -2188,7 +2188,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     label1106:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 387)
     // " standalone=\042yes\042"
-    _r4.o = xmlvm_create_java_string_from_pool(1708);
+    _r4.o = xmlvm_create_java_string_from_pool(1711);
     // "US-ASCII"
     _r5.o = xmlvm_create_java_string_from_pool(551);
     XMLVM_CHECK_NPE(4)
@@ -2256,7 +2256,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     if (_r4.i != _r5.i) goto label1154;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 398)
     // "media-type"
-    _r4.o = xmlvm_create_java_string_from_pool(1709);
+    _r4.o = xmlvm_create_java_string_from_pool(1712);
     _r0 = _r20;
     _r1 = _r4;
     XMLVM_CHECK_NPE(0)
@@ -2266,7 +2266,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     if (_r4.o != JAVA_NULL) goto label1202;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 400)
     // "text/html"
-    _r4.o = xmlvm_create_java_string_from_pool(1388);
+    _r4.o = xmlvm_create_java_string_from_pool(1391);
     label1202:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 401)
     _r5.o = __NEW_java_lang_StringBuilder();
@@ -2274,7 +2274,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder___INIT____java_lang_String(_r5.o, _r4.o);
     // "; charset="
-    _r4.o = xmlvm_create_java_string_from_pool(1710);
+    _r4.o = xmlvm_create_java_string_from_pool(1713);
     XMLVM_CHECK_NPE(5)
     _r4.o = java_lang_StringBuilder_append___java_lang_String(_r5.o, _r4.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 402)
@@ -2381,7 +2381,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r9.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_NamedNodeMap_setNamedItem___org_w3c_dom_Node])(_r9.o, _r6.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 471)
     // "Content-Type"
-    _r9.o = xmlvm_create_java_string_from_pool(1711);
+    _r9.o = xmlvm_create_java_string_from_pool(1714);
     XMLVM_CHECK_NPE(6)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r6.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_setNodeValue___java_lang_String])(_r6.o, _r9.o);
     _r6 = _r8;
@@ -2484,7 +2484,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     if (_r12.i < _r11.i) goto label1468;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 452)
     // "Content-Type"
-    _r10.o = xmlvm_create_java_string_from_pool(1711);
+    _r10.o = xmlvm_create_java_string_from_pool(1714);
     XMLVM_CHECK_NPE(10)
     _r10.i = java_lang_String_equalsIgnoreCase___java_lang_String(_r10.o, _r14.o);
     if (_r10.i == 0) goto label1509;
@@ -2554,7 +2554,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     (*(void (*)(JAVA_OBJECT, JAVA_INT)) ((java_io_OutputStream*) _r0.o)->tib->vtable[11])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 491)
     // "DOCTYPE "
-    _r4.o = xmlvm_create_java_string_from_pool(1712);
+    _r4.o = xmlvm_create_java_string_from_pool(1715);
     _r0 = _r19;
     _r1 = _r4;
     XMLVM_CHECK_NPE(0)
@@ -2584,7 +2584,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     if (_r4.o == JAVA_NULL) goto label1620;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 497)
     // " PUBLIC "
-    _r5.o = xmlvm_create_java_string_from_pool(1713);
+    _r5.o = xmlvm_create_java_string_from_pool(1716);
     _r0 = _r19;
     _r1 = _r5;
     XMLVM_CHECK_NPE(0)
@@ -2626,7 +2626,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     if (_r4.o == JAVA_NULL) goto label1670;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 505)
     // " SYSTEM "
-    _r5.o = xmlvm_create_java_string_from_pool(1714);
+    _r5.o = xmlvm_create_java_string_from_pool(1717);
     _r0 = _r19;
     _r1 = _r5;
     XMLVM_CHECK_NPE(0)
@@ -2703,7 +2703,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 519)
     _r4.o = __NEW_java_lang_StringBuilder();
     // "&"
-    _r5.o = xmlvm_create_java_string_from_pool(1659);
+    _r5.o = xmlvm_create_java_string_from_pool(1662);
     XMLVM_CHECK_NPE(4)
     java_lang_StringBuilder___INIT____java_lang_String(_r4.o, _r5.o);
     XMLVM_CHECK_NPE(20)
@@ -2711,7 +2711,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     XMLVM_CHECK_NPE(4)
     _r4.o = java_lang_StringBuilder_append___java_lang_String(_r4.o, _r5.o);
     // ";"
-    _r5.o = xmlvm_create_java_string_from_pool(1660);
+    _r5.o = xmlvm_create_java_string_from_pool(1663);
     XMLVM_CHECK_NPE(4)
     _r4.o = java_lang_StringBuilder_append___java_lang_String(_r4.o, _r5.o);
     //java_lang_StringBuilder_toString__[5]
@@ -2732,7 +2732,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 523)
     _r4.o = __NEW_java_lang_StringBuilder();
     // "<?"
-    _r5.o = xmlvm_create_java_string_from_pool(1531);
+    _r5.o = xmlvm_create_java_string_from_pool(1534);
     XMLVM_CHECK_NPE(4)
     java_lang_StringBuilder___INIT____java_lang_String(_r4.o, _r5.o);
     XMLVM_CHECK_NPE(20)
@@ -3150,7 +3150,7 @@ JAVA_OBJECT gnu_xml_transform_StreamSerializer_encodeText___java_lang_String(JAV
     _r4.o = java_lang_Integer_toHexString___int(_r4.i);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 609)
     // "&#x"
-    _r5.o = xmlvm_create_java_string_from_pool(1715);
+    _r5.o = xmlvm_create_java_string_from_pool(1718);
     XMLVM_CHECK_NPE(1)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r1.o, _r5.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 610)
@@ -3274,7 +3274,7 @@ JAVA_OBJECT gnu_xml_transform_StreamSerializer_encode___java_lang_String_boolean
     label36:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 661)
     // "&lt;"
-    _r3.o = xmlvm_create_java_string_from_pool(1716);
+    _r3.o = xmlvm_create_java_string_from_pool(1719);
     XMLVM_CHECK_NPE(2)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r2.o, _r3.o);
     label41:;
@@ -3295,7 +3295,7 @@ JAVA_OBJECT gnu_xml_transform_StreamSerializer_encode___java_lang_String_boolean
     label59:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 667)
     // "&gt;"
-    _r3.o = xmlvm_create_java_string_from_pool(1717);
+    _r3.o = xmlvm_create_java_string_from_pool(1720);
     XMLVM_CHECK_NPE(2)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r2.o, _r3.o);
     goto label41;
@@ -3333,7 +3333,7 @@ JAVA_OBJECT gnu_xml_transform_StreamSerializer_encode___java_lang_String_boolean
     label102:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 681)
     // "&amp;"
-    _r3.o = xmlvm_create_java_string_from_pool(1718);
+    _r3.o = xmlvm_create_java_string_from_pool(1721);
     XMLVM_CHECK_NPE(2)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r2.o, _r3.o);
     goto label41;
@@ -3356,14 +3356,14 @@ JAVA_OBJECT gnu_xml_transform_StreamSerializer_encode___java_lang_String_boolean
     if (_r3.i != _r7.i) goto label135;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 690)
     // "&#x27;"
-    _r3.o = xmlvm_create_java_string_from_pool(1719);
+    _r3.o = xmlvm_create_java_string_from_pool(1722);
     XMLVM_CHECK_NPE(2)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r2.o, _r3.o);
     goto label41;
     label135:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 692)
     // "&apos;"
-    _r3.o = xmlvm_create_java_string_from_pool(1720);
+    _r3.o = xmlvm_create_java_string_from_pool(1723);
     XMLVM_CHECK_NPE(2)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r2.o, _r3.o);
     goto label41;
@@ -3383,7 +3383,7 @@ JAVA_OBJECT gnu_xml_transform_StreamSerializer_encode___java_lang_String_boolean
     label158:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 698)
     // "&quot;"
-    _r3.o = xmlvm_create_java_string_from_pool(1721);
+    _r3.o = xmlvm_create_java_string_from_pool(1724);
     XMLVM_CHECK_NPE(2)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r2.o, _r3.o);
     goto label41;
@@ -3459,7 +3459,7 @@ JAVA_OBJECT gnu_xml_transform_StreamSerializer_toString___org_w3c_dom_Node(JAVA_
     _r0.o = __NEW_java_io_ByteArrayOutputStream();
     XMLVM_CHECK_NPE(0)
     java_io_ByteArrayOutputStream___INIT___(_r0.o);
-    XMLVM_TRY_BEGIN(w22687aaac34b1b6)
+    XMLVM_TRY_BEGIN(w22718aaac34b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 725)
     //gnu_xml_transform_StreamSerializer_serialize___org_w3c_dom_Node_java_io_OutputStream[6]
@@ -3474,16 +3474,16 @@ JAVA_OBJECT gnu_xml_transform_StreamSerializer_toString___org_w3c_dom_Node(JAVA_
     java_lang_String___INIT____byte_1ARRAY_java_lang_String(_r1.o, _r0.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w22687aaac34b1b6)
-        XMLVM_CATCH_SPECIFIC(w22687aaac34b1b6,java_io_IOException,20)
-    XMLVM_CATCH_END(w22687aaac34b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w22687aaac34b1b6)
+    XMLVM_CATCH_BEGIN(w22718aaac34b1b6)
+        XMLVM_CATCH_SPECIFIC(w22718aaac34b1b6,java_io_IOException,20)
+    XMLVM_CATCH_END(w22718aaac34b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w22718aaac34b1b6)
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label20:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 728)
-    java_lang_Thread* curThread_w22687aaac34b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w22687aaac34b1c10->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w22718aaac34b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w22718aaac34b1c10->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 730)
     _r1.o = __NEW_java_lang_RuntimeException();
     //java_io_IOException_getMessage__[7]
@@ -3664,482 +3664,482 @@ JAVA_OBJECT gnu_xml_transform_StreamSerializer_getHTMLCharacterEntity___char(JAV
     label5:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 754)
     // "nbsp"
-    _r0.o = xmlvm_create_java_string_from_pool(1722);
+    _r0.o = xmlvm_create_java_string_from_pool(1725);
     goto label4;
     label8:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 755)
     // "iexcl"
-    _r0.o = xmlvm_create_java_string_from_pool(1723);
+    _r0.o = xmlvm_create_java_string_from_pool(1726);
     goto label4;
     label11:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 756)
     // "cent"
-    _r0.o = xmlvm_create_java_string_from_pool(1724);
+    _r0.o = xmlvm_create_java_string_from_pool(1727);
     goto label4;
     label14:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 757)
     // "pound"
-    _r0.o = xmlvm_create_java_string_from_pool(1725);
+    _r0.o = xmlvm_create_java_string_from_pool(1728);
     goto label4;
     label17:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 758)
     // "curren"
-    _r0.o = xmlvm_create_java_string_from_pool(1726);
+    _r0.o = xmlvm_create_java_string_from_pool(1729);
     goto label4;
     label20:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 759)
     // "yen"
-    _r0.o = xmlvm_create_java_string_from_pool(1727);
+    _r0.o = xmlvm_create_java_string_from_pool(1730);
     goto label4;
     label23:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 760)
     // "brvbar"
-    _r0.o = xmlvm_create_java_string_from_pool(1728);
+    _r0.o = xmlvm_create_java_string_from_pool(1731);
     goto label4;
     label26:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 761)
     // "sect"
-    _r0.o = xmlvm_create_java_string_from_pool(1729);
+    _r0.o = xmlvm_create_java_string_from_pool(1732);
     goto label4;
     label29:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 762)
     // "uml"
-    _r0.o = xmlvm_create_java_string_from_pool(1730);
+    _r0.o = xmlvm_create_java_string_from_pool(1733);
     goto label4;
     label32:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 763)
     // "copy"
-    _r0.o = xmlvm_create_java_string_from_pool(1731);
+    _r0.o = xmlvm_create_java_string_from_pool(1734);
     goto label4;
     label35:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 764)
     // "ordf"
-    _r0.o = xmlvm_create_java_string_from_pool(1732);
+    _r0.o = xmlvm_create_java_string_from_pool(1735);
     goto label4;
     label38:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 765)
     // "laquo"
-    _r0.o = xmlvm_create_java_string_from_pool(1733);
+    _r0.o = xmlvm_create_java_string_from_pool(1736);
     goto label4;
     label41:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 766)
     // "not"
-    _r0.o = xmlvm_create_java_string_from_pool(1734);
+    _r0.o = xmlvm_create_java_string_from_pool(1737);
     goto label4;
     label44:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 767)
     // "shy"
-    _r0.o = xmlvm_create_java_string_from_pool(1735);
+    _r0.o = xmlvm_create_java_string_from_pool(1738);
     goto label4;
     label47:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 768)
     // "reg"
-    _r0.o = xmlvm_create_java_string_from_pool(1736);
+    _r0.o = xmlvm_create_java_string_from_pool(1739);
     goto label4;
     label50:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 769)
     // "macr"
-    _r0.o = xmlvm_create_java_string_from_pool(1737);
+    _r0.o = xmlvm_create_java_string_from_pool(1740);
     goto label4;
     label53:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 770)
     // "deg"
-    _r0.o = xmlvm_create_java_string_from_pool(1738);
+    _r0.o = xmlvm_create_java_string_from_pool(1741);
     goto label4;
     label56:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 771)
     // "plusmn"
-    _r0.o = xmlvm_create_java_string_from_pool(1739);
+    _r0.o = xmlvm_create_java_string_from_pool(1742);
     goto label4;
     label59:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 772)
     // "sup2"
-    _r0.o = xmlvm_create_java_string_from_pool(1740);
+    _r0.o = xmlvm_create_java_string_from_pool(1743);
     goto label4;
     label62:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 773)
     // "sup3"
-    _r0.o = xmlvm_create_java_string_from_pool(1741);
+    _r0.o = xmlvm_create_java_string_from_pool(1744);
     goto label4;
     label65:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 774)
     // "acute"
-    _r0.o = xmlvm_create_java_string_from_pool(1742);
+    _r0.o = xmlvm_create_java_string_from_pool(1745);
     goto label4;
     label68:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 775)
     // "micro"
-    _r0.o = xmlvm_create_java_string_from_pool(1743);
+    _r0.o = xmlvm_create_java_string_from_pool(1746);
     goto label4;
     label71:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 776)
     // "para"
-    _r0.o = xmlvm_create_java_string_from_pool(1744);
+    _r0.o = xmlvm_create_java_string_from_pool(1747);
     goto label4;
     label74:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 777)
     // "middot"
-    _r0.o = xmlvm_create_java_string_from_pool(1745);
+    _r0.o = xmlvm_create_java_string_from_pool(1748);
     goto label4;
     label77:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 778)
     // "cedil"
-    _r0.o = xmlvm_create_java_string_from_pool(1746);
+    _r0.o = xmlvm_create_java_string_from_pool(1749);
     goto label4;
     label80:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 779)
     // "sup1"
-    _r0.o = xmlvm_create_java_string_from_pool(1747);
+    _r0.o = xmlvm_create_java_string_from_pool(1750);
     goto label4;
     label83:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 780)
     // "ordm"
-    _r0.o = xmlvm_create_java_string_from_pool(1748);
+    _r0.o = xmlvm_create_java_string_from_pool(1751);
     goto label4;
     label86:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 781)
     // "raquo"
-    _r0.o = xmlvm_create_java_string_from_pool(1749);
+    _r0.o = xmlvm_create_java_string_from_pool(1752);
     goto label4;
     label89:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 782)
     // "frac14"
-    _r0.o = xmlvm_create_java_string_from_pool(1750);
+    _r0.o = xmlvm_create_java_string_from_pool(1753);
     goto label4;
     label92:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 783)
     // "frac12"
-    _r0.o = xmlvm_create_java_string_from_pool(1751);
+    _r0.o = xmlvm_create_java_string_from_pool(1754);
     goto label4;
     label95:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 784)
     // "frac34"
-    _r0.o = xmlvm_create_java_string_from_pool(1752);
+    _r0.o = xmlvm_create_java_string_from_pool(1755);
     goto label4;
     label98:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 785)
     // "iquest"
-    _r0.o = xmlvm_create_java_string_from_pool(1753);
+    _r0.o = xmlvm_create_java_string_from_pool(1756);
     goto label4;
     label101:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 786)
     // "Agrave"
-    _r0.o = xmlvm_create_java_string_from_pool(1754);
+    _r0.o = xmlvm_create_java_string_from_pool(1757);
     goto label4;
     label104:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 787)
     // "Aacute"
-    _r0.o = xmlvm_create_java_string_from_pool(1755);
+    _r0.o = xmlvm_create_java_string_from_pool(1758);
     goto label4;
     label107:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 788)
     // "Acirc"
-    _r0.o = xmlvm_create_java_string_from_pool(1756);
+    _r0.o = xmlvm_create_java_string_from_pool(1759);
     goto label4;
     label110:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 789)
     // "Atilde"
-    _r0.o = xmlvm_create_java_string_from_pool(1757);
+    _r0.o = xmlvm_create_java_string_from_pool(1760);
     goto label4;
     label113:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 790)
     // "Auml"
-    _r0.o = xmlvm_create_java_string_from_pool(1758);
+    _r0.o = xmlvm_create_java_string_from_pool(1761);
     goto label4;
     label116:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 791)
     // "Aring"
-    _r0.o = xmlvm_create_java_string_from_pool(1759);
+    _r0.o = xmlvm_create_java_string_from_pool(1762);
     goto label4;
     label119:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 792)
     // "AElig"
-    _r0.o = xmlvm_create_java_string_from_pool(1760);
+    _r0.o = xmlvm_create_java_string_from_pool(1763);
     goto label4;
     label122:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 793)
     // "Ccedil"
-    _r0.o = xmlvm_create_java_string_from_pool(1761);
+    _r0.o = xmlvm_create_java_string_from_pool(1764);
     goto label4;
     label125:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 794)
     // "Egrave"
-    _r0.o = xmlvm_create_java_string_from_pool(1762);
+    _r0.o = xmlvm_create_java_string_from_pool(1765);
     goto label4;
     label128:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 795)
     // "Eacute"
-    _r0.o = xmlvm_create_java_string_from_pool(1763);
+    _r0.o = xmlvm_create_java_string_from_pool(1766);
     goto label4;
     label131:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 796)
     // "Ecirc"
-    _r0.o = xmlvm_create_java_string_from_pool(1764);
+    _r0.o = xmlvm_create_java_string_from_pool(1767);
     goto label4;
     label135:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 797)
     // "Euml"
-    _r0.o = xmlvm_create_java_string_from_pool(1765);
+    _r0.o = xmlvm_create_java_string_from_pool(1768);
     goto label4;
     label139:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 798)
     // "Igrave"
-    _r0.o = xmlvm_create_java_string_from_pool(1766);
+    _r0.o = xmlvm_create_java_string_from_pool(1769);
     goto label4;
     label143:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 799)
     // "Iacute"
-    _r0.o = xmlvm_create_java_string_from_pool(1767);
+    _r0.o = xmlvm_create_java_string_from_pool(1770);
     goto label4;
     label147:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 800)
     // "Icirc"
-    _r0.o = xmlvm_create_java_string_from_pool(1768);
+    _r0.o = xmlvm_create_java_string_from_pool(1771);
     goto label4;
     label151:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 801)
     // "Iuml"
-    _r0.o = xmlvm_create_java_string_from_pool(1769);
+    _r0.o = xmlvm_create_java_string_from_pool(1772);
     goto label4;
     label155:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 802)
     // "ETH"
-    _r0.o = xmlvm_create_java_string_from_pool(1770);
+    _r0.o = xmlvm_create_java_string_from_pool(1773);
     goto label4;
     label159:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 803)
     // "Ntilde"
-    _r0.o = xmlvm_create_java_string_from_pool(1771);
+    _r0.o = xmlvm_create_java_string_from_pool(1774);
     goto label4;
     label163:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 804)
     // "Ograve"
-    _r0.o = xmlvm_create_java_string_from_pool(1772);
+    _r0.o = xmlvm_create_java_string_from_pool(1775);
     goto label4;
     label167:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 805)
     // "Oacute"
-    _r0.o = xmlvm_create_java_string_from_pool(1773);
+    _r0.o = xmlvm_create_java_string_from_pool(1776);
     goto label4;
     label171:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 806)
     // "Ocirc"
-    _r0.o = xmlvm_create_java_string_from_pool(1774);
+    _r0.o = xmlvm_create_java_string_from_pool(1777);
     goto label4;
     label175:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 807)
     // "Otilde"
-    _r0.o = xmlvm_create_java_string_from_pool(1775);
+    _r0.o = xmlvm_create_java_string_from_pool(1778);
     goto label4;
     label179:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 808)
     // "Ouml"
-    _r0.o = xmlvm_create_java_string_from_pool(1776);
+    _r0.o = xmlvm_create_java_string_from_pool(1779);
     goto label4;
     label183:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 809)
     // "times"
-    _r0.o = xmlvm_create_java_string_from_pool(1777);
+    _r0.o = xmlvm_create_java_string_from_pool(1780);
     goto label4;
     label187:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 810)
     // "Oslash"
-    _r0.o = xmlvm_create_java_string_from_pool(1778);
+    _r0.o = xmlvm_create_java_string_from_pool(1781);
     goto label4;
     label191:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 811)
     // "Ugrave"
-    _r0.o = xmlvm_create_java_string_from_pool(1779);
+    _r0.o = xmlvm_create_java_string_from_pool(1782);
     goto label4;
     label195:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 812)
     // "Uacute"
-    _r0.o = xmlvm_create_java_string_from_pool(1780);
+    _r0.o = xmlvm_create_java_string_from_pool(1783);
     goto label4;
     label199:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 813)
     // "Ucirc"
-    _r0.o = xmlvm_create_java_string_from_pool(1781);
+    _r0.o = xmlvm_create_java_string_from_pool(1784);
     goto label4;
     label203:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 814)
     // "Uuml"
-    _r0.o = xmlvm_create_java_string_from_pool(1782);
+    _r0.o = xmlvm_create_java_string_from_pool(1785);
     goto label4;
     label207:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 815)
     // "Yacute"
-    _r0.o = xmlvm_create_java_string_from_pool(1783);
+    _r0.o = xmlvm_create_java_string_from_pool(1786);
     goto label4;
     label211:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 816)
     // "THORN"
-    _r0.o = xmlvm_create_java_string_from_pool(1784);
+    _r0.o = xmlvm_create_java_string_from_pool(1787);
     goto label4;
     label215:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 817)
     // "szlig"
-    _r0.o = xmlvm_create_java_string_from_pool(1785);
+    _r0.o = xmlvm_create_java_string_from_pool(1788);
     goto label4;
     label219:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 818)
     // "agrave"
-    _r0.o = xmlvm_create_java_string_from_pool(1786);
+    _r0.o = xmlvm_create_java_string_from_pool(1789);
     goto label4;
     label223:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 819)
     // "aacute"
-    _r0.o = xmlvm_create_java_string_from_pool(1787);
+    _r0.o = xmlvm_create_java_string_from_pool(1790);
     goto label4;
     label227:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 820)
     // "acirc"
-    _r0.o = xmlvm_create_java_string_from_pool(1788);
+    _r0.o = xmlvm_create_java_string_from_pool(1791);
     goto label4;
     label231:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 821)
     // "atilde"
-    _r0.o = xmlvm_create_java_string_from_pool(1789);
+    _r0.o = xmlvm_create_java_string_from_pool(1792);
     goto label4;
     label235:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 822)
     // "auml"
-    _r0.o = xmlvm_create_java_string_from_pool(1790);
+    _r0.o = xmlvm_create_java_string_from_pool(1793);
     goto label4;
     label239:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 823)
     // "aring"
-    _r0.o = xmlvm_create_java_string_from_pool(1791);
+    _r0.o = xmlvm_create_java_string_from_pool(1794);
     goto label4;
     label243:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 824)
     // "aelig"
-    _r0.o = xmlvm_create_java_string_from_pool(1792);
+    _r0.o = xmlvm_create_java_string_from_pool(1795);
     goto label4;
     label247:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 825)
     // "ccedil"
-    _r0.o = xmlvm_create_java_string_from_pool(1793);
+    _r0.o = xmlvm_create_java_string_from_pool(1796);
     goto label4;
     label251:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 826)
     // "egrave"
-    _r0.o = xmlvm_create_java_string_from_pool(1794);
+    _r0.o = xmlvm_create_java_string_from_pool(1797);
     goto label4;
     label255:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 827)
     // "eacute"
-    _r0.o = xmlvm_create_java_string_from_pool(1795);
+    _r0.o = xmlvm_create_java_string_from_pool(1798);
     goto label4;
     label259:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 828)
     // "ecirc"
-    _r0.o = xmlvm_create_java_string_from_pool(1796);
+    _r0.o = xmlvm_create_java_string_from_pool(1799);
     goto label4;
     label263:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 829)
     // "euml"
-    _r0.o = xmlvm_create_java_string_from_pool(1797);
+    _r0.o = xmlvm_create_java_string_from_pool(1800);
     goto label4;
     label267:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 830)
     // "igrave"
-    _r0.o = xmlvm_create_java_string_from_pool(1798);
+    _r0.o = xmlvm_create_java_string_from_pool(1801);
     goto label4;
     label271:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 831)
     // "iacute"
-    _r0.o = xmlvm_create_java_string_from_pool(1799);
+    _r0.o = xmlvm_create_java_string_from_pool(1802);
     goto label4;
     label275:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 832)
     // "icirc"
-    _r0.o = xmlvm_create_java_string_from_pool(1800);
+    _r0.o = xmlvm_create_java_string_from_pool(1803);
     goto label4;
     label279:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 833)
     // "iuml"
-    _r0.o = xmlvm_create_java_string_from_pool(1801);
+    _r0.o = xmlvm_create_java_string_from_pool(1804);
     goto label4;
     label283:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 834)
     // "eth"
-    _r0.o = xmlvm_create_java_string_from_pool(1802);
+    _r0.o = xmlvm_create_java_string_from_pool(1805);
     goto label4;
     label287:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 835)
     // "ntilde"
-    _r0.o = xmlvm_create_java_string_from_pool(1803);
+    _r0.o = xmlvm_create_java_string_from_pool(1806);
     goto label4;
     label291:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 836)
     // "ograve"
-    _r0.o = xmlvm_create_java_string_from_pool(1804);
+    _r0.o = xmlvm_create_java_string_from_pool(1807);
     goto label4;
     label295:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 837)
     // "oacute"
-    _r0.o = xmlvm_create_java_string_from_pool(1805);
+    _r0.o = xmlvm_create_java_string_from_pool(1808);
     goto label4;
     label299:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 838)
     // "ocirc"
-    _r0.o = xmlvm_create_java_string_from_pool(1806);
+    _r0.o = xmlvm_create_java_string_from_pool(1809);
     goto label4;
     label303:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 839)
     // "otilde"
-    _r0.o = xmlvm_create_java_string_from_pool(1807);
+    _r0.o = xmlvm_create_java_string_from_pool(1810);
     goto label4;
     label307:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 840)
     // "ouml"
-    _r0.o = xmlvm_create_java_string_from_pool(1808);
+    _r0.o = xmlvm_create_java_string_from_pool(1811);
     goto label4;
     label311:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 841)
     // "divide"
-    _r0.o = xmlvm_create_java_string_from_pool(1809);
+    _r0.o = xmlvm_create_java_string_from_pool(1812);
     goto label4;
     label315:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 842)
     // "oslash"
-    _r0.o = xmlvm_create_java_string_from_pool(1810);
+    _r0.o = xmlvm_create_java_string_from_pool(1813);
     goto label4;
     label319:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 843)
     // "ugrave"
-    _r0.o = xmlvm_create_java_string_from_pool(1811);
+    _r0.o = xmlvm_create_java_string_from_pool(1814);
     goto label4;
     label323:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 844)
     // "uacute"
-    _r0.o = xmlvm_create_java_string_from_pool(1812);
+    _r0.o = xmlvm_create_java_string_from_pool(1815);
     goto label4;
     label327:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 845)
     // "ucirc"
-    _r0.o = xmlvm_create_java_string_from_pool(1813);
+    _r0.o = xmlvm_create_java_string_from_pool(1816);
     goto label4;
     label331:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 846)
     // "uuml"
-    _r0.o = xmlvm_create_java_string_from_pool(1814);
+    _r0.o = xmlvm_create_java_string_from_pool(1817);
     goto label4;
     label335:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 847)
     // "yacute"
-    _r0.o = xmlvm_create_java_string_from_pool(1815);
+    _r0.o = xmlvm_create_java_string_from_pool(1818);
     goto label4;
     label339:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 848)
     // "thorn"
-    _r0.o = xmlvm_create_java_string_from_pool(1816);
+    _r0.o = xmlvm_create_java_string_from_pool(1819);
     goto label4;
     label343:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 849)
     // "yuml"
-    _r0.o = xmlvm_create_java_string_from_pool(1817);
+    _r0.o = xmlvm_create_java_string_from_pool(1820);
     goto label4;
     label348:;
     //XMLVM_END_WRAPPER

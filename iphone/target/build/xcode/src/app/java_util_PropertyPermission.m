@@ -411,7 +411,7 @@ void java_util_PropertyPermission___CLINIT_()
     _r2.o = __NEW_java_io_ObjectStreamField();
     XMLVM_SOURCE_POSITION("PropertyPermission.java", 158)
     // "actions"
-    _r3.o = xmlvm_create_java_string_from_pool(2503);
+    _r3.o = xmlvm_create_java_string_from_pool(2506);
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
     _r4.o = __CLASS_java_lang_String;
     XMLVM_CHECK_NPE(2)
@@ -466,7 +466,7 @@ void java_util_PropertyPermission_decodeActions___java_lang_String(JAVA_OBJECT m
     _r1.o = org_apache_harmony_luni_util_Util_toASCIILowerCase___java_lang_String(_r5.o);
     XMLVM_SOURCE_POSITION("PropertyPermission.java", 65)
     // " \011\012\015,"
-    _r2.o = xmlvm_create_java_string_from_pool(2504);
+    _r2.o = xmlvm_create_java_string_from_pool(2507);
     XMLVM_CHECK_NPE(0)
     java_util_StringTokenizer___INIT____java_lang_String_java_lang_String(_r0.o, _r1.o, _r2.o);
     label12:;
@@ -678,7 +678,7 @@ void java_util_PropertyPermission_writeObject___java_io_ObjectOutputStream(JAVA_
     _r0.o = java_io_ObjectOutputStream_putFields__(_r4.o);
     XMLVM_SOURCE_POSITION("PropertyPermission.java", 162)
     // "actions"
-    _r1.o = xmlvm_create_java_string_from_pool(2503);
+    _r1.o = xmlvm_create_java_string_from_pool(2506);
     //java_util_PropertyPermission_getActions__[7]
     XMLVM_CHECK_NPE(3)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_PropertyPermission*) _r3.o)->tib->vtable[7])(_r3.o);
@@ -710,7 +710,7 @@ void java_util_PropertyPermission_readObject___java_io_ObjectInputStream(JAVA_OB
     _r0.o = java_io_ObjectInputStream_readFields__(_r4.o);
     XMLVM_SOURCE_POSITION("PropertyPermission.java", 169)
     // "actions"
-    _r1.o = xmlvm_create_java_string_from_pool(2503);
+    _r1.o = xmlvm_create_java_string_from_pool(2506);
     // ""
     _r2.o = xmlvm_create_java_string_from_pool(0);
     //java_io_ObjectInputStream_GetField_get___java_lang_String_java_lang_Object[14]
