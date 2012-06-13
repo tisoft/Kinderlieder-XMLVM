@@ -129,6 +129,8 @@ public class ShopService extends Observable {
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
+        Main.library.load();
+        product.state= Product.State.AVAILABLE;
         doNotify();
     }
 
