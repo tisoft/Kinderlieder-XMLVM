@@ -9,7 +9,7 @@ import java.io.*;
 import java.nio.charset.Charset;
 import java.util.*;
 
-public class Library extends Observable{
+public class Library extends Observable {
 
     public Library() {
         load();
@@ -64,7 +64,7 @@ public class Library extends Observable{
             try {
                 loadProduct(product);
             } catch (JSONException e) {
-                System.out.println("Could not load Product "+product+" "+e.getMessage());
+                System.out.println("Could not load Product " + product + " " + e.getMessage());
             }
 
         }
@@ -94,14 +94,20 @@ public class Library extends Observable{
                         JSONArray musics = song.optJSONArray("music");
                         if (musics != null) {
                             for (int j = 0; j < musics.length(); j++) {
-                                JSONObject music=musics.getJSONObject(j);
-                                String musicName=music.getString("name");
-                                String musicFile=music.getString("file");
+                                JSONObject music = musics.getJSONObject(j);
+                                String musicName = music.getString("name");
+                                String musicFile = music.getString("file");
                                 add(id, new MusicInfo(this, musicName, new File(product, musicFile)));
                             }
                         }
                     }
-               } else {
+
+                    try {
+                        br.close();
+                    } catch (IOException e) {
+                        throw new JSONException(e);
+                    }
+                } else {
                     throw new FileNotFoundException("No info.json in " + product);
                 }
             }
