@@ -46,6 +46,8 @@ public class ShopDetailViewController extends RotatingViewController {
                     ShopDetailViewController.this.click();
                 }
             }))));
+        } else {
+            setToolbarItems(new ArrayList<UIBarButtonItem>());
         }
     }
 
