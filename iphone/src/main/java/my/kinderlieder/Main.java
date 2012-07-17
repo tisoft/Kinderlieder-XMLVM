@@ -72,19 +72,8 @@ public class Main extends UIApplicationDelegate {
         rootViewController = new RootViewController(window, library.getSongInfos());
         navigationController = new UINavigationController(rootViewController);
 		navigationController.setToolbarHidden(false);
-		/*
-		 * navigationController.setDelegate(new UINavigationControllerDelegate()
-		 * { public void willShowViewController(UINavigationController
-		 * navigationController, UIViewController viewController, boolean
-		 * animated) { }
-		 * 
-		 * public void didShowViewController(UINavigationController
-		 * navigationController, UIViewController viewController, boolean
-		 * animated) { //always stop remaining audio, if switching views if
-		 * (audioPlayer != null) audioPlayer.stop(); } });
-		 */
-		window.addSubview(navigationController.getView());
 
+        window.setRootViewController(navigationController);
 		window.makeKeyAndVisible();
 
 
