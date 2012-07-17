@@ -7,6 +7,7 @@ import org.xmlvm.iphone.*;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Map;
 
 public class Main extends UIApplicationDelegate {
 
@@ -60,7 +61,7 @@ public class Main extends UIApplicationDelegate {
     public native void registerCrashReporter();
 
 	@Override
-	public void applicationDidFinishLaunching(UIApplication app) {
+	public boolean applicationDidFinishLaunchingWithOptions(UIApplication app, Map<String, Object> launchOptions) {
         registerCrashReporter();
 		final UIWindow window = new UIWindow(org.xmlvm.iphone.UIScreen.mainScreen().getBounds());
 
