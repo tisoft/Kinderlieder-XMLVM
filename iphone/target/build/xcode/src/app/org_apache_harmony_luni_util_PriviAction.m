@@ -420,8 +420,10 @@ void org_apache_harmony_luni_util_PriviAction___INIT____int_java_lang_Object(JAV
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("PriviAction.java", 61)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_util_PriviAction*) _r0.o)->fields.org_apache_harmony_luni_util_PriviAction.action_ = _r1.i;
     XMLVM_SOURCE_POSITION("PriviAction.java", 62)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_util_PriviAction*) _r0.o)->fields.org_apache_harmony_luni_util_PriviAction.arg1_ = _r2.o;
     XMLVM_SOURCE_POSITION("PriviAction.java", 63)
     XMLVM_EXIT_METHOD()
@@ -441,6 +443,7 @@ void org_apache_harmony_luni_util_PriviAction___INIT___(JAVA_OBJECT me)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("PriviAction.java", 71)
     _r0.i = 2;
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_util_PriviAction*) _r1.o)->fields.org_apache_harmony_luni_util_PriviAction.action_ = _r0.i;
     XMLVM_SOURCE_POSITION("PriviAction.java", 72)
     XMLVM_EXIT_METHOD()
@@ -462,8 +465,10 @@ void org_apache_harmony_luni_util_PriviAction___INIT____java_lang_reflect_Access
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("PriviAction.java", 85)
     _r0.i = 3;
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_util_PriviAction*) _r1.o)->fields.org_apache_harmony_luni_util_PriviAction.action_ = _r0.i;
     XMLVM_SOURCE_POSITION("PriviAction.java", 86)
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_util_PriviAction*) _r1.o)->fields.org_apache_harmony_luni_util_PriviAction.arg1_ = _r2.o;
     XMLVM_SOURCE_POSITION("PriviAction.java", 87)
     XMLVM_EXIT_METHOD()
@@ -485,8 +490,10 @@ void org_apache_harmony_luni_util_PriviAction___INIT____java_lang_String(JAVA_OB
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("PriviAction.java", 99)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_util_PriviAction*) _r1.o)->fields.org_apache_harmony_luni_util_PriviAction.action_ = _r0.i;
     XMLVM_SOURCE_POSITION("PriviAction.java", 100)
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_util_PriviAction*) _r1.o)->fields.org_apache_harmony_luni_util_PriviAction.arg1_ = _r2.o;
     XMLVM_SOURCE_POSITION("PriviAction.java", 101)
     XMLVM_EXIT_METHOD()
@@ -510,10 +517,13 @@ void org_apache_harmony_luni_util_PriviAction___INIT____java_lang_String_java_la
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("PriviAction.java", 115)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_util_PriviAction*) _r1.o)->fields.org_apache_harmony_luni_util_PriviAction.action_ = _r0.i;
     XMLVM_SOURCE_POSITION("PriviAction.java", 116)
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_util_PriviAction*) _r1.o)->fields.org_apache_harmony_luni_util_PriviAction.arg1_ = _r2.o;
     XMLVM_SOURCE_POSITION("PriviAction.java", 117)
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_util_PriviAction*) _r1.o)->fields.org_apache_harmony_luni_util_PriviAction.arg2_ = _r3.o;
     XMLVM_SOURCE_POSITION("PriviAction.java", 118)
     XMLVM_EXIT_METHOD()
@@ -529,6 +539,7 @@ JAVA_OBJECT org_apache_harmony_luni_util_PriviAction_run__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("PriviAction.java", 127)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((org_apache_harmony_luni_util_PriviAction*) _r1.o)->fields.org_apache_harmony_luni_util_PriviAction.action_;
     switch (_r0.i) {
     case 1: goto label7;
@@ -544,14 +555,17 @@ JAVA_OBJECT org_apache_harmony_luni_util_PriviAction_run__(JAVA_OBJECT me)
     return _r0.o;
     label7:;
     XMLVM_SOURCE_POSITION("PriviAction.java", 129)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_util_PriviAction*) _r1.o)->fields.org_apache_harmony_luni_util_PriviAction.arg1_;
     _r0.o = _r0.o;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((org_apache_harmony_luni_util_PriviAction*) _r1.o)->fields.org_apache_harmony_luni_util_PriviAction.arg2_;
     _r1.o = _r1.o;
     _r0.o = java_lang_System_getProperty___java_lang_String_java_lang_String(_r0.o, _r1.o);
     goto label6;
     label20:;
     XMLVM_SOURCE_POSITION("PriviAction.java", 131)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((org_apache_harmony_luni_util_PriviAction*) _r1.o)->fields.org_apache_harmony_luni_util_PriviAction.arg1_;
     _r1.o = _r1.o;
 
@@ -568,6 +582,7 @@ JAVA_OBJECT org_apache_harmony_luni_util_PriviAction_run__(JAVA_OBJECT me)
     goto label6;
     label34:;
     XMLVM_SOURCE_POSITION("PriviAction.java", 135)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((org_apache_harmony_luni_util_PriviAction*) _r1.o)->fields.org_apache_harmony_luni_util_PriviAction.arg1_;
     _r1.o = _r1.o;
     _r0.i = 1;

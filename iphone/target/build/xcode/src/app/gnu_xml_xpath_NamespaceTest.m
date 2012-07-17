@@ -328,10 +328,13 @@ void gnu_xml_xpath_NamespaceTest___INIT____javax_xml_namespace_QName_boolean_boo
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_Test___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("NamespaceTest.java", 59)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_NamespaceTest*) _r0.o)->fields.gnu_xml_xpath_NamespaceTest.anyLocalName_ = _r2.i;
     XMLVM_SOURCE_POSITION("NamespaceTest.java", 60)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_NamespaceTest*) _r0.o)->fields.gnu_xml_xpath_NamespaceTest.any_ = _r3.i;
     XMLVM_SOURCE_POSITION("NamespaceTest.java", 61)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_NamespaceTest*) _r0.o)->fields.gnu_xml_xpath_NamespaceTest.qName_ = _r1.o;
     XMLVM_SOURCE_POSITION("NamespaceTest.java", 62)
     XMLVM_EXIT_METHOD()
@@ -347,6 +350,7 @@ JAVA_BOOLEAN gnu_xml_xpath_NamespaceTest_matchesAny__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("NamespaceTest.java", 66)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_xpath_NamespaceTest*) _r1.o)->fields.gnu_xml_xpath_NamespaceTest.any_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -361,6 +365,7 @@ JAVA_BOOLEAN gnu_xml_xpath_NamespaceTest_matchesAnyLocalName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("NamespaceTest.java", 71)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_xpath_NamespaceTest*) _r1.o)->fields.gnu_xml_xpath_NamespaceTest.anyLocalName_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -432,6 +437,7 @@ JAVA_BOOLEAN gnu_xml_xpath_NamespaceTest_matches___org_w3c_dom_Node_int_int(JAVA
     if (_r0.i == 0) goto label11;
     label49:;
     XMLVM_SOURCE_POSITION("NamespaceTest.java", 90)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((gnu_xml_xpath_NamespaceTest*) _r5.o)->fields.gnu_xml_xpath_NamespaceTest.any_;
     if (_r0.i == 0) goto label55;
     _r0 = _r3;
@@ -439,6 +445,7 @@ JAVA_BOOLEAN gnu_xml_xpath_NamespaceTest_matches___org_w3c_dom_Node_int_int(JAVA
     goto label12;
     label55:;
     XMLVM_SOURCE_POSITION("NamespaceTest.java", 92)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_xpath_NamespaceTest*) _r5.o)->fields.gnu_xml_xpath_NamespaceTest.qName_;
     XMLVM_CHECK_NPE(0)
     _r0.o = javax_xml_namespace_QName_getNamespaceURI__(_r0.o);
@@ -453,6 +460,7 @@ JAVA_BOOLEAN gnu_xml_xpath_NamespaceTest_matches___org_w3c_dom_Node_int_int(JAVA
     goto label12;
     label73:;
     XMLVM_SOURCE_POSITION("NamespaceTest.java", 96)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((gnu_xml_xpath_NamespaceTest*) _r5.o)->fields.gnu_xml_xpath_NamespaceTest.anyLocalName_;
     if (_r0.i == 0) goto label79;
     _r0 = _r3;
@@ -460,6 +468,7 @@ JAVA_BOOLEAN gnu_xml_xpath_NamespaceTest_matches___org_w3c_dom_Node_int_int(JAVA
     goto label12;
     label79:;
     XMLVM_SOURCE_POSITION("NamespaceTest.java", 98)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_xpath_NamespaceTest*) _r5.o)->fields.gnu_xml_xpath_NamespaceTest.qName_;
     XMLVM_CHECK_NPE(0)
     _r0.o = javax_xml_namespace_QName_getLocalPart__(_r0.o);
@@ -487,8 +496,11 @@ JAVA_OBJECT gnu_xml_xpath_NamespaceTest_clone___java_lang_Object(JAVA_OBJECT me,
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("NamespaceTest.java", 105)
     _r0.o = __NEW_gnu_xml_xpath_NamespaceTest();
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_xpath_NamespaceTest*) _r4.o)->fields.gnu_xml_xpath_NamespaceTest.qName_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((gnu_xml_xpath_NamespaceTest*) _r4.o)->fields.gnu_xml_xpath_NamespaceTest.anyLocalName_;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((gnu_xml_xpath_NamespaceTest*) _r4.o)->fields.gnu_xml_xpath_NamespaceTest.any_;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_NamespaceTest___INIT____javax_xml_namespace_QName_boolean_boolean(_r0.o, _r1.o, _r2.i, _r3.i);
@@ -521,6 +533,7 @@ JAVA_OBJECT gnu_xml_xpath_NamespaceTest_toString__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("NamespaceTest.java", 115)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_xpath_NamespaceTest*) _r1.o)->fields.gnu_xml_xpath_NamespaceTest.any_;
     if (_r0.i == 0) goto label7;
     XMLVM_SOURCE_POSITION("NamespaceTest.java", 116)
@@ -531,6 +544,7 @@ JAVA_OBJECT gnu_xml_xpath_NamespaceTest_toString__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label7:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_NamespaceTest*) _r1.o)->fields.gnu_xml_xpath_NamespaceTest.qName_;
     //javax_xml_namespace_QName_toString__[5]
     XMLVM_CHECK_NPE(0)

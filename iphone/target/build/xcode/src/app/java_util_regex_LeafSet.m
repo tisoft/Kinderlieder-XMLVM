@@ -292,6 +292,7 @@ void java_util_regex_LeafSet___INIT____java_util_regex_AbstractSet(JAVA_OBJECT m
     XMLVM_CHECK_NPE(1)
     java_util_regex_AbstractSet___INIT____java_util_regex_AbstractSet(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("LeafSet.java", 31)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_LeafSet*) _r1.o)->fields.java_util_regex_LeafSet.charCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("LeafSet.java", 35)
     XMLVM_CHECK_NPE(1)
@@ -314,6 +315,7 @@ void java_util_regex_LeafSet___INIT___(JAVA_OBJECT me)
     java_util_regex_AbstractSet___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("LeafSet.java", 31)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_LeafSet*) _r1.o)->fields.java_util_regex_LeafSet.charCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("LeafSet.java", 39)
     XMLVM_EXIT_METHOD()
@@ -347,6 +349,7 @@ JAVA_INT java_util_regex_LeafSet_matches___int_java_lang_CharSequence_java_util_
     if (_r0.i <= _r1.i) goto label17;
     XMLVM_SOURCE_POSITION("LeafSet.java", 55)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(6)
     ((java_util_regex_MatchResultImpl*) _r6.o)->fields.java_util_regex_MatchResultImpl.hitEnd_ = _r0.i;
     _r0 = _r2;
     label16:;
@@ -365,6 +368,7 @@ JAVA_INT java_util_regex_LeafSet_matches___int_java_lang_CharSequence_java_util_
     XMLVM_SOURCE_POSITION("LeafSet.java", 61)
     goto label16;
     label25:;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
     _r0.i = _r0.i + _r4.i;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
@@ -382,6 +386,7 @@ JAVA_INT java_util_regex_LeafSet_charCount__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("LeafSet.java", 72)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_LeafSet*) _r1.o)->fields.java_util_regex_LeafSet.charCount_;
     XMLVM_EXIT_METHOD()
     return _r0.i;

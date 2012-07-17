@@ -428,6 +428,7 @@ void gnu_xml_dom_DomXPathResult___INIT____java_lang_Object_short(JAVA_OBJECT me,
     XMLVM_CHECK_NPE(2)
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 61)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomXPathResult*) _r2.o)->fields.gnu_xml_dom_DomXPathResult.value_ = _r3.o;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 62)
     if (!__TIB_java_lang_Boolean.classInitialized) __INIT_java_lang_Boolean();
@@ -435,6 +436,7 @@ void gnu_xml_dom_DomXPathResult___INIT____java_lang_Object_short(JAVA_OBJECT me,
     if (_r0.i == 0) goto label14;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 64)
     _r0.i = 3;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomXPathResult*) _r2.o)->fields.gnu_xml_dom_DomXPathResult.type_ = _r0.i;
     label13:;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 93)
@@ -446,6 +448,7 @@ void gnu_xml_dom_DomXPathResult___INIT____java_lang_Object_short(JAVA_OBJECT me,
     _r0.i = XMLVM_ISA(_r3.o, __CLASS_java_lang_Double);
     if (_r0.i == 0) goto label21;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 68)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomXPathResult*) _r2.o)->fields.gnu_xml_dom_DomXPathResult.type_ = _r1.i;
     goto label13;
     label21:;
@@ -455,6 +458,7 @@ void gnu_xml_dom_DomXPathResult___INIT____java_lang_Object_short(JAVA_OBJECT me,
     if (_r0.i == 0) goto label29;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 72)
     _r0.i = 2;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomXPathResult*) _r2.o)->fields.gnu_xml_dom_DomXPathResult.type_ = _r0.i;
     goto label13;
     label29:;
@@ -470,11 +474,13 @@ void gnu_xml_dom_DomXPathResult___INIT____java_lang_Object_short(JAVA_OBJECT me,
     case 8: goto label47;
     }
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 85)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomXPathResult*) _r2.o)->fields.gnu_xml_dom_DomXPathResult.type_ = _r4.i;
     label40:;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 87)
     XMLVM_CHECK_NPE(3)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_iterator__])(_r3.o);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomXPathResult*) _r2.o)->fields.gnu_xml_dom_DomXPathResult.iterator_ = _r0.o;
     goto label13;
     label47:;
@@ -484,6 +490,7 @@ void gnu_xml_dom_DomXPathResult___INIT____java_lang_Object_short(JAVA_OBJECT me,
     if (_r0.i != _r1.i) goto label58;
     _r0.i = 9;
     label55:;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomXPathResult*) _r2.o)->fields.gnu_xml_dom_DomXPathResult.type_ = _r0.i;
     goto label40;
     label58:;
@@ -510,10 +517,12 @@ JAVA_BOOLEAN gnu_xml_dom_DomXPathResult_getBooleanValue__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 97)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.type_;
     _r1.i = 3;
     if (_r0.i != _r1.i) goto label14;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 99)
+    XMLVM_CHECK_NPE(3)
     _r3.o = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.value_;
     _r3.o = _r3.o;
     XMLVM_CHECK_NPE(3)
@@ -524,6 +533,7 @@ JAVA_BOOLEAN gnu_xml_dom_DomXPathResult_getBooleanValue__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 101)
     _r0.o = __NEW_org_w3c_dom_xpath_XPathException();
     _r1.i = 52;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.value_;
     //java_lang_Object_toString__[5]
     XMLVM_CHECK_NPE(2)
@@ -542,6 +552,7 @@ JAVA_BOOLEAN gnu_xml_dom_DomXPathResult_getInvalidIteratorState__(JAVA_OBJECT me
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 106)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomXPathResult*) _r1.o)->fields.gnu_xml_dom_DomXPathResult.iterator_;
     if (_r0.o != JAVA_NULL) goto label6;
     _r0.i = 1;
@@ -564,10 +575,12 @@ JAVA_DOUBLE gnu_xml_dom_DomXPathResult_getNumberValue__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 111)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.type_;
     _r1.i = 1;
     if (_r0.i != _r1.i) goto label14;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 113)
+    XMLVM_CHECK_NPE(3)
     _r3.o = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.value_;
     _r3.o = _r3.o;
     //java_lang_Double_doubleValue__[7]
@@ -579,6 +592,7 @@ JAVA_DOUBLE gnu_xml_dom_DomXPathResult_getNumberValue__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 115)
     _r0.o = __NEW_org_w3c_dom_xpath_XPathException();
     _r1.i = 52;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.value_;
     //java_lang_Object_toString__[5]
     XMLVM_CHECK_NPE(2)
@@ -597,6 +611,7 @@ JAVA_SHORT gnu_xml_dom_DomXPathResult_getResultType__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 120)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_dom_DomXPathResult*) _r1.o)->fields.gnu_xml_dom_DomXPathResult.type_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -613,6 +628,7 @@ JAVA_OBJECT gnu_xml_dom_DomXPathResult_getSingleNodeValue__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 125)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.type_;
     switch (_r0.i) {
     case 4: goto label19;
@@ -624,6 +640,7 @@ JAVA_OBJECT gnu_xml_dom_DomXPathResult_getSingleNodeValue__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 142)
     _r0.o = __NEW_org_w3c_dom_xpath_XPathException();
     _r1.i = 52;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.value_;
     //java_lang_Object_toString__[5]
     XMLVM_CHECK_NPE(2)
@@ -633,6 +650,7 @@ JAVA_OBJECT gnu_xml_dom_DomXPathResult_getSingleNodeValue__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label19:;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 132)
+    XMLVM_CHECK_NPE(3)
     _r3.o = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.value_;
     _r3.o = _r3.o;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 133)
@@ -667,6 +685,7 @@ JAVA_INT gnu_xml_dom_DomXPathResult_getSnapshotLength__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 147)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.type_;
     switch (_r0.i) {
     case 4: goto label19;
@@ -678,6 +697,7 @@ JAVA_INT gnu_xml_dom_DomXPathResult_getSnapshotLength__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 156)
     _r0.o = __NEW_org_w3c_dom_xpath_XPathException();
     _r1.i = 52;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.value_;
     //java_lang_Object_toString__[5]
     XMLVM_CHECK_NPE(2)
@@ -687,6 +707,7 @@ JAVA_INT gnu_xml_dom_DomXPathResult_getSnapshotLength__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label19:;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 154)
+    XMLVM_CHECK_NPE(3)
     _r3.o = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.value_;
     _r3.o = _r3.o;
     XMLVM_CHECK_NPE(3)
@@ -707,10 +728,12 @@ JAVA_OBJECT gnu_xml_dom_DomXPathResult_getStringValue__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 161)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.type_;
     _r1.i = 2;
     if (_r0.i != _r1.i) goto label10;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 163)
+    XMLVM_CHECK_NPE(3)
     _r3.o = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.value_;
     _r3.o = _r3.o;
     XMLVM_EXIT_METHOD()
@@ -719,6 +742,7 @@ JAVA_OBJECT gnu_xml_dom_DomXPathResult_getStringValue__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 165)
     _r0.o = __NEW_org_w3c_dom_xpath_XPathException();
     _r1.i = 52;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.value_;
     //java_lang_Object_toString__[5]
     XMLVM_CHECK_NPE(2)
@@ -740,14 +764,17 @@ JAVA_OBJECT gnu_xml_dom_DomXPathResult_iterateNext__(JAVA_OBJECT me)
     _r3.o = me;
     _r1.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 170)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.iterator_;
     if (_r0.o == JAVA_NULL) goto label27;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 172)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.iterator_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_hasNext__])(_r0.o);
     if (_r0.i == 0) goto label23;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 174)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.iterator_;
     XMLVM_CHECK_NPE(0)
     _r3.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_next__])(_r0.o);
@@ -759,6 +786,7 @@ JAVA_OBJECT gnu_xml_dom_DomXPathResult_iterateNext__(JAVA_OBJECT me)
     return _r0.o;
     label23:;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 178)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.iterator_ = _r1.o;
     _r0 = _r1;
     goto label22;
@@ -766,6 +794,7 @@ JAVA_OBJECT gnu_xml_dom_DomXPathResult_iterateNext__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 182)
     _r0.o = __NEW_org_w3c_dom_xpath_XPathException();
     _r1.i = 52;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.value_;
     //java_lang_Object_toString__[5]
     XMLVM_CHECK_NPE(2)
@@ -788,6 +817,7 @@ JAVA_OBJECT gnu_xml_dom_DomXPathResult_snapshotItem___int(JAVA_OBJECT me, JAVA_I
     _r3.o = me;
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 187)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.type_;
     switch (_r0.i) {
     case 4: goto label19;
@@ -799,6 +829,7 @@ JAVA_OBJECT gnu_xml_dom_DomXPathResult_snapshotItem___int(JAVA_OBJECT me, JAVA_I
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 199)
     _r0.o = __NEW_org_w3c_dom_xpath_XPathException();
     _r1.i = 52;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.value_;
     //java_lang_Object_toString__[5]
     XMLVM_CHECK_NPE(2)
@@ -808,6 +839,7 @@ JAVA_OBJECT gnu_xml_dom_DomXPathResult_snapshotItem___int(JAVA_OBJECT me, JAVA_I
     XMLVM_THROW_CUSTOM(_r0.o)
     label19:;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 194)
+    XMLVM_CHECK_NPE(3)
     _r3.o = ((gnu_xml_dom_DomXPathResult*) _r3.o)->fields.gnu_xml_dom_DomXPathResult.value_;
     _r3.o = _r3.o;
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 195)
@@ -850,6 +882,7 @@ JAVA_OBJECT gnu_xml_dom_DomXPathResult_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(774);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((gnu_xml_dom_DomXPathResult*) _r2.o)->fields.gnu_xml_dom_DomXPathResult.type_;
     XMLVM_CHECK_NPE(2)
     _r1.o = gnu_xml_dom_DomXPathResult_typeName___short(_r2.o, _r1.i);
@@ -860,6 +893,7 @@ JAVA_OBJECT gnu_xml_dom_DomXPathResult_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("DomXPathResult.java", 205)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_dom_DomXPathResult*) _r2.o)->fields.gnu_xml_dom_DomXPathResult.value_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);

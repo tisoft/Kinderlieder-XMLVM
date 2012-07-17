@@ -539,12 +539,16 @@ void java_io_FilePermission___INIT____java_lang_String_java_lang_String(JAVA_OBJ
     java_security_Permission___INIT____java_lang_String(_r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("FilePermission.java", 65)
     _r0.i = -1;
+    XMLVM_CHECK_NPE(2)
     ((java_io_FilePermission*) _r2.o)->fields.java_io_FilePermission.mask_ = _r0.i;
     XMLVM_SOURCE_POSITION("FilePermission.java", 68)
+    XMLVM_CHECK_NPE(2)
     ((java_io_FilePermission*) _r2.o)->fields.java_io_FilePermission.includeAll_ = _r1.i;
     XMLVM_SOURCE_POSITION("FilePermission.java", 70)
+    XMLVM_CHECK_NPE(2)
     ((java_io_FilePermission*) _r2.o)->fields.java_io_FilePermission.allDir_ = _r1.i;
     XMLVM_SOURCE_POSITION("FilePermission.java", 72)
+    XMLVM_CHECK_NPE(2)
     ((java_io_FilePermission*) _r2.o)->fields.java_io_FilePermission.allSubdir_ = _r1.i;
     XMLVM_SOURCE_POSITION("FilePermission.java", 91)
     XMLVM_CHECK_NPE(2)
@@ -596,6 +600,7 @@ void java_io_FilePermission_init___java_lang_String_java_lang_String(JAVA_OBJECT
     XMLVM_SOURCE_POSITION("FilePermission.java", 98)
     XMLVM_CHECK_NPE(5)
     _r0.o = java_io_FilePermission_toCanonicalActionString___java_lang_String(_r5.o, _r7.o);
+    XMLVM_CHECK_NPE(5)
     ((java_io_FilePermission*) _r5.o)->fields.java_io_FilePermission.actions_ = _r0.o;
     XMLVM_SOURCE_POSITION("FilePermission.java", 100)
     if (_r6.o != JAVA_NULL) goto label47;
@@ -616,6 +621,7 @@ void java_io_FilePermission_init___java_lang_String_java_lang_String(JAVA_OBJECT
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r6.o)->tib->vtable[1])(_r6.o, _r0.o);
     if (_r0.i == 0) goto label58;
     XMLVM_SOURCE_POSITION("FilePermission.java", 104)
+    XMLVM_CHECK_NPE(5)
     ((java_io_FilePermission*) _r5.o)->fields.java_io_FilePermission.includeAll_ = _r2.i;
     label57:;
     XMLVM_SOURCE_POSITION("FilePermission.java", 123)
@@ -629,6 +635,7 @@ void java_io_FilePermission_init___java_lang_String_java_lang_String(JAVA_OBJECT
     _r0.o = java_security_AccessController_doPrivileged___java_security_PrivilegedAction(_r0.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("FilePermission.java", 106)
+    XMLVM_CHECK_NPE(5)
     ((java_io_FilePermission*) _r5.o)->fields.java_io_FilePermission.canonPath_ = _r0.o;
     XMLVM_SOURCE_POSITION("FilePermission.java", 116)
     // "*"
@@ -654,6 +661,7 @@ void java_io_FilePermission_init___java_lang_String_java_lang_String(JAVA_OBJECT
     if (_r0.i == 0) goto label108;
     label106:;
     XMLVM_SOURCE_POSITION("FilePermission.java", 117)
+    XMLVM_CHECK_NPE(5)
     ((java_io_FilePermission*) _r5.o)->fields.java_io_FilePermission.allDir_ = _r2.i;
     label108:;
     XMLVM_SOURCE_POSITION("FilePermission.java", 119)
@@ -680,6 +688,7 @@ void java_io_FilePermission_init___java_lang_String_java_lang_String(JAVA_OBJECT
     if (_r0.i == 0) goto label57;
     label143:;
     XMLVM_SOURCE_POSITION("FilePermission.java", 120)
+    XMLVM_CHECK_NPE(5)
     ((java_io_FilePermission*) _r5.o)->fields.java_io_FilePermission.allSubdir_ = _r2.i;
     goto label57;
     //XMLVM_END_WRAPPER
@@ -707,11 +716,14 @@ JAVA_OBJECT java_io_FilePermission_toCanonicalActionString___java_lang_String(JA
     _r0.o = java_lang_String_trim__(_r8.o);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_toLowerCase__(_r0.o);
+    XMLVM_CHECK_NPE(7)
     ((java_io_FilePermission*) _r7.o)->fields.java_io_FilePermission.actions_ = _r0.o;
     XMLVM_SOURCE_POSITION("FilePermission.java", 138)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_io_FilePermission*) _r7.o)->fields.java_io_FilePermission.actions_;
     XMLVM_CHECK_NPE(7)
     _r0.i = java_io_FilePermission_getMask___java_lang_String(_r7.o, _r0.o);
+    XMLVM_CHECK_NPE(7)
     ((java_io_FilePermission*) _r7.o)->fields.java_io_FilePermission.mask_ = _r0.i;
     XMLVM_SOURCE_POSITION("FilePermission.java", 141)
     _r0.o = java_io_FilePermission_GET_actionList();
@@ -736,6 +748,7 @@ JAVA_OBJECT java_io_FilePermission_toCanonicalActionString___java_lang_String(JA
     return _r0.o;
     label41:;
     XMLVM_SOURCE_POSITION("FilePermission.java", 150)
+    XMLVM_CHECK_NPE(7)
     _r5.i = ((java_io_FilePermission*) _r7.o)->fields.java_io_FilePermission.mask_;
     _r5.i = _r5.i & _r4.i;
     if (_r5.i == 0) goto label61;
@@ -876,6 +889,7 @@ JAVA_OBJECT java_io_FilePermission_getActions__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FilePermission.java", 199)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_FilePermission*) _r1.o)->fields.java_io_FilePermission.actions_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -901,13 +915,18 @@ JAVA_BOOLEAN java_io_FilePermission_equals___java_lang_Object(JAVA_OBJECT me, JA
     XMLVM_SOURCE_POSITION("FilePermission.java", 215)
     _r4.o = _r4.o;
     XMLVM_SOURCE_POSITION("FilePermission.java", 216)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_io_FilePermission*) _r4.o)->fields.java_io_FilePermission.actions_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_FilePermission*) _r3.o)->fields.java_io_FilePermission.actions_;
     if (_r0.o == _r1.o) goto label29;
     XMLVM_SOURCE_POSITION("FilePermission.java", 217)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_io_FilePermission*) _r4.o)->fields.java_io_FilePermission.actions_;
     if (_r0.o == JAVA_NULL) goto label27;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_io_FilePermission*) _r4.o)->fields.java_io_FilePermission.actions_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_FilePermission*) _r3.o)->fields.java_io_FilePermission.actions_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -922,13 +941,17 @@ JAVA_BOOLEAN java_io_FilePermission_equals___java_lang_Object(JAVA_OBJECT me, JA
     return _r0.i;
     label29:;
     XMLVM_SOURCE_POSITION("FilePermission.java", 223)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_io_FilePermission*) _r4.o)->fields.java_io_FilePermission.includeAll_;
     if (_r0.i != 0) goto label37;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_io_FilePermission*) _r3.o)->fields.java_io_FilePermission.includeAll_;
     if (_r0.i == 0) goto label47;
     label37:;
     XMLVM_SOURCE_POSITION("FilePermission.java", 224)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_io_FilePermission*) _r4.o)->fields.java_io_FilePermission.includeAll_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_io_FilePermission*) _r3.o)->fields.java_io_FilePermission.includeAll_;
     if (_r0.i != _r1.i) goto label45;
     _r0.i = 1;
@@ -938,7 +961,9 @@ JAVA_BOOLEAN java_io_FilePermission_equals___java_lang_Object(JAVA_OBJECT me, JA
     goto label28;
     label47:;
     XMLVM_SOURCE_POSITION("FilePermission.java", 226)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_io_FilePermission*) _r4.o)->fields.java_io_FilePermission.canonPath_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_FilePermission*) _r3.o)->fields.java_io_FilePermission.canonPath_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -966,6 +991,7 @@ JAVA_BOOLEAN java_io_FilePermission_implies___java_security_Permission(JAVA_OBJE
     XMLVM_SOURCE_POSITION("FilePermission.java", 246)
     if (_r0.i == 0) goto label14;
     _r3.o = _r3.o;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_io_FilePermission*) _r3.o)->fields.java_io_FilePermission.mask_;
     if (_r0.i != _r1.i) goto label14;
     _r0.i = 1;
@@ -1009,7 +1035,9 @@ JAVA_INT java_io_FilePermission_impliesMask___java_security_Permission(JAVA_OBJE
     XMLVM_SOURCE_POSITION("FilePermission.java", 261)
     _r9.o = _r9.o;
     XMLVM_SOURCE_POSITION("FilePermission.java", 262)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_io_FilePermission*) _r8.o)->fields.java_io_FilePermission.mask_;
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((java_io_FilePermission*) _r9.o)->fields.java_io_FilePermission.mask_;
     _r0.i = _r0.i & _r1.i;
     if (_r0.i != 0) goto label18;
@@ -1019,9 +1047,11 @@ JAVA_INT java_io_FilePermission_impliesMask___java_security_Permission(JAVA_OBJE
     goto label6;
     label18:;
     XMLVM_SOURCE_POSITION("FilePermission.java", 269)
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_io_FilePermission*) _r8.o)->fields.java_io_FilePermission.includeAll_;
     if (_r1.i != 0) goto label6;
     XMLVM_SOURCE_POSITION("FilePermission.java", 274)
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((java_io_FilePermission*) _r9.o)->fields.java_io_FilePermission.includeAll_;
     if (_r1.i == 0) goto label28;
     _r0 = _r7;
@@ -1029,16 +1059,19 @@ JAVA_INT java_io_FilePermission_impliesMask___java_security_Permission(JAVA_OBJE
     goto label6;
     label28:;
     XMLVM_SOURCE_POSITION("FilePermission.java", 280)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_io_FilePermission*) _r8.o)->fields.java_io_FilePermission.canonPath_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[8])(_r1.o);
     XMLVM_SOURCE_POSITION("FilePermission.java", 281)
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_io_FilePermission*) _r8.o)->fields.java_io_FilePermission.allSubdir_;
     if (_r2.i == 0) goto label51;
     _r2.i = 2;
     if (_r1.i != _r2.i) goto label51;
     XMLVM_SOURCE_POSITION("FilePermission.java", 282)
+    XMLVM_CHECK_NPE(9)
     _r2.o = ((java_io_FilePermission*) _r9.o)->fields.java_io_FilePermission.canonPath_;
     _r3.o = java_io_File_GET_separator();
     //java_lang_String_equals___java_lang_Object[1]
@@ -1047,8 +1080,10 @@ JAVA_INT java_io_FilePermission_impliesMask___java_security_Permission(JAVA_OBJE
     if (_r2.i == 0) goto label6;
     label51:;
     XMLVM_SOURCE_POSITION("FilePermission.java", 286)
+    XMLVM_CHECK_NPE(9)
     _r2.i = ((java_io_FilePermission*) _r9.o)->fields.java_io_FilePermission.allSubdir_;
     if (_r2.i == 0) goto label61;
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_io_FilePermission*) _r8.o)->fields.java_io_FilePermission.allSubdir_;
     if (_r2.i != 0) goto label61;
     _r0 = _r7;
@@ -1056,10 +1091,13 @@ JAVA_INT java_io_FilePermission_impliesMask___java_security_Permission(JAVA_OBJE
     goto label6;
     label61:;
     XMLVM_SOURCE_POSITION("FilePermission.java", 290)
+    XMLVM_CHECK_NPE(9)
     _r2.i = ((java_io_FilePermission*) _r9.o)->fields.java_io_FilePermission.allDir_;
     if (_r2.i == 0) goto label75;
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_io_FilePermission*) _r8.o)->fields.java_io_FilePermission.allSubdir_;
     if (_r2.i != 0) goto label75;
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_io_FilePermission*) _r8.o)->fields.java_io_FilePermission.allDir_;
     if (_r2.i != 0) goto label75;
     _r0 = _r7;
@@ -1067,13 +1105,16 @@ JAVA_INT java_io_FilePermission_impliesMask___java_security_Permission(JAVA_OBJE
     goto label6;
     label75:;
     XMLVM_SOURCE_POSITION("FilePermission.java", 295)
+    XMLVM_CHECK_NPE(9)
     _r2.o = ((java_io_FilePermission*) _r9.o)->fields.java_io_FilePermission.canonPath_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[8])(_r2.o);
     XMLVM_SOURCE_POSITION("FilePermission.java", 297)
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_io_FilePermission*) _r8.o)->fields.java_io_FilePermission.allDir_;
     if (_r3.i != 0) goto label89;
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_io_FilePermission*) _r8.o)->fields.java_io_FilePermission.allSubdir_;
     if (_r3.i == 0) goto label91;
     label89:;
@@ -1081,8 +1122,10 @@ JAVA_INT java_io_FilePermission_impliesMask___java_security_Permission(JAVA_OBJE
     _r1.i = _r1.i + -1;
     label91:;
     XMLVM_SOURCE_POSITION("FilePermission.java", 300)
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((java_io_FilePermission*) _r9.o)->fields.java_io_FilePermission.allDir_;
     if (_r3.i != 0) goto label99;
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((java_io_FilePermission*) _r9.o)->fields.java_io_FilePermission.allSubdir_;
     if (_r3.i == 0) goto label101;
     label99:;
@@ -1097,17 +1140,21 @@ JAVA_INT java_io_FilePermission_impliesMask___java_security_Permission(JAVA_OBJE
     XMLVM_SOURCE_POSITION("FilePermission.java", 341)
     if (_r2.i != _r1.i) goto label175;
     XMLVM_SOURCE_POSITION("FilePermission.java", 342)
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_io_FilePermission*) _r8.o)->fields.java_io_FilePermission.allSubdir_;
     if (_r1.i == 0) goto label166;
     XMLVM_SOURCE_POSITION("FilePermission.java", 344)
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((java_io_FilePermission*) _r9.o)->fields.java_io_FilePermission.allSubdir_;
     if (_r1.i != 0) goto label6;
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((java_io_FilePermission*) _r9.o)->fields.java_io_FilePermission.allDir_;
     if (_r1.i != 0) goto label6;
     _r0 = _r7;
     goto label6;
     label121:;
     XMLVM_SOURCE_POSITION("FilePermission.java", 304)
+    XMLVM_CHECK_NPE(9)
     _r5.o = ((java_io_FilePermission*) _r9.o)->fields.java_io_FilePermission.canonPath_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(5)
@@ -1117,9 +1164,11 @@ JAVA_INT java_io_FilePermission_impliesMask___java_security_Permission(JAVA_OBJE
     XMLVM_SOURCE_POSITION("FilePermission.java", 307)
     if (_r3.i != _r1.i) goto label140;
     XMLVM_SOURCE_POSITION("FilePermission.java", 310)
+    XMLVM_CHECK_NPE(8)
     _r6.i = ((java_io_FilePermission*) _r8.o)->fields.java_io_FilePermission.allSubdir_;
     if (_r6.i != 0) goto label6;
     XMLVM_SOURCE_POSITION("FilePermission.java", 315)
+    XMLVM_CHECK_NPE(8)
     _r6.i = ((java_io_FilePermission*) _r8.o)->fields.java_io_FilePermission.allDir_;
     if (_r6.i == 0) goto label140;
     XMLVM_SOURCE_POSITION("FilePermission.java", 316)
@@ -1139,6 +1188,7 @@ JAVA_INT java_io_FilePermission_impliesMask___java_security_Permission(JAVA_OBJE
     goto label6;
     label152:;
     XMLVM_SOURCE_POSITION("FilePermission.java", 334)
+    XMLVM_CHECK_NPE(8)
     _r6.o = ((java_io_FilePermission*) _r8.o)->fields.java_io_FilePermission.canonPath_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(6)
@@ -1152,7 +1202,9 @@ JAVA_INT java_io_FilePermission_impliesMask___java_security_Permission(JAVA_OBJE
     goto label103;
     label166:;
     XMLVM_SOURCE_POSITION("FilePermission.java", 346)
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_io_FilePermission*) _r8.o)->fields.java_io_FilePermission.allDir_;
+    XMLVM_CHECK_NPE(9)
     _r2.i = ((java_io_FilePermission*) _r9.o)->fields.java_io_FilePermission.allDir_;
     if (_r1.i == _r2.i) goto label6;
     _r0 = _r7;
@@ -1189,6 +1241,7 @@ JAVA_INT java_io_FilePermission_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("FilePermission.java", 370)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_FilePermission*) _r2.o)->fields.java_io_FilePermission.canonPath_;
     if (_r0.o != JAVA_NULL) goto label16;
     XMLVM_CHECK_NPE(2)
@@ -1198,11 +1251,13 @@ JAVA_INT java_io_FilePermission_hashCode__(JAVA_OBJECT me)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[4])(_r0.o);
     label12:;
     XMLVM_SOURCE_POSITION("FilePermission.java", 371)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_io_FilePermission*) _r2.o)->fields.java_io_FilePermission.mask_;
     _r0.i = _r0.i + _r1.i;
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label16:;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_FilePermission*) _r2.o)->fields.java_io_FilePermission.canonPath_;
     //java_lang_String_hashCode__[4]
     XMLVM_CHECK_NPE(0)
@@ -1244,6 +1299,7 @@ void java_io_FilePermission_readObject___java_io_ObjectInputStream(JAVA_OBJECT m
     XMLVM_SOURCE_POSITION("FilePermission.java", 381)
     XMLVM_CHECK_NPE(2)
     _r0.o = java_security_Permission_getName__(_r2.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_FilePermission*) _r2.o)->fields.java_io_FilePermission.actions_;
     XMLVM_CHECK_NPE(2)
     java_io_FilePermission_init___java_lang_String_java_lang_String(_r2.o, _r0.o, _r1.o);

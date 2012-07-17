@@ -226,7 +226,9 @@ void my_kinderlieder_InfoViewController_1_2___INIT____my_kinderlieder_InfoViewCo
     _r1.o = n1;
     _r2.o = n2;
     XMLVM_SOURCE_POSITION("InfoViewController.java", 38)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_InfoViewController_1_2*) _r0.o)->fields.my_kinderlieder_InfoViewController_1_2.this_1_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_InfoViewController_1_2*) _r0.o)->fields.my_kinderlieder_InfoViewController_1_2.val_url_ = _r2.o;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UIAlertViewDelegate___INIT___(_r0.o);
@@ -256,6 +258,7 @@ void my_kinderlieder_InfoViewController_1_2_clickedButtonAtIndex___org_xmlvm_iph
     if (_r4.i != _r0.i) goto label17;
     XMLVM_SOURCE_POSITION("InfoViewController.java", 43)
     _r0.o = org_xmlvm_iphone_UIApplication_sharedApplication__();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((my_kinderlieder_InfoViewController_1_2*) _r2.o)->fields.my_kinderlieder_InfoViewController_1_2.val_url_;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UIApplication_openURL___org_xmlvm_iphone_NSURL(_r0.o, _r1.o);

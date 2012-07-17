@@ -275,6 +275,7 @@ void java_io_InvalidClassException___INIT____java_lang_String_java_lang_String(J
     XMLVM_CHECK_NPE(0)
     java_io_ObjectStreamException___INIT____java_lang_String(_r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("InvalidClassException.java", 66)
+    XMLVM_CHECK_NPE(0)
     ((java_io_InvalidClassException*) _r0.o)->fields.java_io_InvalidClassException.classname_ = _r1.o;
     XMLVM_SOURCE_POSITION("InvalidClassException.java", 67)
     XMLVM_EXIT_METHOD()
@@ -295,10 +296,12 @@ JAVA_OBJECT java_io_InvalidClassException_getMessage__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(3)
     _r0.o = java_lang_Throwable_getMessage__(_r3.o);
     XMLVM_SOURCE_POSITION("InvalidClassException.java", 81)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_InvalidClassException*) _r3.o)->fields.java_io_InvalidClassException.classname_;
     if (_r1.o == JAVA_NULL) goto label33;
     XMLVM_SOURCE_POSITION("InvalidClassException.java", 82)
     _r1.o = __NEW_java_lang_StringBuilder();
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_io_InvalidClassException*) _r3.o)->fields.java_io_InvalidClassException.classname_;
     _r2.o = java_lang_String_valueOf___java_lang_Object(_r2.o);
     XMLVM_CHECK_NPE(1)

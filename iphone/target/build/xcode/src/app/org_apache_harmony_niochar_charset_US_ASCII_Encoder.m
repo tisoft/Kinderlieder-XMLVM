@@ -258,6 +258,7 @@ void org_apache_harmony_niochar_charset_US_ASCII_Encoder___INIT____org_apache_ha
     _r3.o = n2;
     _r0.f = 1.0;
     XMLVM_SOURCE_POSITION("US_ASCII.java", 123)
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_niochar_charset_US_ASCII_Encoder*) _r1.o)->fields.org_apache_harmony_niochar_charset_US_ASCII_Encoder.this_0_ = _r2.o;
     XMLVM_SOURCE_POSITION("US_ASCII.java", 122)
     XMLVM_CHECK_NPE(1)

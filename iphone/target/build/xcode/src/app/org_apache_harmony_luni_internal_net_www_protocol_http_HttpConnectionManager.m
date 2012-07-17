@@ -384,6 +384,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManage
     _r1.o = JAVA_NULL;
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager_ConnectionPool___INIT____org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager_1(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager*) _r2.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager.pool_ = _r0.o;
     XMLVM_SOURCE_POSITION("HttpConnectionManager.java", 101)
     XMLVM_EXIT_METHOD()
@@ -433,6 +434,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectio
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration___INIT____java_net_URI(_r0.o, _r3.o);
     XMLVM_SOURCE_POSITION("HttpConnectionManager.java", 67)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager*) _r2.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager.pool_;
     XMLVM_CHECK_NPE(1)
     _r1.o = org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager_ConnectionPool_getHttpConnection___org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration_int(_r1.o, _r0.o, _r4.i);
@@ -463,6 +465,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectio
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration___INIT____java_net_URI_java_net_Proxy(_r0.o, _r3.o, _r4.o);
     XMLVM_SOURCE_POSITION("HttpConnectionManager.java", 73)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager*) _r2.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager.pool_;
     XMLVM_CHECK_NPE(1)
     _r1.o = org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager_ConnectionPool_getHttpConnection___org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration_int(_r1.o, _r0.o, _r5.i);
@@ -484,6 +487,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManage
     XMLVM_CHECK_NPE(1)
     org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager_checkSystemProperties__(_r1.o);
     XMLVM_SOURCE_POSITION("HttpConnectionManager.java", 78)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager*) _r1.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager.pool_;
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager_ConnectionPool_returnConnection___org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnection(_r0.o, _r2.o);
@@ -501,6 +505,7 @@ JAVA_INT org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionMa
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("HttpConnectionManager.java", 82)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager*) _r1.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager.pool_;
     XMLVM_CHECK_NPE(0)
     _r0.i = org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager_ConnectionPool_numFreeConnections__(_r0.o);
@@ -536,6 +541,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManage
     _r2.i = org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager_GET_keepAlive();
     if (_r2.i != 0) goto label27;
     XMLVM_SOURCE_POSITION("HttpConnectionManager.java", 96)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager*) _r3.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager.pool_;
     XMLVM_CHECK_NPE(2)
     org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager_ConnectionPool_clear__(_r2.o);
@@ -554,6 +560,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManage
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("HttpConnectionManager.java", 172)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager*) _r1.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager.pool_;
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager_ConnectionPool_clear__(_r0.o);

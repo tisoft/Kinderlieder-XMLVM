@@ -644,8 +644,10 @@ void java_nio_FloatToByteBufferAdapter___INIT____java_nio_ByteBuffer(JAVA_OBJECT
     XMLVM_CHECK_NPE(1)
     java_nio_FloatBuffer___INIT____int(_r1.o, _r0.i);
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 46)
+    XMLVM_CHECK_NPE(1)
     ((java_nio_FloatToByteBufferAdapter*) _r1.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_ = _r2.o;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 47)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_FloatToByteBufferAdapter*) _r1.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     XMLVM_CHECK_NPE(0)
     java_nio_Buffer_clear__(_r0.o);
@@ -664,11 +666,13 @@ JAVA_INT java_nio_FloatToByteBufferAdapter_getByteCapacity__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 51)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     if (!__TIB_org_apache_harmony_nio_internal_DirectBuffer.classInitialized) __INIT_org_apache_harmony_nio_internal_DirectBuffer();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_org_apache_harmony_nio_internal_DirectBuffer);
     if (_r0.i == 0) goto label15;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 52)
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     _r2.o = _r2.o;
     XMLVM_CHECK_NPE(2)
@@ -682,6 +686,7 @@ JAVA_INT java_nio_FloatToByteBufferAdapter_getByteCapacity__(JAVA_OBJECT me)
     _r0.i = java_nio_FloatToByteBufferAdapter_GET__assertionsDisabled();
     if (_r0.i != 0) goto label27;
     _r0.o = __NEW_java_lang_AssertionError();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     XMLVM_CHECK_NPE(0)
     java_lang_AssertionError___INIT____java_lang_Object(_r0.o, _r1.o);
@@ -701,11 +706,13 @@ JAVA_OBJECT java_nio_FloatToByteBufferAdapter_getEffectiveAddress__(JAVA_OBJECT 
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 59)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     if (!__TIB_org_apache_harmony_nio_internal_DirectBuffer.classInitialized) __INIT_org_apache_harmony_nio_internal_DirectBuffer();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_org_apache_harmony_nio_internal_DirectBuffer);
     if (_r0.i == 0) goto label15;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 60)
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     _r2.o = _r2.o;
     XMLVM_CHECK_NPE(2)
@@ -719,6 +726,7 @@ JAVA_OBJECT java_nio_FloatToByteBufferAdapter_getEffectiveAddress__(JAVA_OBJECT 
     _r0.i = java_nio_FloatToByteBufferAdapter_GET__assertionsDisabled();
     if (_r0.i != 0) goto label27;
     _r0.o = __NEW_java_lang_AssertionError();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     XMLVM_CHECK_NPE(0)
     java_lang_AssertionError___INIT____java_lang_Object(_r0.o, _r1.o);
@@ -738,11 +746,13 @@ JAVA_OBJECT java_nio_FloatToByteBufferAdapter_getBaseAddress__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 67)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     if (!__TIB_org_apache_harmony_nio_internal_DirectBuffer.classInitialized) __INIT_org_apache_harmony_nio_internal_DirectBuffer();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_org_apache_harmony_nio_internal_DirectBuffer);
     if (_r0.i == 0) goto label15;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 68)
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     _r2.o = _r2.o;
     XMLVM_CHECK_NPE(2)
@@ -756,6 +766,7 @@ JAVA_OBJECT java_nio_FloatToByteBufferAdapter_getBaseAddress__(JAVA_OBJECT me)
     _r0.i = java_nio_FloatToByteBufferAdapter_GET__assertionsDisabled();
     if (_r0.i != 0) goto label27;
     _r0.o = __NEW_java_lang_AssertionError();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     XMLVM_CHECK_NPE(0)
     java_lang_AssertionError___INIT____java_lang_Object(_r0.o, _r1.o);
@@ -775,11 +786,13 @@ JAVA_BOOLEAN java_nio_FloatToByteBufferAdapter_isAddressValid__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 75)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     if (!__TIB_org_apache_harmony_nio_internal_DirectBuffer.classInitialized) __INIT_org_apache_harmony_nio_internal_DirectBuffer();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_org_apache_harmony_nio_internal_DirectBuffer);
     if (_r0.i == 0) goto label15;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 76)
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     _r2.o = _r2.o;
     XMLVM_CHECK_NPE(2)
@@ -793,6 +806,7 @@ JAVA_BOOLEAN java_nio_FloatToByteBufferAdapter_isAddressValid__(JAVA_OBJECT me)
     _r0.i = java_nio_FloatToByteBufferAdapter_GET__assertionsDisabled();
     if (_r0.i != 0) goto label27;
     _r0.o = __NEW_java_lang_AssertionError();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     XMLVM_CHECK_NPE(0)
     java_lang_AssertionError___INIT____java_lang_Object(_r0.o, _r1.o);
@@ -812,11 +826,13 @@ void java_nio_FloatToByteBufferAdapter_addressValidityCheck__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 83)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     if (!__TIB_org_apache_harmony_nio_internal_DirectBuffer.classInitialized) __INIT_org_apache_harmony_nio_internal_DirectBuffer();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_org_apache_harmony_nio_internal_DirectBuffer);
     if (_r0.i == 0) goto label14;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 84)
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     _r2.o = _r2.o;
     XMLVM_CHECK_NPE(2)
@@ -830,6 +846,7 @@ void java_nio_FloatToByteBufferAdapter_addressValidityCheck__(JAVA_OBJECT me)
     _r0.i = java_nio_FloatToByteBufferAdapter_GET__assertionsDisabled();
     if (_r0.i != 0) goto label13;
     _r0.o = __NEW_java_lang_AssertionError();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     XMLVM_CHECK_NPE(0)
     java_lang_AssertionError___INIT____java_lang_Object(_r0.o, _r1.o);
@@ -846,11 +863,13 @@ void java_nio_FloatToByteBufferAdapter_free__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 91)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     if (!__TIB_org_apache_harmony_nio_internal_DirectBuffer.classInitialized) __INIT_org_apache_harmony_nio_internal_DirectBuffer();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_org_apache_harmony_nio_internal_DirectBuffer);
     if (_r0.i == 0) goto label14;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 92)
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     _r2.o = _r2.o;
     XMLVM_CHECK_NPE(2)
@@ -864,6 +883,7 @@ void java_nio_FloatToByteBufferAdapter_free__(JAVA_OBJECT me)
     _r0.i = java_nio_FloatToByteBufferAdapter_GET__assertionsDisabled();
     if (_r0.i != 0) goto label13;
     _r0.o = __NEW_java_lang_AssertionError();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     XMLVM_CHECK_NPE(0)
     java_lang_AssertionError___INIT____java_lang_Object(_r0.o, _r1.o);
@@ -882,6 +902,7 @@ JAVA_OBJECT java_nio_FloatToByteBufferAdapter_asReadOnlyBuffer__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 100)
     _r0.o = __NEW_java_nio_FloatToByteBufferAdapter();
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 101)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     //java_nio_ByteBuffer_asReadOnlyBuffer__[16]
     XMLVM_CHECK_NPE(1)
@@ -889,13 +910,19 @@ JAVA_OBJECT java_nio_FloatToByteBufferAdapter_asReadOnlyBuffer__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_nio_FloatToByteBufferAdapter___INIT____java_nio_ByteBuffer(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 102)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.limit_ = _r1.i;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 103)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_;
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.position_ = _r1.i;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 104)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.mark_;
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.mark_ = _r1.i;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 105)
     XMLVM_EXIT_METHOD()
@@ -912,6 +939,7 @@ JAVA_OBJECT java_nio_FloatToByteBufferAdapter_compact__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 110)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     //java_nio_ByteBuffer_isReadOnly__[10]
     XMLVM_CHECK_NPE(0)
@@ -924,36 +952,48 @@ JAVA_OBJECT java_nio_FloatToByteBufferAdapter_compact__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 113)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
     _r1.i = _r1.i << 2;
     XMLVM_CHECK_NPE(0)
     java_nio_Buffer_limit___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 114)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_;
     _r1.i = _r1.i << 2;
     XMLVM_CHECK_NPE(0)
     java_nio_Buffer_position___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 115)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     //java_nio_ByteBuffer_compact__[18]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_ByteBuffer*) _r0.o)->tib->vtable[18])(_r0.o);
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 116)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     XMLVM_CHECK_NPE(0)
     java_nio_Buffer_clear__(_r0.o);
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 117)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(2)
     ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 118)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.capacity_;
+    XMLVM_CHECK_NPE(2)
     ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_ = _r0.i;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 119)
     _r0.i = -1;
+    XMLVM_CHECK_NPE(2)
     ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.mark_ = _r0.i;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 120)
     XMLVM_EXIT_METHOD()
@@ -972,6 +1012,7 @@ JAVA_OBJECT java_nio_FloatToByteBufferAdapter_duplicate__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 125)
     _r0.o = __NEW_java_nio_FloatToByteBufferAdapter();
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 126)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     //java_nio_ByteBuffer_duplicate__[20]
     XMLVM_CHECK_NPE(1)
@@ -979,13 +1020,19 @@ JAVA_OBJECT java_nio_FloatToByteBufferAdapter_duplicate__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_nio_FloatToByteBufferAdapter___INIT____java_nio_ByteBuffer(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 127)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.limit_ = _r1.i;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 128)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_;
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.position_ = _r1.i;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 129)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.mark_;
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.mark_ = _r1.i;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 130)
     XMLVM_EXIT_METHOD()
@@ -1003,7 +1050,9 @@ JAVA_FLOAT java_nio_FloatToByteBufferAdapter_get__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 135)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.position_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.limit_;
     if (_r0.i != _r1.i) goto label12;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 136)
@@ -1013,9 +1062,12 @@ JAVA_FLOAT java_nio_FloatToByteBufferAdapter_get__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 138)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_nio_FloatToByteBufferAdapter*) _r3.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.position_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.position_ = _r2.i;
     _r1.i = _r1.i << 2;
     //java_nio_ByteBuffer_getFloat___int[26]
@@ -1038,6 +1090,7 @@ JAVA_FLOAT java_nio_FloatToByteBufferAdapter_get___int(JAVA_OBJECT me, JAVA_INT 
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 143)
     if (_r3.i < 0) goto label6;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
     if (_r3.i < _r0.i) goto label12;
     label6:;
@@ -1048,6 +1101,7 @@ JAVA_FLOAT java_nio_FloatToByteBufferAdapter_get___int(JAVA_OBJECT me, JAVA_INT 
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 146)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     _r1.i = _r3.i << 2;
     //java_nio_ByteBuffer_getFloat___int[26]
@@ -1066,6 +1120,7 @@ JAVA_BOOLEAN java_nio_FloatToByteBufferAdapter_isDirect__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 151)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_FloatToByteBufferAdapter*) _r1.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     //java_nio_ByteBuffer_isDirect__[9]
     XMLVM_CHECK_NPE(0)
@@ -1083,6 +1138,7 @@ JAVA_BOOLEAN java_nio_FloatToByteBufferAdapter_isReadOnly__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 156)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_FloatToByteBufferAdapter*) _r1.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     //java_nio_ByteBuffer_isReadOnly__[10]
     XMLVM_CHECK_NPE(0)
@@ -1100,6 +1156,7 @@ JAVA_OBJECT java_nio_FloatToByteBufferAdapter_order__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 161)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_FloatToByteBufferAdapter*) _r1.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_nio_ByteBuffer_order__(_r0.o);
@@ -1164,7 +1221,9 @@ JAVA_OBJECT java_nio_FloatToByteBufferAdapter_put___float(JAVA_OBJECT me, JAVA_F
     _r3.o = me;
     _r4.f = n1;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 181)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.position_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.limit_;
     if (_r0.i != _r1.i) goto label12;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 182)
@@ -1174,9 +1233,12 @@ JAVA_OBJECT java_nio_FloatToByteBufferAdapter_put___float(JAVA_OBJECT me, JAVA_F
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 184)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_nio_FloatToByteBufferAdapter*) _r3.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.position_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.position_ = _r2.i;
     _r1.i = _r1.i << 2;
     //java_nio_ByteBuffer_putFloat___int_float[44]
@@ -1202,6 +1264,7 @@ JAVA_OBJECT java_nio_FloatToByteBufferAdapter_put___int_float(JAVA_OBJECT me, JA
     _r4.f = n2;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 190)
     if (_r3.i < 0) goto label6;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
     if (_r3.i < _r0.i) goto label12;
     label6:;
@@ -1212,6 +1275,7 @@ JAVA_OBJECT java_nio_FloatToByteBufferAdapter_put___int_float(JAVA_OBJECT me, JA
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 193)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     _r1.i = _r3.i << 2;
     //java_nio_ByteBuffer_putFloat___int_float[44]
@@ -1232,19 +1296,24 @@ JAVA_OBJECT java_nio_FloatToByteBufferAdapter_slice__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 199)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
     _r1.i = _r1.i << 2;
     XMLVM_CHECK_NPE(0)
     java_nio_Buffer_limit___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 200)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_;
     _r1.i = _r1.i << 2;
     XMLVM_CHECK_NPE(0)
     java_nio_Buffer_position___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 201)
     _r0.o = __NEW_java_nio_FloatToByteBufferAdapter();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     //java_nio_ByteBuffer_slice__[55]
     XMLVM_CHECK_NPE(1)
@@ -1252,6 +1321,7 @@ JAVA_OBJECT java_nio_FloatToByteBufferAdapter_slice__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_nio_FloatToByteBufferAdapter___INIT____java_nio_ByteBuffer(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("FloatToByteBufferAdapter.java", 202)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_FloatToByteBufferAdapter*) _r2.o)->fields.java_nio_FloatToByteBufferAdapter.byteBuffer_;
     XMLVM_CHECK_NPE(1)
     java_nio_Buffer_clear__(_r1.o);

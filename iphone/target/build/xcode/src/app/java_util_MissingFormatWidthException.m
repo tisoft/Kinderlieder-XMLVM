@@ -264,6 +264,7 @@ void java_util_MissingFormatWidthException___INIT____java_lang_String(JAVA_OBJEC
     XMLVM_THROW_CUSTOM(_r0.o)
     label11:;
     XMLVM_SOURCE_POSITION("MissingFormatWidthException.java", 41)
+    XMLVM_CHECK_NPE(1)
     ((java_util_MissingFormatWidthException*) _r1.o)->fields.java_util_MissingFormatWidthException.s_ = _r2.o;
     XMLVM_SOURCE_POSITION("MissingFormatWidthException.java", 42)
     XMLVM_EXIT_METHOD()
@@ -279,6 +280,7 @@ JAVA_OBJECT java_util_MissingFormatWidthException_getFormatSpecifier__(JAVA_OBJE
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("MissingFormatWidthException.java", 50)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_MissingFormatWidthException*) _r1.o)->fields.java_util_MissingFormatWidthException.s_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -293,6 +295,7 @@ JAVA_OBJECT java_util_MissingFormatWidthException_getMessage__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("MissingFormatWidthException.java", 60)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_MissingFormatWidthException*) _r1.o)->fields.java_util_MissingFormatWidthException.s_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

@@ -1361,9 +1361,11 @@ JAVA_OBJECT java_nio_ByteBuffer_wrap___byte_1ARRAY_int_int(JAVA_OBJECT n1, JAVA_
     XMLVM_SOURCE_POSITION("ByteBuffer.java", 109)
     _r0.o = java_nio_BufferFactory_newByteBuffer___byte_1ARRAY(_r5.o);
     XMLVM_SOURCE_POSITION("ByteBuffer.java", 110)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.position_ = _r6.i;
     XMLVM_SOURCE_POSITION("ByteBuffer.java", 111)
     _r1.i = _r6.i + _r7.i;
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.limit_ = _r1.i;
     XMLVM_SOURCE_POSITION("ByteBuffer.java", 113)
     XMLVM_EXIT_METHOD()
@@ -1385,6 +1387,7 @@ void java_nio_ByteBuffer___INIT____int(JAVA_OBJECT me, JAVA_INT n1)
     java_nio_Buffer___INIT____int(_r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("ByteBuffer.java", 119)
     _r0.o = org_apache_harmony_luni_platform_Endianness_GET_BIG_ENDIAN();
+    XMLVM_CHECK_NPE(1)
     ((java_nio_ByteBuffer*) _r1.o)->fields.java_nio_ByteBuffer.order_ = _r0.o;
     XMLVM_SOURCE_POSITION("ByteBuffer.java", 129)
     XMLVM_EXIT_METHOD()
@@ -1448,8 +1451,10 @@ JAVA_INT java_nio_ByteBuffer_compareTo___java_nio_ByteBuffer(JAVA_OBJECT me, JAV
     _r0.i = java_nio_Buffer_remaining__(_r6.o);
     label14:;
     XMLVM_SOURCE_POSITION("ByteBuffer.java", 308)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_nio_Buffer*) _r6.o)->fields.java_nio_Buffer.position_;
     XMLVM_SOURCE_POSITION("ByteBuffer.java", 309)
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_nio_Buffer*) _r7.o)->fields.java_nio_Buffer.position_;
     _r5 = _r2;
     _r2 = _r0;
@@ -1539,14 +1544,17 @@ JAVA_BOOLEAN java_nio_ByteBuffer_equals___java_lang_Object(JAVA_OBJECT me, JAVA_
     goto label7;
     label22:;
     XMLVM_SOURCE_POSITION("ByteBuffer.java", 362)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_nio_Buffer*) _r6.o)->fields.java_nio_Buffer.position_;
     XMLVM_SOURCE_POSITION("ByteBuffer.java", 363)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_nio_Buffer*) _r7.o)->fields.java_nio_Buffer.position_;
     _r2 = _r0;
     _r0 = _r5;
     label28:;
     XMLVM_SOURCE_POSITION("ByteBuffer.java", 365)
     if (_r0.i == 0) goto label7;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_nio_Buffer*) _r6.o)->fields.java_nio_Buffer.limit_;
     if (_r2.i >= _r3.i) goto label7;
     XMLVM_SOURCE_POSITION("ByteBuffer.java", 366)
@@ -1685,6 +1693,7 @@ JAVA_INT java_nio_ByteBuffer_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("ByteBuffer.java", 632)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
     XMLVM_SOURCE_POSITION("ByteBuffer.java", 633)
     _r1.i = 0;
@@ -1693,6 +1702,7 @@ JAVA_INT java_nio_ByteBuffer_hashCode__(JAVA_OBJECT me)
     _r0 = _r3;
     label6:;
     XMLVM_SOURCE_POSITION("ByteBuffer.java", 634)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.limit_;
     if (_r1.i < _r2.i) goto label11;
     XMLVM_SOURCE_POSITION("ByteBuffer.java", 637)
@@ -1719,6 +1729,7 @@ JAVA_OBJECT java_nio_ByteBuffer_order__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("ByteBuffer.java", 658)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_ByteBuffer*) _r2.o)->fields.java_nio_ByteBuffer.order_;
     _r1.o = org_apache_harmony_luni_platform_Endianness_GET_BIG_ENDIAN();
     if (_r0.o != _r1.o) goto label9;
@@ -1773,6 +1784,7 @@ JAVA_OBJECT java_nio_ByteBuffer_orderImpl___java_nio_ByteOrder(JAVA_OBJECT me, J
     if (_r2.o != _r0.o) goto label9;
     _r0.o = org_apache_harmony_luni_platform_Endianness_GET_BIG_ENDIAN();
     label6:;
+    XMLVM_CHECK_NPE(1)
     ((java_nio_ByteBuffer*) _r1.o)->fields.java_nio_ByteBuffer.order_ = _r0.o;
     XMLVM_SOURCE_POSITION("ByteBuffer.java", 678)
     XMLVM_EXIT_METHOD()

@@ -231,6 +231,7 @@ void my_kinderlieder_ShopService_1___INIT____my_kinderlieder_ShopService(JAVA_OB
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("ShopService.java", 28)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_ShopService_1*) _r0.o)->fields.my_kinderlieder_ShopService_1.this_0_ = _r1.o;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_SKPaymentTransactionObserver___INIT___(_r0.o);
@@ -282,6 +283,7 @@ void my_kinderlieder_ShopService_1_updatedTransactions___org_xmlvm_iphone_SKPaym
     org_xmlvm_iphone_SKPaymentQueue_finishTransaction___org_xmlvm_iphone_SKPaymentTransaction(_r12.o, _r5.o);
     label27:;
     XMLVM_SOURCE_POSITION("ShopService.java", 35)
+    XMLVM_CHECK_NPE(11)
     _r6.o = ((my_kinderlieder_ShopService_1*) _r11.o)->fields.my_kinderlieder_ShopService_1.this_0_;
     _r3.o = my_kinderlieder_ShopService_access$000___my_kinderlieder_ShopService_org_xmlvm_iphone_SKPaymentTransaction(_r6.o, _r5.o);
     if (_r3.o != JAVA_NULL) goto label68;
@@ -496,6 +498,7 @@ void my_kinderlieder_ShopService_1_updatedTransactions___org_xmlvm_iphone_SKPaym
     org_xmlvm_iphone_UIAlertView___INIT____java_lang_String_java_lang_String_org_xmlvm_iphone_UIAlertViewDelegate_java_lang_String(_r0.o, _r6.o, _r7.o, _r8.o, _r9.o);
     XMLVM_SOURCE_POSITION("ShopService.java", 83)
     _r6.o = my_kinderlieder_Product_State_GET_AVAILABLE();
+    XMLVM_CHECK_NPE(3)
     ((my_kinderlieder_Product*) _r3.o)->fields.my_kinderlieder_Product.state_ = _r6.o;
     XMLVM_SOURCE_POSITION("ShopService.java", 84)
     XMLVM_CHECK_NPE(0)

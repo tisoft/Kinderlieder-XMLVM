@@ -752,9 +752,11 @@ JAVA_OBJECT java_nio_DoubleBuffer_wrap___double_1ARRAY_int_int(JAVA_OBJECT n1, J
     XMLVM_SOURCE_POSITION("DoubleBuffer.java", 91)
     _r0.o = java_nio_BufferFactory_newDoubleBuffer___double_1ARRAY(_r5.o);
     XMLVM_SOURCE_POSITION("DoubleBuffer.java", 92)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.position_ = _r6.i;
     XMLVM_SOURCE_POSITION("DoubleBuffer.java", 93)
     _r1.i = _r6.i + _r7.i;
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.limit_ = _r1.i;
     XMLVM_SOURCE_POSITION("DoubleBuffer.java", 95)
     XMLVM_EXIT_METHOD()
@@ -838,8 +840,10 @@ JAVA_INT java_nio_DoubleBuffer_compareTo___java_nio_DoubleBuffer(JAVA_OBJECT me,
     _r0.i = java_nio_Buffer_remaining__(_r9.o);
     label14:;
     XMLVM_SOURCE_POSITION("DoubleBuffer.java", 181)
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((java_nio_Buffer*) _r9.o)->fields.java_nio_Buffer.position_;
     XMLVM_SOURCE_POSITION("DoubleBuffer.java", 182)
+    XMLVM_CHECK_NPE(10)
     _r2.i = ((java_nio_Buffer*) _r10.o)->fields.java_nio_Buffer.position_;
     _r8 = _r2;
     _r2 = _r0;
@@ -940,14 +944,17 @@ JAVA_BOOLEAN java_nio_DoubleBuffer_equals___java_lang_Object(JAVA_OBJECT me, JAV
     goto label7;
     label22:;
     XMLVM_SOURCE_POSITION("DoubleBuffer.java", 242)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_nio_Buffer*) _r9.o)->fields.java_nio_Buffer.position_;
     XMLVM_SOURCE_POSITION("DoubleBuffer.java", 243)
+    XMLVM_CHECK_NPE(10)
     _r1.i = ((java_nio_Buffer*) _r10.o)->fields.java_nio_Buffer.position_;
     _r2 = _r0;
     _r0 = _r8;
     label28:;
     XMLVM_SOURCE_POSITION("DoubleBuffer.java", 245)
     if (_r0.i == 0) goto label7;
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((java_nio_Buffer*) _r9.o)->fields.java_nio_Buffer.limit_;
     if (_r2.i >= _r3.i) goto label7;
     XMLVM_SOURCE_POSITION("DoubleBuffer.java", 246)
@@ -1096,6 +1103,7 @@ JAVA_INT java_nio_DoubleBuffer_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r6;
     _r6.o = me;
     XMLVM_SOURCE_POSITION("DoubleBuffer.java", 345)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_nio_Buffer*) _r6.o)->fields.java_nio_Buffer.position_;
     XMLVM_SOURCE_POSITION("DoubleBuffer.java", 346)
     _r1.i = 0;
@@ -1104,6 +1112,7 @@ JAVA_INT java_nio_DoubleBuffer_hashCode__(JAVA_OBJECT me)
     _r0 = _r5;
     label6:;
     XMLVM_SOURCE_POSITION("DoubleBuffer.java", 348)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_nio_Buffer*) _r6.o)->fields.java_nio_Buffer.limit_;
     if (_r1.i < _r2.i) goto label11;
     XMLVM_SOURCE_POSITION("DoubleBuffer.java", 352)

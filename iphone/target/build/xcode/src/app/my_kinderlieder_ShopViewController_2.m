@@ -240,6 +240,7 @@ void my_kinderlieder_ShopViewController_2___INIT____my_kinderlieder_ShopViewCont
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("ShopViewController.java", 30)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_ShopViewController_2*) _r0.o)->fields.my_kinderlieder_ShopViewController_2.this_0_ = _r1.o;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UITableViewDelegate___INIT___(_r0.o);
@@ -272,18 +273,22 @@ void my_kinderlieder_ShopViewController_2_didSelectRowAtIndexPath___org_xmlvm_ip
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_get___int])(_r1.o, _r2.i);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("ShopViewController.java", 34)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((my_kinderlieder_Product*) _r0.o)->fields.my_kinderlieder_Product.state_;
     _r2.o = my_kinderlieder_Product_State_GET_INFO();
     if (_r1.o == _r2.o) goto label49;
     XMLVM_SOURCE_POSITION("ShopViewController.java", 35)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((my_kinderlieder_ShopViewController_2*) _r4.o)->fields.my_kinderlieder_ShopViewController_2.this_0_;
     _r1.o = my_kinderlieder_ShopViewController_access$000___my_kinderlieder_ShopViewController(_r1.o);
     XMLVM_CHECK_NPE(1)
     my_kinderlieder_ShopDetailViewController_show___my_kinderlieder_Product(_r1.o, _r0.o);
     XMLVM_SOURCE_POSITION("ShopViewController.java", 36)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((my_kinderlieder_ShopViewController_2*) _r4.o)->fields.my_kinderlieder_ShopViewController_2.this_0_;
     XMLVM_CHECK_NPE(1)
     _r1.o = org_xmlvm_iphone_UIViewController_getNavigationController__(_r1.o);
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((my_kinderlieder_ShopViewController_2*) _r4.o)->fields.my_kinderlieder_ShopViewController_2.this_0_;
     _r2.o = my_kinderlieder_ShopViewController_access$000___my_kinderlieder_ShopViewController(_r2.o);
     _r3.i = 1;

@@ -2164,6 +2164,7 @@ JAVA_BOOLEAN java_lang_SecurityManager_getInCheck__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SecurityManager.java", 656)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_SecurityManager*) _r1.o)->fields.java_lang_SecurityManager.inCheck_;
     XMLVM_EXIT_METHOD()
     return _r0.i;

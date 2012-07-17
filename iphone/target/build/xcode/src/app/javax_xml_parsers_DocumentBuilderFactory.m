@@ -619,6 +619,7 @@ void javax_xml_parsers_DocumentBuilderFactory___INIT___(JAVA_OBJECT me)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 61)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((javax_xml_parsers_DocumentBuilderFactory*) _r1.o)->fields.javax_xml_parsers_DocumentBuilderFactory.expandEntityReferences_ = _r0.i;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 69)
     XMLVM_EXIT_METHOD()
@@ -650,6 +651,7 @@ void javax_xml_parsers_DocumentBuilderFactory_setNamespaceAware___boolean(JAVA_O
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 107)
+    XMLVM_CHECK_NPE(0)
     ((javax_xml_parsers_DocumentBuilderFactory*) _r0.o)->fields.javax_xml_parsers_DocumentBuilderFactory.namespaceAware_ = _r1.i;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 108)
     XMLVM_EXIT_METHOD()
@@ -666,6 +668,7 @@ void javax_xml_parsers_DocumentBuilderFactory_setValidating___boolean(JAVA_OBJEC
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 116)
+    XMLVM_CHECK_NPE(0)
     ((javax_xml_parsers_DocumentBuilderFactory*) _r0.o)->fields.javax_xml_parsers_DocumentBuilderFactory.validating_ = _r1.i;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 117)
     XMLVM_EXIT_METHOD()
@@ -682,6 +685,7 @@ void javax_xml_parsers_DocumentBuilderFactory_setIgnoringElementContentWhitespac
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 126)
+    XMLVM_CHECK_NPE(0)
     ((javax_xml_parsers_DocumentBuilderFactory*) _r0.o)->fields.javax_xml_parsers_DocumentBuilderFactory.ignoringElementContentWhitespace_ = _r1.i;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 127)
     XMLVM_EXIT_METHOD()
@@ -698,6 +702,7 @@ void javax_xml_parsers_DocumentBuilderFactory_setExpandEntityReferences___boolea
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 135)
+    XMLVM_CHECK_NPE(0)
     ((javax_xml_parsers_DocumentBuilderFactory*) _r0.o)->fields.javax_xml_parsers_DocumentBuilderFactory.expandEntityReferences_ = _r1.i;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 136)
     XMLVM_EXIT_METHOD()
@@ -714,6 +719,7 @@ void javax_xml_parsers_DocumentBuilderFactory_setIgnoringComments___boolean(JAVA
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 144)
+    XMLVM_CHECK_NPE(0)
     ((javax_xml_parsers_DocumentBuilderFactory*) _r0.o)->fields.javax_xml_parsers_DocumentBuilderFactory.ignoringComments_ = _r1.i;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 145)
     XMLVM_EXIT_METHOD()
@@ -730,6 +736,7 @@ void javax_xml_parsers_DocumentBuilderFactory_setCoalescing___boolean(JAVA_OBJEC
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 154)
+    XMLVM_CHECK_NPE(0)
     ((javax_xml_parsers_DocumentBuilderFactory*) _r0.o)->fields.javax_xml_parsers_DocumentBuilderFactory.coalescing_ = _r1.i;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 155)
     XMLVM_EXIT_METHOD()
@@ -745,6 +752,7 @@ JAVA_BOOLEAN javax_xml_parsers_DocumentBuilderFactory_isNamespaceAware__(JAVA_OB
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 163)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((javax_xml_parsers_DocumentBuilderFactory*) _r1.o)->fields.javax_xml_parsers_DocumentBuilderFactory.namespaceAware_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -759,6 +767,7 @@ JAVA_BOOLEAN javax_xml_parsers_DocumentBuilderFactory_isValidating__(JAVA_OBJECT
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 172)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((javax_xml_parsers_DocumentBuilderFactory*) _r1.o)->fields.javax_xml_parsers_DocumentBuilderFactory.validating_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -773,6 +782,7 @@ JAVA_BOOLEAN javax_xml_parsers_DocumentBuilderFactory_isIgnoringElementContentWh
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 182)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((javax_xml_parsers_DocumentBuilderFactory*) _r1.o)->fields.javax_xml_parsers_DocumentBuilderFactory.ignoringElementContentWhitespace_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -787,6 +797,7 @@ JAVA_BOOLEAN javax_xml_parsers_DocumentBuilderFactory_isExpandEntityReferences__
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 191)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((javax_xml_parsers_DocumentBuilderFactory*) _r1.o)->fields.javax_xml_parsers_DocumentBuilderFactory.expandEntityReferences_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -801,6 +812,7 @@ JAVA_BOOLEAN javax_xml_parsers_DocumentBuilderFactory_isIgnoringComments__(JAVA_
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 200)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((javax_xml_parsers_DocumentBuilderFactory*) _r1.o)->fields.javax_xml_parsers_DocumentBuilderFactory.ignoringComments_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -815,6 +827,7 @@ JAVA_BOOLEAN javax_xml_parsers_DocumentBuilderFactory_isCoalescing__(JAVA_OBJECT
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 210)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((javax_xml_parsers_DocumentBuilderFactory*) _r1.o)->fields.javax_xml_parsers_DocumentBuilderFactory.coalescing_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -829,6 +842,7 @@ JAVA_OBJECT javax_xml_parsers_DocumentBuilderFactory_getSchema__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 239)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_parsers_DocumentBuilderFactory*) _r1.o)->fields.javax_xml_parsers_DocumentBuilderFactory.schema_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -844,6 +858,7 @@ void javax_xml_parsers_DocumentBuilderFactory_setSchema___javax_xml_validation_S
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 249)
+    XMLVM_CHECK_NPE(0)
     ((javax_xml_parsers_DocumentBuilderFactory*) _r0.o)->fields.javax_xml_parsers_DocumentBuilderFactory.schema_ = _r1.o;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 250)
     XMLVM_EXIT_METHOD()
@@ -859,6 +874,7 @@ JAVA_BOOLEAN javax_xml_parsers_DocumentBuilderFactory_isXIncludeAware__(JAVA_OBJ
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 259)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((javax_xml_parsers_DocumentBuilderFactory*) _r1.o)->fields.javax_xml_parsers_DocumentBuilderFactory.xIncludeAware_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -874,6 +890,7 @@ void javax_xml_parsers_DocumentBuilderFactory_setXIncludeAware___boolean(JAVA_OB
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 268)
+    XMLVM_CHECK_NPE(0)
     ((javax_xml_parsers_DocumentBuilderFactory*) _r0.o)->fields.javax_xml_parsers_DocumentBuilderFactory.xIncludeAware_ = _r1.i;
     XMLVM_SOURCE_POSITION("DocumentBuilderFactory.java", 269)
     XMLVM_EXIT_METHOD()

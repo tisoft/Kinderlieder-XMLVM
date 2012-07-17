@@ -236,8 +236,10 @@ void java_util_regex_AbstractCharClass_LazyCharClass___INIT___(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 202)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_AbstractCharClass_LazyCharClass*) _r1.o)->fields.java_util_regex_AbstractCharClass_LazyCharClass.posValue_ = _r0.o;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 204)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_AbstractCharClass_LazyCharClass*) _r1.o)->fields.java_util_regex_AbstractCharClass_LazyCharClass.negValue_ = _r0.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -256,17 +258,20 @@ JAVA_OBJECT java_util_regex_AbstractCharClass_LazyCharClass_getValue___boolean(J
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 207)
     if (_r3.i != 0) goto label17;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_AbstractCharClass_LazyCharClass*) _r2.o)->fields.java_util_regex_AbstractCharClass_LazyCharClass.posValue_;
     if (_r0.o != JAVA_NULL) goto label17;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 208)
     //java_util_regex_AbstractCharClass_LazyCharClass_computeValue__[6]
     XMLVM_CHECK_NPE(2)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_regex_AbstractCharClass_LazyCharClass*) _r2.o)->tib->vtable[6])(_r2.o);
+    XMLVM_CHECK_NPE(2)
     ((java_util_regex_AbstractCharClass_LazyCharClass*) _r2.o)->fields.java_util_regex_AbstractCharClass_LazyCharClass.posValue_ = _r0.o;
     label12:;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 212)
     if (_r3.i != 0) goto label35;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 213)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_AbstractCharClass_LazyCharClass*) _r2.o)->fields.java_util_regex_AbstractCharClass_LazyCharClass.posValue_;
     label16:;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 214)
@@ -275,6 +280,7 @@ JAVA_OBJECT java_util_regex_AbstractCharClass_LazyCharClass_getValue___boolean(J
     label17:;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 209)
     if (_r3.i == 0) goto label12;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_AbstractCharClass_LazyCharClass*) _r2.o)->fields.java_util_regex_AbstractCharClass_LazyCharClass.negValue_;
     if (_r0.o != JAVA_NULL) goto label12;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 210)
@@ -284,9 +290,11 @@ JAVA_OBJECT java_util_regex_AbstractCharClass_LazyCharClass_getValue___boolean(J
     _r1.i = 1;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_util_regex_AbstractCharClass_setNegative___boolean(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(2)
     ((java_util_regex_AbstractCharClass_LazyCharClass*) _r2.o)->fields.java_util_regex_AbstractCharClass_LazyCharClass.negValue_ = _r0.o;
     goto label12;
     label35:;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_AbstractCharClass_LazyCharClass*) _r2.o)->fields.java_util_regex_AbstractCharClass_LazyCharClass.negValue_;
     goto label16;
     //XMLVM_END_WRAPPER

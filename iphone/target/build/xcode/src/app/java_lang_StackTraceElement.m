@@ -414,12 +414,16 @@ void java_lang_StackTraceElement___INIT____java_lang_String_java_lang_String_jav
     XMLVM_THROW_CUSTOM(_r0.o)
     label13:;
     XMLVM_SOURCE_POSITION("StackTraceElement.java", 67)
+    XMLVM_CHECK_NPE(1)
     ((java_lang_StackTraceElement*) _r1.o)->fields.java_lang_StackTraceElement.declaringClass_ = _r2.o;
     XMLVM_SOURCE_POSITION("StackTraceElement.java", 68)
+    XMLVM_CHECK_NPE(1)
     ((java_lang_StackTraceElement*) _r1.o)->fields.java_lang_StackTraceElement.methodName_ = _r3.o;
     XMLVM_SOURCE_POSITION("StackTraceElement.java", 69)
+    XMLVM_CHECK_NPE(1)
     ((java_lang_StackTraceElement*) _r1.o)->fields.java_lang_StackTraceElement.fileName_ = _r4.o;
     XMLVM_SOURCE_POSITION("StackTraceElement.java", 70)
+    XMLVM_CHECK_NPE(1)
     ((java_lang_StackTraceElement*) _r1.o)->fields.java_lang_StackTraceElement.lineNumber_ = _r5.i;
     XMLVM_SOURCE_POSITION("StackTraceElement.java", 71)
     XMLVM_EXIT_METHOD()
@@ -468,8 +472,10 @@ JAVA_BOOLEAN java_lang_StackTraceElement_equals___java_lang_Object(JAVA_OBJECT m
     XMLVM_SOURCE_POSITION("StackTraceElement.java", 105)
     _r4.o = _r4.o;
     XMLVM_SOURCE_POSITION("StackTraceElement.java", 111)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_lang_StackTraceElement*) _r3.o)->fields.java_lang_StackTraceElement.methodName_;
     if (_r0.o == JAVA_NULL) goto label17;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_lang_StackTraceElement*) _r4.o)->fields.java_lang_StackTraceElement.methodName_;
     if (_r0.o != JAVA_NULL) goto label19;
     label17:;
@@ -550,6 +556,7 @@ JAVA_OBJECT java_lang_StackTraceElement_getClassName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("StackTraceElement.java", 145)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_StackTraceElement*) _r1.o)->fields.java_lang_StackTraceElement.declaringClass_;
     if (_r0.o != JAVA_NULL) goto label7;
     // "<unknown class>"
@@ -558,6 +565,7 @@ JAVA_OBJECT java_lang_StackTraceElement_getClassName__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label7:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_StackTraceElement*) _r1.o)->fields.java_lang_StackTraceElement.declaringClass_;
     goto label6;
     //XMLVM_END_WRAPPER
@@ -571,6 +579,7 @@ JAVA_OBJECT java_lang_StackTraceElement_getFileName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("StackTraceElement.java", 156)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_StackTraceElement*) _r1.o)->fields.java_lang_StackTraceElement.fileName_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -585,6 +594,7 @@ JAVA_INT java_lang_StackTraceElement_getLineNumber__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("StackTraceElement.java", 167)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_StackTraceElement*) _r1.o)->fields.java_lang_StackTraceElement.lineNumber_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -599,6 +609,7 @@ JAVA_OBJECT java_lang_StackTraceElement_getMethodName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("StackTraceElement.java", 178)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_StackTraceElement*) _r1.o)->fields.java_lang_StackTraceElement.methodName_;
     if (_r0.o != JAVA_NULL) goto label7;
     // "<unknown method>"
@@ -607,6 +618,7 @@ JAVA_OBJECT java_lang_StackTraceElement_getMethodName__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label7:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_StackTraceElement*) _r1.o)->fields.java_lang_StackTraceElement.methodName_;
     goto label6;
     //XMLVM_END_WRAPPER
@@ -621,6 +633,7 @@ JAVA_INT java_lang_StackTraceElement_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("StackTraceElement.java", 187)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_lang_StackTraceElement*) _r2.o)->fields.java_lang_StackTraceElement.methodName_;
     if (_r0.o != JAVA_NULL) goto label6;
     XMLVM_SOURCE_POSITION("StackTraceElement.java", 189)
@@ -630,10 +643,12 @@ JAVA_INT java_lang_StackTraceElement_hashCode__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label6:;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_lang_StackTraceElement*) _r2.o)->fields.java_lang_StackTraceElement.methodName_;
     //java_lang_String_hashCode__[4]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[4])(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_lang_StackTraceElement*) _r2.o)->fields.java_lang_StackTraceElement.declaringClass_;
     //java_lang_String_hashCode__[4]
     XMLVM_CHECK_NPE(1)
@@ -652,6 +667,7 @@ JAVA_BOOLEAN java_lang_StackTraceElement_isNativeMethod__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("StackTraceElement.java", 203)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_StackTraceElement*) _r2.o)->fields.java_lang_StackTraceElement.lineNumber_;
     _r1.i = -2;
     if (_r0.i != _r1.i) goto label7;

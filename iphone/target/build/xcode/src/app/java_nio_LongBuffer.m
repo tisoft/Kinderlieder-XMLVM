@@ -758,9 +758,11 @@ JAVA_OBJECT java_nio_LongBuffer_wrap___long_1ARRAY_int_int(JAVA_OBJECT n1, JAVA_
     XMLVM_SOURCE_POSITION("LongBuffer.java", 92)
     _r0.o = java_nio_BufferFactory_newLongBuffer___long_1ARRAY(_r4.o);
     XMLVM_SOURCE_POSITION("LongBuffer.java", 93)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.position_ = _r5.i;
     XMLVM_SOURCE_POSITION("LongBuffer.java", 94)
     _r1.i = _r5.i + _r6.i;
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.limit_ = _r1.i;
     XMLVM_SOURCE_POSITION("LongBuffer.java", 96)
     XMLVM_EXIT_METHOD()
@@ -844,8 +846,10 @@ JAVA_INT java_nio_LongBuffer_compareTo___java_nio_LongBuffer(JAVA_OBJECT me, JAV
     _r0.i = java_nio_Buffer_remaining__(_r9.o);
     label14:;
     XMLVM_SOURCE_POSITION("LongBuffer.java", 182)
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((java_nio_Buffer*) _r9.o)->fields.java_nio_Buffer.position_;
     XMLVM_SOURCE_POSITION("LongBuffer.java", 183)
+    XMLVM_CHECK_NPE(10)
     _r2.i = ((java_nio_Buffer*) _r10.o)->fields.java_nio_Buffer.position_;
     _r8 = _r2;
     _r2 = _r0;
@@ -940,14 +944,17 @@ JAVA_BOOLEAN java_nio_LongBuffer_equals___java_lang_Object(JAVA_OBJECT me, JAVA_
     goto label7;
     label22:;
     XMLVM_SOURCE_POSITION("LongBuffer.java", 236)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_nio_Buffer*) _r9.o)->fields.java_nio_Buffer.position_;
     XMLVM_SOURCE_POSITION("LongBuffer.java", 237)
+    XMLVM_CHECK_NPE(10)
     _r1.i = ((java_nio_Buffer*) _r10.o)->fields.java_nio_Buffer.position_;
     _r2 = _r0;
     _r0 = _r8;
     label28:;
     XMLVM_SOURCE_POSITION("LongBuffer.java", 239)
     if (_r0.i == 0) goto label7;
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((java_nio_Buffer*) _r9.o)->fields.java_nio_Buffer.limit_;
     if (_r2.i >= _r3.i) goto label7;
     XMLVM_SOURCE_POSITION("LongBuffer.java", 240)
@@ -1089,6 +1096,7 @@ JAVA_INT java_nio_LongBuffer_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r6;
     _r6.o = me;
     XMLVM_SOURCE_POSITION("LongBuffer.java", 335)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_nio_Buffer*) _r6.o)->fields.java_nio_Buffer.position_;
     XMLVM_SOURCE_POSITION("LongBuffer.java", 336)
     _r1.i = 0;
@@ -1097,6 +1105,7 @@ JAVA_INT java_nio_LongBuffer_hashCode__(JAVA_OBJECT me)
     _r0 = _r5;
     label6:;
     XMLVM_SOURCE_POSITION("LongBuffer.java", 338)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_nio_Buffer*) _r6.o)->fields.java_nio_Buffer.limit_;
     if (_r1.i < _r2.i) goto label11;
     XMLVM_SOURCE_POSITION("LongBuffer.java", 342)

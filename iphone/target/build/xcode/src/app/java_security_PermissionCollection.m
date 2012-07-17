@@ -338,6 +338,7 @@ JAVA_BOOLEAN java_security_PermissionCollection_isReadOnly__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("PermissionCollection.java", 81)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_security_PermissionCollection*) _r1.o)->fields.java_security_PermissionCollection.readOnly_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -353,6 +354,7 @@ void java_security_PermissionCollection_setReadOnly__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("PermissionCollection.java", 89)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((java_security_PermissionCollection*) _r1.o)->fields.java_security_PermissionCollection.readOnly_ = _r0.i;
     XMLVM_SOURCE_POSITION("PermissionCollection.java", 90)
     XMLVM_EXIT_METHOD()

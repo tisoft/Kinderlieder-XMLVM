@@ -1074,19 +1074,25 @@ void gnu_xml_stream_XIncludeFilter___INIT____javax_xml_stream_XMLStreamReader_ja
     _r0.o = __NEW_java_util_HashSet();
     XMLVM_CHECK_NPE(0)
     java_util_HashSet___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.seen_ = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 113)
     _r0.i = -1;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.len_ = _r0.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 123)
     _r0.o = JAVA_NULL;
     _r0.o = gnu_xml_stream_XMLParser_absolutize___java_lang_String_java_lang_String(_r0.o, _r3.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.systemId_ = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 124)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.namespaceAware_ = _r4.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 125)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.validating_ = _r5.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 126)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.expandERefs_ = _r6.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 127)
     XMLVM_EXIT_METHOD()
@@ -1102,9 +1108,11 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_getAttributeCount__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 131)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label19;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 133)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getAttributes__])(_r0.o);
@@ -1136,9 +1144,11 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getAttributeLocalName___int(JAVA_OBJEC
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 141)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label23;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 143)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getAttributes__])(_r0.o);
@@ -1175,9 +1185,11 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getAttributeNamespace___int(JAVA_OBJEC
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 154)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label23;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 156)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getAttributes__])(_r0.o);
@@ -1214,9 +1226,11 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getAttributePrefix___int(JAVA_OBJECT m
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 167)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label23;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 169)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getAttributes__])(_r0.o);
@@ -1256,9 +1270,11 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getAttributeName___int(JAVA_OBJECT me,
     _r4.o = me;
     _r5.i = n1;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 180)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r4.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label37;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 182)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r4.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getAttributes__])(_r0.o);
@@ -1306,9 +1322,11 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getAttributeType___int(JAVA_OBJECT me,
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 196)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label34;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 198)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getAttributes__])(_r0.o);
@@ -1354,9 +1372,11 @@ JAVA_BOOLEAN gnu_xml_stream_XIncludeFilter_isAttributeSpecified___int(JAVA_OBJEC
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 210)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label25;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 212)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getAttributes__])(_r0.o);
@@ -1394,9 +1414,11 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getAttributeValue___int(JAVA_OBJECT me
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 223)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label23;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 225)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getAttributes__])(_r0.o);
@@ -1437,9 +1459,11 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getAttributeValue___java_lang_String_j
     _r4.o = n2;
     _r1.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 236)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r2.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label28;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 238)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r2.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getAttributes__])(_r0.o);
@@ -1478,9 +1502,11 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getElementText__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 250)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 251)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getTextContent__])(_r0.o);
@@ -1503,6 +1529,7 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_getEventType__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 257)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.event_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -1517,9 +1544,11 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getLocalName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 262)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 263)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getLocalName__])(_r0.o);
@@ -1545,17 +1574,21 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getName__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 269)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r4.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label29;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 271)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r4.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getLocalName__])(_r0.o);
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 272)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_stream_XIncludeFilter*) _r4.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNamespaceURI__])(_r1.o);
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 273)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_stream_XIncludeFilter*) _r4.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(2)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getPrefix__])(_r2.o);
@@ -1583,9 +1616,11 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getNamespaceURI__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 281)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 282)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNamespaceURI__])(_r0.o);
@@ -1608,9 +1643,11 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getPIData__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 290)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label13;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 291)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     _r1.o = _r1.o;
     XMLVM_CHECK_NPE(1)
@@ -1634,9 +1671,11 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getPITarget__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 297)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label13;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 298)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     _r1.o = _r1.o;
     XMLVM_CHECK_NPE(1)
@@ -1660,9 +1699,11 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getPrefix__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 304)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 305)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getPrefix__])(_r0.o);
@@ -1688,9 +1729,11 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getText__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 311)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r4.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 312)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r4.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeValue__])(_r0.o);
@@ -1700,9 +1743,11 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getText__(JAVA_OBJECT me)
     return _r0.o;
     label11:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 313)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r4.o)->fields.gnu_xml_stream_XIncludeFilter.walker_;
     if (_r0.o == JAVA_NULL) goto label28;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 315)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r4.o)->fields.gnu_xml_stream_XIncludeFilter.walker_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_traversal_TreeWalker_getCurrentNode__])(_r0.o);
@@ -1714,12 +1759,15 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getText__(JAVA_OBJECT me)
     goto label10;
     label28:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 319)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r4.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
     if (_r0.o == JAVA_NULL) goto label43;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 320)
     _r0.o = __NEW_java_lang_String();
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_stream_XIncludeFilter*) _r4.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
     _r2.i = 0;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((gnu_xml_stream_XIncludeFilter*) _r4.o)->fields.gnu_xml_stream_XIncludeFilter.len_;
     XMLVM_CHECK_NPE(0)
     java_lang_String___INIT____char_1ARRAY_int_int(_r0.o, _r1.o, _r2.i, _r3.i);
@@ -1739,24 +1787,31 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getTextCharacters__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 326)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label21;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 328)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeValue__])(_r0.o);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_toCharArray__(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 329)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.len_ = _r0.i;
     label21:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 331)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
     if (_r0.o == JAVA_NULL) goto label28;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 332)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
     label27:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 333)
@@ -1786,30 +1841,38 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_getTextCharacters___int_char_1ARRAY_int_i
     _r5.i = n3;
     _r6.i = n4;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 340)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r2.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label21;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 342)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r2.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeValue__])(_r0.o);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_toCharArray__(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_XIncludeFilter*) _r2.o)->fields.gnu_xml_stream_XIncludeFilter.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 343)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r2.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_XIncludeFilter*) _r2.o)->fields.gnu_xml_stream_XIncludeFilter.len_ = _r0.i;
     label21:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 345)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r2.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
     if (_r0.o == JAVA_NULL) goto label40;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 347)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r2.o)->fields.gnu_xml_stream_XIncludeFilter.len_;
     _r0.i = _r0.i - _r3.i;
     _r0.i = java_lang_Math_min___int_int(_r0.i, _r6.i);
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 348)
     if (_r0.i <= 0) goto label39;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 349)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_stream_XIncludeFilter*) _r2.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r3.i, _r4.o, _r5.i, _r0.i);
     label39:;
@@ -1831,24 +1894,31 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_getTextLength__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 357)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label21;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 359)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeValue__])(_r0.o);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_toCharArray__(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 360)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.len_ = _r0.i;
     label21:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 362)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
     if (_r0.o == JAVA_NULL) goto label28;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 363)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.len_;
     label27:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 364)
@@ -1869,21 +1939,27 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_getTextStart__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 369)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label21;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 371)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeValue__])(_r0.o);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_toCharArray__(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 372)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.len_ = _r0.i;
     label21:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 374)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r1.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
     if (_r0.o == JAVA_NULL) goto label27;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 375)
@@ -1911,6 +1987,7 @@ JAVA_BOOLEAN gnu_xml_stream_XIncludeFilter_hasNext__(JAVA_OBJECT me)
     _r2.i = 1;
     _r1.i = -1;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 382)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r3.o)->fields.gnu_xml_stream_XIncludeFilter.lookahead_;
     if (_r0.i != 0) goto label11;
     XMLVM_TRY_BEGIN(w7211aaac46b1b7)
@@ -1927,9 +2004,11 @@ JAVA_BOOLEAN gnu_xml_stream_XIncludeFilter_hasNext__(JAVA_OBJECT me)
     XMLVM_RESTORE_EXCEPTION_ENV(w7211aaac46b1b7)
     label9:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 392)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_stream_XIncludeFilter*) _r3.o)->fields.gnu_xml_stream_XIncludeFilter.lookahead_ = _r2.i;
     label11:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 394)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r3.o)->fields.gnu_xml_stream_XIncludeFilter.event_;
     if (_r0.i == _r1.i) goto label21;
     _r0 = _r2;
@@ -1940,6 +2019,7 @@ JAVA_BOOLEAN gnu_xml_stream_XIncludeFilter_hasNext__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 390)
     java_lang_Thread* curThread_w7211aaac46b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
     _r0.o = curThread_w7211aaac46b1c20->fields.java_lang_Thread.xmlvmException_;
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_stream_XIncludeFilter*) _r3.o)->fields.gnu_xml_stream_XIncludeFilter.event_ = _r1.i;
     goto label9;
     label21:;
@@ -1969,11 +2049,14 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     _r7.i = 0;
     _r6.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 400)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.lookahead_;
     if (_r0.i == 0) goto label14;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 402)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.lookahead_ = _r7.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 403)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_;
     label13:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 657)
@@ -1981,13 +2064,17 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     return _r0.i;
     label14:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 405)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.buf_ = _r6.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 406)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.len_ = _r7.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 407)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.walker_;
     if (_r0.o == JAVA_NULL) goto label137;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 409)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.walker_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_traversal_TreeWalker_getCurrentNode__])(_r0.o);
@@ -1996,6 +2083,7 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     _r1.i = (*(JAVA_SHORT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeType__])(_r0.o);
     if (_r1.i != _r8.i) goto label118;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 413)
+    XMLVM_CHECK_NPE(9)
     _r1.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.seen_;
     //java_util_HashSet_contains___java_lang_Object[10]
     XMLVM_CHECK_NPE(1)
@@ -2006,15 +2094,19 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 414)
     if (_r1.i == 0) goto label59;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 416)
+    XMLVM_CHECK_NPE(9)
     _r1.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.seen_;
     //java_util_HashSet_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(1)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_HashSet*) _r1.o)->tib->vtable[7])(_r1.o, _r0.o);
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 417)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.current_ = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 418)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_ = _r8.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 419)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_;
     goto label13;
     label57:;
@@ -2022,73 +2114,91 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     goto label43;
     label59:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 421)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.backtracking_;
     if (_r0.i == 0) goto label103;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 423)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.walker_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_traversal_TreeWalker_nextSibling__])(_r0.o);
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 424)
     if (_r0.o == JAVA_NULL) goto label73;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 425)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.backtracking_ = _r7.i;
     label73:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 440)
     if (_r0.o != JAVA_NULL) goto label156;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 442)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.walker_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_traversal_TreeWalker_parentNode__])(_r0.o);
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.current_ = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 443)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     if (_r0.o == JAVA_NULL) goto label133;
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.current_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_SHORT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeType__])(_r0.o);
     if (_r0.i != _r8.i) goto label133;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 446)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.backtracking_ = _r8.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 447)
     _r0.i = 2;
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_ = _r0.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 448)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_;
     goto label13;
     label103:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 429)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.walker_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_traversal_TreeWalker_firstChild__])(_r0.o);
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 430)
     if (_r0.o != JAVA_NULL) goto label73;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 431)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.walker_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_traversal_TreeWalker_nextSibling__])(_r0.o);
     goto label73;
     label118:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 436)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.walker_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_traversal_TreeWalker_firstChild__])(_r0.o);
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 437)
     if (_r0.o != JAVA_NULL) goto label73;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 438)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.walker_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_traversal_TreeWalker_nextSibling__])(_r0.o);
     goto label73;
     label133:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 452)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.walker_ = _r6.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 453)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.current_ = _r6.o;
     label137:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 488)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.result_;
     if (_r0.o == JAVA_NULL) goto label458;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 490)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.result_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_SHORT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_xpath_XPathResult_getResultType__])(_r0.o);
@@ -2110,6 +2220,7 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label156:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 458)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.current_ = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 459)
     XMLVM_CHECK_NPE(0)
@@ -2140,13 +2251,18 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 465)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_toCharArray__(_r0.o);
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 466)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.len_ = _r0.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 467)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.len_;
     XMLVM_CHECK_NPE(9)
     _r0.i = gnu_xml_stream_XIncludeFilter_isSpace___char_1ARRAY_int(_r9.o, _r0.o, _r1.i);
@@ -2154,8 +2270,10 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     _r0 = _r5;
     label203:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 468)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_ = _r0.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 470)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_;
     goto label13;
     label209:;
@@ -2165,33 +2283,42 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     label211:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 472)
     _r0.i = 12;
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_ = _r0.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 473)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_;
     goto label13;
     label219:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 475)
     _r0.i = 5;
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_ = _r0.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 476)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_;
     goto label13;
     label226:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 478)
     _r0.i = 3;
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_ = _r0.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 479)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_;
     goto label13;
     label233:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 481)
     _r0.i = 9;
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_ = _r0.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 482)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_;
     goto label13;
     label241:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 493)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.result_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_xpath_XPathResult_getBooleanValue__])(_r0.o);
@@ -2203,16 +2330,22 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 495)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_toCharArray__(_r0.o);
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 496)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.len_ = _r0.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 497)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.result_ = _r6.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 498)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_ = _r4.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 499)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_;
     goto label13;
     label270:;
@@ -2221,6 +2354,7 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     goto label251;
     label273:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 501)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.result_;
     XMLVM_CHECK_NPE(0)
     _r0.d = (*(JAVA_DOUBLE (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_xpath_XPathResult_getNumberValue__])(_r0.o);
@@ -2229,35 +2363,48 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 503)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_toCharArray__(_r0.o);
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 504)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.len_ = _r0.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 505)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.result_ = _r6.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 506)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_ = _r4.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 507)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_;
     goto label13;
     label302:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 509)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.result_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_xpath_XPathResult_getStringValue__])(_r0.o);
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 510)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_toCharArray__(_r0.o);
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 511)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.len_ = _r0.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 512)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.result_ = _r6.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 513)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.len_;
     XMLVM_CHECK_NPE(9)
     _r0.i = gnu_xml_stream_XIncludeFilter_isSpace___char_1ARRAY_int(_r9.o, _r0.o, _r1.i);
@@ -2265,8 +2412,10 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     _r0 = _r5;
     label332:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 514)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_ = _r0.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 516)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_;
     goto label13;
     label338:;
@@ -2275,6 +2424,7 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     goto label332;
     label340:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 519)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.result_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_xpath_XPathResult_getSingleNodeValue__])(_r0.o);
@@ -2286,11 +2436,14 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     _r1.o = gnu_xml_stream_XIncludeFilter_getDocumentTraversal___org_w3c_dom_Document(_r9.o, _r1.o);
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 522)
     _r2.i = 221;
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.expandERefs_;
     XMLVM_CHECK_NPE(1)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_OBJECT, JAVA_BOOLEAN)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_traversal_DocumentTraversal_createTreeWalker___org_w3c_dom_Node_int_org_w3c_dom_traversal_NodeFilter_boolean])(_r1.o, _r0.o, _r2.i, _r6.o, _r3.i);
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.walker_ = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 523)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.result_ = _r6.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 524)
     //gnu_xml_stream_XIncludeFilter_next__[48]
@@ -2299,12 +2452,14 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     goto label13;
     label372:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 527)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.result_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_xpath_XPathResult_iterateNext__])(_r0.o);
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 528)
     if (_r0.o != JAVA_NULL) goto label388;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 530)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.result_ = _r6.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 531)
     //gnu_xml_stream_XIncludeFilter_next__[48]
@@ -2320,9 +2475,11 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     _r1.o = gnu_xml_stream_XIncludeFilter_getDocumentTraversal___org_w3c_dom_Document(_r9.o, _r1.o);
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 535)
     _r2.i = 221;
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.expandERefs_;
     XMLVM_CHECK_NPE(1)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_OBJECT, JAVA_BOOLEAN)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_traversal_DocumentTraversal_createTreeWalker___org_w3c_dom_Node_int_org_w3c_dom_traversal_NodeFilter_boolean])(_r1.o, _r0.o, _r2.i, _r6.o, _r3.i);
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.walker_ = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 536)
     //gnu_xml_stream_XIncludeFilter_next__[48]
@@ -2331,15 +2488,19 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     goto label13;
     label412:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 539)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.result_;
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.snapshotIndex_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.snapshotIndex_ = _r2.i;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_xpath_XPathResult_snapshotItem___int])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 540)
     if (_r0.o != JAVA_NULL) goto label434;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 542)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.result_ = _r6.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 543)
     //gnu_xml_stream_XIncludeFilter_next__[48]
@@ -2355,9 +2516,11 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     _r1.o = gnu_xml_stream_XIncludeFilter_getDocumentTraversal___org_w3c_dom_Document(_r9.o, _r1.o);
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 547)
     _r2.i = 221;
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.expandERefs_;
     XMLVM_CHECK_NPE(1)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_OBJECT, JAVA_BOOLEAN)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_traversal_DocumentTraversal_createTreeWalker___org_w3c_dom_Node_int_org_w3c_dom_traversal_NodeFilter_boolean])(_r1.o, _r0.o, _r2.i, _r6.o, _r3.i);
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.walker_ = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 548)
     //gnu_xml_stream_XIncludeFilter_next__[48]
@@ -2366,38 +2529,48 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     goto label13;
     label458:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 553)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.includedText_;
     if (_r0.o == JAVA_NULL) goto label534;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 556)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
     if (_r0.o != JAVA_NULL) goto label472;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 557)
     _r0.i = 2048;
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r0.i);
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.buf_ = _r0.o;
     label472:;
     XMLVM_TRY_BEGIN(w7211aaac47b1d344)
     // Begin try
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 560)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.includedText_;
+    XMLVM_CHECK_NPE(9)
     _r1.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
     _r2.i = 0;
+    XMLVM_CHECK_NPE(9)
     _r3.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
     _r3.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r3.o));
     //java_io_Reader_read___char_1ARRAY_int_int[11]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) ((java_io_Reader*) _r0.o)->tib->vtable[11])(_r0.o, _r1.o, _r2.i, _r3.i);
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.len_ = _r0.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 561)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.len_;
     _r1.i = -1;
     if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w7211aaac47b1d344->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w7211aaac47b1d344, sizeof(XMLVM_JMP_BUF)); goto label503; };
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 563)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.includedText_ = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 564)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 565)
     //gnu_xml_stream_XIncludeFilter_next__[48]
@@ -2414,7 +2587,9 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     label503:;
     XMLVM_TRY_BEGIN(w7211aaac47b1d346)
     // Begin try
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.buf_;
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.len_;
     XMLVM_CHECK_NPE(9)
     _r0.i = gnu_xml_stream_XIncludeFilter_isSpace___char_1ARRAY_int(_r9.o, _r0.o, _r1.i);
@@ -2430,6 +2605,7 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     label514:;
     XMLVM_TRY_BEGIN(w7211aaac47b1d348)
     // Begin try
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_ = _r0.i;
     // End try
     XMLVM_TRY_END
@@ -2462,8 +2638,10 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 579)
     XMLVM_CHECK_NPE(9)
     _r0.i = javax_xml_stream_util_ReaderDelegate_next__(_r9.o);
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_ = _r0.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 580)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_;
     switch (_r0.i) {
     case 1: goto label559;
@@ -2471,8 +2649,10 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     }
     label545:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 655)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.inInclude_;
     if (_r0.i == 0) goto label808;
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.inFallback_;
     if (_r0.i != 0) goto label808;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 656)
@@ -2509,6 +2689,7 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     //gnu_xml_stream_XIncludeFilter_getAttributeValue___java_lang_String_java_lang_String[14]
     XMLVM_CHECK_NPE(9)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_stream_XIncludeFilter*) _r9.o)->tib->vtable[14])(_r9.o, _r6.o, _r0.o);
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.href_ = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 590)
     // "parse"
@@ -2542,6 +2723,7 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(9)
     _r6.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_stream_XIncludeFilter*) _r9.o)->tib->vtable[14])(_r9.o, _r6.o, _r0.o);
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 596)
+    XMLVM_CHECK_NPE(9)
     _r1.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.href_;
     _r0 = _r9;
     XMLVM_CHECK_NPE(0)
@@ -2561,8 +2743,10 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 603)
     XMLVM_CHECK_NPE(9)
     _r1.i = javax_xml_stream_util_ReaderDelegate_next__(_r9.o);
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_ = _r1.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 604)
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_;
     switch (_r1.i) {
     case 1: goto label651;
@@ -2580,10 +2764,12 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     goto label631;
     label657:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 615)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.inInclude_ = _r8.i;
     goto label633;
     label660:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 617)
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.inInclude_;
     if (_r1.i == 0) goto label689;
     // "fallback"
@@ -2593,10 +2779,13 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
     if (_r1.i == 0) goto label689;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 619)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.seenFallback_;
     if (_r0.i != 0) goto label681;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 620)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.seenFallback_ = _r8.i;
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.inFallback_ = _r8.i;
     goto label633;
     label681:;
@@ -2609,6 +2798,7 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label689:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 624)
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.inInclude_;
     if (_r1.i == 0) goto label633;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 626)
@@ -2655,8 +2845,10 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
     if (_r1.i == 0) goto label797;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 639)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.seenFallback_;
     if (_r0.i != 0) goto label781;
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.included_;
     if (_r0.i == 0) goto label781;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 641)
@@ -2665,6 +2857,7 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(389);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(9)
     _r1.o = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.href_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
@@ -2683,12 +2876,17 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r1.o)
     label781:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 645)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.included_ = _r7.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 646)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.href_ = _r6.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 647)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.seenFallback_ = _r7.i;
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.inFallback_ = _r7.i;
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.inInclude_ = _r7.i;
     label791:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 651)
@@ -2705,9 +2903,11 @@ JAVA_INT gnu_xml_stream_XIncludeFilter_next__(JAVA_OBJECT me)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r0.o);
     if (_r0.i == 0) goto label791;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 650)
+    XMLVM_CHECK_NPE(9)
     ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.inFallback_ = _r7.i;
     goto label791;
     label808:;
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_stream_XIncludeFilter*) _r9.o)->fields.gnu_xml_stream_XIncludeFilter.event_;
     goto label13;
     label812:;
@@ -2784,6 +2984,7 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getBaseURI__(JAVA_OBJECT me)
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 678)
     if (_r0.o != JAVA_NULL) goto label16;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r2.o)->fields.gnu_xml_stream_XIncludeFilter.systemId_;
     label16:;
     XMLVM_EXIT_METHOD()
@@ -2818,6 +3019,7 @@ JAVA_BOOLEAN gnu_xml_stream_XIncludeFilter_includeResource___java_lang_String_ja
     _r13.o = n6;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 685)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.included_ = _r0.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 688)
     if (_r10.o == JAVA_NULL) goto label16;
@@ -2913,24 +3115,30 @@ JAVA_BOOLEAN gnu_xml_stream_XIncludeFilter_includeResource___java_lang_String_ja
     XMLVM_TRY_BEGIN(w7211aaac50b1c23)
     // Begin try
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 697)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.seen_;
     //java_util_HashSet_clear__[8]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT)) ((java_util_HashSet*) _r1.o)->tib->vtable[8])(_r1.o);
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 698)
     _r1.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.result_ = _r1.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 699)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.snapshotIndex_ = _r1.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 700)
     _r1.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.walker_ = _r1.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 701)
     _r1.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.current_ = _r1.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 702)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.backtracking_ = _r1.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 704)
     XMLVM_CHECK_NPE(7)
@@ -2952,6 +3160,7 @@ JAVA_BOOLEAN gnu_xml_stream_XIncludeFilter_includeResource___java_lang_String_ja
     if (_r10.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w7211aaac50b1c23->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w7211aaac50b1c23, sizeof(XMLVM_JMP_BUF)); goto label107; };
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 711)
     _r1.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.result_ = _r1.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 712)
     XMLVM_CHECK_NPE(2)
@@ -2960,9 +3169,11 @@ JAVA_BOOLEAN gnu_xml_stream_XIncludeFilter_includeResource___java_lang_String_ja
     _r2.i = 221;
     _r3.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 714)
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.expandERefs_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_OBJECT, JAVA_BOOLEAN)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_traversal_DocumentTraversal_createTreeWalker___org_w3c_dom_Node_int_org_w3c_dom_traversal_NodeFilter_boolean])(_r0.o, _r1.o, _r2.i, _r3.o, _r4.i);
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.walker_ = _r0.o;
     // End try
     XMLVM_TRY_END
@@ -3005,12 +3216,15 @@ JAVA_BOOLEAN gnu_xml_stream_XIncludeFilter_includeResource___java_lang_String_ja
     XMLVM_TRY_BEGIN(w7211aaac50b1c29)
     // Begin try
     _r1.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.result_ = _r1.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 719)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.snapshotIndex_ = _r1.i;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 720)
     _r1.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.walker_ = _r1.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 722)
     _r1.i = 40;
@@ -3070,12 +3284,15 @@ JAVA_BOOLEAN gnu_xml_stream_XIncludeFilter_includeResource___java_lang_String_ja
     _r2.i = 221;
     _r3.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 762)
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.expandERefs_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_OBJECT, JAVA_BOOLEAN)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_traversal_DocumentTraversal_createTreeWalker___org_w3c_dom_Node_int_org_w3c_dom_traversal_NodeFilter_boolean])(_r0.o, _r1.o, _r2.i, _r3.o, _r4.i);
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.walker_ = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 763)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.included_ = _r0.i;
     { XMLVM_MEMCPY(curThread_w7211aaac50b1c31->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w7211aaac50b1c31, sizeof(XMLVM_JMP_BUF)); goto label100; };
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 825)
@@ -3249,9 +3466,11 @@ JAVA_BOOLEAN gnu_xml_stream_XIncludeFilter_includeResource___java_lang_String_ja
     _r8.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_SHORT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_xpath_XPathEvaluator_evaluate___java_lang_String_org_w3c_dom_Node_org_w3c_dom_xpath_XPathNSResolver_short_java_lang_Object])(_r0.o, _r1.o, _r2.o, _r3.o, _r4.i, _r5.o);
     _r8.o = _r8.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 770)
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.result_ = _r8.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 776)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.included_ = _r0.i;
     { XMLVM_MEMCPY(curThread_w7211aaac50b1c47->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w7211aaac50b1c47, sizeof(XMLVM_JMP_BUF)); goto label100; };
     // End try
@@ -3314,12 +3533,15 @@ JAVA_BOOLEAN gnu_xml_stream_XIncludeFilter_includeResource___java_lang_String_ja
     _r2.i = 221;
     _r3.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 788)
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.expandERefs_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_OBJECT, JAVA_BOOLEAN)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_traversal_DocumentTraversal_createTreeWalker___org_w3c_dom_Node_int_org_w3c_dom_traversal_NodeFilter_boolean])(_r0.o, _r1.o, _r2.i, _r3.o, _r4.i);
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.walker_ = _r0.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 789)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.included_ = _r0.i;
     { XMLVM_MEMCPY(curThread_w7211aaac50b1c53->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w7211aaac50b1c53, sizeof(XMLVM_JMP_BUF)); goto label100; };
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 793)
@@ -3382,6 +3604,7 @@ JAVA_BOOLEAN gnu_xml_stream_XIncludeFilter_includeResource___java_lang_String_ja
     _r2.o = xmlvm_create_java_string_from_pool(128);
     XMLVM_CHECK_NPE(0)
     java_io_InputStreamReader___INIT____java_io_InputStream_java_lang_String(_r0.o, _r1.o, _r2.o);
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.includedText_ = _r0.o;
     // End try
     XMLVM_TRY_END
@@ -3396,6 +3619,7 @@ JAVA_BOOLEAN gnu_xml_stream_XIncludeFilter_includeResource___java_lang_String_ja
     // Begin try
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 812)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.included_ = _r0.i;
     { XMLVM_MEMCPY(curThread_w7211aaac50b1c59->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w7211aaac50b1c59, sizeof(XMLVM_JMP_BUF)); goto label100; };
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 811)
@@ -3413,6 +3637,7 @@ JAVA_BOOLEAN gnu_xml_stream_XIncludeFilter_includeResource___java_lang_String_ja
     _r2.o = __NEW_java_io_InputStreamReader();
     XMLVM_CHECK_NPE(2)
     java_io_InputStreamReader___INIT____java_io_InputStream_java_lang_String(_r2.o, _r1.o, _r0.o);
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_XIncludeFilter*) _r7.o)->fields.gnu_xml_stream_XIncludeFilter.includedText_ = _r2.o;
     { XMLVM_MEMCPY(curThread_w7211aaac50b1c61->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w7211aaac50b1c61, sizeof(XMLVM_JMP_BUF)); goto label386; };
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 815)
@@ -3555,6 +3780,7 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getDocumentBuilder__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 861)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r3.o)->fields.gnu_xml_stream_XIncludeFilter.builder_;
     if (_r0.o != JAVA_NULL) goto label28;
     XMLVM_TRY_BEGIN(w7211aaac53b1b5)
@@ -3566,10 +3792,12 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getDocumentBuilder__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     javax_xml_parsers_DocumentBuilderFactory_setXIncludeAware___boolean(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 867)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_xml_stream_XIncludeFilter*) _r3.o)->fields.gnu_xml_stream_XIncludeFilter.namespaceAware_;
     XMLVM_CHECK_NPE(0)
     javax_xml_parsers_DocumentBuilderFactory_setNamespaceAware___boolean(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 868)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_xml_stream_XIncludeFilter*) _r3.o)->fields.gnu_xml_stream_XIncludeFilter.validating_;
     XMLVM_CHECK_NPE(0)
     javax_xml_parsers_DocumentBuilderFactory_setValidating___boolean(_r0.o, _r1.i);
@@ -3577,6 +3805,7 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getDocumentBuilder__(JAVA_OBJECT me)
     //javax_xml_parsers_DocumentBuilderFactory_newDocumentBuilder__[8]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((javax_xml_parsers_DocumentBuilderFactory*) _r0.o)->tib->vtable[8])(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_stream_XIncludeFilter*) _r3.o)->fields.gnu_xml_stream_XIncludeFilter.builder_ = _r0.o;
     // End try
     XMLVM_TRY_END
@@ -3586,10 +3815,12 @@ JAVA_OBJECT gnu_xml_stream_XIncludeFilter_getDocumentBuilder__(JAVA_OBJECT me)
     XMLVM_RESTORE_EXCEPTION_ENV(w7211aaac53b1b5)
     label28:;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 878)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r3.o)->fields.gnu_xml_stream_XIncludeFilter.builder_;
     XMLVM_CHECK_NPE(0)
     javax_xml_parsers_DocumentBuilder_reset__(_r0.o);
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 879)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_XIncludeFilter*) _r3.o)->fields.gnu_xml_stream_XIncludeFilter.builder_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

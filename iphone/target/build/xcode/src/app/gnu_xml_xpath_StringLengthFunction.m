@@ -326,6 +326,7 @@ void gnu_xml_xpath_StringLengthFunction___INIT____gnu_xml_xpath_Expr(JAVA_OBJECT
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_Expr___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("StringLengthFunction.java", 65)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_StringLengthFunction*) _r0.o)->fields.gnu_xml_xpath_StringLengthFunction.arg_ = _r1.o;
     XMLVM_SOURCE_POSITION("StringLengthFunction.java", 66)
     XMLVM_EXIT_METHOD()
@@ -350,6 +351,7 @@ JAVA_OBJECT gnu_xml_xpath_StringLengthFunction_evaluate___org_w3c_dom_Node_int_i
     _r6.i = n2;
     _r7.i = n3;
     XMLVM_SOURCE_POSITION("StringLengthFunction.java", 71)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_StringLengthFunction*) _r4.o)->fields.gnu_xml_xpath_StringLengthFunction.arg_;
     if (_r0.o != JAVA_NULL) goto label20;
     _r0.o = JAVA_NULL;
@@ -367,6 +369,7 @@ JAVA_OBJECT gnu_xml_xpath_StringLengthFunction_evaluate___org_w3c_dom_Node_int_i
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label20:;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_StringLengthFunction*) _r4.o)->fields.gnu_xml_xpath_StringLengthFunction.arg_;
     //gnu_xml_xpath_Expr_evaluate___org_w3c_dom_Node_int_int[9]
     XMLVM_CHECK_NPE(0)
@@ -387,6 +390,7 @@ JAVA_OBJECT gnu_xml_xpath_StringLengthFunction_clone___java_lang_Object(JAVA_OBJ
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("StringLengthFunction.java", 78)
     _r0.o = __NEW_gnu_xml_xpath_StringLengthFunction();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_StringLengthFunction*) _r2.o)->fields.gnu_xml_xpath_StringLengthFunction.arg_;
     if (_r1.o != JAVA_NULL) goto label11;
     _r1.o = JAVA_NULL;
@@ -397,6 +401,7 @@ JAVA_OBJECT gnu_xml_xpath_StringLengthFunction_clone___java_lang_Object(JAVA_OBJ
     return _r0.o;
     label11:;
     XMLVM_SOURCE_POSITION("StringLengthFunction.java", 79)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_StringLengthFunction*) _r2.o)->fields.gnu_xml_xpath_StringLengthFunction.arg_;
     //gnu_xml_xpath_Expr_clone___java_lang_Object[6]
     XMLVM_CHECK_NPE(1)
@@ -415,6 +420,7 @@ JAVA_BOOLEAN gnu_xml_xpath_StringLengthFunction_references___javax_xml_namespace
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("StringLengthFunction.java", 84)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_StringLengthFunction*) _r1.o)->fields.gnu_xml_xpath_StringLengthFunction.arg_;
     if (_r0.o != JAVA_NULL) goto label6;
     _r0.i = 0;
@@ -422,6 +428,7 @@ JAVA_BOOLEAN gnu_xml_xpath_StringLengthFunction_references___javax_xml_namespace
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label6:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_StringLengthFunction*) _r1.o)->fields.gnu_xml_xpath_StringLengthFunction.arg_;
     //gnu_xml_xpath_Expr_references___javax_xml_namespace_QName[12]
     XMLVM_CHECK_NPE(0)
@@ -439,6 +446,7 @@ JAVA_OBJECT gnu_xml_xpath_StringLengthFunction_toString__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("StringLengthFunction.java", 89)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_xpath_StringLengthFunction*) _r2.o)->fields.gnu_xml_xpath_StringLengthFunction.arg_;
     if (_r0.o != JAVA_NULL) goto label7;
     // "string-length()"
@@ -452,6 +460,7 @@ JAVA_OBJECT gnu_xml_xpath_StringLengthFunction_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(3377);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_StringLengthFunction*) _r2.o)->fields.gnu_xml_xpath_StringLengthFunction.arg_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);

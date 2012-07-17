@@ -1305,29 +1305,38 @@ void java_net_URLConnection___INIT____java_net_URL(JAVA_OBJECT me, JAVA_OBJECT n
     _r0.o = __NEW_java_net_URLConnection_DefaultContentHandler();
     XMLVM_CHECK_NPE(0)
     java_net_URLConnection_DefaultContentHandler___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_net_URLConnection*) _r3.o)->fields.java_net_URLConnection.defaultHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("URLConnection.java", 59)
     _r0.l = -1;
+    XMLVM_CHECK_NPE(3)
     ((java_net_URLConnection*) _r3.o)->fields.java_net_URLConnection.lastModified_ = _r0.l;
     XMLVM_SOURCE_POSITION("URLConnection.java", 71)
     _r0.i = java_net_URLConnection_GET_defaultUseCaches();
+    XMLVM_CHECK_NPE(3)
     ((java_net_URLConnection*) _r3.o)->fields.java_net_URLConnection.useCaches_ = _r0.i;
     XMLVM_SOURCE_POSITION("URLConnection.java", 88)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(3)
     ((java_net_URLConnection*) _r3.o)->fields.java_net_URLConnection.doInput_ = _r0.i;
     XMLVM_SOURCE_POSITION("URLConnection.java", 94)
     _r0.i = java_net_URLConnection_GET_defaultAllowUserInteraction();
+    XMLVM_CHECK_NPE(3)
     ((java_net_URLConnection*) _r3.o)->fields.java_net_URLConnection.allowUserInteraction_ = _r0.i;
     XMLVM_SOURCE_POSITION("URLConnection.java", 98)
+    XMLVM_CHECK_NPE(3)
     ((java_net_URLConnection*) _r3.o)->fields.java_net_URLConnection.readTimeout_ = _r2.i;
     XMLVM_SOURCE_POSITION("URLConnection.java", 100)
+    XMLVM_CHECK_NPE(3)
     ((java_net_URLConnection*) _r3.o)->fields.java_net_URLConnection.connectTimeout_ = _r2.i;
     XMLVM_SOURCE_POSITION("URLConnection.java", 110)
     _r0.o = __NEW_java_util_HashMap();
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_net_URLConnection*) _r3.o)->fields.java_net_URLConnection.requestProperties_ = _r0.o;
     XMLVM_SOURCE_POSITION("URLConnection.java", 127)
+    XMLVM_CHECK_NPE(3)
     ((java_net_URLConnection*) _r3.o)->fields.java_net_URLConnection.url_ = _r4.o;
     XMLVM_SOURCE_POSITION("URLConnection.java", 128)
     XMLVM_EXIT_METHOD()
@@ -1343,6 +1352,7 @@ JAVA_BOOLEAN java_net_URLConnection_getAllowUserInteraction__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URLConnection.java", 147)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_URLConnection*) _r1.o)->fields.java_net_URLConnection.allowUserInteraction_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -1357,6 +1367,7 @@ JAVA_OBJECT java_net_URLConnection_getContent__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URLConnection.java", 163)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_URLConnection*) _r1.o)->fields.java_net_URLConnection.connected_;
     if (_r0.i != 0) goto label7;
     XMLVM_SOURCE_POSITION("URLConnection.java", 164)
@@ -1367,13 +1378,16 @@ JAVA_OBJECT java_net_URLConnection_getContent__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("URLConnection.java", 167)
     XMLVM_CHECK_NPE(1)
     _r0.o = java_net_URLConnection_getContentType__(_r1.o);
+    XMLVM_CHECK_NPE(1)
     ((java_net_URLConnection*) _r1.o)->fields.java_net_URLConnection.contentType_ = _r0.o;
     if (_r0.o != JAVA_NULL) goto label39;
     XMLVM_SOURCE_POSITION("URLConnection.java", 168)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URLConnection*) _r1.o)->fields.java_net_URLConnection.url_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_net_URL_getFile__(_r0.o);
     _r0.o = java_net_URLConnection_guessContentTypeFromName___java_lang_String(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_net_URLConnection*) _r1.o)->fields.java_net_URLConnection.contentType_ = _r0.o;
     if (_r0.o != JAVA_NULL) goto label39;
     XMLVM_SOURCE_POSITION("URLConnection.java", 169)
@@ -1381,12 +1395,15 @@ JAVA_OBJECT java_net_URLConnection_getContent__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_net_URLConnection*) _r1.o)->tib->vtable[13])(_r1.o);
     _r0.o = java_net_URLConnection_guessContentTypeFromStream___java_io_InputStream(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_net_URLConnection*) _r1.o)->fields.java_net_URLConnection.contentType_ = _r0.o;
     label39:;
     XMLVM_SOURCE_POSITION("URLConnection.java", 172)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URLConnection*) _r1.o)->fields.java_net_URLConnection.contentType_;
     if (_r0.o == JAVA_NULL) goto label54;
     XMLVM_SOURCE_POSITION("URLConnection.java", 173)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URLConnection*) _r1.o)->fields.java_net_URLConnection.contentType_;
     XMLVM_CHECK_NPE(1)
     _r0.o = java_net_URLConnection_getContentHandler___java_lang_String(_r1.o, _r0.o);
@@ -1413,6 +1430,7 @@ JAVA_OBJECT java_net_URLConnection_getContent___java_lang_Class_1ARRAY(JAVA_OBJE
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("URLConnection.java", 197)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_URLConnection*) _r1.o)->fields.java_net_URLConnection.connected_;
     if (_r0.i != 0) goto label7;
     XMLVM_SOURCE_POSITION("URLConnection.java", 198)
@@ -1423,13 +1441,16 @@ JAVA_OBJECT java_net_URLConnection_getContent___java_lang_Class_1ARRAY(JAVA_OBJE
     XMLVM_SOURCE_POSITION("URLConnection.java", 201)
     XMLVM_CHECK_NPE(1)
     _r0.o = java_net_URLConnection_getContentType__(_r1.o);
+    XMLVM_CHECK_NPE(1)
     ((java_net_URLConnection*) _r1.o)->fields.java_net_URLConnection.contentType_ = _r0.o;
     if (_r0.o != JAVA_NULL) goto label39;
     XMLVM_SOURCE_POSITION("URLConnection.java", 202)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URLConnection*) _r1.o)->fields.java_net_URLConnection.url_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_net_URL_getFile__(_r0.o);
     _r0.o = java_net_URLConnection_guessContentTypeFromName___java_lang_String(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_net_URLConnection*) _r1.o)->fields.java_net_URLConnection.contentType_ = _r0.o;
     if (_r0.o != JAVA_NULL) goto label39;
     XMLVM_SOURCE_POSITION("URLConnection.java", 203)
@@ -1437,12 +1458,15 @@ JAVA_OBJECT java_net_URLConnection_getContent___java_lang_Class_1ARRAY(JAVA_OBJE
     XMLVM_CHECK_NPE(1)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_net_URLConnection*) _r1.o)->tib->vtable[13])(_r1.o);
     _r0.o = java_net_URLConnection_guessContentTypeFromStream___java_io_InputStream(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_net_URLConnection*) _r1.o)->fields.java_net_URLConnection.contentType_ = _r0.o;
     label39:;
     XMLVM_SOURCE_POSITION("URLConnection.java", 206)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URLConnection*) _r1.o)->fields.java_net_URLConnection.contentType_;
     if (_r0.o == JAVA_NULL) goto label54;
     XMLVM_SOURCE_POSITION("URLConnection.java", 207)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URLConnection*) _r1.o)->fields.java_net_URLConnection.contentType_;
     XMLVM_CHECK_NPE(1)
     _r0.o = java_net_URLConnection_getContentHandler___java_lang_String(_r1.o, _r0.o);
@@ -1575,7 +1599,7 @@ JAVA_OBJECT java_net_URLConnection_getContentHandler___java_lang_String(JAVA_OBJ
     java_net_UnknownServiceException___INIT___(_r1.o);
     XMLVM_THROW_CUSTOM(_r1.o)
     label96:;
-    XMLVM_TRY_BEGIN(w43281aaac25b1c71)
+    XMLVM_TRY_BEGIN(w43286aaac25b1c71)
     // Begin try
     XMLVM_SOURCE_POSITION("URLConnection.java", 255)
     _r2.o = __NEW_java_lang_StringBuilder();
@@ -1604,12 +1628,12 @@ JAVA_OBJECT java_net_URLConnection_getContentHandler___java_lang_String(JAVA_OBJ
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_Class*) _r2.o)->tib->vtable[12])(_r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w43281aaac25b1c71)
-        XMLVM_CATCH_SPECIFIC(w43281aaac25b1c71,java_lang_ClassNotFoundException,155)
-        XMLVM_CATCH_SPECIFIC(w43281aaac25b1c71,java_lang_IllegalAccessException,153)
-        XMLVM_CATCH_SPECIFIC(w43281aaac25b1c71,java_lang_InstantiationException,151)
-    XMLVM_CATCH_END(w43281aaac25b1c71)
-    XMLVM_RESTORE_EXCEPTION_ENV(w43281aaac25b1c71)
+    XMLVM_CATCH_BEGIN(w43286aaac25b1c71)
+        XMLVM_CATCH_SPECIFIC(w43286aaac25b1c71,java_lang_ClassNotFoundException,155)
+        XMLVM_CATCH_SPECIFIC(w43286aaac25b1c71,java_lang_IllegalAccessException,153)
+        XMLVM_CATCH_SPECIFIC(w43286aaac25b1c71,java_lang_InstantiationException,151)
+    XMLVM_CATCH_END(w43286aaac25b1c71)
+    XMLVM_RESTORE_EXCEPTION_ENV(w43286aaac25b1c71)
     goto label67;
     label137:;
     XMLVM_SOURCE_POSITION("URLConnection.java", 287)
@@ -1624,21 +1648,22 @@ JAVA_OBJECT java_net_URLConnection_getContentHandler___java_lang_String(JAVA_OBJ
     _r1 = _r7;
     goto label25;
     label148:;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_net_URLConnection*) _r7.o)->fields.java_net_URLConnection.defaultHandler_;
     goto label25;
     label151:;
-    java_lang_Thread* curThread_w43281aaac25b1c87 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w43281aaac25b1c87->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w43286aaac25b1c87 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w43286aaac25b1c87->fields.java_lang_Thread.xmlvmException_;
     goto label67;
     label153:;
     XMLVM_SOURCE_POSITION("URLConnection.java", 260)
-    java_lang_Thread* curThread_w43281aaac25b1c91 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w43281aaac25b1c91->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w43286aaac25b1c91 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w43286aaac25b1c91->fields.java_lang_Thread.xmlvmException_;
     goto label67;
     label155:;
     XMLVM_SOURCE_POSITION("URLConnection.java", 259)
-    java_lang_Thread* curThread_w43281aaac25b1c95 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w43281aaac25b1c95->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w43286aaac25b1c95 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w43286aaac25b1c95->fields.java_lang_Thread.xmlvmException_;
     goto label67;
     //XMLVM_END_WRAPPER
 }
@@ -1751,6 +1776,7 @@ JAVA_BOOLEAN java_net_URLConnection_getDoInput__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URLConnection.java", 371)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_URLConnection*) _r1.o)->fields.java_net_URLConnection.doInput_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -1765,6 +1791,7 @@ JAVA_BOOLEAN java_net_URLConnection_getDoOutput__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URLConnection.java", 383)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_URLConnection*) _r1.o)->fields.java_net_URLConnection.doOutput_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -1803,11 +1830,11 @@ JAVA_OBJECT java_net_URLConnection_getFileNameMap__()
     if (!__TIB_java_net_URLConnection.classInitialized) __INIT_java_net_URLConnection();
     _r0.o = __CLASS_java_net_URLConnection;
     java_lang_Object_acquireLockRecursive__(_r0.o);
-    XMLVM_TRY_BEGIN(w43281aaac35b1b4)
+    XMLVM_TRY_BEGIN(w43286aaac35b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("URLConnection.java", 407)
     _r1.o = java_net_URLConnection_GET_fileNameMap();
-    if (_r1.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w43281aaac35b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w43281aaac35b1b4, sizeof(XMLVM_JMP_BUF)); goto label14; };
+    if (_r1.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w43286aaac35b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w43286aaac35b1b4, sizeof(XMLVM_JMP_BUF)); goto label14; };
     XMLVM_SOURCE_POSITION("URLConnection.java", 408)
 
     
@@ -1820,37 +1847,37 @@ JAVA_OBJECT java_net_URLConnection_getFileNameMap__()
     java_net_URLConnection_PUT_fileNameMap( _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w43281aaac35b1b4)
-        XMLVM_CATCH_SPECIFIC(w43281aaac35b1b4,java_lang_Object,18)
-    XMLVM_CATCH_END(w43281aaac35b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w43281aaac35b1b4)
+    XMLVM_CATCH_BEGIN(w43286aaac35b1b4)
+        XMLVM_CATCH_SPECIFIC(w43286aaac35b1b4,java_lang_Object,18)
+    XMLVM_CATCH_END(w43286aaac35b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w43286aaac35b1b4)
     label14:;
-    XMLVM_TRY_BEGIN(w43281aaac35b1b6)
+    XMLVM_TRY_BEGIN(w43286aaac35b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("URLConnection.java", 410)
     _r1.o = java_net_URLConnection_GET_fileNameMap();
     java_lang_Object_releaseLockRecursive__(_r0.o);
-    XMLVM_MEMCPY(curThread_w43281aaac35b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w43281aaac35b1b6, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w43286aaac35b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w43286aaac35b1b6, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r1.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w43281aaac35b1b6)
-        XMLVM_CATCH_SPECIFIC(w43281aaac35b1b6,java_lang_Object,18)
-    XMLVM_CATCH_END(w43281aaac35b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w43281aaac35b1b6)
+    XMLVM_CATCH_BEGIN(w43286aaac35b1b6)
+        XMLVM_CATCH_SPECIFIC(w43286aaac35b1b6,java_lang_Object,18)
+    XMLVM_CATCH_END(w43286aaac35b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w43286aaac35b1b6)
     label18:;
-    XMLVM_TRY_BEGIN(w43281aaac35b1b8)
+    XMLVM_TRY_BEGIN(w43286aaac35b1b8)
     // Begin try
-    java_lang_Thread* curThread_w43281aaac35b1b8aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w43281aaac35b1b8aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w43286aaac35b1b8aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w43286aaac35b1b8aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w43281aaac35b1b8)
-        XMLVM_CATCH_SPECIFIC(w43281aaac35b1b8,java_lang_Object,18)
-    XMLVM_CATCH_END(w43281aaac35b1b8)
-    XMLVM_RESTORE_EXCEPTION_ENV(w43281aaac35b1b8)
+    XMLVM_CATCH_BEGIN(w43286aaac35b1b8)
+        XMLVM_CATCH_SPECIFIC(w43286aaac35b1b8,java_lang_Object,18)
+    XMLVM_CATCH_END(w43286aaac35b1b8)
+    XMLVM_RESTORE_EXCEPTION_ENV(w43286aaac35b1b8)
     XMLVM_THROW_CUSTOM(_r1.o)
     //XMLVM_END_WRAPPER
 }
@@ -1896,6 +1923,7 @@ JAVA_OBJECT java_net_URLConnection_getRequestProperties__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("URLConnection.java", 448)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_net_URLConnection*) _r4.o)->fields.java_net_URLConnection.connected_;
     if (_r0.i == 0) goto label16;
     XMLVM_SOURCE_POSITION("URLConnection.java", 449)
@@ -1912,6 +1940,7 @@ JAVA_OBJECT java_net_URLConnection_getRequestProperties__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_util_HashMap___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("URLConnection.java", 453)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URLConnection*) _r4.o)->fields.java_net_URLConnection.requestProperties_;
     //java_util_HashMap_keySet__[12]
     XMLVM_CHECK_NPE(0)
@@ -1931,6 +1960,7 @@ JAVA_OBJECT java_net_URLConnection_getRequestProperties__(JAVA_OBJECT me)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_next__])(_r3.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("URLConnection.java", 454)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_net_URLConnection*) _r4.o)->fields.java_net_URLConnection.requestProperties_;
     //java_util_HashMap_get___java_lang_Object[10]
     XMLVM_CHECK_NPE(1)
@@ -1958,6 +1988,7 @@ void java_net_URLConnection_addRequestProperty___java_lang_String_java_lang_Stri
     _r4.o = n2;
     _r1.i = 0;
     XMLVM_SOURCE_POSITION("URLConnection.java", 474)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.connected_;
     if (_r0.i == 0) goto label17;
     XMLVM_SOURCE_POSITION("URLConnection.java", 475)
@@ -1981,6 +2012,7 @@ void java_net_URLConnection_addRequestProperty___java_lang_String_java_lang_Stri
     XMLVM_THROW_CUSTOM(_r0.o)
     label31:;
     XMLVM_SOURCE_POSITION("URLConnection.java", 481)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.requestProperties_;
     //java_util_HashMap_get___java_lang_Object[10]
     XMLVM_CHECK_NPE(0)
@@ -1996,6 +2028,7 @@ void java_net_URLConnection_addRequestProperty___java_lang_String_java_lang_Stri
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_INT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_add___int_java_lang_Object])(_r0.o, _r1.i, _r4.o);
     XMLVM_SOURCE_POSITION("URLConnection.java", 485)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.requestProperties_;
     //java_util_HashMap_put___java_lang_Object_java_lang_Object[14]
     XMLVM_CHECK_NPE(1)
@@ -2054,20 +2087,20 @@ JAVA_LONG java_net_URLConnection_getHeaderFieldDate___java_lang_String_long(JAVA
     XMLVM_EXIT_METHOD()
     return _r0.l;
     label8:;
-    XMLVM_TRY_BEGIN(w43281aaac41b1c14)
+    XMLVM_TRY_BEGIN(w43286aaac41b1c14)
     // Begin try
     XMLVM_SOURCE_POSITION("URLConnection.java", 523)
     _r0.l = java_util_Date_parse___java_lang_String(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w43281aaac41b1c14)
-        XMLVM_CATCH_SPECIFIC(w43281aaac41b1c14,java_lang_Exception,13)
-    XMLVM_CATCH_END(w43281aaac41b1c14)
-    XMLVM_RESTORE_EXCEPTION_ENV(w43281aaac41b1c14)
+    XMLVM_CATCH_BEGIN(w43286aaac41b1c14)
+        XMLVM_CATCH_SPECIFIC(w43286aaac41b1c14,java_lang_Exception,13)
+    XMLVM_CATCH_END(w43286aaac41b1c14)
+    XMLVM_RESTORE_EXCEPTION_ENV(w43286aaac41b1c14)
     goto label7;
     label13:;
-    java_lang_Thread* curThread_w43281aaac41b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w43281aaac41b1c17->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w43286aaac41b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w43286aaac41b1c17->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r4;
     goto label7;
     //XMLVM_END_WRAPPER
@@ -2084,7 +2117,7 @@ JAVA_INT java_net_URLConnection_getHeaderFieldInt___java_lang_String_int(JAVA_OB
     _r1.o = me;
     _r2.o = n1;
     _r3.i = n2;
-    XMLVM_TRY_BEGIN(w43281aaac42b1b4)
+    XMLVM_TRY_BEGIN(w43286aaac42b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("URLConnection.java", 542)
     //java_net_URLConnection_getHeaderField___java_lang_String[11]
@@ -2093,17 +2126,17 @@ JAVA_INT java_net_URLConnection_getHeaderFieldInt___java_lang_String_int(JAVA_OB
     _r0.i = java_lang_Integer_parseInt___java_lang_String(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w43281aaac42b1b4)
-        XMLVM_CATCH_SPECIFIC(w43281aaac42b1b4,java_lang_NumberFormatException,9)
-    XMLVM_CATCH_END(w43281aaac42b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w43281aaac42b1b4)
+    XMLVM_CATCH_BEGIN(w43286aaac42b1b4)
+        XMLVM_CATCH_SPECIFIC(w43286aaac42b1b4,java_lang_NumberFormatException,9)
+    XMLVM_CATCH_END(w43286aaac42b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w43286aaac42b1b4)
     label8:;
     XMLVM_SOURCE_POSITION("URLConnection.java", 544)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label9:;
-    java_lang_Thread* curThread_w43281aaac42b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w43281aaac42b1b9->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w43286aaac42b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w43286aaac42b1b9->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r3;
     goto label8;
     //XMLVM_END_WRAPPER
@@ -2134,6 +2167,7 @@ JAVA_LONG java_net_URLConnection_getIfModifiedSince__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("URLConnection.java", 570)
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.ifModifiedSince_;
     XMLVM_EXIT_METHOD()
     return _r0.l;
@@ -2170,11 +2204,13 @@ JAVA_LONG java_net_URLConnection_getLastModified__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("URLConnection.java", 593)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_net_URLConnection*) _r4.o)->fields.java_net_URLConnection.lastModified_;
     _r2.l = -1;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r0.i == 0) goto label11;
     XMLVM_SOURCE_POSITION("URLConnection.java", 594)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_net_URLConnection*) _r4.o)->fields.java_net_URLConnection.lastModified_;
     label10:;
     XMLVM_SOURCE_POSITION("URLConnection.java", 596)
@@ -2187,6 +2223,7 @@ JAVA_LONG java_net_URLConnection_getLastModified__(JAVA_OBJECT me)
     //java_net_URLConnection_getHeaderFieldDate___java_lang_String_long[8]
     XMLVM_CHECK_NPE(4)
     _r0.l = (*(JAVA_LONG (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_LONG)) ((java_net_URLConnection*) _r4.o)->tib->vtable[8])(_r4.o, _r0.o, _r1.l);
+    XMLVM_CHECK_NPE(4)
     ((java_net_URLConnection*) _r4.o)->fields.java_net_URLConnection.lastModified_ = _r0.l;
     goto label10;
     //XMLVM_END_WRAPPER
@@ -2243,6 +2280,7 @@ JAVA_OBJECT java_net_URLConnection_getRequestProperty___java_lang_String(JAVA_OB
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("URLConnection.java", 640)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.connected_;
     if (_r0.i == 0) goto label16;
     XMLVM_SOURCE_POSITION("URLConnection.java", 641)
@@ -2255,6 +2293,7 @@ JAVA_OBJECT java_net_URLConnection_getRequestProperty___java_lang_String(JAVA_OB
     XMLVM_THROW_CUSTOM(_r0.o)
     label16:;
     XMLVM_SOURCE_POSITION("URLConnection.java", 643)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.requestProperties_;
     //java_util_HashMap_get___java_lang_Object[10]
     XMLVM_CHECK_NPE(0)
@@ -2286,6 +2325,7 @@ JAVA_OBJECT java_net_URLConnection_getURL__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URLConnection.java", 656)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URLConnection*) _r1.o)->fields.java_net_URLConnection.url_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2300,6 +2340,7 @@ JAVA_BOOLEAN java_net_URLConnection_getUseCaches__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URLConnection.java", 666)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_URLConnection*) _r1.o)->fields.java_net_URLConnection.useCaches_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -2673,6 +2714,7 @@ void java_net_URLConnection_setAllowUserInteraction___boolean(JAVA_OBJECT me, JA
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("URLConnection.java", 814)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.connected_;
     if (_r0.i == 0) goto label16;
     XMLVM_SOURCE_POSITION("URLConnection.java", 815)
@@ -2685,6 +2727,7 @@ void java_net_URLConnection_setAllowUserInteraction___boolean(JAVA_OBJECT me, JA
     XMLVM_THROW_CUSTOM(_r0.o)
     label16:;
     XMLVM_SOURCE_POSITION("URLConnection.java", 817)
+    XMLVM_CHECK_NPE(2)
     ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.allowUserInteraction_ = _r3.i;
     XMLVM_SOURCE_POSITION("URLConnection.java", 818)
     XMLVM_EXIT_METHOD()
@@ -2706,10 +2749,10 @@ void java_net_URLConnection_setContentHandlerFactory___java_net_ContentHandlerFa
     if (!__TIB_java_net_URLConnection.classInitialized) __INIT_java_net_URLConnection();
     _r0.o = __CLASS_java_net_URLConnection;
     java_lang_Object_acquireLockRecursive__(_r0.o);
-    XMLVM_TRY_BEGIN(w43281aaac56b1b5)
+    XMLVM_TRY_BEGIN(w43286aaac56b1b5)
     // Begin try
     _r1.o = java_net_URLConnection_GET_contentHandlerFactory();
-    if (_r1.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w43281aaac56b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w43281aaac56b1b5, sizeof(XMLVM_JMP_BUF)); goto label22; };
+    if (_r1.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w43286aaac56b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w43286aaac56b1b5, sizeof(XMLVM_JMP_BUF)); goto label22; };
     XMLVM_SOURCE_POSITION("URLConnection.java", 834)
     _r1.o = __NEW_java_lang_Error();
     // "luni.98"
@@ -2720,42 +2763,42 @@ void java_net_URLConnection_setContentHandlerFactory___java_net_ContentHandlerFa
     XMLVM_THROW_CUSTOM(_r1.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w43281aaac56b1b5)
-        XMLVM_CATCH_SPECIFIC(w43281aaac56b1b5,java_lang_Object,19)
-    XMLVM_CATCH_END(w43281aaac56b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w43281aaac56b1b5)
+    XMLVM_CATCH_BEGIN(w43286aaac56b1b5)
+        XMLVM_CATCH_SPECIFIC(w43286aaac56b1b5,java_lang_Object,19)
+    XMLVM_CATCH_END(w43286aaac56b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w43286aaac56b1b5)
     label19:;
-    java_lang_Thread* curThread_w43281aaac56b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w43281aaac56b1b7->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w43286aaac56b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w43286aaac56b1b7->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     XMLVM_THROW_CUSTOM(_r1.o)
     label22:;
-    XMLVM_TRY_BEGIN(w43281aaac56b1c11)
+    XMLVM_TRY_BEGIN(w43286aaac56b1c11)
     // Begin try
     XMLVM_SOURCE_POSITION("URLConnection.java", 836)
     _r1.o = java_lang_System_getSecurityManager__();
     XMLVM_SOURCE_POSITION("URLConnection.java", 837)
-    if (_r1.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w43281aaac56b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w43281aaac56b1c11, sizeof(XMLVM_JMP_BUF)); goto label31; };
+    if (_r1.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w43286aaac56b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w43286aaac56b1c11, sizeof(XMLVM_JMP_BUF)); goto label31; };
     XMLVM_SOURCE_POSITION("URLConnection.java", 838)
     XMLVM_CHECK_NPE(1)
     java_lang_SecurityManager_checkSetFactory__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w43281aaac56b1c11)
-        XMLVM_CATCH_SPECIFIC(w43281aaac56b1c11,java_lang_Object,19)
-    XMLVM_CATCH_END(w43281aaac56b1c11)
-    XMLVM_RESTORE_EXCEPTION_ENV(w43281aaac56b1c11)
+    XMLVM_CATCH_BEGIN(w43286aaac56b1c11)
+        XMLVM_CATCH_SPECIFIC(w43286aaac56b1c11,java_lang_Object,19)
+    XMLVM_CATCH_END(w43286aaac56b1c11)
+    XMLVM_RESTORE_EXCEPTION_ENV(w43286aaac56b1c11)
     label31:;
-    XMLVM_TRY_BEGIN(w43281aaac56b1c13)
+    XMLVM_TRY_BEGIN(w43286aaac56b1c13)
     // Begin try
     XMLVM_SOURCE_POSITION("URLConnection.java", 840)
     java_net_URLConnection_PUT_contentHandlerFactory( _r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w43281aaac56b1c13)
-        XMLVM_CATCH_SPECIFIC(w43281aaac56b1c13,java_lang_Object,19)
-    XMLVM_CATCH_END(w43281aaac56b1c13)
-    XMLVM_RESTORE_EXCEPTION_ENV(w43281aaac56b1c13)
+    XMLVM_CATCH_BEGIN(w43286aaac56b1c13)
+        XMLVM_CATCH_SPECIFIC(w43286aaac56b1c13,java_lang_Object,19)
+    XMLVM_CATCH_END(w43286aaac56b1c13)
+    XMLVM_RESTORE_EXCEPTION_ENV(w43286aaac56b1c13)
     XMLVM_SOURCE_POSITION("URLConnection.java", 841)
     java_lang_Object_releaseLockRecursive__(_r0.o);
     XMLVM_EXIT_METHOD()
@@ -2804,6 +2847,7 @@ void java_net_URLConnection_setDefaultUseCaches___boolean(JAVA_OBJECT me, JAVA_B
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("URLConnection.java", 883)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.connected_;
     if (_r0.i == 0) goto label16;
     XMLVM_SOURCE_POSITION("URLConnection.java", 884)
@@ -2834,6 +2878,7 @@ void java_net_URLConnection_setDoInput___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("URLConnection.java", 901)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.connected_;
     if (_r0.i == 0) goto label16;
     XMLVM_SOURCE_POSITION("URLConnection.java", 902)
@@ -2846,6 +2891,7 @@ void java_net_URLConnection_setDoInput___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1
     XMLVM_THROW_CUSTOM(_r0.o)
     label16:;
     XMLVM_SOURCE_POSITION("URLConnection.java", 904)
+    XMLVM_CHECK_NPE(2)
     ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.doInput_ = _r3.i;
     XMLVM_SOURCE_POSITION("URLConnection.java", 905)
     XMLVM_EXIT_METHOD()
@@ -2864,6 +2910,7 @@ void java_net_URLConnection_setDoOutput___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("URLConnection.java", 919)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.connected_;
     if (_r0.i == 0) goto label16;
     XMLVM_SOURCE_POSITION("URLConnection.java", 920)
@@ -2876,6 +2923,7 @@ void java_net_URLConnection_setDoOutput___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n
     XMLVM_THROW_CUSTOM(_r0.o)
     label16:;
     XMLVM_SOURCE_POSITION("URLConnection.java", 922)
+    XMLVM_CHECK_NPE(2)
     ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.doOutput_ = _r3.i;
     XMLVM_SOURCE_POSITION("URLConnection.java", 923)
     XMLVM_EXIT_METHOD()
@@ -2904,33 +2952,33 @@ void java_net_URLConnection_setFileNameMap___java_net_FileNameMap(JAVA_OBJECT n1
     if (!__TIB_java_net_URLConnection.classInitialized) __INIT_java_net_URLConnection();
     _r0.o = __CLASS_java_net_URLConnection;
     java_lang_Object_acquireLockRecursive__(_r0.o);
-    XMLVM_TRY_BEGIN(w43281aaac62b1c12)
+    XMLVM_TRY_BEGIN(w43286aaac62b1c12)
     // Begin try
     XMLVM_SOURCE_POSITION("URLConnection.java", 938)
     java_net_URLConnection_PUT_fileNameMap( _r2.o);
     java_lang_Object_releaseLockRecursive__(_r0.o);
     XMLVM_SOURCE_POSITION("URLConnection.java", 940)
-    XMLVM_MEMCPY(curThread_w43281aaac62b1c12->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w43281aaac62b1c12, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w43286aaac62b1c12->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w43286aaac62b1c12, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w43281aaac62b1c12)
-        XMLVM_CATCH_SPECIFIC(w43281aaac62b1c12,java_lang_Object,16)
-    XMLVM_CATCH_END(w43281aaac62b1c12)
-    XMLVM_RESTORE_EXCEPTION_ENV(w43281aaac62b1c12)
+    XMLVM_CATCH_BEGIN(w43286aaac62b1c12)
+        XMLVM_CATCH_SPECIFIC(w43286aaac62b1c12,java_lang_Object,16)
+    XMLVM_CATCH_END(w43286aaac62b1c12)
+    XMLVM_RESTORE_EXCEPTION_ENV(w43286aaac62b1c12)
     label16:;
-    XMLVM_TRY_BEGIN(w43281aaac62b1c14)
+    XMLVM_TRY_BEGIN(w43286aaac62b1c14)
     // Begin try
-    java_lang_Thread* curThread_w43281aaac62b1c14aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w43281aaac62b1c14aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w43286aaac62b1c14aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w43286aaac62b1c14aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w43281aaac62b1c14)
-        XMLVM_CATCH_SPECIFIC(w43281aaac62b1c14,java_lang_Object,16)
-    XMLVM_CATCH_END(w43281aaac62b1c14)
-    XMLVM_RESTORE_EXCEPTION_ENV(w43281aaac62b1c14)
+    XMLVM_CATCH_BEGIN(w43286aaac62b1c14)
+        XMLVM_CATCH_SPECIFIC(w43286aaac62b1c14,java_lang_Object,16)
+    XMLVM_CATCH_END(w43286aaac62b1c14)
+    XMLVM_RESTORE_EXCEPTION_ENV(w43286aaac62b1c14)
     XMLVM_THROW_CUSTOM(_r1.o)
     //XMLVM_END_WRAPPER
 }
@@ -2947,6 +2995,7 @@ void java_net_URLConnection_setIfModifiedSince___long(JAVA_OBJECT me, JAVA_LONG 
     _r2.o = me;
     _r3.l = n1;
     XMLVM_SOURCE_POSITION("URLConnection.java", 955)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.connected_;
     if (_r0.i == 0) goto label16;
     XMLVM_SOURCE_POSITION("URLConnection.java", 956)
@@ -2959,6 +3008,7 @@ void java_net_URLConnection_setIfModifiedSince___long(JAVA_OBJECT me, JAVA_LONG 
     XMLVM_THROW_CUSTOM(_r0.o)
     label16:;
     XMLVM_SOURCE_POSITION("URLConnection.java", 958)
+    XMLVM_CHECK_NPE(2)
     ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.ifModifiedSince_ = _r3.l;
     XMLVM_SOURCE_POSITION("URLConnection.java", 959)
     XMLVM_EXIT_METHOD()
@@ -2979,6 +3029,7 @@ void java_net_URLConnection_setRequestProperty___java_lang_String_java_lang_Stri
     _r3.o = n1;
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("URLConnection.java", 976)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.connected_;
     if (_r0.i == 0) goto label16;
     XMLVM_SOURCE_POSITION("URLConnection.java", 977)
@@ -3009,6 +3060,7 @@ void java_net_URLConnection_setRequestProperty___java_lang_String_java_lang_Stri
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_add___java_lang_Object])(_r0.o, _r4.o);
     XMLVM_SOURCE_POSITION("URLConnection.java", 985)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.requestProperties_;
     //java_util_HashMap_put___java_lang_Object_java_lang_Object[14]
     XMLVM_CHECK_NPE(1)
@@ -3030,6 +3082,7 @@ void java_net_URLConnection_setUseCaches___boolean(JAVA_OBJECT me, JAVA_BOOLEAN 
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("URLConnection.java", 1001)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.connected_;
     if (_r0.i == 0) goto label16;
     XMLVM_SOURCE_POSITION("URLConnection.java", 1002)
@@ -3042,6 +3095,7 @@ void java_net_URLConnection_setUseCaches___boolean(JAVA_OBJECT me, JAVA_BOOLEAN 
     XMLVM_THROW_CUSTOM(_r0.o)
     label16:;
     XMLVM_SOURCE_POSITION("URLConnection.java", 1004)
+    XMLVM_CHECK_NPE(2)
     ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.useCaches_ = _r3.i;
     XMLVM_SOURCE_POSITION("URLConnection.java", 1005)
     XMLVM_EXIT_METHOD()
@@ -3071,6 +3125,7 @@ void java_net_URLConnection_setConnectTimeout___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("URLConnection.java", 1023)
+    XMLVM_CHECK_NPE(2)
     ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.connectTimeout_ = _r3.i;
     XMLVM_SOURCE_POSITION("URLConnection.java", 1024)
     XMLVM_EXIT_METHOD()
@@ -3086,6 +3141,7 @@ JAVA_INT java_net_URLConnection_getConnectTimeout__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URLConnection.java", 1032)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_URLConnection*) _r1.o)->fields.java_net_URLConnection.connectTimeout_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -3114,6 +3170,7 @@ void java_net_URLConnection_setReadTimeout___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("URLConnection.java", 1051)
+    XMLVM_CHECK_NPE(2)
     ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.readTimeout_ = _r3.i;
     XMLVM_SOURCE_POSITION("URLConnection.java", 1052)
     XMLVM_EXIT_METHOD()
@@ -3129,6 +3186,7 @@ JAVA_INT java_net_URLConnection_getReadTimeout__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URLConnection.java", 1061)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_URLConnection*) _r1.o)->fields.java_net_URLConnection.readTimeout_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -3157,6 +3215,7 @@ JAVA_OBJECT java_net_URLConnection_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(60);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.url_;
     //java_net_URL_toString__[5]
     XMLVM_CHECK_NPE(1)

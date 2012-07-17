@@ -303,14 +303,19 @@ void java_util_HashMap_AbstractMapIterator___INIT____java_util_HashMap(JAVA_OBJE
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("HashMap.java", 95)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_HashMap_AbstractMapIterator*) _r1.o)->fields.java_util_HashMap_AbstractMapIterator.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("HashMap.java", 104)
+    XMLVM_CHECK_NPE(1)
     ((java_util_HashMap_AbstractMapIterator*) _r1.o)->fields.java_util_HashMap_AbstractMapIterator.associatedMap_ = _r2.o;
     XMLVM_SOURCE_POSITION("HashMap.java", 105)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_HashMap*) _r2.o)->fields.java_util_HashMap.modCount_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_HashMap_AbstractMapIterator*) _r1.o)->fields.java_util_HashMap_AbstractMapIterator.expectedModCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("HashMap.java", 106)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(1)
     ((java_util_HashMap_AbstractMapIterator*) _r1.o)->fields.java_util_HashMap_AbstractMapIterator.futureEntry_ = _r0.o;
     XMLVM_SOURCE_POSITION("HashMap.java", 107)
     XMLVM_EXIT_METHOD()
@@ -329,6 +334,7 @@ JAVA_BOOLEAN java_util_HashMap_AbstractMapIterator_hasNext__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("HashMap.java", 110)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.futureEntry_;
     if (_r0.o == JAVA_NULL) goto label23;
     _r0 = _r2;
@@ -339,21 +345,29 @@ JAVA_BOOLEAN java_util_HashMap_AbstractMapIterator_hasNext__(JAVA_OBJECT me)
     return _r0.i;
     label7:;
     XMLVM_SOURCE_POSITION("HashMap.java", 114)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.associatedMap_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_HashMap*) _r0.o)->fields.java_util_HashMap.elementData_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.position_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     if (_r0.o != JAVA_NULL) goto label34;
     XMLVM_SOURCE_POSITION("HashMap.java", 115)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.position_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.position_ = _r0.i;
     label23:;
     XMLVM_SOURCE_POSITION("HashMap.java", 113)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.position_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.associatedMap_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_HashMap*) _r1.o)->fields.java_util_HashMap.elementData_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i < _r1.i) goto label7;
@@ -375,8 +389,11 @@ void java_util_HashMap_AbstractMapIterator_checkConcurrentMod__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("HashMap.java", 124)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_HashMap_AbstractMapIterator*) _r2.o)->fields.java_util_HashMap_AbstractMapIterator.expectedModCount_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_HashMap_AbstractMapIterator*) _r2.o)->fields.java_util_HashMap_AbstractMapIterator.associatedMap_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_HashMap*) _r1.o)->fields.java_util_HashMap.modCount_;
     if (_r0.i == _r1.i) goto label14;
     XMLVM_SOURCE_POSITION("HashMap.java", 125)
@@ -414,24 +431,34 @@ void java_util_HashMap_AbstractMapIterator_makeNext__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label15:;
     XMLVM_SOURCE_POSITION("HashMap.java", 134)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.futureEntry_;
     if (_r0.o != JAVA_NULL) goto label43;
     XMLVM_SOURCE_POSITION("HashMap.java", 135)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.associatedMap_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_HashMap*) _r0.o)->fields.java_util_HashMap.elementData_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.position_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.position_ = _r2.i;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
+    XMLVM_CHECK_NPE(3)
     ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.currentEntry_ = _r0.o;
     XMLVM_SOURCE_POSITION("HashMap.java", 136)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.currentEntry_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_HashMap_Entry*) _r0.o)->fields.java_util_HashMap_Entry.next_;
+    XMLVM_CHECK_NPE(3)
     ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.futureEntry_ = _r0.o;
     XMLVM_SOURCE_POSITION("HashMap.java", 137)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(3)
     ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.prevEntry_ = _r0.o;
     label42:;
     XMLVM_SOURCE_POSITION("HashMap.java", 145)
@@ -439,18 +466,26 @@ void java_util_HashMap_AbstractMapIterator_makeNext__(JAVA_OBJECT me)
     return;
     label43:;
     XMLVM_SOURCE_POSITION("HashMap.java", 139)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.currentEntry_;
     if (_r0.o == JAVA_NULL) goto label51;
     XMLVM_SOURCE_POSITION("HashMap.java", 140)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.currentEntry_;
+    XMLVM_CHECK_NPE(3)
     ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.prevEntry_ = _r0.o;
     label51:;
     XMLVM_SOURCE_POSITION("HashMap.java", 142)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.futureEntry_;
+    XMLVM_CHECK_NPE(3)
     ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.currentEntry_ = _r0.o;
     XMLVM_SOURCE_POSITION("HashMap.java", 143)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.futureEntry_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_HashMap_Entry*) _r0.o)->fields.java_util_HashMap_Entry.next_;
+    XMLVM_CHECK_NPE(3)
     ((java_util_HashMap_AbstractMapIterator*) _r3.o)->fields.java_util_HashMap_AbstractMapIterator.futureEntry_ = _r0.o;
     goto label42;
     //XMLVM_END_WRAPPER
@@ -471,6 +506,7 @@ void java_util_HashMap_AbstractMapIterator_remove__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(4)
     java_util_HashMap_AbstractMapIterator_checkConcurrentMod__(_r4.o);
     XMLVM_SOURCE_POSITION("HashMap.java", 149)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_HashMap_AbstractMapIterator*) _r4.o)->fields.java_util_HashMap_AbstractMapIterator.currentEntry_;
     if (_r0.o != JAVA_NULL) goto label14;
     XMLVM_SOURCE_POSITION("HashMap.java", 150)
@@ -480,24 +516,34 @@ void java_util_HashMap_AbstractMapIterator_remove__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("HashMap.java", 152)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_HashMap_AbstractMapIterator*) _r4.o)->fields.java_util_HashMap_AbstractMapIterator.prevEntry_;
     if (_r0.o != JAVA_NULL) goto label68;
     XMLVM_SOURCE_POSITION("HashMap.java", 153)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_HashMap_AbstractMapIterator*) _r4.o)->fields.java_util_HashMap_AbstractMapIterator.currentEntry_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_HashMap_Entry*) _r0.o)->fields.java_util_HashMap_Entry.origKeyHash_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_HashMap_AbstractMapIterator*) _r4.o)->fields.java_util_HashMap_AbstractMapIterator.associatedMap_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_HashMap*) _r1.o)->fields.java_util_HashMap.elementData_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     _r1.i = _r1.i - _r3.i;
     _r0.i = _r0.i & _r1.i;
     XMLVM_SOURCE_POSITION("HashMap.java", 154)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_HashMap_AbstractMapIterator*) _r4.o)->fields.java_util_HashMap_AbstractMapIterator.associatedMap_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_HashMap*) _r1.o)->fields.java_util_HashMap.elementData_;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_HashMap_AbstractMapIterator*) _r4.o)->fields.java_util_HashMap_AbstractMapIterator.associatedMap_;
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_util_HashMap*) _r2.o)->fields.java_util_HashMap.elementData_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
     _r2.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_util_HashMap_Entry*) _r2.o)->fields.java_util_HashMap_Entry.next_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -505,29 +551,42 @@ void java_util_HashMap_AbstractMapIterator_remove__(JAVA_OBJECT me)
     label43:;
     XMLVM_SOURCE_POSITION("HashMap.java", 158)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(4)
     ((java_util_HashMap_AbstractMapIterator*) _r4.o)->fields.java_util_HashMap_AbstractMapIterator.currentEntry_ = _r0.o;
     XMLVM_SOURCE_POSITION("HashMap.java", 159)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_HashMap_AbstractMapIterator*) _r4.o)->fields.java_util_HashMap_AbstractMapIterator.expectedModCount_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_util_HashMap_AbstractMapIterator*) _r4.o)->fields.java_util_HashMap_AbstractMapIterator.expectedModCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("HashMap.java", 160)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_HashMap_AbstractMapIterator*) _r4.o)->fields.java_util_HashMap_AbstractMapIterator.associatedMap_;
+    XMLVM_CHECK_NPE(0)
     _r1.i = ((java_util_HashMap*) _r0.o)->fields.java_util_HashMap.modCount_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(0)
     ((java_util_HashMap*) _r0.o)->fields.java_util_HashMap.modCount_ = _r1.i;
     XMLVM_SOURCE_POSITION("HashMap.java", 161)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_HashMap_AbstractMapIterator*) _r4.o)->fields.java_util_HashMap_AbstractMapIterator.associatedMap_;
+    XMLVM_CHECK_NPE(0)
     _r1.i = ((java_util_HashMap*) _r0.o)->fields.java_util_HashMap.elementCount_;
     _r1.i = _r1.i - _r3.i;
+    XMLVM_CHECK_NPE(0)
     ((java_util_HashMap*) _r0.o)->fields.java_util_HashMap.elementCount_ = _r1.i;
     XMLVM_SOURCE_POSITION("HashMap.java", 163)
     XMLVM_EXIT_METHOD()
     return;
     label68:;
     XMLVM_SOURCE_POSITION("HashMap.java", 156)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_HashMap_AbstractMapIterator*) _r4.o)->fields.java_util_HashMap_AbstractMapIterator.prevEntry_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_HashMap_AbstractMapIterator*) _r4.o)->fields.java_util_HashMap_AbstractMapIterator.currentEntry_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_HashMap_Entry*) _r1.o)->fields.java_util_HashMap_Entry.next_;
+    XMLVM_CHECK_NPE(0)
     ((java_util_HashMap_Entry*) _r0.o)->fields.java_util_HashMap_Entry.next_ = _r1.o;
     goto label43;
     //XMLVM_END_WRAPPER

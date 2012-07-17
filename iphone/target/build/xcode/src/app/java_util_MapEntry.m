@@ -353,6 +353,7 @@ void java_util_MapEntry___INIT____java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("MapEntry.java", 33)
+    XMLVM_CHECK_NPE(0)
     ((java_util_MapEntry*) _r0.o)->fields.java_util_MapEntry.key_ = _r1.o;
     XMLVM_SOURCE_POSITION("MapEntry.java", 34)
     XMLVM_EXIT_METHOD()
@@ -374,8 +375,10 @@ void java_util_MapEntry___INIT____java_lang_Object_java_lang_Object(JAVA_OBJECT 
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("MapEntry.java", 37)
+    XMLVM_CHECK_NPE(0)
     ((java_util_MapEntry*) _r0.o)->fields.java_util_MapEntry.key_ = _r1.o;
     XMLVM_SOURCE_POSITION("MapEntry.java", 38)
+    XMLVM_CHECK_NPE(0)
     ((java_util_MapEntry*) _r0.o)->fields.java_util_MapEntry.value_ = _r2.o;
     XMLVM_SOURCE_POSITION("MapEntry.java", 39)
     XMLVM_EXIT_METHOD()
@@ -443,6 +446,7 @@ JAVA_BOOLEAN java_util_MapEntry_equals___java_lang_Object(JAVA_OBJECT me, JAVA_O
     XMLVM_SOURCE_POSITION("MapEntry.java", 56)
     _r5.o = _r5.o;
     XMLVM_SOURCE_POSITION("MapEntry.java", 57)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_MapEntry*) _r4.o)->fields.java_util_MapEntry.key_;
     if (_r0.o != JAVA_NULL) goto label34;
     XMLVM_CHECK_NPE(5)
@@ -450,6 +454,7 @@ JAVA_BOOLEAN java_util_MapEntry_equals___java_lang_Object(JAVA_OBJECT me, JAVA_O
     if (_r0.o != JAVA_NULL) goto label46;
     label22:;
     XMLVM_SOURCE_POSITION("MapEntry.java", 59)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_MapEntry*) _r4.o)->fields.java_util_MapEntry.value_;
     if (_r0.o != JAVA_NULL) goto label48;
     XMLVM_CHECK_NPE(5)
@@ -460,6 +465,7 @@ JAVA_BOOLEAN java_util_MapEntry_equals___java_lang_Object(JAVA_OBJECT me, JAVA_O
     XMLVM_SOURCE_POSITION("MapEntry.java", 60)
     goto label5;
     label34:;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_MapEntry*) _r4.o)->fields.java_util_MapEntry.key_;
     XMLVM_SOURCE_POSITION("MapEntry.java", 58)
     XMLVM_CHECK_NPE(5)
@@ -472,6 +478,7 @@ JAVA_BOOLEAN java_util_MapEntry_equals___java_lang_Object(JAVA_OBJECT me, JAVA_O
     _r0 = _r2;
     goto label5;
     label48:;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_MapEntry*) _r4.o)->fields.java_util_MapEntry.value_;
     XMLVM_CHECK_NPE(5)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_Entry_getValue__])(_r5.o);
@@ -494,6 +501,7 @@ JAVA_OBJECT java_util_MapEntry_getKey__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("MapEntry.java", 66)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_MapEntry*) _r1.o)->fields.java_util_MapEntry.key_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -508,6 +516,7 @@ JAVA_OBJECT java_util_MapEntry_getValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("MapEntry.java", 70)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_MapEntry*) _r1.o)->fields.java_util_MapEntry.value_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -525,11 +534,13 @@ JAVA_INT java_util_MapEntry_hashCode__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("MapEntry.java", 75)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_MapEntry*) _r3.o)->fields.java_util_MapEntry.key_;
     if (_r0.o != JAVA_NULL) goto label13;
     _r0 = _r2;
     label6:;
     XMLVM_SOURCE_POSITION("MapEntry.java", 76)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_MapEntry*) _r3.o)->fields.java_util_MapEntry.value_;
     if (_r1.o != JAVA_NULL) goto label20;
     _r1 = _r2;
@@ -538,12 +549,14 @@ JAVA_INT java_util_MapEntry_hashCode__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label13:;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_MapEntry*) _r3.o)->fields.java_util_MapEntry.key_;
     //java_lang_Object_hashCode__[4]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_Object*) _r0.o)->tib->vtable[4])(_r0.o);
     goto label6;
     label20:;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_MapEntry*) _r3.o)->fields.java_util_MapEntry.value_;
     //java_lang_Object_hashCode__[4]
     XMLVM_CHECK_NPE(1)
@@ -562,8 +575,10 @@ JAVA_OBJECT java_util_MapEntry_setValue___java_lang_Object(JAVA_OBJECT me, JAVA_
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("MapEntry.java", 80)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_MapEntry*) _r1.o)->fields.java_util_MapEntry.value_;
     XMLVM_SOURCE_POSITION("MapEntry.java", 81)
+    XMLVM_CHECK_NPE(1)
     ((java_util_MapEntry*) _r1.o)->fields.java_util_MapEntry.value_ = _r2.o;
     XMLVM_SOURCE_POSITION("MapEntry.java", 82)
     XMLVM_EXIT_METHOD()
@@ -583,6 +598,7 @@ JAVA_OBJECT java_util_MapEntry_toString__(JAVA_OBJECT me)
     _r0.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_MapEntry*) _r2.o)->fields.java_util_MapEntry.key_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);
@@ -590,6 +606,7 @@ JAVA_OBJECT java_util_MapEntry_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(162);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_MapEntry*) _r2.o)->fields.java_util_MapEntry.value_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);

@@ -649,6 +649,7 @@ JAVA_OBJECT gnu_xml_dom_DomText_splitText___int(JAVA_OBJECT me, JAVA_INT n1)
     _r3.i = 3;
     if (_r2.i != _r3.i) { XMLVM_MEMCPY(curThread_w26835aaab5b1c12->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w26835aaab5b1c12, sizeof(XMLVM_JMP_BUF)); goto label54; };
     XMLVM_SOURCE_POSITION("DomText.java", 118)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_dom_DomNode*) _r4.o)->fields.gnu_xml_dom_DomNode.owner_;
     //gnu_xml_dom_DomDocument_createTextNode___java_lang_String[65]
     XMLVM_CHECK_NPE(2)
@@ -663,10 +664,13 @@ JAVA_OBJECT gnu_xml_dom_DomText_splitText___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_TRY_BEGIN(w26835aaab5b1c14)
     // Begin try
     XMLVM_SOURCE_POSITION("DomText.java", 125)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_dom_DomNode*) _r4.o)->fields.gnu_xml_dom_DomNode.next_;
     if (_r2.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w26835aaab5b1c14->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w26835aaab5b1c14, sizeof(XMLVM_JMP_BUF)); goto label61; };
     XMLVM_SOURCE_POSITION("DomText.java", 127)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_dom_DomNode*) _r4.o)->fields.gnu_xml_dom_DomNode.parent_;
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((gnu_xml_dom_DomNode*) _r4.o)->fields.gnu_xml_dom_DomNode.next_;
     //gnu_xml_dom_DomNode_insertBefore___org_w3c_dom_Node_org_w3c_dom_Node[34]
     XMLVM_CHECK_NPE(2)
@@ -698,6 +702,7 @@ JAVA_OBJECT gnu_xml_dom_DomText_splitText___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_TRY_BEGIN(w26835aaab5b1c18)
     // Begin try
     XMLVM_SOURCE_POSITION("DomText.java", 122)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_dom_DomNode*) _r4.o)->fields.gnu_xml_dom_DomNode.owner_;
     //gnu_xml_dom_DomDocument_createCDATASection___java_lang_String[55]
     XMLVM_CHECK_NPE(2)
@@ -713,6 +718,7 @@ JAVA_OBJECT gnu_xml_dom_DomText_splitText___int(JAVA_OBJECT me, JAVA_INT n1)
     label61:;
     XMLVM_TRY_BEGIN(w26835aaab5b1c20)
     // Begin try
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_dom_DomNode*) _r4.o)->fields.gnu_xml_dom_DomNode.parent_;
     //gnu_xml_dom_DomNode_appendChild___org_w3c_dom_Node[7]
     XMLVM_CHECK_NPE(2)
@@ -747,9 +753,11 @@ JAVA_BOOLEAN gnu_xml_dom_DomText_isElementContentWhitespace__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("DomText.java", 147)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomNode*) _r3.o)->fields.gnu_xml_dom_DomNode.parent_;
     if (_r0.o == JAVA_NULL) goto label62;
     XMLVM_SOURCE_POSITION("DomText.java", 149)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomNode*) _r3.o)->fields.gnu_xml_dom_DomNode.owner_;
     //gnu_xml_dom_DomDocument_getDoctype__[68]
     XMLVM_CHECK_NPE(0)
@@ -758,6 +766,7 @@ JAVA_BOOLEAN gnu_xml_dom_DomText_isElementContentWhitespace__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DomText.java", 150)
     if (_r0.o == JAVA_NULL) goto label62;
     XMLVM_SOURCE_POSITION("DomText.java", 153)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_dom_DomNode*) _r3.o)->fields.gnu_xml_dom_DomNode.parent_;
     //gnu_xml_dom_DomNode_getNodeName__[23]
     XMLVM_CHECK_NPE(1)
@@ -767,8 +776,10 @@ JAVA_BOOLEAN gnu_xml_dom_DomText_isElementContentWhitespace__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DomText.java", 154)
     if (_r0.o == JAVA_NULL) goto label62;
     XMLVM_SOURCE_POSITION("DomText.java", 156)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((gnu_xml_dom_DTDElementTypeInfo*) _r0.o)->fields.gnu_xml_dom_DTDElementTypeInfo.model_;
     if (_r1.o != JAVA_NULL) goto label44;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_dom_DTDElementTypeInfo*) _r0.o)->fields.gnu_xml_dom_DTDElementTypeInfo.model_;
     // "#PCDATA"
     _r1.o = xmlvm_create_java_string_from_pool(1598);
@@ -820,13 +831,16 @@ JAVA_OBJECT gnu_xml_dom_DomText_getWholeText__(JAVA_OBJECT me)
     _r3.i = 3;
     XMLVM_SOURCE_POSITION("DomText.java", 169)
     XMLVM_SOURCE_POSITION("DomText.java", 171)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((gnu_xml_dom_DomNode*) _r6.o)->fields.gnu_xml_dom_DomNode.previous_;
     _r1 = _r6;
     label5:;
     if (_r0.o == JAVA_NULL) goto label15;
     XMLVM_SOURCE_POSITION("DomText.java", 172)
+    XMLVM_CHECK_NPE(0)
     _r2.i = ((gnu_xml_dom_DomNode*) _r0.o)->fields.gnu_xml_dom_DomNode.nodeType_;
     if (_r2.i == _r3.i) goto label41;
+    XMLVM_CHECK_NPE(0)
     _r2.i = ((gnu_xml_dom_DomNode*) _r0.o)->fields.gnu_xml_dom_DomNode.nodeType_;
     if (_r2.i == _r4.i) goto label41;
     label15:;
@@ -838,12 +852,15 @@ JAVA_OBJECT gnu_xml_dom_DomText_getWholeText__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder___INIT____java_lang_String(_r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomText.java", 178)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((gnu_xml_dom_DomNode*) _r1.o)->fields.gnu_xml_dom_DomNode.next_;
     label26:;
     if (_r1.o == JAVA_NULL) goto label36;
     XMLVM_SOURCE_POSITION("DomText.java", 179)
+    XMLVM_CHECK_NPE(1)
     _r2.i = ((gnu_xml_dom_DomNode*) _r1.o)->fields.gnu_xml_dom_DomNode.nodeType_;
     if (_r2.i == _r3.i) goto label47;
+    XMLVM_CHECK_NPE(1)
     _r2.i = ((gnu_xml_dom_DomNode*) _r1.o)->fields.gnu_xml_dom_DomNode.nodeType_;
     if (_r2.i == _r4.i) goto label47;
     label36:;
@@ -855,6 +872,7 @@ JAVA_OBJECT gnu_xml_dom_DomText_getWholeText__(JAVA_OBJECT me)
     return _r0.o;
     label41:;
     XMLVM_SOURCE_POSITION("DomText.java", 173)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((gnu_xml_dom_DomNode*) _r0.o)->fields.gnu_xml_dom_DomNode.previous_;
     _r5 = _r1;
     _r1 = _r0;
@@ -868,6 +886,7 @@ JAVA_OBJECT gnu_xml_dom_DomText_getWholeText__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomText.java", 180)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((gnu_xml_dom_DomNode*) _r1.o)->fields.gnu_xml_dom_DomNode.next_;
     goto label26;
     //XMLVM_END_WRAPPER
@@ -906,25 +925,31 @@ JAVA_OBJECT gnu_xml_dom_DomText_replaceWholeText___java_lang_String(JAVA_OBJECT 
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_dom_DomText*) _r7.o)->tib->vtable[47])(_r7.o, _r8.o);
     label16:;
     XMLVM_SOURCE_POSITION("DomText.java", 198)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((gnu_xml_dom_DomNode*) _r7.o)->fields.gnu_xml_dom_DomNode.previous_;
     _r2 = _r7;
     label19:;
     if (_r1.o == JAVA_NULL) goto label29;
     XMLVM_SOURCE_POSITION("DomText.java", 199)
+    XMLVM_CHECK_NPE(1)
     _r3.i = ((gnu_xml_dom_DomNode*) _r1.o)->fields.gnu_xml_dom_DomNode.nodeType_;
     if (_r3.i == _r4.i) goto label60;
+    XMLVM_CHECK_NPE(1)
     _r3.i = ((gnu_xml_dom_DomNode*) _r1.o)->fields.gnu_xml_dom_DomNode.nodeType_;
     if (_r3.i == _r5.i) goto label60;
     label29:;
     XMLVM_SOURCE_POSITION("DomText.java", 204)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_dom_DomNode*) _r2.o)->fields.gnu_xml_dom_DomNode.next_;
     XMLVM_SOURCE_POSITION("DomText.java", 205)
     if (_r0.i != 0) goto label35;
     if (_r2.o == _r7.o) goto label44;
     label35:;
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((gnu_xml_dom_DomNode*) _r7.o)->fields.gnu_xml_dom_DomNode.parent_;
     if (_r3.o == JAVA_NULL) goto label44;
     XMLVM_SOURCE_POSITION("DomText.java", 207)
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((gnu_xml_dom_DomNode*) _r7.o)->fields.gnu_xml_dom_DomNode.parent_;
     //gnu_xml_dom_DomNode_removeChild___org_w3c_dom_Node[44]
     XMLVM_CHECK_NPE(3)
@@ -933,8 +958,10 @@ JAVA_OBJECT gnu_xml_dom_DomText_replaceWholeText___java_lang_String(JAVA_OBJECT 
     XMLVM_SOURCE_POSITION("DomText.java", 209)
     if (_r1.o == JAVA_NULL) goto label54;
     XMLVM_SOURCE_POSITION("DomText.java", 210)
+    XMLVM_CHECK_NPE(1)
     _r2.i = ((gnu_xml_dom_DomNode*) _r1.o)->fields.gnu_xml_dom_DomNode.nodeType_;
     if (_r2.i == _r4.i) goto label66;
+    XMLVM_CHECK_NPE(1)
     _r2.i = ((gnu_xml_dom_DomNode*) _r1.o)->fields.gnu_xml_dom_DomNode.nodeType_;
     if (_r2.i == _r5.i) goto label66;
     label54:;
@@ -949,6 +976,7 @@ JAVA_OBJECT gnu_xml_dom_DomText_replaceWholeText___java_lang_String(JAVA_OBJECT 
     goto label11;
     label60:;
     XMLVM_SOURCE_POSITION("DomText.java", 200)
+    XMLVM_CHECK_NPE(1)
     _r2.o = ((gnu_xml_dom_DomNode*) _r1.o)->fields.gnu_xml_dom_DomNode.previous_;
     _r6 = _r2;
     _r2 = _r1;
@@ -956,14 +984,17 @@ JAVA_OBJECT gnu_xml_dom_DomText_replaceWholeText___java_lang_String(JAVA_OBJECT 
     goto label19;
     label66:;
     XMLVM_SOURCE_POSITION("DomText.java", 213)
+    XMLVM_CHECK_NPE(1)
     _r2.o = ((gnu_xml_dom_DomNode*) _r1.o)->fields.gnu_xml_dom_DomNode.next_;
     XMLVM_SOURCE_POSITION("DomText.java", 214)
     if (_r0.i != 0) goto label72;
     if (_r1.o == _r7.o) goto label81;
     label72:;
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((gnu_xml_dom_DomNode*) _r7.o)->fields.gnu_xml_dom_DomNode.parent_;
     if (_r3.o == JAVA_NULL) goto label81;
     XMLVM_SOURCE_POSITION("DomText.java", 216)
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((gnu_xml_dom_DomNode*) _r7.o)->fields.gnu_xml_dom_DomNode.parent_;
     //gnu_xml_dom_DomNode_removeChild___org_w3c_dom_Node[44]
     XMLVM_CHECK_NPE(3)

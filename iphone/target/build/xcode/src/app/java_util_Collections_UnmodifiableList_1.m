@@ -381,14 +381,17 @@ void java_util_Collections_UnmodifiableList_1___INIT____java_util_Collections_Un
     _r2.o = n1;
     _r3.i = n2;
     XMLVM_SOURCE_POSITION("Collections.java", 1)
+    XMLVM_CHECK_NPE(1)
     ((java_util_Collections_UnmodifiableList_1*) _r1.o)->fields.java_util_Collections_UnmodifiableList_1.this_1_ = _r2.o;
     XMLVM_SOURCE_POSITION("Collections.java", 1131)
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("Collections.java", 1132)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_UnmodifiableList*) _r2.o)->fields.java_util_Collections_UnmodifiableList.list_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_listIterator___int])(_r0.o, _r3.i);
+    XMLVM_CHECK_NPE(1)
     ((java_util_Collections_UnmodifiableList_1*) _r1.o)->fields.java_util_Collections_UnmodifiableList_1.iterator_ = _r0.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -420,6 +423,7 @@ JAVA_BOOLEAN java_util_Collections_UnmodifiableList_1_hasNext__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1139)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableList_1*) _r1.o)->fields.java_util_Collections_UnmodifiableList_1.iterator_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_hasNext__])(_r0.o);
@@ -436,6 +440,7 @@ JAVA_BOOLEAN java_util_Collections_UnmodifiableList_1_hasPrevious__(JAVA_OBJECT 
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1143)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableList_1*) _r1.o)->fields.java_util_Collections_UnmodifiableList_1.iterator_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_hasPrevious__])(_r0.o);
@@ -452,6 +457,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableList_1_next__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1147)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableList_1*) _r1.o)->fields.java_util_Collections_UnmodifiableList_1.iterator_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_next__])(_r0.o);
@@ -468,6 +474,7 @@ JAVA_INT java_util_Collections_UnmodifiableList_1_nextIndex__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1151)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableList_1*) _r1.o)->fields.java_util_Collections_UnmodifiableList_1.iterator_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_nextIndex__])(_r0.o);
@@ -484,6 +491,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableList_1_previous__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1155)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableList_1*) _r1.o)->fields.java_util_Collections_UnmodifiableList_1.iterator_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_previous__])(_r0.o);
@@ -500,6 +508,7 @@ JAVA_INT java_util_Collections_UnmodifiableList_1_previousIndex__(JAVA_OBJECT me
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1159)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableList_1*) _r1.o)->fields.java_util_Collections_UnmodifiableList_1.iterator_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_previousIndex__])(_r0.o);

@@ -1618,17 +1618,17 @@ JAVA_BOOLEAN org_apache_harmony_luni_util_Inet6Util_isValidIP6Address___java_lan
     label217:;
     XMLVM_SOURCE_POSITION("Inet6Util.java", 415)
     _r5.i = _r1.i + 1;
-    XMLVM_TRY_BEGIN(w30898aaac11b1d222)
+    XMLVM_TRY_BEGIN(w30900aaac11b1d222)
     // Begin try
     XMLVM_CHECK_NPE(15)
     _r5.o = java_lang_String_substring___int(_r15.o, _r5.i);
     java_lang_Integer_parseInt___java_lang_String(_r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w30898aaac11b1d222)
-        XMLVM_CATCH_SPECIFIC(w30898aaac11b1d222,java_lang_NumberFormatException,233)
-    XMLVM_CATCH_END(w30898aaac11b1d222)
-    XMLVM_RESTORE_EXCEPTION_ENV(w30898aaac11b1d222)
+    XMLVM_CATCH_BEGIN(w30900aaac11b1d222)
+        XMLVM_CATCH_SPECIFIC(w30900aaac11b1d222,java_lang_NumberFormatException,233)
+    XMLVM_CATCH_END(w30900aaac11b1d222)
+    XMLVM_RESTORE_EXCEPTION_ENV(w30900aaac11b1d222)
     _r5 = _r6;
     _r6 = _r7;
     _r7 = _r8;
@@ -1638,8 +1638,8 @@ JAVA_BOOLEAN org_apache_harmony_luni_util_Inet6Util_isValidIP6Address___java_lan
     goto label160;
     label233:;
     XMLVM_SOURCE_POSITION("Inet6Util.java", 420)
-    java_lang_Thread* curThread_w30898aaac11b1d232 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r15.o = curThread_w30898aaac11b1d232->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w30900aaac11b1d232 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r15.o = curThread_w30900aaac11b1d232->fields.java_lang_Thread.xmlvmException_;
     _r15.i = 0;
     goto label16;
     label237:;

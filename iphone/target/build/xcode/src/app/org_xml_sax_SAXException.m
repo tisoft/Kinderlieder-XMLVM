@@ -296,6 +296,7 @@ void org_xml_sax_SAXException___INIT___(JAVA_OBJECT me)
     java_lang_Exception___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("SAXException.java", 46)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(1)
     ((org_xml_sax_SAXException*) _r1.o)->fields.org_xml_sax_SAXException.exception_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXException.java", 47)
     XMLVM_EXIT_METHOD()
@@ -317,6 +318,7 @@ void org_xml_sax_SAXException___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OB
     java_lang_Exception___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("SAXException.java", 57)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(1)
     ((org_xml_sax_SAXException*) _r1.o)->fields.org_xml_sax_SAXException.exception_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXException.java", 58)
     XMLVM_EXIT_METHOD()
@@ -336,6 +338,7 @@ void org_xml_sax_SAXException___INIT____java_lang_Exception(JAVA_OBJECT me, JAVA
     XMLVM_CHECK_NPE(0)
     java_lang_Exception___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("SAXException.java", 73)
+    XMLVM_CHECK_NPE(0)
     ((org_xml_sax_SAXException*) _r0.o)->fields.org_xml_sax_SAXException.exception_ = _r1.o;
     XMLVM_SOURCE_POSITION("SAXException.java", 74)
     XMLVM_EXIT_METHOD()
@@ -357,6 +360,7 @@ void org_xml_sax_SAXException___INIT____java_lang_String_java_lang_Exception(JAV
     XMLVM_CHECK_NPE(0)
     java_lang_Exception___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SAXException.java", 89)
+    XMLVM_CHECK_NPE(0)
     ((org_xml_sax_SAXException*) _r0.o)->fields.org_xml_sax_SAXException.exception_ = _r2.o;
     XMLVM_SOURCE_POSITION("SAXException.java", 90)
     XMLVM_EXIT_METHOD()
@@ -377,9 +381,11 @@ JAVA_OBJECT org_xml_sax_SAXException_getMessage__(JAVA_OBJECT me)
     _r0.o = java_lang_Throwable_getMessage__(_r2.o);
     XMLVM_SOURCE_POSITION("SAXException.java", 106)
     if (_r0.o != JAVA_NULL) goto label16;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((org_xml_sax_SAXException*) _r2.o)->fields.org_xml_sax_SAXException.exception_;
     if (_r1.o == JAVA_NULL) goto label16;
     XMLVM_SOURCE_POSITION("SAXException.java", 107)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_SAXException*) _r2.o)->fields.org_xml_sax_SAXException.exception_;
     //java_lang_Exception_getMessage__[7]
     XMLVM_CHECK_NPE(0)
@@ -399,6 +405,7 @@ JAVA_OBJECT org_xml_sax_SAXException_getException__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXException.java", 121)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_SAXException*) _r1.o)->fields.org_xml_sax_SAXException.exception_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -413,9 +420,11 @@ JAVA_OBJECT org_xml_sax_SAXException_toString__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXException.java", 132)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_SAXException*) _r1.o)->fields.org_xml_sax_SAXException.exception_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("SAXException.java", 133)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_SAXException*) _r1.o)->fields.org_xml_sax_SAXException.exception_;
     //java_lang_Exception_toString__[5]
     XMLVM_CHECK_NPE(0)

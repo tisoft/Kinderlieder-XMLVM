@@ -543,10 +543,12 @@ void java_util_Collections_SetFromMap___INIT____java_util_Map(JAVA_OBJECT me, JA
     XMLVM_CHECK_NPE(1)
     java_util_AbstractSet___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("Collections.java", 2743)
+    XMLVM_CHECK_NPE(1)
     ((java_util_Collections_SetFromMap*) _r1.o)->fields.java_util_Collections_SetFromMap.m_ = _r2.o;
     XMLVM_SOURCE_POSITION("Collections.java", 2744)
     XMLVM_CHECK_NPE(2)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_keySet__])(_r2.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_Collections_SetFromMap*) _r1.o)->fields.java_util_Collections_SetFromMap.backingSet_ = _r0.o;
     XMLVM_SOURCE_POSITION("Collections.java", 2745)
     XMLVM_EXIT_METHOD()
@@ -564,6 +566,7 @@ JAVA_BOOLEAN java_util_Collections_SetFromMap_equals___java_lang_Object(JAVA_OBJ
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 2749)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SetFromMap*) _r1.o)->fields.java_util_Collections_SetFromMap.backingSet_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Set_equals___java_lang_Object])(_r0.o, _r2.o);
@@ -580,6 +583,7 @@ JAVA_INT java_util_Collections_SetFromMap_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 2754)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SetFromMap*) _r1.o)->fields.java_util_Collections_SetFromMap.backingSet_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Set_hashCode__])(_r0.o);
@@ -599,6 +603,7 @@ JAVA_BOOLEAN java_util_Collections_SetFromMap_add___java_lang_Object(JAVA_OBJECT
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 2759)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_SetFromMap*) _r2.o)->fields.java_util_Collections_SetFromMap.m_;
     _r1.o = java_lang_Boolean_GET_TRUE();
     XMLVM_CHECK_NPE(0)
@@ -622,6 +627,7 @@ void java_util_Collections_SetFromMap_clear__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 2764)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SetFromMap*) _r1.o)->fields.java_util_Collections_SetFromMap.m_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_clear__])(_r0.o);
@@ -639,6 +645,7 @@ JAVA_OBJECT java_util_Collections_SetFromMap_toString__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 2769)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SetFromMap*) _r1.o)->fields.java_util_Collections_SetFromMap.backingSet_;
     //java_lang_Object_toString__[5]
     XMLVM_CHECK_NPE(0)
@@ -658,6 +665,7 @@ JAVA_BOOLEAN java_util_Collections_SetFromMap_contains___java_lang_Object(JAVA_O
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 2774)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SetFromMap*) _r1.o)->fields.java_util_Collections_SetFromMap.backingSet_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Set_contains___java_lang_Object])(_r0.o, _r2.o);
@@ -676,6 +684,7 @@ JAVA_BOOLEAN java_util_Collections_SetFromMap_containsAll___java_util_Collection
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 2779)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SetFromMap*) _r1.o)->fields.java_util_Collections_SetFromMap.backingSet_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Set_containsAll___java_util_Collection])(_r0.o, _r2.o);
@@ -692,6 +701,7 @@ JAVA_BOOLEAN java_util_Collections_SetFromMap_isEmpty__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 2784)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SetFromMap*) _r1.o)->fields.java_util_Collections_SetFromMap.m_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_isEmpty__])(_r0.o);
@@ -710,6 +720,7 @@ JAVA_BOOLEAN java_util_Collections_SetFromMap_remove___java_lang_Object(JAVA_OBJ
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 2789)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SetFromMap*) _r1.o)->fields.java_util_Collections_SetFromMap.m_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_remove___java_lang_Object])(_r0.o, _r2.o);
@@ -734,6 +745,7 @@ JAVA_BOOLEAN java_util_Collections_SetFromMap_retainAll___java_util_Collection(J
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 2794)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SetFromMap*) _r1.o)->fields.java_util_Collections_SetFromMap.backingSet_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Set_retainAll___java_util_Collection])(_r0.o, _r2.o);
@@ -750,6 +762,7 @@ JAVA_OBJECT java_util_Collections_SetFromMap_toArray__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 2799)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SetFromMap*) _r1.o)->fields.java_util_Collections_SetFromMap.backingSet_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Set_toArray__])(_r0.o);
@@ -768,6 +781,7 @@ JAVA_OBJECT java_util_Collections_SetFromMap_toArray___java_lang_Object_1ARRAY(J
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 2804)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SetFromMap*) _r1.o)->fields.java_util_Collections_SetFromMap.backingSet_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Set_toArray___java_lang_Object_1ARRAY])(_r0.o, _r2.o);
@@ -784,6 +798,7 @@ JAVA_OBJECT java_util_Collections_SetFromMap_iterator__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 2809)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SetFromMap*) _r1.o)->fields.java_util_Collections_SetFromMap.backingSet_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Set_iterator__])(_r0.o);
@@ -800,6 +815,7 @@ JAVA_INT java_util_Collections_SetFromMap_size__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 2814)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SetFromMap*) _r1.o)->fields.java_util_Collections_SetFromMap.m_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_size__])(_r0.o);
@@ -821,9 +837,11 @@ void java_util_Collections_SetFromMap_readObject___java_io_ObjectInputStream(JAV
     XMLVM_CHECK_NPE(2)
     java_io_ObjectInputStream_defaultReadObject__(_r2.o);
     XMLVM_SOURCE_POSITION("Collections.java", 2821)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SetFromMap*) _r1.o)->fields.java_util_Collections_SetFromMap.m_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_keySet__])(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_Collections_SetFromMap*) _r1.o)->fields.java_util_Collections_SetFromMap.backingSet_ = _r0.o;
     XMLVM_SOURCE_POSITION("Collections.java", 2822)
     XMLVM_EXIT_METHOD()

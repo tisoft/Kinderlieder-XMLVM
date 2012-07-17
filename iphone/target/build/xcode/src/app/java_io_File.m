@@ -2025,6 +2025,7 @@ void java_io_File___INIT____java_io_File_java_lang_String(JAVA_OBJECT me, JAVA_O
     XMLVM_SOURCE_POSITION("File.java", 121)
     XMLVM_CHECK_NPE(1)
     _r0.o = java_io_File_fixSlashes___java_lang_String(_r1.o, _r3.o);
+    XMLVM_CHECK_NPE(1)
     ((java_io_File*) _r1.o)->fields.java_io_File.path_ = _r0.o;
     label19:;
     XMLVM_SOURCE_POSITION("File.java", 125)
@@ -2036,6 +2037,7 @@ void java_io_File___INIT____java_io_File_java_lang_String(JAVA_OBJECT me, JAVA_O
     _r0.o = java_io_File_getPath__(_r2.o);
     XMLVM_CHECK_NPE(1)
     _r0.o = java_io_File_calculatePath___java_lang_String_java_lang_String(_r1.o, _r0.o, _r3.o);
+    XMLVM_CHECK_NPE(1)
     ((java_io_File*) _r1.o)->fields.java_io_File.path_ = _r0.o;
     goto label19;
     //XMLVM_END_WRAPPER
@@ -2056,6 +2058,7 @@ void java_io_File___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1)
     XMLVM_SOURCE_POSITION("File.java", 135)
     XMLVM_CHECK_NPE(1)
     _r0.o = java_io_File_fixSlashes___java_lang_String(_r1.o, _r2.o);
+    XMLVM_CHECK_NPE(1)
     ((java_io_File*) _r1.o)->fields.java_io_File.path_ = _r0.o;
     XMLVM_SOURCE_POSITION("File.java", 136)
     XMLVM_EXIT_METHOD()
@@ -2090,6 +2093,7 @@ void java_io_File___INIT____java_lang_String_java_lang_String(JAVA_OBJECT me, JA
     XMLVM_SOURCE_POSITION("File.java", 154)
     XMLVM_CHECK_NPE(1)
     _r0.o = java_io_File_fixSlashes___java_lang_String(_r1.o, _r3.o);
+    XMLVM_CHECK_NPE(1)
     ((java_io_File*) _r1.o)->fields.java_io_File.path_ = _r0.o;
     label19:;
     XMLVM_SOURCE_POSITION("File.java", 158)
@@ -2099,6 +2103,7 @@ void java_io_File___INIT____java_lang_String_java_lang_String(JAVA_OBJECT me, JA
     XMLVM_SOURCE_POSITION("File.java", 156)
     XMLVM_CHECK_NPE(1)
     _r0.o = java_io_File_calculatePath___java_lang_String_java_lang_String(_r1.o, _r2.o, _r3.o);
+    XMLVM_CHECK_NPE(1)
     ((java_io_File*) _r1.o)->fields.java_io_File.path_ = _r0.o;
     goto label19;
     //XMLVM_END_WRAPPER
@@ -2124,6 +2129,7 @@ void java_io_File___INIT____java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     _r0.o = java_net_URI_getPath__(_r2.o);
     XMLVM_CHECK_NPE(1)
     _r0.o = java_io_File_fixSlashes___java_lang_String(_r1.o, _r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_io_File*) _r1.o)->fields.java_io_File.path_ = _r0.o;
     XMLVM_SOURCE_POSITION("File.java", 178)
     XMLVM_EXIT_METHOD()
@@ -2657,6 +2663,7 @@ JAVA_BOOLEAN java_io_File_canRead__(JAVA_OBJECT me)
     _r4.i = 1;
     _r3.i = 0;
     XMLVM_SOURCE_POSITION("File.java", 322)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_io_File*) _r5.o)->fields.java_io_File.path_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(2)
@@ -2674,6 +2681,7 @@ JAVA_BOOLEAN java_io_File_canRead__(JAVA_OBJECT me)
     if (_r1.o == JAVA_NULL) goto label23;
     XMLVM_SOURCE_POSITION("File.java", 326)
     XMLVM_SOURCE_POSITION("File.java", 327)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_io_File*) _r5.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(1)
     java_lang_SecurityManager_checkRead___java_lang_String(_r1.o, _r2.o);
@@ -2711,6 +2719,7 @@ JAVA_BOOLEAN java_io_File_canWrite__(JAVA_OBJECT me)
     if (_r1.o == JAVA_NULL) goto label12;
     XMLVM_SOURCE_POSITION("File.java", 344)
     XMLVM_SOURCE_POSITION("File.java", 345)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_io_File*) _r4.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(1)
     java_lang_SecurityManager_checkWrite___java_lang_String(_r1.o, _r2.o);
@@ -2718,6 +2727,7 @@ JAVA_BOOLEAN java_io_File_canWrite__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("File.java", 349)
     _r0.i = 0;
     XMLVM_SOURCE_POSITION("File.java", 350)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_io_File*) _r4.o)->fields.java_io_File.path_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(2)
@@ -2795,6 +2805,7 @@ JAVA_BOOLEAN java_io_File_delete__(JAVA_OBJECT me)
     if (_r1.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("File.java", 384)
     XMLVM_SOURCE_POSITION("File.java", 385)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_io_File*) _r3.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(1)
     java_lang_SecurityManager_checkDelete___java_lang_String(_r1.o, _r2.o);
@@ -2804,6 +2815,7 @@ JAVA_BOOLEAN java_io_File_delete__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(3)
     _r0.o = java_io_File_properPath___boolean(_r3.o, _r2.i);
     XMLVM_SOURCE_POSITION("File.java", 388)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_io_File*) _r3.o)->fields.java_io_File.path_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(2)
@@ -2843,6 +2855,7 @@ void java_io_File_deleteOnExit__(JAVA_OBJECT me)
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("File.java", 409)
     XMLVM_SOURCE_POSITION("File.java", 410)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_File*) _r2.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkDelete___java_lang_String(_r0.o, _r1.o);
@@ -2884,6 +2897,7 @@ JAVA_BOOLEAN java_io_File_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT 
     _r0.i = java_io_File_GET_caseSensitive();
     if (_r0.i != 0) goto label23;
     XMLVM_SOURCE_POSITION("File.java", 431)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_File*) _r2.o)->fields.java_io_File.path_;
     _r3.o = _r3.o;
     XMLVM_CHECK_NPE(3)
@@ -2892,6 +2906,7 @@ JAVA_BOOLEAN java_io_File_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT 
     _r0.i = java_lang_String_equalsIgnoreCase___java_lang_String(_r0.o, _r1.o);
     goto label5;
     label23:;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_File*) _r2.o)->fields.java_io_File.path_;
     _r3.o = _r3.o;
     XMLVM_CHECK_NPE(3)
@@ -2912,6 +2927,7 @@ JAVA_BOOLEAN java_io_File_exists__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("File.java", 448)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_File*) _r2.o)->fields.java_io_File.path_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(1)
@@ -2929,6 +2945,7 @@ JAVA_BOOLEAN java_io_File_exists__(JAVA_OBJECT me)
     if (_r0.o == JAVA_NULL) goto label21;
     XMLVM_SOURCE_POSITION("File.java", 452)
     XMLVM_SOURCE_POSITION("File.java", 453)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_File*) _r2.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkRead___java_lang_String(_r0.o, _r1.o);
@@ -3594,19 +3611,23 @@ JAVA_OBJECT java_io_File_getName__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("File.java", 690)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_io_File*) _r4.o)->fields.java_io_File.path_;
     _r2.o = java_io_File_GET_separator();
     XMLVM_CHECK_NPE(1)
     _r0.i = java_lang_String_lastIndexOf___java_lang_String(_r1.o, _r2.o);
     if (_r0.i >= 0) goto label13;
     XMLVM_SOURCE_POSITION("File.java", 691)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_io_File*) _r4.o)->fields.java_io_File.path_;
     label12:;
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label13:;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_io_File*) _r4.o)->fields.java_io_File.path_;
     _r2.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_io_File*) _r4.o)->fields.java_io_File.path_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(3)
@@ -3635,6 +3656,7 @@ JAVA_OBJECT java_io_File_getParent__(JAVA_OBJECT me)
     _r6.i = 0;
     _r5.i = -1;
     XMLVM_SOURCE_POSITION("File.java", 703)
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_io_File*) _r8.o)->fields.java_io_File.path_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(3)
@@ -3646,6 +3668,7 @@ JAVA_OBJECT java_io_File_getParent__(JAVA_OBJECT me)
     if (_r3.i != _r4.i) goto label30;
     _r3.i = 2;
     if (_r2.i <= _r3.i) goto label30;
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_io_File*) _r8.o)->fields.java_io_File.path_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(3)
@@ -3656,6 +3679,7 @@ JAVA_OBJECT java_io_File_getParent__(JAVA_OBJECT me)
     _r0.i = 2;
     label30:;
     XMLVM_SOURCE_POSITION("File.java", 707)
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_io_File*) _r8.o)->fields.java_io_File.path_;
     _r4.i = java_io_File_GET_separatorChar();
     XMLVM_CHECK_NPE(3)
@@ -3668,6 +3692,7 @@ JAVA_OBJECT java_io_File_getParent__(JAVA_OBJECT me)
     label43:;
     XMLVM_SOURCE_POSITION("File.java", 711)
     if (_r1.i == _r5.i) goto label57;
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_io_File*) _r8.o)->fields.java_io_File.path_;
     _r4.i = _r2.i - _r7.i;
     //java_lang_String_charAt___int[6]
@@ -3684,11 +3709,13 @@ JAVA_OBJECT java_io_File_getParent__(JAVA_OBJECT me)
     return _r3.o;
     label59:;
     XMLVM_SOURCE_POSITION("File.java", 714)
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_io_File*) _r8.o)->fields.java_io_File.path_;
     _r4.i = java_io_File_GET_separatorChar();
     XMLVM_CHECK_NPE(3)
     _r3.i = java_lang_String_indexOf___int(_r3.o, _r4.i);
     if (_r3.i != _r1.i) goto label88;
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_io_File*) _r8.o)->fields.java_io_File.path_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(3)
@@ -3696,12 +3723,14 @@ JAVA_OBJECT java_io_File_getParent__(JAVA_OBJECT me)
     _r4.i = java_io_File_GET_separatorChar();
     if (_r3.i != _r4.i) goto label88;
     XMLVM_SOURCE_POSITION("File.java", 716)
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_io_File*) _r8.o)->fields.java_io_File.path_;
     _r4.i = _r1.i + 1;
     XMLVM_CHECK_NPE(3)
     _r3.o = java_lang_String_substring___int_int(_r3.o, _r6.i, _r4.i);
     goto label58;
     label88:;
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_io_File*) _r8.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(3)
     _r3.o = java_lang_String_substring___int_int(_r3.o, _r6.i, _r1.i);
@@ -3744,6 +3773,7 @@ JAVA_OBJECT java_io_File_getPath__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("File.java", 742)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_File*) _r1.o)->fields.java_io_File.path_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -3772,6 +3802,7 @@ JAVA_LONG java_io_File_getTotalSpace__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkPermission___java_security_Permission(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("File.java", 756)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_File*) _r3.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkRead___java_lang_String(_r0.o, _r1.o);
@@ -3811,6 +3842,7 @@ JAVA_LONG java_io_File_getUsableSpace__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkPermission___java_security_Permission(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("File.java", 778)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_File*) _r3.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkRead___java_lang_String(_r0.o, _r1.o);
@@ -3850,6 +3882,7 @@ JAVA_LONG java_io_File_getFreeSpace__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkPermission___java_security_Permission(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("File.java", 795)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_File*) _r3.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkRead___java_lang_String(_r0.o, _r1.o);
@@ -3880,6 +3913,7 @@ JAVA_INT java_io_File_hashCode__(JAVA_OBJECT me)
     _r0.i = java_io_File_GET_caseSensitive();
     if (_r0.i == 0) goto label15;
     XMLVM_SOURCE_POSITION("File.java", 812)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_File*) _r2.o)->fields.java_io_File.path_;
     //java_lang_String_hashCode__[4]
     XMLVM_CHECK_NPE(0)
@@ -3890,6 +3924,7 @@ JAVA_INT java_io_File_hashCode__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label15:;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_File*) _r2.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_toLowerCase__(_r0.o);
@@ -3921,17 +3956,20 @@ JAVA_BOOLEAN java_io_File_isAbsolute__(JAVA_OBJECT me)
     _r0.i = java_io_File_GET_separatorChar();
     if (_r0.i != _r5.i) goto label91;
     XMLVM_SOURCE_POSITION("File.java", 830)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_io_File*) _r6.o)->fields.java_io_File.path_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[8])(_r0.o);
     if (_r0.i <= _r2.i) goto label39;
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_io_File*) _r6.o)->fields.java_io_File.path_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) ((java_lang_String*) _r0.o)->tib->vtable[6])(_r0.o, _r3.i);
     _r1.i = java_io_File_GET_separatorChar();
     if (_r0.i != _r1.i) goto label39;
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_io_File*) _r6.o)->fields.java_io_File.path_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(0)
@@ -3946,30 +3984,35 @@ JAVA_BOOLEAN java_io_File_isAbsolute__(JAVA_OBJECT me)
     return _r0.i;
     label39:;
     XMLVM_SOURCE_POSITION("File.java", 834)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_io_File*) _r6.o)->fields.java_io_File.path_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[8])(_r0.o);
     if (_r0.i <= _r4.i) goto label89;
     XMLVM_SOURCE_POSITION("File.java", 835)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_io_File*) _r6.o)->fields.java_io_File.path_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) ((java_lang_String*) _r0.o)->tib->vtable[6])(_r0.o, _r3.i);
     _r0.i = java_lang_Character_isLetter___char(_r0.i);
     if (_r0.i == 0) goto label89;
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_io_File*) _r6.o)->fields.java_io_File.path_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) ((java_lang_String*) _r0.o)->tib->vtable[6])(_r0.o, _r2.i);
     _r1.i = 58;
     if (_r0.i != _r1.i) goto label89;
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_io_File*) _r6.o)->fields.java_io_File.path_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) ((java_lang_String*) _r0.o)->tib->vtable[6])(_r0.o, _r4.i);
     _r1.i = 47;
     if (_r0.i == _r1.i) goto label87;
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_io_File*) _r6.o)->fields.java_io_File.path_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(0)
@@ -3984,11 +4027,13 @@ JAVA_BOOLEAN java_io_File_isAbsolute__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("File.java", 840)
     goto label38;
     label91:;
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_io_File*) _r6.o)->fields.java_io_File.path_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[8])(_r0.o);
     if (_r0.i <= 0) goto label111;
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_io_File*) _r6.o)->fields.java_io_File.path_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(0)
@@ -4012,6 +4057,7 @@ JAVA_BOOLEAN java_io_File_isDirectory__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("File.java", 858)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_File*) _r2.o)->fields.java_io_File.path_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(1)
@@ -4029,6 +4075,7 @@ JAVA_BOOLEAN java_io_File_isDirectory__(JAVA_OBJECT me)
     if (_r0.o == JAVA_NULL) goto label21;
     XMLVM_SOURCE_POSITION("File.java", 862)
     XMLVM_SOURCE_POSITION("File.java", 863)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_File*) _r2.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkRead___java_lang_String(_r0.o, _r1.o);
@@ -4053,6 +4100,7 @@ JAVA_BOOLEAN java_io_File_isFile__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("File.java", 880)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_File*) _r2.o)->fields.java_io_File.path_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(1)
@@ -4070,6 +4118,7 @@ JAVA_BOOLEAN java_io_File_isFile__(JAVA_OBJECT me)
     if (_r0.o == JAVA_NULL) goto label21;
     XMLVM_SOURCE_POSITION("File.java", 884)
     XMLVM_SOURCE_POSITION("File.java", 885)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_File*) _r2.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkRead___java_lang_String(_r0.o, _r1.o);
@@ -4094,6 +4143,7 @@ JAVA_BOOLEAN java_io_File_isHidden__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("File.java", 905)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_File*) _r2.o)->fields.java_io_File.path_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(1)
@@ -4111,6 +4161,7 @@ JAVA_BOOLEAN java_io_File_isHidden__(JAVA_OBJECT me)
     if (_r0.o == JAVA_NULL) goto label21;
     XMLVM_SOURCE_POSITION("File.java", 909)
     XMLVM_SOURCE_POSITION("File.java", 910)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_File*) _r2.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkRead___java_lang_String(_r0.o, _r1.o);
@@ -4151,6 +4202,7 @@ JAVA_LONG java_io_File_lastModified__(JAVA_OBJECT me)
     if (_r2.o == JAVA_NULL) goto label13;
     XMLVM_SOURCE_POSITION("File.java", 934)
     XMLVM_SOURCE_POSITION("File.java", 935)
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_io_File*) _r7.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(2)
     java_lang_SecurityManager_checkRead___java_lang_String(_r2.o, _r3.o);
@@ -4212,6 +4264,7 @@ JAVA_BOOLEAN java_io_File_setLastModified___long(JAVA_OBJECT me, JAVA_LONG n1)
     if (_r0.o == JAVA_NULL) goto label29;
     XMLVM_SOURCE_POSITION("File.java", 966)
     XMLVM_SOURCE_POSITION("File.java", 967)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_File*) _r3.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkWrite___java_lang_String(_r0.o, _r1.o);
@@ -4242,6 +4295,7 @@ JAVA_BOOLEAN java_io_File_setReadOnly__(JAVA_OBJECT me)
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("File.java", 986)
     XMLVM_SOURCE_POSITION("File.java", 987)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_File*) _r2.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkWrite___java_lang_String(_r0.o, _r1.o);
@@ -4363,6 +4417,7 @@ JAVA_LONG java_io_File_length__(JAVA_OBJECT me)
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("File.java", 1102)
     XMLVM_SOURCE_POSITION("File.java", 1103)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_File*) _r3.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkRead___java_lang_String(_r0.o, _r1.o);
@@ -4399,11 +4454,13 @@ JAVA_OBJECT java_io_File_list__(JAVA_OBJECT me)
     if (_r4.o == JAVA_NULL) goto label12;
     XMLVM_SOURCE_POSITION("File.java", 1127)
     XMLVM_SOURCE_POSITION("File.java", 1128)
+    XMLVM_CHECK_NPE(7)
     _r5.o = ((java_io_File*) _r7.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(4)
     java_lang_SecurityManager_checkRead___java_lang_String(_r4.o, _r5.o);
     label12:;
     XMLVM_SOURCE_POSITION("File.java", 1131)
+    XMLVM_CHECK_NPE(7)
     _r5.o = ((java_io_File*) _r7.o)->fields.java_io_File.path_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(5)
@@ -4597,11 +4654,13 @@ JAVA_OBJECT java_io_File_listFiles___java_io_FileFilter(JAVA_OBJECT me, JAVA_OBJ
     if (_r5.o == JAVA_NULL) goto label12;
     XMLVM_SOURCE_POSITION("File.java", 1233)
     XMLVM_SOURCE_POSITION("File.java", 1234)
+    XMLVM_CHECK_NPE(9)
     _r7.o = ((java_io_File*) _r9.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(5)
     java_lang_SecurityManager_checkRead___java_lang_String(_r5.o, _r7.o);
     label12:;
     XMLVM_SOURCE_POSITION("File.java", 1237)
+    XMLVM_CHECK_NPE(9)
     _r7.o = ((java_io_File*) _r9.o)->fields.java_io_File.path_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(7)
@@ -4708,11 +4767,13 @@ JAVA_OBJECT java_io_File_list___java_io_FilenameFilter(JAVA_OBJECT me, JAVA_OBJE
     if (_r4.o == JAVA_NULL) goto label12;
     XMLVM_SOURCE_POSITION("File.java", 1283)
     XMLVM_SOURCE_POSITION("File.java", 1284)
+    XMLVM_CHECK_NPE(8)
     _r6.o = ((java_io_File*) _r8.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(4)
     java_lang_SecurityManager_checkRead___java_lang_String(_r4.o, _r6.o);
     label12:;
     XMLVM_SOURCE_POSITION("File.java", 1287)
+    XMLVM_CHECK_NPE(8)
     _r6.o = ((java_io_File*) _r8.o)->fields.java_io_File.path_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(6)
@@ -4808,6 +4869,7 @@ JAVA_BOOLEAN java_io_File_mkdir__(JAVA_OBJECT me)
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("File.java", 1327)
     XMLVM_SOURCE_POSITION("File.java", 1328)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_File*) _r2.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkWrite___java_lang_String(_r0.o, _r1.o);
@@ -4899,11 +4961,13 @@ JAVA_BOOLEAN java_io_File_createNewFile__(JAVA_OBJECT me)
     if (_r1.o == JAVA_NULL) goto label12;
     XMLVM_SOURCE_POSITION("File.java", 1383)
     XMLVM_SOURCE_POSITION("File.java", 1384)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_io_File*) _r5.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(1)
     java_lang_SecurityManager_checkWrite___java_lang_String(_r1.o, _r2.o);
     label12:;
     XMLVM_SOURCE_POSITION("File.java", 1386)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_io_File*) _r5.o)->fields.java_io_File.path_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(2)
@@ -4932,6 +4996,7 @@ JAVA_BOOLEAN java_io_File_createNewFile__(JAVA_OBJECT me)
     _r2.o = __NEW_java_io_IOException();
     // "luni.B4"
     _r3.o = xmlvm_create_java_string_from_pool(2565);
+    XMLVM_CHECK_NPE(5)
     _r4.o = ((java_io_File*) _r5.o)->fields.java_io_File.path_;
     _r3.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object(_r3.o, _r4.o);
     XMLVM_CHECK_NPE(2)
@@ -5071,11 +5136,11 @@ JAVA_OBJECT java_io_File_genTempFile___java_lang_String_java_lang_String_java_io
     XMLVM_SOURCE_POSITION("File.java", 1467)
     _r4.o = java_io_File_GET_tempFileLocker();
     java_lang_Object_acquireLockRecursive__(_r4.o);
-    XMLVM_TRY_BEGIN(w33523aaac88b1c10)
+    XMLVM_TRY_BEGIN(w33528aaac88b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("File.java", 1468)
     _r5.i = java_io_File_GET_counter();
-    if (_r5.i != 0) { XMLVM_MEMCPY(curThread_w33523aaac88b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w33523aaac88b1c10, sizeof(XMLVM_JMP_BUF)); goto label34; };
+    if (_r5.i != 0) { XMLVM_MEMCPY(curThread_w33528aaac88b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w33528aaac88b1c10, sizeof(XMLVM_JMP_BUF)); goto label34; };
     XMLVM_SOURCE_POSITION("File.java", 1469)
 
     
@@ -5100,12 +5165,12 @@ JAVA_OBJECT java_io_File_genTempFile___java_lang_String_java_lang_String_java_io
     java_io_File_PUT_counterBase( _r5.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w33523aaac88b1c10)
-        XMLVM_CATCH_SPECIFIC(w33523aaac88b1c10,java_lang_Object,70)
-    XMLVM_CATCH_END(w33523aaac88b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w33523aaac88b1c10)
+    XMLVM_CATCH_BEGIN(w33528aaac88b1c10)
+        XMLVM_CATCH_SPECIFIC(w33528aaac88b1c10,java_lang_Object,70)
+    XMLVM_CATCH_END(w33528aaac88b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w33528aaac88b1c10)
     label34:;
-    XMLVM_TRY_BEGIN(w33523aaac88b1c12)
+    XMLVM_TRY_BEGIN(w33528aaac88b1c12)
     // Begin try
     XMLVM_SOURCE_POSITION("File.java", 1473)
     _r1.i = java_io_File_GET_counter();
@@ -5113,20 +5178,20 @@ JAVA_OBJECT java_io_File_genTempFile___java_lang_String_java_lang_String_java_io
     java_io_File_PUT_counter( _r5.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w33523aaac88b1c12)
-        XMLVM_CATCH_SPECIFIC(w33523aaac88b1c12,java_lang_Object,70)
-    XMLVM_CATCH_END(w33523aaac88b1c12)
-    XMLVM_RESTORE_EXCEPTION_ENV(w33523aaac88b1c12)
-    XMLVM_TRY_BEGIN(w33523aaac88b1c13)
+    XMLVM_CATCH_BEGIN(w33528aaac88b1c12)
+        XMLVM_CATCH_SPECIFIC(w33528aaac88b1c12,java_lang_Object,70)
+    XMLVM_CATCH_END(w33528aaac88b1c12)
+    XMLVM_RESTORE_EXCEPTION_ENV(w33528aaac88b1c12)
+    XMLVM_TRY_BEGIN(w33528aaac88b1c13)
     // Begin try
     XMLVM_SOURCE_POSITION("File.java", 1474)
     java_lang_Object_releaseLockRecursive__(_r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w33523aaac88b1c13)
-        XMLVM_CATCH_SPECIFIC(w33523aaac88b1c13,java_lang_Object,73)
-    XMLVM_CATCH_END(w33523aaac88b1c13)
-    XMLVM_RESTORE_EXCEPTION_ENV(w33523aaac88b1c13)
+    XMLVM_CATCH_BEGIN(w33528aaac88b1c13)
+        XMLVM_CATCH_SPECIFIC(w33528aaac88b1c13,java_lang_Object,73)
+    XMLVM_CATCH_END(w33528aaac88b1c13)
+    XMLVM_RESTORE_EXCEPTION_ENV(w33528aaac88b1c13)
     XMLVM_SOURCE_POSITION("File.java", 1476)
     _r3.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(3)
@@ -5154,22 +5219,22 @@ JAVA_OBJECT java_io_File_genTempFile___java_lang_String_java_lang_String_java_io
     XMLVM_EXIT_METHOD()
     return _r4.o;
     label70:;
-    java_lang_Thread* curThread_w33523aaac88b1c32 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r5.o = curThread_w33523aaac88b1c32->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w33528aaac88b1c32 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r5.o = curThread_w33528aaac88b1c32->fields.java_lang_Thread.xmlvmException_;
     label71:;
-    XMLVM_TRY_BEGIN(w33523aaac88b1c34)
+    XMLVM_TRY_BEGIN(w33528aaac88b1c34)
     // Begin try
     java_lang_Object_releaseLockRecursive__(_r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w33523aaac88b1c34)
-        XMLVM_CATCH_SPECIFIC(w33523aaac88b1c34,java_lang_Object,70)
-    XMLVM_CATCH_END(w33523aaac88b1c34)
-    XMLVM_RESTORE_EXCEPTION_ENV(w33523aaac88b1c34)
+    XMLVM_CATCH_BEGIN(w33528aaac88b1c34)
+        XMLVM_CATCH_SPECIFIC(w33528aaac88b1c34,java_lang_Object,70)
+    XMLVM_CATCH_END(w33528aaac88b1c34)
+    XMLVM_RESTORE_EXCEPTION_ENV(w33528aaac88b1c34)
     XMLVM_THROW_CUSTOM(_r5.o)
     label73:;
-    java_lang_Thread* curThread_w33523aaac88b1c37 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r5.o = curThread_w33523aaac88b1c37->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w33528aaac88b1c37 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r5.o = curThread_w33528aaac88b1c37->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r1;
     goto label71;
     //XMLVM_END_WRAPPER
@@ -5201,9 +5266,11 @@ JAVA_OBJECT java_io_File_properPath___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
     XMLVM_SOURCE_POSITION("File.java", 1494)
     _r11.i = 0;
     XMLVM_SOURCE_POSITION("File.java", 1496)
+    XMLVM_CHECK_NPE(10)
     _r4.o = ((java_io_File*) _r10.o)->fields.java_io_File.properPath_;
     if (_r4.o == JAVA_NULL) goto label13;
     XMLVM_SOURCE_POSITION("File.java", 1497)
+    XMLVM_CHECK_NPE(10)
     _r4.o = ((java_io_File*) _r10.o)->fields.java_io_File.properPath_;
     label12:;
     XMLVM_SOURCE_POSITION("File.java", 1538)
@@ -5215,9 +5282,11 @@ JAVA_OBJECT java_io_File_properPath___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
     _r4.i = java_io_File_isAbsolute__(_r10.o);
     if (_r4.i == 0) goto label29;
     XMLVM_SOURCE_POSITION("File.java", 1501)
+    XMLVM_CHECK_NPE(10)
     _r4.o = ((java_io_File*) _r10.o)->fields.java_io_File.path_;
     _r1.o = org_apache_harmony_luni_util_Util_getUTF8Bytes___java_lang_String(_r4.o);
     XMLVM_SOURCE_POSITION("File.java", 1502)
+    XMLVM_CHECK_NPE(10)
     ((java_io_File*) _r10.o)->fields.java_io_File.properPath_ = _r1.o;
     _r4 = _r1;
     goto label12;
@@ -5234,6 +5303,7 @@ JAVA_OBJECT java_io_File_properPath___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
     _r3.o = _r3.o;
     label44:;
     XMLVM_SOURCE_POSITION("File.java", 1513)
+    XMLVM_CHECK_NPE(10)
     _r4.o = ((java_io_File*) _r10.o)->fields.java_io_File.path_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(4)
@@ -5241,6 +5311,7 @@ JAVA_OBJECT java_io_File_properPath___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
     if (_r4.i != 0) goto label66;
     XMLVM_SOURCE_POSITION("File.java", 1514)
     _r4.o = org_apache_harmony_luni_util_Util_getUTF8Bytes___java_lang_String(_r3.o);
+    XMLVM_CHECK_NPE(10)
     ((java_io_File*) _r10.o)->fields.java_io_File.properPath_ = _r4.o;
     goto label12;
     label59:;
@@ -5255,6 +5326,7 @@ JAVA_OBJECT java_io_File_properPath___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
     XMLVM_CHECK_NPE(3)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r3.o)->tib->vtable[8])(_r3.o);
     XMLVM_SOURCE_POSITION("File.java", 1519)
+    XMLVM_CHECK_NPE(10)
     _r4.o = ((java_io_File*) _r10.o)->fields.java_io_File.path_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(4)
@@ -5276,6 +5348,7 @@ JAVA_OBJECT java_io_File_properPath___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
     _r5.o = java_lang_String_substring___int_int(_r3.o, _r6.i, _r8.i);
     XMLVM_CHECK_NPE(4)
     _r4.o = java_lang_StringBuilder_append___java_lang_String(_r4.o, _r5.o);
+    XMLVM_CHECK_NPE(10)
     _r5.o = ((java_io_File*) _r10.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(4)
     _r4.o = java_lang_StringBuilder_append___java_lang_String(_r4.o, _r5.o);
@@ -5283,13 +5356,16 @@ JAVA_OBJECT java_io_File_properPath___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
     XMLVM_CHECK_NPE(4)
     _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r4.o)->tib->vtable[5])(_r4.o);
     _r4.o = org_apache_harmony_luni_util_Util_getUTF8Bytes___java_lang_String(_r4.o);
+    XMLVM_CHECK_NPE(10)
     ((java_io_File*) _r10.o)->fields.java_io_File.properPath_ = _r4.o;
     goto label12;
     label120:;
     XMLVM_SOURCE_POSITION("File.java", 1524)
+    XMLVM_CHECK_NPE(10)
     _r4.o = ((java_io_File*) _r10.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(4)
     _r4.o = java_lang_String_substring___int(_r4.o, _r7.i);
+    XMLVM_CHECK_NPE(10)
     ((java_io_File*) _r10.o)->fields.java_io_File.path_ = _r4.o;
     label128:;
     XMLVM_SOURCE_POSITION("File.java", 1528)
@@ -5302,6 +5378,7 @@ JAVA_OBJECT java_io_File_properPath___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
     _r5.i = java_io_File_GET_separatorChar();
     if (_r4.i == _r5.i) goto label195;
     XMLVM_SOURCE_POSITION("File.java", 1530)
+    XMLVM_CHECK_NPE(10)
     _r4.o = ((java_io_File*) _r10.o)->fields.java_io_File.path_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(4)
@@ -5327,6 +5404,7 @@ JAVA_OBJECT java_io_File_properPath___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
     java_lang_StringBuilder___INIT___(_r4.o);
     XMLVM_CHECK_NPE(4)
     _r4.o = java_lang_StringBuilder_append___java_lang_String(_r4.o, _r2.o);
+    XMLVM_CHECK_NPE(10)
     _r5.o = ((java_io_File*) _r10.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(4)
     _r4.o = java_lang_StringBuilder_append___java_lang_String(_r4.o, _r5.o);
@@ -5334,10 +5412,12 @@ JAVA_OBJECT java_io_File_properPath___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
     XMLVM_CHECK_NPE(4)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r4.o)->tib->vtable[5])(_r4.o);
     _r4.o = org_apache_harmony_luni_util_Util_getUTF8Bytes___java_lang_String(_r2.o);
+    XMLVM_CHECK_NPE(10)
     ((java_io_File*) _r10.o)->fields.java_io_File.properPath_ = _r4.o;
     goto label12;
     label195:;
     XMLVM_SOURCE_POSITION("File.java", 1533)
+    XMLVM_CHECK_NPE(10)
     _r4.o = ((java_io_File*) _r10.o)->fields.java_io_File.path_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(4)
@@ -5369,10 +5449,12 @@ JAVA_BOOLEAN java_io_File_renameTo___java_io_File(JAVA_OBJECT me, JAVA_OBJECT n1
     if (_r0.o == JAVA_NULL) goto label17;
     XMLVM_SOURCE_POSITION("File.java", 1554)
     XMLVM_SOURCE_POSITION("File.java", 1555)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_File*) _r3.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkWrite___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("File.java", 1556)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_io_File*) _r4.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkWrite___java_lang_String(_r0.o, _r1.o);
@@ -5399,6 +5481,7 @@ JAVA_OBJECT java_io_File_toString__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("File.java", 1571)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_File*) _r1.o)->fields.java_io_File.path_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -5425,14 +5508,14 @@ JAVA_OBJECT java_io_File_toURI__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("File.java", 1583)
     XMLVM_CHECK_NPE(8)
     _r3.o = java_io_File_getAbsoluteName__(_r8.o);
-    XMLVM_TRY_BEGIN(w33523aaac93b1b6)
+    XMLVM_TRY_BEGIN(w33528aaac93b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("File.java", 1585)
     // "/"
     _r0.o = xmlvm_create_java_string_from_pool(394);
     XMLVM_CHECK_NPE(3)
     _r0.i = java_lang_String_startsWith___java_lang_String(_r3.o, _r0.o);
-    if (_r0.i != 0) { XMLVM_MEMCPY(curThread_w33523aaac93b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w33523aaac93b1b6, sizeof(XMLVM_JMP_BUF)); goto label51; };
+    if (_r0.i != 0) { XMLVM_MEMCPY(curThread_w33528aaac93b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w33528aaac93b1b6, sizeof(XMLVM_JMP_BUF)); goto label51; };
     XMLVM_SOURCE_POSITION("File.java", 1587)
     _r0.o = __NEW_java_net_URI();
     // "file"
@@ -5460,32 +5543,32 @@ JAVA_OBJECT java_io_File_toURI__(JAVA_OBJECT me)
     java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String_java_lang_String_java_lang_String(_r0.o, _r1.o, _r2.o, _r3.o, _r4.o, _r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w33523aaac93b1b6)
-        XMLVM_CATCH_SPECIFIC(w33523aaac93b1b6,java_net_URISyntaxException,70)
-    XMLVM_CATCH_END(w33523aaac93b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w33523aaac93b1b6)
+    XMLVM_CATCH_BEGIN(w33528aaac93b1b6)
+        XMLVM_CATCH_SPECIFIC(w33528aaac93b1b6,java_net_URISyntaxException,70)
+    XMLVM_CATCH_END(w33528aaac93b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w33528aaac93b1b6)
     label50:;
-    XMLVM_TRY_BEGIN(w33523aaac93b1b8)
+    XMLVM_TRY_BEGIN(w33528aaac93b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("File.java", 1596)
-    XMLVM_MEMCPY(curThread_w33523aaac93b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w33523aaac93b1b8, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w33528aaac93b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w33528aaac93b1b8, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w33523aaac93b1b8)
-        XMLVM_CATCH_SPECIFIC(w33523aaac93b1b8,java_net_URISyntaxException,70)
-    XMLVM_CATCH_END(w33523aaac93b1b8)
-    XMLVM_RESTORE_EXCEPTION_ENV(w33523aaac93b1b8)
+    XMLVM_CATCH_BEGIN(w33528aaac93b1b8)
+        XMLVM_CATCH_SPECIFIC(w33528aaac93b1b8,java_net_URISyntaxException,70)
+    XMLVM_CATCH_END(w33528aaac93b1b8)
+    XMLVM_RESTORE_EXCEPTION_ENV(w33528aaac93b1b8)
     label51:;
-    XMLVM_TRY_BEGIN(w33523aaac93b1c10)
+    XMLVM_TRY_BEGIN(w33528aaac93b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("File.java", 1590)
     // "//"
     _r0.o = xmlvm_create_java_string_from_pool(1935);
     XMLVM_CHECK_NPE(3)
     _r0.i = java_lang_String_startsWith___java_lang_String(_r3.o, _r0.o);
-    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w33523aaac93b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w33523aaac93b1c10, sizeof(XMLVM_JMP_BUF)); goto label74; };
+    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w33528aaac93b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w33528aaac93b1c10, sizeof(XMLVM_JMP_BUF)); goto label74; };
     XMLVM_SOURCE_POSITION("File.java", 1591)
     _r0.o = __NEW_java_net_URI();
     // "file"
@@ -5495,31 +5578,31 @@ JAVA_OBJECT java_io_File_toURI__(JAVA_OBJECT me)
     _r4.o = JAVA_NULL;
     XMLVM_CHECK_NPE(0)
     java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String_java_lang_String(_r0.o, _r1.o, _r2.o, _r3.o, _r4.o);
-    { XMLVM_MEMCPY(curThread_w33523aaac93b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w33523aaac93b1c10, sizeof(XMLVM_JMP_BUF)); goto label50; };
+    { XMLVM_MEMCPY(curThread_w33528aaac93b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w33528aaac93b1c10, sizeof(XMLVM_JMP_BUF)); goto label50; };
     XMLVM_SOURCE_POSITION("File.java", 1594)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w33523aaac93b1c10)
-        XMLVM_CATCH_SPECIFIC(w33523aaac93b1c10,java_net_URISyntaxException,70)
-    XMLVM_CATCH_END(w33523aaac93b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w33523aaac93b1c10)
+    XMLVM_CATCH_BEGIN(w33528aaac93b1c10)
+        XMLVM_CATCH_SPECIFIC(w33528aaac93b1c10,java_net_URISyntaxException,70)
+    XMLVM_CATCH_END(w33528aaac93b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w33528aaac93b1c10)
     label70:;
-    XMLVM_TRY_BEGIN(w33523aaac93b1c12)
+    XMLVM_TRY_BEGIN(w33528aaac93b1c12)
     // Begin try
-    java_lang_Thread* curThread_w33523aaac93b1c12aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w33523aaac93b1c12aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w33528aaac93b1c12aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w33528aaac93b1c12aa->fields.java_lang_Thread.xmlvmException_;
     _r6 = _r0;
     _r0 = _r7;
-    { XMLVM_MEMCPY(curThread_w33523aaac93b1c12->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w33523aaac93b1c12, sizeof(XMLVM_JMP_BUF)); goto label50; };
+    { XMLVM_MEMCPY(curThread_w33528aaac93b1c12->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w33528aaac93b1c12, sizeof(XMLVM_JMP_BUF)); goto label50; };
     XMLVM_SOURCE_POSITION("File.java", 1593)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w33523aaac93b1c12)
-        XMLVM_CATCH_SPECIFIC(w33523aaac93b1c12,java_net_URISyntaxException,70)
-    XMLVM_CATCH_END(w33523aaac93b1c12)
-    XMLVM_RESTORE_EXCEPTION_ENV(w33523aaac93b1c12)
+    XMLVM_CATCH_BEGIN(w33528aaac93b1c12)
+        XMLVM_CATCH_SPECIFIC(w33528aaac93b1c12,java_net_URISyntaxException,70)
+    XMLVM_CATCH_END(w33528aaac93b1c12)
+    XMLVM_RESTORE_EXCEPTION_ENV(w33528aaac93b1c12)
     label74:;
-    XMLVM_TRY_BEGIN(w33523aaac93b1c14)
+    XMLVM_TRY_BEGIN(w33528aaac93b1c14)
     // Begin try
     _r0.o = __NEW_java_net_URI();
     // "file"
@@ -5531,10 +5614,10 @@ JAVA_OBJECT java_io_File_toURI__(JAVA_OBJECT me)
     java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String_java_lang_String_java_lang_String(_r0.o, _r1.o, _r2.o, _r3.o, _r4.o, _r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w33523aaac93b1c14)
-        XMLVM_CATCH_SPECIFIC(w33523aaac93b1c14,java_net_URISyntaxException,70)
-    XMLVM_CATCH_END(w33523aaac93b1c14)
-    XMLVM_RESTORE_EXCEPTION_ENV(w33523aaac93b1c14)
+    XMLVM_CATCH_BEGIN(w33528aaac93b1c14)
+        XMLVM_CATCH_SPECIFIC(w33528aaac93b1c14,java_net_URISyntaxException,70)
+    XMLVM_CATCH_END(w33528aaac93b1c14)
+    XMLVM_RESTORE_EXCEPTION_ENV(w33528aaac93b1c14)
     goto label50;
     //XMLVM_END_WRAPPER
 }
@@ -5737,10 +5820,12 @@ void java_io_File_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, JAVA_OB
     XMLVM_CHECK_NPE(4)
     _r0.i = (*(JAVA_CHAR (*)(JAVA_OBJECT)) ((java_io_ObjectInputStream*) _r4.o)->tib->vtable[17])(_r4.o);
     XMLVM_SOURCE_POSITION("File.java", 1652)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_File*) _r3.o)->fields.java_io_File.path_;
     _r2.i = java_io_File_GET_separatorChar();
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_String_replace___char_char(_r1.o, _r0.i, _r2.i);
+    XMLVM_CHECK_NPE(3)
     ((java_io_File*) _r3.o)->fields.java_io_File.path_ = _r1.o;
     XMLVM_SOURCE_POSITION("File.java", 1653)
     XMLVM_EXIT_METHOD()
@@ -5808,6 +5893,7 @@ JAVA_BOOLEAN java_io_File_canExecute__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(3)
     java_io_File_checkExec__(_r3.o);
     XMLVM_SOURCE_POSITION("File.java", 1725)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_File*) _r3.o)->fields.java_io_File.path_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(0)
@@ -5853,6 +5939,7 @@ void java_io_File_checkExec__(JAVA_OBJECT me)
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("File.java", 1735)
     XMLVM_SOURCE_POSITION("File.java", 1736)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_File*) _r2.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkExec___java_lang_String(_r0.o, _r1.o);
@@ -5876,6 +5963,7 @@ void java_io_File_checkWrite__(JAVA_OBJECT me)
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("File.java", 1742)
     XMLVM_SOURCE_POSITION("File.java", 1743)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_File*) _r2.o)->fields.java_io_File.path_;
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkWrite___java_lang_String(_r0.o, _r1.o);

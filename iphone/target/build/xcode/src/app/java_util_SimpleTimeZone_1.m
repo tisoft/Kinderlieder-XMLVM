@@ -216,6 +216,7 @@ void java_util_SimpleTimeZone_1___INIT____java_lang_String(JAVA_OBJECT me, JAVA_
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_SimpleTimeZone_1*) _r0.o)->fields.java_util_SimpleTimeZone_1.val_name_ = _r1.o;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 48)
     XMLVM_CHECK_NPE(0)
@@ -233,6 +234,7 @@ JAVA_OBJECT java_util_SimpleTimeZone_1_run__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 50)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_SimpleTimeZone_1*) _r1.o)->fields.java_util_SimpleTimeZone_1.val_name_;
 
     

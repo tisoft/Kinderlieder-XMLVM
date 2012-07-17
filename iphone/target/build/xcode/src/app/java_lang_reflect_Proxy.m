@@ -480,6 +480,7 @@ void java_lang_reflect_Proxy___INIT____java_lang_reflect_InvocationHandler(JAVA_
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Proxy.java", 66)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Proxy*) _r0.o)->fields.java_lang_reflect_Proxy.h_ = _r1.o;
     XMLVM_SOURCE_POSITION("Proxy.java", 67)
     XMLVM_EXIT_METHOD()
@@ -1189,6 +1190,7 @@ JAVA_OBJECT java_lang_reflect_Proxy_getInvocationHandler___java_lang_Object(JAVA
     if (_r0.i == 0) goto label15;
     XMLVM_SOURCE_POSITION("Proxy.java", 269)
     _r2.o = _r2.o;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_lang_reflect_Proxy*) _r2.o)->fields.java_lang_reflect_Proxy.h_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

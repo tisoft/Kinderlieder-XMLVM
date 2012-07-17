@@ -523,6 +523,7 @@ void gnu_xml_util_Resolver___INIT____java_util_Dictionary(JAVA_OBJECT me, JAVA_O
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Resolver.java", 178)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_util_Resolver*) _r0.o)->fields.gnu_xml_util_Resolver.pubidMapping_ = _r1.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -643,6 +644,7 @@ JAVA_OBJECT gnu_xml_util_Resolver_resolveEntity___java_lang_String_java_lang_Str
     if (_r3.o == JAVA_NULL) goto label21;
     XMLVM_SOURCE_POSITION("Resolver.java", 249)
     XMLVM_SOURCE_POSITION("Resolver.java", 250)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_util_Resolver*) _r2.o)->fields.gnu_xml_util_Resolver.pubidMapping_;
     //java_util_Dictionary_get___java_lang_Object[7]
     XMLVM_CHECK_NPE(1)

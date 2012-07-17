@@ -241,8 +241,11 @@ void org_apache_harmony_niochar_internal_nls_Messages_1___INIT____java_lang_Stri
     _r2.o = n2;
     _r3.o = n3;
     XMLVM_SOURCE_POSITION("Messages.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_niochar_internal_nls_Messages_1*) _r0.o)->fields.org_apache_harmony_niochar_internal_nls_Messages_1.val_resource_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_niochar_internal_nls_Messages_1*) _r0.o)->fields.org_apache_harmony_niochar_internal_nls_Messages_1.val_locale_ = _r2.o;
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_niochar_internal_nls_Messages_1*) _r0.o)->fields.org_apache_harmony_niochar_internal_nls_Messages_1.val_loader_ = _r3.o;
     XMLVM_SOURCE_POSITION("Messages.java", 223)
     XMLVM_CHECK_NPE(0)
@@ -262,11 +265,15 @@ JAVA_OBJECT org_apache_harmony_niochar_internal_nls_Messages_1_run__(JAVA_OBJECT
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Messages.java", 225)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_apache_harmony_niochar_internal_nls_Messages_1*) _r3.o)->fields.org_apache_harmony_niochar_internal_nls_Messages_1.val_resource_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((org_apache_harmony_niochar_internal_nls_Messages_1*) _r3.o)->fields.org_apache_harmony_niochar_internal_nls_Messages_1.val_locale_;
     XMLVM_SOURCE_POSITION("Messages.java", 226)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((org_apache_harmony_niochar_internal_nls_Messages_1*) _r3.o)->fields.org_apache_harmony_niochar_internal_nls_Messages_1.val_loader_;
     if (_r2.o == JAVA_NULL) goto label15;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((org_apache_harmony_niochar_internal_nls_Messages_1*) _r3.o)->fields.org_apache_harmony_niochar_internal_nls_Messages_1.val_loader_;
     label10:;
     _r0.o = java_util_ResourceBundle_getBundle___java_lang_String_java_util_Locale_java_lang_ClassLoader(_r0.o, _r1.o, _r2.o);

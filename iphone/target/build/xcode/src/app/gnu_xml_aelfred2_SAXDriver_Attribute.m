@@ -234,14 +234,18 @@ void gnu_xml_aelfred2_SAXDriver_Attribute___INIT____java_lang_String_java_lang_S
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1601)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_aelfred2_SAXDriver_Attribute*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver_Attribute.name_ = _r2.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1602)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_aelfred2_SAXDriver_Attribute*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver_Attribute.value_ = _r3.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1603)
     // ""
     _r0.o = xmlvm_create_java_string_from_pool(0);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_aelfred2_SAXDriver_Attribute*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver_Attribute.nameSpace_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1604)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_aelfred2_SAXDriver_Attribute*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver_Attribute.specified_ = _r4.i;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1605)
     XMLVM_EXIT_METHOD()

@@ -444,10 +444,12 @@ void gnu_xml_dom_ls_ReaderInputStream___INIT____java_io_Reader(JAVA_OBJECT me, J
     XMLVM_CHECK_NPE(1)
     java_io_InputStream___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 66)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_ls_ReaderInputStream*) _r1.o)->fields.gnu_xml_dom_ls_ReaderInputStream.reader_ = _r2.o;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 67)
     // "UTF-8"
     _r0.o = xmlvm_create_java_string_from_pool(128);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_ls_ReaderInputStream*) _r1.o)->fields.gnu_xml_dom_ls_ReaderInputStream.encoding_ = _r0.o;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 68)
     XMLVM_EXIT_METHOD()
@@ -464,6 +466,7 @@ void gnu_xml_dom_ls_ReaderInputStream_setEncoding___java_lang_String(JAVA_OBJECT
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 72)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_ls_ReaderInputStream*) _r0.o)->fields.gnu_xml_dom_ls_ReaderInputStream.encoding_ = _r1.o;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 73)
     XMLVM_EXIT_METHOD()
@@ -481,31 +484,40 @@ JAVA_INT gnu_xml_dom_ls_ReaderInputStream_read__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 78)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r3.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_;
     if (_r0.o == JAVA_NULL) goto label27;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 80)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r3.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_xml_dom_ls_ReaderInputStream*) _r3.o)->fields.gnu_xml_dom_ls_ReaderInputStream.pos_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.i = ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 81)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_xml_dom_ls_ReaderInputStream*) _r3.o)->fields.gnu_xml_dom_ls_ReaderInputStream.pos_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_ls_ReaderInputStream*) _r3.o)->fields.gnu_xml_dom_ls_ReaderInputStream.pos_ = _r1.i;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 82)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_xml_dom_ls_ReaderInputStream*) _r3.o)->fields.gnu_xml_dom_ls_ReaderInputStream.pos_;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r3.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     if (_r1.i < _r2.i) goto label26;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 84)
     _r1.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_ls_ReaderInputStream*) _r3.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_ = _r1.o;
     label26:;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 88)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label27:;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r3.o)->fields.gnu_xml_dom_ls_ReaderInputStream.reader_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(0)
@@ -564,30 +576,39 @@ JAVA_INT gnu_xml_dom_ls_ReaderInputStream_read___byte_1ARRAY_int_int(JAVA_OBJECT
     return _r0.i;
     label6:;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 105)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r5.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_;
     if (_r0.o == JAVA_NULL) goto label41;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 107)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r5.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((gnu_xml_dom_ls_ReaderInputStream*) _r5.o)->fields.gnu_xml_dom_ls_ReaderInputStream.pos_;
     _r0.i = _r0.i - _r1.i;
     if (_r0.i >= _r8.i) goto label39;
     label18:;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 108)
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 109)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r5.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r4.i, _r6.o, _r7.i, _r0.i);
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 110)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((gnu_xml_dom_ls_ReaderInputStream*) _r5.o)->fields.gnu_xml_dom_ls_ReaderInputStream.pos_;
     _r1.i = _r1.i + _r0.i;
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_dom_ls_ReaderInputStream*) _r5.o)->fields.gnu_xml_dom_ls_ReaderInputStream.pos_ = _r1.i;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 111)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((gnu_xml_dom_ls_ReaderInputStream*) _r5.o)->fields.gnu_xml_dom_ls_ReaderInputStream.pos_;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r5.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     if (_r1.i < _r2.i) goto label5;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 113)
     _r1.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_dom_ls_ReaderInputStream*) _r5.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_ = _r1.o;
     goto label5;
     label39:;
@@ -598,6 +619,7 @@ JAVA_INT gnu_xml_dom_ls_ReaderInputStream_read___byte_1ARRAY_int_int(JAVA_OBJECT
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r8.i);
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 119)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r5.o)->fields.gnu_xml_dom_ls_ReaderInputStream.reader_;
     //java_io_Reader_read___char_1ARRAY_int_int[11]
     XMLVM_CHECK_NPE(1)
@@ -613,6 +635,7 @@ JAVA_INT gnu_xml_dom_ls_ReaderInputStream_read___byte_1ARRAY_int_int(JAVA_OBJECT
     XMLVM_CHECK_NPE(2)
     java_lang_String___INIT____char_1ARRAY_int_int(_r2.o, _r0.o, _r4.i, _r1.i);
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 126)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r5.o)->fields.gnu_xml_dom_ls_ReaderInputStream.encoding_;
     XMLVM_CHECK_NPE(2)
     _r0.o = java_lang_String_getBytes___java_lang_String(_r2.o, _r0.o);
@@ -626,10 +649,13 @@ JAVA_INT gnu_xml_dom_ls_ReaderInputStream_read___byte_1ARRAY_int_int(JAVA_OBJECT
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 132)
     if (!__TIB_byte.classInitialized) __INIT_byte();
     _r3.o = XMLVMArray_createSingleDimension(__CLASS_byte, _r2.i);
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_dom_ls_ReaderInputStream*) _r5.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_ = _r3.o;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 133)
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_dom_ls_ReaderInputStream*) _r5.o)->fields.gnu_xml_dom_ls_ReaderInputStream.pos_ = _r4.i;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 134)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r5.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r8.i, _r3.o, _r4.i, _r2.i);
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 135)
@@ -650,6 +676,7 @@ void gnu_xml_dom_ls_ReaderInputStream_close__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 145)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r1.o)->fields.gnu_xml_dom_ls_ReaderInputStream.reader_;
     //java_io_Reader_close__[6]
     XMLVM_CHECK_NPE(0)
@@ -668,6 +695,7 @@ JAVA_BOOLEAN gnu_xml_dom_ls_ReaderInputStream_markSupported__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 150)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r1.o)->fields.gnu_xml_dom_ls_ReaderInputStream.reader_;
     //java_io_Reader_markSupported__[7]
     XMLVM_CHECK_NPE(0)
@@ -691,27 +719,36 @@ void gnu_xml_dom_ls_ReaderInputStream_mark___int(JAVA_OBJECT me, JAVA_INT n1)
     _r5.i = n1;
     _r3.i = 0;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 155)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r4.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_;
     if (_r0.o == JAVA_NULL) goto label32;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 157)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r4.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     if (!__TIB_byte.classInitialized) __INIT_byte();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_byte, _r0.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_dom_ls_ReaderInputStream*) _r4.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_marked_ = _r0.o;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 158)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r4.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r4.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_marked_;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r4.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r3.i, _r1.o, _r3.i, _r2.i);
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 159)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_dom_ls_ReaderInputStream*) _r4.o)->fields.gnu_xml_dom_ls_ReaderInputStream.pos_;
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_dom_ls_ReaderInputStream*) _r4.o)->fields.gnu_xml_dom_ls_ReaderInputStream.pos_marked_ = _r0.i;
     label26:;
     XMLVM_TRY_BEGIN(w17722aaac13b1c22)
     // Begin try
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 171)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r4.o)->fields.gnu_xml_dom_ls_ReaderInputStream.reader_;
     //java_io_Reader_mark___int[8]
     XMLVM_CHECK_NPE(0)
@@ -728,6 +765,7 @@ void gnu_xml_dom_ls_ReaderInputStream_mark___int(JAVA_OBJECT me, JAVA_INT n1)
     label32:;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 163)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_dom_ls_ReaderInputStream*) _r4.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_marked_ = _r0.o;
     goto label26;
     label36:;
@@ -750,15 +788,21 @@ void gnu_xml_dom_ls_ReaderInputStream_reset__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 182)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r1.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_marked_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_ls_ReaderInputStream*) _r1.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_ = _r0.o;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 183)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_dom_ls_ReaderInputStream*) _r1.o)->fields.gnu_xml_dom_ls_ReaderInputStream.pos_marked_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_ls_ReaderInputStream*) _r1.o)->fields.gnu_xml_dom_ls_ReaderInputStream.pos_ = _r0.i;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 184)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_ls_ReaderInputStream*) _r1.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_marked_ = _r0.o;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 186)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r1.o)->fields.gnu_xml_dom_ls_ReaderInputStream.reader_;
     //java_io_Reader_reset__[14]
     XMLVM_CHECK_NPE(0)
@@ -787,11 +831,14 @@ JAVA_LONG gnu_xml_dom_ls_ReaderInputStream_skip___long(JAVA_OBJECT me, JAVA_LONG
     _r4.l = 0;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 192)
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 193)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r6.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_;
     if (_r0.o == JAVA_NULL) goto label51;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 195)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r6.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((gnu_xml_dom_ls_ReaderInputStream*) _r6.o)->fields.gnu_xml_dom_ls_ReaderInputStream.pos_;
     _r0.i = _r0.i - _r1.i;
     _r1.l = (JAVA_LONG) _r0.i;
@@ -801,18 +848,23 @@ JAVA_LONG gnu_xml_dom_ls_ReaderInputStream_skip___long(JAVA_OBJECT me, JAVA_LONG
     _r0.l = (JAVA_LONG) _r0.i;
     label18:;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 197)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((gnu_xml_dom_ls_ReaderInputStream*) _r6.o)->fields.gnu_xml_dom_ls_ReaderInputStream.pos_;
     _r2.l = (JAVA_LONG) _r2.i;
     _r2.l = _r2.l + _r0.l;
     _r2.i = (JAVA_INT) _r2.l;
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_dom_ls_ReaderInputStream*) _r6.o)->fields.gnu_xml_dom_ls_ReaderInputStream.pos_ = _r2.i;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 198)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((gnu_xml_dom_ls_ReaderInputStream*) _r6.o)->fields.gnu_xml_dom_ls_ReaderInputStream.pos_;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r6.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_;
     _r3.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r3.o));
     if (_r2.i < _r3.i) goto label35;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 200)
     _r2.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_dom_ls_ReaderInputStream*) _r6.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_ = _r2.o;
     label35:;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 204)
@@ -821,6 +873,7 @@ JAVA_LONG gnu_xml_dom_ls_ReaderInputStream_skip___long(JAVA_OBJECT me, JAVA_LONG
     if (_r4.i <= 0) goto label48;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 205)
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 207)
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r6.o)->fields.gnu_xml_dom_ls_ReaderInputStream.reader_;
     //java_io_Reader_skip___long[15]
     XMLVM_CHECK_NPE(4)
@@ -848,10 +901,13 @@ JAVA_INT gnu_xml_dom_ls_ReaderInputStream_available__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 223)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r2.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 225)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_dom_ls_ReaderInputStream*) _r2.o)->fields.gnu_xml_dom_ls_ReaderInputStream.pos_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r2.o)->fields.gnu_xml_dom_ls_ReaderInputStream.extra_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     _r0.i = _r0.i - _r1.i;
@@ -860,6 +916,7 @@ JAVA_INT gnu_xml_dom_ls_ReaderInputStream_available__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label11:;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r2.o)->fields.gnu_xml_dom_ls_ReaderInputStream.reader_;
     //java_io_Reader_ready__[13]
     XMLVM_CHECK_NPE(0)
@@ -895,6 +952,7 @@ JAVA_OBJECT gnu_xml_dom_ls_ReaderInputStream_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(1373);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r2.o)->fields.gnu_xml_dom_ls_ReaderInputStream.reader_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);
@@ -902,6 +960,7 @@ JAVA_OBJECT gnu_xml_dom_ls_ReaderInputStream_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(89);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_dom_ls_ReaderInputStream*) _r2.o)->fields.gnu_xml_dom_ls_ReaderInputStream.encoding_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);

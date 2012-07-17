@@ -476,10 +476,12 @@ void gnu_xml_dom_ls_FilteredSAXEventSink___INIT____org_w3c_dom_ls_LSParserFilter
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_ls_SAXEventSink___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 80)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r1.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.filter_ = _r2.o;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 81)
     XMLVM_CHECK_NPE(2)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSParserFilter_getWhatToShow__])(_r2.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r1.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.whatToShow_ = _r0.i;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 82)
     XMLVM_EXIT_METHOD()
@@ -495,6 +497,7 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_startDocument__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 87)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_dom_ls_SAXEventSink*) _r1.o)->fields.gnu_xml_dom_ls_SAXEventSink.interrupted_;
     if (_r0.i == 0) goto label5;
     label4:;
@@ -506,11 +509,13 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_startDocument__(JAVA_OBJECT me)
     _r0.o = __NEW_java_util_LinkedList();
     XMLVM_CHECK_NPE(0)
     java_util_LinkedList___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r1.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.nodes_ = _r0.o;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 92)
     _r0.o = __NEW_java_util_LinkedList();
     XMLVM_CHECK_NPE(0)
     java_util_LinkedList___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r1.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.decisions_ = _r0.o;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 94)
     XMLVM_CHECK_NPE(1)
@@ -530,6 +535,7 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_endDocument__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 100)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_dom_ls_SAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_SAXEventSink.interrupted_;
     if (_r0.i == 0) goto label6;
     label5:;
@@ -541,6 +547,7 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_endDocument__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(3)
     gnu_xml_dom_ls_SAXEventSink_endDocument__(_r3.o);
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 106)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_ls_SAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_SAXEventSink.ctx_;
     _r1.i = 0;
     XMLVM_CHECK_NPE(3)
@@ -550,14 +557,18 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_endDocument__(JAVA_OBJECT me)
     }
     label19:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 114)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.nodes_ = _r2.o;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 115)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.decisions_ = _r2.o;
     goto label5;
     label24:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 109)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_ls_SAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_SAXEventSink.ctx_ = _r2.o;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 110)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_ls_SAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_SAXEventSink.doc_ = _r2.o;
     goto label19;
     label30:;
@@ -584,8 +595,10 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_startElement___java_lang_String_java_la
     _r8.o = n4;
     _r3.i = 1;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 122)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.rejecting_;
     if (_r0.i != 0) goto label9;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_dom_ls_SAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_SAXEventSink.interrupted_;
     if (_r0.i == 0) goto label10;
     label9:;
@@ -597,16 +610,19 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_startElement___java_lang_String_java_la
     XMLVM_CHECK_NPE(4)
     _r0.o = gnu_xml_dom_ls_SAXEventSink_createElement___java_lang_String_java_lang_String_java_lang_String_org_xml_sax_Attributes(_r4.o, _r5.o, _r6.o, _r7.o, _r8.o);
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 127)
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_dom_ls_SAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_SAXEventSink.ctx_ = _r0.o;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 129)
     XMLVM_CHECK_NPE(4)
     _r1.i = gnu_xml_dom_ls_FilteredSAXEventSink_getDecision___org_w3c_dom_Node_boolean(_r4.o, _r0.o, _r3.i);
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 130)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.nodes_;
     //java_util_LinkedList_addLast___java_lang_Object[31]
     XMLVM_CHECK_NPE(2)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_LinkedList*) _r2.o)->tib->vtable[31])(_r2.o, _r0.o);
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 131)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.decisions_;
     _r2.o = __NEW_java_lang_Short();
     XMLVM_CHECK_NPE(2)
@@ -622,10 +638,12 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_startElement___java_lang_String_java_la
     goto label9;
     label39:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 136)
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.rejecting_ = _r3.i;
     goto label9;
     label42:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 139)
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_dom_ls_SAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_SAXEventSink.interrupted_ = _r3.i;
     goto label9;
     label46:;
@@ -669,6 +687,7 @@ JAVA_OBJECT gnu_xml_dom_ls_FilteredSAXEventSink_createAttr___org_xml_sax_Attribu
     label16:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 153)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_ls_SAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_SAXEventSink.interrupted_ = _r0.i;
     _r0 = _r2;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 154)
@@ -695,8 +714,10 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_endElement___java_lang_String_java_lang
     _r7.o = n3;
     _r3.i = 0;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 162)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.rejecting_;
     if (_r0.i != 0) goto label9;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_dom_ls_SAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_SAXEventSink.interrupted_;
     if (_r0.i == 0) goto label10;
     label9:;
@@ -708,23 +729,28 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_endElement___java_lang_String_java_lang
     XMLVM_CHECK_NPE(4)
     gnu_xml_dom_ls_SAXEventSink_endElement___java_lang_String_java_lang_String_java_lang_String(_r4.o, _r5.o, _r6.o, _r7.o);
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 168)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.nodes_;
     //java_util_LinkedList_removeLast__[50]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_LinkedList*) _r0.o)->tib->vtable[50])(_r0.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 169)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.nodes_;
     //java_util_LinkedList_isEmpty__[11]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) ((java_util_LinkedList*) _r1.o)->tib->vtable[11])(_r1.o);
     if (_r1.i == 0) goto label61;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_dom_ls_SAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_SAXEventSink.doc_;
     _r2 = _r1;
     label32:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 170)
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_dom_ls_SAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_SAXEventSink.ctx_ = _r2.o;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 171)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.decisions_;
     //java_util_LinkedList_removeLast__[50]
     XMLVM_CHECK_NPE(1)
@@ -754,6 +780,7 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_endElement___java_lang_String_java_lang
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_appendChild___org_w3c_dom_Node])(_r2.o, _r0.o);
     goto label9;
     label61:;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.nodes_;
     //java_util_LinkedList_getLast__[35]
     XMLVM_CHECK_NPE(1)
@@ -776,11 +803,13 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_endElement___java_lang_String_java_lang
     goto label75;
     label85:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 183)
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.rejecting_ = _r3.i;
     goto label49;
     label88:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 193)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_dom_ls_SAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_SAXEventSink.interrupted_ = _r0.i;
     goto label9;
     label92:;
@@ -803,8 +832,10 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_characters___char_1ARRAY_int_int(JAVA_O
     _r4.i = n2;
     _r5.i = n3;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 201)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r2.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.rejecting_;
     if (_r0.i != 0) goto label8;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_dom_ls_SAXEventSink*) _r2.o)->fields.gnu_xml_dom_ls_SAXEventSink.interrupted_;
     if (_r0.i == 0) goto label9;
     label8:;
@@ -827,6 +858,7 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_characters___char_1ARRAY_int_int(JAVA_O
     goto label8;
     label22:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 210)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_dom_ls_SAXEventSink*) _r2.o)->fields.gnu_xml_dom_ls_SAXEventSink.ctx_;
     XMLVM_CHECK_NPE(1)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_appendChild___org_w3c_dom_Node])(_r1.o, _r0.o);
@@ -834,6 +866,7 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_characters___char_1ARRAY_int_int(JAVA_O
     label28:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 213)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_ls_SAXEventSink*) _r2.o)->fields.gnu_xml_dom_ls_SAXEventSink.interrupted_ = _r0.i;
     goto label8;
     label32:;
@@ -853,10 +886,13 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_processingInstruction___java_lang_Strin
     _r3.o = n1;
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 221)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r2.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.rejecting_;
     if (_r0.i != 0) goto label12;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_dom_ls_SAXEventSink*) _r2.o)->fields.gnu_xml_dom_ls_SAXEventSink.interrupted_;
     if (_r0.i != 0) goto label12;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_dom_ls_SAXEventSink*) _r2.o)->fields.gnu_xml_dom_ls_SAXEventSink.inDTD_;
     if (_r0.i == 0) goto label13;
     label12:;
@@ -879,6 +915,7 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_processingInstruction___java_lang_Strin
     goto label12;
     label26:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 230)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_dom_ls_SAXEventSink*) _r2.o)->fields.gnu_xml_dom_ls_SAXEventSink.ctx_;
     XMLVM_CHECK_NPE(1)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_appendChild___org_w3c_dom_Node])(_r1.o, _r0.o);
@@ -886,6 +923,7 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_processingInstruction___java_lang_Strin
     label32:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 233)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_ls_SAXEventSink*) _r2.o)->fields.gnu_xml_dom_ls_SAXEventSink.interrupted_ = _r0.i;
     goto label12;
     label36:;
@@ -909,6 +947,7 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_startDTD___java_lang_String_java_lang_S
     _r6.o = n3;
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 241)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_dom_ls_SAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_SAXEventSink.interrupted_;
     if (_r0.i == 0) goto label6;
     label5:;
@@ -920,15 +959,19 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_startDTD___java_lang_String_java_lang_S
     XMLVM_CHECK_NPE(3)
     _r0.o = gnu_xml_dom_ls_SAXEventSink_createDocumentType___java_lang_String_java_lang_String_java_lang_String(_r3.o, _r4.o, _r5.o, _r6.o);
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 246)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_ls_SAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_SAXEventSink.ctx_ = _r0.o;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 247)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_ls_SAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_SAXEventSink.inDTD_ = _r2.i;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 248)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.nodes_;
     //java_util_LinkedList_addLast___java_lang_Object[31]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_LinkedList*) _r1.o)->tib->vtable[31])(_r1.o, _r0.o);
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 249)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.decisions_;
     _r1.o = __NEW_java_lang_Short();
     XMLVM_CHECK_NPE(1)
@@ -951,6 +994,7 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_endDTD__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 255)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_dom_ls_SAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_SAXEventSink.interrupted_;
     if (_r0.i == 0) goto label6;
     label5:;
@@ -959,20 +1003,25 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_endDTD__(JAVA_OBJECT me)
     return;
     label6:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 259)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.nodes_;
     //java_util_LinkedList_removeLast__[50]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_LinkedList*) _r0.o)->tib->vtable[50])(_r0.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 260)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.decisions_;
     //java_util_LinkedList_removeLast__[50]
     XMLVM_CHECK_NPE(1)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_LinkedList*) _r1.o)->tib->vtable[50])(_r1.o);
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 261)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_ls_SAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_SAXEventSink.inDTD_ = _r2.i;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 262)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_dom_ls_SAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_SAXEventSink.doc_;
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_ls_SAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_SAXEventSink.ctx_ = _r1.o;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 263)
     XMLVM_CHECK_NPE(3)
@@ -985,6 +1034,7 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_endDTD__(JAVA_OBJECT me)
     goto label5;
     label33:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 267)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_dom_ls_SAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_SAXEventSink.ctx_;
     XMLVM_CHECK_NPE(1)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_appendChild___org_w3c_dom_Node])(_r1.o, _r0.o);
@@ -992,6 +1042,7 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_endDTD__(JAVA_OBJECT me)
     label39:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 270)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_ls_SAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_SAXEventSink.interrupted_ = _r0.i;
     goto label5;
     label44:;
@@ -1013,10 +1064,13 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_comment___char_1ARRAY_int_int(JAVA_OBJE
     _r4.i = n2;
     _r5.i = n3;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 278)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r2.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.rejecting_;
     if (_r0.i != 0) goto label12;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_dom_ls_SAXEventSink*) _r2.o)->fields.gnu_xml_dom_ls_SAXEventSink.interrupted_;
     if (_r0.i != 0) goto label12;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_dom_ls_SAXEventSink*) _r2.o)->fields.gnu_xml_dom_ls_SAXEventSink.inDTD_;
     if (_r0.i == 0) goto label13;
     label12:;
@@ -1039,6 +1093,7 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_comment___char_1ARRAY_int_int(JAVA_OBJE
     goto label12;
     label26:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 287)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_dom_ls_SAXEventSink*) _r2.o)->fields.gnu_xml_dom_ls_SAXEventSink.ctx_;
     XMLVM_CHECK_NPE(1)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_appendChild___org_w3c_dom_Node])(_r1.o, _r0.o);
@@ -1046,6 +1101,7 @@ void gnu_xml_dom_ls_FilteredSAXEventSink_comment___char_1ARRAY_int_int(JAVA_OBJE
     label32:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 290)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_ls_SAXEventSink*) _r2.o)->fields.gnu_xml_dom_ls_SAXEventSink.interrupted_ = _r0.i;
     goto label12;
     label36:;
@@ -1069,6 +1125,7 @@ JAVA_SHORT gnu_xml_dom_ls_FilteredSAXEventSink_getDecision___org_w3c_dom_Node_bo
     _r3.i = 0;
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 299)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.whatToShow_;
     _r1.i = -1;
     if (_r0.i != _r1.i) goto label21;
@@ -1107,6 +1164,7 @@ JAVA_SHORT gnu_xml_dom_ls_FilteredSAXEventSink_getDecision___org_w3c_dom_Node_bo
     goto label8;
     label23:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 305)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.whatToShow_;
     _r0.i = _r0.i & 2;
     if (_r0.i == 0) goto label31;
@@ -1117,6 +1175,7 @@ JAVA_SHORT gnu_xml_dom_ls_FilteredSAXEventSink_getDecision___org_w3c_dom_Node_bo
     goto label17;
     label33:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 308)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.whatToShow_;
     _r0.i = _r0.i & 4;
     if (_r0.i == 0) goto label41;
@@ -1127,6 +1186,7 @@ JAVA_SHORT gnu_xml_dom_ls_FilteredSAXEventSink_getDecision___org_w3c_dom_Node_bo
     goto label17;
     label43:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 311)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.whatToShow_;
     _r0.i = _r0.i & 8;
     if (_r0.i == 0) goto label51;
@@ -1137,6 +1197,7 @@ JAVA_SHORT gnu_xml_dom_ls_FilteredSAXEventSink_getDecision___org_w3c_dom_Node_bo
     goto label17;
     label53:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 314)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.whatToShow_;
     _r0.i = _r0.i & 1;
     if (_r0.i == 0) goto label61;
@@ -1147,6 +1208,7 @@ JAVA_SHORT gnu_xml_dom_ls_FilteredSAXEventSink_getDecision___org_w3c_dom_Node_bo
     goto label17;
     label63:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 317)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.whatToShow_;
     _r0.i = _r0.i & 128;
     if (_r0.i == 0) goto label71;
@@ -1157,6 +1219,7 @@ JAVA_SHORT gnu_xml_dom_ls_FilteredSAXEventSink_getDecision___org_w3c_dom_Node_bo
     goto label17;
     label73:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 320)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.whatToShow_;
     _r0.i = _r0.i & 256;
     if (_r0.i == 0) goto label81;
@@ -1167,6 +1230,7 @@ JAVA_SHORT gnu_xml_dom_ls_FilteredSAXEventSink_getDecision___org_w3c_dom_Node_bo
     goto label17;
     label83:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 323)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.whatToShow_;
     _r0.i = _r0.i & 64;
     if (_r0.i == 0) goto label91;
@@ -1177,6 +1241,7 @@ JAVA_SHORT gnu_xml_dom_ls_FilteredSAXEventSink_getDecision___org_w3c_dom_Node_bo
     goto label17;
     label93:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 326)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.whatToShow_;
     _r0.i = _r0.i & 1024;
     if (_r0.i == 0) goto label101;
@@ -1187,6 +1252,7 @@ JAVA_SHORT gnu_xml_dom_ls_FilteredSAXEventSink_getDecision___org_w3c_dom_Node_bo
     goto label17;
     label103:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 329)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.whatToShow_;
     _r0.i = _r0.i & 512;
     if (_r0.i == 0) goto label111;
@@ -1197,6 +1263,7 @@ JAVA_SHORT gnu_xml_dom_ls_FilteredSAXEventSink_getDecision___org_w3c_dom_Node_bo
     goto label17;
     label113:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 332)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.whatToShow_;
     _r0.i = _r0.i & 16;
     if (_r0.i == 0) goto label121;
@@ -1207,6 +1274,7 @@ JAVA_SHORT gnu_xml_dom_ls_FilteredSAXEventSink_getDecision___org_w3c_dom_Node_bo
     goto label17;
     label123:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 335)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.whatToShow_;
     _r0.i = _r0.i & 32;
     if (_r0.i == 0) goto label131;
@@ -1217,6 +1285,7 @@ JAVA_SHORT gnu_xml_dom_ls_FilteredSAXEventSink_getDecision___org_w3c_dom_Node_bo
     goto label17;
     label133:;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 338)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.whatToShow_;
     _r0.i = _r0.i & 2048;
     if (_r0.i == 0) goto label141;
@@ -1229,12 +1298,14 @@ JAVA_SHORT gnu_xml_dom_ls_FilteredSAXEventSink_getDecision___org_w3c_dom_Node_bo
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 346)
     if (_r6.i == 0) goto label155;
     XMLVM_SOURCE_POSITION("FilteredSAXEventSink.java", 348)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.filter_;
     _r5.o = _r5.o;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_SHORT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSParserFilter_startElement___org_w3c_dom_Element])(_r0.o, _r5.o);
     goto label20;
     label155:;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_dom_ls_FilteredSAXEventSink*) _r4.o)->fields.gnu_xml_dom_ls_FilteredSAXEventSink.filter_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_SHORT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSParserFilter_acceptNode___org_w3c_dom_Node])(_r0.o, _r5.o);

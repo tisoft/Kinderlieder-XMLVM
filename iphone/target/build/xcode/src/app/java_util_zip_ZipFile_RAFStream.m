@@ -302,12 +302,15 @@ void java_util_zip_ZipFile_RAFStream___INIT____java_io_RandomAccessFile_long(JAV
     XMLVM_CHECK_NPE(2)
     java_io_InputStream___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("ZipFile.java", 394)
+    XMLVM_CHECK_NPE(2)
     ((java_util_zip_ZipFile_RAFStream*) _r2.o)->fields.java_util_zip_ZipFile_RAFStream.mSharedRaf_ = _r3.o;
     XMLVM_SOURCE_POSITION("ZipFile.java", 395)
+    XMLVM_CHECK_NPE(2)
     ((java_util_zip_ZipFile_RAFStream*) _r2.o)->fields.java_util_zip_ZipFile_RAFStream.mOffset_ = _r4.l;
     XMLVM_SOURCE_POSITION("ZipFile.java", 396)
     XMLVM_CHECK_NPE(3)
     _r0.l = java_io_RandomAccessFile_length__(_r3.o);
+    XMLVM_CHECK_NPE(2)
     ((java_util_zip_ZipFile_RAFStream*) _r2.o)->fields.java_util_zip_ZipFile_RAFStream.mLength_ = _r0.l;
     XMLVM_SOURCE_POSITION("ZipFile.java", 397)
     XMLVM_EXIT_METHOD()
@@ -326,19 +329,25 @@ JAVA_INT java_util_zip_ZipFile_RAFStream_available__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("ZipFile.java", 401)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_util_zip_ZipFile_RAFStream*) _r4.o)->fields.java_util_zip_ZipFile_RAFStream.mLength_;
+    XMLVM_CHECK_NPE(4)
     _r2.l = ((java_util_zip_ZipFile_RAFStream*) _r4.o)->fields.java_util_zip_ZipFile_RAFStream.mOffset_;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r0.i <= 0) goto label31;
     XMLVM_SOURCE_POSITION("ZipFile.java", 402)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_util_zip_ZipFile_RAFStream*) _r4.o)->fields.java_util_zip_ZipFile_RAFStream.mLength_;
+    XMLVM_CHECK_NPE(4)
     _r2.l = ((java_util_zip_ZipFile_RAFStream*) _r4.o)->fields.java_util_zip_ZipFile_RAFStream.mOffset_;
     _r0.l = _r0.l - _r2.l;
     _r2.l = 2147483647;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r0.i >= 0) goto label27;
     XMLVM_SOURCE_POSITION("ZipFile.java", 403)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_util_zip_ZipFile_RAFStream*) _r4.o)->fields.java_util_zip_ZipFile_RAFStream.mLength_;
+    XMLVM_CHECK_NPE(4)
     _r2.l = ((java_util_zip_ZipFile_RAFStream*) _r4.o)->fields.java_util_zip_ZipFile_RAFStream.mOffset_;
     _r0.l = _r0.l - _r2.l;
     _r0.i = (JAVA_INT) _r0.l;
@@ -411,24 +420,31 @@ JAVA_INT java_util_zip_ZipFile_RAFStream_read___byte_1ARRAY_int_int(JAVA_OBJECT 
     _r9.i = n2;
     _r10.i = n3;
     XMLVM_SOURCE_POSITION("ZipFile.java", 424)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_util_zip_ZipFile_RAFStream*) _r7.o)->fields.java_util_zip_ZipFile_RAFStream.mSharedRaf_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w18627aaab6b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("ZipFile.java", 425)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_util_zip_ZipFile_RAFStream*) _r7.o)->fields.java_util_zip_ZipFile_RAFStream.mSharedRaf_;
+    XMLVM_CHECK_NPE(7)
     _r2.l = ((java_util_zip_ZipFile_RAFStream*) _r7.o)->fields.java_util_zip_ZipFile_RAFStream.mOffset_;
     XMLVM_CHECK_NPE(1)
     java_io_RandomAccessFile_seek___long(_r1.o, _r2.l);
     XMLVM_SOURCE_POSITION("ZipFile.java", 426)
     _r1.l = (JAVA_LONG) _r10.i;
+    XMLVM_CHECK_NPE(7)
     _r3.l = ((java_util_zip_ZipFile_RAFStream*) _r7.o)->fields.java_util_zip_ZipFile_RAFStream.mLength_;
+    XMLVM_CHECK_NPE(7)
     _r5.l = ((java_util_zip_ZipFile_RAFStream*) _r7.o)->fields.java_util_zip_ZipFile_RAFStream.mOffset_;
     _r3.l = _r3.l - _r5.l;
     _r1.i = _r1.l > _r3.l ? 1 : (_r1.l == _r3.l ? 0 : -1);
     if (_r1.i <= 0) { XMLVM_MEMCPY(curThread_w18627aaab6b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w18627aaab6b1b8, sizeof(XMLVM_JMP_BUF)); goto label49; };
     XMLVM_SOURCE_POSITION("ZipFile.java", 427)
+    XMLVM_CHECK_NPE(7)
     _r1.l = ((java_util_zip_ZipFile_RAFStream*) _r7.o)->fields.java_util_zip_ZipFile_RAFStream.mLength_;
+    XMLVM_CHECK_NPE(7)
     _r3.l = ((java_util_zip_ZipFile_RAFStream*) _r7.o)->fields.java_util_zip_ZipFile_RAFStream.mOffset_;
     _r1.l = _r1.l - _r3.l;
     _r1.i = (JAVA_INT) _r1.l;
@@ -442,15 +458,18 @@ JAVA_INT java_util_zip_ZipFile_RAFStream_read___byte_1ARRAY_int_int(JAVA_OBJECT 
     XMLVM_TRY_BEGIN(w18627aaab6b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("ZipFile.java", 429)
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_util_zip_ZipFile_RAFStream*) _r7.o)->fields.java_util_zip_ZipFile_RAFStream.mSharedRaf_;
     XMLVM_CHECK_NPE(2)
     _r1.i = java_io_RandomAccessFile_read___byte_1ARRAY_int_int(_r2.o, _r8.o, _r9.i, _r1.i);
     XMLVM_SOURCE_POSITION("ZipFile.java", 430)
     if (_r1.i <= 0) { XMLVM_MEMCPY(curThread_w18627aaab6b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w18627aaab6b1c10, sizeof(XMLVM_JMP_BUF)); goto label43; };
     XMLVM_SOURCE_POSITION("ZipFile.java", 431)
+    XMLVM_CHECK_NPE(7)
     _r2.l = ((java_util_zip_ZipFile_RAFStream*) _r7.o)->fields.java_util_zip_ZipFile_RAFStream.mOffset_;
     _r4.l = (JAVA_LONG) _r1.i;
     _r2.l = _r2.l + _r4.l;
+    XMLVM_CHECK_NPE(7)
     ((java_util_zip_ZipFile_RAFStream*) _r7.o)->fields.java_util_zip_ZipFile_RAFStream.mOffset_ = _r2.l;
     XMLVM_SOURCE_POSITION("ZipFile.java", 432)
     java_lang_Object_releaseLockRecursive__(_r0.o);
@@ -519,19 +538,25 @@ JAVA_LONG java_util_zip_ZipFile_RAFStream_skip___long(JAVA_OBJECT me, JAVA_LONG 
     _r4.o = me;
     _r5.l = n1;
     XMLVM_SOURCE_POSITION("ZipFile.java", 441)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_util_zip_ZipFile_RAFStream*) _r4.o)->fields.java_util_zip_ZipFile_RAFStream.mLength_;
+    XMLVM_CHECK_NPE(4)
     _r2.l = ((java_util_zip_ZipFile_RAFStream*) _r4.o)->fields.java_util_zip_ZipFile_RAFStream.mOffset_;
     _r0.l = _r0.l - _r2.l;
     _r0.i = _r5.l > _r0.l ? 1 : (_r5.l == _r0.l ? 0 : -1);
     if (_r0.i <= 0) goto label20;
     XMLVM_SOURCE_POSITION("ZipFile.java", 442)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_util_zip_ZipFile_RAFStream*) _r4.o)->fields.java_util_zip_ZipFile_RAFStream.mLength_;
+    XMLVM_CHECK_NPE(4)
     _r2.l = ((java_util_zip_ZipFile_RAFStream*) _r4.o)->fields.java_util_zip_ZipFile_RAFStream.mOffset_;
     _r0.l = _r0.l - _r2.l;
     label14:;
     XMLVM_SOURCE_POSITION("ZipFile.java", 444)
+    XMLVM_CHECK_NPE(4)
     _r2.l = ((java_util_zip_ZipFile_RAFStream*) _r4.o)->fields.java_util_zip_ZipFile_RAFStream.mOffset_;
     _r2.l = _r2.l + _r0.l;
+    XMLVM_CHECK_NPE(4)
     ((java_util_zip_ZipFile_RAFStream*) _r4.o)->fields.java_util_zip_ZipFile_RAFStream.mOffset_ = _r2.l;
     XMLVM_SOURCE_POSITION("ZipFile.java", 445)
     XMLVM_EXIT_METHOD()

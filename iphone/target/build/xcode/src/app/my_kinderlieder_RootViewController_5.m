@@ -218,6 +218,7 @@ void my_kinderlieder_RootViewController_5___INIT____my_kinderlieder_RootViewCont
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("RootViewController.java", 84)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_RootViewController_5*) _r0.o)->fields.my_kinderlieder_RootViewController_5.this_0_ = _r1.o;
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
@@ -236,6 +237,7 @@ void my_kinderlieder_RootViewController_5_invokeWithArgument___java_lang_Void(JA
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("RootViewController.java", 87)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((my_kinderlieder_RootViewController_5*) _r1.o)->fields.my_kinderlieder_RootViewController_5.this_0_;
     _r0.o = my_kinderlieder_RootViewController_access$400___my_kinderlieder_RootViewController(_r0.o);
     XMLVM_CHECK_NPE(0)

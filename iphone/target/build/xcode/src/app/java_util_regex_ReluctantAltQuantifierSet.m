@@ -236,6 +236,7 @@ JAVA_INT java_util_regex_ReluctantAltQuantifierSet_matches___int_java_lang_CharS
     _r3.o = n2;
     _r4.o = n3;
     XMLVM_SOURCE_POSITION("ReluctantAltQuantifierSet.java", 39)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_AbstractSet*) _r1.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -246,6 +247,7 @@ JAVA_INT java_util_regex_ReluctantAltQuantifierSet_matches___int_java_lang_CharS
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label9:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_QuantifierSet*) _r1.o)->fields.java_util_regex_QuantifierSet.innerSet_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)

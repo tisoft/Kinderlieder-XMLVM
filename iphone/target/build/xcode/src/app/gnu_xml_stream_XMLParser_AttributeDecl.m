@@ -260,20 +260,27 @@ void gnu_xml_stream_XMLParser_AttributeDecl___INIT____gnu_xml_stream_XMLParser_j
     _r6.o = n6;
     _r7.i = n7;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4964)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_stream_XMLParser_AttributeDecl*) _r0.o)->fields.gnu_xml_stream_XMLParser_AttributeDecl.this_0_ = _r1.o;
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 4965)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_stream_XMLParser_AttributeDecl*) _r0.o)->fields.gnu_xml_stream_XMLParser_AttributeDecl.type_ = _r2.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4966)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_stream_XMLParser_AttributeDecl*) _r0.o)->fields.gnu_xml_stream_XMLParser_AttributeDecl.value_ = _r3.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4967)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_stream_XMLParser_AttributeDecl*) _r0.o)->fields.gnu_xml_stream_XMLParser_AttributeDecl.valueType_ = _r4.i;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4968)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_stream_XMLParser_AttributeDecl*) _r0.o)->fields.gnu_xml_stream_XMLParser_AttributeDecl.enumeration_ = _r5.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4969)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_stream_XMLParser_AttributeDecl*) _r0.o)->fields.gnu_xml_stream_XMLParser_AttributeDecl.values_ = _r6.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4970)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_stream_XMLParser_AttributeDecl*) _r0.o)->fields.gnu_xml_stream_XMLParser_AttributeDecl.external_ = _r7.i;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4971)
     XMLVM_EXIT_METHOD()

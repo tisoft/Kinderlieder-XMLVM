@@ -232,7 +232,9 @@ void org_apache_harmony_luni_net_PlainSocketImpl_1___INIT____org_apache_harmony_
     _r1.o = n1;
     _r2.o = n2;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_net_PlainSocketImpl_1*) _r0.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl_1.this_0_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_net_PlainSocketImpl_1*) _r0.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl_1.val_fieldName_ = _r2.o;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 152)
     XMLVM_CHECK_NPE(0)
@@ -256,6 +258,7 @@ JAVA_OBJECT org_apache_harmony_luni_net_PlainSocketImpl_1_run__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 156)
     if (!__TIB_java_net_SocketImpl.classInitialized) __INIT_java_net_SocketImpl();
     _r0.o = __CLASS_java_net_SocketImpl;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((org_apache_harmony_luni_net_PlainSocketImpl_1*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl_1.val_fieldName_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_Class_getDeclaredField___java_lang_String(_r0.o, _r1.o);

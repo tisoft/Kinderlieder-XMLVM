@@ -276,6 +276,7 @@ JAVA_INT java_util_regex_NonCapFSet_matches___int_java_lang_CharSequence_java_ut
     XMLVM_CHECK_NPE(5)
     java_util_regex_MatchResultImpl_setConsumed___int_int(_r5.o, _r0.i, _r1.i);
     XMLVM_SOURCE_POSITION("NonCapFSet.java", 40)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_AbstractSet*) _r2.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)

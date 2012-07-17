@@ -540,11 +540,13 @@ void gnu_xml_aelfred2_XmlReader___INIT___(JAVA_OBJECT me)
     _r0.o = __NEW_gnu_xml_aelfred2_SAXDriver();
     XMLVM_CHECK_NPE(0)
     gnu_xml_aelfred2_SAXDriver___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_aelfred2_XmlReader*) _r1.o)->fields.gnu_xml_aelfred2_XmlReader.aelfred2_ = _r0.o;
     XMLVM_SOURCE_POSITION("XmlReader.java", 90)
     _r0.o = __NEW_gnu_xml_pipeline_EventFilter();
     XMLVM_CHECK_NPE(0)
     gnu_xml_pipeline_EventFilter___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_aelfred2_XmlReader*) _r1.o)->fields.gnu_xml_aelfred2_XmlReader.filter_ = _r0.o;
     XMLVM_SOURCE_POSITION("XmlReader.java", 99)
     XMLVM_EXIT_METHOD()
@@ -568,11 +570,13 @@ void gnu_xml_aelfred2_XmlReader___INIT____boolean(JAVA_OBJECT me, JAVA_BOOLEAN n
     _r0.o = __NEW_gnu_xml_aelfred2_SAXDriver();
     XMLVM_CHECK_NPE(0)
     gnu_xml_aelfred2_SAXDriver___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_aelfred2_XmlReader*) _r1.o)->fields.gnu_xml_aelfred2_XmlReader.aelfred2_ = _r0.o;
     XMLVM_SOURCE_POSITION("XmlReader.java", 90)
     _r0.o = __NEW_gnu_xml_pipeline_EventFilter();
     XMLVM_CHECK_NPE(0)
     gnu_xml_pipeline_EventFilter___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_aelfred2_XmlReader*) _r1.o)->fields.gnu_xml_aelfred2_XmlReader.filter_ = _r0.o;
     XMLVM_SOURCE_POSITION("XmlReader.java", 107)
     if (_r2.i == 0) goto label27;
@@ -598,6 +602,7 @@ JAVA_OBJECT gnu_xml_aelfred2_XmlReader_getContentHandler__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XmlReader.java", 119)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_XmlReader*) _r1.o)->fields.gnu_xml_aelfred2_XmlReader.filter_;
     //gnu_xml_pipeline_EventFilter_getContentHandler__[17]
     XMLVM_CHECK_NPE(0)
@@ -618,6 +623,7 @@ void gnu_xml_aelfred2_XmlReader_setContentHandler___org_xml_sax_ContentHandler(J
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("XmlReader.java", 129)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_aelfred2_XmlReader*) _r2.o)->fields.gnu_xml_aelfred2_XmlReader.active_;
     if (_r0.i == 0) goto label12;
     XMLVM_SOURCE_POSITION("XmlReader.java", 131)
@@ -629,6 +635,7 @@ void gnu_xml_aelfred2_XmlReader_setContentHandler___org_xml_sax_ContentHandler(J
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("XmlReader.java", 133)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_XmlReader*) _r2.o)->fields.gnu_xml_aelfred2_XmlReader.filter_;
     XMLVM_CHECK_NPE(0)
     gnu_xml_pipeline_EventFilter_setContentHandler___org_xml_sax_ContentHandler(_r0.o, _r3.o);
@@ -646,6 +653,7 @@ JAVA_OBJECT gnu_xml_aelfred2_XmlReader_getDTDHandler__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XmlReader.java", 142)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_XmlReader*) _r1.o)->fields.gnu_xml_aelfred2_XmlReader.filter_;
     //gnu_xml_pipeline_EventFilter_getDTDHandler__[18]
     XMLVM_CHECK_NPE(0)
@@ -666,6 +674,7 @@ void gnu_xml_aelfred2_XmlReader_setDTDHandler___org_xml_sax_DTDHandler(JAVA_OBJE
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("XmlReader.java", 151)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_aelfred2_XmlReader*) _r2.o)->fields.gnu_xml_aelfred2_XmlReader.active_;
     if (_r0.i == 0) goto label12;
     XMLVM_SOURCE_POSITION("XmlReader.java", 153)
@@ -677,6 +686,7 @@ void gnu_xml_aelfred2_XmlReader_setDTDHandler___org_xml_sax_DTDHandler(JAVA_OBJE
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("XmlReader.java", 155)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_XmlReader*) _r2.o)->fields.gnu_xml_aelfred2_XmlReader.filter_;
     XMLVM_CHECK_NPE(0)
     gnu_xml_pipeline_EventFilter_setDTDHandler___org_xml_sax_DTDHandler(_r0.o, _r3.o);
@@ -694,6 +704,7 @@ JAVA_OBJECT gnu_xml_aelfred2_XmlReader_getEntityResolver__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XmlReader.java", 164)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_XmlReader*) _r1.o)->fields.gnu_xml_aelfred2_XmlReader.aelfred2_;
     //gnu_xml_aelfred2_SAXDriver_getEntityResolver__[9]
     XMLVM_CHECK_NPE(0)
@@ -713,6 +724,7 @@ void gnu_xml_aelfred2_XmlReader_setEntityResolver___org_xml_sax_EntityResolver(J
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XmlReader.java", 172)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_XmlReader*) _r1.o)->fields.gnu_xml_aelfred2_XmlReader.aelfred2_;
     //gnu_xml_aelfred2_SAXDriver_setEntityResolver___org_xml_sax_EntityResolver[40]
     XMLVM_CHECK_NPE(0)
@@ -731,6 +743,7 @@ JAVA_OBJECT gnu_xml_aelfred2_XmlReader_getErrorHandler__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XmlReader.java", 181)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_XmlReader*) _r1.o)->fields.gnu_xml_aelfred2_XmlReader.aelfred2_;
     //gnu_xml_aelfred2_SAXDriver_getErrorHandler__[10]
     XMLVM_CHECK_NPE(0)
@@ -751,6 +764,7 @@ void gnu_xml_aelfred2_XmlReader_setErrorHandler___org_xml_sax_ErrorHandler(JAVA_
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("XmlReader.java", 190)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_aelfred2_XmlReader*) _r2.o)->fields.gnu_xml_aelfred2_XmlReader.active_;
     if (_r0.i == 0) goto label12;
     XMLVM_SOURCE_POSITION("XmlReader.java", 192)
@@ -762,6 +776,7 @@ void gnu_xml_aelfred2_XmlReader_setErrorHandler___org_xml_sax_ErrorHandler(JAVA_
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("XmlReader.java", 194)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_XmlReader*) _r2.o)->fields.gnu_xml_aelfred2_XmlReader.aelfred2_;
     //gnu_xml_aelfred2_SAXDriver_setErrorHandler___org_xml_sax_ErrorHandler[41]
     XMLVM_CHECK_NPE(0)
@@ -785,6 +800,7 @@ void gnu_xml_aelfred2_XmlReader_setProperty___java_lang_String_java_lang_Object(
     _r3.o = n1;
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("XmlReader.java", 204)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_aelfred2_XmlReader*) _r2.o)->fields.gnu_xml_aelfred2_XmlReader.active_;
     if (_r0.i == 0) goto label12;
     XMLVM_SOURCE_POSITION("XmlReader.java", 206)
@@ -801,6 +817,7 @@ void gnu_xml_aelfred2_XmlReader_setProperty___java_lang_String_java_lang_Object(
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_aelfred2_XmlReader*) _r2.o)->tib->vtable[11])(_r2.o, _r3.o);
     if (_r0.o == _r4.o) goto label23;
     XMLVM_SOURCE_POSITION("XmlReader.java", 210)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_XmlReader*) _r2.o)->fields.gnu_xml_aelfred2_XmlReader.filter_;
     XMLVM_CHECK_NPE(0)
     gnu_xml_pipeline_EventFilter_setProperty___java_lang_String_java_lang_Object(_r0.o, _r3.o, _r4.o);
@@ -836,6 +853,7 @@ JAVA_OBJECT gnu_xml_aelfred2_XmlReader_getProperty___java_lang_String(JAVA_OBJEC
     if (_r0.i == 0) goto label23;
     label16:;
     XMLVM_SOURCE_POSITION("XmlReader.java", 223)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_XmlReader*) _r1.o)->fields.gnu_xml_aelfred2_XmlReader.filter_;
     //gnu_xml_pipeline_EventFilter_getProperty___java_lang_String[19]
     XMLVM_CHECK_NPE(0)
@@ -862,6 +880,7 @@ void gnu_xml_aelfred2_XmlReader_forceValidating__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("XmlReader.java", 231)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_aelfred2_XmlReader*) _r3.o)->fields.gnu_xml_aelfred2_XmlReader.aelfred2_;
     // "http://xml.org/sax/features/namespace-prefixes"
     _r1.o = xmlvm_create_java_string_from_pool(41);
@@ -869,6 +888,7 @@ void gnu_xml_aelfred2_XmlReader_forceValidating__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) ((gnu_xml_aelfred2_SAXDriver*) _r0.o)->tib->vtable[42])(_r0.o, _r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("XmlReader.java", 233)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_aelfred2_XmlReader*) _r3.o)->fields.gnu_xml_aelfred2_XmlReader.aelfred2_;
     // "http://xml.org/sax/features/external-general-entities"
     _r1.o = xmlvm_create_java_string_from_pool(45);
@@ -876,6 +896,7 @@ void gnu_xml_aelfred2_XmlReader_forceValidating__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) ((gnu_xml_aelfred2_SAXDriver*) _r0.o)->tib->vtable[42])(_r0.o, _r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("XmlReader.java", 235)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_aelfred2_XmlReader*) _r3.o)->fields.gnu_xml_aelfred2_XmlReader.aelfred2_;
     // "http://xml.org/sax/features/external-parameter-entities"
     _r1.o = xmlvm_create_java_string_from_pool(46);
@@ -919,6 +940,7 @@ void gnu_xml_aelfred2_XmlReader_setFeature___java_lang_String_boolean(JAVA_OBJEC
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
     if (_r0.i == 0) goto label35;
     XMLVM_SOURCE_POSITION("XmlReader.java", 256)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_aelfred2_XmlReader*) _r2.o)->fields.gnu_xml_aelfred2_XmlReader.active_;
     if (_r0.i == 0) goto label27;
     XMLVM_SOURCE_POSITION("XmlReader.java", 258)
@@ -936,10 +958,12 @@ void gnu_xml_aelfred2_XmlReader_setFeature___java_lang_String_boolean(JAVA_OBJEC
     gnu_xml_aelfred2_XmlReader_forceValidating__(_r2.o);
     label32:;
     XMLVM_SOURCE_POSITION("XmlReader.java", 264)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_XmlReader*) _r2.o)->fields.gnu_xml_aelfred2_XmlReader.isValidating_ = _r4.i;
     goto label6;
     label35:;
     XMLVM_SOURCE_POSITION("XmlReader.java", 268)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_XmlReader*) _r2.o)->fields.gnu_xml_aelfred2_XmlReader.aelfred2_;
     //gnu_xml_aelfred2_SAXDriver_setFeature___java_lang_String_boolean[42]
     XMLVM_CHECK_NPE(0)
@@ -965,12 +989,14 @@ JAVA_BOOLEAN gnu_xml_aelfred2_XmlReader_getFeature___java_lang_String(JAVA_OBJEC
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r2.o);
     if (_r0.i == 0) goto label11;
     XMLVM_SOURCE_POSITION("XmlReader.java", 284)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_aelfred2_XmlReader*) _r1.o)->fields.gnu_xml_aelfred2_XmlReader.isValidating_;
     label10:;
     XMLVM_SOURCE_POSITION("XmlReader.java", 287)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label11:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_XmlReader*) _r1.o)->fields.gnu_xml_aelfred2_XmlReader.aelfred2_;
     //gnu_xml_aelfred2_SAXDriver_getFeature___java_lang_String[11]
     XMLVM_CHECK_NPE(0)
@@ -989,6 +1015,7 @@ void gnu_xml_aelfred2_XmlReader_setLocale___java_util_Locale(JAVA_OBJECT me, JAV
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XmlReader.java", 298)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_XmlReader*) _r1.o)->fields.gnu_xml_aelfred2_XmlReader.aelfred2_;
     //gnu_xml_aelfred2_SAXDriver_setLocale___java_util_Locale[43]
     XMLVM_CHECK_NPE(0)
@@ -1038,11 +1065,13 @@ void gnu_xml_aelfred2_XmlReader_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     // "http://xml.org/sax/features/namespace-prefixes"
     _r4.o = xmlvm_create_java_string_from_pool(41);
     XMLVM_SOURCE_POSITION("XmlReader.java", 332)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_aelfred2_XmlReader*) _r5.o)->fields.gnu_xml_aelfred2_XmlReader.aelfred2_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w12210aaac21b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("XmlReader.java", 334)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((gnu_xml_aelfred2_XmlReader*) _r5.o)->fields.gnu_xml_aelfred2_XmlReader.active_;
     if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w12210aaac21b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w12210aaac21b1b8, sizeof(XMLVM_JMP_BUF)); goto label21; };
     XMLVM_SOURCE_POSITION("XmlReader.java", 336)
@@ -1076,6 +1105,7 @@ void gnu_xml_aelfred2_XmlReader_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     _r1.i = 1;
     XMLVM_TRY_BEGIN(w12210aaac21b1c15)
     // Begin try
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_aelfred2_XmlReader*) _r5.o)->fields.gnu_xml_aelfred2_XmlReader.active_ = _r1.i;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
@@ -1085,6 +1115,7 @@ void gnu_xml_aelfred2_XmlReader_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     XMLVM_CATCH_END(w12210aaac21b1c15)
     XMLVM_RESTORE_EXCEPTION_ENV(w12210aaac21b1c15)
     XMLVM_SOURCE_POSITION("XmlReader.java", 342)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((gnu_xml_aelfred2_XmlReader*) _r5.o)->fields.gnu_xml_aelfred2_XmlReader.isValidating_;
     if (_r0.i == 0) goto label69;
     XMLVM_SOURCE_POSITION("XmlReader.java", 344)
@@ -1092,11 +1123,13 @@ void gnu_xml_aelfred2_XmlReader_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     gnu_xml_aelfred2_XmlReader_forceValidating__(_r5.o);
     XMLVM_SOURCE_POSITION("XmlReader.java", 345)
     _r0.o = __NEW_gnu_xml_pipeline_ValidationConsumer();
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_xml_aelfred2_XmlReader*) _r5.o)->fields.gnu_xml_aelfred2_XmlReader.filter_;
     XMLVM_CHECK_NPE(0)
     gnu_xml_pipeline_ValidationConsumer___INIT____gnu_xml_pipeline_EventConsumer(_r0.o, _r1.o);
     label39:;
     XMLVM_SOURCE_POSITION("XmlReader.java", 354)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_xml_aelfred2_XmlReader*) _r5.o)->fields.gnu_xml_aelfred2_XmlReader.aelfred2_;
     // "http://xml.org/sax/features/namespace-prefixes"
     _r2.o = xmlvm_create_java_string_from_pool(41);
@@ -1104,11 +1137,13 @@ void gnu_xml_aelfred2_XmlReader_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->tib->vtable[11])(_r1.o, _r4.o);
     XMLVM_SOURCE_POSITION("XmlReader.java", 355)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((gnu_xml_aelfred2_XmlReader*) _r5.o)->fields.gnu_xml_aelfred2_XmlReader.aelfred2_;
     gnu_xml_pipeline_EventFilter_bind___org_xml_sax_XMLReader_gnu_xml_pipeline_EventConsumer(_r2.o, _r0.o);
     XMLVM_SOURCE_POSITION("XmlReader.java", 356)
     if (_r1.i != 0) goto label61;
     XMLVM_SOURCE_POSITION("XmlReader.java", 358)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_aelfred2_XmlReader*) _r5.o)->fields.gnu_xml_aelfred2_XmlReader.aelfred2_;
     // "http://xml.org/sax/features/namespace-prefixes"
     _r1.o = xmlvm_create_java_string_from_pool(41);
@@ -1119,6 +1154,7 @@ void gnu_xml_aelfred2_XmlReader_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     XMLVM_TRY_BEGIN(w12210aaac21b1c40)
     // Begin try
     XMLVM_SOURCE_POSITION("XmlReader.java", 365)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_aelfred2_XmlReader*) _r5.o)->fields.gnu_xml_aelfred2_XmlReader.aelfred2_;
     //gnu_xml_aelfred2_SAXDriver_parse___org_xml_sax_InputSource[36]
     XMLVM_CHECK_NPE(0)
@@ -1130,18 +1166,21 @@ void gnu_xml_aelfred2_XmlReader_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     XMLVM_CATCH_END(w12210aaac21b1c40)
     XMLVM_RESTORE_EXCEPTION_ENV(w12210aaac21b1c40)
     XMLVM_SOURCE_POSITION("XmlReader.java", 369)
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_aelfred2_XmlReader*) _r5.o)->fields.gnu_xml_aelfred2_XmlReader.active_ = _r3.i;
     XMLVM_SOURCE_POSITION("XmlReader.java", 371)
     XMLVM_EXIT_METHOD()
     return;
     label69:;
     XMLVM_SOURCE_POSITION("XmlReader.java", 349)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_aelfred2_XmlReader*) _r5.o)->fields.gnu_xml_aelfred2_XmlReader.filter_;
     goto label39;
     label72:;
     XMLVM_SOURCE_POSITION("XmlReader.java", 368)
     java_lang_Thread* curThread_w12210aaac21b1c51 = (java_lang_Thread*)java_lang_Thread_currentThread__();
     _r0.o = curThread_w12210aaac21b1c51->fields.java_lang_Thread.xmlvmException_;
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_aelfred2_XmlReader*) _r5.o)->fields.gnu_xml_aelfred2_XmlReader.active_ = _r3.i;
     XMLVM_SOURCE_POSITION("XmlReader.java", 370)
     XMLVM_THROW_CUSTOM(_r0.o)

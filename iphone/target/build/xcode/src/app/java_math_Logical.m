@@ -511,6 +511,7 @@ JAVA_OBJECT java_math_Logical_not___java_math_BigInteger(JAVA_OBJECT n1)
     _r4.i = 0;
     _r3.i = -1;
     XMLVM_SOURCE_POSITION("Logical.java", 40)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i != 0) goto label10;
     XMLVM_SOURCE_POSITION("Logical.java", 41)
@@ -531,15 +532,19 @@ JAVA_OBJECT java_math_Logical_not___java_math_BigInteger(JAVA_OBJECT n1)
     goto label9;
     label21:;
     XMLVM_SOURCE_POSITION("Logical.java", 46)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
     _r0.i = _r0.i + 1;
     if (!__TIB_int.classInitialized) __INIT_int();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_int, _r0.i);
     XMLVM_SOURCE_POSITION("Logical.java", 49)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.sign_;
     if (_r1.i <= 0) goto label107;
     XMLVM_SOURCE_POSITION("Logical.java", 51)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
     _r2.i = _r2.i - _r5.i;
     XMLVM_CHECK_NPE(1)
@@ -549,6 +554,7 @@ JAVA_OBJECT java_math_Logical_not___java_math_BigInteger(JAVA_OBJECT n1)
     _r1 = _r4;
     label41:;
     XMLVM_SOURCE_POSITION("Logical.java", 52)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -556,10 +562,12 @@ JAVA_OBJECT java_math_Logical_not___java_math_BigInteger(JAVA_OBJECT n1)
     if (_r2.i == _r3.i) goto label72;
     label47:;
     XMLVM_SOURCE_POSITION("Logical.java", 73)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
     _r2.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.sign_;
     _r2.i = _r2.i + _r3.i;
     XMLVM_CHECK_NPE(0)
@@ -568,9 +576,11 @@ JAVA_OBJECT java_math_Logical_not___java_math_BigInteger(JAVA_OBJECT n1)
     XMLVM_SOURCE_POSITION("Logical.java", 75)
     _r1.i = _r1.i + 1;
     label58:;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
     if (_r1.i < _r2.i) goto label119;
     _r2.o = __NEW_java_math_BigInteger();
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.sign_;
     _r3.i = -_r3.i;
     XMLVM_CHECK_NPE(2)
@@ -584,8 +594,10 @@ JAVA_OBJECT java_math_Logical_not___java_math_BigInteger(JAVA_OBJECT n1)
     _r1 = _r4;
     label76:;
     XMLVM_SOURCE_POSITION("Logical.java", 56)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
     if (_r1.i >= _r2.i) goto label86;
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -593,6 +605,7 @@ JAVA_OBJECT java_math_Logical_not___java_math_BigInteger(JAVA_OBJECT n1)
     if (_r2.i == _r3.i) goto label104;
     label86:;
     XMLVM_SOURCE_POSITION("Logical.java", 59)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
     if (_r1.i != _r2.i) goto label47;
     XMLVM_SOURCE_POSITION("Logical.java", 60)
@@ -601,6 +614,7 @@ JAVA_OBJECT java_math_Logical_not___java_math_BigInteger(JAVA_OBJECT n1)
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r5.i;
     XMLVM_SOURCE_POSITION("Logical.java", 61)
     _r2.o = __NEW_java_math_BigInteger();
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.sign_;
     _r3.i = -_r3.i;
     _r1.i = _r1.i + 1;
@@ -615,6 +629,7 @@ JAVA_OBJECT java_math_Logical_not___java_math_BigInteger(JAVA_OBJECT n1)
     _r1 = _r4;
     label108:;
     XMLVM_SOURCE_POSITION("Logical.java", 67)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -628,6 +643,7 @@ JAVA_OBJECT java_math_Logical_not___java_math_BigInteger(JAVA_OBJECT n1)
     goto label108;
     label119:;
     XMLVM_SOURCE_POSITION("Logical.java", 76)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -652,8 +668,10 @@ JAVA_OBJECT java_math_Logical_and___java_math_BigInteger_java_math_BigInteger(JA
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("Logical.java", 83)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i == 0) goto label8;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_BigInteger*) _r2.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i != 0) goto label11;
     label8:;
@@ -685,9 +703,11 @@ JAVA_OBJECT java_math_Logical_and___java_math_BigInteger_java_math_BigInteger(JA
     goto label10;
     label31:;
     XMLVM_SOURCE_POSITION("Logical.java", 93)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_BigInteger*) _r2.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i <= 0) goto label49;
     XMLVM_SOURCE_POSITION("Logical.java", 94)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i <= 0) goto label44;
     XMLVM_SOURCE_POSITION("Logical.java", 95)
@@ -699,6 +719,7 @@ JAVA_OBJECT java_math_Logical_and___java_math_BigInteger_java_math_BigInteger(JA
     goto label10;
     label49:;
     XMLVM_SOURCE_POSITION("Logical.java", 100)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i <= 0) goto label58;
     XMLVM_SOURCE_POSITION("Logical.java", 101)
@@ -706,7 +727,9 @@ JAVA_OBJECT java_math_Logical_and___java_math_BigInteger_java_math_BigInteger(JA
     goto label10;
     label58:;
     XMLVM_SOURCE_POSITION("Logical.java", 102)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_BigInteger*) _r2.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i <= _r1.i) goto label69;
     XMLVM_SOURCE_POSITION("Logical.java", 103)
@@ -733,7 +756,9 @@ JAVA_OBJECT java_math_Logical_andPositive___java_math_BigInteger_java_math_BigIn
     _r5.o = n1;
     _r6.o = n2;
     XMLVM_SOURCE_POSITION("Logical.java", 113)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
     _r0.i = java_lang_Math_min___int_int(_r0.i, _r1.i);
     XMLVM_SOURCE_POSITION("Logical.java", 114)
@@ -769,10 +794,12 @@ JAVA_OBJECT java_math_Logical_andPositive___java_math_BigInteger_java_math_BigIn
     goto label24;
     label40:;
     XMLVM_SOURCE_POSITION("Logical.java", 122)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
     _r3.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r1.i);
@@ -808,6 +835,7 @@ JAVA_OBJECT java_math_Logical_andDiffSigns___java_math_BigInteger_java_math_BigI
     XMLVM_CHECK_NPE(7)
     _r1.i = java_math_BigInteger_getFirstNonzeroDigit__(_r7.o);
     XMLVM_SOURCE_POSITION("Logical.java", 138)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
     if (_r1.i < _r2.i) goto label15;
     XMLVM_SOURCE_POSITION("Logical.java", 139)
@@ -818,6 +846,7 @@ JAVA_OBJECT java_math_Logical_andDiffSigns___java_math_BigInteger_java_math_BigI
     return _r0.o;
     label15:;
     XMLVM_SOURCE_POSITION("Logical.java", 141)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
     XMLVM_SOURCE_POSITION("Logical.java", 142)
     if (!__TIB_int.classInitialized) __INIT_int();
@@ -827,11 +856,13 @@ JAVA_OBJECT java_math_Logical_andDiffSigns___java_math_BigInteger_java_math_BigI
     XMLVM_SOURCE_POSITION("Logical.java", 146)
     if (_r0.i != _r1.i) goto label39;
     XMLVM_SOURCE_POSITION("Logical.java", 147)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     _r1.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
     _r1.i = -_r1.i;
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r0.i);
@@ -844,17 +875,21 @@ JAVA_OBJECT java_math_Logical_andDiffSigns___java_math_BigInteger_java_math_BigI
     _r0.i = _r0.i + 1;
     label39:;
     XMLVM_SOURCE_POSITION("Logical.java", 150)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
     _r1.i = java_lang_Math_min___int_int(_r1.i, _r4.i);
     label47:;
     XMLVM_SOURCE_POSITION("Logical.java", 151)
     if (_r0.i < _r1.i) goto label67;
     XMLVM_SOURCE_POSITION("Logical.java", 156)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i < _r1.i) goto label57;
     label53:;
     XMLVM_SOURCE_POSITION("Logical.java", 157)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i < _r1.i) goto label83;
     label57:;
@@ -869,11 +904,13 @@ JAVA_OBJECT java_math_Logical_andDiffSigns___java_math_BigInteger_java_math_BigI
     goto label14;
     label67:;
     XMLVM_SOURCE_POSITION("Logical.java", 152)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r0.i);
     _r4.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r4.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
     _r4.i = _r4.i ^ -1;
+    XMLVM_CHECK_NPE(6)
     _r5.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r0.i);
@@ -886,6 +923,7 @@ JAVA_OBJECT java_math_Logical_andDiffSigns___java_math_BigInteger_java_math_BigI
     goto label47;
     label83:;
     XMLVM_SOURCE_POSITION("Logical.java", 158)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -922,6 +960,7 @@ JAVA_OBJECT java_math_Logical_andNegative___java_math_BigInteger_java_math_BigIn
     XMLVM_CHECK_NPE(7)
     _r1.i = java_math_BigInteger_getFirstNonzeroDigit__(_r7.o);
     XMLVM_SOURCE_POSITION("Logical.java", 175)
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i < _r2.i) goto label16;
     _r0 = _r6;
@@ -936,11 +975,13 @@ JAVA_OBJECT java_math_Logical_andNegative___java_math_BigInteger_java_math_BigIn
     XMLVM_SOURCE_POSITION("Logical.java", 183)
     if (_r1.i <= _r0.i) goto label88;
     XMLVM_SOURCE_POSITION("Logical.java", 184)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
     _r0.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
     _r0.i = -_r0.i;
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
@@ -953,12 +994,15 @@ JAVA_OBJECT java_math_Logical_andNegative___java_math_BigInteger_java_math_BigIn
     XMLVM_SOURCE_POSITION("Logical.java", 191)
     _r1.i = _r2.i + 1;
     label38:;
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     if (_r1.i >= _r2.i) goto label55;
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -971,8 +1015,10 @@ JAVA_OBJECT java_math_Logical_andNegative___java_math_BigInteger_java_math_BigIn
     if (_r0.i != 0) goto label122;
     label57:;
     XMLVM_SOURCE_POSITION("Logical.java", 195)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
     if (_r1.i >= _r2.i) goto label69;
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -983,6 +1029,7 @@ JAVA_OBJECT java_math_Logical_andNegative___java_math_BigInteger_java_math_BigIn
     XMLVM_SOURCE_POSITION("Logical.java", 197)
     if (_r0.i != 0) goto label122;
     XMLVM_SOURCE_POSITION("Logical.java", 198)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
     _r0.i = _r0.i + 1;
     XMLVM_SOURCE_POSITION("Logical.java", 199)
@@ -1004,11 +1051,13 @@ JAVA_OBJECT java_math_Logical_andNegative___java_math_BigInteger_java_math_BigIn
     XMLVM_SOURCE_POSITION("Logical.java", 185)
     if (_r1.i >= _r0.i) goto label103;
     XMLVM_SOURCE_POSITION("Logical.java", 186)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
     _r0.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
     _r0.i = _r0.i ^ -1;
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
@@ -1018,11 +1067,13 @@ JAVA_OBJECT java_math_Logical_andNegative___java_math_BigInteger_java_math_BigIn
     goto label34;
     label103:;
     XMLVM_SOURCE_POSITION("Logical.java", 188)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
     _r0.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
     _r0.i = -_r0.i;
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
@@ -1040,6 +1091,7 @@ JAVA_OBJECT java_math_Logical_andNegative___java_math_BigInteger_java_math_BigIn
     _r1 = _r2;
     label122:;
     XMLVM_SOURCE_POSITION("Logical.java", 207)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
     XMLVM_SOURCE_POSITION("Logical.java", 208)
     if (!__TIB_int.classInitialized) __INIT_int();
@@ -1052,10 +1104,12 @@ JAVA_OBJECT java_math_Logical_andNegative___java_math_BigInteger_java_math_BigIn
     XMLVM_SOURCE_POSITION("Logical.java", 210)
     _r0.i = _r1.i + 1;
     label131:;
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i < _r1.i) goto label146;
     label135:;
     XMLVM_SOURCE_POSITION("Logical.java", 215)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i < _r1.i) goto label160;
     XMLVM_SOURCE_POSITION("Logical.java", 219)
@@ -1065,10 +1119,12 @@ JAVA_OBJECT java_math_Logical_andNegative___java_math_BigInteger_java_math_BigIn
     goto label15;
     label146:;
     XMLVM_SOURCE_POSITION("Logical.java", 212)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     _r1.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r0.i);
@@ -1081,6 +1137,7 @@ JAVA_OBJECT java_math_Logical_andNegative___java_math_BigInteger_java_math_BigIn
     goto label131;
     label160:;
     XMLVM_SOURCE_POSITION("Logical.java", 216)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -1104,6 +1161,7 @@ JAVA_OBJECT java_math_Logical_andNot___java_math_BigInteger_java_math_BigInteger
     _r1.o = n1;
     _r2.o = n2;
     XMLVM_SOURCE_POSITION("Logical.java", 225)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_BigInteger*) _r2.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i != 0) goto label6;
     _r0 = _r1;
@@ -1114,6 +1172,7 @@ JAVA_OBJECT java_math_Logical_andNot___java_math_BigInteger_java_math_BigInteger
     return _r0.o;
     label6:;
     XMLVM_SOURCE_POSITION("Logical.java", 228)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_math_BigInteger*) _r1.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i != 0) goto label13;
     XMLVM_SOURCE_POSITION("Logical.java", 229)
@@ -1142,9 +1201,11 @@ JAVA_OBJECT java_math_Logical_andNot___java_math_BigInteger_java_math_BigInteger
     goto label5;
     label37:;
     XMLVM_SOURCE_POSITION("Logical.java", 240)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_math_BigInteger*) _r1.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i <= 0) goto label55;
     XMLVM_SOURCE_POSITION("Logical.java", 241)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_BigInteger*) _r2.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i <= 0) goto label50;
     XMLVM_SOURCE_POSITION("Logical.java", 242)
@@ -1156,6 +1217,7 @@ JAVA_OBJECT java_math_Logical_andNot___java_math_BigInteger_java_math_BigInteger
     goto label5;
     label55:;
     XMLVM_SOURCE_POSITION("Logical.java", 247)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_BigInteger*) _r2.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i <= 0) goto label64;
     XMLVM_SOURCE_POSITION("Logical.java", 248)
@@ -1182,11 +1244,14 @@ JAVA_OBJECT java_math_Logical_andNotPositive___java_math_BigInteger_java_math_Bi
     _r5.o = n1;
     _r6.o = n2;
     XMLVM_SOURCE_POSITION("Logical.java", 258)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.numberLength_;
     if (!__TIB_int.classInitialized) __INIT_int();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_int, _r0.i);
     XMLVM_SOURCE_POSITION("Logical.java", 260)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
     _r1.i = java_lang_Math_min___int_int(_r1.i, _r2.i);
     XMLVM_SOURCE_POSITION("Logical.java", 262)
@@ -1197,11 +1262,13 @@ JAVA_OBJECT java_math_Logical_andNotPositive___java_math_BigInteger_java_math_Bi
     _r1 = _r2;
     label19:;
     XMLVM_SOURCE_POSITION("Logical.java", 265)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.numberLength_;
     if (_r1.i < _r2.i) goto label51;
     XMLVM_SOURCE_POSITION("Logical.java", 269)
     _r1.o = __NEW_java_math_BigInteger();
     _r2.i = 1;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.numberLength_;
     XMLVM_CHECK_NPE(1)
     java_math_BigInteger___INIT____int_int_int_1ARRAY(_r1.o, _r2.i, _r3.i, _r0.o);
@@ -1213,10 +1280,12 @@ JAVA_OBJECT java_math_Logical_andNotPositive___java_math_BigInteger_java_math_Bi
     return _r1.o;
     label35:;
     XMLVM_SOURCE_POSITION("Logical.java", 263)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r2.i);
     _r3.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r2.i);
@@ -1230,6 +1299,7 @@ JAVA_OBJECT java_math_Logical_andNotPositive___java_math_BigInteger_java_math_Bi
     goto label16;
     label51:;
     XMLVM_SOURCE_POSITION("Logical.java", 266)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -1265,6 +1335,7 @@ JAVA_OBJECT java_math_Logical_andNotPositiveNegative___java_math_BigInteger_java
     XMLVM_CHECK_NPE(6)
     _r1.i = java_math_BigInteger_getFirstNonzeroDigit__(_r6.o);
     XMLVM_SOURCE_POSITION("Logical.java", 280)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i < _r2.i) goto label15;
     _r0 = _r6;
@@ -1275,7 +1346,9 @@ JAVA_OBJECT java_math_Logical_andNotPositiveNegative___java_math_BigInteger_java
     return _r0.o;
     label15:;
     XMLVM_SOURCE_POSITION("Logical.java", 284)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     _r2.i = java_lang_Math_min___int_int(_r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("Logical.java", 285)
@@ -1287,10 +1360,12 @@ JAVA_OBJECT java_math_Logical_andNotPositiveNegative___java_math_BigInteger_java
     XMLVM_SOURCE_POSITION("Logical.java", 293)
     if (_r1.i != _r0.i) goto label77;
     XMLVM_SOURCE_POSITION("Logical.java", 294)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r1.i);
@@ -1315,6 +1390,7 @@ JAVA_OBJECT java_math_Logical_andNotPositiveNegative___java_math_BigInteger_java
     goto label14;
     label54:;
     XMLVM_SOURCE_POSITION("Logical.java", 291)
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r1.i);
@@ -1326,10 +1402,12 @@ JAVA_OBJECT java_math_Logical_andNotPositiveNegative___java_math_BigInteger_java
     goto label25;
     label63:;
     XMLVM_SOURCE_POSITION("Logical.java", 299)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     _r1.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r0.i);
@@ -1371,6 +1449,7 @@ JAVA_OBJECT java_math_Logical_andNotNegativePositive___java_math_BigInteger_java
     XMLVM_CHECK_NPE(8)
     _r1.i = java_math_BigInteger_getFirstNonzeroDigit__(_r8.o);
     XMLVM_SOURCE_POSITION("Logical.java", 318)
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i < _r2.i) goto label16;
     _r0 = _r7;
@@ -1381,7 +1460,9 @@ JAVA_OBJECT java_math_Logical_andNotNegativePositive___java_math_BigInteger_java
     return _r0.o;
     label16:;
     XMLVM_SOURCE_POSITION("Logical.java", 322)
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     _r2.i = java_lang_Math_max___int_int(_r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("Logical.java", 324)
@@ -1390,23 +1471,28 @@ JAVA_OBJECT java_math_Logical_andNotNegativePositive___java_math_BigInteger_java
     if (!__TIB_int.classInitialized) __INIT_int();
     _r3.o = XMLVMArray_createSingleDimension(__CLASS_int, _r2.i);
     XMLVM_SOURCE_POSITION("Logical.java", 326)
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     _r4.i = java_lang_Math_min___int_int(_r4.i, _r1.i);
     label34:;
     XMLVM_SOURCE_POSITION("Logical.java", 327)
     if (_r0.i < _r4.i) goto label70;
     XMLVM_SOURCE_POSITION("Logical.java", 332)
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i != _r4.i) goto label225;
     _r0 = _r1;
     label41:;
     XMLVM_SOURCE_POSITION("Logical.java", 333)
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i < _r1.i) goto label79;
     _r1 = _r3;
     label46:;
     XMLVM_SOURCE_POSITION("Logical.java", 365)
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     _r3.i = java_lang_Math_min___int_int(_r3.i, _r4.i);
     label54:;
@@ -1414,10 +1500,12 @@ JAVA_OBJECT java_math_Logical_andNotNegativePositive___java_math_BigInteger_java
     if (_r0.i < _r3.i) goto label190;
     label56:;
     XMLVM_SOURCE_POSITION("Logical.java", 371)
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i < _r3.i) goto label205;
     label60:;
     XMLVM_SOURCE_POSITION("Logical.java", 374)
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i < _r3.i) goto label215;
     XMLVM_SOURCE_POSITION("Logical.java", 378)
@@ -1427,6 +1515,7 @@ JAVA_OBJECT java_math_Logical_andNotNegativePositive___java_math_BigInteger_java
     goto label15;
     label70:;
     XMLVM_SOURCE_POSITION("Logical.java", 330)
+    XMLVM_CHECK_NPE(7)
     _r5.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r0.i);
@@ -1438,6 +1527,7 @@ JAVA_OBJECT java_math_Logical_andNotNegativePositive___java_math_BigInteger_java
     goto label34;
     label79:;
     XMLVM_SOURCE_POSITION("Logical.java", 335)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -1449,11 +1539,13 @@ JAVA_OBJECT java_math_Logical_andNotNegativePositive___java_math_BigInteger_java
     goto label41;
     label88:;
     XMLVM_SOURCE_POSITION("Logical.java", 339)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     _r1.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
     _r1.i = -_r1.i;
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r0.i);
@@ -1463,17 +1555,21 @@ JAVA_OBJECT java_math_Logical_andNotNegativePositive___java_math_BigInteger_java
     if (_r1.i != 0) goto label180;
     XMLVM_SOURCE_POSITION("Logical.java", 340)
     XMLVM_SOURCE_POSITION("Logical.java", 341)
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     _r3.i = java_lang_Math_min___int_int(_r3.i, _r4.i);
     XMLVM_SOURCE_POSITION("Logical.java", 342)
     _r0.i = _r0.i + 1;
     label112:;
     if (_r0.i >= _r3.i) goto label127;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     _r1.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
+    XMLVM_CHECK_NPE(8)
     _r4.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r0.i);
@@ -1486,8 +1582,10 @@ JAVA_OBJECT java_math_Logical_andNotNegativePositive___java_math_BigInteger_java
     if (_r1.i != 0) goto label180;
     label129:;
     XMLVM_SOURCE_POSITION("Logical.java", 346)
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i >= _r3.i) goto label141;
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -1496,8 +1594,10 @@ JAVA_OBJECT java_math_Logical_andNotNegativePositive___java_math_BigInteger_java
     if (_r1.i == 0) goto label174;
     label141:;
     XMLVM_SOURCE_POSITION("Logical.java", 348)
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i >= _r3.i) goto label153;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -1548,10 +1648,12 @@ JAVA_OBJECT java_math_Logical_andNotNegativePositive___java_math_BigInteger_java
     goto label46;
     label190:;
     XMLVM_SOURCE_POSITION("Logical.java", 368)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r0.i);
     _r4.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r4.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
+    XMLVM_CHECK_NPE(8)
     _r5.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r0.i);
@@ -1564,6 +1666,7 @@ JAVA_OBJECT java_math_Logical_andNotNegativePositive___java_math_BigInteger_java
     goto label54;
     label205:;
     XMLVM_SOURCE_POSITION("Logical.java", 372)
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r0.i);
@@ -1575,6 +1678,7 @@ JAVA_OBJECT java_math_Logical_andNotNegativePositive___java_math_BigInteger_java
     goto label56;
     label215:;
     XMLVM_SOURCE_POSITION("Logical.java", 375)
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r0.i);
@@ -1614,6 +1718,7 @@ JAVA_OBJECT java_math_Logical_andNotNegative___java_math_BigInteger_java_math_Bi
     XMLVM_CHECK_NPE(8)
     _r1.i = java_math_BigInteger_getFirstNonzeroDigit__(_r8.o);
     XMLVM_SOURCE_POSITION("Logical.java", 388)
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i < _r2.i) goto label16;
     XMLVM_SOURCE_POSITION("Logical.java", 389)
@@ -1624,6 +1729,7 @@ JAVA_OBJECT java_math_Logical_andNotNegative___java_math_BigInteger_java_math_Bi
     return _r0.o;
     label16:;
     XMLVM_SOURCE_POSITION("Logical.java", 392)
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     XMLVM_SOURCE_POSITION("Logical.java", 393)
     if (!__TIB_int.classInitialized) __INIT_int();
@@ -1631,6 +1737,7 @@ JAVA_OBJECT java_math_Logical_andNotNegative___java_math_BigInteger_java_math_Bi
     XMLVM_SOURCE_POSITION("Logical.java", 396)
     if (_r0.i >= _r1.i) goto label109;
     XMLVM_SOURCE_POSITION("Logical.java", 398)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r0.i);
@@ -1640,6 +1747,7 @@ JAVA_OBJECT java_math_Logical_andNotNegative___java_math_BigInteger_java_math_Bi
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r0.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i] = _r4.i;
     XMLVM_SOURCE_POSITION("Logical.java", 399)
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     _r4.i = java_lang_Math_min___int_int(_r4.i, _r1.i);
     XMLVM_SOURCE_POSITION("Logical.java", 400)
@@ -1647,12 +1755,14 @@ JAVA_OBJECT java_math_Logical_andNotNegative___java_math_BigInteger_java_math_Bi
     label37:;
     if (_r0.i < _r4.i) goto label77;
     XMLVM_SOURCE_POSITION("Logical.java", 404)
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i != _r4.i) goto label94;
     label43:;
     XMLVM_SOURCE_POSITION("Logical.java", 405)
     if (_r0.i < _r1.i) goto label88;
     XMLVM_SOURCE_POSITION("Logical.java", 410)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -1663,7 +1773,9 @@ JAVA_OBJECT java_math_Logical_andNotNegative___java_math_BigInteger_java_math_Bi
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i] = _r1.i;
     label52:;
     XMLVM_SOURCE_POSITION("Logical.java", 423)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(8)
     _r4.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     _r1.i = java_lang_Math_min___int_int(_r1.i, _r4.i);
     XMLVM_SOURCE_POSITION("Logical.java", 424)
@@ -1672,6 +1784,7 @@ JAVA_OBJECT java_math_Logical_andNotNegative___java_math_BigInteger_java_math_Bi
     if (_r0.i < _r1.i) goto label138;
     label64:;
     XMLVM_SOURCE_POSITION("Logical.java", 428)
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i < _r1.i) goto label154;
     XMLVM_SOURCE_POSITION("Logical.java", 433)
@@ -1684,6 +1797,7 @@ JAVA_OBJECT java_math_Logical_andNotNegative___java_math_BigInteger_java_math_Bi
     goto label15;
     label77:;
     XMLVM_SOURCE_POSITION("Logical.java", 402)
+    XMLVM_CHECK_NPE(7)
     _r5.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r0.i);
@@ -1704,11 +1818,13 @@ JAVA_OBJECT java_math_Logical_andNotNegative___java_math_BigInteger_java_math_Bi
     goto label43;
     label94:;
     XMLVM_SOURCE_POSITION("Logical.java", 413)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     _r1.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
     _r1.i = _r1.i ^ -1;
+    XMLVM_CHECK_NPE(8)
     _r4.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r0.i);
@@ -1723,11 +1839,13 @@ JAVA_OBJECT java_math_Logical_andNotNegative___java_math_BigInteger_java_math_Bi
     XMLVM_SOURCE_POSITION("Logical.java", 415)
     if (_r1.i >= _r0.i) goto label124;
     XMLVM_SOURCE_POSITION("Logical.java", 417)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     _r1.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
     _r1.i = -_r1.i;
+    XMLVM_CHECK_NPE(8)
     _r4.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r0.i);
@@ -1739,11 +1857,13 @@ JAVA_OBJECT java_math_Logical_andNotNegative___java_math_BigInteger_java_math_Bi
     goto label52;
     label124:;
     XMLVM_SOURCE_POSITION("Logical.java", 420)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     _r1.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
     _r1.i = -_r1.i;
+    XMLVM_CHECK_NPE(8)
     _r4.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r0.i);
@@ -1756,11 +1876,13 @@ JAVA_OBJECT java_math_Logical_andNotNegative___java_math_BigInteger_java_math_Bi
     goto label52;
     label138:;
     XMLVM_SOURCE_POSITION("Logical.java", 426)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r0.i);
     _r4.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r4.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
     _r4.i = _r4.i ^ -1;
+    XMLVM_CHECK_NPE(8)
     _r5.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r0.i);
@@ -1773,6 +1895,7 @@ JAVA_OBJECT java_math_Logical_andNotNegative___java_math_BigInteger_java_math_Bi
     goto label62;
     label154:;
     XMLVM_SOURCE_POSITION("Logical.java", 430)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -1816,6 +1939,7 @@ JAVA_OBJECT java_math_Logical_or___java_math_BigInteger_java_math_BigInteger(JAV
     return _r0.o;
     label19:;
     XMLVM_SOURCE_POSITION("Logical.java", 443)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i != 0) goto label25;
     _r0 = _r2;
@@ -1823,6 +1947,7 @@ JAVA_OBJECT java_math_Logical_or___java_math_BigInteger_java_math_BigInteger(JAV
     goto label18;
     label25:;
     XMLVM_SOURCE_POSITION("Logical.java", 446)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_BigInteger*) _r2.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i != 0) goto label31;
     _r0 = _r3;
@@ -1830,13 +1955,17 @@ JAVA_OBJECT java_math_Logical_or___java_math_BigInteger_java_math_BigInteger(JAV
     goto label18;
     label31:;
     XMLVM_SOURCE_POSITION("Logical.java", 450)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_BigInteger*) _r2.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i <= 0) goto label60;
     XMLVM_SOURCE_POSITION("Logical.java", 451)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i <= 0) goto label55;
     XMLVM_SOURCE_POSITION("Logical.java", 452)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_BigInteger*) _r2.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i <= _r1.i) goto label50;
     XMLVM_SOURCE_POSITION("Logical.java", 453)
@@ -1852,6 +1981,7 @@ JAVA_OBJECT java_math_Logical_or___java_math_BigInteger_java_math_BigInteger(JAV
     goto label18;
     label60:;
     XMLVM_SOURCE_POSITION("Logical.java", 461)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i <= 0) goto label69;
     XMLVM_SOURCE_POSITION("Logical.java", 462)
@@ -1888,6 +2018,7 @@ JAVA_OBJECT java_math_Logical_orPositive___java_math_BigInteger_java_math_BigInt
     _r5.o = n1;
     _r6.o = n2;
     XMLVM_SOURCE_POSITION("Logical.java", 475)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.numberLength_;
     XMLVM_SOURCE_POSITION("Logical.java", 476)
     if (!__TIB_int.classInitialized) __INIT_int();
@@ -1901,6 +2032,7 @@ JAVA_OBJECT java_math_Logical_orPositive___java_math_BigInteger_java_math_BigInt
     XMLVM_SOURCE_POSITION("Logical.java", 479)
     _r2.i = 0;
     label16:;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
     if (_r2.i < _r3.i) goto label29;
     label20:;
@@ -1916,10 +2048,12 @@ JAVA_OBJECT java_math_Logical_orPositive___java_math_BigInteger_java_math_BigInt
     return _r2.o;
     label29:;
     XMLVM_SOURCE_POSITION("Logical.java", 480)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r2.i);
     _r3.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r2.i);
@@ -1932,6 +2066,7 @@ JAVA_OBJECT java_math_Logical_orPositive___java_math_BigInteger_java_math_BigInt
     goto label16;
     label43:;
     XMLVM_SOURCE_POSITION("Logical.java", 483)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r2.i);
@@ -1966,6 +2101,7 @@ JAVA_OBJECT java_math_Logical_orNegative___java_math_BigInteger_java_math_BigInt
     XMLVM_CHECK_NPE(6)
     _r1.i = java_math_BigInteger_getFirstNonzeroDigit__(_r6.o);
     XMLVM_SOURCE_POSITION("Logical.java", 498)
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     if (_r1.i < _r2.i) goto label14;
     _r0 = _r7;
@@ -1976,6 +2112,7 @@ JAVA_OBJECT java_math_Logical_orNegative___java_math_BigInteger_java_math_BigInt
     return _r0.o;
     label14:;
     XMLVM_SOURCE_POSITION("Logical.java", 500)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i < _r2.i) goto label20;
     _r0 = _r6;
@@ -1983,7 +2120,9 @@ JAVA_OBJECT java_math_Logical_orNegative___java_math_BigInteger_java_math_BigInt
     goto label13;
     label20:;
     XMLVM_SOURCE_POSITION("Logical.java", 504)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     _r2.i = java_lang_Math_min___int_int(_r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("Logical.java", 505)
@@ -1992,11 +2131,13 @@ JAVA_OBJECT java_math_Logical_orNegative___java_math_BigInteger_java_math_BigInt
     XMLVM_SOURCE_POSITION("Logical.java", 508)
     if (_r0.i != _r1.i) goto label69;
     XMLVM_SOURCE_POSITION("Logical.java", 509)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     _r0.i = -_r0.i;
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r1.i);
@@ -2025,6 +2166,7 @@ JAVA_OBJECT java_math_Logical_orNegative___java_math_BigInteger_java_math_BigInt
     goto label13;
     label61:;
     XMLVM_SOURCE_POSITION("Logical.java", 513)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r0.i);
@@ -2037,10 +2179,12 @@ JAVA_OBJECT java_math_Logical_orNegative___java_math_BigInteger_java_math_BigInt
     label69:;
     if (_r0.i < _r1.i) goto label61;
     XMLVM_SOURCE_POSITION("Logical.java", 515)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     _r1.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r0.i);
@@ -2054,10 +2198,12 @@ JAVA_OBJECT java_math_Logical_orNegative___java_math_BigInteger_java_math_BigInt
     goto label47;
     label85:;
     XMLVM_SOURCE_POSITION("Logical.java", 519)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     _r1.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r0.i);
@@ -2095,6 +2241,7 @@ JAVA_OBJECT java_math_Logical_orDiffSigns___java_math_BigInteger_java_math_BigIn
     XMLVM_CHECK_NPE(7)
     _r1.i = java_math_BigInteger_getFirstNonzeroDigit__(_r7.o);
     XMLVM_SOURCE_POSITION("Logical.java", 537)
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     if (_r1.i < _r2.i) goto label15;
     _r0 = _r8;
@@ -2105,6 +2252,7 @@ JAVA_OBJECT java_math_Logical_orDiffSigns___java_math_BigInteger_java_math_BigIn
     return _r0.o;
     label15:;
     XMLVM_SOURCE_POSITION("Logical.java", 540)
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     XMLVM_SOURCE_POSITION("Logical.java", 541)
     if (!__TIB_int.classInitialized) __INIT_int();
@@ -2116,7 +2264,9 @@ JAVA_OBJECT java_math_Logical_orDiffSigns___java_math_BigInteger_java_math_BigIn
     if (_r0.i < _r1.i) goto label46;
     label23:;
     XMLVM_SOURCE_POSITION("Logical.java", 572)
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     _r1.i = java_lang_Math_min___int_int(_r1.i, _r4.i);
     label31:;
@@ -2124,6 +2274,7 @@ JAVA_OBJECT java_math_Logical_orDiffSigns___java_math_BigInteger_java_math_BigIn
     if (_r0.i < _r1.i) goto label139;
     label33:;
     XMLVM_SOURCE_POSITION("Logical.java", 578)
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i < _r1.i) goto label155;
     XMLVM_SOURCE_POSITION("Logical.java", 582)
@@ -2136,6 +2287,7 @@ JAVA_OBJECT java_math_Logical_orDiffSigns___java_math_BigInteger_java_math_BigIn
     goto label14;
     label46:;
     XMLVM_SOURCE_POSITION("Logical.java", 547)
+    XMLVM_CHECK_NPE(8)
     _r4.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r0.i);
@@ -2149,6 +2301,7 @@ JAVA_OBJECT java_math_Logical_orDiffSigns___java_math_BigInteger_java_math_BigIn
     XMLVM_SOURCE_POSITION("Logical.java", 549)
     if (_r1.i >= _r0.i) goto label123;
     XMLVM_SOURCE_POSITION("Logical.java", 551)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r1.i);
@@ -2158,6 +2311,7 @@ JAVA_OBJECT java_math_Logical_orDiffSigns___java_math_BigInteger_java_math_BigIn
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r4.i;
     XMLVM_SOURCE_POSITION("Logical.java", 552)
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     _r4.i = java_lang_Math_min___int_int(_r4.i, _r0.i);
     XMLVM_SOURCE_POSITION("Logical.java", 553)
@@ -2165,14 +2319,17 @@ JAVA_OBJECT java_math_Logical_orDiffSigns___java_math_BigInteger_java_math_BigIn
     label72:;
     if (_r1.i < _r4.i) goto label96;
     XMLVM_SOURCE_POSITION("Logical.java", 556)
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     if (_r1.i == _r4.i) goto label111;
     XMLVM_SOURCE_POSITION("Logical.java", 557)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     _r0.i = -_r0.i;
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r1.i);
@@ -2189,6 +2346,7 @@ JAVA_OBJECT java_math_Logical_orDiffSigns___java_math_BigInteger_java_math_BigIn
     goto label23;
     label96:;
     XMLVM_SOURCE_POSITION("Logical.java", 554)
+    XMLVM_CHECK_NPE(7)
     _r5.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r1.i);
@@ -2209,6 +2367,7 @@ JAVA_OBJECT java_math_Logical_orDiffSigns___java_math_BigInteger_java_math_BigIn
     label111:;
     if (_r1.i < _r0.i) goto label107;
     XMLVM_SOURCE_POSITION("Logical.java", 563)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -2222,11 +2381,13 @@ JAVA_OBJECT java_math_Logical_orDiffSigns___java_math_BigInteger_java_math_BigIn
     goto label93;
     label123:;
     XMLVM_SOURCE_POSITION("Logical.java", 569)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     _r0.i = -_r0.i;
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r1.i);
@@ -2241,10 +2402,12 @@ JAVA_OBJECT java_math_Logical_orDiffSigns___java_math_BigInteger_java_math_BigIn
     goto label23;
     label139:;
     XMLVM_SOURCE_POSITION("Logical.java", 576)
+    XMLVM_CHECK_NPE(8)
     _r4.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r0.i);
     _r4.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r4.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
+    XMLVM_CHECK_NPE(7)
     _r5.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r0.i);
@@ -2258,6 +2421,7 @@ JAVA_OBJECT java_math_Logical_orDiffSigns___java_math_BigInteger_java_math_BigIn
     goto label31;
     label155:;
     XMLVM_SOURCE_POSITION("Logical.java", 579)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -2282,6 +2446,7 @@ JAVA_OBJECT java_math_Logical_xor___java_math_BigInteger_java_math_BigInteger(JA
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("Logical.java", 589)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i != 0) goto label6;
     _r0 = _r2;
@@ -2292,6 +2457,7 @@ JAVA_OBJECT java_math_Logical_xor___java_math_BigInteger_java_math_BigInteger(JA
     return _r0.o;
     label6:;
     XMLVM_SOURCE_POSITION("Logical.java", 592)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_BigInteger*) _r2.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i != 0) goto label12;
     _r0 = _r3;
@@ -2321,13 +2487,17 @@ JAVA_OBJECT java_math_Logical_xor___java_math_BigInteger_java_math_BigInteger(JA
     goto label5;
     label38:;
     XMLVM_SOURCE_POSITION("Logical.java", 602)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_BigInteger*) _r2.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i <= 0) goto label67;
     XMLVM_SOURCE_POSITION("Logical.java", 603)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i <= 0) goto label62;
     XMLVM_SOURCE_POSITION("Logical.java", 604)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_BigInteger*) _r2.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i <= _r1.i) goto label57;
     XMLVM_SOURCE_POSITION("Logical.java", 605)
@@ -2343,6 +2513,7 @@ JAVA_OBJECT java_math_Logical_xor___java_math_BigInteger_java_math_BigInteger(JA
     goto label5;
     label67:;
     XMLVM_SOURCE_POSITION("Logical.java", 613)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i <= 0) goto label76;
     XMLVM_SOURCE_POSITION("Logical.java", 614)
@@ -2379,6 +2550,7 @@ JAVA_OBJECT java_math_Logical_xorPositive___java_math_BigInteger_java_math_BigIn
     _r5.o = n1;
     _r6.o = n2;
     XMLVM_SOURCE_POSITION("Logical.java", 627)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.numberLength_;
     XMLVM_SOURCE_POSITION("Logical.java", 628)
     if (!__TIB_int.classInitialized) __INIT_int();
@@ -2391,10 +2563,12 @@ JAVA_OBJECT java_math_Logical_xorPositive___java_math_BigInteger_java_math_BigIn
     _r2.i = java_lang_Math_min___int_int(_r2.i, _r3.i);
     label16:;
     XMLVM_SOURCE_POSITION("Logical.java", 630)
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
     if (_r2.i < _r3.i) goto label34;
     label20:;
     XMLVM_SOURCE_POSITION("Logical.java", 633)
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.numberLength_;
     if (_r2.i < _r3.i) goto label48;
     XMLVM_SOURCE_POSITION("Logical.java", 637)
@@ -2410,10 +2584,12 @@ JAVA_OBJECT java_math_Logical_xorPositive___java_math_BigInteger_java_math_BigIn
     return _r2.o;
     label34:;
     XMLVM_SOURCE_POSITION("Logical.java", 631)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r2.i);
     _r3.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r2.i);
@@ -2426,6 +2602,7 @@ JAVA_OBJECT java_math_Logical_xorPositive___java_math_BigInteger_java_math_BigIn
     goto label16;
     label48:;
     XMLVM_SOURCE_POSITION("Logical.java", 634)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r2.i);
@@ -2456,7 +2633,9 @@ JAVA_OBJECT java_math_Logical_xorNegative___java_math_BigInteger_java_math_BigIn
     _r8.o = n2;
     _r6.i = 1;
     XMLVM_SOURCE_POSITION("Logical.java", 646)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     _r0.i = java_lang_Math_max___int_int(_r0.i, _r1.i);
     XMLVM_SOURCE_POSITION("Logical.java", 647)
@@ -2471,11 +2650,13 @@ JAVA_OBJECT java_math_Logical_xorNegative___java_math_BigInteger_java_math_BigIn
     XMLVM_SOURCE_POSITION("Logical.java", 654)
     if (_r2.i != _r3.i) goto label64;
     XMLVM_SOURCE_POSITION("Logical.java", 655)
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
     _r2.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i];
     _r2.i = -_r2.i;
+    XMLVM_CHECK_NPE(8)
     _r4.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r3.i);
@@ -2488,7 +2669,9 @@ JAVA_OBJECT java_math_Logical_xorNegative___java_math_BigInteger_java_math_BigIn
     _r2 = _r3;
     label35:;
     XMLVM_SOURCE_POSITION("Logical.java", 676)
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(8)
     _r4.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     _r3.i = java_lang_Math_min___int_int(_r3.i, _r4.i);
     XMLVM_SOURCE_POSITION("Logical.java", 678)
@@ -2497,10 +2680,12 @@ JAVA_OBJECT java_math_Logical_xorNegative___java_math_BigInteger_java_math_BigIn
     if (_r2.i < _r3.i) goto label129;
     label47:;
     XMLVM_SOURCE_POSITION("Logical.java", 683)
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     if (_r2.i < _r3.i) goto label143;
     label51:;
     XMLVM_SOURCE_POSITION("Logical.java", 687)
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     if (_r2.i < _r3.i) goto label152;
     XMLVM_SOURCE_POSITION("Logical.java", 692)
@@ -2515,6 +2700,7 @@ JAVA_OBJECT java_math_Logical_xorNegative___java_math_BigInteger_java_math_BigIn
     return _r2.o;
     label64:;
     XMLVM_SOURCE_POSITION("Logical.java", 657)
+    XMLVM_CHECK_NPE(8)
     _r4.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r3.i);
@@ -2524,6 +2710,7 @@ JAVA_OBJECT java_math_Logical_xorNegative___java_math_BigInteger_java_math_BigIn
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r3.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i] = _r4.i;
     XMLVM_SOURCE_POSITION("Logical.java", 658)
+    XMLVM_CHECK_NPE(8)
     _r4.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     _r4.i = java_lang_Math_min___int_int(_r4.i, _r2.i);
     XMLVM_SOURCE_POSITION("Logical.java", 659)
@@ -2531,12 +2718,14 @@ JAVA_OBJECT java_math_Logical_xorNegative___java_math_BigInteger_java_math_BigIn
     label79:;
     if (_r3.i < _r4.i) goto label96;
     XMLVM_SOURCE_POSITION("Logical.java", 663)
+    XMLVM_CHECK_NPE(8)
     _r4.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     if (_r3.i != _r4.i) goto label113;
     label85:;
     XMLVM_SOURCE_POSITION("Logical.java", 665)
     if (_r3.i < _r2.i) goto label107;
     XMLVM_SOURCE_POSITION("Logical.java", 670)
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
@@ -2549,6 +2738,7 @@ JAVA_OBJECT java_math_Logical_xorNegative___java_math_BigInteger_java_math_BigIn
     goto label35;
     label96:;
     XMLVM_SOURCE_POSITION("Logical.java", 660)
+    XMLVM_CHECK_NPE(8)
     _r5.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r3.i);
@@ -2569,11 +2759,13 @@ JAVA_OBJECT java_math_Logical_xorNegative___java_math_BigInteger_java_math_BigIn
     goto label85;
     label113:;
     XMLVM_SOURCE_POSITION("Logical.java", 672)
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
     _r2.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i];
     _r2.i = -_r2.i;
+    XMLVM_CHECK_NPE(8)
     _r4.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r3.i);
@@ -2587,10 +2779,12 @@ JAVA_OBJECT java_math_Logical_xorNegative___java_math_BigInteger_java_math_BigIn
     goto label35;
     label129:;
     XMLVM_SOURCE_POSITION("Logical.java", 680)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r2.i);
     _r4.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r4.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
+    XMLVM_CHECK_NPE(8)
     _r5.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r2.i);
@@ -2603,6 +2797,7 @@ JAVA_OBJECT java_math_Logical_xorNegative___java_math_BigInteger_java_math_BigIn
     goto label45;
     label143:;
     XMLVM_SOURCE_POSITION("Logical.java", 685)
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r2.i);
@@ -2614,6 +2809,7 @@ JAVA_OBJECT java_math_Logical_xorNegative___java_math_BigInteger_java_math_BigIn
     goto label47;
     label152:;
     XMLVM_SOURCE_POSITION("Logical.java", 689)
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r2.i);
@@ -2646,7 +2842,9 @@ JAVA_OBJECT java_math_Logical_xorDiffSigns___java_math_BigInteger_java_math_BigI
     _r5.i = 1;
     _r6.i = -1;
     XMLVM_SOURCE_POSITION("Logical.java", 699)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_math_BigInteger*) _r9.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     _r0.i = java_lang_Math_max___int_int(_r0.i, _r1.i);
     XMLVM_SOURCE_POSITION("Logical.java", 701)
@@ -2661,6 +2859,7 @@ JAVA_OBJECT java_math_Logical_xorDiffSigns___java_math_BigInteger_java_math_BigI
     if (!__TIB_int.classInitialized) __INIT_int();
     _r3.o = XMLVMArray_createSingleDimension(__CLASS_int, _r0.i);
     XMLVM_SOURCE_POSITION("Logical.java", 711)
+    XMLVM_CHECK_NPE(9)
     _r4.o = ((java_math_BigInteger*) _r9.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r1.i);
@@ -2669,6 +2868,7 @@ JAVA_OBJECT java_math_Logical_xorDiffSigns___java_math_BigInteger_java_math_BigI
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r4.i;
     XMLVM_SOURCE_POSITION("Logical.java", 712)
+    XMLVM_CHECK_NPE(9)
     _r4.i = ((java_math_BigInteger*) _r9.o)->fields.java_math_BigInteger.numberLength_;
     _r2.i = java_lang_Math_min___int_int(_r4.i, _r2.i);
     XMLVM_SOURCE_POSITION("Logical.java", 714)
@@ -2676,16 +2876,20 @@ JAVA_OBJECT java_math_Logical_xorDiffSigns___java_math_BigInteger_java_math_BigI
     label36:;
     if (_r1.i < _r2.i) goto label75;
     XMLVM_SOURCE_POSITION("Logical.java", 720)
+    XMLVM_CHECK_NPE(9)
     _r2.i = ((java_math_BigInteger*) _r9.o)->fields.java_math_BigInteger.numberLength_;
     if (_r1.i != _r2.i) goto label312;
     label42:;
     XMLVM_SOURCE_POSITION("Logical.java", 721)
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     if (_r1.i < _r2.i) goto label84;
     _r2 = _r3;
     label47:;
     XMLVM_SOURCE_POSITION("Logical.java", 783)
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((java_math_BigInteger*) _r9.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(8)
     _r4.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     _r3.i = java_lang_Math_min___int_int(_r3.i, _r4.i);
     label55:;
@@ -2693,10 +2897,12 @@ JAVA_OBJECT java_math_Logical_xorDiffSigns___java_math_BigInteger_java_math_BigI
     if (_r1.i < _r3.i) goto label273;
     label57:;
     XMLVM_SOURCE_POSITION("Logical.java", 787)
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     if (_r1.i < _r3.i) goto label292;
     label61:;
     XMLVM_SOURCE_POSITION("Logical.java", 791)
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((java_math_BigInteger*) _r9.o)->fields.java_math_BigInteger.numberLength_;
     if (_r1.i < _r3.i) goto label302;
     XMLVM_SOURCE_POSITION("Logical.java", 796)
@@ -2713,6 +2919,7 @@ JAVA_OBJECT java_math_Logical_xorDiffSigns___java_math_BigInteger_java_math_BigI
     return _r0.o;
     label75:;
     XMLVM_SOURCE_POSITION("Logical.java", 716)
+    XMLVM_CHECK_NPE(9)
     _r4.o = ((java_math_BigInteger*) _r9.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r1.i);
@@ -2724,6 +2931,7 @@ JAVA_OBJECT java_math_Logical_xorDiffSigns___java_math_BigInteger_java_math_BigI
     goto label36;
     label84:;
     XMLVM_SOURCE_POSITION("Logical.java", 723)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -2740,6 +2948,7 @@ JAVA_OBJECT java_math_Logical_xorDiffSigns___java_math_BigInteger_java_math_BigI
     if (!__TIB_int.classInitialized) __INIT_int();
     _r3.o = XMLVMArray_createSingleDimension(__CLASS_int, _r0.i);
     XMLVM_SOURCE_POSITION("Logical.java", 730)
+    XMLVM_CHECK_NPE(8)
     _r4.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r2.i);
@@ -2749,6 +2958,7 @@ JAVA_OBJECT java_math_Logical_xorDiffSigns___java_math_BigInteger_java_math_BigI
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r2.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i] = _r4.i;
     XMLVM_SOURCE_POSITION("Logical.java", 731)
+    XMLVM_CHECK_NPE(8)
     _r4.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     _r4.i = java_lang_Math_min___int_int(_r4.i, _r1.i);
     XMLVM_SOURCE_POSITION("Logical.java", 732)
@@ -2758,10 +2968,12 @@ JAVA_OBJECT java_math_Logical_xorDiffSigns___java_math_BigInteger_java_math_BigI
     XMLVM_SOURCE_POSITION("Logical.java", 738)
     if (_r2.i != _r1.i) goto label149;
     XMLVM_SOURCE_POSITION("Logical.java", 739)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     _r1.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
+    XMLVM_CHECK_NPE(9)
     _r4.o = ((java_math_BigInteger*) _r9.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r2.i);
@@ -2778,6 +2990,7 @@ JAVA_OBJECT java_math_Logical_xorDiffSigns___java_math_BigInteger_java_math_BigI
     goto label47;
     label134:;
     XMLVM_SOURCE_POSITION("Logical.java", 734)
+    XMLVM_CHECK_NPE(8)
     _r5.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r2.i);
@@ -2800,12 +3013,14 @@ JAVA_OBJECT java_math_Logical_xorDiffSigns___java_math_BigInteger_java_math_BigI
     _r1 = _r2;
     label152:;
     XMLVM_SOURCE_POSITION("Logical.java", 748)
+    XMLVM_CHECK_NPE(9)
     _r2.i = ((java_math_BigInteger*) _r9.o)->fields.java_math_BigInteger.numberLength_;
     if (_r1.i < _r2.i) goto label158;
     _r2 = _r3;
     goto label47;
     label158:;
     XMLVM_SOURCE_POSITION("Logical.java", 750)
+    XMLVM_CHECK_NPE(9)
     _r2.o = ((java_math_BigInteger*) _r9.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -2817,10 +3032,12 @@ JAVA_OBJECT java_math_Logical_xorDiffSigns___java_math_BigInteger_java_math_BigI
     goto label152;
     label167:;
     XMLVM_SOURCE_POSITION("Logical.java", 757)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
     _r2.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
+    XMLVM_CHECK_NPE(9)
     _r3.o = ((java_math_BigInteger*) _r9.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
@@ -2830,7 +3047,9 @@ JAVA_OBJECT java_math_Logical_xorDiffSigns___java_math_BigInteger_java_math_BigI
     if (_r2.i != 0) goto label260;
     XMLVM_SOURCE_POSITION("Logical.java", 758)
     XMLVM_SOURCE_POSITION("Logical.java", 759)
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(9)
     _r4.i = ((java_math_BigInteger*) _r9.o)->fields.java_math_BigInteger.numberLength_;
     _r3.i = java_lang_Math_min___int_int(_r3.i, _r4.i);
     XMLVM_SOURCE_POSITION("Logical.java", 760)
@@ -2840,10 +3059,12 @@ JAVA_OBJECT java_math_Logical_xorDiffSigns___java_math_BigInteger_java_math_BigI
     _r1 = _r7;
     label192:;
     if (_r2.i >= _r3.i) goto label207;
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     _r1.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
+    XMLVM_CHECK_NPE(9)
     _r4.o = ((java_math_BigInteger*) _r9.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r2.i);
@@ -2856,8 +3077,10 @@ JAVA_OBJECT java_math_Logical_xorDiffSigns___java_math_BigInteger_java_math_BigI
     if (_r1.i != 0) goto label263;
     label209:;
     XMLVM_SOURCE_POSITION("Logical.java", 764)
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     if (_r2.i >= _r3.i) goto label221;
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
@@ -2866,8 +3089,10 @@ JAVA_OBJECT java_math_Logical_xorDiffSigns___java_math_BigInteger_java_math_BigI
     if (_r1.i == 0) goto label254;
     label221:;
     XMLVM_SOURCE_POSITION("Logical.java", 766)
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((java_math_BigInteger*) _r9.o)->fields.java_math_BigInteger.numberLength_;
     if (_r2.i >= _r3.i) goto label233;
+    XMLVM_CHECK_NPE(9)
     _r1.o = ((java_math_BigInteger*) _r9.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
@@ -2922,11 +3147,13 @@ JAVA_OBJECT java_math_Logical_xorDiffSigns___java_math_BigInteger_java_math_BigI
     goto label47;
     label273:;
     XMLVM_SOURCE_POSITION("Logical.java", 785)
+    XMLVM_CHECK_NPE(9)
     _r4.o = ((java_math_BigInteger*) _r9.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r1.i);
     _r4.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r4.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     _r4.i = _r4.i ^ -1;
+    XMLVM_CHECK_NPE(8)
     _r5.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r1.i);
@@ -2940,6 +3167,7 @@ JAVA_OBJECT java_math_Logical_xorDiffSigns___java_math_BigInteger_java_math_BigI
     goto label55;
     label292:;
     XMLVM_SOURCE_POSITION("Logical.java", 789)
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
@@ -2951,6 +3179,7 @@ JAVA_OBJECT java_math_Logical_xorDiffSigns___java_math_BigInteger_java_math_BigI
     goto label57;
     label302:;
     XMLVM_SOURCE_POSITION("Logical.java", 793)
+    XMLVM_CHECK_NPE(9)
     _r3.o = ((java_math_BigInteger*) _r9.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);

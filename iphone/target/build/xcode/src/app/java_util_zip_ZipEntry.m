@@ -719,16 +719,24 @@ void java_util_zip_ZipEntry___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJE
     XMLVM_CHECK_NPE(3)
     java_lang_Object___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("ZipEntry.java", 44)
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.compressedSize_ = _r1.l;
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.crc_ = _r1.l;
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.size_ = _r1.l;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 46)
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.compressionMethod_ = _r0.i;
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.time_ = _r0.i;
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.modDate_ = _r0.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 50)
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.nameLen_ = _r0.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 51)
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.mLocalHeaderRelOffset_ = _r1.l;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 72)
     if (_r4.o != JAVA_NULL) goto label30;
@@ -751,6 +759,7 @@ void java_util_zip_ZipEntry___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJE
     XMLVM_THROW_CUSTOM(_r0.o)
     label45:;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 78)
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.name_ = _r4.o;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 79)
     XMLVM_EXIT_METHOD()
@@ -766,6 +775,7 @@ JAVA_OBJECT java_util_zip_ZipEntry_getComment__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 89)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_zip_ZipEntry*) _r1.o)->fields.java_util_zip_ZipEntry.comment_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -781,6 +791,7 @@ JAVA_LONG java_util_zip_ZipEntry_getCompressedSize__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 99)
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((java_util_zip_ZipEntry*) _r2.o)->fields.java_util_zip_ZipEntry.compressedSize_;
     XMLVM_EXIT_METHOD()
     return _r0.l;
@@ -796,6 +807,7 @@ JAVA_LONG java_util_zip_ZipEntry_getCrc__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 108)
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((java_util_zip_ZipEntry*) _r2.o)->fields.java_util_zip_ZipEntry.crc_;
     XMLVM_EXIT_METHOD()
     return _r0.l;
@@ -810,6 +822,7 @@ JAVA_OBJECT java_util_zip_ZipEntry_getExtra__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 118)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_zip_ZipEntry*) _r1.o)->fields.java_util_zip_ZipEntry.extra_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -824,6 +837,7 @@ JAVA_INT java_util_zip_ZipEntry_getMethod__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 128)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_zip_ZipEntry*) _r1.o)->fields.java_util_zip_ZipEntry.compressionMethod_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -838,6 +852,7 @@ JAVA_OBJECT java_util_zip_ZipEntry_getName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 137)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_zip_ZipEntry*) _r1.o)->fields.java_util_zip_ZipEntry.name_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -853,6 +868,7 @@ JAVA_LONG java_util_zip_ZipEntry_getSize__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 147)
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((java_util_zip_ZipEntry*) _r2.o)->fields.java_util_zip_ZipEntry.size_;
     XMLVM_EXIT_METHOD()
     return _r0.l;
@@ -873,6 +889,7 @@ JAVA_LONG java_util_zip_ZipEntry_getTime__(JAVA_OBJECT me)
     XMLVMElem _r7;
     _r7.o = me;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 157)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_util_zip_ZipEntry*) _r7.o)->fields.java_util_zip_ZipEntry.time_;
     _r1.i = -1;
     if (_r0.i == _r1.i) goto label66;
@@ -886,25 +903,31 @@ JAVA_LONG java_util_zip_ZipEntry_getTime__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_util_Calendar_set___int_int(_r0.o, _r1.i, _r2.i);
     XMLVM_SOURCE_POSITION("ZipEntry.java", 160)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_util_zip_ZipEntry*) _r7.o)->fields.java_util_zip_ZipEntry.modDate_;
     _r1.i = _r1.i >> 9;
     _r1.i = _r1.i & 127;
     _r1.i = _r1.i + 1980;
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_util_zip_ZipEntry*) _r7.o)->fields.java_util_zip_ZipEntry.modDate_;
     _r2.i = _r2.i >> 5;
     _r2.i = _r2.i & 15;
     _r3.i = 1;
     _r2.i = _r2.i - _r3.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 161)
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((java_util_zip_ZipEntry*) _r7.o)->fields.java_util_zip_ZipEntry.modDate_;
     _r3.i = _r3.i & 31;
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_util_zip_ZipEntry*) _r7.o)->fields.java_util_zip_ZipEntry.time_;
     _r4.i = _r4.i >> 11;
     _r4.i = _r4.i & 31;
+    XMLVM_CHECK_NPE(7)
     _r5.i = ((java_util_zip_ZipEntry*) _r7.o)->fields.java_util_zip_ZipEntry.time_;
     _r5.i = _r5.i >> 5;
     _r5.i = _r5.i & 63;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 162)
+    XMLVM_CHECK_NPE(7)
     _r6.i = ((java_util_zip_ZipEntry*) _r7.o)->fields.java_util_zip_ZipEntry.time_;
     _r6.i = _r6.i & 31;
     _r6.i = _r6.i << 1;
@@ -936,7 +959,9 @@ JAVA_BOOLEAN java_util_zip_ZipEntry_isDirectory__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 175)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.name_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.name_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(1)
@@ -976,6 +1001,7 @@ void java_util_zip_ZipEntry_setComment___java_lang_String(JAVA_OBJECT me, JAVA_O
     if (_r0.i > _r1.i) goto label14;
     label11:;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 186)
+    XMLVM_CHECK_NPE(2)
     ((java_util_zip_ZipEntry*) _r2.o)->fields.java_util_zip_ZipEntry.comment_ = _r3.o;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 190)
     XMLVM_EXIT_METHOD()
@@ -999,6 +1025,7 @@ void java_util_zip_ZipEntry_setCompressedSize___long(JAVA_OBJECT me, JAVA_LONG n
     _r0.o = me;
     _r1.l = n1;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 199)
+    XMLVM_CHECK_NPE(0)
     ((java_util_zip_ZipEntry*) _r0.o)->fields.java_util_zip_ZipEntry.compressedSize_ = _r1.l;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 200)
     XMLVM_EXIT_METHOD()
@@ -1025,6 +1052,7 @@ void java_util_zip_ZipEntry_setCrc___long(JAVA_OBJECT me, JAVA_LONG n1)
     _r0.i = _r3.l > _r0.l ? 1 : (_r3.l == _r0.l ? 0 : -1);
     if (_r0.i > 0) goto label18;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 212)
+    XMLVM_CHECK_NPE(2)
     ((java_util_zip_ZipEntry*) _r2.o)->fields.java_util_zip_ZipEntry.crc_ = _r3.l;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 216)
     XMLVM_EXIT_METHOD()
@@ -1055,6 +1083,7 @@ void java_util_zip_ZipEntry_setExtra___byte_1ARRAY(JAVA_OBJECT me, JAVA_OBJECT n
     if (_r0.i > _r1.i) goto label11;
     label8:;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 228)
+    XMLVM_CHECK_NPE(2)
     ((java_util_zip_ZipEntry*) _r2.o)->fields.java_util_zip_ZipEntry.extra_ = _r3.o;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 232)
     XMLVM_EXIT_METHOD()
@@ -1088,6 +1117,7 @@ void java_util_zip_ZipEntry_setMethod___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 247)
+    XMLVM_CHECK_NPE(1)
     ((java_util_zip_ZipEntry*) _r1.o)->fields.java_util_zip_ZipEntry.compressionMethod_ = _r2.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 248)
     XMLVM_EXIT_METHOD()
@@ -1114,6 +1144,7 @@ void java_util_zip_ZipEntry_setSize___long(JAVA_OBJECT me, JAVA_LONG n1)
     _r0.i = _r3.l > _r0.l ? 1 : (_r3.l == _r0.l ? 0 : -1);
     if (_r0.i > 0) goto label18;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 260)
+    XMLVM_CHECK_NPE(2)
     ((java_util_zip_ZipEntry*) _r2.o)->fields.java_util_zip_ZipEntry.size_ = _r3.l;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 264)
     XMLVM_EXIT_METHOD()
@@ -1160,9 +1191,11 @@ void java_util_zip_ZipEntry_setTime___long(JAVA_OBJECT me, JAVA_LONG n1)
     if (_r1.i >= _r4.i) goto label30;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 278)
     _r0.i = 33;
+    XMLVM_CHECK_NPE(5)
     ((java_util_zip_ZipEntry*) _r5.o)->fields.java_util_zip_ZipEntry.modDate_ = _r0.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 279)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(5)
     ((java_util_zip_ZipEntry*) _r5.o)->fields.java_util_zip_ZipEntry.time_ = _r0.i;
     label29:;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 288)
@@ -1173,6 +1206,7 @@ void java_util_zip_ZipEntry_setTime___long(JAVA_OBJECT me, JAVA_LONG n1)
     _r1.i = 5;
     XMLVM_CHECK_NPE(0)
     _r1.i = java_util_Calendar_get___int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(5)
     ((java_util_zip_ZipEntry*) _r5.o)->fields.java_util_zip_ZipEntry.modDate_ = _r1.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 282)
     _r1.i = 2;
@@ -1180,38 +1214,47 @@ void java_util_zip_ZipEntry_setTime___long(JAVA_OBJECT me, JAVA_LONG n1)
     _r1.i = java_util_Calendar_get___int(_r0.o, _r1.i);
     _r1.i = _r1.i + 1;
     _r1.i = _r1.i << 5;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_util_zip_ZipEntry*) _r5.o)->fields.java_util_zip_ZipEntry.modDate_;
     _r1.i = _r1.i | _r2.i;
+    XMLVM_CHECK_NPE(5)
     ((java_util_zip_ZipEntry*) _r5.o)->fields.java_util_zip_ZipEntry.modDate_ = _r1.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 283)
     XMLVM_CHECK_NPE(0)
     _r1.i = java_util_Calendar_get___int(_r0.o, _r3.i);
     _r1.i = _r1.i - _r4.i;
     _r1.i = _r1.i << 9;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_util_zip_ZipEntry*) _r5.o)->fields.java_util_zip_ZipEntry.modDate_;
     _r1.i = _r1.i | _r2.i;
+    XMLVM_CHECK_NPE(5)
     ((java_util_zip_ZipEntry*) _r5.o)->fields.java_util_zip_ZipEntry.modDate_ = _r1.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 284)
     _r1.i = 13;
     XMLVM_CHECK_NPE(0)
     _r1.i = java_util_Calendar_get___int(_r0.o, _r1.i);
     _r1.i = _r1.i >> 1;
+    XMLVM_CHECK_NPE(5)
     ((java_util_zip_ZipEntry*) _r5.o)->fields.java_util_zip_ZipEntry.time_ = _r1.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 285)
     _r1.i = 12;
     XMLVM_CHECK_NPE(0)
     _r1.i = java_util_Calendar_get___int(_r0.o, _r1.i);
     _r1.i = _r1.i << 5;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_util_zip_ZipEntry*) _r5.o)->fields.java_util_zip_ZipEntry.time_;
     _r1.i = _r1.i | _r2.i;
+    XMLVM_CHECK_NPE(5)
     ((java_util_zip_ZipEntry*) _r5.o)->fields.java_util_zip_ZipEntry.time_ = _r1.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 286)
     _r1.i = 11;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Calendar_get___int(_r0.o, _r1.i);
     _r0.i = _r0.i << 11;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_zip_ZipEntry*) _r5.o)->fields.java_util_zip_ZipEntry.time_;
     _r0.i = _r0.i | _r1.i;
+    XMLVM_CHECK_NPE(5)
     ((java_util_zip_ZipEntry*) _r5.o)->fields.java_util_zip_ZipEntry.time_ = _r0.i;
     goto label29;
     //XMLVM_END_WRAPPER
@@ -1225,6 +1268,7 @@ JAVA_OBJECT java_util_zip_ZipEntry_toString__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 297)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_zip_ZipEntry*) _r1.o)->fields.java_util_zip_ZipEntry.name_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1248,49 +1292,79 @@ void java_util_zip_ZipEntry___INIT____java_util_zip_ZipEntry(JAVA_OBJECT me, JAV
     XMLVM_CHECK_NPE(3)
     java_lang_Object___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("ZipEntry.java", 44)
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.compressedSize_ = _r1.l;
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.crc_ = _r1.l;
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.size_ = _r1.l;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 46)
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.compressionMethod_ = _r0.i;
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.time_ = _r0.i;
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.modDate_ = _r0.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 50)
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.nameLen_ = _r0.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 51)
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.mLocalHeaderRelOffset_ = _r1.l;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 308)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_zip_ZipEntry*) _r4.o)->fields.java_util_zip_ZipEntry.name_;
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.name_ = _r0.o;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 309)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_zip_ZipEntry*) _r4.o)->fields.java_util_zip_ZipEntry.comment_;
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.comment_ = _r0.o;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 310)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_zip_ZipEntry*) _r4.o)->fields.java_util_zip_ZipEntry.time_;
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.time_ = _r0.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 311)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_util_zip_ZipEntry*) _r4.o)->fields.java_util_zip_ZipEntry.size_;
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.size_ = _r0.l;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 312)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_util_zip_ZipEntry*) _r4.o)->fields.java_util_zip_ZipEntry.compressedSize_;
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.compressedSize_ = _r0.l;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 313)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_util_zip_ZipEntry*) _r4.o)->fields.java_util_zip_ZipEntry.crc_;
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.crc_ = _r0.l;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 314)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_zip_ZipEntry*) _r4.o)->fields.java_util_zip_ZipEntry.compressionMethod_;
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.compressionMethod_ = _r0.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 315)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_zip_ZipEntry*) _r4.o)->fields.java_util_zip_ZipEntry.modDate_;
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.modDate_ = _r0.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 316)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_zip_ZipEntry*) _r4.o)->fields.java_util_zip_ZipEntry.extra_;
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.extra_ = _r0.o;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 317)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_zip_ZipEntry*) _r4.o)->fields.java_util_zip_ZipEntry.nameLen_;
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.nameLen_ = _r0.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 318)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_util_zip_ZipEntry*) _r4.o)->fields.java_util_zip_ZipEntry.mLocalHeaderRelOffset_;
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipEntry*) _r3.o)->fields.java_util_zip_ZipEntry.mLocalHeaderRelOffset_ = _r0.l;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 319)
     XMLVM_EXIT_METHOD()
@@ -1322,6 +1396,7 @@ JAVA_INT java_util_zip_ZipEntry_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 338)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_zip_ZipEntry*) _r1.o)->fields.java_util_zip_ZipEntry.name_;
     //java_lang_String_hashCode__[4]
     XMLVM_CHECK_NPE(0)
@@ -1361,18 +1436,27 @@ void java_util_zip_ZipEntry___INIT____java_util_zip_ZipEntry_LittleEndianReader_
     XMLVM_CHECK_NPE(10)
     java_lang_Object___INIT___(_r10.o);
     XMLVM_SOURCE_POSITION("ZipEntry.java", 44)
+    XMLVM_CHECK_NPE(10)
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.compressedSize_ = _r2.l;
+    XMLVM_CHECK_NPE(10)
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.crc_ = _r2.l;
+    XMLVM_CHECK_NPE(10)
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.size_ = _r2.l;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 46)
+    XMLVM_CHECK_NPE(10)
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.compressionMethod_ = _r1.i;
+    XMLVM_CHECK_NPE(10)
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.time_ = _r1.i;
+    XMLVM_CHECK_NPE(10)
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.modDate_ = _r1.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 50)
+    XMLVM_CHECK_NPE(10)
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.nameLen_ = _r1.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 51)
+    XMLVM_CHECK_NPE(10)
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.mLocalHeaderRelOffset_ = _r2.l;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 361)
+    XMLVM_CHECK_NPE(11)
     _r1.o = ((java_util_zip_ZipEntry_LittleEndianReader*) _r11.o)->fields.java_util_zip_ZipEntry_LittleEndianReader.hdrBuf_;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 362)
     XMLVM_CHECK_NPE(10)
@@ -1433,6 +1517,7 @@ void java_util_zip_ZipEntry___INIT____java_util_zip_ZipEntry_LittleEndianReader_
     _r3.i = _r3.i & 255;
     _r3.i = _r3.i << 8;
     _r2.i = _r2.i | _r3.i;
+    XMLVM_CHECK_NPE(10)
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.compressionMethod_ = _r2.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 371)
     _r2.i = 12;
@@ -1447,6 +1532,7 @@ void java_util_zip_ZipEntry___INIT____java_util_zip_ZipEntry_LittleEndianReader_
     _r3.i = _r3.i & 255;
     _r3.i = _r3.i << 8;
     _r2.i = _r2.i | _r3.i;
+    XMLVM_CHECK_NPE(10)
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.time_ = _r2.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 372)
     _r2.i = 14;
@@ -1461,6 +1547,7 @@ void java_util_zip_ZipEntry___INIT____java_util_zip_ZipEntry_LittleEndianReader_
     _r3.i = _r3.i & 255;
     _r3.i = _r3.i << 8;
     _r2.i = _r2.i | _r3.i;
+    XMLVM_CHECK_NPE(10)
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.modDate_ = _r2.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 373)
     _r2.i = 16;
@@ -1493,6 +1580,7 @@ void java_util_zip_ZipEntry___INIT____java_util_zip_ZipEntry_LittleEndianReader_
     _r4.l = (JAVA_LONG) _r4.i;
     _r4.l = _r4.l & _r8.l;
     _r2.l = _r2.l | _r4.l;
+    XMLVM_CHECK_NPE(10)
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.crc_ = _r2.l;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 376)
     _r2.i = 20;
@@ -1525,6 +1613,7 @@ void java_util_zip_ZipEntry___INIT____java_util_zip_ZipEntry_LittleEndianReader_
     _r4.l = (JAVA_LONG) _r4.i;
     _r4.l = _r4.l & _r8.l;
     _r2.l = _r2.l | _r4.l;
+    XMLVM_CHECK_NPE(10)
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.compressedSize_ = _r2.l;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 379)
     _r2.i = 24;
@@ -1557,6 +1646,7 @@ void java_util_zip_ZipEntry___INIT____java_util_zip_ZipEntry_LittleEndianReader_
     _r4.l = (JAVA_LONG) _r4.i;
     _r4.l = _r4.l & _r8.l;
     _r2.l = _r2.l | _r4.l;
+    XMLVM_CHECK_NPE(10)
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.size_ = _r2.l;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 382)
     _r2.i = 28;
@@ -1571,6 +1661,7 @@ void java_util_zip_ZipEntry___INIT____java_util_zip_ZipEntry_LittleEndianReader_
     _r3.i = _r3.i & 255;
     _r3.i = _r3.i << 8;
     _r2.i = _r2.i | _r3.i;
+    XMLVM_CHECK_NPE(10)
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.nameLen_ = _r2.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 383)
     _r2.i = 30;
@@ -1629,8 +1720,10 @@ void java_util_zip_ZipEntry___INIT____java_util_zip_ZipEntry_LittleEndianReader_
     _r6.l = (JAVA_LONG) _r1.i;
     _r6.l = _r6.l & _r8.l;
     _r4.l = _r4.l | _r6.l;
+    XMLVM_CHECK_NPE(10)
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.mLocalHeaderRelOffset_ = _r4.l;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 389)
+    XMLVM_CHECK_NPE(10)
     _r1.i = ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.nameLen_;
     if (!__TIB_byte.classInitialized) __INIT_byte();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_byte, _r1.i);
@@ -1653,8 +1746,10 @@ void java_util_zip_ZipEntry___INIT____java_util_zip_ZipEntry_LittleEndianReader_
     XMLVM_SOURCE_POSITION("ZipEntry.java", 399)
     if (!__TIB_byte.classInitialized) __INIT_byte();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_byte, _r2.i);
+    XMLVM_CHECK_NPE(10)
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.extra_ = _r2.o;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 400)
+    XMLVM_CHECK_NPE(10)
     _r2.o = ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.extra_;
     XMLVM_CHECK_NPE(10)
     java_util_zip_ZipEntry_myReadFully___java_io_InputStream_byte_1ARRAY(_r10.o, _r12.o, _r2.o);
@@ -1667,6 +1762,7 @@ void java_util_zip_ZipEntry___INIT____java_util_zip_ZipEntry_LittleEndianReader_
     _r3.o = xmlvm_create_java_string_from_pool(127);
     XMLVM_CHECK_NPE(2)
     java_lang_String___INIT____byte_1ARRAY_java_lang_String(_r2.o, _r1.o, _r3.o);
+    XMLVM_CHECK_NPE(10)
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.name_ = _r2.o;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 413)
     if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w14580aaac34b1d237->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w14580aaac34b1d237, sizeof(XMLVM_JMP_BUF)); goto label374; };
@@ -1676,6 +1772,7 @@ void java_util_zip_ZipEntry___INIT____java_util_zip_ZipEntry_LittleEndianReader_
     _r2.o = xmlvm_create_java_string_from_pool(127);
     XMLVM_CHECK_NPE(1)
     java_lang_String___INIT____byte_1ARRAY_java_lang_String(_r1.o, _r0.o, _r2.o);
+    XMLVM_CHECK_NPE(10)
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.comment_ = _r1.o;
     // End try
     XMLVM_TRY_END
@@ -1701,6 +1798,7 @@ void java_util_zip_ZipEntry___INIT____java_util_zip_ZipEntry_LittleEndianReader_
     // Begin try
     XMLVM_SOURCE_POSITION("ZipEntry.java", 416)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(10)
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.comment_ = _r0.o;
     // End try
     XMLVM_TRY_END

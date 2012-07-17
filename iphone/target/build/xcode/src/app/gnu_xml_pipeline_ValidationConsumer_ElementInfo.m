@@ -247,7 +247,9 @@ void gnu_xml_pipeline_ValidationConsumer_ElementInfo___INIT____java_lang_String(
     _r1.i = 11;
     XMLVM_CHECK_NPE(0)
     java_util_Hashtable___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r2.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.attributes_ = _r0.o;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r2.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.name_ = _r3.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -266,11 +268,13 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_ElementInfo_getRecognizer___gnu_
     _r3.o = me;
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1298)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.recognizer_;
     if (_r0.o != JAVA_NULL) goto label20;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1299)
     // "ANY"
     _r0.o = xmlvm_create_java_string_from_pool(924);
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.model_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -278,9 +282,11 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_ElementInfo_getRecognizer___gnu_
     if (_r0.i == 0) goto label23;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1300)
     _r0.o = gnu_xml_pipeline_ValidationConsumer_access$0__();
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.recognizer_ = _r0.o;
     label20:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1309)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.recognizer_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -288,6 +294,7 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_ElementInfo_getRecognizer___gnu_
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1301)
     // "EMPTY"
     _r0.o = xmlvm_create_java_string_from_pool(1597);
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.model_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -297,11 +304,13 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_ElementInfo_getRecognizer___gnu_
     _r0.o = __NEW_gnu_xml_pipeline_ValidationConsumer_EmptyRecognizer();
     XMLVM_CHECK_NPE(0)
     gnu_xml_pipeline_ValidationConsumer_EmptyRecognizer___INIT____gnu_xml_pipeline_ValidationConsumer_ElementInfo(_r0.o, _r3.o);
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.recognizer_ = _r0.o;
     goto label20;
     label41:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1303)
     _r0.i = 35;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.model_;
     _r2.i = 1;
     //java_lang_String_charAt___int[6]
@@ -312,6 +321,7 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_ElementInfo_getRecognizer___gnu_
     _r0.o = __NEW_gnu_xml_pipeline_ValidationConsumer_MixedRecognizer();
     XMLVM_CHECK_NPE(0)
     gnu_xml_pipeline_ValidationConsumer_MixedRecognizer___INIT____gnu_xml_pipeline_ValidationConsumer_ElementInfo_gnu_xml_pipeline_ValidationConsumer(_r0.o, _r3.o, _r4.o);
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.recognizer_ = _r0.o;
     goto label20;
     label60:;
@@ -319,6 +329,7 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_ElementInfo_getRecognizer___gnu_
     _r0.o = __NEW_gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer();
     XMLVM_CHECK_NPE(0)
     gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer___INIT____gnu_xml_pipeline_ValidationConsumer_ElementInfo_gnu_xml_pipeline_ValidationConsumer(_r0.o, _r3.o, _r4.o);
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.recognizer_ = _r0.o;
     goto label20;
     //XMLVM_END_WRAPPER

@@ -221,23 +221,29 @@ void my_kinderlieder_InfoViewController___INIT____org_xmlvm_iphone_UIWindow(JAVA
     _r1.o = org_xmlvm_iphone_UIView_getFrame__(_r5.o);
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UIWebView___INIT____org_xmlvm_iphone_CGRect(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(4)
     ((my_kinderlieder_InfoViewController*) _r4.o)->fields.my_kinderlieder_InfoViewController.infoView_ = _r0.o;
     XMLVM_SOURCE_POSITION("InfoViewController.java", 15)
     _r0.o = __NEW_my_kinderlieder_InfoViewController_1();
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_InfoViewController_1___INIT____my_kinderlieder_InfoViewController(_r0.o, _r4.o);
+    XMLVM_CHECK_NPE(4)
     ((my_kinderlieder_InfoViewController*) _r4.o)->fields.my_kinderlieder_InfoViewController.infoViewDelegate_ = _r0.o;
     XMLVM_SOURCE_POSITION("InfoViewController.java", 56)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((my_kinderlieder_InfoViewController*) _r4.o)->fields.my_kinderlieder_InfoViewController.infoView_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((my_kinderlieder_InfoViewController*) _r4.o)->fields.my_kinderlieder_InfoViewController.infoViewDelegate_;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UIWebView_setDelegate___org_xmlvm_iphone_UIWebViewDelegate(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("InfoViewController.java", 57)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((my_kinderlieder_InfoViewController*) _r4.o)->fields.my_kinderlieder_InfoViewController.infoView_;
     _r1.i = 1;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UIWebView_setScalesPageToFit___boolean(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("InfoViewController.java", 58)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((my_kinderlieder_InfoViewController*) _r4.o)->fields.my_kinderlieder_InfoViewController.infoView_;
     _r1.o = org_xmlvm_iphone_NSBundle_mainBundle__();
     // "info"
@@ -256,6 +262,7 @@ void my_kinderlieder_InfoViewController___INIT____org_xmlvm_iphone_UIWindow(JAVA
     XMLVM_CHECK_NPE(4)
     org_xmlvm_iphone_UIViewController_setTitle___java_lang_String(_r4.o, _r0.o);
     XMLVM_SOURCE_POSITION("InfoViewController.java", 61)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((my_kinderlieder_InfoViewController*) _r4.o)->fields.my_kinderlieder_InfoViewController.infoView_;
     XMLVM_CHECK_NPE(4)
     org_xmlvm_iphone_UIViewController_setView___org_xmlvm_iphone_UIView(_r4.o, _r0.o);

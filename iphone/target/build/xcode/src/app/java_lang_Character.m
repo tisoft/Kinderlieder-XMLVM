@@ -7711,6 +7711,7 @@ void java_lang_Character___INIT____char(JAVA_OBJECT me, JAVA_CHAR n1)
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Character.java", 1976)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_Character*) _r0.o)->fields.java_lang_Character.value_ = _r1.i;
     XMLVM_SOURCE_POSITION("Character.java", 1977)
     XMLVM_EXIT_METHOD()
@@ -7726,6 +7727,7 @@ JAVA_CHAR java_lang_Character_charValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Character.java", 1985)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_Character*) _r1.o)->fields.java_lang_Character.value_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -7743,7 +7745,9 @@ JAVA_INT java_lang_Character_compareTo___java_lang_Character(JAVA_OBJECT me, JAV
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Character.java", 2003)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_Character*) _r2.o)->fields.java_lang_Character.value_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_Character*) _r3.o)->fields.java_lang_Character.value_;
     _r0.i = _r0.i - _r1.i;
     XMLVM_EXIT_METHOD()
@@ -9028,8 +9032,10 @@ JAVA_BOOLEAN java_lang_Character_equals___java_lang_Object(JAVA_OBJECT me, JAVA_
     _r0.i = XMLVM_ISA(_r3.o, __CLASS_java_lang_Character);
     if (_r0.i == 0) goto label14;
     XMLVM_SOURCE_POSITION("Character.java", 2817)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_Character*) _r2.o)->fields.java_lang_Character.value_;
     _r3.o = _r3.o;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_Character*) _r3.o)->fields.java_lang_Character.value_;
     if (_r0.i != _r1.i) goto label14;
     _r0.i = 1;
@@ -9455,6 +9461,7 @@ JAVA_INT java_lang_Character_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Character.java", 3011)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_Character*) _r1.o)->fields.java_lang_Character.value_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -10667,6 +10674,7 @@ JAVA_OBJECT java_lang_Character_toString__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Character.java", 3598)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_Character*) _r1.o)->fields.java_lang_Character.value_;
     _r0.o = java_lang_String_valueOf___char(_r0.i);
     XMLVM_EXIT_METHOD()

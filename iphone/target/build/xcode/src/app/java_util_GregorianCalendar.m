@@ -1355,11 +1355,14 @@ void java_util_GregorianCalendar___INIT____int_int_int(JAVA_OBJECT me, JAVA_INT 
     java_util_Calendar___INIT____java_util_TimeZone_java_util_Locale(_r6.o, _r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 200)
     _r0.l = -12219292800000;
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.gregorianCutover_ = _r0.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 202)
     _r0.i = 1582;
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.changeYear_ = _r0.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 204)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r0.i = _r0.i - _r3.i;
     _r0.i = _r0.i / 400;
@@ -1367,23 +1370,30 @@ void java_util_GregorianCalendar___INIT____int_int_int(JAVA_OBJECT me, JAVA_INT 
     XMLVM_CHECK_NPE(6)
     _r1.i = java_util_GregorianCalendar_julianError__(_r6.o);
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r1.i = _r1.i - _r3.i;
     _r1.i = _r1.i / 100;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.julianSkew_ = _r0.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 224)
     if (!__TIB_int.classInitialized) __INIT_int();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_int, _r2.i);
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.cachedFields_ = _r0.o;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 226)
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.nextMidnightMillis_ = _r4.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 228)
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.lastMidnightMillis_ = _r4.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 230)
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.currentYearSkew_ = _r2.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 232)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.lastYearSkew_ = _r0.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 255)
     XMLVM_CHECK_NPE(6)
@@ -1426,11 +1436,14 @@ void java_util_GregorianCalendar___INIT____int_int_int_int_int(JAVA_OBJECT me, J
     java_util_Calendar___INIT____java_util_TimeZone_java_util_Locale(_r6.o, _r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 200)
     _r0.l = -12219292800000;
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.gregorianCutover_ = _r0.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 202)
     _r0.i = 1582;
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.changeYear_ = _r0.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 204)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r0.i = _r0.i - _r3.i;
     _r0.i = _r0.i / 400;
@@ -1438,23 +1451,30 @@ void java_util_GregorianCalendar___INIT____int_int_int_int_int(JAVA_OBJECT me, J
     XMLVM_CHECK_NPE(6)
     _r1.i = java_util_GregorianCalendar_julianError__(_r6.o);
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r1.i = _r1.i - _r3.i;
     _r1.i = _r1.i / 100;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.julianSkew_ = _r0.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 224)
     if (!__TIB_int.classInitialized) __INIT_int();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_int, _r2.i);
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.cachedFields_ = _r0.o;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 226)
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.nextMidnightMillis_ = _r4.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 228)
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.lastMidnightMillis_ = _r4.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 230)
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.currentYearSkew_ = _r2.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 232)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.lastYearSkew_ = _r0.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 275)
     XMLVM_CHECK_NPE(6)
@@ -1499,11 +1519,14 @@ void java_util_GregorianCalendar___INIT____int_int_int_int_int_int(JAVA_OBJECT m
     java_util_Calendar___INIT____java_util_TimeZone_java_util_Locale(_r6.o, _r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 200)
     _r0.l = -12219292800000;
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.gregorianCutover_ = _r0.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 202)
     _r0.i = 1582;
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.changeYear_ = _r0.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 204)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r0.i = _r0.i - _r3.i;
     _r0.i = _r0.i / 400;
@@ -1511,23 +1534,30 @@ void java_util_GregorianCalendar___INIT____int_int_int_int_int_int(JAVA_OBJECT m
     XMLVM_CHECK_NPE(6)
     _r1.i = java_util_GregorianCalendar_julianError__(_r6.o);
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r1.i = _r1.i - _r3.i;
     _r1.i = _r1.i / 100;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.julianSkew_ = _r0.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 224)
     if (!__TIB_int.classInitialized) __INIT_int();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_int, _r2.i);
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.cachedFields_ = _r0.o;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 226)
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.nextMidnightMillis_ = _r4.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 228)
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.lastMidnightMillis_ = _r4.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 230)
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.currentYearSkew_ = _r2.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 232)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.lastYearSkew_ = _r0.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 298)
     XMLVM_CHECK_NPE(6)
@@ -1623,11 +1653,14 @@ void java_util_GregorianCalendar___INIT____java_util_TimeZone_java_util_Locale(J
     java_util_Calendar___INIT____java_util_TimeZone_java_util_Locale(_r6.o, _r7.o, _r8.o);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 200)
     _r0.l = -12219292800000;
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.gregorianCutover_ = _r0.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 202)
     _r0.i = 1582;
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.changeYear_ = _r0.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 204)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r0.i = _r0.i - _r3.i;
     _r0.i = _r0.i / 400;
@@ -1635,23 +1668,30 @@ void java_util_GregorianCalendar___INIT____java_util_TimeZone_java_util_Locale(J
     XMLVM_CHECK_NPE(6)
     _r1.i = java_util_GregorianCalendar_julianError__(_r6.o);
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r1.i = _r1.i - _r3.i;
     _r1.i = _r1.i / 100;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.julianSkew_ = _r0.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 224)
     if (!__TIB_int.classInitialized) __INIT_int();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_int, _r2.i);
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.cachedFields_ = _r0.o;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 226)
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.nextMidnightMillis_ = _r4.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 228)
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.lastMidnightMillis_ = _r4.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 230)
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.currentYearSkew_ = _r2.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 232)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.lastYearSkew_ = _r0.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 339)
     _r0.l = java_lang_System_currentTimeMillis__();
@@ -1688,11 +1728,14 @@ void java_util_GregorianCalendar___INIT____boolean(JAVA_OBJECT me, JAVA_BOOLEAN 
     java_util_Calendar___INIT____java_util_TimeZone(_r7.o, _r0.o);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 200)
     _r0.l = -12219292800000;
+    XMLVM_CHECK_NPE(7)
     ((java_util_GregorianCalendar*) _r7.o)->fields.java_util_GregorianCalendar.gregorianCutover_ = _r0.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 202)
     _r0.i = 1582;
+    XMLVM_CHECK_NPE(7)
     ((java_util_GregorianCalendar*) _r7.o)->fields.java_util_GregorianCalendar.changeYear_ = _r0.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 204)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_util_GregorianCalendar*) _r7.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r0.i = _r0.i - _r4.i;
     _r0.i = _r0.i / 400;
@@ -1700,23 +1743,30 @@ void java_util_GregorianCalendar___INIT____boolean(JAVA_OBJECT me, JAVA_BOOLEAN 
     XMLVM_CHECK_NPE(7)
     _r1.i = java_util_GregorianCalendar_julianError__(_r7.o);
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_util_GregorianCalendar*) _r7.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r1.i = _r1.i - _r4.i;
     _r1.i = _r1.i / 100;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(7)
     ((java_util_GregorianCalendar*) _r7.o)->fields.java_util_GregorianCalendar.julianSkew_ = _r0.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 224)
     if (!__TIB_int.classInitialized) __INIT_int();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_int, _r3.i);
+    XMLVM_CHECK_NPE(7)
     ((java_util_GregorianCalendar*) _r7.o)->fields.java_util_GregorianCalendar.cachedFields_ = _r0.o;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 226)
+    XMLVM_CHECK_NPE(7)
     ((java_util_GregorianCalendar*) _r7.o)->fields.java_util_GregorianCalendar.nextMidnightMillis_ = _r5.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 228)
+    XMLVM_CHECK_NPE(7)
     ((java_util_GregorianCalendar*) _r7.o)->fields.java_util_GregorianCalendar.lastMidnightMillis_ = _r5.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 230)
+    XMLVM_CHECK_NPE(7)
     ((java_util_GregorianCalendar*) _r7.o)->fields.java_util_GregorianCalendar.currentYearSkew_ = _r3.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 232)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(7)
     ((java_util_GregorianCalendar*) _r7.o)->fields.java_util_GregorianCalendar.lastYearSkew_ = _r0.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 344)
     //java_util_GregorianCalendar_setFirstDayOfWeek___int[18]
@@ -1775,6 +1825,7 @@ void java_util_GregorianCalendar_add___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA
     XMLVM_THROW_CUSTOM(_r0.o)
     label21:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 368)
+    XMLVM_CHECK_NPE(9)
     ((java_util_GregorianCalendar*) _r9.o)->fields.java_util_GregorianCalendar.isCached_ = _r8.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 370)
     if (_r10.i != 0) goto label49;
@@ -1782,6 +1833,7 @@ void java_util_GregorianCalendar_add___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA
     XMLVM_CHECK_NPE(9)
     java_util_Calendar_complete__(_r9.o);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 372)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((java_util_Calendar*) _r9.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r8.i);
@@ -1815,6 +1867,7 @@ void java_util_GregorianCalendar_add___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 389)
     if (_r10.i != _r3.i) goto label236;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 390)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((java_util_Calendar*) _r9.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r3.i);
@@ -1837,6 +1890,7 @@ void java_util_GregorianCalendar_add___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA
     _r0 = _r1;
     label81:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 399)
+    XMLVM_CHECK_NPE(9)
     _r1.o = ((java_util_Calendar*) _r9.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
@@ -1845,12 +1899,14 @@ void java_util_GregorianCalendar_add___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA
     XMLVM_CHECK_NPE(9)
     java_util_Calendar_set___int_int(_r9.o, _r2.i, _r0.i);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 400)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((java_util_Calendar*) _r9.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
     _r0.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
     XMLVM_CHECK_NPE(9)
     _r0.i = java_util_GregorianCalendar_isLeapYear___int(_r9.o, _r0.i);
+    XMLVM_CHECK_NPE(9)
     _r1.o = ((java_util_Calendar*) _r9.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r3.i);
@@ -1858,6 +1914,7 @@ void java_util_GregorianCalendar_add___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA
     XMLVM_CHECK_NPE(9)
     _r0.i = java_util_GregorianCalendar_daysInMonth___boolean_int(_r9.o, _r0.i, _r1.i);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 401)
+    XMLVM_CHECK_NPE(9)
     _r1.o = ((java_util_Calendar*) _r9.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r4.i);
@@ -1906,18 +1963,22 @@ void java_util_GregorianCalendar_add___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_util_TimeZone*) _r2.o)->tib->vtable[9])(_r2.o);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 440)
+    XMLVM_CHECK_NPE(9)
     _r3.l = ((java_util_Calendar*) _r9.o)->fields.java_util_Calendar.time_;
     _r5.l = (JAVA_LONG) _r2.i;
     _r3.l = _r3.l + _r5.l;
     XMLVM_CHECK_NPE(9)
     _r3.i = java_util_GregorianCalendar_getOffset___long(_r9.o, _r3.l);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 441)
+    XMLVM_CHECK_NPE(9)
     _r4.l = ((java_util_Calendar*) _r9.o)->fields.java_util_Calendar.time_;
     _r6.l = (JAVA_LONG) _r11.i;
     _r0.l = _r0.l * _r6.l;
     _r0.l = _r0.l + _r4.l;
+    XMLVM_CHECK_NPE(9)
     ((java_util_Calendar*) _r9.o)->fields.java_util_Calendar.time_ = _r0.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 442)
+    XMLVM_CHECK_NPE(9)
     _r0.l = ((java_util_Calendar*) _r9.o)->fields.java_util_Calendar.time_;
     _r4.l = (JAVA_LONG) _r2.i;
     _r0.l = _r0.l + _r4.l;
@@ -1926,13 +1987,16 @@ void java_util_GregorianCalendar_add___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 444)
     if (_r0.i == _r3.i) goto label174;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 445)
+    XMLVM_CHECK_NPE(9)
     _r1.l = ((java_util_Calendar*) _r9.o)->fields.java_util_Calendar.time_;
     _r0.i = _r3.i - _r0.i;
     _r3.l = (JAVA_LONG) _r0.i;
     _r0.l = _r1.l + _r3.l;
+    XMLVM_CHECK_NPE(9)
     ((java_util_Calendar*) _r9.o)->fields.java_util_Calendar.time_ = _r0.l;
     label174:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 448)
+    XMLVM_CHECK_NPE(9)
     ((java_util_Calendar*) _r9.o)->fields.java_util_Calendar.areFieldsSet_ = _r8.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 449)
     XMLVM_CHECK_NPE(9)
@@ -1940,42 +2004,50 @@ void java_util_GregorianCalendar_add___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA
     goto label8;
     label181:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 412)
+    XMLVM_CHECK_NPE(9)
     _r0.l = ((java_util_Calendar*) _r9.o)->fields.java_util_Calendar.time_;
     _r2.l = (JAVA_LONG) _r11.i;
     _r0.l = _r0.l + _r2.l;
+    XMLVM_CHECK_NPE(9)
     ((java_util_Calendar*) _r9.o)->fields.java_util_Calendar.time_ = _r0.l;
     _r0 = _r6;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 413)
     goto label128;
     label189:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 415)
+    XMLVM_CHECK_NPE(9)
     _r0.l = ((java_util_Calendar*) _r9.o)->fields.java_util_Calendar.time_;
     _r2.l = (JAVA_LONG) _r11.i;
     _r4.l = 1000;
     _r2.l = _r2.l * _r4.l;
     _r0.l = _r0.l + _r2.l;
+    XMLVM_CHECK_NPE(9)
     ((java_util_Calendar*) _r9.o)->fields.java_util_Calendar.time_ = _r0.l;
     _r0 = _r6;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 416)
     goto label128;
     label200:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 418)
+    XMLVM_CHECK_NPE(9)
     _r0.l = ((java_util_Calendar*) _r9.o)->fields.java_util_Calendar.time_;
     _r2.l = (JAVA_LONG) _r11.i;
     _r4.l = 60000;
     _r2.l = _r2.l * _r4.l;
     _r0.l = _r0.l + _r2.l;
+    XMLVM_CHECK_NPE(9)
     ((java_util_Calendar*) _r9.o)->fields.java_util_Calendar.time_ = _r0.l;
     _r0 = _r6;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 419)
     goto label128;
     label212:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 422)
+    XMLVM_CHECK_NPE(9)
     _r0.l = ((java_util_Calendar*) _r9.o)->fields.java_util_Calendar.time_;
     _r2.l = (JAVA_LONG) _r11.i;
     _r4.l = 3600000;
     _r2.l = _r2.l * _r4.l;
     _r0.l = _r0.l + _r2.l;
+    XMLVM_CHECK_NPE(9)
     ((java_util_Calendar*) _r9.o)->fields.java_util_Calendar.time_ = _r0.l;
     _r0 = _r6;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 423)
@@ -2014,11 +2086,13 @@ JAVA_OBJECT java_util_GregorianCalendar_clone__(JAVA_OBJECT me)
     _r0.o = java_util_Calendar_clone__(_r2.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 460)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_GregorianCalendar*) _r2.o)->fields.java_util_GregorianCalendar.cachedFields_;
     //int_1ARRAY_clone__[0]
     XMLVM_CHECK_NPE(1)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((org_xmlvm_runtime_XMLVMArray*) _r1.o)->tib->vtable[0])(_r1.o);
     _r2.o = _r2.o;
+    XMLVM_CHECK_NPE(0)
     ((java_util_GregorianCalendar*) _r0.o)->fields.java_util_GregorianCalendar.cachedFields_ = _r2.o;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 461)
     XMLVM_EXIT_METHOD()
@@ -2093,6 +2167,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     _r5.i = java_util_GregorianCalendar_computeYearAndDay___long_long(_r0.o, _r1.l, _r3.l);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 483)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r6 = _r0;
     _r7.i = 6;
@@ -2101,6 +2176,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r6.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r5.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 484)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r6 = _r0;
     _r7.i = 1;
@@ -2108,10 +2184,12 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     XMLVM_CHECK_ARRAY_BOUNDS(_r6.o, _r7.i);
     _r6.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r6.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i];
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_GregorianCalendar*) _r0.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r7 = _r0;
     if (_r6.i != _r7.i) goto label84;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.l = ((java_util_GregorianCalendar*) _r0.o)->fields.java_util_GregorianCalendar.gregorianCutover_;
     _r6 = _r0;
     _r0 = _r23;
@@ -2122,6 +2200,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     if (_r6.i > 0) goto label84;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 485)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_GregorianCalendar*) _r0.o)->fields.java_util_GregorianCalendar.currentYearSkew_;
     _r6 = _r0;
     _r5.i = _r5.i + _r6.i;
@@ -2130,6 +2209,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     _r6.i = _r5.i / 32;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 488)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r7 = _r0;
     _r8.i = 1;
@@ -2168,6 +2248,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 492)
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 494)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r5 = _r0;
     _r6.i = 7;
@@ -2183,6 +2264,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r5.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r7.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 495)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r5 = _r0;
     _r6.i = 1;
@@ -2194,6 +2276,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     label165:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 497)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r6 = _r0;
     _r7.i = 1;
@@ -2206,6 +2289,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     label177:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 500)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r6 = _r0;
     _r7.i = 16;
@@ -2245,6 +2329,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     _r8.i = java_util_GregorianCalendar_computeYearAndDay___long_long(_r0.o, _r1.l, _r3.l);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 514)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r9 = _r0;
     _r11.i = 6;
@@ -2253,6 +2338,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r9.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r11.i] = _r8.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 515)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r9 = _r0;
     _r11.i = 1;
@@ -2260,10 +2346,12 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     XMLVM_CHECK_ARRAY_BOUNDS(_r9.o, _r11.i);
     _r9.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r9.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r11.i];
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_GregorianCalendar*) _r0.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r11 = _r0;
     if (_r9.i != _r11.i) goto label820;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.l = ((java_util_GregorianCalendar*) _r0.o)->fields.java_util_GregorianCalendar.gregorianCutover_;
     _r11 = _r0;
     _r0 = _r23;
@@ -2276,6 +2364,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     if (_r5.i > 0) goto label820;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 516)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_GregorianCalendar*) _r0.o)->fields.java_util_GregorianCalendar.currentYearSkew_;
     _r5 = _r0;
     _r5.i = _r5.i + _r8.i;
@@ -2284,6 +2373,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     _r8.i = _r5.i / 32;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 519)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r9 = _r0;
     _r11.i = 1;
@@ -2320,6 +2410,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 523)
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 525)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r11 = _r0;
     _r12.i = 7;
@@ -2341,6 +2432,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     label348:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 529)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r11 = _r0;
     _r12.i = 14;
@@ -2352,6 +2444,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     _r10.i = _r10.i / 1000;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 531)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r11 = _r0;
     _r12.i = 13;
@@ -2363,6 +2456,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     _r10.i = _r10.i / 60;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 533)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r11 = _r0;
     _r12.i = 12;
@@ -2374,6 +2468,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     _r10.i = _r10.i / 60;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 535)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r11 = _r0;
     _r12.i = 11;
@@ -2383,10 +2478,12 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r11.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r12.i] = _r10.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 536)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r10 = _r0;
     _r11.i = 9;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r12 = _r0;
     _r13.i = 11;
@@ -2402,10 +2499,12 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r10.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r11.i] = _r12.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 537)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r10 = _r0;
     _r11.i = 10;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r12 = _r0;
     _r13.i = 11;
@@ -2418,6 +2517,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r10.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r11.i] = _r12.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 539)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r10 = _r0;
     _r11.i = 1;
@@ -2427,6 +2527,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     if (_r10.i > 0) goto label723;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 540)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r10 = _r0;
     _r11.i = 0;
@@ -2436,10 +2537,12 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r10.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r11.i] = _r12.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 541)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r10 = _r0;
     _r11.i = 1;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r12 = _r0;
     _r13.i = 1;
@@ -2454,6 +2557,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     label479:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 545)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r10 = _r0;
     _r11.i = 2;
@@ -2462,6 +2566,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r10.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r11.i] = _r7.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 546)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r7 = _r0;
     _r10.i = 5;
@@ -2470,6 +2575,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r7.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r10.i] = _r5.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 547)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r7 = _r0;
     _r10.i = 8;
@@ -2482,6 +2588,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r7.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r10.i] = _r11.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 548)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r7 = _r0;
     _r10.i = 4;
@@ -2512,6 +2619,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     _r10.l = 3;
     _r7.l = _r8.l - _r10.l;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r5 = _r0;
     _r9.i = 6;
@@ -2535,6 +2643,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     _r5.i = java_util_GregorianCalendar_mod7___long(_r0.o, _r1.l);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 552)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r7 = _r0;
     _r8.i = 6;
@@ -2558,12 +2667,14 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 554)
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 555)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r6 = _r0;
     _r7.i = 3;
     _r8.i = 7;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 556)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r9 = _r0;
     _r10.i = 1;
@@ -2622,6 +2733,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     _r6.i = 1;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 496)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r7 = _r0;
     _r10.i = 1;
@@ -2629,6 +2741,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     XMLVM_CHECK_ARRAY_BOUNDS(_r7.o, _r10.i);
     _r7.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r7.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r10.i];
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r10 = _r0;
     _r15.i = 7;
@@ -2659,6 +2772,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     label723:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 543)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r10 = _r0;
     _r11.i = 0;
@@ -2680,6 +2794,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     label742:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 558)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r8 = _r0;
     _r9.i = 6;
@@ -2703,6 +2818,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     if (_r8.i < _r9.i) goto label810;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 560)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r8 = _r0;
     _r9.i = 3;
@@ -2742,6 +2858,7 @@ void java_util_GregorianCalendar_fullFieldsCalc___long_int_int(JAVA_OBJECT me, J
     label810:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 563)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r5 = _r0;
     _r6.i = 3;
@@ -2804,23 +2921,28 @@ void java_util_GregorianCalendar_cachedFieldsCheckAndGet___long_long_long_int_in
     _r11.i = n4;
     _r12.i = n5;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 570)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.fields_;
     _r1.i = 16;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 571)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_GregorianCalendar*) _r4.o)->fields.java_util_GregorianCalendar.isCached_;
     if (_r1.i == 0) goto label45;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 572)
+    XMLVM_CHECK_NPE(4)
     _r1.l = ((java_util_GregorianCalendar*) _r4.o)->fields.java_util_GregorianCalendar.nextMidnightMillis_;
     _r1.i = _r7.l > _r1.l ? 1 : (_r7.l == _r1.l ? 0 : -1);
     if (_r1.i >= 0) goto label45;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 573)
+    XMLVM_CHECK_NPE(4)
     _r1.l = ((java_util_GregorianCalendar*) _r4.o)->fields.java_util_GregorianCalendar.lastMidnightMillis_;
     _r1.i = _r7.l > _r1.l ? 1 : (_r7.l == _r1.l ? 0 : -1);
     if (_r1.i <= 0) goto label45;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 574)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_GregorianCalendar*) _r4.o)->fields.java_util_GregorianCalendar.cachedFields_;
     _r2.i = 4;
     XMLVM_CHECK_NPE(1)
@@ -2829,12 +2951,14 @@ void java_util_GregorianCalendar_cachedFieldsCheckAndGet___long_long_long_int_in
     if (_r1.i != _r12.i) goto label45;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 575)
     if (_r0.i != 0) goto label37;
+    XMLVM_CHECK_NPE(4)
     _r1.l = ((java_util_GregorianCalendar*) _r4.o)->fields.java_util_GregorianCalendar.nextMidnightMillis_;
     _r1.i = _r9.l > _r1.l ? 1 : (_r9.l == _r1.l ? 0 : -1);
     if (_r1.i >= 0) goto label45;
     label37:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 576)
     if (_r0.i == 0) goto label52;
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_util_GregorianCalendar*) _r4.o)->fields.java_util_GregorianCalendar.lastMidnightMillis_;
     _r0.i = _r9.l > _r0.l ? 1 : (_r9.l == _r0.l ? 0 : -1);
     if (_r0.i > 0) goto label52;
@@ -2844,6 +2968,7 @@ void java_util_GregorianCalendar_cachedFieldsCheckAndGet___long_long_long_int_in
     java_util_GregorianCalendar_fullFieldsCalc___long_int_int(_r4.o, _r5.l, _r11.i, _r12.i);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 578)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(4)
     ((java_util_GregorianCalendar*) _r4.o)->fields.java_util_GregorianCalendar.isCached_ = _r0.i;
     label51:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 590)
@@ -2851,8 +2976,10 @@ void java_util_GregorianCalendar_cachedFieldsCheckAndGet___long_long_long_int_in
     return;
     label52:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 580)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.fields_;
     _r1.i = 1;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_GregorianCalendar*) _r4.o)->fields.java_util_GregorianCalendar.cachedFields_;
     _r3.i = 0;
     XMLVM_CHECK_NPE(2)
@@ -2862,8 +2989,10 @@ void java_util_GregorianCalendar_cachedFieldsCheckAndGet___long_long_long_int_in
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 581)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.fields_;
     _r1.i = 2;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_GregorianCalendar*) _r4.o)->fields.java_util_GregorianCalendar.cachedFields_;
     _r3.i = 1;
     XMLVM_CHECK_NPE(2)
@@ -2873,8 +3002,10 @@ void java_util_GregorianCalendar_cachedFieldsCheckAndGet___long_long_long_int_in
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 582)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.fields_;
     _r1.i = 5;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_GregorianCalendar*) _r4.o)->fields.java_util_GregorianCalendar.cachedFields_;
     _r3.i = 2;
     XMLVM_CHECK_NPE(2)
@@ -2884,8 +3015,10 @@ void java_util_GregorianCalendar_cachedFieldsCheckAndGet___long_long_long_int_in
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 583)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.fields_;
     _r1.i = 7;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_GregorianCalendar*) _r4.o)->fields.java_util_GregorianCalendar.cachedFields_;
     _r3.i = 3;
     XMLVM_CHECK_NPE(2)
@@ -2895,8 +3028,10 @@ void java_util_GregorianCalendar_cachedFieldsCheckAndGet___long_long_long_int_in
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 584)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.fields_;
     _r1.i = 0;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_GregorianCalendar*) _r4.o)->fields.java_util_GregorianCalendar.cachedFields_;
     _r3.i = 5;
     XMLVM_CHECK_NPE(2)
@@ -2906,8 +3041,10 @@ void java_util_GregorianCalendar_cachedFieldsCheckAndGet___long_long_long_int_in
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 585)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.fields_;
     _r1.i = 3;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_GregorianCalendar*) _r4.o)->fields.java_util_GregorianCalendar.cachedFields_;
     _r3.i = 6;
     XMLVM_CHECK_NPE(2)
@@ -2917,8 +3054,10 @@ void java_util_GregorianCalendar_cachedFieldsCheckAndGet___long_long_long_int_in
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 586)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.fields_;
     _r1.i = 4;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_GregorianCalendar*) _r4.o)->fields.java_util_GregorianCalendar.cachedFields_;
     _r3.i = 7;
     XMLVM_CHECK_NPE(2)
@@ -2928,8 +3067,10 @@ void java_util_GregorianCalendar_cachedFieldsCheckAndGet___long_long_long_int_in
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 587)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.fields_;
     _r1.i = 6;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_GregorianCalendar*) _r4.o)->fields.java_util_GregorianCalendar.cachedFields_;
     _r3.i = 8;
     XMLVM_CHECK_NPE(2)
@@ -2939,8 +3080,10 @@ void java_util_GregorianCalendar_cachedFieldsCheckAndGet___long_long_long_int_in
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 588)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.fields_;
     _r1.i = 8;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_GregorianCalendar*) _r4.o)->fields.java_util_GregorianCalendar.cachedFields_;
     _r3.i = 9;
     XMLVM_CHECK_NPE(2)
@@ -2985,6 +3128,7 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r8.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_util_TimeZone*) _r0.o)->tib->vtable[9])(_r0.o);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 596)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.isSet_;
     _r1.i = 15;
     XMLVM_CHECK_NPE(0)
@@ -2992,6 +3136,7 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     _r0.i = ((JAVA_ARRAY_BOOLEAN*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     if (_r0.i != 0) goto label31;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 597)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     _r1.i = 15;
     XMLVM_CHECK_NPE(0)
@@ -2999,11 +3144,13 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r8.i;
     label31:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 600)
+    XMLVM_CHECK_NPE(14)
     _r0.l = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.time_;
     _r2.l = 86400000;
     _r0.l = _r0.l % _r2.l;
     _r7.i = (JAVA_INT) _r0.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 602)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     _r1.i = 16;
     XMLVM_CHECK_NPE(0)
@@ -3012,10 +3159,12 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 604)
     _r0.i = _r8.i + _r1.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 605)
+    XMLVM_CHECK_NPE(14)
     _r2.l = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.time_;
     _r4.l = (JAVA_LONG) _r0.i;
     _r2.l = _r2.l + _r4.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 607)
+    XMLVM_CHECK_NPE(14)
     _r4.l = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.time_;
     _r4.i = _r4.l > _r9.l ? 1 : (_r4.l == _r9.l ? 0 : -1);
     if (_r4.i <= 0) goto label408;
@@ -3027,6 +3176,7 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     _r3 = _r2;
     label68:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 613)
+    XMLVM_CHECK_NPE(14)
     _r0.i = ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.isCached_;
     if (_r0.i == 0) goto label451;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 614)
@@ -3043,6 +3193,7 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     _r0.i = _r0.i + _r6.i;
     label81:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 628)
+    XMLVM_CHECK_NPE(14)
     _r2.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     _r5.i = 14;
     _r6.i = _r0.i % 1000;
@@ -3052,6 +3203,7 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 629)
     _r0.i = _r0.i / 1000;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 630)
+    XMLVM_CHECK_NPE(14)
     _r2.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     _r5.i = 13;
     _r6.i = _r0.i % 60;
@@ -3061,6 +3213,7 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 631)
     _r0.i = _r0.i / 60;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 632)
+    XMLVM_CHECK_NPE(14)
     _r2.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     _r5.i = 12;
     _r6.i = _r0.i % 60;
@@ -3070,6 +3223,7 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 633)
     _r0.i = _r0.i / 60;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 634)
+    XMLVM_CHECK_NPE(14)
     _r2.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     _r5.i = _r0.i % 24;
     XMLVM_CHECK_NPE(2)
@@ -3078,8 +3232,10 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 635)
     _r0.i = _r0.i / 24;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 636)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     _r2.i = 9;
+    XMLVM_CHECK_NPE(14)
     _r5.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r11.i);
@@ -3091,8 +3247,10 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i] = _r5.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 637)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     _r2.i = 10;
+    XMLVM_CHECK_NPE(14)
     _r5.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r11.i);
@@ -3133,6 +3291,7 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     _r5 = _r0;
     label184:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 652)
+    XMLVM_CHECK_NPE(14)
     _r1.l = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.time_;
     _r0 = _r14;
     XMLVM_CHECK_NPE(0)
@@ -3144,6 +3303,7 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     _r1.i = 17;
     if (_r0.i < _r1.i) goto label458;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 663)
+    XMLVM_CHECK_NPE(14)
     _r0.i = ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.isCached_;
     if (_r0.i != 0) goto label407;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 664)
@@ -3168,7 +3328,9 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     if (_r0.i == 0) goto label407;
     label232:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 669)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.cachedFields_;
+    XMLVM_CHECK_NPE(14)
     _r1.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r13.i);
@@ -3177,7 +3339,9 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r12.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r12.i] = _r1.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 670)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.cachedFields_;
+    XMLVM_CHECK_NPE(14)
     _r1.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     _r2.i = 2;
     XMLVM_CHECK_NPE(1)
@@ -3187,8 +3351,10 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r13.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r13.i] = _r1.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 671)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.cachedFields_;
     _r1.i = 2;
+    XMLVM_CHECK_NPE(14)
     _r2.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     _r5.i = 5;
     XMLVM_CHECK_NPE(2)
@@ -3198,8 +3364,10 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 672)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.cachedFields_;
     _r1.i = 3;
+    XMLVM_CHECK_NPE(14)
     _r2.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     _r5.i = 7;
     XMLVM_CHECK_NPE(2)
@@ -3209,14 +3377,17 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 673)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.cachedFields_;
     _r1.i = 4;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r8.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 674)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.cachedFields_;
     _r1.i = 5;
+    XMLVM_CHECK_NPE(14)
     _r2.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r12.i);
@@ -3225,8 +3396,10 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 675)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.cachedFields_;
     _r1.i = 6;
+    XMLVM_CHECK_NPE(14)
     _r2.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     _r5.i = 3;
     XMLVM_CHECK_NPE(2)
@@ -3236,8 +3409,10 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 676)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.cachedFields_;
     _r1.i = 7;
+    XMLVM_CHECK_NPE(14)
     _r2.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     _r5.i = 4;
     XMLVM_CHECK_NPE(2)
@@ -3247,8 +3422,10 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 677)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.cachedFields_;
     _r1.i = 8;
+    XMLVM_CHECK_NPE(14)
     _r2.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     _r5.i = 6;
     XMLVM_CHECK_NPE(2)
@@ -3258,8 +3435,10 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 678)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.cachedFields_;
     _r1.i = 9;
+    XMLVM_CHECK_NPE(14)
     _r2.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     _r5.i = 8;
     XMLVM_CHECK_NPE(2)
@@ -3270,6 +3449,7 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 680)
     _r0.i = 23;
+    XMLVM_CHECK_NPE(14)
     _r1.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r11.i);
@@ -3281,6 +3461,7 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     _r0.i = _r0.i + _r12.i;
     _r1.i = 59;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 681)
+    XMLVM_CHECK_NPE(14)
     _r2.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     _r5.i = 12;
     XMLVM_CHECK_NPE(2)
@@ -3292,6 +3473,7 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     _r0.i = _r0.i + _r1.i;
     _r1.i = 59;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 682)
+    XMLVM_CHECK_NPE(14)
     _r2.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     _r5.i = 13;
     XMLVM_CHECK_NPE(2)
@@ -3303,8 +3485,10 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     _r0.l = (JAVA_LONG) _r0.i;
     _r0.l = _r0.l + _r3.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 683)
+    XMLVM_CHECK_NPE(14)
     ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.nextMidnightMillis_ = _r0.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 685)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r11.i);
@@ -3313,6 +3497,7 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     _r0.i = _r0.i * 60;
     _r0.i = _r0.i * 1000;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 686)
+    XMLVM_CHECK_NPE(14)
     _r1.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     _r2.i = 12;
     XMLVM_CHECK_NPE(1)
@@ -3322,6 +3507,7 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     _r1.i = _r1.i * 1000;
     _r0.i = _r0.i + _r1.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 687)
+    XMLVM_CHECK_NPE(14)
     _r1.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.fields_;
     _r2.i = 13;
     XMLVM_CHECK_NPE(1)
@@ -3332,8 +3518,10 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     _r0.l = (JAVA_LONG) _r0.i;
     _r0.l = _r3.l - _r0.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 688)
+    XMLVM_CHECK_NPE(14)
     ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.lastMidnightMillis_ = _r0.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 690)
+    XMLVM_CHECK_NPE(14)
     ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.isCached_ = _r13.i;
     label407:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 692)
@@ -3341,6 +3529,7 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     return;
     label408:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 609)
+    XMLVM_CHECK_NPE(14)
     _r4.l = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.time_;
     _r4.i = _r4.l > _r9.l ? 1 : (_r4.l == _r9.l ? 0 : -1);
     if (_r4.i >= 0) goto label472;
@@ -3376,12 +3565,14 @@ void java_util_GregorianCalendar_computeFields__(JAVA_OBJECT me)
     goto label184;
     label451:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 655)
+    XMLVM_CHECK_NPE(14)
     _r0.l = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.time_;
     XMLVM_CHECK_NPE(14)
     java_util_GregorianCalendar_fullFieldsCalc___long_int_int(_r14.o, _r0.l, _r7.i, _r8.i);
     goto label190;
     label458:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 659)
+    XMLVM_CHECK_NPE(14)
     _r1.o = ((java_util_Calendar*) _r14.o)->fields.java_util_Calendar.isSet_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -3431,6 +3622,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r3.i != 0) goto label576;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 697)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r3 = _r0;
     _r4.i = 11;
@@ -3440,6 +3632,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r3.i == 0) goto label47;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 698)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 11;
@@ -3448,6 +3641,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r3.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     if (_r3.i < 0) goto label41;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 11;
@@ -3465,6 +3659,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label47:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 701)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r3 = _r0;
     _r4.i = 10;
@@ -3473,6 +3668,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r3.i = ((JAVA_ARRAY_BOOLEAN*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     if (_r3.i == 0) goto label88;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 10;
@@ -3481,6 +3677,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r3.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     if (_r3.i < 0) goto label82;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 10;
@@ -3498,6 +3695,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label88:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 704)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r3 = _r0;
     _r4.i = 12;
@@ -3506,6 +3704,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r3.i = ((JAVA_ARRAY_BOOLEAN*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     if (_r3.i == 0) goto label129;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 12;
@@ -3514,6 +3713,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r3.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     if (_r3.i < 0) goto label123;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 12;
@@ -3531,6 +3731,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label129:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 707)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r3 = _r0;
     _r4.i = 13;
@@ -3539,6 +3740,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r3.i = ((JAVA_ARRAY_BOOLEAN*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     if (_r3.i == 0) goto label170;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 13;
@@ -3547,6 +3749,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r3.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     if (_r3.i < 0) goto label164;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 13;
@@ -3564,6 +3767,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label170:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 710)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r3 = _r0;
     _r4.i = 14;
@@ -3573,6 +3777,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r3.i == 0) goto label211;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 711)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 14;
@@ -3581,6 +3786,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r3.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     if (_r3.i < 0) goto label205;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 14;
@@ -3598,6 +3804,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label211:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 714)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r3 = _r0;
     _r4.i = 3;
@@ -3607,6 +3814,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r3.i == 0) goto label250;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 715)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 3;
@@ -3616,6 +3824,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r4.i = 1;
     if (_r3.i < _r4.i) goto label244;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 3;
@@ -3633,6 +3842,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label250:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 718)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r3 = _r0;
     _r4.i = 7;
@@ -3642,6 +3852,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r3.i == 0) goto label288;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 719)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 7;
@@ -3651,6 +3862,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r4.i = 1;
     if (_r3.i < _r4.i) goto label282;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 7;
@@ -3668,6 +3880,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label288:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 722)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r3 = _r0;
     _r4.i = 8;
@@ -3677,6 +3890,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r3.i == 0) goto label329;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 723)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 8;
@@ -3686,6 +3900,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r4.i = 1;
     if (_r3.i < _r4.i) goto label323;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 8;
@@ -3703,6 +3918,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label329:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 726)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r3 = _r0;
     _r4.i = 4;
@@ -3712,6 +3928,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r3.i == 0) goto label367;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 727)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 4;
@@ -3721,6 +3938,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r4.i = 1;
     if (_r3.i < _r4.i) goto label361;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 4;
@@ -3738,6 +3956,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label367:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 730)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r3 = _r0;
     _r4.i = 9;
@@ -3746,6 +3965,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r3.i = ((JAVA_ARRAY_BOOLEAN*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     if (_r3.i == 0) goto label407;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 9;
@@ -3754,6 +3974,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r3.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     if (_r3.i == 0) goto label407;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 9;
@@ -3770,6 +3991,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label407:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 733)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r3 = _r0;
     _r4.i = 10;
@@ -3778,6 +4000,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r3.i = ((JAVA_ARRAY_BOOLEAN*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     if (_r3.i == 0) goto label448;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 10;
@@ -3786,6 +4009,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r3.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     if (_r3.i < 0) goto label442;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 10;
@@ -3803,6 +4027,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label448:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 736)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r3 = _r0;
     _r4.i = 1;
@@ -3812,6 +4037,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r3.i == 0) goto label538;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 737)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r3 = _r0;
     _r4.i = 0;
@@ -3820,6 +4046,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r3.i = ((JAVA_ARRAY_BOOLEAN*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     if (_r3.i == 0) goto label508;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 0;
@@ -3829,6 +4056,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r3.i != 0) goto label508;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 738)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 1;
@@ -3838,6 +4066,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r4.i = 1;
     if (_r3.i < _r4.i) goto label502;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 1;
@@ -3855,6 +4084,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label508:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 740)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 1;
@@ -3864,6 +4094,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r4.i = 1;
     if (_r3.i < _r4.i) goto label532;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 1;
@@ -3881,6 +4112,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label538:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 744)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r3 = _r0;
     _r4.i = 2;
@@ -3889,6 +4121,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r3.i = ((JAVA_ARRAY_BOOLEAN*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     if (_r3.i == 0) goto label576;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 2;
@@ -3897,6 +4130,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r3.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     if (_r3.i < 0) goto label570;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 2;
@@ -3916,6 +4150,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r3.l = 0;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 751)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r5 = _r0;
     _r6.i = 11;
@@ -3924,12 +4159,14 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r5.i = ((JAVA_ARRAY_BOOLEAN*) (((org_xmlvm_runtime_XMLVMArray*) _r5.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i];
     if (_r5.i == 0) goto label740;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.lastTimeFieldSet_;
     _r5 = _r0;
     _r6.i = 10;
     if (_r5.i == _r6.i) goto label740;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 752)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 11;
@@ -3943,6 +4180,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r3.l = _r3.l * _r5.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 758)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r5 = _r0;
     _r6.i = 12;
@@ -3952,6 +4190,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r5.i == 0) goto label638;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 759)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r5 = _r0;
     _r6.i = 12;
@@ -3965,6 +4204,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label638:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 761)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r5 = _r0;
     _r6.i = 13;
@@ -3974,6 +4214,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r5.i == 0) goto label663;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 762)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r5 = _r0;
     _r6.i = 13;
@@ -3987,6 +4228,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label663:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 764)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r5 = _r0;
     _r6.i = 14;
@@ -3996,6 +4238,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r5.i == 0) goto label685;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 765)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r5 = _r0;
     _r6.i = 14;
@@ -4007,6 +4250,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label685:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 769)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r5 = _r0;
     _r6.i = 1;
@@ -4015,6 +4259,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r5.i = ((JAVA_ARRAY_BOOLEAN*) (((org_xmlvm_runtime_XMLVMArray*) _r5.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i];
     if (_r5.i == 0) goto label775;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r5 = _r0;
     _r6.i = 1;
@@ -4024,6 +4269,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label703:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 770)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r6 = _r0;
     _r7.i = 0;
@@ -4033,6 +4279,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r6.i == 0) goto label791;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 772)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r6 = _r0;
     _r7.i = 0;
@@ -4041,6 +4288,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r6.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r6.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i];
     if (_r6.i == 0) goto label778;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r6 = _r0;
     _r7.i = 0;
@@ -4057,6 +4305,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label740:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 753)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r5 = _r0;
     _r6.i = 10;
@@ -4066,6 +4315,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r5.i == 0) goto label608;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 754)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r3 = _r0;
     _r4.i = 9;
@@ -4074,6 +4324,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r3.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     _r3.i = _r3.i * 12;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r4 = _r0;
     _r5.i = 10;
@@ -4089,6 +4340,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label778:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 775)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r6 = _r0;
     _r7.i = 0;
@@ -4102,6 +4354,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label791:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 780)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r6 = _r0;
     _r7.i = 4;
@@ -4111,6 +4364,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r6.i != 0) goto label1044;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 781)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r6 = _r0;
     _r7.i = 8;
@@ -4122,6 +4376,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label813:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 782)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r7 = _r0;
     _r8.i = 5;
@@ -4130,6 +4385,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r7.i = ((JAVA_ARRAY_BOOLEAN*) (((org_xmlvm_runtime_XMLVMArray*) _r7.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i];
     if (_r7.i != 0) goto label835;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r7 = _r0;
     _r8.i = 2;
@@ -4141,6 +4397,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label835:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 783)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.lastDateFieldSet_;
     _r7 = _r0;
     _r8.i = 6;
@@ -4151,11 +4408,13 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r7.i == 0) goto label903;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 785)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.lastDateFieldSet_;
     _r8 = _r0;
     _r9.i = 7;
     if (_r8.i == _r9.i) goto label862;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.lastDateFieldSet_;
     _r8 = _r0;
     _r9.i = 3;
@@ -4163,6 +4422,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label862:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 786)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r8 = _r0;
     _r9.i = 3;
@@ -4171,6 +4431,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r8.i = ((JAVA_ARRAY_BOOLEAN*) (((org_xmlvm_runtime_XMLVMArray*) _r8.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i];
     if (_r8.i == 0) goto label1053;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r8 = _r0;
     _r9.i = 7;
@@ -4180,6 +4441,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r8.i == 0) goto label1053;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 787)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.lastDateFieldSet_;
     _r7 = _r0;
     _r8.i = 3;
@@ -4187,6 +4449,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r6.i == 0) goto label1050;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 788)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r7 = _r0;
     _r8.i = 7;
@@ -4200,6 +4463,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r7.i == 0) goto label1494;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 795)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r7 = _r0;
     _r8.i = 2;
@@ -4240,6 +4504,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r9.l = _r9.l + _r11.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 804)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r11 = _r0;
     _r12.i = 5;
@@ -4250,17 +4515,20 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r11.i == 0) goto label1751;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 806)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.lastDateFieldSet_;
     _r12 = _r0;
     _r13.i = 7;
     if (_r12.i == _r13.i) goto label988;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 807)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.lastDateFieldSet_;
     _r12 = _r0;
     _r13.i = 4;
     if (_r12.i == _r13.i) goto label988;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.lastDateFieldSet_;
     _r12 = _r0;
     _r13.i = 8;
@@ -4268,6 +4536,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label988:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 808)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r11 = _r0;
     _r12.i = 7;
@@ -4286,6 +4555,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r6.i != 0) goto label1091;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 812)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r6 = _r0;
     _r11.i = 5;
@@ -4295,6 +4565,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r11.i = 1;
     if (_r6.i < _r11.i) goto label1038;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r6 = _r0;
     _r11.i = 5;
@@ -4326,6 +4597,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label1053:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 789)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r8 = _r0;
     _r9.i = 6;
@@ -4335,6 +4607,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r8.i == 0) goto label903;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 790)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r7 = _r0;
     _r8.i = 5;
@@ -4343,6 +4616,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r7.i = ((JAVA_ARRAY_BOOLEAN*) (((org_xmlvm_runtime_XMLVMArray*) _r7.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i];
     if (_r7.i == 0) goto label1086;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r7 = _r0;
     _r8.i = 2;
@@ -4361,6 +4635,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label1091:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 816)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r5 = _r0;
     _r6.i = 5;
@@ -4380,6 +4655,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r8.i = 0;
     _r0 = _r8;
     _r1 = _r19;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Calendar*) _r1.o)->fields.java_util_Calendar.lastDateFieldSet_ = _r0.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 877)
     _r8.l = 86400000;
@@ -4387,11 +4663,13 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r3.l = _r3.l + _r6.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 879)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_GregorianCalendar*) _r0.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r6 = _r0;
     if (_r5.i != _r6.i) goto label1158;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 880)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.l = ((java_util_GregorianCalendar*) _r0.o)->fields.java_util_GregorianCalendar.gregorianCutover_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(19)
@@ -4435,6 +4713,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 895)
     _r0 = _r3;
     _r2 = _r19;
+    XMLVM_CHECK_NPE(2)
     ((java_util_Calendar*) _r2.o)->fields.java_util_Calendar.time_ = _r0.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 896)
     _r3.i = _r5.l > _r3.l ? 1 : (_r5.l == _r3.l ? 0 : -1);
@@ -4447,6 +4726,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r3.i = 1;
     _r0 = _r3;
     _r1 = _r19;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Calendar*) _r1.o)->fields.java_util_Calendar.areFieldsSet_ = _r0.i;
     label1205:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 900)
@@ -4455,6 +4735,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label1206:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 819)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r6 = _r0;
     _r11.i = 7;
@@ -4464,6 +4745,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r6.i == 0) goto label1305;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 820)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r6 = _r0;
     _r11.i = 7;
@@ -4475,6 +4757,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label1226:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 824)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r11 = _r0;
     _r12.i = 4;
@@ -4484,6 +4767,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r11.i == 0) goto label1312;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 825)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.lastDateFieldSet_;
     _r11 = _r0;
     _r12.i = 8;
@@ -4503,6 +4787,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r5.i = java_util_GregorianCalendar_mod7___long(_r0.o, _r1.l);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 827)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r8 = _r0;
     _r11.i = 4;
@@ -4541,6 +4826,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label1312:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 829)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r11 = _r0;
     _r12.i = 8;
@@ -4550,6 +4836,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r11.i == 0) goto label1429;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 830)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r11 = _r0;
     _r12.i = 8;
@@ -4568,6 +4855,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r5.i = java_util_GregorianCalendar_mod7___long(_r0.o, _r1.l);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 832)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r6 = _r0;
     _r8.i = 8;
@@ -4612,6 +4900,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r5.i = _r5.i + _r11.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 837)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r6 = _r0;
     _r8.i = 8;
@@ -4630,6 +4919,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label1429:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 839)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r5 = _r0;
     _r8.i = 7;
@@ -4676,6 +4966,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label1494:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 845)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r6 = _r0;
     _r7.i = 3;
@@ -4685,6 +4976,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r6.i == 0) goto label1625;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 846)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.lastDateFieldSet_;
     _r6 = _r0;
     _r7.i = 6;
@@ -4694,6 +4986,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 847)
     if (_r6.i == 0) goto label1533;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r7 = _r0;
     _r8.i = 6;
@@ -4703,6 +4996,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r7.i == 0) goto label1533;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 848)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r6 = _r0;
     _r7.i = 7;
@@ -4719,6 +5013,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r6.i == 0) goto label1634;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 853)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r6 = _r0;
     _r9.i = 7;
@@ -4728,6 +5023,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r6.i == 0) goto label1627;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 854)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r6 = _r0;
     _r9.i = 7;
@@ -4752,6 +5048,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r9.i = java_util_GregorianCalendar_mod7___long(_r0.o, _r1.l);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 859)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r10 = _r0;
     _r11.i = 3;
@@ -4798,6 +5095,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label1634:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 864)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r6 = _r0;
     _r9.i = 6;
@@ -4811,6 +5109,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r6.i != 0) goto label1691;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 866)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r6 = _r0;
     _r9.i = 6;
@@ -4820,6 +5119,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     _r9.i = 1;
     if (_r6.i < _r9.i) goto label1683;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r6 = _r0;
     _r9.i = 6;
@@ -4848,6 +5148,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label1691:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 870)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r6 = _r0;
     _r9.i = 6;
@@ -4862,6 +5163,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     label1706:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 871)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_;
     _r6 = _r0;
     _r9.i = 7;
@@ -4871,6 +5173,7 @@ void java_util_GregorianCalendar_computeTime__(JAVA_OBJECT me)
     if (_r6.i == 0) goto label1744;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 872)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_;
     _r6 = _r0;
     _r9.i = 7;
@@ -4930,10 +5233,12 @@ JAVA_INT java_util_GregorianCalendar_computeYearAndDay___long_long(JAVA_OBJECT m
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 903)
     _r0.i = 1970;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 905)
+    XMLVM_CHECK_NPE(7)
     _r1.l = ((java_util_GregorianCalendar*) _r7.o)->fields.java_util_GregorianCalendar.gregorianCutover_;
     _r1.i = _r10.l > _r1.l ? 1 : (_r10.l == _r1.l ? 0 : -1);
     if (_r1.i >= 0) goto label58;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 906)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_util_GregorianCalendar*) _r7.o)->fields.java_util_GregorianCalendar.julianSkew_;
     _r1.l = (JAVA_LONG) _r1.i;
     _r1.l = _r8.l - _r1.l;
@@ -4959,6 +5264,7 @@ JAVA_INT java_util_GregorianCalendar_computeYearAndDay___long_long(JAVA_OBJECT m
     _r0.l = _r0.l + _r3.l;
     label37:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 918)
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     _r4.i = 1;
     XMLVM_CHECK_NPE(3)
@@ -5027,6 +5333,7 @@ JAVA_LONG java_util_GregorianCalendar_daysFromBaseYear___int(JAVA_OBJECT me, JAV
     _r4.l = _r4.l / _r6.l;
     _r2.l = _r2.l + _r4.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 927)
+    XMLVM_CHECK_NPE(14)
     _r4.i = ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r4.l = (JAVA_LONG) _r4.i;
     _r4.i = _r0.l > _r4.l ? 1 : (_r0.l == _r4.l ? 0 : -1);
@@ -5046,17 +5353,20 @@ JAVA_LONG java_util_GregorianCalendar_daysFromBaseYear___int(JAVA_OBJECT me, JAV
     return _r0.l;
     label45:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 930)
+    XMLVM_CHECK_NPE(14)
     _r4.i = ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r4.l = (JAVA_LONG) _r4.i;
     _r4.i = _r0.l > _r4.l ? 1 : (_r0.l == _r4.l ? 0 : -1);
     if (_r4.i != 0) goto label57;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 931)
+    XMLVM_CHECK_NPE(14)
     _r0.i = ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.currentYearSkew_;
     _r0.l = (JAVA_LONG) _r0.i;
     _r0.l = _r0.l + _r2.l;
     goto label44;
     label57:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 932)
+    XMLVM_CHECK_NPE(14)
     _r4.i = ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r5.i = 1;
     _r4.i = _r4.i - _r5.i;
@@ -5064,18 +5374,21 @@ JAVA_LONG java_util_GregorianCalendar_daysFromBaseYear___int(JAVA_OBJECT me, JAV
     _r0.i = _r0.l > _r4.l ? 1 : (_r0.l == _r4.l ? 0 : -1);
     if (_r0.i != 0) goto label71;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 933)
+    XMLVM_CHECK_NPE(14)
     _r0.i = ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.lastYearSkew_;
     _r0.l = (JAVA_LONG) _r0.i;
     _r0.l = _r0.l + _r2.l;
     goto label44;
     label71:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 935)
+    XMLVM_CHECK_NPE(14)
     _r0.i = ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.julianSkew_;
     _r0.l = (JAVA_LONG) _r0.i;
     _r0.l = _r0.l + _r2.l;
     goto label44;
     label76:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 939)
+    XMLVM_CHECK_NPE(14)
     _r2.i = ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r2.l = (JAVA_LONG) _r2.i;
     _r2.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
@@ -5087,6 +5400,7 @@ JAVA_LONG java_util_GregorianCalendar_daysFromBaseYear___int(JAVA_OBJECT me, JAV
     _r0.l = _r0.l - _r4.l;
     _r0.l = _r0.l / _r6.l;
     _r0.l = _r0.l + _r2.l;
+    XMLVM_CHECK_NPE(14)
     _r2.i = ((java_util_GregorianCalendar*) _r14.o)->fields.java_util_GregorianCalendar.julianSkew_;
     _r2.l = (JAVA_LONG) _r2.i;
     _r0.l = _r0.l + _r2.l;
@@ -5121,6 +5435,7 @@ JAVA_INT java_util_GregorianCalendar_daysInMonth__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 947)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Calendar*) _r3.o)->fields.java_util_Calendar.fields_;
     _r1.i = 1;
     XMLVM_CHECK_NPE(0)
@@ -5128,6 +5443,7 @@ JAVA_INT java_util_GregorianCalendar_daysInMonth__(JAVA_OBJECT me)
     _r0.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     XMLVM_CHECK_NPE(3)
     _r0.i = java_util_GregorianCalendar_isLeapYear___int(_r3.o, _r0.i);
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Calendar*) _r3.o)->fields.java_util_Calendar.fields_;
     _r2.i = 2;
     XMLVM_CHECK_NPE(1)
@@ -5192,18 +5508,22 @@ JAVA_INT java_util_GregorianCalendar_daysInYear___int(JAVA_OBJECT me, JAVA_INT n
     _r0.i = 366;
     label8:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 960)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_GregorianCalendar*) _r3.o)->fields.java_util_GregorianCalendar.changeYear_;
     if (_r4.i != _r1.i) goto label15;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 961)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_GregorianCalendar*) _r3.o)->fields.java_util_GregorianCalendar.currentYearSkew_;
     _r0.i = _r0.i - _r1.i;
     label15:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 963)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_GregorianCalendar*) _r3.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r2.i = 1;
     _r1.i = _r1.i - _r2.i;
     if (_r4.i != _r1.i) goto label24;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 964)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_GregorianCalendar*) _r3.o)->fields.java_util_GregorianCalendar.lastYearSkew_;
     _r0.i = _r0.i - _r1.i;
     label24:;
@@ -5267,8 +5587,10 @@ JAVA_BOOLEAN java_util_GregorianCalendar_equals___java_lang_Object(JAVA_OBJECT m
     _r0.i = java_util_Calendar_equals___java_lang_Object(_r4.o, _r5.o);
     if (_r0.i == 0) goto label18;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 994)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_util_GregorianCalendar*) _r4.o)->fields.java_util_GregorianCalendar.gregorianCutover_;
     _r5.o = _r5.o;
+    XMLVM_CHECK_NPE(5)
     _r2.l = ((java_util_GregorianCalendar*) _r5.o)->fields.java_util_GregorianCalendar.gregorianCutover_;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r0.i != 0) goto label18;
@@ -5327,6 +5649,7 @@ JAVA_INT java_util_GregorianCalendar_getActualMaximum___int(JAVA_OBJECT me, JAVA
     XMLVM_CHECK_NPE(8)
     java_util_Calendar_complete__(_r8.o);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1020)
+    XMLVM_CHECK_NPE(8)
     _r1.l = ((java_util_Calendar*) _r8.o)->fields.java_util_Calendar.time_;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1022)
     switch (_r9.i) {
@@ -5341,10 +5664,12 @@ JAVA_INT java_util_GregorianCalendar_getActualMaximum___int(JAVA_OBJECT me, JAVA
     _r0 = _r4;
     label27:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1063)
+    XMLVM_CHECK_NPE(8)
     ((java_util_Calendar*) _r8.o)->fields.java_util_Calendar.time_ = _r1.l;
     goto label14;
     label30:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1015)
+    XMLVM_CHECK_NPE(8)
     ((java_util_GregorianCalendar*) _r8.o)->fields.java_util_GregorianCalendar.isCached_ = _r4.i;
     goto label18;
     label33:;
@@ -5371,6 +5696,7 @@ JAVA_INT java_util_GregorianCalendar_getActualMaximum___int(JAVA_OBJECT me, JAVA
     _r0.i = java_util_Calendar_get___int(_r8.o, _r7.i);
     label59:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1031)
+    XMLVM_CHECK_NPE(8)
     ((java_util_Calendar*) _r8.o)->fields.java_util_Calendar.areFieldsSet_ = _r4.i;
     goto label27;
     label62:;
@@ -5384,6 +5710,7 @@ JAVA_INT java_util_GregorianCalendar_getActualMaximum___int(JAVA_OBJECT me, JAVA
     XMLVM_CHECK_NPE(8)
     _r0.i = java_util_Calendar_get___int(_r8.o, _r0.i);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1036)
+    XMLVM_CHECK_NPE(8)
     ((java_util_Calendar*) _r8.o)->fields.java_util_Calendar.areFieldsSet_ = _r4.i;
     goto label27;
     label77:;
@@ -5393,6 +5720,7 @@ JAVA_INT java_util_GregorianCalendar_getActualMaximum___int(JAVA_OBJECT me, JAVA
     goto label14;
     label82:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1041)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((java_util_Calendar*) _r8.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r5.i);
@@ -5515,6 +5843,7 @@ JAVA_OBJECT java_util_GregorianCalendar_getGregorianChange__(JAVA_OBJECT me)
     _r3.o = me;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1101)
     _r0.o = __NEW_java_util_Date();
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_util_GregorianCalendar*) _r3.o)->fields.java_util_GregorianCalendar.gregorianCutover_;
     XMLVM_CHECK_NPE(0)
     java_util_Date___INIT____long(_r0.o, _r1.l);
@@ -5536,6 +5865,7 @@ JAVA_INT java_util_GregorianCalendar_getLeastMaximum___int(JAVA_OBJECT me, JAVA_
     _r4.o = me;
     _r5.i = n1;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1116)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_util_GregorianCalendar*) _r4.o)->fields.java_util_GregorianCalendar.gregorianCutover_;
     _r2.l = -12219292800000;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
@@ -5544,8 +5874,10 @@ JAVA_INT java_util_GregorianCalendar_getLeastMaximum___int(JAVA_OBJECT me, JAVA_
     _r0.i = 3;
     if (_r5.i != _r0.i) goto label30;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1118)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.time_;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1119)
+    XMLVM_CHECK_NPE(4)
     _r2.l = ((java_util_GregorianCalendar*) _r4.o)->fields.java_util_GregorianCalendar.gregorianCutover_;
     XMLVM_CHECK_NPE(4)
     java_util_Calendar_setTimeInMillis___long(_r4.o, _r2.l);
@@ -5669,10 +6001,12 @@ JAVA_INT java_util_GregorianCalendar_getOffset___long(JAVA_OBJECT me, JAVA_LONG 
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1165)
     _r1.i = 1970;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1167)
+    XMLVM_CHECK_NPE(13)
     _r2.l = ((java_util_GregorianCalendar*) _r13.o)->fields.java_util_GregorianCalendar.gregorianCutover_;
     _r2.i = _r14.l > _r2.l ? 1 : (_r14.l == _r2.l ? 0 : -1);
     if (_r2.i >= 0) goto label170;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1168)
+    XMLVM_CHECK_NPE(13)
     _r2.i = ((java_util_GregorianCalendar*) _r13.o)->fields.java_util_GregorianCalendar.julianSkew_;
     _r2.l = (JAVA_LONG) _r2.i;
     _r2.l = _r7.l - _r2.l;
@@ -5702,8 +6036,10 @@ JAVA_INT java_util_GregorianCalendar_getOffset___long(JAVA_OBJECT me, JAVA_LONG 
     _r4.l = (JAVA_LONG) _r4.i;
     _r1.l = _r1.l + _r4.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1179)
+    XMLVM_CHECK_NPE(13)
     _r4.i = ((java_util_GregorianCalendar*) _r13.o)->fields.java_util_GregorianCalendar.changeYear_;
     if (_r3.i != _r4.i) goto label166;
+    XMLVM_CHECK_NPE(13)
     _r4.l = ((java_util_GregorianCalendar*) _r13.o)->fields.java_util_GregorianCalendar.gregorianCutover_;
     _r4.i = _r14.l > _r4.l ? 1 : (_r14.l == _r4.l ? 0 : -1);
     if (_r4.i >= 0) goto label166;
@@ -5807,10 +6143,12 @@ JAVA_INT java_util_GregorianCalendar_hashCode__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(4)
     _r0.i = java_util_Calendar_hashCode__(_r4.o);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1212)
+    XMLVM_CHECK_NPE(4)
     _r1.l = ((java_util_GregorianCalendar*) _r4.o)->fields.java_util_GregorianCalendar.gregorianCutover_;
     _r3.i = 32;
     _r1.l = ((JAVA_ULONG) _r1.l) >> (0x3f & ((JAVA_ULONG) _r3.l));
     _r1.i = (JAVA_INT) _r1.l;
+    XMLVM_CHECK_NPE(4)
     _r2.l = ((java_util_GregorianCalendar*) _r4.o)->fields.java_util_GregorianCalendar.gregorianCutover_;
     _r2.i = (JAVA_INT) _r2.l;
     _r1.i = _r1.i ^ _r2.i;
@@ -5834,6 +6172,7 @@ JAVA_BOOLEAN java_util_GregorianCalendar_isLeapYear___int(JAVA_OBJECT me, JAVA_I
     _r2.i = 1;
     _r1.i = 0;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1224)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_GregorianCalendar*) _r3.o)->fields.java_util_GregorianCalendar.changeYear_;
     if (_r4.i <= _r0.i) goto label22;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1225)
@@ -5872,8 +6211,10 @@ JAVA_INT java_util_GregorianCalendar_julianError__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1232)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_GregorianCalendar*) _r2.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r0.i = _r0.i / 100;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_GregorianCalendar*) _r2.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r1.i = _r1.i / 400;
     _r0.i = _r0.i - _r1.i;
@@ -5980,6 +6321,7 @@ void java_util_GregorianCalendar_roll___int_int(JAVA_OBJECT me, JAVA_INT n1, JAV
     label19:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1274)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(7)
     ((java_util_GregorianCalendar*) _r7.o)->fields.java_util_GregorianCalendar.isCached_ = _r0.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1276)
     XMLVM_CHECK_NPE(7)
@@ -6008,6 +6350,7 @@ void java_util_GregorianCalendar_roll___int_int(JAVA_OBJECT me, JAVA_INT n1, JAV
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1362)
     if (_r0.i == _r6.i) goto label46;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1363)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r8.i);
@@ -6033,6 +6376,7 @@ void java_util_GregorianCalendar_roll___int_int(JAVA_OBJECT me, JAVA_INT n1, JAV
     goto label29;
     label55:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1284)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r5.i);
@@ -6042,10 +6386,12 @@ void java_util_GregorianCalendar_roll___int_int(JAVA_OBJECT me, JAVA_INT n1, JAV
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1285)
     _r1.i = 6;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1286)
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
     _r2.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i];
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
@@ -6065,6 +6411,7 @@ void java_util_GregorianCalendar_roll___int_int(JAVA_OBJECT me, JAVA_INT n1, JAV
     _r3.i = _r3.i / 7;
     _r3.i = _r3.i + 1;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1289)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r8.i);
@@ -6077,6 +6424,7 @@ void java_util_GregorianCalendar_roll___int_int(JAVA_OBJECT me, JAVA_INT n1, JAV
     if (_r4.i != _r3.i) goto label138;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1290)
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1291)
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r8.i);
@@ -6084,11 +6432,13 @@ void java_util_GregorianCalendar_roll___int_int(JAVA_OBJECT me, JAVA_INT n1, JAV
     _r2.i = _r4.i - _r2.i;
     _r2.i = _r2.i * 7;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1292)
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
     _r3.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     if (_r3.i <= _r2.i) goto label131;
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
@@ -6111,10 +6461,12 @@ void java_util_GregorianCalendar_roll___int_int(JAVA_OBJECT me, JAVA_INT n1, JAV
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1297)
     if (_r4.i != _r5.i) goto label174;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1298)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
@@ -6152,10 +6504,12 @@ void java_util_GregorianCalendar_roll___int_int(JAVA_OBJECT me, JAVA_INT n1, JAV
     XMLVM_CHECK_NPE(7)
     _r0.i = java_util_GregorianCalendar_daysInMonth__(_r7.o);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1311)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r3.i);
     _r1.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i];
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r4.i);
@@ -6175,6 +6529,7 @@ void java_util_GregorianCalendar_roll___int_int(JAVA_OBJECT me, JAVA_INT n1, JAV
     _r2.i = _r2.i / 7;
     _r2.i = _r2.i + 1;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1314)
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
@@ -6187,10 +6542,12 @@ void java_util_GregorianCalendar_roll___int_int(JAVA_OBJECT me, JAVA_INT n1, JAV
     if (_r3.i != _r2.i) goto label252;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1315)
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1316)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r4.i);
     _r1.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r8.i);
@@ -6214,10 +6571,12 @@ void java_util_GregorianCalendar_roll___int_int(JAVA_OBJECT me, JAVA_INT n1, JAV
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1321)
     if (_r3.i != _r5.i) goto label288;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1322)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r4.i);
     _r0.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r4.i);
@@ -6257,6 +6616,7 @@ void java_util_GregorianCalendar_roll___int_int(JAVA_OBJECT me, JAVA_INT n1, JAV
     goto label29;
     label300:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1336)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r5.i);
@@ -6272,16 +6632,19 @@ void java_util_GregorianCalendar_roll___int_int(JAVA_OBJECT me, JAVA_INT n1, JAV
     _r0.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i];
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1340)
     _r1.i = 4;
+    XMLVM_CHECK_NPE(7)
     ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.lastDateFieldSet_ = _r1.i;
     goto label29;
     label319:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1343)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r4.i);
     _r0.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     XMLVM_CHECK_NPE(7)
     _r1.i = java_util_GregorianCalendar_daysInMonth__(_r7.o);
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r4.i);
@@ -6297,6 +6660,7 @@ void java_util_GregorianCalendar_roll___int_int(JAVA_OBJECT me, JAVA_INT n1, JAV
     goto label29;
     label344:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1354)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r8.i);
@@ -6314,6 +6678,7 @@ void java_util_GregorianCalendar_roll___int_int(JAVA_OBJECT me, JAVA_INT n1, JAV
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1355)
     _r0.i = 2;
     if (_r8.i != _r0.i) goto label385;
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r4.i);
@@ -6334,6 +6699,7 @@ void java_util_GregorianCalendar_roll___int_int(JAVA_OBJECT me, JAVA_INT n1, JAV
     if (_r8.i != _r0.i) goto label28;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1358)
     _r0.i = 10;
+    XMLVM_CHECK_NPE(7)
     ((java_util_Calendar*) _r7.o)->fields.java_util_Calendar.lastTimeFieldSet_ = _r0.i;
     goto label28;
     label396:;
@@ -6387,6 +6753,7 @@ void java_util_GregorianCalendar_setGregorianChange___java_util_Date(JAVA_OBJECT
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1395)
     XMLVM_CHECK_NPE(7)
     _r0.l = java_util_Date_getTime__(_r7.o);
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.gregorianCutover_ = _r0.l;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1396)
     _r0.o = __NEW_java_util_GregorianCalendar();
@@ -6399,17 +6766,21 @@ void java_util_GregorianCalendar_setGregorianChange___java_util_Date(JAVA_OBJECT
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1398)
     XMLVM_CHECK_NPE(0)
     _r1.i = java_util_Calendar_get___int(_r0.o, _r4.i);
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.changeYear_ = _r1.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1399)
     XMLVM_CHECK_NPE(0)
     _r1.i = java_util_Calendar_get___int(_r0.o, _r3.i);
     if (_r1.i != 0) goto label38;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1400)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r1.i = _r4.i - _r1.i;
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.changeYear_ = _r1.i;
     label38:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1402)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r1.i = _r1.i - _r5.i;
     _r1.i = _r1.i / 400;
@@ -6417,39 +6788,50 @@ void java_util_GregorianCalendar_setGregorianChange___java_util_Date(JAVA_OBJECT
     _r2.i = java_util_GregorianCalendar_julianError__(_r6.o);
     _r1.i = _r1.i + _r2.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1403)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.changeYear_;
     _r2.i = _r2.i - _r5.i;
     _r2.i = _r2.i / 100;
     _r1.i = _r1.i - _r2.i;
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.julianSkew_ = _r1.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1404)
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.isCached_ = _r3.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1405)
     _r1.i = 6;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Calendar_get___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1406)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.julianSkew_;
     if (_r0.i >= _r1.i) goto label82;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1407)
     _r1.i = _r0.i - _r4.i;
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.currentYearSkew_ = _r1.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1408)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.julianSkew_;
     _r0.i = _r1.i - _r0.i;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.lastYearSkew_ = _r0.i;
     label79:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1413)
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.isCached_ = _r3.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1414)
     XMLVM_EXIT_METHOD()
     return;
     label82:;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1410)
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.lastYearSkew_ = _r3.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1411)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.julianSkew_;
+    XMLVM_CHECK_NPE(6)
     ((java_util_GregorianCalendar*) _r6.o)->fields.java_util_GregorianCalendar.currentYearSkew_ = _r0.i;
     goto label79;
     //XMLVM_END_WRAPPER
@@ -6488,6 +6870,7 @@ void java_util_GregorianCalendar_readObject___java_io_ObjectInputStream(JAVA_OBJ
     java_io_ObjectInputStream_defaultReadObject__(_r4.o);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1424)
     _r0.o = __NEW_java_util_Date();
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_util_GregorianCalendar*) _r3.o)->fields.java_util_GregorianCalendar.gregorianCutover_;
     XMLVM_CHECK_NPE(0)
     java_util_Date___INIT____long(_r0.o, _r1.l);
@@ -6495,6 +6878,7 @@ void java_util_GregorianCalendar_readObject___java_io_ObjectInputStream(JAVA_OBJ
     java_util_GregorianCalendar_setGregorianChange___java_util_Date(_r3.o, _r0.o);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1425)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(3)
     ((java_util_GregorianCalendar*) _r3.o)->fields.java_util_GregorianCalendar.isCached_ = _r0.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1426)
     XMLVM_EXIT_METHOD()
@@ -6516,6 +6900,7 @@ void java_util_GregorianCalendar_setFirstDayOfWeek___int(JAVA_OBJECT me, JAVA_IN
     java_util_Calendar_setFirstDayOfWeek___int(_r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1431)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_GregorianCalendar*) _r1.o)->fields.java_util_GregorianCalendar.isCached_ = _r0.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1432)
     XMLVM_EXIT_METHOD()
@@ -6537,6 +6922,7 @@ void java_util_GregorianCalendar_setMinimalDaysInFirstWeek___int(JAVA_OBJECT me,
     java_util_Calendar_setMinimalDaysInFirstWeek___int(_r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1437)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_GregorianCalendar*) _r1.o)->fields.java_util_GregorianCalendar.isCached_ = _r0.i;
     XMLVM_SOURCE_POSITION("GregorianCalendar.java", 1438)
     XMLVM_EXIT_METHOD()

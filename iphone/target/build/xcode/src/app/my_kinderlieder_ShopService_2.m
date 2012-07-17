@@ -227,6 +227,7 @@ void my_kinderlieder_ShopService_2___INIT____my_kinderlieder_ShopService(JAVA_OB
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("ShopService.java", 342)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_ShopService_2*) _r0.o)->fields.my_kinderlieder_ShopService_2.this_0_ = _r1.o;
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
@@ -251,12 +252,16 @@ void my_kinderlieder_ShopService_2_run__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w11200aaab2b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("ShopService.java", 345)
+    XMLVM_CHECK_NPE(7)
     _r5.o = ((my_kinderlieder_ShopService_2*) _r7.o)->fields.my_kinderlieder_ShopService_2.this_0_;
+    XMLVM_CHECK_NPE(5)
     _r5.o = ((my_kinderlieder_ShopService*) _r5.o)->fields.my_kinderlieder_ShopService.products_;
     XMLVM_CHECK_NPE(5)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_clear__])(_r5.o);
     XMLVM_SOURCE_POSITION("ShopService.java", 346)
+    XMLVM_CHECK_NPE(7)
     _r5.o = ((my_kinderlieder_ShopService_2*) _r7.o)->fields.my_kinderlieder_ShopService_2.this_0_;
+    XMLVM_CHECK_NPE(5)
     _r5.o = ((my_kinderlieder_ShopService*) _r5.o)->fields.my_kinderlieder_ShopService.products_;
     _r6.o = my_kinderlieder_ShopService_getInstance__();
     XMLVM_CHECK_NPE(6)
@@ -268,7 +273,9 @@ void my_kinderlieder_ShopService_2_run__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_util_HashSet___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("ShopService.java", 348)
+    XMLVM_CHECK_NPE(7)
     _r5.o = ((my_kinderlieder_ShopService_2*) _r7.o)->fields.my_kinderlieder_ShopService_2.this_0_;
+    XMLVM_CHECK_NPE(5)
     _r5.o = ((my_kinderlieder_ShopService*) _r5.o)->fields.my_kinderlieder_ShopService.products_;
     XMLVM_CHECK_NPE(5)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_iterator__])(_r5.o);
@@ -293,6 +300,7 @@ void my_kinderlieder_ShopService_2_run__(JAVA_OBJECT me)
     if (_r5.i == 0) { XMLVM_MEMCPY(curThread_w11200aaab2b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w11200aaab2b1b4, sizeof(XMLVM_JMP_BUF)); goto label35; };
     XMLVM_SOURCE_POSITION("ShopService.java", 350)
     _r3.o = _r3.o;
+    XMLVM_CHECK_NPE(3)
     _r5.o = ((my_kinderlieder_InAppProduct*) _r3.o)->fields.my_kinderlieder_InAppProduct.appleProductId_;
     XMLVM_CHECK_NPE(2)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Set_add___java_lang_Object])(_r2.o, _r5.o);
@@ -326,12 +334,14 @@ void my_kinderlieder_ShopService_2_run__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(4)
     org_xmlvm_iphone_SKProductsRequest___INIT____java_util_Set(_r4.o, _r2.o);
     XMLVM_SOURCE_POSITION("ShopService.java", 354)
+    XMLVM_CHECK_NPE(7)
     _r5.o = ((my_kinderlieder_ShopService_2*) _r7.o)->fields.my_kinderlieder_ShopService_2.this_0_;
     _r6.o = __NEW_my_kinderlieder_ShopService_2_1();
     XMLVM_CHECK_NPE(6)
     my_kinderlieder_ShopService_2_1___INIT____my_kinderlieder_ShopService_2(_r6.o, _r7.o);
     my_kinderlieder_ShopService_access$102___my_kinderlieder_ShopService_org_xmlvm_iphone_SKProductsRequestDelegate(_r5.o, _r6.o);
     XMLVM_SOURCE_POSITION("ShopService.java", 375)
+    XMLVM_CHECK_NPE(7)
     _r5.o = ((my_kinderlieder_ShopService_2*) _r7.o)->fields.my_kinderlieder_ShopService_2.this_0_;
     _r5.o = my_kinderlieder_ShopService_access$100___my_kinderlieder_ShopService(_r5.o);
     XMLVM_CHECK_NPE(4)
@@ -349,6 +359,7 @@ void my_kinderlieder_ShopService_2_run__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w11200aaab2b1c18)
     // Begin try
     XMLVM_SOURCE_POSITION("ShopService.java", 379)
+    XMLVM_CHECK_NPE(7)
     _r5.o = ((my_kinderlieder_ShopService_2*) _r7.o)->fields.my_kinderlieder_ShopService_2.this_0_;
     my_kinderlieder_ShopService_access$200___my_kinderlieder_ShopService(_r5.o);
     // End try

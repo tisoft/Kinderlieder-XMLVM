@@ -276,6 +276,7 @@ void java_util_regex_WordBoundary___INIT____boolean(JAVA_OBJECT me, JAVA_BOOLEAN
     XMLVM_CHECK_NPE(0)
     java_util_regex_AbstractSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("WordBoundary.java", 34)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_WordBoundary*) _r0.o)->fields.java_util_regex_WordBoundary.positive_ = _r1.i;
     XMLVM_SOURCE_POSITION("WordBoundary.java", 35)
     XMLVM_EXIT_METHOD()
@@ -338,6 +339,7 @@ JAVA_INT java_util_regex_WordBoundary_matches___int_java_lang_CharSequence_java_
     label41:;
     XMLVM_SOURCE_POSITION("WordBoundary.java", 51)
     _r0.i = _r0.i ^ _r1.i;
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_regex_WordBoundary*) _r6.o)->fields.java_util_regex_WordBoundary.positive_;
     _r0.i = _r0.i ^ _r1.i;
     if (_r0.i == 0) goto label70;
@@ -367,6 +369,7 @@ JAVA_INT java_util_regex_WordBoundary_matches___int_java_lang_CharSequence_java_
     _r1 = _r4;
     goto label41;
     label70:;
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_regex_AbstractSet*) _r6.o)->fields.java_util_regex_AbstractSet.next_;
     XMLVM_SOURCE_POSITION("WordBoundary.java", 52)
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]

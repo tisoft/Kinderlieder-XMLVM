@@ -640,6 +640,7 @@ void gnu_xml_stream_XMLParser_Doctype___INIT____gnu_xml_stream_XMLParser_java_la
     _r4.o = n3;
     _r5.o = n4;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4561)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.this_0_ = _r2.o;
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
@@ -647,55 +648,68 @@ void gnu_xml_stream_XMLParser_Doctype___INIT____gnu_xml_stream_XMLParser_java_la
     _r0.o = __NEW_java_util_LinkedHashMap();
     XMLVM_CHECK_NPE(0)
     java_util_LinkedHashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.elements_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4514)
     _r0.o = __NEW_java_util_LinkedHashMap();
     XMLVM_CHECK_NPE(0)
     java_util_LinkedHashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.attlists_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4519)
     _r0.o = __NEW_java_util_LinkedHashMap();
     XMLVM_CHECK_NPE(0)
     java_util_LinkedHashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.entities_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4524)
     _r0.o = __NEW_java_util_LinkedHashMap();
     XMLVM_CHECK_NPE(0)
     java_util_LinkedHashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.notations_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4529)
     _r0.o = __NEW_java_util_LinkedHashMap();
     XMLVM_CHECK_NPE(0)
     java_util_LinkedHashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.comments_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4535)
     _r0.o = __NEW_java_util_LinkedHashMap();
     XMLVM_CHECK_NPE(0)
     java_util_LinkedHashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.pis_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4540)
     _r0.o = __NEW_java_util_LinkedList();
     XMLVM_CHECK_NPE(0)
     java_util_LinkedList___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.entries_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4545)
     _r0.o = __NEW_java_util_HashSet();
     XMLVM_CHECK_NPE(0)
     java_util_HashSet___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.externalEntities_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4550)
     _r0.o = __NEW_java_util_HashSet();
     XMLVM_CHECK_NPE(0)
     java_util_HashSet___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.externalNotations_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4555)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.anon_ = _r0.i;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4562)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.rootName_ = _r3.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4563)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.publicId_ = _r4.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4564)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.systemId_ = _r5.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4565)
     XMLVM_EXIT_METHOD()
@@ -720,6 +734,7 @@ void gnu_xml_stream_XMLParser_Doctype_addElementDecl___java_lang_String_java_lan
     _r6.o = n3;
     _r1.i = 1;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4575)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r3.o)->fields.gnu_xml_stream_XMLParser_Doctype.elements_;
     //java_util_LinkedHashMap_containsKey___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
@@ -731,8 +746,10 @@ void gnu_xml_stream_XMLParser_Doctype_addElementDecl___java_lang_String_java_lan
     return;
     label10:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4577)
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_stream_XMLParser_ContentModel*) _r6.o)->fields.gnu_xml_stream_XMLParser_ContentModel.text_ = _r5.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4578)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r3.o)->fields.gnu_xml_stream_XMLParser_Doctype.this_0_;
     _r0.o = gnu_xml_stream_XMLParser_access$300___gnu_xml_stream_XMLParser(_r0.o);
     //java_util_LinkedList_size__[16]
@@ -741,13 +758,16 @@ void gnu_xml_stream_XMLParser_Doctype_addElementDecl___java_lang_String_java_lan
     if (_r0.i == _r1.i) goto label57;
     _r0 = _r1;
     label25:;
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_stream_XMLParser_ContentModel*) _r6.o)->fields.gnu_xml_stream_XMLParser_ContentModel.external_ = _r0.i;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4579)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r3.o)->fields.gnu_xml_stream_XMLParser_Doctype.elements_;
     //java_util_LinkedHashMap_put___java_lang_Object_java_lang_Object[14]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_util_LinkedHashMap*) _r0.o)->tib->vtable[14])(_r0.o, _r4.o, _r6.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 4580)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r3.o)->fields.gnu_xml_stream_XMLParser_Doctype.entries_;
     _r1.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(1)
@@ -788,6 +808,7 @@ void gnu_xml_stream_XMLParser_Doctype_addAttributeDecl___java_lang_String_java_l
     _r6.o = n2;
     _r7.o = n3;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4591)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_stream_XMLParser_Doctype*) _r4.o)->fields.gnu_xml_stream_XMLParser_Doctype.attlists_;
     //java_util_LinkedHashMap_get___java_lang_Object[10]
     XMLVM_CHECK_NPE(2)
@@ -800,6 +821,7 @@ void gnu_xml_stream_XMLParser_Doctype_addAttributeDecl___java_lang_String_java_l
     XMLVM_CHECK_NPE(0)
     java_util_LinkedHashMap___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 4595)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_stream_XMLParser_Doctype*) _r4.o)->fields.gnu_xml_stream_XMLParser_Doctype.attlists_;
     //java_util_LinkedHashMap_put___java_lang_Object_java_lang_Object[14]
     XMLVM_CHECK_NPE(2)
@@ -823,12 +845,14 @@ void gnu_xml_stream_XMLParser_Doctype_addAttributeDecl___java_lang_String_java_l
     XMLVM_CHECK_NPE(2)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r2.o)->tib->vtable[5])(_r2.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 4601)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_stream_XMLParser_Doctype*) _r4.o)->fields.gnu_xml_stream_XMLParser_Doctype.entries_;
     //java_util_LinkedList_contains___java_lang_Object[10]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_LinkedList*) _r2.o)->tib->vtable[10])(_r2.o, _r1.o);
     if (_r2.i != 0) goto label55;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4602)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_stream_XMLParser_Doctype*) _r4.o)->fields.gnu_xml_stream_XMLParser_Doctype.entries_;
     //java_util_LinkedList_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(2)
@@ -863,6 +887,7 @@ void gnu_xml_stream_XMLParser_Doctype_addEntityDecl___java_lang_String_java_lang
     _r5.o = n2;
     _r6.i = n3;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4613)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r3.o)->fields.gnu_xml_stream_XMLParser_Doctype.entities_;
     //java_util_LinkedHashMap_containsKey___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
@@ -874,11 +899,13 @@ void gnu_xml_stream_XMLParser_Doctype_addEntityDecl___java_lang_String_java_lang
     return;
     label9:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4615)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r3.o)->fields.gnu_xml_stream_XMLParser_Doctype.entities_;
     //java_util_LinkedHashMap_put___java_lang_Object_java_lang_Object[14]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_util_LinkedHashMap*) _r0.o)->tib->vtable[14])(_r0.o, _r4.o, _r5.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 4616)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r3.o)->fields.gnu_xml_stream_XMLParser_Doctype.entries_;
     _r1.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(1)
@@ -898,6 +925,7 @@ void gnu_xml_stream_XMLParser_Doctype_addEntityDecl___java_lang_String_java_lang
     XMLVM_SOURCE_POSITION("XMLParser.java", 4617)
     if (_r6.i == 0) goto label8;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4618)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r3.o)->fields.gnu_xml_stream_XMLParser_Doctype.externalEntities_;
     //java_util_HashSet_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
@@ -922,6 +950,7 @@ void gnu_xml_stream_XMLParser_Doctype_addEntityDecl___java_lang_String_gnu_xml_s
     _r5.o = n2;
     _r6.i = n3;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4629)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r3.o)->fields.gnu_xml_stream_XMLParser_Doctype.entities_;
     //java_util_LinkedHashMap_containsKey___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
@@ -933,11 +962,13 @@ void gnu_xml_stream_XMLParser_Doctype_addEntityDecl___java_lang_String_gnu_xml_s
     return;
     label9:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4631)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r3.o)->fields.gnu_xml_stream_XMLParser_Doctype.entities_;
     //java_util_LinkedHashMap_put___java_lang_Object_java_lang_Object[14]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_util_LinkedHashMap*) _r0.o)->tib->vtable[14])(_r0.o, _r4.o, _r5.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 4632)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r3.o)->fields.gnu_xml_stream_XMLParser_Doctype.entries_;
     _r1.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(1)
@@ -957,6 +988,7 @@ void gnu_xml_stream_XMLParser_Doctype_addEntityDecl___java_lang_String_gnu_xml_s
     XMLVM_SOURCE_POSITION("XMLParser.java", 4633)
     if (_r6.i == 0) goto label8;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4634)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r3.o)->fields.gnu_xml_stream_XMLParser_Doctype.externalEntities_;
     //java_util_HashSet_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
@@ -981,6 +1013,7 @@ void gnu_xml_stream_XMLParser_Doctype_addNotationDecl___java_lang_String_gnu_xml
     _r5.o = n2;
     _r6.i = n3;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4645)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r3.o)->fields.gnu_xml_stream_XMLParser_Doctype.notations_;
     //java_util_LinkedHashMap_containsKey___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
@@ -992,11 +1025,13 @@ void gnu_xml_stream_XMLParser_Doctype_addNotationDecl___java_lang_String_gnu_xml
     return;
     label9:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4647)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r3.o)->fields.gnu_xml_stream_XMLParser_Doctype.notations_;
     //java_util_LinkedHashMap_put___java_lang_Object_java_lang_Object[14]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_util_LinkedHashMap*) _r0.o)->tib->vtable[14])(_r0.o, _r4.o, _r5.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 4648)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r3.o)->fields.gnu_xml_stream_XMLParser_Doctype.entries_;
     _r1.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(1)
@@ -1016,6 +1051,7 @@ void gnu_xml_stream_XMLParser_Doctype_addNotationDecl___java_lang_String_gnu_xml
     XMLVM_SOURCE_POSITION("XMLParser.java", 4649)
     if (_r6.i == 0) goto label8;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4650)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r3.o)->fields.gnu_xml_stream_XMLParser_Doctype.externalNotations_;
     //java_util_HashSet_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
@@ -1037,16 +1073,20 @@ void gnu_xml_stream_XMLParser_Doctype_addComment___java_lang_String(JAVA_OBJECT 
     _r4.o = me;
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4658)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((gnu_xml_stream_XMLParser_Doctype*) _r4.o)->fields.gnu_xml_stream_XMLParser_Doctype.anon_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_stream_XMLParser_Doctype*) _r4.o)->fields.gnu_xml_stream_XMLParser_Doctype.anon_ = _r2.i;
     _r0.o = java_lang_Integer_toString___int(_r1.i);
     XMLVM_SOURCE_POSITION("XMLParser.java", 4659)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_stream_XMLParser_Doctype*) _r4.o)->fields.gnu_xml_stream_XMLParser_Doctype.comments_;
     //java_util_LinkedHashMap_put___java_lang_Object_java_lang_Object[14]
     XMLVM_CHECK_NPE(1)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_util_LinkedHashMap*) _r1.o)->tib->vtable[14])(_r1.o, _r0.o, _r5.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 4660)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_stream_XMLParser_Doctype*) _r4.o)->fields.gnu_xml_stream_XMLParser_Doctype.entries_;
     _r2.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(2)
@@ -1084,11 +1124,14 @@ void gnu_xml_stream_XMLParser_Doctype_addPI___java_lang_String_java_lang_String(
     _r5.o = n1;
     _r6.o = n2;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4668)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((gnu_xml_stream_XMLParser_Doctype*) _r4.o)->fields.gnu_xml_stream_XMLParser_Doctype.anon_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_stream_XMLParser_Doctype*) _r4.o)->fields.gnu_xml_stream_XMLParser_Doctype.anon_ = _r2.i;
     _r0.o = java_lang_Integer_toString___int(_r1.i);
     XMLVM_SOURCE_POSITION("XMLParser.java", 4669)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_stream_XMLParser_Doctype*) _r4.o)->fields.gnu_xml_stream_XMLParser_Doctype.pis_;
     _r2.i = 2;
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
@@ -1105,6 +1148,7 @@ void gnu_xml_stream_XMLParser_Doctype_addPI___java_lang_String_java_lang_String(
     XMLVM_CHECK_NPE(1)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_util_LinkedHashMap*) _r1.o)->tib->vtable[14])(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 4670)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_stream_XMLParser_Doctype*) _r4.o)->fields.gnu_xml_stream_XMLParser_Doctype.entries_;
     _r2.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(2)
@@ -1137,6 +1181,7 @@ JAVA_OBJECT gnu_xml_stream_XMLParser_Doctype_getElementModel___java_lang_String(
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4679)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.elements_;
     //java_util_LinkedHashMap_get___java_lang_Object[10]
     XMLVM_CHECK_NPE(0)
@@ -1160,6 +1205,7 @@ JAVA_OBJECT gnu_xml_stream_XMLParser_Doctype_getAttributeDecl___java_lang_String
     _r3.o = n1;
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4689)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_stream_XMLParser_Doctype*) _r2.o)->fields.gnu_xml_stream_XMLParser_Doctype.attlists_;
     //java_util_LinkedHashMap_get___java_lang_Object[10]
     XMLVM_CHECK_NPE(1)
@@ -1194,6 +1240,7 @@ JAVA_BOOLEAN gnu_xml_stream_XMLParser_Doctype_isAttributeDeclared___java_lang_St
     _r3.o = n1;
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4700)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_stream_XMLParser_Doctype*) _r2.o)->fields.gnu_xml_stream_XMLParser_Doctype.attlists_;
     //java_util_LinkedHashMap_get___java_lang_Object[10]
     XMLVM_CHECK_NPE(1)
@@ -1224,6 +1271,7 @@ JAVA_OBJECT gnu_xml_stream_XMLParser_Doctype_attlistIterator___java_lang_String(
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4711)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_stream_XMLParser_Doctype*) _r2.o)->fields.gnu_xml_stream_XMLParser_Doctype.attlists_;
     //java_util_LinkedHashMap_get___java_lang_Object[10]
     XMLVM_CHECK_NPE(1)
@@ -1257,6 +1305,7 @@ JAVA_OBJECT gnu_xml_stream_XMLParser_Doctype_getEntity___java_lang_String(JAVA_O
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4721)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.entities_;
     //java_util_LinkedHashMap_get___java_lang_Object[10]
     XMLVM_CHECK_NPE(0)
@@ -1276,6 +1325,7 @@ JAVA_BOOLEAN gnu_xml_stream_XMLParser_Doctype_isEntityExternal___java_lang_Strin
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4730)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.externalEntities_;
     //java_util_HashSet_contains___java_lang_Object[10]
     XMLVM_CHECK_NPE(0)
@@ -1293,6 +1343,7 @@ JAVA_OBJECT gnu_xml_stream_XMLParser_Doctype_entityIterator__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4738)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.entities_;
     //java_util_LinkedHashMap_entrySet__[9]
     XMLVM_CHECK_NPE(0)
@@ -1314,6 +1365,7 @@ JAVA_OBJECT gnu_xml_stream_XMLParser_Doctype_getNotation___java_lang_String(JAVA
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4746)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.notations_;
     //java_util_LinkedHashMap_get___java_lang_Object[10]
     XMLVM_CHECK_NPE(0)
@@ -1334,6 +1386,7 @@ JAVA_BOOLEAN gnu_xml_stream_XMLParser_Doctype_isNotationExternal___java_lang_Str
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4755)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.externalNotations_;
     //java_util_HashSet_contains___java_lang_Object[10]
     XMLVM_CHECK_NPE(0)
@@ -1353,6 +1406,7 @@ JAVA_OBJECT gnu_xml_stream_XMLParser_Doctype_getComment___java_lang_String(JAVA_
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4763)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.comments_;
     //java_util_LinkedHashMap_get___java_lang_Object[10]
     XMLVM_CHECK_NPE(0)
@@ -1373,6 +1427,7 @@ JAVA_OBJECT gnu_xml_stream_XMLParser_Doctype_getPI___java_lang_String(JAVA_OBJEC
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4772)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.pis_;
     //java_util_LinkedHashMap_get___java_lang_Object[10]
     XMLVM_CHECK_NPE(0)
@@ -1392,6 +1447,7 @@ JAVA_OBJECT gnu_xml_stream_XMLParser_Doctype_entryIterator__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4781)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r1.o)->fields.gnu_xml_stream_XMLParser_Doctype.entries_;
     //java_util_LinkedList_iterator__[12]
     XMLVM_CHECK_NPE(0)

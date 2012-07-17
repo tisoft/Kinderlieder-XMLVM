@@ -610,6 +610,7 @@ void java_io_DataInputStream___INIT____java_io_InputStream(JAVA_OBJECT me, JAVA_
     _r0.i = 8;
     if (!__TIB_byte.classInitialized) __INIT_byte();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_byte, _r0.i);
+    XMLVM_CHECK_NPE(1)
     ((java_io_DataInputStream*) _r1.o)->fields.java_io_DataInputStream.buff_ = _r0.o;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 50)
     XMLVM_EXIT_METHOD()
@@ -629,6 +630,7 @@ JAVA_INT java_io_DataInputStream_read___byte_1ARRAY(JAVA_OBJECT me, JAVA_OBJECT 
     _r3.o = me;
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 67)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_FilterInputStream*) _r3.o)->fields.java_io_FilterInputStream.in_;
     _r1.i = 0;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r4.o));
@@ -654,6 +656,7 @@ JAVA_INT java_io_DataInputStream_read___byte_1ARRAY_int_int(JAVA_OBJECT me, JAVA
     _r3.i = n2;
     _r4.i = n3;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 93)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_FilterInputStream*) _r1.o)->fields.java_io_FilterInputStream.in_;
     //java_io_InputStream_read___byte_1ARRAY_int_int[12]
     XMLVM_CHECK_NPE(0)
@@ -671,6 +674,7 @@ JAVA_BOOLEAN java_io_DataInputStream_readBoolean__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 108)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_FilterInputStream*) _r1.o)->fields.java_io_FilterInputStream.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(0)
@@ -703,6 +707,7 @@ JAVA_BYTE java_io_DataInputStream_readByte__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 127)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_FilterInputStream*) _r1.o)->fields.java_io_FilterInputStream.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(0)
@@ -745,7 +750,9 @@ JAVA_INT java_io_DataInputStream_readToBuff___int(JAVA_OBJECT me, JAVA_INT n1)
     return _r0.i;
     label4:;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 149)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_io_FilterInputStream*) _r4.o)->fields.java_io_FilterInputStream.in_;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_io_DataInputStream*) _r4.o)->fields.java_io_DataInputStream.buff_;
     _r3.i = _r5.i - _r0.i;
     //java_io_InputStream_read___byte_1ARRAY_int_int[12]
@@ -784,6 +791,7 @@ JAVA_CHAR java_io_DataInputStream_readChar__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label13:;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 160)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_DataInputStream*) _r3.o)->fields.java_io_DataInputStream.buff_;
     _r1.i = 0;
     XMLVM_CHECK_NPE(0)
@@ -791,6 +799,7 @@ JAVA_CHAR java_io_DataInputStream_readChar__(JAVA_OBJECT me)
     _r0.i = ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     _r0.i = _r0.i & 255;
     _r0.i = _r0.i << 8;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_DataInputStream*) _r3.o)->fields.java_io_DataInputStream.buff_;
     _r2.i = 1;
     XMLVM_CHECK_NPE(1)
@@ -892,6 +901,7 @@ void java_io_DataInputStream_readFully___byte_1ARRAY_int_int(JAVA_OBJECT me, JAV
     return;
     label11:;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 246)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_FilterInputStream*) _r3.o)->fields.java_io_FilterInputStream.in_;
     if (_r0.o != JAVA_NULL) goto label27;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 247)
@@ -927,6 +937,7 @@ void java_io_DataInputStream_readFully___byte_1ARRAY_int_int(JAVA_OBJECT me, JAV
     XMLVM_THROW_CUSTOM(_r0.o)
     label53:;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 256)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_io_FilterInputStream*) _r3.o)->fields.java_io_FilterInputStream.in_;
     //java_io_InputStream_read___byte_1ARRAY_int_int[12]
     XMLVM_CHECK_NPE(2)
@@ -975,6 +986,7 @@ JAVA_INT java_io_DataInputStream_readInt__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label13:;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 280)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_DataInputStream*) _r3.o)->fields.java_io_DataInputStream.buff_;
     _r1.i = 0;
     XMLVM_CHECK_NPE(0)
@@ -982,6 +994,7 @@ JAVA_INT java_io_DataInputStream_readInt__(JAVA_OBJECT me)
     _r0.i = ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     _r0.i = _r0.i & 255;
     _r0.i = _r0.i << 24;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_DataInputStream*) _r3.o)->fields.java_io_DataInputStream.buff_;
     _r2.i = 1;
     XMLVM_CHECK_NPE(1)
@@ -991,6 +1004,7 @@ JAVA_INT java_io_DataInputStream_readInt__(JAVA_OBJECT me)
     _r1.i = _r1.i << 16;
     _r0.i = _r0.i | _r1.i;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 281)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_DataInputStream*) _r3.o)->fields.java_io_DataInputStream.buff_;
     _r2.i = 2;
     XMLVM_CHECK_NPE(1)
@@ -999,6 +1013,7 @@ JAVA_INT java_io_DataInputStream_readInt__(JAVA_OBJECT me)
     _r1.i = _r1.i & 255;
     _r1.i = _r1.i << 8;
     _r0.i = _r0.i | _r1.i;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_DataInputStream*) _r3.o)->fields.java_io_DataInputStream.buff_;
     _r2.i = 3;
     XMLVM_CHECK_NPE(1)
@@ -1030,6 +1045,7 @@ JAVA_OBJECT java_io_DataInputStream_readLine__(JAVA_OBJECT me)
     _r1.i = 0;
     label8:;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 301)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_io_FilterInputStream*) _r4.o)->fields.java_io_FilterInputStream.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(2)
@@ -1043,6 +1059,7 @@ JAVA_OBJECT java_io_DataInputStream_readLine__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DataInputStream.java", 322)
     if (_r1.i == 0) goto label86;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 323)
+    XMLVM_CHECK_NPE(4)
     _r4.o = ((java_io_FilterInputStream*) _r4.o)->fields.java_io_FilterInputStream.in_;
     _r4.o = _r4.o;
     XMLVM_CHECK_NPE(4)
@@ -1073,6 +1090,7 @@ JAVA_OBJECT java_io_DataInputStream_readLine__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DataInputStream.java", 309)
     if (_r1.i == 0) goto label60;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 310)
+    XMLVM_CHECK_NPE(4)
     _r4.o = ((java_io_FilterInputStream*) _r4.o)->fields.java_io_FilterInputStream.in_;
     _r4.o = _r4.o;
     XMLVM_CHECK_NPE(4)
@@ -1086,6 +1104,7 @@ JAVA_OBJECT java_io_DataInputStream_readLine__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DataInputStream.java", 313)
     _r1.i = 1;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 315)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_io_FilterInputStream*) _r4.o)->fields.java_io_FilterInputStream.in_;
     //java_lang_Object_getClass__[3]
     XMLVM_CHECK_NPE(2)
@@ -1095,9 +1114,11 @@ JAVA_OBJECT java_io_DataInputStream_readLine__(JAVA_OBJECT me)
     if (_r2.o == _r3.o) goto label8;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 316)
     _r2.o = __NEW_java_io_PushbackInputStream();
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_io_FilterInputStream*) _r4.o)->fields.java_io_FilterInputStream.in_;
     XMLVM_CHECK_NPE(2)
     java_io_PushbackInputStream___INIT____java_io_InputStream(_r2.o, _r3.o);
+    XMLVM_CHECK_NPE(4)
     ((java_io_FilterInputStream*) _r4.o)->fields.java_io_FilterInputStream.in_ = _r2.o;
     goto label8;
     label81:;
@@ -1142,6 +1163,7 @@ JAVA_LONG java_io_DataInputStream_readLong__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label19:;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 346)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_io_DataInputStream*) _r6.o)->fields.java_io_DataInputStream.buff_;
     _r1.i = 0;
     XMLVM_CHECK_NPE(0)
@@ -1149,6 +1171,7 @@ JAVA_LONG java_io_DataInputStream_readLong__(JAVA_OBJECT me)
     _r0.i = ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     _r0.i = _r0.i & 255;
     _r0.i = _r0.i << 24;
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_io_DataInputStream*) _r6.o)->fields.java_io_DataInputStream.buff_;
     _r2.i = 1;
     XMLVM_CHECK_NPE(1)
@@ -1158,6 +1181,7 @@ JAVA_LONG java_io_DataInputStream_readLong__(JAVA_OBJECT me)
     _r1.i = _r1.i << 16;
     _r0.i = _r0.i | _r1.i;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 347)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_io_DataInputStream*) _r6.o)->fields.java_io_DataInputStream.buff_;
     _r2.i = 2;
     XMLVM_CHECK_NPE(1)
@@ -1166,6 +1190,7 @@ JAVA_LONG java_io_DataInputStream_readLong__(JAVA_OBJECT me)
     _r1.i = _r1.i & 255;
     _r1.i = _r1.i << 8;
     _r0.i = _r0.i | _r1.i;
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_io_DataInputStream*) _r6.o)->fields.java_io_DataInputStream.buff_;
     _r2.i = 3;
     XMLVM_CHECK_NPE(1)
@@ -1174,6 +1199,7 @@ JAVA_LONG java_io_DataInputStream_readLong__(JAVA_OBJECT me)
     _r1.i = _r1.i & 255;
     _r0.i = _r0.i | _r1.i;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 348)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_io_DataInputStream*) _r6.o)->fields.java_io_DataInputStream.buff_;
     _r2.i = 4;
     XMLVM_CHECK_NPE(1)
@@ -1181,6 +1207,7 @@ JAVA_LONG java_io_DataInputStream_readLong__(JAVA_OBJECT me)
     _r1.i = ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
     _r1.i = _r1.i & 255;
     _r1.i = _r1.i << 24;
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_io_DataInputStream*) _r6.o)->fields.java_io_DataInputStream.buff_;
     _r3.i = 5;
     XMLVM_CHECK_NPE(2)
@@ -1190,6 +1217,7 @@ JAVA_LONG java_io_DataInputStream_readLong__(JAVA_OBJECT me)
     _r2.i = _r2.i << 16;
     _r1.i = _r1.i | _r2.i;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 349)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_io_DataInputStream*) _r6.o)->fields.java_io_DataInputStream.buff_;
     _r3.i = 6;
     XMLVM_CHECK_NPE(2)
@@ -1198,6 +1226,7 @@ JAVA_LONG java_io_DataInputStream_readLong__(JAVA_OBJECT me)
     _r2.i = _r2.i & 255;
     _r2.i = _r2.i << 8;
     _r1.i = _r1.i | _r2.i;
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_io_DataInputStream*) _r6.o)->fields.java_io_DataInputStream.buff_;
     _r3.i = 7;
     XMLVM_CHECK_NPE(2)
@@ -1239,6 +1268,7 @@ JAVA_SHORT java_io_DataInputStream_readShort__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label13:;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 369)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_DataInputStream*) _r3.o)->fields.java_io_DataInputStream.buff_;
     _r1.i = 0;
     XMLVM_CHECK_NPE(0)
@@ -1246,6 +1276,7 @@ JAVA_SHORT java_io_DataInputStream_readShort__(JAVA_OBJECT me)
     _r0.i = ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     _r0.i = _r0.i & 255;
     _r0.i = _r0.i << 8;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_DataInputStream*) _r3.o)->fields.java_io_DataInputStream.buff_;
     _r2.i = 1;
     XMLVM_CHECK_NPE(1)
@@ -1267,6 +1298,7 @@ JAVA_INT java_io_DataInputStream_readUnsignedByte__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 385)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_FilterInputStream*) _r1.o)->fields.java_io_FilterInputStream.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(0)
@@ -1306,6 +1338,7 @@ JAVA_INT java_io_DataInputStream_readUnsignedShort__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label13:;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 408)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_DataInputStream*) _r3.o)->fields.java_io_DataInputStream.buff_;
     _r1.i = 0;
     XMLVM_CHECK_NPE(0)
@@ -1313,6 +1346,7 @@ JAVA_INT java_io_DataInputStream_readUnsignedShort__(JAVA_OBJECT me)
     _r0.i = ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     _r0.i = _r0.i & 255;
     _r0.i = _r0.i << 8;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_DataInputStream*) _r3.o)->fields.java_io_DataInputStream.buff_;
     _r2.i = 1;
     XMLVM_CHECK_NPE(1)
@@ -1424,6 +1458,7 @@ JAVA_INT java_io_DataInputStream_skipBytes___int(JAVA_OBJECT me, JAVA_INT n1)
     label1:;
     XMLVM_SOURCE_POSITION("DataInputStream.java", 474)
     if (_r0.i >= _r6.i) goto label18;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_io_FilterInputStream*) _r5.o)->fields.java_io_FilterInputStream.in_;
     _r2.i = _r6.i - _r0.i;
     _r2.l = (JAVA_LONG) _r2.i;

@@ -1001,11 +1001,13 @@ void java_nio_charset_Charset___INIT____java_lang_String_java_lang_String_1ARRAY
     XMLVM_SOURCE_POSITION("Charset.java", 142)
     java_nio_charset_Charset_checkCharsetName___java_lang_String(_r4.o);
     XMLVM_SOURCE_POSITION("Charset.java", 143)
+    XMLVM_CHECK_NPE(3)
     ((java_nio_charset_Charset*) _r3.o)->fields.java_nio_charset_Charset.canonicalName_ = _r4.o;
     XMLVM_SOURCE_POSITION("Charset.java", 145)
     _r0.o = __NEW_java_util_HashSet();
     XMLVM_CHECK_NPE(0)
     java_util_HashSet___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_nio_charset_Charset*) _r3.o)->fields.java_nio_charset_Charset.aliasesSet_ = _r0.o;
     XMLVM_SOURCE_POSITION("Charset.java", 146)
     if (_r5.o == JAVA_NULL) goto label29;
@@ -1025,6 +1027,7 @@ void java_nio_charset_Charset___INIT____java_lang_String_java_lang_String_1ARRAY
     _r1.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r5.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
     java_nio_charset_Charset_checkCharsetName___java_lang_String(_r1.o);
     XMLVM_SOURCE_POSITION("Charset.java", 149)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_nio_charset_Charset*) _r3.o)->fields.java_nio_charset_Charset.aliasesSet_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r0.i);
@@ -1315,7 +1318,7 @@ void java_nio_charset_Charset_loadConfiguredCharsets___java_net_URL_java_lang_Cl
     _r8.o = n3;
     XMLVM_SOURCE_POSITION("Charset.java", 264)
     _r0.o = JAVA_NULL;
-    XMLVM_TRY_BEGIN(w32896aaac20b1b6)
+    XMLVM_TRY_BEGIN(w32901aaac20b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 266)
     XMLVM_CHECK_NPE(6)
@@ -1332,29 +1335,29 @@ void java_nio_charset_Charset_loadConfiguredCharsets___java_net_URL_java_lang_Cl
     java_io_BufferedReader___INIT____java_io_Reader(_r2.o, _r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac20b1b6)
-        XMLVM_CATCH_SPECIFIC(w32896aaac20b1b6,java_io_IOException,114)
-        XMLVM_CATCH_SPECIFIC(w32896aaac20b1b6,java_lang_Object,97)
-    XMLVM_CATCH_END(w32896aaac20b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac20b1b6)
-    XMLVM_TRY_BEGIN(w32896aaac20b1b7)
+    XMLVM_CATCH_BEGIN(w32901aaac20b1b6)
+        XMLVM_CATCH_SPECIFIC(w32901aaac20b1b6,java_io_IOException,114)
+        XMLVM_CATCH_SPECIFIC(w32901aaac20b1b6,java_lang_Object,97)
+    XMLVM_CATCH_END(w32901aaac20b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac20b1b6)
+    XMLVM_TRY_BEGIN(w32901aaac20b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 270)
     XMLVM_CHECK_NPE(2)
     _r0.o = java_io_BufferedReader_readLine__(_r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac20b1b7)
-        XMLVM_CATCH_SPECIFIC(w32896aaac20b1b7,java_io_IOException,87)
-        XMLVM_CATCH_SPECIFIC(w32896aaac20b1b7,java_lang_Object,111)
-    XMLVM_CATCH_END(w32896aaac20b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac20b1b7)
+    XMLVM_CATCH_BEGIN(w32901aaac20b1b7)
+        XMLVM_CATCH_SPECIFIC(w32901aaac20b1b7,java_io_IOException,87)
+        XMLVM_CATCH_SPECIFIC(w32901aaac20b1b7,java_lang_Object,111)
+    XMLVM_CATCH_END(w32901aaac20b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac20b1b7)
     label21:;
     XMLVM_SOURCE_POSITION("Charset.java", 271)
     if (_r0.o != JAVA_NULL) goto label29;
     XMLVM_SOURCE_POSITION("Charset.java", 303)
     if (_r2.o == JAVA_NULL) goto label28;
-    XMLVM_TRY_BEGIN(w32896aaac20b1c13)
+    XMLVM_TRY_BEGIN(w32901aaac20b1c13)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 304)
     //java_io_BufferedReader_close__[6]
@@ -1362,16 +1365,16 @@ void java_nio_charset_Charset_loadConfiguredCharsets___java_net_URL_java_lang_Cl
     (*(void (*)(JAVA_OBJECT)) ((java_io_BufferedReader*) _r2.o)->tib->vtable[6])(_r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac20b1c13)
-        XMLVM_CATCH_SPECIFIC(w32896aaac20b1c13,java_io_IOException,109)
-    XMLVM_CATCH_END(w32896aaac20b1c13)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac20b1c13)
+    XMLVM_CATCH_BEGIN(w32901aaac20b1c13)
+        XMLVM_CATCH_SPECIFIC(w32901aaac20b1c13,java_io_IOException,109)
+    XMLVM_CATCH_END(w32901aaac20b1c13)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac20b1c13)
     label28:;
     XMLVM_SOURCE_POSITION("Charset.java", 310)
     XMLVM_EXIT_METHOD()
     return;
     label29:;
-    XMLVM_TRY_BEGIN(w32896aaac20b1c18)
+    XMLVM_TRY_BEGIN(w32901aaac20b1c18)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 272)
     _r0.o = java_nio_charset_Charset_trimClassName___java_lang_String(_r0.o);
@@ -1381,15 +1384,15 @@ void java_nio_charset_Charset_loadConfiguredCharsets___java_net_URL_java_lang_Cl
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[8])(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac20b1c18)
-        XMLVM_CATCH_SPECIFIC(w32896aaac20b1c18,java_io_IOException,87)
-        XMLVM_CATCH_SPECIFIC(w32896aaac20b1c18,java_lang_Object,111)
-    XMLVM_CATCH_END(w32896aaac20b1c18)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac20b1c18)
+    XMLVM_CATCH_BEGIN(w32901aaac20b1c18)
+        XMLVM_CATCH_SPECIFIC(w32901aaac20b1c18,java_io_IOException,87)
+        XMLVM_CATCH_SPECIFIC(w32901aaac20b1c18,java_lang_Object,111)
+    XMLVM_CATCH_END(w32901aaac20b1c18)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac20b1c18)
     if (_r1.i <= 0) goto label54;
     XMLVM_SOURCE_POSITION("Charset.java", 278)
     _r1.i = 1;
-    XMLVM_TRY_BEGIN(w32896aaac20b1c22)
+    XMLVM_TRY_BEGIN(w32901aaac20b1c22)
     // Begin try
     _r1.o = java_lang_Class_forName___java_lang_String_boolean_java_lang_ClassLoader(_r0.o, _r1.i, _r7.o);
     XMLVM_SOURCE_POSITION("Charset.java", 280)
@@ -1398,44 +1401,44 @@ void java_nio_charset_Charset_loadConfiguredCharsets___java_net_URL_java_lang_Cl
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_Class*) _r1.o)->tib->vtable[12])(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac20b1c22)
-        XMLVM_CATCH_SPECIFIC(w32896aaac20b1c22,java_lang_Exception,59)
-        XMLVM_CATCH_SPECIFIC(w32896aaac20b1c22,java_io_IOException,87)
-        XMLVM_CATCH_SPECIFIC(w32896aaac20b1c22,java_lang_Object,111)
-    XMLVM_CATCH_END(w32896aaac20b1c22)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac20b1c22)
+    XMLVM_CATCH_BEGIN(w32901aaac20b1c22)
+        XMLVM_CATCH_SPECIFIC(w32901aaac20b1c22,java_lang_Exception,59)
+        XMLVM_CATCH_SPECIFIC(w32901aaac20b1c22,java_io_IOException,87)
+        XMLVM_CATCH_SPECIFIC(w32901aaac20b1c22,java_lang_Object,111)
+    XMLVM_CATCH_END(w32901aaac20b1c22)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac20b1c22)
     _r6 = _r0;
     label49:;
-    XMLVM_TRY_BEGIN(w32896aaac20b1c25)
+    XMLVM_TRY_BEGIN(w32901aaac20b1c25)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 294)
     _r6.o = _r6.o;
     java_nio_charset_Charset_addCharsets___java_nio_charset_spi_CharsetProvider_java_util_TreeMap(_r6.o, _r8.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac20b1c25)
-        XMLVM_CATCH_SPECIFIC(w32896aaac20b1c25,java_io_IOException,87)
-        XMLVM_CATCH_SPECIFIC(w32896aaac20b1c25,java_lang_Object,111)
-    XMLVM_CATCH_END(w32896aaac20b1c25)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac20b1c25)
+    XMLVM_CATCH_BEGIN(w32901aaac20b1c25)
+        XMLVM_CATCH_SPECIFIC(w32901aaac20b1c25,java_io_IOException,87)
+        XMLVM_CATCH_SPECIFIC(w32901aaac20b1c25,java_lang_Object,111)
+    XMLVM_CATCH_END(w32901aaac20b1c25)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac20b1c25)
     label54:;
-    XMLVM_TRY_BEGIN(w32896aaac20b1c27)
+    XMLVM_TRY_BEGIN(w32901aaac20b1c27)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 297)
     XMLVM_CHECK_NPE(2)
     _r0.o = java_io_BufferedReader_readLine__(_r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac20b1c27)
-        XMLVM_CATCH_SPECIFIC(w32896aaac20b1c27,java_io_IOException,87)
-        XMLVM_CATCH_SPECIFIC(w32896aaac20b1c27,java_lang_Object,111)
-    XMLVM_CATCH_END(w32896aaac20b1c27)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac20b1c27)
+    XMLVM_CATCH_BEGIN(w32901aaac20b1c27)
+        XMLVM_CATCH_SPECIFIC(w32901aaac20b1c27,java_io_IOException,87)
+        XMLVM_CATCH_SPECIFIC(w32901aaac20b1c27,java_lang_Object,111)
+    XMLVM_CATCH_END(w32901aaac20b1c27)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac20b1c27)
     goto label21;
     label59:;
-    java_lang_Thread* curThread_w32896aaac20b1c30 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w32896aaac20b1c30->fields.java_lang_Thread.xmlvmException_;
-    XMLVM_TRY_BEGIN(w32896aaac20b1c31)
+    java_lang_Thread* curThread_w32901aaac20b1c30 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w32901aaac20b1c30->fields.java_lang_Thread.xmlvmException_;
+    XMLVM_TRY_BEGIN(w32901aaac20b1c31)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 285)
     java_nio_charset_Charset_getSystemClassLoader__();
@@ -1450,19 +1453,19 @@ void java_nio_charset_Charset_loadConfiguredCharsets___java_net_URL_java_lang_Cl
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_Class*) _r0.o)->tib->vtable[12])(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac20b1c31)
-        XMLVM_CATCH_SPECIFIC(w32896aaac20b1c31,java_lang_Exception,76)
-        XMLVM_CATCH_SPECIFIC(w32896aaac20b1c31,java_io_IOException,87)
-        XMLVM_CATCH_SPECIFIC(w32896aaac20b1c31,java_lang_Object,111)
-    XMLVM_CATCH_END(w32896aaac20b1c31)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac20b1c31)
+    XMLVM_CATCH_BEGIN(w32901aaac20b1c31)
+        XMLVM_CATCH_SPECIFIC(w32901aaac20b1c31,java_lang_Exception,76)
+        XMLVM_CATCH_SPECIFIC(w32901aaac20b1c31,java_io_IOException,87)
+        XMLVM_CATCH_SPECIFIC(w32901aaac20b1c31,java_lang_Object,111)
+    XMLVM_CATCH_END(w32901aaac20b1c31)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac20b1c31)
     _r6 = _r0;
     goto label49;
     label76:;
     XMLVM_SOURCE_POSITION("Charset.java", 289)
-    java_lang_Thread* curThread_w32896aaac20b1c36 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w32896aaac20b1c36->fields.java_lang_Thread.xmlvmException_;
-    XMLVM_TRY_BEGIN(w32896aaac20b1c37)
+    java_lang_Thread* curThread_w32901aaac20b1c36 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w32901aaac20b1c36->fields.java_lang_Thread.xmlvmException_;
+    XMLVM_TRY_BEGIN(w32901aaac20b1c37)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 290)
     _r1.o = __NEW_java_lang_Error();
@@ -1474,73 +1477,73 @@ void java_nio_charset_Charset_loadConfiguredCharsets___java_net_URL_java_lang_Cl
     XMLVM_THROW_CUSTOM(_r1.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac20b1c37)
-        XMLVM_CATCH_SPECIFIC(w32896aaac20b1c37,java_io_IOException,87)
-        XMLVM_CATCH_SPECIFIC(w32896aaac20b1c37,java_lang_Object,111)
-    XMLVM_CATCH_END(w32896aaac20b1c37)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac20b1c37)
+    XMLVM_CATCH_BEGIN(w32901aaac20b1c37)
+        XMLVM_CATCH_SPECIFIC(w32901aaac20b1c37,java_io_IOException,87)
+        XMLVM_CATCH_SPECIFIC(w32901aaac20b1c37,java_lang_Object,111)
+    XMLVM_CATCH_END(w32901aaac20b1c37)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac20b1c37)
     label87:;
-    java_lang_Thread* curThread_w32896aaac20b1c39 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w32896aaac20b1c39->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac20b1c39 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w32901aaac20b1c39->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r2;
     label89:;
     if (_r0.o == JAVA_NULL) goto label28;
-    XMLVM_TRY_BEGIN(w32896aaac20b1c43)
+    XMLVM_TRY_BEGIN(w32901aaac20b1c43)
     // Begin try
     //java_io_BufferedReader_close__[6]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) ((java_io_BufferedReader*) _r0.o)->tib->vtable[6])(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac20b1c43)
-        XMLVM_CATCH_SPECIFIC(w32896aaac20b1c43,java_io_IOException,95)
-    XMLVM_CATCH_END(w32896aaac20b1c43)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac20b1c43)
+    XMLVM_CATCH_BEGIN(w32901aaac20b1c43)
+        XMLVM_CATCH_SPECIFIC(w32901aaac20b1c43,java_io_IOException,95)
+    XMLVM_CATCH_END(w32901aaac20b1c43)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac20b1c43)
     goto label28;
     label95:;
     XMLVM_SOURCE_POSITION("Charset.java", 306)
-    java_lang_Thread* curThread_w32896aaac20b1c47 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w32896aaac20b1c47->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac20b1c47 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w32901aaac20b1c47->fields.java_lang_Thread.xmlvmException_;
     goto label28;
     label97:;
     XMLVM_SOURCE_POSITION("Charset.java", 301)
-    java_lang_Thread* curThread_w32896aaac20b1c51 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w32896aaac20b1c51->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac20b1c51 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w32901aaac20b1c51->fields.java_lang_Thread.xmlvmException_;
     _r5 = _r1;
     _r1 = _r0;
     _r0 = _r5;
     label101:;
     if (_r1.o == JAVA_NULL) goto label106;
-    XMLVM_TRY_BEGIN(w32896aaac20b1c57)
+    XMLVM_TRY_BEGIN(w32901aaac20b1c57)
     // Begin try
     //java_io_BufferedReader_close__[6]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT)) ((java_io_BufferedReader*) _r1.o)->tib->vtable[6])(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac20b1c57)
-        XMLVM_CATCH_SPECIFIC(w32896aaac20b1c57,java_io_IOException,107)
-    XMLVM_CATCH_END(w32896aaac20b1c57)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac20b1c57)
+    XMLVM_CATCH_BEGIN(w32901aaac20b1c57)
+        XMLVM_CATCH_SPECIFIC(w32901aaac20b1c57,java_io_IOException,107)
+    XMLVM_CATCH_END(w32901aaac20b1c57)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac20b1c57)
     label106:;
     XMLVM_SOURCE_POSITION("Charset.java", 309)
     XMLVM_THROW_CUSTOM(_r0.o)
     label107:;
-    java_lang_Thread* curThread_w32896aaac20b1c62 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w32896aaac20b1c62->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac20b1c62 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w32901aaac20b1c62->fields.java_lang_Thread.xmlvmException_;
     goto label106;
     label109:;
-    java_lang_Thread* curThread_w32896aaac20b1c65 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w32896aaac20b1c65->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac20b1c65 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w32901aaac20b1c65->fields.java_lang_Thread.xmlvmException_;
     goto label28;
     label111:;
-    java_lang_Thread* curThread_w32896aaac20b1c68 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w32896aaac20b1c68->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac20b1c68 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w32901aaac20b1c68->fields.java_lang_Thread.xmlvmException_;
     _r1 = _r2;
     goto label101;
     label114:;
-    java_lang_Thread* curThread_w32896aaac20b1c72 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w32896aaac20b1c72->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac20b1c72 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w32901aaac20b1c72->fields.java_lang_Thread.xmlvmException_;
     goto label89;
     //XMLVM_END_WRAPPER
 }
@@ -1563,11 +1566,11 @@ JAVA_OBJECT java_nio_charset_Charset_availableCharsets__()
     if (!__TIB_java_nio_charset_Charset.classInitialized) __INIT_java_nio_charset_Charset();
     _r0.o = __CLASS_java_nio_charset_Charset;
     java_lang_Object_acquireLockRecursive__(_r0.o);
-    XMLVM_TRY_BEGIN(w32896aaac21b1b8)
+    XMLVM_TRY_BEGIN(w32901aaac21b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 327)
     _r1.o = java_nio_charset_Charset_GET__builtInCharsets();
-    if (_r1.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w32896aaac21b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32896aaac21b1b8, sizeof(XMLVM_JMP_BUF)); goto label31; };
+    if (_r1.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w32901aaac21b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32901aaac21b1b8, sizeof(XMLVM_JMP_BUF)); goto label31; };
     XMLVM_SOURCE_POSITION("Charset.java", 328)
     _r1.o = __NEW_java_util_TreeMap();
     XMLVM_SOURCE_POSITION("Charset.java", 329)
@@ -1582,20 +1585,20 @@ JAVA_OBJECT java_nio_charset_Charset_availableCharsets__()
     org_apache_harmony_niochar_CharsetProviderImpl_putCharsets___java_util_Map(_r1.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac21b1b8)
-        XMLVM_CATCH_SPECIFIC(w32896aaac21b1b8,java_lang_Object,64)
-    XMLVM_CATCH_END(w32896aaac21b1b8)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac21b1b8)
+    XMLVM_CATCH_BEGIN(w32901aaac21b1b8)
+        XMLVM_CATCH_SPECIFIC(w32901aaac21b1b8,java_lang_Object,64)
+    XMLVM_CATCH_END(w32901aaac21b1b8)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac21b1b8)
     label31:;
-    XMLVM_TRY_BEGIN(w32896aaac21b1c10)
+    XMLVM_TRY_BEGIN(w32901aaac21b1c10)
     // Begin try
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac21b1c10)
-        XMLVM_CATCH_SPECIFIC(w32896aaac21b1c10,java_lang_Object,64)
-    XMLVM_CATCH_END(w32896aaac21b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac21b1c10)
+    XMLVM_CATCH_BEGIN(w32901aaac21b1c10)
+        XMLVM_CATCH_SPECIFIC(w32901aaac21b1c10,java_lang_Object,64)
+    XMLVM_CATCH_END(w32901aaac21b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac21b1c10)
     label32:;
     XMLVM_SOURCE_POSITION("Charset.java", 336)
     _r0.o = java_nio_charset_Charset_GET__builtInCharsets();
@@ -1608,7 +1611,7 @@ JAVA_OBJECT java_nio_charset_Charset_availableCharsets__()
     _r2.o = java_nio_charset_Charset_getContextClassLoader__();
     XMLVM_SOURCE_POSITION("Charset.java", 343)
     if (_r2.o == JAVA_NULL) goto label67;
-    XMLVM_TRY_BEGIN(w32896aaac21b1c21)
+    XMLVM_TRY_BEGIN(w32901aaac21b1c21)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 345)
     // "META-INF/services/java.nio.charset.spi.CharsetProvider"
@@ -1619,22 +1622,22 @@ JAVA_OBJECT java_nio_charset_Charset_availableCharsets__()
     XMLVM_SOURCE_POSITION("Charset.java", 344)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac21b1c21)
-        XMLVM_CATCH_SPECIFIC(w32896aaac21b1c21,java_io_IOException,90)
-    XMLVM_CATCH_END(w32896aaac21b1c21)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac21b1c21)
+    XMLVM_CATCH_BEGIN(w32901aaac21b1c21)
+        XMLVM_CATCH_SPECIFIC(w32901aaac21b1c21,java_io_IOException,90)
+    XMLVM_CATCH_END(w32901aaac21b1c21)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac21b1c21)
     label53:;
-    XMLVM_TRY_BEGIN(w32896aaac21b1c23)
+    XMLVM_TRY_BEGIN(w32901aaac21b1c23)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 352)
     XMLVM_CHECK_NPE(3)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Enumeration_hasMoreElements__])(_r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac21b1c23)
-        XMLVM_CATCH_SPECIFIC(w32896aaac21b1c23,java_io_IOException,90)
-    XMLVM_CATCH_END(w32896aaac21b1c23)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac21b1c23)
+    XMLVM_CATCH_BEGIN(w32901aaac21b1c23)
+        XMLVM_CATCH_SPECIFIC(w32901aaac21b1c23,java_io_IOException,90)
+    XMLVM_CATCH_END(w32901aaac21b1c23)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac21b1c23)
     if (_r1.i != 0) goto label80;
     label59:;
     XMLVM_SOURCE_POSITION("Charset.java", 359)
@@ -1642,20 +1645,20 @@ JAVA_OBJECT java_nio_charset_Charset_availableCharsets__()
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label64:;
-    java_lang_Thread* curThread_w32896aaac21b1c30 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w32896aaac21b1c30->fields.java_lang_Thread.xmlvmException_;
-    XMLVM_TRY_BEGIN(w32896aaac21b1c31)
+    java_lang_Thread* curThread_w32901aaac21b1c30 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w32901aaac21b1c30->fields.java_lang_Thread.xmlvmException_;
+    XMLVM_TRY_BEGIN(w32901aaac21b1c31)
     // Begin try
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac21b1c31)
-        XMLVM_CATCH_SPECIFIC(w32896aaac21b1c31,java_lang_Object,64)
-    XMLVM_CATCH_END(w32896aaac21b1c31)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac21b1c31)
+    XMLVM_CATCH_BEGIN(w32901aaac21b1c31)
+        XMLVM_CATCH_SPECIFIC(w32901aaac21b1c31,java_lang_Object,64)
+    XMLVM_CATCH_END(w32901aaac21b1c31)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac21b1c31)
     XMLVM_THROW_CUSTOM(_r1.o)
     label67:;
-    XMLVM_TRY_BEGIN(w32896aaac21b1c34)
+    XMLVM_TRY_BEGIN(w32901aaac21b1c34)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 347)
     java_nio_charset_Charset_getSystemClassLoader__();
@@ -1667,16 +1670,16 @@ JAVA_OBJECT java_nio_charset_Charset_availableCharsets__()
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_ClassLoader_getResources___java_lang_String(_r1.o, _r3.o);
     _r3 = _r1;
-    { XMLVM_MEMCPY(curThread_w32896aaac21b1c34->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32896aaac21b1c34, sizeof(XMLVM_JMP_BUF)); goto label53; };
+    { XMLVM_MEMCPY(curThread_w32901aaac21b1c34->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32901aaac21b1c34, sizeof(XMLVM_JMP_BUF)); goto label53; };
     XMLVM_SOURCE_POSITION("Charset.java", 353)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac21b1c34)
-        XMLVM_CATCH_SPECIFIC(w32896aaac21b1c34,java_io_IOException,90)
-    XMLVM_CATCH_END(w32896aaac21b1c34)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac21b1c34)
+    XMLVM_CATCH_BEGIN(w32901aaac21b1c34)
+        XMLVM_CATCH_SPECIFIC(w32901aaac21b1c34,java_io_IOException,90)
+    XMLVM_CATCH_END(w32901aaac21b1c34)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac21b1c34)
     label80:;
-    XMLVM_TRY_BEGIN(w32896aaac21b1c36)
+    XMLVM_TRY_BEGIN(w32901aaac21b1c36)
     // Begin try
     XMLVM_CHECK_NPE(3)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Enumeration_nextElement__])(_r3.o);
@@ -1684,14 +1687,14 @@ JAVA_OBJECT java_nio_charset_Charset_availableCharsets__()
     java_nio_charset_Charset_loadConfiguredCharsets___java_net_URL_java_lang_ClassLoader_java_util_TreeMap(_r1.o, _r2.o, _r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac21b1c36)
-        XMLVM_CATCH_SPECIFIC(w32896aaac21b1c36,java_io_IOException,90)
-    XMLVM_CATCH_END(w32896aaac21b1c36)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac21b1c36)
+    XMLVM_CATCH_BEGIN(w32901aaac21b1c36)
+        XMLVM_CATCH_SPECIFIC(w32901aaac21b1c36,java_io_IOException,90)
+    XMLVM_CATCH_END(w32901aaac21b1c36)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac21b1c36)
     goto label53;
     label90:;
-    java_lang_Thread* curThread_w32896aaac21b1c39 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w32896aaac21b1c39->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac21b1c39 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w32901aaac21b1c39->fields.java_lang_Thread.xmlvmException_;
     goto label59;
     //XMLVM_END_WRAPPER
 }
@@ -1713,7 +1716,7 @@ JAVA_OBJECT java_nio_charset_Charset_searchConfiguredCharsets___java_lang_String
     _r6.o = n2;
     _r7.o = n3;
     _r4.o = JAVA_NULL;
-    XMLVM_TRY_BEGIN(w32896aaac22b1b5)
+    XMLVM_TRY_BEGIN(w32901aaac22b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 369)
     XMLVM_SOURCE_POSITION("Charset.java", 371)
@@ -1731,23 +1734,23 @@ JAVA_OBJECT java_nio_charset_Charset_searchConfiguredCharsets___java_lang_String
     java_io_BufferedReader___INIT____java_io_Reader(_r1.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac22b1b5)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1b5,java_io_IOException,117)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1b5,java_lang_Object,114)
-    XMLVM_CATCH_END(w32896aaac22b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac22b1b5)
-    XMLVM_TRY_BEGIN(w32896aaac22b1b6)
+    XMLVM_CATCH_BEGIN(w32901aaac22b1b5)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1b5,java_io_IOException,117)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1b5,java_lang_Object,114)
+    XMLVM_CATCH_END(w32901aaac22b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac22b1b5)
+    XMLVM_TRY_BEGIN(w32901aaac22b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 375)
     XMLVM_CHECK_NPE(1)
     _r0.o = java_io_BufferedReader_readLine__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac22b1b6)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1b6,java_io_IOException,84)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1b6,java_lang_Object,98)
-    XMLVM_CATCH_END(w32896aaac22b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac22b1b6)
+    XMLVM_CATCH_BEGIN(w32901aaac22b1b6)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1b6,java_io_IOException,84)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1b6,java_lang_Object,98)
+    XMLVM_CATCH_END(w32901aaac22b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac22b1b6)
     label21:;
     XMLVM_SOURCE_POSITION("Charset.java", 376)
     if (_r0.o != JAVA_NULL) goto label31;
@@ -1755,7 +1758,7 @@ JAVA_OBJECT java_nio_charset_Charset_searchConfiguredCharsets___java_lang_String
     label24:;
     XMLVM_SOURCE_POSITION("Charset.java", 415)
     if (_r0.o == JAVA_NULL) goto label29;
-    XMLVM_TRY_BEGIN(w32896aaac22b1c14)
+    XMLVM_TRY_BEGIN(w32901aaac22b1c14)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 416)
     //java_io_BufferedReader_close__[6]
@@ -1763,10 +1766,10 @@ JAVA_OBJECT java_nio_charset_Charset_searchConfiguredCharsets___java_lang_String
     (*(void (*)(JAVA_OBJECT)) ((java_io_BufferedReader*) _r0.o)->tib->vtable[6])(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac22b1c14)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c14,java_io_IOException,110)
-    XMLVM_CATCH_END(w32896aaac22b1c14)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac22b1c14)
+    XMLVM_CATCH_BEGIN(w32901aaac22b1c14)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c14,java_io_IOException,110)
+    XMLVM_CATCH_END(w32901aaac22b1c14)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac22b1c14)
     label29:;
     _r0 = _r4;
     label30:;
@@ -1774,7 +1777,7 @@ JAVA_OBJECT java_nio_charset_Charset_searchConfiguredCharsets___java_lang_String
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label31:;
-    XMLVM_TRY_BEGIN(w32896aaac22b1c21)
+    XMLVM_TRY_BEGIN(w32901aaac22b1c21)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 377)
     _r0.o = java_nio_charset_Charset_trimClassName___java_lang_String(_r0.o);
@@ -1784,15 +1787,15 @@ JAVA_OBJECT java_nio_charset_Charset_searchConfiguredCharsets___java_lang_String
     _r2.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[8])(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac22b1c21)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c21,java_io_IOException,84)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c21,java_lang_Object,98)
-    XMLVM_CATCH_END(w32896aaac22b1c21)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac22b1c21)
+    XMLVM_CATCH_BEGIN(w32901aaac22b1c21)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c21,java_io_IOException,84)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c21,java_lang_Object,98)
+    XMLVM_CATCH_END(w32901aaac22b1c21)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac22b1c21)
     if (_r2.i <= 0) goto label105;
     XMLVM_SOURCE_POSITION("Charset.java", 382)
     _r2.i = 1;
-    XMLVM_TRY_BEGIN(w32896aaac22b1c25)
+    XMLVM_TRY_BEGIN(w32901aaac22b1c25)
     // Begin try
     _r2.o = java_lang_Class_forName___java_lang_String_boolean_java_lang_ClassLoader(_r0.o, _r2.i, _r6.o);
     XMLVM_SOURCE_POSITION("Charset.java", 384)
@@ -1801,14 +1804,14 @@ JAVA_OBJECT java_nio_charset_Charset_searchConfiguredCharsets___java_lang_String
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_Class*) _r2.o)->tib->vtable[12])(_r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac22b1c25)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c25,java_lang_Exception,66)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c25,java_io_IOException,84)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c25,java_lang_Object,98)
-    XMLVM_CATCH_END(w32896aaac22b1c25)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac22b1c25)
+    XMLVM_CATCH_BEGIN(w32901aaac22b1c25)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c25,java_lang_Exception,66)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c25,java_io_IOException,84)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c25,java_lang_Object,98)
+    XMLVM_CATCH_END(w32901aaac22b1c25)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac22b1c25)
     label50:;
-    XMLVM_TRY_BEGIN(w32896aaac22b1c27)
+    XMLVM_TRY_BEGIN(w32901aaac22b1c27)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 400)
     _r0.o = _r0.o;
@@ -1818,34 +1821,34 @@ JAVA_OBJECT java_nio_charset_Charset_searchConfiguredCharsets___java_lang_String
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_nio_charset_spi_CharsetProvider*) _r0.o)->tib->vtable[6])(_r0.o, _r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac22b1c27)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c27,java_io_IOException,84)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c27,java_lang_Object,98)
-    XMLVM_CATCH_END(w32896aaac22b1c27)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac22b1c27)
+    XMLVM_CATCH_BEGIN(w32901aaac22b1c27)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c27,java_io_IOException,84)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c27,java_lang_Object,98)
+    XMLVM_CATCH_END(w32901aaac22b1c27)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac22b1c27)
     XMLVM_SOURCE_POSITION("Charset.java", 402)
     if (_r0.o == JAVA_NULL) goto label105;
     if (_r1.o == JAVA_NULL) goto label30;
-    XMLVM_TRY_BEGIN(w32896aaac22b1c31)
+    XMLVM_TRY_BEGIN(w32901aaac22b1c31)
     // Begin try
     //java_io_BufferedReader_close__[6]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT)) ((java_io_BufferedReader*) _r1.o)->tib->vtable[6])(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac22b1c31)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c31,java_io_IOException,64)
-    XMLVM_CATCH_END(w32896aaac22b1c31)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac22b1c31)
+    XMLVM_CATCH_BEGIN(w32901aaac22b1c31)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c31,java_io_IOException,64)
+    XMLVM_CATCH_END(w32901aaac22b1c31)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac22b1c31)
     goto label30;
     label64:;
-    java_lang_Thread* curThread_w32896aaac22b1c34 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w32896aaac22b1c34->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac22b1c34 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w32901aaac22b1c34->fields.java_lang_Thread.xmlvmException_;
     goto label30;
     label66:;
-    java_lang_Thread* curThread_w32896aaac22b1c37 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w32896aaac22b1c37->fields.java_lang_Thread.xmlvmException_;
-    XMLVM_TRY_BEGIN(w32896aaac22b1c38)
+    java_lang_Thread* curThread_w32901aaac22b1c37 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w32901aaac22b1c37->fields.java_lang_Thread.xmlvmException_;
+    XMLVM_TRY_BEGIN(w32901aaac22b1c38)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 389)
     java_nio_charset_Charset_getSystemClassLoader__();
@@ -1860,50 +1863,50 @@ JAVA_OBJECT java_nio_charset_Charset_searchConfiguredCharsets___java_lang_String
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_Class*) _r0.o)->tib->vtable[12])(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac22b1c38)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c38,java_lang_SecurityException,82)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c38,java_lang_Exception,87)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c38,java_io_IOException,84)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c38,java_lang_Object,98)
-    XMLVM_CATCH_END(w32896aaac22b1c38)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac22b1c38)
+    XMLVM_CATCH_BEGIN(w32901aaac22b1c38)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c38,java_lang_SecurityException,82)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c38,java_lang_Exception,87)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c38,java_io_IOException,84)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c38,java_lang_Object,98)
+    XMLVM_CATCH_END(w32901aaac22b1c38)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac22b1c38)
     goto label50;
     label82:;
     XMLVM_SOURCE_POSITION("Charset.java", 393)
-    java_lang_Thread* curThread_w32896aaac22b1c42 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w32896aaac22b1c42->fields.java_lang_Thread.xmlvmException_;
-    XMLVM_TRY_BEGIN(w32896aaac22b1c43)
+    java_lang_Thread* curThread_w32901aaac22b1c42 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w32901aaac22b1c42->fields.java_lang_Thread.xmlvmException_;
+    XMLVM_TRY_BEGIN(w32901aaac22b1c43)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 394)
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac22b1c43)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c43,java_io_IOException,84)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c43,java_lang_Object,98)
-    XMLVM_CATCH_END(w32896aaac22b1c43)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac22b1c43)
+    XMLVM_CATCH_BEGIN(w32901aaac22b1c43)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c43,java_io_IOException,84)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c43,java_lang_Object,98)
+    XMLVM_CATCH_END(w32901aaac22b1c43)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac22b1c43)
     label84:;
-    XMLVM_TRY_BEGIN(w32896aaac22b1c45)
+    XMLVM_TRY_BEGIN(w32901aaac22b1c45)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 412)
-    java_lang_Thread* curThread_w32896aaac22b1c45ab1 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w32896aaac22b1c45ab1->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac22b1c45ab1 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w32901aaac22b1c45ab1->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r1;
-    { XMLVM_MEMCPY(curThread_w32896aaac22b1c45->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32896aaac22b1c45, sizeof(XMLVM_JMP_BUF)); goto label24; };
+    { XMLVM_MEMCPY(curThread_w32901aaac22b1c45->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32901aaac22b1c45, sizeof(XMLVM_JMP_BUF)); goto label24; };
     XMLVM_SOURCE_POSITION("Charset.java", 395)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac22b1c45)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c45,java_io_IOException,84)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c45,java_lang_Object,98)
-    XMLVM_CATCH_END(w32896aaac22b1c45)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac22b1c45)
+    XMLVM_CATCH_BEGIN(w32901aaac22b1c45)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c45,java_io_IOException,84)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c45,java_lang_Object,98)
+    XMLVM_CATCH_END(w32901aaac22b1c45)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac22b1c45)
     label87:;
-    XMLVM_TRY_BEGIN(w32896aaac22b1c47)
+    XMLVM_TRY_BEGIN(w32901aaac22b1c47)
     // Begin try
-    java_lang_Thread* curThread_w32896aaac22b1c47aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w32896aaac22b1c47aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac22b1c47aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w32901aaac22b1c47aa->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("Charset.java", 396)
     _r2.o = __NEW_java_lang_Error();
     //java_lang_Exception_getMessage__[7]
@@ -1914,61 +1917,61 @@ JAVA_OBJECT java_nio_charset_Charset_searchConfiguredCharsets___java_lang_String
     XMLVM_THROW_CUSTOM(_r2.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac22b1c47)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c47,java_io_IOException,84)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c47,java_lang_Object,98)
-    XMLVM_CATCH_END(w32896aaac22b1c47)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac22b1c47)
+    XMLVM_CATCH_BEGIN(w32901aaac22b1c47)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c47,java_io_IOException,84)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c47,java_lang_Object,98)
+    XMLVM_CATCH_END(w32901aaac22b1c47)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac22b1c47)
     label98:;
     XMLVM_SOURCE_POSITION("Charset.java", 413)
-    java_lang_Thread* curThread_w32896aaac22b1c50 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w32896aaac22b1c50->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac22b1c50 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w32901aaac22b1c50->fields.java_lang_Thread.xmlvmException_;
     label99:;
     if (_r1.o == JAVA_NULL) goto label104;
-    XMLVM_TRY_BEGIN(w32896aaac22b1c53)
+    XMLVM_TRY_BEGIN(w32901aaac22b1c53)
     // Begin try
     //java_io_BufferedReader_close__[6]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT)) ((java_io_BufferedReader*) _r1.o)->tib->vtable[6])(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac22b1c53)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c53,java_io_IOException,112)
-    XMLVM_CATCH_END(w32896aaac22b1c53)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac22b1c53)
+    XMLVM_CATCH_BEGIN(w32901aaac22b1c53)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c53,java_io_IOException,112)
+    XMLVM_CATCH_END(w32901aaac22b1c53)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac22b1c53)
     label104:;
     XMLVM_SOURCE_POSITION("Charset.java", 421)
     XMLVM_THROW_CUSTOM(_r0.o)
     label105:;
-    XMLVM_TRY_BEGIN(w32896aaac22b1c58)
+    XMLVM_TRY_BEGIN(w32901aaac22b1c58)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 407)
     XMLVM_CHECK_NPE(1)
     _r0.o = java_io_BufferedReader_readLine__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac22b1c58)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c58,java_io_IOException,84)
-        XMLVM_CATCH_SPECIFIC(w32896aaac22b1c58,java_lang_Object,98)
-    XMLVM_CATCH_END(w32896aaac22b1c58)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac22b1c58)
+    XMLVM_CATCH_BEGIN(w32901aaac22b1c58)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c58,java_io_IOException,84)
+        XMLVM_CATCH_SPECIFIC(w32901aaac22b1c58,java_lang_Object,98)
+    XMLVM_CATCH_END(w32901aaac22b1c58)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac22b1c58)
     goto label21;
     label110:;
-    java_lang_Thread* curThread_w32896aaac22b1c61 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w32896aaac22b1c61->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac22b1c61 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w32901aaac22b1c61->fields.java_lang_Thread.xmlvmException_;
     goto label29;
     label112:;
-    java_lang_Thread* curThread_w32896aaac22b1c64 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w32896aaac22b1c64->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac22b1c64 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w32901aaac22b1c64->fields.java_lang_Thread.xmlvmException_;
     goto label104;
     label114:;
-    java_lang_Thread* curThread_w32896aaac22b1c67 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w32896aaac22b1c67->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac22b1c67 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w32901aaac22b1c67->fields.java_lang_Thread.xmlvmException_;
     _r1 = _r4;
     goto label99;
     label117:;
-    java_lang_Thread* curThread_w32896aaac22b1c71 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w32896aaac22b1c71->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac22b1c71 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w32901aaac22b1c71->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r4;
     goto label24;
     //XMLVM_END_WRAPPER
@@ -1992,7 +1995,7 @@ JAVA_OBJECT java_nio_charset_Charset_forNameInternal___java_lang_String(JAVA_OBJ
     if (!__TIB_java_nio_charset_Charset.classInitialized) __INIT_java_nio_charset_Charset();
     _r1.o = __CLASS_java_nio_charset_Charset;
     java_lang_Object_acquireLockRecursive__(_r1.o);
-    XMLVM_TRY_BEGIN(w32896aaac23b1b6)
+    XMLVM_TRY_BEGIN(w32901aaac23b1b6)
     // Begin try
     _r0.o = java_nio_charset_Charset_GET_cachedCharsetTable();
     //java_util_HashMap_get___java_lang_Object[10]
@@ -2001,10 +2004,10 @@ JAVA_OBJECT java_nio_charset_Charset_forNameInternal___java_lang_String(JAVA_OBJ
     _r0.o = _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac23b1b6)
-        XMLVM_CATCH_SPECIFIC(w32896aaac23b1b6,java_lang_Object,25)
-    XMLVM_CATCH_END(w32896aaac23b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac23b1b6)
+    XMLVM_CATCH_BEGIN(w32901aaac23b1b6)
+        XMLVM_CATCH_SPECIFIC(w32901aaac23b1b6,java_lang_Object,25)
+    XMLVM_CATCH_END(w32901aaac23b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac23b1b6)
     XMLVM_SOURCE_POSITION("Charset.java", 432)
     if (_r0.o == JAVA_NULL) goto label17;
     label15:;
@@ -2015,7 +2018,7 @@ JAVA_OBJECT java_nio_charset_Charset_forNameInternal___java_lang_String(JAVA_OBJ
     label17:;
     XMLVM_SOURCE_POSITION("Charset.java", 436)
     if (_r5.o != JAVA_NULL) goto label28;
-    XMLVM_TRY_BEGIN(w32896aaac23b1c16)
+    XMLVM_TRY_BEGIN(w32901aaac23b1c16)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 437)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
@@ -2024,23 +2027,23 @@ JAVA_OBJECT java_nio_charset_Charset_forNameInternal___java_lang_String(JAVA_OBJ
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac23b1c16)
-        XMLVM_CATCH_SPECIFIC(w32896aaac23b1c16,java_lang_Object,25)
-    XMLVM_CATCH_END(w32896aaac23b1c16)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac23b1c16)
+    XMLVM_CATCH_BEGIN(w32901aaac23b1c16)
+        XMLVM_CATCH_SPECIFIC(w32901aaac23b1c16,java_lang_Object,25)
+    XMLVM_CATCH_END(w32901aaac23b1c16)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac23b1c16)
     label25:;
-    java_lang_Thread* curThread_w32896aaac23b1c18 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w32896aaac23b1c18->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac23b1c18 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w32901aaac23b1c18->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label28:;
-    XMLVM_TRY_BEGIN(w32896aaac23b1c22)
+    XMLVM_TRY_BEGIN(w32901aaac23b1c22)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 439)
     java_nio_charset_Charset_checkCharsetName___java_lang_String(_r5.o);
     XMLVM_SOURCE_POSITION("Charset.java", 441)
     _r0.o = java_nio_charset_Charset_GET__builtInProvider();
-    if (_r0.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w32896aaac23b1c22->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32896aaac23b1c22, sizeof(XMLVM_JMP_BUF)); goto label42; };
+    if (_r0.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w32901aaac23b1c22->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32901aaac23b1c22, sizeof(XMLVM_JMP_BUF)); goto label42; };
     XMLVM_SOURCE_POSITION("Charset.java", 442)
     _r0.o = __NEW_org_apache_harmony_niochar_CharsetProviderImpl();
     XMLVM_CHECK_NPE(0)
@@ -2048,12 +2051,12 @@ JAVA_OBJECT java_nio_charset_Charset_forNameInternal___java_lang_String(JAVA_OBJ
     java_nio_charset_Charset_PUT__builtInProvider( _r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac23b1c22)
-        XMLVM_CATCH_SPECIFIC(w32896aaac23b1c22,java_lang_Object,25)
-    XMLVM_CATCH_END(w32896aaac23b1c22)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac23b1c22)
+    XMLVM_CATCH_BEGIN(w32901aaac23b1c22)
+        XMLVM_CATCH_SPECIFIC(w32901aaac23b1c22,java_lang_Object,25)
+    XMLVM_CATCH_END(w32901aaac23b1c22)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac23b1c22)
     label42:;
-    XMLVM_TRY_BEGIN(w32896aaac23b1c24)
+    XMLVM_TRY_BEGIN(w32901aaac23b1c24)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 444)
     _r0.o = java_nio_charset_Charset_GET__builtInProvider();
@@ -2061,30 +2064,30 @@ JAVA_OBJECT java_nio_charset_Charset_forNameInternal___java_lang_String(JAVA_OBJ
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((org_apache_harmony_niochar_CharsetProviderImpl*) _r0.o)->tib->vtable[6])(_r0.o, _r5.o);
     XMLVM_SOURCE_POSITION("Charset.java", 445)
-    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w32896aaac23b1c24->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32896aaac23b1c24, sizeof(XMLVM_JMP_BUF)); goto label54; };
+    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w32901aaac23b1c24->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32901aaac23b1c24, sizeof(XMLVM_JMP_BUF)); goto label54; };
     XMLVM_SOURCE_POSITION("Charset.java", 446)
     java_nio_charset_Charset_cacheCharset___java_nio_charset_Charset_java_lang_String(_r0.o, _r5.o);
-    { XMLVM_MEMCPY(curThread_w32896aaac23b1c24->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32896aaac23b1c24, sizeof(XMLVM_JMP_BUF)); goto label15; };
+    { XMLVM_MEMCPY(curThread_w32901aaac23b1c24->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32901aaac23b1c24, sizeof(XMLVM_JMP_BUF)); goto label15; };
     XMLVM_SOURCE_POSITION("Charset.java", 451)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac23b1c24)
-        XMLVM_CATCH_SPECIFIC(w32896aaac23b1c24,java_lang_Object,25)
-    XMLVM_CATCH_END(w32896aaac23b1c24)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac23b1c24)
+    XMLVM_CATCH_BEGIN(w32901aaac23b1c24)
+        XMLVM_CATCH_SPECIFIC(w32901aaac23b1c24,java_lang_Object,25)
+    XMLVM_CATCH_END(w32901aaac23b1c24)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac23b1c24)
     label54:;
-    XMLVM_TRY_BEGIN(w32896aaac23b1c26)
+    XMLVM_TRY_BEGIN(w32901aaac23b1c26)
     // Begin try
     _r2.o = java_nio_charset_Charset_getContextClassLoader__();
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac23b1c26)
-        XMLVM_CATCH_SPECIFIC(w32896aaac23b1c26,java_lang_Object,25)
-    XMLVM_CATCH_END(w32896aaac23b1c26)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac23b1c26)
+    XMLVM_CATCH_BEGIN(w32901aaac23b1c26)
+        XMLVM_CATCH_SPECIFIC(w32901aaac23b1c26,java_lang_Object,25)
+    XMLVM_CATCH_END(w32901aaac23b1c26)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac23b1c26)
     XMLVM_SOURCE_POSITION("Charset.java", 454)
     if (_r2.o == JAVA_NULL) goto label78;
-    XMLVM_TRY_BEGIN(w32896aaac23b1c29)
+    XMLVM_TRY_BEGIN(w32901aaac23b1c29)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 456)
     // "META-INF/services/java.nio.charset.spi.CharsetProvider"
@@ -2095,47 +2098,47 @@ JAVA_OBJECT java_nio_charset_Charset_forNameInternal___java_lang_String(JAVA_OBJ
     XMLVM_SOURCE_POSITION("Charset.java", 455)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac23b1c29)
-        XMLVM_CATCH_SPECIFIC(w32896aaac23b1c29,java_io_IOException,131)
-        XMLVM_CATCH_SPECIFIC(w32896aaac23b1c29,java_lang_Object,136)
-    XMLVM_CATCH_END(w32896aaac23b1c29)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac23b1c29)
+    XMLVM_CATCH_BEGIN(w32901aaac23b1c29)
+        XMLVM_CATCH_SPECIFIC(w32901aaac23b1c29,java_io_IOException,131)
+        XMLVM_CATCH_SPECIFIC(w32901aaac23b1c29,java_lang_Object,136)
+    XMLVM_CATCH_END(w32901aaac23b1c29)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac23b1c29)
     label67:;
-    XMLVM_TRY_BEGIN(w32896aaac23b1c31)
+    XMLVM_TRY_BEGIN(w32901aaac23b1c31)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 469)
     XMLVM_CHECK_NPE(3)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Enumeration_hasMoreElements__])(_r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac23b1c31)
-        XMLVM_CATCH_SPECIFIC(w32896aaac23b1c31,java_io_IOException,131)
-        XMLVM_CATCH_SPECIFIC(w32896aaac23b1c31,java_lang_Object,136)
-    XMLVM_CATCH_END(w32896aaac23b1c31)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac23b1c31)
+    XMLVM_CATCH_BEGIN(w32901aaac23b1c31)
+        XMLVM_CATCH_SPECIFIC(w32901aaac23b1c31,java_io_IOException,131)
+        XMLVM_CATCH_SPECIFIC(w32901aaac23b1c31,java_lang_Object,136)
+    XMLVM_CATCH_END(w32901aaac23b1c31)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac23b1c31)
     if (_r0.i != 0) goto label106;
     XMLVM_SOURCE_POSITION("Charset.java", 482)
     _r0.i = 0;
-    XMLVM_TRY_BEGIN(w32896aaac23b1c35)
+    XMLVM_TRY_BEGIN(w32901aaac23b1c35)
     // Begin try
     java_nio_charset_Charset_PUT_inForNameInternal( _r0.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac23b1c35)
-        XMLVM_CATCH_SPECIFIC(w32896aaac23b1c35,java_lang_Object,25)
-    XMLVM_CATCH_END(w32896aaac23b1c35)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac23b1c35)
+    XMLVM_CATCH_BEGIN(w32901aaac23b1c35)
+        XMLVM_CATCH_SPECIFIC(w32901aaac23b1c35,java_lang_Object,25)
+    XMLVM_CATCH_END(w32901aaac23b1c35)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac23b1c35)
     label76:;
     _r0.o = JAVA_NULL;
     goto label15;
     label78:;
-    XMLVM_TRY_BEGIN(w32896aaac23b1c40)
+    XMLVM_TRY_BEGIN(w32901aaac23b1c40)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 458)
     java_nio_charset_Charset_getSystemClassLoader__();
     XMLVM_SOURCE_POSITION("Charset.java", 459)
     _r0.o = java_nio_charset_Charset_GET_systemClassLoader();
-    if (_r0.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w32896aaac23b1c40->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32896aaac23b1c40, sizeof(XMLVM_JMP_BUF)); goto label96; };
+    if (_r0.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w32901aaac23b1c40->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32901aaac23b1c40, sizeof(XMLVM_JMP_BUF)); goto label96; };
     XMLVM_SOURCE_POSITION("Charset.java", 461)
     _r0.o = __NEW_java_util_Vector();
     XMLVM_CHECK_NPE(0)
@@ -2143,17 +2146,17 @@ JAVA_OBJECT java_nio_charset_Charset_forNameInternal___java_lang_String(JAVA_OBJ
     XMLVM_CHECK_NPE(0)
     _r0.o = java_util_Vector_elements__(_r0.o);
     _r3 = _r0;
-    { XMLVM_MEMCPY(curThread_w32896aaac23b1c40->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32896aaac23b1c40, sizeof(XMLVM_JMP_BUF)); goto label67; };
+    { XMLVM_MEMCPY(curThread_w32901aaac23b1c40->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32901aaac23b1c40, sizeof(XMLVM_JMP_BUF)); goto label67; };
     XMLVM_SOURCE_POSITION("Charset.java", 463)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac23b1c40)
-        XMLVM_CATCH_SPECIFIC(w32896aaac23b1c40,java_io_IOException,131)
-        XMLVM_CATCH_SPECIFIC(w32896aaac23b1c40,java_lang_Object,136)
-    XMLVM_CATCH_END(w32896aaac23b1c40)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac23b1c40)
+    XMLVM_CATCH_BEGIN(w32901aaac23b1c40)
+        XMLVM_CATCH_SPECIFIC(w32901aaac23b1c40,java_io_IOException,131)
+        XMLVM_CATCH_SPECIFIC(w32901aaac23b1c40,java_lang_Object,136)
+    XMLVM_CATCH_END(w32901aaac23b1c40)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac23b1c40)
     label96:;
-    XMLVM_TRY_BEGIN(w32896aaac23b1c42)
+    XMLVM_TRY_BEGIN(w32901aaac23b1c42)
     // Begin try
     _r0.o = java_nio_charset_Charset_GET_systemClassLoader();
     XMLVM_SOURCE_POSITION("Charset.java", 464)
@@ -2162,17 +2165,17 @@ JAVA_OBJECT java_nio_charset_Charset_forNameInternal___java_lang_String(JAVA_OBJ
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_ClassLoader_getResources___java_lang_String(_r0.o, _r3.o);
     _r3 = _r0;
-    { XMLVM_MEMCPY(curThread_w32896aaac23b1c42->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32896aaac23b1c42, sizeof(XMLVM_JMP_BUF)); goto label67; };
+    { XMLVM_MEMCPY(curThread_w32901aaac23b1c42->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32901aaac23b1c42, sizeof(XMLVM_JMP_BUF)); goto label67; };
     XMLVM_SOURCE_POSITION("Charset.java", 470)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac23b1c42)
-        XMLVM_CATCH_SPECIFIC(w32896aaac23b1c42,java_io_IOException,131)
-        XMLVM_CATCH_SPECIFIC(w32896aaac23b1c42,java_lang_Object,136)
-    XMLVM_CATCH_END(w32896aaac23b1c42)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac23b1c42)
+    XMLVM_CATCH_BEGIN(w32901aaac23b1c42)
+        XMLVM_CATCH_SPECIFIC(w32901aaac23b1c42,java_io_IOException,131)
+        XMLVM_CATCH_SPECIFIC(w32901aaac23b1c42,java_lang_Object,136)
+    XMLVM_CATCH_END(w32901aaac23b1c42)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac23b1c42)
     label106:;
-    XMLVM_TRY_BEGIN(w32896aaac23b1c44)
+    XMLVM_TRY_BEGIN(w32901aaac23b1c44)
     // Begin try
     _r0.i = 1;
     java_nio_charset_Charset_PUT_inForNameInternal( _r0.i);
@@ -2186,57 +2189,57 @@ JAVA_OBJECT java_nio_charset_Charset_forNameInternal___java_lang_String(JAVA_OBJ
     _r4.i = 0;
     java_nio_charset_Charset_PUT_inForNameInternal( _r4.i);
     XMLVM_SOURCE_POSITION("Charset.java", 474)
-    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w32896aaac23b1c44->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32896aaac23b1c44, sizeof(XMLVM_JMP_BUF)); goto label67; };
+    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w32901aaac23b1c44->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32901aaac23b1c44, sizeof(XMLVM_JMP_BUF)); goto label67; };
     XMLVM_SOURCE_POSITION("Charset.java", 475)
     java_nio_charset_Charset_cacheCharset___java_nio_charset_Charset_java_lang_String(_r0.o, _r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac23b1c44)
-        XMLVM_CATCH_SPECIFIC(w32896aaac23b1c44,java_io_IOException,131)
-        XMLVM_CATCH_SPECIFIC(w32896aaac23b1c44,java_lang_Object,136)
-    XMLVM_CATCH_END(w32896aaac23b1c44)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac23b1c44)
+    XMLVM_CATCH_BEGIN(w32901aaac23b1c44)
+        XMLVM_CATCH_SPECIFIC(w32901aaac23b1c44,java_io_IOException,131)
+        XMLVM_CATCH_SPECIFIC(w32901aaac23b1c44,java_lang_Object,136)
+    XMLVM_CATCH_END(w32901aaac23b1c44)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac23b1c44)
     _r2.i = 0;
-    XMLVM_TRY_BEGIN(w32896aaac23b1c46)
+    XMLVM_TRY_BEGIN(w32901aaac23b1c46)
     // Begin try
     java_nio_charset_Charset_PUT_inForNameInternal( _r2.i);
-    { XMLVM_MEMCPY(curThread_w32896aaac23b1c46->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32896aaac23b1c46, sizeof(XMLVM_JMP_BUF)); goto label15; };
+    { XMLVM_MEMCPY(curThread_w32901aaac23b1c46->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32901aaac23b1c46, sizeof(XMLVM_JMP_BUF)); goto label15; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac23b1c46)
-        XMLVM_CATCH_SPECIFIC(w32896aaac23b1c46,java_lang_Object,25)
-    XMLVM_CATCH_END(w32896aaac23b1c46)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac23b1c46)
+    XMLVM_CATCH_BEGIN(w32901aaac23b1c46)
+        XMLVM_CATCH_SPECIFIC(w32901aaac23b1c46,java_lang_Object,25)
+    XMLVM_CATCH_END(w32901aaac23b1c46)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac23b1c46)
     label131:;
-    XMLVM_TRY_BEGIN(w32896aaac23b1c48)
+    XMLVM_TRY_BEGIN(w32901aaac23b1c48)
     // Begin try
-    java_lang_Thread* curThread_w32896aaac23b1c48aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w32896aaac23b1c48aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac23b1c48aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w32901aaac23b1c48aa->fields.java_lang_Thread.xmlvmException_;
     _r0.i = 0;
     java_nio_charset_Charset_PUT_inForNameInternal( _r0.i);
-    { XMLVM_MEMCPY(curThread_w32896aaac23b1c48->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32896aaac23b1c48, sizeof(XMLVM_JMP_BUF)); goto label76; };
+    { XMLVM_MEMCPY(curThread_w32901aaac23b1c48->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32901aaac23b1c48, sizeof(XMLVM_JMP_BUF)); goto label76; };
     XMLVM_SOURCE_POSITION("Charset.java", 481)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac23b1c48)
-        XMLVM_CATCH_SPECIFIC(w32896aaac23b1c48,java_lang_Object,25)
-    XMLVM_CATCH_END(w32896aaac23b1c48)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac23b1c48)
+    XMLVM_CATCH_BEGIN(w32901aaac23b1c48)
+        XMLVM_CATCH_SPECIFIC(w32901aaac23b1c48,java_lang_Object,25)
+    XMLVM_CATCH_END(w32901aaac23b1c48)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac23b1c48)
     label136:;
-    XMLVM_TRY_BEGIN(w32896aaac23b1c50)
+    XMLVM_TRY_BEGIN(w32901aaac23b1c50)
     // Begin try
-    java_lang_Thread* curThread_w32896aaac23b1c50aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w32896aaac23b1c50aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac23b1c50aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w32901aaac23b1c50aa->fields.java_lang_Thread.xmlvmException_;
     _r2.i = 0;
     java_nio_charset_Charset_PUT_inForNameInternal( _r2.i);
     XMLVM_SOURCE_POSITION("Charset.java", 483)
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac23b1c50)
-        XMLVM_CATCH_SPECIFIC(w32896aaac23b1c50,java_lang_Object,25)
-    XMLVM_CATCH_END(w32896aaac23b1c50)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac23b1c50)
+    XMLVM_CATCH_BEGIN(w32901aaac23b1c50)
+        XMLVM_CATCH_SPECIFIC(w32901aaac23b1c50,java_lang_Object,25)
+    XMLVM_CATCH_END(w32901aaac23b1c50)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac23b1c50)
     //XMLVM_END_WRAPPER
 }
 
@@ -2330,10 +2333,10 @@ JAVA_BOOLEAN java_nio_charset_Charset_isSupported___java_lang_String(JAVA_OBJECT
     if (!__TIB_java_nio_charset_Charset.classInitialized) __INIT_java_nio_charset_Charset();
     _r1.o = __CLASS_java_nio_charset_Charset;
     java_lang_Object_acquireLockRecursive__(_r1.o);
-    XMLVM_TRY_BEGIN(w32896aaac26b1b7)
+    XMLVM_TRY_BEGIN(w32901aaac26b1b7)
     // Begin try
     _r0.i = java_nio_charset_Charset_GET_inForNameInternal();
-    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w32896aaac26b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32896aaac26b1b7, sizeof(XMLVM_JMP_BUF)); goto label62; };
+    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w32901aaac26b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32901aaac26b1b7, sizeof(XMLVM_JMP_BUF)); goto label62; };
     XMLVM_SOURCE_POSITION("Charset.java", 533)
     _r0.o = java_nio_charset_Charset_GET_cachedCharsetTable();
     //java_util_HashMap_get___java_lang_Object[10]
@@ -2342,10 +2345,10 @@ JAVA_BOOLEAN java_nio_charset_Charset_isSupported___java_lang_String(JAVA_OBJECT
     _r0.o = _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac26b1b7)
-        XMLVM_CATCH_SPECIFIC(w32896aaac26b1b7,java_lang_Object,30)
-    XMLVM_CATCH_END(w32896aaac26b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac26b1b7)
+    XMLVM_CATCH_BEGIN(w32901aaac26b1b7)
+        XMLVM_CATCH_SPECIFIC(w32901aaac26b1b7,java_lang_Object,30)
+    XMLVM_CATCH_END(w32901aaac26b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac26b1b7)
     XMLVM_SOURCE_POSITION("Charset.java", 534)
     if (_r0.o == JAVA_NULL) goto label22;
     _r0 = _r2;
@@ -2358,7 +2361,7 @@ JAVA_BOOLEAN java_nio_charset_Charset_isSupported___java_lang_String(JAVA_OBJECT
     label22:;
     XMLVM_SOURCE_POSITION("Charset.java", 538)
     if (_r4.o != JAVA_NULL) goto label33;
-    XMLVM_TRY_BEGIN(w32896aaac26b1c19)
+    XMLVM_TRY_BEGIN(w32901aaac26b1c19)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 539)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
@@ -2367,23 +2370,23 @@ JAVA_BOOLEAN java_nio_charset_Charset_isSupported___java_lang_String(JAVA_OBJECT
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac26b1c19)
-        XMLVM_CATCH_SPECIFIC(w32896aaac26b1c19,java_lang_Object,30)
-    XMLVM_CATCH_END(w32896aaac26b1c19)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac26b1c19)
+    XMLVM_CATCH_BEGIN(w32901aaac26b1c19)
+        XMLVM_CATCH_SPECIFIC(w32901aaac26b1c19,java_lang_Object,30)
+    XMLVM_CATCH_END(w32901aaac26b1c19)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac26b1c19)
     label30:;
-    java_lang_Thread* curThread_w32896aaac26b1c21 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w32896aaac26b1c21->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac26b1c21 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w32901aaac26b1c21->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label33:;
-    XMLVM_TRY_BEGIN(w32896aaac26b1c25)
+    XMLVM_TRY_BEGIN(w32901aaac26b1c25)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 541)
     java_nio_charset_Charset_checkCharsetName___java_lang_String(_r4.o);
     XMLVM_SOURCE_POSITION("Charset.java", 544)
     _r0.o = java_nio_charset_Charset_GET__builtInProvider();
-    if (_r0.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w32896aaac26b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32896aaac26b1c25, sizeof(XMLVM_JMP_BUF)); goto label47; };
+    if (_r0.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w32901aaac26b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32901aaac26b1c25, sizeof(XMLVM_JMP_BUF)); goto label47; };
     XMLVM_SOURCE_POSITION("Charset.java", 545)
     _r0.o = __NEW_org_apache_harmony_niochar_CharsetProviderImpl();
     XMLVM_CHECK_NPE(0)
@@ -2391,12 +2394,12 @@ JAVA_BOOLEAN java_nio_charset_Charset_isSupported___java_lang_String(JAVA_OBJECT
     java_nio_charset_Charset_PUT__builtInProvider( _r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac26b1c25)
-        XMLVM_CATCH_SPECIFIC(w32896aaac26b1c25,java_lang_Object,30)
-    XMLVM_CATCH_END(w32896aaac26b1c25)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac26b1c25)
+    XMLVM_CATCH_BEGIN(w32901aaac26b1c25)
+        XMLVM_CATCH_SPECIFIC(w32901aaac26b1c25,java_lang_Object,30)
+    XMLVM_CATCH_END(w32901aaac26b1c25)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac26b1c25)
     label47:;
-    XMLVM_TRY_BEGIN(w32896aaac26b1c27)
+    XMLVM_TRY_BEGIN(w32901aaac26b1c27)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 547)
     _r0.o = java_nio_charset_Charset_GET__builtInProvider();
@@ -2404,41 +2407,41 @@ JAVA_BOOLEAN java_nio_charset_Charset_isSupported___java_lang_String(JAVA_OBJECT
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((org_apache_harmony_niochar_CharsetProviderImpl*) _r0.o)->tib->vtable[6])(_r0.o, _r4.o);
     XMLVM_SOURCE_POSITION("Charset.java", 548)
-    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w32896aaac26b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32896aaac26b1c27, sizeof(XMLVM_JMP_BUF)); goto label60; };
+    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w32901aaac26b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32901aaac26b1c27, sizeof(XMLVM_JMP_BUF)); goto label60; };
     XMLVM_SOURCE_POSITION("Charset.java", 549)
     java_nio_charset_Charset_cacheCharset___java_nio_charset_Charset_java_lang_String(_r0.o, _r4.o);
     _r0 = _r2;
     XMLVM_SOURCE_POSITION("Charset.java", 550)
-    { XMLVM_MEMCPY(curThread_w32896aaac26b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32896aaac26b1c27, sizeof(XMLVM_JMP_BUF)); goto label20; };
+    { XMLVM_MEMCPY(curThread_w32901aaac26b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32901aaac26b1c27, sizeof(XMLVM_JMP_BUF)); goto label20; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac26b1c27)
-        XMLVM_CATCH_SPECIFIC(w32896aaac26b1c27,java_lang_Object,30)
-    XMLVM_CATCH_END(w32896aaac26b1c27)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac26b1c27)
+    XMLVM_CATCH_BEGIN(w32901aaac26b1c27)
+        XMLVM_CATCH_SPECIFIC(w32901aaac26b1c27,java_lang_Object,30)
+    XMLVM_CATCH_END(w32901aaac26b1c27)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac26b1c27)
     label60:;
-    XMLVM_TRY_BEGIN(w32896aaac26b1c29)
+    XMLVM_TRY_BEGIN(w32901aaac26b1c29)
     // Begin try
     _r0 = _r3;
     XMLVM_SOURCE_POSITION("Charset.java", 552)
-    { XMLVM_MEMCPY(curThread_w32896aaac26b1c29->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32896aaac26b1c29, sizeof(XMLVM_JMP_BUF)); goto label20; };
+    { XMLVM_MEMCPY(curThread_w32901aaac26b1c29->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32901aaac26b1c29, sizeof(XMLVM_JMP_BUF)); goto label20; };
     XMLVM_SOURCE_POSITION("Charset.java", 554)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac26b1c29)
-        XMLVM_CATCH_SPECIFIC(w32896aaac26b1c29,java_lang_Object,30)
-    XMLVM_CATCH_END(w32896aaac26b1c29)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac26b1c29)
+    XMLVM_CATCH_BEGIN(w32901aaac26b1c29)
+        XMLVM_CATCH_SPECIFIC(w32901aaac26b1c29,java_lang_Object,30)
+    XMLVM_CATCH_END(w32901aaac26b1c29)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac26b1c29)
     label62:;
-    XMLVM_TRY_BEGIN(w32896aaac26b1c31)
+    XMLVM_TRY_BEGIN(w32901aaac26b1c31)
     // Begin try
     _r0.o = java_nio_charset_Charset_forNameInternal___java_lang_String(_r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac26b1c31)
-        XMLVM_CATCH_SPECIFIC(w32896aaac26b1c31,java_lang_Object,30)
-    XMLVM_CATCH_END(w32896aaac26b1c31)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac26b1c31)
+    XMLVM_CATCH_BEGIN(w32901aaac26b1c31)
+        XMLVM_CATCH_SPECIFIC(w32901aaac26b1c31,java_lang_Object,30)
+    XMLVM_CATCH_END(w32901aaac26b1c31)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac26b1c31)
     if (_r0.o == JAVA_NULL) goto label70;
     _r0 = _r2;
     goto label20;
@@ -2456,6 +2459,7 @@ JAVA_OBJECT java_nio_charset_Charset_name__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Charset.java", 591)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_charset_Charset*) _r1.o)->fields.java_nio_charset_Charset.canonicalName_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2470,6 +2474,7 @@ JAVA_OBJECT java_nio_charset_Charset_aliases__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Charset.java", 600)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_charset_Charset*) _r1.o)->fields.java_nio_charset_Charset.aliasesSet_;
     _r0.o = java_util_Collections_unmodifiableSet___java_util_Set(_r0.o);
     XMLVM_EXIT_METHOD()
@@ -2485,6 +2490,7 @@ JAVA_OBJECT java_nio_charset_Charset_displayName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Charset.java", 612)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_charset_Charset*) _r1.o)->fields.java_nio_charset_Charset.canonicalName_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2501,6 +2507,7 @@ JAVA_OBJECT java_nio_charset_Charset_displayName___java_util_Locale(JAVA_OBJECT 
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Charset.java", 626)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_charset_Charset*) _r1.o)->fields.java_nio_charset_Charset.canonicalName_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2516,6 +2523,7 @@ JAVA_BOOLEAN java_nio_charset_Charset_isRegistered__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Charset.java", 637)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_charset_Charset*) _r2.o)->fields.java_nio_charset_Charset.canonicalName_;
     // "x-"
     _r1.o = xmlvm_create_java_string_from_pool(2534);
@@ -2523,6 +2531,7 @@ JAVA_BOOLEAN java_nio_charset_Charset_isRegistered__(JAVA_OBJECT me)
     _r0.i = java_lang_String_startsWith___java_lang_String(_r0.o, _r1.o);
     if (_r0.i != 0) goto label22;
     XMLVM_SOURCE_POSITION("Charset.java", 638)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_charset_Charset*) _r2.o)->fields.java_nio_charset_Charset.canonicalName_;
     // "X-"
     _r1.o = xmlvm_create_java_string_from_pool(2535);
@@ -2564,7 +2573,7 @@ JAVA_OBJECT java_nio_charset_Charset_encode___java_nio_CharBuffer(JAVA_OBJECT me
     XMLVMElem _r4;
     _r3.o = me;
     _r4.o = n1;
-    XMLVM_TRY_BEGIN(w32896aaac36b1b3)
+    XMLVM_TRY_BEGIN(w32901aaac36b1b3)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 663)
     //java_nio_charset_Charset_newEncoder__[9]
@@ -2582,16 +2591,16 @@ JAVA_OBJECT java_nio_charset_Charset_encode___java_nio_CharBuffer(JAVA_OBJECT me
     _r0.o = java_nio_charset_CharsetEncoder_encode___java_nio_CharBuffer(_r0.o, _r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac36b1b3)
-        XMLVM_CATCH_SPECIFIC(w32896aaac36b1b3,java_nio_charset_CharacterCodingException,21)
-    XMLVM_CATCH_END(w32896aaac36b1b3)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac36b1b3)
+    XMLVM_CATCH_BEGIN(w32901aaac36b1b3)
+        XMLVM_CATCH_SPECIFIC(w32901aaac36b1b3,java_nio_charset_CharacterCodingException,21)
+    XMLVM_CATCH_END(w32901aaac36b1b3)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac36b1b3)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label21:;
     XMLVM_SOURCE_POSITION("Charset.java", 668)
-    java_lang_Thread* curThread_w32896aaac36b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w32896aaac36b1b7->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac36b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w32901aaac36b1b7->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("Charset.java", 669)
     _r1.o = __NEW_java_lang_Error();
     //java_nio_charset_CharacterCodingException_getMessage__[7]
@@ -2632,7 +2641,7 @@ JAVA_OBJECT java_nio_charset_Charset_decode___java_nio_ByteBuffer(JAVA_OBJECT me
     XMLVMElem _r4;
     _r3.o = me;
     _r4.o = n1;
-    XMLVM_TRY_BEGIN(w32896aaac38b1b3)
+    XMLVM_TRY_BEGIN(w32901aaac38b1b3)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 701)
     //java_nio_charset_Charset_newDecoder__[8]
@@ -2650,16 +2659,16 @@ JAVA_OBJECT java_nio_charset_Charset_decode___java_nio_ByteBuffer(JAVA_OBJECT me
     _r0.o = java_nio_charset_CharsetDecoder_decode___java_nio_ByteBuffer(_r0.o, _r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac38b1b3)
-        XMLVM_CATCH_SPECIFIC(w32896aaac38b1b3,java_nio_charset_CharacterCodingException,21)
-    XMLVM_CATCH_END(w32896aaac38b1b3)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac38b1b3)
+    XMLVM_CATCH_BEGIN(w32901aaac38b1b3)
+        XMLVM_CATCH_SPECIFIC(w32901aaac38b1b3,java_nio_charset_CharacterCodingException,21)
+    XMLVM_CATCH_END(w32901aaac38b1b3)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac38b1b3)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label21:;
     XMLVM_SOURCE_POSITION("Charset.java", 706)
-    java_lang_Thread* curThread_w32896aaac38b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w32896aaac38b1b7->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac38b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w32901aaac38b1b7->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("Charset.java", 707)
     _r1.o = __NEW_java_lang_Error();
     //java_nio_charset_CharacterCodingException_getMessage__[7]
@@ -2682,7 +2691,9 @@ JAVA_INT java_nio_charset_Charset_compareTo___java_nio_charset_Charset(JAVA_OBJE
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Charset.java", 727)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_charset_Charset*) _r2.o)->fields.java_nio_charset_Charset.canonicalName_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_nio_charset_Charset*) _r3.o)->fields.java_nio_charset_Charset.canonicalName_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_String_compareToIgnoreCase___java_lang_String(_r0.o, _r1.o);
@@ -2708,7 +2719,9 @@ JAVA_BOOLEAN java_nio_charset_Charset_equals___java_lang_Object(JAVA_OBJECT me, 
     XMLVM_SOURCE_POSITION("Charset.java", 747)
     _r3.o = _r3.o;
     XMLVM_SOURCE_POSITION("Charset.java", 748)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_charset_Charset*) _r2.o)->fields.java_nio_charset_Charset.canonicalName_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_nio_charset_Charset*) _r3.o)->fields.java_nio_charset_Charset.canonicalName_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -2731,6 +2744,7 @@ JAVA_INT java_nio_charset_Charset_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Charset.java", 760)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_charset_Charset*) _r1.o)->fields.java_nio_charset_Charset.canonicalName_;
     //java_lang_String_hashCode__[4]
     XMLVM_CHECK_NPE(0)
@@ -2754,6 +2768,7 @@ JAVA_OBJECT java_nio_charset_Charset_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(2536);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_charset_Charset*) _r2.o)->fields.java_nio_charset_Charset.canonicalName_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
@@ -2781,24 +2796,24 @@ JAVA_OBJECT java_nio_charset_Charset_defaultCharset__()
     java_nio_charset_Charset_4___INIT___(_r0.o);
     _r0.o = java_security_AccessController_doPrivileged___java_security_PrivilegedAction(_r0.o);
     _r0.o = _r0.o;
-    XMLVM_TRY_BEGIN(w32896aaac43b1b6)
+    XMLVM_TRY_BEGIN(w32901aaac43b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("Charset.java", 788)
     _r0.o = java_nio_charset_Charset_forName___java_lang_String(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32896aaac43b1b6)
-        XMLVM_CATCH_SPECIFIC(w32896aaac43b1b6,java_nio_charset_UnsupportedCharsetException,16)
-    XMLVM_CATCH_END(w32896aaac43b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32896aaac43b1b6)
+    XMLVM_CATCH_BEGIN(w32901aaac43b1b6)
+        XMLVM_CATCH_SPECIFIC(w32901aaac43b1b6,java_nio_charset_UnsupportedCharsetException,16)
+    XMLVM_CATCH_END(w32901aaac43b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32901aaac43b1b6)
     label15:;
     XMLVM_SOURCE_POSITION("Charset.java", 792)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label16:;
     XMLVM_SOURCE_POSITION("Charset.java", 790)
-    java_lang_Thread* curThread_w32896aaac43b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w32896aaac43b1c12->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32901aaac43b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w32901aaac43b1c12->fields.java_lang_Thread.xmlvmException_;
     // "UTF-8"
     _r0.o = xmlvm_create_java_string_from_pool(128);
     _r0.o = java_nio_charset_Charset_forName___java_lang_String(_r0.o);

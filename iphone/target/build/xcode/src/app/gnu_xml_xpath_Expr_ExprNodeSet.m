@@ -247,6 +247,7 @@ void gnu_xml_xpath_Expr_ExprNodeSet___INIT____java_util_Collection(JAVA_OBJECT m
     if (_r0.i == 0) goto label12;
     XMLVM_SOURCE_POSITION("Expr.java", 93)
     _r2.o = _r2.o;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_xpath_Expr_ExprNodeSet*) _r1.o)->fields.gnu_xml_xpath_Expr_ExprNodeSet.list_ = _r2.o;
     label11:;
     XMLVM_SOURCE_POSITION("Expr.java", 96)
@@ -257,6 +258,7 @@ void gnu_xml_xpath_Expr_ExprNodeSet___INIT____java_util_Collection(JAVA_OBJECT m
     _r0.o = __NEW_java_util_ArrayList();
     XMLVM_CHECK_NPE(0)
     java_util_ArrayList___INIT____java_util_Collection(_r0.o, _r2.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_xpath_Expr_ExprNodeSet*) _r1.o)->fields.gnu_xml_xpath_Expr_ExprNodeSet.list_ = _r0.o;
     goto label11;
     //XMLVM_END_WRAPPER
@@ -270,6 +272,7 @@ JAVA_INT gnu_xml_xpath_Expr_ExprNodeSet_getLength__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Expr.java", 100)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_Expr_ExprNodeSet*) _r1.o)->fields.gnu_xml_xpath_Expr_ExprNodeSet.list_;
     //java_util_ArrayList_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -289,9 +292,10 @@ JAVA_OBJECT gnu_xml_xpath_Expr_ExprNodeSet_item___int(JAVA_OBJECT me, JAVA_INT n
     XMLVMElem _r3;
     _r2.o = me;
     _r3.i = n1;
-    XMLVM_TRY_BEGIN(w40095aaab3b1b3)
+    XMLVM_TRY_BEGIN(w40100aaab3b1b3)
     // Begin try
     XMLVM_SOURCE_POSITION("Expr.java", 107)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_Expr_ExprNodeSet*) _r2.o)->fields.gnu_xml_xpath_Expr_ExprNodeSet.list_;
     //java_util_ArrayList_get___int[21]
     XMLVM_CHECK_NPE(1)
@@ -299,10 +303,10 @@ JAVA_OBJECT gnu_xml_xpath_Expr_ExprNodeSet_item___int(JAVA_OBJECT me, JAVA_INT n
     _r2.o = _r2.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40095aaab3b1b3)
-        XMLVM_CATCH_SPECIFIC(w40095aaab3b1b3,java_lang_ArrayIndexOutOfBoundsException,10)
-    XMLVM_CATCH_END(w40095aaab3b1b3)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40095aaab3b1b3)
+    XMLVM_CATCH_BEGIN(w40100aaab3b1b3)
+        XMLVM_CATCH_SPECIFIC(w40100aaab3b1b3,java_lang_ArrayIndexOutOfBoundsException,10)
+    XMLVM_CATCH_END(w40100aaab3b1b3)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40100aaab3b1b3)
     _r1 = _r2;
     label9:;
     XMLVM_SOURCE_POSITION("Expr.java", 111)
@@ -310,8 +314,8 @@ JAVA_OBJECT gnu_xml_xpath_Expr_ExprNodeSet_item___int(JAVA_OBJECT me, JAVA_INT n
     return _r1.o;
     label10:;
     XMLVM_SOURCE_POSITION("Expr.java", 109)
-    java_lang_Thread* curThread_w40095aaab3b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w40095aaab3b1c10->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w40100aaab3b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w40100aaab3b1c10->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r1;
     _r1.o = JAVA_NULL;
     goto label9;

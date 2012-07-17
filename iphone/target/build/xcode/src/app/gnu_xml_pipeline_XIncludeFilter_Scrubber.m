@@ -365,6 +365,7 @@ void gnu_xml_pipeline_XIncludeFilter_Scrubber___INIT____gnu_xml_pipeline_XInclud
     _r4.o = n2;
     _r1.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 472)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_pipeline_XIncludeFilter_Scrubber*) _r2.o)->fields.gnu_xml_pipeline_XIncludeFilter_Scrubber.this_0_ = _r3.o;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 463)
     XMLVM_CHECK_NPE(2)
@@ -400,6 +401,7 @@ void gnu_xml_pipeline_XIncludeFilter_Scrubber_setDocumentLocator___org_xml_sax_L
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 477)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_XIncludeFilter_Scrubber*) _r1.o)->fields.gnu_xml_pipeline_XIncludeFilter_Scrubber.this_0_;
     XMLVM_CHECK_NPE(0)
     gnu_xml_pipeline_XIncludeFilter_setLocator___org_xml_sax_Locator(_r0.o, _r2.o);
@@ -444,8 +446,10 @@ void gnu_xml_pipeline_XIncludeFilter_Scrubber_reject___java_lang_String(JAVA_OBJ
     _r3.o = me;
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("XIncludeFilter.java", 484)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_pipeline_XIncludeFilter_Scrubber*) _r3.o)->fields.gnu_xml_pipeline_XIncludeFilter_Scrubber.this_0_;
     _r1.o = __NEW_org_xml_sax_SAXParseException();
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_pipeline_XIncludeFilter_Scrubber*) _r3.o)->fields.gnu_xml_pipeline_XIncludeFilter_Scrubber.this_0_;
     XMLVM_CHECK_NPE(2)
     _r2.o = gnu_xml_pipeline_XIncludeFilter_getLocator__(_r2.o);

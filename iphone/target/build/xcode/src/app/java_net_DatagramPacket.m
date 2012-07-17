@@ -586,9 +586,11 @@ void java_net_DatagramPacket___INIT____byte_1ARRAY_int_int(JAVA_OBJECT me, JAVA_
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("DatagramPacket.java", 47)
     _r0.i = -1;
+    XMLVM_CHECK_NPE(1)
     ((java_net_DatagramPacket*) _r1.o)->fields.java_net_DatagramPacket.port_ = _r0.i;
     XMLVM_SOURCE_POSITION("DatagramPacket.java", 49)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_net_DatagramPacket*) _r1.o)->fields.java_net_DatagramPacket.offset_ = _r0.i;
     XMLVM_SOURCE_POSITION("DatagramPacket.java", 78)
     XMLVM_CHECK_NPE(1)
@@ -622,6 +624,7 @@ void java_net_DatagramPacket___INIT____byte_1ARRAY_int_int_java_net_InetAddress_
     XMLVM_CHECK_NPE(0)
     java_net_DatagramPacket_setPort___int(_r0.o, _r5.i);
     XMLVM_SOURCE_POSITION("DatagramPacket.java", 102)
+    XMLVM_CHECK_NPE(0)
     ((java_net_DatagramPacket*) _r0.o)->fields.java_net_DatagramPacket.address_ = _r4.o;
     XMLVM_SOURCE_POSITION("DatagramPacket.java", 103)
     XMLVM_EXIT_METHOD()
@@ -675,6 +678,7 @@ JAVA_OBJECT java_net_DatagramPacket_getAddress__(JAVA_OBJECT me)
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_TRY_BEGIN(w1375aaac10b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_DatagramPacket*) _r1.o)->fields.java_net_DatagramPacket.address_;
     // End try
     XMLVM_TRY_END
@@ -704,6 +708,7 @@ JAVA_OBJECT java_net_DatagramPacket_getData__(JAVA_OBJECT me)
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_TRY_BEGIN(w1375aaac11b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_DatagramPacket*) _r1.o)->fields.java_net_DatagramPacket.data_;
     // End try
     XMLVM_TRY_END
@@ -733,6 +738,7 @@ JAVA_INT java_net_DatagramPacket_getLength__(JAVA_OBJECT me)
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_TRY_BEGIN(w1375aaac12b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_DatagramPacket*) _r1.o)->fields.java_net_DatagramPacket.length_;
     // End try
     XMLVM_TRY_END
@@ -762,6 +768,7 @@ JAVA_INT java_net_DatagramPacket_getOffset__(JAVA_OBJECT me)
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_TRY_BEGIN(w1375aaac13b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_DatagramPacket*) _r1.o)->fields.java_net_DatagramPacket.offset_;
     // End try
     XMLVM_TRY_END
@@ -791,6 +798,7 @@ JAVA_INT java_net_DatagramPacket_getPort__(JAVA_OBJECT me)
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_TRY_BEGIN(w1375aaac14b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_DatagramPacket*) _r1.o)->fields.java_net_DatagramPacket.port_;
     // End try
     XMLVM_TRY_END
@@ -822,6 +830,7 @@ void java_net_DatagramPacket_setAddress___java_net_InetAddress(JAVA_OBJECT me, J
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_TRY_BEGIN(w1375aaac15b1b5)
     // Begin try
+    XMLVM_CHECK_NPE(1)
     ((java_net_DatagramPacket*) _r1.o)->fields.java_net_DatagramPacket.address_ = _r2.o;
     // End try
     XMLVM_TRY_END
@@ -899,12 +908,16 @@ void java_net_DatagramPacket_setData___byte_1ARRAY_int_int(JAVA_OBJECT me, JAVA_
     XMLVM_TRY_BEGIN(w1375aaac16b1c16)
     // Begin try
     XMLVM_SOURCE_POSITION("DatagramPacket.java", 197)
+    XMLVM_CHECK_NPE(2)
     ((java_net_DatagramPacket*) _r2.o)->fields.java_net_DatagramPacket.data_ = _r3.o;
     XMLVM_SOURCE_POSITION("DatagramPacket.java", 198)
+    XMLVM_CHECK_NPE(2)
     ((java_net_DatagramPacket*) _r2.o)->fields.java_net_DatagramPacket.offset_ = _r4.i;
     XMLVM_SOURCE_POSITION("DatagramPacket.java", 199)
+    XMLVM_CHECK_NPE(2)
     ((java_net_DatagramPacket*) _r2.o)->fields.java_net_DatagramPacket.length_ = _r5.i;
     XMLVM_SOURCE_POSITION("DatagramPacket.java", 200)
+    XMLVM_CHECK_NPE(2)
     ((java_net_DatagramPacket*) _r2.o)->fields.java_net_DatagramPacket.capacity_ = _r5.i;
     // End try
     XMLVM_TRY_END
@@ -933,14 +946,18 @@ void java_net_DatagramPacket_setData___byte_1ARRAY(JAVA_OBJECT me, JAVA_OBJECT n
     XMLVM_TRY_BEGIN(w1375aaac17b1b5)
     // Begin try
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
+    XMLVM_CHECK_NPE(1)
     ((java_net_DatagramPacket*) _r1.o)->fields.java_net_DatagramPacket.length_ = _r0.i;
     XMLVM_SOURCE_POSITION("DatagramPacket.java", 212)
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
+    XMLVM_CHECK_NPE(1)
     ((java_net_DatagramPacket*) _r1.o)->fields.java_net_DatagramPacket.capacity_ = _r0.i;
     XMLVM_SOURCE_POSITION("DatagramPacket.java", 213)
+    XMLVM_CHECK_NPE(1)
     ((java_net_DatagramPacket*) _r1.o)->fields.java_net_DatagramPacket.data_ = _r2.o;
     XMLVM_SOURCE_POSITION("DatagramPacket.java", 214)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_net_DatagramPacket*) _r1.o)->fields.java_net_DatagramPacket.offset_ = _r0.i;
     // End try
     XMLVM_TRY_END
@@ -971,6 +988,7 @@ JAVA_INT java_net_DatagramPacket_getCapacity__(JAVA_OBJECT me)
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_TRY_BEGIN(w1375aaac18b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_DatagramPacket*) _r1.o)->fields.java_net_DatagramPacket.capacity_;
     // End try
     XMLVM_TRY_END
@@ -1004,8 +1022,10 @@ void java_net_DatagramPacket_setLength___int(JAVA_OBJECT me, JAVA_INT n1)
     if (_r3.i < 0) goto label11;
     XMLVM_TRY_BEGIN(w1375aaac19b1b6)
     // Begin try
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_net_DatagramPacket*) _r2.o)->fields.java_net_DatagramPacket.offset_;
     _r0.i = _r0.i + _r3.i;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_DatagramPacket*) _r2.o)->fields.java_net_DatagramPacket.data_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i <= _r1.i) { XMLVM_MEMCPY(curThread_w1375aaac19b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w1375aaac19b1b6, sizeof(XMLVM_JMP_BUF)); goto label26; };
@@ -1041,8 +1061,10 @@ void java_net_DatagramPacket_setLength___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_TRY_BEGIN(w1375aaac19b1c14)
     // Begin try
     XMLVM_SOURCE_POSITION("DatagramPacket.java", 237)
+    XMLVM_CHECK_NPE(2)
     ((java_net_DatagramPacket*) _r2.o)->fields.java_net_DatagramPacket.length_ = _r3.i;
     XMLVM_SOURCE_POSITION("DatagramPacket.java", 238)
+    XMLVM_CHECK_NPE(2)
     ((java_net_DatagramPacket*) _r2.o)->fields.java_net_DatagramPacket.capacity_ = _r3.i;
     // End try
     XMLVM_TRY_END
@@ -1072,8 +1094,10 @@ void java_net_DatagramPacket_setLengthOnly___int(JAVA_OBJECT me, JAVA_INT n1)
     if (_r3.i < 0) goto label11;
     XMLVM_TRY_BEGIN(w1375aaac20b1b6)
     // Begin try
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_net_DatagramPacket*) _r2.o)->fields.java_net_DatagramPacket.offset_;
     _r0.i = _r0.i + _r3.i;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_DatagramPacket*) _r2.o)->fields.java_net_DatagramPacket.data_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i <= _r1.i) { XMLVM_MEMCPY(curThread_w1375aaac20b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w1375aaac20b1b6, sizeof(XMLVM_JMP_BUF)); goto label26; };
@@ -1109,6 +1133,7 @@ void java_net_DatagramPacket_setLengthOnly___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_TRY_BEGIN(w1375aaac20b1c14)
     // Begin try
     XMLVM_SOURCE_POSITION("DatagramPacket.java", 251)
+    XMLVM_CHECK_NPE(2)
     ((java_net_DatagramPacket*) _r2.o)->fields.java_net_DatagramPacket.length_ = _r3.i;
     // End try
     XMLVM_TRY_END
@@ -1164,6 +1189,7 @@ void java_net_DatagramPacket_setPort___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_TRY_BEGIN(w1375aaac21b1c15)
     // Begin try
     XMLVM_SOURCE_POSITION("DatagramPacket.java", 264)
+    XMLVM_CHECK_NPE(2)
     ((java_net_DatagramPacket*) _r2.o)->fields.java_net_DatagramPacket.port_ = _r3.i;
     // End try
     XMLVM_TRY_END
@@ -1358,10 +1384,12 @@ void java_net_DatagramPacket_setSocketAddress___java_net_SocketAddress(JAVA_OBJE
     XMLVM_SOURCE_POSITION("DatagramPacket.java", 336)
     XMLVM_CHECK_NPE(4)
     _r0.i = java_net_InetSocketAddress_getPort__(_r4.o);
+    XMLVM_CHECK_NPE(3)
     ((java_net_DatagramPacket*) _r3.o)->fields.java_net_DatagramPacket.port_ = _r0.i;
     XMLVM_SOURCE_POSITION("DatagramPacket.java", 337)
     XMLVM_CHECK_NPE(4)
     _r0.o = java_net_InetSocketAddress_getAddress__(_r4.o);
+    XMLVM_CHECK_NPE(3)
     ((java_net_DatagramPacket*) _r3.o)->fields.java_net_DatagramPacket.address_ = _r0.o;
     // End try
     XMLVM_TRY_END

@@ -230,7 +230,9 @@ void java_text_Format_1___INIT____java_lang_Object_java_lang_String(JAVA_OBJECT 
     _r1.o = n1;
     _r2.o = n2;
     XMLVM_SOURCE_POSITION("Format.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_text_Format_1*) _r0.o)->fields.java_text_Format_1.val_target_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((java_text_Format_1*) _r0.o)->fields.java_text_Format_1.val_fieldName_ = _r2.o;
     XMLVM_SOURCE_POSITION("Format.java", 224)
     XMLVM_CHECK_NPE(0)
@@ -248,15 +250,17 @@ JAVA_OBJECT java_text_Format_1_run__(JAVA_OBJECT me)
     XMLVMElem _r1;
     XMLVMElem _r2;
     _r2.o = me;
-    XMLVM_TRY_BEGIN(w42592aaab3b1b2)
+    XMLVM_TRY_BEGIN(w42597aaab3b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("Format.java", 226)
     XMLVM_SOURCE_POSITION("Format.java", 229)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_text_Format_1*) _r2.o)->fields.java_text_Format_1.val_target_;
     //java_lang_Object_getClass__[3]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_Object*) _r0.o)->tib->vtable[3])(_r0.o);
     XMLVM_SOURCE_POSITION("Format.java", 230)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_text_Format_1*) _r2.o)->fields.java_text_Format_1.val_fieldName_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_Class_getDeclaredField___java_lang_String(_r0.o, _r1.o);
@@ -265,23 +269,24 @@ JAVA_OBJECT java_text_Format_1_run__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_reflect_AccessibleObject_setAccessible___boolean(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Format.java", 232)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_text_Format_1*) _r2.o)->fields.java_text_Format_1.val_target_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_reflect_Field_get___java_lang_Object(_r0.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42592aaab3b1b2)
-        XMLVM_CATCH_SPECIFIC(w42592aaab3b1b2,java_lang_Exception,23)
-    XMLVM_CATCH_END(w42592aaab3b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42592aaab3b1b2)
+    XMLVM_CATCH_BEGIN(w42597aaab3b1b2)
+        XMLVM_CATCH_SPECIFIC(w42597aaab3b1b2,java_lang_Exception,23)
+    XMLVM_CATCH_END(w42597aaab3b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42597aaab3b1b2)
     label22:;
     XMLVM_SOURCE_POSITION("Format.java", 236)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label23:;
     XMLVM_SOURCE_POSITION("Format.java", 234)
-    java_lang_Thread* curThread_w42592aaab3b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w42592aaab3b1b8->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w42597aaab3b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w42597aaab3b1b8->fields.java_lang_Thread.xmlvmException_;
     _r0.o = JAVA_NULL;
     goto label22;
     //XMLVM_END_WRAPPER

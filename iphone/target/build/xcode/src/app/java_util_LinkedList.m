@@ -1217,19 +1217,27 @@ void java_util_LinkedList___INIT___(JAVA_OBJECT me)
     java_util_AbstractSequentialList___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("LinkedList.java", 39)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList*) _r2.o)->fields.java_util_LinkedList.size_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 240)
     _r0.o = __NEW_java_util_LinkedList_Link();
     XMLVM_CHECK_NPE(0)
     java_util_LinkedList_Link___INIT____java_lang_Object_java_util_LinkedList_Link_java_util_LinkedList_Link(_r0.o, _r1.o, _r1.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList*) _r2.o)->fields.java_util_LinkedList.voidLink_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 241)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList*) _r2.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_LinkedList*) _r2.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 242)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList*) _r2.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_LinkedList*) _r2.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 243)
     XMLVM_EXIT_METHOD()
@@ -1274,11 +1282,14 @@ void java_util_LinkedList_add___int_java_lang_Object(JAVA_OBJECT me, JAVA_INT n1
     _r6.o = n2;
     XMLVM_SOURCE_POSITION("LinkedList.java", 274)
     if (_r5.i < 0) goto label64;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_LinkedList*) _r4.o)->fields.java_util_LinkedList.size_;
     if (_r5.i > _r0.i) goto label64;
     XMLVM_SOURCE_POSITION("LinkedList.java", 275)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_LinkedList*) _r4.o)->fields.java_util_LinkedList.voidLink_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 276)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_LinkedList*) _r4.o)->fields.java_util_LinkedList.size_;
     _r1.i = _r1.i / 2;
     if (_r5.i >= _r1.i) goto label50;
@@ -1292,33 +1303,42 @@ void java_util_LinkedList_add___int_java_lang_Object(JAVA_OBJECT me, JAVA_INT n1
     _r0 = _r1;
     label21:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 285)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 286)
     _r2.o = __NEW_java_util_LinkedList_Link();
     XMLVM_CHECK_NPE(2)
     java_util_LinkedList_Link___INIT____java_lang_Object_java_util_LinkedList_Link_java_util_LinkedList_Link(_r2.o, _r6.o, _r1.o, _r0.o);
     XMLVM_SOURCE_POSITION("LinkedList.java", 287)
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.next_ = _r2.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 288)
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_ = _r2.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 289)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_LinkedList*) _r4.o)->fields.java_util_LinkedList.size_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_util_LinkedList*) _r4.o)->fields.java_util_LinkedList.size_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 290)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_AbstractList*) _r4.o)->fields.java_util_AbstractList.modCount_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_util_AbstractList*) _r4.o)->fields.java_util_AbstractList.modCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 294)
     XMLVM_EXIT_METHOD()
     return;
     label45:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 278)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.next_;
     _r0.i = _r0.i + 1;
     goto label18;
     label50:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 281)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_LinkedList*) _r4.o)->fields.java_util_LinkedList.size_;
     _r3 = _r1;
     _r1 = _r0;
@@ -1329,6 +1349,7 @@ void java_util_LinkedList_add___int_java_lang_Object(JAVA_OBJECT me, JAVA_INT n1
     goto label21;
     label59:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 282)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.previous_;
     _r0.i = _r0.i + -1;
     goto label55;
@@ -1370,25 +1391,35 @@ JAVA_BOOLEAN java_util_LinkedList_addLastImpl___java_lang_Object(JAVA_OBJECT me,
     _r3.o = me;
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("LinkedList.java", 309)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 310)
     _r1.o = __NEW_java_util_LinkedList_Link();
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.voidLink_;
     XMLVM_CHECK_NPE(1)
     java_util_LinkedList_Link___INIT____java_lang_Object_java_util_LinkedList_Link_java_util_LinkedList_Link(_r1.o, _r4.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("LinkedList.java", 311)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_Link*) _r2.o)->fields.java_util_LinkedList_Link.previous_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 312)
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 313)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.size_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.size_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 314)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_AbstractList*) _r3.o)->fields.java_util_AbstractList.modCount_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_util_AbstractList*) _r3.o)->fields.java_util_AbstractList.modCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 315)
     _r0.i = 1;
@@ -1418,6 +1449,7 @@ JAVA_BOOLEAN java_util_LinkedList_addAll___int_java_util_Collection(JAVA_OBJECT 
     _r4.i = 0;
     XMLVM_SOURCE_POSITION("LinkedList.java", 338)
     if (_r9.i < 0) goto label7;
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_util_LinkedList*) _r8.o)->fields.java_util_LinkedList.size_;
     if (_r9.i <= _r0.i) goto label13;
     label7:;
@@ -1447,8 +1479,10 @@ JAVA_BOOLEAN java_util_LinkedList_addAll___int_java_util_Collection(JAVA_OBJECT 
     java_util_ArrayList___INIT____java_util_Collection(_r0.o, _r10.o);
     label28:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 348)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((java_util_LinkedList*) _r8.o)->fields.java_util_LinkedList.voidLink_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 349)
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_util_LinkedList*) _r8.o)->fields.java_util_LinkedList.size_;
     _r3.i = _r3.i / 2;
     if (_r9.i >= _r3.i) goto label77;
@@ -1460,6 +1494,7 @@ JAVA_BOOLEAN java_util_LinkedList_addAll___int_java_util_Collection(JAVA_OBJECT 
     _r2 = _r3;
     label41:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 358)
+    XMLVM_CHECK_NPE(2)
     _r3.o = ((java_util_LinkedList_Link*) _r2.o)->fields.java_util_LinkedList_Link.next_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 359)
     XMLVM_CHECK_NPE(0)
@@ -1469,16 +1504,22 @@ JAVA_BOOLEAN java_util_LinkedList_addAll___int_java_util_Collection(JAVA_OBJECT 
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r4.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_hasNext__])(_r4.o);
     if (_r0.i != 0) goto label91;
     XMLVM_SOURCE_POSITION("LinkedList.java", 364)
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_Link*) _r2.o)->fields.java_util_LinkedList_Link.next_ = _r3.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 365)
+    XMLVM_CHECK_NPE(3)
     ((java_util_LinkedList_Link*) _r3.o)->fields.java_util_LinkedList_Link.previous_ = _r2.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 366)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_util_LinkedList*) _r8.o)->fields.java_util_LinkedList.size_;
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(8)
     ((java_util_LinkedList*) _r8.o)->fields.java_util_LinkedList.size_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 367)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_util_AbstractList*) _r8.o)->fields.java_util_AbstractList.modCount_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(8)
     ((java_util_AbstractList*) _r8.o)->fields.java_util_AbstractList.modCount_ = _r0.i;
     _r0.i = 1;
     goto label20;
@@ -1487,11 +1528,13 @@ JAVA_BOOLEAN java_util_LinkedList_addAll___int_java_util_Collection(JAVA_OBJECT 
     goto label28;
     label72:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 351)
+    XMLVM_CHECK_NPE(3)
     _r3.o = ((java_util_LinkedList_Link*) _r3.o)->fields.java_util_LinkedList_Link.next_;
     _r2.i = _r2.i + 1;
     goto label38;
     label77:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 354)
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_util_LinkedList*) _r8.o)->fields.java_util_LinkedList.size_;
     _r7 = _r3;
     _r3 = _r2;
@@ -1502,6 +1545,7 @@ JAVA_BOOLEAN java_util_LinkedList_addAll___int_java_util_Collection(JAVA_OBJECT 
     goto label41;
     label86:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 355)
+    XMLVM_CHECK_NPE(3)
     _r3.o = ((java_util_LinkedList_Link*) _r3.o)->fields.java_util_LinkedList_Link.previous_;
     _r2.i = _r2.i + -1;
     goto label82;
@@ -1515,6 +1559,7 @@ JAVA_BOOLEAN java_util_LinkedList_addAll___int_java_util_Collection(JAVA_OBJECT 
     XMLVM_CHECK_NPE(5)
     java_util_LinkedList_Link___INIT____java_lang_Object_java_util_LinkedList_Link_java_util_LinkedList_Link(_r5.o, _r0.o, _r2.o, _r6.o);
     XMLVM_SOURCE_POSITION("LinkedList.java", 361)
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_Link*) _r2.o)->fields.java_util_LinkedList_Link.next_ = _r5.o;
     _r2 = _r5;
     XMLVM_SOURCE_POSITION("LinkedList.java", 362)
@@ -1556,7 +1601,9 @@ JAVA_BOOLEAN java_util_LinkedList_addAll___java_util_Collection(JAVA_OBJECT me, 
     java_util_ArrayList___INIT____java_util_Collection(_r0.o, _r7.o);
     label15:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 388)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_LinkedList*) _r6.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_util_LinkedList_Link*) _r2.o)->fields.java_util_LinkedList_Link.previous_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 389)
     XMLVM_CHECK_NPE(0)
@@ -1566,18 +1613,26 @@ JAVA_BOOLEAN java_util_LinkedList_addAll___java_util_Collection(JAVA_OBJECT me, 
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_hasNext__])(_r3.o);
     if (_r0.i != 0) goto label52;
     XMLVM_SOURCE_POSITION("LinkedList.java", 394)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_LinkedList*) _r6.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_Link*) _r2.o)->fields.java_util_LinkedList_Link.next_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 395)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_LinkedList*) _r6.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_ = _r2.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 396)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_LinkedList*) _r6.o)->fields.java_util_LinkedList.size_;
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(6)
     ((java_util_LinkedList*) _r6.o)->fields.java_util_LinkedList.size_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 397)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_AbstractList*) _r6.o)->fields.java_util_AbstractList.modCount_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(6)
     ((java_util_AbstractList*) _r6.o)->fields.java_util_AbstractList.modCount_ = _r0.i;
     _r0.i = 1;
     goto label7;
@@ -1594,6 +1649,7 @@ JAVA_BOOLEAN java_util_LinkedList_addAll___java_util_Collection(JAVA_OBJECT me, 
     XMLVM_CHECK_NPE(4)
     java_util_LinkedList_Link___INIT____java_lang_Object_java_util_LinkedList_Link_java_util_LinkedList_Link(_r4.o, _r0.o, _r2.o, _r5.o);
     XMLVM_SOURCE_POSITION("LinkedList.java", 391)
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_Link*) _r2.o)->fields.java_util_LinkedList_Link.next_ = _r4.o;
     _r2 = _r4;
     XMLVM_SOURCE_POSITION("LinkedList.java", 392)
@@ -1630,25 +1686,35 @@ JAVA_BOOLEAN java_util_LinkedList_addFirstImpl___java_lang_Object(JAVA_OBJECT me
     _r3.o = me;
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("LinkedList.java", 412)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 413)
     _r1.o = __NEW_java_util_LinkedList_Link();
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.voidLink_;
     XMLVM_CHECK_NPE(1)
     java_util_LinkedList_Link___INIT____java_lang_Object_java_util_LinkedList_Link_java_util_LinkedList_Link(_r1.o, _r4.o, _r2.o, _r0.o);
     XMLVM_SOURCE_POSITION("LinkedList.java", 414)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_Link*) _r2.o)->fields.java_util_LinkedList_Link.next_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 415)
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 416)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.size_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.size_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 417)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_AbstractList*) _r3.o)->fields.java_util_AbstractList.modCount_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_util_AbstractList*) _r3.o)->fields.java_util_AbstractList.modCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 418)
     _r0.i = 1;
@@ -1683,22 +1749,32 @@ void java_util_LinkedList_clear__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("LinkedList.java", 439)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_LinkedList*) _r2.o)->fields.java_util_LinkedList.size_;
     if (_r0.i <= 0) goto label25;
     XMLVM_SOURCE_POSITION("LinkedList.java", 440)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList*) _r2.o)->fields.java_util_LinkedList.size_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 441)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList*) _r2.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_LinkedList*) _r2.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 442)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList*) _r2.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_LinkedList*) _r2.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 443)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_AbstractList*) _r2.o)->fields.java_util_AbstractList.modCount_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(2)
     ((java_util_AbstractList*) _r2.o)->fields.java_util_AbstractList.modCount_ = _r0.i;
     label25:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 445)
@@ -1728,6 +1804,7 @@ JAVA_OBJECT java_util_LinkedList_clone__(JAVA_OBJECT me)
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 459)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList*) _r0.o)->fields.java_util_LinkedList.size_ = _r1.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 460)
     _r1.o = __NEW_java_util_LinkedList_Link();
@@ -1736,14 +1813,21 @@ JAVA_OBJECT java_util_LinkedList_clone__(JAVA_OBJECT me)
     _r4.o = JAVA_NULL;
     XMLVM_CHECK_NPE(1)
     java_util_LinkedList_Link___INIT____java_lang_Object_java_util_LinkedList_Link_java_util_LinkedList_Link(_r1.o, _r2.o, _r3.o, _r4.o);
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList*) _r0.o)->fields.java_util_LinkedList.voidLink_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 461)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((java_util_LinkedList*) _r0.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((java_util_LinkedList*) _r0.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.previous_ = _r2.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 462)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((java_util_LinkedList*) _r0.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((java_util_LinkedList*) _r0.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.next_ = _r2.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 463)
     //java_util_LinkedList_addAll___java_util_Collection[6]
@@ -1780,12 +1864,15 @@ JAVA_BOOLEAN java_util_LinkedList_contains___java_lang_Object(JAVA_OBJECT me, JA
     _r4.o = n1;
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("LinkedList.java", 480)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 481)
     if (_r4.o == JAVA_NULL) goto label34;
     label7:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 482)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.voidLink_;
     if (_r0.o != _r1.o) goto label13;
     label11:;
@@ -1796,6 +1883,7 @@ JAVA_BOOLEAN java_util_LinkedList_contains___java_lang_Object(JAVA_OBJECT me, JA
     return _r0.i;
     label13:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 483)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_;
     //java_lang_Object_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(4)
@@ -1806,10 +1894,12 @@ JAVA_BOOLEAN java_util_LinkedList_contains___java_lang_Object(JAVA_OBJECT me, JA
     goto label12;
     label23:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 486)
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_;
     goto label7;
     label26:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 490)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_;
     if (_r1.o != JAVA_NULL) goto label32;
     _r0 = _r2;
@@ -1817,9 +1907,11 @@ JAVA_BOOLEAN java_util_LinkedList_contains___java_lang_Object(JAVA_OBJECT me, JA
     goto label12;
     label32:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 493)
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_;
     label34:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 489)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.voidLink_;
     if (_r0.o != _r1.o) goto label26;
     goto label11;
@@ -1839,11 +1931,14 @@ JAVA_OBJECT java_util_LinkedList_get___int(JAVA_OBJECT me, JAVA_INT n1)
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("LinkedList.java", 501)
     if (_r4.i < 0) goto label43;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.size_;
     if (_r4.i >= _r0.i) goto label43;
     XMLVM_SOURCE_POSITION("LinkedList.java", 502)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.voidLink_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 503)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.size_;
     _r1.i = _r1.i / 2;
     if (_r4.i >= _r1.i) goto label29;
@@ -1857,16 +1952,19 @@ JAVA_OBJECT java_util_LinkedList_get___int(JAVA_OBJECT me, JAVA_INT n1)
     _r0 = _r1;
     label21:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 512)
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label24:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 505)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.next_;
     _r0.i = _r0.i + 1;
     goto label18;
     label29:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 508)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.size_;
     _r2 = _r1;
     _r1 = _r0;
@@ -1877,6 +1975,7 @@ JAVA_OBJECT java_util_LinkedList_get___int(JAVA_OBJECT me, JAVA_INT n1)
     goto label21;
     label38:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 509)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.previous_;
     _r0.i = _r0.i + -1;
     goto label34;
@@ -1913,12 +2012,16 @@ JAVA_OBJECT java_util_LinkedList_getFirstImpl__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("LinkedList.java", 529)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList*) _r2.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 530)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_LinkedList*) _r2.o)->fields.java_util_LinkedList.voidLink_;
     if (_r0.o == _r1.o) goto label11;
     XMLVM_SOURCE_POSITION("LinkedList.java", 531)
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1940,12 +2043,16 @@ JAVA_OBJECT java_util_LinkedList_getLast__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("LinkedList.java", 544)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList*) _r2.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 545)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_LinkedList*) _r2.o)->fields.java_util_LinkedList.voidLink_;
     if (_r0.o == _r1.o) goto label11;
     XMLVM_SOURCE_POSITION("LinkedList.java", 546)
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1973,7 +2080,9 @@ JAVA_INT java_util_LinkedList_indexOf___java_lang_Object(JAVA_OBJECT me, JAVA_OB
     XMLVM_SOURCE_POSITION("LinkedList.java", 553)
     _r0.i = 0;
     XMLVM_SOURCE_POSITION("LinkedList.java", 554)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_LinkedList*) _r4.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.next_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 555)
     if (_r5.o == JAVA_NULL) goto label46;
@@ -1982,6 +2091,7 @@ JAVA_INT java_util_LinkedList_indexOf___java_lang_Object(JAVA_OBJECT me, JAVA_OB
     _r0 = _r3;
     label10:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 556)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_LinkedList*) _r4.o)->fields.java_util_LinkedList.voidLink_;
     if (_r0.o != _r2.o) goto label16;
     label14:;
@@ -1992,6 +2102,7 @@ JAVA_INT java_util_LinkedList_indexOf___java_lang_Object(JAVA_OBJECT me, JAVA_OB
     return _r0.i;
     label16:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 557)
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_;
     //java_lang_Object_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(5)
@@ -2002,12 +2113,14 @@ JAVA_INT java_util_LinkedList_indexOf___java_lang_Object(JAVA_OBJECT me, JAVA_OB
     goto label15;
     label26:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 560)
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 561)
     _r1.i = _r1.i + 1;
     goto label10;
     label31:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 565)
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_;
     if (_r2.o != JAVA_NULL) goto label37;
     _r0 = _r1;
@@ -2015,11 +2128,13 @@ JAVA_INT java_util_LinkedList_indexOf___java_lang_Object(JAVA_OBJECT me, JAVA_OB
     goto label15;
     label37:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 568)
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 569)
     _r1.i = _r1.i + 1;
     label41:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 564)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_LinkedList*) _r4.o)->fields.java_util_LinkedList.voidLink_;
     if (_r0.o != _r2.o) goto label31;
     goto label14;
@@ -2044,9 +2159,12 @@ JAVA_INT java_util_LinkedList_lastIndexOf___java_lang_Object(JAVA_OBJECT me, JAV
     _r4.o = me;
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("LinkedList.java", 586)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_LinkedList*) _r4.o)->fields.java_util_LinkedList.size_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 587)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_LinkedList*) _r4.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.previous_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 588)
     if (_r5.o == JAVA_NULL) goto label47;
@@ -2055,6 +2173,7 @@ JAVA_INT java_util_LinkedList_lastIndexOf___java_lang_Object(JAVA_OBJECT me, JAV
     _r0 = _r3;
     label11:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 589)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_LinkedList*) _r4.o)->fields.java_util_LinkedList.voidLink_;
     if (_r0.o != _r2.o) goto label17;
     label15:;
@@ -2067,6 +2186,7 @@ JAVA_INT java_util_LinkedList_lastIndexOf___java_lang_Object(JAVA_OBJECT me, JAV
     XMLVM_SOURCE_POSITION("LinkedList.java", 590)
     _r1.i = _r1.i + -1;
     XMLVM_SOURCE_POSITION("LinkedList.java", 591)
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_;
     //java_lang_Object_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(5)
@@ -2077,12 +2197,14 @@ JAVA_INT java_util_LinkedList_lastIndexOf___java_lang_Object(JAVA_OBJECT me, JAV
     goto label16;
     label29:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 594)
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_;
     goto label11;
     label32:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 598)
     _r1.i = _r1.i + -1;
     XMLVM_SOURCE_POSITION("LinkedList.java", 599)
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_;
     if (_r2.o != JAVA_NULL) goto label40;
     _r0 = _r1;
@@ -2090,9 +2212,11 @@ JAVA_INT java_util_LinkedList_lastIndexOf___java_lang_Object(JAVA_OBJECT me, JAV
     goto label16;
     label40:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 602)
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_;
     label42:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 597)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_LinkedList*) _r4.o)->fields.java_util_LinkedList.voidLink_;
     if (_r0.o != _r2.o) goto label32;
     goto label15;
@@ -2136,11 +2260,14 @@ JAVA_OBJECT java_util_LinkedList_remove___int(JAVA_OBJECT me, JAVA_INT n1)
     _r5.i = n1;
     XMLVM_SOURCE_POSITION("LinkedList.java", 636)
     if (_r5.i < 0) goto label63;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_LinkedList*) _r4.o)->fields.java_util_LinkedList.size_;
     if (_r5.i >= _r0.i) goto label63;
     XMLVM_SOURCE_POSITION("LinkedList.java", 637)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_LinkedList*) _r4.o)->fields.java_util_LinkedList.voidLink_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 638)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_LinkedList*) _r4.o)->fields.java_util_LinkedList.size_;
     _r1.i = _r1.i / 2;
     if (_r5.i >= _r1.i) goto label49;
@@ -2154,33 +2281,44 @@ JAVA_OBJECT java_util_LinkedList_remove___int(JAVA_OBJECT me, JAVA_INT n1)
     _r0 = _r1;
     label21:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 647)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 648)
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 649)
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.next_ = _r2.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 650)
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_Link*) _r2.o)->fields.java_util_LinkedList_Link.previous_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 651)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_LinkedList*) _r4.o)->fields.java_util_LinkedList.size_;
     _r2.i = 1;
     _r1.i = _r1.i - _r2.i;
+    XMLVM_CHECK_NPE(4)
     ((java_util_LinkedList*) _r4.o)->fields.java_util_LinkedList.size_ = _r1.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 652)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_AbstractList*) _r4.o)->fields.java_util_AbstractList.modCount_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_util_AbstractList*) _r4.o)->fields.java_util_AbstractList.modCount_ = _r1.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 653)
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label44:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 640)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.next_;
     _r0.i = _r0.i + 1;
     goto label18;
     label49:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 643)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_LinkedList*) _r4.o)->fields.java_util_LinkedList.size_;
     _r3 = _r1;
     _r1 = _r0;
@@ -2191,6 +2329,7 @@ JAVA_OBJECT java_util_LinkedList_remove___int(JAVA_OBJECT me, JAVA_INT n1)
     goto label21;
     label58:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 644)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.previous_;
     _r0.i = _r0.i + -1;
     goto label54;
@@ -2245,29 +2384,42 @@ JAVA_OBJECT java_util_LinkedList_removeFirstImpl__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("LinkedList.java", 675)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 676)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.voidLink_;
     if (_r0.o == _r1.o) goto label33;
     XMLVM_SOURCE_POSITION("LinkedList.java", 677)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 678)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_Link*) _r2.o)->fields.java_util_LinkedList_Link.next_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 679)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.previous_ = _r2.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 680)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.size_;
     _r2.i = 1;
     _r1.i = _r1.i - _r2.i;
+    XMLVM_CHECK_NPE(3)
     ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.size_ = _r1.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 681)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_AbstractList*) _r3.o)->fields.java_util_AbstractList.modCount_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_util_AbstractList*) _r3.o)->fields.java_util_AbstractList.modCount_ = _r1.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 682)
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2305,29 +2457,42 @@ JAVA_OBJECT java_util_LinkedList_removeLastImpl__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("LinkedList.java", 699)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 700)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.voidLink_;
     if (_r0.o == _r1.o) goto label33;
     XMLVM_SOURCE_POSITION("LinkedList.java", 701)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 702)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_Link*) _r2.o)->fields.java_util_LinkedList_Link.previous_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 703)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.next_ = _r2.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 704)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.size_;
     _r2.i = 1;
     _r1.i = _r1.i - _r2.i;
+    XMLVM_CHECK_NPE(3)
     ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.size_ = _r1.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 705)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_AbstractList*) _r3.o)->fields.java_util_AbstractList.modCount_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_util_AbstractList*) _r3.o)->fields.java_util_AbstractList.modCount_ = _r1.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 706)
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2414,9 +2579,12 @@ JAVA_OBJECT java_util_LinkedList_peekLast__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("LinkedList.java", 758)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList*) _r2.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 759)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_LinkedList*) _r2.o)->fields.java_util_LinkedList.voidLink_;
     if (_r0.o != _r1.o) goto label10;
     _r0.o = JAVA_NULL;
@@ -2424,6 +2592,7 @@ JAVA_OBJECT java_util_LinkedList_peekLast__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label10:;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_;
     goto label9;
     //XMLVM_END_WRAPPER
@@ -2437,6 +2606,7 @@ JAVA_OBJECT java_util_LinkedList_pollFirst__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("LinkedList.java", 769)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_LinkedList*) _r1.o)->fields.java_util_LinkedList.size_;
     if (_r0.i != 0) goto label6;
     _r0.o = JAVA_NULL;
@@ -2458,6 +2628,7 @@ JAVA_OBJECT java_util_LinkedList_pollLast__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("LinkedList.java", 779)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_LinkedList*) _r1.o)->fields.java_util_LinkedList.size_;
     if (_r0.i != 0) goto label6;
     _r0.o = JAVA_NULL;
@@ -2623,11 +2794,14 @@ JAVA_OBJECT java_util_LinkedList_set___int_java_lang_Object(JAVA_OBJECT me, JAVA
     _r5.o = n2;
     XMLVM_SOURCE_POSITION("LinkedList.java", 857)
     if (_r4.i < 0) goto label45;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.size_;
     if (_r4.i >= _r0.i) goto label45;
     XMLVM_SOURCE_POSITION("LinkedList.java", 858)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.voidLink_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 859)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.size_;
     _r1.i = _r1.i / 2;
     if (_r4.i >= _r1.i) goto label31;
@@ -2641,19 +2815,23 @@ JAVA_OBJECT java_util_LinkedList_set___int_java_lang_Object(JAVA_OBJECT me, JAVA
     _r0 = _r1;
     label21:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 868)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 869)
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_ = _r5.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 870)
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label26:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 861)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.next_;
     _r0.i = _r0.i + 1;
     goto label18;
     label31:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 864)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_LinkedList*) _r3.o)->fields.java_util_LinkedList.size_;
     _r2 = _r1;
     _r1 = _r0;
@@ -2664,6 +2842,7 @@ JAVA_OBJECT java_util_LinkedList_set___int_java_lang_Object(JAVA_OBJECT me, JAVA
     goto label21;
     label40:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 865)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.previous_;
     _r0.i = _r0.i + -1;
     goto label36;
@@ -2684,6 +2863,7 @@ JAVA_INT java_util_LinkedList_size__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("LinkedList.java", 882)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_LinkedList*) _r1.o)->fields.java_util_LinkedList.size_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -2715,6 +2895,7 @@ JAVA_OBJECT java_util_LinkedList_poll__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("LinkedList.java", 890)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_LinkedList*) _r1.o)->fields.java_util_LinkedList.size_;
     if (_r0.i != 0) goto label6;
     _r0.o = JAVA_NULL;
@@ -2768,9 +2949,12 @@ JAVA_OBJECT java_util_LinkedList_peekFirstImpl__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("LinkedList.java", 902)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList*) _r2.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 903)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_LinkedList*) _r2.o)->fields.java_util_LinkedList.voidLink_;
     if (_r0.o != _r1.o) goto label10;
     _r0.o = JAVA_NULL;
@@ -2778,6 +2962,7 @@ JAVA_OBJECT java_util_LinkedList_peekFirstImpl__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label10:;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_;
     goto label9;
     //XMLVM_END_WRAPPER
@@ -2813,17 +2998,21 @@ JAVA_OBJECT java_util_LinkedList_toArray__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("LinkedList.java", 918)
     _r0.i = 0;
     XMLVM_SOURCE_POSITION("LinkedList.java", 919)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_LinkedList*) _r6.o)->fields.java_util_LinkedList.size_;
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r1.i);
     XMLVM_SOURCE_POSITION("LinkedList.java", 920)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_LinkedList*) _r6.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_util_LinkedList_Link*) _r2.o)->fields.java_util_LinkedList_Link.next_;
     _r5 = _r2;
     _r2 = _r0;
     _r0 = _r5;
     label12:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 921)
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_util_LinkedList*) _r6.o)->fields.java_util_LinkedList.voidLink_;
     if (_r0.o != _r3.o) goto label17;
     XMLVM_SOURCE_POSITION("LinkedList.java", 925)
@@ -2832,11 +3021,13 @@ JAVA_OBJECT java_util_LinkedList_toArray__(JAVA_OBJECT me)
     label17:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 922)
     _r3.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(0)
     _r4.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i] = _r4.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 923)
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_;
     _r2 = _r3;
     goto label12;
@@ -2860,6 +3051,7 @@ JAVA_OBJECT java_util_LinkedList_toArray___java_lang_Object_1ARRAY(JAVA_OBJECT m
     XMLVM_SOURCE_POSITION("LinkedList.java", 946)
     _r1.i = 0;
     XMLVM_SOURCE_POSITION("LinkedList.java", 947)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_LinkedList*) _r6.o)->fields.java_util_LinkedList.size_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r7.o));
     if (_r0.i <= _r2.i) goto label50;
@@ -2870,18 +3062,22 @@ JAVA_OBJECT java_util_LinkedList_toArray___java_lang_Object_1ARRAY(JAVA_OBJECT m
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_Class_getComponentType__(_r0.o);
     XMLVM_SOURCE_POSITION("LinkedList.java", 949)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_util_LinkedList*) _r6.o)->fields.java_util_LinkedList.size_;
     _r0.o = java_lang_reflect_Array_newInstance___java_lang_Class_int(_r0.o, _r2.i);
     _r0.o = _r0.o;
     label22:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 951)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_LinkedList*) _r6.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_util_LinkedList_Link*) _r2.o)->fields.java_util_LinkedList_Link.next_;
     _r5 = _r2;
     _r2 = _r1;
     _r1 = _r5;
     label29:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 952)
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_util_LinkedList*) _r6.o)->fields.java_util_LinkedList.voidLink_;
     if (_r1.o != _r3.o) goto label40;
     XMLVM_SOURCE_POSITION("LinkedList.java", 956)
@@ -2899,11 +3095,13 @@ JAVA_OBJECT java_util_LinkedList_toArray___java_lang_Object_1ARRAY(JAVA_OBJECT m
     label40:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 953)
     _r3.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(1)
     _r4.o = ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.data_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i] = _r4.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 954)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.next_;
     _r2 = _r3;
     goto label29;
@@ -2927,6 +3125,7 @@ void java_util_LinkedList_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT m
     XMLVM_CHECK_NPE(3)
     java_io_ObjectOutputStream_defaultWriteObject__(_r3.o);
     XMLVM_SOURCE_POSITION("LinkedList.java", 964)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_LinkedList*) _r2.o)->fields.java_util_LinkedList.size_;
     //java_io_ObjectOutputStream_writeInt___int[19]
     XMLVM_CHECK_NPE(3)
@@ -2976,15 +3175,19 @@ void java_util_LinkedList_readObject___java_io_ObjectInputStream(JAVA_OBJECT me,
     //java_io_ObjectInputStream_readInt__[22]
     XMLVM_CHECK_NPE(7)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_io_ObjectInputStream*) _r7.o)->tib->vtable[22])(_r7.o);
+    XMLVM_CHECK_NPE(6)
     ((java_util_LinkedList*) _r6.o)->fields.java_util_LinkedList.size_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 976)
     _r0.o = __NEW_java_util_LinkedList_Link();
     XMLVM_CHECK_NPE(0)
     java_util_LinkedList_Link___INIT____java_lang_Object_java_util_LinkedList_Link_java_util_LinkedList_Link(_r0.o, _r4.o, _r4.o, _r4.o);
+    XMLVM_CHECK_NPE(6)
     ((java_util_LinkedList*) _r6.o)->fields.java_util_LinkedList.voidLink_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 977)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_LinkedList*) _r6.o)->fields.java_util_LinkedList.voidLink_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 978)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_LinkedList*) _r6.o)->fields.java_util_LinkedList.size_;
     _r5 = _r1;
     _r1 = _r0;
@@ -2993,10 +3196,14 @@ void java_util_LinkedList_readObject___java_io_ObjectInputStream(JAVA_OBJECT me,
     _r0.i = _r0.i + -1;
     if (_r0.i >= 0) goto label37;
     XMLVM_SOURCE_POSITION("LinkedList.java", 983)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_LinkedList*) _r6.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.next_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 984)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_LinkedList*) _r6.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 985)
     XMLVM_EXIT_METHOD()
@@ -3010,6 +3217,7 @@ void java_util_LinkedList_readObject___java_io_ObjectInputStream(JAVA_OBJECT me,
     XMLVM_CHECK_NPE(2)
     java_util_LinkedList_Link___INIT____java_lang_Object_java_util_LinkedList_Link_java_util_LinkedList_Link(_r2.o, _r3.o, _r1.o, _r4.o);
     XMLVM_SOURCE_POSITION("LinkedList.java", 980)
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.next_ = _r2.o;
     _r1 = _r2;
     XMLVM_SOURCE_POSITION("LinkedList.java", 981)

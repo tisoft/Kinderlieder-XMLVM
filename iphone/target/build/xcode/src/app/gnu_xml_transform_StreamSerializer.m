@@ -1136,10 +1136,13 @@ void gnu_xml_transform_StreamSerializer___INIT____int_java_lang_String_java_lang
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 167)
     _r0.o = java_util_Collections_GET_EMPTY_SET();
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_transform_StreamSerializer*) _r2.o)->fields.gnu_xml_transform_StreamSerializer.cdataSectionElements_ = _r0.o;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 170)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_transform_StreamSerializer*) _r2.o)->fields.gnu_xml_transform_StreamSerializer.xmlDeclaration_ = _r1.i;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 187)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_transform_StreamSerializer*) _r2.o)->fields.gnu_xml_transform_StreamSerializer.mode_ = _r3.i;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 188)
     if (_r4.o != JAVA_NULL) goto label63;
@@ -1151,26 +1154,33 @@ void gnu_xml_transform_StreamSerializer___INIT____int_java_lang_String_java_lang
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 190)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_intern__(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_transform_StreamSerializer*) _r2.o)->fields.gnu_xml_transform_StreamSerializer.encoding_ = _r0.o;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 191)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r2.o)->fields.gnu_xml_transform_StreamSerializer.encoding_;
     _r0.o = java_nio_charset_Charset_forName___java_lang_String(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_transform_StreamSerializer*) _r2.o)->fields.gnu_xml_transform_StreamSerializer.charset_ = _r0.o;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 192)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r2.o)->fields.gnu_xml_transform_StreamSerializer.charset_;
     //java_nio_charset_Charset_newEncoder__[9]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_charset_Charset*) _r0.o)->tib->vtable[9])(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_transform_StreamSerializer*) _r2.o)->fields.gnu_xml_transform_StreamSerializer.encoder_ = _r0.o;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 193)
     if (_r5.o == JAVA_NULL) goto label56;
     _r0 = _r5;
     label43:;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_transform_StreamSerializer*) _r2.o)->fields.gnu_xml_transform_StreamSerializer.eol_ = _r0.o;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 194)
     _r0.o = __NEW_java_util_LinkedList();
     XMLVM_CHECK_NPE(0)
     java_util_LinkedList___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_transform_StreamSerializer*) _r2.o)->fields.gnu_xml_transform_StreamSerializer.namespaces_ = _r0.o;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 195)
     XMLVM_EXIT_METHOD()
@@ -1199,6 +1209,7 @@ void gnu_xml_transform_StreamSerializer_setCdataSectionElements___java_util_Coll
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 199)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_transform_StreamSerializer*) _r0.o)->fields.gnu_xml_transform_StreamSerializer.cdataSectionElements_ = _r1.o;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 200)
     XMLVM_EXIT_METHOD()
@@ -1306,6 +1317,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     _r4.i = 0;
     _r0 = _r4;
     _r1 = _r19;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_transform_StreamSerializer*) _r1.o)->fields.gnu_xml_transform_StreamSerializer.htmlEncoded_ = _r0.i;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 229)
     XMLVM_CHECK_NPE(20)
@@ -1439,6 +1451,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     _r5.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r20.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeValue__])(_r20.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 269)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_transform_StreamSerializer*) _r0.o)->fields.gnu_xml_transform_StreamSerializer.mode_;
     _r6 = _r0;
     _r7.i = 1;
@@ -1567,6 +1580,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r4.o)->tib->vtable[5])(_r4.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 263)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r0.o)->fields.gnu_xml_transform_StreamSerializer.encoding_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(4)
@@ -1708,6 +1722,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     label502:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 308)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r0.o)->fields.gnu_xml_transform_StreamSerializer.cdataSectionElements_;
     _r4 = _r0;
     XMLVM_CHECK_NPE(4)
@@ -1755,6 +1770,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     _r22.o = _r22.o;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 300)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_transform_StreamSerializer*) _r0.o)->fields.gnu_xml_transform_StreamSerializer.discardDefaultContent_;
     _r8 = _r0;
     if (_r8.i == 0) goto label574;
@@ -1839,6 +1855,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     if (_r5.i != 0) goto label683;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 329)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_transform_StreamSerializer*) _r0.o)->fields.gnu_xml_transform_StreamSerializer.mode_;
     _r5 = _r0;
     _r6.i = 2;
@@ -1987,6 +2004,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     if (_r4.i != _r5.i) goto label53;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 353)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r0.o)->fields.gnu_xml_transform_StreamSerializer.eol_;
     _r4 = _r0;
     _r0 = _r19;
@@ -2002,6 +2020,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     label883:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 357)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_transform_StreamSerializer*) _r0.o)->fields.gnu_xml_transform_StreamSerializer.mode_;
     _r4 = _r0;
     if (_r4.i != 0) goto label1179;
@@ -2009,6 +2028,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     // "UTF-16"
     _r4.o = xmlvm_create_java_string_from_pool(1022);
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r0.o)->fields.gnu_xml_transform_StreamSerializer.encoding_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(4)
@@ -2044,6 +2064,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     if (_r4.i != 0) goto label1154;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 365)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_transform_StreamSerializer*) _r0.o)->fields.gnu_xml_transform_StreamSerializer.xmlDeclaration_;
     _r4 = _r0;
     if (_r4.i == 0) goto label1154;
@@ -2128,6 +2149,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     // "UTF-8"
     _r4.o = xmlvm_create_java_string_from_pool(128);
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r0.o)->fields.gnu_xml_transform_StreamSerializer.encoding_;
     _r6 = _r0;
     XMLVM_CHECK_NPE(4)
@@ -2147,6 +2169,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_io_OutputStream*) _r0.o)->tib->vtable[9])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 382)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r0.o)->fields.gnu_xml_transform_StreamSerializer.encoding_;
     _r4 = _r0;
     // "US-ASCII"
@@ -2215,6 +2238,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     (*(void (*)(JAVA_OBJECT, JAVA_INT)) ((java_io_OutputStream*) _r0.o)->tib->vtable[11])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 390)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r0.o)->fields.gnu_xml_transform_StreamSerializer.eol_;
     _r4 = _r0;
     _r0 = _r19;
@@ -2250,6 +2274,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     label1179:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 395)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_transform_StreamSerializer*) _r0.o)->fields.gnu_xml_transform_StreamSerializer.mode_;
     _r4 = _r0;
     _r5.i = 1;
@@ -2279,6 +2304,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     _r4.o = java_lang_StringBuilder_append___java_lang_String(_r5.o, _r4.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 402)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r0.o)->fields.gnu_xml_transform_StreamSerializer.encoding_;
     _r5 = _r0;
     _r6.i = 32;
@@ -2293,6 +2319,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder___INIT____java_lang_String(_r5.o, _r6.o);
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r0.o)->fields.gnu_xml_transform_StreamSerializer.encoding_;
     _r6 = _r0;
     XMLVM_CHECK_NPE(5)
@@ -2406,11 +2433,13 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     _r4.i = 1;
     _r0 = _r4;
     _r1 = _r19;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_transform_StreamSerializer*) _r1.o)->fields.gnu_xml_transform_StreamSerializer.htmlEncoded_ = _r0.i;
     goto label1154;
     label1371:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 404)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r0.o)->fields.gnu_xml_transform_StreamSerializer.encoding_;
     _r5 = _r0;
     goto label1257;
@@ -2686,9 +2715,11 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     (*(void (*)(JAVA_OBJECT, JAVA_INT)) ((java_io_OutputStream*) _r0.o)->tib->vtable[11])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 516)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r0.o)->fields.gnu_xml_transform_StreamSerializer.eol_;
     _r4 = _r0;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r0.o)->fields.gnu_xml_transform_StreamSerializer.encoding_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(4)
@@ -2775,6 +2806,7 @@ void gnu_xml_transform_StreamSerializer_doSerialize___org_w3c_dom_Node_java_io_O
     if (_r4.i != _r5.i) goto label53;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 528)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r0.o)->fields.gnu_xml_transform_StreamSerializer.eol_;
     _r4 = _r0;
     _r0 = _r19;
@@ -2911,6 +2943,7 @@ JAVA_BOOLEAN gnu_xml_transform_StreamSerializer_isDefined___java_lang_String_jav
     _r0.o = xmlvm_create_java_string_from_pool(0);
     label34:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 557)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_transform_StreamSerializer*) _r3.o)->fields.gnu_xml_transform_StreamSerializer.namespaces_;
     //java_util_LinkedList_iterator__[12]
     XMLVM_CHECK_NPE(1)
@@ -2954,6 +2987,7 @@ void gnu_xml_transform_StreamSerializer_pushNamespaceContext__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 569)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r2.o)->fields.gnu_xml_transform_StreamSerializer.namespaces_;
     _r1.o = __NEW_java_util_HashMap();
     XMLVM_CHECK_NPE(1)
@@ -2980,6 +3014,7 @@ JAVA_OBJECT gnu_xml_transform_StreamSerializer_define___java_lang_String_java_la
     _r3.o = n1;
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 574)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r2.o)->fields.gnu_xml_transform_StreamSerializer.namespaces_;
     //java_util_LinkedList_isEmpty__[11]
     XMLVM_CHECK_NPE(0)
@@ -2993,6 +3028,7 @@ JAVA_OBJECT gnu_xml_transform_StreamSerializer_define___java_lang_String_java_la
     return _r0.o;
     label10:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 576)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r2.o)->fields.gnu_xml_transform_StreamSerializer.namespaces_;
     //java_util_LinkedList_getFirst__[34]
     XMLVM_CHECK_NPE(0)
@@ -3035,6 +3071,7 @@ void gnu_xml_transform_StreamSerializer_popNamespaceContext__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 588)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r1.o)->fields.gnu_xml_transform_StreamSerializer.namespaces_;
     //java_util_LinkedList_removeFirst__[48]
     XMLVM_CHECK_NPE(0)
@@ -3065,17 +3102,21 @@ JAVA_OBJECT gnu_xml_transform_StreamSerializer_encodeText___java_lang_String(JAV
     _r1.i = 1;
     _r6.i = 0;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 594)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r8.o)->fields.gnu_xml_transform_StreamSerializer.encoder_;
     XMLVM_CHECK_NPE(0)
     java_nio_charset_CharsetEncoder_reset__(_r0.o);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 596)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((gnu_xml_transform_StreamSerializer*) _r8.o)->fields.gnu_xml_transform_StreamSerializer.mode_;
     if (_r0.i != _r1.i) goto label83;
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((gnu_xml_transform_StreamSerializer*) _r8.o)->fields.gnu_xml_transform_StreamSerializer.htmlEncoded_;
     if (_r0.i != 0) goto label83;
     _r0 = _r1;
     label18:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 597)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((gnu_xml_transform_StreamSerializer*) _r8.o)->fields.gnu_xml_transform_StreamSerializer.encoder_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_nio_charset_CharsetEncoder_canEncode___java_lang_CharSequence(_r1.o, _r9.o);
@@ -3100,6 +3141,7 @@ JAVA_OBJECT gnu_xml_transform_StreamSerializer_encodeText___java_lang_String(JAV
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((gnu_java_lang_CPStringBuilder*) _r1.o)->tib->vtable[5])(_r1.o);
     label44:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 630)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((gnu_xml_transform_StreamSerializer*) _r8.o)->fields.gnu_xml_transform_StreamSerializer.encoder_;
     _r0.o = java_nio_CharBuffer_wrap___java_lang_CharSequence(_r0.o);
     XMLVM_CHECK_NPE(1)
@@ -3142,6 +3184,7 @@ JAVA_OBJECT gnu_xml_transform_StreamSerializer_encodeText___java_lang_String(JAV
     XMLVM_CHECK_NPE(9)
     _r4.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) ((java_lang_String*) _r9.o)->tib->vtable[6])(_r9.o, _r3.i);
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 605)
+    XMLVM_CHECK_NPE(8)
     _r5.o = ((gnu_xml_transform_StreamSerializer*) _r8.o)->fields.gnu_xml_transform_StreamSerializer.encoder_;
     XMLVM_CHECK_NPE(5)
     _r5.i = java_nio_charset_CharsetEncoder_canEncode___char(_r5.o, _r4.i);
@@ -3303,6 +3346,7 @@ JAVA_OBJECT gnu_xml_transform_StreamSerializer_encode___java_lang_String_boolean
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 669)
     if (_r3.i != _r8.i) goto label108;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 671)
+    XMLVM_CHECK_NPE(9)
     _r4.i = ((gnu_xml_transform_StreamSerializer*) _r9.o)->fields.gnu_xml_transform_StreamSerializer.mode_;
     if (_r4.i != _r7.i) goto label91;
     _r4.i = _r1.i + 1;
@@ -3352,6 +3396,7 @@ JAVA_OBJECT gnu_xml_transform_StreamSerializer_encode___java_lang_String_boolean
     gnu_java_lang_CPStringBuilder___INIT____java_lang_String(_r2.o, _r3.o);
     label125:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 688)
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((gnu_xml_transform_StreamSerializer*) _r9.o)->fields.gnu_xml_transform_StreamSerializer.mode_;
     if (_r3.i != _r7.i) goto label135;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 690)
@@ -3469,6 +3514,7 @@ JAVA_OBJECT gnu_xml_transform_StreamSerializer_toString___org_w3c_dom_Node(JAVA_
     _r1.o = __NEW_java_lang_String();
     XMLVM_CHECK_NPE(0)
     _r0.o = java_io_ByteArrayOutputStream_toByteArray__(_r0.o);
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_transform_StreamSerializer*) _r3.o)->fields.gnu_xml_transform_StreamSerializer.encoding_;
     XMLVM_CHECK_NPE(1)
     java_lang_String___INIT____byte_1ARRAY_java_lang_String(_r1.o, _r0.o, _r2.o);

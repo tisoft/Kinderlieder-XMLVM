@@ -229,7 +229,9 @@ void java_io_FilePermission_1___INIT____java_io_FilePermission_java_lang_String(
     _r1.o = n1;
     _r2.o = n2;
     XMLVM_SOURCE_POSITION("FilePermission.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_io_FilePermission_1*) _r0.o)->fields.java_io_FilePermission_1.this_0_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((java_io_FilePermission_1*) _r0.o)->fields.java_io_FilePermission_1.val_path_ = _r2.o;
     XMLVM_SOURCE_POSITION("FilePermission.java", 107)
     XMLVM_CHECK_NPE(0)
@@ -251,6 +253,7 @@ JAVA_OBJECT java_io_FilePermission_1_run__(JAVA_OBJECT me)
     // Begin try
     XMLVM_SOURCE_POSITION("FilePermission.java", 110)
     _r0.o = __NEW_java_io_File();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_FilePermission_1*) _r2.o)->fields.java_io_FilePermission_1.val_path_;
     XMLVM_CHECK_NPE(0)
     java_io_File___INIT____java_lang_String(_r0.o, _r1.o);
@@ -269,6 +272,7 @@ JAVA_OBJECT java_io_FilePermission_1_run__(JAVA_OBJECT me)
     label12:;
     java_lang_Thread* curThread_w26061aaab3b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
     _r0.o = curThread_w26061aaab3b1b7->fields.java_lang_Thread.xmlvmException_;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_FilePermission_1*) _r2.o)->fields.java_io_FilePermission_1.val_path_;
     goto label11;
     //XMLVM_END_WRAPPER

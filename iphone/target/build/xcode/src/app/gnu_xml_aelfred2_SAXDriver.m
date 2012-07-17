@@ -1708,42 +1708,63 @@ void gnu_xml_aelfred2_SAXDriver___INIT___(JAVA_OBJECT me)
     _r0.o = __NEW_org_xml_sax_ext_DefaultHandler2();
     XMLVM_CHECK_NPE(0)
     org_xml_sax_ext_DefaultHandler2___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.base_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 138)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.entityResolver_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 139)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.resolver2_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 140)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.contentHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 141)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.dtdHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 142)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.errorHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 143)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.declHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 144)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.lexicalHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 152)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.namespaces_ = _r1.i;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 153)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.xmlNames_ = _r0.i;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 154)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.extGE_ = _r1.i;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 155)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.extPE_ = _r1.i;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 156)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.resolveAll_ = _r1.i;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 157)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.useResolver2_ = _r1.i;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 160)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.stringInterning_ = _r1.i;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 176)
     XMLVM_CHECK_NPE(2)
@@ -1766,28 +1787,35 @@ void gnu_xml_aelfred2_SAXDriver_reset__(JAVA_OBJECT me)
     _r2.o = JAVA_NULL;
     _r1.i = 0;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 181)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.elementName_ = _r2.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 182)
     _r0.o = __NEW_java_util_Stack();
     XMLVM_CHECK_NPE(0)
     java_util_Stack___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.entityStack_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 183)
     _r0.o = __NEW_java_util_ArrayList();
     XMLVM_CHECK_NPE(0)
     java_util_ArrayList___INIT___(_r0.o);
     _r0.o = java_util_Collections_synchronizedList___java_util_List(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.attributesList_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 184)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.attributeCount_ = _r1.i;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 185)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.attributes_ = _r1.i;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 186)
     _r0.i = 3;
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_String, _r0.i);
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.nsTemp_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 187)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.prefixStack_ = _r2.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 188)
     XMLVM_EXIT_METHOD()
@@ -1837,7 +1865,9 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getEntityResolver__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 216)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.entityResolver_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
     if (_r0.o != _r1.o) goto label8;
     _r0.o = JAVA_NULL;
@@ -1845,6 +1875,7 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getEntityResolver__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label8:;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.entityResolver_;
     goto label7;
     //XMLVM_END_WRAPPER
@@ -1868,14 +1899,17 @@ void gnu_xml_aelfred2_SAXDriver_setEntityResolver___org_xml_sax_EntityResolver(J
     _r0 = _r3;
     _r0.o = _r0.o;
     _r1 = _r0;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.resolver2_ = _r1.o;
     label10:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 233)
     if (_r3.o != JAVA_NULL) goto label21;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 235)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
     label14:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 237)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.entityResolver_ = _r1.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 238)
     XMLVM_EXIT_METHOD()
@@ -1883,6 +1917,7 @@ void gnu_xml_aelfred2_SAXDriver_setEntityResolver___org_xml_sax_EntityResolver(J
     label17:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 231)
     _r1.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.resolver2_ = _r1.o;
     goto label10;
     label21:;
@@ -1900,7 +1935,9 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getDTDHandler__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 246)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.dtdHandler_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
     if (_r0.o != _r1.o) goto label8;
     _r0.o = JAVA_NULL;
@@ -1908,6 +1945,7 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getDTDHandler__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label8:;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.dtdHandler_;
     goto label7;
     //XMLVM_END_WRAPPER
@@ -1925,9 +1963,11 @@ void gnu_xml_aelfred2_SAXDriver_setDTDHandler___org_xml_sax_DTDHandler(JAVA_OBJE
     XMLVM_SOURCE_POSITION("SAXDriver.java", 255)
     if (_r2.o != JAVA_NULL) goto label7;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 257)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
     label4:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 259)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.dtdHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 260)
     XMLVM_EXIT_METHOD()
@@ -1951,9 +1991,11 @@ void gnu_xml_aelfred2_SAXDriver_setDocumentHandler___org_xml_sax_DocumentHandler
     _r0.o = __NEW_gnu_xml_aelfred2_SAXDriver_Adapter();
     XMLVM_CHECK_NPE(0)
     gnu_xml_aelfred2_SAXDriver_Adapter___INIT____org_xml_sax_DocumentHandler(_r0.o, _r2.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.contentHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 278)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.xmlNames_ = _r0.i;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 279)
     XMLVM_EXIT_METHOD()
@@ -1970,7 +2012,9 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getContentHandler__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 287)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.contentHandler_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
     if (_r0.o != _r1.o) goto label8;
     _r0.o = JAVA_NULL;
@@ -1978,6 +2022,7 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getContentHandler__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label8:;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.contentHandler_;
     goto label7;
     //XMLVM_END_WRAPPER
@@ -1995,9 +2040,11 @@ void gnu_xml_aelfred2_SAXDriver_setContentHandler___org_xml_sax_ContentHandler(J
     XMLVM_SOURCE_POSITION("SAXDriver.java", 298)
     if (_r2.o != JAVA_NULL) goto label7;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 300)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
     label4:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 302)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.contentHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 303)
     XMLVM_EXIT_METHOD()
@@ -2020,9 +2067,11 @@ void gnu_xml_aelfred2_SAXDriver_setErrorHandler___org_xml_sax_ErrorHandler(JAVA_
     XMLVM_SOURCE_POSITION("SAXDriver.java", 311)
     if (_r2.o != JAVA_NULL) goto label7;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 313)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
     label4:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 315)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.errorHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 316)
     XMLVM_EXIT_METHOD()
@@ -2042,7 +2091,9 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getErrorHandler__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 324)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.errorHandler_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
     if (_r0.o != _r1.o) goto label8;
     _r0.o = JAVA_NULL;
@@ -2050,6 +2101,7 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getErrorHandler__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label8:;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.errorHandler_;
     goto label7;
     //XMLVM_END_WRAPPER
@@ -2071,6 +2123,7 @@ void gnu_xml_aelfred2_SAXDriver_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     _r7.o = me;
     _r8.o = n1;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 346)
+    XMLVM_CHECK_NPE(7)
     _r6.o = ((gnu_xml_aelfred2_SAXDriver*) _r7.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
     java_lang_Object_acquireLockRecursive__(_r6.o);
     XMLVM_TRY_BEGIN(w25392aaac37b1b6)
@@ -2079,14 +2132,17 @@ void gnu_xml_aelfred2_SAXDriver_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     _r0.o = __NEW_gnu_xml_aelfred2_XmlParser();
     XMLVM_CHECK_NPE(0)
     gnu_xml_aelfred2_XmlParser___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_aelfred2_SAXDriver*) _r7.o)->fields.gnu_xml_aelfred2_SAXDriver.parser_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 349)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r7.o)->fields.gnu_xml_aelfred2_SAXDriver.namespaces_;
     if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w25392aaac37b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25392aaac37b1b6, sizeof(XMLVM_JMP_BUF)); goto label61; };
     XMLVM_SOURCE_POSITION("SAXDriver.java", 351)
     _r0.o = __NEW_org_xml_sax_helpers_NamespaceSupport();
     XMLVM_CHECK_NPE(0)
     org_xml_sax_helpers_NamespaceSupport___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_aelfred2_SAXDriver*) _r7.o)->fields.gnu_xml_aelfred2_SAXDriver.prefixStack_ = _r0.o;
     // End try
     XMLVM_TRY_END
@@ -2098,6 +2154,7 @@ void gnu_xml_aelfred2_SAXDriver_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     XMLVM_TRY_BEGIN(w25392aaac37b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXDriver.java", 357)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r7.o)->fields.gnu_xml_aelfred2_SAXDriver.parser_;
     XMLVM_CHECK_NPE(0)
     gnu_xml_aelfred2_XmlParser_setHandler___gnu_xml_aelfred2_SAXDriver(_r0.o, _r7.o);
@@ -2116,6 +2173,7 @@ void gnu_xml_aelfred2_SAXDriver_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     XMLVM_CHECK_NPE(8)
     _r4.o = org_xml_sax_InputSource_getByteStream__(_r8.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 364)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r7.o)->fields.gnu_xml_aelfred2_SAXDriver.parser_;
     XMLVM_CHECK_NPE(8)
     _r1.o = org_xml_sax_InputSource_getSystemId__(_r8.o);
@@ -2140,6 +2198,7 @@ void gnu_xml_aelfred2_SAXDriver_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     XMLVM_TRY_BEGIN(w25392aaac37b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXDriver.java", 388)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r7.o)->fields.gnu_xml_aelfred2_SAXDriver.contentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_endDocument__])(_r0.o);
@@ -2161,6 +2220,7 @@ void gnu_xml_aelfred2_SAXDriver_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     XMLVM_TRY_BEGIN(w25392aaac37b1c12)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXDriver.java", 353)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r7.o)->fields.gnu_xml_aelfred2_SAXDriver.xmlNames_;
     if (_r0.i != 0) { XMLVM_MEMCPY(curThread_w25392aaac37b1c12->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25392aaac37b1c12, sizeof(XMLVM_JMP_BUF)); goto label21; };
     XMLVM_SOURCE_POSITION("SAXDriver.java", 355)
@@ -2207,6 +2267,7 @@ void gnu_xml_aelfred2_SAXDriver_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     _r0.o = curThread_w25392aaac37b1c22->fields.java_lang_Thread.xmlvmException_;
     XMLVM_TRY_BEGIN(w25392aaac37b1c23)
     // Begin try
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver*) _r7.o)->fields.gnu_xml_aelfred2_SAXDriver.contentHandler_;
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_endDocument__])(_r1.o);
@@ -2326,6 +2387,7 @@ JAVA_BOOLEAN gnu_xml_aelfred2_SAXDriver_getFeature___java_lang_String(JAVA_OBJEC
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
     if (_r0.i == 0) goto label22;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 427)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.extGE_;
     goto label10;
     label22:;
@@ -2337,6 +2399,7 @@ JAVA_BOOLEAN gnu_xml_aelfred2_SAXDriver_getFeature___java_lang_String(JAVA_OBJEC
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
     if (_r0.i == 0) goto label33;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 431)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.extPE_;
     goto label10;
     label33:;
@@ -2348,6 +2411,7 @@ JAVA_BOOLEAN gnu_xml_aelfred2_SAXDriver_getFeature___java_lang_String(JAVA_OBJEC
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
     if (_r0.i == 0) goto label44;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 437)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.xmlNames_;
     goto label10;
     label44:;
@@ -2359,6 +2423,7 @@ JAVA_BOOLEAN gnu_xml_aelfred2_SAXDriver_getFeature___java_lang_String(JAVA_OBJEC
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
     if (_r0.i == 0) goto label55;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 443)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.namespaces_;
     goto label10;
     label55:;
@@ -2381,6 +2446,7 @@ JAVA_BOOLEAN gnu_xml_aelfred2_SAXDriver_getFeature___java_lang_String(JAVA_OBJEC
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
     if (_r0.i == 0) goto label76;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 455)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.stringInterning_;
     goto label10;
     label76:;
@@ -2403,6 +2469,7 @@ JAVA_BOOLEAN gnu_xml_aelfred2_SAXDriver_getFeature___java_lang_String(JAVA_OBJEC
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
     if (_r0.i == 0) goto label111;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 469)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.parser_;
     if (_r0.o != JAVA_NULL) goto label104;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 471)
@@ -2412,6 +2479,7 @@ JAVA_BOOLEAN gnu_xml_aelfred2_SAXDriver_getFeature___java_lang_String(JAVA_OBJEC
     XMLVM_THROW_CUSTOM(_r0.o)
     label104:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 473)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.parser_;
     XMLVM_CHECK_NPE(0)
     _r0.i = gnu_xml_aelfred2_XmlParser_isStandalone__(_r0.o);
@@ -2425,6 +2493,7 @@ JAVA_BOOLEAN gnu_xml_aelfred2_SAXDriver_getFeature___java_lang_String(JAVA_OBJEC
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
     if (_r0.i == 0) goto label122;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 479)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.resolveAll_;
     goto label10;
     label122:;
@@ -2435,6 +2504,7 @@ JAVA_BOOLEAN gnu_xml_aelfred2_SAXDriver_getFeature___java_lang_String(JAVA_OBJEC
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
     if (_r0.i == 0) goto label133;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.useResolver2_;
     goto label10;
     label133:;
@@ -2454,6 +2524,7 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getDeclHandler__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 494)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.declHandler_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2468,6 +2539,7 @@ JAVA_BOOLEAN gnu_xml_aelfred2_SAXDriver_resolveURIs__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 500)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.resolveAll_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -2494,7 +2566,9 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getProperty___java_lang_String(JAVA_OBJEC
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r4.o);
     if (_r0.i == 0) goto label20;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 514)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.declHandler_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
     if (_r0.o != _r1.o) goto label17;
     _r0 = _r2;
@@ -2503,6 +2577,7 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getProperty___java_lang_String(JAVA_OBJEC
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label17:;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.declHandler_;
     goto label16;
     label20:;
@@ -2513,12 +2588,15 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getProperty___java_lang_String(JAVA_OBJEC
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r4.o);
     if (_r0.i == 0) goto label39;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.lexicalHandler_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
     if (_r0.o != _r1.o) goto label36;
     _r0 = _r2;
     goto label16;
     label36:;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.lexicalHandler_;
     goto label16;
     label39:;
@@ -2555,6 +2633,7 @@ void gnu_xml_aelfred2_SAXDriver_setFeature___java_lang_String_boolean(JAVA_OBJEC
     return;
     label8:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 542)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.parser_;
     if (_r0.o == JAVA_NULL) goto label20;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 544)
@@ -2573,11 +2652,14 @@ void gnu_xml_aelfred2_SAXDriver_setFeature___java_lang_String_boolean(JAVA_OBJEC
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
     if (_r0.i == 0) goto label37;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 550)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.xmlNames_ = _r4.i;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 552)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.xmlNames_;
     if (_r0.i != 0) goto label7;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 554)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.namespaces_ = _r1.i;
     goto label7;
     label37:;
@@ -2589,11 +2671,14 @@ void gnu_xml_aelfred2_SAXDriver_setFeature___java_lang_String_boolean(JAVA_OBJEC
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
     if (_r0.i == 0) goto label54;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 561)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.namespaces_ = _r4.i;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 563)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.namespaces_;
     if (_r0.i != 0) goto label7;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 565)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.xmlNames_ = _r1.i;
     goto label7;
     label54:;
@@ -2605,6 +2690,7 @@ void gnu_xml_aelfred2_SAXDriver_setFeature___java_lang_String_boolean(JAVA_OBJEC
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
     if (_r0.i == 0) goto label65;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 572)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.extGE_ = _r4.i;
     goto label7;
     label65:;
@@ -2616,6 +2702,7 @@ void gnu_xml_aelfred2_SAXDriver_setFeature___java_lang_String_boolean(JAVA_OBJEC
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
     if (_r0.i == 0) goto label76;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 577)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.extPE_ = _r4.i;
     goto label7;
     label76:;
@@ -2627,6 +2714,7 @@ void gnu_xml_aelfred2_SAXDriver_setFeature___java_lang_String_boolean(JAVA_OBJEC
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
     if (_r0.i == 0) goto label87;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 582)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.resolveAll_ = _r4.i;
     goto label7;
     label87:;
@@ -2638,6 +2726,7 @@ void gnu_xml_aelfred2_SAXDriver_setFeature___java_lang_String_boolean(JAVA_OBJEC
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r3.o);
     if (_r0.i == 0) goto label98;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 588)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.useResolver2_ = _r4.i;
     goto label7;
     label98:;
@@ -2674,7 +2763,9 @@ void gnu_xml_aelfred2_SAXDriver_setProperty___java_lang_String_java_lang_Object(
     XMLVM_SOURCE_POSITION("SAXDriver.java", 609)
     if (_r3.o != JAVA_NULL) goto label18;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 611)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.declHandler_ = _r0.o;
     label17:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 638)
@@ -2693,6 +2784,7 @@ void gnu_xml_aelfred2_SAXDriver_setProperty___java_lang_String_java_lang_Object(
     label28:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 619)
     _r3.o = _r3.o;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.declHandler_ = _r3.o;
     goto label17;
     label33:;
@@ -2706,7 +2798,9 @@ void gnu_xml_aelfred2_SAXDriver_setProperty___java_lang_String_java_lang_Object(
     XMLVM_SOURCE_POSITION("SAXDriver.java", 626)
     if (_r3.o != JAVA_NULL) goto label48;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 628)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.lexicalHandler_ = _r0.o;
     goto label17;
     label48:;
@@ -2722,6 +2816,7 @@ void gnu_xml_aelfred2_SAXDriver_setProperty___java_lang_String_java_lang_Object(
     label58:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 636)
     _r3.o = _r3.o;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.lexicalHandler_ = _r3.o;
     goto label17;
     label63:;
@@ -2741,14 +2836,17 @@ void gnu_xml_aelfred2_SAXDriver_startDocument__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 653)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.contentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_setDocumentLocator___org_xml_sax_Locator])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 654)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.contentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_startDocument__])(_r0.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 655)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.attributesList_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_clear__])(_r0.o);
@@ -2768,6 +2866,7 @@ void gnu_xml_aelfred2_SAXDriver_skippedEntity___java_lang_String(JAVA_OBJECT me,
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 661)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.contentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_skippedEntity___java_lang_String])(_r0.o, _r2.o);
@@ -2789,10 +2888,13 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getExternalSubset___java_lang_String_java
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 667)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.resolver2_;
     if (_r0.o == JAVA_NULL) goto label12;
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.useResolver2_;
     if (_r0.i == 0) goto label12;
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.extPE_;
     if (_r0.i != 0) goto label14;
     label12:;
@@ -2803,6 +2905,7 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getExternalSubset___java_lang_String_java
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label14:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.resolver2_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ext_EntityResolver2_getExternalSubset___java_lang_String_java_lang_String])(_r0.o, _r2.o, _r3.o);
@@ -2834,6 +2937,7 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_resolveEntity___boolean_java_lang_String_
     _r3.i = 0;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 681)
     if (_r6.i == 0) goto label11;
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r5.o)->fields.gnu_xml_aelfred2_SAXDriver.extPE_;
     if (_r0.i != 0) goto label11;
     _r0 = _r1;
@@ -2845,6 +2949,7 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_resolveEntity___boolean_java_lang_String_
     label11:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 685)
     if (_r6.i != 0) goto label19;
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r5.o)->fields.gnu_xml_aelfred2_SAXDriver.extGE_;
     if (_r0.i != 0) goto label19;
     _r0 = _r1;
@@ -2852,15 +2957,19 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_resolveEntity___boolean_java_lang_String_
     goto label10;
     label19:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 691)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r5.o)->fields.gnu_xml_aelfred2_SAXDriver.lexicalHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ext_LexicalHandler_startEntity___java_lang_String])(_r0.o, _r7.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 692)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r5.o)->fields.gnu_xml_aelfred2_SAXDriver.resolver2_;
     if (_r0.o == JAVA_NULL) goto label68;
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r5.o)->fields.gnu_xml_aelfred2_SAXDriver.useResolver2_;
     if (_r0.i == 0) goto label68;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 694)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r5.o)->fields.gnu_xml_aelfred2_SAXDriver.resolver2_;
     XMLVM_CHECK_NPE(8)
     _r1.o = org_xml_sax_InputSource_getPublicId__(_r8.o);
@@ -2893,7 +3002,9 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_resolveEntity___boolean_java_lang_String_
     XMLVM_CHECK_NPE(8)
     _r0.o = org_xml_sax_InputSource_getSystemId__(_r8.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 707)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver*) _r5.o)->fields.gnu_xml_aelfred2_SAXDriver.entityResolver_;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((gnu_xml_aelfred2_SAXDriver*) _r5.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
     if (_r1.o == _r2.o) goto label104;
     _r1 = _r4;
@@ -2904,6 +3015,7 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_resolveEntity___boolean_java_lang_String_
     XMLVM_CHECK_NPE(8)
     org_xml_sax_InputSource_setSystemId___java_lang_String(_r8.o, _r0.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 708)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r5.o)->fields.gnu_xml_aelfred2_SAXDriver.entityResolver_;
     XMLVM_CHECK_NPE(8)
     _r1.o = org_xml_sax_InputSource_getPublicId__(_r8.o);
@@ -3060,11 +3172,13 @@ void gnu_xml_aelfred2_SAXDriver_startExternalEntity___java_lang_String_java_lang
     XMLVM_SOURCE_POSITION("SAXDriver.java", 770)
     if (_r4.i != 0) goto label7;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 772)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.lexicalHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ext_LexicalHandler_startEntity___java_lang_String])(_r0.o, _r2.o);
     label7:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 774)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.entityStack_;
     XMLVM_CHECK_NPE(0)
     java_util_Stack_push___java_lang_Object(_r0.o, _r3.o);
@@ -3091,11 +3205,13 @@ void gnu_xml_aelfred2_SAXDriver_endExternalEntity___java_lang_String(JAVA_OBJECT
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r2.o);
     if (_r0.i != 0) goto label13;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 782)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.lexicalHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ext_LexicalHandler_endEntity___java_lang_String])(_r0.o, _r2.o);
     label13:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 784)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.entityStack_;
     XMLVM_CHECK_NPE(0)
     java_util_Stack_pop__(_r0.o);
@@ -3115,6 +3231,7 @@ void gnu_xml_aelfred2_SAXDriver_startInternalEntity___java_lang_String(JAVA_OBJE
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 790)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.lexicalHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ext_LexicalHandler_startEntity___java_lang_String])(_r0.o, _r2.o);
@@ -3134,6 +3251,7 @@ void gnu_xml_aelfred2_SAXDriver_endInternalEntity___java_lang_String(JAVA_OBJECT
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 796)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.lexicalHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ext_LexicalHandler_endEntity___java_lang_String])(_r0.o, _r2.o);
@@ -3157,6 +3275,7 @@ void gnu_xml_aelfred2_SAXDriver_doctypeDecl___java_lang_String_java_lang_String_
     _r3.o = n2;
     _r4.o = n3;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 802)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.lexicalHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ext_LexicalHandler_startDTD___java_lang_String_java_lang_String_java_lang_String])(_r0.o, _r2.o, _r3.o, _r4.o);
@@ -3186,8 +3305,10 @@ void gnu_xml_aelfred2_SAXDriver_notationDecl___java_lang_String_java_lang_String
     XMLVM_TRY_BEGIN(w25392aaac55b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXDriver.java", 818)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.dtdHandler_;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 819)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.resolveAll_;
     if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w25392aaac55b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25392aaac55b1b6, sizeof(XMLVM_JMP_BUF)); goto label17; };
     if (_r6.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w25392aaac55b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25392aaac55b1b6, sizeof(XMLVM_JMP_BUF)); goto label17; };
@@ -3256,8 +3377,10 @@ void gnu_xml_aelfred2_SAXDriver_unparsedEntityDecl___java_lang_String_java_lang_
     XMLVM_TRY_BEGIN(w25392aaac56b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXDriver.java", 836)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.dtdHandler_;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 837)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.resolveAll_;
     if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w25392aaac56b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25392aaac56b1b7, sizeof(XMLVM_JMP_BUF)); goto label15; };
     XMLVM_SOURCE_POSITION("SAXDriver.java", 838)
@@ -3311,6 +3434,7 @@ void gnu_xml_aelfred2_SAXDriver_endDoctype__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 852)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.lexicalHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ext_LexicalHandler_endDTD__])(_r0.o);
@@ -3429,10 +3553,12 @@ void gnu_xml_aelfred2_SAXDriver_declarePrefix___java_lang_String_java_lang_Strin
     XMLVM_CHECK_NPE(5)
     _r0.o = java_lang_String_intern__(_r5.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 903)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.prefixStack_;
     XMLVM_CHECK_NPE(1)
     org_xml_sax_helpers_NamespaceSupport_declarePrefix___java_lang_String_java_lang_String(_r1.o, _r4.o, _r0.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 904)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.contentHandler_;
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_startPrefixMapping___java_lang_String_java_lang_String])(_r1.o, _r4.o, _r0.o);
@@ -3466,23 +3592,29 @@ void gnu_xml_aelfred2_SAXDriver_attribute___java_lang_String_java_lang_String_bo
     // "xmlns"
     _r1.o = xmlvm_create_java_string_from_pool(705);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 910)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r6.o)->fields.gnu_xml_aelfred2_SAXDriver.attributes_;
     if (_r0.i != 0) goto label24;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 912)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_aelfred2_SAXDriver*) _r6.o)->fields.gnu_xml_aelfred2_SAXDriver.attributes_ = _r0.i;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 913)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r6.o)->fields.gnu_xml_aelfred2_SAXDriver.namespaces_;
     if (_r0.i == 0) goto label24;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 915)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r6.o)->fields.gnu_xml_aelfred2_SAXDriver.prefixStack_;
     XMLVM_CHECK_NPE(0)
     org_xml_sax_helpers_NamespaceSupport_pushContext__(_r0.o);
     label24:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 921)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r6.o)->fields.gnu_xml_aelfred2_SAXDriver.namespaces_;
     if (_r0.i == 0) goto label105;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 926)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r6.o)->fields.gnu_xml_aelfred2_SAXDriver.stringInterning_;
     if (_r0.i == 0) goto label126;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 928)
@@ -3495,6 +3627,7 @@ void gnu_xml_aelfred2_SAXDriver_attribute___java_lang_String_java_lang_String_bo
     XMLVM_CHECK_NPE(6)
     gnu_xml_aelfred2_SAXDriver_declarePrefix___java_lang_String_java_lang_String(_r6.o, _r2.o, _r8.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 931)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r6.o)->fields.gnu_xml_aelfred2_SAXDriver.xmlNames_;
     if (_r0.i != 0) goto label105;
     label45:;
@@ -3549,14 +3682,18 @@ void gnu_xml_aelfred2_SAXDriver_attribute___java_lang_String_java_lang_String_bo
     gnu_xml_aelfred2_SAXDriver_verror___java_lang_String(_r6.o, _r0.o);
     label101:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 956)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r6.o)->fields.gnu_xml_aelfred2_SAXDriver.xmlNames_;
     if (_r0.i == 0) goto label45;
     label105:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 995)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r6.o)->fields.gnu_xml_aelfred2_SAXDriver.attributeCount_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_aelfred2_SAXDriver*) _r6.o)->fields.gnu_xml_aelfred2_SAXDriver.attributeCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 998)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r6.o)->fields.gnu_xml_aelfred2_SAXDriver.attributesList_;
     _r1.o = __NEW_gnu_xml_aelfred2_SAXDriver_Attribute();
     XMLVM_CHECK_NPE(1)
@@ -3583,6 +3720,7 @@ void gnu_xml_aelfred2_SAXDriver_attribute___java_lang_String_java_lang_String_bo
     XMLVM_CHECK_NPE(6)
     gnu_xml_aelfred2_SAXDriver_declarePrefix___java_lang_String_java_lang_String(_r6.o, _r2.o, _r8.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 967)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r6.o)->fields.gnu_xml_aelfred2_SAXDriver.xmlNames_;
     if (_r0.i != 0) goto label105;
     goto label45;
@@ -3621,6 +3759,7 @@ void gnu_xml_aelfred2_SAXDriver_attribute___java_lang_String_java_lang_String_bo
     gnu_xml_aelfred2_SAXDriver_verror___java_lang_String(_r6.o, _r0.o);
     label186:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 987)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r6.o)->fields.gnu_xml_aelfred2_SAXDriver.xmlNames_;
     if (_r0.i != 0) goto label105;
     goto label45;
@@ -3657,25 +3796,33 @@ void gnu_xml_aelfred2_SAXDriver_startElement___java_lang_String(JAVA_OBJECT me, 
     // ""
     _r8.o = xmlvm_create_java_string_from_pool(0);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1005)
+    XMLVM_CHECK_NPE(10)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.contentHandler_;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1020)
+    XMLVM_CHECK_NPE(10)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.attributes_;
     if (_r0.i != 0) goto label90;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1022)
+    XMLVM_CHECK_NPE(10)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.namespaces_;
     if (_r0.i == 0) goto label21;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1024)
+    XMLVM_CHECK_NPE(10)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.prefixStack_;
     XMLVM_CHECK_NPE(0)
     org_xml_sax_helpers_NamespaceSupport_pushContext__(_r0.o);
     label21:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1083)
+    XMLVM_CHECK_NPE(10)
     ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.elementName_ = _r11.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1084)
+    XMLVM_CHECK_NPE(10)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.namespaces_;
     if (_r0.i == 0) goto label203;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1086)
+    XMLVM_CHECK_NPE(10)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.prefixStack_;
+    XMLVM_CHECK_NPE(10)
     _r2.o = ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.nsTemp_;
     XMLVM_CHECK_NPE(0)
     _r0.o = org_xml_sax_helpers_NamespaceSupport_processName___java_lang_String_java_lang_String_1ARRAY_boolean(_r0.o, _r11.o, _r2.o, _r6.i);
@@ -3694,7 +3841,9 @@ void gnu_xml_aelfred2_SAXDriver_startElement___java_lang_String(JAVA_OBJECT me, 
     XMLVM_CHECK_NPE(10)
     gnu_xml_aelfred2_SAXDriver_fatal___java_lang_String(_r10.o, _r0.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1089)
+    XMLVM_CHECK_NPE(10)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.nsTemp_;
+    XMLVM_CHECK_NPE(10)
     _r2.o = ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.nsTemp_;
     // ""
     _r3.o = xmlvm_create_java_string_from_pool(0);
@@ -3706,10 +3855,12 @@ void gnu_xml_aelfred2_SAXDriver_startElement___java_lang_String(JAVA_OBJECT me, 
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r8.o;
     label65:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1091)
+    XMLVM_CHECK_NPE(10)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.nsTemp_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r6.i);
     _r0.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i];
+    XMLVM_CHECK_NPE(10)
     _r2.o = ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.nsTemp_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
@@ -3718,15 +3869,19 @@ void gnu_xml_aelfred2_SAXDriver_startElement___java_lang_String(JAVA_OBJECT me, 
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_startElement___java_lang_String_java_lang_String_java_lang_String_org_xml_sax_Attributes])(_r1.o, _r0.o, _r2.o, _r11.o, _r10.o);
     label76:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1100)
+    XMLVM_CHECK_NPE(10)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.attributes_;
     if (_r0.i == 0) goto label89;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1102)
+    XMLVM_CHECK_NPE(10)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.attributesList_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_clear__])(_r0.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1103)
+    XMLVM_CHECK_NPE(10)
     ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.attributeCount_ = _r6.i;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1104)
+    XMLVM_CHECK_NPE(10)
     ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.attributes_ = _r6.i;
     label89:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1106)
@@ -3734,9 +3889,11 @@ void gnu_xml_aelfred2_SAXDriver_startElement___java_lang_String(JAVA_OBJECT me, 
     return;
     label90:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1027)
+    XMLVM_CHECK_NPE(10)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.namespaces_;
     if (_r0.i == 0) goto label21;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1032)
+    XMLVM_CHECK_NPE(10)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.attributesList_;
     XMLVM_CHECK_NPE(0)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_iterator__])(_r0.o);
@@ -3750,8 +3907,10 @@ void gnu_xml_aelfred2_SAXDriver_startElement___java_lang_String(JAVA_OBJECT me, 
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_next__])(_r2.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1036)
+    XMLVM_CHECK_NPE(0)
     _r3.o = ((gnu_xml_aelfred2_SAXDriver_Attribute*) _r0.o)->fields.gnu_xml_aelfred2_SAXDriver_Attribute.name_;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1040)
+    XMLVM_CHECK_NPE(10)
     _r4.i = ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.stringInterning_;
     if (_r4.i == 0) goto label181;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1042)
@@ -3786,7 +3945,9 @@ void gnu_xml_aelfred2_SAXDriver_startElement___java_lang_String(JAVA_OBJECT me, 
     if (_r4.i != 0) goto label100;
     label152:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1070)
+    XMLVM_CHECK_NPE(10)
     _r4.o = ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.prefixStack_;
+    XMLVM_CHECK_NPE(10)
     _r5.o = ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.nsTemp_;
     XMLVM_CHECK_NPE(4)
     _r4.o = org_xml_sax_helpers_NamespaceSupport_processName___java_lang_String_java_lang_String_1ARRAY_boolean(_r4.o, _r3.o, _r5.o, _r7.i);
@@ -3816,16 +3977,20 @@ void gnu_xml_aelfred2_SAXDriver_startElement___java_lang_String(JAVA_OBJECT me, 
     goto label100;
     label190:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1076)
+    XMLVM_CHECK_NPE(10)
     _r3.o = ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.nsTemp_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
     _r3.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i];
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_aelfred2_SAXDriver_Attribute*) _r0.o)->fields.gnu_xml_aelfred2_SAXDriver_Attribute.nameSpace_ = _r3.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1077)
+    XMLVM_CHECK_NPE(10)
     _r3.o = ((gnu_xml_aelfred2_SAXDriver*) _r10.o)->fields.gnu_xml_aelfred2_SAXDriver.nsTemp_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r7.i);
     _r3.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i];
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_aelfred2_SAXDriver_Attribute*) _r0.o)->fields.gnu_xml_aelfred2_SAXDriver_Attribute.localName_ = _r3.o;
     goto label100;
     label203:;
@@ -3856,8 +4021,10 @@ void gnu_xml_aelfred2_SAXDriver_endElement___java_lang_String(JAVA_OBJECT me, JA
     // ""
     _r2.o = xmlvm_create_java_string_from_pool(0);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1111)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver*) _r4.o)->fields.gnu_xml_aelfred2_SAXDriver.contentHandler_;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1113)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r4.o)->fields.gnu_xml_aelfred2_SAXDriver.namespaces_;
     if (_r0.i != 0) goto label17;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1115)
@@ -3873,15 +4040,19 @@ void gnu_xml_aelfred2_SAXDriver_endElement___java_lang_String(JAVA_OBJECT me, JA
     return;
     label17:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1118)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r4.o)->fields.gnu_xml_aelfred2_SAXDriver.prefixStack_;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_aelfred2_SAXDriver*) _r4.o)->fields.gnu_xml_aelfred2_SAXDriver.nsTemp_;
     XMLVM_CHECK_NPE(0)
     org_xml_sax_helpers_NamespaceSupport_processName___java_lang_String_java_lang_String_1ARRAY_boolean(_r0.o, _r5.o, _r2.o, _r3.i);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1119)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r4.o)->fields.gnu_xml_aelfred2_SAXDriver.nsTemp_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r3.i);
     _r0.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i];
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_aelfred2_SAXDriver*) _r4.o)->fields.gnu_xml_aelfred2_SAXDriver.nsTemp_;
     _r3.i = 1;
     XMLVM_CHECK_NPE(2)
@@ -3890,6 +4061,7 @@ void gnu_xml_aelfred2_SAXDriver_endElement___java_lang_String(JAVA_OBJECT me, JA
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_endElement___java_lang_String_java_lang_String_java_lang_String])(_r1.o, _r0.o, _r2.o, _r5.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1121)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r4.o)->fields.gnu_xml_aelfred2_SAXDriver.prefixStack_;
     XMLVM_CHECK_NPE(0)
     _r2.o = org_xml_sax_helpers_NamespaceSupport_getDeclaredPrefixes__(_r0.o);
@@ -3899,6 +4071,7 @@ void gnu_xml_aelfred2_SAXDriver_endElement___java_lang_String(JAVA_OBJECT me, JA
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Enumeration_hasMoreElements__])(_r2.o);
     if (_r0.i != 0) goto label54;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1127)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r4.o)->fields.gnu_xml_aelfred2_SAXDriver.prefixStack_;
     XMLVM_CHECK_NPE(0)
     org_xml_sax_helpers_NamespaceSupport_popContext__(_r0.o);
@@ -3922,6 +4095,7 @@ void gnu_xml_aelfred2_SAXDriver_startCDATA__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1133)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.lexicalHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ext_LexicalHandler_startCDATA__])(_r0.o);
@@ -3945,6 +4119,7 @@ void gnu_xml_aelfred2_SAXDriver_charData___char_1ARRAY_int_int(JAVA_OBJECT me, J
     _r3.i = n2;
     _r4.i = n3;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1139)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.contentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_characters___char_1ARRAY_int_int])(_r0.o, _r2.o, _r3.i, _r4.i);
@@ -3962,6 +4137,7 @@ void gnu_xml_aelfred2_SAXDriver_endCDATA__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1145)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.lexicalHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ext_LexicalHandler_endCDATA__])(_r0.o);
@@ -3985,6 +4161,7 @@ void gnu_xml_aelfred2_SAXDriver_ignorableWhitespace___char_1ARRAY_int_int(JAVA_O
     _r3.i = n2;
     _r4.i = n3;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1151)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.contentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_ignorableWhitespace___char_1ARRAY_int_int])(_r0.o, _r2.o, _r3.i, _r4.i);
@@ -4006,6 +4183,7 @@ void gnu_xml_aelfred2_SAXDriver_processingInstruction___java_lang_String_java_la
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1157)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.contentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_processingInstruction___java_lang_String_java_lang_String])(_r0.o, _r2.o, _r3.o);
@@ -4030,10 +4208,13 @@ void gnu_xml_aelfred2_SAXDriver_comment___char_1ARRAY_int_int(JAVA_OBJECT me, JA
     _r4.i = n2;
     _r5.i = n3;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1163)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.lexicalHandler_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.base_;
     if (_r0.o == _r1.o) goto label11;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1165)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.lexicalHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ext_LexicalHandler_comment___char_1ARRAY_int_int])(_r0.o, _r3.o, _r4.i, _r5.i);
@@ -4059,6 +4240,7 @@ void gnu_xml_aelfred2_SAXDriver_fatal___java_lang_String(JAVA_OBJECT me, JAVA_OB
     XMLVM_CHECK_NPE(0)
     org_xml_sax_SAXParseException___INIT____java_lang_String_org_xml_sax_Locator(_r0.o, _r3.o, _r2.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1175)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.errorHandler_;
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ErrorHandler_fatalError___org_xml_sax_SAXParseException])(_r1.o, _r0.o);
@@ -4082,6 +4264,7 @@ void gnu_xml_aelfred2_SAXDriver_verror___java_lang_String(JAVA_OBJECT me, JAVA_O
     XMLVM_CHECK_NPE(0)
     org_xml_sax_SAXParseException___INIT____java_lang_String_org_xml_sax_Locator(_r0.o, _r3.o, _r2.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1189)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.errorHandler_;
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ErrorHandler_error___org_xml_sax_SAXParseException])(_r1.o, _r0.o);
@@ -4106,6 +4289,7 @@ void gnu_xml_aelfred2_SAXDriver_warn___java_lang_String(JAVA_OBJECT me, JAVA_OBJ
     XMLVM_CHECK_NPE(0)
     org_xml_sax_SAXParseException___INIT____java_lang_String_org_xml_sax_Locator(_r0.o, _r3.o, _r2.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1198)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.errorHandler_;
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ErrorHandler_warning___org_xml_sax_SAXParseException])(_r1.o, _r0.o);
@@ -4123,6 +4307,7 @@ JAVA_INT gnu_xml_aelfred2_SAXDriver_getLength__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1211)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.attributesList_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_size__])(_r0.o);
@@ -4142,6 +4327,7 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getURI___int(JAVA_OBJECT me, JAVA_INT n1)
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1219)
     if (_r2.i < 0) goto label10;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.attributesList_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_size__])(_r0.o);
@@ -4154,10 +4340,12 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getURI___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label12:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.attributesList_;
     XMLVM_CHECK_NPE(0)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_get___int])(_r0.o, _r2.i);
     _r1.o = _r1.o;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver_Attribute*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver_Attribute.nameSpace_;
     goto label11;
     //XMLVM_END_WRAPPER
@@ -4176,6 +4364,7 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getLocalName___int(JAVA_OBJECT me, JAVA_I
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1231)
     if (_r4.i < 0) goto label10;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.attributesList_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_size__])(_r0.o);
@@ -4189,16 +4378,20 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getLocalName___int(JAVA_OBJECT me, JAVA_I
     return _r0.o;
     label12:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1235)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.attributesList_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_get___int])(_r0.o, _r4.i);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1237)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.namespaces_;
     if (_r1.i == 0) goto label43;
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver_Attribute*) _r0.o)->fields.gnu_xml_aelfred2_SAXDriver_Attribute.localName_;
     if (_r1.o != JAVA_NULL) goto label43;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1240)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver_Attribute*) _r0.o)->fields.gnu_xml_aelfred2_SAXDriver_Attribute.name_;
     _r2.i = 58;
     XMLVM_CHECK_NPE(1)
@@ -4206,10 +4399,13 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getLocalName___int(JAVA_OBJECT me, JAVA_I
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1241)
     _r2.i = -1;
     if (_r1.i != _r2.i) goto label50;
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver_Attribute*) _r0.o)->fields.gnu_xml_aelfred2_SAXDriver_Attribute.name_;
     label41:;
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_aelfred2_SAXDriver_Attribute*) _r0.o)->fields.gnu_xml_aelfred2_SAXDriver_Attribute.localName_ = _r1.o;
     label43:;
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver_Attribute*) _r0.o)->fields.gnu_xml_aelfred2_SAXDriver_Attribute.localName_;
     if (_r1.o != JAVA_NULL) goto label59;
     // ""
@@ -4217,12 +4413,14 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getLocalName___int(JAVA_OBJECT me, JAVA_I
     goto label11;
     label50:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1242)
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((gnu_xml_aelfred2_SAXDriver_Attribute*) _r0.o)->fields.gnu_xml_aelfred2_SAXDriver_Attribute.name_;
     _r1.i = _r1.i + 1;
     XMLVM_CHECK_NPE(2)
     _r1.o = java_lang_String_substring___int(_r2.o, _r1.i);
     goto label41;
     label59:;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver_Attribute*) _r0.o)->fields.gnu_xml_aelfred2_SAXDriver_Attribute.localName_;
     goto label11;
     //XMLVM_END_WRAPPER
@@ -4239,6 +4437,7 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getQName___int(JAVA_OBJECT me, JAVA_INT n
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1252)
     if (_r2.i < 0) goto label10;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.attributesList_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_size__])(_r0.o);
@@ -4252,16 +4451,19 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getQName___int(JAVA_OBJECT me, JAVA_INT n
     return _r0.o;
     label12:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1256)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.attributesList_;
     XMLVM_CHECK_NPE(0)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_get___int])(_r0.o, _r2.i);
     _r1.o = _r1.o;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver_Attribute*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver_Attribute.name_;
     if (_r0.o != JAVA_NULL) goto label27;
     // ""
     _r0.o = xmlvm_create_java_string_from_pool(0);
     goto label11;
     label27:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver_Attribute*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver_Attribute.name_;
     goto label11;
     //XMLVM_END_WRAPPER
@@ -4298,6 +4500,7 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getType___int(JAVA_OBJECT me, JAVA_INT n1
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1274)
     if (_r4.i < 0) goto label10;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.attributesList_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_size__])(_r0.o);
@@ -4311,7 +4514,9 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getType___int(JAVA_OBJECT me, JAVA_INT n1
     return _r0.o;
     label12:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1278)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.parser_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.elementName_;
     //gnu_xml_aelfred2_SAXDriver_getQName___int[20]
     XMLVM_CHECK_NPE(3)
@@ -4347,6 +4552,7 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getValue___int(JAVA_OBJECT me, JAVA_INT n
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1297)
     if (_r2.i < 0) goto label10;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.attributesList_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_size__])(_r0.o);
@@ -4359,10 +4565,12 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getValue___int(JAVA_OBJECT me, JAVA_INT n
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label12:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.attributesList_;
     XMLVM_CHECK_NPE(0)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_get___int])(_r0.o, _r2.i);
     _r1.o = _r1.o;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver_Attribute*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver_Attribute.value_;
     goto label11;
     //XMLVM_END_WRAPPER
@@ -4596,6 +4804,7 @@ JAVA_BOOLEAN gnu_xml_aelfred2_SAXDriver_isDeclared___int(JAVA_OBJECT me, JAVA_IN
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1410)
     if (_r4.i < 0) goto label6;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.attributeCount_;
     if (_r4.i < _r0.i) goto label12;
     label6:;
@@ -4606,7 +4815,9 @@ JAVA_BOOLEAN gnu_xml_aelfred2_SAXDriver_isDeclared___int(JAVA_OBJECT me, JAVA_IN
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1414)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.parser_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver*) _r3.o)->fields.gnu_xml_aelfred2_SAXDriver.elementName_;
     //gnu_xml_aelfred2_SAXDriver_getQName___int[20]
     XMLVM_CHECK_NPE(3)
@@ -4648,7 +4859,9 @@ JAVA_BOOLEAN gnu_xml_aelfred2_SAXDriver_isDeclared___java_lang_String(JAVA_OBJEC
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1429)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.parser_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_aelfred2_SAXDriver*) _r2.o)->fields.gnu_xml_aelfred2_SAXDriver.elementName_;
     XMLVM_CHECK_NPE(0)
     _r0.o = gnu_xml_aelfred2_XmlParser_getAttributeType___java_lang_String_java_lang_String(_r0.o, _r1.o, _r3.o);
@@ -4698,10 +4911,12 @@ JAVA_BOOLEAN gnu_xml_aelfred2_SAXDriver_isSpecified___int(JAVA_OBJECT me, JAVA_I
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1448)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.attributesList_;
     XMLVM_CHECK_NPE(0)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_get___int])(_r0.o, _r2.i);
     _r1.o = _r1.o;
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_aelfred2_SAXDriver_Attribute*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver_Attribute.specified_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -4776,6 +4991,7 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getSystemId__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1486)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.entityStack_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Stack_empty__(_r0.o);
@@ -4787,6 +5003,7 @@ JAVA_OBJECT gnu_xml_aelfred2_SAXDriver_getSystemId__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label10:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.entityStack_;
     XMLVM_CHECK_NPE(0)
     _r1.o = java_util_Stack_peek__(_r0.o);
@@ -4804,6 +5021,7 @@ JAVA_INT gnu_xml_aelfred2_SAXDriver_getLineNumber__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1501)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.parser_;
     XMLVM_CHECK_NPE(0)
     _r0.i = gnu_xml_aelfred2_XmlParser_getLineNumber__(_r0.o);
@@ -4820,6 +5038,7 @@ JAVA_INT gnu_xml_aelfred2_SAXDriver_getColumnNumber__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1509)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver.parser_;
     XMLVM_CHECK_NPE(0)
     _r0.i = gnu_xml_aelfred2_XmlParser_getColumnNumber__(_r0.o);

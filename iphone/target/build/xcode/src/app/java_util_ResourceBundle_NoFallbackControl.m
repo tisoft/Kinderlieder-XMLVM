@@ -335,6 +335,7 @@ void java_util_ResourceBundle_NoFallbackControl___INIT____java_lang_String(JAVA_
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 709)
     _r0.o = java_util_ResourceBundle_Control_GET_listClass();
     _r0.o = java_util_Collections_unmodifiableList___java_util_List(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_ResourceBundle_Control*) _r1.o)->fields.java_util_ResourceBundle_Control.format_ = _r0.o;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 710)
     XMLVM_EXIT_METHOD()
@@ -354,6 +355,7 @@ void java_util_ResourceBundle_NoFallbackControl___INIT____java_util_List(JAVA_OB
     XMLVM_CHECK_NPE(0)
     java_util_ResourceBundle_Control___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 714)
+    XMLVM_CHECK_NPE(0)
     ((java_util_ResourceBundle_Control*) _r0.o)->fields.java_util_ResourceBundle_Control.format_ = _r1.o;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 715)
     XMLVM_EXIT_METHOD()

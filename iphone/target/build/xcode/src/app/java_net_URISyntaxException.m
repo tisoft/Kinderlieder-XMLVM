@@ -340,8 +340,10 @@ void java_net_URISyntaxException___INIT____java_lang_String_java_lang_String_int
     XMLVM_THROW_CUSTOM(_r0.o)
     label22:;
     XMLVM_SOURCE_POSITION("URISyntaxException.java", 62)
+    XMLVM_CHECK_NPE(1)
     ((java_net_URISyntaxException*) _r1.o)->fields.java_net_URISyntaxException.input_ = _r2.o;
     XMLVM_SOURCE_POSITION("URISyntaxException.java", 63)
+    XMLVM_CHECK_NPE(1)
     ((java_net_URISyntaxException*) _r1.o)->fields.java_net_URISyntaxException.index_ = _r4.i;
     XMLVM_SOURCE_POSITION("URISyntaxException.java", 64)
     XMLVM_EXIT_METHOD()
@@ -374,9 +376,11 @@ void java_net_URISyntaxException___INIT____java_lang_String_java_lang_String(JAV
     XMLVM_THROW_CUSTOM(_r0.o)
     label13:;
     XMLVM_SOURCE_POSITION("URISyntaxException.java", 85)
+    XMLVM_CHECK_NPE(1)
     ((java_net_URISyntaxException*) _r1.o)->fields.java_net_URISyntaxException.input_ = _r2.o;
     XMLVM_SOURCE_POSITION("URISyntaxException.java", 86)
     _r0.i = -1;
+    XMLVM_CHECK_NPE(1)
     ((java_net_URISyntaxException*) _r1.o)->fields.java_net_URISyntaxException.index_ = _r0.i;
     XMLVM_SOURCE_POSITION("URISyntaxException.java", 87)
     XMLVM_EXIT_METHOD()
@@ -392,6 +396,7 @@ JAVA_INT java_net_URISyntaxException_getIndex__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URISyntaxException.java", 96)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_URISyntaxException*) _r1.o)->fields.java_net_URISyntaxException.index_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -421,6 +426,7 @@ JAVA_OBJECT java_net_URISyntaxException_getInput__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URISyntaxException.java", 114)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URISyntaxException*) _r1.o)->fields.java_net_URISyntaxException.input_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -446,6 +452,7 @@ JAVA_OBJECT java_net_URISyntaxException_getMessage__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(6)
     _r0.o = java_lang_Throwable_getMessage__(_r6.o);
     XMLVM_SOURCE_POSITION("URISyntaxException.java", 129)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_net_URISyntaxException*) _r6.o)->fields.java_net_URISyntaxException.index_;
     _r2.i = -1;
     if (_r1.i == _r2.i) goto label36;
@@ -459,11 +466,13 @@ JAVA_OBJECT java_net_URISyntaxException_getMessage__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i] = _r0.o;
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_net_URISyntaxException*) _r6.o)->fields.java_net_URISyntaxException.index_;
     _r0.o = java_lang_Integer_toString___int(_r0.i);
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r0.o;
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_net_URISyntaxException*) _r6.o)->fields.java_net_URISyntaxException.input_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r5.i);
@@ -482,6 +491,7 @@ JAVA_OBJECT java_net_URISyntaxException_getMessage__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i] = _r0.o;
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_net_URISyntaxException*) _r6.o)->fields.java_net_URISyntaxException.input_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r4.i);

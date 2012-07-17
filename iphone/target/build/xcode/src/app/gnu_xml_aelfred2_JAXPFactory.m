@@ -265,6 +265,7 @@ void gnu_xml_aelfred2_JAXPFactory___INIT___(JAVA_OBJECT me)
     _r0.o = __NEW_java_util_Hashtable();
     XMLVM_CHECK_NPE(0)
     java_util_Hashtable___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_aelfred2_JAXPFactory*) _r1.o)->fields.gnu_xml_aelfred2_JAXPFactory.flags_ = _r0.o;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 75)
     XMLVM_EXIT_METHOD()
@@ -288,6 +289,7 @@ JAVA_OBJECT gnu_xml_aelfred2_JAXPFactory_newSAXParser__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     gnu_xml_aelfred2_JAXPFactory_JaxpParser___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 81)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_aelfred2_JAXPFactory*) _r5.o)->fields.gnu_xml_aelfred2_JAXPFactory.flags_;
     //java_util_Hashtable_keys__[9]
     XMLVM_CHECK_NPE(0)
@@ -326,6 +328,7 @@ JAVA_OBJECT gnu_xml_aelfred2_JAXPFactory_newSAXParser__(JAVA_OBJECT me)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Enumeration_nextElement__])(_r3.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 93)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_xml_aelfred2_JAXPFactory*) _r5.o)->fields.gnu_xml_aelfred2_JAXPFactory.flags_;
     //java_util_Hashtable_get___java_lang_Object[7]
     XMLVM_CHECK_NPE(1)
@@ -354,7 +357,7 @@ void gnu_xml_aelfred2_JAXPFactory_setFeature___java_lang_String_boolean(JAVA_OBJ
     _r4.o = me;
     _r5.o = n1;
     _r6.i = n2;
-    XMLVM_TRY_BEGIN(w37120aaab3b1b4)
+    XMLVM_TRY_BEGIN(w37125aaab3b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 110)
     _r0.o = __NEW_gnu_xml_aelfred2_JAXPFactory_JaxpParser();
@@ -366,6 +369,7 @@ void gnu_xml_aelfred2_JAXPFactory_setFeature___java_lang_String_boolean(JAVA_OBJ
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setFeature___java_lang_String_boolean])(_r0.o, _r5.o, _r6.i);
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 112)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_aelfred2_JAXPFactory*) _r4.o)->fields.gnu_xml_aelfred2_JAXPFactory.flags_;
     _r1.o = java_lang_Boolean_valueOf___boolean(_r6.i);
     //java_util_Hashtable_put___java_lang_Object_java_lang_Object[10]
@@ -373,35 +377,35 @@ void gnu_xml_aelfred2_JAXPFactory_setFeature___java_lang_String_boolean(JAVA_OBJ
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Hashtable*) _r0.o)->tib->vtable[10])(_r0.o, _r5.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w37120aaab3b1b4)
-        XMLVM_CATCH_SPECIFIC(w37120aaab3b1b4,org_xml_sax_SAXNotRecognizedException,22)
-        XMLVM_CATCH_SPECIFIC(w37120aaab3b1b4,org_xml_sax_SAXNotSupportedException,29)
-        XMLVM_CATCH_SPECIFIC(w37120aaab3b1b4,java_lang_Exception,36)
-    XMLVM_CATCH_END(w37120aaab3b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w37120aaab3b1b4)
+    XMLVM_CATCH_BEGIN(w37125aaab3b1b4)
+        XMLVM_CATCH_SPECIFIC(w37125aaab3b1b4,org_xml_sax_SAXNotRecognizedException,22)
+        XMLVM_CATCH_SPECIFIC(w37125aaab3b1b4,org_xml_sax_SAXNotSupportedException,29)
+        XMLVM_CATCH_SPECIFIC(w37125aaab3b1b4,java_lang_Exception,36)
+    XMLVM_CATCH_END(w37125aaab3b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w37125aaab3b1b4)
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 128)
     XMLVM_EXIT_METHOD()
     return;
     label22:;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 116)
-    java_lang_Thread* curThread_w37120aaab3b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w37120aaab3b1b9->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w37125aaab3b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w37125aaab3b1b9->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_org_xml_sax_SAXNotRecognizedException();
     XMLVM_CHECK_NPE(0)
     org_xml_sax_SAXNotRecognizedException___INIT____java_lang_String(_r0.o, _r5.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label29:;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 120)
-    java_lang_Thread* curThread_w37120aaab3b1c15 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w37120aaab3b1c15->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w37125aaab3b1c15 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w37125aaab3b1c15->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_org_xml_sax_SAXNotSupportedException();
     XMLVM_CHECK_NPE(0)
     org_xml_sax_SAXNotSupportedException___INIT____java_lang_String(_r0.o, _r5.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label36:;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 122)
-    java_lang_Thread* curThread_w37120aaab3b1c21 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w37120aaab3b1c21->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w37125aaab3b1c21 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w37125aaab3b1c21->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 124)
     _r1.o = __NEW_javax_xml_parsers_ParserConfigurationException();
     _r2.o = __NEW_java_lang_StringBuilder();
@@ -446,6 +450,7 @@ JAVA_BOOLEAN gnu_xml_aelfred2_JAXPFactory_getFeature___java_lang_String(JAVA_OBJ
     _r4.o = me;
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 134)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_aelfred2_JAXPFactory*) _r4.o)->fields.gnu_xml_aelfred2_JAXPFactory.flags_;
     //java_util_Hashtable_get___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
@@ -461,7 +466,7 @@ JAVA_BOOLEAN gnu_xml_aelfred2_JAXPFactory_getFeature___java_lang_String(JAVA_OBJ
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label15:;
-    XMLVM_TRY_BEGIN(w37120aaab4b1c15)
+    XMLVM_TRY_BEGIN(w37125aaab4b1c15)
     // Begin try
     _r0.o = __NEW_gnu_xml_aelfred2_JAXPFactory_JaxpParser();
     XMLVM_CHECK_NPE(0)
@@ -473,33 +478,33 @@ JAVA_BOOLEAN gnu_xml_aelfred2_JAXPFactory_getFeature___java_lang_String(JAVA_OBJ
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_getFeature___java_lang_String])(_r0.o, _r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w37120aaab4b1c15)
-        XMLVM_CATCH_SPECIFIC(w37120aaab4b1c15,org_xml_sax_SAXNotRecognizedException,29)
-        XMLVM_CATCH_SPECIFIC(w37120aaab4b1c15,org_xml_sax_SAXNotSupportedException,36)
-        XMLVM_CATCH_SPECIFIC(w37120aaab4b1c15,org_xml_sax_SAXException,43)
-    XMLVM_CATCH_END(w37120aaab4b1c15)
-    XMLVM_RESTORE_EXCEPTION_ENV(w37120aaab4b1c15)
+    XMLVM_CATCH_BEGIN(w37125aaab4b1c15)
+        XMLVM_CATCH_SPECIFIC(w37125aaab4b1c15,org_xml_sax_SAXNotRecognizedException,29)
+        XMLVM_CATCH_SPECIFIC(w37125aaab4b1c15,org_xml_sax_SAXNotSupportedException,36)
+        XMLVM_CATCH_SPECIFIC(w37125aaab4b1c15,org_xml_sax_SAXException,43)
+    XMLVM_CATCH_END(w37125aaab4b1c15)
+    XMLVM_RESTORE_EXCEPTION_ENV(w37125aaab4b1c15)
     goto label14;
     label29:;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 148)
-    java_lang_Thread* curThread_w37120aaab4b1c19 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w37120aaab4b1c19->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w37125aaab4b1c19 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w37125aaab4b1c19->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_org_xml_sax_SAXNotRecognizedException();
     XMLVM_CHECK_NPE(0)
     org_xml_sax_SAXNotRecognizedException___INIT____java_lang_String(_r0.o, _r5.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label36:;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 152)
-    java_lang_Thread* curThread_w37120aaab4b1c25 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w37120aaab4b1c25->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w37125aaab4b1c25 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w37125aaab4b1c25->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_org_xml_sax_SAXNotSupportedException();
     XMLVM_CHECK_NPE(0)
     org_xml_sax_SAXNotSupportedException___INIT____java_lang_String(_r0.o, _r5.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label43:;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 154)
-    java_lang_Thread* curThread_w37120aaab4b1c31 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w37120aaab4b1c31->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w37125aaab4b1c31 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w37125aaab4b1c31->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 156)
     _r1.o = __NEW_javax_xml_parsers_ParserConfigurationException();
     _r2.o = __NEW_java_lang_StringBuilder();

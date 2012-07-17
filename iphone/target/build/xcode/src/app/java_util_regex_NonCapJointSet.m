@@ -305,14 +305,17 @@ JAVA_INT java_util_regex_NonCapJointSet_matches___int_java_lang_CharSequence_jav
     _r6.o = n2;
     _r7.o = n3;
     XMLVM_SOURCE_POSITION("NonCapJointSet.java", 43)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_regex_JointSet*) _r4.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(7)
     _r1.i = java_util_regex_MatchResultImpl_getConsumed___int(_r7.o, _r0.i);
     XMLVM_SOURCE_POSITION("NonCapJointSet.java", 44)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_regex_JointSet*) _r4.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(7)
     java_util_regex_MatchResultImpl_setConsumed___int_int(_r7.o, _r0.i, _r5.i);
     XMLVM_SOURCE_POSITION("NonCapJointSet.java", 46)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_JointSet*) _r4.o)->fields.java_util_regex_JointSet.children_;
     //java_util_ArrayList_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -323,6 +326,7 @@ JAVA_INT java_util_regex_NonCapJointSet_matches___int_java_lang_CharSequence_jav
     label19:;
     if (_r3.i < _r2.i) goto label28;
     XMLVM_SOURCE_POSITION("NonCapJointSet.java", 54)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_regex_JointSet*) _r4.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(7)
     java_util_regex_MatchResultImpl_setConsumed___int_int(_r7.o, _r0.i, _r1.i);
@@ -333,6 +337,7 @@ JAVA_INT java_util_regex_NonCapJointSet_matches___int_java_lang_CharSequence_jav
     return _r0.i;
     label28:;
     XMLVM_SOURCE_POSITION("NonCapJointSet.java", 48)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_JointSet*) _r4.o)->fields.java_util_regex_JointSet.children_;
     //java_util_ArrayList_get___int[21]
     XMLVM_CHECK_NPE(0)
@@ -375,6 +380,7 @@ JAVA_BOOLEAN java_util_regex_NonCapJointSet_hasConsumed___java_util_regex_MatchR
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("NonCapJointSet.java", 63)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_JointSet*) _r1.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(2)
     _r0.i = java_util_regex_MatchResultImpl_getConsumed___int(_r2.o, _r0.i);

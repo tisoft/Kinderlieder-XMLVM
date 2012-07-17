@@ -539,6 +539,7 @@ void java_lang_Package___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Package.java", 46)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_Package*) _r0.o)->fields.java_lang_Package.packageName_ = _r1.o;
     XMLVM_SOURCE_POSITION("Package.java", 47)
     XMLVM_EXIT_METHOD()
@@ -660,6 +661,7 @@ JAVA_OBJECT java_lang_Package_getName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Package.java", 141)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_Package*) _r1.o)->fields.java_lang_Package.packageName_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -821,6 +823,7 @@ JAVA_OBJECT java_lang_Package_toString__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Package.java", 245)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_Package*) _r1.o)->fields.java_lang_Package.packageName_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

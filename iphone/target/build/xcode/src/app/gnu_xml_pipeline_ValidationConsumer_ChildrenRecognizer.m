@@ -409,16 +409,24 @@ void gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_copyIn___gnu_xml_pip
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1494)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r2.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_ = _r0.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1495)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r2.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.name_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.name_ = _r0.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1496)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r2.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.next_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.next_ = _r0.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1497)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r2.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.flags_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.flags_ = _r0.i;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1498)
     XMLVM_EXIT_METHOD()
@@ -442,6 +450,7 @@ void gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer___INIT____gnu_xml_pi
     XMLVM_CHECK_NPE(2)
     gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer___INIT____gnu_xml_pipeline_ValidationConsumer_gnu_xml_pipeline_ValidationConsumer_ElementInfo(_r2.o, _r4.o, _r3.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1504)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.model_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_toCharArray__(_r0.o);
@@ -475,6 +484,7 @@ void gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer___INIT____gnu_xml_pi
     XMLVM_CHECK_NPE(0)
     gnu_xml_pipeline_ValidationConsumer_Recognizer___INIT____gnu_xml_pipeline_ValidationConsumer_ElementInfo(_r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1512)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r0.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.consumer_ = _r1.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1513)
     XMLVM_EXIT_METHOD()
@@ -554,6 +564,7 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_deepClone___j
     // "deepClone"
     _r4.o = xmlvm_create_java_string_from_pool(362);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1538)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r5.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.flags_;
     _r0.i = _r0.i & 1;
     if (_r0.i == 0) goto label66;
@@ -581,34 +592,42 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_deepClone___j
     _r1 = _r0;
     label26:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1548)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r5.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.next_;
     if (_r0.o == JAVA_NULL) goto label46;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1549)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r5.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.next_;
     if (!__TIB_gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.classInitialized) __INIT_gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer);
     if (_r0.i == 0) goto label72;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1550)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r5.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.next_;
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1551)
     XMLVM_CHECK_NPE(0)
     _r0.o = gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_deepClone___java_util_Hashtable(_r0.o, _r6.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.next_ = _r0.o;
     label46:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1556)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r5.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
     if (_r0.o == JAVA_NULL) goto label64;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1557)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r5.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     if (!__TIB_gnu_xml_pipeline_ValidationConsumer_Recognizer.classInitialized) __INIT_gnu_xml_pipeline_ValidationConsumer_Recognizer();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_gnu_xml_pipeline_ValidationConsumer_Recognizer, _r0.i);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_ = _r0.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1558)
     _r0.i = 0;
     _r2 = _r0;
     label59:;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r5.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     if (_r2.i < _r0.i) goto label86;
@@ -623,6 +642,7 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_deepClone___j
     goto label26;
     label72:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1552)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r5.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.next_;
     if (!__TIB_gnu_xml_pipeline_ValidationConsumer_EmptyRecognizer.classInitialized) __INIT_gnu_xml_pipeline_ValidationConsumer_EmptyRecognizer();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_gnu_xml_pipeline_ValidationConsumer_EmptyRecognizer);
@@ -636,6 +656,7 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_deepClone___j
     XMLVM_THROW_CUSTOM(_r0.o)
     label86:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1559)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r5.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -643,6 +664,7 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_deepClone___j
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1561)
     if (_r0.o != JAVA_NULL) goto label101;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1562)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
     _r3.o = JAVA_NULL;
     XMLVM_CHECK_NPE(0)
@@ -658,6 +680,7 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_deepClone___j
     _r3.i = XMLVM_ISA(_r0.o, __CLASS_gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer);
     if (_r3.i == 0) goto label116;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1564)
+    XMLVM_CHECK_NPE(1)
     _r3.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1565)
@@ -699,6 +722,7 @@ void gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_patchNext___gnu_xml_
     // "patchNext"
     _r3.o = xmlvm_create_java_string_from_pool(363);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1578)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r4.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.flags_;
     _r0.i = _r0.i & 2;
     if (_r0.i == 0) goto label9;
@@ -723,21 +747,26 @@ void gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_patchNext___gnu_xml_
     _r1 = _r0;
     label25:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1589)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r4.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.name_;
     if (_r0.o == JAVA_NULL) goto label64;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1590)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r4.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.next_;
     if (_r0.o != JAVA_NULL) goto label36;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1591)
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r4.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.next_ = _r5.o;
     goto label8;
     label36:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1592)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r4.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.next_;
     if (!__TIB_gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.classInitialized) __INIT_gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer);
     if (_r0.i == 0) goto label50;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1593)
+    XMLVM_CHECK_NPE(4)
     _r4.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r4.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.next_;
     _r4.o = _r4.o;
     XMLVM_CHECK_NPE(4)
@@ -745,6 +774,7 @@ void gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_patchNext___gnu_xml_
     goto label8;
     label50:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1594)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r4.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.next_;
     if (!__TIB_gnu_xml_pipeline_ValidationConsumer_EmptyRecognizer.classInitialized) __INIT_gnu_xml_pipeline_ValidationConsumer_EmptyRecognizer();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_gnu_xml_pipeline_ValidationConsumer_EmptyRecognizer);
@@ -761,11 +791,13 @@ void gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_patchNext___gnu_xml_
     _r0.i = 0;
     _r2 = _r0;
     label66:;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r4.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     if (_r2.i < _r0.i) goto label83;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1610)
     if (_r1.o == JAVA_NULL) goto label8;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r4.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.flags_;
     _r0.i = _r0.i & 1;
     if (_r0.i == 0) goto label8;
@@ -776,12 +808,14 @@ void gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_patchNext___gnu_xml_
     goto label8;
     label83:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1601)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r4.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
     _r0.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
     if (_r0.o != JAVA_NULL) goto label97;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1602)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r4.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -792,6 +826,7 @@ void gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_patchNext___gnu_xml_
     goto label66;
     label97:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1603)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r4.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -800,6 +835,7 @@ void gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_patchNext___gnu_xml_
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer);
     if (_r0.i == 0) goto label115;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1604)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r4.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -811,6 +847,7 @@ void gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_patchNext___gnu_xml_
     goto label93;
     label115:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1606)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r4.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -904,6 +941,7 @@ JAVA_INT gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_populate___char_
     _r2.i = _r1.i - _r15.i;
     XMLVM_CHECK_NPE(0)
     java_lang_String___INIT____char_1ARRAY_int_int(_r0.o, _r14.o, _r15.i, _r2.i);
+    XMLVM_CHECK_NPE(13)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r13.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.name_ = _r0.o;
     _r0 = _r1;
     label46:;
@@ -933,17 +971,22 @@ JAVA_INT gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_populate___char_
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1732)
     if (!__TIB_gnu_xml_pipeline_ValidationConsumer_Recognizer.classInitialized) __INIT_gnu_xml_pipeline_ValidationConsumer_Recognizer();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_gnu_xml_pipeline_ValidationConsumer_Recognizer, _r11.i);
+    XMLVM_CHECK_NPE(13)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r13.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_ = _r2.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1733)
+    XMLVM_CHECK_NPE(13)
     _r2.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r13.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r1.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1735)
+    XMLVM_CHECK_NPE(13)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r13.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.name_ = _r8.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1736)
+    XMLVM_CHECK_NPE(13)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r13.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.next_ = _r8.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1737)
+    XMLVM_CHECK_NPE(13)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r13.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.flags_ = _r9.i;
     label87:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1784)
@@ -956,7 +999,9 @@ JAVA_INT gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_populate___char_
     label90:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1662)
     _r1.o = __NEW_gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer();
+    XMLVM_CHECK_NPE(13)
     _r2.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r13.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.consumer_;
+    XMLVM_CHECK_NPE(13)
     _r3.o = ((gnu_xml_pipeline_ValidationConsumer_Recognizer*) _r13.o)->fields.gnu_xml_pipeline_ValidationConsumer_Recognizer.type_;
     XMLVM_CHECK_NPE(1)
     gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer___INIT____gnu_xml_pipeline_ValidationConsumer_gnu_xml_pipeline_ValidationConsumer_ElementInfo(_r1.o, _r2.o, _r3.o);
@@ -988,7 +1033,9 @@ JAVA_INT gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_populate___char_
     label126:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1679)
     _r5.o = __NEW_gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer();
+    XMLVM_CHECK_NPE(13)
     _r6.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r13.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.consumer_;
+    XMLVM_CHECK_NPE(13)
     _r7.o = ((gnu_xml_pipeline_ValidationConsumer_Recognizer*) _r13.o)->fields.gnu_xml_pipeline_ValidationConsumer_Recognizer.type_;
     XMLVM_CHECK_NPE(5)
     gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer___INIT____gnu_xml_pipeline_ValidationConsumer_gnu_xml_pipeline_ValidationConsumer_ElementInfo(_r5.o, _r6.o, _r7.o);
@@ -1019,10 +1066,12 @@ JAVA_INT gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_populate___char_
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_util_Vector*) _r2.o)->tib->vtable[16])(_r2.o);
     if (!__TIB_gnu_xml_pipeline_ValidationConsumer_Recognizer.classInitialized) __INIT_gnu_xml_pipeline_ValidationConsumer_Recognizer();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_gnu_xml_pipeline_ValidationConsumer_Recognizer, _r0.i);
+    XMLVM_CHECK_NPE(13)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r13.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_ = _r0.o;
     _r1 = _r9;
     label164:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1695)
+    XMLVM_CHECK_NPE(13)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r13.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     if (_r1.i < _r0.i) goto label187;
@@ -1046,6 +1095,7 @@ JAVA_INT gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_populate___char_
     goto label147;
     label187:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1696)
+    XMLVM_CHECK_NPE(13)
     _r3.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r13.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1697)
     XMLVM_CHECK_NPE(2)
@@ -1081,23 +1131,30 @@ JAVA_INT gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_populate___char_
     XMLVM_CHECK_NPE(1)
     gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_patchNext___gnu_xml_pipeline_ValidationConsumer_Recognizer_java_util_Hashtable(_r1.o, _r13.o, _r8.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1748)
+    XMLVM_CHECK_NPE(1)
     _r2.i = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.flags_;
     _r2.i = _r2.i | 2;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.flags_ = _r2.i;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1749)
+    XMLVM_CHECK_NPE(13)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r13.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.flags_ = _r10.i;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1751)
     if (!__TIB_gnu_xml_pipeline_ValidationConsumer_Recognizer.classInitialized) __INIT_gnu_xml_pipeline_ValidationConsumer_Recognizer();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_gnu_xml_pipeline_ValidationConsumer_Recognizer, _r11.i);
+    XMLVM_CHECK_NPE(13)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r13.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_ = _r2.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1752)
+    XMLVM_CHECK_NPE(13)
     _r2.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r13.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r9.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r1.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1754)
+    XMLVM_CHECK_NPE(13)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r13.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.name_ = _r8.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1755)
+    XMLVM_CHECK_NPE(13)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r13.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.next_ = _r8.o;
     goto label87;
     label245:;
@@ -1109,7 +1166,9 @@ JAVA_INT gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_populate___char_
     _r1.o = gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_deepClone__(_r13.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1769)
     _r2.o = __NEW_gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer();
+    XMLVM_CHECK_NPE(13)
     _r3.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r13.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.consumer_;
+    XMLVM_CHECK_NPE(13)
     _r4.o = ((gnu_xml_pipeline_ValidationConsumer_Recognizer*) _r13.o)->fields.gnu_xml_pipeline_ValidationConsumer_Recognizer.type_;
     XMLVM_CHECK_NPE(2)
     gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer___INIT____gnu_xml_pipeline_ValidationConsumer_gnu_xml_pipeline_ValidationConsumer_ElementInfo(_r2.o, _r3.o, _r4.o);
@@ -1117,16 +1176,21 @@ JAVA_INT gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_populate___char_
     XMLVM_CHECK_NPE(1)
     gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_patchNext___gnu_xml_pipeline_ValidationConsumer_Recognizer_java_util_Hashtable(_r1.o, _r2.o, _r8.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1771)
+    XMLVM_CHECK_NPE(1)
     _r3.i = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.flags_;
     _r3.i = _r3.i | 2;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.flags_ = _r3.i;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1772)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r2.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.flags_ = _r10.i;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1774)
     if (!__TIB_gnu_xml_pipeline_ValidationConsumer_Recognizer.classInitialized) __INIT_gnu_xml_pipeline_ValidationConsumer_Recognizer();
     _r3.o = XMLVMArray_createSingleDimension(__CLASS_gnu_xml_pipeline_ValidationConsumer_Recognizer, _r11.i);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r2.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_ = _r3.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1775)
+    XMLVM_CHECK_NPE(2)
     _r3.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r2.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
@@ -1177,15 +1241,18 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_acceptElement
     _r4.o = n1;
     _r2.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1796)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.name_;
     if (_r0.o == JAVA_NULL) goto label18;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1797)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.name_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r4.o);
     if (_r0.i == 0) goto label16;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1798)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.next_;
     label15:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1820)
@@ -1199,6 +1266,7 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_acceptElement
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1807)
     _r0.i = 0;
     label19:;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i < _r1.i) goto label26;
@@ -1206,6 +1274,7 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_acceptElement
     goto label15;
     label26:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1808)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -1235,6 +1304,7 @@ JAVA_BOOLEAN gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_completed__(
     _r3.o = me;
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1828)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.name_;
     if (_r0.o == JAVA_NULL) goto label7;
     _r0 = _r2;
@@ -1247,6 +1317,7 @@ JAVA_BOOLEAN gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_completed__(
     _r0 = _r2;
     label8:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1832)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i < _r1.i) goto label15;
@@ -1254,6 +1325,7 @@ JAVA_BOOLEAN gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer_completed__(
     goto label6;
     label15:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1833)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ChildrenRecognizer.components_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);

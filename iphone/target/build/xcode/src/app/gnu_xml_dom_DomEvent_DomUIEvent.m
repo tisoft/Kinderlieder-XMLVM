@@ -303,6 +303,7 @@ JAVA_OBJECT gnu_xml_dom_DomEvent_DomUIEvent_getView__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomEvent.java", 324)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomEvent_DomUIEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent_DomUIEvent.view_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -317,6 +318,7 @@ JAVA_INT gnu_xml_dom_DomEvent_DomUIEvent_getDetail__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomEvent.java", 325)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_dom_DomEvent_DomUIEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent_DomUIEvent.detail_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -343,8 +345,10 @@ void gnu_xml_dom_DomEvent_DomUIEvent_initUIEvent___java_lang_String_boolean_bool
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_DomEvent_initEvent___java_lang_String_boolean_boolean(_r0.o, _r1.o, _r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("DomEvent.java", 335)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_DomEvent_DomUIEvent*) _r0.o)->fields.gnu_xml_dom_DomEvent_DomUIEvent.view_ = _r4.o;
     XMLVM_SOURCE_POSITION("DomEvent.java", 336)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_DomEvent_DomUIEvent*) _r0.o)->fields.gnu_xml_dom_DomEvent_DomUIEvent.detail_ = _r5.i;
     XMLVM_SOURCE_POSITION("DomEvent.java", 337)
     XMLVM_EXIT_METHOD()

@@ -254,6 +254,7 @@ void java_util_regex_MultiLineEOLSet___INIT____int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_CHECK_NPE(0)
     java_util_regex_AbstractSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("MultiLineEOLSet.java", 33)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_MultiLineEOLSet*) _r0.o)->fields.java_util_regex_MultiLineEOLSet.consCounter_ = _r1.i;
     XMLVM_SOURCE_POSITION("MultiLineEOLSet.java", 34)
     XMLVM_EXIT_METHOD()
@@ -290,10 +291,12 @@ JAVA_INT java_util_regex_MultiLineEOLSet_matches___int_java_lang_CharSequence_ja
     XMLVM_SOURCE_POSITION("MultiLineEOLSet.java", 43)
     if (_r0.i != 0) goto label32;
     XMLVM_SOURCE_POSITION("MultiLineEOLSet.java", 44)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_regex_MultiLineEOLSet*) _r4.o)->fields.java_util_regex_MultiLineEOLSet.consCounter_;
     XMLVM_CHECK_NPE(7)
     java_util_regex_MatchResultImpl_setConsumed___int_int(_r7.o, _r0.i, _r2.i);
     XMLVM_SOURCE_POSITION("MultiLineEOLSet.java", 45)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_AbstractSet*) _r4.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -348,10 +351,12 @@ JAVA_INT java_util_regex_MultiLineEOLSet_matches___int_java_lang_CharSequence_ja
     _r1.i = 10;
     if (_r0.i != _r1.i) goto label79;
     XMLVM_SOURCE_POSITION("MultiLineEOLSet.java", 57)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_regex_MultiLineEOLSet*) _r4.o)->fields.java_util_regex_MultiLineEOLSet.consCounter_;
     XMLVM_CHECK_NPE(7)
     java_util_regex_MatchResultImpl_setConsumed___int_int(_r7.o, _r0.i, _r2.i);
     XMLVM_SOURCE_POSITION("MultiLineEOLSet.java", 58)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_AbstractSet*) _r4.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -359,10 +364,12 @@ JAVA_INT java_util_regex_MultiLineEOLSet_matches___int_java_lang_CharSequence_ja
     goto label25;
     label79:;
     XMLVM_SOURCE_POSITION("MultiLineEOLSet.java", 60)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_regex_MultiLineEOLSet*) _r4.o)->fields.java_util_regex_MultiLineEOLSet.consCounter_;
     XMLVM_CHECK_NPE(7)
     java_util_regex_MatchResultImpl_setConsumed___int_int(_r7.o, _r0.i, _r2.i);
     XMLVM_SOURCE_POSITION("MultiLineEOLSet.java", 61)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_AbstractSet*) _r4.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -370,10 +377,12 @@ JAVA_INT java_util_regex_MultiLineEOLSet_matches___int_java_lang_CharSequence_ja
     goto label25;
     label91:;
     XMLVM_SOURCE_POSITION("MultiLineEOLSet.java", 68)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_regex_MultiLineEOLSet*) _r4.o)->fields.java_util_regex_MultiLineEOLSet.consCounter_;
     XMLVM_CHECK_NPE(7)
     java_util_regex_MatchResultImpl_setConsumed___int_int(_r7.o, _r0.i, _r2.i);
     XMLVM_SOURCE_POSITION("MultiLineEOLSet.java", 69)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_AbstractSet*) _r4.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -395,6 +404,7 @@ JAVA_BOOLEAN java_util_regex_MultiLineEOLSet_hasConsumed___java_util_regex_Match
     _r3.o = me;
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("MultiLineEOLSet.java", 79)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_regex_MultiLineEOLSet*) _r3.o)->fields.java_util_regex_MultiLineEOLSet.consCounter_;
     XMLVM_CHECK_NPE(4)
     _r0.i = java_util_regex_MatchResultImpl_getConsumed___int(_r4.o, _r0.i);
@@ -403,6 +413,7 @@ JAVA_BOOLEAN java_util_regex_MultiLineEOLSet_hasConsumed___java_util_regex_Match
     _r0.i = 0;
     label11:;
     XMLVM_SOURCE_POSITION("MultiLineEOLSet.java", 80)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_MultiLineEOLSet*) _r3.o)->fields.java_util_regex_MultiLineEOLSet.consCounter_;
     _r2.i = -1;
     XMLVM_CHECK_NPE(4)

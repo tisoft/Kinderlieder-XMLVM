@@ -339,8 +339,10 @@ void java_util_regex_CharSet___INIT____char(JAVA_OBJECT me, JAVA_CHAR n1)
     java_util_regex_LeafSet___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("CharSet.java", 30)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_CharSet*) _r1.o)->fields.java_util_regex_CharSet.ch_ = _r0.i;
     XMLVM_SOURCE_POSITION("CharSet.java", 33)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_CharSet*) _r1.o)->fields.java_util_regex_CharSet.ch_ = _r2.i;
     XMLVM_SOURCE_POSITION("CharSet.java", 34)
     XMLVM_EXIT_METHOD()
@@ -375,6 +377,7 @@ JAVA_INT java_util_regex_CharSet_accepts___int_java_lang_CharSequence(JAVA_OBJEC
     _r3.i = n1;
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("CharSet.java", 41)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_CharSet*) _r2.o)->fields.java_util_regex_CharSet.ch_;
     XMLVM_CHECK_NPE(4)
     _r1.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r4.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_CharSequence_charAt___int])(_r4.o, _r3.i);
@@ -432,6 +435,7 @@ JAVA_INT java_util_regex_CharSet_find___int_java_lang_CharSequence_java_util_reg
     return _r1.i;
     label18:;
     XMLVM_SOURCE_POSITION("CharSet.java", 51)
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_util_regex_CharSet*) _r7.o)->fields.java_util_regex_CharSet.ch_;
     XMLVM_CHECK_NPE(1)
     _r3.i = java_lang_String_indexOf___int_int(_r1.o, _r4.i, _r3.i);
@@ -442,6 +446,7 @@ JAVA_INT java_util_regex_CharSet_find___int_java_lang_CharSequence_java_util_reg
     goto label17;
     label28:;
     XMLVM_SOURCE_POSITION("CharSet.java", 54)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_util_regex_AbstractSet*) _r7.o)->fields.java_util_regex_AbstractSet.next_;
     _r5.i = _r3.i + 1;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
@@ -503,6 +508,7 @@ JAVA_INT java_util_regex_CharSet_findBack___int_int_java_lang_CharSequence_java_
     return _r1.i;
     label14:;
     XMLVM_SOURCE_POSITION("CharSet.java", 72)
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_util_regex_CharSet*) _r6.o)->fields.java_util_regex_CharSet.ch_;
     XMLVM_CHECK_NPE(1)
     _r2.i = java_lang_String_lastIndexOf___int_int(_r1.o, _r3.i, _r2.i);
@@ -515,6 +521,7 @@ JAVA_INT java_util_regex_CharSet_findBack___int_int_java_lang_CharSequence_java_
     goto label13;
     label26:;
     XMLVM_SOURCE_POSITION("CharSet.java", 77)
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_util_regex_AbstractSet*) _r6.o)->fields.java_util_regex_AbstractSet.next_;
     _r4.i = _r2.i + 1;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
@@ -547,6 +554,7 @@ JAVA_OBJECT java_util_regex_CharSet_getName__(JAVA_OBJECT me)
     _r0.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_regex_CharSet*) _r2.o)->fields.java_util_regex_CharSet.ch_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -567,6 +575,7 @@ JAVA_CHAR java_util_regex_CharSet_getChar__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CharSet.java", 95)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_CharSet*) _r1.o)->fields.java_util_regex_CharSet.ch_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -595,6 +604,7 @@ JAVA_BOOLEAN java_util_regex_CharSet_first___java_util_regex_AbstractSet(JAVA_OB
     _r5.o = _r5.o;
     XMLVM_CHECK_NPE(5)
     _r0.i = java_util_regex_CharSet_getChar__(_r5.o);
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_regex_CharSet*) _r4.o)->fields.java_util_regex_CharSet.ch_;
     if (_r0.i != _r1.i) goto label18;
     _r0 = _r3;
@@ -612,6 +622,7 @@ JAVA_BOOLEAN java_util_regex_CharSet_first___java_util_regex_AbstractSet(JAVA_OB
     if (_r0.i == 0) goto label42;
     XMLVM_SOURCE_POSITION("CharSet.java", 102)
     _r5.o = _r5.o;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_regex_CharSet*) _r4.o)->fields.java_util_regex_CharSet.ch_;
     _r0.o = java_lang_Character_toString___char(_r0.i);
     //java_util_regex_RangeSet_accepts___int_java_lang_CharSequence[17]
@@ -630,6 +641,7 @@ JAVA_BOOLEAN java_util_regex_CharSet_first___java_util_regex_AbstractSet(JAVA_OB
     if (_r0.i == 0) goto label55;
     XMLVM_SOURCE_POSITION("CharSet.java", 104)
     _r5.o = _r5.o;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_regex_CharSet*) _r4.o)->fields.java_util_regex_CharSet.ch_;
     //java_util_regex_SupplRangeSet_contains___int[17]
     XMLVM_CHECK_NPE(5)

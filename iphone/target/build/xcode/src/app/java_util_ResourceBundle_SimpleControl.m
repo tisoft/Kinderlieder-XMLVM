@@ -202,6 +202,7 @@ void java_util_ResourceBundle_SimpleControl___INIT____java_lang_String(JAVA_OBJE
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 731)
     _r0.o = java_util_ResourceBundle_Control_GET_listClass();
     _r0.o = java_util_Collections_unmodifiableList___java_util_List(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_ResourceBundle_Control*) _r1.o)->fields.java_util_ResourceBundle_Control.format_ = _r0.o;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 732)
     XMLVM_EXIT_METHOD()

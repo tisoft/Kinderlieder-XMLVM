@@ -588,6 +588,7 @@ void gnu_xml_dom_ls_DomLSSerializer___INIT___(JAVA_OBJECT me)
     gnu_xml_transform_StreamSerializer___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 84)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_transform_StreamSerializer*) _r1.o)->fields.gnu_xml_transform_StreamSerializer.discardDefaultContent_ = _r0.i;
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 85)
     XMLVM_EXIT_METHOD()
@@ -615,6 +616,7 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSSerializer_getNewLine__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 96)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_transform_StreamSerializer*) _r1.o)->fields.gnu_xml_transform_StreamSerializer.eol_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -638,6 +640,7 @@ void gnu_xml_dom_ls_DomLSSerializer_setNewLine___java_lang_String(JAVA_OBJECT me
     _r0.o = java_lang_System_getProperty___java_lang_String(_r0.o);
     label8:;
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 105)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_transform_StreamSerializer*) _r1.o)->fields.gnu_xml_transform_StreamSerializer.eol_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 106)
     XMLVM_EXIT_METHOD()
@@ -656,6 +659,7 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSSerializer_getFilter__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 110)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_ls_DomLSSerializer*) _r1.o)->fields.gnu_xml_dom_ls_DomLSSerializer.filter_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -671,6 +675,7 @@ void gnu_xml_dom_ls_DomLSSerializer_setFilter___org_w3c_dom_ls_LSSerializerFilte
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 115)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_ls_DomLSSerializer*) _r0.o)->fields.gnu_xml_dom_ls_DomLSSerializer.filter_ = _r1.o;
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 116)
     XMLVM_EXIT_METHOD()
@@ -886,6 +891,7 @@ void gnu_xml_dom_ls_DomLSSerializer_serialize___org_w3c_dom_Node_java_io_OutputS
     _r3.o = n1;
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 175)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_ls_DomLSSerializer*) _r2.o)->fields.gnu_xml_dom_ls_DomLSSerializer.filter_;
     if (_r0.o != JAVA_NULL) goto label8;
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 177)
@@ -897,6 +903,7 @@ void gnu_xml_dom_ls_DomLSSerializer_serialize___org_w3c_dom_Node_java_io_OutputS
     return;
     label8:;
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 181)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_ls_DomLSSerializer*) _r2.o)->fields.gnu_xml_dom_ls_DomLSSerializer.filter_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSSerializerFilter_getWhatToShow__])(_r0.o);
@@ -922,6 +929,7 @@ void gnu_xml_dom_ls_DomLSSerializer_serialize___org_w3c_dom_Node_java_io_OutputS
     }
     label24:;
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 272)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_ls_DomLSSerializer*) _r2.o)->fields.gnu_xml_dom_ls_DomLSSerializer.filter_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_SHORT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSSerializerFilter_acceptNode___org_w3c_dom_Node])(_r0.o, _r3.o);
@@ -1076,6 +1084,7 @@ void gnu_xml_dom_ls_DomLSSerializer_setParameter___java_lang_String_java_lang_Ob
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_transform_StreamSerializer*) _r2.o)->fields.gnu_xml_transform_StreamSerializer.discardDefaultContent_ = _r0.i;
     label20:;
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 307)
@@ -1098,6 +1107,7 @@ void gnu_xml_dom_ls_DomLSSerializer_setParameter___java_lang_String_java_lang_Ob
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_transform_StreamSerializer*) _r2.o)->fields.gnu_xml_transform_StreamSerializer.xmlDeclaration_ = _r0.i;
     goto label20;
     label42:;
@@ -1133,6 +1143,7 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSSerializer_getParameter___java_lang_String(JAVA_
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r4.o);
     if (_r0.i == 0) goto label24;
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 314)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_transform_StreamSerializer*) _r3.o)->fields.gnu_xml_transform_StreamSerializer.discardDefaultContent_;
     if (_r0.i == 0) goto label20;
     // "true"
@@ -1155,6 +1166,7 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSSerializer_getParameter___java_lang_String(JAVA_
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r4.o);
     if (_r0.i == 0) goto label44;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_transform_StreamSerializer*) _r3.o)->fields.gnu_xml_transform_StreamSerializer.xmlDeclaration_;
     if (_r0.i == 0) goto label40;
     // "true"

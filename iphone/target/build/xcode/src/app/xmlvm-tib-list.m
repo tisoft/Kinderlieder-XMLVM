@@ -910,6 +910,7 @@
 #include "java_nio_channels_WritableByteChannel.h"
 #include "java_lang_Exception.h"
 #include "gnu_xml_xpath_CeilingFunction.h"
+#include "org_xmlvm_iphone_NSThread.h"
 #include "java_util_zip_InflaterInputStream.h"
 #include "java_util_regex_PositiveLookBehind.h"
 #include "java_util_TreeMap_DescendingSubMapKeyIterator.h"
@@ -2348,6 +2349,7 @@ __TIB_DEFINITION_TEMPLATE* __xmlvm_tib_list[] = {
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_nio_channels_WritableByteChannel,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_lang_Exception,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_gnu_xml_xpath_CeilingFunction,
+    (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_xmlvm_iphone_NSThread,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_zip_InflaterInputStream,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_regex_PositiveLookBehind,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_TreeMap_DescendingSubMapKeyIterator,

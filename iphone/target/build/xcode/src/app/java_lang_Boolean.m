@@ -535,6 +535,7 @@ void java_lang_Boolean___INIT____boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Boolean.java", 81)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_Boolean*) _r0.o)->fields.java_lang_Boolean.value_ = _r1.i;
     XMLVM_SOURCE_POSITION("Boolean.java", 82)
     XMLVM_EXIT_METHOD()
@@ -550,6 +551,7 @@ JAVA_BOOLEAN java_lang_Boolean_booleanValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Boolean.java", 91)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_Boolean*) _r1.o)->fields.java_lang_Boolean.value_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -572,8 +574,10 @@ JAVA_BOOLEAN java_lang_Boolean_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OB
     if (!__TIB_java_lang_Boolean.classInitialized) __INIT_java_lang_Boolean();
     _r0.i = XMLVM_ISA(_r3.o, __CLASS_java_lang_Boolean);
     if (_r0.i == 0) goto label14;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_Boolean*) _r2.o)->fields.java_lang_Boolean.value_;
     _r3.o = _r3.o;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_Boolean*) _r3.o)->fields.java_lang_Boolean.value_;
     if (_r0.i == _r1.i) goto label16;
     label14:;
@@ -606,7 +610,9 @@ JAVA_INT java_lang_Boolean_compareTo___java_lang_Boolean(JAVA_OBJECT me, JAVA_OB
     XMLVM_THROW_CUSTOM(_r0.o)
     label8:;
     XMLVM_SOURCE_POSITION("Boolean.java", 129)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_Boolean*) _r2.o)->fields.java_lang_Boolean.value_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_Boolean*) _r3.o)->fields.java_lang_Boolean.value_;
     if (_r0.i != _r1.i) goto label16;
     XMLVM_SOURCE_POSITION("Boolean.java", 130)
@@ -616,6 +622,7 @@ JAVA_INT java_lang_Boolean_compareTo___java_lang_Boolean(JAVA_OBJECT me, JAVA_OB
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label16:;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_Boolean*) _r2.o)->fields.java_lang_Boolean.value_;
     if (_r0.i == 0) goto label22;
     _r0.i = 1;
@@ -634,6 +641,7 @@ JAVA_INT java_lang_Boolean_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Boolean.java", 144)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_Boolean*) _r1.o)->fields.java_lang_Boolean.value_;
     if (_r0.i == 0) goto label7;
     _r0.i = 1231;
@@ -654,6 +662,7 @@ JAVA_OBJECT java_lang_Boolean_toString__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Boolean.java", 156)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_Boolean*) _r1.o)->fields.java_lang_Boolean.value_;
     _r0.o = java_lang_String_valueOf___boolean(_r0.i);
     XMLVM_EXIT_METHOD()

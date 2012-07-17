@@ -618,14 +618,18 @@ void java_util_Formatter_ParserStateMachine___INIT____java_nio_CharBuffer(JAVA_O
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2588)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Formatter_ParserStateMachine*) _r1.o)->fields.java_util_Formatter_ParserStateMachine.state_ = _r0.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 2590)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Formatter_ParserStateMachine*) _r1.o)->fields.java_util_Formatter_ParserStateMachine.currentChar_ = _r0.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 2592)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Formatter_ParserStateMachine*) _r1.o)->fields.java_util_Formatter_ParserStateMachine.format_ = _r0.o;
     XMLVM_SOURCE_POSITION("Formatter.java", 2595)
+    XMLVM_CHECK_NPE(1)
     ((java_util_Formatter_ParserStateMachine*) _r1.o)->fields.java_util_Formatter_ParserStateMachine.format_ = _r2.o;
     XMLVM_SOURCE_POSITION("Formatter.java", 2596)
     XMLVM_EXIT_METHOD()
@@ -642,12 +646,15 @@ void java_util_Formatter_ParserStateMachine_reset__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2599)
     _r0.i = 65535;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Formatter_ParserStateMachine*) _r1.o)->fields.java_util_Formatter_ParserStateMachine.currentChar_ = _r0.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 2600)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Formatter_ParserStateMachine*) _r1.o)->fields.java_util_Formatter_ParserStateMachine.state_ = _r0.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 2601)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Formatter_ParserStateMachine*) _r1.o)->fields.java_util_Formatter_ParserStateMachine.token_ = _r0.o;
     XMLVM_SOURCE_POSITION("Formatter.java", 2602)
     XMLVM_EXIT_METHOD()
@@ -668,9 +675,12 @@ JAVA_OBJECT java_util_Formatter_ParserStateMachine_getNextFormatToken__(JAVA_OBJ
     _r1.o = JAVA_NULL;
     XMLVM_CHECK_NPE(0)
     java_util_Formatter_FormatToken___INIT____java_util_Formatter_FormatToken(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.token_ = _r0.o;
     XMLVM_SOURCE_POSITION("Formatter.java", 2611)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.token_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.format_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_nio_Buffer_position__(_r1.o);
@@ -678,18 +688,22 @@ JAVA_OBJECT java_util_Formatter_ParserStateMachine_getNextFormatToken__(JAVA_OBJ
     java_util_Formatter_FormatToken_setFormatStringStartIndex___int(_r0.o, _r1.i);
     label19:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2616)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.state_;
     if (_r0.i == 0) goto label51;
     XMLVM_SOURCE_POSITION("Formatter.java", 2618)
     XMLVM_CHECK_NPE(2)
     _r0.i = java_util_Formatter_ParserStateMachine_getNextFormatChar__(_r2.o);
+    XMLVM_CHECK_NPE(2)
     ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.currentChar_ = _r0.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 2619)
     _r0.i = 65535;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.currentChar_;
     if (_r0.i != _r1.i) goto label51;
     XMLVM_SOURCE_POSITION("Formatter.java", 2620)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.state_;
     if (_r0.i == _r1.i) goto label51;
     XMLVM_SOURCE_POSITION("Formatter.java", 2621)
@@ -702,6 +716,7 @@ JAVA_OBJECT java_util_Formatter_ParserStateMachine_getNextFormatToken__(JAVA_OBJ
     XMLVM_THROW_CUSTOM(_r0.o)
     label51:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2626)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.state_;
     switch (_r0.i) {
     case 0: goto label57;
@@ -719,6 +734,7 @@ JAVA_OBJECT java_util_Formatter_ParserStateMachine_getNextFormatToken__(JAVA_OBJ
     XMLVM_CHECK_NPE(2)
     java_util_Formatter_ParserStateMachine_process_EXIT_STATE__(_r2.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2630)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.token_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -769,11 +785,13 @@ JAVA_CHAR java_util_Formatter_ParserStateMachine_getNextFormatChar__(JAVA_OBJECT
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2670)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Formatter_ParserStateMachine*) _r1.o)->fields.java_util_Formatter_ParserStateMachine.format_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_nio_Buffer_hasRemaining__(_r0.o);
     if (_r0.i == 0) goto label15;
     XMLVM_SOURCE_POSITION("Formatter.java", 2671)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Formatter_ParserStateMachine*) _r1.o)->fields.java_util_Formatter_ParserStateMachine.format_;
     //java_nio_CharBuffer_get__[19]
     XMLVM_CHECK_NPE(0)
@@ -798,16 +816,20 @@ JAVA_OBJECT java_util_Formatter_ParserStateMachine_getFormatString__(JAVA_OBJECT
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2677)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Formatter_ParserStateMachine*) _r3.o)->fields.java_util_Formatter_ParserStateMachine.format_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_nio_Buffer_position__(_r0.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2678)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Formatter_ParserStateMachine*) _r3.o)->fields.java_util_Formatter_ParserStateMachine.format_;
     XMLVM_CHECK_NPE(1)
     java_nio_Buffer_rewind__(_r1.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2679)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Formatter_ParserStateMachine*) _r3.o)->fields.java_util_Formatter_ParserStateMachine.format_;
     XMLVM_SOURCE_POSITION("Formatter.java", 2680)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_Formatter_ParserStateMachine*) _r3.o)->fields.java_util_Formatter_ParserStateMachine.token_;
     XMLVM_CHECK_NPE(2)
     _r2.i = java_util_Formatter_FormatToken_getFormatStringStartIndex__(_r2.o);
@@ -817,6 +839,7 @@ JAVA_OBJECT java_util_Formatter_ParserStateMachine_getFormatString__(JAVA_OBJECT
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_CharSequence_toString__])(_r1.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2681)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_Formatter_ParserStateMachine*) _r3.o)->fields.java_util_Formatter_ParserStateMachine.format_;
     XMLVM_CHECK_NPE(2)
     java_nio_Buffer_position___int(_r2.o, _r0.i);
@@ -836,10 +859,12 @@ void java_util_Formatter_ParserStateMachine_process_ENTRY_STATE__(JAVA_OBJECT me
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2686)
     _r0.i = 65535;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.currentChar_;
     if (_r0.i != _r1.i) goto label11;
     XMLVM_SOURCE_POSITION("Formatter.java", 2687)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.state_ = _r0.i;
     label10:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2693)
@@ -848,10 +873,12 @@ void java_util_Formatter_ParserStateMachine_process_ENTRY_STATE__(JAVA_OBJECT me
     label11:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2688)
     _r0.i = 37;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.currentChar_;
     if (_r0.i != _r1.i) goto label10;
     XMLVM_SOURCE_POSITION("Formatter.java", 2690)
     _r0.i = 2;
+    XMLVM_CHECK_NPE(2)
     ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.state_ = _r0.i;
     goto label10;
     //XMLVM_END_WRAPPER
@@ -873,26 +900,31 @@ void java_util_Formatter_ParserStateMachine_process_START_CONVERSION_STATE__(JAV
     _r6.i = 3;
     _r5.i = 1;
     XMLVM_SOURCE_POSITION("Formatter.java", 2696)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_util_Formatter_ParserStateMachine*) _r7.o)->fields.java_util_Formatter_ParserStateMachine.currentChar_;
     _r0.i = java_lang_Character_isDigit___char(_r0.i);
     if (_r0.i == 0) goto label103;
     XMLVM_SOURCE_POSITION("Formatter.java", 2697)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_util_Formatter_ParserStateMachine*) _r7.o)->fields.java_util_Formatter_ParserStateMachine.format_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_nio_Buffer_position__(_r0.o);
     _r0.i = _r0.i - _r5.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 2698)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_util_Formatter_ParserStateMachine*) _r7.o)->fields.java_util_Formatter_ParserStateMachine.format_;
     XMLVM_CHECK_NPE(7)
     _r1.i = java_util_Formatter_ParserStateMachine_parseInt___java_nio_CharBuffer(_r7.o, _r1.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2699)
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("Formatter.java", 2700)
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_util_Formatter_ParserStateMachine*) _r7.o)->fields.java_util_Formatter_ParserStateMachine.format_;
     XMLVM_CHECK_NPE(3)
     _r3.i = java_nio_Buffer_hasRemaining__(_r3.o);
     if (_r3.i == 0) goto label38;
     XMLVM_SOURCE_POSITION("Formatter.java", 2701)
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_util_Formatter_ParserStateMachine*) _r7.o)->fields.java_util_Formatter_ParserStateMachine.format_;
     //java_nio_CharBuffer_get__[19]
     XMLVM_CHECK_NPE(2)
@@ -904,15 +936,18 @@ void java_util_Formatter_ParserStateMachine_process_START_CONVERSION_STATE__(JAV
     XMLVM_SOURCE_POSITION("Formatter.java", 2709)
     if (_r1.i <= 0) goto label55;
     XMLVM_SOURCE_POSITION("Formatter.java", 2710)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_util_Formatter_ParserStateMachine*) _r7.o)->fields.java_util_Formatter_ParserStateMachine.token_;
     _r1.i = _r1.i - _r5.i;
     XMLVM_CHECK_NPE(0)
     java_util_Formatter_FormatToken_setArgIndex___int(_r0.o, _r1.i);
     label50:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2715)
+    XMLVM_CHECK_NPE(7)
     ((java_util_Formatter_ParserStateMachine*) _r7.o)->fields.java_util_Formatter_ParserStateMachine.state_ = _r6.i;
     label52:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2729)
+    XMLVM_CHECK_NPE(7)
     ((java_util_Formatter_ParserStateMachine*) _r7.o)->fields.java_util_Formatter_ParserStateMachine.currentChar_ = _r2.i;
     label54:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2739)
@@ -933,11 +968,14 @@ void java_util_Formatter_ParserStateMachine_process_START_CONVERSION_STATE__(JAV
     label68:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2718)
     _r3.i = 48;
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_util_Formatter_ParserStateMachine*) _r7.o)->fields.java_util_Formatter_ParserStateMachine.currentChar_;
     if (_r3.i != _r4.i) goto label82;
     XMLVM_SOURCE_POSITION("Formatter.java", 2719)
+    XMLVM_CHECK_NPE(7)
     ((java_util_Formatter_ParserStateMachine*) _r7.o)->fields.java_util_Formatter_ParserStateMachine.state_ = _r6.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 2720)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_util_Formatter_ParserStateMachine*) _r7.o)->fields.java_util_Formatter_ParserStateMachine.format_;
     XMLVM_CHECK_NPE(1)
     java_nio_Buffer_position___int(_r1.o, _r0.i);
@@ -945,9 +983,12 @@ void java_util_Formatter_ParserStateMachine_process_START_CONVERSION_STATE__(JAV
     label82:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2723)
     _r0.i = 4;
+    XMLVM_CHECK_NPE(7)
     ((java_util_Formatter_ParserStateMachine*) _r7.o)->fields.java_util_Formatter_ParserStateMachine.state_ = _r0.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 2725)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_util_Formatter_ParserStateMachine*) _r7.o)->fields.java_util_Formatter_ParserStateMachine.format_;
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_util_Formatter_ParserStateMachine*) _r7.o)->fields.java_util_Formatter_ParserStateMachine.format_;
     XMLVM_CHECK_NPE(3)
     _r3.i = java_nio_Buffer_position__(_r3.o);
@@ -955,6 +996,7 @@ void java_util_Formatter_ParserStateMachine_process_START_CONVERSION_STATE__(JAV
     XMLVM_CHECK_NPE(0)
     java_nio_Buffer_position___int(_r0.o, _r3.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2726)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_util_Formatter_ParserStateMachine*) _r7.o)->fields.java_util_Formatter_ParserStateMachine.token_;
     XMLVM_CHECK_NPE(0)
     java_util_Formatter_FormatToken_setWidth___int(_r0.o, _r1.i);
@@ -962,11 +1004,14 @@ void java_util_Formatter_ParserStateMachine_process_START_CONVERSION_STATE__(JAV
     label103:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2730)
     _r0.i = 60;
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_util_Formatter_ParserStateMachine*) _r7.o)->fields.java_util_Formatter_ParserStateMachine.currentChar_;
     if (_r0.i != _r1.i) goto label118;
     XMLVM_SOURCE_POSITION("Formatter.java", 2731)
+    XMLVM_CHECK_NPE(7)
     ((java_util_Formatter_ParserStateMachine*) _r7.o)->fields.java_util_Formatter_ParserStateMachine.state_ = _r6.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 2732)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_util_Formatter_ParserStateMachine*) _r7.o)->fields.java_util_Formatter_ParserStateMachine.token_;
     _r1.i = -2;
     XMLVM_CHECK_NPE(0)
@@ -974,9 +1019,12 @@ void java_util_Formatter_ParserStateMachine_process_START_CONVERSION_STATE__(JAV
     goto label54;
     label118:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2734)
+    XMLVM_CHECK_NPE(7)
     ((java_util_Formatter_ParserStateMachine*) _r7.o)->fields.java_util_Formatter_ParserStateMachine.state_ = _r6.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 2736)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_util_Formatter_ParserStateMachine*) _r7.o)->fields.java_util_Formatter_ParserStateMachine.format_;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_util_Formatter_ParserStateMachine*) _r7.o)->fields.java_util_Formatter_ParserStateMachine.format_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_nio_Buffer_position__(_r1.o);
@@ -997,17 +1045,22 @@ void java_util_Formatter_ParserStateMachine_process_FlAGS_STATE__(JAVA_OBJECT me
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2742)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Formatter_ParserStateMachine*) _r3.o)->fields.java_util_Formatter_ParserStateMachine.token_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_Formatter_ParserStateMachine*) _r3.o)->fields.java_util_Formatter_ParserStateMachine.currentChar_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Formatter_FormatToken_setFlag___char(_r0.o, _r1.i);
     if (_r0.i != 0) goto label32;
     XMLVM_SOURCE_POSITION("Formatter.java", 2744)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_Formatter_ParserStateMachine*) _r3.o)->fields.java_util_Formatter_ParserStateMachine.currentChar_;
     _r0.i = java_lang_Character_isDigit___char(_r0.i);
     if (_r0.i == 0) goto label33;
     XMLVM_SOURCE_POSITION("Formatter.java", 2745)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Formatter_ParserStateMachine*) _r3.o)->fields.java_util_Formatter_ParserStateMachine.token_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Formatter_ParserStateMachine*) _r3.o)->fields.java_util_Formatter_ParserStateMachine.format_;
     XMLVM_CHECK_NPE(3)
     _r1.i = java_util_Formatter_ParserStateMachine_parseInt___java_nio_CharBuffer(_r3.o, _r1.o);
@@ -1015,6 +1068,7 @@ void java_util_Formatter_ParserStateMachine_process_FlAGS_STATE__(JAVA_OBJECT me
     java_util_Formatter_FormatToken_setWidth___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2746)
     _r0.i = 4;
+    XMLVM_CHECK_NPE(3)
     ((java_util_Formatter_ParserStateMachine*) _r3.o)->fields.java_util_Formatter_ParserStateMachine.state_ = _r0.i;
     label32:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2754)
@@ -1023,18 +1077,23 @@ void java_util_Formatter_ParserStateMachine_process_FlAGS_STATE__(JAVA_OBJECT me
     label33:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2747)
     _r0.i = 46;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_Formatter_ParserStateMachine*) _r3.o)->fields.java_util_Formatter_ParserStateMachine.currentChar_;
     if (_r0.i != _r1.i) goto label43;
     XMLVM_SOURCE_POSITION("Formatter.java", 2748)
     _r0.i = 5;
+    XMLVM_CHECK_NPE(3)
     ((java_util_Formatter_ParserStateMachine*) _r3.o)->fields.java_util_Formatter_ParserStateMachine.state_ = _r0.i;
     goto label32;
     label43:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2750)
     _r0.i = 6;
+    XMLVM_CHECK_NPE(3)
     ((java_util_Formatter_ParserStateMachine*) _r3.o)->fields.java_util_Formatter_ParserStateMachine.state_ = _r0.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 2752)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Formatter_ParserStateMachine*) _r3.o)->fields.java_util_Formatter_ParserStateMachine.format_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Formatter_ParserStateMachine*) _r3.o)->fields.java_util_Formatter_ParserStateMachine.format_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_nio_Buffer_position__(_r1.o);
@@ -1057,10 +1116,12 @@ void java_util_Formatter_ParserStateMachine_process_WIDTH_STATE__(JAVA_OBJECT me
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2757)
     _r0.i = 46;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_Formatter_ParserStateMachine*) _r3.o)->fields.java_util_Formatter_ParserStateMachine.currentChar_;
     if (_r0.i != _r1.i) goto label10;
     XMLVM_SOURCE_POSITION("Formatter.java", 2758)
     _r0.i = 5;
+    XMLVM_CHECK_NPE(3)
     ((java_util_Formatter_ParserStateMachine*) _r3.o)->fields.java_util_Formatter_ParserStateMachine.state_ = _r0.i;
     label9:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2764)
@@ -1069,9 +1130,12 @@ void java_util_Formatter_ParserStateMachine_process_WIDTH_STATE__(JAVA_OBJECT me
     label10:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2760)
     _r0.i = 6;
+    XMLVM_CHECK_NPE(3)
     ((java_util_Formatter_ParserStateMachine*) _r3.o)->fields.java_util_Formatter_ParserStateMachine.state_ = _r0.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 2762)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Formatter_ParserStateMachine*) _r3.o)->fields.java_util_Formatter_ParserStateMachine.format_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Formatter_ParserStateMachine*) _r3.o)->fields.java_util_Formatter_ParserStateMachine.format_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_nio_Buffer_position__(_r1.o);
@@ -1092,11 +1156,14 @@ void java_util_Formatter_ParserStateMachine_process_PRECISION_STATE__(JAVA_OBJEC
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2767)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.currentChar_;
     _r0.i = java_lang_Character_isDigit___char(_r0.i);
     if (_r0.i == 0) goto label23;
     XMLVM_SOURCE_POSITION("Formatter.java", 2768)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.token_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.format_;
     XMLVM_CHECK_NPE(2)
     _r1.i = java_util_Formatter_ParserStateMachine_parseInt___java_nio_CharBuffer(_r2.o, _r1.o);
@@ -1104,6 +1171,7 @@ void java_util_Formatter_ParserStateMachine_process_PRECISION_STATE__(JAVA_OBJEC
     java_util_Formatter_FormatToken_setPrecision___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2774)
     _r0.i = 6;
+    XMLVM_CHECK_NPE(2)
     ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.state_ = _r0.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 2775)
     XMLVM_EXIT_METHOD()
@@ -1128,20 +1196,25 @@ void java_util_Formatter_ParserStateMachine_process_CONVERSION_TYPE_STATE__(JAVA
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2778)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.token_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.currentChar_;
     XMLVM_CHECK_NPE(0)
     java_util_Formatter_FormatToken_setConversionType___char(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2779)
     _r0.i = 116;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.currentChar_;
     if (_r0.i == _r1.i) goto label19;
     _r0.i = 84;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.currentChar_;
     if (_r0.i != _r1.i) goto label23;
     label19:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2780)
     _r0.i = 7;
+    XMLVM_CHECK_NPE(2)
     ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.state_ = _r0.i;
     label22:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2785)
@@ -1150,6 +1223,7 @@ void java_util_Formatter_ParserStateMachine_process_CONVERSION_TYPE_STATE__(JAVA
     label23:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2782)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.state_ = _r0.i;
     goto label22;
     //XMLVM_END_WRAPPER
@@ -1164,12 +1238,15 @@ void java_util_Formatter_ParserStateMachine_process_SUFFIX_STATE__(JAVA_OBJECT m
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2788)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.token_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.currentChar_;
     XMLVM_CHECK_NPE(0)
     java_util_Formatter_FormatToken_setDateSuffix___char(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2789)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.state_ = _r0.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 2790)
     XMLVM_EXIT_METHOD()
@@ -1186,6 +1263,7 @@ void java_util_Formatter_ParserStateMachine_process_EXIT_STATE__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2793)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_ParserStateMachine*) _r2.o)->fields.java_util_Formatter_ParserStateMachine.token_;
     XMLVM_CHECK_NPE(2)
     _r1.o = java_util_Formatter_ParserStateMachine_getFormatString__(_r2.o);

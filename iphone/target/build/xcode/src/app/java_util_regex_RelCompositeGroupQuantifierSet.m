@@ -245,16 +245,19 @@ JAVA_INT java_util_regex_RelCompositeGroupQuantifierSet_matches___int_java_lang_
     _r6.o = n3;
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("RelCompositeGroupQuantifierSet.java", 38)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_regex_CompositeGroupQuantifierSet*) _r3.o)->fields.java_util_regex_CompositeGroupQuantifierSet.setCounter_;
     XMLVM_CHECK_NPE(6)
     _r0.i = java_util_regex_MatchResultImpl_getEnterCounter___int(_r6.o, _r0.i);
     XMLVM_SOURCE_POSITION("RelCompositeGroupQuantifierSet.java", 40)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_QuantifierSet*) _r3.o)->fields.java_util_regex_QuantifierSet.innerSet_;
     //java_util_regex_AbstractSet_hasConsumed___java_util_regex_MatchResultImpl[12]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_regex_AbstractSet*) _r1.o)->tib->vtable[12])(_r1.o, _r6.o);
     if (_r1.i != 0) goto label22;
     XMLVM_SOURCE_POSITION("RelCompositeGroupQuantifierSet.java", 41)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -265,15 +268,18 @@ JAVA_INT java_util_regex_RelCompositeGroupQuantifierSet_matches___int_java_lang_
     return _r0.i;
     label22:;
     XMLVM_SOURCE_POSITION("RelCompositeGroupQuantifierSet.java", 44)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_CompositeGroupQuantifierSet*) _r3.o)->fields.java_util_regex_CompositeGroupQuantifierSet.quantifier_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_util_regex_Quantifier_max__(_r1.o);
     if (_r0.i < _r1.i) goto label42;
     XMLVM_SOURCE_POSITION("RelCompositeGroupQuantifierSet.java", 45)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_regex_CompositeGroupQuantifierSet*) _r3.o)->fields.java_util_regex_CompositeGroupQuantifierSet.setCounter_;
     XMLVM_CHECK_NPE(6)
     java_util_regex_MatchResultImpl_setEnterCounter___int_int(_r6.o, _r0.i, _r2.i);
     XMLVM_SOURCE_POSITION("RelCompositeGroupQuantifierSet.java", 46)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -281,11 +287,13 @@ JAVA_INT java_util_regex_RelCompositeGroupQuantifierSet_matches___int_java_lang_
     goto label21;
     label42:;
     XMLVM_SOURCE_POSITION("RelCompositeGroupQuantifierSet.java", 51)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_CompositeGroupQuantifierSet*) _r3.o)->fields.java_util_regex_CompositeGroupQuantifierSet.quantifier_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_util_regex_Quantifier_min__(_r1.o);
     if (_r0.i < _r1.i) goto label79;
     XMLVM_SOURCE_POSITION("RelCompositeGroupQuantifierSet.java", 52)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(1)
@@ -293,11 +301,13 @@ JAVA_INT java_util_regex_RelCompositeGroupQuantifierSet_matches___int_java_lang_
     XMLVM_SOURCE_POSITION("RelCompositeGroupQuantifierSet.java", 53)
     if (_r1.i >= 0) goto label72;
     XMLVM_SOURCE_POSITION("RelCompositeGroupQuantifierSet.java", 54)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_CompositeGroupQuantifierSet*) _r3.o)->fields.java_util_regex_CompositeGroupQuantifierSet.setCounter_;
     _r0.i = _r0.i + 1;
     XMLVM_CHECK_NPE(6)
     java_util_regex_MatchResultImpl_setEnterCounter___int_int(_r6.o, _r1.i, _r0.i);
     XMLVM_SOURCE_POSITION("RelCompositeGroupQuantifierSet.java", 55)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_QuantifierSet*) _r3.o)->fields.java_util_regex_QuantifierSet.innerSet_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -305,6 +315,7 @@ JAVA_INT java_util_regex_RelCompositeGroupQuantifierSet_matches___int_java_lang_
     goto label21;
     label72:;
     XMLVM_SOURCE_POSITION("RelCompositeGroupQuantifierSet.java", 58)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_regex_CompositeGroupQuantifierSet*) _r3.o)->fields.java_util_regex_CompositeGroupQuantifierSet.setCounter_;
     XMLVM_CHECK_NPE(6)
     java_util_regex_MatchResultImpl_setEnterCounter___int_int(_r6.o, _r0.i, _r2.i);
@@ -313,11 +324,13 @@ JAVA_INT java_util_regex_RelCompositeGroupQuantifierSet_matches___int_java_lang_
     goto label21;
     label79:;
     XMLVM_SOURCE_POSITION("RelCompositeGroupQuantifierSet.java", 62)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_CompositeGroupQuantifierSet*) _r3.o)->fields.java_util_regex_CompositeGroupQuantifierSet.setCounter_;
     _r0.i = _r0.i + 1;
     XMLVM_CHECK_NPE(6)
     java_util_regex_MatchResultImpl_setEnterCounter___int_int(_r6.o, _r1.i, _r0.i);
     XMLVM_SOURCE_POSITION("RelCompositeGroupQuantifierSet.java", 63)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_QuantifierSet*) _r3.o)->fields.java_util_regex_QuantifierSet.innerSet_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)

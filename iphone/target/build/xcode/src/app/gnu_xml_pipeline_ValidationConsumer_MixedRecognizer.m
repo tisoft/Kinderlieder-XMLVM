@@ -228,8 +228,10 @@ void gnu_xml_pipeline_ValidationConsumer_MixedRecognizer___INIT____gnu_xml_pipel
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1390)
     _r0.o = __NEW_java_util_StringTokenizer();
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1391)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r6.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.model_;
     _r2.i = 8;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r6.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.model_;
     _r4.i = 41;
     XMLVM_CHECK_NPE(3)
@@ -256,11 +258,13 @@ void gnu_xml_pipeline_ValidationConsumer_MixedRecognizer___INIT____gnu_xml_pipel
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_util_Vector*) _r1.o)->tib->vtable[16])(_r1.o);
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_String, _r0.i);
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_pipeline_ValidationConsumer_MixedRecognizer*) _r5.o)->fields.gnu_xml_pipeline_ValidationConsumer_MixedRecognizer.permitted_ = _r0.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1406)
     _r0.i = 0;
     _r2 = _r0;
     label47:;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_MixedRecognizer*) _r5.o)->fields.gnu_xml_pipeline_ValidationConsumer_MixedRecognizer.permitted_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     if (_r2.i < _r0.i) goto label102;
@@ -290,6 +294,7 @@ void gnu_xml_pipeline_ValidationConsumer_MixedRecognizer___INIT____gnu_xml_pipel
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1401)
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r6.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.model_;
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r3.o);
@@ -307,6 +312,7 @@ void gnu_xml_pipeline_ValidationConsumer_MixedRecognizer___INIT____gnu_xml_pipel
     goto label31;
     label102:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1407)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((gnu_xml_pipeline_ValidationConsumer_MixedRecognizer*) _r5.o)->fields.gnu_xml_pipeline_ValidationConsumer_MixedRecognizer.permitted_;
     XMLVM_CHECK_NPE(1)
     _r0.o = java_util_Vector_elementAt___int(_r1.o, _r2.i);
@@ -334,6 +340,7 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_MixedRecognizer_acceptElement___
     _r5.o = n1;
     _r3.i = 0;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1418)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_MixedRecognizer*) _r4.o)->fields.gnu_xml_pipeline_ValidationConsumer_MixedRecognizer.permitted_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r1 = _r3;
@@ -351,6 +358,7 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_MixedRecognizer_acceptElement___
     return _r0.o;
     label12:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1423)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_pipeline_ValidationConsumer_MixedRecognizer*) _r4.o)->fields.gnu_xml_pipeline_ValidationConsumer_MixedRecognizer.permitted_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -364,6 +372,7 @@ JAVA_OBJECT gnu_xml_pipeline_ValidationConsumer_MixedRecognizer_acceptElement___
     goto label5;
     label23:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1427)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_pipeline_ValidationConsumer_MixedRecognizer*) _r4.o)->fields.gnu_xml_pipeline_ValidationConsumer_MixedRecognizer.permitted_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);

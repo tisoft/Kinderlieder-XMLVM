@@ -261,9 +261,11 @@ void java_util_regex_CICharSet___INIT____char(JAVA_OBJECT me, JAVA_CHAR n1)
     XMLVM_CHECK_NPE(1)
     java_util_regex_LeafSet___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("CICharSet.java", 36)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_CICharSet*) _r1.o)->fields.java_util_regex_CICharSet.ch_ = _r2.i;
     XMLVM_SOURCE_POSITION("CICharSet.java", 37)
     _r0.i = java_util_regex_Pattern_getSupplement___char(_r2.i);
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_CICharSet*) _r1.o)->fields.java_util_regex_CICharSet.supplement_ = _r0.i;
     XMLVM_SOURCE_POSITION("CICharSet.java", 38)
     XMLVM_EXIT_METHOD()
@@ -284,11 +286,13 @@ JAVA_INT java_util_regex_CICharSet_accepts___int_java_lang_CharSequence(JAVA_OBJ
     _r3.i = n1;
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("CICharSet.java", 41)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_CICharSet*) _r2.o)->fields.java_util_regex_CICharSet.ch_;
     XMLVM_CHECK_NPE(4)
     _r1.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r4.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_CharSequence_charAt___int])(_r4.o, _r3.i);
     if (_r0.i == _r1.i) goto label16;
     XMLVM_SOURCE_POSITION("CICharSet.java", 42)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_CICharSet*) _r2.o)->fields.java_util_regex_CICharSet.supplement_;
     XMLVM_CHECK_NPE(4)
     _r1.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r4.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_CharSequence_charAt___int])(_r4.o, _r3.i);
@@ -318,6 +322,7 @@ JAVA_OBJECT java_util_regex_CICharSet_getName__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(1404);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_regex_CICharSet*) _r2.o)->fields.java_util_regex_CICharSet.ch_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -338,6 +343,7 @@ JAVA_CHAR java_util_regex_CICharSet_getChar__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CICharSet.java", 50)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_CICharSet*) _r1.o)->fields.java_util_regex_CICharSet.ch_;
     XMLVM_EXIT_METHOD()
     return _r0.i;

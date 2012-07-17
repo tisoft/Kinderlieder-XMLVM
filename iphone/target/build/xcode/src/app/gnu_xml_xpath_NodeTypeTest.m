@@ -351,8 +351,10 @@ void gnu_xml_xpath_NodeTypeTest___INIT____short_java_lang_String(JAVA_OBJECT me,
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_Test___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("NodeTypeTest.java", 63)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_NodeTypeTest*) _r0.o)->fields.gnu_xml_xpath_NodeTypeTest.type_ = _r1.i;
     XMLVM_SOURCE_POSITION("NodeTypeTest.java", 64)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_NodeTypeTest*) _r0.o)->fields.gnu_xml_xpath_NodeTypeTest.data_ = _r2.o;
     XMLVM_SOURCE_POSITION("NodeTypeTest.java", 65)
     XMLVM_EXIT_METHOD()
@@ -368,6 +370,7 @@ JAVA_SHORT gnu_xml_xpath_NodeTypeTest_getNodeType__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("NodeTypeTest.java", 69)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_xpath_NodeTypeTest*) _r1.o)->fields.gnu_xml_xpath_NodeTypeTest.type_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -382,6 +385,7 @@ JAVA_OBJECT gnu_xml_xpath_NodeTypeTest_getData__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("NodeTypeTest.java", 74)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_NodeTypeTest*) _r1.o)->fields.gnu_xml_xpath_NodeTypeTest.data_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -426,9 +430,11 @@ JAVA_BOOLEAN gnu_xml_xpath_NodeTypeTest_matches___org_w3c_dom_Node_int_int(JAVA_
     return _r0.i;
     label11:;
     XMLVM_SOURCE_POSITION("NodeTypeTest.java", 88)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((gnu_xml_xpath_NodeTypeTest*) _r4.o)->fields.gnu_xml_xpath_NodeTypeTest.type_;
     if (_r1.i <= 0) goto label21;
     XMLVM_SOURCE_POSITION("NodeTypeTest.java", 90)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((gnu_xml_xpath_NodeTypeTest*) _r4.o)->fields.gnu_xml_xpath_NodeTypeTest.type_;
     if (_r0.i == _r1.i) goto label21;
     _r0 = _r2;
@@ -440,9 +446,11 @@ JAVA_BOOLEAN gnu_xml_xpath_NodeTypeTest_matches___org_w3c_dom_Node_int_int(JAVA_
     goto label10;
     label23:;
     XMLVM_SOURCE_POSITION("NodeTypeTest.java", 95)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((gnu_xml_xpath_NodeTypeTest*) _r4.o)->fields.gnu_xml_xpath_NodeTypeTest.type_;
     if (_r1.i <= 0) goto label53;
     XMLVM_SOURCE_POSITION("NodeTypeTest.java", 97)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((gnu_xml_xpath_NodeTypeTest*) _r4.o)->fields.gnu_xml_xpath_NodeTypeTest.type_;
     if (_r0.i == _r1.i) goto label33;
     _r0 = _r2;
@@ -450,9 +458,11 @@ JAVA_BOOLEAN gnu_xml_xpath_NodeTypeTest_matches___org_w3c_dom_Node_int_int(JAVA_
     goto label10;
     label33:;
     XMLVM_SOURCE_POSITION("NodeTypeTest.java", 99)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_NodeTypeTest*) _r4.o)->fields.gnu_xml_xpath_NodeTypeTest.data_;
     if (_r0.o == JAVA_NULL) goto label53;
     XMLVM_SOURCE_POSITION("NodeTypeTest.java", 100)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_NodeTypeTest*) _r4.o)->fields.gnu_xml_xpath_NodeTypeTest.data_;
     _r5.o = _r5.o;
     XMLVM_CHECK_NPE(5)
@@ -485,7 +495,9 @@ JAVA_OBJECT gnu_xml_xpath_NodeTypeTest_clone___java_lang_Object(JAVA_OBJECT me, 
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("NodeTypeTest.java", 112)
     _r0.o = __NEW_gnu_xml_xpath_NodeTypeTest();
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_xml_xpath_NodeTypeTest*) _r3.o)->fields.gnu_xml_xpath_NodeTypeTest.type_;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_xpath_NodeTypeTest*) _r3.o)->fields.gnu_xml_xpath_NodeTypeTest.data_;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_NodeTypeTest___INIT____short_java_lang_String(_r0.o, _r1.i, _r2.o);
@@ -519,6 +531,7 @@ JAVA_OBJECT gnu_xml_xpath_NodeTypeTest_toString__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("NodeTypeTest.java", 122)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_xpath_NodeTypeTest*) _r2.o)->fields.gnu_xml_xpath_NodeTypeTest.type_;
     switch (_r0.i) {
     case 0: goto label11;
@@ -551,6 +564,7 @@ JAVA_OBJECT gnu_xml_xpath_NodeTypeTest_toString__(JAVA_OBJECT me)
     goto label13;
     label20:;
     XMLVM_SOURCE_POSITION("NodeTypeTest.java", 131)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_xpath_NodeTypeTest*) _r2.o)->fields.gnu_xml_xpath_NodeTypeTest.data_;
     if (_r0.o == JAVA_NULL) goto label48;
     XMLVM_SOURCE_POSITION("NodeTypeTest.java", 133)
@@ -559,6 +573,7 @@ JAVA_OBJECT gnu_xml_xpath_NodeTypeTest_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(3354);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_NodeTypeTest*) _r2.o)->fields.gnu_xml_xpath_NodeTypeTest.data_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);

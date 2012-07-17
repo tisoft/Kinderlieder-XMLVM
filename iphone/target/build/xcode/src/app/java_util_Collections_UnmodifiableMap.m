@@ -505,6 +505,7 @@ void java_util_Collections_UnmodifiableMap___INIT____java_util_Map(JAVA_OBJECT m
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Collections.java", 1307)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Collections_UnmodifiableMap*) _r0.o)->fields.java_util_Collections_UnmodifiableMap.m_ = _r1.o;
     XMLVM_SOURCE_POSITION("Collections.java", 1308)
     XMLVM_EXIT_METHOD()
@@ -537,6 +538,7 @@ JAVA_BOOLEAN java_util_Collections_UnmodifiableMap_containsKey___java_lang_Objec
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 1315)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableMap*) _r1.o)->fields.java_util_Collections_UnmodifiableMap.m_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_containsKey___java_lang_Object])(_r0.o, _r2.o);
@@ -555,6 +557,7 @@ JAVA_BOOLEAN java_util_Collections_UnmodifiableMap_containsValue___java_lang_Obj
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 1319)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableMap*) _r1.o)->fields.java_util_Collections_UnmodifiableMap.m_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_containsValue___java_lang_Object])(_r0.o, _r2.o);
@@ -573,6 +576,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableMap_entrySet__(JAVA_OBJECT me)
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1323)
     _r0.o = __NEW_java_util_Collections_UnmodifiableMap_UnmodifiableEntrySet();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_UnmodifiableMap*) _r2.o)->fields.java_util_Collections_UnmodifiableMap.m_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_entrySet__])(_r1.o);
@@ -593,6 +597,7 @@ JAVA_BOOLEAN java_util_Collections_UnmodifiableMap_equals___java_lang_Object(JAV
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 1328)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableMap*) _r1.o)->fields.java_util_Collections_UnmodifiableMap.m_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_equals___java_lang_Object])(_r0.o, _r2.o);
@@ -611,6 +616,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableMap_get___java_lang_Object(JAVA_OB
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 1332)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableMap*) _r1.o)->fields.java_util_Collections_UnmodifiableMap.m_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_get___java_lang_Object])(_r0.o, _r2.o);
@@ -627,6 +633,7 @@ JAVA_INT java_util_Collections_UnmodifiableMap_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1337)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableMap*) _r1.o)->fields.java_util_Collections_UnmodifiableMap.m_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_hashCode__])(_r0.o);
@@ -643,6 +650,7 @@ JAVA_BOOLEAN java_util_Collections_UnmodifiableMap_isEmpty__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1341)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableMap*) _r1.o)->fields.java_util_Collections_UnmodifiableMap.m_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_isEmpty__])(_r0.o);
@@ -661,6 +669,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableMap_keySet__(JAVA_OBJECT me)
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1345)
     _r0.o = __NEW_java_util_Collections_UnmodifiableSet();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_UnmodifiableMap*) _r2.o)->fields.java_util_Collections_UnmodifiableMap.m_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_keySet__])(_r1.o);
@@ -732,6 +741,7 @@ JAVA_INT java_util_Collections_UnmodifiableMap_size__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1361)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableMap*) _r1.o)->fields.java_util_Collections_UnmodifiableMap.m_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_size__])(_r0.o);
@@ -750,6 +760,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableMap_values__(JAVA_OBJECT me)
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1365)
     _r0.o = __NEW_java_util_Collections_UnmodifiableCollection();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_UnmodifiableMap*) _r2.o)->fields.java_util_Collections_UnmodifiableMap.m_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_values__])(_r1.o);
@@ -768,6 +779,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableMap_toString__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1370)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableMap*) _r1.o)->fields.java_util_Collections_UnmodifiableMap.m_;
     //java_lang_Object_toString__[5]
     XMLVM_CHECK_NPE(0)

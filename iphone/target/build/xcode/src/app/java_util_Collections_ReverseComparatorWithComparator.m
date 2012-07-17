@@ -283,6 +283,7 @@ void java_util_Collections_ReverseComparatorWithComparator___INIT____java_util_C
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Collections.java", 223)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Collections_ReverseComparatorWithComparator*) _r0.o)->fields.java_util_Collections_ReverseComparatorWithComparator.comparator_ = _r1.o;
     XMLVM_SOURCE_POSITION("Collections.java", 224)
     XMLVM_EXIT_METHOD()
@@ -302,6 +303,7 @@ JAVA_INT java_util_Collections_ReverseComparatorWithComparator_compare___java_la
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("Collections.java", 227)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_ReverseComparatorWithComparator*) _r1.o)->fields.java_util_Collections_ReverseComparatorWithComparator.comparator_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Comparator_compare___java_lang_Object_java_lang_Object])(_r0.o, _r3.o, _r2.o);
@@ -326,8 +328,10 @@ JAVA_BOOLEAN java_util_Collections_ReverseComparatorWithComparator_equals___java
     if (_r0.i == 0) goto label18;
     XMLVM_SOURCE_POSITION("Collections.java", 233)
     _r3.o = _r3.o;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Collections_ReverseComparatorWithComparator*) _r3.o)->fields.java_util_Collections_ReverseComparatorWithComparator.comparator_;
     XMLVM_SOURCE_POSITION("Collections.java", 234)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_ReverseComparatorWithComparator*) _r2.o)->fields.java_util_Collections_ReverseComparatorWithComparator.comparator_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Comparator_equals___java_lang_Object])(_r0.o, _r1.o);
@@ -350,6 +354,7 @@ JAVA_INT java_util_Collections_ReverseComparatorWithComparator_hashCode__(JAVA_O
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 239)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_ReverseComparatorWithComparator*) _r1.o)->fields.java_util_Collections_ReverseComparatorWithComparator.comparator_;
     //java_lang_Object_hashCode__[4]
     XMLVM_CHECK_NPE(0)
@@ -369,6 +374,7 @@ JAVA_OBJECT java_util_Collections_ReverseComparatorWithComparator_access$0___jav
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 219)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_ReverseComparatorWithComparator*) _r1.o)->fields.java_util_Collections_ReverseComparatorWithComparator.comparator_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

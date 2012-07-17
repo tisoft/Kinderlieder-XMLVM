@@ -258,6 +258,7 @@ void java_util_IllegalFormatCodePointException___INIT____int(JAVA_OBJECT me, JAV
     XMLVM_CHECK_NPE(0)
     java_util_IllegalFormatException___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("IllegalFormatCodePointException.java", 42)
+    XMLVM_CHECK_NPE(0)
     ((java_util_IllegalFormatCodePointException*) _r0.o)->fields.java_util_IllegalFormatCodePointException.c_ = _r1.i;
     XMLVM_SOURCE_POSITION("IllegalFormatCodePointException.java", 43)
     XMLVM_EXIT_METHOD()
@@ -273,6 +274,7 @@ JAVA_INT java_util_IllegalFormatCodePointException_getCodePoint__(JAVA_OBJECT me
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("IllegalFormatCodePointException.java", 51)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_IllegalFormatCodePointException*) _r1.o)->fields.java_util_IllegalFormatCodePointException.c_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -299,6 +301,7 @@ JAVA_OBJECT java_util_IllegalFormatCodePointException_getMessage__(JAVA_OBJECT m
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("IllegalFormatCodePointException.java", 63)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_IllegalFormatCodePointException*) _r4.o)->fields.java_util_IllegalFormatCodePointException.c_;
     _r1.o = java_lang_Character_toChars___int(_r1.i);
     XMLVM_SOURCE_POSITION("IllegalFormatCodePointException.java", 64)

@@ -245,8 +245,11 @@ void my_kinderlieder_ShopService_1_1___INIT____my_kinderlieder_ShopService_1_my_
     _r2.o = n2;
     _r3.o = n3;
     XMLVM_SOURCE_POSITION("ShopService.java", 50)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_ShopService_1_1*) _r0.o)->fields.my_kinderlieder_ShopService_1_1.this_1_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_ShopService_1_1*) _r0.o)->fields.my_kinderlieder_ShopService_1_1.val_inAppProduct_ = _r2.o;
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_ShopService_1_1*) _r0.o)->fields.my_kinderlieder_ShopService_1_1.val_finalOriginalTransaction_ = _r3.o;
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
@@ -270,9 +273,13 @@ void my_kinderlieder_ShopService_1_1_run__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w25173aaab4b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("ShopService.java", 53)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((my_kinderlieder_ShopService_1_1*) _r6.o)->fields.my_kinderlieder_ShopService_1_1.this_1_;
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((my_kinderlieder_ShopService_1*) _r2.o)->fields.my_kinderlieder_ShopService_1.this_0_;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((my_kinderlieder_ShopService_1_1*) _r6.o)->fields.my_kinderlieder_ShopService_1_1.val_inAppProduct_;
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((my_kinderlieder_ShopService_1_1*) _r6.o)->fields.my_kinderlieder_ShopService_1_1.val_finalOriginalTransaction_;
     XMLVM_CHECK_NPE(2)
     my_kinderlieder_ShopService_download___my_kinderlieder_Product_org_xmlvm_iphone_SKPaymentTransaction(_r2.o, _r3.o, _r4.o);
@@ -306,8 +313,10 @@ void my_kinderlieder_ShopService_1_1_run__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UIAlertView___INIT____java_lang_String_java_lang_String_org_xmlvm_iphone_UIAlertViewDelegate_java_lang_String(_r0.o, _r2.o, _r3.o, _r4.o, _r5.o);
     XMLVM_SOURCE_POSITION("ShopService.java", 63)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((my_kinderlieder_ShopService_1_1*) _r6.o)->fields.my_kinderlieder_ShopService_1_1.val_inAppProduct_;
     _r3.o = my_kinderlieder_Product_State_GET_AVAILABLE();
+    XMLVM_CHECK_NPE(2)
     ((my_kinderlieder_Product*) _r2.o)->fields.my_kinderlieder_Product.state_ = _r3.o;
     XMLVM_SOURCE_POSITION("ShopService.java", 64)
     XMLVM_CHECK_NPE(0)

@@ -411,13 +411,17 @@ void java_util_StringTokenizer___INIT____java_lang_String_java_lang_String_boole
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 158)
     if (_r2.o == JAVA_NULL) goto label15;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 159)
+    XMLVM_CHECK_NPE(1)
     ((java_util_StringTokenizer*) _r1.o)->fields.java_util_StringTokenizer.string_ = _r2.o;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 160)
+    XMLVM_CHECK_NPE(1)
     ((java_util_StringTokenizer*) _r1.o)->fields.java_util_StringTokenizer.delimiters_ = _r3.o;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 161)
+    XMLVM_CHECK_NPE(1)
     ((java_util_StringTokenizer*) _r1.o)->fields.java_util_StringTokenizer.returnDelimiters_ = _r4.i;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 162)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_StringTokenizer*) _r1.o)->fields.java_util_StringTokenizer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 165)
     XMLVM_EXIT_METHOD()
@@ -447,7 +451,9 @@ JAVA_INT java_util_StringTokenizer_countTokens__(JAVA_OBJECT me)
     _r6.i = 0;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 174)
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 176)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_util_StringTokenizer*) _r7.o)->fields.java_util_StringTokenizer.position_;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_util_StringTokenizer*) _r7.o)->fields.java_util_StringTokenizer.string_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(1)
@@ -466,7 +472,9 @@ JAVA_INT java_util_StringTokenizer_countTokens__(JAVA_OBJECT me)
     return _r0.i;
     label18:;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 177)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_util_StringTokenizer*) _r7.o)->fields.java_util_StringTokenizer.delimiters_;
+    XMLVM_CHECK_NPE(7)
     _r5.o = ((java_util_StringTokenizer*) _r7.o)->fields.java_util_StringTokenizer.string_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(5)
@@ -475,6 +483,7 @@ JAVA_INT java_util_StringTokenizer_countTokens__(JAVA_OBJECT me)
     _r4.i = java_lang_String_indexOf___int_int(_r4.o, _r5.i, _r6.i);
     if (_r4.i < 0) goto label47;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 178)
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_util_StringTokenizer*) _r7.o)->fields.java_util_StringTokenizer.returnDelimiters_;
     if (_r4.i == 0) goto label38;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 179)
@@ -530,6 +539,7 @@ JAVA_BOOLEAN java_util_StringTokenizer_hasMoreTokens__(JAVA_OBJECT me)
     _r5.i = 1;
     _r4.i = 0;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 209)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.delimiters_;
     if (_r0.o != JAVA_NULL) goto label12;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 210)
@@ -539,14 +549,17 @@ JAVA_BOOLEAN java_util_StringTokenizer_hasMoreTokens__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 212)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.string_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[8])(_r0.o);
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 213)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.position_;
     if (_r1.i >= _r0.i) goto label32;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 214)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.returnDelimiters_;
     if (_r1.i == 0) goto label28;
     _r0 = _r5;
@@ -557,6 +570,7 @@ JAVA_BOOLEAN java_util_StringTokenizer_hasMoreTokens__(JAVA_OBJECT me)
     return _r0.i;
     label28:;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 219)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.position_;
     label30:;
     if (_r1.i < _r0.i) goto label34;
@@ -565,7 +579,9 @@ JAVA_BOOLEAN java_util_StringTokenizer_hasMoreTokens__(JAVA_OBJECT me)
     goto label27;
     label34:;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 220)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.delimiters_;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.string_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(3)
@@ -612,6 +628,7 @@ JAVA_OBJECT java_util_StringTokenizer_nextToken__(JAVA_OBJECT me)
     _r6.o = me;
     _r5.i = 0;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 246)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.delimiters_;
     if (_r0.o != JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 247)
@@ -621,8 +638,10 @@ JAVA_OBJECT java_util_StringTokenizer_nextToken__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label11:;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 249)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.position_;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 250)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.string_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(1)
@@ -630,11 +649,15 @@ JAVA_OBJECT java_util_StringTokenizer_nextToken__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 252)
     if (_r0.i >= _r1.i) goto label178;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 253)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.returnDelimiters_;
     if (_r2.i == 0) goto label109;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 254)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.delimiters_;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.string_;
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.position_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(3)
@@ -643,9 +666,12 @@ JAVA_OBJECT java_util_StringTokenizer_nextToken__(JAVA_OBJECT me)
     _r2.i = java_lang_String_indexOf___int_int(_r2.o, _r3.i, _r5.i);
     if (_r2.i < 0) goto label58;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 255)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.string_;
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.position_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(6)
     ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.position_ = _r2.i;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(0)
@@ -657,21 +683,28 @@ JAVA_OBJECT java_util_StringTokenizer_nextToken__(JAVA_OBJECT me)
     return _r0.o;
     label58:;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 256)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.position_;
     _r2.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(6)
     ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.position_ = _r2.i;
     label64:;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.position_;
     if (_r2.i < _r1.i) goto label75;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 259)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.string_;
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_String_substring___int(_r1.o, _r0.i);
     goto label57;
     label75:;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 257)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.delimiters_;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.string_;
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.position_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(3)
@@ -680,14 +713,18 @@ JAVA_OBJECT java_util_StringTokenizer_nextToken__(JAVA_OBJECT me)
     _r2.i = java_lang_String_indexOf___int_int(_r2.o, _r3.i, _r5.i);
     if (_r2.i < 0) goto label100;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 258)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.string_;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.position_;
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_String_substring___int_int(_r1.o, _r0.i, _r2.i);
     goto label57;
     label100:;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.position_;
     _r2.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(6)
     ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.position_ = _r2.i;
     goto label64;
     label107:;
@@ -696,7 +733,9 @@ JAVA_OBJECT java_util_StringTokenizer_nextToken__(JAVA_OBJECT me)
     label109:;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 262)
     if (_r0.i >= _r1.i) goto label125;
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.delimiters_;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.string_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(3)
@@ -706,24 +745,32 @@ JAVA_OBJECT java_util_StringTokenizer_nextToken__(JAVA_OBJECT me)
     if (_r2.i >= 0) goto label107;
     label125:;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 264)
+    XMLVM_CHECK_NPE(6)
     ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 265)
     if (_r0.i >= _r1.i) goto label178;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 266)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.position_;
     _r2.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(6)
     ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.position_ = _r2.i;
     label135:;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.position_;
     if (_r2.i < _r1.i) goto label146;
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.string_;
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_String_substring___int(_r1.o, _r0.i);
     goto label57;
     label146:;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 267)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.delimiters_;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.string_;
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.position_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(3)
@@ -732,14 +779,18 @@ JAVA_OBJECT java_util_StringTokenizer_nextToken__(JAVA_OBJECT me)
     _r2.i = java_lang_String_indexOf___int_int(_r2.o, _r3.i, _r5.i);
     if (_r2.i < 0) goto label171;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 268)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.string_;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.position_;
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_String_substring___int_int(_r1.o, _r0.i, _r2.i);
     goto label57;
     label171:;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.position_;
     _r2.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(6)
     ((java_util_StringTokenizer*) _r6.o)->fields.java_util_StringTokenizer.position_ = _r2.i;
     goto label135;
     label178:;
@@ -761,6 +812,7 @@ JAVA_OBJECT java_util_StringTokenizer_nextToken___java_lang_String(JAVA_OBJECT m
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 286)
+    XMLVM_CHECK_NPE(1)
     ((java_util_StringTokenizer*) _r1.o)->fields.java_util_StringTokenizer.delimiters_ = _r2.o;
     XMLVM_SOURCE_POSITION("StringTokenizer.java", 287)
     XMLVM_CHECK_NPE(1)

@@ -1055,7 +1055,7 @@ JAVA_OBJECT java_net_ProxySelectorImpl_createProxy___java_net_Proxy_Type_java_la
     XMLVM_EXIT_METHOD()
     return _r2.o;
     label7:;
-    XMLVM_TRY_BEGIN(w38284aaac13b1c15)
+    XMLVM_TRY_BEGIN(w38289aaac13b1c15)
     // Begin try
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 275)
     _r3.o = java_lang_Integer_valueOf___java_lang_String(_r7.o);
@@ -1064,10 +1064,10 @@ JAVA_OBJECT java_net_ProxySelectorImpl_createProxy___java_net_Proxy_Type_java_la
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_Integer*) _r3.o)->tib->vtable[9])(_r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38284aaac13b1c15)
-        XMLVM_CATCH_SPECIFIC(w38284aaac13b1c15,java_lang_NumberFormatException,25)
-    XMLVM_CATCH_END(w38284aaac13b1c15)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38284aaac13b1c15)
+    XMLVM_CATCH_BEGIN(w38289aaac13b1c15)
+        XMLVM_CATCH_SPECIFIC(w38289aaac13b1c15,java_lang_NumberFormatException,25)
+    XMLVM_CATCH_END(w38289aaac13b1c15)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38289aaac13b1c15)
     label15:;
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 279)
     _r2.o = __NEW_java_net_Proxy();
@@ -1077,8 +1077,8 @@ JAVA_OBJECT java_net_ProxySelectorImpl_createProxy___java_net_Proxy_Type_java_la
     goto label6;
     label25:;
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 276)
-    java_lang_Thread* curThread_w38284aaac13b1c24 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r3.o = curThread_w38284aaac13b1c24->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38289aaac13b1c24 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r3.o = curThread_w38289aaac13b1c24->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r3;
     _r1 = _r8;
     XMLVM_SOURCE_POSITION("ProxySelectorImpl.java", 277)

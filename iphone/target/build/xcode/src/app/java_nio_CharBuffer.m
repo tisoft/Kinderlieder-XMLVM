@@ -965,9 +965,11 @@ JAVA_OBJECT java_nio_CharBuffer_wrap___char_1ARRAY_int_int(JAVA_OBJECT n1, JAVA_
     XMLVM_SOURCE_POSITION("CharBuffer.java", 94)
     _r0.o = java_nio_BufferFactory_newCharBuffer___char_1ARRAY(_r5.o);
     XMLVM_SOURCE_POSITION("CharBuffer.java", 95)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.position_ = _r6.i;
     XMLVM_SOURCE_POSITION("CharBuffer.java", 96)
     _r1.i = _r6.i + _r7.i;
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.limit_ = _r1.i;
     XMLVM_SOURCE_POSITION("CharBuffer.java", 98)
     XMLVM_EXIT_METHOD()
@@ -1026,8 +1028,10 @@ JAVA_OBJECT java_nio_CharBuffer_wrap___java_lang_CharSequence_int_int(JAVA_OBJEC
     XMLVM_SOURCE_POSITION("CharBuffer.java", 142)
     _r0.o = java_nio_BufferFactory_newCharBuffer___java_lang_CharSequence(_r1.o);
     XMLVM_SOURCE_POSITION("CharBuffer.java", 143)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.position_ = _r2.i;
     XMLVM_SOURCE_POSITION("CharBuffer.java", 144)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.limit_ = _r3.i;
     XMLVM_SOURCE_POSITION("CharBuffer.java", 145)
     XMLVM_EXIT_METHOD()
@@ -1106,6 +1110,7 @@ JAVA_CHAR java_nio_CharBuffer_charAt___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("CharBuffer.java", 220)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.position_;
     _r0.i = _r0.i + _r2.i;
     //java_nio_CharBuffer_get___int[21]
@@ -1140,8 +1145,10 @@ JAVA_INT java_nio_CharBuffer_compareTo___java_nio_CharBuffer(JAVA_OBJECT me, JAV
     _r0.i = java_nio_Buffer_remaining__(_r6.o);
     label14:;
     XMLVM_SOURCE_POSITION("CharBuffer.java", 251)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_nio_Buffer*) _r6.o)->fields.java_nio_Buffer.position_;
     XMLVM_SOURCE_POSITION("CharBuffer.java", 252)
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_nio_Buffer*) _r7.o)->fields.java_nio_Buffer.position_;
     _r5 = _r2;
     _r2 = _r0;
@@ -1231,14 +1238,17 @@ JAVA_BOOLEAN java_nio_CharBuffer_equals___java_lang_Object(JAVA_OBJECT me, JAVA_
     goto label7;
     label22:;
     XMLVM_SOURCE_POSITION("CharBuffer.java", 305)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_nio_Buffer*) _r6.o)->fields.java_nio_Buffer.position_;
     XMLVM_SOURCE_POSITION("CharBuffer.java", 306)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_nio_Buffer*) _r7.o)->fields.java_nio_Buffer.position_;
     _r2 = _r0;
     _r0 = _r5;
     label28:;
     XMLVM_SOURCE_POSITION("CharBuffer.java", 308)
     if (_r0.i == 0) goto label7;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_nio_Buffer*) _r6.o)->fields.java_nio_Buffer.limit_;
     if (_r2.i >= _r3.i) goto label7;
     XMLVM_SOURCE_POSITION("CharBuffer.java", 309)
@@ -1377,6 +1387,7 @@ JAVA_INT java_nio_CharBuffer_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("CharBuffer.java", 404)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
     XMLVM_SOURCE_POSITION("CharBuffer.java", 405)
     _r1.i = 0;
@@ -1385,6 +1396,7 @@ JAVA_INT java_nio_CharBuffer_hashCode__(JAVA_OBJECT me)
     _r0 = _r3;
     label6:;
     XMLVM_SOURCE_POSITION("CharBuffer.java", 406)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.limit_;
     if (_r1.i < _r2.i) goto label11;
     XMLVM_SOURCE_POSITION("CharBuffer.java", 409)
@@ -1648,8 +1660,10 @@ JAVA_OBJECT java_nio_CharBuffer_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("CharBuffer.java", 690)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.position_;
     label7:;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.limit_;
     if (_r1.i < _r2.i) goto label16;
     XMLVM_SOURCE_POSITION("CharBuffer.java", 693)
@@ -1797,6 +1811,7 @@ JAVA_INT java_nio_CharBuffer_read___java_nio_CharBuffer(JAVA_OBJECT me, JAVA_OBJ
     XMLVM_SOURCE_POSITION("CharBuffer.java", 792)
     if (_r0.i != 0) goto label33;
     XMLVM_SOURCE_POSITION("CharBuffer.java", 793)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
     if (_r0.i <= 0) goto label31;
     XMLVM_CHECK_NPE(3)

@@ -222,6 +222,7 @@ JAVA_OBJECT java_util_regex_AbstractCharClass_LazyJavaDigit_computeValue__(JAVA_
     java_util_regex_AbstractCharClass_LazyJavaDigit_1___INIT____java_util_regex_AbstractCharClass_LazyJavaDigit(_r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 483)
     _r1.i = 1;
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractCharClass*) _r0.o)->fields.java_util_regex_AbstractCharClass.mayContainSupplCodepoints_ = _r1.i;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 484)
     XMLVM_EXIT_METHOD()

@@ -366,6 +366,7 @@ void org_json_JSONArray___INIT___(JAVA_OBJECT me)
     _r0.o = __NEW_java_util_ArrayList();
     XMLVM_CHECK_NPE(0)
     java_util_ArrayList___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((org_json_JSONArray*) _r1.o)->fields.org_json_JSONArray.myArrayList_ = _r0.o;
     XMLVM_SOURCE_POSITION("JSONArray.java", 99)
     XMLVM_EXIT_METHOD()
@@ -435,6 +436,7 @@ void org_json_JSONArray___INIT____org_json_JSONTokener(JAVA_OBJECT me, JAVA_OBJE
     XMLVM_CHECK_NPE(6)
     org_json_JSONTokener_back__(_r6.o);
     XMLVM_SOURCE_POSITION("JSONArray.java", 124)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((org_json_JSONArray*) _r5.o)->fields.org_json_JSONArray.myArrayList_;
     _r3.o = JAVA_NULL;
     //java_util_ArrayList_add___java_lang_Object[7]
@@ -462,6 +464,7 @@ void org_json_JSONArray___INIT____org_json_JSONTokener(JAVA_OBJECT me, JAVA_OBJE
     XMLVM_CHECK_NPE(6)
     org_json_JSONTokener_back__(_r6.o);
     XMLVM_SOURCE_POSITION("JSONArray.java", 127)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((org_json_JSONArray*) _r5.o)->fields.org_json_JSONArray.myArrayList_;
     XMLVM_CHECK_NPE(6)
     _r3.o = org_json_JSONTokener_nextValue__(_r6.o);
@@ -526,6 +529,7 @@ void org_json_JSONArray___INIT____java_util_Collection(JAVA_OBJECT me, JAVA_OBJE
     XMLVM_CHECK_NPE(0)
     java_util_ArrayList___INIT___(_r0.o);
     label10:;
+    XMLVM_CHECK_NPE(1)
     ((org_json_JSONArray*) _r1.o)->fields.org_json_JSONArray.myArrayList_ = _r0.o;
     XMLVM_SOURCE_POSITION("JSONArray.java", 171)
     XMLVM_EXIT_METHOD()
@@ -710,6 +714,7 @@ JAVA_OBJECT org_json_JSONArray_join___java_lang_String(JAVA_OBJECT me, JAVA_OBJE
     java_lang_StringBuffer_append___java_lang_String(_r2.o, _r5.o);
     label17:;
     XMLVM_SOURCE_POSITION("JSONArray.java", 389)
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((org_json_JSONArray*) _r4.o)->fields.org_json_JSONArray.myArrayList_;
     //java_util_ArrayList_get___int[21]
     XMLVM_CHECK_NPE(3)
@@ -737,6 +742,7 @@ JAVA_INT org_json_JSONArray_length__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("JSONArray.java", 401)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_json_JSONArray*) _r1.o)->fields.org_json_JSONArray.myArrayList_;
     //java_util_ArrayList_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -766,6 +772,7 @@ JAVA_OBJECT org_json_JSONArray_opt___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label10:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_json_JSONArray*) _r1.o)->fields.org_json_JSONArray.myArrayList_;
     //java_util_ArrayList_get___int[21]
     XMLVM_CHECK_NPE(0)
@@ -784,6 +791,7 @@ JAVA_OBJECT org_json_JSONArray_put___java_lang_Object(JAVA_OBJECT me, JAVA_OBJEC
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("JSONArray.java", 675)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_json_JSONArray*) _r1.o)->fields.org_json_JSONArray.myArrayList_;
     //java_util_ArrayList_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)

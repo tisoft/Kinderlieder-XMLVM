@@ -242,6 +242,7 @@ void java_util_Collections_1___INIT____java_util_Collection(JAVA_OBJECT me, JAVA
     XMLVM_SOURCE_POSITION("Collections.java", 1626)
     XMLVM_CHECK_NPE(2)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_iterator__])(_r2.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_Collections_1*) _r1.o)->fields.java_util_Collections_1.it_ = _r0.o;
     XMLVM_SOURCE_POSITION("Collections.java", 1)
     XMLVM_EXIT_METHOD()
@@ -257,6 +258,7 @@ JAVA_BOOLEAN java_util_Collections_1_hasMoreElements__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1629)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_1*) _r1.o)->fields.java_util_Collections_1.it_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_hasNext__])(_r0.o);
@@ -273,6 +275,7 @@ JAVA_OBJECT java_util_Collections_1_nextElement__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1633)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_1*) _r1.o)->fields.java_util_Collections_1.it_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_next__])(_r0.o);

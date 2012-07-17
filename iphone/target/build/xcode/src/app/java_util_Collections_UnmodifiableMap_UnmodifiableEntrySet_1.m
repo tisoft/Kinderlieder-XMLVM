@@ -264,14 +264,17 @@ void java_util_Collections_UnmodifiableMap_UnmodifiableEntrySet_1___INIT____java
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 1)
+    XMLVM_CHECK_NPE(1)
     ((java_util_Collections_UnmodifiableMap_UnmodifiableEntrySet_1*) _r1.o)->fields.java_util_Collections_UnmodifiableMap_UnmodifiableEntrySet_1.this_2_ = _r2.o;
     XMLVM_SOURCE_POSITION("Collections.java", 1259)
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("Collections.java", 1260)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_UnmodifiableCollection*) _r2.o)->fields.java_util_Collections_UnmodifiableCollection.c_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_iterator__])(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_Collections_UnmodifiableMap_UnmodifiableEntrySet_1*) _r1.o)->fields.java_util_Collections_UnmodifiableMap_UnmodifiableEntrySet_1.iterator_ = _r0.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -286,6 +289,7 @@ JAVA_BOOLEAN java_util_Collections_UnmodifiableMap_UnmodifiableEntrySet_1_hasNex
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1263)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableMap_UnmodifiableEntrySet_1*) _r1.o)->fields.java_util_Collections_UnmodifiableMap_UnmodifiableEntrySet_1.iterator_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_hasNext__])(_r0.o);
@@ -304,6 +308,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableMap_UnmodifiableEntrySet_1_next__(
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1267)
     _r0.o = __NEW_java_util_Collections_UnmodifiableMap_UnmodifiableEntrySet_UnmodifiableMapEntry();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_UnmodifiableMap_UnmodifiableEntrySet_1*) _r2.o)->fields.java_util_Collections_UnmodifiableMap_UnmodifiableEntrySet_1.iterator_;
     XMLVM_CHECK_NPE(1)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_next__])(_r1.o);

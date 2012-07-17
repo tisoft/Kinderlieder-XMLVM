@@ -217,6 +217,7 @@ void java_util_IdentityHashMap_2_1___INIT____java_util_IdentityHashMap_2(JAVA_OB
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_IdentityHashMap_2_1*) _r0.o)->fields.java_util_IdentityHashMap_2_1.this_1_ = _r1.o;
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 682)
     XMLVM_CHECK_NPE(0)
@@ -236,6 +237,7 @@ JAVA_OBJECT java_util_IdentityHashMap_2_1_get___java_util_MapEntry(JAVA_OBJECT m
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 684)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_MapEntry*) _r2.o)->fields.java_util_MapEntry.value_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

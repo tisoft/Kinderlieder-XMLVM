@@ -278,6 +278,7 @@ JAVA_BOOLEAN java_util_regex_UCISupplRangeSet_contains___int(JAVA_OBJECT me, JAV
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("UCISupplRangeSet.java", 102)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_SupplRangeSet*) _r2.o)->fields.java_util_regex_SupplRangeSet.chars_;
     _r1.i = java_lang_Character_toUpperCase___int(_r3.i);
     _r1.i = java_lang_Character_toLowerCase___int(_r1.i);
@@ -303,6 +304,7 @@ JAVA_OBJECT java_util_regex_UCISupplRangeSet_getName__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(1403);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_regex_SupplRangeSet*) _r2.o)->fields.java_util_regex_SupplRangeSet.alt_;
     if (_r1.i == 0) goto label32;
     // "^ "
@@ -310,6 +312,7 @@ JAVA_OBJECT java_util_regex_UCISupplRangeSet_getName__(JAVA_OBJECT me)
     label13:;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_regex_SupplRangeSet*) _r2.o)->fields.java_util_regex_SupplRangeSet.chars_;
     //java_lang_Object_toString__[5]
     XMLVM_CHECK_NPE(1)

@@ -245,13 +245,16 @@ void org_apache_harmony_nio_internal_LockManager___INIT___(JAVA_OBJECT me)
     _r0.o = __NEW_org_apache_harmony_nio_internal_LockManager_1();
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_nio_internal_LockManager_1___INIT____org_apache_harmony_nio_internal_LockManager(_r0.o, _r2.o);
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_nio_internal_LockManager*) _r2.o)->fields.org_apache_harmony_nio_internal_LockManager.lockComparator_ = _r0.o;
     XMLVM_SOURCE_POSITION("LockManager.java", 41)
     _r0.o = __NEW_java_util_TreeSet();
     XMLVM_SOURCE_POSITION("LockManager.java", 42)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((org_apache_harmony_nio_internal_LockManager*) _r2.o)->fields.org_apache_harmony_nio_internal_LockManager.lockComparator_;
     XMLVM_CHECK_NPE(0)
     java_util_TreeSet___INIT____java_util_Comparator(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_nio_internal_LockManager*) _r2.o)->fields.org_apache_harmony_nio_internal_LockManager.locks_ = _r0.o;
     XMLVM_SOURCE_POSITION("LockManager.java", 49)
     XMLVM_EXIT_METHOD()
@@ -285,6 +288,7 @@ void org_apache_harmony_nio_internal_LockManager_addLock___java_nio_channels_Fil
     _r2.l = java_nio_channels_FileLock_size__(_r9.o);
     _r1.l = _r0.l + _r2.l;
     XMLVM_SOURCE_POSITION("LockManager.java", 59)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((org_apache_harmony_nio_internal_LockManager*) _r8.o)->fields.org_apache_harmony_nio_internal_LockManager.locks_;
     XMLVM_CHECK_NPE(0)
     _r3.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedSet_iterator__])(_r0.o);
@@ -310,6 +314,7 @@ void org_apache_harmony_nio_internal_LockManager_addLock___java_nio_channels_Fil
     XMLVM_TRY_BEGIN(w25850aaab3b1b9)
     // Begin try
     XMLVM_SOURCE_POSITION("LockManager.java", 70)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((org_apache_harmony_nio_internal_LockManager*) _r8.o)->fields.org_apache_harmony_nio_internal_LockManager.locks_;
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedSet_add___java_lang_Object])(_r0.o, _r9.o);
@@ -380,6 +385,7 @@ void org_apache_harmony_nio_internal_LockManager_removeLock___java_nio_channels_
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_TRY_BEGIN(w25850aaab4b1b5)
     // Begin try
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_nio_internal_LockManager*) _r1.o)->fields.org_apache_harmony_nio_internal_LockManager.locks_;
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedSet_remove___java_lang_Object])(_r0.o, _r2.o);

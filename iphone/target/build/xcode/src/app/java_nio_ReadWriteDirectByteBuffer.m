@@ -575,21 +575,26 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_copy___java_nio_DirectByteBuffer_
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 38)
     _r0.o = __NEW_java_nio_ReadWriteDirectByteBuffer();
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 39)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_nio_MappedByteBuffer*) _r4.o)->fields.java_nio_MappedByteBuffer.address_;
     XMLVM_CHECK_NPE(4)
     _r2.i = java_nio_Buffer_capacity__(_r4.o);
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_nio_DirectByteBuffer*) _r4.o)->fields.java_nio_DirectByteBuffer.offset_;
     XMLVM_CHECK_NPE(0)
     java_nio_ReadWriteDirectByteBuffer___INIT____org_apache_harmony_luni_platform_PlatformAddress_int_int(_r0.o, _r1.o, _r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 40)
     XMLVM_CHECK_NPE(4)
     _r1.i = java_nio_Buffer_limit__(_r4.o);
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.limit_ = _r1.i;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 41)
     XMLVM_CHECK_NPE(4)
     _r1.i = java_nio_Buffer_position__(_r4.o);
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.position_ = _r1.i;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 42)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.mark_ = _r5.i;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 43)
     XMLVM_CHECK_NPE(4)
@@ -658,6 +663,7 @@ void java_nio_ReadWriteDirectByteBuffer___INIT____org_apache_harmony_luni_platfo
     XMLVM_CHECK_NPE(0)
     java_nio_DirectByteBuffer___INIT____org_apache_harmony_luni_platform_PlatformAddress_int_int(_r0.o, _r1.o, _r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 61)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_MappedByteBuffer*) _r0.o)->fields.java_nio_MappedByteBuffer.mapMode_ = _r4.i;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 62)
     XMLVM_EXIT_METHOD()
@@ -673,6 +679,7 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_asReadOnlyBuffer__(JAVA_OBJECT me
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 66)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.mark_;
     _r0.o = java_nio_ReadOnlyDirectByteBuffer_copy___java_nio_DirectByteBuffer_int(_r1.o, _r0.i);
     XMLVM_EXIT_METHOD()
@@ -695,6 +702,7 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_compact__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(4)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_ReadWriteDirectByteBuffer*) _r4.o)->tib->vtable[60])(_r4.o);
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 72)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
 
     
@@ -709,15 +717,21 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_compact__(JAVA_OBJECT me)
     // Red class access removed: org.apache.harmony.luni.platform.PlatformAddress::moveTo
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 74)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.limit_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(4)
     ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 75)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.capacity_;
+    XMLVM_CHECK_NPE(4)
     ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.limit_ = _r0.i;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 76)
     _r0.i = -1;
+    XMLVM_CHECK_NPE(4)
     ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.mark_ = _r0.i;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 77)
     XMLVM_EXIT_METHOD()
@@ -733,6 +747,7 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_duplicate__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 82)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.mark_;
     _r0.o = java_nio_ReadWriteDirectByteBuffer_copy___java_nio_DirectByteBuffer_int(_r1.o, _r0.i);
     XMLVM_EXIT_METHOD()
@@ -767,7 +782,9 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_put___byte(JAVA_OBJECT me, JAVA_B
     _r4.o = me;
     _r5.i = n1;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 92)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.limit_;
     if (_r0.i != _r1.i) goto label12;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 93)
@@ -780,9 +797,12 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_put___byte(JAVA_OBJECT me, JAVA_B
     //java_nio_ReadWriteDirectByteBuffer_getBaseAddress__[58]
     XMLVM_CHECK_NPE(4)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_ReadWriteDirectByteBuffer*) _r4.o)->tib->vtable[58])(_r4.o);
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_nio_DirectByteBuffer*) _r4.o)->fields.java_nio_DirectByteBuffer.offset_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
     _r3.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_ = _r3.i;
     _r1.i = _r1.i + _r2.i;
 
@@ -809,6 +829,7 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_put___int_byte(JAVA_OBJECT me, JA
     _r4.i = n2;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 101)
     if (_r3.i < 0) goto label6;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
     if (_r3.i < _r0.i) goto label12;
     label6:;
@@ -822,6 +843,7 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_put___int_byte(JAVA_OBJECT me, JA
     //java_nio_ReadWriteDirectByteBuffer_getBaseAddress__[58]
     XMLVM_CHECK_NPE(2)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_ReadWriteDirectByteBuffer*) _r2.o)->tib->vtable[58])(_r2.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_DirectByteBuffer*) _r2.o)->fields.java_nio_DirectByteBuffer.offset_;
     _r1.i = _r1.i + _r3.i;
 
@@ -883,7 +905,9 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_put___byte_1ARRAY_int_int(JAVA_OB
     //java_nio_ReadWriteDirectByteBuffer_getBaseAddress__[58]
     XMLVM_CHECK_NPE(5)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_ReadWriteDirectByteBuffer*) _r5.o)->tib->vtable[58])(_r5.o);
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_nio_DirectByteBuffer*) _r5.o)->fields.java_nio_DirectByteBuffer.offset_;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.position_;
     _r1.i = _r1.i + _r2.i;
 
@@ -891,8 +915,10 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_put___byte_1ARRAY_int_int(JAVA_OB
     // Red class access removed: org.apache.harmony.luni.platform.PlatformAddress::setByteArray
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 125)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.position_;
     _r0.i = _r0.i + _r8.i;
+    XMLVM_CHECK_NPE(5)
     ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 126)
     XMLVM_EXIT_METHOD()
@@ -914,9 +940,11 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_putDouble___double(JAVA_OBJECT me
     _r4.o = me;
     _r5.d = n1;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 131)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
     _r0.i = _r0.i + 8;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 132)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.limit_;
     if (_r0.i <= _r1.i) goto label14;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 133)
@@ -929,15 +957,19 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_putDouble___double(JAVA_OBJECT me
     //java_nio_ReadWriteDirectByteBuffer_getBaseAddress__[58]
     XMLVM_CHECK_NPE(4)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_ReadWriteDirectByteBuffer*) _r4.o)->tib->vtable[58])(_r4.o);
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_nio_DirectByteBuffer*) _r4.o)->fields.java_nio_DirectByteBuffer.offset_;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
     _r2.i = _r2.i + _r3.i;
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_nio_ByteBuffer*) _r4.o)->fields.java_nio_ByteBuffer.order_;
 
     
     // Red class access removed: org.apache.harmony.luni.platform.PlatformAddress::setDouble
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 136)
+    XMLVM_CHECK_NPE(4)
     ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 137)
     XMLVM_EXIT_METHOD()
@@ -965,6 +997,7 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_putDouble___int_double(JAVA_OBJEC
     _r0.l = (JAVA_LONG) _r5.i;
     _r2.l = 8;
     _r0.l = _r0.l + _r2.l;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.limit_;
     _r2.l = (JAVA_LONG) _r2.i;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
@@ -980,8 +1013,10 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_putDouble___int_double(JAVA_OBJEC
     //java_nio_ReadWriteDirectByteBuffer_getBaseAddress__[58]
     XMLVM_CHECK_NPE(4)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_ReadWriteDirectByteBuffer*) _r4.o)->tib->vtable[58])(_r4.o);
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_nio_DirectByteBuffer*) _r4.o)->fields.java_nio_DirectByteBuffer.offset_;
     _r1.i = _r1.i + _r5.i;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_nio_ByteBuffer*) _r4.o)->fields.java_nio_ByteBuffer.order_;
 
     
@@ -1006,9 +1041,11 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_putFloat___float(JAVA_OBJECT me, 
     _r4.o = me;
     _r5.f = n1;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 151)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
     _r0.i = _r0.i + 4;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 152)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.limit_;
     if (_r0.i <= _r1.i) goto label14;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 153)
@@ -1021,15 +1058,19 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_putFloat___float(JAVA_OBJECT me, 
     //java_nio_ReadWriteDirectByteBuffer_getBaseAddress__[58]
     XMLVM_CHECK_NPE(4)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_ReadWriteDirectByteBuffer*) _r4.o)->tib->vtable[58])(_r4.o);
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_nio_DirectByteBuffer*) _r4.o)->fields.java_nio_DirectByteBuffer.offset_;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
     _r2.i = _r2.i + _r3.i;
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_nio_ByteBuffer*) _r4.o)->fields.java_nio_ByteBuffer.order_;
 
     
     // Red class access removed: org.apache.harmony.luni.platform.PlatformAddress::setFloat
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 156)
+    XMLVM_CHECK_NPE(4)
     ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 157)
     XMLVM_EXIT_METHOD()
@@ -1056,6 +1097,7 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_putFloat___int_float(JAVA_OBJECT 
     _r0.l = (JAVA_LONG) _r5.i;
     _r2.l = 4;
     _r0.l = _r0.l + _r2.l;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.limit_;
     _r2.l = (JAVA_LONG) _r2.i;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
@@ -1071,8 +1113,10 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_putFloat___int_float(JAVA_OBJECT 
     //java_nio_ReadWriteDirectByteBuffer_getBaseAddress__[58]
     XMLVM_CHECK_NPE(4)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_ReadWriteDirectByteBuffer*) _r4.o)->tib->vtable[58])(_r4.o);
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_nio_DirectByteBuffer*) _r4.o)->fields.java_nio_DirectByteBuffer.offset_;
     _r1.i = _r1.i + _r5.i;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_nio_ByteBuffer*) _r4.o)->fields.java_nio_ByteBuffer.order_;
 
     
@@ -1097,9 +1141,11 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_putInt___int(JAVA_OBJECT me, JAVA
     _r4.o = me;
     _r5.i = n1;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 171)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
     _r0.i = _r0.i + 4;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 172)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.limit_;
     if (_r0.i <= _r1.i) goto label14;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 173)
@@ -1112,15 +1158,19 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_putInt___int(JAVA_OBJECT me, JAVA
     //java_nio_ReadWriteDirectByteBuffer_getBaseAddress__[58]
     XMLVM_CHECK_NPE(4)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_ReadWriteDirectByteBuffer*) _r4.o)->tib->vtable[58])(_r4.o);
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_nio_DirectByteBuffer*) _r4.o)->fields.java_nio_DirectByteBuffer.offset_;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
     _r2.i = _r2.i + _r3.i;
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_nio_ByteBuffer*) _r4.o)->fields.java_nio_ByteBuffer.order_;
 
     
     // Red class access removed: org.apache.harmony.luni.platform.PlatformAddress::setInt
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 176)
+    XMLVM_CHECK_NPE(4)
     ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 177)
     XMLVM_EXIT_METHOD()
@@ -1147,6 +1197,7 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_putInt___int_int(JAVA_OBJECT me, 
     _r0.l = (JAVA_LONG) _r5.i;
     _r2.l = 4;
     _r0.l = _r0.l + _r2.l;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.limit_;
     _r2.l = (JAVA_LONG) _r2.i;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
@@ -1162,8 +1213,10 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_putInt___int_int(JAVA_OBJECT me, 
     //java_nio_ReadWriteDirectByteBuffer_getBaseAddress__[58]
     XMLVM_CHECK_NPE(4)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_ReadWriteDirectByteBuffer*) _r4.o)->tib->vtable[58])(_r4.o);
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_nio_DirectByteBuffer*) _r4.o)->fields.java_nio_DirectByteBuffer.offset_;
     _r1.i = _r1.i + _r5.i;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_nio_ByteBuffer*) _r4.o)->fields.java_nio_ByteBuffer.order_;
 
     
@@ -1189,9 +1242,11 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_putLong___long(JAVA_OBJECT me, JA
     _r4.o = me;
     _r5.l = n1;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 191)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
     _r0.i = _r0.i + 8;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 192)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.limit_;
     if (_r0.i <= _r1.i) goto label14;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 193)
@@ -1204,15 +1259,19 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_putLong___long(JAVA_OBJECT me, JA
     //java_nio_ReadWriteDirectByteBuffer_getBaseAddress__[58]
     XMLVM_CHECK_NPE(4)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_ReadWriteDirectByteBuffer*) _r4.o)->tib->vtable[58])(_r4.o);
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_nio_DirectByteBuffer*) _r4.o)->fields.java_nio_DirectByteBuffer.offset_;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
     _r2.i = _r2.i + _r3.i;
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_nio_ByteBuffer*) _r4.o)->fields.java_nio_ByteBuffer.order_;
 
     
     // Red class access removed: org.apache.harmony.luni.platform.PlatformAddress::setLong
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 196)
+    XMLVM_CHECK_NPE(4)
     ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 197)
     XMLVM_EXIT_METHOD()
@@ -1240,6 +1299,7 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_putLong___int_long(JAVA_OBJECT me
     _r0.l = (JAVA_LONG) _r5.i;
     _r2.l = 8;
     _r0.l = _r0.l + _r2.l;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.limit_;
     _r2.l = (JAVA_LONG) _r2.i;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
@@ -1255,8 +1315,10 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_putLong___int_long(JAVA_OBJECT me
     //java_nio_ReadWriteDirectByteBuffer_getBaseAddress__[58]
     XMLVM_CHECK_NPE(4)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_ReadWriteDirectByteBuffer*) _r4.o)->tib->vtable[58])(_r4.o);
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_nio_DirectByteBuffer*) _r4.o)->fields.java_nio_DirectByteBuffer.offset_;
     _r1.i = _r1.i + _r5.i;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_nio_ByteBuffer*) _r4.o)->fields.java_nio_ByteBuffer.order_;
 
     
@@ -1281,9 +1343,11 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_putShort___short(JAVA_OBJECT me, 
     _r4.o = me;
     _r5.i = n1;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 211)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
     _r0.i = _r0.i + 2;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 212)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.limit_;
     if (_r0.i <= _r1.i) goto label14;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 213)
@@ -1296,15 +1360,19 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_putShort___short(JAVA_OBJECT me, 
     //java_nio_ReadWriteDirectByteBuffer_getBaseAddress__[58]
     XMLVM_CHECK_NPE(4)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_ReadWriteDirectByteBuffer*) _r4.o)->tib->vtable[58])(_r4.o);
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_nio_DirectByteBuffer*) _r4.o)->fields.java_nio_DirectByteBuffer.offset_;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
     _r2.i = _r2.i + _r3.i;
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_nio_ByteBuffer*) _r4.o)->fields.java_nio_ByteBuffer.order_;
 
     
     // Red class access removed: org.apache.harmony.luni.platform.PlatformAddress::setShort
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 216)
+    XMLVM_CHECK_NPE(4)
     ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 217)
     XMLVM_EXIT_METHOD()
@@ -1331,6 +1399,7 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_putShort___int_short(JAVA_OBJECT 
     _r0.l = (JAVA_LONG) _r5.i;
     _r2.l = 2;
     _r0.l = _r0.l + _r2.l;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.limit_;
     _r2.l = (JAVA_LONG) _r2.i;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
@@ -1346,8 +1415,10 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_putShort___int_short(JAVA_OBJECT 
     //java_nio_ReadWriteDirectByteBuffer_getBaseAddress__[58]
     XMLVM_CHECK_NPE(4)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_ReadWriteDirectByteBuffer*) _r4.o)->tib->vtable[58])(_r4.o);
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_nio_DirectByteBuffer*) _r4.o)->fields.java_nio_DirectByteBuffer.offset_;
     _r1.i = _r1.i + _r5.i;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_nio_ByteBuffer*) _r4.o)->fields.java_nio_ByteBuffer.order_;
 
     
@@ -1373,16 +1444,21 @@ JAVA_OBJECT java_nio_ReadWriteDirectByteBuffer_slice__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 231)
     _r0.o = __NEW_java_nio_ReadWriteDirectByteBuffer();
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 232)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_nio_MappedByteBuffer*) _r5.o)->fields.java_nio_MappedByteBuffer.address_;
     XMLVM_CHECK_NPE(5)
     _r2.i = java_nio_Buffer_remaining__(_r5.o);
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_nio_DirectByteBuffer*) _r5.o)->fields.java_nio_DirectByteBuffer.offset_;
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.position_;
     _r3.i = _r3.i + _r4.i;
     XMLVM_CHECK_NPE(0)
     java_nio_ReadWriteDirectByteBuffer___INIT____org_apache_harmony_luni_platform_PlatformAddress_int_int(_r0.o, _r1.o, _r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 233)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_nio_ByteBuffer*) _r5.o)->fields.java_nio_ByteBuffer.order_;
+    XMLVM_CHECK_NPE(0)
     ((java_nio_ByteBuffer*) _r0.o)->fields.java_nio_ByteBuffer.order_ = _r1.o;
     XMLVM_SOURCE_POSITION("ReadWriteDirectByteBuffer.java", 234)
     XMLVM_EXIT_METHOD()

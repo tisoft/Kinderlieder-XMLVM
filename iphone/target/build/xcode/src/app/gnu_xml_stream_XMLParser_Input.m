@@ -824,6 +824,7 @@ void gnu_xml_stream_XMLParser_Input___INIT____java_io_InputStream_java_io_Reader
     java_lang_Object___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 4982)
     _r1.i = 1;
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.line_ = _r1.i;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5001)
     if (_r9.o != JAVA_NULL) goto label10;
@@ -832,16 +833,22 @@ void gnu_xml_stream_XMLParser_Input___INIT____java_io_InputStream_java_io_Reader
     _r9.o = xmlvm_create_java_string_from_pool(128);
     label10:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5003)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.inputEncoding_ = _r9.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5004)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.publicId_ = _r6.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5005)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.systemId_ = _r7.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5006)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.name_ = _r8.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5007)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.report_ = _r10.i;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5008)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.normalize_ = _r11.i;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5009)
     if (_r4.o == JAVA_NULL) goto label54;
@@ -868,11 +875,13 @@ void gnu_xml_stream_XMLParser_Input___INIT____java_io_InputStream_java_io_Reader
     XMLVM_CHECK_NPE(0)
     java_io_BufferedInputStream___INIT____java_io_InputStream(_r0.o, _r4.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5017)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.in_ = _r0.o;
     _r4 = _r0;
     label50:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5024)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.initialized_ = _r1.i;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5025)
     XMLVM_EXIT_METHOD()
@@ -884,12 +893,15 @@ void gnu_xml_stream_XMLParser_Input___INIT____java_io_InputStream_java_io_Reader
     XMLVM_CHECK_NPE(1)
     gnu_xml_stream_CRLFReader___INIT____java_io_Reader(_r1.o, _r5.o);
     label61:;
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.reader_ = _r1.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5022)
     _r1.o = __NEW_gnu_xml_stream_UnicodeReader();
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.reader_;
     XMLVM_CHECK_NPE(1)
     gnu_xml_stream_UnicodeReader___INIT____java_io_Reader(_r1.o, _r2.o);
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.unicodeReader_ = _r1.o;
     goto label50;
     label73:;
@@ -906,6 +918,7 @@ JAVA_INT gnu_xml_stream_XMLParser_Input_getCharacterOffset__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5031)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.offset_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -920,6 +933,7 @@ JAVA_INT gnu_xml_stream_XMLParser_Input_getColumnNumber__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5036)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.column_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -934,6 +948,7 @@ JAVA_INT gnu_xml_stream_XMLParser_Input_getLineNumber__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5041)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.line_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -948,6 +963,7 @@ JAVA_OBJECT gnu_xml_stream_XMLParser_Input_getPublicId__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5046)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.publicId_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -962,6 +978,7 @@ JAVA_OBJECT gnu_xml_stream_XMLParser_Input_getSystemId__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5051)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.systemId_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -976,6 +993,7 @@ void gnu_xml_stream_XMLParser_Input_init__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5057)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.initialized_;
     if (_r0.i == 0) goto label5;
     label4:;
@@ -984,6 +1002,7 @@ void gnu_xml_stream_XMLParser_Input_init__(JAVA_OBJECT me)
     return;
     label5:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5059)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     if (_r0.o == JAVA_NULL) goto label12;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5060)
@@ -992,6 +1011,7 @@ void gnu_xml_stream_XMLParser_Input_init__(JAVA_OBJECT me)
     label12:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5061)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.initialized_ = _r0.i;
     goto label4;
     //XMLVM_END_WRAPPER
@@ -1007,18 +1027,26 @@ void gnu_xml_stream_XMLParser_Input_mark___int(JAVA_OBJECT me, JAVA_INT n1)
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5067)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.offset_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.markOffset_ = _r0.i;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5068)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.line_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.markLine_ = _r0.i;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5069)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.column_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.markColumn_ = _r0.i;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5070)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.unicodeReader_;
     if (_r0.o == JAVA_NULL) goto label22;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5071)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.unicodeReader_;
     XMLVM_CHECK_NPE(0)
     gnu_xml_stream_UnicodeReader_mark___int(_r0.o, _r2.i);
@@ -1028,6 +1056,7 @@ void gnu_xml_stream_XMLParser_Input_mark___int(JAVA_OBJECT me, JAVA_INT n1)
     return;
     label22:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5073)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_mark___int[9]
     XMLVM_CHECK_NPE(0)
@@ -1045,22 +1074,28 @@ JAVA_INT gnu_xml_stream_XMLParser_Input_read__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5082)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((gnu_xml_stream_XMLParser_Input*) _r2.o)->fields.gnu_xml_stream_XMLParser_Input.offset_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_XMLParser_Input*) _r2.o)->fields.gnu_xml_stream_XMLParser_Input.offset_ = _r1.i;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5083)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_stream_XMLParser_Input*) _r2.o)->fields.gnu_xml_stream_XMLParser_Input.unicodeReader_;
     if (_r1.o == JAVA_NULL) goto label53;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_stream_XMLParser_Input*) _r2.o)->fields.gnu_xml_stream_XMLParser_Input.unicodeReader_;
     XMLVM_CHECK_NPE(1)
     _r1.i = gnu_xml_stream_UnicodeReader_read__(_r1.o);
     _r0 = _r1;
     label17:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5084)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((gnu_xml_stream_XMLParser_Input*) _r2.o)->fields.gnu_xml_stream_XMLParser_Input.normalize_;
     if (_r1.i == 0) goto label39;
     _r1.i = 13;
     if (_r0.i == _r1.i) goto label37;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((gnu_xml_stream_XMLParser_Input*) _r2.o)->fields.gnu_xml_stream_XMLParser_Input.xml11_;
     if (_r1.i == 0) goto label39;
     _r1.i = 133;
@@ -1075,17 +1110,21 @@ JAVA_INT gnu_xml_stream_XMLParser_Input_read__(JAVA_OBJECT me)
     _r1.i = 10;
     if (_r0.i != _r1.i) goto label61;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5093)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((gnu_xml_stream_XMLParser_Input*) _r2.o)->fields.gnu_xml_stream_XMLParser_Input.line_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_XMLParser_Input*) _r2.o)->fields.gnu_xml_stream_XMLParser_Input.line_ = _r1.i;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5094)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_XMLParser_Input*) _r2.o)->fields.gnu_xml_stream_XMLParser_Input.column_ = _r1.i;
     label52:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5098)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label53:;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_stream_XMLParser_Input*) _r2.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(1)
@@ -1094,8 +1133,10 @@ JAVA_INT gnu_xml_stream_XMLParser_Input_read__(JAVA_OBJECT me)
     goto label17;
     label61:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5097)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((gnu_xml_stream_XMLParser_Input*) _r2.o)->fields.gnu_xml_stream_XMLParser_Input.column_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_XMLParser_Input*) _r2.o)->fields.gnu_xml_stream_XMLParser_Input.column_ = _r1.i;
     goto label52;
     //XMLVM_END_WRAPPER
@@ -1124,9 +1165,11 @@ JAVA_INT gnu_xml_stream_XMLParser_Input_read___int_1ARRAY_int_int(JAVA_OBJECT me
     _r7.i = -1;
     _r6.i = 0;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5108)
+    XMLVM_CHECK_NPE(8)
     _r5.o = ((gnu_xml_stream_XMLParser_Input*) _r8.o)->fields.gnu_xml_stream_XMLParser_Input.unicodeReader_;
     if (_r5.o == JAVA_NULL) goto label62;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5110)
+    XMLVM_CHECK_NPE(8)
     _r5.o = ((gnu_xml_stream_XMLParser_Input*) _r8.o)->fields.gnu_xml_stream_XMLParser_Input.unicodeReader_;
     XMLVM_CHECK_NPE(5)
     _r3.i = gnu_xml_stream_UnicodeReader_read___int_1ARRAY_int_int(_r5.o, _r9.o, _r10.i, _r11.i);
@@ -1143,10 +1186,12 @@ JAVA_INT gnu_xml_stream_XMLParser_Input_read___int_1ARRAY_int_int(JAVA_OBJECT me
     XMLVM_CHECK_ARRAY_BOUNDS(_r9.o, _r5.i);
     _r1.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r9.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r5.i];
     XMLVM_SOURCE_POSITION("XMLParser.java", 5130)
+    XMLVM_CHECK_NPE(8)
     _r5.i = ((gnu_xml_stream_XMLParser_Input*) _r8.o)->fields.gnu_xml_stream_XMLParser_Input.normalize_;
     if (_r5.i == 0) goto label47;
     _r5.i = 13;
     if (_r1.i == _r5.i) goto label41;
+    XMLVM_CHECK_NPE(8)
     _r5.i = ((gnu_xml_stream_XMLParser_Input*) _r8.o)->fields.gnu_xml_stream_XMLParser_Input.xml11_;
     if (_r5.i == 0) goto label47;
     _r5.i = 133;
@@ -1166,10 +1211,13 @@ JAVA_INT gnu_xml_stream_XMLParser_Input_read___int_1ARRAY_int_int(JAVA_OBJECT me
     _r5.i = 10;
     if (_r1.i != _r5.i) goto label88;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5139)
+    XMLVM_CHECK_NPE(8)
     _r5.i = ((gnu_xml_stream_XMLParser_Input*) _r8.o)->fields.gnu_xml_stream_XMLParser_Input.line_;
     _r5.i = _r5.i + 1;
+    XMLVM_CHECK_NPE(8)
     ((gnu_xml_stream_XMLParser_Input*) _r8.o)->fields.gnu_xml_stream_XMLParser_Input.line_ = _r5.i;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5140)
+    XMLVM_CHECK_NPE(8)
     ((gnu_xml_stream_XMLParser_Input*) _r8.o)->fields.gnu_xml_stream_XMLParser_Input.column_ = _r6.i;
     label59:;
     _r2.i = _r2.i + 1;
@@ -1179,6 +1227,7 @@ JAVA_INT gnu_xml_stream_XMLParser_Input_read___int_1ARRAY_int_int(JAVA_OBJECT me
     if (!__TIB_byte.classInitialized) __INIT_byte();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_byte, _r11.i);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5115)
+    XMLVM_CHECK_NPE(8)
     _r5.o = ((gnu_xml_stream_XMLParser_Input*) _r8.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_read___byte_1ARRAY_int_int[12]
     XMLVM_CHECK_NPE(5)
@@ -1187,6 +1236,7 @@ JAVA_INT gnu_xml_stream_XMLParser_Input_read___int_1ARRAY_int_int(JAVA_OBJECT me
     XMLVM_SOURCE_POSITION("XMLParser.java", 5116)
     XMLVM_SOURCE_POSITION("XMLParser.java", 5118)
     _r4.o = __NEW_java_lang_String();
+    XMLVM_CHECK_NPE(8)
     _r5.o = ((gnu_xml_stream_XMLParser_Input*) _r8.o)->fields.gnu_xml_stream_XMLParser_Input.inputEncoding_;
     XMLVM_CHECK_NPE(4)
     java_lang_String___INIT____byte_1ARRAY_int_int_java_lang_String(_r4.o, _r0.o, _r6.i, _r3.i, _r5.o);
@@ -1199,8 +1249,10 @@ JAVA_INT gnu_xml_stream_XMLParser_Input_read___int_1ARRAY_int_int(JAVA_OBJECT me
     goto label12;
     label88:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5143)
+    XMLVM_CHECK_NPE(8)
     _r5.i = ((gnu_xml_stream_XMLParser_Input*) _r8.o)->fields.gnu_xml_stream_XMLParser_Input.column_;
     _r5.i = _r5.i + 1;
+    XMLVM_CHECK_NPE(8)
     ((gnu_xml_stream_XMLParser_Input*) _r8.o)->fields.gnu_xml_stream_XMLParser_Input.column_ = _r5.i;
     goto label59;
     label95:;
@@ -1218,27 +1270,36 @@ void gnu_xml_stream_XMLParser_Input_reset__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5152)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.unicodeReader_;
     if (_r0.o == JAVA_NULL) goto label22;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5153)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.unicodeReader_;
     XMLVM_CHECK_NPE(0)
     gnu_xml_stream_UnicodeReader_reset__(_r0.o);
     label9:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5156)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.markOffset_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.offset_ = _r0.i;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5157)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.markLine_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.line_ = _r0.i;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5158)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.markColumn_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.column_ = _r0.i;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5159)
     XMLVM_EXIT_METHOD()
     return;
     label22:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5155)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XMLParser_Input*) _r1.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_reset__[13]
     XMLVM_CHECK_NPE(0)
@@ -1267,6 +1328,7 @@ void gnu_xml_stream_XMLParser_Input_detectEncoding__(JAVA_OBJECT me)
     if (!__TIB_int.classInitialized) __INIT_int();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_int, _r4.i);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5191)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_mark___int[9]
     XMLVM_CHECK_NPE(2)
@@ -1276,6 +1338,7 @@ void gnu_xml_stream_XMLParser_Input_detectEncoding__(JAVA_OBJECT me)
     label12:;
     if (_r0.i >= _r4.i) goto label25;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5193)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(2)
@@ -1287,6 +1350,7 @@ void gnu_xml_stream_XMLParser_Input_detectEncoding__(JAVA_OBJECT me)
     goto label12;
     label25:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5194)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_reset__[13]
     XMLVM_CHECK_NPE(2)
@@ -1296,21 +1360,25 @@ void gnu_xml_stream_XMLParser_Input_detectEncoding__(JAVA_OBJECT me)
     _r2.i = gnu_xml_stream_XMLParser_Input_equals___int_1ARRAY_int_1ARRAY(_r2.o, _r1.o);
     if (_r2.i == 0) goto label66;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5199)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(2)
     (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_io_InputStream*) _r2.o)->tib->vtable[10])(_r2.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5200)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(2)
     (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_io_InputStream*) _r2.o)->tib->vtable[10])(_r2.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5201)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(2)
     (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_io_InputStream*) _r2.o)->tib->vtable[10])(_r2.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5202)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(2)
@@ -1321,6 +1389,7 @@ void gnu_xml_stream_XMLParser_Input_detectEncoding__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(6)
     gnu_xml_stream_XMLParser_Input_setInputEncoding___java_lang_String(_r6.o, _r2.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5204)
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.encodingDetected_ = _r3.i;
     label65:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5257)
@@ -1332,21 +1401,25 @@ void gnu_xml_stream_XMLParser_Input_detectEncoding__(JAVA_OBJECT me)
     _r2.i = gnu_xml_stream_XMLParser_Input_equals___int_1ARRAY_int_1ARRAY(_r2.o, _r1.o);
     if (_r2.i == 0) goto label102;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5208)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(2)
     (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_io_InputStream*) _r2.o)->tib->vtable[10])(_r2.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5209)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(2)
     (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_io_InputStream*) _r2.o)->tib->vtable[10])(_r2.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5210)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(2)
     (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_io_InputStream*) _r2.o)->tib->vtable[10])(_r2.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5211)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(2)
@@ -1357,6 +1430,7 @@ void gnu_xml_stream_XMLParser_Input_detectEncoding__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(6)
     gnu_xml_stream_XMLParser_Input_setInputEncoding___java_lang_String(_r6.o, _r2.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5213)
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.encodingDetected_ = _r3.i;
     goto label65;
     label102:;
@@ -1381,11 +1455,13 @@ void gnu_xml_stream_XMLParser_Input_detectEncoding__(JAVA_OBJECT me)
     _r2.i = gnu_xml_stream_XMLParser_Input_equals___int_1ARRAY_int_1ARRAY(_r2.o, _r1.o);
     if (_r2.i == 0) goto label152;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5222)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(2)
     (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_io_InputStream*) _r2.o)->tib->vtable[10])(_r2.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5223)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(2)
@@ -1396,6 +1472,7 @@ void gnu_xml_stream_XMLParser_Input_detectEncoding__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(6)
     gnu_xml_stream_XMLParser_Input_setInputEncoding___java_lang_String(_r6.o, _r2.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5225)
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.encodingDetected_ = _r3.i;
     goto label65;
     label152:;
@@ -1404,11 +1481,13 @@ void gnu_xml_stream_XMLParser_Input_detectEncoding__(JAVA_OBJECT me)
     _r2.i = gnu_xml_stream_XMLParser_Input_equals___int_1ARRAY_int_1ARRAY(_r2.o, _r1.o);
     if (_r2.i == 0) goto label178;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5229)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(2)
     (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_io_InputStream*) _r2.o)->tib->vtable[10])(_r2.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5230)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(2)
@@ -1419,6 +1498,7 @@ void gnu_xml_stream_XMLParser_Input_detectEncoding__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(6)
     gnu_xml_stream_XMLParser_Input_setInputEncoding___java_lang_String(_r6.o, _r2.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5232)
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.encodingDetected_ = _r3.i;
     goto label65;
     label178:;
@@ -1455,16 +1535,19 @@ void gnu_xml_stream_XMLParser_Input_detectEncoding__(JAVA_OBJECT me)
     _r2.i = gnu_xml_stream_XMLParser_Input_equals___int_1ARRAY_int_1ARRAY(_r2.o, _r1.o);
     if (_r2.i == 0) goto label65;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5251)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(2)
     (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_io_InputStream*) _r2.o)->tib->vtable[10])(_r2.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5252)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(2)
     (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_io_InputStream*) _r2.o)->tib->vtable[10])(_r2.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5253)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(2)
@@ -1475,6 +1558,7 @@ void gnu_xml_stream_XMLParser_Input_detectEncoding__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(6)
     gnu_xml_stream_XMLParser_Input_setInputEncoding___java_lang_String(_r6.o, _r2.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5255)
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_stream_XMLParser_Input*) _r6.o)->fields.gnu_xml_stream_XMLParser_Input.encodingDetected_ = _r3.i;
     goto label65;
     //XMLVM_END_WRAPPER
@@ -1534,6 +1618,7 @@ void gnu_xml_stream_XMLParser_Input_setInputEncoding___java_lang_String(JAVA_OBJ
     // "UTF-16"
     _r2.o = xmlvm_create_java_string_from_pool(1022);
     XMLVM_SOURCE_POSITION("XMLParser.java", 5272)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.inputEncoding_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(4)
@@ -1550,6 +1635,7 @@ void gnu_xml_stream_XMLParser_Input_setInputEncoding___java_lang_String(JAVA_OBJ
     XMLVM_CHECK_NPE(2)
     _r0.i = java_lang_String_equalsIgnoreCase___java_lang_String(_r2.o, _r4.o);
     if (_r0.i == 0) goto label29;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.inputEncoding_;
     // "UTF-16"
     _r1.o = xmlvm_create_java_string_from_pool(1022);
@@ -1558,6 +1644,7 @@ void gnu_xml_stream_XMLParser_Input_setInputEncoding___java_lang_String(JAVA_OBJ
     if (_r0.i != 0) goto label10;
     label29:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5277)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.encodingDetected_;
     if (_r0.i == 0) goto label70;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5278)
@@ -1569,6 +1656,7 @@ void gnu_xml_stream_XMLParser_Input_setInputEncoding___java_lang_String(JAVA_OBJ
     _r2.o = xmlvm_create_java_string_from_pool(1023);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.inputEncoding_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
@@ -1586,6 +1674,7 @@ void gnu_xml_stream_XMLParser_Input_setInputEncoding___java_lang_String(JAVA_OBJ
     XMLVM_THROW_CUSTOM(_r0.o)
     label70:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5282)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.inputEncoding_ = _r4.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5283)
     XMLVM_CHECK_NPE(3)
@@ -1605,6 +1694,7 @@ void gnu_xml_stream_XMLParser_Input_finalizeEncoding__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5289)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_stream_XMLParser_Input*) _r4.o)->fields.gnu_xml_stream_XMLParser_Input.reader_;
     if (_r0.o == JAVA_NULL) goto label5;
     label4:;
@@ -1615,18 +1705,23 @@ void gnu_xml_stream_XMLParser_Input_finalizeEncoding__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("XMLParser.java", 5291)
     _r0.o = __NEW_gnu_xml_stream_BufferedReader();
     _r1.o = __NEW_java_io_InputStreamReader();
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_stream_XMLParser_Input*) _r4.o)->fields.gnu_xml_stream_XMLParser_Input.in_;
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((gnu_xml_stream_XMLParser_Input*) _r4.o)->fields.gnu_xml_stream_XMLParser_Input.inputEncoding_;
     XMLVM_CHECK_NPE(1)
     java_io_InputStreamReader___INIT____java_io_InputStream_java_lang_String(_r1.o, _r2.o, _r3.o);
     XMLVM_CHECK_NPE(0)
     gnu_xml_stream_BufferedReader___INIT____java_io_Reader(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_stream_XMLParser_Input*) _r4.o)->fields.gnu_xml_stream_XMLParser_Input.reader_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5292)
     _r0.o = __NEW_gnu_xml_stream_UnicodeReader();
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_stream_XMLParser_Input*) _r4.o)->fields.gnu_xml_stream_XMLParser_Input.reader_;
     XMLVM_CHECK_NPE(0)
     gnu_xml_stream_UnicodeReader___INIT____java_io_Reader(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_stream_XMLParser_Input*) _r4.o)->fields.gnu_xml_stream_XMLParser_Input.unicodeReader_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 5293)
     _r0.i = 1;

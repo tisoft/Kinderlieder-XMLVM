@@ -1371,19 +1371,25 @@ void java_net_HttpURLConnection___INIT____java_net_URL(JAVA_OBJECT me, JAVA_OBJE
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
+    XMLVM_CHECK_NPE(5)
     ((java_net_HttpURLConnection*) _r5.o)->fields.java_net_HttpURLConnection.methodTokens_ = _r0.o;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 42)
     // "GET"
     _r0.o = xmlvm_create_java_string_from_pool(1138);
+    XMLVM_CHECK_NPE(5)
     ((java_net_HttpURLConnection*) _r5.o)->fields.java_net_HttpURLConnection.method_ = _r4.o;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 54)
+    XMLVM_CHECK_NPE(5)
     ((java_net_HttpURLConnection*) _r5.o)->fields.java_net_HttpURLConnection.responseCode_ = _r3.i;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 65)
     _r0.i = java_net_HttpURLConnection_GET_followRedirects();
+    XMLVM_CHECK_NPE(5)
     ((java_net_HttpURLConnection*) _r5.o)->fields.java_net_HttpURLConnection.instanceFollowRedirects_ = _r0.i;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 74)
+    XMLVM_CHECK_NPE(5)
     ((java_net_HttpURLConnection*) _r5.o)->fields.java_net_HttpURLConnection.chunkLength_ = _r3.i;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 81)
+    XMLVM_CHECK_NPE(5)
     ((java_net_HttpURLConnection*) _r5.o)->fields.java_net_HttpURLConnection.fixedContentLength_ = _r3.i;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 283)
     XMLVM_EXIT_METHOD()
@@ -1429,6 +1435,7 @@ JAVA_OBJECT java_net_HttpURLConnection_getPermission__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 329)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URLConnection*) _r4.o)->fields.java_net_URLConnection.url_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_net_URL_getPort__(_r0.o);
@@ -1440,6 +1447,7 @@ JAVA_OBJECT java_net_HttpURLConnection_getPermission__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 333)
     _r1.o = __NEW_java_net_SocketPermission();
     _r2.o = __NEW_java_lang_StringBuilder();
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_net_URLConnection*) _r4.o)->fields.java_net_URLConnection.url_;
     XMLVM_CHECK_NPE(3)
     _r3.o = java_net_URL_getHost__(_r3.o);
@@ -1473,6 +1481,7 @@ JAVA_OBJECT java_net_HttpURLConnection_getRequestMethod__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 347)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_HttpURLConnection*) _r1.o)->fields.java_net_HttpURLConnection.method_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1539,6 +1548,7 @@ JAVA_INT java_net_HttpURLConnection_getResponseCode__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r1.o = java_lang_String_substring___int_int(_r0.o, _r1.i, _r2.i);
     _r1.i = java_lang_Integer_parseInt___java_lang_String(_r1.o);
+    XMLVM_CHECK_NPE(4)
     ((java_net_HttpURLConnection*) _r4.o)->fields.java_net_HttpURLConnection.responseCode_ = _r1.i;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 376)
     _r1.i = _r2.i + 1;
@@ -1550,8 +1560,10 @@ JAVA_INT java_net_HttpURLConnection_getResponseCode__(JAVA_OBJECT me)
     _r1.i = _r2.i + 1;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_substring___int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((java_net_HttpURLConnection*) _r4.o)->fields.java_net_HttpURLConnection.responseMessage_ = _r0.o;
     label67:;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_net_HttpURLConnection*) _r4.o)->fields.java_net_HttpURLConnection.responseCode_;
     goto label12;
     //XMLVM_END_WRAPPER
@@ -1565,9 +1577,11 @@ JAVA_OBJECT java_net_HttpURLConnection_getResponseMessage__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 391)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_HttpURLConnection*) _r1.o)->fields.java_net_HttpURLConnection.responseMessage_;
     if (_r0.o == JAVA_NULL) goto label7;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 392)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_HttpURLConnection*) _r1.o)->fields.java_net_HttpURLConnection.responseMessage_;
     label6:;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 395)
@@ -1578,6 +1592,7 @@ JAVA_OBJECT java_net_HttpURLConnection_getResponseMessage__(JAVA_OBJECT me)
     //java_net_HttpURLConnection_getResponseCode__[22]
     XMLVM_CHECK_NPE(1)
     (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_net_HttpURLConnection*) _r1.o)->tib->vtable[22])(_r1.o);
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_HttpURLConnection*) _r1.o)->fields.java_net_HttpURLConnection.responseMessage_;
     goto label6;
     //XMLVM_END_WRAPPER
@@ -1618,6 +1633,7 @@ void java_net_HttpURLConnection_setRequestMethod___java_lang_String(JAVA_OBJECT 
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 428)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.connected_;
     if (_r0.i == 0) goto label16;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 429)
@@ -1632,6 +1648,7 @@ void java_net_HttpURLConnection_setRequestMethod___java_lang_String(JAVA_OBJECT 
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 431)
     _r0.i = 0;
     label17:;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_HttpURLConnection*) _r2.o)->fields.java_net_HttpURLConnection.methodTokens_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i < _r1.i) goto label28;
@@ -1642,6 +1659,7 @@ void java_net_HttpURLConnection_setRequestMethod___java_lang_String(JAVA_OBJECT 
     XMLVM_THROW_CUSTOM(_r0.o)
     label28:;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 432)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_HttpURLConnection*) _r2.o)->fields.java_net_HttpURLConnection.methodTokens_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -1651,10 +1669,12 @@ void java_net_HttpURLConnection_setRequestMethod___java_lang_String(JAVA_OBJECT 
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r3.o);
     if (_r1.i == 0) goto label45;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 435)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_HttpURLConnection*) _r2.o)->fields.java_net_HttpURLConnection.methodTokens_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     _r0.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
+    XMLVM_CHECK_NPE(2)
     ((java_net_HttpURLConnection*) _r2.o)->fields.java_net_HttpURLConnection.method_ = _r0.o;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 436)
     XMLVM_EXIT_METHOD()
@@ -1673,6 +1693,7 @@ JAVA_BOOLEAN java_net_HttpURLConnection_getInstanceFollowRedirects__(JAVA_OBJECT
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 458)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_HttpURLConnection*) _r1.o)->fields.java_net_HttpURLConnection.instanceFollowRedirects_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -1688,6 +1709,7 @@ void java_net_HttpURLConnection_setInstanceFollowRedirects___boolean(JAVA_OBJECT
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 469)
+    XMLVM_CHECK_NPE(0)
     ((java_net_HttpURLConnection*) _r0.o)->fields.java_net_HttpURLConnection.instanceFollowRedirects_ = _r1.i;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 470)
     XMLVM_EXIT_METHOD()
@@ -1727,6 +1749,7 @@ void java_net_HttpURLConnection_setFixedLengthStreamingMode___int(JAVA_OBJECT me
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 504)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.connected_;
     if (_r0.i == 0) goto label16;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 505)
@@ -1739,6 +1762,7 @@ void java_net_HttpURLConnection_setFixedLengthStreamingMode___int(JAVA_OBJECT me
     XMLVM_THROW_CUSTOM(_r0.o)
     label16:;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 507)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_net_HttpURLConnection*) _r2.o)->fields.java_net_HttpURLConnection.chunkLength_;
     if (_r0.i <= 0) goto label32;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 508)
@@ -1762,6 +1786,7 @@ void java_net_HttpURLConnection_setFixedLengthStreamingMode___int(JAVA_OBJECT me
     XMLVM_THROW_CUSTOM(_r0.o)
     label46:;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 513)
+    XMLVM_CHECK_NPE(2)
     ((java_net_HttpURLConnection*) _r2.o)->fields.java_net_HttpURLConnection.fixedContentLength_ = _r3.i;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 514)
     XMLVM_EXIT_METHOD()
@@ -1780,6 +1805,7 @@ void java_net_HttpURLConnection_setChunkedStreamingMode___int(JAVA_OBJECT me, JA
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 529)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_net_URLConnection*) _r2.o)->fields.java_net_URLConnection.connected_;
     if (_r0.i == 0) goto label16;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 530)
@@ -1792,6 +1818,7 @@ void java_net_HttpURLConnection_setChunkedStreamingMode___int(JAVA_OBJECT me, JA
     XMLVM_THROW_CUSTOM(_r0.o)
     label16:;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 532)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_net_HttpURLConnection*) _r2.o)->fields.java_net_HttpURLConnection.fixedContentLength_;
     if (_r0.i < 0) goto label32;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 533)
@@ -1807,6 +1834,7 @@ void java_net_HttpURLConnection_setChunkedStreamingMode___int(JAVA_OBJECT me, JA
     if (_r3.i > 0) goto label39;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 536)
     _r0.i = 1024;
+    XMLVM_CHECK_NPE(2)
     ((java_net_HttpURLConnection*) _r2.o)->fields.java_net_HttpURLConnection.chunkLength_ = _r0.i;
     label38:;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 540)
@@ -1814,6 +1842,7 @@ void java_net_HttpURLConnection_setChunkedStreamingMode___int(JAVA_OBJECT me, JA
     return;
     label39:;
     XMLVM_SOURCE_POSITION("HttpURLConnection.java", 538)
+    XMLVM_CHECK_NPE(2)
     ((java_net_HttpURLConnection*) _r2.o)->fields.java_net_HttpURLConnection.chunkLength_ = _r3.i;
     goto label38;
     //XMLVM_END_WRAPPER

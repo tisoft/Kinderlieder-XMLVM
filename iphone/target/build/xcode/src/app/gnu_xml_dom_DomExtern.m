@@ -352,10 +352,13 @@ void gnu_xml_dom_DomExtern___INIT____short_gnu_xml_dom_DomDocument_java_lang_Str
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_DomNode___INIT____short_gnu_xml_dom_DomDocument(_r0.o, _r1.i, _r2.o);
     XMLVM_SOURCE_POSITION("DomExtern.java", 79)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_DomExtern*) _r0.o)->fields.gnu_xml_dom_DomExtern.name_ = _r3.o;
     XMLVM_SOURCE_POSITION("DomExtern.java", 80)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_DomExtern*) _r0.o)->fields.gnu_xml_dom_DomExtern.publicId_ = _r4.o;
     XMLVM_SOURCE_POSITION("DomExtern.java", 81)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_DomExtern*) _r0.o)->fields.gnu_xml_dom_DomExtern.systemId_ = _r5.o;
     XMLVM_SOURCE_POSITION("DomExtern.java", 82)
     XMLVM_EXIT_METHOD()
@@ -371,6 +374,7 @@ JAVA_OBJECT gnu_xml_dom_DomExtern_getSystemId__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomExtern.java", 90)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomExtern*) _r1.o)->fields.gnu_xml_dom_DomExtern.systemId_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -385,6 +389,7 @@ JAVA_OBJECT gnu_xml_dom_DomExtern_getPublicId__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomExtern.java", 99)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomExtern*) _r1.o)->fields.gnu_xml_dom_DomExtern.publicId_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -399,6 +404,7 @@ JAVA_OBJECT gnu_xml_dom_DomExtern_getNodeName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomExtern.java", 108)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomExtern*) _r1.o)->fields.gnu_xml_dom_DomExtern.name_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -413,6 +419,7 @@ JAVA_OBJECT gnu_xml_dom_DomExtern_getLocalName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomExtern.java", 113)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomExtern*) _r1.o)->fields.gnu_xml_dom_DomExtern.name_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

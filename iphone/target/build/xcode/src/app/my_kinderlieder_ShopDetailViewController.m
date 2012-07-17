@@ -281,11 +281,13 @@ void my_kinderlieder_ShopDetailViewController___INIT____org_xmlvm_iphone_UIWindo
     _r0.o = __NEW_java_util_HashMap();
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((my_kinderlieder_ShopDetailViewController*) _r2.o)->fields.my_kinderlieder_ShopDetailViewController.requests_ = _r0.o;
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 15)
     _r0.o = __NEW_my_kinderlieder_ShopDetailViewController_1();
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_ShopDetailViewController_1___INIT____my_kinderlieder_ShopDetailViewController(_r0.o, _r2.o);
+    XMLVM_CHECK_NPE(2)
     ((my_kinderlieder_ShopDetailViewController*) _r2.o)->fields.my_kinderlieder_ShopDetailViewController.action_ = _r0.o;
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 22)
     _r0.o = __NEW_org_xmlvm_iphone_UIWebView();
@@ -293,13 +295,16 @@ void my_kinderlieder_ShopDetailViewController___INIT____org_xmlvm_iphone_UIWindo
     _r1.o = org_xmlvm_iphone_UIView_getFrame__(_r3.o);
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UIWebView___INIT____org_xmlvm_iphone_CGRect(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((my_kinderlieder_ShopDetailViewController*) _r2.o)->fields.my_kinderlieder_ShopDetailViewController.infoView_ = _r0.o;
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 23)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((my_kinderlieder_ShopDetailViewController*) _r2.o)->fields.my_kinderlieder_ShopDetailViewController.infoView_;
     _r1.i = 1;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UIWebView_setScalesPageToFit___boolean(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 24)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((my_kinderlieder_ShopDetailViewController*) _r2.o)->fields.my_kinderlieder_ShopDetailViewController.infoView_;
     XMLVM_CHECK_NPE(2)
     org_xmlvm_iphone_UIViewController_setView___org_xmlvm_iphone_UIView(_r2.o, _r0.o);
@@ -327,8 +332,10 @@ void my_kinderlieder_ShopDetailViewController_show___my_kinderlieder_Product(JAV
     _r9.o = n1;
     _r7.i = 1;
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 28)
+    XMLVM_CHECK_NPE(8)
     ((my_kinderlieder_ShopDetailViewController*) _r8.o)->fields.my_kinderlieder_ShopDetailViewController.product_ = _r9.o;
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 29)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((my_kinderlieder_ShopDetailViewController*) _r8.o)->fields.my_kinderlieder_ShopDetailViewController.requests_;
     XMLVM_CHECK_NPE(2)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_get___java_lang_Object])(_r2.o, _r9.o);
@@ -343,6 +350,7 @@ void my_kinderlieder_ShopDetailViewController_show___my_kinderlieder_Product(JAV
     _r3.o = xmlvm_create_java_string_from_pool(1170);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r3.o);
+    XMLVM_CHECK_NPE(9)
     _r3.o = ((my_kinderlieder_Product*) _r9.o)->fields.my_kinderlieder_Product.id_;
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r3.o);
@@ -352,21 +360,25 @@ void my_kinderlieder_ShopDetailViewController_show___my_kinderlieder_Product(JAV
     _r2.o = org_xmlvm_iphone_NSURL_URLWithString___java_lang_String(_r2.o);
     _r1.o = org_xmlvm_iphone_NSURLRequest_requestWithURL___org_xmlvm_iphone_NSURL(_r2.o);
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 32)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((my_kinderlieder_ShopDetailViewController*) _r8.o)->fields.my_kinderlieder_ShopDetailViewController.requests_;
     XMLVM_CHECK_NPE(2)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_put___java_lang_Object_java_lang_Object])(_r2.o, _r9.o, _r1.o);
     label47:;
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 34)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((my_kinderlieder_ShopDetailViewController*) _r8.o)->fields.my_kinderlieder_ShopDetailViewController.infoView_;
     XMLVM_CHECK_NPE(2)
     org_xmlvm_iphone_UIWebView_loadRequest___org_xmlvm_iphone_NSURLRequest(_r2.o, _r1.o);
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 35)
+    XMLVM_CHECK_NPE(9)
     _r2.o = ((my_kinderlieder_Product*) _r9.o)->fields.my_kinderlieder_Product.name_;
     XMLVM_CHECK_NPE(8)
     org_xmlvm_iphone_UIViewController_setTitle___java_lang_String(_r8.o, _r2.o);
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 37)
     _r0.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 39)
+    XMLVM_CHECK_NPE(9)
     _r2.o = ((my_kinderlieder_Product*) _r9.o)->fields.my_kinderlieder_Product.state_;
     _r3.o = my_kinderlieder_Product_State_GET_AVAILABLE();
     if (_r2.o != _r3.o) goto label70;
@@ -386,6 +398,7 @@ void my_kinderlieder_ShopDetailViewController_show___my_kinderlieder_Product(JAV
     _r3.o = XMLVMArray_createSingleDimension(__CLASS_org_xmlvm_iphone_UIBarButtonItem, _r7.i);
     _r4.i = 0;
     _r5.o = __NEW_org_xmlvm_iphone_UIBarButtonItem();
+    XMLVM_CHECK_NPE(8)
     _r6.o = ((my_kinderlieder_ShopDetailViewController*) _r8.o)->fields.my_kinderlieder_ShopDetailViewController.action_;
     XMLVM_CHECK_NPE(5)
     org_xmlvm_iphone_UIBarButtonItem___INIT____java_lang_String_int_org_xmlvm_iphone_UIBarButtonItemDelegate(_r5.o, _r0.o, _r7.i, _r6.o);
@@ -415,6 +428,7 @@ void my_kinderlieder_ShopDetailViewController_show___my_kinderlieder_Product(JAV
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r3.o);
     _r9.o = _r9.o;
+    XMLVM_CHECK_NPE(9)
     _r3.o = ((my_kinderlieder_InAppProduct*) _r9.o)->fields.my_kinderlieder_InAppProduct.skProduct_;
     XMLVM_CHECK_NPE(3)
     _r3.d = org_xmlvm_iphone_SKProduct_getPrice__(_r3.o);
@@ -446,11 +460,13 @@ void my_kinderlieder_ShopDetailViewController_click__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 55)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((my_kinderlieder_ShopDetailViewController*) _r4.o)->fields.my_kinderlieder_ShopDetailViewController.product_;
     if (!__TIB_my_kinderlieder_FreeProduct.classInitialized) __INIT_my_kinderlieder_FreeProduct();
     _r2.i = XMLVM_ISA(_r2.o, __CLASS_my_kinderlieder_FreeProduct);
     if (_r2.i == 0) goto label32;
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 56)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((my_kinderlieder_ShopDetailViewController*) _r4.o)->fields.my_kinderlieder_ShopDetailViewController.product_;
     _r1.o = _r1.o;
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 57)
@@ -475,12 +491,14 @@ void my_kinderlieder_ShopDetailViewController_click__(JAVA_OBJECT me)
     return;
     label32:;
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 70)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((my_kinderlieder_ShopDetailViewController*) _r4.o)->fields.my_kinderlieder_ShopDetailViewController.product_;
     if (!__TIB_my_kinderlieder_InAppProduct.classInitialized) __INIT_my_kinderlieder_InAppProduct();
     _r2.i = XMLVM_ISA(_r2.o, __CLASS_my_kinderlieder_InAppProduct);
     if (_r2.i == 0) goto label23;
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 71)
     _r3.o = my_kinderlieder_ShopService_getInstance__();
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((my_kinderlieder_ShopDetailViewController*) _r4.o)->fields.my_kinderlieder_ShopDetailViewController.product_;
     _r2.o = _r2.o;
     XMLVM_CHECK_NPE(3)

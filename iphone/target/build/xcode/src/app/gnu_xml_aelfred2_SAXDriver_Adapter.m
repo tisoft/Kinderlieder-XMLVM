@@ -412,6 +412,7 @@ void gnu_xml_aelfred2_SAXDriver_Adapter___INIT____org_xml_sax_DocumentHandler(JA
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1521)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_aelfred2_SAXDriver_Adapter*) _r0.o)->fields.gnu_xml_aelfred2_SAXDriver_Adapter.docHandler_ = _r1.o;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1522)
     XMLVM_EXIT_METHOD()
@@ -429,6 +430,7 @@ void gnu_xml_aelfred2_SAXDriver_Adapter_setDocumentLocator___org_xml_sax_Locator
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1526)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver_Adapter*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver_Adapter.docHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_setDocumentLocator___org_xml_sax_Locator])(_r0.o, _r2.o);
@@ -446,6 +448,7 @@ void gnu_xml_aelfred2_SAXDriver_Adapter_startDocument__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1532)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver_Adapter*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver_Adapter.docHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_startDocument__])(_r0.o);
@@ -467,6 +470,7 @@ void gnu_xml_aelfred2_SAXDriver_Adapter_processingInstruction___java_lang_String
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1538)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver_Adapter*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver_Adapter.docHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_processingInstruction___java_lang_String_java_lang_String])(_r0.o, _r2.o, _r3.o);
@@ -508,6 +512,7 @@ void gnu_xml_aelfred2_SAXDriver_Adapter_startElement___java_lang_String_java_lan
     _r4.o = n3;
     _r5.o = n4;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1552)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver_Adapter*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver_Adapter.docHandler_;
     _r5.o = _r5.o;
     XMLVM_CHECK_NPE(0)
@@ -532,6 +537,7 @@ void gnu_xml_aelfred2_SAXDriver_Adapter_characters___char_1ARRAY_int_int(JAVA_OB
     _r3.i = n2;
     _r4.i = n3;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1558)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver_Adapter*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver_Adapter.docHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_characters___char_1ARRAY_int_int])(_r0.o, _r2.o, _r3.i, _r4.i);
@@ -555,6 +561,7 @@ void gnu_xml_aelfred2_SAXDriver_Adapter_ignorableWhitespace___char_1ARRAY_int_in
     _r3.i = n2;
     _r4.i = n3;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1564)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver_Adapter*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver_Adapter.docHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_ignorableWhitespace___char_1ARRAY_int_int])(_r0.o, _r2.o, _r3.i, _r4.i);
@@ -592,6 +599,7 @@ void gnu_xml_aelfred2_SAXDriver_Adapter_endElement___java_lang_String_java_lang_
     _r3.o = n2;
     _r4.o = n3;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1575)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver_Adapter*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver_Adapter.docHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_endElement___java_lang_String])(_r0.o, _r4.o);
@@ -623,6 +631,7 @@ void gnu_xml_aelfred2_SAXDriver_Adapter_endDocument__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXDriver.java", 1586)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_aelfred2_SAXDriver_Adapter*) _r1.o)->fields.gnu_xml_aelfred2_SAXDriver_Adapter.docHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_endDocument__])(_r0.o);

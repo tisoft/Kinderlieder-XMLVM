@@ -502,15 +502,20 @@ void org_apache_harmony_luni_lang_reflect_ImplForVariable___INIT____java_lang_re
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 58)
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_lang_reflect_ImplForVariable*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForVariable.genericDeclaration_ = _r2.o;
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 59)
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_lang_reflect_ImplForVariable*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForVariable.name_ = _r3.o;
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 60)
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_lang_reflect_ImplForVariable*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForVariable.bounds_ = _r4.o;
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 61)
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_lang_reflect_ImplForVariable*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForVariable.formalVar_ = _r1.o;
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 62)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_lang_reflect_ImplForVariable*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForVariable.declOfVarUser_ = _r0.o;
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 63)
     XMLVM_EXIT_METHOD()
@@ -532,8 +537,10 @@ void org_apache_harmony_luni_lang_reflect_ImplForVariable___INIT____java_lang_re
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 71)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_lang_reflect_ImplForVariable*) _r0.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForVariable.name_ = _r2.o;
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 72)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_lang_reflect_ImplForVariable*) _r0.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForVariable.declOfVarUser_ = _r1.o;
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 73)
     XMLVM_EXIT_METHOD()
@@ -690,14 +697,17 @@ void org_apache_harmony_luni_lang_reflect_ImplForVariable_resolve__(JAVA_OBJECT 
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 109)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((org_apache_harmony_luni_lang_reflect_ImplForVariable*) _r3.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForVariable.formalVar_;
     if (_r2.o != JAVA_NULL) goto label31;
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 110)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_ImplForVariable*) _r3.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForVariable.declOfVarUser_;
     _r1.o = JAVA_NULL;
     label7:;
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 111)
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 113)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((org_apache_harmony_luni_lang_reflect_ImplForVariable*) _r3.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForVariable.name_;
     _r1.o = org_apache_harmony_luni_lang_reflect_ImplForVariable_findFormalVar___java_lang_reflect_GenericDeclaration_java_lang_String(_r0.o, _r2.o);
     if (_r1.o == JAVA_NULL) goto label32;
@@ -705,14 +715,21 @@ void org_apache_harmony_luni_lang_reflect_ImplForVariable_resolve__(JAVA_OBJECT 
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 114)
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 122)
     _r1.o = _r1.o;
+    XMLVM_CHECK_NPE(3)
     ((org_apache_harmony_luni_lang_reflect_ImplForVariable*) _r3.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForVariable.formalVar_ = _r1.o;
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 123)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((org_apache_harmony_luni_lang_reflect_ImplForVariable*) _r3.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForVariable.formalVar_;
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((org_apache_harmony_luni_lang_reflect_ImplForVariable*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForVariable.genericDeclaration_;
+    XMLVM_CHECK_NPE(3)
     ((org_apache_harmony_luni_lang_reflect_ImplForVariable*) _r3.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForVariable.genericDeclaration_ = _r2.o;
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 124)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((org_apache_harmony_luni_lang_reflect_ImplForVariable*) _r3.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForVariable.formalVar_;
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((org_apache_harmony_luni_lang_reflect_ImplForVariable*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForVariable.bounds_;
+    XMLVM_CHECK_NPE(3)
     ((org_apache_harmony_luni_lang_reflect_ImplForVariable*) _r3.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForVariable.bounds_ = _r2.o;
     label31:;
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 126)
@@ -738,6 +755,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForVariable_getBounds__(JAV
     XMLVM_CHECK_NPE(1)
     org_apache_harmony_luni_lang_reflect_ImplForVariable_resolve__(_r1.o);
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 130)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_ImplForVariable*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForVariable.bounds_;
     XMLVM_CHECK_NPE(0)
     _r0.o = org_apache_harmony_luni_lang_reflect_ListOfTypes_getResolvedTypes__(_r0.o);
@@ -761,6 +779,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForVariable_getGenericDecla
     XMLVM_CHECK_NPE(1)
     org_apache_harmony_luni_lang_reflect_ImplForVariable_resolve__(_r1.o);
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 135)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_ImplForVariable*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForVariable.genericDeclaration_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -775,6 +794,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForVariable_getName__(JAVA_
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 139)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_ImplForVariable*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForVariable.name_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -789,6 +809,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForVariable_toString__(JAVA
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ImplForVariable.java", 144)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_ImplForVariable*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForVariable.name_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

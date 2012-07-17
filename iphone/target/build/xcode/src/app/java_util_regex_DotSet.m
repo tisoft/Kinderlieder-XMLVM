@@ -308,6 +308,7 @@ void java_util_regex_DotSet___INIT____java_util_regex_AbstractLineTerminator(JAV
     XMLVM_CHECK_NPE(0)
     java_util_regex_JointSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("DotSet.java", 34)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_DotSet*) _r0.o)->fields.java_util_regex_DotSet.lt_ = _r1.o;
     XMLVM_SOURCE_POSITION("DotSet.java", 35)
     XMLVM_EXIT_METHOD()
@@ -340,6 +341,7 @@ JAVA_INT java_util_regex_DotSet_matches___int_java_lang_CharSequence_java_util_r
     if (_r1.i <= _r0.i) goto label14;
     XMLVM_SOURCE_POSITION("DotSet.java", 42)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(7)
     ((java_util_regex_MatchResultImpl*) _r7.o)->fields.java_util_regex_MatchResultImpl.hitEnd_ = _r0.i;
     _r0 = _r3;
     label13:;
@@ -364,6 +366,7 @@ JAVA_INT java_util_regex_DotSet_matches___int_java_lang_CharSequence_java_util_r
     _r2.i = java_lang_Character_isSurrogatePair___char_char(_r1.i, _r0.i);
     if (_r2.i == 0) goto label63;
     XMLVM_SOURCE_POSITION("DotSet.java", 51)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_regex_DotSet*) _r4.o)->fields.java_util_regex_DotSet.lt_;
     _r0.i = java_lang_Character_toCodePoint___char_char(_r1.i, _r0.i);
     //java_util_regex_AbstractLineTerminator_isLineTerminator___int[7]
@@ -374,6 +377,7 @@ JAVA_INT java_util_regex_DotSet_matches___int_java_lang_CharSequence_java_util_r
     goto label13;
     label54:;
     XMLVM_SOURCE_POSITION("DotSet.java", 52)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_AbstractSet*) _r4.o)->fields.java_util_regex_AbstractSet.next_;
     _r1.i = _r5.i + 2;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
@@ -381,6 +385,7 @@ JAVA_INT java_util_regex_DotSet_matches___int_java_lang_CharSequence_java_util_r
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_INT, JAVA_OBJECT, JAVA_OBJECT)) ((java_util_regex_AbstractSet*) _r0.o)->tib->vtable[13])(_r0.o, _r1.i, _r6.o, _r7.o);
     goto label13;
     label63:;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_DotSet*) _r4.o)->fields.java_util_regex_DotSet.lt_;
     //java_util_regex_AbstractLineTerminator_isLineTerminator___int[7]
     XMLVM_CHECK_NPE(0)
@@ -390,6 +395,7 @@ JAVA_INT java_util_regex_DotSet_matches___int_java_lang_CharSequence_java_util_r
     goto label13;
     label73:;
     XMLVM_SOURCE_POSITION("DotSet.java", 57)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_AbstractSet*) _r4.o)->fields.java_util_regex_AbstractSet.next_;
     _r1.i = _r5.i + 1;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
@@ -422,6 +428,7 @@ JAVA_OBJECT java_util_regex_DotSet_getNext__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DotSet.java", 66)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_AbstractSet*) _r1.o)->fields.java_util_regex_AbstractSet.next_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -437,6 +444,7 @@ void java_util_regex_DotSet_setNext___java_util_regex_AbstractSet(JAVA_OBJECT me
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("DotSet.java", 70)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractSet*) _r0.o)->fields.java_util_regex_AbstractSet.next_ = _r1.o;
     XMLVM_SOURCE_POSITION("DotSet.java", 71)
     XMLVM_EXIT_METHOD()

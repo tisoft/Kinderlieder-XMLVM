@@ -293,8 +293,10 @@ void java_util_FormatFlagsConversionMismatchException___INIT____java_lang_String
     XMLVM_THROW_CUSTOM(_r0.o)
     label11:;
     XMLVM_SOURCE_POSITION("FormatFlagsConversionMismatchException.java", 49)
+    XMLVM_CHECK_NPE(1)
     ((java_util_FormatFlagsConversionMismatchException*) _r1.o)->fields.java_util_FormatFlagsConversionMismatchException.f_ = _r2.o;
     XMLVM_SOURCE_POSITION("FormatFlagsConversionMismatchException.java", 50)
+    XMLVM_CHECK_NPE(1)
     ((java_util_FormatFlagsConversionMismatchException*) _r1.o)->fields.java_util_FormatFlagsConversionMismatchException.c_ = _r3.i;
     XMLVM_SOURCE_POSITION("FormatFlagsConversionMismatchException.java", 51)
     XMLVM_EXIT_METHOD()
@@ -310,6 +312,7 @@ JAVA_OBJECT java_util_FormatFlagsConversionMismatchException_getFlags__(JAVA_OBJ
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FormatFlagsConversionMismatchException.java", 59)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_FormatFlagsConversionMismatchException*) _r1.o)->fields.java_util_FormatFlagsConversionMismatchException.f_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -324,6 +327,7 @@ JAVA_CHAR java_util_FormatFlagsConversionMismatchException_getConversion__(JAVA_
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FormatFlagsConversionMismatchException.java", 68)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_FormatFlagsConversionMismatchException*) _r1.o)->fields.java_util_FormatFlagsConversionMismatchException.c_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -348,6 +352,7 @@ JAVA_OBJECT java_util_FormatFlagsConversionMismatchException_getMessage__(JAVA_O
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("FormatFlagsConversionMismatchException.java", 80)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_FormatFlagsConversionMismatchException*) _r2.o)->fields.java_util_FormatFlagsConversionMismatchException.c_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -358,6 +363,7 @@ JAVA_OBJECT java_util_FormatFlagsConversionMismatchException_getMessage__(JAVA_O
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("FormatFlagsConversionMismatchException.java", 82)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_FormatFlagsConversionMismatchException*) _r2.o)->fields.java_util_FormatFlagsConversionMismatchException.f_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);

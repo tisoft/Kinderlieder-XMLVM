@@ -243,6 +243,7 @@ void java_nio_charset_IllegalCharsetNameException___INIT____java_lang_String(JAV
     XMLVM_CHECK_NPE(1)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r1.o, _r0.o);
     XMLVM_SOURCE_POSITION("IllegalCharsetNameException.java", 47)
+    XMLVM_CHECK_NPE(1)
     ((java_nio_charset_IllegalCharsetNameException*) _r1.o)->fields.java_nio_charset_IllegalCharsetNameException.charsetName_ = _r2.o;
     XMLVM_SOURCE_POSITION("IllegalCharsetNameException.java", 48)
     XMLVM_EXIT_METHOD()
@@ -258,6 +259,7 @@ JAVA_OBJECT java_nio_charset_IllegalCharsetNameException_getCharsetName__(JAVA_O
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("IllegalCharsetNameException.java", 56)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_charset_IllegalCharsetNameException*) _r1.o)->fields.java_nio_charset_IllegalCharsetNameException.charsetName_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

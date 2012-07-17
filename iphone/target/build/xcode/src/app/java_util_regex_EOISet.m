@@ -286,9 +286,12 @@ JAVA_INT java_util_regex_EOISet_matches___int_java_lang_CharSequence_java_util_r
     goto label11;
     label20:;
     XMLVM_SOURCE_POSITION("EOISet.java", 37)
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_MatchResultImpl*) _r5.o)->fields.java_util_regex_MatchResultImpl.hitEnd_ = _r1.i;
     XMLVM_SOURCE_POSITION("EOISet.java", 38)
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_MatchResultImpl*) _r5.o)->fields.java_util_regex_MatchResultImpl.requireEnd_ = _r1.i;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_AbstractSet*) _r2.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)

@@ -375,7 +375,9 @@ void java_util_ServiceLoader_reload__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 51)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_ServiceLoader*) _r2.o)->fields.java_util_ServiceLoader.service_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_ServiceLoader*) _r2.o)->fields.java_util_ServiceLoader.loader_;
     java_util_ServiceLoader_internalLoad___java_util_ServiceLoader_java_lang_Class_java_lang_ClassLoader(_r2.o, _r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 52)
@@ -416,13 +418,16 @@ JAVA_OBJECT java_util_ServiceLoader_load___java_lang_Class_java_lang_ClassLoader
     XMLVM_CHECK_NPE(0)
     java_util_ServiceLoader___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 74)
+    XMLVM_CHECK_NPE(0)
     ((java_util_ServiceLoader*) _r0.o)->fields.java_util_ServiceLoader.service_ = _r2.o;
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 75)
+    XMLVM_CHECK_NPE(0)
     ((java_util_ServiceLoader*) _r0.o)->fields.java_util_ServiceLoader.loader_ = _r3.o;
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 76)
     _r1.o = __NEW_java_util_HashSet();
     XMLVM_CHECK_NPE(1)
     java_util_HashSet___INIT___(_r1.o);
+    XMLVM_CHECK_NPE(0)
     ((java_util_ServiceLoader*) _r0.o)->fields.java_util_ServiceLoader.services_ = _r1.o;
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 77)
     java_util_ServiceLoader_internalLoad___java_util_ServiceLoader_java_lang_Class_java_lang_ClassLoader(_r0.o, _r2.o, _r3.o);
@@ -452,6 +457,7 @@ void java_util_ServiceLoader_internalLoad___java_util_ServiceLoader_java_lang_Cl
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 86)
     if (_r4.o != JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 87)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_ServiceLoader*) _r3.o)->fields.java_util_ServiceLoader.services_;
     _r1.o = JAVA_NULL;
     XMLVM_CHECK_NPE(0)
@@ -463,7 +469,7 @@ void java_util_ServiceLoader_internalLoad___java_util_ServiceLoader_java_lang_Cl
     label11:;
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 91)
     if (_r5.o != JAVA_NULL) goto label57;
-    XMLVM_TRY_BEGIN(w36635aaab8b1c18)
+    XMLVM_TRY_BEGIN(w36640aaab8b1c18)
     // Begin try
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 92)
     _r0.o = __NEW_java_lang_StringBuilder();
@@ -482,10 +488,10 @@ void java_util_ServiceLoader_internalLoad___java_util_ServiceLoader_java_lang_Cl
     _r0.o = java_lang_ClassLoader_getSystemResources___java_lang_String(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36635aaab8b1c18)
-        XMLVM_CATCH_SPECIFIC(w36635aaab8b1c18,java_io_IOException,82)
-    XMLVM_CATCH_END(w36635aaab8b1c18)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36635aaab8b1c18)
+    XMLVM_CATCH_BEGIN(w36640aaab8b1c18)
+        XMLVM_CATCH_SPECIFIC(w36640aaab8b1c18,java_io_IOException,82)
+    XMLVM_CATCH_END(w36640aaab8b1c18)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36640aaab8b1c18)
     _r1 = _r0;
     label37:;
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 101)
@@ -500,12 +506,13 @@ void java_util_ServiceLoader_internalLoad___java_util_ServiceLoader_java_lang_Cl
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Enumeration_nextElement__])(_r1.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 104)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_ServiceLoader*) _r3.o)->fields.java_util_ServiceLoader.services_;
     XMLVM_CHECK_NPE(2)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Set_add___java_lang_Object])(_r2.o, _r0.o);
     goto label39;
     label57:;
-    XMLVM_TRY_BEGIN(w36635aaab8b1c35)
+    XMLVM_TRY_BEGIN(w36640aaab8b1c35)
     // Begin try
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 95)
     _r0.o = __NEW_java_lang_StringBuilder();
@@ -525,16 +532,16 @@ void java_util_ServiceLoader_internalLoad___java_util_ServiceLoader_java_lang_Cl
     _r0.o = java_lang_ClassLoader_getResources___java_lang_String(_r5.o, _r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36635aaab8b1c35)
-        XMLVM_CATCH_SPECIFIC(w36635aaab8b1c35,java_io_IOException,82)
-    XMLVM_CATCH_END(w36635aaab8b1c35)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36635aaab8b1c35)
+    XMLVM_CATCH_BEGIN(w36640aaab8b1c35)
+        XMLVM_CATCH_SPECIFIC(w36640aaab8b1c35,java_io_IOException,82)
+    XMLVM_CATCH_END(w36640aaab8b1c35)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36640aaab8b1c35)
     _r1 = _r0;
     goto label37;
     label82:;
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 99)
-    java_lang_Thread* curThread_w36635aaab8b1c40 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w36635aaab8b1c40->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36640aaab8b1c40 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w36640aaab8b1c40->fields.java_lang_Thread.xmlvmException_;
     goto label10;
     //XMLVM_END_WRAPPER
 }
@@ -604,6 +611,7 @@ JAVA_OBJECT java_util_ServiceLoader_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 147)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_ServiceLoader*) _r2.o)->fields.java_util_ServiceLoader.service_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_Class_getName__(_r1.o);
@@ -627,6 +635,7 @@ JAVA_OBJECT java_util_ServiceLoader_access$0___java_util_ServiceLoader(JAVA_OBJE
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 40)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_ServiceLoader*) _r1.o)->fields.java_util_ServiceLoader.loader_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -642,6 +651,7 @@ JAVA_OBJECT java_util_ServiceLoader_access$1___java_util_ServiceLoader(JAVA_OBJE
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 38)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_ServiceLoader*) _r1.o)->fields.java_util_ServiceLoader.service_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -657,6 +667,7 @@ JAVA_OBJECT java_util_ServiceLoader_access$2___java_util_ServiceLoader(JAVA_OBJE
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 36)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_ServiceLoader*) _r1.o)->fields.java_util_ServiceLoader.services_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

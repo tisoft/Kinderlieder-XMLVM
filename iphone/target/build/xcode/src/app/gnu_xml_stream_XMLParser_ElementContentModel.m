@@ -236,6 +236,7 @@ void gnu_xml_stream_XMLParser_ElementContentModel___INIT____gnu_xml_stream_XMLPa
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4877)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_ElementContentModel*) _r1.o)->fields.gnu_xml_stream_XMLParser_ElementContentModel.this_0_ = _r2.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4878)
     _r0.i = 2;
@@ -245,6 +246,7 @@ void gnu_xml_stream_XMLParser_ElementContentModel___INIT____gnu_xml_stream_XMLPa
     _r0.o = __NEW_java_util_LinkedList();
     XMLVM_CHECK_NPE(0)
     java_util_LinkedList___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_ElementContentModel*) _r1.o)->fields.gnu_xml_stream_XMLParser_ElementContentModel.contentParticles_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4880)
     XMLVM_EXIT_METHOD()
@@ -262,6 +264,7 @@ void gnu_xml_stream_XMLParser_ElementContentModel_addContentParticle___gnu_xml_s
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4884)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XMLParser_ElementContentModel*) _r1.o)->fields.gnu_xml_stream_XMLParser_ElementContentModel.contentParticles_;
     //java_util_LinkedList_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)

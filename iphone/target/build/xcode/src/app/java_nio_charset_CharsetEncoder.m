@@ -878,19 +878,25 @@ void java_nio_charset_CharsetEncoder___INIT____java_nio_charset_Charset_float_fl
     XMLVM_THROW_CUSTOM(_r0.o)
     label40:;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 183)
+    XMLVM_CHECK_NPE(2)
     ((java_nio_charset_CharsetEncoder*) _r2.o)->fields.java_nio_charset_CharsetEncoder.cs_ = _r3.o;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 184)
+    XMLVM_CHECK_NPE(2)
     ((java_nio_charset_CharsetEncoder*) _r2.o)->fields.java_nio_charset_CharsetEncoder.averBytes_ = _r4.f;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 185)
+    XMLVM_CHECK_NPE(2)
     ((java_nio_charset_CharsetEncoder*) _r2.o)->fields.java_nio_charset_CharsetEncoder.maxBytes_ = _r5.f;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 186)
     _r0.i = 4;
+    XMLVM_CHECK_NPE(2)
     ((java_nio_charset_CharsetEncoder*) _r2.o)->fields.java_nio_charset_CharsetEncoder.status_ = _r0.i;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 187)
     _r0.o = java_nio_charset_CodingErrorAction_GET_REPORT();
+    XMLVM_CHECK_NPE(2)
     ((java_nio_charset_CharsetEncoder*) _r2.o)->fields.java_nio_charset_CharsetEncoder.malformAction_ = _r0.o;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 188)
     _r0.o = java_nio_charset_CodingErrorAction_GET_REPORT();
+    XMLVM_CHECK_NPE(2)
     ((java_nio_charset_CharsetEncoder*) _r2.o)->fields.java_nio_charset_CharsetEncoder.unmapAction_ = _r0.o;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 189)
     XMLVM_CHECK_NPE(2)
@@ -909,6 +915,7 @@ JAVA_FLOAT java_nio_charset_CharsetEncoder_averageBytesPerChar__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 200)
+    XMLVM_CHECK_NPE(1)
     _r0.f = ((java_nio_charset_CharsetEncoder*) _r1.o)->fields.java_nio_charset_CharsetEncoder.averBytes_;
     XMLVM_EXIT_METHOD()
     return _r0.f;
@@ -955,17 +962,21 @@ JAVA_BOOLEAN java_nio_charset_CharsetEncoder_implCanEncode___java_nio_CharBuffer
     _r5.o = n1;
     _r3.i = 0;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 225)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_nio_charset_CharsetEncoder*) _r4.o)->fields.java_nio_charset_CharsetEncoder.status_;
     _r1.i = 3;
     if (_r0.i == _r1.i) goto label11;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_nio_charset_CharsetEncoder*) _r4.o)->fields.java_nio_charset_CharsetEncoder.status_;
     _r1.i = 4;
     if (_r0.i != _r1.i) goto label13;
     label11:;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 226)
+    XMLVM_CHECK_NPE(4)
     ((java_nio_charset_CharsetEncoder*) _r4.o)->fields.java_nio_charset_CharsetEncoder.status_ = _r3.i;
     label13:;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 228)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_nio_charset_CharsetEncoder*) _r4.o)->fields.java_nio_charset_CharsetEncoder.status_;
     if (_r0.i == 0) goto label29;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 230)
@@ -978,8 +989,10 @@ JAVA_BOOLEAN java_nio_charset_CharsetEncoder_implCanEncode___java_nio_CharBuffer
     XMLVM_THROW_CUSTOM(_r0.o)
     label29:;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 232)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_nio_charset_CharsetEncoder*) _r4.o)->fields.java_nio_charset_CharsetEncoder.malformAction_;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 233)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_nio_charset_CharsetEncoder*) _r4.o)->fields.java_nio_charset_CharsetEncoder.unmapAction_;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 234)
     _r2.o = java_nio_charset_CodingErrorAction_GET_REPORT();
@@ -991,17 +1004,17 @@ JAVA_BOOLEAN java_nio_charset_CharsetEncoder_implCanEncode___java_nio_CharBuffer
     java_nio_charset_CharsetEncoder_onUnmappableCharacter___java_nio_charset_CodingErrorAction(_r4.o, _r2.o);
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 236)
     _r2.i = 1;
-    XMLVM_TRY_BEGIN(w36503aaac18b1c37)
+    XMLVM_TRY_BEGIN(w36508aaac18b1c37)
     // Begin try
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 238)
     XMLVM_CHECK_NPE(4)
     java_nio_charset_CharsetEncoder_encode___java_nio_CharBuffer(_r4.o, _r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36503aaac18b1c37)
-        XMLVM_CATCH_SPECIFIC(w36503aaac18b1c37,java_nio_charset_CharacterCodingException,57)
-    XMLVM_CATCH_END(w36503aaac18b1c37)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36503aaac18b1c37)
+    XMLVM_CATCH_BEGIN(w36508aaac18b1c37)
+        XMLVM_CATCH_SPECIFIC(w36508aaac18b1c37,java_nio_charset_CharacterCodingException,57)
+    XMLVM_CATCH_END(w36508aaac18b1c37)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36508aaac18b1c37)
     label47:;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 242)
     XMLVM_CHECK_NPE(4)
@@ -1017,8 +1030,8 @@ JAVA_BOOLEAN java_nio_charset_CharsetEncoder_implCanEncode___java_nio_CharBuffer
     return _r2.i;
     label57:;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 240)
-    java_lang_Thread* curThread_w36503aaac18b1c49 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w36503aaac18b1c49->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36508aaac18b1c49 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w36508aaac18b1c49->fields.java_lang_Thread.xmlvmException_;
     _r2 = _r3;
     goto label47;
     //XMLVM_END_WRAPPER
@@ -1063,6 +1076,7 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_charset__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 281)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_charset_CharsetEncoder*) _r1.o)->fields.java_nio_charset_CharsetEncoder.cs_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1102,6 +1116,7 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_encode___java_nio_CharBuffer(JAVA_OB
     XMLVM_CHECK_NPE(6)
     _r0.i = java_nio_Buffer_remaining__(_r6.o);
     _r0.f = (JAVA_FLOAT) _r0.i;
+    XMLVM_CHECK_NPE(5)
     _r1.f = ((java_nio_charset_CharsetEncoder*) _r5.o)->fields.java_nio_charset_CharsetEncoder.averBytes_;
     _r0.f = _r0.f * _r1.f;
     _r0.i = (JAVA_INT) _r0.f;
@@ -1132,8 +1147,10 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_encode___java_nio_CharBuffer(JAVA_OB
     java_nio_Buffer_flip__(_r0.o);
     label55:;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 355)
+    XMLVM_CHECK_NPE(5)
     ((java_nio_charset_CharsetEncoder*) _r5.o)->fields.java_nio_charset_CharsetEncoder.status_ = _r3.i;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 356)
+    XMLVM_CHECK_NPE(5)
     ((java_nio_charset_CharsetEncoder*) _r5.o)->fields.java_nio_charset_CharsetEncoder.finished_ = _r4.i;
     goto label12;
     label60:;
@@ -1201,6 +1218,7 @@ void java_nio_charset_CharsetEncoder_checkCoderResult___java_nio_charset_CoderRe
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 365)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_charset_CharsetEncoder*) _r2.o)->fields.java_nio_charset_CharsetEncoder.malformAction_;
     _r1.o = java_nio_charset_CodingErrorAction_GET_REPORT();
     if (_r0.o != _r1.o) goto label22;
@@ -1216,6 +1234,7 @@ void java_nio_charset_CharsetEncoder_checkCoderResult___java_nio_charset_CoderRe
     XMLVM_THROW_CUSTOM(_r0.o)
     label22:;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 367)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_charset_CharsetEncoder*) _r2.o)->fields.java_nio_charset_CharsetEncoder.unmapAction_;
     _r1.o = java_nio_charset_CodingErrorAction_GET_REPORT();
     if (_r0.o != _r1.o) goto label44;
@@ -1293,8 +1312,10 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_encode___java_nio_CharBuffer_java_ni
     _r4.i = 1;
     _r3.i = 2;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 449)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_nio_charset_CharsetEncoder*) _r5.o)->fields.java_nio_charset_CharsetEncoder.status_;
     if (_r0.i != 0) goto label18;
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_nio_charset_CharsetEncoder*) _r5.o)->fields.java_nio_charset_CharsetEncoder.finished_;
     if (_r0.i == 0) goto label18;
     if (_r8.i != 0) goto label18;
@@ -1305,10 +1326,12 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_encode___java_nio_CharBuffer_java_ni
     XMLVM_THROW_CUSTOM(_r0.o)
     label18:;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 453)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_nio_charset_CharsetEncoder*) _r5.o)->fields.java_nio_charset_CharsetEncoder.status_;
     _r1.i = 3;
     if (_r0.i == _r1.i) goto label29;
     if (_r8.i != 0) goto label52;
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_nio_charset_CharsetEncoder*) _r5.o)->fields.java_nio_charset_CharsetEncoder.status_;
     if (_r0.i != _r3.i) goto label52;
     label29:;
@@ -1319,6 +1342,7 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_encode___java_nio_CharBuffer_java_ni
     XMLVM_THROW_CUSTOM(_r0.o)
     label35:;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 492)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_nio_charset_CharsetEncoder*) _r5.o)->fields.java_nio_charset_CharsetEncoder.replace_;
     XMLVM_CHECK_NPE(7)
     java_nio_ByteBuffer_put___byte_1ARRAY(_r7.o, _r1.o);
@@ -1332,7 +1356,7 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_encode___java_nio_CharBuffer_java_ni
     XMLVM_CHECK_NPE(6)
     java_nio_Buffer_position___int(_r6.o, _r0.i);
     label52:;
-    XMLVM_TRY_BEGIN(w36503aaac24b1c41)
+    XMLVM_TRY_BEGIN(w36508aaac24b1c41)
     // Begin try
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 460)
     //java_nio_charset_CharsetEncoder_encodeLoop___java_nio_CharBuffer_java_nio_ByteBuffer[6]
@@ -1340,11 +1364,11 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_encode___java_nio_CharBuffer_java_ni
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_nio_charset_CharsetEncoder*) _r5.o)->tib->vtable[6])(_r5.o, _r6.o, _r7.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36503aaac24b1c41)
-        XMLVM_CATCH_SPECIFIC(w36503aaac24b1c41,java_nio_BufferOverflowException,103)
-        XMLVM_CATCH_SPECIFIC(w36503aaac24b1c41,java_nio_BufferUnderflowException,110)
-    XMLVM_CATCH_END(w36503aaac24b1c41)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36503aaac24b1c41)
+    XMLVM_CATCH_BEGIN(w36508aaac24b1c41)
+        XMLVM_CATCH_SPECIFIC(w36508aaac24b1c41,java_nio_BufferOverflowException,103)
+        XMLVM_CATCH_SPECIFIC(w36508aaac24b1c41,java_nio_BufferUnderflowException,110)
+    XMLVM_CATCH_END(w36508aaac24b1c41)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36508aaac24b1c41)
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 466)
     _r1.o = java_nio_charset_CoderResult_GET_UNDERFLOW();
     if (_r0.o != _r1.o) goto label119;
@@ -1352,6 +1376,7 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_encode___java_nio_CharBuffer_java_ni
     if (_r8.i == 0) goto label117;
     _r1 = _r3;
     label63:;
+    XMLVM_CHECK_NPE(5)
     ((java_nio_charset_CharsetEncoder*) _r5.o)->fields.java_nio_charset_CharsetEncoder.status_ = _r1.i;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 468)
     if (_r8.i == 0) goto label102;
@@ -1364,12 +1389,14 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_encode___java_nio_CharBuffer_java_ni
     _r0.o = java_nio_charset_CoderResult_malformedForLength___int(_r1.i);
     label77:;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 482)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_nio_charset_CharsetEncoder*) _r5.o)->fields.java_nio_charset_CharsetEncoder.malformAction_;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 483)
     XMLVM_CHECK_NPE(0)
     _r2.i = java_nio_charset_CoderResult_isUnmappable__(_r0.o);
     if (_r2.i == 0) goto label87;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 484)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_nio_charset_CharsetEncoder*) _r5.o)->fields.java_nio_charset_CharsetEncoder.unmapAction_;
     label87:;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 488)
@@ -1378,6 +1405,7 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_encode___java_nio_CharBuffer_java_ni
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 489)
     XMLVM_CHECK_NPE(7)
     _r1.i = java_nio_Buffer_remaining__(_r7.o);
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_nio_charset_CharsetEncoder*) _r5.o)->fields.java_nio_charset_CharsetEncoder.replace_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     if (_r1.i >= _r2.i) goto label35;
@@ -1389,8 +1417,8 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_encode___java_nio_CharBuffer_java_ni
     return _r0.o;
     label103:;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 461)
-    java_lang_Thread* curThread_w36503aaac24b1c82 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w36503aaac24b1c82->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36508aaac24b1c82 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w36508aaac24b1c82->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 462)
     _r1.o = __NEW_java_nio_charset_CoderMalfunctionError();
     XMLVM_CHECK_NPE(1)
@@ -1398,8 +1426,8 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_encode___java_nio_CharBuffer_java_ni
     XMLVM_THROW_CUSTOM(_r1.o)
     label110:;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 463)
-    java_lang_Thread* curThread_w36503aaac24b1c89 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w36503aaac24b1c89->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36508aaac24b1c89 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w36508aaac24b1c89->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 464)
     _r1.o = __NEW_java_nio_charset_CoderMalfunctionError();
     XMLVM_CHECK_NPE(1)
@@ -1416,6 +1444,7 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_encode___java_nio_CharBuffer_java_ni
     if (_r8.i == 0) goto label129;
     _r1 = _r3;
     label126:;
+    XMLVM_CHECK_NPE(5)
     ((java_nio_charset_CharsetEncoder*) _r5.o)->fields.java_nio_charset_CharsetEncoder.status_ = _r1.i;
     goto label102;
     label129:;
@@ -1440,9 +1469,11 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_flush___java_nio_ByteBuffer(JAVA_OBJ
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 568)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_charset_CharsetEncoder*) _r2.o)->fields.java_nio_charset_CharsetEncoder.status_;
     _r1.i = 2;
     if (_r0.i == _r1.i) goto label15;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_charset_CharsetEncoder*) _r2.o)->fields.java_nio_charset_CharsetEncoder.status_;
     if (_r0.i == 0) goto label15;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 569)
@@ -1459,6 +1490,7 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_flush___java_nio_ByteBuffer(JAVA_OBJ
     if (_r0.o != _r1.o) goto label26;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 573)
     _r1.i = 3;
+    XMLVM_CHECK_NPE(2)
     ((java_nio_charset_CharsetEncoder*) _r2.o)->fields.java_nio_charset_CharsetEncoder.status_ = _r1.i;
     label26:;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 575)
@@ -1553,29 +1585,36 @@ JAVA_BOOLEAN java_nio_charset_CharsetEncoder_isLegalReplacement___byte_1ARRAY(JA
     _r7.o = n1;
     _r5.i = 1;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 650)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_nio_charset_CharsetEncoder*) _r6.o)->fields.java_nio_charset_CharsetEncoder.decoder_;
     if (_r0.o != JAVA_NULL) goto label13;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 651)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_nio_charset_CharsetEncoder*) _r6.o)->fields.java_nio_charset_CharsetEncoder.cs_;
     //java_nio_charset_Charset_newDecoder__[8]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_charset_Charset*) _r0.o)->tib->vtable[8])(_r0.o);
+    XMLVM_CHECK_NPE(6)
     ((java_nio_charset_CharsetEncoder*) _r6.o)->fields.java_nio_charset_CharsetEncoder.decoder_ = _r0.o;
     label13:;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 654)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_nio_charset_CharsetEncoder*) _r6.o)->fields.java_nio_charset_CharsetEncoder.decoder_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_nio_charset_CharsetDecoder_malformedInputAction__(_r0.o);
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 655)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_nio_charset_CharsetEncoder*) _r6.o)->fields.java_nio_charset_CharsetEncoder.decoder_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_nio_charset_CharsetDecoder_unmappableCharacterAction__(_r1.o);
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 656)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_nio_charset_CharsetEncoder*) _r6.o)->fields.java_nio_charset_CharsetEncoder.decoder_;
     _r3.o = java_nio_charset_CodingErrorAction_GET_REPORT();
     XMLVM_CHECK_NPE(2)
     java_nio_charset_CharsetDecoder_onMalformedInput___java_nio_charset_CodingErrorAction(_r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 657)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_nio_charset_CharsetEncoder*) _r6.o)->fields.java_nio_charset_CharsetEncoder.decoder_;
     _r3.o = java_nio_charset_CodingErrorAction_GET_REPORT();
     XMLVM_CHECK_NPE(2)
@@ -1586,6 +1625,7 @@ JAVA_BOOLEAN java_nio_charset_CharsetEncoder_isLegalReplacement___byte_1ARRAY(JA
     _r3.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r7.o));
     _r3.f = (JAVA_FLOAT) _r3.i;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 660)
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_nio_charset_CharsetEncoder*) _r6.o)->fields.java_nio_charset_CharsetEncoder.decoder_;
     XMLVM_CHECK_NPE(4)
     _r4.f = java_nio_charset_CharsetDecoder_maxCharsPerByte__(_r4.o);
@@ -1593,14 +1633,17 @@ JAVA_BOOLEAN java_nio_charset_CharsetEncoder_isLegalReplacement___byte_1ARRAY(JA
     _r3.i = (JAVA_INT) _r3.f;
     _r3.o = java_nio_CharBuffer_allocate___int(_r3.i);
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 661)
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_nio_charset_CharsetEncoder*) _r6.o)->fields.java_nio_charset_CharsetEncoder.decoder_;
     XMLVM_CHECK_NPE(4)
     _r2.o = java_nio_charset_CharsetDecoder_decode___java_nio_ByteBuffer_java_nio_CharBuffer_boolean(_r4.o, _r2.o, _r3.o, _r5.i);
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 662)
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_nio_charset_CharsetEncoder*) _r6.o)->fields.java_nio_charset_CharsetEncoder.decoder_;
     XMLVM_CHECK_NPE(3)
     java_nio_charset_CharsetDecoder_onMalformedInput___java_nio_charset_CodingErrorAction(_r3.o, _r0.o);
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 663)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_nio_charset_CharsetEncoder*) _r6.o)->fields.java_nio_charset_CharsetEncoder.decoder_;
     XMLVM_CHECK_NPE(0)
     java_nio_charset_CharsetDecoder_onUnmappableCharacter___java_nio_charset_CodingErrorAction(_r0.o, _r1.o);
@@ -1626,6 +1669,7 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_malformedInputAction__(JAVA_OBJECT m
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 675)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_charset_CharsetEncoder*) _r1.o)->fields.java_nio_charset_CharsetEncoder.malformAction_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1640,6 +1684,7 @@ JAVA_FLOAT java_nio_charset_CharsetEncoder_maxBytesPerChar__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 686)
+    XMLVM_CHECK_NPE(1)
     _r0.f = ((java_nio_charset_CharsetEncoder*) _r1.o)->fields.java_nio_charset_CharsetEncoder.maxBytes_;
     XMLVM_EXIT_METHOD()
     return _r0.f;
@@ -1668,6 +1713,7 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_onMalformedInput___java_nio_charset_
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 707)
+    XMLVM_CHECK_NPE(2)
     ((java_nio_charset_CharsetEncoder*) _r2.o)->fields.java_nio_charset_CharsetEncoder.malformAction_ = _r3.o;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 708)
     XMLVM_CHECK_NPE(2)
@@ -1700,6 +1746,7 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_onUnmappableCharacter___java_nio_cha
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 731)
+    XMLVM_CHECK_NPE(2)
     ((java_nio_charset_CharsetEncoder*) _r2.o)->fields.java_nio_charset_CharsetEncoder.unmapAction_ = _r3.o;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 732)
     XMLVM_CHECK_NPE(2)
@@ -1718,6 +1765,7 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_replacement__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 742)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_charset_CharsetEncoder*) _r1.o)->fields.java_nio_charset_CharsetEncoder.replace_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1739,6 +1787,7 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_replaceWith___byte_1ARRAY(JAVA_OBJEC
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r3.o));
     if (_r0.i == 0) goto label19;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 765)
+    XMLVM_CHECK_NPE(2)
     _r0.f = ((java_nio_charset_CharsetEncoder*) _r2.o)->fields.java_nio_charset_CharsetEncoder.maxBytes_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r3.o));
     _r1.f = (JAVA_FLOAT) _r1.i;
@@ -1759,6 +1808,7 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_replaceWith___byte_1ARRAY(JAVA_OBJEC
     XMLVM_THROW_CUSTOM(_r0.o)
     label31:;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 770)
+    XMLVM_CHECK_NPE(2)
     ((java_nio_charset_CharsetEncoder*) _r2.o)->fields.java_nio_charset_CharsetEncoder.replace_ = _r3.o;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 771)
     XMLVM_CHECK_NPE(2)
@@ -1778,6 +1828,7 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_reset__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 783)
     _r0.i = 4;
+    XMLVM_CHECK_NPE(1)
     ((java_nio_charset_CharsetEncoder*) _r1.o)->fields.java_nio_charset_CharsetEncoder.status_ = _r0.i;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 784)
     XMLVM_CHECK_NPE(1)
@@ -1796,6 +1847,7 @@ JAVA_OBJECT java_nio_charset_CharsetEncoder_unmappableCharacterAction__(JAVA_OBJ
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CharsetEncoder.java", 796)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_charset_CharsetEncoder*) _r1.o)->fields.java_nio_charset_CharsetEncoder.unmapAction_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

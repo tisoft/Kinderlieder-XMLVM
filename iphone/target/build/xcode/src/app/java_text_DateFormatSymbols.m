@@ -868,7 +868,7 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     _r6.o = __NEW_java_util_ArrayList();
     XMLVM_CHECK_NPE(6)
     java_util_ArrayList___INIT___(_r6.o);
-    XMLVM_TRY_BEGIN(w28519aaac15b1b7)
+    XMLVM_TRY_BEGIN(w28521aaac15b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 138)
     _r25.o = __NEW_java_util_HashMap();
@@ -876,12 +876,12 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     java_util_HashMap___INIT___(_r25.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28519aaac15b1b7)
-        XMLVM_CATCH_SPECIFIC(w28519aaac15b1b7,java_util_MissingResourceException,485)
-    XMLVM_CATCH_END(w28519aaac15b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28519aaac15b1b7)
+    XMLVM_CATCH_BEGIN(w28521aaac15b1b7)
+        XMLVM_CATCH_SPECIFIC(w28521aaac15b1b7,java_util_MissingResourceException,485)
+    XMLVM_CATCH_END(w28521aaac15b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28521aaac15b1b7)
     label10:;
-    XMLVM_TRY_BEGIN(w28519aaac15b1b9)
+    XMLVM_TRY_BEGIN(w28521aaac15b1b9)
     // Begin try
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 141)
     _r16.i = 0;
@@ -905,12 +905,12 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     _r5.i = 0;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28519aaac15b1b9)
-        XMLVM_CATCH_SPECIFIC(w28519aaac15b1b9,java_util_MissingResourceException,485)
-    XMLVM_CATCH_END(w28519aaac15b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28519aaac15b1b9)
+    XMLVM_CATCH_BEGIN(w28521aaac15b1b9)
+        XMLVM_CATCH_SPECIFIC(w28521aaac15b1b9,java_util_MissingResourceException,485)
+    XMLVM_CATCH_END(w28521aaac15b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28521aaac15b1b9)
     label36:;
-    XMLVM_TRY_BEGIN(w28519aaac15b1c11)
+    XMLVM_TRY_BEGIN(w28521aaac15b1c11)
     // Begin try
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 145)
     _r0 = _r29;
@@ -918,7 +918,7 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     _r31 = _r0;
     _r0 = _r5;
     _r1 = _r31;
-    if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w28519aaac15b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28519aaac15b1c11, sizeof(XMLVM_JMP_BUF)); goto label265; };
+    if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w28521aaac15b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28521aaac15b1c11, sizeof(XMLVM_JMP_BUF)); goto label265; };
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 147)
     XMLVM_CHECK_NPE(29)
     XMLVM_CHECK_ARRAY_BOUNDS(_r29.o, _r5.i);
@@ -951,7 +951,7 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     _r32.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r32.o)->tib->vtable[5])(_r32.o);
     XMLVM_CHECK_NPE(31)
     _r26.o = java_util_Properties_getProperty___java_lang_String(_r31.o, _r32.o);
-    if (_r26.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w28519aaac15b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28519aaac15b1c11, sizeof(XMLVM_JMP_BUF)); goto label121; };
+    if (_r26.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w28521aaac15b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28521aaac15b1c11, sizeof(XMLVM_JMP_BUF)); goto label121; };
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 149)
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 150)
     _r31.o = java_text_DateFormatSymbols_GET_properties();
@@ -975,15 +975,15 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     _r26.o = java_util_Properties_getProperty___java_lang_String(_r31.o, _r32.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28519aaac15b1c11)
-        XMLVM_CATCH_SPECIFIC(w28519aaac15b1c11,java_util_MissingResourceException,485)
-    XMLVM_CATCH_END(w28519aaac15b1c11)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28519aaac15b1c11)
+    XMLVM_CATCH_BEGIN(w28521aaac15b1c11)
+        XMLVM_CATCH_SPECIFIC(w28521aaac15b1c11,java_util_MissingResourceException,485)
+    XMLVM_CATCH_END(w28521aaac15b1c11)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28521aaac15b1c11)
     label121:;
-    XMLVM_TRY_BEGIN(w28519aaac15b1c13)
+    XMLVM_TRY_BEGIN(w28521aaac15b1c13)
     // Begin try
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 151)
-    if (_r26.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w28519aaac15b1c13->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28519aaac15b1c13, sizeof(XMLVM_JMP_BUF)); goto label127; };
+    if (_r26.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w28521aaac15b1c13->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28521aaac15b1c13, sizeof(XMLVM_JMP_BUF)); goto label127; };
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 152)
     _r31.i = 0;
     XMLVM_CHECK_NPE(24)
@@ -991,12 +991,12 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r24.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r31.i] = _r26.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28519aaac15b1c13)
-        XMLVM_CATCH_SPECIFIC(w28519aaac15b1c13,java_util_MissingResourceException,485)
-    XMLVM_CATCH_END(w28519aaac15b1c13)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28519aaac15b1c13)
+    XMLVM_CATCH_BEGIN(w28521aaac15b1c13)
+        XMLVM_CATCH_SPECIFIC(w28521aaac15b1c13,java_util_MissingResourceException,485)
+    XMLVM_CATCH_END(w28521aaac15b1c13)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28521aaac15b1c13)
     label127:;
-    XMLVM_TRY_BEGIN(w28519aaac15b1c15)
+    XMLVM_TRY_BEGIN(w28521aaac15b1c15)
     // Begin try
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 153)
     _r0 = _r24;
@@ -1005,7 +1005,7 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     _r32.i = 5;
     _r0 = _r31;
     _r1 = _r32;
-    if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w28519aaac15b1c15->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28519aaac15b1c15, sizeof(XMLVM_JMP_BUF)); goto label193; };
+    if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w28521aaac15b1c15->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28521aaac15b1c15, sizeof(XMLVM_JMP_BUF)); goto label193; };
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 155)
     _r31.i = 5;
     _r0 = _r31;
@@ -1030,19 +1030,19 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     _r8 = _r0;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28519aaac15b1c15)
-        XMLVM_CATCH_SPECIFIC(w28519aaac15b1c15,java_util_MissingResourceException,485)
-    XMLVM_CATCH_END(w28519aaac15b1c15)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28519aaac15b1c15)
+    XMLVM_CATCH_BEGIN(w28521aaac15b1c15)
+        XMLVM_CATCH_SPECIFIC(w28521aaac15b1c15,java_util_MissingResourceException,485)
+    XMLVM_CATCH_END(w28521aaac15b1c15)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28521aaac15b1c15)
     label174:;
-    XMLVM_TRY_BEGIN(w28519aaac15b1c17)
+    XMLVM_TRY_BEGIN(w28521aaac15b1c17)
     // Begin try
     _r0 = _r21;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r31 = _r0;
     _r0 = _r8;
     _r1 = _r31;
-    if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w28519aaac15b1c17->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28519aaac15b1c17, sizeof(XMLVM_JMP_BUF)); goto label191; };
+    if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w28521aaac15b1c17->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28521aaac15b1c17, sizeof(XMLVM_JMP_BUF)); goto label191; };
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 158)
     // ""
     _r31.o = xmlvm_create_java_string_from_pool(0);
@@ -1050,26 +1050,26 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     XMLVM_CHECK_ARRAY_BOUNDS(_r21.o, _r8.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r21.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r31.o;
     _r8.i = _r8.i + 1;
-    { XMLVM_MEMCPY(curThread_w28519aaac15b1c17->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28519aaac15b1c17, sizeof(XMLVM_JMP_BUF)); goto label174; };
+    { XMLVM_MEMCPY(curThread_w28521aaac15b1c17->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28521aaac15b1c17, sizeof(XMLVM_JMP_BUF)); goto label174; };
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 159)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28519aaac15b1c17)
-        XMLVM_CATCH_SPECIFIC(w28519aaac15b1c17,java_util_MissingResourceException,485)
-    XMLVM_CATCH_END(w28519aaac15b1c17)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28519aaac15b1c17)
+    XMLVM_CATCH_BEGIN(w28521aaac15b1c17)
+        XMLVM_CATCH_SPECIFIC(w28521aaac15b1c17,java_util_MissingResourceException,485)
+    XMLVM_CATCH_END(w28521aaac15b1c17)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28521aaac15b1c17)
     label191:;
-    XMLVM_TRY_BEGIN(w28519aaac15b1c19)
+    XMLVM_TRY_BEGIN(w28521aaac15b1c19)
     // Begin try
     _r24 = _r21;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28519aaac15b1c19)
-        XMLVM_CATCH_SPECIFIC(w28519aaac15b1c19,java_util_MissingResourceException,485)
-    XMLVM_CATCH_END(w28519aaac15b1c19)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28519aaac15b1c19)
+    XMLVM_CATCH_BEGIN(w28521aaac15b1c19)
+        XMLVM_CATCH_SPECIFIC(w28521aaac15b1c19,java_util_MissingResourceException,485)
+    XMLVM_CATCH_END(w28521aaac15b1c19)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28521aaac15b1c19)
     label193:;
-    XMLVM_TRY_BEGIN(w28519aaac15b1c21)
+    XMLVM_TRY_BEGIN(w28521aaac15b1c21)
     // Begin try
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 161)
     _r31.i = 0;
@@ -1081,7 +1081,7 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     XMLVM_CHECK_NPE(0)
     _r12.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_get___java_lang_Object])(_r0.o, _r1.o);
     _r12.o = _r12.o;
-    if (_r12.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w28519aaac15b1c21->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28519aaac15b1c21, sizeof(XMLVM_JMP_BUF)); goto label248; };
+    if (_r12.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w28521aaac15b1c21->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28521aaac15b1c21, sizeof(XMLVM_JMP_BUF)); goto label248; };
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 162)
     _r0 = _r12;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
@@ -1089,24 +1089,24 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     _r32.i = 1;
     _r0 = _r31;
     _r1 = _r32;
-    if (_r0.i <= _r1.i) { XMLVM_MEMCPY(curThread_w28519aaac15b1c21->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28519aaac15b1c21, sizeof(XMLVM_JMP_BUF)); goto label248; };
+    if (_r0.i <= _r1.i) { XMLVM_MEMCPY(curThread_w28521aaac15b1c21->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28521aaac15b1c21, sizeof(XMLVM_JMP_BUF)); goto label248; };
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 164)
     _r8.i = 1;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28519aaac15b1c21)
-        XMLVM_CATCH_SPECIFIC(w28519aaac15b1c21,java_util_MissingResourceException,485)
-    XMLVM_CATCH_END(w28519aaac15b1c21)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28519aaac15b1c21)
+    XMLVM_CATCH_BEGIN(w28521aaac15b1c21)
+        XMLVM_CATCH_SPECIFIC(w28521aaac15b1c21,java_util_MissingResourceException,485)
+    XMLVM_CATCH_END(w28521aaac15b1c21)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28521aaac15b1c21)
     label222:;
-    XMLVM_TRY_BEGIN(w28519aaac15b1c23)
+    XMLVM_TRY_BEGIN(w28521aaac15b1c23)
     // Begin try
     _r0 = _r12;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r31 = _r0;
     _r0 = _r8;
     _r1 = _r31;
-    if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w28519aaac15b1c23->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28519aaac15b1c23, sizeof(XMLVM_JMP_BUF)); goto label248; };
+    if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w28521aaac15b1c23->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28521aaac15b1c23, sizeof(XMLVM_JMP_BUF)); goto label248; };
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 165)
     XMLVM_CHECK_NPE(12)
     XMLVM_CHECK_ARRAY_BOUNDS(_r12.o, _r8.i);
@@ -1116,7 +1116,7 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(31)
     _r31.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r31.o)->tib->vtable[1])(_r31.o, _r32.o);
-    if (_r31.i != 0) { XMLVM_MEMCPY(curThread_w28519aaac15b1c23->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28519aaac15b1c23, sizeof(XMLVM_JMP_BUF)); goto label245; };
+    if (_r31.i != 0) { XMLVM_MEMCPY(curThread_w28521aaac15b1c23->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28521aaac15b1c23, sizeof(XMLVM_JMP_BUF)); goto label245; };
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 166)
     XMLVM_CHECK_NPE(12)
     XMLVM_CHECK_ARRAY_BOUNDS(_r12.o, _r8.i);
@@ -1126,24 +1126,24 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r24.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r31.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28519aaac15b1c23)
-        XMLVM_CATCH_SPECIFIC(w28519aaac15b1c23,java_util_MissingResourceException,485)
-    XMLVM_CATCH_END(w28519aaac15b1c23)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28519aaac15b1c23)
+    XMLVM_CATCH_BEGIN(w28521aaac15b1c23)
+        XMLVM_CATCH_SPECIFIC(w28521aaac15b1c23,java_util_MissingResourceException,485)
+    XMLVM_CATCH_END(w28521aaac15b1c23)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28521aaac15b1c23)
     label245:;
-    XMLVM_TRY_BEGIN(w28519aaac15b1c25)
+    XMLVM_TRY_BEGIN(w28521aaac15b1c25)
     // Begin try
     _r8.i = _r8.i + 1;
-    { XMLVM_MEMCPY(curThread_w28519aaac15b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28519aaac15b1c25, sizeof(XMLVM_JMP_BUF)); goto label222; };
+    { XMLVM_MEMCPY(curThread_w28521aaac15b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28521aaac15b1c25, sizeof(XMLVM_JMP_BUF)); goto label222; };
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 168)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28519aaac15b1c25)
-        XMLVM_CATCH_SPECIFIC(w28519aaac15b1c25,java_util_MissingResourceException,485)
-    XMLVM_CATCH_END(w28519aaac15b1c25)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28519aaac15b1c25)
+    XMLVM_CATCH_BEGIN(w28521aaac15b1c25)
+        XMLVM_CATCH_SPECIFIC(w28521aaac15b1c25,java_util_MissingResourceException,485)
+    XMLVM_CATCH_END(w28521aaac15b1c25)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28521aaac15b1c25)
     label248:;
-    XMLVM_TRY_BEGIN(w28519aaac15b1c27)
+    XMLVM_TRY_BEGIN(w28521aaac15b1c27)
     // Begin try
     _r31.i = 0;
     XMLVM_CHECK_NPE(24)
@@ -1155,23 +1155,23 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_put___java_lang_Object_java_lang_Object])(_r0.o, _r1.o, _r2.o);
     _r5.i = _r5.i + 1;
-    { XMLVM_MEMCPY(curThread_w28519aaac15b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28519aaac15b1c27, sizeof(XMLVM_JMP_BUF)); goto label36; };
+    { XMLVM_MEMCPY(curThread_w28521aaac15b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28521aaac15b1c27, sizeof(XMLVM_JMP_BUF)); goto label36; };
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 170)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28519aaac15b1c27)
-        XMLVM_CATCH_SPECIFIC(w28519aaac15b1c27,java_util_MissingResourceException,485)
-    XMLVM_CATCH_END(w28519aaac15b1c27)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28519aaac15b1c27)
+    XMLVM_CATCH_BEGIN(w28521aaac15b1c27)
+        XMLVM_CATCH_SPECIFIC(w28521aaac15b1c27,java_util_MissingResourceException,485)
+    XMLVM_CATCH_END(w28521aaac15b1c27)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28521aaac15b1c27)
     label265:;
-    XMLVM_TRY_BEGIN(w28519aaac15b1c29)
+    XMLVM_TRY_BEGIN(w28521aaac15b1c29)
     // Begin try
     XMLVM_CHECK_NPE(35)
     _r31.o = java_util_ResourceBundle_getLocale__(_r35.o);
     _r32.o = java_util_Locale_GET_ROOT();
     _r0 = _r31;
     _r1 = _r32;
-    if (_r0.o != _r1.o) { XMLVM_MEMCPY(curThread_w28519aaac15b1c29->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28519aaac15b1c29, sizeof(XMLVM_JMP_BUF)); goto label655; };
+    if (_r0.o != _r1.o) { XMLVM_MEMCPY(curThread_w28521aaac15b1c29->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28521aaac15b1c29, sizeof(XMLVM_JMP_BUF)); goto label655; };
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 178)
     XMLVM_CHECK_NPE(25)
     _r31.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r25.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_values__])(_r25.o);
@@ -1179,16 +1179,16 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     _r13.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r31.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_iterator__])(_r31.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28519aaac15b1c29)
-        XMLVM_CATCH_SPECIFIC(w28519aaac15b1c29,java_util_MissingResourceException,485)
-    XMLVM_CATCH_END(w28519aaac15b1c29)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28519aaac15b1c29)
+    XMLVM_CATCH_BEGIN(w28521aaac15b1c29)
+        XMLVM_CATCH_SPECIFIC(w28521aaac15b1c29,java_util_MissingResourceException,485)
+    XMLVM_CATCH_END(w28521aaac15b1c29)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28521aaac15b1c29)
     label285:;
-    XMLVM_TRY_BEGIN(w28519aaac15b1c31)
+    XMLVM_TRY_BEGIN(w28521aaac15b1c31)
     // Begin try
     XMLVM_CHECK_NPE(13)
     _r31.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r13.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_hasNext__])(_r13.o);
-    if (_r31.i == 0) { XMLVM_MEMCPY(curThread_w28519aaac15b1c31->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28519aaac15b1c31, sizeof(XMLVM_JMP_BUF)); goto label675; };
+    if (_r31.i == 0) { XMLVM_MEMCPY(curThread_w28521aaac15b1c31->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28521aaac15b1c31, sizeof(XMLVM_JMP_BUF)); goto label675; };
     XMLVM_CHECK_NPE(13)
     _r30.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r13.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_next__])(_r13.o);
     _r30.o = _r30.o;
@@ -1202,7 +1202,7 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(31)
     _r31.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r31.o)->tib->vtable[1])(_r31.o, _r32.o);
-    if (_r31.i == 0) { XMLVM_MEMCPY(curThread_w28519aaac15b1c31->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28519aaac15b1c31, sizeof(XMLVM_JMP_BUF)); goto label285; };
+    if (_r31.i == 0) { XMLVM_MEMCPY(curThread_w28521aaac15b1c31->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28521aaac15b1c31, sizeof(XMLVM_JMP_BUF)); goto label285; };
     _r31.i = 2;
     XMLVM_CHECK_NPE(30)
     XMLVM_CHECK_ARRAY_BOUNDS(_r30.o, _r31.i);
@@ -1212,7 +1212,7 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(31)
     _r31.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r31.o)->tib->vtable[1])(_r31.o, _r32.o);
-    if (_r31.i == 0) { XMLVM_MEMCPY(curThread_w28519aaac15b1c31->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28519aaac15b1c31, sizeof(XMLVM_JMP_BUF)); goto label285; };
+    if (_r31.i == 0) { XMLVM_MEMCPY(curThread_w28521aaac15b1c31->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28521aaac15b1c31, sizeof(XMLVM_JMP_BUF)); goto label285; };
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 182)
     _r31.o = java_text_DateFormatSymbols_GET_properties();
     //java_util_Properties_entrySet__[16]
@@ -1222,16 +1222,16 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     _r14.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r31.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Set_iterator__])(_r31.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28519aaac15b1c31)
-        XMLVM_CATCH_SPECIFIC(w28519aaac15b1c31,java_util_MissingResourceException,485)
-    XMLVM_CATCH_END(w28519aaac15b1c31)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28519aaac15b1c31)
+    XMLVM_CATCH_BEGIN(w28521aaac15b1c31)
+        XMLVM_CATCH_SPECIFIC(w28521aaac15b1c31,java_util_MissingResourceException,485)
+    XMLVM_CATCH_END(w28521aaac15b1c31)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28521aaac15b1c31)
     label331:;
-    XMLVM_TRY_BEGIN(w28519aaac15b1c33)
+    XMLVM_TRY_BEGIN(w28521aaac15b1c33)
     // Begin try
     XMLVM_CHECK_NPE(14)
     _r31.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r14.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_hasNext__])(_r14.o);
-    if (_r31.i == 0) { XMLVM_MEMCPY(curThread_w28519aaac15b1c33->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28519aaac15b1c33, sizeof(XMLVM_JMP_BUF)); goto label285; };
+    if (_r31.i == 0) { XMLVM_MEMCPY(curThread_w28521aaac15b1c33->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28521aaac15b1c33, sizeof(XMLVM_JMP_BUF)); goto label285; };
     XMLVM_CHECK_NPE(14)
     _r11.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r14.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_next__])(_r14.o);
     _r11.o = _r11.o;
@@ -1249,7 +1249,7 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
     _r31.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r1.o);
-    if (_r31.i == 0) { XMLVM_MEMCPY(curThread_w28519aaac15b1c33->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28519aaac15b1c33, sizeof(XMLVM_JMP_BUF)); goto label331; };
+    if (_r31.i == 0) { XMLVM_MEMCPY(curThread_w28521aaac15b1c33->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28521aaac15b1c33, sizeof(XMLVM_JMP_BUF)); goto label331; };
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 187)
     XMLVM_CHECK_NPE(11)
     _r17.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r11.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_Entry_getKey__])(_r11.o);
@@ -1289,7 +1289,7 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     _r32.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r32.o)->tib->vtable[5])(_r32.o);
     XMLVM_CHECK_NPE(31)
     _r26.o = java_util_Properties_getProperty___java_lang_String(_r31.o, _r32.o);
-    if (_r26.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w28519aaac15b1c33->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28519aaac15b1c33, sizeof(XMLVM_JMP_BUF)); goto label459; };
+    if (_r26.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w28521aaac15b1c33->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28521aaac15b1c33, sizeof(XMLVM_JMP_BUF)); goto label459; };
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 190)
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 191)
     _r31.o = java_text_DateFormatSymbols_GET_properties();
@@ -1311,15 +1311,15 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     _r26.o = java_util_Properties_getProperty___java_lang_String(_r31.o, _r32.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28519aaac15b1c33)
-        XMLVM_CATCH_SPECIFIC(w28519aaac15b1c33,java_util_MissingResourceException,485)
-    XMLVM_CATCH_END(w28519aaac15b1c33)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28519aaac15b1c33)
+    XMLVM_CATCH_BEGIN(w28521aaac15b1c33)
+        XMLVM_CATCH_SPECIFIC(w28521aaac15b1c33,java_util_MissingResourceException,485)
+    XMLVM_CATCH_END(w28521aaac15b1c33)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28521aaac15b1c33)
     label459:;
-    XMLVM_TRY_BEGIN(w28519aaac15b1c35)
+    XMLVM_TRY_BEGIN(w28521aaac15b1c35)
     // Begin try
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 192)
-    if (_r26.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w28519aaac15b1c35->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28519aaac15b1c35, sizeof(XMLVM_JMP_BUF)); goto label331; };
+    if (_r26.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w28521aaac15b1c35->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28521aaac15b1c35, sizeof(XMLVM_JMP_BUF)); goto label331; };
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 194)
     XMLVM_CHECK_NPE(25)
     _r22.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r25.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_get___java_lang_Object])(_r25.o, _r26.o);
@@ -1344,15 +1344,15 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r30.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r31.i] = _r32.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28519aaac15b1c35)
-        XMLVM_CATCH_SPECIFIC(w28519aaac15b1c35,java_util_MissingResourceException,485)
-    XMLVM_CATCH_END(w28519aaac15b1c35)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28519aaac15b1c35)
+    XMLVM_CATCH_BEGIN(w28521aaac15b1c35)
+        XMLVM_CATCH_SPECIFIC(w28521aaac15b1c35,java_util_MissingResourceException,485)
+    XMLVM_CATCH_END(w28521aaac15b1c35)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28521aaac15b1c35)
     goto label331;
     label485:;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 204)
-    java_lang_Thread* curThread_w28519aaac15b1c39 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r31.o = curThread_w28519aaac15b1c39->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w28521aaac15b1c39 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r31.o = curThread_w28521aaac15b1c39->fields.java_lang_Thread.xmlvmException_;
     label486:;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 210)
     if (!__TIB_java_util_spi_TimeZoneNameProvider.classInitialized) __INIT_java_util_spi_TimeZoneNameProvider();
@@ -1482,7 +1482,7 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     _r14.i = _r14.i + 1;
     goto label543;
     label655:;
-    XMLVM_TRY_BEGIN(w28519aaac15b1d136)
+    XMLVM_TRY_BEGIN(w28521aaac15b1d136)
     // Begin try
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 173)
     // "gnu.java.locale.LocaleInformation"
@@ -1493,16 +1493,16 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     _r33.o = java_lang_ClassLoader_getSystemClassLoader__();
     _r35.o = java_util_ResourceBundle_getBundle___java_lang_String_java_util_Locale_java_lang_ClassLoader(_r31.o, _r32.o, _r33.o);
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 176)
-    { XMLVM_MEMCPY(curThread_w28519aaac15b1d136->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28519aaac15b1d136, sizeof(XMLVM_JMP_BUF)); goto label10; };
+    { XMLVM_MEMCPY(curThread_w28521aaac15b1d136->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28521aaac15b1d136, sizeof(XMLVM_JMP_BUF)); goto label10; };
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 202)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28519aaac15b1d136)
-        XMLVM_CATCH_SPECIFIC(w28519aaac15b1d136,java_util_MissingResourceException,485)
-    XMLVM_CATCH_END(w28519aaac15b1d136)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28519aaac15b1d136)
+    XMLVM_CATCH_BEGIN(w28521aaac15b1d136)
+        XMLVM_CATCH_SPECIFIC(w28521aaac15b1d136,java_util_MissingResourceException,485)
+    XMLVM_CATCH_END(w28521aaac15b1d136)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28521aaac15b1d136)
     label675:;
-    XMLVM_TRY_BEGIN(w28519aaac15b1d138)
+    XMLVM_TRY_BEGIN(w28521aaac15b1d138)
     // Begin try
     XMLVM_CHECK_NPE(25)
     _r31.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r25.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_values__])(_r25.o);
@@ -1512,10 +1512,10 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings___java_util_ResourceBundl
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_addAll___java_util_Collection])(_r0.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28519aaac15b1d138)
-        XMLVM_CATCH_SPECIFIC(w28519aaac15b1d138,java_util_MissingResourceException,485)
-    XMLVM_CATCH_END(w28519aaac15b1d138)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28519aaac15b1d138)
+    XMLVM_CATCH_BEGIN(w28521aaac15b1d138)
+        XMLVM_CATCH_SPECIFIC(w28521aaac15b1d138,java_util_MissingResourceException,485)
+    XMLVM_CATCH_END(w28521aaac15b1d138)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28521aaac15b1d138)
     goto label486;
     label687:;
     _r14.i = _r14.i + 1;
@@ -1621,6 +1621,7 @@ void java_text_DateFormatSymbols___INIT____java_util_Locale(JAVA_OBJECT me, JAVA
     _r1.o = xmlvm_create_java_string_from_pool(2400);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_split___java_lang_String(_r0.o, _r2.o);
+    XMLVM_CHECK_NPE(5)
     ((java_text_DateFormatSymbols*) _r5.o)->fields.java_text_DateFormatSymbols.ampms_ = _r0.o;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 283)
     // "BCE\256CE\256"
@@ -1629,10 +1630,12 @@ void java_text_DateFormatSymbols___INIT____java_util_Locale(JAVA_OBJECT me, JAVA
     _r1.o = xmlvm_create_java_string_from_pool(2400);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_split___java_lang_String(_r0.o, _r2.o);
+    XMLVM_CHECK_NPE(5)
     ((java_text_DateFormatSymbols*) _r5.o)->fields.java_text_DateFormatSymbols.eras_ = _r0.o;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 284)
     // "GyMdkHmsSEDFwWahKzYeugAZvcL"
     _r0.o = xmlvm_create_java_string_from_pool(2409);
+    XMLVM_CHECK_NPE(5)
     ((java_text_DateFormatSymbols*) _r5.o)->fields.java_text_DateFormatSymbols.localPatternChars_ = _r0.o;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 285)
     // "\256\256\256\256\256\256\256\256\256\256\256\256\256"
@@ -1641,6 +1644,7 @@ void java_text_DateFormatSymbols___INIT____java_util_Locale(JAVA_OBJECT me, JAVA
     _r0.o = xmlvm_create_java_string_from_pool(2400);
     XMLVM_CHECK_NPE(4)
     _r0.o = java_lang_String_split___java_lang_String(_r4.o, _r2.o);
+    XMLVM_CHECK_NPE(5)
     ((java_text_DateFormatSymbols*) _r5.o)->fields.java_text_DateFormatSymbols.months_ = _r0.o;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 286)
     // "\256\256\256\256\256\256\256\256\256\256\256\256\256"
@@ -1649,6 +1653,7 @@ void java_text_DateFormatSymbols___INIT____java_util_Locale(JAVA_OBJECT me, JAVA
     _r0.o = xmlvm_create_java_string_from_pool(2400);
     XMLVM_CHECK_NPE(4)
     _r0.o = java_lang_String_split___java_lang_String(_r4.o, _r2.o);
+    XMLVM_CHECK_NPE(5)
     ((java_text_DateFormatSymbols*) _r5.o)->fields.java_text_DateFormatSymbols.shortMonths_ = _r0.o;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 287)
     // "\256\256\256\256\256\256\256\256"
@@ -1657,6 +1662,7 @@ void java_text_DateFormatSymbols___INIT____java_util_Locale(JAVA_OBJECT me, JAVA
     _r0.o = xmlvm_create_java_string_from_pool(2400);
     XMLVM_CHECK_NPE(3)
     _r0.o = java_lang_String_split___java_lang_String(_r3.o, _r2.o);
+    XMLVM_CHECK_NPE(5)
     ((java_text_DateFormatSymbols*) _r5.o)->fields.java_text_DateFormatSymbols.shortWeekdays_ = _r0.o;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 288)
     // "\256\256\256\256\256\256\256\256"
@@ -1665,6 +1671,7 @@ void java_text_DateFormatSymbols___INIT____java_util_Locale(JAVA_OBJECT me, JAVA
     _r0.o = xmlvm_create_java_string_from_pool(2400);
     XMLVM_CHECK_NPE(3)
     _r0.o = java_lang_String_split___java_lang_String(_r3.o, _r2.o);
+    XMLVM_CHECK_NPE(5)
     ((java_text_DateFormatSymbols*) _r5.o)->fields.java_text_DateFormatSymbols.weekdays_ = _r0.o;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 289)
     // "EEEE, yyyy MMMM dd\256yyyy MMMM d\256yyyy MMM d\256yyyy-MM-dd\256"
@@ -1673,6 +1680,7 @@ void java_text_DateFormatSymbols___INIT____java_util_Locale(JAVA_OBJECT me, JAVA
     _r1.o = xmlvm_create_java_string_from_pool(2400);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_split___java_lang_String(_r0.o, _r2.o);
+    XMLVM_CHECK_NPE(5)
     ((java_text_DateFormatSymbols*) _r5.o)->fields.java_text_DateFormatSymbols.dateFormats_ = _r0.o;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 290)
     // "HH:mm:ss z\256HH:mm:ss z\256HH:mm:ss\256HH:mm\256"
@@ -1681,11 +1689,13 @@ void java_text_DateFormatSymbols___INIT____java_util_Locale(JAVA_OBJECT me, JAVA
     _r1.o = xmlvm_create_java_string_from_pool(2400);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_split___java_lang_String(_r0.o, _r2.o);
+    XMLVM_CHECK_NPE(5)
     ((java_text_DateFormatSymbols*) _r5.o)->fields.java_text_DateFormatSymbols.timeFormats_ = _r0.o;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 291)
     _r0.i = 0;
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_String_1ARRAY, _r0.i);
+    XMLVM_CHECK_NPE(5)
     ((java_text_DateFormatSymbols*) _r5.o)->fields.java_text_DateFormatSymbols.runtimeZoneStrings_ = _r0.o;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 292)
     XMLVM_EXIT_METHOD()
@@ -1718,6 +1728,7 @@ JAVA_OBJECT java_text_DateFormatSymbols_getAmPmStrings__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 319)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.ampms_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1732,6 +1743,7 @@ JAVA_OBJECT java_text_DateFormatSymbols_getEras__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 331)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.eras_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1746,6 +1758,7 @@ JAVA_OBJECT java_text_DateFormatSymbols_getLocalPatternChars__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 368)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.localPatternChars_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1760,6 +1773,7 @@ JAVA_OBJECT java_text_DateFormatSymbols_getMonths__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 382)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.months_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1774,6 +1788,7 @@ JAVA_OBJECT java_text_DateFormatSymbols_getShortMonths__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 396)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.shortMonths_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1788,6 +1803,7 @@ JAVA_OBJECT java_text_DateFormatSymbols_getShortWeekdays__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 410)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.shortWeekdays_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1802,6 +1818,7 @@ JAVA_OBJECT java_text_DateFormatSymbols_getWeekdays__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 424)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.weekdays_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1816,15 +1833,18 @@ JAVA_OBJECT java_text_DateFormatSymbols_getZoneStrings__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 451)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.zoneStrings_;
     if (_r0.o == JAVA_NULL) goto label7;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 452)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.zoneStrings_;
     label6:;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 453)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label7:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.runtimeZoneStrings_;
     goto label6;
     //XMLVM_END_WRAPPER
@@ -1848,6 +1868,7 @@ void java_text_DateFormatSymbols_setAmPmStrings___java_lang_String_1ARRAY(JAVA_O
     XMLVM_THROW_CUSTOM(_r0.o)
     label8:;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 468)
+    XMLVM_CHECK_NPE(1)
     ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.ampms_ = _r2.o;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 469)
     XMLVM_EXIT_METHOD()
@@ -1873,6 +1894,7 @@ void java_text_DateFormatSymbols_setEras___java_lang_String_1ARRAY(JAVA_OBJECT m
     XMLVM_THROW_CUSTOM(_r0.o)
     label8:;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 483)
+    XMLVM_CHECK_NPE(1)
     ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.eras_ = _r2.o;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 484)
     XMLVM_EXIT_METHOD()
@@ -1898,6 +1920,7 @@ void java_text_DateFormatSymbols_setLocalPatternChars___java_lang_String(JAVA_OB
     XMLVM_THROW_CUSTOM(_r0.o)
     label8:;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 523)
+    XMLVM_CHECK_NPE(1)
     ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.localPatternChars_ = _r2.o;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 524)
     XMLVM_EXIT_METHOD()
@@ -1923,6 +1946,7 @@ void java_text_DateFormatSymbols_setMonths___java_lang_String_1ARRAY(JAVA_OBJECT
     XMLVM_THROW_CUSTOM(_r0.o)
     label8:;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 539)
+    XMLVM_CHECK_NPE(1)
     ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.months_ = _r2.o;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 540)
     XMLVM_EXIT_METHOD()
@@ -1948,6 +1972,7 @@ void java_text_DateFormatSymbols_setShortMonths___java_lang_String_1ARRAY(JAVA_O
     XMLVM_THROW_CUSTOM(_r0.o)
     label8:;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 556)
+    XMLVM_CHECK_NPE(1)
     ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.shortMonths_ = _r2.o;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 557)
     XMLVM_EXIT_METHOD()
@@ -1973,6 +1998,7 @@ void java_text_DateFormatSymbols_setShortWeekdays___java_lang_String_1ARRAY(JAVA
     XMLVM_THROW_CUSTOM(_r0.o)
     label8:;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 573)
+    XMLVM_CHECK_NPE(1)
     ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.shortWeekdays_ = _r2.o;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 574)
     XMLVM_EXIT_METHOD()
@@ -1998,6 +2024,7 @@ void java_text_DateFormatSymbols_setWeekdays___java_lang_String_1ARRAY(JAVA_OBJE
     XMLVM_THROW_CUSTOM(_r0.o)
     label8:;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 589)
+    XMLVM_CHECK_NPE(1)
     ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.weekdays_ = _r2.o;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 590)
     XMLVM_EXIT_METHOD()
@@ -2023,6 +2050,7 @@ void java_text_DateFormatSymbols_setZoneStrings___java_lang_String_2ARRAY(JAVA_O
     XMLVM_THROW_CUSTOM(_r0.o)
     label8:;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 611)
+    XMLVM_CHECK_NPE(1)
     ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.zoneStrings_ = _r2.o;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 612)
     XMLVM_EXIT_METHOD()
@@ -2206,35 +2234,51 @@ JAVA_BOOLEAN java_text_DateFormatSymbols_equals___java_lang_Object(JAVA_OBJECT m
     _r0 = _r6;
     _r0.o = _r0.o;
     _r1 = _r0;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_text_DateFormatSymbols*) _r5.o)->fields.java_text_DateFormatSymbols.ampms_;
+    XMLVM_CHECK_NPE(1)
     _r3.o = ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.ampms_;
     _r2.i = java_text_DateFormatSymbols_equals___java_lang_Object_java_lang_Object(_r2.o, _r3.o);
     if (_r2.i == 0) goto label93;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_text_DateFormatSymbols*) _r5.o)->fields.java_text_DateFormatSymbols.eras_;
+    XMLVM_CHECK_NPE(1)
     _r3.o = ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.eras_;
     _r2.i = java_text_DateFormatSymbols_equals___java_lang_Object_java_lang_Object(_r2.o, _r3.o);
     if (_r2.i == 0) goto label93;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_text_DateFormatSymbols*) _r5.o)->fields.java_text_DateFormatSymbols.localPatternChars_;
+    XMLVM_CHECK_NPE(1)
     _r3.o = ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.localPatternChars_;
     _r2.i = java_text_DateFormatSymbols_equals___java_lang_Object_java_lang_Object(_r2.o, _r3.o);
     if (_r2.i == 0) goto label93;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_text_DateFormatSymbols*) _r5.o)->fields.java_text_DateFormatSymbols.months_;
+    XMLVM_CHECK_NPE(1)
     _r3.o = ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.months_;
     _r2.i = java_text_DateFormatSymbols_equals___java_lang_Object_java_lang_Object(_r2.o, _r3.o);
     if (_r2.i == 0) goto label93;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_text_DateFormatSymbols*) _r5.o)->fields.java_text_DateFormatSymbols.shortMonths_;
+    XMLVM_CHECK_NPE(1)
     _r3.o = ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.shortMonths_;
     _r2.i = java_text_DateFormatSymbols_equals___java_lang_Object_java_lang_Object(_r2.o, _r3.o);
     if (_r2.i == 0) goto label93;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_text_DateFormatSymbols*) _r5.o)->fields.java_text_DateFormatSymbols.shortWeekdays_;
+    XMLVM_CHECK_NPE(1)
     _r3.o = ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.shortWeekdays_;
     _r2.i = java_text_DateFormatSymbols_equals___java_lang_Object_java_lang_Object(_r2.o, _r3.o);
     if (_r2.i == 0) goto label93;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_text_DateFormatSymbols*) _r5.o)->fields.java_text_DateFormatSymbols.weekdays_;
+    XMLVM_CHECK_NPE(1)
     _r3.o = ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.weekdays_;
     _r2.i = java_text_DateFormatSymbols_equals___java_lang_Object_java_lang_Object(_r2.o, _r3.o);
     if (_r2.i == 0) goto label93;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_text_DateFormatSymbols*) _r5.o)->fields.java_text_DateFormatSymbols.zoneStrings_;
+    XMLVM_CHECK_NPE(1)
     _r3.o = ((java_text_DateFormatSymbols*) _r1.o)->fields.java_text_DateFormatSymbols.zoneStrings_;
     _r2.i = java_text_DateFormatSymbols_equals___java_lang_Object_java_lang_Object(_r2.o, _r3.o);
     if (_r2.i == 0) goto label93;
@@ -2254,25 +2298,25 @@ JAVA_OBJECT java_text_DateFormatSymbols_clone__(JAVA_OBJECT me)
     XMLVMElem _r1;
     XMLVMElem _r2;
     _r2.o = me;
-    XMLVM_TRY_BEGIN(w28519aaac38b1b2)
+    XMLVM_TRY_BEGIN(w28521aaac38b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 687)
     XMLVM_CHECK_NPE(2)
     _r1.o = java_lang_Object_clone__(_r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28519aaac38b1b2)
-        XMLVM_CATCH_SPECIFIC(w28519aaac38b1b2,java_lang_CloneNotSupportedException,5)
-    XMLVM_CATCH_END(w28519aaac38b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28519aaac38b1b2)
+    XMLVM_CATCH_BEGIN(w28521aaac38b1b2)
+        XMLVM_CATCH_SPECIFIC(w28521aaac38b1b2,java_lang_CloneNotSupportedException,5)
+    XMLVM_CATCH_END(w28521aaac38b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28521aaac38b1b2)
     label4:;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 691)
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label5:;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 689)
-    java_lang_Thread* curThread_w28519aaac38b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w28519aaac38b1b8->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w28521aaac38b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w28521aaac38b1b8->fields.java_lang_Thread.xmlvmException_;
     _r1.o = JAVA_NULL;
     goto label4;
     //XMLVM_END_WRAPPER
@@ -2287,26 +2331,34 @@ JAVA_INT java_text_DateFormatSymbols_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 702)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_text_DateFormatSymbols*) _r2.o)->fields.java_text_DateFormatSymbols.ampms_;
     _r0.i = java_text_DateFormatSymbols_hashCode___java_lang_Object(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_text_DateFormatSymbols*) _r2.o)->fields.java_text_DateFormatSymbols.eras_;
     _r1.i = java_text_DateFormatSymbols_hashCode___java_lang_Object(_r1.o);
     _r0.i = _r0.i ^ _r1.i;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_text_DateFormatSymbols*) _r2.o)->fields.java_text_DateFormatSymbols.localPatternChars_;
     _r1.i = java_text_DateFormatSymbols_hashCode___java_lang_Object(_r1.o);
     _r0.i = _r0.i ^ _r1.i;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_text_DateFormatSymbols*) _r2.o)->fields.java_text_DateFormatSymbols.months_;
     _r1.i = java_text_DateFormatSymbols_hashCode___java_lang_Object(_r1.o);
     _r0.i = _r0.i ^ _r1.i;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_text_DateFormatSymbols*) _r2.o)->fields.java_text_DateFormatSymbols.shortMonths_;
     _r1.i = java_text_DateFormatSymbols_hashCode___java_lang_Object(_r1.o);
     _r0.i = _r0.i ^ _r1.i;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_text_DateFormatSymbols*) _r2.o)->fields.java_text_DateFormatSymbols.shortWeekdays_;
     _r1.i = java_text_DateFormatSymbols_hashCode___java_lang_Object(_r1.o);
     _r0.i = _r0.i ^ _r1.i;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_text_DateFormatSymbols*) _r2.o)->fields.java_text_DateFormatSymbols.weekdays_;
     _r1.i = java_text_DateFormatSymbols_hashCode___java_lang_Object(_r1.o);
     _r0.i = _r0.i ^ _r1.i;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_text_DateFormatSymbols*) _r2.o)->fields.java_text_DateFormatSymbols.zoneStrings_;
     _r1.i = java_text_DateFormatSymbols_hashCode___java_lang_Object(_r1.o);
     _r0.i = _r0.i ^ _r1.i;
@@ -2344,7 +2396,7 @@ JAVA_OBJECT java_text_DateFormatSymbols_getInstance___java_util_Locale(JAVA_OBJE
     XMLVMElem _r7;
     XMLVMElem _r8;
     _r8.o = n1;
-    XMLVM_TRY_BEGIN(w28519aaac41b1b2)
+    XMLVM_TRY_BEGIN(w28521aaac41b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 747)
     _r6.o = __NEW_java_text_DateFormatSymbols();
@@ -2352,10 +2404,10 @@ JAVA_OBJECT java_text_DateFormatSymbols_getInstance___java_util_Locale(JAVA_OBJE
     java_text_DateFormatSymbols___INIT____java_util_Locale(_r6.o, _r8.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28519aaac41b1b2)
-        XMLVM_CATCH_SPECIFIC(w28519aaac41b1b2,java_util_MissingResourceException,7)
-    XMLVM_CATCH_END(w28519aaac41b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28519aaac41b1b2)
+    XMLVM_CATCH_BEGIN(w28521aaac41b1b2)
+        XMLVM_CATCH_SPECIFIC(w28521aaac41b1b2,java_util_MissingResourceException,7)
+    XMLVM_CATCH_END(w28521aaac41b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28521aaac41b1b2)
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 748)
     _r7 = _r6;
     label6:;
@@ -2364,8 +2416,8 @@ JAVA_OBJECT java_text_DateFormatSymbols_getInstance___java_util_Locale(JAVA_OBJE
     return _r7.o;
     label7:;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 750)
-    java_lang_Thread* curThread_w28519aaac41b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r7.o = curThread_w28519aaac41b1c10->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w28521aaac41b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r7.o = curThread_w28521aaac41b1c10->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 756)
 
     
@@ -2435,7 +2487,7 @@ void java_text_DateFormatSymbols___CLINIT_()
     XMLVM_CHECK_NPE(1)
     java_util_Properties___INIT___(_r1.o);
     java_text_DateFormatSymbols_PUT_properties( _r1.o);
-    XMLVM_TRY_BEGIN(w28519aaac42b1b5)
+    XMLVM_TRY_BEGIN(w28521aaac42b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 94)
     _r1.o = java_text_DateFormatSymbols_GET_properties();
@@ -2449,10 +2501,10 @@ void java_text_DateFormatSymbols___CLINIT_()
     java_util_Properties_load___java_io_InputStream(_r1.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28519aaac42b1b5)
-        XMLVM_CATCH_SPECIFIC(w28519aaac42b1b5,java_io_IOException,46)
-    XMLVM_CATCH_END(w28519aaac42b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28519aaac42b1b5)
+    XMLVM_CATCH_BEGIN(w28521aaac42b1b5)
+        XMLVM_CATCH_SPECIFIC(w28521aaac42b1b5,java_io_IOException,46)
+    XMLVM_CATCH_END(w28521aaac42b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28521aaac42b1b5)
     label20:;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 115)
     _r1.i = 4;
@@ -2487,8 +2539,8 @@ void java_text_DateFormatSymbols___CLINIT_()
     return;
     label46:;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 96)
-    java_lang_Thread* curThread_w28519aaac42b1c26 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w28519aaac42b1c26->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w28521aaac42b1c26 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w28521aaac42b1c26->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r1;
     XMLVM_SOURCE_POSITION("DateFormatSymbols.java", 98)
     _r1.o = java_lang_System_GET_out();

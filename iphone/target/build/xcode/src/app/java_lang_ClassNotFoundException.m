@@ -325,6 +325,7 @@ void java_lang_ClassNotFoundException___INIT____java_lang_String_java_lang_Throw
     XMLVM_CHECK_NPE(0)
     java_lang_Exception___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("ClassNotFoundException.java", 60)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_ClassNotFoundException*) _r0.o)->fields.java_lang_ClassNotFoundException.ex_ = _r2.o;
     XMLVM_SOURCE_POSITION("ClassNotFoundException.java", 61)
     XMLVM_EXIT_METHOD()
@@ -340,6 +341,7 @@ JAVA_OBJECT java_lang_ClassNotFoundException_getException__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ClassNotFoundException.java", 69)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_ClassNotFoundException*) _r1.o)->fields.java_lang_ClassNotFoundException.ex_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -354,6 +356,7 @@ JAVA_OBJECT java_lang_ClassNotFoundException_getCause__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ClassNotFoundException.java", 80)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_ClassNotFoundException*) _r1.o)->fields.java_lang_ClassNotFoundException.ex_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

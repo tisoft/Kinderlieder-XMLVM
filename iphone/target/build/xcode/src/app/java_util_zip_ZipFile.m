@@ -490,15 +490,18 @@ void java_util_zip_ZipFile___INIT____java_io_File_int(JAVA_OBJECT me, JAVA_OBJEC
     _r0.o = __NEW_java_util_zip_ZipEntry_LittleEndianReader();
     XMLVM_CHECK_NPE(0)
     java_util_zip_ZipEntry_LittleEndianReader___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipFile*) _r3.o)->fields.java_util_zip_ZipFile.ler_ = _r0.o;
     XMLVM_SOURCE_POSITION("ZipFile.java", 67)
     _r0.o = __NEW_java_util_LinkedHashMap();
     XMLVM_CHECK_NPE(0)
     java_util_LinkedHashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipFile*) _r3.o)->fields.java_util_zip_ZipFile.mEntries_ = _r0.o;
     XMLVM_SOURCE_POSITION("ZipFile.java", 96)
     XMLVM_CHECK_NPE(4)
     _r0.o = java_io_File_getPath__(_r4.o);
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipFile*) _r3.o)->fields.java_util_zip_ZipFile.fileName_ = _r0.o;
     XMLVM_SOURCE_POSITION("ZipFile.java", 97)
     _r0.i = 1;
@@ -516,6 +519,7 @@ void java_util_zip_ZipFile___INIT____java_io_File_int(JAVA_OBJECT me, JAVA_OBJEC
     XMLVM_SOURCE_POSITION("ZipFile.java", 102)
     if (_r0.o == JAVA_NULL) goto label46;
     XMLVM_SOURCE_POSITION("ZipFile.java", 103)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_zip_ZipFile*) _r3.o)->fields.java_util_zip_ZipFile.fileName_;
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkRead___java_lang_String(_r0.o, _r1.o);
@@ -526,20 +530,24 @@ void java_util_zip_ZipFile___INIT____java_io_File_int(JAVA_OBJECT me, JAVA_OBJEC
     XMLVM_SOURCE_POSITION("ZipFile.java", 106)
     if (_r0.o == JAVA_NULL) goto label57;
     XMLVM_SOURCE_POSITION("ZipFile.java", 107)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_zip_ZipFile*) _r3.o)->fields.java_util_zip_ZipFile.fileName_;
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkDelete___java_lang_String(_r0.o, _r1.o);
     label57:;
     XMLVM_SOURCE_POSITION("ZipFile.java", 109)
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipFile*) _r3.o)->fields.java_util_zip_ZipFile.fileToDeleteOnClose_ = _r4.o;
     label59:;
     XMLVM_SOURCE_POSITION("ZipFile.java", 114)
     _r0.o = __NEW_java_io_RandomAccessFile();
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_zip_ZipFile*) _r3.o)->fields.java_util_zip_ZipFile.fileName_;
     // "r"
     _r2.o = xmlvm_create_java_string_from_pool(12);
     XMLVM_CHECK_NPE(0)
     java_io_RandomAccessFile___INIT____java_lang_String_java_lang_String(_r0.o, _r1.o, _r2.o);
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipFile*) _r3.o)->fields.java_util_zip_ZipFile.mRaf_ = _r0.o;
     XMLVM_SOURCE_POSITION("ZipFile.java", 116)
     XMLVM_CHECK_NPE(3)
@@ -550,6 +558,7 @@ void java_util_zip_ZipFile___INIT____java_io_File_int(JAVA_OBJECT me, JAVA_OBJEC
     label74:;
     XMLVM_SOURCE_POSITION("ZipFile.java", 111)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipFile*) _r3.o)->fields.java_util_zip_ZipFile.fileToDeleteOnClose_ = _r0.o;
     goto label59;
     //XMLVM_END_WRAPPER
@@ -604,6 +613,7 @@ void java_util_zip_ZipFile_close__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("ZipFile.java", 143)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_zip_ZipFile*) _r3.o)->fields.java_util_zip_ZipFile.mRaf_;
     XMLVM_SOURCE_POSITION("ZipFile.java", 145)
     if (_r0.o == JAVA_NULL) goto label27;
@@ -613,6 +623,7 @@ void java_util_zip_ZipFile_close__(JAVA_OBJECT me)
     _r1.o = JAVA_NULL;
     XMLVM_TRY_BEGIN(w23048aaac11b1c11)
     // Begin try
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipFile*) _r3.o)->fields.java_util_zip_ZipFile.mRaf_ = _r1.o;
     XMLVM_SOURCE_POSITION("ZipFile.java", 148)
     //java_io_RandomAccessFile_close__[6]
@@ -626,6 +637,7 @@ void java_util_zip_ZipFile_close__(JAVA_OBJECT me)
     XMLVM_CATCH_END(w23048aaac11b1c11)
     XMLVM_RESTORE_EXCEPTION_ENV(w23048aaac11b1c11)
     XMLVM_SOURCE_POSITION("ZipFile.java", 150)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_zip_ZipFile*) _r3.o)->fields.java_util_zip_ZipFile.fileToDeleteOnClose_;
     if (_r0.o == JAVA_NULL) goto label27;
     XMLVM_SOURCE_POSITION("ZipFile.java", 151)
@@ -634,6 +646,7 @@ void java_util_zip_ZipFile_close__(JAVA_OBJECT me)
     java_util_zip_ZipFile_1___INIT____java_util_zip_ZipFile(_r0.o, _r3.o);
     java_security_AccessController_doPrivileged___java_security_PrivilegedAction(_r0.o);
     XMLVM_SOURCE_POSITION("ZipFile.java", 158)
+    XMLVM_CHECK_NPE(3)
     ((java_util_zip_ZipFile*) _r3.o)->fields.java_util_zip_ZipFile.fileToDeleteOnClose_ = _r2.o;
     label27:;
     XMLVM_SOURCE_POSITION("ZipFile.java", 161)
@@ -664,6 +677,7 @@ void java_util_zip_ZipFile_checkNotClosed__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("ZipFile.java", 164)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_zip_ZipFile*) _r2.o)->fields.java_util_zip_ZipFile.mRaf_;
     if (_r0.o != JAVA_NULL) goto label16;
     XMLVM_SOURCE_POSITION("ZipFile.java", 165)
@@ -693,6 +707,7 @@ JAVA_OBJECT java_util_zip_ZipFile_entries__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_util_zip_ZipFile_checkNotClosed__(_r2.o);
     XMLVM_SOURCE_POSITION("ZipFile.java", 178)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_zip_ZipFile*) _r2.o)->fields.java_util_zip_ZipFile.mEntries_;
     //java_util_LinkedHashMap_values__[17]
     XMLVM_CHECK_NPE(0)
@@ -731,6 +746,7 @@ JAVA_OBJECT java_util_zip_ZipFile_getEntry___java_lang_String(JAVA_OBJECT me, JA
     XMLVM_THROW_CUSTOM(_r0.o)
     label11:;
     XMLVM_SOURCE_POSITION("ZipFile.java", 208)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_zip_ZipFile*) _r3.o)->fields.java_util_zip_ZipFile.mEntries_;
     //java_util_LinkedHashMap_get___java_lang_Object[10]
     XMLVM_CHECK_NPE(0)
@@ -739,6 +755,7 @@ JAVA_OBJECT java_util_zip_ZipFile_getEntry___java_lang_String(JAVA_OBJECT me, JA
     XMLVM_SOURCE_POSITION("ZipFile.java", 209)
     if (_r0.o != JAVA_NULL) goto label49;
     XMLVM_SOURCE_POSITION("ZipFile.java", 210)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_zip_ZipFile*) _r3.o)->fields.java_util_zip_ZipFile.mEntries_;
     _r1.o = __NEW_java_lang_StringBuilder();
     _r2.o = java_lang_String_valueOf___java_lang_Object(_r4.o);
@@ -794,6 +811,7 @@ JAVA_OBJECT java_util_zip_ZipFile_getInputStream___java_util_zip_ZipEntry(JAVA_O
     return _r0.o;
     label12:;
     XMLVM_SOURCE_POSITION("ZipFile.java", 238)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_util_zip_ZipFile*) _r8.o)->fields.java_util_zip_ZipFile.mRaf_;
     XMLVM_SOURCE_POSITION("ZipFile.java", 239)
     java_lang_Object_acquireLockRecursive__(_r1.o);
@@ -802,16 +820,19 @@ JAVA_OBJECT java_util_zip_ZipFile_getInputStream___java_util_zip_ZipEntry(JAVA_O
     XMLVM_SOURCE_POSITION("ZipFile.java", 244)
     _r2.o = __NEW_java_util_zip_ZipFile_RAFStream();
     XMLVM_SOURCE_POSITION("ZipFile.java", 245)
+    XMLVM_CHECK_NPE(0)
     _r3.l = ((java_util_zip_ZipEntry*) _r0.o)->fields.java_util_zip_ZipEntry.mLocalHeaderRelOffset_;
     _r5.l = 28;
     _r3.l = _r3.l + _r5.l;
     XMLVM_CHECK_NPE(2)
     java_util_zip_ZipFile_RAFStream___INIT____java_io_RandomAccessFile_long(_r2.o, _r1.o, _r3.l);
     XMLVM_SOURCE_POSITION("ZipFile.java", 246)
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_util_zip_ZipFile*) _r8.o)->fields.java_util_zip_ZipFile.ler_;
     XMLVM_CHECK_NPE(3)
     _r3.i = java_util_zip_ZipEntry_LittleEndianReader_readShortLE___java_io_InputStream(_r3.o, _r2.o);
     XMLVM_SOURCE_POSITION("ZipFile.java", 248)
+    XMLVM_CHECK_NPE(0)
     _r4.i = ((java_util_zip_ZipEntry*) _r0.o)->fields.java_util_zip_ZipEntry.nameLen_;
     _r3.i = _r3.i + _r4.i;
     _r3.l = (JAVA_LONG) _r3.i;
@@ -819,11 +840,15 @@ JAVA_OBJECT java_util_zip_ZipFile_getInputStream___java_util_zip_ZipEntry(JAVA_O
     XMLVM_CHECK_NPE(2)
     (*(JAVA_LONG (*)(JAVA_OBJECT, JAVA_LONG)) ((java_util_zip_ZipFile_RAFStream*) _r2.o)->tib->vtable[14])(_r2.o, _r3.l);
     XMLVM_SOURCE_POSITION("ZipFile.java", 249)
+    XMLVM_CHECK_NPE(2)
     _r3.l = ((java_util_zip_ZipFile_RAFStream*) _r2.o)->fields.java_util_zip_ZipFile_RAFStream.mOffset_;
+    XMLVM_CHECK_NPE(0)
     _r5.l = ((java_util_zip_ZipEntry*) _r0.o)->fields.java_util_zip_ZipEntry.compressedSize_;
     _r3.l = _r3.l + _r5.l;
+    XMLVM_CHECK_NPE(2)
     ((java_util_zip_ZipFile_RAFStream*) _r2.o)->fields.java_util_zip_ZipFile_RAFStream.mLength_ = _r3.l;
     XMLVM_SOURCE_POSITION("ZipFile.java", 250)
+    XMLVM_CHECK_NPE(0)
     _r3.i = ((java_util_zip_ZipEntry*) _r0.o)->fields.java_util_zip_ZipEntry.compressionMethod_;
     _r4.i = 8;
     if (_r3.i != _r4.i) { XMLVM_MEMCPY(curThread_w23048aaac15b1c18->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23048aaac15b1c18, sizeof(XMLVM_JMP_BUF)); goto label83; };
@@ -888,6 +913,7 @@ JAVA_OBJECT java_util_zip_ZipFile_getName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ZipFile.java", 265)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_zip_ZipFile*) _r1.o)->fields.java_util_zip_ZipFile.fileName_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -905,6 +931,7 @@ JAVA_INT java_util_zip_ZipFile_size__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     java_util_zip_ZipFile_checkNotClosed__(_r1.o);
     XMLVM_SOURCE_POSITION("ZipFile.java", 276)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_zip_ZipFile*) _r1.o)->fields.java_util_zip_ZipFile.mEntries_;
     //java_util_LinkedHashMap_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -937,6 +964,7 @@ void java_util_zip_ZipFile_readCentralDir__(JAVA_OBJECT me)
     _r10.l = 1;
     _r5.l = 0;
     XMLVM_SOURCE_POSITION("ZipFile.java", 301)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_util_zip_ZipFile*) _r14.o)->fields.java_util_zip_ZipFile.mRaf_;
     XMLVM_CHECK_NPE(0)
     _r0.l = java_io_RandomAccessFile_length__(_r0.o);
@@ -965,10 +993,12 @@ void java_util_zip_ZipFile_readCentralDir__(JAVA_OBJECT me)
     label40:;
     XMLVM_SOURCE_POSITION("ZipFile.java", 308)
     XMLVM_SOURCE_POSITION("ZipFile.java", 312)
+    XMLVM_CHECK_NPE(14)
     _r4.o = ((java_util_zip_ZipFile*) _r14.o)->fields.java_util_zip_ZipFile.mRaf_;
     XMLVM_CHECK_NPE(4)
     java_io_RandomAccessFile_seek___long(_r4.o, _r2.l);
     XMLVM_SOURCE_POSITION("ZipFile.java", 313)
+    XMLVM_CHECK_NPE(14)
     _r4.o = ((java_util_zip_ZipFile*) _r14.o)->fields.java_util_zip_ZipFile.mRaf_;
     _r4.l = java_util_zip_ZipEntry_readIntLE___java_io_RandomAccessFile(_r4.o);
     _r6.l = 101010256;
@@ -976,7 +1006,9 @@ void java_util_zip_ZipFile_readCentralDir__(JAVA_OBJECT me)
     if (_r4.i != 0) goto label136;
     XMLVM_SOURCE_POSITION("ZipFile.java", 331)
     _r0.o = __NEW_java_util_zip_ZipFile_RAFStream();
+    XMLVM_CHECK_NPE(14)
     _r1.o = ((java_util_zip_ZipFile*) _r14.o)->fields.java_util_zip_ZipFile.mRaf_;
+    XMLVM_CHECK_NPE(14)
     _r2.o = ((java_util_zip_ZipFile*) _r14.o)->fields.java_util_zip_ZipFile.mRaf_;
     XMLVM_CHECK_NPE(2)
     _r2.l = java_io_RandomAccessFile_getFilePointer__(_r2.o);
@@ -988,30 +1020,37 @@ void java_util_zip_ZipFile_readCentralDir__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     java_io_BufferedInputStream___INIT____java_io_InputStream_int(_r1.o, _r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("ZipFile.java", 334)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_util_zip_ZipFile*) _r14.o)->fields.java_util_zip_ZipFile.ler_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_zip_ZipEntry_LittleEndianReader_readShortLE___java_io_InputStream(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("ZipFile.java", 335)
+    XMLVM_CHECK_NPE(14)
     _r2.o = ((java_util_zip_ZipFile*) _r14.o)->fields.java_util_zip_ZipFile.ler_;
     XMLVM_CHECK_NPE(2)
     _r2.i = java_util_zip_ZipEntry_LittleEndianReader_readShortLE___java_io_InputStream(_r2.o, _r1.o);
     XMLVM_SOURCE_POSITION("ZipFile.java", 336)
+    XMLVM_CHECK_NPE(14)
     _r3.o = ((java_util_zip_ZipFile*) _r14.o)->fields.java_util_zip_ZipFile.ler_;
     XMLVM_CHECK_NPE(3)
     _r3.i = java_util_zip_ZipEntry_LittleEndianReader_readShortLE___java_io_InputStream(_r3.o, _r1.o);
     XMLVM_SOURCE_POSITION("ZipFile.java", 337)
+    XMLVM_CHECK_NPE(14)
     _r4.o = ((java_util_zip_ZipFile*) _r14.o)->fields.java_util_zip_ZipFile.ler_;
     XMLVM_CHECK_NPE(4)
     _r4.i = java_util_zip_ZipEntry_LittleEndianReader_readShortLE___java_io_InputStream(_r4.o, _r1.o);
     XMLVM_SOURCE_POSITION("ZipFile.java", 338)
+    XMLVM_CHECK_NPE(14)
     _r5.o = ((java_util_zip_ZipFile*) _r14.o)->fields.java_util_zip_ZipFile.ler_;
     XMLVM_CHECK_NPE(5)
     java_util_zip_ZipEntry_LittleEndianReader_readIntLE___java_io_InputStream(_r5.o, _r1.o);
     XMLVM_SOURCE_POSITION("ZipFile.java", 339)
+    XMLVM_CHECK_NPE(14)
     _r5.o = ((java_util_zip_ZipFile*) _r14.o)->fields.java_util_zip_ZipFile.ler_;
     XMLVM_CHECK_NPE(5)
     _r5.l = java_util_zip_ZipEntry_LittleEndianReader_readIntLE___java_io_InputStream(_r5.o, _r1.o);
     XMLVM_SOURCE_POSITION("ZipFile.java", 340)
+    XMLVM_CHECK_NPE(14)
     _r7.o = ((java_util_zip_ZipFile*) _r14.o)->fields.java_util_zip_ZipFile.ler_;
     XMLVM_CHECK_NPE(7)
     java_util_zip_ZipEntry_LittleEndianReader_readShortLE___java_io_InputStream(_r7.o, _r1.o);
@@ -1051,10 +1090,12 @@ void java_util_zip_ZipFile_readCentralDir__(JAVA_OBJECT me)
     _r4 = _r5;
     label157:;
     XMLVM_SOURCE_POSITION("ZipFile.java", 359)
+    XMLVM_CHECK_NPE(14)
     _r2.o = ((java_util_zip_ZipFile*) _r14.o)->fields.java_util_zip_ZipFile.mRaf_;
     XMLVM_CHECK_NPE(2)
     java_io_RandomAccessFile_seek___long(_r2.o, _r4.l);
     XMLVM_SOURCE_POSITION("ZipFile.java", 360)
+    XMLVM_CHECK_NPE(14)
     _r2.o = ((java_util_zip_ZipFile*) _r14.o)->fields.java_util_zip_ZipFile.mRaf_;
     _r6.l = java_util_zip_ZipEntry_readIntLE___java_io_RandomAccessFile(_r2.o);
     _r8.l = 33639248;
@@ -1062,6 +1103,7 @@ void java_util_zip_ZipFile_readCentralDir__(JAVA_OBJECT me)
     if (_r2.i != 0) goto label193;
     XMLVM_SOURCE_POSITION("ZipFile.java", 371)
     _r0.o = __NEW_java_util_zip_ZipFile_RAFStream();
+    XMLVM_CHECK_NPE(14)
     _r1.o = ((java_util_zip_ZipFile*) _r14.o)->fields.java_util_zip_ZipFile.mRaf_;
     XMLVM_CHECK_NPE(0)
     java_util_zip_ZipFile_RAFStream___INIT____java_io_RandomAccessFile_long(_r0.o, _r1.o, _r4.l);
@@ -1094,10 +1136,12 @@ void java_util_zip_ZipFile_readCentralDir__(JAVA_OBJECT me)
     label210:;
     XMLVM_SOURCE_POSITION("ZipFile.java", 374)
     _r2.o = __NEW_java_util_zip_ZipEntry();
+    XMLVM_CHECK_NPE(14)
     _r4.o = ((java_util_zip_ZipFile*) _r14.o)->fields.java_util_zip_ZipFile.ler_;
     XMLVM_CHECK_NPE(2)
     java_util_zip_ZipEntry___INIT____java_util_zip_ZipEntry_LittleEndianReader_java_io_InputStream(_r2.o, _r4.o, _r1.o);
     XMLVM_SOURCE_POSITION("ZipFile.java", 375)
+    XMLVM_CHECK_NPE(14)
     _r4.o = ((java_util_zip_ZipFile*) _r14.o)->fields.java_util_zip_ZipFile.mEntries_;
     XMLVM_CHECK_NPE(2)
     _r5.o = java_util_zip_ZipEntry_getName__(_r2.o);
@@ -1123,6 +1167,7 @@ JAVA_OBJECT java_util_zip_ZipFile_access$0___java_util_zip_ZipFile(JAVA_OBJECT n
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("ZipFile.java", 58)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_zip_ZipFile*) _r1.o)->fields.java_util_zip_ZipFile.fileName_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

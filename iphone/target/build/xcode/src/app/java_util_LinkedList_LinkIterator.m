@@ -412,29 +412,42 @@ void java_util_LinkedList_LinkIterator___INIT____java_util_LinkedList_int(JAVA_O
     XMLVM_CHECK_NPE(2)
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("LinkedList.java", 63)
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.list_ = _r3.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 64)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.list_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_AbstractList*) _r0.o)->fields.java_util_AbstractList.modCount_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.expectedModCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 65)
     if (_r4.i < 0) goto label79;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.list_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_LinkedList*) _r0.o)->fields.java_util_LinkedList.size_;
     if (_r4.i > _r0.i) goto label79;
     XMLVM_SOURCE_POSITION("LinkedList.java", 69)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.list_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList*) _r0.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.link_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 70)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.list_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_LinkedList*) _r0.o)->fields.java_util_LinkedList.size_;
     _r0.i = _r0.i / 2;
     if (_r4.i >= _r0.i) goto label56;
     XMLVM_SOURCE_POSITION("LinkedList.java", 71)
     _r0.i = -1;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.pos_ = _r0.i;
     label36:;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.pos_;
     _r0.i = _r0.i + 1;
     if (_r0.i < _r4.i) goto label43;
@@ -444,28 +457,42 @@ void java_util_LinkedList_LinkIterator___INIT____java_util_LinkedList_int(JAVA_O
     return;
     label43:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 72)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.link_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.link_ = _r0.o;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.pos_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.pos_ = _r0.i;
     goto label36;
     label56:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 75)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.list_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_LinkedList*) _r0.o)->fields.java_util_LinkedList.size_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.pos_ = _r0.i;
     label62:;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.pos_;
     if (_r0.i < _r4.i) goto label42;
     XMLVM_SOURCE_POSITION("LinkedList.java", 76)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.link_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.link_ = _r0.o;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.pos_;
     _r1.i = 1;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.pos_ = _r0.i;
     goto label62;
     label79:;
@@ -489,45 +516,66 @@ void java_util_LinkedList_LinkIterator_add___java_lang_Object(JAVA_OBJECT me, JA
     _r3.o = me;
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("LinkedList.java", 85)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_LinkedList_LinkIterator*) _r3.o)->fields.java_util_LinkedList_LinkIterator.expectedModCount_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_LinkedList_LinkIterator*) _r3.o)->fields.java_util_LinkedList_LinkIterator.list_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_AbstractList*) _r1.o)->fields.java_util_AbstractList.modCount_;
     if (_r0.i != _r1.i) goto label59;
     XMLVM_SOURCE_POSITION("LinkedList.java", 86)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r3.o)->fields.java_util_LinkedList_LinkIterator.link_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 87)
     _r1.o = __NEW_java_util_LinkedList_Link();
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_LinkedList_LinkIterator*) _r3.o)->fields.java_util_LinkedList_LinkIterator.link_;
     XMLVM_CHECK_NPE(1)
     java_util_LinkedList_Link___INIT____java_lang_Object_java_util_LinkedList_Link_java_util_LinkedList_Link(_r1.o, _r4.o, _r2.o, _r0.o);
     XMLVM_SOURCE_POSITION("LinkedList.java", 88)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_LinkedList_LinkIterator*) _r3.o)->fields.java_util_LinkedList_LinkIterator.link_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_Link*) _r2.o)->fields.java_util_LinkedList_Link.next_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 89)
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 90)
+    XMLVM_CHECK_NPE(3)
     ((java_util_LinkedList_LinkIterator*) _r3.o)->fields.java_util_LinkedList_LinkIterator.link_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 91)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(3)
     ((java_util_LinkedList_LinkIterator*) _r3.o)->fields.java_util_LinkedList_LinkIterator.lastLink_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 92)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_LinkedList_LinkIterator*) _r3.o)->fields.java_util_LinkedList_LinkIterator.pos_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_util_LinkedList_LinkIterator*) _r3.o)->fields.java_util_LinkedList_LinkIterator.pos_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 93)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_LinkedList_LinkIterator*) _r3.o)->fields.java_util_LinkedList_LinkIterator.expectedModCount_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_util_LinkedList_LinkIterator*) _r3.o)->fields.java_util_LinkedList_LinkIterator.expectedModCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 94)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r3.o)->fields.java_util_LinkedList_LinkIterator.list_;
+    XMLVM_CHECK_NPE(0)
     _r1.i = ((java_util_LinkedList*) _r0.o)->fields.java_util_LinkedList.size_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList*) _r0.o)->fields.java_util_LinkedList.size_ = _r1.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 95)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r3.o)->fields.java_util_LinkedList_LinkIterator.list_;
+    XMLVM_CHECK_NPE(0)
     _r1.i = ((java_util_AbstractList*) _r0.o)->fields.java_util_AbstractList.modCount_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(0)
     ((java_util_AbstractList*) _r0.o)->fields.java_util_AbstractList.modCount_ = _r1.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 99)
     XMLVM_EXIT_METHOD()
@@ -550,9 +598,13 @@ JAVA_BOOLEAN java_util_LinkedList_LinkIterator_hasNext__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("LinkedList.java", 102)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.link_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.list_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_LinkedList*) _r1.o)->fields.java_util_LinkedList.voidLink_;
     if (_r0.o == _r1.o) goto label12;
     _r0.i = 1;
@@ -574,8 +626,11 @@ JAVA_BOOLEAN java_util_LinkedList_LinkIterator_hasPrevious__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("LinkedList.java", 106)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.link_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.list_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_LinkedList*) _r1.o)->fields.java_util_LinkedList.voidLink_;
     if (_r0.o == _r1.o) goto label10;
     _r0.i = 1;
@@ -597,26 +652,39 @@ JAVA_OBJECT java_util_LinkedList_LinkIterator_next__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("LinkedList.java", 110)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.expectedModCount_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.list_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_AbstractList*) _r1.o)->fields.java_util_AbstractList.modCount_;
     if (_r0.i != _r1.i) goto label39;
     XMLVM_SOURCE_POSITION("LinkedList.java", 111)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.link_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 112)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.list_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_LinkedList*) _r1.o)->fields.java_util_LinkedList.voidLink_;
     if (_r0.o == _r1.o) goto label33;
     XMLVM_SOURCE_POSITION("LinkedList.java", 113)
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.link_ = _r0.o;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.lastLink_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 114)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.pos_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.pos_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 115)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.link_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -643,6 +711,7 @@ JAVA_INT java_util_LinkedList_LinkIterator_nextIndex__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("LinkedList.java", 123)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_LinkedList_LinkIterator*) _r1.o)->fields.java_util_LinkedList_LinkIterator.pos_;
     _r0.i = _r0.i + 1;
     XMLVM_EXIT_METHOD()
@@ -659,29 +728,44 @@ JAVA_OBJECT java_util_LinkedList_LinkIterator_previous__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("LinkedList.java", 127)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.expectedModCount_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.list_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_AbstractList*) _r1.o)->fields.java_util_AbstractList.modCount_;
     if (_r0.i != _r1.i) goto label43;
     XMLVM_SOURCE_POSITION("LinkedList.java", 128)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.link_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.list_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_LinkedList*) _r1.o)->fields.java_util_LinkedList.voidLink_;
     if (_r0.o == _r1.o) goto label37;
     XMLVM_SOURCE_POSITION("LinkedList.java", 129)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.link_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.lastLink_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 130)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.link_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.link_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 131)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.pos_;
     _r1.i = 1;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.pos_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 132)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.lastLink_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -708,6 +792,7 @@ JAVA_INT java_util_LinkedList_LinkIterator_previousIndex__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("LinkedList.java", 140)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_LinkedList_LinkIterator*) _r1.o)->fields.java_util_LinkedList_LinkIterator.pos_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -726,50 +811,74 @@ void java_util_LinkedList_LinkIterator_remove__(JAVA_OBJECT me)
     _r4.o = me;
     _r3.i = 1;
     XMLVM_SOURCE_POSITION("LinkedList.java", 144)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_LinkedList_LinkIterator*) _r4.o)->fields.java_util_LinkedList_LinkIterator.expectedModCount_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_LinkedList_LinkIterator*) _r4.o)->fields.java_util_LinkedList_LinkIterator.list_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_AbstractList*) _r1.o)->fields.java_util_AbstractList.modCount_;
     if (_r0.i != _r1.i) goto label69;
     XMLVM_SOURCE_POSITION("LinkedList.java", 145)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r4.o)->fields.java_util_LinkedList_LinkIterator.lastLink_;
     if (_r0.o == JAVA_NULL) goto label63;
     XMLVM_SOURCE_POSITION("LinkedList.java", 146)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r4.o)->fields.java_util_LinkedList_LinkIterator.lastLink_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 147)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_LinkedList_LinkIterator*) _r4.o)->fields.java_util_LinkedList_LinkIterator.lastLink_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.previous_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 148)
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 149)
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.next_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 150)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r4.o)->fields.java_util_LinkedList_LinkIterator.lastLink_;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_LinkedList_LinkIterator*) _r4.o)->fields.java_util_LinkedList_LinkIterator.link_;
     if (_r0.o != _r2.o) goto label36;
     XMLVM_SOURCE_POSITION("LinkedList.java", 151)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_LinkedList_LinkIterator*) _r4.o)->fields.java_util_LinkedList_LinkIterator.pos_;
     _r0.i = _r0.i - _r3.i;
+    XMLVM_CHECK_NPE(4)
     ((java_util_LinkedList_LinkIterator*) _r4.o)->fields.java_util_LinkedList_LinkIterator.pos_ = _r0.i;
     label36:;
     XMLVM_SOURCE_POSITION("LinkedList.java", 153)
+    XMLVM_CHECK_NPE(4)
     ((java_util_LinkedList_LinkIterator*) _r4.o)->fields.java_util_LinkedList_LinkIterator.link_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 154)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(4)
     ((java_util_LinkedList_LinkIterator*) _r4.o)->fields.java_util_LinkedList_LinkIterator.lastLink_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 155)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_LinkedList_LinkIterator*) _r4.o)->fields.java_util_LinkedList_LinkIterator.expectedModCount_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_util_LinkedList_LinkIterator*) _r4.o)->fields.java_util_LinkedList_LinkIterator.expectedModCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 156)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r4.o)->fields.java_util_LinkedList_LinkIterator.list_;
+    XMLVM_CHECK_NPE(0)
     _r1.i = ((java_util_LinkedList*) _r0.o)->fields.java_util_LinkedList.size_;
     _r1.i = _r1.i - _r3.i;
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList*) _r0.o)->fields.java_util_LinkedList.size_ = _r1.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 157)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r4.o)->fields.java_util_LinkedList_LinkIterator.list_;
+    XMLVM_CHECK_NPE(0)
     _r1.i = ((java_util_AbstractList*) _r0.o)->fields.java_util_AbstractList.modCount_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(0)
     ((java_util_AbstractList*) _r0.o)->fields.java_util_AbstractList.modCount_ = _r1.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 158)
     XMLVM_EXIT_METHOD()
@@ -800,15 +909,21 @@ void java_util_LinkedList_LinkIterator_set___java_lang_Object(JAVA_OBJECT me, JA
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("LinkedList.java", 166)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.expectedModCount_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.list_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_AbstractList*) _r1.o)->fields.java_util_AbstractList.modCount_;
     if (_r0.i != _r1.i) goto label23;
     XMLVM_SOURCE_POSITION("LinkedList.java", 167)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.lastLink_;
     if (_r0.o == JAVA_NULL) goto label17;
     XMLVM_SOURCE_POSITION("LinkedList.java", 168)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList_LinkIterator*) _r2.o)->fields.java_util_LinkedList_LinkIterator.lastLink_;
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_ = _r3.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 175)
     XMLVM_EXIT_METHOD()

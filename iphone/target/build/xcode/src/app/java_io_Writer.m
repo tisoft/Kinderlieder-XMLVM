@@ -443,6 +443,7 @@ void java_io_Writer___INIT___(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Writer.java", 52)
+    XMLVM_CHECK_NPE(0)
     ((java_io_Writer*) _r0.o)->fields.java_io_Writer.lock_ = _r0.o;
     XMLVM_SOURCE_POSITION("Writer.java", 53)
     XMLVM_EXIT_METHOD()
@@ -471,6 +472,7 @@ void java_io_Writer___INIT____java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label11:;
     XMLVM_SOURCE_POSITION("Writer.java", 68)
+    XMLVM_CHECK_NPE(1)
     ((java_io_Writer*) _r1.o)->fields.java_io_Writer.lock_ = _r2.o;
     XMLVM_SOURCE_POSITION("Writer.java", 69)
     XMLVM_EXIT_METHOD()
@@ -513,6 +515,7 @@ void java_io_Writer_write___int(JAVA_OBJECT me, JAVA_INT n1)
     _r4.o = me;
     _r5.i = n1;
     XMLVM_SOURCE_POSITION("Writer.java", 130)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_io_Writer*) _r4.o)->fields.java_io_Writer.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_SOURCE_POSITION("Writer.java", 131)
@@ -615,6 +618,7 @@ void java_io_Writer_write___java_lang_String_int_int(JAVA_OBJECT me, JAVA_OBJECT
     XMLVM_CHECK_NPE(5)
     java_lang_String_getChars___int_int_char_1ARRAY_int(_r5.o, _r6.i, _r1.i, _r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("Writer.java", 172)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_io_Writer*) _r4.o)->fields.java_io_Writer.lock_;
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_SOURCE_POSITION("Writer.java", 173)

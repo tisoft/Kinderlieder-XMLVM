@@ -589,8 +589,10 @@ void java_nio_charset_CoderResult___INIT____int_int(JAVA_OBJECT me, JAVA_INT n1,
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("CoderResult.java", 99)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_charset_CoderResult*) _r0.o)->fields.java_nio_charset_CoderResult.type_ = _r1.i;
     XMLVM_SOURCE_POSITION("CoderResult.java", 100)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_charset_CoderResult*) _r0.o)->fields.java_nio_charset_CoderResult.length_ = _r2.i;
     XMLVM_SOURCE_POSITION("CoderResult.java", 101)
     XMLVM_EXIT_METHOD()
@@ -842,6 +844,7 @@ JAVA_BOOLEAN java_nio_charset_CoderResult_isUnderflow__(JAVA_OBJECT me)
     _r2.o = me;
     _r1.i = 1;
     XMLVM_SOURCE_POSITION("CoderResult.java", 166)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_charset_CoderResult*) _r2.o)->fields.java_nio_charset_CoderResult.type_;
     if (_r0.i != _r1.i) goto label7;
     _r0 = _r1;
@@ -863,10 +866,12 @@ JAVA_BOOLEAN java_nio_charset_CoderResult_isError__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("CoderResult.java", 177)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_charset_CoderResult*) _r2.o)->fields.java_nio_charset_CoderResult.type_;
     _r1.i = 3;
     if (_r0.i == _r1.i) goto label12;
     XMLVM_SOURCE_POSITION("CoderResult.java", 178)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_charset_CoderResult*) _r2.o)->fields.java_nio_charset_CoderResult.type_;
     _r1.i = 4;
     if (_r0.i == _r1.i) goto label12;
@@ -889,6 +894,7 @@ JAVA_BOOLEAN java_nio_charset_CoderResult_isMalformed__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("CoderResult.java", 187)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_charset_CoderResult*) _r2.o)->fields.java_nio_charset_CoderResult.type_;
     _r1.i = 3;
     if (_r0.i != _r1.i) goto label7;
@@ -911,6 +917,7 @@ JAVA_BOOLEAN java_nio_charset_CoderResult_isOverflow__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("CoderResult.java", 196)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_charset_CoderResult*) _r2.o)->fields.java_nio_charset_CoderResult.type_;
     _r1.i = 2;
     if (_r0.i != _r1.i) goto label7;
@@ -933,6 +940,7 @@ JAVA_BOOLEAN java_nio_charset_CoderResult_isUnmappable__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("CoderResult.java", 205)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_charset_CoderResult*) _r2.o)->fields.java_nio_charset_CoderResult.type_;
     _r1.i = 4;
     if (_r0.i != _r1.i) goto label7;
@@ -955,15 +963,18 @@ JAVA_INT java_nio_charset_CoderResult_length__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("CoderResult.java", 217)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_charset_CoderResult*) _r2.o)->fields.java_nio_charset_CoderResult.type_;
     _r1.i = 3;
     if (_r0.i == _r1.i) goto label10;
     XMLVM_SOURCE_POSITION("CoderResult.java", 218)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_charset_CoderResult*) _r2.o)->fields.java_nio_charset_CoderResult.type_;
     _r1.i = 4;
     if (_r0.i != _r1.i) goto label13;
     label10:;
     XMLVM_SOURCE_POSITION("CoderResult.java", 219)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_charset_CoderResult*) _r2.o)->fields.java_nio_charset_CoderResult.length_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -989,6 +1000,7 @@ void java_nio_charset_CoderResult_throwException__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("CoderResult.java", 242)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_charset_CoderResult*) _r2.o)->fields.java_nio_charset_CoderResult.type_;
     switch (_r0.i) {
     case 1: goto label11;
@@ -1016,6 +1028,7 @@ void java_nio_charset_CoderResult_throwException__(JAVA_OBJECT me)
     label23:;
     XMLVM_SOURCE_POSITION("CoderResult.java", 248)
     _r0.o = __NEW_java_nio_charset_UnmappableCharacterException();
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_charset_CoderResult*) _r2.o)->fields.java_nio_charset_CoderResult.length_;
     XMLVM_CHECK_NPE(0)
     java_nio_charset_UnmappableCharacterException___INIT____int(_r0.o, _r1.i);
@@ -1023,6 +1036,7 @@ void java_nio_charset_CoderResult_throwException__(JAVA_OBJECT me)
     label31:;
     XMLVM_SOURCE_POSITION("CoderResult.java", 250)
     _r0.o = __NEW_java_nio_charset_MalformedInputException();
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_charset_CoderResult*) _r2.o)->fields.java_nio_charset_CoderResult.length_;
     XMLVM_CHECK_NPE(0)
     java_nio_charset_MalformedInputException___INIT____int(_r0.o, _r1.i);
@@ -1042,6 +1056,7 @@ JAVA_OBJECT java_nio_charset_CoderResult_toString__(JAVA_OBJECT me)
     _r3.o = me;
     XMLVM_SOURCE_POSITION("CoderResult.java", 263)
     XMLVM_SOURCE_POSITION("CoderResult.java", 264)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_nio_charset_CoderResult*) _r3.o)->fields.java_nio_charset_CoderResult.type_;
     switch (_r0.i) {
     case 1: goto label29;
@@ -1088,6 +1103,7 @@ JAVA_OBJECT java_nio_charset_CoderResult_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("CoderResult.java", 273)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_nio_charset_CoderResult*) _r3.o)->fields.java_nio_charset_CoderResult.length_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);
@@ -1103,6 +1119,7 @@ JAVA_OBJECT java_nio_charset_CoderResult_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("CoderResult.java", 277)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_nio_charset_CoderResult*) _r3.o)->fields.java_nio_charset_CoderResult.length_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);

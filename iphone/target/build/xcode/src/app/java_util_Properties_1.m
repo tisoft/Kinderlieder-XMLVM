@@ -253,6 +253,7 @@ void java_util_Properties_1___INIT____java_util_Properties(JAVA_OBJECT me, JAVA_
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("Properties.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Properties_1*) _r0.o)->fields.java_util_Properties_1.this_0_ = _r1.o;
     XMLVM_SOURCE_POSITION("Properties.java", 745)
     XMLVM_CHECK_NPE(0)

@@ -445,6 +445,7 @@ void gnu_java_text_StringFormatBuffer___INIT____int(JAVA_OBJECT me, JAVA_INT n1)
     _r0.o = __NEW_java_lang_StringBuffer();
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuffer___INIT____int(_r0.o, _r2.i);
+    XMLVM_CHECK_NPE(1)
     ((gnu_java_text_StringFormatBuffer*) _r1.o)->fields.gnu_java_text_StringFormatBuffer.buffer_ = _r0.o;
     XMLVM_SOURCE_POSITION("StringFormatBuffer.java", 56)
     XMLVM_EXIT_METHOD()
@@ -464,6 +465,7 @@ void gnu_java_text_StringFormatBuffer___INIT____java_lang_StringBuffer(JAVA_OBJE
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("StringFormatBuffer.java", 60)
+    XMLVM_CHECK_NPE(0)
     ((gnu_java_text_StringFormatBuffer*) _r0.o)->fields.gnu_java_text_StringFormatBuffer.buffer_ = _r1.o;
     XMLVM_SOURCE_POSITION("StringFormatBuffer.java", 61)
     XMLVM_EXIT_METHOD()
@@ -481,6 +483,7 @@ void gnu_java_text_StringFormatBuffer_append___java_lang_String(JAVA_OBJECT me, 
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("StringFormatBuffer.java", 65)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_java_text_StringFormatBuffer*) _r1.o)->fields.gnu_java_text_StringFormatBuffer.buffer_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuffer_append___java_lang_String(_r0.o, _r2.o);
@@ -502,6 +505,7 @@ void gnu_java_text_StringFormatBuffer_append___java_lang_String_java_text_Attrib
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("StringFormatBuffer.java", 70)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_java_text_StringFormatBuffer*) _r1.o)->fields.gnu_java_text_StringFormatBuffer.buffer_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuffer_append___java_lang_String(_r0.o, _r2.o);
@@ -525,6 +529,7 @@ void gnu_java_text_StringFormatBuffer_append___java_lang_String_int_1ARRAY_java_
     _r3.o = n2;
     _r4.o = n3;
     XMLVM_SOURCE_POSITION("StringFormatBuffer.java", 75)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_java_text_StringFormatBuffer*) _r1.o)->fields.gnu_java_text_StringFormatBuffer.buffer_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuffer_append___java_lang_String(_r0.o, _r2.o);
@@ -544,6 +549,7 @@ void gnu_java_text_StringFormatBuffer_append___char(JAVA_OBJECT me, JAVA_CHAR n1
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("StringFormatBuffer.java", 80)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_java_text_StringFormatBuffer*) _r1.o)->fields.gnu_java_text_StringFormatBuffer.buffer_;
     //java_lang_StringBuffer_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -566,6 +572,7 @@ void gnu_java_text_StringFormatBuffer_append___char_java_text_AttributedCharacte
     _r2.i = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("StringFormatBuffer.java", 85)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_java_text_StringFormatBuffer*) _r1.o)->fields.gnu_java_text_StringFormatBuffer.buffer_;
     //java_lang_StringBuffer_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -585,6 +592,7 @@ void gnu_java_text_StringFormatBuffer_setDefaultAttribute___java_text_Attributed
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("StringFormatBuffer.java", 90)
+    XMLVM_CHECK_NPE(0)
     ((gnu_java_text_StringFormatBuffer*) _r0.o)->fields.gnu_java_text_StringFormatBuffer.defaultAttr_ = _r1.o;
     XMLVM_SOURCE_POSITION("StringFormatBuffer.java", 91)
     XMLVM_EXIT_METHOD()
@@ -600,6 +608,7 @@ JAVA_OBJECT gnu_java_text_StringFormatBuffer_getDefaultAttribute__(JAVA_OBJECT m
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("StringFormatBuffer.java", 95)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_java_text_StringFormatBuffer*) _r1.o)->fields.gnu_java_text_StringFormatBuffer.defaultAttr_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -617,7 +626,9 @@ void gnu_java_text_StringFormatBuffer_cutTail___int(JAVA_OBJECT me, JAVA_INT n1)
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("StringFormatBuffer.java", 100)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_java_text_StringFormatBuffer*) _r2.o)->fields.gnu_java_text_StringFormatBuffer.buffer_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_java_text_StringFormatBuffer*) _r2.o)->fields.gnu_java_text_StringFormatBuffer.buffer_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_lang_AbstractStringBuilder_length__(_r1.o);
@@ -639,6 +650,7 @@ JAVA_INT gnu_java_text_StringFormatBuffer_length__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("StringFormatBuffer.java", 105)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_java_text_StringFormatBuffer*) _r1.o)->fields.gnu_java_text_StringFormatBuffer.buffer_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_AbstractStringBuilder_length__(_r0.o);
@@ -656,6 +668,7 @@ void gnu_java_text_StringFormatBuffer_clear__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("StringFormatBuffer.java", 110)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_java_text_StringFormatBuffer*) _r2.o)->fields.gnu_java_text_StringFormatBuffer.buffer_;
     _r1.i = 0;
     //java_lang_StringBuffer_setLength___int[16]
@@ -675,6 +688,7 @@ JAVA_OBJECT gnu_java_text_StringFormatBuffer_getBuffer__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("StringFormatBuffer.java", 119)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_java_text_StringFormatBuffer*) _r1.o)->fields.gnu_java_text_StringFormatBuffer.buffer_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -689,6 +703,7 @@ JAVA_OBJECT gnu_java_text_StringFormatBuffer_toString__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("StringFormatBuffer.java", 124)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_java_text_StringFormatBuffer*) _r1.o)->fields.gnu_java_text_StringFormatBuffer.buffer_;
     //java_lang_StringBuffer_toString__[5]
     XMLVM_CHECK_NPE(0)

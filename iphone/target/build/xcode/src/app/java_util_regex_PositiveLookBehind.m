@@ -278,6 +278,7 @@ JAVA_INT java_util_regex_PositiveLookBehind_matches___int_java_lang_CharSequence
     _r4.i = 0;
     _r5.i = -1;
     XMLVM_SOURCE_POSITION("PositiveLookBehind.java", 42)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_regex_JointSet*) _r6.o)->fields.java_util_regex_JointSet.children_;
     //java_util_ArrayList_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -290,6 +291,7 @@ JAVA_INT java_util_regex_PositiveLookBehind_matches___int_java_lang_CharSequence
     label15:;
     XMLVM_SOURCE_POSITION("PositiveLookBehind.java", 44)
     XMLVM_SOURCE_POSITION("PositiveLookBehind.java", 46)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_regex_AbstractSet*) _r6.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -297,6 +299,7 @@ JAVA_INT java_util_regex_PositiveLookBehind_matches___int_java_lang_CharSequence
     XMLVM_SOURCE_POSITION("PositiveLookBehind.java", 47)
     if (_r3.i < 0) goto label30;
     XMLVM_SOURCE_POSITION("PositiveLookBehind.java", 50)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_regex_JointSet*) _r6.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(9)
     java_util_regex_MatchResultImpl_setConsumed___int_int(_r9.o, _r0.i, _r7.i);
@@ -316,6 +319,7 @@ JAVA_INT java_util_regex_PositiveLookBehind_matches___int_java_lang_CharSequence
     goto label15;
     label38:;
     XMLVM_SOURCE_POSITION("PositiveLookBehind.java", 52)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_regex_JointSet*) _r6.o)->fields.java_util_regex_JointSet.children_;
     //java_util_ArrayList_get___int[21]
     XMLVM_CHECK_NPE(0)
@@ -327,6 +331,7 @@ JAVA_INT java_util_regex_PositiveLookBehind_matches___int_java_lang_CharSequence
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_INT, JAVA_INT, JAVA_OBJECT, JAVA_OBJECT)) ((java_util_regex_AbstractSet*) _r0.o)->tib->vtable[6])(_r0.o, _r2.i, _r7.i, _r8.o, _r9.o);
     if (_r0.i < 0) goto label59;
     XMLVM_SOURCE_POSITION("PositiveLookBehind.java", 57)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_regex_JointSet*) _r6.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(9)
     java_util_regex_MatchResultImpl_setConsumed___int_int(_r9.o, _r0.i, _r5.i);

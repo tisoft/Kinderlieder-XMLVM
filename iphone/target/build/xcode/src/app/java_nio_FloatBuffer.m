@@ -759,9 +759,11 @@ JAVA_OBJECT java_nio_FloatBuffer_wrap___float_1ARRAY_int_int(JAVA_OBJECT n1, JAV
     XMLVM_SOURCE_POSITION("FloatBuffer.java", 94)
     _r0.o = java_nio_BufferFactory_newFloatBuffer___float_1ARRAY(_r4.o);
     XMLVM_SOURCE_POSITION("FloatBuffer.java", 95)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.position_ = _r5.i;
     XMLVM_SOURCE_POSITION("FloatBuffer.java", 96)
     _r1.i = _r5.i + _r6.i;
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.limit_ = _r1.i;
     XMLVM_SOURCE_POSITION("FloatBuffer.java", 98)
     XMLVM_EXIT_METHOD()
@@ -843,8 +845,10 @@ JAVA_INT java_nio_FloatBuffer_compareTo___java_nio_FloatBuffer(JAVA_OBJECT me, J
     _r0.i = java_nio_Buffer_remaining__(_r7.o);
     label14:;
     XMLVM_SOURCE_POSITION("FloatBuffer.java", 183)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_nio_Buffer*) _r7.o)->fields.java_nio_Buffer.position_;
     XMLVM_SOURCE_POSITION("FloatBuffer.java", 184)
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_nio_Buffer*) _r8.o)->fields.java_nio_Buffer.position_;
     _r6 = _r2;
     _r2 = _r0;
@@ -943,14 +947,17 @@ JAVA_BOOLEAN java_nio_FloatBuffer_equals___java_lang_Object(JAVA_OBJECT me, JAVA
     goto label7;
     label22:;
     XMLVM_SOURCE_POSITION("FloatBuffer.java", 244)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_nio_Buffer*) _r7.o)->fields.java_nio_Buffer.position_;
     XMLVM_SOURCE_POSITION("FloatBuffer.java", 245)
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_nio_Buffer*) _r8.o)->fields.java_nio_Buffer.position_;
     _r2 = _r0;
     _r0 = _r6;
     label28:;
     XMLVM_SOURCE_POSITION("FloatBuffer.java", 247)
     if (_r0.i == 0) goto label7;
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((java_nio_Buffer*) _r7.o)->fields.java_nio_Buffer.limit_;
     if (_r2.i >= _r3.i) goto label7;
     XMLVM_SOURCE_POSITION("FloatBuffer.java", 248)
@@ -1097,6 +1104,7 @@ JAVA_INT java_nio_FloatBuffer_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("FloatBuffer.java", 347)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
     XMLVM_SOURCE_POSITION("FloatBuffer.java", 348)
     _r1.i = 0;
@@ -1105,6 +1113,7 @@ JAVA_INT java_nio_FloatBuffer_hashCode__(JAVA_OBJECT me)
     _r0 = _r3;
     label6:;
     XMLVM_SOURCE_POSITION("FloatBuffer.java", 349)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.limit_;
     if (_r1.i < _r2.i) goto label11;
     XMLVM_SOURCE_POSITION("FloatBuffer.java", 352)

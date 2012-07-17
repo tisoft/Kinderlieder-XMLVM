@@ -273,6 +273,7 @@ void java_util_AbstractMap_2___INIT____java_util_AbstractMap(JAVA_OBJECT me, JAV
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_AbstractMap_2*) _r0.o)->fields.java_util_AbstractMap_2.this_0_ = _r1.o;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 643)
     XMLVM_CHECK_NPE(0)
@@ -290,6 +291,7 @@ JAVA_INT java_util_AbstractMap_2_size__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 646)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_AbstractMap_2*) _r1.o)->fields.java_util_AbstractMap_2.this_0_;
     //java_util_AbstractMap_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -309,6 +311,7 @@ JAVA_BOOLEAN java_util_AbstractMap_2_contains___java_lang_Object(JAVA_OBJECT me,
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 651)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_AbstractMap_2*) _r1.o)->fields.java_util_AbstractMap_2.this_0_;
     //java_util_AbstractMap_containsValue___java_lang_Object[8]
     XMLVM_CHECK_NPE(0)
@@ -343,6 +346,7 @@ JAVA_OBJECT java_util_AbstractMap_2_access$0___java_util_AbstractMap_2(JAVA_OBJE
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 643)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_AbstractMap_2*) _r1.o)->fields.java_util_AbstractMap_2.this_0_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

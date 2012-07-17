@@ -361,11 +361,13 @@ JAVA_BOOLEAN java_util_Collections_SynchronizedSet_equals___java_lang_Object(JAV
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 833)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_SynchronizedCollection*) _r2.o)->fields.java_util_Collections_SynchronizedCollection.mutex_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w25199aaab3b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("Collections.java", 834)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_SynchronizedCollection*) _r2.o)->fields.java_util_Collections_SynchronizedCollection.c_;
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_equals___java_lang_Object])(_r1.o, _r3.o);
@@ -404,11 +406,13 @@ JAVA_INT java_util_Collections_SynchronizedSet_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 840)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_SynchronizedCollection*) _r2.o)->fields.java_util_Collections_SynchronizedCollection.mutex_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w25199aaab4b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("Collections.java", 841)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_SynchronizedCollection*) _r2.o)->fields.java_util_Collections_SynchronizedCollection.c_;
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_hashCode__])(_r1.o);
@@ -449,6 +453,7 @@ void java_util_Collections_SynchronizedSet_writeObject___java_io_ObjectOutputStr
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 846)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_SynchronizedCollection*) _r2.o)->fields.java_util_Collections_SynchronizedCollection.mutex_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w25199aaab5b1b6)

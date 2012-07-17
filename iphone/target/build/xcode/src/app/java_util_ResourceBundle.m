@@ -792,6 +792,7 @@ void java_util_ResourceBundle___INIT___(JAVA_OBJECT me)
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 96)
     _r0.l = 0;
+    XMLVM_CHECK_NPE(2)
     ((java_util_ResourceBundle*) _r2.o)->fields.java_util_ResourceBundle.lastLoadTime_ = _r0.l;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 121)
     XMLVM_EXIT_METHOD()
@@ -1096,6 +1097,7 @@ JAVA_OBJECT java_util_ResourceBundle_getBundle___java_lang_String_java_util_Loca
     _r2.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r2.i == 0) goto label73;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 309)
+    XMLVM_CHECK_NPE(5)
     _r2.l = ((java_util_ResourceBundle*) _r5.o)->fields.java_util_ResourceBundle.lastLoadTime_;
     _r0.l = _r0.l + _r2.l;
     _r2.l = java_lang_System_currentTimeMillis__();
@@ -1169,6 +1171,7 @@ JAVA_OBJECT java_util_ResourceBundle_getBundle___java_lang_String_java_util_Loca
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Hashtable*) _r7.o)->tib->vtable[10])(_r7.o, _r6.o, _r0.o);
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 324)
     _r1.l = java_lang_System_currentTimeMillis__();
+    XMLVM_CHECK_NPE(0)
     ((java_util_ResourceBundle*) _r0.o)->fields.java_util_ResourceBundle.lastLoadTime_ = _r1.l;
     goto label114;
     label137:;
@@ -1580,6 +1583,7 @@ JAVA_OBJECT java_util_ResourceBundle_getLocale__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 447)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_ResourceBundle*) _r1.o)->fields.java_util_ResourceBundle.locale_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1612,6 +1616,7 @@ JAVA_OBJECT java_util_ResourceBundle_getObject___java_lang_String(JAVA_OBJECT me
     return _r1.o;
     label8:;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 470)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((java_util_ResourceBundle*) _r0.o)->fields.java_util_ResourceBundle.parent_;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 471)
     if (_r1.o != JAVA_NULL) goto label40;
@@ -1991,6 +1996,7 @@ void java_util_ResourceBundle_setParent___java_util_ResourceBundle(JAVA_OBJECT m
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 618)
+    XMLVM_CHECK_NPE(0)
     ((java_util_ResourceBundle*) _r0.o)->fields.java_util_ResourceBundle.parent_ = _r1.o;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 619)
     XMLVM_EXIT_METHOD()
@@ -2037,6 +2043,7 @@ void java_util_ResourceBundle_setLocale___java_util_Locale(JAVA_OBJECT me, JAVA_
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 630)
+    XMLVM_CHECK_NPE(0)
     ((java_util_ResourceBundle*) _r0.o)->fields.java_util_ResourceBundle.locale_ = _r1.o;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 631)
     XMLVM_EXIT_METHOD()
@@ -2133,6 +2140,7 @@ void java_util_ResourceBundle_setLocale___java_lang_String(JAVA_OBJECT me, JAVA_
     _r3.o = __NEW_java_util_Locale();
     XMLVM_CHECK_NPE(3)
     java_util_Locale___INIT____java_lang_String_java_lang_String_java_lang_String(_r3.o, _r2.o, _r1.o, _r0.o);
+    XMLVM_CHECK_NPE(8)
     ((java_util_ResourceBundle*) _r8.o)->fields.java_util_ResourceBundle.locale_ = _r3.o;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 654)
     XMLVM_EXIT_METHOD()

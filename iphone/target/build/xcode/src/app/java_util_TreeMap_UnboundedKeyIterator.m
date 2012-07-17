@@ -269,8 +269,11 @@ JAVA_OBJECT java_util_TreeMap_UnboundedKeyIterator_next__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_util_TreeMap_AbstractMapIterator_makeNext__(_r2.o);
     XMLVM_SOURCE_POSITION("TreeMap.java", 5890)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_TreeMap_AbstractMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractMapIterator.lastNode_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_TreeMap_Node*) _r0.o)->fields.java_util_TreeMap_Node.keys_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_TreeMap_AbstractMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractMapIterator.lastOffset_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);

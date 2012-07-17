@@ -435,6 +435,7 @@ void java_util_Arrays_ArrayList___INIT____java_lang_Object_1ARRAY(JAVA_OBJECT me
     XMLVM_THROW_CUSTOM(_r0.o)
     label11:;
     XMLVM_SOURCE_POSITION("Arrays.java", 46)
+    XMLVM_CHECK_NPE(1)
     ((java_util_Arrays_ArrayList*) _r1.o)->fields.java_util_Arrays_ArrayList.a_ = _r2.o;
     XMLVM_SOURCE_POSITION("Arrays.java", 47)
     XMLVM_EXIT_METHOD()
@@ -461,6 +462,7 @@ JAVA_BOOLEAN java_util_Arrays_ArrayList_contains___java_lang_Object(JAVA_OBJECT 
     XMLVM_SOURCE_POSITION("Arrays.java", 51)
     if (_r7.o == JAVA_NULL) goto label25;
     XMLVM_SOURCE_POSITION("Arrays.java", 52)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_Arrays_ArrayList*) _r6.o)->fields.java_util_Arrays_ArrayList.a_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r2 = _r4;
@@ -489,6 +491,7 @@ JAVA_BOOLEAN java_util_Arrays_ArrayList_contains___java_lang_Object(JAVA_OBJECT 
     goto label8;
     label25:;
     XMLVM_SOURCE_POSITION("Arrays.java", 58)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_Arrays_ArrayList*) _r6.o)->fields.java_util_Arrays_ArrayList.a_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r2 = _r4;
@@ -520,6 +523,7 @@ JAVA_OBJECT java_util_Arrays_ArrayList_get___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_TRY_BEGIN(w25106aaab4b1b3)
     // Begin try
     XMLVM_SOURCE_POSITION("Arrays.java", 70)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Arrays_ArrayList*) _r1.o)->fields.java_util_Arrays_ArrayList.a_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -558,6 +562,7 @@ JAVA_INT java_util_Arrays_ArrayList_indexOf___java_lang_Object(JAVA_OBJECT me, J
     if (_r3.o == JAVA_NULL) goto label31;
     label3:;
     XMLVM_SOURCE_POSITION("Arrays.java", 79)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Arrays_ArrayList*) _r2.o)->fields.java_util_Arrays_ArrayList.a_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i < _r1.i) goto label10;
@@ -569,6 +574,7 @@ JAVA_INT java_util_Arrays_ArrayList_indexOf___java_lang_Object(JAVA_OBJECT me, J
     return _r0.i;
     label10:;
     XMLVM_SOURCE_POSITION("Arrays.java", 80)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Arrays_ArrayList*) _r2.o)->fields.java_util_Arrays_ArrayList.a_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -581,6 +587,7 @@ JAVA_INT java_util_Arrays_ArrayList_indexOf___java_lang_Object(JAVA_OBJECT me, J
     goto label3;
     label23:;
     XMLVM_SOURCE_POSITION("Arrays.java", 86)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Arrays_ArrayList*) _r2.o)->fields.java_util_Arrays_ArrayList.a_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -589,6 +596,7 @@ JAVA_INT java_util_Arrays_ArrayList_indexOf___java_lang_Object(JAVA_OBJECT me, J
     XMLVM_SOURCE_POSITION("Arrays.java", 85)
     _r0.i = _r0.i + 1;
     label31:;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Arrays_ArrayList*) _r2.o)->fields.java_util_Arrays_ArrayList.a_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i < _r1.i) goto label23;
@@ -610,6 +618,7 @@ JAVA_INT java_util_Arrays_ArrayList_lastIndexOf___java_lang_Object(JAVA_OBJECT m
     XMLVM_SOURCE_POSITION("Arrays.java", 96)
     if (_r3.o == JAVA_NULL) goto label24;
     XMLVM_SOURCE_POSITION("Arrays.java", 97)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Arrays_ArrayList*) _r2.o)->fields.java_util_Arrays_ArrayList.a_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r0.i = _r0.i - _r1.i;
@@ -623,6 +632,7 @@ JAVA_INT java_util_Arrays_ArrayList_lastIndexOf___java_lang_Object(JAVA_OBJECT m
     return _r0.i;
     label11:;
     XMLVM_SOURCE_POSITION("Arrays.java", 98)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Arrays_ArrayList*) _r2.o)->fields.java_util_Arrays_ArrayList.a_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -635,12 +645,14 @@ JAVA_INT java_util_Arrays_ArrayList_lastIndexOf___java_lang_Object(JAVA_OBJECT m
     goto label7;
     label24:;
     XMLVM_SOURCE_POSITION("Arrays.java", 103)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Arrays_ArrayList*) _r2.o)->fields.java_util_Arrays_ArrayList.a_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r0.i = _r0.i - _r1.i;
     label28:;
     if (_r0.i < 0) goto label9;
     XMLVM_SOURCE_POSITION("Arrays.java", 104)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Arrays_ArrayList*) _r2.o)->fields.java_util_Arrays_ArrayList.a_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -666,11 +678,13 @@ JAVA_OBJECT java_util_Arrays_ArrayList_set___int_java_lang_Object(JAVA_OBJECT me
     XMLVM_TRY_BEGIN(w25106aaab7b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("Arrays.java", 115)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Arrays_ArrayList*) _r2.o)->fields.java_util_Arrays_ArrayList.a_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r3.i);
     _r0.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i];
     XMLVM_SOURCE_POSITION("Arrays.java", 116)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Arrays_ArrayList*) _r2.o)->fields.java_util_Arrays_ArrayList.a_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r3.i);
@@ -712,6 +726,7 @@ JAVA_INT java_util_Arrays_ArrayList_size__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Arrays.java", 127)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Arrays_ArrayList*) _r1.o)->fields.java_util_Arrays_ArrayList.a_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     XMLVM_EXIT_METHOD()
@@ -727,6 +742,7 @@ JAVA_OBJECT java_util_Arrays_ArrayList_toArray__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Arrays.java", 132)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Arrays_ArrayList*) _r1.o)->fields.java_util_Arrays_ArrayList.a_;
     //java_lang_Object_1ARRAY_clone__[0]
     XMLVM_CHECK_NPE(0)
@@ -768,6 +784,7 @@ JAVA_OBJECT java_util_Arrays_ArrayList_toArray___java_lang_Object_1ARRAY(JAVA_OB
     _r0.o = _r0.o;
     label22:;
     XMLVM_SOURCE_POSITION("Arrays.java", 143)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Arrays_ArrayList*) _r4.o)->fields.java_util_Arrays_ArrayList.a_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r2.o, _r3.i, _r0.o, _r3.i, _r1.i);
     XMLVM_SOURCE_POSITION("Arrays.java", 144)

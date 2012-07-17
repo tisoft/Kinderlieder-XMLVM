@@ -459,11 +459,14 @@ void java_io_OutputStreamWriter___INIT____java_io_OutputStream(JAVA_OBJECT me, J
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 48)
     _r0.i = 8192;
     _r0.o = java_nio_ByteBuffer_allocate___int(_r0.i);
+    XMLVM_CHECK_NPE(3)
     ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.bytes_ = _r0.o;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 50)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(3)
     ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.encoderFlush_ = _r0.i;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 62)
+    XMLVM_CHECK_NPE(3)
     ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.out_ = _r4.o;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 64)
     _r0.o = __NEW_org_apache_harmony_luni_util_PriviAction();
@@ -481,13 +484,16 @@ void java_io_OutputStreamWriter___INIT____java_io_OutputStream(JAVA_OBJECT me, J
     //java_nio_charset_Charset_newEncoder__[9]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_charset_Charset*) _r0.o)->tib->vtable[9])(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.encoder_ = _r0.o;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 67)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.encoder_;
     _r1.o = java_nio_charset_CodingErrorAction_GET_REPLACE();
     XMLVM_CHECK_NPE(0)
     java_nio_charset_CharsetEncoder_onMalformedInput___java_nio_charset_CodingErrorAction(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 68)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.encoder_;
     _r1.o = java_nio_charset_CodingErrorAction_GET_REPLACE();
     XMLVM_CHECK_NPE(0)
@@ -516,9 +522,11 @@ void java_io_OutputStreamWriter___INIT____java_io_OutputStream_java_lang_String(
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 48)
     _r0.i = 8192;
     _r0.o = java_nio_ByteBuffer_allocate___int(_r0.i);
+    XMLVM_CHECK_NPE(2)
     ((java_io_OutputStreamWriter*) _r2.o)->fields.java_io_OutputStreamWriter.bytes_ = _r0.o;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 50)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((java_io_OutputStreamWriter*) _r2.o)->fields.java_io_OutputStreamWriter.encoderFlush_ = _r0.i;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 89)
     if (_r4.o != JAVA_NULL) goto label22;
@@ -529,6 +537,7 @@ void java_io_OutputStreamWriter___INIT____java_io_OutputStream_java_lang_String(
     XMLVM_THROW_CUSTOM(_r0.o)
     label22:;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 92)
+    XMLVM_CHECK_NPE(2)
     ((java_io_OutputStreamWriter*) _r2.o)->fields.java_io_OutputStreamWriter.out_ = _r3.o;
     XMLVM_TRY_BEGIN(w17548aaab5b1c22)
     // Begin try
@@ -537,6 +546,7 @@ void java_io_OutputStreamWriter___INIT____java_io_OutputStream_java_lang_String(
     //java_nio_charset_Charset_newEncoder__[9]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_charset_Charset*) _r0.o)->tib->vtable[9])(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((java_io_OutputStreamWriter*) _r2.o)->fields.java_io_OutputStreamWriter.encoder_ = _r0.o;
     // End try
     XMLVM_TRY_END
@@ -545,11 +555,13 @@ void java_io_OutputStreamWriter___INIT____java_io_OutputStream_java_lang_String(
     XMLVM_CATCH_END(w17548aaab5b1c22)
     XMLVM_RESTORE_EXCEPTION_ENV(w17548aaab5b1c22)
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 98)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_OutputStreamWriter*) _r2.o)->fields.java_io_OutputStreamWriter.encoder_;
     _r1.o = java_nio_charset_CodingErrorAction_GET_REPLACE();
     XMLVM_CHECK_NPE(0)
     java_nio_charset_CharsetEncoder_onMalformedInput___java_nio_charset_CodingErrorAction(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 99)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_OutputStreamWriter*) _r2.o)->fields.java_io_OutputStreamWriter.encoder_;
     _r1.o = java_nio_charset_CodingErrorAction_GET_REPLACE();
     XMLVM_CHECK_NPE(0)
@@ -586,23 +598,29 @@ void java_io_OutputStreamWriter___INIT____java_io_OutputStream_java_nio_charset_
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 48)
     _r0.i = 8192;
     _r0.o = java_nio_ByteBuffer_allocate___int(_r0.i);
+    XMLVM_CHECK_NPE(2)
     ((java_io_OutputStreamWriter*) _r2.o)->fields.java_io_OutputStreamWriter.bytes_ = _r0.o;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 50)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((java_io_OutputStreamWriter*) _r2.o)->fields.java_io_OutputStreamWriter.encoderFlush_ = _r0.i;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 114)
+    XMLVM_CHECK_NPE(2)
     ((java_io_OutputStreamWriter*) _r2.o)->fields.java_io_OutputStreamWriter.out_ = _r3.o;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 115)
     //java_nio_charset_Charset_newEncoder__[9]
     XMLVM_CHECK_NPE(4)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_charset_Charset*) _r4.o)->tib->vtable[9])(_r4.o);
+    XMLVM_CHECK_NPE(2)
     ((java_io_OutputStreamWriter*) _r2.o)->fields.java_io_OutputStreamWriter.encoder_ = _r0.o;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 116)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_OutputStreamWriter*) _r2.o)->fields.java_io_OutputStreamWriter.encoder_;
     _r1.o = java_nio_charset_CodingErrorAction_GET_REPLACE();
     XMLVM_CHECK_NPE(0)
     java_nio_charset_CharsetEncoder_onMalformedInput___java_nio_charset_CodingErrorAction(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 117)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_OutputStreamWriter*) _r2.o)->fields.java_io_OutputStreamWriter.encoder_;
     _r1.o = java_nio_charset_CodingErrorAction_GET_REPLACE();
     XMLVM_CHECK_NPE(0)
@@ -630,16 +648,20 @@ void java_io_OutputStreamWriter___INIT____java_io_OutputStream_java_nio_charset_
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 48)
     _r0.i = 8192;
     _r0.o = java_nio_ByteBuffer_allocate___int(_r0.i);
+    XMLVM_CHECK_NPE(1)
     ((java_io_OutputStreamWriter*) _r1.o)->fields.java_io_OutputStreamWriter.bytes_ = _r0.o;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 50)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_io_OutputStreamWriter*) _r1.o)->fields.java_io_OutputStreamWriter.encoderFlush_ = _r0.i;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 132)
     XMLVM_CHECK_NPE(3)
     java_nio_charset_CharsetEncoder_charset__(_r3.o);
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 133)
+    XMLVM_CHECK_NPE(1)
     ((java_io_OutputStreamWriter*) _r1.o)->fields.java_io_OutputStreamWriter.out_ = _r2.o;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 134)
+    XMLVM_CHECK_NPE(1)
     ((java_io_OutputStreamWriter*) _r1.o)->fields.java_io_OutputStreamWriter.encoder_ = _r3.o;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 135)
     XMLVM_EXIT_METHOD()
@@ -657,18 +679,23 @@ void java_io_OutputStreamWriter_close__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 150)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_Writer*) _r3.o)->fields.java_io_Writer.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w17548aaab8b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 151)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.encoder_;
     if (_r1.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w17548aaab8b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17548aaab8b1b5, sizeof(XMLVM_JMP_BUF)); goto label44; };
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 152)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.encoderFlush_;
     if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w17548aaab8b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17548aaab8b1b5, sizeof(XMLVM_JMP_BUF)); goto label25; };
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 153)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.encoder_;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.bytes_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_nio_charset_CharsetEncoder_flush___java_nio_ByteBuffer(_r1.o, _r2.o);
@@ -699,20 +726,24 @@ void java_io_OutputStreamWriter_close__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(3)
     (*(void (*)(JAVA_OBJECT)) ((java_io_OutputStreamWriter*) _r3.o)->tib->vtable[11])(_r3.o);
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 165)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.out_;
     //java_io_OutputStream_flush__[8]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT)) ((java_io_OutputStream*) _r1.o)->tib->vtable[8])(_r1.o);
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 166)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.out_;
     //java_io_OutputStream_close__[7]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT)) ((java_io_OutputStream*) _r1.o)->tib->vtable[7])(_r1.o);
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 167)
     _r1.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(3)
     ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.encoder_ = _r1.o;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 168)
     _r1.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(3)
     ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.bytes_ = _r1.o;
     // End try
     XMLVM_TRY_END
@@ -746,7 +777,9 @@ void java_io_OutputStreamWriter_close__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(3)
     (*(void (*)(JAVA_OBJECT)) ((java_io_OutputStreamWriter*) _r3.o)->tib->vtable[11])(_r3.o);
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 157)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.encoder_;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.bytes_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_nio_charset_CharsetEncoder_flush___java_nio_ByteBuffer(_r1.o, _r2.o);
@@ -798,6 +831,7 @@ void java_io_OutputStreamWriter_flush__(JAVA_OBJECT me)
     XMLVMElem _r5;
     _r5.o = me;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 183)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_io_Writer*) _r5.o)->fields.java_io_Writer.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w17548aaab9b1b5)
@@ -806,16 +840,20 @@ void java_io_OutputStreamWriter_flush__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(5)
     java_io_OutputStreamWriter_checkStatus__(_r5.o);
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 186)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_io_OutputStreamWriter*) _r5.o)->fields.java_io_OutputStreamWriter.bytes_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_nio_Buffer_position__(_r1.o);
     if (_r1.i <= 0) { XMLVM_MEMCPY(curThread_w17548aaab9b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17548aaab9b1b5, sizeof(XMLVM_JMP_BUF)); goto label36; };
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 187)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_io_OutputStreamWriter*) _r5.o)->fields.java_io_OutputStreamWriter.bytes_;
     XMLVM_CHECK_NPE(2)
     java_nio_Buffer_flip__(_r2.o);
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 188)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_io_OutputStreamWriter*) _r5.o)->fields.java_io_OutputStreamWriter.out_;
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_io_OutputStreamWriter*) _r5.o)->fields.java_io_OutputStreamWriter.bytes_;
     //java_nio_ByteBuffer_array__[7]
     XMLVM_CHECK_NPE(3)
@@ -825,6 +863,7 @@ void java_io_OutputStreamWriter_flush__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) ((java_io_OutputStream*) _r2.o)->tib->vtable[10])(_r2.o, _r3.o, _r4.i, _r1.i);
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 189)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_io_OutputStreamWriter*) _r5.o)->fields.java_io_OutputStreamWriter.bytes_;
     XMLVM_CHECK_NPE(1)
     java_nio_Buffer_clear__(_r1.o);
@@ -838,6 +877,7 @@ void java_io_OutputStreamWriter_flush__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w17548aaab9b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 191)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_io_OutputStreamWriter*) _r5.o)->fields.java_io_OutputStreamWriter.out_;
     //java_io_OutputStream_flush__[8]
     XMLVM_CHECK_NPE(1)
@@ -878,6 +918,7 @@ void java_io_OutputStreamWriter_checkStatus__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 196)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_OutputStreamWriter*) _r2.o)->fields.java_io_OutputStreamWriter.encoder_;
     if (_r0.o != JAVA_NULL) goto label16;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 198)
@@ -903,6 +944,7 @@ JAVA_OBJECT java_io_OutputStreamWriter_getEncoding__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 210)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_OutputStreamWriter*) _r1.o)->fields.java_io_OutputStreamWriter.encoder_;
     if (_r0.o != JAVA_NULL) goto label6;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 211)
@@ -912,6 +954,7 @@ JAVA_OBJECT java_io_OutputStreamWriter_getEncoding__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label6:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_OutputStreamWriter*) _r1.o)->fields.java_io_OutputStreamWriter.encoder_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_nio_charset_CharsetEncoder_charset__(_r0.o);
@@ -937,6 +980,7 @@ void java_io_OutputStreamWriter_write___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA
     _r4.i = n2;
     _r5.i = n3;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 238)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_Writer*) _r2.o)->fields.java_io_Writer.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w17548aaac12b1b8)
@@ -1017,11 +1061,14 @@ void java_io_OutputStreamWriter_convert___java_nio_CharBuffer(JAVA_OBJECT me, JA
     _r4.o = n1;
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 249)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.encoder_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.bytes_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_nio_charset_CharsetEncoder_encode___java_nio_CharBuffer_java_nio_ByteBuffer_boolean(_r0.o, _r4.o, _r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 250)
+    XMLVM_CHECK_NPE(3)
     ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.encoderFlush_ = _r2.i;
     label11:;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 252)
@@ -1046,7 +1093,9 @@ void java_io_OutputStreamWriter_convert___java_nio_CharBuffer(JAVA_OBJECT me, JA
     XMLVM_CHECK_NPE(3)
     (*(void (*)(JAVA_OBJECT)) ((java_io_OutputStreamWriter*) _r3.o)->tib->vtable[11])(_r3.o);
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 257)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.encoder_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_OutputStreamWriter*) _r3.o)->fields.java_io_OutputStreamWriter.bytes_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_nio_charset_CharsetEncoder_encode___java_nio_CharBuffer_java_nio_ByteBuffer_boolean(_r0.o, _r4.o, _r1.o, _r2.i);
@@ -1071,6 +1120,7 @@ void java_io_OutputStreamWriter_write___int(JAVA_OBJECT me, JAVA_INT n1)
     _r4.o = me;
     _r5.i = n1;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 277)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_io_Writer*) _r4.o)->fields.java_io_Writer.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w17548aaac14b1b6)
@@ -1133,6 +1183,7 @@ void java_io_OutputStreamWriter_write___java_lang_String_int_int(JAVA_OBJECT me,
     _r4.i = n2;
     _r5.i = n3;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 306)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_Writer*) _r2.o)->fields.java_io_Writer.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 308)
@@ -1226,6 +1277,7 @@ JAVA_BOOLEAN java_io_OutputStreamWriter_checkError__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("OutputStreamWriter.java", 321)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_OutputStreamWriter*) _r1.o)->fields.java_io_OutputStreamWriter.out_;
     //java_io_OutputStream_checkError__[6]
     XMLVM_CHECK_NPE(0)

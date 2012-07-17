@@ -225,6 +225,7 @@ void org_w3c_dom_events_EventException___INIT____short_java_lang_String(JAVA_OBJ
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimeException___INIT____java_lang_String(_r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("EventException.java", 24)
+    XMLVM_CHECK_NPE(0)
     ((org_w3c_dom_events_EventException*) _r0.o)->fields.org_w3c_dom_events_EventException.code_ = _r1.i;
     XMLVM_SOURCE_POSITION("EventException.java", 25)
     XMLVM_EXIT_METHOD()

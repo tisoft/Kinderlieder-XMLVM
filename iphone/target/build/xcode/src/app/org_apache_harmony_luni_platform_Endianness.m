@@ -281,6 +281,7 @@ void org_apache_harmony_luni_platform_Endianness___INIT____java_lang_String(JAVA
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Endianness.java", 44)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_platform_Endianness*) _r0.o)->fields.org_apache_harmony_luni_platform_Endianness.displayName_ = _r1.o;
     XMLVM_SOURCE_POSITION("Endianness.java", 45)
     XMLVM_EXIT_METHOD()
@@ -296,6 +297,7 @@ JAVA_OBJECT org_apache_harmony_luni_platform_Endianness_toString__(JAVA_OBJECT m
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Endianness.java", 53)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_platform_Endianness*) _r1.o)->fields.org_apache_harmony_luni_platform_Endianness.displayName_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

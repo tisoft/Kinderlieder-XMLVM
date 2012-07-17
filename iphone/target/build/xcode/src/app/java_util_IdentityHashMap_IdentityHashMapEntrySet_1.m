@@ -218,6 +218,7 @@ void java_util_IdentityHashMap_IdentityHashMapEntrySet_1___INIT____java_util_Ide
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_IdentityHashMap_IdentityHashMapEntrySet_1*) _r0.o)->fields.java_util_IdentityHashMap_IdentityHashMapEntrySet_1.this_1_ = _r1.o;
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 231)
     XMLVM_CHECK_NPE(0)

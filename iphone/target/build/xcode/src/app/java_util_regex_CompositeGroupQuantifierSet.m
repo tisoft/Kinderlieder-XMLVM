@@ -290,10 +290,13 @@ void java_util_regex_CompositeGroupQuantifierSet___INIT____java_util_regex_Quant
     java_util_regex_GroupQuantifierSet___INIT____java_util_regex_AbstractSet_java_util_regex_AbstractSet_int(_r1.o, _r3.o, _r4.o, _r5.i);
     XMLVM_SOURCE_POSITION("CompositeGroupQuantifierSet.java", 30)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_CompositeGroupQuantifierSet*) _r1.o)->fields.java_util_regex_CompositeGroupQuantifierSet.quantifier_ = _r0.o;
     XMLVM_SOURCE_POSITION("CompositeGroupQuantifierSet.java", 43)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_CompositeGroupQuantifierSet*) _r1.o)->fields.java_util_regex_CompositeGroupQuantifierSet.quantifier_ = _r2.o;
     XMLVM_SOURCE_POSITION("CompositeGroupQuantifierSet.java", 44)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_CompositeGroupQuantifierSet*) _r1.o)->fields.java_util_regex_CompositeGroupQuantifierSet.setCounter_ = _r6.i;
     XMLVM_SOURCE_POSITION("CompositeGroupQuantifierSet.java", 45)
     XMLVM_EXIT_METHOD()
@@ -318,16 +321,19 @@ JAVA_INT java_util_regex_CompositeGroupQuantifierSet_matches___int_java_lang_Cha
     _r6.o = n3;
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("CompositeGroupQuantifierSet.java", 49)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_regex_CompositeGroupQuantifierSet*) _r3.o)->fields.java_util_regex_CompositeGroupQuantifierSet.setCounter_;
     XMLVM_CHECK_NPE(6)
     _r0.i = java_util_regex_MatchResultImpl_getEnterCounter___int(_r6.o, _r0.i);
     XMLVM_SOURCE_POSITION("CompositeGroupQuantifierSet.java", 51)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_QuantifierSet*) _r3.o)->fields.java_util_regex_QuantifierSet.innerSet_;
     //java_util_regex_AbstractSet_hasConsumed___java_util_regex_MatchResultImpl[12]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_regex_AbstractSet*) _r1.o)->tib->vtable[12])(_r1.o, _r6.o);
     if (_r1.i != 0) goto label22;
     XMLVM_SOURCE_POSITION("CompositeGroupQuantifierSet.java", 52)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -338,11 +344,13 @@ JAVA_INT java_util_regex_CompositeGroupQuantifierSet_matches___int_java_lang_Cha
     return _r0.i;
     label22:;
     XMLVM_SOURCE_POSITION("CompositeGroupQuantifierSet.java", 55)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_CompositeGroupQuantifierSet*) _r3.o)->fields.java_util_regex_CompositeGroupQuantifierSet.quantifier_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_util_regex_Quantifier_max__(_r1.o);
     if (_r0.i < _r1.i) goto label37;
     XMLVM_SOURCE_POSITION("CompositeGroupQuantifierSet.java", 56)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -350,11 +358,13 @@ JAVA_INT java_util_regex_CompositeGroupQuantifierSet_matches___int_java_lang_Cha
     goto label21;
     label37:;
     XMLVM_SOURCE_POSITION("CompositeGroupQuantifierSet.java", 60)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_CompositeGroupQuantifierSet*) _r3.o)->fields.java_util_regex_CompositeGroupQuantifierSet.setCounter_;
     _r0.i = _r0.i + 1;
     XMLVM_CHECK_NPE(6)
     java_util_regex_MatchResultImpl_setEnterCounter___int_int(_r6.o, _r1.i, _r0.i);
     XMLVM_SOURCE_POSITION("CompositeGroupQuantifierSet.java", 61)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_QuantifierSet*) _r3.o)->fields.java_util_regex_QuantifierSet.innerSet_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(1)
@@ -362,16 +372,19 @@ JAVA_INT java_util_regex_CompositeGroupQuantifierSet_matches___int_java_lang_Cha
     XMLVM_SOURCE_POSITION("CompositeGroupQuantifierSet.java", 63)
     if (_r1.i >= 0) goto label81;
     XMLVM_SOURCE_POSITION("CompositeGroupQuantifierSet.java", 64)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_CompositeGroupQuantifierSet*) _r3.o)->fields.java_util_regex_CompositeGroupQuantifierSet.setCounter_;
     _r0.i = _r0.i + -1;
     XMLVM_CHECK_NPE(6)
     java_util_regex_MatchResultImpl_setEnterCounter___int_int(_r6.o, _r1.i, _r0.i);
     XMLVM_SOURCE_POSITION("CompositeGroupQuantifierSet.java", 65)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_CompositeGroupQuantifierSet*) _r3.o)->fields.java_util_regex_CompositeGroupQuantifierSet.quantifier_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_util_regex_Quantifier_min__(_r1.o);
     if (_r0.i < _r1.i) goto label74;
     XMLVM_SOURCE_POSITION("CompositeGroupQuantifierSet.java", 66)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -379,6 +392,7 @@ JAVA_INT java_util_regex_CompositeGroupQuantifierSet_matches___int_java_lang_Cha
     goto label21;
     label74:;
     XMLVM_SOURCE_POSITION("CompositeGroupQuantifierSet.java", 68)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_regex_CompositeGroupQuantifierSet*) _r3.o)->fields.java_util_regex_CompositeGroupQuantifierSet.setCounter_;
     XMLVM_CHECK_NPE(6)
     java_util_regex_MatchResultImpl_setEnterCounter___int_int(_r6.o, _r0.i, _r2.i);
@@ -387,6 +401,7 @@ JAVA_INT java_util_regex_CompositeGroupQuantifierSet_matches___int_java_lang_Cha
     goto label21;
     label81:;
     XMLVM_SOURCE_POSITION("CompositeGroupQuantifierSet.java", 72)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_regex_CompositeGroupQuantifierSet*) _r3.o)->fields.java_util_regex_CompositeGroupQuantifierSet.setCounter_;
     XMLVM_CHECK_NPE(6)
     java_util_regex_MatchResultImpl_setEnterCounter___int_int(_r6.o, _r0.i, _r2.i);
@@ -403,6 +418,7 @@ void java_util_regex_CompositeGroupQuantifierSet_reset__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CompositeGroupQuantifierSet.java", 78)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_CompositeGroupQuantifierSet*) _r1.o)->fields.java_util_regex_CompositeGroupQuantifierSet.quantifier_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_Quantifier_resetCounter__(_r0.o);
@@ -420,6 +436,7 @@ JAVA_OBJECT java_util_regex_CompositeGroupQuantifierSet_getName__(JAVA_OBJECT me
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CompositeGroupQuantifierSet.java", 82)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_CompositeGroupQuantifierSet*) _r1.o)->fields.java_util_regex_CompositeGroupQuantifierSet.quantifier_;
     //java_util_regex_Quantifier_toString__[5]
     XMLVM_CHECK_NPE(0)
@@ -438,6 +455,7 @@ void java_util_regex_CompositeGroupQuantifierSet_setQuantifier___java_util_regex
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("CompositeGroupQuantifierSet.java", 86)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_CompositeGroupQuantifierSet*) _r0.o)->fields.java_util_regex_CompositeGroupQuantifierSet.quantifier_ = _r1.o;
     XMLVM_SOURCE_POSITION("CompositeGroupQuantifierSet.java", 87)
     XMLVM_EXIT_METHOD()

@@ -294,8 +294,10 @@ void java_util_PropertyResourceBundle___INIT____java_io_InputStream(JAVA_OBJECT 
     _r0.o = __NEW_java_util_Properties();
     XMLVM_CHECK_NPE(0)
     java_util_Properties___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_PropertyResourceBundle*) _r1.o)->fields.java_util_PropertyResourceBundle.resources_ = _r0.o;
     XMLVM_SOURCE_POSITION("PropertyResourceBundle.java", 52)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_PropertyResourceBundle*) _r1.o)->fields.java_util_PropertyResourceBundle.resources_;
     XMLVM_CHECK_NPE(0)
     java_util_Properties_load___java_io_InputStream(_r0.o, _r2.o);
@@ -321,8 +323,10 @@ void java_util_PropertyResourceBundle___INIT____java_io_Reader(JAVA_OBJECT me, J
     _r0.o = __NEW_java_util_Properties();
     XMLVM_CHECK_NPE(0)
     java_util_Properties___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_PropertyResourceBundle*) _r1.o)->fields.java_util_PropertyResourceBundle.resources_ = _r0.o;
     XMLVM_SOURCE_POSITION("PropertyResourceBundle.java", 66)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_PropertyResourceBundle*) _r1.o)->fields.java_util_PropertyResourceBundle.resources_;
     XMLVM_CHECK_NPE(0)
     java_util_Properties_load___java_io_Reader(_r0.o, _r2.o);
@@ -340,6 +344,7 @@ JAVA_OBJECT java_util_PropertyResourceBundle_handleKeySet__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("PropertyResourceBundle.java", 76)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_PropertyResourceBundle*) _r1.o)->fields.java_util_PropertyResourceBundle.resources_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_util_Properties_stringPropertyNames__(_r0.o);
@@ -356,6 +361,7 @@ JAVA_OBJECT java_util_PropertyResourceBundle_getLocalKeys__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("PropertyResourceBundle.java", 81)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_PropertyResourceBundle*) _r1.o)->fields.java_util_PropertyResourceBundle.resources_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_util_Properties_propertyNames__(_r0.o);
@@ -372,6 +378,7 @@ JAVA_OBJECT java_util_PropertyResourceBundle_getKeys__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("PropertyResourceBundle.java", 92)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_ResourceBundle*) _r1.o)->fields.java_util_ResourceBundle.parent_;
     if (_r0.o != JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("PropertyResourceBundle.java", 93)
@@ -399,6 +406,7 @@ JAVA_OBJECT java_util_PropertyResourceBundle_handleGetObject___java_lang_String(
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("PropertyResourceBundle.java", 148)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_PropertyResourceBundle*) _r1.o)->fields.java_util_PropertyResourceBundle.resources_;
     //java_util_Properties_get___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)

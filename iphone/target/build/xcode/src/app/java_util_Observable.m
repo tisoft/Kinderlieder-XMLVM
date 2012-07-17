@@ -353,9 +353,11 @@ void java_util_Observable___INIT___(JAVA_OBJECT me)
     _r0.o = __NEW_java_util_ArrayList();
     XMLVM_CHECK_NPE(0)
     java_util_ArrayList___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_Observable*) _r1.o)->fields.java_util_Observable.observers_ = _r0.o;
     XMLVM_SOURCE_POSITION("Observable.java", 35)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Observable*) _r1.o)->fields.java_util_Observable.changed_ = _r0.i;
     XMLVM_SOURCE_POSITION("Observable.java", 42)
     XMLVM_EXIT_METHOD()
@@ -385,11 +387,13 @@ void java_util_Observable_addObserver___java_util_Observer(JAVA_OBJECT me, JAVA_
     XMLVM_TRY_BEGIN(w2033aaab3b1c12)
     // Begin try
     XMLVM_SOURCE_POSITION("Observable.java", 56)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Observable*) _r1.o)->fields.java_util_Observable.observers_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_contains___java_lang_Object])(_r0.o, _r2.o);
     if (_r0.i != 0) { XMLVM_MEMCPY(curThread_w2033aaab3b1c12->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w2033aaab3b1c12, sizeof(XMLVM_JMP_BUF)); goto label22; };
     XMLVM_SOURCE_POSITION("Observable.java", 57)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Observable*) _r1.o)->fields.java_util_Observable.observers_;
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_add___java_lang_Object])(_r0.o, _r2.o);
@@ -438,6 +442,7 @@ void java_util_Observable_clearChanged__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Observable.java", 66)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Observable*) _r1.o)->fields.java_util_Observable.changed_ = _r0.i;
     XMLVM_SOURCE_POSITION("Observable.java", 67)
     XMLVM_EXIT_METHOD()
@@ -453,6 +458,7 @@ JAVA_INT java_util_Observable_countObservers__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Observable.java", 75)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Observable*) _r1.o)->fields.java_util_Observable.observers_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_size__])(_r0.o);
@@ -474,6 +480,7 @@ void java_util_Observable_deleteObserver___java_util_Observer(JAVA_OBJECT me, JA
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_TRY_BEGIN(w2033aaab6b1b5)
     // Begin try
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Observable*) _r1.o)->fields.java_util_Observable.observers_;
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_remove___java_lang_Object])(_r0.o, _r2.o);
@@ -506,6 +513,7 @@ void java_util_Observable_deleteObservers__(JAVA_OBJECT me)
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_TRY_BEGIN(w2033aaab7b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Observable*) _r1.o)->fields.java_util_Observable.observers_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_clear__])(_r0.o);
@@ -535,6 +543,7 @@ JAVA_BOOLEAN java_util_Observable_hasChanged__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Observable.java", 103)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_Observable*) _r1.o)->fields.java_util_Observable.changed_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -586,6 +595,7 @@ void java_util_Observable_notifyObservers___java_lang_Object(JAVA_OBJECT me, JAV
     XMLVM_CHECK_NPE(4)
     java_util_Observable_clearChanged__(_r4.o);
     XMLVM_SOURCE_POSITION("Observable.java", 132)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Observable*) _r4.o)->fields.java_util_Observable.observers_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_size__])(_r0.o);
@@ -593,6 +603,7 @@ void java_util_Observable_notifyObservers___java_lang_Object(JAVA_OBJECT me, JAV
     if (!__TIB_java_util_Observer.classInitialized) __INIT_java_util_Observer();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_util_Observer, _r0.i);
     XMLVM_SOURCE_POSITION("Observable.java", 134)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Observable*) _r4.o)->fields.java_util_Observable.observers_;
     XMLVM_CHECK_NPE(1)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_toArray___java_lang_Object_1ARRAY])(_r1.o, _r0.o);
@@ -657,6 +668,7 @@ void java_util_Observable_setChanged__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Observable.java", 149)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Observable*) _r1.o)->fields.java_util_Observable.changed_ = _r0.i;
     XMLVM_SOURCE_POSITION("Observable.java", 150)
     XMLVM_EXIT_METHOD()

@@ -323,7 +323,7 @@ JAVA_BOOLEAN java_util_AbstractSet_equals___java_lang_Object(JAVA_OBJECT me, JAV
     if (_r0.i == 0) goto label38;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 54)
     _r5.o = _r5.o;
-    XMLVM_TRY_BEGIN(w42631aaab1b1c18)
+    XMLVM_TRY_BEGIN(w42636aaab1b1c18)
     // Begin try
     XMLVM_SOURCE_POSITION("AbstractSet.java", 57)
     //java_util_AbstractSet_size__[16]
@@ -331,17 +331,17 @@ JAVA_BOOLEAN java_util_AbstractSet_equals___java_lang_Object(JAVA_OBJECT me, JAV
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_util_AbstractSet*) _r4.o)->tib->vtable[16])(_r4.o);
     XMLVM_CHECK_NPE(5)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Set_size__])(_r5.o);
-    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42631aaab1b1c18->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42631aaab1b1c18, sizeof(XMLVM_JMP_BUF)); goto label30; };
+    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42636aaab1b1c18->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42636aaab1b1c18, sizeof(XMLVM_JMP_BUF)); goto label30; };
     //java_util_AbstractSet_containsAll___java_util_Collection[9]
     XMLVM_CHECK_NPE(4)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_AbstractSet*) _r4.o)->tib->vtable[9])(_r4.o, _r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42631aaab1b1c18)
-        XMLVM_CATCH_SPECIFIC(w42631aaab1b1c18,java_lang_NullPointerException,32)
-        XMLVM_CATCH_SPECIFIC(w42631aaab1b1c18,java_lang_ClassCastException,35)
-    XMLVM_CATCH_END(w42631aaab1b1c18)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42631aaab1b1c18)
+    XMLVM_CATCH_BEGIN(w42636aaab1b1c18)
+        XMLVM_CATCH_SPECIFIC(w42636aaab1b1c18,java_lang_NullPointerException,32)
+        XMLVM_CATCH_SPECIFIC(w42636aaab1b1c18,java_lang_ClassCastException,35)
+    XMLVM_CATCH_END(w42636aaab1b1c18)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42636aaab1b1c18)
     if (_r0.i == 0) goto label30;
     _r0 = _r3;
     goto label5;
@@ -350,14 +350,14 @@ JAVA_BOOLEAN java_util_AbstractSet_equals___java_lang_Object(JAVA_OBJECT me, JAV
     goto label5;
     label32:;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 59)
-    java_lang_Thread* curThread_w42631aaab1b1c27 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w42631aaab1b1c27->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w42636aaab1b1c27 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w42636aaab1b1c27->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r2;
     goto label5;
     label35:;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 61)
-    java_lang_Thread* curThread_w42631aaab1b1c32 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w42631aaab1b1c32->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w42636aaab1b1c32 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w42636aaab1b1c32->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r2;
     goto label5;
     label38:;

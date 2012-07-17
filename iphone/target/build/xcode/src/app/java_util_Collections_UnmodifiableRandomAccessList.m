@@ -320,6 +320,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableRandomAccessList_subList___int_int
     _r4.i = n2;
     XMLVM_SOURCE_POSITION("Collections.java", 1066)
     _r0.o = __NEW_java_util_Collections_UnmodifiableRandomAccessList();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_UnmodifiableList*) _r2.o)->fields.java_util_Collections_UnmodifiableList.list_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT, JAVA_INT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_subList___int_int])(_r1.o, _r3.i, _r4.i);
@@ -340,6 +341,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableRandomAccessList_writeReplace__(JA
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1081)
     _r0.o = __NEW_java_util_Collections_UnmodifiableList();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_UnmodifiableList*) _r2.o)->fields.java_util_Collections_UnmodifiableList.list_;
     XMLVM_CHECK_NPE(0)
     java_util_Collections_UnmodifiableList___INIT____java_util_List(_r0.o, _r1.o);

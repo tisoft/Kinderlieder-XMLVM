@@ -417,6 +417,7 @@ void java_io_ByteArrayOutputStream___INIT___(JAVA_OBJECT me)
     _r0.i = 32;
     if (!__TIB_byte.classInitialized) __INIT_byte();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_byte, _r0.i);
+    XMLVM_CHECK_NPE(1)
     ((java_io_ByteArrayOutputStream*) _r1.o)->fields.java_io_ByteArrayOutputStream.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("ByteArrayOutputStream.java", 49)
     XMLVM_EXIT_METHOD()
@@ -442,6 +443,7 @@ void java_io_ByteArrayOutputStream___INIT____int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("ByteArrayOutputStream.java", 65)
     if (!__TIB_byte.classInitialized) __INIT_byte();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_byte, _r3.i);
+    XMLVM_CHECK_NPE(2)
     ((java_io_ByteArrayOutputStream*) _r2.o)->fields.java_io_ByteArrayOutputStream.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("ByteArrayOutputStream.java", 69)
     XMLVM_EXIT_METHOD()
@@ -487,8 +489,10 @@ void java_io_ByteArrayOutputStream_expand___int(JAVA_OBJECT me, JAVA_INT n1)
     _r5.i = n1;
     _r3.i = 0;
     XMLVM_SOURCE_POSITION("ByteArrayOutputStream.java", 89)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_io_ByteArrayOutputStream*) _r4.o)->fields.java_io_ByteArrayOutputStream.count_;
     _r0.i = _r0.i + _r5.i;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_io_ByteArrayOutputStream*) _r4.o)->fields.java_io_ByteArrayOutputStream.buf_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i > _r1.i) goto label10;
@@ -498,16 +502,20 @@ void java_io_ByteArrayOutputStream_expand___int(JAVA_OBJECT me, JAVA_INT n1)
     return;
     label10:;
     XMLVM_SOURCE_POSITION("ByteArrayOutputStream.java", 93)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_io_ByteArrayOutputStream*) _r4.o)->fields.java_io_ByteArrayOutputStream.count_;
     _r0.i = _r0.i + _r5.i;
     _r0.i = _r0.i * 2;
     if (!__TIB_byte.classInitialized) __INIT_byte();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_byte, _r0.i);
     XMLVM_SOURCE_POSITION("ByteArrayOutputStream.java", 94)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_io_ByteArrayOutputStream*) _r4.o)->fields.java_io_ByteArrayOutputStream.buf_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_io_ByteArrayOutputStream*) _r4.o)->fields.java_io_ByteArrayOutputStream.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r3.i, _r0.o, _r3.i, _r2.i);
     XMLVM_SOURCE_POSITION("ByteArrayOutputStream.java", 95)
+    XMLVM_CHECK_NPE(4)
     ((java_io_ByteArrayOutputStream*) _r4.o)->fields.java_io_ByteArrayOutputStream.buf_ = _r0.o;
     goto label9;
     //XMLVM_END_WRAPPER
@@ -525,6 +533,7 @@ void java_io_ByteArrayOutputStream_reset__(JAVA_OBJECT me)
     _r0.i = 0;
     XMLVM_TRY_BEGIN(w14778aaab6b1b5)
     // Begin try
+    XMLVM_CHECK_NPE(1)
     ((java_io_ByteArrayOutputStream*) _r1.o)->fields.java_io_ByteArrayOutputStream.count_ = _r0.i;
     // End try
     XMLVM_TRY_END
@@ -552,6 +561,7 @@ JAVA_INT java_io_ByteArrayOutputStream_size__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ByteArrayOutputStream.java", 113)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_io_ByteArrayOutputStream*) _r1.o)->fields.java_io_ByteArrayOutputStream.count_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -573,13 +583,16 @@ JAVA_OBJECT java_io_ByteArrayOutputStream_toByteArray__(JAVA_OBJECT me)
     java_lang_Object_acquireLockRecursive__(_r5.o);
     XMLVM_TRY_BEGIN(w14778aaab8b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_io_ByteArrayOutputStream*) _r5.o)->fields.java_io_ByteArrayOutputStream.count_;
     if (!__TIB_byte.classInitialized) __INIT_byte();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_byte, _r0.i);
     XMLVM_SOURCE_POSITION("ByteArrayOutputStream.java", 125)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_io_ByteArrayOutputStream*) _r5.o)->fields.java_io_ByteArrayOutputStream.buf_;
     _r2.i = 0;
     _r3.i = 0;
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((java_io_ByteArrayOutputStream*) _r5.o)->fields.java_io_ByteArrayOutputStream.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r2.i, _r0.o, _r3.i, _r4.i);
     // End try
@@ -612,8 +625,10 @@ JAVA_OBJECT java_io_ByteArrayOutputStream_toString__(JAVA_OBJECT me)
     _r4.o = me;
     XMLVM_SOURCE_POSITION("ByteArrayOutputStream.java", 139)
     _r0.o = __NEW_java_lang_String();
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_io_ByteArrayOutputStream*) _r4.o)->fields.java_io_ByteArrayOutputStream.buf_;
     _r2.i = 0;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_io_ByteArrayOutputStream*) _r4.o)->fields.java_io_ByteArrayOutputStream.count_;
     XMLVM_CHECK_NPE(0)
     java_lang_String___INIT____byte_1ARRAY_int_int(_r0.o, _r1.o, _r2.i, _r3.i);
@@ -654,6 +669,7 @@ JAVA_OBJECT java_io_ByteArrayOutputStream_toString___int(JAVA_OBJECT me, JAVA_IN
     XMLVM_SOURCE_POSITION("ByteArrayOutputStream.java", 160)
     _r2.i = _r5.i & 255;
     _r2.i = _r2.i << 8;
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_io_ByteArrayOutputStream*) _r4.o)->fields.java_io_ByteArrayOutputStream.buf_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
@@ -683,8 +699,10 @@ JAVA_OBJECT java_io_ByteArrayOutputStream_toString___java_lang_String(JAVA_OBJEC
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("ByteArrayOutputStream.java", 177)
     _r0.o = __NEW_java_lang_String();
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_io_ByteArrayOutputStream*) _r4.o)->fields.java_io_ByteArrayOutputStream.buf_;
     _r2.i = 0;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_io_ByteArrayOutputStream*) _r4.o)->fields.java_io_ByteArrayOutputStream.count_;
     XMLVM_CHECK_NPE(0)
     java_lang_String___INIT____byte_1ARRAY_int_int_java_lang_String(_r0.o, _r1.o, _r2.i, _r3.i, _r5.o);
@@ -762,12 +780,16 @@ void java_io_ByteArrayOutputStream_write___byte_1ARRAY_int_int(JAVA_OBJECT me, J
     XMLVM_CHECK_NPE(2)
     java_io_ByteArrayOutputStream_expand___int(_r2.o, _r5.i);
     XMLVM_SOURCE_POSITION("ByteArrayOutputStream.java", 210)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_ByteArrayOutputStream*) _r2.o)->fields.java_io_ByteArrayOutputStream.buf_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_io_ByteArrayOutputStream*) _r2.o)->fields.java_io_ByteArrayOutputStream.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r3.o, _r4.i, _r0.o, _r1.i, _r5.i);
     XMLVM_SOURCE_POSITION("ByteArrayOutputStream.java", 211)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_io_ByteArrayOutputStream*) _r2.o)->fields.java_io_ByteArrayOutputStream.count_;
     _r0.i = _r0.i + _r5.i;
+    XMLVM_CHECK_NPE(2)
     ((java_io_ByteArrayOutputStream*) _r2.o)->fields.java_io_ByteArrayOutputStream.count_ = _r0.i;
     // End try
     XMLVM_TRY_END
@@ -794,7 +816,9 @@ void java_io_ByteArrayOutputStream_write___int(JAVA_OBJECT me, JAVA_INT n1)
     java_lang_Object_acquireLockRecursive__(_r3.o);
     XMLVM_TRY_BEGIN(w14778aaac13b1b5)
     // Begin try
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_io_ByteArrayOutputStream*) _r3.o)->fields.java_io_ByteArrayOutputStream.count_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_ByteArrayOutputStream*) _r3.o)->fields.java_io_ByteArrayOutputStream.buf_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w14778aaac13b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w14778aaac13b1b5, sizeof(XMLVM_JMP_BUF)); goto label12; };
@@ -812,9 +836,12 @@ void java_io_ByteArrayOutputStream_write___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_TRY_BEGIN(w14778aaac13b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("ByteArrayOutputStream.java", 226)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_ByteArrayOutputStream*) _r3.o)->fields.java_io_ByteArrayOutputStream.buf_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_io_ByteArrayOutputStream*) _r3.o)->fields.java_io_ByteArrayOutputStream.count_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_io_ByteArrayOutputStream*) _r3.o)->fields.java_io_ByteArrayOutputStream.count_ = _r2.i;
     _r2.i = (_r4.i << 24) >> 24;
     XMLVM_CHECK_NPE(0)
@@ -853,8 +880,10 @@ void java_io_ByteArrayOutputStream_writeTo___java_io_OutputStream(JAVA_OBJECT me
     java_lang_Object_acquireLockRecursive__(_r3.o);
     XMLVM_TRY_BEGIN(w14778aaac14b1b5)
     // Begin try
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_ByteArrayOutputStream*) _r3.o)->fields.java_io_ByteArrayOutputStream.buf_;
     _r1.i = 0;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_io_ByteArrayOutputStream*) _r3.o)->fields.java_io_ByteArrayOutputStream.count_;
     //java_io_OutputStream_write___byte_1ARRAY_int_int[10]
     XMLVM_CHECK_NPE(4)

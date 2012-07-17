@@ -886,6 +886,7 @@ void java_lang_Double___INIT____double(JAVA_OBJECT me, JAVA_DOUBLE n1)
     XMLVM_CHECK_NPE(0)
     java_lang_Number___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Double.java", 117)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_Double*) _r0.o)->fields.java_lang_Double.value_ = _r1.d;
     XMLVM_SOURCE_POSITION("Double.java", 118)
     XMLVM_EXIT_METHOD()
@@ -926,7 +927,9 @@ JAVA_INT java_lang_Double_compareTo___java_lang_Double(JAVA_OBJECT me, JAVA_OBJE
     _r4.o = me;
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("Double.java", 154)
+    XMLVM_CHECK_NPE(4)
     _r0.d = ((java_lang_Double*) _r4.o)->fields.java_lang_Double.value_;
+    XMLVM_CHECK_NPE(5)
     _r2.d = ((java_lang_Double*) _r5.o)->fields.java_lang_Double.value_;
     _r0.i = java_lang_Double_compare___double_double(_r0.d, _r2.d);
     XMLVM_EXIT_METHOD()
@@ -943,6 +946,7 @@ JAVA_BYTE java_lang_Double_byteValue__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Double.java", 159)
+    XMLVM_CHECK_NPE(2)
     _r0.d = ((java_lang_Double*) _r2.o)->fields.java_lang_Double.value_;
     _r0.i = (JAVA_INT) _r0.d;
     _r0.i = (_r0.i << 24) >> 24;
@@ -964,6 +968,7 @@ JAVA_DOUBLE java_lang_Double_doubleValue__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Double.java", 198)
+    XMLVM_CHECK_NPE(2)
     _r0.d = ((java_lang_Double*) _r2.o)->fields.java_lang_Double.value_;
     XMLVM_EXIT_METHOD()
     return _r0.d;
@@ -989,9 +994,11 @@ JAVA_BOOLEAN java_lang_Double_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJ
     _r0.i = XMLVM_ISA(_r5.o, __CLASS_java_lang_Double);
     if (_r0.i == 0) goto label24;
     XMLVM_SOURCE_POSITION("Double.java", 216)
+    XMLVM_CHECK_NPE(4)
     _r0.d = ((java_lang_Double*) _r4.o)->fields.java_lang_Double.value_;
     _r0.l = java_lang_Double_doubleToLongBits___double(_r0.d);
     _r5.o = _r5.o;
+    XMLVM_CHECK_NPE(5)
     _r2.d = ((java_lang_Double*) _r5.o)->fields.java_lang_Double.value_;
     _r2.l = java_lang_Double_doubleToLongBits___double(_r2.d);
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
@@ -1016,6 +1023,7 @@ JAVA_FLOAT java_lang_Double_floatValue__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Double.java", 221)
+    XMLVM_CHECK_NPE(2)
     _r0.d = ((java_lang_Double*) _r2.o)->fields.java_lang_Double.value_;
     _r0.f = (JAVA_FLOAT) _r0.d;
     XMLVM_EXIT_METHOD()
@@ -1034,6 +1042,7 @@ JAVA_INT java_lang_Double_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("Double.java", 226)
+    XMLVM_CHECK_NPE(4)
     _r0.d = ((java_lang_Double*) _r4.o)->fields.java_lang_Double.value_;
     _r0.l = java_lang_Double_doubleToLongBits___double(_r0.d);
     XMLVM_SOURCE_POSITION("Double.java", 227)
@@ -1055,6 +1064,7 @@ JAVA_INT java_lang_Double_intValue__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Double.java", 232)
+    XMLVM_CHECK_NPE(2)
     _r0.d = ((java_lang_Double*) _r2.o)->fields.java_lang_Double.value_;
     _r0.i = (JAVA_INT) _r0.d;
     XMLVM_EXIT_METHOD()
@@ -1071,6 +1081,7 @@ JAVA_BOOLEAN java_lang_Double_isInfinite__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Double.java", 242)
+    XMLVM_CHECK_NPE(2)
     _r0.d = ((java_lang_Double*) _r2.o)->fields.java_lang_Double.value_;
     _r0.i = java_lang_Double_isInfinite___double(_r0.d);
     XMLVM_EXIT_METHOD()
@@ -1114,6 +1125,7 @@ JAVA_BOOLEAN java_lang_Double_isNaN__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Double.java", 264)
+    XMLVM_CHECK_NPE(2)
     _r0.d = ((java_lang_Double*) _r2.o)->fields.java_lang_Double.value_;
     _r0.i = java_lang_Double_isNaN___double(_r0.d);
     XMLVM_EXIT_METHOD()
@@ -1154,6 +1166,7 @@ JAVA_LONG java_lang_Double_longValue__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Double.java", 295)
+    XMLVM_CHECK_NPE(2)
     _r0.d = ((java_lang_Double*) _r2.o)->fields.java_lang_Double.value_;
     _r0.l = (JAVA_LONG) _r0.d;
     XMLVM_EXIT_METHOD()
@@ -1187,6 +1200,7 @@ JAVA_SHORT java_lang_Double_shortValue__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Double.java", 316)
+    XMLVM_CHECK_NPE(2)
     _r0.d = ((java_lang_Double*) _r2.o)->fields.java_lang_Double.value_;
     _r0.i = (JAVA_INT) _r0.d;
     _r0.i = (_r0.i << 16) >> 16;
@@ -1204,6 +1218,7 @@ JAVA_OBJECT java_lang_Double_toString__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Double.java", 321)
+    XMLVM_CHECK_NPE(2)
     _r0.d = ((java_lang_Double*) _r2.o)->fields.java_lang_Double.value_;
     _r0.o = java_lang_Double_toString___double(_r0.d);
     XMLVM_EXIT_METHOD()

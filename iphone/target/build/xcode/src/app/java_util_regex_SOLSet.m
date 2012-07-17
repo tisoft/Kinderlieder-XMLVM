@@ -274,6 +274,7 @@ JAVA_INT java_util_regex_SOLSet_matches___int_java_lang_CharSequence_java_util_r
     if (_r2.i != _r0.i) goto label21;
     label14:;
     XMLVM_SOURCE_POSITION("SOLSet.java", 35)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_AbstractSet*) _r1.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)

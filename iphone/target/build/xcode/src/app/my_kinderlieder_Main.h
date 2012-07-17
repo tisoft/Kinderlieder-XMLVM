@@ -38,6 +38,10 @@ XMLVM_FORWARD_DECL(java_lang_Thread)
 #define XMLVM_FORWARD_DECL_java_util_List
 XMLVM_FORWARD_DECL(java_util_List)
 #endif
+#ifndef XMLVM_FORWARD_DECL_java_util_Map
+#define XMLVM_FORWARD_DECL_java_util_Map
+XMLVM_FORWARD_DECL(java_util_Map)
+#endif
 #ifndef XMLVM_FORWARD_DECL_my_kinderlieder_Library
 #define XMLVM_FORWARD_DECL_my_kinderlieder_Library
 XMLVM_FORWARD_DECL(my_kinderlieder_Library)
@@ -119,7 +123,7 @@ typedef struct my_kinderlieder_Main my_kinderlieder_Main;
 #endif
 
 #define XMLVM_VTABLE_SIZE_my_kinderlieder_Main 7
-#define XMLVM_VTABLE_IDX_my_kinderlieder_Main_applicationDidFinishLaunching___org_xmlvm_iphone_UIApplication 6
+#define XMLVM_VTABLE_IDX_my_kinderlieder_Main_applicationDidFinishLaunchingWithOptions___org_xmlvm_iphone_UIApplication_java_util_Map 6
 
 void __INIT_my_kinderlieder_Main();
 void __INIT_IMPL_my_kinderlieder_Main();
@@ -152,7 +156,8 @@ void my_kinderlieder_Main_setAudioPlayer___org_xmlvm_iphone_AVAudioPlayer(JAVA_O
 JAVA_OBJECT my_kinderlieder_Main_getAudioPlayer__();
 void my_kinderlieder_Main_registerCrashReporter__(JAVA_OBJECT me);
 // Vtable index: 6
-void my_kinderlieder_Main_applicationDidFinishLaunching___org_xmlvm_iphone_UIApplication(JAVA_OBJECT me, JAVA_OBJECT n1);
+JAVA_BOOLEAN my_kinderlieder_Main_applicationDidFinishLaunchingWithOptions___org_xmlvm_iphone_UIApplication_java_util_Map(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2);
+void my_kinderlieder_Main_registerAudioSession__(JAVA_OBJECT me);
 void my_kinderlieder_Main_main___java_lang_String_1ARRAY(JAVA_OBJECT n1);
 void my_kinderlieder_Main___CLINIT_();
 

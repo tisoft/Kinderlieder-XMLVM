@@ -292,6 +292,7 @@ void java_util_regex_EmptySet___INIT____java_util_regex_AbstractSet(JAVA_OBJECT 
     java_util_regex_LeafSet___INIT____java_util_regex_AbstractSet(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("EmptySet.java", 32)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_LeafSet*) _r1.o)->fields.java_util_regex_LeafSet.charCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("EmptySet.java", 33)
     XMLVM_EXIT_METHOD()
@@ -373,6 +374,7 @@ JAVA_INT java_util_regex_EmptySet_find___int_java_lang_CharSequence_java_util_re
     goto label9;
     label43:;
     XMLVM_SOURCE_POSITION("EmptySet.java", 65)
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_util_regex_AbstractSet*) _r4.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(3)
@@ -446,6 +448,7 @@ JAVA_INT java_util_regex_EmptySet_findBack___int_int_java_lang_CharSequence_java
     goto label9;
     label43:;
     XMLVM_SOURCE_POSITION("EmptySet.java", 97)
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_util_regex_AbstractSet*) _r4.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(3)

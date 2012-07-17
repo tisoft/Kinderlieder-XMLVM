@@ -640,6 +640,7 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser___INIT____java_
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 98)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r0.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.loader_ = _r1.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 99)
     XMLVM_EXIT_METHOD()
@@ -661,13 +662,16 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_setInput___java
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 102)
     if (_r3.o == JAVA_NULL) goto label17;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 103)
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.genericDecl_ = _r2.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 104)
     XMLVM_CHECK_NPE(3)
     _r0.o = java_lang_String_toCharArray__(_r3.o);
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.buffer_ = _r0.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 105)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.eof_ = _r0.i;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 106)
     XMLVM_CHECK_NPE(1)
@@ -679,6 +683,7 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_setInput___java
     label17:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 109)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.eof_ = _r0.i;
     goto label16;
     //XMLVM_END_WRAPPER
@@ -702,6 +707,7 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseForClass__
     XMLVM_CHECK_NPE(4)
     org_apache_harmony_luni_lang_reflect_GenericSignatureParser_setInput___java_lang_reflect_GenericDeclaration_java_lang_String(_r4.o, _r5.o, _r6.o);
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 123)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.eof_;
     if (_r2.i != 0) goto label11;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 124)
@@ -722,10 +728,12 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseForClass__
     _r1 = _r0;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 128)
     _r2.o = org_apache_harmony_luni_lang_reflect_ListOfVariables_GET_empty();
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.formalTypeParameters_ = _r2.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 129)
     XMLVM_CHECK_NPE(1)
     _r2.o = java_lang_Class_getSuperclass__(_r1.o);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.superclassType_ = _r2.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 130)
     _r2.o = __NEW_org_apache_harmony_luni_lang_reflect_ListOfTypes();
@@ -733,18 +741,22 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseForClass__
     _r3.o = java_lang_Class_getInterfaces__(_r1.o);
     XMLVM_CHECK_NPE(2)
     org_apache_harmony_luni_lang_reflect_ListOfTypes___INIT____java_lang_reflect_Type_1ARRAY(_r2.o, _r3.o);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.interfaceTypes_ = _r2.o;
     goto label10;
     label41:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 132)
     _r2.o = org_apache_harmony_luni_lang_reflect_ListOfVariables_GET_empty();
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.formalTypeParameters_ = _r2.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 133)
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r2.o = __CLASS_java_lang_Object;
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.superclassType_ = _r2.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 134)
     _r2.o = org_apache_harmony_luni_lang_reflect_ListOfTypes_GET_EMPTY();
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.interfaceTypes_ = _r2.o;
     goto label10;
     //XMLVM_END_WRAPPER
@@ -770,6 +782,7 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseForMethod_
     XMLVM_CHECK_NPE(4)
     org_apache_harmony_luni_lang_reflect_GenericSignatureParser_setInput___java_lang_reflect_GenericDeclaration_java_lang_String(_r4.o, _r5.o, _r6.o);
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 149)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.eof_;
     if (_r2.i != 0) goto label11;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 150)
@@ -790,6 +803,7 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseForMethod_
     _r1 = _r0;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 154)
     _r2.o = org_apache_harmony_luni_lang_reflect_ListOfVariables_GET_empty();
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.formalTypeParameters_ = _r2.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 155)
     _r2.o = __NEW_org_apache_harmony_luni_lang_reflect_ListOfTypes();
@@ -797,6 +811,7 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseForMethod_
     _r3.o = java_lang_reflect_Method_getParameterTypes__(_r1.o);
     XMLVM_CHECK_NPE(2)
     org_apache_harmony_luni_lang_reflect_ListOfTypes___INIT____java_lang_reflect_Type_1ARRAY(_r2.o, _r3.o);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.parameterTypes_ = _r2.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 156)
     _r2.o = __NEW_org_apache_harmony_luni_lang_reflect_ListOfTypes();
@@ -804,24 +819,30 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseForMethod_
     _r3.o = java_lang_reflect_Method_getExceptionTypes__(_r1.o);
     XMLVM_CHECK_NPE(2)
     org_apache_harmony_luni_lang_reflect_ListOfTypes___INIT____java_lang_reflect_Type_1ARRAY(_r2.o, _r3.o);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.exceptionTypes_ = _r2.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 157)
     XMLVM_CHECK_NPE(1)
     _r2.o = java_lang_reflect_Method_getReturnType__(_r1.o);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.returnType_ = _r2.o;
     goto label10;
     label52:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 159)
     _r2.o = org_apache_harmony_luni_lang_reflect_ListOfVariables_GET_empty();
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.formalTypeParameters_ = _r2.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 160)
     _r2.o = org_apache_harmony_luni_lang_reflect_ListOfTypes_GET_EMPTY();
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.parameterTypes_ = _r2.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 161)
     _r2.o = org_apache_harmony_luni_lang_reflect_ListOfTypes_GET_EMPTY();
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.exceptionTypes_ = _r2.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 162)
     _r2.o = java_lang_Void_GET_TYPE();
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.returnType_ = _r2.o;
     goto label10;
     //XMLVM_END_WRAPPER
@@ -847,6 +868,7 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseForConstru
     XMLVM_CHECK_NPE(4)
     org_apache_harmony_luni_lang_reflect_GenericSignatureParser_setInput___java_lang_reflect_GenericDeclaration_java_lang_String(_r4.o, _r5.o, _r6.o);
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 177)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.eof_;
     if (_r2.i != 0) goto label11;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 178)
@@ -867,6 +889,7 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseForConstru
     _r1 = _r0;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 182)
     _r2.o = org_apache_harmony_luni_lang_reflect_ListOfVariables_GET_empty();
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.formalTypeParameters_ = _r2.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 183)
     _r2.o = __NEW_org_apache_harmony_luni_lang_reflect_ListOfTypes();
@@ -874,6 +897,7 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseForConstru
     _r3.o = java_lang_reflect_Constructor_getParameterTypes__(_r1.o);
     XMLVM_CHECK_NPE(2)
     org_apache_harmony_luni_lang_reflect_ListOfTypes___INIT____java_lang_reflect_Type_1ARRAY(_r2.o, _r3.o);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.parameterTypes_ = _r2.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 184)
     _r2.o = __NEW_org_apache_harmony_luni_lang_reflect_ListOfTypes();
@@ -881,17 +905,21 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseForConstru
     _r3.o = java_lang_reflect_Constructor_getExceptionTypes__(_r1.o);
     XMLVM_CHECK_NPE(2)
     org_apache_harmony_luni_lang_reflect_ListOfTypes___INIT____java_lang_reflect_Type_1ARRAY(_r2.o, _r3.o);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.exceptionTypes_ = _r2.o;
     goto label10;
     label46:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 186)
     _r2.o = org_apache_harmony_luni_lang_reflect_ListOfVariables_GET_empty();
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.formalTypeParameters_ = _r2.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 187)
     _r2.o = org_apache_harmony_luni_lang_reflect_ListOfTypes_GET_EMPTY();
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.parameterTypes_ = _r2.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 188)
     _r2.o = org_apache_harmony_luni_lang_reflect_ListOfTypes_GET_EMPTY();
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.exceptionTypes_ = _r2.o;
     goto label10;
     //XMLVM_END_WRAPPER
@@ -912,11 +940,13 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseForField__
     XMLVM_CHECK_NPE(1)
     org_apache_harmony_luni_lang_reflect_GenericSignatureParser_setInput___java_lang_reflect_GenericDeclaration_java_lang_String(_r1.o, _r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 203)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.eof_;
     if (_r0.i != 0) goto label13;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 204)
     XMLVM_CHECK_NPE(1)
     _r0.o = org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseFieldTypeSignature__(_r1.o);
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.fieldType_ = _r0.o;
     label13:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 206)
@@ -939,18 +969,22 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseClassSigna
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 220)
     XMLVM_CHECK_NPE(2)
     _r0.o = org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseClassTypeSignature__(_r2.o);
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.superclassType_ = _r0.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 222)
     _r0.o = __NEW_org_apache_harmony_luni_lang_reflect_ListOfTypes();
     _r1.i = 16;
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_lang_reflect_ListOfTypes___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.interfaceTypes_ = _r0.o;
     label18:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 223)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     if (_r0.i <= 0) goto label32;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 225)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.interfaceTypes_;
     XMLVM_CHECK_NPE(2)
     _r1.o = org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseClassTypeSignature__(_r2.o);
@@ -980,6 +1014,7 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseOptFormalT
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_lang_reflect_ListOfVariables___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 235)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     _r2.i = 60;
     if (_r1.i != _r2.i) goto label42;
@@ -993,8 +1028,10 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseOptFormalT
     org_apache_harmony_luni_lang_reflect_ListOfVariables_add___java_lang_reflect_TypeVariable(_r0.o, _r1.o);
     label23:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 238)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     if (_r1.i == _r3.i) goto label39;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     if (_r1.i <= 0) goto label39;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 239)
@@ -1011,6 +1048,7 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseOptFormalT
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 243)
     XMLVM_CHECK_NPE(0)
     _r1.o = org_apache_harmony_luni_lang_reflect_ListOfVariables_getArray__(_r0.o);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.formalTypeParameters_ = _r1.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 244)
     XMLVM_EXIT_METHOD()
@@ -1034,6 +1072,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseFor
     XMLVM_CHECK_NPE(5)
     org_apache_harmony_luni_lang_reflect_GenericSignatureParser_scanIdentifier__(_r5.o);
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 250)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r5.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.identifier_;
     XMLVM_CHECK_NPE(2)
     _r1.o = java_lang_String_intern__(_r2.o);
@@ -1046,12 +1085,15 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseFor
     XMLVM_CHECK_NPE(5)
     org_apache_harmony_luni_lang_reflect_GenericSignatureParser_expect___char(_r5.o, _r4.i);
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 256)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r5.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     _r3.i = 76;
     if (_r2.i == _r3.i) goto label39;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r5.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     _r3.i = 91;
     if (_r2.i == _r3.i) goto label39;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r5.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     _r3.i = 84;
     if (_r2.i != _r3.i) goto label46;
@@ -1063,6 +1105,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseFor
     org_apache_harmony_luni_lang_reflect_ListOfTypes_add___java_lang_reflect_Type(_r0.o, _r2.o);
     label46:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 260)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r5.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     if (_r2.i != _r4.i) goto label61;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 262)
@@ -1077,6 +1120,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseFor
     label61:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 266)
     _r2.o = __NEW_org_apache_harmony_luni_lang_reflect_ImplForVariable();
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r5.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.genericDecl_;
     XMLVM_CHECK_NPE(2)
     org_apache_harmony_luni_lang_reflect_ImplForVariable___INIT____java_lang_reflect_GenericDeclaration_java_lang_String_org_apache_harmony_luni_lang_reflect_ListOfTypes(_r2.o, _r3.o, _r1.o, _r0.o);
@@ -1094,6 +1138,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseFie
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 273)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     switch (_r0.i) {
     case 76: goto label11;
@@ -1158,6 +1203,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseCla
     org_apache_harmony_luni_lang_reflect_GenericSignatureParser_scanIdentifier__(_r7.o);
     label13:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 295)
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r7.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     _r5.i = 47;
     if (_r4.i != _r5.i) goto label37;
@@ -1165,6 +1211,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseCla
     XMLVM_CHECK_NPE(7)
     org_apache_harmony_luni_lang_reflect_GenericSignatureParser_scanSymbol__(_r7.o);
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 297)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r7.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.identifier_;
     XMLVM_CHECK_NPE(1)
     _r4.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
@@ -1178,6 +1225,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseCla
     goto label13;
     label37:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 301)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r7.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.identifier_;
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
@@ -1190,6 +1238,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseCla
     //java_lang_StringBuilder_toString__[5]
     XMLVM_CHECK_NPE(1)
     _r5.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r1.o)->tib->vtable[5])(_r1.o);
+    XMLVM_CHECK_NPE(7)
     _r6.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r7.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.loader_;
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_lang_reflect_ImplForType___INIT____org_apache_harmony_luni_lang_reflect_ImplForType_java_lang_String_org_apache_harmony_luni_lang_reflect_ListOfTypes_java_lang_ClassLoader(_r0.o, _r4.o, _r5.o, _r3.o, _r6.o);
@@ -1197,6 +1246,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseCla
     label59:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 306)
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 308)
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r7.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     _r5.i = 46;
     if (_r4.i != _r5.i) goto label98;
@@ -1211,6 +1261,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseCla
     _r4.o = xmlvm_create_java_string_from_pool(851);
     XMLVM_CHECK_NPE(1)
     _r4.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
+    XMLVM_CHECK_NPE(7)
     _r5.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r7.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.identifier_;
     XMLVM_CHECK_NPE(4)
     java_lang_StringBuilder_append___java_lang_String(_r4.o, _r5.o);
@@ -1222,6 +1273,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseCla
     //java_lang_StringBuilder_toString__[5]
     XMLVM_CHECK_NPE(1)
     _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r1.o)->tib->vtable[5])(_r1.o);
+    XMLVM_CHECK_NPE(7)
     _r5.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r7.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.loader_;
     XMLVM_CHECK_NPE(2)
     org_apache_harmony_luni_lang_reflect_ImplForType___INIT____org_apache_harmony_luni_lang_reflect_ImplForType_java_lang_String_org_apache_harmony_luni_lang_reflect_ListOfTypes_java_lang_ClassLoader(_r2.o, _r0.o, _r4.o, _r3.o, _r5.o);
@@ -1254,6 +1306,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseOpt
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_lang_reflect_ListOfTypes___INIT____int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 327)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     _r2.i = 60;
     if (_r1.i != _r2.i) goto label44;
@@ -1267,8 +1320,10 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseOpt
     org_apache_harmony_luni_lang_reflect_ListOfTypes_add___java_lang_reflect_Type(_r0.o, _r1.o);
     label25:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 331)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     if (_r1.i == _r3.i) goto label41;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     if (_r1.i <= 0) goto label41;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 332)
@@ -1311,6 +1366,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseTyp
     XMLVM_CHECK_NPE(1)
     org_apache_harmony_luni_lang_reflect_ListOfTypes___INIT____int(_r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 343)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r5.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     _r3.i = 42;
     if (_r2.i != _r3.i) goto label33;
@@ -1332,6 +1388,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseTyp
     return _r2.o;
     label33:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 348)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r5.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     _r3.i = 43;
     if (_r2.i != _r3.i) goto label55;
@@ -1350,6 +1407,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseTyp
     goto label32;
     label55:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 353)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r5.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     _r3.i = 45;
     if (_r2.i != _r3.i) goto label82;
@@ -1400,7 +1458,9 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseTyp
     org_apache_harmony_luni_lang_reflect_GenericSignatureParser_expect___char(_r3.o, _r0.i);
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 371)
     _r0.o = __NEW_org_apache_harmony_luni_lang_reflect_ImplForVariable();
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r3.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.genericDecl_;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r3.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.identifier_;
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_lang_reflect_ImplForVariable___INIT____java_lang_reflect_GenericDeclaration_java_lang_String(_r0.o, _r1.o, _r2.o);
@@ -1417,6 +1477,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseTyp
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 375)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     switch (_r0.i) {
     case 66: goto label10;
@@ -1508,6 +1569,7 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseMethodType
     _r1.i = 16;
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_lang_reflect_ListOfTypes___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.parameterTypes_ = _r0.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 402)
     _r0.i = 40;
@@ -1515,11 +1577,14 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseMethodType
     org_apache_harmony_luni_lang_reflect_GenericSignatureParser_expect___char(_r4.o, _r0.i);
     label21:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 403)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     if (_r0.i == _r2.i) goto label39;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     if (_r0.i <= 0) goto label39;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 404)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.parameterTypes_;
     XMLVM_CHECK_NPE(4)
     _r1.o = org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseTypeSignature__(_r4.o);
@@ -1533,8 +1598,10 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseMethodType
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 408)
     XMLVM_CHECK_NPE(4)
     _r0.o = org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseReturnType__(_r4.o);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.returnType_ = _r0.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 410)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     if (_r0.i != _r3.i) goto label94;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 411)
@@ -1542,16 +1609,19 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseMethodType
     _r1.i = 8;
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_lang_reflect_ListOfTypes___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.exceptionTypes_ = _r0.o;
     label61:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 413)
     XMLVM_CHECK_NPE(4)
     org_apache_harmony_luni_lang_reflect_GenericSignatureParser_scanSymbol__(_r4.o);
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 417)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     _r1.i = 84;
     if (_r0.i != _r1.i) goto label84;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 418)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.exceptionTypes_;
     XMLVM_CHECK_NPE(4)
     _r1.o = org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseTypeVariableSignature__(_r4.o);
@@ -1559,6 +1629,7 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseMethodType
     org_apache_harmony_luni_lang_reflect_ListOfTypes_add___java_lang_reflect_Type(_r0.o, _r1.o);
     label79:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 422)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     if (_r0.i == _r3.i) goto label61;
     label83:;
@@ -1567,6 +1638,7 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseMethodType
     return;
     label84:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 420)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.exceptionTypes_;
     XMLVM_CHECK_NPE(4)
     _r1.o = org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseClassTypeSignature__(_r4.o);
@@ -1580,6 +1652,7 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseMethodType
     _r0.o = __NEW_org_apache_harmony_luni_lang_reflect_ListOfTypes();
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_lang_reflect_ListOfTypes___INIT____java_lang_reflect_Type_1ARRAY(_r0.o, _r5.o);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.exceptionTypes_ = _r0.o;
     goto label83;
     label104:;
@@ -1588,6 +1661,7 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseMethodType
     _r1.i = 0;
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_lang_reflect_ListOfTypes___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.exceptionTypes_ = _r0.o;
     goto label83;
     //XMLVM_END_WRAPPER
@@ -1602,6 +1676,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseRet
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 432)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     _r1.i = 86;
     if (_r0.i == _r1.i) goto label11;
@@ -1628,23 +1703,31 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_scanSymbol__(JA
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 442)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.eof_;
     if (_r0.i != 0) goto label33;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 443)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.pos_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.buffer_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i >= _r1.i) goto label26;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 444)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.buffer_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.pos_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_ = _r0.i;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 445)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.pos_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.pos_ = _r0.i;
     label25:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 453)
@@ -1653,9 +1736,11 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_scanSymbol__(JA
     label26:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 447)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_ = _r0.i;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 448)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.eof_ = _r0.i;
     goto label25;
     label33:;
@@ -1677,6 +1762,7 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_expect___char(J
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 456)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     if (_r0.i != _r2.i) goto label8;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 457)
@@ -1739,6 +1825,7 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_scanIdentifier_
     _r5.i = 1;
     _r4.i = 0;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 478)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r6.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.eof_;
     if (_r2.i != 0) goto label107;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 479)
@@ -1747,18 +1834,22 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_scanIdentifier_
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____int(_r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 480)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r6.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     XMLVM_CHECK_NPE(6)
     _r2.i = org_apache_harmony_luni_lang_reflect_GenericSignatureParser_isStopSymbol___char(_r6.o, _r2.i);
     if (_r2.i != 0) goto label97;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 481)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r6.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(1)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r1.o)->tib->vtable[21])(_r1.o, _r2.i);
     label26:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 483)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r6.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.buffer_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r6.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.pos_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
@@ -1779,7 +1870,9 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_scanIdentifier_
     if (_r2.i != 0) goto label87;
     label54:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 486)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r6.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.buffer_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r6.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.pos_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
@@ -1788,11 +1881,15 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_scanIdentifier_
     XMLVM_CHECK_NPE(1)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r1.o)->tib->vtable[21])(_r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 487)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r6.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.pos_;
     _r2.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(6)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r6.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.pos_ = _r2.i;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 493)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r6.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.pos_;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r6.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.buffer_;
     _r3.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r3.o));
     if (_r2.i != _r3.i) goto label26;
@@ -1800,10 +1897,13 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_scanIdentifier_
     //java_lang_StringBuilder_toString__[5]
     XMLVM_CHECK_NPE(1)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r1.o)->tib->vtable[5])(_r1.o);
+    XMLVM_CHECK_NPE(6)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r6.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.identifier_ = _r2.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 495)
+    XMLVM_CHECK_NPE(6)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r6.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_ = _r4.i;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 496)
+    XMLVM_CHECK_NPE(6)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r6.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.eof_ = _r5.i;
     label86:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 506)
@@ -1814,6 +1914,7 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_scanIdentifier_
     //java_lang_StringBuilder_toString__[5]
     XMLVM_CHECK_NPE(1)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r1.o)->tib->vtable[5])(_r1.o);
+    XMLVM_CHECK_NPE(6)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r6.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.identifier_ = _r2.o;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 490)
     XMLVM_CHECK_NPE(6)
@@ -1821,8 +1922,10 @@ void org_apache_harmony_luni_lang_reflect_GenericSignatureParser_scanIdentifier_
     goto label86;
     label97:;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 499)
+    XMLVM_CHECK_NPE(6)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r6.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.symbol_ = _r4.i;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 500)
+    XMLVM_CHECK_NPE(6)
     ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r6.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.eof_ = _r5.i;
     XMLVM_SOURCE_POSITION("GenericSignatureParser.java", 501)
     _r2.o = __NEW_java_lang_reflect_GenericSignatureFormatError();

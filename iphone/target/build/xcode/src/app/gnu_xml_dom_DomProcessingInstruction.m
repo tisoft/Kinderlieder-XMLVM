@@ -420,8 +420,10 @@ void gnu_xml_dom_DomProcessingInstruction___INIT____gnu_xml_dom_DomDocument_java
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_DomNode___INIT____short_gnu_xml_dom_DomDocument(_r1.o, _r0.i, _r2.o);
     XMLVM_SOURCE_POSITION("DomProcessingInstruction.java", 81)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomProcessingInstruction*) _r1.o)->fields.gnu_xml_dom_DomProcessingInstruction.target_ = _r3.o;
     XMLVM_SOURCE_POSITION("DomProcessingInstruction.java", 82)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomProcessingInstruction*) _r1.o)->fields.gnu_xml_dom_DomProcessingInstruction.data_ = _r4.o;
     XMLVM_SOURCE_POSITION("DomProcessingInstruction.java", 83)
     XMLVM_EXIT_METHOD()
@@ -437,6 +439,7 @@ JAVA_OBJECT gnu_xml_dom_DomProcessingInstruction_getTarget__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomProcessingInstruction.java", 91)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomProcessingInstruction*) _r1.o)->fields.gnu_xml_dom_DomProcessingInstruction.target_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -451,6 +454,7 @@ JAVA_OBJECT gnu_xml_dom_DomProcessingInstruction_getNodeName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomProcessingInstruction.java", 101)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomProcessingInstruction*) _r1.o)->fields.gnu_xml_dom_DomProcessingInstruction.target_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -465,6 +469,7 @@ JAVA_OBJECT gnu_xml_dom_DomProcessingInstruction_getData__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomProcessingInstruction.java", 110)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomProcessingInstruction*) _r1.o)->fields.gnu_xml_dom_DomProcessingInstruction.data_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -479,6 +484,7 @@ JAVA_OBJECT gnu_xml_dom_DomProcessingInstruction_getNodeValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomProcessingInstruction.java", 120)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomProcessingInstruction*) _r1.o)->fields.gnu_xml_dom_DomProcessingInstruction.data_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -525,6 +531,7 @@ void gnu_xml_dom_DomProcessingInstruction_setNodeValue___java_lang_String(JAVA_O
     XMLVM_THROW_CUSTOM(_r0.o)
     label13:;
     XMLVM_SOURCE_POSITION("DomProcessingInstruction.java", 143)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomProcessingInstruction*) _r2.o)->fields.gnu_xml_dom_DomProcessingInstruction.data_ = _r3.o;
     XMLVM_SOURCE_POSITION("DomProcessingInstruction.java", 144)
     XMLVM_EXIT_METHOD()

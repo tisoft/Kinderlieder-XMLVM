@@ -254,6 +254,7 @@ void java_util_regex_EOLSet___INIT____int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_CHECK_NPE(0)
     java_util_regex_AbstractSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("EOLSet.java", 33)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_EOLSet*) _r0.o)->fields.java_util_regex_EOLSet.consCounter_ = _r1.i;
     XMLVM_SOURCE_POSITION("EOLSet.java", 34)
     XMLVM_EXIT_METHOD()
@@ -293,10 +294,12 @@ JAVA_INT java_util_regex_EOLSet_matches___int_java_lang_CharSequence_java_util_r
     XMLVM_SOURCE_POSITION("EOLSet.java", 41)
     if (_r7.i < _r0.i) goto label34;
     XMLVM_SOURCE_POSITION("EOLSet.java", 42)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_regex_EOLSet*) _r6.o)->fields.java_util_regex_EOLSet.consCounter_;
     XMLVM_CHECK_NPE(9)
     java_util_regex_MatchResultImpl_setConsumed___int_int(_r9.o, _r0.i, _r3.i);
     XMLVM_SOURCE_POSITION("EOLSet.java", 43)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_regex_AbstractSet*) _r6.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -323,10 +326,12 @@ JAVA_INT java_util_regex_EOLSet_matches___int_java_lang_CharSequence_java_util_r
     _r1.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r8.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_CharSequence_charAt___int])(_r8.o, _r1.i);
     if (_r1.i != _r4.i) goto label65;
     XMLVM_SOURCE_POSITION("EOLSet.java", 49)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_regex_EOLSet*) _r6.o)->fields.java_util_regex_EOLSet.consCounter_;
     XMLVM_CHECK_NPE(9)
     java_util_regex_MatchResultImpl_setConsumed___int_int(_r9.o, _r0.i, _r3.i);
     XMLVM_SOURCE_POSITION("EOLSet.java", 50)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_regex_AbstractSet*) _r6.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -350,10 +355,12 @@ JAVA_INT java_util_regex_EOLSet_matches___int_java_lang_CharSequence_java_util_r
     if (_r0.i != _r1.i) goto label99;
     label87:;
     XMLVM_SOURCE_POSITION("EOLSet.java", 57)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_regex_EOLSet*) _r6.o)->fields.java_util_regex_EOLSet.consCounter_;
     XMLVM_CHECK_NPE(9)
     java_util_regex_MatchResultImpl_setConsumed___int_int(_r9.o, _r0.i, _r3.i);
     XMLVM_SOURCE_POSITION("EOLSet.java", 58)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_regex_AbstractSet*) _r6.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -377,6 +384,7 @@ JAVA_BOOLEAN java_util_regex_EOLSet_hasConsumed___java_util_regex_MatchResultImp
     _r3.o = me;
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("EOLSet.java", 66)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_regex_EOLSet*) _r3.o)->fields.java_util_regex_EOLSet.consCounter_;
     XMLVM_CHECK_NPE(4)
     _r0.i = java_util_regex_MatchResultImpl_getConsumed___int(_r4.o, _r0.i);
@@ -385,6 +393,7 @@ JAVA_BOOLEAN java_util_regex_EOLSet_hasConsumed___java_util_regex_MatchResultImp
     _r0.i = 0;
     label11:;
     XMLVM_SOURCE_POSITION("EOLSet.java", 67)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_EOLSet*) _r3.o)->fields.java_util_regex_EOLSet.consCounter_;
     _r2.i = -1;
     XMLVM_CHECK_NPE(4)

@@ -284,6 +284,7 @@ void java_io_FilePermissionCollection___INIT___(JAVA_OBJECT me)
     _r0.o = __NEW_java_util_Vector();
     XMLVM_CHECK_NPE(0)
     java_util_Vector___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_io_FilePermissionCollection*) _r1.o)->fields.java_io_FilePermissionCollection.permissions_ = _r0.o;
     XMLVM_SOURCE_POSITION("FilePermissionCollection.java", 41)
     XMLVM_EXIT_METHOD()
@@ -316,6 +317,7 @@ void java_io_FilePermissionCollection_add___java_security_Permission(JAVA_OBJECT
     _r0.i = XMLVM_ISA(_r3.o, __CLASS_java_io_FilePermission);
     if (_r0.i == 0) goto label22;
     XMLVM_SOURCE_POSITION("FilePermissionCollection.java", 61)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_FilePermissionCollection*) _r2.o)->fields.java_io_FilePermissionCollection.permissions_;
     XMLVM_CHECK_NPE(0)
     java_util_Vector_addElement___java_lang_Object(_r0.o, _r3.o);
@@ -342,6 +344,7 @@ JAVA_OBJECT java_io_FilePermissionCollection_elements__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FilePermissionCollection.java", 75)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_FilePermissionCollection*) _r1.o)->fields.java_io_FilePermissionCollection.permissions_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_util_Vector_elements__(_r0.o);
@@ -378,20 +381,25 @@ JAVA_BOOLEAN java_io_FilePermissionCollection_implies___java_security_Permission
     _r4 = _r6;
     label11:;
     XMLVM_SOURCE_POSITION("FilePermissionCollection.java", 92)
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_io_FilePermissionCollection*) _r7.o)->fields.java_io_FilePermissionCollection.permissions_;
     //java_util_Vector_size__[16]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_util_Vector*) _r2.o)->tib->vtable[16])(_r2.o);
     if (_r3.i >= _r2.i) goto label26;
     XMLVM_SOURCE_POSITION("FilePermissionCollection.java", 93)
+    XMLVM_CHECK_NPE(1)
     _r2.i = ((java_io_FilePermission*) _r1.o)->fields.java_io_FilePermission.mask_;
     _r2.i = _r2.i & _r4.i;
+    XMLVM_CHECK_NPE(1)
     _r5.i = ((java_io_FilePermission*) _r1.o)->fields.java_io_FilePermission.mask_;
     if (_r2.i != _r5.i) goto label35;
     label26:;
     XMLVM_SOURCE_POSITION("FilePermissionCollection.java", 99)
+    XMLVM_CHECK_NPE(1)
     _r2.i = ((java_io_FilePermission*) _r1.o)->fields.java_io_FilePermission.mask_;
     _r2.i = _r2.i & _r4.i;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_io_FilePermission*) _r1.o)->fields.java_io_FilePermission.mask_;
     if (_r2.i != _r1.i) goto label52;
     _r1.i = 1;
@@ -401,6 +409,7 @@ JAVA_BOOLEAN java_io_FilePermissionCollection_implies___java_security_Permission
     return _r1.i;
     label35:;
     XMLVM_SOURCE_POSITION("FilePermissionCollection.java", 95)
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_io_FilePermissionCollection*) _r7.o)->fields.java_io_FilePermissionCollection.permissions_;
     XMLVM_CHECK_NPE(2)
     _r2.o = java_util_Vector_elementAt___int(_r2.o, _r3.i);

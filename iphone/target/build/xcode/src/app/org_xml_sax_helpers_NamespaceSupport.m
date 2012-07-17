@@ -522,22 +522,29 @@ void org_xml_sax_helpers_NamespaceSupport_reset__(JAVA_OBJECT me)
     _r0.i = 32;
     if (!__TIB_org_xml_sax_helpers_NamespaceSupport_Context.classInitialized) __INIT_org_xml_sax_helpers_NamespaceSupport_Context();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_org_xml_sax_helpers_NamespaceSupport_Context, _r0.i);
+    XMLVM_CHECK_NPE(3)
     ((org_xml_sax_helpers_NamespaceSupport*) _r3.o)->fields.org_xml_sax_helpers_NamespaceSupport.contexts_ = _r0.o;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 154)
+    XMLVM_CHECK_NPE(3)
     ((org_xml_sax_helpers_NamespaceSupport*) _r3.o)->fields.org_xml_sax_helpers_NamespaceSupport.namespaceDeclUris_ = _r1.i;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 155)
+    XMLVM_CHECK_NPE(3)
     ((org_xml_sax_helpers_NamespaceSupport*) _r3.o)->fields.org_xml_sax_helpers_NamespaceSupport.contextPos_ = _r1.i;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 156)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_xml_sax_helpers_NamespaceSupport*) _r3.o)->fields.org_xml_sax_helpers_NamespaceSupport.contexts_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((org_xml_sax_helpers_NamespaceSupport*) _r3.o)->fields.org_xml_sax_helpers_NamespaceSupport.contextPos_;
     _r2.o = __NEW_org_xml_sax_helpers_NamespaceSupport_Context();
     XMLVM_CHECK_NPE(2)
     org_xml_sax_helpers_NamespaceSupport_Context___INIT____org_xml_sax_helpers_NamespaceSupport(_r2.o, _r3.o);
+    XMLVM_CHECK_NPE(3)
     ((org_xml_sax_helpers_NamespaceSupport*) _r3.o)->fields.org_xml_sax_helpers_NamespaceSupport.currentContext_ = _r2.o;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 157)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_xml_sax_helpers_NamespaceSupport*) _r3.o)->fields.org_xml_sax_helpers_NamespaceSupport.currentContext_;
     // "xml"
     _r1.o = xmlvm_create_java_string_from_pool(61);
@@ -563,20 +570,27 @@ void org_xml_sax_helpers_NamespaceSupport_pushContext__(JAVA_OBJECT me)
     _r4.o = me;
     _r3.i = 0;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 199)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((org_xml_sax_helpers_NamespaceSupport*) _r4.o)->fields.org_xml_sax_helpers_NamespaceSupport.contexts_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 201)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((org_xml_sax_helpers_NamespaceSupport*) _r4.o)->fields.org_xml_sax_helpers_NamespaceSupport.contexts_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((org_xml_sax_helpers_NamespaceSupport*) _r4.o)->fields.org_xml_sax_helpers_NamespaceSupport.contextPos_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     _r1.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
+    XMLVM_CHECK_NPE(1)
     ((org_xml_sax_helpers_NamespaceSupport_Context*) _r1.o)->fields.org_xml_sax_helpers_NamespaceSupport_Context.declsOK_ = _r3.i;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 202)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((org_xml_sax_helpers_NamespaceSupport*) _r4.o)->fields.org_xml_sax_helpers_NamespaceSupport.contextPos_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((org_xml_sax_helpers_NamespaceSupport*) _r4.o)->fields.org_xml_sax_helpers_NamespaceSupport.contextPos_ = _r1.i;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 205)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((org_xml_sax_helpers_NamespaceSupport*) _r4.o)->fields.org_xml_sax_helpers_NamespaceSupport.contextPos_;
     if (_r1.i < _r0.i) goto label35;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 206)
@@ -584,40 +598,53 @@ void org_xml_sax_helpers_NamespaceSupport_pushContext__(JAVA_OBJECT me)
     if (!__TIB_org_xml_sax_helpers_NamespaceSupport_Context.classInitialized) __INIT_org_xml_sax_helpers_NamespaceSupport_Context();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_org_xml_sax_helpers_NamespaceSupport_Context, _r1.i);
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 207)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((org_xml_sax_helpers_NamespaceSupport*) _r4.o)->fields.org_xml_sax_helpers_NamespaceSupport.contexts_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r2.o, _r3.i, _r1.o, _r3.i, _r0.i);
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 208)
     _r0.i = _r0.i * 2;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 209)
+    XMLVM_CHECK_NPE(4)
     ((org_xml_sax_helpers_NamespaceSupport*) _r4.o)->fields.org_xml_sax_helpers_NamespaceSupport.contexts_ = _r1.o;
     label35:;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 213)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((org_xml_sax_helpers_NamespaceSupport*) _r4.o)->fields.org_xml_sax_helpers_NamespaceSupport.contexts_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((org_xml_sax_helpers_NamespaceSupport*) _r4.o)->fields.org_xml_sax_helpers_NamespaceSupport.contextPos_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
+    XMLVM_CHECK_NPE(4)
     ((org_xml_sax_helpers_NamespaceSupport*) _r4.o)->fields.org_xml_sax_helpers_NamespaceSupport.currentContext_ = _r0.o;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 214)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((org_xml_sax_helpers_NamespaceSupport*) _r4.o)->fields.org_xml_sax_helpers_NamespaceSupport.currentContext_;
     if (_r0.o != JAVA_NULL) goto label60;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 215)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((org_xml_sax_helpers_NamespaceSupport*) _r4.o)->fields.org_xml_sax_helpers_NamespaceSupport.contexts_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((org_xml_sax_helpers_NamespaceSupport*) _r4.o)->fields.org_xml_sax_helpers_NamespaceSupport.contextPos_;
     _r2.o = __NEW_org_xml_sax_helpers_NamespaceSupport_Context();
     XMLVM_CHECK_NPE(2)
     org_xml_sax_helpers_NamespaceSupport_Context___INIT____org_xml_sax_helpers_NamespaceSupport(_r2.o, _r4.o);
+    XMLVM_CHECK_NPE(4)
     ((org_xml_sax_helpers_NamespaceSupport*) _r4.o)->fields.org_xml_sax_helpers_NamespaceSupport.currentContext_ = _r2.o;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     label60:;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 219)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((org_xml_sax_helpers_NamespaceSupport*) _r4.o)->fields.org_xml_sax_helpers_NamespaceSupport.contextPos_;
     if (_r0.i <= 0) goto label77;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 220)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((org_xml_sax_helpers_NamespaceSupport*) _r4.o)->fields.org_xml_sax_helpers_NamespaceSupport.currentContext_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((org_xml_sax_helpers_NamespaceSupport*) _r4.o)->fields.org_xml_sax_helpers_NamespaceSupport.contexts_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((org_xml_sax_helpers_NamespaceSupport*) _r4.o)->fields.org_xml_sax_helpers_NamespaceSupport.contextPos_;
     _r3.i = 1;
     _r2.i = _r2.i - _r3.i;
@@ -642,7 +669,9 @@ void org_xml_sax_helpers_NamespaceSupport_popContext__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 240)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_NamespaceSupport*) _r2.o)->fields.org_xml_sax_helpers_NamespaceSupport.contexts_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((org_xml_sax_helpers_NamespaceSupport*) _r2.o)->fields.org_xml_sax_helpers_NamespaceSupport.contextPos_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -650,11 +679,14 @@ void org_xml_sax_helpers_NamespaceSupport_popContext__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     org_xml_sax_helpers_NamespaceSupport_Context_clear__(_r0.o);
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 241)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_xml_sax_helpers_NamespaceSupport*) _r2.o)->fields.org_xml_sax_helpers_NamespaceSupport.contextPos_;
     _r1.i = 1;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(2)
     ((org_xml_sax_helpers_NamespaceSupport*) _r2.o)->fields.org_xml_sax_helpers_NamespaceSupport.contextPos_ = _r0.i;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 242)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_xml_sax_helpers_NamespaceSupport*) _r2.o)->fields.org_xml_sax_helpers_NamespaceSupport.contextPos_;
     if (_r0.i >= 0) goto label25;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 243)
@@ -664,11 +696,14 @@ void org_xml_sax_helpers_NamespaceSupport_popContext__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label25:;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 245)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_NamespaceSupport*) _r2.o)->fields.org_xml_sax_helpers_NamespaceSupport.contexts_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((org_xml_sax_helpers_NamespaceSupport*) _r2.o)->fields.org_xml_sax_helpers_NamespaceSupport.contextPos_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
+    XMLVM_CHECK_NPE(2)
     ((org_xml_sax_helpers_NamespaceSupport*) _r2.o)->fields.org_xml_sax_helpers_NamespaceSupport.currentContext_ = _r0.o;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 246)
     XMLVM_EXIT_METHOD()
@@ -709,6 +744,7 @@ JAVA_BOOLEAN org_xml_sax_helpers_NamespaceSupport_declarePrefix___java_lang_Stri
     return _r0.i;
     label18:;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 298)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_NamespaceSupport*) _r1.o)->fields.org_xml_sax_helpers_NamespaceSupport.currentContext_;
     XMLVM_CHECK_NPE(0)
     org_xml_sax_helpers_NamespaceSupport_Context_declarePrefix___java_lang_String_java_lang_String(_r0.o, _r2.o, _r3.o);
@@ -738,6 +774,7 @@ JAVA_OBJECT org_xml_sax_helpers_NamespaceSupport_processName___java_lang_String_
     _r3.i = 1;
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 347)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((org_xml_sax_helpers_NamespaceSupport*) _r5.o)->fields.org_xml_sax_helpers_NamespaceSupport.currentContext_;
     XMLVM_CHECK_NPE(0)
     _r0.o = org_xml_sax_helpers_NamespaceSupport_Context_processName___java_lang_String_boolean(_r0.o, _r6.o, _r8.i);
@@ -786,6 +823,7 @@ JAVA_OBJECT org_xml_sax_helpers_NamespaceSupport_getURI___java_lang_String(JAVA_
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 373)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_NamespaceSupport*) _r1.o)->fields.org_xml_sax_helpers_NamespaceSupport.currentContext_;
     XMLVM_CHECK_NPE(0)
     _r0.o = org_xml_sax_helpers_NamespaceSupport_Context_getURI___java_lang_String(_r0.o, _r2.o);
@@ -802,6 +840,7 @@ JAVA_OBJECT org_xml_sax_helpers_NamespaceSupport_getPrefixes__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 393)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_NamespaceSupport*) _r1.o)->fields.org_xml_sax_helpers_NamespaceSupport.currentContext_;
     XMLVM_CHECK_NPE(0)
     _r0.o = org_xml_sax_helpers_NamespaceSupport_Context_getPrefixes__(_r0.o);
@@ -820,6 +859,7 @@ JAVA_OBJECT org_xml_sax_helpers_NamespaceSupport_getPrefix___java_lang_String(JA
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 418)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_NamespaceSupport*) _r1.o)->fields.org_xml_sax_helpers_NamespaceSupport.currentContext_;
     XMLVM_CHECK_NPE(0)
     _r0.o = org_xml_sax_helpers_NamespaceSupport_Context_getPrefix___java_lang_String(_r0.o, _r2.o);
@@ -884,6 +924,7 @@ JAVA_OBJECT org_xml_sax_helpers_NamespaceSupport_getDeclaredPrefixes__(JAVA_OBJE
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 473)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_NamespaceSupport*) _r1.o)->fields.org_xml_sax_helpers_NamespaceSupport.currentContext_;
     XMLVM_CHECK_NPE(0)
     _r0.o = org_xml_sax_helpers_NamespaceSupport_Context_getDeclaredPrefixes__(_r0.o);
@@ -904,6 +945,7 @@ void org_xml_sax_helpers_NamespaceSupport_setNamespaceDeclUris___boolean(JAVA_OB
     _r3.o = me;
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 489)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((org_xml_sax_helpers_NamespaceSupport*) _r3.o)->fields.org_xml_sax_helpers_NamespaceSupport.contextPos_;
     if (_r0.i == 0) goto label10;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 490)
@@ -913,6 +955,7 @@ void org_xml_sax_helpers_NamespaceSupport_setNamespaceDeclUris___boolean(JAVA_OB
     XMLVM_THROW_CUSTOM(_r0.o)
     label10:;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 491)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((org_xml_sax_helpers_NamespaceSupport*) _r3.o)->fields.org_xml_sax_helpers_NamespaceSupport.namespaceDeclUris_;
     if (_r4.i != _r0.i) goto label15;
     label14:;
@@ -921,10 +964,12 @@ void org_xml_sax_helpers_NamespaceSupport_setNamespaceDeclUris___boolean(JAVA_OB
     return;
     label15:;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 493)
+    XMLVM_CHECK_NPE(3)
     ((org_xml_sax_helpers_NamespaceSupport*) _r3.o)->fields.org_xml_sax_helpers_NamespaceSupport.namespaceDeclUris_ = _r4.i;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 494)
     if (_r4.i == 0) goto label29;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 495)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_xml_sax_helpers_NamespaceSupport*) _r3.o)->fields.org_xml_sax_helpers_NamespaceSupport.currentContext_;
     // "xmlns"
     _r1.o = xmlvm_create_java_string_from_pool(705);
@@ -935,16 +980,20 @@ void org_xml_sax_helpers_NamespaceSupport_setNamespaceDeclUris___boolean(JAVA_OB
     goto label14;
     label29:;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 497)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_xml_sax_helpers_NamespaceSupport*) _r3.o)->fields.org_xml_sax_helpers_NamespaceSupport.contexts_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((org_xml_sax_helpers_NamespaceSupport*) _r3.o)->fields.org_xml_sax_helpers_NamespaceSupport.contextPos_;
     _r2.o = __NEW_org_xml_sax_helpers_NamespaceSupport_Context();
     XMLVM_CHECK_NPE(2)
     org_xml_sax_helpers_NamespaceSupport_Context___INIT____org_xml_sax_helpers_NamespaceSupport(_r2.o, _r3.o);
+    XMLVM_CHECK_NPE(3)
     ((org_xml_sax_helpers_NamespaceSupport*) _r3.o)->fields.org_xml_sax_helpers_NamespaceSupport.currentContext_ = _r2.o;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.o;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 498)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_xml_sax_helpers_NamespaceSupport*) _r3.o)->fields.org_xml_sax_helpers_NamespaceSupport.currentContext_;
     // "xml"
     _r1.o = xmlvm_create_java_string_from_pool(61);
@@ -964,6 +1013,7 @@ JAVA_BOOLEAN org_xml_sax_helpers_NamespaceSupport_isNamespaceDeclUris__(JAVA_OBJ
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 509)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((org_xml_sax_helpers_NamespaceSupport*) _r1.o)->fields.org_xml_sax_helpers_NamespaceSupport.namespaceDeclUris_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -979,6 +1029,7 @@ JAVA_BOOLEAN org_xml_sax_helpers_NamespaceSupport_access$0___org_xml_sax_helpers
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("NamespaceSupport.java", 520)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((org_xml_sax_helpers_NamespaceSupport*) _r1.o)->fields.org_xml_sax_helpers_NamespaceSupport.namespaceDeclUris_;
     XMLVM_EXIT_METHOD()
     return _r0.i;

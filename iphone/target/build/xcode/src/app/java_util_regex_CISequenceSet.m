@@ -238,15 +238,18 @@ void java_util_regex_CISequenceSet___INIT____java_lang_StringBuffer(JAVA_OBJECT 
     java_util_regex_LeafSet___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("CISequenceSet.java", 30)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_CISequenceSet*) _r1.o)->fields.java_util_regex_CISequenceSet.string_ = _r0.o;
     XMLVM_SOURCE_POSITION("CISequenceSet.java", 36)
     //java_lang_StringBuffer_toString__[5]
     XMLVM_CHECK_NPE(2)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuffer*) _r2.o)->tib->vtable[5])(_r2.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_CISequenceSet*) _r1.o)->fields.java_util_regex_CISequenceSet.string_ = _r0.o;
     XMLVM_SOURCE_POSITION("CISequenceSet.java", 37)
     XMLVM_CHECK_NPE(2)
     _r0.i = java_lang_AbstractStringBuilder_length__(_r2.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_LeafSet*) _r1.o)->fields.java_util_regex_LeafSet.charCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("CISequenceSet.java", 38)
     XMLVM_EXIT_METHOD()
@@ -270,12 +273,14 @@ JAVA_INT java_util_regex_CISequenceSet_accepts___int_java_lang_CharSequence(JAVA
     XMLVM_SOURCE_POSITION("CISequenceSet.java", 41)
     _r0.i = 0;
     label1:;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_CISequenceSet*) _r3.o)->fields.java_util_regex_CISequenceSet.string_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[8])(_r1.o);
     if (_r0.i < _r1.i) goto label16;
     XMLVM_SOURCE_POSITION("CISequenceSet.java", 49)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_CISequenceSet*) _r3.o)->fields.java_util_regex_CISequenceSet.string_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(0)
@@ -285,6 +290,7 @@ JAVA_INT java_util_regex_CISequenceSet_accepts___int_java_lang_CharSequence(JAVA
     return _r0.i;
     label16:;
     XMLVM_SOURCE_POSITION("CISequenceSet.java", 42)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_CISequenceSet*) _r3.o)->fields.java_util_regex_CISequenceSet.string_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(1)
@@ -294,6 +300,7 @@ JAVA_INT java_util_regex_CISequenceSet_accepts___int_java_lang_CharSequence(JAVA
     _r2.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_CharSequence_charAt___int])(_r5.o, _r2.i);
     if (_r1.i == _r2.i) goto label50;
     XMLVM_SOURCE_POSITION("CISequenceSet.java", 43)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_CISequenceSet*) _r3.o)->fields.java_util_regex_CISequenceSet.string_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(1)
@@ -327,6 +334,7 @@ JAVA_OBJECT java_util_regex_CISequenceSet_getName__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(360);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_regex_CISequenceSet*) _r2.o)->fields.java_util_regex_CISequenceSet.string_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);

@@ -286,6 +286,7 @@ void java_util_IllegalFormatConversionException___INIT____char_java_lang_Class(J
     XMLVM_CHECK_NPE(1)
     java_util_IllegalFormatException___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("IllegalFormatConversionException.java", 47)
+    XMLVM_CHECK_NPE(1)
     ((java_util_IllegalFormatConversionException*) _r1.o)->fields.java_util_IllegalFormatConversionException.c_ = _r2.i;
     XMLVM_SOURCE_POSITION("IllegalFormatConversionException.java", 48)
     if (_r3.o != JAVA_NULL) goto label13;
@@ -296,6 +297,7 @@ void java_util_IllegalFormatConversionException___INIT____char_java_lang_Class(J
     XMLVM_THROW_CUSTOM(_r0.o)
     label13:;
     XMLVM_SOURCE_POSITION("IllegalFormatConversionException.java", 51)
+    XMLVM_CHECK_NPE(1)
     ((java_util_IllegalFormatConversionException*) _r1.o)->fields.java_util_IllegalFormatConversionException.arg_ = _r3.o;
     XMLVM_SOURCE_POSITION("IllegalFormatConversionException.java", 52)
     XMLVM_EXIT_METHOD()
@@ -311,6 +313,7 @@ JAVA_OBJECT java_util_IllegalFormatConversionException_getArgumentClass__(JAVA_O
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("IllegalFormatConversionException.java", 60)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_IllegalFormatConversionException*) _r1.o)->fields.java_util_IllegalFormatConversionException.arg_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -325,6 +328,7 @@ JAVA_CHAR java_util_IllegalFormatConversionException_getConversion__(JAVA_OBJECT
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("IllegalFormatConversionException.java", 69)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_IllegalFormatConversionException*) _r1.o)->fields.java_util_IllegalFormatConversionException.c_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -344,6 +348,7 @@ JAVA_OBJECT java_util_IllegalFormatConversionException_getMessage__(JAVA_OBJECT 
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("IllegalFormatConversionException.java", 80)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_IllegalFormatConversionException*) _r2.o)->fields.java_util_IllegalFormatConversionException.c_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -354,6 +359,7 @@ JAVA_OBJECT java_util_IllegalFormatConversionException_getMessage__(JAVA_OBJECT 
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("IllegalFormatConversionException.java", 82)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_IllegalFormatConversionException*) _r2.o)->fields.java_util_IllegalFormatConversionException.arg_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_Class_getName__(_r1.o);

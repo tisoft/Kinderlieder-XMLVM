@@ -307,6 +307,7 @@ void java_util_regex_DotQuantifierSet___INIT____java_util_regex_AbstractSet_java
     XMLVM_CHECK_NPE(0)
     java_util_regex_QuantifierSet___INIT____java_util_regex_AbstractSet_java_util_regex_AbstractSet_int(_r0.o, _r1.o, _r2.o, _r3.i);
     XMLVM_SOURCE_POSITION("DotQuantifierSet.java", 37)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_DotQuantifierSet*) _r0.o)->fields.java_util_regex_DotQuantifierSet.lt_ = _r4.o;
     XMLVM_SOURCE_POSITION("DotQuantifierSet.java", 38)
     XMLVM_EXIT_METHOD()
@@ -340,6 +341,7 @@ JAVA_INT java_util_regex_DotQuantifierSet_matches___int_java_lang_CharSequence_j
     XMLVM_SOURCE_POSITION("DotQuantifierSet.java", 52)
     if (_r0.i > _r3.i) goto label19;
     XMLVM_SOURCE_POSITION("DotQuantifierSet.java", 53)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_AbstractSet*) _r2.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -349,6 +351,7 @@ JAVA_INT java_util_regex_DotQuantifierSet_matches___int_java_lang_CharSequence_j
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label19:;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_regex_AbstractSet*) _r2.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_findBack___int_int_java_lang_CharSequence_java_util_regex_MatchResultImpl[6]
     XMLVM_CHECK_NPE(1)
@@ -381,6 +384,7 @@ JAVA_INT java_util_regex_DotQuantifierSet_find___int_java_lang_CharSequence_java
     XMLVM_CHECK_NPE(7)
     _r0.i = java_util_regex_MatchResultImpl_getRightBound__(_r7.o);
     XMLVM_SOURCE_POSITION("DotQuantifierSet.java", 69)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_regex_AbstractSet*) _r4.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_find___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[7]
     XMLVM_CHECK_NPE(1)
@@ -394,6 +398,7 @@ JAVA_INT java_util_regex_DotQuantifierSet_find___int_java_lang_CharSequence_java
     if (_r2.i >= 0) goto label57;
     label19:;
     XMLVM_SOURCE_POSITION("DotQuantifierSet.java", 80)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_regex_AbstractSet*) _r4.o)->fields.java_util_regex_AbstractSet.next_;
     XMLVM_SOURCE_POSITION("DotQuantifierSet.java", 81)
     //java_util_regex_AbstractSet_findBack___int_int_java_lang_CharSequence_java_util_regex_MatchResultImpl[6]
@@ -472,6 +477,7 @@ JAVA_INT java_util_regex_DotQuantifierSet_findLineTerminator___int_int_java_lang
     return _r0.i;
     label5:;
     XMLVM_SOURCE_POSITION("DotQuantifierSet.java", 103)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_DotQuantifierSet*) _r3.o)->fields.java_util_regex_DotQuantifierSet.lt_;
     XMLVM_CHECK_NPE(6)
     _r2.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r6.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_CharSequence_charAt___int])(_r6.o, _r0.i);
@@ -510,6 +516,7 @@ JAVA_INT java_util_regex_DotQuantifierSet_findBackLineTerminator___int_int_java_
     return _r0.i;
     label5:;
     XMLVM_SOURCE_POSITION("DotQuantifierSet.java", 112)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_DotQuantifierSet*) _r3.o)->fields.java_util_regex_DotQuantifierSet.lt_;
     XMLVM_CHECK_NPE(6)
     _r2.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r6.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_CharSequence_charAt___int])(_r6.o, _r0.i);

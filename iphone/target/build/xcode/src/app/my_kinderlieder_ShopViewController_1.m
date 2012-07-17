@@ -216,6 +216,7 @@ void my_kinderlieder_ShopViewController_1___INIT____my_kinderlieder_ShopViewCont
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("ShopViewController.java", 20)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_ShopViewController_1*) _r0.o)->fields.my_kinderlieder_ShopViewController_1.this_0_ = _r1.o;
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);

@@ -466,12 +466,16 @@ void gnu_xml_xpath_XPathImpl___INIT____javax_xml_namespace_NamespaceContext_java
     _r0.o = __NEW_gnu_xml_xpath_XPathParser();
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathParser___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_xpath_XPathImpl*) _r1.o)->fields.gnu_xml_xpath_XPathImpl.parser_ = _r0.o;
     XMLVM_SOURCE_POSITION("XPathImpl.java", 69)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_xpath_XPathImpl*) _r1.o)->fields.gnu_xml_xpath_XPathImpl.namespaceContext_ = _r2.o;
     XMLVM_SOURCE_POSITION("XPathImpl.java", 70)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_xpath_XPathImpl*) _r1.o)->fields.gnu_xml_xpath_XPathImpl.variableResolver_ = _r3.o;
     XMLVM_SOURCE_POSITION("XPathImpl.java", 71)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_xpath_XPathImpl*) _r1.o)->fields.gnu_xml_xpath_XPathImpl.functionResolver_ = _r4.o;
     XMLVM_SOURCE_POSITION("XPathImpl.java", 72)
     //gnu_xml_xpath_XPathImpl_reset__[14]
@@ -492,16 +496,25 @@ void gnu_xml_xpath_XPathImpl_reset__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("XPathImpl.java", 77)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_xpath_XPathImpl*) _r2.o)->fields.gnu_xml_xpath_XPathImpl.parser_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_XPathImpl*) _r2.o)->fields.gnu_xml_xpath_XPathImpl.namespaceContext_;
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_XPathParser*) _r0.o)->fields.gnu_xml_xpath_XPathParser.namespaceContext_ = _r1.o;
     XMLVM_SOURCE_POSITION("XPathImpl.java", 78)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_xpath_XPathImpl*) _r2.o)->fields.gnu_xml_xpath_XPathImpl.parser_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_XPathImpl*) _r2.o)->fields.gnu_xml_xpath_XPathImpl.variableResolver_;
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_XPathParser*) _r0.o)->fields.gnu_xml_xpath_XPathParser.variableResolver_ = _r1.o;
     XMLVM_SOURCE_POSITION("XPathImpl.java", 79)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_xpath_XPathImpl*) _r2.o)->fields.gnu_xml_xpath_XPathImpl.parser_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_XPathImpl*) _r2.o)->fields.gnu_xml_xpath_XPathImpl.functionResolver_;
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_XPathParser*) _r0.o)->fields.gnu_xml_xpath_XPathParser.functionResolver_ = _r1.o;
     XMLVM_SOURCE_POSITION("XPathImpl.java", 80)
     XMLVM_EXIT_METHOD()
@@ -519,7 +532,9 @@ void gnu_xml_xpath_XPathImpl_setXPathVariableResolver___javax_xml_xpath_XPathVar
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XPathImpl.java", 84)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_XPathImpl*) _r1.o)->fields.gnu_xml_xpath_XPathImpl.parser_;
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_XPathParser*) _r0.o)->fields.gnu_xml_xpath_XPathParser.variableResolver_ = _r2.o;
     XMLVM_SOURCE_POSITION("XPathImpl.java", 85)
     XMLVM_EXIT_METHOD()
@@ -535,7 +550,9 @@ JAVA_OBJECT gnu_xml_xpath_XPathImpl_getXPathVariableResolver__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XPathImpl.java", 89)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_XPathImpl*) _r1.o)->fields.gnu_xml_xpath_XPathImpl.parser_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_xpath_XPathParser*) _r0.o)->fields.gnu_xml_xpath_XPathParser.variableResolver_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -552,7 +569,9 @@ void gnu_xml_xpath_XPathImpl_setXPathFunctionResolver___javax_xml_xpath_XPathFun
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XPathImpl.java", 94)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_XPathImpl*) _r1.o)->fields.gnu_xml_xpath_XPathImpl.parser_;
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_XPathParser*) _r0.o)->fields.gnu_xml_xpath_XPathParser.functionResolver_ = _r2.o;
     XMLVM_SOURCE_POSITION("XPathImpl.java", 95)
     XMLVM_EXIT_METHOD()
@@ -568,7 +587,9 @@ JAVA_OBJECT gnu_xml_xpath_XPathImpl_getXPathFunctionResolver__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XPathImpl.java", 99)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_XPathImpl*) _r1.o)->fields.gnu_xml_xpath_XPathImpl.parser_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_xpath_XPathParser*) _r0.o)->fields.gnu_xml_xpath_XPathParser.functionResolver_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -585,7 +606,9 @@ void gnu_xml_xpath_XPathImpl_setNamespaceContext___javax_xml_namespace_Namespace
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XPathImpl.java", 104)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_XPathImpl*) _r1.o)->fields.gnu_xml_xpath_XPathImpl.parser_;
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_XPathParser*) _r0.o)->fields.gnu_xml_xpath_XPathParser.namespaceContext_ = _r2.o;
     XMLVM_SOURCE_POSITION("XPathImpl.java", 105)
     XMLVM_EXIT_METHOD()
@@ -601,7 +624,9 @@ JAVA_OBJECT gnu_xml_xpath_XPathImpl_getNamespaceContext__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XPathImpl.java", 109)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_XPathImpl*) _r1.o)->fields.gnu_xml_xpath_XPathImpl.parser_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_xpath_XPathParser*) _r0.o)->fields.gnu_xml_xpath_XPathParser.namespaceContext_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -625,6 +650,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathImpl_compile___java_lang_String(JAVA_OBJECT me, J
     XMLVM_TRY_BEGIN(w15449aaac12b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("XPathImpl.java", 118)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_XPathImpl*) _r2.o)->fields.gnu_xml_xpath_XPathImpl.parser_;
     XMLVM_CHECK_NPE(1)
     _r2.o = gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInput(_r1.o, _r0.o);

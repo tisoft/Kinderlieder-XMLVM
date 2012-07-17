@@ -331,6 +331,7 @@ void org_apache_harmony_luni_lang_reflect_ListOfTypes___INIT____int(JAVA_OBJECT 
     _r0.o = __NEW_java_util_ArrayList();
     XMLVM_CHECK_NPE(0)
     java_util_ArrayList___INIT____int(_r0.o, _r2.i);
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_lang_reflect_ListOfTypes*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ListOfTypes.types_ = _r0.o;
     XMLVM_SOURCE_POSITION("ListOfTypes.java", 31)
     XMLVM_EXIT_METHOD()
@@ -360,6 +361,7 @@ void org_apache_harmony_luni_lang_reflect_ListOfTypes___INIT____java_lang_reflec
     _r5.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r7.o));
     XMLVM_CHECK_NPE(4)
     java_util_ArrayList___INIT____int(_r4.o, _r5.i);
+    XMLVM_CHECK_NPE(6)
     ((org_apache_harmony_luni_lang_reflect_ListOfTypes*) _r6.o)->fields.org_apache_harmony_luni_lang_reflect_ListOfTypes.types_ = _r4.o;
     XMLVM_SOURCE_POSITION("ListOfTypes.java", 35)
     _r0 = _r7;
@@ -371,6 +373,7 @@ void org_apache_harmony_luni_lang_reflect_ListOfTypes___INIT____java_lang_reflec
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r3.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     XMLVM_SOURCE_POSITION("ListOfTypes.java", 36)
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((org_apache_harmony_luni_lang_reflect_ListOfTypes*) _r6.o)->fields.org_apache_harmony_luni_lang_reflect_ListOfTypes.types_;
     //java_util_ArrayList_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(4)
@@ -405,6 +408,7 @@ void org_apache_harmony_luni_lang_reflect_ListOfTypes_add___java_lang_reflect_Ty
     XMLVM_THROW_CUSTOM(_r0.o)
     label10:;
     XMLVM_SOURCE_POSITION("ListOfTypes.java", 44)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_ListOfTypes*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_ListOfTypes.types_;
     //java_util_ArrayList_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
@@ -423,6 +427,7 @@ JAVA_INT org_apache_harmony_luni_lang_reflect_ListOfTypes_length__(JAVA_OBJECT m
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ListOfTypes.java", 48)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_ListOfTypes*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ListOfTypes.types_;
     //java_util_ArrayList_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -441,6 +446,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ListOfTypes_getResolvedTypes__(
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("ListOfTypes.java", 52)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_ListOfTypes*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_ListOfTypes.resolvedTypes_;
     if (_r0.o == JAVA_NULL) goto label6;
     XMLVM_SOURCE_POSITION("ListOfTypes.java", 53)
@@ -449,9 +455,11 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ListOfTypes_getResolvedTypes__(
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label6:;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((org_apache_harmony_luni_lang_reflect_ListOfTypes*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_ListOfTypes.types_;
     XMLVM_CHECK_NPE(2)
     _r1.o = org_apache_harmony_luni_lang_reflect_ListOfTypes_resolveTypes___java_util_List(_r2.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_lang_reflect_ListOfTypes*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_ListOfTypes.resolvedTypes_ = _r1.o;
     goto label5;
     //XMLVM_END_WRAPPER
@@ -539,6 +547,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ListOfTypes_toString__(JAVA_OBJ
     _r0.i = 0;
     label6:;
     XMLVM_SOURCE_POSITION("ListOfTypes.java", 71)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((org_apache_harmony_luni_lang_reflect_ListOfTypes*) _r3.o)->fields.org_apache_harmony_luni_lang_reflect_ListOfTypes.types_;
     //java_util_ArrayList_size__[16]
     XMLVM_CHECK_NPE(2)
@@ -553,6 +562,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ListOfTypes_toString__(JAVA_OBJ
     java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     label21:;
     XMLVM_SOURCE_POSITION("ListOfTypes.java", 75)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((org_apache_harmony_luni_lang_reflect_ListOfTypes*) _r3.o)->fields.org_apache_harmony_luni_lang_reflect_ListOfTypes.types_;
     //java_util_ArrayList_get___int[21]
     XMLVM_CHECK_NPE(2)

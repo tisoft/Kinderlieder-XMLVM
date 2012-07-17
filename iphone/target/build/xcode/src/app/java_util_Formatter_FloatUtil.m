@@ -360,12 +360,16 @@ void java_util_Formatter_FloatUtil___INIT____java_lang_StringBuilder_java_util_F
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 1980)
+    XMLVM_CHECK_NPE(1)
     ((java_util_Formatter_FloatUtil*) _r1.o)->fields.java_util_Formatter_FloatUtil.result_ = _r2.o;
     XMLVM_SOURCE_POSITION("Formatter.java", 1981)
+    XMLVM_CHECK_NPE(1)
     ((java_util_Formatter_FloatUtil*) _r1.o)->fields.java_util_Formatter_FloatUtil.formatToken_ = _r3.o;
     XMLVM_SOURCE_POSITION("Formatter.java", 1982)
+    XMLVM_CHECK_NPE(1)
     ((java_util_Formatter_FloatUtil*) _r1.o)->fields.java_util_Formatter_FloatUtil.decimalFormat_ = _r4.o;
     XMLVM_SOURCE_POSITION("Formatter.java", 1983)
+    XMLVM_CHECK_NPE(1)
     ((java_util_Formatter_FloatUtil*) _r1.o)->fields.java_util_Formatter_FloatUtil.argument_ = _r5.o;
     XMLVM_SOURCE_POSITION("Formatter.java", 1985)
 
@@ -377,6 +381,7 @@ void java_util_Formatter_FloatUtil___INIT____java_lang_StringBuilder_java_util_F
     // Red class access removed: java.text.DecimalFormatSymbols::getMinusSign
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("Formatter.java", 1984)
+    XMLVM_CHECK_NPE(1)
     ((java_util_Formatter_FloatUtil*) _r1.o)->fields.java_util_Formatter_FloatUtil.minusSign_ = _r0.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 1986)
     XMLVM_EXIT_METHOD()
@@ -397,10 +402,13 @@ void java_util_Formatter_FloatUtil_transform___java_util_Formatter_FormatToken_j
     _r3.o = n1;
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("Formatter.java", 1989)
+    XMLVM_CHECK_NPE(2)
     ((java_util_Formatter_FloatUtil*) _r2.o)->fields.java_util_Formatter_FloatUtil.result_ = _r4.o;
     XMLVM_SOURCE_POSITION("Formatter.java", 1990)
+    XMLVM_CHECK_NPE(2)
     ((java_util_Formatter_FloatUtil*) _r2.o)->fields.java_util_Formatter_FloatUtil.formatToken_ = _r3.o;
     XMLVM_SOURCE_POSITION("Formatter.java", 1991)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r2.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Formatter_FormatToken_getConversionType__(_r0.o);
@@ -416,6 +424,7 @@ void java_util_Formatter_FloatUtil_transform___java_util_Formatter_FormatToken_j
     XMLVM_SOURCE_POSITION("Formatter.java", 2012)
     _r0.o = __NEW_java_util_UnknownFormatConversionException();
     XMLVM_SOURCE_POSITION("Formatter.java", 2013)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r2.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_util_Formatter_FormatToken_getConversionType__(_r1.o);
@@ -458,6 +467,7 @@ JAVA_CHAR java_util_Formatter_FloatUtil_getMinusSign__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2019)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_Formatter_FloatUtil*) _r1.o)->fields.java_util_Formatter_FloatUtil.minusSign_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -499,6 +509,7 @@ void java_util_Formatter_FloatUtil_transform_e__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2029)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_util_Formatter_FormatToken_getPrecision__(_r1.o);
@@ -509,6 +520,7 @@ void java_util_Formatter_FloatUtil_transform_e__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2031)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_util_Formatter_FormatToken_getPrecision__(_r1.o);
@@ -530,6 +542,7 @@ void java_util_Formatter_FloatUtil_transform_e__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2037)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.decimalFormat_;
     //java_lang_StringBuilder_toString__[5]
     XMLVM_CHECK_NPE(0)
@@ -539,13 +552,16 @@ void java_util_Formatter_FloatUtil_transform_e__(JAVA_OBJECT me)
     // Red class access removed: java.text.DecimalFormat::applyPattern
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("Formatter.java", 2038)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.decimalFormat_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.argument_;
 
     
     // Red class access removed: java.text.DecimalFormat::format
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("Formatter.java", 2039)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.result_;
     _r2.i = 101;
     XMLVM_CHECK_NPE(0)
@@ -553,23 +569,27 @@ void java_util_Formatter_FloatUtil_transform_e__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder_append___java_lang_String(_r1.o, _r0.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2043)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     _r1.i = 2;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Formatter_FormatToken_isFlagSet___int(_r0.o, _r1.i);
     if (_r0.i == 0) goto label115;
     XMLVM_SOURCE_POSITION("Formatter.java", 2044)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Formatter_FormatToken_getPrecision__(_r0.o);
     if (_r0.i != 0) goto label115;
     XMLVM_SOURCE_POSITION("Formatter.java", 2045)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.result_;
     // "e"
     _r1.o = xmlvm_create_java_string_from_pool(1386);
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_AbstractStringBuilder_indexOf___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2046)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.decimalFormat_;
 
     
@@ -581,6 +601,7 @@ void java_util_Formatter_FloatUtil_transform_e__(JAVA_OBJECT me)
     // Red class access removed: java.text.DecimalFormatSymbols::getDecimalSeparator
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("Formatter.java", 2048)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.result_;
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuilder_insert___int_char(_r2.o, _r0.i, _r1.i);
@@ -611,6 +632,7 @@ void java_util_Formatter_FloatUtil_transform_g__(JAVA_OBJECT me)
     XMLVMElem _r13;
     _r13.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2053)
+    XMLVM_CHECK_NPE(13)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r13.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Formatter_FormatToken_getPrecision__(_r0.o);
@@ -620,11 +642,13 @@ void java_util_Formatter_FloatUtil_transform_g__(JAVA_OBJECT me)
     _r1 = _r0;
     label10:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2055)
+    XMLVM_CHECK_NPE(13)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r13.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(0)
     java_util_Formatter_FormatToken_setPrecision___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2057)
     _r2.d = 0.0;
+    XMLVM_CHECK_NPE(13)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r13.o)->fields.java_util_Formatter_FloatUtil.argument_;
     _r0.o = _r0.o;
     //java_lang_Number_doubleValue__[7]
@@ -635,6 +659,7 @@ void java_util_Formatter_FloatUtil_transform_g__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Formatter.java", 2058)
     _r0.i = _r1.i + -1;
     XMLVM_SOURCE_POSITION("Formatter.java", 2059)
+    XMLVM_CHECK_NPE(13)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r13.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(1)
     java_util_Formatter_FormatToken_setPrecision___int(_r1.o, _r0.i);
@@ -652,6 +677,7 @@ void java_util_Formatter_FloatUtil_transform_g__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Formatter.java", 2064)
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("Formatter.java", 2065)
+    XMLVM_CHECK_NPE(13)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r13.o)->fields.java_util_Formatter_FloatUtil.argument_;
     _r0.o = _r0.o;
     //java_lang_Number_doubleValue__[7]
@@ -663,12 +689,14 @@ void java_util_Formatter_FloatUtil_transform_g__(JAVA_OBJECT me)
     _r0.i = java_lang_Double_isInfinite___double(_r3.d);
     if (_r0.i == 0) goto label78;
     XMLVM_SOURCE_POSITION("Formatter.java", 2068)
+    XMLVM_CHECK_NPE(13)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r13.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Formatter_FormatToken_getPrecision__(_r0.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2069)
     _r0.i = _r0.i + -1;
     XMLVM_SOURCE_POSITION("Formatter.java", 2070)
+    XMLVM_CHECK_NPE(13)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r13.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(1)
     java_util_Formatter_FormatToken_setPrecision___int(_r1.o, _r0.i);
@@ -733,6 +761,7 @@ void java_util_Formatter_FloatUtil_transform_g__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[8])(_r2.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2085)
+    XMLVM_CHECK_NPE(13)
     _r3.o = ((java_util_Formatter_FloatUtil*) _r13.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(3)
     _r3.i = java_util_Formatter_FormatToken_getPrecision__(_r3.o);
@@ -741,6 +770,7 @@ void java_util_Formatter_FloatUtil_transform_g__(JAVA_OBJECT me)
     _r1.i = _r1.i + 1;
     label171:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2088)
+    XMLVM_CHECK_NPE(13)
     _r2.o = ((java_util_Formatter_FloatUtil*) _r13.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(2)
     java_util_Formatter_FormatToken_setPrecision___int(_r2.o, _r1.i);
@@ -748,12 +778,14 @@ void java_util_Formatter_FloatUtil_transform_g__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Formatter.java", 2107)
     if (_r0.i == 0) goto label293;
     XMLVM_SOURCE_POSITION("Formatter.java", 2108)
+    XMLVM_CHECK_NPE(13)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r13.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Formatter_FormatToken_getPrecision__(_r0.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2109)
     _r0.i = _r0.i + -1;
     XMLVM_SOURCE_POSITION("Formatter.java", 2110)
+    XMLVM_CHECK_NPE(13)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r13.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(1)
     java_util_Formatter_FormatToken_setPrecision___int(_r1.o, _r0.i);
@@ -801,6 +833,7 @@ void java_util_Formatter_FloatUtil_transform_g__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(3)
     _r3.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r3.o)->tib->vtable[8])(_r3.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2098)
+    XMLVM_CHECK_NPE(13)
     _r4.o = ((java_util_Formatter_FloatUtil*) _r13.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(4)
     _r4.i = java_util_Formatter_FormatToken_getPrecision__(_r4.o);
@@ -824,6 +857,7 @@ void java_util_Formatter_FloatUtil_transform_g__(JAVA_OBJECT me)
     _r0.i = _r3.d > _r5.d ? 1 : (_r3.d == _r5.d ? 0 : -1);
     if (_r0.i < 0) goto label291;
     XMLVM_SOURCE_POSITION("Formatter.java", 2103)
+    XMLVM_CHECK_NPE(13)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r13.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(0)
     java_util_Formatter_FormatToken_setPrecision___int(_r0.o, _r1.i);
@@ -854,6 +888,7 @@ void java_util_Formatter_FloatUtil_transform_f__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2120)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     _r2.i = 32;
     XMLVM_CHECK_NPE(1)
@@ -865,6 +900,7 @@ void java_util_Formatter_FloatUtil_transform_f__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2122)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.decimalFormat_;
 
     
@@ -888,6 +924,7 @@ void java_util_Formatter_FloatUtil_transform_f__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2132)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_util_Formatter_FormatToken_getPrecision__(_r1.o);
@@ -898,6 +935,7 @@ void java_util_Formatter_FloatUtil_transform_f__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2134)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_util_Formatter_FormatToken_getPrecision__(_r1.o);
@@ -911,6 +949,7 @@ void java_util_Formatter_FloatUtil_transform_f__(JAVA_OBJECT me)
     java_lang_StringBuilder_append___char_1ARRAY(_r0.o, _r1.o);
     label73:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2138)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.decimalFormat_;
     //java_lang_StringBuilder_toString__[5]
     XMLVM_CHECK_NPE(0)
@@ -920,8 +959,11 @@ void java_util_Formatter_FloatUtil_transform_f__(JAVA_OBJECT me)
     // Red class access removed: java.text.DecimalFormat::applyPattern
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("Formatter.java", 2139)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.result_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.decimalFormat_;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.argument_;
 
     
@@ -930,17 +972,20 @@ void java_util_Formatter_FloatUtil_transform_f__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2142)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     _r1.i = 2;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Formatter_FormatToken_isFlagSet___int(_r0.o, _r1.i);
     if (_r0.i == 0) goto label127;
     XMLVM_SOURCE_POSITION("Formatter.java", 2143)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Formatter_FormatToken_getPrecision__(_r0.o);
     if (_r0.i != 0) goto label127;
     XMLVM_SOURCE_POSITION("Formatter.java", 2144)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.decimalFormat_;
 
     
@@ -952,6 +997,7 @@ void java_util_Formatter_FloatUtil_transform_f__(JAVA_OBJECT me)
     // Red class access removed: java.text.DecimalFormatSymbols::getDecimalSeparator
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("Formatter.java", 2146)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.result_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(1)
@@ -974,18 +1020,22 @@ void java_util_Formatter_FloatUtil_transform_a__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2152)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Formatter_FormatToken_getConversionType__(_r0.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2154)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.argument_;
     if (!__TIB_java_lang_Float.classInitialized) __INIT_java_lang_Float();
     _r1.i = XMLVM_ISA(_r1.o, __CLASS_java_lang_Float);
     if (_r1.i == 0) goto label38;
     XMLVM_SOURCE_POSITION("Formatter.java", 2155)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.argument_;
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("Formatter.java", 2156)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.result_;
     //java_lang_Float_floatValue__[8]
     XMLVM_CHECK_NPE(0)
@@ -995,6 +1045,7 @@ void java_util_Formatter_FloatUtil_transform_a__(JAVA_OBJECT me)
     java_lang_StringBuilder_append___java_lang_String(_r1.o, _r0.o);
     label29:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2167)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Formatter_FormatToken_isPrecisionSet__(_r0.o);
@@ -1005,14 +1056,17 @@ void java_util_Formatter_FloatUtil_transform_a__(JAVA_OBJECT me)
     return;
     label38:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2158)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.argument_;
     if (!__TIB_java_lang_Double.classInitialized) __INIT_java_lang_Double();
     _r1.i = XMLVM_ISA(_r1.o, __CLASS_java_lang_Double);
     if (_r1.i == 0) goto label62;
     XMLVM_SOURCE_POSITION("Formatter.java", 2159)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.argument_;
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("Formatter.java", 2160)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.result_;
     //java_lang_Double_doubleValue__[7]
     XMLVM_CHECK_NPE(0)
@@ -1025,6 +1079,7 @@ void java_util_Formatter_FloatUtil_transform_a__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Formatter.java", 2163)
     _r1.o = __NEW_java_util_IllegalFormatConversionException();
     XMLVM_SOURCE_POSITION("Formatter.java", 2164)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.argument_;
     //java_lang_Object_getClass__[3]
     XMLVM_CHECK_NPE(2)
@@ -1034,6 +1089,7 @@ void java_util_Formatter_FloatUtil_transform_a__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r1.o)
     label74:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2171)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.formatToken_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Formatter_FormatToken_getPrecision__(_r0.o);
@@ -1042,6 +1098,7 @@ void java_util_Formatter_FloatUtil_transform_a__(JAVA_OBJECT me)
     _r0.i = 1;
     label83:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2173)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.result_;
     // "."
     _r2.o = xmlvm_create_java_string_from_pool(307);
@@ -1049,6 +1106,7 @@ void java_util_Formatter_FloatUtil_transform_a__(JAVA_OBJECT me)
     _r1.i = java_lang_AbstractStringBuilder_indexOf___java_lang_String(_r1.o, _r2.o);
     _r1.i = _r1.i + 1;
     XMLVM_SOURCE_POSITION("Formatter.java", 2174)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.result_;
     // "p"
     _r3.o = xmlvm_create_java_string_from_pool(756);
@@ -1068,12 +1126,14 @@ void java_util_Formatter_FloatUtil_transform_a__(JAVA_OBJECT me)
     _r1.i = 48;
     java_util_Arrays_fill___char_1ARRAY_char(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2184)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.result_;
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder_insert___int_char_1ARRAY(_r1.o, _r2.i, _r0.o);
     goto label37;
     label121:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2187)
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_util_Formatter_FloatUtil*) _r4.o)->fields.java_util_Formatter_FloatUtil.result_;
     _r0.i = _r0.i + _r1.i;
     XMLVM_CHECK_NPE(3)

@@ -281,23 +281,28 @@ void java_util_ListResourceBundle_1___INIT____java_util_ListResourceBundle(JAVA_
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 1)
+    XMLVM_CHECK_NPE(1)
     ((java_util_ListResourceBundle_1*) _r1.o)->fields.java_util_ListResourceBundle_1.this_0_ = _r2.o;
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 57)
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 58)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_ListResourceBundle*) _r2.o)->fields.java_util_ListResourceBundle.table_;
     //java_util_HashMap_keySet__[12]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_HashMap*) _r0.o)->tib->vtable[12])(_r0.o);
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Set_iterator__])(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_ListResourceBundle_1*) _r1.o)->fields.java_util_ListResourceBundle_1.local_ = _r0.o;
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 60)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_ResourceBundle*) _r2.o)->fields.java_util_ResourceBundle.parent_;
     //java_util_ResourceBundle_getKeys__[6]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_ResourceBundle*) _r0.o)->tib->vtable[6])(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_ListResourceBundle_1*) _r1.o)->fields.java_util_ListResourceBundle_1.pEnum_ = _r0.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -315,6 +320,7 @@ JAVA_BOOLEAN java_util_ListResourceBundle_1_findNext__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 65)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_ListResourceBundle_1*) _r3.o)->fields.java_util_ListResourceBundle_1.nextElement_;
     if (_r0.o == JAVA_NULL) goto label29;
     _r0 = _r2;
@@ -325,24 +331,29 @@ JAVA_BOOLEAN java_util_ListResourceBundle_1_findNext__(JAVA_OBJECT me)
     return _r0.i;
     label7:;
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 69)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_ListResourceBundle_1*) _r3.o)->fields.java_util_ListResourceBundle_1.pEnum_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Enumeration_nextElement__])(_r0.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 70)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_ListResourceBundle_1*) _r3.o)->fields.java_util_ListResourceBundle_1.this_0_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_ListResourceBundle*) _r1.o)->fields.java_util_ListResourceBundle.table_;
     //java_util_HashMap_containsKey___java_lang_Object[7]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_HashMap*) _r1.o)->tib->vtable[7])(_r1.o, _r0.o);
     if (_r1.i != 0) goto label29;
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 71)
+    XMLVM_CHECK_NPE(3)
     ((java_util_ListResourceBundle_1*) _r3.o)->fields.java_util_ListResourceBundle_1.nextElement_ = _r0.o;
     _r0 = _r2;
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 72)
     goto label6;
     label29:;
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 68)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_ListResourceBundle_1*) _r3.o)->fields.java_util_ListResourceBundle_1.pEnum_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Enumeration_hasMoreElements__])(_r0.o);
@@ -360,6 +371,7 @@ JAVA_BOOLEAN java_util_ListResourceBundle_1_hasMoreElements__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 79)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_ListResourceBundle_1*) _r1.o)->fields.java_util_ListResourceBundle_1.local_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_hasNext__])(_r0.o);
@@ -386,11 +398,13 @@ JAVA_OBJECT java_util_ListResourceBundle_1_nextElement__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 86)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_ListResourceBundle_1*) _r2.o)->fields.java_util_ListResourceBundle_1.local_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_hasNext__])(_r0.o);
     if (_r0.i == 0) goto label18;
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 87)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_ListResourceBundle_1*) _r2.o)->fields.java_util_ListResourceBundle_1.local_;
     XMLVM_CHECK_NPE(0)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_next__])(_r0.o);
@@ -406,12 +420,15 @@ JAVA_OBJECT java_util_ListResourceBundle_1_nextElement__(JAVA_OBJECT me)
     _r0.i = java_util_ListResourceBundle_1_findNext__(_r2.o);
     if (_r0.i == 0) goto label30;
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 90)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_ListResourceBundle_1*) _r2.o)->fields.java_util_ListResourceBundle_1.nextElement_;
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 91)
     _r1.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(2)
     ((java_util_ListResourceBundle_1*) _r2.o)->fields.java_util_ListResourceBundle_1.nextElement_ = _r1.o;
     goto label17;
     label30:;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_ListResourceBundle_1*) _r2.o)->fields.java_util_ListResourceBundle_1.pEnum_;
     XMLVM_CHECK_NPE(0)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Enumeration_nextElement__])(_r0.o);

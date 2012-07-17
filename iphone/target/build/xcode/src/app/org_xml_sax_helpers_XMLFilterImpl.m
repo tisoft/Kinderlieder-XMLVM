@@ -917,16 +917,22 @@ void org_xml_sax_helpers_XMLFilterImpl___INIT___(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 704)
+    XMLVM_CHECK_NPE(1)
     ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.parent_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 705)
+    XMLVM_CHECK_NPE(1)
     ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.locator_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 706)
+    XMLVM_CHECK_NPE(1)
     ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.entityResolver_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 707)
+    XMLVM_CHECK_NPE(1)
     ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.dtdHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 708)
+    XMLVM_CHECK_NPE(1)
     ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 709)
+    XMLVM_CHECK_NPE(1)
     ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.errorHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 78)
     XMLVM_EXIT_METHOD()
@@ -948,16 +954,22 @@ void org_xml_sax_helpers_XMLFilterImpl___INIT____org_xml_sax_XMLReader(JAVA_OBJE
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 704)
+    XMLVM_CHECK_NPE(1)
     ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.parent_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 705)
+    XMLVM_CHECK_NPE(1)
     ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.locator_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 706)
+    XMLVM_CHECK_NPE(1)
     ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.entityResolver_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 707)
+    XMLVM_CHECK_NPE(1)
     ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.dtdHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 708)
+    XMLVM_CHECK_NPE(1)
     ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 709)
+    XMLVM_CHECK_NPE(1)
     ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.errorHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 90)
     //org_xml_sax_helpers_XMLFilterImpl_setParent___org_xml_sax_XMLReader[31]
@@ -978,6 +990,7 @@ void org_xml_sax_helpers_XMLFilterImpl_setParent___org_xml_sax_XMLReader(JAVA_OB
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 115)
+    XMLVM_CHECK_NPE(0)
     ((org_xml_sax_helpers_XMLFilterImpl*) _r0.o)->fields.org_xml_sax_helpers_XMLFilterImpl.parent_ = _r1.o;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 116)
     XMLVM_EXIT_METHOD()
@@ -993,6 +1006,7 @@ JAVA_OBJECT org_xml_sax_helpers_XMLFilterImpl_getParent__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 127)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.parent_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1013,9 +1027,11 @@ void org_xml_sax_helpers_XMLFilterImpl_setFeature___java_lang_String_boolean(JAV
     _r4.o = n1;
     _r5.i = n2;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 153)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r3.o)->fields.org_xml_sax_helpers_XMLFilterImpl.parent_;
     if (_r0.o == JAVA_NULL) goto label10;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 154)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r3.o)->fields.org_xml_sax_helpers_XMLFilterImpl.parent_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setFeature___java_lang_String_boolean])(_r0.o, _r4.o, _r5.i);
@@ -1053,9 +1069,11 @@ JAVA_BOOLEAN org_xml_sax_helpers_XMLFilterImpl_getFeature___java_lang_String(JAV
     _r3.o = me;
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 177)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r3.o)->fields.org_xml_sax_helpers_XMLFilterImpl.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 178)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r3.o)->fields.org_xml_sax_helpers_XMLFilterImpl.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_getFeature___java_lang_String])(_r0.o, _r4.o);
@@ -1094,9 +1112,11 @@ void org_xml_sax_helpers_XMLFilterImpl_setProperty___java_lang_String_java_lang_
     _r4.o = n1;
     _r5.o = n2;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 201)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r3.o)->fields.org_xml_sax_helpers_XMLFilterImpl.parent_;
     if (_r0.o == JAVA_NULL) goto label10;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 202)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r3.o)->fields.org_xml_sax_helpers_XMLFilterImpl.parent_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setProperty___java_lang_String_java_lang_Object])(_r0.o, _r4.o, _r5.o);
@@ -1134,9 +1154,11 @@ JAVA_OBJECT org_xml_sax_helpers_XMLFilterImpl_getProperty___java_lang_String(JAV
     _r3.o = me;
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 223)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r3.o)->fields.org_xml_sax_helpers_XMLFilterImpl.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 224)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r3.o)->fields.org_xml_sax_helpers_XMLFilterImpl.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_getProperty___java_lang_String])(_r0.o, _r4.o);
@@ -1170,6 +1192,7 @@ void org_xml_sax_helpers_XMLFilterImpl_setEntityResolver___org_xml_sax_EntityRes
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 238)
+    XMLVM_CHECK_NPE(0)
     ((org_xml_sax_helpers_XMLFilterImpl*) _r0.o)->fields.org_xml_sax_helpers_XMLFilterImpl.entityResolver_ = _r1.o;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 239)
     XMLVM_EXIT_METHOD()
@@ -1185,6 +1208,7 @@ JAVA_OBJECT org_xml_sax_helpers_XMLFilterImpl_getEntityResolver__(JAVA_OBJECT me
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 249)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.entityResolver_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1200,6 +1224,7 @@ void org_xml_sax_helpers_XMLFilterImpl_setDTDHandler___org_xml_sax_DTDHandler(JA
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 260)
+    XMLVM_CHECK_NPE(0)
     ((org_xml_sax_helpers_XMLFilterImpl*) _r0.o)->fields.org_xml_sax_helpers_XMLFilterImpl.dtdHandler_ = _r1.o;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 261)
     XMLVM_EXIT_METHOD()
@@ -1215,6 +1240,7 @@ JAVA_OBJECT org_xml_sax_helpers_XMLFilterImpl_getDTDHandler__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 271)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.dtdHandler_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1230,6 +1256,7 @@ void org_xml_sax_helpers_XMLFilterImpl_setContentHandler___org_xml_sax_ContentHa
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 282)
+    XMLVM_CHECK_NPE(0)
     ((org_xml_sax_helpers_XMLFilterImpl*) _r0.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_ = _r1.o;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 283)
     XMLVM_EXIT_METHOD()
@@ -1245,6 +1272,7 @@ JAVA_OBJECT org_xml_sax_helpers_XMLFilterImpl_getContentHandler__(JAVA_OBJECT me
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 293)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1260,6 +1288,7 @@ void org_xml_sax_helpers_XMLFilterImpl_setErrorHandler___org_xml_sax_ErrorHandle
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 304)
+    XMLVM_CHECK_NPE(0)
     ((org_xml_sax_helpers_XMLFilterImpl*) _r0.o)->fields.org_xml_sax_helpers_XMLFilterImpl.errorHandler_ = _r1.o;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 305)
     XMLVM_EXIT_METHOD()
@@ -1275,6 +1304,7 @@ JAVA_OBJECT org_xml_sax_helpers_XMLFilterImpl_getErrorHandler__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 315)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.errorHandler_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1294,6 +1324,7 @@ void org_xml_sax_helpers_XMLFilterImpl_parse___org_xml_sax_InputSource(JAVA_OBJE
     XMLVM_CHECK_NPE(1)
     org_xml_sax_helpers_XMLFilterImpl_setupParse__(_r1.o);
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 333)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.parent_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_parse___org_xml_sax_InputSource])(_r0.o, _r2.o);
@@ -1337,9 +1368,11 @@ JAVA_OBJECT org_xml_sax_helpers_XMLFilterImpl_resolveEntity___java_lang_String_j
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 375)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.entityResolver_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 376)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.entityResolver_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_EntityResolver_resolveEntity___java_lang_String_java_lang_String])(_r0.o, _r2.o, _r3.o);
@@ -1367,9 +1400,11 @@ void org_xml_sax_helpers_XMLFilterImpl_notationDecl___java_lang_String_java_lang
     _r3.o = n2;
     _r4.o = n3;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 401)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.dtdHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 402)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.dtdHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_DTDHandler_notationDecl___java_lang_String_java_lang_String_java_lang_String])(_r0.o, _r2.o, _r3.o, _r4.o);
@@ -1396,9 +1431,11 @@ void org_xml_sax_helpers_XMLFilterImpl_unparsedEntityDecl___java_lang_String_jav
     _r4.o = n3;
     _r5.o = n4;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 421)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.dtdHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 422)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.dtdHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_DTDHandler_unparsedEntityDecl___java_lang_String_java_lang_String_java_lang_String_java_lang_String])(_r0.o, _r2.o, _r3.o, _r4.o, _r5.o);
@@ -1419,11 +1456,14 @@ void org_xml_sax_helpers_XMLFilterImpl_setDocumentLocator___org_xml_sax_Locator(
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 441)
+    XMLVM_CHECK_NPE(1)
     ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.locator_ = _r2.o;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 442)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 443)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_setDocumentLocator___org_xml_sax_Locator])(_r0.o, _r2.o);
@@ -1442,9 +1482,11 @@ void org_xml_sax_helpers_XMLFilterImpl_startDocument__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 457)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 458)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_startDocument__])(_r0.o);
@@ -1463,9 +1505,11 @@ void org_xml_sax_helpers_XMLFilterImpl_endDocument__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 472)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 473)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_endDocument__])(_r0.o);
@@ -1488,9 +1532,11 @@ void org_xml_sax_helpers_XMLFilterImpl_startPrefixMapping___java_lang_String_jav
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 489)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 490)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_startPrefixMapping___java_lang_String_java_lang_String])(_r0.o, _r2.o, _r3.o);
@@ -1511,9 +1557,11 @@ void org_xml_sax_helpers_XMLFilterImpl_endPrefixMapping___java_lang_String(JAVA_
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 505)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 506)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_endPrefixMapping___java_lang_String])(_r0.o, _r2.o);
@@ -1540,9 +1588,11 @@ void org_xml_sax_helpers_XMLFilterImpl_startElement___java_lang_String_java_lang
     _r4.o = n3;
     _r5.o = n4;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 526)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 527)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_startElement___java_lang_String_java_lang_String_java_lang_String_org_xml_sax_Attributes])(_r0.o, _r2.o, _r3.o, _r4.o, _r5.o);
@@ -1567,9 +1617,11 @@ void org_xml_sax_helpers_XMLFilterImpl_endElement___java_lang_String_java_lang_S
     _r3.o = n2;
     _r4.o = n3;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 545)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 546)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_endElement___java_lang_String_java_lang_String_java_lang_String])(_r0.o, _r2.o, _r3.o, _r4.o);
@@ -1594,9 +1646,11 @@ void org_xml_sax_helpers_XMLFilterImpl_characters___char_1ARRAY_int_int(JAVA_OBJ
     _r3.i = n2;
     _r4.i = n3;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 563)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 564)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_characters___char_1ARRAY_int_int])(_r0.o, _r2.o, _r3.i, _r4.i);
@@ -1621,9 +1675,11 @@ void org_xml_sax_helpers_XMLFilterImpl_ignorableWhitespace___char_1ARRAY_int_int
     _r3.i = n2;
     _r4.i = n3;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 581)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 582)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_ignorableWhitespace___char_1ARRAY_int_int])(_r0.o, _r2.o, _r3.i, _r4.i);
@@ -1646,9 +1702,11 @@ void org_xml_sax_helpers_XMLFilterImpl_processingInstruction___java_lang_String_
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 598)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 599)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_processingInstruction___java_lang_String_java_lang_String])(_r0.o, _r2.o, _r3.o);
@@ -1669,9 +1727,11 @@ void org_xml_sax_helpers_XMLFilterImpl_skippedEntity___java_lang_String(JAVA_OBJ
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 614)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 615)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.contentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_skippedEntity___java_lang_String])(_r0.o, _r2.o);
@@ -1692,9 +1752,11 @@ void org_xml_sax_helpers_XMLFilterImpl_warning___org_xml_sax_SAXParseException(J
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 636)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.errorHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 637)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.errorHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ErrorHandler_warning___org_xml_sax_SAXParseException])(_r0.o, _r2.o);
@@ -1715,9 +1777,11 @@ void org_xml_sax_helpers_XMLFilterImpl_error___org_xml_sax_SAXParseException(JAV
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 652)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.errorHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 653)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.errorHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ErrorHandler_error___org_xml_sax_SAXParseException])(_r0.o, _r2.o);
@@ -1738,9 +1802,11 @@ void org_xml_sax_helpers_XMLFilterImpl_fatalError___org_xml_sax_SAXParseExceptio
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 668)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.errorHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 669)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r1.o)->fields.org_xml_sax_helpers_XMLFilterImpl.errorHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ErrorHandler_fatalError___org_xml_sax_SAXParseException])(_r0.o, _r2.o);
@@ -1760,6 +1826,7 @@ void org_xml_sax_helpers_XMLFilterImpl_setupParse__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 689)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r2.o)->fields.org_xml_sax_helpers_XMLFilterImpl.parent_;
     if (_r0.o != JAVA_NULL) goto label12;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 690)
@@ -1771,18 +1838,22 @@ void org_xml_sax_helpers_XMLFilterImpl_setupParse__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 692)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r2.o)->fields.org_xml_sax_helpers_XMLFilterImpl.parent_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setEntityResolver___org_xml_sax_EntityResolver])(_r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 693)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r2.o)->fields.org_xml_sax_helpers_XMLFilterImpl.parent_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setDTDHandler___org_xml_sax_DTDHandler])(_r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 694)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r2.o)->fields.org_xml_sax_helpers_XMLFilterImpl.parent_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setContentHandler___org_xml_sax_ContentHandler])(_r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("XMLFilterImpl.java", 695)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_XMLFilterImpl*) _r2.o)->fields.org_xml_sax_helpers_XMLFilterImpl.parent_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setErrorHandler___org_xml_sax_ErrorHandler])(_r0.o, _r2.o);

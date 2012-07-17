@@ -291,22 +291,31 @@ void java_util_LinkedList_ReverseLinkIterator___INIT____java_util_LinkedList_jav
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("LinkedList.java", 197)
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedList_ReverseLinkIterator*) _r1.o)->fields.java_util_LinkedList_ReverseLinkIterator.this_0_ = _r2.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 192)
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("LinkedList.java", 193)
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedList_ReverseLinkIterator*) _r1.o)->fields.java_util_LinkedList_ReverseLinkIterator.list_ = _r3.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 194)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_LinkedList_ReverseLinkIterator*) _r1.o)->fields.java_util_LinkedList_ReverseLinkIterator.list_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_AbstractList*) _r0.o)->fields.java_util_AbstractList.modCount_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedList_ReverseLinkIterator*) _r1.o)->fields.java_util_LinkedList_ReverseLinkIterator.expectedModCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 195)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_LinkedList_ReverseLinkIterator*) _r1.o)->fields.java_util_LinkedList_ReverseLinkIterator.list_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList*) _r0.o)->fields.java_util_LinkedList.voidLink_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedList_ReverseLinkIterator*) _r1.o)->fields.java_util_LinkedList_ReverseLinkIterator.link_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 196)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedList_ReverseLinkIterator*) _r1.o)->fields.java_util_LinkedList_ReverseLinkIterator.canRemove_ = _r0.i;
     XMLVM_EXIT_METHOD()
     return;
@@ -322,9 +331,13 @@ JAVA_BOOLEAN java_util_LinkedList_ReverseLinkIterator_hasNext__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("LinkedList.java", 200)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList_ReverseLinkIterator*) _r2.o)->fields.java_util_LinkedList_ReverseLinkIterator.link_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_LinkedList_ReverseLinkIterator*) _r2.o)->fields.java_util_LinkedList_ReverseLinkIterator.list_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_LinkedList*) _r1.o)->fields.java_util_LinkedList.voidLink_;
     if (_r0.o == _r1.o) goto label12;
     _r0.i = 1;
@@ -346,8 +359,11 @@ JAVA_OBJECT java_util_LinkedList_ReverseLinkIterator_next__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("LinkedList.java", 204)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_LinkedList_ReverseLinkIterator*) _r2.o)->fields.java_util_LinkedList_ReverseLinkIterator.expectedModCount_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_LinkedList_ReverseLinkIterator*) _r2.o)->fields.java_util_LinkedList_ReverseLinkIterator.list_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_AbstractList*) _r1.o)->fields.java_util_AbstractList.modCount_;
     if (_r0.i != _r1.i) goto label34;
     XMLVM_SOURCE_POSITION("LinkedList.java", 205)
@@ -356,14 +372,20 @@ JAVA_OBJECT java_util_LinkedList_ReverseLinkIterator_next__(JAVA_OBJECT me)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) ((java_util_LinkedList_ReverseLinkIterator*) _r2.o)->tib->vtable[6])(_r2.o);
     if (_r0.i == 0) goto label28;
     XMLVM_SOURCE_POSITION("LinkedList.java", 206)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList_ReverseLinkIterator*) _r2.o)->fields.java_util_LinkedList_ReverseLinkIterator.link_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_ReverseLinkIterator*) _r2.o)->fields.java_util_LinkedList_ReverseLinkIterator.link_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 207)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(2)
     ((java_util_LinkedList_ReverseLinkIterator*) _r2.o)->fields.java_util_LinkedList_ReverseLinkIterator.canRemove_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 208)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_LinkedList_ReverseLinkIterator*) _r2.o)->fields.java_util_LinkedList_ReverseLinkIterator.link_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -392,42 +414,62 @@ void java_util_LinkedList_ReverseLinkIterator_remove__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("LinkedList.java", 217)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_LinkedList_ReverseLinkIterator*) _r3.o)->fields.java_util_LinkedList_ReverseLinkIterator.expectedModCount_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_LinkedList_ReverseLinkIterator*) _r3.o)->fields.java_util_LinkedList_ReverseLinkIterator.list_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_AbstractList*) _r1.o)->fields.java_util_AbstractList.modCount_;
     if (_r0.i != _r1.i) goto label58;
     XMLVM_SOURCE_POSITION("LinkedList.java", 218)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_LinkedList_ReverseLinkIterator*) _r3.o)->fields.java_util_LinkedList_ReverseLinkIterator.canRemove_;
     if (_r0.i == 0) goto label52;
     XMLVM_SOURCE_POSITION("LinkedList.java", 219)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_LinkedList_ReverseLinkIterator*) _r3.o)->fields.java_util_LinkedList_ReverseLinkIterator.link_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 220)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_LinkedList_ReverseLinkIterator*) _r3.o)->fields.java_util_LinkedList_ReverseLinkIterator.link_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.next_;
     XMLVM_SOURCE_POSITION("LinkedList.java", 221)
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 222)
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedList_Link*) _r1.o)->fields.java_util_LinkedList_Link.previous_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 223)
+    XMLVM_CHECK_NPE(3)
     ((java_util_LinkedList_ReverseLinkIterator*) _r3.o)->fields.java_util_LinkedList_ReverseLinkIterator.link_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 224)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_LinkedList_ReverseLinkIterator*) _r3.o)->fields.java_util_LinkedList_ReverseLinkIterator.list_;
+    XMLVM_CHECK_NPE(0)
     _r1.i = ((java_util_LinkedList*) _r0.o)->fields.java_util_LinkedList.size_;
     _r2.i = 1;
     _r1.i = _r1.i - _r2.i;
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList*) _r0.o)->fields.java_util_LinkedList.size_ = _r1.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 225)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_LinkedList_ReverseLinkIterator*) _r3.o)->fields.java_util_LinkedList_ReverseLinkIterator.list_;
+    XMLVM_CHECK_NPE(0)
     _r1.i = ((java_util_AbstractList*) _r0.o)->fields.java_util_AbstractList.modCount_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(0)
     ((java_util_AbstractList*) _r0.o)->fields.java_util_AbstractList.modCount_ = _r1.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 226)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_LinkedList_ReverseLinkIterator*) _r3.o)->fields.java_util_LinkedList_ReverseLinkIterator.expectedModCount_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_util_LinkedList_ReverseLinkIterator*) _r3.o)->fields.java_util_LinkedList_ReverseLinkIterator.expectedModCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 227)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(3)
     ((java_util_LinkedList_ReverseLinkIterator*) _r3.o)->fields.java_util_LinkedList_ReverseLinkIterator.canRemove_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedList.java", 228)
     XMLVM_EXIT_METHOD()

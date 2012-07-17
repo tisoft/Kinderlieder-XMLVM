@@ -758,9 +758,11 @@ JAVA_OBJECT java_nio_IntBuffer_wrap___int_1ARRAY_int_int(JAVA_OBJECT n1, JAVA_IN
     XMLVM_SOURCE_POSITION("IntBuffer.java", 90)
     _r0.o = java_nio_BufferFactory_newIntBuffer___int_1ARRAY(_r4.o);
     XMLVM_SOURCE_POSITION("IntBuffer.java", 91)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.position_ = _r5.i;
     XMLVM_SOURCE_POSITION("IntBuffer.java", 92)
     _r1.i = _r5.i + _r6.i;
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.limit_ = _r1.i;
     XMLVM_SOURCE_POSITION("IntBuffer.java", 94)
     XMLVM_EXIT_METHOD()
@@ -841,8 +843,10 @@ JAVA_INT java_nio_IntBuffer_compareTo___java_nio_IntBuffer(JAVA_OBJECT me, JAVA_
     _r0.i = java_nio_Buffer_remaining__(_r6.o);
     label14:;
     XMLVM_SOURCE_POSITION("IntBuffer.java", 180)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_nio_Buffer*) _r6.o)->fields.java_nio_Buffer.position_;
     XMLVM_SOURCE_POSITION("IntBuffer.java", 181)
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_nio_Buffer*) _r7.o)->fields.java_nio_Buffer.position_;
     _r5 = _r2;
     _r2 = _r0;
@@ -932,14 +936,17 @@ JAVA_BOOLEAN java_nio_IntBuffer_equals___java_lang_Object(JAVA_OBJECT me, JAVA_O
     goto label7;
     label22:;
     XMLVM_SOURCE_POSITION("IntBuffer.java", 234)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_nio_Buffer*) _r6.o)->fields.java_nio_Buffer.position_;
     XMLVM_SOURCE_POSITION("IntBuffer.java", 235)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_nio_Buffer*) _r7.o)->fields.java_nio_Buffer.position_;
     _r2 = _r0;
     _r0 = _r5;
     label28:;
     XMLVM_SOURCE_POSITION("IntBuffer.java", 237)
     if (_r0.i == 0) goto label7;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_nio_Buffer*) _r6.o)->fields.java_nio_Buffer.limit_;
     if (_r2.i >= _r3.i) goto label7;
     XMLVM_SOURCE_POSITION("IntBuffer.java", 238)
@@ -1078,6 +1085,7 @@ JAVA_INT java_nio_IntBuffer_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("IntBuffer.java", 332)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
     XMLVM_SOURCE_POSITION("IntBuffer.java", 333)
     _r1.i = 0;
@@ -1086,6 +1094,7 @@ JAVA_INT java_nio_IntBuffer_hashCode__(JAVA_OBJECT me)
     _r0 = _r3;
     label6:;
     XMLVM_SOURCE_POSITION("IntBuffer.java", 334)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.limit_;
     if (_r1.i < _r2.i) goto label11;
     XMLVM_SOURCE_POSITION("IntBuffer.java", 337)

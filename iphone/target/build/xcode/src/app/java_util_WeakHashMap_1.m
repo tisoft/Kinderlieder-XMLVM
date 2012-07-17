@@ -329,6 +329,7 @@ void java_util_WeakHashMap_1___INIT____java_util_WeakHashMap(JAVA_OBJECT me, JAV
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_WeakHashMap_1*) _r0.o)->fields.java_util_WeakHashMap_1.this_0_ = _r1.o;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 294)
     XMLVM_CHECK_NPE(0)
@@ -346,6 +347,7 @@ JAVA_INT java_util_WeakHashMap_1_size__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 297)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_WeakHashMap_1*) _r1.o)->fields.java_util_WeakHashMap_1.this_0_;
     //java_util_WeakHashMap_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -363,6 +365,7 @@ void java_util_WeakHashMap_1_clear__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 302)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_WeakHashMap_1*) _r1.o)->fields.java_util_WeakHashMap_1.this_0_;
     //java_util_WeakHashMap_clear__[6]
     XMLVM_CHECK_NPE(0)
@@ -389,6 +392,7 @@ JAVA_BOOLEAN java_util_WeakHashMap_1_remove___java_lang_Object(JAVA_OBJECT me, J
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_WeakHashMap_1*) _r2.o)->tib->vtable[10])(_r2.o, _r3.o);
     if (_r0.i == 0) goto label19;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 308)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_WeakHashMap_1*) _r2.o)->fields.java_util_WeakHashMap_1.this_0_;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 309)
     _r3.o = _r3.o;
@@ -425,6 +429,7 @@ JAVA_BOOLEAN java_util_WeakHashMap_1_contains___java_lang_Object(JAVA_OBJECT me,
     _r1.i = XMLVM_ISA(_r4.o, __CLASS_java_util_Map_Entry);
     if (_r1.i == 0) goto label35;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 318)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_WeakHashMap_1*) _r3.o)->fields.java_util_WeakHashMap_1.this_0_;
     _r0 = _r4;
     _r0.o = _r0.o;
@@ -442,6 +447,7 @@ JAVA_BOOLEAN java_util_WeakHashMap_1_contains___java_lang_Object(JAVA_OBJECT me,
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_WeakHashMap_Entry*) _r1.o)->tib->vtable[6])(_r1.o);
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 322)
     if (_r2.o != JAVA_NULL) goto label30;
+    XMLVM_CHECK_NPE(1)
     _r2.i = ((java_util_WeakHashMap_Entry*) _r1.o)->fields.java_util_WeakHashMap_Entry.isNull_;
     if (_r2.i == 0) goto label35;
     label30:;
@@ -470,6 +476,7 @@ JAVA_OBJECT java_util_WeakHashMap_1_iterator__(JAVA_OBJECT me)
     _r3.o = me;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 332)
     _r0.o = __NEW_java_util_WeakHashMap_HashIterator();
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_WeakHashMap_1*) _r3.o)->fields.java_util_WeakHashMap_1.this_0_;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 333)
     _r2.o = __NEW_java_util_WeakHashMap_1_1();

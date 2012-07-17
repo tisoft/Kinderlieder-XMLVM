@@ -251,18 +251,23 @@ void java_util_regex_IntArrHash___INIT____int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("IntArrHash.java", 35)
     _r0.i = _r0.i << 1;
     _r0.i = _r0.i | 1;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_IntArrHash*) _r1.o)->fields.java_util_regex_IntArrHash.mask_ = _r0.i;
     XMLVM_SOURCE_POSITION("IntArrHash.java", 36)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_IntArrHash*) _r1.o)->fields.java_util_regex_IntArrHash.mask_;
     _r0.i = _r0.i + 1;
     if (!__TIB_int.classInitialized) __INIT_int();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_int, _r0.i);
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_IntArrHash*) _r1.o)->fields.java_util_regex_IntArrHash.table_ = _r0.o;
     XMLVM_SOURCE_POSITION("IntArrHash.java", 37)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_IntArrHash*) _r1.o)->fields.java_util_regex_IntArrHash.mask_;
     _r0.i = _r0.i + 1;
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r0.i);
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_IntArrHash*) _r1.o)->fields.java_util_regex_IntArrHash.values_ = _r0.o;
     XMLVM_SOURCE_POSITION("IntArrHash.java", 38)
     XMLVM_EXIT_METHOD()
@@ -292,6 +297,7 @@ void java_util_regex_IntArrHash_put___int_int_1ARRAY(JAVA_OBJECT me, JAVA_INT n1
     XMLVM_SOURCE_POSITION("IntArrHash.java", 41)
     _r0.i = 0;
     XMLVM_SOURCE_POSITION("IntArrHash.java", 42)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_regex_IntArrHash*) _r4.o)->fields.java_util_regex_IntArrHash.mask_;
     _r1.i = _r1.i & _r5.i;
     _r3 = _r1;
@@ -299,12 +305,14 @@ void java_util_regex_IntArrHash_put___int_int_1ARRAY(JAVA_OBJECT me, JAVA_INT n1
     _r0 = _r3;
     label7:;
     XMLVM_SOURCE_POSITION("IntArrHash.java", 45)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_regex_IntArrHash*) _r4.o)->fields.java_util_regex_IntArrHash.table_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
     _r2.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
     if (_r2.i == 0) goto label19;
     XMLVM_SOURCE_POSITION("IntArrHash.java", 46)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_regex_IntArrHash*) _r4.o)->fields.java_util_regex_IntArrHash.table_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
@@ -312,11 +320,13 @@ void java_util_regex_IntArrHash_put___int_int_1ARRAY(JAVA_OBJECT me, JAVA_INT n1
     if (_r2.i != _r5.i) goto label28;
     label19:;
     XMLVM_SOURCE_POSITION("IntArrHash.java", 47)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_regex_IntArrHash*) _r4.o)->fields.java_util_regex_IntArrHash.table_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i] = _r5.i;
     XMLVM_SOURCE_POSITION("IntArrHash.java", 48)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_regex_IntArrHash*) _r4.o)->fields.java_util_regex_IntArrHash.values_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -328,10 +338,12 @@ void java_util_regex_IntArrHash_put___int_int_1ARRAY(JAVA_OBJECT me, JAVA_INT n1
     XMLVM_SOURCE_POSITION("IntArrHash.java", 51)
     _r1.i = _r1.i + 1;
     XMLVM_SOURCE_POSITION("IntArrHash.java", 52)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_regex_IntArrHash*) _r4.o)->fields.java_util_regex_IntArrHash.mask_;
     _r1.i = _r1.i & _r2.i;
     _r0.i = _r0.i + _r1.i;
     XMLVM_SOURCE_POSITION("IntArrHash.java", 55)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_regex_IntArrHash*) _r4.o)->fields.java_util_regex_IntArrHash.mask_;
     _r0.i = _r0.i & _r2.i;
     XMLVM_SOURCE_POSITION("IntArrHash.java", 44)
@@ -352,6 +364,7 @@ JAVA_OBJECT java_util_regex_IntArrHash_get___int(JAVA_OBJECT me, JAVA_INT n1)
     _r4.o = me;
     _r5.i = n1;
     XMLVM_SOURCE_POSITION("IntArrHash.java", 60)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_regex_IntArrHash*) _r4.o)->fields.java_util_regex_IntArrHash.mask_;
     _r0.i = _r0.i & _r5.i;
     _r1.i = 0;
@@ -361,6 +374,7 @@ JAVA_OBJECT java_util_regex_IntArrHash_get___int(JAVA_OBJECT me, JAVA_INT n1)
     label7:;
     XMLVM_SOURCE_POSITION("IntArrHash.java", 61)
     XMLVM_SOURCE_POSITION("IntArrHash.java", 65)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_regex_IntArrHash*) _r4.o)->fields.java_util_regex_IntArrHash.table_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -376,6 +390,7 @@ JAVA_OBJECT java_util_regex_IntArrHash_get___int(JAVA_OBJECT me, JAVA_INT n1)
     label15:;
     XMLVM_SOURCE_POSITION("IntArrHash.java", 71)
     if (_r2.i != _r5.i) goto label25;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_IntArrHash*) _r4.o)->fields.java_util_regex_IntArrHash.values_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -387,10 +402,12 @@ JAVA_OBJECT java_util_regex_IntArrHash_get___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("IntArrHash.java", 75)
     _r0.i = _r0.i + 1;
     XMLVM_SOURCE_POSITION("IntArrHash.java", 76)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_regex_IntArrHash*) _r4.o)->fields.java_util_regex_IntArrHash.mask_;
     _r0.i = _r0.i & _r2.i;
     _r1.i = _r1.i + _r0.i;
     XMLVM_SOURCE_POSITION("IntArrHash.java", 79)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_regex_IntArrHash*) _r4.o)->fields.java_util_regex_IntArrHash.mask_;
     _r1.i = _r1.i & _r2.i;
     XMLVM_SOURCE_POSITION("IntArrHash.java", 64)

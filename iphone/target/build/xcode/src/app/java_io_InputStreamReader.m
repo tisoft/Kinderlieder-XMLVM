@@ -430,12 +430,15 @@ void java_io_InputStreamReader___INIT____java_io_InputStream(JAVA_OBJECT me, JAV
     XMLVM_CHECK_NPE(4)
     java_io_Reader___INIT____java_lang_Object(_r4.o, _r5.o);
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 49)
+    XMLVM_CHECK_NPE(4)
     ((java_io_InputStreamReader*) _r4.o)->fields.java_io_InputStreamReader.endOfInput_ = _r3.i;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 53)
     _r0.i = 8192;
     _r0.o = java_nio_ByteBuffer_allocate___int(_r0.i);
+    XMLVM_CHECK_NPE(4)
     ((java_io_InputStreamReader*) _r4.o)->fields.java_io_InputStreamReader.bytes_ = _r0.o;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 66)
+    XMLVM_CHECK_NPE(4)
     ((java_io_InputStreamReader*) _r4.o)->fields.java_io_InputStreamReader.in_ = _r5.o;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 68)
     _r0.o = __NEW_org_apache_harmony_luni_util_PriviAction();
@@ -461,8 +464,10 @@ void java_io_InputStreamReader___INIT____java_io_InputStream(JAVA_OBJECT me, JAV
     XMLVM_CHECK_NPE(0)
     _r0.o = java_nio_charset_CharsetDecoder_onUnmappableCharacter___java_nio_charset_CodingErrorAction(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 70)
+    XMLVM_CHECK_NPE(4)
     ((java_io_InputStreamReader*) _r4.o)->fields.java_io_InputStreamReader.decoder_ = _r0.o;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 73)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_io_InputStreamReader*) _r4.o)->fields.java_io_InputStreamReader.bytes_;
     XMLVM_CHECK_NPE(0)
     java_nio_Buffer_limit___int(_r0.o, _r3.i);
@@ -490,10 +495,12 @@ void java_io_InputStreamReader___INIT____java_io_InputStream_java_lang_String(JA
     XMLVM_CHECK_NPE(3)
     java_io_Reader___INIT____java_lang_Object(_r3.o, _r4.o);
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 49)
+    XMLVM_CHECK_NPE(3)
     ((java_io_InputStreamReader*) _r3.o)->fields.java_io_InputStreamReader.endOfInput_ = _r2.i;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 53)
     _r0.i = 8192;
     _r0.o = java_nio_ByteBuffer_allocate___int(_r0.i);
+    XMLVM_CHECK_NPE(3)
     ((java_io_InputStreamReader*) _r3.o)->fields.java_io_InputStreamReader.bytes_ = _r0.o;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 94)
     if (_r5.o != JAVA_NULL) goto label22;
@@ -504,6 +511,7 @@ void java_io_InputStreamReader___INIT____java_io_InputStream_java_lang_String(JA
     XMLVM_THROW_CUSTOM(_r0.o)
     label22:;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 97)
+    XMLVM_CHECK_NPE(3)
     ((java_io_InputStreamReader*) _r3.o)->fields.java_io_InputStreamReader.in_ = _r4.o;
     XMLVM_TRY_BEGIN(w13460aaab6b1c22)
     // Begin try
@@ -520,6 +528,7 @@ void java_io_InputStreamReader___INIT____java_io_InputStream_java_lang_String(JA
     XMLVM_CHECK_NPE(0)
     _r0.o = java_nio_charset_CharsetDecoder_onUnmappableCharacter___java_nio_charset_CodingErrorAction(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 99)
+    XMLVM_CHECK_NPE(3)
     ((java_io_InputStreamReader*) _r3.o)->fields.java_io_InputStreamReader.decoder_ = _r0.o;
     // End try
     XMLVM_TRY_END
@@ -528,6 +537,7 @@ void java_io_InputStreamReader___INIT____java_io_InputStream_java_lang_String(JA
     XMLVM_CATCH_END(w13460aaab6b1c22)
     XMLVM_RESTORE_EXCEPTION_ENV(w13460aaab6b1c22)
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 106)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_InputStreamReader*) _r3.o)->fields.java_io_InputStreamReader.bytes_;
     XMLVM_CHECK_NPE(0)
     java_nio_Buffer_limit___int(_r0.o, _r2.i);
@@ -567,19 +577,24 @@ void java_io_InputStreamReader___INIT____java_io_InputStream_java_nio_charset_Ch
     XMLVM_CHECK_NPE(2)
     java_io_Reader___INIT____java_lang_Object(_r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 49)
+    XMLVM_CHECK_NPE(2)
     ((java_io_InputStreamReader*) _r2.o)->fields.java_io_InputStreamReader.endOfInput_ = _r1.i;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 53)
     _r0.i = 8192;
     _r0.o = java_nio_ByteBuffer_allocate___int(_r0.i);
+    XMLVM_CHECK_NPE(2)
     ((java_io_InputStreamReader*) _r2.o)->fields.java_io_InputStreamReader.bytes_ = _r0.o;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 120)
     XMLVM_CHECK_NPE(4)
     java_nio_charset_CharsetDecoder_averageCharsPerByte__(_r4.o);
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 121)
+    XMLVM_CHECK_NPE(2)
     ((java_io_InputStreamReader*) _r2.o)->fields.java_io_InputStreamReader.in_ = _r3.o;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 122)
+    XMLVM_CHECK_NPE(2)
     ((java_io_InputStreamReader*) _r2.o)->fields.java_io_InputStreamReader.decoder_ = _r4.o;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 123)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_InputStreamReader*) _r2.o)->fields.java_io_InputStreamReader.bytes_;
     XMLVM_CHECK_NPE(0)
     java_nio_Buffer_limit___int(_r0.o, _r1.i);
@@ -607,12 +622,15 @@ void java_io_InputStreamReader___INIT____java_io_InputStream_java_nio_charset_Ch
     XMLVM_CHECK_NPE(3)
     java_io_Reader___INIT____java_lang_Object(_r3.o, _r4.o);
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 49)
+    XMLVM_CHECK_NPE(3)
     ((java_io_InputStreamReader*) _r3.o)->fields.java_io_InputStreamReader.endOfInput_ = _r2.i;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 53)
     _r0.i = 8192;
     _r0.o = java_nio_ByteBuffer_allocate___int(_r0.i);
+    XMLVM_CHECK_NPE(3)
     ((java_io_InputStreamReader*) _r3.o)->fields.java_io_InputStreamReader.bytes_ = _r0.o;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 137)
+    XMLVM_CHECK_NPE(3)
     ((java_io_InputStreamReader*) _r3.o)->fields.java_io_InputStreamReader.in_ = _r4.o;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 139)
     //java_nio_charset_Charset_newDecoder__[8]
@@ -626,8 +644,10 @@ void java_io_InputStreamReader___INIT____java_io_InputStream_java_nio_charset_Ch
     XMLVM_CHECK_NPE(0)
     _r0.o = java_nio_charset_CharsetDecoder_onUnmappableCharacter___java_nio_charset_CodingErrorAction(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 138)
+    XMLVM_CHECK_NPE(3)
     ((java_io_InputStreamReader*) _r3.o)->fields.java_io_InputStreamReader.decoder_ = _r0.o;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 141)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_InputStreamReader*) _r3.o)->fields.java_io_InputStreamReader.bytes_;
     XMLVM_CHECK_NPE(0)
     java_nio_Buffer_limit___int(_r0.o, _r2.i);
@@ -646,23 +666,28 @@ void java_io_InputStreamReader_close__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 153)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_Reader*) _r2.o)->fields.java_io_Reader.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 154)
     _r1.o = JAVA_NULL;
     XMLVM_TRY_BEGIN(w13460aaab9b1b7)
     // Begin try
+    XMLVM_CHECK_NPE(2)
     ((java_io_InputStreamReader*) _r2.o)->fields.java_io_InputStreamReader.decoder_ = _r1.o;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 155)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_InputStreamReader*) _r2.o)->fields.java_io_InputStreamReader.in_;
     if (_r1.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w13460aaab9b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w13460aaab9b1b7, sizeof(XMLVM_JMP_BUF)); goto label18; };
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 156)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_InputStreamReader*) _r2.o)->fields.java_io_InputStreamReader.in_;
     //java_io_InputStream_close__[7]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT)) ((java_io_InputStream*) _r1.o)->tib->vtable[7])(_r1.o);
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 157)
     _r1.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(2)
     ((java_io_InputStreamReader*) _r2.o)->fields.java_io_InputStreamReader.in_ = _r1.o;
     // End try
     XMLVM_TRY_END
@@ -718,6 +743,7 @@ JAVA_OBJECT java_io_InputStreamReader_getEncoding__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label8:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_InputStreamReader*) _r1.o)->fields.java_io_InputStreamReader.decoder_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_nio_charset_CharsetDecoder_charset__(_r0.o);
@@ -741,6 +767,7 @@ JAVA_INT java_io_InputStreamReader_read__(JAVA_OBJECT me)
     _r5.o = me;
     _r4.i = -1;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 190)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_io_Reader*) _r5.o)->fields.java_io_Reader.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w13460aaac11b1b6)
@@ -844,6 +871,7 @@ JAVA_INT java_io_InputStreamReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JA
     _r7.i = 1;
     _r4.i = 0;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 227)
+    XMLVM_CHECK_NPE(10)
     _r0.o = ((java_io_Reader*) _r10.o)->fields.java_io_Reader.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w13460aaac12b1c11)
@@ -943,6 +971,7 @@ JAVA_INT java_io_InputStreamReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JA
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 240)
     _r2.o = java_nio_charset_CoderResult_GET_UNDERFLOW();
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 244)
+    XMLVM_CHECK_NPE(10)
     _r3.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.bytes_;
     XMLVM_CHECK_NPE(3)
     _r3.i = java_nio_Buffer_hasRemaining__(_r3.o);
@@ -986,19 +1015,24 @@ JAVA_INT java_io_InputStreamReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JA
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 289)
     _r3.o = java_nio_charset_CoderResult_GET_UNDERFLOW();
     if (_r2.o != _r3.o) { XMLVM_MEMCPY(curThread_w13460aaac12b1c32->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w13460aaac12b1c32, sizeof(XMLVM_JMP_BUF)); goto label98; };
+    XMLVM_CHECK_NPE(10)
     _r3.i = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.endOfInput_;
     if (_r3.i == 0) { XMLVM_MEMCPY(curThread_w13460aaac12b1c32->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w13460aaac12b1c32, sizeof(XMLVM_JMP_BUF)); goto label98; };
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 290)
+    XMLVM_CHECK_NPE(10)
     _r2.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.decoder_;
+    XMLVM_CHECK_NPE(10)
     _r3.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.bytes_;
     _r4.i = 1;
     XMLVM_CHECK_NPE(2)
     _r2.o = java_nio_charset_CharsetDecoder_decode___java_nio_ByteBuffer_java_nio_CharBuffer_boolean(_r2.o, _r3.o, _r1.o, _r4.i);
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 291)
+    XMLVM_CHECK_NPE(10)
     _r3.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.decoder_;
     XMLVM_CHECK_NPE(3)
     java_nio_charset_CharsetDecoder_flush___java_nio_CharBuffer(_r3.o, _r1.o);
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 292)
+    XMLVM_CHECK_NPE(10)
     _r3.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.decoder_;
     XMLVM_CHECK_NPE(3)
     java_nio_charset_CharsetDecoder_reset__(_r3.o);
@@ -1037,6 +1071,7 @@ JAVA_INT java_io_InputStreamReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w13460aaac12b1c41)
     // Begin try
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 250)
+    XMLVM_CHECK_NPE(10)
     _r2.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.in_;
     //java_io_InputStream_available__[6]
     XMLVM_CHECK_NPE(2)
@@ -1063,24 +1098,30 @@ JAVA_INT java_io_InputStreamReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w13460aaac12b1c49)
     // Begin try
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 259)
+    XMLVM_CHECK_NPE(10)
     _r2.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.bytes_;
     XMLVM_CHECK_NPE(2)
     _r2.i = java_nio_Buffer_capacity__(_r2.o);
+    XMLVM_CHECK_NPE(10)
     _r4.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.bytes_;
     XMLVM_CHECK_NPE(4)
     _r4.i = java_nio_Buffer_limit__(_r4.o);
     _r2.i = _r2.i - _r4.i;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 260)
+    XMLVM_CHECK_NPE(10)
     _r4.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.bytes_;
     //java_nio_ByteBuffer_arrayOffset__[6]
     XMLVM_CHECK_NPE(4)
     _r4.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_nio_ByteBuffer*) _r4.o)->tib->vtable[6])(_r4.o);
+    XMLVM_CHECK_NPE(10)
     _r5.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.bytes_;
     XMLVM_CHECK_NPE(5)
     _r5.i = java_nio_Buffer_limit__(_r5.o);
     _r4.i = _r4.i + _r5.i;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 261)
+    XMLVM_CHECK_NPE(10)
     _r5.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.in_;
+    XMLVM_CHECK_NPE(10)
     _r6.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.bytes_;
     //java_nio_ByteBuffer_array__[7]
     XMLVM_CHECK_NPE(6)
@@ -1092,6 +1133,7 @@ JAVA_INT java_io_InputStreamReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JA
     if (_r2.i != _r8.i) { XMLVM_MEMCPY(curThread_w13460aaac12b1c49->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w13460aaac12b1c49, sizeof(XMLVM_JMP_BUF)); goto label180; };
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 264)
     _r2.i = 1;
+    XMLVM_CHECK_NPE(10)
     ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.endOfInput_ = _r2.i;
     _r2 = _r3;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 265)
@@ -1120,7 +1162,9 @@ JAVA_INT java_io_InputStreamReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JA
     label184:;
     XMLVM_TRY_BEGIN(w13460aaac12b1c53)
     // Begin try
+    XMLVM_CHECK_NPE(10)
     _r3.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.bytes_;
+    XMLVM_CHECK_NPE(10)
     _r4.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.bytes_;
     XMLVM_CHECK_NPE(4)
     _r4.i = java_nio_Buffer_limit__(_r4.o);
@@ -1137,7 +1181,9 @@ JAVA_INT java_io_InputStreamReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w13460aaac12b1c55)
     // Begin try
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 274)
+    XMLVM_CHECK_NPE(10)
     _r2.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.decoder_;
+    XMLVM_CHECK_NPE(10)
     _r3.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.bytes_;
     _r4.i = 0;
     XMLVM_CHECK_NPE(2)
@@ -1147,26 +1193,32 @@ JAVA_INT java_io_InputStreamReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JA
     _r3.i = java_nio_charset_CoderResult_isUnderflow__(_r2.o);
     if (_r3.i == 0) { XMLVM_MEMCPY(curThread_w13460aaac12b1c55->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w13460aaac12b1c55, sizeof(XMLVM_JMP_BUF)); goto label71; };
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 278)
+    XMLVM_CHECK_NPE(10)
     _r3.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.bytes_;
     XMLVM_CHECK_NPE(3)
     _r3.i = java_nio_Buffer_limit__(_r3.o);
+    XMLVM_CHECK_NPE(10)
     _r4.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.bytes_;
     XMLVM_CHECK_NPE(4)
     _r4.i = java_nio_Buffer_capacity__(_r4.o);
     if (_r3.i != _r4.i) { XMLVM_MEMCPY(curThread_w13460aaac12b1c55->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w13460aaac12b1c55, sizeof(XMLVM_JMP_BUF)); goto label247; };
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 279)
+    XMLVM_CHECK_NPE(10)
     _r3.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.bytes_;
     //java_nio_ByteBuffer_compact__[18]
     XMLVM_CHECK_NPE(3)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_ByteBuffer*) _r3.o)->tib->vtable[18])(_r3.o);
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 280)
+    XMLVM_CHECK_NPE(10)
     _r3.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.bytes_;
+    XMLVM_CHECK_NPE(10)
     _r4.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.bytes_;
     XMLVM_CHECK_NPE(4)
     _r4.i = java_nio_Buffer_position__(_r4.o);
     XMLVM_CHECK_NPE(3)
     java_nio_Buffer_limit___int(_r3.o, _r4.i);
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 281)
+    XMLVM_CHECK_NPE(10)
     _r3.o = ((java_io_InputStreamReader*) _r10.o)->fields.java_io_InputStreamReader.bytes_;
     _r4.i = 0;
     XMLVM_CHECK_NPE(3)
@@ -1260,6 +1312,7 @@ JAVA_BOOLEAN java_io_InputStreamReader_isOpen__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 309)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_InputStreamReader*) _r1.o)->fields.java_io_InputStreamReader.in_;
     if (_r0.o == JAVA_NULL) goto label6;
     _r0.i = 1;
@@ -1283,11 +1336,13 @@ JAVA_BOOLEAN java_io_InputStreamReader_ready__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 327)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_Reader*) _r3.o)->fields.java_io_Reader.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w13460aaac14b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 328)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_InputStreamReader*) _r3.o)->fields.java_io_InputStreamReader.in_;
     if (_r1.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w13460aaac14b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w13460aaac14b1b6, sizeof(XMLVM_JMP_BUF)); goto label23; };
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 330)
@@ -1321,10 +1376,12 @@ JAVA_BOOLEAN java_io_InputStreamReader_ready__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w13460aaac14b1c11)
     // Begin try
     XMLVM_SOURCE_POSITION("InputStreamReader.java", 333)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_InputStreamReader*) _r3.o)->fields.java_io_InputStreamReader.bytes_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_nio_Buffer_hasRemaining__(_r1.o);
     if (_r1.i != 0) { XMLVM_MEMCPY(curThread_w13460aaac14b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w13460aaac14b1c11, sizeof(XMLVM_JMP_BUF)); goto label43; };
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_InputStreamReader*) _r3.o)->fields.java_io_InputStreamReader.in_;
     //java_io_InputStream_available__[6]
     XMLVM_CHECK_NPE(1)

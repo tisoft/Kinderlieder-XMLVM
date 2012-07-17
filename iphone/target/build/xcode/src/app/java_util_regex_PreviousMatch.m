@@ -267,6 +267,7 @@ JAVA_INT java_util_regex_PreviousMatch_matches___int_java_lang_CharSequence_java
     _r0.i = java_util_regex_MatchResultImpl_getPreviousMatchEnd__(_r4.o);
     if (_r2.i != _r0.i) goto label13;
     XMLVM_SOURCE_POSITION("PreviousMatch.java", 37)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_AbstractSet*) _r1.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)

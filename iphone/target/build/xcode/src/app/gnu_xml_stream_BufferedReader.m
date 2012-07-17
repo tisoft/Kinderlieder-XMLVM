@@ -488,15 +488,20 @@ void gnu_xml_stream_BufferedReader___INIT____java_io_Reader_int(JAVA_OBJECT me, 
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 67)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_BufferedReader*) _r1.o)->fields.gnu_xml_stream_BufferedReader.in_ = _r2.o;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 68)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_BufferedReader*) _r1.o)->fields.gnu_xml_stream_BufferedReader.bufferSize_ = _r3.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 69)
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r3.i);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_BufferedReader*) _r1.o)->fields.gnu_xml_stream_BufferedReader.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 70)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_BufferedReader*) _r1.o)->fields.gnu_xml_stream_BufferedReader.count_ = _r3.i;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_BufferedReader*) _r1.o)->fields.gnu_xml_stream_BufferedReader.pos_ = _r3.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 71)
     XMLVM_EXIT_METHOD()
@@ -513,15 +518,20 @@ void gnu_xml_stream_BufferedReader_close__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 76)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_BufferedReader*) _r1.o)->fields.gnu_xml_stream_BufferedReader.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 77)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_BufferedReader*) _r1.o)->fields.gnu_xml_stream_BufferedReader.count_ = _r0.i;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_BufferedReader*) _r1.o)->fields.gnu_xml_stream_BufferedReader.pos_ = _r0.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 78)
     _r0.i = -1;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_BufferedReader*) _r1.o)->fields.gnu_xml_stream_BufferedReader.markpos_ = _r0.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 79)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_BufferedReader*) _r1.o)->fields.gnu_xml_stream_BufferedReader.in_;
     //java_io_Reader_close__[6]
     XMLVM_CHECK_NPE(0)
@@ -542,9 +552,12 @@ void gnu_xml_stream_BufferedReader_mark___int(JAVA_OBJECT me, JAVA_INT n1)
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 85)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_BufferedReader*) _r1.o)->fields.gnu_xml_stream_BufferedReader.marklimit_ = _r2.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 86)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_stream_BufferedReader*) _r1.o)->fields.gnu_xml_stream_BufferedReader.pos_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_BufferedReader*) _r1.o)->fields.gnu_xml_stream_BufferedReader.markpos_ = _r0.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 87)
     XMLVM_EXIT_METHOD()
@@ -576,7 +589,9 @@ JAVA_INT gnu_xml_stream_BufferedReader_read__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 97)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_stream_BufferedReader*) _r3.o)->fields.gnu_xml_stream_BufferedReader.pos_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_xml_stream_BufferedReader*) _r3.o)->fields.gnu_xml_stream_BufferedReader.count_;
     if (_r0.i < _r1.i) goto label14;
     XMLVM_CHECK_NPE(3)
@@ -589,9 +604,12 @@ JAVA_INT gnu_xml_stream_BufferedReader_read__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label14:;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_BufferedReader*) _r3.o)->fields.gnu_xml_stream_BufferedReader.buf_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_xml_stream_BufferedReader*) _r3.o)->fields.gnu_xml_stream_BufferedReader.pos_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_stream_BufferedReader*) _r3.o)->fields.gnu_xml_stream_BufferedReader.pos_ = _r2.i;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -663,7 +681,9 @@ JAVA_INT gnu_xml_stream_BufferedReader_read___char_1ARRAY_int_int(JAVA_OBJECT me
     return _r0.i;
     label18:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 117)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((gnu_xml_stream_BufferedReader*) _r7.o)->fields.gnu_xml_stream_BufferedReader.pos_;
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((gnu_xml_stream_BufferedReader*) _r7.o)->fields.gnu_xml_stream_BufferedReader.count_;
     if (_r0.i < _r1.i) goto label32;
     XMLVM_CHECK_NPE(7)
@@ -674,17 +694,23 @@ JAVA_INT gnu_xml_stream_BufferedReader_read___char_1ARRAY_int_int(JAVA_OBJECT me
     goto label17;
     label32:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 120)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((gnu_xml_stream_BufferedReader*) _r7.o)->fields.gnu_xml_stream_BufferedReader.count_;
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((gnu_xml_stream_BufferedReader*) _r7.o)->fields.gnu_xml_stream_BufferedReader.pos_;
     _r0.i = _r0.i - _r1.i;
     _r0.i = java_lang_Math_min___int_int(_r0.i, _r10.i);
     XMLVM_SOURCE_POSITION("BufferedReader.java", 121)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((gnu_xml_stream_BufferedReader*) _r7.o)->fields.gnu_xml_stream_BufferedReader.buf_;
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((gnu_xml_stream_BufferedReader*) _r7.o)->fields.gnu_xml_stream_BufferedReader.pos_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r2.i, _r8.o, _r9.i, _r0.i);
     XMLVM_SOURCE_POSITION("BufferedReader.java", 122)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((gnu_xml_stream_BufferedReader*) _r7.o)->fields.gnu_xml_stream_BufferedReader.pos_;
     _r1.i = _r1.i + _r0.i;
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_BufferedReader*) _r7.o)->fields.gnu_xml_stream_BufferedReader.pos_ = _r1.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 123)
     _r1.i = _r9.i + _r0.i;
@@ -699,17 +725,23 @@ JAVA_INT gnu_xml_stream_BufferedReader_read___char_1ARRAY_int_int(JAVA_OBJECT me
     _r3.i = gnu_xml_stream_BufferedReader_refill__(_r7.o);
     if (_r3.i == 0) goto label17;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 128)
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((gnu_xml_stream_BufferedReader*) _r7.o)->fields.gnu_xml_stream_BufferedReader.count_;
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((gnu_xml_stream_BufferedReader*) _r7.o)->fields.gnu_xml_stream_BufferedReader.pos_;
     _r3.i = _r3.i - _r4.i;
     _r3.i = java_lang_Math_min___int_int(_r3.i, _r1.i);
     XMLVM_SOURCE_POSITION("BufferedReader.java", 129)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((gnu_xml_stream_BufferedReader*) _r7.o)->fields.gnu_xml_stream_BufferedReader.buf_;
+    XMLVM_CHECK_NPE(7)
     _r5.i = ((gnu_xml_stream_BufferedReader*) _r7.o)->fields.gnu_xml_stream_BufferedReader.pos_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r4.o, _r5.i, _r8.o, _r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("BufferedReader.java", 130)
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((gnu_xml_stream_BufferedReader*) _r7.o)->fields.gnu_xml_stream_BufferedReader.pos_;
     _r4.i = _r4.i + _r3.i;
+    XMLVM_CHECK_NPE(7)
     ((gnu_xml_stream_BufferedReader*) _r7.o)->fields.gnu_xml_stream_BufferedReader.pos_ = _r4.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 131)
     _r2.i = _r2.i + _r3.i;
@@ -729,11 +761,13 @@ void gnu_xml_stream_BufferedReader_reset__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 142)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_stream_BufferedReader*) _r2.o)->fields.gnu_xml_stream_BufferedReader.markpos_;
     _r1.i = -1;
     if (_r0.i != _r1.i) goto label20;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 143)
     _r0.o = __NEW_java_io_IOException();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_stream_BufferedReader*) _r2.o)->fields.gnu_xml_stream_BufferedReader.buf_;
     if (_r1.o != JAVA_NULL) goto label17;
     // "Stream closed."
@@ -748,7 +782,9 @@ void gnu_xml_stream_BufferedReader_reset__(JAVA_OBJECT me)
     goto label13;
     label20:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 144)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_stream_BufferedReader*) _r2.o)->fields.gnu_xml_stream_BufferedReader.markpos_;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_BufferedReader*) _r2.o)->fields.gnu_xml_stream_BufferedReader.pos_ = _r0.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 145)
     XMLVM_EXIT_METHOD()
@@ -770,6 +806,7 @@ JAVA_LONG gnu_xml_stream_BufferedReader_skip___long(JAVA_OBJECT me, JAVA_LONG n1
     _r4.o = me;
     _r5.l = n1;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 150)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_stream_BufferedReader*) _r4.o)->fields.gnu_xml_stream_BufferedReader.buf_;
     if (_r0.o != JAVA_NULL) goto label12;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 151)
@@ -793,7 +830,9 @@ JAVA_LONG gnu_xml_stream_BufferedReader_skip___long(JAVA_OBJECT me, JAVA_LONG n1
     return _r0.l;
     label22:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 155)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((gnu_xml_stream_BufferedReader*) _r4.o)->fields.gnu_xml_stream_BufferedReader.pos_;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((gnu_xml_stream_BufferedReader*) _r4.o)->fields.gnu_xml_stream_BufferedReader.count_;
     if (_r2.i < _r3.i) goto label34;
     XMLVM_CHECK_NPE(4)
@@ -801,15 +840,19 @@ JAVA_LONG gnu_xml_stream_BufferedReader_skip___long(JAVA_OBJECT me, JAVA_LONG n1
     if (_r2.i == 0) goto label19;
     label34:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 157)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((gnu_xml_stream_BufferedReader*) _r4.o)->fields.gnu_xml_stream_BufferedReader.count_;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((gnu_xml_stream_BufferedReader*) _r4.o)->fields.gnu_xml_stream_BufferedReader.pos_;
     _r2.i = _r2.i - _r3.i;
     _r2.l = (JAVA_LONG) _r2.i;
     _r2.l = java_lang_Math_min___long_long(_r2.l, _r0.l);
     _r2.i = (JAVA_INT) _r2.l;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 158)
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((gnu_xml_stream_BufferedReader*) _r4.o)->fields.gnu_xml_stream_BufferedReader.pos_;
     _r3.i = _r3.i + _r2.i;
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_stream_BufferedReader*) _r4.o)->fields.gnu_xml_stream_BufferedReader.pos_ = _r3.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 159)
     _r2.l = (JAVA_LONG) _r2.i;
@@ -832,6 +875,7 @@ JAVA_BOOLEAN gnu_xml_stream_BufferedReader_refill__(JAVA_OBJECT me)
     _r2.i = -1;
     _r4.i = 0;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 167)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.buf_;
     if (_r0.o != JAVA_NULL) goto label14;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 168)
@@ -843,25 +887,36 @@ JAVA_BOOLEAN gnu_xml_stream_BufferedReader_refill__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 170)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.count_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.markpos_;
     _r0.i = _r0.i - _r1.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 171)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.markpos_;
     if (_r1.i == _r2.i) goto label27;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.marklimit_;
     if (_r0.i < _r1.i) goto label49;
     label27:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 173)
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.markpos_ = _r2.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 174)
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.count_ = _r4.i;
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.pos_ = _r4.i;
     label33:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 190)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.in_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.buf_;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.count_;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.bufferSize_;
     //java_io_Reader_read___char_1ARRAY_int_int[11]
     XMLVM_CHECK_NPE(0)
@@ -876,40 +931,56 @@ JAVA_BOOLEAN gnu_xml_stream_BufferedReader_refill__(JAVA_OBJECT me)
     return _r0.i;
     label49:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 178)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.buf_;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 179)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.markpos_;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.bufferSize_;
     if (_r2.i >= _r3.i) goto label67;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 181)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.count_;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.markpos_;
     _r1.i = _r1.i - _r2.i;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.bufferSize_;
     _r1.i = _r1.i + _r2.i;
     if (!__TIB_char.classInitialized) __INIT_char();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_char, _r1.i);
     label67:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 183)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.buf_;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.markpos_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r2.o, _r3.i, _r1.o, _r4.i, _r0.i);
     XMLVM_SOURCE_POSITION("BufferedReader.java", 184)
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.buf_ = _r1.o;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 185)
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 186)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.pos_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.markpos_;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.pos_ = _r0.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 187)
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.markpos_ = _r4.i;
     goto label33;
     label88:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 194)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.count_;
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_stream_BufferedReader*) _r5.o)->fields.gnu_xml_stream_BufferedReader.count_ = _r0.i;
     _r0.i = 1;
     goto label48;

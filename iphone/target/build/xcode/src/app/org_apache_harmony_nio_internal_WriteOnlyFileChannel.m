@@ -435,6 +435,7 @@ void org_apache_harmony_nio_internal_WriteOnlyFileChannel___INIT____java_lang_Ob
     org_apache_harmony_nio_internal_FileChannelImpl___INIT____java_lang_Object_long(_r1.o, _r2.o, _r3.l);
     XMLVM_SOURCE_POSITION("WriteOnlyFileChannel.java", 30)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_nio_internal_WriteOnlyFileChannel*) _r1.o)->fields.org_apache_harmony_nio_internal_WriteOnlyFileChannel.append_ = _r0.i;
     XMLVM_SOURCE_POSITION("WriteOnlyFileChannel.java", 34)
     XMLVM_EXIT_METHOD()
@@ -461,8 +462,10 @@ void org_apache_harmony_nio_internal_WriteOnlyFileChannel___INIT____java_lang_Ob
     org_apache_harmony_nio_internal_FileChannelImpl___INIT____java_lang_Object_long(_r1.o, _r2.o, _r3.l);
     XMLVM_SOURCE_POSITION("WriteOnlyFileChannel.java", 30)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_nio_internal_WriteOnlyFileChannel*) _r1.o)->fields.org_apache_harmony_nio_internal_WriteOnlyFileChannel.append_ = _r0.i;
     XMLVM_SOURCE_POSITION("WriteOnlyFileChannel.java", 38)
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_nio_internal_WriteOnlyFileChannel*) _r1.o)->fields.org_apache_harmony_nio_internal_WriteOnlyFileChannel.append_ = _r5.i;
     XMLVM_SOURCE_POSITION("WriteOnlyFileChannel.java", 39)
     XMLVM_EXIT_METHOD()
@@ -479,6 +482,7 @@ JAVA_LONG org_apache_harmony_nio_internal_WriteOnlyFileChannel_position__(JAVA_O
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("WriteOnlyFileChannel.java", 47)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_apache_harmony_nio_internal_WriteOnlyFileChannel*) _r2.o)->fields.org_apache_harmony_nio_internal_WriteOnlyFileChannel.append_;
     if (_r0.i == 0) goto label9;
     //org_apache_harmony_nio_internal_WriteOnlyFileChannel_size__[18]
@@ -720,6 +724,7 @@ JAVA_INT org_apache_harmony_nio_internal_WriteOnlyFileChannel_write___java_nio_B
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("WriteOnlyFileChannel.java", 96)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_apache_harmony_nio_internal_WriteOnlyFileChannel*) _r2.o)->fields.org_apache_harmony_nio_internal_WriteOnlyFileChannel.append_;
     if (_r0.i == 0) goto label11;
     XMLVM_SOURCE_POSITION("WriteOnlyFileChannel.java", 97)

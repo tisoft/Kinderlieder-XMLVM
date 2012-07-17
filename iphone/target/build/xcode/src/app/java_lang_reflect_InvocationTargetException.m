@@ -306,6 +306,7 @@ void java_lang_reflect_InvocationTargetException___INIT____java_lang_Throwable(J
     XMLVM_CHECK_NPE(1)
     java_lang_Exception___INIT____java_lang_String_java_lang_Throwable(_r1.o, _r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("InvocationTargetException.java", 51)
+    XMLVM_CHECK_NPE(1)
     ((java_lang_reflect_InvocationTargetException*) _r1.o)->fields.java_lang_reflect_InvocationTargetException.target_ = _r2.o;
     XMLVM_SOURCE_POSITION("InvocationTargetException.java", 52)
     XMLVM_EXIT_METHOD()
@@ -327,6 +328,7 @@ void java_lang_reflect_InvocationTargetException___INIT____java_lang_Throwable_j
     XMLVM_CHECK_NPE(0)
     java_lang_Exception___INIT____java_lang_String_java_lang_Throwable(_r0.o, _r2.o, _r1.o);
     XMLVM_SOURCE_POSITION("InvocationTargetException.java", 66)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_InvocationTargetException*) _r0.o)->fields.java_lang_reflect_InvocationTargetException.target_ = _r1.o;
     XMLVM_SOURCE_POSITION("InvocationTargetException.java", 67)
     XMLVM_EXIT_METHOD()
@@ -342,6 +344,7 @@ JAVA_OBJECT java_lang_reflect_InvocationTargetException_getTargetException__(JAV
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("InvocationTargetException.java", 75)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_reflect_InvocationTargetException*) _r1.o)->fields.java_lang_reflect_InvocationTargetException.target_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -356,6 +359,7 @@ JAVA_OBJECT java_lang_reflect_InvocationTargetException_getCause__(JAVA_OBJECT m
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("InvocationTargetException.java", 85)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_reflect_InvocationTargetException*) _r1.o)->fields.java_lang_reflect_InvocationTargetException.target_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

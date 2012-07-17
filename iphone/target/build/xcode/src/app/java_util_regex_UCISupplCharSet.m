@@ -237,10 +237,12 @@ void java_util_regex_UCISupplCharSet___INIT____int(JAVA_OBJECT me, JAVA_INT n1)
     java_util_regex_LeafSet___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("UCISupplCharSet.java", 95)
     _r0.i = 2;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_LeafSet*) _r1.o)->fields.java_util_regex_LeafSet.charCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("UCISupplCharSet.java", 96)
     _r0.i = java_lang_Character_toUpperCase___int(_r2.i);
     _r0.i = java_lang_Character_toLowerCase___int(_r0.i);
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_UCISupplCharSet*) _r1.o)->fields.java_util_regex_UCISupplCharSet.ch_ = _r0.i;
     XMLVM_SOURCE_POSITION("UCISupplCharSet.java", 97)
     XMLVM_EXIT_METHOD()
@@ -269,6 +271,7 @@ JAVA_INT java_util_regex_UCISupplCharSet_accepts___int_java_lang_CharSequence(JA
     XMLVM_CHECK_NPE(5)
     _r0.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_CharSequence_charAt___int])(_r5.o, _r0.i);
     XMLVM_SOURCE_POSITION("UCISupplCharSet.java", 102)
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_regex_UCISupplCharSet*) _r3.o)->fields.java_util_regex_UCISupplCharSet.ch_;
     XMLVM_SOURCE_POSITION("UCISupplCharSet.java", 104)
     _r0.i = java_lang_Character_toCodePoint___char_char(_r1.i, _r0.i);
@@ -302,6 +305,7 @@ JAVA_OBJECT java_util_regex_UCISupplCharSet_getName__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     _r1.o = __NEW_java_lang_String();
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_regex_UCISupplCharSet*) _r3.o)->fields.java_util_regex_UCISupplCharSet.ch_;
     _r2.o = java_lang_Character_toChars___int(_r2.i);
     XMLVM_CHECK_NPE(1)

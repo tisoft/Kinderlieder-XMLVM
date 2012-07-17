@@ -688,6 +688,7 @@ void java_lang_Short___INIT____short(JAVA_OBJECT me, JAVA_SHORT n1)
     XMLVM_CHECK_NPE(0)
     java_lang_Number___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Short.java", 85)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_Short*) _r0.o)->fields.java_lang_Short.value_ = _r1.i;
     XMLVM_SOURCE_POSITION("Short.java", 86)
     XMLVM_EXIT_METHOD()
@@ -703,6 +704,7 @@ JAVA_BYTE java_lang_Short_byteValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Short.java", 90)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_Short*) _r1.o)->fields.java_lang_Short.value_;
     _r0.i = (_r0.i << 24) >> 24;
     XMLVM_EXIT_METHOD()
@@ -721,7 +723,9 @@ JAVA_INT java_lang_Short_compareTo___java_lang_Short(JAVA_OBJECT me, JAVA_OBJECT
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Short.java", 109)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_Short*) _r2.o)->fields.java_lang_Short.value_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_Short*) _r3.o)->fields.java_lang_Short.value_;
     if (_r0.i <= _r1.i) goto label8;
     _r0.i = 1;
@@ -729,7 +733,9 @@ JAVA_INT java_lang_Short_compareTo___java_lang_Short(JAVA_OBJECT me, JAVA_OBJECT
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label8:;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_Short*) _r2.o)->fields.java_lang_Short.value_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_Short*) _r3.o)->fields.java_lang_Short.value_;
     if (_r0.i >= _r1.i) goto label16;
     _r0.i = -1;
@@ -780,6 +786,7 @@ JAVA_DOUBLE java_lang_Short_doubleValue__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Short.java", 136)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_Short*) _r2.o)->fields.java_lang_Short.value_;
     _r0.d = (JAVA_DOUBLE) _r0.i;
     XMLVM_EXIT_METHOD()
@@ -802,8 +809,10 @@ JAVA_BOOLEAN java_lang_Short_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJE
     _r0.i = XMLVM_ISA(_r3.o, __CLASS_java_lang_Short);
     if (_r0.i == 0) goto label14;
     XMLVM_SOURCE_POSITION("Short.java", 152)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_Short*) _r2.o)->fields.java_lang_Short.value_;
     _r3.o = _r3.o;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_Short*) _r3.o)->fields.java_lang_Short.value_;
     if (_r0.i != _r1.i) goto label14;
     _r0.i = 1;
@@ -824,6 +833,7 @@ JAVA_FLOAT java_lang_Short_floatValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Short.java", 157)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_Short*) _r1.o)->fields.java_lang_Short.value_;
     _r0.f = (JAVA_FLOAT) _r0.i;
     XMLVM_EXIT_METHOD()
@@ -839,6 +849,7 @@ JAVA_INT java_lang_Short_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Short.java", 162)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_Short*) _r1.o)->fields.java_lang_Short.value_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -853,6 +864,7 @@ JAVA_INT java_lang_Short_intValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Short.java", 167)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_Short*) _r1.o)->fields.java_lang_Short.value_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -868,6 +880,7 @@ JAVA_LONG java_lang_Short_longValue__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Short.java", 172)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_Short*) _r2.o)->fields.java_lang_Short.value_;
     _r0.l = (JAVA_LONG) _r0.i;
     XMLVM_EXIT_METHOD()
@@ -928,6 +941,7 @@ JAVA_SHORT java_lang_Short_shortValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Short.java", 223)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_Short*) _r1.o)->fields.java_lang_Short.value_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -942,6 +956,7 @@ JAVA_OBJECT java_lang_Short_toString__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Short.java", 228)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_Short*) _r1.o)->fields.java_lang_Short.value_;
     _r0.o = java_lang_Integer_toString___int(_r0.i);
     XMLVM_EXIT_METHOD()

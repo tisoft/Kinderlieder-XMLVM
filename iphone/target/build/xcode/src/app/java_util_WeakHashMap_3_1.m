@@ -217,6 +217,7 @@ void java_util_WeakHashMap_3_1___INIT____java_util_WeakHashMap_3(JAVA_OBJECT me,
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_WeakHashMap_3_1*) _r0.o)->fields.java_util_WeakHashMap_3_1.this_1_ = _r1.o;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 452)
     XMLVM_CHECK_NPE(0)

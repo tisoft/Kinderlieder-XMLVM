@@ -211,6 +211,7 @@ void my_kinderlieder_ShopService_1_2___INIT____my_kinderlieder_ShopService_1(JAV
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("ShopService.java", 76)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_ShopService_1_2*) _r0.o)->fields.my_kinderlieder_ShopService_1_2.this_1_ = _r1.o;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UIAlertViewDelegate___INIT___(_r0.o);

@@ -1327,12 +1327,16 @@ JAVA_BOOLEAN java_text_DateFormat_equals___java_lang_Object(JAVA_OBJECT me, JAVA
     if (_r6.i != _r7.i) goto label89;
     label67:;
     XMLVM_SOURCE_POSITION("DateFormat.java", 365)
+    XMLVM_CHECK_NPE(9)
     _r6.o = ((java_text_DateFormat*) _r9.o)->fields.java_text_DateFormat.numberFormat_;
     if (_r6.o != JAVA_NULL) goto label75;
+    XMLVM_CHECK_NPE(3)
     _r6.o = ((java_text_DateFormat*) _r3.o)->fields.java_text_DateFormat.numberFormat_;
     if (_r6.o == JAVA_NULL) goto label85;
     label75:;
+    XMLVM_CHECK_NPE(9)
     _r6.o = ((java_text_DateFormat*) _r9.o)->fields.java_text_DateFormat.numberFormat_;
+    XMLVM_CHECK_NPE(3)
     _r7.o = ((java_text_DateFormat*) _r3.o)->fields.java_text_DateFormat.numberFormat_;
 
     
@@ -1475,6 +1479,7 @@ JAVA_OBJECT java_text_DateFormat_getCalendar__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DateFormat.java", 458)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_DateFormat*) _r1.o)->fields.java_text_DateFormat.calendar_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1960,6 +1965,7 @@ JAVA_OBJECT java_text_DateFormat_getNumberFormat__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DateFormat.java", 755)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_DateFormat*) _r1.o)->fields.java_text_DateFormat.numberFormat_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2094,6 +2100,7 @@ JAVA_OBJECT java_text_DateFormat_getTimeZone__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DateFormat.java", 827)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_DateFormat*) _r1.o)->fields.java_text_DateFormat.calendar_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_util_Calendar_getTimeZone__(_r0.o);
@@ -2110,9 +2117,11 @@ JAVA_INT java_text_DateFormat_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DateFormat.java", 837)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_DateFormat*) _r1.o)->fields.java_text_DateFormat.numberFormat_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("DateFormat.java", 838)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_DateFormat*) _r1.o)->fields.java_text_DateFormat.numberFormat_;
 
     
@@ -2136,6 +2145,7 @@ JAVA_BOOLEAN java_text_DateFormat_isLenient__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DateFormat.java", 852)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_DateFormat*) _r1.o)->fields.java_text_DateFormat.calendar_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Calendar_isLenient__(_r0.o);
@@ -2249,6 +2259,7 @@ void java_text_DateFormat_setCalendar___java_util_Calendar(JAVA_OBJECT me, JAVA_
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("DateFormat.java", 920)
+    XMLVM_CHECK_NPE(0)
     ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_ = _r1.o;
     XMLVM_SOURCE_POSITION("DateFormat.java", 921)
     XMLVM_EXIT_METHOD()
@@ -2266,6 +2277,7 @@ void java_text_DateFormat_setLenient___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DateFormat.java", 932)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_DateFormat*) _r1.o)->fields.java_text_DateFormat.calendar_;
     XMLVM_CHECK_NPE(0)
     java_util_Calendar_setLenient___boolean(_r0.o, _r2.i);
@@ -2284,6 +2296,7 @@ void java_text_DateFormat_setNumberFormat___java_text_NumberFormat(JAVA_OBJECT m
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("DateFormat.java", 943)
+    XMLVM_CHECK_NPE(0)
     ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.numberFormat_ = _r1.o;
     XMLVM_SOURCE_POSITION("DateFormat.java", 944)
     XMLVM_EXIT_METHOD()
@@ -2301,6 +2314,7 @@ void java_text_DateFormat_setTimeZone___java_util_TimeZone(JAVA_OBJECT me, JAVA_
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DateFormat.java", 953)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_DateFormat*) _r1.o)->fields.java_text_DateFormat.calendar_;
     XMLVM_CHECK_NPE(0)
     java_util_Calendar_setTimeZone___java_util_TimeZone(_r0.o, _r2.o);

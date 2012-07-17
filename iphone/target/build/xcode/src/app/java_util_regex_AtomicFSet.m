@@ -300,6 +300,7 @@ JAVA_INT java_util_regex_AtomicFSet_matches___int_java_lang_CharSequence_java_ut
     XMLVM_CHECK_NPE(5)
     java_util_regex_MatchResultImpl_setConsumed___int_int(_r5.o, _r0.i, _r1.i);
     XMLVM_SOURCE_POSITION("AtomicFSet.java", 39)
+    XMLVM_CHECK_NPE(2)
     ((java_util_regex_AtomicFSet*) _r2.o)->fields.java_util_regex_AtomicFSet.index_ = _r3.i;
     XMLVM_SOURCE_POSITION("AtomicFSet.java", 41)
     XMLVM_EXIT_METHOD()
@@ -315,6 +316,7 @@ JAVA_INT java_util_regex_AtomicFSet_getIndex__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AtomicFSet.java", 45)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_AtomicFSet*) _r1.o)->fields.java_util_regex_AtomicFSet.index_;
     XMLVM_EXIT_METHOD()
     return _r0.i;

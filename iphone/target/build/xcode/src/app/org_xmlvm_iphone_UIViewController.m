@@ -116,6 +116,8 @@ JAVA_OBJECT __CLASS_org_xmlvm_iphone_UIViewController_3ARRAY;
 #ifdef XMLVM_VTABLE_IDX_org_xmlvm_iphone_UIViewController_viewWillAppear___boolean
     Func_VOB func = self->wrappedCObj->tib->vtable[XMLVM_VTABLE_IDX_org_xmlvm_iphone_UIViewController_viewWillAppear___boolean];
     func(self->wrappedCObj, animated);
+#else
+    [super viewWillAppear:animated];
 #endif
 }
 
@@ -124,6 +126,8 @@ JAVA_OBJECT __CLASS_org_xmlvm_iphone_UIViewController_3ARRAY;
 #ifdef XMLVM_VTABLE_IDX_org_xmlvm_iphone_UIViewController_viewDidLoad__
     Func_VO func = self->wrappedCObj->tib->vtable[XMLVM_VTABLE_IDX_org_xmlvm_iphone_UIViewController_viewDidLoad__];
     func(self->wrappedCObj);
+#else
+    [super viewDidLoad];
 #endif
 }
 
@@ -132,6 +136,8 @@ JAVA_OBJECT __CLASS_org_xmlvm_iphone_UIViewController_3ARRAY;
 #ifdef XMLVM_VTABLE_IDX_org_xmlvm_iphone_UIViewController_viewDidUnload__
     Func_VO func = self->wrappedCObj->tib->vtable[XMLVM_VTABLE_IDX_org_xmlvm_iphone_UIViewController_viewDidUnload__];
     func(self->wrappedCObj);
+#else
+    [super viewDidUnload];
 #endif
 }
 
@@ -140,6 +146,8 @@ JAVA_OBJECT __CLASS_org_xmlvm_iphone_UIViewController_3ARRAY;
 #ifdef XMLVM_VTABLE_IDX_org_xmlvm_iphone_UIViewController_viewWillDisappear___boolean
     Func_VOB func = self->wrappedCObj->tib->vtable[XMLVM_VTABLE_IDX_org_xmlvm_iphone_UIViewController_viewWillDisappear___boolean];
     func(self->wrappedCObj, animated);
+#else
+    [super viewWillDisappear:animated];
 #endif
 }
 
@@ -148,6 +156,8 @@ JAVA_OBJECT __CLASS_org_xmlvm_iphone_UIViewController_3ARRAY;
 #ifdef XMLVM_VTABLE_IDX_org_xmlvm_iphone_UIViewController_viewDidAppear___boolean
     Func_VOB func = self->wrappedCObj->tib->vtable[XMLVM_VTABLE_IDX_org_xmlvm_iphone_UIViewController_viewDidAppear___boolean];
     func(self->wrappedCObj, animated);
+#else
+    [super viewDidAppear:animated];
 #endif
 }
 
@@ -156,6 +166,8 @@ JAVA_OBJECT __CLASS_org_xmlvm_iphone_UIViewController_3ARRAY;
 #ifdef XMLVM_VTABLE_IDX_org_xmlvm_iphone_UIViewController_viewDidDisappear___boolean
     Func_VOB func = self->wrappedCObj->tib->vtable[XMLVM_VTABLE_IDX_org_xmlvm_iphone_UIViewController_viewDidDisappear___boolean];
     func(self->wrappedCObj, animated);
+#else
+    [super viewDidDisappear:animated];
 #endif
 }
 

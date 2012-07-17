@@ -613,6 +613,7 @@ void java_util_regex_AbstractSet___INIT___(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(4)
     java_lang_Object___INIT___(_r4.o);
     XMLVM_SOURCE_POSITION("AbstractSet.java", 49)
+    XMLVM_CHECK_NPE(4)
     ((java_util_regex_AbstractSet*) _r4.o)->fields.java_util_regex_AbstractSet.isSecondPassVisited_ = _r3.i;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 51)
     _r0.o = __NEW_java_lang_Integer();
@@ -624,8 +625,10 @@ void java_util_regex_AbstractSet___INIT___(JAVA_OBJECT me)
     //java_lang_Integer_toString__[5]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_Integer*) _r0.o)->tib->vtable[5])(_r0.o);
+    XMLVM_CHECK_NPE(4)
     ((java_util_regex_AbstractSet*) _r4.o)->fields.java_util_regex_AbstractSet.index_ = _r0.o;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 53)
+    XMLVM_CHECK_NPE(4)
     ((java_util_regex_AbstractSet*) _r4.o)->fields.java_util_regex_AbstractSet.type_ = _r3.i;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 56)
     XMLVM_EXIT_METHOD()
@@ -650,6 +653,7 @@ void java_util_regex_AbstractSet___INIT____java_util_regex_AbstractSet(JAVA_OBJE
     XMLVM_CHECK_NPE(4)
     java_lang_Object___INIT___(_r4.o);
     XMLVM_SOURCE_POSITION("AbstractSet.java", 49)
+    XMLVM_CHECK_NPE(4)
     ((java_util_regex_AbstractSet*) _r4.o)->fields.java_util_regex_AbstractSet.isSecondPassVisited_ = _r3.i;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 51)
     _r0.o = __NEW_java_lang_Integer();
@@ -661,10 +665,13 @@ void java_util_regex_AbstractSet___INIT____java_util_regex_AbstractSet(JAVA_OBJE
     //java_lang_Integer_toString__[5]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_Integer*) _r0.o)->tib->vtable[5])(_r0.o);
+    XMLVM_CHECK_NPE(4)
     ((java_util_regex_AbstractSet*) _r4.o)->fields.java_util_regex_AbstractSet.index_ = _r0.o;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 53)
+    XMLVM_CHECK_NPE(4)
     ((java_util_regex_AbstractSet*) _r4.o)->fields.java_util_regex_AbstractSet.type_ = _r3.i;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 59)
+    XMLVM_CHECK_NPE(4)
     ((java_util_regex_AbstractSet*) _r4.o)->fields.java_util_regex_AbstractSet.next_ = _r5.o;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 60)
     XMLVM_EXIT_METHOD()
@@ -761,6 +768,7 @@ void java_util_regex_AbstractSet_setType___int(JAVA_OBJECT me, JAVA_INT n1)
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 149)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractSet*) _r0.o)->fields.java_util_regex_AbstractSet.type_ = _r1.i;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 150)
     XMLVM_EXIT_METHOD()
@@ -776,6 +784,7 @@ JAVA_INT java_util_regex_AbstractSet_getType__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 153)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_AbstractSet*) _r1.o)->fields.java_util_regex_AbstractSet.type_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -796,6 +805,7 @@ JAVA_OBJECT java_util_regex_AbstractSet_getQualifiedName__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(108);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_regex_AbstractSet*) _r2.o)->fields.java_util_regex_AbstractSet.index_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
@@ -843,6 +853,7 @@ JAVA_OBJECT java_util_regex_AbstractSet_getNext__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 168)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_AbstractSet*) _r1.o)->fields.java_util_regex_AbstractSet.next_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -858,6 +869,7 @@ void java_util_regex_AbstractSet_setNext___java_util_regex_AbstractSet(JAVA_OBJE
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 177)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractSet*) _r0.o)->fields.java_util_regex_AbstractSet.next_ = _r1.o;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 178)
     XMLVM_EXIT_METHOD()
@@ -906,15 +918,20 @@ void java_util_regex_AbstractSet_processSecondPass__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 215)
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.isSecondPassVisited_ = _r2.i;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 217)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
     if (_r0.o == JAVA_NULL) goto label32;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 219)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_regex_AbstractSet*) _r0.o)->fields.java_util_regex_AbstractSet.isSecondPassVisited_;
     if (_r0.i != 0) goto label33;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 224)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_processBackRefReplacement__[14]
     XMLVM_CHECK_NPE(0)
@@ -922,12 +939,16 @@ void java_util_regex_AbstractSet_processSecondPass__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("AbstractSet.java", 226)
     if (_r0.o == JAVA_NULL) goto label27;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 227)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_AbstractSet*) _r1.o)->fields.java_util_regex_AbstractSet.isSecondPassVisited_ = _r2.i;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 228)
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_ = _r0.o;
     label27:;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 234)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_processSecondPass__[15]
     XMLVM_CHECK_NPE(0)
@@ -938,20 +959,27 @@ void java_util_regex_AbstractSet_processSecondPass__(JAVA_OBJECT me)
     return;
     label33:;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 247)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
     if (!__TIB_java_util_regex_SingleSet.classInitialized) __INIT_java_util_regex_SingleSet();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_java_util_regex_SingleSet);
     if (_r0.i == 0) goto label32;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 248)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
     _r0.o = _r0.o;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_regex_JointSet*) _r0.o)->fields.java_util_regex_JointSet.fSet_;
     _r0.o = _r0.o;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_regex_FSet*) _r0.o)->fields.java_util_regex_FSet.isBackReferenced_;
     if (_r0.i == 0) goto label32;
     XMLVM_SOURCE_POSITION("AbstractSet.java", 249)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_regex_AbstractSet*) _r0.o)->fields.java_util_regex_AbstractSet.next_;
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_ = _r0.o;
     goto label32;
     //XMLVM_END_WRAPPER

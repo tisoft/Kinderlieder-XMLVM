@@ -888,6 +888,7 @@ void java_util_TreeSet___INIT____java_util_NavigableMap(JAVA_OBJECT me, JAVA_OBJ
     XMLVM_CHECK_NPE(0)
     java_util_AbstractSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("TreeSet.java", 44)
+    XMLVM_CHECK_NPE(0)
     ((java_util_TreeSet*) _r0.o)->fields.java_util_TreeSet.backingMap_ = _r1.o;
     XMLVM_SOURCE_POSITION("TreeSet.java", 45)
     XMLVM_EXIT_METHOD()
@@ -909,6 +910,7 @@ void java_util_TreeSet___INIT___(JAVA_OBJECT me)
     _r0.o = __NEW_java_util_TreeMap();
     XMLVM_CHECK_NPE(0)
     java_util_TreeMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_TreeSet*) _r1.o)->fields.java_util_TreeSet.backingMap_ = _r0.o;
     XMLVM_SOURCE_POSITION("TreeSet.java", 53)
     XMLVM_EXIT_METHOD()
@@ -953,6 +955,7 @@ void java_util_TreeSet___INIT____java_util_Comparator(JAVA_OBJECT me, JAVA_OBJEC
     _r0.o = __NEW_java_util_TreeMap();
     XMLVM_CHECK_NPE(0)
     java_util_TreeMap___INIT____java_util_Comparator(_r0.o, _r2.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_TreeSet*) _r1.o)->fields.java_util_TreeSet.backingMap_ = _r0.o;
     XMLVM_SOURCE_POSITION("TreeSet.java", 80)
     XMLVM_EXIT_METHOD()
@@ -1008,6 +1011,7 @@ JAVA_BOOLEAN java_util_TreeSet_add___java_lang_Object(JAVA_OBJECT me, JAVA_OBJEC
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("TreeSet.java", 113)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_TreeSet*) _r2.o)->fields.java_util_TreeSet.backingMap_;
     _r1.o = java_lang_Boolean_GET_TRUE();
     XMLVM_CHECK_NPE(0)
@@ -1048,6 +1052,7 @@ void java_util_TreeSet_clear__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("TreeSet.java", 143)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_TreeSet*) _r1.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_clear__])(_r0.o);
@@ -1073,11 +1078,13 @@ JAVA_OBJECT java_util_TreeSet_clone__(JAVA_OBJECT me)
     _r0.o = java_lang_Object_clone__(_r3.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("TreeSet.java", 158)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_TreeSet*) _r3.o)->fields.java_util_TreeSet.backingMap_;
     if (!__TIB_java_util_TreeMap.classInitialized) __INIT_java_util_TreeMap();
     _r1.i = XMLVM_ISA(_r1.o, __CLASS_java_util_TreeMap);
     if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w14362aaac11b1b2->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w14362aaac11b1b2, sizeof(XMLVM_JMP_BUF)); goto label25; };
     XMLVM_SOURCE_POSITION("TreeSet.java", 160)
+    XMLVM_CHECK_NPE(3)
     _r3.o = ((java_util_TreeSet*) _r3.o)->fields.java_util_TreeSet.backingMap_;
     _r3.o = _r3.o;
     //java_util_TreeMap_clone__[0]
@@ -1085,6 +1092,7 @@ JAVA_OBJECT java_util_TreeSet_clone__(JAVA_OBJECT me)
     _r3.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_TreeMap*) _r3.o)->tib->vtable[0])(_r3.o);
     XMLVM_SOURCE_POSITION("TreeSet.java", 159)
     _r3.o = _r3.o;
+    XMLVM_CHECK_NPE(0)
     ((java_util_TreeSet*) _r0.o)->fields.java_util_TreeSet.backingMap_ = _r3.o;
     // End try
     XMLVM_TRY_END
@@ -1110,9 +1118,11 @@ JAVA_OBJECT java_util_TreeSet_clone__(JAVA_OBJECT me)
     // Begin try
     XMLVM_SOURCE_POSITION("TreeSet.java", 162)
     _r1.o = __NEW_java_util_TreeMap();
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_TreeSet*) _r3.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(1)
     java_util_TreeMap___INIT____java_util_SortedMap(_r1.o, _r2.o);
+    XMLVM_CHECK_NPE(0)
     ((java_util_TreeSet*) _r0.o)->fields.java_util_TreeSet.backingMap_ = _r1.o;
     // End try
     XMLVM_TRY_END
@@ -1137,6 +1147,7 @@ JAVA_OBJECT java_util_TreeSet_comparator__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("TreeSet.java", 176)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_TreeSet*) _r1.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_comparator__])(_r0.o);
@@ -1155,6 +1166,7 @@ JAVA_BOOLEAN java_util_TreeSet_contains___java_lang_Object(JAVA_OBJECT me, JAVA_
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("TreeSet.java", 195)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_TreeSet*) _r1.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_containsKey___java_lang_Object])(_r0.o, _r2.o);
@@ -1171,6 +1183,7 @@ JAVA_BOOLEAN java_util_TreeSet_isEmpty__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("TreeSet.java", 206)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_TreeSet*) _r1.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_isEmpty__])(_r0.o);
@@ -1187,6 +1200,7 @@ JAVA_OBJECT java_util_TreeSet_iterator__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("TreeSet.java", 217)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_TreeSet*) _r1.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_keySet__])(_r0.o);
@@ -1225,6 +1239,7 @@ JAVA_BOOLEAN java_util_TreeSet_remove___java_lang_Object(JAVA_OBJECT me, JAVA_OB
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("TreeSet.java", 246)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_TreeSet*) _r1.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_remove___java_lang_Object])(_r0.o, _r2.o);
@@ -1247,6 +1262,7 @@ JAVA_INT java_util_TreeSet_size__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("TreeSet.java", 256)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_TreeSet*) _r1.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_size__])(_r0.o);
@@ -1263,6 +1279,7 @@ JAVA_OBJECT java_util_TreeSet_first__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("TreeSet.java", 268)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_TreeSet*) _r1.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_firstKey__])(_r0.o);
@@ -1279,6 +1296,7 @@ JAVA_OBJECT java_util_TreeSet_last__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("TreeSet.java", 280)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_TreeSet*) _r1.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_lastKey__])(_r0.o);
@@ -1295,6 +1313,7 @@ JAVA_OBJECT java_util_TreeSet_pollFirst__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("TreeSet.java", 290)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_TreeSet*) _r1.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_pollFirstEntry__])(_r0.o);
@@ -1319,6 +1338,7 @@ JAVA_OBJECT java_util_TreeSet_pollLast__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("TreeSet.java", 301)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_TreeSet*) _r1.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_pollLastEntry__])(_r0.o);
@@ -1345,6 +1365,7 @@ JAVA_OBJECT java_util_TreeSet_higher___java_lang_Object(JAVA_OBJECT me, JAVA_OBJ
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("TreeSet.java", 312)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_TreeSet*) _r1.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_higherKey___java_lang_Object])(_r0.o, _r2.o);
@@ -1363,6 +1384,7 @@ JAVA_OBJECT java_util_TreeSet_lower___java_lang_Object(JAVA_OBJECT me, JAVA_OBJE
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("TreeSet.java", 322)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_TreeSet*) _r1.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_lowerKey___java_lang_Object])(_r0.o, _r2.o);
@@ -1381,6 +1403,7 @@ JAVA_OBJECT java_util_TreeSet_ceiling___java_lang_Object(JAVA_OBJECT me, JAVA_OB
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("TreeSet.java", 332)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_TreeSet*) _r1.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_ceilingKey___java_lang_Object])(_r0.o, _r2.o);
@@ -1399,6 +1422,7 @@ JAVA_OBJECT java_util_TreeSet_floor___java_lang_Object(JAVA_OBJECT me, JAVA_OBJE
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("TreeSet.java", 342)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_TreeSet*) _r1.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_floorKey___java_lang_Object])(_r0.o, _r2.o);
@@ -1416,8 +1440,10 @@ JAVA_OBJECT java_util_TreeSet_descendingSet__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("TreeSet.java", 352)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_TreeSet*) _r2.o)->fields.java_util_TreeSet.descendingSet_;
     if (_r0.o == JAVA_NULL) goto label7;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_TreeSet*) _r2.o)->fields.java_util_TreeSet.descendingSet_;
     label6:;
     XMLVM_EXIT_METHOD()
@@ -1425,11 +1451,13 @@ JAVA_OBJECT java_util_TreeSet_descendingSet__(JAVA_OBJECT me)
     label7:;
     XMLVM_SOURCE_POSITION("TreeSet.java", 353)
     _r0.o = __NEW_java_util_TreeSet();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_TreeSet*) _r2.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_descendingMap__])(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_util_TreeSet___INIT____java_util_NavigableMap(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((java_util_TreeSet*) _r2.o)->fields.java_util_TreeSet.descendingSet_ = _r0.o;
     goto label6;
     //XMLVM_END_WRAPPER
@@ -1453,6 +1481,7 @@ JAVA_OBJECT java_util_TreeSet_subSet___java_lang_Object_boolean_java_lang_Object
     _r6.o = n3;
     _r7.i = n4;
     XMLVM_SOURCE_POSITION("TreeSet.java", 365)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_TreeSet*) _r3.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_comparator__])(_r1.o);
@@ -1468,6 +1497,7 @@ JAVA_OBJECT java_util_TreeSet_subSet___java_lang_Object_boolean_java_lang_Object
     if (_r1.i > 0) goto label35;
     XMLVM_SOURCE_POSITION("TreeSet.java", 369)
     _r1.o = __NEW_java_util_TreeSet();
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_TreeSet*) _r3.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_SOURCE_POSITION("TreeSet.java", 370)
     XMLVM_CHECK_NPE(2)
@@ -1504,6 +1534,7 @@ JAVA_OBJECT java_util_TreeSet_headSet___java_lang_Object_boolean(JAVA_OBJECT me,
     _r4.o = n1;
     _r5.i = n2;
     XMLVM_SOURCE_POSITION("TreeSet.java", 384)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_TreeSet*) _r3.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_comparator__])(_r1.o);
@@ -1518,6 +1549,7 @@ JAVA_OBJECT java_util_TreeSet_headSet___java_lang_Object_boolean(JAVA_OBJECT me,
     label15:;
     XMLVM_SOURCE_POSITION("TreeSet.java", 390)
     _r1.o = __NEW_java_util_TreeSet();
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_TreeSet*) _r3.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(2)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_headMap___java_lang_Object_boolean])(_r2.o, _r4.o, _r5.i);
@@ -1547,6 +1579,7 @@ JAVA_OBJECT java_util_TreeSet_tailSet___java_lang_Object_boolean(JAVA_OBJECT me,
     _r4.o = n1;
     _r5.i = n2;
     XMLVM_SOURCE_POSITION("TreeSet.java", 402)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_TreeSet*) _r3.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_comparator__])(_r1.o);
@@ -1561,6 +1594,7 @@ JAVA_OBJECT java_util_TreeSet_tailSet___java_lang_Object_boolean(JAVA_OBJECT me,
     label15:;
     XMLVM_SOURCE_POSITION("TreeSet.java", 408)
     _r1.o = __NEW_java_util_TreeSet();
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_TreeSet*) _r3.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(2)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_tailMap___java_lang_Object_boolean])(_r2.o, _r4.o, _r5.i);
@@ -1651,6 +1685,7 @@ void java_util_TreeSet_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me, 
     XMLVM_CHECK_NPE(3)
     java_io_ObjectOutputStream_defaultWriteObject__(_r3.o);
     XMLVM_SOURCE_POSITION("TreeSet.java", 482)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_TreeSet*) _r2.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_comparator__])(_r0.o);
@@ -1658,6 +1693,7 @@ void java_util_TreeSet_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me, 
     XMLVM_CHECK_NPE(3)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_io_ObjectOutputStream*) _r3.o)->tib->vtable[21])(_r3.o, _r0.o);
     XMLVM_SOURCE_POSITION("TreeSet.java", 483)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_TreeSet*) _r2.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_size__])(_r0.o);
@@ -1668,6 +1704,7 @@ void java_util_TreeSet_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me, 
     XMLVM_SOURCE_POSITION("TreeSet.java", 485)
     if (_r0.i <= 0) goto label39;
     XMLVM_SOURCE_POSITION("TreeSet.java", 486)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_TreeSet*) _r2.o)->fields.java_util_TreeSet.backingMap_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_NavigableMap_keySet__])(_r0.o);
@@ -1737,6 +1774,7 @@ void java_util_TreeSet_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, JA
     if (_r2.i < _r0.i) goto label30;
     label27:;
     XMLVM_SOURCE_POSITION("TreeSet.java", 507)
+    XMLVM_CHECK_NPE(7)
     ((java_util_TreeSet*) _r7.o)->fields.java_util_TreeSet.backingMap_ = _r1.o;
     XMLVM_SOURCE_POSITION("TreeSet.java", 508)
     XMLVM_EXIT_METHOD()

@@ -249,10 +249,13 @@ void my_kinderlieder_MusicInfo___INIT____my_kinderlieder_CollectionInfo_java_lan
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("MusicInfo.java", 11)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_MusicInfo*) _r0.o)->fields.my_kinderlieder_MusicInfo.collectionInfo_ = _r1.o;
     XMLVM_SOURCE_POSITION("MusicInfo.java", 12)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_MusicInfo*) _r0.o)->fields.my_kinderlieder_MusicInfo.name_ = _r2.o;
     XMLVM_SOURCE_POSITION("MusicInfo.java", 13)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_MusicInfo*) _r0.o)->fields.my_kinderlieder_MusicInfo.musicPath_ = _r3.o;
     XMLVM_SOURCE_POSITION("MusicInfo.java", 14)
     XMLVM_EXIT_METHOD()
@@ -268,6 +271,7 @@ JAVA_OBJECT my_kinderlieder_MusicInfo_getMusicPath__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("MusicInfo.java", 21)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((my_kinderlieder_MusicInfo*) _r1.o)->fields.my_kinderlieder_MusicInfo.musicPath_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -282,6 +286,7 @@ JAVA_OBJECT my_kinderlieder_MusicInfo_getName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("MusicInfo.java", 25)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((my_kinderlieder_MusicInfo*) _r1.o)->fields.my_kinderlieder_MusicInfo.name_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

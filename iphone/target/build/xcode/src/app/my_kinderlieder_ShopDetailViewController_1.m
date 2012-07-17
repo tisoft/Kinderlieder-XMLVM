@@ -215,6 +215,7 @@ void my_kinderlieder_ShopDetailViewController_1___INIT____my_kinderlieder_ShopDe
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 15)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_ShopDetailViewController_1*) _r0.o)->fields.my_kinderlieder_ShopDetailViewController_1.this_0_ = _r1.o;
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
@@ -231,6 +232,7 @@ void my_kinderlieder_ShopDetailViewController_1_clicked__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 17)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((my_kinderlieder_ShopDetailViewController_1*) _r1.o)->fields.my_kinderlieder_ShopDetailViewController_1.this_0_;
     my_kinderlieder_ShopDetailViewController_access$000___my_kinderlieder_ShopDetailViewController(_r0.o);
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 18)

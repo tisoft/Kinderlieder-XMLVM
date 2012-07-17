@@ -543,6 +543,7 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSInput_getCharacterStream__(JAVA_OBJECT me)
     _r2.o = me;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 67)
     _r0.o = __NEW_java_io_InputStreamReader();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_dom_ls_DomLSInput*) _r2.o)->fields.gnu_xml_dom_ls_DomLSInput.in_;
     XMLVM_CHECK_NPE(0)
     java_io_InputStreamReader___INIT____java_io_InputStream(_r0.o, _r1.o);
@@ -564,6 +565,7 @@ void gnu_xml_dom_ls_DomLSInput_setCharacterStream___java_io_Reader(JAVA_OBJECT m
     _r0.o = __NEW_gnu_xml_dom_ls_ReaderInputStream();
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_ls_ReaderInputStream___INIT____java_io_Reader(_r0.o, _r2.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_ls_DomLSInput*) _r1.o)->fields.gnu_xml_dom_ls_DomLSInput.in_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 73)
     XMLVM_EXIT_METHOD()
@@ -579,6 +581,7 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSInput_getByteStream__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 77)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_ls_DomLSInput*) _r1.o)->fields.gnu_xml_dom_ls_DomLSInput.in_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -594,6 +597,7 @@ void gnu_xml_dom_ls_DomLSInput_setByteStream___java_io_InputStream(JAVA_OBJECT m
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 82)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_ls_DomLSInput*) _r0.o)->fields.gnu_xml_dom_ls_DomLSInput.in_ = _r1.o;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 83)
     XMLVM_EXIT_METHOD()
@@ -689,6 +693,7 @@ void gnu_xml_dom_ls_DomLSInput_setStringData___java_lang_String(JAVA_OBJECT me, 
     java_io_StringReader___INIT____java_lang_String(_r1.o, _r3.o);
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_ls_ReaderInputStream___INIT____java_io_Reader(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_ls_DomLSInput*) _r2.o)->fields.gnu_xml_dom_ls_DomLSInput.in_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 107)
     XMLVM_EXIT_METHOD()
@@ -704,6 +709,7 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSInput_getSystemId__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 111)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_ls_DomLSInput*) _r1.o)->fields.gnu_xml_dom_ls_DomLSInput.systemId_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -719,6 +725,7 @@ void gnu_xml_dom_ls_DomLSInput_setSystemId___java_lang_String(JAVA_OBJECT me, JA
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 116)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_ls_DomLSInput*) _r0.o)->fields.gnu_xml_dom_ls_DomLSInput.systemId_ = _r1.o;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 117)
     XMLVM_EXIT_METHOD()
@@ -734,6 +741,7 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSInput_getPublicId__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 121)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_ls_DomLSInput*) _r1.o)->fields.gnu_xml_dom_ls_DomLSInput.publicId_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -749,6 +757,7 @@ void gnu_xml_dom_ls_DomLSInput_setPublicId___java_lang_String(JAVA_OBJECT me, JA
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 126)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_ls_DomLSInput*) _r0.o)->fields.gnu_xml_dom_ls_DomLSInput.publicId_ = _r1.o;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 127)
     XMLVM_EXIT_METHOD()
@@ -764,6 +773,7 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSInput_getBaseURI__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 131)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_ls_DomLSInput*) _r1.o)->fields.gnu_xml_dom_ls_DomLSInput.baseURI_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -779,6 +789,7 @@ void gnu_xml_dom_ls_DomLSInput_setBaseURI___java_lang_String(JAVA_OBJECT me, JAV
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 136)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_ls_DomLSInput*) _r0.o)->fields.gnu_xml_dom_ls_DomLSInput.baseURI_ = _r1.o;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 137)
     XMLVM_EXIT_METHOD()
@@ -794,6 +805,7 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSInput_getEncoding__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 141)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_ls_DomLSInput*) _r1.o)->fields.gnu_xml_dom_ls_DomLSInput.encoding_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -809,6 +821,7 @@ void gnu_xml_dom_ls_DomLSInput_setEncoding___java_lang_String(JAVA_OBJECT me, JA
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 146)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_ls_DomLSInput*) _r0.o)->fields.gnu_xml_dom_ls_DomLSInput.encoding_ = _r1.o;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 147)
     XMLVM_EXIT_METHOD()
@@ -824,6 +837,7 @@ JAVA_BOOLEAN gnu_xml_dom_ls_DomLSInput_getCertifiedText__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 151)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_dom_ls_DomLSInput*) _r1.o)->fields.gnu_xml_dom_ls_DomLSInput.certifiedText_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -839,6 +853,7 @@ void gnu_xml_dom_ls_DomLSInput_setCertifiedText___boolean(JAVA_OBJECT me, JAVA_B
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 156)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_ls_DomLSInput*) _r0.o)->fields.gnu_xml_dom_ls_DomLSInput.certifiedText_ = _r1.i;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 157)
     XMLVM_EXIT_METHOD()

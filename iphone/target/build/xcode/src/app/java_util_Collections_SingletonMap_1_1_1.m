@@ -231,6 +231,7 @@ void java_util_Collections_SingletonMap_1_1_1___INIT____java_util_Collections_Si
     _r2.o = n2;
     _r3.o = n3;
     XMLVM_SOURCE_POSITION("Collections.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Collections_SingletonMap_1_1_1*) _r0.o)->fields.java_util_Collections_SingletonMap_1_1_1.this_3_ = _r1.o;
     XMLVM_SOURCE_POSITION("Collections.java", 385)
     XMLVM_CHECK_NPE(0)

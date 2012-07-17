@@ -209,6 +209,7 @@ void org_apache_harmony_luni_util_ThreadLocalCache_5___INIT____org_apache_harmon
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("ThreadLocalCache.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_util_ThreadLocalCache_5*) _r0.o)->fields.org_apache_harmony_luni_util_ThreadLocalCache_5.this_0_ = _r1.o;
     XMLVM_SOURCE_POSITION("ThreadLocalCache.java", 39)
     XMLVM_CHECK_NPE(0)
@@ -226,6 +227,7 @@ JAVA_OBJECT org_apache_harmony_luni_util_ThreadLocalCache_5_initialValue__(JAVA_
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ThreadLocalCache.java", 41)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_util_ThreadLocalCache_5*) _r1.o)->fields.org_apache_harmony_luni_util_ThreadLocalCache_5.this_0_;
     //org_apache_harmony_luni_util_ThreadLocalCache_initialValue__[6]
     XMLVM_CHECK_NPE(0)

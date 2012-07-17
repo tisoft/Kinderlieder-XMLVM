@@ -639,6 +639,7 @@ void java_util_HashSet___INIT____java_util_HashMap(JAVA_OBJECT me, JAVA_OBJECT n
     XMLVM_CHECK_NPE(0)
     java_util_AbstractSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("HashSet.java", 82)
+    XMLVM_CHECK_NPE(0)
     ((java_util_HashSet*) _r0.o)->fields.java_util_HashSet.backingMap_ = _r1.o;
     XMLVM_SOURCE_POSITION("HashSet.java", 83)
     XMLVM_EXIT_METHOD()
@@ -656,6 +657,7 @@ JAVA_BOOLEAN java_util_HashSet_add___java_lang_Object(JAVA_OBJECT me, JAVA_OBJEC
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("HashSet.java", 95)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_HashSet*) _r1.o)->fields.java_util_HashSet.backingMap_;
     //java_util_HashMap_put___java_lang_Object_java_lang_Object[14]
     XMLVM_CHECK_NPE(0)
@@ -679,6 +681,7 @@ void java_util_HashSet_clear__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("HashSet.java", 106)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_HashSet*) _r1.o)->fields.java_util_HashSet.backingMap_;
     //java_util_HashMap_clear__[6]
     XMLVM_CHECK_NPE(0)
@@ -704,11 +707,13 @@ JAVA_OBJECT java_util_HashSet_clone__(JAVA_OBJECT me)
     _r0.o = java_lang_Object_clone__(_r2.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("HashSet.java", 121)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_HashSet*) _r2.o)->fields.java_util_HashSet.backingMap_;
     //java_util_HashMap_clone__[0]
     XMLVM_CHECK_NPE(1)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_HashMap*) _r1.o)->tib->vtable[0])(_r1.o);
     _r2.o = _r2.o;
+    XMLVM_CHECK_NPE(0)
     ((java_util_HashSet*) _r0.o)->fields.java_util_HashSet.backingMap_ = _r2.o;
     // End try
     XMLVM_TRY_END
@@ -738,6 +743,7 @@ JAVA_BOOLEAN java_util_HashSet_contains___java_lang_Object(JAVA_OBJECT me, JAVA_
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("HashSet.java", 138)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_HashSet*) _r1.o)->fields.java_util_HashSet.backingMap_;
     //java_util_HashMap_containsKey___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
@@ -755,6 +761,7 @@ JAVA_BOOLEAN java_util_HashSet_isEmpty__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("HashSet.java", 150)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_HashSet*) _r1.o)->fields.java_util_HashSet.backingMap_;
     //java_util_HashMap_isEmpty__[11]
     XMLVM_CHECK_NPE(0)
@@ -772,6 +779,7 @@ JAVA_OBJECT java_util_HashSet_iterator__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("HashSet.java", 161)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_HashSet*) _r1.o)->fields.java_util_HashSet.backingMap_;
     //java_util_HashMap_keySet__[12]
     XMLVM_CHECK_NPE(0)
@@ -793,6 +801,7 @@ JAVA_BOOLEAN java_util_HashSet_remove___java_lang_Object(JAVA_OBJECT me, JAVA_OB
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("HashSet.java", 173)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_HashSet*) _r1.o)->fields.java_util_HashSet.backingMap_;
     //java_util_HashMap_remove___java_lang_Object[15]
     XMLVM_CHECK_NPE(0)
@@ -816,6 +825,7 @@ JAVA_INT java_util_HashSet_size__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("HashSet.java", 183)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_HashSet*) _r1.o)->fields.java_util_HashSet.backingMap_;
     //java_util_HashMap_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -840,26 +850,34 @@ void java_util_HashSet_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me, 
     XMLVM_CHECK_NPE(4)
     java_io_ObjectOutputStream_defaultWriteObject__(_r4.o);
     XMLVM_SOURCE_POSITION("HashSet.java", 188)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_HashSet*) _r3.o)->fields.java_util_HashSet.backingMap_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_HashMap*) _r0.o)->fields.java_util_HashMap.elementData_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     //java_io_ObjectOutputStream_writeInt___int[19]
     XMLVM_CHECK_NPE(4)
     (*(void (*)(JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectOutputStream*) _r4.o)->tib->vtable[19])(_r4.o, _r0.i);
     XMLVM_SOURCE_POSITION("HashSet.java", 189)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_HashSet*) _r3.o)->fields.java_util_HashSet.backingMap_;
+    XMLVM_CHECK_NPE(0)
     _r0.f = ((java_util_HashMap*) _r0.o)->fields.java_util_HashMap.loadFactor_;
     //java_io_ObjectOutputStream_writeFloat___float[18]
     XMLVM_CHECK_NPE(4)
     (*(void (*)(JAVA_OBJECT, JAVA_FLOAT)) ((java_io_ObjectOutputStream*) _r4.o)->tib->vtable[18])(_r4.o, _r0.f);
     XMLVM_SOURCE_POSITION("HashSet.java", 190)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_HashSet*) _r3.o)->fields.java_util_HashSet.backingMap_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_HashMap*) _r0.o)->fields.java_util_HashMap.elementCount_;
     //java_io_ObjectOutputStream_writeInt___int[19]
     XMLVM_CHECK_NPE(4)
     (*(void (*)(JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectOutputStream*) _r4.o)->tib->vtable[19])(_r4.o, _r0.i);
     XMLVM_SOURCE_POSITION("HashSet.java", 191)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_HashSet*) _r3.o)->fields.java_util_HashSet.backingMap_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_HashMap*) _r0.o)->fields.java_util_HashMap.elementData_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     label30:;
@@ -870,7 +888,9 @@ void java_util_HashSet_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me, 
     return;
     label35:;
     XMLVM_SOURCE_POSITION("HashSet.java", 192)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_HashSet*) _r3.o)->fields.java_util_HashSet.backingMap_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_HashMap*) _r1.o)->fields.java_util_HashMap.elementData_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -879,11 +899,13 @@ void java_util_HashSet_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me, 
     XMLVM_SOURCE_POSITION("HashSet.java", 193)
     if (_r1.o == JAVA_NULL) goto label30;
     XMLVM_SOURCE_POSITION("HashSet.java", 194)
+    XMLVM_CHECK_NPE(1)
     _r2.o = ((java_util_MapEntry*) _r1.o)->fields.java_util_MapEntry.key_;
     //java_io_ObjectOutputStream_writeObject___java_lang_Object[21]
     XMLVM_CHECK_NPE(4)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_io_ObjectOutputStream*) _r4.o)->tib->vtable[21])(_r4.o, _r2.o);
     XMLVM_SOURCE_POSITION("HashSet.java", 195)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_HashMap_Entry*) _r1.o)->fields.java_util_HashMap_Entry.next_;
     goto label41;
     //XMLVM_END_WRAPPER
@@ -915,6 +937,7 @@ void java_util_HashSet_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, JA
     //java_util_HashSet_createBackingMap___int_float[19]
     XMLVM_CHECK_NPE(3)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT, JAVA_FLOAT)) ((java_util_HashSet*) _r3.o)->tib->vtable[19])(_r3.o, _r0.i, _r1.f);
+    XMLVM_CHECK_NPE(3)
     ((java_util_HashSet*) _r3.o)->fields.java_util_HashSet.backingMap_ = _r0.o;
     XMLVM_SOURCE_POSITION("HashSet.java", 207)
     //java_io_ObjectInputStream_readInt__[22]
@@ -933,6 +956,7 @@ void java_util_HashSet_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, JA
     XMLVM_CHECK_NPE(4)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_io_ObjectInputStream*) _r4.o)->tib->vtable[25])(_r4.o);
     XMLVM_SOURCE_POSITION("HashSet.java", 210)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_HashSet*) _r3.o)->fields.java_util_HashSet.backingMap_;
     //java_util_HashMap_put___java_lang_Object_java_lang_Object[14]
     XMLVM_CHECK_NPE(2)

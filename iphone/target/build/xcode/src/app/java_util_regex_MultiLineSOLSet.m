@@ -255,6 +255,7 @@ void java_util_regex_MultiLineSOLSet___INIT____java_util_regex_AbstractLineTermi
     XMLVM_CHECK_NPE(0)
     java_util_regex_AbstractSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("MultiLineSOLSet.java", 32)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_MultiLineSOLSet*) _r0.o)->fields.java_util_regex_MultiLineSOLSet.lt_ = _r1.o;
     XMLVM_SOURCE_POSITION("MultiLineSOLSet.java", 33)
     XMLVM_EXIT_METHOD()
@@ -291,6 +292,7 @@ JAVA_INT java_util_regex_MultiLineSOLSet_matches___int_java_lang_CharSequence_ja
     _r0.i = java_util_regex_MatchResultImpl_getLeftBound__(_r6.o);
     if (_r4.i == _r0.i) goto label39;
     label20:;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_MultiLineSOLSet*) _r3.o)->fields.java_util_regex_MultiLineSOLSet.lt_;
     XMLVM_SOURCE_POSITION("MultiLineSOLSet.java", 40)
     _r1.i = 1;
@@ -306,6 +308,7 @@ JAVA_INT java_util_regex_MultiLineSOLSet_matches___int_java_lang_CharSequence_ja
     if (_r0.i == 0) goto label46;
     label39:;
     XMLVM_SOURCE_POSITION("MultiLineSOLSet.java", 42)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)

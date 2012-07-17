@@ -1426,6 +1426,7 @@ JAVA_BOOLEAN gnu_xml_dom_html2_DomHTMLInputElement_getChecked__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 129)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_html2_DomHTMLInputElement*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLInputElement.checked_;
     if (_r0.o != JAVA_NULL) goto label14;
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 131)
@@ -1433,9 +1434,11 @@ JAVA_BOOLEAN gnu_xml_dom_html2_DomHTMLInputElement_getChecked__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) ((gnu_xml_dom_html2_DomHTMLInputElement*) _r1.o)->tib->vtable[89])(_r1.o);
     _r0.o = java_lang_Boolean_valueOf___boolean(_r0.i);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_html2_DomHTMLInputElement*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLInputElement.checked_ = _r0.o;
     label14:;
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 133)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_html2_DomHTMLInputElement*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLInputElement.checked_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_Boolean_booleanValue__(_r0.o);
@@ -1455,6 +1458,7 @@ void gnu_xml_dom_html2_DomHTMLInputElement_setChecked___boolean(JAVA_OBJECT me, 
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 138)
     _r0.o = java_lang_Boolean_valueOf___boolean(_r2.i);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_html2_DomHTMLInputElement*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLInputElement.checked_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 139)
     XMLVM_EXIT_METHOD()
@@ -1803,15 +1807,18 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLInputElement_getValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 233)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_html2_DomHTMLInputElement*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLInputElement.value_;
     if (_r0.o != JAVA_NULL) goto label10;
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 235)
     //gnu_xml_dom_html2_DomHTMLInputElement_getDefaultValue__[90]
     XMLVM_CHECK_NPE(1)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((gnu_xml_dom_html2_DomHTMLInputElement*) _r1.o)->tib->vtable[90])(_r1.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_html2_DomHTMLInputElement*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLInputElement.value_ = _r0.o;
     label10:;
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 237)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_html2_DomHTMLInputElement*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLInputElement.value_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1827,6 +1834,7 @@ void gnu_xml_dom_html2_DomHTMLInputElement_setValue___java_lang_String(JAVA_OBJE
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 242)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_html2_DomHTMLInputElement*) _r0.o)->fields.gnu_xml_dom_html2_DomHTMLInputElement.value_ = _r1.o;
     XMLVM_SOURCE_POSITION("DomHTMLInputElement.java", 243)
     XMLVM_EXIT_METHOD()

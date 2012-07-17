@@ -777,6 +777,7 @@ void java_util_ResourceBundle_Control___INIT___(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 808)
     _r0.o = java_util_ResourceBundle_Control_GET_listClass();
     _r0.o = java_util_Collections_unmodifiableList___java_util_List(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((java_util_ResourceBundle_Control*) _r2.o)->fields.java_util_ResourceBundle_Control.format_ = _r0.o;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 809)
     XMLVM_EXIT_METHOD()
@@ -1003,6 +1004,7 @@ JAVA_OBJECT java_util_ResourceBundle_Control_getFormats___java_lang_String(JAVA_
     XMLVM_THROW_CUSTOM(_r0.o)
     label8:;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 907)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_ResourceBundle_Control*) _r1.o)->fields.java_util_ResourceBundle_Control.format_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

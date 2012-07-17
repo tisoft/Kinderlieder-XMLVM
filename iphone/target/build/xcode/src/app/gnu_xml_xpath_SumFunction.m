@@ -321,6 +321,7 @@ void gnu_xml_xpath_SumFunction___INIT____gnu_xml_xpath_Expr(JAVA_OBJECT me, JAVA
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_Expr___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("SumFunction.java", 66)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_SumFunction*) _r0.o)->fields.gnu_xml_xpath_SumFunction.arg_ = _r1.o;
     XMLVM_SOURCE_POSITION("SumFunction.java", 67)
     XMLVM_EXIT_METHOD()
@@ -346,6 +347,7 @@ JAVA_OBJECT gnu_xml_xpath_SumFunction_evaluate___org_w3c_dom_Node_int_int(JAVA_O
     _r7.i = n2;
     _r8.i = n3;
     XMLVM_SOURCE_POSITION("SumFunction.java", 72)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_xpath_SumFunction*) _r5.o)->fields.gnu_xml_xpath_SumFunction.arg_;
     //gnu_xml_xpath_Expr_evaluate___org_w3c_dom_Node_int_int[9]
     XMLVM_CHECK_NPE(0)
@@ -397,6 +399,7 @@ JAVA_OBJECT gnu_xml_xpath_SumFunction_clone___java_lang_Object(JAVA_OBJECT me, J
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("SumFunction.java", 91)
     _r0.o = __NEW_gnu_xml_xpath_SumFunction();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_SumFunction*) _r2.o)->fields.gnu_xml_xpath_SumFunction.arg_;
     //gnu_xml_xpath_Expr_clone___java_lang_Object[6]
     XMLVM_CHECK_NPE(1)
@@ -418,6 +421,7 @@ JAVA_BOOLEAN gnu_xml_xpath_SumFunction_references___javax_xml_namespace_QName(JA
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("SumFunction.java", 96)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_SumFunction*) _r1.o)->fields.gnu_xml_xpath_SumFunction.arg_;
     //gnu_xml_xpath_Expr_references___javax_xml_namespace_QName[12]
     XMLVM_CHECK_NPE(0)
@@ -441,6 +445,7 @@ JAVA_OBJECT gnu_xml_xpath_SumFunction_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(141);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_SumFunction*) _r2.o)->fields.gnu_xml_xpath_SumFunction.arg_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);

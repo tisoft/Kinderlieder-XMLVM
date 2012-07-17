@@ -521,12 +521,16 @@ void org_xml_sax_SAXParseException_init___java_lang_String_java_lang_String_int_
     _r3.i = n3;
     _r4.i = n4;
     XMLVM_SOURCE_POSITION("SAXParseException.java", 169)
+    XMLVM_CHECK_NPE(0)
     ((org_xml_sax_SAXParseException*) _r0.o)->fields.org_xml_sax_SAXParseException.publicId_ = _r1.o;
     XMLVM_SOURCE_POSITION("SAXParseException.java", 170)
+    XMLVM_CHECK_NPE(0)
     ((org_xml_sax_SAXParseException*) _r0.o)->fields.org_xml_sax_SAXParseException.systemId_ = _r2.o;
     XMLVM_SOURCE_POSITION("SAXParseException.java", 171)
+    XMLVM_CHECK_NPE(0)
     ((org_xml_sax_SAXParseException*) _r0.o)->fields.org_xml_sax_SAXParseException.lineNumber_ = _r3.i;
     XMLVM_SOURCE_POSITION("SAXParseException.java", 172)
+    XMLVM_CHECK_NPE(0)
     ((org_xml_sax_SAXParseException*) _r0.o)->fields.org_xml_sax_SAXParseException.columnNumber_ = _r4.i;
     XMLVM_SOURCE_POSITION("SAXParseException.java", 173)
     XMLVM_EXIT_METHOD()
@@ -542,6 +546,7 @@ JAVA_OBJECT org_xml_sax_SAXParseException_getPublicId__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXParseException.java", 185)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_SAXParseException*) _r1.o)->fields.org_xml_sax_SAXParseException.publicId_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -556,6 +561,7 @@ JAVA_OBJECT org_xml_sax_SAXParseException_getSystemId__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXParseException.java", 201)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_SAXParseException*) _r1.o)->fields.org_xml_sax_SAXParseException.systemId_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -570,6 +576,7 @@ JAVA_INT org_xml_sax_SAXParseException_getLineNumber__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXParseException.java", 216)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((org_xml_sax_SAXParseException*) _r1.o)->fields.org_xml_sax_SAXParseException.lineNumber_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -584,6 +591,7 @@ JAVA_INT org_xml_sax_SAXParseException_getColumnNumber__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXParseException.java", 231)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((org_xml_sax_SAXParseException*) _r1.o)->fields.org_xml_sax_SAXParseException.columnNumber_;
     XMLVM_EXIT_METHOD()
     return _r0.i;

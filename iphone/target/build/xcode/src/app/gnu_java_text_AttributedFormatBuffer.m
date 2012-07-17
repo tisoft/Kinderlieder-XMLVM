@@ -552,18 +552,22 @@ void gnu_java_text_AttributedFormatBuffer___INIT____gnu_java_lang_CPStringBuilde
     _r0.o = __NEW_gnu_java_lang_CPStringBuilder();
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder___INIT____java_lang_CharSequence(_r0.o, _r3.o);
+    XMLVM_CHECK_NPE(2)
     ((gnu_java_text_AttributedFormatBuffer*) _r2.o)->fields.gnu_java_text_AttributedFormatBuffer.buffer_ = _r0.o;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 70)
     _r0.o = __NEW_java_util_ArrayList();
     XMLVM_CHECK_NPE(0)
     java_util_ArrayList___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((gnu_java_text_AttributedFormatBuffer*) _r2.o)->fields.gnu_java_text_AttributedFormatBuffer.ranges_ = _r0.o;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 71)
     _r0.o = __NEW_java_util_ArrayList();
     XMLVM_CHECK_NPE(0)
     java_util_ArrayList___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((gnu_java_text_AttributedFormatBuffer*) _r2.o)->fields.gnu_java_text_AttributedFormatBuffer.attributes_ = _r0.o;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 72)
+    XMLVM_CHECK_NPE(2)
     ((gnu_java_text_AttributedFormatBuffer*) _r2.o)->fields.gnu_java_text_AttributedFormatBuffer.defaultAttr_ = _r1.o;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 73)
     //gnu_java_lang_CPStringBuilder_length__[10]
@@ -574,6 +578,7 @@ void gnu_java_text_AttributedFormatBuffer___INIT____gnu_java_lang_CPStringBuilde
     //gnu_java_lang_CPStringBuilder_length__[10]
     XMLVM_CHECK_NPE(3)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((gnu_java_lang_CPStringBuilder*) _r3.o)->tib->vtable[10])(_r3.o);
+    XMLVM_CHECK_NPE(2)
     ((gnu_java_text_AttributedFormatBuffer*) _r2.o)->fields.gnu_java_text_AttributedFormatBuffer.startingRange_ = _r0.i;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 76)
     //gnu_java_lang_CPStringBuilder_length__[10]
@@ -588,6 +593,7 @@ void gnu_java_text_AttributedFormatBuffer___INIT____gnu_java_lang_CPStringBuilde
     label47:;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 79)
     _r0.i = -1;
+    XMLVM_CHECK_NPE(2)
     ((gnu_java_text_AttributedFormatBuffer*) _r2.o)->fields.gnu_java_text_AttributedFormatBuffer.startingRange_ = _r0.i;
     goto label46;
     //XMLVM_END_WRAPPER
@@ -655,12 +661,14 @@ void gnu_java_text_AttributedFormatBuffer_addAttribute___int_java_text_Attribute
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_util_HashMap*) _r0.o)->tib->vtable[14])(_r0.o, _r5.o, _r5.o);
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 108)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_java_text_AttributedFormatBuffer*) _r3.o)->fields.gnu_java_text_AttributedFormatBuffer.attributes_;
     //java_util_ArrayList_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(1)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_ArrayList*) _r1.o)->tib->vtable[7])(_r1.o, _r0.o);
     label15:;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 113)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_java_text_AttributedFormatBuffer*) _r3.o)->fields.gnu_java_text_AttributedFormatBuffer.ranges_;
     _r2.o = __NEW_java_lang_Integer();
     XMLVM_CHECK_NPE(2)
@@ -673,6 +681,7 @@ void gnu_java_text_AttributedFormatBuffer_addAttribute___int_java_text_Attribute
     return;
     label26:;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 111)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_java_text_AttributedFormatBuffer*) _r3.o)->fields.gnu_java_text_AttributedFormatBuffer.attributes_;
     _r2.o = JAVA_NULL;
     //java_util_ArrayList_add___java_lang_Object[7]
@@ -692,13 +701,16 @@ void gnu_java_text_AttributedFormatBuffer_append___java_lang_String(JAVA_OBJECT 
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 118)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_java_text_AttributedFormatBuffer*) _r1.o)->fields.gnu_java_text_AttributedFormatBuffer.startingRange_;
     if (_r0.i >= 0) goto label7;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 119)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((gnu_java_text_AttributedFormatBuffer*) _r1.o)->fields.gnu_java_text_AttributedFormatBuffer.startingRange_ = _r0.i;
     label7:;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 120)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_java_text_AttributedFormatBuffer*) _r1.o)->fields.gnu_java_text_AttributedFormatBuffer.buffer_;
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r2.o);
@@ -724,10 +736,12 @@ void gnu_java_text_AttributedFormatBuffer_append___java_lang_String_java_text_At
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_java_text_AttributedFormatBuffer*) _r1.o)->tib->vtable[15])(_r1.o, _r3.o);
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 126)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_java_text_AttributedFormatBuffer*) _r1.o)->fields.gnu_java_text_AttributedFormatBuffer.buffer_;
     //gnu_java_lang_CPStringBuilder_length__[10]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((gnu_java_lang_CPStringBuilder*) _r0.o)->tib->vtable[10])(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_java_text_AttributedFormatBuffer*) _r1.o)->fields.gnu_java_text_AttributedFormatBuffer.startingRange_ = _r0.i;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 127)
     //gnu_java_text_AttributedFormatBuffer_append___java_lang_String[8]
@@ -762,6 +776,7 @@ void gnu_java_text_AttributedFormatBuffer_append___java_lang_String_int_1ARRAY_j
     _r7.o = n2;
     _r8.o = n3;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 133)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((gnu_java_text_AttributedFormatBuffer*) _r5.o)->fields.gnu_java_text_AttributedFormatBuffer.buffer_;
     //gnu_java_lang_CPStringBuilder_length__[10]
     XMLVM_CHECK_NPE(2)
@@ -779,6 +794,7 @@ void gnu_java_text_AttributedFormatBuffer_append___java_lang_String_int_1ARRAY_j
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r7.o));
     if (_r1.i >= _r2.i) goto label39;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 140)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((gnu_java_text_AttributedFormatBuffer*) _r5.o)->fields.gnu_java_text_AttributedFormatBuffer.ranges_;
     _r3.o = __NEW_java_lang_Integer();
     XMLVM_CHECK_NPE(7)
@@ -791,6 +807,7 @@ void gnu_java_text_AttributedFormatBuffer_append___java_lang_String_int_1ARRAY_j
     XMLVM_CHECK_NPE(2)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_ArrayList*) _r2.o)->tib->vtable[7])(_r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 141)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((gnu_java_text_AttributedFormatBuffer*) _r5.o)->fields.gnu_java_text_AttributedFormatBuffer.attributes_;
     XMLVM_CHECK_NPE(8)
     XMLVM_CHECK_ARRAY_BOUNDS(_r8.o, _r1.i);
@@ -802,12 +819,15 @@ void gnu_java_text_AttributedFormatBuffer_append___java_lang_String_int_1ARRAY_j
     goto label13;
     label39:;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 144)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((gnu_java_text_AttributedFormatBuffer*) _r5.o)->fields.gnu_java_text_AttributedFormatBuffer.buffer_;
     //gnu_java_lang_CPStringBuilder_length__[10]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((gnu_java_lang_CPStringBuilder*) _r2.o)->tib->vtable[10])(_r2.o);
+    XMLVM_CHECK_NPE(5)
     ((gnu_java_text_AttributedFormatBuffer*) _r5.o)->fields.gnu_java_text_AttributedFormatBuffer.startingRange_ = _r2.i;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 145)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((gnu_java_text_AttributedFormatBuffer*) _r5.o)->fields.gnu_java_text_AttributedFormatBuffer.buffer_;
     XMLVM_CHECK_NPE(2)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r2.o, _r6.o);
@@ -827,16 +847,20 @@ void gnu_java_text_AttributedFormatBuffer_append___char(JAVA_OBJECT me, JAVA_CHA
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 150)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_java_text_AttributedFormatBuffer*) _r1.o)->fields.gnu_java_text_AttributedFormatBuffer.startingRange_;
     if (_r0.i >= 0) goto label12;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 151)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_java_text_AttributedFormatBuffer*) _r1.o)->fields.gnu_java_text_AttributedFormatBuffer.buffer_;
     //gnu_java_lang_CPStringBuilder_length__[10]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((gnu_java_lang_CPStringBuilder*) _r0.o)->tib->vtable[10])(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_java_text_AttributedFormatBuffer*) _r1.o)->fields.gnu_java_text_AttributedFormatBuffer.startingRange_ = _r0.i;
     label12:;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 152)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_java_text_AttributedFormatBuffer*) _r1.o)->fields.gnu_java_text_AttributedFormatBuffer.buffer_;
     //gnu_java_lang_CPStringBuilder_append___char[6]
     XMLVM_CHECK_NPE(0)
@@ -863,6 +887,7 @@ void gnu_java_text_AttributedFormatBuffer_append___char_java_text_AttributedChar
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_java_text_AttributedFormatBuffer*) _r1.o)->tib->vtable[15])(_r1.o, _r3.o);
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 158)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_java_text_AttributedFormatBuffer*) _r1.o)->fields.gnu_java_text_AttributedFormatBuffer.buffer_;
     //gnu_java_lang_CPStringBuilder_append___char[6]
     XMLVM_CHECK_NPE(0)
@@ -889,6 +914,7 @@ void gnu_java_text_AttributedFormatBuffer_setDefaultAttribute___java_text_Attrib
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 164)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_java_text_AttributedFormatBuffer*) _r2.o)->fields.gnu_java_text_AttributedFormatBuffer.defaultAttr_;
     if (_r3.o != _r1.o) goto label5;
     label4:;
@@ -897,23 +923,29 @@ void gnu_java_text_AttributedFormatBuffer_setDefaultAttribute___java_text_Attrib
     return;
     label5:;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 167)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_java_text_AttributedFormatBuffer*) _r2.o)->fields.gnu_java_text_AttributedFormatBuffer.buffer_;
     //gnu_java_lang_CPStringBuilder_length__[10]
     XMLVM_CHECK_NPE(1)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((gnu_java_lang_CPStringBuilder*) _r1.o)->tib->vtable[10])(_r1.o);
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 169)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((gnu_java_text_AttributedFormatBuffer*) _r2.o)->fields.gnu_java_text_AttributedFormatBuffer.startingRange_;
     if (_r1.i == _r0.i) goto label24;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((gnu_java_text_AttributedFormatBuffer*) _r2.o)->fields.gnu_java_text_AttributedFormatBuffer.startingRange_;
     if (_r1.i < 0) goto label24;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 171)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_java_text_AttributedFormatBuffer*) _r2.o)->fields.gnu_java_text_AttributedFormatBuffer.defaultAttr_;
     XMLVM_CHECK_NPE(2)
     gnu_java_text_AttributedFormatBuffer_addAttribute___int_java_text_AttributedCharacterIterator_Attribute(_r2.o, _r0.i, _r1.o);
     label24:;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 173)
+    XMLVM_CHECK_NPE(2)
     ((gnu_java_text_AttributedFormatBuffer*) _r2.o)->fields.gnu_java_text_AttributedFormatBuffer.defaultAttr_ = _r3.o;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 174)
+    XMLVM_CHECK_NPE(2)
     ((gnu_java_text_AttributedFormatBuffer*) _r2.o)->fields.gnu_java_text_AttributedFormatBuffer.startingRange_ = _r0.i;
     goto label4;
     //XMLVM_END_WRAPPER
@@ -927,6 +959,7 @@ JAVA_OBJECT gnu_java_text_AttributedFormatBuffer_getDefaultAttribute__(JAVA_OBJE
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 179)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_java_text_AttributedFormatBuffer*) _r1.o)->fields.gnu_java_text_AttributedFormatBuffer.defaultAttr_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -944,7 +977,9 @@ void gnu_java_text_AttributedFormatBuffer_cutTail___int(JAVA_OBJECT me, JAVA_INT
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 184)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_java_text_AttributedFormatBuffer*) _r2.o)->fields.gnu_java_text_AttributedFormatBuffer.buffer_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_java_text_AttributedFormatBuffer*) _r2.o)->fields.gnu_java_text_AttributedFormatBuffer.buffer_;
     //gnu_java_lang_CPStringBuilder_length__[10]
     XMLVM_CHECK_NPE(1)
@@ -966,6 +1001,7 @@ JAVA_INT gnu_java_text_AttributedFormatBuffer_length__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 189)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_java_text_AttributedFormatBuffer*) _r1.o)->fields.gnu_java_text_AttributedFormatBuffer.buffer_;
     //gnu_java_lang_CPStringBuilder_length__[10]
     XMLVM_CHECK_NPE(0)
@@ -984,25 +1020,30 @@ void gnu_java_text_AttributedFormatBuffer_clear__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 194)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_java_text_AttributedFormatBuffer*) _r2.o)->fields.gnu_java_text_AttributedFormatBuffer.buffer_;
     _r1.i = 0;
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_setLength___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 195)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_java_text_AttributedFormatBuffer*) _r2.o)->fields.gnu_java_text_AttributedFormatBuffer.ranges_;
     //java_util_ArrayList_clear__[8]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) ((java_util_ArrayList*) _r0.o)->tib->vtable[8])(_r0.o);
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 196)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_java_text_AttributedFormatBuffer*) _r2.o)->fields.gnu_java_text_AttributedFormatBuffer.attributes_;
     //java_util_ArrayList_clear__[8]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) ((java_util_ArrayList*) _r0.o)->tib->vtable[8])(_r0.o);
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 197)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(2)
     ((gnu_java_text_AttributedFormatBuffer*) _r2.o)->fields.gnu_java_text_AttributedFormatBuffer.defaultAttr_ = _r0.o;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 198)
     _r0.i = -1;
+    XMLVM_CHECK_NPE(2)
     ((gnu_java_text_AttributedFormatBuffer*) _r2.o)->fields.gnu_java_text_AttributedFormatBuffer.startingRange_ = _r0.i;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 199)
     XMLVM_EXIT_METHOD()
@@ -1023,9 +1064,12 @@ void gnu_java_text_AttributedFormatBuffer_sync__(JAVA_OBJECT me)
     _r5.o = me;
     _r4.i = 0;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 207)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((gnu_java_text_AttributedFormatBuffer*) _r5.o)->fields.gnu_java_text_AttributedFormatBuffer.startingRange_;
     if (_r1.i < 0) goto label15;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((gnu_java_text_AttributedFormatBuffer*) _r5.o)->fields.gnu_java_text_AttributedFormatBuffer.startingRange_;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((gnu_java_text_AttributedFormatBuffer*) _r5.o)->fields.gnu_java_text_AttributedFormatBuffer.buffer_;
     //gnu_java_lang_CPStringBuilder_length__[10]
     XMLVM_CHECK_NPE(2)
@@ -1037,29 +1081,36 @@ void gnu_java_text_AttributedFormatBuffer_sync__(JAVA_OBJECT me)
     return;
     label16:;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 210)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_java_text_AttributedFormatBuffer*) _r5.o)->fields.gnu_java_text_AttributedFormatBuffer.buffer_;
     //gnu_java_lang_CPStringBuilder_length__[10]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((gnu_java_lang_CPStringBuilder*) _r1.o)->tib->vtable[10])(_r1.o);
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((gnu_java_text_AttributedFormatBuffer*) _r5.o)->fields.gnu_java_text_AttributedFormatBuffer.defaultAttr_;
     XMLVM_CHECK_NPE(5)
     gnu_java_text_AttributedFormatBuffer_addAttribute___int_java_text_AttributedCharacterIterator_Attribute(_r5.o, _r1.i, _r2.o);
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 212)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_java_text_AttributedFormatBuffer*) _r5.o)->fields.gnu_java_text_AttributedFormatBuffer.ranges_;
     //java_util_ArrayList_size__[16]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_util_ArrayList*) _r1.o)->tib->vtable[16])(_r1.o);
     if (!__TIB_int.classInitialized) __INIT_int();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_int, _r1.i);
+    XMLVM_CHECK_NPE(5)
     ((gnu_java_text_AttributedFormatBuffer*) _r5.o)->fields.gnu_java_text_AttributedFormatBuffer.a_ranges_ = _r1.o;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 213)
     _r0.i = 0;
     label38:;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_java_text_AttributedFormatBuffer*) _r5.o)->fields.gnu_java_text_AttributedFormatBuffer.a_ranges_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i >= _r1.i) goto label64;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 214)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((gnu_java_text_AttributedFormatBuffer*) _r5.o)->fields.gnu_java_text_AttributedFormatBuffer.a_ranges_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_java_text_AttributedFormatBuffer*) _r5.o)->fields.gnu_java_text_AttributedFormatBuffer.ranges_;
     //java_util_ArrayList_get___int[21]
     XMLVM_CHECK_NPE(1)
@@ -1076,19 +1127,24 @@ void gnu_java_text_AttributedFormatBuffer_sync__(JAVA_OBJECT me)
     goto label38;
     label64:;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 216)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_java_text_AttributedFormatBuffer*) _r5.o)->fields.gnu_java_text_AttributedFormatBuffer.attributes_;
     //java_util_ArrayList_size__[16]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_util_ArrayList*) _r1.o)->tib->vtable[16])(_r1.o);
     if (!__TIB_java_util_HashMap.classInitialized) __INIT_java_util_HashMap();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_java_util_HashMap, _r1.i);
+    XMLVM_CHECK_NPE(5)
     ((gnu_java_text_AttributedFormatBuffer*) _r5.o)->fields.gnu_java_text_AttributedFormatBuffer.a_attributes_ = _r1.o;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 217)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_java_text_AttributedFormatBuffer*) _r5.o)->fields.gnu_java_text_AttributedFormatBuffer.attributes_;
     //java_util_ArrayList_toArray__[17]
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_ArrayList*) _r1.o)->tib->vtable[17])(_r1.o);
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((gnu_java_text_AttributedFormatBuffer*) _r5.o)->fields.gnu_java_text_AttributedFormatBuffer.a_attributes_;
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((gnu_java_text_AttributedFormatBuffer*) _r5.o)->fields.gnu_java_text_AttributedFormatBuffer.a_attributes_;
     _r3.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r3.o));
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r4.i, _r2.o, _r4.i, _r3.i);
@@ -1104,6 +1160,7 @@ JAVA_OBJECT gnu_java_text_AttributedFormatBuffer_getBuffer__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 228)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_java_text_AttributedFormatBuffer*) _r1.o)->fields.gnu_java_text_AttributedFormatBuffer.buffer_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1118,6 +1175,7 @@ JAVA_OBJECT gnu_java_text_AttributedFormatBuffer_getRanges__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 238)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_java_text_AttributedFormatBuffer*) _r1.o)->fields.gnu_java_text_AttributedFormatBuffer.a_ranges_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1132,6 +1190,7 @@ JAVA_OBJECT gnu_java_text_AttributedFormatBuffer_getAttributes__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AttributedFormatBuffer.java", 249)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_java_text_AttributedFormatBuffer*) _r1.o)->fields.gnu_java_text_AttributedFormatBuffer.a_attributes_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

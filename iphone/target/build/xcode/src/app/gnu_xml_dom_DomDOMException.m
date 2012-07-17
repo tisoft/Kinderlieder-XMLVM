@@ -344,10 +344,13 @@ void gnu_xml_dom_DomDOMException___INIT____short_java_lang_String_org_w3c_dom_No
     XMLVM_CHECK_NPE(1)
     org_w3c_dom_DOMException___INIT____short_java_lang_String(_r1.o, _r2.i, _r0.o);
     XMLVM_SOURCE_POSITION("DomDOMException.java", 83)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomDOMException*) _r1.o)->fields.gnu_xml_dom_DomDOMException.data_ = _r3.o;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 84)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomDOMException*) _r1.o)->fields.gnu_xml_dom_DomDOMException.node_ = _r4.o;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 85)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomDOMException*) _r1.o)->fields.gnu_xml_dom_DomDOMException.value_ = _r5.i;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 86)
     XMLVM_EXIT_METHOD()
@@ -363,6 +366,7 @@ JAVA_OBJECT gnu_xml_dom_DomDOMException_getNode__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 91)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomDOMException*) _r1.o)->fields.gnu_xml_dom_DomDOMException.node_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -377,6 +381,7 @@ JAVA_OBJECT gnu_xml_dom_DomDOMException_getData__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 97)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomDOMException*) _r1.o)->fields.gnu_xml_dom_DomDOMException.data_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -391,6 +396,7 @@ JAVA_INT gnu_xml_dom_DomDOMException_getValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 103)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_dom_DomDOMException*) _r1.o)->fields.gnu_xml_dom_DomDOMException.value_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -409,6 +415,7 @@ JAVA_OBJECT gnu_xml_dom_DomDOMException_getMessage__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     _r0.o = java_lang_Throwable_getMessage__(_r2.o);
     XMLVM_SOURCE_POSITION("DomDOMException.java", 114)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_dom_DomDOMException*) _r2.o)->fields.gnu_xml_dom_DomDOMException.data_;
     if (_r1.o == JAVA_NULL) goto label33;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 116)
@@ -420,6 +427,7 @@ JAVA_OBJECT gnu_xml_dom_DomDOMException_getMessage__(JAVA_OBJECT me)
     _r0.o = xmlvm_create_java_string_from_pool(1939);
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_dom_DomDOMException*) _r2.o)->fields.gnu_xml_dom_DomDOMException.data_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
@@ -428,6 +436,7 @@ JAVA_OBJECT gnu_xml_dom_DomDOMException_getMessage__(JAVA_OBJECT me)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[5])(_r0.o);
     label33:;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 118)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((gnu_xml_dom_DomDOMException*) _r2.o)->fields.gnu_xml_dom_DomDOMException.value_;
     if (_r1.i == 0) goto label62;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 120)
@@ -439,6 +448,7 @@ JAVA_OBJECT gnu_xml_dom_DomDOMException_getMessage__(JAVA_OBJECT me)
     _r0.o = xmlvm_create_java_string_from_pool(1940);
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((gnu_xml_dom_DomDOMException*) _r2.o)->fields.gnu_xml_dom_DomDOMException.value_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);
@@ -447,6 +457,7 @@ JAVA_OBJECT gnu_xml_dom_DomDOMException_getMessage__(JAVA_OBJECT me)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[5])(_r0.o);
     label62:;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 122)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_dom_DomDOMException*) _r2.o)->fields.gnu_xml_dom_DomDOMException.node_;
     if (_r1.o == JAVA_NULL) goto label95;
     XMLVM_SOURCE_POSITION("DomDOMException.java", 124)
@@ -458,6 +469,7 @@ JAVA_OBJECT gnu_xml_dom_DomDOMException_getMessage__(JAVA_OBJECT me)
     _r0.o = xmlvm_create_java_string_from_pool(1941);
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_dom_DomDOMException*) _r2.o)->fields.gnu_xml_dom_DomDOMException.node_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeName__])(_r1.o);

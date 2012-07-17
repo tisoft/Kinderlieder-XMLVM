@@ -243,6 +243,7 @@ void java_nio_charset_UnsupportedCharsetException___INIT____java_lang_String(JAV
     XMLVM_CHECK_NPE(1)
     java_lang_IllegalArgumentException___INIT____java_lang_String(_r1.o, _r0.o);
     XMLVM_SOURCE_POSITION("UnsupportedCharsetException.java", 47)
+    XMLVM_CHECK_NPE(1)
     ((java_nio_charset_UnsupportedCharsetException*) _r1.o)->fields.java_nio_charset_UnsupportedCharsetException.charsetName_ = _r2.o;
     XMLVM_SOURCE_POSITION("UnsupportedCharsetException.java", 48)
     XMLVM_EXIT_METHOD()
@@ -258,6 +259,7 @@ JAVA_OBJECT java_nio_charset_UnsupportedCharsetException_getCharsetName__(JAVA_O
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("UnsupportedCharsetException.java", 56)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_charset_UnsupportedCharsetException*) _r1.o)->fields.java_nio_charset_UnsupportedCharsetException.charsetName_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

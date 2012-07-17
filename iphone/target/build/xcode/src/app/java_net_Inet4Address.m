@@ -480,6 +480,7 @@ void java_net_Inet4Address___INIT____byte_1ARRAY(JAVA_OBJECT me, JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(0)
     java_net_InetAddress___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Inet4Address.java", 37)
+    XMLVM_CHECK_NPE(0)
     ((java_net_InetAddress*) _r0.o)->fields.java_net_InetAddress.ipaddress_ = _r1.o;
     XMLVM_SOURCE_POSITION("Inet4Address.java", 38)
     XMLVM_EXIT_METHOD()
@@ -501,8 +502,10 @@ void java_net_Inet4Address___INIT____byte_1ARRAY_java_lang_String(JAVA_OBJECT me
     XMLVM_CHECK_NPE(0)
     java_net_InetAddress___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Inet4Address.java", 41)
+    XMLVM_CHECK_NPE(0)
     ((java_net_InetAddress*) _r0.o)->fields.java_net_InetAddress.ipaddress_ = _r1.o;
     XMLVM_SOURCE_POSITION("Inet4Address.java", 42)
+    XMLVM_CHECK_NPE(0)
     ((java_net_InetAddress*) _r0.o)->fields.java_net_InetAddress.hostName_ = _r2.o;
     XMLVM_SOURCE_POSITION("Inet4Address.java", 43)
     XMLVM_EXIT_METHOD()
@@ -521,6 +524,7 @@ JAVA_BOOLEAN java_net_Inet4Address_isMulticastAddress__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("Inet4Address.java", 54)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_net_InetAddress*) _r3.o)->fields.java_net_InetAddress.ipaddress_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -549,10 +553,12 @@ JAVA_BOOLEAN java_net_Inet4Address_isAnyLocalAddress__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Inet4Address.java", 66)
     _r0.i = 0;
     label1:;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_InetAddress*) _r2.o)->fields.java_net_InetAddress.ipaddress_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i >= _r1.i) goto label17;
     XMLVM_SOURCE_POSITION("Inet4Address.java", 67)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_InetAddress*) _r2.o)->fields.java_net_InetAddress.ipaddress_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -584,6 +590,7 @@ JAVA_BOOLEAN java_net_Inet4Address_isLoopbackAddress__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("Inet4Address.java", 83)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_net_InetAddress*) _r3.o)->fields.java_net_InetAddress.ipaddress_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -614,6 +621,7 @@ JAVA_BOOLEAN java_net_Inet4Address_isLinkLocalAddress__(JAVA_OBJECT me)
     _r3.i = 1;
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("Inet4Address.java", 101)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_InetAddress*) _r4.o)->fields.java_net_InetAddress.ipaddress_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -621,6 +629,7 @@ JAVA_BOOLEAN java_net_Inet4Address_isLinkLocalAddress__(JAVA_OBJECT me)
     _r0.i = _r0.i & 255;
     _r1.i = 169;
     if (_r0.i != _r1.i) goto label24;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_InetAddress*) _r4.o)->fields.java_net_InetAddress.ipaddress_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r3.i);
@@ -651,6 +660,7 @@ JAVA_BOOLEAN java_net_Inet4Address_isSiteLocalAddress__(JAVA_OBJECT me)
     _r3.i = 1;
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("Inet4Address.java", 117)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_InetAddress*) _r4.o)->fields.java_net_InetAddress.ipaddress_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -658,6 +668,7 @@ JAVA_BOOLEAN java_net_Inet4Address_isSiteLocalAddress__(JAVA_OBJECT me)
     _r0.i = _r0.i & 255;
     _r1.i = 10;
     if (_r0.i == _r1.i) goto label62;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_InetAddress*) _r4.o)->fields.java_net_InetAddress.ipaddress_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -665,6 +676,7 @@ JAVA_BOOLEAN java_net_Inet4Address_isSiteLocalAddress__(JAVA_OBJECT me)
     _r0.i = _r0.i & 255;
     _r1.i = 172;
     if (_r0.i != _r1.i) goto label42;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_InetAddress*) _r4.o)->fields.java_net_InetAddress.ipaddress_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r3.i);
@@ -672,6 +684,7 @@ JAVA_BOOLEAN java_net_Inet4Address_isSiteLocalAddress__(JAVA_OBJECT me)
     _r0.i = _r0.i & 255;
     _r1.i = 15;
     if (_r0.i <= _r1.i) goto label42;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_InetAddress*) _r4.o)->fields.java_net_InetAddress.ipaddress_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r3.i);
@@ -680,6 +693,7 @@ JAVA_BOOLEAN java_net_Inet4Address_isSiteLocalAddress__(JAVA_OBJECT me)
     _r1.i = 32;
     if (_r0.i < _r1.i) goto label62;
     label42:;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_InetAddress*) _r4.o)->fields.java_net_InetAddress.ipaddress_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -687,6 +701,7 @@ JAVA_BOOLEAN java_net_Inet4Address_isSiteLocalAddress__(JAVA_OBJECT me)
     _r0.i = _r0.i & 255;
     _r1.i = 192;
     if (_r0.i != _r1.i) goto label64;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_InetAddress*) _r4.o)->fields.java_net_InetAddress.ipaddress_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r3.i);
@@ -729,6 +744,7 @@ JAVA_BOOLEAN java_net_Inet4Address_isMCGlobal__(JAVA_OBJECT me)
     return _r1.i;
     label9:;
     XMLVM_SOURCE_POSITION("Inet4Address.java", 138)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_net_InetAddress*) _r4.o)->fields.java_net_InetAddress.ipaddress_;
     _r0.i = java_net_InetAddress_bytesToInt___byte_1ARRAY_int(_r1.o, _r3.i);
     _r1.i = ((JAVA_UINT) _r0.i) >> (0x1f & ((JAVA_UINT) 8));
@@ -777,6 +793,7 @@ JAVA_BOOLEAN java_net_Inet4Address_isMCLinkLocal__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("Inet4Address.java", 183)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_net_InetAddress*) _r3.o)->fields.java_net_InetAddress.ipaddress_;
     _r0.i = java_net_InetAddress_bytesToInt___byte_1ARRAY_int(_r0.o, _r2.i);
     _r0.i = ((JAVA_UINT) _r0.i) >> (0x1f & ((JAVA_UINT) 8));
@@ -803,6 +820,7 @@ JAVA_BOOLEAN java_net_Inet4Address_isMCSiteLocal__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("Inet4Address.java", 196)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_net_InetAddress*) _r3.o)->fields.java_net_InetAddress.ipaddress_;
     _r0.i = java_net_InetAddress_bytesToInt___byte_1ARRAY_int(_r0.o, _r2.i);
     _r0.i = ((JAVA_UINT) _r0.i) >> (0x1f & ((JAVA_UINT) 16));
@@ -829,6 +847,7 @@ JAVA_BOOLEAN java_net_Inet4Address_isMCOrgLocal__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("Inet4Address.java", 210)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_InetAddress*) _r3.o)->fields.java_net_InetAddress.ipaddress_;
     _r1.i = java_net_InetAddress_bytesToInt___byte_1ARRAY_int(_r1.o, _r2.i);
     _r0.i = ((JAVA_UINT) _r1.i) >> (0x1f & ((JAVA_UINT) 16));
@@ -866,6 +885,7 @@ JAVA_OBJECT java_net_Inet4Address_getHostAddress__(JAVA_OBJECT me)
     _r2.i = 4;
     if (_r1.i >= _r2.i) goto label29;
     XMLVM_SOURCE_POSITION("Inet4Address.java", 223)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_net_InetAddress*) _r3.o)->fields.java_net_InetAddress.ipaddress_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -903,6 +923,7 @@ JAVA_INT java_net_Inet4Address_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Inet4Address.java", 238)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_InetAddress*) _r2.o)->fields.java_net_InetAddress.ipaddress_;
     _r1.i = 0;
     _r0.i = java_net_InetAddress_bytesToInt___byte_1ARRAY_int(_r0.o, _r1.i);
@@ -939,7 +960,9 @@ JAVA_OBJECT java_net_Inet4Address_writeReplace__(JAVA_OBJECT me)
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Inet4Address.java", 256)
     _r0.o = __NEW_java_net_InetAddress();
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_InetAddress*) _r3.o)->fields.java_net_InetAddress.ipaddress_;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_net_InetAddress*) _r3.o)->fields.java_net_InetAddress.hostName_;
     XMLVM_CHECK_NPE(0)
     java_net_InetAddress___INIT____byte_1ARRAY_java_lang_String(_r0.o, _r1.o, _r2.o);

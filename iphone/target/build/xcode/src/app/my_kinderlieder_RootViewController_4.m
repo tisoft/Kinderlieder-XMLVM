@@ -217,6 +217,7 @@ void my_kinderlieder_RootViewController_4___INIT____my_kinderlieder_RootViewCont
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("RootViewController.java", 69)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_RootViewController_4*) _r0.o)->fields.my_kinderlieder_RootViewController_4.this_0_ = _r1.o;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UITableViewDelegate___INIT___(_r0.o);
@@ -241,6 +242,7 @@ void my_kinderlieder_RootViewController_4_didSelectRowAtIndexPath___org_xmlvm_ip
     _r6.o = n2;
     _r3.i = 1;
     XMLVM_SOURCE_POSITION("RootViewController.java", 72)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((my_kinderlieder_RootViewController_4*) _r4.o)->fields.my_kinderlieder_RootViewController_4.this_0_;
     _r1.o = my_kinderlieder_RootViewController_access$100___my_kinderlieder_RootViewController(_r1.o);
     XMLVM_CHECK_NPE(6)
@@ -249,11 +251,13 @@ void my_kinderlieder_RootViewController_4_didSelectRowAtIndexPath___org_xmlvm_ip
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_get___int])(_r1.o, _r2.i);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("RootViewController.java", 73)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((my_kinderlieder_RootViewController_4*) _r4.o)->fields.my_kinderlieder_RootViewController_4.this_0_;
     _r1.o = my_kinderlieder_RootViewController_access$300___my_kinderlieder_RootViewController(_r1.o);
     XMLVM_CHECK_NPE(1)
     my_kinderlieder_PdfViewController_show___my_kinderlieder_SongInfo(_r1.o, _r0.o);
     XMLVM_SOURCE_POSITION("RootViewController.java", 74)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((my_kinderlieder_RootViewController_4*) _r4.o)->fields.my_kinderlieder_RootViewController_4.this_0_;
     XMLVM_CHECK_NPE(1)
     _r1.o = org_xmlvm_iphone_UIViewController_getNavigationController__(_r1.o);
@@ -261,9 +265,11 @@ void my_kinderlieder_RootViewController_4_didSelectRowAtIndexPath___org_xmlvm_ip
     XMLVM_CHECK_NPE(1)
     org_xmlvm_iphone_UINavigationController_setToolbarHidden___boolean_boolean(_r1.o, _r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("RootViewController.java", 75)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((my_kinderlieder_RootViewController_4*) _r4.o)->fields.my_kinderlieder_RootViewController_4.this_0_;
     XMLVM_CHECK_NPE(1)
     _r1.o = org_xmlvm_iphone_UIViewController_getNavigationController__(_r1.o);
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((my_kinderlieder_RootViewController_4*) _r4.o)->fields.my_kinderlieder_RootViewController_4.this_0_;
     _r2.o = my_kinderlieder_RootViewController_access$300___my_kinderlieder_RootViewController(_r2.o);
     XMLVM_CHECK_NPE(1)

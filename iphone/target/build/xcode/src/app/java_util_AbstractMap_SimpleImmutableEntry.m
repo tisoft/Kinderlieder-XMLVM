@@ -360,8 +360,10 @@ void java_util_AbstractMap_SimpleImmutableEntry___INIT____java_lang_Object_java_
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("AbstractMap.java", 64)
+    XMLVM_CHECK_NPE(0)
     ((java_util_AbstractMap_SimpleImmutableEntry*) _r0.o)->fields.java_util_AbstractMap_SimpleImmutableEntry.key_ = _r1.o;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 65)
+    XMLVM_CHECK_NPE(0)
     ((java_util_AbstractMap_SimpleImmutableEntry*) _r0.o)->fields.java_util_AbstractMap_SimpleImmutableEntry.value_ = _r2.o;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 66)
     XMLVM_EXIT_METHOD()
@@ -384,10 +386,12 @@ void java_util_AbstractMap_SimpleImmutableEntry___INIT____java_util_Map_Entry(JA
     XMLVM_SOURCE_POSITION("AbstractMap.java", 75)
     XMLVM_CHECK_NPE(2)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_Entry_getKey__])(_r2.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_AbstractMap_SimpleImmutableEntry*) _r1.o)->fields.java_util_AbstractMap_SimpleImmutableEntry.key_ = _r0.o;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 76)
     XMLVM_CHECK_NPE(2)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_Entry_getValue__])(_r2.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_AbstractMap_SimpleImmutableEntry*) _r1.o)->fields.java_util_AbstractMap_SimpleImmutableEntry.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 77)
     XMLVM_EXIT_METHOD()
@@ -403,6 +407,7 @@ JAVA_OBJECT java_util_AbstractMap_SimpleImmutableEntry_getKey__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 85)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_AbstractMap_SimpleImmutableEntry*) _r1.o)->fields.java_util_AbstractMap_SimpleImmutableEntry.key_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -417,6 +422,7 @@ JAVA_OBJECT java_util_AbstractMap_SimpleImmutableEntry_getValue__(JAVA_OBJECT me
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 94)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_AbstractMap_SimpleImmutableEntry*) _r1.o)->fields.java_util_AbstractMap_SimpleImmutableEntry.value_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -470,6 +476,7 @@ JAVA_BOOLEAN java_util_AbstractMap_SimpleImmutableEntry_equals___java_lang_Objec
     XMLVM_SOURCE_POSITION("AbstractMap.java", 125)
     _r5.o = _r5.o;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 126)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_AbstractMap_SimpleImmutableEntry*) _r4.o)->fields.java_util_AbstractMap_SimpleImmutableEntry.key_;
     if (_r0.o != JAVA_NULL) goto label34;
     XMLVM_CHECK_NPE(5)
@@ -477,6 +484,7 @@ JAVA_BOOLEAN java_util_AbstractMap_SimpleImmutableEntry_equals___java_lang_Objec
     if (_r0.o != JAVA_NULL) goto label46;
     label22:;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 128)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_AbstractMap_SimpleImmutableEntry*) _r4.o)->fields.java_util_AbstractMap_SimpleImmutableEntry.value_;
     if (_r0.o != JAVA_NULL) goto label48;
     XMLVM_CHECK_NPE(5)
@@ -487,6 +495,7 @@ JAVA_BOOLEAN java_util_AbstractMap_SimpleImmutableEntry_equals___java_lang_Objec
     XMLVM_SOURCE_POSITION("AbstractMap.java", 129)
     goto label5;
     label34:;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_AbstractMap_SimpleImmutableEntry*) _r4.o)->fields.java_util_AbstractMap_SimpleImmutableEntry.key_;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 127)
     XMLVM_CHECK_NPE(5)
@@ -499,6 +508,7 @@ JAVA_BOOLEAN java_util_AbstractMap_SimpleImmutableEntry_equals___java_lang_Objec
     _r0 = _r2;
     goto label5;
     label48:;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_AbstractMap_SimpleImmutableEntry*) _r4.o)->fields.java_util_AbstractMap_SimpleImmutableEntry.value_;
     XMLVM_CHECK_NPE(5)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_Entry_getValue__])(_r5.o);
@@ -524,11 +534,13 @@ JAVA_INT java_util_AbstractMap_SimpleImmutableEntry_hashCode__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 141)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_AbstractMap_SimpleImmutableEntry*) _r3.o)->fields.java_util_AbstractMap_SimpleImmutableEntry.key_;
     if (_r0.o != JAVA_NULL) goto label13;
     _r0 = _r2;
     label6:;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 142)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_AbstractMap_SimpleImmutableEntry*) _r3.o)->fields.java_util_AbstractMap_SimpleImmutableEntry.value_;
     if (_r1.o != JAVA_NULL) goto label20;
     _r1 = _r2;
@@ -537,12 +549,14 @@ JAVA_INT java_util_AbstractMap_SimpleImmutableEntry_hashCode__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label13:;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_AbstractMap_SimpleImmutableEntry*) _r3.o)->fields.java_util_AbstractMap_SimpleImmutableEntry.key_;
     //java_lang_Object_hashCode__[4]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_Object*) _r0.o)->tib->vtable[4])(_r0.o);
     goto label6;
     label20:;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_AbstractMap_SimpleImmutableEntry*) _r3.o)->fields.java_util_AbstractMap_SimpleImmutableEntry.value_;
     //java_lang_Object_hashCode__[4]
     XMLVM_CHECK_NPE(1)
@@ -563,6 +577,7 @@ JAVA_OBJECT java_util_AbstractMap_SimpleImmutableEntry_toString__(JAVA_OBJECT me
     _r0.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_AbstractMap_SimpleImmutableEntry*) _r2.o)->fields.java_util_AbstractMap_SimpleImmutableEntry.key_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);
@@ -570,6 +585,7 @@ JAVA_OBJECT java_util_AbstractMap_SimpleImmutableEntry_toString__(JAVA_OBJECT me
     _r1.o = xmlvm_create_java_string_from_pool(162);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_AbstractMap_SimpleImmutableEntry*) _r2.o)->fields.java_util_AbstractMap_SimpleImmutableEntry.value_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);

@@ -23,7 +23,7 @@
 #define __XMLVM_H__
 
 
-//#import <math.h>
+#include <math.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -108,8 +108,8 @@ typedef double             JAVA_DOUBLE;
 typedef void*              JAVA_OBJECT;
 
 //TODO which values should we use for Double.INFINITY?
-#define Infinity 0
-#define NaN 0
+#define Infinity INFINITY
+#define NaN NAN
 
 typedef char              JAVA_ARRAY_BYTE;
 typedef char              JAVA_ARRAY_BOOLEAN;
@@ -166,6 +166,7 @@ typedef JAVA_OBJECT (*Func_OOOI)(JAVA_OBJECT o1, JAVA_OBJECT o2, JAVA_INT i1);
 typedef JAVA_OBJECT (*Func_OOII)(JAVA_OBJECT o1, JAVA_INT i1, JAVA_INT i2);
 typedef JAVA_BOOLEAN (*Func_BO)(JAVA_OBJECT o1);
 typedef JAVA_BOOLEAN (*Func_BOO)(JAVA_OBJECT o1, JAVA_OBJECT o2);
+typedef JAVA_BOOLEAN (*Func_BOOO)(JAVA_OBJECT o1, JAVA_OBJECT o2, JAVA_OBJECT o3);
 typedef JAVA_BOOLEAN (*Func_BOOOO)(JAVA_OBJECT o1, JAVA_OBJECT o2, JAVA_OBJECT o3, JAVA_OBJECT o4);
 typedef JAVA_BOOLEAN (*Func_BOOOOO)(JAVA_OBJECT o1, JAVA_OBJECT o2, JAVA_OBJECT o3, JAVA_OBJECT o4, JAVA_OBJECT o5);
 typedef JAVA_BOOLEAN (*Func_BOOOI)(JAVA_OBJECT o1, JAVA_OBJECT o2, JAVA_OBJECT o3, JAVA_INT o4);
@@ -516,8 +517,8 @@ void xmlvmUnwindException(XMLVM_STACK_TRACE_CURRENT* threadStack, int unwindToSt
 void xmlvm_init();
 void xmlvm_destroy(java_lang_Thread* mainThread);
 
-#ifdef XMLVM_NEW_IOS_API
+// A list of Java instances which are currently referenced by non-C types.
+// This is used to avoid premature garbage collection.
 JAVA_OBJECT reference_array;
-#endif
 
 #endif

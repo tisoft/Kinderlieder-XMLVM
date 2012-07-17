@@ -338,8 +338,10 @@ void java_util_regex_CIBackReferenceSet___INIT____int_int(JAVA_OBJECT me, JAVA_I
     XMLVM_CHECK_NPE(0)
     java_util_regex_JointSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("CIBackReferenceSet.java", 41)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_CIBackReferenceSet*) _r0.o)->fields.java_util_regex_CIBackReferenceSet.referencedGroup_ = _r1.i;
     XMLVM_SOURCE_POSITION("CIBackReferenceSet.java", 42)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_CIBackReferenceSet*) _r0.o)->fields.java_util_regex_CIBackReferenceSet.consCounter_ = _r2.i;
     XMLVM_SOURCE_POSITION("CIBackReferenceSet.java", 43)
     XMLVM_EXIT_METHOD()
@@ -423,12 +425,14 @@ JAVA_INT java_util_regex_CIBackReferenceSet_matches___int_java_lang_CharSequence
     _r2.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[8])(_r0.o);
     if (_r1.i < _r2.i) goto label48;
     XMLVM_SOURCE_POSITION("CIBackReferenceSet.java", 65)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_regex_CIBackReferenceSet*) _r5.o)->fields.java_util_regex_CIBackReferenceSet.consCounter_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(0)
     _r2.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[8])(_r0.o);
     XMLVM_CHECK_NPE(8)
     java_util_regex_MatchResultImpl_setConsumed___int_int(_r8.o, _r1.i, _r2.i);
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_regex_AbstractSet*) _r5.o)->fields.java_util_regex_AbstractSet.next_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(0)
@@ -474,6 +478,7 @@ JAVA_OBJECT java_util_regex_CIBackReferenceSet_getNext__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CIBackReferenceSet.java", 71)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_AbstractSet*) _r1.o)->fields.java_util_regex_AbstractSet.next_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -489,6 +494,7 @@ void java_util_regex_CIBackReferenceSet_setNext___java_util_regex_AbstractSet(JA
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("CIBackReferenceSet.java", 75)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractSet*) _r0.o)->fields.java_util_regex_AbstractSet.next_ = _r1.o;
     XMLVM_SOURCE_POSITION("CIBackReferenceSet.java", 76)
     XMLVM_EXIT_METHOD()
@@ -506,6 +512,7 @@ JAVA_OBJECT java_util_regex_CIBackReferenceSet_getString___java_util_regex_Match
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("CIBackReferenceSet.java", 79)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_CIBackReferenceSet*) _r1.o)->fields.java_util_regex_CIBackReferenceSet.referencedGroup_;
     XMLVM_CHECK_NPE(2)
     _r0.o = java_util_regex_MatchResultImpl_getGroupNoCheck___int(_r2.o, _r0.i);
@@ -529,6 +536,7 @@ JAVA_OBJECT java_util_regex_CIBackReferenceSet_getName__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(413);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_regex_JointSet*) _r2.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);
@@ -552,6 +560,7 @@ JAVA_BOOLEAN java_util_regex_CIBackReferenceSet_hasConsumed___java_util_regex_Ma
     _r3.o = me;
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("CIBackReferenceSet.java", 90)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_regex_CIBackReferenceSet*) _r3.o)->fields.java_util_regex_CIBackReferenceSet.consCounter_;
     XMLVM_CHECK_NPE(4)
     _r0.i = java_util_regex_MatchResultImpl_getConsumed___int(_r4.o, _r0.i);
@@ -560,6 +569,7 @@ JAVA_BOOLEAN java_util_regex_CIBackReferenceSet_hasConsumed___java_util_regex_Ma
     _r0.i = 0;
     label11:;
     XMLVM_SOURCE_POSITION("CIBackReferenceSet.java", 91)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_CIBackReferenceSet*) _r3.o)->fields.java_util_regex_CIBackReferenceSet.consCounter_;
     _r2.i = -1;
     XMLVM_CHECK_NPE(4)

@@ -248,10 +248,13 @@ void gnu_xml_aelfred2_XmlParser_ExternalIdentifiers___INIT____java_lang_String_j
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("XmlParser.java", 5776)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_aelfred2_XmlParser_ExternalIdentifiers*) _r0.o)->fields.gnu_xml_aelfred2_XmlParser_ExternalIdentifiers.publicId_ = _r1.o;
     XMLVM_SOURCE_POSITION("XmlParser.java", 5777)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_aelfred2_XmlParser_ExternalIdentifiers*) _r0.o)->fields.gnu_xml_aelfred2_XmlParser_ExternalIdentifiers.systemId_ = _r2.o;
     XMLVM_SOURCE_POSITION("XmlParser.java", 5778)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_aelfred2_XmlParser_ExternalIdentifiers*) _r0.o)->fields.gnu_xml_aelfred2_XmlParser_ExternalIdentifiers.baseUri_ = _r3.o;
     XMLVM_SOURCE_POSITION("XmlParser.java", 5779)
     XMLVM_EXIT_METHOD()

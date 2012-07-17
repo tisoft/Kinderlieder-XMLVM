@@ -693,7 +693,9 @@ JAVA_OBJECT java_math_Multiplication_karatsuba___java_math_BigInteger_java_math_
     _r7.o = n1;
     _r8.o = n2;
     XMLVM_SOURCE_POSITION("Multiplication.java", 108)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i <= _r1.i) goto label96;
     _r0 = _r7;
@@ -701,6 +703,7 @@ JAVA_OBJECT java_math_Multiplication_karatsuba___java_math_BigInteger_java_math_
     label8:;
     XMLVM_SOURCE_POSITION("Multiplication.java", 111)
     XMLVM_SOURCE_POSITION("Multiplication.java", 113)
+    XMLVM_CHECK_NPE(0)
     _r2.i = ((java_math_BigInteger*) _r0.o)->fields.java_math_BigInteger.numberLength_;
     _r3.i = 63;
     if (_r2.i >= _r3.i) goto label19;
@@ -712,6 +715,7 @@ JAVA_OBJECT java_math_Multiplication_karatsuba___java_math_BigInteger_java_math_
     return _r0.o;
     label19:;
     XMLVM_SOURCE_POSITION("Multiplication.java", 121)
+    XMLVM_CHECK_NPE(1)
     _r2.i = ((java_math_BigInteger*) _r1.o)->fields.java_math_BigInteger.numberLength_;
     _r2.i = _r2.i & -2;
     _r2.i = _r2.i << 4;
@@ -787,13 +791,17 @@ JAVA_OBJECT java_math_Multiplication_multiplyPAP___java_math_BigInteger_java_mat
     _r6.i = 2;
     _r5.i = 0;
     XMLVM_SOURCE_POSITION("Multiplication.java", 227)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     XMLVM_SOURCE_POSITION("Multiplication.java", 228)
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((java_math_BigInteger*) _r9.o)->fields.java_math_BigInteger.numberLength_;
     XMLVM_SOURCE_POSITION("Multiplication.java", 229)
     _r2.i = _r0.i + _r1.i;
     XMLVM_SOURCE_POSITION("Multiplication.java", 230)
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.sign_;
+    XMLVM_CHECK_NPE(9)
     _r4.i = ((java_math_BigInteger*) _r9.o)->fields.java_math_BigInteger.sign_;
     if (_r3.i == _r4.i) goto label43;
     _r3.i = -1;
@@ -801,10 +809,12 @@ JAVA_OBJECT java_math_Multiplication_multiplyPAP___java_math_BigInteger_java_mat
     XMLVM_SOURCE_POSITION("Multiplication.java", 232)
     if (_r2.i != _r6.i) goto label58;
     XMLVM_SOURCE_POSITION("Multiplication.java", 233)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r5.i);
     _r0.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r5.i];
+    XMLVM_CHECK_NPE(9)
     _r1.o = ((java_math_BigInteger*) _r9.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r5.i);
@@ -845,8 +855,10 @@ JAVA_OBJECT java_math_Multiplication_multiplyPAP___java_math_BigInteger_java_mat
     goto label42;
     label58:;
     XMLVM_SOURCE_POSITION("Multiplication.java", 240)
+    XMLVM_CHECK_NPE(8)
     _r4.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_SOURCE_POSITION("Multiplication.java", 241)
+    XMLVM_CHECK_NPE(9)
     _r5.o = ((java_math_BigInteger*) _r9.o)->fields.java_math_BigInteger.digits_;
     XMLVM_SOURCE_POSITION("Multiplication.java", 242)
     if (!__TIB_int.classInitialized) __INIT_int();
@@ -1096,6 +1108,7 @@ JAVA_OBJECT java_math_Multiplication_multiplyByPositiveInt___java_math_BigIntege
     _r6.i = 1;
     _r5.i = 0;
     XMLVM_SOURCE_POSITION("Multiplication.java", 317)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.sign_;
     XMLVM_SOURCE_POSITION("Multiplication.java", 318)
     if (_r0.i != 0) goto label10;
@@ -1107,8 +1120,10 @@ JAVA_OBJECT java_math_Multiplication_multiplyByPositiveInt___java_math_BigIntege
     return _r0.o;
     label10:;
     XMLVM_SOURCE_POSITION("Multiplication.java", 321)
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     XMLVM_SOURCE_POSITION("Multiplication.java", 322)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.digits_;
     XMLVM_SOURCE_POSITION("Multiplication.java", 324)
     if (_r1.i != _r6.i) goto label49;
@@ -1208,6 +1223,7 @@ JAVA_OBJECT java_math_Multiplication_pow___java_math_BigInteger_int(JAVA_OBJECT 
     _r1.o = java_math_BigInteger_multiply___java_math_BigInteger(_r1.o, _r0.o);
     label21:;
     XMLVM_SOURCE_POSITION("Multiplication.java", 354)
+    XMLVM_CHECK_NPE(0)
     _r3.i = ((java_math_BigInteger*) _r0.o)->fields.java_math_BigInteger.numberLength_;
     if (_r3.i != _r6.i) goto label32;
     XMLVM_SOURCE_POSITION("Multiplication.java", 355)
@@ -1219,8 +1235,11 @@ JAVA_OBJECT java_math_Multiplication_pow___java_math_BigInteger_int(JAVA_OBJECT 
     label32:;
     XMLVM_SOURCE_POSITION("Multiplication.java", 358)
     _r3.o = __NEW_java_math_BigInteger();
+    XMLVM_CHECK_NPE(0)
     _r4.o = ((java_math_BigInteger*) _r0.o)->fields.java_math_BigInteger.digits_;
+    XMLVM_CHECK_NPE(0)
     _r5.i = ((java_math_BigInteger*) _r0.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_math_BigInteger*) _r0.o)->fields.java_math_BigInteger.numberLength_;
     _r0.i = _r0.i << 1;
     if (!__TIB_int.classInitialized) __INIT_int();

@@ -317,10 +317,12 @@ void gnu_xml_dom_ls_WriterOutputStream___INIT____java_io_Writer(JAVA_OBJECT me, 
     XMLVM_CHECK_NPE(1)
     java_io_OutputStream___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("WriterOutputStream.java", 58)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_ls_WriterOutputStream*) _r1.o)->fields.gnu_xml_dom_ls_WriterOutputStream.writer_ = _r2.o;
     XMLVM_SOURCE_POSITION("WriterOutputStream.java", 59)
     // "UTF-8"
     _r0.o = xmlvm_create_java_string_from_pool(128);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_ls_WriterOutputStream*) _r1.o)->fields.gnu_xml_dom_ls_WriterOutputStream.encoding_ = _r0.o;
     XMLVM_SOURCE_POSITION("WriterOutputStream.java", 60)
     XMLVM_EXIT_METHOD()
@@ -337,6 +339,7 @@ void gnu_xml_dom_ls_WriterOutputStream_setEncoding___java_lang_String(JAVA_OBJEC
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("WriterOutputStream.java", 64)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_ls_WriterOutputStream*) _r0.o)->fields.gnu_xml_dom_ls_WriterOutputStream.encoding_ = _r1.o;
     XMLVM_SOURCE_POSITION("WriterOutputStream.java", 65)
     XMLVM_EXIT_METHOD()
@@ -354,6 +357,7 @@ void gnu_xml_dom_ls_WriterOutputStream_write___int(JAVA_OBJECT me, JAVA_INT n1)
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("WriterOutputStream.java", 70)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_ls_WriterOutputStream*) _r1.o)->fields.gnu_xml_dom_ls_WriterOutputStream.writer_;
     //java_io_Writer_write___int[14]
     XMLVM_CHECK_NPE(0)
@@ -402,8 +406,10 @@ void gnu_xml_dom_ls_WriterOutputStream_write___byte_1ARRAY_int_int(JAVA_OBJECT m
     _r5.i = n2;
     _r6.i = n3;
     XMLVM_SOURCE_POSITION("WriterOutputStream.java", 82)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_ls_WriterOutputStream*) _r3.o)->fields.gnu_xml_dom_ls_WriterOutputStream.writer_;
     _r1.o = __NEW_java_lang_String();
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_dom_ls_WriterOutputStream*) _r3.o)->fields.gnu_xml_dom_ls_WriterOutputStream.encoding_;
     XMLVM_CHECK_NPE(1)
     java_lang_String___INIT____byte_1ARRAY_int_int_java_lang_String(_r1.o, _r4.o, _r5.i, _r6.i, _r2.o);
@@ -424,6 +430,7 @@ void gnu_xml_dom_ls_WriterOutputStream_close__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("WriterOutputStream.java", 88)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_ls_WriterOutputStream*) _r1.o)->fields.gnu_xml_dom_ls_WriterOutputStream.writer_;
     //java_io_Writer_close__[10]
     XMLVM_CHECK_NPE(0)
@@ -442,6 +449,7 @@ void gnu_xml_dom_ls_WriterOutputStream_flush__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("WriterOutputStream.java", 94)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_ls_WriterOutputStream*) _r1.o)->fields.gnu_xml_dom_ls_WriterOutputStream.writer_;
     //java_io_Writer_flush__[11]
     XMLVM_CHECK_NPE(0)

@@ -343,6 +343,7 @@ void gnu_xml_dom_DomEntityReference___INIT____gnu_xml_dom_DomDocument_java_lang_
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_DomNode___INIT____short_gnu_xml_dom_DomDocument(_r1.o, _r0.i, _r2.o);
     XMLVM_SOURCE_POSITION("DomEntityReference.java", 98)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomEntityReference*) _r1.o)->fields.gnu_xml_dom_DomEntityReference.name_ = _r3.o;
     XMLVM_SOURCE_POSITION("DomEntityReference.java", 99)
     XMLVM_EXIT_METHOD()
@@ -358,6 +359,7 @@ JAVA_OBJECT gnu_xml_dom_DomEntityReference_getNodeName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomEntityReference.java", 107)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomEntityReference*) _r1.o)->fields.gnu_xml_dom_DomEntityReference.name_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -375,6 +377,7 @@ JAVA_OBJECT gnu_xml_dom_DomEntityReference_getBaseURI__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("DomEntityReference.java", 117)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomNode*) _r3.o)->fields.gnu_xml_dom_DomNode.owner_;
     //gnu_xml_dom_DomDocument_getDoctype__[68]
     XMLVM_CHECK_NPE(0)
@@ -391,6 +394,7 @@ JAVA_OBJECT gnu_xml_dom_DomEntityReference_getBaseURI__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DomEntityReference.java", 122)
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_DocumentType_getEntities__])(_r0.o);
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_dom_DomEntityReference*) _r3.o)->fields.gnu_xml_dom_DomEntityReference.name_;
     XMLVM_CHECK_NPE(0)
     _r3.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_NamedNodeMap_getNamedItem___java_lang_String])(_r0.o, _r1.o);

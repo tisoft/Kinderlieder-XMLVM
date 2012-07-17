@@ -509,6 +509,7 @@ void java_util_Collections_UnmodifiableList___INIT____java_util_List(JAVA_OBJECT
     XMLVM_CHECK_NPE(0)
     java_util_Collections_UnmodifiableCollection___INIT____java_util_Collection(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("Collections.java", 1093)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Collections_UnmodifiableList*) _r0.o)->fields.java_util_Collections_UnmodifiableList.list_ = _r1.o;
     XMLVM_SOURCE_POSITION("Collections.java", 1094)
     XMLVM_EXIT_METHOD()
@@ -564,6 +565,7 @@ JAVA_BOOLEAN java_util_Collections_UnmodifiableList_equals___java_lang_Object(JA
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 1106)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableList*) _r1.o)->fields.java_util_Collections_UnmodifiableList.list_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_equals___java_lang_Object])(_r0.o, _r2.o);
@@ -582,6 +584,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableList_get___int(JAVA_OBJECT me, JAV
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 1110)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableList*) _r1.o)->fields.java_util_Collections_UnmodifiableList.list_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_get___int])(_r0.o, _r2.i);
@@ -598,6 +601,7 @@ JAVA_INT java_util_Collections_UnmodifiableList_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1115)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableList*) _r1.o)->fields.java_util_Collections_UnmodifiableList.list_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_hashCode__])(_r0.o);
@@ -616,6 +620,7 @@ JAVA_INT java_util_Collections_UnmodifiableList_indexOf___java_lang_Object(JAVA_
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 1119)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableList*) _r1.o)->fields.java_util_Collections_UnmodifiableList.list_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_indexOf___java_lang_Object])(_r0.o, _r2.o);
@@ -634,6 +639,7 @@ JAVA_INT java_util_Collections_UnmodifiableList_lastIndexOf___java_lang_Object(J
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 1123)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableList*) _r1.o)->fields.java_util_Collections_UnmodifiableList.list_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_lastIndexOf___java_lang_Object])(_r0.o, _r2.o);
@@ -727,6 +733,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableList_subList___int_int(JAVA_OBJECT
     _r4.i = n2;
     XMLVM_SOURCE_POSITION("Collections.java", 1181)
     _r0.o = __NEW_java_util_Collections_UnmodifiableList();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_UnmodifiableList*) _r2.o)->fields.java_util_Collections_UnmodifiableList.list_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT, JAVA_INT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_subList___int_int])(_r1.o, _r3.i, _r4.i);
@@ -746,12 +753,14 @@ JAVA_OBJECT java_util_Collections_UnmodifiableList_readResolve__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1200)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_UnmodifiableList*) _r2.o)->fields.java_util_Collections_UnmodifiableList.list_;
     if (!__TIB_java_util_RandomAccess.classInitialized) __INIT_java_util_RandomAccess();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_java_util_RandomAccess);
     if (_r0.i == 0) goto label14;
     XMLVM_SOURCE_POSITION("Collections.java", 1201)
     _r0.o = __NEW_java_util_Collections_UnmodifiableRandomAccessList();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_UnmodifiableList*) _r2.o)->fields.java_util_Collections_UnmodifiableList.list_;
     XMLVM_CHECK_NPE(0)
     java_util_Collections_UnmodifiableRandomAccessList___INIT____java_util_List(_r0.o, _r1.o);

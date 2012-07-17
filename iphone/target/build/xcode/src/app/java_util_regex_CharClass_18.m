@@ -243,7 +243,9 @@ void java_util_regex_CharClass_18___INIT____java_util_regex_CharClass_java_util_
     _r1.o = n1;
     _r2.o = n2;
     XMLVM_SOURCE_POSITION("CharClass.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_CharClass_18*) _r0.o)->fields.java_util_regex_CharClass_18.this_0_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_CharClass_18*) _r0.o)->fields.java_util_regex_CharClass_18.val_bs_ = _r2.o;
     XMLVM_SOURCE_POSITION("CharClass.java", 529)
     XMLVM_CHECK_NPE(0)
@@ -264,7 +266,9 @@ JAVA_BOOLEAN java_util_regex_CharClass_18_contains___int(JAVA_OBJECT me, JAVA_IN
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("CharClass.java", 531)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_AbstractCharClass*) _r2.o)->fields.java_util_regex_AbstractCharClass.alt_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_regex_CharClass_18*) _r2.o)->fields.java_util_regex_CharClass_18.val_bs_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_util_BitSet_get___int(_r1.o, _r3.i);
@@ -288,6 +292,7 @@ JAVA_OBJECT java_util_regex_CharClass_18_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("CharClass.java", 536)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_CharClass_18*) _r3.o)->fields.java_util_regex_CharClass_18.val_bs_;
     _r2.i = 0;
     XMLVM_CHECK_NPE(1)
@@ -322,6 +327,7 @@ JAVA_OBJECT java_util_regex_CharClass_18_toString__(JAVA_OBJECT me)
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r2.i);
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_regex_CharClass_18*) _r3.o)->fields.java_util_regex_CharClass_18.val_bs_;
     XMLVM_SOURCE_POSITION("CharClass.java", 537)
     _r1.i = _r1.i + 1;

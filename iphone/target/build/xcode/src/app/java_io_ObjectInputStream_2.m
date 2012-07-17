@@ -230,7 +230,9 @@ void java_io_ObjectInputStream_2___INIT____java_lang_Object_java_lang_String(JAV
     _r1.o = n1;
     _r2.o = n2;
     XMLVM_SOURCE_POSITION("ObjectInputStream.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_io_ObjectInputStream_2*) _r0.o)->fields.java_io_ObjectInputStream_2.val_obj_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((java_io_ObjectInputStream_2*) _r0.o)->fields.java_io_ObjectInputStream_2.val_fieldName_ = _r2.o;
     XMLVM_SOURCE_POSITION("ObjectInputStream.java", 1319)
     XMLVM_CHECK_NPE(0)
@@ -249,6 +251,7 @@ JAVA_OBJECT java_io_ObjectInputStream_2_run__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("ObjectInputStream.java", 1321)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_ObjectInputStream_2*) _r2.o)->fields.java_io_ObjectInputStream_2.val_obj_;
     //java_lang_Object_getClass__[3]
     XMLVM_CHECK_NPE(0)
@@ -265,6 +268,7 @@ JAVA_OBJECT java_io_ObjectInputStream_2_run__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w11148aaab3b1c13)
     // Begin try
     XMLVM_SOURCE_POSITION("ObjectInputStream.java", 1325)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_ObjectInputStream_2*) _r2.o)->fields.java_io_ObjectInputStream_2.val_fieldName_;
     XMLVM_CHECK_NPE(0)
     _r1.o = java_lang_Class_getDeclaredField___java_lang_String(_r0.o, _r1.o);

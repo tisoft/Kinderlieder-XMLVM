@@ -390,6 +390,7 @@ void java_util_PropertyPermissionCollection___INIT___(JAVA_OBJECT me)
     _r1.i = 30;
     XMLVM_CHECK_NPE(0)
     java_util_Hashtable___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(2)
     ((java_util_PropertyPermissionCollection*) _r2.o)->fields.java_util_PropertyPermissionCollection.permissions_ = _r0.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -412,6 +413,7 @@ void java_util_PropertyPermissionCollection_add___java_security_Permission(JAVA_
     _r0.i = java_security_PermissionCollection_isReadOnly__(_r3.o);
     if (_r0.i != 0) goto label55;
     XMLVM_SOURCE_POSITION("PropertyPermissionCollection.java", 40)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_PropertyPermissionCollection*) _r3.o)->fields.java_util_PropertyPermissionCollection.permissions_;
     XMLVM_CHECK_NPE(4)
     _r1.o = java_security_Permission_getName__(_r4.o);
@@ -441,6 +443,7 @@ void java_util_PropertyPermissionCollection_add___java_security_Permission(JAVA_
     XMLVM_CHECK_NPE(0)
     java_util_PropertyPermission___INIT____java_lang_String_java_lang_String(_r0.o, _r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("PropertyPermissionCollection.java", 48)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_PropertyPermissionCollection*) _r3.o)->fields.java_util_PropertyPermissionCollection.permissions_;
     XMLVM_CHECK_NPE(4)
     _r2.o = java_security_Permission_getName__(_r4.o);
@@ -468,6 +471,7 @@ JAVA_OBJECT java_util_PropertyPermissionCollection_elements__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("PropertyPermissionCollection.java", 57)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_PropertyPermissionCollection*) _r1.o)->fields.java_util_PropertyPermissionCollection.permissions_;
     //java_util_Hashtable_elements__[6]
     XMLVM_CHECK_NPE(0)
@@ -572,6 +576,7 @@ void java_util_PropertyPermissionCollection_writeObject___java_io_ObjectOutputSt
     XMLVM_SOURCE_POSITION("PropertyPermissionCollection.java", 84)
     // "permissions"
     _r1.o = xmlvm_create_java_string_from_pool(417);
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_PropertyPermissionCollection*) _r3.o)->fields.java_util_PropertyPermissionCollection.permissions_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_java_lang_Object[12]
     XMLVM_CHECK_NPE(0)
@@ -615,6 +620,7 @@ void java_util_PropertyPermissionCollection_readObject___java_io_ObjectInputStre
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[14])(_r0.o, _r1.o, _r2.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("PropertyPermissionCollection.java", 93)
+    XMLVM_CHECK_NPE(3)
     ((java_util_PropertyPermissionCollection*) _r3.o)->fields.java_util_PropertyPermissionCollection.permissions_ = _r0.o;
     XMLVM_SOURCE_POSITION("PropertyPermissionCollection.java", 95)
     XMLVM_EXIT_METHOD()

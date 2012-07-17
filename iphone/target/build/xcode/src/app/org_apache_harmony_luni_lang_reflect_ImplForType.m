@@ -342,12 +342,16 @@ void org_apache_harmony_luni_lang_reflect_ImplForType___INIT____org_apache_harmo
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("ImplForType.java", 33)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r0.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForType.ownerType0_ = _r1.o;
     XMLVM_SOURCE_POSITION("ImplForType.java", 34)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r0.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForType.rawTypeName_ = _r2.o;
     XMLVM_SOURCE_POSITION("ImplForType.java", 35)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r0.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForType.args_ = _r3.o;
     XMLVM_SOURCE_POSITION("ImplForType.java", 36)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r0.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForType.loader_ = _r4.o;
     XMLVM_SOURCE_POSITION("ImplForType.java", 37)
     XMLVM_EXIT_METHOD()
@@ -363,6 +367,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForType_getActualTypeArgume
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ImplForType.java", 42)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForType.args_;
     XMLVM_CHECK_NPE(0)
     _r0.o = org_apache_harmony_luni_lang_reflect_ListOfTypes_getResolvedTypes__(_r0.o);
@@ -383,18 +388,23 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForType_getOwnerType__(JAVA
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ImplForType.java", 46)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForType.ownerTypeRes_;
     if (_r0.o != JAVA_NULL) goto label16;
     XMLVM_SOURCE_POSITION("ImplForType.java", 47)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForType.ownerType0_;
     if (_r0.o == JAVA_NULL) goto label19;
     XMLVM_SOURCE_POSITION("ImplForType.java", 48)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForType.ownerType0_;
     XMLVM_CHECK_NPE(0)
     _r0.o = org_apache_harmony_luni_lang_reflect_ImplForType_getResolvedType__(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForType.ownerTypeRes_ = _r0.o;
     label16:;
     XMLVM_SOURCE_POSITION("ImplForType.java", 53)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForType.ownerTypeRes_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -405,6 +415,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForType_getOwnerType__(JAVA
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r1.o)->tib->vtable[8])(_r1.o);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_Class_getDeclaringClass__(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForType.ownerTypeRes_ = _r0.o;
     goto label16;
     //XMLVM_END_WRAPPER
@@ -421,15 +432,19 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForType_getRawType__(JAVA_O
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("ImplForType.java", 57)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForType.rawType_;
     if (_r1.o != JAVA_NULL) goto label15;
     XMLVM_TRY_BEGIN(w2951aaab9b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("ImplForType.java", 62)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForType.rawTypeName_;
     _r2.i = 0;
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForType.loader_;
     _r1.o = java_lang_Class_forName___java_lang_String_boolean_java_lang_ClassLoader(_r1.o, _r2.i, _r3.o);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForType.rawType_ = _r1.o;
     // End try
     XMLVM_TRY_END
@@ -439,6 +454,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForType_getRawType__(JAVA_O
     XMLVM_RESTORE_EXCEPTION_ENV(w2951aaab9b1b5)
     label15:;
     XMLVM_SOURCE_POSITION("ImplForType.java", 67)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForType.rawType_;
     XMLVM_EXIT_METHOD()
     return _r1.o;
@@ -449,6 +465,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForType_getRawType__(JAVA_O
     _r0 = _r1;
     XMLVM_SOURCE_POSITION("ImplForType.java", 64)
     _r1.o = __NEW_java_lang_TypeNotPresentException();
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r4.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForType.rawTypeName_;
     XMLVM_CHECK_NPE(1)
     java_lang_TypeNotPresentException___INIT____java_lang_String_java_lang_Throwable(_r1.o, _r2.o, _r0.o);
@@ -464,6 +481,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForType_getResolvedType__(J
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ImplForType.java", 72)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForType.args_;
     XMLVM_CHECK_NPE(0)
     _r0.o = org_apache_harmony_luni_lang_reflect_ListOfTypes_getResolvedTypes__(_r0.o);
@@ -497,10 +515,12 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForType_toString__(JAVA_OBJ
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("ImplForType.java", 82)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r3.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForType.rawTypeName_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("ImplForType.java", 83)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r3.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForType.args_;
     XMLVM_CHECK_NPE(1)
     _r1.i = org_apache_harmony_luni_lang_reflect_ListOfTypes_length__(_r1.o);
@@ -510,6 +530,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForType_toString__(JAVA_OBJ
     _r1.o = xmlvm_create_java_string_from_pool(108);
     XMLVM_CHECK_NPE(0)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((org_apache_harmony_luni_lang_reflect_ImplForType*) _r3.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForType.args_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_Object(_r1.o, _r2.o);

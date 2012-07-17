@@ -549,6 +549,7 @@ void java_net_URLStreamHandler_parseURL___java_net_URL_java_lang_String_int_int(
     label64:;
     XMLVM_SOURCE_POSITION("URLStreamHandler.java", 95)
     _r0 = _r21;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_net_URL*) _r0.o)->fields.java_net_URL.strmHandler_;
     _r3 = _r0;
     _r0 = _r20;
@@ -685,7 +686,7 @@ void java_net_URLStreamHandler_parseURL___java_net_URL_java_lang_String_int_int(
     _r0 = _r16;
     _r1 = _r17;
     if (_r0.i == _r1.i) goto label266;
-    XMLVM_TRY_BEGIN(w28686aaab3b1d162)
+    XMLVM_TRY_BEGIN(w28688aaab3b1d162)
     // Begin try
     XMLVM_SOURCE_POSITION("URLStreamHandler.java", 145)
     //java_lang_String_length__[8]
@@ -694,7 +695,7 @@ void java_net_URLStreamHandler_parseURL___java_net_URL_java_lang_String_int_int(
     _r18.i = _r16.i + 1;
     _r0 = _r17;
     _r1 = _r18;
-    if (_r0.i <= _r1.i) { XMLVM_MEMCPY(curThread_w28686aaab3b1d162->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28686aaab3b1d162, sizeof(XMLVM_JMP_BUF)); goto label411; };
+    if (_r0.i <= _r1.i) { XMLVM_MEMCPY(curThread_w28688aaab3b1d162->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28688aaab3b1d162, sizeof(XMLVM_JMP_BUF)); goto label411; };
     XMLVM_SOURCE_POSITION("URLStreamHandler.java", 146)
     _r17.i = _r16.i + 1;
     _r0 = _r3;
@@ -704,10 +705,10 @@ void java_net_URLStreamHandler_parseURL___java_net_URL_java_lang_String_int_int(
     _r14.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) ((java_lang_String*) _r0.o)->tib->vtable[6])(_r0.o, _r1.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28686aaab3b1d162)
-        XMLVM_CATCH_SPECIFIC(w28686aaab3b1d162,java_lang_Exception,580)
-    XMLVM_CATCH_END(w28686aaab3b1d162)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28686aaab3b1d162)
+    XMLVM_CATCH_BEGIN(w28688aaab3b1d162)
+        XMLVM_CATCH_SPECIFIC(w28688aaab3b1d162,java_lang_Exception,580)
+    XMLVM_CATCH_END(w28688aaab3b1d162)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28688aaab3b1d162)
     XMLVM_SOURCE_POSITION("URLStreamHandler.java", 147)
     _r17.i = 58;
     _r0 = _r14;
@@ -986,8 +987,8 @@ void java_net_URLStreamHandler_parseURL___java_net_URL_java_lang_String_int_int(
     _r3 = _r19;
     goto label380;
     label580:;
-    java_lang_Thread* curThread_w28686aaab3b1d402 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r16.o = curThread_w28686aaab3b1d402->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w28688aaab3b1d402 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r16.o = curThread_w28688aaab3b1d402->fields.java_lang_Thread.xmlvmException_;
     goto label266;
     label583:;
     _r10 = _r4;
@@ -1052,6 +1053,7 @@ void java_net_URLStreamHandler_setURL___java_net_URL_java_lang_String_java_lang_
     _r6.o = n5;
     _r7.o = n6;
     XMLVM_SOURCE_POSITION("URLStreamHandler.java", 257)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_URL*) _r2.o)->fields.java_net_URL.strmHandler_;
     if (_r1.o == _r0.o) goto label10;
     XMLVM_SOURCE_POSITION("URLStreamHandler.java", 258)
@@ -1095,6 +1097,7 @@ void java_net_URLStreamHandler_setURL___java_net_URL_java_lang_String_java_lang_
     _r9.o = n8;
     _r10.o = n9;
     XMLVM_SOURCE_POSITION("URLStreamHandler.java", 289)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_URL*) _r2.o)->fields.java_net_URL.strmHandler_;
     if (_r1.o == _r0.o) goto label10;
     XMLVM_SOURCE_POSITION("URLStreamHandler.java", 290)
@@ -1278,62 +1281,62 @@ JAVA_OBJECT java_net_URLStreamHandler_getHostAddress___java_net_URL(JAVA_OBJECT 
     _r3.o = me;
     _r4.o = n1;
     _r2.o = JAVA_NULL;
-    XMLVM_TRY_BEGIN(w28686aaab9b1b4)
+    XMLVM_TRY_BEGIN(w28688aaab9b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("URLStreamHandler.java", 370)
     XMLVM_CHECK_NPE(4)
     _r0.o = java_net_URL_getHost__(_r4.o);
     XMLVM_SOURCE_POSITION("URLStreamHandler.java", 371)
-    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w28686aaab9b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28686aaab9b1b4, sizeof(XMLVM_JMP_BUF)); goto label13; };
+    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w28688aaab9b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28688aaab9b1b4, sizeof(XMLVM_JMP_BUF)); goto label13; };
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[8])(_r0.o);
-    if (_r1.i != 0) { XMLVM_MEMCPY(curThread_w28686aaab9b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28686aaab9b1b4, sizeof(XMLVM_JMP_BUF)); goto label15; };
+    if (_r1.i != 0) { XMLVM_MEMCPY(curThread_w28688aaab9b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28688aaab9b1b4, sizeof(XMLVM_JMP_BUF)); goto label15; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28686aaab9b1b4)
-        XMLVM_CATCH_SPECIFIC(w28686aaab9b1b4,java_net_UnknownHostException,20)
-    XMLVM_CATCH_END(w28686aaab9b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28686aaab9b1b4)
+    XMLVM_CATCH_BEGIN(w28688aaab9b1b4)
+        XMLVM_CATCH_SPECIFIC(w28688aaab9b1b4,java_net_UnknownHostException,20)
+    XMLVM_CATCH_END(w28688aaab9b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28688aaab9b1b4)
     label13:;
-    XMLVM_TRY_BEGIN(w28686aaab9b1b6)
+    XMLVM_TRY_BEGIN(w28688aaab9b1b6)
     // Begin try
     _r0 = _r2;
     XMLVM_SOURCE_POSITION("URLStreamHandler.java", 372)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28686aaab9b1b6)
-        XMLVM_CATCH_SPECIFIC(w28686aaab9b1b6,java_net_UnknownHostException,20)
-    XMLVM_CATCH_END(w28686aaab9b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28686aaab9b1b6)
+    XMLVM_CATCH_BEGIN(w28688aaab9b1b6)
+        XMLVM_CATCH_SPECIFIC(w28688aaab9b1b6,java_net_UnknownHostException,20)
+    XMLVM_CATCH_END(w28688aaab9b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28688aaab9b1b6)
     label14:;
-    XMLVM_TRY_BEGIN(w28686aaab9b1b8)
+    XMLVM_TRY_BEGIN(w28688aaab9b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("URLStreamHandler.java", 376)
-    XMLVM_MEMCPY(curThread_w28686aaab9b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28686aaab9b1b8, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w28688aaab9b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28688aaab9b1b8, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28686aaab9b1b8)
-        XMLVM_CATCH_SPECIFIC(w28686aaab9b1b8,java_net_UnknownHostException,20)
-    XMLVM_CATCH_END(w28686aaab9b1b8)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28686aaab9b1b8)
+    XMLVM_CATCH_BEGIN(w28688aaab9b1b8)
+        XMLVM_CATCH_SPECIFIC(w28688aaab9b1b8,java_net_UnknownHostException,20)
+    XMLVM_CATCH_END(w28688aaab9b1b8)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28688aaab9b1b8)
     label15:;
-    XMLVM_TRY_BEGIN(w28686aaab9b1c10)
+    XMLVM_TRY_BEGIN(w28688aaab9b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("URLStreamHandler.java", 374)
     _r0.o = java_net_InetAddress_getByName___java_lang_String(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28686aaab9b1c10)
-        XMLVM_CATCH_SPECIFIC(w28686aaab9b1c10,java_net_UnknownHostException,20)
-    XMLVM_CATCH_END(w28686aaab9b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28686aaab9b1c10)
+    XMLVM_CATCH_BEGIN(w28688aaab9b1c10)
+        XMLVM_CATCH_SPECIFIC(w28688aaab9b1c10,java_net_UnknownHostException,20)
+    XMLVM_CATCH_END(w28688aaab9b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28688aaab9b1c10)
     goto label14;
     label20:;
-    java_lang_Thread* curThread_w28686aaab9b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w28686aaab9b1c13->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w28688aaab9b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w28688aaab9b1c13->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r2;
     goto label14;
     //XMLVM_END_WRAPPER

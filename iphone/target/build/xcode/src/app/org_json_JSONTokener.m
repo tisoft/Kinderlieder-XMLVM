@@ -368,10 +368,13 @@ void org_json_JSONTokener___INIT____java_io_Reader(JAVA_OBJECT me, JAVA_OBJECT n
     if (_r0.i == 0) goto label18;
     _r0 = _r3;
     label11:;
+    XMLVM_CHECK_NPE(2)
     ((org_json_JSONTokener*) _r2.o)->fields.org_json_JSONTokener.reader_ = _r0.o;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 55)
+    XMLVM_CHECK_NPE(2)
     ((org_json_JSONTokener*) _r2.o)->fields.org_json_JSONTokener.useLastChar_ = _r1.i;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 56)
+    XMLVM_CHECK_NPE(2)
     ((org_json_JSONTokener*) _r2.o)->fields.org_json_JSONTokener.index_ = _r1.i;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 57)
     XMLVM_EXIT_METHOD()
@@ -394,8 +397,10 @@ void org_json_JSONTokener_back__(JAVA_OBJECT me)
     _r2.o = me;
     _r1.i = 1;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 76)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_json_JSONTokener*) _r2.o)->fields.org_json_JSONTokener.useLastChar_;
     if (_r0.i != 0) goto label9;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_json_JSONTokener*) _r2.o)->fields.org_json_JSONTokener.index_;
     if (_r0.i > 0) goto label17;
     label9:;
@@ -408,10 +413,13 @@ void org_json_JSONTokener_back__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label17:;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 79)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_json_JSONTokener*) _r2.o)->fields.org_json_JSONTokener.index_;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(2)
     ((org_json_JSONTokener*) _r2.o)->fields.org_json_JSONTokener.index_ = _r0.i;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 80)
+    XMLVM_CHECK_NPE(2)
     ((org_json_JSONTokener*) _r2.o)->fields.org_json_JSONTokener.useLastChar_ = _r1.i;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 81)
     XMLVM_EXIT_METHOD()
@@ -431,19 +439,25 @@ JAVA_CHAR org_json_JSONTokener_next__(JAVA_OBJECT me)
     _r4.o = me;
     _r3.i = 0;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 126)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((org_json_JSONTokener*) _r4.o)->fields.org_json_JSONTokener.useLastChar_;
     if (_r2.i == 0) goto label20;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 127)
+    XMLVM_CHECK_NPE(4)
     ((org_json_JSONTokener*) _r4.o)->fields.org_json_JSONTokener.useLastChar_ = _r3.i;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 128)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((org_json_JSONTokener*) _r4.o)->fields.org_json_JSONTokener.lastChar_;
     if (_r2.i == 0) goto label17;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 129)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((org_json_JSONTokener*) _r4.o)->fields.org_json_JSONTokener.index_;
     _r2.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((org_json_JSONTokener*) _r4.o)->fields.org_json_JSONTokener.index_ = _r2.i;
     label17:;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 131)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((org_json_JSONTokener*) _r4.o)->fields.org_json_JSONTokener.lastChar_;
     label19:;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 146)
@@ -453,6 +467,7 @@ JAVA_CHAR org_json_JSONTokener_next__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w13664aaab6b1c22)
     // Begin try
     XMLVM_SOURCE_POSITION("JSONTokener.java", 135)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((org_json_JSONTokener*) _r4.o)->fields.org_json_JSONTokener.reader_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(2)
@@ -466,6 +481,7 @@ JAVA_CHAR org_json_JSONTokener_next__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("JSONTokener.java", 140)
     if (_r0.i > 0) goto label40;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 141)
+    XMLVM_CHECK_NPE(4)
     ((org_json_JSONTokener*) _r4.o)->fields.org_json_JSONTokener.lastChar_ = _r3.i;
     _r2 = _r3;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 142)
@@ -482,12 +498,16 @@ JAVA_CHAR org_json_JSONTokener_next__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r2.o)
     label40:;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 144)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((org_json_JSONTokener*) _r4.o)->fields.org_json_JSONTokener.index_;
     _r2.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((org_json_JSONTokener*) _r4.o)->fields.org_json_JSONTokener.index_ = _r2.i;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 145)
     _r2.i = _r0.i & 0xffff;
+    XMLVM_CHECK_NPE(4)
     ((org_json_JSONTokener*) _r4.o)->fields.org_json_JSONTokener.lastChar_ = _r2.i;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((org_json_JSONTokener*) _r4.o)->fields.org_json_JSONTokener.lastChar_;
     goto label19;
     //XMLVM_END_WRAPPER
@@ -523,11 +543,14 @@ JAVA_OBJECT org_json_JSONTokener_next___int(JAVA_OBJECT me, JAVA_INT n1)
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r7.i);
     _r3.i = 0;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 184)
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((org_json_JSONTokener*) _r6.o)->fields.org_json_JSONTokener.useLastChar_;
     if (_r4.i == 0) goto label20;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 185)
+    XMLVM_CHECK_NPE(6)
     ((org_json_JSONTokener*) _r6.o)->fields.org_json_JSONTokener.useLastChar_ = _r5.i;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 186)
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((org_json_JSONTokener*) _r6.o)->fields.org_json_JSONTokener.lastChar_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r5.i);
@@ -539,6 +562,7 @@ JAVA_OBJECT org_json_JSONTokener_next___int(JAVA_OBJECT me, JAVA_INT n1)
     if (_r3.i >= _r7.i) goto label43;
     XMLVM_TRY_BEGIN(w13664aaab7b1c28)
     // Begin try
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((org_json_JSONTokener*) _r6.o)->fields.org_json_JSONTokener.reader_;
     _r5.i = _r7.i - _r3.i;
     //java_io_Reader_read___char_1ARRAY_int_int[11]
@@ -567,8 +591,10 @@ JAVA_OBJECT org_json_JSONTokener_next___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r4.o)
     label43:;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 198)
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((org_json_JSONTokener*) _r6.o)->fields.org_json_JSONTokener.index_;
     _r4.i = _r4.i + _r3.i;
+    XMLVM_CHECK_NPE(6)
     ((org_json_JSONTokener*) _r6.o)->fields.org_json_JSONTokener.index_ = _r4.i;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 200)
     if (_r3.i >= _r7.i) goto label57;
@@ -585,6 +611,7 @@ JAVA_OBJECT org_json_JSONTokener_next___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r4.i);
     _r4.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
+    XMLVM_CHECK_NPE(6)
     ((org_json_JSONTokener*) _r6.o)->fields.org_json_JSONTokener.lastChar_ = _r4.i;
     _r4.o = __NEW_java_lang_String();
     XMLVM_CHECK_NPE(4)
@@ -1139,6 +1166,7 @@ JAVA_OBJECT org_json_JSONTokener_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(1046);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuffer_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((org_json_JSONTokener*) _r2.o)->fields.org_json_JSONTokener.index_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuffer_append___int(_r0.o, _r1.i);

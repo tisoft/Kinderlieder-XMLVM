@@ -850,6 +850,7 @@ void gnu_xml_xpath_Selector___INIT____int_java_util_List(JAVA_OBJECT me, JAVA_IN
     XMLVM_CHECK_NPE(6)
     gnu_xml_xpath_Path___INIT___(_r6.o);
     XMLVM_SOURCE_POSITION("Selector.java", 89)
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_xpath_Selector*) _r6.o)->fields.gnu_xml_xpath_Selector.axis_ = _r7.i;
     XMLVM_SOURCE_POSITION("Selector.java", 90)
     XMLVM_CHECK_NPE(8)
@@ -860,10 +861,12 @@ void gnu_xml_xpath_Selector___INIT____int_java_util_List(JAVA_OBJECT me, JAVA_IN
     label13:;
     if (!__TIB_gnu_xml_xpath_Test.classInitialized) __INIT_gnu_xml_xpath_Test();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_gnu_xml_xpath_Test, _r1.i);
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_xpath_Selector*) _r6.o)->fields.gnu_xml_xpath_Selector.tests_ = _r1.o;
     XMLVM_SOURCE_POSITION("Selector.java", 92)
     if (_r0.i <= 0) goto label60;
     XMLVM_SOURCE_POSITION("Selector.java", 93)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((gnu_xml_xpath_Selector*) _r6.o)->fields.gnu_xml_xpath_Selector.tests_;
     XMLVM_CHECK_NPE(8)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r8.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_toArray___java_lang_Object_1ARRAY])(_r8.o, _r0.o);
@@ -871,6 +874,7 @@ void gnu_xml_xpath_Selector___INIT____int_java_util_List(JAVA_OBJECT me, JAVA_IN
     XMLVM_SOURCE_POSITION("Selector.java", 96)
     _r0.i = 8;
     if (_r7.i != _r0.i) goto label57;
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((gnu_xml_xpath_Selector*) _r6.o)->fields.gnu_xml_xpath_Selector.tests_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r5.i);
@@ -879,16 +883,21 @@ void gnu_xml_xpath_Selector___INIT____int_java_util_List(JAVA_OBJECT me, JAVA_IN
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_gnu_xml_xpath_NameTest);
     if (_r0.i == 0) goto label57;
     XMLVM_SOURCE_POSITION("Selector.java", 98)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((gnu_xml_xpath_Selector*) _r6.o)->fields.gnu_xml_xpath_Selector.tests_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r5.i);
     _r0.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r5.i];
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("Selector.java", 99)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((gnu_xml_xpath_Selector*) _r6.o)->fields.gnu_xml_xpath_Selector.tests_;
     _r2.o = __NEW_gnu_xml_xpath_NamespaceTest();
+    XMLVM_CHECK_NPE(0)
     _r3.o = ((gnu_xml_xpath_NameTest*) _r0.o)->fields.gnu_xml_xpath_NameTest.qName_;
+    XMLVM_CHECK_NPE(0)
     _r4.i = ((gnu_xml_xpath_NameTest*) _r0.o)->fields.gnu_xml_xpath_NameTest.anyLocalName_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_xpath_NameTest*) _r0.o)->fields.gnu_xml_xpath_NameTest.any_;
     XMLVM_CHECK_NPE(2)
     gnu_xml_xpath_NamespaceTest___INIT____javax_xml_namespace_QName_boolean_boolean(_r2.o, _r3.o, _r4.i, _r0.i);
@@ -904,6 +913,7 @@ void gnu_xml_xpath_Selector___INIT____int_java_util_List(JAVA_OBJECT me, JAVA_IN
     goto label13;
     label60:;
     XMLVM_SOURCE_POSITION("Selector.java", 95)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((gnu_xml_xpath_Selector*) _r6.o)->fields.gnu_xml_xpath_Selector.tests_;
     _r1.o = __NEW_gnu_xml_xpath_NodeTypeTest();
     XMLVM_CHECK_NPE(1)
@@ -923,6 +933,7 @@ JAVA_OBJECT gnu_xml_xpath_Selector_getTests__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Selector.java", 108)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_Selector*) _r1.o)->fields.gnu_xml_xpath_Selector.tests_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -977,6 +988,7 @@ JAVA_BOOLEAN gnu_xml_xpath_Selector_matches___org_w3c_dom_Node_int_int(JAVA_OBJE
     XMLVM_CHECK_NPE(6)
     _r0.i = (*(JAVA_SHORT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r6.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeType__])(_r6.o);
     XMLVM_SOURCE_POSITION("Selector.java", 122)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((gnu_xml_xpath_Selector*) _r5.o)->fields.gnu_xml_xpath_Selector.axis_;
     switch (_r1.i) {
     case 2: goto label18;
@@ -1010,6 +1022,7 @@ JAVA_BOOLEAN gnu_xml_xpath_Selector_matches___org_w3c_dom_Node_int_int(JAVA_OBJE
     _r0 = _r2;
     label25:;
     XMLVM_SOURCE_POSITION("Selector.java", 138)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_xml_xpath_Selector*) _r5.o)->fields.gnu_xml_xpath_Selector.tests_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i >= _r1.i) goto label32;
@@ -1019,6 +1032,7 @@ JAVA_BOOLEAN gnu_xml_xpath_Selector_matches___org_w3c_dom_Node_int_int(JAVA_OBJE
     goto label13;
     label34:;
     XMLVM_SOURCE_POSITION("Selector.java", 140)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_xml_xpath_Selector*) _r5.o)->fields.gnu_xml_xpath_Selector.tests_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -1065,6 +1079,7 @@ JAVA_INT gnu_xml_xpath_Selector_getContextPosition___org_w3c_dom_Node(JAVA_OBJEC
     return _r0.i;
     label10:;
     XMLVM_SOURCE_POSITION("Selector.java", 153)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((gnu_xml_xpath_Selector*) _r5.o)->fields.gnu_xml_xpath_Selector.tests_;
     _r3.i = 0;
     XMLVM_CHECK_NPE(2)
@@ -1135,6 +1150,7 @@ JAVA_INT gnu_xml_xpath_Selector_getContextSize___org_w3c_dom_Node(JAVA_OBJECT me
     goto label23;
     label39:;
     XMLVM_SOURCE_POSITION("Selector.java", 170)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((gnu_xml_xpath_Selector*) _r5.o)->fields.gnu_xml_xpath_Selector.tests_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r4.i);
@@ -1151,6 +1167,7 @@ JAVA_INT gnu_xml_xpath_Selector_getContextSize___org_w3c_dom_Node(JAVA_OBJECT me
     goto label29;
     label56:;
     XMLVM_SOURCE_POSITION("Selector.java", 176)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((gnu_xml_xpath_Selector*) _r5.o)->fields.gnu_xml_xpath_Selector.tests_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r4.i);
@@ -1277,6 +1294,7 @@ JAVA_OBJECT gnu_xml_xpath_Selector_filterCandidates___java_util_List_boolean(JAV
     XMLVM_CHECK_NPE(13)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r13.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_size__])(_r13.o);
     XMLVM_SOURCE_POSITION("Selector.java", 209)
+    XMLVM_CHECK_NPE(12)
     _r1.o = ((gnu_xml_xpath_Selector*) _r12.o)->fields.gnu_xml_xpath_Selector.tests_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     XMLVM_SOURCE_POSITION("Selector.java", 210)
@@ -1297,6 +1315,7 @@ JAVA_OBJECT gnu_xml_xpath_Selector_filterCandidates___java_util_List_boolean(JAV
     return _r0.o;
     label22:;
     XMLVM_SOURCE_POSITION("Selector.java", 215)
+    XMLVM_CHECK_NPE(12)
     _r0.o = ((gnu_xml_xpath_Selector*) _r12.o)->fields.gnu_xml_xpath_Selector.tests_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r3.i);
@@ -1335,22 +1354,27 @@ JAVA_OBJECT gnu_xml_xpath_Selector_filterCandidates___java_util_List_boolean(JAV
     if (_r1.i != _r9.i) goto label109;
     label64:;
     XMLVM_SOURCE_POSITION("Selector.java", 228)
+    XMLVM_CHECK_NPE(12)
     _r1.i = ((gnu_xml_xpath_Selector*) _r12.o)->fields.gnu_xml_xpath_Selector.axis_;
     _r9.i = 5;
     if (_r1.i == _r9.i) goto label79;
     XMLVM_SOURCE_POSITION("Selector.java", 229)
+    XMLVM_CHECK_NPE(12)
     _r1.i = ((gnu_xml_xpath_Selector*) _r12.o)->fields.gnu_xml_xpath_Selector.axis_;
     if (_r1.i == _r11.i) goto label79;
     XMLVM_SOURCE_POSITION("Selector.java", 230)
+    XMLVM_CHECK_NPE(12)
     _r1.i = ((gnu_xml_xpath_Selector*) _r12.o)->fields.gnu_xml_xpath_Selector.axis_;
     _r9.i = 12;
     if (_r1.i != _r9.i) goto label109;
     label79:;
     XMLVM_SOURCE_POSITION("Selector.java", 231)
+    XMLVM_CHECK_NPE(12)
     _r1.o = ((gnu_xml_xpath_Selector*) _r12.o)->fields.gnu_xml_xpath_Selector.tests_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r1.i != _r11.i) goto label109;
     XMLVM_SOURCE_POSITION("Selector.java", 232)
+    XMLVM_CHECK_NPE(12)
     _r1.o = ((gnu_xml_xpath_Selector*) _r12.o)->fields.gnu_xml_xpath_Selector.tests_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r10.i);
@@ -1359,11 +1383,13 @@ JAVA_OBJECT gnu_xml_xpath_Selector_filterCandidates___java_util_List_boolean(JAV
     _r1.i = XMLVM_ISA(_r1.o, __CLASS_gnu_xml_xpath_NodeTypeTest);
     if (_r1.i == 0) goto label109;
     XMLVM_SOURCE_POSITION("Selector.java", 233)
+    XMLVM_CHECK_NPE(12)
     _r1.o = ((gnu_xml_xpath_Selector*) _r12.o)->fields.gnu_xml_xpath_Selector.tests_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r10.i);
     _r1.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r10.i];
     _r1.o = _r1.o;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((gnu_xml_xpath_NodeTypeTest*) _r1.o)->fields.gnu_xml_xpath_NodeTypeTest.type_;
     if (_r1.i != 0) goto label109;
     XMLVM_SOURCE_POSITION("Selector.java", 235)
@@ -1406,6 +1432,7 @@ void gnu_xml_xpath_Selector_addCandidates___org_w3c_dom_Node_java_util_Collectio
     _r2.i = 0;
     _r1.i = 1;
     XMLVM_SOURCE_POSITION("Selector.java", 252)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_xpath_Selector*) _r3.o)->fields.gnu_xml_xpath_Selector.axis_;
     switch (_r0.i) {
     case 0: goto label27;
@@ -1916,6 +1943,7 @@ JAVA_OBJECT gnu_xml_xpath_Selector_clone___java_lang_Object(JAVA_OBJECT me, JAVA
     _r4.o = me;
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("Selector.java", 419)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_Selector*) _r4.o)->fields.gnu_xml_xpath_Selector.tests_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     XMLVM_SOURCE_POSITION("Selector.java", 420)
@@ -1928,6 +1956,7 @@ JAVA_OBJECT gnu_xml_xpath_Selector_clone___java_lang_Object(JAVA_OBJECT me, JAVA
     if (_r2.i < _r0.i) goto label19;
     XMLVM_SOURCE_POSITION("Selector.java", 423)
     _r0.o = __NEW_gnu_xml_xpath_Selector();
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((gnu_xml_xpath_Selector*) _r4.o)->fields.gnu_xml_xpath_Selector.axis_;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_Selector___INIT____int_java_util_List(_r0.o, _r2.i, _r1.o);
@@ -1935,6 +1964,7 @@ JAVA_OBJECT gnu_xml_xpath_Selector_clone___java_lang_Object(JAVA_OBJECT me, JAVA
     return _r0.o;
     label19:;
     XMLVM_SOURCE_POSITION("Selector.java", 422)
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((gnu_xml_xpath_Selector*) _r4.o)->fields.gnu_xml_xpath_Selector.tests_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r2.i);
@@ -1964,6 +1994,7 @@ JAVA_BOOLEAN gnu_xml_xpath_Selector_references___javax_xml_namespace_QName(JAVA_
     XMLVM_SOURCE_POSITION("Selector.java", 428)
     _r0 = _r2;
     label2:;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_xpath_Selector*) _r3.o)->fields.gnu_xml_xpath_Selector.tests_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i < _r1.i) goto label9;
@@ -1974,6 +2005,7 @@ JAVA_BOOLEAN gnu_xml_xpath_Selector_references___javax_xml_namespace_QName(JAVA_
     return _r0.i;
     label9:;
     XMLVM_SOURCE_POSITION("Selector.java", 430)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_xpath_Selector*) _r3.o)->fields.gnu_xml_xpath_Selector.tests_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -2006,6 +2038,7 @@ JAVA_OBJECT gnu_xml_xpath_Selector_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     gnu_java_lang_CPStringBuilder___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("Selector.java", 439)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_xpath_Selector*) _r3.o)->fields.gnu_xml_xpath_Selector.axis_;
     switch (_r0.i) {
     case 0: goto label26;
@@ -2024,6 +2057,7 @@ JAVA_OBJECT gnu_xml_xpath_Selector_toString__(JAVA_OBJECT me)
     }
     label11:;
     XMLVM_SOURCE_POSITION("Selector.java", 493)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_xpath_Selector*) _r3.o)->fields.gnu_xml_xpath_Selector.tests_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     if (_r0.i != 0) goto label171;
@@ -2056,10 +2090,12 @@ JAVA_OBJECT gnu_xml_xpath_Selector_toString__(JAVA_OBJECT me)
     goto label11;
     label38:;
     XMLVM_SOURCE_POSITION("Selector.java", 448)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_xpath_Selector*) _r3.o)->fields.gnu_xml_xpath_Selector.tests_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     if (_r0.i == 0) goto label51;
     XMLVM_SOURCE_POSITION("Selector.java", 449)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_xpath_Selector*) _r3.o)->fields.gnu_xml_xpath_Selector.tests_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -2118,10 +2154,12 @@ JAVA_OBJECT gnu_xml_xpath_Selector_toString__(JAVA_OBJECT me)
     goto label11;
     label93:;
     XMLVM_SOURCE_POSITION("Selector.java", 473)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_xpath_Selector*) _r3.o)->fields.gnu_xml_xpath_Selector.tests_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     if (_r0.i == 0) goto label116;
     XMLVM_SOURCE_POSITION("Selector.java", 474)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_xpath_Selector*) _r3.o)->fields.gnu_xml_xpath_Selector.tests_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -2130,11 +2168,13 @@ JAVA_OBJECT gnu_xml_xpath_Selector_toString__(JAVA_OBJECT me)
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_gnu_xml_xpath_NodeTypeTest);
     if (_r0.i == 0) goto label119;
     XMLVM_SOURCE_POSITION("Selector.java", 475)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_xpath_Selector*) _r3.o)->fields.gnu_xml_xpath_Selector.tests_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
     _r0.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
     _r0.o = _r0.o;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_xpath_NodeTypeTest*) _r0.o)->fields.gnu_xml_xpath_NodeTypeTest.type_;
     if (_r0.i != 0) goto label119;
     label116:;
@@ -2165,10 +2205,12 @@ JAVA_OBJECT gnu_xml_xpath_Selector_toString__(JAVA_OBJECT me)
     goto label11;
     label137:;
     XMLVM_SOURCE_POSITION("Selector.java", 486)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_xpath_Selector*) _r3.o)->fields.gnu_xml_xpath_Selector.tests_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     if (_r0.i == 0) goto label160;
     XMLVM_SOURCE_POSITION("Selector.java", 487)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_xpath_Selector*) _r3.o)->fields.gnu_xml_xpath_Selector.tests_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -2177,11 +2219,13 @@ JAVA_OBJECT gnu_xml_xpath_Selector_toString__(JAVA_OBJECT me)
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_gnu_xml_xpath_NodeTypeTest);
     if (_r0.i == 0) goto label164;
     XMLVM_SOURCE_POSITION("Selector.java", 488)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_xpath_Selector*) _r3.o)->fields.gnu_xml_xpath_Selector.tests_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
     _r0.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
     _r0.o = _r0.o;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_xpath_NodeTypeTest*) _r0.o)->fields.gnu_xml_xpath_NodeTypeTest.type_;
     if (_r0.i != 0) goto label164;
     label160:;
@@ -2200,10 +2244,12 @@ JAVA_OBJECT gnu_xml_xpath_Selector_toString__(JAVA_OBJECT me)
     _r0 = _r2;
     label172:;
     XMLVM_SOURCE_POSITION("Selector.java", 497)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_xpath_Selector*) _r3.o)->fields.gnu_xml_xpath_Selector.tests_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     if (_r0.i >= _r2.i) goto label21;
     XMLVM_SOURCE_POSITION("Selector.java", 498)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_xpath_Selector*) _r3.o)->fields.gnu_xml_xpath_Selector.tests_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);

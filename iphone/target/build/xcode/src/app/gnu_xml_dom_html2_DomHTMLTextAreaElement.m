@@ -1222,15 +1222,18 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLTextAreaElement_getValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLTextAreaElement.java", 154)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_html2_DomHTMLTextAreaElement*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLTextAreaElement.value_;
     if (_r0.o != JAVA_NULL) goto label10;
     XMLVM_SOURCE_POSITION("DomHTMLTextAreaElement.java", 156)
     //gnu_xml_dom_html2_DomHTMLTextAreaElement_getDefaultValue__[85]
     XMLVM_CHECK_NPE(1)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((gnu_xml_dom_html2_DomHTMLTextAreaElement*) _r1.o)->tib->vtable[85])(_r1.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_html2_DomHTMLTextAreaElement*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLTextAreaElement.value_ = _r0.o;
     label10:;
     XMLVM_SOURCE_POSITION("DomHTMLTextAreaElement.java", 158)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_html2_DomHTMLTextAreaElement*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLTextAreaElement.value_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1246,6 +1249,7 @@ void gnu_xml_dom_html2_DomHTMLTextAreaElement_setValue___java_lang_String(JAVA_O
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLTextAreaElement.java", 163)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_html2_DomHTMLTextAreaElement*) _r0.o)->fields.gnu_xml_dom_html2_DomHTMLTextAreaElement.value_ = _r1.o;
     XMLVM_SOURCE_POSITION("DomHTMLTextAreaElement.java", 164)
     XMLVM_EXIT_METHOD()

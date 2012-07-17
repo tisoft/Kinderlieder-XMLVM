@@ -1199,14 +1199,17 @@ void java_util_Locale___INIT___(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Locale.java", 191)
     // "en"
     _r0.o = xmlvm_create_java_string_from_pool(993);
+    XMLVM_CHECK_NPE(1)
     ((java_util_Locale*) _r1.o)->fields.java_util_Locale.languageCode_ = _r0.o;
     XMLVM_SOURCE_POSITION("Locale.java", 192)
     // "US"
     _r0.o = xmlvm_create_java_string_from_pool(994);
+    XMLVM_CHECK_NPE(1)
     ((java_util_Locale*) _r1.o)->fields.java_util_Locale.countryCode_ = _r0.o;
     XMLVM_SOURCE_POSITION("Locale.java", 193)
     // ""
     _r0.o = xmlvm_create_java_string_from_pool(0);
+    XMLVM_CHECK_NPE(1)
     ((java_util_Locale*) _r1.o)->fields.java_util_Locale.variantCode_ = _r0.o;
     XMLVM_SOURCE_POSITION("Locale.java", 194)
     XMLVM_EXIT_METHOD()
@@ -1303,12 +1306,15 @@ void java_util_Locale___INIT____java_lang_String_java_lang_String_java_lang_Stri
     XMLVM_SOURCE_POSITION("Locale.java", 237)
     // ""
     _r0.o = xmlvm_create_java_string_from_pool(0);
+    XMLVM_CHECK_NPE(2)
     ((java_util_Locale*) _r2.o)->fields.java_util_Locale.languageCode_ = _r1.o;
     XMLVM_SOURCE_POSITION("Locale.java", 238)
     // ""
     _r0.o = xmlvm_create_java_string_from_pool(0);
+    XMLVM_CHECK_NPE(2)
     ((java_util_Locale*) _r2.o)->fields.java_util_Locale.countryCode_ = _r1.o;
     XMLVM_SOURCE_POSITION("Locale.java", 239)
+    XMLVM_CHECK_NPE(2)
     ((java_util_Locale*) _r2.o)->fields.java_util_Locale.variantCode_ = _r5.o;
     label39:;
     XMLVM_SOURCE_POSITION("Locale.java", 262)
@@ -1316,10 +1322,13 @@ void java_util_Locale___INIT____java_lang_String_java_lang_String_java_lang_Stri
     return;
     label40:;
     XMLVM_SOURCE_POSITION("Locale.java", 259)
+    XMLVM_CHECK_NPE(2)
     ((java_util_Locale*) _r2.o)->fields.java_util_Locale.languageCode_ = _r3.o;
     XMLVM_SOURCE_POSITION("Locale.java", 260)
+    XMLVM_CHECK_NPE(2)
     ((java_util_Locale*) _r2.o)->fields.java_util_Locale.countryCode_ = _r4.o;
     XMLVM_SOURCE_POSITION("Locale.java", 261)
+    XMLVM_CHECK_NPE(2)
     ((java_util_Locale*) _r2.o)->fields.java_util_Locale.variantCode_ = _r5.o;
     goto label39;
     //XMLVM_END_WRAPPER
@@ -1391,19 +1400,25 @@ JAVA_BOOLEAN java_util_Locale_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJ
     _r0.o = _r0.o;
     _r1 = _r0;
     XMLVM_SOURCE_POSITION("Locale.java", 298)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_Locale*) _r6.o)->fields.java_util_Locale.languageCode_;
+    XMLVM_CHECK_NPE(1)
     _r3.o = ((java_util_Locale*) _r1.o)->fields.java_util_Locale.languageCode_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r3.o);
     if (_r2.i == 0) goto label46;
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_Locale*) _r6.o)->fields.java_util_Locale.countryCode_;
+    XMLVM_CHECK_NPE(1)
     _r3.o = ((java_util_Locale*) _r1.o)->fields.java_util_Locale.countryCode_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r3.o);
     if (_r2.i == 0) goto label46;
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_Locale*) _r6.o)->fields.java_util_Locale.variantCode_;
+    XMLVM_CHECK_NPE(1)
     _r3.o = ((java_util_Locale*) _r1.o)->fields.java_util_Locale.variantCode_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
@@ -1443,6 +1458,7 @@ JAVA_OBJECT java_util_Locale_getCountry__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Locale.java", 329)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Locale*) _r1.o)->fields.java_util_Locale.countryCode_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1569,6 +1585,7 @@ JAVA_OBJECT java_util_Locale_getDisplayName___java_util_Locale(JAVA_OBJECT me, J
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Locale.java", 414)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_util_Locale*) _r5.o)->fields.java_util_Locale.languageCode_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(2)
@@ -1583,6 +1600,7 @@ JAVA_OBJECT java_util_Locale_getDisplayName___java_util_Locale(JAVA_OBJECT me, J
     _r1.i = _r1.i + 1;
     label26:;
     XMLVM_SOURCE_POSITION("Locale.java", 418)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_util_Locale*) _r5.o)->fields.java_util_Locale.countryCode_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(2)
@@ -1605,6 +1623,7 @@ JAVA_OBJECT java_util_Locale_getDisplayName___java_util_Locale(JAVA_OBJECT me, J
     _r1.i = _r1.i + 1;
     label50:;
     XMLVM_SOURCE_POSITION("Locale.java", 425)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_util_Locale*) _r5.o)->fields.java_util_Locale.variantCode_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(2)
@@ -1757,6 +1776,7 @@ JAVA_OBJECT java_util_Locale_getLanguage__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Locale.java", 525)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Locale*) _r1.o)->fields.java_util_Locale.languageCode_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1771,6 +1791,7 @@ JAVA_OBJECT java_util_Locale_getVariant__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Locale.java", 535)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Locale*) _r1.o)->fields.java_util_Locale.variantCode_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1789,15 +1810,18 @@ JAVA_INT java_util_Locale_hashCode__(JAVA_OBJECT me)
     java_lang_Object_acquireLockRecursive__(_r2.o);
     XMLVM_TRY_BEGIN(w12571aaac52b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Locale*) _r2.o)->fields.java_util_Locale.countryCode_;
     //java_lang_String_hashCode__[4]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[4])(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Locale*) _r2.o)->fields.java_util_Locale.languageCode_;
     //java_lang_String_hashCode__[4]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[4])(_r1.o);
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Locale*) _r2.o)->fields.java_util_Locale.variantCode_;
     //java_lang_String_hashCode__[4]
     XMLVM_CHECK_NPE(1)
@@ -1885,10 +1909,12 @@ JAVA_OBJECT java_util_Locale_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Locale.java", 588)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Locale*) _r3.o)->fields.java_util_Locale.languageCode_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("Locale.java", 589)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Locale*) _r3.o)->fields.java_util_Locale.countryCode_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(1)
@@ -1899,11 +1925,13 @@ JAVA_OBJECT java_util_Locale_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("Locale.java", 591)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Locale*) _r3.o)->fields.java_util_Locale.countryCode_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label28:;
     XMLVM_SOURCE_POSITION("Locale.java", 593)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Locale*) _r3.o)->fields.java_util_Locale.variantCode_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(1)
@@ -1913,6 +1941,7 @@ JAVA_OBJECT java_util_Locale_toString__(JAVA_OBJECT me)
     _r1.i = java_lang_AbstractStringBuilder_length__(_r0.o);
     if (_r1.i <= 0) goto label60;
     XMLVM_SOURCE_POSITION("Locale.java", 594)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Locale*) _r3.o)->fields.java_util_Locale.countryCode_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(1)
@@ -1925,6 +1954,7 @@ JAVA_OBJECT java_util_Locale_toString__(JAVA_OBJECT me)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label55:;
     XMLVM_SOURCE_POSITION("Locale.java", 599)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Locale*) _r3.o)->fields.java_util_Locale.variantCode_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
@@ -1961,6 +1991,7 @@ void java_util_Locale_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me, J
     XMLVM_SOURCE_POSITION("Locale.java", 612)
     // "country"
     _r1.o = xmlvm_create_java_string_from_pool(997);
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_Locale*) _r3.o)->fields.java_util_Locale.countryCode_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_java_lang_Object[12]
     XMLVM_CHECK_NPE(0)
@@ -1975,6 +2006,7 @@ void java_util_Locale_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me, J
     XMLVM_SOURCE_POSITION("Locale.java", 614)
     // "language"
     _r1.o = xmlvm_create_java_string_from_pool(999);
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_Locale*) _r3.o)->fields.java_util_Locale.languageCode_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_java_lang_Object[12]
     XMLVM_CHECK_NPE(0)
@@ -1982,6 +2014,7 @@ void java_util_Locale_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me, J
     XMLVM_SOURCE_POSITION("Locale.java", 615)
     // "variant"
     _r1.o = xmlvm_create_java_string_from_pool(1000);
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_Locale*) _r3.o)->fields.java_util_Locale.variantCode_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_java_lang_Object[12]
     XMLVM_CHECK_NPE(0)
@@ -2021,6 +2054,7 @@ void java_util_Locale_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, JAV
     XMLVM_CHECK_NPE(0)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[14])(_r0.o, _r1.o, _r3.o);
     _r1.o = _r1.o;
+    XMLVM_CHECK_NPE(4)
     ((java_util_Locale*) _r4.o)->fields.java_util_Locale.countryCode_ = _r1.o;
     XMLVM_SOURCE_POSITION("Locale.java", 623)
     // "language"
@@ -2031,6 +2065,7 @@ void java_util_Locale_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, JAV
     XMLVM_CHECK_NPE(0)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[14])(_r0.o, _r1.o, _r3.o);
     _r1.o = _r1.o;
+    XMLVM_CHECK_NPE(4)
     ((java_util_Locale*) _r4.o)->fields.java_util_Locale.languageCode_ = _r1.o;
     XMLVM_SOURCE_POSITION("Locale.java", 624)
     // "variant"
@@ -2041,6 +2076,7 @@ void java_util_Locale_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, JAV
     XMLVM_CHECK_NPE(0)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[14])(_r0.o, _r1.o, _r3.o);
     _r1.o = _r1.o;
+    XMLVM_CHECK_NPE(4)
     ((java_util_Locale*) _r4.o)->fields.java_util_Locale.variantCode_ = _r1.o;
     XMLVM_SOURCE_POSITION("Locale.java", 625)
     XMLVM_EXIT_METHOD()

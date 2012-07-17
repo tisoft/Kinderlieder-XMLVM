@@ -474,6 +474,7 @@ void java_net_InetSocketAddress___INIT____java_net_InetAddress_int(JAVA_OBJECT m
     java_net_SocketAddress___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 37)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.gotHostname_ = _r0.i;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 63)
     if (_r3.i < 0) goto label13;
@@ -490,20 +491,25 @@ void java_net_InetSocketAddress___INIT____java_net_InetAddress_int(JAVA_OBJECT m
     if (_r2.o != JAVA_NULL) goto label36;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 67)
     _r0.o = java_net_InetAddress_GET_ANY();
+    XMLVM_CHECK_NPE(1)
     ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.addr_ = _r0.o;
     label25:;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 71)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.addr_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_net_InetAddress_getHostName__(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.hostname_ = _r0.o;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 72)
+    XMLVM_CHECK_NPE(1)
     ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.port_ = _r3.i;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 73)
     XMLVM_EXIT_METHOD()
     return;
     label36:;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 69)
+    XMLVM_CHECK_NPE(1)
     ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.addr_ = _r2.o;
     goto label25;
     //XMLVM_END_WRAPPER
@@ -548,6 +554,7 @@ void java_net_InetSocketAddress___INIT____java_lang_String_int_boolean(JAVA_OBJE
     java_net_SocketAddress___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 37)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.gotHostname_ = _r0.i;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 99)
     if (_r2.o == JAVA_NULL) goto label15;
@@ -562,23 +569,27 @@ void java_net_InetSocketAddress___INIT____java_lang_String_int_boolean(JAVA_OBJE
     XMLVM_THROW_CUSTOM(_r0.o)
     label21:;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 102)
+    XMLVM_CHECK_NPE(1)
     ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.hostname_ = _r2.o;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 103)
+    XMLVM_CHECK_NPE(1)
     ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.port_ = _r3.i;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 104)
     if (_r4.i == 0) goto label36;
-    XMLVM_TRY_BEGIN(w42791aaab8b1c27)
+    XMLVM_TRY_BEGIN(w42796aaab8b1c27)
     // Begin try
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 106)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.hostname_;
     _r0.o = java_net_InetAddress_getByName___java_lang_String(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.addr_ = _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42791aaab8b1c27)
-        XMLVM_CATCH_SPECIFIC(w42791aaab8b1c27,java_net_UnknownHostException,40)
-    XMLVM_CATCH_END(w42791aaab8b1c27)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42791aaab8b1c27)
+    XMLVM_CATCH_BEGIN(w42796aaab8b1c27)
+        XMLVM_CATCH_SPECIFIC(w42796aaab8b1c27,java_net_UnknownHostException,40)
+    XMLVM_CATCH_END(w42796aaab8b1c27)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42796aaab8b1c27)
     label35:;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 113)
     XMLVM_EXIT_METHOD()
@@ -586,12 +597,13 @@ void java_net_InetSocketAddress___INIT____java_lang_String_int_boolean(JAVA_OBJE
     label36:;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 111)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(1)
     ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.addr_ = _r0.o;
     goto label35;
     label40:;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 107)
-    java_lang_Thread* curThread_w42791aaab8b1c38 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w42791aaab8b1c38->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w42796aaab8b1c38 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w42796aaab8b1c38->fields.java_lang_Thread.xmlvmException_;
     goto label35;
     //XMLVM_END_WRAPPER
 }
@@ -625,6 +637,7 @@ JAVA_INT java_net_InetSocketAddress_getPort__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 139)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.port_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -639,6 +652,7 @@ JAVA_OBJECT java_net_InetSocketAddress_getAddress__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 148)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.addr_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -653,20 +667,26 @@ JAVA_OBJECT java_net_InetSocketAddress_getHostName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 157)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.addr_;
     if (_r0.o == JAVA_NULL) goto label19;
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.gotHostname_;
     if (_r0.i != 0) goto label19;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 158)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.gotHostname_ = _r0.i;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 159)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.addr_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_net_InetAddress_getHostName__(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.hostname_ = _r0.o;
     label19:;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 161)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.hostname_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -681,6 +701,7 @@ JAVA_BOOLEAN java_net_InetSocketAddress_isUnresolved__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 171)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.addr_;
     if (_r0.o != JAVA_NULL) goto label6;
     _r0.i = 1;
@@ -702,9 +723,11 @@ JAVA_OBJECT java_net_InetSocketAddress_toString__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 183)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_InetSocketAddress*) _r2.o)->fields.java_net_InetSocketAddress.addr_;
     if (_r0.o == JAVA_NULL) goto label36;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 184)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_InetSocketAddress*) _r2.o)->fields.java_net_InetSocketAddress.addr_;
     //java_net_InetAddress_toString__[5]
     XMLVM_CHECK_NPE(0)
@@ -719,6 +742,7 @@ JAVA_OBJECT java_net_InetSocketAddress_toString__(JAVA_OBJECT me)
     _r0.o = xmlvm_create_java_string_from_pool(60);
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_net_InetSocketAddress*) _r2.o)->fields.java_net_InetSocketAddress.port_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);
@@ -729,6 +753,7 @@ JAVA_OBJECT java_net_InetSocketAddress_toString__(JAVA_OBJECT me)
     return _r0.o;
     label36:;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 186)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_InetSocketAddress*) _r2.o)->fields.java_net_InetSocketAddress.hostname_;
     goto label10;
     //XMLVM_END_WRAPPER
@@ -766,7 +791,9 @@ JAVA_BOOLEAN java_net_InetSocketAddress_equals___java_lang_Object(JAVA_OBJECT me
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 209)
     _r4.o = _r4.o;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 212)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_net_InetSocketAddress*) _r3.o)->fields.java_net_InetSocketAddress.port_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_net_InetSocketAddress*) _r4.o)->fields.java_net_InetSocketAddress.port_;
     if (_r0.i == _r1.i) goto label21;
     _r0 = _r2;
@@ -774,12 +801,16 @@ JAVA_BOOLEAN java_net_InetSocketAddress_equals___java_lang_Object(JAVA_OBJECT me
     goto label4;
     label21:;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 218)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_net_InetSocketAddress*) _r3.o)->fields.java_net_InetSocketAddress.addr_;
     if (_r0.o != JAVA_NULL) goto label38;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_InetSocketAddress*) _r4.o)->fields.java_net_InetSocketAddress.addr_;
     if (_r0.o != JAVA_NULL) goto label38;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 219)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_net_InetSocketAddress*) _r3.o)->fields.java_net_InetSocketAddress.hostname_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_net_InetSocketAddress*) _r4.o)->fields.java_net_InetSocketAddress.hostname_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -787,13 +818,16 @@ JAVA_BOOLEAN java_net_InetSocketAddress_equals___java_lang_Object(JAVA_OBJECT me
     goto label4;
     label38:;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 223)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_net_InetSocketAddress*) _r3.o)->fields.java_net_InetSocketAddress.addr_;
     if (_r0.o != JAVA_NULL) goto label44;
     _r0 = _r2;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 226)
     goto label4;
     label44:;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_net_InetSocketAddress*) _r3.o)->fields.java_net_InetSocketAddress.addr_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_net_InetSocketAddress*) _r4.o)->fields.java_net_InetSocketAddress.addr_;
     //java_net_InetAddress_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -811,13 +845,16 @@ JAVA_INT java_net_InetSocketAddress_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 238)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_InetSocketAddress*) _r2.o)->fields.java_net_InetSocketAddress.addr_;
     if (_r0.o != JAVA_NULL) goto label14;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 239)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_InetSocketAddress*) _r2.o)->fields.java_net_InetSocketAddress.hostname_;
     //java_lang_String_hashCode__[4]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[4])(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_net_InetSocketAddress*) _r2.o)->fields.java_net_InetSocketAddress.port_;
     _r0.i = _r0.i + _r1.i;
     label13:;
@@ -825,10 +862,12 @@ JAVA_INT java_net_InetSocketAddress_hashCode__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label14:;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_InetSocketAddress*) _r2.o)->fields.java_net_InetSocketAddress.addr_;
     //java_net_InetAddress_hashCode__[4]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_net_InetAddress*) _r0.o)->tib->vtable[4])(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_net_InetSocketAddress*) _r2.o)->fields.java_net_InetSocketAddress.port_;
     _r0.i = _r0.i + _r1.i;
     goto label13;

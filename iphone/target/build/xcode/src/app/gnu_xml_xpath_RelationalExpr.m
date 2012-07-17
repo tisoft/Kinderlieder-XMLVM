@@ -315,12 +315,16 @@ void gnu_xml_xpath_RelationalExpr___INIT____gnu_xml_xpath_Expr_gnu_xml_xpath_Exp
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_Expr___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("RelationalExpr.java", 59)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_RelationalExpr*) _r0.o)->fields.gnu_xml_xpath_RelationalExpr.lhs_ = _r1.o;
     XMLVM_SOURCE_POSITION("RelationalExpr.java", 60)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_RelationalExpr*) _r0.o)->fields.gnu_xml_xpath_RelationalExpr.rhs_ = _r2.o;
     XMLVM_SOURCE_POSITION("RelationalExpr.java", 61)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_RelationalExpr*) _r0.o)->fields.gnu_xml_xpath_RelationalExpr.lt_ = _r3.i;
     XMLVM_SOURCE_POSITION("RelationalExpr.java", 62)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_RelationalExpr*) _r0.o)->fields.gnu_xml_xpath_RelationalExpr.eq_ = _r4.i;
     XMLVM_SOURCE_POSITION("RelationalExpr.java", 63)
     XMLVM_EXIT_METHOD()
@@ -346,11 +350,13 @@ JAVA_OBJECT gnu_xml_xpath_RelationalExpr_evaluate___org_w3c_dom_Node_int_int(JAV
     _r7.i = n2;
     _r8.i = n3;
     XMLVM_SOURCE_POSITION("RelationalExpr.java", 67)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_xpath_RelationalExpr*) _r5.o)->fields.gnu_xml_xpath_RelationalExpr.lhs_;
     //gnu_xml_xpath_Expr_evaluate___org_w3c_dom_Node_int_int[9]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) ((gnu_xml_xpath_Expr*) _r0.o)->tib->vtable[9])(_r0.o, _r6.o, _r7.i, _r8.i);
     XMLVM_SOURCE_POSITION("RelationalExpr.java", 68)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_xml_xpath_RelationalExpr*) _r5.o)->fields.gnu_xml_xpath_RelationalExpr.rhs_;
     //gnu_xml_xpath_Expr_evaluate___org_w3c_dom_Node_int_int[9]
     XMLVM_CHECK_NPE(1)
@@ -360,6 +366,7 @@ JAVA_OBJECT gnu_xml_xpath_RelationalExpr_evaluate___org_w3c_dom_Node_int_int(JAV
     XMLVM_SOURCE_POSITION("RelationalExpr.java", 70)
     _r0.d = gnu_xml_xpath_Expr__number___org_w3c_dom_Node_java_lang_Object(_r6.o, _r1.o);
     XMLVM_SOURCE_POSITION("RelationalExpr.java", 71)
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((gnu_xml_xpath_RelationalExpr*) _r5.o)->fields.gnu_xml_xpath_RelationalExpr.eq_;
     if (_r4.i == 0) goto label31;
     _r4.i = _r2.d > _r0.d ? 1 : (_r2.d == _r0.d ? 0 : -1);
@@ -372,6 +379,7 @@ JAVA_OBJECT gnu_xml_xpath_RelationalExpr_evaluate___org_w3c_dom_Node_int_int(JAV
     return _r0.o;
     label31:;
     XMLVM_SOURCE_POSITION("RelationalExpr.java", 75)
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((gnu_xml_xpath_RelationalExpr*) _r5.o)->fields.gnu_xml_xpath_RelationalExpr.lt_;
     if (_r4.i == 0) goto label48;
     XMLVM_SOURCE_POSITION("RelationalExpr.java", 77)
@@ -414,15 +422,19 @@ JAVA_OBJECT gnu_xml_xpath_RelationalExpr_clone___java_lang_Object(JAVA_OBJECT me
     _r6.o = n1;
     XMLVM_SOURCE_POSITION("RelationalExpr.java", 94)
     _r0.o = __NEW_gnu_xml_xpath_RelationalExpr();
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_xml_xpath_RelationalExpr*) _r5.o)->fields.gnu_xml_xpath_RelationalExpr.lhs_;
     //gnu_xml_xpath_Expr_clone___java_lang_Object[6]
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_xpath_Expr*) _r1.o)->tib->vtable[6])(_r1.o, _r6.o);
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((gnu_xml_xpath_RelationalExpr*) _r5.o)->fields.gnu_xml_xpath_RelationalExpr.rhs_;
     //gnu_xml_xpath_Expr_clone___java_lang_Object[6]
     XMLVM_CHECK_NPE(2)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_xpath_Expr*) _r2.o)->tib->vtable[6])(_r2.o, _r6.o);
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((gnu_xml_xpath_RelationalExpr*) _r5.o)->fields.gnu_xml_xpath_RelationalExpr.lt_;
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((gnu_xml_xpath_RelationalExpr*) _r5.o)->fields.gnu_xml_xpath_RelationalExpr.eq_;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_RelationalExpr___INIT____gnu_xml_xpath_Expr_gnu_xml_xpath_Expr_boolean_boolean(_r0.o, _r1.o, _r2.o, _r3.i, _r4.i);
@@ -441,11 +453,13 @@ JAVA_BOOLEAN gnu_xml_xpath_RelationalExpr_references___javax_xml_namespace_QName
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("RelationalExpr.java", 99)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_RelationalExpr*) _r1.o)->fields.gnu_xml_xpath_RelationalExpr.lhs_;
     //gnu_xml_xpath_Expr_references___javax_xml_namespace_QName[12]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_xpath_Expr*) _r0.o)->tib->vtable[12])(_r0.o, _r2.o);
     if (_r0.i != 0) goto label18;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_RelationalExpr*) _r1.o)->fields.gnu_xml_xpath_RelationalExpr.rhs_;
     //gnu_xml_xpath_Expr_references___javax_xml_namespace_QName[12]
     XMLVM_CHECK_NPE(0)
@@ -476,6 +490,7 @@ JAVA_OBJECT gnu_xml_xpath_RelationalExpr_toString__(JAVA_OBJECT me)
     _r0.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_xpath_RelationalExpr*) _r3.o)->fields.gnu_xml_xpath_RelationalExpr.lhs_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);
@@ -483,6 +498,7 @@ JAVA_OBJECT gnu_xml_xpath_RelationalExpr_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(28);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r2.o);
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_xml_xpath_RelationalExpr*) _r3.o)->fields.gnu_xml_xpath_RelationalExpr.lt_;
     if (_r1.i == 0) goto label56;
     // "<"
@@ -490,6 +506,7 @@ JAVA_OBJECT gnu_xml_xpath_RelationalExpr_toString__(JAVA_OBJECT me)
     label25:;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_xml_xpath_RelationalExpr*) _r3.o)->fields.gnu_xml_xpath_RelationalExpr.eq_;
     if (_r1.i == 0) goto label59;
     // "="
@@ -501,6 +518,7 @@ JAVA_OBJECT gnu_xml_xpath_RelationalExpr_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(28);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r2.o);
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_xpath_RelationalExpr*) _r3.o)->fields.gnu_xml_xpath_RelationalExpr.rhs_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);

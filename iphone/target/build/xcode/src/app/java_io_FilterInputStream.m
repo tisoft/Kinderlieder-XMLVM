@@ -364,6 +364,7 @@ void java_io_FilterInputStream___INIT____java_io_InputStream(JAVA_OBJECT me, JAV
     XMLVM_CHECK_NPE(0)
     java_io_InputStream___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("FilterInputStream.java", 46)
+    XMLVM_CHECK_NPE(0)
     ((java_io_FilterInputStream*) _r0.o)->fields.java_io_FilterInputStream.in_ = _r1.o;
     XMLVM_SOURCE_POSITION("FilterInputStream.java", 47)
     XMLVM_EXIT_METHOD()
@@ -379,6 +380,7 @@ JAVA_INT java_io_FilterInputStream_available__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FilterInputStream.java", 59)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_FilterInputStream*) _r1.o)->fields.java_io_FilterInputStream.in_;
     //java_io_InputStream_available__[6]
     XMLVM_CHECK_NPE(0)
@@ -396,6 +398,7 @@ void java_io_FilterInputStream_close__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FilterInputStream.java", 70)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_FilterInputStream*) _r1.o)->fields.java_io_FilterInputStream.in_;
     //java_io_InputStream_close__[7]
     XMLVM_CHECK_NPE(0)
@@ -419,6 +422,7 @@ void java_io_FilterInputStream_mark___int(JAVA_OBJECT me, JAVA_INT n1)
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_TRY_BEGIN(w18568aaab4b1b5)
     // Begin try
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_FilterInputStream*) _r1.o)->fields.java_io_FilterInputStream.in_;
     //java_io_InputStream_mark___int[9]
     XMLVM_CHECK_NPE(0)
@@ -449,6 +453,7 @@ JAVA_BOOLEAN java_io_FilterInputStream_markSupported__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FilterInputStream.java", 105)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_FilterInputStream*) _r1.o)->fields.java_io_FilterInputStream.in_;
     //java_io_InputStream_markSupported__[8]
     XMLVM_CHECK_NPE(0)
@@ -466,6 +471,7 @@ JAVA_INT java_io_FilterInputStream_read__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FilterInputStream.java", 120)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_FilterInputStream*) _r1.o)->fields.java_io_FilterInputStream.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(0)
@@ -510,6 +516,7 @@ JAVA_INT java_io_FilterInputStream_read___byte_1ARRAY_int_int(JAVA_OBJECT me, JA
     _r3.i = n2;
     _r4.i = n3;
     XMLVM_SOURCE_POSITION("FilterInputStream.java", 162)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_FilterInputStream*) _r1.o)->fields.java_io_FilterInputStream.in_;
     //java_io_InputStream_read___byte_1ARRAY_int_int[12]
     XMLVM_CHECK_NPE(0)
@@ -530,6 +537,7 @@ void java_io_FilterInputStream_reset__(JAVA_OBJECT me)
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_TRY_BEGIN(w18568aaab9b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_FilterInputStream*) _r1.o)->fields.java_io_FilterInputStream.in_;
     //java_io_InputStream_reset__[13]
     XMLVM_CHECK_NPE(0)
@@ -564,6 +572,7 @@ JAVA_LONG java_io_FilterInputStream_skip___long(JAVA_OBJECT me, JAVA_LONG n1)
     _r2.o = me;
     _r3.l = n1;
     XMLVM_SOURCE_POSITION("FilterInputStream.java", 197)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_FilterInputStream*) _r2.o)->fields.java_io_FilterInputStream.in_;
     //java_io_InputStream_skip___long[14]
     XMLVM_CHECK_NPE(0)

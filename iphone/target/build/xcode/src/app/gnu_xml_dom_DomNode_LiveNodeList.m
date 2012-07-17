@@ -375,13 +375,16 @@ void gnu_xml_dom_DomNode_LiveNodeList___INIT____gnu_xml_dom_DomNode_java_lang_St
     // "*"
     _r2.o = xmlvm_create_java_string_from_pool(260);
     XMLVM_SOURCE_POSITION("DomNode.java", 1289)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.this_0_ = _r4.o;
     XMLVM_SOURCE_POSITION("DomNode.java", 1280)
     XMLVM_CHECK_NPE(3)
     java_lang_Object___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("DomNode.java", 1282)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.elementURI_ = _r5.o;
     XMLVM_SOURCE_POSITION("DomNode.java", 1283)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.elementName_ = _r6.o;
     XMLVM_SOURCE_POSITION("DomNode.java", 1284)
     // "*"
@@ -389,6 +392,7 @@ void gnu_xml_dom_DomNode_LiveNodeList___INIT____gnu_xml_dom_DomNode_java_lang_St
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r5.o);
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.matchAnyURI_ = _r0.i;
     XMLVM_SOURCE_POSITION("DomNode.java", 1285)
     // "*"
@@ -396,6 +400,7 @@ void gnu_xml_dom_DomNode_LiveNodeList___INIT____gnu_xml_dom_DomNode_java_lang_St
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r6.o);
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.matchAnyName_ = _r0.i;
     XMLVM_SOURCE_POSITION("DomNode.java", 1287)
     // "DOMNodeInserted"
@@ -425,9 +430,11 @@ void gnu_xml_dom_DomNode_LiveNodeList_detach__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("DomNode.java", 1293)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.current_;
     if (_r0.o == JAVA_NULL) goto label10;
     XMLVM_SOURCE_POSITION("DomNode.java", 1294)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.current_;
     //gnu_xml_dom_DomIterator_detach__[6]
     XMLVM_CHECK_NPE(0)
@@ -435,8 +442,10 @@ void gnu_xml_dom_DomNode_LiveNodeList_detach__(JAVA_OBJECT me)
     label10:;
     XMLVM_SOURCE_POSITION("DomNode.java", 1295)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.current_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomNode.java", 1297)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.this_0_;
     // "DOMNodeInserted"
     _r1.o = xmlvm_create_java_string_from_pool(3055);
@@ -444,6 +453,7 @@ void gnu_xml_dom_DomNode_LiveNodeList_detach__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) ((gnu_xml_dom_DomNode*) _r0.o)->tib->vtable[45])(_r0.o, _r1.o, _r3.o, _r2.i);
     XMLVM_SOURCE_POSITION("DomNode.java", 1298)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.this_0_;
     // "DOMNodeRemoved"
     _r1.o = xmlvm_create_java_string_from_pool(3056);
@@ -469,6 +479,7 @@ JAVA_SHORT gnu_xml_dom_DomNode_LiveNodeList_acceptNode___org_w3c_dom_Node(JAVA_O
     _r4.o = n1;
     _r2.i = 3;
     XMLVM_SOURCE_POSITION("DomNode.java", 1303)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.this_0_;
     if (_r4.o != _r0.o) goto label7;
     _r0 = _r2;
@@ -479,12 +490,15 @@ JAVA_SHORT gnu_xml_dom_DomNode_LiveNodeList_acceptNode___org_w3c_dom_Node(JAVA_O
     return _r0.i;
     label7:;
     XMLVM_SOURCE_POSITION("DomNode.java", 1309)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.elementURI_;
     if (_r0.o == JAVA_NULL) goto label47;
     XMLVM_SOURCE_POSITION("DomNode.java", 1311)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.matchAnyURI_;
     if (_r0.i != 0) goto label29;
     XMLVM_SOURCE_POSITION("DomNode.java", 1312)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.elementURI_;
     XMLVM_CHECK_NPE(4)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r4.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNamespaceURI__])(_r4.o);
@@ -497,9 +511,11 @@ JAVA_SHORT gnu_xml_dom_DomNode_LiveNodeList_acceptNode___org_w3c_dom_Node(JAVA_O
     goto label6;
     label29:;
     XMLVM_SOURCE_POSITION("DomNode.java", 1316)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.matchAnyName_;
     if (_r0.i != 0) goto label65;
     XMLVM_SOURCE_POSITION("DomNode.java", 1317)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.elementName_;
     XMLVM_CHECK_NPE(4)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r4.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getLocalName__])(_r4.o);
@@ -512,9 +528,11 @@ JAVA_SHORT gnu_xml_dom_DomNode_LiveNodeList_acceptNode___org_w3c_dom_Node(JAVA_O
     goto label6;
     label47:;
     XMLVM_SOURCE_POSITION("DomNode.java", 1326)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.matchAnyName_;
     if (_r0.i != 0) goto label65;
     XMLVM_SOURCE_POSITION("DomNode.java", 1327)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.elementName_;
     XMLVM_CHECK_NPE(4)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r4.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeName__])(_r4.o);
@@ -543,6 +561,7 @@ JAVA_OBJECT gnu_xml_dom_DomNode_LiveNodeList_createIterator__(JAVA_OBJECT me)
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("DomNode.java", 1337)
     _r0.o = __NEW_gnu_xml_dom_DomIterator();
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.this_0_;
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_DomIterator___INIT____org_w3c_dom_Node_int_org_w3c_dom_traversal_NodeFilter_boolean(_r0.o, _r1.o, _r2.i, _r3.o, _r2.i);
@@ -575,11 +594,13 @@ void gnu_xml_dom_DomNode_LiveNodeList_handleEvent___org_w3c_dom_events_Event(JAV
     XMLVM_SOURCE_POSITION("DomNode.java", 1353)
     XMLVM_CHECK_NPE(0)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeName__])(_r0.o);
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.elementName_;
     if (_r1.o != _r2.o) goto label29;
     XMLVM_SOURCE_POSITION("DomNode.java", 1354)
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNamespaceURI__])(_r0.o);
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.elementURI_;
     if (_r0.o == _r1.o) goto label30;
     label29:;
@@ -588,9 +609,11 @@ void gnu_xml_dom_DomNode_LiveNodeList_handleEvent___org_w3c_dom_events_Event(JAV
     return;
     label30:;
     XMLVM_SOURCE_POSITION("DomNode.java", 1359)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.current_;
     if (_r0.o == JAVA_NULL) goto label39;
     XMLVM_SOURCE_POSITION("DomNode.java", 1360)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.current_;
     //gnu_xml_dom_DomIterator_detach__[6]
     XMLVM_CHECK_NPE(0)
@@ -598,6 +621,7 @@ void gnu_xml_dom_DomNode_LiveNodeList_handleEvent___org_w3c_dom_events_Event(JAV
     label39:;
     XMLVM_SOURCE_POSITION("DomNode.java", 1361)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.current_ = _r0.o;
     goto label29;
     //XMLVM_END_WRAPPER
@@ -616,34 +640,42 @@ JAVA_OBJECT gnu_xml_dom_DomNode_LiveNodeList_item___int(JAVA_OBJECT me, JAVA_INT
     _r4.i = n1;
     _r2.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("DomNode.java", 1366)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.current_;
     if (_r0.o != JAVA_NULL) goto label14;
     XMLVM_SOURCE_POSITION("DomNode.java", 1368)
     XMLVM_CHECK_NPE(3)
     _r0.o = gnu_xml_dom_DomNode_LiveNodeList_createIterator__(_r3.o);
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.current_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomNode.java", 1369)
     _r0.i = -1;
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.lastIndex_ = _r0.i;
     label14:;
     XMLVM_SOURCE_POSITION("DomNode.java", 1373)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.lastIndex_;
     if (_r4.i > _r0.i) goto label53;
     label18:;
     XMLVM_SOURCE_POSITION("DomNode.java", 1374)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.lastIndex_;
     if (_r4.i != _r0.i) goto label36;
     XMLVM_SOURCE_POSITION("DomNode.java", 1378)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.current_;
     //gnu_xml_dom_DomIterator_previousNode__[13]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((gnu_xml_dom_DomIterator*) _r0.o)->tib->vtable[13])(_r0.o);
     XMLVM_SOURCE_POSITION("DomNode.java", 1379)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.current_;
     //gnu_xml_dom_DomIterator_detach__[6]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT)) ((gnu_xml_dom_DomIterator*) _r1.o)->tib->vtable[6])(_r1.o);
     XMLVM_SOURCE_POSITION("DomNode.java", 1380)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.current_ = _r2.o;
     label35:;
     XMLVM_SOURCE_POSITION("DomNode.java", 1391)
@@ -651,39 +683,48 @@ JAVA_OBJECT gnu_xml_dom_DomNode_LiveNodeList_item___int(JAVA_OBJECT me, JAVA_INT
     return _r0.o;
     label36:;
     XMLVM_SOURCE_POSITION("DomNode.java", 1375)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.current_;
     //gnu_xml_dom_DomIterator_previousNode__[13]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((gnu_xml_dom_DomIterator*) _r0.o)->tib->vtable[13])(_r0.o);
     XMLVM_SOURCE_POSITION("DomNode.java", 1376)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.lastIndex_;
     _r1.i = 1;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.lastIndex_ = _r0.i;
     goto label18;
     label48:;
     XMLVM_SOURCE_POSITION("DomNode.java", 1386)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.current_;
     //gnu_xml_dom_DomIterator_nextNode__[12]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((gnu_xml_dom_DomIterator*) _r0.o)->tib->vtable[12])(_r0.o);
     label53:;
     XMLVM_SOURCE_POSITION("DomNode.java", 1385)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.lastIndex_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.lastIndex_ = _r0.i;
     if (_r0.i != _r4.i) goto label48;
     XMLVM_SOURCE_POSITION("DomNode.java", 1388)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.current_;
     //gnu_xml_dom_DomIterator_nextNode__[12]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((gnu_xml_dom_DomIterator*) _r0.o)->tib->vtable[12])(_r0.o);
     XMLVM_SOURCE_POSITION("DomNode.java", 1389)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.current_;
     //gnu_xml_dom_DomIterator_detach__[6]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT)) ((gnu_xml_dom_DomIterator*) _r1.o)->tib->vtable[6])(_r1.o);
     XMLVM_SOURCE_POSITION("DomNode.java", 1390)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_DomNode_LiveNodeList*) _r3.o)->fields.gnu_xml_dom_DomNode_LiveNodeList.current_ = _r2.o;
     goto label35;
     //XMLVM_END_WRAPPER

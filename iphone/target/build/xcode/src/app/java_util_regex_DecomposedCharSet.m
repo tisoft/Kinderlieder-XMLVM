@@ -375,13 +375,17 @@ void java_util_regex_DecomposedCharSet___INIT____int_1ARRAY_int(JAVA_OBJECT me, 
     java_util_regex_JointSet___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 32)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_DecomposedCharSet*) _r1.o)->fields.java_util_regex_DecomposedCharSet.readCharsForCodePoint_ = _r0.i;
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 37)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_DecomposedCharSet*) _r1.o)->fields.java_util_regex_DecomposedCharSet.decomposedCharUTF16_ = _r0.o;
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 51)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_DecomposedCharSet*) _r1.o)->fields.java_util_regex_DecomposedCharSet.decomposedChar_ = _r2.o;
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 52)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_DecomposedCharSet*) _r1.o)->fields.java_util_regex_DecomposedCharSet.decomposedCharLength_ = _r3.i;
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 53)
     XMLVM_EXIT_METHOD()
@@ -397,6 +401,7 @@ JAVA_OBJECT java_util_regex_DecomposedCharSet_getNext__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 59)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_AbstractSet*) _r1.o)->fields.java_util_regex_AbstractSet.next_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -412,6 +417,7 @@ void java_util_regex_DecomposedCharSet_setNext___java_util_regex_AbstractSet(JAV
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 68)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractSet*) _r0.o)->fields.java_util_regex_AbstractSet.next_ = _r1.o;
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 69)
     XMLVM_EXIT_METHOD()
@@ -462,6 +468,7 @@ JAVA_INT java_util_regex_DecomposedCharSet_matches___int_java_lang_CharSequence_
     XMLVM_CHECK_NPE(9)
     _r3.i = java_util_regex_DecomposedCharSet_codePointAt___int_java_lang_CharSequence_int(_r9.o, _r10.i, _r11.o, _r2.i);
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 93)
+    XMLVM_CHECK_NPE(9)
     _r4.i = ((java_util_regex_DecomposedCharSet*) _r9.o)->fields.java_util_regex_DecomposedCharSet.readCharsForCodePoint_;
     _r4.i = _r4.i + _r10.i;
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 94)
@@ -505,6 +512,7 @@ JAVA_INT java_util_regex_DecomposedCharSet_matches___int_java_lang_CharSequence_
     _r0.o = java_util_regex_Lexer_getCanonicalOrder___int_1ARRAY_int(_r0.o, _r1.i);
     label57:;
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 178)
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((java_util_regex_DecomposedCharSet*) _r9.o)->fields.java_util_regex_DecomposedCharSet.decomposedCharLength_;
     if (_r1.i == _r3.i) goto label160;
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 179)
@@ -551,6 +559,7 @@ JAVA_INT java_util_regex_DecomposedCharSet_matches___int_java_lang_CharSequence_
     _r1 = _r3;
     label100:;
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 139)
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((java_util_regex_DecomposedCharSet*) _r9.o)->fields.java_util_regex_DecomposedCharSet.readCharsForCodePoint_;
     _r3.i = _r3.i + _r4.i;
     if (_r3.i >= _r2.i) goto label185;
@@ -624,6 +633,7 @@ JAVA_INT java_util_regex_DecomposedCharSet_matches___int_java_lang_CharSequence_
     _r3.i = 0;
     label161:;
     if (_r3.i < _r1.i) goto label171;
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((java_util_regex_AbstractSet*) _r9.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -634,6 +644,7 @@ JAVA_INT java_util_regex_DecomposedCharSet_matches___int_java_lang_CharSequence_
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r3.i);
     _r4.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i];
+    XMLVM_CHECK_NPE(9)
     _r5.o = ((java_util_regex_DecomposedCharSet*) _r9.o)->fields.java_util_regex_DecomposedCharSet.decomposedChar_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r3.i);
@@ -665,6 +676,7 @@ JAVA_OBJECT java_util_regex_DecomposedCharSet_getDecomposedChar__(JAVA_OBJECT me
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 197)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_DecomposedCharSet*) _r3.o)->fields.java_util_regex_DecomposedCharSet.decomposedCharUTF16_;
     if (_r0.o != JAVA_NULL) goto label20;
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 198)
@@ -674,20 +686,24 @@ JAVA_OBJECT java_util_regex_DecomposedCharSet_getDecomposedChar__(JAVA_OBJECT me
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 200)
     _r1.i = 0;
     label10:;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_regex_DecomposedCharSet*) _r3.o)->fields.java_util_regex_DecomposedCharSet.decomposedCharLength_;
     if (_r1.i < _r2.i) goto label23;
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 203)
     //java_lang_StringBuilder_toString__[5]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[5])(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_DecomposedCharSet*) _r3.o)->fields.java_util_regex_DecomposedCharSet.decomposedCharUTF16_ = _r0.o;
     label20:;
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 205)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_DecomposedCharSet*) _r3.o)->fields.java_util_regex_DecomposedCharSet.decomposedCharUTF16_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label23:;
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 201)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_regex_DecomposedCharSet*) _r3.o)->fields.java_util_regex_DecomposedCharSet.decomposedChar_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -748,6 +764,7 @@ JAVA_INT java_util_regex_DecomposedCharSet_codePointAt___int_java_lang_CharSeque
     _r4.i = 0;
     _r3.i = 1;
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 229)
+    XMLVM_CHECK_NPE(6)
     ((java_util_regex_DecomposedCharSet*) _r6.o)->fields.java_util_regex_DecomposedCharSet.readCharsForCodePoint_ = _r3.i;
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 230)
     _r0.i = _r9.i - _r3.i;
@@ -774,6 +791,7 @@ JAVA_INT java_util_regex_DecomposedCharSet_codePointAt___int_java_lang_CharSeque
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 236)
     _r0.i = java_lang_Character_codePointAt___char_1ARRAY_int(_r2.o, _r4.i);
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 237)
+    XMLVM_CHECK_NPE(6)
     ((java_util_regex_DecomposedCharSet*) _r6.o)->fields.java_util_regex_DecomposedCharSet.readCharsForCodePoint_ = _r5.i;
     label37:;
     XMLVM_SOURCE_POSITION("DecomposedCharSet.java", 245)

@@ -336,8 +336,10 @@ void gnu_xml_dom_DTDElementTypeInfo___INIT____java_lang_String_java_lang_String(
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("DTDElementTypeInfo.java", 60)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_DTDElementTypeInfo*) _r0.o)->fields.gnu_xml_dom_DTDElementTypeInfo.name_ = _r1.o;
     XMLVM_SOURCE_POSITION("DTDElementTypeInfo.java", 61)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_DTDElementTypeInfo*) _r0.o)->fields.gnu_xml_dom_DTDElementTypeInfo.model_ = _r2.o;
     XMLVM_SOURCE_POSITION("DTDElementTypeInfo.java", 62)
     XMLVM_EXIT_METHOD()
@@ -404,6 +406,7 @@ JAVA_OBJECT gnu_xml_dom_DTDElementTypeInfo_getAttributeTypeInfo___java_lang_Stri
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DTDElementTypeInfo.java", 82)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DTDElementTypeInfo*) _r1.o)->fields.gnu_xml_dom_DTDElementTypeInfo.attributes_;
     if (_r0.o != JAVA_NULL) goto label6;
     XMLVM_SOURCE_POSITION("DTDElementTypeInfo.java", 84)
@@ -413,6 +416,7 @@ JAVA_OBJECT gnu_xml_dom_DTDElementTypeInfo_getAttributeTypeInfo___java_lang_Stri
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label6:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DTDElementTypeInfo*) _r1.o)->fields.gnu_xml_dom_DTDElementTypeInfo.attributes_;
     //java_util_HashMap_get___java_lang_Object[10]
     XMLVM_CHECK_NPE(0)
@@ -436,15 +440,18 @@ void gnu_xml_dom_DTDElementTypeInfo_setAttributeTypeInfo___java_lang_String_gnu_
     _r3.o = n1;
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("DTDElementTypeInfo.java", 91)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_DTDElementTypeInfo*) _r2.o)->fields.gnu_xml_dom_DTDElementTypeInfo.attributes_;
     if (_r0.o != JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("DTDElementTypeInfo.java", 93)
     _r0.o = __NEW_java_util_HashMap();
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DTDElementTypeInfo*) _r2.o)->fields.gnu_xml_dom_DTDElementTypeInfo.attributes_ = _r0.o;
     label11:;
     XMLVM_SOURCE_POSITION("DTDElementTypeInfo.java", 95)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_DTDElementTypeInfo*) _r2.o)->fields.gnu_xml_dom_DTDElementTypeInfo.attributes_;
     //java_util_HashMap_put___java_lang_Object_java_lang_Object[14]
     XMLVM_CHECK_NPE(0)
@@ -452,12 +459,14 @@ void gnu_xml_dom_DTDElementTypeInfo_setAttributeTypeInfo___java_lang_String_gnu_
     XMLVM_SOURCE_POSITION("DTDElementTypeInfo.java", 96)
     // "ID"
     _r0.o = xmlvm_create_java_string_from_pool(284);
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_dom_DTDAttributeTypeInfo*) _r4.o)->fields.gnu_xml_dom_DTDAttributeTypeInfo.type_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r1.o);
     if (_r0.i == 0) goto label28;
     XMLVM_SOURCE_POSITION("DTDElementTypeInfo.java", 98)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DTDElementTypeInfo*) _r2.o)->fields.gnu_xml_dom_DTDElementTypeInfo.idAttrName_ = _r3.o;
     label28:;
     XMLVM_SOURCE_POSITION("DTDElementTypeInfo.java", 100)
@@ -474,6 +483,7 @@ JAVA_OBJECT gnu_xml_dom_DTDElementTypeInfo_attributes__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DTDElementTypeInfo.java", 104)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DTDElementTypeInfo*) _r1.o)->fields.gnu_xml_dom_DTDElementTypeInfo.attributes_;
     if (_r0.o != JAVA_NULL) goto label6;
     XMLVM_SOURCE_POSITION("DTDElementTypeInfo.java", 106)
@@ -483,6 +493,7 @@ JAVA_OBJECT gnu_xml_dom_DTDElementTypeInfo_attributes__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label6:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DTDElementTypeInfo*) _r1.o)->fields.gnu_xml_dom_DTDElementTypeInfo.attributes_;
     //java_util_HashMap_values__[17]
     XMLVM_CHECK_NPE(0)

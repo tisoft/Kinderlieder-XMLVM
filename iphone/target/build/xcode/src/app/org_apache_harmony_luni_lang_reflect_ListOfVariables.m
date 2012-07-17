@@ -261,9 +261,11 @@ void org_apache_harmony_luni_lang_reflect_ListOfVariables___INIT___(JAVA_OBJECT 
     _r0.o = __NEW_java_util_ArrayList();
     XMLVM_CHECK_NPE(0)
     java_util_ArrayList___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_lang_reflect_ListOfVariables*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ListOfVariables.array_ = _r0.o;
     XMLVM_SOURCE_POSITION("ListOfVariables.java", 26)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_lang_reflect_ListOfVariables*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ListOfVariables.n_ = _r0.i;
     XMLVM_EXIT_METHOD()
     return;
@@ -280,6 +282,7 @@ void org_apache_harmony_luni_lang_reflect_ListOfVariables_add___java_lang_reflec
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("ListOfVariables.java", 29)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_ListOfVariables*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ListOfVariables.array_;
     //java_util_ArrayList_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
@@ -299,6 +302,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ListOfVariables_getArray__(JAVA
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("ListOfVariables.java", 33)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((org_apache_harmony_luni_lang_reflect_ListOfVariables*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_ListOfVariables.array_;
     //java_util_ArrayList_size__[16]
     XMLVM_CHECK_NPE(1)
@@ -306,6 +310,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ListOfVariables_getArray__(JAVA
     if (!__TIB_java_lang_reflect_TypeVariable.classInitialized) __INIT_java_lang_reflect_TypeVariable();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_reflect_TypeVariable, _r1.i);
     XMLVM_SOURCE_POSITION("ListOfVariables.java", 34)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((org_apache_harmony_luni_lang_reflect_ListOfVariables*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_ListOfVariables.array_;
     //java_util_ArrayList_toArray___java_lang_Object_1ARRAY[18]
     XMLVM_CHECK_NPE(1)

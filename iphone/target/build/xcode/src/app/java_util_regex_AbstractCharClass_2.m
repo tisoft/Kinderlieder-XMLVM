@@ -233,8 +233,11 @@ void java_util_regex_AbstractCharClass_2___INIT____java_util_regex_AbstractCharC
     _r2.o = n2;
     _r3.o = n3;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractCharClass_2*) _r0.o)->fields.java_util_regex_AbstractCharClass_2.this_0_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractCharClass_2*) _r0.o)->fields.java_util_regex_AbstractCharClass_2.val_lHS_ = _r2.o;
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractCharClass_2*) _r0.o)->fields.java_util_regex_AbstractCharClass_2.val_thisClass_ = _r3.o;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 124)
     XMLVM_CHECK_NPE(0)
@@ -266,13 +269,16 @@ JAVA_BOOLEAN java_util_regex_AbstractCharClass_2_contains___int(JAVA_OBJECT me, 
     _r1.i = java_util_regex_AbstractCharClass_GET_SURROGATE_CARDINALITY();
     if (_r0.i >= _r1.i) goto label33;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 130)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_regex_AbstractCharClass*) _r4.o)->fields.java_util_regex_AbstractCharClass.altSurrogates_;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_regex_AbstractCharClass_2*) _r4.o)->fields.java_util_regex_AbstractCharClass_2.val_lHS_;
     XMLVM_CHECK_NPE(2)
     _r0.i = java_util_BitSet_get___int(_r2.o, _r0.i);
     _r0.i = _r0.i ^ _r1.i;
     label21:;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 134)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_regex_AbstractCharClass_2*) _r4.o)->fields.java_util_regex_AbstractCharClass_2.val_thisClass_;
     //java_util_regex_AbstractCharClass_contains___int[7]
     XMLVM_CHECK_NPE(1)

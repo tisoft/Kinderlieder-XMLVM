@@ -263,8 +263,10 @@ void java_util_zip_ZipFile_ZipInflaterInputStream___INIT____java_io_InputStream_
     java_util_zip_InflaterInputStream___INIT____java_io_InputStream_java_util_zip_Inflater_int(_r2.o, _r3.o, _r4.o, _r5.i);
     XMLVM_SOURCE_POSITION("ZipFile.java", 452)
     _r0.l = 0;
+    XMLVM_CHECK_NPE(2)
     ((java_util_zip_ZipFile_ZipInflaterInputStream*) _r2.o)->fields.java_util_zip_ZipFile_ZipInflaterInputStream.bytesRead_ = _r0.l;
     XMLVM_SOURCE_POSITION("ZipFile.java", 456)
+    XMLVM_CHECK_NPE(2)
     ((java_util_zip_ZipFile_ZipInflaterInputStream*) _r2.o)->fields.java_util_zip_ZipFile_ZipInflaterInputStream.entry_ = _r6.o;
     XMLVM_SOURCE_POSITION("ZipFile.java", 457)
     XMLVM_EXIT_METHOD()
@@ -296,9 +298,11 @@ JAVA_INT java_util_zip_ZipFile_ZipInflaterInputStream_read___byte_1ARRAY_int_int
     _r1.i = -1;
     if (_r0.i == _r1.i) goto label13;
     XMLVM_SOURCE_POSITION("ZipFile.java", 463)
+    XMLVM_CHECK_NPE(5)
     _r1.l = ((java_util_zip_ZipFile_ZipInflaterInputStream*) _r5.o)->fields.java_util_zip_ZipFile_ZipInflaterInputStream.bytesRead_;
     _r3.l = (JAVA_LONG) _r0.i;
     _r1.l = _r1.l + _r3.l;
+    XMLVM_CHECK_NPE(5)
     ((java_util_zip_ZipFile_ZipInflaterInputStream*) _r5.o)->fields.java_util_zip_ZipFile_ZipInflaterInputStream.bytesRead_ = _r1.l;
     label13:;
     XMLVM_SOURCE_POSITION("ZipFile.java", 465)
@@ -326,9 +330,11 @@ JAVA_INT java_util_zip_ZipFile_ZipInflaterInputStream_available__(JAVA_OBJECT me
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label8:;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_zip_ZipFile_ZipInflaterInputStream*) _r4.o)->fields.java_util_zip_ZipFile_ZipInflaterInputStream.entry_;
     XMLVM_CHECK_NPE(0)
     _r0.l = java_util_zip_ZipEntry_getSize__(_r0.o);
+    XMLVM_CHECK_NPE(4)
     _r2.l = ((java_util_zip_ZipFile_ZipInflaterInputStream*) _r4.o)->fields.java_util_zip_ZipFile_ZipInflaterInputStream.bytesRead_;
     _r0.l = _r0.l - _r2.l;
     _r0.i = (JAVA_INT) _r0.l;

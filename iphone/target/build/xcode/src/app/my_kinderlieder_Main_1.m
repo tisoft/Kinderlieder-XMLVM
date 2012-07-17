@@ -20,7 +20,7 @@ __TIB_DEFINITION_my_kinderlieder_Main_1 __TIB_my_kinderlieder_Main_1 = {
     "my.kinderlieder.Main$1", // className
     "my.kinderlieder", // package
     "my.kinderlieder.Main", // enclosingClassName
-    "applicationDidFinishLaunching:(Lorg/xmlvm/iphone/UIApplication;)V", // enclosingMethodName
+    "applicationDidFinishLaunchingWithOptions:(Lorg/xmlvm/iphone/UIApplication;Ljava/util/Map;)Z", // enclosingMethodName
     JAVA_NULL, // signature
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_lang_Object, // extends
     sizeof(my_kinderlieder_Main_1), // sizeInstance
@@ -220,7 +220,8 @@ void my_kinderlieder_Main_1___INIT____my_kinderlieder_Main(JAVA_OBJECT me, JAVA_
     XMLVMElem _r1;
     _r0.o = me;
     _r1.o = n1;
-    XMLVM_SOURCE_POSITION("Main.java", 89)
+    XMLVM_SOURCE_POSITION("Main.java", 91)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_Main_1*) _r0.o)->fields.my_kinderlieder_Main_1.this_0_ = _r1.o;
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
@@ -240,29 +241,32 @@ void my_kinderlieder_Main_1_run__(JAVA_OBJECT me)
     XMLVMElem _r4;
     XMLVMElem _r5;
     _r5.o = me;
-    XMLVM_SOURCE_POSITION("Main.java", 92)
+    XMLVM_SOURCE_POSITION("Main.java", 94)
     _r0.o = __NEW_my_kinderlieder_BuildInProduct();
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_BuildInProduct___INIT___(_r0.o);
-    XMLVM_SOURCE_POSITION("Main.java", 93)
+    XMLVM_SOURCE_POSITION("Main.java", 95)
     // "0"
     _r2.o = xmlvm_create_java_string_from_pool(234);
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_Product*) _r0.o)->fields.my_kinderlieder_Product.id_ = _r2.o;
-    XMLVM_SOURCE_POSITION("Main.java", 94)
+    XMLVM_SOURCE_POSITION("Main.java", 96)
     // "Kinder wollen Singen"
     _r2.o = xmlvm_create_java_string_from_pool(716);
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_Product*) _r0.o)->fields.my_kinderlieder_Product.name_ = _r2.o;
-    XMLVM_SOURCE_POSITION("Main.java", 95)
+    XMLVM_SOURCE_POSITION("Main.java", 97)
     _r2.o = __NEW_java_io_File();
     _r3.o = my_kinderlieder_Main_GET_APP_DIR();
     // "kinder-wollen-singen.zip"
     _r4.o = xmlvm_create_java_string_from_pool(717);
     XMLVM_CHECK_NPE(2)
     java_io_File___INIT____java_io_File_java_lang_String(_r2.o, _r3.o, _r4.o);
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_BuildInProduct*) _r0.o)->fields.my_kinderlieder_BuildInProduct.file_ = _r2.o;
     XMLVM_TRY_BEGIN(w8885aaab2b1c17)
     // Begin try
-    XMLVM_SOURCE_POSITION("Main.java", 97)
+    XMLVM_SOURCE_POSITION("Main.java", 99)
     _r2.o = my_kinderlieder_ShopService_getInstance__();
     _r3.o = JAVA_NULL;
     XMLVM_CHECK_NPE(2)
@@ -274,15 +278,15 @@ void my_kinderlieder_Main_1_run__(JAVA_OBJECT me)
     XMLVM_CATCH_END(w8885aaab2b1c17)
     XMLVM_RESTORE_EXCEPTION_ENV(w8885aaab2b1c17)
     label32:;
-    XMLVM_SOURCE_POSITION("Main.java", 101)
+    XMLVM_SOURCE_POSITION("Main.java", 103)
     XMLVM_EXIT_METHOD()
     return;
     label33:;
-    XMLVM_SOURCE_POSITION("Main.java", 98)
+    XMLVM_SOURCE_POSITION("Main.java", 100)
     java_lang_Thread* curThread_w8885aaab2b1c23 = (java_lang_Thread*)java_lang_Thread_currentThread__();
     _r2.o = curThread_w8885aaab2b1c23->fields.java_lang_Thread.xmlvmException_;
     _r1 = _r2;
-    XMLVM_SOURCE_POSITION("Main.java", 99)
+    XMLVM_SOURCE_POSITION("Main.java", 101)
     my_kinderlieder_Util_showErrorDialog___java_lang_Exception(_r1.o);
     goto label32;
     //XMLVM_END_WRAPPER

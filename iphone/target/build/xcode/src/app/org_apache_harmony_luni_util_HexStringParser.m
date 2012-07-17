@@ -828,30 +828,38 @@ void org_apache_harmony_luni_util_HexStringParser___INIT____int_int(JAVA_OBJECT 
     XMLVM_SOURCE_POSITION("HexStringParser.java", 69)
     // ""
     _r0.o = xmlvm_create_java_string_from_pool(0);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.abandonedNumber_ = _r0.o;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 72)
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.EXPONENT_WIDTH_ = _r5.i;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 73)
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.MANTISSA_WIDTH_ = _r6.i;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 75)
     _r0.i = 1;
     _r0.i = _r5.i - _r0.i;
     _r0.l = _r2.l << (0x3f & _r0.l);
     _r0.l = _r0.l ^ _r2.l;
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.EXPONENT_BASE_ = _r0.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 76)
     _r0.l = _r2.l << (0x3f & _r5.l);
     _r0.l = _r0.l ^ _r2.l;
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.MAX_EXPONENT_ = _r0.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 77)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.MANTISSA_WIDTH_;
     _r0.i = _r0.i + 1;
     _r0.i = -_r0.i;
     _r0.l = (JAVA_LONG) _r0.i;
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.MIN_EXPONENT_ = _r0.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 78)
     _r0.l = _r2.l << (0x3f & _r6.l);
     _r0.l = _r0.l ^ _r2.l;
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.MANTISSA_MASK_ = _r0.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 79)
     XMLVM_EXIT_METHOD()
@@ -951,21 +959,31 @@ JAVA_LONG org_apache_harmony_luni_util_HexStringParser_parse___java_lang_String(
     XMLVM_CHECK_NPE(4)
     org_apache_harmony_luni_util_HexStringParser_parseMantissa___java_lang_String(_r4.o, _r2.o);
     XMLVM_SOURCE_POSITION("HexStringParser.java", 111)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.sign_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.MANTISSA_WIDTH_;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.EXPONENT_WIDTH_;
     _r2.i = _r2.i + _r3.i;
     _r0.l = _r0.l << (0x3f & _r2.l);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.sign_ = _r0.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 112)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.exponent_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.MANTISSA_WIDTH_;
     _r0.l = _r0.l << (0x3f & _r2.l);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.exponent_ = _r0.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 113)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.sign_;
+    XMLVM_CHECK_NPE(4)
     _r2.l = ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.exponent_;
     _r0.l = _r0.l | _r2.l;
+    XMLVM_CHECK_NPE(4)
     _r2.l = ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_;
     _r0.l = _r0.l | _r2.l;
     XMLVM_EXIT_METHOD()
@@ -1055,6 +1073,7 @@ void org_apache_harmony_luni_util_HexStringParser_parseHexSign___java_lang_Strin
     _r0.i = 1;
     label9:;
     _r0.l = (JAVA_LONG) _r0.i;
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_util_HexStringParser*) _r2.o)->fields.org_apache_harmony_luni_util_HexStringParser.sign_ = _r0.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 138)
     XMLVM_EXIT_METHOD()
@@ -1103,8 +1122,10 @@ void org_apache_harmony_luni_util_HexStringParser_parseExponent___java_lang_Stri
     // Begin try
     _r4.l = java_lang_Long_parseLong___java_lang_String(_r0.o);
     _r2.l = _r2.l * _r4.l;
+    XMLVM_CHECK_NPE(6)
     ((org_apache_harmony_luni_util_HexStringParser*) _r6.o)->fields.org_apache_harmony_luni_util_HexStringParser.exponent_ = _r2.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 152)
+    XMLVM_CHECK_NPE(6)
     _r2.l = ((org_apache_harmony_luni_util_HexStringParser*) _r6.o)->fields.org_apache_harmony_luni_util_HexStringParser.EXPONENT_BASE_;
     XMLVM_CHECK_NPE(6)
     org_apache_harmony_luni_util_HexStringParser_checkedAddExponent___long(_r6.o, _r2.l);
@@ -1128,6 +1149,7 @@ void org_apache_harmony_luni_util_HexStringParser_parseExponent___java_lang_Stri
     _r0.l = (JAVA_LONG) _r1.i;
     _r2.l = 9223372036854775807;
     _r0.l = _r0.l * _r2.l;
+    XMLVM_CHECK_NPE(6)
     ((org_apache_harmony_luni_util_HexStringParser*) _r6.o)->fields.org_apache_harmony_luni_util_HexStringParser.exponent_ = _r0.l;
     goto label34;
     label48:;
@@ -1200,7 +1222,9 @@ void org_apache_harmony_luni_util_HexStringParser_parseMantissa___java_lang_Stri
     XMLVM_CHECK_NPE(7)
     org_apache_harmony_luni_util_HexStringParser_checkedAddExponent___long(_r7.o, _r0.l);
     XMLVM_SOURCE_POSITION("HexStringParser.java", 175)
+    XMLVM_CHECK_NPE(7)
     _r0.l = ((org_apache_harmony_luni_util_HexStringParser*) _r7.o)->fields.org_apache_harmony_luni_util_HexStringParser.exponent_;
+    XMLVM_CHECK_NPE(7)
     _r3.l = ((org_apache_harmony_luni_util_HexStringParser*) _r7.o)->fields.org_apache_harmony_luni_util_HexStringParser.MAX_EXPONENT_;
     _r0.i = _r0.l > _r3.l ? 1 : (_r0.l == _r3.l ? 0 : -1);
     if (_r0.i < 0) goto label56;
@@ -1210,7 +1234,9 @@ void org_apache_harmony_luni_util_HexStringParser_parseMantissa___java_lang_Stri
     goto label32;
     label56:;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 180)
+    XMLVM_CHECK_NPE(7)
     _r0.l = ((org_apache_harmony_luni_util_HexStringParser*) _r7.o)->fields.org_apache_harmony_luni_util_HexStringParser.exponent_;
+    XMLVM_CHECK_NPE(7)
     _r3.l = ((org_apache_harmony_luni_util_HexStringParser*) _r7.o)->fields.org_apache_harmony_luni_util_HexStringParser.MIN_EXPONENT_;
     _r0.i = _r0.l > _r3.l ? 1 : (_r0.l == _r3.l ? 0 : -1);
     if (_r0.i > 0) goto label68;
@@ -1227,6 +1253,7 @@ void org_apache_harmony_luni_util_HexStringParser_parseMantissa___java_lang_Stri
     XMLVM_SOURCE_POSITION("HexStringParser.java", 186)
     XMLVM_CHECK_NPE(2)
     _r0.o = java_lang_String_substring___int(_r2.o, _r5.i);
+    XMLVM_CHECK_NPE(7)
     ((org_apache_harmony_luni_util_HexStringParser*) _r7.o)->fields.org_apache_harmony_luni_util_HexStringParser.abandonedNumber_ = _r0.o;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 187)
     XMLVM_CHECK_NPE(2)
@@ -1235,8 +1262,10 @@ void org_apache_harmony_luni_util_HexStringParser_parseMantissa___java_lang_Stri
     XMLVM_SOURCE_POSITION("HexStringParser.java", 190)
     _r1.i = 16;
     _r0.l = java_lang_Long_parseLong___java_lang_String_int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(7)
     ((org_apache_harmony_luni_util_HexStringParser*) _r7.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_ = _r0.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 192)
+    XMLVM_CHECK_NPE(7)
     _r0.l = ((org_apache_harmony_luni_util_HexStringParser*) _r7.o)->fields.org_apache_harmony_luni_util_HexStringParser.exponent_;
     _r2.l = 1;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
@@ -1265,10 +1294,13 @@ void org_apache_harmony_luni_util_HexStringParser_setInfinite__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 201)
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((org_apache_harmony_luni_util_HexStringParser*) _r2.o)->fields.org_apache_harmony_luni_util_HexStringParser.MAX_EXPONENT_;
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_util_HexStringParser*) _r2.o)->fields.org_apache_harmony_luni_util_HexStringParser.exponent_ = _r0.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 202)
     _r0.l = 0;
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_util_HexStringParser*) _r2.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_ = _r0.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 203)
     XMLVM_EXIT_METHOD()
@@ -1286,8 +1318,10 @@ void org_apache_harmony_luni_util_HexStringParser_setZero__(JAVA_OBJECT me)
     _r2.o = me;
     _r0.l = 0;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 206)
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_util_HexStringParser*) _r2.o)->fields.org_apache_harmony_luni_util_HexStringParser.exponent_ = _r0.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 207)
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_util_HexStringParser*) _r2.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_ = _r0.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 208)
     XMLVM_EXIT_METHOD()
@@ -1309,9 +1343,11 @@ void org_apache_harmony_luni_util_HexStringParser_checkedAddExponent___long(JAVA
     _r4.o = me;
     _r5.l = n1;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 215)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.exponent_;
     _r0.l = _r0.l + _r5.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 216)
+    XMLVM_CHECK_NPE(4)
     _r2.l = ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.exponent_;
     _r2.i = java_lang_Long_signum___long(_r2.l);
     XMLVM_SOURCE_POSITION("HexStringParser.java", 217)
@@ -1325,6 +1361,7 @@ void org_apache_harmony_luni_util_HexStringParser_checkedAddExponent___long(JAVA
     _r0.l = (JAVA_LONG) _r2.i;
     _r2.l = 9223372036854775807;
     _r0.l = _r0.l * _r2.l;
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.exponent_ = _r0.l;
     label32:;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 222)
@@ -1332,6 +1369,7 @@ void org_apache_harmony_luni_util_HexStringParser_checkedAddExponent___long(JAVA
     return;
     label33:;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 220)
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.exponent_ = _r0.l;
     goto label32;
     //XMLVM_END_WRAPPER
@@ -1348,6 +1386,7 @@ void org_apache_harmony_luni_util_HexStringParser_processNormalNumber__(JAVA_OBJ
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 225)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.MANTISSA_WIDTH_;
     _r0.i = _r0.i + 2;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 226)
@@ -1357,9 +1396,12 @@ void org_apache_harmony_luni_util_HexStringParser_processNormalNumber__(JAVA_OBJ
     XMLVM_CHECK_NPE(4)
     org_apache_harmony_luni_util_HexStringParser_round__(_r4.o);
     XMLVM_SOURCE_POSITION("HexStringParser.java", 228)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_;
+    XMLVM_CHECK_NPE(4)
     _r2.l = ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.MANTISSA_MASK_;
     _r0.l = _r0.l & _r2.l;
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_ = _r0.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 229)
     XMLVM_EXIT_METHOD()
@@ -1378,14 +1420,17 @@ void org_apache_harmony_luni_util_HexStringParser_processSubNormalNumber__(JAVA_
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 232)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.MANTISSA_WIDTH_;
     _r0.i = _r0.i + 1;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 233)
+    XMLVM_CHECK_NPE(4)
     _r1.l = ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.exponent_;
     _r1.i = (JAVA_INT) _r1.l;
     _r0.i = _r0.i + _r1.i;
     _r1.l = 0;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 234)
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.exponent_ = _r1.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 235)
     XMLVM_CHECK_NPE(4)
@@ -1394,9 +1439,12 @@ void org_apache_harmony_luni_util_HexStringParser_processSubNormalNumber__(JAVA_
     XMLVM_CHECK_NPE(4)
     org_apache_harmony_luni_util_HexStringParser_round__(_r4.o);
     XMLVM_SOURCE_POSITION("HexStringParser.java", 237)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_;
+    XMLVM_CHECK_NPE(4)
     _r2.l = ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.MANTISSA_MASK_;
     _r0.l = _r0.l & _r2.l;
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_util_HexStringParser*) _r4.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_ = _r0.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 238)
     XMLVM_EXIT_METHOD()
@@ -1416,6 +1464,7 @@ void org_apache_harmony_luni_util_HexStringParser_fitMantissaInDesiredWidth___in
     _r3.o = me;
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 244)
+    XMLVM_CHECK_NPE(3)
     _r0.l = ((org_apache_harmony_luni_util_HexStringParser*) _r3.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_;
     XMLVM_CHECK_NPE(3)
     _r0.i = org_apache_harmony_luni_util_HexStringParser_countBitsLength___long(_r3.o, _r0.l);
@@ -1432,9 +1481,11 @@ void org_apache_harmony_luni_util_HexStringParser_fitMantissaInDesiredWidth___in
     return;
     label14:;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 248)
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((org_apache_harmony_luni_util_HexStringParser*) _r3.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_;
     _r0.i = _r4.i - _r0.i;
     _r0.l = _r1.l << (0x3f & _r0.l);
+    XMLVM_CHECK_NPE(3)
     ((org_apache_harmony_luni_util_HexStringParser*) _r3.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_ = _r0.l;
     goto label13;
     //XMLVM_END_WRAPPER
@@ -1461,11 +1512,13 @@ void org_apache_harmony_luni_util_HexStringParser_discardTrailingBits___long(JAV
     _r0.l = _r2.l << (0x3f & _r0.l);
     _r0.l = _r0.l ^ _r2.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 257)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((org_apache_harmony_luni_util_HexStringParser*) _r6.o)->fields.org_apache_harmony_luni_util_HexStringParser.abandonedNumber_;
     _r3.o = __NEW_java_lang_StringBuilder();
     _r2.o = java_lang_String_valueOf___java_lang_Object(_r2.o);
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuilder___INIT____java_lang_String(_r3.o, _r2.o);
+    XMLVM_CHECK_NPE(6)
     _r4.l = ((org_apache_harmony_luni_util_HexStringParser*) _r6.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_;
     _r0.l = _r0.l & _r4.l;
     XMLVM_CHECK_NPE(3)
@@ -1473,11 +1526,14 @@ void org_apache_harmony_luni_util_HexStringParser_discardTrailingBits___long(JAV
     //java_lang_StringBuilder_toString__[5]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[5])(_r0.o);
+    XMLVM_CHECK_NPE(6)
     ((org_apache_harmony_luni_util_HexStringParser*) _r6.o)->fields.org_apache_harmony_luni_util_HexStringParser.abandonedNumber_ = _r0.o;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 258)
+    XMLVM_CHECK_NPE(6)
     _r0.l = ((org_apache_harmony_luni_util_HexStringParser*) _r6.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_;
     _r2.i = (JAVA_INT) _r7.l;
     _r0.l = _r0.l >> (0x3f & _r2.l);
+    XMLVM_CHECK_NPE(6)
     ((org_apache_harmony_luni_util_HexStringParser*) _r6.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_ = _r0.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 259)
     XMLVM_EXIT_METHOD()
@@ -1501,6 +1557,7 @@ void org_apache_harmony_luni_util_HexStringParser_round__(JAVA_OBJECT me)
     _r5.l = 1;
     _r4.i = 1;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 267)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((org_apache_harmony_luni_util_HexStringParser*) _r7.o)->fields.org_apache_harmony_luni_util_HexStringParser.abandonedNumber_;
     // "0+"
     _r1.o = xmlvm_create_java_string_from_pool(279);
@@ -1516,14 +1573,18 @@ void org_apache_harmony_luni_util_HexStringParser_round__(JAVA_OBJECT me)
     _r0 = _r4;
     label20:;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 270)
+    XMLVM_CHECK_NPE(7)
     _r1.l = ((org_apache_harmony_luni_util_HexStringParser*) _r7.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_;
     _r1.l = _r1.l & _r5.l;
     _r1.i = (JAVA_INT) _r1.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 271)
+    XMLVM_CHECK_NPE(7)
     _r2.l = ((org_apache_harmony_luni_util_HexStringParser*) _r7.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_;
     _r2.l = _r2.l >> (0x3f & _r4.l);
+    XMLVM_CHECK_NPE(7)
     ((org_apache_harmony_luni_util_HexStringParser*) _r7.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_ = _r2.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 272)
+    XMLVM_CHECK_NPE(7)
     _r2.l = ((org_apache_harmony_luni_util_HexStringParser*) _r7.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_;
     _r2.l = _r2.l & _r5.l;
     _r2.i = (JAVA_INT) _r2.l;
@@ -1533,18 +1594,23 @@ void org_apache_harmony_luni_util_HexStringParser_round__(JAVA_OBJECT me)
     if (_r2.i != _r4.i) goto label65;
     label39:;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 275)
+    XMLVM_CHECK_NPE(7)
     _r0.l = ((org_apache_harmony_luni_util_HexStringParser*) _r7.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_;
     XMLVM_CHECK_NPE(7)
     _r0.i = org_apache_harmony_luni_util_HexStringParser_countBitsLength___long(_r7.o, _r0.l);
     XMLVM_SOURCE_POSITION("HexStringParser.java", 276)
+    XMLVM_CHECK_NPE(7)
     _r1.l = ((org_apache_harmony_luni_util_HexStringParser*) _r7.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_;
     _r1.l = _r1.l + _r5.l;
+    XMLVM_CHECK_NPE(7)
     ((org_apache_harmony_luni_util_HexStringParser*) _r7.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_ = _r1.l;
     XMLVM_SOURCE_POSITION("HexStringParser.java", 277)
+    XMLVM_CHECK_NPE(7)
     _r1.l = ((org_apache_harmony_luni_util_HexStringParser*) _r7.o)->fields.org_apache_harmony_luni_util_HexStringParser.mantissa_;
     XMLVM_CHECK_NPE(7)
     _r1.i = org_apache_harmony_luni_util_HexStringParser_countBitsLength___long(_r7.o, _r1.l);
     XMLVM_SOURCE_POSITION("HexStringParser.java", 280)
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((org_apache_harmony_luni_util_HexStringParser*) _r7.o)->fields.org_apache_harmony_luni_util_HexStringParser.MANTISSA_WIDTH_;
     if (_r0.i < _r2.i) goto label65;
     if (_r1.i <= _r0.i) goto label65;

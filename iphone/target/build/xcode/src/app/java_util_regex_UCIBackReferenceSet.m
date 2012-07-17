@@ -293,12 +293,14 @@ JAVA_INT java_util_regex_UCIBackReferenceSet_matches___int_java_lang_CharSequenc
     _r2.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[8])(_r0.o);
     if (_r1.i < _r2.i) goto label48;
     XMLVM_SOURCE_POSITION("UCIBackReferenceSet.java", 51)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_regex_CIBackReferenceSet*) _r5.o)->fields.java_util_regex_CIBackReferenceSet.consCounter_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(0)
     _r2.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[8])(_r0.o);
     XMLVM_CHECK_NPE(8)
     java_util_regex_MatchResultImpl_setConsumed___int_int(_r8.o, _r1.i, _r2.i);
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_regex_AbstractSet*) _r5.o)->fields.java_util_regex_AbstractSet.next_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(0)
@@ -346,6 +348,7 @@ JAVA_OBJECT java_util_regex_UCIBackReferenceSet_getName__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(2691);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_regex_UCIBackReferenceSet*) _r2.o)->fields.java_util_regex_UCIBackReferenceSet.groupIndex_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);

@@ -555,12 +555,16 @@ void java_net_NetworkInterface___INIT____java_lang_String_java_lang_String_java_
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 82)
+    XMLVM_CHECK_NPE(0)
     ((java_net_NetworkInterface*) _r0.o)->fields.java_net_NetworkInterface.name_ = _r1.o;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 83)
+    XMLVM_CHECK_NPE(0)
     ((java_net_NetworkInterface*) _r0.o)->fields.java_net_NetworkInterface.displayName_ = _r2.o;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 84)
+    XMLVM_CHECK_NPE(0)
     ((java_net_NetworkInterface*) _r0.o)->fields.java_net_NetworkInterface.addresses_ = _r3.o;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 85)
+    XMLVM_CHECK_NPE(0)
     ((java_net_NetworkInterface*) _r0.o)->fields.java_net_NetworkInterface.interfaceIndex_ = _r4.i;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 86)
     XMLVM_EXIT_METHOD()
@@ -576,6 +580,7 @@ JAVA_INT java_net_NetworkInterface_getIndex__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 95)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_NetworkInterface*) _r1.o)->fields.java_net_NetworkInterface.interfaceIndex_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -591,13 +596,16 @@ JAVA_OBJECT java_net_NetworkInterface_getFirstAddress__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 106)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_NetworkInterface*) _r2.o)->fields.java_net_NetworkInterface.addresses_;
     if (_r0.o == JAVA_NULL) goto label16;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_NetworkInterface*) _r2.o)->fields.java_net_NetworkInterface.addresses_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r1.i = 1;
     if (_r0.i < _r1.i) goto label16;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 107)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_NetworkInterface*) _r2.o)->fields.java_net_NetworkInterface.addresses_;
     _r1.i = 0;
     XMLVM_CHECK_NPE(0)
@@ -621,6 +629,7 @@ JAVA_OBJECT java_net_NetworkInterface_getName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 118)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_NetworkInterface*) _r1.o)->fields.java_net_NetworkInterface.name_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -645,6 +654,7 @@ JAVA_OBJECT java_net_NetworkInterface_getInetAddresses__(JAVA_OBJECT me)
     _r10.o = me;
     _r9.i = 0;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 137)
+    XMLVM_CHECK_NPE(10)
     _r8.o = ((java_net_NetworkInterface*) _r10.o)->fields.java_net_NetworkInterface.addresses_;
     if (_r8.o != JAVA_NULL) goto label15;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 138)
@@ -660,6 +670,7 @@ JAVA_OBJECT java_net_NetworkInterface_getInetAddresses__(JAVA_OBJECT me)
     label15:;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 145)
     _r0.o = __NEW_java_util_Vector();
+    XMLVM_CHECK_NPE(10)
     _r8.o = ((java_net_NetworkInterface*) _r10.o)->fields.java_net_NetworkInterface.addresses_;
     _r8.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r8.o));
     XMLVM_CHECK_NPE(0)
@@ -670,6 +681,7 @@ JAVA_OBJECT java_net_NetworkInterface_getInetAddresses__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 153)
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 154)
     _r8.o = __NEW_java_util_Vector();
+    XMLVM_CHECK_NPE(10)
     _r9.o = ((java_net_NetworkInterface*) _r10.o)->fields.java_net_NetworkInterface.addresses_;
     _r9.o = java_util_Arrays_asList___java_lang_Object_1ARRAY(_r9.o);
     XMLVM_CHECK_NPE(8)
@@ -679,6 +691,7 @@ JAVA_OBJECT java_net_NetworkInterface_getInetAddresses__(JAVA_OBJECT me)
     goto label14;
     label45:;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 162)
+    XMLVM_CHECK_NPE(10)
     _r1.o = ((java_net_NetworkInterface*) _r10.o)->fields.java_net_NetworkInterface.addresses_;
     _r5.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     _r4.i = 0;
@@ -688,7 +701,7 @@ JAVA_OBJECT java_net_NetworkInterface_getInetAddresses__(JAVA_OBJECT me)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r4.i);
     _r2.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     if (_r6.o == JAVA_NULL) goto label78;
-    XMLVM_TRY_BEGIN(w42873aaac13b1c39)
+    XMLVM_TRY_BEGIN(w42878aaac13b1c39)
     // Begin try
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 163)
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 169)
@@ -699,18 +712,18 @@ JAVA_OBJECT java_net_NetworkInterface_getInetAddresses__(JAVA_OBJECT me)
     _r8.o = xmlvm_create_java_string_from_pool(2453);
     XMLVM_CHECK_NPE(3)
     _r8.i = java_lang_String_contains___java_lang_CharSequence(_r3.o, _r8.o);
-    if (_r8.i == 0) { XMLVM_MEMCPY(curThread_w42873aaac13b1c39->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42873aaac13b1c39, sizeof(XMLVM_JMP_BUF)); goto label71; };
+    if (_r8.i == 0) { XMLVM_MEMCPY(curThread_w42878aaac13b1c39->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42878aaac13b1c39, sizeof(XMLVM_JMP_BUF)); goto label71; };
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 171)
     XMLVM_CHECK_NPE(10)
     _r3.o = java_net_NetworkInterface_getFullFormOfCompressedIPV6Address___java_lang_String(_r10.o, _r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42873aaac13b1c39)
-        XMLVM_CATCH_SPECIFIC(w42873aaac13b1c39,java_lang_SecurityException,106)
-    XMLVM_CATCH_END(w42873aaac13b1c39)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42873aaac13b1c39)
+    XMLVM_CATCH_BEGIN(w42878aaac13b1c39)
+        XMLVM_CATCH_SPECIFIC(w42878aaac13b1c39,java_lang_SecurityException,106)
+    XMLVM_CATCH_END(w42878aaac13b1c39)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42878aaac13b1c39)
     label71:;
-    XMLVM_TRY_BEGIN(w42873aaac13b1c41)
+    XMLVM_TRY_BEGIN(w42878aaac13b1c41)
     // Begin try
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 173)
     _r8.i = -1;
@@ -722,10 +735,10 @@ JAVA_OBJECT java_net_NetworkInterface_getInetAddresses__(JAVA_OBJECT me)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Vector*) _r0.o)->tib->vtable[7])(_r0.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42873aaac13b1c41)
-        XMLVM_CATCH_SPECIFIC(w42873aaac13b1c41,java_lang_SecurityException,106)
-    XMLVM_CATCH_END(w42873aaac13b1c41)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42873aaac13b1c41)
+    XMLVM_CATCH_BEGIN(w42878aaac13b1c41)
+        XMLVM_CATCH_SPECIFIC(w42878aaac13b1c41,java_lang_SecurityException,106)
+    XMLVM_CATCH_END(w42878aaac13b1c41)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42878aaac13b1c41)
     label78:;
     _r4.i = _r4.i + 1;
     goto label49;
@@ -750,8 +763,8 @@ JAVA_OBJECT java_net_NetworkInterface_getInetAddresses__(JAVA_OBJECT me)
     goto label14;
     label106:;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 176)
-    java_lang_Thread* curThread_w42873aaac13b1c61 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r8.o = curThread_w42873aaac13b1c61->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w42878aaac13b1c61 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r8.o = curThread_w42878aaac13b1c61->fields.java_lang_Thread.xmlvmException_;
     goto label78;
     //XMLVM_END_WRAPPER
 }
@@ -986,6 +999,7 @@ JAVA_OBJECT java_net_NetworkInterface_getDisplayName__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 257)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_NetworkInterface*) _r2.o)->fields.java_net_NetworkInterface.displayName_;
     // ""
     _r1.o = xmlvm_create_java_string_from_pool(0);
@@ -994,12 +1008,14 @@ JAVA_OBJECT java_net_NetworkInterface_getDisplayName__(JAVA_OBJECT me)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r1.o);
     if (_r0.i != 0) goto label13;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 258)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_NetworkInterface*) _r2.o)->fields.java_net_NetworkInterface.displayName_;
     label12:;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 260)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label13:;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_NetworkInterface*) _r2.o)->fields.java_net_NetworkInterface.name_;
     goto label12;
     //XMLVM_END_WRAPPER
@@ -1096,13 +1112,16 @@ JAVA_OBJECT java_net_NetworkInterface_getByInetAddress___java_net_InetAddress(JA
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Enumeration_nextElement__])(_r0.o);
     _r1.o = _r1.o;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 333)
+    XMLVM_CHECK_NPE(1)
     _r3.o = ((java_net_NetworkInterface*) _r1.o)->fields.java_net_NetworkInterface.addresses_;
     if (_r3.o == JAVA_NULL) goto label20;
+    XMLVM_CHECK_NPE(1)
     _r3.o = ((java_net_NetworkInterface*) _r1.o)->fields.java_net_NetworkInterface.addresses_;
     _r3.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r3.o));
     if (_r3.i == 0) goto label20;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 334)
     _r3.o = __NEW_java_util_Vector();
+    XMLVM_CHECK_NPE(1)
     _r4.o = ((java_net_NetworkInterface*) _r1.o)->fields.java_net_NetworkInterface.addresses_;
     _r4.o = java_util_Arrays_asList___java_lang_Object_1ARRAY(_r4.o);
     XMLVM_CHECK_NPE(3)
@@ -1174,9 +1193,11 @@ JAVA_OBJECT java_net_NetworkInterface_getNetworkInterfaces__()
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r5.i);
     _r9.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r5.i];
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 369)
+    XMLVM_CHECK_NPE(9)
     _r10.o = ((java_net_NetworkInterface*) _r9.o)->fields.java_net_NetworkInterface.addresses_;
     if (_r10.o == JAVA_NULL) goto label69;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 370)
+    XMLVM_CHECK_NPE(9)
     _r3.o = ((java_net_NetworkInterface*) _r9.o)->fields.java_net_NetworkInterface.addresses_;
     _r8.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r3.o));
     _r4.i = 0;
@@ -1187,6 +1208,7 @@ JAVA_OBJECT java_net_NetworkInterface_getNetworkInterfaces__()
     _r1.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     _r10.i = 16;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 371)
+    XMLVM_CHECK_NPE(1)
     _r11.o = ((java_net_InetAddress*) _r1.o)->fields.java_net_InetAddress.ipaddress_;
     _r11.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r11.o));
     if (_r10.i != _r11.i) goto label66;
@@ -1204,16 +1226,20 @@ JAVA_OBJECT java_net_NetworkInterface_getNetworkInterfaces__()
     _r0 = _r1;
     _r0.o = _r0.o;
     _r10 = _r0;
+    XMLVM_CHECK_NPE(10)
     ((java_net_Inet6Address*) _r10.o)->fields.java_net_Inet6Address.scopedIf_ = _r9.o;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 375)
     _r0 = _r1;
     _r0.o = _r0.o;
     _r10 = _r0;
+    XMLVM_CHECK_NPE(9)
     _r11.o = ((java_net_NetworkInterface*) _r9.o)->fields.java_net_NetworkInterface.name_;
+    XMLVM_CHECK_NPE(10)
     ((java_net_Inet6Address*) _r10.o)->fields.java_net_Inet6Address.ifname_ = _r11.o;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 376)
     _r1.o = _r1.o;
     _r10.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((java_net_Inet6Address*) _r1.o)->fields.java_net_Inet6Address.scope_ifname_set_ = _r10.i;
     label66:;
     _r4.i = _r4.i + 1;
@@ -1278,6 +1304,7 @@ JAVA_BOOLEAN java_net_NetworkInterface_equals___java_lang_Object(JAVA_OBJECT me,
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 418)
     XMLVM_CHECK_NPE(2)
     _r4.i = java_net_NetworkInterface_getIndex__(_r2.o);
+    XMLVM_CHECK_NPE(9)
     _r5.i = ((java_net_NetworkInterface*) _r9.o)->fields.java_net_NetworkInterface.interfaceIndex_;
     if (_r4.i == _r5.i) goto label28;
     _r4 = _r6;
@@ -1285,6 +1312,7 @@ JAVA_BOOLEAN java_net_NetworkInterface_equals___java_lang_Object(JAVA_OBJECT me,
     goto label7;
     label28:;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 422)
+    XMLVM_CHECK_NPE(9)
     _r4.o = ((java_net_NetworkInterface*) _r9.o)->fields.java_net_NetworkInterface.name_;
     // ""
     _r5.o = xmlvm_create_java_string_from_pool(0);
@@ -1294,6 +1322,7 @@ JAVA_BOOLEAN java_net_NetworkInterface_equals___java_lang_Object(JAVA_OBJECT me,
     if (_r4.i != 0) goto label52;
     XMLVM_CHECK_NPE(2)
     _r4.o = java_net_NetworkInterface_getName__(_r2.o);
+    XMLVM_CHECK_NPE(9)
     _r5.o = ((java_net_NetworkInterface*) _r9.o)->fields.java_net_NetworkInterface.name_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(4)
@@ -1304,6 +1333,7 @@ JAVA_BOOLEAN java_net_NetworkInterface_equals___java_lang_Object(JAVA_OBJECT me,
     goto label7;
     label52:;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 426)
+    XMLVM_CHECK_NPE(9)
     _r4.o = ((java_net_NetworkInterface*) _r9.o)->fields.java_net_NetworkInterface.name_;
     // ""
     _r5.o = xmlvm_create_java_string_from_pool(0);
@@ -1313,6 +1343,7 @@ JAVA_BOOLEAN java_net_NetworkInterface_equals___java_lang_Object(JAVA_OBJECT me,
     if (_r4.i == 0) goto label76;
     XMLVM_CHECK_NPE(2)
     _r4.o = java_net_NetworkInterface_getName__(_r2.o);
+    XMLVM_CHECK_NPE(9)
     _r5.o = ((java_net_NetworkInterface*) _r9.o)->fields.java_net_NetworkInterface.displayName_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(4)
@@ -1387,16 +1418,20 @@ JAVA_INT java_net_NetworkInterface_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 468)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_NetworkInterface*) _r1.o)->fields.java_net_NetworkInterface.hashCode_;
     if (_r0.i != 0) goto label12;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 469)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_NetworkInterface*) _r1.o)->fields.java_net_NetworkInterface.name_;
     //java_lang_String_hashCode__[4]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[4])(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_net_NetworkInterface*) _r1.o)->fields.java_net_NetworkInterface.hashCode_ = _r0.i;
     label12:;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 471)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_NetworkInterface*) _r1.o)->fields.java_net_NetworkInterface.hashCode_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -1430,6 +1465,7 @@ JAVA_OBJECT java_net_NetworkInterface_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder_append___java_lang_String(_r1.o, _r4.o);
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 484)
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_net_NetworkInterface*) _r6.o)->fields.java_net_NetworkInterface.name_;
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder_append___java_lang_String(_r1.o, _r3.o);
@@ -1439,6 +1475,7 @@ JAVA_OBJECT java_net_NetworkInterface_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder_append___java_lang_String(_r1.o, _r3.o);
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 486)
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_net_NetworkInterface*) _r6.o)->fields.java_net_NetworkInterface.displayName_;
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder_append___java_lang_String(_r1.o, _r3.o);

@@ -265,6 +265,7 @@ void java_util_IllegalFormatFlagsException___INIT____java_lang_String(JAVA_OBJEC
     XMLVM_THROW_CUSTOM(_r0.o)
     label11:;
     XMLVM_SOURCE_POSITION("IllegalFormatFlagsException.java", 44)
+    XMLVM_CHECK_NPE(1)
     ((java_util_IllegalFormatFlagsException*) _r1.o)->fields.java_util_IllegalFormatFlagsException.flags_ = _r2.o;
     XMLVM_SOURCE_POSITION("IllegalFormatFlagsException.java", 45)
     XMLVM_EXIT_METHOD()
@@ -280,6 +281,7 @@ JAVA_OBJECT java_util_IllegalFormatFlagsException_getFlags__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("IllegalFormatFlagsException.java", 53)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_IllegalFormatFlagsException*) _r1.o)->fields.java_util_IllegalFormatFlagsException.flags_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -304,6 +306,7 @@ JAVA_OBJECT java_util_IllegalFormatFlagsException_getMessage__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("IllegalFormatFlagsException.java", 65)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_IllegalFormatFlagsException*) _r2.o)->fields.java_util_IllegalFormatFlagsException.flags_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);

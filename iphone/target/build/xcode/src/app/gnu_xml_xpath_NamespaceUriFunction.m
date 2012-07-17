@@ -328,6 +328,7 @@ void gnu_xml_xpath_NamespaceUriFunction___INIT____gnu_xml_xpath_Expr(JAVA_OBJECT
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_Expr___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("NamespaceUriFunction.java", 69)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_NamespaceUriFunction*) _r0.o)->fields.gnu_xml_xpath_NamespaceUriFunction.arg_ = _r1.o;
     XMLVM_SOURCE_POSITION("NamespaceUriFunction.java", 70)
     XMLVM_EXIT_METHOD()
@@ -349,6 +350,7 @@ JAVA_OBJECT gnu_xml_xpath_NamespaceUriFunction_evaluate___org_w3c_dom_Node_int_i
     _r3.i = n2;
     _r4.i = n3;
     XMLVM_SOURCE_POSITION("NamespaceUriFunction.java", 77)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_NamespaceUriFunction*) _r1.o)->fields.gnu_xml_xpath_NamespaceUriFunction.arg_;
     if (_r0.o != JAVA_NULL) goto label13;
     _r0.o = java_util_Collections_singleton___java_lang_Object(_r2.o);
@@ -359,6 +361,7 @@ JAVA_OBJECT gnu_xml_xpath_NamespaceUriFunction_evaluate___org_w3c_dom_Node_int_i
     return _r0.o;
     label13:;
     XMLVM_SOURCE_POSITION("NamespaceUriFunction.java", 78)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_NamespaceUriFunction*) _r1.o)->fields.gnu_xml_xpath_NamespaceUriFunction.arg_;
     //gnu_xml_xpath_Expr_evaluate___org_w3c_dom_Node_int_int[9]
     XMLVM_CHECK_NPE(0)
@@ -381,6 +384,7 @@ JAVA_OBJECT gnu_xml_xpath_NamespaceUriFunction_clone___java_lang_Object(JAVA_OBJ
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("NamespaceUriFunction.java", 84)
     _r0.o = __NEW_gnu_xml_xpath_NamespaceUriFunction();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_NamespaceUriFunction*) _r2.o)->fields.gnu_xml_xpath_NamespaceUriFunction.arg_;
     if (_r1.o != JAVA_NULL) goto label11;
     _r1.o = JAVA_NULL;
@@ -391,6 +395,7 @@ JAVA_OBJECT gnu_xml_xpath_NamespaceUriFunction_clone___java_lang_Object(JAVA_OBJ
     return _r0.o;
     label11:;
     XMLVM_SOURCE_POSITION("NamespaceUriFunction.java", 85)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_NamespaceUriFunction*) _r2.o)->fields.gnu_xml_xpath_NamespaceUriFunction.arg_;
     //gnu_xml_xpath_Expr_clone___java_lang_Object[6]
     XMLVM_CHECK_NPE(1)
@@ -409,6 +414,7 @@ JAVA_BOOLEAN gnu_xml_xpath_NamespaceUriFunction_references___javax_xml_namespace
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("NamespaceUriFunction.java", 90)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_NamespaceUriFunction*) _r1.o)->fields.gnu_xml_xpath_NamespaceUriFunction.arg_;
     if (_r0.o != JAVA_NULL) goto label6;
     _r0.i = 0;
@@ -416,6 +422,7 @@ JAVA_BOOLEAN gnu_xml_xpath_NamespaceUriFunction_references___javax_xml_namespace
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label6:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_NamespaceUriFunction*) _r1.o)->fields.gnu_xml_xpath_NamespaceUriFunction.arg_;
     //gnu_xml_xpath_Expr_references___javax_xml_namespace_QName[12]
     XMLVM_CHECK_NPE(0)
@@ -433,6 +440,7 @@ JAVA_OBJECT gnu_xml_xpath_NamespaceUriFunction_toString__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("NamespaceUriFunction.java", 95)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_xpath_NamespaceUriFunction*) _r2.o)->fields.gnu_xml_xpath_NamespaceUriFunction.arg_;
     if (_r0.o != JAVA_NULL) goto label7;
     // "namespace-uri()"
@@ -446,6 +454,7 @@ JAVA_OBJECT gnu_xml_xpath_NamespaceUriFunction_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(1169);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_NamespaceUriFunction*) _r2.o)->fields.gnu_xml_xpath_NamespaceUriFunction.arg_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);

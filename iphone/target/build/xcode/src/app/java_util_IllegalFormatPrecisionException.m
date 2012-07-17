@@ -256,6 +256,7 @@ void java_util_IllegalFormatPrecisionException___INIT____int(JAVA_OBJECT me, JAV
     XMLVM_CHECK_NPE(0)
     java_util_IllegalFormatException___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("IllegalFormatPrecisionException.java", 39)
+    XMLVM_CHECK_NPE(0)
     ((java_util_IllegalFormatPrecisionException*) _r0.o)->fields.java_util_IllegalFormatPrecisionException.p_ = _r1.i;
     XMLVM_SOURCE_POSITION("IllegalFormatPrecisionException.java", 40)
     XMLVM_EXIT_METHOD()
@@ -271,6 +272,7 @@ JAVA_INT java_util_IllegalFormatPrecisionException_getPrecision__(JAVA_OBJECT me
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("IllegalFormatPrecisionException.java", 48)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_IllegalFormatPrecisionException*) _r1.o)->fields.java_util_IllegalFormatPrecisionException.p_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -285,6 +287,7 @@ JAVA_OBJECT java_util_IllegalFormatPrecisionException_getMessage__(JAVA_OBJECT m
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("IllegalFormatPrecisionException.java", 58)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_IllegalFormatPrecisionException*) _r1.o)->fields.java_util_IllegalFormatPrecisionException.p_;
     _r0.o = java_lang_String_valueOf___int(_r0.i);
     XMLVM_EXIT_METHOD()

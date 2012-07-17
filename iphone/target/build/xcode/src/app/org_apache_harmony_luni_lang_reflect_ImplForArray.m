@@ -241,6 +241,7 @@ void org_apache_harmony_luni_lang_reflect_ImplForArray___INIT____java_lang_refle
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("ImplForArray.java", 26)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_lang_reflect_ImplForArray*) _r0.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForArray.componentType_ = _r1.o;
     XMLVM_SOURCE_POSITION("ImplForArray.java", 27)
     XMLVM_EXIT_METHOD()
@@ -256,28 +257,30 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForArray_getGenericComponen
     XMLVMElem _r1;
     XMLVMElem _r2;
     _r2.o = me;
-    XMLVM_TRY_BEGIN(w28492aaab2b1b2)
+    XMLVM_TRY_BEGIN(w28494aaab2b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("ImplForArray.java", 31)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((org_apache_harmony_luni_lang_reflect_ImplForArray*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForArray.componentType_;
     _r1.o = _r1.o;
     XMLVM_CHECK_NPE(1)
     _r1.o = org_apache_harmony_luni_lang_reflect_ImplForType_getResolvedType__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28492aaab2b1b2)
-        XMLVM_CATCH_SPECIFIC(w28492aaab2b1b2,java_lang_ClassCastException,9)
-    XMLVM_CATCH_END(w28492aaab2b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28492aaab2b1b2)
+    XMLVM_CATCH_BEGIN(w28494aaab2b1b2)
+        XMLVM_CATCH_SPECIFIC(w28494aaab2b1b2,java_lang_ClassCastException,9)
+    XMLVM_CATCH_END(w28494aaab2b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28494aaab2b1b2)
     label8:;
     XMLVM_SOURCE_POSITION("ImplForArray.java", 33)
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label9:;
     XMLVM_SOURCE_POSITION("ImplForArray.java", 32)
-    java_lang_Thread* curThread_w28492aaab2b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w28492aaab2b1b8->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w28494aaab2b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w28494aaab2b1b8->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r1;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((org_apache_harmony_luni_lang_reflect_ImplForArray*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForArray.componentType_;
     goto label8;
     //XMLVM_END_WRAPPER
@@ -295,6 +298,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForArray_toString__(JAVA_OB
     _r0.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((org_apache_harmony_luni_lang_reflect_ImplForArray*) _r2.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForArray.componentType_;
     //java_lang_Object_toString__[5]
     XMLVM_CHECK_NPE(1)

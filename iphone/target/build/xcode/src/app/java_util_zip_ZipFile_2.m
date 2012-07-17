@@ -247,7 +247,9 @@ void java_util_zip_ZipFile_2___INIT____java_util_zip_ZipFile_java_util_Iterator(
     _r1.o = n1;
     _r2.o = n2;
     XMLVM_SOURCE_POSITION("ZipFile.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_zip_ZipFile_2*) _r0.o)->fields.java_util_zip_ZipFile_2.this_0_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((java_util_zip_ZipFile_2*) _r0.o)->fields.java_util_zip_ZipFile_2.val_iterator_ = _r2.o;
     XMLVM_SOURCE_POSITION("ZipFile.java", 180)
     XMLVM_CHECK_NPE(0)
@@ -265,9 +267,11 @@ JAVA_BOOLEAN java_util_zip_ZipFile_2_hasMoreElements__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ZipFile.java", 182)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_zip_ZipFile_2*) _r1.o)->fields.java_util_zip_ZipFile_2.this_0_;
     java_util_zip_ZipFile_access$1___java_util_zip_ZipFile(_r0.o);
     XMLVM_SOURCE_POSITION("ZipFile.java", 183)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_zip_ZipFile_2*) _r1.o)->fields.java_util_zip_ZipFile_2.val_iterator_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_hasNext__])(_r0.o);
@@ -284,9 +288,11 @@ JAVA_OBJECT java_util_zip_ZipFile_2_nextElement__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ZipFile.java", 187)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_zip_ZipFile_2*) _r1.o)->fields.java_util_zip_ZipFile_2.this_0_;
     java_util_zip_ZipFile_access$1___java_util_zip_ZipFile(_r0.o);
     XMLVM_SOURCE_POSITION("ZipFile.java", 188)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_zip_ZipFile_2*) _r1.o)->fields.java_util_zip_ZipFile_2.val_iterator_;
     XMLVM_CHECK_NPE(0)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_next__])(_r0.o);

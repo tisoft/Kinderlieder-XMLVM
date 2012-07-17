@@ -250,8 +250,10 @@ void java_util_regex_AbstractCharClass_LazyCategoryScope___INIT____int_boolean(J
     XMLVM_CHECK_NPE(0)
     java_util_regex_AbstractCharClass_LazyCharClass___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 365)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractCharClass_LazyCategoryScope*) _r0.o)->fields.java_util_regex_AbstractCharClass_LazyCategoryScope.mayContainSupplCodepoints_ = _r2.i;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 366)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractCharClass_LazyCategoryScope*) _r0.o)->fields.java_util_regex_AbstractCharClass_LazyCategoryScope.category_ = _r1.i;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 367)
     XMLVM_EXIT_METHOD()
@@ -275,10 +277,13 @@ void java_util_regex_AbstractCharClass_LazyCategoryScope___INIT____int_boolean_b
     XMLVM_CHECK_NPE(0)
     java_util_regex_AbstractCharClass_LazyCharClass___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 371)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractCharClass_LazyCategoryScope*) _r0.o)->fields.java_util_regex_AbstractCharClass_LazyCategoryScope.containsAllSurrogates_ = _r3.i;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 372)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractCharClass_LazyCategoryScope*) _r0.o)->fields.java_util_regex_AbstractCharClass_LazyCategoryScope.mayContainSupplCodepoints_ = _r2.i;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 373)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractCharClass_LazyCategoryScope*) _r0.o)->fields.java_util_regex_AbstractCharClass_LazyCategoryScope.category_ = _r1.i;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 374)
     XMLVM_EXIT_METHOD()
@@ -298,13 +303,16 @@ JAVA_OBJECT java_util_regex_AbstractCharClass_LazyCategoryScope_computeValue__(J
     _r4.o = me;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 377)
     _r0.o = __NEW_java_util_regex_UnicodeCategoryScope();
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_regex_AbstractCharClass_LazyCategoryScope*) _r4.o)->fields.java_util_regex_AbstractCharClass_LazyCategoryScope.category_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_UnicodeCategoryScope___INIT____int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 378)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_regex_AbstractCharClass_LazyCategoryScope*) _r4.o)->fields.java_util_regex_AbstractCharClass_LazyCategoryScope.containsAllSurrogates_;
     if (_r1.i == 0) goto label19;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 379)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((java_util_regex_AbstractCharClass*) _r0.o)->fields.java_util_regex_AbstractCharClass.lowHighSurrogates_;
     _r2.i = 0;
     _r3.i = java_util_regex_AbstractCharClass_GET_SURROGATE_CARDINALITY();
@@ -312,7 +320,9 @@ JAVA_OBJECT java_util_regex_AbstractCharClass_LazyCategoryScope_computeValue__(J
     java_util_BitSet_set___int_int(_r1.o, _r2.i, _r3.i);
     label19:;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 382)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_regex_AbstractCharClass_LazyCategoryScope*) _r4.o)->fields.java_util_regex_AbstractCharClass_LazyCategoryScope.mayContainSupplCodepoints_;
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractCharClass*) _r0.o)->fields.java_util_regex_AbstractCharClass.mayContainSupplCodepoints_ = _r1.i;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 383)
     XMLVM_EXIT_METHOD()

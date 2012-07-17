@@ -284,6 +284,7 @@ void java_net_SocketPermissionCollection___INIT___(JAVA_OBJECT me)
     _r0.o = __NEW_java_util_Vector();
     XMLVM_CHECK_NPE(0)
     java_util_Vector___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_net_SocketPermissionCollection*) _r1.o)->fields.java_net_SocketPermissionCollection.permissions_ = _r0.o;
     XMLVM_SOURCE_POSITION("SocketPermissionCollection.java", 39)
     XMLVM_EXIT_METHOD()
@@ -325,6 +326,7 @@ void java_net_SocketPermissionCollection_add___java_security_Permission(JAVA_OBJ
     XMLVM_THROW_CUSTOM(_r0.o)
     label26:;
     XMLVM_SOURCE_POSITION("SocketPermissionCollection.java", 50)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_SocketPermissionCollection*) _r2.o)->fields.java_net_SocketPermissionCollection.permissions_;
     XMLVM_CHECK_NPE(0)
     java_util_Vector_addElement___java_lang_Object(_r0.o, _r3.o);
@@ -342,6 +344,7 @@ JAVA_OBJECT java_net_SocketPermissionCollection_elements__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SocketPermissionCollection.java", 56)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_SocketPermissionCollection*) _r1.o)->fields.java_net_SocketPermissionCollection.permissions_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_util_Vector_elements__(_r0.o);
@@ -383,8 +386,10 @@ JAVA_BOOLEAN java_net_SocketPermissionCollection_implies___java_security_Permiss
     XMLVM_SOURCE_POSITION("SocketPermissionCollection.java", 69)
     _r10.o = _r10.o;
     XMLVM_SOURCE_POSITION("SocketPermissionCollection.java", 70)
+    XMLVM_CHECK_NPE(10)
     _r1.i = ((java_net_SocketPermission*) _r10.o)->fields.java_net_SocketPermission.actionsMask_;
     XMLVM_SOURCE_POSITION("SocketPermissionCollection.java", 72)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((java_net_SocketPermissionCollection*) _r9.o)->fields.java_net_SocketPermissionCollection.permissions_;
     //java_util_Vector_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -403,6 +408,7 @@ JAVA_BOOLEAN java_net_SocketPermissionCollection_implies___java_security_Permiss
     goto label7;
     label32:;
     XMLVM_SOURCE_POSITION("SocketPermissionCollection.java", 74)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((java_net_SocketPermissionCollection*) _r9.o)->fields.java_net_SocketPermissionCollection.permissions_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_util_Vector_elementAt___int(_r0.o, _r3.i);
@@ -412,6 +418,7 @@ JAVA_BOOLEAN java_net_SocketPermissionCollection_implies___java_security_Permiss
     _r5.i = java_net_SocketPermission_checkHost___java_net_SocketPermission(_r0.o, _r10.o);
     if (_r5.i == 0) goto label100;
     XMLVM_SOURCE_POSITION("SocketPermissionCollection.java", 76)
+    XMLVM_CHECK_NPE(0)
     _r5.i = ((java_net_SocketPermission*) _r0.o)->fields.java_net_SocketPermission.actionsMask_;
     _r5.i = _r5.i & 8;
     _r6.i = 8;
@@ -420,14 +427,19 @@ JAVA_BOOLEAN java_net_SocketPermissionCollection_implies___java_security_Permiss
     _r4.i = _r4.i | 8;
     label56:;
     XMLVM_SOURCE_POSITION("SocketPermissionCollection.java", 80)
+    XMLVM_CHECK_NPE(10)
     _r5.i = ((java_net_SocketPermission*) _r10.o)->fields.java_net_SocketPermission.portMin_;
+    XMLVM_CHECK_NPE(0)
     _r6.i = ((java_net_SocketPermission*) _r0.o)->fields.java_net_SocketPermission.portMin_;
     if (_r5.i < _r6.i) goto label100;
     XMLVM_SOURCE_POSITION("SocketPermissionCollection.java", 81)
+    XMLVM_CHECK_NPE(10)
     _r5.i = ((java_net_SocketPermission*) _r10.o)->fields.java_net_SocketPermission.portMax_;
+    XMLVM_CHECK_NPE(0)
     _r6.i = ((java_net_SocketPermission*) _r0.o)->fields.java_net_SocketPermission.portMax_;
     if (_r5.i > _r6.i) goto label100;
     XMLVM_SOURCE_POSITION("SocketPermissionCollection.java", 82)
+    XMLVM_CHECK_NPE(0)
     _r5.i = ((java_net_SocketPermission*) _r0.o)->fields.java_net_SocketPermission.actionsMask_;
     _r5.i = _r5.i & 1;
     if (_r5.i != _r8.i) goto label76;
@@ -435,6 +447,7 @@ JAVA_BOOLEAN java_net_SocketPermissionCollection_implies___java_security_Permiss
     _r4.i = _r4.i | 1;
     label76:;
     XMLVM_SOURCE_POSITION("SocketPermissionCollection.java", 85)
+    XMLVM_CHECK_NPE(0)
     _r5.i = ((java_net_SocketPermission*) _r0.o)->fields.java_net_SocketPermission.actionsMask_;
     _r5.i = _r5.i & 4;
     _r6.i = 4;
@@ -443,6 +456,7 @@ JAVA_BOOLEAN java_net_SocketPermissionCollection_implies___java_security_Permiss
     _r4.i = _r4.i | 4;
     label85:;
     XMLVM_SOURCE_POSITION("SocketPermissionCollection.java", 88)
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_net_SocketPermission*) _r0.o)->fields.java_net_SocketPermission.actionsMask_;
     _r0.i = _r0.i & 2;
     _r5.i = 2;

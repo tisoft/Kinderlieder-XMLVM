@@ -691,16 +691,20 @@ void java_net_SocketPermission___INIT____java_lang_String_java_lang_String(JAVA_
     java_security_Permission___INIT____java_lang_String(_r2.o, _r0.o);
     XMLVM_SOURCE_POSITION("SocketPermission.java", 103)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.portMin_ = _r0.i;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 105)
     _r0.i = 65535;
+    XMLVM_CHECK_NPE(2)
     ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.portMax_ = _r0.i;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 109)
     _r0.i = 8;
+    XMLVM_CHECK_NPE(2)
     ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.actionsMask_ = _r0.i;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 128)
     XMLVM_CHECK_NPE(2)
     _r0.o = java_net_SocketPermission_getHostString___java_lang_String(_r2.o, _r3.o);
+    XMLVM_CHECK_NPE(2)
     ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.hostName_ = _r0.o;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 129)
     if (_r4.o != JAVA_NULL) goto label43;
@@ -732,8 +736,10 @@ void java_net_SocketPermission___INIT____java_lang_String_java_lang_String(JAVA_
     XMLVM_SOURCE_POSITION("SocketPermission.java", 137)
     XMLVM_CHECK_NPE(2)
     _r0.o = java_net_SocketPermission_toCanonicalActionString___java_lang_String(_r2.o, _r4.o);
+    XMLVM_CHECK_NPE(2)
     ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.actions_ = _r0.o;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 139)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.hostName_;
     XMLVM_CHECK_NPE(2)
     java_net_SocketPermission_parsePort___java_lang_String_java_lang_String(_r2.o, _r3.o, _r0.o);
@@ -787,7 +793,9 @@ JAVA_BOOLEAN java_net_SocketPermission_equals___java_lang_Object(JAVA_OBJECT me,
     _r0.o = _r0.o;
     _r1 = _r0;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 162)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_net_SocketPermission*) _r6.o)->fields.java_net_SocketPermission.hostName_;
+    XMLVM_CHECK_NPE(1)
     _r3.o = ((java_net_SocketPermission*) _r1.o)->fields.java_net_SocketPermission.hostName_;
     XMLVM_CHECK_NPE(2)
     _r2.i = java_lang_String_equalsIgnoreCase___java_lang_String(_r2.o, _r3.o);
@@ -796,6 +804,7 @@ JAVA_BOOLEAN java_net_SocketPermission_equals___java_lang_Object(JAVA_OBJECT me,
     XMLVM_CHECK_NPE(6)
     _r2.o = java_net_SocketPermission_getIPString___boolean(_r6.o, _r5.i);
     if (_r2.o == JAVA_NULL) goto label52;
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_net_SocketPermission*) _r6.o)->fields.java_net_SocketPermission.ipString_;
     XMLVM_CHECK_NPE(1)
     _r3.o = java_net_SocketPermission_getIPString___boolean(_r1.o, _r5.i);
@@ -808,11 +817,14 @@ JAVA_BOOLEAN java_net_SocketPermission_equals___java_lang_Object(JAVA_OBJECT me,
     goto label5;
     label54:;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 167)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_net_SocketPermission*) _r6.o)->fields.java_net_SocketPermission.actionsMask_;
     _r3.i = 8;
     if (_r2.i == _r3.i) goto label76;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 168)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_net_SocketPermission*) _r6.o)->fields.java_net_SocketPermission.portMin_;
+    XMLVM_CHECK_NPE(1)
     _r3.i = ((java_net_SocketPermission*) _r1.o)->fields.java_net_SocketPermission.portMin_;
     if (_r2.i == _r3.i) goto label68;
     _r2 = _r4;
@@ -820,14 +832,18 @@ JAVA_BOOLEAN java_net_SocketPermission_equals___java_lang_Object(JAVA_OBJECT me,
     goto label5;
     label68:;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 171)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_net_SocketPermission*) _r6.o)->fields.java_net_SocketPermission.portMax_;
+    XMLVM_CHECK_NPE(1)
     _r3.i = ((java_net_SocketPermission*) _r1.o)->fields.java_net_SocketPermission.portMax_;
     if (_r2.i == _r3.i) goto label76;
     _r2 = _r4;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 172)
     goto label5;
     label76:;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_net_SocketPermission*) _r6.o)->fields.java_net_SocketPermission.actionsMask_;
+    XMLVM_CHECK_NPE(1)
     _r3.i = ((java_net_SocketPermission*) _r1.o)->fields.java_net_SocketPermission.actionsMask_;
     if (_r2.i != _r3.i) goto label84;
     _r2 = _r5;
@@ -847,14 +863,18 @@ JAVA_INT java_net_SocketPermission_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 188)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.hostName_;
     //java_lang_String_hashCode__[4]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[4])(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.actionsMask_;
     _r0.i = _r0.i ^ _r1.i;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.portMin_;
     _r0.i = _r0.i ^ _r1.i;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.portMax_;
     _r0.i = _r0.i ^ _r1.i;
     XMLVM_EXIT_METHOD()
@@ -870,6 +890,7 @@ JAVA_OBJECT java_net_SocketPermission_getActions__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 200)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_SocketPermission*) _r1.o)->fields.java_net_SocketPermission.actions_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -966,8 +987,10 @@ void java_net_SocketPermission_setActions___java_lang_String(JAVA_OBJECT me, JAV
     _r7.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r7.o);
     if (_r7.i == 0) goto label78;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 228)
+    XMLVM_CHECK_NPE(9)
     _r7.i = ((java_net_SocketPermission*) _r9.o)->fields.java_net_SocketPermission.actionsMask_;
     _r7.i = _r7.i | 1;
+    XMLVM_CHECK_NPE(9)
     ((java_net_SocketPermission*) _r9.o)->fields.java_net_SocketPermission.actionsMask_ = _r7.i;
     goto label20;
     label78:;
@@ -982,8 +1005,10 @@ void java_net_SocketPermission_setActions___java_lang_String(JAVA_OBJECT me, JAV
     _r7.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r7.o);
     if (_r7.i == 0) goto label96;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 230)
+    XMLVM_CHECK_NPE(9)
     _r7.i = ((java_net_SocketPermission*) _r9.o)->fields.java_net_SocketPermission.actionsMask_;
     _r7.i = _r7.i | 2;
+    XMLVM_CHECK_NPE(9)
     ((java_net_SocketPermission*) _r9.o)->fields.java_net_SocketPermission.actionsMask_ = _r7.i;
     goto label20;
     label96:;
@@ -998,8 +1023,10 @@ void java_net_SocketPermission_setActions___java_lang_String(JAVA_OBJECT me, JAV
     _r7.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r7.o);
     if (_r7.i == 0) goto label114;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 232)
+    XMLVM_CHECK_NPE(9)
     _r7.i = ((java_net_SocketPermission*) _r9.o)->fields.java_net_SocketPermission.actionsMask_;
     _r7.i = _r7.i | 4;
+    XMLVM_CHECK_NPE(9)
     ((java_net_SocketPermission*) _r9.o)->fields.java_net_SocketPermission.actionsMask_ = _r7.i;
     goto label20;
     label114:;
@@ -1039,7 +1066,7 @@ JAVA_BOOLEAN java_net_SocketPermission_implies___java_security_Permission(JAVA_O
     _r6.o = me;
     _r7.o = n1;
     _r5.i = 0;
-    XMLVM_TRY_BEGIN(w32012aaac22b1b4)
+    XMLVM_TRY_BEGIN(w32014aaac22b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("SocketPermission.java", 259)
     _r0 = _r7;
@@ -1047,15 +1074,18 @@ JAVA_BOOLEAN java_net_SocketPermission_implies___java_security_Permission(JAVA_O
     _r2 = _r0;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32012aaac22b1b4)
-        XMLVM_CATCH_SPECIFIC(w32012aaac22b1b4,java_lang_ClassCastException,18)
-    XMLVM_CATCH_END(w32012aaac22b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32012aaac22b1b4)
+    XMLVM_CATCH_BEGIN(w32014aaac22b1b4)
+        XMLVM_CATCH_SPECIFIC(w32014aaac22b1b4,java_lang_ClassCastException,18)
+    XMLVM_CATCH_END(w32014aaac22b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32014aaac22b1b4)
     XMLVM_SOURCE_POSITION("SocketPermission.java", 266)
     if (_r2.o == JAVA_NULL) goto label16;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_net_SocketPermission*) _r6.o)->fields.java_net_SocketPermission.actionsMask_;
+    XMLVM_CHECK_NPE(2)
     _r4.i = ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.actionsMask_;
     _r3.i = _r3.i & _r4.i;
+    XMLVM_CHECK_NPE(2)
     _r4.i = ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.actionsMask_;
     if (_r3.i == _r4.i) goto label21;
     label16:;
@@ -1067,8 +1097,8 @@ JAVA_BOOLEAN java_net_SocketPermission_implies___java_security_Permission(JAVA_O
     return _r3.i;
     label18:;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 260)
-    java_lang_Thread* curThread_w32012aaac22b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w32012aaac22b1c20->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32014aaac22b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w32014aaac22b1c20->fields.java_lang_Thread.xmlvmException_;
     _r3 = _r5;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 261)
     goto label17;
@@ -1084,10 +1114,14 @@ JAVA_BOOLEAN java_net_SocketPermission_implies___java_security_Permission(JAVA_O
     _r3.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r3.o)->tib->vtable[1])(_r3.o, _r4.o);
     if (_r3.i != 0) goto label47;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 273)
+    XMLVM_CHECK_NPE(2)
     _r3.i = ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.portMin_;
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((java_net_SocketPermission*) _r6.o)->fields.java_net_SocketPermission.portMin_;
     if (_r3.i < _r4.i) goto label45;
+    XMLVM_CHECK_NPE(2)
     _r3.i = ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.portMax_;
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((java_net_SocketPermission*) _r6.o)->fields.java_net_SocketPermission.portMax_;
     if (_r3.i <= _r4.i) goto label47;
     label45:;
@@ -1158,9 +1192,11 @@ void java_net_SocketPermission_parsePort___java_lang_String_java_lang_String(JAV
     if (_r6.i == 0) goto label33;
     label25:;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 306)
+    XMLVM_CHECK_NPE(8)
     ((java_net_SocketPermission*) _r8.o)->fields.java_net_SocketPermission.portMin_ = _r7.i;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 307)
     _r6.i = 65535;
+    XMLVM_CHECK_NPE(8)
     ((java_net_SocketPermission*) _r8.o)->fields.java_net_SocketPermission.portMax_ = _r6.i;
     label32:;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 342)
@@ -1184,7 +1220,7 @@ void java_net_SocketPermission_parsePort___java_lang_String_java_lang_String(JAV
     _r5 = _r3;
     _r4 = _r3;
     label51:;
-    XMLVM_TRY_BEGIN(w32012aaac24b1c41)
+    XMLVM_TRY_BEGIN(w32014aaac24b1c41)
     // Begin try
     XMLVM_SOURCE_POSITION("SocketPermission.java", 319)
     XMLVM_SOURCE_POSITION("SocketPermission.java", 331)
@@ -1192,17 +1228,21 @@ void java_net_SocketPermission_parsePort___java_lang_String_java_lang_String(JAV
     //java_lang_Integer_intValue__[9]
     XMLVM_CHECK_NPE(6)
     _r6.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_Integer*) _r6.o)->tib->vtable[9])(_r6.o);
+    XMLVM_CHECK_NPE(8)
     ((java_net_SocketPermission*) _r8.o)->fields.java_net_SocketPermission.portMin_ = _r6.i;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 332)
     _r6.o = java_lang_Integer_valueOf___java_lang_String(_r4.o);
     //java_lang_Integer_intValue__[9]
     XMLVM_CHECK_NPE(6)
     _r6.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_Integer*) _r6.o)->tib->vtable[9])(_r6.o);
+    XMLVM_CHECK_NPE(8)
     ((java_net_SocketPermission*) _r8.o)->fields.java_net_SocketPermission.portMax_ = _r6.i;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 334)
+    XMLVM_CHECK_NPE(8)
     _r6.i = ((java_net_SocketPermission*) _r8.o)->fields.java_net_SocketPermission.portMin_;
+    XMLVM_CHECK_NPE(8)
     _r7.i = ((java_net_SocketPermission*) _r8.o)->fields.java_net_SocketPermission.portMax_;
-    if (_r6.i <= _r7.i) { XMLVM_MEMCPY(curThread_w32012aaac24b1c41->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32012aaac24b1c41, sizeof(XMLVM_JMP_BUF)); goto label32; };
+    if (_r6.i <= _r7.i) { XMLVM_MEMCPY(curThread_w32014aaac24b1c41->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w32014aaac24b1c41, sizeof(XMLVM_JMP_BUF)); goto label32; };
     XMLVM_SOURCE_POSITION("SocketPermission.java", 336)
     _r6.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.7B"
@@ -1213,14 +1253,14 @@ void java_net_SocketPermission_parsePort___java_lang_String_java_lang_String(JAV
     XMLVM_THROW_CUSTOM(_r6.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32012aaac24b1c41)
-        XMLVM_CATCH_SPECIFIC(w32012aaac24b1c41,java_lang_NumberFormatException,89)
-    XMLVM_CATCH_END(w32012aaac24b1c41)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32012aaac24b1c41)
+    XMLVM_CATCH_BEGIN(w32014aaac24b1c41)
+        XMLVM_CATCH_SPECIFIC(w32014aaac24b1c41,java_lang_NumberFormatException,89)
+    XMLVM_CATCH_END(w32014aaac24b1c41)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32014aaac24b1c41)
     label89:;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 338)
-    java_lang_Thread* curThread_w32012aaac24b1c44 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r6.o = curThread_w32012aaac24b1c44->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32014aaac24b1c44 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r6.o = curThread_w32014aaac24b1c44->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r6;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 340)
     _r6.o = __NEW_java_lang_IllegalArgumentException();
@@ -1287,6 +1327,7 @@ JAVA_OBJECT java_net_SocketPermission_toCanonicalActionString___java_lang_String
     XMLVM_CHECK_NPE(8)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r8.o)->tib->vtable[1])(_r8.o, _r1.o);
     if (_r1.i != 0) goto label21;
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_net_SocketPermission*) _r7.o)->fields.java_net_SocketPermission.actionsMask_;
     if (_r1.i != _r4.i) goto label26;
     label21:;
@@ -1305,6 +1346,7 @@ JAVA_OBJECT java_net_SocketPermission_toCanonicalActionString___java_lang_String
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("SocketPermission.java", 358)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_net_SocketPermission*) _r7.o)->fields.java_net_SocketPermission.actionsMask_;
     _r1.i = _r1.i & 1;
     if (_r1.i != _r3.i) goto label47;
@@ -1321,6 +1363,7 @@ JAVA_OBJECT java_net_SocketPermission_toCanonicalActionString___java_lang_String
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label47:;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 362)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_net_SocketPermission*) _r7.o)->fields.java_net_SocketPermission.actionsMask_;
     _r1.i = _r1.i & 2;
     if (_r1.i != _r5.i) goto label63;
@@ -1337,6 +1380,7 @@ JAVA_OBJECT java_net_SocketPermission_toCanonicalActionString___java_lang_String
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label63:;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 366)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_net_SocketPermission*) _r7.o)->fields.java_net_SocketPermission.actionsMask_;
     _r1.i = _r1.i & 4;
     if (_r1.i != _r6.i) goto label79;
@@ -1368,6 +1412,7 @@ JAVA_OBJECT java_net_SocketPermission_toCanonicalActionString___java_lang_String
     //java_lang_StringBuilder_substring___int_int[19]
     XMLVM_CHECK_NPE(0)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT, JAVA_INT)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[19])(_r0.o, _r3.i, _r1.i);
+    XMLVM_CHECK_NPE(7)
     ((java_net_SocketPermission*) _r7.o)->fields.java_net_SocketPermission.actions_ = _r1.o;
     goto label25;
     //XMLVM_END_WRAPPER
@@ -1383,33 +1428,38 @@ JAVA_OBJECT java_net_SocketPermission_getIPString___boolean(JAVA_OBJECT me, JAVA
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 377)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_SocketPermission*) _r1.o)->fields.java_net_SocketPermission.resolved_;
     if (_r0.i != 0) goto label15;
-    XMLVM_TRY_BEGIN(w32012aaac26b1b6)
+    XMLVM_TRY_BEGIN(w32014aaac26b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("SocketPermission.java", 379)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_SocketPermission*) _r1.o)->fields.java_net_SocketPermission.hostName_;
     _r0.o = java_net_InetAddress_getHostNameInternal___java_lang_String_boolean(_r0.o, _r2.i);
+    XMLVM_CHECK_NPE(1)
     ((java_net_SocketPermission*) _r1.o)->fields.java_net_SocketPermission.ipString_ = _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w32012aaac26b1b6)
-        XMLVM_CATCH_SPECIFIC(w32012aaac26b1b6,java_net_UnknownHostException,18)
-    XMLVM_CATCH_END(w32012aaac26b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w32012aaac26b1b6)
+    XMLVM_CATCH_BEGIN(w32014aaac26b1b6)
+        XMLVM_CATCH_SPECIFIC(w32014aaac26b1b6,java_net_UnknownHostException,18)
+    XMLVM_CATCH_END(w32014aaac26b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w32014aaac26b1b6)
     label12:;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 383)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((java_net_SocketPermission*) _r1.o)->fields.java_net_SocketPermission.resolved_ = _r0.i;
     label15:;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 385)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_SocketPermission*) _r1.o)->fields.java_net_SocketPermission.ipString_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label18:;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 380)
-    java_lang_Thread* curThread_w32012aaac26b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w32012aaac26b1c17->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w32014aaac26b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w32014aaac26b1c17->fields.java_lang_Thread.xmlvmException_;
     goto label12;
     //XMLVM_END_WRAPPER
 }
@@ -1460,11 +1510,14 @@ JAVA_OBJECT java_net_SocketPermission_getHostString___java_lang_String(JAVA_OBJE
     if (_r6.i != _r7.i) goto label54;
     _r6 = _r9;
     label31:;
+    XMLVM_CHECK_NPE(13)
     ((java_net_SocketPermission*) _r13.o)->fields.java_net_SocketPermission.isPartialWild_ = _r6.i;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 409)
+    XMLVM_CHECK_NPE(13)
     _r6.i = ((java_net_SocketPermission*) _r13.o)->fields.java_net_SocketPermission.isPartialWild_;
     if (_r6.i == 0) goto label69;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 410)
+    XMLVM_CHECK_NPE(13)
     ((java_net_SocketPermission*) _r13.o)->fields.java_net_SocketPermission.resolved_ = _r9.i;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 411)
     //java_lang_String_length__[8]
@@ -1473,8 +1526,10 @@ JAVA_OBJECT java_net_SocketPermission_getHostString___java_lang_String(JAVA_OBJE
     if (_r6.i != _r9.i) goto label56;
     _r6 = _r9;
     label46:;
+    XMLVM_CHECK_NPE(13)
     ((java_net_SocketPermission*) _r13.o)->fields.java_net_SocketPermission.isWild_ = _r6.i;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 412)
+    XMLVM_CHECK_NPE(13)
     _r6.i = ((java_net_SocketPermission*) _r13.o)->fields.java_net_SocketPermission.isWild_;
     if (_r6.i == 0) goto label58;
     _r6 = _r14;
@@ -1627,9 +1682,11 @@ JAVA_BOOLEAN java_net_SocketPermission_checkHost___java_net_SocketPermission(JAV
     _r3.i = 0;
     _r4.i = 1;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 470)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_net_SocketPermission*) _r5.o)->fields.java_net_SocketPermission.isPartialWild_;
     if (_r1.i == 0) goto label36;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 471)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_net_SocketPermission*) _r5.o)->fields.java_net_SocketPermission.isWild_;
     if (_r1.i == 0) goto label12;
     _r1 = _r4;
@@ -1640,18 +1697,22 @@ JAVA_BOOLEAN java_net_SocketPermission_checkHost___java_net_SocketPermission(JAV
     return _r1.i;
     label12:;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 474)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_SocketPermission*) _r5.o)->fields.java_net_SocketPermission.hostName_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[8])(_r1.o);
     _r0.i = _r1.i - _r4.i;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 475)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_net_SocketPermission*) _r6.o)->fields.java_net_SocketPermission.hostName_;
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_net_SocketPermission*) _r6.o)->fields.java_net_SocketPermission.hostName_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[8])(_r2.o);
     _r2.i = _r2.i - _r0.i;
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_net_SocketPermission*) _r5.o)->fields.java_net_SocketPermission.hostName_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_lang_String_regionMatches___int_java_lang_String_int_int(_r1.o, _r2.i, _r3.o, _r4.i, _r0.i);
@@ -1660,6 +1721,7 @@ JAVA_BOOLEAN java_net_SocketPermission_checkHost___java_net_SocketPermission(JAV
     XMLVM_CHECK_NPE(5)
     _r1.o = java_net_SocketPermission_getIPString___boolean(_r5.o, _r3.i);
     if (_r1.o == JAVA_NULL) goto label54;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_SocketPermission*) _r5.o)->fields.java_net_SocketPermission.ipString_;
     XMLVM_CHECK_NPE(6)
     _r2.o = java_net_SocketPermission_getIPString___boolean(_r6.o, _r3.i);
@@ -1668,7 +1730,9 @@ JAVA_BOOLEAN java_net_SocketPermission_checkHost___java_net_SocketPermission(JAV
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r2.o);
     if (_r1.i != 0) goto label64;
     label54:;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_SocketPermission*) _r5.o)->fields.java_net_SocketPermission.hostName_;
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_net_SocketPermission*) _r6.o)->fields.java_net_SocketPermission.hostName_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
@@ -1715,30 +1779,38 @@ void java_net_SocketPermission_readObject___java_io_ObjectInputStream(JAVA_OBJEC
     XMLVM_CHECK_NPE(3)
     java_io_ObjectInputStream_defaultReadObject__(_r3.o);
     XMLVM_SOURCE_POSITION("SocketPermission.java", 492)
+    XMLVM_CHECK_NPE(2)
     ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.isPartialWild_ = _r0.i;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 493)
+    XMLVM_CHECK_NPE(2)
     ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.isWild_ = _r0.i;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 494)
+    XMLVM_CHECK_NPE(2)
     ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.portMin_ = _r0.i;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 495)
     _r0.i = 65535;
+    XMLVM_CHECK_NPE(2)
     ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.portMax_ = _r0.i;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 496)
     _r0.i = 8;
+    XMLVM_CHECK_NPE(2)
     ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.actionsMask_ = _r0.i;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 497)
     XMLVM_CHECK_NPE(2)
     _r0.o = java_security_Permission_getName__(_r2.o);
     XMLVM_CHECK_NPE(2)
     _r0.o = java_net_SocketPermission_getHostString___java_lang_String(_r2.o, _r0.o);
+    XMLVM_CHECK_NPE(2)
     ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.hostName_ = _r0.o;
     XMLVM_SOURCE_POSITION("SocketPermission.java", 498)
     XMLVM_CHECK_NPE(2)
     _r0.o = java_security_Permission_getName__(_r2.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.hostName_;
     XMLVM_CHECK_NPE(2)
     java_net_SocketPermission_parsePort___java_lang_String_java_lang_String(_r2.o, _r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SocketPermission.java", 499)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_SocketPermission*) _r2.o)->fields.java_net_SocketPermission.actions_;
     XMLVM_CHECK_NPE(2)
     java_net_SocketPermission_setActions___java_lang_String(_r2.o, _r0.o);

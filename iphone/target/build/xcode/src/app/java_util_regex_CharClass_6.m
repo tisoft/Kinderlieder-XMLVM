@@ -222,7 +222,9 @@ void java_util_regex_CharClass_6___INIT____java_util_regex_CharClass_java_util_r
     _r1.o = n1;
     _r2.o = n2;
     XMLVM_SOURCE_POSITION("CharClass.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_CharClass_6*) _r0.o)->fields.java_util_regex_CharClass_6.this_0_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_CharClass_6*) _r0.o)->fields.java_util_regex_CharClass_6.val_clazz_ = _r2.o;
     XMLVM_SOURCE_POSITION("CharClass.java", 318)
     XMLVM_CHECK_NPE(0)
@@ -242,6 +244,7 @@ JAVA_BOOLEAN java_util_regex_CharClass_6_contains___int(JAVA_OBJECT me, JAVA_INT
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("CharClass.java", 320)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_CharClass_6*) _r1.o)->fields.java_util_regex_CharClass_6.val_clazz_;
     //java_util_regex_AbstractCharClass_contains___int[7]
     XMLVM_CHECK_NPE(0)

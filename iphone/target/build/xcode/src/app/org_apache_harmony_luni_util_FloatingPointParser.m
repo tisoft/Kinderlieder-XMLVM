@@ -878,10 +878,13 @@ JAVA_DOUBLE org_apache_harmony_luni_util_FloatingPointParser_parseDouble___java_
     XMLVM_SOURCE_POSITION("FloatingPointParser.java", 281)
     _r0.o = org_apache_harmony_luni_util_FloatingPointParser_initialParse___java_lang_String_int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("FloatingPointParser.java", 283)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair*) _r0.o)->fields.org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair.s_;
+    XMLVM_CHECK_NPE(0)
     _r2.i = ((org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair*) _r0.o)->fields.org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair.e_;
     _r1.d = org_apache_harmony_luni_util_FloatingPointParser_parseDblImpl___java_lang_String_int(_r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("FloatingPointParser.java", 284)
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair*) _r0.o)->fields.org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair.negative_;
     if (_r0.i == 0) goto label72;
     XMLVM_SOURCE_POSITION("FloatingPointParser.java", 285)
@@ -954,10 +957,13 @@ JAVA_FLOAT org_apache_harmony_luni_util_FloatingPointParser_parseFloat___java_la
     XMLVM_SOURCE_POSITION("FloatingPointParser.java", 319)
     _r0.o = org_apache_harmony_luni_util_FloatingPointParser_initialParse___java_lang_String_int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("FloatingPointParser.java", 321)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair*) _r0.o)->fields.org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair.s_;
+    XMLVM_CHECK_NPE(0)
     _r2.i = ((org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair*) _r0.o)->fields.org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair.e_;
     _r1.f = org_apache_harmony_luni_util_FloatingPointParser_parseFltImpl___java_lang_String_int(_r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("FloatingPointParser.java", 322)
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair*) _r0.o)->fields.org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair.negative_;
     if (_r0.i == 0) goto label72;
     XMLVM_SOURCE_POSITION("FloatingPointParser.java", 323)

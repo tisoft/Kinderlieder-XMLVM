@@ -217,6 +217,7 @@ void gnu_xml_stream_XMLParser_ExternalIds___INIT____gnu_xml_stream_XMLParser(JAV
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4789)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_stream_XMLParser_ExternalIds*) _r0.o)->fields.gnu_xml_stream_XMLParser_ExternalIds.this_0_ = _r1.o;
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);

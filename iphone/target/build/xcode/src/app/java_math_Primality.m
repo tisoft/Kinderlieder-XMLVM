@@ -773,14 +773,17 @@ JAVA_OBJECT java_math_Primality_nextProbablePrime___java_math_BigInteger(JAVA_OB
     if (!__TIB_boolean.classInitialized) __INIT_boolean();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_boolean, _r0.i);
     XMLVM_SOURCE_POSITION("Primality.java", 97)
+    XMLVM_CHECK_NPE(10)
     _r3.i = ((java_math_BigInteger*) _r10.o)->fields.java_math_BigInteger.numberLength_;
     if (_r3.i != _r9.i) goto label55;
+    XMLVM_CHECK_NPE(10)
     _r3.o = ((java_math_BigInteger*) _r10.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
     _r3.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i];
     if (_r3.i < 0) goto label55;
     XMLVM_SOURCE_POSITION("Primality.java", 98)
+    XMLVM_CHECK_NPE(10)
     _r3.o = ((java_math_BigInteger*) _r10.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
@@ -796,6 +799,7 @@ JAVA_OBJECT java_math_Primality_nextProbablePrime___java_math_BigInteger(JAVA_OB
     _r0 = _r8;
     label37:;
     XMLVM_SOURCE_POSITION("Primality.java", 99)
+    XMLVM_CHECK_NPE(10)
     _r1.o = ((java_math_BigInteger*) _r10.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r8.i);
@@ -820,8 +824,10 @@ JAVA_OBJECT java_math_Primality_nextProbablePrime___java_math_BigInteger(JAVA_OB
     label55:;
     XMLVM_SOURCE_POSITION("Primality.java", 108)
     _r3.o = __NEW_java_math_BigInteger();
+    XMLVM_CHECK_NPE(10)
     _r4.i = ((java_math_BigInteger*) _r10.o)->fields.java_math_BigInteger.numberLength_;
     XMLVM_SOURCE_POSITION("Primality.java", 109)
+    XMLVM_CHECK_NPE(10)
     _r5.i = ((java_math_BigInteger*) _r10.o)->fields.java_math_BigInteger.numberLength_;
     _r5.i = _r5.i + 1;
     if (!__TIB_int.classInitialized) __INIT_int();
@@ -829,8 +835,11 @@ JAVA_OBJECT java_math_Primality_nextProbablePrime___java_math_BigInteger(JAVA_OB
     XMLVM_CHECK_NPE(3)
     java_math_BigInteger___INIT____int_int_int_1ARRAY(_r3.o, _r9.i, _r4.i, _r5.o);
     XMLVM_SOURCE_POSITION("Primality.java", 110)
+    XMLVM_CHECK_NPE(10)
     _r4.o = ((java_math_BigInteger*) _r10.o)->fields.java_math_BigInteger.digits_;
+    XMLVM_CHECK_NPE(3)
     _r5.o = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.digits_;
+    XMLVM_CHECK_NPE(10)
     _r6.i = ((java_math_BigInteger*) _r10.o)->fields.java_math_BigInteger.numberLength_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r4.o, _r8.i, _r5.o, _r8.i, _r6.i);
     XMLVM_SOURCE_POSITION("Primality.java", 112)
@@ -875,6 +884,7 @@ JAVA_OBJECT java_math_Primality_nextProbablePrime___java_math_BigInteger(JAVA_OB
     goto label103;
     label119:;
     XMLVM_SOURCE_POSITION("Primality.java", 115)
+    XMLVM_CHECK_NPE(3)
     _r4.o = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r8.i);
@@ -1032,9 +1042,11 @@ JAVA_OBJECT java_math_Primality_consBigInteger___int_int_java_util_Random(JAVA_I
     _r3 = _r6;
     label41:;
     XMLVM_SOURCE_POSITION("Primality.java", 174)
+    XMLVM_CHECK_NPE(2)
     _r4.i = ((java_math_BigInteger*) _r2.o)->fields.java_math_BigInteger.numberLength_;
     if (_r3.i < _r4.i) goto label77;
     XMLVM_SOURCE_POSITION("Primality.java", 178)
+    XMLVM_CHECK_NPE(2)
     _r3.o = ((java_math_BigInteger*) _r2.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
@@ -1045,6 +1057,7 @@ JAVA_OBJECT java_math_Primality_consBigInteger___int_int_java_util_Random(JAVA_I
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r4.i;
     XMLVM_SOURCE_POSITION("Primality.java", 179)
+    XMLVM_CHECK_NPE(2)
     _r3.o = ((java_math_BigInteger*) _r2.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
@@ -1054,6 +1067,7 @@ JAVA_OBJECT java_math_Primality_consBigInteger___int_int_java_util_Random(JAVA_I
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r4.i;
     XMLVM_SOURCE_POSITION("Primality.java", 181)
+    XMLVM_CHECK_NPE(2)
     _r3.o = ((java_math_BigInteger*) _r2.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
@@ -1070,6 +1084,7 @@ JAVA_OBJECT java_math_Primality_consBigInteger___int_int_java_util_Random(JAVA_I
     goto label23;
     label77:;
     XMLVM_SOURCE_POSITION("Primality.java", 175)
+    XMLVM_CHECK_NPE(2)
     _r4.o = ((java_math_BigInteger*) _r2.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(9)
     _r5.i = java_util_Random_nextInt__(_r9.o);
@@ -1102,8 +1117,10 @@ JAVA_BOOLEAN java_math_Primality_isProbablePrime___java_math_BigInteger_int(JAVA
     _r4.i = 0;
     XMLVM_SOURCE_POSITION("Primality.java", 194)
     if (_r8.i <= 0) goto label15;
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i != _r5.i) goto label17;
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r4.i);
@@ -1126,8 +1143,10 @@ JAVA_BOOLEAN java_math_Primality_isProbablePrime___java_math_BigInteger_int(JAVA
     goto label16;
     label25:;
     XMLVM_SOURCE_POSITION("Primality.java", 202)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i != _r5.i) goto label53;
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r4.i);
@@ -1136,6 +1155,7 @@ JAVA_BOOLEAN java_math_Primality_isProbablePrime___java_math_BigInteger_int(JAVA
     if (_r0.i != 0) goto label53;
     XMLVM_SOURCE_POSITION("Primality.java", 203)
     _r0.o = java_math_Primality_GET_primes();
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r4.i);
@@ -1174,7 +1194,9 @@ JAVA_BOOLEAN java_math_Primality_isProbablePrime___java_math_BigInteger_int(JAVA
     goto label16;
     label85:;
     XMLVM_SOURCE_POSITION("Primality.java", 207)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     XMLVM_SOURCE_POSITION("Primality.java", 208)
     _r3.o = java_math_Primality_GET_primes();
@@ -1277,6 +1299,7 @@ JAVA_BOOLEAN java_math_Primality_millerRabin___java_math_BigInteger_int(JAVA_OBJ
     XMLVM_CHECK_NPE(6)
     _r7.i = java_math_BigInteger_compareTo___java_math_BigInteger(_r6.o, _r11.o);
     if (_r7.i >= 0) goto label58;
+    XMLVM_CHECK_NPE(6)
     _r7.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.sign_;
     if (_r7.i == 0) goto label58;
     XMLVM_SOURCE_POSITION("Primality.java", 257)

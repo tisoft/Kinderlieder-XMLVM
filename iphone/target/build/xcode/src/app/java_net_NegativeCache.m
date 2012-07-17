@@ -543,6 +543,7 @@ JAVA_OBJECT java_net_NegativeCache_getFailedMessage___java_lang_String(JAVA_OBJE
     XMLVM_SOURCE_POSITION("NegativeCache.java", 122)
     if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w13857aaab7b1c17->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w13857aaab7b1c17, sizeof(XMLVM_JMP_BUF)); goto label83; };
     XMLVM_SOURCE_POSITION("NegativeCache.java", 123)
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_net_NegCacheElement*) _r0.o)->fields.java_net_NegCacheElement.hostName_;
     // End try
     XMLVM_TRY_END
@@ -568,6 +569,7 @@ JAVA_OBJECT java_net_NegativeCache_getFailedMessage___java_lang_String(JAVA_OBJE
     XMLVM_TRY_BEGIN(w13857aaab7b1c31)
     // Begin try
     XMLVM_SOURCE_POSITION("NegativeCache.java", 114)
+    XMLVM_CHECK_NPE(0)
     _r3.l = ((java_net_NegCacheElement*) _r0.o)->fields.java_net_NegCacheElement.timeAdded_;
     _r1.i = _r1.i * 1000;
     _r5.l = (JAVA_LONG) _r1.i;

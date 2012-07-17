@@ -240,8 +240,11 @@ void java_util_ResourceBundle_Control_2___INIT____java_util_ResourceBundle_Contr
     _r2.o = n2;
     _r3.o = n3;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_ResourceBundle_Control_2*) _r0.o)->fields.java_util_ResourceBundle_Control_2.this_1_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((java_util_ResourceBundle_Control_2*) _r0.o)->fields.java_util_ResourceBundle_Control_2.val_clsloader_ = _r2.o;
+    XMLVM_CHECK_NPE(0)
     ((java_util_ResourceBundle_Control_2*) _r0.o)->fields.java_util_ResourceBundle_Control_2.val_resourceName_ = _r3.o;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 1002)
     XMLVM_CHECK_NPE(0)
@@ -260,8 +263,10 @@ JAVA_OBJECT java_util_ResourceBundle_Control_2_run__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 1004)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_ResourceBundle_Control_2*) _r2.o)->fields.java_util_ResourceBundle_Control_2.val_clsloader_;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 1005)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_ResourceBundle_Control_2*) _r2.o)->fields.java_util_ResourceBundle_Control_2.val_resourceName_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_ClassLoader_getResourceAsStream___java_lang_String(_r0.o, _r1.o);

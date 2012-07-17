@@ -300,6 +300,7 @@ void gnu_xml_stream_UnicodeReader___INIT____java_io_Reader(JAVA_OBJECT me, JAVA_
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("UnicodeReader.java", 55)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_stream_UnicodeReader*) _r0.o)->fields.gnu_xml_stream_UnicodeReader.in_ = _r1.o;
     XMLVM_SOURCE_POSITION("UnicodeReader.java", 56)
     XMLVM_EXIT_METHOD()
@@ -318,6 +319,7 @@ void gnu_xml_stream_UnicodeReader_mark___int(JAVA_OBJECT me, JAVA_INT n1)
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("UnicodeReader.java", 61)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_stream_UnicodeReader*) _r2.o)->fields.gnu_xml_stream_UnicodeReader.in_;
     _r1.i = _r3.i * 2;
     //java_io_Reader_mark___int[8]
@@ -337,6 +339,7 @@ void gnu_xml_stream_UnicodeReader_reset__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("UnicodeReader.java", 67)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_UnicodeReader*) _r1.o)->fields.gnu_xml_stream_UnicodeReader.in_;
     //java_io_Reader_reset__[14]
     XMLVM_CHECK_NPE(0)
@@ -363,6 +366,7 @@ JAVA_INT gnu_xml_stream_UnicodeReader_read__(JAVA_OBJECT me)
     // "unpaired surrogate: U+"
     _r4.o = xmlvm_create_java_string_from_pool(836);
     XMLVM_SOURCE_POSITION("UnicodeReader.java", 73)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_stream_UnicodeReader*) _r5.o)->fields.gnu_xml_stream_UnicodeReader.in_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(0)
@@ -380,6 +384,7 @@ JAVA_INT gnu_xml_stream_UnicodeReader_read__(JAVA_OBJECT me)
     if (_r0.i < _r1.i) goto label67;
     if (_r0.i >= _r2.i) goto label67;
     XMLVM_SOURCE_POSITION("UnicodeReader.java", 79)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_xml_stream_UnicodeReader*) _r5.o)->fields.gnu_xml_stream_UnicodeReader.in_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(1)
@@ -476,6 +481,7 @@ JAVA_INT gnu_xml_stream_UnicodeReader_read___int_1ARRAY_int_int(JAVA_OBJECT me, 
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r14.i);
     XMLVM_SOURCE_POSITION("UnicodeReader.java", 98)
+    XMLVM_CHECK_NPE(11)
     _r1.o = ((gnu_xml_stream_UnicodeReader*) _r11.o)->fields.gnu_xml_stream_UnicodeReader.in_;
     //java_io_Reader_read___char_1ARRAY_int_int[11]
     XMLVM_CHECK_NPE(1)
@@ -503,6 +509,7 @@ JAVA_INT gnu_xml_stream_UnicodeReader_read___int_1ARRAY_int_int(JAVA_OBJECT me, 
     if (_r0.i < _r10.i) goto label176;
     if (_r0.i >= _r7.i) goto label176;
     XMLVM_SOURCE_POSITION("UnicodeReader.java", 131)
+    XMLVM_CHECK_NPE(11)
     _r1.o = ((gnu_xml_stream_UnicodeReader*) _r11.o)->fields.gnu_xml_stream_UnicodeReader.in_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(1)
@@ -658,6 +665,7 @@ void gnu_xml_stream_UnicodeReader_close__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("UnicodeReader.java", 152)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_UnicodeReader*) _r1.o)->fields.gnu_xml_stream_UnicodeReader.in_;
     //java_io_Reader_close__[6]
     XMLVM_CHECK_NPE(0)

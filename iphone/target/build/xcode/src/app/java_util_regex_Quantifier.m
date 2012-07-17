@@ -370,9 +370,12 @@ void java_util_regex_Quantifier___INIT____int(JAVA_OBJECT me, JAVA_INT n1)
     java_util_regex_SpecialToken___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("Quantifier.java", 36)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_Quantifier*) _r1.o)->fields.java_util_regex_Quantifier.counter_ = _r0.i;
     XMLVM_SOURCE_POSITION("Quantifier.java", 39)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_Quantifier*) _r1.o)->fields.java_util_regex_Quantifier.max_ = _r2.i;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_Quantifier*) _r1.o)->fields.java_util_regex_Quantifier.min_ = _r2.i;
     XMLVM_SOURCE_POSITION("Quantifier.java", 40)
     XMLVM_EXIT_METHOD()
@@ -396,10 +399,13 @@ void java_util_regex_Quantifier___INIT____int_int(JAVA_OBJECT me, JAVA_INT n1, J
     java_util_regex_SpecialToken___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("Quantifier.java", 36)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_Quantifier*) _r1.o)->fields.java_util_regex_Quantifier.counter_ = _r0.i;
     XMLVM_SOURCE_POSITION("Quantifier.java", 43)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_Quantifier*) _r1.o)->fields.java_util_regex_Quantifier.min_ = _r2.i;
     XMLVM_SOURCE_POSITION("Quantifier.java", 44)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_Quantifier*) _r1.o)->fields.java_util_regex_Quantifier.max_ = _r3.i;
     XMLVM_SOURCE_POSITION("Quantifier.java", 45)
     XMLVM_EXIT_METHOD()
@@ -416,6 +422,7 @@ void java_util_regex_Quantifier_resetCounter__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Quantifier.java", 48)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_Quantifier*) _r1.o)->fields.java_util_regex_Quantifier.counter_ = _r0.i;
     XMLVM_SOURCE_POSITION("Quantifier.java", 49)
     XMLVM_EXIT_METHOD()
@@ -431,6 +438,7 @@ JAVA_INT java_util_regex_Quantifier_getCounter__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Quantifier.java", 52)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_Quantifier*) _r1.o)->fields.java_util_regex_Quantifier.counter_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -446,6 +454,7 @@ void java_util_regex_Quantifier_setCounter___int(JAVA_OBJECT me, JAVA_INT n1)
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("Quantifier.java", 56)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_Quantifier*) _r0.o)->fields.java_util_regex_Quantifier.counter_ = _r1.i;
     XMLVM_SOURCE_POSITION("Quantifier.java", 57)
     XMLVM_EXIT_METHOD()
@@ -461,6 +470,7 @@ JAVA_INT java_util_regex_Quantifier_min__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Quantifier.java", 60)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_Quantifier*) _r1.o)->fields.java_util_regex_Quantifier.min_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -475,6 +485,7 @@ JAVA_INT java_util_regex_Quantifier_max__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Quantifier.java", 64)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_Quantifier*) _r1.o)->fields.java_util_regex_Quantifier.max_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -497,6 +508,7 @@ JAVA_OBJECT java_util_regex_Quantifier_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("Quantifier.java", 69)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_Quantifier*) _r3.o)->fields.java_util_regex_Quantifier.min_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);
@@ -506,6 +518,7 @@ JAVA_OBJECT java_util_regex_Quantifier_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("Quantifier.java", 71)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_Quantifier*) _r3.o)->fields.java_util_regex_Quantifier.max_;
     _r2.i = 2147483647;
     if (_r1.i != _r2.i) goto label43;
@@ -526,6 +539,7 @@ JAVA_OBJECT java_util_regex_Quantifier_toString__(JAVA_OBJECT me)
     return _r0.o;
     label43:;
     _r1.o = __NEW_java_lang_Integer();
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_regex_Quantifier*) _r3.o)->fields.java_util_regex_Quantifier.max_;
     XMLVM_CHECK_NPE(1)
     java_lang_Integer___INIT____int(_r1.o, _r2.i);
@@ -561,7 +575,9 @@ JAVA_OBJECT java_util_regex_Quantifier_clone__(JAVA_OBJECT me)
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Quantifier.java", 80)
     _r0.o = __NEW_java_util_regex_Quantifier();
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_Quantifier*) _r3.o)->fields.java_util_regex_Quantifier.min_;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_regex_Quantifier*) _r3.o)->fields.java_util_regex_Quantifier.max_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_Quantifier___INIT____int_int(_r0.o, _r1.i, _r2.i);

@@ -330,7 +330,7 @@ void java_nio_channels_spi_AbstractInterruptibleChannel___CLINIT_()
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 43)
     _r0.o = JAVA_NULL;
     java_nio_channels_spi_AbstractInterruptibleChannel_PUT_setInterruptAction( _r0.o);
-    XMLVM_TRY_BEGIN(w40402aaab3b1b4)
+    XMLVM_TRY_BEGIN(w40407aaab3b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 48)
     _r0.o = __NEW_java_nio_channels_spi_AbstractInterruptibleChannel_1();
@@ -347,17 +347,17 @@ void java_nio_channels_spi_AbstractInterruptibleChannel___CLINIT_()
     java_lang_reflect_AccessibleObject_setAccessible___boolean(_r0.o, _r1.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40402aaab3b1b4)
-        XMLVM_CATCH_SPECIFIC(w40402aaab3b1b4,java_security_PrivilegedActionException,23)
-    XMLVM_CATCH_END(w40402aaab3b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40402aaab3b1b4)
+    XMLVM_CATCH_BEGIN(w40407aaab3b1b4)
+        XMLVM_CATCH_SPECIFIC(w40407aaab3b1b4,java_security_PrivilegedActionException,23)
+    XMLVM_CATCH_END(w40407aaab3b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40407aaab3b1b4)
     label22:;
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 40)
     XMLVM_EXIT_METHOD()
     return;
     label23:;
-    java_lang_Thread* curThread_w40402aaab3b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w40402aaab3b1b9->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w40407aaab3b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w40407aaab3b1b9->fields.java_lang_Thread.xmlvmException_;
     goto label22;
     //XMLVM_END_WRAPPER
 }
@@ -374,8 +374,10 @@ void java_nio_channels_spi_AbstractInterruptibleChannel___INIT___(JAVA_OBJECT me
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 64)
+    XMLVM_CHECK_NPE(1)
     ((java_nio_channels_spi_AbstractInterruptibleChannel*) _r1.o)->fields.java_nio_channels_spi_AbstractInterruptibleChannel.closed_ = _r0.i;
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 66)
+    XMLVM_CHECK_NPE(1)
     ((java_nio_channels_spi_AbstractInterruptibleChannel*) _r1.o)->fields.java_nio_channels_spi_AbstractInterruptibleChannel.interrupted_ = _r0.i;
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 73)
     XMLVM_EXIT_METHOD()
@@ -392,15 +394,16 @@ JAVA_BOOLEAN java_nio_channels_spi_AbstractInterruptibleChannel_isOpen__(JAVA_OB
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 83)
     java_lang_Object_acquireLockRecursive__(_r1.o);
-    XMLVM_TRY_BEGIN(w40402aaab5b1b4)
+    XMLVM_TRY_BEGIN(w40407aaab5b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_nio_channels_spi_AbstractInterruptibleChannel*) _r1.o)->fields.java_nio_channels_spi_AbstractInterruptibleChannel.closed_;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40402aaab5b1b4)
-        XMLVM_CATCH_SPECIFIC(w40402aaab5b1b4,java_lang_Object,10)
-    XMLVM_CATCH_END(w40402aaab5b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40402aaab5b1b4)
+    XMLVM_CATCH_BEGIN(w40407aaab5b1b4)
+        XMLVM_CATCH_SPECIFIC(w40407aaab5b1b4,java_lang_Object,10)
+    XMLVM_CATCH_END(w40407aaab5b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40407aaab5b1b4)
     if (_r0.i == 0) goto label8;
     _r0.i = 0;
     label6:;
@@ -411,8 +414,8 @@ JAVA_BOOLEAN java_nio_channels_spi_AbstractInterruptibleChannel_isOpen__(JAVA_OB
     _r0.i = 1;
     goto label6;
     label10:;
-    java_lang_Thread* curThread_w40402aaab5b1c14 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w40402aaab5b1c14->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w40407aaab5b1c14 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w40407aaab5b1c14->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER
@@ -426,17 +429,20 @@ void java_nio_channels_spi_AbstractInterruptibleChannel_close__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 103)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_nio_channels_spi_AbstractInterruptibleChannel*) _r1.o)->fields.java_nio_channels_spi_AbstractInterruptibleChannel.closed_;
     if (_r0.i != 0) goto label16;
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 104)
     java_lang_Object_acquireLockRecursive__(_r1.o);
-    XMLVM_TRY_BEGIN(w40402aaab6b1b7)
+    XMLVM_TRY_BEGIN(w40407aaab6b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 105)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_nio_channels_spi_AbstractInterruptibleChannel*) _r1.o)->fields.java_nio_channels_spi_AbstractInterruptibleChannel.closed_;
-    if (_r0.i != 0) { XMLVM_MEMCPY(curThread_w40402aaab6b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w40402aaab6b1b7, sizeof(XMLVM_JMP_BUF)); goto label15; };
+    if (_r0.i != 0) { XMLVM_MEMCPY(curThread_w40407aaab6b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w40407aaab6b1b7, sizeof(XMLVM_JMP_BUF)); goto label15; };
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 106)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((java_nio_channels_spi_AbstractInterruptibleChannel*) _r1.o)->fields.java_nio_channels_spi_AbstractInterruptibleChannel.closed_ = _r0.i;
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 107)
     //java_nio_channels_spi_AbstractInterruptibleChannel_implCloseChannel__[7]
@@ -444,45 +450,45 @@ void java_nio_channels_spi_AbstractInterruptibleChannel_close__(JAVA_OBJECT me)
     (*(void (*)(JAVA_OBJECT)) ((java_nio_channels_spi_AbstractInterruptibleChannel*) _r1.o)->tib->vtable[7])(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40402aaab6b1b7)
-        XMLVM_CATCH_SPECIFIC(w40402aaab6b1b7,java_lang_Object,17)
-    XMLVM_CATCH_END(w40402aaab6b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40402aaab6b1b7)
+    XMLVM_CATCH_BEGIN(w40407aaab6b1b7)
+        XMLVM_CATCH_SPECIFIC(w40407aaab6b1b7,java_lang_Object,17)
+    XMLVM_CATCH_END(w40407aaab6b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40407aaab6b1b7)
     label15:;
-    XMLVM_TRY_BEGIN(w40402aaab6b1b9)
+    XMLVM_TRY_BEGIN(w40407aaab6b1b9)
     // Begin try
     java_lang_Object_releaseLockRecursive__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40402aaab6b1b9)
-        XMLVM_CATCH_SPECIFIC(w40402aaab6b1b9,java_lang_Object,17)
-    XMLVM_CATCH_END(w40402aaab6b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40402aaab6b1b9)
+    XMLVM_CATCH_BEGIN(w40407aaab6b1b9)
+        XMLVM_CATCH_SPECIFIC(w40407aaab6b1b9,java_lang_Object,17)
+    XMLVM_CATCH_END(w40407aaab6b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40407aaab6b1b9)
     label16:;
-    XMLVM_TRY_BEGIN(w40402aaab6b1c11)
+    XMLVM_TRY_BEGIN(w40407aaab6b1c11)
     // Begin try
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 111)
-    XMLVM_MEMCPY(curThread_w40402aaab6b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w40402aaab6b1c11, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w40407aaab6b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w40407aaab6b1c11, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40402aaab6b1c11)
-        XMLVM_CATCH_SPECIFIC(w40402aaab6b1c11,java_lang_Object,17)
-    XMLVM_CATCH_END(w40402aaab6b1c11)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40402aaab6b1c11)
+    XMLVM_CATCH_BEGIN(w40407aaab6b1c11)
+        XMLVM_CATCH_SPECIFIC(w40407aaab6b1c11,java_lang_Object,17)
+    XMLVM_CATCH_END(w40407aaab6b1c11)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40407aaab6b1c11)
     label17:;
-    XMLVM_TRY_BEGIN(w40402aaab6b1c13)
+    XMLVM_TRY_BEGIN(w40407aaab6b1c13)
     // Begin try
-    java_lang_Thread* curThread_w40402aaab6b1c13aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w40402aaab6b1c13aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w40407aaab6b1c13aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w40407aaab6b1c13aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40402aaab6b1c13)
-        XMLVM_CATCH_SPECIFIC(w40402aaab6b1c13,java_lang_Object,17)
-    XMLVM_CATCH_END(w40402aaab6b1c13)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40402aaab6b1c13)
+    XMLVM_CATCH_BEGIN(w40407aaab6b1c13)
+        XMLVM_CATCH_SPECIFIC(w40407aaab6b1c13,java_lang_Object,17)
+    XMLVM_CATCH_END(w40407aaab6b1c13)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40407aaab6b1c13)
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER
 }
@@ -501,7 +507,7 @@ void java_nio_channels_spi_AbstractInterruptibleChannel_begin__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 121)
     _r0.o = java_nio_channels_spi_AbstractInterruptibleChannel_GET_setInterruptAction();
     if (_r0.o == JAVA_NULL) goto label24;
-    XMLVM_TRY_BEGIN(w40402aaab7b1b5)
+    XMLVM_TRY_BEGIN(w40407aaab7b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 123)
     _r0.o = java_nio_channels_spi_AbstractInterruptibleChannel_GET_setInterruptAction();
@@ -522,18 +528,18 @@ void java_nio_channels_spi_AbstractInterruptibleChannel_begin__(JAVA_OBJECT me)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_reflect_Method*) _r0.o)->tib->vtable[15])(_r0.o, _r1.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40402aaab7b1b5)
-        XMLVM_CATCH_SPECIFIC(w40402aaab7b1b5,java_lang_Exception,25)
-    XMLVM_CATCH_END(w40402aaab7b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40402aaab7b1b5)
+    XMLVM_CATCH_BEGIN(w40407aaab7b1b5)
+        XMLVM_CATCH_SPECIFIC(w40407aaab7b1b5,java_lang_Exception,25)
+    XMLVM_CATCH_END(w40407aaab7b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40407aaab7b1b5)
     label24:;
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 138)
     XMLVM_EXIT_METHOD()
     return;
     label25:;
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 134)
-    java_lang_Thread* curThread_w40402aaab7b1c11 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w40402aaab7b1c11->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w40407aaab7b1c11 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w40407aaab7b1c11->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 135)
     _r1.o = __NEW_java_lang_RuntimeException();
     XMLVM_CHECK_NPE(1)
@@ -556,7 +562,7 @@ void java_nio_channels_spi_AbstractInterruptibleChannel_end___boolean(JAVA_OBJEC
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 157)
     _r0.o = java_nio_channels_spi_AbstractInterruptibleChannel_GET_setInterruptAction();
     if (_r0.o == JAVA_NULL) goto label36;
-    XMLVM_TRY_BEGIN(w40402aaab8b1b6)
+    XMLVM_TRY_BEGIN(w40407aaab8b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 159)
     _r0.o = java_nio_channels_spi_AbstractInterruptibleChannel_GET_setInterruptAction();
@@ -570,15 +576,17 @@ void java_nio_channels_spi_AbstractInterruptibleChannel_end___boolean(JAVA_OBJEC
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_reflect_Method*) _r0.o)->tib->vtable[15])(_r0.o, _r1.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40402aaab8b1b6)
-        XMLVM_CATCH_SPECIFIC(w40402aaab8b1b6,java_lang_Exception,29)
-    XMLVM_CATCH_END(w40402aaab8b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40402aaab8b1b6)
+    XMLVM_CATCH_BEGIN(w40407aaab8b1b6)
+        XMLVM_CATCH_SPECIFIC(w40407aaab8b1b6,java_lang_Exception,29)
+    XMLVM_CATCH_END(w40407aaab8b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40407aaab8b1b6)
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 164)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_nio_channels_spi_AbstractInterruptibleChannel*) _r3.o)->fields.java_nio_channels_spi_AbstractInterruptibleChannel.interrupted_;
     if (_r0.i == 0) goto label36;
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 165)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(3)
     ((java_nio_channels_spi_AbstractInterruptibleChannel*) _r3.o)->fields.java_nio_channels_spi_AbstractInterruptibleChannel.interrupted_ = _r0.i;
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 166)
 
@@ -592,8 +600,8 @@ void java_nio_channels_spi_AbstractInterruptibleChannel_end___boolean(JAVA_OBJEC
     XMLVM_THROW_CUSTOM(_r0.o)
     label29:;
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 161)
-    java_lang_Thread* curThread_w40402aaab8b1c19 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w40402aaab8b1c19->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w40407aaab8b1c19 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w40407aaab8b1c19->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 162)
     _r1.o = __NEW_java_lang_RuntimeException();
     XMLVM_CHECK_NPE(1)
@@ -602,6 +610,7 @@ void java_nio_channels_spi_AbstractInterruptibleChannel_end___boolean(JAVA_OBJEC
     label36:;
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 169)
     if (_r4.i != 0) goto label48;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_nio_channels_spi_AbstractInterruptibleChannel*) _r3.o)->fields.java_nio_channels_spi_AbstractInterruptibleChannel.closed_;
     if (_r0.i == 0) goto label48;
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 170)

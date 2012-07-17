@@ -363,6 +363,7 @@ JAVA_OBJECT java_lang_ref_Reference_get__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Reference.java", 77)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_ref_Reference*) _r1.o)->fields.java_lang_ref_Reference.obj_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -392,6 +393,7 @@ void java_lang_ref_Reference_initReference___java_lang_Object(JAVA_OBJECT me, JA
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("Reference.java", 98)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_ref_Reference*) _r0.o)->fields.java_lang_ref_Reference.obj_ = _r1.o;
     XMLVM_SOURCE_POSITION("Reference.java", 99)
     XMLVM_EXIT_METHOD()
@@ -410,6 +412,7 @@ void java_lang_ref_Reference_initReference___java_lang_Object_java_lang_ref_Refe
     _r1.o = n1;
     _r2.o = n2;
     XMLVM_SOURCE_POSITION("Reference.java", 110)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_ref_Reference*) _r0.o)->fields.java_lang_ref_Reference.obj_ = _r1.o;
     XMLVM_SOURCE_POSITION("Reference.java", 111)
     XMLVM_EXIT_METHOD()

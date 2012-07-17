@@ -971,6 +971,7 @@ void java_lang_Long___INIT____long(JAVA_OBJECT me, JAVA_LONG n1)
     XMLVM_CHECK_NPE(0)
     java_lang_Number___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Long.java", 76)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_Long*) _r0.o)->fields.java_lang_Long.value_ = _r1.l;
     XMLVM_SOURCE_POSITION("Long.java", 77)
     XMLVM_EXIT_METHOD()
@@ -1007,6 +1008,7 @@ JAVA_BYTE java_lang_Long_byteValue__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Long.java", 94)
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((java_lang_Long*) _r2.o)->fields.java_lang_Long.value_;
     _r0.i = (JAVA_INT) _r0.l;
     _r0.i = (_r0.i << 24) >> 24;
@@ -1028,7 +1030,9 @@ JAVA_INT java_lang_Long_compareTo___java_lang_Long(JAVA_OBJECT me, JAVA_OBJECT n
     _r4.o = me;
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("Long.java", 111)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_lang_Long*) _r4.o)->fields.java_lang_Long.value_;
+    XMLVM_CHECK_NPE(5)
     _r2.l = ((java_lang_Long*) _r5.o)->fields.java_lang_Long.value_;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r0.i <= 0) goto label10;
@@ -1037,7 +1041,9 @@ JAVA_INT java_lang_Long_compareTo___java_lang_Long(JAVA_OBJECT me, JAVA_OBJECT n
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label10:;
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_lang_Long*) _r4.o)->fields.java_lang_Long.value_;
+    XMLVM_CHECK_NPE(5)
     _r2.l = ((java_lang_Long*) _r5.o)->fields.java_lang_Long.value_;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r0.i >= 0) goto label20;
@@ -1191,6 +1197,7 @@ JAVA_DOUBLE java_lang_Long_doubleValue__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Long.java", 168)
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((java_lang_Long*) _r2.o)->fields.java_lang_Long.value_;
     _r0.d = (JAVA_DOUBLE) _r0.l;
     XMLVM_EXIT_METHOD()
@@ -1215,8 +1222,10 @@ JAVA_BOOLEAN java_lang_Long_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJEC
     _r0.i = XMLVM_ISA(_r5.o, __CLASS_java_lang_Long);
     if (_r0.i == 0) goto label16;
     XMLVM_SOURCE_POSITION("Long.java", 184)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_lang_Long*) _r4.o)->fields.java_lang_Long.value_;
     _r5.o = _r5.o;
+    XMLVM_CHECK_NPE(5)
     _r2.l = ((java_lang_Long*) _r5.o)->fields.java_lang_Long.value_;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r0.i != 0) goto label16;
@@ -1239,6 +1248,7 @@ JAVA_FLOAT java_lang_Long_floatValue__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Long.java", 189)
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((java_lang_Long*) _r2.o)->fields.java_lang_Long.value_;
     _r0.f = (JAVA_FLOAT) _r0.l;
     XMLVM_EXIT_METHOD()
@@ -1412,7 +1422,9 @@ JAVA_INT java_lang_Long_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r5;
     _r5.o = me;
     XMLVM_SOURCE_POSITION("Long.java", 277)
+    XMLVM_CHECK_NPE(5)
     _r0.l = ((java_lang_Long*) _r5.o)->fields.java_lang_Long.value_;
+    XMLVM_CHECK_NPE(5)
     _r2.l = ((java_lang_Long*) _r5.o)->fields.java_lang_Long.value_;
     _r4.i = 32;
     _r2.l = ((JAVA_ULONG) _r2.l) >> (0x3f & ((JAVA_ULONG) _r4.l));
@@ -1432,6 +1444,7 @@ JAVA_INT java_lang_Long_intValue__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Long.java", 282)
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((java_lang_Long*) _r2.o)->fields.java_lang_Long.value_;
     _r0.i = (JAVA_INT) _r0.l;
     XMLVM_EXIT_METHOD()
@@ -1448,6 +1461,7 @@ JAVA_LONG java_lang_Long_longValue__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Long.java", 292)
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((java_lang_Long*) _r2.o)->fields.java_lang_Long.value_;
     XMLVM_EXIT_METHOD()
     return _r0.l;
@@ -1660,6 +1674,7 @@ JAVA_SHORT java_lang_Long_shortValue__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Long.java", 373)
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((java_lang_Long*) _r2.o)->fields.java_lang_Long.value_;
     _r0.i = (JAVA_INT) _r0.l;
     _r0.i = (_r0.i << 16) >> 16;
@@ -1901,6 +1916,7 @@ JAVA_OBJECT java_lang_Long_toString__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Long.java", 469)
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((java_lang_Long*) _r2.o)->fields.java_lang_Long.value_;
     _r0.o = java_lang_Long_toString___long(_r0.l);
     XMLVM_EXIT_METHOD()

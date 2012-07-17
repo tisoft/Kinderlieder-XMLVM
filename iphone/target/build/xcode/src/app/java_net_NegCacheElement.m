@@ -207,8 +207,10 @@ void java_net_NegCacheElement___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OB
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("NegCacheElement.java", 27)
     _r0.l = java_lang_System_currentTimeMillis__();
+    XMLVM_CHECK_NPE(2)
     ((java_net_NegCacheElement*) _r2.o)->fields.java_net_NegCacheElement.timeAdded_ = _r0.l;
     XMLVM_SOURCE_POSITION("NegCacheElement.java", 40)
+    XMLVM_CHECK_NPE(2)
     ((java_net_NegCacheElement*) _r2.o)->fields.java_net_NegCacheElement.hostName_ = _r3.o;
     XMLVM_SOURCE_POSITION("NegCacheElement.java", 41)
     XMLVM_EXIT_METHOD()

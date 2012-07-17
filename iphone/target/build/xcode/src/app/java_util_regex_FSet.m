@@ -320,8 +320,10 @@ void java_util_regex_FSet___INIT____int(JAVA_OBJECT me, JAVA_INT n1)
     java_util_regex_AbstractSet___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("FSet.java", 31)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_FSet*) _r1.o)->fields.java_util_regex_FSet.isBackReferenced_ = _r0.i;
     XMLVM_SOURCE_POSITION("FSet.java", 36)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_FSet*) _r1.o)->fields.java_util_regex_FSet.groupIndex_ = _r2.i;
     XMLVM_SOURCE_POSITION("FSet.java", 37)
     XMLVM_EXIT_METHOD()
@@ -345,14 +347,17 @@ JAVA_INT java_util_regex_FSet_matches___int_java_lang_CharSequence_java_util_reg
     _r5.o = n2;
     _r6.o = n3;
     XMLVM_SOURCE_POSITION("FSet.java", 41)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_regex_FSet*) _r3.o)->fields.java_util_regex_FSet.groupIndex_;
     XMLVM_CHECK_NPE(6)
     _r0.i = java_util_regex_MatchResultImpl_getEnd___int(_r6.o, _r0.i);
     XMLVM_SOURCE_POSITION("FSet.java", 42)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_FSet*) _r3.o)->fields.java_util_regex_FSet.groupIndex_;
     XMLVM_CHECK_NPE(6)
     java_util_regex_MatchResultImpl_setEnd___int_int(_r6.o, _r1.i, _r4.i);
     XMLVM_SOURCE_POSITION("FSet.java", 43)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(1)
@@ -360,6 +365,7 @@ JAVA_INT java_util_regex_FSet_matches___int_java_lang_CharSequence_java_util_reg
     XMLVM_SOURCE_POSITION("FSet.java", 48)
     if (_r1.i >= 0) goto label24;
     XMLVM_SOURCE_POSITION("FSet.java", 49)
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_regex_FSet*) _r3.o)->fields.java_util_regex_FSet.groupIndex_;
     XMLVM_CHECK_NPE(6)
     java_util_regex_MatchResultImpl_setEnd___int_int(_r6.o, _r2.i, _r0.i);
@@ -378,6 +384,7 @@ JAVA_INT java_util_regex_FSet_getGroupIndex__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FSet.java", 54)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_FSet*) _r1.o)->fields.java_util_regex_FSet.groupIndex_;
     XMLVM_EXIT_METHOD()
     return _r0.i;

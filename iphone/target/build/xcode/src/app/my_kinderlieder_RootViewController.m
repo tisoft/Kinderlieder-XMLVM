@@ -369,13 +369,16 @@ void my_kinderlieder_RootViewController___INIT____org_xmlvm_iphone_UIWindow_java
     _r0.o = __NEW_java_util_HashMap();
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(5)
     ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.cells_ = _r0.o;
     XMLVM_SOURCE_POSITION("RootViewController.java", 21)
+    XMLVM_CHECK_NPE(5)
     ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.songInfos_ = _r7.o;
     XMLVM_SOURCE_POSITION("RootViewController.java", 22)
     _r0.o = __NEW_my_kinderlieder_PdfViewController();
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_PdfViewController___INIT____org_xmlvm_iphone_UIWindow(_r0.o, _r6.o);
+    XMLVM_CHECK_NPE(5)
     ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.pdfViewController_ = _r0.o;
     XMLVM_SOURCE_POSITION("RootViewController.java", 23)
     _r0.o = __NEW_org_xmlvm_iphone_UITableView();
@@ -383,6 +386,7 @@ void my_kinderlieder_RootViewController___INIT____org_xmlvm_iphone_UIWindow_java
     _r1.o = org_xmlvm_iphone_UIView_getFrame__(_r6.o);
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UITableView___INIT____org_xmlvm_iphone_CGRect_int(_r0.o, _r1.o, _r4.i);
+    XMLVM_CHECK_NPE(5)
     ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.mainView_ = _r0.o;
     XMLVM_SOURCE_POSITION("RootViewController.java", 24)
     // "Kinderlieder"
@@ -392,14 +396,18 @@ void my_kinderlieder_RootViewController___INIT____org_xmlvm_iphone_UIWindow_java
     XMLVM_SOURCE_POSITION("RootViewController.java", 25)
     _r0.i = 3;
     _r0.o = org_xmlvm_iphone_UIButton_buttonWithType___int(_r0.i);
+    XMLVM_CHECK_NPE(5)
     ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.infoButton_ = _r0.o;
     XMLVM_SOURCE_POSITION("RootViewController.java", 26)
     _r0.o = __NEW_my_kinderlieder_RootViewController_1();
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_RootViewController_1___INIT____my_kinderlieder_RootViewController_org_xmlvm_iphone_UIWindow(_r0.o, _r5.o, _r6.o);
+    XMLVM_CHECK_NPE(5)
     ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.infoAction_ = _r0.o;
     XMLVM_SOURCE_POSITION("RootViewController.java", 32)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.infoButton_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.infoAction_;
     _r2.i = 64;
     XMLVM_CHECK_NPE(0)
@@ -408,17 +416,21 @@ void my_kinderlieder_RootViewController___INIT____org_xmlvm_iphone_UIWindow_java
     _r0.o = __NEW_my_kinderlieder_RootViewController_2();
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_RootViewController_2___INIT____my_kinderlieder_RootViewController_org_xmlvm_iphone_UIWindow(_r0.o, _r5.o, _r6.o);
+    XMLVM_CHECK_NPE(5)
     ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.shopAction_ = _r0.o;
     XMLVM_SOURCE_POSITION("RootViewController.java", 42)
     _r0.o = __NEW_org_xmlvm_iphone_UIBarButtonItem();
     // "arrow_down_24.png"
     _r1.o = xmlvm_create_java_string_from_pool(866);
     _r1.o = org_xmlvm_iphone_UIImage_imageNamed___java_lang_String(_r1.o);
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.shopAction_;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UIBarButtonItem___INIT____org_xmlvm_iphone_UIImage_int_org_xmlvm_iphone_UIBarButtonItemDelegate(_r0.o, _r1.o, _r4.i, _r2.o);
+    XMLVM_CHECK_NPE(5)
     ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.shopButton_ = _r0.o;
     XMLVM_SOURCE_POSITION("RootViewController.java", 43)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.shopButton_;
     // "Download"
     _r1.o = xmlvm_create_java_string_from_pool(867);
@@ -431,6 +443,7 @@ void my_kinderlieder_RootViewController___INIT____org_xmlvm_iphone_UIWindow_java
     if (!__TIB_org_xmlvm_iphone_UIBarButtonItem.classInitialized) __INIT_org_xmlvm_iphone_UIBarButtonItem();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_org_xmlvm_iphone_UIBarButtonItem, _r1.i);
     _r2.o = __NEW_org_xmlvm_iphone_UIBarButtonItem();
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.infoButton_;
     XMLVM_CHECK_NPE(2)
     org_xmlvm_iphone_UIBarButtonItem___INIT____org_xmlvm_iphone_UIView(_r2.o, _r3.o);
@@ -438,6 +451,7 @@ void my_kinderlieder_RootViewController___INIT____org_xmlvm_iphone_UIWindow_java
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r2.o;
     _r2.i = 1;
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.shopButton_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
@@ -448,6 +462,7 @@ void my_kinderlieder_RootViewController___INIT____org_xmlvm_iphone_UIWindow_java
     XMLVM_CHECK_NPE(5)
     org_xmlvm_iphone_UIViewController_setToolbarItems___java_util_ArrayList(_r5.o, _r0.o);
     XMLVM_SOURCE_POSITION("RootViewController.java", 47)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.mainView_;
     XMLVM_CHECK_NPE(5)
     org_xmlvm_iphone_UIViewController_setView___org_xmlvm_iphone_UIView(_r5.o, _r0.o);
@@ -455,9 +470,12 @@ void my_kinderlieder_RootViewController___INIT____org_xmlvm_iphone_UIWindow_java
     _r0.o = __NEW_my_kinderlieder_RootViewController_3();
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_RootViewController_3___INIT____my_kinderlieder_RootViewController(_r0.o, _r5.o);
+    XMLVM_CHECK_NPE(5)
     ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.dataSource_ = _r0.o;
     XMLVM_SOURCE_POSITION("RootViewController.java", 67)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.mainView_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.dataSource_;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UITableView_setDataSource___org_xmlvm_iphone_UITableViewDataSource(_r0.o, _r1.o);
@@ -465,9 +483,12 @@ void my_kinderlieder_RootViewController___INIT____org_xmlvm_iphone_UIWindow_java
     _r0.o = __NEW_my_kinderlieder_RootViewController_4();
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_RootViewController_4___INIT____my_kinderlieder_RootViewController(_r0.o, _r5.o);
+    XMLVM_CHECK_NPE(5)
     ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.delegate_ = _r0.o;
     XMLVM_SOURCE_POSITION("RootViewController.java", 78)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.mainView_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((my_kinderlieder_RootViewController*) _r5.o)->fields.my_kinderlieder_RootViewController.delegate_;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UITableView_setDelegate___org_xmlvm_iphone_UITableViewDelegate(_r0.o, _r1.o);
@@ -512,10 +533,12 @@ void my_kinderlieder_RootViewController_reloadSongList__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("RootViewController.java", 93)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((my_kinderlieder_RootViewController*) _r2.o)->fields.my_kinderlieder_RootViewController.songInfos_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_clear__])(_r0.o);
     XMLVM_SOURCE_POSITION("RootViewController.java", 94)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((my_kinderlieder_RootViewController*) _r2.o)->fields.my_kinderlieder_RootViewController.songInfos_;
     _r1.o = my_kinderlieder_Main_GET_library();
     XMLVM_CHECK_NPE(1)
@@ -564,6 +587,7 @@ JAVA_OBJECT my_kinderlieder_RootViewController_access$000___my_kinderlieder_Root
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("RootViewController.java", 7)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((my_kinderlieder_RootViewController*) _r1.o)->fields.my_kinderlieder_RootViewController.shopViewController_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -580,6 +604,7 @@ JAVA_OBJECT my_kinderlieder_RootViewController_access$002___my_kinderlieder_Root
     _r0.o = n1;
     _r1.o = n2;
     XMLVM_SOURCE_POSITION("RootViewController.java", 7)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_RootViewController*) _r0.o)->fields.my_kinderlieder_RootViewController.shopViewController_ = _r1.o;
     XMLVM_EXIT_METHOD()
     return _r1.o;
@@ -595,6 +620,7 @@ JAVA_OBJECT my_kinderlieder_RootViewController_access$100___my_kinderlieder_Root
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("RootViewController.java", 7)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((my_kinderlieder_RootViewController*) _r1.o)->fields.my_kinderlieder_RootViewController.songInfos_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -610,6 +636,7 @@ JAVA_OBJECT my_kinderlieder_RootViewController_access$200___my_kinderlieder_Root
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("RootViewController.java", 7)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((my_kinderlieder_RootViewController*) _r1.o)->fields.my_kinderlieder_RootViewController.cells_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -625,6 +652,7 @@ JAVA_OBJECT my_kinderlieder_RootViewController_access$300___my_kinderlieder_Root
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("RootViewController.java", 7)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((my_kinderlieder_RootViewController*) _r1.o)->fields.my_kinderlieder_RootViewController.pdfViewController_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -640,6 +668,7 @@ JAVA_OBJECT my_kinderlieder_RootViewController_access$400___my_kinderlieder_Root
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("RootViewController.java", 7)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((my_kinderlieder_RootViewController*) _r1.o)->fields.my_kinderlieder_RootViewController.mainView_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

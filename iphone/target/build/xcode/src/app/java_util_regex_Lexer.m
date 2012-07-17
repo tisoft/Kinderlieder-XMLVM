@@ -2208,30 +2208,43 @@ void java_util_regex_Lexer___INIT____java_lang_String_int(JAVA_OBJECT me, JAVA_O
     XMLVM_CHECK_NPE(5)
     java_lang_Object___INIT___(_r5.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 165)
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.pattern_ = _r0.o;
     XMLVM_SOURCE_POSITION("Lexer.java", 167)
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.flags_ = _r3.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 169)
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.mode_ = _r4.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 172)
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.saved_mode_ = _r3.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 184)
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.patternFullLength_ = _r3.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 187)
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.curST_ = _r0.o;
     XMLVM_SOURCE_POSITION("Lexer.java", 190)
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.lookAheadST_ = _r0.o;
     XMLVM_SOURCE_POSITION("Lexer.java", 193)
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.index_ = _r3.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 196)
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.prevNW_ = _r3.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 199)
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.curToc_ = _r3.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 202)
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.lookAheadToc_ = _r3.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 205)
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.orig_ = _r0.o;
     XMLVM_SOURCE_POSITION("Lexer.java", 208)
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.orig_ = _r6.o;
     XMLVM_SOURCE_POSITION("Lexer.java", 209)
     _r0.i = _r7.i & 16;
@@ -2246,10 +2259,12 @@ void java_util_regex_Lexer___INIT____java_lang_String_int(JAVA_OBJECT me, JAVA_O
     _r1.i = _r1.i + 2;
     if (!__TIB_char.classInitialized) __INIT_char();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_char, _r1.i);
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.pattern_ = _r1.o;
     XMLVM_SOURCE_POSITION("Lexer.java", 216)
     XMLVM_CHECK_NPE(0)
     _r1.o = java_lang_String_toCharArray__(_r0.o);
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.pattern_;
     XMLVM_SOURCE_POSITION("Lexer.java", 217)
     //java_lang_String_length__[8]
@@ -2257,7 +2272,9 @@ void java_util_regex_Lexer___INIT____java_lang_String_int(JAVA_OBJECT me, JAVA_O
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[8])(_r0.o);
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r3.i, _r2.o, _r3.i, _r0.i);
     XMLVM_SOURCE_POSITION("Lexer.java", 218)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.pattern_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.pattern_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     _r1.i = _r1.i - _r4.i;
@@ -2265,7 +2282,9 @@ void java_util_regex_Lexer___INIT____java_lang_String_int(JAVA_OBJECT me, JAVA_O
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r3.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 219)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.pattern_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.pattern_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     _r2.i = 2;
@@ -2274,10 +2293,13 @@ void java_util_regex_Lexer___INIT____java_lang_String_int(JAVA_OBJECT me, JAVA_O
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r3.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 220)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.pattern_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.patternFullLength_ = _r0.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 221)
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.flags_ = _r7.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 223)
     XMLVM_CHECK_NPE(5)
@@ -2309,6 +2331,7 @@ JAVA_INT java_util_regex_Lexer_peek__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Lexer.java", 235)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.ch_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -2329,6 +2352,7 @@ void java_util_regex_Lexer_setMode___int(JAVA_OBJECT me, JAVA_INT n1)
     _r0.i = 3;
     if (_r2.i >= _r0.i) goto label7;
     XMLVM_SOURCE_POSITION("Lexer.java", 247)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.mode_ = _r2.i;
     label7:;
     XMLVM_SOURCE_POSITION("Lexer.java", 250)
@@ -2354,19 +2378,28 @@ void java_util_regex_Lexer_restoreFlags___int(JAVA_OBJECT me, JAVA_INT n1)
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("Lexer.java", 261)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.flags_ = _r2.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 262)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.ch_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 263)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.curST_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.lookAheadST_ = _r0.o;
     XMLVM_SOURCE_POSITION("Lexer.java", 266)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.curToc_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.index_ = _r0.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 267)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.curToc_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.lookAheadToc_ = _r0.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 268)
     XMLVM_CHECK_NPE(1)
@@ -2385,6 +2418,7 @@ JAVA_OBJECT java_util_regex_Lexer_peekSpecial__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Lexer.java", 272)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.curST_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2399,6 +2433,7 @@ JAVA_BOOLEAN java_util_regex_Lexer_isSpecial__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Lexer.java", 282)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.curST_;
     if (_r0.o == JAVA_NULL) goto label6;
     _r0.i = 1;
@@ -2423,6 +2458,7 @@ JAVA_BOOLEAN java_util_regex_Lexer_isQuantifier__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     _r0.i = java_util_regex_Lexer_isSpecial__(_r2.o);
     if (_r0.i == 0) goto label17;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_Lexer*) _r2.o)->fields.java_util_regex_Lexer.curST_;
     //java_util_regex_SpecialToken_getType__[6]
     XMLVM_CHECK_NPE(0)
@@ -2447,6 +2483,7 @@ JAVA_BOOLEAN java_util_regex_Lexer_isNextSpecial__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Lexer.java", 290)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.lookAheadST_;
     if (_r0.o == JAVA_NULL) goto label6;
     _r0.i = 1;
@@ -2470,6 +2507,7 @@ JAVA_INT java_util_regex_Lexer_next__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     java_util_regex_Lexer_movePointer__(_r1.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 299)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.lookBack_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -2484,6 +2522,7 @@ JAVA_OBJECT java_util_regex_Lexer_nextSpecial__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Lexer.java", 306)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.curST_;
     XMLVM_SOURCE_POSITION("Lexer.java", 307)
     XMLVM_CHECK_NPE(1)
@@ -2502,6 +2541,7 @@ JAVA_INT java_util_regex_Lexer_lookAhead__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Lexer.java", 315)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.lookAhead_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -2516,6 +2556,7 @@ JAVA_INT java_util_regex_Lexer_back__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Lexer.java", 322)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.lookBack_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -2566,6 +2607,7 @@ JAVA_OBJECT java_util_regex_Lexer_normalize___java_lang_String(JAVA_OBJECT n1)
     java_util_regex_Lexer_PUT_canonClassesTable( _r5.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 358)
     _r5.o = java_util_regex_Lexer_GET_canonClassesTable();
+    XMLVM_CHECK_NPE(5)
     _r5.i = ((java_util_regex_IntHash*) _r5.o)->fields.java_util_regex_IntHash.size_;
     java_util_regex_Lexer_PUT_canonClassesTableSize( _r5.i);
     XMLVM_SOURCE_POSITION("Lexer.java", 359)
@@ -2573,6 +2615,7 @@ JAVA_OBJECT java_util_regex_Lexer_normalize___java_lang_String(JAVA_OBJECT n1)
     java_util_regex_Lexer_PUT_singleDecompTable( _r5.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 360)
     _r5.o = java_util_regex_Lexer_GET_singleDecompTable();
+    XMLVM_CHECK_NPE(5)
     _r5.i = ((java_util_regex_IntHash*) _r5.o)->fields.java_util_regex_IntHash.size_;
     java_util_regex_Lexer_PUT_singleDecompTableSize( _r5.i);
     _r5 = _r11;
@@ -2820,16 +2863,24 @@ void java_util_regex_Lexer_reread__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Lexer.java", 485)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.ch_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 486)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.curST_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.lookAheadST_ = _r0.o;
     XMLVM_SOURCE_POSITION("Lexer.java", 487)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.lookAheadToc_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.index_ = _r0.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 488)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.curToc_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.lookAheadToc_ = _r0.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 489)
     XMLVM_CHECK_NPE(1)
@@ -2861,44 +2912,63 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     _r5.i = 2;
     _r4.i = 0;
     XMLVM_SOURCE_POSITION("Lexer.java", 498)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.ch_;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookBack_ = _r0.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 499)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.ch_ = _r0.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 500)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAheadST_;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.curST_ = _r0.o;
     XMLVM_SOURCE_POSITION("Lexer.java", 501)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAheadToc_;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.curToc_ = _r0.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 502)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.index_;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAheadToc_ = _r0.i;
     label26:;
     XMLVM_SOURCE_POSITION("Lexer.java", 509)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.index_;
+    XMLVM_CHECK_NPE(9)
     _r1.o = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.pattern_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i >= _r1.i) goto label79;
     XMLVM_CHECK_NPE(9)
     _r0.i = java_util_regex_Lexer_nextCodePoint__(_r9.o);
     label37:;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 510)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAheadST_ = _r0.o;
     XMLVM_SOURCE_POSITION("Lexer.java", 512)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.mode_;
     if (_r0.i != _r7.i) goto label101;
     XMLVM_SOURCE_POSITION("Lexer.java", 513)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_;
     if (_r0.i != _r8.i) goto label78;
     XMLVM_SOURCE_POSITION("Lexer.java", 516)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.index_;
+    XMLVM_CHECK_NPE(9)
     _r1.o = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.pattern_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i >= _r1.i) goto label81;
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.pattern_;
     XMLVM_CHECK_NPE(9)
     _r1.i = java_util_regex_Lexer_nextIndex__(_r9.o);
@@ -2906,16 +2976,21 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     label65:;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 519)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_;
     switch (_r0.i) {
     case 69: goto label83;
     }
     XMLVM_SOURCE_POSITION("Lexer.java", 530)
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r8.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 531)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.prevNW_;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.index_ = _r0.i;
     label78:;
     XMLVM_SOURCE_POSITION("Lexer.java", 848)
@@ -2930,10 +3005,14 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     goto label65;
     label83:;
     XMLVM_SOURCE_POSITION("Lexer.java", 521)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.saved_mode_;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.mode_ = _r0.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 523)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.index_;
+    XMLVM_CHECK_NPE(9)
     _r1.o = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.pattern_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     _r1.i = _r1.i - _r5.i;
@@ -2942,13 +3021,17 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(9)
     _r0.i = java_util_regex_Lexer_nextCodePoint__(_r9.o);
     label99:;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     label101:;
     XMLVM_SOURCE_POSITION("Lexer.java", 540)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_;
     if (_r0.i != _r8.i) goto label404;
     XMLVM_SOURCE_POSITION("Lexer.java", 542)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.index_;
+    XMLVM_CHECK_NPE(9)
     _r1.o = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.pattern_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     _r1.i = _r1.i - _r5.i;
@@ -2956,8 +3039,10 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(9)
     _r0.i = java_util_regex_Lexer_nextCodePoint__(_r9.o);
     label117:;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 544)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_;
     switch (_r0.i) {
     case -1: goto label132;
@@ -3047,6 +3132,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     //java_util_regex_Lexer_toString__[5]
     XMLVM_CHECK_NPE(9)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_regex_Lexer*) _r9.o)->tib->vtable[5])(_r9.o);
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_PatternSyntaxException___INIT____java_lang_String_java_lang_String_int(_r0.o, _r1.o, _r2.o, _r3.i);
@@ -3056,33 +3142,36 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(9)
     _r0.o = java_util_regex_Lexer_parseCharClassName__(_r9.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 553)
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_;
     _r2.i = 80;
     if (_r1.i != _r2.i) goto label771;
     _r1 = _r6;
     label161:;
-    XMLVM_TRY_BEGIN(w31376aaac88b1d131)
+    XMLVM_TRY_BEGIN(w31378aaac88b1d131)
     // Begin try
     XMLVM_SOURCE_POSITION("Lexer.java", 554)
     XMLVM_SOURCE_POSITION("Lexer.java", 558)
     _r1.o = java_util_regex_AbstractCharClass_getPredefinedClass___java_lang_String_boolean(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Lexer.java", 557)
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAheadST_ = _r1.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w31376aaac88b1d131)
-        XMLVM_CATCH_SPECIFIC(w31376aaac88b1d131,java_util_MissingResourceException,171)
-    XMLVM_CATCH_END(w31376aaac88b1d131)
-    XMLVM_RESTORE_EXCEPTION_ENV(w31376aaac88b1d131)
+    XMLVM_CATCH_BEGIN(w31378aaac88b1d131)
+        XMLVM_CATCH_SPECIFIC(w31378aaac88b1d131,java_util_MissingResourceException,171)
+    XMLVM_CATCH_END(w31378aaac88b1d131)
+    XMLVM_RESTORE_EXCEPTION_ENV(w31378aaac88b1d131)
     XMLVM_SOURCE_POSITION("Lexer.java", 564)
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r4.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 565)
     goto label125;
     label171:;
     XMLVM_SOURCE_POSITION("Lexer.java", 560)
-    java_lang_Thread* curThread_w31376aaac88b1d139 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w31376aaac88b1d139->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w31378aaac88b1d139 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w31378aaac88b1d139->fields.java_lang_Thread.xmlvmException_;
     _r1.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Lexer.java", 561)
     // "regex.11"
@@ -3092,6 +3181,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     //java_util_regex_Lexer_toString__[5]
     XMLVM_CHECK_NPE(9)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_regex_Lexer*) _r9.o)->tib->vtable[5])(_r9.o);
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(1)
     java_util_regex_PatternSyntaxException___INIT____java_lang_String_java_lang_String_int(_r1.o, _r0.o, _r2.o, _r3.i);
@@ -3100,22 +3190,29 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Lexer.java", 574)
     _r0.o = __NEW_java_lang_String();
     XMLVM_SOURCE_POSITION("Lexer.java", 575)
+    XMLVM_CHECK_NPE(9)
     _r1.o = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.pattern_;
+    XMLVM_CHECK_NPE(9)
     _r2.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.prevNW_;
     XMLVM_CHECK_NPE(0)
     java_lang_String___INIT____char_1ARRAY_int_int(_r0.o, _r1.o, _r2.i, _r6.i);
     _r0.o = java_util_regex_AbstractCharClass_getPredefinedClass___java_lang_String_boolean(_r0.o, _r4.i);
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAheadST_ = _r0.o;
     XMLVM_SOURCE_POSITION("Lexer.java", 576)
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r4.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 577)
     goto label125;
     label209:;
     XMLVM_SOURCE_POSITION("Lexer.java", 581)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.mode_;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.saved_mode_ = _r0.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 582)
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.mode_ = _r7.i;
     _r0 = _r6;
     XMLVM_SOURCE_POSITION("Lexer.java", 584)
@@ -3123,6 +3220,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label217:;
     XMLVM_SOURCE_POSITION("Lexer.java", 588)
     _r0.i = 9;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 589)
@@ -3130,6 +3228,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label223:;
     XMLVM_SOURCE_POSITION("Lexer.java", 591)
     _r0.i = 10;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 592)
@@ -3137,6 +3236,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label229:;
     XMLVM_SOURCE_POSITION("Lexer.java", 594)
     _r0.i = 13;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 595)
@@ -3144,6 +3244,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label235:;
     XMLVM_SOURCE_POSITION("Lexer.java", 597)
     _r0.i = 12;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 598)
@@ -3151,6 +3252,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label241:;
     XMLVM_SOURCE_POSITION("Lexer.java", 600)
     _r0.i = 7;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 601)
@@ -3158,18 +3260,22 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label246:;
     XMLVM_SOURCE_POSITION("Lexer.java", 603)
     _r0.i = 27;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 604)
     goto label125;
     label252:;
     XMLVM_SOURCE_POSITION("Lexer.java", 615)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.mode_;
     if (_r0.i != _r6.i) goto label728;
     XMLVM_SOURCE_POSITION("Lexer.java", 616)
     _r0.i = -2147483648;
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_;
     _r0.i = _r0.i | _r1.i;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 618)
@@ -3178,6 +3284,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Lexer.java", 622)
     XMLVM_CHECK_NPE(9)
     _r0.i = java_util_regex_Lexer_readOctals__(_r9.o);
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 623)
@@ -3188,6 +3295,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     _r0.o = xmlvm_create_java_string_from_pool(2484);
     XMLVM_CHECK_NPE(9)
     _r0.i = java_util_regex_Lexer_readHex___java_lang_String_int(_r9.o, _r0.o, _r5.i);
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 626)
@@ -3198,6 +3306,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     _r0.o = xmlvm_create_java_string_from_pool(2485);
     XMLVM_CHECK_NPE(9)
     _r0.i = java_util_regex_Lexer_readHex___java_lang_String_int(_r9.o, _r0.o, _r7.i);
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 629)
@@ -3205,6 +3314,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label297:;
     XMLVM_SOURCE_POSITION("Lexer.java", 632)
     _r0.i = -2147483550;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 633)
@@ -3212,6 +3322,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label305:;
     XMLVM_SOURCE_POSITION("Lexer.java", 635)
     _r0.i = -2147483582;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 636)
@@ -3219,6 +3330,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label313:;
     XMLVM_SOURCE_POSITION("Lexer.java", 638)
     _r0.i = -2147483583;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 639)
@@ -3226,6 +3338,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label321:;
     XMLVM_SOURCE_POSITION("Lexer.java", 641)
     _r0.i = -2147483577;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 642)
@@ -3233,6 +3346,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label329:;
     XMLVM_SOURCE_POSITION("Lexer.java", 644)
     _r0.i = -2147483558;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 645)
@@ -3240,18 +3354,22 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label337:;
     XMLVM_SOURCE_POSITION("Lexer.java", 647)
     _r0.i = -2147483526;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 648)
     goto label125;
     label345:;
     XMLVM_SOURCE_POSITION("Lexer.java", 650)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.index_;
+    XMLVM_CHECK_NPE(9)
     _r1.o = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.pattern_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     _r1.i = _r1.i - _r5.i;
     if (_r0.i >= _r1.i) goto label368;
     XMLVM_SOURCE_POSITION("Lexer.java", 653)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.pattern_;
     XMLVM_CHECK_NPE(9)
     _r1.i = java_util_regex_Lexer_nextIndex__(_r9.o);
@@ -3259,6 +3377,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     _r0.i = _r0.i & 31;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 654)
@@ -3273,6 +3392,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     //java_util_regex_Lexer_toString__[5]
     XMLVM_CHECK_NPE(9)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_regex_Lexer*) _r9.o)->tib->vtable[5])(_r9.o);
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_PatternSyntaxException___INIT____java_lang_String_java_lang_String_int(_r0.o, _r1.o, _r2.o, _r3.i);
@@ -3287,15 +3407,18 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     //java_util_regex_Lexer_toString__[5]
     XMLVM_CHECK_NPE(9)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_regex_Lexer*) _r9.o)->tib->vtable[5])(_r9.o);
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_PatternSyntaxException___INIT____java_lang_String_java_lang_String_int(_r0.o, _r1.o, _r2.o, _r3.i);
     XMLVM_THROW_CUSTOM(_r0.o)
     label404:;
     XMLVM_SOURCE_POSITION("Lexer.java", 693)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.mode_;
     if (_r0.i != _r6.i) goto label719;
     XMLVM_SOURCE_POSITION("Lexer.java", 694)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_;
     switch (_r0.i) {
     case 36: goto label482;
@@ -3316,11 +3439,15 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     goto label125;
     label416:;
     XMLVM_SOURCE_POSITION("Lexer.java", 698)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.index_;
+    XMLVM_CHECK_NPE(9)
     _r1.o = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.pattern_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i >= _r1.i) goto label442;
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.pattern_;
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -3332,9 +3459,11 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     case 63: goto label458;
     }
     XMLVM_SOURCE_POSITION("Lexer.java", 711)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_;
     _r1.i = -536870912;
     _r0.i = _r0.i | _r1.i;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 716)
@@ -3344,9 +3473,11 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     goto label429;
     label445:;
     XMLVM_SOURCE_POSITION("Lexer.java", 701)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_;
     _r1.i = -2147483648;
     _r0.i = _r0.i | _r1.i;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 702)
     XMLVM_CHECK_NPE(9)
@@ -3356,9 +3487,11 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     goto label125;
     label458:;
     XMLVM_SOURCE_POSITION("Lexer.java", 706)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_;
     _r1.i = -1073741824;
     _r0.i = _r0.i | _r1.i;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 707)
     XMLVM_CHECK_NPE(9)
@@ -3368,9 +3501,11 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     goto label125;
     label471:;
     XMLVM_SOURCE_POSITION("Lexer.java", 720)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_;
     XMLVM_CHECK_NPE(9)
     _r0.o = java_util_regex_Lexer_processQuantifier___int(_r9.o, _r0.i);
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAheadST_ = _r0.o;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 721)
@@ -3378,13 +3513,16 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label482:;
     XMLVM_SOURCE_POSITION("Lexer.java", 725)
     _r0.i = -536870876;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 726)
     goto label125;
     label490:;
     XMLVM_SOURCE_POSITION("Lexer.java", 728)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.pattern_;
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -3395,7 +3533,9 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(9)
     java_util_regex_Lexer_nextIndex__(_r9.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 730)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.pattern_;
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -3416,26 +3556,36 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Lexer.java", 754)
     XMLVM_CHECK_NPE(9)
     _r2.i = java_util_regex_Lexer_readFlags__(_r9.o);
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r2.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 761)
+    XMLVM_CHECK_NPE(9)
     _r2.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_;
     _r3.i = 256;
     if (_r2.i < _r3.i) goto label596;
     XMLVM_SOURCE_POSITION("Lexer.java", 764)
+    XMLVM_CHECK_NPE(9)
     _r2.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_;
     _r2.i = _r2.i & 255;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r2.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 765)
+    XMLVM_CHECK_NPE(9)
     _r2.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.flags_ = _r2.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 766)
+    XMLVM_CHECK_NPE(9)
     _r2.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_;
     _r2.i = _r2.i << 16;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r2.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 767)
     _r2.i = -16777176;
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_;
     _r2.i = _r2.i | _r3.i;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r2.i;
     label552:;
     XMLVM_SOURCE_POSITION("Lexer.java", 732)
@@ -3445,6 +3595,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label557:;
     XMLVM_SOURCE_POSITION("Lexer.java", 736)
     _r2.i = -268435416;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r2.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 737)
     XMLVM_CHECK_NPE(9)
@@ -3453,6 +3604,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label566:;
     XMLVM_SOURCE_POSITION("Lexer.java", 740)
     _r2.i = -536870872;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r2.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 741)
     XMLVM_CHECK_NPE(9)
@@ -3461,6 +3613,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label575:;
     XMLVM_SOURCE_POSITION("Lexer.java", 744)
     _r2.i = -33554392;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r2.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 745)
     XMLVM_CHECK_NPE(9)
@@ -3471,7 +3624,9 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(9)
     java_util_regex_Lexer_nextIndex__(_r9.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 749)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.pattern_;
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -3482,17 +3637,23 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     goto label552;
     label596:;
     XMLVM_SOURCE_POSITION("Lexer.java", 769)
+    XMLVM_CHECK_NPE(9)
     _r2.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.flags_ = _r2.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 770)
+    XMLVM_CHECK_NPE(9)
     _r2.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_;
     _r2.i = _r2.i << 16;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r2.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 771)
     _r2.i = -1073741784;
     XMLVM_SOURCE_POSITION("Lexer.java", 772)
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_;
     _r2.i = _r2.i | _r3.i;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r2.i;
     goto label552;
     label615:;
@@ -3510,6 +3671,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     //java_util_regex_Lexer_toString__[5]
     XMLVM_CHECK_NPE(9)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_regex_Lexer*) _r9.o)->tib->vtable[5])(_r9.o);
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_PatternSyntaxException___INIT____java_lang_String_java_lang_String_int(_r0.o, _r1.o, _r2.o, _r3.i);
@@ -3517,6 +3679,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label636:;
     XMLVM_SOURCE_POSITION("Lexer.java", 781)
     _r0.i = -67108824;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 782)
     XMLVM_CHECK_NPE(9)
@@ -3527,6 +3690,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label646:;
     XMLVM_SOURCE_POSITION("Lexer.java", 785)
     _r0.i = -134217688;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 786)
     XMLVM_CHECK_NPE(9)
@@ -3537,6 +3701,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label656:;
     XMLVM_SOURCE_POSITION("Lexer.java", 795)
     _r0.i = -2147483608;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 797)
@@ -3544,6 +3709,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label664:;
     XMLVM_SOURCE_POSITION("Lexer.java", 801)
     _r0.i = -536870871;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 802)
@@ -3551,6 +3717,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label672:;
     XMLVM_SOURCE_POSITION("Lexer.java", 804)
     _r0.i = -536870821;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 805)
     XMLVM_CHECK_NPE(9)
@@ -3560,10 +3727,12 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     goto label125;
     label683:;
     XMLVM_SOURCE_POSITION("Lexer.java", 809)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.mode_;
     if (_r0.i != _r5.i) goto label728;
     XMLVM_SOURCE_POSITION("Lexer.java", 810)
     _r0.i = -536870819;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 812)
@@ -3571,6 +3740,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label695:;
     XMLVM_SOURCE_POSITION("Lexer.java", 815)
     _r0.i = -536870818;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 816)
@@ -3578,6 +3748,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label703:;
     XMLVM_SOURCE_POSITION("Lexer.java", 818)
     _r0.i = -536870788;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 819)
@@ -3585,15 +3756,18 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label711:;
     XMLVM_SOURCE_POSITION("Lexer.java", 821)
     _r0.i = -536870866;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 822)
     goto label125;
     label719:;
     XMLVM_SOURCE_POSITION("Lexer.java", 826)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.mode_;
     if (_r0.i != _r5.i) goto label728;
     XMLVM_SOURCE_POSITION("Lexer.java", 827)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_;
     switch (_r0.i) {
     case 38: goto label755;
@@ -3608,6 +3782,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label731:;
     XMLVM_SOURCE_POSITION("Lexer.java", 829)
     _r0.i = -536870821;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 830)
@@ -3615,6 +3790,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label739:;
     XMLVM_SOURCE_POSITION("Lexer.java", 832)
     _r0.i = -536870819;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 833)
@@ -3622,6 +3798,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label747:;
     XMLVM_SOURCE_POSITION("Lexer.java", 835)
     _r0.i = -536870818;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 836)
@@ -3629,6 +3806,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label755:;
     XMLVM_SOURCE_POSITION("Lexer.java", 838)
     _r0.i = -536870874;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 839)
@@ -3636,6 +3814,7 @@ void java_util_regex_Lexer_movePointer__(JAVA_OBJECT me)
     label763:;
     XMLVM_SOURCE_POSITION("Lexer.java", 841)
     _r0.i = -536870867;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Lexer*) _r9.o)->fields.java_util_regex_Lexer.lookAhead_ = _r0.i;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("Lexer.java", 842)
@@ -3678,13 +3857,17 @@ JAVA_OBJECT java_util_regex_Lexer_parseCharClassName__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Lexer.java", 855)
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.index_;
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.pattern_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     _r2.i = _r2.i - _r4.i;
     if (_r1.i >= _r2.i) goto label104;
     XMLVM_SOURCE_POSITION("Lexer.java", 857)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.pattern_;
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
@@ -3698,6 +3881,7 @@ JAVA_OBJECT java_util_regex_Lexer_parseCharClassName__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r5.o);
     _r1.o = __NEW_java_lang_String();
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.pattern_;
     XMLVM_CHECK_NPE(8)
     _r3.i = java_util_regex_Lexer_nextIndex__(_r8.o);
@@ -3720,12 +3904,15 @@ JAVA_OBJECT java_util_regex_Lexer_parseCharClassName__(JAVA_OBJECT me)
     _r1.i = 0;
     label62:;
     XMLVM_SOURCE_POSITION("Lexer.java", 863)
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.index_;
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.pattern_;
     _r3.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r3.o));
     _r3.i = _r3.i - _r4.i;
     if (_r2.i >= _r3.i) goto label80;
     XMLVM_SOURCE_POSITION("Lexer.java", 864)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.pattern_;
     XMLVM_CHECK_NPE(8)
     _r2.i = java_util_regex_Lexer_nextIndex__(_r8.o);
@@ -3746,6 +3933,7 @@ JAVA_OBJECT java_util_regex_Lexer_parseCharClassName__(JAVA_OBJECT me)
     //java_util_regex_Lexer_toString__[5]
     XMLVM_CHECK_NPE(8)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_regex_Lexer*) _r8.o)->tib->vtable[5])(_r8.o);
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_PatternSyntaxException___INIT____java_lang_String_java_lang_String_int(_r0.o, _r1.o, _r2.o, _r3.i);
@@ -3771,6 +3959,7 @@ JAVA_OBJECT java_util_regex_Lexer_parseCharClassName__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(8)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_regex_Lexer*) _r8.o)->tib->vtable[5])(_r8.o);
     XMLVM_SOURCE_POSITION("Lexer.java", 876)
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_PatternSyntaxException___INIT____java_lang_String_java_lang_String_int(_r0.o, _r1.o, _r2.o, _r3.i);
@@ -3851,10 +4040,13 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     _r3 = _r9;
     label15:;
     XMLVM_SOURCE_POSITION("Lexer.java", 892)
+    XMLVM_CHECK_NPE(8)
     _r4.i = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.index_;
+    XMLVM_CHECK_NPE(8)
     _r5.o = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.pattern_;
     _r5.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r5.o));
     if (_r4.i >= _r5.i) goto label32;
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.pattern_;
     XMLVM_CHECK_NPE(8)
     _r4.i = java_util_regex_Lexer_nextIndex__(_r8.o);
@@ -3875,6 +4067,7 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     //java_util_regex_Lexer_toString__[5]
     XMLVM_CHECK_NPE(8)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_regex_Lexer*) _r8.o)->tib->vtable[5])(_r8.o);
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_PatternSyntaxException___INIT____java_lang_String_java_lang_String_int(_r0.o, _r1.o, _r2.o, _r3.i);
@@ -3884,7 +4077,7 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     _r4.i = 44;
     if (_r3.i != _r4.i) goto label96;
     if (_r1.i >= 0) goto label96;
-    XMLVM_TRY_BEGIN(w31376aaac90b1c41)
+    XMLVM_TRY_BEGIN(w31378aaac90b1c41)
     // Begin try
     XMLVM_SOURCE_POSITION("Lexer.java", 895)
     //java_lang_StringBuilder_toString__[5]
@@ -3900,15 +4093,15 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     java_lang_StringBuilder_delete___int_int(_r0.o, _r4.i, _r5.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w31376aaac90b1c41)
-        XMLVM_CATCH_SPECIFIC(w31376aaac90b1c41,java_lang_NumberFormatException,77)
-    XMLVM_CATCH_END(w31376aaac90b1c41)
-    XMLVM_RESTORE_EXCEPTION_ENV(w31376aaac90b1c41)
+    XMLVM_CATCH_BEGIN(w31378aaac90b1c41)
+        XMLVM_CATCH_SPECIFIC(w31378aaac90b1c41,java_lang_NumberFormatException,77)
+    XMLVM_CATCH_END(w31378aaac90b1c41)
+    XMLVM_RESTORE_EXCEPTION_ENV(w31378aaac90b1c41)
     goto label15;
     label77:;
     XMLVM_SOURCE_POSITION("Lexer.java", 898)
-    java_lang_Thread* curThread_w31376aaac90b1c45 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w31376aaac90b1c45->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w31378aaac90b1c45 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w31378aaac90b1c45->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Lexer.java", 899)
     // "regex.17"
@@ -3918,6 +4111,7 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     //java_util_regex_Lexer_toString__[5]
     XMLVM_CHECK_NPE(8)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_regex_Lexer*) _r8.o)->tib->vtable[5])(_r8.o);
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_PatternSyntaxException___INIT____java_lang_String_java_lang_String_int(_r0.o, _r1.o, _r2.o, _r3.i);
@@ -3934,7 +4128,7 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     XMLVM_CHECK_NPE(0)
     _r3.i = java_lang_AbstractStringBuilder_length__(_r0.o);
     if (_r3.i <= 0) goto label164;
-    XMLVM_TRY_BEGIN(w31376aaac90b1c64)
+    XMLVM_TRY_BEGIN(w31378aaac90b1c64)
     // Begin try
     XMLVM_SOURCE_POSITION("Lexer.java", 913)
     //java_lang_StringBuilder_toString__[5]
@@ -3944,10 +4138,10 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     _r0.i = java_lang_Integer_parseInt___java_lang_String_int(_r0.o, _r2.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w31376aaac90b1c64)
-        XMLVM_CATCH_SPECIFIC(w31376aaac90b1c64,java_lang_NumberFormatException,145)
-    XMLVM_CATCH_END(w31376aaac90b1c64)
-    XMLVM_RESTORE_EXCEPTION_ENV(w31376aaac90b1c64)
+    XMLVM_CATCH_BEGIN(w31378aaac90b1c64)
+        XMLVM_CATCH_SPECIFIC(w31378aaac90b1c64,java_lang_NumberFormatException,145)
+    XMLVM_CATCH_END(w31378aaac90b1c64)
+    XMLVM_RESTORE_EXCEPTION_ENV(w31378aaac90b1c64)
     XMLVM_SOURCE_POSITION("Lexer.java", 914)
     if (_r1.i >= 0) goto label120;
     _r1 = _r0;
@@ -3968,14 +4162,15 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     //java_util_regex_Lexer_toString__[5]
     XMLVM_CHECK_NPE(8)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_regex_Lexer*) _r8.o)->tib->vtable[5])(_r8.o);
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_PatternSyntaxException___INIT____java_lang_String_java_lang_String_int(_r0.o, _r1.o, _r2.o, _r3.i);
     XMLVM_THROW_CUSTOM(_r0.o)
     label145:;
     XMLVM_SOURCE_POSITION("Lexer.java", 917)
-    java_lang_Thread* curThread_w31376aaac90b1c87 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w31376aaac90b1c87->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w31378aaac90b1c87 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w31378aaac90b1c87->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Lexer.java", 918)
     // "regex.17"
@@ -3985,6 +4180,7 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     //java_util_regex_Lexer_toString__[5]
     XMLVM_CHECK_NPE(8)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_regex_Lexer*) _r8.o)->tib->vtable[5])(_r8.o);
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_PatternSyntaxException___INIT____java_lang_String_java_lang_String_int(_r0.o, _r1.o, _r2.o, _r3.i);
@@ -4002,17 +4198,22 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     //java_util_regex_Lexer_toString__[5]
     XMLVM_CHECK_NPE(8)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_regex_Lexer*) _r8.o)->tib->vtable[5])(_r8.o);
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_PatternSyntaxException___INIT____java_lang_String_java_lang_String_int(_r0.o, _r1.o, _r2.o, _r3.i);
     XMLVM_THROW_CUSTOM(_r0.o)
     label184:;
     XMLVM_SOURCE_POSITION("Lexer.java", 932)
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.index_;
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.pattern_;
     _r3.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r3.o));
     if (_r2.i >= _r3.i) goto label211;
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.pattern_;
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
@@ -4025,6 +4226,7 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     }
     XMLVM_SOURCE_POSITION("Lexer.java", 944)
     _r2.i = -536870789;
+    XMLVM_CHECK_NPE(8)
     ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.lookAhead_ = _r2.i;
     label205:;
     XMLVM_SOURCE_POSITION("Lexer.java", 947)
@@ -4039,6 +4241,7 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     label214:;
     XMLVM_SOURCE_POSITION("Lexer.java", 936)
     _r2.i = -2147483525;
+    XMLVM_CHECK_NPE(8)
     ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.lookAhead_ = _r2.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 937)
     XMLVM_CHECK_NPE(8)
@@ -4047,6 +4250,7 @@ JAVA_OBJECT java_util_regex_Lexer_processQuantifier___int(JAVA_OBJECT me, JAVA_I
     label223:;
     XMLVM_SOURCE_POSITION("Lexer.java", 940)
     _r2.i = -1073741701;
+    XMLVM_CHECK_NPE(8)
     ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.lookAhead_ = _r2.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 941)
     XMLVM_CHECK_NPE(8)
@@ -4067,6 +4271,7 @@ JAVA_OBJECT java_util_regex_Lexer_toString__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Lexer.java", 951)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.orig_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -4082,11 +4287,15 @@ JAVA_BOOLEAN java_util_regex_Lexer_isEmpty__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Lexer.java", 960)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_Lexer*) _r2.o)->fields.java_util_regex_Lexer.ch_;
     if (_r0.i != 0) goto label22;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_Lexer*) _r2.o)->fields.java_util_regex_Lexer.lookAhead_;
     if (_r0.i != 0) goto label22;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_Lexer*) _r2.o)->fields.java_util_regex_Lexer.index_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_regex_Lexer*) _r2.o)->fields.java_util_regex_Lexer.patternFullLength_;
     if (_r0.i != _r1.i) goto label22;
     XMLVM_CHECK_NPE(2)
@@ -4136,6 +4345,7 @@ JAVA_BOOLEAN java_util_regex_Lexer_isLetter__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     _r0.i = java_util_regex_Lexer_isSpecial__(_r1.o);
     if (_r0.i != 0) goto label22;
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.ch_;
     _r0.i = java_util_regex_Lexer_isLetter___int(_r0.i);
     if (_r0.i == 0) goto label22;
@@ -4158,9 +4368,11 @@ JAVA_BOOLEAN java_util_regex_Lexer_isHighSurrogate__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Lexer.java", 989)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_Lexer*) _r2.o)->fields.java_util_regex_Lexer.ch_;
     _r1.i = 56319;
     if (_r0.i > _r1.i) goto label16;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_Lexer*) _r2.o)->fields.java_util_regex_Lexer.ch_;
     _r1.i = 55296;
     if (_r0.i < _r1.i) goto label16;
@@ -4183,9 +4395,11 @@ JAVA_BOOLEAN java_util_regex_Lexer_isLowSurrogate__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Lexer.java", 993)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_Lexer*) _r2.o)->fields.java_util_regex_Lexer.ch_;
     _r1.i = 57343;
     if (_r0.i > _r1.i) goto label16;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_Lexer*) _r2.o)->fields.java_util_regex_Lexer.ch_;
     _r1.i = 56320;
     if (_r0.i < _r1.i) goto label16;
@@ -4265,6 +4479,7 @@ JAVA_INT java_util_regex_Lexer_readHex___java_lang_String_int(JAVA_OBJECT me, JA
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____int(_r0.o, _r7.i);
     XMLVM_SOURCE_POSITION("Lexer.java", 1009)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.pattern_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     _r2.i = 2;
@@ -4273,12 +4488,13 @@ JAVA_INT java_util_regex_Lexer_readHex___java_lang_String_int(JAVA_OBJECT me, JA
     label11:;
     XMLVM_SOURCE_POSITION("Lexer.java", 1011)
     if (_r2.i >= _r7.i) goto label17;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.index_;
     if (_r3.i < _r1.i) goto label30;
     label17:;
     XMLVM_SOURCE_POSITION("Lexer.java", 1014)
     if (_r2.i != _r7.i) goto label45;
-    XMLVM_TRY_BEGIN(w31376aaac99b1c21)
+    XMLVM_TRY_BEGIN(w31378aaac99b1c21)
     // Begin try
     XMLVM_SOURCE_POSITION("Lexer.java", 1016)
     //java_lang_StringBuilder_toString__[5]
@@ -4288,14 +4504,15 @@ JAVA_INT java_util_regex_Lexer_readHex___java_lang_String_int(JAVA_OBJECT me, JA
     _r0.i = java_lang_Integer_parseInt___java_lang_String_int(_r0.o, _r1.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w31376aaac99b1c21)
-        XMLVM_CATCH_SPECIFIC(w31376aaac99b1c21,java_lang_NumberFormatException,44)
-    XMLVM_CATCH_END(w31376aaac99b1c21)
-    XMLVM_RESTORE_EXCEPTION_ENV(w31376aaac99b1c21)
+    XMLVM_CATCH_BEGIN(w31378aaac99b1c21)
+        XMLVM_CATCH_SPECIFIC(w31378aaac99b1c21,java_lang_NumberFormatException,44)
+    XMLVM_CATCH_END(w31378aaac99b1c21)
+    XMLVM_RESTORE_EXCEPTION_ENV(w31378aaac99b1c21)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label30:;
     XMLVM_SOURCE_POSITION("Lexer.java", 1012)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.pattern_;
     XMLVM_CHECK_NPE(5)
     _r4.i = java_util_regex_Lexer_nextIndex__(_r5.o);
@@ -4308,8 +4525,8 @@ JAVA_INT java_util_regex_Lexer_readHex___java_lang_String_int(JAVA_OBJECT me, JA
     _r2.i = _r2.i + 1;
     goto label11;
     label44:;
-    java_lang_Thread* curThread_w31376aaac99b1c32 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w31376aaac99b1c32->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w31378aaac99b1c32 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w31378aaac99b1c32->fields.java_lang_Thread.xmlvmException_;
     label45:;
     XMLVM_SOURCE_POSITION("Lexer.java", 1021)
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
@@ -4320,6 +4537,7 @@ JAVA_INT java_util_regex_Lexer_readHex___java_lang_String_int(JAVA_OBJECT me, JA
     //java_util_regex_Lexer_toString__[5]
     XMLVM_CHECK_NPE(5)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_regex_Lexer*) _r5.o)->tib->vtable[5])(_r5.o);
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_util_regex_Lexer*) _r5.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_PatternSyntaxException___INIT____java_lang_String_java_lang_String_int(_r0.o, _r1.o, _r2.o, _r3.i);
@@ -4347,12 +4565,15 @@ JAVA_INT java_util_regex_Lexer_readOctals__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Lexer.java", 1030)
     _r0.i = 1;
     XMLVM_SOURCE_POSITION("Lexer.java", 1033)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.pattern_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     _r2.i = 2;
     _r1.i = _r1.i - _r2.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 1035)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.pattern_;
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
@@ -4375,10 +4596,13 @@ JAVA_INT java_util_regex_Lexer_readOctals__(JAVA_OBJECT me)
     label32:;
     XMLVM_SOURCE_POSITION("Lexer.java", 1047)
     if (_r2.i >= _r3.i) goto label50;
+    XMLVM_CHECK_NPE(8)
     _r4.i = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.index_;
     if (_r4.i >= _r1.i) goto label50;
     XMLVM_SOURCE_POSITION("Lexer.java", 1048)
+    XMLVM_CHECK_NPE(8)
     _r4.o = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.pattern_;
+    XMLVM_CHECK_NPE(8)
     _r5.i = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r5.i);
@@ -4399,6 +4623,7 @@ JAVA_INT java_util_regex_Lexer_readOctals__(JAVA_OBJECT me)
     //java_util_regex_Lexer_toString__[5]
     XMLVM_CHECK_NPE(8)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_regex_Lexer*) _r8.o)->tib->vtable[5])(_r8.o);
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_util_regex_Lexer*) _r8.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_PatternSyntaxException___INIT____java_lang_String_java_lang_String_int(_r0.o, _r1.o, _r2.o, _r3.i);
@@ -4437,13 +4662,16 @@ JAVA_INT java_util_regex_Lexer_readFlags__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Lexer.java", 1062)
     _r0.i = 1;
     XMLVM_SOURCE_POSITION("Lexer.java", 1063)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_regex_Lexer*) _r6.o)->fields.java_util_regex_Lexer.flags_;
     _r5 = _r1;
     _r1 = _r0;
     _r0 = _r5;
     label8:;
     XMLVM_SOURCE_POSITION("Lexer.java", 1065)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_util_regex_Lexer*) _r6.o)->fields.java_util_regex_Lexer.index_;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_util_regex_Lexer*) _r6.o)->fields.java_util_regex_Lexer.pattern_;
     _r3.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r3.o));
     if (_r2.i < _r3.i) goto label33;
@@ -4456,13 +4684,16 @@ JAVA_INT java_util_regex_Lexer_readFlags__(JAVA_OBJECT me)
     //java_util_regex_Lexer_toString__[5]
     XMLVM_CHECK_NPE(6)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_regex_Lexer*) _r6.o)->tib->vtable[5])(_r6.o);
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_util_regex_Lexer*) _r6.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_PatternSyntaxException___INIT____java_lang_String_java_lang_String_int(_r0.o, _r1.o, _r2.o, _r3.i);
     XMLVM_THROW_CUSTOM(_r0.o)
     label33:;
     XMLVM_SOURCE_POSITION("Lexer.java", 1066)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_regex_Lexer*) _r6.o)->fields.java_util_regex_Lexer.pattern_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_util_regex_Lexer*) _r6.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
@@ -4496,6 +4727,7 @@ JAVA_INT java_util_regex_Lexer_readFlags__(JAVA_OBJECT me)
     //java_util_regex_Lexer_toString__[5]
     XMLVM_CHECK_NPE(6)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_regex_Lexer*) _r6.o)->tib->vtable[5])(_r6.o);
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_util_regex_Lexer*) _r6.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_PatternSyntaxException___INIT____java_lang_String_java_lang_String_int(_r0.o, _r1.o, _r2.o, _r3.i);
@@ -4597,9 +4829,12 @@ JAVA_INT java_util_regex_Lexer_nextIndex__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Lexer.java", 1140)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.index_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.prevNW_ = _r0.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 1141)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.flags_;
     _r0.i = _r0.i & 4;
     if (_r0.i == 0) goto label16;
@@ -4608,13 +4843,16 @@ JAVA_INT java_util_regex_Lexer_nextIndex__(JAVA_OBJECT me)
     java_util_regex_Lexer_skipComments__(_r1.o);
     label13:;
     XMLVM_SOURCE_POSITION("Lexer.java", 1146)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.prevNW_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label16:;
     XMLVM_SOURCE_POSITION("Lexer.java", 1144)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.index_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.index_ = _r0.i;
     goto label13;
     //XMLVM_END_WRAPPER
@@ -4630,19 +4868,25 @@ JAVA_INT java_util_regex_Lexer_skipComments__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Lexer.java", 1153)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.pattern_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r1.i = 2;
     _r0.i = _r0.i - _r1.i;
     XMLVM_SOURCE_POSITION("Lexer.java", 1154)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.index_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.index_ = _r1.i;
     label11:;
     XMLVM_SOURCE_POSITION("Lexer.java", 1156)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.index_;
     if (_r1.i >= _r0.i) goto label27;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.pattern_;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
@@ -4651,9 +4895,12 @@ JAVA_INT java_util_regex_Lexer_skipComments__(JAVA_OBJECT me)
     if (_r1.i != 0) goto label70;
     label27:;
     XMLVM_SOURCE_POSITION("Lexer.java", 1158)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.index_;
     if (_r1.i >= _r0.i) goto label77;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.pattern_;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
@@ -4661,14 +4908,19 @@ JAVA_INT java_util_regex_Lexer_skipComments__(JAVA_OBJECT me)
     _r2.i = 35;
     if (_r1.i != _r2.i) goto label77;
     XMLVM_SOURCE_POSITION("Lexer.java", 1159)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.index_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.index_ = _r1.i;
     label47:;
     XMLVM_SOURCE_POSITION("Lexer.java", 1160)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.index_;
     if (_r1.i >= _r0.i) goto label11;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.pattern_;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
@@ -4677,18 +4929,23 @@ JAVA_INT java_util_regex_Lexer_skipComments__(JAVA_OBJECT me)
     _r1.i = java_util_regex_Lexer_isLineSeparator___int(_r3.o, _r1.i);
     if (_r1.i != 0) goto label11;
     XMLVM_SOURCE_POSITION("Lexer.java", 1161)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.index_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.index_ = _r1.i;
     goto label47;
     label70:;
     XMLVM_SOURCE_POSITION("Lexer.java", 1157)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.index_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.index_ = _r1.i;
     goto label11;
     label77:;
     XMLVM_SOURCE_POSITION("Lexer.java", 1163)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.index_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -4928,6 +5185,7 @@ JAVA_INT java_util_regex_Lexer_nextCodePoint__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Lexer.java", 1260)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.pattern_;
     XMLVM_CHECK_NPE(3)
     _r1.i = java_util_regex_Lexer_nextIndex__(_r3.o);
@@ -4938,13 +5196,16 @@ JAVA_INT java_util_regex_Lexer_nextCodePoint__(JAVA_OBJECT me)
     _r1.i = java_lang_Character_isHighSurrogate___char(_r0.i);
     if (_r1.i == 0) goto label40;
     XMLVM_SOURCE_POSITION("Lexer.java", 1265)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.prevNW_;
     _r1.i = _r1.i + 1;
     XMLVM_SOURCE_POSITION("Lexer.java", 1267)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.pattern_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     if (_r1.i >= _r2.i) goto label40;
     XMLVM_SOURCE_POSITION("Lexer.java", 1268)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_regex_Lexer*) _r3.o)->fields.java_util_regex_Lexer.pattern_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -4999,6 +5260,7 @@ JAVA_INT java_util_regex_Lexer_getIndex__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Lexer.java", 1299)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_Lexer*) _r1.o)->fields.java_util_regex_Lexer.curToc_;
     XMLVM_EXIT_METHOD()
     return _r0.i;

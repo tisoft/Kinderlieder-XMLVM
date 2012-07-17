@@ -372,6 +372,7 @@ void java_util_Collections_CheckedSortedMap___INIT____java_util_SortedMap_java_l
     XMLVM_CHECK_NPE(1)
     java_util_Collections_CheckedMap___INIT____java_util_Map_java_lang_Class_java_lang_Class_java_util_Collections_CheckedMap(_r1.o, _r2.o, _r3.o, _r4.o, _r0.o);
     XMLVM_SOURCE_POSITION("Collections.java", 3826)
+    XMLVM_CHECK_NPE(1)
     ((java_util_Collections_CheckedSortedMap*) _r1.o)->fields.java_util_Collections_CheckedSortedMap.sm_ = _r2.o;
     XMLVM_SOURCE_POSITION("Collections.java", 3827)
     XMLVM_EXIT_METHOD()
@@ -387,6 +388,7 @@ JAVA_OBJECT java_util_Collections_CheckedSortedMap_comparator__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 3833)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CheckedSortedMap*) _r1.o)->fields.java_util_Collections_CheckedSortedMap.sm_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedMap_comparator__])(_r0.o);
@@ -411,11 +413,14 @@ JAVA_OBJECT java_util_Collections_CheckedSortedMap_subMap___java_lang_Object_jav
     _r6.o = n2;
     XMLVM_SOURCE_POSITION("Collections.java", 3840)
     _r0.o = __NEW_java_util_Collections_CheckedSortedMap();
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Collections_CheckedSortedMap*) _r4.o)->fields.java_util_Collections_CheckedSortedMap.sm_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedMap_subMap___java_lang_Object_java_lang_Object])(_r1.o, _r5.o, _r6.o);
     XMLVM_SOURCE_POSITION("Collections.java", 3841)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Collections_CheckedMap*) _r4.o)->fields.java_util_Collections_CheckedMap.keyType_;
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_util_Collections_CheckedMap*) _r4.o)->fields.java_util_Collections_CheckedMap.valueType_;
     XMLVM_CHECK_NPE(0)
     java_util_Collections_CheckedSortedMap___INIT____java_util_SortedMap_java_lang_Class_java_lang_Class(_r0.o, _r1.o, _r2.o, _r3.o);
@@ -438,11 +443,14 @@ JAVA_OBJECT java_util_Collections_CheckedSortedMap_headMap___java_lang_Object(JA
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 3848)
     _r0.o = __NEW_java_util_Collections_CheckedSortedMap();
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Collections_CheckedSortedMap*) _r4.o)->fields.java_util_Collections_CheckedSortedMap.sm_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedMap_headMap___java_lang_Object])(_r1.o, _r5.o);
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Collections_CheckedMap*) _r4.o)->fields.java_util_Collections_CheckedMap.keyType_;
     XMLVM_SOURCE_POSITION("Collections.java", 3849)
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_util_Collections_CheckedMap*) _r4.o)->fields.java_util_Collections_CheckedMap.valueType_;
     XMLVM_CHECK_NPE(0)
     java_util_Collections_CheckedSortedMap___INIT____java_util_SortedMap_java_lang_Class_java_lang_Class(_r0.o, _r1.o, _r2.o, _r3.o);
@@ -465,11 +473,14 @@ JAVA_OBJECT java_util_Collections_CheckedSortedMap_tailMap___java_lang_Object(JA
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 3856)
     _r0.o = __NEW_java_util_Collections_CheckedSortedMap();
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Collections_CheckedSortedMap*) _r4.o)->fields.java_util_Collections_CheckedSortedMap.sm_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedMap_tailMap___java_lang_Object])(_r1.o, _r5.o);
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Collections_CheckedMap*) _r4.o)->fields.java_util_Collections_CheckedMap.keyType_;
     XMLVM_SOURCE_POSITION("Collections.java", 3857)
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_util_Collections_CheckedMap*) _r4.o)->fields.java_util_Collections_CheckedMap.valueType_;
     XMLVM_CHECK_NPE(0)
     java_util_Collections_CheckedSortedMap___INIT____java_util_SortedMap_java_lang_Class_java_lang_Class(_r0.o, _r1.o, _r2.o, _r3.o);
@@ -486,6 +497,7 @@ JAVA_OBJECT java_util_Collections_CheckedSortedMap_firstKey__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 3864)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CheckedSortedMap*) _r1.o)->fields.java_util_Collections_CheckedSortedMap.sm_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedMap_firstKey__])(_r0.o);
@@ -502,6 +514,7 @@ JAVA_OBJECT java_util_Collections_CheckedSortedMap_lastKey__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 3871)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CheckedSortedMap*) _r1.o)->fields.java_util_Collections_CheckedSortedMap.sm_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedMap_lastKey__])(_r0.o);

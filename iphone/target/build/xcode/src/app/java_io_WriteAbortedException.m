@@ -261,6 +261,7 @@ void java_io_WriteAbortedException___INIT____java_lang_String_java_lang_Exceptio
     XMLVM_CHECK_NPE(0)
     java_io_ObjectStreamException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("WriteAbortedException.java", 52)
+    XMLVM_CHECK_NPE(0)
     ((java_io_WriteAbortedException*) _r0.o)->fields.java_io_WriteAbortedException.detail_ = _r2.o;
     XMLVM_SOURCE_POSITION("WriteAbortedException.java", 53)
     XMLVM_CHECK_NPE(0)
@@ -283,6 +284,7 @@ JAVA_OBJECT java_io_WriteAbortedException_getMessage__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     _r0.o = java_lang_Throwable_getMessage__(_r2.o);
     XMLVM_SOURCE_POSITION("WriteAbortedException.java", 66)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_WriteAbortedException*) _r2.o)->fields.java_io_WriteAbortedException.detail_;
     if (_r1.o == JAVA_NULL) goto label37;
     XMLVM_SOURCE_POSITION("WriteAbortedException.java", 67)
@@ -294,6 +296,7 @@ JAVA_OBJECT java_io_WriteAbortedException_getMessage__(JAVA_OBJECT me)
     _r0.o = xmlvm_create_java_string_from_pool(1173);
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_WriteAbortedException*) _r2.o)->fields.java_io_WriteAbortedException.detail_;
     //java_lang_Exception_toString__[5]
     XMLVM_CHECK_NPE(1)
@@ -318,6 +321,7 @@ JAVA_OBJECT java_io_WriteAbortedException_getCause__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("WriteAbortedException.java", 79)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_WriteAbortedException*) _r1.o)->fields.java_io_WriteAbortedException.detail_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

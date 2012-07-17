@@ -585,6 +585,7 @@ void java_util_Collections_AsLIFOQueue___INIT____java_util_Deque(JAVA_OBJECT me,
     XMLVM_CHECK_NPE(0)
     java_util_AbstractQueue___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Collections.java", 2834)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Collections_AsLIFOQueue*) _r0.o)->fields.java_util_Collections_AsLIFOQueue.q_ = _r1.o;
     XMLVM_SOURCE_POSITION("Collections.java", 2835)
     XMLVM_EXIT_METHOD()
@@ -600,6 +601,7 @@ JAVA_OBJECT java_util_Collections_AsLIFOQueue_iterator__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 2839)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_AsLIFOQueue*) _r1.o)->fields.java_util_Collections_AsLIFOQueue.q_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Deque_iterator__])(_r0.o);
@@ -616,6 +618,7 @@ JAVA_INT java_util_Collections_AsLIFOQueue_size__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 2844)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_AsLIFOQueue*) _r1.o)->fields.java_util_Collections_AsLIFOQueue.q_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Deque_size__])(_r0.o);
@@ -634,6 +637,7 @@ JAVA_BOOLEAN java_util_Collections_AsLIFOQueue_offer___java_lang_Object(JAVA_OBJ
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 2848)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_AsLIFOQueue*) _r1.o)->fields.java_util_Collections_AsLIFOQueue.q_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Deque_offerFirst___java_lang_Object])(_r0.o, _r2.o);
@@ -650,6 +654,7 @@ JAVA_OBJECT java_util_Collections_AsLIFOQueue_peek__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 2852)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_AsLIFOQueue*) _r1.o)->fields.java_util_Collections_AsLIFOQueue.q_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Deque_peekFirst__])(_r0.o);
@@ -666,6 +671,7 @@ JAVA_OBJECT java_util_Collections_AsLIFOQueue_poll__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 2856)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_AsLIFOQueue*) _r1.o)->fields.java_util_Collections_AsLIFOQueue.q_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Deque_pollFirst__])(_r0.o);
@@ -684,6 +690,7 @@ JAVA_BOOLEAN java_util_Collections_AsLIFOQueue_add___java_lang_Object(JAVA_OBJEC
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 2861)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_AsLIFOQueue*) _r1.o)->fields.java_util_Collections_AsLIFOQueue.q_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Deque_push___java_lang_Object])(_r0.o, _r2.o);
@@ -702,6 +709,7 @@ void java_util_Collections_AsLIFOQueue_clear__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 2867)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_AsLIFOQueue*) _r1.o)->fields.java_util_Collections_AsLIFOQueue.q_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Deque_clear__])(_r0.o);
@@ -719,6 +727,7 @@ JAVA_OBJECT java_util_Collections_AsLIFOQueue_element__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 2872)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_AsLIFOQueue*) _r1.o)->fields.java_util_Collections_AsLIFOQueue.q_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Deque_getFirst__])(_r0.o);
@@ -735,6 +744,7 @@ JAVA_OBJECT java_util_Collections_AsLIFOQueue_remove__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 2877)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_AsLIFOQueue*) _r1.o)->fields.java_util_Collections_AsLIFOQueue.q_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Deque_pop__])(_r0.o);
@@ -753,6 +763,7 @@ JAVA_BOOLEAN java_util_Collections_AsLIFOQueue_contains___java_lang_Object(JAVA_
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 2882)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_AsLIFOQueue*) _r1.o)->fields.java_util_Collections_AsLIFOQueue.q_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Deque_contains___java_lang_Object])(_r0.o, _r2.o);
@@ -771,6 +782,7 @@ JAVA_BOOLEAN java_util_Collections_AsLIFOQueue_containsAll___java_util_Collectio
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 2887)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_AsLIFOQueue*) _r1.o)->fields.java_util_Collections_AsLIFOQueue.q_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Deque_containsAll___java_util_Collection])(_r0.o, _r2.o);
@@ -787,6 +799,7 @@ JAVA_BOOLEAN java_util_Collections_AsLIFOQueue_isEmpty__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 2892)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_AsLIFOQueue*) _r1.o)->fields.java_util_Collections_AsLIFOQueue.q_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Deque_isEmpty__])(_r0.o);
@@ -805,6 +818,7 @@ JAVA_BOOLEAN java_util_Collections_AsLIFOQueue_remove___java_lang_Object(JAVA_OB
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 2897)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_AsLIFOQueue*) _r1.o)->fields.java_util_Collections_AsLIFOQueue.q_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Deque_remove___java_lang_Object])(_r0.o, _r2.o);
@@ -823,6 +837,7 @@ JAVA_BOOLEAN java_util_Collections_AsLIFOQueue_removeAll___java_util_Collection(
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 2902)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_AsLIFOQueue*) _r1.o)->fields.java_util_Collections_AsLIFOQueue.q_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Deque_removeAll___java_util_Collection])(_r0.o, _r2.o);
@@ -841,6 +856,7 @@ JAVA_BOOLEAN java_util_Collections_AsLIFOQueue_retainAll___java_util_Collection(
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 2907)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_AsLIFOQueue*) _r1.o)->fields.java_util_Collections_AsLIFOQueue.q_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Deque_retainAll___java_util_Collection])(_r0.o, _r2.o);
@@ -857,6 +873,7 @@ JAVA_OBJECT java_util_Collections_AsLIFOQueue_toArray__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 2912)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_AsLIFOQueue*) _r1.o)->fields.java_util_Collections_AsLIFOQueue.q_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Deque_toArray__])(_r0.o);
@@ -875,6 +892,7 @@ JAVA_OBJECT java_util_Collections_AsLIFOQueue_toArray___java_lang_Object_1ARRAY(
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 2917)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_AsLIFOQueue*) _r1.o)->fields.java_util_Collections_AsLIFOQueue.q_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Deque_toArray___java_lang_Object_1ARRAY])(_r0.o, _r2.o);
@@ -891,6 +909,7 @@ JAVA_OBJECT java_util_Collections_AsLIFOQueue_toString__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 2922)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_AsLIFOQueue*) _r1.o)->fields.java_util_Collections_AsLIFOQueue.q_;
     //java_lang_Object_toString__[5]
     XMLVM_CHECK_NPE(0)

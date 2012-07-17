@@ -245,11 +245,13 @@ void java_util_zip_ZipEntry_LittleEndianReader___INIT___(JAVA_OBJECT me)
     _r0.i = 4;
     if (!__TIB_byte.classInitialized) __INIT_byte();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_byte, _r0.i);
+    XMLVM_CHECK_NPE(1)
     ((java_util_zip_ZipEntry_LittleEndianReader*) _r1.o)->fields.java_util_zip_ZipEntry_LittleEndianReader.b_ = _r0.o;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 454)
     _r0.i = 46;
     if (!__TIB_byte.classInitialized) __INIT_byte();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_byte, _r0.i);
+    XMLVM_CHECK_NPE(1)
     ((java_util_zip_ZipEntry_LittleEndianReader*) _r1.o)->fields.java_util_zip_ZipEntry_LittleEndianReader.hdrBuf_ = _r0.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -270,17 +272,20 @@ JAVA_INT java_util_zip_ZipEntry_LittleEndianReader_readShortLE___java_io_InputSt
     _r2.i = 2;
     _r1.i = 0;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 460)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_zip_ZipEntry_LittleEndianReader*) _r3.o)->fields.java_util_zip_ZipEntry_LittleEndianReader.b_;
     //java_io_InputStream_read___byte_1ARRAY_int_int[12]
     XMLVM_CHECK_NPE(4)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) ((java_io_InputStream*) _r4.o)->tib->vtable[12])(_r4.o, _r0.o, _r1.i, _r2.i);
     if (_r0.i != _r2.i) goto label27;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 461)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_zip_ZipEntry_LittleEndianReader*) _r3.o)->fields.java_util_zip_ZipEntry_LittleEndianReader.b_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.i = ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     _r0.i = _r0.i & 255;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_zip_ZipEntry_LittleEndianReader*) _r3.o)->fields.java_util_zip_ZipEntry_LittleEndianReader.b_;
     _r2.i = 1;
     XMLVM_CHECK_NPE(1)
@@ -318,18 +323,21 @@ JAVA_LONG java_util_zip_ZipEntry_LittleEndianReader_readIntLE___java_io_InputStr
     _r2.i = 4;
     _r1.i = 0;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 471)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_zip_ZipEntry_LittleEndianReader*) _r4.o)->fields.java_util_zip_ZipEntry_LittleEndianReader.b_;
     //java_io_InputStream_read___byte_1ARRAY_int_int[12]
     XMLVM_CHECK_NPE(5)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) ((java_io_InputStream*) _r5.o)->tib->vtable[12])(_r5.o, _r0.o, _r1.i, _r2.i);
     if (_r0.i != _r2.i) goto label54;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 472)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_zip_ZipEntry_LittleEndianReader*) _r4.o)->fields.java_util_zip_ZipEntry_LittleEndianReader.b_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.i = ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     _r0.i = _r0.i & 255;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 473)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_zip_ZipEntry_LittleEndianReader*) _r4.o)->fields.java_util_zip_ZipEntry_LittleEndianReader.b_;
     _r2.i = 1;
     XMLVM_CHECK_NPE(1)
@@ -339,6 +347,7 @@ JAVA_LONG java_util_zip_ZipEntry_LittleEndianReader_readIntLE___java_io_InputStr
     _r1.i = _r1.i << 8;
     _r0.i = _r0.i | _r1.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 474)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_zip_ZipEntry_LittleEndianReader*) _r4.o)->fields.java_util_zip_ZipEntry_LittleEndianReader.b_;
     _r2.i = 2;
     XMLVM_CHECK_NPE(1)
@@ -348,6 +357,7 @@ JAVA_LONG java_util_zip_ZipEntry_LittleEndianReader_readIntLE___java_io_InputStr
     _r1.i = _r1.i << 16;
     _r0.i = _r0.i | _r1.i;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 475)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_zip_ZipEntry_LittleEndianReader*) _r4.o)->fields.java_util_zip_ZipEntry_LittleEndianReader.b_;
     _r2.i = 3;
     XMLVM_CHECK_NPE(1)

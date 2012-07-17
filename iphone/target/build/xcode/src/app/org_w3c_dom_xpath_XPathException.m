@@ -246,6 +246,7 @@ void org_w3c_dom_xpath_XPathException___INIT____short_java_lang_String(JAVA_OBJE
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimeException___INIT____java_lang_String(_r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("XPathException.java", 23)
+    XMLVM_CHECK_NPE(0)
     ((org_w3c_dom_xpath_XPathException*) _r0.o)->fields.org_w3c_dom_xpath_XPathException.code_ = _r1.i;
     XMLVM_SOURCE_POSITION("XPathException.java", 24)
     XMLVM_EXIT_METHOD()

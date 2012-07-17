@@ -292,8 +292,10 @@ void gnu_xml_xpath_OrExpr___INIT____gnu_xml_xpath_Expr_gnu_xml_xpath_Expr(JAVA_O
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_Expr___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("OrExpr.java", 57)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_OrExpr*) _r0.o)->fields.gnu_xml_xpath_OrExpr.lhs_ = _r1.o;
     XMLVM_SOURCE_POSITION("OrExpr.java", 58)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_OrExpr*) _r0.o)->fields.gnu_xml_xpath_OrExpr.rhs_ = _r2.o;
     XMLVM_SOURCE_POSITION("OrExpr.java", 59)
     XMLVM_EXIT_METHOD()
@@ -315,6 +317,7 @@ JAVA_OBJECT gnu_xml_xpath_OrExpr_evaluate___org_w3c_dom_Node_int_int(JAVA_OBJECT
     _r3.i = n2;
     _r4.i = n3;
     XMLVM_SOURCE_POSITION("OrExpr.java", 63)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_OrExpr*) _r1.o)->fields.gnu_xml_xpath_OrExpr.lhs_;
     //gnu_xml_xpath_Expr_evaluate___org_w3c_dom_Node_int_int[9]
     XMLVM_CHECK_NPE(0)
@@ -330,6 +333,7 @@ JAVA_OBJECT gnu_xml_xpath_OrExpr_evaluate___org_w3c_dom_Node_int_int(JAVA_OBJECT
     return _r0.o;
     label15:;
     XMLVM_SOURCE_POSITION("OrExpr.java", 68)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_OrExpr*) _r1.o)->fields.gnu_xml_xpath_OrExpr.rhs_;
     //gnu_xml_xpath_Expr_evaluate___org_w3c_dom_Node_int_int[9]
     XMLVM_CHECK_NPE(0)
@@ -357,10 +361,12 @@ JAVA_OBJECT gnu_xml_xpath_OrExpr_clone___java_lang_Object(JAVA_OBJECT me, JAVA_O
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("OrExpr.java", 74)
     _r0.o = __NEW_gnu_xml_xpath_OrExpr();
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_xpath_OrExpr*) _r3.o)->fields.gnu_xml_xpath_OrExpr.lhs_;
     //gnu_xml_xpath_Expr_clone___java_lang_Object[6]
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_xpath_Expr*) _r1.o)->tib->vtable[6])(_r1.o, _r4.o);
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_xpath_OrExpr*) _r3.o)->fields.gnu_xml_xpath_OrExpr.rhs_;
     //gnu_xml_xpath_Expr_clone___java_lang_Object[6]
     XMLVM_CHECK_NPE(2)
@@ -382,11 +388,13 @@ JAVA_BOOLEAN gnu_xml_xpath_OrExpr_references___javax_xml_namespace_QName(JAVA_OB
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("OrExpr.java", 79)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_OrExpr*) _r1.o)->fields.gnu_xml_xpath_OrExpr.lhs_;
     //gnu_xml_xpath_Expr_references___javax_xml_namespace_QName[12]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_xpath_Expr*) _r0.o)->tib->vtable[12])(_r0.o, _r2.o);
     if (_r0.i != 0) goto label18;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_OrExpr*) _r1.o)->fields.gnu_xml_xpath_OrExpr.rhs_;
     //gnu_xml_xpath_Expr_references___javax_xml_namespace_QName[12]
     XMLVM_CHECK_NPE(0)
@@ -414,6 +422,7 @@ JAVA_OBJECT gnu_xml_xpath_OrExpr_toString__(JAVA_OBJECT me)
     _r0.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_OrExpr*) _r2.o)->fields.gnu_xml_xpath_OrExpr.lhs_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);
@@ -421,6 +430,7 @@ JAVA_OBJECT gnu_xml_xpath_OrExpr_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(3407);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_OrExpr*) _r2.o)->fields.gnu_xml_xpath_OrExpr.rhs_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);

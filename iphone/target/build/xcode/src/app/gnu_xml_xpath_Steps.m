@@ -400,6 +400,7 @@ void gnu_xml_xpath_Steps___INIT____java_util_LinkedList(JAVA_OBJECT me, JAVA_OBJ
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_Path___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Steps.java", 70)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_Steps*) _r0.o)->fields.gnu_xml_xpath_Steps.path_ = _r1.o;
     XMLVM_SOURCE_POSITION("Steps.java", 71)
     XMLVM_EXIT_METHOD()
@@ -418,6 +419,7 @@ JAVA_BOOLEAN gnu_xml_xpath_Steps_matches___org_w3c_dom_Node(JAVA_OBJECT me, JAVA
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Steps.java", 76)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_xpath_Steps*) _r2.o)->fields.gnu_xml_xpath_Steps.path_;
     //java_util_LinkedList_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -450,6 +452,7 @@ JAVA_BOOLEAN gnu_xml_xpath_Steps_matches___org_w3c_dom_Node_int(JAVA_OBJECT me, 
     _r5.i = 0;
     _r4.i = 1;
     XMLVM_SOURCE_POSITION("Steps.java", 81)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((gnu_xml_xpath_Steps*) _r6.o)->fields.gnu_xml_xpath_Steps.path_;
     //java_util_LinkedList_get___int[21]
     XMLVM_CHECK_NPE(0)
@@ -470,6 +473,7 @@ JAVA_BOOLEAN gnu_xml_xpath_Steps_matches___org_w3c_dom_Node_int(JAVA_OBJECT me, 
     XMLVM_SOURCE_POSITION("Steps.java", 86)
     if (_r8.i <= 0) goto label68;
     XMLVM_SOURCE_POSITION("Steps.java", 88)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((gnu_xml_xpath_Steps*) _r6.o)->fields.gnu_xml_xpath_Steps.path_;
     _r2.i = _r8.i - _r4.i;
     //java_util_LinkedList_get___int[21]
@@ -538,6 +542,7 @@ JAVA_OBJECT gnu_xml_xpath_Steps_possibleContexts___gnu_xml_xpath_Pattern_org_w3c
     XMLVM_CHECK_NPE(0)
     java_util_LinkedHashSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Steps.java", 113)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((gnu_xml_xpath_Selector*) _r5.o)->fields.gnu_xml_xpath_Selector.axis_;
     switch (_r1.i) {
     case 0: goto label23;
@@ -655,6 +660,7 @@ JAVA_OBJECT gnu_xml_xpath_Steps_evaluate___org_w3c_dom_Node_int_int(JAVA_OBJECT 
     _r5.i = n2;
     _r6.i = n3;
     XMLVM_SOURCE_POSITION("Steps.java", 168)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_xpath_Steps*) _r3.o)->fields.gnu_xml_xpath_Steps.path_;
     //java_util_LinkedList_iterator__[12]
     XMLVM_CHECK_NPE(0)
@@ -712,6 +718,7 @@ JAVA_OBJECT gnu_xml_xpath_Steps_evaluate___org_w3c_dom_Node_java_util_Collection
     _r8.o = n1;
     _r9.o = n2;
     XMLVM_SOURCE_POSITION("Steps.java", 188)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((gnu_xml_xpath_Steps*) _r7.o)->fields.gnu_xml_xpath_Steps.path_;
     //java_util_LinkedList_iterator__[12]
     XMLVM_CHECK_NPE(0)
@@ -803,6 +810,7 @@ JAVA_OBJECT gnu_xml_xpath_Steps_clone___java_lang_Object(JAVA_OBJECT me, JAVA_OB
     _r4.o = me;
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("Steps.java", 221)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_Steps*) _r4.o)->fields.gnu_xml_xpath_Steps.path_;
     //java_util_LinkedList_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -824,6 +832,7 @@ JAVA_OBJECT gnu_xml_xpath_Steps_clone___java_lang_Object(JAVA_OBJECT me, JAVA_OB
     return _r0.o;
     label21:;
     XMLVM_SOURCE_POSITION("Steps.java", 225)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_Steps*) _r4.o)->fields.gnu_xml_xpath_Steps.path_;
     //java_util_LinkedList_get___int[21]
     XMLVM_CHECK_NPE(0)
@@ -852,6 +861,7 @@ JAVA_BOOLEAN gnu_xml_xpath_Steps_references___javax_xml_namespace_QName(JAVA_OBJ
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Steps.java", 232)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_xpath_Steps*) _r2.o)->fields.gnu_xml_xpath_Steps.path_;
     //java_util_LinkedList_iterator__[12]
     XMLVM_CHECK_NPE(0)
@@ -894,6 +904,7 @@ JAVA_OBJECT gnu_xml_xpath_Steps_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Steps.java", 245)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_xpath_Steps*) _r3.o)->fields.gnu_xml_xpath_Steps.path_;
     //java_util_LinkedList_iterator__[12]
     XMLVM_CHECK_NPE(1)

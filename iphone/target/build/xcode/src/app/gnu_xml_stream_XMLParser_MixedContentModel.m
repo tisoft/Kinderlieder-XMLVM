@@ -237,6 +237,7 @@ void gnu_xml_stream_XMLParser_MixedContentModel___INIT____gnu_xml_stream_XMLPars
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4908)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_MixedContentModel*) _r1.o)->fields.gnu_xml_stream_XMLParser_MixedContentModel.this_0_ = _r2.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4909)
     _r0.i = 3;
@@ -246,6 +247,7 @@ void gnu_xml_stream_XMLParser_MixedContentModel___INIT____gnu_xml_stream_XMLPars
     _r0.o = __NEW_java_util_HashSet();
     XMLVM_CHECK_NPE(0)
     java_util_HashSet___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_MixedContentModel*) _r1.o)->fields.gnu_xml_stream_XMLParser_MixedContentModel.names_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4911)
     XMLVM_EXIT_METHOD()
@@ -263,6 +265,7 @@ void gnu_xml_stream_XMLParser_MixedContentModel_addName___java_lang_String(JAVA_
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4915)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XMLParser_MixedContentModel*) _r1.o)->fields.gnu_xml_stream_XMLParser_MixedContentModel.names_;
     //java_util_HashSet_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
@@ -283,6 +286,7 @@ JAVA_BOOLEAN gnu_xml_stream_XMLParser_MixedContentModel_containsName___java_lang
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4920)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_XMLParser_MixedContentModel*) _r1.o)->fields.gnu_xml_stream_XMLParser_MixedContentModel.names_;
     //java_util_HashSet_contains___java_lang_Object[10]
     XMLVM_CHECK_NPE(0)

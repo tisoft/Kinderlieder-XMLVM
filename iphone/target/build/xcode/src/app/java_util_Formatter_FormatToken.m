@@ -892,22 +892,28 @@ void java_util_Formatter_FormatToken___INIT___(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 976)
+    XMLVM_CHECK_NPE(2)
     ((java_util_Formatter_FormatToken*) _r2.o)->fields.java_util_Formatter_FormatToken.argIndex_ = _r1.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 978)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((java_util_Formatter_FormatToken*) _r2.o)->fields.java_util_Formatter_FormatToken.flags_ = _r0.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 980)
+    XMLVM_CHECK_NPE(2)
     ((java_util_Formatter_FormatToken*) _r2.o)->fields.java_util_Formatter_FormatToken.width_ = _r1.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 982)
+    XMLVM_CHECK_NPE(2)
     ((java_util_Formatter_FormatToken*) _r2.o)->fields.java_util_Formatter_FormatToken.precision_ = _r1.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 984)
     _r0.o = __NEW_java_lang_StringBuilder();
     _r1.i = 6;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(2)
     ((java_util_Formatter_FormatToken*) _r2.o)->fields.java_util_Formatter_FormatToken.strFlags_ = _r0.o;
     XMLVM_SOURCE_POSITION("Formatter.java", 988)
     _r0.i = 65535;
+    XMLVM_CHECK_NPE(2)
     ((java_util_Formatter_FormatToken*) _r2.o)->fields.java_util_Formatter_FormatToken.conversionType_ = _r0.i;
     XMLVM_EXIT_METHOD()
     return;
@@ -923,6 +929,7 @@ JAVA_BOOLEAN java_util_Formatter_FormatToken_isPrecisionSet__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 991)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_Formatter_FormatToken*) _r2.o)->fields.java_util_Formatter_FormatToken.precision_;
     _r1.i = -1;
     if (_r0.i == _r1.i) goto label7;
@@ -945,6 +952,7 @@ JAVA_BOOLEAN java_util_Formatter_FormatToken_isWidthSet__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 995)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_Formatter_FormatToken*) _r2.o)->fields.java_util_Formatter_FormatToken.width_;
     _r1.i = -1;
     if (_r0.i == _r1.i) goto label7;
@@ -968,6 +976,7 @@ JAVA_BOOLEAN java_util_Formatter_FormatToken_isFlagSet___int(JAVA_OBJECT me, JAV
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("Formatter.java", 999)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_Formatter_FormatToken*) _r1.o)->fields.java_util_Formatter_FormatToken.flags_;
     _r0.i = _r0.i & _r2.i;
     if (_r0.i == 0) goto label7;
@@ -989,6 +998,7 @@ JAVA_INT java_util_Formatter_FormatToken_getArgIndex__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 1003)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_Formatter_FormatToken*) _r1.o)->fields.java_util_Formatter_FormatToken.argIndex_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -1004,6 +1014,7 @@ void java_util_Formatter_FormatToken_setArgIndex___int(JAVA_OBJECT me, JAVA_INT 
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("Formatter.java", 1007)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Formatter_FormatToken*) _r0.o)->fields.java_util_Formatter_FormatToken.argIndex_ = _r1.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 1008)
     XMLVM_EXIT_METHOD()
@@ -1019,6 +1030,7 @@ JAVA_OBJECT java_util_Formatter_FormatToken_getPlainText__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 1011)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Formatter_FormatToken*) _r1.o)->fields.java_util_Formatter_FormatToken.plainText_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1034,6 +1046,7 @@ void java_util_Formatter_FormatToken_setPlainText___java_lang_String(JAVA_OBJECT
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("Formatter.java", 1015)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Formatter_FormatToken*) _r0.o)->fields.java_util_Formatter_FormatToken.plainText_ = _r1.o;
     XMLVM_SOURCE_POSITION("Formatter.java", 1016)
     XMLVM_EXIT_METHOD()
@@ -1049,6 +1062,7 @@ JAVA_INT java_util_Formatter_FormatToken_getWidth__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 1019)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_Formatter_FormatToken*) _r1.o)->fields.java_util_Formatter_FormatToken.width_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -1064,6 +1078,7 @@ void java_util_Formatter_FormatToken_setWidth___int(JAVA_OBJECT me, JAVA_INT n1)
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("Formatter.java", 1023)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Formatter_FormatToken*) _r0.o)->fields.java_util_Formatter_FormatToken.width_ = _r1.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 1024)
     XMLVM_EXIT_METHOD()
@@ -1079,6 +1094,7 @@ JAVA_INT java_util_Formatter_FormatToken_getPrecision__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 1027)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_Formatter_FormatToken*) _r1.o)->fields.java_util_Formatter_FormatToken.precision_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -1094,6 +1110,7 @@ void java_util_Formatter_FormatToken_setPrecision___int(JAVA_OBJECT me, JAVA_INT
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("Formatter.java", 1031)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Formatter_FormatToken*) _r0.o)->fields.java_util_Formatter_FormatToken.precision_ = _r1.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 1032)
     XMLVM_EXIT_METHOD()
@@ -1109,6 +1126,7 @@ JAVA_OBJECT java_util_Formatter_FormatToken_getStrFlags__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 1035)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Formatter_FormatToken*) _r1.o)->fields.java_util_Formatter_FormatToken.strFlags_;
     //java_lang_StringBuilder_toString__[5]
     XMLVM_CHECK_NPE(0)
@@ -1126,6 +1144,7 @@ JAVA_INT java_util_Formatter_FormatToken_getFlags__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 1039)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_Formatter_FormatToken*) _r1.o)->fields.java_util_Formatter_FormatToken.flags_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -1141,6 +1160,7 @@ void java_util_Formatter_FormatToken_setFlags___int(JAVA_OBJECT me, JAVA_INT n1)
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("Formatter.java", 1043)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Formatter_FormatToken*) _r0.o)->fields.java_util_Formatter_FormatToken.flags_ = _r1.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 1044)
     XMLVM_EXIT_METHOD()
@@ -1181,6 +1201,7 @@ JAVA_BOOLEAN java_util_Formatter_FormatToken_setFlag___char(JAVA_OBJECT me, JAVA
     label7:;
     XMLVM_SOURCE_POSITION("Formatter.java", 1055)
     XMLVM_SOURCE_POSITION("Formatter.java", 1084)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_Formatter_FormatToken*) _r3.o)->fields.java_util_Formatter_FormatToken.flags_;
     _r1.i = _r1.i & _r0.i;
     if (_r1.i == 0) goto label38;
@@ -1222,10 +1243,13 @@ JAVA_BOOLEAN java_util_Formatter_FormatToken_setFlag___char(JAVA_OBJECT me, JAVA
     goto label7;
     label38:;
     XMLVM_SOURCE_POSITION("Formatter.java", 1087)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_Formatter_FormatToken*) _r3.o)->fields.java_util_Formatter_FormatToken.flags_;
     _r0.i = _r0.i | _r1.i;
+    XMLVM_CHECK_NPE(3)
     ((java_util_Formatter_FormatToken*) _r3.o)->fields.java_util_Formatter_FormatToken.flags_ = _r0.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 1088)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Formatter_FormatToken*) _r3.o)->fields.java_util_Formatter_FormatToken.strFlags_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -1244,6 +1268,7 @@ JAVA_INT java_util_Formatter_FormatToken_getFormatStringStartIndex__(JAVA_OBJECT
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 1094)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_Formatter_FormatToken*) _r1.o)->fields.java_util_Formatter_FormatToken.formatStringStartIndex_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -1259,6 +1284,7 @@ void java_util_Formatter_FormatToken_setFormatStringStartIndex___int(JAVA_OBJECT
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("Formatter.java", 1098)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Formatter_FormatToken*) _r0.o)->fields.java_util_Formatter_FormatToken.formatStringStartIndex_ = _r1.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 1099)
     XMLVM_EXIT_METHOD()
@@ -1274,6 +1300,7 @@ JAVA_CHAR java_util_Formatter_FormatToken_getConversionType__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 1102)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_Formatter_FormatToken*) _r1.o)->fields.java_util_Formatter_FormatToken.conversionType_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -1289,6 +1316,7 @@ void java_util_Formatter_FormatToken_setConversionType___char(JAVA_OBJECT me, JA
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("Formatter.java", 1106)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Formatter_FormatToken*) _r0.o)->fields.java_util_Formatter_FormatToken.conversionType_ = _r1.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 1107)
     XMLVM_EXIT_METHOD()
@@ -1304,6 +1332,7 @@ JAVA_CHAR java_util_Formatter_FormatToken_getDateSuffix__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 1110)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_Formatter_FormatToken*) _r1.o)->fields.java_util_Formatter_FormatToken.dateSuffix_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -1319,6 +1348,7 @@ void java_util_Formatter_FormatToken_setDateSuffix___char(JAVA_OBJECT me, JAVA_C
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("Formatter.java", 1114)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Formatter_FormatToken*) _r0.o)->fields.java_util_Formatter_FormatToken.dateSuffix_ = _r1.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 1115)
     XMLVM_EXIT_METHOD()
@@ -1335,9 +1365,11 @@ JAVA_BOOLEAN java_util_Formatter_FormatToken_requireArgument__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 1118)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_Formatter_FormatToken*) _r2.o)->fields.java_util_Formatter_FormatToken.conversionType_;
     _r1.i = 37;
     if (_r0.i == _r1.i) goto label14;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_Formatter_FormatToken*) _r2.o)->fields.java_util_Formatter_FormatToken.conversionType_;
     _r1.i = 110;
     if (_r0.i == _r1.i) goto label14;

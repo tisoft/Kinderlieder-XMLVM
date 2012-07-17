@@ -218,6 +218,7 @@ void java_lang_Enum_1___INIT____java_lang_Class(JAVA_OBJECT me, JAVA_OBJECT n1)
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("Enum.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_Enum_1*) _r0.o)->fields.java_lang_Enum_1.val_enumType_ = _r1.o;
     XMLVM_SOURCE_POSITION("Enum.java", 196)
     XMLVM_CHECK_NPE(0)
@@ -237,6 +238,7 @@ JAVA_OBJECT java_lang_Enum_1_run__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Enum.java", 198)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_lang_Enum_1*) _r3.o)->fields.java_lang_Enum_1.val_enumType_;
     // "values"
     _r1.o = xmlvm_create_java_string_from_pool(3098);

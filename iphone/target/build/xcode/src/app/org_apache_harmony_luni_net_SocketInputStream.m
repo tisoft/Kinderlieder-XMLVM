@@ -319,6 +319,7 @@ void org_apache_harmony_luni_net_SocketInputStream___INIT____java_net_SocketImpl
     java_io_InputStream___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("SocketInputStream.java", 45)
     _r1.o = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_net_SocketInputStream*) _r0.o)->fields.org_apache_harmony_luni_net_SocketInputStream.socket_ = _r1.o;
     XMLVM_SOURCE_POSITION("SocketInputStream.java", 46)
     XMLVM_EXIT_METHOD()
@@ -334,6 +335,7 @@ JAVA_INT org_apache_harmony_luni_net_SocketInputStream_available__(JAVA_OBJECT m
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SocketInputStream.java", 50)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_net_SocketInputStream*) _r1.o)->fields.org_apache_harmony_luni_net_SocketInputStream.socket_;
     //org_apache_harmony_luni_net_PlainSocketImpl_available__[7]
     XMLVM_CHECK_NPE(0)
@@ -351,6 +353,7 @@ void org_apache_harmony_luni_net_SocketInputStream_close__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SocketInputStream.java", 55)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_net_SocketInputStream*) _r1.o)->fields.org_apache_harmony_luni_net_SocketInputStream.socket_;
     //org_apache_harmony_luni_net_PlainSocketImpl_close__[9]
     XMLVM_CHECK_NPE(0)
@@ -377,6 +380,7 @@ JAVA_INT org_apache_harmony_luni_net_SocketInputStream_read__(JAVA_OBJECT me)
     if (!__TIB_byte.classInitialized) __INIT_byte();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_byte, _r2.i);
     XMLVM_SOURCE_POSITION("SocketInputStream.java", 61)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((org_apache_harmony_luni_net_SocketInputStream*) _r4.o)->fields.org_apache_harmony_luni_net_SocketInputStream.socket_;
     XMLVM_CHECK_NPE(1)
     _r1.i = org_apache_harmony_luni_net_PlainSocketImpl_read___byte_1ARRAY_int_int(_r1.o, _r0.o, _r3.i, _r2.i);
@@ -480,6 +484,7 @@ JAVA_INT org_apache_harmony_luni_net_SocketInputStream_read___byte_1ARRAY_int_in
     java_lang_ArrayIndexOutOfBoundsException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label54:;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_net_SocketInputStream*) _r2.o)->fields.org_apache_harmony_luni_net_SocketInputStream.socket_;
     XMLVM_CHECK_NPE(0)
     _r0.i = org_apache_harmony_luni_net_PlainSocketImpl_read___byte_1ARRAY_int_int(_r0.o, _r3.o, _r4.i, _r5.i);

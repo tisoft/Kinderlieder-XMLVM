@@ -209,6 +209,7 @@ void java_lang_ThreadGroup_ChildrenGroupsLock___INIT____java_lang_ThreadGroup(JA
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 67)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_ThreadGroup_ChildrenGroupsLock*) _r0.o)->fields.java_lang_ThreadGroup_ChildrenGroupsLock.this_0_ = _r1.o;
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);

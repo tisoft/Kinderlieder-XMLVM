@@ -281,6 +281,7 @@ void org_apache_harmony_luni_net_SocketOutputStream___INIT____java_net_SocketImp
     java_io_OutputStream___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("SocketOutputStream.java", 40)
     _r1.o = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_net_SocketOutputStream*) _r0.o)->fields.org_apache_harmony_luni_net_SocketOutputStream.socket_ = _r1.o;
     XMLVM_SOURCE_POSITION("SocketOutputStream.java", 41)
     XMLVM_EXIT_METHOD()
@@ -296,6 +297,7 @@ void org_apache_harmony_luni_net_SocketOutputStream_close__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SocketOutputStream.java", 45)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_net_SocketOutputStream*) _r1.o)->fields.org_apache_harmony_luni_net_SocketOutputStream.socket_;
     //org_apache_harmony_luni_net_PlainSocketImpl_close__[9]
     XMLVM_CHECK_NPE(0)
@@ -318,6 +320,7 @@ void org_apache_harmony_luni_net_SocketOutputStream_write___byte_1ARRAY(JAVA_OBJ
     _r3.o = me;
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("SocketOutputStream.java", 50)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_apache_harmony_luni_net_SocketOutputStream*) _r3.o)->fields.org_apache_harmony_luni_net_SocketOutputStream.socket_;
     _r1.i = 0;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r4.o));
@@ -356,6 +359,7 @@ void org_apache_harmony_luni_net_SocketOutputStream_write___byte_1ARRAY_int_int(
     _r0.i = _r0.i - _r4.i;
     if (_r5.i > _r0.i) goto label19;
     XMLVM_SOURCE_POSITION("SocketOutputStream.java", 59)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_net_SocketOutputStream*) _r2.o)->fields.org_apache_harmony_luni_net_SocketOutputStream.socket_;
     //org_apache_harmony_luni_net_PlainSocketImpl_write___byte_1ARRAY_int_int[23]
     XMLVM_CHECK_NPE(0)
@@ -408,6 +412,7 @@ void org_apache_harmony_luni_net_SocketOutputStream_write___int(JAVA_OBJECT me, 
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
     ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i] = _r1.i;
     XMLVM_SOURCE_POSITION("SocketOutputStream.java", 73)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((org_apache_harmony_luni_net_SocketOutputStream*) _r4.o)->fields.org_apache_harmony_luni_net_SocketOutputStream.socket_;
     //org_apache_harmony_luni_net_PlainSocketImpl_write___byte_1ARRAY_int_int[23]
     XMLVM_CHECK_NPE(1)

@@ -969,6 +969,7 @@ JAVA_OBJECT java_lang_AbstractStringBuilder_getValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 48)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -984,8 +985,10 @@ JAVA_OBJECT java_lang_AbstractStringBuilder_shareValue__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 55)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.shared_ = _r0.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 56)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1025,10 +1028,13 @@ void java_lang_AbstractStringBuilder_set___char_1ARRAY_int(JAVA_OBJECT me, JAVA_
     XMLVM_THROW_CUSTOM(_r0.o)
     label20:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 70)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.shared_ = _r2.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 71)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 72)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_ = _r5.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 73)
     XMLVM_EXIT_METHOD()
@@ -1053,6 +1059,7 @@ void java_lang_AbstractStringBuilder___INIT___(JAVA_OBJECT me)
     _r0.i = 16;
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r0.i);
+    XMLVM_CHECK_NPE(1)
     ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 77)
     XMLVM_EXIT_METHOD()
@@ -1083,6 +1090,7 @@ void java_lang_AbstractStringBuilder___INIT____int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 83)
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r2.i);
+    XMLVM_CHECK_NPE(1)
     ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 84)
     XMLVM_EXIT_METHOD()
@@ -1109,17 +1117,23 @@ void java_lang_AbstractStringBuilder___INIT____java_lang_String(JAVA_OBJECT me, 
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(4)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[8])(_r4.o);
+    XMLVM_CHECK_NPE(3)
     ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 88)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.shared_ = _r2.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 89)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r0.i = _r0.i + 16;
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r0.i);
+    XMLVM_CHECK_NPE(3)
     ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 90)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_CHECK_NPE(4)
     java_lang_String_getChars___int_int_char_1ARRAY_int(_r4.o, _r2.i, _r0.i, _r1.o, _r2.i);
@@ -1143,9 +1157,11 @@ void java_lang_AbstractStringBuilder_enlargeBuffer___int(JAVA_OBJECT me, JAVA_IN
     _r5.i = n1;
     _r3.i = 0;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 94)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r0.i = _r0.i >> 1;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     _r0.i = _r0.i + _r1.i;
@@ -1157,12 +1173,16 @@ void java_lang_AbstractStringBuilder_enlargeBuffer___int(JAVA_OBJECT me, JAVA_IN
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r0.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 96)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.value_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r3.i, _r0.o, _r3.i, _r2.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 97)
+    XMLVM_CHECK_NPE(4)
     ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 98)
+    XMLVM_CHECK_NPE(4)
     ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.shared_ = _r3.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 99)
     XMLVM_EXIT_METHOD()
@@ -1182,9 +1202,11 @@ void java_lang_AbstractStringBuilder_appendNull__(JAVA_OBJECT me)
     _r4.o = me;
     _r3.i = 108;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 102)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r0.i = _r0.i + 4;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 103)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i <= _r1.i) goto label14;
@@ -1193,35 +1215,47 @@ void java_lang_AbstractStringBuilder_appendNull__(JAVA_OBJECT me)
     java_lang_AbstractStringBuilder_enlargeBuffer___int(_r4.o, _r0.i);
     label14:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 106)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.value_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_ = _r2.i;
     _r2.i = 110;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 107)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.value_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_ = _r2.i;
     _r2.i = 117;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 108)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.value_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_ = _r2.i;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r3.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 109)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.value_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_ = _r2.i;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -1246,10 +1280,12 @@ void java_lang_AbstractStringBuilder_append0___char_1ARRAY(JAVA_OBJECT me, JAVA_
     _r5.o = me;
     _r6.o = n1;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 113)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r6.o));
     _r0.i = _r0.i + _r1.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 114)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i <= _r1.i) goto label12;
@@ -1259,11 +1295,14 @@ void java_lang_AbstractStringBuilder_append0___char_1ARRAY(JAVA_OBJECT me, JAVA_
     label12:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 117)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.value_;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r4.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r6.o));
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r6.o, _r1.i, _r2.o, _r3.i, _r4.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 118)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 119)
     XMLVM_EXIT_METHOD()
@@ -1316,9 +1355,11 @@ void java_lang_AbstractStringBuilder_append0___char_1ARRAY_int_int(JAVA_OBJECT m
     XMLVM_THROW_CUSTOM(_r0.o)
     label35:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 132)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r0.i = _r0.i + _r6.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 133)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i <= _r1.i) goto label46;
@@ -1327,10 +1368,13 @@ void java_lang_AbstractStringBuilder_append0___char_1ARRAY_int_int(JAVA_OBJECT m
     java_lang_AbstractStringBuilder_enlargeBuffer___int(_r3.o, _r0.i);
     label46:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 136)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.value_;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r4.o, _r5.i, _r1.o, _r2.i, _r6.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 137)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 138)
     XMLVM_EXIT_METHOD()
@@ -1350,20 +1394,26 @@ void java_lang_AbstractStringBuilder_append0___char(JAVA_OBJECT me, JAVA_CHAR n1
     _r3.o = me;
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 141)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i != _r1.i) goto label14;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 142)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r0.i = _r0.i + 1;
     XMLVM_CHECK_NPE(3)
     java_lang_AbstractStringBuilder_enlargeBuffer___int(_r3.o, _r0.i);
     label14:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 144)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.value_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_ = _r2.i;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -1402,9 +1452,11 @@ void java_lang_AbstractStringBuilder_append0___java_lang_String(JAVA_OBJECT me, 
     XMLVM_CHECK_NPE(6)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r6.o)->tib->vtable[8])(_r6.o);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 153)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r1.i = _r1.i + _r0.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 154)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     if (_r1.i <= _r2.i) goto label21;
@@ -1414,11 +1466,14 @@ void java_lang_AbstractStringBuilder_append0___java_lang_String(JAVA_OBJECT me, 
     label21:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 157)
     _r2.i = 0;
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.value_;
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.count_;
     XMLVM_CHECK_NPE(6)
     java_lang_String_getChars___int_int_char_1ARRAY_int(_r6.o, _r2.i, _r0.i, _r3.o, _r4.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 158)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.count_ = _r1.i;
     goto label5;
     //XMLVM_END_WRAPPER
@@ -1482,6 +1537,7 @@ JAVA_INT java_lang_AbstractStringBuilder_capacity__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 180)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     XMLVM_EXIT_METHOD()
@@ -1500,6 +1556,7 @@ JAVA_CHAR java_lang_AbstractStringBuilder_charAt___int(JAVA_OBJECT me, JAVA_INT 
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 194)
     if (_r2.i < 0) goto label6;
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r2.i < _r0.i) goto label12;
     label6:;
@@ -1510,6 +1567,7 @@ JAVA_CHAR java_lang_AbstractStringBuilder_charAt___int(JAVA_OBJECT me, JAVA_INT 
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 197)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -1538,9 +1596,11 @@ void java_lang_AbstractStringBuilder_delete0___int_int(JAVA_OBJECT me, JAVA_INT 
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 201)
     if (_r6.i < 0) goto label58;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 202)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r7.i <= _r0.i) goto label64;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 203)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.count_;
     label9:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 205)
@@ -1553,39 +1613,50 @@ void java_lang_AbstractStringBuilder_delete0___int_int(JAVA_OBJECT me, JAVA_INT 
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 208)
     if (_r0.i <= _r6.i) goto label58;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 209)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r1.i = _r1.i - _r0.i;
     if (_r1.i < 0) goto label30;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 210)
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 211)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.shared_;
     if (_r2.i != 0) goto label38;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 212)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.value_;
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.value_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r2.o, _r0.i, _r3.o, _r6.i, _r1.i);
     label30:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 221)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r0.i = _r0.i - _r6.i;
     _r0.i = _r1.i - _r0.i;
+    XMLVM_CHECK_NPE(5)
     ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.count_ = _r0.i;
     goto label11;
     label38:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 214)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     if (!__TIB_char.classInitialized) __INIT_char();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_char, _r2.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 215)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.value_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r3.o, _r4.i, _r2.o, _r4.i, _r6.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 216)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.value_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r3.o, _r0.i, _r2.o, _r6.i, _r1.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 217)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.value_ = _r2.o;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 218)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.shared_ = _r4.i;
     goto label30;
     label58:;
@@ -1618,6 +1689,7 @@ void java_lang_AbstractStringBuilder_deleteCharAt0___int(JAVA_OBJECT me, JAVA_IN
     _r4.i = 0;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 229)
     if (_r7.i < 0) goto label8;
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r6.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r7.i < _r0.i) goto label14;
     label8:;
@@ -1628,43 +1700,54 @@ void java_lang_AbstractStringBuilder_deleteCharAt0___int(JAVA_OBJECT me, JAVA_IN
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 232)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r6.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r0.i = _r0.i - _r7.i;
     _r0.i = _r0.i - _r5.i;
     if (_r0.i <= 0) goto label33;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 233)
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 234)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_lang_AbstractStringBuilder*) _r6.o)->fields.java_lang_AbstractStringBuilder.shared_;
     if (_r1.i != 0) goto label39;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 235)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r6.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r2.i = _r7.i + 1;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_lang_AbstractStringBuilder*) _r6.o)->fields.java_lang_AbstractStringBuilder.value_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r2.i, _r3.o, _r7.i, _r0.i);
     label33:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 246)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r6.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r0.i = _r0.i - _r5.i;
+    XMLVM_CHECK_NPE(6)
     ((java_lang_AbstractStringBuilder*) _r6.o)->fields.java_lang_AbstractStringBuilder.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 247)
     XMLVM_EXIT_METHOD()
     return;
     label39:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 237)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r6.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (!__TIB_char.classInitialized) __INIT_char();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_char, _r1.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 238)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_lang_AbstractStringBuilder*) _r6.o)->fields.java_lang_AbstractStringBuilder.value_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r2.o, _r4.i, _r1.o, _r4.i, _r7.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 240)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_lang_AbstractStringBuilder*) _r6.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r3.i = _r7.i + 1;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r2.o, _r3.i, _r1.o, _r7.i, _r0.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 242)
+    XMLVM_CHECK_NPE(6)
     ((java_lang_AbstractStringBuilder*) _r6.o)->fields.java_lang_AbstractStringBuilder.value_ = _r1.o;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 243)
+    XMLVM_CHECK_NPE(6)
     ((java_lang_AbstractStringBuilder*) _r6.o)->fields.java_lang_AbstractStringBuilder.shared_ = _r4.i;
     goto label33;
     //XMLVM_END_WRAPPER
@@ -1680,10 +1763,12 @@ void java_lang_AbstractStringBuilder_ensureCapacity___int(JAVA_OBJECT me, JAVA_I
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 262)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     if (_r2.i <= _r0.i) goto label17;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 263)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r0.i = _r0.i << 1;
@@ -1720,8 +1805,10 @@ void java_lang_AbstractStringBuilder_getChars___int_int_char_1ARRAY_int(JAVA_OBJ
     _r5.o = n3;
     _r6.i = n4;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 288)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r2.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r3.i > _r0.i) goto label10;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r2.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r4.i > _r0.i) goto label10;
     if (_r3.i <= _r4.i) goto label16;
@@ -1733,6 +1820,7 @@ void java_lang_AbstractStringBuilder_getChars___int_int_char_1ARRAY_int(JAVA_OBJ
     XMLVM_THROW_CUSTOM(_r0.o)
     label16:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 291)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r2.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r1.i = _r4.i - _r3.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r3.i, _r5.o, _r6.i, _r1.i);
@@ -1757,6 +1845,7 @@ void java_lang_AbstractStringBuilder_insert0___int_char_1ARRAY(JAVA_OBJECT me, J
     _r5.o = n2;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 295)
     if (_r4.i < 0) goto label6;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r4.i <= _r0.i) goto label12;
     label6:;
@@ -1775,13 +1864,16 @@ void java_lang_AbstractStringBuilder_insert0___int_char_1ARRAY(JAVA_OBJECT me, J
     java_lang_AbstractStringBuilder_move___int_int(_r3.o, _r0.i, _r4.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 300)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r5.o));
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r5.o, _r0.i, _r1.o, _r4.i, _r2.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 301)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r5.o));
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(3)
     ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_ = _r0.i;
     label32:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 303)
@@ -1809,6 +1901,7 @@ void java_lang_AbstractStringBuilder_insert0___int_char_1ARRAY_int_int(JAVA_OBJE
     _r7.i = n4;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 306)
     if (_r4.i < 0) goto label72;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r4.i > _r0.i) goto label72;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 308)
@@ -1823,11 +1916,14 @@ void java_lang_AbstractStringBuilder_insert0___int_char_1ARRAY_int_int(JAVA_OBJE
     XMLVM_CHECK_NPE(3)
     java_lang_AbstractStringBuilder_move___int_int(_r3.o, _r7.i, _r4.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 311)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.value_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r5.o, _r6.i, _r0.o, _r4.i, _r7.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 312)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r0.i = _r0.i + _r7.i;
+    XMLVM_CHECK_NPE(3)
     ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_ = _r0.i;
     label29:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 314)
@@ -1886,6 +1982,7 @@ void java_lang_AbstractStringBuilder_insert0___int_char(JAVA_OBJECT me, JAVA_INT
     _r3.i = n2;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 324)
     if (_r2.i < 0) goto label6;
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r2.i <= _r0.i) goto label12;
     label6:;
@@ -1900,13 +1997,16 @@ void java_lang_AbstractStringBuilder_insert0___int_char(JAVA_OBJECT me, JAVA_INT
     XMLVM_CHECK_NPE(1)
     java_lang_AbstractStringBuilder_move___int_int(_r1.o, _r0.i, _r2.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 329)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
     ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i] = _r3.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 330)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(1)
     ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 331)
     XMLVM_EXIT_METHOD()
@@ -1930,6 +2030,7 @@ void java_lang_AbstractStringBuilder_insert0___int_java_lang_String(JAVA_OBJECT 
     _r6.o = n2;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 334)
     if (_r5.i < 0) goto label31;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r5.i > _r0.i) goto label31;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 335)
@@ -1949,12 +2050,15 @@ void java_lang_AbstractStringBuilder_insert0___int_java_lang_String(JAVA_OBJECT 
     java_lang_AbstractStringBuilder_move___int_int(_r4.o, _r1.i, _r5.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 341)
     _r2.i = 0;
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_CHECK_NPE(0)
     java_lang_String_getChars___int_int_char_1ARRAY_int(_r0.o, _r2.i, _r1.i, _r3.o, _r5.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 342)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(4)
     ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_ = _r0.i;
     label30:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 347)
@@ -1996,6 +2100,7 @@ void java_lang_AbstractStringBuilder_insert0___int_java_lang_CharSequence_int_in
     label4:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 353)
     if (_r3.i < 0) goto label22;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_lang_AbstractStringBuilder*) _r2.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r3.i > _r1.i) goto label22;
     if (_r5.i < 0) goto label22;
@@ -2036,6 +2141,7 @@ JAVA_INT java_lang_AbstractStringBuilder_length__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 366)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.count_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -2059,18 +2165,24 @@ void java_lang_AbstractStringBuilder_move___int_int(JAVA_OBJECT me, JAVA_INT n1,
     _r7.i = n2;
     _r4.i = 0;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 371)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r0.i = _r0.i - _r1.i;
     if (_r0.i < _r6.i) goto label51;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 372)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.shared_;
     if (_r0.i != 0) goto label26;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 373)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.value_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r2.i = _r7.i + _r6.i;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.count_;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 374)
     _r3.i = _r3.i - _r7.i;
@@ -2081,6 +2193,7 @@ void java_lang_AbstractStringBuilder_move___int_int(JAVA_OBJECT me, JAVA_INT n1,
     return;
     label26:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 377)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     label29:;
@@ -2088,23 +2201,30 @@ void java_lang_AbstractStringBuilder_move___int_int(JAVA_OBJECT me, JAVA_INT n1,
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r0.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 384)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.value_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r4.i, _r0.o, _r4.i, _r7.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 386)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r2.i = _r7.i + _r6.i;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r3.i = _r3.i - _r7.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r7.i, _r0.o, _r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 387)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 388)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.shared_ = _r4.i;
     goto label25;
     label51:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 379)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r0.i = _r0.i + _r6.i;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r5.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     _r1.i = _r1.i << 1;
@@ -2140,9 +2260,11 @@ void java_lang_AbstractStringBuilder_replace0___int_int_java_lang_String(JAVA_OB
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 392)
     if (_r9.i < 0) goto label110;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 393)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r8.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r10.i <= _r0.i) goto label116;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 394)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r8.o)->fields.java_lang_AbstractStringBuilder.count_;
     label9:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 396)
@@ -2157,24 +2279,31 @@ void java_lang_AbstractStringBuilder_replace0___int_int_java_lang_String(JAVA_OB
     if (_r2.i <= 0) goto label72;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 399)
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 400)
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_lang_AbstractStringBuilder*) _r8.o)->fields.java_lang_AbstractStringBuilder.shared_;
     if (_r3.i != 0) goto label47;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 402)
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_lang_AbstractStringBuilder*) _r8.o)->fields.java_lang_AbstractStringBuilder.value_;
+    XMLVM_CHECK_NPE(8)
     _r4.o = ((java_lang_AbstractStringBuilder*) _r8.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 403)
     _r5.i = _r9.i + _r1.i;
+    XMLVM_CHECK_NPE(8)
     _r6.i = ((java_lang_AbstractStringBuilder*) _r8.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r6.i = _r6.i - _r0.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r3.o, _r0.i, _r4.o, _r5.i, _r6.i);
     label36:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 420)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r8.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_CHECK_NPE(11)
     java_lang_String_getChars___int_int_char_1ARRAY_int(_r11.o, _r7.i, _r1.i, _r0.o, _r9.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 421)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r8.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r0.i = _r0.i - _r2.i;
+    XMLVM_CHECK_NPE(8)
     ((java_lang_AbstractStringBuilder*) _r8.o)->fields.java_lang_AbstractStringBuilder.count_ = _r0.i;
     label46:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 429)
@@ -2182,23 +2311,29 @@ void java_lang_AbstractStringBuilder_replace0___int_int_java_lang_String(JAVA_OB
     return;
     label47:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 405)
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_lang_AbstractStringBuilder*) _r8.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r3.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r3.o));
     if (!__TIB_char.classInitialized) __INIT_char();
     _r3.o = XMLVMArray_createSingleDimension(__CLASS_char, _r3.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 406)
+    XMLVM_CHECK_NPE(8)
     _r4.o = ((java_lang_AbstractStringBuilder*) _r8.o)->fields.java_lang_AbstractStringBuilder.value_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r4.o, _r7.i, _r3.o, _r7.i, _r9.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 408)
+    XMLVM_CHECK_NPE(8)
     _r4.o = ((java_lang_AbstractStringBuilder*) _r8.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 409)
     _r5.i = _r9.i + _r1.i;
+    XMLVM_CHECK_NPE(8)
     _r6.i = ((java_lang_AbstractStringBuilder*) _r8.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r6.i = _r6.i - _r0.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r4.o, _r0.i, _r3.o, _r5.i, _r6.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 410)
+    XMLVM_CHECK_NPE(8)
     ((java_lang_AbstractStringBuilder*) _r8.o)->fields.java_lang_AbstractStringBuilder.value_ = _r3.o;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 411)
+    XMLVM_CHECK_NPE(8)
     ((java_lang_AbstractStringBuilder*) _r8.o)->fields.java_lang_AbstractStringBuilder.shared_ = _r7.i;
     goto label36;
     label72:;
@@ -2211,16 +2346,20 @@ void java_lang_AbstractStringBuilder_replace0___int_int_java_lang_String(JAVA_OB
     goto label36;
     label79:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 416)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r8.o)->fields.java_lang_AbstractStringBuilder.shared_;
     if (_r0.i == 0) goto label36;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 417)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r8.o)->fields.java_lang_AbstractStringBuilder.value_;
     //char_1ARRAY_clone__[0]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((org_xmlvm_runtime_XMLVMArray*) _r0.o)->tib->vtable[0])(_r0.o);
     _r0.o = _r0.o;
+    XMLVM_CHECK_NPE(8)
     ((java_lang_AbstractStringBuilder*) _r8.o)->fields.java_lang_AbstractStringBuilder.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 418)
+    XMLVM_CHECK_NPE(8)
     ((java_lang_AbstractStringBuilder*) _r8.o)->fields.java_lang_AbstractStringBuilder.shared_ = _r7.i;
     goto label36;
     label96:;
@@ -2271,6 +2410,7 @@ void java_lang_AbstractStringBuilder_reverse0__(JAVA_OBJECT me)
     XMLVMElem _r14;
     _r14.o = me;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 436)
+    XMLVM_CHECK_NPE(14)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r1.i = 2;
     if (_r0.i >= _r1.i) goto label6;
@@ -2280,19 +2420,23 @@ void java_lang_AbstractStringBuilder_reverse0__(JAVA_OBJECT me)
     return;
     label6:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 439)
+    XMLVM_CHECK_NPE(14)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.shared_;
     if (_r0.i != 0) goto label227;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 440)
+    XMLVM_CHECK_NPE(14)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r1.i = 1;
     _r0.i = _r0.i - _r1.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 441)
+    XMLVM_CHECK_NPE(14)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r2.i = 0;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     _r1.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 442)
+    XMLVM_CHECK_NPE(14)
     _r2.o = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
@@ -2302,6 +2446,7 @@ void java_lang_AbstractStringBuilder_reverse0__(JAVA_OBJECT me)
     _r4.i = 1;
     _r5.i = 0;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 444)
+    XMLVM_CHECK_NPE(14)
     _r6.i = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r6.i = _r6.i / 2;
     _r11 = _r5;
@@ -2316,6 +2461,7 @@ void java_lang_AbstractStringBuilder_reverse0__(JAVA_OBJECT me)
     label39:;
     if (_r0.i < _r6.i) goto label60;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 491)
+    XMLVM_CHECK_NPE(14)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r0.i = _r0.i & 1;
     _r6.i = 1;
@@ -2324,6 +2470,7 @@ void java_lang_AbstractStringBuilder_reverse0__(JAVA_OBJECT me)
     if (_r1.i != 0) goto label5;
     label52:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 492)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.value_;
     if (_r2.i == 0) goto label224;
     _r1 = _r3;
@@ -2334,12 +2481,14 @@ void java_lang_AbstractStringBuilder_reverse0__(JAVA_OBJECT me)
     goto label5;
     label60:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 445)
+    XMLVM_CHECK_NPE(14)
     _r7.o = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r8.i = _r0.i + 1;
     XMLVM_CHECK_NPE(7)
     XMLVM_CHECK_ARRAY_BOUNDS(_r7.o, _r8.i);
     _r7.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r7.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i];
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 446)
+    XMLVM_CHECK_NPE(14)
     _r8.o = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r9.i = 1;
     _r9.i = _r5.i - _r9.i;
@@ -2362,6 +2511,7 @@ void java_lang_AbstractStringBuilder_reverse0__(JAVA_OBJECT me)
     label96:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 450)
     if (_r2.i == 0) goto label103;
+    XMLVM_CHECK_NPE(14)
     _r9.i = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r10.i = 3;
     if (_r9.i < _r10.i) goto label5;
@@ -2387,11 +2537,13 @@ void java_lang_AbstractStringBuilder_reverse0__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 458)
     if (_r2.i == 0) goto label184;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 460)
+    XMLVM_CHECK_NPE(14)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r5.i);
     ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r5.i] = _r7.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 461)
+    XMLVM_CHECK_NPE(14)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r2.i = 1;
     _r2.i = _r5.i - _r2.i;
@@ -2399,23 +2551,27 @@ void java_lang_AbstractStringBuilder_reverse0__(JAVA_OBJECT me)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i] = _r4.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 462)
+    XMLVM_CHECK_NPE(14)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i] = _r8.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 463)
+    XMLVM_CHECK_NPE(14)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r2.i = _r0.i + 1;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i] = _r3.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 464)
+    XMLVM_CHECK_NPE(14)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r2.i = _r0.i + 2;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     _r1.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 465)
+    XMLVM_CHECK_NPE(14)
     _r2.o = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r3.i = 2;
     _r3.i = _r5.i - _r3.i;
@@ -2443,11 +2599,13 @@ void java_lang_AbstractStringBuilder_reverse0__(JAVA_OBJECT me)
     goto label126;
     label184:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 470)
+    XMLVM_CHECK_NPE(14)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r5.i);
     ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r5.i] = _r4.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 471)
+    XMLVM_CHECK_NPE(14)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -2462,11 +2620,13 @@ void java_lang_AbstractStringBuilder_reverse0__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 476)
     if (_r2.i == 0) goto label212;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 478)
+    XMLVM_CHECK_NPE(14)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r5.i);
     ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r5.i] = _r7.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 479)
+    XMLVM_CHECK_NPE(14)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -2479,11 +2639,13 @@ void java_lang_AbstractStringBuilder_reverse0__(JAVA_OBJECT me)
     goto label174;
     label212:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 484)
+    XMLVM_CHECK_NPE(14)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r5.i);
     ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r5.i] = _r4.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 485)
+    XMLVM_CHECK_NPE(14)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -2498,33 +2660,40 @@ void java_lang_AbstractStringBuilder_reverse0__(JAVA_OBJECT me)
     goto label57;
     label227:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 495)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r0.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 496)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(14)
     _r2.i = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r11 = _r2;
     _r2 = _r1;
     _r1 = _r11;
     label238:;
+    XMLVM_CHECK_NPE(14)
     _r3.i = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r2.i < _r3.i) goto label249;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 507)
+    XMLVM_CHECK_NPE(14)
     ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 508)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(14)
     ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.shared_ = _r0.i;
     goto label5;
     label249:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 497)
+    XMLVM_CHECK_NPE(14)
     _r3.o = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r2.i);
     _r3.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 498)
     _r4.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(14)
     _r5.i = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r4.i >= _r5.i) goto label291;
     _r4.i = 55296;
@@ -2532,6 +2701,7 @@ void java_lang_AbstractStringBuilder_reverse0__(JAVA_OBJECT me)
     _r4.i = 56319;
     if (_r3.i > _r4.i) goto label291;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 499)
+    XMLVM_CHECK_NPE(14)
     _r4.o = ((java_lang_AbstractStringBuilder*) _r14.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r5.i = _r2.i + 1;
     XMLVM_CHECK_NPE(4)
@@ -2573,6 +2743,7 @@ void java_lang_AbstractStringBuilder_setCharAt___int_char(JAVA_OBJECT me, JAVA_I
     _r3.i = n2;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 524)
     if (_r2.i < 0) goto label6;
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r2.i < _r0.i) goto label12;
     label6:;
@@ -2583,20 +2754,25 @@ void java_lang_AbstractStringBuilder_setCharAt___int_char(JAVA_OBJECT me, JAVA_I
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 527)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.shared_;
     if (_r0.i == 0) goto label29;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 528)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.value_;
     //char_1ARRAY_clone__[0]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((org_xmlvm_runtime_XMLVMArray*) _r0.o)->tib->vtable[0])(_r0.o);
     _r0.o = _r0.o;
+    XMLVM_CHECK_NPE(1)
     ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 529)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.shared_ = _r0.i;
     label29:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 531)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -2629,6 +2805,7 @@ void java_lang_AbstractStringBuilder_setLength___int(JAVA_OBJECT me, JAVA_INT n1
     XMLVM_THROW_CUSTOM(_r0.o)
     label9:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 549)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     if (_r5.i <= _r0.i) goto label20;
@@ -2637,34 +2814,44 @@ void java_lang_AbstractStringBuilder_setLength___int(JAVA_OBJECT me, JAVA_INT n1
     java_lang_AbstractStringBuilder_enlargeBuffer___int(_r4.o, _r5.i);
     label17:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 563)
+    XMLVM_CHECK_NPE(4)
     ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_ = _r5.i;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 564)
     XMLVM_EXIT_METHOD()
     return;
     label20:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 552)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.shared_;
     if (_r0.i == 0) goto label41;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 553)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r0.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 554)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.value_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r3.i, _r0.o, _r3.i, _r2.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 555)
+    XMLVM_CHECK_NPE(4)
     ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 556)
+    XMLVM_CHECK_NPE(4)
     ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.shared_ = _r3.i;
     goto label17;
     label41:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 558)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r0.i >= _r5.i) goto label17;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 559)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.value_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_;
     java_util_Arrays_fill___char_1ARRAY_int_int_char(_r0.o, _r1.i, _r5.i, _r3.i);
     goto label17;
@@ -2684,9 +2871,11 @@ JAVA_OBJECT java_lang_AbstractStringBuilder_substring___int(JAVA_OBJECT me, JAVA
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 578)
     if (_r4.i < 0) goto label24;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r4.i > _r0.i) goto label24;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 579)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r4.i != _r0.i) goto label13;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 580)
@@ -2698,7 +2887,9 @@ JAVA_OBJECT java_lang_AbstractStringBuilder_substring___int(JAVA_OBJECT me, JAVA
     return _r0.o;
     label13:;
     _r0.o = __NEW_java_lang_String();
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.value_;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r2.i = _r2.i - _r4.i;
     XMLVM_CHECK_NPE(0)
@@ -2729,6 +2920,7 @@ JAVA_OBJECT java_lang_AbstractStringBuilder_substring___int_int(JAVA_OBJECT me, 
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 603)
     if (_r4.i < 0) goto label23;
     if (_r4.i > _r5.i) goto label23;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r5.i > _r0.i) goto label23;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 604)
@@ -2742,6 +2934,7 @@ JAVA_OBJECT java_lang_AbstractStringBuilder_substring___int_int(JAVA_OBJECT me, 
     return _r0.o;
     label13:;
     _r0.o = __NEW_java_lang_String();
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r2.i = _r5.i - _r4.i;
     XMLVM_CHECK_NPE(0)
@@ -2768,6 +2961,7 @@ JAVA_OBJECT java_lang_AbstractStringBuilder_toString__(JAVA_OBJECT me)
     _r4.o = me;
     _r3.i = 0;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 621)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r0.i != 0) goto label8;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 622)
@@ -2779,8 +2973,10 @@ JAVA_OBJECT java_lang_AbstractStringBuilder_toString__(JAVA_OBJECT me)
     return _r0.o;
     label8:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 625)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r0.i = _r0.i - _r1.i;
     _r1.i = 256;
@@ -2789,13 +2985,16 @@ JAVA_OBJECT java_lang_AbstractStringBuilder_toString__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 627)
     _r1.i = 16;
     if (_r0.i < _r1.i) goto label38;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r1.i = _r1.i >> 1;
     if (_r0.i < _r1.i) goto label38;
     label28:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 628)
     _r0.o = __NEW_java_lang_String();
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.value_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_;
     XMLVM_CHECK_NPE(0)
     java_lang_String___INIT____char_1ARRAY_int_int(_r0.o, _r1.o, _r3.i, _r2.i);
@@ -2803,9 +3002,12 @@ JAVA_OBJECT java_lang_AbstractStringBuilder_toString__(JAVA_OBJECT me)
     label38:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 630)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(4)
     ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.shared_ = _r0.i;
     _r0.o = __NEW_java_lang_String();
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_CHECK_NPE(0)
     java_lang_String___INIT____int_int_char_1ARRAY(_r0.o, _r3.i, _r1.i, _r2.o);
@@ -2886,6 +3088,7 @@ JAVA_INT java_lang_AbstractStringBuilder_indexOf___java_lang_String_int(JAVA_OBJ
     if (_r1.i <= 0) goto label72;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 686)
     _r2.i = _r1.i + _r0.i;
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((java_lang_AbstractStringBuilder*) _r9.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r2.i <= _r3.i) goto label19;
     _r0 = _r8;
@@ -2901,6 +3104,7 @@ JAVA_INT java_lang_AbstractStringBuilder_indexOf___java_lang_String_int(JAVA_OBJ
     _r2.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) ((java_lang_String*) _r10.o)->tib->vtable[6])(_r10.o, _r7.i);
     label23:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 694)
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((java_lang_AbstractStringBuilder*) _r9.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r0.i < _r3.i) goto label38;
     _r3 = _r7;
@@ -2908,6 +3112,7 @@ JAVA_INT java_lang_AbstractStringBuilder_indexOf___java_lang_String_int(JAVA_OBJ
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 700)
     if (_r3.i == 0) goto label36;
     _r3.i = _r1.i + _r0.i;
+    XMLVM_CHECK_NPE(9)
     _r4.i = ((java_lang_AbstractStringBuilder*) _r9.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r3.i <= _r4.i) goto label49;
     label36:;
@@ -2916,6 +3121,7 @@ JAVA_INT java_lang_AbstractStringBuilder_indexOf___java_lang_String_int(JAVA_OBJ
     goto label18;
     label38:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 695)
+    XMLVM_CHECK_NPE(9)
     _r3.o = ((java_lang_AbstractStringBuilder*) _r9.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r0.i);
@@ -2936,6 +3142,7 @@ JAVA_INT java_lang_AbstractStringBuilder_indexOf___java_lang_String_int(JAVA_OBJ
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 704)
     _r3.i = _r3.i + 1;
     if (_r3.i >= _r1.i) goto label67;
+    XMLVM_CHECK_NPE(9)
     _r5.o = ((java_lang_AbstractStringBuilder*) _r9.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r4.i = _r4.i + 1;
     XMLVM_CHECK_NPE(5)
@@ -2953,9 +3160,11 @@ JAVA_INT java_lang_AbstractStringBuilder_indexOf___java_lang_String_int(JAVA_OBJ
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 691)
     goto label23;
     label72:;
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((java_lang_AbstractStringBuilder*) _r9.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r0.i < _r1.i) goto label18;
     if (_r0.i == 0) goto label18;
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r9.o)->fields.java_lang_AbstractStringBuilder.count_;
     goto label18;
     label81:;
@@ -2974,6 +3183,7 @@ JAVA_INT java_lang_AbstractStringBuilder_lastIndexOf___java_lang_String(JAVA_OBJ
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 730)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.count_;
     //java_lang_AbstractStringBuilder_lastIndexOf___java_lang_String_int[13]
     XMLVM_CHECK_NPE(1)
@@ -3011,16 +3221,19 @@ JAVA_INT java_lang_AbstractStringBuilder_lastIndexOf___java_lang_String_int(JAVA
     XMLVM_CHECK_NPE(11)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r11.o)->tib->vtable[8])(_r11.o);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 750)
+    XMLVM_CHECK_NPE(10)
     _r1.i = ((java_lang_AbstractStringBuilder*) _r10.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r0.i > _r1.i) goto label78;
     if (_r12.i < 0) goto label78;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 751)
     if (_r0.i <= 0) goto label69;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 752)
+    XMLVM_CHECK_NPE(10)
     _r1.i = ((java_lang_AbstractStringBuilder*) _r10.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r1.i = _r1.i - _r0.i;
     if (_r12.i <= _r1.i) goto label80;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 753)
+    XMLVM_CHECK_NPE(10)
     _r1.i = ((java_lang_AbstractStringBuilder*) _r10.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r1.i = _r1.i - _r0.i;
     label23:;
@@ -3043,6 +3256,7 @@ JAVA_INT java_lang_AbstractStringBuilder_lastIndexOf___java_lang_String_int(JAVA
     return _r0.i;
     label34:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 762)
+    XMLVM_CHECK_NPE(10)
     _r3.o = ((java_lang_AbstractStringBuilder*) _r10.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
@@ -3063,6 +3277,7 @@ JAVA_INT java_lang_AbstractStringBuilder_lastIndexOf___java_lang_String_int(JAVA
     _r3.i = _r3.i + 1;
     if (_r3.i >= _r0.i) goto label63;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 772)
+    XMLVM_CHECK_NPE(10)
     _r5.o = ((java_lang_AbstractStringBuilder*) _r10.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r4.i = _r4.i + 1;
     XMLVM_CHECK_NPE(5)
@@ -3085,11 +3300,13 @@ JAVA_INT java_lang_AbstractStringBuilder_lastIndexOf___java_lang_String_int(JAVA
     goto label27;
     label69:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 781)
+    XMLVM_CHECK_NPE(10)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r10.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r12.i >= _r0.i) goto label75;
     _r0 = _r12;
     goto label33;
     label75:;
+    XMLVM_CHECK_NPE(10)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r10.o)->fields.java_lang_AbstractStringBuilder.count_;
     goto label33;
     label78:;
@@ -3113,21 +3330,28 @@ void java_lang_AbstractStringBuilder_trimToSize__(JAVA_OBJECT me)
     _r4.o = me;
     _r3.i = 0;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 793)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i >= _r1.i) goto label23;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 794)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r0.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 795)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.value_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r3.i, _r0.o, _r3.i, _r2.i);
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 796)
+    XMLVM_CHECK_NPE(4)
     ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 797)
+    XMLVM_CHECK_NPE(4)
     ((java_lang_AbstractStringBuilder*) _r4.o)->fields.java_lang_AbstractStringBuilder.shared_ = _r3.i;
     label23:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 799)
@@ -3148,6 +3372,7 @@ JAVA_INT java_lang_AbstractStringBuilder_codePointAt___int(JAVA_OBJECT me, JAVA_
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 815)
     if (_r3.i < 0) goto label6;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r2.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r3.i < _r0.i) goto label12;
     label6:;
@@ -3158,7 +3383,9 @@ JAVA_INT java_lang_AbstractStringBuilder_codePointAt___int(JAVA_OBJECT me, JAVA_
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 818)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r2.o)->fields.java_lang_AbstractStringBuilder.value_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_lang_AbstractStringBuilder*) _r2.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r0.i = java_lang_Character_codePointAt___char_1ARRAY_int_int(_r0.o, _r3.i, _r1.i);
     XMLVM_EXIT_METHOD()
@@ -3178,6 +3405,7 @@ JAVA_INT java_lang_AbstractStringBuilder_codePointBefore___int(JAVA_OBJECT me, J
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 835)
     _r0.i = 1;
     if (_r2.i < _r0.i) goto label7;
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r2.i <= _r0.i) goto label13;
     label7:;
@@ -3188,6 +3416,7 @@ JAVA_INT java_lang_AbstractStringBuilder_codePointBefore___int(JAVA_OBJECT me, J
     XMLVM_THROW_CUSTOM(_r0.o)
     label13:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 838)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r1.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r0.i = java_lang_Character_codePointBefore___char_1ARRAY_int(_r0.o, _r2.i);
     XMLVM_EXIT_METHOD()
@@ -3209,6 +3438,7 @@ JAVA_INT java_lang_AbstractStringBuilder_codePointCount___int_int(JAVA_OBJECT me
     _r4.i = n2;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 859)
     if (_r3.i < 0) goto label8;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_AbstractStringBuilder*) _r2.o)->fields.java_lang_AbstractStringBuilder.count_;
     if (_r4.i > _r0.i) goto label8;
     if (_r3.i <= _r4.i) goto label14;
@@ -3220,6 +3450,7 @@ JAVA_INT java_lang_AbstractStringBuilder_codePointCount___int_int(JAVA_OBJECT me
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 862)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r2.o)->fields.java_lang_AbstractStringBuilder.value_;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 863)
     _r1.i = _r4.i - _r3.i;
@@ -3243,8 +3474,10 @@ JAVA_INT java_lang_AbstractStringBuilder_offsetByCodePoints___int_int(JAVA_OBJEC
     _r4.i = n1;
     _r5.i = n2;
     XMLVM_SOURCE_POSITION("AbstractStringBuilder.java", 886)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.value_;
     _r1.i = 0;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_lang_AbstractStringBuilder*) _r3.o)->fields.java_lang_AbstractStringBuilder.count_;
     _r0.i = java_lang_Character_offsetByCodePoints___char_1ARRAY_int_int_int_int(_r0.o, _r1.i, _r2.i, _r4.i, _r5.i);
     XMLVM_EXIT_METHOD()

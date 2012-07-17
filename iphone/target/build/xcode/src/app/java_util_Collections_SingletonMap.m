@@ -341,8 +341,10 @@ void java_util_Collections_SingletonMap___INIT____java_lang_Object_java_lang_Obj
     XMLVM_CHECK_NPE(0)
     java_util_AbstractMap___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Collections.java", 325)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Collections_SingletonMap*) _r0.o)->fields.java_util_Collections_SingletonMap.k_ = _r1.o;
     XMLVM_SOURCE_POSITION("Collections.java", 326)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Collections_SingletonMap*) _r0.o)->fields.java_util_Collections_SingletonMap.v_ = _r2.o;
     XMLVM_SOURCE_POSITION("Collections.java", 327)
     XMLVM_EXIT_METHOD()
@@ -360,6 +362,7 @@ JAVA_BOOLEAN java_util_Collections_SingletonMap_containsKey___java_lang_Object(J
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 331)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SingletonMap*) _r1.o)->fields.java_util_Collections_SingletonMap.k_;
     if (_r0.o != JAVA_NULL) goto label10;
     if (_r2.o != JAVA_NULL) goto label8;
@@ -371,6 +374,7 @@ JAVA_BOOLEAN java_util_Collections_SingletonMap_containsKey___java_lang_Object(J
     _r0.i = 0;
     goto label7;
     label10:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SingletonMap*) _r1.o)->fields.java_util_Collections_SingletonMap.k_;
     //java_lang_Object_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -389,6 +393,7 @@ JAVA_BOOLEAN java_util_Collections_SingletonMap_containsValue___java_lang_Object
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 336)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SingletonMap*) _r1.o)->fields.java_util_Collections_SingletonMap.v_;
     if (_r0.o != JAVA_NULL) goto label10;
     if (_r2.o != JAVA_NULL) goto label8;
@@ -400,6 +405,7 @@ JAVA_BOOLEAN java_util_Collections_SingletonMap_containsValue___java_lang_Object
     _r0.i = 0;
     goto label7;
     label10:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SingletonMap*) _r1.o)->fields.java_util_Collections_SingletonMap.v_;
     //java_lang_Object_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -423,6 +429,7 @@ JAVA_OBJECT java_util_Collections_SingletonMap_get___java_lang_Object(JAVA_OBJEC
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Collections_SingletonMap*) _r1.o)->tib->vtable[7])(_r1.o, _r2.o);
     if (_r0.i == 0) goto label9;
     XMLVM_SOURCE_POSITION("Collections.java", 342)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SingletonMap*) _r1.o)->fields.java_util_Collections_SingletonMap.v_;
     label8:;
     XMLVM_SOURCE_POSITION("Collections.java", 344)

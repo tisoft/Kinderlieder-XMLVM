@@ -811,7 +811,9 @@ void java_lang_Object_establishLock___java_lang_Thread(JAVA_OBJECT me, JAVA_OBJE
     XMLVM_CHECK_NPE(0)
     org_xmlvm_runtime_Mutex_lock__(_r0.o);
     XMLVM_SOURCE_POSITION("Object.java", 384)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_Object*) _r1.o)->fields.java_lang_Object.addedMembers_;
+    XMLVM_CHECK_NPE(0)
     ((java_lang_Object_AddedMembers*) _r0.o)->fields.java_lang_Object_AddedMembers.owningThread_ = _r2.o;
     XMLVM_SOURCE_POSITION("Object.java", 386)
     _r0.o = java_lang_Object_GET_staticMutex();
@@ -836,8 +838,10 @@ void java_lang_Object_prepareForUnlock__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     org_xmlvm_runtime_Mutex_lock__(_r0.o);
     XMLVM_SOURCE_POSITION("Object.java", 395)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_lang_Object*) _r2.o)->fields.java_lang_Object.addedMembers_;
     _r1.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(0)
     ((java_lang_Object_AddedMembers*) _r0.o)->fields.java_lang_Object_AddedMembers.owningThread_ = _r1.o;
     XMLVM_SOURCE_POSITION("Object.java", 397)
     _r0.o = java_lang_Object_GET_staticMutex();
@@ -859,7 +863,9 @@ void java_lang_Object_syncLock___java_lang_Thread(JAVA_OBJECT me, JAVA_OBJECT n1
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Object.java", 401)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_Object*) _r1.o)->fields.java_lang_Object.addedMembers_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_lang_Object_AddedMembers*) _r0.o)->fields.java_lang_Object_AddedMembers.instanceMutex_;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_runtime_Mutex_lock__(_r0.o);
@@ -883,7 +889,9 @@ void java_lang_Object_syncUnlock__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     java_lang_Object_prepareForUnlock__(_r1.o);
     XMLVM_SOURCE_POSITION("Object.java", 407)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_Object*) _r1.o)->fields.java_lang_Object.addedMembers_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_lang_Object_AddedMembers*) _r0.o)->fields.java_lang_Object_AddedMembers.instanceMutex_;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_runtime_Mutex_unlock__(_r0.o);
@@ -912,16 +920,20 @@ JAVA_BOOLEAN java_lang_Object_acquireLockRecursive__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     org_xmlvm_runtime_Mutex_lock__(_r2.o);
     XMLVM_SOURCE_POSITION("Object.java", 422)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_lang_Object*) _r4.o)->fields.java_lang_Object.addedMembers_;
     if (_r2.o != JAVA_NULL) goto label21;
     XMLVM_SOURCE_POSITION("Object.java", 423)
     _r2.o = __NEW_java_lang_Object_AddedMembers();
     XMLVM_CHECK_NPE(2)
     java_lang_Object_AddedMembers___INIT___(_r2.o);
+    XMLVM_CHECK_NPE(4)
     ((java_lang_Object*) _r4.o)->fields.java_lang_Object.addedMembers_ = _r2.o;
     label21:;
     XMLVM_SOURCE_POSITION("Object.java", 425)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_lang_Object*) _r4.o)->fields.java_lang_Object.addedMembers_;
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_lang_Object_AddedMembers*) _r2.o)->fields.java_lang_Object_AddedMembers.owningThread_;
     //java_lang_Thread_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
@@ -941,9 +953,12 @@ JAVA_BOOLEAN java_lang_Object_acquireLockRecursive__(JAVA_OBJECT me)
     java_lang_Object_syncLock___java_lang_Thread(_r4.o, _r1.o);
     label43:;
     XMLVM_SOURCE_POSITION("Object.java", 432)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_lang_Object*) _r4.o)->fields.java_lang_Object.addedMembers_;
+    XMLVM_CHECK_NPE(2)
     _r3.i = ((java_lang_Object_AddedMembers*) _r2.o)->fields.java_lang_Object_AddedMembers.recursiveLocks_;
     _r3.i = _r3.i + 1;
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Object_AddedMembers*) _r2.o)->fields.java_lang_Object_AddedMembers.recursiveLocks_ = _r3.i;
     XMLVM_SOURCE_POSITION("Object.java", 435)
     XMLVM_EXIT_METHOD()
@@ -965,13 +980,18 @@ void java_lang_Object_releaseLockRecursive__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Object.java", 443)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_lang_Object*) _r3.o)->fields.java_lang_Object.addedMembers_;
+    XMLVM_CHECK_NPE(0)
     _r1.i = ((java_lang_Object_AddedMembers*) _r0.o)->fields.java_lang_Object_AddedMembers.recursiveLocks_;
     _r2.i = 1;
     _r1.i = _r1.i - _r2.i;
+    XMLVM_CHECK_NPE(0)
     ((java_lang_Object_AddedMembers*) _r0.o)->fields.java_lang_Object_AddedMembers.recursiveLocks_ = _r1.i;
     XMLVM_SOURCE_POSITION("Object.java", 445)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_lang_Object*) _r3.o)->fields.java_lang_Object.addedMembers_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_lang_Object_AddedMembers*) _r0.o)->fields.java_lang_Object_AddedMembers.recursiveLocks_;
     if (_r0.i != 0) goto label17;
     XMLVM_SOURCE_POSITION("Object.java", 446)
@@ -997,6 +1017,7 @@ JAVA_OBJECT java_lang_Object_enqueueNewCondition__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     org_xmlvm_runtime_Condition___INIT____java_lang_Object(_r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("Object.java", 463)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_lang_Object*) _r2.o)->fields.java_lang_Object.addedMembers_;
     _r1.o = java_lang_Object_AddedMembers_access$000___java_lang_Object_AddedMembers(_r1.o);
     XMLVM_CHECK_NPE(1)
@@ -1027,10 +1048,13 @@ void java_lang_Object_checkSynchronized___java_lang_Thread(JAVA_OBJECT me, JAVA_
     XMLVM_CHECK_NPE(2)
     org_xmlvm_runtime_Mutex_lock__(_r2.o);
     XMLVM_SOURCE_POSITION("Object.java", 480)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_lang_Object*) _r4.o)->fields.java_lang_Object.addedMembers_;
     if (_r2.o == JAVA_NULL) goto label15;
     XMLVM_SOURCE_POSITION("Object.java", 481)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_lang_Object*) _r4.o)->fields.java_lang_Object.addedMembers_;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_lang_Object_AddedMembers*) _r2.o)->fields.java_lang_Object_AddedMembers.owningThread_;
     label15:;
     XMLVM_SOURCE_POSITION("Object.java", 484)
@@ -1075,12 +1099,14 @@ JAVA_BOOLEAN java_lang_Object_removeThreadNotification___org_xmlvm_runtime_Condi
     XMLVM_SOURCE_POSITION("Object.java", 501)
     XMLVM_SOURCE_POSITION("Object.java", 502)
     if (_r0.i != 0) goto label55;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_lang_Object*) _r3.o)->fields.java_lang_Object.addedMembers_;
     _r2.o = java_lang_Object_AddedMembers_access$000___java_lang_Object_AddedMembers(_r2.o);
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_size__])(_r2.o);
     if (_r1.i >= _r2.i) goto label55;
     XMLVM_SOURCE_POSITION("Object.java", 503)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_lang_Object*) _r3.o)->fields.java_lang_Object.addedMembers_;
     _r2.o = java_lang_Object_AddedMembers_access$000___java_lang_Object_AddedMembers(_r2.o);
     XMLVM_CHECK_NPE(2)
@@ -1089,15 +1115,18 @@ JAVA_BOOLEAN java_lang_Object_removeThreadNotification___org_xmlvm_runtime_Condi
     XMLVM_SOURCE_POSITION("Object.java", 504)
     _r0.i = 1;
     XMLVM_SOURCE_POSITION("Object.java", 506)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_lang_Object*) _r3.o)->fields.java_lang_Object.addedMembers_;
     _r2.o = java_lang_Object_AddedMembers_access$000___java_lang_Object_AddedMembers(_r2.o);
     XMLVM_CHECK_NPE(2)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_remove___int])(_r2.o, _r1.i);
     XMLVM_SOURCE_POSITION("Object.java", 507)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_lang_Object*) _r3.o)->fields.java_lang_Object.addedMembers_;
     _r2.i = java_lang_Object_AddedMembers_access$100___java_lang_Object_AddedMembers(_r2.o);
     if (_r1.i > _r2.i) goto label2;
     XMLVM_SOURCE_POSITION("Object.java", 508)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_lang_Object*) _r3.o)->fields.java_lang_Object.addedMembers_;
     java_lang_Object_AddedMembers_access$110___java_lang_Object_AddedMembers(_r2.o);
     goto label2;
@@ -1156,11 +1185,15 @@ JAVA_INT java_lang_Object_preWait___java_lang_Thread_org_xmlvm_runtime_Condition
     XMLVM_CHECK_NPE(5)
     java_lang_Thread_setWaitingCondition___org_xmlvm_runtime_Condition(_r5.o, _r6.o);
     XMLVM_SOURCE_POSITION("Object.java", 531)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_lang_Object*) _r4.o)->fields.java_lang_Object.addedMembers_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_lang_Object_AddedMembers*) _r2.o)->fields.java_lang_Object_AddedMembers.recursiveLocks_;
     XMLVM_SOURCE_POSITION("Object.java", 532)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_lang_Object*) _r4.o)->fields.java_lang_Object.addedMembers_;
     _r3.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Object_AddedMembers*) _r2.o)->fields.java_lang_Object_AddedMembers.recursiveLocks_ = _r3.i;
     XMLVM_SOURCE_POSITION("Object.java", 536)
     _r0.i = java_lang_Thread_interrupted__();
@@ -1214,7 +1247,9 @@ JAVA_BOOLEAN java_lang_Object_postWait___java_lang_Thread_int(JAVA_OBJECT me, JA
     label19:;
     XMLVM_SOURCE_POSITION("Object.java", 573)
     XMLVM_SOURCE_POSITION("Object.java", 577)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_lang_Object*) _r2.o)->fields.java_lang_Object.addedMembers_;
+    XMLVM_CHECK_NPE(1)
     ((java_lang_Object_AddedMembers*) _r1.o)->fields.java_lang_Object_AddedMembers.recursiveLocks_ = _r4.i;
     XMLVM_SOURCE_POSITION("Object.java", 579)
     XMLVM_EXIT_METHOD()
@@ -1259,7 +1294,9 @@ void java_lang_Object_wait2__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r4.o)
     label29:;
     XMLVM_SOURCE_POSITION("Object.java", 599)
+    XMLVM_CHECK_NPE(5)
     _r4.o = ((java_lang_Object*) _r5.o)->fields.java_lang_Object.addedMembers_;
+    XMLVM_CHECK_NPE(4)
     _r4.o = ((java_lang_Object_AddedMembers*) _r4.o)->fields.java_lang_Object_AddedMembers.instanceMutex_;
     XMLVM_CHECK_NPE(2)
     org_xmlvm_runtime_Condition_wait___org_xmlvm_runtime_Mutex(_r2.o, _r4.o);
@@ -1344,7 +1381,9 @@ void java_lang_Object_wait2___long(JAVA_OBJECT me, JAVA_LONG n1)
     XMLVM_THROW_CUSTOM(_r5.o)
     label57:;
     XMLVM_SOURCE_POSITION("Object.java", 631)
+    XMLVM_CHECK_NPE(8)
     _r5.o = ((java_lang_Object*) _r8.o)->fields.java_lang_Object.addedMembers_;
+    XMLVM_CHECK_NPE(5)
     _r5.o = ((java_lang_Object_AddedMembers*) _r5.o)->fields.java_lang_Object_AddedMembers.instanceMutex_;
     XMLVM_CHECK_NPE(2)
     _r3.i = org_xmlvm_runtime_Condition_waitOrTimeout___org_xmlvm_runtime_Mutex_long(_r2.o, _r5.o, _r9.l);
@@ -1370,18 +1409,22 @@ void java_lang_Object_notify2__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(6)
     java_lang_Object_checkSynchronized___java_lang_Thread(_r6.o, _r0.o);
     XMLVM_SOURCE_POSITION("Object.java", 653)
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_lang_Object*) _r6.o)->fields.java_lang_Object.addedMembers_;
     _r3.o = java_lang_Object_AddedMembers_access$000___java_lang_Object_AddedMembers(_r3.o);
     XMLVM_CHECK_NPE(3)
     _r3.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_size__])(_r3.o);
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_lang_Object*) _r6.o)->fields.java_lang_Object.addedMembers_;
     _r4.i = java_lang_Object_AddedMembers_access$100___java_lang_Object_AddedMembers(_r4.o);
     _r4.i = _r4.i + 1;
     if (_r3.i <= _r4.i) goto label66;
     XMLVM_SOURCE_POSITION("Object.java", 655)
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_lang_Object*) _r6.o)->fields.java_lang_Object.addedMembers_;
     _r3.i = java_lang_Object_AddedMembers_access$100___java_lang_Object_AddedMembers(_r3.o);
     _r3.i = _r3.i + 1;
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_lang_Object*) _r6.o)->fields.java_lang_Object.addedMembers_;
     _r4.o = java_lang_Object_AddedMembers_access$000___java_lang_Object_AddedMembers(_r4.o);
     XMLVM_CHECK_NPE(4)
@@ -1390,6 +1433,7 @@ void java_lang_Object_notify2__(JAVA_OBJECT me)
     _r4.i = _r4.i - _r5.i;
     _r1.i = java_lang_Object_getRandInclusive___int_int(_r3.i, _r4.i);
     XMLVM_SOURCE_POSITION("Object.java", 658)
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_lang_Object*) _r6.o)->fields.java_lang_Object.addedMembers_;
     _r3.o = java_lang_Object_AddedMembers_access$000___java_lang_Object_AddedMembers(_r3.o);
     XMLVM_CHECK_NPE(3)
@@ -1423,7 +1467,9 @@ void java_lang_Object_notifyAll2__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(6)
     java_lang_Object_checkSynchronized___java_lang_Thread(_r6.o, _r0.o);
     XMLVM_SOURCE_POSITION("Object.java", 674)
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_lang_Object*) _r6.o)->fields.java_lang_Object.addedMembers_;
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_lang_Object*) _r6.o)->fields.java_lang_Object.addedMembers_;
     _r4.o = java_lang_Object_AddedMembers_access$000___java_lang_Object_AddedMembers(_r4.o);
     XMLVM_CHECK_NPE(4)
@@ -1433,21 +1479,25 @@ void java_lang_Object_notifyAll2__(JAVA_OBJECT me)
     java_lang_Object_AddedMembers_access$102___java_lang_Object_AddedMembers_int(_r3.o, _r4.i);
     label24:;
     XMLVM_SOURCE_POSITION("Object.java", 676)
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_lang_Object*) _r6.o)->fields.java_lang_Object.addedMembers_;
     _r3.i = java_lang_Object_AddedMembers_access$100___java_lang_Object_AddedMembers(_r3.o);
     if (_r3.i < 0) goto label64;
     XMLVM_SOURCE_POSITION("Object.java", 677)
     _r3.i = 0;
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_lang_Object*) _r6.o)->fields.java_lang_Object.addedMembers_;
     _r4.i = java_lang_Object_AddedMembers_access$100___java_lang_Object_AddedMembers(_r4.o);
     _r1.i = java_lang_Object_getRandInclusive___int_int(_r3.i, _r4.i);
     XMLVM_SOURCE_POSITION("Object.java", 680)
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_lang_Object*) _r6.o)->fields.java_lang_Object.addedMembers_;
     _r3.o = java_lang_Object_AddedMembers_access$000___java_lang_Object_AddedMembers(_r3.o);
     XMLVM_CHECK_NPE(3)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_remove___int])(_r3.o, _r1.i);
     _r2.o = _r2.o;
     XMLVM_SOURCE_POSITION("Object.java", 681)
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_lang_Object*) _r6.o)->fields.java_lang_Object.addedMembers_;
     java_lang_Object_AddedMembers_access$110___java_lang_Object_AddedMembers(_r3.o);
     XMLVM_SOURCE_POSITION("Object.java", 684)

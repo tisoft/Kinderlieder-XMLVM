@@ -216,6 +216,7 @@ void java_nio_channels_spi_AbstractInterruptibleChannel_2___INIT____java_nio_cha
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_channels_spi_AbstractInterruptibleChannel_2*) _r0.o)->fields.java_nio_channels_spi_AbstractInterruptibleChannel_2.this_0_ = _r1.o;
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 124)
     XMLVM_CHECK_NPE(0)
@@ -236,10 +237,13 @@ void java_nio_channels_spi_AbstractInterruptibleChannel_2_run__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w258aaab2b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 127)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_channels_spi_AbstractInterruptibleChannel_2*) _r2.o)->fields.java_nio_channels_spi_AbstractInterruptibleChannel_2.this_0_;
     _r1.i = 1;
+    XMLVM_CHECK_NPE(0)
     ((java_nio_channels_spi_AbstractInterruptibleChannel*) _r0.o)->fields.java_nio_channels_spi_AbstractInterruptibleChannel.interrupted_ = _r1.i;
     XMLVM_SOURCE_POSITION("AbstractInterruptibleChannel.java", 128)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_channels_spi_AbstractInterruptibleChannel_2*) _r2.o)->fields.java_nio_channels_spi_AbstractInterruptibleChannel_2.this_0_;
     //java_nio_channels_spi_AbstractInterruptibleChannel_close__[6]
     XMLVM_CHECK_NPE(0)

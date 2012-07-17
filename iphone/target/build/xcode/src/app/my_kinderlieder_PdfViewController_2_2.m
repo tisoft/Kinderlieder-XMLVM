@@ -275,6 +275,7 @@ void my_kinderlieder_PdfViewController_2_2___INIT____my_kinderlieder_PdfViewCont
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 87)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_PdfViewController_2_2*) _r0.o)->fields.my_kinderlieder_PdfViewController_2_2.this_1_ = _r1.o;
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
@@ -295,7 +296,9 @@ void my_kinderlieder_PdfViewController_2_2_audioPlayerDidFinishPlaying___org_xml
     _r2.o = n1;
     _r3.i = n2;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 89)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((my_kinderlieder_PdfViewController_2_2*) _r1.o)->fields.my_kinderlieder_PdfViewController_2_2.this_1_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((my_kinderlieder_PdfViewController_2*) _r0.o)->fields.my_kinderlieder_PdfViewController_2.this_0_;
     my_kinderlieder_PdfViewController_access$400___my_kinderlieder_PdfViewController(_r0.o);
     XMLVM_SOURCE_POSITION("PdfViewController.java", 90)

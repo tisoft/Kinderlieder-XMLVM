@@ -522,9 +522,11 @@ void java_nio_Buffer___INIT____int(JAVA_OBJECT me, JAVA_INT n1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("Buffer.java", 70)
     _r0.i = -1;
+    XMLVM_CHECK_NPE(1)
     ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.mark_ = _r0.i;
     XMLVM_SOURCE_POSITION("Buffer.java", 76)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("Buffer.java", 86)
     if (_r2.i >= 0) goto label17;
@@ -535,7 +537,9 @@ void java_nio_Buffer___INIT____int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label17:;
     XMLVM_SOURCE_POSITION("Buffer.java", 89)
+    XMLVM_CHECK_NPE(1)
     ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.limit_ = _r2.i;
+    XMLVM_CHECK_NPE(1)
     ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.capacity_ = _r2.i;
     XMLVM_SOURCE_POSITION("Buffer.java", 90)
     XMLVM_EXIT_METHOD()
@@ -551,6 +555,7 @@ JAVA_INT java_nio_Buffer_capacity__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Buffer.java", 145)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.capacity_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -566,12 +571,16 @@ JAVA_OBJECT java_nio_Buffer_clear__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Buffer.java", 159)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("Buffer.java", 160)
     _r0.i = -1;
+    XMLVM_CHECK_NPE(1)
     ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.mark_ = _r0.i;
     XMLVM_SOURCE_POSITION("Buffer.java", 161)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.capacity_;
+    XMLVM_CHECK_NPE(1)
     ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.limit_ = _r0.i;
     XMLVM_SOURCE_POSITION("Buffer.java", 162)
     XMLVM_EXIT_METHOD()
@@ -587,13 +596,17 @@ JAVA_OBJECT java_nio_Buffer_flip__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Buffer.java", 176)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.position_;
+    XMLVM_CHECK_NPE(1)
     ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.limit_ = _r0.i;
     XMLVM_SOURCE_POSITION("Buffer.java", 177)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("Buffer.java", 178)
     _r0.i = -1;
+    XMLVM_CHECK_NPE(1)
     ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.mark_ = _r0.i;
     XMLVM_SOURCE_POSITION("Buffer.java", 179)
     XMLVM_EXIT_METHOD()
@@ -610,7 +623,9 @@ JAVA_BOOLEAN java_nio_Buffer_hasRemaining__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Buffer.java", 205)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
     if (_r0.i >= _r1.i) goto label8;
     _r0.i = 1;
@@ -631,6 +646,7 @@ JAVA_INT java_nio_Buffer_limit__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Buffer.java", 231)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.limit_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -650,6 +666,7 @@ JAVA_OBJECT java_nio_Buffer_limit___int(JAVA_OBJECT me, JAVA_INT n1)
     _r1.i = -1;
     XMLVM_SOURCE_POSITION("Buffer.java", 250)
     if (_r3.i < 0) goto label7;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.capacity_;
     if (_r3.i <= _r0.i) goto label13;
     label7:;
@@ -660,19 +677,25 @@ JAVA_OBJECT java_nio_Buffer_limit___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label13:;
     XMLVM_SOURCE_POSITION("Buffer.java", 254)
+    XMLVM_CHECK_NPE(2)
     ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_ = _r3.i;
     XMLVM_SOURCE_POSITION("Buffer.java", 255)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_;
     if (_r0.i <= _r3.i) goto label21;
     XMLVM_SOURCE_POSITION("Buffer.java", 256)
+    XMLVM_CHECK_NPE(2)
     ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_ = _r3.i;
     label21:;
     XMLVM_SOURCE_POSITION("Buffer.java", 258)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.mark_;
     if (_r0.i == _r1.i) goto label31;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.mark_;
     if (_r0.i <= _r3.i) goto label31;
     XMLVM_SOURCE_POSITION("Buffer.java", 259)
+    XMLVM_CHECK_NPE(2)
     ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.mark_ = _r1.i;
     label31:;
     XMLVM_SOURCE_POSITION("Buffer.java", 261)
@@ -689,7 +712,9 @@ JAVA_OBJECT java_nio_Buffer_mark__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Buffer.java", 271)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.position_;
+    XMLVM_CHECK_NPE(1)
     ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.mark_ = _r0.i;
     XMLVM_SOURCE_POSITION("Buffer.java", 272)
     XMLVM_EXIT_METHOD()
@@ -705,6 +730,7 @@ JAVA_INT java_nio_Buffer_position__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Buffer.java", 281)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.position_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -725,6 +751,7 @@ JAVA_OBJECT java_nio_Buffer_position___int(JAVA_OBJECT me, JAVA_INT n1)
     _r2.i = -1;
     XMLVM_SOURCE_POSITION("Buffer.java", 298)
     if (_r4.i < 0) goto label7;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.limit_;
     if (_r4.i <= _r0.i) goto label13;
     label7:;
@@ -735,14 +762,19 @@ JAVA_OBJECT java_nio_Buffer_position___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label13:;
     XMLVM_SOURCE_POSITION("Buffer.java", 302)
+    XMLVM_CHECK_NPE(3)
     ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.position_ = _r4.i;
     XMLVM_SOURCE_POSITION("Buffer.java", 303)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.mark_;
     if (_r0.i == _r2.i) goto label27;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.mark_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.position_;
     if (_r0.i <= _r1.i) goto label27;
     XMLVM_SOURCE_POSITION("Buffer.java", 304)
+    XMLVM_CHECK_NPE(3)
     ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.mark_ = _r2.i;
     label27:;
     XMLVM_SOURCE_POSITION("Buffer.java", 306)
@@ -760,7 +792,9 @@ JAVA_INT java_nio_Buffer_remaining__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Buffer.java", 316)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_;
     _r0.i = _r0.i - _r1.i;
     XMLVM_EXIT_METHOD()
@@ -777,6 +811,7 @@ JAVA_OBJECT java_nio_Buffer_reset__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Buffer.java", 327)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.mark_;
     _r1.i = -1;
     if (_r0.i != _r1.i) goto label11;
@@ -792,7 +827,9 @@ JAVA_OBJECT java_nio_Buffer_reset__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label11:;
     XMLVM_SOURCE_POSITION("Buffer.java", 330)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.mark_;
+    XMLVM_CHECK_NPE(2)
     ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("Buffer.java", 331)
     XMLVM_EXIT_METHOD()
@@ -809,9 +846,11 @@ JAVA_OBJECT java_nio_Buffer_rewind__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Buffer.java", 343)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("Buffer.java", 344)
     _r0.i = -1;
+    XMLVM_CHECK_NPE(1)
     ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.mark_ = _r0.i;
     XMLVM_SOURCE_POSITION("Buffer.java", 345)
     XMLVM_EXIT_METHOD()

@@ -234,8 +234,11 @@ void java_util_regex_CharClass_3___INIT____java_util_regex_CharClass_boolean_jav
     _r2.i = n2;
     _r3.o = n3;
     XMLVM_SOURCE_POSITION("CharClass.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_CharClass_3*) _r0.o)->fields.java_util_regex_CharClass_3.this_0_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_CharClass_3*) _r0.o)->fields.java_util_regex_CharClass_3.val_curAlt_ = _r2.i;
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_CharClass_3*) _r0.o)->fields.java_util_regex_CharClass_3.val_cc_ = _r3.o;
     XMLVM_SOURCE_POSITION("CharClass.java", 194)
     XMLVM_CHECK_NPE(0)
@@ -256,18 +259,25 @@ JAVA_BOOLEAN java_util_regex_CharClass_3_contains___int(JAVA_OBJECT me, JAVA_INT
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("CharClass.java", 196)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_CharClass_3*) _r2.o)->fields.java_util_regex_CharClass_3.val_curAlt_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_regex_CharClass_3*) _r2.o)->fields.java_util_regex_CharClass_3.this_0_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_regex_CharClass*) _r1.o)->fields.java_util_regex_CharClass.bits_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_util_BitSet_get___int(_r1.o, _r3.i);
     _r0.i = _r0.i ^ _r1.i;
     if (_r0.i != 0) goto label31;
     XMLVM_SOURCE_POSITION("CharClass.java", 197)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_CharClass_3*) _r2.o)->fields.java_util_regex_CharClass_3.val_curAlt_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_regex_CharClass_3*) _r2.o)->fields.java_util_regex_CharClass_3.this_0_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_regex_CharClass*) _r1.o)->fields.java_util_regex_CharClass.inverted_;
     _r0.i = _r0.i ^ _r1.i;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_regex_CharClass_3*) _r2.o)->fields.java_util_regex_CharClass_3.val_cc_;
     //java_util_regex_AbstractCharClass_contains___int[7]
     XMLVM_CHECK_NPE(1)

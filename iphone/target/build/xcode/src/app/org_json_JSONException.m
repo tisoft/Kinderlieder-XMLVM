@@ -255,6 +255,7 @@ void org_json_JSONException___INIT____java_lang_Throwable(JAVA_OBJECT me, JAVA_O
     XMLVM_CHECK_NPE(1)
     java_lang_Exception___INIT____java_lang_String(_r1.o, _r0.o);
     XMLVM_SOURCE_POSITION("JSONException.java", 21)
+    XMLVM_CHECK_NPE(1)
     ((org_json_JSONException*) _r1.o)->fields.org_json_JSONException.cause_ = _r2.o;
     XMLVM_SOURCE_POSITION("JSONException.java", 22)
     XMLVM_EXIT_METHOD()
@@ -270,6 +271,7 @@ JAVA_OBJECT org_json_JSONException_getCause__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("JSONException.java", 25)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_json_JSONException*) _r1.o)->fields.org_json_JSONException.cause_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

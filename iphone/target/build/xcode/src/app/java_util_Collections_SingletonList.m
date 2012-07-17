@@ -327,6 +327,7 @@ void java_util_Collections_SingletonList___INIT____java_lang_Object(JAVA_OBJECT 
     XMLVM_CHECK_NPE(0)
     java_util_AbstractList___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Collections.java", 294)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Collections_SingletonList*) _r0.o)->fields.java_util_Collections_SingletonList.element_ = _r1.o;
     XMLVM_SOURCE_POSITION("Collections.java", 295)
     XMLVM_EXIT_METHOD()
@@ -344,6 +345,7 @@ JAVA_BOOLEAN java_util_Collections_SingletonList_contains___java_lang_Object(JAV
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 299)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SingletonList*) _r1.o)->fields.java_util_Collections_SingletonList.element_;
     if (_r0.o != JAVA_NULL) goto label10;
     if (_r2.o != JAVA_NULL) goto label8;
@@ -355,6 +357,7 @@ JAVA_BOOLEAN java_util_Collections_SingletonList_contains___java_lang_Object(JAV
     _r0.i = 0;
     goto label7;
     label10:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SingletonList*) _r1.o)->fields.java_util_Collections_SingletonList.element_;
     //java_lang_Object_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -375,6 +378,7 @@ JAVA_OBJECT java_util_Collections_SingletonList_get___int(JAVA_OBJECT me, JAVA_I
     XMLVM_SOURCE_POSITION("Collections.java", 304)
     if (_r2.i != 0) goto label5;
     XMLVM_SOURCE_POSITION("Collections.java", 305)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SingletonList*) _r1.o)->fields.java_util_Collections_SingletonList.element_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

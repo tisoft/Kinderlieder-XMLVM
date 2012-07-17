@@ -947,15 +947,18 @@ JAVA_OBJECT java_util_AbstractMap_keySet__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 460)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_AbstractMap*) _r1.o)->fields.java_util_AbstractMap.keySet_;
     if (_r0.o != JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 461)
     _r0.o = __NEW_java_util_AbstractMap_1();
     XMLVM_CHECK_NPE(0)
     java_util_AbstractMap_1___INIT____java_util_AbstractMap(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_AbstractMap*) _r1.o)->fields.java_util_AbstractMap.keySet_ = _r0.o;
     label11:;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 493)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_AbstractMap*) _r1.o)->fields.java_util_AbstractMap.keySet_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1233,15 +1236,18 @@ JAVA_OBJECT java_util_AbstractMap_values__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 642)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_AbstractMap*) _r1.o)->fields.java_util_AbstractMap.valuesCollection_;
     if (_r0.o != JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 643)
     _r0.o = __NEW_java_util_AbstractMap_2();
     XMLVM_CHECK_NPE(0)
     java_util_AbstractMap_2___INIT____java_util_AbstractMap(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_AbstractMap*) _r1.o)->fields.java_util_AbstractMap.valuesCollection_ = _r0.o;
     label11:;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 675)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_AbstractMap*) _r1.o)->fields.java_util_AbstractMap.valuesCollection_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1261,8 +1267,10 @@ JAVA_OBJECT java_util_AbstractMap_clone__(JAVA_OBJECT me)
     _r1.o = java_lang_Object_clone__(_r1.o);
     _r1.o = _r1.o;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 691)
+    XMLVM_CHECK_NPE(1)
     ((java_util_AbstractMap*) _r1.o)->fields.java_util_AbstractMap.keySet_ = _r0.o;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 692)
+    XMLVM_CHECK_NPE(1)
     ((java_util_AbstractMap*) _r1.o)->fields.java_util_AbstractMap.valuesCollection_ = _r0.o;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 693)
     XMLVM_EXIT_METHOD()

@@ -319,6 +319,7 @@ void gnu_xml_stream_SAXParserFactory___INIT___(JAVA_OBJECT me)
     _r0.o = __NEW_java_util_HashMap();
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_SAXParserFactory*) _r1.o)->fields.gnu_xml_stream_SAXParserFactory.features_ = _r0.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -349,6 +350,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParserFactory_newSAXParser__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(3)
     gnu_xml_stream_SAXParser___INIT____boolean_boolean_boolean(_r3.o, _r0.i, _r1.i, _r2.i);
     XMLVM_SOURCE_POSITION("SAXParserFactory.java", 77)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_stream_SAXParserFactory*) _r4.o)->fields.gnu_xml_stream_SAXParserFactory.features_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_entrySet__])(_r0.o);
@@ -408,6 +410,7 @@ void gnu_xml_stream_SAXParserFactory_setFeature___java_lang_String_boolean(JAVA_
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("SAXParserFactory.java", 92)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_stream_SAXParserFactory*) _r2.o)->fields.gnu_xml_stream_SAXParserFactory.features_;
     if (_r4.i == 0) goto label24;
     _r1.o = java_lang_Boolean_GET_TRUE();
@@ -444,6 +447,7 @@ JAVA_BOOLEAN gnu_xml_stream_SAXParserFactory_getFeature___java_lang_String(JAVA_
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("SAXParserFactory.java", 100)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_SAXParserFactory*) _r1.o)->fields.gnu_xml_stream_SAXParserFactory.features_;
     XMLVM_CHECK_NPE(0)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_get___java_lang_Object])(_r0.o, _r2.o);

@@ -223,7 +223,9 @@ JAVA_BOOLEAN java_util_regex_UnicodeCategoryScope_contains___int(JAVA_OBJECT me,
     _r3.o = me;
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("UnicodeCategoryScope.java", 34)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_regex_AbstractCharClass*) _r3.o)->fields.java_util_regex_AbstractCharClass.alt_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_UnicodeCategory*) _r3.o)->fields.java_util_regex_UnicodeCategory.category_;
     _r2.i = _r4.i & 0xffff;
     _r2.i = java_lang_Character_getType___char(_r2.i);

@@ -263,10 +263,15 @@ void java_net_InetAddress_1___INIT____java_net_InetAddress_boolean_java_net_Inet
     _r4.i = n4;
     _r5.i = n5;
     XMLVM_SOURCE_POSITION("InetAddress.java", 888)
+    XMLVM_CHECK_NPE(0)
     ((java_net_InetAddress_1*) _r0.o)->fields.java_net_InetAddress_1.this_0_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((java_net_InetAddress_1*) _r0.o)->fields.java_net_InetAddress_1.val_isICMP_ = _r2.i;
+    XMLVM_CHECK_NPE(0)
     ((java_net_InetAddress_1*) _r0.o)->fields.java_net_InetAddress_1.val_addr_ = _r3.o;
+    XMLVM_CHECK_NPE(0)
     ((java_net_InetAddress_1*) _r0.o)->fields.java_net_InetAddress_1.val_ttl_ = _r4.i;
+    XMLVM_CHECK_NPE(0)
     ((java_net_InetAddress_1*) _r0.o)->fields.java_net_InetAddress_1.val_timeout_ = _r5.i;
     XMLVM_CHECK_NPE(0)
     java_lang_Thread___INIT___(_r0.o);
@@ -290,18 +295,24 @@ void java_net_InetAddress_1_run__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("InetAddress.java", 891)
     _r0.i = 0;
     XMLVM_SOURCE_POSITION("InetAddress.java", 893)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_net_InetAddress_1*) _r6.o)->fields.java_net_InetAddress_1.val_isICMP_;
     if (_r1.i == 0) goto label47;
     XMLVM_SOURCE_POSITION("InetAddress.java", 894)
     _r1.o = java_net_InetAddress_access$100__();
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_net_InetAddress_1*) _r6.o)->fields.java_net_InetAddress_1.val_addr_;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_net_InetAddress_1*) _r6.o)->fields.java_net_InetAddress_1.this_0_;
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((java_net_InetAddress_1*) _r6.o)->fields.java_net_InetAddress_1.val_ttl_;
+    XMLVM_CHECK_NPE(6)
     _r5.i = ((java_net_InetAddress_1*) _r6.o)->fields.java_net_InetAddress_1.val_timeout_;
     XMLVM_CHECK_NPE(1)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_isReachableByICMP___java_net_InetAddress_java_net_InetAddress_int_int])(_r1.o, _r2.o, _r3.o, _r4.i, _r5.i);
     label21:;
     XMLVM_SOURCE_POSITION("InetAddress.java", 905)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_net_InetAddress_1*) _r6.o)->fields.java_net_InetAddress_1.this_0_;
     _r1.o = java_net_InetAddress_access$300___java_net_InetAddress(_r1.o);
     java_lang_Object_acquireLockRecursive__(_r1.o);
@@ -310,10 +321,12 @@ void java_net_InetAddress_1_run__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w23537aaab6b1c21)
     // Begin try
     XMLVM_SOURCE_POSITION("InetAddress.java", 909)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_net_InetAddress_1*) _r6.o)->fields.java_net_InetAddress_1.this_0_;
     _r3.i = 1;
     java_net_InetAddress_access$402___java_net_InetAddress_boolean(_r2.o, _r3.i);
     XMLVM_SOURCE_POSITION("InetAddress.java", 910)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_net_InetAddress_1*) _r6.o)->fields.java_net_InetAddress_1.this_0_;
     _r2.o = java_net_InetAddress_access$300___java_net_InetAddress(_r2.o);
     XMLVM_CHECK_NPE(2)
@@ -342,9 +355,13 @@ void java_net_InetAddress_1_run__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w23537aaab6b1c27)
     // Begin try
     XMLVM_SOURCE_POSITION("InetAddress.java", 898)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_net_InetAddress_1*) _r6.o)->fields.java_net_InetAddress_1.this_0_;
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_net_InetAddress_1*) _r6.o)->fields.java_net_InetAddress_1.val_addr_;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_net_InetAddress_1*) _r6.o)->fields.java_net_InetAddress_1.this_0_;
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((java_net_InetAddress_1*) _r6.o)->fields.java_net_InetAddress_1.val_timeout_;
     _r0.i = java_net_InetAddress_access$200___java_net_InetAddress_java_net_InetAddress_java_net_InetAddress_int(_r1.o, _r2.o, _r3.o, _r4.i);
     // End try
@@ -358,13 +375,16 @@ void java_net_InetAddress_1_run__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w23537aaab6b1c30)
     // Begin try
     XMLVM_SOURCE_POSITION("InetAddress.java", 912)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_net_InetAddress_1*) _r6.o)->fields.java_net_InetAddress_1.this_0_;
     java_net_InetAddress_access$510___java_net_InetAddress(_r2.o);
     XMLVM_SOURCE_POSITION("InetAddress.java", 913)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_net_InetAddress_1*) _r6.o)->fields.java_net_InetAddress_1.this_0_;
     _r2.i = java_net_InetAddress_access$500___java_net_InetAddress(_r2.o);
     if (_r2.i != 0) { XMLVM_MEMCPY(curThread_w23537aaab6b1c30->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23537aaab6b1c30, sizeof(XMLVM_JMP_BUF)); goto label45; };
     XMLVM_SOURCE_POSITION("InetAddress.java", 916)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_net_InetAddress_1*) _r6.o)->fields.java_net_InetAddress_1.this_0_;
     _r2.o = java_net_InetAddress_access$300___java_net_InetAddress(_r2.o);
     XMLVM_CHECK_NPE(2)

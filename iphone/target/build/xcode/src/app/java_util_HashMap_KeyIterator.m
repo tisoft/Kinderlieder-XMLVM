@@ -230,7 +230,9 @@ JAVA_OBJECT java_util_HashMap_KeyIterator_next__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     java_util_HashMap_AbstractMapIterator_makeNext__(_r1.o);
     XMLVM_SOURCE_POSITION("HashMap.java", 187)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_HashMap_AbstractMapIterator*) _r1.o)->fields.java_util_HashMap_AbstractMapIterator.currentEntry_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_MapEntry*) _r0.o)->fields.java_util_MapEntry.key_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

@@ -1071,36 +1071,43 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____gnu_xml_pipeline_EventConsume
     _r0.o = __NEW_java_util_Stack();
     XMLVM_CHECK_NPE(0)
     java_util_Stack___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_pipeline_ValidationConsumer*) _r2.o)->fields.gnu_xml_pipeline_ValidationConsumer.contentStack_ = _r0.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 220)
     _r0.o = __NEW_java_util_Hashtable();
     XMLVM_CHECK_NPE(0)
     java_util_Hashtable___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_pipeline_ValidationConsumer*) _r2.o)->fields.gnu_xml_pipeline_ValidationConsumer.elements_ = _r0.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 224)
     _r0.o = __NEW_java_util_Hashtable();
     XMLVM_CHECK_NPE(0)
     java_util_Hashtable___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_pipeline_ValidationConsumer*) _r2.o)->fields.gnu_xml_pipeline_ValidationConsumer.ids_ = _r0.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 229)
     _r0.o = __NEW_java_util_Vector();
     XMLVM_CHECK_NPE(0)
     java_util_Vector___INIT____int_int(_r0.o, _r1.i, _r1.i);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_pipeline_ValidationConsumer*) _r2.o)->fields.gnu_xml_pipeline_ValidationConsumer.notations_ = _r0.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 230)
     _r0.o = __NEW_java_util_Vector();
     XMLVM_CHECK_NPE(0)
     java_util_Vector___INIT____int_int(_r0.o, _r1.i, _r1.i);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_pipeline_ValidationConsumer*) _r2.o)->fields.gnu_xml_pipeline_ValidationConsumer.nDeferred_ = _r0.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 231)
     _r0.o = __NEW_java_util_Vector();
     XMLVM_CHECK_NPE(0)
     java_util_Vector___INIT____int_int(_r0.o, _r1.i, _r1.i);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_pipeline_ValidationConsumer*) _r2.o)->fields.gnu_xml_pipeline_ValidationConsumer.unparsed_ = _r0.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 232)
     _r0.o = __NEW_java_util_Vector();
     XMLVM_CHECK_NPE(0)
     java_util_Vector___INIT____int_int(_r0.o, _r1.i, _r1.i);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_pipeline_ValidationConsumer*) _r2.o)->fields.gnu_xml_pipeline_ValidationConsumer.uDeferred_ = _r0.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 267)
     XMLVM_CHECK_NPE(2)
@@ -1186,6 +1193,7 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____java_lang_String_java_lang_St
     XMLVM_CHECK_NPE(8)
     gnu_xml_pipeline_ValidationConsumer___INIT____gnu_xml_pipeline_EventConsumer(_r8.o, _r7.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 322)
+    XMLVM_CHECK_NPE(8)
     ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.disableReset_ = _r6.i;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 323)
     if (_r9.o != JAVA_NULL) goto label164;
@@ -1330,12 +1338,14 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____java_lang_String_java_lang_St
     XMLVM_CHECK_NPE(2)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_parse___org_xml_sax_InputSource])(_r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 384)
+    XMLVM_CHECK_NPE(8)
     ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.disableDeclarations_ = _r6.i;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 385)
     // ":Nobody:in:their_Right.Mind_would:use:this-name:1x:"
     _r1.o = xmlvm_create_java_string_from_pool(868);
     if (_r0.o != _r5.o) goto label143;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 386)
+    XMLVM_CHECK_NPE(8)
     ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.rootName_ = _r7.o;
     label143:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 387)
@@ -1381,38 +1391,47 @@ void gnu_xml_pipeline_ValidationConsumer_resetState__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 391)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_pipeline_ValidationConsumer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer.disableReset_;
     if (_r0.i != 0) goto label42;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 392)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_ValidationConsumer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer.rootName_ = _r0.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 393)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer.contentStack_;
     XMLVM_CHECK_NPE(0)
     java_util_Vector_removeAllElements__(_r0.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 394)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer.elements_;
     //java_util_Hashtable_clear__[13]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) ((java_util_Hashtable*) _r0.o)->tib->vtable[13])(_r0.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 395)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer.ids_;
     //java_util_Hashtable_clear__[13]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) ((java_util_Hashtable*) _r0.o)->tib->vtable[13])(_r0.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 397)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer.notations_;
     XMLVM_CHECK_NPE(0)
     java_util_Vector_removeAllElements__(_r0.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 398)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer.nDeferred_;
     XMLVM_CHECK_NPE(0)
     java_util_Vector_removeAllElements__(_r0.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 399)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer.unparsed_;
     XMLVM_CHECK_NPE(0)
     java_util_Vector_removeAllElements__(_r0.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 400)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer.uDeferred_;
     XMLVM_CHECK_NPE(0)
     java_util_Vector_removeAllElements__(_r0.o);
@@ -1989,6 +2008,7 @@ void gnu_xml_pipeline_ValidationConsumer_startDTD___java_lang_String_java_lang_S
     _r3.o = n2;
     _r4.o = n3;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 564)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_pipeline_ValidationConsumer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer.disableDeclarations_;
     if (_r0.i == 0) goto label5;
     label4:;
@@ -1997,6 +2017,7 @@ void gnu_xml_pipeline_ValidationConsumer_startDTD___java_lang_String_java_lang_S
     return;
     label5:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 567)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_ValidationConsumer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer.rootName_ = _r2.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 568)
     XMLVM_CHECK_NPE(1)
@@ -2022,6 +2043,7 @@ void gnu_xml_pipeline_ValidationConsumer_endDTD__(JAVA_OBJECT me)
     // "' which was never declared"
     _r6.o = xmlvm_create_java_string_from_pool(895);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 580)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((gnu_xml_pipeline_ValidationConsumer*) _r7.o)->fields.gnu_xml_pipeline_ValidationConsumer.disableDeclarations_;
     if (_r0.i == 0) goto label8;
     label7:;
@@ -2030,6 +2052,7 @@ void gnu_xml_pipeline_ValidationConsumer_endDTD__(JAVA_OBJECT me)
     return;
     label8:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 589)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r7.o)->fields.gnu_xml_pipeline_ValidationConsumer.nDeferred_;
     //java_util_Vector_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -2039,10 +2062,12 @@ void gnu_xml_pipeline_ValidationConsumer_endDTD__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 590)
     if (_r2.i < _r1.i) goto label40;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 597)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r7.o)->fields.gnu_xml_pipeline_ValidationConsumer.nDeferred_;
     XMLVM_CHECK_NPE(0)
     java_util_Vector_removeAllElements__(_r0.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 601)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r7.o)->fields.gnu_xml_pipeline_ValidationConsumer.uDeferred_;
     //java_util_Vector_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -2052,6 +2077,7 @@ void gnu_xml_pipeline_ValidationConsumer_endDTD__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 602)
     if (_r2.i < _r1.i) goto label84;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 609)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r7.o)->fields.gnu_xml_pipeline_ValidationConsumer.uDeferred_;
     XMLVM_CHECK_NPE(0)
     java_util_Vector_removeAllElements__(_r0.o);
@@ -2061,11 +2087,13 @@ void gnu_xml_pipeline_ValidationConsumer_endDTD__(JAVA_OBJECT me)
     goto label7;
     label40:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 591)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r7.o)->fields.gnu_xml_pipeline_ValidationConsumer.nDeferred_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_util_Vector_elementAt___int(_r0.o, _r2.i);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 592)
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((gnu_xml_pipeline_ValidationConsumer*) _r7.o)->fields.gnu_xml_pipeline_ValidationConsumer.notations_;
     //java_util_Vector_contains___java_lang_Object[10]
     XMLVM_CHECK_NPE(3)
@@ -2095,11 +2123,13 @@ void gnu_xml_pipeline_ValidationConsumer_endDTD__(JAVA_OBJECT me)
     goto label15;
     label84:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 603)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r7.o)->fields.gnu_xml_pipeline_ValidationConsumer.uDeferred_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_util_Vector_elementAt___int(_r0.o, _r2.i);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 604)
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((gnu_xml_pipeline_ValidationConsumer*) _r7.o)->fields.gnu_xml_pipeline_ValidationConsumer.unparsed_;
     //java_util_Vector_contains___java_lang_Object[10]
     XMLVM_CHECK_NPE(3)
@@ -2156,6 +2186,7 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     _r13.o = n4;
     _r14.o = n5;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 640)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((gnu_xml_pipeline_ValidationConsumer*) _r9.o)->fields.gnu_xml_pipeline_ValidationConsumer.disableDeclarations_;
     if (_r0.i == 0) goto label5;
     label4:;
@@ -2164,6 +2195,7 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     return;
     label5:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 643)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r9.o)->fields.gnu_xml_pipeline_ValidationConsumer.elements_;
     //java_util_Hashtable_get___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
@@ -2198,10 +2230,13 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     _r4.o = xmlvm_create_java_string_from_pool(62);
     label39:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 662)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.type_ = _r3.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 663)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.mode_ = _r4.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 664)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.value_ = _r14.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 667)
     if (_r0.o != JAVA_NULL) goto label57;
@@ -2210,6 +2245,7 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     XMLVM_CHECK_NPE(0)
     gnu_xml_pipeline_ValidationConsumer_ElementInfo___INIT____java_lang_String(_r0.o, _r10.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 669)
+    XMLVM_CHECK_NPE(9)
     _r6.o = ((gnu_xml_pipeline_ValidationConsumer*) _r9.o)->fields.gnu_xml_pipeline_ValidationConsumer.elements_;
     //java_util_Hashtable_put___java_lang_Object_java_lang_Object[10]
     XMLVM_CHECK_NPE(6)
@@ -2253,6 +2289,7 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 692)
     if (_r2.i == 0) goto label112;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 693)
+    XMLVM_CHECK_NPE(0)
     _r6.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r0.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.attributes_;
     //java_util_Hashtable_keys__[9]
     XMLVM_CHECK_NPE(6)
@@ -2280,12 +2317,14 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     gnu_xml_pipeline_ValidationConsumer_isNmtoken___java_lang_String_java_lang_String_java_lang_String(_r9.o, _r14.o, _r2.o, _r11.o);
     label127:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 775)
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r0.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.attributes_;
     //java_util_Hashtable_get___java_lang_Object[7]
     XMLVM_CHECK_NPE(2)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Hashtable*) _r2.o)->tib->vtable[7])(_r2.o, _r11.o);
     if (_r2.o != JAVA_NULL) goto label140;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 776)
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r0.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.attributes_;
     //java_util_Hashtable_put___java_lang_Object_java_lang_Object[10]
     XMLVM_CHECK_NPE(0)
@@ -2422,12 +2461,14 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     XMLVM_CHECK_NPE(6)
     _r7.o = java_util_StringTokenizer_nextToken__(_r6.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 688)
+    XMLVM_CHECK_NPE(9)
     _r8.o = ((gnu_xml_pipeline_ValidationConsumer*) _r9.o)->fields.gnu_xml_pipeline_ValidationConsumer.notations_;
     //java_util_Vector_contains___java_lang_Object[10]
     XMLVM_CHECK_NPE(8)
     _r8.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Vector*) _r8.o)->tib->vtable[10])(_r8.o, _r7.o);
     if (_r8.i != 0) goto label277;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 689)
+    XMLVM_CHECK_NPE(9)
     _r8.o = ((gnu_xml_pipeline_ValidationConsumer*) _r9.o)->fields.gnu_xml_pipeline_ValidationConsumer.nDeferred_;
     XMLVM_CHECK_NPE(8)
     java_util_Vector_addElement___java_lang_Object(_r8.o, _r7.o);
@@ -2438,12 +2479,14 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     _r12.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r6.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Enumeration_nextElement__])(_r6.o);
     _r12.o = _r12.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 700)
+    XMLVM_CHECK_NPE(0)
     _r7.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r0.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.attributes_;
     //java_util_Hashtable_get___java_lang_Object[7]
     XMLVM_CHECK_NPE(7)
     _r13.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Hashtable*) _r7.o)->tib->vtable[7])(_r7.o, _r12.o);
     _r13.o = _r13.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 701)
+    XMLVM_CHECK_NPE(13)
     _r7.o = ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r13.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.type_;
     if (_r3.o == _r7.o) goto label321;
     if (_r5.i != 0) goto label106;
@@ -2561,12 +2604,14 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     // "ENTITY"
     _r2.o = xmlvm_create_java_string_from_pool(872);
     if (_r2.o != _r3.o) goto label127;
+    XMLVM_CHECK_NPE(9)
     _r2.o = ((gnu_xml_pipeline_ValidationConsumer*) _r9.o)->fields.gnu_xml_pipeline_ValidationConsumer.unparsed_;
     //java_util_Vector_contains___java_lang_Object[10]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Vector*) _r2.o)->tib->vtable[10])(_r2.o, _r14.o);
     if (_r2.i != 0) goto label127;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 740)
+    XMLVM_CHECK_NPE(9)
     _r2.o = ((gnu_xml_pipeline_ValidationConsumer*) _r9.o)->fields.gnu_xml_pipeline_ValidationConsumer.uDeferred_;
     XMLVM_CHECK_NPE(2)
     java_util_Vector_addElement___java_lang_Object(_r2.o, _r14.o);
@@ -2620,12 +2665,14 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     // "ENTITIES"
     _r6.o = xmlvm_create_java_string_from_pool(873);
     if (_r6.o != _r3.o) goto label544;
+    XMLVM_CHECK_NPE(9)
     _r6.o = ((gnu_xml_pipeline_ValidationConsumer*) _r9.o)->fields.gnu_xml_pipeline_ValidationConsumer.unparsed_;
     //java_util_Vector_contains___java_lang_Object[10]
     XMLVM_CHECK_NPE(6)
     _r5.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Vector*) _r6.o)->tib->vtable[10])(_r6.o, _r5.o);
     if (_r5.i != 0) goto label544;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 753)
+    XMLVM_CHECK_NPE(9)
     _r5.o = ((gnu_xml_pipeline_ValidationConsumer*) _r9.o)->fields.gnu_xml_pipeline_ValidationConsumer.uDeferred_;
     XMLVM_CHECK_NPE(5)
     java_util_Vector_addElement___java_lang_Object(_r5.o, _r14.o);
@@ -2658,12 +2705,14 @@ void gnu_xml_pipeline_ValidationConsumer_attributeDecl___java_lang_String_java_l
     XMLVM_CHECK_NPE(9)
     gnu_xml_pipeline_ValidationConsumer_isName___java_lang_String_java_lang_String_java_lang_String(_r9.o, _r14.o, _r2.o, _r11.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 765)
+    XMLVM_CHECK_NPE(9)
     _r2.o = ((gnu_xml_pipeline_ValidationConsumer*) _r9.o)->fields.gnu_xml_pipeline_ValidationConsumer.notations_;
     //java_util_Vector_contains___java_lang_Object[10]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Vector*) _r2.o)->tib->vtable[10])(_r2.o, _r14.o);
     if (_r2.i != 0) goto label588;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 766)
+    XMLVM_CHECK_NPE(9)
     _r2.o = ((gnu_xml_pipeline_ValidationConsumer*) _r9.o)->fields.gnu_xml_pipeline_ValidationConsumer.nDeferred_;
     XMLVM_CHECK_NPE(2)
     java_util_Vector_addElement___java_lang_Object(_r2.o, _r14.o);
@@ -2712,6 +2761,7 @@ void gnu_xml_pipeline_ValidationConsumer_elementDecl___java_lang_String_java_lan
     _r4.o = n1;
     _r5.o = n2;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 810)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_pipeline_ValidationConsumer*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer.disableDeclarations_;
     if (_r0.i == 0) goto label5;
     label4:;
@@ -2720,6 +2770,7 @@ void gnu_xml_pipeline_ValidationConsumer_elementDecl___java_lang_String_java_lan
     return;
     label5:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 813)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer.elements_;
     //java_util_Hashtable_get___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
@@ -2732,12 +2783,14 @@ void gnu_xml_pipeline_ValidationConsumer_elementDecl___java_lang_String_java_lan
     XMLVM_CHECK_NPE(0)
     gnu_xml_pipeline_ValidationConsumer_ElementInfo___INIT____java_lang_String(_r0.o, _r4.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 818)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer.elements_;
     //java_util_Hashtable_put___java_lang_Object_java_lang_Object[10]
     XMLVM_CHECK_NPE(1)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Hashtable*) _r1.o)->tib->vtable[10])(_r1.o, _r4.o, _r0.o);
     label25:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 820)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r0.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.model_;
     if (_r1.o == JAVA_NULL) goto label57;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 823)
@@ -2765,6 +2818,7 @@ void gnu_xml_pipeline_ValidationConsumer_elementDecl___java_lang_String_java_lan
     goto label4;
     label57:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 826)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r0.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.model_ = _r5.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 829)
     _r1.i = 1;
@@ -2792,6 +2846,7 @@ void gnu_xml_pipeline_ValidationConsumer_internalEntityDecl___java_lang_String_j
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 842)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_pipeline_ValidationConsumer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer.disableDeclarations_;
     if (_r0.i != 0) goto label7;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 843)
@@ -2818,6 +2873,7 @@ void gnu_xml_pipeline_ValidationConsumer_externalEntityDecl___java_lang_String_j
     _r3.o = n2;
     _r4.o = n3;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 854)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_pipeline_ValidationConsumer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer.disableDeclarations_;
     if (_r0.i != 0) goto label7;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 855)
@@ -2844,6 +2900,7 @@ void gnu_xml_pipeline_ValidationConsumer_notationDecl___java_lang_String_java_la
     _r3.o = n2;
     _r4.o = n3;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 868)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_pipeline_ValidationConsumer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer.disableDeclarations_;
     if (_r0.i == 0) goto label5;
     label4:;
@@ -2852,6 +2909,7 @@ void gnu_xml_pipeline_ValidationConsumer_notationDecl___java_lang_String_java_la
     return;
     label5:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 871)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer.notations_;
     XMLVM_CHECK_NPE(0)
     java_util_Vector_addElement___java_lang_Object(_r0.o, _r2.o);
@@ -2878,6 +2936,7 @@ void gnu_xml_pipeline_ValidationConsumer_unparsedEntityDecl___java_lang_String_j
     _r4.o = n3;
     _r5.o = n4;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 888)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_pipeline_ValidationConsumer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer.disableDeclarations_;
     if (_r0.i == 0) goto label5;
     label4:;
@@ -2886,16 +2945,19 @@ void gnu_xml_pipeline_ValidationConsumer_unparsedEntityDecl___java_lang_String_j
     return;
     label5:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 891)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer.unparsed_;
     XMLVM_CHECK_NPE(0)
     java_util_Vector_addElement___java_lang_Object(_r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 892)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer.notations_;
     //java_util_Vector_contains___java_lang_Object[10]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Vector*) _r0.o)->tib->vtable[10])(_r0.o, _r5.o);
     if (_r0.i != 0) goto label23;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 893)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer.nDeferred_;
     XMLVM_CHECK_NPE(0)
     java_util_Vector_addElement___java_lang_Object(_r0.o, _r5.o);
@@ -3038,18 +3100,21 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     _r11.o = n3;
     _r12.o = n4;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 958)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.contentStack_;
     //java_util_Stack_isEmpty__[11]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) ((java_util_Stack*) _r0.o)->tib->vtable[11])(_r0.o);
     if (_r0.i == 0) goto label146;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 960)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.rootName_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(11)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r11.o)->tib->vtable[1])(_r11.o, _r0.o);
     if (_r0.i != 0) goto label25;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 961)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.rootName_;
     if (_r0.o != JAVA_NULL) goto label109;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 962)
@@ -3059,6 +3124,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     gnu_xml_pipeline_ValidationConsumer_warning___java_lang_String(_r8.o, _r0.o);
     label25:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 996)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.elements_;
     //java_util_Hashtable_get___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
@@ -3066,6 +3132,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 997)
     if (_r0.o == JAVA_NULL) goto label39;
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r0.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.model_;
     if (_r1.o != JAVA_NULL) goto label222;
     label39:;
@@ -3087,6 +3154,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_CHECK_NPE(8)
     gnu_xml_pipeline_ValidationConsumer_error___java_lang_String(_r8.o, _r1.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1000)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.contentStack_;
     _r2.o = JAVA_NULL;
     XMLVM_CHECK_NPE(1)
@@ -3113,6 +3181,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1168)
     if (_r0.o == JAVA_NULL) goto label105;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1169)
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r0.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.attributes_;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1171)
     //java_util_Hashtable_size__[12]
@@ -3149,6 +3218,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     _r1.o = xmlvm_create_java_string_from_pool(926);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.rootName_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
@@ -3164,6 +3234,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     goto label25;
     label146:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 968)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.contentStack_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_util_Stack_peek__(_r0.o);
@@ -3189,7 +3260,9 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     _r3.o = xmlvm_create_java_string_from_pool(927);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r3.o);
+    XMLVM_CHECK_NPE(0)
     _r3.o = ((gnu_xml_pipeline_ValidationConsumer_Recognizer*) _r0.o)->fields.gnu_xml_pipeline_ValidationConsumer_Recognizer.type_;
+    XMLVM_CHECK_NPE(3)
     _r3.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.name_;
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r3.o);
@@ -3198,7 +3271,9 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     _r3.o = xmlvm_create_java_string_from_pool(928);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r3.o);
+    XMLVM_CHECK_NPE(0)
     _r3.o = ((gnu_xml_pipeline_ValidationConsumer_Recognizer*) _r0.o)->fields.gnu_xml_pipeline_ValidationConsumer_Recognizer.type_;
+    XMLVM_CHECK_NPE(3)
     _r3.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.model_;
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r3.o);
@@ -3211,16 +3286,19 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 978)
     if (_r1.o == _r0.o) goto label25;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 979)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.contentStack_;
     XMLVM_CHECK_NPE(0)
     java_util_Stack_pop__(_r0.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 980)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.contentStack_;
     XMLVM_CHECK_NPE(0)
     java_util_Stack_push___java_lang_Object(_r0.o, _r1.o);
     goto label25;
     label222:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1005)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.contentStack_;
     XMLVM_CHECK_NPE(0)
     _r2.o = gnu_xml_pipeline_ValidationConsumer_ElementInfo_getRecognizer___gnu_xml_pipeline_ValidationConsumer(_r0.o, _r8.o);
@@ -3239,6 +3317,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1022)
     if (_r0.o == JAVA_NULL) goto label253;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1023)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r0.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.attributes_;
     //java_util_Hashtable_get___java_lang_Object[7]
     XMLVM_CHECK_NPE(1)
@@ -3277,9 +3356,11 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1036)
     // "#FIXED"
     _r6.o = xmlvm_create_java_string_from_pool(62);
+    XMLVM_CHECK_NPE(1)
     _r7.o = ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.mode_;
     if (_r6.o != _r7.o) goto label337;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1037)
+    XMLVM_CHECK_NPE(1)
     _r6.o = ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.value_;
     XMLVM_CHECK_NPE(8)
     _r6.o = gnu_xml_pipeline_ValidationConsumer_expandDefaultRefs___java_lang_String(_r8.o, _r6.o);
@@ -3313,11 +3394,13 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1048)
     // "CDATA"
     _r6.o = xmlvm_create_java_string_from_pool(379);
+    XMLVM_CHECK_NPE(1)
     _r7.o = ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.type_;
     if (_r6.o == _r7.o) goto label281;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1056)
     // "ID"
     _r6.o = xmlvm_create_java_string_from_pool(284);
+    XMLVM_CHECK_NPE(1)
     _r7.o = ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.type_;
     if (_r6.o != _r7.o) goto label410;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1058)
@@ -3328,6 +3411,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     if (_r1.i == 0) goto label281;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1059)
     _r1.o = java_lang_Boolean_GET_TRUE();
+    XMLVM_CHECK_NPE(8)
     _r6.o = ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.ids_;
     //java_util_Hashtable_get___java_lang_Object[7]
     XMLVM_CHECK_NPE(6)
@@ -3361,6 +3445,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     goto label281;
     label402:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1066)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.ids_;
     _r4.o = java_lang_Boolean_GET_TRUE();
     //java_util_Hashtable_put___java_lang_Object_java_lang_Object[10]
@@ -3371,6 +3456,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1071)
     // "IDREF"
     _r6.o = xmlvm_create_java_string_from_pool(869);
+    XMLVM_CHECK_NPE(1)
     _r7.o = ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.type_;
     if (_r6.o != _r7.o) goto label441;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1073)
@@ -3380,12 +3466,14 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     _r1.i = gnu_xml_pipeline_ValidationConsumer_isName___java_lang_String_java_lang_String_java_lang_String(_r8.o, _r5.o, _r1.o, _r4.o);
     if (_r1.i == 0) goto label281;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1075)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.ids_;
     //java_util_Hashtable_get___java_lang_Object[7]
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Hashtable*) _r1.o)->tib->vtable[7])(_r1.o, _r5.o);
     if (_r1.o != JAVA_NULL) goto label281;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1077)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.ids_;
     _r4.o = java_lang_Boolean_GET_FALSE();
     //java_util_Hashtable_put___java_lang_Object_java_lang_Object[10]
@@ -3396,6 +3484,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1082)
     // "IDREFS"
     _r6.o = xmlvm_create_java_string_from_pool(870);
+    XMLVM_CHECK_NPE(1)
     _r7.o = ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.type_;
     if (_r6.o != _r7.o) goto label521;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1083)
@@ -3438,12 +3527,14 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     _r6.i = gnu_xml_pipeline_ValidationConsumer_isName___java_lang_String_java_lang_String_java_lang_String(_r8.o, _r5.o, _r6.o, _r4.o);
     if (_r6.i == 0) goto label513;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1095)
+    XMLVM_CHECK_NPE(8)
     _r6.o = ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.ids_;
     //java_util_Hashtable_get___java_lang_Object[7]
     XMLVM_CHECK_NPE(6)
     _r6.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Hashtable*) _r6.o)->tib->vtable[7])(_r6.o, _r5.o);
     if (_r6.o != JAVA_NULL) goto label513;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1097)
+    XMLVM_CHECK_NPE(8)
     _r6.o = ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.ids_;
     _r7.o = java_lang_Boolean_GET_FALSE();
     //java_util_Hashtable_put___java_lang_Object_java_lang_Object[10]
@@ -3460,6 +3551,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1103)
     // "NMTOKEN"
     _r6.o = xmlvm_create_java_string_from_pool(69);
+    XMLVM_CHECK_NPE(1)
     _r7.o = ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.type_;
     if (_r6.o != _r7.o) goto label534;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1105)
@@ -3472,6 +3564,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1109)
     // "NMTOKENS"
     _r6.o = xmlvm_create_java_string_from_pool(871);
+    XMLVM_CHECK_NPE(1)
     _r7.o = ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.type_;
     if (_r6.o != _r7.o) goto label596;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1110)
@@ -3522,9 +3615,11 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1125)
     // "ENTITY"
     _r6.o = xmlvm_create_java_string_from_pool(872);
+    XMLVM_CHECK_NPE(1)
     _r7.o = ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.type_;
     if (_r6.o != _r7.o) goto label646;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1126)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.unparsed_;
     //java_util_Vector_contains___java_lang_Object[10]
     XMLVM_CHECK_NPE(1)
@@ -3560,6 +3655,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1134)
     // "ENTITIES"
     _r6.o = xmlvm_create_java_string_from_pool(873);
+    XMLVM_CHECK_NPE(1)
     _r7.o = ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.type_;
     if (_r6.o != _r7.o) goto label745;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1135)
@@ -3596,6 +3692,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_CHECK_NPE(1)
     _r5.o = java_util_StringTokenizer_nextToken__(_r1.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1144)
+    XMLVM_CHECK_NPE(8)
     _r6.o = ((gnu_xml_pipeline_ValidationConsumer*) _r8.o)->fields.gnu_xml_pipeline_ValidationConsumer.unparsed_;
     //java_util_Vector_contains___java_lang_Object[10]
     XMLVM_CHECK_NPE(6)
@@ -3635,6 +3732,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     goto label281;
     label745:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1156)
+    XMLVM_CHECK_NPE(1)
     _r6.o = ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.type_;
     _r7.i = 0;
     //java_lang_String_charAt___int[6]
@@ -3643,6 +3741,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     _r7.i = 40;
     if (_r6.i == _r7.i) goto label766;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1157)
+    XMLVM_CHECK_NPE(1)
     _r6.o = ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.type_;
     // "NOTATION "
     _r7.o = xmlvm_create_java_string_from_pool(906);
@@ -3651,6 +3750,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     if (_r6.i == 0) goto label281;
     label766:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1160)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.type_;
     XMLVM_CHECK_NPE(8)
     gnu_xml_pipeline_ValidationConsumer_checkEnumeration___java_lang_String_java_lang_String_java_lang_String(_r8.o, _r5.o, _r1.o, _r4.o);
@@ -3668,6 +3768,7 @@ void gnu_xml_pipeline_ValidationConsumer_startElement___java_lang_String_java_la
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1181)
     // "#REQUIRED"
     _r4.o = xmlvm_create_java_string_from_pool(63);
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((gnu_xml_pipeline_ValidationConsumer_AttributeInfo*) _r1.o)->fields.gnu_xml_pipeline_ValidationConsumer_AttributeInfo.mode_;
     if (_r4.o != _r1.o) goto label99;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1182)
@@ -3718,6 +3819,7 @@ void gnu_xml_pipeline_ValidationConsumer_characters___char_1ARRAY_int_int(JAVA_O
     _r5.i = n2;
     _r6.i = n3;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1203)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer.contentStack_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Stack_empty__(_r0.o);
@@ -3738,7 +3840,9 @@ void gnu_xml_pipeline_ValidationConsumer_characters___char_1ARRAY_int_int(JAVA_O
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1215)
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_Recognizer*) _r0.o)->fields.gnu_xml_pipeline_ValidationConsumer_Recognizer.type_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r0.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.name_;
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r0.o);
@@ -3756,6 +3860,7 @@ void gnu_xml_pipeline_ValidationConsumer_characters___char_1ARRAY_int_int(JAVA_O
     return;
     label43:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1206)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer.contentStack_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_util_Stack_peek__(_r0.o);
@@ -3782,6 +3887,7 @@ void gnu_xml_pipeline_ValidationConsumer_endElement___java_lang_String_java_lang
     XMLVM_TRY_BEGIN(w11488aaac44b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1231)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r3.o)->fields.gnu_xml_pipeline_ValidationConsumer.contentStack_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_util_Stack_pop__(_r0.o);
@@ -3799,7 +3905,9 @@ void gnu_xml_pipeline_ValidationConsumer_endElement___java_lang_String_java_lang
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1236)
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((gnu_xml_pipeline_ValidationConsumer_Recognizer*) _r0.o)->fields.gnu_xml_pipeline_ValidationConsumer_Recognizer.type_;
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r2.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.name_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
@@ -3809,7 +3917,9 @@ void gnu_xml_pipeline_ValidationConsumer_endElement___java_lang_String_java_lang
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1238)
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_Recognizer*) _r0.o)->fields.gnu_xml_pipeline_ValidationConsumer_Recognizer.type_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer_ElementInfo*) _r0.o)->fields.gnu_xml_pipeline_ValidationConsumer_ElementInfo.model_;
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r0.o);
@@ -3893,6 +4003,7 @@ void gnu_xml_pipeline_ValidationConsumer_endDocument__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1262)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_pipeline_ValidationConsumer*) _r4.o)->fields.gnu_xml_pipeline_ValidationConsumer.ids_;
     //java_util_Hashtable_keys__[9]
     XMLVM_CHECK_NPE(0)
@@ -3918,6 +4029,7 @@ void gnu_xml_pipeline_ValidationConsumer_endDocument__(JAVA_OBJECT me)
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1267)
     _r2.o = java_lang_Boolean_GET_FALSE();
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((gnu_xml_pipeline_ValidationConsumer*) _r4.o)->fields.gnu_xml_pipeline_ValidationConsumer.ids_;
     //java_util_Hashtable_get___java_lang_Object[7]
     XMLVM_CHECK_NPE(3)

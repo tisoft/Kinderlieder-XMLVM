@@ -259,15 +259,20 @@ JAVA_OBJECT java_util_TreeMap_BoundedEntryIterator_next__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(4)
     java_util_TreeMap_BoundedMapIterator_makeBoundedNext__(_r4.o);
     XMLVM_SOURCE_POSITION("TreeMap.java", 1172)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_TreeMap_AbstractMapIterator*) _r4.o)->fields.java_util_TreeMap_AbstractMapIterator.lastOffset_;
     XMLVM_SOURCE_POSITION("TreeMap.java", 1173)
     _r1.o = __NEW_java_util_MapEntry();
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_TreeMap_AbstractMapIterator*) _r4.o)->fields.java_util_TreeMap_AbstractMapIterator.lastNode_;
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_util_TreeMap_Node*) _r2.o)->fields.java_util_TreeMap_Node.keys_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
     _r2.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_util_TreeMap_AbstractMapIterator*) _r4.o)->fields.java_util_TreeMap_AbstractMapIterator.lastNode_;
+    XMLVM_CHECK_NPE(3)
     _r3.o = ((java_util_TreeMap_Node*) _r3.o)->fields.java_util_TreeMap_Node.values_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r0.i);

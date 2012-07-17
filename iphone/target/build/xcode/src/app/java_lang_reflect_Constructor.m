@@ -599,22 +599,31 @@ void java_lang_reflect_Constructor___INIT____java_lang_Class_java_lang_Class_1AR
     XMLVM_CHECK_NPE(0)
     java_lang_reflect_AccessibleObject___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Constructor.java", 58)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Constructor*) _r0.o)->fields.java_lang_reflect_Constructor.clazz_ = _r1.o;
     XMLVM_SOURCE_POSITION("Constructor.java", 59)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Constructor*) _r0.o)->fields.java_lang_reflect_Constructor.parameterTypes_ = _r2.o;
     XMLVM_SOURCE_POSITION("Constructor.java", 60)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Constructor*) _r0.o)->fields.java_lang_reflect_Constructor.exceptionTypes_ = _r3.o;
     XMLVM_SOURCE_POSITION("Constructor.java", 61)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Constructor*) _r0.o)->fields.java_lang_reflect_Constructor.modifiers_ = _r4.i;
     XMLVM_SOURCE_POSITION("Constructor.java", 62)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Constructor*) _r0.o)->fields.java_lang_reflect_Constructor.address_ = _r5.o;
     XMLVM_SOURCE_POSITION("Constructor.java", 63)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Constructor*) _r0.o)->fields.java_lang_reflect_Constructor.slot_ = _r6.i;
     XMLVM_SOURCE_POSITION("Constructor.java", 64)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Constructor*) _r0.o)->fields.java_lang_reflect_Constructor.signature_ = _r7.o;
     XMLVM_SOURCE_POSITION("Constructor.java", 65)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Constructor*) _r0.o)->fields.java_lang_reflect_Constructor.annotations_ = _r8.o;
     XMLVM_SOURCE_POSITION("Constructor.java", 66)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Constructor*) _r0.o)->fields.java_lang_reflect_Constructor.parameterAnnotations_ = _r9.o;
     XMLVM_SOURCE_POSITION("Constructor.java", 67)
     XMLVM_EXIT_METHOD()

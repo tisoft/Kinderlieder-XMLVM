@@ -230,7 +230,9 @@ void java_util_ResourceBundle_2___INIT____java_lang_ClassLoader_java_lang_String
     _r1.o = n1;
     _r2.o = n2;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_ResourceBundle_2*) _r0.o)->fields.java_util_ResourceBundle_2.val_loader_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((java_util_ResourceBundle_2*) _r0.o)->fields.java_util_ResourceBundle_2.val_fileName_ = _r2.o;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 553)
     XMLVM_CHECK_NPE(0)
@@ -253,10 +255,12 @@ JAVA_OBJECT java_util_ResourceBundle_2_run__(JAVA_OBJECT me)
     // ".properties"
     _r3.o = xmlvm_create_java_string_from_pool(2664);
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 555)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_ResourceBundle_2*) _r4.o)->fields.java_util_ResourceBundle_2.val_loader_;
     if (_r0.o != JAVA_NULL) goto label32;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 556)
     _r0.o = __NEW_java_lang_StringBuilder();
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_ResourceBundle_2*) _r4.o)->fields.java_util_ResourceBundle_2.val_fileName_;
     _r1.o = java_lang_String_valueOf___java_lang_Object(_r1.o);
     XMLVM_CHECK_NPE(0)
@@ -274,9 +278,11 @@ JAVA_OBJECT java_util_ResourceBundle_2_run__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label32:;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_ResourceBundle_2*) _r4.o)->fields.java_util_ResourceBundle_2.val_loader_;
     XMLVM_SOURCE_POSITION("ResourceBundle.java", 558)
     _r1.o = __NEW_java_lang_StringBuilder();
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_ResourceBundle_2*) _r4.o)->fields.java_util_ResourceBundle_2.val_fileName_;
     _r2.o = java_lang_String_valueOf___java_lang_Object(_r2.o);
     XMLVM_CHECK_NPE(1)

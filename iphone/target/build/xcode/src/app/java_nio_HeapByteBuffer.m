@@ -841,8 +841,10 @@ void java_nio_HeapByteBuffer___INIT____byte_1ARRAY_int_int(JAVA_OBJECT me, JAVA_
     XMLVM_CHECK_NPE(2)
     java_nio_ByteBuffer___INIT____int(_r2.o, _r4.i);
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 50)
+    XMLVM_CHECK_NPE(2)
     ((java_nio_HeapByteBuffer*) _r2.o)->fields.java_nio_HeapByteBuffer.backingArray_ = _r3.o;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 51)
+    XMLVM_CHECK_NPE(2)
     ((java_nio_HeapByteBuffer*) _r2.o)->fields.java_nio_HeapByteBuffer.offset_ = _r5.i;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 53)
     _r0.i = _r5.i + _r4.i;
@@ -906,14 +908,19 @@ JAVA_OBJECT java_nio_HeapByteBuffer_get___byte_1ARRAY_int_int(JAVA_OBJECT me, JA
     XMLVM_THROW_CUSTOM(_r0.o)
     label31:;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 74)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_nio_HeapByteBuffer*) _r5.o)->fields.java_nio_HeapByteBuffer.backingArray_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_nio_HeapByteBuffer*) _r5.o)->fields.java_nio_HeapByteBuffer.offset_;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.position_;
     _r1.i = _r1.i + _r2.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r1.i, _r6.o, _r7.i, _r8.i);
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 75)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.position_;
     _r0.i = _r0.i + _r8.i;
+    XMLVM_CHECK_NPE(5)
     ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 76)
     XMLVM_EXIT_METHOD()
@@ -932,7 +939,9 @@ JAVA_BYTE java_nio_HeapByteBuffer_get__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 81)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.limit_;
     if (_r0.i != _r1.i) goto label12;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 82)
@@ -942,10 +951,14 @@ JAVA_BYTE java_nio_HeapByteBuffer_get__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 84)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_nio_HeapByteBuffer*) _r4.o)->fields.java_nio_HeapByteBuffer.backingArray_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_nio_HeapByteBuffer*) _r4.o)->fields.java_nio_HeapByteBuffer.offset_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
     _r3.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_ = _r3.i;
     _r1.i = _r1.i + _r2.i;
     XMLVM_CHECK_NPE(0)
@@ -968,6 +981,7 @@ JAVA_BYTE java_nio_HeapByteBuffer_get___int(JAVA_OBJECT me, JAVA_INT n1)
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 89)
     if (_r3.i < 0) goto label6;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
     if (_r3.i < _r0.i) goto label12;
     label6:;
@@ -978,7 +992,9 @@ JAVA_BYTE java_nio_HeapByteBuffer_get___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 92)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_HeapByteBuffer*) _r2.o)->fields.java_nio_HeapByteBuffer.backingArray_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_HeapByteBuffer*) _r2.o)->fields.java_nio_HeapByteBuffer.offset_;
     _r1.i = _r1.i + _r3.i;
     XMLVM_CHECK_NPE(0)
@@ -1072,9 +1088,11 @@ JAVA_INT java_nio_HeapByteBuffer_getInt__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 117)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_;
     _r0.i = _r0.i + 4;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 118)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
     if (_r0.i <= _r1.i) goto label14;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 119)
@@ -1084,10 +1102,12 @@ JAVA_INT java_nio_HeapByteBuffer_getInt__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 121)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_;
     XMLVM_CHECK_NPE(2)
     _r1.i = java_nio_HeapByteBuffer_loadInt___int(_r2.o, _r1.i);
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 122)
+    XMLVM_CHECK_NPE(2)
     ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 123)
     XMLVM_EXIT_METHOD()
@@ -1108,6 +1128,7 @@ JAVA_INT java_nio_HeapByteBuffer_getInt___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 128)
     if (_r3.i < 0) goto label8;
     _r0.i = _r3.i + 4;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
     if (_r0.i <= _r1.i) goto label14;
     label8:;
@@ -1135,9 +1156,11 @@ JAVA_LONG java_nio_HeapByteBuffer_getLong__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 136)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.position_;
     _r0.i = _r0.i + 8;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 137)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.limit_;
     if (_r0.i <= _r1.i) goto label14;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 138)
@@ -1147,10 +1170,12 @@ JAVA_LONG java_nio_HeapByteBuffer_getLong__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 140)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.position_;
     XMLVM_CHECK_NPE(3)
     _r1.l = java_nio_HeapByteBuffer_loadLong___int(_r3.o, _r1.i);
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 141)
+    XMLVM_CHECK_NPE(3)
     ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 142)
     XMLVM_EXIT_METHOD()
@@ -1171,6 +1196,7 @@ JAVA_LONG java_nio_HeapByteBuffer_getLong___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 147)
     if (_r3.i < 0) goto label8;
     _r0.i = _r3.i + 8;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
     if (_r0.i <= _r1.i) goto label14;
     label8:;
@@ -1197,9 +1223,11 @@ JAVA_SHORT java_nio_HeapByteBuffer_getShort__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 155)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_;
     _r0.i = _r0.i + 2;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 156)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
     if (_r0.i <= _r1.i) goto label14;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 157)
@@ -1209,10 +1237,12 @@ JAVA_SHORT java_nio_HeapByteBuffer_getShort__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 159)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_;
     XMLVM_CHECK_NPE(2)
     _r1.i = java_nio_HeapByteBuffer_loadShort___int(_r2.o, _r1.i);
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 160)
+    XMLVM_CHECK_NPE(2)
     ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 161)
     XMLVM_EXIT_METHOD()
@@ -1233,6 +1263,7 @@ JAVA_SHORT java_nio_HeapByteBuffer_getShort___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 166)
     if (_r3.i < 0) goto label8;
     _r0.i = _r3.i + 2;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
     if (_r0.i <= _r1.i) goto label14;
     label8:;
@@ -1279,9 +1310,11 @@ JAVA_INT java_nio_HeapByteBuffer_loadInt___int(JAVA_OBJECT me, JAVA_INT n1)
     _r6.i = n1;
     _r3.i = 0;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 178)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_nio_HeapByteBuffer*) _r5.o)->fields.java_nio_HeapByteBuffer.offset_;
     _r0.i = _r0.i + _r6.i;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 180)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_nio_ByteBuffer*) _r5.o)->fields.java_nio_ByteBuffer.order_;
     _r2.o = org_apache_harmony_luni_platform_Endianness_GET_BIG_ENDIAN();
     if (_r1.o != _r2.o) goto label31;
@@ -1300,6 +1333,7 @@ JAVA_INT java_nio_HeapByteBuffer_loadInt___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 182)
     _r2.i = _r2.i << 8;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 183)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_nio_HeapByteBuffer*) _r5.o)->fields.java_nio_HeapByteBuffer.backingArray_;
     _r4.i = _r0.i + _r1.i;
     XMLVM_CHECK_NPE(3)
@@ -1321,6 +1355,7 @@ JAVA_INT java_nio_HeapByteBuffer_loadInt___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 187)
     _r2.i = _r2.i << 8;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 188)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_nio_HeapByteBuffer*) _r5.o)->fields.java_nio_HeapByteBuffer.backingArray_;
     _r4.i = _r0.i + _r1.i;
     XMLVM_CHECK_NPE(3)
@@ -1353,10 +1388,12 @@ JAVA_LONG java_nio_HeapByteBuffer_loadLong___int(JAVA_OBJECT me, JAVA_INT n1)
     _r11.i = n1;
     _r6.i = 8;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 195)
+    XMLVM_CHECK_NPE(10)
     _r0.i = ((java_nio_HeapByteBuffer*) _r10.o)->fields.java_nio_HeapByteBuffer.offset_;
     _r0.i = _r0.i + _r11.i;
     _r1.l = 0;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 197)
+    XMLVM_CHECK_NPE(10)
     _r3.o = ((java_nio_ByteBuffer*) _r10.o)->fields.java_nio_ByteBuffer.order_;
     _r4.o = org_apache_harmony_luni_platform_Endianness_GET_BIG_ENDIAN();
     if (_r3.o != _r4.o) goto label36;
@@ -1377,6 +1414,7 @@ JAVA_LONG java_nio_HeapByteBuffer_loadLong___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 199)
     _r2.l = _r2.l << (0x3f & _r6.l);
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 200)
+    XMLVM_CHECK_NPE(10)
     _r4.o = ((java_nio_HeapByteBuffer*) _r10.o)->fields.java_nio_HeapByteBuffer.backingArray_;
     _r5.i = _r0.i + _r1.i;
     XMLVM_CHECK_NPE(4)
@@ -1402,6 +1440,7 @@ JAVA_LONG java_nio_HeapByteBuffer_loadLong___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 204)
     _r2.l = _r2.l << (0x3f & _r6.l);
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 205)
+    XMLVM_CHECK_NPE(10)
     _r4.o = ((java_nio_HeapByteBuffer*) _r10.o)->fields.java_nio_HeapByteBuffer.backingArray_;
     _r5.i = _r0.i + _r1.i;
     XMLVM_CHECK_NPE(4)
@@ -1427,13 +1466,16 @@ JAVA_SHORT java_nio_HeapByteBuffer_loadShort___int(JAVA_OBJECT me, JAVA_INT n1)
     _r3.o = me;
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 212)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_nio_HeapByteBuffer*) _r3.o)->fields.java_nio_HeapByteBuffer.offset_;
     _r0.i = _r0.i + _r4.i;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 214)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_nio_ByteBuffer*) _r3.o)->fields.java_nio_ByteBuffer.order_;
     _r2.o = org_apache_harmony_luni_platform_Endianness_GET_BIG_ENDIAN();
     if (_r1.o != _r2.o) goto label27;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 215)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_nio_HeapByteBuffer*) _r3.o)->fields.java_nio_HeapByteBuffer.backingArray_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -1441,6 +1483,7 @@ JAVA_SHORT java_nio_HeapByteBuffer_loadShort___int(JAVA_OBJECT me, JAVA_INT n1)
     _r1.i = _r1.i << 8;
     _r1.i = (_r1.i << 16) >> 16;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 216)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_nio_HeapByteBuffer*) _r3.o)->fields.java_nio_HeapByteBuffer.backingArray_;
     _r0.i = _r0.i + 1;
     XMLVM_CHECK_NPE(2)
@@ -1455,6 +1498,7 @@ JAVA_SHORT java_nio_HeapByteBuffer_loadShort___int(JAVA_OBJECT me, JAVA_INT n1)
     return _r0.i;
     label27:;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 218)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_nio_HeapByteBuffer*) _r3.o)->fields.java_nio_HeapByteBuffer.backingArray_;
     _r2.i = _r0.i + 1;
     XMLVM_CHECK_NPE(1)
@@ -1463,6 +1507,7 @@ JAVA_SHORT java_nio_HeapByteBuffer_loadShort___int(JAVA_OBJECT me, JAVA_INT n1)
     _r1.i = _r1.i << 8;
     _r1.i = (_r1.i << 16) >> 16;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 219)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_nio_HeapByteBuffer*) _r3.o)->fields.java_nio_HeapByteBuffer.backingArray_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
@@ -1493,9 +1538,11 @@ void java_nio_HeapByteBuffer_store___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_I
     _r9.i = n2;
     _r6.i = 3;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 225)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_nio_HeapByteBuffer*) _r7.o)->fields.java_nio_HeapByteBuffer.offset_;
     _r0.i = _r0.i + _r8.i;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 226)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_nio_ByteBuffer*) _r7.o)->fields.java_nio_ByteBuffer.order_;
     _r2.o = org_apache_harmony_luni_platform_Endianness_GET_BIG_ENDIAN();
     if (_r1.o != _r2.o) goto label29;
@@ -1510,6 +1557,7 @@ void java_nio_HeapByteBuffer_store___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_I
     return;
     label15:;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 228)
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_nio_HeapByteBuffer*) _r7.o)->fields.java_nio_HeapByteBuffer.backingArray_;
     _r4.i = _r0.i + _r1.i;
     _r5.i = _r2.i & 255;
@@ -1528,6 +1576,7 @@ void java_nio_HeapByteBuffer_store___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_I
     label31:;
     if (_r1.i > _r6.i) goto label14;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 233)
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_nio_HeapByteBuffer*) _r7.o)->fields.java_nio_HeapByteBuffer.backingArray_;
     _r4.i = _r0.i + _r1.i;
     _r5.i = _r2.i & 255;
@@ -1569,9 +1618,11 @@ void java_nio_HeapByteBuffer_store___int_long(JAVA_OBJECT me, JAVA_INT n1, JAVA_
     _r9.i = 8;
     _r8.i = 7;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 240)
+    XMLVM_CHECK_NPE(12)
     _r0.i = ((java_nio_HeapByteBuffer*) _r12.o)->fields.java_nio_HeapByteBuffer.offset_;
     _r0.i = _r0.i + _r13.i;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 241)
+    XMLVM_CHECK_NPE(12)
     _r1.o = ((java_nio_ByteBuffer*) _r12.o)->fields.java_nio_ByteBuffer.order_;
     _r2.o = org_apache_harmony_luni_platform_Endianness_GET_BIG_ENDIAN();
     if (_r1.o != _r2.o) goto label33;
@@ -1586,6 +1637,7 @@ void java_nio_HeapByteBuffer_store___int_long(JAVA_OBJECT me, JAVA_INT n1, JAVA_
     return;
     label19:;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 243)
+    XMLVM_CHECK_NPE(12)
     _r4.o = ((java_nio_HeapByteBuffer*) _r12.o)->fields.java_nio_HeapByteBuffer.backingArray_;
     _r5.i = _r0.i + _r1.i;
     _r6.l = _r2.l & _r10.l;
@@ -1605,6 +1657,7 @@ void java_nio_HeapByteBuffer_store___int_long(JAVA_OBJECT me, JAVA_INT n1, JAVA_
     label35:;
     if (_r1.i > _r8.i) goto label18;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 248)
+    XMLVM_CHECK_NPE(12)
     _r4.o = ((java_nio_HeapByteBuffer*) _r12.o)->fields.java_nio_HeapByteBuffer.backingArray_;
     _r5.i = _r0.i + _r1.i;
     _r6.l = _r2.l & _r10.l;
@@ -1635,13 +1688,16 @@ void java_nio_HeapByteBuffer_store___int_short(JAVA_OBJECT me, JAVA_INT n1, JAVA
     _r5.i = n1;
     _r6.i = n2;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 255)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_nio_HeapByteBuffer*) _r4.o)->fields.java_nio_HeapByteBuffer.offset_;
     _r0.i = _r0.i + _r5.i;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 256)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_nio_ByteBuffer*) _r4.o)->fields.java_nio_ByteBuffer.order_;
     _r2.o = org_apache_harmony_luni_platform_Endianness_GET_BIG_ENDIAN();
     if (_r1.o != _r2.o) goto label28;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 257)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_nio_HeapByteBuffer*) _r4.o)->fields.java_nio_HeapByteBuffer.backingArray_;
     _r2.i = _r6.i >> 8;
     _r2.i = _r2.i & 255;
@@ -1650,6 +1706,7 @@ void java_nio_HeapByteBuffer_store___int_short(JAVA_OBJECT me, JAVA_INT n1, JAVA
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i] = _r2.i;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 258)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_nio_HeapByteBuffer*) _r4.o)->fields.java_nio_HeapByteBuffer.backingArray_;
     _r0.i = _r0.i + 1;
     _r2.i = _r6.i & 255;
@@ -1663,6 +1720,7 @@ void java_nio_HeapByteBuffer_store___int_short(JAVA_OBJECT me, JAVA_INT n1, JAVA
     return;
     label28:;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 260)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_nio_HeapByteBuffer*) _r4.o)->fields.java_nio_HeapByteBuffer.backingArray_;
     _r2.i = _r0.i + 1;
     _r3.i = _r6.i >> 8;
@@ -1672,6 +1730,7 @@ void java_nio_HeapByteBuffer_store___int_short(JAVA_OBJECT me, JAVA_INT n1, JAVA
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i] = _r3.i;
     XMLVM_SOURCE_POSITION("HeapByteBuffer.java", 261)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_nio_HeapByteBuffer*) _r4.o)->fields.java_nio_HeapByteBuffer.backingArray_;
     _r2.i = _r6.i & 255;
     _r2.i = (_r2.i << 24) >> 24;

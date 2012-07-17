@@ -482,6 +482,7 @@ void org_apache_harmony_luni_util_NumberConverter___INIT___(JAVA_OBJECT me)
     _r0.i = 64;
     if (!__TIB_int.classInitialized) __INIT_int();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_int, _r0.i);
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_luni_util_NumberConverter*) _r1.o)->fields.org_apache_harmony_luni_util_NumberConverter.uArray_ = _r0.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -1007,9 +1008,12 @@ JAVA_OBJECT org_apache_harmony_luni_util_NumberConverter_freeFormatExponential__
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r0.i);
     XMLVM_SOURCE_POSITION("NumberConverter.java", 162)
+    XMLVM_CHECK_NPE(10)
     _r1.o = ((org_apache_harmony_luni_util_NumberConverter*) _r10.o)->fields.org_apache_harmony_luni_util_NumberConverter.uArray_;
+    XMLVM_CHECK_NPE(10)
     _r2.i = ((org_apache_harmony_luni_util_NumberConverter*) _r10.o)->fields.org_apache_harmony_luni_util_NumberConverter.getCount_;
     _r3.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(10)
     ((org_apache_harmony_luni_util_NumberConverter*) _r10.o)->fields.org_apache_harmony_luni_util_NumberConverter.getCount_ = _r3.i;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
@@ -1027,6 +1031,7 @@ JAVA_OBJECT org_apache_harmony_luni_util_NumberConverter_freeFormatExponential__
     XMLVM_SOURCE_POSITION("NumberConverter.java", 166)
     _r1.i = 2;
     XMLVM_SOURCE_POSITION("NumberConverter.java", 168)
+    XMLVM_CHECK_NPE(10)
     _r2.i = ((org_apache_harmony_luni_util_NumberConverter*) _r10.o)->fields.org_apache_harmony_luni_util_NumberConverter.firstK_;
     _r3 = _r1;
     _r1 = _r2;
@@ -1035,7 +1040,9 @@ JAVA_OBJECT org_apache_harmony_luni_util_NumberConverter_freeFormatExponential__
     XMLVM_SOURCE_POSITION("NumberConverter.java", 171)
     _r1.i = _r1.i + -1;
     XMLVM_SOURCE_POSITION("NumberConverter.java", 172)
+    XMLVM_CHECK_NPE(10)
     _r4.i = ((org_apache_harmony_luni_util_NumberConverter*) _r10.o)->fields.org_apache_harmony_luni_util_NumberConverter.getCount_;
+    XMLVM_CHECK_NPE(10)
     _r5.i = ((org_apache_harmony_luni_util_NumberConverter*) _r10.o)->fields.org_apache_harmony_luni_util_NumberConverter.setCount_;
     if (_r4.i < _r5.i) goto label81;
     XMLVM_SOURCE_POSITION("NumberConverter.java", 178)
@@ -1074,9 +1081,12 @@ JAVA_OBJECT org_apache_harmony_luni_util_NumberConverter_freeFormatExponential__
     label81:;
     XMLVM_SOURCE_POSITION("NumberConverter.java", 175)
     _r4.i = _r3.i + 1;
+    XMLVM_CHECK_NPE(10)
     _r5.o = ((org_apache_harmony_luni_util_NumberConverter*) _r10.o)->fields.org_apache_harmony_luni_util_NumberConverter.uArray_;
+    XMLVM_CHECK_NPE(10)
     _r6.i = ((org_apache_harmony_luni_util_NumberConverter*) _r10.o)->fields.org_apache_harmony_luni_util_NumberConverter.getCount_;
     _r7.i = _r6.i + 1;
+    XMLVM_CHECK_NPE(10)
     ((org_apache_harmony_luni_util_NumberConverter*) _r10.o)->fields.org_apache_harmony_luni_util_NumberConverter.getCount_ = _r7.i;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r6.i);
@@ -1121,6 +1131,7 @@ JAVA_OBJECT org_apache_harmony_luni_util_NumberConverter_freeFormat__(JAVA_OBJEC
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r0.i);
     XMLVM_SOURCE_POSITION("NumberConverter.java", 191)
+    XMLVM_CHECK_NPE(11)
     _r1.i = ((org_apache_harmony_luni_util_NumberConverter*) _r11.o)->fields.org_apache_harmony_luni_util_NumberConverter.firstK_;
     XMLVM_SOURCE_POSITION("NumberConverter.java", 192)
     if (_r1.i >= 0) goto label111;
@@ -1145,9 +1156,12 @@ JAVA_OBJECT org_apache_harmony_luni_util_NumberConverter_freeFormat__(JAVA_OBJEC
     _r2 = _r3;
     label29:;
     XMLVM_SOURCE_POSITION("NumberConverter.java", 200)
+    XMLVM_CHECK_NPE(11)
     _r3.o = ((org_apache_harmony_luni_util_NumberConverter*) _r11.o)->fields.org_apache_harmony_luni_util_NumberConverter.uArray_;
+    XMLVM_CHECK_NPE(11)
     _r4.i = ((org_apache_harmony_luni_util_NumberConverter*) _r11.o)->fields.org_apache_harmony_luni_util_NumberConverter.getCount_;
     _r5.i = _r4.i + 1;
+    XMLVM_CHECK_NPE(11)
     ((org_apache_harmony_luni_util_NumberConverter*) _r11.o)->fields.org_apache_harmony_luni_util_NumberConverter.getCount_ = _r5.i;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
@@ -1180,12 +1194,17 @@ JAVA_OBJECT org_apache_harmony_luni_util_NumberConverter_freeFormat__(JAVA_OBJEC
     XMLVM_SOURCE_POSITION("NumberConverter.java", 210)
     _r2.i = _r2.i + -1;
     XMLVM_SOURCE_POSITION("NumberConverter.java", 211)
+    XMLVM_CHECK_NPE(11)
     _r3.i = ((org_apache_harmony_luni_util_NumberConverter*) _r11.o)->fields.org_apache_harmony_luni_util_NumberConverter.getCount_;
+    XMLVM_CHECK_NPE(11)
     _r4.i = ((org_apache_harmony_luni_util_NumberConverter*) _r11.o)->fields.org_apache_harmony_luni_util_NumberConverter.setCount_;
     if (_r3.i >= _r4.i) goto label103;
+    XMLVM_CHECK_NPE(11)
     _r3.o = ((org_apache_harmony_luni_util_NumberConverter*) _r11.o)->fields.org_apache_harmony_luni_util_NumberConverter.uArray_;
+    XMLVM_CHECK_NPE(11)
     _r4.i = ((org_apache_harmony_luni_util_NumberConverter*) _r11.o)->fields.org_apache_harmony_luni_util_NumberConverter.getCount_;
     _r5.i = _r4.i + 1;
+    XMLVM_CHECK_NPE(11)
     ((org_apache_harmony_luni_util_NumberConverter*) _r11.o)->fields.org_apache_harmony_luni_util_NumberConverter.getCount_ = _r5.i;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
@@ -1310,11 +1329,14 @@ void org_apache_harmony_luni_util_NumberConverter_longDigitGenerator___long_int_
     _r7.i = _r7.l > _r2.l ? 1 : (_r7.l == _r2.l ? 0 : -1);
     if (_r7.i <= 0) goto label184;
     XMLVM_SOURCE_POSITION("NumberConverter.java", 253)
+    XMLVM_CHECK_NPE(15)
     ((org_apache_harmony_luni_util_NumberConverter*) _r15.o)->fields.org_apache_harmony_luni_util_NumberConverter.firstK_ = _r6.i;
     label51:;
     XMLVM_SOURCE_POSITION("NumberConverter.java", 260)
     _r6.i = 0;
+    XMLVM_CHECK_NPE(15)
     ((org_apache_harmony_luni_util_NumberConverter*) _r15.o)->fields.org_apache_harmony_luni_util_NumberConverter.setCount_ = _r6.i;
+    XMLVM_CHECK_NPE(15)
     ((org_apache_harmony_luni_util_NumberConverter*) _r15.o)->fields.org_apache_harmony_luni_util_NumberConverter.getCount_ = _r6.i;
     XMLVM_SOURCE_POSITION("NumberConverter.java", 263)
     _r6.i = 4;
@@ -1373,9 +1395,12 @@ void org_apache_harmony_luni_util_NumberConverter_longDigitGenerator___long_int_
     if (_r4.i == 0) goto label236;
     if (_r9.i != 0) goto label236;
     XMLVM_SOURCE_POSITION("NumberConverter.java", 290)
+    XMLVM_CHECK_NPE(15)
     _r0.o = ((org_apache_harmony_luni_util_NumberConverter*) _r15.o)->fields.org_apache_harmony_luni_util_NumberConverter.uArray_;
+    XMLVM_CHECK_NPE(15)
     _r1.i = ((org_apache_harmony_luni_util_NumberConverter*) _r15.o)->fields.org_apache_harmony_luni_util_NumberConverter.setCount_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(15)
     ((org_apache_harmony_luni_util_NumberConverter*) _r15.o)->fields.org_apache_harmony_luni_util_NumberConverter.setCount_ = _r2.i;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -1450,6 +1475,7 @@ void org_apache_harmony_luni_util_NumberConverter_longDigitGenerator___long_int_
     XMLVM_SOURCE_POSITION("NumberConverter.java", 255)
     _r7.i = 1;
     _r6.i = _r6.i - _r7.i;
+    XMLVM_CHECK_NPE(15)
     ((org_apache_harmony_luni_util_NumberConverter*) _r15.o)->fields.org_apache_harmony_luni_util_NumberConverter.firstK_ = _r6.i;
     XMLVM_SOURCE_POSITION("NumberConverter.java", 256)
     _r6.l = 10;
@@ -1489,9 +1515,12 @@ void org_apache_harmony_luni_util_NumberConverter_longDigitGenerator___long_int_
     _r9.l = 10;
     _r0.l = _r0.l * _r9.l;
     XMLVM_SOURCE_POSITION("NumberConverter.java", 287)
+    XMLVM_CHECK_NPE(15)
     _r4.o = ((org_apache_harmony_luni_util_NumberConverter*) _r15.o)->fields.org_apache_harmony_luni_util_NumberConverter.uArray_;
+    XMLVM_CHECK_NPE(15)
     _r9.i = ((org_apache_harmony_luni_util_NumberConverter*) _r15.o)->fields.org_apache_harmony_luni_util_NumberConverter.setCount_;
     _r10.i = _r9.i + 1;
+    XMLVM_CHECK_NPE(15)
     ((org_apache_harmony_luni_util_NumberConverter*) _r15.o)->fields.org_apache_harmony_luni_util_NumberConverter.setCount_ = _r10.i;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r9.i);
@@ -1504,9 +1533,12 @@ void org_apache_harmony_luni_util_NumberConverter_longDigitGenerator___long_int_
     if (_r9.i == 0) goto label254;
     if (_r4.i != 0) goto label254;
     XMLVM_SOURCE_POSITION("NumberConverter.java", 292)
+    XMLVM_CHECK_NPE(15)
     _r0.o = ((org_apache_harmony_luni_util_NumberConverter*) _r15.o)->fields.org_apache_harmony_luni_util_NumberConverter.uArray_;
+    XMLVM_CHECK_NPE(15)
     _r1.i = ((org_apache_harmony_luni_util_NumberConverter*) _r15.o)->fields.org_apache_harmony_luni_util_NumberConverter.setCount_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(15)
     ((org_apache_harmony_luni_util_NumberConverter*) _r15.o)->fields.org_apache_harmony_luni_util_NumberConverter.setCount_ = _r2.i;
     _r2.i = _r5.i + 1;
     XMLVM_CHECK_NPE(0)
@@ -1520,9 +1552,12 @@ void org_apache_harmony_luni_util_NumberConverter_longDigitGenerator___long_int_
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r0.i >= 0) goto label273;
     XMLVM_SOURCE_POSITION("NumberConverter.java", 294)
+    XMLVM_CHECK_NPE(15)
     _r0.o = ((org_apache_harmony_luni_util_NumberConverter*) _r15.o)->fields.org_apache_harmony_luni_util_NumberConverter.uArray_;
+    XMLVM_CHECK_NPE(15)
     _r1.i = ((org_apache_harmony_luni_util_NumberConverter*) _r15.o)->fields.org_apache_harmony_luni_util_NumberConverter.setCount_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(15)
     ((org_apache_harmony_luni_util_NumberConverter*) _r15.o)->fields.org_apache_harmony_luni_util_NumberConverter.setCount_ = _r2.i;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -1530,9 +1565,12 @@ void org_apache_harmony_luni_util_NumberConverter_longDigitGenerator___long_int_
     goto label119;
     label273:;
     XMLVM_SOURCE_POSITION("NumberConverter.java", 296)
+    XMLVM_CHECK_NPE(15)
     _r0.o = ((org_apache_harmony_luni_util_NumberConverter*) _r15.o)->fields.org_apache_harmony_luni_util_NumberConverter.uArray_;
+    XMLVM_CHECK_NPE(15)
     _r1.i = ((org_apache_harmony_luni_util_NumberConverter*) _r15.o)->fields.org_apache_harmony_luni_util_NumberConverter.setCount_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(15)
     ((org_apache_harmony_luni_util_NumberConverter*) _r15.o)->fields.org_apache_harmony_luni_util_NumberConverter.setCount_ = _r2.i;
     _r2.i = _r5.i + 1;
     XMLVM_CHECK_NPE(0)

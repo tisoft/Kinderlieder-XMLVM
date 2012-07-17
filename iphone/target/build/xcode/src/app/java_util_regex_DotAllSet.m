@@ -325,6 +325,7 @@ JAVA_INT java_util_regex_DotAllSet_matches___int_java_lang_CharSequence_java_uti
     if (_r1.i <= _r0.i) goto label13;
     XMLVM_SOURCE_POSITION("DotAllSet.java", 35)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(6)
     ((java_util_regex_MatchResultImpl*) _r6.o)->fields.java_util_regex_MatchResultImpl.hitEnd_ = _r0.i;
     XMLVM_SOURCE_POSITION("DotAllSet.java", 36)
     _r0.i = -1;
@@ -349,6 +350,7 @@ JAVA_INT java_util_regex_DotAllSet_matches___int_java_lang_CharSequence_java_uti
     _r0.i = java_lang_Character_isSurrogatePair___char_char(_r1.i, _r0.i);
     if (_r0.i == 0) goto label48;
     XMLVM_SOURCE_POSITION("DotAllSet.java", 45)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
     _r1.i = _r4.i + 2;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
@@ -356,6 +358,7 @@ JAVA_INT java_util_regex_DotAllSet_matches___int_java_lang_CharSequence_java_uti
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_INT, JAVA_OBJECT, JAVA_OBJECT)) ((java_util_regex_AbstractSet*) _r0.o)->tib->vtable[13])(_r0.o, _r1.i, _r5.o, _r6.o);
     goto label12;
     label48:;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
     _r1.i = _r4.i + 1;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
@@ -388,6 +391,7 @@ JAVA_OBJECT java_util_regex_DotAllSet_getNext__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DotAllSet.java", 57)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_AbstractSet*) _r1.o)->fields.java_util_regex_AbstractSet.next_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -403,6 +407,7 @@ void java_util_regex_DotAllSet_setNext___java_util_regex_AbstractSet(JAVA_OBJECT
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("DotAllSet.java", 61)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractSet*) _r0.o)->fields.java_util_regex_AbstractSet.next_ = _r1.o;
     XMLVM_SOURCE_POSITION("DotAllSet.java", 62)
     XMLVM_EXIT_METHOD()

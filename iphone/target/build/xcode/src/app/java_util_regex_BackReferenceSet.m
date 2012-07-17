@@ -359,9 +359,11 @@ JAVA_INT java_util_regex_BackReferenceSet_matches___int_java_lang_CharSequence_j
     goto label34;
     label40:;
     XMLVM_SOURCE_POSITION("BackReferenceSet.java", 47)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_regex_CIBackReferenceSet*) _r4.o)->fields.java_util_regex_CIBackReferenceSet.consCounter_;
     XMLVM_CHECK_NPE(7)
     java_util_regex_MatchResultImpl_setConsumed___int_int(_r7.o, _r1.i, _r0.i);
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_regex_AbstractSet*) _r4.o)->fields.java_util_regex_AbstractSet.next_;
     _r0.i = _r0.i + _r5.i;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
@@ -432,6 +434,7 @@ JAVA_INT java_util_regex_BackReferenceSet_find___int_java_lang_CharSequence_java
     goto label19;
     label37:;
     XMLVM_SOURCE_POSITION("BackReferenceSet.java", 66)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_util_regex_AbstractSet*) _r7.o)->fields.java_util_regex_AbstractSet.next_;
     XMLVM_SOURCE_POSITION("BackReferenceSet.java", 67)
     //java_lang_String_length__[8]
@@ -507,6 +510,7 @@ JAVA_INT java_util_regex_BackReferenceSet_findBack___int_int_java_lang_CharSeque
     goto label8;
     label28:;
     XMLVM_SOURCE_POSITION("BackReferenceSet.java", 91)
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_util_regex_AbstractSet*) _r6.o)->fields.java_util_regex_AbstractSet.next_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(0)
@@ -556,6 +560,7 @@ JAVA_OBJECT java_util_regex_BackReferenceSet_getName__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(837);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_regex_JointSet*) _r2.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);

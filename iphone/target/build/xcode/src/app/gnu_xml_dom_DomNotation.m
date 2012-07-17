@@ -354,6 +354,7 @@ JAVA_OBJECT gnu_xml_dom_DomNotation_getBaseURI__(JAVA_OBJECT me)
     _r0.o = gnu_xml_dom_DomExtern_getSystemId__(_r1.o);
     XMLVM_SOURCE_POSITION("DomNotation.java", 99)
     if (_r0.o != JAVA_NULL) goto label12;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomNode*) _r1.o)->fields.gnu_xml_dom_DomNode.owner_;
     //gnu_xml_dom_DomDocument_getBaseURI__[14]
     XMLVM_CHECK_NPE(0)

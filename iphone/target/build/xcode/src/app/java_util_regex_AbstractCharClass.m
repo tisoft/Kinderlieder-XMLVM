@@ -584,13 +584,17 @@ void java_util_regex_AbstractCharClass___INIT___(JAVA_OBJECT me)
     _r1.i = java_util_regex_AbstractCharClass_GET_SURROGATE_CARDINALITY();
     XMLVM_CHECK_NPE(0)
     java_util_BitSet___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_AbstractCharClass*) _r3.o)->fields.java_util_regex_AbstractCharClass.lowHighSurrogates_ = _r0.o;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 45)
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_AbstractCharClass*) _r3.o)->fields.java_util_regex_AbstractCharClass.charClassWithoutSurrogates_ = _r2.o;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 47)
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_AbstractCharClass*) _r3.o)->fields.java_util_regex_AbstractCharClass.charClassWithSurrogates_ = _r2.o;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 56)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_AbstractCharClass*) _r3.o)->fields.java_util_regex_AbstractCharClass.mayContainSupplCodepoints_ = _r0.i;
     XMLVM_EXIT_METHOD()
     return;
@@ -619,6 +623,7 @@ JAVA_OBJECT java_util_regex_AbstractCharClass_getLowHighSurrogates__(JAVA_OBJECT
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 77)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_AbstractCharClass*) _r1.o)->fields.java_util_regex_AbstractCharClass.lowHighSurrogates_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -638,9 +643,11 @@ JAVA_BOOLEAN java_util_regex_AbstractCharClass_hasLowHighSurrogates__(JAVA_OBJEC
     _r3.i = 1;
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 81)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_regex_AbstractCharClass*) _r4.o)->fields.java_util_regex_AbstractCharClass.altSurrogates_;
     if (_r0.i == 0) goto label20;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 82)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_AbstractCharClass*) _r4.o)->fields.java_util_regex_AbstractCharClass.lowHighSurrogates_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_BitSet_nextClearBit___int(_r0.o, _r2.i);
@@ -655,6 +662,7 @@ JAVA_BOOLEAN java_util_regex_AbstractCharClass_hasLowHighSurrogates__(JAVA_OBJEC
     goto label17;
     label20:;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 83)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_AbstractCharClass*) _r4.o)->fields.java_util_regex_AbstractCharClass.lowHighSurrogates_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_BitSet_nextSetBit___int(_r0.o, _r2.i);
@@ -676,6 +684,7 @@ JAVA_BOOLEAN java_util_regex_AbstractCharClass_mayContainSupplCodepoints__(JAVA_
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 87)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_AbstractCharClass*) _r1.o)->fields.java_util_regex_AbstractCharClass.mayContainSupplCodepoints_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -717,6 +726,7 @@ JAVA_OBJECT java_util_regex_AbstractCharClass_getSurrogates__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 100)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_AbstractCharClass*) _r2.o)->fields.java_util_regex_AbstractCharClass.charClassWithSurrogates_;
     if (_r0.o != JAVA_NULL) goto label22;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 101)
@@ -727,14 +737,18 @@ JAVA_OBJECT java_util_regex_AbstractCharClass_getSurrogates__(JAVA_OBJECT me)
     _r1.o = __NEW_java_util_regex_AbstractCharClass_1();
     XMLVM_CHECK_NPE(1)
     java_util_regex_AbstractCharClass_1___INIT____java_util_regex_AbstractCharClass_java_util_BitSet(_r1.o, _r2.o, _r0.o);
+    XMLVM_CHECK_NPE(2)
     ((java_util_regex_AbstractCharClass*) _r2.o)->fields.java_util_regex_AbstractCharClass.charClassWithSurrogates_ = _r1.o;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 113)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_AbstractCharClass*) _r2.o)->fields.java_util_regex_AbstractCharClass.charClassWithSurrogates_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_regex_AbstractCharClass*) _r2.o)->fields.java_util_regex_AbstractCharClass.altSurrogates_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_AbstractCharClass_setNegative___boolean(_r0.o, _r1.i);
     label22:;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 116)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_AbstractCharClass*) _r2.o)->fields.java_util_regex_AbstractCharClass.charClassWithSurrogates_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -750,6 +764,7 @@ JAVA_OBJECT java_util_regex_AbstractCharClass_getWithoutSurrogates__(JAVA_OBJECT
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 120)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_AbstractCharClass*) _r2.o)->fields.java_util_regex_AbstractCharClass.charClassWithoutSurrogates_;
     if (_r0.o != JAVA_NULL) goto label30;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 121)
@@ -760,20 +775,26 @@ JAVA_OBJECT java_util_regex_AbstractCharClass_getWithoutSurrogates__(JAVA_OBJECT
     _r1.o = __NEW_java_util_regex_AbstractCharClass_2();
     XMLVM_CHECK_NPE(1)
     java_util_regex_AbstractCharClass_2___INIT____java_util_regex_AbstractCharClass_java_util_BitSet_java_util_regex_AbstractCharClass(_r1.o, _r2.o, _r0.o, _r2.o);
+    XMLVM_CHECK_NPE(2)
     ((java_util_regex_AbstractCharClass*) _r2.o)->fields.java_util_regex_AbstractCharClass.charClassWithoutSurrogates_ = _r1.o;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 138)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_AbstractCharClass*) _r2.o)->fields.java_util_regex_AbstractCharClass.charClassWithoutSurrogates_;
     XMLVM_CHECK_NPE(2)
     _r1.i = java_util_regex_AbstractCharClass_isNegative__(_r2.o);
     XMLVM_CHECK_NPE(0)
     java_util_regex_AbstractCharClass_setNegative___boolean(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 139)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_AbstractCharClass*) _r2.o)->fields.java_util_regex_AbstractCharClass.charClassWithoutSurrogates_;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 140)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_regex_AbstractCharClass*) _r2.o)->fields.java_util_regex_AbstractCharClass.mayContainSupplCodepoints_;
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractCharClass*) _r0.o)->fields.java_util_regex_AbstractCharClass.mayContainSupplCodepoints_ = _r1.i;
     label30:;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 143)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_AbstractCharClass*) _r2.o)->fields.java_util_regex_AbstractCharClass.charClassWithoutSurrogates_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -808,26 +829,33 @@ JAVA_OBJECT java_util_regex_AbstractCharClass_setNegative___boolean(JAVA_OBJECT 
     _r2.i = 0;
     _r1.i = 1;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 163)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_regex_AbstractCharClass*) _r3.o)->fields.java_util_regex_AbstractCharClass.alt_;
     _r0.i = _r0.i ^ _r4.i;
     if (_r0.i == 0) goto label21;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 164)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_regex_AbstractCharClass*) _r3.o)->fields.java_util_regex_AbstractCharClass.alt_;
     if (_r0.i == 0) goto label28;
     _r0 = _r2;
     label12:;
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_AbstractCharClass*) _r3.o)->fields.java_util_regex_AbstractCharClass.alt_ = _r0.i;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 165)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_regex_AbstractCharClass*) _r3.o)->fields.java_util_regex_AbstractCharClass.altSurrogates_;
     if (_r0.i == 0) goto label30;
     _r0 = _r2;
     label19:;
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_AbstractCharClass*) _r3.o)->fields.java_util_regex_AbstractCharClass.altSurrogates_ = _r0.i;
     label21:;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 167)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_regex_AbstractCharClass*) _r3.o)->fields.java_util_regex_AbstractCharClass.mayContainSupplCodepoints_;
     if (_r0.i != 0) goto label27;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 168)
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_AbstractCharClass*) _r3.o)->fields.java_util_regex_AbstractCharClass.mayContainSupplCodepoints_ = _r1.i;
     label27:;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 170)
@@ -850,6 +878,7 @@ JAVA_BOOLEAN java_util_regex_AbstractCharClass_isNegative__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 174)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_AbstractCharClass*) _r1.o)->fields.java_util_regex_AbstractCharClass.alt_;
     XMLVM_EXIT_METHOD()
     return _r0.i;

@@ -431,8 +431,10 @@ void java_io_PushbackInputStream___INIT____java_io_InputStream(JAVA_OBJECT me, J
     if (_r3.o != JAVA_NULL) goto label12;
     _r0.o = JAVA_NULL;
     label7:;
+    XMLVM_CHECK_NPE(2)
     ((java_io_PushbackInputStream*) _r2.o)->fields.java_io_PushbackInputStream.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 53)
+    XMLVM_CHECK_NPE(2)
     ((java_io_PushbackInputStream*) _r2.o)->fields.java_io_PushbackInputStream.pos_ = _r1.i;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 54)
     XMLVM_EXIT_METHOD()
@@ -474,8 +476,10 @@ void java_io_PushbackInputStream___INIT____java_io_InputStream_int(JAVA_OBJECT m
     if (_r3.o != JAVA_NULL) goto label25;
     _r0.o = JAVA_NULL;
     label20:;
+    XMLVM_CHECK_NPE(2)
     ((java_io_PushbackInputStream*) _r2.o)->fields.java_io_PushbackInputStream.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 73)
+    XMLVM_CHECK_NPE(2)
     ((java_io_PushbackInputStream*) _r2.o)->fields.java_io_PushbackInputStream.pos_ = _r4.i;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 74)
     XMLVM_EXIT_METHOD()
@@ -496,6 +500,7 @@ JAVA_INT java_io_PushbackInputStream_available__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 88)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_PushbackInputStream*) _r2.o)->fields.java_io_PushbackInputStream.buf_;
     if (_r0.o != JAVA_NULL) goto label10;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 89)
@@ -505,10 +510,13 @@ JAVA_INT java_io_PushbackInputStream_available__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label10:;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 91)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_PushbackInputStream*) _r2.o)->fields.java_io_PushbackInputStream.buf_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_io_PushbackInputStream*) _r2.o)->fields.java_io_PushbackInputStream.pos_;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_FilterInputStream*) _r2.o)->fields.java_io_FilterInputStream.in_;
     //java_io_InputStream_available__[6]
     XMLVM_CHECK_NPE(1)
@@ -529,16 +537,20 @@ void java_io_PushbackInputStream_close__(JAVA_OBJECT me)
     _r2.o = me;
     _r1.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 103)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_FilterInputStream*) _r2.o)->fields.java_io_FilterInputStream.in_;
     if (_r0.o == JAVA_NULL) goto label14;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 104)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_FilterInputStream*) _r2.o)->fields.java_io_FilterInputStream.in_;
     //java_io_InputStream_close__[7]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) ((java_io_InputStream*) _r0.o)->tib->vtable[7])(_r0.o);
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 105)
+    XMLVM_CHECK_NPE(2)
     ((java_io_FilterInputStream*) _r2.o)->fields.java_io_FilterInputStream.in_ = _r1.o;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 106)
+    XMLVM_CHECK_NPE(2)
     ((java_io_PushbackInputStream*) _r2.o)->fields.java_io_PushbackInputStream.buf_ = _r1.o;
     label14:;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 108)
@@ -571,6 +583,7 @@ JAVA_INT java_io_PushbackInputStream_read__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 139)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_PushbackInputStream*) _r3.o)->fields.java_io_PushbackInputStream.buf_;
     if (_r0.o != JAVA_NULL) goto label10;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 140)
@@ -580,14 +593,19 @@ JAVA_INT java_io_PushbackInputStream_read__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label10:;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 143)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_io_PushbackInputStream*) _r3.o)->fields.java_io_PushbackInputStream.pos_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_PushbackInputStream*) _r3.o)->fields.java_io_PushbackInputStream.buf_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i >= _r1.i) goto label30;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 144)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_PushbackInputStream*) _r3.o)->fields.java_io_PushbackInputStream.buf_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_io_PushbackInputStream*) _r3.o)->fields.java_io_PushbackInputStream.pos_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_io_PushbackInputStream*) _r3.o)->fields.java_io_PushbackInputStream.pos_ = _r2.i;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -598,6 +616,7 @@ JAVA_INT java_io_PushbackInputStream_read__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label30:;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_FilterInputStream*) _r3.o)->fields.java_io_FilterInputStream.in_;
     //java_io_InputStream_read__[10]
     XMLVM_CHECK_NPE(0)
@@ -625,6 +644,7 @@ JAVA_INT java_io_PushbackInputStream_read___byte_1ARRAY_int_int(JAVA_OBJECT me, 
     _r8.i = n3;
     _r3.i = 0;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 179)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_io_PushbackInputStream*) _r5.o)->fields.java_io_PushbackInputStream.buf_;
     if (_r0.o != JAVA_NULL) goto label17;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 181)
@@ -666,28 +686,36 @@ JAVA_INT java_io_PushbackInputStream_read___byte_1ARRAY_int_int(JAVA_OBJECT me, 
     XMLVM_THROW_CUSTOM(_r0.o)
     label52:;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 195)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_io_PushbackInputStream*) _r5.o)->fields.java_io_PushbackInputStream.pos_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_io_PushbackInputStream*) _r5.o)->fields.java_io_PushbackInputStream.buf_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i >= _r1.i) goto label114;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 196)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_io_PushbackInputStream*) _r5.o)->fields.java_io_PushbackInputStream.buf_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_io_PushbackInputStream*) _r5.o)->fields.java_io_PushbackInputStream.pos_;
     _r0.i = _r0.i - _r1.i;
     if (_r0.i < _r8.i) goto label91;
     _r0 = _r8;
     label68:;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 198)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_io_PushbackInputStream*) _r5.o)->fields.java_io_PushbackInputStream.buf_;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_io_PushbackInputStream*) _r5.o)->fields.java_io_PushbackInputStream.pos_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r2.i, _r6.o, _r7.i, _r0.i);
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 199)
     _r1.i = _r7.i + _r0.i;
     _r2.i = _r3.i + _r0.i;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 202)
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_io_PushbackInputStream*) _r5.o)->fields.java_io_PushbackInputStream.pos_;
     _r3.i = _r3.i + _r0.i;
+    XMLVM_CHECK_NPE(5)
     ((java_io_PushbackInputStream*) _r5.o)->fields.java_io_PushbackInputStream.pos_ = _r3.i;
     _r4 = _r1;
     _r1 = _r0;
@@ -702,14 +730,17 @@ JAVA_INT java_io_PushbackInputStream_read___byte_1ARRAY_int_int(JAVA_OBJECT me, 
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label91:;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_io_PushbackInputStream*) _r5.o)->fields.java_io_PushbackInputStream.buf_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 197)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_io_PushbackInputStream*) _r5.o)->fields.java_io_PushbackInputStream.pos_;
     _r0.i = _r0.i - _r1.i;
     goto label68;
     label98:;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 208)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_io_FilterInputStream*) _r5.o)->fields.java_io_FilterInputStream.in_;
     _r3.i = _r8.i - _r2.i;
     //java_io_InputStream_read___byte_1ARRAY_int_int[12]
@@ -750,6 +781,7 @@ JAVA_LONG java_io_PushbackInputStream_skip___long(JAVA_OBJECT me, JAVA_LONG n1)
     _r7.l = n1;
     _r1.l = 0;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 230)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_io_FilterInputStream*) _r6.o)->fields.java_io_FilterInputStream.in_;
     if (_r0.o != JAVA_NULL) goto label18;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 231)
@@ -774,14 +806,18 @@ JAVA_LONG java_io_PushbackInputStream_skip___long(JAVA_OBJECT me, JAVA_LONG n1)
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 236)
     _r0.i = 0;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 237)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_io_PushbackInputStream*) _r6.o)->fields.java_io_PushbackInputStream.pos_;
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_io_PushbackInputStream*) _r6.o)->fields.java_io_PushbackInputStream.buf_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     if (_r1.i >= _r2.i) goto label52;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 238)
     _r0.l = (JAVA_LONG) _r0.i;
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_io_PushbackInputStream*) _r6.o)->fields.java_io_PushbackInputStream.buf_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_io_PushbackInputStream*) _r6.o)->fields.java_io_PushbackInputStream.pos_;
     _r2.i = _r2.i - _r3.i;
     _r2.l = (JAVA_LONG) _r2.i;
@@ -792,8 +828,10 @@ JAVA_LONG java_io_PushbackInputStream_skip___long(JAVA_OBJECT me, JAVA_LONG n1)
     _r0.l = _r0.l + _r2.l;
     _r0.i = (JAVA_INT) _r0.l;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 239)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_io_PushbackInputStream*) _r6.o)->fields.java_io_PushbackInputStream.pos_;
     _r1.i = _r1.i + _r0.i;
+    XMLVM_CHECK_NPE(6)
     ((java_io_PushbackInputStream*) _r6.o)->fields.java_io_PushbackInputStream.pos_ = _r1.i;
     label52:;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 241)
@@ -802,6 +840,7 @@ JAVA_LONG java_io_PushbackInputStream_skip___long(JAVA_OBJECT me, JAVA_LONG n1)
     if (_r1.i >= 0) goto label70;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 242)
     _r1.l = (JAVA_LONG) _r0.i;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_io_FilterInputStream*) _r6.o)->fields.java_io_FilterInputStream.in_;
     _r4.l = (JAVA_LONG) _r0.i;
     _r4.l = _r7.l - _r4.l;
@@ -814,8 +853,10 @@ JAVA_LONG java_io_PushbackInputStream_skip___long(JAVA_OBJECT me, JAVA_LONG n1)
     _r0.l = (JAVA_LONG) _r0.i;
     goto label23;
     label72:;
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_io_PushbackInputStream*) _r6.o)->fields.java_io_PushbackInputStream.buf_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_io_PushbackInputStream*) _r6.o)->fields.java_io_PushbackInputStream.pos_;
     _r2.i = _r2.i - _r3.i;
     _r2.l = (JAVA_LONG) _r2.i;
@@ -859,6 +900,7 @@ void java_io_PushbackInputStream_unread___byte_1ARRAY_int_int(JAVA_OBJECT me, JA
     _r4.i = n2;
     _r5.i = n3;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 295)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_io_PushbackInputStream*) _r2.o)->fields.java_io_PushbackInputStream.pos_;
     if (_r5.i <= _r0.i) goto label16;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 297)
@@ -900,6 +942,7 @@ void java_io_PushbackInputStream_unread___byte_1ARRAY_int_int(JAVA_OBJECT me, JA
     XMLVM_THROW_CUSTOM(_r0.o)
     label51:;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 307)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_PushbackInputStream*) _r2.o)->fields.java_io_PushbackInputStream.buf_;
     if (_r0.o != JAVA_NULL) goto label67;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 309)
@@ -912,13 +955,17 @@ void java_io_PushbackInputStream_unread___byte_1ARRAY_int_int(JAVA_OBJECT me, JA
     XMLVM_THROW_CUSTOM(_r0.o)
     label67:;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 312)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_PushbackInputStream*) _r2.o)->fields.java_io_PushbackInputStream.buf_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_io_PushbackInputStream*) _r2.o)->fields.java_io_PushbackInputStream.pos_;
     _r1.i = _r1.i - _r5.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r3.o, _r4.i, _r0.o, _r1.i, _r5.i);
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 313)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_io_PushbackInputStream*) _r2.o)->fields.java_io_PushbackInputStream.pos_;
     _r0.i = _r0.i - _r5.i;
+    XMLVM_CHECK_NPE(2)
     ((java_io_PushbackInputStream*) _r2.o)->fields.java_io_PushbackInputStream.pos_ = _r0.i;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 314)
     XMLVM_EXIT_METHOD()
@@ -938,6 +985,7 @@ void java_io_PushbackInputStream_unread___int(JAVA_OBJECT me, JAVA_INT n1)
     _r3.o = me;
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 332)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_PushbackInputStream*) _r3.o)->fields.java_io_PushbackInputStream.buf_;
     if (_r0.o != JAVA_NULL) goto label10;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 333)
@@ -947,6 +995,7 @@ void java_io_PushbackInputStream_unread___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label10:;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 335)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_io_PushbackInputStream*) _r3.o)->fields.java_io_PushbackInputStream.pos_;
     if (_r0.i != 0) goto label26;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 336)
@@ -959,10 +1008,13 @@ void java_io_PushbackInputStream_unread___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label26:;
     XMLVM_SOURCE_POSITION("PushbackInputStream.java", 338)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_PushbackInputStream*) _r3.o)->fields.java_io_PushbackInputStream.buf_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_io_PushbackInputStream*) _r3.o)->fields.java_io_PushbackInputStream.pos_;
     _r2.i = 1;
     _r1.i = _r1.i - _r2.i;
+    XMLVM_CHECK_NPE(3)
     ((java_io_PushbackInputStream*) _r3.o)->fields.java_io_PushbackInputStream.pos_ = _r1.i;
     _r2.i = (_r4.i << 24) >> 24;
     XMLVM_CHECK_NPE(0)

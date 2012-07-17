@@ -232,7 +232,9 @@ void java_net_URLConnection_1___INIT____java_net_URLConnection_java_lang_String(
     _r1.o = n1;
     _r2.o = n2;
     XMLVM_SOURCE_POSITION("URLConnection.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_net_URLConnection_1*) _r0.o)->fields.java_net_URLConnection_1.this_0_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((java_net_URLConnection_1*) _r0.o)->fields.java_net_URLConnection_1.val_typeString_ = _r2.o;
     XMLVM_SOURCE_POSITION("URLConnection.java", 268)
     XMLVM_CHECK_NPE(0)
@@ -259,6 +261,7 @@ JAVA_OBJECT java_net_URLConnection_1_run__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("URLConnection.java", 273)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URLConnection_1*) _r2.o)->fields.java_net_URLConnection_1.val_typeString_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);

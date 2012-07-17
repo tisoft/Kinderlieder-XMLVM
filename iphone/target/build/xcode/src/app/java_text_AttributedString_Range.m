@@ -216,10 +216,13 @@ void java_text_AttributedString_Range___INIT____int_int_java_lang_Object(JAVA_OB
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("AttributedString.java", 51)
+    XMLVM_CHECK_NPE(0)
     ((java_text_AttributedString_Range*) _r0.o)->fields.java_text_AttributedString_Range.start_ = _r1.i;
     XMLVM_SOURCE_POSITION("AttributedString.java", 52)
+    XMLVM_CHECK_NPE(0)
     ((java_text_AttributedString_Range*) _r0.o)->fields.java_text_AttributedString_Range.end_ = _r2.i;
     XMLVM_SOURCE_POSITION("AttributedString.java", 53)
+    XMLVM_CHECK_NPE(0)
     ((java_text_AttributedString_Range*) _r0.o)->fields.java_text_AttributedString_Range.value_ = _r3.o;
     XMLVM_SOURCE_POSITION("AttributedString.java", 54)
     XMLVM_EXIT_METHOD()

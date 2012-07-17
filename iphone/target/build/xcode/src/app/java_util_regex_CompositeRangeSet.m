@@ -368,8 +368,10 @@ void java_util_regex_CompositeRangeSet___INIT____java_util_regex_AbstractSet_jav
     XMLVM_CHECK_NPE(0)
     java_util_regex_JointSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("CompositeRangeSet.java", 102)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_CompositeRangeSet*) _r0.o)->fields.java_util_regex_CompositeRangeSet.withoutSurrogates_ = _r1.o;
     XMLVM_SOURCE_POSITION("CompositeRangeSet.java", 103)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_CompositeRangeSet*) _r0.o)->fields.java_util_regex_CompositeRangeSet.withSurrogates_ = _r2.o;
     XMLVM_SOURCE_POSITION("CompositeRangeSet.java", 104)
     //java_util_regex_CompositeRangeSet_setNext___java_util_regex_AbstractSet[16]
@@ -395,8 +397,10 @@ void java_util_regex_CompositeRangeSet___INIT____java_util_regex_AbstractSet_jav
     XMLVM_CHECK_NPE(0)
     java_util_regex_JointSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("CompositeRangeSet.java", 109)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_CompositeRangeSet*) _r0.o)->fields.java_util_regex_CompositeRangeSet.withoutSurrogates_ = _r1.o;
     XMLVM_SOURCE_POSITION("CompositeRangeSet.java", 110)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_CompositeRangeSet*) _r0.o)->fields.java_util_regex_CompositeRangeSet.withSurrogates_ = _r2.o;
     XMLVM_SOURCE_POSITION("CompositeRangeSet.java", 111)
     XMLVM_EXIT_METHOD()
@@ -412,6 +416,7 @@ JAVA_OBJECT java_util_regex_CompositeRangeSet_getNext__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CompositeRangeSet.java", 117)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_AbstractSet*) _r1.o)->fields.java_util_regex_AbstractSet.next_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -432,6 +437,7 @@ JAVA_INT java_util_regex_CompositeRangeSet_matches___int_java_lang_CharSequence_
     _r3.o = n2;
     _r4.o = n3;
     XMLVM_SOURCE_POSITION("CompositeRangeSet.java", 122)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_CompositeRangeSet*) _r1.o)->fields.java_util_regex_CompositeRangeSet.withoutSurrogates_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -439,6 +445,7 @@ JAVA_INT java_util_regex_CompositeRangeSet_matches___int_java_lang_CharSequence_
     XMLVM_SOURCE_POSITION("CompositeRangeSet.java", 124)
     if (_r0.i >= 0) goto label14;
     XMLVM_SOURCE_POSITION("CompositeRangeSet.java", 125)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_CompositeRangeSet*) _r1.o)->fields.java_util_regex_CompositeRangeSet.withSurrogates_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -466,13 +473,16 @@ void java_util_regex_CompositeRangeSet_setNext___java_util_regex_AbstractSet(JAV
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("CompositeRangeSet.java", 140)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_AbstractSet*) _r1.o)->fields.java_util_regex_AbstractSet.next_ = _r2.o;
     XMLVM_SOURCE_POSITION("CompositeRangeSet.java", 141)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_CompositeRangeSet*) _r1.o)->fields.java_util_regex_CompositeRangeSet.withSurrogates_;
     //java_util_regex_AbstractSet_setNext___java_util_regex_AbstractSet[16]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_regex_AbstractSet*) _r0.o)->tib->vtable[16])(_r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("CompositeRangeSet.java", 142)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_CompositeRangeSet*) _r1.o)->fields.java_util_regex_CompositeRangeSet.withoutSurrogates_;
     //java_util_regex_AbstractSet_setNext___java_util_regex_AbstractSet[16]
     XMLVM_CHECK_NPE(0)
@@ -491,6 +501,7 @@ JAVA_OBJECT java_util_regex_CompositeRangeSet_getSurrogates__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CompositeRangeSet.java", 146)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_CompositeRangeSet*) _r1.o)->fields.java_util_regex_CompositeRangeSet.withSurrogates_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -505,6 +516,7 @@ JAVA_OBJECT java_util_regex_CompositeRangeSet_getWithoutSurrogates__(JAVA_OBJECT
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CompositeRangeSet.java", 150)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_CompositeRangeSet*) _r1.o)->fields.java_util_regex_CompositeRangeSet.withoutSurrogates_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -526,6 +538,7 @@ JAVA_OBJECT java_util_regex_CompositeRangeSet_getName__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("CompositeRangeSet.java", 155)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_regex_CompositeRangeSet*) _r2.o)->fields.java_util_regex_CompositeRangeSet.withoutSurrogates_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);
@@ -534,6 +547,7 @@ JAVA_OBJECT java_util_regex_CompositeRangeSet_getName__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("CompositeRangeSet.java", 156)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_regex_CompositeRangeSet*) _r2.o)->fields.java_util_regex_CompositeRangeSet.withSurrogates_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);

@@ -416,6 +416,7 @@ void gnu_xml_dom_JAXPFactory_JAXPBuilder___INIT____org_xml_sax_XMLReader_gnu_xml
     _r0.o = __NEW_gnu_xml_dom_DomImpl();
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_DomImpl___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.impl_ = _r0.o;
     XMLVM_TRY_BEGIN(w25913aaab3b1c10)
     // Begin try
@@ -423,6 +424,7 @@ void gnu_xml_dom_JAXPFactory_JAXPBuilder___INIT____org_xml_sax_XMLReader_gnu_xml
     _r0.o = __NEW_gnu_xml_dom_Consumer();
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_Consumer___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.consumer_ = _r0.o;
     // End try
     XMLVM_TRY_END
@@ -431,33 +433,40 @@ void gnu_xml_dom_JAXPFactory_JAXPBuilder___INIT____org_xml_sax_XMLReader_gnu_xml
     XMLVM_CATCH_END(w25913aaab3b1c10)
     XMLVM_RESTORE_EXCEPTION_ENV(w25913aaab3b1c10)
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 189)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.consumer_;
     XMLVM_CHECK_NPE(5)
     _r1.i = javax_xml_parsers_DocumentBuilderFactory_isExpandEntityReferences__(_r5.o);
     XMLVM_CHECK_NPE(0)
     gnu_xml_pipeline_DomConsumer_setHidingReferences___boolean(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 190)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.consumer_;
     XMLVM_CHECK_NPE(5)
     _r1.i = javax_xml_parsers_DocumentBuilderFactory_isIgnoringComments__(_r5.o);
     XMLVM_CHECK_NPE(0)
     gnu_xml_pipeline_DomConsumer_setHidingComments___boolean(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 191)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.consumer_;
     XMLVM_CHECK_NPE(5)
     _r1.i = javax_xml_parsers_DocumentBuilderFactory_isIgnoringElementContentWhitespace__(_r5.o);
     XMLVM_CHECK_NPE(0)
     gnu_xml_pipeline_DomConsumer_setHidingWhitespace___boolean(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 192)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.consumer_;
     XMLVM_CHECK_NPE(5)
     _r1.i = javax_xml_parsers_DocumentBuilderFactory_isCoalescing__(_r5.o);
     XMLVM_CHECK_NPE(0)
     gnu_xml_pipeline_DomConsumer_setHidingCDATA___boolean(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 195)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.producer_ = _r4.o;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 196)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.producer_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.consumer_;
     //gnu_xml_dom_Consumer_getContentHandler__[6]
     XMLVM_CHECK_NPE(1)
@@ -465,7 +474,9 @@ void gnu_xml_dom_JAXPFactory_JAXPBuilder___INIT____org_xml_sax_XMLReader_gnu_xml
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setContentHandler___org_xml_sax_ContentHandler])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 197)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.producer_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.consumer_;
     //gnu_xml_dom_Consumer_getDTDHandler__[7]
     XMLVM_CHECK_NPE(1)
@@ -479,6 +490,7 @@ void gnu_xml_dom_JAXPFactory_JAXPBuilder___INIT____org_xml_sax_XMLReader_gnu_xml
     _r0.i = javax_xml_parsers_DocumentBuilderFactory_isValidating__(_r5.o);
     if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w25913aaab3b1c39->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w25913aaab3b1c39, sizeof(XMLVM_JMP_BUF)); goto label96; };
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 207)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.producer_;
     // "http://xml.org/sax/features/validation"
     _r1.o = xmlvm_create_java_string_from_pool(44);
@@ -486,6 +498,7 @@ void gnu_xml_dom_JAXPFactory_JAXPBuilder___INIT____org_xml_sax_XMLReader_gnu_xml
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setFeature___java_lang_String_boolean])(_r0.o, _r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 208)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.producer_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setErrorHandler___org_xml_sax_ErrorHandler])(_r0.o, _r3.o);
@@ -499,6 +512,7 @@ void gnu_xml_dom_JAXPFactory_JAXPBuilder___INIT____org_xml_sax_XMLReader_gnu_xml
     XMLVM_TRY_BEGIN(w25913aaab3b1c41)
     // Begin try
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 212)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.producer_;
     // "http://xml.org/sax/features/namespace-prefixes"
     _r1.o = xmlvm_create_java_string_from_pool(41);
@@ -506,6 +520,7 @@ void gnu_xml_dom_JAXPFactory_JAXPBuilder___INIT____org_xml_sax_XMLReader_gnu_xml
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setFeature___java_lang_String_boolean])(_r0.o, _r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 213)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.producer_;
     // "http://xml.org/sax/features/namespaces"
     _r1.o = xmlvm_create_java_string_from_pool(40);
@@ -518,7 +533,9 @@ void gnu_xml_dom_JAXPFactory_JAXPBuilder___INIT____org_xml_sax_XMLReader_gnu_xml
     // "http://xml.org/sax/properties/lexical-handler"
     _r0.o = xmlvm_create_java_string_from_pool(48);
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 218)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.producer_;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.consumer_;
     //gnu_xml_dom_Consumer_getProperty___java_lang_String[8]
     XMLVM_CHECK_NPE(2)
@@ -529,7 +546,9 @@ void gnu_xml_dom_JAXPFactory_JAXPBuilder___INIT____org_xml_sax_XMLReader_gnu_xml
     // "http://xml.org/sax/properties/declaration-handler"
     _r0.o = xmlvm_create_java_string_from_pool(47);
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 221)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.producer_;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r3.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.consumer_;
     //gnu_xml_dom_Consumer_getProperty___java_lang_String[8]
     XMLVM_CHECK_NPE(2)
@@ -583,10 +602,12 @@ JAVA_OBJECT gnu_xml_dom_JAXPFactory_JAXPBuilder_parse___org_xml_sax_InputSource(
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 233)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r2.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.producer_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_parse___org_xml_sax_InputSource])(_r0.o, _r3.o);
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 234)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r2.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.consumer_;
     XMLVM_CHECK_NPE(0)
     _r0.o = gnu_xml_pipeline_DomConsumer_getDocument__(_r0.o);
@@ -612,6 +633,7 @@ JAVA_BOOLEAN gnu_xml_dom_JAXPFactory_JAXPBuilder_isNamespaceAware__(JAVA_OBJECT 
     XMLVM_TRY_BEGIN(w25913aaab5b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 244)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r2.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.producer_;
     // "http://xml.org/sax/features/namespaces"
     _r1.o = xmlvm_create_java_string_from_pool(40);
@@ -651,6 +673,7 @@ JAVA_BOOLEAN gnu_xml_dom_JAXPFactory_JAXPBuilder_isValidating__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w25913aaab6b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 257)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r2.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.producer_;
     // "http://xml.org/sax/features/validation"
     _r1.o = xmlvm_create_java_string_from_pool(44);
@@ -689,6 +712,7 @@ void gnu_xml_dom_JAXPFactory_JAXPBuilder_setEntityResolver___org_xml_sax_EntityR
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 268)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r1.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.producer_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setEntityResolver___org_xml_sax_EntityResolver])(_r0.o, _r2.o);
@@ -708,10 +732,12 @@ void gnu_xml_dom_JAXPFactory_JAXPBuilder_setErrorHandler___org_xml_sax_ErrorHand
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 273)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r1.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.producer_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setErrorHandler___org_xml_sax_ErrorHandler])(_r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 274)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r1.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.consumer_;
     //gnu_xml_dom_Consumer_setErrorHandler___org_xml_sax_ErrorHandler[9]
     XMLVM_CHECK_NPE(0)
@@ -730,6 +756,7 @@ JAVA_OBJECT gnu_xml_dom_JAXPFactory_JAXPBuilder_getDOMImplementation__(JAVA_OBJE
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 279)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_JAXPFactory_JAXPBuilder*) _r1.o)->fields.gnu_xml_dom_JAXPFactory_JAXPBuilder.impl_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

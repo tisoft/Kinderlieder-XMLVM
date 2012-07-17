@@ -387,6 +387,7 @@ void java_util_Collections_UnmodifiableSortedSet___INIT____java_util_SortedSet(J
     XMLVM_CHECK_NPE(0)
     java_util_Collections_UnmodifiableSet___INIT____java_util_Set(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("Collections.java", 1437)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Collections_UnmodifiableSortedSet*) _r0.o)->fields.java_util_Collections_UnmodifiableSortedSet.ss_ = _r1.o;
     XMLVM_SOURCE_POSITION("Collections.java", 1438)
     XMLVM_EXIT_METHOD()
@@ -402,6 +403,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableSortedSet_comparator__(JAVA_OBJECT
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1441)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableSortedSet*) _r1.o)->fields.java_util_Collections_UnmodifiableSortedSet.ss_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedSet_comparator__])(_r0.o);
@@ -418,6 +420,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableSortedSet_first__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1445)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableSortedSet*) _r1.o)->fields.java_util_Collections_UnmodifiableSortedSet.ss_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedSet_first__])(_r0.o);
@@ -438,6 +441,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableSortedSet_headSet___java_lang_Obje
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 1449)
     _r0.o = __NEW_java_util_Collections_UnmodifiableSortedSet();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_UnmodifiableSortedSet*) _r2.o)->fields.java_util_Collections_UnmodifiableSortedSet.ss_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedSet_headSet___java_lang_Object])(_r1.o, _r3.o);
@@ -456,6 +460,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableSortedSet_last__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1453)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableSortedSet*) _r1.o)->fields.java_util_Collections_UnmodifiableSortedSet.ss_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedSet_last__])(_r0.o);
@@ -478,6 +483,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableSortedSet_subSet___java_lang_Objec
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("Collections.java", 1457)
     _r0.o = __NEW_java_util_Collections_UnmodifiableSortedSet();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_UnmodifiableSortedSet*) _r2.o)->fields.java_util_Collections_UnmodifiableSortedSet.ss_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedSet_subSet___java_lang_Object_java_lang_Object])(_r1.o, _r3.o, _r4.o);
@@ -500,6 +506,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableSortedSet_tailSet___java_lang_Obje
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 1461)
     _r0.o = __NEW_java_util_Collections_UnmodifiableSortedSet();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_UnmodifiableSortedSet*) _r2.o)->fields.java_util_Collections_UnmodifiableSortedSet.ss_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedSet_tailSet___java_lang_Object])(_r1.o, _r3.o);

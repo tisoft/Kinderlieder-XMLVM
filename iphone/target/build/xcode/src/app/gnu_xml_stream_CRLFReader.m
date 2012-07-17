@@ -432,6 +432,7 @@ void gnu_xml_stream_CRLFReader___INIT____java_io_Reader(JAVA_OBJECT me, JAVA_OBJ
     java_io_BufferedReader___INIT____java_io_Reader(_r0.o, _r2.o);
     label14:;
     XMLVM_SOURCE_POSITION("CRLFReader.java", 74)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_CRLFReader*) _r1.o)->fields.gnu_xml_stream_CRLFReader.in_ = _r0.o;
     XMLVM_SOURCE_POSITION("CRLFReader.java", 75)
     XMLVM_EXIT_METHOD()
@@ -452,6 +453,7 @@ JAVA_INT gnu_xml_stream_CRLFReader_read__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("CRLFReader.java", 80)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_CRLFReader*) _r3.o)->fields.gnu_xml_stream_CRLFReader.in_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(0)
@@ -460,12 +462,14 @@ JAVA_INT gnu_xml_stream_CRLFReader_read__(JAVA_OBJECT me)
     _r1.i = 13;
     if (_r0.i != _r1.i) goto label27;
     XMLVM_SOURCE_POSITION("CRLFReader.java", 83)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_stream_CRLFReader*) _r3.o)->fields.gnu_xml_stream_CRLFReader.in_;
     _r2.i = 1;
     //java_io_Reader_mark___int[8]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_INT)) ((java_io_Reader*) _r1.o)->tib->vtable[8])(_r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("CRLFReader.java", 84)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_stream_CRLFReader*) _r3.o)->fields.gnu_xml_stream_CRLFReader.in_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(1)
@@ -481,6 +485,7 @@ JAVA_INT gnu_xml_stream_CRLFReader_read__(JAVA_OBJECT me)
     return _r0.i;
     label28:;
     XMLVM_SOURCE_POSITION("CRLFReader.java", 88)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_stream_CRLFReader*) _r3.o)->fields.gnu_xml_stream_CRLFReader.in_;
     //java_io_Reader_reset__[14]
     XMLVM_CHECK_NPE(1)
@@ -526,12 +531,14 @@ JAVA_INT gnu_xml_stream_CRLFReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JA
     _r5.i = n2;
     _r6.i = n3;
     XMLVM_SOURCE_POSITION("CRLFReader.java", 102)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_CRLFReader*) _r3.o)->fields.gnu_xml_stream_CRLFReader.in_;
     _r1.i = _r6.i + 1;
     //java_io_Reader_mark___int[8]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_INT)) ((java_io_Reader*) _r0.o)->tib->vtable[8])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("CRLFReader.java", 103)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_CRLFReader*) _r3.o)->fields.gnu_xml_stream_CRLFReader.in_;
     //java_io_Reader_read___char_1ARRAY_int_int[11]
     XMLVM_CHECK_NPE(0)
@@ -542,9 +549,11 @@ JAVA_INT gnu_xml_stream_CRLFReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JA
     XMLVM_CHECK_NPE(3)
     _r1.i = gnu_xml_stream_CRLFReader_indexOfCRLF___char_1ARRAY_int_int(_r3.o, _r4.o, _r5.i, _r0.i);
     XMLVM_SOURCE_POSITION("CRLFReader.java", 107)
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((gnu_xml_stream_CRLFReader*) _r3.o)->fields.gnu_xml_stream_CRLFReader.doReset_;
     if (_r2.i == 0) goto label49;
     XMLVM_SOURCE_POSITION("CRLFReader.java", 109)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_CRLFReader*) _r3.o)->fields.gnu_xml_stream_CRLFReader.in_;
     //java_io_Reader_reset__[14]
     XMLVM_CHECK_NPE(0)
@@ -553,6 +562,7 @@ JAVA_INT gnu_xml_stream_CRLFReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JA
     _r0.i = -1;
     if (_r1.i == _r0.i) goto label50;
     XMLVM_SOURCE_POSITION("CRLFReader.java", 112)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_CRLFReader*) _r3.o)->fields.gnu_xml_stream_CRLFReader.in_;
     _r2.i = _r1.i + 1;
     _r2.i = _r2.i - _r5.i;
@@ -560,6 +570,7 @@ JAVA_INT gnu_xml_stream_CRLFReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JA
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) ((java_io_Reader*) _r0.o)->tib->vtable[11])(_r0.o, _r4.o, _r5.i, _r2.i);
     XMLVM_SOURCE_POSITION("CRLFReader.java", 113)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_stream_CRLFReader*) _r3.o)->fields.gnu_xml_stream_CRLFReader.in_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(2)
@@ -575,6 +586,7 @@ JAVA_INT gnu_xml_stream_CRLFReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JA
     return _r0.i;
     label50:;
     XMLVM_SOURCE_POSITION("CRLFReader.java", 117)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_stream_CRLFReader*) _r3.o)->fields.gnu_xml_stream_CRLFReader.in_;
     //java_io_Reader_read___char_1ARRAY_int_int[11]
     XMLVM_CHECK_NPE(0)
@@ -591,6 +603,7 @@ JAVA_BOOLEAN gnu_xml_stream_CRLFReader_markSupported__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CRLFReader.java", 125)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_CRLFReader*) _r1.o)->fields.gnu_xml_stream_CRLFReader.in_;
     //java_io_Reader_markSupported__[7]
     XMLVM_CHECK_NPE(0)
@@ -610,6 +623,7 @@ void gnu_xml_stream_CRLFReader_mark___int(JAVA_OBJECT me, JAVA_INT n1)
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("CRLFReader.java", 131)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_CRLFReader*) _r1.o)->fields.gnu_xml_stream_CRLFReader.in_;
     //java_io_Reader_mark___int[8]
     XMLVM_CHECK_NPE(0)
@@ -628,6 +642,7 @@ void gnu_xml_stream_CRLFReader_reset__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CRLFReader.java", 137)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_CRLFReader*) _r1.o)->fields.gnu_xml_stream_CRLFReader.in_;
     //java_io_Reader_reset__[14]
     XMLVM_CHECK_NPE(0)
@@ -650,6 +665,7 @@ JAVA_LONG gnu_xml_stream_CRLFReader_skip___long(JAVA_OBJECT me, JAVA_LONG n1)
     _r2.o = me;
     _r3.l = n1;
     XMLVM_SOURCE_POSITION("CRLFReader.java", 143)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_stream_CRLFReader*) _r2.o)->fields.gnu_xml_stream_CRLFReader.in_;
     //java_io_Reader_skip___long[15]
     XMLVM_CHECK_NPE(0)
@@ -667,6 +683,7 @@ void gnu_xml_stream_CRLFReader_close__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CRLFReader.java", 149)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_CRLFReader*) _r1.o)->fields.gnu_xml_stream_CRLFReader.in_;
     //java_io_Reader_close__[6]
     XMLVM_CHECK_NPE(0)
@@ -698,6 +715,7 @@ JAVA_INT gnu_xml_stream_CRLFReader_indexOfCRLF___char_1ARRAY_int_int(JAVA_OBJECT
     _r5.i = 1;
     XMLVM_SOURCE_POSITION("CRLFReader.java", 155)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_stream_CRLFReader*) _r6.o)->fields.gnu_xml_stream_CRLFReader.doReset_ = _r0.i;
     XMLVM_SOURCE_POSITION("CRLFReader.java", 156)
     _r0.i = _r8.i + _r9.i;
@@ -721,17 +739,20 @@ JAVA_INT gnu_xml_stream_CRLFReader_indexOfCRLF___char_1ARRAY_int_int(JAVA_OBJECT
     XMLVM_SOURCE_POSITION("CRLFReader.java", 163)
     if (_r2.i != _r1.i) goto label37;
     XMLVM_SOURCE_POSITION("CRLFReader.java", 165)
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((gnu_xml_stream_CRLFReader*) _r6.o)->fields.gnu_xml_stream_CRLFReader.in_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(3)
     _r3.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_io_Reader*) _r3.o)->tib->vtable[9])(_r3.o);
     XMLVM_SOURCE_POSITION("CRLFReader.java", 166)
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_stream_CRLFReader*) _r6.o)->fields.gnu_xml_stream_CRLFReader.doReset_ = _r5.i;
     label29:;
     XMLVM_SOURCE_POSITION("CRLFReader.java", 170)
     _r4.i = 10;
     if (_r3.i != _r4.i) goto label42;
     XMLVM_SOURCE_POSITION("CRLFReader.java", 172)
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_stream_CRLFReader*) _r6.o)->fields.gnu_xml_stream_CRLFReader.doReset_ = _r5.i;
     _r0 = _r2;
     XMLVM_SOURCE_POSITION("CRLFReader.java", 173)

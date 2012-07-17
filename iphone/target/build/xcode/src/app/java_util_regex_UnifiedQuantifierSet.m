@@ -282,6 +282,7 @@ void java_util_regex_UnifiedQuantifierSet___INIT____java_util_regex_LeafQuantifi
     XMLVM_CHECK_NPE(3)
     java_util_regex_LeafQuantifierSet___INIT____java_util_regex_LeafSet_java_util_regex_AbstractSet_int(_r3.o, _r0.o, _r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("UnifiedQuantifierSet.java", 37)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_QuantifierSet*) _r3.o)->fields.java_util_regex_QuantifierSet.innerSet_;
     //java_util_regex_AbstractSet_setNext___java_util_regex_AbstractSet[16]
     XMLVM_CHECK_NPE(0)
@@ -310,6 +311,7 @@ JAVA_INT java_util_regex_UnifiedQuantifierSet_matches___int_java_lang_CharSequen
     XMLVM_SOURCE_POSITION("UnifiedQuantifierSet.java", 43)
     _r0 = _r4;
     label1:;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_LeafQuantifierSet*) _r3.o)->fields.java_util_regex_LeafQuantifierSet.leaf_;
     //java_util_regex_LeafSet_charCount__[18]
     XMLVM_CHECK_NPE(1)
@@ -319,6 +321,7 @@ JAVA_INT java_util_regex_UnifiedQuantifierSet_matches___int_java_lang_CharSequen
     _r2.i = java_util_regex_MatchResultImpl_getRightBound__(_r6.o);
     if (_r1.i > _r2.i) goto label22;
     XMLVM_SOURCE_POSITION("UnifiedQuantifierSet.java", 44)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_LeafQuantifierSet*) _r3.o)->fields.java_util_regex_LeafQuantifierSet.leaf_;
     //java_util_regex_LeafSet_accepts___int_java_lang_CharSequence[17]
     XMLVM_CHECK_NPE(1)
@@ -326,6 +329,7 @@ JAVA_INT java_util_regex_UnifiedQuantifierSet_matches___int_java_lang_CharSequen
     if (_r1.i > 0) goto label29;
     label22:;
     XMLVM_SOURCE_POSITION("UnifiedQuantifierSet.java", 47)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(1)
@@ -334,6 +338,7 @@ JAVA_INT java_util_regex_UnifiedQuantifierSet_matches___int_java_lang_CharSequen
     return _r0.i;
     label29:;
     XMLVM_SOURCE_POSITION("UnifiedQuantifierSet.java", 45)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_LeafQuantifierSet*) _r3.o)->fields.java_util_regex_LeafQuantifierSet.leaf_;
     //java_util_regex_LeafSet_charCount__[18]
     XMLVM_CHECK_NPE(1)
@@ -360,6 +365,7 @@ JAVA_INT java_util_regex_UnifiedQuantifierSet_find___int_java_lang_CharSequence_
     _r6.o = n2;
     _r7.o = n3;
     XMLVM_SOURCE_POSITION("UnifiedQuantifierSet.java", 52)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_AbstractSet*) _r4.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_find___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[7]
     XMLVM_CHECK_NPE(0)
@@ -374,6 +380,7 @@ JAVA_INT java_util_regex_UnifiedQuantifierSet_find___int_java_lang_CharSequence_
     return _r0.i;
     label10:;
     XMLVM_SOURCE_POSITION("UnifiedQuantifierSet.java", 55)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_regex_LeafQuantifierSet*) _r4.o)->fields.java_util_regex_LeafQuantifierSet.leaf_;
     //java_util_regex_LeafSet_charCount__[18]
     XMLVM_CHECK_NPE(1)
@@ -386,6 +393,7 @@ JAVA_INT java_util_regex_UnifiedQuantifierSet_find___int_java_lang_CharSequence_
     XMLVM_SOURCE_POSITION("UnifiedQuantifierSet.java", 56)
     if (_r0.i < _r5.i) goto label31;
     XMLVM_SOURCE_POSITION("UnifiedQuantifierSet.java", 57)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_regex_LeafQuantifierSet*) _r4.o)->fields.java_util_regex_LeafQuantifierSet.leaf_;
     //java_util_regex_LeafSet_accepts___int_java_lang_CharSequence[17]
     XMLVM_CHECK_NPE(2)
@@ -396,6 +404,7 @@ JAVA_INT java_util_regex_UnifiedQuantifierSet_find___int_java_lang_CharSequence_
     goto label9;
     label33:;
     XMLVM_SOURCE_POSITION("UnifiedQuantifierSet.java", 59)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_regex_LeafQuantifierSet*) _r4.o)->fields.java_util_regex_LeafQuantifierSet.leaf_;
     //java_util_regex_LeafSet_charCount__[18]
     XMLVM_CHECK_NPE(1)

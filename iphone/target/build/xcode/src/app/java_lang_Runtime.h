@@ -74,6 +74,7 @@ void __DELETE_java_lang_Runtime(void* me, void* client_data);
 void __INIT_INSTANCE_MEMBERS_java_lang_Runtime(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer);
 JAVA_OBJECT __NEW_java_lang_Runtime();
 JAVA_OBJECT __NEW_INSTANCE_java_lang_Runtime();
+void xmlvm_init_native_java_lang_Runtime();
 JAVA_OBJECT java_lang_Runtime_GET_runtime();
 void java_lang_Runtime_PUT_runtime(JAVA_OBJECT v);
 void java_lang_Runtime___INIT___(JAVA_OBJECT me);

@@ -260,6 +260,7 @@ void org_apache_harmony_niochar_charset_ISO_8859_1_Decoder___INIT____org_apache_
     _r3.o = n2;
     _r0.f = 1.0;
     XMLVM_SOURCE_POSITION("ISO_8859_1.java", 53)
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_niochar_charset_ISO_8859_1_Decoder*) _r1.o)->fields.org_apache_harmony_niochar_charset_ISO_8859_1_Decoder.this_0_ = _r2.o;
     XMLVM_SOURCE_POSITION("ISO_8859_1.java", 51)
     XMLVM_CHECK_NPE(1)

@@ -479,15 +479,19 @@ void java_io_BufferedReader___INIT____java_io_Reader(JAVA_OBJECT me, JAVA_OBJECT
     XMLVM_CHECK_NPE(1)
     java_io_Reader___INIT____java_lang_Object(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("BufferedReader.java", 69)
+    XMLVM_CHECK_NPE(1)
     ((java_io_BufferedReader*) _r1.o)->fields.java_io_BufferedReader.mark_ = _r0.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 71)
+    XMLVM_CHECK_NPE(1)
     ((java_io_BufferedReader*) _r1.o)->fields.java_io_BufferedReader.markLimit_ = _r0.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 82)
+    XMLVM_CHECK_NPE(1)
     ((java_io_BufferedReader*) _r1.o)->fields.java_io_BufferedReader.in_ = _r2.o;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 83)
     _r0.i = 8192;
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r0.i);
+    XMLVM_CHECK_NPE(1)
     ((java_io_BufferedReader*) _r1.o)->fields.java_io_BufferedReader.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 84)
     XMLVM_EXIT_METHOD()
@@ -512,8 +516,10 @@ void java_io_BufferedReader___INIT____java_io_Reader_int(JAVA_OBJECT me, JAVA_OB
     XMLVM_CHECK_NPE(2)
     java_io_Reader___INIT____java_lang_Object(_r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("BufferedReader.java", 69)
+    XMLVM_CHECK_NPE(2)
     ((java_io_BufferedReader*) _r2.o)->fields.java_io_BufferedReader.mark_ = _r0.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 71)
+    XMLVM_CHECK_NPE(2)
     ((java_io_BufferedReader*) _r2.o)->fields.java_io_BufferedReader.markLimit_ = _r0.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 99)
     if (_r4.i > 0) goto label22;
@@ -527,10 +533,12 @@ void java_io_BufferedReader___INIT____java_io_Reader_int(JAVA_OBJECT me, JAVA_OB
     XMLVM_THROW_CUSTOM(_r0.o)
     label22:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 102)
+    XMLVM_CHECK_NPE(2)
     ((java_io_BufferedReader*) _r2.o)->fields.java_io_BufferedReader.in_ = _r3.o;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 103)
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r4.i);
+    XMLVM_CHECK_NPE(2)
     ((java_io_BufferedReader*) _r2.o)->fields.java_io_BufferedReader.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 104)
     XMLVM_EXIT_METHOD()
@@ -547,6 +555,7 @@ void java_io_BufferedReader_close__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 116)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_Reader*) _r2.o)->fields.java_io_Reader.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w23753aaab8b1b5)
@@ -556,12 +565,14 @@ void java_io_BufferedReader_close__(JAVA_OBJECT me)
     _r1.i = java_io_BufferedReader_isClosed__(_r2.o);
     if (_r1.i != 0) { XMLVM_MEMCPY(curThread_w23753aaab8b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaab8b1b5, sizeof(XMLVM_JMP_BUF)); goto label17; };
     XMLVM_SOURCE_POSITION("BufferedReader.java", 118)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_BufferedReader*) _r2.o)->fields.java_io_BufferedReader.in_;
     //java_io_Reader_close__[6]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT)) ((java_io_Reader*) _r1.o)->tib->vtable[6])(_r1.o);
     XMLVM_SOURCE_POSITION("BufferedReader.java", 119)
     _r1.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(2)
     ((java_io_BufferedReader*) _r2.o)->fields.java_io_BufferedReader.buf_ = _r1.o;
     // End try
     XMLVM_TRY_END
@@ -615,17 +626,24 @@ JAVA_INT java_io_BufferedReader_fillBuf__(JAVA_OBJECT me)
     _r6.i = -1;
     _r5.i = 0;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 134)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.mark_;
     if (_r0.i == _r6.i) goto label15;
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.pos_;
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.mark_;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.markLimit_;
     if (_r0.i < _r1.i) goto label35;
     label15:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 136)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.in_;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.buf_;
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.buf_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     //java_io_Reader_read___char_1ARRAY_int_int[11]
@@ -634,10 +652,13 @@ JAVA_INT java_io_BufferedReader_fillBuf__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("BufferedReader.java", 137)
     if (_r0.i <= 0) goto label34;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 138)
+    XMLVM_CHECK_NPE(7)
     ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.mark_ = _r6.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 139)
+    XMLVM_CHECK_NPE(7)
     ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.pos_ = _r5.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 140)
+    XMLVM_CHECK_NPE(7)
     ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.end_ = _r0.i;
     label34:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 167)
@@ -645,39 +666,53 @@ JAVA_INT java_io_BufferedReader_fillBuf__(JAVA_OBJECT me)
     return _r0.i;
     label35:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 145)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.mark_;
     if (_r0.i != 0) goto label93;
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.markLimit_;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.buf_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i <= _r1.i) goto label93;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 147)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.buf_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r0.i = _r0.i * 2;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 148)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.markLimit_;
     if (_r0.i <= _r1.i) goto label57;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 149)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.markLimit_;
     label57:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 151)
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r0.i);
     XMLVM_SOURCE_POSITION("BufferedReader.java", 152)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.buf_;
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.buf_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r5.i, _r0.o, _r5.i, _r2.i);
     XMLVM_SOURCE_POSITION("BufferedReader.java", 153)
+    XMLVM_CHECK_NPE(7)
     ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.buf_ = _r0.o;
     label69:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 163)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.in_;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.buf_;
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.pos_;
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.buf_;
     _r3.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r3.o));
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.pos_;
     _r3.i = _r3.i - _r4.i;
     //java_io_Reader_read___char_1ARRAY_int_int[11]
@@ -686,34 +721,49 @@ JAVA_INT java_io_BufferedReader_fillBuf__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("BufferedReader.java", 164)
     if (_r0.i == _r6.i) goto label34;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 165)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.end_;
     _r1.i = _r1.i + _r0.i;
+    XMLVM_CHECK_NPE(7)
     ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.end_ = _r1.i;
     goto label34;
     label93:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 154)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.mark_;
     if (_r0.i <= 0) goto label69;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 156)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.buf_;
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.mark_;
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.buf_;
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.buf_;
     _r3.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r3.o));
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.mark_;
     _r3.i = _r3.i - _r4.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r1.i, _r2.o, _r5.i, _r3.i);
     XMLVM_SOURCE_POSITION("BufferedReader.java", 157)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.pos_;
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.mark_;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(7)
     ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.pos_ = _r0.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 158)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.end_;
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.mark_;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(7)
     ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.end_ = _r0.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 159)
+    XMLVM_CHECK_NPE(7)
     ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.mark_ = _r5.i;
     goto label69;
     //XMLVM_END_WRAPPER
@@ -727,6 +777,7 @@ JAVA_BOOLEAN java_io_BufferedReader_isClosed__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 177)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_BufferedReader*) _r1.o)->fields.java_io_BufferedReader.buf_;
     if (_r0.o != JAVA_NULL) goto label6;
     _r0.i = 1;
@@ -759,6 +810,7 @@ void java_io_BufferedReader_mark___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label8:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 201)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_Reader*) _r3.o)->fields.java_io_Reader.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w23753aaac11b1c13)
@@ -798,9 +850,12 @@ void java_io_BufferedReader_mark___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_TRY_BEGIN(w23753aaac11b1c18)
     // Begin try
     XMLVM_SOURCE_POSITION("BufferedReader.java", 205)
+    XMLVM_CHECK_NPE(3)
     ((java_io_BufferedReader*) _r3.o)->fields.java_io_BufferedReader.markLimit_ = _r4.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 206)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_io_BufferedReader*) _r3.o)->fields.java_io_BufferedReader.pos_;
+    XMLVM_CHECK_NPE(3)
     ((java_io_BufferedReader*) _r3.o)->fields.java_io_BufferedReader.mark_ = _r1.i;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
@@ -841,6 +896,7 @@ JAVA_INT java_io_BufferedReader_read__(JAVA_OBJECT me)
     _r4.o = me;
     _r3.i = -1;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 237)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_io_Reader*) _r4.o)->fields.java_io_Reader.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w23753aaac13b1b6)
@@ -880,7 +936,9 @@ JAVA_INT java_io_BufferedReader_read__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w23753aaac13b1c11)
     // Begin try
     XMLVM_SOURCE_POSITION("BufferedReader.java", 242)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_io_BufferedReader*) _r4.o)->fields.java_io_BufferedReader.pos_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_io_BufferedReader*) _r4.o)->fields.java_io_BufferedReader.end_;
     if (_r1.i < _r2.i) { XMLVM_MEMCPY(curThread_w23753aaac13b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac13b1c11, sizeof(XMLVM_JMP_BUF)); goto label37; };
     XMLVM_CHECK_NPE(4)
@@ -896,9 +954,12 @@ JAVA_INT java_io_BufferedReader_read__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w23753aaac13b1c13)
     // Begin try
     XMLVM_SOURCE_POSITION("BufferedReader.java", 243)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_io_BufferedReader*) _r4.o)->fields.java_io_BufferedReader.buf_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_io_BufferedReader*) _r4.o)->fields.java_io_BufferedReader.pos_;
     _r3.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_io_BufferedReader*) _r4.o)->fields.java_io_BufferedReader.pos_ = _r3.i;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
@@ -960,6 +1021,7 @@ JAVA_INT java_io_BufferedReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_
     _r10.i = n3;
     _r6.i = -1;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 277)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_io_Reader*) _r7.o)->fields.java_io_Reader.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w23753aaac14b1b9)
@@ -1077,7 +1139,9 @@ JAVA_INT java_io_BufferedReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_
     XMLVM_TRY_BEGIN(w23753aaac14b1c28)
     // Begin try
     XMLVM_SOURCE_POSITION("BufferedReader.java", 290)
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.end_;
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.pos_;
     _r3.i = _r3.i - _r4.i;
     if (_r3.i <= 0) { XMLVM_MEMCPY(curThread_w23753aaac14b1c28->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac14b1c28, sizeof(XMLVM_JMP_BUF)); goto label75; };
@@ -1095,12 +1159,16 @@ JAVA_INT java_io_BufferedReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_
     XMLVM_TRY_BEGIN(w23753aaac14b1c30)
     // Begin try
     XMLVM_SOURCE_POSITION("BufferedReader.java", 293)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.buf_;
+    XMLVM_CHECK_NPE(7)
     _r5.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.pos_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r4.o, _r5.i, _r8.o, _r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("BufferedReader.java", 294)
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.pos_;
     _r4.i = _r4.i + _r3.i;
+    XMLVM_CHECK_NPE(7)
     ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.pos_ = _r4.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 295)
     _r2.i = _r2.i + _r3.i;
@@ -1118,6 +1186,7 @@ JAVA_INT java_io_BufferedReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_
     XMLVM_SOURCE_POSITION("BufferedReader.java", 305)
     if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w23753aaac14b1c32->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac14b1c32, sizeof(XMLVM_JMP_BUF)); goto label43; };
     if (_r1.i >= _r10.i) { XMLVM_MEMCPY(curThread_w23753aaac14b1c32->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac14b1c32, sizeof(XMLVM_JMP_BUF)); goto label87; };
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.in_;
     //java_io_Reader_ready__[13]
     XMLVM_CHECK_NPE(3)
@@ -1133,11 +1202,15 @@ JAVA_INT java_io_BufferedReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_
     XMLVM_TRY_BEGIN(w23753aaac14b1c34)
     // Begin try
     XMLVM_SOURCE_POSITION("BufferedReader.java", 317)
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.mark_;
     if (_r3.i == _r6.i) { XMLVM_MEMCPY(curThread_w23753aaac14b1c34->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac14b1c34, sizeof(XMLVM_JMP_BUF)); goto label100; };
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.pos_;
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.mark_;
     _r3.i = _r3.i - _r4.i;
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.markLimit_;
     if (_r3.i < _r4.i) { XMLVM_MEMCPY(curThread_w23753aaac14b1c34->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac14b1c34, sizeof(XMLVM_JMP_BUF)); goto label119; };
     // End try
@@ -1150,10 +1223,12 @@ JAVA_INT java_io_BufferedReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_
     XMLVM_TRY_BEGIN(w23753aaac14b1c36)
     // Begin try
     XMLVM_SOURCE_POSITION("BufferedReader.java", 318)
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.buf_;
     _r3.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r3.o));
     if (_r1.i < _r3.i) { XMLVM_MEMCPY(curThread_w23753aaac14b1c36->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac14b1c36, sizeof(XMLVM_JMP_BUF)); goto label119; };
     XMLVM_SOURCE_POSITION("BufferedReader.java", 319)
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.in_;
     //java_io_Reader_read___char_1ARRAY_int_int[11]
     XMLVM_CHECK_NPE(3)
@@ -1165,6 +1240,7 @@ JAVA_INT java_io_BufferedReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_
     _r1.i = _r1.i - _r3.i;
     _r2.i = -1;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 323)
+    XMLVM_CHECK_NPE(7)
     ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.mark_ = _r2.i;
     { XMLVM_MEMCPY(curThread_w23753aaac14b1c36->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac14b1c36, sizeof(XMLVM_JMP_BUF)); goto label43; };
     XMLVM_SOURCE_POSITION("BufferedReader.java", 329)
@@ -1202,7 +1278,9 @@ void java_io_BufferedReader_chompNewline__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 344)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_io_BufferedReader*) _r2.o)->fields.java_io_BufferedReader.pos_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_io_BufferedReader*) _r2.o)->fields.java_io_BufferedReader.end_;
     if (_r0.i != _r1.i) goto label13;
     XMLVM_CHECK_NPE(2)
@@ -1211,7 +1289,9 @@ void java_io_BufferedReader_chompNewline__(JAVA_OBJECT me)
     if (_r0.i == _r1.i) goto label29;
     label13:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 345)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_BufferedReader*) _r2.o)->fields.java_io_BufferedReader.buf_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_io_BufferedReader*) _r2.o)->fields.java_io_BufferedReader.pos_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -1219,8 +1299,10 @@ void java_io_BufferedReader_chompNewline__(JAVA_OBJECT me)
     _r1.i = 10;
     if (_r0.i != _r1.i) goto label29;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 346)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_io_BufferedReader*) _r2.o)->fields.java_io_BufferedReader.pos_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(2)
     ((java_io_BufferedReader*) _r2.o)->fields.java_io_BufferedReader.pos_ = _r0.i;
     label29:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 348)
@@ -1254,6 +1336,7 @@ JAVA_OBJECT java_io_BufferedReader_readLine__(JAVA_OBJECT me)
     _r8.i = 13;
     _r7.i = 10;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 362)
+    XMLVM_CHECK_NPE(13)
     _r0.o = ((java_io_Reader*) _r13.o)->fields.java_io_Reader.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w23753aaac16b1c10)
@@ -1293,7 +1376,9 @@ JAVA_OBJECT java_io_BufferedReader_readLine__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w23753aaac16b1c15)
     // Begin try
     XMLVM_SOURCE_POSITION("BufferedReader.java", 367)
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
+    XMLVM_CHECK_NPE(13)
     _r2.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.end_;
     if (_r1.i != _r2.i) { XMLVM_MEMCPY(curThread_w23753aaac16b1c15->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac16b1c15, sizeof(XMLVM_JMP_BUF)); goto label46; };
     XMLVM_CHECK_NPE(13)
@@ -1325,6 +1410,7 @@ JAVA_OBJECT java_io_BufferedReader_readLine__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w23753aaac16b1c19)
     // Begin try
     XMLVM_SOURCE_POSITION("BufferedReader.java", 370)
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
     // End try
     XMLVM_TRY_END
@@ -1335,6 +1421,7 @@ JAVA_OBJECT java_io_BufferedReader_readLine__(JAVA_OBJECT me)
     label48:;
     XMLVM_TRY_BEGIN(w23753aaac16b1c21)
     // Begin try
+    XMLVM_CHECK_NPE(13)
     _r2.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.end_;
     if (_r1.i < _r2.i) { XMLVM_MEMCPY(curThread_w23753aaac16b1c21->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac16b1c21, sizeof(XMLVM_JMP_BUF)); goto label85; };
     XMLVM_SOURCE_POSITION("BufferedReader.java", 390)
@@ -1345,9 +1432,13 @@ JAVA_OBJECT java_io_BufferedReader_readLine__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuilder___INIT____int(_r2.o, _r3.i);
     XMLVM_SOURCE_POSITION("BufferedReader.java", 394)
+    XMLVM_CHECK_NPE(13)
     _r3.o = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.buf_;
+    XMLVM_CHECK_NPE(13)
     _r4.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
+    XMLVM_CHECK_NPE(13)
     _r5.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.end_;
+    XMLVM_CHECK_NPE(13)
     _r6.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
     _r5.i = _r5.i - _r6.i;
     XMLVM_CHECK_NPE(2)
@@ -1362,7 +1453,9 @@ JAVA_OBJECT java_io_BufferedReader_readLine__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w23753aaac16b1c23)
     // Begin try
     XMLVM_SOURCE_POSITION("BufferedReader.java", 396)
+    XMLVM_CHECK_NPE(13)
     _r3.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.end_;
+    XMLVM_CHECK_NPE(13)
     ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_ = _r3.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 399)
     if (_r1.i != _r7.i) { XMLVM_MEMCPY(curThread_w23753aaac16b1c23->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac16b1c23, sizeof(XMLVM_JMP_BUF)); goto label164; };
@@ -1383,6 +1476,7 @@ JAVA_OBJECT java_io_BufferedReader_readLine__(JAVA_OBJECT me)
     label85:;
     XMLVM_TRY_BEGIN(w23753aaac16b1c25)
     // Begin try
+    XMLVM_CHECK_NPE(13)
     _r2.o = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.buf_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -1413,14 +1507,18 @@ JAVA_OBJECT java_io_BufferedReader_readLine__(JAVA_OBJECT me)
     if (_r2.i != _r7.i) { XMLVM_MEMCPY(curThread_w23753aaac16b1c29->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac16b1c29, sizeof(XMLVM_JMP_BUF)); goto label116; };
     XMLVM_SOURCE_POSITION("BufferedReader.java", 376)
     _r2.o = __NEW_java_lang_String();
+    XMLVM_CHECK_NPE(13)
     _r3.o = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.buf_;
+    XMLVM_CHECK_NPE(13)
     _r4.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
+    XMLVM_CHECK_NPE(13)
     _r5.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
     _r5.i = _r1.i - _r5.i;
     XMLVM_CHECK_NPE(2)
     java_lang_String___INIT____char_1ARRAY_int_int(_r2.o, _r3.o, _r4.i, _r5.i);
     XMLVM_SOURCE_POSITION("BufferedReader.java", 377)
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(13)
     ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_ = _r1.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 378)
     java_lang_Object_releaseLockRecursive__(_r0.o);
@@ -1439,17 +1537,23 @@ JAVA_OBJECT java_io_BufferedReader_readLine__(JAVA_OBJECT me)
     if (_r2.i != _r8.i) { XMLVM_MEMCPY(curThread_w23753aaac16b1c31->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac16b1c31, sizeof(XMLVM_JMP_BUF)); goto label91; };
     XMLVM_SOURCE_POSITION("BufferedReader.java", 380)
     _r2.o = __NEW_java_lang_String();
+    XMLVM_CHECK_NPE(13)
     _r3.o = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.buf_;
+    XMLVM_CHECK_NPE(13)
     _r4.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
+    XMLVM_CHECK_NPE(13)
     _r5.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
     _r5.i = _r1.i - _r5.i;
     XMLVM_CHECK_NPE(2)
     java_lang_String___INIT____char_1ARRAY_int_int(_r2.o, _r3.o, _r4.i, _r5.i);
     XMLVM_SOURCE_POSITION("BufferedReader.java", 381)
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(13)
     ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_ = _r1.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 382)
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
+    XMLVM_CHECK_NPE(13)
     _r3.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.end_;
     if (_r1.i < _r3.i) { XMLVM_MEMCPY(curThread_w23753aaac16b1c31->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac16b1c31, sizeof(XMLVM_JMP_BUF)); goto label147; };
     XMLVM_CHECK_NPE(13)
@@ -1465,15 +1569,19 @@ JAVA_OBJECT java_io_BufferedReader_readLine__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w23753aaac16b1c33)
     // Begin try
     XMLVM_SOURCE_POSITION("BufferedReader.java", 383)
+    XMLVM_CHECK_NPE(13)
     _r1.o = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.buf_;
+    XMLVM_CHECK_NPE(13)
     _r3.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r3.i);
     _r1.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i];
     if (_r1.i != _r7.i) { XMLVM_MEMCPY(curThread_w23753aaac16b1c33->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac16b1c33, sizeof(XMLVM_JMP_BUF)); goto label161; };
     XMLVM_SOURCE_POSITION("BufferedReader.java", 384)
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(13)
     ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_ = _r1.i;
     // End try
     XMLVM_TRY_END
@@ -1553,6 +1661,7 @@ JAVA_OBJECT java_io_BufferedReader_readLine__(JAVA_OBJECT me)
     label188:;
     XMLVM_TRY_BEGIN(w23753aaac16b1c45)
     // Begin try
+    XMLVM_CHECK_NPE(13)
     _r3.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
     _r12 = _r3;
     _r3 = _r1;
@@ -1566,14 +1675,19 @@ JAVA_OBJECT java_io_BufferedReader_readLine__(JAVA_OBJECT me)
     label193:;
     XMLVM_TRY_BEGIN(w23753aaac16b1c47)
     // Begin try
+    XMLVM_CHECK_NPE(13)
     _r4.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.end_;
     if (_r1.i < _r4.i) { XMLVM_MEMCPY(curThread_w23753aaac16b1c47->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac16b1c47, sizeof(XMLVM_JMP_BUF)); goto label214; };
     XMLVM_SOURCE_POSITION("BufferedReader.java", 429)
     if (_r3.i != 0) { XMLVM_MEMCPY(curThread_w23753aaac16b1c47->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac16b1c47, sizeof(XMLVM_JMP_BUF)); goto label286; };
     XMLVM_SOURCE_POSITION("BufferedReader.java", 430)
+    XMLVM_CHECK_NPE(13)
     _r1.o = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.buf_;
+    XMLVM_CHECK_NPE(13)
     _r4.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
+    XMLVM_CHECK_NPE(13)
     _r5.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.end_;
+    XMLVM_CHECK_NPE(13)
     _r6.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
     _r5.i = _r5.i - _r6.i;
     XMLVM_CHECK_NPE(2)
@@ -1590,6 +1704,7 @@ JAVA_OBJECT java_io_BufferedReader_readLine__(JAVA_OBJECT me)
     label214:;
     XMLVM_TRY_BEGIN(w23753aaac16b1c49)
     // Begin try
+    XMLVM_CHECK_NPE(13)
     _r4.o = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.buf_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r1.i);
@@ -1634,11 +1749,15 @@ JAVA_OBJECT java_io_BufferedReader_readLine__(JAVA_OBJECT me)
     if (_r3.i != _r8.i) { XMLVM_MEMCPY(curThread_w23753aaac16b1c55->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac16b1c55, sizeof(XMLVM_JMP_BUF)); goto label260; };
     if (_r4.i != _r7.i) { XMLVM_MEMCPY(curThread_w23753aaac16b1c55->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac16b1c55, sizeof(XMLVM_JMP_BUF)); goto label260; };
     XMLVM_SOURCE_POSITION("BufferedReader.java", 416)
+    XMLVM_CHECK_NPE(13)
     _r3.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
     if (_r1.i <= _r3.i) { XMLVM_MEMCPY(curThread_w23753aaac16b1c55->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac16b1c55, sizeof(XMLVM_JMP_BUF)); goto label248; };
     XMLVM_SOURCE_POSITION("BufferedReader.java", 417)
+    XMLVM_CHECK_NPE(13)
     _r3.o = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.buf_;
+    XMLVM_CHECK_NPE(13)
     _r4.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
+    XMLVM_CHECK_NPE(13)
     _r5.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
     _r5.i = _r1.i - _r5.i;
     _r5.i = _r5.i - _r10.i;
@@ -1655,6 +1774,7 @@ JAVA_OBJECT java_io_BufferedReader_readLine__(JAVA_OBJECT me)
     // Begin try
     XMLVM_SOURCE_POSITION("BufferedReader.java", 419)
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(13)
     ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_ = _r1.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 420)
     //java_lang_StringBuilder_toString__[5]
@@ -1673,11 +1793,15 @@ JAVA_OBJECT java_io_BufferedReader_readLine__(JAVA_OBJECT me)
     label260:;
     XMLVM_TRY_BEGIN(w23753aaac16b1c59)
     // Begin try
+    XMLVM_CHECK_NPE(13)
     _r3.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
     if (_r1.i <= _r3.i) { XMLVM_MEMCPY(curThread_w23753aaac16b1c59->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac16b1c59, sizeof(XMLVM_JMP_BUF)); goto label276; };
     XMLVM_SOURCE_POSITION("BufferedReader.java", 423)
+    XMLVM_CHECK_NPE(13)
     _r3.o = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.buf_;
+    XMLVM_CHECK_NPE(13)
     _r4.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
+    XMLVM_CHECK_NPE(13)
     _r5.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
     _r5.i = _r1.i - _r5.i;
     _r5.i = _r5.i - _r10.i;
@@ -1693,6 +1817,7 @@ JAVA_OBJECT java_io_BufferedReader_readLine__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w23753aaac16b1c61)
     // Begin try
     XMLVM_SOURCE_POSITION("BufferedReader.java", 425)
+    XMLVM_CHECK_NPE(13)
     ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_ = _r1.i;
     //java_lang_StringBuilder_toString__[5]
     XMLVM_CHECK_NPE(2)
@@ -1710,9 +1835,13 @@ JAVA_OBJECT java_io_BufferedReader_readLine__(JAVA_OBJECT me)
     label286:;
     XMLVM_TRY_BEGIN(w23753aaac16b1c63)
     // Begin try
+    XMLVM_CHECK_NPE(13)
     _r1.o = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.buf_;
+    XMLVM_CHECK_NPE(13)
     _r4.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
+    XMLVM_CHECK_NPE(13)
     _r5.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.end_;
+    XMLVM_CHECK_NPE(13)
     _r6.i = ((java_io_BufferedReader*) _r13.o)->fields.java_io_BufferedReader.pos_;
     _r5.i = _r5.i - _r6.i;
     _r5.i = _r5.i - _r10.i;
@@ -1740,6 +1869,7 @@ JAVA_BOOLEAN java_io_BufferedReader_ready__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 452)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_Reader*) _r3.o)->fields.java_io_Reader.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w23753aaac17b1b5)
@@ -1779,10 +1909,13 @@ JAVA_BOOLEAN java_io_BufferedReader_ready__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w23753aaac17b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("BufferedReader.java", 456)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_io_BufferedReader*) _r3.o)->fields.java_io_BufferedReader.end_;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_io_BufferedReader*) _r3.o)->fields.java_io_BufferedReader.pos_;
     _r1.i = _r1.i - _r2.i;
     if (_r1.i > 0) { XMLVM_MEMCPY(curThread_w23753aaac17b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac17b1c10, sizeof(XMLVM_JMP_BUF)); goto label42; };
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_BufferedReader*) _r3.o)->fields.java_io_BufferedReader.in_;
     //java_io_Reader_ready__[13]
     XMLVM_CHECK_NPE(1)
@@ -1823,6 +1956,7 @@ void java_io_BufferedReader_reset__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 472)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_Reader*) _r3.o)->fields.java_io_Reader.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w23753aaac18b1b5)
@@ -1862,6 +1996,7 @@ void java_io_BufferedReader_reset__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w23753aaac18b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("BufferedReader.java", 476)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_io_BufferedReader*) _r3.o)->fields.java_io_BufferedReader.mark_;
     _r2.i = -1;
     if (_r1.i != _r2.i) { XMLVM_MEMCPY(curThread_w23753aaac18b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac18b1c10, sizeof(XMLVM_JMP_BUF)); goto label41; };
@@ -1883,7 +2018,9 @@ void java_io_BufferedReader_reset__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w23753aaac18b1c12)
     // Begin try
     XMLVM_SOURCE_POSITION("BufferedReader.java", 479)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_io_BufferedReader*) _r3.o)->fields.java_io_BufferedReader.mark_;
+    XMLVM_CHECK_NPE(3)
     ((java_io_BufferedReader*) _r3.o)->fields.java_io_BufferedReader.pos_ = _r1.i;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
@@ -1925,6 +2062,7 @@ JAVA_LONG java_io_BufferedReader_skip___long(JAVA_OBJECT me, JAVA_LONG n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 505)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_io_Reader*) _r7.o)->fields.java_io_Reader.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w23753aaac19b1c15)
@@ -1993,17 +2131,21 @@ JAVA_LONG java_io_BufferedReader_skip___long(JAVA_OBJECT me, JAVA_LONG n1)
     XMLVM_TRY_BEGIN(w23753aaac19b1c28)
     // Begin try
     XMLVM_SOURCE_POSITION("BufferedReader.java", 512)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.end_;
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.pos_;
     _r1.i = _r1.i - _r2.i;
     _r1.l = (JAVA_LONG) _r1.i;
     _r1.i = _r1.l > _r8.l ? 1 : (_r1.l == _r8.l ? 0 : -1);
     if (_r1.i < 0) { XMLVM_MEMCPY(curThread_w23753aaac19b1c28->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac19b1c28, sizeof(XMLVM_JMP_BUF)); goto label65; };
     XMLVM_SOURCE_POSITION("BufferedReader.java", 513)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.pos_;
     _r1.l = (JAVA_LONG) _r1.i;
     _r1.l = _r1.l + _r8.l;
     _r1.i = (JAVA_INT) _r1.l;
+    XMLVM_CHECK_NPE(7)
     ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.pos_ = _r1.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 514)
     java_lang_Object_releaseLockRecursive__(_r0.o);
@@ -2019,12 +2161,16 @@ JAVA_LONG java_io_BufferedReader_skip___long(JAVA_OBJECT me, JAVA_LONG n1)
     label65:;
     XMLVM_TRY_BEGIN(w23753aaac19b1c30)
     // Begin try
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.end_;
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.pos_;
     _r1.i = _r1.i - _r2.i;
     _r1.l = (JAVA_LONG) _r1.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 518)
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.end_;
+    XMLVM_CHECK_NPE(7)
     ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.pos_ = _r3.i;
     // End try
     XMLVM_TRY_END
@@ -2069,7 +2215,9 @@ JAVA_LONG java_io_BufferedReader_skip___long(JAVA_OBJECT me, JAVA_LONG n1)
     label92:;
     XMLVM_TRY_BEGIN(w23753aaac19b1c36)
     // Begin try
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.end_;
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.pos_;
     _r3.i = _r3.i - _r4.i;
     _r3.l = (JAVA_LONG) _r3.i;
@@ -2077,11 +2225,13 @@ JAVA_LONG java_io_BufferedReader_skip___long(JAVA_OBJECT me, JAVA_LONG n1)
     _r3.i = _r3.l > _r5.l ? 1 : (_r3.l == _r5.l ? 0 : -1);
     if (_r3.i < 0) { XMLVM_MEMCPY(curThread_w23753aaac19b1c36->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23753aaac19b1c36, sizeof(XMLVM_JMP_BUF)); goto label116; };
     XMLVM_SOURCE_POSITION("BufferedReader.java", 524)
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.pos_;
     _r3.l = (JAVA_LONG) _r3.i;
     _r1.l = _r8.l - _r1.l;
     _r1.l = _r1.l + _r3.l;
     _r1.i = (JAVA_INT) _r1.l;
+    XMLVM_CHECK_NPE(7)
     ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.pos_ = _r1.i;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 525)
     java_lang_Object_releaseLockRecursive__(_r0.o);
@@ -2097,13 +2247,17 @@ JAVA_LONG java_io_BufferedReader_skip___long(JAVA_OBJECT me, JAVA_LONG n1)
     label116:;
     XMLVM_TRY_BEGIN(w23753aaac19b1c38)
     // Begin try
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.end_;
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.pos_;
     _r3.i = _r3.i - _r4.i;
     _r3.l = (JAVA_LONG) _r3.i;
     _r1.l = _r1.l + _r3.l;
     XMLVM_SOURCE_POSITION("BufferedReader.java", 529)
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.end_;
+    XMLVM_CHECK_NPE(7)
     ((java_io_BufferedReader*) _r7.o)->fields.java_io_BufferedReader.pos_ = _r3.i;
     // End try
     XMLVM_TRY_END

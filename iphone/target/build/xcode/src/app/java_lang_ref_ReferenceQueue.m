@@ -328,13 +328,17 @@ void java_lang_ref_ReferenceQueue___INIT___(JAVA_OBJECT me)
     _r0.i = 128;
     XMLVM_CHECK_NPE(2)
     _r0.o = java_lang_ref_ReferenceQueue_newArray___int(_r2.o, _r0.i);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ref_ReferenceQueue*) _r2.o)->fields.java_lang_ref_ReferenceQueue.references_ = _r0.o;
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 45)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ref_ReferenceQueue*) _r2.o)->fields.java_lang_ref_ReferenceQueue.head_ = _r1.i;
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 46)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ref_ReferenceQueue*) _r2.o)->fields.java_lang_ref_ReferenceQueue.tail_ = _r1.i;
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 47)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ref_ReferenceQueue*) _r2.o)->fields.java_lang_ref_ReferenceQueue.empty_ = _r0.i;
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 48)
     XMLVM_EXIT_METHOD()
@@ -373,6 +377,7 @@ JAVA_OBJECT java_lang_ref_ReferenceQueue_poll__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w1317aaab7b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 66)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_lang_ref_ReferenceQueue*) _r3.o)->fields.java_lang_ref_ReferenceQueue.empty_;
     if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w1317aaab7b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w1317aaab7b1b4, sizeof(XMLVM_JMP_BUF)); goto label8; };
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 67)
@@ -401,9 +406,12 @@ JAVA_OBJECT java_lang_ref_ReferenceQueue_poll__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w1317aaab7b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 69)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_lang_ref_ReferenceQueue*) _r3.o)->fields.java_lang_ref_ReferenceQueue.references_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_ref_ReferenceQueue*) _r3.o)->fields.java_lang_ref_ReferenceQueue.head_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_lang_ref_ReferenceQueue*) _r3.o)->fields.java_lang_ref_ReferenceQueue.head_ = _r2.i;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -412,12 +420,15 @@ JAVA_OBJECT java_lang_ref_ReferenceQueue_poll__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_ref_Reference_dequeue__(_r0.o);
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 71)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_ref_ReferenceQueue*) _r3.o)->fields.java_lang_ref_ReferenceQueue.head_;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_lang_ref_ReferenceQueue*) _r3.o)->fields.java_lang_ref_ReferenceQueue.references_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     if (_r1.i != _r2.i) { XMLVM_MEMCPY(curThread_w1317aaab7b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w1317aaab7b1b8, sizeof(XMLVM_JMP_BUF)); goto label31; };
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 72)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(3)
     ((java_lang_ref_ReferenceQueue*) _r3.o)->fields.java_lang_ref_ReferenceQueue.head_ = _r1.i;
     // End try
     XMLVM_TRY_END
@@ -429,11 +440,14 @@ JAVA_OBJECT java_lang_ref_ReferenceQueue_poll__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w1317aaab7b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 74)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_ref_ReferenceQueue*) _r3.o)->fields.java_lang_ref_ReferenceQueue.head_;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_lang_ref_ReferenceQueue*) _r3.o)->fields.java_lang_ref_ReferenceQueue.tail_;
     if (_r1.i != _r2.i) { XMLVM_MEMCPY(curThread_w1317aaab7b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w1317aaab7b1c10, sizeof(XMLVM_JMP_BUF)); goto label40; };
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 75)
     _r1.i = 1;
+    XMLVM_CHECK_NPE(3)
     ((java_lang_ref_ReferenceQueue*) _r3.o)->fields.java_lang_ref_ReferenceQueue.empty_ = _r1.i;
     // End try
     XMLVM_TRY_END
@@ -512,12 +526,14 @@ JAVA_OBJECT java_lang_ref_ReferenceQueue_remove___long(JAVA_OBJECT me, JAVA_LONG
     XMLVM_TRY_BEGIN(w1317aaab9b1c14)
     // Begin try
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 118)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_lang_ref_ReferenceQueue*) _r3.o)->fields.java_lang_ref_ReferenceQueue.empty_;
     if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w1317aaab9b1c14->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w1317aaab9b1c14, sizeof(XMLVM_JMP_BUF)); goto label27; };
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 119)
     XMLVM_CHECK_NPE(3)
     java_lang_Object_wait___long(_r3.o, _r4.l);
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 120)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_lang_ref_ReferenceQueue*) _r3.o)->fields.java_lang_ref_ReferenceQueue.empty_;
     if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w1317aaab9b1c14->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w1317aaab9b1c14, sizeof(XMLVM_JMP_BUF)); goto label27; };
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 121)
@@ -546,9 +562,12 @@ JAVA_OBJECT java_lang_ref_ReferenceQueue_remove___long(JAVA_OBJECT me, JAVA_LONG
     XMLVM_TRY_BEGIN(w1317aaab9b1c18)
     // Begin try
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 124)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_lang_ref_ReferenceQueue*) _r3.o)->fields.java_lang_ref_ReferenceQueue.references_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_ref_ReferenceQueue*) _r3.o)->fields.java_lang_ref_ReferenceQueue.head_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_lang_ref_ReferenceQueue*) _r3.o)->fields.java_lang_ref_ReferenceQueue.head_ = _r2.i;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -557,12 +576,15 @@ JAVA_OBJECT java_lang_ref_ReferenceQueue_remove___long(JAVA_OBJECT me, JAVA_LONG
     XMLVM_CHECK_NPE(0)
     java_lang_ref_Reference_dequeue__(_r0.o);
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 126)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_ref_ReferenceQueue*) _r3.o)->fields.java_lang_ref_ReferenceQueue.head_;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_lang_ref_ReferenceQueue*) _r3.o)->fields.java_lang_ref_ReferenceQueue.references_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     if (_r1.i != _r2.i) { XMLVM_MEMCPY(curThread_w1317aaab9b1c18->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w1317aaab9b1c18, sizeof(XMLVM_JMP_BUF)); goto label50; };
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 127)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(3)
     ((java_lang_ref_ReferenceQueue*) _r3.o)->fields.java_lang_ref_ReferenceQueue.head_ = _r1.i;
     // End try
     XMLVM_TRY_END
@@ -574,11 +596,14 @@ JAVA_OBJECT java_lang_ref_ReferenceQueue_remove___long(JAVA_OBJECT me, JAVA_LONG
     XMLVM_TRY_BEGIN(w1317aaab9b1c20)
     // Begin try
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 129)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_ref_ReferenceQueue*) _r3.o)->fields.java_lang_ref_ReferenceQueue.head_;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_lang_ref_ReferenceQueue*) _r3.o)->fields.java_lang_ref_ReferenceQueue.tail_;
     if (_r1.i != _r2.i) { XMLVM_MEMCPY(curThread_w1317aaab9b1c20->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w1317aaab9b1c20, sizeof(XMLVM_JMP_BUF)); goto label64; };
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 130)
     _r1.i = 1;
+    XMLVM_CHECK_NPE(3)
     ((java_lang_ref_ReferenceQueue*) _r3.o)->fields.java_lang_ref_ReferenceQueue.empty_ = _r1.i;
     // End try
     XMLVM_TRY_END
@@ -645,12 +670,16 @@ JAVA_BOOLEAN java_lang_ref_ReferenceQueue_enqueue___java_lang_ref_Reference(JAVA
     XMLVM_TRY_BEGIN(w1317aaac10b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 148)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.empty_;
     if (_r0.i != 0) { XMLVM_MEMCPY(curThread_w1317aaac10b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w1317aaac10b1b5, sizeof(XMLVM_JMP_BUF)); goto label68; };
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.head_;
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.tail_;
     if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w1317aaac10b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w1317aaac10b1b5, sizeof(XMLVM_JMP_BUF)); goto label68; };
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 150)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.references_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r0.d = (JAVA_DOUBLE) _r0.i;
@@ -661,24 +690,33 @@ JAVA_BOOLEAN java_lang_ref_ReferenceQueue_enqueue___java_lang_ref_Reference(JAVA
     XMLVM_CHECK_NPE(6)
     _r0.o = java_lang_ref_ReferenceQueue_newArray___int(_r6.o, _r0.i);
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 152)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.references_;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.head_;
     _r3.i = 0;
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.references_;
     _r4.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r4.o));
+    XMLVM_CHECK_NPE(6)
     _r5.i = ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.head_;
     _r4.i = _r4.i - _r5.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r2.i, _r0.o, _r3.i, _r4.i);
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 153)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.tail_;
     if (_r1.i <= 0) { XMLVM_MEMCPY(curThread_w1317aaac10b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w1317aaac10b1b5, sizeof(XMLVM_JMP_BUF)); goto label58; };
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 154)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.references_;
     _r2.i = 0;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.references_;
     _r3.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r3.o));
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.head_;
     _r3.i = _r3.i - _r4.i;
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.tail_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r2.i, _r0.o, _r3.i, _r4.i);
     // End try
@@ -692,12 +730,16 @@ JAVA_BOOLEAN java_lang_ref_ReferenceQueue_enqueue___java_lang_ref_Reference(JAVA
     // Begin try
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 156)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(6)
     ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.head_ = _r1.i;
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 157)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.references_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
+    XMLVM_CHECK_NPE(6)
     ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.tail_ = _r1.i;
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 158)
+    XMLVM_CHECK_NPE(6)
     ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.references_ = _r0.o;
     // End try
     XMLVM_TRY_END
@@ -709,20 +751,26 @@ JAVA_BOOLEAN java_lang_ref_ReferenceQueue_enqueue___java_lang_ref_Reference(JAVA
     XMLVM_TRY_BEGIN(w1317aaac10b1b9)
     // Begin try
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 160)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.references_;
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.tail_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(6)
     ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.tail_ = _r2.i;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r7.o;
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 161)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.tail_;
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.references_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w1317aaac10b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w1317aaac10b1b9, sizeof(XMLVM_JMP_BUF)); goto label88; };
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 162)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(6)
     ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.tail_ = _r0.i;
     // End try
     XMLVM_TRY_END
@@ -735,6 +783,7 @@ JAVA_BOOLEAN java_lang_ref_ReferenceQueue_enqueue___java_lang_ref_Reference(JAVA
     // Begin try
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 164)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(6)
     ((java_lang_ref_ReferenceQueue*) _r6.o)->fields.java_lang_ref_ReferenceQueue.empty_ = _r0.i;
     XMLVM_SOURCE_POSITION("ReferenceQueue.java", 165)
     XMLVM_CHECK_NPE(6)

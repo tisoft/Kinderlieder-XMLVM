@@ -1098,6 +1098,7 @@ void gnu_xml_dom_Consumer_Backdoor_startEntity___java_lang_String(JAVA_OBJECT me
     _r1.i = 5;
     if (_r0.i != _r1.i) goto label17;
     XMLVM_SOURCE_POSITION("Consumer.java", 335)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_DomNode*) _r3.o)->fields.gnu_xml_dom_DomNode.readonly_ = _r2.i;
     goto label17;
     //XMLVM_END_WRAPPER

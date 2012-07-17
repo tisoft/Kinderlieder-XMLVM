@@ -218,6 +218,7 @@ void my_kinderlieder_PdfViewController_5___INIT____my_kinderlieder_PdfViewContro
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 118)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_PdfViewController_5*) _r0.o)->fields.my_kinderlieder_PdfViewController_5.this_0_ = _r1.o;
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
@@ -235,19 +236,27 @@ void my_kinderlieder_PdfViewController_5_clicked__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 120)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((my_kinderlieder_PdfViewController_5*) _r2.o)->fields.my_kinderlieder_PdfViewController_5.this_0_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((my_kinderlieder_PdfViewController_5*) _r2.o)->fields.my_kinderlieder_PdfViewController_5.this_0_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((my_kinderlieder_PdfViewController*) _r1.o)->fields.my_kinderlieder_PdfViewController.repeat_;
     if (_r1.i != 0) goto label36;
     _r1.i = 1;
     label9:;
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_PdfViewController*) _r0.o)->fields.my_kinderlieder_PdfViewController.repeat_ = _r1.i;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 121)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((my_kinderlieder_PdfViewController_5*) _r2.o)->fields.my_kinderlieder_PdfViewController_5.this_0_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((my_kinderlieder_PdfViewController*) _r0.o)->fields.my_kinderlieder_PdfViewController.repeat_;
     if (_r0.i == 0) goto label38;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 122)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((my_kinderlieder_PdfViewController_5*) _r2.o)->fields.my_kinderlieder_PdfViewController_5.this_0_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((my_kinderlieder_PdfViewController*) _r0.o)->fields.my_kinderlieder_PdfViewController.repeatButton_;
     // "no-repeat.png"
     _r1.o = xmlvm_create_java_string_from_pool(2355);
@@ -256,6 +265,7 @@ void my_kinderlieder_PdfViewController_5_clicked__(JAVA_OBJECT me)
     org_xmlvm_iphone_UIBarItem_setImage___org_xmlvm_iphone_UIImage(_r0.o, _r1.o);
     label30:;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 126)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((my_kinderlieder_PdfViewController_5*) _r2.o)->fields.my_kinderlieder_PdfViewController_5.this_0_;
     my_kinderlieder_PdfViewController_access$300___my_kinderlieder_PdfViewController(_r0.o);
     XMLVM_SOURCE_POSITION("PdfViewController.java", 128)
@@ -266,7 +276,9 @@ void my_kinderlieder_PdfViewController_5_clicked__(JAVA_OBJECT me)
     goto label9;
     label38:;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 124)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((my_kinderlieder_PdfViewController_5*) _r2.o)->fields.my_kinderlieder_PdfViewController_5.this_0_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((my_kinderlieder_PdfViewController*) _r0.o)->fields.my_kinderlieder_PdfViewController.repeatButton_;
     // "repeat.png"
     _r1.o = xmlvm_create_java_string_from_pool(1122);

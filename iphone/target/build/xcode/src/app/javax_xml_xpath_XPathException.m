@@ -324,6 +324,7 @@ void javax_xml_xpath_XPathException___INIT____java_lang_Throwable(JAVA_OBJECT me
     XMLVM_CHECK_NPE(0)
     java_lang_Exception___INIT____java_lang_Throwable(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("XPathException.java", 65)
+    XMLVM_CHECK_NPE(0)
     ((javax_xml_xpath_XPathException*) _r0.o)->fields.javax_xml_xpath_XPathException.cause_ = _r1.o;
     XMLVM_SOURCE_POSITION("XPathException.java", 66)
     XMLVM_EXIT_METHOD()
@@ -339,6 +340,7 @@ JAVA_OBJECT javax_xml_xpath_XPathException_getCause__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XPathException.java", 70)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_xpath_XPathException*) _r1.o)->fields.javax_xml_xpath_XPathException.cause_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

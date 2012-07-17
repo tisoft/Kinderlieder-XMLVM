@@ -367,6 +367,7 @@ void java_security_Permission___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OB
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Permission.java", 101)
+    XMLVM_CHECK_NPE(0)
     ((java_security_Permission*) _r0.o)->fields.java_security_Permission.name_ = _r1.o;
     XMLVM_SOURCE_POSITION("Permission.java", 102)
     XMLVM_EXIT_METHOD()
@@ -382,6 +383,7 @@ JAVA_OBJECT java_security_Permission_getName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Permission.java", 110)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_security_Permission*) _r1.o)->fields.java_security_Permission.name_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

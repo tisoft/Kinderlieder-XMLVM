@@ -680,9 +680,11 @@ void java_net_SocketImpl___INIT___(JAVA_OBJECT me)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("SocketImpl.java", 64)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((java_net_SocketImpl*) _r1.o)->fields.java_net_SocketImpl.streaming_ = _r0.i;
     XMLVM_SOURCE_POSITION("SocketImpl.java", 74)
     _r0.o = org_apache_harmony_luni_platform_Platform_getNetworkSystem__();
+    XMLVM_CHECK_NPE(1)
     ((java_net_SocketImpl*) _r1.o)->fields.java_net_SocketImpl.netImpl_ = _r0.o;
     XMLVM_SOURCE_POSITION("SocketImpl.java", 75)
     XMLVM_EXIT_METHOD()
@@ -698,6 +700,7 @@ JAVA_OBJECT java_net_SocketImpl_getFileDescriptor__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SocketImpl.java", 163)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_SocketImpl*) _r1.o)->fields.java_net_SocketImpl.fd_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -712,6 +715,7 @@ JAVA_OBJECT java_net_SocketImpl_getInetAddress__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SocketImpl.java", 172)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_SocketImpl*) _r1.o)->fields.java_net_SocketImpl.address_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -726,6 +730,7 @@ JAVA_INT java_net_SocketImpl_getLocalPort__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SocketImpl.java", 192)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_SocketImpl*) _r1.o)->fields.java_net_SocketImpl.localport_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -740,6 +745,7 @@ JAVA_INT java_net_SocketImpl_getPort__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SocketImpl.java", 222)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_SocketImpl*) _r1.o)->fields.java_net_SocketImpl.port_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -772,6 +778,7 @@ JAVA_OBJECT java_net_SocketImpl_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(1074);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_net_SocketImpl*) _r2.o)->fields.java_net_SocketImpl.port_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);
@@ -816,13 +823,18 @@ JAVA_INT java_net_SocketImpl_write___byte_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OB
     _r9.i = n2;
     _r10.i = n3;
     XMLVM_SOURCE_POSITION("SocketImpl.java", 280)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_net_SocketImpl*) _r7.o)->fields.java_net_SocketImpl.streaming_;
     if (_r0.i != 0) goto label20;
     XMLVM_SOURCE_POSITION("SocketImpl.java", 281)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_net_SocketImpl*) _r7.o)->fields.java_net_SocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_net_SocketImpl*) _r7.o)->fields.java_net_SocketImpl.fd_;
+    XMLVM_CHECK_NPE(7)
     _r5.i = ((java_net_SocketImpl*) _r7.o)->fields.java_net_SocketImpl.port_;
     XMLVM_SOURCE_POSITION("SocketImpl.java", 282)
+    XMLVM_CHECK_NPE(7)
     _r6.o = ((java_net_SocketImpl*) _r7.o)->fields.java_net_SocketImpl.address_;
     _r2 = _r8;
     _r3 = _r9;
@@ -834,7 +846,9 @@ JAVA_INT java_net_SocketImpl_write___byte_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OB
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label20:;
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_net_SocketImpl*) _r7.o)->fields.java_net_SocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_net_SocketImpl*) _r7.o)->fields.java_net_SocketImpl.fd_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_write___java_io_FileDescriptor_byte_1ARRAY_int_int])(_r0.o, _r1.o, _r8.o, _r9.i, _r10.i);

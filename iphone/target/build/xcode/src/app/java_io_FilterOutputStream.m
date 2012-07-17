@@ -296,6 +296,7 @@ void java_io_FilterOutputStream___INIT____java_io_OutputStream(JAVA_OBJECT me, J
     XMLVM_CHECK_NPE(0)
     java_io_OutputStream___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("FilterOutputStream.java", 48)
+    XMLVM_CHECK_NPE(0)
     ((java_io_FilterOutputStream*) _r0.o)->fields.java_io_FilterOutputStream.out_ = _r1.o;
     XMLVM_SOURCE_POSITION("FilterOutputStream.java", 49)
     XMLVM_EXIT_METHOD()
@@ -313,7 +314,7 @@ void java_io_FilterOutputStream_close__(JAVA_OBJECT me)
     _r2.o = me;
     XMLVM_SOURCE_POSITION("FilterOutputStream.java", 59)
     _r0.o = JAVA_NULL;
-    XMLVM_TRY_BEGIN(w44301aaab2b1b4)
+    XMLVM_TRY_BEGIN(w44306aaab2b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("FilterOutputStream.java", 61)
     //java_io_FilterOutputStream_flush__[8]
@@ -321,24 +322,25 @@ void java_io_FilterOutputStream_close__(JAVA_OBJECT me)
     (*(void (*)(JAVA_OBJECT)) ((java_io_FilterOutputStream*) _r2.o)->tib->vtable[8])(_r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44301aaab2b1b4)
-        XMLVM_CATCH_SPECIFIC(w44301aaab2b1b4,java_lang_Throwable,20)
-    XMLVM_CATCH_END(w44301aaab2b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44301aaab2b1b4)
+    XMLVM_CATCH_BEGIN(w44306aaab2b1b4)
+        XMLVM_CATCH_SPECIFIC(w44306aaab2b1b4,java_lang_Throwable,20)
+    XMLVM_CATCH_END(w44306aaab2b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44306aaab2b1b4)
     label4:;
-    XMLVM_TRY_BEGIN(w44301aaab2b1b6)
+    XMLVM_TRY_BEGIN(w44306aaab2b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("FilterOutputStream.java", 67)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_FilterOutputStream*) _r2.o)->fields.java_io_FilterOutputStream.out_;
     //java_io_OutputStream_close__[7]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT)) ((java_io_OutputStream*) _r1.o)->tib->vtable[7])(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44301aaab2b1b6)
-        XMLVM_CATCH_SPECIFIC(w44301aaab2b1b6,java_lang_Throwable,15)
-    XMLVM_CATCH_END(w44301aaab2b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44301aaab2b1b6)
+    XMLVM_CATCH_BEGIN(w44306aaab2b1b6)
+        XMLVM_CATCH_SPECIFIC(w44306aaab2b1b6,java_lang_Throwable,15)
+    XMLVM_CATCH_END(w44306aaab2b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44306aaab2b1b6)
     label9:;
     XMLVM_SOURCE_POSITION("FilterOutputStream.java", 74)
     if (_r0.o == JAVA_NULL) goto label14;
@@ -350,8 +352,8 @@ void java_io_FilterOutputStream_close__(JAVA_OBJECT me)
     return;
     label15:;
     XMLVM_SOURCE_POSITION("FilterOutputStream.java", 68)
-    java_lang_Thread* curThread_w44301aaab2b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w44301aaab2b1c17->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w44306aaab2b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w44306aaab2b1c17->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("FilterOutputStream.java", 69)
     if (_r0.o != JAVA_NULL) goto label9;
     _r0 = _r1;
@@ -359,8 +361,8 @@ void java_io_FilterOutputStream_close__(JAVA_OBJECT me)
     goto label9;
     label20:;
     XMLVM_SOURCE_POSITION("FilterOutputStream.java", 62)
-    java_lang_Thread* curThread_w44301aaab2b1c25 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w44301aaab2b1c25->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w44306aaab2b1c25 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w44306aaab2b1c25->fields.java_lang_Thread.xmlvmException_;
     goto label4;
     //XMLVM_END_WRAPPER
 }
@@ -373,6 +375,7 @@ void java_io_FilterOutputStream_flush__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FilterOutputStream.java", 88)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_FilterOutputStream*) _r1.o)->fields.java_io_FilterOutputStream.out_;
     //java_io_OutputStream_flush__[8]
     XMLVM_CHECK_NPE(0)
@@ -479,6 +482,7 @@ void java_io_FilterOutputStream_write___int(JAVA_OBJECT me, JAVA_INT n1)
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("FilterOutputStream.java", 152)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_FilterOutputStream*) _r1.o)->fields.java_io_FilterOutputStream.out_;
     //java_io_OutputStream_write___int[11]
     XMLVM_CHECK_NPE(0)

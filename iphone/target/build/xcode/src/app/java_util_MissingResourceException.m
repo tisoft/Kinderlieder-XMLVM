@@ -267,8 +267,10 @@ void java_util_MissingResourceException___INIT____java_lang_String_java_lang_Str
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimeException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("MissingResourceException.java", 50)
+    XMLVM_CHECK_NPE(0)
     ((java_util_MissingResourceException*) _r0.o)->fields.java_util_MissingResourceException.className_ = _r2.o;
     XMLVM_SOURCE_POSITION("MissingResourceException.java", 51)
+    XMLVM_CHECK_NPE(0)
     ((java_util_MissingResourceException*) _r0.o)->fields.java_util_MissingResourceException.key_ = _r3.o;
     XMLVM_SOURCE_POSITION("MissingResourceException.java", 52)
     XMLVM_EXIT_METHOD()
@@ -284,6 +286,7 @@ JAVA_OBJECT java_util_MissingResourceException_getClassName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("MissingResourceException.java", 62)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_MissingResourceException*) _r1.o)->fields.java_util_MissingResourceException.className_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -298,6 +301,7 @@ JAVA_OBJECT java_util_MissingResourceException_getKey__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("MissingResourceException.java", 72)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_MissingResourceException*) _r1.o)->fields.java_util_MissingResourceException.key_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

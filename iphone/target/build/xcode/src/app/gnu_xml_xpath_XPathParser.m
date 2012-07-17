@@ -1492,6 +1492,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_getQName___java_lang_String(JAVA_OBJECT me
     XMLVM_SOURCE_POSITION("XPathParser.java", 67)
     _r0.o = javax_xml_namespace_QName_valueOf___java_lang_String(_r5.o);
     XMLVM_SOURCE_POSITION("XPathParser.java", 68)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_xpath_XPathParser*) _r4.o)->fields.gnu_xml_xpath_XPathParser.namespaceContext_;
     if (_r1.o == JAVA_NULL) goto label42;
     XMLVM_SOURCE_POSITION("XPathParser.java", 70)
@@ -1509,6 +1510,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_getQName___java_lang_String(JAVA_OBJECT me
     if (_r2.i != 0) goto label42;
     label26:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 74)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_xpath_XPathParser*) _r4.o)->fields.gnu_xml_xpath_XPathParser.namespaceContext_;
     XMLVM_CHECK_NPE(2)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_namespace_NamespaceContext_getNamespaceURI___java_lang_String])(_r2.o, _r1.o);
@@ -1947,11 +1949,13 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     goto label22;
     label474:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 193)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_xpath_XPathParser*) _r6.o)->fields.gnu_xml_xpath_XPathParser.functionResolver_;
     if (_r2.o == JAVA_NULL) goto label509;
     XMLVM_SOURCE_POSITION("XPathParser.java", 195)
     _r2.o = javax_xml_namespace_QName_valueOf___java_lang_String(_r7.o);
     XMLVM_SOURCE_POSITION("XPathParser.java", 196)
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((gnu_xml_xpath_XPathParser*) _r6.o)->fields.gnu_xml_xpath_XPathParser.functionResolver_;
     XMLVM_CHECK_NPE(3)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_xpath_XPathFunctionResolver_resolveFunction___javax_xml_namespace_QName_int])(_r3.o, _r2.o, _r1.i);
@@ -1977,6 +1981,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_lookupFunction___java_lang_String_java_uti
     goto label22;
     label509:;
     _r1.o = __NEW_gnu_xml_xpath_FunctionCall();
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_xpath_XPathParser*) _r6.o)->fields.gnu_xml_xpath_XPathParser.functionResolver_;
     XMLVM_CHECK_NPE(1)
     gnu_xml_xpath_FunctionCall___INIT____javax_xml_xpath_XPathFunctionResolver_java_lang_String_java_util_List(_r1.o, _r2.o, _r7.o, _r8.o);
@@ -2293,18 +2298,22 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInpu
     _r13.o = me;
     _r14.o = n1;
     XMLVM_SOURCE_POSITION("XPathParser.java", 396)
+    XMLVM_CHECK_NPE(13)
     _r0.i = ((gnu_xml_xpath_XPathParser*) _r13.o)->fields.gnu_xml_xpath_XPathParser.yyMax_;
     if (_r0.i > 0) goto label8;
     _r0.i = 256;
+    XMLVM_CHECK_NPE(13)
     ((gnu_xml_xpath_XPathParser*) _r13.o)->fields.gnu_xml_xpath_XPathParser.yyMax_ = _r0.i;
     label8:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 397)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((gnu_xml_xpath_XPathParser*) _r13.o)->fields.gnu_xml_xpath_XPathParser.yyMax_;
     if (!__TIB_int.classInitialized) __INIT_int();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_int, _r1.i);
     XMLVM_SOURCE_POSITION("XPathParser.java", 398)
     _r2.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(13)
     _r3.i = ((gnu_xml_xpath_XPathParser*) _r13.o)->fields.gnu_xml_xpath_XPathParser.yyMax_;
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r3.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r3.i);
@@ -2328,6 +2337,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInpu
     if (_r2.i < _r7.i) goto label1714;
     XMLVM_SOURCE_POSITION("XPathParser.java", 404)
     _r7.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r5.o));
+    XMLVM_CHECK_NPE(13)
     _r8.i = ((gnu_xml_xpath_XPathParser*) _r13.o)->fields.gnu_xml_xpath_XPathParser.yyMax_;
     _r7.i = _r7.i + _r8.i;
     if (!__TIB_int.classInitialized) __INIT_int();
@@ -2339,6 +2349,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInpu
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r5.o, _r8.i, _r7.o, _r9.i, _r10.i);
     XMLVM_SOURCE_POSITION("XPathParser.java", 407)
     _r5.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
+    XMLVM_CHECK_NPE(13)
     _r8.i = ((gnu_xml_xpath_XPathParser*) _r13.o)->fields.gnu_xml_xpath_XPathParser.yyMax_;
     _r5.i = _r5.i + _r8.i;
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
@@ -2683,6 +2694,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInpu
     _r0.o = _r0.o;
     label313:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 496)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((gnu_xml_xpath_Steps*) _r0.o)->fields.gnu_xml_xpath_Steps.path_;
     _r8.o = __NEW_gnu_xml_xpath_Root();
     XMLVM_CHECK_NPE(8)
@@ -2697,6 +2709,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInpu
     XMLVM_CHECK_NPE(1)
     gnu_xml_xpath_Steps___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("XPathParser.java", 494)
+    XMLVM_CHECK_NPE(1)
     _r8.o = ((gnu_xml_xpath_Steps*) _r1.o)->fields.gnu_xml_xpath_Steps.path_;
     _r0.i = _r2.i + 0;
     XMLVM_CHECK_NPE(5)
@@ -2737,11 +2750,13 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInpu
     _r0.o = _r0.o;
     label373:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 517)
+    XMLVM_CHECK_NPE(0)
     _r8.o = ((gnu_xml_xpath_Steps*) _r0.o)->fields.gnu_xml_xpath_Steps.path_;
     //java_util_LinkedList_addFirst___java_lang_Object[30]
     XMLVM_CHECK_NPE(8)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_LinkedList*) _r8.o)->tib->vtable[30])(_r8.o, _r1.o);
     XMLVM_SOURCE_POSITION("XPathParser.java", 518)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((gnu_xml_xpath_Steps*) _r0.o)->fields.gnu_xml_xpath_Steps.path_;
     _r8.o = __NEW_gnu_xml_xpath_Root();
     XMLVM_CHECK_NPE(8)
@@ -2756,6 +2771,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInpu
     XMLVM_CHECK_NPE(8)
     gnu_xml_xpath_Steps___INIT___(_r8.o);
     XMLVM_SOURCE_POSITION("XPathParser.java", 515)
+    XMLVM_CHECK_NPE(8)
     _r9.o = ((gnu_xml_xpath_Steps*) _r8.o)->fields.gnu_xml_xpath_Steps.path_;
     _r0.i = _r2.i + 0;
     XMLVM_CHECK_NPE(5)
@@ -2785,6 +2801,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInpu
     _r1 = _r0;
     label423:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 537)
+    XMLVM_CHECK_NPE(1)
     _r8.o = ((gnu_xml_xpath_Steps*) _r1.o)->fields.gnu_xml_xpath_Steps.path_;
     _r0.i = _r2.i + 0;
     XMLVM_CHECK_NPE(5)
@@ -2803,6 +2820,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInpu
     XMLVM_CHECK_NPE(1)
     gnu_xml_xpath_Steps___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("XPathParser.java", 535)
+    XMLVM_CHECK_NPE(1)
     _r8.o = ((gnu_xml_xpath_Steps*) _r1.o)->fields.gnu_xml_xpath_Steps.path_;
     _r0.i = _r2.i + -2;
     XMLVM_CHECK_NPE(5)
@@ -2843,11 +2861,13 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInpu
     _r8 = _r0;
     label485:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 558)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((gnu_xml_xpath_Steps*) _r8.o)->fields.gnu_xml_xpath_Steps.path_;
     //java_util_LinkedList_addLast___java_lang_Object[31]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_LinkedList*) _r0.o)->tib->vtable[31])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("XPathParser.java", 559)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((gnu_xml_xpath_Steps*) _r8.o)->fields.gnu_xml_xpath_Steps.path_;
     _r0.i = _r2.i + 0;
     XMLVM_CHECK_NPE(5)
@@ -2866,6 +2886,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInpu
     XMLVM_CHECK_NPE(8)
     gnu_xml_xpath_Steps___INIT___(_r8.o);
     XMLVM_SOURCE_POSITION("XPathParser.java", 556)
+    XMLVM_CHECK_NPE(8)
     _r9.o = ((gnu_xml_xpath_Steps*) _r8.o)->fields.gnu_xml_xpath_Steps.path_;
     _r0.i = _r2.i + -2;
     XMLVM_CHECK_NPE(5)
@@ -3246,6 +3267,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInpu
     _r1 = _r0;
     label933:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 784)
+    XMLVM_CHECK_NPE(1)
     _r8.o = ((gnu_xml_xpath_Steps*) _r1.o)->fields.gnu_xml_xpath_Steps.path_;
     _r0.i = _r2.i + -2;
     XMLVM_CHECK_NPE(5)
@@ -3264,6 +3286,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInpu
     XMLVM_CHECK_NPE(1)
     gnu_xml_xpath_Steps___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("XPathParser.java", 782)
+    XMLVM_CHECK_NPE(1)
     _r8.o = ((gnu_xml_xpath_Steps*) _r1.o)->fields.gnu_xml_xpath_Steps.path_;
     _r0.i = _r2.i + 0;
     XMLVM_CHECK_NPE(5)
@@ -3304,11 +3327,13 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInpu
     _r8 = _r0;
     label995:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 805)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((gnu_xml_xpath_Steps*) _r8.o)->fields.gnu_xml_xpath_Steps.path_;
     //java_util_LinkedList_addFirst___java_lang_Object[30]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_LinkedList*) _r0.o)->tib->vtable[30])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("XPathParser.java", 806)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((gnu_xml_xpath_Steps*) _r8.o)->fields.gnu_xml_xpath_Steps.path_;
     _r0.i = _r2.i + -2;
     XMLVM_CHECK_NPE(5)
@@ -3327,6 +3352,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInpu
     XMLVM_CHECK_NPE(8)
     gnu_xml_xpath_Steps___INIT___(_r8.o);
     XMLVM_SOURCE_POSITION("XPathParser.java", 803)
+    XMLVM_CHECK_NPE(8)
     _r9.o = ((gnu_xml_xpath_Steps*) _r8.o)->fields.gnu_xml_xpath_Steps.path_;
     _r0.i = _r2.i + 0;
     XMLVM_CHECK_NPE(5)
@@ -3367,6 +3393,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInpu
     _r0.o = _r0.o;
     label1062:;
     XMLVM_SOURCE_POSITION("XPathParser.java", 828)
+    XMLVM_CHECK_NPE(0)
     _r8.o = ((gnu_xml_xpath_Steps*) _r0.o)->fields.gnu_xml_xpath_Steps.path_;
     //java_util_LinkedList_addLast___java_lang_Object[31]
     XMLVM_CHECK_NPE(8)
@@ -3378,6 +3405,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInpu
     XMLVM_CHECK_NPE(8)
     gnu_xml_xpath_Steps___INIT___(_r8.o);
     XMLVM_SOURCE_POSITION("XPathParser.java", 826)
+    XMLVM_CHECK_NPE(8)
     _r9.o = ((gnu_xml_xpath_Steps*) _r8.o)->fields.gnu_xml_xpath_Steps.path_;
     _r0.i = _r2.i + -1;
     XMLVM_CHECK_NPE(5)
@@ -3762,6 +3790,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathParser_yyparse___gnu_xml_xpath_XPathParser_yyInpu
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("XPathParser.java", 945)
     _r1.o = __NEW_gnu_xml_xpath_VariableReference();
+    XMLVM_CHECK_NPE(13)
     _r8.o = ((gnu_xml_xpath_XPathParser*) _r13.o)->fields.gnu_xml_xpath_XPathParser.variableResolver_;
     XMLVM_CHECK_NPE(13)
     _r0.o = gnu_xml_xpath_XPathParser_getQName___java_lang_String(_r13.o, _r0.o);

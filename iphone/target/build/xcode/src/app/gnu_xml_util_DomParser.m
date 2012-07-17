@@ -748,38 +748,55 @@ void gnu_xml_util_DomParser___INIT___(JAVA_OBJECT me)
     _r0.o = __NEW_org_xml_sax_ext_DefaultHandler2();
     XMLVM_CHECK_NPE(0)
     org_xml_sax_ext_DefaultHandler2___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.defaultHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 120)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.defaultHandler_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.contentHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 121)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.defaultHandler_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.dtdHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 122)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.defaultHandler_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.declHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 123)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.defaultHandler_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.lexicalHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 126)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.defaultHandler_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.errHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 127)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.defaultHandler_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.resolver_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 128)
     _r0.o = java_util_Locale_getDefault__();
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.locale_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 134)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.showNamespaces_ = _r0.i;
     XMLVM_SOURCE_POSITION("DomParser.java", 135)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.showXML1_0_ = _r0.i;
     XMLVM_SOURCE_POSITION("DomParser.java", 136)
     _r0.o = __NEW_org_xml_sax_helpers_NamespaceSupport();
     XMLVM_CHECK_NPE(0)
     org_xml_sax_helpers_NamespaceSupport___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.prefixStack_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 144)
     XMLVM_EXIT_METHOD()
@@ -803,38 +820,55 @@ void gnu_xml_util_DomParser___INIT____org_w3c_dom_Node(JAVA_OBJECT me, JAVA_OBJE
     _r0.o = __NEW_org_xml_sax_ext_DefaultHandler2();
     XMLVM_CHECK_NPE(0)
     org_xml_sax_ext_DefaultHandler2___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.defaultHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 120)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.defaultHandler_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.contentHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 121)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.defaultHandler_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.dtdHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 122)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.defaultHandler_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.declHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 123)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.defaultHandler_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.lexicalHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 126)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.defaultHandler_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.errHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 127)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.defaultHandler_;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.resolver_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 128)
     _r0.o = java_util_Locale_getDefault__();
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.locale_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 134)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.showNamespaces_ = _r0.i;
     XMLVM_SOURCE_POSITION("DomParser.java", 135)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.showXML1_0_ = _r0.i;
     XMLVM_SOURCE_POSITION("DomParser.java", 136)
     _r0.o = __NEW_org_xml_sax_helpers_NamespaceSupport();
     XMLVM_CHECK_NPE(0)
     org_xml_sax_helpers_NamespaceSupport___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.prefixStack_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 152)
     XMLVM_CHECK_NPE(1)
@@ -853,6 +887,7 @@ JAVA_OBJECT gnu_xml_util_DomParser_getEntityResolver__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomParser.java", 165)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.resolver_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -871,9 +906,11 @@ void gnu_xml_util_DomParser_setEntityResolver___org_xml_sax_EntityResolver(JAVA_
     XMLVM_SOURCE_POSITION("DomParser.java", 174)
     if (_r2.o != JAVA_NULL) goto label7;
     XMLVM_SOURCE_POSITION("DomParser.java", 175)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.defaultHandler_;
     label4:;
     XMLVM_SOURCE_POSITION("DomParser.java", 176)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.resolver_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 177)
     XMLVM_EXIT_METHOD()
@@ -899,6 +936,7 @@ void gnu_xml_util_DomParser_setLocale___java_util_Locale(JAVA_OBJECT me, JAVA_OB
     _r0.o = java_util_Locale_getDefault__();
     label6:;
     XMLVM_SOURCE_POSITION("DomParser.java", 191)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.locale_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 192)
     XMLVM_EXIT_METHOD()
@@ -917,6 +955,7 @@ JAVA_OBJECT gnu_xml_util_DomParser_getErrorHandler__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomParser.java", 204)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.errHandler_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -935,9 +974,11 @@ void gnu_xml_util_DomParser_setErrorHandler___org_xml_sax_ErrorHandler(JAVA_OBJE
     XMLVM_SOURCE_POSITION("DomParser.java", 213)
     if (_r2.o != JAVA_NULL) goto label7;
     XMLVM_SOURCE_POSITION("DomParser.java", 214)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.defaultHandler_;
     label4:;
     XMLVM_SOURCE_POSITION("DomParser.java", 215)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.errHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 216)
     XMLVM_EXIT_METHOD()
@@ -956,6 +997,7 @@ JAVA_OBJECT gnu_xml_util_DomParser_getContentHandler__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomParser.java", 227)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.contentHandler_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -974,9 +1016,11 @@ void gnu_xml_util_DomParser_setContentHandler___org_xml_sax_ContentHandler(JAVA_
     XMLVM_SOURCE_POSITION("DomParser.java", 236)
     if (_r2.o != JAVA_NULL) goto label7;
     XMLVM_SOURCE_POSITION("DomParser.java", 237)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.defaultHandler_;
     label4:;
     XMLVM_SOURCE_POSITION("DomParser.java", 238)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.contentHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 239)
     XMLVM_EXIT_METHOD()
@@ -995,6 +1039,7 @@ JAVA_OBJECT gnu_xml_util_DomParser_getDTDHandler__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomParser.java", 247)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.dtdHandler_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1013,9 +1058,11 @@ void gnu_xml_util_DomParser_setDTDHandler___org_xml_sax_DTDHandler(JAVA_OBJECT m
     XMLVM_SOURCE_POSITION("DomParser.java", 256)
     if (_r2.o != JAVA_NULL) goto label7;
     XMLVM_SOURCE_POSITION("DomParser.java", 257)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.defaultHandler_;
     label4:;
     XMLVM_SOURCE_POSITION("DomParser.java", 258)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.dtdHandler_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 259)
     XMLVM_EXIT_METHOD()
@@ -1082,16 +1129,20 @@ void gnu_xml_util_DomParser_parse__(JAVA_OBJECT me)
     XMLVM_CATCH_END(w16396aaac30b1b3)
     XMLVM_RESTORE_EXCEPTION_ENV(w16396aaac30b1b3)
     XMLVM_SOURCE_POSITION("DomParser.java", 295)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.isDocument_;
     if (_r0.i == 0) goto label13;
     XMLVM_SOURCE_POSITION("DomParser.java", 296)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.contentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_endDocument__])(_r0.o);
     label13:;
     XMLVM_SOURCE_POSITION("DomParser.java", 297)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.current_ = _r2.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 298)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.prefixStack_;
     XMLVM_CHECK_NPE(0)
     org_xml_sax_helpers_NamespaceSupport_reset__(_r0.o);
@@ -1102,13 +1153,17 @@ void gnu_xml_util_DomParser_parse__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DomParser.java", 294)
     java_lang_Thread* curThread_w16396aaac30b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
     _r0.o = curThread_w16396aaac30b1c20->fields.java_lang_Thread.xmlvmException_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.isDocument_;
     if (_r1.i == 0) goto label31;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.contentHandler_;
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_endDocument__])(_r1.o);
     label31:;
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.current_ = _r2.o;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.prefixStack_;
     XMLVM_CHECK_NPE(1)
     org_xml_sax_helpers_NamespaceSupport_reset__(_r1.o);
@@ -1221,6 +1276,7 @@ JAVA_BOOLEAN gnu_xml_util_DomParser_getFeature___java_lang_String(JAVA_OBJECT me
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r2.o);
     if (_r0.i == 0) goto label45;
     XMLVM_SOURCE_POSITION("DomParser.java", 342)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.showNamespaces_;
     goto label33;
     label45:;
@@ -1231,6 +1287,7 @@ JAVA_BOOLEAN gnu_xml_util_DomParser_getFeature___java_lang_String(JAVA_OBJECT me
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r2.o);
     if (_r0.i == 0) goto label56;
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.showXML1_0_;
     goto label33;
     label56:;
@@ -1262,7 +1319,9 @@ JAVA_OBJECT gnu_xml_util_DomParser_getProperty___java_lang_String(JAVA_OBJECT me
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r4.o);
     if (_r0.i == 0) goto label20;
     XMLVM_SOURCE_POSITION("DomParser.java", 358)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.declHandler_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.defaultHandler_;
     if (_r0.o != _r1.o) goto label17;
     _r0 = _r2;
@@ -1271,6 +1330,7 @@ JAVA_OBJECT gnu_xml_util_DomParser_getProperty___java_lang_String(JAVA_OBJECT me
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label17:;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.declHandler_;
     goto label16;
     label20:;
@@ -1282,12 +1342,15 @@ JAVA_OBJECT gnu_xml_util_DomParser_getProperty___java_lang_String(JAVA_OBJECT me
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r4.o);
     if (_r0.i == 0) goto label39;
     XMLVM_SOURCE_POSITION("DomParser.java", 360)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.lexicalHandler_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.defaultHandler_;
     if (_r0.o != _r1.o) goto label36;
     _r0 = _r2;
     goto label16;
     label36:;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.lexicalHandler_;
     goto label16;
     label39:;
@@ -1298,6 +1361,7 @@ JAVA_OBJECT gnu_xml_util_DomParser_getProperty___java_lang_String(JAVA_OBJECT me
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r4.o);
     if (_r0.i == 0) goto label50;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.current_;
     goto label16;
     label50:;
@@ -1325,6 +1389,7 @@ void gnu_xml_util_DomParser_setFeature___java_lang_String_boolean(JAVA_OBJECT me
     // "Illegal namespace processing configuration"
     _r2.o = xmlvm_create_java_string_from_pool(1127);
     XMLVM_SOURCE_POSITION("DomParser.java", 376)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.current_;
     if (_r0.o == JAVA_NULL) goto label14;
     XMLVM_SOURCE_POSITION("DomParser.java", 377)
@@ -1354,6 +1419,7 @@ void gnu_xml_util_DomParser_setFeature___java_lang_String_boolean(JAVA_OBJECT me
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r4.o);
     if (_r0.i == 0) goto label46;
     XMLVM_SOURCE_POSITION("DomParser.java", 385)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.showXML1_0_;
     if (_r0.i != 0) goto label43;
     if (_r5.i != 0) goto label43;
@@ -1366,6 +1432,7 @@ void gnu_xml_util_DomParser_setFeature___java_lang_String_boolean(JAVA_OBJECT me
     XMLVM_THROW_CUSTOM(_r0.o)
     label43:;
     XMLVM_SOURCE_POSITION("DomParser.java", 388)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.showNamespaces_ = _r5.i;
     goto label20;
     label46:;
@@ -1377,6 +1444,7 @@ void gnu_xml_util_DomParser_setFeature___java_lang_String_boolean(JAVA_OBJECT me
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r4.o);
     if (_r0.i == 0) goto label71;
     XMLVM_SOURCE_POSITION("DomParser.java", 392)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.showNamespaces_;
     if (_r0.i != 0) goto label68;
     if (_r5.i != 0) goto label68;
@@ -1389,6 +1457,7 @@ void gnu_xml_util_DomParser_setFeature___java_lang_String_boolean(JAVA_OBJECT me
     XMLVM_THROW_CUSTOM(_r0.o)
     label68:;
     XMLVM_SOURCE_POSITION("DomParser.java", 395)
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.showXML1_0_ = _r5.i;
     goto label20;
     label71:;
@@ -1433,6 +1502,7 @@ void gnu_xml_util_DomParser_setProperty___java_lang_String_java_lang_Object(JAVA
     label20:;
     XMLVM_SOURCE_POSITION("DomParser.java", 416)
     _r5.o = _r5.o;
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.declHandler_ = _r5.o;
     label24:;
     XMLVM_SOURCE_POSITION("DomParser.java", 433)
@@ -1459,6 +1529,7 @@ void gnu_xml_util_DomParser_setProperty___java_lang_String_java_lang_Object(JAVA
     label45:;
     XMLVM_SOURCE_POSITION("DomParser.java", 423)
     _r5.o = _r5.o;
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.lexicalHandler_ = _r5.o;
     goto label24;
     label50:;
@@ -1476,6 +1547,7 @@ void gnu_xml_util_DomParser_setProperty___java_lang_String_java_lang_Object(JAVA
     if (_r0.i == 0) goto label95;
     label64:;
     XMLVM_SOURCE_POSITION("DomParser.java", 429)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_util_DomParser*) _r3.o)->fields.gnu_xml_util_DomParser.current_;
     if (_r0.o == JAVA_NULL) goto label89;
     XMLVM_SOURCE_POSITION("DomParser.java", 430)
@@ -1527,19 +1599,25 @@ void gnu_xml_util_DomParser_setStart___org_w3c_dom_Node(JAVA_OBJECT me, JAVA_OBJ
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomParser.java", 444)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.start_ = _r2.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 445)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.start_;
     if (_r0.o == JAVA_NULL) goto label20;
     XMLVM_SOURCE_POSITION("DomParser.java", 446)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.start_;
     XMLVM_CHECK_NPE(1)
     _r0.i = gnu_xml_util_DomParser_getIsL2___org_w3c_dom_Node(_r1.o, _r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.isL2_ = _r0.i;
     XMLVM_SOURCE_POSITION("DomParser.java", 447)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.start_;
     if (!__TIB_org_w3c_dom_Document.classInitialized) __INIT_org_w3c_dom_Document();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_org_w3c_dom_Document);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_util_DomParser*) _r1.o)->fields.gnu_xml_util_DomParser.isDocument_ = _r0.i;
     label20:;
     XMLVM_SOURCE_POSITION("DomParser.java", 449)
@@ -1575,6 +1653,7 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w16396aaac37b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("DomParser.java", 465)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     if (_r2.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w16396aaac37b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w16396aaac37b1b7, sizeof(XMLVM_JMP_BUF)); goto label21; };
     XMLVM_SOURCE_POSITION("DomParser.java", 466)
@@ -1607,7 +1686,9 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w16396aaac37b1c12)
     // Begin try
     XMLVM_SOURCE_POSITION("DomParser.java", 470)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.start_;
+    XMLVM_CHECK_NPE(12)
     ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_ = _r2.o;
     java_lang_Object_releaseLockRecursive__(_r12.o);
     // End try
@@ -1618,6 +1699,7 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     XMLVM_RESTORE_EXCEPTION_ENV(w16396aaac37b1c12)
     label26:;
     XMLVM_SOURCE_POSITION("DomParser.java", 474)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     XMLVM_CHECK_NPE(2)
     _r7.i = (*(JAVA_SHORT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeType__])(_r2.o);
@@ -1640,6 +1722,7 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuilder___INIT____java_lang_String(_r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("DomParser.java", 695)
+    XMLVM_CHECK_NPE(12)
     _r3.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     XMLVM_CHECK_NPE(3)
     _r3.i = (*(JAVA_SHORT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeType__])(_r3.o);
@@ -1653,6 +1736,7 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r1.o)
     label62:;
     XMLVM_SOURCE_POSITION("DomParser.java", 482)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.contentHandler_;
     XMLVM_CHECK_NPE(2)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_startDocument__])(_r2.o);
@@ -1677,6 +1761,7 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     _r3.o = xmlvm_create_java_string_from_pool(1133);
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuilder___INIT____java_lang_String(_r2.o, _r3.o);
+    XMLVM_CHECK_NPE(12)
     _r3.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     XMLVM_CHECK_NPE(3)
     _r3.i = (*(JAVA_SHORT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeType__])(_r3.o);
@@ -1690,6 +1775,7 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r1.o)
     label97:;
     XMLVM_SOURCE_POSITION("DomParser.java", 486)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     XMLVM_CHECK_NPE(2)
     _r8.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getAttributes__])(_r2.o);
@@ -1697,6 +1783,7 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(8)
     _r9.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r8.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_NamedNodeMap_getLength__])(_r8.o);
     XMLVM_SOURCE_POSITION("DomParser.java", 488)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.prefixStack_;
     XMLVM_CHECK_NPE(2)
     org_xml_sax_helpers_NamespaceSupport_pushContext__(_r2.o);
@@ -1706,12 +1793,15 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     label114:;
     if (_r10.i < _r9.i) goto label168;
     XMLVM_SOURCE_POSITION("DomParser.java", 540)
+    XMLVM_CHECK_NPE(12)
     _r2.i = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.showNamespaces_;
     if (_r2.i == 0) goto label283;
     XMLVM_SOURCE_POSITION("DomParser.java", 541)
+    XMLVM_CHECK_NPE(12)
     _r2.i = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.isL2_;
     if (_r2.i == 0) goto label275;
     XMLVM_SOURCE_POSITION("DomParser.java", 542)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     XMLVM_CHECK_NPE(2)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNamespaceURI__])(_r2.o);
@@ -1721,11 +1811,13 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     _r2.o = xmlvm_create_java_string_from_pool(0);
     label134:;
     XMLVM_SOURCE_POSITION("DomParser.java", 545)
+    XMLVM_CHECK_NPE(12)
     _r3.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     XMLVM_CHECK_NPE(3)
     _r3.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getLocalName__])(_r3.o);
     if (_r3.o != JAVA_NULL) goto label621;
     XMLVM_SOURCE_POSITION("DomParser.java", 546)
+    XMLVM_CHECK_NPE(12)
     _r3.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     XMLVM_CHECK_NPE(3)
     _r3.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeName__])(_r3.o);
@@ -1734,8 +1826,10 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     _r2 = _r11;
     label151:;
     XMLVM_SOURCE_POSITION("DomParser.java", 554)
+    XMLVM_CHECK_NPE(12)
     _r4.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.contentHandler_;
     XMLVM_SOURCE_POSITION("DomParser.java", 555)
+    XMLVM_CHECK_NPE(12)
     _r5.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     XMLVM_CHECK_NPE(5)
     _r5.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeName__])(_r5.o);
@@ -1758,6 +1852,7 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(6)
     _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r6.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Attr_getNodeName__])(_r6.o);
     XMLVM_SOURCE_POSITION("DomParser.java", 493)
+    XMLVM_CHECK_NPE(12)
     _r2.i = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.showNamespaces_;
     if (_r2.i == 0) goto label230;
     // "xmlns"
@@ -1780,14 +1875,17 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(6)
     _r3.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r6.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Attr_getNodeValue__])(_r6.o);
     XMLVM_SOURCE_POSITION("DomParser.java", 506)
+    XMLVM_CHECK_NPE(12)
     _r5.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.prefixStack_;
     XMLVM_CHECK_NPE(5)
     org_xml_sax_helpers_NamespaceSupport_declarePrefix___java_lang_String_java_lang_String(_r5.o, _r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("DomParser.java", 507)
+    XMLVM_CHECK_NPE(12)
     _r5.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.contentHandler_;
     XMLVM_CHECK_NPE(5)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_startPrefixMapping___java_lang_String_java_lang_String])(_r5.o, _r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("DomParser.java", 509)
+    XMLVM_CHECK_NPE(12)
     _r2.i = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.showXML1_0_;
     if (_r2.i != 0) goto label230;
     label220:;
@@ -1802,9 +1900,11 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     goto label202;
     label230:;
     XMLVM_SOURCE_POSITION("DomParser.java", 522)
+    XMLVM_CHECK_NPE(12)
     _r2.i = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.showNamespaces_;
     if (_r2.i == 0) goto label271;
     XMLVM_SOURCE_POSITION("DomParser.java", 523)
+    XMLVM_CHECK_NPE(12)
     _r2.i = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.isL2_;
     if (_r2.i == 0) goto label263;
     XMLVM_SOURCE_POSITION("DomParser.java", 524)
@@ -1863,34 +1963,40 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     goto label151;
     label288:;
     XMLVM_SOURCE_POSITION("DomParser.java", 561)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.lexicalHandler_;
     XMLVM_CHECK_NPE(2)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ext_LexicalHandler_startCDATA__])(_r2.o);
     XMLVM_SOURCE_POSITION("DomParser.java", 562)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     XMLVM_CHECK_NPE(2)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeValue__])(_r2.o);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_String_toCharArray__(_r2.o);
     XMLVM_SOURCE_POSITION("DomParser.java", 563)
+    XMLVM_CHECK_NPE(12)
     _r3.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.contentHandler_;
     _r4.i = 0;
     _r5.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     XMLVM_CHECK_NPE(3)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_characters___char_1ARRAY_int_int])(_r3.o, _r2.o, _r4.i, _r5.i);
     XMLVM_SOURCE_POSITION("DomParser.java", 564)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.lexicalHandler_;
     XMLVM_CHECK_NPE(2)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ext_LexicalHandler_endCDATA__])(_r2.o);
     goto label67;
     label317:;
     XMLVM_SOURCE_POSITION("DomParser.java", 568)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     XMLVM_CHECK_NPE(2)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeValue__])(_r2.o);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_String_toCharArray__(_r2.o);
     XMLVM_SOURCE_POSITION("DomParser.java", 569)
+    XMLVM_CHECK_NPE(12)
     _r3.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.lexicalHandler_;
     _r4.i = 0;
     _r5.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
@@ -1899,14 +2005,17 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     goto label67;
     label336:;
     XMLVM_SOURCE_POSITION("DomParser.java", 574)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     _r0 = _r2;
     _r0.o = _r0.o;
     _r3 = _r0;
     XMLVM_SOURCE_POSITION("DomParser.java", 579)
+    XMLVM_CHECK_NPE(12)
     _r2.i = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.isL2_;
     if (_r2.i == 0) goto label417;
     XMLVM_SOURCE_POSITION("DomParser.java", 580)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.lexicalHandler_;
     XMLVM_CHECK_NPE(3)
     _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_DocumentType_getName__])(_r3.o);
@@ -1920,6 +2029,7 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ext_LexicalHandler_startDTD___java_lang_String_java_lang_String_java_lang_String])(_r2.o, _r4.o, _r5.o, _r6.o);
     label363:;
     XMLVM_SOURCE_POSITION("DomParser.java", 610)
+    XMLVM_CHECK_NPE(12)
     _r2.i = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.isL2_;
     if (_r2.i == 0) goto label429;
     XMLVM_CHECK_NPE(3)
@@ -1933,6 +2043,7 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_String_toCharArray__(_r2.o);
     XMLVM_SOURCE_POSITION("DomParser.java", 624)
+    XMLVM_CHECK_NPE(12)
     _r4.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.lexicalHandler_;
     _r5.i = 0;
     _r6.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
@@ -1961,12 +2072,14 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     label408:;
     if (_r5.i < _r4.i) goto label459;
     XMLVM_SOURCE_POSITION("DomParser.java", 672)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.lexicalHandler_;
     XMLVM_CHECK_NPE(2)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ext_LexicalHandler_endDTD__])(_r2.o);
     goto label67;
     label417:;
     XMLVM_SOURCE_POSITION("DomParser.java", 584)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.lexicalHandler_;
     XMLVM_CHECK_NPE(3)
     _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_DocumentType_getName__])(_r3.o);
@@ -1987,6 +2100,7 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r4.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_NamedNodeMap_item___int])(_r4.o, _r6.i);
     _r2.o = _r2.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 632)
+    XMLVM_CHECK_NPE(12)
     _r8.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.dtdHandler_;
     XMLVM_SOURCE_POSITION("DomParser.java", 633)
     XMLVM_CHECK_NPE(2)
@@ -2013,6 +2127,7 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("DomParser.java", 645)
     if (_r6.o == JAVA_NULL) goto label492;
     XMLVM_SOURCE_POSITION("DomParser.java", 646)
+    XMLVM_CHECK_NPE(12)
     _r8.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.dtdHandler_;
     XMLVM_SOURCE_POSITION("DomParser.java", 647)
     XMLVM_CHECK_NPE(2)
@@ -2035,6 +2150,7 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     _r6.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Entity_getSystemId__])(_r2.o);
     if (_r6.o == JAVA_NULL) goto label488;
     XMLVM_SOURCE_POSITION("DomParser.java", 652)
+    XMLVM_CHECK_NPE(12)
     _r6.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.declHandler_;
     XMLVM_SOURCE_POSITION("DomParser.java", 653)
     XMLVM_CHECK_NPE(2)
@@ -2050,7 +2166,9 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     goto label488;
     label516:;
     XMLVM_SOURCE_POSITION("DomParser.java", 679)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.lexicalHandler_;
+    XMLVM_CHECK_NPE(12)
     _r3.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     XMLVM_CHECK_NPE(3)
     _r3.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeName__])(_r3.o);
@@ -2059,11 +2177,14 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     goto label67;
     label529:;
     XMLVM_SOURCE_POSITION("DomParser.java", 683)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.contentHandler_;
     XMLVM_SOURCE_POSITION("DomParser.java", 684)
+    XMLVM_CHECK_NPE(12)
     _r3.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     XMLVM_CHECK_NPE(3)
     _r3.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeName__])(_r3.o);
+    XMLVM_CHECK_NPE(12)
     _r4.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     XMLVM_CHECK_NPE(4)
     _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r4.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeValue__])(_r4.o);
@@ -2072,12 +2193,14 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     goto label67;
     label548:;
     XMLVM_SOURCE_POSITION("DomParser.java", 688)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     XMLVM_CHECK_NPE(2)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeValue__])(_r2.o);
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_String_toCharArray__(_r2.o);
     XMLVM_SOURCE_POSITION("DomParser.java", 689)
+    XMLVM_CHECK_NPE(12)
     _r3.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.contentHandler_;
     _r4.i = 0;
     _r5.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
@@ -2086,38 +2209,48 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     goto label67;
     label567:;
     XMLVM_SOURCE_POSITION("DomParser.java", 714)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     XMLVM_CHECK_NPE(2)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getFirstChild__])(_r2.o);
     XMLVM_SOURCE_POSITION("DomParser.java", 715)
     if (_r2.o == JAVA_NULL) goto label579;
     XMLVM_SOURCE_POSITION("DomParser.java", 716)
+    XMLVM_CHECK_NPE(12)
     ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_ = _r2.o;
     goto label26;
     label579:;
     XMLVM_SOURCE_POSITION("DomParser.java", 723)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     XMLVM_CHECK_NPE(12)
     gnu_xml_util_DomParser_callEnd___org_w3c_dom_Node(_r12.o, _r2.o);
     label584:;
     XMLVM_SOURCE_POSITION("DomParser.java", 740)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     XMLVM_CHECK_NPE(2)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNextSibling__])(_r2.o);
     if (_r2.o == JAVA_NULL) goto label596;
     XMLVM_SOURCE_POSITION("DomParser.java", 747)
+    XMLVM_CHECK_NPE(12)
     ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_ = _r2.o;
     goto label26;
     label596:;
     XMLVM_SOURCE_POSITION("DomParser.java", 742)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     XMLVM_CHECK_NPE(2)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getParentNode__])(_r2.o);
+    XMLVM_CHECK_NPE(12)
     ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_ = _r2.o;
     XMLVM_SOURCE_POSITION("DomParser.java", 743)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     if (_r2.o == JAVA_NULL) goto label614;
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
+    XMLVM_CHECK_NPE(12)
     _r3.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.start_;
     if (_r2.o != _r3.o) goto label615;
     label614:;
@@ -2126,6 +2259,7 @@ void gnu_xml_util_DomParser_walk__(JAVA_OBJECT me)
     return;
     label615:;
     XMLVM_SOURCE_POSITION("DomParser.java", 745)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((gnu_xml_util_DomParser*) _r12.o)->fields.gnu_xml_util_DomParser.current_;
     XMLVM_CHECK_NPE(12)
     gnu_xml_util_DomParser_callEnd___org_w3c_dom_Node(_r12.o, _r2.o);
@@ -2173,6 +2307,7 @@ void gnu_xml_util_DomParser_callEnd___org_w3c_dom_Node(JAVA_OBJECT me, JAVA_OBJE
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomParser.java", 801)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_util_DomParser*) _r4.o)->fields.gnu_xml_util_DomParser.current_;
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_SHORT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeType__])(_r2.o);
@@ -2186,12 +2321,15 @@ void gnu_xml_util_DomParser_callEnd___org_w3c_dom_Node(JAVA_OBJECT me, JAVA_OBJE
     XMLVM_THROW_CUSTOM(_r0.o)
     label36:;
     XMLVM_SOURCE_POSITION("DomParser.java", 768)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_util_DomParser*) _r4.o)->fields.gnu_xml_util_DomParser.showNamespaces_;
     if (_r0.i == 0) goto label99;
     XMLVM_SOURCE_POSITION("DomParser.java", 769)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_util_DomParser*) _r4.o)->fields.gnu_xml_util_DomParser.isL2_;
     if (_r0.i == 0) goto label79;
     XMLVM_SOURCE_POSITION("DomParser.java", 770)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_util_DomParser*) _r4.o)->fields.gnu_xml_util_DomParser.contentHandler_;
     XMLVM_SOURCE_POSITION("DomParser.java", 771)
     XMLVM_CHECK_NPE(5)
@@ -2205,6 +2343,7 @@ void gnu_xml_util_DomParser_callEnd___org_w3c_dom_Node(JAVA_OBJECT me, JAVA_OBJE
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_endElement___java_lang_String_java_lang_String_java_lang_String])(_r0.o, _r1.o, _r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("DomParser.java", 778)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_util_DomParser*) _r4.o)->fields.gnu_xml_util_DomParser.prefixStack_;
     XMLVM_CHECK_NPE(0)
     _r1.o = org_xml_sax_helpers_NamespaceSupport_getDeclaredPrefixes__(_r0.o);
@@ -2215,6 +2354,7 @@ void gnu_xml_util_DomParser_callEnd___org_w3c_dom_Node(JAVA_OBJECT me, JAVA_OBJE
     if (_r0.i != 0) goto label87;
     label73:;
     XMLVM_SOURCE_POSITION("DomParser.java", 785)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_util_DomParser*) _r4.o)->fields.gnu_xml_util_DomParser.prefixStack_;
     XMLVM_CHECK_NPE(0)
     org_xml_sax_helpers_NamespaceSupport_popContext__(_r0.o);
@@ -2233,6 +2373,7 @@ void gnu_xml_util_DomParser_callEnd___org_w3c_dom_Node(JAVA_OBJECT me, JAVA_OBJE
     XMLVM_THROW_CUSTOM(_r0.o)
     label87:;
     XMLVM_SOURCE_POSITION("DomParser.java", 781)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_util_DomParser*) _r4.o)->fields.gnu_xml_util_DomParser.contentHandler_;
     XMLVM_CHECK_NPE(1)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Enumeration_nextElement__])(_r1.o);
@@ -2242,6 +2383,7 @@ void gnu_xml_util_DomParser_callEnd___org_w3c_dom_Node(JAVA_OBJECT me, JAVA_OBJE
     goto label67;
     label99:;
     XMLVM_SOURCE_POSITION("DomParser.java", 784)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_util_DomParser*) _r4.o)->fields.gnu_xml_util_DomParser.contentHandler_;
     // ""
     _r1.o = xmlvm_create_java_string_from_pool(0);
@@ -2254,6 +2396,7 @@ void gnu_xml_util_DomParser_callEnd___org_w3c_dom_Node(JAVA_OBJECT me, JAVA_OBJE
     goto label73;
     label113:;
     XMLVM_SOURCE_POSITION("DomParser.java", 790)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_util_DomParser*) _r4.o)->fields.gnu_xml_util_DomParser.lexicalHandler_;
     XMLVM_CHECK_NPE(5)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeName__])(_r5.o);

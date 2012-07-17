@@ -873,11 +873,14 @@ void java_util_ArrayList___INIT____int(JAVA_OBJECT me, JAVA_INT n1)
     label11:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 65)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_ArrayList*) _r1.o)->fields.java_util_ArrayList.size_ = _r0.i;
+    XMLVM_CHECK_NPE(1)
     ((java_util_ArrayList*) _r1.o)->fields.java_util_ArrayList.firstIndex_ = _r0.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 66)
     XMLVM_CHECK_NPE(1)
     _r0.o = java_util_ArrayList_newElementArray___int(_r1.o, _r2.i);
+    XMLVM_CHECK_NPE(1)
     ((java_util_ArrayList*) _r1.o)->fields.java_util_ArrayList.array_ = _r0.o;
     XMLVM_SOURCE_POSITION("ArrayList.java", 67)
     XMLVM_EXIT_METHOD()
@@ -902,27 +905,35 @@ void java_util_ArrayList___INIT____java_util_Collection(JAVA_OBJECT me, JAVA_OBJ
     XMLVM_CHECK_NPE(4)
     java_util_AbstractList___INIT___(_r4.o);
     XMLVM_SOURCE_POSITION("ArrayList.java", 78)
+    XMLVM_CHECK_NPE(4)
     ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.firstIndex_ = _r3.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 79)
     XMLVM_CHECK_NPE(5)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_toArray__])(_r5.o);
     XMLVM_SOURCE_POSITION("ArrayList.java", 80)
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(4)
     ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.size_ = _r1.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 85)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.size_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.size_;
     _r2.i = _r2.i / 10;
     _r1.i = _r1.i + _r2.i;
     XMLVM_CHECK_NPE(4)
     _r1.o = java_util_ArrayList_newElementArray___int(_r4.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.array_ = _r1.o;
     XMLVM_SOURCE_POSITION("ArrayList.java", 86)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.size_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r3.i, _r1.o, _r3.i, _r2.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 87)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(4)
     ((java_util_AbstractList*) _r4.o)->fields.java_util_AbstractList.modCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 88)
     XMLVM_EXIT_METHOD()
@@ -965,6 +976,7 @@ void java_util_ArrayList_add___int_java_lang_Object(JAVA_OBJECT me, JAVA_INT n1,
     _r4.i = 1;
     XMLVM_SOURCE_POSITION("ArrayList.java", 110)
     if (_r6.i < 0) goto label7;
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     if (_r6.i <= _r0.i) goto label29;
     label7:;
@@ -976,6 +988,7 @@ void java_util_ArrayList_add___int_java_lang_Object(JAVA_OBJECT me, JAVA_INT n1,
     XMLVM_SOURCE_POSITION("ArrayList.java", 114)
     _r2.o = java_lang_Integer_valueOf___int(_r6.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 115)
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     _r3.o = java_lang_Integer_valueOf___int(_r3.i);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object_java_lang_Object(_r1.o, _r2.o, _r3.o);
@@ -986,6 +999,7 @@ void java_util_ArrayList_add___int_java_lang_Object(JAVA_OBJECT me, JAVA_INT n1,
     XMLVM_SOURCE_POSITION("ArrayList.java", 117)
     if (_r6.i != 0) goto label60;
     XMLVM_SOURCE_POSITION("ArrayList.java", 118)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_;
     if (_r0.i != 0) goto label38;
     XMLVM_SOURCE_POSITION("ArrayList.java", 119)
@@ -993,33 +1007,44 @@ void java_util_ArrayList_add___int_java_lang_Object(JAVA_OBJECT me, JAVA_INT n1,
     java_util_ArrayList_growAtFront___int(_r5.o, _r4.i);
     label38:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 121)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_;
     _r1.i = _r1.i - _r4.i;
+    XMLVM_CHECK_NPE(5)
     ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_ = _r1.i;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r7.o;
     label47:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 142)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(5)
     ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_ = _r0.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 143)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_AbstractList*) _r5.o)->fields.java_util_AbstractList.modCount_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(5)
     ((java_util_AbstractList*) _r5.o)->fields.java_util_AbstractList.modCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 144)
     XMLVM_EXIT_METHOD()
     return;
     label60:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 122)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     if (_r6.i != _r0.i) goto label87;
     XMLVM_SOURCE_POSITION("ArrayList.java", 123)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i != _r1.i) goto label77;
@@ -1028,8 +1053,11 @@ void java_util_ArrayList_add___int_java_lang_Object(JAVA_OBJECT me, JAVA_INT n1,
     java_util_ArrayList_growAtEnd___int(_r5.o, _r4.i);
     label77:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 126)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     _r1.i = _r1.i + _r2.i;
     XMLVM_CHECK_NPE(0)
@@ -1038,7 +1066,9 @@ void java_util_ArrayList_add___int_java_lang_Object(JAVA_OBJECT me, JAVA_INT n1,
     goto label47;
     label87:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 128)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i != _r1.i) goto label105;
@@ -1047,7 +1077,9 @@ void java_util_ArrayList_add___int_java_lang_Object(JAVA_OBJECT me, JAVA_INT n1,
     java_util_ArrayList_growForInsert___int_int(_r5.o, _r6.i, _r4.i);
     label97:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 139)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_;
     _r1.i = _r1.i + _r6.i;
     XMLVM_CHECK_NPE(0)
@@ -1056,36 +1088,50 @@ void java_util_ArrayList_add___int_java_lang_Object(JAVA_OBJECT me, JAVA_INT n1,
     goto label47;
     label105:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 130)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i == _r1.i) goto label125;
     XMLVM_SOURCE_POSITION("ArrayList.java", 131)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_;
     if (_r0.i <= 0) goto label140;
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     _r0.i = _r0.i / 2;
     if (_r6.i >= _r0.i) goto label140;
     label125:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 132)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_;
     _r3.i = _r3.i - _r4.i;
+    XMLVM_CHECK_NPE(5)
     ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_ = _r3.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r1.i, _r2.o, _r3.i, _r6.i);
     goto label97;
     label140:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 135)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_;
     _r0.i = _r0.i + _r6.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 136)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
     _r3.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     XMLVM_SOURCE_POSITION("ArrayList.java", 137)
     _r4.i = _r4.i - _r6.i;
@@ -1108,9 +1154,12 @@ JAVA_BOOLEAN java_util_ArrayList_add___java_lang_Object(JAVA_OBJECT me, JAVA_OBJ
     _r5.o = n1;
     _r3.i = 1;
     XMLVM_SOURCE_POSITION("ArrayList.java", 155)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.size_;
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.array_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i != _r1.i) goto label14;
@@ -1119,20 +1168,27 @@ JAVA_BOOLEAN java_util_ArrayList_add___java_lang_Object(JAVA_OBJECT me, JAVA_OBJ
     java_util_ArrayList_growAtEnd___int(_r4.o, _r3.i);
     label14:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 158)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.size_;
     _r1.i = _r1.i + _r2.i;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r5.o;
     XMLVM_SOURCE_POSITION("ArrayList.java", 159)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.size_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.size_ = _r0.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 160)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_AbstractList*) _r4.o)->fields.java_util_AbstractList.modCount_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_util_AbstractList*) _r4.o)->fields.java_util_AbstractList.modCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 161)
     XMLVM_EXIT_METHOD()
@@ -1161,6 +1217,7 @@ JAVA_BOOLEAN java_util_ArrayList_addAll___int_java_util_Collection(JAVA_OBJECT m
     _r7.i = 0;
     XMLVM_SOURCE_POSITION("ArrayList.java", 180)
     if (_r9.i < 0) goto label7;
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.size_;
     if (_r9.i <= _r0.i) goto label29;
     label7:;
@@ -1172,6 +1229,7 @@ JAVA_BOOLEAN java_util_ArrayList_addAll___int_java_util_Collection(JAVA_OBJECT m
     XMLVM_SOURCE_POSITION("ArrayList.java", 184)
     _r2.o = java_lang_Integer_valueOf___int(_r9.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 185)
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.size_;
     _r3.o = java_lang_Integer_valueOf___int(_r3.i);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object_java_lang_Object(_r1.o, _r2.o, _r3.o);
@@ -1199,33 +1257,45 @@ JAVA_BOOLEAN java_util_ArrayList_addAll___int_java_util_Collection(JAVA_OBJECT m
     XMLVM_CHECK_NPE(8)
     java_util_ArrayList_growAtFront___int(_r8.o, _r1.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 198)
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_;
     _r2.i = _r2.i - _r1.i;
+    XMLVM_CHECK_NPE(8)
     ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_ = _r2.i;
     label48:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 224)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_;
     _r3.i = _r3.i + _r9.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r7.i, _r2.o, _r3.i, _r1.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 226)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.size_;
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(8)
     ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.size_ = _r0.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 227)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_util_AbstractList*) _r8.o)->fields.java_util_AbstractList.modCount_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(8)
     ((java_util_AbstractList*) _r8.o)->fields.java_util_AbstractList.modCount_ = _r0.i;
     _r0.i = 1;
     goto label37;
     label69:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 199)
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.size_;
     if (_r9.i != _r2.i) goto label88;
     XMLVM_SOURCE_POSITION("ArrayList.java", 200)
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.size_;
     _r2.i = _r2.i + _r3.i;
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.array_;
     _r3.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r3.o));
     _r3.i = _r3.i - _r1.i;
@@ -1236,8 +1306,10 @@ JAVA_BOOLEAN java_util_ArrayList_addAll___int_java_util_Collection(JAVA_OBJECT m
     goto label48;
     label88:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 204)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.array_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.size_;
     _r2.i = _r2.i - _r3.i;
     if (_r2.i >= _r1.i) goto label100;
@@ -1247,33 +1319,43 @@ JAVA_BOOLEAN java_util_ArrayList_addAll___int_java_util_Collection(JAVA_OBJECT m
     goto label48;
     label100:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 206)
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.size_;
     _r2.i = _r2.i + _r3.i;
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.array_;
     _r3.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r3.o));
     _r3.i = _r3.i - _r1.i;
     if (_r2.i > _r3.i) goto label121;
     XMLVM_SOURCE_POSITION("ArrayList.java", 207)
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_;
     if (_r2.i <= 0) goto label154;
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.size_;
     _r2.i = _r2.i / 2;
     if (_r9.i >= _r2.i) goto label154;
     label121:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 208)
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_;
     _r2.i = _r2.i - _r1.i;
     if (_r2.i >= 0) goto label142;
     XMLVM_SOURCE_POSITION("ArrayList.java", 209)
     XMLVM_SOURCE_POSITION("ArrayList.java", 210)
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_;
     _r3.i = _r3.i + _r9.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 211)
+    XMLVM_CHECK_NPE(8)
     _r4.o = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(8)
     _r5.o = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.array_;
     _r2.i = _r3.i - _r2.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 212)
+    XMLVM_CHECK_NPE(8)
     _r6.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.size_;
     _r6.i = _r6.i - _r9.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r4.o, _r3.i, _r5.o, _r2.i, _r6.i);
@@ -1281,21 +1363,29 @@ JAVA_BOOLEAN java_util_ArrayList_addAll___int_java_util_Collection(JAVA_OBJECT m
     label142:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 213)
     XMLVM_SOURCE_POSITION("ArrayList.java", 215)
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(8)
     _r4.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(8)
     _r5.o = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.array_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r3.o, _r4.i, _r5.o, _r2.i, _r9.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 216)
+    XMLVM_CHECK_NPE(8)
     ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_ = _r2.i;
     goto label48;
     label154:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 218)
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_;
     _r2.i = _r2.i + _r9.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 219)
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(8)
     _r4.o = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.array_;
     _r5.i = _r2.i + _r1.i;
+    XMLVM_CHECK_NPE(8)
     _r6.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.size_;
     XMLVM_SOURCE_POSITION("ArrayList.java", 220)
     _r6.i = _r6.i - _r9.i;
@@ -1334,9 +1424,12 @@ JAVA_BOOLEAN java_util_ArrayList_addAll___java_util_Collection(JAVA_OBJECT me, J
     label10:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 245)
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.array_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.size_;
     _r3.i = _r3.i + _r4.i;
     _r2.i = _r2.i - _r3.i;
@@ -1347,21 +1440,28 @@ JAVA_BOOLEAN java_util_ArrayList_addAll___java_util_Collection(JAVA_OBJECT me, J
     java_util_ArrayList_growAtEnd___int(_r6.o, _r1.i);
     label26:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 248)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.size_;
     _r2.i = _r2.i + _r3.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 249)
     _r3.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r5.i, _r1.o, _r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 250)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.size_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(6)
     ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.size_ = _r0.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 251)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_AbstractList*) _r6.o)->fields.java_util_AbstractList.modCount_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(6)
     ((java_util_AbstractList*) _r6.o)->fields.java_util_AbstractList.modCount_ = _r0.i;
     _r0.i = 1;
     goto label9;
@@ -1379,23 +1479,32 @@ void java_util_ArrayList_clear__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("ArrayList.java", 263)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.size_;
     if (_r0.i == 0) goto label28;
     XMLVM_SOURCE_POSITION("ArrayList.java", 267)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.size_;
     _r2.i = _r2.i + _r3.i;
     _r3.o = JAVA_NULL;
     java_util_Arrays_fill___java_lang_Object_1ARRAY_int_int_java_lang_Object(_r0.o, _r1.i, _r2.i, _r3.o);
     XMLVM_SOURCE_POSITION("ArrayList.java", 270)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(4)
     ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.size_ = _r0.i;
+    XMLVM_CHECK_NPE(4)
     ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.firstIndex_ = _r0.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 271)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_AbstractList*) _r4.o)->fields.java_util_AbstractList.modCount_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_util_AbstractList*) _r4.o)->fields.java_util_AbstractList.modCount_ = _r0.i;
     label28:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 273)
@@ -1419,11 +1528,13 @@ JAVA_OBJECT java_util_ArrayList_clone__(JAVA_OBJECT me)
     _r0.o = java_lang_Object_clone__(_r2.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("ArrayList.java", 287)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_ArrayList*) _r2.o)->fields.java_util_ArrayList.array_;
     //java_lang_Object_1ARRAY_clone__[0]
     XMLVM_CHECK_NPE(1)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((org_xmlvm_runtime_XMLVMArray*) _r1.o)->tib->vtable[0])(_r1.o);
     _r2.o = _r2.o;
+    XMLVM_CHECK_NPE(0)
     ((java_util_ArrayList*) _r0.o)->fields.java_util_ArrayList.array_ = _r2.o;
     // End try
     XMLVM_TRY_END
@@ -1457,12 +1568,15 @@ JAVA_BOOLEAN java_util_ArrayList_contains___java_lang_Object(JAVA_OBJECT me, JAV
     _r5.o = n1;
     _r3.i = 1;
     XMLVM_SOURCE_POSITION("ArrayList.java", 304)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.size_;
     _r0.i = _r0.i + _r1.i;
     if (_r5.o == JAVA_NULL) goto label29;
     XMLVM_SOURCE_POSITION("ArrayList.java", 305)
     XMLVM_SOURCE_POSITION("ArrayList.java", 306)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.firstIndex_;
     label10:;
     if (_r1.i < _r0.i) goto label14;
@@ -1474,6 +1588,7 @@ JAVA_BOOLEAN java_util_ArrayList_contains___java_lang_Object(JAVA_OBJECT me, JAV
     return _r0.i;
     label14:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 307)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.array_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -1490,10 +1605,12 @@ JAVA_BOOLEAN java_util_ArrayList_contains___java_lang_Object(JAVA_OBJECT me, JAV
     goto label10;
     label29:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 312)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.firstIndex_;
     label31:;
     if (_r1.i >= _r0.i) goto label12;
     XMLVM_SOURCE_POSITION("ArrayList.java", 313)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.array_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -1519,12 +1636,14 @@ void java_util_ArrayList_ensureCapacity___int(JAVA_OBJECT me, JAVA_INT n1)
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("ArrayList.java", 329)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_ArrayList*) _r2.o)->fields.java_util_ArrayList.array_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r0.i = _r3.i - _r0.i;
     if (_r0.i <= 0) goto label14;
     XMLVM_SOURCE_POSITION("ArrayList.java", 330)
     XMLVM_SOURCE_POSITION("ArrayList.java", 333)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_ArrayList*) _r2.o)->fields.java_util_ArrayList.firstIndex_;
     if (_r1.i <= 0) goto label15;
     XMLVM_SOURCE_POSITION("ArrayList.java", 334)
@@ -1556,6 +1675,7 @@ JAVA_OBJECT java_util_ArrayList_get___int(JAVA_OBJECT me, JAVA_INT n1)
     _r5.i = n1;
     XMLVM_SOURCE_POSITION("ArrayList.java", 343)
     if (_r5.i < 0) goto label6;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.size_;
     if (_r5.i < _r0.i) goto label28;
     label6:;
@@ -1567,6 +1687,7 @@ JAVA_OBJECT java_util_ArrayList_get___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("ArrayList.java", 347)
     _r2.o = java_lang_Integer_valueOf___int(_r5.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 348)
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.size_;
     _r3.o = java_lang_Integer_valueOf___int(_r3.i);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object_java_lang_Object(_r1.o, _r2.o, _r3.o);
@@ -1575,7 +1696,9 @@ JAVA_OBJECT java_util_ArrayList_get___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label28:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 350)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.firstIndex_;
     _r1.i = _r1.i + _r5.i;
     XMLVM_CHECK_NPE(0)
@@ -1602,44 +1725,59 @@ void java_util_ArrayList_growAtEnd___int(JAVA_OBJECT me, JAVA_INT n1)
     _r2.i = 12;
     _r4.i = 0;
     XMLVM_SOURCE_POSITION("ArrayList.java", 354)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     _r0.i = _r0.i - _r1.i;
     if (_r0.i < _r6.i) goto label49;
     XMLVM_SOURCE_POSITION("ArrayList.java", 357)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     if (_r0.i == 0) goto label43;
     XMLVM_SOURCE_POSITION("ArrayList.java", 358)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r1.i, _r2.o, _r4.i, _r3.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 359)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_;
     if (_r0.i >= _r1.i) goto label46;
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_;
     label34:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 362)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     _r3.o = JAVA_NULL;
     java_util_Arrays_fill___java_lang_Object_1ARRAY_int_int_java_lang_Object(_r1.o, _r0.i, _r2.i, _r3.o);
     label43:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 364)
+    XMLVM_CHECK_NPE(5)
     ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_ = _r4.i;
     label45:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 382)
     XMLVM_EXIT_METHOD()
     return;
     label46:;
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     goto label34;
     label49:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 368)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     _r0.i = _r0.i / 2;
     XMLVM_SOURCE_POSITION("ArrayList.java", 369)
@@ -1653,22 +1791,29 @@ void java_util_ArrayList_growAtEnd___int(JAVA_OBJECT me, JAVA_INT n1)
     label59:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 373)
     XMLVM_SOURCE_POSITION("ArrayList.java", 375)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     _r0.i = _r0.i + _r1.i;
     XMLVM_CHECK_NPE(5)
     _r0.o = java_util_ArrayList_newElementArray___int(_r5.o, _r0.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 376)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     if (_r1.i == 0) goto label81;
     XMLVM_SOURCE_POSITION("ArrayList.java", 377)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r2.i, _r0.o, _r4.i, _r3.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 378)
+    XMLVM_CHECK_NPE(5)
     ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_ = _r4.i;
     label81:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 380)
+    XMLVM_CHECK_NPE(5)
     ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_ = _r0.o;
     goto label45;
     //XMLVM_END_WRAPPER
@@ -1689,27 +1834,38 @@ void java_util_ArrayList_growAtFront___int(JAVA_OBJECT me, JAVA_INT n1)
     _r6.i = n1;
     _r2.i = 12;
     XMLVM_SOURCE_POSITION("ArrayList.java", 385)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     _r0.i = _r0.i - _r1.i;
     if (_r0.i < _r6.i) goto label50;
     XMLVM_SOURCE_POSITION("ArrayList.java", 386)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     _r0.i = _r0.i - _r1.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 389)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     if (_r1.i == 0) goto label47;
     XMLVM_SOURCE_POSITION("ArrayList.java", 390)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r2.i, _r3.o, _r0.i, _r4.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 391)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     _r1.i = _r1.i + _r2.i;
     if (_r1.i <= _r0.i) goto label39;
@@ -1717,12 +1873,15 @@ void java_util_ArrayList_growAtFront___int(JAVA_OBJECT me, JAVA_INT n1)
     _r1 = _r0;
     label39:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 393)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_;
     _r4.o = JAVA_NULL;
     java_util_Arrays_fill___java_lang_Object_1ARRAY_int_int_java_lang_Object(_r2.o, _r3.i, _r1.i, _r4.o);
     label47:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 395)
+    XMLVM_CHECK_NPE(5)
     ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_ = _r0.i;
     label49:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 411)
@@ -1730,6 +1889,7 @@ void java_util_ArrayList_growAtFront___int(JAVA_OBJECT me, JAVA_INT n1)
     return;
     label50:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 397)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     _r0.i = _r0.i / 2;
     XMLVM_SOURCE_POSITION("ArrayList.java", 398)
@@ -1743,25 +1903,33 @@ void java_util_ArrayList_growAtFront___int(JAVA_OBJECT me, JAVA_INT n1)
     label60:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 402)
     XMLVM_SOURCE_POSITION("ArrayList.java", 404)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     _r1.i = _r1.i + _r0.i;
     XMLVM_CHECK_NPE(5)
     _r1.o = java_util_ArrayList_newElementArray___int(_r5.o, _r1.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 405)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     if (_r2.i == 0) goto label80;
     XMLVM_SOURCE_POSITION("ArrayList.java", 406)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r2.o, _r3.i, _r1.o, _r0.i, _r4.i);
     label80:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 408)
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     _r0.i = _r0.i - _r2.i;
+    XMLVM_CHECK_NPE(5)
     ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_ = _r0.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 409)
+    XMLVM_CHECK_NPE(5)
     ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_ = _r1.o;
     goto label49;
     //XMLVM_END_WRAPPER
@@ -1785,6 +1953,7 @@ void java_util_ArrayList_growForInsert___int_int(JAVA_OBJECT me, JAVA_INT n1, JA
     _r8.i = n2;
     _r1.i = 12;
     XMLVM_SOURCE_POSITION("ArrayList.java", 417)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.size_;
     _r0.i = _r0.i / 2;
     XMLVM_SOURCE_POSITION("ArrayList.java", 418)
@@ -1798,6 +1967,7 @@ void java_util_ArrayList_growForInsert___int_int(JAVA_OBJECT me, JAVA_INT n1, JA
     label12:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 422)
     XMLVM_SOURCE_POSITION("ArrayList.java", 424)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.size_;
     _r1.i = _r1.i + _r0.i;
     XMLVM_CHECK_NPE(6)
@@ -1805,22 +1975,29 @@ void java_util_ArrayList_growForInsert___int_int(JAVA_OBJECT me, JAVA_INT n1, JA
     XMLVM_SOURCE_POSITION("ArrayList.java", 427)
     _r0.i = _r0.i - _r8.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 430)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.firstIndex_;
     _r3.i = _r3.i + _r7.i;
     _r4.i = _r0.i + _r7.i;
     _r4.i = _r4.i + _r8.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 431)
+    XMLVM_CHECK_NPE(6)
     _r5.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.size_;
     _r5.i = _r5.i - _r7.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r2.o, _r3.i, _r1.o, _r4.i, _r5.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 433)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.firstIndex_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r2.o, _r3.i, _r1.o, _r0.i, _r7.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 434)
+    XMLVM_CHECK_NPE(6)
     ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.firstIndex_ = _r0.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 435)
+    XMLVM_CHECK_NPE(6)
     ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.array_ = _r1.o;
     XMLVM_SOURCE_POSITION("ArrayList.java", 436)
     XMLVM_EXIT_METHOD()
@@ -1840,12 +2017,15 @@ JAVA_INT java_util_ArrayList_indexOf___java_lang_Object(JAVA_OBJECT me, JAVA_OBJ
     _r3.o = me;
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("ArrayList.java", 441)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.size_;
     _r0.i = _r0.i + _r1.i;
     if (_r4.o == JAVA_NULL) goto label31;
     XMLVM_SOURCE_POSITION("ArrayList.java", 442)
     XMLVM_SOURCE_POSITION("ArrayList.java", 443)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.firstIndex_;
     label9:;
     if (_r1.i < _r0.i) goto label13;
@@ -1857,6 +2037,7 @@ JAVA_INT java_util_ArrayList_indexOf___java_lang_Object(JAVA_OBJECT me, JAVA_OBJ
     return _r0.i;
     label13:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 444)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.array_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -1866,6 +2047,7 @@ JAVA_INT java_util_ArrayList_indexOf___java_lang_Object(JAVA_OBJECT me, JAVA_OBJ
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_Object*) _r4.o)->tib->vtable[1])(_r4.o, _r2.o);
     if (_r2.i == 0) goto label28;
     XMLVM_SOURCE_POSITION("ArrayList.java", 445)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.firstIndex_;
     _r0.i = _r1.i - _r0.i;
     goto label12;
@@ -1874,16 +2056,19 @@ JAVA_INT java_util_ArrayList_indexOf___java_lang_Object(JAVA_OBJECT me, JAVA_OBJ
     goto label9;
     label31:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 449)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.firstIndex_;
     label33:;
     if (_r1.i >= _r0.i) goto label11;
     XMLVM_SOURCE_POSITION("ArrayList.java", 450)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.array_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
     _r2.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     if (_r2.o != JAVA_NULL) goto label46;
     XMLVM_SOURCE_POSITION("ArrayList.java", 451)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.firstIndex_;
     _r0.i = _r1.i - _r0.i;
     goto label12;
@@ -1901,6 +2086,7 @@ JAVA_BOOLEAN java_util_ArrayList_isEmpty__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ArrayList.java", 460)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_ArrayList*) _r1.o)->fields.java_util_ArrayList.size_;
     if (_r0.i != 0) goto label6;
     _r0.i = 1;
@@ -1926,7 +2112,9 @@ JAVA_INT java_util_ArrayList_lastIndexOf___java_lang_Object(JAVA_OBJECT me, JAVA
     _r4.o = n1;
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("ArrayList.java", 465)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.size_;
     _r0.i = _r0.i + _r1.i;
     if (_r4.o == JAVA_NULL) goto label32;
@@ -1934,6 +2122,7 @@ JAVA_INT java_util_ArrayList_lastIndexOf___java_lang_Object(JAVA_OBJECT me, JAVA
     XMLVM_SOURCE_POSITION("ArrayList.java", 467)
     _r0.i = _r0.i - _r2.i;
     label9:;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.firstIndex_;
     if (_r0.i >= _r1.i) goto label15;
     label13:;
@@ -1944,6 +2133,7 @@ JAVA_INT java_util_ArrayList_lastIndexOf___java_lang_Object(JAVA_OBJECT me, JAVA
     return _r0.i;
     label15:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 468)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.array_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -1953,6 +2143,7 @@ JAVA_INT java_util_ArrayList_lastIndexOf___java_lang_Object(JAVA_OBJECT me, JAVA
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_Object*) _r4.o)->tib->vtable[1])(_r4.o, _r1.o);
     if (_r1.i == 0) goto label29;
     XMLVM_SOURCE_POSITION("ArrayList.java", 469)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.firstIndex_;
     _r0.i = _r0.i - _r1.i;
     goto label14;
@@ -1963,15 +2154,18 @@ JAVA_INT java_util_ArrayList_lastIndexOf___java_lang_Object(JAVA_OBJECT me, JAVA
     XMLVM_SOURCE_POSITION("ArrayList.java", 473)
     _r0.i = _r0.i - _r2.i;
     label33:;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.firstIndex_;
     if (_r0.i < _r1.i) goto label13;
     XMLVM_SOURCE_POSITION("ArrayList.java", 474)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.array_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     _r1.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
     if (_r1.o != JAVA_NULL) goto label47;
     XMLVM_SOURCE_POSITION("ArrayList.java", 475)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.firstIndex_;
     _r0.i = _r0.i - _r1.i;
     goto label14;
@@ -2001,6 +2195,7 @@ JAVA_OBJECT java_util_ArrayList_remove___int(JAVA_OBJECT me, JAVA_INT n1)
     _r6.i = 1;
     XMLVM_SOURCE_POSITION("ArrayList.java", 494)
     if (_r9.i < 0) goto label8;
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.size_;
     if (_r9.i < _r0.i) goto label30;
     label8:;
@@ -2012,6 +2207,7 @@ JAVA_OBJECT java_util_ArrayList_remove___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("ArrayList.java", 498)
     _r2.o = java_lang_Integer_valueOf___int(_r9.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 499)
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.size_;
     _r3.o = java_lang_Integer_valueOf___int(_r3.i);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object_java_lang_Object(_r1.o, _r2.o, _r3.o);
@@ -2022,54 +2218,70 @@ JAVA_OBJECT java_util_ArrayList_remove___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("ArrayList.java", 501)
     if (_r9.i != 0) goto label67;
     XMLVM_SOURCE_POSITION("ArrayList.java", 502)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     XMLVM_SOURCE_POSITION("ArrayList.java", 503)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_;
     _r3.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(8)
     ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_ = _r3.i;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i] = _r7.o;
     label48:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 521)
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.size_;
     _r1.i = _r1.i - _r6.i;
+    XMLVM_CHECK_NPE(8)
     ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.size_ = _r1.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 525)
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.size_;
     if (_r1.i != 0) goto label60;
     XMLVM_SOURCE_POSITION("ArrayList.java", 526)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(8)
     ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_ = _r1.i;
     label60:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 529)
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_util_AbstractList*) _r8.o)->fields.java_util_AbstractList.modCount_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(8)
     ((java_util_AbstractList*) _r8.o)->fields.java_util_AbstractList.modCount_ = _r1.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 530)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label67:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 504)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.size_;
     _r0.i = _r0.i - _r6.i;
     if (_r9.i != _r0.i) goto label88;
     XMLVM_SOURCE_POSITION("ArrayList.java", 505)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.size_;
     _r0.i = _r0.i + _r1.i;
     _r0.i = _r0.i - _r6.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 506)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.array_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     _r1.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
     XMLVM_SOURCE_POSITION("ArrayList.java", 507)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.array_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
@@ -2078,28 +2290,38 @@ JAVA_OBJECT java_util_ArrayList_remove___int(JAVA_OBJECT me, JAVA_INT n1)
     goto label48;
     label88:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 509)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_;
     _r0.i = _r0.i + _r9.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 510)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.array_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     _r1.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
     XMLVM_SOURCE_POSITION("ArrayList.java", 511)
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.size_;
     _r2.i = _r2.i / 2;
     if (_r9.i >= _r2.i) goto label126;
     XMLVM_SOURCE_POSITION("ArrayList.java", 512)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(8)
     _r4.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_;
     _r4.i = _r4.i + 1;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r2.i, _r3.o, _r4.i, _r9.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 514)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_;
     _r3.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(8)
     ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_ = _r3.i;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -2108,17 +2330,23 @@ JAVA_OBJECT java_util_ArrayList_remove___int(JAVA_OBJECT me, JAVA_INT n1)
     goto label48;
     label126:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 516)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.array_;
     _r3.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(8)
     _r4.o = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.array_;
     XMLVM_SOURCE_POSITION("ArrayList.java", 517)
+    XMLVM_CHECK_NPE(8)
     _r5.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.size_;
     _r5.i = _r5.i - _r9.i;
     _r5.i = _r5.i - _r6.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r2.o, _r3.i, _r4.o, _r0.i, _r5.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 518)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_util_ArrayList*) _r8.o)->fields.java_util_ArrayList.size_;
     _r2.i = _r2.i + _r3.i;
     _r2.i = _r2.i - _r6.i;
@@ -2193,6 +2421,7 @@ void java_util_ArrayList_removeRange___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA
     XMLVM_THROW_CUSTOM(_r0.o)
     label19:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 563)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.size_;
     if (_r8.i <= _r0.i) goto label45;
     XMLVM_SOURCE_POSITION("ArrayList.java", 565)
@@ -2202,6 +2431,7 @@ void java_util_ArrayList_removeRange___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA
     _r1.o = xmlvm_create_java_string_from_pool(1400);
     XMLVM_SOURCE_POSITION("ArrayList.java", 568)
     _r2.o = java_lang_Integer_valueOf___int(_r8.i);
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.size_;
     _r3.o = java_lang_Integer_valueOf___int(_r3.i);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object_java_lang_Object(_r1.o, _r2.o, _r3.o);
@@ -2232,60 +2462,82 @@ void java_util_ArrayList_removeRange___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA
     return;
     label70:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 579)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.size_;
     if (_r8.i != _r0.i) goto label101;
     XMLVM_SOURCE_POSITION("ArrayList.java", 580)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.firstIndex_;
     _r1.i = _r1.i + _r7.i;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.size_;
     _r2.i = _r2.i + _r3.i;
     java_util_Arrays_fill___java_lang_Object_1ARRAY_int_int_java_lang_Object(_r0.o, _r1.i, _r2.i, _r5.o);
     label87:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 592)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.size_;
     _r1.i = _r8.i - _r7.i;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(6)
     ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.size_ = _r0.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 593)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_AbstractList*) _r6.o)->fields.java_util_AbstractList.modCount_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(6)
     ((java_util_AbstractList*) _r6.o)->fields.java_util_AbstractList.modCount_ = _r0.i;
     goto label69;
     label101:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 581)
     if (_r7.i != 0) goto label119;
     XMLVM_SOURCE_POSITION("ArrayList.java", 582)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.firstIndex_;
     _r2.i = _r2.i + _r8.i;
     java_util_Arrays_fill___java_lang_Object_1ARRAY_int_int_java_lang_Object(_r0.o, _r1.i, _r2.i, _r5.o);
     XMLVM_SOURCE_POSITION("ArrayList.java", 583)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.firstIndex_;
     _r0.i = _r0.i + _r8.i;
+    XMLVM_CHECK_NPE(6)
     ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.firstIndex_ = _r0.i;
     goto label87;
     label119:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 586)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.firstIndex_;
     _r1.i = _r1.i + _r8.i;
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.firstIndex_;
     XMLVM_SOURCE_POSITION("ArrayList.java", 587)
     _r3.i = _r3.i + _r7.i;
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.size_;
     _r4.i = _r4.i - _r8.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r1.i, _r2.o, _r3.i, _r4.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 588)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.size_;
     _r0.i = _r0.i + _r1.i;
     _r1.i = _r0.i + _r7.i;
     _r1.i = _r1.i - _r8.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 590)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_ArrayList*) _r6.o)->fields.java_util_ArrayList.array_;
     java_util_Arrays_fill___java_lang_Object_1ARRAY_int_int_java_lang_Object(_r2.o, _r1.i, _r0.i, _r5.o);
     goto label87;
@@ -2308,6 +2560,7 @@ JAVA_OBJECT java_util_ArrayList_set___int_java_lang_Object(JAVA_OBJECT me, JAVA_
     _r6.o = n2;
     XMLVM_SOURCE_POSITION("ArrayList.java", 610)
     if (_r5.i < 0) goto label6;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.size_;
     if (_r5.i < _r0.i) goto label28;
     label6:;
@@ -2319,6 +2572,7 @@ JAVA_OBJECT java_util_ArrayList_set___int_java_lang_Object(JAVA_OBJECT me, JAVA_
     XMLVM_SOURCE_POSITION("ArrayList.java", 614)
     _r2.o = java_lang_Integer_valueOf___int(_r5.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 615)
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.size_;
     _r3.o = java_lang_Integer_valueOf___int(_r3.i);
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object_java_lang_Object(_r1.o, _r2.o, _r3.o);
@@ -2327,14 +2581,18 @@ JAVA_OBJECT java_util_ArrayList_set___int_java_lang_Object(JAVA_OBJECT me, JAVA_
     XMLVM_THROW_CUSTOM(_r0.o)
     label28:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 617)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.firstIndex_;
     _r1.i = _r1.i + _r5.i;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     XMLVM_SOURCE_POSITION("ArrayList.java", 618)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_ArrayList*) _r4.o)->fields.java_util_ArrayList.firstIndex_;
     _r2.i = _r2.i + _r5.i;
     XMLVM_CHECK_NPE(1)
@@ -2354,6 +2612,7 @@ JAVA_INT java_util_ArrayList_size__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ArrayList.java", 629)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_ArrayList*) _r1.o)->fields.java_util_ArrayList.size_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -2372,13 +2631,17 @@ JAVA_OBJECT java_util_ArrayList_toArray__(JAVA_OBJECT me)
     XMLVMElem _r5;
     _r5.o = me;
     XMLVM_SOURCE_POSITION("ArrayList.java", 640)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r0.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 641)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_;
     _r3.i = 0;
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r2.i, _r0.o, _r3.i, _r4.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 642)
@@ -2401,6 +2664,7 @@ JAVA_OBJECT java_util_ArrayList_toArray___java_lang_Object_1ARRAY(JAVA_OBJECT me
     _r5.o = me;
     _r6.o = n1;
     XMLVM_SOURCE_POSITION("ArrayList.java", 663)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r6.o));
     if (_r0.i <= _r1.i) goto label42;
@@ -2411,21 +2675,27 @@ JAVA_OBJECT java_util_ArrayList_toArray___java_lang_Object_1ARRAY(JAVA_OBJECT me
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_Class_getComponentType__(_r0.o);
     XMLVM_SOURCE_POSITION("ArrayList.java", 665)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     _r0.o = java_lang_reflect_Array_newInstance___java_lang_Class_int(_r0.o, _r1.i);
     _r0.o = _r0.o;
     label21:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 667)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_;
     _r3.i = 0;
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r2.i, _r0.o, _r3.i, _r4.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 668)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     if (_r1.i >= _r2.i) goto label41;
     XMLVM_SOURCE_POSITION("ArrayList.java", 671)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     _r2.o = JAVA_NULL;
     XMLVM_CHECK_NPE(0)
@@ -2454,19 +2724,26 @@ void java_util_ArrayList_trimToSize__(JAVA_OBJECT me)
     _r5.o = me;
     _r4.i = 0;
     XMLVM_SOURCE_POSITION("ArrayList.java", 683)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     XMLVM_CHECK_NPE(5)
     _r0.o = java_util_ArrayList_newElementArray___int(_r5.o, _r0.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 684)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.size_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r2.i, _r0.o, _r4.i, _r3.i);
     XMLVM_SOURCE_POSITION("ArrayList.java", 685)
+    XMLVM_CHECK_NPE(5)
     ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.array_ = _r0.o;
     XMLVM_SOURCE_POSITION("ArrayList.java", 686)
+    XMLVM_CHECK_NPE(5)
     ((java_util_ArrayList*) _r5.o)->fields.java_util_ArrayList.firstIndex_ = _r4.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 687)
+    XMLVM_CHECK_NPE(5)
     ((java_util_AbstractList*) _r5.o)->fields.java_util_AbstractList.modCount_ = _r4.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 688)
     XMLVM_EXIT_METHOD()
@@ -2491,6 +2768,7 @@ void java_util_ArrayList_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me
     XMLVM_SOURCE_POSITION("ArrayList.java", 695)
     // "size"
     _r1.o = xmlvm_create_java_string_from_pool(991);
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.size_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_int[11]
     XMLVM_CHECK_NPE(0)
@@ -2499,6 +2777,7 @@ void java_util_ArrayList_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me
     XMLVM_CHECK_NPE(4)
     java_io_ObjectOutputStream_writeFields__(_r4.o);
     XMLVM_SOURCE_POSITION("ArrayList.java", 697)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.array_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     //java_io_ObjectOutputStream_writeInt___int[19]
@@ -2548,6 +2827,7 @@ void java_util_ArrayList_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, 
     //java_io_ObjectInputStream_GetField_get___java_lang_String_int[13]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[13])(_r0.o, _r1.o, _r2.i);
+    XMLVM_CHECK_NPE(3)
     ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.size_ = _r0.i;
     XMLVM_SOURCE_POSITION("ArrayList.java", 709)
     //java_io_ObjectInputStream_readInt__[22]
@@ -2555,10 +2835,12 @@ void java_util_ArrayList_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, 
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_io_ObjectInputStream*) _r4.o)->tib->vtable[22])(_r4.o);
     XMLVM_CHECK_NPE(3)
     _r0.o = java_util_ArrayList_newElementArray___int(_r3.o, _r0.i);
+    XMLVM_CHECK_NPE(3)
     ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.array_ = _r0.o;
     _r0 = _r2;
     label24:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 710)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.size_;
     if (_r0.i < _r1.i) goto label29;
     XMLVM_SOURCE_POSITION("ArrayList.java", 713)
@@ -2566,6 +2848,7 @@ void java_util_ArrayList_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, 
     return;
     label29:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 711)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_ArrayList*) _r3.o)->fields.java_util_ArrayList.array_;
     //java_io_ObjectInputStream_readObject__[25]
     XMLVM_CHECK_NPE(4)

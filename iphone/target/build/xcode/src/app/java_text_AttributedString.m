@@ -444,6 +444,7 @@ void java_text_AttributedString___INIT____java_text_AttributedCharacterIterator(
     //java_lang_StringBuilder_toString__[5]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[5])(_r0.o);
+    XMLVM_CHECK_NPE(5)
     ((java_text_AttributedString*) _r5.o)->fields.java_text_AttributedString.text_ = _r0.o;
     XMLVM_SOURCE_POSITION("AttributedString.java", 402)
     XMLVM_CHECK_NPE(6)
@@ -477,6 +478,7 @@ void java_text_AttributedString___INIT____java_text_AttributedCharacterIterator(
     _r2.i = _r2.i + 1;
     XMLVM_CHECK_NPE(1)
     java_util_HashMap___INIT____int(_r1.o, _r2.i);
+    XMLVM_CHECK_NPE(5)
     ((java_text_AttributedString*) _r5.o)->fields.java_text_AttributedString.attributeMap_ = _r1.o;
     XMLVM_SOURCE_POSITION("AttributedString.java", 409)
     XMLVM_CHECK_NPE(0)
@@ -584,6 +586,7 @@ void java_text_AttributedString___INIT____java_text_AttributedCharacterIterator_
     //java_lang_StringBuilder_toString__[5]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[5])(_r0.o);
+    XMLVM_CHECK_NPE(6)
     ((java_text_AttributedString*) _r6.o)->fields.java_text_AttributedString.text_ = _r0.o;
     XMLVM_SOURCE_POSITION("AttributedString.java", 443)
     _r0.o = __NEW_java_util_HashMap();
@@ -595,6 +598,7 @@ void java_text_AttributedString___INIT____java_text_AttributedCharacterIterator_
     _r1.i = _r1.i + 1;
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(6)
     ((java_text_AttributedString*) _r6.o)->fields.java_text_AttributedString.attributeMap_ = _r0.o;
     XMLVM_SOURCE_POSITION("AttributedString.java", 446)
     XMLVM_CHECK_NPE(10)
@@ -752,12 +756,14 @@ void java_text_AttributedString___INIT____java_lang_String(JAVA_OBJECT me, JAVA_
     XMLVM_THROW_CUSTOM(_r0.o)
     label11:;
     XMLVM_SOURCE_POSITION("AttributedString.java", 526)
+    XMLVM_CHECK_NPE(2)
     ((java_text_AttributedString*) _r2.o)->fields.java_text_AttributedString.text_ = _r3.o;
     XMLVM_SOURCE_POSITION("AttributedString.java", 527)
     _r0.o = __NEW_java_util_HashMap();
     _r1.i = 11;
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(2)
     ((java_text_AttributedString*) _r2.o)->fields.java_text_AttributedString.attributeMap_ = _r0.o;
     XMLVM_SOURCE_POSITION("AttributedString.java", 528)
     XMLVM_EXIT_METHOD()
@@ -814,6 +820,7 @@ void java_text_AttributedString___INIT____java_lang_String_java_util_Map(JAVA_OB
     XMLVM_THROW_CUSTOM(_r0.o)
     label35:;
     XMLVM_SOURCE_POSITION("AttributedString.java", 553)
+    XMLVM_CHECK_NPE(7)
     ((java_text_AttributedString*) _r7.o)->fields.java_text_AttributedString.text_ = _r8.o;
     XMLVM_SOURCE_POSITION("AttributedString.java", 554)
     _r0.o = __NEW_java_util_HashMap();
@@ -825,6 +832,7 @@ void java_text_AttributedString___INIT____java_lang_String_java_util_Map(JAVA_OB
     _r1.i = _r1.i + 1;
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(7)
     ((java_text_AttributedString*) _r7.o)->fields.java_text_AttributedString.attributeMap_ = _r0.o;
     XMLVM_SOURCE_POSITION("AttributedString.java", 556)
     XMLVM_CHECK_NPE(9)
@@ -852,6 +860,7 @@ void java_text_AttributedString___INIT____java_lang_String_java_util_Map(JAVA_OB
     XMLVM_SOURCE_POSITION("AttributedString.java", 560)
     _r3.o = __NEW_java_text_AttributedString_Range();
     _r4.i = 0;
+    XMLVM_CHECK_NPE(7)
     _r5.o = ((java_text_AttributedString*) _r7.o)->fields.java_text_AttributedString.text_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(5)
@@ -864,6 +873,7 @@ void java_text_AttributedString___INIT____java_lang_String_java_util_Map(JAVA_OB
     XMLVM_CHECK_NPE(2)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_ArrayList*) _r2.o)->tib->vtable[7])(_r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("AttributedString.java", 561)
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_text_AttributedString*) _r7.o)->fields.java_text_AttributedString.attributeMap_;
     XMLVM_SOURCE_POSITION("AttributedString.java", 562)
     XMLVM_CHECK_NPE(0)
@@ -898,6 +908,7 @@ void java_text_AttributedString_addAttribute___java_text_AttributedCharacterIter
     XMLVM_THROW_CUSTOM(_r0.o)
     label8:;
     XMLVM_SOURCE_POSITION("AttributedString.java", 584)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_text_AttributedString*) _r4.o)->fields.java_text_AttributedString.text_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(0)
@@ -910,6 +921,7 @@ void java_text_AttributedString_addAttribute___java_text_AttributedCharacterIter
     XMLVM_THROW_CUSTOM(_r0.o)
     label22:;
     XMLVM_SOURCE_POSITION("AttributedString.java", 588)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_text_AttributedString*) _r4.o)->fields.java_text_AttributedString.attributeMap_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_get___java_lang_Object])(_r0.o, _r5.o);
@@ -922,6 +934,7 @@ void java_text_AttributedString_addAttribute___java_text_AttributedCharacterIter
     XMLVM_CHECK_NPE(0)
     java_util_ArrayList___INIT____int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("AttributedString.java", 591)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_text_AttributedString*) _r4.o)->fields.java_text_AttributedString.attributeMap_;
     XMLVM_CHECK_NPE(1)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_put___java_lang_Object_java_lang_Object])(_r1.o, _r5.o, _r0.o);
@@ -929,6 +942,7 @@ void java_text_AttributedString_addAttribute___java_text_AttributedCharacterIter
     XMLVM_SOURCE_POSITION("AttributedString.java", 595)
     _r1.o = __NEW_java_text_AttributedString_Range();
     _r2.i = 0;
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_text_AttributedString*) _r4.o)->fields.java_text_AttributedString.text_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(3)
@@ -978,6 +992,7 @@ void java_text_AttributedString_addAttribute___java_text_AttributedCharacterIter
     label8:;
     XMLVM_SOURCE_POSITION("AttributedString.java", 621)
     if (_r9.i < 0) goto label20;
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_text_AttributedString*) _r6.o)->fields.java_text_AttributedString.text_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(0)
@@ -999,6 +1014,7 @@ void java_text_AttributedString_addAttribute___java_text_AttributedCharacterIter
     return;
     label29:;
     XMLVM_SOURCE_POSITION("AttributedString.java", 629)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_text_AttributedString*) _r6.o)->fields.java_text_AttributedString.attributeMap_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_get___java_lang_Object])(_r0.o, _r7.o);
@@ -1017,6 +1033,7 @@ void java_text_AttributedString_addAttribute___java_text_AttributedCharacterIter
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_add___java_lang_Object])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("AttributedString.java", 633)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_text_AttributedString*) _r6.o)->fields.java_text_AttributedString.attributeMap_;
     XMLVM_CHECK_NPE(1)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_put___java_lang_Object_java_lang_Object])(_r1.o, _r7.o, _r0.o);
@@ -1044,6 +1061,7 @@ void java_text_AttributedString_addAttribute___java_text_AttributedCharacterIter
     _r6.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_next__])(_r0.o);
     _r6.o = _r6.o;
     XMLVM_SOURCE_POSITION("AttributedString.java", 639)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_text_AttributedString_Range*) _r6.o)->fields.java_text_AttributedString_Range.start_;
     if (_r10.i > _r1.i) goto label92;
     XMLVM_SOURCE_POSITION("AttributedString.java", 640)
@@ -1052,11 +1070,14 @@ void java_text_AttributedString_addAttribute___java_text_AttributedCharacterIter
     goto label69;
     label92:;
     XMLVM_SOURCE_POSITION("AttributedString.java", 642)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_text_AttributedString_Range*) _r6.o)->fields.java_text_AttributedString_Range.end_;
     if (_r9.i < _r1.i) goto label108;
     XMLVM_SOURCE_POSITION("AttributedString.java", 643)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_text_AttributedString_Range*) _r6.o)->fields.java_text_AttributedString_Range.end_;
     if (_r9.i != _r1.i) goto label63;
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_text_AttributedString_Range*) _r6.o)->fields.java_text_AttributedString_Range.value_;
     //java_lang_Object_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(8)
@@ -1068,19 +1089,24 @@ void java_text_AttributedString_addAttribute___java_text_AttributedCharacterIter
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_remove__])(_r0.o);
     XMLVM_SOURCE_POSITION("AttributedString.java", 646)
     _r1.o = __NEW_java_text_AttributedString_Range();
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_text_AttributedString_Range*) _r6.o)->fields.java_text_AttributedString_Range.start_;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_text_AttributedString_Range*) _r6.o)->fields.java_text_AttributedString_Range.value_;
     XMLVM_CHECK_NPE(1)
     java_text_AttributedString_Range___INIT____int_int_java_lang_Object(_r1.o, _r2.i, _r9.i, _r3.o);
     XMLVM_SOURCE_POSITION("AttributedString.java", 647)
     _r2.o = __NEW_java_text_AttributedString_Range();
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_text_AttributedString_Range*) _r6.o)->fields.java_text_AttributedString_Range.end_;
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_text_AttributedString_Range*) _r6.o)->fields.java_text_AttributedString_Range.value_;
     XMLVM_CHECK_NPE(2)
     java_text_AttributedString_Range___INIT____int_int_java_lang_Object(_r2.o, _r10.i, _r3.i, _r4.o);
     _r3 = _r6;
     label130:;
     XMLVM_SOURCE_POSITION("AttributedString.java", 649)
+    XMLVM_CHECK_NPE(3)
     _r3.i = ((java_text_AttributedString_Range*) _r3.o)->fields.java_text_AttributedString_Range.end_;
     if (_r10.i <= _r3.i) goto label140;
     XMLVM_CHECK_NPE(0)
@@ -1088,12 +1114,14 @@ void java_text_AttributedString_addAttribute___java_text_AttributedCharacterIter
     if (_r3.i != 0) goto label180;
     label140:;
     XMLVM_SOURCE_POSITION("AttributedString.java", 663)
+    XMLVM_CHECK_NPE(1)
     _r3.o = ((java_text_AttributedString_Range*) _r1.o)->fields.java_text_AttributedString_Range.value_;
     //java_lang_Object_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(8)
     _r3.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_Object*) _r8.o)->tib->vtable[1])(_r8.o, _r3.o);
     if (_r3.i == 0) goto label257;
     XMLVM_SOURCE_POSITION("AttributedString.java", 664)
+    XMLVM_CHECK_NPE(2)
     _r3.o = ((java_text_AttributedString_Range*) _r2.o)->fields.java_text_AttributedString_Range.value_;
     //java_lang_Object_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(8)
@@ -1101,15 +1129,20 @@ void java_text_AttributedString_addAttribute___java_text_AttributedCharacterIter
     if (_r3.i == 0) goto label228;
     XMLVM_SOURCE_POSITION("AttributedString.java", 665)
     _r3.o = __NEW_java_text_AttributedString_Range();
+    XMLVM_CHECK_NPE(1)
     _r4.i = ((java_text_AttributedString_Range*) _r1.o)->fields.java_text_AttributedString_Range.start_;
     if (_r4.i >= _r9.i) goto label224;
+    XMLVM_CHECK_NPE(1)
     _r4.i = ((java_text_AttributedString_Range*) _r1.o)->fields.java_text_AttributedString_Range.start_;
     label164:;
     XMLVM_SOURCE_POSITION("AttributedString.java", 666)
+    XMLVM_CHECK_NPE(2)
     _r5.i = ((java_text_AttributedString_Range*) _r2.o)->fields.java_text_AttributedString_Range.end_;
     if (_r5.i <= _r10.i) goto label226;
+    XMLVM_CHECK_NPE(2)
     _r2.i = ((java_text_AttributedString_Range*) _r2.o)->fields.java_text_AttributedString_Range.end_;
     label170:;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_text_AttributedString_Range*) _r1.o)->fields.java_text_AttributedString_Range.value_;
     XMLVM_CHECK_NPE(3)
     java_text_AttributedString_Range___INIT____int_int_java_lang_Object(_r3.o, _r4.i, _r2.i, _r1.o);
@@ -1122,14 +1155,18 @@ void java_text_AttributedString_addAttribute___java_text_AttributedCharacterIter
     _r6.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_next__])(_r0.o);
     _r6.o = _r6.o;
     XMLVM_SOURCE_POSITION("AttributedString.java", 651)
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_text_AttributedString_Range*) _r6.o)->fields.java_text_AttributedString_Range.end_;
     if (_r10.i > _r3.i) goto label219;
     XMLVM_SOURCE_POSITION("AttributedString.java", 652)
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_text_AttributedString_Range*) _r6.o)->fields.java_text_AttributedString_Range.start_;
     if (_r10.i > _r3.i) goto label206;
     XMLVM_SOURCE_POSITION("AttributedString.java", 653)
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_text_AttributedString_Range*) _r6.o)->fields.java_text_AttributedString_Range.start_;
     if (_r10.i != _r3.i) goto label222;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_text_AttributedString_Range*) _r6.o)->fields.java_text_AttributedString_Range.value_;
     //java_lang_Object_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(8)
@@ -1141,7 +1178,9 @@ void java_text_AttributedString_addAttribute___java_text_AttributedCharacterIter
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_remove__])(_r0.o);
     XMLVM_SOURCE_POSITION("AttributedString.java", 655)
     _r2.o = __NEW_java_text_AttributedString_Range();
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_text_AttributedString_Range*) _r6.o)->fields.java_text_AttributedString_Range.end_;
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_text_AttributedString_Range*) _r6.o)->fields.java_text_AttributedString_Range.value_;
     XMLVM_CHECK_NPE(2)
     java_text_AttributedString_Range___INIT____int_int_java_lang_Object(_r2.o, _r10.i, _r3.i, _r4.o);
@@ -1162,18 +1201,23 @@ void java_text_AttributedString_addAttribute___java_text_AttributedCharacterIter
     label228:;
     XMLVM_SOURCE_POSITION("AttributedString.java", 668)
     _r3.o = __NEW_java_text_AttributedString_Range();
+    XMLVM_CHECK_NPE(1)
     _r4.i = ((java_text_AttributedString_Range*) _r1.o)->fields.java_text_AttributedString_Range.start_;
     if (_r4.i >= _r9.i) goto label255;
+    XMLVM_CHECK_NPE(1)
     _r4.i = ((java_text_AttributedString_Range*) _r1.o)->fields.java_text_AttributedString_Range.start_;
     label236:;
     XMLVM_SOURCE_POSITION("AttributedString.java", 669)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_text_AttributedString_Range*) _r1.o)->fields.java_text_AttributedString_Range.value_;
     XMLVM_CHECK_NPE(3)
     java_text_AttributedString_Range___INIT____int_int_java_lang_Object(_r3.o, _r4.i, _r10.i, _r1.o);
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_add___java_lang_Object])(_r0.o, _r3.o);
     XMLVM_SOURCE_POSITION("AttributedString.java", 670)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_text_AttributedString_Range*) _r2.o)->fields.java_text_AttributedString_Range.start_;
+    XMLVM_CHECK_NPE(2)
     _r3.i = ((java_text_AttributedString_Range*) _r2.o)->fields.java_text_AttributedString_Range.end_;
     if (_r1.i >= _r3.i) goto label28;
     XMLVM_SOURCE_POSITION("AttributedString.java", 671)
@@ -1185,13 +1229,16 @@ void java_text_AttributedString_addAttribute___java_text_AttributedCharacterIter
     goto label236;
     label257:;
     XMLVM_SOURCE_POSITION("AttributedString.java", 675)
+    XMLVM_CHECK_NPE(2)
     _r3.o = ((java_text_AttributedString_Range*) _r2.o)->fields.java_text_AttributedString_Range.value_;
     //java_lang_Object_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(8)
     _r3.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_Object*) _r8.o)->tib->vtable[1])(_r8.o, _r3.o);
     if (_r3.i == 0) goto label294;
     XMLVM_SOURCE_POSITION("AttributedString.java", 676)
+    XMLVM_CHECK_NPE(1)
     _r3.i = ((java_text_AttributedString_Range*) _r1.o)->fields.java_text_AttributedString_Range.start_;
+    XMLVM_CHECK_NPE(1)
     _r4.i = ((java_text_AttributedString_Range*) _r1.o)->fields.java_text_AttributedString_Range.end_;
     if (_r3.i >= _r4.i) goto label274;
     XMLVM_SOURCE_POSITION("AttributedString.java", 677)
@@ -1200,11 +1247,14 @@ void java_text_AttributedString_addAttribute___java_text_AttributedCharacterIter
     label274:;
     XMLVM_SOURCE_POSITION("AttributedString.java", 679)
     _r1.o = __NEW_java_text_AttributedString_Range();
+    XMLVM_CHECK_NPE(2)
     _r3.i = ((java_text_AttributedString_Range*) _r2.o)->fields.java_text_AttributedString_Range.end_;
     if (_r3.i <= _r10.i) goto label292;
+    XMLVM_CHECK_NPE(2)
     _r3.i = ((java_text_AttributedString_Range*) _r2.o)->fields.java_text_AttributedString_Range.end_;
     label282:;
     XMLVM_SOURCE_POSITION("AttributedString.java", 680)
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_text_AttributedString_Range*) _r2.o)->fields.java_text_AttributedString_Range.value_;
     XMLVM_CHECK_NPE(1)
     java_text_AttributedString_Range___INIT____int_int_java_lang_Object(_r1.o, _r9.i, _r3.i, _r2.o);
@@ -1216,7 +1266,9 @@ void java_text_AttributedString_addAttribute___java_text_AttributedCharacterIter
     goto label282;
     label294:;
     XMLVM_SOURCE_POSITION("AttributedString.java", 682)
+    XMLVM_CHECK_NPE(1)
     _r3.i = ((java_text_AttributedString_Range*) _r1.o)->fields.java_text_AttributedString_Range.start_;
+    XMLVM_CHECK_NPE(1)
     _r4.i = ((java_text_AttributedString_Range*) _r1.o)->fields.java_text_AttributedString_Range.end_;
     if (_r3.i >= _r4.i) goto label303;
     XMLVM_SOURCE_POSITION("AttributedString.java", 683)
@@ -1230,7 +1282,9 @@ void java_text_AttributedString_addAttribute___java_text_AttributedCharacterIter
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_add___java_lang_Object])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("AttributedString.java", 686)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_text_AttributedString_Range*) _r2.o)->fields.java_text_AttributedString_Range.start_;
+    XMLVM_CHECK_NPE(2)
     _r3.i = ((java_text_AttributedString_Range*) _r2.o)->fields.java_text_AttributedString_Range.end_;
     if (_r1.i >= _r3.i) goto label28;
     XMLVM_SOURCE_POSITION("AttributedString.java", 687)
@@ -1317,6 +1371,7 @@ JAVA_OBJECT java_text_AttributedString_getIterator___java_text_AttributedCharact
     XMLVM_SOURCE_POSITION("AttributedString.java", 745)
     _r0.o = __NEW_java_text_AttributedString_AttributedIterator();
     _r1.i = 0;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_text_AttributedString*) _r3.o)->fields.java_text_AttributedString.text_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(2)

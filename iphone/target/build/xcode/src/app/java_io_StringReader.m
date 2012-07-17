@@ -398,13 +398,16 @@ void java_io_StringReader___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJECT
     java_io_Reader___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("StringReader.java", 31)
     _r0.i = -1;
+    XMLVM_CHECK_NPE(1)
     ((java_io_StringReader*) _r1.o)->fields.java_io_StringReader.markpos_ = _r0.i;
     XMLVM_SOURCE_POSITION("StringReader.java", 47)
+    XMLVM_CHECK_NPE(1)
     ((java_io_StringReader*) _r1.o)->fields.java_io_StringReader.str_ = _r2.o;
     XMLVM_SOURCE_POSITION("StringReader.java", 48)
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(2)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[8])(_r2.o);
+    XMLVM_CHECK_NPE(1)
     ((java_io_StringReader*) _r1.o)->fields.java_io_StringReader.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("StringReader.java", 49)
     XMLVM_EXIT_METHOD()
@@ -421,6 +424,7 @@ void java_io_StringReader_close__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("StringReader.java", 58)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(1)
     ((java_io_StringReader*) _r1.o)->fields.java_io_StringReader.str_ = _r0.o;
     XMLVM_SOURCE_POSITION("StringReader.java", 59)
     XMLVM_EXIT_METHOD()
@@ -436,6 +440,7 @@ JAVA_BOOLEAN java_io_StringReader_isClosed__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("StringReader.java", 67)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_StringReader*) _r1.o)->fields.java_io_StringReader.str_;
     if (_r0.o != JAVA_NULL) goto label6;
     _r0.i = 1;
@@ -468,6 +473,7 @@ void java_io_StringReader_mark___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label8:;
     XMLVM_SOURCE_POSITION("StringReader.java", 90)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_Reader*) _r3.o)->fields.java_io_Reader.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w23649aaab7b1c13)
@@ -507,7 +513,9 @@ void java_io_StringReader_mark___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_TRY_BEGIN(w23649aaab7b1c18)
     // Begin try
     XMLVM_SOURCE_POSITION("StringReader.java", 94)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_io_StringReader*) _r3.o)->fields.java_io_StringReader.pos_;
+    XMLVM_CHECK_NPE(3)
     ((java_io_StringReader*) _r3.o)->fields.java_io_StringReader.markpos_ = _r1.i;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
@@ -547,6 +555,7 @@ JAVA_INT java_io_StringReader_read__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("StringReader.java", 121)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_io_Reader*) _r4.o)->fields.java_io_Reader.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w23649aaab9b1b5)
@@ -586,13 +595,18 @@ JAVA_INT java_io_StringReader_read__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w23649aaab9b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("StringReader.java", 125)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_io_StringReader*) _r4.o)->fields.java_io_StringReader.pos_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_io_StringReader*) _r4.o)->fields.java_io_StringReader.count_;
     if (_r1.i == _r2.i) { XMLVM_MEMCPY(curThread_w23649aaab9b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23649aaab9b1c10, sizeof(XMLVM_JMP_BUF)); goto label45; };
     XMLVM_SOURCE_POSITION("StringReader.java", 126)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_io_StringReader*) _r4.o)->fields.java_io_StringReader.str_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_io_StringReader*) _r4.o)->fields.java_io_StringReader.pos_;
     _r3.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_io_StringReader*) _r4.o)->fields.java_io_StringReader.pos_ = _r3.i;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(1)
@@ -650,6 +664,7 @@ JAVA_INT java_io_StringReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OB
     _r6.i = n2;
     _r7.i = n3;
     XMLVM_SOURCE_POSITION("StringReader.java", 155)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_io_Reader*) _r4.o)->fields.java_io_Reader.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w23649aaac10b1b8)
@@ -777,7 +792,9 @@ JAVA_INT java_io_StringReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OB
     XMLVM_TRY_BEGIN(w23649aaac10b1c27)
     // Begin try
     XMLVM_SOURCE_POSITION("StringReader.java", 171)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_io_StringReader*) _r4.o)->fields.java_io_StringReader.pos_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_io_StringReader*) _r4.o)->fields.java_io_StringReader.count_;
     if (_r1.i != _r2.i) { XMLVM_MEMCPY(curThread_w23649aaac10b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23649aaac10b1c27, sizeof(XMLVM_JMP_BUF)); goto label73; };
     XMLVM_SOURCE_POSITION("StringReader.java", 172)
@@ -794,10 +811,13 @@ JAVA_INT java_io_StringReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OB
     label73:;
     XMLVM_TRY_BEGIN(w23649aaac10b1c29)
     // Begin try
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_io_StringReader*) _r4.o)->fields.java_io_StringReader.pos_;
     _r1.i = _r1.i + _r7.i;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_io_StringReader*) _r4.o)->fields.java_io_StringReader.count_;
     if (_r1.i <= _r2.i) { XMLVM_MEMCPY(curThread_w23649aaac10b1c29->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23649aaac10b1c29, sizeof(XMLVM_JMP_BUF)); goto label98; };
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_io_StringReader*) _r4.o)->fields.java_io_StringReader.count_;
     // End try
     XMLVM_TRY_END
@@ -809,14 +829,18 @@ JAVA_INT java_io_StringReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OB
     XMLVM_TRY_BEGIN(w23649aaac10b1c31)
     // Begin try
     XMLVM_SOURCE_POSITION("StringReader.java", 175)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_io_StringReader*) _r4.o)->fields.java_io_StringReader.str_;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_io_StringReader*) _r4.o)->fields.java_io_StringReader.pos_;
     XMLVM_CHECK_NPE(2)
     java_lang_String_getChars___int_int_char_1ARRAY_int(_r2.o, _r3.i, _r1.i, _r5.o, _r6.i);
     XMLVM_SOURCE_POSITION("StringReader.java", 176)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_io_StringReader*) _r4.o)->fields.java_io_StringReader.pos_;
     _r2.i = _r1.i - _r2.i;
     XMLVM_SOURCE_POSITION("StringReader.java", 177)
+    XMLVM_CHECK_NPE(4)
     ((java_io_StringReader*) _r4.o)->fields.java_io_StringReader.pos_ = _r1.i;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     _r0 = _r2;
@@ -830,6 +854,7 @@ JAVA_INT java_io_StringReader_read___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OB
     label98:;
     XMLVM_TRY_BEGIN(w23649aaac10b1c33)
     // Begin try
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_io_StringReader*) _r4.o)->fields.java_io_StringReader.pos_;
     // End try
     XMLVM_TRY_END
@@ -852,6 +877,7 @@ JAVA_BOOLEAN java_io_StringReader_ready__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("StringReader.java", 194)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_Reader*) _r3.o)->fields.java_io_Reader.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w23649aaac11b1b5)
@@ -914,6 +940,7 @@ void java_io_StringReader_reset__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("StringReader.java", 215)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_Reader*) _r3.o)->fields.java_io_Reader.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w23649aaac12b1b5)
@@ -953,9 +980,11 @@ void java_io_StringReader_reset__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w23649aaac12b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("StringReader.java", 219)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_io_StringReader*) _r3.o)->fields.java_io_StringReader.markpos_;
     _r2.i = -1;
     if (_r1.i == _r2.i) { XMLVM_MEMCPY(curThread_w23649aaac12b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23649aaac12b1c10, sizeof(XMLVM_JMP_BUF)); goto label35; };
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_io_StringReader*) _r3.o)->fields.java_io_StringReader.markpos_;
     // End try
     XMLVM_TRY_END
@@ -966,6 +995,7 @@ void java_io_StringReader_reset__(JAVA_OBJECT me)
     label31:;
     XMLVM_TRY_BEGIN(w23649aaac12b1c12)
     // Begin try
+    XMLVM_CHECK_NPE(3)
     ((java_io_StringReader*) _r3.o)->fields.java_io_StringReader.pos_ = _r1.i;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
@@ -998,6 +1028,7 @@ JAVA_LONG java_io_StringReader_skip___long(JAVA_OBJECT me, JAVA_LONG n1)
     _r5.o = me;
     _r6.l = n1;
     XMLVM_SOURCE_POSITION("StringReader.java", 245)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_io_Reader*) _r5.o)->fields.java_io_Reader.lock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w23649aaac13b1b6)
@@ -1037,10 +1068,13 @@ JAVA_LONG java_io_StringReader_skip___long(JAVA_OBJECT me, JAVA_LONG n1)
     XMLVM_TRY_BEGIN(w23649aaac13b1c11)
     // Begin try
     XMLVM_SOURCE_POSITION("StringReader.java", 250)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_io_StringReader*) _r5.o)->fields.java_io_StringReader.pos_;
     _r1.i = -_r1.i;
     XMLVM_SOURCE_POSITION("StringReader.java", 251)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_io_StringReader*) _r5.o)->fields.java_io_StringReader.count_;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_io_StringReader*) _r5.o)->fields.java_io_StringReader.pos_;
     _r2.i = _r2.i - _r3.i;
     if (_r2.i == 0) { XMLVM_MEMCPY(curThread_w23649aaac13b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23649aaac13b1c11, sizeof(XMLVM_JMP_BUF)); goto label39; };
@@ -1069,10 +1103,12 @@ JAVA_LONG java_io_StringReader_skip___long(JAVA_OBJECT me, JAVA_LONG n1)
     XMLVM_TRY_BEGIN(w23649aaac13b1c15)
     // Begin try
     XMLVM_SOURCE_POSITION("StringReader.java", 259)
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_io_StringReader*) _r5.o)->fields.java_io_StringReader.pos_;
     _r3.l = (JAVA_LONG) _r3.i;
     _r3.l = _r3.l + _r1.l;
     _r3.i = (JAVA_INT) _r3.l;
+    XMLVM_CHECK_NPE(5)
     ((java_io_StringReader*) _r5.o)->fields.java_io_StringReader.pos_ = _r3.i;
     XMLVM_SOURCE_POSITION("StringReader.java", 260)
     java_lang_Object_releaseLockRecursive__(_r0.o);

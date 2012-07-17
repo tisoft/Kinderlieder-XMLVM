@@ -253,7 +253,9 @@ void my_kinderlieder_PdfViewController_2___INIT____my_kinderlieder_PdfViewContro
     _r1.o = n1;
     _r2.o = n2;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 57)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_PdfViewController_2*) _r0.o)->fields.my_kinderlieder_PdfViewController_2.this_0_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_PdfViewController_2*) _r0.o)->fields.my_kinderlieder_PdfViewController_2.val_songInfo_ = _r2.o;
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
@@ -280,6 +282,7 @@ void my_kinderlieder_PdfViewController_2_clicked__(JAVA_OBJECT me)
     _r6.i = 1;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 59)
     _r4.o = my_kinderlieder_Main_GET_library();
+    XMLVM_CHECK_NPE(8)
     _r5.o = ((my_kinderlieder_PdfViewController_2*) _r8.o)->fields.my_kinderlieder_PdfViewController_2.val_songInfo_;
     XMLVM_CHECK_NPE(4)
     _r1.o = my_kinderlieder_Library_getMusicInfos___my_kinderlieder_SongInfo(_r4.o, _r5.o);
@@ -319,6 +322,7 @@ void my_kinderlieder_PdfViewController_2_clicked__(JAVA_OBJECT me)
     my_kinderlieder_PdfViewController_2_1___INIT____my_kinderlieder_PdfViewController_2_java_util_List(_r5.o, _r8.o, _r1.o);
     _r3.o = org_xmlvm_iphone_UIActionSheet_init___java_lang_String_org_xmlvm_iphone_UIActionSheetDelegate_java_lang_String_java_lang_String_java_lang_String_1ARRAY(_r4.o, _r5.o, _r7.o, _r7.o, _r2.o);
     XMLVM_SOURCE_POSITION("PdfViewController.java", 77)
+    XMLVM_CHECK_NPE(8)
     _r4.o = ((my_kinderlieder_PdfViewController_2*) _r8.o)->fields.my_kinderlieder_PdfViewController_2.this_0_;
     _r4.o = my_kinderlieder_PdfViewController_access$200___my_kinderlieder_PdfViewController(_r4.o);
     XMLVM_CHECK_NPE(3)
@@ -345,6 +349,7 @@ void my_kinderlieder_PdfViewController_2_play__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 85)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((my_kinderlieder_PdfViewController_2*) _r3.o)->fields.my_kinderlieder_PdfViewController_2.this_0_;
     my_kinderlieder_PdfViewController_access$300___my_kinderlieder_PdfViewController(_r0.o);
     XMLVM_SOURCE_POSITION("PdfViewController.java", 86)
@@ -359,8 +364,10 @@ void my_kinderlieder_PdfViewController_2_play__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_AVAudioPlayer_setDelegate___org_xmlvm_iphone_AVAudioPlayerDelegate(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("PdfViewController.java", 101)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((my_kinderlieder_PdfViewController_2*) _r3.o)->fields.my_kinderlieder_PdfViewController_2.this_0_;
     _r1.o = __NEW_java_util_ArrayList();
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((my_kinderlieder_PdfViewController_2*) _r3.o)->fields.my_kinderlieder_PdfViewController_2.this_0_;
     _r2.o = my_kinderlieder_PdfViewController_access$500___my_kinderlieder_PdfViewController(_r2.o);
     XMLVM_CHECK_NPE(1)

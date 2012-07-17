@@ -524,8 +524,10 @@ void java_util_Collections_CheckedCollection___INIT____java_util_Collection_java
     XMLVM_THROW_CUSTOM(_r0.o)
     label13:;
     XMLVM_SOURCE_POSITION("Collections.java", 2949)
+    XMLVM_CHECK_NPE(1)
     ((java_util_Collections_CheckedCollection*) _r1.o)->fields.java_util_Collections_CheckedCollection.c_ = _r2.o;
     XMLVM_SOURCE_POSITION("Collections.java", 2950)
+    XMLVM_CHECK_NPE(1)
     ((java_util_Collections_CheckedCollection*) _r1.o)->fields.java_util_Collections_CheckedCollection.type_ = _r3.o;
     XMLVM_SOURCE_POSITION("Collections.java", 2951)
     XMLVM_EXIT_METHOD()
@@ -541,6 +543,7 @@ JAVA_INT java_util_Collections_CheckedCollection_size__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 2957)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CheckedCollection*) _r1.o)->fields.java_util_Collections_CheckedCollection.c_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_size__])(_r0.o);
@@ -557,6 +560,7 @@ JAVA_BOOLEAN java_util_Collections_CheckedCollection_isEmpty__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 2964)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CheckedCollection*) _r1.o)->fields.java_util_Collections_CheckedCollection.c_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_isEmpty__])(_r0.o);
@@ -575,6 +579,7 @@ JAVA_BOOLEAN java_util_Collections_CheckedCollection_contains___java_lang_Object
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 2971)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CheckedCollection*) _r1.o)->fields.java_util_Collections_CheckedCollection.c_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_contains___java_lang_Object])(_r0.o, _r2.o);
@@ -593,6 +598,7 @@ JAVA_OBJECT java_util_Collections_CheckedCollection_iterator__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 2978)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Collections_CheckedCollection*) _r3.o)->fields.java_util_Collections_CheckedCollection.c_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_iterator__])(_r0.o);
@@ -603,6 +609,7 @@ JAVA_OBJECT java_util_Collections_CheckedCollection_iterator__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Collections.java", 2980)
     _r1.o = __NEW_java_util_Collections_CheckedListIterator();
     _r0.o = _r0.o;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_Collections_CheckedCollection*) _r3.o)->fields.java_util_Collections_CheckedCollection.type_;
     XMLVM_CHECK_NPE(1)
     java_util_Collections_CheckedListIterator___INIT____java_util_ListIterator_java_lang_Class(_r1.o, _r0.o, _r2.o);
@@ -622,6 +629,7 @@ JAVA_OBJECT java_util_Collections_CheckedCollection_toArray__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 2989)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CheckedCollection*) _r1.o)->fields.java_util_Collections_CheckedCollection.c_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_toArray__])(_r0.o);
@@ -640,6 +648,7 @@ JAVA_OBJECT java_util_Collections_CheckedCollection_toArray___java_lang_Object_1
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 2996)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CheckedCollection*) _r1.o)->fields.java_util_Collections_CheckedCollection.c_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_toArray___java_lang_Object_1ARRAY])(_r0.o, _r2.o);
@@ -659,7 +668,9 @@ JAVA_BOOLEAN java_util_Collections_CheckedCollection_add___java_lang_Object(JAVA
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 3003)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_CheckedCollection*) _r2.o)->fields.java_util_Collections_CheckedCollection.c_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_CheckedCollection*) _r2.o)->fields.java_util_Collections_CheckedCollection.type_;
     _r1.o = java_util_Collections_checkType___java_lang_Object_java_lang_Class(_r3.o, _r1.o);
     XMLVM_CHECK_NPE(0)
@@ -679,6 +690,7 @@ JAVA_BOOLEAN java_util_Collections_CheckedCollection_remove___java_lang_Object(J
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 3010)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CheckedCollection*) _r1.o)->fields.java_util_Collections_CheckedCollection.c_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_remove___java_lang_Object])(_r0.o, _r2.o);
@@ -697,6 +709,7 @@ JAVA_BOOLEAN java_util_Collections_CheckedCollection_containsAll___java_util_Col
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 3017)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CheckedCollection*) _r1.o)->fields.java_util_Collections_CheckedCollection.c_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_containsAll___java_util_Collection])(_r0.o, _r2.o);
@@ -727,6 +740,7 @@ JAVA_BOOLEAN java_util_Collections_CheckedCollection_addAll___java_util_Collecti
     label6:;
     if (_r2.i < _r1.i) goto label19;
     XMLVM_SOURCE_POSITION("Collections.java", 3029)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_Collections_CheckedCollection*) _r5.o)->fields.java_util_Collections_CheckedCollection.c_;
     _r0.o = java_util_Arrays_asList___java_lang_Object_1ARRAY(_r0.o);
     XMLVM_CHECK_NPE(1)
@@ -738,6 +752,7 @@ JAVA_BOOLEAN java_util_Collections_CheckedCollection_addAll___java_util_Collecti
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
     _r3.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
     XMLVM_SOURCE_POSITION("Collections.java", 3027)
+    XMLVM_CHECK_NPE(5)
     _r4.o = ((java_util_Collections_CheckedCollection*) _r5.o)->fields.java_util_Collections_CheckedCollection.type_;
     java_util_Collections_checkType___java_lang_Object_java_lang_Class(_r3.o, _r4.o);
     _r2.i = _r2.i + 1;
@@ -755,6 +770,7 @@ JAVA_BOOLEAN java_util_Collections_CheckedCollection_removeAll___java_util_Colle
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 3036)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CheckedCollection*) _r1.o)->fields.java_util_Collections_CheckedCollection.c_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_removeAll___java_util_Collection])(_r0.o, _r2.o);
@@ -773,6 +789,7 @@ JAVA_BOOLEAN java_util_Collections_CheckedCollection_retainAll___java_util_Colle
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 3043)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CheckedCollection*) _r1.o)->fields.java_util_Collections_CheckedCollection.c_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_retainAll___java_util_Collection])(_r0.o, _r2.o);
@@ -789,6 +806,7 @@ void java_util_Collections_CheckedCollection_clear__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 3050)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CheckedCollection*) _r1.o)->fields.java_util_Collections_CheckedCollection.c_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_clear__])(_r0.o);
@@ -806,6 +824,7 @@ JAVA_OBJECT java_util_Collections_CheckedCollection_toString__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 3058)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CheckedCollection*) _r1.o)->fields.java_util_Collections_CheckedCollection.c_;
     //java_lang_Object_toString__[5]
     XMLVM_CHECK_NPE(0)

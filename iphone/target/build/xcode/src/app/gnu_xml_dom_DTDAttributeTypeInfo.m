@@ -301,14 +301,19 @@ void gnu_xml_dom_DTDAttributeTypeInfo___INIT____java_lang_String_java_lang_Strin
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("DTDAttributeTypeInfo.java", 60)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_DTDAttributeTypeInfo*) _r0.o)->fields.gnu_xml_dom_DTDAttributeTypeInfo.elementName_ = _r1.o;
     XMLVM_SOURCE_POSITION("DTDAttributeTypeInfo.java", 61)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_DTDAttributeTypeInfo*) _r0.o)->fields.gnu_xml_dom_DTDAttributeTypeInfo.name_ = _r2.o;
     XMLVM_SOURCE_POSITION("DTDAttributeTypeInfo.java", 62)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_DTDAttributeTypeInfo*) _r0.o)->fields.gnu_xml_dom_DTDAttributeTypeInfo.type_ = _r3.o;
     XMLVM_SOURCE_POSITION("DTDAttributeTypeInfo.java", 63)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_DTDAttributeTypeInfo*) _r0.o)->fields.gnu_xml_dom_DTDAttributeTypeInfo.mode_ = _r4.o;
     XMLVM_SOURCE_POSITION("DTDAttributeTypeInfo.java", 64)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_DTDAttributeTypeInfo*) _r0.o)->fields.gnu_xml_dom_DTDAttributeTypeInfo.value_ = _r5.o;
     XMLVM_SOURCE_POSITION("DTDAttributeTypeInfo.java", 65)
     XMLVM_EXIT_METHOD()
@@ -324,6 +329,7 @@ JAVA_OBJECT gnu_xml_dom_DTDAttributeTypeInfo_getTypeName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DTDAttributeTypeInfo.java", 69)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DTDAttributeTypeInfo*) _r1.o)->fields.gnu_xml_dom_DTDAttributeTypeInfo.type_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

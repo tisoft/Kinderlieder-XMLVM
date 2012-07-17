@@ -405,14 +405,19 @@ void java_util_AbstractList_SubAbstractList_SubAbstractListIterator___INIT____ja
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("AbstractList.java", 176)
+    XMLVM_CHECK_NPE(1)
     ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r1.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.iterator_ = _r2.o;
     XMLVM_SOURCE_POSITION("AbstractList.java", 177)
+    XMLVM_CHECK_NPE(1)
     ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r1.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.subList_ = _r3.o;
     XMLVM_SOURCE_POSITION("AbstractList.java", 178)
+    XMLVM_CHECK_NPE(1)
     ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r1.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.start_ = _r4.i;
     XMLVM_SOURCE_POSITION("AbstractList.java", 179)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r1.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.start_;
     _r0.i = _r0.i + _r5.i;
+    XMLVM_CHECK_NPE(1)
     ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r1.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.end_ = _r0.i;
     XMLVM_SOURCE_POSITION("AbstractList.java", 180)
     XMLVM_EXIT_METHOD()
@@ -431,17 +436,21 @@ void java_util_AbstractList_SubAbstractList_SubAbstractListIterator_add___java_l
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("AbstractList.java", 183)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.iterator_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_add___java_lang_Object])(_r0.o, _r3.o);
     XMLVM_SOURCE_POSITION("AbstractList.java", 184)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.subList_;
     _r1.i = 1;
     XMLVM_CHECK_NPE(0)
     java_util_AbstractList_SubAbstractList_sizeChanged___boolean(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("AbstractList.java", 185)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.end_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(2)
     ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.end_ = _r0.i;
     XMLVM_SOURCE_POSITION("AbstractList.java", 186)
     XMLVM_EXIT_METHOD()
@@ -458,9 +467,11 @@ JAVA_BOOLEAN java_util_AbstractList_SubAbstractList_SubAbstractListIterator_hasN
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("AbstractList.java", 189)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.iterator_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_nextIndex__])(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.end_;
     if (_r0.i >= _r1.i) goto label12;
     _r0.i = 1;
@@ -482,9 +493,11 @@ JAVA_BOOLEAN java_util_AbstractList_SubAbstractList_SubAbstractListIterator_hasP
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("AbstractList.java", 193)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.iterator_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_previousIndex__])(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.start_;
     if (_r0.i < _r1.i) goto label12;
     _r0.i = 1;
@@ -506,12 +519,15 @@ JAVA_OBJECT java_util_AbstractList_SubAbstractList_SubAbstractListIterator_next_
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("AbstractList.java", 197)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.iterator_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_nextIndex__])(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.end_;
     if (_r0.i >= _r1.i) goto label17;
     XMLVM_SOURCE_POSITION("AbstractList.java", 198)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.iterator_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_next__])(_r0.o);
@@ -535,9 +551,11 @@ JAVA_INT java_util_AbstractList_SubAbstractList_SubAbstractListIterator_nextInde
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("AbstractList.java", 204)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.iterator_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_nextIndex__])(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.start_;
     _r0.i = _r0.i - _r1.i;
     XMLVM_EXIT_METHOD()
@@ -554,12 +572,15 @@ JAVA_OBJECT java_util_AbstractList_SubAbstractList_SubAbstractListIterator_previ
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("AbstractList.java", 208)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.iterator_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_previousIndex__])(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.start_;
     if (_r0.i < _r1.i) goto label17;
     XMLVM_SOURCE_POSITION("AbstractList.java", 209)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.iterator_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_previous__])(_r0.o);
@@ -583,13 +604,16 @@ JAVA_INT java_util_AbstractList_SubAbstractList_SubAbstractListIterator_previous
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("AbstractList.java", 215)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.iterator_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_previousIndex__])(_r0.o);
     XMLVM_SOURCE_POSITION("AbstractList.java", 216)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.start_;
     if (_r0.i < _r1.i) goto label14;
     XMLVM_SOURCE_POSITION("AbstractList.java", 217)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.start_;
     _r0.i = _r0.i - _r1.i;
     label13:;
@@ -611,18 +635,22 @@ void java_util_AbstractList_SubAbstractList_SubAbstractListIterator_remove__(JAV
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("AbstractList.java", 223)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.iterator_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_remove__])(_r0.o);
     XMLVM_SOURCE_POSITION("AbstractList.java", 224)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.subList_;
     _r1.i = 0;
     XMLVM_CHECK_NPE(0)
     java_util_AbstractList_SubAbstractList_sizeChanged___boolean(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("AbstractList.java", 225)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.end_;
     _r1.i = 1;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(2)
     ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r2.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.end_ = _r0.i;
     XMLVM_SOURCE_POSITION("AbstractList.java", 226)
     XMLVM_EXIT_METHOD()
@@ -640,6 +668,7 @@ void java_util_AbstractList_SubAbstractList_SubAbstractListIterator_set___java_l
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("AbstractList.java", 229)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_AbstractList_SubAbstractList_SubAbstractListIterator*) _r1.o)->fields.java_util_AbstractList_SubAbstractList_SubAbstractListIterator.iterator_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_set___java_lang_Object])(_r0.o, _r2.o);

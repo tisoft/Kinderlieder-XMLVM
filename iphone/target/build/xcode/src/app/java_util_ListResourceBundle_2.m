@@ -247,17 +247,20 @@ void java_util_ListResourceBundle_2___INIT____java_util_ListResourceBundle(JAVA_
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 1)
+    XMLVM_CHECK_NPE(1)
     ((java_util_ListResourceBundle_2*) _r1.o)->fields.java_util_ListResourceBundle_2.this_0_ = _r2.o;
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 99)
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 100)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_ListResourceBundle*) _r2.o)->fields.java_util_ListResourceBundle.table_;
     //java_util_HashMap_keySet__[12]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_HashMap*) _r0.o)->tib->vtable[12])(_r0.o);
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Set_iterator__])(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_ListResourceBundle_2*) _r1.o)->fields.java_util_ListResourceBundle_2.it_ = _r0.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -272,6 +275,7 @@ JAVA_BOOLEAN java_util_ListResourceBundle_2_hasMoreElements__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 103)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_ListResourceBundle_2*) _r1.o)->fields.java_util_ListResourceBundle_2.it_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_hasNext__])(_r0.o);
@@ -288,6 +292,7 @@ JAVA_OBJECT java_util_ListResourceBundle_2_nextElement__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 107)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_ListResourceBundle_2*) _r1.o)->fields.java_util_ListResourceBundle_2.it_;
     XMLVM_CHECK_NPE(0)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_next__])(_r0.o);

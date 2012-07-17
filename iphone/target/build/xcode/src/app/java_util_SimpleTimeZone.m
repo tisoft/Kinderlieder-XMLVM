@@ -1337,16 +1337,20 @@ void java_util_SimpleTimeZone___INIT____int_java_lang_String(JAVA_OBJECT me, JAV
     java_util_TimeZone___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 89)
     _r0.i = 3600000;
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.dstSavings_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 108)
     XMLVM_CHECK_NPE(1)
     java_util_TimeZone_setID___java_lang_String(_r1.o, _r3.o);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 109)
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.rawOffset_ = _r2.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 110)
     _r0.o = java_util_SimpleTimeZone_getICUTimeZone___java_lang_String(_r3.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.icuTZ_ = _r0.o;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 111)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.icuTZ_;
 
     
@@ -1355,8 +1359,10 @@ void java_util_SimpleTimeZone___INIT____int_java_lang_String(JAVA_OBJECT me, JAV
     if (_r0.i == 0) goto label42;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 112)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.isSimple_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 113)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.icuTZ_;
 
     
@@ -1364,11 +1370,13 @@ void java_util_SimpleTimeZone___INIT____int_java_lang_String(JAVA_OBJECT me, JAV
     XMLVM_RED_CLASS_DEPENDENCY();
     label33:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 117)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.icuTZ_;
 
     
     // Red class access removed: com.ibm.icu.util.TimeZone::useDaylightTime
     XMLVM_RED_CLASS_DEPENDENCY();
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.useDaylight_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 118)
     XMLVM_EXIT_METHOD()
@@ -1376,6 +1384,7 @@ void java_util_SimpleTimeZone___INIT____int_java_lang_String(JAVA_OBJECT me, JAV
     label42:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 115)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.isSimple_ = _r0.i;
     goto label33;
     //XMLVM_END_WRAPPER
@@ -1479,11 +1488,14 @@ void java_util_SimpleTimeZone___INIT____int_java_lang_String_int_int_int_int_int
     java_util_TimeZone___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 89)
     _r0.i = 3600000;
+    XMLVM_CHECK_NPE(3)
     ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.dstSavings_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 241)
     _r0.o = java_util_SimpleTimeZone_getICUTimeZone___java_lang_String(_r5.o);
+    XMLVM_CHECK_NPE(3)
     ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.icuTZ_ = _r0.o;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 242)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.icuTZ_;
 
     
@@ -1491,8 +1503,10 @@ void java_util_SimpleTimeZone___INIT____int_java_lang_String_int_int_int_int_int
     XMLVM_RED_CLASS_DEPENDENCY();
     if (_r0.i == 0) goto label59;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 243)
+    XMLVM_CHECK_NPE(3)
     ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.isSimple_ = _r2.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 244)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.icuTZ_;
 
     
@@ -1523,6 +1537,7 @@ void java_util_SimpleTimeZone___INIT____int_java_lang_String_int_int_int_int_int
     XMLVM_CHECK_NPE(3)
     java_util_TimeZone_setID___java_lang_String(_r3.o, _r5.o);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 253)
+    XMLVM_CHECK_NPE(3)
     ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.rawOffset_ = _r4.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 254)
     if (_r14.i > 0) goto label62;
@@ -1537,10 +1552,12 @@ void java_util_SimpleTimeZone___INIT____int_java_lang_String_int_int_int_int_int
     XMLVM_THROW_CUSTOM(_r0.o)
     label59:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 250)
+    XMLVM_CHECK_NPE(3)
     ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.isSimple_ = _r1.i;
     goto label40;
     label62:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 258)
+    XMLVM_CHECK_NPE(3)
     ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.dstSavings_ = _r14.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 260)
     XMLVM_CHECK_NPE(3)
@@ -1550,6 +1567,7 @@ void java_util_SimpleTimeZone___INIT____int_java_lang_String_int_int_int_int_int
     java_util_SimpleTimeZone_setEndRule___int_int_int_int(_r3.o, _r10.i, _r11.i, _r12.i, _r13.i);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 263)
     if (_r14.i > 0) goto label84;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.icuTZ_;
 
     
@@ -1558,6 +1576,7 @@ void java_util_SimpleTimeZone___INIT____int_java_lang_String_int_int_int_int_int
     if (_r0.i != 0) goto label84;
     _r0 = _r1;
     label81:;
+    XMLVM_CHECK_NPE(3)
     ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.useDaylight_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 264)
     XMLVM_EXIT_METHOD()
@@ -1633,10 +1652,12 @@ void java_util_SimpleTimeZone___INIT____int_java_lang_String_int_int_int_int_int
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 319)
     _r0 = _r21;
     _r1 = _r14;
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.startMode_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 320)
     _r0 = _r26;
     _r1 = _r14;
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.endMode_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 321)
     XMLVM_EXIT_METHOD()
@@ -1657,14 +1678,17 @@ JAVA_OBJECT java_util_SimpleTimeZone_clone__(JAVA_OBJECT me)
     _r0.o = java_util_TimeZone_clone__(_r2.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 333)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_SimpleTimeZone*) _r2.o)->fields.java_util_SimpleTimeZone.daylightSavings_;
     if (_r1.o == JAVA_NULL) goto label20;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 334)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_SimpleTimeZone*) _r2.o)->fields.java_util_SimpleTimeZone.daylightSavings_;
     //java_util_GregorianCalendar_clone__[0]
     XMLVM_CHECK_NPE(1)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_GregorianCalendar*) _r1.o)->tib->vtable[0])(_r1.o);
     _r2.o = _r2.o;
+    XMLVM_CHECK_NPE(0)
     ((java_util_SimpleTimeZone*) _r0.o)->fields.java_util_SimpleTimeZone.daylightSavings_ = _r2.o;
     label20:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 336)
@@ -1708,56 +1732,85 @@ JAVA_BOOLEAN java_util_SimpleTimeZone_equals___java_lang_Object(JAVA_OBJECT me, 
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r1.o);
     if (_r0.i == 0) goto label113;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 357)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.rawOffset_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.rawOffset_;
     if (_r0.i != _r1.i) goto label113;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 358)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.useDaylight_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.useDaylight_;
     if (_r0.i != _r1.i) goto label113;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 359)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.useDaylight_;
     if (_r0.i == 0) goto label111;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.startYear_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.startYear_;
     if (_r0.i != _r1.i) goto label113;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 360)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.startMonth_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.startMonth_;
     if (_r0.i != _r1.i) goto label113;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 361)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.startDay_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.startDay_;
     if (_r0.i != _r1.i) goto label113;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.startMode_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.startMode_;
     if (_r0.i != _r1.i) goto label113;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 362)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_;
     if (_r0.i != _r1.i) goto label113;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 363)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.startTime_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.startTime_;
     if (_r0.i != _r1.i) goto label113;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.endMonth_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.endMonth_;
     if (_r0.i != _r1.i) goto label113;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 364)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.endDay_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.endDay_;
     if (_r0.i != _r1.i) goto label113;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 365)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_;
     if (_r0.i != _r1.i) goto label113;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.endTime_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.endTime_;
     if (_r0.i != _r1.i) goto label113;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.endMode_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.endMode_;
     if (_r0.i != _r1.i) goto label113;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.dstSavings_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.dstSavings_;
     if (_r0.i != _r1.i) goto label113;
     label111:;
@@ -1777,6 +1830,7 @@ JAVA_INT java_util_SimpleTimeZone_getDSTSavings__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 371)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.useDaylight_;
     if (_r0.i != 0) goto label6;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 372)
@@ -1786,6 +1840,7 @@ JAVA_INT java_util_SimpleTimeZone_getDSTSavings__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label6:;
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.dstSavings_;
     goto label5;
     //XMLVM_END_WRAPPER
@@ -1845,6 +1900,7 @@ JAVA_INT java_util_SimpleTimeZone_getOffset___int_int_int_int_int_int(JAVA_OBJEC
     java_util_SimpleTimeZone_checkDay___int_int(_r7.o, _r10.i, _r11.i);
     label35:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 387)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_util_SimpleTimeZone*) _r7.o)->fields.java_util_SimpleTimeZone.icuTZ_;
     _r1 = _r8;
     _r2 = _r9;
@@ -1872,6 +1928,7 @@ JAVA_INT java_util_SimpleTimeZone_getOffset___long(JAVA_OBJECT me, JAVA_LONG n1)
     _r1.o = me;
     _r2.l = n1;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 392)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.icuTZ_;
 
     
@@ -1890,6 +1947,7 @@ JAVA_INT java_util_SimpleTimeZone_getRawOffset__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 397)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.rawOffset_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -1914,35 +1972,49 @@ JAVA_INT java_util_SimpleTimeZone_hashCode__(JAVA_OBJECT me)
     //java_lang_String_hashCode__[4]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[4])(_r0.o);
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.rawOffset_;
     _r0.i = _r0.i + _r1.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 410)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.useDaylight_;
     if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w19492aaac38b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w19492aaac38b1b4, sizeof(XMLVM_JMP_BUF)); goto label52; };
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 411)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.startYear_;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.startMonth_;
     _r1.i = _r1.i + _r2.i;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.startDay_;
     _r1.i = _r1.i + _r2.i;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_;
     _r1.i = _r1.i + _r2.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 412)
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.startTime_;
     _r1.i = _r1.i + _r2.i;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.startMode_;
     _r1.i = _r1.i + _r2.i;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.endMonth_;
     _r1.i = _r1.i + _r2.i;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.endDay_;
     _r1.i = _r1.i + _r2.i;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_;
     _r1.i = _r1.i + _r2.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 413)
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.endTime_;
     _r1.i = _r1.i + _r2.i;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.endMode_;
     _r1.i = _r1.i + _r2.i;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.dstSavings_;
     // End try
     XMLVM_TRY_END
@@ -1993,7 +2065,9 @@ JAVA_BOOLEAN java_util_SimpleTimeZone_hasSameRules___java_util_TimeZone(JAVA_OBJ
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 423)
     _r5.o = _r5.o;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 424)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.useDaylight_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.useDaylight_;
     if (_r0.i == _r1.i) goto label18;
     _r0 = _r2;
@@ -2001,10 +2075,13 @@ JAVA_BOOLEAN java_util_SimpleTimeZone_hasSameRules___java_util_TimeZone(JAVA_OBJ
     goto label7;
     label18:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 427)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.useDaylight_;
     if (_r0.i != 0) goto label32;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 428)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.rawOffset_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.rawOffset_;
     if (_r0.i != _r1.i) goto label30;
     _r0 = _r3;
@@ -2014,48 +2091,74 @@ JAVA_BOOLEAN java_util_SimpleTimeZone_hasSameRules___java_util_TimeZone(JAVA_OBJ
     goto label7;
     label32:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 430)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.rawOffset_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.rawOffset_;
     if (_r0.i != _r1.i) goto label112;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.dstSavings_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.dstSavings_;
     if (_r0.i != _r1.i) goto label112;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 431)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.startYear_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startYear_;
     if (_r0.i != _r1.i) goto label112;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.startMonth_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startMonth_;
     if (_r0.i != _r1.i) goto label112;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 432)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.startDay_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startDay_;
     if (_r0.i != _r1.i) goto label112;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.startMode_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startMode_;
     if (_r0.i != _r1.i) goto label112;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 433)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_;
     if (_r0.i != _r1.i) goto label112;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 434)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.startTime_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startTime_;
     if (_r0.i != _r1.i) goto label112;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.endMonth_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endMonth_;
     if (_r0.i != _r1.i) goto label112;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 435)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.endDay_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endDay_;
     if (_r0.i != _r1.i) goto label112;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_;
     if (_r0.i != _r1.i) goto label112;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.endTime_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endTime_;
     if (_r0.i != _r1.i) goto label112;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.endMode_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endMode_;
     if (_r0.i != _r1.i) goto label112;
     _r0 = _r3;
@@ -2076,6 +2179,7 @@ JAVA_BOOLEAN java_util_SimpleTimeZone_inDaylightTime___java_util_Date(JAVA_OBJEC
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 441)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.icuTZ_;
 
     
@@ -2141,6 +2245,7 @@ void java_util_SimpleTimeZone_setDSTSavings___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 458)
     if (_r2.i <= 0) goto label5;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 459)
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.dstSavings_ = _r2.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 463)
     XMLVM_EXIT_METHOD()
@@ -2267,47 +2372,62 @@ void java_util_SimpleTimeZone_setEndMode__(JAVA_OBJECT me)
     _r4.i = 2;
     _r3.i = 1;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 485)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_;
     if (_r0.i != 0) goto label56;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 486)
+    XMLVM_CHECK_NPE(5)
     ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endMode_ = _r3.i;
     label8:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 498)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startDay_;
     if (_r0.i == 0) goto label85;
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endDay_;
     if (_r0.i == 0) goto label85;
     _r0 = _r3;
     label17:;
+    XMLVM_CHECK_NPE(5)
     ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.useDaylight_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 499)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endDay_;
     if (_r0.i == 0) goto label46;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 500)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endMonth_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endMode_;
     if (_r1.i != _r3.i) goto label87;
     _r1 = _r3;
     label30:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 501)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endTime_;
     XMLVM_CHECK_NPE(5)
     java_util_SimpleTimeZone_checkRange___int_int_int(_r5.o, _r0.i, _r1.i, _r2.i);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 502)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endMode_;
     if (_r0.i == _r4.i) goto label90;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 503)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endMonth_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endDay_;
     XMLVM_CHECK_NPE(5)
     java_util_SimpleTimeZone_checkDay___int_int(_r5.o, _r0.i, _r1.i);
     label46:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 511)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endMode_;
     if (_r0.i == _r3.i) goto label55;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 512)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_;
     _r0.i = _r0.i - _r3.i;
+    XMLVM_CHECK_NPE(5)
     ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_ = _r0.i;
     label55:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 514)
@@ -2315,43 +2435,55 @@ void java_util_SimpleTimeZone_setEndMode__(JAVA_OBJECT me)
     return;
     label56:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 487)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_;
     if (_r0.i >= 0) goto label82;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 488)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_;
     _r0.i = -_r0.i;
+    XMLVM_CHECK_NPE(5)
     ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 489)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endDay_;
     if (_r0.i >= 0) goto label78;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 490)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endDay_;
     _r0.i = -_r0.i;
+    XMLVM_CHECK_NPE(5)
     ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endDay_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 491)
     _r0.i = 4;
+    XMLVM_CHECK_NPE(5)
     ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endMode_ = _r0.i;
     goto label8;
     label78:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 493)
     _r0.i = 3;
+    XMLVM_CHECK_NPE(5)
     ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endMode_ = _r0.i;
     goto label8;
     label82:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 496)
+    XMLVM_CHECK_NPE(5)
     ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endMode_ = _r4.i;
     goto label8;
     label85:;
     _r0.i = 0;
     goto label17;
     label87:;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_;
     goto label30;
     label90:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 505)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endDay_;
     _r1.i = -5;
     if (_r0.i < _r1.i) goto label100;
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endDay_;
     _r1.i = 5;
     if (_r0.i <= _r1.i) goto label46;
@@ -2361,6 +2493,7 @@ void java_util_SimpleTimeZone_setEndMode__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 507)
     // "luni.40"
     _r1.o = xmlvm_create_java_string_from_pool(1426);
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endDay_;
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_int(_r1.o, _r2.i);
     XMLVM_CHECK_NPE(0)
@@ -2383,21 +2516,27 @@ void java_util_SimpleTimeZone_setEndRule___int_int_int(JAVA_OBJECT me, JAVA_INT 
     _r3.i = n2;
     _r4.i = n3;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 529)
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.endMonth_ = _r2.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 530)
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.endDay_ = _r3.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 531)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 532)
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.endTime_ = _r4.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 533)
     XMLVM_CHECK_NPE(1)
     java_util_SimpleTimeZone_setEndMode__(_r1.o);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 534)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.isSimple_;
     if (_r0.i == 0) goto label23;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 535)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.icuTZ_;
 
     
@@ -2430,20 +2569,26 @@ void java_util_SimpleTimeZone_setEndRule___int_int_int_int(JAVA_OBJECT me, JAVA_
     _r4.i = n3;
     _r5.i = n4;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 556)
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.endMonth_ = _r2.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 557)
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.endDay_ = _r3.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 558)
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_ = _r4.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 559)
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.endTime_ = _r5.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 560)
     XMLVM_CHECK_NPE(1)
     java_util_SimpleTimeZone_setEndMode__(_r1.o);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 561)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.isSimple_;
     if (_r0.i == 0) goto label22;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 562)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.icuTZ_;
 
     
@@ -2483,24 +2628,30 @@ void java_util_SimpleTimeZone_setEndRule___int_int_int_int_boolean(JAVA_OBJECT m
     _r10.i = n4;
     _r11.i = n5;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 585)
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.endMonth_ = _r7.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 586)
     if (_r11.i == 0) goto label32;
     _r0 = _r8;
     label5:;
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.endDay_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 587)
     _r0.i = -_r9.i;
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 588)
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.endTime_ = _r10.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 589)
     XMLVM_CHECK_NPE(6)
     java_util_SimpleTimeZone_setEndMode__(_r6.o);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 590)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.isSimple_;
     if (_r0.i == 0) goto label31;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 591)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.icuTZ_;
 
     
@@ -2535,8 +2686,10 @@ void java_util_SimpleTimeZone_setRawOffset___int(JAVA_OBJECT me, JAVA_INT n1)
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 604)
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.rawOffset_ = _r2.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 605)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.icuTZ_;
 
     
@@ -2562,47 +2715,62 @@ void java_util_SimpleTimeZone_setStartMode__(JAVA_OBJECT me)
     _r4.i = 2;
     _r3.i = 1;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 609)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_;
     if (_r0.i != 0) goto label56;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 610)
+    XMLVM_CHECK_NPE(5)
     ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startMode_ = _r3.i;
     label8:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 622)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startDay_;
     if (_r0.i == 0) goto label85;
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.endDay_;
     if (_r0.i == 0) goto label85;
     _r0 = _r3;
     label17:;
+    XMLVM_CHECK_NPE(5)
     ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.useDaylight_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 623)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startDay_;
     if (_r0.i == 0) goto label46;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 624)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startMonth_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startMode_;
     if (_r1.i != _r3.i) goto label87;
     _r1 = _r3;
     label30:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 625)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startTime_;
     XMLVM_CHECK_NPE(5)
     java_util_SimpleTimeZone_checkRange___int_int_int(_r5.o, _r0.i, _r1.i, _r2.i);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 626)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startMode_;
     if (_r0.i == _r4.i) goto label90;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 627)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startMonth_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startDay_;
     XMLVM_CHECK_NPE(5)
     java_util_SimpleTimeZone_checkDay___int_int(_r5.o, _r0.i, _r1.i);
     label46:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 635)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startMode_;
     if (_r0.i == _r3.i) goto label55;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 636)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_;
     _r0.i = _r0.i - _r3.i;
+    XMLVM_CHECK_NPE(5)
     ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_ = _r0.i;
     label55:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 638)
@@ -2610,43 +2778,55 @@ void java_util_SimpleTimeZone_setStartMode__(JAVA_OBJECT me)
     return;
     label56:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 611)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_;
     if (_r0.i >= 0) goto label82;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 612)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_;
     _r0.i = -_r0.i;
+    XMLVM_CHECK_NPE(5)
     ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 613)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startDay_;
     if (_r0.i >= 0) goto label78;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 614)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startDay_;
     _r0.i = -_r0.i;
+    XMLVM_CHECK_NPE(5)
     ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startDay_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 615)
     _r0.i = 4;
+    XMLVM_CHECK_NPE(5)
     ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startMode_ = _r0.i;
     goto label8;
     label78:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 617)
     _r0.i = 3;
+    XMLVM_CHECK_NPE(5)
     ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startMode_ = _r0.i;
     goto label8;
     label82:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 620)
+    XMLVM_CHECK_NPE(5)
     ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startMode_ = _r4.i;
     goto label8;
     label85:;
     _r0.i = 0;
     goto label17;
     label87:;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_;
     goto label30;
     label90:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 629)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startDay_;
     _r1.i = -5;
     if (_r0.i < _r1.i) goto label100;
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startDay_;
     _r1.i = 5;
     if (_r0.i <= _r1.i) goto label46;
@@ -2656,6 +2836,7 @@ void java_util_SimpleTimeZone_setStartMode__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 631)
     // "luni.40"
     _r1.o = xmlvm_create_java_string_from_pool(1426);
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_util_SimpleTimeZone*) _r5.o)->fields.java_util_SimpleTimeZone.startDay_;
     _r1.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_int(_r1.o, _r2.i);
     XMLVM_CHECK_NPE(0)
@@ -2678,21 +2859,27 @@ void java_util_SimpleTimeZone_setStartRule___int_int_int(JAVA_OBJECT me, JAVA_IN
     _r3.i = n2;
     _r4.i = n3;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 653)
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.startMonth_ = _r2.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 654)
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.startDay_ = _r3.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 655)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 656)
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.startTime_ = _r4.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 657)
     XMLVM_CHECK_NPE(1)
     java_util_SimpleTimeZone_setStartMode__(_r1.o);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 658)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.isSimple_;
     if (_r0.i == 0) goto label23;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 659)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.icuTZ_;
 
     
@@ -2725,20 +2912,26 @@ void java_util_SimpleTimeZone_setStartRule___int_int_int_int(JAVA_OBJECT me, JAV
     _r4.i = n3;
     _r5.i = n4;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 680)
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.startMonth_ = _r2.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 681)
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.startDay_ = _r3.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 682)
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_ = _r4.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 683)
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.startTime_ = _r5.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 684)
     XMLVM_CHECK_NPE(1)
     java_util_SimpleTimeZone_setStartMode__(_r1.o);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 685)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.isSimple_;
     if (_r0.i == 0) goto label22;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 686)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.icuTZ_;
 
     
@@ -2778,24 +2971,30 @@ void java_util_SimpleTimeZone_setStartRule___int_int_int_int_boolean(JAVA_OBJECT
     _r10.i = n4;
     _r11.i = n5;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 709)
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.startMonth_ = _r7.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 710)
     if (_r11.i == 0) goto label32;
     _r0 = _r8;
     label5:;
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.startDay_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 711)
     _r0.i = -_r9.i;
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 712)
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.startTime_ = _r10.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 713)
     XMLVM_CHECK_NPE(6)
     java_util_SimpleTimeZone_setStartMode__(_r6.o);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 714)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.isSimple_;
     if (_r0.i == 0) goto label31;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 715)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.icuTZ_;
 
     
@@ -2830,9 +3029,11 @@ void java_util_SimpleTimeZone_setStartYear___int(JAVA_OBJECT me, JAVA_INT n1)
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 728)
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.startYear_ = _r2.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 729)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.useDaylight_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 730)
     XMLVM_EXIT_METHOD()
@@ -2878,6 +3079,7 @@ JAVA_OBJECT java_util_SimpleTimeZone_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 743)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.rawOffset_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);
@@ -2887,6 +3089,7 @@ JAVA_OBJECT java_util_SimpleTimeZone_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 745)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.dstSavings_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);
@@ -2896,6 +3099,7 @@ JAVA_OBJECT java_util_SimpleTimeZone_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 747)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.useDaylight_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___boolean(_r0.o, _r1.i);
@@ -2905,6 +3109,7 @@ JAVA_OBJECT java_util_SimpleTimeZone_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 749)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.startYear_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);
@@ -2914,6 +3119,7 @@ JAVA_OBJECT java_util_SimpleTimeZone_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 751)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.startMode_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);
@@ -2923,6 +3129,7 @@ JAVA_OBJECT java_util_SimpleTimeZone_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 753)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.startMonth_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);
@@ -2932,6 +3139,7 @@ JAVA_OBJECT java_util_SimpleTimeZone_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 755)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.startDay_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);
@@ -2941,10 +3149,13 @@ JAVA_OBJECT java_util_SimpleTimeZone_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 757)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.useDaylight_;
     if (_r1.i == 0) goto label232;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.startMode_;
     if (_r1.i == _r3.i) goto label232;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_;
     _r1.i = _r1.i + 1;
     label135:;
@@ -2955,6 +3166,7 @@ JAVA_OBJECT java_util_SimpleTimeZone_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(1436);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.startTime_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);
@@ -2963,6 +3175,7 @@ JAVA_OBJECT java_util_SimpleTimeZone_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 759)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.endMode_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);
@@ -2970,6 +3183,7 @@ JAVA_OBJECT java_util_SimpleTimeZone_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(1438);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.endMonth_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);
@@ -2977,6 +3191,7 @@ JAVA_OBJECT java_util_SimpleTimeZone_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(1439);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.endDay_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);
@@ -2986,10 +3201,13 @@ JAVA_OBJECT java_util_SimpleTimeZone_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 761)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.useDaylight_;
     if (_r1.i == 0) goto label234;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.endMode_;
     if (_r1.i == _r3.i) goto label234;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_;
     _r1.i = _r1.i + 1;
     label205:;
@@ -3000,6 +3218,7 @@ JAVA_OBJECT java_util_SimpleTimeZone_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(1441);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_SimpleTimeZone*) _r4.o)->fields.java_util_SimpleTimeZone.endTime_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);
@@ -3029,6 +3248,7 @@ JAVA_BOOLEAN java_util_SimpleTimeZone_useDaylightTime__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 767)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_SimpleTimeZone*) _r1.o)->fields.java_util_SimpleTimeZone.useDaylight_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -3062,18 +3282,25 @@ void java_util_SimpleTimeZone_writeObject___java_io_ObjectOutputStream(JAVA_OBJE
     _r8.i = 1;
     _r7.i = 2;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 789)
+    XMLVM_CHECK_NPE(13)
     _r0.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.endDay_;
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(13)
     _r2.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.startDay_;
+    XMLVM_CHECK_NPE(13)
     _r3.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_;
     _r3.i = _r3.i + 1;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 790)
+    XMLVM_CHECK_NPE(13)
     _r4.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.useDaylight_;
     if (_r4.i == 0) goto label265;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 791)
+    XMLVM_CHECK_NPE(13)
     _r4.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.startMode_;
     if (_r4.i != _r7.i) goto label29;
+    XMLVM_CHECK_NPE(13)
     _r4.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.endMode_;
     if (_r4.i == _r7.i) goto label265;
     label29:;
@@ -3082,13 +3309,16 @@ void java_util_SimpleTimeZone_writeObject___java_io_ObjectOutputStream(JAVA_OBJE
     XMLVM_CHECK_NPE(4)
     java_util_GregorianCalendar___INIT____java_util_TimeZone(_r4.o, _r13.o);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 793)
+    XMLVM_CHECK_NPE(13)
     _r5.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.endMode_;
     if (_r5.i == _r7.i) goto label260;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 794)
+    XMLVM_CHECK_NPE(13)
     _r0.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.endMonth_;
     XMLVM_CHECK_NPE(4)
     java_util_Calendar_set___int_int(_r4.o, _r7.i, _r0.i);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 795)
+    XMLVM_CHECK_NPE(13)
     _r0.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.endDay_;
     XMLVM_CHECK_NPE(4)
     java_util_Calendar_set___int_int(_r4.o, _r6.i, _r0.i);
@@ -3097,6 +3327,7 @@ void java_util_SimpleTimeZone_writeObject___java_io_ObjectOutputStream(JAVA_OBJE
     XMLVM_CHECK_NPE(4)
     _r0.i = java_util_Calendar_get___int(_r4.o, _r0.i);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 797)
+    XMLVM_CHECK_NPE(13)
     _r5.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.endMode_;
     if (_r5.i != _r8.i) goto label260;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 798)
@@ -3107,13 +3338,16 @@ void java_util_SimpleTimeZone_writeObject___java_io_ObjectOutputStream(JAVA_OBJE
     _r0 = _r11;
     label65:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 801)
+    XMLVM_CHECK_NPE(13)
     _r5.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.startMode_;
     if (_r5.i == _r7.i) goto label253;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 802)
+    XMLVM_CHECK_NPE(13)
     _r2.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.startMonth_;
     XMLVM_CHECK_NPE(4)
     java_util_Calendar_set___int_int(_r4.o, _r7.i, _r2.i);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 803)
+    XMLVM_CHECK_NPE(13)
     _r2.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.startDay_;
     XMLVM_CHECK_NPE(4)
     java_util_Calendar_set___int_int(_r4.o, _r6.i, _r2.i);
@@ -3122,6 +3356,7 @@ void java_util_SimpleTimeZone_writeObject___java_io_ObjectOutputStream(JAVA_OBJE
     XMLVM_CHECK_NPE(4)
     _r2.i = java_util_Calendar_get___int(_r4.o, _r2.i);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 805)
+    XMLVM_CHECK_NPE(13)
     _r5.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.startMode_;
     if (_r5.i != _r8.i) goto label253;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 806)
@@ -3139,6 +3374,7 @@ void java_util_SimpleTimeZone_writeObject___java_io_ObjectOutputStream(JAVA_OBJE
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 811)
     // "dstSavings"
     _r5.o = xmlvm_create_java_string_from_pool(1405);
+    XMLVM_CHECK_NPE(13)
     _r6.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.dstSavings_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_int[11]
     XMLVM_CHECK_NPE(4)
@@ -3158,6 +3394,7 @@ void java_util_SimpleTimeZone_writeObject___java_io_ObjectOutputStream(JAVA_OBJE
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 814)
     // "endMode"
     _r2.o = xmlvm_create_java_string_from_pool(1408);
+    XMLVM_CHECK_NPE(13)
     _r3.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.endMode_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_int[11]
     XMLVM_CHECK_NPE(4)
@@ -3165,6 +3402,7 @@ void java_util_SimpleTimeZone_writeObject___java_io_ObjectOutputStream(JAVA_OBJE
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 815)
     // "endMonth"
     _r2.o = xmlvm_create_java_string_from_pool(1409);
+    XMLVM_CHECK_NPE(13)
     _r3.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.endMonth_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_int[11]
     XMLVM_CHECK_NPE(4)
@@ -3172,6 +3410,7 @@ void java_util_SimpleTimeZone_writeObject___java_io_ObjectOutputStream(JAVA_OBJE
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 816)
     // "endTime"
     _r2.o = xmlvm_create_java_string_from_pool(1410);
+    XMLVM_CHECK_NPE(13)
     _r3.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.endTime_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_int[11]
     XMLVM_CHECK_NPE(4)
@@ -3186,6 +3425,7 @@ void java_util_SimpleTimeZone_writeObject___java_io_ObjectOutputStream(JAVA_OBJE
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 818)
     // "rawOffset"
     _r2.o = xmlvm_create_java_string_from_pool(1412);
+    XMLVM_CHECK_NPE(13)
     _r3.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.rawOffset_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_int[11]
     XMLVM_CHECK_NPE(4)
@@ -3211,6 +3451,7 @@ void java_util_SimpleTimeZone_writeObject___java_io_ObjectOutputStream(JAVA_OBJE
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 822)
     // "startMode"
     _r0.o = xmlvm_create_java_string_from_pool(1415);
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.startMode_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_int[11]
     XMLVM_CHECK_NPE(4)
@@ -3218,6 +3459,7 @@ void java_util_SimpleTimeZone_writeObject___java_io_ObjectOutputStream(JAVA_OBJE
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 823)
     // "startMonth"
     _r0.o = xmlvm_create_java_string_from_pool(1416);
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.startMonth_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_int[11]
     XMLVM_CHECK_NPE(4)
@@ -3225,6 +3467,7 @@ void java_util_SimpleTimeZone_writeObject___java_io_ObjectOutputStream(JAVA_OBJE
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 824)
     // "startTime"
     _r0.o = xmlvm_create_java_string_from_pool(1417);
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.startTime_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_int[11]
     XMLVM_CHECK_NPE(4)
@@ -3232,6 +3475,7 @@ void java_util_SimpleTimeZone_writeObject___java_io_ObjectOutputStream(JAVA_OBJE
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 825)
     // "startYear"
     _r0.o = xmlvm_create_java_string_from_pool(1418);
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.startYear_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_int[11]
     XMLVM_CHECK_NPE(4)
@@ -3239,6 +3483,7 @@ void java_util_SimpleTimeZone_writeObject___java_io_ObjectOutputStream(JAVA_OBJE
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 826)
     // "useDaylight"
     _r0.o = xmlvm_create_java_string_from_pool(1419);
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.useDaylight_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_boolean[6]
     XMLVM_CHECK_NPE(4)
@@ -3254,12 +3499,14 @@ void java_util_SimpleTimeZone_writeObject___java_io_ObjectOutputStream(JAVA_OBJE
     if (!__TIB_byte.classInitialized) __INIT_byte();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_byte, _r10.i);
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 830)
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.startDay_;
     _r1.i = (_r1.i << 24) >> 24;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r9.i);
     ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r9.i] = _r1.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 831)
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.startMode_;
     if (_r1.i != _r8.i) goto label243;
     _r1 = _r9;
@@ -3269,6 +3516,7 @@ void java_util_SimpleTimeZone_writeObject___java_io_ObjectOutputStream(JAVA_OBJE
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r8.i);
     ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i] = _r1.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 832)
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.endDay_;
     _r1.i = (_r1.i << 24) >> 24;
     XMLVM_CHECK_NPE(0)
@@ -3276,6 +3524,7 @@ void java_util_SimpleTimeZone_writeObject___java_io_ObjectOutputStream(JAVA_OBJE
     ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r1.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 833)
     _r1.i = 3;
+    XMLVM_CHECK_NPE(13)
     _r2.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.endMode_;
     if (_r2.i != _r8.i) goto label248;
     _r2 = _r9;
@@ -3292,10 +3541,12 @@ void java_util_SimpleTimeZone_writeObject___java_io_ObjectOutputStream(JAVA_OBJE
     XMLVM_EXIT_METHOD()
     return;
     label243:;
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_;
     _r1.i = _r1.i + 1;
     goto label222;
     label248:;
+    XMLVM_CHECK_NPE(13)
     _r2.i = ((java_util_SimpleTimeZone*) _r13.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_;
     _r2.i = _r2.i + 1;
     goto label236;
@@ -3348,6 +3599,7 @@ void java_util_SimpleTimeZone_readObject___java_io_ObjectInputStream(JAVA_OBJECT
     //java_io_ObjectInputStream_GetField_get___java_lang_String_int[13]
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[13])(_r0.o, _r1.o, _r3.i);
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.rawOffset_ = _r1.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 841)
     // "useDaylight"
@@ -3355,8 +3607,10 @@ void java_util_SimpleTimeZone_readObject___java_io_ObjectInputStream(JAVA_OBJECT
     //java_io_ObjectInputStream_GetField_get___java_lang_String_boolean[8]
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[8])(_r0.o, _r1.o, _r3.i);
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.useDaylight_ = _r1.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 842)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.useDaylight_;
     if (_r1.i == 0) goto label67;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 843)
@@ -3365,6 +3619,7 @@ void java_util_SimpleTimeZone_readObject___java_io_ObjectInputStream(JAVA_OBJECT
     //java_io_ObjectInputStream_GetField_get___java_lang_String_int[13]
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[13])(_r0.o, _r1.o, _r3.i);
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.endMonth_ = _r1.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 844)
     // "endTime"
@@ -3372,6 +3627,7 @@ void java_util_SimpleTimeZone_readObject___java_io_ObjectInputStream(JAVA_OBJECT
     //java_io_ObjectInputStream_GetField_get___java_lang_String_int[13]
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[13])(_r0.o, _r1.o, _r3.i);
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.endTime_ = _r1.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 845)
     // "startMonth"
@@ -3379,6 +3635,7 @@ void java_util_SimpleTimeZone_readObject___java_io_ObjectInputStream(JAVA_OBJECT
     //java_io_ObjectInputStream_GetField_get___java_lang_String_int[13]
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[13])(_r0.o, _r1.o, _r3.i);
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.startMonth_ = _r1.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 846)
     // "startTime"
@@ -3386,6 +3643,7 @@ void java_util_SimpleTimeZone_readObject___java_io_ObjectInputStream(JAVA_OBJECT
     //java_io_ObjectInputStream_GetField_get___java_lang_String_int[13]
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[13])(_r0.o, _r1.o, _r3.i);
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.startTime_ = _r1.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 847)
     // "startYear"
@@ -3393,6 +3651,7 @@ void java_util_SimpleTimeZone_readObject___java_io_ObjectInputStream(JAVA_OBJECT
     //java_io_ObjectInputStream_GetField_get___java_lang_String_int[13]
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[13])(_r0.o, _r1.o, _r3.i);
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.startYear_ = _r1.i;
     label67:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 849)
@@ -3403,10 +3662,13 @@ void java_util_SimpleTimeZone_readObject___java_io_ObjectInputStream(JAVA_OBJECT
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[13])(_r0.o, _r1.o, _r3.i);
     if (_r1.i != 0) goto label118;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 850)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.useDaylight_;
     if (_r1.i == 0) goto label117;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 851)
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.endMode_ = _r5.i;
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.startMode_ = _r5.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 852)
     // "endDay"
@@ -3414,6 +3676,7 @@ void java_util_SimpleTimeZone_readObject___java_io_ObjectInputStream(JAVA_OBJECT
     //java_io_ObjectInputStream_GetField_get___java_lang_String_int[13]
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[13])(_r0.o, _r1.o, _r3.i);
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.endDay_ = _r1.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 853)
     // "endDayOfWeek"
@@ -3422,6 +3685,7 @@ void java_util_SimpleTimeZone_readObject___java_io_ObjectInputStream(JAVA_OBJECT
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[13])(_r0.o, _r1.o, _r3.i);
     _r1.i = _r1.i - _r4.i;
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_ = _r1.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 854)
     // "startDay"
@@ -3429,6 +3693,7 @@ void java_util_SimpleTimeZone_readObject___java_io_ObjectInputStream(JAVA_OBJECT
     //java_io_ObjectInputStream_GetField_get___java_lang_String_int[13]
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[13])(_r0.o, _r1.o, _r3.i);
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.startDay_ = _r1.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 855)
     // "startDayOfWeek"
@@ -3437,6 +3702,7 @@ void java_util_SimpleTimeZone_readObject___java_io_ObjectInputStream(JAVA_OBJECT
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[13])(_r0.o, _r1.o, _r3.i);
     _r0.i = _r0.i - _r4.i;
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_ = _r0.i;
     label117:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 879)
@@ -3449,8 +3715,10 @@ void java_util_SimpleTimeZone_readObject___java_io_ObjectInputStream(JAVA_OBJECT
     //java_io_ObjectInputStream_GetField_get___java_lang_String_int[13]
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[13])(_r0.o, _r1.o, _r3.i);
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.dstSavings_ = _r1.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 859)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.useDaylight_;
     if (_r1.i == 0) goto label117;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 860)
@@ -3459,6 +3727,7 @@ void java_util_SimpleTimeZone_readObject___java_io_ObjectInputStream(JAVA_OBJECT
     //java_io_ObjectInputStream_GetField_get___java_lang_String_int[13]
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[13])(_r0.o, _r1.o, _r3.i);
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.endMode_ = _r1.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 861)
     // "startMode"
@@ -3466,6 +3735,7 @@ void java_util_SimpleTimeZone_readObject___java_io_ObjectInputStream(JAVA_OBJECT
     //java_io_ObjectInputStream_GetField_get___java_lang_String_int[13]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectInputStream_GetField*) _r0.o)->tib->vtable[13])(_r0.o, _r1.o, _r3.i);
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.startMode_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 862)
     //java_io_ObjectInputStream_readInt__[22]
@@ -3485,37 +3755,47 @@ void java_util_SimpleTimeZone_readObject___java_io_ObjectInputStream(JAVA_OBJECT
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r3.i);
     _r0.i = ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i];
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.startDay_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 867)
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r4.i);
     _r0.i = ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 868)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.startMode_;
     if (_r0.i == _r4.i) goto label175;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 869)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_;
     _r0.i = _r0.i - _r4.i;
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.startDayOfWeek_ = _r0.i;
     label175:;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 871)
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r5.i);
     _r0.i = ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r5.i];
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.endDay_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 872)
     _r0.i = 3;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     _r0.i = ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_ = _r0.i;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 873)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.endMode_;
     if (_r0.i == _r4.i) goto label117;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 874)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_;
     _r0.i = _r0.i - _r4.i;
+    XMLVM_CHECK_NPE(6)
     ((java_util_SimpleTimeZone*) _r6.o)->fields.java_util_SimpleTimeZone.endDayOfWeek_ = _r0.i;
     goto label117;
     //XMLVM_END_WRAPPER

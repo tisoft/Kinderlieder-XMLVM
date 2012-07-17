@@ -238,6 +238,7 @@ void java_util_regex_UCICharSet___INIT____char(JAVA_OBJECT me, JAVA_CHAR n1)
     XMLVM_SOURCE_POSITION("UCICharSet.java", 34)
     _r0.i = java_lang_Character_toUpperCase___char(_r2.i);
     _r0.i = java_lang_Character_toLowerCase___char(_r0.i);
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_UCICharSet*) _r1.o)->fields.java_util_regex_UCICharSet.ch_ = _r0.i;
     XMLVM_SOURCE_POSITION("UCICharSet.java", 35)
     XMLVM_EXIT_METHOD()
@@ -258,6 +259,7 @@ JAVA_INT java_util_regex_UCICharSet_accepts___int_java_lang_CharSequence(JAVA_OB
     _r3.i = n1;
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("UCICharSet.java", 38)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_UCICharSet*) _r2.o)->fields.java_util_regex_UCICharSet.ch_;
     XMLVM_SOURCE_POSITION("UCICharSet.java", 39)
     XMLVM_CHECK_NPE(4)
@@ -289,6 +291,7 @@ JAVA_OBJECT java_util_regex_UCICharSet_getName__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(2288);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_regex_UCICharSet*) _r2.o)->fields.java_util_regex_UCICharSet.ch_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)

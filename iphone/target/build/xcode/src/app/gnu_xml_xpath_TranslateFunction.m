@@ -351,10 +351,13 @@ void gnu_xml_xpath_TranslateFunction___INIT____gnu_xml_xpath_Expr_gnu_xml_xpath_
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_Expr___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("TranslateFunction.java", 78)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_TranslateFunction*) _r0.o)->fields.gnu_xml_xpath_TranslateFunction.arg1_ = _r1.o;
     XMLVM_SOURCE_POSITION("TranslateFunction.java", 79)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_TranslateFunction*) _r0.o)->fields.gnu_xml_xpath_TranslateFunction.arg2_ = _r2.o;
     XMLVM_SOURCE_POSITION("TranslateFunction.java", 80)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_TranslateFunction*) _r0.o)->fields.gnu_xml_xpath_TranslateFunction.arg3_ = _r3.o;
     XMLVM_SOURCE_POSITION("TranslateFunction.java", 81)
     XMLVM_EXIT_METHOD()
@@ -393,6 +396,7 @@ JAVA_OBJECT gnu_xml_xpath_TranslateFunction_evaluate___org_w3c_dom_Node_int_int(
     _r20.i = n3;
     XMLVM_SOURCE_POSITION("TranslateFunction.java", 85)
     _r0 = _r17;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_xpath_TranslateFunction*) _r0.o)->fields.gnu_xml_xpath_TranslateFunction.arg1_;
     _r4 = _r0;
     _r0 = _r4;
@@ -404,6 +408,7 @@ JAVA_OBJECT gnu_xml_xpath_TranslateFunction_evaluate___org_w3c_dom_Node_int_int(
     _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) ((gnu_xml_xpath_Expr*) _r0.o)->tib->vtable[9])(_r0.o, _r1.o, _r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("TranslateFunction.java", 86)
     _r0 = _r17;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_xpath_TranslateFunction*) _r0.o)->fields.gnu_xml_xpath_TranslateFunction.arg2_;
     _r5 = _r0;
     _r0 = _r5;
@@ -415,6 +420,7 @@ JAVA_OBJECT gnu_xml_xpath_TranslateFunction_evaluate___org_w3c_dom_Node_int_int(
     _r5.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) ((gnu_xml_xpath_Expr*) _r0.o)->tib->vtable[9])(_r0.o, _r1.o, _r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("TranslateFunction.java", 87)
     _r0 = _r17;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_xpath_TranslateFunction*) _r0.o)->fields.gnu_xml_xpath_TranslateFunction.arg3_;
     _r6 = _r0;
     _r0 = _r6;
@@ -523,15 +529,18 @@ JAVA_OBJECT gnu_xml_xpath_TranslateFunction_clone___java_lang_Object(JAVA_OBJECT
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("TranslateFunction.java", 120)
     _r0.o = __NEW_gnu_xml_xpath_TranslateFunction();
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_xpath_TranslateFunction*) _r4.o)->fields.gnu_xml_xpath_TranslateFunction.arg1_;
     //gnu_xml_xpath_Expr_clone___java_lang_Object[6]
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_xpath_Expr*) _r1.o)->tib->vtable[6])(_r1.o, _r5.o);
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_xpath_TranslateFunction*) _r4.o)->fields.gnu_xml_xpath_TranslateFunction.arg2_;
     //gnu_xml_xpath_Expr_clone___java_lang_Object[6]
     XMLVM_CHECK_NPE(2)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_xpath_Expr*) _r2.o)->tib->vtable[6])(_r2.o, _r5.o);
     XMLVM_SOURCE_POSITION("TranslateFunction.java", 121)
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((gnu_xml_xpath_TranslateFunction*) _r4.o)->fields.gnu_xml_xpath_TranslateFunction.arg3_;
     //gnu_xml_xpath_Expr_clone___java_lang_Object[6]
     XMLVM_CHECK_NPE(3)
@@ -553,17 +562,20 @@ JAVA_BOOLEAN gnu_xml_xpath_TranslateFunction_references___javax_xml_namespace_QN
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("TranslateFunction.java", 126)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_TranslateFunction*) _r1.o)->fields.gnu_xml_xpath_TranslateFunction.arg1_;
     //gnu_xml_xpath_Expr_references___javax_xml_namespace_QName[12]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_xpath_Expr*) _r0.o)->tib->vtable[12])(_r0.o, _r2.o);
     if (_r0.i != 0) goto label26;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_TranslateFunction*) _r1.o)->fields.gnu_xml_xpath_TranslateFunction.arg2_;
     //gnu_xml_xpath_Expr_references___javax_xml_namespace_QName[12]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_xpath_Expr*) _r0.o)->tib->vtable[12])(_r0.o, _r2.o);
     if (_r0.i != 0) goto label26;
     XMLVM_SOURCE_POSITION("TranslateFunction.java", 127)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_TranslateFunction*) _r1.o)->fields.gnu_xml_xpath_TranslateFunction.arg3_;
     //gnu_xml_xpath_Expr_references___javax_xml_namespace_QName[12]
     XMLVM_CHECK_NPE(0)
@@ -596,6 +608,7 @@ JAVA_OBJECT gnu_xml_xpath_TranslateFunction_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(838);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_xpath_TranslateFunction*) _r3.o)->fields.gnu_xml_xpath_TranslateFunction.arg1_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);
@@ -603,6 +616,7 @@ JAVA_OBJECT gnu_xml_xpath_TranslateFunction_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(2);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r2.o);
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_xpath_TranslateFunction*) _r3.o)->fields.gnu_xml_xpath_TranslateFunction.arg2_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);
@@ -610,6 +624,7 @@ JAVA_OBJECT gnu_xml_xpath_TranslateFunction_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(2);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r2.o);
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_xpath_TranslateFunction*) _r3.o)->fields.gnu_xml_xpath_TranslateFunction.arg3_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);

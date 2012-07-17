@@ -578,6 +578,7 @@ void java_math_RoundingMode___INIT____java_lang_String_int_int(JAVA_OBJECT me, J
     XMLVM_CHECK_NPE(0)
     java_lang_Enum___INIT____java_lang_String_int(_r0.o, _r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("RoundingMode.java", 91)
+    XMLVM_CHECK_NPE(0)
     ((java_math_RoundingMode*) _r0.o)->fields.java_math_RoundingMode.bigDecimalRM_ = _r3.i;
     XMLVM_SOURCE_POSITION("RoundingMode.java", 92)
     XMLVM_EXIT_METHOD()

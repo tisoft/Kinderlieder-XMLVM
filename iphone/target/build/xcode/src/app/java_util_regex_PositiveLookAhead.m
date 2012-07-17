@@ -273,6 +273,7 @@ JAVA_INT java_util_regex_PositiveLookAhead_matches___int_java_lang_CharSequence_
     _r5.o = n2;
     _r6.o = n3;
     XMLVM_SOURCE_POSITION("PositiveLookAhead.java", 41)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_JointSet*) _r3.o)->fields.java_util_regex_JointSet.children_;
     //java_util_ArrayList_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -289,6 +290,7 @@ JAVA_INT java_util_regex_PositiveLookAhead_matches___int_java_lang_CharSequence_
     return _r0.i;
     label12:;
     XMLVM_SOURCE_POSITION("PositiveLookAhead.java", 43)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_JointSet*) _r3.o)->fields.java_util_regex_JointSet.children_;
     //java_util_ArrayList_get___int[21]
     XMLVM_CHECK_NPE(0)
@@ -301,6 +303,7 @@ JAVA_INT java_util_regex_PositiveLookAhead_matches___int_java_lang_CharSequence_
     XMLVM_SOURCE_POSITION("PositiveLookAhead.java", 45)
     if (_r0.i < 0) goto label33;
     XMLVM_SOURCE_POSITION("PositiveLookAhead.java", 49)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)

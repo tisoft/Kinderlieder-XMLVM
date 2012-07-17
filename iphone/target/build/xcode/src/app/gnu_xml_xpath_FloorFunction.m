@@ -320,6 +320,7 @@ void gnu_xml_xpath_FloorFunction___INIT____gnu_xml_xpath_Expr(JAVA_OBJECT me, JA
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_Expr___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("FloorFunction.java", 64)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_FloorFunction*) _r0.o)->fields.gnu_xml_xpath_FloorFunction.arg_ = _r1.o;
     XMLVM_SOURCE_POSITION("FloorFunction.java", 65)
     XMLVM_EXIT_METHOD()
@@ -343,6 +344,7 @@ JAVA_OBJECT gnu_xml_xpath_FloorFunction_evaluate___org_w3c_dom_Node_int_int(JAVA
     _r5.i = n2;
     _r6.i = n3;
     XMLVM_SOURCE_POSITION("FloorFunction.java", 70)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_xpath_FloorFunction*) _r3.o)->fields.gnu_xml_xpath_FloorFunction.arg_;
     //gnu_xml_xpath_Expr_evaluate___org_w3c_dom_Node_int_int[9]
     XMLVM_CHECK_NPE(0)
@@ -371,6 +373,7 @@ JAVA_OBJECT gnu_xml_xpath_FloorFunction_clone___java_lang_Object(JAVA_OBJECT me,
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("FloorFunction.java", 77)
     _r0.o = __NEW_gnu_xml_xpath_FloorFunction();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_FloorFunction*) _r2.o)->fields.gnu_xml_xpath_FloorFunction.arg_;
     //gnu_xml_xpath_Expr_clone___java_lang_Object[6]
     XMLVM_CHECK_NPE(1)
@@ -392,6 +395,7 @@ JAVA_BOOLEAN gnu_xml_xpath_FloorFunction_references___javax_xml_namespace_QName(
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("FloorFunction.java", 82)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_FloorFunction*) _r1.o)->fields.gnu_xml_xpath_FloorFunction.arg_;
     //gnu_xml_xpath_Expr_references___javax_xml_namespace_QName[12]
     XMLVM_CHECK_NPE(0)
@@ -415,6 +419,7 @@ JAVA_OBJECT gnu_xml_xpath_FloorFunction_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(1048);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_FloorFunction*) _r2.o)->fields.gnu_xml_xpath_FloorFunction.arg_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);

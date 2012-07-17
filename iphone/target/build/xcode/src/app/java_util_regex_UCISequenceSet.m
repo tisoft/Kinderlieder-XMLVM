@@ -240,6 +240,7 @@ void java_util_regex_UCISequenceSet___INIT____java_lang_StringBuffer(JAVA_OBJECT
     java_util_regex_LeafSet___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("UCISequenceSet.java", 30)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_UCISequenceSet*) _r3.o)->fields.java_util_regex_UCISequenceSet.string_ = _r0.o;
     XMLVM_SOURCE_POSITION("UCISequenceSet.java", 33)
     _r0.o = __NEW_java_lang_StringBuilder();
@@ -255,10 +256,12 @@ void java_util_regex_UCISequenceSet___INIT____java_lang_StringBuffer(JAVA_OBJECT
     //java_lang_StringBuilder_toString__[5]
     XMLVM_CHECK_NPE(0)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[5])(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_UCISequenceSet*) _r3.o)->fields.java_util_regex_UCISequenceSet.string_ = _r1.o;
     XMLVM_SOURCE_POSITION("UCISequenceSet.java", 39)
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_AbstractStringBuilder_length__(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_LeafSet*) _r3.o)->fields.java_util_regex_LeafSet.charCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("UCISequenceSet.java", 40)
     XMLVM_EXIT_METHOD()
@@ -295,12 +298,14 @@ JAVA_INT java_util_regex_UCISequenceSet_accepts___int_java_lang_CharSequence(JAV
     XMLVM_SOURCE_POSITION("UCISequenceSet.java", 43)
     _r0.i = 0;
     label1:;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_UCISequenceSet*) _r3.o)->fields.java_util_regex_UCISequenceSet.string_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[8])(_r1.o);
     if (_r0.i < _r1.i) goto label16;
     XMLVM_SOURCE_POSITION("UCISequenceSet.java", 50)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_UCISequenceSet*) _r3.o)->fields.java_util_regex_UCISequenceSet.string_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(0)
@@ -310,6 +315,7 @@ JAVA_INT java_util_regex_UCISequenceSet_accepts___int_java_lang_CharSequence(JAV
     return _r0.i;
     label16:;
     XMLVM_SOURCE_POSITION("UCISequenceSet.java", 44)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_UCISequenceSet*) _r3.o)->fields.java_util_regex_UCISequenceSet.string_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(1)
@@ -344,6 +350,7 @@ JAVA_OBJECT java_util_regex_UCISequenceSet_getName__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(3174);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_regex_UCISequenceSet*) _r2.o)->fields.java_util_regex_UCISequenceSet.string_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);

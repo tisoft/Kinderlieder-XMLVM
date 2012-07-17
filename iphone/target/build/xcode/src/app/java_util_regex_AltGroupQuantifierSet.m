@@ -252,12 +252,14 @@ JAVA_INT java_util_regex_AltGroupQuantifierSet_matches___int_java_lang_CharSeque
     _r3.o = n2;
     _r4.o = n3;
     XMLVM_SOURCE_POSITION("AltGroupQuantifierSet.java", 38)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_QuantifierSet*) _r1.o)->fields.java_util_regex_QuantifierSet.innerSet_;
     //java_util_regex_AbstractSet_hasConsumed___java_util_regex_MatchResultImpl[12]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_regex_AbstractSet*) _r0.o)->tib->vtable[12])(_r0.o, _r4.o);
     if (_r0.i != 0) goto label15;
     XMLVM_SOURCE_POSITION("AltGroupQuantifierSet.java", 39)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_AbstractSet*) _r1.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -268,6 +270,7 @@ JAVA_INT java_util_regex_AltGroupQuantifierSet_matches___int_java_lang_CharSeque
     return _r0.i;
     label15:;
     XMLVM_SOURCE_POSITION("AltGroupQuantifierSet.java", 41)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_QuantifierSet*) _r1.o)->fields.java_util_regex_QuantifierSet.innerSet_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -275,6 +278,7 @@ JAVA_INT java_util_regex_AltGroupQuantifierSet_matches___int_java_lang_CharSeque
     XMLVM_SOURCE_POSITION("AltGroupQuantifierSet.java", 43)
     if (_r0.i >= 0) goto label14;
     XMLVM_SOURCE_POSITION("AltGroupQuantifierSet.java", 44)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_AbstractSet*) _r1.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -296,6 +300,7 @@ void java_util_regex_AltGroupQuantifierSet_setNext___java_util_regex_AbstractSet
     XMLVM_CHECK_NPE(1)
     java_util_regex_AbstractSet_setNext___java_util_regex_AbstractSet(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("AltGroupQuantifierSet.java", 52)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_QuantifierSet*) _r1.o)->fields.java_util_regex_QuantifierSet.innerSet_;
     //java_util_regex_AbstractSet_setNext___java_util_regex_AbstractSet[16]
     XMLVM_CHECK_NPE(0)

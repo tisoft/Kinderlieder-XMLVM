@@ -258,10 +258,13 @@ void gnu_xml_dom_DomNode_ListenerRecord___INIT____java_lang_String_org_w3c_dom_e
     XMLVM_SOURCE_POSITION("DomNode.java", 1426)
     XMLVM_CHECK_NPE(2)
     _r0.o = java_lang_String_intern__(_r2.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomNode_ListenerRecord*) _r1.o)->fields.gnu_xml_dom_DomNode_ListenerRecord.type_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomNode.java", 1427)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomNode_ListenerRecord*) _r1.o)->fields.gnu_xml_dom_DomNode_ListenerRecord.listener_ = _r3.o;
     XMLVM_SOURCE_POSITION("DomNode.java", 1428)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomNode_ListenerRecord*) _r1.o)->fields.gnu_xml_dom_DomNode_ListenerRecord.useCapture_ = _r4.i;
     XMLVM_SOURCE_POSITION("DomNode.java", 1429)
     XMLVM_EXIT_METHOD()
@@ -282,15 +285,21 @@ JAVA_BOOLEAN gnu_xml_dom_DomNode_ListenerRecord_equals___java_lang_Object(JAVA_O
     XMLVM_SOURCE_POSITION("DomNode.java", 1433)
     _r3.o = _r3.o;
     XMLVM_SOURCE_POSITION("DomNode.java", 1434)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_DomNode_ListenerRecord*) _r2.o)->fields.gnu_xml_dom_DomNode_ListenerRecord.listener_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_dom_DomNode_ListenerRecord*) _r3.o)->fields.gnu_xml_dom_DomNode_ListenerRecord.listener_;
     if (_r0.o != _r1.o) goto label22;
     XMLVM_SOURCE_POSITION("DomNode.java", 1435)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_dom_DomNode_ListenerRecord*) _r2.o)->fields.gnu_xml_dom_DomNode_ListenerRecord.useCapture_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_xml_dom_DomNode_ListenerRecord*) _r3.o)->fields.gnu_xml_dom_DomNode_ListenerRecord.useCapture_;
     if (_r0.i != _r1.i) goto label22;
     XMLVM_SOURCE_POSITION("DomNode.java", 1436)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_DomNode_ListenerRecord*) _r2.o)->fields.gnu_xml_dom_DomNode_ListenerRecord.type_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_dom_DomNode_ListenerRecord*) _r3.o)->fields.gnu_xml_dom_DomNode_ListenerRecord.type_;
     if (_r0.o != _r1.o) goto label22;
     _r0.i = 1;
@@ -312,10 +321,12 @@ JAVA_INT gnu_xml_dom_DomNode_ListenerRecord_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("DomNode.java", 1441)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_DomNode_ListenerRecord*) _r2.o)->fields.gnu_xml_dom_DomNode_ListenerRecord.listener_;
     //java_lang_Object_hashCode__[4]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_Object*) _r0.o)->tib->vtable[4])(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_dom_DomNode_ListenerRecord*) _r2.o)->fields.gnu_xml_dom_DomNode_ListenerRecord.type_;
     //java_lang_String_hashCode__[4]
     XMLVM_CHECK_NPE(1)

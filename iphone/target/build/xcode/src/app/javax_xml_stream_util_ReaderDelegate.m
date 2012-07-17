@@ -1092,6 +1092,7 @@ void javax_xml_stream_util_ReaderDelegate___INIT____javax_xml_stream_XMLStreamRe
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 68)
+    XMLVM_CHECK_NPE(0)
     ((javax_xml_stream_util_ReaderDelegate*) _r0.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_ = _r1.o;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 69)
     XMLVM_EXIT_METHOD()
@@ -1108,6 +1109,7 @@ void javax_xml_stream_util_ReaderDelegate_setParent___javax_xml_stream_XMLStream
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 76)
+    XMLVM_CHECK_NPE(0)
     ((javax_xml_stream_util_ReaderDelegate*) _r0.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_ = _r1.o;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 77)
     XMLVM_EXIT_METHOD()
@@ -1123,6 +1125,7 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getParent__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 84)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1137,9 +1140,11 @@ JAVA_INT javax_xml_stream_util_ReaderDelegate_next__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 90)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 91)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_next__])(_r0.o);
@@ -1162,9 +1167,11 @@ JAVA_INT javax_xml_stream_util_ReaderDelegate_nextTag__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 98)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 99)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_nextTag__])(_r0.o);
@@ -1187,9 +1194,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getElementText__(JAVA_OBJECT me
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 106)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 107)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getElementText__])(_r0.o);
@@ -1218,9 +1227,11 @@ void javax_xml_stream_util_ReaderDelegate_require___int_java_lang_String_java_la
     _r3.o = n2;
     _r4.o = n3;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 114)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 115)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_INT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_require___int_java_lang_String_java_lang_String])(_r0.o, _r2.i, _r3.o, _r4.o);
@@ -1239,9 +1250,11 @@ JAVA_BOOLEAN javax_xml_stream_util_ReaderDelegate_hasNext__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 121)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 122)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_hasNext__])(_r0.o);
@@ -1263,9 +1276,11 @@ void javax_xml_stream_util_ReaderDelegate_close__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 129)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 130)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_close__])(_r0.o);
@@ -1286,9 +1301,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getNamespaceURI___java_lang_Str
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 135)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 136)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getNamespaceURI___java_lang_String])(_r0.o, _r2.o);
@@ -1310,9 +1327,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getNamespaceContext__(JAVA_OBJE
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 142)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 143)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getNamespaceContext__])(_r0.o);
@@ -1334,9 +1353,11 @@ JAVA_BOOLEAN javax_xml_stream_util_ReaderDelegate_isStartElement__(JAVA_OBJECT m
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 149)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 150)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_isStartElement__])(_r0.o);
@@ -1358,9 +1379,11 @@ JAVA_BOOLEAN javax_xml_stream_util_ReaderDelegate_isEndElement__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 156)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 157)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_isEndElement__])(_r0.o);
@@ -1382,9 +1405,11 @@ JAVA_BOOLEAN javax_xml_stream_util_ReaderDelegate_isCharacters__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 163)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 164)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_isCharacters__])(_r0.o);
@@ -1406,9 +1431,11 @@ JAVA_BOOLEAN javax_xml_stream_util_ReaderDelegate_isWhiteSpace__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 170)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 171)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_isWhiteSpace__])(_r0.o);
@@ -1434,9 +1461,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getAttributeValue___java_lang_S
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 177)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 178)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getAttributeValue___java_lang_String_java_lang_String])(_r0.o, _r2.o, _r3.o);
@@ -1458,9 +1487,11 @@ JAVA_INT javax_xml_stream_util_ReaderDelegate_getAttributeCount__(JAVA_OBJECT me
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 184)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 185)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getAttributeCount__])(_r0.o);
@@ -1484,9 +1515,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getAttributeName___int(JAVA_OBJ
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 191)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 192)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getAttributeName___int])(_r0.o, _r2.i);
@@ -1510,9 +1543,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getAttributePrefix___int(JAVA_O
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 198)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 199)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getAttributePrefix___int])(_r0.o, _r2.i);
@@ -1536,9 +1571,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getAttributeNamespace___int(JAV
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 205)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 206)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getAttributeNamespace___int])(_r0.o, _r2.i);
@@ -1562,9 +1599,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getAttributeLocalName___int(JAV
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 212)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 213)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getAttributeLocalName___int])(_r0.o, _r2.i);
@@ -1588,9 +1627,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getAttributeType___int(JAVA_OBJ
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 219)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 220)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getAttributeType___int])(_r0.o, _r2.i);
@@ -1614,9 +1655,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getAttributeValue___int(JAVA_OB
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 226)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 227)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getAttributeValue___int])(_r0.o, _r2.i);
@@ -1640,9 +1683,11 @@ JAVA_BOOLEAN javax_xml_stream_util_ReaderDelegate_isAttributeSpecified___int(JAV
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 233)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 234)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_isAttributeSpecified___int])(_r0.o, _r2.i);
@@ -1664,9 +1709,11 @@ JAVA_INT javax_xml_stream_util_ReaderDelegate_getNamespaceCount__(JAVA_OBJECT me
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 240)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 241)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getNamespaceCount__])(_r0.o);
@@ -1690,9 +1737,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getNamespacePrefix___int(JAVA_O
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 247)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 248)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getNamespacePrefix___int])(_r0.o, _r2.i);
@@ -1716,9 +1765,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getNamespaceURI___int(JAVA_OBJE
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 254)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 255)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getNamespaceURI___int])(_r0.o, _r2.i);
@@ -1740,9 +1791,11 @@ JAVA_INT javax_xml_stream_util_ReaderDelegate_getEventType__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 261)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 262)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getEventType__])(_r0.o);
@@ -1764,9 +1817,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getText__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 268)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 269)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getText__])(_r0.o);
@@ -1796,9 +1851,11 @@ JAVA_INT javax_xml_stream_util_ReaderDelegate_getTextCharacters___int_char_1ARRA
     _r4.i = n3;
     _r5.i = n4;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 277)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 278)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_INT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getTextCharacters___int_char_1ARRAY_int_int])(_r0.o, _r2.i, _r3.o, _r4.i, _r5.i);
@@ -1820,9 +1877,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getTextCharacters__(JAVA_OBJECT
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 284)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 285)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getTextCharacters__])(_r0.o);
@@ -1844,9 +1903,11 @@ JAVA_INT javax_xml_stream_util_ReaderDelegate_getTextStart__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 291)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 292)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getTextStart__])(_r0.o);
@@ -1868,9 +1929,11 @@ JAVA_INT javax_xml_stream_util_ReaderDelegate_getTextLength__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 298)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 299)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getTextLength__])(_r0.o);
@@ -1892,9 +1955,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getEncoding__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 305)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 306)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getEncoding__])(_r0.o);
@@ -1916,9 +1981,11 @@ JAVA_BOOLEAN javax_xml_stream_util_ReaderDelegate_hasText__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 312)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 313)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_hasText__])(_r0.o);
@@ -1940,9 +2007,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getLocation__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 319)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 320)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getLocation__])(_r0.o);
@@ -1964,9 +2033,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 326)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 327)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getName__])(_r0.o);
@@ -1988,9 +2059,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getLocalName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 333)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 334)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getLocalName__])(_r0.o);
@@ -2012,9 +2085,11 @@ JAVA_BOOLEAN javax_xml_stream_util_ReaderDelegate_hasName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 340)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 341)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_hasName__])(_r0.o);
@@ -2036,9 +2111,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getNamespaceURI__(JAVA_OBJECT m
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 347)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 348)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getNamespaceURI__])(_r0.o);
@@ -2060,9 +2137,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getPrefix__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 354)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 355)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getPrefix__])(_r0.o);
@@ -2084,9 +2163,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getVersion__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 361)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 362)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getVersion__])(_r0.o);
@@ -2108,9 +2189,11 @@ JAVA_BOOLEAN javax_xml_stream_util_ReaderDelegate_isStandalone__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 368)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 369)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_isStandalone__])(_r0.o);
@@ -2132,9 +2215,11 @@ JAVA_BOOLEAN javax_xml_stream_util_ReaderDelegate_standaloneSet__(JAVA_OBJECT me
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 375)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 376)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_standaloneSet__])(_r0.o);
@@ -2156,9 +2241,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getCharacterEncodingScheme__(JA
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 382)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 383)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getCharacterEncodingScheme__])(_r0.o);
@@ -2180,9 +2267,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getPITarget__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 389)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 390)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getPITarget__])(_r0.o);
@@ -2204,9 +2293,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getPIData__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 396)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 397)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getPIData__])(_r0.o);
@@ -2230,9 +2321,11 @@ JAVA_OBJECT javax_xml_stream_util_ReaderDelegate_getProperty___java_lang_String(
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 403)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     if (_r0.o == JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("ReaderDelegate.java", 404)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_util_ReaderDelegate*) _r1.o)->fields.javax_xml_stream_util_ReaderDelegate.parent_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getProperty___java_lang_String])(_r0.o, _r2.o);

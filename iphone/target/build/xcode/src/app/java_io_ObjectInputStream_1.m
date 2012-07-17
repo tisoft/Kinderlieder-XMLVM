@@ -243,8 +243,11 @@ void java_io_ObjectInputStream_1___INIT____java_io_ObjectInputStream_java_lang_C
     _r2.o = n2;
     _r3.o = n3;
     XMLVM_SOURCE_POSITION("ObjectInputStream.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_io_ObjectInputStream_1*) _r0.o)->fields.java_io_ObjectInputStream_1.this_0_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((java_io_ObjectInputStream_1*) _r0.o)->fields.java_io_ObjectInputStream_1.val_implementationClass_ = _r2.o;
+    XMLVM_CHECK_NPE(0)
     ((java_io_ObjectInputStream_1*) _r0.o)->fields.java_io_ObjectInputStream_1.val_thisClass_ = _r3.o;
     XMLVM_SOURCE_POSITION("ObjectInputStream.java", 387)
     XMLVM_CHECK_NPE(0)
@@ -266,6 +269,7 @@ JAVA_OBJECT java_io_ObjectInputStream_1_run__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w11064aaab4b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("ObjectInputStream.java", 390)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_ObjectInputStream_1*) _r3.o)->fields.java_io_ObjectInputStream_1.val_implementationClass_;
     XMLVM_SOURCE_POSITION("ObjectInputStream.java", 392)
     // "readFields"
@@ -280,6 +284,7 @@ JAVA_OBJECT java_io_ObjectInputStream_1_run__(JAVA_OBJECT me)
     //java_lang_reflect_Method_getDeclaringClass__[12]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_reflect_Method*) _r0.o)->tib->vtable[12])(_r0.o);
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_ObjectInputStream_1*) _r3.o)->fields.java_io_ObjectInputStream_1.val_thisClass_;
     if (_r0.o == _r1.o) { XMLVM_MEMCPY(curThread_w11064aaab4b1b2->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w11064aaab4b1b2, sizeof(XMLVM_JMP_BUF)); goto label22; };
     XMLVM_SOURCE_POSITION("ObjectInputStream.java", 395)
@@ -301,6 +306,7 @@ JAVA_OBJECT java_io_ObjectInputStream_1_run__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w11064aaab4b1b9)
     // Begin try
     XMLVM_SOURCE_POSITION("ObjectInputStream.java", 400)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_ObjectInputStream_1*) _r3.o)->fields.java_io_ObjectInputStream_1.val_implementationClass_;
     XMLVM_SOURCE_POSITION("ObjectInputStream.java", 402)
     // "readUnshared"
@@ -315,6 +321,7 @@ JAVA_OBJECT java_io_ObjectInputStream_1_run__(JAVA_OBJECT me)
     //java_lang_reflect_Method_getDeclaringClass__[12]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_reflect_Method*) _r0.o)->tib->vtable[12])(_r0.o);
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_ObjectInputStream_1*) _r3.o)->fields.java_io_ObjectInputStream_1.val_thisClass_;
     if (_r0.o == _r1.o) { XMLVM_MEMCPY(curThread_w11064aaab4b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w11064aaab4b1b9, sizeof(XMLVM_JMP_BUF)); goto label44; };
     XMLVM_SOURCE_POSITION("ObjectInputStream.java", 405)

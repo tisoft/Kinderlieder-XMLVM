@@ -230,7 +230,9 @@ JAVA_OBJECT java_util_LinkedHashMap_ValueIterator_next__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     java_util_LinkedHashMap_AbstractMapIterator_makeNext__(_r1.o);
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 233)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_LinkedHashMap_AbstractMapIterator*) _r1.o)->fields.java_util_LinkedHashMap_AbstractMapIterator.currentEntry_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_MapEntry*) _r0.o)->fields.java_util_MapEntry.value_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

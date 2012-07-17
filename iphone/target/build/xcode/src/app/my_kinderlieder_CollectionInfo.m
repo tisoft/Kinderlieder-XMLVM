@@ -322,13 +322,16 @@ void my_kinderlieder_CollectionInfo___INIT____java_lang_String(JAVA_OBJECT me, J
     _r1.o = __NEW_java_util_LinkedHashMap();
     XMLVM_CHECK_NPE(1)
     java_util_LinkedHashMap___INIT___(_r1.o);
+    XMLVM_CHECK_NPE(2)
     ((my_kinderlieder_CollectionInfo*) _r2.o)->fields.my_kinderlieder_CollectionInfo.songInfos_ = _r1.o;
     XMLVM_SOURCE_POSITION("CollectionInfo.java", 17)
     _r1.o = __NEW_java_util_HashMap();
     XMLVM_CHECK_NPE(1)
     java_util_HashMap___INIT___(_r1.o);
+    XMLVM_CHECK_NPE(2)
     ((my_kinderlieder_CollectionInfo*) _r2.o)->fields.my_kinderlieder_CollectionInfo.musicInfoMap_ = _r1.o;
     XMLVM_SOURCE_POSITION("CollectionInfo.java", 21)
+    XMLVM_CHECK_NPE(2)
     ((my_kinderlieder_CollectionInfo*) _r2.o)->fields.my_kinderlieder_CollectionInfo.id_ = _r3.o;
     XMLVM_TRY_BEGIN(w20887aaab3b1c15)
     // Begin try
@@ -377,6 +380,7 @@ JAVA_OBJECT my_kinderlieder_CollectionInfo_getSongInfos__(JAVA_OBJECT me)
     _r2.o = me;
     XMLVM_SOURCE_POSITION("CollectionInfo.java", 36)
     _r0.o = __NEW_java_util_ArrayList();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((my_kinderlieder_CollectionInfo*) _r2.o)->fields.my_kinderlieder_CollectionInfo.songInfos_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_values__])(_r1.o);
@@ -398,6 +402,7 @@ JAVA_OBJECT my_kinderlieder_CollectionInfo_getMusicInfos___my_kinderlieder_SongI
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("CollectionInfo.java", 40)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((my_kinderlieder_CollectionInfo*) _r2.o)->fields.my_kinderlieder_CollectionInfo.musicInfoMap_;
     XMLVM_CHECK_NPE(3)
     _r1.o = my_kinderlieder_SongInfo_getId__(_r3.o);
@@ -420,6 +425,7 @@ void my_kinderlieder_CollectionInfo_add___my_kinderlieder_SongInfo(JAVA_OBJECT m
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("CollectionInfo.java", 44)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((my_kinderlieder_CollectionInfo*) _r2.o)->fields.my_kinderlieder_CollectionInfo.songInfos_;
     XMLVM_CHECK_NPE(3)
     _r1.o = my_kinderlieder_SongInfo_getId__(_r3.o);
@@ -444,6 +450,7 @@ void my_kinderlieder_CollectionInfo_add___java_lang_String_my_kinderlieder_Music
     _r3.o = n1;
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("CollectionInfo.java", 48)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((my_kinderlieder_CollectionInfo*) _r2.o)->fields.my_kinderlieder_CollectionInfo.musicInfoMap_;
     XMLVM_CHECK_NPE(1)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_get___java_lang_Object])(_r1.o, _r3.o);
@@ -455,6 +462,7 @@ void my_kinderlieder_CollectionInfo_add___java_lang_String_my_kinderlieder_Music
     XMLVM_CHECK_NPE(0)
     java_util_ArrayList___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("CollectionInfo.java", 51)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((my_kinderlieder_CollectionInfo*) _r2.o)->fields.my_kinderlieder_CollectionInfo.musicInfoMap_;
     XMLVM_CHECK_NPE(1)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_put___java_lang_Object_java_lang_Object])(_r1.o, _r3.o, _r0.o);
@@ -476,6 +484,7 @@ JAVA_OBJECT my_kinderlieder_CollectionInfo_getId__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CollectionInfo.java", 63)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((my_kinderlieder_CollectionInfo*) _r1.o)->fields.my_kinderlieder_CollectionInfo.id_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

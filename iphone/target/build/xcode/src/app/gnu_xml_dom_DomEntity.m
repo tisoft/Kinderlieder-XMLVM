@@ -412,6 +412,7 @@ void gnu_xml_dom_DomEntity___INIT____gnu_xml_dom_DomDocument_java_lang_String_ja
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_DomExtern___INIT____short_gnu_xml_dom_DomDocument_java_lang_String_java_lang_String_java_lang_String(_r0.o, _r1.i, _r2.o, _r3.o, _r4.o, _r5.o);
     XMLVM_SOURCE_POSITION("DomEntity.java", 99)
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_dom_DomEntity*) _r6.o)->fields.gnu_xml_dom_DomEntity.notation_ = _r11.o;
     XMLVM_SOURCE_POSITION("DomEntity.java", 103)
     //gnu_xml_dom_DomEntity_makeReadonly__[42]
@@ -431,6 +432,7 @@ JAVA_OBJECT gnu_xml_dom_DomEntity_getNotationName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomEntity.java", 112)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomEntity*) _r1.o)->fields.gnu_xml_dom_DomEntity.notation_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -491,6 +493,7 @@ JAVA_OBJECT gnu_xml_dom_DomEntity_getBaseURI__(JAVA_OBJECT me)
     _r0.o = gnu_xml_dom_DomExtern_getSystemId__(_r1.o);
     XMLVM_SOURCE_POSITION("DomEntity.java", 143)
     if (_r0.o != JAVA_NULL) goto label12;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomNode*) _r1.o)->fields.gnu_xml_dom_DomNode.owner_;
     //gnu_xml_dom_DomDocument_getBaseURI__[14]
     XMLVM_CHECK_NPE(0)

@@ -257,6 +257,7 @@ void java_nio_charset_UnmappableCharacterException___INIT____int(JAVA_OBJECT me,
     XMLVM_CHECK_NPE(0)
     java_nio_charset_CharacterCodingException___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("UnmappableCharacterException.java", 44)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_charset_UnmappableCharacterException*) _r0.o)->fields.java_nio_charset_UnmappableCharacterException.inputLength_ = _r1.i;
     XMLVM_SOURCE_POSITION("UnmappableCharacterException.java", 45)
     XMLVM_EXIT_METHOD()
@@ -272,6 +273,7 @@ JAVA_INT java_nio_charset_UnmappableCharacterException_getInputLength__(JAVA_OBJ
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("UnmappableCharacterException.java", 53)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_nio_charset_UnmappableCharacterException*) _r1.o)->fields.java_nio_charset_UnmappableCharacterException.inputLength_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -289,6 +291,7 @@ JAVA_OBJECT java_nio_charset_UnmappableCharacterException_getMessage__(JAVA_OBJE
     XMLVM_SOURCE_POSITION("UnmappableCharacterException.java", 64)
     // "niochar.0A"
     _r0.o = xmlvm_create_java_string_from_pool(3358);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_charset_UnmappableCharacterException*) _r2.o)->fields.java_nio_charset_UnmappableCharacterException.inputLength_;
     _r0.o = org_apache_harmony_niochar_internal_nls_Messages_getString___java_lang_String_int(_r0.o, _r1.i);
     XMLVM_EXIT_METHOD()

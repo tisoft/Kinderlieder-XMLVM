@@ -224,8 +224,10 @@ void java_util_regex_AbstractCharClass_LazyRange___INIT____int_int(JAVA_OBJECT m
     XMLVM_CHECK_NPE(0)
     java_util_regex_AbstractCharClass_LazyCharClass___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 341)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractCharClass_LazyRange*) _r0.o)->fields.java_util_regex_AbstractCharClass_LazyRange.start_ = _r1.i;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 342)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractCharClass_LazyRange*) _r0.o)->fields.java_util_regex_AbstractCharClass_LazyRange.end_ = _r2.i;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 343)
     XMLVM_EXIT_METHOD()
@@ -246,7 +248,9 @@ JAVA_OBJECT java_util_regex_AbstractCharClass_LazyRange_computeValue__(JAVA_OBJE
     _r0.o = __NEW_java_util_regex_CharClass();
     XMLVM_CHECK_NPE(0)
     java_util_regex_CharClass___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_AbstractCharClass_LazyRange*) _r3.o)->fields.java_util_regex_AbstractCharClass_LazyRange.start_;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_regex_AbstractCharClass_LazyRange*) _r3.o)->fields.java_util_regex_AbstractCharClass_LazyRange.end_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_util_regex_CharClass_add___int_int(_r0.o, _r1.i, _r2.i);

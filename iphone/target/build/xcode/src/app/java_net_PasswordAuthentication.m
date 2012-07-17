@@ -237,12 +237,14 @@ void java_net_PasswordAuthentication___INIT____java_lang_String_char_1ARRAY(JAVA
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("PasswordAuthentication.java", 42)
+    XMLVM_CHECK_NPE(1)
     ((java_net_PasswordAuthentication*) _r1.o)->fields.java_net_PasswordAuthentication.userName_ = _r2.o;
     XMLVM_SOURCE_POSITION("PasswordAuthentication.java", 43)
     //char_1ARRAY_clone__[0]
     XMLVM_CHECK_NPE(3)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((org_xmlvm_runtime_XMLVMArray*) _r3.o)->tib->vtable[0])(_r3.o);
     _r0.o = _r0.o;
+    XMLVM_CHECK_NPE(1)
     ((java_net_PasswordAuthentication*) _r1.o)->fields.java_net_PasswordAuthentication.password_ = _r0.o;
     XMLVM_SOURCE_POSITION("PasswordAuthentication.java", 44)
     XMLVM_EXIT_METHOD()
@@ -258,6 +260,7 @@ JAVA_OBJECT java_net_PasswordAuthentication_getPassword__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("PasswordAuthentication.java", 54)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_PasswordAuthentication*) _r1.o)->fields.java_net_PasswordAuthentication.password_;
     //char_1ARRAY_clone__[0]
     XMLVM_CHECK_NPE(0)
@@ -276,6 +279,7 @@ JAVA_OBJECT java_net_PasswordAuthentication_getUserName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("PasswordAuthentication.java", 63)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_PasswordAuthentication*) _r1.o)->fields.java_net_PasswordAuthentication.userName_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

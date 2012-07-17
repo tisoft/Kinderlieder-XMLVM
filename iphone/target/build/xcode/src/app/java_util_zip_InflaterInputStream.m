@@ -526,10 +526,12 @@ void java_util_zip_InflaterInputStream___INIT____java_io_InputStream_java_util_z
     XMLVM_THROW_CUSTOM(_r0.o)
     label21:;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 110)
+    XMLVM_CHECK_NPE(1)
     ((java_util_zip_InflaterInputStream*) _r1.o)->fields.java_util_zip_InflaterInputStream.inf_ = _r3.o;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 111)
     if (!__TIB_byte.classInitialized) __INIT_byte();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_byte, _r4.i);
+    XMLVM_CHECK_NPE(1)
     ((java_util_zip_InflaterInputStream*) _r1.o)->fields.java_util_zip_InflaterInputStream.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 112)
     XMLVM_EXIT_METHOD()
@@ -592,6 +594,7 @@ JAVA_INT java_util_zip_InflaterInputStream_read___byte_1ARRAY_int_int(JAVA_OBJEC
     _r3.i = 1;
     _r2.i = -1;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 147)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_zip_InflaterInputStream*) _r4.o)->fields.java_util_zip_InflaterInputStream.closed_;
     if (_r0.i == 0) goto label18;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 148)
@@ -634,6 +637,7 @@ JAVA_INT java_util_zip_InflaterInputStream_read___byte_1ARRAY_int_int(JAVA_OBJEC
     return _r0.i;
     label45:;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 163)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_zip_InflaterInputStream*) _r4.o)->fields.java_util_zip_InflaterInputStream.eof_;
     if (_r0.i == 0) goto label51;
     _r0 = _r2;
@@ -657,6 +661,7 @@ JAVA_INT java_util_zip_InflaterInputStream_read___byte_1ARRAY_int_int(JAVA_OBJEC
     XMLVM_THROW_CUSTOM(_r0.o)
     label68:;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 174)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_zip_InflaterInputStream*) _r4.o)->fields.java_util_zip_InflaterInputStream.inf_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_zip_Inflater_needsInput__(_r0.o);
@@ -665,58 +670,66 @@ JAVA_INT java_util_zip_InflaterInputStream_read___byte_1ARRAY_int_int(JAVA_OBJEC
     XMLVM_CHECK_NPE(4)
     java_util_zip_InflaterInputStream_fill__(_r4.o);
     label79:;
-    XMLVM_TRY_BEGIN(w28374aaac10b1c73)
+    XMLVM_TRY_BEGIN(w28376aaac10b1c73)
     // Begin try
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 180)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_zip_InflaterInputStream*) _r4.o)->fields.java_util_zip_InflaterInputStream.inf_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_zip_Inflater_inflate___byte_1ARRAY_int_int(_r0.o, _r5.o, _r6.i, _r7.i);
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 181)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_zip_InflaterInputStream*) _r4.o)->fields.java_util_zip_InflaterInputStream.inf_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_util_zip_Inflater_finished__(_r1.o);
+    XMLVM_CHECK_NPE(4)
     ((java_util_zip_InflaterInputStream*) _r4.o)->fields.java_util_zip_InflaterInputStream.eof_ = _r1.i;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 182)
-    if (_r0.i > 0) { XMLVM_MEMCPY(curThread_w28374aaac10b1c73->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28374aaac10b1c73, sizeof(XMLVM_JMP_BUF)); goto label44; };
+    if (_r0.i > 0) { XMLVM_MEMCPY(curThread_w28376aaac10b1c73->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28376aaac10b1c73, sizeof(XMLVM_JMP_BUF)); goto label44; };
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 184)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_zip_InflaterInputStream*) _r4.o)->fields.java_util_zip_InflaterInputStream.eof_;
-    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w28374aaac10b1c73->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28374aaac10b1c73, sizeof(XMLVM_JMP_BUF)); goto label101; };
+    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w28376aaac10b1c73->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28376aaac10b1c73, sizeof(XMLVM_JMP_BUF)); goto label101; };
     _r0 = _r2;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 185)
-    { XMLVM_MEMCPY(curThread_w28374aaac10b1c73->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28374aaac10b1c73, sizeof(XMLVM_JMP_BUF)); goto label44; };
+    { XMLVM_MEMCPY(curThread_w28376aaac10b1c73->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28376aaac10b1c73, sizeof(XMLVM_JMP_BUF)); goto label44; };
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 186)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28374aaac10b1c73)
-        XMLVM_CATCH_SPECIFIC(w28374aaac10b1c73,java_util_zip_DataFormatException,127)
-    XMLVM_CATCH_END(w28374aaac10b1c73)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28374aaac10b1c73)
+    XMLVM_CATCH_BEGIN(w28376aaac10b1c73)
+        XMLVM_CATCH_SPECIFIC(w28376aaac10b1c73,java_util_zip_DataFormatException,127)
+    XMLVM_CATCH_END(w28376aaac10b1c73)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28376aaac10b1c73)
     label101:;
-    XMLVM_TRY_BEGIN(w28374aaac10b1c75)
+    XMLVM_TRY_BEGIN(w28376aaac10b1c75)
     // Begin try
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_zip_InflaterInputStream*) _r4.o)->fields.java_util_zip_InflaterInputStream.inf_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_zip_Inflater_needsDictionary__(_r0.o);
-    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w28374aaac10b1c75->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28374aaac10b1c75, sizeof(XMLVM_JMP_BUF)); goto label114; };
+    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w28376aaac10b1c75->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28376aaac10b1c75, sizeof(XMLVM_JMP_BUF)); goto label114; };
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 187)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(4)
     ((java_util_zip_InflaterInputStream*) _r4.o)->fields.java_util_zip_InflaterInputStream.eof_ = _r0.i;
     _r0 = _r2;
-    { XMLVM_MEMCPY(curThread_w28374aaac10b1c75->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28374aaac10b1c75, sizeof(XMLVM_JMP_BUF)); goto label44; };
+    { XMLVM_MEMCPY(curThread_w28376aaac10b1c75->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28376aaac10b1c75, sizeof(XMLVM_JMP_BUF)); goto label44; };
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 189)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28374aaac10b1c75)
-        XMLVM_CATCH_SPECIFIC(w28374aaac10b1c75,java_util_zip_DataFormatException,127)
-    XMLVM_CATCH_END(w28374aaac10b1c75)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28374aaac10b1c75)
+    XMLVM_CATCH_BEGIN(w28376aaac10b1c75)
+        XMLVM_CATCH_SPECIFIC(w28376aaac10b1c75,java_util_zip_DataFormatException,127)
+    XMLVM_CATCH_END(w28376aaac10b1c75)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28376aaac10b1c75)
     label114:;
-    XMLVM_TRY_BEGIN(w28374aaac10b1c77)
+    XMLVM_TRY_BEGIN(w28376aaac10b1c77)
     // Begin try
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_zip_InflaterInputStream*) _r4.o)->fields.java_util_zip_InflaterInputStream.len_;
-    if (_r0.i != _r2.i) { XMLVM_MEMCPY(curThread_w28374aaac10b1c77->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28374aaac10b1c77, sizeof(XMLVM_JMP_BUF)); goto label68; };
+    if (_r0.i != _r2.i) { XMLVM_MEMCPY(curThread_w28376aaac10b1c77->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28376aaac10b1c77, sizeof(XMLVM_JMP_BUF)); goto label68; };
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 190)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(4)
     ((java_util_zip_InflaterInputStream*) _r4.o)->fields.java_util_zip_InflaterInputStream.eof_ = _r0.i;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 191)
     _r0.o = __NEW_java_io_EOFException();
@@ -725,17 +738,19 @@ JAVA_INT java_util_zip_InflaterInputStream_read___byte_1ARRAY_int_int(JAVA_OBJEC
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28374aaac10b1c77)
-        XMLVM_CATCH_SPECIFIC(w28374aaac10b1c77,java_util_zip_DataFormatException,127)
-    XMLVM_CATCH_END(w28374aaac10b1c77)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28374aaac10b1c77)
+    XMLVM_CATCH_BEGIN(w28376aaac10b1c77)
+        XMLVM_CATCH_SPECIFIC(w28376aaac10b1c77,java_util_zip_DataFormatException,127)
+    XMLVM_CATCH_END(w28376aaac10b1c77)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28376aaac10b1c77)
     label127:;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 194)
-    java_lang_Thread* curThread_w28374aaac10b1c80 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w28374aaac10b1c80->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w28376aaac10b1c80 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w28376aaac10b1c80->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 195)
+    XMLVM_CHECK_NPE(4)
     ((java_util_zip_InflaterInputStream*) _r4.o)->fields.java_util_zip_InflaterInputStream.eof_ = _r3.i;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 196)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_zip_InflaterInputStream*) _r4.o)->fields.java_util_zip_InflaterInputStream.len_;
     if (_r1.i != _r2.i) goto label140;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 197)
@@ -766,6 +781,7 @@ void java_util_zip_InflaterInputStream_fill__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 211)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_zip_InflaterInputStream*) _r4.o)->fields.java_util_zip_InflaterInputStream.closed_;
     if (_r0.i == 0) goto label16;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 212)
@@ -778,17 +794,23 @@ void java_util_zip_InflaterInputStream_fill__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label16:;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 214)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_io_FilterInputStream*) _r4.o)->fields.java_io_FilterInputStream.in_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_zip_InflaterInputStream*) _r4.o)->fields.java_util_zip_InflaterInputStream.buf_;
     //java_io_InputStream_read___byte_1ARRAY[11]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_io_InputStream*) _r0.o)->tib->vtable[11])(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(4)
     ((java_util_zip_InflaterInputStream*) _r4.o)->fields.java_util_zip_InflaterInputStream.len_ = _r0.i;
     if (_r0.i <= 0) goto label38;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 215)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_zip_InflaterInputStream*) _r4.o)->fields.java_util_zip_InflaterInputStream.inf_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_zip_InflaterInputStream*) _r4.o)->fields.java_util_zip_InflaterInputStream.buf_;
     _r2.i = 0;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_util_zip_InflaterInputStream*) _r4.o)->fields.java_util_zip_InflaterInputStream.len_;
     XMLVM_CHECK_NPE(0)
     java_util_zip_Inflater_setInput___byte_1ARRAY_int_int(_r0.o, _r1.o, _r2.i, _r3.i);
@@ -821,6 +843,7 @@ JAVA_LONG java_util_zip_InflaterInputStream_skip___long(JAVA_OBJECT me, JAVA_LON
     _r0.i = _r9.l > _r2.l ? 1 : (_r9.l == _r2.l ? 0 : -1);
     if (_r0.i < 0) goto label55;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 231)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((java_util_zip_InflaterInputStream*) _r8.o)->fields.java_util_zip_InflaterInputStream.buf_;
     if (_r0.o != JAVA_NULL) goto label21;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 232)
@@ -829,6 +852,7 @@ JAVA_LONG java_util_zip_InflaterInputStream_skip___long(JAVA_OBJECT me, JAVA_LON
     _r0.i = (JAVA_INT) _r0.l;
     if (!__TIB_byte.classInitialized) __INIT_byte();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_byte, _r0.i);
+    XMLVM_CHECK_NPE(8)
     ((java_util_zip_InflaterInputStream*) _r8.o)->fields.java_util_zip_InflaterInputStream.buf_ = _r0.o;
     label21:;
     _r0 = _r2;
@@ -842,15 +866,18 @@ JAVA_LONG java_util_zip_InflaterInputStream_skip___long(JAVA_OBJECT me, JAVA_LON
     return _r0.l;
     label27:;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 236)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((java_util_zip_InflaterInputStream*) _r8.o)->fields.java_util_zip_InflaterInputStream.buf_;
     _r3.i = 0;
     _r4.l = _r9.l - _r0.l;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 237)
+    XMLVM_CHECK_NPE(8)
     _r6.o = ((java_util_zip_InflaterInputStream*) _r8.o)->fields.java_util_zip_InflaterInputStream.buf_;
     _r6.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r6.o));
     _r6.l = (JAVA_LONG) _r6.i;
     _r6.i = _r4.l > _r6.l ? 1 : (_r4.l == _r6.l ? 0 : -1);
     if (_r6.i <= 0) goto label53;
+    XMLVM_CHECK_NPE(8)
     _r4.o = ((java_util_zip_InflaterInputStream*) _r8.o)->fields.java_util_zip_InflaterInputStream.buf_;
     _r4.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r4.o));
     label43:;
@@ -886,6 +913,7 @@ JAVA_INT java_util_zip_InflaterInputStream_available__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 267)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_zip_InflaterInputStream*) _r2.o)->fields.java_util_zip_InflaterInputStream.closed_;
     if (_r0.i == 0) goto label16;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 269)
@@ -898,6 +926,7 @@ JAVA_INT java_util_zip_InflaterInputStream_available__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label16:;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 271)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_zip_InflaterInputStream*) _r2.o)->fields.java_util_zip_InflaterInputStream.eof_;
     if (_r0.i == 0) goto label22;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 272)
@@ -922,15 +951,19 @@ void java_util_zip_InflaterInputStream_close__(JAVA_OBJECT me)
     _r2.o = me;
     _r1.i = 1;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 285)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_zip_InflaterInputStream*) _r2.o)->fields.java_util_zip_InflaterInputStream.closed_;
     if (_r0.i != 0) goto label17;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 286)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_zip_InflaterInputStream*) _r2.o)->fields.java_util_zip_InflaterInputStream.inf_;
     XMLVM_CHECK_NPE(0)
     java_util_zip_Inflater_end__(_r0.o);
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 287)
+    XMLVM_CHECK_NPE(2)
     ((java_util_zip_InflaterInputStream*) _r2.o)->fields.java_util_zip_InflaterInputStream.closed_ = _r1.i;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 288)
+    XMLVM_CHECK_NPE(2)
     ((java_util_zip_InflaterInputStream*) _r2.o)->fields.java_util_zip_InflaterInputStream.eof_ = _r1.i;
     XMLVM_SOURCE_POSITION("InflaterInputStream.java", 289)
     XMLVM_CHECK_NPE(2)

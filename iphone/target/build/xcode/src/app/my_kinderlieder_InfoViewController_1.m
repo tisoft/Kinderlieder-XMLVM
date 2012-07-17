@@ -225,6 +225,7 @@ void my_kinderlieder_InfoViewController_1___INIT____my_kinderlieder_InfoViewCont
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("InfoViewController.java", 15)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_InfoViewController_1*) _r0.o)->fields.my_kinderlieder_InfoViewController_1.this_0_ = _r1.o;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UIWebViewDelegate___INIT___(_r0.o);
@@ -318,6 +319,7 @@ JAVA_BOOLEAN my_kinderlieder_InfoViewController_1_shouldStartLoadWithRequest___o
     XMLVM_CHECK_NPE(1)
     org_xmlvm_iphone_MFMailComposeViewController_setMailComposeDelegate___org_xmlvm_iphone_MFMailComposeViewControllerDelegate(_r1.o, _r3.o);
     XMLVM_SOURCE_POSITION("InfoViewController.java", 34)
+    XMLVM_CHECK_NPE(10)
     _r3.o = ((my_kinderlieder_InfoViewController_1*) _r10.o)->fields.my_kinderlieder_InfoViewController_1.this_0_;
     XMLVM_CHECK_NPE(3)
     _r3.o = org_xmlvm_iphone_UIViewController_getNavigationController__(_r3.o);

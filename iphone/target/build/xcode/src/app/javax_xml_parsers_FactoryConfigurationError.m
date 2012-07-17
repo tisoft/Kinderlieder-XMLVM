@@ -313,6 +313,7 @@ void javax_xml_parsers_FactoryConfigurationError___INIT____java_lang_Exception(J
     XMLVM_CHECK_NPE(0)
     java_lang_Error___INIT____java_lang_Throwable(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("FactoryConfigurationError.java", 78)
+    XMLVM_CHECK_NPE(0)
     ((javax_xml_parsers_FactoryConfigurationError*) _r0.o)->fields.javax_xml_parsers_FactoryConfigurationError.exception_ = _r1.o;
     XMLVM_SOURCE_POSITION("FactoryConfigurationError.java", 79)
     XMLVM_EXIT_METHOD()
@@ -334,6 +335,7 @@ void javax_xml_parsers_FactoryConfigurationError___INIT____java_lang_Exception_j
     XMLVM_CHECK_NPE(0)
     java_lang_Error___INIT____java_lang_String_java_lang_Throwable(_r0.o, _r2.o, _r1.o);
     XMLVM_SOURCE_POSITION("FactoryConfigurationError.java", 89)
+    XMLVM_CHECK_NPE(0)
     ((javax_xml_parsers_FactoryConfigurationError*) _r0.o)->fields.javax_xml_parsers_FactoryConfigurationError.exception_ = _r1.o;
     XMLVM_SOURCE_POSITION("FactoryConfigurationError.java", 90)
     XMLVM_EXIT_METHOD()
@@ -354,9 +356,11 @@ JAVA_OBJECT javax_xml_parsers_FactoryConfigurationError_getMessage__(JAVA_OBJECT
     _r0.o = java_lang_Throwable_getMessage__(_r2.o);
     XMLVM_SOURCE_POSITION("FactoryConfigurationError.java", 98)
     if (_r0.o != JAVA_NULL) goto label16;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((javax_xml_parsers_FactoryConfigurationError*) _r2.o)->fields.javax_xml_parsers_FactoryConfigurationError.exception_;
     if (_r1.o == JAVA_NULL) goto label16;
     XMLVM_SOURCE_POSITION("FactoryConfigurationError.java", 100)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((javax_xml_parsers_FactoryConfigurationError*) _r2.o)->fields.javax_xml_parsers_FactoryConfigurationError.exception_;
     //java_lang_Exception_getMessage__[7]
     XMLVM_CHECK_NPE(0)
@@ -376,6 +380,7 @@ JAVA_OBJECT javax_xml_parsers_FactoryConfigurationError_getException__(JAVA_OBJE
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FactoryConfigurationError.java", 110)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_parsers_FactoryConfigurationError*) _r1.o)->fields.javax_xml_parsers_FactoryConfigurationError.exception_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

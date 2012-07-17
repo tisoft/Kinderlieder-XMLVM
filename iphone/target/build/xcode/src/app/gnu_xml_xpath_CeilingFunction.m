@@ -320,6 +320,7 @@ void gnu_xml_xpath_CeilingFunction___INIT____gnu_xml_xpath_Expr(JAVA_OBJECT me, 
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_Expr___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("CeilingFunction.java", 64)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_CeilingFunction*) _r0.o)->fields.gnu_xml_xpath_CeilingFunction.arg_ = _r1.o;
     XMLVM_SOURCE_POSITION("CeilingFunction.java", 65)
     XMLVM_EXIT_METHOD()
@@ -343,6 +344,7 @@ JAVA_OBJECT gnu_xml_xpath_CeilingFunction_evaluate___org_w3c_dom_Node_int_int(JA
     _r5.i = n2;
     _r6.i = n3;
     XMLVM_SOURCE_POSITION("CeilingFunction.java", 69)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_xpath_CeilingFunction*) _r3.o)->fields.gnu_xml_xpath_CeilingFunction.arg_;
     //gnu_xml_xpath_Expr_evaluate___org_w3c_dom_Node_int_int[9]
     XMLVM_CHECK_NPE(0)
@@ -371,6 +373,7 @@ JAVA_OBJECT gnu_xml_xpath_CeilingFunction_clone___java_lang_Object(JAVA_OBJECT m
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("CeilingFunction.java", 76)
     _r0.o = __NEW_gnu_xml_xpath_CeilingFunction();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_CeilingFunction*) _r2.o)->fields.gnu_xml_xpath_CeilingFunction.arg_;
     //gnu_xml_xpath_Expr_clone___java_lang_Object[6]
     XMLVM_CHECK_NPE(1)
@@ -392,6 +395,7 @@ JAVA_BOOLEAN gnu_xml_xpath_CeilingFunction_references___javax_xml_namespace_QNam
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("CeilingFunction.java", 81)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_CeilingFunction*) _r1.o)->fields.gnu_xml_xpath_CeilingFunction.arg_;
     //gnu_xml_xpath_Expr_references___javax_xml_namespace_QName[12]
     XMLVM_CHECK_NPE(0)
@@ -415,6 +419,7 @@ JAVA_OBJECT gnu_xml_xpath_CeilingFunction_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(2390);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_CeilingFunction*) _r2.o)->fields.gnu_xml_xpath_CeilingFunction.arg_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);

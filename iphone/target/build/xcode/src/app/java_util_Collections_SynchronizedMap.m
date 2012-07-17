@@ -545,8 +545,10 @@ void java_util_Collections_SynchronizedMap___INIT____java_util_Map(JAVA_OBJECT m
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Collections.java", 710)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Collections_SynchronizedMap*) _r0.o)->fields.java_util_Collections_SynchronizedMap.m_ = _r1.o;
     XMLVM_SOURCE_POSITION("Collections.java", 711)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Collections_SynchronizedMap*) _r0.o)->fields.java_util_Collections_SynchronizedMap.mutex_ = _r0.o;
     XMLVM_SOURCE_POSITION("Collections.java", 712)
     XMLVM_EXIT_METHOD()
@@ -568,8 +570,10 @@ void java_util_Collections_SynchronizedMap___INIT____java_util_Map_java_lang_Obj
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Collections.java", 715)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Collections_SynchronizedMap*) _r0.o)->fields.java_util_Collections_SynchronizedMap.m_ = _r1.o;
     XMLVM_SOURCE_POSITION("Collections.java", 716)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Collections_SynchronizedMap*) _r0.o)->fields.java_util_Collections_SynchronizedMap.mutex_ = _r2.o;
     XMLVM_SOURCE_POSITION("Collections.java", 717)
     XMLVM_EXIT_METHOD()
@@ -586,11 +590,13 @@ void java_util_Collections_SynchronizedMap_clear__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 720)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.mutex_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w15497aaab5b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("Collections.java", 721)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.m_;
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_clear__])(_r1.o);
@@ -632,11 +638,13 @@ JAVA_BOOLEAN java_util_Collections_SynchronizedMap_containsKey___java_lang_Objec
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 726)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.mutex_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w15497aaab6b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("Collections.java", 727)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.m_;
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_containsKey___java_lang_Object])(_r1.o, _r3.o);
@@ -677,11 +685,13 @@ JAVA_BOOLEAN java_util_Collections_SynchronizedMap_containsValue___java_lang_Obj
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 732)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.mutex_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w15497aaab7b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("Collections.java", 733)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.m_;
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_containsValue___java_lang_Object])(_r1.o, _r3.o);
@@ -722,15 +732,18 @@ JAVA_OBJECT java_util_Collections_SynchronizedMap_entrySet__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 738)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Collections_SynchronizedMap*) _r4.o)->fields.java_util_Collections_SynchronizedMap.mutex_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w15497aaab8b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("Collections.java", 739)
     _r1.o = __NEW_java_util_Collections_SynchronizedSet();
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Collections_SynchronizedMap*) _r4.o)->fields.java_util_Collections_SynchronizedMap.m_;
     XMLVM_CHECK_NPE(2)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_entrySet__])(_r2.o);
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_util_Collections_SynchronizedMap*) _r4.o)->fields.java_util_Collections_SynchronizedMap.mutex_;
     XMLVM_CHECK_NPE(1)
     java_util_Collections_SynchronizedSet___INIT____java_util_Set_java_lang_Object(_r1.o, _r2.o, _r3.o);
@@ -771,11 +784,13 @@ JAVA_BOOLEAN java_util_Collections_SynchronizedMap_equals___java_lang_Object(JAV
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 745)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.mutex_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w15497aaab9b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("Collections.java", 746)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.m_;
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_equals___java_lang_Object])(_r1.o, _r3.o);
@@ -816,11 +831,13 @@ JAVA_OBJECT java_util_Collections_SynchronizedMap_get___java_lang_Object(JAVA_OB
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 751)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.mutex_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w15497aaac10b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("Collections.java", 752)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.m_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_get___java_lang_Object])(_r1.o, _r3.o);
@@ -859,11 +876,13 @@ JAVA_INT java_util_Collections_SynchronizedMap_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 758)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.mutex_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w15497aaac11b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("Collections.java", 759)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.m_;
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_hashCode__])(_r1.o);
@@ -902,11 +921,13 @@ JAVA_BOOLEAN java_util_Collections_SynchronizedMap_isEmpty__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 764)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.mutex_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w15497aaac12b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("Collections.java", 765)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.m_;
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_isEmpty__])(_r1.o);
@@ -947,15 +968,18 @@ JAVA_OBJECT java_util_Collections_SynchronizedMap_keySet__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 770)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Collections_SynchronizedMap*) _r4.o)->fields.java_util_Collections_SynchronizedMap.mutex_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w15497aaac13b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("Collections.java", 771)
     _r1.o = __NEW_java_util_Collections_SynchronizedSet();
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Collections_SynchronizedMap*) _r4.o)->fields.java_util_Collections_SynchronizedMap.m_;
     XMLVM_CHECK_NPE(2)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_keySet__])(_r2.o);
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_util_Collections_SynchronizedMap*) _r4.o)->fields.java_util_Collections_SynchronizedMap.mutex_;
     XMLVM_CHECK_NPE(1)
     java_util_Collections_SynchronizedSet___INIT____java_util_Set_java_lang_Object(_r1.o, _r2.o, _r3.o);
@@ -998,11 +1022,13 @@ JAVA_OBJECT java_util_Collections_SynchronizedMap_put___java_lang_Object_java_la
     _r3.o = n1;
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("Collections.java", 776)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.mutex_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w15497aaac14b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("Collections.java", 777)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.m_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_put___java_lang_Object_java_lang_Object])(_r1.o, _r3.o, _r4.o);
@@ -1043,11 +1069,13 @@ void java_util_Collections_SynchronizedMap_putAll___java_util_Map(JAVA_OBJECT me
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 782)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.mutex_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w15497aaac15b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("Collections.java", 783)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.m_;
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_putAll___java_util_Map])(_r1.o, _r3.o);
@@ -1089,11 +1117,13 @@ JAVA_OBJECT java_util_Collections_SynchronizedMap_remove___java_lang_Object(JAVA
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 788)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.mutex_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w15497aaac16b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("Collections.java", 789)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.m_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_remove___java_lang_Object])(_r1.o, _r3.o);
@@ -1132,11 +1162,13 @@ JAVA_INT java_util_Collections_SynchronizedMap_size__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 794)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.mutex_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w15497aaac17b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("Collections.java", 795)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.m_;
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_size__])(_r1.o);
@@ -1177,15 +1209,18 @@ JAVA_OBJECT java_util_Collections_SynchronizedMap_values__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 800)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Collections_SynchronizedMap*) _r4.o)->fields.java_util_Collections_SynchronizedMap.mutex_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w15497aaac18b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("Collections.java", 801)
     _r1.o = __NEW_java_util_Collections_SynchronizedCollection();
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Collections_SynchronizedMap*) _r4.o)->fields.java_util_Collections_SynchronizedMap.m_;
     XMLVM_CHECK_NPE(2)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_values__])(_r2.o);
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_util_Collections_SynchronizedMap*) _r4.o)->fields.java_util_Collections_SynchronizedMap.mutex_;
     XMLVM_CHECK_NPE(1)
     java_util_Collections_SynchronizedCollection___INIT____java_util_Collection_java_lang_Object(_r1.o, _r2.o, _r3.o);
@@ -1224,11 +1259,13 @@ JAVA_OBJECT java_util_Collections_SynchronizedMap_toString__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 807)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.mutex_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w15497aaac19b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("Collections.java", 808)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.m_;
     //java_lang_Object_toString__[5]
     XMLVM_CHECK_NPE(1)
@@ -1270,6 +1307,7 @@ void java_util_Collections_SynchronizedMap_writeObject___java_io_ObjectOutputStr
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 813)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_SynchronizedMap*) _r2.o)->fields.java_util_Collections_SynchronizedMap.mutex_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w15497aaac20b1b6)

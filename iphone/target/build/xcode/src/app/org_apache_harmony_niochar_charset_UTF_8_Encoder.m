@@ -238,6 +238,7 @@ void org_apache_harmony_niochar_charset_UTF_8_Encoder___INIT____org_apache_harmo
     _r3.o = n1;
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("UTF_8.java", 217)
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_niochar_charset_UTF_8_Encoder*) _r2.o)->fields.org_apache_harmony_niochar_charset_UTF_8_Encoder.this_0_ = _r3.o;
     XMLVM_SOURCE_POSITION("UTF_8.java", 216)
     _r0.f = 1.1;

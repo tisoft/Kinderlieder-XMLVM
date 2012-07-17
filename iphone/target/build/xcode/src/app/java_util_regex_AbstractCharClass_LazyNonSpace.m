@@ -222,6 +222,7 @@ JAVA_OBJECT java_util_regex_AbstractCharClass_LazyNonSpace_computeValue__(JAVA_O
     XMLVM_CHECK_NPE(0)
     _r0.o = java_util_regex_AbstractCharClass_setNegative___boolean(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 246)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractCharClass*) _r0.o)->fields.java_util_regex_AbstractCharClass.mayContainSupplCodepoints_ = _r1.i;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 247)
     XMLVM_EXIT_METHOD()

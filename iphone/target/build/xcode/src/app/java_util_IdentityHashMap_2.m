@@ -309,6 +309,7 @@ void java_util_IdentityHashMap_2___INIT____java_util_IdentityHashMap(JAVA_OBJECT
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_IdentityHashMap_2*) _r0.o)->fields.java_util_IdentityHashMap_2.this_0_ = _r1.o;
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 663)
     XMLVM_CHECK_NPE(0)
@@ -328,6 +329,7 @@ JAVA_BOOLEAN java_util_IdentityHashMap_2_contains___java_lang_Object(JAVA_OBJECT
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 666)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_IdentityHashMap_2*) _r1.o)->fields.java_util_IdentityHashMap_2.this_0_;
     //java_util_IdentityHashMap_containsValue___java_lang_Object[8]
     XMLVM_CHECK_NPE(0)
@@ -345,6 +347,7 @@ JAVA_INT java_util_IdentityHashMap_2_size__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 671)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_IdentityHashMap_2*) _r1.o)->fields.java_util_IdentityHashMap_2.this_0_;
     //java_util_IdentityHashMap_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -362,6 +365,7 @@ void java_util_IdentityHashMap_2_clear__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 676)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_IdentityHashMap_2*) _r1.o)->fields.java_util_IdentityHashMap_2.this_0_;
     //java_util_IdentityHashMap_clear__[6]
     XMLVM_CHECK_NPE(0)
@@ -388,6 +392,7 @@ JAVA_OBJECT java_util_IdentityHashMap_2_iterator__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     java_util_IdentityHashMap_2_1___INIT____java_util_IdentityHashMap_2(_r1.o, _r3.o);
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 686)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_IdentityHashMap_2*) _r3.o)->fields.java_util_IdentityHashMap_2.this_0_;
     XMLVM_CHECK_NPE(0)
     java_util_IdentityHashMap_IdentityHashMapIterator___INIT____java_util_MapEntry_Type_java_util_IdentityHashMap(_r0.o, _r1.o, _r2.o);

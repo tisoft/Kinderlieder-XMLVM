@@ -291,6 +291,7 @@ void java_util_regex_QuantifierSet___INIT____java_util_regex_AbstractSet_java_ut
     XMLVM_CHECK_NPE(0)
     java_util_regex_AbstractSet___INIT____java_util_regex_AbstractSet(_r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 34)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_QuantifierSet*) _r0.o)->fields.java_util_regex_QuantifierSet.innerSet_ = _r1.o;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 35)
     XMLVM_CHECK_NPE(0)
@@ -309,6 +310,7 @@ JAVA_OBJECT java_util_regex_QuantifierSet_getInnerSet__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 42)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_QuantifierSet*) _r1.o)->fields.java_util_regex_QuantifierSet.innerSet_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -324,6 +326,7 @@ void java_util_regex_QuantifierSet_setInnerSet___java_util_regex_AbstractSet(JAV
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 51)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_QuantifierSet*) _r0.o)->fields.java_util_regex_QuantifierSet.innerSet_ = _r1.o;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 52)
     XMLVM_EXIT_METHOD()
@@ -341,11 +344,13 @@ JAVA_BOOLEAN java_util_regex_QuantifierSet_first___java_util_regex_AbstractSet(J
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 55)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_QuantifierSet*) _r1.o)->fields.java_util_regex_QuantifierSet.innerSet_;
     //java_util_regex_AbstractSet_first___java_util_regex_AbstractSet[8]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_regex_AbstractSet*) _r0.o)->tib->vtable[8])(_r0.o, _r2.o);
     if (_r0.i != 0) goto label18;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_AbstractSet*) _r1.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_first___java_util_regex_AbstractSet[8]
     XMLVM_CHECK_NPE(0)
@@ -388,15 +393,20 @@ void java_util_regex_QuantifierSet_processSecondPass__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 67)
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.isSecondPassVisited_ = _r2.i;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 69)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
     if (_r0.o == JAVA_NULL) goto label32;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 71)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_regex_AbstractSet*) _r0.o)->fields.java_util_regex_AbstractSet.isSecondPassVisited_;
     if (_r0.i != 0) goto label32;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 76)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_processBackRefReplacement__[14]
     XMLVM_CHECK_NPE(0)
@@ -404,25 +414,33 @@ void java_util_regex_QuantifierSet_processSecondPass__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 78)
     if (_r0.o == JAVA_NULL) goto label27;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 79)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_AbstractSet*) _r1.o)->fields.java_util_regex_AbstractSet.isSecondPassVisited_ = _r2.i;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 80)
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_ = _r0.o;
     label27:;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 86)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_processSecondPass__[15]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) ((java_util_regex_AbstractSet*) _r0.o)->tib->vtable[15])(_r0.o);
     label32:;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 90)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_QuantifierSet*) _r3.o)->fields.java_util_regex_QuantifierSet.innerSet_;
     if (_r0.o == JAVA_NULL) goto label61;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 92)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_QuantifierSet*) _r3.o)->fields.java_util_regex_QuantifierSet.innerSet_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_regex_AbstractSet*) _r0.o)->fields.java_util_regex_AbstractSet.isSecondPassVisited_;
     if (_r0.i != 0) goto label62;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 97)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_QuantifierSet*) _r3.o)->fields.java_util_regex_QuantifierSet.innerSet_;
     //java_util_regex_AbstractSet_processBackRefReplacement__[14]
     XMLVM_CHECK_NPE(0)
@@ -430,12 +448,16 @@ void java_util_regex_QuantifierSet_processSecondPass__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 99)
     if (_r0.o == JAVA_NULL) goto label56;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 100)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_QuantifierSet*) _r3.o)->fields.java_util_regex_QuantifierSet.innerSet_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_AbstractSet*) _r1.o)->fields.java_util_regex_AbstractSet.isSecondPassVisited_ = _r2.i;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 101)
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_QuantifierSet*) _r3.o)->fields.java_util_regex_QuantifierSet.innerSet_ = _r0.o;
     label56:;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 107)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_QuantifierSet*) _r3.o)->fields.java_util_regex_QuantifierSet.innerSet_;
     //java_util_regex_AbstractSet_processSecondPass__[15]
     XMLVM_CHECK_NPE(0)
@@ -446,21 +468,28 @@ void java_util_regex_QuantifierSet_processSecondPass__(JAVA_OBJECT me)
     return;
     label62:;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 120)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_QuantifierSet*) _r3.o)->fields.java_util_regex_QuantifierSet.innerSet_;
     if (!__TIB_java_util_regex_SingleSet.classInitialized) __INIT_java_util_regex_SingleSet();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_java_util_regex_SingleSet);
     if (_r0.i == 0) goto label61;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 121)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_QuantifierSet*) _r3.o)->fields.java_util_regex_QuantifierSet.innerSet_;
     _r0.o = _r0.o;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_regex_JointSet*) _r0.o)->fields.java_util_regex_JointSet.fSet_;
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 122)
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_regex_FSet*) _r0.o)->fields.java_util_regex_FSet.isBackReferenced_;
     if (_r0.i == 0) goto label61;
     XMLVM_SOURCE_POSITION("QuantifierSet.java", 123)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_QuantifierSet*) _r3.o)->fields.java_util_regex_QuantifierSet.innerSet_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_regex_AbstractSet*) _r0.o)->fields.java_util_regex_AbstractSet.next_;
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_QuantifierSet*) _r3.o)->fields.java_util_regex_QuantifierSet.innerSet_ = _r0.o;
     goto label61;
     //XMLVM_END_WRAPPER

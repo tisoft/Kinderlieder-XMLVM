@@ -212,6 +212,7 @@ void java_util_regex_AbstractCharClass_LazyJavaUpperCase_1___INIT____java_util_r
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractCharClass_LazyJavaUpperCase_1*) _r0.o)->fields.java_util_regex_AbstractCharClass_LazyJavaUpperCase_1.this_1_ = _r1.o;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 430)
     XMLVM_CHECK_NPE(0)

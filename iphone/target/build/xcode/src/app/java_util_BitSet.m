@@ -918,11 +918,14 @@ void java_util_BitSet___INIT___(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("BitSet.java", 77)
     if (!__TIB_long.classInitialized) __INIT_long();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_long, _r1.i);
+    XMLVM_CHECK_NPE(2)
     ((java_util_BitSet*) _r2.o)->fields.java_util_BitSet.bits_ = _r0.o;
     XMLVM_SOURCE_POSITION("BitSet.java", 78)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((java_util_BitSet*) _r2.o)->fields.java_util_BitSet.actualArrayLength_ = _r0.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 79)
+    XMLVM_CHECK_NPE(2)
     ((java_util_BitSet*) _r2.o)->fields.java_util_BitSet.isLengthActual_ = _r1.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 80)
     XMLVM_EXIT_METHOD()
@@ -964,10 +967,13 @@ void java_util_BitSet___INIT____int(JAVA_OBJECT me, JAVA_INT n1)
     _r0.i = _r0.i + _r1.i;
     if (!__TIB_long.classInitialized) __INIT_long();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_long, _r0.i);
+    XMLVM_CHECK_NPE(4)
     ((java_util_BitSet*) _r4.o)->fields.java_util_BitSet.bits_ = _r0.o;
     XMLVM_SOURCE_POSITION("BitSet.java", 104)
+    XMLVM_CHECK_NPE(4)
     ((java_util_BitSet*) _r4.o)->fields.java_util_BitSet.actualArrayLength_ = _r2.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 105)
+    XMLVM_CHECK_NPE(4)
     ((java_util_BitSet*) _r4.o)->fields.java_util_BitSet.isLengthActual_ = _r3.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 106)
     XMLVM_EXIT_METHOD()
@@ -996,12 +1002,16 @@ void java_util_BitSet___INIT____long_1ARRAY_boolean_int_boolean(JAVA_OBJECT me, 
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("BitSet.java", 116)
+    XMLVM_CHECK_NPE(0)
     ((java_util_BitSet*) _r0.o)->fields.java_util_BitSet.bits_ = _r1.o;
     XMLVM_SOURCE_POSITION("BitSet.java", 117)
+    XMLVM_CHECK_NPE(0)
     ((java_util_BitSet*) _r0.o)->fields.java_util_BitSet.needClear_ = _r2.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 118)
+    XMLVM_CHECK_NPE(0)
     ((java_util_BitSet*) _r0.o)->fields.java_util_BitSet.actualArrayLength_ = _r3.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 119)
+    XMLVM_CHECK_NPE(0)
     ((java_util_BitSet*) _r0.o)->fields.java_util_BitSet.isLengthActual_ = _r4.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 120)
     XMLVM_EXIT_METHOD()
@@ -1024,11 +1034,13 @@ JAVA_OBJECT java_util_BitSet_clone__(JAVA_OBJECT me)
     _r0.o = java_lang_Object_clone__(_r2.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("BitSet.java", 131)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_BitSet*) _r2.o)->fields.java_util_BitSet.bits_;
     //long_1ARRAY_clone__[0]
     XMLVM_CHECK_NPE(1)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((org_xmlvm_runtime_XMLVMArray*) _r1.o)->tib->vtable[0])(_r1.o);
     _r2.o = _r2.o;
+    XMLVM_CHECK_NPE(0)
     ((java_util_BitSet*) _r0.o)->fields.java_util_BitSet.bits_ = _r2.o;
     // End try
     XMLVM_TRY_END
@@ -1089,17 +1101,22 @@ JAVA_BOOLEAN java_util_BitSet_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJ
     _r0 = _r14;
     _r0.o = _r0.o;
     _r1 = _r0;
+    XMLVM_CHECK_NPE(1)
     _r2.o = ((java_util_BitSet*) _r1.o)->fields.java_util_BitSet.bits_;
     XMLVM_SOURCE_POSITION("BitSet.java", 156)
+    XMLVM_CHECK_NPE(13)
     _r3.i = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.actualArrayLength_;
     _r0 = _r14;
     _r0.o = _r0.o;
     _r1 = _r0;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_BitSet*) _r1.o)->fields.java_util_BitSet.actualArrayLength_;
     XMLVM_SOURCE_POSITION("BitSet.java", 157)
+    XMLVM_CHECK_NPE(13)
     _r4.i = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.isLengthActual_;
     if (_r4.i == 0) goto label40;
     _r14.o = _r14.o;
+    XMLVM_CHECK_NPE(14)
     _r4.i = ((java_util_BitSet*) _r14.o)->fields.java_util_BitSet.isLengthActual_;
     if (_r4.i == 0) goto label40;
     XMLVM_SOURCE_POSITION("BitSet.java", 158)
@@ -1123,6 +1140,7 @@ JAVA_BOOLEAN java_util_BitSet_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJ
     goto label7;
     label49:;
     XMLVM_SOURCE_POSITION("BitSet.java", 165)
+    XMLVM_CHECK_NPE(13)
     _r5.o = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r4.i);
@@ -1160,6 +1178,7 @@ JAVA_BOOLEAN java_util_BitSet_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJ
     XMLVM_SOURCE_POSITION("BitSet.java", 180)
     if (_r1.i >= _r3.i) goto label47;
     XMLVM_SOURCE_POSITION("BitSet.java", 181)
+    XMLVM_CHECK_NPE(13)
     _r2.o = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -1171,6 +1190,7 @@ JAVA_BOOLEAN java_util_BitSet_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJ
     goto label7;
     label90:;
     XMLVM_SOURCE_POSITION("BitSet.java", 176)
+    XMLVM_CHECK_NPE(13)
     _r5.o = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r4.i);
@@ -1209,6 +1229,7 @@ void java_util_BitSet_growLength___int(JAVA_OBJECT me, JAVA_INT n1)
     _r5.i = n1;
     _r3.i = 0;
     XMLVM_SOURCE_POSITION("BitSet.java", 199)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_BitSet*) _r4.o)->fields.java_util_BitSet.bits_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r0.i = _r0.i * 2;
@@ -1216,10 +1237,13 @@ void java_util_BitSet_growLength___int(JAVA_OBJECT me, JAVA_INT n1)
     if (!__TIB_long.classInitialized) __INIT_long();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_long, _r0.i);
     XMLVM_SOURCE_POSITION("BitSet.java", 200)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_BitSet*) _r4.o)->fields.java_util_BitSet.bits_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_BitSet*) _r4.o)->fields.java_util_BitSet.actualArrayLength_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r3.i, _r0.o, _r3.i, _r2.i);
     XMLVM_SOURCE_POSITION("BitSet.java", 201)
+    XMLVM_CHECK_NPE(4)
     ((java_util_BitSet*) _r4.o)->fields.java_util_BitSet.bits_ = _r0.o;
     XMLVM_SOURCE_POSITION("BitSet.java", 202)
     XMLVM_EXIT_METHOD()
@@ -1248,6 +1272,7 @@ JAVA_INT java_util_BitSet_hashCode__(JAVA_OBJECT me)
     _r0.l = 1234;
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("BitSet.java", 216)
+    XMLVM_CHECK_NPE(11)
     _r3.i = ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.actualArrayLength_;
     _r8 = _r2;
     _r9 = _r0;
@@ -1264,6 +1289,7 @@ JAVA_INT java_util_BitSet_hashCode__(JAVA_OBJECT me)
     return _r0.i;
     label19:;
     XMLVM_SOURCE_POSITION("BitSet.java", 217)
+    XMLVM_CHECK_NPE(11)
     _r4.o = ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r0.i);
@@ -1305,9 +1331,11 @@ JAVA_BOOLEAN java_util_BitSet_get___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("BitSet.java", 246)
     _r0.i = _r6.i >> 6;
     XMLVM_SOURCE_POSITION("BitSet.java", 247)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_BitSet*) _r5.o)->fields.java_util_BitSet.actualArrayLength_;
     if (_r0.i >= _r1.i) goto label42;
     XMLVM_SOURCE_POSITION("BitSet.java", 248)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_BitSet*) _r5.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -1371,6 +1399,7 @@ JAVA_OBJECT java_util_BitSet_get___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT
     XMLVM_THROW_CUSTOM(_r0.o)
     label18:;
     XMLVM_SOURCE_POSITION("BitSet.java", 273)
+    XMLVM_CHECK_NPE(11)
     _r0.i = ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.actualArrayLength_;
     _r0.i = _r0.i << 6;
     if (_r12.i >= _r0.i) goto label26;
@@ -1406,6 +1435,7 @@ JAVA_OBJECT java_util_BitSet_get___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT
     if (_r1.i != _r2.i) goto label98;
     XMLVM_SOURCE_POSITION("BitSet.java", 286)
     XMLVM_SOURCE_POSITION("BitSet.java", 287)
+    XMLVM_CHECK_NPE(11)
     _r0.o = ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -1434,6 +1464,7 @@ JAVA_OBJECT java_util_BitSet_get___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_LONG*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r0.l;
+    XMLVM_CHECK_NPE(11)
     _r0.i = ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.needClear_;
     _r1.i = 1;
     _r4.i = 1;
@@ -1449,6 +1480,7 @@ JAVA_OBJECT java_util_BitSet_get___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_long, _r0.i);
     XMLVM_SOURCE_POSITION("BitSet.java", 295)
     _r7.i = 0;
+    XMLVM_CHECK_NPE(11)
     _r8.o = ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(8)
     XMLVM_CHECK_ARRAY_BOUNDS(_r8.o, _r1.i);
@@ -1461,6 +1493,7 @@ JAVA_OBJECT java_util_BitSet_get___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT
     _r3.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r4.i = 1;
     _r3.i = _r3.i - _r4.i;
+    XMLVM_CHECK_NPE(11)
     _r4.o = ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r2.i);
@@ -1491,6 +1524,7 @@ JAVA_OBJECT java_util_BitSet_get___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT
     _r1 = _r3;
     label141:;
     _r2.o = __NEW_java_util_BitSet();
+    XMLVM_CHECK_NPE(11)
     _r3.i = ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.needClear_;
     XMLVM_SOURCE_POSITION("BitSet.java", 324)
     _r4.i = 1;
@@ -1509,6 +1543,7 @@ JAVA_OBJECT java_util_BitSet_get___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT
     goto label32;
     label163:;
     XMLVM_SOURCE_POSITION("BitSet.java", 300)
+    XMLVM_CHECK_NPE(11)
     _r4.o = ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.bits_;
     _r5.i = _r1.i + _r3.i;
     XMLVM_CHECK_NPE(4)
@@ -1605,6 +1640,7 @@ void java_util_BitSet_set___int(JAVA_OBJECT me, JAVA_INT n1)
     _r0.i = _r9.i >> 6;
     _r0.i = _r0.i + 1;
     XMLVM_SOURCE_POSITION("BitSet.java", 345)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.bits_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i <= _r1.i) goto label27;
@@ -1613,6 +1649,7 @@ void java_util_BitSet_set___int(JAVA_OBJECT me, JAVA_INT n1)
     java_util_BitSet_growLength___int(_r8.o, _r0.i);
     label27:;
     XMLVM_SOURCE_POSITION("BitSet.java", 348)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.bits_;
     _r2.i = _r0.i - _r7.i;
     XMLVM_CHECK_NPE(1)
@@ -1628,11 +1665,14 @@ void java_util_BitSet_set___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     ((JAVA_ARRAY_LONG*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i] = _r3.l;
     XMLVM_SOURCE_POSITION("BitSet.java", 349)
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.actualArrayLength_;
     if (_r0.i <= _r1.i) goto label50;
     XMLVM_SOURCE_POSITION("BitSet.java", 350)
+    XMLVM_CHECK_NPE(8)
     ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.actualArrayLength_ = _r0.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 351)
+    XMLVM_CHECK_NPE(8)
     ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.isLengthActual_ = _r7.i;
     label50:;
     XMLVM_SOURCE_POSITION("BitSet.java", 353)
@@ -1721,6 +1761,7 @@ void java_util_BitSet_set___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     _r0.i = _r0.i >> 6;
     _r0.i = _r0.i + 1;
     XMLVM_SOURCE_POSITION("BitSet.java", 398)
+    XMLVM_CHECK_NPE(12)
     _r1.o = ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.bits_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i <= _r1.i) goto label38;
@@ -1741,6 +1782,7 @@ void java_util_BitSet_set___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     if (_r0.i != _r1.i) goto label81;
     XMLVM_SOURCE_POSITION("BitSet.java", 407)
     XMLVM_SOURCE_POSITION("BitSet.java", 408)
+    XMLVM_CHECK_NPE(12)
     _r6.o = ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(6)
     XMLVM_CHECK_ARRAY_BOUNDS(_r6.o, _r0.i);
@@ -1753,12 +1795,15 @@ void java_util_BitSet_set___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     label65:;
     XMLVM_SOURCE_POSITION("BitSet.java", 416)
     _r0.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(12)
     _r2.i = ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.actualArrayLength_;
     if (_r0.i <= _r2.i) goto label77;
     XMLVM_SOURCE_POSITION("BitSet.java", 417)
     _r0.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(12)
     ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.actualArrayLength_ = _r0.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 418)
+    XMLVM_CHECK_NPE(12)
     ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.isLengthActual_ = _r9.i;
     label77:;
     XMLVM_SOURCE_POSITION("BitSet.java", 420)
@@ -1767,6 +1812,7 @@ void java_util_BitSet_set___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     goto label23;
     label81:;
     XMLVM_SOURCE_POSITION("BitSet.java", 410)
+    XMLVM_CHECK_NPE(12)
     _r6.o = ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(6)
     XMLVM_CHECK_ARRAY_BOUNDS(_r6.o, _r0.i);
@@ -1776,6 +1822,7 @@ void java_util_BitSet_set___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r6.o, _r0.i);
     ((JAVA_ARRAY_LONG*) (((org_xmlvm_runtime_XMLVMArray*) _r6.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i] = _r2.l;
     XMLVM_SOURCE_POSITION("BitSet.java", 411)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -1789,6 +1836,7 @@ void java_util_BitSet_set___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     label98:;
     if (_r0.i >= _r1.i) goto label65;
     XMLVM_SOURCE_POSITION("BitSet.java", 413)
+    XMLVM_CHECK_NPE(12)
     _r2.o = ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
@@ -1811,6 +1859,7 @@ void java_util_BitSet_needClear__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("BitSet.java", 424)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((java_util_BitSet*) _r1.o)->fields.java_util_BitSet.needClear_ = _r0.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 425)
     XMLVM_EXIT_METHOD()
@@ -1860,20 +1909,25 @@ void java_util_BitSet_clear__(JAVA_OBJECT me)
     _r5.o = me;
     _r4.i = 0;
     XMLVM_SOURCE_POSITION("BitSet.java", 457)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_BitSet*) _r5.o)->fields.java_util_BitSet.needClear_;
     if (_r0.i == 0) goto label18;
     _r0 = _r4;
     label6:;
     XMLVM_SOURCE_POSITION("BitSet.java", 458)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_BitSet*) _r5.o)->fields.java_util_BitSet.bits_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i < _r1.i) goto label19;
     XMLVM_SOURCE_POSITION("BitSet.java", 461)
+    XMLVM_CHECK_NPE(5)
     ((java_util_BitSet*) _r5.o)->fields.java_util_BitSet.actualArrayLength_ = _r4.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 462)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(5)
     ((java_util_BitSet*) _r5.o)->fields.java_util_BitSet.isLengthActual_ = _r0.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 463)
+    XMLVM_CHECK_NPE(5)
     ((java_util_BitSet*) _r5.o)->fields.java_util_BitSet.needClear_ = _r4.i;
     label18:;
     XMLVM_SOURCE_POSITION("BitSet.java", 465)
@@ -1881,6 +1935,7 @@ void java_util_BitSet_clear__(JAVA_OBJECT me)
     return;
     label19:;
     XMLVM_SOURCE_POSITION("BitSet.java", 459)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_BitSet*) _r5.o)->fields.java_util_BitSet.bits_;
     _r2.l = 0;
     XMLVM_CHECK_NPE(1)
@@ -1919,6 +1974,7 @@ void java_util_BitSet_clear___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("BitSet.java", 483)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.needClear_;
     if (_r0.i != 0) goto label19;
     label18:;
@@ -1929,9 +1985,11 @@ void java_util_BitSet_clear___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("BitSet.java", 486)
     _r0.i = _r9.i >> 6;
     XMLVM_SOURCE_POSITION("BitSet.java", 487)
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.actualArrayLength_;
     if (_r0.i >= _r1.i) goto label18;
     XMLVM_SOURCE_POSITION("BitSet.java", 488)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -1948,7 +2006,9 @@ void java_util_BitSet_clear___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     ((JAVA_ARRAY_LONG*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i] = _r2.l;
     XMLVM_SOURCE_POSITION("BitSet.java", 489)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.bits_;
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.actualArrayLength_;
     _r2.i = 1;
     _r1.i = _r1.i - _r2.i;
@@ -1960,6 +2020,7 @@ void java_util_BitSet_clear___int(JAVA_OBJECT me, JAVA_INT n1)
     if (_r0.i != 0) goto label18;
     XMLVM_SOURCE_POSITION("BitSet.java", 490)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(8)
     ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.isLengthActual_ = _r0.i;
     goto label18;
     //XMLVM_END_WRAPPER
@@ -2001,6 +2062,7 @@ void java_util_BitSet_clear___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     XMLVM_THROW_CUSTOM(_r0.o)
     label18:;
     XMLVM_SOURCE_POSITION("BitSet.java", 513)
+    XMLVM_CHECK_NPE(11)
     _r0.i = ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.needClear_;
     if (_r0.i != 0) goto label23;
     label22:;
@@ -2009,6 +2071,7 @@ void java_util_BitSet_clear___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     return;
     label23:;
     XMLVM_SOURCE_POSITION("BitSet.java", 516)
+    XMLVM_CHECK_NPE(11)
     _r0.i = ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.actualArrayLength_;
     _r0.i = _r0.i << 6;
     if (_r12.i >= _r0.i) goto label22;
@@ -2033,6 +2096,7 @@ void java_util_BitSet_clear___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     if (_r1.i != _r2.i) goto label90;
     XMLVM_SOURCE_POSITION("BitSet.java", 529)
     XMLVM_SOURCE_POSITION("BitSet.java", 530)
+    XMLVM_CHECK_NPE(11)
     _r0.o = ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -2046,9 +2110,12 @@ void java_util_BitSet_clear___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     ((JAVA_ARRAY_LONG*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.l;
     label68:;
     XMLVM_SOURCE_POSITION("BitSet.java", 538)
+    XMLVM_CHECK_NPE(11)
     _r0.i = ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.actualArrayLength_;
     if (_r0.i <= 0) goto label22;
+    XMLVM_CHECK_NPE(11)
     _r0.o = ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.bits_;
+    XMLVM_CHECK_NPE(11)
     _r1.i = ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.actualArrayLength_;
     _r2.i = 1;
     _r1.i = _r1.i - _r2.i;
@@ -2060,10 +2127,12 @@ void java_util_BitSet_clear___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     if (_r0.i != 0) goto label22;
     XMLVM_SOURCE_POSITION("BitSet.java", 539)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(11)
     ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.isLengthActual_ = _r0.i;
     goto label22;
     label90:;
     XMLVM_SOURCE_POSITION("BitSet.java", 532)
+    XMLVM_CHECK_NPE(11)
     _r0.o = ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -2075,6 +2144,7 @@ void java_util_BitSet_clear___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_LONG*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r3.l;
     XMLVM_SOURCE_POSITION("BitSet.java", 533)
+    XMLVM_CHECK_NPE(11)
     _r0.o = ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -2090,6 +2160,7 @@ void java_util_BitSet_clear___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     label112:;
     if (_r0.i >= _r2.i) goto label68;
     XMLVM_SOURCE_POSITION("BitSet.java", 535)
+    XMLVM_CHECK_NPE(11)
     _r1.o = ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.bits_;
     _r3.l = 0;
     XMLVM_CHECK_NPE(1)
@@ -2135,6 +2206,7 @@ void java_util_BitSet_flip___int(JAVA_OBJECT me, JAVA_INT n1)
     _r0.i = _r9.i >> 6;
     _r0.i = _r0.i + 1;
     XMLVM_SOURCE_POSITION("BitSet.java", 559)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.bits_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i <= _r1.i) goto label27;
@@ -2143,6 +2215,7 @@ void java_util_BitSet_flip___int(JAVA_OBJECT me, JAVA_INT n1)
     java_util_BitSet_growLength___int(_r8.o, _r0.i);
     label27:;
     XMLVM_SOURCE_POSITION("BitSet.java", 562)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.bits_;
     _r2.i = _r0.i - _r7.i;
     XMLVM_CHECK_NPE(1)
@@ -2158,15 +2231,20 @@ void java_util_BitSet_flip___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     ((JAVA_ARRAY_LONG*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i] = _r3.l;
     XMLVM_SOURCE_POSITION("BitSet.java", 563)
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.actualArrayLength_;
     if (_r0.i <= _r1.i) goto label48;
     XMLVM_SOURCE_POSITION("BitSet.java", 564)
+    XMLVM_CHECK_NPE(8)
     ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.actualArrayLength_ = _r0.i;
     label48:;
     XMLVM_SOURCE_POSITION("BitSet.java", 566)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.actualArrayLength_;
     if (_r0.i <= 0) goto label72;
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.bits_;
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.actualArrayLength_;
     _r1.i = _r1.i - _r7.i;
     XMLVM_CHECK_NPE(0)
@@ -2177,6 +2255,7 @@ void java_util_BitSet_flip___int(JAVA_OBJECT me, JAVA_INT n1)
     if (_r0.i != 0) goto label72;
     _r0.i = 0;
     label66:;
+    XMLVM_CHECK_NPE(8)
     ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.isLengthActual_ = _r0.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 567)
     XMLVM_CHECK_NPE(8)
@@ -2241,6 +2320,7 @@ void java_util_BitSet_flip___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     _r0.i = _r0.i >> 6;
     _r0.i = _r0.i + 1;
     XMLVM_SOURCE_POSITION("BitSet.java", 592)
+    XMLVM_CHECK_NPE(13)
     _r1.o = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.bits_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i <= _r1.i) goto label38;
@@ -2261,6 +2341,7 @@ void java_util_BitSet_flip___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     if (_r1.i != _r2.i) goto label95;
     XMLVM_SOURCE_POSITION("BitSet.java", 601)
     XMLVM_SOURCE_POSITION("BitSet.java", 602)
+    XMLVM_CHECK_NPE(13)
     _r2.o = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -2272,15 +2353,20 @@ void java_util_BitSet_flip___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     ((JAVA_ARRAY_LONG*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r3.l;
     label65:;
     XMLVM_SOURCE_POSITION("BitSet.java", 610)
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.actualArrayLength_;
     if (_r0.i <= _r1.i) goto label71;
     XMLVM_SOURCE_POSITION("BitSet.java", 611)
+    XMLVM_CHECK_NPE(13)
     ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.actualArrayLength_ = _r0.i;
     label71:;
     XMLVM_SOURCE_POSITION("BitSet.java", 613)
+    XMLVM_CHECK_NPE(13)
     _r0.i = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.actualArrayLength_;
     if (_r0.i <= 0) goto label124;
+    XMLVM_CHECK_NPE(13)
     _r0.o = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.bits_;
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.actualArrayLength_;
     _r1.i = _r1.i - _r10.i;
     XMLVM_CHECK_NPE(0)
@@ -2291,6 +2377,7 @@ void java_util_BitSet_flip___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     if (_r0.i != 0) goto label124;
     _r0.i = 0;
     label89:;
+    XMLVM_CHECK_NPE(13)
     ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.isLengthActual_ = _r0.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 614)
     XMLVM_CHECK_NPE(13)
@@ -2298,6 +2385,7 @@ void java_util_BitSet_flip___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     goto label23;
     label95:;
     XMLVM_SOURCE_POSITION("BitSet.java", 604)
+    XMLVM_CHECK_NPE(13)
     _r7.o = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(7)
     XMLVM_CHECK_ARRAY_BOUNDS(_r7.o, _r1.i);
@@ -2307,6 +2395,7 @@ void java_util_BitSet_flip___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r7.o, _r1.i);
     ((JAVA_ARRAY_LONG*) (((org_xmlvm_runtime_XMLVMArray*) _r7.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r3.l;
     XMLVM_SOURCE_POSITION("BitSet.java", 605)
+    XMLVM_CHECK_NPE(13)
     _r3.o = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r2.i);
@@ -2320,6 +2409,7 @@ void java_util_BitSet_flip___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     label112:;
     if (_r1.i >= _r2.i) goto label65;
     XMLVM_SOURCE_POSITION("BitSet.java", 607)
+    XMLVM_CHECK_NPE(13)
     _r3.o = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
@@ -2359,9 +2449,12 @@ JAVA_BOOLEAN java_util_BitSet_intersects___java_util_BitSet(JAVA_OBJECT me, JAVA
     _r8.i = 1;
     _r7.i = 0;
     XMLVM_SOURCE_POSITION("BitSet.java", 627)
+    XMLVM_CHECK_NPE(12)
     _r0.o = ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.bits_;
     XMLVM_SOURCE_POSITION("BitSet.java", 628)
+    XMLVM_CHECK_NPE(11)
     _r1.i = ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.actualArrayLength_;
+    XMLVM_CHECK_NPE(12)
     _r2.i = ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.actualArrayLength_;
     XMLVM_SOURCE_POSITION("BitSet.java", 630)
     if (_r1.i > _r2.i) goto label33;
@@ -2377,6 +2470,7 @@ JAVA_BOOLEAN java_util_BitSet_intersects___java_util_BitSet(JAVA_OBJECT me, JAVA
     return _r0.i;
     label17:;
     XMLVM_SOURCE_POSITION("BitSet.java", 632)
+    XMLVM_CHECK_NPE(11)
     _r3.o = ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r2.i);
@@ -2399,6 +2493,7 @@ JAVA_BOOLEAN java_util_BitSet_intersects___java_util_BitSet(JAVA_OBJECT me, JAVA
     XMLVM_SOURCE_POSITION("BitSet.java", 637)
     if (_r1.i >= _r2.i) goto label15;
     XMLVM_SOURCE_POSITION("BitSet.java", 638)
+    XMLVM_CHECK_NPE(11)
     _r3.o = ((java_util_BitSet*) _r11.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
@@ -2443,8 +2538,10 @@ void java_util_BitSet_and___java_util_BitSet(JAVA_OBJECT me, JAVA_OBJECT n1)
     _r10.i = 1;
     _r9.i = 0;
     XMLVM_SOURCE_POSITION("BitSet.java", 657)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_util_BitSet*) _r14.o)->fields.java_util_BitSet.bits_;
     XMLVM_SOURCE_POSITION("BitSet.java", 658)
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.needClear_;
     if (_r1.i != 0) goto label11;
     label10:;
@@ -2453,7 +2550,9 @@ void java_util_BitSet_and___java_util_BitSet(JAVA_OBJECT me, JAVA_OBJECT n1)
     return;
     label11:;
     XMLVM_SOURCE_POSITION("BitSet.java", 661)
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.actualArrayLength_;
+    XMLVM_CHECK_NPE(14)
     _r2.i = ((java_util_BitSet*) _r14.o)->fields.java_util_BitSet.actualArrayLength_;
     XMLVM_SOURCE_POSITION("BitSet.java", 662)
     if (_r1.i > _r2.i) goto label51;
@@ -2463,9 +2562,12 @@ void java_util_BitSet_and___java_util_BitSet(JAVA_OBJECT me, JAVA_OBJECT n1)
     if (_r2.i < _r1.i) goto label39;
     label20:;
     XMLVM_SOURCE_POSITION("BitSet.java", 675)
+    XMLVM_CHECK_NPE(13)
     _r0.i = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.actualArrayLength_;
     if (_r0.i <= 0) goto label79;
+    XMLVM_CHECK_NPE(13)
     _r0.o = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.bits_;
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.actualArrayLength_;
     _r1.i = _r1.i - _r10.i;
     XMLVM_CHECK_NPE(0)
@@ -2475,10 +2577,12 @@ void java_util_BitSet_and___java_util_BitSet(JAVA_OBJECT me, JAVA_OBJECT n1)
     if (_r0.i != 0) goto label79;
     _r0 = _r9;
     label36:;
+    XMLVM_CHECK_NPE(13)
     ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.isLengthActual_ = _r0.i;
     goto label10;
     label39:;
     XMLVM_SOURCE_POSITION("BitSet.java", 664)
+    XMLVM_CHECK_NPE(13)
     _r3.o = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r2.i);
@@ -2502,10 +2606,12 @@ void java_util_BitSet_and___java_util_BitSet(JAVA_OBJECT me, JAVA_OBJECT n1)
     XMLVM_SOURCE_POSITION("BitSet.java", 670)
     if (_r0.i < _r1.i) goto label72;
     XMLVM_SOURCE_POSITION("BitSet.java", 673)
+    XMLVM_CHECK_NPE(13)
     ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.actualArrayLength_ = _r2.i;
     goto label20;
     label60:;
     XMLVM_SOURCE_POSITION("BitSet.java", 668)
+    XMLVM_CHECK_NPE(13)
     _r4.o = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r3.i);
@@ -2521,6 +2627,7 @@ void java_util_BitSet_and___java_util_BitSet(JAVA_OBJECT me, JAVA_OBJECT n1)
     goto label52;
     label72:;
     XMLVM_SOURCE_POSITION("BitSet.java", 671)
+    XMLVM_CHECK_NPE(13)
     _r3.o = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r0.i);
@@ -2556,8 +2663,10 @@ void java_util_BitSet_andNot___java_util_BitSet(JAVA_OBJECT me, JAVA_OBJECT n1)
     _r11.i = 1;
     _r10.i = 0;
     XMLVM_SOURCE_POSITION("BitSet.java", 686)
+    XMLVM_CHECK_NPE(13)
     _r0.o = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.bits_;
     XMLVM_SOURCE_POSITION("BitSet.java", 687)
+    XMLVM_CHECK_NPE(12)
     _r1.i = ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.needClear_;
     if (_r1.i != 0) goto label9;
     label8:;
@@ -2566,9 +2675,12 @@ void java_util_BitSet_andNot___java_util_BitSet(JAVA_OBJECT me, JAVA_OBJECT n1)
     return;
     label9:;
     XMLVM_SOURCE_POSITION("BitSet.java", 690)
+    XMLVM_CHECK_NPE(12)
     _r1.i = ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.actualArrayLength_;
+    XMLVM_CHECK_NPE(13)
     _r2.i = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.actualArrayLength_;
     if (_r1.i >= _r2.i) goto label47;
+    XMLVM_CHECK_NPE(12)
     _r1.i = ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.actualArrayLength_;
     label17:;
     _r2 = _r10;
@@ -2576,15 +2688,20 @@ void java_util_BitSet_andNot___java_util_BitSet(JAVA_OBJECT me, JAVA_OBJECT n1)
     XMLVM_SOURCE_POSITION("BitSet.java", 692)
     if (_r2.i < _r1.i) goto label50;
     XMLVM_SOURCE_POSITION("BitSet.java", 696)
+    XMLVM_CHECK_NPE(12)
     _r0.i = ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.actualArrayLength_;
     if (_r0.i >= _r1.i) goto label26;
     XMLVM_SOURCE_POSITION("BitSet.java", 697)
+    XMLVM_CHECK_NPE(12)
     ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.actualArrayLength_ = _r1.i;
     label26:;
     XMLVM_SOURCE_POSITION("BitSet.java", 699)
+    XMLVM_CHECK_NPE(12)
     _r0.i = ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.actualArrayLength_;
     if (_r0.i <= 0) goto label65;
+    XMLVM_CHECK_NPE(12)
     _r0.o = ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.bits_;
+    XMLVM_CHECK_NPE(12)
     _r1.i = ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.actualArrayLength_;
     _r1.i = _r1.i - _r11.i;
     XMLVM_CHECK_NPE(0)
@@ -2595,14 +2712,17 @@ void java_util_BitSet_andNot___java_util_BitSet(JAVA_OBJECT me, JAVA_OBJECT n1)
     if (_r0.i != 0) goto label65;
     _r0 = _r10;
     label44:;
+    XMLVM_CHECK_NPE(12)
     ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.isLengthActual_ = _r0.i;
     goto label8;
     label47:;
     XMLVM_SOURCE_POSITION("BitSet.java", 691)
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.actualArrayLength_;
     goto label17;
     label50:;
     XMLVM_SOURCE_POSITION("BitSet.java", 693)
+    XMLVM_CHECK_NPE(12)
     _r3.o = ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r2.i);
@@ -2647,6 +2767,7 @@ void java_util_BitSet_or___java_util_BitSet(JAVA_OBJECT me, JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(10)
     _r0.i = java_util_BitSet_getActualArrayLength__(_r10.o);
     XMLVM_SOURCE_POSITION("BitSet.java", 713)
+    XMLVM_CHECK_NPE(9)
     _r1.o = ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.bits_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i <= _r1.i) goto label47;
@@ -2654,19 +2775,25 @@ void java_util_BitSet_or___java_util_BitSet(JAVA_OBJECT me, JAVA_OBJECT n1)
     if (!__TIB_long.classInitialized) __INIT_long();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_long, _r0.i);
     XMLVM_SOURCE_POSITION("BitSet.java", 715)
+    XMLVM_CHECK_NPE(10)
     _r2.o = ((java_util_BitSet*) _r10.o)->fields.java_util_BitSet.bits_;
+    XMLVM_CHECK_NPE(10)
     _r3.i = ((java_util_BitSet*) _r10.o)->fields.java_util_BitSet.actualArrayLength_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r2.o, _r4.i, _r1.o, _r4.i, _r3.i);
     _r2 = _r4;
     label21:;
     XMLVM_SOURCE_POSITION("BitSet.java", 716)
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.actualArrayLength_;
     if (_r2.i < _r3.i) goto label35;
     XMLVM_SOURCE_POSITION("BitSet.java", 719)
+    XMLVM_CHECK_NPE(9)
     ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.bits_ = _r1.o;
     XMLVM_SOURCE_POSITION("BitSet.java", 720)
+    XMLVM_CHECK_NPE(9)
     ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.actualArrayLength_ = _r0.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 721)
+    XMLVM_CHECK_NPE(9)
     ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.isLengthActual_ = _r8.i;
     label31:;
     XMLVM_SOURCE_POSITION("BitSet.java", 732)
@@ -2680,6 +2807,7 @@ void java_util_BitSet_or___java_util_BitSet(JAVA_OBJECT me, JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     _r3.l = ((JAVA_ARRAY_LONG*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
+    XMLVM_CHECK_NPE(9)
     _r5.o = ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r2.i);
@@ -2692,21 +2820,26 @@ void java_util_BitSet_or___java_util_BitSet(JAVA_OBJECT me, JAVA_OBJECT n1)
     goto label21;
     label47:;
     XMLVM_SOURCE_POSITION("BitSet.java", 723)
+    XMLVM_CHECK_NPE(10)
     _r1.o = ((java_util_BitSet*) _r10.o)->fields.java_util_BitSet.bits_;
     _r2 = _r4;
     label50:;
     XMLVM_SOURCE_POSITION("BitSet.java", 724)
     if (_r2.i < _r0.i) goto label61;
     XMLVM_SOURCE_POSITION("BitSet.java", 727)
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.actualArrayLength_;
     if (_r0.i <= _r1.i) goto label31;
     XMLVM_SOURCE_POSITION("BitSet.java", 728)
+    XMLVM_CHECK_NPE(9)
     ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.actualArrayLength_ = _r0.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 729)
+    XMLVM_CHECK_NPE(9)
     ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.isLengthActual_ = _r8.i;
     goto label31;
     label61:;
     XMLVM_SOURCE_POSITION("BitSet.java", 725)
+    XMLVM_CHECK_NPE(9)
     _r3.o = ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r2.i);
@@ -2746,6 +2879,7 @@ void java_util_BitSet_xor___java_util_BitSet(JAVA_OBJECT me, JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(10)
     _r0.i = java_util_BitSet_getActualArrayLength__(_r10.o);
     XMLVM_SOURCE_POSITION("BitSet.java", 746)
+    XMLVM_CHECK_NPE(9)
     _r1.o = ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.bits_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i <= _r1.i) goto label67;
@@ -2753,22 +2887,30 @@ void java_util_BitSet_xor___java_util_BitSet(JAVA_OBJECT me, JAVA_OBJECT n1)
     if (!__TIB_long.classInitialized) __INIT_long();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_long, _r0.i);
     XMLVM_SOURCE_POSITION("BitSet.java", 748)
+    XMLVM_CHECK_NPE(10)
     _r2.o = ((java_util_BitSet*) _r10.o)->fields.java_util_BitSet.bits_;
+    XMLVM_CHECK_NPE(10)
     _r3.i = ((java_util_BitSet*) _r10.o)->fields.java_util_BitSet.actualArrayLength_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r2.o, _r7.i, _r1.o, _r7.i, _r3.i);
     _r2 = _r7;
     label21:;
     XMLVM_SOURCE_POSITION("BitSet.java", 749)
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.actualArrayLength_;
     if (_r2.i < _r3.i) goto label53;
     XMLVM_SOURCE_POSITION("BitSet.java", 752)
+    XMLVM_CHECK_NPE(9)
     ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.bits_ = _r1.o;
     XMLVM_SOURCE_POSITION("BitSet.java", 753)
+    XMLVM_CHECK_NPE(9)
     ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.actualArrayLength_ = _r0.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 754)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.actualArrayLength_;
     if (_r0.i <= 0) goto label65;
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.bits_;
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.actualArrayLength_;
     _r1.i = _r1.i - _r8.i;
     XMLVM_CHECK_NPE(0)
@@ -2779,6 +2921,7 @@ void java_util_BitSet_xor___java_util_BitSet(JAVA_OBJECT me, JAVA_OBJECT n1)
     if (_r0.i != 0) goto label65;
     _r0 = _r7;
     label47:;
+    XMLVM_CHECK_NPE(9)
     ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.isLengthActual_ = _r0.i;
     label49:;
     XMLVM_SOURCE_POSITION("BitSet.java", 765)
@@ -2792,6 +2935,7 @@ void java_util_BitSet_xor___java_util_BitSet(JAVA_OBJECT me, JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     _r3.l = ((JAVA_ARRAY_LONG*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
+    XMLVM_CHECK_NPE(9)
     _r5.o = ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r2.i);
@@ -2807,21 +2951,26 @@ void java_util_BitSet_xor___java_util_BitSet(JAVA_OBJECT me, JAVA_OBJECT n1)
     goto label47;
     label67:;
     XMLVM_SOURCE_POSITION("BitSet.java", 756)
+    XMLVM_CHECK_NPE(10)
     _r1.o = ((java_util_BitSet*) _r10.o)->fields.java_util_BitSet.bits_;
     _r2 = _r7;
     label70:;
     XMLVM_SOURCE_POSITION("BitSet.java", 757)
     if (_r2.i < _r0.i) goto label81;
     XMLVM_SOURCE_POSITION("BitSet.java", 760)
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.actualArrayLength_;
     if (_r0.i <= _r1.i) goto label49;
     XMLVM_SOURCE_POSITION("BitSet.java", 761)
+    XMLVM_CHECK_NPE(9)
     ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.actualArrayLength_ = _r0.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 762)
+    XMLVM_CHECK_NPE(9)
     ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.isLengthActual_ = _r8.i;
     goto label49;
     label81:;
     XMLVM_SOURCE_POSITION("BitSet.java", 758)
+    XMLVM_CHECK_NPE(9)
     _r3.o = ((java_util_BitSet*) _r9.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r2.i);
@@ -2846,6 +2995,7 @@ JAVA_INT java_util_BitSet_size__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("BitSet.java", 775)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_BitSet*) _r1.o)->fields.java_util_BitSet.bits_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r0.i = _r0.i << 6;
@@ -2870,12 +3020,14 @@ JAVA_INT java_util_BitSet_length__(JAVA_OBJECT me)
     _r8.o = me;
     _r6.l = 0;
     XMLVM_SOURCE_POSITION("BitSet.java", 784)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.actualArrayLength_;
     _r1.i = 1;
     _r0.i = _r0.i - _r1.i;
     label6:;
     XMLVM_SOURCE_POSITION("BitSet.java", 785)
     if (_r0.i < 0) goto label16;
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -2885,6 +3037,7 @@ JAVA_INT java_util_BitSet_length__(JAVA_OBJECT me)
     label16:;
     XMLVM_SOURCE_POSITION("BitSet.java", 788)
     _r1.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(8)
     ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.actualArrayLength_ = _r1.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 789)
     _r1.i = -1;
@@ -2903,6 +3056,7 @@ JAVA_INT java_util_BitSet_length__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("BitSet.java", 792)
     _r1.i = 63;
     XMLVM_SOURCE_POSITION("BitSet.java", 793)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
@@ -2943,9 +3097,11 @@ JAVA_INT java_util_BitSet_getActualArrayLength__(JAVA_OBJECT me)
     _r6.o = me;
     _r5.i = 1;
     XMLVM_SOURCE_POSITION("BitSet.java", 801)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_BitSet*) _r6.o)->fields.java_util_BitSet.isLengthActual_;
     if (_r0.i == 0) goto label8;
     XMLVM_SOURCE_POSITION("BitSet.java", 802)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_BitSet*) _r6.o)->fields.java_util_BitSet.actualArrayLength_;
     label7:;
     XMLVM_SOURCE_POSITION("BitSet.java", 810)
@@ -2953,11 +3109,13 @@ JAVA_INT java_util_BitSet_getActualArrayLength__(JAVA_OBJECT me)
     return _r0.i;
     label8:;
     XMLVM_SOURCE_POSITION("BitSet.java", 804)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_BitSet*) _r6.o)->fields.java_util_BitSet.actualArrayLength_;
     _r0.i = _r0.i - _r5.i;
     label11:;
     XMLVM_SOURCE_POSITION("BitSet.java", 805)
     if (_r0.i < 0) goto label23;
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_util_BitSet*) _r6.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -2968,9 +3126,12 @@ JAVA_INT java_util_BitSet_getActualArrayLength__(JAVA_OBJECT me)
     label23:;
     XMLVM_SOURCE_POSITION("BitSet.java", 808)
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(6)
     ((java_util_BitSet*) _r6.o)->fields.java_util_BitSet.actualArrayLength_ = _r0.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 809)
+    XMLVM_CHECK_NPE(6)
     ((java_util_BitSet*) _r6.o)->fields.java_util_BitSet.isLengthActual_ = _r5.i;
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_BitSet*) _r6.o)->fields.java_util_BitSet.actualArrayLength_;
     goto label7;
     label32:;
@@ -3002,6 +3163,7 @@ JAVA_OBJECT java_util_BitSet_toString__(JAVA_OBJECT me)
     _r9.i = 0;
     XMLVM_SOURCE_POSITION("BitSet.java", 821)
     _r0.o = __NEW_java_lang_StringBuilder();
+    XMLVM_CHECK_NPE(12)
     _r1.o = ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.bits_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     _r1.i = _r1.i / 2;
@@ -3017,6 +3179,7 @@ JAVA_OBJECT java_util_BitSet_toString__(JAVA_OBJECT me)
     _r3 = _r9;
     label21:;
     XMLVM_SOURCE_POSITION("BitSet.java", 825)
+    XMLVM_CHECK_NPE(12)
     _r4.o = ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.bits_;
     _r4.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r4.o));
     if (_r1.i < _r4.i) goto label36;
@@ -3033,6 +3196,7 @@ JAVA_OBJECT java_util_BitSet_toString__(JAVA_OBJECT me)
     return _r0.o;
     label36:;
     XMLVM_SOURCE_POSITION("BitSet.java", 826)
+    XMLVM_CHECK_NPE(12)
     _r4.o = ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r1.i);
@@ -3058,6 +3222,7 @@ JAVA_OBJECT java_util_BitSet_toString__(JAVA_OBJECT me)
     goto label46;
     label59:;
     XMLVM_SOURCE_POSITION("BitSet.java", 831)
+    XMLVM_CHECK_NPE(12)
     _r5.o = ((java_util_BitSet*) _r12.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r1.i);
@@ -3123,6 +3288,7 @@ JAVA_INT java_util_BitSet_nextSetBit___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label19:;
     XMLVM_SOURCE_POSITION("BitSet.java", 857)
+    XMLVM_CHECK_NPE(10)
     _r0.i = ((java_util_BitSet*) _r10.o)->fields.java_util_BitSet.actualArrayLength_;
     _r0.i = _r0.i << 6;
     if (_r11.i < _r0.i) goto label27;
@@ -3136,6 +3302,7 @@ JAVA_INT java_util_BitSet_nextSetBit___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("BitSet.java", 861)
     _r0.i = _r11.i >> 6;
     XMLVM_SOURCE_POSITION("BitSet.java", 863)
+    XMLVM_CHECK_NPE(10)
     _r1.o = ((java_util_BitSet*) _r10.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -3151,8 +3318,10 @@ JAVA_INT java_util_BitSet_nextSetBit___int(JAVA_OBJECT me, JAVA_INT n1)
     _r0.i = _r0.i + 1;
     label43:;
     XMLVM_SOURCE_POSITION("BitSet.java", 872)
+    XMLVM_CHECK_NPE(10)
     _r1.i = ((java_util_BitSet*) _r10.o)->fields.java_util_BitSet.actualArrayLength_;
     if (_r0.i >= _r1.i) goto label55;
+    XMLVM_CHECK_NPE(10)
     _r1.o = ((java_util_BitSet*) _r10.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -3161,6 +3330,7 @@ JAVA_INT java_util_BitSet_nextSetBit___int(JAVA_OBJECT me, JAVA_INT n1)
     if (_r1.i == 0) goto label81;
     label55:;
     XMLVM_SOURCE_POSITION("BitSet.java", 875)
+    XMLVM_CHECK_NPE(10)
     _r1.i = ((java_util_BitSet*) _r10.o)->fields.java_util_BitSet.actualArrayLength_;
     if (_r0.i != _r1.i) goto label84;
     _r0 = _r8;
@@ -3168,6 +3338,7 @@ JAVA_INT java_util_BitSet_nextSetBit___int(JAVA_OBJECT me, JAVA_INT n1)
     goto label26;
     label61:;
     XMLVM_SOURCE_POSITION("BitSet.java", 865)
+    XMLVM_CHECK_NPE(10)
     _r2.o = ((java_util_BitSet*) _r10.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
@@ -3199,6 +3370,7 @@ JAVA_INT java_util_BitSet_nextSetBit___int(JAVA_OBJECT me, JAVA_INT n1)
     goto label26;
     label89:;
     XMLVM_SOURCE_POSITION("BitSet.java", 882)
+    XMLVM_CHECK_NPE(10)
     _r2.o = ((java_util_BitSet*) _r10.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
@@ -3256,6 +3428,7 @@ JAVA_INT java_util_BitSet_nextClearBit___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label20:;
     XMLVM_SOURCE_POSITION("BitSet.java", 903)
+    XMLVM_CHECK_NPE(13)
     _r0.i = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.actualArrayLength_;
     XMLVM_SOURCE_POSITION("BitSet.java", 904)
     _r1.i = _r0.i << 6;
@@ -3271,6 +3444,7 @@ JAVA_INT java_util_BitSet_nextClearBit___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("BitSet.java", 909)
     _r2.i = _r14.i >> 6;
     XMLVM_SOURCE_POSITION("BitSet.java", 911)
+    XMLVM_CHECK_NPE(13)
     _r3.o = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r2.i);
@@ -3287,6 +3461,7 @@ JAVA_INT java_util_BitSet_nextClearBit___int(JAVA_OBJECT me, JAVA_INT n1)
     label44:;
     XMLVM_SOURCE_POSITION("BitSet.java", 919)
     if (_r2.i >= _r0.i) goto label54;
+    XMLVM_CHECK_NPE(13)
     _r3.o = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r2.i);
@@ -3301,6 +3476,7 @@ JAVA_INT java_util_BitSet_nextClearBit___int(JAVA_OBJECT me, JAVA_INT n1)
     goto label27;
     label58:;
     XMLVM_SOURCE_POSITION("BitSet.java", 913)
+    XMLVM_CHECK_NPE(13)
     _r4.o = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r2.i);
@@ -3332,6 +3508,7 @@ JAVA_INT java_util_BitSet_nextClearBit___int(JAVA_OBJECT me, JAVA_INT n1)
     goto label27;
     label86:;
     XMLVM_SOURCE_POSITION("BitSet.java", 929)
+    XMLVM_CHECK_NPE(13)
     _r3.o = ((java_util_BitSet*) _r13.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r2.i);
@@ -3370,6 +3547,7 @@ JAVA_BOOLEAN java_util_BitSet_isEmpty__(JAVA_OBJECT me)
     _r7.i = 1;
     _r6.i = 0;
     XMLVM_SOURCE_POSITION("BitSet.java", 944)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.needClear_;
     if (_r0.i != 0) goto label8;
     _r0 = _r7;
@@ -3380,6 +3558,7 @@ JAVA_BOOLEAN java_util_BitSet_isEmpty__(JAVA_OBJECT me)
     return _r0.i;
     label8:;
     XMLVM_SOURCE_POSITION("BitSet.java", 947)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.bits_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r1 = _r6;
@@ -3390,6 +3569,7 @@ JAVA_BOOLEAN java_util_BitSet_isEmpty__(JAVA_OBJECT me)
     goto label7;
     label16:;
     XMLVM_SOURCE_POSITION("BitSet.java", 949)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((java_util_BitSet*) _r8.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -3421,6 +3601,7 @@ JAVA_INT java_util_BitSet_cardinality__(JAVA_OBJECT me)
     _r7.o = me;
     _r1.i = 0;
     XMLVM_SOURCE_POSITION("BitSet.java", 962)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_util_BitSet*) _r7.o)->fields.java_util_BitSet.needClear_;
     if (_r0.i != 0) goto label7;
     _r0 = _r1;
@@ -3431,6 +3612,7 @@ JAVA_INT java_util_BitSet_cardinality__(JAVA_OBJECT me)
     return _r0.i;
     label7:;
     XMLVM_SOURCE_POSITION("BitSet.java", 966)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_util_BitSet*) _r7.o)->fields.java_util_BitSet.bits_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r2 = _r1;
@@ -3441,6 +3623,7 @@ JAVA_INT java_util_BitSet_cardinality__(JAVA_OBJECT me)
     goto label6;
     label15:;
     XMLVM_SOURCE_POSITION("BitSet.java", 970)
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_util_BitSet*) _r7.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
@@ -3451,6 +3634,7 @@ JAVA_INT java_util_BitSet_cardinality__(JAVA_OBJECT me)
     _r3.i = java_util_BitSet_pop___long(_r7.o, _r3.l);
     _r2.i = _r2.i + _r3.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 971)
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_util_BitSet*) _r7.o)->fields.java_util_BitSet.bits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
@@ -3527,10 +3711,13 @@ void java_util_BitSet_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, JAV
     XMLVM_CHECK_NPE(3)
     java_io_ObjectInputStream_defaultReadObject__(_r3.o);
     XMLVM_SOURCE_POSITION("BitSet.java", 988)
+    XMLVM_CHECK_NPE(2)
     ((java_util_BitSet*) _r2.o)->fields.java_util_BitSet.isLengthActual_ = _r1.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 989)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_BitSet*) _r2.o)->fields.java_util_BitSet.bits_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(2)
     ((java_util_BitSet*) _r2.o)->fields.java_util_BitSet.actualArrayLength_ = _r0.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 990)
     XMLVM_CHECK_NPE(2)
@@ -3538,6 +3725,7 @@ void java_util_BitSet_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, JAV
     if (_r0.i == 0) goto label21;
     _r0.i = 1;
     label18:;
+    XMLVM_CHECK_NPE(2)
     ((java_util_BitSet*) _r2.o)->fields.java_util_BitSet.needClear_ = _r0.i;
     XMLVM_SOURCE_POSITION("BitSet.java", 991)
     XMLVM_EXIT_METHOD()

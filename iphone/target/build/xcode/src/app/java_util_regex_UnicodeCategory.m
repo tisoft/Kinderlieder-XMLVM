@@ -214,6 +214,7 @@ void java_util_regex_UnicodeCategory___INIT____int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_CHECK_NPE(0)
     java_util_regex_AbstractCharClass___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("UnicodeCategory.java", 33)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_UnicodeCategory*) _r0.o)->fields.java_util_regex_UnicodeCategory.category_ = _r1.i;
     XMLVM_SOURCE_POSITION("UnicodeCategory.java", 34)
     XMLVM_EXIT_METHOD()
@@ -233,7 +234,9 @@ JAVA_BOOLEAN java_util_regex_UnicodeCategory_contains___int(JAVA_OBJECT me, JAVA
     _r3.o = me;
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("UnicodeCategory.java", 37)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_regex_AbstractCharClass*) _r3.o)->fields.java_util_regex_AbstractCharClass.alt_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_UnicodeCategory*) _r3.o)->fields.java_util_regex_UnicodeCategory.category_;
     _r2.i = _r4.i & 0xffff;
     _r2.i = java_lang_Character_getType___char(_r2.i);

@@ -481,6 +481,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_io_FileCanonPathCache_get___java_la
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 80)
     _r1.l = java_lang_System_currentTimeMillis__();
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 81)
+    XMLVM_CHECK_NPE(0)
     _r3.l = ((org_apache_harmony_luni_internal_io_FileCanonPathCache_CacheElement*) _r0.o)->fields.org_apache_harmony_luni_internal_io_FileCanonPathCache_CacheElement.timestamp_;
     _r1.l = _r1.l - _r3.l;
     _r3.l = org_apache_harmony_luni_internal_io_FileCanonPathCache_GET_timeout();
@@ -556,6 +557,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_io_FileCanonPathCache_get___java_la
     XMLVM_RESTORE_EXCEPTION_ENV(w17647aaab7b1c31)
     XMLVM_THROW_CUSTOM(_r0.o)
     label69:;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((org_apache_harmony_luni_internal_io_FileCanonPathCache_CacheElement*) _r0.o)->fields.org_apache_harmony_luni_internal_io_FileCanonPathCache_CacheElement.canonicalPath_;
     goto label16;
     //XMLVM_END_WRAPPER

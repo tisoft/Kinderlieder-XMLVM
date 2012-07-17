@@ -1193,11 +1193,14 @@ void java_net_URI___INIT___(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("URI.java", 60)
+    XMLVM_CHECK_NPE(2)
     ((java_net_URI*) _r2.o)->fields.java_net_URI.port_ = _r1.i;
     XMLVM_SOURCE_POSITION("URI.java", 72)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((java_net_URI*) _r2.o)->fields.java_net_URI.serverAuthority_ = _r0.i;
     XMLVM_SOURCE_POSITION("URI.java", 74)
+    XMLVM_CHECK_NPE(2)
     ((java_net_URI*) _r2.o)->fields.java_net_URI.hash_ = _r1.i;
     XMLVM_SOURCE_POSITION("URI.java", 77)
     XMLVM_EXIT_METHOD()
@@ -1222,10 +1225,13 @@ void java_net_URI___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(3)
     java_lang_Object___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("URI.java", 60)
+    XMLVM_CHECK_NPE(3)
     ((java_net_URI*) _r3.o)->fields.java_net_URI.port_ = _r0.i;
     XMLVM_SOURCE_POSITION("URI.java", 72)
+    XMLVM_CHECK_NPE(3)
     ((java_net_URI*) _r3.o)->fields.java_net_URI.serverAuthority_ = _r2.i;
     XMLVM_SOURCE_POSITION("URI.java", 74)
+    XMLVM_CHECK_NPE(3)
     ((java_net_URI*) _r3.o)->fields.java_net_URI.hash_ = _r0.i;
     XMLVM_SOURCE_POSITION("URI.java", 89)
     _r0.o = __NEW_java_net_URI_Helper();
@@ -1263,10 +1269,13 @@ void java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String(J
     XMLVM_CHECK_NPE(4)
     java_lang_Object___INIT___(_r4.o);
     XMLVM_SOURCE_POSITION("URI.java", 60)
+    XMLVM_CHECK_NPE(4)
     ((java_net_URI*) _r4.o)->fields.java_net_URI.port_ = _r0.i;
     XMLVM_SOURCE_POSITION("URI.java", 72)
+    XMLVM_CHECK_NPE(4)
     ((java_net_URI*) _r4.o)->fields.java_net_URI.serverAuthority_ = _r3.i;
     XMLVM_SOURCE_POSITION("URI.java", 74)
+    XMLVM_CHECK_NPE(4)
     ((java_net_URI*) _r4.o)->fields.java_net_URI.hash_ = _r0.i;
     XMLVM_SOURCE_POSITION("URI.java", 111)
     _r0.o = __NEW_java_lang_StringBuilder();
@@ -1358,10 +1367,13 @@ void java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String_i
     XMLVM_CHECK_NPE(6)
     java_lang_Object___INIT___(_r6.o);
     XMLVM_SOURCE_POSITION("URI.java", 60)
+    XMLVM_CHECK_NPE(6)
     ((java_net_URI*) _r6.o)->fields.java_net_URI.port_ = _r3.i;
     XMLVM_SOURCE_POSITION("URI.java", 72)
+    XMLVM_CHECK_NPE(6)
     ((java_net_URI*) _r6.o)->fields.java_net_URI.serverAuthority_ = _r1.i;
     XMLVM_SOURCE_POSITION("URI.java", 74)
+    XMLVM_CHECK_NPE(6)
     ((java_net_URI*) _r6.o)->fields.java_net_URI.hash_ = _r3.i;
     XMLVM_SOURCE_POSITION("URI.java", 160)
     if (_r7.o != JAVA_NULL) goto label32;
@@ -1374,6 +1386,7 @@ void java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String_i
     XMLVM_SOURCE_POSITION("URI.java", 162)
     // ""
     _r0.o = xmlvm_create_java_string_from_pool(0);
+    XMLVM_CHECK_NPE(6)
     ((java_net_URI*) _r6.o)->fields.java_net_URI.path_ = _r0.o;
     label31:;
     XMLVM_SOURCE_POSITION("URI.java", 220)
@@ -1611,10 +1624,13 @@ void java_net_URI___INIT____java_lang_String_java_lang_String_java_lang_String_j
     XMLVM_CHECK_NPE(4)
     java_lang_Object___INIT___(_r4.o);
     XMLVM_SOURCE_POSITION("URI.java", 60)
+    XMLVM_CHECK_NPE(4)
     ((java_net_URI*) _r4.o)->fields.java_net_URI.port_ = _r0.i;
     XMLVM_SOURCE_POSITION("URI.java", 72)
+    XMLVM_CHECK_NPE(4)
     ((java_net_URI*) _r4.o)->fields.java_net_URI.serverAuthority_ = _r3.i;
     XMLVM_SOURCE_POSITION("URI.java", 74)
+    XMLVM_CHECK_NPE(4)
     ((java_net_URI*) _r4.o)->fields.java_net_URI.hash_ = _r0.i;
     XMLVM_SOURCE_POSITION("URI.java", 270)
     if (_r5.o == JAVA_NULL) goto label43;
@@ -1735,22 +1751,22 @@ JAVA_OBJECT java_net_URI_quoteComponent___java_lang_String_java_lang_String(JAVA
     _r2.o = me;
     _r3.o = n1;
     _r4.o = n2;
-    XMLVM_TRY_BEGIN(w45849aaac27b1b4)
+    XMLVM_TRY_BEGIN(w45854aaac27b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("URI.java", 834)
     _r0.o = java_net_URIEncoderDecoder_quoteIllegal___java_lang_String_java_lang_String(_r3.o, _r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w45849aaac27b1b4)
-        XMLVM_CATCH_SPECIFIC(w45849aaac27b1b4,java_io_UnsupportedEncodingException,5)
-    XMLVM_CATCH_END(w45849aaac27b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w45849aaac27b1b4)
+    XMLVM_CATCH_BEGIN(w45854aaac27b1b4)
+        XMLVM_CATCH_SPECIFIC(w45854aaac27b1b4,java_io_UnsupportedEncodingException,5)
+    XMLVM_CATCH_END(w45854aaac27b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w45854aaac27b1b4)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label5:;
     XMLVM_SOURCE_POSITION("URI.java", 835)
-    java_lang_Thread* curThread_w45849aaac27b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w45849aaac27b1b8->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w45854aaac27b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w45854aaac27b1b8->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("URI.java", 836)
     _r1.o = __NEW_java_lang_RuntimeException();
     //java_io_UnsupportedEncodingException_toString__[5]
@@ -1778,8 +1794,10 @@ JAVA_INT java_net_URI_compareTo___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     _r2.i = -1;
     XMLVM_SOURCE_POSITION("URI.java", 856)
     XMLVM_SOURCE_POSITION("URI.java", 859)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.scheme_;
     if (_r0.o != JAVA_NULL) goto label12;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.scheme_;
     if (_r0.o == JAVA_NULL) goto label12;
     _r0 = _r2;
@@ -1790,8 +1808,10 @@ JAVA_INT java_net_URI_compareTo___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     return _r0.i;
     label12:;
     XMLVM_SOURCE_POSITION("URI.java", 861)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.scheme_;
     if (_r0.o == JAVA_NULL) goto label22;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.scheme_;
     if (_r0.o != JAVA_NULL) goto label22;
     _r0 = _r3;
@@ -1799,12 +1819,16 @@ JAVA_INT java_net_URI_compareTo___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     goto label11;
     label22:;
     XMLVM_SOURCE_POSITION("URI.java", 863)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.scheme_;
     if (_r0.o == JAVA_NULL) goto label40;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.scheme_;
     if (_r0.o == JAVA_NULL) goto label40;
     XMLVM_SOURCE_POSITION("URI.java", 864)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.scheme_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.scheme_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_String_compareToIgnoreCase___java_lang_String(_r0.o, _r1.o);
@@ -1812,8 +1836,10 @@ JAVA_INT java_net_URI_compareTo___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     if (_r0.i != 0) goto label11;
     label40:;
     XMLVM_SOURCE_POSITION("URI.java", 871)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_net_URI*) _r4.o)->fields.java_net_URI.opaque_;
     if (_r0.i != 0) goto label50;
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_net_URI*) _r5.o)->fields.java_net_URI.opaque_;
     if (_r0.i == 0) goto label50;
     _r0 = _r2;
@@ -1821,8 +1847,10 @@ JAVA_INT java_net_URI_compareTo___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     goto label11;
     label50:;
     XMLVM_SOURCE_POSITION("URI.java", 873)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_net_URI*) _r4.o)->fields.java_net_URI.opaque_;
     if (_r0.i == 0) goto label60;
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_net_URI*) _r5.o)->fields.java_net_URI.opaque_;
     if (_r0.i != 0) goto label60;
     _r0 = _r3;
@@ -1830,12 +1858,16 @@ JAVA_INT java_net_URI_compareTo___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     goto label11;
     label60:;
     XMLVM_SOURCE_POSITION("URI.java", 875)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_net_URI*) _r4.o)->fields.java_net_URI.opaque_;
     if (_r0.i == 0) goto label88;
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_net_URI*) _r5.o)->fields.java_net_URI.opaque_;
     if (_r0.i == 0) goto label88;
     XMLVM_SOURCE_POSITION("URI.java", 876)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.schemespecificpart_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.schemespecificpart_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_String_compareTo___java_lang_String(_r0.o, _r1.o);
@@ -1843,8 +1875,10 @@ JAVA_INT java_net_URI_compareTo___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     if (_r0.i != 0) goto label11;
     label78:;
     XMLVM_SOURCE_POSITION("URI.java", 944)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.fragment_;
     if (_r0.o == JAVA_NULL) goto label248;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.fragment_;
     if (_r0.o != JAVA_NULL) goto label248;
     _r0 = _r3;
@@ -1852,8 +1886,10 @@ JAVA_INT java_net_URI_compareTo___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     goto label11;
     label88:;
     XMLVM_SOURCE_POSITION("URI.java", 885)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.authority_;
     if (_r0.o == JAVA_NULL) goto label98;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.authority_;
     if (_r0.o != JAVA_NULL) goto label98;
     _r0 = _r3;
@@ -1861,8 +1897,10 @@ JAVA_INT java_net_URI_compareTo___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     goto label11;
     label98:;
     XMLVM_SOURCE_POSITION("URI.java", 887)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.authority_;
     if (_r0.o != JAVA_NULL) goto label108;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.authority_;
     if (_r0.o == JAVA_NULL) goto label108;
     _r0 = _r2;
@@ -1870,18 +1908,24 @@ JAVA_INT java_net_URI_compareTo___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     goto label11;
     label108:;
     XMLVM_SOURCE_POSITION("URI.java", 889)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.authority_;
     if (_r0.o == JAVA_NULL) goto label196;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.authority_;
     if (_r0.o == JAVA_NULL) goto label196;
     XMLVM_SOURCE_POSITION("URI.java", 890)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.host_;
     if (_r0.o == JAVA_NULL) goto label186;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.host_;
     if (_r0.o == JAVA_NULL) goto label186;
     XMLVM_SOURCE_POSITION("URI.java", 892)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.userinfo_;
     if (_r0.o == JAVA_NULL) goto label134;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.userinfo_;
     if (_r0.o != JAVA_NULL) goto label134;
     _r0 = _r3;
@@ -1889,8 +1933,10 @@ JAVA_INT java_net_URI_compareTo___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     goto label11;
     label134:;
     XMLVM_SOURCE_POSITION("URI.java", 894)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.userinfo_;
     if (_r0.o != JAVA_NULL) goto label145;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.userinfo_;
     if (_r0.o == JAVA_NULL) goto label145;
     _r0 = _r2;
@@ -1898,12 +1944,16 @@ JAVA_INT java_net_URI_compareTo___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     goto label11;
     label145:;
     XMLVM_SOURCE_POSITION("URI.java", 896)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.userinfo_;
     if (_r0.o == JAVA_NULL) goto label163;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.userinfo_;
     if (_r0.o == JAVA_NULL) goto label163;
     XMLVM_SOURCE_POSITION("URI.java", 897)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.userinfo_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.userinfo_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_String_compareTo___java_lang_String(_r0.o, _r1.o);
@@ -1911,24 +1961,32 @@ JAVA_INT java_net_URI_compareTo___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     if (_r0.i != 0) goto label11;
     label163:;
     XMLVM_SOURCE_POSITION("URI.java", 904)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.host_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.host_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_String_compareToIgnoreCase___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("URI.java", 905)
     if (_r0.i != 0) goto label11;
     XMLVM_SOURCE_POSITION("URI.java", 910)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_net_URI*) _r4.o)->fields.java_net_URI.port_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_net_URI*) _r5.o)->fields.java_net_URI.port_;
     if (_r0.i == _r1.i) goto label196;
     XMLVM_SOURCE_POSITION("URI.java", 911)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_net_URI*) _r4.o)->fields.java_net_URI.port_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_net_URI*) _r5.o)->fields.java_net_URI.port_;
     _r0.i = _r0.i - _r1.i;
     goto label11;
     label186:;
     XMLVM_SOURCE_POSITION("URI.java", 915)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.authority_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.authority_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_String_compareTo___java_lang_String(_r0.o, _r1.o);
@@ -1936,15 +1994,19 @@ JAVA_INT java_net_URI_compareTo___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     if (_r0.i != 0) goto label11;
     label196:;
     XMLVM_SOURCE_POSITION("URI.java", 924)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.path_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.path_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_String_compareTo___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("URI.java", 925)
     if (_r0.i != 0) goto label11;
     XMLVM_SOURCE_POSITION("URI.java", 931)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.query_;
     if (_r0.o == JAVA_NULL) goto label217;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.query_;
     if (_r0.o != JAVA_NULL) goto label217;
     _r0 = _r3;
@@ -1952,8 +2014,10 @@ JAVA_INT java_net_URI_compareTo___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     goto label11;
     label217:;
     XMLVM_SOURCE_POSITION("URI.java", 933)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.query_;
     if (_r0.o != JAVA_NULL) goto label228;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.query_;
     if (_r0.o == JAVA_NULL) goto label228;
     _r0 = _r2;
@@ -1961,12 +2025,16 @@ JAVA_INT java_net_URI_compareTo___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     goto label11;
     label228:;
     XMLVM_SOURCE_POSITION("URI.java", 935)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.query_;
     if (_r0.o == JAVA_NULL) goto label78;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.query_;
     if (_r0.o == JAVA_NULL) goto label78;
     XMLVM_SOURCE_POSITION("URI.java", 936)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.query_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.query_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_String_compareTo___java_lang_String(_r0.o, _r1.o);
@@ -1975,8 +2043,10 @@ JAVA_INT java_net_URI_compareTo___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     goto label11;
     label248:;
     XMLVM_SOURCE_POSITION("URI.java", 946)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.fragment_;
     if (_r0.o != JAVA_NULL) goto label259;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.fragment_;
     if (_r0.o == JAVA_NULL) goto label259;
     _r0 = _r2;
@@ -1984,12 +2054,16 @@ JAVA_INT java_net_URI_compareTo___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     goto label11;
     label259:;
     XMLVM_SOURCE_POSITION("URI.java", 948)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.fragment_;
     if (_r0.o == JAVA_NULL) goto label277;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.fragment_;
     if (_r0.o == JAVA_NULL) goto label277;
     XMLVM_SOURCE_POSITION("URI.java", 949)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.fragment_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.fragment_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_String_compareTo___java_lang_String(_r0.o, _r1.o);
@@ -2010,7 +2084,7 @@ JAVA_OBJECT java_net_URI_create___java_lang_String(JAVA_OBJECT n1)
     XMLVMElem _r1;
     XMLVMElem _r2;
     _r2.o = n1;
-    XMLVM_TRY_BEGIN(w45849aaac29b1b2)
+    XMLVM_TRY_BEGIN(w45854aaac29b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("URI.java", 968)
     XMLVM_SOURCE_POSITION("URI.java", 970)
@@ -2019,17 +2093,17 @@ JAVA_OBJECT java_net_URI_create___java_lang_String(JAVA_OBJECT n1)
     java_net_URI___INIT____java_lang_String(_r0.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w45849aaac29b1b2)
-        XMLVM_CATCH_SPECIFIC(w45849aaac29b1b2,java_net_URISyntaxException,6)
-    XMLVM_CATCH_END(w45849aaac29b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w45849aaac29b1b2)
+    XMLVM_CATCH_BEGIN(w45854aaac29b1b2)
+        XMLVM_CATCH_SPECIFIC(w45854aaac29b1b2,java_net_URISyntaxException,6)
+    XMLVM_CATCH_END(w45854aaac29b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w45854aaac29b1b2)
     XMLVM_SOURCE_POSITION("URI.java", 974)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label6:;
     XMLVM_SOURCE_POSITION("URI.java", 971)
-    java_lang_Thread* curThread_w45849aaac29b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w45849aaac29b1b7->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w45854aaac29b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w45854aaac29b1b7->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("URI.java", 972)
     _r1.o = __NEW_java_lang_IllegalArgumentException();
     //java_net_URISyntaxException_getMessage__[7]
@@ -2054,40 +2128,64 @@ JAVA_OBJECT java_net_URI_duplicate__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_net_URI___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("URI.java", 979)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_net_URI*) _r2.o)->fields.java_net_URI.absolute_;
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.absolute_ = _r1.i;
     XMLVM_SOURCE_POSITION("URI.java", 980)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.authority_;
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.authority_ = _r1.o;
     XMLVM_SOURCE_POSITION("URI.java", 981)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.fragment_;
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.fragment_ = _r1.o;
     XMLVM_SOURCE_POSITION("URI.java", 982)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.host_;
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.host_ = _r1.o;
     XMLVM_SOURCE_POSITION("URI.java", 983)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_net_URI*) _r2.o)->fields.java_net_URI.opaque_;
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.opaque_ = _r1.i;
     XMLVM_SOURCE_POSITION("URI.java", 984)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.path_;
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.path_ = _r1.o;
     XMLVM_SOURCE_POSITION("URI.java", 985)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_net_URI*) _r2.o)->fields.java_net_URI.port_;
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.port_ = _r1.i;
     XMLVM_SOURCE_POSITION("URI.java", 986)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.query_;
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.query_ = _r1.o;
     XMLVM_SOURCE_POSITION("URI.java", 987)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.scheme_;
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.scheme_ = _r1.o;
     XMLVM_SOURCE_POSITION("URI.java", 988)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.schemespecificpart_;
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.schemespecificpart_ = _r1.o;
     XMLVM_SOURCE_POSITION("URI.java", 989)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.userinfo_;
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.userinfo_ = _r1.o;
     XMLVM_SOURCE_POSITION("URI.java", 990)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_net_URI*) _r2.o)->fields.java_net_URI.serverAuthority_;
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.serverAuthority_ = _r1.i;
     XMLVM_SOURCE_POSITION("URI.java", 991)
     XMLVM_EXIT_METHOD()
@@ -2284,14 +2382,18 @@ JAVA_BOOLEAN java_net_URI_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT 
     XMLVM_SOURCE_POSITION("URI.java", 1060)
     _r5.o = _r5.o;
     XMLVM_SOURCE_POSITION("URI.java", 1062)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.fragment_;
     if (_r0.o != JAVA_NULL) goto label18;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.fragment_;
     if (_r0.o != JAVA_NULL) goto label26;
     label18:;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.fragment_;
     if (_r0.o == JAVA_NULL) goto label28;
     XMLVM_SOURCE_POSITION("URI.java", 1063)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.fragment_;
     if (_r0.o != JAVA_NULL) goto label28;
     label26:;
@@ -2300,12 +2402,16 @@ JAVA_BOOLEAN java_net_URI_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT 
     goto label7;
     label28:;
     XMLVM_SOURCE_POSITION("URI.java", 1065)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.fragment_;
     if (_r0.o == JAVA_NULL) goto label48;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.fragment_;
     if (_r0.o == JAVA_NULL) goto label48;
     XMLVM_SOURCE_POSITION("URI.java", 1066)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.fragment_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.fragment_;
     XMLVM_CHECK_NPE(4)
     _r0.i = java_net_URI_equalsHexCaseInsensitive___java_lang_String_java_lang_String(_r4.o, _r0.o, _r1.o);
@@ -2315,14 +2421,18 @@ JAVA_BOOLEAN java_net_URI_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT 
     goto label7;
     label48:;
     XMLVM_SOURCE_POSITION("URI.java", 1071)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.scheme_;
     if (_r0.o != JAVA_NULL) goto label56;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.scheme_;
     if (_r0.o != JAVA_NULL) goto label64;
     label56:;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.scheme_;
     if (_r0.o == JAVA_NULL) goto label66;
     XMLVM_SOURCE_POSITION("URI.java", 1072)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.scheme_;
     if (_r0.o != JAVA_NULL) goto label66;
     label64:;
@@ -2331,12 +2441,16 @@ JAVA_BOOLEAN java_net_URI_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT 
     goto label7;
     label66:;
     XMLVM_SOURCE_POSITION("URI.java", 1074)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.scheme_;
     if (_r0.o == JAVA_NULL) goto label86;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.scheme_;
     if (_r0.o == JAVA_NULL) goto label86;
     XMLVM_SOURCE_POSITION("URI.java", 1075)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.scheme_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.scheme_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_String_equalsIgnoreCase___java_lang_String(_r0.o, _r1.o);
@@ -2346,25 +2460,33 @@ JAVA_BOOLEAN java_net_URI_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT 
     goto label7;
     label86:;
     XMLVM_SOURCE_POSITION("URI.java", 1080)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_net_URI*) _r5.o)->fields.java_net_URI.opaque_;
     if (_r0.i == 0) goto label103;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_net_URI*) _r4.o)->fields.java_net_URI.opaque_;
     if (_r0.i == 0) goto label103;
     XMLVM_SOURCE_POSITION("URI.java", 1081)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.schemespecificpart_;
     XMLVM_SOURCE_POSITION("URI.java", 1082)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.schemespecificpart_;
     XMLVM_CHECK_NPE(4)
     _r0.i = java_net_URI_equalsHexCaseInsensitive___java_lang_String_java_lang_String(_r4.o, _r0.o, _r1.o);
     goto label7;
     label103:;
     XMLVM_SOURCE_POSITION("URI.java", 1083)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_net_URI*) _r5.o)->fields.java_net_URI.opaque_;
     if (_r0.i != 0) goto label292;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_net_URI*) _r4.o)->fields.java_net_URI.opaque_;
     if (_r0.i != 0) goto label292;
     XMLVM_SOURCE_POSITION("URI.java", 1084)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.path_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.path_;
     XMLVM_CHECK_NPE(4)
     _r0.i = java_net_URI_equalsHexCaseInsensitive___java_lang_String_java_lang_String(_r4.o, _r0.o, _r1.o);
@@ -2374,14 +2496,18 @@ JAVA_BOOLEAN java_net_URI_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT 
     goto label7;
     label123:;
     XMLVM_SOURCE_POSITION("URI.java", 1088)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.query_;
     if (_r0.o == JAVA_NULL) goto label131;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.query_;
     if (_r0.o == JAVA_NULL) goto label139;
     label131:;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.query_;
     if (_r0.o != JAVA_NULL) goto label142;
     XMLVM_SOURCE_POSITION("URI.java", 1089)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.query_;
     if (_r0.o == JAVA_NULL) goto label142;
     label139:;
@@ -2390,12 +2516,16 @@ JAVA_BOOLEAN java_net_URI_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT 
     goto label7;
     label142:;
     XMLVM_SOURCE_POSITION("URI.java", 1091)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.query_;
     if (_r0.o == JAVA_NULL) goto label163;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.query_;
     if (_r0.o == JAVA_NULL) goto label163;
     XMLVM_SOURCE_POSITION("URI.java", 1092)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.query_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.query_;
     XMLVM_CHECK_NPE(4)
     _r0.i = java_net_URI_equalsHexCaseInsensitive___java_lang_String_java_lang_String(_r4.o, _r0.o, _r1.o);
@@ -2405,14 +2535,18 @@ JAVA_BOOLEAN java_net_URI_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT 
     goto label7;
     label163:;
     XMLVM_SOURCE_POSITION("URI.java", 1097)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.authority_;
     if (_r0.o == JAVA_NULL) goto label171;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.authority_;
     if (_r0.o == JAVA_NULL) goto label179;
     label171:;
     XMLVM_SOURCE_POSITION("URI.java", 1098)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.authority_;
     if (_r0.o != JAVA_NULL) goto label182;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.authority_;
     if (_r0.o == JAVA_NULL) goto label182;
     label179:;
@@ -2421,19 +2555,25 @@ JAVA_BOOLEAN java_net_URI_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT 
     goto label7;
     label182:;
     XMLVM_SOURCE_POSITION("URI.java", 1100)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.authority_;
     if (_r0.o == JAVA_NULL) goto label289;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.authority_;
     if (_r0.o == JAVA_NULL) goto label289;
     XMLVM_SOURCE_POSITION("URI.java", 1101)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.host_;
     if (_r0.o == JAVA_NULL) goto label198;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.host_;
     if (_r0.o == JAVA_NULL) goto label206;
     label198:;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.host_;
     if (_r0.o != JAVA_NULL) goto label209;
     XMLVM_SOURCE_POSITION("URI.java", 1102)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.host_;
     if (_r0.o == JAVA_NULL) goto label209;
     label206:;
@@ -2442,19 +2582,25 @@ JAVA_BOOLEAN java_net_URI_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT 
     goto label7;
     label209:;
     XMLVM_SOURCE_POSITION("URI.java", 1104)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.host_;
     if (_r0.o != JAVA_NULL) goto label227;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.host_;
     if (_r0.o != JAVA_NULL) goto label227;
     XMLVM_SOURCE_POSITION("URI.java", 1106)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.authority_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.authority_;
     XMLVM_CHECK_NPE(4)
     _r0.i = java_net_URI_equalsHexCaseInsensitive___java_lang_String_java_lang_String(_r4.o, _r0.o, _r1.o);
     goto label7;
     label227:;
     XMLVM_SOURCE_POSITION("URI.java", 1108)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.host_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.host_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_String_equalsIgnoreCase___java_lang_String(_r0.o, _r1.o);
@@ -2464,7 +2610,9 @@ JAVA_BOOLEAN java_net_URI_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT 
     goto label7;
     label240:;
     XMLVM_SOURCE_POSITION("URI.java", 1112)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_net_URI*) _r4.o)->fields.java_net_URI.port_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_net_URI*) _r5.o)->fields.java_net_URI.port_;
     if (_r0.i == _r1.i) goto label249;
     _r0 = _r2;
@@ -2472,14 +2620,18 @@ JAVA_BOOLEAN java_net_URI_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT 
     goto label7;
     label249:;
     XMLVM_SOURCE_POSITION("URI.java", 1116)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.userinfo_;
     if (_r0.o == JAVA_NULL) goto label257;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.userinfo_;
     if (_r0.o == JAVA_NULL) goto label265;
     label257:;
     XMLVM_SOURCE_POSITION("URI.java", 1117)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.userinfo_;
     if (_r0.o != JAVA_NULL) goto label268;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.userinfo_;
     if (_r0.o == JAVA_NULL) goto label268;
     label265:;
@@ -2488,12 +2640,16 @@ JAVA_BOOLEAN java_net_URI_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT 
     goto label7;
     label268:;
     XMLVM_SOURCE_POSITION("URI.java", 1119)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.userinfo_;
     if (_r0.o == JAVA_NULL) goto label286;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.userinfo_;
     if (_r0.o == JAVA_NULL) goto label286;
     XMLVM_SOURCE_POSITION("URI.java", 1120)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.userinfo_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.userinfo_;
     XMLVM_CHECK_NPE(4)
     _r0.i = java_net_URI_equalsHexCaseInsensitive___java_lang_String_java_lang_String(_r4.o, _r0.o, _r1.o);
@@ -2520,6 +2676,7 @@ JAVA_OBJECT java_net_URI_getAuthority__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1142)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URI*) _r1.o)->fields.java_net_URI.authority_;
     XMLVM_CHECK_NPE(1)
     _r0.o = java_net_URI_decode___java_lang_String(_r1.o, _r0.o);
@@ -2536,6 +2693,7 @@ JAVA_OBJECT java_net_URI_getFragment__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1151)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URI*) _r1.o)->fields.java_net_URI.fragment_;
     XMLVM_CHECK_NPE(1)
     _r0.o = java_net_URI_decode___java_lang_String(_r1.o, _r0.o);
@@ -2552,6 +2710,7 @@ JAVA_OBJECT java_net_URI_getHost__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1160)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URI*) _r1.o)->fields.java_net_URI.host_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2566,6 +2725,7 @@ JAVA_OBJECT java_net_URI_getPath__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1169)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URI*) _r1.o)->fields.java_net_URI.path_;
     XMLVM_CHECK_NPE(1)
     _r0.o = java_net_URI_decode___java_lang_String(_r1.o, _r0.o);
@@ -2582,6 +2742,7 @@ JAVA_INT java_net_URI_getPort__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1178)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_URI*) _r1.o)->fields.java_net_URI.port_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -2596,6 +2757,7 @@ JAVA_OBJECT java_net_URI_getQuery__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1187)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URI*) _r1.o)->fields.java_net_URI.query_;
     XMLVM_CHECK_NPE(1)
     _r0.o = java_net_URI_decode___java_lang_String(_r1.o, _r0.o);
@@ -2612,6 +2774,7 @@ JAVA_OBJECT java_net_URI_getRawAuthority__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1196)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URI*) _r1.o)->fields.java_net_URI.authority_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2626,6 +2789,7 @@ JAVA_OBJECT java_net_URI_getRawFragment__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1205)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URI*) _r1.o)->fields.java_net_URI.fragment_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2640,6 +2804,7 @@ JAVA_OBJECT java_net_URI_getRawPath__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1214)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URI*) _r1.o)->fields.java_net_URI.path_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2654,6 +2819,7 @@ JAVA_OBJECT java_net_URI_getRawQuery__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1223)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URI*) _r1.o)->fields.java_net_URI.query_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2668,6 +2834,7 @@ JAVA_OBJECT java_net_URI_getRawSchemeSpecificPart__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1232)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URI*) _r1.o)->fields.java_net_URI.schemespecificpart_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2682,6 +2849,7 @@ JAVA_OBJECT java_net_URI_getRawUserInfo__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1241)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URI*) _r1.o)->fields.java_net_URI.userinfo_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2696,6 +2864,7 @@ JAVA_OBJECT java_net_URI_getScheme__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1250)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URI*) _r1.o)->fields.java_net_URI.scheme_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2710,6 +2879,7 @@ JAVA_OBJECT java_net_URI_getSchemeSpecificPart__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1259)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URI*) _r1.o)->fields.java_net_URI.schemespecificpart_;
     XMLVM_CHECK_NPE(1)
     _r0.o = java_net_URI_decode___java_lang_String(_r1.o, _r0.o);
@@ -2726,6 +2896,7 @@ JAVA_OBJECT java_net_URI_getUserInfo__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1268)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URI*) _r1.o)->fields.java_net_URI.userinfo_;
     XMLVM_CHECK_NPE(1)
     _r0.o = java_net_URI_decode___java_lang_String(_r1.o, _r0.o);
@@ -2743,6 +2914,7 @@ JAVA_INT java_net_URI_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1278)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_net_URI*) _r2.o)->fields.java_net_URI.hash_;
     _r1.i = -1;
     if (_r0.i != _r1.i) goto label15;
@@ -2752,9 +2924,11 @@ JAVA_INT java_net_URI_hashCode__(JAVA_OBJECT me)
     //java_lang_String_hashCode__[4]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[4])(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((java_net_URI*) _r2.o)->fields.java_net_URI.hash_ = _r0.i;
     label15:;
     XMLVM_SOURCE_POSITION("URI.java", 1281)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_net_URI*) _r2.o)->fields.java_net_URI.hash_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -2769,6 +2943,7 @@ JAVA_BOOLEAN java_net_URI_isAbsolute__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1291)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_URI*) _r1.o)->fields.java_net_URI.absolute_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -2783,6 +2958,7 @@ JAVA_BOOLEAN java_net_URI_isOpaque__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1303)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_URI*) _r1.o)->fields.java_net_URI.opaque_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -3074,6 +3250,7 @@ JAVA_OBJECT java_net_URI_normalize__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1402)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_net_URI*) _r2.o)->fields.java_net_URI.opaque_;
     if (_r0.i == 0) goto label6;
     _r0 = _r2;
@@ -3084,10 +3261,12 @@ JAVA_OBJECT java_net_URI_normalize__(JAVA_OBJECT me)
     return _r0.o;
     label6:;
     XMLVM_SOURCE_POSITION("URI.java", 1405)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.path_;
     XMLVM_CHECK_NPE(2)
     _r0.o = java_net_URI_normalize___java_lang_String(_r2.o, _r0.o);
     XMLVM_SOURCE_POSITION("URI.java", 1407)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.path_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(1)
@@ -3101,6 +3280,7 @@ JAVA_OBJECT java_net_URI_normalize__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     _r1.o = java_net_URI_duplicate__(_r2.o);
     XMLVM_SOURCE_POSITION("URI.java", 1413)
+    XMLVM_CHECK_NPE(1)
     ((java_net_URI*) _r1.o)->fields.java_net_URI.path_ = _r0.o;
     XMLVM_SOURCE_POSITION("URI.java", 1414)
     XMLVM_CHECK_NPE(1)
@@ -3119,6 +3299,7 @@ JAVA_OBJECT java_net_URI_parseServerAuthority__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1429)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_net_URI*) _r2.o)->fields.java_net_URI.serverAuthority_;
     if (_r0.i != 0) goto label14;
     XMLVM_SOURCE_POSITION("URI.java", 1430)
@@ -3148,8 +3329,10 @@ JAVA_OBJECT java_net_URI_relativize___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n
     _r4.o = me;
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("URI.java", 1444)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_net_URI*) _r5.o)->fields.java_net_URI.opaque_;
     if (_r0.i != 0) goto label8;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_net_URI*) _r4.o)->fields.java_net_URI.opaque_;
     if (_r0.i == 0) goto label10;
     label8:;
@@ -3161,8 +3344,10 @@ JAVA_OBJECT java_net_URI_relativize___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n
     return _r0.o;
     label10:;
     XMLVM_SOURCE_POSITION("URI.java", 1448)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.scheme_;
     if (_r0.o != JAVA_NULL) goto label20;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.scheme_;
     if (_r0.o == JAVA_NULL) goto label30;
     label18:;
@@ -3171,7 +3356,9 @@ JAVA_OBJECT java_net_URI_relativize___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n
     goto label9;
     label20:;
     XMLVM_SOURCE_POSITION("URI.java", 1449)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.scheme_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.scheme_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -3179,8 +3366,10 @@ JAVA_OBJECT java_net_URI_relativize___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n
     if (_r0.i == 0) goto label18;
     label30:;
     XMLVM_SOURCE_POSITION("URI.java", 1453)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.authority_;
     if (_r0.o != JAVA_NULL) goto label40;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.authority_;
     if (_r0.o == JAVA_NULL) goto label50;
     label38:;
@@ -3189,7 +3378,9 @@ JAVA_OBJECT java_net_URI_relativize___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n
     goto label9;
     label40:;
     XMLVM_SOURCE_POSITION("URI.java", 1454)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.authority_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.authority_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -3197,10 +3388,12 @@ JAVA_OBJECT java_net_URI_relativize___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n
     if (_r0.i == 0) goto label38;
     label50:;
     XMLVM_SOURCE_POSITION("URI.java", 1459)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_URI*) _r4.o)->fields.java_net_URI.path_;
     XMLVM_CHECK_NPE(4)
     _r0.o = java_net_URI_normalize___java_lang_String(_r4.o, _r0.o);
     XMLVM_SOURCE_POSITION("URI.java", 1460)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.path_;
     XMLVM_CHECK_NPE(4)
     _r1.o = java_net_URI_normalize___java_lang_String(_r4.o, _r1.o);
@@ -3241,10 +3434,14 @@ JAVA_OBJECT java_net_URI_relativize___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n
     XMLVM_CHECK_NPE(2)
     java_net_URI___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("URI.java", 1482)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.fragment_;
+    XMLVM_CHECK_NPE(2)
     ((java_net_URI*) _r2.o)->fields.java_net_URI.fragment_ = _r3.o;
     XMLVM_SOURCE_POSITION("URI.java", 1483)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.query_;
+    XMLVM_CHECK_NPE(2)
     ((java_net_URI*) _r2.o)->fields.java_net_URI.query_ = _r3.o;
     XMLVM_SOURCE_POSITION("URI.java", 1485)
     //java_lang_String_length__[8]
@@ -3252,6 +3449,7 @@ JAVA_OBJECT java_net_URI_relativize___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[8])(_r0.o);
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_String_substring___int(_r1.o, _r0.i);
+    XMLVM_CHECK_NPE(2)
     ((java_net_URI*) _r2.o)->fields.java_net_URI.path_ = _r0.o;
     XMLVM_SOURCE_POSITION("URI.java", 1486)
     XMLVM_CHECK_NPE(2)
@@ -3275,8 +3473,10 @@ JAVA_OBJECT java_net_URI_resolve___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     _r5.o = me;
     _r6.o = n1;
     XMLVM_SOURCE_POSITION("URI.java", 1499)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_net_URI*) _r6.o)->fields.java_net_URI.absolute_;
     if (_r0.i != 0) goto label8;
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_net_URI*) _r5.o)->fields.java_net_URI.opaque_;
     if (_r0.i == 0) goto label10;
     label8:;
@@ -3288,6 +3488,7 @@ JAVA_OBJECT java_net_URI_resolve___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     return _r0.o;
     label10:;
     XMLVM_SOURCE_POSITION("URI.java", 1504)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_net_URI*) _r6.o)->fields.java_net_URI.path_;
     // ""
     _r1.o = xmlvm_create_java_string_from_pool(0);
@@ -3295,35 +3496,46 @@ JAVA_OBJECT java_net_URI_resolve___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r1.o);
     if (_r0.i == 0) goto label45;
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_net_URI*) _r6.o)->fields.java_net_URI.scheme_;
     if (_r0.o != JAVA_NULL) goto label45;
     XMLVM_SOURCE_POSITION("URI.java", 1505)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_net_URI*) _r6.o)->fields.java_net_URI.authority_;
     if (_r0.o != JAVA_NULL) goto label45;
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_net_URI*) _r6.o)->fields.java_net_URI.query_;
     if (_r0.o != JAVA_NULL) goto label45;
     XMLVM_SOURCE_POSITION("URI.java", 1506)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_net_URI*) _r6.o)->fields.java_net_URI.fragment_;
     if (_r0.o == JAVA_NULL) goto label45;
     XMLVM_SOURCE_POSITION("URI.java", 1510)
     XMLVM_CHECK_NPE(5)
     _r0.o = java_net_URI_duplicate__(_r5.o);
     XMLVM_SOURCE_POSITION("URI.java", 1511)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_net_URI*) _r6.o)->fields.java_net_URI.fragment_;
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.fragment_ = _r1.o;
     goto label9;
     label45:;
     XMLVM_SOURCE_POSITION("URI.java", 1517)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_net_URI*) _r6.o)->fields.java_net_URI.authority_;
     if (_r0.o == JAVA_NULL) goto label62;
     XMLVM_SOURCE_POSITION("URI.java", 1521)
     XMLVM_CHECK_NPE(6)
     _r0.o = java_net_URI_duplicate__(_r6.o);
     XMLVM_SOURCE_POSITION("URI.java", 1522)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.scheme_;
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.scheme_ = _r1.o;
     XMLVM_SOURCE_POSITION("URI.java", 1523)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_net_URI*) _r5.o)->fields.java_net_URI.absolute_;
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.absolute_ = _r1.i;
     goto label9;
     label62:;
@@ -3331,12 +3543,17 @@ JAVA_OBJECT java_net_URI_resolve___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(5)
     _r0.o = java_net_URI_duplicate__(_r5.o);
     XMLVM_SOURCE_POSITION("URI.java", 1530)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_net_URI*) _r6.o)->fields.java_net_URI.fragment_;
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.fragment_ = _r1.o;
     XMLVM_SOURCE_POSITION("URI.java", 1531)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_net_URI*) _r6.o)->fields.java_net_URI.query_;
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.query_ = _r1.o;
     XMLVM_SOURCE_POSITION("URI.java", 1532)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_net_URI*) _r6.o)->fields.java_net_URI.path_;
     // "/"
     _r2.o = xmlvm_create_java_string_from_pool(394);
@@ -3344,7 +3561,9 @@ JAVA_OBJECT java_net_URI_resolve___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     _r1.i = java_lang_String_startsWith___java_lang_String(_r1.o, _r2.o);
     if (_r1.i == 0) goto label92;
     XMLVM_SOURCE_POSITION("URI.java", 1533)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_net_URI*) _r6.o)->fields.java_net_URI.path_;
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.path_ = _r1.o;
     label88:;
     XMLVM_SOURCE_POSITION("URI.java", 1542)
@@ -3353,6 +3572,7 @@ JAVA_OBJECT java_net_URI_resolve___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     goto label9;
     label92:;
     XMLVM_SOURCE_POSITION("URI.java", 1536)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.path_;
     _r2.i = 47;
     XMLVM_CHECK_NPE(1)
@@ -3360,6 +3580,7 @@ JAVA_OBJECT java_net_URI_resolve___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     _r1.i = _r1.i + 1;
     XMLVM_SOURCE_POSITION("URI.java", 1537)
     _r2.o = __NEW_java_lang_StringBuilder();
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_net_URI*) _r5.o)->fields.java_net_URI.path_;
     _r4.i = 0;
     XMLVM_CHECK_NPE(3)
@@ -3368,6 +3589,7 @@ JAVA_OBJECT java_net_URI_resolve___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuilder___INIT____java_lang_String(_r2.o, _r1.o);
     XMLVM_SOURCE_POSITION("URI.java", 1538)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_net_URI*) _r6.o)->fields.java_net_URI.path_;
     XMLVM_CHECK_NPE(2)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r2.o, _r1.o);
@@ -3376,6 +3598,7 @@ JAVA_OBJECT java_net_URI_resolve___java_net_URI(JAVA_OBJECT me, JAVA_OBJECT n1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r1.o)->tib->vtable[5])(_r1.o);
     XMLVM_CHECK_NPE(5)
     _r1.o = java_net_URI_normalize___java_lang_String(_r5.o, _r1.o);
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.path_ = _r1.o;
     goto label88;
     //XMLVM_END_WRAPPER
@@ -3395,6 +3618,7 @@ void java_net_URI_setSchemeSpecificPart__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("URI.java", 1554)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.authority_;
     if (_r1.o == JAVA_NULL) goto label29;
     XMLVM_SOURCE_POSITION("URI.java", 1555)
@@ -3403,6 +3627,7 @@ void java_net_URI_setSchemeSpecificPart__(JAVA_OBJECT me)
     _r2.o = xmlvm_create_java_string_from_pool(1935);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.authority_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
@@ -3413,14 +3638,17 @@ void java_net_URI_setSchemeSpecificPart__(JAVA_OBJECT me)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label29:;
     XMLVM_SOURCE_POSITION("URI.java", 1557)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.path_;
     if (_r1.o == JAVA_NULL) goto label38;
     XMLVM_SOURCE_POSITION("URI.java", 1558)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.path_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label38:;
     XMLVM_SOURCE_POSITION("URI.java", 1560)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.query_;
     if (_r1.o == JAVA_NULL) goto label62;
     XMLVM_SOURCE_POSITION("URI.java", 1561)
@@ -3429,6 +3657,7 @@ void java_net_URI_setSchemeSpecificPart__(JAVA_OBJECT me)
     _r2.o = xmlvm_create_java_string_from_pool(230);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.query_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
@@ -3442,9 +3671,11 @@ void java_net_URI_setSchemeSpecificPart__(JAVA_OBJECT me)
     //java_lang_StringBuilder_toString__[5]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[5])(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_net_URI*) _r3.o)->fields.java_net_URI.schemespecificpart_ = _r0.o;
     XMLVM_SOURCE_POSITION("URI.java", 1565)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(3)
     ((java_net_URI*) _r3.o)->fields.java_net_URI.string_ = _r0.o;
     XMLVM_SOURCE_POSITION("URI.java", 1566)
     XMLVM_EXIT_METHOD()
@@ -3480,22 +3711,22 @@ JAVA_OBJECT java_net_URI_encodeOthers___java_lang_String(JAVA_OBJECT me, JAVA_OB
     XMLVMElem _r3;
     _r2.o = me;
     _r3.o = n1;
-    XMLVM_TRY_BEGIN(w45849aaac59b1b3)
+    XMLVM_TRY_BEGIN(w45854aaac59b1b3)
     // Begin try
     XMLVM_SOURCE_POSITION("URI.java", 1600)
     _r0.o = java_net_URIEncoderDecoder_encodeOthers___java_lang_String(_r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w45849aaac59b1b3)
-        XMLVM_CATCH_SPECIFIC(w45849aaac59b1b3,java_io_UnsupportedEncodingException,5)
-    XMLVM_CATCH_END(w45849aaac59b1b3)
-    XMLVM_RESTORE_EXCEPTION_ENV(w45849aaac59b1b3)
+    XMLVM_CATCH_BEGIN(w45854aaac59b1b3)
+        XMLVM_CATCH_SPECIFIC(w45854aaac59b1b3,java_io_UnsupportedEncodingException,5)
+    XMLVM_CATCH_END(w45854aaac59b1b3)
+    XMLVM_RESTORE_EXCEPTION_ENV(w45854aaac59b1b3)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label5:;
     XMLVM_SOURCE_POSITION("URI.java", 1601)
-    java_lang_Thread* curThread_w45849aaac59b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w45849aaac59b1b7->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w45854aaac59b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w45854aaac59b1b7->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("URI.java", 1602)
     _r1.o = __NEW_java_lang_RuntimeException();
     //java_io_UnsupportedEncodingException_toString__[5]
@@ -3526,20 +3757,20 @@ JAVA_OBJECT java_net_URI_decode___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label4:;
-    XMLVM_TRY_BEGIN(w45849aaac60b1c11)
+    XMLVM_TRY_BEGIN(w45854aaac60b1c11)
     // Begin try
     _r0.o = java_net_URIEncoderDecoder_decode___java_lang_String(_r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w45849aaac60b1c11)
-        XMLVM_CATCH_SPECIFIC(w45849aaac60b1c11,java_io_UnsupportedEncodingException,9)
-    XMLVM_CATCH_END(w45849aaac60b1c11)
-    XMLVM_RESTORE_EXCEPTION_ENV(w45849aaac60b1c11)
+    XMLVM_CATCH_BEGIN(w45854aaac60b1c11)
+        XMLVM_CATCH_SPECIFIC(w45854aaac60b1c11,java_io_UnsupportedEncodingException,9)
+    XMLVM_CATCH_END(w45854aaac60b1c11)
+    XMLVM_RESTORE_EXCEPTION_ENV(w45854aaac60b1c11)
     goto label3;
     label9:;
     XMLVM_SOURCE_POSITION("URI.java", 1613)
-    java_lang_Thread* curThread_w45849aaac60b1c15 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w45849aaac60b1c15->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w45854aaac60b1c15 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w45854aaac60b1c15->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("URI.java", 1614)
     _r1.o = __NEW_java_lang_RuntimeException();
     //java_io_UnsupportedEncodingException_toString__[5]
@@ -3578,6 +3809,7 @@ JAVA_OBJECT java_net_URI_toString__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1635)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.string_;
     if (_r0.o != JAVA_NULL) goto label52;
     XMLVM_SOURCE_POSITION("URI.java", 1636)
@@ -3585,9 +3817,11 @@ JAVA_OBJECT java_net_URI_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("URI.java", 1637)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.scheme_;
     if (_r1.o == JAVA_NULL) goto label23;
     XMLVM_SOURCE_POSITION("URI.java", 1638)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.scheme_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
@@ -3598,14 +3832,17 @@ JAVA_OBJECT java_net_URI_toString__(JAVA_OBJECT me)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r1.i);
     label23:;
     XMLVM_SOURCE_POSITION("URI.java", 1641)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_net_URI*) _r2.o)->fields.java_net_URI.opaque_;
     if (_r1.i == 0) goto label55;
     XMLVM_SOURCE_POSITION("URI.java", 1642)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.schemespecificpart_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label32:;
     XMLVM_SOURCE_POSITION("URI.java", 1659)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.fragment_;
     if (_r1.o == JAVA_NULL) goto label46;
     XMLVM_SOURCE_POSITION("URI.java", 1660)
@@ -3614,6 +3851,7 @@ JAVA_OBJECT java_net_URI_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("URI.java", 1661)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.fragment_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
@@ -3622,14 +3860,17 @@ JAVA_OBJECT java_net_URI_toString__(JAVA_OBJECT me)
     //java_lang_StringBuilder_toString__[5]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[5])(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((java_net_URI*) _r2.o)->fields.java_net_URI.string_ = _r0.o;
     label52:;
     XMLVM_SOURCE_POSITION("URI.java", 1666)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.string_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label55:;
     XMLVM_SOURCE_POSITION("URI.java", 1644)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.authority_;
     if (_r1.o == JAVA_NULL) goto label69;
     XMLVM_SOURCE_POSITION("URI.java", 1645)
@@ -3638,19 +3879,23 @@ JAVA_OBJECT java_net_URI_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("URI.java", 1646)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.authority_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label69:;
     XMLVM_SOURCE_POSITION("URI.java", 1649)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.path_;
     if (_r1.o == JAVA_NULL) goto label78;
     XMLVM_SOURCE_POSITION("URI.java", 1650)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.path_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label78:;
     XMLVM_SOURCE_POSITION("URI.java", 1653)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.query_;
     if (_r1.o == JAVA_NULL) goto label32;
     XMLVM_SOURCE_POSITION("URI.java", 1654)
@@ -3659,6 +3904,7 @@ JAVA_OBJECT java_net_URI_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("URI.java", 1655)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_URI*) _r2.o)->fields.java_net_URI.query_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
@@ -3680,9 +3926,11 @@ JAVA_OBJECT java_net_URI_getHashString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("URI.java", 1676)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.scheme_;
     if (_r1.o == JAVA_NULL) goto label23;
     XMLVM_SOURCE_POSITION("URI.java", 1677)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.scheme_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_String_toLowerCase__(_r1.o);
@@ -3695,14 +3943,17 @@ JAVA_OBJECT java_net_URI_getHashString__(JAVA_OBJECT me)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r1.i);
     label23:;
     XMLVM_SOURCE_POSITION("URI.java", 1680)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_net_URI*) _r3.o)->fields.java_net_URI.opaque_;
     if (_r1.i == 0) goto label55;
     XMLVM_SOURCE_POSITION("URI.java", 1681)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.schemespecificpart_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label32:;
     XMLVM_SOURCE_POSITION("URI.java", 1708)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.fragment_;
     if (_r1.o == JAVA_NULL) goto label46;
     XMLVM_SOURCE_POSITION("URI.java", 1709)
@@ -3711,6 +3962,7 @@ JAVA_OBJECT java_net_URI_getHashString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("URI.java", 1710)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.fragment_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
@@ -3725,6 +3977,7 @@ JAVA_OBJECT java_net_URI_getHashString__(JAVA_OBJECT me)
     return _r0.o;
     label55:;
     XMLVM_SOURCE_POSITION("URI.java", 1683)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.authority_;
     if (_r1.o == JAVA_NULL) goto label73;
     XMLVM_SOURCE_POSITION("URI.java", 1684)
@@ -3733,22 +3986,27 @@ JAVA_OBJECT java_net_URI_getHashString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("URI.java", 1685)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.host_;
     if (_r1.o != JAVA_NULL) goto label97;
     XMLVM_SOURCE_POSITION("URI.java", 1686)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.authority_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label73:;
     XMLVM_SOURCE_POSITION("URI.java", 1698)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.path_;
     if (_r1.o == JAVA_NULL) goto label82;
     XMLVM_SOURCE_POSITION("URI.java", 1699)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.path_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label82:;
     XMLVM_SOURCE_POSITION("URI.java", 1702)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.query_;
     if (_r1.o == JAVA_NULL) goto label32;
     XMLVM_SOURCE_POSITION("URI.java", 1703)
@@ -3757,16 +4015,19 @@ JAVA_OBJECT java_net_URI_getHashString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("URI.java", 1704)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.query_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     goto label32;
     label97:;
     XMLVM_SOURCE_POSITION("URI.java", 1688)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.userinfo_;
     if (_r1.o == JAVA_NULL) goto label125;
     XMLVM_SOURCE_POSITION("URI.java", 1689)
     _r1.o = __NEW_java_lang_StringBuilder();
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.userinfo_;
     _r2.o = java_lang_String_valueOf___java_lang_Object(_r2.o);
     XMLVM_CHECK_NPE(1)
@@ -3782,12 +4043,14 @@ JAVA_OBJECT java_net_URI_getHashString__(JAVA_OBJECT me)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label125:;
     XMLVM_SOURCE_POSITION("URI.java", 1691)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.host_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_String_toLowerCase__(_r1.o);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("URI.java", 1692)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_net_URI*) _r3.o)->fields.java_net_URI.port_;
     _r2.i = -1;
     if (_r1.i == _r2.i) goto label73;
@@ -3797,6 +4060,7 @@ JAVA_OBJECT java_net_URI_getHashString__(JAVA_OBJECT me)
     _r2.o = xmlvm_create_java_string_from_pool(60);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_net_URI*) _r3.o)->fields.java_net_URI.port_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___int(_r1.o, _r2.i);
@@ -3819,6 +4083,7 @@ JAVA_OBJECT java_net_URI_toURL__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("URI.java", 1725)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_net_URI*) _r3.o)->fields.java_net_URI.absolute_;
     if (_r0.i != 0) goto label43;
     XMLVM_SOURCE_POSITION("URI.java", 1726)
@@ -3873,29 +4138,30 @@ void java_net_URI_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, JAVA_OB
     XMLVM_SOURCE_POSITION("URI.java", 1734)
     XMLVM_CHECK_NPE(4)
     java_io_ObjectInputStream_defaultReadObject__(_r4.o);
-    XMLVM_TRY_BEGIN(w45849aaac65b1b5)
+    XMLVM_TRY_BEGIN(w45854aaac65b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("URI.java", 1736)
     _r0.o = __NEW_java_net_URI_Helper();
     _r1.o = JAVA_NULL;
     XMLVM_CHECK_NPE(0)
     java_net_URI_Helper___INIT____java_net_URI_java_net_URI_Helper(_r0.o, _r3.o, _r1.o);
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_URI*) _r3.o)->fields.java_net_URI.string_;
     _r2.i = 0;
     java_net_URI_Helper_access$1___java_net_URI_Helper_java_lang_String_boolean(_r0.o, _r1.o, _r2.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w45849aaac65b1b5)
-        XMLVM_CATCH_SPECIFIC(w45849aaac65b1b5,java_net_URISyntaxException,16)
-    XMLVM_CATCH_END(w45849aaac65b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w45849aaac65b1b5)
+    XMLVM_CATCH_BEGIN(w45854aaac65b1b5)
+        XMLVM_CATCH_SPECIFIC(w45854aaac65b1b5,java_net_URISyntaxException,16)
+    XMLVM_CATCH_END(w45854aaac65b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w45854aaac65b1b5)
     XMLVM_SOURCE_POSITION("URI.java", 1740)
     XMLVM_EXIT_METHOD()
     return;
     label16:;
     XMLVM_SOURCE_POSITION("URI.java", 1737)
-    java_lang_Thread* curThread_w45849aaac65b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w45849aaac65b1c10->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w45854aaac65b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w45854aaac65b1c10->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("URI.java", 1738)
     _r1.o = __NEW_java_io_IOException();
     //java_net_URISyntaxException_toString__[5]
@@ -3956,6 +4222,7 @@ void java_net_URI_access$1___java_net_URI_java_lang_String(JAVA_OBJECT n1, JAVA_
     _r0.o = n1;
     _r1.o = n2;
     XMLVM_SOURCE_POSITION("URI.java", 48)
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.string_ = _r1.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -3972,6 +4239,7 @@ void java_net_URI_access$2___java_net_URI_java_lang_String(JAVA_OBJECT n1, JAVA_
     _r0.o = n1;
     _r1.o = n2;
     XMLVM_SOURCE_POSITION("URI.java", 66)
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.fragment_ = _r1.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -3987,6 +4255,7 @@ JAVA_OBJECT java_net_URI_access$3___java_net_URI(JAVA_OBJECT n1)
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("URI.java", 66)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URI*) _r1.o)->fields.java_net_URI.fragment_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -4003,6 +4272,7 @@ void java_net_URI_access$4___java_net_URI_boolean(JAVA_OBJECT n1, JAVA_BOOLEAN n
     _r0.o = n1;
     _r1.i = n2;
     XMLVM_SOURCE_POSITION("URI.java", 70)
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.absolute_ = _r1.i;
     XMLVM_EXIT_METHOD()
     return;
@@ -4019,6 +4289,7 @@ void java_net_URI_access$5___java_net_URI_java_lang_String(JAVA_OBJECT n1, JAVA_
     _r0.o = n1;
     _r1.o = n2;
     XMLVM_SOURCE_POSITION("URI.java", 50)
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.scheme_ = _r1.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -4034,6 +4305,7 @@ JAVA_OBJECT java_net_URI_access$6___java_net_URI(JAVA_OBJECT n1)
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("URI.java", 50)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URI*) _r1.o)->fields.java_net_URI.scheme_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -4050,6 +4322,7 @@ void java_net_URI_access$7___java_net_URI_java_lang_String(JAVA_OBJECT n1, JAVA_
     _r0.o = n1;
     _r1.o = n2;
     XMLVM_SOURCE_POSITION("URI.java", 52)
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.schemespecificpart_ = _r1.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -4065,6 +4338,7 @@ JAVA_OBJECT java_net_URI_access$8___java_net_URI(JAVA_OBJECT n1)
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("URI.java", 52)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URI*) _r1.o)->fields.java_net_URI.schemespecificpart_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -4081,6 +4355,7 @@ void java_net_URI_access$9___java_net_URI_boolean(JAVA_OBJECT n1, JAVA_BOOLEAN n
     _r0.o = n1;
     _r1.i = n2;
     XMLVM_SOURCE_POSITION("URI.java", 68)
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.opaque_ = _r1.i;
     XMLVM_EXIT_METHOD()
     return;
@@ -4097,6 +4372,7 @@ void java_net_URI_access$10___java_net_URI_java_lang_String(JAVA_OBJECT n1, JAVA
     _r0.o = n1;
     _r1.o = n2;
     XMLVM_SOURCE_POSITION("URI.java", 64)
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.query_ = _r1.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -4112,6 +4388,7 @@ JAVA_OBJECT java_net_URI_access$11___java_net_URI(JAVA_OBJECT n1)
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("URI.java", 64)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URI*) _r1.o)->fields.java_net_URI.query_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -4128,6 +4405,7 @@ void java_net_URI_access$12___java_net_URI_java_lang_String(JAVA_OBJECT n1, JAVA
     _r0.o = n1;
     _r1.o = n2;
     XMLVM_SOURCE_POSITION("URI.java", 54)
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.authority_ = _r1.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -4144,6 +4422,7 @@ void java_net_URI_access$13___java_net_URI_java_lang_String(JAVA_OBJECT n1, JAVA
     _r0.o = n1;
     _r1.o = n2;
     XMLVM_SOURCE_POSITION("URI.java", 62)
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.path_ = _r1.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -4159,6 +4438,7 @@ JAVA_OBJECT java_net_URI_access$14___java_net_URI(JAVA_OBJECT n1)
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("URI.java", 54)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URI*) _r1.o)->fields.java_net_URI.authority_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -4174,6 +4454,7 @@ JAVA_OBJECT java_net_URI_access$15___java_net_URI(JAVA_OBJECT n1)
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("URI.java", 62)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_URI*) _r1.o)->fields.java_net_URI.path_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -4190,6 +4471,7 @@ void java_net_URI_access$16___java_net_URI_java_lang_String(JAVA_OBJECT n1, JAVA
     _r0.o = n1;
     _r1.o = n2;
     XMLVM_SOURCE_POSITION("URI.java", 56)
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.userinfo_ = _r1.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -4206,6 +4488,7 @@ void java_net_URI_access$17___java_net_URI_java_lang_String(JAVA_OBJECT n1, JAVA
     _r0.o = n1;
     _r1.o = n2;
     XMLVM_SOURCE_POSITION("URI.java", 58)
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.host_ = _r1.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -4222,6 +4505,7 @@ void java_net_URI_access$18___java_net_URI_int(JAVA_OBJECT n1, JAVA_INT n2)
     _r0.o = n1;
     _r1.i = n2;
     XMLVM_SOURCE_POSITION("URI.java", 60)
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.port_ = _r1.i;
     XMLVM_EXIT_METHOD()
     return;
@@ -4238,6 +4522,7 @@ void java_net_URI_access$19___java_net_URI_boolean(JAVA_OBJECT n1, JAVA_BOOLEAN 
     _r0.o = n1;
     _r1.i = n2;
     XMLVM_SOURCE_POSITION("URI.java", 72)
+    XMLVM_CHECK_NPE(0)
     ((java_net_URI*) _r0.o)->fields.java_net_URI.serverAuthority_ = _r1.i;
     XMLVM_EXIT_METHOD()
     return;

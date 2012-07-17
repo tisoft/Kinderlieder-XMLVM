@@ -242,6 +242,7 @@ void java_io_EmulatedFields_ObjectSlot___INIT___(JAVA_OBJECT me)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 43)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((java_io_EmulatedFields_ObjectSlot*) _r1.o)->fields.java_io_EmulatedFields_ObjectSlot.defaulted_ = _r0.i;
     XMLVM_EXIT_METHOD()
     return;
@@ -256,6 +257,7 @@ JAVA_OBJECT java_io_EmulatedFields_ObjectSlot_getField__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 51)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFields_ObjectSlot*) _r1.o)->fields.java_io_EmulatedFields_ObjectSlot.field_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -270,6 +272,7 @@ JAVA_OBJECT java_io_EmulatedFields_ObjectSlot_getFieldValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 60)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFields_ObjectSlot*) _r1.o)->fields.java_io_EmulatedFields_ObjectSlot.fieldValue_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

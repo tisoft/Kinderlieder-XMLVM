@@ -283,6 +283,7 @@ void gnu_xml_xpath_ConcatFunction___INIT____java_util_List(JAVA_OBJECT me, JAVA_
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_Expr___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("ConcatFunction.java", 61)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_ConcatFunction*) _r0.o)->fields.gnu_xml_xpath_ConcatFunction.args_ = _r1.o;
     XMLVM_SOURCE_POSITION("ConcatFunction.java", 62)
     XMLVM_EXIT_METHOD()
@@ -310,6 +311,7 @@ JAVA_OBJECT gnu_xml_xpath_ConcatFunction_evaluate___org_w3c_dom_Node_int_int(JAV
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("ConcatFunction.java", 68)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_xpath_ConcatFunction*) _r3.o)->fields.gnu_xml_xpath_ConcatFunction.args_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_iterator__])(_r1.o);
@@ -352,6 +354,7 @@ JAVA_OBJECT gnu_xml_xpath_ConcatFunction_clone___java_lang_Object(JAVA_OBJECT me
     _r4.o = me;
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("ConcatFunction.java", 78)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_ConcatFunction*) _r4.o)->fields.gnu_xml_xpath_ConcatFunction.args_;
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_size__])(_r0.o);
@@ -372,6 +375,7 @@ JAVA_OBJECT gnu_xml_xpath_ConcatFunction_clone___java_lang_Object(JAVA_OBJECT me
     return _r0.o;
     label21:;
     XMLVM_SOURCE_POSITION("ConcatFunction.java", 82)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_ConcatFunction*) _r4.o)->fields.gnu_xml_xpath_ConcatFunction.args_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_get___int])(_r0.o, _r3.i);
@@ -398,6 +402,7 @@ JAVA_BOOLEAN gnu_xml_xpath_ConcatFunction_references___javax_xml_namespace_QName
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("ConcatFunction.java", 89)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_xpath_ConcatFunction*) _r2.o)->fields.gnu_xml_xpath_ConcatFunction.args_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_iterator__])(_r0.o);
@@ -442,6 +447,7 @@ JAVA_OBJECT gnu_xml_xpath_ConcatFunction_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("ConcatFunction.java", 102)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_xpath_ConcatFunction*) _r4.o)->fields.gnu_xml_xpath_ConcatFunction.args_;
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_size__])(_r1.o);
@@ -470,6 +476,7 @@ JAVA_OBJECT gnu_xml_xpath_ConcatFunction_toString__(JAVA_OBJECT me)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((gnu_java_lang_CPStringBuilder*) _r0.o)->tib->vtable[6])(_r0.o, _r3.i);
     label33:;
     XMLVM_SOURCE_POSITION("ConcatFunction.java", 109)
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((gnu_xml_xpath_ConcatFunction*) _r4.o)->fields.gnu_xml_xpath_ConcatFunction.args_;
     XMLVM_CHECK_NPE(3)
     _r3.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_get___int])(_r3.o, _r2.i);

@@ -265,12 +265,14 @@ void java_util_Collections_SingletonMap_1_1___INIT____java_util_Collections_Sing
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 1)
+    XMLVM_CHECK_NPE(1)
     ((java_util_Collections_SingletonMap_1_1*) _r1.o)->fields.java_util_Collections_SingletonMap_1_1.this_2_ = _r2.o;
     XMLVM_SOURCE_POSITION("Collections.java", 372)
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("Collections.java", 373)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Collections_SingletonMap_1_1*) _r1.o)->fields.java_util_Collections_SingletonMap_1_1.hasNext_ = _r0.i;
     XMLVM_EXIT_METHOD()
     return;
@@ -285,6 +287,7 @@ JAVA_BOOLEAN java_util_Collections_SingletonMap_1_1_hasNext__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 376)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_Collections_SingletonMap_1_1*) _r1.o)->fields.java_util_Collections_SingletonMap_1_1.hasNext_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -301,6 +304,7 @@ JAVA_OBJECT java_util_Collections_SingletonMap_1_1_next__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 380)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_Collections_SingletonMap_1_1*) _r3.o)->fields.java_util_Collections_SingletonMap_1_1.hasNext_;
     if (_r0.i != 0) goto label10;
     XMLVM_SOURCE_POSITION("Collections.java", 381)
@@ -311,14 +315,19 @@ JAVA_OBJECT java_util_Collections_SingletonMap_1_1_next__(JAVA_OBJECT me)
     label10:;
     XMLVM_SOURCE_POSITION("Collections.java", 384)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(3)
     ((java_util_Collections_SingletonMap_1_1*) _r3.o)->fields.java_util_Collections_SingletonMap_1_1.hasNext_ = _r0.i;
     XMLVM_SOURCE_POSITION("Collections.java", 385)
     _r0.o = __NEW_java_util_Collections_SingletonMap_1_1_1();
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Collections_SingletonMap_1_1*) _r3.o)->fields.java_util_Collections_SingletonMap_1_1.this_2_;
     _r1.o = java_util_Collections_SingletonMap_1_access$0___java_util_Collections_SingletonMap_1(_r1.o);
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_Collections_SingletonMap*) _r1.o)->fields.java_util_Collections_SingletonMap.k_;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_Collections_SingletonMap_1_1*) _r3.o)->fields.java_util_Collections_SingletonMap_1_1.this_2_;
     _r2.o = java_util_Collections_SingletonMap_1_access$0___java_util_Collections_SingletonMap_1(_r2.o);
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_util_Collections_SingletonMap*) _r2.o)->fields.java_util_Collections_SingletonMap.v_;
     XMLVM_CHECK_NPE(0)
     java_util_Collections_SingletonMap_1_1_1___INIT____java_util_Collections_SingletonMap_1_1_java_lang_Object_java_lang_Object(_r0.o, _r3.o, _r1.o, _r2.o);

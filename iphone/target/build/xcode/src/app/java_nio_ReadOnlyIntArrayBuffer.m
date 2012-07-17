@@ -426,19 +426,24 @@ JAVA_OBJECT java_nio_ReadOnlyIntArrayBuffer_copy___java_nio_IntArrayBuffer_int(J
     XMLVM_SOURCE_POSITION("ReadOnlyIntArrayBuffer.java", 36)
     XMLVM_CHECK_NPE(4)
     _r1.i = java_nio_Buffer_capacity__(_r4.o);
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_nio_IntArrayBuffer*) _r4.o)->fields.java_nio_IntArrayBuffer.backingArray_;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_nio_IntArrayBuffer*) _r4.o)->fields.java_nio_IntArrayBuffer.offset_;
     XMLVM_CHECK_NPE(0)
     java_nio_ReadOnlyIntArrayBuffer___INIT____int_int_1ARRAY_int(_r0.o, _r1.i, _r2.o, _r3.i);
     XMLVM_SOURCE_POSITION("ReadOnlyIntArrayBuffer.java", 37)
     XMLVM_CHECK_NPE(4)
     _r1.i = java_nio_Buffer_limit__(_r4.o);
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.limit_ = _r1.i;
     XMLVM_SOURCE_POSITION("ReadOnlyIntArrayBuffer.java", 38)
     XMLVM_CHECK_NPE(4)
     _r1.i = java_nio_Buffer_position__(_r4.o);
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.position_ = _r1.i;
     XMLVM_SOURCE_POSITION("ReadOnlyIntArrayBuffer.java", 39)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.mark_ = _r5.i;
     XMLVM_SOURCE_POSITION("ReadOnlyIntArrayBuffer.java", 40)
     XMLVM_EXIT_METHOD()
@@ -506,6 +511,7 @@ JAVA_OBJECT java_nio_ReadOnlyIntArrayBuffer_duplicate__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReadOnlyIntArrayBuffer.java", 59)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.mark_;
     _r0.o = java_nio_ReadOnlyIntArrayBuffer_copy___java_nio_IntArrayBuffer_int(_r1.o, _r0.i);
     XMLVM_EXIT_METHOD()
@@ -660,9 +666,12 @@ JAVA_OBJECT java_nio_ReadOnlyIntArrayBuffer_slice__(JAVA_OBJECT me)
     _r0.o = __NEW_java_nio_ReadOnlyIntArrayBuffer();
     XMLVM_CHECK_NPE(5)
     _r1.i = java_nio_Buffer_remaining__(_r5.o);
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_nio_IntArrayBuffer*) _r5.o)->fields.java_nio_IntArrayBuffer.backingArray_;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_nio_IntArrayBuffer*) _r5.o)->fields.java_nio_IntArrayBuffer.offset_;
     XMLVM_SOURCE_POSITION("ReadOnlyIntArrayBuffer.java", 105)
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.position_;
     _r3.i = _r3.i + _r4.i;
     XMLVM_CHECK_NPE(0)

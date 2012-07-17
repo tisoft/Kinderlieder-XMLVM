@@ -263,6 +263,7 @@ void java_util_AbstractMap_2_1___INIT____java_util_AbstractMap_2(JAVA_OBJECT me,
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 1)
+    XMLVM_CHECK_NPE(1)
     ((java_util_AbstractMap_2_1*) _r1.o)->fields.java_util_AbstractMap_2_1.this_1_ = _r2.o;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 656)
     XMLVM_CHECK_NPE(1)
@@ -275,6 +276,7 @@ void java_util_AbstractMap_2_1___INIT____java_util_AbstractMap_2(JAVA_OBJECT me,
     XMLVM_SOURCE_POSITION("AbstractMap.java", 658)
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Set_iterator__])(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_AbstractMap_2_1*) _r1.o)->fields.java_util_AbstractMap_2_1.setIterator_ = _r0.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -289,6 +291,7 @@ JAVA_BOOLEAN java_util_AbstractMap_2_1_hasNext__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 661)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_AbstractMap_2_1*) _r1.o)->fields.java_util_AbstractMap_2_1.setIterator_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_hasNext__])(_r0.o);
@@ -305,6 +308,7 @@ JAVA_OBJECT java_util_AbstractMap_2_1_next__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 665)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_AbstractMap_2_1*) _r1.o)->fields.java_util_AbstractMap_2_1.setIterator_;
     XMLVM_CHECK_NPE(0)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_next__])(_r0.o);
@@ -324,6 +328,7 @@ void java_util_AbstractMap_2_1_remove__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 669)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_AbstractMap_2_1*) _r1.o)->fields.java_util_AbstractMap_2_1.setIterator_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_remove__])(_r0.o);

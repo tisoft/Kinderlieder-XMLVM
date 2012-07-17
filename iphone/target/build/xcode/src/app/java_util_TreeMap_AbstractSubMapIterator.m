@@ -358,36 +358,49 @@ void java_util_TreeMap_AbstractSubMapIterator___INIT____java_util_TreeMap_Naviga
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("TreeMap.java", 168)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.getToEnd_ = _r0.i;
     XMLVM_SOURCE_POSITION("TreeMap.java", 171)
+    XMLVM_CHECK_NPE(2)
     ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.subMap_ = _r3.o;
     XMLVM_SOURCE_POSITION("TreeMap.java", 172)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.subMap_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_TreeMap_NavigableSubMap*) _r0.o)->fields.java_util_TreeMap_NavigableSubMap.m_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_TreeMap*) _r0.o)->fields.java_util_TreeMap.modCount_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.expectedModCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("TreeMap.java", 174)
     _r0.o = java_util_TreeMap_NavigableSubMap_access$0___java_util_TreeMap_NavigableSubMap(_r3.o);
     XMLVM_SOURCE_POSITION("TreeMap.java", 175)
     if (_r0.o == JAVA_NULL) goto label48;
     XMLVM_SOURCE_POSITION("TreeMap.java", 176)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_TreeMap_NavigableSubMap*) _r3.o)->fields.java_util_TreeMap_NavigableSubMap.toEnd_;
     if (_r1.i == 0) goto label34;
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((java_util_MapEntry*) _r0.o)->fields.java_util_MapEntry.key_;
     XMLVM_CHECK_NPE(3)
     _r1.i = java_util_TreeMap_NavigableSubMap_checkUpperBound___java_lang_Object(_r3.o, _r1.o);
     if (_r1.i == 0) goto label48;
     label34:;
     XMLVM_SOURCE_POSITION("TreeMap.java", 178)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((java_util_TreeMap_Entry*) _r0.o)->fields.java_util_TreeMap_Entry.node_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.node_ = _r1.o;
     XMLVM_SOURCE_POSITION("TreeMap.java", 179)
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_TreeMap_Entry*) _r0.o)->fields.java_util_TreeMap_Entry.index_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.offset_ = _r0.i;
     XMLVM_SOURCE_POSITION("TreeMap.java", 180)
     //java_util_TreeMap_AbstractSubMapIterator_getBoundaryNode__[6]
     XMLVM_CHECK_NPE(2)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->tib->vtable[6])(_r2.o);
+    XMLVM_CHECK_NPE(2)
     ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.boundaryPair_ = _r0.o;
     label48:;
     XMLVM_SOURCE_POSITION("TreeMap.java", 183)
@@ -409,39 +422,58 @@ void java_util_TreeMap_AbstractSubMapIterator_remove__(JAVA_OBJECT me)
     _r5.o = me;
     _r4.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("TreeMap.java", 186)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.expectedModCount_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.subMap_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_TreeMap_NavigableSubMap*) _r1.o)->fields.java_util_TreeMap_NavigableSubMap.m_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_TreeMap*) _r1.o)->fields.java_util_TreeMap.modCount_;
     if (_r0.i != _r1.i) goto label174;
     XMLVM_SOURCE_POSITION("TreeMap.java", 187)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.expectedModCount_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.subMap_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_TreeMap_NavigableSubMap*) _r1.o)->fields.java_util_TreeMap_NavigableSubMap.m_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_TreeMap*) _r1.o)->fields.java_util_TreeMap.modCount_;
     if (_r0.i != _r1.i) goto label116;
     XMLVM_SOURCE_POSITION("TreeMap.java", 188)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.node_;
     if (_r0.o == JAVA_NULL) goto label117;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.node_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_TreeMap_Node*) _r0.o)->fields.java_util_TreeMap_Node.keys_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.offset_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     label33:;
     XMLVM_SOURCE_POSITION("TreeMap.java", 189)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.lastNode_;
     if (_r1.o == JAVA_NULL) goto label168;
     XMLVM_SOURCE_POSITION("TreeMap.java", 190)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.lastOffset_;
     XMLVM_SOURCE_POSITION("TreeMap.java", 191)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.lastNode_;
+    XMLVM_CHECK_NPE(2)
     _r2.i = ((java_util_TreeMap_Node*) _r2.o)->fields.java_util_TreeMap_Node.left_idx_;
     if (_r1.i != _r2.i) goto label119;
     XMLVM_SOURCE_POSITION("TreeMap.java", 192)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.subMap_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_TreeMap_NavigableSubMap*) _r1.o)->fields.java_util_TreeMap_NavigableSubMap.m_;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.lastNode_;
     XMLVM_CHECK_NPE(1)
     java_util_TreeMap_removeLeftmost___java_util_TreeMap_Node(_r1.o, _r2.o);
@@ -449,33 +481,46 @@ void java_util_TreeMap_AbstractSubMapIterator_remove__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("TreeMap.java", 203)
     if (_r0.o == JAVA_NULL) goto label86;
     XMLVM_SOURCE_POSITION("TreeMap.java", 205)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.subMap_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_TreeMap_NavigableSubMap*) _r1.o)->fields.java_util_TreeMap_NavigableSubMap.m_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_util_TreeMap_find___java_lang_Object(_r1.o, _r0.o);
     XMLVM_SOURCE_POSITION("TreeMap.java", 206)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.subMap_;
     XMLVM_CHECK_NPE(2)
     _r0.i = java_util_TreeMap_NavigableSubMap_isInRange___java_lang_Object(_r2.o, _r0.o);
     if (_r0.i == 0) goto label165;
     XMLVM_SOURCE_POSITION("TreeMap.java", 207)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_TreeMap_Entry*) _r1.o)->fields.java_util_TreeMap_Entry.node_;
+    XMLVM_CHECK_NPE(5)
     ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.node_ = _r0.o;
     XMLVM_SOURCE_POSITION("TreeMap.java", 208)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_TreeMap_Entry*) _r1.o)->fields.java_util_TreeMap_Entry.index_;
+    XMLVM_CHECK_NPE(5)
     ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.offset_ = _r0.i;
     XMLVM_SOURCE_POSITION("TreeMap.java", 209)
     //java_util_TreeMap_AbstractSubMapIterator_getBoundaryNode__[6]
     XMLVM_CHECK_NPE(5)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->tib->vtable[6])(_r5.o);
+    XMLVM_CHECK_NPE(5)
     ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.boundaryPair_ = _r0.o;
     label86:;
     XMLVM_SOURCE_POSITION("TreeMap.java", 214)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.node_;
     if (_r0.o == JAVA_NULL) goto label108;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.subMap_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.node_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_TreeMap_Node*) _r1.o)->fields.java_util_TreeMap_Node.keys_;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.offset_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
@@ -484,13 +529,17 @@ void java_util_TreeMap_AbstractSubMapIterator_remove__(JAVA_OBJECT me)
     _r0.i = java_util_TreeMap_NavigableSubMap_isInRange___java_lang_Object(_r0.o, _r1.o);
     if (_r0.i != 0) goto label108;
     XMLVM_SOURCE_POSITION("TreeMap.java", 215)
+    XMLVM_CHECK_NPE(5)
     ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.node_ = _r4.o;
     label108:;
     XMLVM_SOURCE_POSITION("TreeMap.java", 217)
+    XMLVM_CHECK_NPE(5)
     ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.lastNode_ = _r4.o;
     XMLVM_SOURCE_POSITION("TreeMap.java", 218)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.expectedModCount_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(5)
     ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.expectedModCount_ = _r0.i;
     label116:;
     XMLVM_SOURCE_POSITION("TreeMap.java", 226)
@@ -501,41 +550,56 @@ void java_util_TreeMap_AbstractSubMapIterator_remove__(JAVA_OBJECT me)
     goto label33;
     label119:;
     XMLVM_SOURCE_POSITION("TreeMap.java", 193)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.lastNode_;
+    XMLVM_CHECK_NPE(2)
     _r2.i = ((java_util_TreeMap_Node*) _r2.o)->fields.java_util_TreeMap_Node.right_idx_;
     if (_r1.i != _r2.i) goto label135;
     XMLVM_SOURCE_POSITION("TreeMap.java", 194)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.subMap_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_TreeMap_NavigableSubMap*) _r1.o)->fields.java_util_TreeMap_NavigableSubMap.m_;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.lastNode_;
     XMLVM_CHECK_NPE(1)
     java_util_TreeMap_removeRightmost___java_util_TreeMap_Node(_r1.o, _r2.o);
     goto label54;
     label135:;
     XMLVM_SOURCE_POSITION("TreeMap.java", 196)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.lastNode_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_TreeMap_Node*) _r0.o)->fields.java_util_TreeMap_Node.right_idx_;
     XMLVM_SOURCE_POSITION("TreeMap.java", 197)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.subMap_;
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_util_TreeMap_NavigableSubMap*) _r2.o)->fields.java_util_TreeMap_NavigableSubMap.m_;
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.lastNode_;
     XMLVM_CHECK_NPE(2)
     _r1.o = java_util_TreeMap_removeMiddleElement___java_util_TreeMap_Node_int(_r2.o, _r3.o, _r1.i);
     XMLVM_SOURCE_POSITION("TreeMap.java", 198)
     if (_r1.o != JAVA_NULL) goto label163;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.lastNode_;
+    XMLVM_CHECK_NPE(2)
     _r2.i = ((java_util_TreeMap_Node*) _r2.o)->fields.java_util_TreeMap_Node.right_idx_;
     if (_r0.i <= _r2.i) goto label163;
     XMLVM_SOURCE_POSITION("TreeMap.java", 200)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.offset_;
     _r2.i = 1;
     _r0.i = _r0.i - _r2.i;
+    XMLVM_CHECK_NPE(5)
     ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.offset_ = _r0.i;
     label163:;
     _r0 = _r1;
     goto label54;
     label165:;
     XMLVM_SOURCE_POSITION("TreeMap.java", 211)
+    XMLVM_CHECK_NPE(5)
     ((java_util_TreeMap_AbstractSubMapIterator*) _r5.o)->fields.java_util_TreeMap_AbstractSubMapIterator.node_ = _r4.o;
     goto label86;
     label168:;
@@ -562,9 +626,13 @@ void java_util_TreeMap_AbstractSubMapIterator_makeNext__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("TreeMap.java", 229)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.expectedModCount_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.subMap_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_TreeMap_NavigableSubMap*) _r1.o)->fields.java_util_TreeMap_NavigableSubMap.m_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_TreeMap*) _r1.o)->fields.java_util_TreeMap.modCount_;
     if (_r0.i == _r1.i) goto label16;
     XMLVM_SOURCE_POSITION("TreeMap.java", 230)
@@ -574,6 +642,7 @@ void java_util_TreeMap_AbstractSubMapIterator_makeNext__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label16:;
     XMLVM_SOURCE_POSITION("TreeMap.java", 231)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.node_;
     if (_r0.o != JAVA_NULL) goto label26;
     XMLVM_SOURCE_POSITION("TreeMap.java", 232)
@@ -583,33 +652,49 @@ void java_util_TreeMap_AbstractSubMapIterator_makeNext__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label26:;
     XMLVM_SOURCE_POSITION("TreeMap.java", 234)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.node_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.lastNode_ = _r0.o;
     XMLVM_SOURCE_POSITION("TreeMap.java", 235)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.offset_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.lastOffset_ = _r0.i;
     XMLVM_SOURCE_POSITION("TreeMap.java", 236)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.offset_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.lastNode_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_TreeMap_Node*) _r1.o)->fields.java_util_TreeMap_Node.right_idx_;
     if (_r0.i == _r1.i) goto label68;
     XMLVM_SOURCE_POSITION("TreeMap.java", 237)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.offset_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(2)
     ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.offset_ = _r0.i;
     label48:;
     XMLVM_SOURCE_POSITION("TreeMap.java", 244)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.boundaryPair_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_TreeMap_Entry*) _r0.o)->fields.java_util_TreeMap_Entry.node_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.lastNode_;
     if (_r0.o != _r1.o) goto label67;
     XMLVM_SOURCE_POSITION("TreeMap.java", 245)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.boundaryPair_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_TreeMap_Entry*) _r0.o)->fields.java_util_TreeMap_Entry.index_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.lastOffset_;
     if (_r0.i != _r1.i) goto label67;
     XMLVM_SOURCE_POSITION("TreeMap.java", 246)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(2)
     ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.node_ = _r0.o;
     label67:;
     XMLVM_SOURCE_POSITION("TreeMap.java", 248)
@@ -617,15 +702,22 @@ void java_util_TreeMap_AbstractSubMapIterator_makeNext__(JAVA_OBJECT me)
     return;
     label68:;
     XMLVM_SOURCE_POSITION("TreeMap.java", 239)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.node_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_TreeMap_Node*) _r0.o)->fields.java_util_TreeMap_Node.next_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.node_ = _r0.o;
     XMLVM_SOURCE_POSITION("TreeMap.java", 240)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.node_;
     if (_r0.o == JAVA_NULL) goto label48;
     XMLVM_SOURCE_POSITION("TreeMap.java", 241)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.node_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_TreeMap_Node*) _r0.o)->fields.java_util_TreeMap_Node.left_idx_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_TreeMap_AbstractSubMapIterator*) _r2.o)->fields.java_util_TreeMap_AbstractSubMapIterator.offset_ = _r0.i;
     goto label48;
     //XMLVM_END_WRAPPER
@@ -646,10 +738,12 @@ JAVA_OBJECT java_util_TreeMap_AbstractSubMapIterator_createEntry___java_util_Tre
     _r5.i = n2;
     XMLVM_SOURCE_POSITION("TreeMap.java", 252)
     _r0.o = __NEW_java_util_TreeMap_Entry();
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_TreeMap_Node*) _r4.o)->fields.java_util_TreeMap_Node.keys_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r5.i);
     _r1.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r5.i];
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_TreeMap_Node*) _r4.o)->fields.java_util_TreeMap_Node.values_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r5.i);
@@ -657,8 +751,10 @@ JAVA_OBJECT java_util_TreeMap_AbstractSubMapIterator_createEntry___java_util_Tre
     XMLVM_CHECK_NPE(0)
     java_util_TreeMap_Entry___INIT____java_lang_Object_java_lang_Object(_r0.o, _r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("TreeMap.java", 253)
+    XMLVM_CHECK_NPE(0)
     ((java_util_TreeMap_Entry*) _r0.o)->fields.java_util_TreeMap_Entry.node_ = _r4.o;
     XMLVM_SOURCE_POSITION("TreeMap.java", 254)
+    XMLVM_CHECK_NPE(0)
     ((java_util_TreeMap_Entry*) _r0.o)->fields.java_util_TreeMap_Entry.index_ = _r5.i;
     XMLVM_SOURCE_POSITION("TreeMap.java", 255)
     XMLVM_EXIT_METHOD()

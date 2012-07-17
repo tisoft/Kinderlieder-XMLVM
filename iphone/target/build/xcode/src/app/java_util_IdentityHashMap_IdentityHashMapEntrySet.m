@@ -347,6 +347,7 @@ void java_util_IdentityHashMap_IdentityHashMapEntrySet___INIT____java_util_Ident
     XMLVM_CHECK_NPE(0)
     java_util_AbstractSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 191)
+    XMLVM_CHECK_NPE(0)
     ((java_util_IdentityHashMap_IdentityHashMapEntrySet*) _r0.o)->fields.java_util_IdentityHashMap_IdentityHashMapEntrySet.associatedMap_ = _r1.o;
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 192)
     XMLVM_EXIT_METHOD()
@@ -362,6 +363,7 @@ JAVA_OBJECT java_util_IdentityHashMap_IdentityHashMapEntrySet_hashMap__(JAVA_OBJ
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 195)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_IdentityHashMap_IdentityHashMapEntrySet*) _r1.o)->fields.java_util_IdentityHashMap_IdentityHashMapEntrySet.associatedMap_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -376,7 +378,9 @@ JAVA_INT java_util_IdentityHashMap_IdentityHashMapEntrySet_size__(JAVA_OBJECT me
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 200)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_IdentityHashMap_IdentityHashMapEntrySet*) _r1.o)->fields.java_util_IdentityHashMap_IdentityHashMapEntrySet.associatedMap_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_IdentityHashMap*) _r0.o)->fields.java_util_IdentityHashMap.size_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -391,6 +395,7 @@ void java_util_IdentityHashMap_IdentityHashMapEntrySet_clear__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 205)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_IdentityHashMap_IdentityHashMapEntrySet*) _r1.o)->fields.java_util_IdentityHashMap_IdentityHashMapEntrySet.associatedMap_;
     //java_util_IdentityHashMap_clear__[6]
     XMLVM_CHECK_NPE(0)
@@ -417,6 +422,7 @@ JAVA_BOOLEAN java_util_IdentityHashMap_IdentityHashMapEntrySet_remove___java_lan
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_IdentityHashMap_IdentityHashMapEntrySet*) _r2.o)->tib->vtable[10])(_r2.o, _r3.o);
     if (_r0.i == 0) goto label19;
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 211)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_IdentityHashMap_IdentityHashMapEntrySet*) _r2.o)->fields.java_util_IdentityHashMap_IdentityHashMapEntrySet.associatedMap_;
     _r3.o = _r3.o;
     XMLVM_CHECK_NPE(3)
@@ -454,6 +460,7 @@ JAVA_BOOLEAN java_util_IdentityHashMap_IdentityHashMapEntrySet_contains___java_l
     _r1.i = XMLVM_ISA(_r5.o, __CLASS_java_util_Map_Entry);
     if (_r1.i == 0) goto label31;
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 220)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_IdentityHashMap_IdentityHashMapEntrySet*) _r4.o)->fields.java_util_IdentityHashMap_IdentityHashMapEntrySet.associatedMap_;
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 221)
     _r0 = _r5;
@@ -498,6 +505,7 @@ JAVA_OBJECT java_util_IdentityHashMap_IdentityHashMapEntrySet_iterator__(JAVA_OB
     XMLVM_CHECK_NPE(1)
     java_util_IdentityHashMap_IdentityHashMapEntrySet_1___INIT____java_util_IdentityHashMap_IdentityHashMapEntrySet(_r1.o, _r3.o);
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 235)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_IdentityHashMap_IdentityHashMapEntrySet*) _r3.o)->fields.java_util_IdentityHashMap_IdentityHashMapEntrySet.associatedMap_;
     XMLVM_CHECK_NPE(0)
     java_util_IdentityHashMap_IdentityHashMapIterator___INIT____java_util_MapEntry_Type_java_util_IdentityHashMap(_r0.o, _r1.o, _r2.o);

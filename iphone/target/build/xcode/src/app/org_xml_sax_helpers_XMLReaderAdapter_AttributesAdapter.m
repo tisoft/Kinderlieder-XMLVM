@@ -333,6 +333,7 @@ void org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter___INIT____org_xml_sa
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 448)
+    XMLVM_CHECK_NPE(0)
     ((org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter*) _r0.o)->fields.org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter.this_0_ = _r1.o;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 446)
     XMLVM_CHECK_NPE(0)
@@ -351,6 +352,7 @@ void org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter_setAttributes___org_
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 458)
+    XMLVM_CHECK_NPE(0)
     ((org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter*) _r0.o)->fields.org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter.attributes_ = _r1.o;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 459)
     XMLVM_EXIT_METHOD()
@@ -366,6 +368,7 @@ JAVA_INT org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter_getLength__(JAVA
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 470)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter.attributes_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_Attributes_getLength__])(_r0.o);
@@ -384,6 +387,7 @@ JAVA_OBJECT org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter_getName___int
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 482)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter.attributes_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_Attributes_getQName___int])(_r0.o, _r2.i);
@@ -402,6 +406,7 @@ JAVA_OBJECT org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter_getType___int
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 494)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter.attributes_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_Attributes_getType___int])(_r0.o, _r2.i);
@@ -420,6 +425,7 @@ JAVA_OBJECT org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter_getValue___in
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 506)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter.attributes_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_Attributes_getValue___int])(_r0.o, _r2.i);
@@ -438,6 +444,7 @@ JAVA_OBJECT org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter_getType___jav
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 518)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter.attributes_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_Attributes_getType___java_lang_String])(_r0.o, _r2.o);
@@ -456,6 +463,7 @@ JAVA_OBJECT org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter_getValue___ja
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 530)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter.attributes_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_Attributes_getValue___java_lang_String])(_r0.o, _r2.o);

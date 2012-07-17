@@ -289,6 +289,7 @@ void my_kinderlieder_ShopViewController_3___INIT____my_kinderlieder_ShopViewCont
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("ShopViewController.java", 52)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_ShopViewController_3*) _r0.o)->fields.my_kinderlieder_ShopViewController_3.this_0_ = _r1.o;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UITableViewDataSource___INIT___(_r0.o);
@@ -336,11 +337,13 @@ JAVA_OBJECT my_kinderlieder_ShopViewController_3_cellForRowAtIndexPath___org_xml
     XMLVM_SOURCE_POSITION("ShopViewController.java", 59)
     XMLVM_CHECK_NPE(1)
     _r4.o = org_xmlvm_iphone_UITableViewCell_getTextLabel__(_r1.o);
+    XMLVM_CHECK_NPE(3)
     _r5.o = ((my_kinderlieder_Product*) _r3.o)->fields.my_kinderlieder_Product.name_;
     XMLVM_CHECK_NPE(4)
     org_xmlvm_iphone_UILabel_setText___java_lang_String(_r4.o, _r5.o);
     XMLVM_SOURCE_POSITION("ShopViewController.java", 60)
     _r4.o = my_kinderlieder_ShopViewController_5_GET__SwitchMap_my_kinderlieder_Product_State();
+    XMLVM_CHECK_NPE(3)
     _r5.o = ((my_kinderlieder_Product*) _r3.o)->fields.my_kinderlieder_Product.state_;
     XMLVM_CHECK_NPE(5)
     _r5.i = java_lang_Enum_ordinal__(_r5.o);
@@ -357,6 +360,7 @@ JAVA_OBJECT my_kinderlieder_ShopViewController_3_cellForRowAtIndexPath___org_xml
     }
     label50:;
     XMLVM_SOURCE_POSITION("ShopViewController.java", 87)
+    XMLVM_CHECK_NPE(3)
     _r4.o = ((my_kinderlieder_Product*) _r3.o)->fields.my_kinderlieder_Product.state_;
     _r5.o = my_kinderlieder_Product_State_GET_INFO();
     if (_r4.o == _r5.o) goto label202;
@@ -366,6 +370,7 @@ JAVA_OBJECT my_kinderlieder_ShopViewController_3_cellForRowAtIndexPath___org_xml
     org_xmlvm_iphone_UITableViewCell_setAccessoryType___int(_r1.o, _r4.i);
     label60:;
     XMLVM_SOURCE_POSITION("ShopViewController.java", 93)
+    XMLVM_CHECK_NPE(8)
     _r4.o = ((my_kinderlieder_ShopViewController_3*) _r8.o)->fields.my_kinderlieder_ShopViewController_3.this_0_;
     _r4.o = my_kinderlieder_ShopViewController_access$100___my_kinderlieder_ShopViewController(_r4.o);
     XMLVM_CHECK_NPE(4)
@@ -403,6 +408,7 @@ JAVA_OBJECT my_kinderlieder_ShopViewController_3_cellForRowAtIndexPath___org_xml
     _r6.o = xmlvm_create_java_string_from_pool(1067);
     XMLVM_CHECK_NPE(5)
     _r5.o = java_lang_StringBuilder_append___java_lang_String(_r5.o, _r6.o);
+    XMLVM_CHECK_NPE(3)
     _r6.i = ((my_kinderlieder_Product*) _r3.o)->fields.my_kinderlieder_Product.percent_;
     XMLVM_CHECK_NPE(5)
     _r5.o = java_lang_StringBuilder_append___int(_r5.o, _r6.i);
@@ -457,6 +463,7 @@ JAVA_OBJECT my_kinderlieder_ShopViewController_3_cellForRowAtIndexPath___org_xml
     _r6.o = xmlvm_create_java_string_from_pool(0);
     XMLVM_CHECK_NPE(5)
     _r5.o = java_lang_StringBuilder_append___java_lang_String(_r5.o, _r6.o);
+    XMLVM_CHECK_NPE(2)
     _r6.o = ((my_kinderlieder_InAppProduct*) _r2.o)->fields.my_kinderlieder_InAppProduct.skProduct_;
     XMLVM_CHECK_NPE(6)
     _r6.d = org_xmlvm_iphone_SKProduct_getPrice__(_r6.o);
@@ -544,6 +551,7 @@ JAVA_BOOLEAN my_kinderlieder_ShopViewController_3_canEditRowAtIndexPath___org_xm
     XMLVM_EXIT_METHOD()
     return _r1.i;
     label25:;
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((my_kinderlieder_Product*) _r0.o)->fields.my_kinderlieder_Product.state_;
     _r2.o = my_kinderlieder_Product_State_GET_INSTALLED();
     if (_r1.o != _r2.o) goto label33;

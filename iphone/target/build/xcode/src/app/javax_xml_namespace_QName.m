@@ -435,6 +435,7 @@ void javax_xml_namespace_QName___INIT____java_lang_String_java_lang_String_java_
     java_lang_Object___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("QName.java", 62)
     _r0.i = -1;
+    XMLVM_CHECK_NPE(3)
     ((javax_xml_namespace_QName*) _r3.o)->fields.javax_xml_namespace_QName.hashCode_ = _r0.i;
     XMLVM_SOURCE_POSITION("QName.java", 71)
     if (_r4.o != JAVA_NULL) goto label63;
@@ -460,10 +461,13 @@ void javax_xml_namespace_QName___INIT____java_lang_String_java_lang_String_java_
     _r0 = _r2;
     label27:;
     XMLVM_SOURCE_POSITION("QName.java", 84)
+    XMLVM_CHECK_NPE(3)
     ((javax_xml_namespace_QName*) _r3.o)->fields.javax_xml_namespace_QName.namespaceURI_ = _r1.o;
     XMLVM_SOURCE_POSITION("QName.java", 85)
+    XMLVM_CHECK_NPE(3)
     ((javax_xml_namespace_QName*) _r3.o)->fields.javax_xml_namespace_QName.localPart_ = _r5.o;
     XMLVM_SOURCE_POSITION("QName.java", 86)
+    XMLVM_CHECK_NPE(3)
     ((javax_xml_namespace_QName*) _r3.o)->fields.javax_xml_namespace_QName.prefix_ = _r0.o;
     XMLVM_SOURCE_POSITION("QName.java", 87)
     XMLVM_EXIT_METHOD()
@@ -533,6 +537,7 @@ JAVA_OBJECT javax_xml_namespace_QName_getNamespaceURI__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("QName.java", 96)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_namespace_QName*) _r1.o)->fields.javax_xml_namespace_QName.namespaceURI_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -547,6 +552,7 @@ JAVA_OBJECT javax_xml_namespace_QName_getLocalPart__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("QName.java", 101)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_namespace_QName*) _r1.o)->fields.javax_xml_namespace_QName.localPart_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -561,6 +567,7 @@ JAVA_OBJECT javax_xml_namespace_QName_getPrefix__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("QName.java", 106)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_namespace_QName*) _r1.o)->fields.javax_xml_namespace_QName.prefix_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -588,6 +595,7 @@ JAVA_BOOLEAN javax_xml_namespace_QName_equals___java_lang_Object(JAVA_OBJECT me,
     XMLVM_SOURCE_POSITION("QName.java", 114)
     XMLVM_CHECK_NPE(4)
     _r0.o = javax_xml_namespace_QName_getLocalPart__(_r4.o);
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((javax_xml_namespace_QName*) _r3.o)->fields.javax_xml_namespace_QName.localPart_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -596,6 +604,7 @@ JAVA_BOOLEAN javax_xml_namespace_QName_equals___java_lang_Object(JAVA_OBJECT me,
     XMLVM_SOURCE_POSITION("QName.java", 115)
     XMLVM_CHECK_NPE(4)
     _r0.o = javax_xml_namespace_QName_getNamespaceURI__(_r4.o);
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((javax_xml_namespace_QName*) _r3.o)->fields.javax_xml_namespace_QName.namespaceURI_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -624,22 +633,27 @@ JAVA_INT javax_xml_namespace_QName_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("QName.java", 122)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((javax_xml_namespace_QName*) _r2.o)->fields.javax_xml_namespace_QName.hashCode_;
     _r1.i = -1;
     if (_r0.i != _r1.i) goto label20;
     XMLVM_SOURCE_POSITION("QName.java", 123)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((javax_xml_namespace_QName*) _r2.o)->fields.javax_xml_namespace_QName.localPart_;
     //java_lang_String_hashCode__[4]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[4])(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((javax_xml_namespace_QName*) _r2.o)->fields.javax_xml_namespace_QName.namespaceURI_;
     //java_lang_String_hashCode__[4]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[4])(_r1.o);
     _r0.i = _r0.i ^ _r1.i;
+    XMLVM_CHECK_NPE(2)
     ((javax_xml_namespace_QName*) _r2.o)->fields.javax_xml_namespace_QName.hashCode_ = _r0.i;
     label20:;
     XMLVM_SOURCE_POSITION("QName.java", 124)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((javax_xml_namespace_QName*) _r2.o)->fields.javax_xml_namespace_QName.hashCode_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -658,6 +672,7 @@ JAVA_OBJECT javax_xml_namespace_QName_toString__(JAVA_OBJECT me)
     java_lang_Object_acquireLockRecursive__(_r2.o);
     XMLVM_TRY_BEGIN(w20985aaac14b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((javax_xml_namespace_QName*) _r2.o)->fields.javax_xml_namespace_QName.qName_;
     if (_r0.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w20985aaac14b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w20985aaac14b1b4, sizeof(XMLVM_JMP_BUF)); goto label62; };
     XMLVM_SOURCE_POSITION("QName.java", 131)
@@ -665,6 +680,7 @@ JAVA_OBJECT javax_xml_namespace_QName_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("QName.java", 132)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((javax_xml_namespace_QName*) _r2.o)->fields.javax_xml_namespace_QName.namespaceURI_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(1)
@@ -676,6 +692,7 @@ JAVA_OBJECT javax_xml_namespace_QName_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((gnu_java_lang_CPStringBuilder*) _r0.o)->tib->vtable[6])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("QName.java", 135)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((javax_xml_namespace_QName*) _r2.o)->fields.javax_xml_namespace_QName.namespaceURI_;
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
@@ -694,12 +711,14 @@ JAVA_OBJECT javax_xml_namespace_QName_toString__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w20985aaac14b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("QName.java", 138)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((javax_xml_namespace_QName*) _r2.o)->fields.javax_xml_namespace_QName.prefix_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[8])(_r1.o);
     if (_r1.i <= 0) { XMLVM_MEMCPY(curThread_w20985aaac14b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w20985aaac14b1b6, sizeof(XMLVM_JMP_BUF)); goto label51; };
     XMLVM_SOURCE_POSITION("QName.java", 140)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((javax_xml_namespace_QName*) _r2.o)->fields.javax_xml_namespace_QName.prefix_;
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
@@ -718,6 +737,7 @@ JAVA_OBJECT javax_xml_namespace_QName_toString__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w20985aaac14b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("QName.java", 143)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((javax_xml_namespace_QName*) _r2.o)->fields.javax_xml_namespace_QName.localPart_;
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
@@ -725,6 +745,7 @@ JAVA_OBJECT javax_xml_namespace_QName_toString__(JAVA_OBJECT me)
     //gnu_java_lang_CPStringBuilder_toString__[5]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((gnu_java_lang_CPStringBuilder*) _r0.o)->tib->vtable[5])(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((javax_xml_namespace_QName*) _r2.o)->fields.javax_xml_namespace_QName.qName_ = _r0.o;
     // End try
     XMLVM_TRY_END
@@ -736,6 +757,7 @@ JAVA_OBJECT javax_xml_namespace_QName_toString__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w20985aaac14b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("QName.java", 146)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((javax_xml_namespace_QName*) _r2.o)->fields.javax_xml_namespace_QName.qName_;
     // End try
     XMLVM_TRY_END

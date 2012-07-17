@@ -475,8 +475,10 @@ void java_util_PropertyPermission_decodeActions___java_lang_String(JAVA_OBJECT m
     _r1.i = java_util_StringTokenizer_hasMoreTokens__(_r0.o);
     if (_r1.i != 0) goto label32;
     XMLVM_SOURCE_POSITION("PropertyPermission.java", 76)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_PropertyPermission*) _r4.o)->fields.java_util_PropertyPermission.read_;
     if (_r0.i != 0) goto label64;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_PropertyPermission*) _r4.o)->fields.java_util_PropertyPermission.write_;
     if (_r0.i != 0) goto label64;
     XMLVM_SOURCE_POSITION("PropertyPermission.java", 77)
@@ -496,6 +498,7 @@ void java_util_PropertyPermission_decodeActions___java_lang_String(JAVA_OBJECT m
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r2.o);
     if (_r2.i == 0) goto label47;
     XMLVM_SOURCE_POSITION("PropertyPermission.java", 69)
+    XMLVM_CHECK_NPE(4)
     ((java_util_PropertyPermission*) _r4.o)->fields.java_util_PropertyPermission.read_ = _r3.i;
     goto label12;
     label47:;
@@ -507,6 +510,7 @@ void java_util_PropertyPermission_decodeActions___java_lang_String(JAVA_OBJECT m
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[1])(_r1.o, _r2.o);
     if (_r1.i == 0) goto label58;
     XMLVM_SOURCE_POSITION("PropertyPermission.java", 71)
+    XMLVM_CHECK_NPE(4)
     ((java_util_PropertyPermission*) _r4.o)->fields.java_util_PropertyPermission.write_ = _r3.i;
     goto label12;
     label58:;
@@ -541,10 +545,14 @@ JAVA_BOOLEAN java_util_PropertyPermission_equals___java_lang_Object(JAVA_OBJECT 
     XMLVM_SOURCE_POSITION("PropertyPermission.java", 98)
     _r4.o = _r4.o;
     XMLVM_SOURCE_POSITION("PropertyPermission.java", 99)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_PropertyPermission*) _r3.o)->fields.java_util_PropertyPermission.read_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_PropertyPermission*) _r4.o)->fields.java_util_PropertyPermission.read_;
     if (_r0.i != _r1.i) goto label23;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_PropertyPermission*) _r3.o)->fields.java_util_PropertyPermission.write_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_PropertyPermission*) _r4.o)->fields.java_util_PropertyPermission.write_;
     if (_r0.i != _r1.i) goto label23;
     _r0.i = 1;
@@ -569,8 +577,10 @@ JAVA_OBJECT java_util_PropertyPermission_getActions__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("PropertyPermission.java", 112)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_PropertyPermission*) _r1.o)->fields.java_util_PropertyPermission.read_;
     if (_r0.i == 0) goto label14;
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_PropertyPermission*) _r1.o)->fields.java_util_PropertyPermission.write_;
     if (_r0.i == 0) goto label11;
     // "read,write"
@@ -622,13 +632,17 @@ JAVA_BOOLEAN java_util_PropertyPermission_implies___java_security_Permission(JAV
     XMLVM_SOURCE_POSITION("PropertyPermission.java", 139)
     _r3.o = _r3.o;
     XMLVM_SOURCE_POSITION("PropertyPermission.java", 140)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_PropertyPermission*) _r2.o)->fields.java_util_PropertyPermission.read_;
     if (_r0.i != 0) goto label17;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_PropertyPermission*) _r3.o)->fields.java_util_PropertyPermission.read_;
     if (_r0.i != 0) goto label27;
     label17:;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_PropertyPermission*) _r2.o)->fields.java_util_PropertyPermission.write_;
     if (_r0.i != 0) goto label25;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_PropertyPermission*) _r3.o)->fields.java_util_PropertyPermission.write_;
     if (_r0.i != 0) goto label27;
     label25:;

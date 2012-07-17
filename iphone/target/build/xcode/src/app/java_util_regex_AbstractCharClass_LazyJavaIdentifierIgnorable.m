@@ -222,6 +222,7 @@ JAVA_OBJECT java_util_regex_AbstractCharClass_LazyJavaIdentifierIgnorable_comput
     java_util_regex_AbstractCharClass_LazyJavaIdentifierIgnorable_1___INIT____java_util_regex_AbstractCharClass_LazyJavaIdentifierIgnorable(_r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 496)
     _r1.i = 1;
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractCharClass*) _r0.o)->fields.java_util_regex_AbstractCharClass.mayContainSupplCodepoints_ = _r1.i;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 497)
     XMLVM_EXIT_METHOD()

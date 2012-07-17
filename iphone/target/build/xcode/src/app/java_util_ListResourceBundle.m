@@ -298,6 +298,7 @@ JAVA_OBJECT java_util_ListResourceBundle_getKeys__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     java_util_ListResourceBundle_initializeTable__(_r1.o);
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 56)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_ResourceBundle*) _r1.o)->fields.java_util_ResourceBundle.parent_;
     if (_r0.o == JAVA_NULL) goto label13;
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 57)
@@ -337,6 +338,7 @@ JAVA_OBJECT java_util_ListResourceBundle_handleGetObject___java_lang_String(JAVA
     XMLVM_THROW_CUSTOM(_r0.o)
     label11:;
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 119)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_ListResourceBundle*) _r1.o)->fields.java_util_ListResourceBundle.table_;
     //java_util_HashMap_get___java_lang_Object[10]
     XMLVM_CHECK_NPE(0)
@@ -364,6 +366,7 @@ void java_util_ListResourceBundle_initializeTable__(JAVA_OBJECT me)
     java_lang_Object_acquireLockRecursive__(_r7.o);
     XMLVM_TRY_BEGIN(w4168aaab5b1b5)
     // Begin try
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_util_ListResourceBundle*) _r7.o)->fields.java_util_ListResourceBundle.table_;
     if (_r0.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w4168aaab5b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w4168aaab5b1b5, sizeof(XMLVM_JMP_BUF)); goto label27; };
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 124)
@@ -378,6 +381,7 @@ void java_util_ListResourceBundle_initializeTable__(JAVA_OBJECT me)
     _r2.i = _r2.i + 3;
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT____int(_r0.o, _r2.i);
+    XMLVM_CHECK_NPE(7)
     ((java_util_ListResourceBundle*) _r7.o)->fields.java_util_ListResourceBundle.table_ = _r0.o;
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 126)
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
@@ -440,6 +444,7 @@ void java_util_ListResourceBundle_initializeTable__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w4168aaab5b1c21)
     // Begin try
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 130)
+    XMLVM_CHECK_NPE(7)
     _r5.o = ((java_util_ListResourceBundle*) _r7.o)->fields.java_util_ListResourceBundle.table_;
     _r0.i = 0;
     XMLVM_CHECK_NPE(4)
@@ -476,6 +481,7 @@ JAVA_OBJECT java_util_ListResourceBundle_handleKeySet__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     java_util_ListResourceBundle_initializeTable__(_r1.o);
     XMLVM_SOURCE_POSITION("ListResourceBundle.java", 143)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_ListResourceBundle*) _r1.o)->fields.java_util_ListResourceBundle.table_;
     //java_util_HashMap_keySet__[12]
     XMLVM_CHECK_NPE(0)

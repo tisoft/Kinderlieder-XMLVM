@@ -641,6 +641,7 @@ void gnu_xml_xpath_XPathTokenizer___INIT____java_io_Reader(JAVA_OBJECT me, JAVA_
     if (_r0.i == 0) goto label13;
     _r0 = _r2;
     label10:;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_xpath_XPathTokenizer*) _r1.o)->fields.gnu_xml_xpath_XPathTokenizer.in_ = _r0.o;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 133)
     XMLVM_EXIT_METHOD()
@@ -667,9 +668,12 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 61;
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 160)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_;
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.lastToken_ = _r0.o;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 161)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(0)
@@ -710,6 +714,7 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 292)
     XMLVM_CHECK_NPE(4)
     _r0.o = gnu_xml_xpath_XPathTokenizer_consume_digits___int(_r4.o, _r0.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     label32:;
     _r0 = _r2;
@@ -731,6 +736,7 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 173)
     XMLVM_CHECK_NPE(4)
     _r0.o = gnu_xml_xpath_XPathTokenizer_consume_literal___int(_r4.o, _r0.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label48:;
@@ -739,6 +745,7 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 260;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label58:;
@@ -747,6 +754,7 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 261;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label68:;
@@ -755,6 +763,7 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 262;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label78:;
@@ -763,6 +772,7 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 263;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label88:;
@@ -771,6 +781,7 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 264;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label98:;
@@ -779,15 +790,18 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 265;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label108:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 194)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_mark___int[8]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_INT)) ((java_io_Reader*) _r0.o)->tib->vtable[8])(_r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 195)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(0)
@@ -800,10 +814,12 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 267;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label133:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 202)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_reset__[14]
     XMLVM_CHECK_NPE(0)
@@ -813,6 +829,7 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 266;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label148:;
@@ -821,15 +838,18 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 268;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label158:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 210)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_mark___int[8]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_INT)) ((java_io_Reader*) _r0.o)->tib->vtable[8])(_r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 211)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(0)
@@ -841,10 +861,12 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 269;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label182:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 218)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_reset__[14]
     XMLVM_CHECK_NPE(0)
@@ -853,15 +875,18 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r0.o = __NEW_gnu_xml_xpath_XPathTokenizer_XPathToken();
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r3.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label196:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 223)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_mark___int[8]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_INT)) ((java_io_Reader*) _r0.o)->tib->vtable[8])(_r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 224)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(0)
@@ -873,10 +898,12 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 272;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label220:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 231)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_reset__[14]
     XMLVM_CHECK_NPE(0)
@@ -886,15 +913,18 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 270;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label236:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 236)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_mark___int[8]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_INT)) ((java_io_Reader*) _r0.o)->tib->vtable[8])(_r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 237)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(0)
@@ -906,10 +936,12 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 273;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label260:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 244)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_reset__[14]
     XMLVM_CHECK_NPE(0)
@@ -919,6 +951,7 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 271;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label276:;
@@ -927,6 +960,7 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 274;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label287:;
@@ -935,6 +969,7 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 275;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label298:;
@@ -943,6 +978,7 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 276;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label309:;
@@ -951,6 +987,7 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 277;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label320:;
@@ -959,15 +996,18 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 278;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label331:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 264)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_mark___int[8]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_INT)) ((java_io_Reader*) _r0.o)->tib->vtable[8])(_r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 265)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(0)
@@ -980,10 +1020,12 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 280;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label357:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 272)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_reset__[14]
     XMLVM_CHECK_NPE(0)
@@ -993,15 +1035,18 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 279;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label373:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 277)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_mark___int[8]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_INT)) ((java_io_Reader*) _r0.o)->tib->vtable[8])(_r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 278)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(0)
@@ -1014,10 +1059,12 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 282;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label399:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 285)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_reset__[14]
     XMLVM_CHECK_NPE(0)
@@ -1027,6 +1074,7 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r1.i = 281;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label415:;
@@ -1040,6 +1088,7 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 296)
     XMLVM_CHECK_NPE(4)
     _r0.o = gnu_xml_xpath_XPathTokenizer_consume_name___int(_r4.o, _r0.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label434:;
@@ -1047,6 +1096,7 @@ JAVA_BOOLEAN gnu_xml_xpath_XPathTokenizer_advance__(JAVA_OBJECT me)
     _r0.o = __NEW_gnu_xml_xpath_XPathTokenizer_XPathToken();
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathTokenizer_XPathToken___INIT____int(_r0.o, _r3.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_xml_xpath_XPathTokenizer*) _r4.o)->fields.gnu_xml_xpath_XPathTokenizer.token_ = _r0.o;
     goto label32;
     label444:;
@@ -1061,7 +1111,9 @@ JAVA_INT gnu_xml_xpath_XPathTokenizer_token__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 308)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r1.o)->fields.gnu_xml_xpath_XPathTokenizer.token_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_xpath_XPathTokenizer_XPathToken*) _r0.o)->fields.gnu_xml_xpath_XPathTokenizer_XPathToken.type_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -1076,7 +1128,9 @@ JAVA_OBJECT gnu_xml_xpath_XPathTokenizer_value__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 313)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r1.o)->fields.gnu_xml_xpath_XPathTokenizer.token_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer_XPathToken*) _r0.o)->fields.gnu_xml_xpath_XPathTokenizer_XPathToken.val_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1100,6 +1154,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathTokenizer_consume_literal___int(JAVA_OBJECT me, J
     gnu_java_lang_CPStringBuilder___INIT___(_r0.o);
     label5:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 322)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_xpath_XPathTokenizer*) _r3.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(1)
@@ -1160,12 +1215,14 @@ JAVA_OBJECT gnu_xml_xpath_XPathTokenizer_consume_digits___int(JAVA_OBJECT me, JA
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((gnu_java_lang_CPStringBuilder*) _r0.o)->tib->vtable[6])(_r0.o, _r1.i);
     label9:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 345)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_xpath_XPathTokenizer*) _r3.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     _r2.i = 1;
     //java_io_Reader_mark___int[8]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_INT)) ((java_io_Reader*) _r1.o)->tib->vtable[8])(_r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 346)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_xpath_XPathTokenizer*) _r3.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(1)
@@ -1183,6 +1240,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathTokenizer_consume_digits___int(JAVA_OBJECT me, JA
     goto label9;
     label34:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 353)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_xpath_XPathTokenizer*) _r3.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_reset__[14]
     XMLVM_CHECK_NPE(1)
@@ -1232,11 +1290,13 @@ JAVA_OBJECT gnu_xml_xpath_XPathTokenizer_consume_name___int(JAVA_OBJECT me, JAVA
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((gnu_java_lang_CPStringBuilder*) _r0.o)->tib->vtable[6])(_r0.o, _r1.i);
     label18:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 366)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((gnu_xml_xpath_XPathTokenizer*) _r8.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_mark___int[8]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_INT)) ((java_io_Reader*) _r1.o)->tib->vtable[8])(_r1.o, _r3.i);
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 367)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((gnu_xml_xpath_XPathTokenizer*) _r8.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(1)
@@ -1253,6 +1313,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathTokenizer_consume_name___int(JAVA_OBJECT me, JAVA
     goto label18;
     label40:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 374)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((gnu_xml_xpath_XPathTokenizer*) _r8.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_reset__[14]
     XMLVM_CHECK_NPE(1)
@@ -1311,12 +1372,14 @@ JAVA_OBJECT gnu_xml_xpath_XPathTokenizer_consume_name___int(JAVA_OBJECT me, JAVA
     goto label64;
     label79:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 391)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((gnu_xml_xpath_XPathTokenizer*) _r8.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_mark___int[8]
     XMLVM_CHECK_NPE(2)
     (*(void (*)(JAVA_OBJECT, JAVA_INT)) ((java_io_Reader*) _r2.o)->tib->vtable[8])(_r2.o, _r3.i);
     label84:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 394)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((gnu_xml_xpath_XPathTokenizer*) _r8.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(2)
@@ -1328,6 +1391,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathTokenizer_consume_name___int(JAVA_OBJECT me, JAVA
     _r3.i = 40;
     if (_r2.i == _r3.i) goto label72;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 399)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r8.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_reset__[14]
     XMLVM_CHECK_NPE(0)
@@ -1339,12 +1403,14 @@ JAVA_OBJECT gnu_xml_xpath_XPathTokenizer_consume_name___int(JAVA_OBJECT me, JAVA
     goto label64;
     label109:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 417)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((gnu_xml_xpath_XPathTokenizer*) _r8.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_mark___int[8]
     XMLVM_CHECK_NPE(2)
     (*(void (*)(JAVA_OBJECT, JAVA_INT)) ((java_io_Reader*) _r2.o)->tib->vtable[8])(_r2.o, _r3.i);
     label114:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 420)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((gnu_xml_xpath_XPathTokenizer*) _r8.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(2)
@@ -1355,6 +1421,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathTokenizer_consume_name___int(JAVA_OBJECT me, JAVA
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 423)
     if (_r2.i != _r7.i) goto label146;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 425)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((gnu_xml_xpath_XPathTokenizer*) _r8.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_read__[9]
     XMLVM_CHECK_NPE(2)
@@ -1362,6 +1429,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathTokenizer_consume_name___int(JAVA_OBJECT me, JAVA
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 426)
     if (_r2.i != _r7.i) goto label146;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 428)
+    XMLVM_CHECK_NPE(8)
     _r1.o = ((gnu_xml_xpath_XPathTokenizer*) _r8.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_reset__[14]
     XMLVM_CHECK_NPE(1)
@@ -1374,6 +1442,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathTokenizer_consume_name___int(JAVA_OBJECT me, JAVA
     goto label64;
     label146:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 432)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((gnu_xml_xpath_XPathTokenizer*) _r8.o)->fields.gnu_xml_xpath_XPathTokenizer.in_;
     //java_io_Reader_reset__[14]
     XMLVM_CHECK_NPE(0)
@@ -1385,6 +1454,7 @@ JAVA_OBJECT gnu_xml_xpath_XPathTokenizer_consume_name___int(JAVA_OBJECT me, JAVA
     goto label64;
     label157:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 437)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((gnu_xml_xpath_XPathTokenizer*) _r8.o)->fields.gnu_xml_xpath_XPathTokenizer.lastToken_;
     if (_r2.o != JAVA_NULL) goto label167;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 439)
@@ -1394,7 +1464,9 @@ JAVA_OBJECT gnu_xml_xpath_XPathTokenizer_consume_name___int(JAVA_OBJECT me, JAVA
     goto label64;
     label167:;
     XMLVM_SOURCE_POSITION("XPathTokenizer.java", 441)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((gnu_xml_xpath_XPathTokenizer*) _r8.o)->fields.gnu_xml_xpath_XPathTokenizer.lastToken_;
+    XMLVM_CHECK_NPE(2)
     _r2.i = ((gnu_xml_xpath_XPathTokenizer_XPathToken*) _r2.o)->fields.gnu_xml_xpath_XPathTokenizer_XPathToken.type_;
     switch (_r2.i) {
     case 260: goto label175;

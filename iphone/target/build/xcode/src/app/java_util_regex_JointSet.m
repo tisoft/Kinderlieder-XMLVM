@@ -393,12 +393,15 @@ void java_util_regex_JointSet___INIT____java_util_ArrayList_java_util_regex_FSet
     XMLVM_CHECK_NPE(1)
     java_util_regex_AbstractSet___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("JointSet.java", 43)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_JointSet*) _r1.o)->fields.java_util_regex_JointSet.children_ = _r2.o;
     XMLVM_SOURCE_POSITION("JointSet.java", 44)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_JointSet*) _r1.o)->fields.java_util_regex_JointSet.fSet_ = _r3.o;
     XMLVM_SOURCE_POSITION("JointSet.java", 45)
     XMLVM_CHECK_NPE(3)
     _r0.i = java_util_regex_FSet_getGroupIndex__(_r3.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_JointSet*) _r1.o)->fields.java_util_regex_JointSet.groupIndex_ = _r0.i;
     XMLVM_SOURCE_POSITION("JointSet.java", 46)
     XMLVM_EXIT_METHOD()
@@ -425,6 +428,7 @@ JAVA_INT java_util_regex_JointSet_matches___int_java_lang_CharSequence_java_util
     _r8.o = n3;
     _r4.i = -1;
     XMLVM_SOURCE_POSITION("JointSet.java", 53)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_regex_JointSet*) _r5.o)->fields.java_util_regex_JointSet.children_;
     if (_r0.o != JAVA_NULL) goto label7;
     _r0 = _r4;
@@ -435,14 +439,17 @@ JAVA_INT java_util_regex_JointSet_matches___int_java_lang_CharSequence_java_util
     return _r0.i;
     label7:;
     XMLVM_SOURCE_POSITION("JointSet.java", 56)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_regex_JointSet*) _r5.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(8)
     _r1.i = java_util_regex_MatchResultImpl_getStart___int(_r8.o, _r0.i);
     XMLVM_SOURCE_POSITION("JointSet.java", 57)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_regex_JointSet*) _r5.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(8)
     java_util_regex_MatchResultImpl_setStart___int_int(_r8.o, _r0.i, _r6.i);
     XMLVM_SOURCE_POSITION("JointSet.java", 58)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_regex_JointSet*) _r5.o)->fields.java_util_regex_JointSet.children_;
     //java_util_ArrayList_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -453,6 +460,7 @@ JAVA_INT java_util_regex_JointSet_matches___int_java_lang_CharSequence_java_util
     label26:;
     if (_r3.i < _r2.i) goto label35;
     XMLVM_SOURCE_POSITION("JointSet.java", 66)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_regex_JointSet*) _r5.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(8)
     java_util_regex_MatchResultImpl_setStart___int_int(_r8.o, _r0.i, _r1.i);
@@ -460,6 +468,7 @@ JAVA_INT java_util_regex_JointSet_matches___int_java_lang_CharSequence_java_util
     goto label6;
     label35:;
     XMLVM_SOURCE_POSITION("JointSet.java", 60)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_regex_JointSet*) _r5.o)->fields.java_util_regex_JointSet.children_;
     //java_util_ArrayList_get___int[21]
     XMLVM_CHECK_NPE(0)
@@ -487,6 +496,7 @@ void java_util_regex_JointSet_setNext___java_util_regex_AbstractSet(JAVA_OBJECT 
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("JointSet.java", 71)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_JointSet*) _r1.o)->fields.java_util_regex_JointSet.fSet_;
     //java_util_regex_AbstractSet_setNext___java_util_regex_AbstractSet[16]
     XMLVM_CHECK_NPE(0)
@@ -505,6 +515,7 @@ JAVA_OBJECT java_util_regex_JointSet_getNext__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("JointSet.java", 75)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_JointSet*) _r1.o)->fields.java_util_regex_JointSet.fSet_;
     //java_util_regex_AbstractSet_getNext__[10]
     XMLVM_CHECK_NPE(0)
@@ -537,6 +548,7 @@ JAVA_INT java_util_regex_JointSet_getGroup__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("JointSet.java", 83)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_JointSet*) _r1.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -554,9 +566,11 @@ JAVA_BOOLEAN java_util_regex_JointSet_first___java_util_regex_AbstractSet(JAVA_O
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("JointSet.java", 87)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_JointSet*) _r2.o)->fields.java_util_regex_JointSet.children_;
     if (_r0.o == JAVA_NULL) goto label16;
     XMLVM_SOURCE_POSITION("JointSet.java", 88)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_JointSet*) _r2.o)->fields.java_util_regex_JointSet.children_;
     //java_util_ArrayList_iterator__[12]
     XMLVM_CHECK_NPE(0)
@@ -597,14 +611,17 @@ JAVA_BOOLEAN java_util_regex_JointSet_hasConsumed___java_util_regex_MatchResultI
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("JointSet.java", 99)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_JointSet*) _r2.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(3)
     _r0.i = java_util_regex_MatchResultImpl_getEnd___int(_r3.o, _r0.i);
     if (_r0.i < 0) goto label24;
     XMLVM_SOURCE_POSITION("JointSet.java", 100)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_JointSet*) _r2.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(3)
     _r0.i = java_util_regex_MatchResultImpl_getStart___int(_r3.o, _r0.i);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_regex_JointSet*) _r2.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(3)
     _r1.i = java_util_regex_MatchResultImpl_getEnd___int(_r3.o, _r1.i);
@@ -632,23 +649,30 @@ void java_util_regex_JointSet_processSecondPass__(JAVA_OBJECT me)
     _r5.o = me;
     _r4.i = 1;
     XMLVM_SOURCE_POSITION("JointSet.java", 108)
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_AbstractSet*) _r5.o)->fields.java_util_regex_AbstractSet.isSecondPassVisited_ = _r4.i;
     XMLVM_SOURCE_POSITION("JointSet.java", 110)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_regex_JointSet*) _r5.o)->fields.java_util_regex_JointSet.fSet_;
     if (_r0.o == JAVA_NULL) goto label18;
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_regex_JointSet*) _r5.o)->fields.java_util_regex_JointSet.fSet_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_regex_AbstractSet*) _r0.o)->fields.java_util_regex_AbstractSet.isSecondPassVisited_;
     if (_r0.i != 0) goto label18;
     XMLVM_SOURCE_POSITION("JointSet.java", 119)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_regex_JointSet*) _r5.o)->fields.java_util_regex_JointSet.fSet_;
     //java_util_regex_AbstractSet_processSecondPass__[15]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) ((java_util_regex_AbstractSet*) _r0.o)->tib->vtable[15])(_r0.o);
     label18:;
     XMLVM_SOURCE_POSITION("JointSet.java", 122)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_regex_JointSet*) _r5.o)->fields.java_util_regex_JointSet.children_;
     if (_r0.o == JAVA_NULL) goto label32;
     XMLVM_SOURCE_POSITION("JointSet.java", 123)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_regex_JointSet*) _r5.o)->fields.java_util_regex_JointSet.children_;
     //java_util_ArrayList_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -660,6 +684,7 @@ void java_util_regex_JointSet_processSecondPass__(JAVA_OBJECT me)
     if (_r2.i < _r1.i) goto label40;
     label32:;
     XMLVM_SOURCE_POSITION("JointSet.java", 150)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_regex_AbstractSet*) _r5.o)->fields.java_util_regex_AbstractSet.next_;
     if (_r0.o == JAVA_NULL) goto label39;
     XMLVM_SOURCE_POSITION("JointSet.java", 151)
@@ -671,6 +696,7 @@ void java_util_regex_JointSet_processSecondPass__(JAVA_OBJECT me)
     return;
     label40:;
     XMLVM_SOURCE_POSITION("JointSet.java", 126)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_regex_JointSet*) _r5.o)->fields.java_util_regex_JointSet.children_;
     //java_util_ArrayList_get___int[21]
     XMLVM_CHECK_NPE(0)
@@ -683,13 +709,16 @@ void java_util_regex_JointSet_processSecondPass__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("JointSet.java", 134)
     if (_r3.o == JAVA_NULL) goto label67;
     XMLVM_SOURCE_POSITION("JointSet.java", 135)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractSet*) _r0.o)->fields.java_util_regex_AbstractSet.isSecondPassVisited_ = _r4.i;
     XMLVM_SOURCE_POSITION("JointSet.java", 136)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_regex_JointSet*) _r5.o)->fields.java_util_regex_JointSet.children_;
     //java_util_ArrayList_remove___int[27]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) ((java_util_ArrayList*) _r0.o)->tib->vtable[27])(_r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("JointSet.java", 137)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_regex_JointSet*) _r5.o)->fields.java_util_regex_JointSet.children_;
     //java_util_ArrayList_add___int_java_lang_Object[20]
     XMLVM_CHECK_NPE(0)
@@ -698,6 +727,7 @@ void java_util_regex_JointSet_processSecondPass__(JAVA_OBJECT me)
     label67:;
     XMLVM_SOURCE_POSITION("JointSet.java", 138)
     XMLVM_SOURCE_POSITION("JointSet.java", 144)
+    XMLVM_CHECK_NPE(0)
     _r3.i = ((java_util_regex_AbstractSet*) _r0.o)->fields.java_util_regex_AbstractSet.isSecondPassVisited_;
     if (_r3.i != 0) goto label74;
     XMLVM_SOURCE_POSITION("JointSet.java", 145)

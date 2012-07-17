@@ -354,13 +354,16 @@ void gnu_xml_xpath_FunctionCall___INIT____javax_xml_xpath_XPathFunctionResolver_
     XMLVM_CHECK_NPE(1)
     gnu_xml_xpath_Expr___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("FunctionCall.java", 72)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_xpath_FunctionCall*) _r1.o)->fields.gnu_xml_xpath_FunctionCall.resolver_ = _r2.o;
     XMLVM_SOURCE_POSITION("FunctionCall.java", 73)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_xpath_FunctionCall*) _r1.o)->fields.gnu_xml_xpath_FunctionCall.name_ = _r3.o;
     XMLVM_SOURCE_POSITION("FunctionCall.java", 74)
     if (_r4.o != JAVA_NULL) goto label16;
     XMLVM_SOURCE_POSITION("FunctionCall.java", 75)
     _r0.o = java_util_Collections_emptyList__();
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_xpath_FunctionCall*) _r1.o)->fields.gnu_xml_xpath_FunctionCall.args_ = _r0.o;
     label15:;
     XMLVM_SOURCE_POSITION("FunctionCall.java", 78)
@@ -368,6 +371,7 @@ void gnu_xml_xpath_FunctionCall___INIT____javax_xml_xpath_XPathFunctionResolver_
     return;
     label16:;
     XMLVM_SOURCE_POSITION("FunctionCall.java", 77)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_xpath_FunctionCall*) _r1.o)->fields.gnu_xml_xpath_FunctionCall.args_ = _r4.o;
     goto label15;
     //XMLVM_END_WRAPPER
@@ -392,16 +396,20 @@ JAVA_OBJECT gnu_xml_xpath_FunctionCall_evaluate___org_w3c_dom_Node_int_int(JAVA_
     _r8.i = n2;
     _r9.i = n3;
     XMLVM_SOURCE_POSITION("FunctionCall.java", 83)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((gnu_xml_xpath_FunctionCall*) _r6.o)->fields.gnu_xml_xpath_FunctionCall.resolver_;
     if (_r1.o == JAVA_NULL) goto label97;
     XMLVM_SOURCE_POSITION("FunctionCall.java", 85)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((gnu_xml_xpath_FunctionCall*) _r6.o)->fields.gnu_xml_xpath_FunctionCall.name_;
     _r1.o = javax_xml_namespace_QName_valueOf___java_lang_String(_r1.o);
     XMLVM_SOURCE_POSITION("FunctionCall.java", 86)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_xpath_FunctionCall*) _r6.o)->fields.gnu_xml_xpath_FunctionCall.args_;
     XMLVM_CHECK_NPE(2)
     _r3.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_size__])(_r2.o);
     XMLVM_SOURCE_POSITION("FunctionCall.java", 87)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_xpath_FunctionCall*) _r6.o)->fields.gnu_xml_xpath_FunctionCall.resolver_;
     XMLVM_CHECK_NPE(2)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_xpath_XPathFunctionResolver_resolveFunction___javax_xml_namespace_QName_int])(_r2.o, _r1.o, _r3.i);
@@ -419,6 +427,7 @@ JAVA_OBJECT gnu_xml_xpath_FunctionCall_evaluate___org_w3c_dom_Node_int_int(JAVA_
     _r0 = _r2;
     _r0.o = _r0.o;
     _r1 = _r0;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((gnu_xml_xpath_FunctionCall*) _r6.o)->fields.gnu_xml_xpath_FunctionCall.args_;
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_gnu_xml_xpath_Function_setArguments___java_util_List])(_r1.o, _r3.o);
@@ -442,19 +451,20 @@ JAVA_OBJECT gnu_xml_xpath_FunctionCall_evaluate___org_w3c_dom_Node_int_int(JAVA_
     _r5 = _r1;
     label55:;
     if (_r5.i < _r3.i) goto label62;
-    XMLVM_TRY_BEGIN(w31312aaab5b1c47)
+    XMLVM_TRY_BEGIN(w31314aaab5b1c47)
     // Begin try
     XMLVM_CHECK_NPE(2)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_xpath_XPathFunction_evaluate___java_util_List])(_r2.o, _r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w31312aaab5b1c47)
-        XMLVM_CATCH_SPECIFIC(w31312aaab5b1c47,javax_xml_xpath_XPathFunctionException,81)
-    XMLVM_CATCH_END(w31312aaab5b1c47)
-    XMLVM_RESTORE_EXCEPTION_ENV(w31312aaab5b1c47)
+    XMLVM_CATCH_BEGIN(w31314aaab5b1c47)
+        XMLVM_CATCH_SPECIFIC(w31314aaab5b1c47,javax_xml_xpath_XPathFunctionException,81)
+    XMLVM_CATCH_END(w31314aaab5b1c47)
+    XMLVM_RESTORE_EXCEPTION_ENV(w31314aaab5b1c47)
     goto label47;
     label62:;
     XMLVM_SOURCE_POSITION("FunctionCall.java", 104)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((gnu_xml_xpath_FunctionCall*) _r6.o)->fields.gnu_xml_xpath_FunctionCall.args_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_get___int])(_r1.o, _r5.i);
@@ -470,8 +480,8 @@ JAVA_OBJECT gnu_xml_xpath_FunctionCall_evaluate___org_w3c_dom_Node_int_int(JAVA_
     goto label55;
     label81:;
     XMLVM_SOURCE_POSITION("FunctionCall.java", 111)
-    java_lang_Thread* curThread_w31312aaab5b1c62 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w31312aaab5b1c62->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w31314aaab5b1c62 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w31314aaab5b1c62->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("FunctionCall.java", 113)
     _r2.o = java_lang_System_GET_err();
     //javax_xml_xpath_XPathFunctionException_printStackTrace___java_io_PrintStream[9]
@@ -521,6 +531,7 @@ JAVA_OBJECT gnu_xml_xpath_FunctionCall_clone___java_lang_Object(JAVA_OBJECT me, 
     _r4.o = me;
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("FunctionCall.java", 125)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_FunctionCall*) _r4.o)->fields.gnu_xml_xpath_FunctionCall.args_;
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_size__])(_r0.o);
@@ -534,6 +545,7 @@ JAVA_OBJECT gnu_xml_xpath_FunctionCall_clone___java_lang_Object(JAVA_OBJECT me, 
     label13:;
     if (_r3.i < _r1.i) goto label32;
     XMLVM_SOURCE_POSITION("FunctionCall.java", 131)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_FunctionCall*) _r4.o)->fields.gnu_xml_xpath_FunctionCall.resolver_;
     XMLVM_SOURCE_POSITION("FunctionCall.java", 132)
     if (!__TIB_javax_xml_xpath_XPathFunctionResolver.classInitialized) __INIT_javax_xml_xpath_XPathFunctionResolver();
@@ -545,6 +557,7 @@ JAVA_OBJECT gnu_xml_xpath_FunctionCall_clone___java_lang_Object(JAVA_OBJECT me, 
     label24:;
     XMLVM_SOURCE_POSITION("FunctionCall.java", 136)
     _r1.o = __NEW_gnu_xml_xpath_FunctionCall();
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((gnu_xml_xpath_FunctionCall*) _r4.o)->fields.gnu_xml_xpath_FunctionCall.name_;
     XMLVM_CHECK_NPE(1)
     gnu_xml_xpath_FunctionCall___INIT____javax_xml_xpath_XPathFunctionResolver_java_lang_String_java_util_List(_r1.o, _r0.o, _r3.o, _r2.o);
@@ -552,6 +565,7 @@ JAVA_OBJECT gnu_xml_xpath_FunctionCall_clone___java_lang_Object(JAVA_OBJECT me, 
     return _r1.o;
     label32:;
     XMLVM_SOURCE_POSITION("FunctionCall.java", 129)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_xpath_FunctionCall*) _r4.o)->fields.gnu_xml_xpath_FunctionCall.args_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_get___int])(_r0.o, _r3.i);
@@ -578,6 +592,7 @@ JAVA_BOOLEAN gnu_xml_xpath_FunctionCall_references___javax_xml_namespace_QName(J
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("FunctionCall.java", 141)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_xpath_FunctionCall*) _r2.o)->fields.gnu_xml_xpath_FunctionCall.args_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_iterator__])(_r0.o);
@@ -620,6 +635,7 @@ JAVA_OBJECT gnu_xml_xpath_FunctionCall_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("FunctionCall.java", 154)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_xpath_FunctionCall*) _r4.o)->fields.gnu_xml_xpath_FunctionCall.name_;
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
@@ -629,6 +645,7 @@ JAVA_OBJECT gnu_xml_xpath_FunctionCall_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((gnu_java_lang_CPStringBuilder*) _r0.o)->tib->vtable[6])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("FunctionCall.java", 156)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_xpath_FunctionCall*) _r4.o)->fields.gnu_xml_xpath_FunctionCall.args_;
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_size__])(_r1.o);
@@ -657,6 +674,7 @@ JAVA_OBJECT gnu_xml_xpath_FunctionCall_toString__(JAVA_OBJECT me)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((gnu_java_lang_CPStringBuilder*) _r0.o)->tib->vtable[6])(_r0.o, _r3.i);
     label41:;
     XMLVM_SOURCE_POSITION("FunctionCall.java", 163)
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((gnu_xml_xpath_FunctionCall*) _r4.o)->fields.gnu_xml_xpath_FunctionCall.args_;
     XMLVM_CHECK_NPE(3)
     _r3.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_get___int])(_r3.o, _r2.i);

@@ -593,6 +593,7 @@ JAVA_INT java_net_Authenticator_getRequestingPort__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Authenticator.java", 78)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_Authenticator*) _r1.o)->fields.java_net_Authenticator.port_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -607,6 +608,7 @@ JAVA_OBJECT java_net_Authenticator_getRequestingSite__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Authenticator.java", 88)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_Authenticator*) _r1.o)->fields.java_net_Authenticator.addr_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -621,6 +623,7 @@ JAVA_OBJECT java_net_Authenticator_getRequestingPrompt__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Authenticator.java", 98)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_Authenticator*) _r1.o)->fields.java_net_Authenticator.prompt_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -635,6 +638,7 @@ JAVA_OBJECT java_net_Authenticator_getRequestingProtocol__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Authenticator.java", 107)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_Authenticator*) _r1.o)->fields.java_net_Authenticator.protocol_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -649,6 +653,7 @@ JAVA_OBJECT java_net_Authenticator_getRequestingScheme__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Authenticator.java", 117)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_Authenticator*) _r1.o)->fields.java_net_Authenticator.scheme_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -677,32 +682,32 @@ JAVA_OBJECT java_net_Authenticator_requestPasswordAuthentication___java_net_Inet
     if (!__TIB_java_net_Authenticator.classInitialized) __INIT_java_net_Authenticator();
     _r0.o = __CLASS_java_net_Authenticator;
     java_lang_Object_acquireLockRecursive__(_r0.o);
-    XMLVM_TRY_BEGIN(w35129aaac19b1b9)
+    XMLVM_TRY_BEGIN(w35134aaac19b1b9)
     // Begin try
     _r1.o = java_lang_System_getSecurityManager__();
     XMLVM_SOURCE_POSITION("Authenticator.java", 145)
-    if (_r1.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w35129aaac19b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w35129aaac19b1b9, sizeof(XMLVM_JMP_BUF)); goto label14; };
+    if (_r1.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w35134aaac19b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w35134aaac19b1b9, sizeof(XMLVM_JMP_BUF)); goto label14; };
     XMLVM_SOURCE_POSITION("Authenticator.java", 146)
     _r2.o = java_net_Authenticator_GET_requestPasswordAuthenticationPermission();
     XMLVM_CHECK_NPE(1)
     java_lang_SecurityManager_checkPermission___java_security_Permission(_r1.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w35129aaac19b1b9)
-        XMLVM_CATCH_SPECIFIC(w35129aaac19b1b9,java_lang_Object,54)
-    XMLVM_CATCH_END(w35129aaac19b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w35129aaac19b1b9)
+    XMLVM_CATCH_BEGIN(w35134aaac19b1b9)
+        XMLVM_CATCH_SPECIFIC(w35134aaac19b1b9,java_lang_Object,54)
+    XMLVM_CATCH_END(w35134aaac19b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w35134aaac19b1b9)
     label14:;
-    XMLVM_TRY_BEGIN(w35129aaac19b1c11)
+    XMLVM_TRY_BEGIN(w35134aaac19b1c11)
     // Begin try
     XMLVM_SOURCE_POSITION("Authenticator.java", 148)
     _r1.o = java_net_Authenticator_GET_thisAuthenticator();
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w35129aaac19b1c11)
-        XMLVM_CATCH_SPECIFIC(w35129aaac19b1c11,java_lang_Object,54)
-    XMLVM_CATCH_END(w35129aaac19b1c11)
-    XMLVM_RESTORE_EXCEPTION_ENV(w35129aaac19b1c11)
+    XMLVM_CATCH_BEGIN(w35134aaac19b1c11)
+        XMLVM_CATCH_SPECIFIC(w35134aaac19b1c11,java_lang_Object,54)
+    XMLVM_CATCH_END(w35134aaac19b1c11)
+    XMLVM_RESTORE_EXCEPTION_ENV(w35134aaac19b1c11)
     if (_r1.o != JAVA_NULL) goto label21;
     XMLVM_SOURCE_POSITION("Authenticator.java", 149)
     _r1.o = JAVA_NULL;
@@ -712,40 +717,46 @@ JAVA_OBJECT java_net_Authenticator_requestPasswordAuthentication___java_net_Inet
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label21:;
-    XMLVM_TRY_BEGIN(w35129aaac19b1c20)
+    XMLVM_TRY_BEGIN(w35134aaac19b1c20)
     // Begin try
     XMLVM_SOURCE_POSITION("Authenticator.java", 153)
     _r1.o = java_net_Authenticator_GET_thisAuthenticator();
+    XMLVM_CHECK_NPE(1)
     ((java_net_Authenticator*) _r1.o)->fields.java_net_Authenticator.addr_ = _r3.o;
     XMLVM_SOURCE_POSITION("Authenticator.java", 154)
     _r1.o = java_net_Authenticator_GET_thisAuthenticator();
+    XMLVM_CHECK_NPE(1)
     ((java_net_Authenticator*) _r1.o)->fields.java_net_Authenticator.port_ = _r4.i;
     XMLVM_SOURCE_POSITION("Authenticator.java", 155)
     _r1.o = java_net_Authenticator_GET_thisAuthenticator();
+    XMLVM_CHECK_NPE(1)
     ((java_net_Authenticator*) _r1.o)->fields.java_net_Authenticator.protocol_ = _r5.o;
     XMLVM_SOURCE_POSITION("Authenticator.java", 156)
     _r1.o = java_net_Authenticator_GET_thisAuthenticator();
+    XMLVM_CHECK_NPE(1)
     ((java_net_Authenticator*) _r1.o)->fields.java_net_Authenticator.prompt_ = _r6.o;
     XMLVM_SOURCE_POSITION("Authenticator.java", 157)
     _r1.o = java_net_Authenticator_GET_thisAuthenticator();
+    XMLVM_CHECK_NPE(1)
     ((java_net_Authenticator*) _r1.o)->fields.java_net_Authenticator.scheme_ = _r7.o;
     XMLVM_SOURCE_POSITION("Authenticator.java", 158)
     _r1.o = java_net_Authenticator_GET_thisAuthenticator();
     _r2.o = java_net_Authenticator_RequestorType_GET_SERVER();
+    XMLVM_CHECK_NPE(1)
     ((java_net_Authenticator*) _r1.o)->fields.java_net_Authenticator.rt_ = _r2.o;
     _r1.o = java_net_Authenticator_GET_thisAuthenticator();
     XMLVM_CHECK_NPE(1)
     _r1.o = java_net_Authenticator_getPasswordAuthentication__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w35129aaac19b1c20)
-        XMLVM_CATCH_SPECIFIC(w35129aaac19b1c20,java_lang_Object,54)
-    XMLVM_CATCH_END(w35129aaac19b1c20)
-    XMLVM_RESTORE_EXCEPTION_ENV(w35129aaac19b1c20)
+    XMLVM_CATCH_BEGIN(w35134aaac19b1c20)
+        XMLVM_CATCH_SPECIFIC(w35134aaac19b1c20,java_lang_Object,54)
+    XMLVM_CATCH_END(w35134aaac19b1c20)
+    XMLVM_RESTORE_EXCEPTION_ENV(w35134aaac19b1c20)
     goto label19;
     label54:;
-    java_lang_Thread* curThread_w35129aaac19b1c23 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w35129aaac19b1c23->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w35134aaac19b1c23 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w35134aaac19b1c23->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     XMLVM_THROW_CUSTOM(_r1.o)
     //XMLVM_END_WRAPPER
@@ -801,32 +812,32 @@ JAVA_OBJECT java_net_Authenticator_requestPasswordAuthentication___java_lang_Str
     if (!__TIB_java_net_Authenticator.classInitialized) __INIT_java_net_Authenticator();
     _r0.o = __CLASS_java_net_Authenticator;
     java_lang_Object_acquireLockRecursive__(_r0.o);
-    XMLVM_TRY_BEGIN(w35129aaac21b1c10)
+    XMLVM_TRY_BEGIN(w35134aaac21b1c10)
     // Begin try
     _r1.o = java_lang_System_getSecurityManager__();
     XMLVM_SOURCE_POSITION("Authenticator.java", 212)
-    if (_r1.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w35129aaac21b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w35129aaac21b1c10, sizeof(XMLVM_JMP_BUF)); goto label14; };
+    if (_r1.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w35134aaac21b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w35134aaac21b1c10, sizeof(XMLVM_JMP_BUF)); goto label14; };
     XMLVM_SOURCE_POSITION("Authenticator.java", 213)
     _r2.o = java_net_Authenticator_GET_requestPasswordAuthenticationPermission();
     XMLVM_CHECK_NPE(1)
     java_lang_SecurityManager_checkPermission___java_security_Permission(_r1.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w35129aaac21b1c10)
-        XMLVM_CATCH_SPECIFIC(w35129aaac21b1c10,java_lang_Object,58)
-    XMLVM_CATCH_END(w35129aaac21b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w35129aaac21b1c10)
+    XMLVM_CATCH_BEGIN(w35134aaac21b1c10)
+        XMLVM_CATCH_SPECIFIC(w35134aaac21b1c10,java_lang_Object,58)
+    XMLVM_CATCH_END(w35134aaac21b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w35134aaac21b1c10)
     label14:;
-    XMLVM_TRY_BEGIN(w35129aaac21b1c12)
+    XMLVM_TRY_BEGIN(w35134aaac21b1c12)
     // Begin try
     XMLVM_SOURCE_POSITION("Authenticator.java", 215)
     _r1.o = java_net_Authenticator_GET_thisAuthenticator();
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w35129aaac21b1c12)
-        XMLVM_CATCH_SPECIFIC(w35129aaac21b1c12,java_lang_Object,58)
-    XMLVM_CATCH_END(w35129aaac21b1c12)
-    XMLVM_RESTORE_EXCEPTION_ENV(w35129aaac21b1c12)
+    XMLVM_CATCH_BEGIN(w35134aaac21b1c12)
+        XMLVM_CATCH_SPECIFIC(w35134aaac21b1c12,java_lang_Object,58)
+    XMLVM_CATCH_END(w35134aaac21b1c12)
+    XMLVM_RESTORE_EXCEPTION_ENV(w35134aaac21b1c12)
     if (_r1.o != JAVA_NULL) goto label21;
     XMLVM_SOURCE_POSITION("Authenticator.java", 216)
     _r1.o = JAVA_NULL;
@@ -836,43 +847,50 @@ JAVA_OBJECT java_net_Authenticator_requestPasswordAuthentication___java_lang_Str
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label21:;
-    XMLVM_TRY_BEGIN(w35129aaac21b1c21)
+    XMLVM_TRY_BEGIN(w35134aaac21b1c21)
     // Begin try
     XMLVM_SOURCE_POSITION("Authenticator.java", 220)
     _r1.o = java_net_Authenticator_GET_thisAuthenticator();
+    XMLVM_CHECK_NPE(1)
     ((java_net_Authenticator*) _r1.o)->fields.java_net_Authenticator.host_ = _r3.o;
     XMLVM_SOURCE_POSITION("Authenticator.java", 221)
     _r1.o = java_net_Authenticator_GET_thisAuthenticator();
+    XMLVM_CHECK_NPE(1)
     ((java_net_Authenticator*) _r1.o)->fields.java_net_Authenticator.addr_ = _r4.o;
     XMLVM_SOURCE_POSITION("Authenticator.java", 222)
     _r1.o = java_net_Authenticator_GET_thisAuthenticator();
+    XMLVM_CHECK_NPE(1)
     ((java_net_Authenticator*) _r1.o)->fields.java_net_Authenticator.port_ = _r5.i;
     XMLVM_SOURCE_POSITION("Authenticator.java", 223)
     _r1.o = java_net_Authenticator_GET_thisAuthenticator();
+    XMLVM_CHECK_NPE(1)
     ((java_net_Authenticator*) _r1.o)->fields.java_net_Authenticator.protocol_ = _r6.o;
     XMLVM_SOURCE_POSITION("Authenticator.java", 224)
     _r1.o = java_net_Authenticator_GET_thisAuthenticator();
+    XMLVM_CHECK_NPE(1)
     ((java_net_Authenticator*) _r1.o)->fields.java_net_Authenticator.prompt_ = _r7.o;
     XMLVM_SOURCE_POSITION("Authenticator.java", 225)
     _r1.o = java_net_Authenticator_GET_thisAuthenticator();
+    XMLVM_CHECK_NPE(1)
     ((java_net_Authenticator*) _r1.o)->fields.java_net_Authenticator.scheme_ = _r8.o;
     XMLVM_SOURCE_POSITION("Authenticator.java", 226)
     _r1.o = java_net_Authenticator_GET_thisAuthenticator();
     _r2.o = java_net_Authenticator_RequestorType_GET_SERVER();
+    XMLVM_CHECK_NPE(1)
     ((java_net_Authenticator*) _r1.o)->fields.java_net_Authenticator.rt_ = _r2.o;
     _r1.o = java_net_Authenticator_GET_thisAuthenticator();
     XMLVM_CHECK_NPE(1)
     _r1.o = java_net_Authenticator_getPasswordAuthentication__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w35129aaac21b1c21)
-        XMLVM_CATCH_SPECIFIC(w35129aaac21b1c21,java_lang_Object,58)
-    XMLVM_CATCH_END(w35129aaac21b1c21)
-    XMLVM_RESTORE_EXCEPTION_ENV(w35129aaac21b1c21)
+    XMLVM_CATCH_BEGIN(w35134aaac21b1c21)
+        XMLVM_CATCH_SPECIFIC(w35134aaac21b1c21,java_lang_Object,58)
+    XMLVM_CATCH_END(w35134aaac21b1c21)
+    XMLVM_RESTORE_EXCEPTION_ENV(w35134aaac21b1c21)
     goto label19;
     label58:;
-    java_lang_Thread* curThread_w35129aaac21b1c24 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w35129aaac21b1c24->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w35134aaac21b1c24 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w35134aaac21b1c24->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     XMLVM_THROW_CUSTOM(_r1.o)
     //XMLVM_END_WRAPPER
@@ -886,6 +904,7 @@ JAVA_OBJECT java_net_Authenticator_getRequestingHost__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Authenticator.java", 240)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_Authenticator*) _r1.o)->fields.java_net_Authenticator.host_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -936,27 +955,35 @@ JAVA_OBJECT java_net_Authenticator_requestPasswordAuthentication___java_lang_Str
     label17:;
     XMLVM_SOURCE_POSITION("Authenticator.java", 283)
     _r0.o = java_net_Authenticator_GET_thisAuthenticator();
+    XMLVM_CHECK_NPE(0)
     ((java_net_Authenticator*) _r0.o)->fields.java_net_Authenticator.host_ = _r2.o;
     XMLVM_SOURCE_POSITION("Authenticator.java", 284)
     _r0.o = java_net_Authenticator_GET_thisAuthenticator();
+    XMLVM_CHECK_NPE(0)
     ((java_net_Authenticator*) _r0.o)->fields.java_net_Authenticator.addr_ = _r3.o;
     XMLVM_SOURCE_POSITION("Authenticator.java", 285)
     _r0.o = java_net_Authenticator_GET_thisAuthenticator();
+    XMLVM_CHECK_NPE(0)
     ((java_net_Authenticator*) _r0.o)->fields.java_net_Authenticator.port_ = _r4.i;
     XMLVM_SOURCE_POSITION("Authenticator.java", 286)
     _r0.o = java_net_Authenticator_GET_thisAuthenticator();
+    XMLVM_CHECK_NPE(0)
     ((java_net_Authenticator*) _r0.o)->fields.java_net_Authenticator.protocol_ = _r5.o;
     XMLVM_SOURCE_POSITION("Authenticator.java", 287)
     _r0.o = java_net_Authenticator_GET_thisAuthenticator();
+    XMLVM_CHECK_NPE(0)
     ((java_net_Authenticator*) _r0.o)->fields.java_net_Authenticator.prompt_ = _r6.o;
     XMLVM_SOURCE_POSITION("Authenticator.java", 288)
     _r0.o = java_net_Authenticator_GET_thisAuthenticator();
+    XMLVM_CHECK_NPE(0)
     ((java_net_Authenticator*) _r0.o)->fields.java_net_Authenticator.scheme_ = _r7.o;
     XMLVM_SOURCE_POSITION("Authenticator.java", 289)
     _r0.o = java_net_Authenticator_GET_thisAuthenticator();
+    XMLVM_CHECK_NPE(0)
     ((java_net_Authenticator*) _r0.o)->fields.java_net_Authenticator.url_ = _r8.o;
     XMLVM_SOURCE_POSITION("Authenticator.java", 290)
     _r0.o = java_net_Authenticator_GET_thisAuthenticator();
+    XMLVM_CHECK_NPE(0)
     ((java_net_Authenticator*) _r0.o)->fields.java_net_Authenticator.rt_ = _r9.o;
     _r0.o = java_net_Authenticator_GET_thisAuthenticator();
     XMLVM_CHECK_NPE(0)
@@ -973,6 +1000,7 @@ JAVA_OBJECT java_net_Authenticator_getRequestingURL__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Authenticator.java", 304)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_Authenticator*) _r1.o)->fields.java_net_Authenticator.url_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -987,6 +1015,7 @@ JAVA_OBJECT java_net_Authenticator_getRequestorType__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Authenticator.java", 313)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_Authenticator*) _r1.o)->fields.java_net_Authenticator.rt_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

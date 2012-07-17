@@ -534,6 +534,7 @@ void java_lang_Throwable___INIT___(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Throwable.java", 62)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_Throwable*) _r0.o)->fields.java_lang_Throwable.cause_ = _r0.o;
     XMLVM_SOURCE_POSITION("Throwable.java", 74)
     XMLVM_CHECK_NPE(0)
@@ -556,6 +557,7 @@ void java_lang_Throwable___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJECT 
     XMLVM_CHECK_NPE(0)
     java_lang_Throwable___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Throwable.java", 86)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_Throwable*) _r0.o)->fields.java_lang_Throwable.detailMessage_ = _r1.o;
     XMLVM_SOURCE_POSITION("Throwable.java", 87)
     XMLVM_EXIT_METHOD()
@@ -577,8 +579,10 @@ void java_lang_Throwable___INIT____java_lang_String_java_lang_Throwable(JAVA_OBJ
     XMLVM_CHECK_NPE(0)
     java_lang_Throwable___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Throwable.java", 100)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_Throwable*) _r0.o)->fields.java_lang_Throwable.detailMessage_ = _r1.o;
     XMLVM_SOURCE_POSITION("Throwable.java", 101)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_Throwable*) _r0.o)->fields.java_lang_Throwable.cause_ = _r2.o;
     XMLVM_SOURCE_POSITION("Throwable.java", 102)
     XMLVM_EXIT_METHOD()
@@ -602,8 +606,10 @@ void java_lang_Throwable___INIT____java_lang_Throwable(JAVA_OBJECT me, JAVA_OBJE
     if (_r2.o != JAVA_NULL) goto label11;
     _r0.o = JAVA_NULL;
     label6:;
+    XMLVM_CHECK_NPE(1)
     ((java_lang_Throwable*) _r1.o)->fields.java_lang_Throwable.detailMessage_ = _r0.o;
     XMLVM_SOURCE_POSITION("Throwable.java", 114)
+    XMLVM_CHECK_NPE(1)
     ((java_lang_Throwable*) _r1.o)->fields.java_lang_Throwable.cause_ = _r2.o;
     XMLVM_SOURCE_POSITION("Throwable.java", 115)
     XMLVM_EXIT_METHOD()
@@ -626,6 +632,7 @@ JAVA_OBJECT java_lang_Throwable_getMessage__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Throwable.java", 139)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_Throwable*) _r1.o)->fields.java_lang_Throwable.detailMessage_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -692,6 +699,7 @@ void java_lang_Throwable_setStackTrace___java_lang_StackTraceElement_1ARRAY(JAVA
     label8:;
     if (_r2.i < _r1.i) goto label13;
     XMLVM_SOURCE_POSITION("Throwable.java", 204)
+    XMLVM_CHECK_NPE(4)
     ((java_lang_Throwable*) _r4.o)->fields.java_lang_Throwable.stackTrace_ = _r0.o;
     XMLVM_SOURCE_POSITION("Throwable.java", 205)
     XMLVM_EXIT_METHOD()
@@ -791,14 +799,17 @@ JAVA_OBJECT java_lang_Throwable_getInternalStackTrace__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Throwable.java", 247)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_Throwable*) _r1.o)->fields.java_lang_Throwable.stackTrace_;
     if (_r0.o != JAVA_NULL) goto label10;
     XMLVM_SOURCE_POSITION("Throwable.java", 248)
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_Throwable_getStackTraceImpl__(_r1.o);
+    XMLVM_CHECK_NPE(1)
     ((java_lang_Throwable*) _r1.o)->fields.java_lang_Throwable.stackTrace_ = _r0.o;
     label10:;
     XMLVM_SOURCE_POSITION("Throwable.java", 250)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_Throwable*) _r1.o)->fields.java_lang_Throwable.stackTrace_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1141,26 +1152,28 @@ JAVA_OBJECT java_lang_Throwable_initCause___java_lang_Throwable(JAVA_OBJECT me, 
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Throwable.java", 349)
     java_lang_Object_acquireLockRecursive__(_r2.o);
-    XMLVM_TRY_BEGIN(w29184aaac20b1b5)
+    XMLVM_TRY_BEGIN(w29186aaac20b1b5)
     // Begin try
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_lang_Throwable*) _r2.o)->fields.java_lang_Throwable.cause_;
-    if (_r0.o != _r2.o) { XMLVM_MEMCPY(curThread_w29184aaac20b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29184aaac20b1b5, sizeof(XMLVM_JMP_BUF)); goto label22; };
+    if (_r0.o != _r2.o) { XMLVM_MEMCPY(curThread_w29186aaac20b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29186aaac20b1b5, sizeof(XMLVM_JMP_BUF)); goto label22; };
     XMLVM_SOURCE_POSITION("Throwable.java", 350)
-    if (_r3.o == _r2.o) { XMLVM_MEMCPY(curThread_w29184aaac20b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29184aaac20b1b5, sizeof(XMLVM_JMP_BUF)); goto label11; };
+    if (_r3.o == _r2.o) { XMLVM_MEMCPY(curThread_w29186aaac20b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29186aaac20b1b5, sizeof(XMLVM_JMP_BUF)); goto label11; };
     XMLVM_SOURCE_POSITION("Throwable.java", 351)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Throwable*) _r2.o)->fields.java_lang_Throwable.cause_ = _r3.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w29184aaac20b1b5)
-        XMLVM_CATCH_SPECIFIC(w29184aaac20b1b5,java_lang_Object,19)
-    XMLVM_CATCH_END(w29184aaac20b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w29184aaac20b1b5)
+    XMLVM_CATCH_BEGIN(w29186aaac20b1b5)
+        XMLVM_CATCH_SPECIFIC(w29186aaac20b1b5,java_lang_Object,19)
+    XMLVM_CATCH_END(w29186aaac20b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w29186aaac20b1b5)
     XMLVM_SOURCE_POSITION("Throwable.java", 352)
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_EXIT_METHOD()
     return _r2.o;
     label11:;
-    XMLVM_TRY_BEGIN(w29184aaac20b1c10)
+    XMLVM_TRY_BEGIN(w29186aaac20b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("Throwable.java", 354)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
@@ -1171,17 +1184,17 @@ JAVA_OBJECT java_lang_Throwable_initCause___java_lang_Throwable(JAVA_OBJECT me, 
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w29184aaac20b1c10)
-        XMLVM_CATCH_SPECIFIC(w29184aaac20b1c10,java_lang_Object,19)
-    XMLVM_CATCH_END(w29184aaac20b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w29184aaac20b1c10)
+    XMLVM_CATCH_BEGIN(w29186aaac20b1c10)
+        XMLVM_CATCH_SPECIFIC(w29186aaac20b1c10,java_lang_Object,19)
+    XMLVM_CATCH_END(w29186aaac20b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w29186aaac20b1c10)
     label19:;
-    java_lang_Thread* curThread_w29184aaac20b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w29184aaac20b1c12->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w29186aaac20b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w29186aaac20b1c12->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label22:;
-    XMLVM_TRY_BEGIN(w29184aaac20b1c16)
+    XMLVM_TRY_BEGIN(w29186aaac20b1c16)
     // Begin try
     XMLVM_SOURCE_POSITION("Throwable.java", 356)
     _r0.o = __NEW_java_lang_IllegalStateException();
@@ -1192,10 +1205,10 @@ JAVA_OBJECT java_lang_Throwable_initCause___java_lang_Throwable(JAVA_OBJECT me, 
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w29184aaac20b1c16)
-        XMLVM_CATCH_SPECIFIC(w29184aaac20b1c16,java_lang_Object,19)
-    XMLVM_CATCH_END(w29184aaac20b1c16)
-    XMLVM_RESTORE_EXCEPTION_ENV(w29184aaac20b1c16)
+    XMLVM_CATCH_BEGIN(w29186aaac20b1c16)
+        XMLVM_CATCH_SPECIFIC(w29186aaac20b1c16,java_lang_Object,19)
+    XMLVM_CATCH_END(w29186aaac20b1c16)
+    XMLVM_RESTORE_EXCEPTION_ENV(w29186aaac20b1c16)
     //XMLVM_END_WRAPPER
 }
 
@@ -1207,6 +1220,7 @@ JAVA_OBJECT java_lang_Throwable_getCause__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Throwable.java", 366)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_Throwable*) _r1.o)->fields.java_lang_Throwable.cause_;
     if (_r0.o != _r1.o) goto label6;
     XMLVM_SOURCE_POSITION("Throwable.java", 367)
@@ -1216,6 +1230,7 @@ JAVA_OBJECT java_lang_Throwable_getCause__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label6:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_Throwable*) _r1.o)->fields.java_lang_Throwable.cause_;
     goto label5;
     //XMLVM_END_WRAPPER

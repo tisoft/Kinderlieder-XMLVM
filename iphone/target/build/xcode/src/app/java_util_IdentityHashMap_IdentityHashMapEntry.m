@@ -327,10 +327,12 @@ JAVA_BOOLEAN java_util_IdentityHashMap_IdentityHashMapEntry_equals___java_lang_O
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 101)
     _r5.o = _r5.o;
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 102)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_MapEntry*) _r4.o)->fields.java_util_MapEntry.key_;
     XMLVM_CHECK_NPE(5)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_Entry_getKey__])(_r5.o);
     if (_r0.o != _r1.o) goto label30;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_MapEntry*) _r4.o)->fields.java_util_MapEntry.value_;
     XMLVM_CHECK_NPE(5)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_Entry_getValue__])(_r5.o);
@@ -355,9 +357,11 @@ JAVA_INT java_util_IdentityHashMap_IdentityHashMapEntry_hashCode__(JAVA_OBJECT m
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 109)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_MapEntry*) _r2.o)->fields.java_util_MapEntry.key_;
     _r0.i = java_lang_System_identityHashCode___java_lang_Object(_r0.o);
     XMLVM_SOURCE_POSITION("IdentityHashMap.java", 110)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_MapEntry*) _r2.o)->fields.java_util_MapEntry.value_;
     _r1.i = java_lang_System_identityHashCode___java_lang_Object(_r1.o);
     _r0.i = _r0.i ^ _r1.i;
@@ -378,6 +382,7 @@ JAVA_OBJECT java_util_IdentityHashMap_IdentityHashMapEntry_toString__(JAVA_OBJEC
     _r0.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_MapEntry*) _r2.o)->fields.java_util_MapEntry.key_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);
@@ -385,6 +390,7 @@ JAVA_OBJECT java_util_IdentityHashMap_IdentityHashMapEntry_toString__(JAVA_OBJEC
     _r1.o = xmlvm_create_java_string_from_pool(162);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_MapEntry*) _r2.o)->fields.java_util_MapEntry.value_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);

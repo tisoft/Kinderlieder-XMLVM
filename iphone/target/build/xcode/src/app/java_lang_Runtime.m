@@ -525,6 +525,7 @@ void __INIT_IMPL_java_lang_Runtime()
     // Copy vtable from base class
     XMLVM_MEMCPY(__TIB_java_lang_Runtime.vtable, __TIB_java_lang_Object.vtable, sizeof(__TIB_java_lang_Object.vtable));
     // Initialize vtable for this class
+    xmlvm_init_native_java_lang_Runtime();
     // Initialize interface information
     __TIB_java_lang_Runtime.numImplementedInterfaces = 0;
     __TIB_java_lang_Runtime.implementedInterfaces = (__TIB_DEFINITION_TEMPLATE* (*)[1]) XMLVM_MALLOC(sizeof(__TIB_DEFINITION_TEMPLATE*) * 0);
@@ -732,32 +733,9 @@ void java_lang_Runtime_exit___int(JAVA_OBJECT me, JAVA_INT n1)
     //XMLVM_END_WRAPPER
 }
 
-JAVA_LONG java_lang_Runtime_freeMemory__(JAVA_OBJECT me)
-{
-    //XMLVM_BEGIN_WRAPPER[java_lang_Runtime_freeMemory__]
-    XMLVM_ENTER_METHOD("java.lang.Runtime", "freeMemory", "?")
-    XMLVMElem _r0;
-    XMLVMElem _r1;
-    XMLVMElem _r2;
-    _r2.o = me;
-    XMLVM_SOURCE_POSITION("Runtime.java", 217)
-    _r0.l = 0;
-    XMLVM_EXIT_METHOD()
-    return _r0.l;
-    //XMLVM_END_WRAPPER
-}
+//XMLVM_NATIVE[JAVA_LONG java_lang_Runtime_freeMemory__(JAVA_OBJECT me)]
 
-void java_lang_Runtime_gc__(JAVA_OBJECT me)
-{
-    //XMLVM_BEGIN_WRAPPER[java_lang_Runtime_gc__]
-    XMLVM_ENTER_METHOD("java.lang.Runtime", "gc", "?")
-    XMLVMElem _r0;
-    _r0.o = me;
-    XMLVM_SOURCE_POSITION("Runtime.java", 226)
-    XMLVM_EXIT_METHOD()
-    return;
-    //XMLVM_END_WRAPPER
-}
+//XMLVM_NATIVE[void java_lang_Runtime_gc__(JAVA_OBJECT me)]
 
 JAVA_OBJECT java_lang_Runtime_getRuntime__()
 {
@@ -765,7 +743,7 @@ JAVA_OBJECT java_lang_Runtime_getRuntime__()
     //XMLVM_BEGIN_WRAPPER[java_lang_Runtime_getRuntime__]
     XMLVM_ENTER_METHOD("java.lang.Runtime", "getRuntime", "?")
     XMLVMElem _r0;
-    XMLVM_SOURCE_POSITION("Runtime.java", 235)
+    XMLVM_SOURCE_POSITION("Runtime.java", 231)
     _r0.o = java_lang_Runtime_GET_runtime();
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -780,7 +758,7 @@ void java_lang_Runtime_load___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1)
     XMLVMElem _r1;
     _r0.o = me;
     _r1.o = n1;
-    XMLVM_SOURCE_POSITION("Runtime.java", 254)
+    XMLVM_SOURCE_POSITION("Runtime.java", 250)
     XMLVM_EXIT_METHOD()
     return;
     //XMLVM_END_WRAPPER
@@ -794,7 +772,7 @@ void java_lang_Runtime_loadLibrary___java_lang_String(JAVA_OBJECT me, JAVA_OBJEC
     XMLVMElem _r1;
     _r0.o = me;
     _r1.o = n1;
-    XMLVM_SOURCE_POSITION("Runtime.java", 272)
+    XMLVM_SOURCE_POSITION("Runtime.java", 268)
     XMLVM_EXIT_METHOD()
     return;
     //XMLVM_END_WRAPPER
@@ -806,7 +784,7 @@ void java_lang_Runtime_runFinalization__(JAVA_OBJECT me)
     XMLVM_ENTER_METHOD("java.lang.Runtime", "runFinalization", "?")
     XMLVMElem _r0;
     _r0.o = me;
-    XMLVM_SOURCE_POSITION("Runtime.java", 280)
+    XMLVM_SOURCE_POSITION("Runtime.java", 276)
     XMLVM_EXIT_METHOD()
     return;
     //XMLVM_END_WRAPPER
@@ -819,26 +797,13 @@ void java_lang_Runtime_runFinalizersOnExit___boolean(JAVA_BOOLEAN n1)
     XMLVM_ENTER_METHOD("java.lang.Runtime", "runFinalizersOnExit", "?")
     XMLVMElem _r0;
     _r0.i = n1;
-    XMLVM_SOURCE_POSITION("Runtime.java", 296)
+    XMLVM_SOURCE_POSITION("Runtime.java", 292)
     XMLVM_EXIT_METHOD()
     return;
     //XMLVM_END_WRAPPER
 }
 
-JAVA_LONG java_lang_Runtime_totalMemory__(JAVA_OBJECT me)
-{
-    //XMLVM_BEGIN_WRAPPER[java_lang_Runtime_totalMemory__]
-    XMLVM_ENTER_METHOD("java.lang.Runtime", "totalMemory", "?")
-    XMLVMElem _r0;
-    XMLVMElem _r1;
-    XMLVMElem _r2;
-    _r2.o = me;
-    XMLVM_SOURCE_POSITION("Runtime.java", 306)
-    _r0.l = 0;
-    XMLVM_EXIT_METHOD()
-    return _r0.l;
-    //XMLVM_END_WRAPPER
-}
+//XMLVM_NATIVE[JAVA_LONG java_lang_Runtime_totalMemory__(JAVA_OBJECT me)]
 
 void java_lang_Runtime_traceInstructions___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
 {
@@ -848,7 +813,7 @@ void java_lang_Runtime_traceInstructions___boolean(JAVA_OBJECT me, JAVA_BOOLEAN 
     XMLVMElem _r1;
     _r0.o = me;
     _r1.i = n1;
-    XMLVM_SOURCE_POSITION("Runtime.java", 317)
+    XMLVM_SOURCE_POSITION("Runtime.java", 311)
     XMLVM_EXIT_METHOD()
     return;
     //XMLVM_END_WRAPPER
@@ -862,7 +827,7 @@ void java_lang_Runtime_traceMethodCalls___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n
     XMLVMElem _r1;
     _r0.o = me;
     _r1.i = n1;
-    XMLVM_SOURCE_POSITION("Runtime.java", 328)
+    XMLVM_SOURCE_POSITION("Runtime.java", 322)
     XMLVM_EXIT_METHOD()
     return;
     //XMLVM_END_WRAPPER
@@ -877,7 +842,7 @@ JAVA_OBJECT java_lang_Runtime_getLocalizedInputStream___java_io_InputStream(JAVA
     XMLVMElem _r2;
     _r1.o = me;
     _r2.o = n1;
-    XMLVM_SOURCE_POSITION("Runtime.java", 344)
+    XMLVM_SOURCE_POSITION("Runtime.java", 338)
     _r0.o = JAVA_NULL;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -893,7 +858,7 @@ JAVA_OBJECT java_lang_Runtime_getLocalizedOutputStream___java_io_OutputStream(JA
     XMLVMElem _r2;
     _r1.o = me;
     _r2.o = n1;
-    XMLVM_SOURCE_POSITION("Runtime.java", 360)
+    XMLVM_SOURCE_POSITION("Runtime.java", 354)
     _r0.o = JAVA_NULL;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -910,9 +875,9 @@ void java_lang_Runtime_addShutdownHook___java_lang_Thread(JAVA_OBJECT me, JAVA_O
     XMLVMElem _r3;
     _r2.o = me;
     _r3.o = n1;
-    XMLVM_SOURCE_POSITION("Runtime.java", 402)
+    XMLVM_SOURCE_POSITION("Runtime.java", 396)
     if (_r3.o != JAVA_NULL) goto label10;
-    XMLVM_SOURCE_POSITION("Runtime.java", 403)
+    XMLVM_SOURCE_POSITION("Runtime.java", 397)
     _r0.o = __NEW_java_lang_NullPointerException();
     // "null is not allowed here"
     _r1.o = xmlvm_create_java_string_from_pool(1511);
@@ -920,7 +885,7 @@ void java_lang_Runtime_addShutdownHook___java_lang_Thread(JAVA_OBJECT me, JAVA_O
     java_lang_NullPointerException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label10:;
-    XMLVM_SOURCE_POSITION("Runtime.java", 405)
+    XMLVM_SOURCE_POSITION("Runtime.java", 399)
     XMLVM_EXIT_METHOD()
     return;
     //XMLVM_END_WRAPPER
@@ -936,9 +901,9 @@ JAVA_BOOLEAN java_lang_Runtime_removeShutdownHook___java_lang_Thread(JAVA_OBJECT
     XMLVMElem _r3;
     _r2.o = me;
     _r3.o = n1;
-    XMLVM_SOURCE_POSITION("Runtime.java", 423)
+    XMLVM_SOURCE_POSITION("Runtime.java", 417)
     if (_r3.o != JAVA_NULL) goto label10;
-    XMLVM_SOURCE_POSITION("Runtime.java", 424)
+    XMLVM_SOURCE_POSITION("Runtime.java", 418)
     _r0.o = __NEW_java_lang_NullPointerException();
     // "null is not allowed here"
     _r1.o = xmlvm_create_java_string_from_pool(1511);
@@ -946,7 +911,7 @@ JAVA_BOOLEAN java_lang_Runtime_removeShutdownHook___java_lang_Thread(JAVA_OBJECT
     java_lang_NullPointerException___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label10:;
-    XMLVM_SOURCE_POSITION("Runtime.java", 426)
+    XMLVM_SOURCE_POSITION("Runtime.java", 420)
     _r0.i = 0;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -961,7 +926,7 @@ void java_lang_Runtime_halt___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVMElem _r1;
     _r0.o = me;
     _r1.i = n1;
-    XMLVM_SOURCE_POSITION("Runtime.java", 445)
+    XMLVM_SOURCE_POSITION("Runtime.java", 439)
     XMLVM_EXIT_METHOD()
     return;
     //XMLVM_END_WRAPPER
@@ -974,7 +939,7 @@ JAVA_INT java_lang_Runtime_availableProcessors__(JAVA_OBJECT me)
     XMLVMElem _r0;
     XMLVMElem _r1;
     _r1.o = me;
-    XMLVM_SOURCE_POSITION("Runtime.java", 454)
+    XMLVM_SOURCE_POSITION("Runtime.java", 448)
     _r0.i = 0;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -989,7 +954,7 @@ JAVA_LONG java_lang_Runtime_maxMemory__(JAVA_OBJECT me)
     XMLVMElem _r1;
     XMLVMElem _r2;
     _r2.o = me;
-    XMLVM_SOURCE_POSITION("Runtime.java", 465)
+    XMLVM_SOURCE_POSITION("Runtime.java", 459)
     _r0.l = 0;
     XMLVM_EXIT_METHOD()
     return _r0.l;

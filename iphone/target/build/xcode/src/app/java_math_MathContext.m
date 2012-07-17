@@ -601,8 +601,10 @@ void java_math_MathContext___INIT____int_java_math_RoundingMode(JAVA_OBJECT me, 
     XMLVM_THROW_CUSTOM(_r0.o)
     label31:;
     XMLVM_SOURCE_POSITION("MathContext.java", 140)
+    XMLVM_CHECK_NPE(2)
     ((java_math_MathContext*) _r2.o)->fields.java_math_MathContext.precision_ = _r3.i;
     XMLVM_SOURCE_POSITION("MathContext.java", 141)
+    XMLVM_CHECK_NPE(2)
     ((java_math_MathContext*) _r2.o)->fields.java_math_MathContext.roundingMode_ = _r4.o;
     XMLVM_SOURCE_POSITION("MathContext.java", 142)
     XMLVM_EXIT_METHOD()
@@ -702,9 +704,11 @@ void java_math_MathContext___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJEC
     XMLVM_THROW_CUSTOM(_r0.o)
     label89:;
     XMLVM_SOURCE_POSITION("MathContext.java", 183)
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_math_MathContext*) _r8.o)->fields.java_math_MathContext.precision_;
     _r3.i = _r3.i * 10;
     _r2.i = _r2.i + _r3.i;
+    XMLVM_CHECK_NPE(8)
     ((java_math_MathContext*) _r8.o)->fields.java_math_MathContext.precision_ = _r2.i;
     XMLVM_SOURCE_POSITION("MathContext.java", 184)
     _r1.i = _r1.i + 1;
@@ -765,11 +769,14 @@ void java_math_MathContext___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJEC
     XMLVM_THROW_CUSTOM(_r0.o)
     label158:;
     XMLVM_SOURCE_POSITION("MathContext.java", 199)
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_math_MathContext*) _r8.o)->fields.java_math_MathContext.precision_;
     _r3.i = _r3.i * 10;
     _r2.i = _r2.i + _r3.i;
+    XMLVM_CHECK_NPE(8)
     ((java_math_MathContext*) _r8.o)->fields.java_math_MathContext.precision_ = _r2.i;
     XMLVM_SOURCE_POSITION("MathContext.java", 200)
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_math_MathContext*) _r8.o)->fields.java_math_MathContext.precision_;
     if (_r2.i >= 0) goto label181;
     XMLVM_SOURCE_POSITION("MathContext.java", 202)
@@ -796,6 +803,7 @@ void java_math_MathContext___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJEC
     _r0.o = java_lang_String_valueOf___char_1ARRAY_int_int(_r0.o, _r2.i, _r1.i);
     _r0.o = java_math_RoundingMode_valueOf___java_lang_String(_r0.o);
     XMLVM_SOURCE_POSITION("MathContext.java", 217)
+    XMLVM_CHECK_NPE(8)
     ((java_math_MathContext*) _r8.o)->fields.java_math_MathContext.roundingMode_ = _r0.o;
     XMLVM_SOURCE_POSITION("MathContext.java", 219)
     XMLVM_EXIT_METHOD()
@@ -811,6 +819,7 @@ JAVA_INT java_math_MathContext_getPrecision__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("MathContext.java", 233)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_math_MathContext*) _r1.o)->fields.java_math_MathContext.precision_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -825,6 +834,7 @@ JAVA_OBJECT java_math_MathContext_getRoundingMode__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("MathContext.java", 253)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_math_MathContext*) _r1.o)->fields.java_math_MathContext.roundingMode_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -852,12 +862,14 @@ JAVA_BOOLEAN java_math_MathContext_equals___java_lang_Object(JAVA_OBJECT me, JAV
     _r1 = _r0;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_math_MathContext_getPrecision__(_r1.o);
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_math_MathContext*) _r3.o)->fields.java_math_MathContext.precision_;
     if (_r1.i != _r2.i) goto label28;
     XMLVM_SOURCE_POSITION("MathContext.java", 269)
     _r4.o = _r4.o;
     XMLVM_CHECK_NPE(4)
     _r1.o = java_math_MathContext_getRoundingMode__(_r4.o);
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_math_MathContext*) _r3.o)->fields.java_math_MathContext.roundingMode_;
     if (_r1.o != _r2.o) goto label28;
     _r1.i = 1;
@@ -879,8 +891,10 @@ JAVA_INT java_math_MathContext_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("MathContext.java", 280)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_MathContext*) _r2.o)->fields.java_math_MathContext.precision_;
     _r0.i = _r0.i << 3;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_math_MathContext*) _r2.o)->fields.java_math_MathContext.roundingMode_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_lang_Enum_ordinal__(_r1.o);
@@ -908,6 +922,7 @@ JAVA_OBJECT java_math_MathContext_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___char_1ARRAY(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("MathContext.java", 299)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_math_MathContext*) _r2.o)->fields.java_math_MathContext.precision_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___int(_r0.o, _r1.i);
@@ -921,6 +936,7 @@ JAVA_OBJECT java_math_MathContext_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___char_1ARRAY(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("MathContext.java", 302)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_math_MathContext*) _r2.o)->fields.java_math_MathContext.roundingMode_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);
@@ -947,6 +963,7 @@ void java_math_MathContext_readObject___java_io_ObjectInputStream(JAVA_OBJECT me
     XMLVM_CHECK_NPE(3)
     java_io_ObjectInputStream_defaultReadObject__(_r3.o);
     XMLVM_SOURCE_POSITION("MathContext.java", 318)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_MathContext*) _r2.o)->fields.java_math_MathContext.precision_;
     if (_r0.i >= 0) goto label19;
     XMLVM_SOURCE_POSITION("MathContext.java", 320)
@@ -959,6 +976,7 @@ void java_math_MathContext_readObject___java_io_ObjectInputStream(JAVA_OBJECT me
     XMLVM_THROW_CUSTOM(_r0.o)
     label19:;
     XMLVM_SOURCE_POSITION("MathContext.java", 322)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_math_MathContext*) _r2.o)->fields.java_math_MathContext.roundingMode_;
     if (_r0.o != JAVA_NULL) goto label35;
     XMLVM_SOURCE_POSITION("MathContext.java", 324)

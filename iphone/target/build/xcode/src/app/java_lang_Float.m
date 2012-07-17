@@ -900,6 +900,7 @@ void java_lang_Float___INIT____float(JAVA_OBJECT me, JAVA_FLOAT n1)
     XMLVM_CHECK_NPE(0)
     java_lang_Number___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Float.java", 112)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_Float*) _r0.o)->fields.java_lang_Float.value_ = _r1.f;
     XMLVM_SOURCE_POSITION("Float.java", 113)
     XMLVM_EXIT_METHOD()
@@ -922,6 +923,7 @@ void java_lang_Float___INIT____double(JAVA_OBJECT me, JAVA_DOUBLE n1)
     java_lang_Number___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("Float.java", 122)
     _r0.f = (JAVA_FLOAT) _r2.d;
+    XMLVM_CHECK_NPE(1)
     ((java_lang_Float*) _r1.o)->fields.java_lang_Float.value_ = _r0.f;
     XMLVM_SOURCE_POSITION("Float.java", 123)
     XMLVM_EXIT_METHOD()
@@ -959,7 +961,9 @@ JAVA_INT java_lang_Float_compareTo___java_lang_Float(JAVA_OBJECT me, JAVA_OBJECT
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Float.java", 157)
+    XMLVM_CHECK_NPE(2)
     _r0.f = ((java_lang_Float*) _r2.o)->fields.java_lang_Float.value_;
+    XMLVM_CHECK_NPE(3)
     _r1.f = ((java_lang_Float*) _r3.o)->fields.java_lang_Float.value_;
     _r0.i = java_lang_Float_compare___float_float(_r0.f, _r1.f);
     XMLVM_EXIT_METHOD()
@@ -975,6 +979,7 @@ JAVA_BYTE java_lang_Float_byteValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Float.java", 162)
+    XMLVM_CHECK_NPE(1)
     _r0.f = ((java_lang_Float*) _r1.o)->fields.java_lang_Float.value_;
     _r0.i = (JAVA_INT) _r0.f;
     _r0.i = (_r0.i << 24) >> 24;
@@ -992,6 +997,7 @@ JAVA_DOUBLE java_lang_Float_doubleValue__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Float.java", 167)
+    XMLVM_CHECK_NPE(2)
     _r0.f = ((java_lang_Float*) _r2.o)->fields.java_lang_Float.value_;
     _r0.d = (JAVA_DOUBLE) _r0.f;
     XMLVM_EXIT_METHOD()
@@ -1016,9 +1022,11 @@ JAVA_BOOLEAN java_lang_Float_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJE
     _r0.i = XMLVM_ISA(_r3.o, __CLASS_java_lang_Float);
     if (_r0.i == 0) goto label22;
     XMLVM_SOURCE_POSITION("Float.java", 184)
+    XMLVM_CHECK_NPE(2)
     _r0.f = ((java_lang_Float*) _r2.o)->fields.java_lang_Float.value_;
     _r0.i = java_lang_Float_floatToIntBits___float(_r0.f);
     _r3.o = _r3.o;
+    XMLVM_CHECK_NPE(3)
     _r1.f = ((java_lang_Float*) _r3.o)->fields.java_lang_Float.value_;
     _r1.i = java_lang_Float_floatToIntBits___float(_r1.f);
     if (_r0.i == _r1.i) goto label24;
@@ -1045,6 +1053,7 @@ JAVA_FLOAT java_lang_Float_floatValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Float.java", 223)
+    XMLVM_CHECK_NPE(1)
     _r0.f = ((java_lang_Float*) _r1.o)->fields.java_lang_Float.value_;
     XMLVM_EXIT_METHOD()
     return _r0.f;
@@ -1059,6 +1068,7 @@ JAVA_INT java_lang_Float_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Float.java", 228)
+    XMLVM_CHECK_NPE(1)
     _r0.f = ((java_lang_Float*) _r1.o)->fields.java_lang_Float.value_;
     _r0.i = java_lang_Float_floatToIntBits___float(_r0.f);
     XMLVM_EXIT_METHOD()
@@ -1076,6 +1086,7 @@ JAVA_INT java_lang_Float_intValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Float.java", 246)
+    XMLVM_CHECK_NPE(1)
     _r0.f = ((java_lang_Float*) _r1.o)->fields.java_lang_Float.value_;
     _r0.i = (JAVA_INT) _r0.f;
     XMLVM_EXIT_METHOD()
@@ -1091,6 +1102,7 @@ JAVA_BOOLEAN java_lang_Float_isInfinite__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Float.java", 256)
+    XMLVM_CHECK_NPE(1)
     _r0.f = ((java_lang_Float*) _r1.o)->fields.java_lang_Float.value_;
     _r0.i = java_lang_Float_isInfinite___float(_r0.f);
     XMLVM_EXIT_METHOD()
@@ -1131,6 +1143,7 @@ JAVA_BOOLEAN java_lang_Float_isNaN__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Float.java", 278)
+    XMLVM_CHECK_NPE(1)
     _r0.f = ((java_lang_Float*) _r1.o)->fields.java_lang_Float.value_;
     _r0.i = java_lang_Float_isNaN___float(_r0.f);
     XMLVM_EXIT_METHOD()
@@ -1168,6 +1181,7 @@ JAVA_LONG java_lang_Float_longValue__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Float.java", 296)
+    XMLVM_CHECK_NPE(2)
     _r0.f = ((java_lang_Float*) _r2.o)->fields.java_lang_Float.value_;
     _r0.l = (JAVA_LONG) _r0.f;
     XMLVM_EXIT_METHOD()
@@ -1199,6 +1213,7 @@ JAVA_SHORT java_lang_Float_shortValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Float.java", 318)
+    XMLVM_CHECK_NPE(1)
     _r0.f = ((java_lang_Float*) _r1.o)->fields.java_lang_Float.value_;
     _r0.i = (JAVA_INT) _r0.f;
     _r0.i = (_r0.i << 16) >> 16;
@@ -1215,6 +1230,7 @@ JAVA_OBJECT java_lang_Float_toString__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Float.java", 323)
+    XMLVM_CHECK_NPE(1)
     _r0.f = ((java_lang_Float*) _r1.o)->fields.java_lang_Float.value_;
     _r0.o = java_lang_Float_toString___float(_r0.f);
     XMLVM_EXIT_METHOD()

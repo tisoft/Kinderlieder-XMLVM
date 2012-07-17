@@ -628,10 +628,12 @@ void gnu_xml_pipeline_WellFormednessFilter___INIT____gnu_xml_pipeline_EventConsu
     _r0.o = __NEW_java_util_Stack();
     XMLVM_CHECK_NPE(0)
     java_util_Stack___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_WellFormednessFilter*) _r1.o)->fields.gnu_xml_pipeline_WellFormednessFilter.elementStack_ = _r0.o;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 90)
     // "before"
     _r0.o = xmlvm_create_java_string_from_pool(97);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_WellFormednessFilter*) _r1.o)->fields.gnu_xml_pipeline_WellFormednessFilter.dtdState_ = _r0.o;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 110)
     XMLVM_CHECK_NPE(1)
@@ -672,10 +674,13 @@ void gnu_xml_pipeline_WellFormednessFilter_reset__(JAVA_OBJECT me)
     _r1.o = me;
     _r0.i = 0;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 125)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_WellFormednessFilter*) _r1.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedDoc_ = _r0.i;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 126)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_WellFormednessFilter*) _r1.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedCDATA_ = _r0.i;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 127)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_WellFormednessFilter*) _r1.o)->fields.gnu_xml_pipeline_WellFormednessFilter.elementStack_;
     XMLVM_CHECK_NPE(0)
     java_util_Vector_removeAllElements__(_r0.o);
@@ -764,6 +769,7 @@ void gnu_xml_pipeline_WellFormednessFilter_setDocumentLocator___org_xml_sax_Loca
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 164)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_pipeline_WellFormednessFilter*) _r2.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedDoc_;
     if (_r0.i == 0) goto label12;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 165)
@@ -792,6 +798,7 @@ void gnu_xml_pipeline_WellFormednessFilter_startDocument__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 172)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_pipeline_WellFormednessFilter*) _r1.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedDoc_;
     if (_r0.i == 0) goto label9;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 173)
@@ -802,11 +809,14 @@ void gnu_xml_pipeline_WellFormednessFilter_startDocument__(JAVA_OBJECT me)
     label9:;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 174)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_WellFormednessFilter*) _r1.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedDoc_ = _r0.i;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 175)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_WellFormednessFilter*) _r1.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedCDATA_ = _r0.i;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 176)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_WellFormednessFilter*) _r1.o)->fields.gnu_xml_pipeline_WellFormednessFilter.elementStack_;
     XMLVM_CHECK_NPE(0)
     java_util_Vector_removeAllElements__(_r0.o);
@@ -836,6 +846,7 @@ void gnu_xml_pipeline_WellFormednessFilter_startElement___java_lang_String_java_
     _r5.o = n3;
     _r6.o = n4;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 185)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_pipeline_WellFormednessFilter*) _r2.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedDoc_;
     if (_r0.i != 0) goto label9;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 186)
@@ -847,6 +858,7 @@ void gnu_xml_pipeline_WellFormednessFilter_startElement___java_lang_String_java_
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 187)
     // "inside"
     _r0.o = xmlvm_create_java_string_from_pool(101);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_pipeline_WellFormednessFilter*) _r2.o)->fields.gnu_xml_pipeline_WellFormednessFilter.dtdState_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -859,6 +871,7 @@ void gnu_xml_pipeline_WellFormednessFilter_startElement___java_lang_String_java_
     gnu_xml_pipeline_WellFormednessFilter_fatalError___java_lang_String(_r2.o, _r0.o);
     label24:;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 191)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_pipeline_WellFormednessFilter*) _r2.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedCDATA_;
     if (_r0.i == 0) goto label33;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 192)
@@ -883,6 +896,7 @@ void gnu_xml_pipeline_WellFormednessFilter_startElement___java_lang_String_java_
     gnu_xml_pipeline_WellFormednessFilter_fatalError___java_lang_String(_r2.o, _r0.o);
     label48:;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 195)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_pipeline_WellFormednessFilter*) _r2.o)->fields.gnu_xml_pipeline_WellFormednessFilter.elementStack_;
     XMLVM_CHECK_NPE(0)
     java_util_Stack_push___java_lang_Object(_r0.o, _r5.o);
@@ -896,6 +910,7 @@ void gnu_xml_pipeline_WellFormednessFilter_startElement___java_lang_String_java_
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 190)
     // "after"
     _r0.o = xmlvm_create_java_string_from_pool(105);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_pipeline_WellFormednessFilter*) _r2.o)->fields.gnu_xml_pipeline_WellFormednessFilter.dtdState_ = _r0.o;
     goto label24;
     //XMLVM_END_WRAPPER
@@ -920,6 +935,7 @@ void gnu_xml_pipeline_WellFormednessFilter_endElement___java_lang_String_java_la
     // ">"
     _r3.o = xmlvm_create_java_string_from_pool(106);
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 202)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_pipeline_WellFormednessFilter*) _r4.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedDoc_;
     if (_r0.i != 0) goto label11;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 203)
@@ -929,6 +945,7 @@ void gnu_xml_pipeline_WellFormednessFilter_endElement___java_lang_String_java_la
     gnu_xml_pipeline_WellFormednessFilter_fatalError___java_lang_String(_r4.o, _r0.o);
     label11:;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 204)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_xml_pipeline_WellFormednessFilter*) _r4.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedCDATA_;
     if (_r0.i == 0) goto label20;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 205)
@@ -955,6 +972,7 @@ void gnu_xml_pipeline_WellFormednessFilter_endElement___java_lang_String_java_la
     XMLVM_TRY_BEGIN(w2051aaac12b1c30)
     // Begin try
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 210)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_pipeline_WellFormednessFilter*) _r4.o)->fields.gnu_xml_pipeline_WellFormednessFilter.elementStack_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_util_Stack_pop__(_r0.o);
@@ -1032,6 +1050,7 @@ void gnu_xml_pipeline_WellFormednessFilter_endDocument__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 223)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_pipeline_WellFormednessFilter*) _r1.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedDoc_;
     if (_r0.i != 0) goto label9;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 224)
@@ -1043,9 +1062,11 @@ void gnu_xml_pipeline_WellFormednessFilter_endDocument__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 225)
     // "before"
     _r0.o = xmlvm_create_java_string_from_pool(97);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_WellFormednessFilter*) _r1.o)->fields.gnu_xml_pipeline_WellFormednessFilter.dtdState_ = _r0.o;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 226)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_WellFormednessFilter*) _r1.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedDoc_ = _r0.i;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 227)
     XMLVM_CHECK_NPE(1)
@@ -1071,6 +1092,7 @@ void gnu_xml_pipeline_WellFormednessFilter_startDTD___java_lang_String_java_lang
     _r4.o = n2;
     _r5.o = n3;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 234)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_pipeline_WellFormednessFilter*) _r2.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedDoc_;
     if (_r0.i != 0) goto label9;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 235)
@@ -1082,6 +1104,7 @@ void gnu_xml_pipeline_WellFormednessFilter_startDTD___java_lang_String_java_lang
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 236)
     // "before"
     _r0.o = xmlvm_create_java_string_from_pool(97);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_pipeline_WellFormednessFilter*) _r2.o)->fields.gnu_xml_pipeline_WellFormednessFilter.dtdState_;
     if (_r0.o == _r1.o) goto label20;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 237)
@@ -1091,6 +1114,7 @@ void gnu_xml_pipeline_WellFormednessFilter_startDTD___java_lang_String_java_lang
     gnu_xml_pipeline_WellFormednessFilter_fatalError___java_lang_String(_r2.o, _r0.o);
     label20:;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 238)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_pipeline_WellFormednessFilter*) _r2.o)->fields.gnu_xml_pipeline_WellFormednessFilter.elementStack_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Stack_empty__(_r0.o);
@@ -1104,6 +1128,7 @@ void gnu_xml_pipeline_WellFormednessFilter_startDTD___java_lang_String_java_lang
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 240)
     // "inside"
     _r0.o = xmlvm_create_java_string_from_pool(101);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_pipeline_WellFormednessFilter*) _r2.o)->fields.gnu_xml_pipeline_WellFormednessFilter.dtdState_ = _r0.o;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 241)
     XMLVM_CHECK_NPE(2)
@@ -1131,6 +1156,7 @@ void gnu_xml_pipeline_WellFormednessFilter_notationDecl___java_lang_String_java_
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 249)
     // "after"
     _r0.o = xmlvm_create_java_string_from_pool(105);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_pipeline_WellFormednessFilter*) _r2.o)->fields.gnu_xml_pipeline_WellFormednessFilter.dtdState_;
     if (_r0.o != _r1.o) goto label11;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 250)
@@ -1167,6 +1193,7 @@ void gnu_xml_pipeline_WellFormednessFilter_unparsedEntityDecl___java_lang_String
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 260)
     // "after"
     _r0.o = xmlvm_create_java_string_from_pool(105);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_pipeline_WellFormednessFilter*) _r2.o)->fields.gnu_xml_pipeline_WellFormednessFilter.dtdState_;
     if (_r0.o != _r1.o) goto label11;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 261)
@@ -1193,6 +1220,7 @@ void gnu_xml_pipeline_WellFormednessFilter_endDTD__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 270)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_xml_pipeline_WellFormednessFilter*) _r2.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedDoc_;
     if (_r0.i != 0) goto label9;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 271)
@@ -1204,6 +1232,7 @@ void gnu_xml_pipeline_WellFormednessFilter_endDTD__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 272)
     // "inside"
     _r0.o = xmlvm_create_java_string_from_pool(101);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_pipeline_WellFormednessFilter*) _r2.o)->fields.gnu_xml_pipeline_WellFormednessFilter.dtdState_;
     if (_r0.o == _r1.o) goto label20;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 273)
@@ -1215,6 +1244,7 @@ void gnu_xml_pipeline_WellFormednessFilter_endDTD__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 274)
     // "after"
     _r0.o = xmlvm_create_java_string_from_pool(105);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_pipeline_WellFormednessFilter*) _r2.o)->fields.gnu_xml_pipeline_WellFormednessFilter.dtdState_ = _r0.o;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 275)
     XMLVM_CHECK_NPE(2)
@@ -1246,6 +1276,7 @@ void gnu_xml_pipeline_WellFormednessFilter_characters___char_1ARRAY_int_int(JAVA
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 281)
     _r0.i = _r7.i + _r8.i;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 282)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_xml_pipeline_WellFormednessFilter*) _r5.o)->fields.gnu_xml_pipeline_WellFormednessFilter.elementStack_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_util_Stack_empty__(_r1.o);
@@ -1330,6 +1361,7 @@ void gnu_xml_pipeline_WellFormednessFilter_ignorableWhitespace___char_1ARRAY_int
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 302)
     _r0.i = _r6.i + _r7.i;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 303)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_pipeline_WellFormednessFilter*) _r4.o)->fields.gnu_xml_pipeline_WellFormednessFilter.elementStack_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_util_Stack_empty__(_r1.o);
@@ -1430,6 +1462,7 @@ void gnu_xml_pipeline_WellFormednessFilter_comment___char_1ARRAY_int_int(JAVA_OB
     _r8.i = n3;
     _r4.i = 45;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 324)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((gnu_xml_pipeline_WellFormednessFilter*) _r5.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedDoc_;
     if (_r0.i != 0) goto label11;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 325)
@@ -1439,6 +1472,7 @@ void gnu_xml_pipeline_WellFormednessFilter_comment___char_1ARRAY_int_int(JAVA_OB
     gnu_xml_pipeline_WellFormednessFilter_fatalError___java_lang_String(_r5.o, _r0.o);
     label11:;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 326)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((gnu_xml_pipeline_WellFormednessFilter*) _r5.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedCDATA_;
     if (_r0.i == 0) goto label20;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 327)
@@ -1513,6 +1547,7 @@ void gnu_xml_pipeline_WellFormednessFilter_startCDATA__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 345)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_pipeline_WellFormednessFilter*) _r1.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedDoc_;
     if (_r0.i != 0) goto label9;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 346)
@@ -1522,6 +1557,7 @@ void gnu_xml_pipeline_WellFormednessFilter_startCDATA__(JAVA_OBJECT me)
     gnu_xml_pipeline_WellFormednessFilter_fatalError___java_lang_String(_r1.o, _r0.o);
     label9:;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 347)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_pipeline_WellFormednessFilter*) _r1.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedCDATA_;
     if (_r0.i == 0) goto label18;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 348)
@@ -1532,6 +1568,7 @@ void gnu_xml_pipeline_WellFormednessFilter_startCDATA__(JAVA_OBJECT me)
     label18:;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 349)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_WellFormednessFilter*) _r1.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedCDATA_ = _r0.i;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 350)
     XMLVM_CHECK_NPE(1)
@@ -1550,6 +1587,7 @@ void gnu_xml_pipeline_WellFormednessFilter_endCDATA__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 356)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_pipeline_WellFormednessFilter*) _r1.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedDoc_;
     if (_r0.i != 0) goto label9;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 357)
@@ -1559,6 +1597,7 @@ void gnu_xml_pipeline_WellFormednessFilter_endCDATA__(JAVA_OBJECT me)
     gnu_xml_pipeline_WellFormednessFilter_fatalError___java_lang_String(_r1.o, _r0.o);
     label9:;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 358)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_pipeline_WellFormednessFilter*) _r1.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedCDATA_;
     if (_r0.i != 0) goto label18;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 359)
@@ -1569,6 +1608,7 @@ void gnu_xml_pipeline_WellFormednessFilter_endCDATA__(JAVA_OBJECT me)
     label18:;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 360)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_WellFormednessFilter*) _r1.o)->fields.gnu_xml_pipeline_WellFormednessFilter.startedCDATA_ = _r0.i;
     XMLVM_SOURCE_POSITION("WellFormednessFilter.java", 361)
     XMLVM_CHECK_NPE(1)

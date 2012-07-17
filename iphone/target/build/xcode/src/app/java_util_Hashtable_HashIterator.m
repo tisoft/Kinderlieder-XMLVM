@@ -309,20 +309,27 @@ void java_util_Hashtable_HashIterator___INIT____java_util_Hashtable_java_util_Ma
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("Hashtable.java", 148)
+    XMLVM_CHECK_NPE(1)
     ((java_util_Hashtable_HashIterator*) _r1.o)->fields.java_util_Hashtable_HashIterator.this_0_ = _r2.o;
     XMLVM_SOURCE_POSITION("Hashtable.java", 144)
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("Hashtable.java", 142)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Hashtable_HashIterator*) _r1.o)->fields.java_util_Hashtable_HashIterator.canRemove_ = _r0.i;
     XMLVM_SOURCE_POSITION("Hashtable.java", 145)
+    XMLVM_CHECK_NPE(1)
     ((java_util_Hashtable_HashIterator*) _r1.o)->fields.java_util_Hashtable_HashIterator.type_ = _r3.o;
     XMLVM_SOURCE_POSITION("Hashtable.java", 146)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_Hashtable*) _r2.o)->fields.java_util_Hashtable.lastSlot_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Hashtable_HashIterator*) _r1.o)->fields.java_util_Hashtable_HashIterator.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("Hashtable.java", 147)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_Hashtable*) _r2.o)->fields.java_util_Hashtable.modCount_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Hashtable_HashIterator*) _r1.o)->fields.java_util_Hashtable_HashIterator.expectedModCount_ = _r0.i;
     XMLVM_EXIT_METHOD()
     return;
@@ -340,9 +347,12 @@ JAVA_BOOLEAN java_util_Hashtable_HashIterator_hasNext__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("Hashtable.java", 151)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.lastEntry_;
     if (_r0.o == JAVA_NULL) goto label28;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.lastEntry_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Hashtable_Entry*) _r0.o)->fields.java_util_Hashtable_Entry.next_;
     if (_r0.o == JAVA_NULL) goto label28;
     _r0 = _r2;
@@ -353,21 +363,29 @@ JAVA_BOOLEAN java_util_Hashtable_HashIterator_hasNext__(JAVA_OBJECT me)
     return _r0.i;
     label13:;
     XMLVM_SOURCE_POSITION("Hashtable.java", 155)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.this_0_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Hashtable*) _r0.o)->fields.java_util_Hashtable.elementData_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.position_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     if (_r0.o != JAVA_NULL) goto label38;
     XMLVM_SOURCE_POSITION("Hashtable.java", 156)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.position_;
     _r0.i = _r0.i - _r2.i;
+    XMLVM_CHECK_NPE(3)
     ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.position_ = _r0.i;
     label28:;
     XMLVM_SOURCE_POSITION("Hashtable.java", 154)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.position_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.this_0_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_Hashtable*) _r1.o)->fields.java_util_Hashtable.firstSlot_;
     if (_r0.i >= _r1.i) goto label13;
     _r0.i = 0;
@@ -390,55 +408,79 @@ JAVA_OBJECT java_util_Hashtable_HashIterator_next__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("Hashtable.java", 165)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.expectedModCount_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.this_0_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_Hashtable*) _r1.o)->fields.java_util_Hashtable.modCount_;
     if (_r0.i != _r1.i) goto label83;
     XMLVM_SOURCE_POSITION("Hashtable.java", 166)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.lastEntry_;
     if (_r0.o == JAVA_NULL) goto label19;
     XMLVM_SOURCE_POSITION("Hashtable.java", 167)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.lastEntry_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Hashtable_Entry*) _r0.o)->fields.java_util_Hashtable_Entry.next_;
+    XMLVM_CHECK_NPE(3)
     ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.lastEntry_ = _r0.o;
     label19:;
     XMLVM_SOURCE_POSITION("Hashtable.java", 169)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.lastEntry_;
     if (_r0.o != JAVA_NULL) goto label56;
     label23:;
     XMLVM_SOURCE_POSITION("Hashtable.java", 170)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.position_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.this_0_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_Hashtable*) _r1.o)->fields.java_util_Hashtable.firstSlot_;
     if (_r0.i < _r1.i) goto label43;
     XMLVM_SOURCE_POSITION("Hashtable.java", 171)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.this_0_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Hashtable*) _r0.o)->fields.java_util_Hashtable.elementData_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.position_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
+    XMLVM_CHECK_NPE(3)
     ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.lastEntry_ = _r0.o;
     if (_r0.o == JAVA_NULL) goto label71;
     label43:;
     XMLVM_SOURCE_POSITION("Hashtable.java", 174)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.lastEntry_;
     if (_r0.o == JAVA_NULL) goto label56;
     XMLVM_SOURCE_POSITION("Hashtable.java", 175)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.position_;
+    XMLVM_CHECK_NPE(3)
     ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.lastPosition_ = _r0.i;
     XMLVM_SOURCE_POSITION("Hashtable.java", 178)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.position_;
     _r0.i = _r0.i - _r2.i;
+    XMLVM_CHECK_NPE(3)
     ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.position_ = _r0.i;
     label56:;
     XMLVM_SOURCE_POSITION("Hashtable.java", 181)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.lastEntry_;
     if (_r0.o == JAVA_NULL) goto label77;
     XMLVM_SOURCE_POSITION("Hashtable.java", 182)
+    XMLVM_CHECK_NPE(3)
     ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.canRemove_ = _r2.i;
     XMLVM_SOURCE_POSITION("Hashtable.java", 183)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.type_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.lastEntry_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_MapEntry_Type_get___java_util_MapEntry])(_r0.o, _r1.o);
@@ -446,8 +488,10 @@ JAVA_OBJECT java_util_Hashtable_HashIterator_next__(JAVA_OBJECT me)
     return _r0.o;
     label71:;
     XMLVM_SOURCE_POSITION("Hashtable.java", 172)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.position_;
     _r0.i = _r0.i - _r2.i;
+    XMLVM_CHECK_NPE(3)
     ((java_util_Hashtable_HashIterator*) _r3.o)->fields.java_util_Hashtable_HashIterator.position_ = _r0.i;
     goto label23;
     label77:;
@@ -480,34 +524,48 @@ void java_util_Hashtable_HashIterator_remove__(JAVA_OBJECT me)
     _r5.i = 0;
     _r4.i = 1;
     XMLVM_SOURCE_POSITION("Hashtable.java", 191)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.expectedModCount_;
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.this_0_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_Hashtable*) _r1.o)->fields.java_util_Hashtable.modCount_;
     if (_r0.i != _r1.i) goto label88;
     XMLVM_SOURCE_POSITION("Hashtable.java", 192)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.canRemove_;
     if (_r0.i == 0) goto label97;
     XMLVM_SOURCE_POSITION("Hashtable.java", 193)
+    XMLVM_CHECK_NPE(6)
     ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.canRemove_ = _r5.i;
     XMLVM_SOURCE_POSITION("Hashtable.java", 194)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.this_0_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w23574aaac10b1c17)
     // Begin try
     XMLVM_SOURCE_POSITION("Hashtable.java", 196)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.this_0_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_Hashtable*) _r1.o)->fields.java_util_Hashtable.elementData_;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.lastPosition_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     _r1.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
     XMLVM_SOURCE_POSITION("Hashtable.java", 197)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.lastEntry_;
     if (_r1.o != _r2.o) { XMLVM_MEMCPY(curThread_w23574aaac10b1c17->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23574aaac10b1c17, sizeof(XMLVM_JMP_BUF)); goto label69; };
     XMLVM_SOURCE_POSITION("Hashtable.java", 198)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.this_0_;
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_util_Hashtable*) _r2.o)->fields.java_util_Hashtable.elementData_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.lastPosition_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_Hashtable_Entry*) _r1.o)->fields.java_util_Hashtable_Entry.next_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
@@ -526,18 +584,26 @@ void java_util_Hashtable_HashIterator_remove__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Hashtable.java", 209)
     if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w23574aaac10b1c19->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23574aaac10b1c19, sizeof(XMLVM_JMP_BUF)); goto label87; };
     XMLVM_SOURCE_POSITION("Hashtable.java", 210)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.this_0_;
+    XMLVM_CHECK_NPE(1)
     _r2.i = ((java_util_Hashtable*) _r1.o)->fields.java_util_Hashtable.modCount_;
     _r2.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Hashtable*) _r1.o)->fields.java_util_Hashtable.modCount_ = _r2.i;
     XMLVM_SOURCE_POSITION("Hashtable.java", 211)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.this_0_;
+    XMLVM_CHECK_NPE(1)
     _r2.i = ((java_util_Hashtable*) _r1.o)->fields.java_util_Hashtable.elementCount_;
     _r2.i = _r2.i - _r4.i;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Hashtable*) _r1.o)->fields.java_util_Hashtable.elementCount_ = _r2.i;
     XMLVM_SOURCE_POSITION("Hashtable.java", 212)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.expectedModCount_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(6)
     ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.expectedModCount_ = _r1.i;
     XMLVM_SOURCE_POSITION("Hashtable.java", 213)
     java_lang_Object_releaseLockRecursive__(_r0.o);
@@ -554,6 +620,7 @@ void java_util_Hashtable_HashIterator_remove__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w23574aaac10b1c21)
     // Begin try
     XMLVM_SOURCE_POSITION("Hashtable.java", 202)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_Hashtable_Entry*) _r1.o)->fields.java_util_Hashtable_Entry.next_;
     // End try
     XMLVM_TRY_END
@@ -566,7 +633,9 @@ void java_util_Hashtable_HashIterator_remove__(JAVA_OBJECT me)
     // Begin try
     XMLVM_SOURCE_POSITION("Hashtable.java", 201)
     if (_r1.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w23574aaac10b1c23->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23574aaac10b1c23, sizeof(XMLVM_JMP_BUF)); goto label77; };
+    XMLVM_CHECK_NPE(1)
     _r2.o = ((java_util_Hashtable_Entry*) _r1.o)->fields.java_util_Hashtable_Entry.next_;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.lastEntry_;
     if (_r2.o != _r3.o) { XMLVM_MEMCPY(curThread_w23574aaac10b1c23->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23574aaac10b1c23, sizeof(XMLVM_JMP_BUF)); goto label67; };
     // End try
@@ -581,8 +650,11 @@ void java_util_Hashtable_HashIterator_remove__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Hashtable.java", 204)
     if (_r1.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w23574aaac10b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23574aaac10b1c25, sizeof(XMLVM_JMP_BUF)); goto label103; };
     XMLVM_SOURCE_POSITION("Hashtable.java", 205)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.lastEntry_;
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_util_Hashtable_Entry*) _r2.o)->fields.java_util_Hashtable_Entry.next_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Hashtable_Entry*) _r1.o)->fields.java_util_Hashtable_Entry.next_ = _r2.o;
     _r1 = _r4;
     XMLVM_SOURCE_POSITION("Hashtable.java", 206)

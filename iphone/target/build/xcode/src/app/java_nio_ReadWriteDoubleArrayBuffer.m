@@ -442,19 +442,24 @@ JAVA_OBJECT java_nio_ReadWriteDoubleArrayBuffer_copy___java_nio_DoubleArrayBuffe
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 37)
     XMLVM_CHECK_NPE(4)
     _r1.i = java_nio_Buffer_capacity__(_r4.o);
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_nio_DoubleArrayBuffer*) _r4.o)->fields.java_nio_DoubleArrayBuffer.backingArray_;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_nio_DoubleArrayBuffer*) _r4.o)->fields.java_nio_DoubleArrayBuffer.offset_;
     XMLVM_CHECK_NPE(0)
     java_nio_ReadWriteDoubleArrayBuffer___INIT____int_double_1ARRAY_int(_r0.o, _r1.i, _r2.o, _r3.i);
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 38)
     XMLVM_CHECK_NPE(4)
     _r1.i = java_nio_Buffer_limit__(_r4.o);
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.limit_ = _r1.i;
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 39)
     XMLVM_CHECK_NPE(4)
     _r1.i = java_nio_Buffer_position__(_r4.o);
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.position_ = _r1.i;
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 40)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.mark_ = _r5.i;
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 41)
     XMLVM_EXIT_METHOD()
@@ -525,6 +530,7 @@ JAVA_OBJECT java_nio_ReadWriteDoubleArrayBuffer_asReadOnlyBuffer__(JAVA_OBJECT m
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 59)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.mark_;
     _r0.o = java_nio_ReadOnlyDoubleArrayBuffer_copy___java_nio_DoubleArrayBuffer_int(_r1.o, _r0.i);
     XMLVM_EXIT_METHOD()
@@ -544,26 +550,37 @@ JAVA_OBJECT java_nio_ReadWriteDoubleArrayBuffer_compact__(JAVA_OBJECT me)
     XMLVMElem _r5;
     _r5.o = me;
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 64)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_nio_DoubleArrayBuffer*) _r5.o)->fields.java_nio_DoubleArrayBuffer.backingArray_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.position_;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_nio_DoubleArrayBuffer*) _r5.o)->fields.java_nio_DoubleArrayBuffer.offset_;
     _r1.i = _r1.i + _r2.i;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_nio_DoubleArrayBuffer*) _r5.o)->fields.java_nio_DoubleArrayBuffer.backingArray_;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_nio_DoubleArrayBuffer*) _r5.o)->fields.java_nio_DoubleArrayBuffer.offset_;
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 65)
     XMLVM_CHECK_NPE(5)
     _r4.i = java_nio_Buffer_remaining__(_r5.o);
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r1.i, _r2.o, _r3.i, _r4.i);
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 66)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.limit_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.position_;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(5)
     ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 67)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.capacity_;
+    XMLVM_CHECK_NPE(5)
     ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.limit_ = _r0.i;
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 68)
     _r0.i = -1;
+    XMLVM_CHECK_NPE(5)
     ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.mark_ = _r0.i;
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 69)
     XMLVM_EXIT_METHOD()
@@ -579,6 +596,7 @@ JAVA_OBJECT java_nio_ReadWriteDoubleArrayBuffer_duplicate__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 74)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.mark_;
     _r0.o = java_nio_ReadWriteDoubleArrayBuffer_copy___java_nio_DoubleArrayBuffer_int(_r1.o, _r0.i);
     XMLVM_EXIT_METHOD()
@@ -608,6 +626,7 @@ JAVA_OBJECT java_nio_ReadWriteDoubleArrayBuffer_protectedArray__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 84)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_DoubleArrayBuffer*) _r1.o)->fields.java_nio_DoubleArrayBuffer.backingArray_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -622,6 +641,7 @@ JAVA_INT java_nio_ReadWriteDoubleArrayBuffer_protectedArrayOffset__(JAVA_OBJECT 
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 89)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_nio_DoubleArrayBuffer*) _r1.o)->fields.java_nio_DoubleArrayBuffer.offset_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -656,7 +676,9 @@ JAVA_OBJECT java_nio_ReadWriteDoubleArrayBuffer_put___double(JAVA_OBJECT me, JAV
     _r4.o = me;
     _r5.d = n1;
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 99)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.limit_;
     if (_r0.i != _r1.i) goto label12;
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 100)
@@ -666,10 +688,14 @@ JAVA_OBJECT java_nio_ReadWriteDoubleArrayBuffer_put___double(JAVA_OBJECT me, JAV
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 102)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_nio_DoubleArrayBuffer*) _r4.o)->fields.java_nio_DoubleArrayBuffer.backingArray_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_nio_DoubleArrayBuffer*) _r4.o)->fields.java_nio_DoubleArrayBuffer.offset_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
     _r3.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_ = _r3.i;
     _r1.i = _r1.i + _r2.i;
     XMLVM_CHECK_NPE(0)
@@ -696,6 +722,7 @@ JAVA_OBJECT java_nio_ReadWriteDoubleArrayBuffer_put___int_double(JAVA_OBJECT me,
     _r4.d = n2;
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 108)
     if (_r3.i < 0) goto label6;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
     if (_r3.i < _r0.i) goto label12;
     label6:;
@@ -706,7 +733,9 @@ JAVA_OBJECT java_nio_ReadWriteDoubleArrayBuffer_put___int_double(JAVA_OBJECT me,
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 111)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_DoubleArrayBuffer*) _r2.o)->fields.java_nio_DoubleArrayBuffer.backingArray_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_DoubleArrayBuffer*) _r2.o)->fields.java_nio_DoubleArrayBuffer.offset_;
     _r1.i = _r1.i + _r3.i;
     XMLVM_CHECK_NPE(0)
@@ -764,14 +793,19 @@ JAVA_OBJECT java_nio_ReadWriteDoubleArrayBuffer_put___double_1ARRAY_int_int(JAVA
     XMLVM_THROW_CUSTOM(_r0.o)
     label31:;
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 124)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_nio_DoubleArrayBuffer*) _r5.o)->fields.java_nio_DoubleArrayBuffer.backingArray_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_nio_DoubleArrayBuffer*) _r5.o)->fields.java_nio_DoubleArrayBuffer.offset_;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.position_;
     _r1.i = _r1.i + _r2.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r6.o, _r7.i, _r0.o, _r1.i, _r8.i);
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 125)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.position_;
     _r0.i = _r0.i + _r8.i;
+    XMLVM_CHECK_NPE(5)
     ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 126)
     XMLVM_EXIT_METHOD()
@@ -794,9 +828,12 @@ JAVA_OBJECT java_nio_ReadWriteDoubleArrayBuffer_slice__(JAVA_OBJECT me)
     _r0.o = __NEW_java_nio_ReadWriteDoubleArrayBuffer();
     XMLVM_CHECK_NPE(5)
     _r1.i = java_nio_Buffer_remaining__(_r5.o);
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_nio_DoubleArrayBuffer*) _r5.o)->fields.java_nio_DoubleArrayBuffer.backingArray_;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_nio_DoubleArrayBuffer*) _r5.o)->fields.java_nio_DoubleArrayBuffer.offset_;
     XMLVM_SOURCE_POSITION("ReadWriteDoubleArrayBuffer.java", 132)
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.position_;
     _r3.i = _r3.i + _r4.i;
     XMLVM_CHECK_NPE(0)

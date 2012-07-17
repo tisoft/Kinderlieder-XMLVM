@@ -1032,19 +1032,24 @@ void org_apache_harmony_luni_net_PlainSocketImpl___INIT___(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_net_SocketImpl___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 68)
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.tcpNoDelay_ = _r1.i;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 77)
     _r0.o = org_apache_harmony_luni_platform_Platform_getNetworkSystem__();
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_ = _r0.o;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 79)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.receiveTimeout_ = _r0.i;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 81)
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.streaming_ = _r1.i;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 89)
     _r0.o = __NEW_java_io_FileDescriptor();
     XMLVM_CHECK_NPE(0)
     java_io_FileDescriptor___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((java_net_SocketImpl*) _r2.o)->fields.java_net_SocketImpl.fd_ = _r0.o;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 90)
     XMLVM_EXIT_METHOD()
@@ -1067,16 +1072,21 @@ void org_apache_harmony_luni_net_PlainSocketImpl___INIT____java_io_FileDescripto
     XMLVM_CHECK_NPE(2)
     java_net_SocketImpl___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 68)
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.tcpNoDelay_ = _r1.i;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 77)
     _r0.o = org_apache_harmony_luni_platform_Platform_getNetworkSystem__();
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_ = _r0.o;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 79)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.receiveTimeout_ = _r0.i;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 81)
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.streaming_ = _r1.i;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 94)
+    XMLVM_CHECK_NPE(2)
     ((java_net_SocketImpl*) _r2.o)->fields.java_net_SocketImpl.fd_ = _r3.o;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 95)
     XMLVM_EXIT_METHOD()
@@ -1096,6 +1106,7 @@ void org_apache_harmony_luni_net_PlainSocketImpl___INIT____java_net_Proxy(JAVA_O
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_net_PlainSocketImpl___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 102)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_net_PlainSocketImpl*) _r0.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.proxy_ = _r1.o;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 103)
     XMLVM_EXIT_METHOD()
@@ -1124,22 +1135,30 @@ void org_apache_harmony_luni_net_PlainSocketImpl___INIT____java_io_FileDescripto
     XMLVM_CHECK_NPE(2)
     java_net_SocketImpl___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 68)
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.tcpNoDelay_ = _r1.i;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 77)
     _r0.o = org_apache_harmony_luni_platform_Platform_getNetworkSystem__();
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_ = _r0.o;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 79)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.receiveTimeout_ = _r0.i;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 81)
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.streaming_ = _r1.i;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 107)
+    XMLVM_CHECK_NPE(2)
     ((java_net_SocketImpl*) _r2.o)->fields.java_net_SocketImpl.fd_ = _r3.o;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 108)
+    XMLVM_CHECK_NPE(2)
     ((java_net_SocketImpl*) _r2.o)->fields.java_net_SocketImpl.localport_ = _r4.i;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 109)
+    XMLVM_CHECK_NPE(2)
     ((java_net_SocketImpl*) _r2.o)->fields.java_net_SocketImpl.address_ = _r5.o;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 110)
+    XMLVM_CHECK_NPE(2)
     ((java_net_SocketImpl*) _r2.o)->fields.java_net_SocketImpl.port_ = _r6.i;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 111)
     XMLVM_EXIT_METHOD()
@@ -1162,6 +1181,7 @@ void org_apache_harmony_luni_net_PlainSocketImpl_accept___java_net_SocketImpl(JA
     _r6.o = me;
     _r7.o = n1;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 115)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r6.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.proxy_;
     _r1.i = org_apache_harmony_luni_net_NetUtil_usingSocks___java_net_Proxy(_r1.o);
     if (_r1.i == 0) goto label21;
@@ -1180,22 +1200,25 @@ void org_apache_harmony_luni_net_PlainSocketImpl_accept___java_net_SocketImpl(JA
     XMLVM_EXIT_METHOD()
     return;
     label21:;
-    XMLVM_TRY_BEGIN(w44358aaac19b1c19)
+    XMLVM_TRY_BEGIN(w44363aaac19b1c19)
     // Begin try
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 122)
     if (!__TIB_org_apache_harmony_luni_net_PlainSocketImpl.classInitialized) __INIT_org_apache_harmony_luni_net_PlainSocketImpl();
     _r1.i = XMLVM_ISA(_r7.o, __CLASS_org_apache_harmony_luni_net_PlainSocketImpl);
-    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w44358aaac19b1c19->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44358aaac19b1c19, sizeof(XMLVM_JMP_BUF)); goto label61; };
+    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w44363aaac19b1c19->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44363aaac19b1c19, sizeof(XMLVM_JMP_BUF)); goto label61; };
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 123)
     _r0 = _r7;
     _r0.o = _r0.o;
     _r1 = _r0;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 124)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r6.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_net_SocketImpl*) _r6.o)->fields.java_net_SocketImpl.fd_;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 125)
     XMLVM_CHECK_NPE(1)
     _r4.o = java_net_SocketImpl_getFileDescriptor__(_r1.o);
+    XMLVM_CHECK_NPE(6)
     _r5.i = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r6.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.receiveTimeout_;
     XMLVM_CHECK_NPE(2)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_acceptStreamSocket___java_io_FileDescriptor_java_net_SocketImpl_java_io_FileDescriptor_int])(_r2.o, _r3.o, _r7.o, _r4.o, _r5.i);
@@ -1206,16 +1229,16 @@ void org_apache_harmony_luni_net_PlainSocketImpl_accept___java_net_SocketImpl(JA
     org_apache_harmony_luni_net_PlainSocketImpl_setLocalport___int(_r1.o, _r2.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac19b1c19)
-        XMLVM_CATCH_SPECIFIC(w44358aaac19b1c19,java_io_InterruptedIOException,50)
-        XMLVM_CATCH_SPECIFIC(w44358aaac19b1c19,java_lang_IllegalAccessException,112)
-    XMLVM_CATCH_END(w44358aaac19b1c19)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac19b1c19)
+    XMLVM_CATCH_BEGIN(w44363aaac19b1c19)
+        XMLVM_CATCH_SPECIFIC(w44363aaac19b1c19,java_io_InterruptedIOException,50)
+        XMLVM_CATCH_SPECIFIC(w44363aaac19b1c19,java_lang_IllegalAccessException,112)
+    XMLVM_CATCH_END(w44363aaac19b1c19)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac19b1c19)
     goto label20;
     label50:;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 141)
-    java_lang_Thread* curThread_w44358aaac19b1c23 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w44358aaac19b1c23->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w44363aaac19b1c23 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w44363aaac19b1c23->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 142)
     _r2.o = __NEW_java_net_SocketTimeoutException();
     //java_io_InterruptedIOException_getMessage__[7]
@@ -1225,11 +1248,11 @@ void org_apache_harmony_luni_net_PlainSocketImpl_accept___java_net_SocketImpl(JA
     java_net_SocketTimeoutException___INIT____java_lang_String(_r2.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r2.o)
     label61:;
-    XMLVM_TRY_BEGIN(w44358aaac19b1c30)
+    XMLVM_TRY_BEGIN(w44363aaac19b1c30)
     // Begin try
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 130)
     _r1.o = org_apache_harmony_luni_net_PlainSocketImpl_GET_fdField();
-    if (_r1.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w44358aaac19b1c30->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44358aaac19b1c30, sizeof(XMLVM_JMP_BUF)); goto label73; };
+    if (_r1.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w44363aaac19b1c30->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44363aaac19b1c30, sizeof(XMLVM_JMP_BUF)); goto label73; };
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 131)
     // "fd"
     _r1.o = xmlvm_create_java_string_from_pool(3364);
@@ -1238,13 +1261,13 @@ void org_apache_harmony_luni_net_PlainSocketImpl_accept___java_net_SocketImpl(JA
     org_apache_harmony_luni_net_PlainSocketImpl_PUT_fdField( _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac19b1c30)
-        XMLVM_CATCH_SPECIFIC(w44358aaac19b1c30,java_io_InterruptedIOException,50)
-        XMLVM_CATCH_SPECIFIC(w44358aaac19b1c30,java_lang_IllegalAccessException,112)
-    XMLVM_CATCH_END(w44358aaac19b1c30)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac19b1c30)
+    XMLVM_CATCH_BEGIN(w44363aaac19b1c30)
+        XMLVM_CATCH_SPECIFIC(w44363aaac19b1c30,java_io_InterruptedIOException,50)
+        XMLVM_CATCH_SPECIFIC(w44363aaac19b1c30,java_lang_IllegalAccessException,112)
+    XMLVM_CATCH_END(w44363aaac19b1c30)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac19b1c30)
     label73:;
-    XMLVM_TRY_BEGIN(w44358aaac19b1c32)
+    XMLVM_TRY_BEGIN(w44363aaac19b1c32)
     // Begin try
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 133)
     _r1.o = org_apache_harmony_luni_net_PlainSocketImpl_GET_fdField();
@@ -1252,14 +1275,17 @@ void org_apache_harmony_luni_net_PlainSocketImpl_accept___java_net_SocketImpl(JA
     _r1.o = java_lang_reflect_Field_get___java_lang_Object(_r1.o, _r7.o);
     _r1.o = _r1.o;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 134)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r6.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_net_SocketImpl*) _r6.o)->fields.java_net_SocketImpl.fd_;
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r6.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.receiveTimeout_;
     XMLVM_CHECK_NPE(2)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_acceptStreamSocket___java_io_FileDescriptor_java_net_SocketImpl_java_io_FileDescriptor_int])(_r2.o, _r3.o, _r7.o, _r1.o, _r4.i);
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 136)
     _r1.o = org_apache_harmony_luni_net_PlainSocketImpl_GET_localportField();
-    if (_r1.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w44358aaac19b1c32->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44358aaac19b1c32, sizeof(XMLVM_JMP_BUF)); goto label102; };
+    if (_r1.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w44363aaac19b1c32->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44363aaac19b1c32, sizeof(XMLVM_JMP_BUF)); goto label102; };
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 137)
     // "localport"
     _r1.o = xmlvm_create_java_string_from_pool(3365);
@@ -1268,13 +1294,13 @@ void org_apache_harmony_luni_net_PlainSocketImpl_accept___java_net_SocketImpl(JA
     org_apache_harmony_luni_net_PlainSocketImpl_PUT_localportField( _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac19b1c32)
-        XMLVM_CATCH_SPECIFIC(w44358aaac19b1c32,java_io_InterruptedIOException,50)
-        XMLVM_CATCH_SPECIFIC(w44358aaac19b1c32,java_lang_IllegalAccessException,112)
-    XMLVM_CATCH_END(w44358aaac19b1c32)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac19b1c32)
+    XMLVM_CATCH_BEGIN(w44363aaac19b1c32)
+        XMLVM_CATCH_SPECIFIC(w44363aaac19b1c32,java_io_InterruptedIOException,50)
+        XMLVM_CATCH_SPECIFIC(w44363aaac19b1c32,java_lang_IllegalAccessException,112)
+    XMLVM_CATCH_END(w44363aaac19b1c32)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac19b1c32)
     label102:;
-    XMLVM_TRY_BEGIN(w44358aaac19b1c34)
+    XMLVM_TRY_BEGIN(w44363aaac19b1c34)
     // Begin try
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 139)
     _r1.o = org_apache_harmony_luni_net_PlainSocketImpl_GET_localportField();
@@ -1284,15 +1310,15 @@ void org_apache_harmony_luni_net_PlainSocketImpl_accept___java_net_SocketImpl(JA
     java_lang_reflect_Field_setInt___java_lang_Object_int(_r1.o, _r7.o, _r2.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac19b1c34)
-        XMLVM_CATCH_SPECIFIC(w44358aaac19b1c34,java_io_InterruptedIOException,50)
-        XMLVM_CATCH_SPECIFIC(w44358aaac19b1c34,java_lang_IllegalAccessException,112)
-    XMLVM_CATCH_END(w44358aaac19b1c34)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac19b1c34)
+    XMLVM_CATCH_BEGIN(w44363aaac19b1c34)
+        XMLVM_CATCH_SPECIFIC(w44363aaac19b1c34,java_io_InterruptedIOException,50)
+        XMLVM_CATCH_SPECIFIC(w44363aaac19b1c34,java_lang_IllegalAccessException,112)
+    XMLVM_CATCH_END(w44363aaac19b1c34)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac19b1c34)
     goto label20;
     label112:;
-    java_lang_Thread* curThread_w44358aaac19b1c37 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w44358aaac19b1c37->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w44363aaac19b1c37 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w44363aaac19b1c37->fields.java_lang_Thread.xmlvmException_;
     goto label20;
     //XMLVM_END_WRAPPER
 }
@@ -1327,15 +1353,16 @@ JAVA_INT org_apache_harmony_luni_net_PlainSocketImpl_available__(JAVA_OBJECT me)
     _r2.o = me;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 170)
     java_lang_Object_acquireLockRecursive__(_r2.o);
-    XMLVM_TRY_BEGIN(w44358aaac21b1b4)
+    XMLVM_TRY_BEGIN(w44363aaac21b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.shutdownInput_;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac21b1b4)
-        XMLVM_CATCH_SPECIFIC(w44358aaac21b1b4,java_lang_Object,17)
-    XMLVM_CATCH_END(w44358aaac21b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac21b1b4)
+    XMLVM_CATCH_BEGIN(w44363aaac21b1b4)
+        XMLVM_CATCH_SPECIFIC(w44363aaac21b1b4,java_lang_Object,17)
+    XMLVM_CATCH_END(w44363aaac21b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac21b1b4)
     if (_r0.i == 0) goto label8;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 171)
     _r0.i = 0;
@@ -1345,22 +1372,24 @@ JAVA_INT org_apache_harmony_luni_net_PlainSocketImpl_available__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label8:;
-    XMLVM_TRY_BEGIN(w44358aaac21b1c13)
+    XMLVM_TRY_BEGIN(w44363aaac21b1c13)
     // Begin try
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_SocketImpl*) _r2.o)->fields.java_net_SocketImpl.fd_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_availableStream___java_io_FileDescriptor])(_r0.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac21b1c13)
-        XMLVM_CATCH_SPECIFIC(w44358aaac21b1c13,java_lang_Object,17)
-    XMLVM_CATCH_END(w44358aaac21b1c13)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac21b1c13)
+    XMLVM_CATCH_BEGIN(w44363aaac21b1c13)
+        XMLVM_CATCH_SPECIFIC(w44363aaac21b1c13,java_lang_Object,17)
+    XMLVM_CATCH_END(w44363aaac21b1c13)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac21b1c13)
     goto label6;
     label17:;
-    java_lang_Thread* curThread_w44358aaac21b1c16 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w44358aaac21b1c16->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w44363aaac21b1c16 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w44363aaac21b1c16->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER
@@ -1380,15 +1409,19 @@ void org_apache_harmony_luni_net_PlainSocketImpl_bind___java_net_InetAddress_int
     _r4.o = n1;
     _r5.i = n2;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 178)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r3.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_SocketImpl*) _r3.o)->fields.java_net_SocketImpl.fd_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_bind___java_io_FileDescriptor_java_net_InetAddress_int])(_r0.o, _r1.o, _r4.o, _r5.i);
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 180)
+    XMLVM_CHECK_NPE(3)
     ((java_net_SocketImpl*) _r3.o)->fields.java_net_SocketImpl.address_ = _r4.o;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 181)
     if (_r5.i == 0) goto label14;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 182)
+    XMLVM_CHECK_NPE(3)
     ((java_net_SocketImpl*) _r3.o)->fields.java_net_SocketImpl.localport_ = _r5.i;
     label13:;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 187)
@@ -1396,12 +1429,15 @@ void org_apache_harmony_luni_net_PlainSocketImpl_bind___java_net_InetAddress_int
     return;
     label14:;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 184)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r3.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_SocketImpl*) _r3.o)->fields.java_net_SocketImpl.fd_;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 185)
     _r2.i = org_apache_harmony_luni_net_NetUtil_preferIPv6Addresses__();
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_getSocketLocalPort___java_io_FileDescriptor_boolean])(_r0.o, _r1.o, _r2.i);
+    XMLVM_CHECK_NPE(3)
     ((java_net_SocketImpl*) _r3.o)->fields.java_net_SocketImpl.localport_ = _r0.i;
     goto label13;
     //XMLVM_END_WRAPPER
@@ -1417,28 +1453,31 @@ void org_apache_harmony_luni_net_PlainSocketImpl_close__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 191)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_net_SocketImpl*) _r3.o)->fields.java_net_SocketImpl.fd_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
-    XMLVM_TRY_BEGIN(w44358aaac23b1b5)
+    XMLVM_TRY_BEGIN(w44363aaac23b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 192)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_SocketImpl*) _r3.o)->fields.java_net_SocketImpl.fd_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_io_FileDescriptor_valid__(_r1.o);
-    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w44358aaac23b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44358aaac23b1b5, sizeof(XMLVM_JMP_BUF)); goto label38; };
+    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w44363aaac23b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44363aaac23b1b5, sizeof(XMLVM_JMP_BUF)); goto label38; };
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 193)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r3.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_getSocketFlags__])(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac23b1b5)
-        XMLVM_CATCH_SPECIFIC(w44358aaac23b1b5,java_lang_Object,40)
-    XMLVM_CATCH_END(w44358aaac23b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac23b1b5)
+    XMLVM_CATCH_BEGIN(w44363aaac23b1b5)
+        XMLVM_CATCH_SPECIFIC(w44363aaac23b1b5,java_lang_Object,40)
+    XMLVM_CATCH_END(w44363aaac23b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac23b1b5)
     _r1.i = _r1.i & 8;
     if (_r1.i == 0) goto label24;
-    XMLVM_TRY_BEGIN(w44358aaac23b1b8)
+    XMLVM_TRY_BEGIN(w44363aaac23b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 195)
     //org_apache_harmony_luni_net_PlainSocketImpl_shutdownOutput__[21]
@@ -1446,16 +1485,18 @@ void org_apache_harmony_luni_net_PlainSocketImpl_close__(JAVA_OBJECT me)
     (*(void (*)(JAVA_OBJECT)) ((org_apache_harmony_luni_net_PlainSocketImpl*) _r3.o)->tib->vtable[21])(_r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac23b1b8)
-        XMLVM_CATCH_SPECIFIC(w44358aaac23b1b8,java_lang_Exception,43)
-        XMLVM_CATCH_SPECIFIC(w44358aaac23b1b8,java_lang_Object,40)
-    XMLVM_CATCH_END(w44358aaac23b1b8)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac23b1b8)
+    XMLVM_CATCH_BEGIN(w44363aaac23b1b8)
+        XMLVM_CATCH_SPECIFIC(w44363aaac23b1b8,java_lang_Exception,43)
+        XMLVM_CATCH_SPECIFIC(w44363aaac23b1b8,java_lang_Object,40)
+    XMLVM_CATCH_END(w44363aaac23b1b8)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac23b1b8)
     label24:;
-    XMLVM_TRY_BEGIN(w44358aaac23b1c10)
+    XMLVM_TRY_BEGIN(w44363aaac23b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 199)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r3.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_net_SocketImpl*) _r3.o)->fields.java_net_SocketImpl.fd_;
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_socketClose___java_io_FileDescriptor])(_r1.o, _r2.o);
@@ -1463,43 +1504,44 @@ void org_apache_harmony_luni_net_PlainSocketImpl_close__(JAVA_OBJECT me)
     _r1.o = __NEW_java_io_FileDescriptor();
     XMLVM_CHECK_NPE(1)
     java_io_FileDescriptor___INIT___(_r1.o);
+    XMLVM_CHECK_NPE(3)
     ((java_net_SocketImpl*) _r3.o)->fields.java_net_SocketImpl.fd_ = _r1.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac23b1c10)
-        XMLVM_CATCH_SPECIFIC(w44358aaac23b1c10,java_lang_Object,40)
-    XMLVM_CATCH_END(w44358aaac23b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac23b1c10)
+    XMLVM_CATCH_BEGIN(w44363aaac23b1c10)
+        XMLVM_CATCH_SPECIFIC(w44363aaac23b1c10,java_lang_Object,40)
+    XMLVM_CATCH_END(w44363aaac23b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac23b1c10)
     label38:;
-    XMLVM_TRY_BEGIN(w44358aaac23b1c12)
+    XMLVM_TRY_BEGIN(w44363aaac23b1c12)
     // Begin try
     java_lang_Object_releaseLockRecursive__(_r0.o);
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 203)
-    XMLVM_MEMCPY(curThread_w44358aaac23b1c12->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44358aaac23b1c12, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w44363aaac23b1c12->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44363aaac23b1c12, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac23b1c12)
-        XMLVM_CATCH_SPECIFIC(w44358aaac23b1c12,java_lang_Object,40)
-    XMLVM_CATCH_END(w44358aaac23b1c12)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac23b1c12)
+    XMLVM_CATCH_BEGIN(w44363aaac23b1c12)
+        XMLVM_CATCH_SPECIFIC(w44363aaac23b1c12,java_lang_Object,40)
+    XMLVM_CATCH_END(w44363aaac23b1c12)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac23b1c12)
     label40:;
-    XMLVM_TRY_BEGIN(w44358aaac23b1c14)
+    XMLVM_TRY_BEGIN(w44363aaac23b1c14)
     // Begin try
-    java_lang_Thread* curThread_w44358aaac23b1c14aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w44358aaac23b1c14aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w44363aaac23b1c14aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w44363aaac23b1c14aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac23b1c14)
-        XMLVM_CATCH_SPECIFIC(w44358aaac23b1c14,java_lang_Object,40)
-    XMLVM_CATCH_END(w44358aaac23b1c14)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac23b1c14)
+    XMLVM_CATCH_BEGIN(w44363aaac23b1c14)
+        XMLVM_CATCH_SPECIFIC(w44363aaac23b1c14,java_lang_Object,40)
+    XMLVM_CATCH_END(w44363aaac23b1c14)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac23b1c14)
     XMLVM_THROW_CUSTOM(_r1.o)
     label43:;
-    java_lang_Thread* curThread_w44358aaac23b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w44358aaac23b1c17->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w44363aaac23b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w44363aaac23b1c17->fields.java_lang_Thread.xmlvmException_;
     goto label24;
     //XMLVM_END_WRAPPER
 }
@@ -1517,6 +1559,7 @@ void org_apache_harmony_luni_net_PlainSocketImpl_connect___java_lang_String_int(
     _r3.o = n1;
     _r4.i = n2;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 207)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 208)
     _r1.i = org_apache_harmony_luni_net_NetUtil_preferIPv6Addresses__();
@@ -1579,29 +1622,33 @@ void org_apache_harmony_luni_net_PlainSocketImpl_connect___java_net_InetAddress_
     _r0.o = java_net_InetAddress_getLocalHost__();
     _r5 = _r0;
     label11:;
-    XMLVM_TRY_BEGIN(w44358aaac26b1c11)
+    XMLVM_TRY_BEGIN(w44363aaac26b1c11)
     // Begin try
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 234)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r6.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.streaming_;
-    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w44358aaac26b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44358aaac26b1c11, sizeof(XMLVM_JMP_BUF)); goto label102; };
+    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w44363aaac26b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44363aaac26b1c11, sizeof(XMLVM_JMP_BUF)); goto label102; };
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 235)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r6.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.proxy_;
     _r0.i = org_apache_harmony_luni_net_NetUtil_usingSocks___java_net_Proxy(_r0.o);
-    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w44358aaac26b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44358aaac26b1c11, sizeof(XMLVM_JMP_BUF)); goto label34; };
+    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w44363aaac26b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44363aaac26b1c11, sizeof(XMLVM_JMP_BUF)); goto label34; };
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 236)
     _r0.i = 0;
     XMLVM_CHECK_NPE(6)
     org_apache_harmony_luni_net_PlainSocketImpl_socksConnect___java_net_InetAddress_int_int(_r6.o, _r7.o, _r8.i, _r0.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac26b1c11)
-        XMLVM_CATCH_SPECIFIC(w44358aaac26b1c11,java_net_ConnectException,46)
-    XMLVM_CATCH_END(w44358aaac26b1c11)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac26b1c11)
+    XMLVM_CATCH_BEGIN(w44363aaac26b1c11)
+        XMLVM_CATCH_SPECIFIC(w44363aaac26b1c11,java_net_ConnectException,46)
+    XMLVM_CATCH_END(w44363aaac26b1c11)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac26b1c11)
     label27:;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 252)
+    XMLVM_CHECK_NPE(6)
     ((java_net_SocketImpl*) _r6.o)->fields.java_net_SocketImpl.address_ = _r5.o;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 253)
+    XMLVM_CHECK_NPE(6)
     ((java_net_SocketImpl*) _r6.o)->fields.java_net_SocketImpl.port_ = _r8.i;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 254)
     XMLVM_EXIT_METHOD()
@@ -1612,25 +1659,28 @@ void org_apache_harmony_luni_net_PlainSocketImpl_connect___java_net_InetAddress_
     label34:;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 238)
     if (_r9.i != 0) goto label90;
-    XMLVM_TRY_BEGIN(w44358aaac26b1c25)
+    XMLVM_TRY_BEGIN(w44363aaac26b1c25)
     // Begin try
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 239)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r6.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_net_SocketImpl*) _r6.o)->fields.java_net_SocketImpl.fd_;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r6.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.trafficClass_;
     XMLVM_CHECK_NPE(0)
     (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_connect___java_io_FileDescriptor_int_java_net_InetAddress_int])(_r0.o, _r1.o, _r2.i, _r5.o, _r8.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac26b1c25)
-        XMLVM_CATCH_SPECIFIC(w44358aaac26b1c25,java_net_ConnectException,46)
-    XMLVM_CATCH_END(w44358aaac26b1c25)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac26b1c25)
+    XMLVM_CATCH_BEGIN(w44363aaac26b1c25)
+        XMLVM_CATCH_SPECIFIC(w44363aaac26b1c25,java_net_ConnectException,46)
+    XMLVM_CATCH_END(w44363aaac26b1c25)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac26b1c25)
     goto label27;
     label46:;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 248)
-    java_lang_Thread* curThread_w44358aaac26b1c29 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w44358aaac26b1c29->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w44363aaac26b1c29 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w44363aaac26b1c29->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 249)
     _r1.o = __NEW_java_net_ConnectException();
     _r2.o = __NEW_java_lang_StringBuilder();
@@ -1661,39 +1711,45 @@ void org_apache_harmony_luni_net_PlainSocketImpl_connect___java_net_InetAddress_
     java_net_ConnectException___INIT____java_lang_String(_r1.o, _r0.o);
     XMLVM_THROW_CUSTOM(_r1.o)
     label90:;
-    XMLVM_TRY_BEGIN(w44358aaac26b1c47)
+    XMLVM_TRY_BEGIN(w44363aaac26b1c47)
     // Begin try
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 241)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r6.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_net_SocketImpl*) _r6.o)->fields.java_net_SocketImpl.fd_;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 242)
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r6.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.trafficClass_;
     _r2 = _r8;
     _r3 = _r9;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT, JAVA_INT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_connectStreamWithTimeoutSocket___java_io_FileDescriptor_int_int_int_java_net_InetAddress])(_r0.o, _r1.o, _r2.i, _r3.i, _r4.i, _r5.o);
-    { XMLVM_MEMCPY(curThread_w44358aaac26b1c47->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44358aaac26b1c47, sizeof(XMLVM_JMP_BUF)); goto label27; };
+    { XMLVM_MEMCPY(curThread_w44363aaac26b1c47->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44363aaac26b1c47, sizeof(XMLVM_JMP_BUF)); goto label27; };
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 246)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac26b1c47)
-        XMLVM_CATCH_SPECIFIC(w44358aaac26b1c47,java_net_ConnectException,46)
-    XMLVM_CATCH_END(w44358aaac26b1c47)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac26b1c47)
+    XMLVM_CATCH_BEGIN(w44363aaac26b1c47)
+        XMLVM_CATCH_SPECIFIC(w44363aaac26b1c47,java_net_ConnectException,46)
+    XMLVM_CATCH_END(w44363aaac26b1c47)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac26b1c47)
     label102:;
-    XMLVM_TRY_BEGIN(w44358aaac26b1c49)
+    XMLVM_TRY_BEGIN(w44363aaac26b1c49)
     // Begin try
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r6.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_net_SocketImpl*) _r6.o)->fields.java_net_SocketImpl.fd_;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r6.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.trafficClass_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_connectDatagram___java_io_FileDescriptor_int_int_java_net_InetAddress])(_r0.o, _r1.o, _r8.i, _r2.i, _r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac26b1c49)
-        XMLVM_CATCH_SPECIFIC(w44358aaac26b1c49,java_net_ConnectException,46)
-    XMLVM_CATCH_END(w44358aaac26b1c49)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac26b1c49)
+    XMLVM_CATCH_BEGIN(w44363aaac26b1c49)
+        XMLVM_CATCH_SPECIFIC(w44363aaac26b1c49,java_net_ConnectException,46)
+    XMLVM_CATCH_END(w44363aaac26b1c49)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac26b1c49)
     goto label27;
     //XMLVM_END_WRAPPER
 }
@@ -1710,11 +1766,14 @@ void org_apache_harmony_luni_net_PlainSocketImpl_create___boolean(JAVA_OBJECT me
     _r3.o = me;
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 258)
+    XMLVM_CHECK_NPE(3)
     ((org_apache_harmony_luni_net_PlainSocketImpl*) _r3.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.streaming_ = _r4.i;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 259)
     if (_r4.i == 0) goto label16;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 260)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r3.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_SocketImpl*) _r3.o)->fields.java_net_SocketImpl.fd_;
     _r2.i = org_apache_harmony_luni_net_NetUtil_preferIPv4Stack__();
     XMLVM_CHECK_NPE(0)
@@ -1725,7 +1784,9 @@ void org_apache_harmony_luni_net_PlainSocketImpl_create___boolean(JAVA_OBJECT me
     return;
     label16:;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 262)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r3.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_SocketImpl*) _r3.o)->fields.java_net_SocketImpl.fd_;
     _r2.i = org_apache_harmony_luni_net_NetUtil_preferIPv4Stack__();
     XMLVM_CHECK_NPE(0)
@@ -1760,12 +1821,13 @@ JAVA_OBJECT org_apache_harmony_luni_net_PlainSocketImpl_getInputStream__(JAVA_OB
     _r2.o = me;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 273)
     java_lang_Object_acquireLockRecursive__(_r2.o);
-    XMLVM_TRY_BEGIN(w44358aaac29b1b4)
+    XMLVM_TRY_BEGIN(w44363aaac29b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_SocketImpl*) _r2.o)->fields.java_net_SocketImpl.fd_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_io_FileDescriptor_valid__(_r0.o);
-    if (_r0.i != 0) { XMLVM_MEMCPY(curThread_w44358aaac29b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44358aaac29b1b4, sizeof(XMLVM_JMP_BUF)); goto label24; };
+    if (_r0.i != 0) { XMLVM_MEMCPY(curThread_w44363aaac29b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44363aaac29b1b4, sizeof(XMLVM_JMP_BUF)); goto label24; };
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 274)
     _r0.o = __NEW_java_net_SocketException();
     // "luni.0C"
@@ -1776,17 +1838,17 @@ JAVA_OBJECT org_apache_harmony_luni_net_PlainSocketImpl_getInputStream__(JAVA_OB
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac29b1b4)
-        XMLVM_CATCH_SPECIFIC(w44358aaac29b1b4,java_lang_Object,21)
-    XMLVM_CATCH_END(w44358aaac29b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac29b1b4)
+    XMLVM_CATCH_BEGIN(w44363aaac29b1b4)
+        XMLVM_CATCH_SPECIFIC(w44363aaac29b1b4,java_lang_Object,21)
+    XMLVM_CATCH_END(w44363aaac29b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac29b1b4)
     label21:;
-    java_lang_Thread* curThread_w44358aaac29b1b6 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w44358aaac29b1b6->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w44363aaac29b1b6 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w44363aaac29b1b6->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label24:;
-    XMLVM_TRY_BEGIN(w44358aaac29b1c10)
+    XMLVM_TRY_BEGIN(w44363aaac29b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 277)
     _r0.o = __NEW_org_apache_harmony_luni_net_SocketInputStream();
@@ -1794,10 +1856,10 @@ JAVA_OBJECT org_apache_harmony_luni_net_PlainSocketImpl_getInputStream__(JAVA_OB
     org_apache_harmony_luni_net_SocketInputStream___INIT____java_net_SocketImpl(_r0.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac29b1c10)
-        XMLVM_CATCH_SPECIFIC(w44358aaac29b1c10,java_lang_Object,21)
-    XMLVM_CATCH_END(w44358aaac29b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac29b1c10)
+    XMLVM_CATCH_BEGIN(w44363aaac29b1c10)
+        XMLVM_CATCH_SPECIFIC(w44363aaac29b1c10,java_lang_Object,21)
+    XMLVM_CATCH_END(w44363aaac29b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac29b1c10)
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1818,6 +1880,7 @@ JAVA_OBJECT org_apache_harmony_luni_net_PlainSocketImpl_getOption___int(JAVA_OBJ
     _r0.i = 4102;
     if (_r3.i != _r0.i) goto label11;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 283)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.receiveTimeout_;
     _r0.o = java_lang_Integer_valueOf___int(_r0.i);
     label10:;
@@ -1829,12 +1892,15 @@ JAVA_OBJECT org_apache_harmony_luni_net_PlainSocketImpl_getOption___int(JAVA_OBJ
     _r0.i = 3;
     if (_r3.i != _r0.i) goto label21;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 285)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.trafficClass_;
     _r0.o = java_lang_Integer_valueOf___int(_r0.i);
     goto label10;
     label21:;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 289)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_SocketImpl*) _r2.o)->fields.java_net_SocketImpl.fd_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_getSocketOption___java_io_FileDescriptor_int])(_r0.o, _r1.o, _r3.i);
@@ -1842,12 +1908,14 @@ JAVA_OBJECT org_apache_harmony_luni_net_PlainSocketImpl_getOption___int(JAVA_OBJ
     _r1.i = 1;
     if (_r3.i != _r1.i) goto label10;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 291)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_getSocketFlags__])(_r1.o);
     _r1.i = _r1.i & 4;
     if (_r1.i == 0) goto label10;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 292)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.tcpNoDelay_;
     _r0.o = java_lang_Boolean_valueOf___boolean(_r0.i);
     goto label10;
@@ -1864,12 +1932,13 @@ JAVA_OBJECT org_apache_harmony_luni_net_PlainSocketImpl_getOutputStream__(JAVA_O
     _r2.o = me;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 300)
     java_lang_Object_acquireLockRecursive__(_r2.o);
-    XMLVM_TRY_BEGIN(w44358aaac31b1b4)
+    XMLVM_TRY_BEGIN(w44363aaac31b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_SocketImpl*) _r2.o)->fields.java_net_SocketImpl.fd_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_io_FileDescriptor_valid__(_r0.o);
-    if (_r0.i != 0) { XMLVM_MEMCPY(curThread_w44358aaac31b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44358aaac31b1b4, sizeof(XMLVM_JMP_BUF)); goto label24; };
+    if (_r0.i != 0) { XMLVM_MEMCPY(curThread_w44363aaac31b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44363aaac31b1b4, sizeof(XMLVM_JMP_BUF)); goto label24; };
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 301)
     _r0.o = __NEW_java_net_SocketException();
     // "luni.0C"
@@ -1880,17 +1949,17 @@ JAVA_OBJECT org_apache_harmony_luni_net_PlainSocketImpl_getOutputStream__(JAVA_O
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac31b1b4)
-        XMLVM_CATCH_SPECIFIC(w44358aaac31b1b4,java_lang_Object,21)
-    XMLVM_CATCH_END(w44358aaac31b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac31b1b4)
+    XMLVM_CATCH_BEGIN(w44363aaac31b1b4)
+        XMLVM_CATCH_SPECIFIC(w44363aaac31b1b4,java_lang_Object,21)
+    XMLVM_CATCH_END(w44363aaac31b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac31b1b4)
     label21:;
-    java_lang_Thread* curThread_w44358aaac31b1b6 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w44358aaac31b1b6->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w44363aaac31b1b6 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w44363aaac31b1b6->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label24:;
-    XMLVM_TRY_BEGIN(w44358aaac31b1c10)
+    XMLVM_TRY_BEGIN(w44363aaac31b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 303)
     _r0.o = __NEW_org_apache_harmony_luni_net_SocketOutputStream();
@@ -1898,10 +1967,10 @@ JAVA_OBJECT org_apache_harmony_luni_net_PlainSocketImpl_getOutputStream__(JAVA_O
     org_apache_harmony_luni_net_SocketOutputStream___INIT____java_net_SocketImpl(_r0.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac31b1c10)
-        XMLVM_CATCH_SPECIFIC(w44358aaac31b1c10,java_lang_Object,21)
-    XMLVM_CATCH_END(w44358aaac31b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac31b1c10)
+    XMLVM_CATCH_BEGIN(w44363aaac31b1c10)
+        XMLVM_CATCH_SPECIFIC(w44363aaac31b1c10,java_lang_Object,21)
+    XMLVM_CATCH_END(w44363aaac31b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac31b1c10)
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1919,6 +1988,7 @@ void org_apache_harmony_luni_net_PlainSocketImpl_listen___int(JAVA_OBJECT me, JA
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 308)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.proxy_;
     _r0.i = org_apache_harmony_luni_net_NetUtil_usingSocks___java_net_Proxy(_r0.o);
     if (_r0.i == 0) goto label9;
@@ -1928,7 +1998,9 @@ void org_apache_harmony_luni_net_PlainSocketImpl_listen___int(JAVA_OBJECT me, JA
     return;
     label9:;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 313)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_SocketImpl*) _r2.o)->fields.java_net_SocketImpl.fd_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_listenStreamSocket___java_io_FileDescriptor_int])(_r0.o, _r1.o, _r3.i);
@@ -1959,41 +2031,46 @@ void org_apache_harmony_luni_net_PlainSocketImpl_setOption___int_java_lang_Objec
     //java_lang_Integer_intValue__[9]
     XMLVM_CHECK_NPE(6)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_Integer*) _r6.o)->tib->vtable[9])(_r6.o);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_net_PlainSocketImpl*) _r4.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.receiveTimeout_ = _r1.i;
     label13:;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 348)
     XMLVM_EXIT_METHOD()
     return;
     label14:;
-    XMLVM_TRY_BEGIN(w44358aaac33b1c16)
+    XMLVM_TRY_BEGIN(w44363aaac33b1c16)
     // Begin try
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 322)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r4.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_net_SocketImpl*) _r4.o)->fields.java_net_SocketImpl.fd_;
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_setSocketOption___java_io_FileDescriptor_int_java_lang_Object])(_r1.o, _r2.o, _r5.i, _r6.o);
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 323)
     _r1.i = 1;
-    if (_r5.i != _r1.i) { XMLVM_MEMCPY(curThread_w44358aaac33b1c16->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44358aaac33b1c16, sizeof(XMLVM_JMP_BUF)); goto label44; };
+    if (_r5.i != _r1.i) { XMLVM_MEMCPY(curThread_w44363aaac33b1c16->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44363aaac33b1c16, sizeof(XMLVM_JMP_BUF)); goto label44; };
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 324)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r4.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_getSocketFlags__])(_r1.o);
     _r1.i = _r1.i & 4;
-    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w44358aaac33b1c16->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44358aaac33b1c16, sizeof(XMLVM_JMP_BUF)); goto label44; };
+    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w44363aaac33b1c16->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44363aaac33b1c16, sizeof(XMLVM_JMP_BUF)); goto label44; };
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 325)
     _r0 = _r6;
     _r0.o = _r0.o;
     _r1 = _r0;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_lang_Boolean_booleanValue__(_r1.o);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_net_PlainSocketImpl*) _r4.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.tcpNoDelay_ = _r1.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac33b1c16)
-        XMLVM_CATCH_SPECIFIC(w44358aaac33b1c16,java_net_SocketException,55)
-    XMLVM_CATCH_END(w44358aaac33b1c16)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac33b1c16)
+    XMLVM_CATCH_BEGIN(w44363aaac33b1c16)
+        XMLVM_CATCH_SPECIFIC(w44363aaac33b1c16,java_net_SocketException,55)
+    XMLVM_CATCH_END(w44363aaac33b1c16)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac33b1c16)
     label44:;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 344)
     if (_r5.i != _r3.i) goto label13;
@@ -2002,12 +2079,13 @@ void org_apache_harmony_luni_net_PlainSocketImpl_setOption___int_java_lang_Objec
     //java_lang_Integer_intValue__[9]
     XMLVM_CHECK_NPE(6)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_Integer*) _r6.o)->tib->vtable[9])(_r6.o);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_net_PlainSocketImpl*) _r4.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.trafficClass_ = _r1.i;
     goto label13;
     label55:;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 327)
-    java_lang_Thread* curThread_w44358aaac33b1c27 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w44358aaac33b1c27->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w44363aaac33b1c27 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w44363aaac33b1c27->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 330)
     if (_r5.i == _r3.i) goto label44;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 331)
@@ -2023,6 +2101,7 @@ JAVA_INT org_apache_harmony_luni_net_PlainSocketImpl_socksGetServerPort__(JAVA_O
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 357)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r1.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.proxy_;
     XMLVM_CHECK_NPE(0)
     _r1.o = java_net_Proxy_address__(_r0.o);
@@ -2045,6 +2124,7 @@ JAVA_OBJECT org_apache_harmony_luni_net_PlainSocketImpl_socksGetServerAddress__(
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 370)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r3.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.proxy_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_net_Proxy_address__(_r0.o);
@@ -2062,6 +2142,7 @@ JAVA_OBJECT org_apache_harmony_luni_net_PlainSocketImpl_socksGetServerAddress__(
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_net_InetAddress*) _r0.o)->tib->vtable[6])(_r0.o);
     label22:;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 376)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r3.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 377)
     _r2.i = org_apache_harmony_luni_net_NetUtil_preferIPv6Addresses__();
@@ -2096,11 +2177,14 @@ void org_apache_harmony_luni_net_PlainSocketImpl_socksConnect___java_net_InetAdd
     _r9.i = n3;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 387)
     if (_r9.i != 0) goto label27;
-    XMLVM_TRY_BEGIN(w44358aaac36b1b7)
+    XMLVM_TRY_BEGIN(w44363aaac36b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 388)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r6.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_net_SocketImpl*) _r6.o)->fields.java_net_SocketImpl.fd_;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r6.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.trafficClass_;
     XMLVM_CHECK_NPE(6)
     _r3.o = org_apache_harmony_luni_net_PlainSocketImpl_socksGetServerAddress__(_r6.o);
@@ -2111,10 +2195,10 @@ void org_apache_harmony_luni_net_PlainSocketImpl_socksConnect___java_net_InetAdd
     (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_connect___java_io_FileDescriptor_int_java_net_InetAddress_int])(_r0.o, _r1.o, _r2.i, _r3.o, _r4.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac36b1b7)
-        XMLVM_CATCH_SPECIFIC(w44358aaac36b1b7,java_lang_Exception,46)
-    XMLVM_CATCH_END(w44358aaac36b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac36b1b7)
+    XMLVM_CATCH_BEGIN(w44363aaac36b1b7)
+        XMLVM_CATCH_SPECIFIC(w44363aaac36b1b7,java_lang_Exception,46)
+    XMLVM_CATCH_END(w44363aaac36b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac36b1b7)
     label19:;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 400)
     XMLVM_CHECK_NPE(6)
@@ -2127,14 +2211,17 @@ void org_apache_harmony_luni_net_PlainSocketImpl_socksConnect___java_net_InetAdd
     XMLVM_EXIT_METHOD()
     return;
     label27:;
-    XMLVM_TRY_BEGIN(w44358aaac36b1c18)
+    XMLVM_TRY_BEGIN(w44363aaac36b1c18)
     // Begin try
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 391)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r6.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_net_SocketImpl*) _r6.o)->fields.java_net_SocketImpl.fd_;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 392)
     XMLVM_CHECK_NPE(6)
     _r2.i = org_apache_harmony_luni_net_PlainSocketImpl_socksGetServerPort__(_r6.o);
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r6.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.trafficClass_;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 393)
     XMLVM_CHECK_NPE(6)
@@ -2144,15 +2231,15 @@ void org_apache_harmony_luni_net_PlainSocketImpl_socksConnect___java_net_InetAdd
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT, JAVA_INT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_connectStreamWithTimeoutSocket___java_io_FileDescriptor_int_int_int_java_net_InetAddress])(_r0.o, _r1.o, _r2.i, _r3.i, _r4.i, _r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac36b1c18)
-        XMLVM_CATCH_SPECIFIC(w44358aaac36b1c18,java_lang_Exception,46)
-    XMLVM_CATCH_END(w44358aaac36b1c18)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac36b1c18)
+    XMLVM_CATCH_BEGIN(w44363aaac36b1c18)
+        XMLVM_CATCH_SPECIFIC(w44363aaac36b1c18,java_lang_Exception,46)
+    XMLVM_CATCH_END(w44363aaac36b1c18)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac36b1c18)
     goto label19;
     label46:;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 396)
-    java_lang_Thread* curThread_w44358aaac36b1c22 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w44358aaac36b1c22->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w44363aaac36b1c22 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w44363aaac36b1c22->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 397)
     _r1.o = __NEW_java_net_SocketException();
     // "luni.0D"
@@ -2262,9 +2349,12 @@ void org_apache_harmony_luni_net_PlainSocketImpl_shutdownInput__(JAVA_OBJECT me)
     _r2.o = me;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 437)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.shutdownInput_ = _r0.i;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 438)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_SocketImpl*) _r2.o)->fields.java_net_SocketImpl.fd_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_shutdownInput___java_io_FileDescriptor])(_r0.o, _r1.o);
@@ -2283,7 +2373,9 @@ void org_apache_harmony_luni_net_PlainSocketImpl_shutdownOutput__(JAVA_OBJECT me
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 446)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_SocketImpl*) _r2.o)->fields.java_net_SocketImpl.fd_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_shutdownOutput___java_io_FileDescriptor])(_r0.o, _r1.o);
@@ -2304,11 +2396,14 @@ void org_apache_harmony_luni_net_PlainSocketImpl_socksBind__(JAVA_OBJECT me)
     XMLVMElem _r4;
     XMLVMElem _r5;
     _r5.o = me;
-    XMLVM_TRY_BEGIN(w44358aaac41b1b2)
+    XMLVM_TRY_BEGIN(w44363aaac41b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 454)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r5.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_SocketImpl*) _r5.o)->fields.java_net_SocketImpl.fd_;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r5.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.trafficClass_;
     XMLVM_CHECK_NPE(5)
     _r3.o = org_apache_harmony_luni_net_PlainSocketImpl_socksGetServerAddress__(_r5.o);
@@ -2319,10 +2414,10 @@ void org_apache_harmony_luni_net_PlainSocketImpl_socksBind__(JAVA_OBJECT me)
     (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_connect___java_io_FileDescriptor_int_java_net_InetAddress_int])(_r0.o, _r1.o, _r2.i, _r3.o, _r4.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44358aaac41b1b2)
-        XMLVM_CATCH_SPECIFIC(w44358aaac41b1b2,java_lang_Exception,33)
-    XMLVM_CATCH_END(w44358aaac41b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44358aaac41b1b2)
+    XMLVM_CATCH_BEGIN(w44363aaac41b1b2)
+        XMLVM_CATCH_SPECIFIC(w44363aaac41b1b2,java_lang_Exception,33)
+    XMLVM_CATCH_END(w44363aaac41b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44363aaac41b1b2)
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 462)
     _r0.o = org_apache_harmony_luni_net_PlainSocketImpl_GET_lastConnectedAddress();
     if (_r0.o != JAVA_NULL) goto label46;
@@ -2336,8 +2431,8 @@ void org_apache_harmony_luni_net_PlainSocketImpl_socksBind__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label33:;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 456)
-    java_lang_Thread* curThread_w44358aaac41b1c14 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w44358aaac41b1c14->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w44363aaac41b1c14 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w44363aaac41b1c14->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 457)
     _r1.o = __NEW_java_io_IOException();
     // "luni.0E"
@@ -2388,6 +2483,7 @@ void org_apache_harmony_luni_net_PlainSocketImpl_socksBind__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 479)
     XMLVM_CHECK_NPE(5)
     _r1.o = org_apache_harmony_luni_net_PlainSocketImpl_socksGetServerAddress__(_r5.o);
+    XMLVM_CHECK_NPE(5)
     ((java_net_SocketImpl*) _r5.o)->fields.java_net_SocketImpl.address_ = _r1.o;
     label92:;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 488)
@@ -2395,6 +2491,7 @@ void org_apache_harmony_luni_net_PlainSocketImpl_socksBind__(JAVA_OBJECT me)
     
     // Red class access removed: org.apache.harmony.luni.net.Socks4Message::getPort
     XMLVM_RED_CLASS_DEPENDENCY();
+    XMLVM_CHECK_NPE(5)
     ((java_net_SocketImpl*) _r5.o)->fields.java_net_SocketImpl.localport_ = _r0.i;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 489)
     XMLVM_EXIT_METHOD()
@@ -2413,6 +2510,7 @@ void org_apache_harmony_luni_net_PlainSocketImpl_socksBind__(JAVA_OBJECT me)
     org_apache_harmony_luni_net_NetUtil_intToBytes___int_byte_1ARRAY_int(_r2.i, _r1.o, _r3.i);
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 486)
     _r1.o = java_net_InetAddress_getByAddress___byte_1ARRAY(_r1.o);
+    XMLVM_CHECK_NPE(5)
     ((java_net_SocketImpl*) _r5.o)->fields.java_net_SocketImpl.address_ = _r1.o;
     goto label92;
     //XMLVM_END_WRAPPER
@@ -2590,9 +2688,12 @@ JAVA_BOOLEAN org_apache_harmony_luni_net_PlainSocketImpl_supportsUrgentData__(JA
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 537)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.streaming_;
     if (_r0.i == 0) goto label16;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r2.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_SocketImpl*) _r2.o)->fields.java_net_SocketImpl.fd_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_supportsUrgentData___java_io_FileDescriptor])(_r0.o, _r1.o);
@@ -2619,7 +2720,9 @@ void org_apache_harmony_luni_net_PlainSocketImpl_sendUrgentData___int(JAVA_OBJEC
     _r3.o = me;
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 542)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r3.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_SocketImpl*) _r3.o)->fields.java_net_SocketImpl.fd_;
     _r2.i = (_r4.i << 24) >> 24;
     XMLVM_CHECK_NPE(0)
@@ -2638,6 +2741,7 @@ JAVA_OBJECT org_apache_harmony_luni_net_PlainSocketImpl_getFD__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 546)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_SocketImpl*) _r1.o)->fields.java_net_SocketImpl.fd_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2653,6 +2757,7 @@ void org_apache_harmony_luni_net_PlainSocketImpl_setLocalport___int(JAVA_OBJECT 
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 550)
+    XMLVM_CHECK_NPE(0)
     ((java_net_SocketImpl*) _r0.o)->fields.java_net_SocketImpl.localport_ = _r1.i;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 551)
     XMLVM_EXIT_METHOD()
@@ -2681,6 +2786,7 @@ JAVA_INT org_apache_harmony_luni_net_PlainSocketImpl_read___byte_1ARRAY_int_int(
     _r10.i = n3;
     _r6.i = -1;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 554)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r7.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.shutdownInput_;
     if (_r0.i == 0) goto label7;
     _r0 = _r6;
@@ -2691,8 +2797,11 @@ JAVA_INT org_apache_harmony_luni_net_PlainSocketImpl_read___byte_1ARRAY_int_int(
     return _r0.i;
     label7:;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 557)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r7.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_net_SocketImpl*) _r7.o)->fields.java_net_SocketImpl.fd_;
+    XMLVM_CHECK_NPE(7)
     _r5.i = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r7.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.receiveTimeout_;
     _r2 = _r8;
     _r3 = _r9;
@@ -2711,6 +2820,7 @@ JAVA_INT org_apache_harmony_luni_net_PlainSocketImpl_read___byte_1ARRAY_int_int(
     if (_r0.i != _r6.i) goto label6;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 564)
     _r1.i = 1;
+    XMLVM_CHECK_NPE(7)
     ((org_apache_harmony_luni_net_PlainSocketImpl*) _r7.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.shutdownInput_ = _r1.i;
     goto label6;
     //XMLVM_END_WRAPPER
@@ -2736,13 +2846,18 @@ JAVA_INT org_apache_harmony_luni_net_PlainSocketImpl_write___byte_1ARRAY_int_int
     _r9.i = n2;
     _r10.i = n3;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 570)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r7.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.streaming_;
     if (_r0.i != 0) goto label20;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 571)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r7.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_net_SocketImpl*) _r7.o)->fields.java_net_SocketImpl.fd_;
+    XMLVM_CHECK_NPE(7)
     _r5.i = ((java_net_SocketImpl*) _r7.o)->fields.java_net_SocketImpl.port_;
     XMLVM_SOURCE_POSITION("PlainSocketImpl.java", 572)
+    XMLVM_CHECK_NPE(7)
     _r6.o = ((java_net_SocketImpl*) _r7.o)->fields.java_net_SocketImpl.address_;
     _r2 = _r8;
     _r3 = _r9;
@@ -2754,7 +2869,9 @@ JAVA_INT org_apache_harmony_luni_net_PlainSocketImpl_write___byte_1ARRAY_int_int
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label20:;
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((org_apache_harmony_luni_net_PlainSocketImpl*) _r7.o)->fields.org_apache_harmony_luni_net_PlainSocketImpl.netImpl_;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_net_SocketImpl*) _r7.o)->fields.java_net_SocketImpl.fd_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_INetworkSystem_write___java_io_FileDescriptor_byte_1ARRAY_int_int])(_r0.o, _r1.o, _r8.o, _r9.i, _r10.i);

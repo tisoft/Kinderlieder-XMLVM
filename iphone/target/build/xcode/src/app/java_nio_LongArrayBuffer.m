@@ -382,8 +382,10 @@ void java_nio_LongArrayBuffer___INIT____int_long_1ARRAY_int(JAVA_OBJECT me, JAVA
     XMLVM_CHECK_NPE(0)
     java_nio_LongBuffer___INIT____int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("LongArrayBuffer.java", 48)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_LongArrayBuffer*) _r0.o)->fields.java_nio_LongArrayBuffer.backingArray_ = _r2.o;
     XMLVM_SOURCE_POSITION("LongArrayBuffer.java", 49)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_LongArrayBuffer*) _r0.o)->fields.java_nio_LongArrayBuffer.offset_ = _r3.i;
     XMLVM_SOURCE_POSITION("LongArrayBuffer.java", 50)
     XMLVM_EXIT_METHOD()
@@ -402,7 +404,9 @@ JAVA_LONG java_nio_LongArrayBuffer_get__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("LongArrayBuffer.java", 54)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.limit_;
     if (_r0.i != _r1.i) goto label12;
     XMLVM_SOURCE_POSITION("LongArrayBuffer.java", 55)
@@ -412,10 +416,14 @@ JAVA_LONG java_nio_LongArrayBuffer_get__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("LongArrayBuffer.java", 57)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_nio_LongArrayBuffer*) _r4.o)->fields.java_nio_LongArrayBuffer.backingArray_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_nio_LongArrayBuffer*) _r4.o)->fields.java_nio_LongArrayBuffer.offset_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_;
     _r3.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_nio_Buffer*) _r4.o)->fields.java_nio_Buffer.position_ = _r3.i;
     _r1.i = _r1.i + _r2.i;
     XMLVM_CHECK_NPE(0)
@@ -438,6 +446,7 @@ JAVA_LONG java_nio_LongArrayBuffer_get___int(JAVA_OBJECT me, JAVA_INT n1)
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("LongArrayBuffer.java", 62)
     if (_r3.i < 0) goto label6;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
     if (_r3.i < _r0.i) goto label12;
     label6:;
@@ -448,7 +457,9 @@ JAVA_LONG java_nio_LongArrayBuffer_get___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("LongArrayBuffer.java", 65)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_LongArrayBuffer*) _r2.o)->fields.java_nio_LongArrayBuffer.backingArray_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_LongArrayBuffer*) _r2.o)->fields.java_nio_LongArrayBuffer.offset_;
     _r1.i = _r1.i + _r3.i;
     XMLVM_CHECK_NPE(0)
@@ -505,14 +516,19 @@ JAVA_OBJECT java_nio_LongArrayBuffer_get___long_1ARRAY_int_int(JAVA_OBJECT me, J
     XMLVM_THROW_CUSTOM(_r0.o)
     label31:;
     XMLVM_SOURCE_POSITION("LongArrayBuffer.java", 77)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_nio_LongArrayBuffer*) _r5.o)->fields.java_nio_LongArrayBuffer.backingArray_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_nio_LongArrayBuffer*) _r5.o)->fields.java_nio_LongArrayBuffer.offset_;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.position_;
     _r1.i = _r1.i + _r2.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r1.i, _r6.o, _r7.i, _r8.i);
     XMLVM_SOURCE_POSITION("LongArrayBuffer.java", 78)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.position_;
     _r0.i = _r0.i + _r8.i;
+    XMLVM_CHECK_NPE(5)
     ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("LongArrayBuffer.java", 79)
     XMLVM_EXIT_METHOD()

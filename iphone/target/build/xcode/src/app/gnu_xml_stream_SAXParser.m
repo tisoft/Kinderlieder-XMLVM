@@ -1357,22 +1357,31 @@ void gnu_xml_stream_SAXParser___INIT___(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     javax_xml_parsers_SAXParser___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("SAXParser.java", 104)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.validating_ = _r1.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 105)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.namespaceAware_ = _r0.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 106)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.xIncludeAware_ = _r1.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 107)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.stringInterning_ = _r0.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 108)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.coalescing_ = _r0.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 109)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.replaceERefs_ = _r0.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 110)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.externalEntities_ = _r0.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 111)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.supportDTD_ = _r0.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 112)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.baseAware_ = _r0.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 124)
     XMLVM_EXIT_METHOD()
@@ -1400,28 +1409,40 @@ void gnu_xml_stream_SAXParser___INIT____boolean_boolean_boolean(JAVA_OBJECT me, 
     XMLVM_CHECK_NPE(2)
     javax_xml_parsers_SAXParser___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("SAXParser.java", 104)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.validating_ = _r1.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 105)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.namespaceAware_ = _r0.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 106)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.xIncludeAware_ = _r1.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 107)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.stringInterning_ = _r0.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 108)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.coalescing_ = _r0.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 109)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.replaceERefs_ = _r0.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 110)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.externalEntities_ = _r0.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 111)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.supportDTD_ = _r0.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 112)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.baseAware_ = _r0.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 128)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.validating_ = _r3.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 129)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.namespaceAware_ = _r4.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 130)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.xIncludeAware_ = _r5.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 131)
     XMLVM_EXIT_METHOD()
@@ -1463,6 +1484,7 @@ JAVA_BOOLEAN gnu_xml_stream_SAXParser_isNamespaceAware__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXParser.java", 149)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.namespaceAware_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -1477,6 +1499,7 @@ JAVA_BOOLEAN gnu_xml_stream_SAXParser_isValidating__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXParser.java", 154)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.validating_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -1499,6 +1522,7 @@ void gnu_xml_stream_SAXParser_setProperty___java_lang_String_java_lang_Object(JA
     _r6.o = n1;
     _r7.o = n2;
     XMLVM_SOURCE_POSITION("SAXParser.java", 160)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.parser_;
     if (_r3.o == JAVA_NULL) goto label12;
     XMLVM_SOURCE_POSITION("SAXParser.java", 161)
@@ -1530,6 +1554,7 @@ void gnu_xml_stream_SAXParser_setProperty___java_lang_String_java_lang_Object(JA
     //java_lang_Boolean_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(3)
     _r3.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_Boolean*) _r3.o)->tib->vtable[1])(_r3.o, _r7.o);
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.namespaceAware_ = _r3.i;
     label34:;
     XMLVM_SOURCE_POSITION("SAXParser.java", 193)
@@ -1555,6 +1580,7 @@ void gnu_xml_stream_SAXParser_setProperty___java_lang_String_java_lang_Object(JA
     //java_lang_Boolean_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(3)
     _r3.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_Boolean*) _r3.o)->tib->vtable[1])(_r3.o, _r7.o);
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.stringInterning_ = _r3.i;
     goto label34;
     label60:;
@@ -1577,6 +1603,7 @@ void gnu_xml_stream_SAXParser_setProperty___java_lang_String_java_lang_Object(JA
     //java_lang_Boolean_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(3)
     _r3.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_Boolean*) _r3.o)->tib->vtable[1])(_r3.o, _r7.o);
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.validating_ = _r3.i;
     goto label34;
     label85:;
@@ -1592,6 +1619,7 @@ void gnu_xml_stream_SAXParser_setProperty___java_lang_String_java_lang_Object(JA
     //java_lang_Boolean_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(3)
     _r3.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_Boolean*) _r3.o)->tib->vtable[1])(_r3.o, _r7.o);
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.externalEntities_ = _r3.i;
     goto label34;
     label102:;
@@ -1607,6 +1635,7 @@ void gnu_xml_stream_SAXParser_setProperty___java_lang_String_java_lang_Object(JA
     //java_lang_Boolean_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(3)
     _r3.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_Boolean*) _r3.o)->tib->vtable[1])(_r3.o, _r7.o);
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.externalEntities_ = _r3.i;
     goto label34;
     label119:;
@@ -1619,6 +1648,7 @@ void gnu_xml_stream_SAXParser_setProperty___java_lang_String_java_lang_Object(JA
     if (_r3.i == 0) goto label132;
     XMLVM_SOURCE_POSITION("SAXParser.java", 184)
     _r7.o = _r7.o;
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.declHandler_ = _r7.o;
     goto label34;
     label132:;
@@ -1631,6 +1661,7 @@ void gnu_xml_stream_SAXParser_setProperty___java_lang_String_java_lang_Object(JA
     if (_r3.i == 0) goto label145;
     XMLVM_SOURCE_POSITION("SAXParser.java", 186)
     _r7.o = _r7.o;
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.lexicalHandler_ = _r7.o;
     goto label34;
     label145:;
@@ -1646,6 +1677,7 @@ void gnu_xml_stream_SAXParser_setProperty___java_lang_String_java_lang_Object(JA
     //java_lang_Boolean_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(3)
     _r3.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_Boolean*) _r3.o)->tib->vtable[1])(_r3.o, _r7.o);
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.baseAware_ = _r3.i;
     goto label34;
     label162:;
@@ -1661,6 +1693,7 @@ void gnu_xml_stream_SAXParser_setProperty___java_lang_String_java_lang_Object(JA
     //java_lang_Boolean_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(3)
     _r3.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_Boolean*) _r3.o)->tib->vtable[1])(_r3.o, _r7.o);
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.coalescing_ = _r3.i;
     goto label34;
     label180:;
@@ -1705,6 +1738,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getProperty___java_lang_String(JAVA_OBJECT 
     _r4.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r6.o);
     if (_r4.i == 0) goto label19;
     XMLVM_SOURCE_POSITION("SAXParser.java", 203)
+    XMLVM_CHECK_NPE(5)
     _r4.o = ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.baseURI_;
     label18:;
     XMLVM_SOURCE_POSITION("SAXParser.java", 235)
@@ -1719,6 +1753,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getProperty___java_lang_String(JAVA_OBJECT 
     _r4.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r6.o);
     if (_r4.i == 0) goto label37;
     XMLVM_SOURCE_POSITION("SAXParser.java", 205)
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.xmlStandalone_;
     if (_r4.i == 0) goto label34;
     _r4.o = java_lang_Boolean_GET_TRUE();
@@ -1735,6 +1770,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getProperty___java_lang_String(JAVA_OBJECT 
     _r4.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r6.o);
     if (_r4.i == 0) goto label55;
     XMLVM_SOURCE_POSITION("SAXParser.java", 207)
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.namespaceAware_;
     if (_r4.i == 0) goto label52;
     _r4.o = java_lang_Boolean_GET_TRUE();
@@ -1762,6 +1798,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getProperty___java_lang_String(JAVA_OBJECT 
     _r4.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r6.o);
     if (_r4.i == 0) goto label84;
     XMLVM_SOURCE_POSITION("SAXParser.java", 211)
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.stringInterning_;
     if (_r4.i == 0) goto label81;
     _r4.o = java_lang_Boolean_GET_TRUE();
@@ -1811,6 +1848,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getProperty___java_lang_String(JAVA_OBJECT 
     _r4.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r6.o);
     if (_r4.i == 0) goto label135;
     XMLVM_SOURCE_POSITION("SAXParser.java", 219)
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.validating_;
     if (_r4.i == 0) goto label132;
     _r4.o = java_lang_Boolean_GET_TRUE();
@@ -1827,6 +1865,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getProperty___java_lang_String(JAVA_OBJECT 
     _r4.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r6.o);
     if (_r4.i == 0) goto label155;
     XMLVM_SOURCE_POSITION("SAXParser.java", 221)
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.externalEntities_;
     if (_r4.i == 0) goto label151;
     _r4.o = java_lang_Boolean_GET_TRUE();
@@ -1843,6 +1882,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getProperty___java_lang_String(JAVA_OBJECT 
     _r4.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r6.o);
     if (_r4.i == 0) goto label175;
     XMLVM_SOURCE_POSITION("SAXParser.java", 223)
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.externalEntities_;
     if (_r4.i == 0) goto label171;
     _r4.o = java_lang_Boolean_GET_TRUE();
@@ -1870,6 +1910,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getProperty___java_lang_String(JAVA_OBJECT 
     _r4.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r6.o);
     if (_r4.i == 0) goto label199;
     XMLVM_SOURCE_POSITION("SAXParser.java", 227)
+    XMLVM_CHECK_NPE(5)
     _r4.o = ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.declHandler_;
     goto label18;
     label199:;
@@ -1881,6 +1922,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getProperty___java_lang_String(JAVA_OBJECT 
     _r4.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r6.o);
     if (_r4.i == 0) goto label211;
     XMLVM_SOURCE_POSITION("SAXParser.java", 229)
+    XMLVM_CHECK_NPE(5)
     _r4.o = ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.xmlVersion_;
     goto label18;
     label211:;
@@ -1892,6 +1934,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getProperty___java_lang_String(JAVA_OBJECT 
     _r4.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r6.o);
     if (_r4.i == 0) goto label223;
     XMLVM_SOURCE_POSITION("SAXParser.java", 231)
+    XMLVM_CHECK_NPE(5)
     _r4.o = ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.lexicalHandler_;
     goto label18;
     label223:;
@@ -1903,6 +1946,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getProperty___java_lang_String(JAVA_OBJECT 
     _r4.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r6.o);
     if (_r4.i == 0) goto label243;
     XMLVM_SOURCE_POSITION("SAXParser.java", 233)
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.baseAware_;
     if (_r4.i == 0) goto label239;
     _r4.o = java_lang_Boolean_GET_TRUE();
@@ -1918,6 +1962,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getProperty___java_lang_String(JAVA_OBJECT 
     XMLVM_CHECK_NPE(4)
     _r4.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r6.o);
     if (_r4.i == 0) goto label255;
+    XMLVM_CHECK_NPE(5)
     _r4.o = ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.xmlEncoding_;
     goto label18;
     label255:;
@@ -1937,6 +1982,7 @@ JAVA_BOOLEAN gnu_xml_stream_SAXParser_isXIncludeAware__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXParser.java", 241)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.xIncludeAware_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -1952,13 +1998,17 @@ void gnu_xml_stream_SAXParser_reset__(JAVA_OBJECT me)
     _r1.o = me;
     _r0.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("SAXParser.java", 246)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.parser_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXParser.java", 247)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.encoding_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXParser.java", 248)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.xmlVersion_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXParser.java", 249)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.xmlStandalone_ = _r0.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 250)
     XMLVM_EXIT_METHOD()
@@ -2035,6 +2085,7 @@ void gnu_xml_stream_SAXParser_setEntityResolver___org_xml_sax_EntityResolver(JAV
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("SAXParser.java", 271)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.entityResolver_ = _r1.o;
     XMLVM_SOURCE_POSITION("SAXParser.java", 272)
     XMLVM_EXIT_METHOD()
@@ -2050,6 +2101,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getEntityResolver__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXParser.java", 276)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.entityResolver_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2065,6 +2117,7 @@ void gnu_xml_stream_SAXParser_setDTDHandler___org_xml_sax_DTDHandler(JAVA_OBJECT
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("SAXParser.java", 281)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.dtdHandler_ = _r1.o;
     XMLVM_SOURCE_POSITION("SAXParser.java", 282)
     XMLVM_EXIT_METHOD()
@@ -2080,6 +2133,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getDTDHandler__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXParser.java", 286)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.dtdHandler_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2095,6 +2149,7 @@ void gnu_xml_stream_SAXParser_setContentHandler___org_xml_sax_ContentHandler(JAV
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("SAXParser.java", 291)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_ = _r1.o;
     XMLVM_SOURCE_POSITION("SAXParser.java", 292)
     XMLVM_EXIT_METHOD()
@@ -2110,6 +2165,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getContentHandler__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXParser.java", 296)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2125,6 +2181,7 @@ void gnu_xml_stream_SAXParser_setErrorHandler___org_xml_sax_ErrorHandler(JAVA_OB
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("SAXParser.java", 301)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.errorHandler_ = _r1.o;
     XMLVM_SOURCE_POSITION("SAXParser.java", 302)
     XMLVM_EXIT_METHOD()
@@ -2140,6 +2197,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getErrorHandler__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXParser.java", 306)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.errorHandler_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2230,27 +2288,35 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_SOURCE_POSITION("SAXParser.java", 317)
     _r5.o = __NEW_gnu_xml_stream_XMLParser();
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.validating_;
     _r8 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.namespaceAware_;
     _r9 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.coalescing_;
     _r10 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.replaceERefs_;
     _r11 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.externalEntities_;
     _r12 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.supportDTD_;
     _r13 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.baseAware_;
     _r14 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.stringInterning_;
     _r15 = _r0;
     _r16.i = 1;
@@ -2260,6 +2326,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     gnu_xml_stream_XMLParser___INIT____java_io_InputStream_java_lang_String_boolean_boolean_boolean_boolean_boolean_boolean_boolean_boolean_boolean_javax_xml_stream_XMLReporter_javax_xml_stream_XMLResolver(_r5.o, _r6.o, _r7.o, _r8.i, _r9.i, _r10.i, _r11.i, _r12.i, _r13.i, _r14.i, _r15.i, _r16.i, _r17.o, _r18.o);
     _r0 = _r5;
     _r1 = _r57;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.parser_ = _r0.o;
     // End try
     XMLVM_TRY_END
@@ -2272,6 +2339,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     // Begin try
     XMLVM_SOURCE_POSITION("SAXParser.java", 346)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.parser_;
     _r5 = _r0;
     if (_r5.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1b7, sizeof(XMLVM_JMP_BUF)); goto label238; };
@@ -2306,27 +2374,35 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_SOURCE_POSITION("SAXParser.java", 333)
     _r8.o = __NEW_gnu_xml_stream_XMLParser();
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.validating_;
     _r11 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.namespaceAware_;
     _r12 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.coalescing_;
     _r13 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.replaceERefs_;
     _r14 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.externalEntities_;
     _r15 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.supportDTD_;
     _r16 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.baseAware_;
     _r17 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.stringInterning_;
     _r18 = _r0;
     _r19.i = 1;
@@ -2337,6 +2413,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     gnu_xml_stream_XMLParser___INIT____java_io_Reader_java_lang_String_boolean_boolean_boolean_boolean_boolean_boolean_boolean_boolean_boolean_javax_xml_stream_XMLReporter_javax_xml_stream_XMLResolver(_r8.o, _r9.o, _r10.o, _r11.i, _r12.i, _r13.i, _r14.i, _r15.i, _r16.i, _r17.i, _r18.i, _r19.i, _r20.o, _r21.o);
     _r0 = _r8;
     _r1 = _r57;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.parser_ = _r0.o;
     { XMLVM_MEMCPY(curThread_w912aaac42b1c13->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c13, sizeof(XMLVM_JMP_BUF)); goto label72; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 350)
@@ -2361,27 +2438,35 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_SOURCE_POSITION("SAXParser.java", 353)
     _r10.o = __NEW_gnu_xml_stream_XMLParser();
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.validating_;
     _r13 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.namespaceAware_;
     _r14 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.coalescing_;
     _r15 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.replaceERefs_;
     _r16 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.externalEntities_;
     _r17 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.supportDTD_;
     _r18 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.baseAware_;
     _r19 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.stringInterning_;
     _r20 = _r0;
     _r21.i = 1;
@@ -2393,6 +2478,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     gnu_xml_stream_XMLParser___INIT____java_io_InputStream_java_lang_String_boolean_boolean_boolean_boolean_boolean_boolean_boolean_boolean_boolean_javax_xml_stream_XMLReporter_javax_xml_stream_XMLResolver(_r10.o, _r11.o, _r12.o, _r13.i, _r14.i, _r15.i, _r16.i, _r17.i, _r18.i, _r19.i, _r20.i, _r21.i, _r22.o, _r23.o);
     _r0 = _r10;
     _r1 = _r57;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.parser_ = _r0.o;
     // End try
     XMLVM_TRY_END
@@ -2405,29 +2491,36 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     // Begin try
     XMLVM_SOURCE_POSITION("SAXParser.java", 366)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.parser_;
     _r5 = _r0;
     _r0 = _r5;
     _r1 = _r57;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.reader_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXParser.java", 367)
     _r0 = _r7;
     _r1 = _r57;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.baseURI_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXParser.java", 369)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.xIncludeAware_;
     _r5 = _r0;
     if (_r5.i == 0) { XMLVM_MEMCPY(curThread_w912aaac42b1c17->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c17, sizeof(XMLVM_JMP_BUF)); goto label287; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 370)
     _r10.o = __NEW_gnu_xml_stream_XIncludeFilter();
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.parser_;
     _r11 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.namespaceAware_;
     _r13 = _r0;
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.validating_;
     _r14 = _r0;
     _r15.i = 1;
@@ -2436,6 +2529,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     gnu_xml_stream_XIncludeFilter___INIT____javax_xml_stream_XMLStreamReader_java_lang_String_boolean_boolean_boolean(_r10.o, _r11.o, _r12.o, _r13.i, _r14.i, _r15.i);
     _r0 = _r10;
     _r1 = _r57;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.reader_ = _r0.o;
     // End try
     XMLVM_TRY_END
@@ -2448,11 +2542,13 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     // Begin try
     XMLVM_SOURCE_POSITION("SAXParser.java", 373)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1c19->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c19, sizeof(XMLVM_JMP_BUF)); goto label305; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 374)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     _r0 = _r5;
@@ -2473,6 +2569,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     // Begin try
     XMLVM_SOURCE_POSITION("SAXParser.java", 378)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.parser_;
     _r5 = _r0;
     //gnu_xml_stream_XMLParser_hasNext__[41]
@@ -2481,6 +2578,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     if (_r5.i == 0) { XMLVM_MEMCPY(curThread_w912aaac42b1c24->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c24, sizeof(XMLVM_JMP_BUF)); goto label1699; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 380)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.parser_;
     _r5 = _r0;
     //gnu_xml_stream_XMLParser_next__[50]
@@ -2488,17 +2586,20 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     _r35.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((gnu_xml_stream_XMLParser*) _r5.o)->tib->vtable[50])(_r5.o);
     XMLVM_SOURCE_POSITION("SAXParser.java", 381)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.baseAware_;
     _r5 = _r0;
     if (_r5.i == 0) { XMLVM_MEMCPY(curThread_w912aaac42b1c24->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c24, sizeof(XMLVM_JMP_BUF)); goto label348; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 382)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.parser_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
     _r5.o = gnu_xml_stream_XMLParser_getXMLBase__(_r5.o);
     _r0 = _r5;
     _r1 = _r57;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.baseURI_ = _r0.o;
     // End try
     XMLVM_TRY_END
@@ -2538,11 +2639,13 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w912aaac42b1c28)
     // Begin try
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1c28->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c28, sizeof(XMLVM_JMP_BUF)); goto label307; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 419)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.reader_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
@@ -2597,6 +2700,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     // Begin try
     XMLVM_SOURCE_POSITION("SAXParser.java", 426)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.namespaceAware_;
     _r5 = _r0;
     if (_r5.i != 0) { XMLVM_MEMCPY(curThread_w912aaac42b1c30->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c30, sizeof(XMLVM_JMP_BUF)); goto label757; };
@@ -2618,6 +2722,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     // Begin try
     XMLVM_SOURCE_POSITION("SAXParser.java", 443)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     _r0 = _r5;
@@ -2668,11 +2773,13 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w912aaac42b1c41)
     // Begin try
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1c41->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c41, sizeof(XMLVM_JMP_BUF)); goto label493; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 666)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
@@ -2689,11 +2796,13 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     // Begin try
     XMLVM_SOURCE_POSITION("SAXParser.java", 667)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.errorHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1c43->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c43, sizeof(XMLVM_JMP_BUF)); goto label511; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 668)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.errorHandler_;
     _r5 = _r0;
     _r0 = _r5;
@@ -2712,11 +2821,13 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     // Begin try
     XMLVM_SOURCE_POSITION("SAXParser.java", 669)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1c45->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c45, sizeof(XMLVM_JMP_BUF)); goto label526; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 670)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
@@ -2770,17 +2881,20 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     // Begin try
     XMLVM_SOURCE_POSITION("SAXParser.java", 386)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1c51->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c51, sizeof(XMLVM_JMP_BUF)); goto label307; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 388)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.reader_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
     _r25.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getTextCharacters__])(_r5.o);
     XMLVM_SOURCE_POSITION("SAXParser.java", 389)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     _r7.i = 0;
@@ -2806,17 +2920,20 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w912aaac42b1c53)
     // Begin try
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1c53->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c53, sizeof(XMLVM_JMP_BUF)); goto label307; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 395)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.reader_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
     _r25.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getTextCharacters__])(_r5.o);
     XMLVM_SOURCE_POSITION("SAXParser.java", 396)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.parser_;
     _r5 = _r0;
     _r7.i = 0;
@@ -2829,6 +2946,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     if (_r5.i == 0) { XMLVM_MEMCPY(curThread_w912aaac42b1c53->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c53, sizeof(XMLVM_JMP_BUF)); goto label634; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 397)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     _r7.i = 0;
@@ -2854,6 +2972,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w912aaac42b1c55)
     // Begin try
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     _r7.i = 0;
@@ -2879,11 +2998,13 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w912aaac42b1c57)
     // Begin try
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.lexicalHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1c57->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c57, sizeof(XMLVM_JMP_BUF)); goto label669; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 404)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.lexicalHandler_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
@@ -2900,17 +3021,20 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     // Begin try
     XMLVM_SOURCE_POSITION("SAXParser.java", 405)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1c59->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c59, sizeof(XMLVM_JMP_BUF)); goto label721; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 407)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.reader_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
     _r25.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getTextCharacters__])(_r5.o);
     XMLVM_SOURCE_POSITION("SAXParser.java", 408)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.parser_;
     _r5 = _r0;
     _r7.i = 1;
@@ -2923,6 +3047,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     if (_r5.i == 0) { XMLVM_MEMCPY(curThread_w912aaac42b1c59->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c59, sizeof(XMLVM_JMP_BUF)); goto label738; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 409)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     _r7.i = 0;
@@ -2947,11 +3072,13 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     // Begin try
     XMLVM_SOURCE_POSITION("SAXParser.java", 413)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.lexicalHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1c61->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c61, sizeof(XMLVM_JMP_BUF)); goto label307; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 414)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.lexicalHandler_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
@@ -2969,6 +3096,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w912aaac42b1c63)
     // Begin try
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     _r7.i = 0;
@@ -2994,6 +3122,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w912aaac42b1c65)
     // Begin try
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.reader_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
@@ -3015,6 +3144,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w912aaac42b1c67->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c67, sizeof(XMLVM_JMP_BUF)); goto label433; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 436)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.reader_;
     _r5 = _r0;
     _r0 = _r5;
@@ -3023,6 +3153,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     _r44.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getNamespaceURI___int])(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("SAXParser.java", 437)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.reader_;
     _r5 = _r0;
     _r0 = _r5;
@@ -3062,6 +3193,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w912aaac42b1c71)
     // Begin try
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     _r0 = _r5;
@@ -3082,11 +3214,13 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w912aaac42b1c73)
     // Begin try
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1c73->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c73, sizeof(XMLVM_JMP_BUF)); goto label307; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 449)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.reader_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
@@ -3141,6 +3275,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     // Begin try
     XMLVM_SOURCE_POSITION("SAXParser.java", 456)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.namespaceAware_;
     _r5 = _r0;
     if (_r5.i != 0) { XMLVM_MEMCPY(curThread_w912aaac42b1c75->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c75, sizeof(XMLVM_JMP_BUF)); goto label907; };
@@ -3162,6 +3297,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     // Begin try
     XMLVM_SOURCE_POSITION("SAXParser.java", 461)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     _r0 = _r5;
@@ -3172,11 +3308,13 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_ContentHandler_endElement___java_lang_String_java_lang_String_java_lang_String])(_r0.o, _r1.o, _r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("SAXParser.java", 462)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.namespaceAware_;
     _r5 = _r0;
     if (_r5.i == 0) { XMLVM_MEMCPY(curThread_w912aaac42b1c77->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c77, sizeof(XMLVM_JMP_BUF)); goto label307; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 464)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.reader_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
@@ -3198,6 +3336,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w912aaac42b1c79->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c79, sizeof(XMLVM_JMP_BUF)); goto label307; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 467)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.reader_;
     _r5 = _r0;
     _r0 = _r5;
@@ -3237,6 +3376,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w912aaac42b1c83)
     // Begin try
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     _r0 = _r5;
@@ -3256,17 +3396,20 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w912aaac42b1c85)
     // Begin try
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.lexicalHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1c85->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c85, sizeof(XMLVM_JMP_BUF)); goto label307; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 478)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.reader_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
     _r25.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getTextCharacters__])(_r5.o);
     XMLVM_SOURCE_POSITION("SAXParser.java", 479)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.lexicalHandler_;
     _r5 = _r0;
     _r7.i = 0;
@@ -3292,17 +3435,20 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w912aaac42b1c87)
     // Begin try
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1c87->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c87, sizeof(XMLVM_JMP_BUF)); goto label307; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 485)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.reader_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
     _r54.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getPITarget__])(_r5.o);
     XMLVM_SOURCE_POSITION("SAXParser.java", 486)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.reader_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
@@ -3324,6 +3470,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     // Begin try
     XMLVM_SOURCE_POSITION("SAXParser.java", 489)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     _r0 = _r5;
@@ -3344,17 +3491,20 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w912aaac42b1c91)
     // Begin try
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.lexicalHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1c91->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c91, sizeof(XMLVM_JMP_BUF)); goto label307; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 495)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.reader_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
     _r11.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getText__])(_r5.o);
     XMLVM_SOURCE_POSITION("SAXParser.java", 496)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.lexicalHandler_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
@@ -3372,17 +3522,20 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w912aaac42b1c93)
     // Begin try
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.lexicalHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1c93->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c93, sizeof(XMLVM_JMP_BUF)); goto label307; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 502)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.reader_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
     _r11.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getText__])(_r5.o);
     XMLVM_SOURCE_POSITION("SAXParser.java", 503)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.lexicalHandler_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
@@ -3400,47 +3553,57 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w912aaac42b1c95)
     // Begin try
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.reader_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
     _r5.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getEncoding__])(_r5.o);
     _r0 = _r5;
     _r1 = _r57;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.encoding_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXParser.java", 508)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.reader_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
     _r5.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getVersion__])(_r5.o);
     _r0 = _r5;
     _r1 = _r57;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.xmlVersion_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXParser.java", 509)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.reader_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
     _r5.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_isStandalone__])(_r5.o);
     _r0 = _r5;
     _r1 = _r57;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.xmlStandalone_ = _r0.i;
     XMLVM_SOURCE_POSITION("SAXParser.java", 510)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.reader_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
     _r5.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getCharacterEncodingScheme__])(_r5.o);
     _r0 = _r5;
     _r1 = _r57;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.xmlEncoding_ = _r0.o;
     XMLVM_SOURCE_POSITION("SAXParser.java", 511)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1c95->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c95, sizeof(XMLVM_JMP_BUF)); goto label1187; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 512)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
@@ -3471,11 +3634,13 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w912aaac42b1c99)
     // Begin try
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1c99->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1c99, sizeof(XMLVM_JMP_BUF)); goto label307; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 517)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
@@ -3493,30 +3658,37 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w912aaac42b1d101)
     // Begin try
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.parser_;
     _r5 = _r0;
     _r0 = _r5;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_XMLParser*) _r0.o)->fields.gnu_xml_stream_XMLParser.doctype_;
     _r30 = _r0;
     XMLVM_SOURCE_POSITION("SAXParser.java", 521)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.lexicalHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1d101->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1d101, sizeof(XMLVM_JMP_BUF)); goto label1258; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 523)
     _r0 = _r30;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r0.o)->fields.gnu_xml_stream_XMLParser_Doctype.rootName_;
     _r51 = _r0;
     XMLVM_SOURCE_POSITION("SAXParser.java", 524)
     _r0 = _r30;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r0.o)->fields.gnu_xml_stream_XMLParser_Doctype.publicId_;
     _r49 = _r0;
     XMLVM_SOURCE_POSITION("SAXParser.java", 525)
     _r0 = _r30;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_XMLParser_Doctype*) _r0.o)->fields.gnu_xml_stream_XMLParser_Doctype.systemId_;
     _r53 = _r0;
     XMLVM_SOURCE_POSITION("SAXParser.java", 526)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.lexicalHandler_;
     _r5 = _r0;
     _r0 = _r5;
@@ -3575,6 +3747,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_SOURCE_POSITION("SAXParser.java", 533)
     XMLVM_SOURCE_POSITION("SAXParser.java", 536)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.declHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1d105->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1d105, sizeof(XMLVM_JMP_BUF)); goto label1262; };
@@ -3585,9 +3758,11 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     _r40.o = gnu_xml_stream_XMLParser_Doctype_getElementModel___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SAXParser.java", 540)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.declHandler_;
     _r5 = _r0;
     _r0 = _r40;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_XMLParser_ContentModel*) _r0.o)->fields.gnu_xml_stream_XMLParser_ContentModel.text_;
     _r7 = _r0;
     XMLVM_CHECK_NPE(5)
@@ -3610,6 +3785,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w912aaac42b1d107->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1d107, sizeof(XMLVM_JMP_BUF)); goto label1407; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 546)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.declHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1d107->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1d107, sizeof(XMLVM_JMP_BUF)); goto label1262; };
@@ -3646,15 +3822,18 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     _r29.o = _r29.o;
     XMLVM_SOURCE_POSITION("SAXParser.java", 555)
     _r0 = _r29;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_XMLParser_AttributeDecl*) _r0.o)->fields.gnu_xml_stream_XMLParser_AttributeDecl.type_;
     _r13 = _r0;
     XMLVM_SOURCE_POSITION("SAXParser.java", 556)
     _r0 = _r29;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_XMLParser_AttributeDecl*) _r0.o)->fields.gnu_xml_stream_XMLParser_AttributeDecl.value_;
     _r15 = _r0;
     _r14.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("SAXParser.java", 558)
     _r0 = _r29;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((gnu_xml_stream_XMLParser_AttributeDecl*) _r0.o)->fields.gnu_xml_stream_XMLParser_AttributeDecl.valueType_;
     _r5 = _r0;
     switch (_r5.i) {
@@ -3674,6 +3853,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     // Begin try
     XMLVM_SOURCE_POSITION("SAXParser.java", 570)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.declHandler_;
     _r10 = _r0;
     XMLVM_CHECK_NPE(10)
@@ -3751,11 +3931,13 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     if (_r5.i == 0) { XMLVM_MEMCPY(curThread_w912aaac42b1d119->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1d119, sizeof(XMLVM_JMP_BUF)); goto label1451; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 581)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.declHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1d119->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1d119, sizeof(XMLVM_JMP_BUF)); goto label1262; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 582)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.declHandler_;
     _r5 = _r0;
     _r33.o = _r33.o;
@@ -3781,28 +3963,34 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     _r37 = _r0;
     XMLVM_SOURCE_POSITION("SAXParser.java", 589)
     _r0 = _r37;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_XMLParser_ExternalIds*) _r0.o)->fields.gnu_xml_stream_XMLParser_ExternalIds.notationName_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1d121->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1d121, sizeof(XMLVM_JMP_BUF)); goto label1507; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 591)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.dtdHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1d121->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1d121, sizeof(XMLVM_JMP_BUF)); goto label1262; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 593)
     _r0 = _r37;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_XMLParser_ExternalIds*) _r0.o)->fields.gnu_xml_stream_XMLParser_ExternalIds.publicId_;
     _r48 = _r0;
     XMLVM_SOURCE_POSITION("SAXParser.java", 594)
     _r0 = _r37;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_XMLParser_ExternalIds*) _r0.o)->fields.gnu_xml_stream_XMLParser_ExternalIds.systemId_;
     _r56 = _r0;
     XMLVM_SOURCE_POSITION("SAXParser.java", 595)
     _r0 = _r37;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_XMLParser_ExternalIds*) _r0.o)->fields.gnu_xml_stream_XMLParser_ExternalIds.notationName_;
     _r42 = _r0;
     XMLVM_SOURCE_POSITION("SAXParser.java", 596)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.dtdHandler_;
     _r5 = _r0;
     _r0 = _r5;
@@ -3825,19 +4013,23 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w912aaac42b1d123)
     // Begin try
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.declHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1d123->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1d123, sizeof(XMLVM_JMP_BUF)); goto label1262; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 606)
     _r0 = _r37;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_XMLParser_ExternalIds*) _r0.o)->fields.gnu_xml_stream_XMLParser_ExternalIds.publicId_;
     _r48 = _r0;
     XMLVM_SOURCE_POSITION("SAXParser.java", 607)
     _r0 = _r37;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_XMLParser_ExternalIds*) _r0.o)->fields.gnu_xml_stream_XMLParser_ExternalIds.systemId_;
     _r56 = _r0;
     XMLVM_SOURCE_POSITION("SAXParser.java", 608)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.declHandler_;
     _r5 = _r0;
     _r0 = _r5;
@@ -3864,6 +4056,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w912aaac42b1d125->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1d125, sizeof(XMLVM_JMP_BUF)); goto label1591; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 618)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.dtdHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1d125->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1d125, sizeof(XMLVM_JMP_BUF)); goto label1262; };
@@ -3874,14 +4067,17 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     _r37.o = gnu_xml_stream_XMLParser_Doctype_getNotation___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SAXParser.java", 622)
     _r0 = _r37;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_XMLParser_ExternalIds*) _r0.o)->fields.gnu_xml_stream_XMLParser_ExternalIds.publicId_;
     _r48 = _r0;
     XMLVM_SOURCE_POSITION("SAXParser.java", 623)
     _r0 = _r37;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_XMLParser_ExternalIds*) _r0.o)->fields.gnu_xml_stream_XMLParser_ExternalIds.systemId_;
     _r56 = _r0;
     XMLVM_SOURCE_POSITION("SAXParser.java", 624)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.dtdHandler_;
     _r5 = _r0;
     _r0 = _r5;
@@ -3908,6 +4104,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w912aaac42b1d127->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1d127, sizeof(XMLVM_JMP_BUF)); goto label1636; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 630)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.lexicalHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1d127->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1d127, sizeof(XMLVM_JMP_BUF)); goto label1262; };
@@ -3921,6 +4118,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     _r25.o = java_lang_String_toCharArray__(_r27.o);
     XMLVM_SOURCE_POSITION("SAXParser.java", 634)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.lexicalHandler_;
     _r5 = _r0;
     _r7.i = 0;
@@ -3951,6 +4149,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w912aaac42b1d129->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1d129, sizeof(XMLVM_JMP_BUF)); goto label1262; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 640)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1d129->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1d129, sizeof(XMLVM_JMP_BUF)); goto label1262; };
@@ -3986,6 +4185,7 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     // Begin try
     XMLVM_SOURCE_POSITION("SAXParser.java", 647)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.contentHandler_;
     _r5 = _r0;
     _r0 = _r5;
@@ -4006,11 +4206,13 @@ void gnu_xml_stream_SAXParser_parse___org_xml_sax_InputSource(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w912aaac42b1d133)
     // Begin try
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.lexicalHandler_;
     _r5 = _r0;
     if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w912aaac42b1d133->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w912aaac42b1d133, sizeof(XMLVM_JMP_BUF)); goto label307; };
     XMLVM_SOURCE_POSITION("SAXParser.java", 652)
     _r0 = _r57;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r0.o)->fields.gnu_xml_stream_SAXParser.lexicalHandler_;
     _r5 = _r0;
     XMLVM_CHECK_NPE(5)
@@ -4111,6 +4313,7 @@ JAVA_BOOLEAN gnu_xml_stream_SAXParser_isIgnorableWhitespace___gnu_xml_stream_XML
     _r13.i = n3;
     _r9.i = 0;
     XMLVM_SOURCE_POSITION("SAXParser.java", 695)
+    XMLVM_CHECK_NPE(11)
     _r3.o = ((gnu_xml_stream_XMLParser*) _r11.o)->fields.gnu_xml_stream_XMLParser.doctype_;
     if (_r3.o != JAVA_NULL) goto label7;
     XMLVM_SOURCE_POSITION("SAXParser.java", 696)
@@ -4175,6 +4378,7 @@ JAVA_BOOLEAN gnu_xml_stream_SAXParser_isIgnorableWhitespace___gnu_xml_stream_XML
     _r5.o = gnu_xml_stream_XMLParser_Doctype_getElementModel___java_lang_String(_r3.o, _r2.o);
     if (_r5.o == JAVA_NULL) goto label74;
     XMLVM_SOURCE_POSITION("SAXParser.java", 712)
+    XMLVM_CHECK_NPE(5)
     _r7.i = ((gnu_xml_stream_XMLParser_ContentModel*) _r5.o)->fields.gnu_xml_stream_XMLParser_ContentModel.type_;
     _r8.i = 2;
     if (_r7.i == _r8.i) goto label76;
@@ -4184,8 +4388,10 @@ JAVA_BOOLEAN gnu_xml_stream_SAXParser_isIgnorableWhitespace___gnu_xml_stream_XML
     goto label6;
     label76:;
     XMLVM_SOURCE_POSITION("SAXParser.java", 714)
+    XMLVM_CHECK_NPE(5)
     _r7.i = ((gnu_xml_stream_XMLParser_ContentModel*) _r5.o)->fields.gnu_xml_stream_XMLParser_ContentModel.external_;
     if (_r7.i == 0) goto label86;
+    XMLVM_CHECK_NPE(10)
     _r7.i = ((gnu_xml_stream_SAXParser*) _r10.o)->fields.gnu_xml_stream_SAXParser.xmlStandalone_;
     if (_r7.i == 0) goto label86;
     _r7 = _r9;
@@ -4273,6 +4479,7 @@ JAVA_INT gnu_xml_stream_SAXParser_getIndex___java_lang_String(JAVA_OBJECT me, JA
     _r8.o = me;
     _r9.o = n1;
     XMLVM_SOURCE_POSITION("SAXParser.java", 741)
+    XMLVM_CHECK_NPE(8)
     _r6.o = ((gnu_xml_stream_SAXParser*) _r8.o)->fields.gnu_xml_stream_SAXParser.reader_;
     XMLVM_CHECK_NPE(6)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r6.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getAttributeCount__])(_r6.o);
@@ -4281,6 +4488,7 @@ JAVA_INT gnu_xml_stream_SAXParser_getIndex___java_lang_String(JAVA_OBJECT me, JA
     XMLVM_SOURCE_POSITION("SAXParser.java", 742)
     if (_r0.i >= _r1.i) goto label68;
     XMLVM_SOURCE_POSITION("SAXParser.java", 744)
+    XMLVM_CHECK_NPE(8)
     _r6.o = ((gnu_xml_stream_SAXParser*) _r8.o)->fields.gnu_xml_stream_SAXParser.reader_;
     XMLVM_CHECK_NPE(6)
     _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r6.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getAttributeName___int])(_r6.o, _r0.i);
@@ -4353,6 +4561,7 @@ JAVA_INT gnu_xml_stream_SAXParser_getIndex___java_lang_String_java_lang_String(J
     _r7.o = n1;
     _r8.o = n2;
     XMLVM_SOURCE_POSITION("SAXParser.java", 756)
+    XMLVM_CHECK_NPE(6)
     _r5.o = ((gnu_xml_stream_SAXParser*) _r6.o)->fields.gnu_xml_stream_SAXParser.reader_;
     XMLVM_CHECK_NPE(5)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getAttributeCount__])(_r5.o);
@@ -4361,6 +4570,7 @@ JAVA_INT gnu_xml_stream_SAXParser_getIndex___java_lang_String_java_lang_String(J
     XMLVM_SOURCE_POSITION("SAXParser.java", 757)
     if (_r0.i >= _r1.i) goto label46;
     XMLVM_SOURCE_POSITION("SAXParser.java", 759)
+    XMLVM_CHECK_NPE(6)
     _r5.o = ((gnu_xml_stream_SAXParser*) _r6.o)->fields.gnu_xml_stream_SAXParser.reader_;
     XMLVM_CHECK_NPE(5)
     _r3.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getAttributeName___int])(_r5.o, _r0.i);
@@ -4409,6 +4619,7 @@ JAVA_INT gnu_xml_stream_SAXParser_getLength__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXParser.java", 774)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.reader_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getAttributeCount__])(_r0.o);
@@ -4427,6 +4638,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getLocalName___int(JAVA_OBJECT me, JAVA_INT
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("SAXParser.java", 779)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.reader_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getAttributeLocalName___int])(_r0.o, _r2.i);
@@ -4449,6 +4661,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getQName___int(JAVA_OBJECT me, JAVA_INT n1)
     _r5.o = me;
     _r6.i = n1;
     XMLVM_SOURCE_POSITION("SAXParser.java", 784)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((gnu_xml_stream_SAXParser*) _r5.o)->fields.gnu_xml_stream_SAXParser.reader_;
     XMLVM_CHECK_NPE(3)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getAttributeName___int])(_r3.o, _r6.i);
@@ -4499,6 +4712,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getType___int(JAVA_OBJECT me, JAVA_INT n1)
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("SAXParser.java", 792)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.reader_;
     XMLVM_CHECK_NPE(1)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getAttributeType___int])(_r1.o, _r3.i);
@@ -4591,6 +4805,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getURI___int(JAVA_OBJECT me, JAVA_INT n1)
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("SAXParser.java", 811)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.reader_;
     XMLVM_CHECK_NPE(1)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getAttributeNamespace___int])(_r1.o, _r3.i);
@@ -4617,6 +4832,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getValue___int(JAVA_OBJECT me, JAVA_INT n1)
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("SAXParser.java", 817)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.reader_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getAttributeValue___int])(_r0.o, _r2.i);
@@ -4695,6 +4911,7 @@ JAVA_BOOLEAN gnu_xml_stream_SAXParser_isDeclared___int(JAVA_OBJECT me, JAVA_INT 
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("SAXParser.java", 834)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.parser_;
     XMLVM_CHECK_NPE(0)
     _r0.i = gnu_xml_stream_XMLParser_isAttributeDeclared___int(_r0.o, _r2.i);
@@ -4773,6 +4990,7 @@ JAVA_BOOLEAN gnu_xml_stream_SAXParser_isSpecified___int(JAVA_OBJECT me, JAVA_INT
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("SAXParser.java", 851)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.reader_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_isAttributeSpecified___int])(_r0.o, _r2.i);
@@ -4850,6 +5068,7 @@ JAVA_INT gnu_xml_stream_SAXParser_getColumnNumber__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("SAXParser.java", 870)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.reader_;
     XMLVM_CHECK_NPE(1)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getLocation__])(_r1.o);
@@ -4870,6 +5089,7 @@ JAVA_INT gnu_xml_stream_SAXParser_getLineNumber__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("SAXParser.java", 876)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.reader_;
     XMLVM_CHECK_NPE(1)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getLocation__])(_r1.o);
@@ -4890,6 +5110,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getPublicId__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("SAXParser.java", 882)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.reader_;
     XMLVM_CHECK_NPE(1)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getLocation__])(_r1.o);
@@ -4910,6 +5131,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getSystemId__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("SAXParser.java", 888)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_stream_SAXParser*) _r2.o)->fields.gnu_xml_stream_SAXParser.reader_;
     XMLVM_CHECK_NPE(1)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_stream_XMLStreamReader_getLocation__])(_r1.o);
@@ -4929,6 +5151,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getEncoding__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXParser.java", 894)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.encoding_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -4943,6 +5166,7 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_getXMLVersion__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXParser.java", 899)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_stream_SAXParser*) _r1.o)->fields.gnu_xml_stream_SAXParser.xmlVersion_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -4970,11 +5194,13 @@ JAVA_OBJECT gnu_xml_stream_SAXParser_resolveEntity___java_lang_String_java_lang_
     _r9.o = n3;
     _r10.o = n4;
     XMLVM_SOURCE_POSITION("SAXParser.java", 908)
+    XMLVM_CHECK_NPE(6)
     _r5.o = ((gnu_xml_stream_SAXParser*) _r6.o)->fields.gnu_xml_stream_SAXParser.entityResolver_;
     if (_r5.o == JAVA_NULL) goto label66;
     XMLVM_TRY_BEGIN(w912aaac69b1b9)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXParser.java", 912)
+    XMLVM_CHECK_NPE(6)
     _r5.o = ((gnu_xml_stream_SAXParser*) _r6.o)->fields.gnu_xml_stream_SAXParser.entityResolver_;
     XMLVM_CHECK_NPE(5)
     _r3.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_EntityResolver_resolveEntity___java_lang_String_java_lang_String])(_r5.o, _r7.o, _r8.o);
@@ -5101,11 +5327,13 @@ void gnu_xml_stream_SAXParser_report___java_lang_String_java_lang_String_java_la
     _r7.o = n3;
     _r8.o = n4;
     XMLVM_SOURCE_POSITION("SAXParser.java", 962)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_stream_SAXParser*) _r4.o)->fields.gnu_xml_stream_SAXParser.errorHandler_;
     if (_r2.o == JAVA_NULL) goto label14;
     XMLVM_TRY_BEGIN(w912aaac72b1b9)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXParser.java", 966)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_stream_SAXParser*) _r4.o)->fields.gnu_xml_stream_SAXParser.errorHandler_;
     _r3.o = __NEW_org_xml_sax_SAXParseException();
     XMLVM_CHECK_NPE(3)

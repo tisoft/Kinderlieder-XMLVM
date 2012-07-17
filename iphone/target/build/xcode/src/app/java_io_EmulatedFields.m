@@ -609,6 +609,7 @@ void java_io_EmulatedFields___INIT____java_io_ObjectStreamField_1ARRAY_java_io_O
     XMLVM_CHECK_NPE(0)
     java_io_EmulatedFields_buildSlots___java_io_ObjectStreamField_1ARRAY(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 84)
+    XMLVM_CHECK_NPE(0)
     ((java_io_EmulatedFields*) _r0.o)->fields.java_io_EmulatedFields.declaredFields_ = _r2.o;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 85)
     XMLVM_EXIT_METHOD()
@@ -631,6 +632,7 @@ void java_io_EmulatedFields_buildSlots___java_io_ObjectStreamField_1ARRAY(JAVA_O
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r4.o));
     if (!__TIB_java_io_EmulatedFields_ObjectSlot.classInitialized) __INIT_java_io_EmulatedFields_ObjectSlot();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_io_EmulatedFields_ObjectSlot, _r0.i);
+    XMLVM_CHECK_NPE(3)
     ((java_io_EmulatedFields*) _r3.o)->fields.java_io_EmulatedFields.slotsToSerialize_ = _r0.o;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 97)
     _r0.i = 0;
@@ -646,6 +648,7 @@ void java_io_EmulatedFields_buildSlots___java_io_ObjectStreamField_1ARRAY(JAVA_O
     XMLVM_CHECK_NPE(1)
     java_io_EmulatedFields_ObjectSlot___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 99)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_io_EmulatedFields*) _r3.o)->fields.java_io_EmulatedFields.slotsToSerialize_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
@@ -654,6 +657,7 @@ void java_io_EmulatedFields_buildSlots___java_io_ObjectStreamField_1ARRAY(JAVA_O
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r0.i);
     _r2.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r4.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
+    XMLVM_CHECK_NPE(1)
     ((java_io_EmulatedFields_ObjectSlot*) _r1.o)->fields.java_io_EmulatedFields_ObjectSlot.field_ = _r2.o;
     _r0.i = _r0.i + 1;
     goto label6;
@@ -682,6 +686,7 @@ JAVA_BOOLEAN java_io_EmulatedFields_defaulted___java_lang_String(JAVA_OBJECT me,
     XMLVM_THROW_CUSTOM(_r0.o)
     label13:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 124)
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.defaulted_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -716,15 +721,18 @@ JAVA_OBJECT java_io_EmulatedFields_findSlot___java_lang_String_java_lang_Class(J
     _r1 = _r4;
     label12:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 149)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_io_EmulatedFields*) _r6.o)->fields.java_io_EmulatedFields.slotsToSerialize_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     if (_r1.i < _r2.i) goto label31;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 171)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_io_EmulatedFields*) _r6.o)->fields.java_io_EmulatedFields.declaredFields_;
     if (_r1.o == JAVA_NULL) goto label27;
     _r1 = _r4;
     label22:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 172)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_io_EmulatedFields*) _r6.o)->fields.java_io_EmulatedFields.declaredFields_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     if (_r1.i < _r2.i) goto label80;
@@ -739,11 +747,13 @@ JAVA_OBJECT java_io_EmulatedFields_findSlot___java_lang_String_java_lang_Class(J
     goto label11;
     label31:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 150)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_io_EmulatedFields*) _r6.o)->fields.java_io_EmulatedFields.slotsToSerialize_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
     _r2.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 151)
+    XMLVM_CHECK_NPE(2)
     _r3.o = ((java_io_EmulatedFields_ObjectSlot*) _r2.o)->fields.java_io_EmulatedFields_ObjectSlot.field_;
     XMLVM_CHECK_NPE(3)
     _r3.o = java_io_ObjectStreamField_getName__(_r3.o);
@@ -754,6 +764,7 @@ JAVA_OBJECT java_io_EmulatedFields_findSlot___java_lang_String_java_lang_Class(J
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 152)
     if (_r0.i == 0) goto label59;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 155)
+    XMLVM_CHECK_NPE(2)
     _r3.o = ((java_io_EmulatedFields_ObjectSlot*) _r2.o)->fields.java_io_EmulatedFields_ObjectSlot.field_;
     XMLVM_CHECK_NPE(3)
     _r3.o = java_io_ObjectStreamField_getType__(_r3.o);
@@ -769,6 +780,7 @@ JAVA_OBJECT java_io_EmulatedFields_findSlot___java_lang_String_java_lang_Class(J
     goto label28;
     label63:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 164)
+    XMLVM_CHECK_NPE(2)
     _r3.o = ((java_io_EmulatedFields_ObjectSlot*) _r2.o)->fields.java_io_EmulatedFields_ObjectSlot.field_;
     XMLVM_CHECK_NPE(3)
     _r3.o = java_io_ObjectStreamField_getType__(_r3.o);
@@ -783,6 +795,7 @@ JAVA_OBJECT java_io_EmulatedFields_findSlot___java_lang_String_java_lang_Class(J
     goto label12;
     label80:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 173)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_io_EmulatedFields*) _r6.o)->fields.java_io_EmulatedFields.declaredFields_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -805,8 +818,10 @@ JAVA_OBJECT java_io_EmulatedFields_findSlot___java_lang_String_java_lang_Class(J
     XMLVM_CHECK_NPE(0)
     java_io_EmulatedFields_ObjectSlot___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 180)
+    XMLVM_CHECK_NPE(0)
     ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.field_ = _r2.o;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 181)
+    XMLVM_CHECK_NPE(0)
     ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.defaulted_ = _r5.i;
     goto label28;
     label112:;
@@ -849,6 +864,7 @@ JAVA_BYTE java_io_EmulatedFields_get___java_lang_String_byte(JAVA_OBJECT me, JAV
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 212)
+    XMLVM_CHECK_NPE(0)
     _r1.i = ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.defaulted_;
     if (_r1.i == 0) goto label20;
     _r0 = _r4;
@@ -857,6 +873,7 @@ JAVA_BYTE java_io_EmulatedFields_get___java_lang_String_byte(JAVA_OBJECT me, JAV
     return _r0.i;
     label20:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 213)
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.fieldValue_;
     _r2.o = _r2.o;
     //java_lang_Byte_byteValue__[6]
@@ -891,6 +908,7 @@ JAVA_CHAR java_io_EmulatedFields_get___java_lang_String_char(JAVA_OBJECT me, JAV
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 238)
+    XMLVM_CHECK_NPE(0)
     _r1.i = ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.defaulted_;
     if (_r1.i == 0) goto label20;
     _r0 = _r4;
@@ -899,6 +917,7 @@ JAVA_CHAR java_io_EmulatedFields_get___java_lang_String_char(JAVA_OBJECT me, JAV
     return _r0.i;
     label20:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 239)
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.fieldValue_;
     _r2.o = _r2.o;
     XMLVM_CHECK_NPE(2)
@@ -933,6 +952,7 @@ JAVA_DOUBLE java_io_EmulatedFields_get___java_lang_String_double(JAVA_OBJECT me,
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 264)
+    XMLVM_CHECK_NPE(0)
     _r1.i = ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.defaulted_;
     if (_r1.i == 0) goto label20;
     _r0 = _r4;
@@ -941,6 +961,7 @@ JAVA_DOUBLE java_io_EmulatedFields_get___java_lang_String_double(JAVA_OBJECT me,
     return _r0.d;
     label20:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 265)
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.fieldValue_;
     _r2.o = _r2.o;
     //java_lang_Double_doubleValue__[7]
@@ -975,6 +996,7 @@ JAVA_FLOAT java_io_EmulatedFields_get___java_lang_String_float(JAVA_OBJECT me, J
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 290)
+    XMLVM_CHECK_NPE(0)
     _r1.i = ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.defaulted_;
     if (_r1.i == 0) goto label20;
     _r0 = _r4;
@@ -983,6 +1005,7 @@ JAVA_FLOAT java_io_EmulatedFields_get___java_lang_String_float(JAVA_OBJECT me, J
     return _r0.f;
     label20:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 291)
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.fieldValue_;
     _r2.o = _r2.o;
     //java_lang_Float_floatValue__[8]
@@ -1017,6 +1040,7 @@ JAVA_INT java_io_EmulatedFields_get___java_lang_String_int(JAVA_OBJECT me, JAVA_
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 316)
+    XMLVM_CHECK_NPE(0)
     _r1.i = ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.defaulted_;
     if (_r1.i == 0) goto label20;
     _r0 = _r4;
@@ -1025,6 +1049,7 @@ JAVA_INT java_io_EmulatedFields_get___java_lang_String_int(JAVA_OBJECT me, JAVA_
     return _r0.i;
     label20:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 317)
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.fieldValue_;
     _r2.o = _r2.o;
     //java_lang_Integer_intValue__[9]
@@ -1060,6 +1085,7 @@ JAVA_LONG java_io_EmulatedFields_get___java_lang_String_long(JAVA_OBJECT me, JAV
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 342)
+    XMLVM_CHECK_NPE(0)
     _r1.i = ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.defaulted_;
     if (_r1.i == 0) goto label20;
     _r0 = _r4;
@@ -1068,6 +1094,7 @@ JAVA_LONG java_io_EmulatedFields_get___java_lang_String_long(JAVA_OBJECT me, JAV
     return _r0.l;
     label20:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 343)
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.fieldValue_;
     _r2.o = _r2.o;
     //java_lang_Long_longValue__[10]
@@ -1095,6 +1122,7 @@ JAVA_OBJECT java_io_EmulatedFields_get___java_lang_String_java_lang_Object(JAVA_
     _r0.o = java_io_EmulatedFields_findSlot___java_lang_String_java_lang_Class(_r2.o, _r3.o, _r0.o);
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 365)
     if (_r0.o == JAVA_NULL) goto label19;
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.field_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_io_ObjectStreamField_getType__(_r1.o);
@@ -1109,6 +1137,7 @@ JAVA_OBJECT java_io_EmulatedFields_get___java_lang_String_java_lang_Object(JAVA_
     XMLVM_THROW_CUSTOM(_r0.o)
     label25:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 368)
+    XMLVM_CHECK_NPE(0)
     _r1.i = ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.defaulted_;
     if (_r1.i == 0) goto label31;
     _r0 = _r4;
@@ -1116,6 +1145,7 @@ JAVA_OBJECT java_io_EmulatedFields_get___java_lang_String_java_lang_Object(JAVA_
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label31:;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.fieldValue_;
     goto label30;
     //XMLVM_END_WRAPPER
@@ -1146,6 +1176,7 @@ JAVA_SHORT java_io_EmulatedFields_get___java_lang_String_short(JAVA_OBJECT me, J
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 393)
+    XMLVM_CHECK_NPE(0)
     _r1.i = ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.defaulted_;
     if (_r1.i == 0) goto label20;
     _r0 = _r4;
@@ -1154,6 +1185,7 @@ JAVA_SHORT java_io_EmulatedFields_get___java_lang_String_short(JAVA_OBJECT me, J
     return _r0.i;
     label20:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 394)
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.fieldValue_;
     _r2.o = _r2.o;
     //java_lang_Short_shortValue__[11]
@@ -1188,6 +1220,7 @@ JAVA_BOOLEAN java_io_EmulatedFields_get___java_lang_String_boolean(JAVA_OBJECT m
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 419)
+    XMLVM_CHECK_NPE(0)
     _r1.i = ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.defaulted_;
     if (_r1.i == 0) goto label20;
     _r0 = _r4;
@@ -1196,6 +1229,7 @@ JAVA_BOOLEAN java_io_EmulatedFields_get___java_lang_String_boolean(JAVA_OBJECT m
     return _r0.i;
     label20:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 420)
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.fieldValue_;
     _r2.o = _r2.o;
     XMLVM_CHECK_NPE(2)
@@ -1230,9 +1264,11 @@ void java_io_EmulatedFields_put___java_lang_String_byte(JAVA_OBJECT me, JAVA_OBJ
     label14:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 440)
     _r1.o = java_lang_Byte_valueOf___byte(_r4.i);
+    XMLVM_CHECK_NPE(0)
     ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.fieldValue_ = _r1.o;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 441)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(0)
     ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.defaulted_ = _r1.i;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 442)
     XMLVM_EXIT_METHOD()
@@ -1266,9 +1302,11 @@ void java_io_EmulatedFields_put___java_lang_String_char(JAVA_OBJECT me, JAVA_OBJ
     label14:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 461)
     _r1.o = java_lang_Character_valueOf___char(_r4.i);
+    XMLVM_CHECK_NPE(0)
     ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.fieldValue_ = _r1.o;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 462)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(0)
     ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.defaulted_ = _r1.i;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 463)
     XMLVM_EXIT_METHOD()
@@ -1303,9 +1341,11 @@ void java_io_EmulatedFields_put___java_lang_String_double(JAVA_OBJECT me, JAVA_O
     label14:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 482)
     _r1.o = java_lang_Double_valueOf___double(_r4.d);
+    XMLVM_CHECK_NPE(0)
     ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.fieldValue_ = _r1.o;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 483)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(0)
     ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.defaulted_ = _r1.i;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 484)
     XMLVM_EXIT_METHOD()
@@ -1339,9 +1379,11 @@ void java_io_EmulatedFields_put___java_lang_String_float(JAVA_OBJECT me, JAVA_OB
     label14:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 503)
     _r1.o = java_lang_Float_valueOf___float(_r4.f);
+    XMLVM_CHECK_NPE(0)
     ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.fieldValue_ = _r1.o;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 504)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(0)
     ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.defaulted_ = _r1.i;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 505)
     XMLVM_EXIT_METHOD()
@@ -1375,9 +1417,11 @@ void java_io_EmulatedFields_put___java_lang_String_int(JAVA_OBJECT me, JAVA_OBJE
     label14:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 524)
     _r1.o = java_lang_Integer_valueOf___int(_r4.i);
+    XMLVM_CHECK_NPE(0)
     ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.fieldValue_ = _r1.o;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 525)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(0)
     ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.defaulted_ = _r1.i;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 526)
     XMLVM_EXIT_METHOD()
@@ -1412,9 +1456,11 @@ void java_io_EmulatedFields_put___java_lang_String_long(JAVA_OBJECT me, JAVA_OBJ
     label14:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 545)
     _r1.o = java_lang_Long_valueOf___long(_r4.l);
+    XMLVM_CHECK_NPE(0)
     ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.fieldValue_ = _r1.o;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 546)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(0)
     ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.defaulted_ = _r1.i;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 547)
     XMLVM_EXIT_METHOD()
@@ -1455,9 +1501,11 @@ void java_io_EmulatedFields_put___java_lang_String_java_lang_Object(JAVA_OBJECT 
     XMLVM_THROW_CUSTOM(_r0.o)
     label19:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 570)
+    XMLVM_CHECK_NPE(0)
     ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.fieldValue_ = _r4.o;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 571)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(0)
     ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.defaulted_ = _r1.i;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 572)
     XMLVM_EXIT_METHOD()
@@ -1491,9 +1539,11 @@ void java_io_EmulatedFields_put___java_lang_String_short(JAVA_OBJECT me, JAVA_OB
     label14:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 591)
     _r1.o = java_lang_Short_valueOf___short(_r4.i);
+    XMLVM_CHECK_NPE(0)
     ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.fieldValue_ = _r1.o;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 592)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(0)
     ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.defaulted_ = _r1.i;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 593)
     XMLVM_EXIT_METHOD()
@@ -1527,9 +1577,11 @@ void java_io_EmulatedFields_put___java_lang_String_boolean(JAVA_OBJECT me, JAVA_
     label14:;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 612)
     _r1.o = java_lang_Boolean_valueOf___boolean(_r4.i);
+    XMLVM_CHECK_NPE(0)
     ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.fieldValue_ = _r1.o;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 613)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(0)
     ((java_io_EmulatedFields_ObjectSlot*) _r0.o)->fields.java_io_EmulatedFields_ObjectSlot.defaulted_ = _r1.i;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 614)
     XMLVM_EXIT_METHOD()
@@ -1545,6 +1597,7 @@ JAVA_OBJECT java_io_EmulatedFields_slots__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("EmulatedFields.java", 622)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFields*) _r1.o)->fields.java_io_EmulatedFields.slotsToSerialize_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

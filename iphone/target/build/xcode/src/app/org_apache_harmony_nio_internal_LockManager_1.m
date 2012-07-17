@@ -221,6 +221,7 @@ void org_apache_harmony_nio_internal_LockManager_1___INIT____org_apache_harmony_
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("LockManager.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_nio_internal_LockManager_1*) _r0.o)->fields.org_apache_harmony_nio_internal_LockManager_1.this_0_ = _r1.o;
     XMLVM_SOURCE_POSITION("LockManager.java", 33)
     XMLVM_CHECK_NPE(0)

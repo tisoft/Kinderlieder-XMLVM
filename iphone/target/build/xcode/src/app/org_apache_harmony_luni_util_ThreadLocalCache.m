@@ -400,6 +400,7 @@ void org_apache_harmony_luni_util_ThreadLocalCache___INIT___(JAVA_OBJECT me)
     _r1.o = JAVA_NULL;
     XMLVM_CHECK_NPE(0)
     java_lang_ref_SoftReference___INIT____java_lang_Object(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_util_ThreadLocalCache*) _r2.o)->fields.org_apache_harmony_luni_util_ThreadLocalCache.storage_ = _r0.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -415,6 +416,7 @@ JAVA_OBJECT org_apache_harmony_luni_util_ThreadLocalCache_getThreadLocal__(JAVA_
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("ThreadLocalCache.java", 37)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_util_ThreadLocalCache*) _r2.o)->fields.org_apache_harmony_luni_util_ThreadLocalCache.storage_;
     //java_lang_ref_SoftReference_get__[6]
     XMLVM_CHECK_NPE(0)
@@ -430,6 +432,7 @@ JAVA_OBJECT org_apache_harmony_luni_util_ThreadLocalCache_getThreadLocal__(JAVA_
     _r1.o = __NEW_java_lang_ref_SoftReference();
     XMLVM_CHECK_NPE(1)
     java_lang_ref_SoftReference___INIT____java_lang_Object(_r1.o, _r0.o);
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_util_ThreadLocalCache*) _r2.o)->fields.org_apache_harmony_luni_util_ThreadLocalCache.storage_ = _r1.o;
     label22:;
     XMLVM_SOURCE_POSITION("ThreadLocalCache.java", 46)
@@ -497,6 +500,7 @@ void org_apache_harmony_luni_util_ThreadLocalCache_remove__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ThreadLocalCache.java", 75)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_util_ThreadLocalCache*) _r1.o)->fields.org_apache_harmony_luni_util_ThreadLocalCache.storage_;
     XMLVM_CHECK_NPE(0)
     java_lang_ref_Reference_clear__(_r0.o);

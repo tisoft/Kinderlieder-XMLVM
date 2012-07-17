@@ -233,7 +233,9 @@ void my_kinderlieder_RootViewController_1___INIT____my_kinderlieder_RootViewCont
     _r1.o = n1;
     _r2.o = n2;
     XMLVM_SOURCE_POSITION("RootViewController.java", 26)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_RootViewController_1*) _r0.o)->fields.my_kinderlieder_RootViewController_1.this_0_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_RootViewController_1*) _r0.o)->fields.my_kinderlieder_RootViewController_1.val_window_ = _r2.o;
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
@@ -257,10 +259,12 @@ void my_kinderlieder_RootViewController_1_raiseEvent___org_xmlvm_iphone_UIContro
     _r5.i = n2;
     XMLVM_SOURCE_POSITION("RootViewController.java", 28)
     _r0.o = __NEW_my_kinderlieder_InfoViewController();
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((my_kinderlieder_RootViewController_1*) _r3.o)->fields.my_kinderlieder_RootViewController_1.val_window_;
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_InfoViewController___INIT____org_xmlvm_iphone_UIWindow(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("RootViewController.java", 29)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((my_kinderlieder_RootViewController_1*) _r3.o)->fields.my_kinderlieder_RootViewController_1.this_0_;
     XMLVM_CHECK_NPE(1)
     _r1.o = org_xmlvm_iphone_UIViewController_getNavigationController__(_r1.o);

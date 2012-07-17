@@ -281,6 +281,7 @@ void gnu_xml_xpath_Constant___INIT____java_lang_Object(JAVA_OBJECT me, JAVA_OBJE
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_Expr___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Constant.java", 56)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_Constant*) _r0.o)->fields.gnu_xml_xpath_Constant.value_ = _r1.o;
     XMLVM_SOURCE_POSITION("Constant.java", 57)
     XMLVM_EXIT_METHOD()
@@ -302,6 +303,7 @@ JAVA_OBJECT gnu_xml_xpath_Constant_evaluate___org_w3c_dom_Node_int_int(JAVA_OBJE
     _r3.i = n2;
     _r4.i = n3;
     XMLVM_SOURCE_POSITION("Constant.java", 61)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_Constant*) _r1.o)->fields.gnu_xml_xpath_Constant.value_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -320,6 +322,7 @@ JAVA_OBJECT gnu_xml_xpath_Constant_clone___java_lang_Object(JAVA_OBJECT me, JAVA
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Constant.java", 66)
     _r0.o = __NEW_gnu_xml_xpath_Constant();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_Constant*) _r2.o)->fields.gnu_xml_xpath_Constant.value_;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_Constant___INIT____java_lang_Object(_r0.o, _r1.o);
@@ -358,11 +361,13 @@ JAVA_OBJECT gnu_xml_xpath_Constant_toString__(JAVA_OBJECT me)
     _r4.i = 34;
     _r3.i = 39;
     XMLVM_SOURCE_POSITION("Constant.java", 76)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_xpath_Constant*) _r5.o)->fields.gnu_xml_xpath_Constant.value_;
     //java_lang_Object_toString__[5]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_Object*) _r0.o)->tib->vtable[5])(_r0.o);
     XMLVM_SOURCE_POSITION("Constant.java", 77)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_xml_xpath_Constant*) _r5.o)->fields.gnu_xml_xpath_Constant.value_;
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
     _r1.i = XMLVM_ISA(_r1.o, __CLASS_java_lang_String);
@@ -406,6 +411,7 @@ JAVA_OBJECT gnu_xml_xpath_Constant_toString__(JAVA_OBJECT me)
     goto label44;
     label67:;
     XMLVM_SOURCE_POSITION("Constant.java", 88)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_xml_xpath_Constant*) _r5.o)->fields.gnu_xml_xpath_Constant.value_;
     if (!__TIB_java_lang_Double.classInitialized) __INIT_java_lang_Double();
     _r1.i = XMLVM_ISA(_r1.o, __CLASS_java_lang_Double);

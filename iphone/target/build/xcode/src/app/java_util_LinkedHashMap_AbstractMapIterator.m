@@ -286,12 +286,16 @@ void java_util_LinkedHashMap_AbstractMapIterator___INIT____java_util_LinkedHashM
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 147)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_HashMap*) _r2.o)->fields.java_util_HashMap.modCount_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedHashMap_AbstractMapIterator*) _r1.o)->fields.java_util_LinkedHashMap_AbstractMapIterator.expectedModCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 148)
     _r0.o = java_util_LinkedHashMap_access$0___java_util_LinkedHashMap(_r2.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedHashMap_AbstractMapIterator*) _r1.o)->fields.java_util_LinkedHashMap_AbstractMapIterator.futureEntry_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 149)
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedHashMap_AbstractMapIterator*) _r1.o)->fields.java_util_LinkedHashMap_AbstractMapIterator.associatedMap_ = _r2.o;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 150)
     XMLVM_EXIT_METHOD()
@@ -307,6 +311,7 @@ JAVA_BOOLEAN java_util_LinkedHashMap_AbstractMapIterator_hasNext__(JAVA_OBJECT m
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 153)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_LinkedHashMap_AbstractMapIterator*) _r1.o)->fields.java_util_LinkedHashMap_AbstractMapIterator.futureEntry_;
     if (_r0.o == JAVA_NULL) goto label6;
     _r0.i = 1;
@@ -328,8 +333,11 @@ void java_util_LinkedHashMap_AbstractMapIterator_checkConcurrentMod__(JAVA_OBJEC
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 157)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_LinkedHashMap_AbstractMapIterator*) _r2.o)->fields.java_util_LinkedHashMap_AbstractMapIterator.expectedModCount_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_LinkedHashMap_AbstractMapIterator*) _r2.o)->fields.java_util_LinkedHashMap_AbstractMapIterator.associatedMap_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_HashMap*) _r1.o)->fields.java_util_HashMap.modCount_;
     if (_r0.i == _r1.i) goto label14;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 158)
@@ -365,11 +373,16 @@ void java_util_LinkedHashMap_AbstractMapIterator_makeNext__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label15:;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 167)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_LinkedHashMap_AbstractMapIterator*) _r1.o)->fields.java_util_LinkedHashMap_AbstractMapIterator.futureEntry_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedHashMap_AbstractMapIterator*) _r1.o)->fields.java_util_LinkedHashMap_AbstractMapIterator.currentEntry_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 168)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_LinkedHashMap_AbstractMapIterator*) _r1.o)->fields.java_util_LinkedHashMap_AbstractMapIterator.futureEntry_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedHashMap_LinkedHashMapEntry*) _r0.o)->fields.java_util_LinkedHashMap_LinkedHashMapEntry.chainForward_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedHashMap_AbstractMapIterator*) _r1.o)->fields.java_util_LinkedHashMap_AbstractMapIterator.futureEntry_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 169)
     XMLVM_EXIT_METHOD()
@@ -392,6 +405,7 @@ void java_util_LinkedHashMap_AbstractMapIterator_remove__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(4)
     java_util_LinkedHashMap_AbstractMapIterator_checkConcurrentMod__(_r4.o);
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 173)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_LinkedHashMap_AbstractMapIterator*) _r4.o)->fields.java_util_LinkedHashMap_AbstractMapIterator.currentEntry_;
     if (_r0.o != JAVA_NULL) goto label14;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 174)
@@ -401,32 +415,43 @@ void java_util_LinkedHashMap_AbstractMapIterator_remove__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 176)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_LinkedHashMap_AbstractMapIterator*) _r4.o)->fields.java_util_LinkedHashMap_AbstractMapIterator.associatedMap_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_LinkedHashMap_AbstractMapIterator*) _r4.o)->fields.java_util_LinkedHashMap_AbstractMapIterator.currentEntry_;
     XMLVM_CHECK_NPE(0)
     java_util_HashMap_removeEntry___java_util_HashMap_Entry(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 177)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_LinkedHashMap_AbstractMapIterator*) _r4.o)->fields.java_util_LinkedHashMap_AbstractMapIterator.currentEntry_;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 178)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((java_util_LinkedHashMap_LinkedHashMapEntry*) _r0.o)->fields.java_util_LinkedHashMap_LinkedHashMapEntry.chainBackward_;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 179)
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_LinkedHashMap_LinkedHashMapEntry*) _r0.o)->fields.java_util_LinkedHashMap_LinkedHashMapEntry.chainForward_;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 180)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_LinkedHashMap_AbstractMapIterator*) _r4.o)->fields.java_util_LinkedHashMap_AbstractMapIterator.associatedMap_;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 181)
     if (_r1.o == JAVA_NULL) goto label50;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 182)
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedHashMap_LinkedHashMapEntry*) _r1.o)->fields.java_util_LinkedHashMap_LinkedHashMapEntry.chainForward_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 183)
     if (_r0.o == JAVA_NULL) goto label46;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 184)
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedHashMap_LinkedHashMapEntry*) _r0.o)->fields.java_util_LinkedHashMap_LinkedHashMapEntry.chainBackward_ = _r1.o;
     label37:;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 196)
+    XMLVM_CHECK_NPE(4)
     ((java_util_LinkedHashMap_AbstractMapIterator*) _r4.o)->fields.java_util_LinkedHashMap_AbstractMapIterator.currentEntry_ = _r3.o;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 197)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_LinkedHashMap_AbstractMapIterator*) _r4.o)->fields.java_util_LinkedHashMap_AbstractMapIterator.expectedModCount_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_util_LinkedHashMap_AbstractMapIterator*) _r4.o)->fields.java_util_LinkedHashMap_AbstractMapIterator.expectedModCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 198)
     XMLVM_EXIT_METHOD()
@@ -441,6 +466,7 @@ void java_util_LinkedHashMap_AbstractMapIterator_remove__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 190)
     if (_r0.o == JAVA_NULL) goto label58;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 191)
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedHashMap_LinkedHashMapEntry*) _r0.o)->fields.java_util_LinkedHashMap_LinkedHashMapEntry.chainBackward_ = _r3.o;
     goto label37;
     label58:;

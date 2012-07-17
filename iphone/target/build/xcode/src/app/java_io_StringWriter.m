@@ -426,9 +426,12 @@ void java_io_StringWriter___INIT___(JAVA_OBJECT me)
     _r1.i = 16;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuffer___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(2)
     ((java_io_StringWriter*) _r2.o)->fields.java_io_StringWriter.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("StringWriter.java", 41)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_StringWriter*) _r2.o)->fields.java_io_StringWriter.buf_;
+    XMLVM_CHECK_NPE(2)
     ((java_io_Writer*) _r2.o)->fields.java_io_Writer.lock_ = _r0.o;
     XMLVM_SOURCE_POSITION("StringWriter.java", 42)
     XMLVM_EXIT_METHOD()
@@ -460,9 +463,12 @@ void java_io_StringWriter___INIT____int(JAVA_OBJECT me, JAVA_INT n1)
     _r0.o = __NEW_java_lang_StringBuffer();
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuffer___INIT____int(_r0.o, _r2.i);
+    XMLVM_CHECK_NPE(1)
     ((java_io_StringWriter*) _r1.o)->fields.java_io_StringWriter.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("StringWriter.java", 58)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_StringWriter*) _r1.o)->fields.java_io_StringWriter.buf_;
+    XMLVM_CHECK_NPE(1)
     ((java_io_Writer*) _r1.o)->fields.java_io_Writer.lock_ = _r0.o;
     XMLVM_SOURCE_POSITION("StringWriter.java", 59)
     XMLVM_EXIT_METHOD()
@@ -502,6 +508,7 @@ JAVA_OBJECT java_io_StringWriter_getBuffer__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("StringWriter.java", 89)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_StringWriter*) _r1.o)->fields.java_io_StringWriter.buf_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -516,6 +523,7 @@ JAVA_OBJECT java_io_StringWriter_toString__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("StringWriter.java", 99)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_StringWriter*) _r1.o)->fields.java_io_StringWriter.buf_;
     //java_lang_StringBuffer_toString__[5]
     XMLVM_CHECK_NPE(0)
@@ -562,6 +570,7 @@ void java_io_StringWriter_write___char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJEC
     return;
     label20:;
     XMLVM_SOURCE_POSITION("StringWriter.java", 126)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_StringWriter*) _r1.o)->fields.java_io_StringWriter.buf_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuffer_append___char_1ARRAY_int_int(_r0.o, _r2.o, _r3.i, _r4.i);
@@ -580,6 +589,7 @@ void java_io_StringWriter_write___int(JAVA_OBJECT me, JAVA_INT n1)
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("StringWriter.java", 138)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_StringWriter*) _r2.o)->fields.java_io_StringWriter.buf_;
     _r1.i = _r3.i & 0xffff;
     //java_lang_StringBuffer_append___char[21]
@@ -601,6 +611,7 @@ void java_io_StringWriter_write___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("StringWriter.java", 150)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_StringWriter*) _r1.o)->fields.java_io_StringWriter.buf_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuffer_append___java_lang_String(_r0.o, _r2.o);
@@ -629,6 +640,7 @@ void java_io_StringWriter_write___java_lang_String_int_int(JAVA_OBJECT me, JAVA_
     XMLVM_CHECK_NPE(3)
     _r0.o = java_lang_String_substring___int_int(_r3.o, _r4.i, _r0.i);
     XMLVM_SOURCE_POSITION("StringWriter.java", 170)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_io_StringWriter*) _r2.o)->fields.java_io_StringWriter.buf_;
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuffer_append___java_lang_String(_r1.o, _r0.o);

@@ -216,10 +216,13 @@ void java_util_LinkedList_Link___INIT____java_lang_Object_java_util_LinkedList_L
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("LinkedList.java", 49)
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.data_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 50)
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.previous_ = _r2.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 51)
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedList_Link*) _r0.o)->fields.java_util_LinkedList_Link.next_ = _r3.o;
     XMLVM_SOURCE_POSITION("LinkedList.java", 52)
     XMLVM_EXIT_METHOD()

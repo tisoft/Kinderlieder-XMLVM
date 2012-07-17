@@ -362,8 +362,10 @@ void java_net_Proxy___INIT____java_net_Proxy_Type_java_net_SocketAddress(JAVA_OB
     XMLVM_THROW_CUSTOM(_r0.o)
     label21:;
     XMLVM_SOURCE_POSITION("Proxy.java", 67)
+    XMLVM_CHECK_NPE(2)
     ((java_net_Proxy*) _r2.o)->fields.java_net_Proxy.type_ = _r3.o;
     XMLVM_SOURCE_POSITION("Proxy.java", 68)
+    XMLVM_CHECK_NPE(2)
     ((java_net_Proxy*) _r2.o)->fields.java_net_Proxy.address_ = _r4.o;
     XMLVM_SOURCE_POSITION("Proxy.java", 69)
     XMLVM_EXIT_METHOD()
@@ -383,9 +385,11 @@ void java_net_Proxy___INIT___(JAVA_OBJECT me)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("Proxy.java", 76)
     _r0.o = java_net_Proxy_Type_GET_DIRECT();
+    XMLVM_CHECK_NPE(1)
     ((java_net_Proxy*) _r1.o)->fields.java_net_Proxy.type_ = _r0.o;
     XMLVM_SOURCE_POSITION("Proxy.java", 77)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(1)
     ((java_net_Proxy*) _r1.o)->fields.java_net_Proxy.address_ = _r0.o;
     XMLVM_SOURCE_POSITION("Proxy.java", 78)
     XMLVM_EXIT_METHOD()
@@ -401,6 +405,7 @@ JAVA_OBJECT java_net_Proxy_type__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Proxy.java", 86)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_Proxy*) _r1.o)->fields.java_net_Proxy.type_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -415,6 +420,7 @@ JAVA_OBJECT java_net_Proxy_address__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Proxy.java", 96)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_Proxy*) _r1.o)->fields.java_net_Proxy.address_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -435,9 +441,11 @@ JAVA_OBJECT java_net_Proxy_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Proxy.java", 109)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_Proxy*) _r3.o)->fields.java_net_Proxy.type_;
     if (_r1.o == JAVA_NULL) goto label18;
     XMLVM_SOURCE_POSITION("Proxy.java", 110)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_Proxy*) _r3.o)->fields.java_net_Proxy.type_;
     //java_net_Proxy_Type_toString__[5]
     XMLVM_CHECK_NPE(1)
@@ -451,12 +459,15 @@ JAVA_OBJECT java_net_Proxy_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("Proxy.java", 113)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_Proxy*) _r3.o)->fields.java_net_Proxy.type_;
     _r2.o = java_net_Proxy_Type_GET_DIRECT();
     if (_r1.o == _r2.o) goto label42;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_Proxy*) _r3.o)->fields.java_net_Proxy.address_;
     if (_r1.o == JAVA_NULL) goto label42;
     XMLVM_SOURCE_POSITION("Proxy.java", 114)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_Proxy*) _r3.o)->fields.java_net_Proxy.address_;
     //java_lang_Object_toString__[5]
     XMLVM_CHECK_NPE(1)
@@ -506,10 +517,14 @@ JAVA_BOOLEAN java_net_Proxy_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJEC
     label12:;
     XMLVM_SOURCE_POSITION("Proxy.java", 139)
     _r5.o = _r5.o;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_Proxy*) _r4.o)->fields.java_net_Proxy.type_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_Proxy*) _r5.o)->fields.java_net_Proxy.type_;
     if (_r0.o != _r1.o) goto label32;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_net_Proxy*) _r4.o)->fields.java_net_Proxy.address_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_net_Proxy*) _r5.o)->fields.java_net_Proxy.address_;
     //java_lang_Object_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -534,15 +549,18 @@ JAVA_INT java_net_Proxy_hashCode__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Proxy.java", 151)
     _r0.i = 0;
     XMLVM_SOURCE_POSITION("Proxy.java", 152)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_Proxy*) _r2.o)->fields.java_net_Proxy.type_;
     //java_net_Proxy_Type_hashCode__[4]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_net_Proxy_Type*) _r1.o)->tib->vtable[4])(_r1.o);
     _r0.i = _r0.i + _r1.i;
     XMLVM_SOURCE_POSITION("Proxy.java", 153)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_Proxy*) _r2.o)->fields.java_net_Proxy.address_;
     if (_r1.o == JAVA_NULL) goto label19;
     XMLVM_SOURCE_POSITION("Proxy.java", 154)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_Proxy*) _r2.o)->fields.java_net_Proxy.address_;
     //java_lang_Object_hashCode__[4]
     XMLVM_CHECK_NPE(1)

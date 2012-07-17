@@ -327,6 +327,7 @@ void java_util_Hashtable_6___INIT____java_util_Hashtable(JAVA_OBJECT me, JAVA_OB
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("Hashtable.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Hashtable_6*) _r0.o)->fields.java_util_Hashtable_6.this_0_ = _r1.o;
     XMLVM_SOURCE_POSITION("Hashtable.java", 602)
     XMLVM_CHECK_NPE(0)
@@ -346,6 +347,7 @@ JAVA_BOOLEAN java_util_Hashtable_6_contains___java_lang_Object(JAVA_OBJECT me, J
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Hashtable.java", 605)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Hashtable_6*) _r1.o)->fields.java_util_Hashtable_6.this_0_;
     //java_util_Hashtable_containsKey___java_lang_Object[14]
     XMLVM_CHECK_NPE(0)
@@ -363,7 +365,9 @@ JAVA_INT java_util_Hashtable_6_size__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Hashtable.java", 610)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Hashtable_6*) _r1.o)->fields.java_util_Hashtable_6.this_0_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_Hashtable*) _r0.o)->fields.java_util_Hashtable.elementCount_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -378,6 +382,7 @@ void java_util_Hashtable_6_clear__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Hashtable.java", 615)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Hashtable_6*) _r1.o)->fields.java_util_Hashtable_6.this_0_;
     //java_util_Hashtable_clear__[13]
     XMLVM_CHECK_NPE(0)
@@ -398,12 +403,14 @@ JAVA_BOOLEAN java_util_Hashtable_6_remove___java_lang_Object(JAVA_OBJECT me, JAV
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Hashtable.java", 620)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Hashtable_6*) _r1.o)->fields.java_util_Hashtable_6.this_0_;
     //java_util_Hashtable_containsKey___java_lang_Object[14]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Hashtable*) _r0.o)->tib->vtable[14])(_r0.o, _r2.o);
     if (_r0.i == 0) goto label15;
     XMLVM_SOURCE_POSITION("Hashtable.java", 621)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Hashtable_6*) _r1.o)->fields.java_util_Hashtable_6.this_0_;
     //java_util_Hashtable_remove___java_lang_Object[11]
     XMLVM_CHECK_NPE(0)
@@ -442,6 +449,7 @@ JAVA_OBJECT java_util_Hashtable_6_iterator__(JAVA_OBJECT me)
     return _r0.o;
     label11:;
     _r0.o = __NEW_java_util_Hashtable_HashEnumIterator();
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Hashtable_6*) _r3.o)->fields.java_util_Hashtable_6.this_0_;
     _r2.o = __NEW_java_util_Hashtable_6_1();
     XMLVM_CHECK_NPE(2)

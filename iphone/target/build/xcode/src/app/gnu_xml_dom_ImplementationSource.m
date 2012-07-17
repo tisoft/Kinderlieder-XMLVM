@@ -338,7 +338,7 @@ void gnu_xml_dom_ImplementationSource___CLINIT_()
     gnu_xml_dom_DomImpl___INIT___(_r1.o);
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_add___java_lang_Object])(_r0.o, _r1.o);
-    XMLVM_TRY_BEGIN(w33300aaab2b1b8)
+    XMLVM_TRY_BEGIN(w33305aaab2b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("ImplementationSource.java", 70)
     // "gnu.xml.libxmlj.dom.GnomeDocumentBuilder"
@@ -352,11 +352,11 @@ void gnu_xml_dom_ImplementationSource___CLINIT_()
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_add___java_lang_Object])(_r0.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w33300aaab2b1b8)
-        XMLVM_CATCH_SPECIFIC(w33300aaab2b1b8,java_lang_Exception,42)
-        XMLVM_CATCH_SPECIFIC(w33300aaab2b1b8,java_lang_UnsatisfiedLinkError,40)
-    XMLVM_CATCH_END(w33300aaab2b1b8)
-    XMLVM_RESTORE_EXCEPTION_ENV(w33300aaab2b1b8)
+    XMLVM_CATCH_BEGIN(w33305aaab2b1b8)
+        XMLVM_CATCH_SPECIFIC(w33305aaab2b1b8,java_lang_Exception,42)
+        XMLVM_CATCH_SPECIFIC(w33305aaab2b1b8,java_lang_UnsatisfiedLinkError,40)
+    XMLVM_CATCH_END(w33305aaab2b1b8)
+    XMLVM_RESTORE_EXCEPTION_ENV(w33305aaab2b1b8)
     label26:;
     XMLVM_SOURCE_POSITION("ImplementationSource.java", 81)
     XMLVM_CHECK_NPE(0)
@@ -372,13 +372,13 @@ void gnu_xml_dom_ImplementationSource___CLINIT_()
     XMLVM_EXIT_METHOD()
     return;
     label40:;
-    java_lang_Thread* curThread_w33300aaab2b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w33300aaab2b1c20->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w33305aaab2b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w33305aaab2b1c20->fields.java_lang_Thread.xmlvmException_;
     goto label26;
     label42:;
     XMLVM_SOURCE_POSITION("ImplementationSource.java", 73)
-    java_lang_Thread* curThread_w33300aaab2b1c24 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w33300aaab2b1c24->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w33305aaab2b1c24 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w33305aaab2b1c24->fields.java_lang_Thread.xmlvmException_;
     goto label26;
     //XMLVM_END_WRAPPER
 }

@@ -275,11 +275,13 @@ JAVA_INT java_util_regex_NegativeLookBehind_matches___int_java_lang_CharSequence
     _r7.o = n3;
     _r3.i = 0;
     XMLVM_SOURCE_POSITION("NegativeLookBehind.java", 42)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_JointSet*) _r4.o)->fields.java_util_regex_JointSet.children_;
     //java_util_ArrayList_size__[16]
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_util_ArrayList*) _r0.o)->tib->vtable[16])(_r0.o);
     XMLVM_SOURCE_POSITION("NegativeLookBehind.java", 47)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_regex_JointSet*) _r4.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(7)
     java_util_regex_MatchResultImpl_setConsumed___int_int(_r7.o, _r0.i, _r5.i);
@@ -288,6 +290,7 @@ JAVA_INT java_util_regex_NegativeLookBehind_matches___int_java_lang_CharSequence
     XMLVM_SOURCE_POSITION("NegativeLookBehind.java", 49)
     if (_r2.i < _r1.i) goto label22;
     XMLVM_SOURCE_POSITION("NegativeLookBehind.java", 60)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_AbstractSet*) _r4.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -297,6 +300,7 @@ JAVA_INT java_util_regex_NegativeLookBehind_matches___int_java_lang_CharSequence
     return _r0.i;
     label22:;
     XMLVM_SOURCE_POSITION("NegativeLookBehind.java", 50)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_JointSet*) _r4.o)->fields.java_util_regex_JointSet.children_;
     //java_util_ArrayList_get___int[21]
     XMLVM_CHECK_NPE(0)

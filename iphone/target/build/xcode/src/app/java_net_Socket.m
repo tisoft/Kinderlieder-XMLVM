@@ -1311,22 +1311,29 @@ void java_net_Socket___INIT___(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("Socket.java", 41)
+    XMLVM_CHECK_NPE(2)
     ((java_net_Socket*) _r2.o)->fields.java_net_Socket.isCreated_ = _r0.i;
     XMLVM_SOURCE_POSITION("Socket.java", 43)
+    XMLVM_CHECK_NPE(2)
     ((java_net_Socket*) _r2.o)->fields.java_net_Socket.isBound_ = _r0.i;
     XMLVM_SOURCE_POSITION("Socket.java", 45)
+    XMLVM_CHECK_NPE(2)
     ((java_net_Socket*) _r2.o)->fields.java_net_Socket.isConnected_ = _r0.i;
     XMLVM_SOURCE_POSITION("Socket.java", 47)
+    XMLVM_CHECK_NPE(2)
     ((java_net_Socket*) _r2.o)->fields.java_net_Socket.isClosed_ = _r0.i;
     XMLVM_SOURCE_POSITION("Socket.java", 49)
+    XMLVM_CHECK_NPE(2)
     ((java_net_Socket*) _r2.o)->fields.java_net_Socket.isInputShutdown_ = _r0.i;
     XMLVM_SOURCE_POSITION("Socket.java", 51)
+    XMLVM_CHECK_NPE(2)
     ((java_net_Socket*) _r2.o)->fields.java_net_Socket.isOutputShutdown_ = _r0.i;
     XMLVM_SOURCE_POSITION("Socket.java", 56)
     _r0.o = __NEW_java_net_Socket_ConnectLock();
     _r1.o = JAVA_NULL;
     XMLVM_CHECK_NPE(0)
     java_net_Socket_ConnectLock___INIT____java_net_Socket_1(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((java_net_Socket*) _r2.o)->fields.java_net_Socket.connectLock_ = _r0.o;
     XMLVM_SOURCE_POSITION("Socket.java", 81)
     _r0.o = java_net_Socket_GET_factory();
@@ -1335,6 +1342,7 @@ void java_net_Socket___INIT___(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_net_SocketImplFactory_createSocketImpl__])(_r0.o);
     label34:;
+    XMLVM_CHECK_NPE(2)
     ((java_net_Socket*) _r2.o)->fields.java_net_Socket.impl_ = _r0.o;
     XMLVM_SOURCE_POSITION("Socket.java", 83)
     XMLVM_EXIT_METHOD()
@@ -1366,22 +1374,29 @@ void java_net_Socket___INIT____java_net_Proxy(JAVA_OBJECT me, JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(6)
     java_lang_Object___INIT___(_r6.o);
     XMLVM_SOURCE_POSITION("Socket.java", 41)
+    XMLVM_CHECK_NPE(6)
     ((java_net_Socket*) _r6.o)->fields.java_net_Socket.isCreated_ = _r4.i;
     XMLVM_SOURCE_POSITION("Socket.java", 43)
+    XMLVM_CHECK_NPE(6)
     ((java_net_Socket*) _r6.o)->fields.java_net_Socket.isBound_ = _r4.i;
     XMLVM_SOURCE_POSITION("Socket.java", 45)
+    XMLVM_CHECK_NPE(6)
     ((java_net_Socket*) _r6.o)->fields.java_net_Socket.isConnected_ = _r4.i;
     XMLVM_SOURCE_POSITION("Socket.java", 47)
+    XMLVM_CHECK_NPE(6)
     ((java_net_Socket*) _r6.o)->fields.java_net_Socket.isClosed_ = _r4.i;
     XMLVM_SOURCE_POSITION("Socket.java", 49)
+    XMLVM_CHECK_NPE(6)
     ((java_net_Socket*) _r6.o)->fields.java_net_Socket.isInputShutdown_ = _r4.i;
     XMLVM_SOURCE_POSITION("Socket.java", 51)
+    XMLVM_CHECK_NPE(6)
     ((java_net_Socket*) _r6.o)->fields.java_net_Socket.isOutputShutdown_ = _r4.i;
     XMLVM_SOURCE_POSITION("Socket.java", 56)
     _r4.o = __NEW_java_net_Socket_ConnectLock();
     _r5.o = JAVA_NULL;
     XMLVM_CHECK_NPE(4)
     java_net_Socket_ConnectLock___INIT____java_net_Socket_1(_r4.o, _r5.o);
+    XMLVM_CHECK_NPE(6)
     ((java_net_Socket*) _r6.o)->fields.java_net_Socket.connectLock_ = _r4.o;
     XMLVM_SOURCE_POSITION("Socket.java", 108)
     if (_r7.o == JAVA_NULL) goto label34;
@@ -1429,8 +1444,10 @@ void java_net_Socket___INIT____java_net_Proxy(JAVA_OBJECT me, JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(4)
     _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r4.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_net_SocketImplFactory_createSocketImpl__])(_r4.o);
     label81:;
+    XMLVM_CHECK_NPE(6)
     ((java_net_Socket*) _r6.o)->fields.java_net_Socket.impl_ = _r4.o;
     XMLVM_SOURCE_POSITION("Socket.java", 126)
+    XMLVM_CHECK_NPE(6)
     ((java_net_Socket*) _r6.o)->fields.java_net_Socket.proxy_ = _r7.o;
     XMLVM_SOURCE_POSITION("Socket.java", 127)
     XMLVM_EXIT_METHOD()
@@ -1700,24 +1717,32 @@ void java_net_Socket___INIT____java_net_SocketImpl(JAVA_OBJECT me, JAVA_OBJECT n
     XMLVM_CHECK_NPE(2)
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("Socket.java", 41)
+    XMLVM_CHECK_NPE(2)
     ((java_net_Socket*) _r2.o)->fields.java_net_Socket.isCreated_ = _r0.i;
     XMLVM_SOURCE_POSITION("Socket.java", 43)
+    XMLVM_CHECK_NPE(2)
     ((java_net_Socket*) _r2.o)->fields.java_net_Socket.isBound_ = _r0.i;
     XMLVM_SOURCE_POSITION("Socket.java", 45)
+    XMLVM_CHECK_NPE(2)
     ((java_net_Socket*) _r2.o)->fields.java_net_Socket.isConnected_ = _r0.i;
     XMLVM_SOURCE_POSITION("Socket.java", 47)
+    XMLVM_CHECK_NPE(2)
     ((java_net_Socket*) _r2.o)->fields.java_net_Socket.isClosed_ = _r0.i;
     XMLVM_SOURCE_POSITION("Socket.java", 49)
+    XMLVM_CHECK_NPE(2)
     ((java_net_Socket*) _r2.o)->fields.java_net_Socket.isInputShutdown_ = _r0.i;
     XMLVM_SOURCE_POSITION("Socket.java", 51)
+    XMLVM_CHECK_NPE(2)
     ((java_net_Socket*) _r2.o)->fields.java_net_Socket.isOutputShutdown_ = _r0.i;
     XMLVM_SOURCE_POSITION("Socket.java", 56)
     _r0.o = __NEW_java_net_Socket_ConnectLock();
     _r1.o = JAVA_NULL;
     XMLVM_CHECK_NPE(0)
     java_net_Socket_ConnectLock___INIT____java_net_Socket_1(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((java_net_Socket*) _r2.o)->fields.java_net_Socket.connectLock_ = _r0.o;
     XMLVM_SOURCE_POSITION("Socket.java", 304)
+    XMLVM_CHECK_NPE(2)
     ((java_net_Socket*) _r2.o)->fields.java_net_Socket.impl_ = _r3.o;
     XMLVM_SOURCE_POSITION("Socket.java", 305)
     XMLVM_EXIT_METHOD()
@@ -1797,27 +1822,29 @@ void java_net_Socket_close__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Socket.java", 346)
     java_lang_Object_acquireLockRecursive__(_r1.o);
     _r0.i = 1;
-    XMLVM_TRY_BEGIN(w36061aaac25b1b5)
+    XMLVM_TRY_BEGIN(w36066aaac25b1b5)
     // Begin try
+    XMLVM_CHECK_NPE(1)
     ((java_net_Socket*) _r1.o)->fields.java_net_Socket.isClosed_ = _r0.i;
     XMLVM_SOURCE_POSITION("Socket.java", 347)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_Socket*) _r1.o)->fields.java_net_Socket.impl_;
     //java_net_SocketImpl_close__[9]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) ((java_net_SocketImpl*) _r0.o)->tib->vtable[9])(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac25b1b5)
-        XMLVM_CATCH_SPECIFIC(w36061aaac25b1b5,java_lang_Object,11)
-    XMLVM_CATCH_END(w36061aaac25b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac25b1b5)
+    XMLVM_CATCH_BEGIN(w36066aaac25b1b5)
+        XMLVM_CATCH_SPECIFIC(w36066aaac25b1b5,java_lang_Object,11)
+    XMLVM_CATCH_END(w36066aaac25b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac25b1b5)
     XMLVM_SOURCE_POSITION("Socket.java", 348)
     java_lang_Object_releaseLockRecursive__(_r1.o);
     XMLVM_EXIT_METHOD()
     return;
     label11:;
-    java_lang_Thread* curThread_w36061aaac25b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w36061aaac25b1c10->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36066aaac25b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w36066aaac25b1c10->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r1.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER
@@ -1841,6 +1868,7 @@ JAVA_OBJECT java_net_Socket_getInetAddress__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label8:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_Socket*) _r1.o)->fields.java_net_Socket.impl_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_net_SocketImpl_getInetAddress__(_r0.o);
@@ -1874,6 +1902,7 @@ JAVA_OBJECT java_net_Socket_getInputStream__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label22:;
     XMLVM_SOURCE_POSITION("Socket.java", 376)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_Socket*) _r2.o)->fields.java_net_Socket.impl_;
     //java_net_SocketImpl_getInputStream__[14]
     XMLVM_CHECK_NPE(0)
@@ -1896,6 +1925,7 @@ JAVA_BOOLEAN java_net_Socket_getKeepAlive__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_net_Socket_checkClosedAndCreate___boolean(_r2.o, _r0.i);
     XMLVM_SOURCE_POSITION("Socket.java", 390)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_Socket*) _r2.o)->fields.java_net_Socket.impl_;
     _r1.i = 8;
     //java_net_SocketImpl_getOption___int[15]
@@ -1930,7 +1960,9 @@ JAVA_OBJECT java_net_Socket_getLocalAddress__(JAVA_OBJECT me)
     return _r0.o;
     label9:;
     _r0.o = org_apache_harmony_luni_platform_Platform_getNetworkSystem__();
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_Socket*) _r3.o)->fields.java_net_Socket.impl_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_net_SocketImpl*) _r1.o)->fields.java_net_SocketImpl.fd_;
     _r2.i = java_net_InetAddress_preferIPv6Addresses__();
     XMLVM_CHECK_NPE(0)
@@ -1957,6 +1989,7 @@ JAVA_INT java_net_Socket_getLocalPort__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label8:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_Socket*) _r1.o)->fields.java_net_Socket.impl_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_net_SocketImpl_getLocalPort__(_r0.o);
@@ -1990,6 +2023,7 @@ JAVA_OBJECT java_net_Socket_getOutputStream__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label22:;
     XMLVM_SOURCE_POSITION("Socket.java", 434)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_Socket*) _r2.o)->fields.java_net_Socket.impl_;
     //java_net_SocketImpl_getOutputStream__[16]
     XMLVM_CHECK_NPE(0)
@@ -2017,6 +2051,7 @@ JAVA_INT java_net_Socket_getPort__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label8:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_Socket*) _r1.o)->fields.java_net_Socket.impl_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_net_SocketImpl_getPort__(_r0.o);
@@ -2037,6 +2072,7 @@ JAVA_INT java_net_Socket_getSoLinger__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_net_Socket_checkClosedAndCreate___boolean(_r2.o, _r0.i);
     XMLVM_SOURCE_POSITION("Socket.java", 461)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_Socket*) _r2.o)->fields.java_net_Socket.impl_;
     _r1.i = 128;
     //java_net_SocketImpl_getOption___int[15]
@@ -2062,11 +2098,12 @@ JAVA_INT java_net_Socket_getReceiveBufferSize__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Socket.java", 473)
     java_lang_Object_acquireLockRecursive__(_r2.o);
     _r0.i = 1;
-    XMLVM_TRY_BEGIN(w36061aaac34b1b5)
+    XMLVM_TRY_BEGIN(w36066aaac34b1b5)
     // Begin try
     XMLVM_CHECK_NPE(2)
     java_net_Socket_checkClosedAndCreate___boolean(_r2.o, _r0.i);
     XMLVM_SOURCE_POSITION("Socket.java", 474)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_Socket*) _r2.o)->fields.java_net_Socket.impl_;
     _r1.i = 4098;
     //java_net_SocketImpl_getOption___int[15]
@@ -2078,16 +2115,16 @@ JAVA_INT java_net_Socket_getReceiveBufferSize__(JAVA_OBJECT me)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_Integer*) _r0.o)->tib->vtable[9])(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac34b1b5)
-        XMLVM_CATCH_SPECIFIC(w36061aaac34b1b5,java_lang_Object,21)
-    XMLVM_CATCH_END(w36061aaac34b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac34b1b5)
+    XMLVM_CATCH_BEGIN(w36066aaac34b1b5)
+        XMLVM_CATCH_SPECIFIC(w36066aaac34b1b5,java_lang_Object,21)
+    XMLVM_CATCH_END(w36066aaac34b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac34b1b5)
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label21:;
-    java_lang_Thread* curThread_w36061aaac34b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w36061aaac34b1b9->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36066aaac34b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w36066aaac34b1b9->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER
@@ -2104,11 +2141,12 @@ JAVA_INT java_net_Socket_getSendBufferSize__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Socket.java", 486)
     java_lang_Object_acquireLockRecursive__(_r2.o);
     _r0.i = 1;
-    XMLVM_TRY_BEGIN(w36061aaac35b1b5)
+    XMLVM_TRY_BEGIN(w36066aaac35b1b5)
     // Begin try
     XMLVM_CHECK_NPE(2)
     java_net_Socket_checkClosedAndCreate___boolean(_r2.o, _r0.i);
     XMLVM_SOURCE_POSITION("Socket.java", 487)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_Socket*) _r2.o)->fields.java_net_Socket.impl_;
     _r1.i = 4097;
     //java_net_SocketImpl_getOption___int[15]
@@ -2120,16 +2158,16 @@ JAVA_INT java_net_Socket_getSendBufferSize__(JAVA_OBJECT me)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_Integer*) _r0.o)->tib->vtable[9])(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac35b1b5)
-        XMLVM_CATCH_SPECIFIC(w36061aaac35b1b5,java_lang_Object,21)
-    XMLVM_CATCH_END(w36061aaac35b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac35b1b5)
+    XMLVM_CATCH_BEGIN(w36066aaac35b1b5)
+        XMLVM_CATCH_SPECIFIC(w36066aaac35b1b5,java_lang_Object,21)
+    XMLVM_CATCH_END(w36066aaac35b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac35b1b5)
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label21:;
-    java_lang_Thread* curThread_w36061aaac35b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w36061aaac35b1b9->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36066aaac35b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w36066aaac35b1b9->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER
@@ -2146,11 +2184,12 @@ JAVA_INT java_net_Socket_getSoTimeout__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Socket.java", 501)
     java_lang_Object_acquireLockRecursive__(_r2.o);
     _r0.i = 1;
-    XMLVM_TRY_BEGIN(w36061aaac36b1b5)
+    XMLVM_TRY_BEGIN(w36066aaac36b1b5)
     // Begin try
     XMLVM_CHECK_NPE(2)
     java_net_Socket_checkClosedAndCreate___boolean(_r2.o, _r0.i);
     XMLVM_SOURCE_POSITION("Socket.java", 502)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_Socket*) _r2.o)->fields.java_net_Socket.impl_;
     _r1.i = 4102;
     //java_net_SocketImpl_getOption___int[15]
@@ -2162,16 +2201,16 @@ JAVA_INT java_net_Socket_getSoTimeout__(JAVA_OBJECT me)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_Integer*) _r0.o)->tib->vtable[9])(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac36b1b5)
-        XMLVM_CATCH_SPECIFIC(w36061aaac36b1b5,java_lang_Object,21)
-    XMLVM_CATCH_END(w36061aaac36b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac36b1b5)
+    XMLVM_CATCH_BEGIN(w36066aaac36b1b5)
+        XMLVM_CATCH_SPECIFIC(w36066aaac36b1b5,java_lang_Object,21)
+    XMLVM_CATCH_END(w36066aaac36b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac36b1b5)
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label21:;
-    java_lang_Thread* curThread_w36061aaac36b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w36061aaac36b1b9->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36066aaac36b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w36066aaac36b1b9->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER
@@ -2190,6 +2229,7 @@ JAVA_BOOLEAN java_net_Socket_getTcpNoDelay__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_net_Socket_checkClosedAndCreate___boolean(_r2.o, _r1.i);
     XMLVM_SOURCE_POSITION("Socket.java", 516)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_Socket*) _r2.o)->fields.java_net_Socket.impl_;
     //java_net_SocketImpl_getOption___int[15]
     XMLVM_CHECK_NPE(0)
@@ -2214,6 +2254,7 @@ void java_net_Socket_setKeepAlive___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
     _r3.o = me;
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("Socket.java", 530)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_net_Socket*) _r3.o)->fields.java_net_Socket.impl_;
     if (_r0.o == JAVA_NULL) goto label19;
     XMLVM_SOURCE_POSITION("Socket.java", 531)
@@ -2221,6 +2262,7 @@ void java_net_Socket_setKeepAlive___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
     XMLVM_CHECK_NPE(3)
     java_net_Socket_checkClosedAndCreate___boolean(_r3.o, _r0.i);
     XMLVM_SOURCE_POSITION("Socket.java", 532)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_net_Socket*) _r3.o)->fields.java_net_Socket.impl_;
     _r1.i = 8;
     if (_r4.i == 0) goto label20;
@@ -2254,26 +2296,26 @@ void java_net_Socket_setSocketImplFactory___java_net_SocketImplFactory(JAVA_OBJE
     if (!__TIB_java_net_Socket.classInitialized) __INIT_java_net_Socket();
     _r1.o = __CLASS_java_net_Socket;
     java_lang_Object_acquireLockRecursive__(_r1.o);
-    XMLVM_TRY_BEGIN(w36061aaac39b1b5)
+    XMLVM_TRY_BEGIN(w36066aaac39b1b5)
     // Begin try
     _r0.o = java_lang_System_getSecurityManager__();
-    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w36061aaac39b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36061aaac39b1b5, sizeof(XMLVM_JMP_BUF)); goto label12; };
+    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w36066aaac39b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36066aaac39b1b5, sizeof(XMLVM_JMP_BUF)); goto label12; };
     XMLVM_SOURCE_POSITION("Socket.java", 549)
     XMLVM_SOURCE_POSITION("Socket.java", 550)
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkSetFactory__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac39b1b5)
-        XMLVM_CATCH_SPECIFIC(w36061aaac39b1b5,java_lang_Object,28)
-    XMLVM_CATCH_END(w36061aaac39b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac39b1b5)
+    XMLVM_CATCH_BEGIN(w36066aaac39b1b5)
+        XMLVM_CATCH_SPECIFIC(w36066aaac39b1b5,java_lang_Object,28)
+    XMLVM_CATCH_END(w36066aaac39b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac39b1b5)
     label12:;
-    XMLVM_TRY_BEGIN(w36061aaac39b1b7)
+    XMLVM_TRY_BEGIN(w36066aaac39b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("Socket.java", 552)
     _r2.o = java_net_Socket_GET_factory();
-    if (_r2.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w36061aaac39b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36061aaac39b1b7, sizeof(XMLVM_JMP_BUF)); goto label31; };
+    if (_r2.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w36066aaac39b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36066aaac39b1b7, sizeof(XMLVM_JMP_BUF)); goto label31; };
     XMLVM_SOURCE_POSITION("Socket.java", 553)
     _r2.o = __NEW_java_net_SocketException();
     // "luni.5C"
@@ -2284,26 +2326,26 @@ void java_net_Socket_setSocketImplFactory___java_net_SocketImplFactory(JAVA_OBJE
     XMLVM_THROW_CUSTOM(_r2.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac39b1b7)
-        XMLVM_CATCH_SPECIFIC(w36061aaac39b1b7,java_lang_Object,28)
-    XMLVM_CATCH_END(w36061aaac39b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac39b1b7)
+    XMLVM_CATCH_BEGIN(w36066aaac39b1b7)
+        XMLVM_CATCH_SPECIFIC(w36066aaac39b1b7,java_lang_Object,28)
+    XMLVM_CATCH_END(w36066aaac39b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac39b1b7)
     label28:;
-    java_lang_Thread* curThread_w36061aaac39b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w36061aaac39b1b9->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36066aaac39b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w36066aaac39b1b9->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r1.o);
     XMLVM_THROW_CUSTOM(_r2.o)
     label31:;
-    XMLVM_TRY_BEGIN(w36061aaac39b1c13)
+    XMLVM_TRY_BEGIN(w36066aaac39b1c13)
     // Begin try
     XMLVM_SOURCE_POSITION("Socket.java", 555)
     java_net_Socket_PUT_factory( _r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac39b1c13)
-        XMLVM_CATCH_SPECIFIC(w36061aaac39b1c13,java_lang_Object,28)
-    XMLVM_CATCH_END(w36061aaac39b1c13)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac39b1c13)
+    XMLVM_CATCH_BEGIN(w36066aaac39b1c13)
+        XMLVM_CATCH_SPECIFIC(w36066aaac39b1c13,java_lang_Object,28)
+    XMLVM_CATCH_END(w36066aaac39b1c13)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac39b1c13)
     XMLVM_SOURCE_POSITION("Socket.java", 556)
     java_lang_Object_releaseLockRecursive__(_r1.o);
     XMLVM_EXIT_METHOD()
@@ -2326,12 +2368,12 @@ void java_net_Socket_setSendBufferSize___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("Socket.java", 570)
     java_lang_Object_acquireLockRecursive__(_r3.o);
     _r0.i = 1;
-    XMLVM_TRY_BEGIN(w36061aaac40b1b7)
+    XMLVM_TRY_BEGIN(w36066aaac40b1b7)
     // Begin try
     XMLVM_CHECK_NPE(3)
     java_net_Socket_checkClosedAndCreate___boolean(_r3.o, _r0.i);
     XMLVM_SOURCE_POSITION("Socket.java", 571)
-    if (_r4.i >= _r1.i) { XMLVM_MEMCPY(curThread_w36061aaac40b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36061aaac40b1b7, sizeof(XMLVM_JMP_BUF)); goto label23; };
+    if (_r4.i >= _r1.i) { XMLVM_MEMCPY(curThread_w36066aaac40b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36066aaac40b1b7, sizeof(XMLVM_JMP_BUF)); goto label23; };
     XMLVM_SOURCE_POSITION("Socket.java", 572)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.5A"
@@ -2342,19 +2384,20 @@ void java_net_Socket_setSendBufferSize___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac40b1b7)
-        XMLVM_CATCH_SPECIFIC(w36061aaac40b1b7,java_lang_Object,20)
-    XMLVM_CATCH_END(w36061aaac40b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac40b1b7)
+    XMLVM_CATCH_BEGIN(w36066aaac40b1b7)
+        XMLVM_CATCH_SPECIFIC(w36066aaac40b1b7,java_lang_Object,20)
+    XMLVM_CATCH_END(w36066aaac40b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac40b1b7)
     label20:;
-    java_lang_Thread* curThread_w36061aaac40b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w36061aaac40b1b9->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36066aaac40b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w36066aaac40b1b9->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r3.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label23:;
-    XMLVM_TRY_BEGIN(w36061aaac40b1c13)
+    XMLVM_TRY_BEGIN(w36066aaac40b1c13)
     // Begin try
     XMLVM_SOURCE_POSITION("Socket.java", 574)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_net_Socket*) _r3.o)->fields.java_net_Socket.impl_;
     _r1.i = 4097;
     _r2.o = java_lang_Integer_valueOf___int(_r4.i);
@@ -2363,10 +2406,10 @@ void java_net_Socket_setSendBufferSize___int(JAVA_OBJECT me, JAVA_INT n1)
     (*(void (*)(JAVA_OBJECT, JAVA_INT, JAVA_OBJECT)) ((java_net_SocketImpl*) _r0.o)->tib->vtable[19])(_r0.o, _r1.i, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac40b1c13)
-        XMLVM_CATCH_SPECIFIC(w36061aaac40b1c13,java_lang_Object,20)
-    XMLVM_CATCH_END(w36061aaac40b1c13)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac40b1c13)
+    XMLVM_CATCH_BEGIN(w36066aaac40b1c13)
+        XMLVM_CATCH_SPECIFIC(w36066aaac40b1c13,java_lang_Object,20)
+    XMLVM_CATCH_END(w36066aaac40b1c13)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac40b1c13)
     XMLVM_SOURCE_POSITION("Socket.java", 575)
     java_lang_Object_releaseLockRecursive__(_r3.o);
     XMLVM_EXIT_METHOD()
@@ -2389,12 +2432,12 @@ void java_net_Socket_setReceiveBufferSize___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("Socket.java", 590)
     java_lang_Object_acquireLockRecursive__(_r3.o);
     _r0.i = 1;
-    XMLVM_TRY_BEGIN(w36061aaac41b1b7)
+    XMLVM_TRY_BEGIN(w36066aaac41b1b7)
     // Begin try
     XMLVM_CHECK_NPE(3)
     java_net_Socket_checkClosedAndCreate___boolean(_r3.o, _r0.i);
     XMLVM_SOURCE_POSITION("Socket.java", 591)
-    if (_r4.i >= _r1.i) { XMLVM_MEMCPY(curThread_w36061aaac41b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36061aaac41b1b7, sizeof(XMLVM_JMP_BUF)); goto label23; };
+    if (_r4.i >= _r1.i) { XMLVM_MEMCPY(curThread_w36066aaac41b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36066aaac41b1b7, sizeof(XMLVM_JMP_BUF)); goto label23; };
     XMLVM_SOURCE_POSITION("Socket.java", 592)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.5A"
@@ -2405,19 +2448,20 @@ void java_net_Socket_setReceiveBufferSize___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac41b1b7)
-        XMLVM_CATCH_SPECIFIC(w36061aaac41b1b7,java_lang_Object,20)
-    XMLVM_CATCH_END(w36061aaac41b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac41b1b7)
+    XMLVM_CATCH_BEGIN(w36066aaac41b1b7)
+        XMLVM_CATCH_SPECIFIC(w36066aaac41b1b7,java_lang_Object,20)
+    XMLVM_CATCH_END(w36066aaac41b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac41b1b7)
     label20:;
-    java_lang_Thread* curThread_w36061aaac41b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w36061aaac41b1b9->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36066aaac41b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w36066aaac41b1b9->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r3.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label23:;
-    XMLVM_TRY_BEGIN(w36061aaac41b1c13)
+    XMLVM_TRY_BEGIN(w36066aaac41b1c13)
     // Begin try
     XMLVM_SOURCE_POSITION("Socket.java", 594)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_net_Socket*) _r3.o)->fields.java_net_Socket.impl_;
     _r1.i = 4098;
     _r2.o = java_lang_Integer_valueOf___int(_r4.i);
@@ -2426,10 +2470,10 @@ void java_net_Socket_setReceiveBufferSize___int(JAVA_OBJECT me, JAVA_INT n1)
     (*(void (*)(JAVA_OBJECT, JAVA_INT, JAVA_OBJECT)) ((java_net_SocketImpl*) _r0.o)->tib->vtable[19])(_r0.o, _r1.i, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac41b1c13)
-        XMLVM_CATCH_SPECIFIC(w36061aaac41b1c13,java_lang_Object,20)
-    XMLVM_CATCH_END(w36061aaac41b1c13)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac41b1c13)
+    XMLVM_CATCH_BEGIN(w36066aaac41b1c13)
+        XMLVM_CATCH_SPECIFIC(w36066aaac41b1c13,java_lang_Object,20)
+    XMLVM_CATCH_END(w36066aaac41b1c13)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac41b1c13)
     XMLVM_SOURCE_POSITION("Socket.java", 595)
     java_lang_Object_releaseLockRecursive__(_r3.o);
     XMLVM_EXIT_METHOD()
@@ -2474,6 +2518,7 @@ void java_net_Socket_setSoLinger___boolean_int(JAVA_OBJECT me, JAVA_BOOLEAN n1, 
     _r0 = _r2;
     label28:;
     XMLVM_SOURCE_POSITION("Socket.java", 616)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_net_Socket*) _r4.o)->fields.java_net_Socket.impl_;
     _r2.i = 128;
     _r3.o = java_lang_Integer_valueOf___int(_r0.i);
@@ -2507,12 +2552,12 @@ void java_net_Socket_setSoTimeout___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("Socket.java", 633)
     java_lang_Object_acquireLockRecursive__(_r3.o);
     _r0.i = 1;
-    XMLVM_TRY_BEGIN(w36061aaac43b1b6)
+    XMLVM_TRY_BEGIN(w36066aaac43b1b6)
     // Begin try
     XMLVM_CHECK_NPE(3)
     java_net_Socket_checkClosedAndCreate___boolean(_r3.o, _r0.i);
     XMLVM_SOURCE_POSITION("Socket.java", 634)
-    if (_r4.i >= 0) { XMLVM_MEMCPY(curThread_w36061aaac43b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36061aaac43b1b6, sizeof(XMLVM_JMP_BUF)); goto label22; };
+    if (_r4.i >= 0) { XMLVM_MEMCPY(curThread_w36066aaac43b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36066aaac43b1b6, sizeof(XMLVM_JMP_BUF)); goto label22; };
     XMLVM_SOURCE_POSITION("Socket.java", 635)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     // "luni.5B"
@@ -2523,19 +2568,20 @@ void java_net_Socket_setSoTimeout___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac43b1b6)
-        XMLVM_CATCH_SPECIFIC(w36061aaac43b1b6,java_lang_Object,19)
-    XMLVM_CATCH_END(w36061aaac43b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac43b1b6)
+    XMLVM_CATCH_BEGIN(w36066aaac43b1b6)
+        XMLVM_CATCH_SPECIFIC(w36066aaac43b1b6,java_lang_Object,19)
+    XMLVM_CATCH_END(w36066aaac43b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac43b1b6)
     label19:;
-    java_lang_Thread* curThread_w36061aaac43b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w36061aaac43b1b8->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36066aaac43b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w36066aaac43b1b8->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r3.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label22:;
-    XMLVM_TRY_BEGIN(w36061aaac43b1c12)
+    XMLVM_TRY_BEGIN(w36066aaac43b1c12)
     // Begin try
     XMLVM_SOURCE_POSITION("Socket.java", 637)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_net_Socket*) _r3.o)->fields.java_net_Socket.impl_;
     _r1.i = 4102;
     _r2.o = java_lang_Integer_valueOf___int(_r4.i);
@@ -2544,10 +2590,10 @@ void java_net_Socket_setSoTimeout___int(JAVA_OBJECT me, JAVA_INT n1)
     (*(void (*)(JAVA_OBJECT, JAVA_INT, JAVA_OBJECT)) ((java_net_SocketImpl*) _r0.o)->tib->vtable[19])(_r0.o, _r1.i, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac43b1c12)
-        XMLVM_CATCH_SPECIFIC(w36061aaac43b1c12,java_lang_Object,19)
-    XMLVM_CATCH_END(w36061aaac43b1c12)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac43b1c12)
+    XMLVM_CATCH_BEGIN(w36066aaac43b1c12)
+        XMLVM_CATCH_SPECIFIC(w36066aaac43b1c12,java_lang_Object,19)
+    XMLVM_CATCH_END(w36066aaac43b1c12)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac43b1c12)
     XMLVM_SOURCE_POSITION("Socket.java", 638)
     java_lang_Object_releaseLockRecursive__(_r3.o);
     XMLVM_EXIT_METHOD()
@@ -2571,6 +2617,7 @@ void java_net_Socket_setTcpNoDelay___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
     XMLVM_CHECK_NPE(3)
     java_net_Socket_checkClosedAndCreate___boolean(_r3.o, _r2.i);
     XMLVM_SOURCE_POSITION("Socket.java", 651)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_net_Socket*) _r3.o)->fields.java_net_Socket.impl_;
     _r1.o = java_lang_Boolean_valueOf___boolean(_r4.i);
     //java_net_SocketImpl_setOption___int_java_lang_Object[19]
@@ -2623,105 +2670,113 @@ void java_net_Socket_startupSocket___java_net_InetAddress_int_java_net_InetAddre
     label24:;
     XMLVM_SOURCE_POSITION("Socket.java", 680)
     java_lang_Object_acquireLockRecursive__(_r4.o);
-    XMLVM_TRY_BEGIN(w36061aaac45b1c26)
+    XMLVM_TRY_BEGIN(w36066aaac45b1c26)
     // Begin try
     XMLVM_SOURCE_POSITION("Socket.java", 681)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_net_Socket*) _r4.o)->fields.java_net_Socket.impl_;
     //java_net_SocketImpl_create___boolean[13]
     XMLVM_CHECK_NPE(2)
     (*(void (*)(JAVA_OBJECT, JAVA_BOOLEAN)) ((java_net_SocketImpl*) _r2.o)->tib->vtable[13])(_r2.o, _r9.i);
     XMLVM_SOURCE_POSITION("Socket.java", 682)
     _r2.i = 1;
+    XMLVM_CHECK_NPE(4)
     ((java_net_Socket*) _r4.o)->fields.java_net_Socket.isCreated_ = _r2.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac45b1c26)
-        XMLVM_CATCH_SPECIFIC(w36061aaac45b1c26,java_lang_Object,71)
-    XMLVM_CATCH_END(w36061aaac45b1c26)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac45b1c26)
+    XMLVM_CATCH_BEGIN(w36066aaac45b1c26)
+        XMLVM_CATCH_SPECIFIC(w36066aaac45b1c26,java_lang_Object,71)
+    XMLVM_CATCH_END(w36066aaac45b1c26)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac45b1c26)
     XMLVM_SOURCE_POSITION("Socket.java", 684)
     if (_r9.i == 0) goto label43;
-    XMLVM_TRY_BEGIN(w36061aaac45b1c29)
+    XMLVM_TRY_BEGIN(w36066aaac45b1c29)
     // Begin try
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_net_Socket*) _r4.o)->fields.java_net_Socket.proxy_;
     _r2.i = org_apache_harmony_luni_net_NetUtil_usingSocks___java_net_Proxy(_r2.o);
-    if (_r2.i != 0) { XMLVM_MEMCPY(curThread_w36061aaac45b1c29->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36061aaac45b1c29, sizeof(XMLVM_JMP_BUF)); goto label48; };
+    if (_r2.i != 0) { XMLVM_MEMCPY(curThread_w36066aaac45b1c29->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36066aaac45b1c29, sizeof(XMLVM_JMP_BUF)); goto label48; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac45b1c29)
-        XMLVM_CATCH_SPECIFIC(w36061aaac45b1c29,java_io_IOException,63)
-        XMLVM_CATCH_SPECIFIC(w36061aaac45b1c29,java_lang_Object,71)
-    XMLVM_CATCH_END(w36061aaac45b1c29)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac45b1c29)
+    XMLVM_CATCH_BEGIN(w36066aaac45b1c29)
+        XMLVM_CATCH_SPECIFIC(w36066aaac45b1c29,java_io_IOException,63)
+        XMLVM_CATCH_SPECIFIC(w36066aaac45b1c29,java_lang_Object,71)
+    XMLVM_CATCH_END(w36066aaac45b1c29)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac45b1c29)
     label43:;
-    XMLVM_TRY_BEGIN(w36061aaac45b1c31)
+    XMLVM_TRY_BEGIN(w36066aaac45b1c31)
     // Begin try
     XMLVM_SOURCE_POSITION("Socket.java", 685)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_net_Socket*) _r4.o)->fields.java_net_Socket.impl_;
     //java_net_SocketImpl_bind___java_net_InetAddress_int[8]
     XMLVM_CHECK_NPE(2)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_net_SocketImpl*) _r2.o)->tib->vtable[8])(_r2.o, _r0.o, _r8.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac45b1c31)
-        XMLVM_CATCH_SPECIFIC(w36061aaac45b1c31,java_io_IOException,63)
-        XMLVM_CATCH_SPECIFIC(w36061aaac45b1c31,java_lang_Object,71)
-    XMLVM_CATCH_END(w36061aaac45b1c31)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac45b1c31)
+    XMLVM_CATCH_BEGIN(w36066aaac45b1c31)
+        XMLVM_CATCH_SPECIFIC(w36066aaac45b1c31,java_io_IOException,63)
+        XMLVM_CATCH_SPECIFIC(w36066aaac45b1c31,java_lang_Object,71)
+    XMLVM_CATCH_END(w36066aaac45b1c31)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac45b1c31)
     label48:;
-    XMLVM_TRY_BEGIN(w36061aaac45b1c33)
+    XMLVM_TRY_BEGIN(w36066aaac45b1c33)
     // Begin try
     XMLVM_SOURCE_POSITION("Socket.java", 687)
     _r2.i = 1;
+    XMLVM_CHECK_NPE(4)
     ((java_net_Socket*) _r4.o)->fields.java_net_Socket.isBound_ = _r2.i;
     XMLVM_SOURCE_POSITION("Socket.java", 688)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_net_Socket*) _r4.o)->fields.java_net_Socket.impl_;
     //java_net_SocketImpl_connect___java_net_InetAddress_int[11]
     XMLVM_CHECK_NPE(2)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_net_SocketImpl*) _r2.o)->tib->vtable[11])(_r2.o, _r5.o, _r6.i);
     XMLVM_SOURCE_POSITION("Socket.java", 689)
     _r2.i = 1;
+    XMLVM_CHECK_NPE(4)
     ((java_net_Socket*) _r4.o)->fields.java_net_Socket.isConnected_ = _r2.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac45b1c33)
-        XMLVM_CATCH_SPECIFIC(w36061aaac45b1c33,java_io_IOException,63)
-        XMLVM_CATCH_SPECIFIC(w36061aaac45b1c33,java_lang_Object,71)
-    XMLVM_CATCH_END(w36061aaac45b1c33)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac45b1c33)
-    XMLVM_TRY_BEGIN(w36061aaac45b1c34)
+    XMLVM_CATCH_BEGIN(w36066aaac45b1c33)
+        XMLVM_CATCH_SPECIFIC(w36066aaac45b1c33,java_io_IOException,63)
+        XMLVM_CATCH_SPECIFIC(w36066aaac45b1c33,java_lang_Object,71)
+    XMLVM_CATCH_END(w36066aaac45b1c33)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac45b1c33)
+    XMLVM_TRY_BEGIN(w36066aaac45b1c34)
     // Begin try
     XMLVM_SOURCE_POSITION("Socket.java", 694)
     java_lang_Object_releaseLockRecursive__(_r4.o);
     XMLVM_SOURCE_POSITION("Socket.java", 695)
-    XMLVM_MEMCPY(curThread_w36061aaac45b1c34->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36061aaac45b1c34, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w36066aaac45b1c34->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36066aaac45b1c34, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac45b1c34)
-        XMLVM_CATCH_SPECIFIC(w36061aaac45b1c34,java_lang_Object,71)
-    XMLVM_CATCH_END(w36061aaac45b1c34)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac45b1c34)
+    XMLVM_CATCH_BEGIN(w36066aaac45b1c34)
+        XMLVM_CATCH_SPECIFIC(w36066aaac45b1c34,java_lang_Object,71)
+    XMLVM_CATCH_END(w36066aaac45b1c34)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac45b1c34)
     label61:;
-    XMLVM_TRY_BEGIN(w36061aaac45b1c36)
+    XMLVM_TRY_BEGIN(w36066aaac45b1c36)
     // Begin try
     _r0 = _r7;
-    { XMLVM_MEMCPY(curThread_w36061aaac45b1c36->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36061aaac45b1c36, sizeof(XMLVM_JMP_BUF)); goto label24; };
+    { XMLVM_MEMCPY(curThread_w36066aaac45b1c36->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36066aaac45b1c36, sizeof(XMLVM_JMP_BUF)); goto label24; };
     XMLVM_SOURCE_POSITION("Socket.java", 690)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac45b1c36)
-        XMLVM_CATCH_SPECIFIC(w36061aaac45b1c36,java_lang_Object,71)
-    XMLVM_CATCH_END(w36061aaac45b1c36)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac45b1c36)
+    XMLVM_CATCH_BEGIN(w36066aaac45b1c36)
+        XMLVM_CATCH_SPECIFIC(w36066aaac45b1c36,java_lang_Object,71)
+    XMLVM_CATCH_END(w36066aaac45b1c36)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac45b1c36)
     label63:;
-    XMLVM_TRY_BEGIN(w36061aaac45b1c38)
+    XMLVM_TRY_BEGIN(w36066aaac45b1c38)
     // Begin try
-    java_lang_Thread* curThread_w36061aaac45b1c38aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w36061aaac45b1c38aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36066aaac45b1c38aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w36066aaac45b1c38aa->fields.java_lang_Thread.xmlvmException_;
     _r1 = _r2;
     XMLVM_SOURCE_POSITION("Socket.java", 691)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_net_Socket*) _r4.o)->fields.java_net_Socket.impl_;
     //java_net_SocketImpl_close__[9]
     XMLVM_CHECK_NPE(2)
@@ -2730,22 +2785,22 @@ void java_net_Socket_startupSocket___java_net_InetAddress_int_java_net_InetAddre
     XMLVM_THROW_CUSTOM(_r1.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac45b1c38)
-        XMLVM_CATCH_SPECIFIC(w36061aaac45b1c38,java_lang_Object,71)
-    XMLVM_CATCH_END(w36061aaac45b1c38)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac45b1c38)
+    XMLVM_CATCH_BEGIN(w36066aaac45b1c38)
+        XMLVM_CATCH_SPECIFIC(w36066aaac45b1c38,java_lang_Object,71)
+    XMLVM_CATCH_END(w36066aaac45b1c38)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac45b1c38)
     label71:;
-    XMLVM_TRY_BEGIN(w36061aaac45b1c40)
+    XMLVM_TRY_BEGIN(w36066aaac45b1c40)
     // Begin try
-    java_lang_Thread* curThread_w36061aaac45b1c40aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w36061aaac45b1c40aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36066aaac45b1c40aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w36066aaac45b1c40aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac45b1c40)
-        XMLVM_CATCH_SPECIFIC(w36061aaac45b1c40,java_lang_Object,71)
-    XMLVM_CATCH_END(w36061aaac45b1c40)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac45b1c40)
+    XMLVM_CATCH_BEGIN(w36066aaac45b1c40)
+        XMLVM_CATCH_SPECIFIC(w36066aaac45b1c40,java_lang_Object,71)
+    XMLVM_CATCH_END(w36066aaac45b1c40)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac45b1c40)
     XMLVM_THROW_CUSTOM(_r2.o)
     //XMLVM_END_WRAPPER
 }
@@ -2769,6 +2824,7 @@ JAVA_OBJECT java_net_Socket_toString__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label9:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_Socket*) _r1.o)->fields.java_net_Socket.impl_;
     //java_net_SocketImpl_toString__[5]
     XMLVM_CHECK_NPE(0)
@@ -2803,12 +2859,14 @@ void java_net_Socket_shutdownInput__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_net_Socket_checkClosedAndCreate___boolean(_r2.o, _r0.i);
     XMLVM_SOURCE_POSITION("Socket.java", 726)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_Socket*) _r2.o)->fields.java_net_Socket.impl_;
     //java_net_SocketImpl_shutdownInput__[20]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) ((java_net_SocketImpl*) _r0.o)->tib->vtable[20])(_r0.o);
     XMLVM_SOURCE_POSITION("Socket.java", 727)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(2)
     ((java_net_Socket*) _r2.o)->fields.java_net_Socket.isInputShutdown_ = _r0.i;
     XMLVM_SOURCE_POSITION("Socket.java", 728)
     XMLVM_EXIT_METHOD()
@@ -2842,12 +2900,14 @@ void java_net_Socket_shutdownOutput__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_net_Socket_checkClosedAndCreate___boolean(_r2.o, _r0.i);
     XMLVM_SOURCE_POSITION("Socket.java", 745)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_Socket*) _r2.o)->fields.java_net_Socket.impl_;
     //java_net_SocketImpl_shutdownOutput__[21]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) ((java_net_SocketImpl*) _r0.o)->tib->vtable[21])(_r0.o);
     XMLVM_SOURCE_POSITION("Socket.java", 746)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(2)
     ((java_net_Socket*) _r2.o)->fields.java_net_Socket.isOutputShutdown_ = _r0.i;
     XMLVM_SOURCE_POSITION("Socket.java", 747)
     XMLVM_EXIT_METHOD()
@@ -2895,6 +2955,7 @@ void java_net_Socket_checkClosedAndCreate___boolean(JAVA_OBJECT me, JAVA_BOOLEAN
     XMLVM_THROW_CUSTOM(_r1.o)
     label38:;
     XMLVM_SOURCE_POSITION("Socket.java", 772)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_net_Socket*) _r3.o)->fields.java_net_Socket.isCreated_;
     if (_r1.i == 0) goto label43;
     label42:;
@@ -2904,38 +2965,40 @@ void java_net_Socket_checkClosedAndCreate___boolean(JAVA_OBJECT me, JAVA_BOOLEAN
     label43:;
     XMLVM_SOURCE_POSITION("Socket.java", 775)
     java_lang_Object_acquireLockRecursive__(_r3.o);
-    XMLVM_TRY_BEGIN(w36061aaac49b1c34)
+    XMLVM_TRY_BEGIN(w36066aaac49b1c34)
     // Begin try
     XMLVM_SOURCE_POSITION("Socket.java", 776)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_net_Socket*) _r3.o)->fields.java_net_Socket.isCreated_;
-    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w36061aaac49b1c34->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36061aaac49b1c34, sizeof(XMLVM_JMP_BUF)); goto label53; };
+    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w36066aaac49b1c34->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36066aaac49b1c34, sizeof(XMLVM_JMP_BUF)); goto label53; };
     XMLVM_SOURCE_POSITION("Socket.java", 777)
     java_lang_Object_releaseLockRecursive__(_r3.o);
-    { XMLVM_MEMCPY(curThread_w36061aaac49b1c34->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36061aaac49b1c34, sizeof(XMLVM_JMP_BUF)); goto label42; };
+    { XMLVM_MEMCPY(curThread_w36066aaac49b1c34->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36066aaac49b1c34, sizeof(XMLVM_JMP_BUF)); goto label42; };
     XMLVM_SOURCE_POSITION("Socket.java", 787)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac49b1c34)
-        XMLVM_CATCH_SPECIFIC(w36061aaac49b1c34,java_lang_Object,50)
-    XMLVM_CATCH_END(w36061aaac49b1c34)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac49b1c34)
+    XMLVM_CATCH_BEGIN(w36066aaac49b1c34)
+        XMLVM_CATCH_SPECIFIC(w36066aaac49b1c34,java_lang_Object,50)
+    XMLVM_CATCH_END(w36066aaac49b1c34)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac49b1c34)
     label50:;
-    XMLVM_TRY_BEGIN(w36061aaac49b1c36)
+    XMLVM_TRY_BEGIN(w36066aaac49b1c36)
     // Begin try
-    java_lang_Thread* curThread_w36061aaac49b1c36aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w36061aaac49b1c36aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36066aaac49b1c36aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w36066aaac49b1c36aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac49b1c36)
-        XMLVM_CATCH_SPECIFIC(w36061aaac49b1c36,java_lang_Object,50)
-    XMLVM_CATCH_END(w36061aaac49b1c36)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac49b1c36)
+    XMLVM_CATCH_BEGIN(w36066aaac49b1c36)
+        XMLVM_CATCH_SPECIFIC(w36066aaac49b1c36,java_lang_Object,50)
+    XMLVM_CATCH_END(w36066aaac49b1c36)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac49b1c36)
     XMLVM_THROW_CUSTOM(_r1.o)
     label53:;
-    XMLVM_TRY_BEGIN(w36061aaac49b1c39)
+    XMLVM_TRY_BEGIN(w36066aaac49b1c39)
     // Begin try
     XMLVM_SOURCE_POSITION("Socket.java", 780)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_net_Socket*) _r3.o)->fields.java_net_Socket.impl_;
     _r2.i = 1;
     //java_net_SocketImpl_create___boolean[13]
@@ -2943,46 +3006,47 @@ void java_net_Socket_checkClosedAndCreate___boolean(JAVA_OBJECT me, JAVA_BOOLEAN
     (*(void (*)(JAVA_OBJECT, JAVA_BOOLEAN)) ((java_net_SocketImpl*) _r1.o)->tib->vtable[13])(_r1.o, _r2.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac49b1c39)
-        XMLVM_CATCH_SPECIFIC(w36061aaac49b1c39,java_net_SocketException,64)
-        XMLVM_CATCH_SPECIFIC(w36061aaac49b1c39,java_io_IOException,67)
-        XMLVM_CATCH_SPECIFIC(w36061aaac49b1c39,java_lang_Object,50)
-    XMLVM_CATCH_END(w36061aaac49b1c39)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac49b1c39)
+    XMLVM_CATCH_BEGIN(w36066aaac49b1c39)
+        XMLVM_CATCH_SPECIFIC(w36066aaac49b1c39,java_net_SocketException,64)
+        XMLVM_CATCH_SPECIFIC(w36066aaac49b1c39,java_io_IOException,67)
+        XMLVM_CATCH_SPECIFIC(w36066aaac49b1c39,java_lang_Object,50)
+    XMLVM_CATCH_END(w36066aaac49b1c39)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac49b1c39)
     XMLVM_SOURCE_POSITION("Socket.java", 786)
     _r1.i = 1;
-    XMLVM_TRY_BEGIN(w36061aaac49b1c42)
+    XMLVM_TRY_BEGIN(w36066aaac49b1c42)
     // Begin try
+    XMLVM_CHECK_NPE(3)
     ((java_net_Socket*) _r3.o)->fields.java_net_Socket.isCreated_ = _r1.i;
     java_lang_Object_releaseLockRecursive__(_r3.o);
-    { XMLVM_MEMCPY(curThread_w36061aaac49b1c42->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36061aaac49b1c42, sizeof(XMLVM_JMP_BUF)); goto label42; };
+    { XMLVM_MEMCPY(curThread_w36066aaac49b1c42->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36066aaac49b1c42, sizeof(XMLVM_JMP_BUF)); goto label42; };
     XMLVM_SOURCE_POSITION("Socket.java", 781)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac49b1c42)
-        XMLVM_CATCH_SPECIFIC(w36061aaac49b1c42,java_lang_Object,50)
-    XMLVM_CATCH_END(w36061aaac49b1c42)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac49b1c42)
+    XMLVM_CATCH_BEGIN(w36066aaac49b1c42)
+        XMLVM_CATCH_SPECIFIC(w36066aaac49b1c42,java_lang_Object,50)
+    XMLVM_CATCH_END(w36066aaac49b1c42)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac49b1c42)
     label64:;
-    XMLVM_TRY_BEGIN(w36061aaac49b1c44)
+    XMLVM_TRY_BEGIN(w36066aaac49b1c44)
     // Begin try
-    java_lang_Thread* curThread_w36061aaac49b1c44aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w36061aaac49b1c44aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36066aaac49b1c44aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w36066aaac49b1c44aa->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r1;
     XMLVM_SOURCE_POSITION("Socket.java", 782)
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac49b1c44)
-        XMLVM_CATCH_SPECIFIC(w36061aaac49b1c44,java_lang_Object,50)
-    XMLVM_CATCH_END(w36061aaac49b1c44)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac49b1c44)
+    XMLVM_CATCH_BEGIN(w36066aaac49b1c44)
+        XMLVM_CATCH_SPECIFIC(w36066aaac49b1c44,java_lang_Object,50)
+    XMLVM_CATCH_END(w36066aaac49b1c44)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac49b1c44)
     label67:;
-    XMLVM_TRY_BEGIN(w36061aaac49b1c46)
+    XMLVM_TRY_BEGIN(w36066aaac49b1c46)
     // Begin try
     XMLVM_SOURCE_POSITION("Socket.java", 783)
-    java_lang_Thread* curThread_w36061aaac49b1c46ab1 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w36061aaac49b1c46ab1->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36066aaac49b1c46ab1 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w36066aaac49b1c46ab1->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r1;
     XMLVM_SOURCE_POSITION("Socket.java", 784)
     _r1.o = __NEW_java_net_SocketException();
@@ -2994,10 +3058,10 @@ void java_net_Socket_checkClosedAndCreate___boolean(JAVA_OBJECT me, JAVA_BOOLEAN
     XMLVM_THROW_CUSTOM(_r1.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac49b1c46)
-        XMLVM_CATCH_SPECIFIC(w36061aaac49b1c46,java_lang_Object,50)
-    XMLVM_CATCH_END(w36061aaac49b1c46)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac49b1c46)
+    XMLVM_CATCH_BEGIN(w36066aaac49b1c46)
+        XMLVM_CATCH_SPECIFIC(w36066aaac49b1c46,java_lang_Object,50)
+    XMLVM_CATCH_END(w36066aaac49b1c46)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac49b1c46)
     //XMLVM_END_WRAPPER
 }
 
@@ -3071,6 +3135,7 @@ JAVA_BOOLEAN java_net_Socket_isBound__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Socket.java", 824)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_Socket*) _r1.o)->fields.java_net_Socket.isBound_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -3085,6 +3150,7 @@ JAVA_BOOLEAN java_net_Socket_isConnected__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Socket.java", 833)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_Socket*) _r1.o)->fields.java_net_Socket.isConnected_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -3099,6 +3165,7 @@ JAVA_BOOLEAN java_net_Socket_isClosed__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Socket.java", 842)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_Socket*) _r1.o)->fields.java_net_Socket.isClosed_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -3185,45 +3252,48 @@ void java_net_Socket_bind___java_net_SocketAddress(JAVA_OBJECT me, JAVA_OBJECT n
     label77:;
     XMLVM_SOURCE_POSITION("Socket.java", 880)
     java_lang_Object_acquireLockRecursive__(_r8.o);
-    XMLVM_TRY_BEGIN(w36061aaac55b1c53)
+    XMLVM_TRY_BEGIN(w36066aaac55b1c53)
     // Begin try
     XMLVM_SOURCE_POSITION("Socket.java", 882)
+    XMLVM_CHECK_NPE(8)
     _r5.o = ((java_net_Socket*) _r8.o)->fields.java_net_Socket.impl_;
     //java_net_SocketImpl_bind___java_net_InetAddress_int[8]
     XMLVM_CHECK_NPE(5)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_net_SocketImpl*) _r5.o)->tib->vtable[8])(_r5.o, _r1.o, _r4.i);
     XMLVM_SOURCE_POSITION("Socket.java", 883)
     _r5.i = 1;
+    XMLVM_CHECK_NPE(8)
     ((java_net_Socket*) _r8.o)->fields.java_net_Socket.isBound_ = _r5.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac55b1c53)
-        XMLVM_CATCH_SPECIFIC(w36061aaac55b1c53,java_io_IOException,88)
-        XMLVM_CATCH_SPECIFIC(w36061aaac55b1c53,java_lang_Object,96)
-    XMLVM_CATCH_END(w36061aaac55b1c53)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac55b1c53)
-    XMLVM_TRY_BEGIN(w36061aaac55b1c54)
+    XMLVM_CATCH_BEGIN(w36066aaac55b1c53)
+        XMLVM_CATCH_SPECIFIC(w36066aaac55b1c53,java_io_IOException,88)
+        XMLVM_CATCH_SPECIFIC(w36066aaac55b1c53,java_lang_Object,96)
+    XMLVM_CATCH_END(w36066aaac55b1c53)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac55b1c53)
+    XMLVM_TRY_BEGIN(w36066aaac55b1c54)
     // Begin try
     XMLVM_SOURCE_POSITION("Socket.java", 888)
     java_lang_Object_releaseLockRecursive__(_r8.o);
     XMLVM_SOURCE_POSITION("Socket.java", 889)
-    XMLVM_MEMCPY(curThread_w36061aaac55b1c54->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36061aaac55b1c54, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w36066aaac55b1c54->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36066aaac55b1c54, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac55b1c54)
-        XMLVM_CATCH_SPECIFIC(w36061aaac55b1c54,java_lang_Object,96)
-    XMLVM_CATCH_END(w36061aaac55b1c54)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac55b1c54)
+    XMLVM_CATCH_BEGIN(w36066aaac55b1c54)
+        XMLVM_CATCH_SPECIFIC(w36066aaac55b1c54,java_lang_Object,96)
+    XMLVM_CATCH_END(w36066aaac55b1c54)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac55b1c54)
     label88:;
-    XMLVM_TRY_BEGIN(w36061aaac55b1c56)
+    XMLVM_TRY_BEGIN(w36066aaac55b1c56)
     // Begin try
     XMLVM_SOURCE_POSITION("Socket.java", 884)
-    java_lang_Thread* curThread_w36061aaac55b1c56ab1 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r5.o = curThread_w36061aaac55b1c56ab1->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36066aaac55b1c56ab1 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r5.o = curThread_w36066aaac55b1c56ab1->fields.java_lang_Thread.xmlvmException_;
     _r2 = _r5;
     XMLVM_SOURCE_POSITION("Socket.java", 885)
+    XMLVM_CHECK_NPE(8)
     _r5.o = ((java_net_Socket*) _r8.o)->fields.java_net_Socket.impl_;
     //java_net_SocketImpl_close__[9]
     XMLVM_CHECK_NPE(5)
@@ -3232,22 +3302,22 @@ void java_net_Socket_bind___java_net_SocketAddress(JAVA_OBJECT me, JAVA_OBJECT n
     XMLVM_THROW_CUSTOM(_r2.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac55b1c56)
-        XMLVM_CATCH_SPECIFIC(w36061aaac55b1c56,java_lang_Object,96)
-    XMLVM_CATCH_END(w36061aaac55b1c56)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac55b1c56)
+    XMLVM_CATCH_BEGIN(w36066aaac55b1c56)
+        XMLVM_CATCH_SPECIFIC(w36066aaac55b1c56,java_lang_Object,96)
+    XMLVM_CATCH_END(w36066aaac55b1c56)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac55b1c56)
     label96:;
-    XMLVM_TRY_BEGIN(w36061aaac55b1c58)
+    XMLVM_TRY_BEGIN(w36066aaac55b1c58)
     // Begin try
-    java_lang_Thread* curThread_w36061aaac55b1c58aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r5.o = curThread_w36061aaac55b1c58aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36066aaac55b1c58aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r5.o = curThread_w36066aaac55b1c58aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r8.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac55b1c58)
-        XMLVM_CATCH_SPECIFIC(w36061aaac55b1c58,java_lang_Object,96)
-    XMLVM_CATCH_END(w36061aaac55b1c58)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac55b1c58)
+    XMLVM_CATCH_BEGIN(w36066aaac55b1c58)
+        XMLVM_CATCH_SPECIFIC(w36066aaac55b1c58,java_lang_Object,96)
+    XMLVM_CATCH_END(w36066aaac55b1c58)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac55b1c58)
     XMLVM_THROW_CUSTOM(_r5.o)
     //XMLVM_END_WRAPPER
 }
@@ -3369,19 +3439,22 @@ void java_net_Socket_connect___java_net_SocketAddress_int(JAVA_OBJECT me, JAVA_O
     XMLVM_CHECK_NPE(9)
     java_net_Socket_checkDestination___java_net_InetAddress_int(_r9.o, _r1.o, _r4.i);
     XMLVM_SOURCE_POSITION("Socket.java", 950)
+    XMLVM_CHECK_NPE(9)
     _r5.o = ((java_net_Socket*) _r9.o)->fields.java_net_Socket.connectLock_;
     java_lang_Object_acquireLockRecursive__(_r5.o);
-    XMLVM_TRY_BEGIN(w36061aaac57b1c67)
+    XMLVM_TRY_BEGIN(w36066aaac57b1c67)
     // Begin try
     XMLVM_SOURCE_POSITION("Socket.java", 952)
     XMLVM_CHECK_NPE(9)
     _r6.i = java_net_Socket_isBound__(_r9.o);
-    if (_r6.i != 0) { XMLVM_MEMCPY(curThread_w36061aaac57b1c67->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36061aaac57b1c67, sizeof(XMLVM_JMP_BUF)); goto label127; };
+    if (_r6.i != 0) { XMLVM_MEMCPY(curThread_w36066aaac57b1c67->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36066aaac57b1c67, sizeof(XMLVM_JMP_BUF)); goto label127; };
     XMLVM_SOURCE_POSITION("Socket.java", 957)
+    XMLVM_CHECK_NPE(9)
     _r6.o = ((java_net_Socket*) _r9.o)->fields.java_net_Socket.proxy_;
     _r6.i = org_apache_harmony_luni_net_NetUtil_usingSocks___java_net_Proxy(_r6.o);
-    if (_r6.i != 0) { XMLVM_MEMCPY(curThread_w36061aaac57b1c67->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36061aaac57b1c67, sizeof(XMLVM_JMP_BUF)); goto label124; };
+    if (_r6.i != 0) { XMLVM_MEMCPY(curThread_w36066aaac57b1c67->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36066aaac57b1c67, sizeof(XMLVM_JMP_BUF)); goto label124; };
     XMLVM_SOURCE_POSITION("Socket.java", 958)
+    XMLVM_CHECK_NPE(9)
     _r6.o = ((java_net_Socket*) _r9.o)->fields.java_net_Socket.impl_;
     _r7.o = java_net_InetAddress_GET_ANY();
     _r8.i = 0;
@@ -3390,64 +3463,68 @@ void java_net_Socket_connect___java_net_SocketAddress_int(JAVA_OBJECT me, JAVA_O
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_net_SocketImpl*) _r6.o)->tib->vtable[8])(_r6.o, _r7.o, _r8.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac57b1c67)
-        XMLVM_CATCH_SPECIFIC(w36061aaac57b1c67,java_io_IOException,137)
-        XMLVM_CATCH_SPECIFIC(w36061aaac57b1c67,java_lang_Object,145)
-    XMLVM_CATCH_END(w36061aaac57b1c67)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac57b1c67)
+    XMLVM_CATCH_BEGIN(w36066aaac57b1c67)
+        XMLVM_CATCH_SPECIFIC(w36066aaac57b1c67,java_io_IOException,137)
+        XMLVM_CATCH_SPECIFIC(w36066aaac57b1c67,java_lang_Object,145)
+    XMLVM_CATCH_END(w36066aaac57b1c67)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac57b1c67)
     label124:;
-    XMLVM_TRY_BEGIN(w36061aaac57b1c69)
+    XMLVM_TRY_BEGIN(w36066aaac57b1c69)
     // Begin try
     XMLVM_SOURCE_POSITION("Socket.java", 960)
     _r6.i = 1;
+    XMLVM_CHECK_NPE(9)
     ((java_net_Socket*) _r9.o)->fields.java_net_Socket.isBound_ = _r6.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac57b1c69)
-        XMLVM_CATCH_SPECIFIC(w36061aaac57b1c69,java_io_IOException,137)
-        XMLVM_CATCH_SPECIFIC(w36061aaac57b1c69,java_lang_Object,145)
-    XMLVM_CATCH_END(w36061aaac57b1c69)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac57b1c69)
+    XMLVM_CATCH_BEGIN(w36066aaac57b1c69)
+        XMLVM_CATCH_SPECIFIC(w36066aaac57b1c69,java_io_IOException,137)
+        XMLVM_CATCH_SPECIFIC(w36066aaac57b1c69,java_lang_Object,145)
+    XMLVM_CATCH_END(w36066aaac57b1c69)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac57b1c69)
     label127:;
-    XMLVM_TRY_BEGIN(w36061aaac57b1c71)
+    XMLVM_TRY_BEGIN(w36066aaac57b1c71)
     // Begin try
     XMLVM_SOURCE_POSITION("Socket.java", 962)
+    XMLVM_CHECK_NPE(9)
     _r6.o = ((java_net_Socket*) _r9.o)->fields.java_net_Socket.impl_;
     //java_net_SocketImpl_connect___java_net_SocketAddress_int[12]
     XMLVM_CHECK_NPE(6)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_net_SocketImpl*) _r6.o)->tib->vtable[12])(_r6.o, _r10.o, _r11.i);
     XMLVM_SOURCE_POSITION("Socket.java", 963)
     _r6.i = 1;
+    XMLVM_CHECK_NPE(9)
     ((java_net_Socket*) _r9.o)->fields.java_net_Socket.isConnected_ = _r6.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac57b1c71)
-        XMLVM_CATCH_SPECIFIC(w36061aaac57b1c71,java_io_IOException,137)
-        XMLVM_CATCH_SPECIFIC(w36061aaac57b1c71,java_lang_Object,145)
-    XMLVM_CATCH_END(w36061aaac57b1c71)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac57b1c71)
-    XMLVM_TRY_BEGIN(w36061aaac57b1c72)
+    XMLVM_CATCH_BEGIN(w36066aaac57b1c71)
+        XMLVM_CATCH_SPECIFIC(w36066aaac57b1c71,java_io_IOException,137)
+        XMLVM_CATCH_SPECIFIC(w36066aaac57b1c71,java_lang_Object,145)
+    XMLVM_CATCH_END(w36066aaac57b1c71)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac57b1c71)
+    XMLVM_TRY_BEGIN(w36066aaac57b1c72)
     // Begin try
     XMLVM_SOURCE_POSITION("Socket.java", 968)
     java_lang_Object_releaseLockRecursive__(_r5.o);
     XMLVM_SOURCE_POSITION("Socket.java", 969)
-    XMLVM_MEMCPY(curThread_w36061aaac57b1c72->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36061aaac57b1c72, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w36066aaac57b1c72->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36066aaac57b1c72, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac57b1c72)
-        XMLVM_CATCH_SPECIFIC(w36061aaac57b1c72,java_lang_Object,145)
-    XMLVM_CATCH_END(w36061aaac57b1c72)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac57b1c72)
+    XMLVM_CATCH_BEGIN(w36066aaac57b1c72)
+        XMLVM_CATCH_SPECIFIC(w36066aaac57b1c72,java_lang_Object,145)
+    XMLVM_CATCH_END(w36066aaac57b1c72)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac57b1c72)
     label137:;
-    XMLVM_TRY_BEGIN(w36061aaac57b1c74)
+    XMLVM_TRY_BEGIN(w36066aaac57b1c74)
     // Begin try
     XMLVM_SOURCE_POSITION("Socket.java", 964)
-    java_lang_Thread* curThread_w36061aaac57b1c74ab1 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r6.o = curThread_w36061aaac57b1c74ab1->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36066aaac57b1c74ab1 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r6.o = curThread_w36066aaac57b1c74ab1->fields.java_lang_Thread.xmlvmException_;
     _r2 = _r6;
     XMLVM_SOURCE_POSITION("Socket.java", 965)
+    XMLVM_CHECK_NPE(9)
     _r6.o = ((java_net_Socket*) _r9.o)->fields.java_net_Socket.impl_;
     //java_net_SocketImpl_close__[9]
     XMLVM_CHECK_NPE(6)
@@ -3456,22 +3533,22 @@ void java_net_Socket_connect___java_net_SocketAddress_int(JAVA_OBJECT me, JAVA_O
     XMLVM_THROW_CUSTOM(_r2.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac57b1c74)
-        XMLVM_CATCH_SPECIFIC(w36061aaac57b1c74,java_lang_Object,145)
-    XMLVM_CATCH_END(w36061aaac57b1c74)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac57b1c74)
+    XMLVM_CATCH_BEGIN(w36066aaac57b1c74)
+        XMLVM_CATCH_SPECIFIC(w36066aaac57b1c74,java_lang_Object,145)
+    XMLVM_CATCH_END(w36066aaac57b1c74)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac57b1c74)
     label145:;
-    XMLVM_TRY_BEGIN(w36061aaac57b1c76)
+    XMLVM_TRY_BEGIN(w36066aaac57b1c76)
     // Begin try
-    java_lang_Thread* curThread_w36061aaac57b1c76aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r6.o = curThread_w36061aaac57b1c76aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36066aaac57b1c76aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r6.o = curThread_w36066aaac57b1c76aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36061aaac57b1c76)
-        XMLVM_CATCH_SPECIFIC(w36061aaac57b1c76,java_lang_Object,145)
-    XMLVM_CATCH_END(w36061aaac57b1c76)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36061aaac57b1c76)
+    XMLVM_CATCH_BEGIN(w36066aaac57b1c76)
+        XMLVM_CATCH_SPECIFIC(w36066aaac57b1c76,java_lang_Object,145)
+    XMLVM_CATCH_END(w36066aaac57b1c76)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36066aaac57b1c76)
     XMLVM_THROW_CUSTOM(_r6.o)
     //XMLVM_END_WRAPPER
 }
@@ -3484,6 +3561,7 @@ JAVA_BOOLEAN java_net_Socket_isInputShutdown__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Socket.java", 979)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_Socket*) _r1.o)->fields.java_net_Socket.isInputShutdown_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -3498,6 +3576,7 @@ JAVA_BOOLEAN java_net_Socket_isOutputShutdown__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Socket.java", 990)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_net_Socket*) _r1.o)->fields.java_net_Socket.isOutputShutdown_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -3520,6 +3599,7 @@ void java_net_Socket_setReuseAddress___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
     XMLVM_CHECK_NPE(3)
     java_net_Socket_checkClosedAndCreate___boolean(_r3.o, _r0.i);
     XMLVM_SOURCE_POSITION("Socket.java", 1004)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_net_Socket*) _r3.o)->fields.java_net_Socket.impl_;
     _r1.i = 4;
     if (_r4.i == 0) goto label15;
@@ -3550,6 +3630,7 @@ JAVA_BOOLEAN java_net_Socket_getReuseAddress__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_net_Socket_checkClosedAndCreate___boolean(_r2.o, _r0.i);
     XMLVM_SOURCE_POSITION("Socket.java", 1019)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_Socket*) _r2.o)->fields.java_net_Socket.impl_;
     _r1.i = 4;
     //java_net_SocketImpl_getOption___int[15]
@@ -3579,6 +3660,7 @@ void java_net_Socket_setOOBInline___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
     XMLVM_CHECK_NPE(3)
     java_net_Socket_checkClosedAndCreate___boolean(_r3.o, _r0.i);
     XMLVM_SOURCE_POSITION("Socket.java", 1036)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_net_Socket*) _r3.o)->fields.java_net_Socket.impl_;
     _r1.i = 4099;
     if (_r4.i == 0) goto label16;
@@ -3609,6 +3691,7 @@ JAVA_BOOLEAN java_net_Socket_getOOBInline__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_net_Socket_checkClosedAndCreate___boolean(_r2.o, _r0.i);
     XMLVM_SOURCE_POSITION("Socket.java", 1051)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_Socket*) _r2.o)->fields.java_net_Socket.impl_;
     _r1.i = 4099;
     //java_net_SocketImpl_getOption___int[15]
@@ -3649,6 +3732,7 @@ void java_net_Socket_setTrafficClass___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label16:;
     XMLVM_SOURCE_POSITION("Socket.java", 1072)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_net_Socket*) _r3.o)->fields.java_net_Socket.impl_;
     _r1.i = 3;
     _r2.o = java_lang_Integer_valueOf___int(_r4.i);
@@ -3674,6 +3758,7 @@ JAVA_INT java_net_Socket_getTrafficClass__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_net_Socket_checkClosedAndCreate___boolean(_r2.o, _r0.i);
     XMLVM_SOURCE_POSITION("Socket.java", 1085)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_Socket*) _r2.o)->fields.java_net_Socket.impl_;
     _r1.i = 3;
     //java_net_SocketImpl_getOption___int[15]
@@ -3699,6 +3784,7 @@ void java_net_Socket_sendUrgentData___int(JAVA_OBJECT me, JAVA_INT n1)
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("Socket.java", 1098)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_Socket*) _r2.o)->fields.java_net_Socket.impl_;
     //java_net_SocketImpl_supportsUrgentData__[22]
     XMLVM_CHECK_NPE(0)
@@ -3714,6 +3800,7 @@ void java_net_Socket_sendUrgentData___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label20:;
     XMLVM_SOURCE_POSITION("Socket.java", 1101)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_net_Socket*) _r2.o)->fields.java_net_Socket.impl_;
     //java_net_SocketImpl_sendUrgentData___int[18]
     XMLVM_CHECK_NPE(0)
@@ -3733,8 +3820,11 @@ void java_net_Socket_accepted__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Socket.java", 1111)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((java_net_Socket*) _r1.o)->fields.java_net_Socket.isConnected_ = _r0.i;
+    XMLVM_CHECK_NPE(1)
     ((java_net_Socket*) _r1.o)->fields.java_net_Socket.isBound_ = _r0.i;
+    XMLVM_CHECK_NPE(1)
     ((java_net_Socket*) _r1.o)->fields.java_net_Socket.isCreated_ = _r0.i;
     XMLVM_SOURCE_POSITION("Socket.java", 1112)
     XMLVM_EXIT_METHOD()

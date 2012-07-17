@@ -351,10 +351,13 @@ void org_xmlvm_runtime_XMLVMArray___INIT____java_lang_Class_int_java_lang_Object
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("XMLVMArray.java", 65)
+    XMLVM_CHECK_NPE(0)
     ((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.type_ = _r1.o;
     XMLVM_SOURCE_POSITION("XMLVMArray.java", 66)
+    XMLVM_CHECK_NPE(0)
     ((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.length_ = _r2.i;
     XMLVM_SOURCE_POSITION("XMLVMArray.java", 67)
+    XMLVM_CHECK_NPE(0)
     ((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_ = _r3.o;
     XMLVM_SOURCE_POSITION("XMLVMArray.java", 68)
     XMLVM_EXIT_METHOD()

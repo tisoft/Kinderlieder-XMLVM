@@ -295,14 +295,18 @@ void java_text_SimpleDateFormat_CompiledField___INIT____java_text_SimpleDateForm
     _r3.i = n3;
     _r4.i = n4;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 106)
+    XMLVM_CHECK_NPE(0)
     ((java_text_SimpleDateFormat_CompiledField*) _r0.o)->fields.java_text_SimpleDateFormat_CompiledField.this_0_ = _r1.o;
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 107)
+    XMLVM_CHECK_NPE(0)
     ((java_text_SimpleDateFormat_CompiledField*) _r0.o)->fields.java_text_SimpleDateFormat_CompiledField.field_ = _r2.i;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 108)
+    XMLVM_CHECK_NPE(0)
     ((java_text_SimpleDateFormat_CompiledField*) _r0.o)->fields.java_text_SimpleDateFormat_CompiledField.size_ = _r3.i;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 109)
+    XMLVM_CHECK_NPE(0)
     ((java_text_SimpleDateFormat_CompiledField*) _r0.o)->fields.java_text_SimpleDateFormat_CompiledField.character_ = _r4.i;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 110)
     XMLVM_EXIT_METHOD()
@@ -318,6 +322,7 @@ JAVA_INT java_text_SimpleDateFormat_CompiledField_getField__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 118)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_text_SimpleDateFormat_CompiledField*) _r1.o)->fields.java_text_SimpleDateFormat_CompiledField.field_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -332,6 +337,7 @@ JAVA_INT java_text_SimpleDateFormat_CompiledField_getSize__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 126)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_text_SimpleDateFormat_CompiledField*) _r1.o)->fields.java_text_SimpleDateFormat_CompiledField.size_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -346,6 +352,7 @@ JAVA_CHAR java_text_SimpleDateFormat_CompiledField_getCharacter__(JAVA_OBJECT me
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 134)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_text_SimpleDateFormat_CompiledField*) _r1.o)->fields.java_text_SimpleDateFormat_CompiledField.character_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -375,6 +382,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_CompiledField_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 150)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_text_SimpleDateFormat_CompiledField*) _r2.o)->fields.java_text_SimpleDateFormat_CompiledField.field_;
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___int(_r0.o, _r1.i);
@@ -384,6 +392,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_CompiledField_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 152)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_text_SimpleDateFormat_CompiledField*) _r2.o)->fields.java_text_SimpleDateFormat_CompiledField.size_;
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___int(_r0.o, _r1.i);
@@ -393,6 +402,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_CompiledField_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 154)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_text_SimpleDateFormat_CompiledField*) _r2.o)->fields.java_text_SimpleDateFormat_CompiledField.character_;
     //gnu_java_lang_CPStringBuilder_append___char[6]
     XMLVM_CHECK_NPE(0)

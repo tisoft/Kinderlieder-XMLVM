@@ -255,35 +255,45 @@ void java_util_regex_IntHash___INIT____int(JAVA_OBJECT me, JAVA_INT n1)
     java_lang_Object___INIT___(_r1.o);
     label3:;
     XMLVM_SOURCE_POSITION("IntHash.java", 33)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_IntHash*) _r1.o)->fields.java_util_regex_IntHash.mask_;
     if (_r2.i >= _r0.i) goto label34;
     XMLVM_SOURCE_POSITION("IntHash.java", 36)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_IntHash*) _r1.o)->fields.java_util_regex_IntHash.mask_;
     _r0.i = _r0.i << 1;
     _r0.i = _r0.i | 1;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_IntHash*) _r1.o)->fields.java_util_regex_IntHash.mask_ = _r0.i;
     XMLVM_SOURCE_POSITION("IntHash.java", 37)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_IntHash*) _r1.o)->fields.java_util_regex_IntHash.mask_;
     _r0.i = _r0.i + 1;
     if (!__TIB_int.classInitialized) __INIT_int();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_int, _r0.i);
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_IntHash*) _r1.o)->fields.java_util_regex_IntHash.table_ = _r0.o;
     XMLVM_SOURCE_POSITION("IntHash.java", 38)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_IntHash*) _r1.o)->fields.java_util_regex_IntHash.mask_;
     _r0.i = _r0.i + 1;
     if (!__TIB_int.classInitialized) __INIT_int();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_int, _r0.i);
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_IntHash*) _r1.o)->fields.java_util_regex_IntHash.values_ = _r0.o;
     XMLVM_SOURCE_POSITION("IntHash.java", 39)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_IntHash*) _r1.o)->fields.java_util_regex_IntHash.size_ = _r2.i;
     XMLVM_SOURCE_POSITION("IntHash.java", 40)
     XMLVM_EXIT_METHOD()
     return;
     label34:;
     XMLVM_SOURCE_POSITION("IntHash.java", 34)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_IntHash*) _r1.o)->fields.java_util_regex_IntHash.mask_;
     _r0.i = _r0.i << 1;
     _r0.i = _r0.i | 1;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_IntHash*) _r1.o)->fields.java_util_regex_IntHash.mask_ = _r0.i;
     goto label3;
     //XMLVM_END_WRAPPER
@@ -306,6 +316,7 @@ void java_util_regex_IntHash_put___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT
     XMLVM_SOURCE_POSITION("IntHash.java", 43)
     _r0.i = 0;
     XMLVM_SOURCE_POSITION("IntHash.java", 44)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_regex_IntHash*) _r4.o)->fields.java_util_regex_IntHash.mask_;
     _r1.i = _r1.i & _r5.i;
     _r3 = _r1;
@@ -313,12 +324,14 @@ void java_util_regex_IntHash_put___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT
     _r0 = _r3;
     label7:;
     XMLVM_SOURCE_POSITION("IntHash.java", 47)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_regex_IntHash*) _r4.o)->fields.java_util_regex_IntHash.table_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
     _r2.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
     if (_r2.i == 0) goto label19;
     XMLVM_SOURCE_POSITION("IntHash.java", 48)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_regex_IntHash*) _r4.o)->fields.java_util_regex_IntHash.table_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
@@ -326,11 +339,13 @@ void java_util_regex_IntHash_put___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT
     if (_r2.i != _r5.i) goto label28;
     label19:;
     XMLVM_SOURCE_POSITION("IntHash.java", 49)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_regex_IntHash*) _r4.o)->fields.java_util_regex_IntHash.table_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i] = _r5.i;
     XMLVM_SOURCE_POSITION("IntHash.java", 50)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_regex_IntHash*) _r4.o)->fields.java_util_regex_IntHash.values_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -342,10 +357,12 @@ void java_util_regex_IntHash_put___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT
     XMLVM_SOURCE_POSITION("IntHash.java", 53)
     _r1.i = _r1.i + 1;
     XMLVM_SOURCE_POSITION("IntHash.java", 54)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_regex_IntHash*) _r4.o)->fields.java_util_regex_IntHash.mask_;
     _r1.i = _r1.i & _r2.i;
     _r0.i = _r0.i + _r1.i;
     XMLVM_SOURCE_POSITION("IntHash.java", 57)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_regex_IntHash*) _r4.o)->fields.java_util_regex_IntHash.mask_;
     _r0.i = _r0.i & _r2.i;
     XMLVM_SOURCE_POSITION("IntHash.java", 46)
@@ -366,6 +383,7 @@ JAVA_INT java_util_regex_IntHash_get___int(JAVA_OBJECT me, JAVA_INT n1)
     _r4.o = me;
     _r5.i = n1;
     XMLVM_SOURCE_POSITION("IntHash.java", 62)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_regex_IntHash*) _r4.o)->fields.java_util_regex_IntHash.mask_;
     _r0.i = _r0.i & _r5.i;
     _r1.i = 0;
@@ -375,6 +393,7 @@ JAVA_INT java_util_regex_IntHash_get___int(JAVA_OBJECT me, JAVA_INT n1)
     label7:;
     XMLVM_SOURCE_POSITION("IntHash.java", 63)
     XMLVM_SOURCE_POSITION("IntHash.java", 67)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_regex_IntHash*) _r4.o)->fields.java_util_regex_IntHash.table_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -382,6 +401,7 @@ JAVA_INT java_util_regex_IntHash_get___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("IntHash.java", 69)
     if (_r2.i != 0) goto label16;
     XMLVM_SOURCE_POSITION("IntHash.java", 70)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_regex_IntHash*) _r4.o)->fields.java_util_regex_IntHash.size_;
     label15:;
     XMLVM_SOURCE_POSITION("IntHash.java", 74)
@@ -390,6 +410,7 @@ JAVA_INT java_util_regex_IntHash_get___int(JAVA_OBJECT me, JAVA_INT n1)
     label16:;
     XMLVM_SOURCE_POSITION("IntHash.java", 73)
     if (_r2.i != _r5.i) goto label23;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_IntHash*) _r4.o)->fields.java_util_regex_IntHash.values_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -399,10 +420,12 @@ JAVA_INT java_util_regex_IntHash_get___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("IntHash.java", 77)
     _r0.i = _r0.i + 1;
     XMLVM_SOURCE_POSITION("IntHash.java", 78)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_regex_IntHash*) _r4.o)->fields.java_util_regex_IntHash.mask_;
     _r0.i = _r0.i & _r2.i;
     _r1.i = _r1.i + _r0.i;
     XMLVM_SOURCE_POSITION("IntHash.java", 81)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_regex_IntHash*) _r4.o)->fields.java_util_regex_IntHash.mask_;
     _r1.i = _r1.i & _r2.i;
     XMLVM_SOURCE_POSITION("IntHash.java", 66)

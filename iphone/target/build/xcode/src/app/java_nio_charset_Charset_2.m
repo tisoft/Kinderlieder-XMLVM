@@ -217,6 +217,7 @@ void java_nio_charset_Charset_2___INIT____java_lang_Thread(JAVA_OBJECT me, JAVA_
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("Charset.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_charset_Charset_2*) _r0.o)->fields.java_nio_charset_Charset_2.val_t_ = _r1.o;
     XMLVM_SOURCE_POSITION("Charset.java", 209)
     XMLVM_CHECK_NPE(0)
@@ -234,6 +235,7 @@ JAVA_OBJECT java_nio_charset_Charset_2_run__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Charset.java", 211)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_charset_Charset_2*) _r1.o)->fields.java_nio_charset_Charset_2.val_t_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_Thread_getContextClassLoader__(_r0.o);

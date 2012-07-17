@@ -252,9 +252,13 @@ void org_apache_harmony_niochar_CharsetProviderImpl_1___INIT____org_apache_harmo
     _r3.o = n3;
     _r4.o = n4;
     XMLVM_SOURCE_POSITION("CharsetProviderImpl.java", 191)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_niochar_CharsetProviderImpl_1*) _r0.o)->fields.org_apache_harmony_niochar_CharsetProviderImpl_1.this_0_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_niochar_CharsetProviderImpl_1*) _r0.o)->fields.org_apache_harmony_niochar_CharsetProviderImpl_1.val_className_ = _r2.o;
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_niochar_CharsetProviderImpl_1*) _r0.o)->fields.org_apache_harmony_niochar_CharsetProviderImpl_1.val_canonicalName_ = _r3.o;
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_niochar_CharsetProviderImpl_1*) _r0.o)->fields.org_apache_harmony_niochar_CharsetProviderImpl_1.val_aliases_ = _r4.o;
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
@@ -278,6 +282,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_1_run__(JAVA_OBJECT m
     XMLVM_TRY_BEGIN(w19934aaab5b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("CharsetProviderImpl.java", 194)
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((org_apache_harmony_niochar_CharsetProviderImpl_1*) _r6.o)->fields.org_apache_harmony_niochar_CharsetProviderImpl_1.val_className_;
     _r0.o = java_lang_Class_forName___java_lang_String(_r3.o);
     _r3.i = 2;
@@ -307,11 +312,13 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_1_run__(JAVA_OBJECT m
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r3.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r3.i);
     _r4.i = 0;
+    XMLVM_CHECK_NPE(6)
     _r5.o = ((org_apache_harmony_niochar_CharsetProviderImpl_1*) _r6.o)->fields.org_apache_harmony_niochar_CharsetProviderImpl_1.val_canonicalName_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
     _r4.i = 1;
+    XMLVM_CHECK_NPE(6)
     _r5.o = ((org_apache_harmony_niochar_CharsetProviderImpl_1*) _r6.o)->fields.org_apache_harmony_niochar_CharsetProviderImpl_1.val_aliases_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);

@@ -254,6 +254,7 @@ void java_util_regex_UMultiLineEOLSet___INIT____int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_CHECK_NPE(0)
     java_util_regex_AbstractSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("UMultiLineEOLSet.java", 33)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_UMultiLineEOLSet*) _r0.o)->fields.java_util_regex_UMultiLineEOLSet.consCounter_ = _r1.i;
     XMLVM_SOURCE_POSITION("UMultiLineEOLSet.java", 34)
     XMLVM_EXIT_METHOD()
@@ -287,11 +288,13 @@ JAVA_INT java_util_regex_UMultiLineEOLSet_matches___int_java_lang_CharSequence_j
     XMLVM_SOURCE_POSITION("UMultiLineEOLSet.java", 41)
     if (_r0.i > 0) goto label32;
     XMLVM_SOURCE_POSITION("UMultiLineEOLSet.java", 42)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_UMultiLineEOLSet*) _r2.o)->fields.java_util_regex_UMultiLineEOLSet.consCounter_;
     _r1.i = 0;
     XMLVM_CHECK_NPE(5)
     java_util_regex_MatchResultImpl_setConsumed___int_int(_r5.o, _r0.i, _r1.i);
     XMLVM_SOURCE_POSITION("UMultiLineEOLSet.java", 43)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_AbstractSet*) _r2.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -313,11 +316,13 @@ JAVA_INT java_util_regex_UMultiLineEOLSet_matches___int_java_lang_CharSequence_j
     _r1.i = 10;
     if (_r0.i != _r1.i) goto label55;
     XMLVM_SOURCE_POSITION("UMultiLineEOLSet.java", 45)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_UMultiLineEOLSet*) _r2.o)->fields.java_util_regex_UMultiLineEOLSet.consCounter_;
     _r1.i = 1;
     XMLVM_CHECK_NPE(5)
     java_util_regex_MatchResultImpl_setConsumed___int_int(_r5.o, _r0.i, _r1.i);
     XMLVM_SOURCE_POSITION("UMultiLineEOLSet.java", 46)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_AbstractSet*) _r2.o)->fields.java_util_regex_AbstractSet.next_;
     _r1.i = _r3.i + 1;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
@@ -342,6 +347,7 @@ JAVA_BOOLEAN java_util_regex_UMultiLineEOLSet_hasConsumed___java_util_regex_Matc
     _r3.o = me;
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("UMultiLineEOLSet.java", 53)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_regex_UMultiLineEOLSet*) _r3.o)->fields.java_util_regex_UMultiLineEOLSet.consCounter_;
     XMLVM_CHECK_NPE(4)
     _r0.i = java_util_regex_MatchResultImpl_getConsumed___int(_r4.o, _r0.i);
@@ -350,6 +356,7 @@ JAVA_BOOLEAN java_util_regex_UMultiLineEOLSet_hasConsumed___java_util_regex_Matc
     _r0.i = 0;
     label11:;
     XMLVM_SOURCE_POSITION("UMultiLineEOLSet.java", 54)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_UMultiLineEOLSet*) _r3.o)->fields.java_util_regex_UMultiLineEOLSet.consCounter_;
     _r2.i = -1;
     XMLVM_CHECK_NPE(4)

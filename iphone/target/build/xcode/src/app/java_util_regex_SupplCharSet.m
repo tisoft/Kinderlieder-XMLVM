@@ -338,13 +338,17 @@ void java_util_regex_SupplCharSet___INIT____int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_CHECK_NPE(2)
     java_util_regex_LeafSet___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("SupplCharSet.java", 93)
+    XMLVM_CHECK_NPE(2)
     ((java_util_regex_SupplCharSet*) _r2.o)->fields.java_util_regex_SupplCharSet.high_ = _r1.i;
     XMLVM_SOURCE_POSITION("SupplCharSet.java", 95)
+    XMLVM_CHECK_NPE(2)
     ((java_util_regex_SupplCharSet*) _r2.o)->fields.java_util_regex_SupplCharSet.low_ = _r1.i;
     XMLVM_SOURCE_POSITION("SupplCharSet.java", 101)
     _r0.i = 2;
+    XMLVM_CHECK_NPE(2)
     ((java_util_regex_LeafSet*) _r2.o)->fields.java_util_regex_LeafSet.charCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("SupplCharSet.java", 102)
+    XMLVM_CHECK_NPE(2)
     ((java_util_regex_SupplCharSet*) _r2.o)->fields.java_util_regex_SupplCharSet.ch_ = _r3.i;
     XMLVM_SOURCE_POSITION("SupplCharSet.java", 103)
     _r0.o = java_lang_Character_toChars___int(_r3.i);
@@ -352,12 +356,14 @@ void java_util_regex_SupplCharSet___INIT____int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r1.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
+    XMLVM_CHECK_NPE(2)
     ((java_util_regex_SupplCharSet*) _r2.o)->fields.java_util_regex_SupplCharSet.high_ = _r1.i;
     XMLVM_SOURCE_POSITION("SupplCharSet.java", 110)
     _r1.i = 1;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
+    XMLVM_CHECK_NPE(2)
     ((java_util_regex_SupplCharSet*) _r2.o)->fields.java_util_regex_SupplCharSet.low_ = _r0.i;
     XMLVM_SOURCE_POSITION("SupplCharSet.java", 111)
     XMLVM_EXIT_METHOD()
@@ -386,8 +392,10 @@ JAVA_INT java_util_regex_SupplCharSet_accepts___int_java_lang_CharSequence(JAVA_
     XMLVM_CHECK_NPE(5)
     _r0.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_CharSequence_charAt___int])(_r5.o, _r0.i);
     XMLVM_SOURCE_POSITION("SupplCharSet.java", 116)
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_util_regex_SupplCharSet*) _r3.o)->fields.java_util_regex_SupplCharSet.high_;
     if (_r2.i != _r1.i) goto label20;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_SupplCharSet*) _r3.o)->fields.java_util_regex_SupplCharSet.low_;
     if (_r1.i != _r0.i) goto label20;
     _r0.i = 2;
@@ -443,6 +451,7 @@ JAVA_INT java_util_regex_SupplCharSet_find___int_java_lang_CharSequence_java_uti
     return _r1.i;
     label18:;
     XMLVM_SOURCE_POSITION("SupplCharSet.java", 127)
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_util_regex_SupplCharSet*) _r7.o)->fields.java_util_regex_SupplCharSet.high_;
     XMLVM_CHECK_NPE(1)
     _r3.i = java_lang_String_indexOf___int_int(_r1.o, _r4.i, _r3.i);
@@ -461,9 +470,11 @@ JAVA_INT java_util_regex_SupplCharSet_find___int_java_lang_CharSequence_java_uti
     XMLVM_CHECK_NPE(1)
     _r4.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) ((java_lang_String*) _r1.o)->tib->vtable[6])(_r1.o, _r3.i);
     XMLVM_SOURCE_POSITION("SupplCharSet.java", 135)
+    XMLVM_CHECK_NPE(7)
     _r5.i = ((java_util_regex_SupplCharSet*) _r7.o)->fields.java_util_regex_SupplCharSet.low_;
     if (_r5.i != _r4.i) goto label53;
     XMLVM_SOURCE_POSITION("SupplCharSet.java", 136)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_util_regex_AbstractSet*) _r7.o)->fields.java_util_regex_AbstractSet.next_;
     _r5.i = _r3.i + 1;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
@@ -525,6 +536,7 @@ JAVA_INT java_util_regex_SupplCharSet_findBack___int_int_java_lang_CharSequence_
     return _r1.i;
     label14:;
     XMLVM_SOURCE_POSITION("SupplCharSet.java", 156)
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_util_regex_SupplCharSet*) _r6.o)->fields.java_util_regex_SupplCharSet.low_;
     XMLVM_CHECK_NPE(1)
     _r2.i = java_lang_String_lastIndexOf___int_int(_r1.o, _r3.i, _r2.i);
@@ -539,12 +551,14 @@ JAVA_INT java_util_regex_SupplCharSet_findBack___int_int_java_lang_CharSequence_
     goto label13;
     label28:;
     XMLVM_SOURCE_POSITION("SupplCharSet.java", 162)
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_util_regex_SupplCharSet*) _r6.o)->fields.java_util_regex_SupplCharSet.high_;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(1)
     _r4.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) ((java_lang_String*) _r1.o)->tib->vtable[6])(_r1.o, _r2.i);
     if (_r3.i != _r4.i) goto label48;
     XMLVM_SOURCE_POSITION("SupplCharSet.java", 163)
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_util_regex_AbstractSet*) _r6.o)->fields.java_util_regex_AbstractSet.next_;
     _r4.i = _r2.i + 2;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
@@ -577,10 +591,12 @@ JAVA_OBJECT java_util_regex_SupplCharSet_getName__(JAVA_OBJECT me)
     _r0.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_regex_SupplCharSet*) _r2.o)->fields.java_util_regex_SupplCharSet.high_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_regex_SupplCharSet*) _r2.o)->fields.java_util_regex_SupplCharSet.low_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -601,6 +617,7 @@ JAVA_INT java_util_regex_SupplCharSet_getCodePoint__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SupplCharSet.java", 181)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_SupplCharSet*) _r1.o)->fields.java_util_regex_SupplCharSet.ch_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -629,6 +646,7 @@ JAVA_BOOLEAN java_util_regex_SupplCharSet_first___java_util_regex_AbstractSet(JA
     _r5.o = _r5.o;
     XMLVM_CHECK_NPE(5)
     _r0.i = java_util_regex_SupplCharSet_getCodePoint__(_r5.o);
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_regex_SupplCharSet*) _r4.o)->fields.java_util_regex_SupplCharSet.ch_;
     if (_r0.i != _r1.i) goto label18;
     _r0 = _r3;
@@ -647,6 +665,7 @@ JAVA_BOOLEAN java_util_regex_SupplCharSet_first___java_util_regex_AbstractSet(JA
     XMLVM_SOURCE_POSITION("SupplCharSet.java", 188)
     _r5.o = _r5.o;
     XMLVM_SOURCE_POSITION("SupplCharSet.java", 189)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_regex_SupplCharSet*) _r4.o)->fields.java_util_regex_SupplCharSet.ch_;
     //java_util_regex_SupplRangeSet_contains___int[17]
     XMLVM_CHECK_NPE(5)

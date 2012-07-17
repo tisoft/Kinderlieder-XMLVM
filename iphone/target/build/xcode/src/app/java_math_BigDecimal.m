@@ -2536,17 +2536,23 @@ void java_math_BigDecimal___INIT____long_int(JAVA_OBJECT me, JAVA_LONG n1, JAVA_
     java_lang_Number___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("BigDecimal.java", 123)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.toStringImage_ = _r0.o;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 126)
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.hashCode_ = _r1.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 265)
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.precision_ = _r1.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 268)
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.smallValue_ = _r3.l;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 269)
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.scale_ = _r5.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 270)
     _r0.i = java_math_BigDecimal_bitLength___long(_r3.l);
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.bitLength_ = _r0.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 271)
     XMLVM_EXIT_METHOD()
@@ -2572,18 +2578,24 @@ void java_math_BigDecimal___INIT____int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_IN
     java_lang_Number___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("BigDecimal.java", 123)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.toStringImage_ = _r0.o;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 126)
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.hashCode_ = _r1.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 265)
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.precision_ = _r1.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 274)
     _r0.l = (JAVA_LONG) _r3.i;
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.smallValue_ = _r0.l;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 275)
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.scale_ = _r4.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 276)
     _r0.i = java_math_BigDecimal_bitLength___int(_r3.i);
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.bitLength_ = _r0.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 277)
     XMLVM_EXIT_METHOD()
@@ -2618,12 +2630,15 @@ void java_math_BigDecimal___INIT____char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJ
     java_lang_Number___INIT___(_r10.o);
     XMLVM_SOURCE_POSITION("BigDecimal.java", 123)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(10)
     ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.toStringImage_ = _r0.o;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 126)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(10)
     ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.hashCode_ = _r0.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 265)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(10)
     ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.precision_ = _r0.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 301)
     _r0.i = 1;
@@ -2731,11 +2746,14 @@ void java_math_BigDecimal___INIT____char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJ
     label118:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 350)
     _r4.i = _r6.i - _r3.i;
+    XMLVM_CHECK_NPE(10)
     ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.scale_ = _r4.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 351)
+    XMLVM_CHECK_NPE(10)
     _r4.i = ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.scale_;
     _r2.i = _r2.i + _r4.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 352)
+    XMLVM_CHECK_NPE(10)
     _r4.i = ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.scale_;
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder_append___char_1ARRAY_int_int(_r1.o, _r11.o, _r3.i, _r4.i);
@@ -2782,6 +2800,7 @@ void java_math_BigDecimal___INIT____char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJ
     _r0.i = _r0.i - _r4.i;
     _r0.o = java_lang_String_valueOf___char_1ARRAY_int_int(_r11.o, _r4.i, _r0.i);
     XMLVM_SOURCE_POSITION("BigDecimal.java", 370)
+    XMLVM_CHECK_NPE(10)
     _r4.i = ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.scale_;
     _r4.l = (JAVA_LONG) _r4.i;
     _r0.i = java_lang_Integer_parseInt___java_lang_String(_r0.o);
@@ -2789,8 +2808,10 @@ void java_math_BigDecimal___INIT____char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJ
     _r4.l = _r4.l - _r6.l;
     _r0.i = (JAVA_INT) _r4.l;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 371)
+    XMLVM_CHECK_NPE(10)
     ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.scale_ = _r0.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 372)
+    XMLVM_CHECK_NPE(10)
     _r0.i = ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.scale_;
     _r6.l = (JAVA_LONG) _r0.i;
     _r0.i = _r4.l > _r6.l ? 1 : (_r4.l == _r6.l ? 0 : -1);
@@ -2842,6 +2863,7 @@ void java_math_BigDecimal___INIT____char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJ
     label239:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 354)
     _r3.i = 0;
+    XMLVM_CHECK_NPE(10)
     ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.scale_ = _r3.i;
     _r3 = _r2;
     _r4 = _r6;
@@ -2856,16 +2878,20 @@ void java_math_BigDecimal___INIT____char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJ
     XMLVM_CHECK_NPE(1)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r1.o)->tib->vtable[5])(_r1.o);
     _r3.l = java_lang_Long_parseLong___java_lang_String(_r0.o);
+    XMLVM_CHECK_NPE(10)
     ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.smallValue_ = _r3.l;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 380)
+    XMLVM_CHECK_NPE(10)
     _r3.l = ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.smallValue_;
     _r0.i = java_math_BigDecimal_bitLength___long(_r3.l);
+    XMLVM_CHECK_NPE(10)
     ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.bitLength_ = _r0.i;
     label268:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 384)
     XMLVM_CHECK_NPE(1)
     _r0.i = java_lang_AbstractStringBuilder_length__(_r1.o);
     _r0.i = _r0.i - _r2.i;
+    XMLVM_CHECK_NPE(10)
     ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.precision_ = _r0.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 385)
     _r0.i = 0;
@@ -2875,9 +2901,11 @@ void java_math_BigDecimal___INIT____char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJ
     _r1.i = 45;
     if (_r0.i != _r1.i) goto label290;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 386)
+    XMLVM_CHECK_NPE(10)
     _r0.i = ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.precision_;
     _r1.i = 1;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(10)
     ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.precision_ = _r0.i;
     label290:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 388)
@@ -3062,10 +3090,13 @@ void java_math_BigDecimal___INIT____double(JAVA_OBJECT me, JAVA_DOUBLE n1)
     java_lang_Number___INIT___(_r12.o);
     XMLVM_SOURCE_POSITION("BigDecimal.java", 123)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(12)
     ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.toStringImage_ = _r0.o;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 126)
+    XMLVM_CHECK_NPE(12)
     ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.hashCode_ = _r6.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 265)
+    XMLVM_CHECK_NPE(12)
     ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.precision_ = _r6.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 517)
     _r0.i = java_lang_Double_isInfinite___double(_r13.d);
@@ -3091,8 +3122,10 @@ void java_math_BigDecimal___INIT____double(JAVA_OBJECT me, JAVA_DOUBLE n1)
     _r2.l = _r2.l & _r4.l;
     _r2.i = (JAVA_INT) _r2.l;
     _r2.i = _r9.i - _r2.i;
+    XMLVM_CHECK_NPE(12)
     ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_ = _r2.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 527)
+    XMLVM_CHECK_NPE(12)
     _r2.i = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_;
     if (_r2.i != _r9.i) goto label132;
     _r2.l = 4503599627370495;
@@ -3103,22 +3136,28 @@ void java_math_BigDecimal___INIT____double(JAVA_OBJECT me, JAVA_DOUBLE n1)
     _r4.i = _r2.l > _r10.l ? 1 : (_r2.l == _r10.l ? 0 : -1);
     if (_r4.i != 0) goto label77;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 530)
+    XMLVM_CHECK_NPE(12)
     ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_ = _r6.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 531)
+    XMLVM_CHECK_NPE(12)
     ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.precision_ = _r7.i;
     label77:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 534)
+    XMLVM_CHECK_NPE(12)
     _r4.i = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_;
     if (_r4.i <= 0) goto label98;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 535)
+    XMLVM_CHECK_NPE(12)
     _r4.i = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_;
     _r5.i = java_lang_Long_numberOfTrailingZeros___long(_r2.l);
     _r4.i = java_lang_Math_min___int_int(_r4.i, _r5.i);
     XMLVM_SOURCE_POSITION("BigDecimal.java", 536)
     _r2.l = ((JAVA_ULONG) _r2.l) >> (0x3f & ((JAVA_ULONG) _r4.l));
     XMLVM_SOURCE_POSITION("BigDecimal.java", 537)
+    XMLVM_CHECK_NPE(12)
     _r5.i = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_;
     _r4.i = _r5.i - _r4.i;
+    XMLVM_CHECK_NPE(12)
     ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_ = _r4.i;
     label98:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 540)
@@ -3132,23 +3171,29 @@ void java_math_BigDecimal___INIT____double(JAVA_OBJECT me, JAVA_DOUBLE n1)
     XMLVM_SOURCE_POSITION("BigDecimal.java", 543)
     _r2.i = java_math_BigDecimal_bitLength___long(_r0.l);
     XMLVM_SOURCE_POSITION("BigDecimal.java", 544)
+    XMLVM_CHECK_NPE(12)
     _r3.i = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_;
     if (_r3.i >= 0) goto label160;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 545)
     if (_r2.i != 0) goto label142;
     _r2 = _r6;
     label117:;
+    XMLVM_CHECK_NPE(12)
     ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.bitLength_ = _r2.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 546)
+    XMLVM_CHECK_NPE(12)
     _r2.i = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.bitLength_;
     if (_r2.i >= _r8.i) goto label146;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 547)
+    XMLVM_CHECK_NPE(12)
     _r2.i = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_;
     _r2.i = -_r2.i;
     _r0.l = _r0.l << (0x3f & _r2.l);
+    XMLVM_CHECK_NPE(12)
     ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.smallValue_ = _r0.l;
     label129:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 551)
+    XMLVM_CHECK_NPE(12)
     ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_ = _r6.i;
     label131:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 565)
@@ -3162,29 +3207,35 @@ void java_math_BigDecimal___INIT____double(JAVA_OBJECT me, JAVA_DOUBLE n1)
     _r2.l = _r2.l | _r4.l;
     goto label69;
     label142:;
+    XMLVM_CHECK_NPE(12)
     _r3.i = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_;
     _r2.i = _r2.i - _r3.i;
     goto label117;
     label146:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 549)
     _r0.o = java_math_BigInteger_valueOf___long(_r0.l);
+    XMLVM_CHECK_NPE(12)
     _r1.i = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_;
     _r1.i = -_r1.i;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_math_BigInteger_shiftLeft___int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(12)
     ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.intVal_ = _r0.o;
     goto label129;
     label160:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 552)
+    XMLVM_CHECK_NPE(12)
     _r3.i = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_;
     if (_r3.i <= 0) goto label212;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 554)
+    XMLVM_CHECK_NPE(12)
     _r3.i = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_;
     _r4.o = java_math_BigDecimal_GET_LONG_FIVE_POW();
     _r4.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r4.o));
     if (_r3.i >= _r4.i) goto label198;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 555)
     _r3.o = java_math_BigDecimal_GET_LONG_FIVE_POW_BIT_LENGTH();
+    XMLVM_CHECK_NPE(12)
     _r4.i = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
@@ -3193,20 +3244,25 @@ void java_math_BigDecimal___INIT____double(JAVA_OBJECT me, JAVA_DOUBLE n1)
     if (_r2.i >= _r8.i) goto label198;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 556)
     _r2.o = java_math_BigDecimal_GET_LONG_FIVE_POW();
+    XMLVM_CHECK_NPE(12)
     _r3.i = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
     _r2.l = ((JAVA_ARRAY_LONG*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i];
     _r0.l = _r0.l * _r2.l;
+    XMLVM_CHECK_NPE(12)
     ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.smallValue_ = _r0.l;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 557)
+    XMLVM_CHECK_NPE(12)
     _r0.l = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.smallValue_;
     _r0.i = java_math_BigDecimal_bitLength___long(_r0.l);
+    XMLVM_CHECK_NPE(12)
     ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.bitLength_ = _r0.i;
     goto label131;
     label198:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 559)
     _r0.o = java_math_BigInteger_valueOf___long(_r0.l);
+    XMLVM_CHECK_NPE(12)
     _r1.i = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_;
     _r0.o = java_math_Multiplication_multiplyByFivePow___java_math_BigInteger_int(_r0.o, _r1.i);
     XMLVM_CHECK_NPE(12)
@@ -3214,8 +3270,10 @@ void java_math_BigDecimal___INIT____double(JAVA_OBJECT me, JAVA_DOUBLE n1)
     goto label131;
     label212:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 562)
+    XMLVM_CHECK_NPE(12)
     ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.smallValue_ = _r0.l;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 563)
+    XMLVM_CHECK_NPE(12)
     ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.bitLength_ = _r2.i;
     goto label131;
     label217:;
@@ -3306,10 +3364,13 @@ void java_math_BigDecimal___INIT____java_math_BigInteger_int(JAVA_OBJECT me, JAV
     java_lang_Number___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("BigDecimal.java", 123)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.toStringImage_ = _r0.o;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 126)
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.hashCode_ = _r1.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 265)
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.precision_ = _r1.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 638)
     if (_r3.o != JAVA_NULL) goto label19;
@@ -3320,6 +3381,7 @@ void java_math_BigDecimal___INIT____java_math_BigInteger_int(JAVA_OBJECT me, JAV
     XMLVM_THROW_CUSTOM(_r0.o)
     label19:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 641)
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.scale_ = _r4.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 642)
     XMLVM_CHECK_NPE(2)
@@ -3568,7 +3630,9 @@ JAVA_OBJECT java_math_BigDecimal_add___java_math_BigDecimal(JAVA_OBJECT me, JAVA
     _r4.o = me;
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 810)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.scale_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_math_BigDecimal*) _r5.o)->fields.java_math_BigDecimal.scale_;
     _r0.i = _r0.i - _r1.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 812)
@@ -3605,16 +3669,21 @@ JAVA_OBJECT java_math_BigDecimal_add___java_math_BigDecimal(JAVA_OBJECT me, JAVA
     XMLVM_SOURCE_POSITION("BigDecimal.java", 825)
     if (_r0.i != 0) goto label81;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 827)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.bitLength_;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_math_BigDecimal*) _r5.o)->fields.java_math_BigDecimal.bitLength_;
     _r0.i = java_lang_Math_max___int_int(_r0.i, _r1.i);
     _r0.i = _r0.i + 1;
     _r1.i = 64;
     if (_r0.i >= _r1.i) goto label61;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 828)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.smallValue_;
+    XMLVM_CHECK_NPE(5)
     _r2.l = ((java_math_BigDecimal*) _r5.o)->fields.java_math_BigDecimal.smallValue_;
     _r0.l = _r0.l + _r2.l;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.scale_;
     _r0.o = java_math_BigDecimal_valueOf___long_int(_r0.l, _r2.i);
     goto label14;
@@ -3627,6 +3696,7 @@ JAVA_OBJECT java_math_BigDecimal_add___java_math_BigDecimal(JAVA_OBJECT me, JAVA
     _r2.o = java_math_BigDecimal_getUnscaledValue__(_r5.o);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_math_BigInteger_add___java_math_BigInteger(_r1.o, _r2.o);
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.scale_;
     XMLVM_CHECK_NPE(0)
     java_math_BigDecimal___INIT____java_math_BigInteger_int(_r0.o, _r1.o, _r2.i);
@@ -3666,7 +3736,9 @@ JAVA_OBJECT java_math_BigDecimal_addAndMult10___java_math_BigDecimal_java_math_B
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     if (_r8.i >= _r0.i) goto label41;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 841)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.bitLength_;
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.bitLength_;
     _r2.o = java_math_BigDecimal_GET_LONG_TEN_POW_BIT_LENGTH();
     XMLVM_CHECK_NPE(2)
@@ -3678,7 +3750,9 @@ JAVA_OBJECT java_math_BigDecimal_addAndMult10___java_math_BigDecimal_java_math_B
     _r1.i = 64;
     if (_r0.i >= _r1.i) goto label41;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 842)
+    XMLVM_CHECK_NPE(6)
     _r0.l = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.smallValue_;
+    XMLVM_CHECK_NPE(7)
     _r2.l = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.smallValue_;
     _r4.o = java_math_BigDecimal_GET_LONG_TEN_POW();
     XMLVM_CHECK_NPE(4)
@@ -3686,6 +3760,7 @@ JAVA_OBJECT java_math_BigDecimal_addAndMult10___java_math_BigDecimal_java_math_B
     _r4.l = ((JAVA_ARRAY_LONG*) (((org_xmlvm_runtime_XMLVMArray*) _r4.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r8.i];
     _r2.l = _r2.l * _r4.l;
     _r0.l = _r0.l + _r2.l;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.scale_;
     _r0.o = java_math_BigDecimal_valueOf___long_int(_r0.l, _r2.i);
     label40:;
@@ -3703,6 +3778,7 @@ JAVA_OBJECT java_math_BigDecimal_addAndMult10___java_math_BigDecimal_java_math_B
     _r2.o = java_math_Multiplication_multiplyByTenPow___java_math_BigInteger_long(_r2.o, _r3.l);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_math_BigInteger_add___java_math_BigInteger(_r1.o, _r2.o);
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.scale_;
     XMLVM_CHECK_NPE(0)
     java_math_BigDecimal___INIT____java_math_BigInteger_int(_r0.o, _r1.o, _r2.i);
@@ -3732,8 +3808,10 @@ JAVA_OBJECT java_math_BigDecimal_add___java_math_BigDecimal_java_math_MathContex
     _r7.l = 1;
     _r6.i = 10;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 864)
+    XMLVM_CHECK_NPE(9)
     _r0.i = ((java_math_BigDecimal*) _r9.o)->fields.java_math_BigDecimal.scale_;
     _r0.l = (JAVA_LONG) _r0.i;
+    XMLVM_CHECK_NPE(10)
     _r2.i = ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.scale_;
     _r2.l = (JAVA_LONG) _r2.i;
     _r0.l = _r0.l - _r2.l;
@@ -3822,6 +3900,7 @@ JAVA_OBJECT java_math_BigDecimal_add___java_math_BigDecimal_java_math_MathContex
     label120:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 897)
     _r2.o = __NEW_java_math_BigDecimal();
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_math_BigDecimal*) _r1.o)->fields.java_math_BigDecimal.scale_;
     _r1.i = _r1.i + 1;
     XMLVM_CHECK_NPE(2)
@@ -3867,7 +3946,9 @@ JAVA_OBJECT java_math_BigDecimal_subtract___java_math_BigDecimal(JAVA_OBJECT me,
     _r8.o = n1;
     _r4.i = 64;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 912)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.scale_;
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.scale_;
     _r0.i = _r0.i - _r1.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 914)
@@ -3905,15 +3986,20 @@ JAVA_OBJECT java_math_BigDecimal_subtract___java_math_BigDecimal(JAVA_OBJECT me,
     XMLVM_SOURCE_POSITION("BigDecimal.java", 927)
     if (_r0.i != 0) goto label84;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 929)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.bitLength_;
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.bitLength_;
     _r0.i = java_lang_Math_max___int_int(_r0.i, _r1.i);
     _r0.i = _r0.i + 1;
     if (_r0.i >= _r4.i) goto label64;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 930)
+    XMLVM_CHECK_NPE(7)
     _r0.l = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.smallValue_;
+    XMLVM_CHECK_NPE(8)
     _r2.l = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.smallValue_;
     _r0.l = _r0.l - _r2.l;
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.scale_;
     _r0.o = java_math_BigDecimal_valueOf___long_int(_r0.l, _r2.i);
     goto label19;
@@ -3926,6 +4012,7 @@ JAVA_OBJECT java_math_BigDecimal_subtract___java_math_BigDecimal(JAVA_OBJECT me,
     _r2.o = java_math_BigDecimal_getUnscaledValue__(_r8.o);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_math_BigInteger_subtract___java_math_BigInteger(_r1.o, _r2.o);
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.scale_;
     XMLVM_CHECK_NPE(0)
     java_math_BigDecimal___INIT____java_math_BigInteger_int(_r0.o, _r1.o, _r2.i);
@@ -3938,7 +4025,9 @@ JAVA_OBJECT java_math_BigDecimal_subtract___java_math_BigDecimal(JAVA_OBJECT me,
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i >= _r1.i) goto label126;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 936)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.bitLength_;
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.bitLength_;
     _r3.o = java_math_BigDecimal_GET_LONG_TEN_POW_BIT_LENGTH();
     XMLVM_CHECK_NPE(3)
@@ -3949,7 +4038,9 @@ JAVA_OBJECT java_math_BigDecimal_subtract___java_math_BigDecimal(JAVA_OBJECT me,
     _r1.i = _r1.i + 1;
     if (_r1.i >= _r4.i) goto label126;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 937)
+    XMLVM_CHECK_NPE(7)
     _r1.l = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.smallValue_;
+    XMLVM_CHECK_NPE(8)
     _r3.l = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.smallValue_;
     _r5.o = java_math_BigDecimal_GET_LONG_TEN_POW();
     XMLVM_CHECK_NPE(5)
@@ -3957,6 +4048,7 @@ JAVA_OBJECT java_math_BigDecimal_subtract___java_math_BigDecimal(JAVA_OBJECT me,
     _r5.l = ((JAVA_ARRAY_LONG*) (((org_xmlvm_runtime_XMLVMArray*) _r5.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
     _r3.l = _r3.l * _r5.l;
     _r0.l = _r1.l - _r3.l;
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.scale_;
     _r0.o = java_math_BigDecimal_valueOf___long_int(_r0.l, _r2.i);
     goto label19;
@@ -3972,6 +4064,7 @@ JAVA_OBJECT java_math_BigDecimal_subtract___java_math_BigDecimal(JAVA_OBJECT me,
     _r0.o = java_math_Multiplication_multiplyByTenPow___java_math_BigInteger_long(_r3.o, _r4.l);
     XMLVM_CHECK_NPE(2)
     _r0.o = java_math_BigInteger_subtract___java_math_BigInteger(_r2.o, _r0.o);
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.scale_;
     XMLVM_CHECK_NPE(1)
     java_math_BigDecimal___INIT____java_math_BigInteger_int(_r1.o, _r0.o, _r2.i);
@@ -3985,25 +4078,30 @@ JAVA_OBJECT java_math_BigDecimal_subtract___java_math_BigDecimal(JAVA_OBJECT me,
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i >= _r1.i) goto label195;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 944)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.bitLength_;
     _r2.o = java_math_BigDecimal_GET_LONG_TEN_POW_BIT_LENGTH();
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
     _r2.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
     _r1.i = _r1.i + _r2.i;
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.bitLength_;
     _r1.i = java_lang_Math_max___int_int(_r1.i, _r2.i);
     _r1.i = _r1.i + 1;
     if (_r1.i >= _r4.i) goto label195;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 945)
+    XMLVM_CHECK_NPE(7)
     _r1.l = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.smallValue_;
     _r3.o = java_math_BigDecimal_GET_LONG_TEN_POW();
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r0.i);
     _r3.l = ((JAVA_ARRAY_LONG*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
     _r0.l = _r1.l * _r3.l;
+    XMLVM_CHECK_NPE(8)
     _r2.l = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.smallValue_;
     _r0.l = _r0.l - _r2.l;
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.scale_;
     _r0.o = java_math_BigDecimal_valueOf___long_int(_r0.l, _r2.i);
     goto label19;
@@ -4018,6 +4116,7 @@ JAVA_OBJECT java_math_BigDecimal_subtract___java_math_BigDecimal(JAVA_OBJECT me,
     _r2.o = java_math_BigDecimal_getUnscaledValue__(_r8.o);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_math_BigInteger_subtract___java_math_BigInteger(_r0.o, _r2.o);
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.scale_;
     XMLVM_CHECK_NPE(1)
     java_math_BigDecimal___INIT____java_math_BigInteger_int(_r1.o, _r0.o, _r2.i);
@@ -4045,8 +4144,10 @@ JAVA_OBJECT java_math_BigDecimal_subtract___java_math_BigDecimal_java_math_MathC
     _r9.o = n2;
     _r6.i = 10;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 965)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.scale_;
     _r0.l = (JAVA_LONG) _r0.i;
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.scale_;
     _r2.l = (JAVA_LONG) _r2.i;
     _r0.l = _r0.l - _r2.l;
@@ -4105,6 +4206,7 @@ JAVA_OBJECT java_math_BigDecimal_subtract___java_math_BigDecimal_java_math_MathC
     label85:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 988)
     _r1.o = __NEW_java_math_BigDecimal();
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.scale_;
     _r2.i = _r2.i + 1;
     XMLVM_CHECK_NPE(1)
@@ -4154,8 +4256,10 @@ JAVA_OBJECT java_math_BigDecimal_multiply___java_math_BigDecimal(JAVA_OBJECT me,
     _r6.o = me;
     _r7.o = n1;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1008)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.scale_;
     _r0.l = (JAVA_LONG) _r0.i;
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.scale_;
     _r2.l = (JAVA_LONG) _r2.i;
     _r0.l = _r0.l + _r2.l;
@@ -4175,13 +4279,17 @@ JAVA_OBJECT java_math_BigDecimal_multiply___java_math_BigDecimal(JAVA_OBJECT me,
     return _r0.o;
     label24:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1015)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.bitLength_;
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.bitLength_;
     _r2.i = _r2.i + _r3.i;
     _r3.i = 64;
     if (_r2.i >= _r3.i) goto label47;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1016)
+    XMLVM_CHECK_NPE(6)
     _r2.l = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.smallValue_;
+    XMLVM_CHECK_NPE(7)
     _r4.l = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.smallValue_;
     _r2.l = _r2.l * _r4.l;
     _r0.i = java_math_BigDecimal_toIntScale___long(_r0.l);
@@ -4295,24 +4403,30 @@ JAVA_OBJECT java_math_BigDecimal_divide___java_math_BigDecimal_int_java_math_Rou
     XMLVM_THROW_CUSTOM(_r0.o)
     label30:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1103)
+    XMLVM_CHECK_NPE(10)
     _r0.i = ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.scale_;
     _r0.l = (JAVA_LONG) _r0.i;
+    XMLVM_CHECK_NPE(11)
     _r2.i = ((java_math_BigDecimal*) _r11.o)->fields.java_math_BigDecimal.scale_;
     _r2.l = (JAVA_LONG) _r2.i;
     _r0.l = _r0.l - _r2.l;
     _r2.l = (JAVA_LONG) _r12.i;
     _r2.l = _r0.l - _r2.l;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1104)
+    XMLVM_CHECK_NPE(10)
     _r0.i = ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.bitLength_;
     if (_r0.i >= _r6.i) goto label140;
+    XMLVM_CHECK_NPE(11)
     _r0.i = ((java_math_BigDecimal*) _r11.o)->fields.java_math_BigDecimal.bitLength_;
     if (_r0.i >= _r6.i) goto label140;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1105)
     _r0.i = _r2.l > _r7.l ? 1 : (_r2.l == _r7.l ? 0 : -1);
     if (_r0.i != 0) goto label63;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1106)
+    XMLVM_CHECK_NPE(10)
     _r0.l = ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.smallValue_;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1107)
+    XMLVM_CHECK_NPE(11)
     _r2.l = ((java_math_BigDecimal*) _r11.o)->fields.java_math_BigDecimal.smallValue_;
     _r4 = _r12;
     _r5 = _r13;
@@ -4332,6 +4446,7 @@ JAVA_OBJECT java_math_BigDecimal_divide___java_math_BigDecimal_int_java_math_Rou
     _r0.i = _r2.l > _r0.l ? 1 : (_r2.l == _r0.l ? 0 : -1);
     if (_r0.i >= 0) goto label140;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1112)
+    XMLVM_CHECK_NPE(11)
     _r0.i = ((java_math_BigDecimal*) _r11.o)->fields.java_math_BigDecimal.bitLength_;
     _r1.o = java_math_BigDecimal_GET_LONG_TEN_POW_BIT_LENGTH();
     _r4.i = (JAVA_INT) _r2.l;
@@ -4341,8 +4456,10 @@ JAVA_OBJECT java_math_BigDecimal_divide___java_math_BigDecimal_int_java_math_Rou
     _r0.i = _r0.i + _r1.i;
     if (_r0.i >= _r6.i) goto label140;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1113)
+    XMLVM_CHECK_NPE(10)
     _r0.l = ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.smallValue_;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1114)
+    XMLVM_CHECK_NPE(11)
     _r4.l = ((java_math_BigDecimal*) _r11.o)->fields.java_math_BigDecimal.smallValue_;
     _r6.o = java_math_BigDecimal_GET_LONG_TEN_POW();
     _r2.i = (JAVA_INT) _r2.l;
@@ -4363,6 +4480,7 @@ JAVA_OBJECT java_math_BigDecimal_divide___java_math_BigDecimal_int_java_math_Rou
     _r0.i = _r0.l > _r4.l ? 1 : (_r0.l == _r4.l ? 0 : -1);
     if (_r0.i >= 0) goto label140;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1120)
+    XMLVM_CHECK_NPE(10)
     _r0.i = ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.bitLength_;
     _r1.o = java_math_BigDecimal_GET_LONG_TEN_POW_BIT_LENGTH();
     _r4.l = -_r2.l;
@@ -4373,6 +4491,7 @@ JAVA_OBJECT java_math_BigDecimal_divide___java_math_BigDecimal_int_java_math_Rou
     _r0.i = _r0.i + _r1.i;
     if (_r0.i >= _r6.i) goto label140;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1121)
+    XMLVM_CHECK_NPE(10)
     _r0.l = ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.smallValue_;
     _r4.o = java_math_BigDecimal_GET_LONG_TEN_POW();
     _r2.l = -_r2.l;
@@ -4382,6 +4501,7 @@ JAVA_OBJECT java_math_BigDecimal_divide___java_math_BigDecimal_int_java_math_Rou
     _r2.l = ((JAVA_ARRAY_LONG*) (((org_xmlvm_runtime_XMLVMArray*) _r4.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
     _r0.l = _r0.l * _r2.l;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1122)
+    XMLVM_CHECK_NPE(11)
     _r2.l = ((java_math_BigDecimal*) _r11.o)->fields.java_math_BigDecimal.smallValue_;
     _r4 = _r12;
     _r5 = _r13;
@@ -4643,6 +4763,7 @@ JAVA_OBJECT java_math_BigDecimal_divide___java_math_BigDecimal_int(JAVA_OBJECT m
     _r3.o = n1;
     _r4.i = n2;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1218)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.scale_;
     _r1.o = java_math_RoundingMode_valueOf___int(_r4.i);
     XMLVM_CHECK_NPE(2)
@@ -4664,6 +4785,7 @@ JAVA_OBJECT java_math_BigDecimal_divide___java_math_BigDecimal_java_math_Roundin
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1242)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_math_BigDecimal*) _r1.o)->fields.java_math_BigDecimal.scale_;
     XMLVM_CHECK_NPE(1)
     _r0.o = java_math_BigDecimal_divide___java_math_BigDecimal_int_java_math_RoundingMode(_r1.o, _r2.o, _r0.i, _r3.o);
@@ -4701,8 +4823,10 @@ JAVA_OBJECT java_math_BigDecimal_divide___java_math_BigDecimal(JAVA_OBJECT me, J
     XMLVM_CHECK_NPE(13)
     _r1.o = java_math_BigDecimal_getUnscaledValue__(_r13.o);
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1267)
+    XMLVM_CHECK_NPE(12)
     _r2.i = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_;
     _r2.l = (JAVA_LONG) _r2.i;
+    XMLVM_CHECK_NPE(13)
     _r4.i = ((java_math_BigDecimal*) _r13.o)->fields.java_math_BigDecimal.scale_;
     _r4.l = (JAVA_LONG) _r4.i;
     _r2.l = _r2.l - _r4.l;
@@ -4875,8 +4999,10 @@ JAVA_OBJECT java_math_BigDecimal_divide___java_math_BigDecimal_java_math_MathCon
     _r2.l = (JAVA_LONG) _r2.i;
     _r0.l = _r0.l - _r2.l;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1347)
+    XMLVM_CHECK_NPE(13)
     _r2.i = ((java_math_BigDecimal*) _r13.o)->fields.java_math_BigDecimal.scale_;
     _r2.l = (JAVA_LONG) _r2.i;
+    XMLVM_CHECK_NPE(14)
     _r4.i = ((java_math_BigDecimal*) _r14.o)->fields.java_math_BigDecimal.scale_;
     _r4.l = (JAVA_LONG) _r4.i;
     _r2.l = _r2.l - _r4.l;
@@ -5102,8 +5228,10 @@ JAVA_OBJECT java_math_BigDecimal_divideToIntegralValue___java_math_BigDecimal(JA
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r11.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r11.i] = _r1.o;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1414)
+    XMLVM_CHECK_NPE(14)
     _r0.i = ((java_math_BigDecimal*) _r14.o)->fields.java_math_BigDecimal.scale_;
     _r0.l = (JAVA_LONG) _r0.i;
+    XMLVM_CHECK_NPE(15)
     _r2.i = ((java_math_BigDecimal*) _r15.o)->fields.java_math_BigDecimal.scale_;
     _r2.l = (JAVA_LONG) _r2.i;
     _r0.l = _r0.l - _r2.l;
@@ -5305,10 +5433,12 @@ JAVA_OBJECT java_math_BigDecimal_divideToIntegralValue___java_math_BigDecimal_ja
     _r3.i = _r3.i - _r4.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1486)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_math_BigDecimal*) _r0.o)->fields.java_math_BigDecimal.scale_;
     _r4 = _r0;
     _r4.l = (JAVA_LONG) _r4.i;
     _r0 = _r20;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_math_BigDecimal*) _r0.o)->fields.java_math_BigDecimal.scale_;
     _r6 = _r0;
     _r6.l = (JAVA_LONG) _r6.i;
@@ -5612,6 +5742,7 @@ JAVA_OBJECT java_math_BigDecimal_divideToIntegralValue___java_math_BigDecimal_ja
     label394:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1568)
     _r1.i = java_math_BigDecimal_toIntScale___long(_r10.l);
+    XMLVM_CHECK_NPE(9)
     ((java_math_BigDecimal*) _r9.o)->fields.java_math_BigDecimal.scale_ = _r1.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1569)
     XMLVM_CHECK_NPE(9)
@@ -5788,6 +5919,7 @@ JAVA_OBJECT java_math_BigDecimal_pow___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label24:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1695)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.scale_;
     _r0.l = (JAVA_LONG) _r0.i;
     _r2.l = (JAVA_LONG) _r5.i;
@@ -5981,18 +6113,23 @@ JAVA_OBJECT java_math_BigDecimal_negate__(JAVA_OBJECT me)
     _r4.o = me;
     _r1.i = 63;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1789)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.bitLength_;
     if (_r0.i < _r1.i) goto label18;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.bitLength_;
     if (_r0.i != _r1.i) goto label28;
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.smallValue_;
     _r2.l = -9223372036854775808;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r0.i == 0) goto label28;
     label18:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1790)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.smallValue_;
     _r0.l = -_r0.l;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.scale_;
     _r0.o = java_math_BigDecimal_valueOf___long_int(_r0.l, _r2.i);
     label27:;
@@ -6005,6 +6142,7 @@ JAVA_OBJECT java_math_BigDecimal_negate__(JAVA_OBJECT me)
     _r1.o = java_math_BigDecimal_getUnscaledValue__(_r4.o);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_math_BigInteger_negate__(_r1.o);
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.scale_;
     XMLVM_CHECK_NPE(0)
     java_math_BigDecimal___INIT____java_math_BigInteger_int(_r0.o, _r1.o, _r2.i);
@@ -6069,10 +6207,12 @@ JAVA_INT java_math_BigDecimal_signum__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1836)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.bitLength_;
     _r1.i = 64;
     if (_r0.i >= _r1.i) goto label13;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1837)
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.smallValue_;
     _r0.i = java_lang_Long_signum___long(_r0.l);
     label12:;
@@ -6099,8 +6239,10 @@ JAVA_BOOLEAN java_math_BigDecimal_isZero__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1844)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.bitLength_;
     if (_r0.i != 0) goto label14;
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.smallValue_;
     _r2.l = -1;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
@@ -6123,6 +6265,7 @@ JAVA_INT java_math_BigDecimal_scale__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1856)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_math_BigDecimal*) _r1.o)->fields.java_math_BigDecimal.scale_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -6144,9 +6287,11 @@ JAVA_INT java_math_BigDecimal_precision__(JAVA_OBJECT me)
     _r7.o = me;
     _r4.i = 1;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1869)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.precision_;
     if (_r0.i <= 0) goto label8;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1870)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.precision_;
     label7:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1894)
@@ -6154,6 +6299,7 @@ JAVA_INT java_math_BigDecimal_precision__(JAVA_OBJECT me)
     return _r0.i;
     label8:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1872)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.bitLength_;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1874)
     _r1.d = 1.0;
@@ -6178,13 +6324,16 @@ JAVA_INT java_math_BigDecimal_precision__(JAVA_OBJECT me)
     _r0.i = (JAVA_INT) _r0.d;
     label39:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1893)
+    XMLVM_CHECK_NPE(7)
     ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.precision_ = _r0.i;
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.precision_;
     goto label7;
     label44:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1880)
     if (_r0.i < _r4.i) goto label84;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1881)
+    XMLVM_CHECK_NPE(7)
     _r0.l = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.smallValue_;
     _r0.d = (JAVA_DOUBLE) _r0.l;
     goto label28;
@@ -6246,6 +6395,7 @@ JAVA_OBJECT java_math_BigDecimal_round___java_math_MathContext(JAVA_OBJECT me, J
     _r0.o = __NEW_java_math_BigDecimal();
     XMLVM_CHECK_NPE(3)
     _r1.o = java_math_BigDecimal_getUnscaledValue__(_r3.o);
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_math_BigDecimal*) _r3.o)->fields.java_math_BigDecimal.scale_;
     XMLVM_CHECK_NPE(0)
     java_math_BigDecimal___INIT____java_math_BigInteger_int(_r0.o, _r1.o, _r2.i);
@@ -6288,6 +6438,7 @@ JAVA_OBJECT java_math_BigDecimal_setScale___int_java_math_RoundingMode(JAVA_OBJE
     label12:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1959)
     _r0.l = (JAVA_LONG) _r9.i;
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.scale_;
     _r2.l = (JAVA_LONG) _r2.i;
     _r2.l = _r0.l - _r2.l;
@@ -6311,6 +6462,7 @@ JAVA_OBJECT java_math_BigDecimal_setScale___int_java_math_RoundingMode(JAVA_OBJE
     _r0.i = _r2.l > _r0.l ? 1 : (_r2.l == _r0.l ? 0 : -1);
     if (_r0.i >= 0) goto label59;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1967)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.bitLength_;
     _r1.o = java_math_BigDecimal_GET_LONG_TEN_POW_BIT_LENGTH();
     _r4.i = (JAVA_INT) _r2.l;
@@ -6320,6 +6472,7 @@ JAVA_OBJECT java_math_BigDecimal_setScale___int_java_math_RoundingMode(JAVA_OBJE
     _r0.i = _r0.i + _r1.i;
     if (_r0.i >= _r5.i) goto label59;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1968)
+    XMLVM_CHECK_NPE(8)
     _r0.l = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.smallValue_;
     _r4.o = java_math_BigDecimal_GET_LONG_TEN_POW();
     _r2.i = (JAVA_INT) _r2.l;
@@ -6342,6 +6495,7 @@ JAVA_OBJECT java_math_BigDecimal_setScale___int_java_math_RoundingMode(JAVA_OBJE
     goto label23;
     label75:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1974)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.bitLength_;
     if (_r0.i >= _r5.i) goto label103;
     _r0.l = -_r2.l;
@@ -6351,6 +6505,7 @@ JAVA_OBJECT java_math_BigDecimal_setScale___int_java_math_RoundingMode(JAVA_OBJE
     _r0.i = _r0.l > _r4.l ? 1 : (_r0.l == _r4.l ? 0 : -1);
     if (_r0.i >= 0) goto label103;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 1975)
+    XMLVM_CHECK_NPE(8)
     _r0.l = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.smallValue_;
     _r4.o = java_math_BigDecimal_GET_LONG_TEN_POW();
     _r2.l = -_r2.l;
@@ -6423,6 +6578,7 @@ JAVA_OBJECT java_math_BigDecimal_movePointLeft___int(JAVA_OBJECT me, JAVA_INT n1
     _r4.o = me;
     _r5.i = n1;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2043)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.scale_;
     _r0.l = (JAVA_LONG) _r0.i;
     _r2.l = (JAVA_LONG) _r5.i;
@@ -6468,9 +6624,11 @@ JAVA_OBJECT java_math_BigDecimal_movePoint___long(JAVA_OBJECT me, JAVA_LONG n1)
     _r0.i = _r7.l > _r1.l ? 1 : (_r7.l == _r1.l ? 0 : -1);
     if (_r0.i < 0) goto label53;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2053)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.bitLength_;
     if (_r0.i >= _r4.i) goto label39;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2054)
+    XMLVM_CHECK_NPE(6)
     _r0.l = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.smallValue_;
     _r2.i = java_math_BigDecimal_toIntScale___long(_r7.l);
     _r0.o = java_math_BigDecimal_valueOf___long_int(_r0.l, _r2.i);
@@ -6493,6 +6651,7 @@ JAVA_OBJECT java_math_BigDecimal_movePoint___long(JAVA_OBJECT me, JAVA_LONG n1)
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r0.i >= 0) goto label87;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2059)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.bitLength_;
     _r1.o = java_math_BigDecimal_GET_LONG_TEN_POW_BIT_LENGTH();
     _r2.l = -_r7.l;
@@ -6503,6 +6662,7 @@ JAVA_OBJECT java_math_BigDecimal_movePoint___long(JAVA_OBJECT me, JAVA_LONG n1)
     _r0.i = _r0.i + _r1.i;
     if (_r0.i >= _r4.i) goto label87;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2060)
+    XMLVM_CHECK_NPE(6)
     _r0.l = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.smallValue_;
     _r2.o = java_math_BigDecimal_GET_LONG_TEN_POW();
     _r3.l = -_r7.l;
@@ -6540,6 +6700,7 @@ JAVA_OBJECT java_math_BigDecimal_movePointRight___int(JAVA_OBJECT me, JAVA_INT n
     _r4.o = me;
     _r5.i = n1;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2082)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.scale_;
     _r0.l = (JAVA_LONG) _r0.i;
     _r2.l = (JAVA_LONG) _r5.i;
@@ -6566,15 +6727,18 @@ JAVA_OBJECT java_math_BigDecimal_scaleByPowerOfTen___int(JAVA_OBJECT me, JAVA_IN
     _r6.o = me;
     _r7.i = n1;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2098)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.scale_;
     _r0.l = (JAVA_LONG) _r0.i;
     _r2.l = (JAVA_LONG) _r7.i;
     _r0.l = _r0.l - _r2.l;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2099)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.bitLength_;
     _r3.i = 64;
     if (_r2.i >= _r3.i) goto label35;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2101)
+    XMLVM_CHECK_NPE(6)
     _r2.l = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.smallValue_;
     _r4.l = 0;
     _r2.i = _r2.l > _r4.l ? 1 : (_r2.l == _r4.l ? 0 : -1);
@@ -6587,6 +6751,7 @@ JAVA_OBJECT java_math_BigDecimal_scaleByPowerOfTen___int(JAVA_OBJECT me, JAVA_IN
     return _r0.o;
     label24:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2104)
+    XMLVM_CHECK_NPE(6)
     _r2.l = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.smallValue_;
     _r0.i = java_math_BigDecimal_toIntScale___long(_r0.l);
     _r0.o = java_math_BigDecimal_valueOf___long_int(_r2.l, _r0.i);
@@ -6630,6 +6795,7 @@ JAVA_OBJECT java_math_BigDecimal_stripTrailingZeros__(JAVA_OBJECT me)
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r0.i = _r0.i - _r8.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2121)
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_math_BigDecimal*) _r13.o)->fields.java_math_BigDecimal.scale_;
     _r1.l = (JAVA_LONG) _r1.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2123)
@@ -6745,15 +6911,21 @@ JAVA_INT java_math_BigDecimal_compareTo___java_math_BigDecimal(JAVA_OBJECT me, J
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2174)
     if (_r0.i != _r1.i) goto label130;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2175)
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_math_BigDecimal*) _r13.o)->fields.java_math_BigDecimal.scale_;
+    XMLVM_CHECK_NPE(14)
     _r2.i = ((java_math_BigDecimal*) _r14.o)->fields.java_math_BigDecimal.scale_;
     if (_r1.i != _r2.i) goto label54;
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_math_BigDecimal*) _r13.o)->fields.java_math_BigDecimal.bitLength_;
     if (_r1.i >= _r3.i) goto label54;
+    XMLVM_CHECK_NPE(14)
     _r1.i = ((java_math_BigDecimal*) _r14.o)->fields.java_math_BigDecimal.bitLength_;
     if (_r1.i >= _r3.i) goto label54;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2176)
+    XMLVM_CHECK_NPE(13)
     _r0.l = ((java_math_BigDecimal*) _r13.o)->fields.java_math_BigDecimal.smallValue_;
+    XMLVM_CHECK_NPE(14)
     _r2.l = ((java_math_BigDecimal*) _r14.o)->fields.java_math_BigDecimal.smallValue_;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r0.i >= 0) goto label42;
@@ -6763,7 +6935,9 @@ JAVA_INT java_math_BigDecimal_compareTo___java_math_BigDecimal(JAVA_OBJECT me, J
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label42:;
+    XMLVM_CHECK_NPE(13)
     _r0.l = ((java_math_BigDecimal*) _r13.o)->fields.java_math_BigDecimal.smallValue_;
+    XMLVM_CHECK_NPE(14)
     _r2.l = ((java_math_BigDecimal*) _r14.o)->fields.java_math_BigDecimal.smallValue_;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r0.i <= 0) goto label52;
@@ -6774,8 +6948,10 @@ JAVA_INT java_math_BigDecimal_compareTo___java_math_BigDecimal(JAVA_OBJECT me, J
     goto label41;
     label54:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2178)
+    XMLVM_CHECK_NPE(13)
     _r1.i = ((java_math_BigDecimal*) _r13.o)->fields.java_math_BigDecimal.scale_;
     _r1.l = (JAVA_LONG) _r1.i;
+    XMLVM_CHECK_NPE(14)
     _r3.i = ((java_math_BigDecimal*) _r14.o)->fields.java_math_BigDecimal.scale_;
     _r3.l = (JAVA_LONG) _r3.i;
     _r1.l = _r1.l - _r3.l;
@@ -6880,14 +7056,19 @@ JAVA_BOOLEAN java_math_BigDecimal_equals___java_lang_Object(JAVA_OBJECT me, JAVA
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2219)
     _r7.o = _r7.o;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2220)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.scale_;
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.scale_;
     if (_r0.i != _r1.i) goto label44;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2221)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.bitLength_;
     _r1.i = 64;
     if (_r0.i >= _r1.i) goto label34;
+    XMLVM_CHECK_NPE(7)
     _r0.l = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.smallValue_;
+    XMLVM_CHECK_NPE(6)
     _r2.l = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.smallValue_;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r0.i != 0) goto label44;
@@ -6896,7 +7077,9 @@ JAVA_BOOLEAN java_math_BigDecimal_equals___java_lang_Object(JAVA_OBJECT me, JAVA
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2222)
     goto label5;
     label34:;
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.intVal_;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_math_BigDecimal*) _r7.o)->fields.java_math_BigDecimal.intVal_;
     //java_math_BigInteger_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -6971,9 +7154,11 @@ JAVA_INT java_math_BigDecimal_hashCode__(JAVA_OBJECT me)
     _r6.o = me;
     _r4.l = -1;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2262)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.hashCode_;
     if (_r0.i == 0) goto label9;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2263)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.hashCode_;
     label8:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2272)
@@ -6981,43 +7166,57 @@ JAVA_INT java_math_BigDecimal_hashCode__(JAVA_OBJECT me)
     return _r0.i;
     label9:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2265)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.bitLength_;
     _r1.i = 64;
     if (_r0.i >= _r1.i) goto label47;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2266)
+    XMLVM_CHECK_NPE(6)
     _r0.l = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.smallValue_;
     _r0.l = _r0.l & _r4.l;
     _r0.i = (JAVA_INT) _r0.l;
+    XMLVM_CHECK_NPE(6)
     ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.hashCode_ = _r0.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2267)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.hashCode_;
     _r0.i = _r0.i * 33;
+    XMLVM_CHECK_NPE(6)
     _r1.l = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.smallValue_;
     _r3.i = 32;
     _r1.l = _r1.l >> (0x3f & _r3.l);
     _r1.l = _r1.l & _r4.l;
     _r1.i = (JAVA_INT) _r1.l;
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(6)
     ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.hashCode_ = _r0.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2268)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.hashCode_;
     _r0.i = _r0.i * 17;
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.scale_;
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(6)
     ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.hashCode_ = _r0.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2269)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.hashCode_;
     goto label8;
     label47:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2271)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.intVal_;
     //java_math_BigInteger_hashCode__[4]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_math_BigInteger*) _r0.o)->tib->vtable[4])(_r0.o);
     _r0.i = _r0.i * 17;
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.scale_;
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(6)
     ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.hashCode_ = _r0.i;
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_math_BigDecimal*) _r6.o)->fields.java_math_BigDecimal.hashCode_;
     goto label8;
     //XMLVM_END_WRAPPER
@@ -7045,9 +7244,11 @@ JAVA_OBJECT java_math_BigDecimal_toString__(JAVA_OBJECT me)
     _r9.i = 46;
     _r8.i = 1;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2288)
+    XMLVM_CHECK_NPE(12)
     _r0.o = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.toStringImage_;
     if (_r0.o == JAVA_NULL) goto label12;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2289)
+    XMLVM_CHECK_NPE(12)
     _r0.o = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.toStringImage_;
     label11:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2324)
@@ -7055,15 +7256,20 @@ JAVA_OBJECT java_math_BigDecimal_toString__(JAVA_OBJECT me)
     return _r0.o;
     label12:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2291)
+    XMLVM_CHECK_NPE(12)
     _r0.i = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.bitLength_;
     _r1.i = 32;
     if (_r0.i >= _r1.i) goto label31;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2292)
+    XMLVM_CHECK_NPE(12)
     _r0.l = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.smallValue_;
+    XMLVM_CHECK_NPE(12)
     _r2.i = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_;
     _r0.o = java_math_Conversion_toDecimalScaledString___long_int(_r0.l, _r2.i);
+    XMLVM_CHECK_NPE(12)
     ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.toStringImage_ = _r0.o;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2293)
+    XMLVM_CHECK_NPE(12)
     _r0.o = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.toStringImage_;
     goto label11;
     label31:;
@@ -7074,6 +7280,7 @@ JAVA_OBJECT java_math_BigDecimal_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_math_BigInteger*) _r0.o)->tib->vtable[5])(_r0.o);
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2296)
+    XMLVM_CHECK_NPE(12)
     _r1.i = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_;
     if (_r1.i == 0) goto label11;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2299)
@@ -7089,6 +7296,7 @@ JAVA_OBJECT java_math_BigDecimal_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r2.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[8])(_r0.o);
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2301)
+    XMLVM_CHECK_NPE(12)
     _r3.i = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_;
     _r3.l = (JAVA_LONG) _r3.i;
     _r3.l = -_r3.l;
@@ -7104,6 +7312,7 @@ JAVA_OBJECT java_math_BigDecimal_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder_append___java_lang_String(_r5.o, _r0.o);
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2305)
+    XMLVM_CHECK_NPE(12)
     _r0.i = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_;
     if (_r0.i <= 0) goto label125;
     _r6.l = -6;
@@ -7113,6 +7322,7 @@ JAVA_OBJECT java_math_BigDecimal_toString__(JAVA_OBJECT me)
     _r0.i = _r3.l > _r10.l ? 1 : (_r3.l == _r10.l ? 0 : -1);
     if (_r0.i < 0) goto label106;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2307)
+    XMLVM_CHECK_NPE(12)
     _r0.i = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.scale_;
     _r0.i = _r2.i - _r0.i;
     XMLVM_CHECK_NPE(5)
@@ -7122,7 +7332,9 @@ JAVA_OBJECT java_math_BigDecimal_toString__(JAVA_OBJECT me)
     //java_lang_StringBuilder_toString__[5]
     XMLVM_CHECK_NPE(5)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r5.o)->tib->vtable[5])(_r5.o);
+    XMLVM_CHECK_NPE(12)
     ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.toStringImage_ = _r0.o;
+    XMLVM_CHECK_NPE(12)
     _r0.o = ((java_math_BigDecimal*) _r12.o)->fields.java_math_BigDecimal.toStringImage_;
     goto label11;
     label104:;
@@ -7204,6 +7416,7 @@ JAVA_OBJECT java_math_BigDecimal_toEngineeringString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_math_BigInteger*) _r0.o)->tib->vtable[5])(_r0.o);
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2341)
+    XMLVM_CHECK_NPE(11)
     _r1.i = ((java_math_BigDecimal*) _r11.o)->fields.java_math_BigDecimal.scale_;
     if (_r1.i != 0) goto label13;
     label12:;
@@ -7224,6 +7437,7 @@ JAVA_OBJECT java_math_BigDecimal_toEngineeringString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r2.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[8])(_r0.o);
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2346)
+    XMLVM_CHECK_NPE(11)
     _r3.i = ((java_math_BigDecimal*) _r11.o)->fields.java_math_BigDecimal.scale_;
     _r3.l = (JAVA_LONG) _r3.i;
     _r3.l = -_r3.l;
@@ -7236,6 +7450,7 @@ JAVA_OBJECT java_math_BigDecimal_toEngineeringString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder___INIT____java_lang_String(_r5.o, _r0.o);
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2349)
+    XMLVM_CHECK_NPE(11)
     _r0.i = ((java_math_BigDecimal*) _r11.o)->fields.java_math_BigDecimal.scale_;
     if (_r0.i <= 0) goto label94;
     _r6.l = -6;
@@ -7246,6 +7461,7 @@ JAVA_OBJECT java_math_BigDecimal_toEngineeringString__(JAVA_OBJECT me)
     _r0.i = _r3.l > _r6.l ? 1 : (_r3.l == _r6.l ? 0 : -1);
     if (_r0.i < 0) goto label73;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2351)
+    XMLVM_CHECK_NPE(11)
     _r0.i = ((java_math_BigDecimal*) _r11.o)->fields.java_math_BigDecimal.scale_;
     _r0.i = _r2.i - _r0.i;
     _r1.i = 46;
@@ -7413,11 +7629,13 @@ JAVA_OBJECT java_math_BigDecimal_toPlainString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_math_BigInteger*) _r0.o)->tib->vtable[5])(_r0.o);
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2410)
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.scale_;
     if (_r1.i == 0) goto label24;
     XMLVM_CHECK_NPE(8)
     _r1.i = java_math_BigDecimal_isZero__(_r8.o);
     if (_r1.i == 0) goto label25;
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.scale_;
     if (_r1.i >= 0) goto label25;
     label24:;
@@ -7432,6 +7650,7 @@ JAVA_OBJECT java_math_BigDecimal_toPlainString__(JAVA_OBJECT me)
     _r1 = _r7;
     label32:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2414)
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.scale_;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2416)
     _r3.o = __NEW_java_lang_StringBuilder();
@@ -7439,6 +7658,7 @@ JAVA_OBJECT java_math_BigDecimal_toPlainString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r4.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[8])(_r0.o);
     _r4.i = _r4.i + 1;
+    XMLVM_CHECK_NPE(8)
     _r5.i = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.scale_;
     _r5.i = java_lang_Math_abs___int(_r5.i);
     _r4.i = _r4.i + _r5.i;
@@ -7453,6 +7673,7 @@ JAVA_OBJECT java_math_BigDecimal_toPlainString__(JAVA_OBJECT me)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r3.o)->tib->vtable[21])(_r3.o, _r4.i);
     label59:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2422)
+    XMLVM_CHECK_NPE(8)
     _r4.i = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.scale_;
     if (_r4.i <= 0) goto label132;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2423)
@@ -7559,6 +7780,7 @@ JAVA_OBJECT java_math_BigDecimal_toBigInteger__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2456)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_math_BigDecimal*) _r3.o)->fields.java_math_BigDecimal.scale_;
     if (_r0.i == 0) goto label10;
     XMLVM_CHECK_NPE(3)
@@ -7574,11 +7796,13 @@ JAVA_OBJECT java_math_BigDecimal_toBigInteger__(JAVA_OBJECT me)
     return _r0.o;
     label15:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2458)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_math_BigDecimal*) _r3.o)->fields.java_math_BigDecimal.scale_;
     if (_r0.i >= 0) goto label36;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2459)
     XMLVM_CHECK_NPE(3)
     _r0.o = java_math_BigDecimal_getUnscaledValue__(_r3.o);
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_math_BigDecimal*) _r3.o)->fields.java_math_BigDecimal.scale_;
     _r1.l = (JAVA_LONG) _r1.i;
     _r1.l = -_r1.l;
@@ -7589,6 +7813,7 @@ JAVA_OBJECT java_math_BigDecimal_toBigInteger__(JAVA_OBJECT me)
     label36:;
     XMLVM_CHECK_NPE(3)
     _r0.o = java_math_BigDecimal_getUnscaledValue__(_r3.o);
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_math_BigDecimal*) _r3.o)->fields.java_math_BigDecimal.scale_;
     _r1.l = (JAVA_LONG) _r1.i;
     _r1.o = java_math_Multiplication_powerOf10___long(_r1.l);
@@ -7611,6 +7836,7 @@ JAVA_OBJECT java_math_BigDecimal_toBigIntegerExact__(JAVA_OBJECT me)
     // "math.08"
     _r3.o = xmlvm_create_java_string_from_pool(349);
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2475)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.scale_;
     if (_r0.i == 0) goto label12;
     XMLVM_CHECK_NPE(4)
@@ -7626,11 +7852,13 @@ JAVA_OBJECT java_math_BigDecimal_toBigIntegerExact__(JAVA_OBJECT me)
     return _r0.o;
     label17:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2477)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.scale_;
     if (_r0.i >= 0) goto label38;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2478)
     XMLVM_CHECK_NPE(4)
     _r0.o = java_math_BigDecimal_getUnscaledValue__(_r4.o);
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.scale_;
     _r1.l = (JAVA_LONG) _r1.i;
     _r1.l = -_r1.l;
@@ -7640,10 +7868,12 @@ JAVA_OBJECT java_math_BigDecimal_toBigIntegerExact__(JAVA_OBJECT me)
     goto label16;
     label38:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2482)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.scale_;
     XMLVM_CHECK_NPE(4)
     _r1.i = java_math_BigDecimal_aproxPrecision__(_r4.o);
     if (_r0.i > _r1.i) goto label58;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.scale_;
     XMLVM_CHECK_NPE(4)
     _r1.o = java_math_BigDecimal_getUnscaledValue__(_r4.o);
@@ -7663,6 +7893,7 @@ JAVA_OBJECT java_math_BigDecimal_toBigIntegerExact__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2486)
     XMLVM_CHECK_NPE(4)
     _r0.o = java_math_BigDecimal_getUnscaledValue__(_r4.o);
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.scale_;
     _r1.l = (JAVA_LONG) _r1.i;
     _r1.o = java_math_Multiplication_powerOf10___long(_r1.l);
@@ -7702,9 +7933,11 @@ JAVA_LONG java_math_BigDecimal_longValue__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2507)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.scale_;
     _r1.i = -64;
     if (_r0.i <= _r1.i) goto label14;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.scale_;
     XMLVM_CHECK_NPE(2)
     _r1.i = java_math_BigDecimal_aproxPrecision__(_r2.o);
@@ -7752,9 +7985,11 @@ JAVA_INT java_math_BigDecimal_intValue__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2536)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.scale_;
     _r1.i = -32;
     if (_r0.i <= _r1.i) goto label14;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.scale_;
     XMLVM_CHECK_NPE(2)
     _r1.i = java_math_BigDecimal_aproxPrecision__(_r2.o);
@@ -7852,8 +8087,10 @@ JAVA_FLOAT java_math_BigDecimal_floatValue__(JAVA_OBJECT me)
     _r0.i = java_math_BigDecimal_signum__(_r8.o);
     _r0.f = (JAVA_FLOAT) _r0.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2604)
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.bitLength_;
     _r1.l = (JAVA_LONG) _r1.i;
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_math_BigDecimal*) _r8.o)->fields.java_math_BigDecimal.scale_;
     _r3.d = (JAVA_DOUBLE) _r3.i;
     _r5.d = 0.3010299956639812;
@@ -7919,8 +8156,10 @@ JAVA_DOUBLE java_math_BigDecimal_doubleValue__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2639)
     _r1.i = 1076;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2642)
+    XMLVM_CHECK_NPE(15)
     _r2.i = ((java_math_BigDecimal*) _r15.o)->fields.java_math_BigDecimal.bitLength_;
     _r2.l = (JAVA_LONG) _r2.i;
+    XMLVM_CHECK_NPE(15)
     _r4.i = ((java_math_BigDecimal*) _r15.o)->fields.java_math_BigDecimal.scale_;
     _r4.d = (JAVA_DOUBLE) _r4.i;
     _r6.d = 0.3010299956639812;
@@ -7958,9 +8197,11 @@ JAVA_DOUBLE java_math_BigDecimal_doubleValue__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(4)
     _r4.o = java_math_BigInteger_abs__(_r4.o);
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2656)
+    XMLVM_CHECK_NPE(15)
     _r5.i = ((java_math_BigDecimal*) _r15.o)->fields.java_math_BigDecimal.scale_;
     if (_r5.i > 0) goto label140;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2658)
+    XMLVM_CHECK_NPE(15)
     _r2.i = ((java_math_BigDecimal*) _r15.o)->fields.java_math_BigDecimal.scale_;
     _r2.i = -_r2.i;
     _r2.l = (JAVA_LONG) _r2.i;
@@ -8031,6 +8272,7 @@ JAVA_DOUBLE java_math_BigDecimal_doubleValue__(JAVA_OBJECT me)
     goto label32;
     label140:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2661)
+    XMLVM_CHECK_NPE(15)
     _r5.i = ((java_math_BigDecimal*) _r15.o)->fields.java_math_BigDecimal.scale_;
     _r5.l = (JAVA_LONG) _r5.i;
     _r5.o = java_math_Multiplication_powerOf10___long(_r5.l);
@@ -8193,6 +8435,7 @@ JAVA_OBJECT java_math_BigDecimal_ulp__(JAVA_OBJECT me)
     _r3.o = me;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2753)
     _r0.l = 1;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_math_BigDecimal*) _r3.o)->fields.java_math_BigDecimal.scale_;
     _r0.o = java_math_BigDecimal_valueOf___long_int(_r0.l, _r2.i);
     XMLVM_EXIT_METHOD()
@@ -8241,6 +8484,7 @@ void java_math_BigDecimal_inplaceRound___java_math_MathContext(JAVA_OBJECT me, J
     if (_r1.i <= 0) goto label15;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2774)
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2778)
+    XMLVM_CHECK_NPE(10)
     _r2.i = ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.bitLength_;
     _r3.i = 64;
     if (_r2.i >= _r3.i) goto label33;
@@ -8258,6 +8502,7 @@ void java_math_BigDecimal_inplaceRound___java_math_MathContext(JAVA_OBJECT me, J
     XMLVM_CHECK_NPE(3)
     _r3.o = java_math_BigInteger_divideAndRemainder___java_math_BigInteger(_r3.o, _r2.o);
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2785)
+    XMLVM_CHECK_NPE(10)
     _r4.i = ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.scale_;
     _r4.l = (JAVA_LONG) _r4.i;
     _r6.l = (JAVA_LONG) _r1.i;
@@ -8341,8 +8586,10 @@ void java_math_BigDecimal_inplaceRound___java_math_MathContext(JAVA_OBJECT me, J
     label141:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2807)
     _r1.i = java_math_BigDecimal_toIntScale___long(_r1.l);
+    XMLVM_CHECK_NPE(10)
     ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.scale_ = _r1.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2808)
+    XMLVM_CHECK_NPE(10)
     ((java_math_BigDecimal*) _r10.o)->fields.java_math_BigDecimal.precision_ = _r0.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2809)
     XMLVM_CHECK_NPE(3)
@@ -8417,11 +8664,13 @@ void java_math_BigDecimal_smallRound___java_math_MathContext_int(JAVA_OBJECT me,
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r13.i);
     _r0.l = ((JAVA_ARRAY_LONG*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r13.i];
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2827)
+    XMLVM_CHECK_NPE(11)
     _r2.i = ((java_math_BigDecimal*) _r11.o)->fields.java_math_BigDecimal.scale_;
     _r2.l = (JAVA_LONG) _r2.i;
     _r4.l = (JAVA_LONG) _r13.i;
     _r2.l = _r2.l - _r4.l;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2828)
+    XMLVM_CHECK_NPE(11)
     _r4.l = ((java_math_BigDecimal*) _r11.o)->fields.java_math_BigDecimal.smallValue_;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2830)
     _r6.l = _r4.l / _r0.l;
@@ -8467,18 +8716,23 @@ void java_math_BigDecimal_smallRound___java_math_MathContext_int(JAVA_OBJECT me,
     label74:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2848)
     _r2.i = java_math_BigDecimal_toIntScale___long(_r2.l);
+    XMLVM_CHECK_NPE(11)
     ((java_math_BigDecimal*) _r11.o)->fields.java_math_BigDecimal.scale_ = _r2.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2849)
     XMLVM_CHECK_NPE(12)
     _r2.i = java_math_MathContext_getPrecision__(_r12.o);
+    XMLVM_CHECK_NPE(11)
     ((java_math_BigDecimal*) _r11.o)->fields.java_math_BigDecimal.precision_ = _r2.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2850)
+    XMLVM_CHECK_NPE(11)
     ((java_math_BigDecimal*) _r11.o)->fields.java_math_BigDecimal.smallValue_ = _r0.l;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2851)
     _r0.i = java_math_BigDecimal_bitLength___long(_r0.l);
+    XMLVM_CHECK_NPE(11)
     ((java_math_BigDecimal*) _r11.o)->fields.java_math_BigDecimal.bitLength_ = _r0.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2852)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(11)
     ((java_math_BigDecimal*) _r11.o)->fields.java_math_BigDecimal.intVal_ = _r0.o;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2853)
     XMLVM_EXIT_METHOD()
@@ -8631,9 +8885,11 @@ JAVA_INT java_math_BigDecimal_aproxPrecision__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2943)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.precision_;
     if (_r0.i <= 0) goto label9;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2944)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.precision_;
     label6:;
     _r0.i = _r0.i + 1;
@@ -8641,6 +8897,7 @@ JAVA_INT java_math_BigDecimal_aproxPrecision__(JAVA_OBJECT me)
     return _r0.i;
     label9:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 2945)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_math_BigDecimal*) _r4.o)->fields.java_math_BigDecimal.bitLength_;
     _r1.i = 1;
     _r0.i = _r0.i - _r1.i;
@@ -8755,19 +9012,24 @@ void java_math_BigDecimal_readObject___java_io_ObjectInputStream(JAVA_OBJECT me,
     XMLVM_CHECK_NPE(3)
     java_io_ObjectInputStream_defaultReadObject__(_r3.o);
     XMLVM_SOURCE_POSITION("BigDecimal.java", 3004)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.intVal_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_math_BigInteger_bitLength__(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.bitLength_ = _r0.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 3005)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.bitLength_;
     _r1.i = 64;
     if (_r0.i >= _r1.i) goto label25;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 3006)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.intVal_;
     //java_math_BigInteger_longValue__[10]
     XMLVM_CHECK_NPE(0)
     _r0.l = (*(JAVA_LONG (*)(JAVA_OBJECT)) ((java_math_BigInteger*) _r0.o)->tib->vtable[10])(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.smallValue_ = _r0.l;
     label25:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 3008)
@@ -8805,14 +9067,18 @@ JAVA_OBJECT java_math_BigDecimal_getUnscaledValue__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 3020)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.intVal_;
     if (_r0.o != JAVA_NULL) goto label12;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 3021)
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.smallValue_;
     _r0.o = java_math_BigInteger_valueOf___long(_r0.l);
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.intVal_ = _r0.o;
     label12:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 3023)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.intVal_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -8830,12 +9096,15 @@ void java_math_BigDecimal_setUnscaledValue___java_math_BigInteger(JAVA_OBJECT me
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 3027)
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.intVal_ = _r3.o;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 3028)
     XMLVM_CHECK_NPE(3)
     _r0.i = java_math_BigInteger_bitLength__(_r3.o);
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.bitLength_ = _r0.i;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 3029)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.bitLength_;
     _r1.i = 64;
     if (_r0.i >= _r1.i) goto label20;
@@ -8843,6 +9112,7 @@ void java_math_BigDecimal_setUnscaledValue___java_math_BigInteger(JAVA_OBJECT me
     //java_math_BigInteger_longValue__[10]
     XMLVM_CHECK_NPE(3)
     _r0.l = (*(JAVA_LONG (*)(JAVA_OBJECT)) ((java_math_BigInteger*) _r3.o)->tib->vtable[10])(_r3.o);
+    XMLVM_CHECK_NPE(2)
     ((java_math_BigDecimal*) _r2.o)->fields.java_math_BigDecimal.smallValue_ = _r0.l;
     label20:;
     XMLVM_SOURCE_POSITION("BigDecimal.java", 3032)

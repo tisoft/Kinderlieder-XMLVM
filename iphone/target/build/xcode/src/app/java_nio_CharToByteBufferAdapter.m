@@ -680,8 +680,10 @@ void java_nio_CharToByteBufferAdapter___INIT____java_nio_ByteBuffer(JAVA_OBJECT 
     XMLVM_CHECK_NPE(1)
     java_nio_CharBuffer___INIT____int(_r1.o, _r0.i);
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 45)
+    XMLVM_CHECK_NPE(1)
     ((java_nio_CharToByteBufferAdapter*) _r1.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_ = _r2.o;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 46)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_CharToByteBufferAdapter*) _r1.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     XMLVM_CHECK_NPE(0)
     java_nio_Buffer_clear__(_r0.o);
@@ -700,11 +702,13 @@ JAVA_INT java_nio_CharToByteBufferAdapter_getByteCapacity__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 50)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     if (!__TIB_org_apache_harmony_nio_internal_DirectBuffer.classInitialized) __INIT_org_apache_harmony_nio_internal_DirectBuffer();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_org_apache_harmony_nio_internal_DirectBuffer);
     if (_r0.i == 0) goto label15;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 51)
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     _r2.o = _r2.o;
     XMLVM_CHECK_NPE(2)
@@ -718,6 +722,7 @@ JAVA_INT java_nio_CharToByteBufferAdapter_getByteCapacity__(JAVA_OBJECT me)
     _r0.i = java_nio_CharToByteBufferAdapter_GET__assertionsDisabled();
     if (_r0.i != 0) goto label27;
     _r0.o = __NEW_java_lang_AssertionError();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     XMLVM_CHECK_NPE(0)
     java_lang_AssertionError___INIT____java_lang_Object(_r0.o, _r1.o);
@@ -737,11 +742,13 @@ JAVA_OBJECT java_nio_CharToByteBufferAdapter_getEffectiveAddress__(JAVA_OBJECT m
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 58)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     if (!__TIB_org_apache_harmony_nio_internal_DirectBuffer.classInitialized) __INIT_org_apache_harmony_nio_internal_DirectBuffer();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_org_apache_harmony_nio_internal_DirectBuffer);
     if (_r0.i == 0) goto label15;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 59)
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     _r2.o = _r2.o;
     XMLVM_CHECK_NPE(2)
@@ -755,6 +762,7 @@ JAVA_OBJECT java_nio_CharToByteBufferAdapter_getEffectiveAddress__(JAVA_OBJECT m
     _r0.i = java_nio_CharToByteBufferAdapter_GET__assertionsDisabled();
     if (_r0.i != 0) goto label27;
     _r0.o = __NEW_java_lang_AssertionError();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     XMLVM_CHECK_NPE(0)
     java_lang_AssertionError___INIT____java_lang_Object(_r0.o, _r1.o);
@@ -774,11 +782,13 @@ JAVA_OBJECT java_nio_CharToByteBufferAdapter_getBaseAddress__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 66)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     if (!__TIB_org_apache_harmony_nio_internal_DirectBuffer.classInitialized) __INIT_org_apache_harmony_nio_internal_DirectBuffer();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_org_apache_harmony_nio_internal_DirectBuffer);
     if (_r0.i == 0) goto label15;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 67)
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     _r2.o = _r2.o;
     XMLVM_CHECK_NPE(2)
@@ -792,6 +802,7 @@ JAVA_OBJECT java_nio_CharToByteBufferAdapter_getBaseAddress__(JAVA_OBJECT me)
     _r0.i = java_nio_CharToByteBufferAdapter_GET__assertionsDisabled();
     if (_r0.i != 0) goto label27;
     _r0.o = __NEW_java_lang_AssertionError();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     XMLVM_CHECK_NPE(0)
     java_lang_AssertionError___INIT____java_lang_Object(_r0.o, _r1.o);
@@ -811,11 +822,13 @@ JAVA_BOOLEAN java_nio_CharToByteBufferAdapter_isAddressValid__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 74)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     if (!__TIB_org_apache_harmony_nio_internal_DirectBuffer.classInitialized) __INIT_org_apache_harmony_nio_internal_DirectBuffer();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_org_apache_harmony_nio_internal_DirectBuffer);
     if (_r0.i == 0) goto label15;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 75)
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     _r2.o = _r2.o;
     XMLVM_CHECK_NPE(2)
@@ -829,6 +842,7 @@ JAVA_BOOLEAN java_nio_CharToByteBufferAdapter_isAddressValid__(JAVA_OBJECT me)
     _r0.i = java_nio_CharToByteBufferAdapter_GET__assertionsDisabled();
     if (_r0.i != 0) goto label27;
     _r0.o = __NEW_java_lang_AssertionError();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     XMLVM_CHECK_NPE(0)
     java_lang_AssertionError___INIT____java_lang_Object(_r0.o, _r1.o);
@@ -848,11 +862,13 @@ void java_nio_CharToByteBufferAdapter_addressValidityCheck__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 82)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     if (!__TIB_org_apache_harmony_nio_internal_DirectBuffer.classInitialized) __INIT_org_apache_harmony_nio_internal_DirectBuffer();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_org_apache_harmony_nio_internal_DirectBuffer);
     if (_r0.i == 0) goto label14;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 83)
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     _r2.o = _r2.o;
     XMLVM_CHECK_NPE(2)
@@ -866,6 +882,7 @@ void java_nio_CharToByteBufferAdapter_addressValidityCheck__(JAVA_OBJECT me)
     _r0.i = java_nio_CharToByteBufferAdapter_GET__assertionsDisabled();
     if (_r0.i != 0) goto label13;
     _r0.o = __NEW_java_lang_AssertionError();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     XMLVM_CHECK_NPE(0)
     java_lang_AssertionError___INIT____java_lang_Object(_r0.o, _r1.o);
@@ -882,11 +899,13 @@ void java_nio_CharToByteBufferAdapter_free__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 90)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     if (!__TIB_org_apache_harmony_nio_internal_DirectBuffer.classInitialized) __INIT_org_apache_harmony_nio_internal_DirectBuffer();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_org_apache_harmony_nio_internal_DirectBuffer);
     if (_r0.i == 0) goto label14;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 91)
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     _r2.o = _r2.o;
     XMLVM_CHECK_NPE(2)
@@ -900,6 +919,7 @@ void java_nio_CharToByteBufferAdapter_free__(JAVA_OBJECT me)
     _r0.i = java_nio_CharToByteBufferAdapter_GET__assertionsDisabled();
     if (_r0.i != 0) goto label13;
     _r0.o = __NEW_java_lang_AssertionError();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     XMLVM_CHECK_NPE(0)
     java_lang_AssertionError___INIT____java_lang_Object(_r0.o, _r1.o);
@@ -918,6 +938,7 @@ JAVA_OBJECT java_nio_CharToByteBufferAdapter_asReadOnlyBuffer__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 99)
     _r0.o = __NEW_java_nio_CharToByteBufferAdapter();
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 100)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     //java_nio_ByteBuffer_asReadOnlyBuffer__[16]
     XMLVM_CHECK_NPE(1)
@@ -925,13 +946,19 @@ JAVA_OBJECT java_nio_CharToByteBufferAdapter_asReadOnlyBuffer__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_nio_CharToByteBufferAdapter___INIT____java_nio_ByteBuffer(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 101)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.limit_ = _r1.i;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 102)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_;
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.position_ = _r1.i;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 103)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.mark_;
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.mark_ = _r1.i;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 104)
     XMLVM_EXIT_METHOD()
@@ -948,6 +975,7 @@ JAVA_OBJECT java_nio_CharToByteBufferAdapter_compact__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 109)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     //java_nio_ByteBuffer_isReadOnly__[10]
     XMLVM_CHECK_NPE(0)
@@ -960,36 +988,48 @@ JAVA_OBJECT java_nio_CharToByteBufferAdapter_compact__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 112)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
     _r1.i = _r1.i << 1;
     XMLVM_CHECK_NPE(0)
     java_nio_Buffer_limit___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 113)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_;
     _r1.i = _r1.i << 1;
     XMLVM_CHECK_NPE(0)
     java_nio_Buffer_position___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 114)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     //java_nio_ByteBuffer_compact__[18]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_ByteBuffer*) _r0.o)->tib->vtable[18])(_r0.o);
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 115)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     XMLVM_CHECK_NPE(0)
     java_nio_Buffer_clear__(_r0.o);
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 116)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(2)
     ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 117)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.capacity_;
+    XMLVM_CHECK_NPE(2)
     ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_ = _r0.i;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 118)
     _r0.i = -1;
+    XMLVM_CHECK_NPE(2)
     ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.mark_ = _r0.i;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 119)
     XMLVM_EXIT_METHOD()
@@ -1008,6 +1048,7 @@ JAVA_OBJECT java_nio_CharToByteBufferAdapter_duplicate__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 124)
     _r0.o = __NEW_java_nio_CharToByteBufferAdapter();
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 125)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     //java_nio_ByteBuffer_duplicate__[20]
     XMLVM_CHECK_NPE(1)
@@ -1015,13 +1056,19 @@ JAVA_OBJECT java_nio_CharToByteBufferAdapter_duplicate__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_nio_CharToByteBufferAdapter___INIT____java_nio_ByteBuffer(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 126)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.limit_ = _r1.i;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 127)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_;
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.position_ = _r1.i;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 128)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.mark_;
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.mark_ = _r1.i;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 129)
     XMLVM_EXIT_METHOD()
@@ -1039,7 +1086,9 @@ JAVA_CHAR java_nio_CharToByteBufferAdapter_get__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 134)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.position_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.limit_;
     if (_r0.i != _r1.i) goto label12;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 135)
@@ -1049,9 +1098,12 @@ JAVA_CHAR java_nio_CharToByteBufferAdapter_get__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 137)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_nio_CharToByteBufferAdapter*) _r3.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.position_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.position_ = _r2.i;
     _r1.i = _r1.i << 1;
     //java_nio_ByteBuffer_getChar___int[22]
@@ -1074,6 +1126,7 @@ JAVA_CHAR java_nio_CharToByteBufferAdapter_get___int(JAVA_OBJECT me, JAVA_INT n1
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 142)
     if (_r3.i < 0) goto label6;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
     if (_r3.i < _r0.i) goto label12;
     label6:;
@@ -1084,6 +1137,7 @@ JAVA_CHAR java_nio_CharToByteBufferAdapter_get___int(JAVA_OBJECT me, JAVA_INT n1
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 145)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     _r1.i = _r3.i << 1;
     //java_nio_ByteBuffer_getChar___int[22]
@@ -1102,6 +1156,7 @@ JAVA_BOOLEAN java_nio_CharToByteBufferAdapter_isDirect__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 150)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_CharToByteBufferAdapter*) _r1.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     //java_nio_ByteBuffer_isDirect__[9]
     XMLVM_CHECK_NPE(0)
@@ -1119,6 +1174,7 @@ JAVA_BOOLEAN java_nio_CharToByteBufferAdapter_isReadOnly__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 155)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_CharToByteBufferAdapter*) _r1.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     //java_nio_ByteBuffer_isReadOnly__[10]
     XMLVM_CHECK_NPE(0)
@@ -1136,6 +1192,7 @@ JAVA_OBJECT java_nio_CharToByteBufferAdapter_order__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 160)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_CharToByteBufferAdapter*) _r1.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_nio_ByteBuffer_order__(_r0.o);
@@ -1200,7 +1257,9 @@ JAVA_OBJECT java_nio_CharToByteBufferAdapter_put___char(JAVA_OBJECT me, JAVA_CHA
     _r3.o = me;
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 180)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.position_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.limit_;
     if (_r0.i != _r1.i) goto label12;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 181)
@@ -1210,9 +1269,12 @@ JAVA_OBJECT java_nio_CharToByteBufferAdapter_put___char(JAVA_OBJECT me, JAVA_CHA
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 183)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_nio_CharToByteBufferAdapter*) _r3.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.position_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((java_nio_Buffer*) _r3.o)->fields.java_nio_Buffer.position_ = _r2.i;
     _r1.i = _r1.i << 1;
     //java_nio_ByteBuffer_putChar___int_char[40]
@@ -1238,6 +1300,7 @@ JAVA_OBJECT java_nio_CharToByteBufferAdapter_put___int_char(JAVA_OBJECT me, JAVA
     _r4.i = n2;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 189)
     if (_r3.i < 0) goto label6;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
     if (_r3.i < _r0.i) goto label12;
     label6:;
@@ -1248,6 +1311,7 @@ JAVA_OBJECT java_nio_CharToByteBufferAdapter_put___int_char(JAVA_OBJECT me, JAVA
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 192)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     _r1.i = _r3.i << 1;
     //java_nio_ByteBuffer_putChar___int_char[40]
@@ -1268,19 +1332,24 @@ JAVA_OBJECT java_nio_CharToByteBufferAdapter_slice__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 198)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.limit_;
     _r1.i = _r1.i << 1;
     XMLVM_CHECK_NPE(0)
     java_nio_Buffer_limit___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 199)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_;
     _r1.i = _r1.i << 1;
     XMLVM_CHECK_NPE(0)
     java_nio_Buffer_position___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 200)
     _r0.o = __NEW_java_nio_CharToByteBufferAdapter();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     //java_nio_ByteBuffer_slice__[55]
     XMLVM_CHECK_NPE(1)
@@ -1288,6 +1357,7 @@ JAVA_OBJECT java_nio_CharToByteBufferAdapter_slice__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_nio_CharToByteBufferAdapter___INIT____java_nio_ByteBuffer(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 201)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_CharToByteBufferAdapter*) _r2.o)->fields.java_nio_CharToByteBufferAdapter.byteBuffer_;
     XMLVM_CHECK_NPE(1)
     java_nio_Buffer_clear__(_r1.o);
@@ -1327,11 +1397,13 @@ JAVA_OBJECT java_nio_CharToByteBufferAdapter_subSequence___int_int(JAVA_OBJECT m
     XMLVM_CHECK_NPE(2)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_CharToByteBufferAdapter*) _r2.o)->tib->vtable[18])(_r2.o);
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 212)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_;
     _r1.i = _r1.i + _r4.i;
     XMLVM_CHECK_NPE(0)
     java_nio_Buffer_limit___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("CharToByteBufferAdapter.java", 213)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_Buffer*) _r2.o)->fields.java_nio_Buffer.position_;
     _r1.i = _r1.i + _r3.i;
     XMLVM_CHECK_NPE(0)

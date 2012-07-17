@@ -461,6 +461,7 @@ JAVA_OBJECT gnu_xml_dom_DomEvent_getType__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomEvent.java", 77)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent.type_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -475,6 +476,7 @@ JAVA_OBJECT gnu_xml_dom_DomEvent_getTarget__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomEvent.java", 86)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent.target_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -489,6 +491,7 @@ JAVA_OBJECT gnu_xml_dom_DomEvent_getCurrentTarget__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomEvent.java", 96)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent.currentNode_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -503,6 +506,7 @@ JAVA_SHORT gnu_xml_dom_DomEvent_getEventPhase__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomEvent.java", 105)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_dom_DomEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent.eventPhase_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -517,6 +521,7 @@ JAVA_BOOLEAN gnu_xml_dom_DomEvent_getBubbles__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomEvent.java", 114)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_dom_DomEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent.bubbles_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -531,6 +536,7 @@ JAVA_BOOLEAN gnu_xml_dom_DomEvent_getCancelable__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomEvent.java", 123)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_dom_DomEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent.cancelable_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -546,6 +552,7 @@ JAVA_LONG gnu_xml_dom_DomEvent_getTimeStamp__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("DomEvent.java", 131)
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((gnu_xml_dom_DomEvent*) _r2.o)->fields.gnu_xml_dom_DomEvent.timeStamp_;
     XMLVM_EXIT_METHOD()
     return _r0.l;
@@ -561,6 +568,7 @@ void gnu_xml_dom_DomEvent_stopPropagation__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomEvent.java", 153)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent.stop_ = _r0.i;
     XMLVM_SOURCE_POSITION("DomEvent.java", 154)
     XMLVM_EXIT_METHOD()
@@ -577,6 +585,7 @@ void gnu_xml_dom_DomEvent_preventDefault__(JAVA_OBJECT me)
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomEvent.java", 163)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent.doDefault_ = _r0.i;
     XMLVM_SOURCE_POSITION("DomEvent.java", 164)
     XMLVM_EXIT_METHOD()
@@ -600,15 +609,20 @@ void gnu_xml_dom_DomEvent_initEvent___java_lang_String_boolean_boolean(JAVA_OBJE
     _r5.i = n3;
     XMLVM_SOURCE_POSITION("DomEvent.java", 171)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomEvent*) _r2.o)->fields.gnu_xml_dom_DomEvent.eventPhase_ = _r0.i;
     XMLVM_SOURCE_POSITION("DomEvent.java", 172)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomEvent*) _r2.o)->fields.gnu_xml_dom_DomEvent.type_ = _r3.o;
     XMLVM_SOURCE_POSITION("DomEvent.java", 173)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomEvent*) _r2.o)->fields.gnu_xml_dom_DomEvent.bubbles_ = _r4.i;
     XMLVM_SOURCE_POSITION("DomEvent.java", 174)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomEvent*) _r2.o)->fields.gnu_xml_dom_DomEvent.cancelable_ = _r5.i;
     XMLVM_SOURCE_POSITION("DomEvent.java", 175)
     _r0.l = java_lang_System_currentTimeMillis__();
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomEvent*) _r2.o)->fields.gnu_xml_dom_DomEvent.timeStamp_ = _r0.l;
     XMLVM_SOURCE_POSITION("DomEvent.java", 176)
     XMLVM_EXIT_METHOD()
@@ -628,6 +642,7 @@ void gnu_xml_dom_DomEvent___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJECT
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("DomEvent.java", 181)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_DomEvent*) _r0.o)->fields.gnu_xml_dom_DomEvent.type_ = _r1.o;
     XMLVM_SOURCE_POSITION("DomEvent.java", 182)
     XMLVM_EXIT_METHOD()
@@ -651,10 +666,12 @@ JAVA_OBJECT gnu_xml_dom_DomEvent_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("DomEvent.java", 191)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_dom_DomEvent*) _r3.o)->fields.gnu_xml_dom_DomEvent.type_;
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("DomEvent.java", 192)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_xml_dom_DomEvent*) _r3.o)->fields.gnu_xml_dom_DomEvent.eventPhase_;
     switch (_r1.i) {
     case 1: goto label55;
@@ -668,8 +685,10 @@ JAVA_OBJECT gnu_xml_dom_DomEvent_toString__(JAVA_OBJECT me)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label22:;
     XMLVM_SOURCE_POSITION("DomEvent.java", 207)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_xml_dom_DomEvent*) _r3.o)->fields.gnu_xml_dom_DomEvent.bubbles_;
     if (_r1.i == 0) goto label36;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_xml_dom_DomEvent*) _r3.o)->fields.gnu_xml_dom_DomEvent.eventPhase_;
     _r2.i = 3;
     if (_r1.i == _r2.i) goto label36;
@@ -680,6 +699,7 @@ JAVA_OBJECT gnu_xml_dom_DomEvent_toString__(JAVA_OBJECT me)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     label36:;
     XMLVM_SOURCE_POSITION("DomEvent.java", 211)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_xml_dom_DomEvent*) _r3.o)->fields.gnu_xml_dom_DomEvent.cancelable_;
     if (_r1.i == 0) goto label45;
     XMLVM_SOURCE_POSITION("DomEvent.java", 213)

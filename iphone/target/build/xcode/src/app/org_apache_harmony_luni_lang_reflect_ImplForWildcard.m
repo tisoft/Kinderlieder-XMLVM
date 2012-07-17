@@ -306,8 +306,10 @@ void org_apache_harmony_luni_lang_reflect_ImplForWildcard___INIT____org_apache_h
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("ImplForWildcard.java", 29)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_lang_reflect_ImplForWildcard*) _r0.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForWildcard.extendsBound_ = _r1.o;
     XMLVM_SOURCE_POSITION("ImplForWildcard.java", 30)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_lang_reflect_ImplForWildcard*) _r0.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForWildcard.superBound_ = _r2.o;
     XMLVM_SOURCE_POSITION("ImplForWildcard.java", 31)
     XMLVM_EXIT_METHOD()
@@ -323,6 +325,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForWildcard_getLowerBounds_
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ImplForWildcard.java", 35)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_ImplForWildcard*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForWildcard.superBound_;
     XMLVM_CHECK_NPE(0)
     _r0.o = org_apache_harmony_luni_lang_reflect_ListOfTypes_getResolvedTypes__(_r0.o);
@@ -343,6 +346,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForWildcard_getUpperBounds_
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ImplForWildcard.java", 40)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_lang_reflect_ImplForWildcard*) _r1.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForWildcard.extendsBound_;
     XMLVM_CHECK_NPE(0)
     _r0.o = org_apache_harmony_luni_lang_reflect_ListOfTypes_getResolvedTypes__(_r0.o);
@@ -446,6 +450,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForWildcard_toString__(JAVA
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("ImplForWildcard.java", 62)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((org_apache_harmony_luni_lang_reflect_ImplForWildcard*) _r3.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForWildcard.extendsBound_;
     XMLVM_CHECK_NPE(1)
     _r1.i = org_apache_harmony_luni_lang_reflect_ListOfTypes_length__(_r1.o);
@@ -455,6 +460,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForWildcard_toString__(JAVA
     _r1.o = xmlvm_create_java_string_from_pool(3281);
     XMLVM_CHECK_NPE(0)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((org_apache_harmony_luni_lang_reflect_ImplForWildcard*) _r3.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForWildcard.extendsBound_;
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder_append___java_lang_Object(_r1.o, _r2.o);
@@ -467,6 +473,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForWildcard_toString__(JAVA
     return _r1.o;
     label31:;
     XMLVM_SOURCE_POSITION("ImplForWildcard.java", 64)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((org_apache_harmony_luni_lang_reflect_ImplForWildcard*) _r3.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForWildcard.superBound_;
     XMLVM_CHECK_NPE(1)
     _r1.i = org_apache_harmony_luni_lang_reflect_ListOfTypes_length__(_r1.o);
@@ -476,6 +483,7 @@ JAVA_OBJECT org_apache_harmony_luni_lang_reflect_ImplForWildcard_toString__(JAVA
     _r1.o = xmlvm_create_java_string_from_pool(3282);
     XMLVM_CHECK_NPE(0)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((org_apache_harmony_luni_lang_reflect_ImplForWildcard*) _r3.o)->fields.org_apache_harmony_luni_lang_reflect_ImplForWildcard.superBound_;
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder_append___java_lang_Object(_r1.o, _r2.o);

@@ -312,6 +312,7 @@ void java_util_Hashtable_Entry___INIT____java_lang_Object_java_lang_Object(JAVA_
     //java_lang_Object_hashCode__[4]
     XMLVM_CHECK_NPE(2)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_Object*) _r2.o)->tib->vtable[4])(_r2.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_Hashtable_Entry*) _r1.o)->fields.java_util_Hashtable_Entry.hashcode_ = _r0.i;
     XMLVM_SOURCE_POSITION("Hashtable.java", 97)
     XMLVM_EXIT_METHOD()
@@ -332,14 +333,17 @@ JAVA_OBJECT java_util_Hashtable_Entry_clone__(JAVA_OBJECT me)
     _r0.o = java_util_MapEntry_clone__(_r2.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("Hashtable.java", 103)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Hashtable_Entry*) _r2.o)->fields.java_util_Hashtable_Entry.next_;
     if (_r1.o == JAVA_NULL) goto label20;
     XMLVM_SOURCE_POSITION("Hashtable.java", 104)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Hashtable_Entry*) _r2.o)->fields.java_util_Hashtable_Entry.next_;
     //java_util_Hashtable_Entry_clone__[0]
     XMLVM_CHECK_NPE(1)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_Hashtable_Entry*) _r1.o)->tib->vtable[0])(_r1.o);
     _r2.o = _r2.o;
+    XMLVM_CHECK_NPE(0)
     ((java_util_Hashtable_Entry*) _r0.o)->fields.java_util_Hashtable_Entry.next_ = _r2.o;
     label20:;
     XMLVM_SOURCE_POSITION("Hashtable.java", 106)
@@ -366,8 +370,10 @@ JAVA_OBJECT java_util_Hashtable_Entry_setValue___java_lang_Object(JAVA_OBJECT me
     XMLVM_THROW_CUSTOM(_r0.o)
     label8:;
     XMLVM_SOURCE_POSITION("Hashtable.java", 114)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_MapEntry*) _r1.o)->fields.java_util_MapEntry.value_;
     XMLVM_SOURCE_POSITION("Hashtable.java", 115)
+    XMLVM_CHECK_NPE(1)
     ((java_util_MapEntry*) _r1.o)->fields.java_util_MapEntry.value_ = _r2.o;
     XMLVM_SOURCE_POSITION("Hashtable.java", 116)
     XMLVM_EXIT_METHOD()
@@ -383,6 +389,7 @@ JAVA_INT java_util_Hashtable_Entry_getKeyHash__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Hashtable.java", 120)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_MapEntry*) _r1.o)->fields.java_util_MapEntry.key_;
     //java_lang_Object_hashCode__[4]
     XMLVM_CHECK_NPE(0)
@@ -405,11 +412,13 @@ JAVA_BOOLEAN java_util_Hashtable_Entry_equalsKey___java_lang_Object_int(JAVA_OBJ
     _r3.o = n1;
     _r4.i = n2;
     XMLVM_SOURCE_POSITION("Hashtable.java", 124)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_Hashtable_Entry*) _r2.o)->fields.java_util_Hashtable_Entry.hashcode_;
     //java_lang_Object_hashCode__[4]
     XMLVM_CHECK_NPE(3)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_Object*) _r3.o)->tib->vtable[4])(_r3.o);
     if (_r0.i != _r1.i) goto label18;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_MapEntry*) _r2.o)->fields.java_util_MapEntry.key_;
     //java_lang_Object_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -437,6 +446,7 @@ JAVA_OBJECT java_util_Hashtable_Entry_toString__(JAVA_OBJECT me)
     _r0.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_MapEntry*) _r2.o)->fields.java_util_MapEntry.key_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);
@@ -444,6 +454,7 @@ JAVA_OBJECT java_util_Hashtable_Entry_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(162);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_MapEntry*) _r2.o)->fields.java_util_MapEntry.value_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);

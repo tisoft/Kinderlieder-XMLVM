@@ -219,6 +219,7 @@ void my_kinderlieder_Library_2___INIT____my_kinderlieder_Library(JAVA_OBJECT me,
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("Library.java", 58)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_Library_2*) _r0.o)->fields.my_kinderlieder_Library_2.this_0_ = _r1.o;
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);

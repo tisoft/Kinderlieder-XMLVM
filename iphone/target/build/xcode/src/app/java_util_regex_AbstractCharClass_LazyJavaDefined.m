@@ -224,6 +224,7 @@ JAVA_OBJECT java_util_regex_AbstractCharClass_LazyJavaDefined_computeValue__(JAV
     XMLVM_CHECK_NPE(0)
     java_util_regex_AbstractCharClass_LazyJavaDefined_1___INIT____java_util_regex_AbstractCharClass_LazyJavaDefined(_r0.o, _r4.o);
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 468)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((java_util_regex_AbstractCharClass*) _r0.o)->fields.java_util_regex_AbstractCharClass.lowHighSurrogates_;
     _r2.i = 0;
     _r3.i = java_util_regex_AbstractCharClass_GET_SURROGATE_CARDINALITY();
@@ -231,6 +232,7 @@ JAVA_OBJECT java_util_regex_AbstractCharClass_LazyJavaDefined_computeValue__(JAV
     java_util_BitSet_set___int_int(_r1.o, _r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 470)
     _r1.i = 1;
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractCharClass*) _r0.o)->fields.java_util_regex_AbstractCharClass.mayContainSupplCodepoints_ = _r1.i;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 471)
     XMLVM_EXIT_METHOD()

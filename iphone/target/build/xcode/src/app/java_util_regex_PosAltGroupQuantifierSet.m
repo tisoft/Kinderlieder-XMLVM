@@ -263,6 +263,7 @@ JAVA_INT java_util_regex_PosAltGroupQuantifierSet_matches___int_java_lang_CharSe
     _r4.o = n2;
     _r5.o = n3;
     XMLVM_SOURCE_POSITION("PosAltGroupQuantifierSet.java", 40)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_QuantifierSet*) _r2.o)->fields.java_util_regex_QuantifierSet.innerSet_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -271,6 +272,7 @@ JAVA_INT java_util_regex_PosAltGroupQuantifierSet_matches___int_java_lang_CharSe
     if (_r0.i <= 0) goto label15;
     label8:;
     XMLVM_SOURCE_POSITION("PosAltGroupQuantifierSet.java", 44)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_regex_AbstractSet*) _r2.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(1)
@@ -292,6 +294,7 @@ void java_util_regex_PosAltGroupQuantifierSet_setNext___java_util_regex_Abstract
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("PosAltGroupQuantifierSet.java", 48)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractSet*) _r0.o)->fields.java_util_regex_AbstractSet.next_ = _r1.o;
     XMLVM_SOURCE_POSITION("PosAltGroupQuantifierSet.java", 49)
     XMLVM_EXIT_METHOD()

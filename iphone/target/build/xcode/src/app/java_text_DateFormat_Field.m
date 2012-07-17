@@ -710,6 +710,7 @@ void java_text_DateFormat_Field___INIT____java_lang_String_int(JAVA_OBJECT me, J
     XMLVM_CHECK_NPE(0)
     java_text_Format_Field___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("DateFormat.java", 284)
+    XMLVM_CHECK_NPE(0)
     ((java_text_DateFormat_Field*) _r0.o)->fields.java_text_DateFormat_Field.calendarField_ = _r2.i;
     XMLVM_SOURCE_POSITION("DateFormat.java", 285)
     XMLVM_EXIT_METHOD()
@@ -725,6 +726,7 @@ JAVA_INT java_text_DateFormat_Field_getCalendarField__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DateFormat.java", 289)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_text_DateFormat_Field*) _r1.o)->fields.java_text_DateFormat_Field.calendarField_;
     XMLVM_EXIT_METHOD()
     return _r0.i;

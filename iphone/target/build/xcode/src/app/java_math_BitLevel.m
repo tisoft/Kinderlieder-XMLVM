@@ -439,6 +439,7 @@ JAVA_INT java_math_BitLevel_bitLength___java_math_BigInteger(JAVA_OBJECT n1)
     _r5.o = n1;
     _r4.i = 1;
     XMLVM_SOURCE_POSITION("BitLevel.java", 42)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i != 0) goto label7;
     XMLVM_SOURCE_POSITION("BitLevel.java", 43)
@@ -449,22 +450,27 @@ JAVA_INT java_math_BitLevel_bitLength___java_math_BigInteger(JAVA_OBJECT n1)
     return _r0.i;
     label7:;
     XMLVM_SOURCE_POSITION("BitLevel.java", 45)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.numberLength_;
     _r0.i = _r0.i << 5;
     XMLVM_SOURCE_POSITION("BitLevel.java", 46)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.digits_;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.numberLength_;
     _r2.i = _r2.i - _r4.i;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     _r1.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
     XMLVM_SOURCE_POSITION("BitLevel.java", 48)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.sign_;
     if (_r2.i >= 0) goto label33;
     XMLVM_SOURCE_POSITION("BitLevel.java", 49)
     XMLVM_CHECK_NPE(5)
     _r2.i = java_math_BigInteger_getFirstNonzeroDigit__(_r5.o);
     XMLVM_SOURCE_POSITION("BitLevel.java", 51)
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.numberLength_;
     _r3.i = _r3.i - _r4.i;
     if (_r2.i != _r3.i) goto label33;
@@ -491,6 +497,7 @@ JAVA_INT java_math_BitLevel_bitCount___java_math_BigInteger(JAVA_OBJECT n1)
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("BitLevel.java", 62)
     XMLVM_SOURCE_POSITION("BitLevel.java", 64)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i != 0) goto label7;
     _r0 = _r2;
@@ -504,17 +511,20 @@ JAVA_INT java_math_BitLevel_bitCount___java_math_BigInteger(JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(3)
     _r0.i = java_math_BigInteger_getFirstNonzeroDigit__(_r3.o);
     XMLVM_SOURCE_POSITION("BitLevel.java", 69)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.sign_;
     if (_r1.i <= 0) goto label34;
     _r1 = _r2;
     label16:;
     XMLVM_SOURCE_POSITION("BitLevel.java", 70)
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i < _r2.i) goto label22;
     _r0 = _r1;
     goto label6;
     label22:;
     XMLVM_SOURCE_POSITION("BitLevel.java", 71)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
@@ -525,6 +535,7 @@ JAVA_INT java_math_BitLevel_bitCount___java_math_BigInteger(JAVA_OBJECT n1)
     goto label16;
     label34:;
     XMLVM_SOURCE_POSITION("BitLevel.java", 75)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -535,15 +546,18 @@ JAVA_INT java_math_BitLevel_bitCount___java_math_BigInteger(JAVA_OBJECT n1)
     _r0.i = _r0.i + 1;
     label46:;
     XMLVM_SOURCE_POSITION("BitLevel.java", 76)
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i < _r2.i) goto label56;
     XMLVM_SOURCE_POSITION("BitLevel.java", 80)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.numberLength_;
     _r0.i = _r0.i << 5;
     _r0.i = _r0.i - _r1.i;
     goto label6;
     label56:;
     XMLVM_SOURCE_POSITION("BitLevel.java", 77)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
@@ -570,6 +584,7 @@ JAVA_BOOLEAN java_math_BitLevel_testBit___java_math_BigInteger_int(JAVA_OBJECT n
     _r4.i = n2;
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("BitLevel.java", 91)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.digits_;
     _r1.i = _r4.i >> 5;
     XMLVM_CHECK_NPE(0)
@@ -656,6 +671,7 @@ JAVA_OBJECT java_math_BitLevel_shiftLeft___java_math_BigInteger_int(JAVA_OBJECT 
     _r0.i = _r6.i >> 5;
     _r1.i = _r6.i & 31;
     XMLVM_SOURCE_POSITION("BitLevel.java", 115)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.numberLength_;
     _r2.i = _r2.i + _r0.i;
     if (_r1.i != 0) goto label29;
@@ -667,10 +683,12 @@ JAVA_OBJECT java_math_BitLevel_shiftLeft___java_math_BigInteger_int(JAVA_OBJECT 
     if (!__TIB_int.classInitialized) __INIT_int();
     _r3.o = XMLVMArray_createSingleDimension(__CLASS_int, _r2.i);
     XMLVM_SOURCE_POSITION("BitLevel.java", 119)
+    XMLVM_CHECK_NPE(5)
     _r4.o = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.digits_;
     java_math_BitLevel_shiftLeft___int_1ARRAY_int_1ARRAY_int_int(_r3.o, _r4.o, _r0.i, _r1.i);
     XMLVM_SOURCE_POSITION("BitLevel.java", 120)
     _r0.o = __NEW_java_math_BigInteger();
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.sign_;
     XMLVM_CHECK_NPE(0)
     java_math_BigInteger___INIT____int_int_int_1ARRAY(_r0.o, _r1.i, _r2.i, _r3.o);
@@ -704,9 +722,12 @@ void java_math_BitLevel_inplaceShiftLeft___java_math_BigInteger_int(JAVA_OBJECT 
     XMLVM_SOURCE_POSITION("BitLevel.java", 130)
     _r0.i = _r6.i >> 5;
     XMLVM_SOURCE_POSITION("BitLevel.java", 131)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.numberLength_;
     XMLVM_SOURCE_POSITION("BitLevel.java", 133)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.digits_;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.numberLength_;
     _r3.i = _r3.i - _r4.i;
     XMLVM_CHECK_NPE(2)
@@ -722,9 +743,12 @@ void java_math_BitLevel_inplaceShiftLeft___java_math_BigInteger_int(JAVA_OBJECT 
     label22:;
     _r2.i = _r2.i + _r0.i;
     _r1.i = _r1.i + _r2.i;
+    XMLVM_CHECK_NPE(5)
     ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.numberLength_ = _r1.i;
     XMLVM_SOURCE_POSITION("BitLevel.java", 135)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.digits_;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.digits_;
     _r3.i = _r6.i & 31;
     java_math_BitLevel_shiftLeft___int_1ARRAY_int_1ARRAY_int_int(_r1.o, _r2.o, _r0.i, _r3.i);
@@ -892,6 +916,7 @@ JAVA_OBJECT java_math_BitLevel_shiftLeftOneBit___java_math_BigInteger(JAVA_OBJEC
     XMLVMElem _r4;
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("BitLevel.java", 193)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_math_BigInteger*) _r4.o)->fields.java_math_BigInteger.numberLength_;
     XMLVM_SOURCE_POSITION("BitLevel.java", 194)
     _r1.i = _r0.i + 1;
@@ -899,10 +924,12 @@ JAVA_OBJECT java_math_BitLevel_shiftLeftOneBit___java_math_BigInteger(JAVA_OBJEC
     if (!__TIB_int.classInitialized) __INIT_int();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_int, _r1.i);
     XMLVM_SOURCE_POSITION("BitLevel.java", 196)
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_math_BigInteger*) _r4.o)->fields.java_math_BigInteger.digits_;
     java_math_BitLevel_shiftLeftOneBit___int_1ARRAY_int_1ARRAY_int(_r2.o, _r3.o, _r0.i);
     XMLVM_SOURCE_POSITION("BitLevel.java", 197)
     _r0.o = __NEW_java_math_BigInteger();
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_math_BigInteger*) _r4.o)->fields.java_math_BigInteger.sign_;
     XMLVM_CHECK_NPE(0)
     java_math_BigInteger___INIT____int_int_int_1ARRAY(_r0.o, _r3.i, _r1.i, _r2.o);
@@ -936,9 +963,11 @@ JAVA_OBJECT java_math_BitLevel_shiftRight___java_math_BigInteger_int(JAVA_OBJECT
     _r0.i = _r8.i >> 5;
     _r1.i = _r8.i & 31;
     XMLVM_SOURCE_POSITION("BitLevel.java", 206)
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i < _r2.i) goto label19;
     XMLVM_SOURCE_POSITION("BitLevel.java", 207)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i >= 0) goto label16;
     _r0.o = java_math_BigInteger_GET_MINUS_ONE();
@@ -951,6 +980,7 @@ JAVA_OBJECT java_math_BitLevel_shiftRight___java_math_BigInteger_int(JAVA_OBJECT
     goto label15;
     label19:;
     XMLVM_SOURCE_POSITION("BitLevel.java", 210)
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     _r2.i = _r2.i - _r0.i;
     _r3.i = _r2.i + 1;
@@ -958,15 +988,18 @@ JAVA_OBJECT java_math_BitLevel_shiftRight___java_math_BigInteger_int(JAVA_OBJECT
     if (!__TIB_int.classInitialized) __INIT_int();
     _r3.o = XMLVMArray_createSingleDimension(__CLASS_int, _r3.i);
     XMLVM_SOURCE_POSITION("BitLevel.java", 213)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     java_math_BitLevel_shiftRight___int_1ARRAY_int_int_1ARRAY_int_int(_r3.o, _r2.i, _r4.o, _r0.i, _r1.i);
     XMLVM_SOURCE_POSITION("BitLevel.java", 214)
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.sign_;
     if (_r4.i >= 0) goto label100;
     _r4 = _r6;
     label36:;
     XMLVM_SOURCE_POSITION("BitLevel.java", 217)
     if (_r4.i >= _r0.i) goto label44;
+    XMLVM_CHECK_NPE(7)
     _r5.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r4.i);
@@ -977,6 +1010,7 @@ JAVA_OBJECT java_math_BitLevel_shiftRight___java_math_BigInteger_int(JAVA_OBJECT
     if (_r4.i < _r0.i) goto label59;
     XMLVM_SOURCE_POSITION("BitLevel.java", 222)
     if (_r1.i <= 0) goto label100;
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r4.i);
@@ -1013,6 +1047,7 @@ JAVA_OBJECT java_math_BitLevel_shiftRight___java_math_BigInteger_int(JAVA_OBJECT
     label78:;
     XMLVM_SOURCE_POSITION("BitLevel.java", 232)
     _r1.o = __NEW_java_math_BigInteger();
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.sign_;
     XMLVM_CHECK_NPE(1)
     java_math_BigInteger___INIT____int_int_int_1ARRAY(_r1.o, _r2.i, _r0.i, _r3.o);
@@ -1073,12 +1108,17 @@ void java_math_BitLevel_inplaceShiftRight___java_math_BigInteger_int(JAVA_OBJECT
     XMLVM_SOURCE_POSITION("BitLevel.java", 244)
     _r1.i = _r8.i >> 5;
     XMLVM_SOURCE_POSITION("BitLevel.java", 245)
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     _r2.i = _r2.i - _r1.i;
+    XMLVM_CHECK_NPE(7)
     ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_ = _r2.i;
     XMLVM_SOURCE_POSITION("BitLevel.java", 246)
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_SOURCE_POSITION("BitLevel.java", 247)
     _r5.i = _r8.i & 31;
@@ -1089,8 +1129,10 @@ void java_math_BitLevel_inplaceShiftRight___java_math_BigInteger_int(JAVA_OBJECT
     _r0 = _r6;
     label38:;
     XMLVM_SOURCE_POSITION("BitLevel.java", 251)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i >= _r1.i) goto label49;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -1099,14 +1141,18 @@ void java_math_BitLevel_inplaceShiftRight___java_math_BigInteger_int(JAVA_OBJECT
     if (_r1.i == _r2.i) goto label74;
     label49:;
     XMLVM_SOURCE_POSITION("BitLevel.java", 254)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i != _r1.i) goto label59;
     XMLVM_SOURCE_POSITION("BitLevel.java", 255)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     _r1.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(7)
     ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_ = _r1.i;
     label59:;
     XMLVM_SOURCE_POSITION("BitLevel.java", 257)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -1125,6 +1171,7 @@ void java_math_BitLevel_inplaceShiftRight___java_math_BigInteger_int(JAVA_OBJECT
     goto label13;
     label74:;
     XMLVM_SOURCE_POSITION("BitLevel.java", 252)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -1264,6 +1311,7 @@ JAVA_OBJECT java_math_BitLevel_flipBit___java_math_BigInteger_int(JAVA_OBJECT n1
     _r8.i = 1;
     _r7.i = 0;
     XMLVM_SOURCE_POSITION("BitLevel.java", 311)
+    XMLVM_CHECK_NPE(10)
     _r0.i = ((java_math_BigInteger*) _r10.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i != 0) goto label52;
     _r0 = _r8;
@@ -1273,6 +1321,7 @@ JAVA_OBJECT java_math_BitLevel_flipBit___java_math_BigInteger_int(JAVA_OBJECT n1
     _r2.i = _r11.i & 31;
     _r3.i = _r1.i + 1;
     XMLVM_SOURCE_POSITION("BitLevel.java", 314)
+    XMLVM_CHECK_NPE(10)
     _r4.i = ((java_math_BigInteger*) _r10.o)->fields.java_math_BigInteger.numberLength_;
     _r3.i = java_lang_Math_max___int_int(_r3.i, _r4.i);
     _r3.i = _r3.i + 1;
@@ -1282,13 +1331,17 @@ JAVA_OBJECT java_math_BitLevel_flipBit___java_math_BigInteger_int(JAVA_OBJECT n1
     XMLVM_SOURCE_POSITION("BitLevel.java", 318)
     _r2.i = _r8.i << _r2.i;
     XMLVM_SOURCE_POSITION("BitLevel.java", 319)
+    XMLVM_CHECK_NPE(10)
     _r5.o = ((java_math_BigInteger*) _r10.o)->fields.java_math_BigInteger.digits_;
+    XMLVM_CHECK_NPE(10)
     _r6.i = ((java_math_BigInteger*) _r10.o)->fields.java_math_BigInteger.numberLength_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r5.o, _r7.i, _r4.o, _r7.i, _r6.i);
     XMLVM_SOURCE_POSITION("BitLevel.java", 321)
+    XMLVM_CHECK_NPE(10)
     _r5.i = ((java_math_BigInteger*) _r10.o)->fields.java_math_BigInteger.sign_;
     if (_r5.i >= 0) goto label119;
     XMLVM_SOURCE_POSITION("BitLevel.java", 322)
+    XMLVM_CHECK_NPE(10)
     _r5.i = ((java_math_BigInteger*) _r10.o)->fields.java_math_BigInteger.numberLength_;
     if (_r1.i < _r5.i) goto label55;
     XMLVM_SOURCE_POSITION("BitLevel.java", 323)
@@ -1307,6 +1360,7 @@ JAVA_OBJECT java_math_BitLevel_flipBit___java_math_BigInteger_int(JAVA_OBJECT n1
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label52:;
+    XMLVM_CHECK_NPE(10)
     _r0.i = ((java_math_BigInteger*) _r10.o)->fields.java_math_BigInteger.sign_;
     goto label8;
     label55:;

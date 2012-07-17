@@ -206,9 +206,11 @@ void org_apache_harmony_luni_internal_io_FileCanonPathCache_CacheElement___INIT_
     XMLVM_CHECK_NPE(2)
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 37)
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_internal_io_FileCanonPathCache_CacheElement*) _r2.o)->fields.org_apache_harmony_luni_internal_io_FileCanonPathCache_CacheElement.canonicalPath_ = _r3.o;
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 38)
     _r0.l = java_lang_System_currentTimeMillis__();
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_internal_io_FileCanonPathCache_CacheElement*) _r2.o)->fields.org_apache_harmony_luni_internal_io_FileCanonPathCache_CacheElement.timestamp_ = _r0.l;
     XMLVM_SOURCE_POSITION("FileCanonPathCache.java", 39)
     XMLVM_EXIT_METHOD()

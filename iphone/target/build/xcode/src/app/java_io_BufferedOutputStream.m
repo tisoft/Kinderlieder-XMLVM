@@ -327,6 +327,7 @@ void java_io_BufferedOutputStream___INIT____java_io_OutputStream(JAVA_OBJECT me,
     _r0.i = 8192;
     if (!__TIB_byte.classInitialized) __INIT_byte();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_byte, _r0.i);
+    XMLVM_CHECK_NPE(1)
     ((java_io_BufferedOutputStream*) _r1.o)->fields.java_io_BufferedOutputStream.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("BufferedOutputStream.java", 60)
     XMLVM_EXIT_METHOD()
@@ -363,6 +364,7 @@ void java_io_BufferedOutputStream___INIT____java_io_OutputStream_int(JAVA_OBJECT
     XMLVM_SOURCE_POSITION("BufferedOutputStream.java", 79)
     if (!__TIB_byte.classInitialized) __INIT_byte();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_byte, _r4.i);
+    XMLVM_CHECK_NPE(2)
     ((java_io_BufferedOutputStream*) _r2.o)->fields.java_io_BufferedOutputStream.buf_ = _r0.o;
     XMLVM_SOURCE_POSITION("BufferedOutputStream.java", 80)
     XMLVM_EXIT_METHOD()
@@ -384,6 +386,7 @@ void java_io_BufferedOutputStream_flush__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     java_io_BufferedOutputStream_flushInternal__(_r1.o);
     XMLVM_SOURCE_POSITION("BufferedOutputStream.java", 92)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_FilterOutputStream*) _r1.o)->fields.java_io_FilterOutputStream.out_;
     //java_io_OutputStream_flush__[8]
     XMLVM_CHECK_NPE(0)
@@ -425,6 +428,7 @@ void java_io_BufferedOutputStream_write___byte_1ARRAY_int_int(JAVA_OBJECT me, JA
     java_lang_Object_acquireLockRecursive__(_r3.o);
     XMLVM_TRY_BEGIN(w3864aaab5b1b7)
     // Begin try
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_BufferedOutputStream*) _r3.o)->fields.java_io_BufferedOutputStream.buf_;
     XMLVM_SOURCE_POSITION("BufferedOutputStream.java", 125)
     if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w3864aaab5b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w3864aaab5b1b7, sizeof(XMLVM_JMP_BUF)); goto label18; };
@@ -434,6 +438,7 @@ void java_io_BufferedOutputStream_write___byte_1ARRAY_int_int(JAVA_OBJECT me, JA
     XMLVM_CHECK_NPE(3)
     java_io_BufferedOutputStream_flushInternal__(_r3.o);
     XMLVM_SOURCE_POSITION("BufferedOutputStream.java", 127)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_FilterOutputStream*) _r3.o)->fields.java_io_FilterOutputStream.out_;
     //java_io_OutputStream_write___byte_1ARRAY_int_int[10]
     XMLVM_CHECK_NPE(0)
@@ -547,6 +552,7 @@ void java_io_BufferedOutputStream_write___byte_1ARRAY_int_int(JAVA_OBJECT me, JA
     // Begin try
     XMLVM_SOURCE_POSITION("BufferedOutputStream.java", 151)
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_io_BufferedOutputStream*) _r3.o)->fields.java_io_BufferedOutputStream.count_;
     _r1.i = _r1.i - _r2.i;
     if (_r6.i < _r1.i) { XMLVM_MEMCPY(curThread_w3864aaab5b1c31->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w3864aaab5b1c31, sizeof(XMLVM_JMP_BUF)); goto label90; };
@@ -563,11 +569,14 @@ void java_io_BufferedOutputStream_write___byte_1ARRAY_int_int(JAVA_OBJECT me, JA
     XMLVM_TRY_BEGIN(w3864aaab5b1c33)
     // Begin try
     XMLVM_SOURCE_POSITION("BufferedOutputStream.java", 156)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_io_BufferedOutputStream*) _r3.o)->fields.java_io_BufferedOutputStream.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r4.o, _r5.i, _r0.o, _r1.i, _r6.i);
     XMLVM_SOURCE_POSITION("BufferedOutputStream.java", 157)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_io_BufferedOutputStream*) _r3.o)->fields.java_io_BufferedOutputStream.count_;
     _r0.i = _r0.i + _r6.i;
+    XMLVM_CHECK_NPE(3)
     ((java_io_BufferedOutputStream*) _r3.o)->fields.java_io_BufferedOutputStream.count_ = _r0.i;
     // End try
     XMLVM_TRY_END
@@ -591,6 +600,7 @@ void java_io_BufferedOutputStream_close__(JAVA_OBJECT me)
     java_lang_Object_acquireLockRecursive__(_r2.o);
     XMLVM_TRY_BEGIN(w3864aaab6b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_BufferedOutputStream*) _r2.o)->fields.java_io_BufferedOutputStream.buf_;
     // End try
     XMLVM_TRY_END
@@ -620,6 +630,7 @@ void java_io_BufferedOutputStream_close__(JAVA_OBJECT me)
     _r0.o = JAVA_NULL;
     XMLVM_TRY_BEGIN(w3864aaab6b1c14)
     // Begin try
+    XMLVM_CHECK_NPE(2)
     ((java_io_BufferedOutputStream*) _r2.o)->fields.java_io_BufferedOutputStream.buf_ = _r0.o;
     // End try
     XMLVM_TRY_END
@@ -640,6 +651,7 @@ void java_io_BufferedOutputStream_close__(JAVA_OBJECT me)
     _r1.o = JAVA_NULL;
     XMLVM_TRY_BEGIN(w3864aaab6b1c24)
     // Begin try
+    XMLVM_CHECK_NPE(2)
     ((java_io_BufferedOutputStream*) _r2.o)->fields.java_io_BufferedOutputStream.buf_ = _r1.o;
     XMLVM_SOURCE_POSITION("BufferedOutputStream.java", 169)
     XMLVM_THROW_CUSTOM(_r0.o)
@@ -668,6 +680,7 @@ void java_io_BufferedOutputStream_write___int(JAVA_OBJECT me, JAVA_INT n1)
     java_lang_Object_acquireLockRecursive__(_r4.o);
     XMLVM_TRY_BEGIN(w3864aaab7b1b5)
     // Begin try
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_io_BufferedOutputStream*) _r4.o)->fields.java_io_BufferedOutputStream.buf_;
     XMLVM_SOURCE_POSITION("BufferedOutputStream.java", 187)
     if (_r0.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w3864aaab7b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w3864aaab7b1b5, sizeof(XMLVM_JMP_BUF)); goto label20; };
@@ -694,18 +707,22 @@ void java_io_BufferedOutputStream_write___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_TRY_BEGIN(w3864aaab7b1c11)
     // Begin try
     XMLVM_SOURCE_POSITION("BufferedOutputStream.java", 191)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_io_BufferedOutputStream*) _r4.o)->fields.java_io_BufferedOutputStream.count_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     if (_r1.i != _r2.i) { XMLVM_MEMCPY(curThread_w3864aaab7b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w3864aaab7b1c11, sizeof(XMLVM_JMP_BUF)); goto label36; };
     XMLVM_SOURCE_POSITION("BufferedOutputStream.java", 192)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_io_FilterOutputStream*) _r4.o)->fields.java_io_FilterOutputStream.out_;
     _r2.i = 0;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_io_BufferedOutputStream*) _r4.o)->fields.java_io_BufferedOutputStream.count_;
     //java_io_OutputStream_write___byte_1ARRAY_int_int[10]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) ((java_io_OutputStream*) _r1.o)->tib->vtable[10])(_r1.o, _r0.o, _r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("BufferedOutputStream.java", 193)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(4)
     ((java_io_BufferedOutputStream*) _r4.o)->fields.java_io_BufferedOutputStream.count_ = _r1.i;
     // End try
     XMLVM_TRY_END
@@ -717,8 +734,10 @@ void java_io_BufferedOutputStream_write___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_TRY_BEGIN(w3864aaab7b1c13)
     // Begin try
     XMLVM_SOURCE_POSITION("BufferedOutputStream.java", 195)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_io_BufferedOutputStream*) _r4.o)->fields.java_io_BufferedOutputStream.count_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_io_BufferedOutputStream*) _r4.o)->fields.java_io_BufferedOutputStream.count_ = _r2.i;
     _r2.i = (_r5.i << 24) >> 24;
     XMLVM_CHECK_NPE(0)
@@ -749,16 +768,21 @@ void java_io_BufferedOutputStream_flushInternal__(JAVA_OBJECT me)
     _r4.o = me;
     _r3.i = 0;
     XMLVM_SOURCE_POSITION("BufferedOutputStream.java", 202)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_io_BufferedOutputStream*) _r4.o)->fields.java_io_BufferedOutputStream.count_;
     if (_r0.i <= 0) goto label16;
     XMLVM_SOURCE_POSITION("BufferedOutputStream.java", 203)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_io_FilterOutputStream*) _r4.o)->fields.java_io_FilterOutputStream.out_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_io_BufferedOutputStream*) _r4.o)->fields.java_io_BufferedOutputStream.buf_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_io_BufferedOutputStream*) _r4.o)->fields.java_io_BufferedOutputStream.count_;
     //java_io_OutputStream_write___byte_1ARRAY_int_int[10]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) ((java_io_OutputStream*) _r0.o)->tib->vtable[10])(_r0.o, _r1.o, _r3.i, _r2.i);
     XMLVM_SOURCE_POSITION("BufferedOutputStream.java", 204)
+    XMLVM_CHECK_NPE(4)
     ((java_io_BufferedOutputStream*) _r4.o)->fields.java_io_BufferedOutputStream.count_ = _r3.i;
     label16:;
     XMLVM_SOURCE_POSITION("BufferedOutputStream.java", 206)

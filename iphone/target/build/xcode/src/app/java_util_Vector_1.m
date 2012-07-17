@@ -245,12 +245,14 @@ void java_util_Vector_1___INIT____java_util_Vector(JAVA_OBJECT me, JAVA_OBJECT n
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Vector.java", 1)
+    XMLVM_CHECK_NPE(1)
     ((java_util_Vector_1*) _r1.o)->fields.java_util_Vector_1.this_0_ = _r2.o;
     XMLVM_SOURCE_POSITION("Vector.java", 343)
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("Vector.java", 344)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Vector_1*) _r1.o)->fields.java_util_Vector_1.pos_ = _r0.i;
     XMLVM_EXIT_METHOD()
     return;
@@ -266,8 +268,11 @@ JAVA_BOOLEAN java_util_Vector_1_hasMoreElements__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Vector.java", 347)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_Vector_1*) _r2.o)->fields.java_util_Vector_1.pos_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Vector_1*) _r2.o)->fields.java_util_Vector_1.this_0_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_Vector*) _r1.o)->fields.java_util_Vector.elementCount_;
     if (_r0.i >= _r1.i) goto label10;
     _r0.i = 1;
@@ -291,20 +296,28 @@ JAVA_OBJECT java_util_Vector_1_nextElement__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("Vector.java", 352)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Vector_1*) _r4.o)->fields.java_util_Vector_1.this_0_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w14732aaab4b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("Vector.java", 353)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_Vector_1*) _r4.o)->fields.java_util_Vector_1.pos_;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Vector_1*) _r4.o)->fields.java_util_Vector_1.this_0_;
+    XMLVM_CHECK_NPE(2)
     _r2.i = ((java_util_Vector*) _r2.o)->fields.java_util_Vector.elementCount_;
     if (_r1.i >= _r2.i) { XMLVM_MEMCPY(curThread_w14732aaab4b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w14732aaab4b1b5, sizeof(XMLVM_JMP_BUF)); goto label25; };
     XMLVM_SOURCE_POSITION("Vector.java", 354)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Vector_1*) _r4.o)->fields.java_util_Vector_1.this_0_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_Vector*) _r1.o)->fields.java_util_Vector.elementData_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_Vector_1*) _r4.o)->fields.java_util_Vector_1.pos_;
     _r3.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_util_Vector_1*) _r4.o)->fields.java_util_Vector_1.pos_ = _r3.i;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);

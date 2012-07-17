@@ -239,6 +239,7 @@ void my_kinderlieder_RootViewController_3___INIT____my_kinderlieder_RootViewCont
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("RootViewController.java", 48)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_RootViewController_3*) _r0.o)->fields.my_kinderlieder_RootViewController_3.this_0_ = _r1.o;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UITableViewDataSource___INIT___(_r0.o);
@@ -262,6 +263,7 @@ JAVA_OBJECT my_kinderlieder_RootViewController_3_cellForRowAtIndexPath___org_xml
     _r5.o = n1;
     _r6.o = n2;
     XMLVM_SOURCE_POSITION("RootViewController.java", 51)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((my_kinderlieder_RootViewController_3*) _r4.o)->fields.my_kinderlieder_RootViewController_3.this_0_;
     _r2.o = my_kinderlieder_RootViewController_access$100___my_kinderlieder_RootViewController(_r2.o);
     XMLVM_CHECK_NPE(6)
@@ -270,6 +272,7 @@ JAVA_OBJECT my_kinderlieder_RootViewController_3_cellForRowAtIndexPath___org_xml
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_get___int])(_r2.o, _r3.i);
     _r1.o = _r1.o;
     XMLVM_SOURCE_POSITION("RootViewController.java", 52)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((my_kinderlieder_RootViewController_3*) _r4.o)->fields.my_kinderlieder_RootViewController_3.this_0_;
     _r2.o = my_kinderlieder_RootViewController_access$200___my_kinderlieder_RootViewController(_r2.o);
     XMLVM_CHECK_NPE(2)
@@ -291,6 +294,7 @@ JAVA_OBJECT my_kinderlieder_RootViewController_3_cellForRowAtIndexPath___org_xml
     XMLVM_CHECK_NPE(2)
     org_xmlvm_iphone_UILabel_setText___java_lang_String(_r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("RootViewController.java", 57)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((my_kinderlieder_RootViewController_3*) _r4.o)->fields.my_kinderlieder_RootViewController_3.this_0_;
     _r2.o = my_kinderlieder_RootViewController_access$200___my_kinderlieder_RootViewController(_r2.o);
     XMLVM_CHECK_NPE(2)
@@ -314,6 +318,7 @@ JAVA_INT my_kinderlieder_RootViewController_3_numberOfRowsInSection___org_xmlvm_
     _r2.o = n1;
     _r3.i = n2;
     XMLVM_SOURCE_POSITION("RootViewController.java", 64)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((my_kinderlieder_RootViewController_3*) _r1.o)->fields.my_kinderlieder_RootViewController_3.this_0_;
     _r0.o = my_kinderlieder_RootViewController_access$100___my_kinderlieder_RootViewController(_r0.o);
     XMLVM_CHECK_NPE(0)

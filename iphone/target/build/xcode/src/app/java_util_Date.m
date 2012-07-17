@@ -1122,6 +1122,7 @@ void java_util_Date___INIT____int_int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT 
     XMLVM_SOURCE_POSITION("Date.java", 81)
     XMLVM_CHECK_NPE(0)
     _r0.l = java_util_Calendar_getTimeInMillis__(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((java_util_Date*) _r2.o)->fields.java_util_Date.milliseconds_ = _r0.l;
     XMLVM_SOURCE_POSITION("Date.java", 82)
     XMLVM_EXIT_METHOD()
@@ -1170,6 +1171,7 @@ void java_util_Date___INIT____int_int_int_int_int(JAVA_OBJECT me, JAVA_INT n1, J
     XMLVM_SOURCE_POSITION("Date.java", 106)
     XMLVM_CHECK_NPE(0)
     _r0.l = java_util_Calendar_getTimeInMillis__(_r0.o);
+    XMLVM_CHECK_NPE(6)
     ((java_util_Date*) _r6.o)->fields.java_util_Date.milliseconds_ = _r0.l;
     XMLVM_SOURCE_POSITION("Date.java", 107)
     XMLVM_EXIT_METHOD()
@@ -1222,6 +1224,7 @@ void java_util_Date___INIT____int_int_int_int_int_int(JAVA_OBJECT me, JAVA_INT n
     XMLVM_SOURCE_POSITION("Date.java", 133)
     XMLVM_CHECK_NPE(0)
     _r0.l = java_util_Calendar_getTimeInMillis__(_r0.o);
+    XMLVM_CHECK_NPE(7)
     ((java_util_Date*) _r7.o)->fields.java_util_Date.milliseconds_ = _r0.l;
     XMLVM_SOURCE_POSITION("Date.java", 134)
     XMLVM_EXIT_METHOD()
@@ -1242,6 +1245,7 @@ void java_util_Date___INIT____long(JAVA_OBJECT me, JAVA_LONG n1)
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Date.java", 144)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Date*) _r0.o)->fields.java_util_Date.milliseconds_ = _r1.l;
     XMLVM_SOURCE_POSITION("Date.java", 145)
     XMLVM_EXIT_METHOD()
@@ -1264,6 +1268,7 @@ void java_util_Date___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1)
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("Date.java", 158)
     _r0.l = java_util_Date_parse___java_lang_String(_r3.o);
+    XMLVM_CHECK_NPE(2)
     ((java_util_Date*) _r2.o)->fields.java_util_Date.milliseconds_ = _r0.l;
     XMLVM_SOURCE_POSITION("Date.java", 159)
     XMLVM_EXIT_METHOD()
@@ -1284,7 +1289,9 @@ JAVA_BOOLEAN java_util_Date_after___java_util_Date(JAVA_OBJECT me, JAVA_OBJECT n
     _r4.o = me;
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("Date.java", 170)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_util_Date*) _r4.o)->fields.java_util_Date.milliseconds_;
+    XMLVM_CHECK_NPE(5)
     _r2.l = ((java_util_Date*) _r5.o)->fields.java_util_Date.milliseconds_;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r0.i <= 0) goto label10;
@@ -1311,7 +1318,9 @@ JAVA_BOOLEAN java_util_Date_before___java_util_Date(JAVA_OBJECT me, JAVA_OBJECT 
     _r4.o = me;
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("Date.java", 182)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_util_Date*) _r4.o)->fields.java_util_Date.milliseconds_;
+    XMLVM_CHECK_NPE(5)
     _r2.l = ((java_util_Date*) _r5.o)->fields.java_util_Date.milliseconds_;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r0.i >= 0) goto label10;
@@ -1368,7 +1377,9 @@ JAVA_INT java_util_Date_compareTo___java_util_Date(JAVA_OBJECT me, JAVA_OBJECT n
     _r4.o = me;
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("Date.java", 211)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_util_Date*) _r4.o)->fields.java_util_Date.milliseconds_;
+    XMLVM_CHECK_NPE(5)
     _r2.l = ((java_util_Date*) _r5.o)->fields.java_util_Date.milliseconds_;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r0.i >= 0) goto label10;
@@ -1380,7 +1391,9 @@ JAVA_INT java_util_Date_compareTo___java_util_Date(JAVA_OBJECT me, JAVA_OBJECT n
     return _r0.i;
     label10:;
     XMLVM_SOURCE_POSITION("Date.java", 214)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_util_Date*) _r4.o)->fields.java_util_Date.milliseconds_;
+    XMLVM_CHECK_NPE(5)
     _r2.l = ((java_util_Date*) _r5.o)->fields.java_util_Date.milliseconds_;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r0.i != 0) goto label20;
@@ -1411,8 +1424,10 @@ JAVA_BOOLEAN java_util_Date_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJEC
     _r0.i = XMLVM_ISA(_r5.o, __CLASS_java_util_Date);
     if (_r0.i == 0) goto label16;
     XMLVM_SOURCE_POSITION("Date.java", 235)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_util_Date*) _r4.o)->fields.java_util_Date.milliseconds_;
     _r5.o = _r5.o;
+    XMLVM_CHECK_NPE(5)
     _r2.l = ((java_util_Date*) _r5.o)->fields.java_util_Date.milliseconds_;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r0.i == 0) goto label18;
@@ -1438,6 +1453,7 @@ JAVA_INT java_util_Date_getDate__(JAVA_OBJECT me)
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Date.java", 247)
     _r0.o = __NEW_java_util_GregorianCalendar();
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_;
     XMLVM_CHECK_NPE(0)
     java_util_GregorianCalendar___INIT____long(_r0.o, _r1.l);
@@ -1460,6 +1476,7 @@ JAVA_INT java_util_Date_getDay__(JAVA_OBJECT me)
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Date.java", 259)
     _r0.o = __NEW_java_util_GregorianCalendar();
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_;
     XMLVM_CHECK_NPE(0)
     java_util_GregorianCalendar___INIT____long(_r0.o, _r1.l);
@@ -1484,6 +1501,7 @@ JAVA_INT java_util_Date_getHours__(JAVA_OBJECT me)
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Date.java", 271)
     _r0.o = __NEW_java_util_GregorianCalendar();
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_;
     XMLVM_CHECK_NPE(0)
     java_util_GregorianCalendar___INIT____long(_r0.o, _r1.l);
@@ -1506,6 +1524,7 @@ JAVA_INT java_util_Date_getMinutes__(JAVA_OBJECT me)
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Date.java", 283)
     _r0.o = __NEW_java_util_GregorianCalendar();
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_;
     XMLVM_CHECK_NPE(0)
     java_util_GregorianCalendar___INIT____long(_r0.o, _r1.l);
@@ -1528,6 +1547,7 @@ JAVA_INT java_util_Date_getMonth__(JAVA_OBJECT me)
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Date.java", 295)
     _r0.o = __NEW_java_util_GregorianCalendar();
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_;
     XMLVM_CHECK_NPE(0)
     java_util_GregorianCalendar___INIT____long(_r0.o, _r1.l);
@@ -1550,6 +1570,7 @@ JAVA_INT java_util_Date_getSeconds__(JAVA_OBJECT me)
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Date.java", 307)
     _r0.o = __NEW_java_util_GregorianCalendar();
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_;
     XMLVM_CHECK_NPE(0)
     java_util_GregorianCalendar___INIT____long(_r0.o, _r1.l);
@@ -1570,6 +1591,7 @@ JAVA_LONG java_util_Date_getTime__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Date.java", 317)
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((java_util_Date*) _r2.o)->fields.java_util_Date.milliseconds_;
     XMLVM_EXIT_METHOD()
     return _r0.l;
@@ -1587,6 +1609,7 @@ JAVA_INT java_util_Date_getTimezoneOffset__(JAVA_OBJECT me)
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Date.java", 330)
     _r0.o = __NEW_java_util_GregorianCalendar();
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_;
     XMLVM_CHECK_NPE(0)
     java_util_GregorianCalendar___INIT____long(_r0.o, _r1.l);
@@ -1617,6 +1640,7 @@ JAVA_INT java_util_Date_getYear__(JAVA_OBJECT me)
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Date.java", 343)
     _r0.o = __NEW_java_util_GregorianCalendar();
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_;
     XMLVM_CHECK_NPE(0)
     java_util_GregorianCalendar___INIT____long(_r0.o, _r1.l);
@@ -1640,10 +1664,12 @@ JAVA_INT java_util_Date_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Date.java", 356)
+    XMLVM_CHECK_NPE(3)
     _r0.l = ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_;
     _r2.i = 32;
     _r0.l = ((JAVA_ULONG) _r0.l) >> (0x3f & ((JAVA_ULONG) _r2.l));
     _r0.i = (JAVA_INT) _r0.l;
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_;
     _r1.i = (JAVA_INT) _r1.l;
     _r0.i = _r0.i ^ _r1.i;
@@ -2673,6 +2699,7 @@ void java_util_Date_setDate___int(JAVA_OBJECT me, JAVA_INT n1)
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("Date.java", 578)
     _r0.o = __NEW_java_util_GregorianCalendar();
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_;
     XMLVM_CHECK_NPE(0)
     java_util_GregorianCalendar___INIT____long(_r0.o, _r1.l);
@@ -2683,6 +2710,7 @@ void java_util_Date_setDate___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("Date.java", 580)
     XMLVM_CHECK_NPE(0)
     _r0.l = java_util_Calendar_getTimeInMillis__(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_ = _r0.l;
     XMLVM_SOURCE_POSITION("Date.java", 581)
     XMLVM_EXIT_METHOD()
@@ -2703,6 +2731,7 @@ void java_util_Date_setHours___int(JAVA_OBJECT me, JAVA_INT n1)
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("Date.java", 593)
     _r0.o = __NEW_java_util_GregorianCalendar();
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_;
     XMLVM_CHECK_NPE(0)
     java_util_GregorianCalendar___INIT____long(_r0.o, _r1.l);
@@ -2713,6 +2742,7 @@ void java_util_Date_setHours___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("Date.java", 595)
     XMLVM_CHECK_NPE(0)
     _r0.l = java_util_Calendar_getTimeInMillis__(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_ = _r0.l;
     XMLVM_SOURCE_POSITION("Date.java", 596)
     XMLVM_EXIT_METHOD()
@@ -2733,6 +2763,7 @@ void java_util_Date_setMinutes___int(JAVA_OBJECT me, JAVA_INT n1)
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("Date.java", 608)
     _r0.o = __NEW_java_util_GregorianCalendar();
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_;
     XMLVM_CHECK_NPE(0)
     java_util_GregorianCalendar___INIT____long(_r0.o, _r1.l);
@@ -2743,6 +2774,7 @@ void java_util_Date_setMinutes___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("Date.java", 610)
     XMLVM_CHECK_NPE(0)
     _r0.l = java_util_Calendar_getTimeInMillis__(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_ = _r0.l;
     XMLVM_SOURCE_POSITION("Date.java", 611)
     XMLVM_EXIT_METHOD()
@@ -2763,6 +2795,7 @@ void java_util_Date_setMonth___int(JAVA_OBJECT me, JAVA_INT n1)
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("Date.java", 623)
     _r0.o = __NEW_java_util_GregorianCalendar();
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_;
     XMLVM_CHECK_NPE(0)
     java_util_GregorianCalendar___INIT____long(_r0.o, _r1.l);
@@ -2773,6 +2806,7 @@ void java_util_Date_setMonth___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("Date.java", 625)
     XMLVM_CHECK_NPE(0)
     _r0.l = java_util_Calendar_getTimeInMillis__(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_ = _r0.l;
     XMLVM_SOURCE_POSITION("Date.java", 626)
     XMLVM_EXIT_METHOD()
@@ -2793,6 +2827,7 @@ void java_util_Date_setSeconds___int(JAVA_OBJECT me, JAVA_INT n1)
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("Date.java", 638)
     _r0.o = __NEW_java_util_GregorianCalendar();
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_;
     XMLVM_CHECK_NPE(0)
     java_util_GregorianCalendar___INIT____long(_r0.o, _r1.l);
@@ -2803,6 +2838,7 @@ void java_util_Date_setSeconds___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("Date.java", 640)
     XMLVM_CHECK_NPE(0)
     _r0.l = java_util_Calendar_getTimeInMillis__(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_ = _r0.l;
     XMLVM_SOURCE_POSITION("Date.java", 641)
     XMLVM_EXIT_METHOD()
@@ -2820,6 +2856,7 @@ void java_util_Date_setTime___long(JAVA_OBJECT me, JAVA_LONG n1)
     _r0.o = me;
     _r1.l = n1;
     XMLVM_SOURCE_POSITION("Date.java", 651)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Date*) _r0.o)->fields.java_util_Date.milliseconds_ = _r1.l;
     XMLVM_SOURCE_POSITION("Date.java", 652)
     XMLVM_EXIT_METHOD()
@@ -2840,6 +2877,7 @@ void java_util_Date_setYear___int(JAVA_OBJECT me, JAVA_INT n1)
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("Date.java", 664)
     _r0.o = __NEW_java_util_GregorianCalendar();
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_;
     XMLVM_CHECK_NPE(0)
     java_util_GregorianCalendar___INIT____long(_r0.o, _r1.l);
@@ -2851,6 +2889,7 @@ void java_util_Date_setYear___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("Date.java", 666)
     XMLVM_CHECK_NPE(0)
     _r0.l = java_util_Calendar_getTimeInMillis__(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_util_Date*) _r3.o)->fields.java_util_Date.milliseconds_ = _r0.l;
     XMLVM_SOURCE_POSITION("Date.java", 667)
     XMLVM_EXIT_METHOD()
@@ -2900,6 +2939,7 @@ JAVA_OBJECT java_util_Date_toGMTString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(3)
     java_util_GregorianCalendar___INIT____java_util_TimeZone(_r3.o, _r2.o);
     XMLVM_SOURCE_POSITION("Date.java", 686)
+    XMLVM_CHECK_NPE(6)
     _r4.l = ((java_util_Date*) _r6.o)->fields.java_util_Date.milliseconds_;
     XMLVM_CHECK_NPE(3)
     java_util_Calendar_setTimeInMillis___long(_r3.o, _r4.l);
@@ -2963,6 +3003,7 @@ JAVA_OBJECT java_util_Date_toString__(JAVA_OBJECT me)
     _r5.i = 32;
     XMLVM_SOURCE_POSITION("Date.java", 711)
     _r0.o = __NEW_java_util_GregorianCalendar();
+    XMLVM_CHECK_NPE(8)
     _r1.l = ((java_util_Date*) _r8.o)->fields.java_util_Date.milliseconds_;
     XMLVM_CHECK_NPE(0)
     java_util_GregorianCalendar___INIT____long(_r0.o, _r1.l);

@@ -308,17 +308,22 @@ void java_util_WeakHashMap_HashIterator___INIT____java_util_WeakHashMap_java_uti
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 127)
+    XMLVM_CHECK_NPE(1)
     ((java_util_WeakHashMap_HashIterator*) _r1.o)->fields.java_util_WeakHashMap_HashIterator.this_0_ = _r2.o;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 124)
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 116)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_WeakHashMap_HashIterator*) _r1.o)->fields.java_util_WeakHashMap_HashIterator.position_ = _r0.i;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 125)
+    XMLVM_CHECK_NPE(1)
     ((java_util_WeakHashMap_HashIterator*) _r1.o)->fields.java_util_WeakHashMap_HashIterator.type_ = _r3.o;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 126)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_WeakHashMap*) _r2.o)->fields.java_util_WeakHashMap.modCount_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_WeakHashMap_HashIterator*) _r1.o)->fields.java_util_WeakHashMap_HashIterator.expectedModCount_ = _r0.i;
     XMLVM_EXIT_METHOD()
     return;
@@ -337,11 +342,15 @@ JAVA_BOOLEAN java_util_WeakHashMap_HashIterator_hasNext__(JAVA_OBJECT me)
     _r4.o = me;
     _r3.i = 1;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 130)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_WeakHashMap_HashIterator*) _r4.o)->fields.java_util_WeakHashMap_HashIterator.nextEntry_;
     if (_r0.o == JAVA_NULL) goto label23;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_WeakHashMap_HashIterator*) _r4.o)->fields.java_util_WeakHashMap_HashIterator.nextKey_;
     if (_r0.o != JAVA_NULL) goto label15;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_WeakHashMap_HashIterator*) _r4.o)->fields.java_util_WeakHashMap_HashIterator.nextEntry_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_WeakHashMap_Entry*) _r0.o)->fields.java_util_WeakHashMap_Entry.isNull_;
     if (_r0.i == 0) goto label23;
     label15:;
@@ -353,22 +362,30 @@ JAVA_BOOLEAN java_util_WeakHashMap_HashIterator_hasNext__(JAVA_OBJECT me)
     return _r0.i;
     label17:;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 149)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_WeakHashMap_HashIterator*) _r4.o)->fields.java_util_WeakHashMap_HashIterator.nextEntry_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_WeakHashMap_Entry*) _r0.o)->fields.java_util_WeakHashMap_Entry.next_;
+    XMLVM_CHECK_NPE(4)
     ((java_util_WeakHashMap_HashIterator*) _r4.o)->fields.java_util_WeakHashMap_HashIterator.nextEntry_ = _r0.o;
     label23:;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 134)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_WeakHashMap_HashIterator*) _r4.o)->fields.java_util_WeakHashMap_HashIterator.nextEntry_;
     if (_r0.o != JAVA_NULL) goto label59;
     label27:;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 135)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_WeakHashMap_HashIterator*) _r4.o)->fields.java_util_WeakHashMap_HashIterator.position_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_WeakHashMap_HashIterator*) _r4.o)->fields.java_util_WeakHashMap_HashIterator.this_0_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_WeakHashMap*) _r1.o)->fields.java_util_WeakHashMap.elementData_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r0.i < _r1.i) goto label42;
     label36:;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 140)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_WeakHashMap_HashIterator*) _r4.o)->fields.java_util_WeakHashMap_HashIterator.nextEntry_;
     if (_r0.o != JAVA_NULL) goto label59;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 141)
@@ -376,28 +393,38 @@ JAVA_BOOLEAN java_util_WeakHashMap_HashIterator_hasNext__(JAVA_OBJECT me)
     goto label16;
     label42:;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 136)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_WeakHashMap_HashIterator*) _r4.o)->fields.java_util_WeakHashMap_HashIterator.this_0_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_WeakHashMap*) _r0.o)->fields.java_util_WeakHashMap.elementData_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_WeakHashMap_HashIterator*) _r4.o)->fields.java_util_WeakHashMap_HashIterator.position_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_util_WeakHashMap_HashIterator*) _r4.o)->fields.java_util_WeakHashMap_HashIterator.position_ = _r2.i;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     _r0.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
+    XMLVM_CHECK_NPE(4)
     ((java_util_WeakHashMap_HashIterator*) _r4.o)->fields.java_util_WeakHashMap_HashIterator.nextEntry_ = _r0.o;
     if (_r0.o == JAVA_NULL) goto label27;
     goto label36;
     label59:;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 145)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_WeakHashMap_HashIterator*) _r4.o)->fields.java_util_WeakHashMap_HashIterator.nextEntry_;
     //java_util_WeakHashMap_Entry_get__[6]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_WeakHashMap_Entry*) _r0.o)->tib->vtable[6])(_r0.o);
+    XMLVM_CHECK_NPE(4)
     ((java_util_WeakHashMap_HashIterator*) _r4.o)->fields.java_util_WeakHashMap_HashIterator.nextKey_ = _r0.o;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 146)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_WeakHashMap_HashIterator*) _r4.o)->fields.java_util_WeakHashMap_HashIterator.nextKey_;
     if (_r0.o != JAVA_NULL) goto label77;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_WeakHashMap_HashIterator*) _r4.o)->fields.java_util_WeakHashMap_HashIterator.nextEntry_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_WeakHashMap_Entry*) _r0.o)->fields.java_util_WeakHashMap_Entry.isNull_;
     if (_r0.i == 0) goto label17;
     label77:;
@@ -415,8 +442,11 @@ JAVA_OBJECT java_util_WeakHashMap_HashIterator_next__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 154)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_WeakHashMap_HashIterator*) _r2.o)->fields.java_util_WeakHashMap_HashIterator.expectedModCount_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_WeakHashMap_HashIterator*) _r2.o)->fields.java_util_WeakHashMap_HashIterator.this_0_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_WeakHashMap*) _r1.o)->fields.java_util_WeakHashMap.modCount_;
     if (_r0.i != _r1.i) goto label42;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 155)
@@ -425,19 +455,27 @@ JAVA_OBJECT java_util_WeakHashMap_HashIterator_next__(JAVA_OBJECT me)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) ((java_util_WeakHashMap_HashIterator*) _r2.o)->tib->vtable[6])(_r2.o);
     if (_r0.i == 0) goto label36;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 156)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_WeakHashMap_HashIterator*) _r2.o)->fields.java_util_WeakHashMap_HashIterator.nextEntry_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_WeakHashMap_HashIterator*) _r2.o)->fields.java_util_WeakHashMap_HashIterator.currentEntry_ = _r0.o;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 157)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_WeakHashMap_HashIterator*) _r2.o)->fields.java_util_WeakHashMap_HashIterator.currentEntry_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_WeakHashMap_Entry*) _r0.o)->fields.java_util_WeakHashMap_Entry.next_;
+    XMLVM_CHECK_NPE(2)
     ((java_util_WeakHashMap_HashIterator*) _r2.o)->fields.java_util_WeakHashMap_HashIterator.nextEntry_ = _r0.o;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 158)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_WeakHashMap_HashIterator*) _r2.o)->fields.java_util_WeakHashMap_HashIterator.type_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_WeakHashMap_HashIterator*) _r2.o)->fields.java_util_WeakHashMap_HashIterator.currentEntry_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_WeakHashMap_Entry_Type_get___java_util_Map_Entry])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 160)
     _r1.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(2)
     ((java_util_WeakHashMap_HashIterator*) _r2.o)->fields.java_util_WeakHashMap_HashIterator.nextKey_ = _r1.o;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 161)
     XMLVM_EXIT_METHOD()
@@ -466,24 +504,33 @@ void java_util_WeakHashMap_HashIterator_remove__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 169)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_WeakHashMap_HashIterator*) _r2.o)->fields.java_util_WeakHashMap_HashIterator.expectedModCount_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_WeakHashMap_HashIterator*) _r2.o)->fields.java_util_WeakHashMap_HashIterator.this_0_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_WeakHashMap*) _r1.o)->fields.java_util_WeakHashMap.modCount_;
     if (_r0.i != _r1.i) goto label35;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 170)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_WeakHashMap_HashIterator*) _r2.o)->fields.java_util_WeakHashMap_HashIterator.currentEntry_;
     if (_r0.o == JAVA_NULL) goto label29;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 171)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_WeakHashMap_HashIterator*) _r2.o)->fields.java_util_WeakHashMap_HashIterator.this_0_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_WeakHashMap_HashIterator*) _r2.o)->fields.java_util_WeakHashMap_HashIterator.currentEntry_;
     XMLVM_CHECK_NPE(0)
     java_util_WeakHashMap_removeEntry___java_util_WeakHashMap_Entry(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 172)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(2)
     ((java_util_WeakHashMap_HashIterator*) _r2.o)->fields.java_util_WeakHashMap_HashIterator.currentEntry_ = _r0.o;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 173)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_WeakHashMap_HashIterator*) _r2.o)->fields.java_util_WeakHashMap_HashIterator.expectedModCount_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(2)
     ((java_util_WeakHashMap_HashIterator*) _r2.o)->fields.java_util_WeakHashMap_HashIterator.expectedModCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 181)
     XMLVM_EXIT_METHOD()

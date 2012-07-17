@@ -657,9 +657,11 @@ void org_xml_sax_helpers_AttributesImpl___INIT___(JAVA_OBJECT me)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 60)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((org_xml_sax_helpers_AttributesImpl*) _r1.o)->fields.org_xml_sax_helpers_AttributesImpl.length_ = _r0.i;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 61)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(1)
     ((org_xml_sax_helpers_AttributesImpl*) _r1.o)->fields.org_xml_sax_helpers_AttributesImpl.data_ = _r0.o;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 62)
     XMLVM_EXIT_METHOD()
@@ -695,6 +697,7 @@ JAVA_INT org_xml_sax_helpers_AttributesImpl_getLength__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 93)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r1.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -713,9 +716,11 @@ JAVA_OBJECT org_xml_sax_helpers_AttributesImpl_getURI___int(JAVA_OBJECT me, JAVA
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 107)
     if (_r3.i < 0) goto label13;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     if (_r3.i >= _r0.i) goto label13;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 108)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r3.i * 5;
     XMLVM_CHECK_NPE(0)
@@ -743,9 +748,11 @@ JAVA_OBJECT org_xml_sax_helpers_AttributesImpl_getLocalName___int(JAVA_OBJECT me
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 125)
     if (_r3.i < 0) goto label15;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     if (_r3.i >= _r0.i) goto label15;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 126)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r3.i * 5;
     _r1.i = _r1.i + 1;
@@ -774,9 +781,11 @@ JAVA_OBJECT org_xml_sax_helpers_AttributesImpl_getQName___int(JAVA_OBJECT me, JA
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 143)
     if (_r3.i < 0) goto label15;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     if (_r3.i >= _r0.i) goto label15;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 144)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r3.i * 5;
     _r1.i = _r1.i + 2;
@@ -805,9 +814,11 @@ JAVA_OBJECT org_xml_sax_helpers_AttributesImpl_getType___int(JAVA_OBJECT me, JAV
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 161)
     if (_r3.i < 0) goto label15;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     if (_r3.i >= _r0.i) goto label15;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 162)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r3.i * 5;
     _r1.i = _r1.i + 3;
@@ -836,9 +847,11 @@ JAVA_OBJECT org_xml_sax_helpers_AttributesImpl_getValue___int(JAVA_OBJECT me, JA
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 178)
     if (_r3.i < 0) goto label15;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     if (_r3.i >= _r0.i) goto label15;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 179)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r3.i * 5;
     _r1.i = _r1.i + 4;
@@ -870,6 +883,7 @@ JAVA_INT org_xml_sax_helpers_AttributesImpl_getIndex___java_lang_String_java_lan
     _r5.o = n1;
     _r6.o = n2;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 201)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     _r0.i = _r0.i * 5;
     _r1.i = 0;
@@ -883,6 +897,7 @@ JAVA_INT org_xml_sax_helpers_AttributesImpl_getIndex___java_lang_String_java_lan
     return _r0.i;
     label9:;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 203)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -891,6 +906,7 @@ JAVA_INT org_xml_sax_helpers_AttributesImpl_getIndex___java_lang_String_java_lan
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r5.o);
     if (_r2.i == 0) goto label34;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r3.i = _r1.i + 1;
     XMLVM_CHECK_NPE(2)
@@ -922,6 +938,7 @@ JAVA_INT org_xml_sax_helpers_AttributesImpl_getIndex___java_lang_String(JAVA_OBJ
     _r4.o = me;
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 220)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     _r0.i = _r0.i * 5;
     _r1.i = 0;
@@ -935,6 +952,7 @@ JAVA_INT org_xml_sax_helpers_AttributesImpl_getIndex___java_lang_String(JAVA_OBJ
     return _r0.i;
     label9:;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 222)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r3.i = _r1.i + 2;
     XMLVM_CHECK_NPE(2)
@@ -968,6 +986,7 @@ JAVA_OBJECT org_xml_sax_helpers_AttributesImpl_getType___java_lang_String_java_l
     _r5.o = n1;
     _r6.o = n2;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 242)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     _r0.i = _r0.i * 5;
     _r1.i = 0;
@@ -981,6 +1000,7 @@ JAVA_OBJECT org_xml_sax_helpers_AttributesImpl_getType___java_lang_String_java_l
     return _r0.o;
     label9:;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 244)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -989,6 +1009,7 @@ JAVA_OBJECT org_xml_sax_helpers_AttributesImpl_getType___java_lang_String_java_l
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r5.o);
     if (_r2.i == 0) goto label38;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r3.i = _r1.i + 1;
     XMLVM_CHECK_NPE(2)
@@ -999,6 +1020,7 @@ JAVA_OBJECT org_xml_sax_helpers_AttributesImpl_getType___java_lang_String_java_l
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r6.o);
     if (_r2.i == 0) goto label38;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 245)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r1.i + 3;
     XMLVM_CHECK_NPE(0)
@@ -1024,6 +1046,7 @@ JAVA_OBJECT org_xml_sax_helpers_AttributesImpl_getType___java_lang_String(JAVA_O
     _r4.o = me;
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 262)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     _r0.i = _r0.i * 5;
     _r1.i = 0;
@@ -1037,6 +1060,7 @@ JAVA_OBJECT org_xml_sax_helpers_AttributesImpl_getType___java_lang_String(JAVA_O
     return _r0.o;
     label9:;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 264)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r3.i = _r1.i + 2;
     XMLVM_CHECK_NPE(2)
@@ -1047,6 +1071,7 @@ JAVA_OBJECT org_xml_sax_helpers_AttributesImpl_getType___java_lang_String(JAVA_O
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r5.o);
     if (_r2.i == 0) goto label28;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 265)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r1.i + 3;
     XMLVM_CHECK_NPE(0)
@@ -1074,6 +1099,7 @@ JAVA_OBJECT org_xml_sax_helpers_AttributesImpl_getValue___java_lang_String_java_
     _r5.o = n1;
     _r6.o = n2;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 284)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     _r0.i = _r0.i * 5;
     _r1.i = 0;
@@ -1087,6 +1113,7 @@ JAVA_OBJECT org_xml_sax_helpers_AttributesImpl_getValue___java_lang_String_java_
     return _r0.o;
     label9:;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 286)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -1095,6 +1122,7 @@ JAVA_OBJECT org_xml_sax_helpers_AttributesImpl_getValue___java_lang_String_java_
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r5.o);
     if (_r2.i == 0) goto label38;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r3.i = _r1.i + 1;
     XMLVM_CHECK_NPE(2)
@@ -1105,6 +1133,7 @@ JAVA_OBJECT org_xml_sax_helpers_AttributesImpl_getValue___java_lang_String_java_
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r6.o);
     if (_r2.i == 0) goto label38;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 287)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r1.i + 4;
     XMLVM_CHECK_NPE(0)
@@ -1130,6 +1159,7 @@ JAVA_OBJECT org_xml_sax_helpers_AttributesImpl_getValue___java_lang_String(JAVA_
     _r4.o = me;
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 304)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     _r0.i = _r0.i * 5;
     _r1.i = 0;
@@ -1143,6 +1173,7 @@ JAVA_OBJECT org_xml_sax_helpers_AttributesImpl_getValue___java_lang_String(JAVA_
     return _r0.o;
     label9:;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 306)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r3.i = _r1.i + 2;
     XMLVM_CHECK_NPE(2)
@@ -1153,6 +1184,7 @@ JAVA_OBJECT org_xml_sax_helpers_AttributesImpl_getValue___java_lang_String(JAVA_
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r5.o);
     if (_r2.i == 0) goto label28;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 307)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r1.i + 4;
     XMLVM_CHECK_NPE(0)
@@ -1177,22 +1209,26 @@ void org_xml_sax_helpers_AttributesImpl_clear__(JAVA_OBJECT me)
     _r4.o = me;
     _r3.i = 0;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 329)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     if (_r0.o == JAVA_NULL) goto label12;
     _r0 = _r3;
     label6:;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 330)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     _r1.i = _r1.i * 5;
     if (_r0.i < _r1.i) goto label15;
     label12:;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 333)
+    XMLVM_CHECK_NPE(4)
     ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.length_ = _r3.i;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 334)
     XMLVM_EXIT_METHOD()
     return;
     label15:;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 331)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r2.o = JAVA_NULL;
     XMLVM_CHECK_NPE(1)
@@ -1221,19 +1257,24 @@ void org_xml_sax_helpers_AttributesImpl_setAttributes___org_xml_sax_Attributes(J
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 348)
     XMLVM_CHECK_NPE(5)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_Attributes_getLength__])(_r5.o);
+    XMLVM_CHECK_NPE(4)
     ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.length_ = _r0.i;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 349)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     if (_r0.i <= 0) goto label26;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 350)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     _r0.i = _r0.i * 5;
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_String, _r0.i);
+    XMLVM_CHECK_NPE(4)
     ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_ = _r0.o;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 351)
     _r0.i = 0;
     label22:;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     if (_r0.i < _r1.i) goto label27;
     label26:;
@@ -1242,6 +1283,7 @@ void org_xml_sax_helpers_AttributesImpl_setAttributes___org_xml_sax_Attributes(J
     return;
     label27:;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 352)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r2.i = _r0.i * 5;
     XMLVM_CHECK_NPE(5)
@@ -1250,6 +1292,7 @@ void org_xml_sax_helpers_AttributesImpl_setAttributes___org_xml_sax_Attributes(J
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i] = _r3.o;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 353)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r2.i = _r0.i * 5;
     _r2.i = _r2.i + 1;
@@ -1259,6 +1302,7 @@ void org_xml_sax_helpers_AttributesImpl_setAttributes___org_xml_sax_Attributes(J
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i] = _r3.o;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 354)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r2.i = _r0.i * 5;
     _r2.i = _r2.i + 2;
@@ -1268,6 +1312,7 @@ void org_xml_sax_helpers_AttributesImpl_setAttributes___org_xml_sax_Attributes(J
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i] = _r3.o;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 355)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r2.i = _r0.i * 5;
     _r2.i = _r2.i + 3;
@@ -1277,6 +1322,7 @@ void org_xml_sax_helpers_AttributesImpl_setAttributes___org_xml_sax_Attributes(J
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i] = _r3.o;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 356)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r2.i = _r0.i * 5;
     _r2.i = _r2.i + 4;
@@ -1309,19 +1355,24 @@ void org_xml_sax_helpers_AttributesImpl_addAttribute___java_lang_String_java_lan
     _r6.o = n4;
     _r7.o = n5;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 382)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     _r0.i = _r0.i + 1;
     XMLVM_CHECK_NPE(2)
     org_xml_sax_helpers_AttributesImpl_ensureCapacity___int(_r2.o, _r0.i);
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 383)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     _r1.i = _r1.i * 5;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r3.o;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 384)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     _r1.i = _r1.i * 5;
     _r1.i = _r1.i + 1;
@@ -1329,7 +1380,9 @@ void org_xml_sax_helpers_AttributesImpl_addAttribute___java_lang_String_java_lan
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r4.o;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 385)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     _r1.i = _r1.i * 5;
     _r1.i = _r1.i + 2;
@@ -1337,7 +1390,9 @@ void org_xml_sax_helpers_AttributesImpl_addAttribute___java_lang_String_java_lan
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r5.o;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 386)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     _r1.i = _r1.i * 5;
     _r1.i = _r1.i + 3;
@@ -1345,7 +1400,9 @@ void org_xml_sax_helpers_AttributesImpl_addAttribute___java_lang_String_java_lan
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r6.o;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 387)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     _r1.i = _r1.i * 5;
     _r1.i = _r1.i + 4;
@@ -1353,8 +1410,10 @@ void org_xml_sax_helpers_AttributesImpl_addAttribute___java_lang_String_java_lan
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r7.o;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 388)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(2)
     ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.length_ = _r0.i;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 389)
     XMLVM_EXIT_METHOD()
@@ -1384,15 +1443,18 @@ void org_xml_sax_helpers_AttributesImpl_setAttribute___int_java_lang_String_java
     _r8.o = n6;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 416)
     if (_r3.i < 0) goto label45;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     if (_r3.i >= _r0.i) goto label45;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 417)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r3.i * 5;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r4.o;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 418)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r3.i * 5;
     _r1.i = _r1.i + 1;
@@ -1400,6 +1462,7 @@ void org_xml_sax_helpers_AttributesImpl_setAttribute___int_java_lang_String_java
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r5.o;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 419)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r3.i * 5;
     _r1.i = _r1.i + 2;
@@ -1407,6 +1470,7 @@ void org_xml_sax_helpers_AttributesImpl_setAttribute___int_java_lang_String_java
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r6.o;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 420)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r3.i * 5;
     _r1.i = _r1.i + 3;
@@ -1414,6 +1478,7 @@ void org_xml_sax_helpers_AttributesImpl_setAttribute___int_java_lang_String_java
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r7.o;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 421)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r3.i * 5;
     _r1.i = _r1.i + 4;
@@ -1451,19 +1516,24 @@ void org_xml_sax_helpers_AttributesImpl_removeAttribute___int(JAVA_OBJECT me, JA
     _r5.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 438)
     if (_r8.i < 0) goto label71;
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r7.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     if (_r8.i >= _r0.i) goto label71;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 439)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r7.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     _r0.i = _r0.i - _r6.i;
     if (_r8.i >= _r0.i) goto label32;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 440)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r7.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r8.i + 1;
     _r1.i = _r1.i * 5;
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((org_xml_sax_helpers_AttributesImpl*) _r7.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r3.i = _r8.i * 5;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 441)
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((org_xml_sax_helpers_AttributesImpl*) _r7.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     _r4.i = _r4.i - _r8.i;
     _r4.i = _r4.i - _r6.i;
@@ -1471,41 +1541,49 @@ void org_xml_sax_helpers_AttributesImpl_removeAttribute___int(JAVA_OBJECT me, JA
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r1.i, _r2.o, _r3.i, _r4.i);
     label32:;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 443)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r7.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     _r0.i = _r0.i - _r6.i;
     _r0.i = _r0.i * 5;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 444)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((org_xml_sax_helpers_AttributesImpl*) _r7.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r2.i = _r0.i + 1;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i] = _r5.o;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 445)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r7.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r2.i + 1;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i] = _r5.o;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 446)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r7.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r2.i = _r1.i + 1;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r5.o;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 447)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r7.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r2.i + 1;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i] = _r5.o;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 448)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r7.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r5.o;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 449)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r7.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     _r0.i = _r0.i - _r6.i;
+    XMLVM_CHECK_NPE(7)
     ((org_xml_sax_helpers_AttributesImpl*) _r7.o)->fields.org_xml_sax_helpers_AttributesImpl.length_ = _r0.i;
     label70:;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 453)
@@ -1533,9 +1611,11 @@ void org_xml_sax_helpers_AttributesImpl_setURI___int_java_lang_String(JAVA_OBJEC
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 468)
     if (_r3.i < 0) goto label13;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     if (_r3.i >= _r0.i) goto label13;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 469)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r3.i * 5;
     XMLVM_CHECK_NPE(0)
@@ -1567,9 +1647,11 @@ void org_xml_sax_helpers_AttributesImpl_setLocalName___int_java_lang_String(JAVA
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 488)
     if (_r3.i < 0) goto label15;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     if (_r3.i >= _r0.i) goto label15;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 489)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r3.i * 5;
     _r1.i = _r1.i + 1;
@@ -1602,9 +1684,11 @@ void org_xml_sax_helpers_AttributesImpl_setQName___int_java_lang_String(JAVA_OBJ
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 508)
     if (_r3.i < 0) goto label15;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     if (_r3.i >= _r0.i) goto label15;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 509)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r3.i * 5;
     _r1.i = _r1.i + 2;
@@ -1637,9 +1721,11 @@ void org_xml_sax_helpers_AttributesImpl_setType___int_java_lang_String(JAVA_OBJE
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 527)
     if (_r3.i < 0) goto label15;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     if (_r3.i >= _r0.i) goto label15;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 528)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r3.i * 5;
     _r1.i = _r1.i + 3;
@@ -1672,9 +1758,11 @@ void org_xml_sax_helpers_AttributesImpl_setValue___int_java_lang_String(JAVA_OBJ
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 546)
     if (_r3.i < 0) goto label15;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     if (_r3.i >= _r0.i) goto label15;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 547)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r2.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r1.i = _r3.i * 5;
     _r1.i = _r1.i + 4;
@@ -1714,8 +1802,10 @@ void org_xml_sax_helpers_AttributesImpl_ensureCapacity___int(JAVA_OBJECT me, JAV
     return;
     label4:;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 571)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     if (_r0.o == JAVA_NULL) goto label13;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     if (_r0.i != 0) goto label37;
@@ -1730,24 +1820,30 @@ void org_xml_sax_helpers_AttributesImpl_ensureCapacity___int(JAVA_OBJECT me, JAV
     if (!__TIB_java_lang_String.classInitialized) __INIT_java_lang_String();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_String, _r0.i);
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 585)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     if (_r1.i <= 0) goto label34;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 586)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.length_;
     _r2.i = _r2.i * 5;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r3.i, _r0.o, _r3.i, _r2.i);
     label34:;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 588)
+    XMLVM_CHECK_NPE(4)
     ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_ = _r0.o;
     goto label3;
     label37:;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 574)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r1.i = _r5.i * 5;
     if (_r0.i >= _r1.i) goto label3;
     XMLVM_SOURCE_POSITION("AttributesImpl.java", 578)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((org_xml_sax_helpers_AttributesImpl*) _r4.o)->fields.org_xml_sax_helpers_AttributesImpl.data_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     goto label15;

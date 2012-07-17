@@ -246,6 +246,7 @@ JAVA_INT java_util_regex_PosPlusGroupQuantifierSet_matches___int_java_lang_CharS
     _r4.o = n2;
     _r5.o = n3;
     XMLVM_SOURCE_POSITION("PosPlusGroupQuantifierSet.java", 41)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_QuantifierSet*) _r2.o)->fields.java_util_regex_QuantifierSet.innerSet_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -262,6 +263,7 @@ JAVA_INT java_util_regex_PosPlusGroupQuantifierSet_matches___int_java_lang_CharS
     if (_r0.i <= _r3.i) goto label29;
     label12:;
     XMLVM_SOURCE_POSITION("PosPlusGroupQuantifierSet.java", 45)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_regex_QuantifierSet*) _r2.o)->fields.java_util_regex_QuantifierSet.innerSet_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(1)
@@ -269,6 +271,7 @@ JAVA_INT java_util_regex_PosPlusGroupQuantifierSet_matches___int_java_lang_CharS
     XMLVM_SOURCE_POSITION("PosPlusGroupQuantifierSet.java", 46)
     if (_r1.i > _r0.i) goto label27;
     label20:;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_regex_AbstractSet*) _r2.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(1)

@@ -389,12 +389,16 @@ void java_nio_channels_FileLock___INIT____java_nio_channels_FileChannel_long_lon
     XMLVM_THROW_CUSTOM(_r0.o)
     label25:;
     XMLVM_SOURCE_POSITION("FileLock.java", 105)
+    XMLVM_CHECK_NPE(4)
     ((java_nio_channels_FileLock*) _r4.o)->fields.java_nio_channels_FileLock.channel_ = _r5.o;
     XMLVM_SOURCE_POSITION("FileLock.java", 106)
+    XMLVM_CHECK_NPE(4)
     ((java_nio_channels_FileLock*) _r4.o)->fields.java_nio_channels_FileLock.position_ = _r6.l;
     XMLVM_SOURCE_POSITION("FileLock.java", 107)
+    XMLVM_CHECK_NPE(4)
     ((java_nio_channels_FileLock*) _r4.o)->fields.java_nio_channels_FileLock.size_ = _r8.l;
     XMLVM_SOURCE_POSITION("FileLock.java", 108)
+    XMLVM_CHECK_NPE(4)
     ((java_nio_channels_FileLock*) _r4.o)->fields.java_nio_channels_FileLock.shared_ = _r10.i;
     XMLVM_SOURCE_POSITION("FileLock.java", 109)
     XMLVM_EXIT_METHOD()
@@ -410,6 +414,7 @@ JAVA_OBJECT java_nio_channels_FileLock_channel__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FileLock.java", 117)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_channels_FileLock*) _r1.o)->fields.java_nio_channels_FileLock.channel_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -425,6 +430,7 @@ JAVA_LONG java_nio_channels_FileLock_position__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("FileLock.java", 126)
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((java_nio_channels_FileLock*) _r2.o)->fields.java_nio_channels_FileLock.position_;
     XMLVM_EXIT_METHOD()
     return _r0.l;
@@ -440,6 +446,7 @@ JAVA_LONG java_nio_channels_FileLock_size__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("FileLock.java", 135)
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((java_nio_channels_FileLock*) _r2.o)->fields.java_nio_channels_FileLock.size_;
     XMLVM_EXIT_METHOD()
     return _r0.l;
@@ -454,6 +461,7 @@ JAVA_BOOLEAN java_nio_channels_FileLock_isShared__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FileLock.java", 146)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_nio_channels_FileLock*) _r1.o)->fields.java_nio_channels_FileLock.shared_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -480,7 +488,9 @@ JAVA_BOOLEAN java_nio_channels_FileLock_overlaps___long_long(JAVA_OBJECT me, JAV
     _r9.l = n2;
     _r4.l = 1;
     XMLVM_SOURCE_POSITION("FileLock.java", 160)
+    XMLVM_CHECK_NPE(6)
     _r0.l = ((java_nio_channels_FileLock*) _r6.o)->fields.java_nio_channels_FileLock.position_;
+    XMLVM_CHECK_NPE(6)
     _r2.l = ((java_nio_channels_FileLock*) _r6.o)->fields.java_nio_channels_FileLock.size_;
     _r0.l = _r0.l + _r2.l;
     _r0.l = _r0.l - _r4.l;
@@ -489,6 +499,7 @@ JAVA_BOOLEAN java_nio_channels_FileLock_overlaps___long_long(JAVA_OBJECT me, JAV
     _r0.i = _r0.l > _r7.l ? 1 : (_r0.l == _r7.l ? 0 : -1);
     if (_r0.i < 0) goto label21;
     XMLVM_SOURCE_POSITION("FileLock.java", 162)
+    XMLVM_CHECK_NPE(6)
     _r0.l = ((java_nio_channels_FileLock*) _r6.o)->fields.java_nio_channels_FileLock.position_;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r0.i <= 0) goto label23;
@@ -525,6 +536,7 @@ JAVA_OBJECT java_nio_channels_FileLock_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("FileLock.java", 200)
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_nio_channels_FileLock*) _r3.o)->fields.java_nio_channels_FileLock.position_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___long(_r0.o, _r1.l);
@@ -534,6 +546,7 @@ JAVA_OBJECT java_nio_channels_FileLock_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("FileLock.java", 202)
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_nio_channels_FileLock*) _r3.o)->fields.java_nio_channels_FileLock.size_;
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___long(_r0.o, _r1.l);
@@ -543,6 +556,7 @@ JAVA_OBJECT java_nio_channels_FileLock_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("FileLock.java", 204)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_nio_channels_FileLock*) _r3.o)->fields.java_nio_channels_FileLock.shared_;
     _r1.o = java_lang_Boolean_toString___boolean(_r1.i);
     XMLVM_CHECK_NPE(0)

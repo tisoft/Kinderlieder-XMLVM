@@ -365,6 +365,7 @@ void java_util_HashMap_HashMapEntrySet___INIT____java_util_HashMap(JAVA_OBJECT m
     XMLVM_CHECK_NPE(0)
     java_util_AbstractSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("HashMap.java", 207)
+    XMLVM_CHECK_NPE(0)
     ((java_util_HashMap_HashMapEntrySet*) _r0.o)->fields.java_util_HashMap_HashMapEntrySet.associatedMap_ = _r1.o;
     XMLVM_SOURCE_POSITION("HashMap.java", 208)
     XMLVM_EXIT_METHOD()
@@ -380,6 +381,7 @@ JAVA_OBJECT java_util_HashMap_HashMapEntrySet_hashMap__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("HashMap.java", 211)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_HashMap_HashMapEntrySet*) _r1.o)->fields.java_util_HashMap_HashMapEntrySet.associatedMap_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -394,7 +396,9 @@ JAVA_INT java_util_HashMap_HashMapEntrySet_size__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("HashMap.java", 216)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_HashMap_HashMapEntrySet*) _r1.o)->fields.java_util_HashMap_HashMapEntrySet.associatedMap_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_HashMap*) _r0.o)->fields.java_util_HashMap.elementCount_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -409,6 +413,7 @@ void java_util_HashMap_HashMapEntrySet_clear__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("HashMap.java", 221)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_HashMap_HashMapEntrySet*) _r1.o)->fields.java_util_HashMap_HashMapEntrySet.associatedMap_;
     //java_util_HashMap_clear__[6]
     XMLVM_CHECK_NPE(0)
@@ -436,6 +441,7 @@ JAVA_BOOLEAN java_util_HashMap_HashMapEntrySet_remove___java_lang_Object(JAVA_OB
     XMLVM_SOURCE_POSITION("HashMap.java", 227)
     _r3.o = _r3.o;
     XMLVM_SOURCE_POSITION("HashMap.java", 228)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_HashMap_HashMapEntrySet*) _r2.o)->fields.java_util_HashMap_HashMapEntrySet.associatedMap_;
     XMLVM_CHECK_NPE(3)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_Entry_getKey__])(_r3.o);
@@ -445,6 +451,7 @@ JAVA_BOOLEAN java_util_HashMap_HashMapEntrySet_remove___java_lang_Object(JAVA_OB
     _r1.i = java_util_HashMap_HashMapEntrySet_valuesEq___java_util_HashMap_Entry_java_util_Map_Entry(_r0.o, _r3.o);
     if (_r1.i == 0) goto label29;
     XMLVM_SOURCE_POSITION("HashMap.java", 230)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_HashMap_HashMapEntrySet*) _r2.o)->fields.java_util_HashMap_HashMapEntrySet.associatedMap_;
     XMLVM_CHECK_NPE(1)
     java_util_HashMap_removeEntry___java_util_HashMap_Entry(_r1.o, _r0.o);
@@ -477,6 +484,7 @@ JAVA_BOOLEAN java_util_HashMap_HashMapEntrySet_contains___java_lang_Object(JAVA_
     XMLVM_SOURCE_POSITION("HashMap.java", 240)
     _r3.o = _r3.o;
     XMLVM_SOURCE_POSITION("HashMap.java", 241)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_HashMap_HashMapEntrySet*) _r2.o)->fields.java_util_HashMap_HashMapEntrySet.associatedMap_;
     XMLVM_CHECK_NPE(3)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_Entry_getKey__])(_r3.o);
@@ -508,6 +516,7 @@ JAVA_BOOLEAN java_util_HashMap_HashMapEntrySet_valuesEq___java_util_HashMap_Entr
     XMLVM_SOURCE_POSITION("HashMap.java", 248)
     if (_r2.o == JAVA_NULL) goto label26;
     XMLVM_SOURCE_POSITION("HashMap.java", 249)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_MapEntry*) _r2.o)->fields.java_util_MapEntry.value_;
     if (_r0.o != JAVA_NULL) goto label14;
     XMLVM_SOURCE_POSITION("HashMap.java", 250)
@@ -521,6 +530,7 @@ JAVA_BOOLEAN java_util_HashMap_HashMapEntrySet_valuesEq___java_util_HashMap_Entr
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label14:;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_MapEntry*) _r2.o)->fields.java_util_MapEntry.value_;
     XMLVM_CHECK_NPE(3)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_Entry_getValue__])(_r3.o);
@@ -542,6 +552,7 @@ JAVA_OBJECT java_util_HashMap_HashMapEntrySet_iterator__(JAVA_OBJECT me)
     _r2.o = me;
     XMLVM_SOURCE_POSITION("HashMap.java", 256)
     _r0.o = __NEW_java_util_HashMap_EntryIterator();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_HashMap_HashMapEntrySet*) _r2.o)->fields.java_util_HashMap_HashMapEntrySet.associatedMap_;
     XMLVM_CHECK_NPE(0)
     java_util_HashMap_EntryIterator___INIT____java_util_HashMap(_r0.o, _r1.o);

@@ -402,8 +402,10 @@ void javax_xml_stream_XMLStreamException___INIT____java_lang_String_javax_xml_st
     XMLVM_CHECK_NPE(0)
     java_lang_Exception___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("XMLStreamException.java", 73)
+    XMLVM_CHECK_NPE(0)
     ((javax_xml_stream_XMLStreamException*) _r0.o)->fields.javax_xml_stream_XMLStreamException.location_ = _r2.o;
     XMLVM_SOURCE_POSITION("XMLStreamException.java", 74)
+    XMLVM_CHECK_NPE(0)
     ((javax_xml_stream_XMLStreamException*) _r0.o)->fields.javax_xml_stream_XMLStreamException.nested_ = _r3.o;
     XMLVM_SOURCE_POSITION("XMLStreamException.java", 75)
     XMLVM_EXIT_METHOD()
@@ -440,6 +442,7 @@ JAVA_OBJECT javax_xml_stream_XMLStreamException_getNestedException__(JAVA_OBJECT
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XMLStreamException.java", 87)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_XMLStreamException*) _r1.o)->fields.javax_xml_stream_XMLStreamException.nested_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -454,6 +457,7 @@ JAVA_OBJECT javax_xml_stream_XMLStreamException_getLocation__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XMLStreamException.java", 95)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_stream_XMLStreamException*) _r1.o)->fields.javax_xml_stream_XMLStreamException.location_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

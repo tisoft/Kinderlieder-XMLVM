@@ -260,6 +260,7 @@ void gnu_xml_dom_DomNode_ShadowList___INIT____gnu_xml_dom_DomNode_java_lang_Stri
     _r3.o = n2;
     _r4.o = n3;
     XMLVM_SOURCE_POSITION("DomNode.java", 1249)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomNode_ShadowList*) _r1.o)->fields.gnu_xml_dom_DomNode_ShadowList.this_0_ = _r2.o;
     XMLVM_SOURCE_POSITION("DomNode.java", 1246)
     XMLVM_CHECK_NPE(1)
@@ -268,6 +269,7 @@ void gnu_xml_dom_DomNode_ShadowList___INIT____gnu_xml_dom_DomNode_java_lang_Stri
     _r0.o = __NEW_gnu_xml_dom_DomNode_LiveNodeList();
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_DomNode_LiveNodeList___INIT____gnu_xml_dom_DomNode_java_lang_String_java_lang_String(_r0.o, _r2.o, _r3.o, _r4.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomNode_ShadowList*) _r1.o)->fields.gnu_xml_dom_DomNode_ShadowList.liveList_ = _r0.o;
     XMLVM_EXIT_METHOD()
     return;
@@ -282,11 +284,13 @@ void gnu_xml_dom_DomNode_ShadowList_finalize_gnu_xml_dom_DomNode_ShadowList__(JA
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomNode.java", 1253)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomNode_ShadowList*) _r1.o)->fields.gnu_xml_dom_DomNode_ShadowList.liveList_;
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_DomNode_LiveNodeList_detach__(_r0.o);
     XMLVM_SOURCE_POSITION("DomNode.java", 1254)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomNode_ShadowList*) _r1.o)->fields.gnu_xml_dom_DomNode_ShadowList.liveList_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomNode.java", 1255)
     XMLVM_EXIT_METHOD()
@@ -304,6 +308,7 @@ JAVA_OBJECT gnu_xml_dom_DomNode_ShadowList_item___int(JAVA_OBJECT me, JAVA_INT n
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DomNode.java", 1259)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomNode_ShadowList*) _r1.o)->fields.gnu_xml_dom_DomNode_ShadowList.liveList_;
     //gnu_xml_dom_DomNode_LiveNodeList_item___int[9]
     XMLVM_CHECK_NPE(0)
@@ -321,6 +326,7 @@ JAVA_INT gnu_xml_dom_DomNode_ShadowList_getLength__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomNode.java", 1264)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomNode_ShadowList*) _r1.o)->fields.gnu_xml_dom_DomNode_ShadowList.liveList_;
     //gnu_xml_dom_DomNode_LiveNodeList_getLength__[7]
     XMLVM_CHECK_NPE(0)

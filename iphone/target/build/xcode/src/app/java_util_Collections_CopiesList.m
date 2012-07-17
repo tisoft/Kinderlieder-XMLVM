@@ -348,8 +348,10 @@ void java_util_Collections_CopiesList___INIT____int_java_lang_Object(JAVA_OBJECT
     XMLVM_THROW_CUSTOM(_r0.o)
     label11:;
     XMLVM_SOURCE_POSITION("Collections.java", 50)
+    XMLVM_CHECK_NPE(1)
     ((java_util_Collections_CopiesList*) _r1.o)->fields.java_util_Collections_CopiesList.n_ = _r2.i;
     XMLVM_SOURCE_POSITION("Collections.java", 51)
+    XMLVM_CHECK_NPE(1)
     ((java_util_Collections_CopiesList*) _r1.o)->fields.java_util_Collections_CopiesList.element_ = _r3.o;
     XMLVM_SOURCE_POSITION("Collections.java", 52)
     XMLVM_EXIT_METHOD()
@@ -367,6 +369,7 @@ JAVA_BOOLEAN java_util_Collections_CopiesList_contains___java_lang_Object(JAVA_O
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 56)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CopiesList*) _r1.o)->fields.java_util_Collections_CopiesList.element_;
     if (_r0.o != JAVA_NULL) goto label10;
     if (_r2.o != JAVA_NULL) goto label8;
@@ -378,6 +381,7 @@ JAVA_BOOLEAN java_util_Collections_CopiesList_contains___java_lang_Object(JAVA_O
     _r0.i = 0;
     goto label7;
     label10:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CopiesList*) _r1.o)->fields.java_util_Collections_CopiesList.element_;
     //java_lang_Object_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -394,6 +398,7 @@ JAVA_INT java_util_Collections_CopiesList_size__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 61)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_Collections_CopiesList*) _r1.o)->fields.java_util_Collections_CopiesList.n_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -411,9 +416,11 @@ JAVA_OBJECT java_util_Collections_CopiesList_get___int(JAVA_OBJECT me, JAVA_INT 
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 66)
     if (_r2.i < 0) goto label9;
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_Collections_CopiesList*) _r1.o)->fields.java_util_Collections_CopiesList.n_;
     if (_r2.i >= _r0.i) goto label9;
     XMLVM_SOURCE_POSITION("Collections.java", 67)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CopiesList*) _r1.o)->fields.java_util_Collections_CopiesList.element_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

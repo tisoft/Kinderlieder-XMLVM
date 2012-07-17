@@ -255,35 +255,45 @@ void java_util_regex_SequenceSet_IntHash___INIT____int(JAVA_OBJECT me, JAVA_INT 
     java_lang_Object___INIT___(_r1.o);
     label3:;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 170)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_SequenceSet_IntHash*) _r1.o)->fields.java_util_regex_SequenceSet_IntHash.mask_;
     if (_r2.i >= _r0.i) goto label34;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 173)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_SequenceSet_IntHash*) _r1.o)->fields.java_util_regex_SequenceSet_IntHash.mask_;
     _r0.i = _r0.i << 1;
     _r0.i = _r0.i | 1;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_SequenceSet_IntHash*) _r1.o)->fields.java_util_regex_SequenceSet_IntHash.mask_ = _r0.i;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 174)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_SequenceSet_IntHash*) _r1.o)->fields.java_util_regex_SequenceSet_IntHash.mask_;
     _r0.i = _r0.i + 1;
     if (!__TIB_int.classInitialized) __INIT_int();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_int, _r0.i);
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_SequenceSet_IntHash*) _r1.o)->fields.java_util_regex_SequenceSet_IntHash.table_ = _r0.o;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 175)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_SequenceSet_IntHash*) _r1.o)->fields.java_util_regex_SequenceSet_IntHash.mask_;
     _r0.i = _r0.i + 1;
     if (!__TIB_int.classInitialized) __INIT_int();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_int, _r0.i);
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_SequenceSet_IntHash*) _r1.o)->fields.java_util_regex_SequenceSet_IntHash.values_ = _r0.o;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 176)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_SequenceSet_IntHash*) _r1.o)->fields.java_util_regex_SequenceSet_IntHash.size_ = _r2.i;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 177)
     XMLVM_EXIT_METHOD()
     return;
     label34:;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 171)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_SequenceSet_IntHash*) _r1.o)->fields.java_util_regex_SequenceSet_IntHash.mask_;
     _r0.i = _r0.i << 1;
     _r0.i = _r0.i | 1;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_SequenceSet_IntHash*) _r1.o)->fields.java_util_regex_SequenceSet_IntHash.mask_ = _r0.i;
     goto label3;
     //XMLVM_END_WRAPPER
@@ -306,6 +316,7 @@ void java_util_regex_SequenceSet_IntHash_put___int_int(JAVA_OBJECT me, JAVA_INT 
     XMLVM_SOURCE_POSITION("SequenceSet.java", 180)
     _r0.i = 0;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 181)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_regex_SequenceSet_IntHash*) _r4.o)->fields.java_util_regex_SequenceSet_IntHash.mask_;
     _r1.i = _r1.i & _r5.i;
     _r3 = _r1;
@@ -313,12 +324,14 @@ void java_util_regex_SequenceSet_IntHash_put___int_int(JAVA_OBJECT me, JAVA_INT 
     _r0 = _r3;
     label7:;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 184)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_regex_SequenceSet_IntHash*) _r4.o)->fields.java_util_regex_SequenceSet_IntHash.table_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
     _r2.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
     if (_r2.i == 0) goto label19;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 185)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_regex_SequenceSet_IntHash*) _r4.o)->fields.java_util_regex_SequenceSet_IntHash.table_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
@@ -326,11 +339,13 @@ void java_util_regex_SequenceSet_IntHash_put___int_int(JAVA_OBJECT me, JAVA_INT 
     if (_r2.i != _r5.i) goto label28;
     label19:;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 186)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_regex_SequenceSet_IntHash*) _r4.o)->fields.java_util_regex_SequenceSet_IntHash.table_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i] = _r5.i;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 187)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_regex_SequenceSet_IntHash*) _r4.o)->fields.java_util_regex_SequenceSet_IntHash.values_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -342,10 +357,12 @@ void java_util_regex_SequenceSet_IntHash_put___int_int(JAVA_OBJECT me, JAVA_INT 
     XMLVM_SOURCE_POSITION("SequenceSet.java", 190)
     _r1.i = _r1.i + 1;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 191)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_regex_SequenceSet_IntHash*) _r4.o)->fields.java_util_regex_SequenceSet_IntHash.mask_;
     _r1.i = _r1.i & _r2.i;
     _r0.i = _r0.i + _r1.i;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 194)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_regex_SequenceSet_IntHash*) _r4.o)->fields.java_util_regex_SequenceSet_IntHash.mask_;
     _r0.i = _r0.i & _r2.i;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 183)
@@ -366,6 +383,7 @@ JAVA_INT java_util_regex_SequenceSet_IntHash_get___int(JAVA_OBJECT me, JAVA_INT 
     _r4.o = me;
     _r5.i = n1;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 200)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_regex_SequenceSet_IntHash*) _r4.o)->fields.java_util_regex_SequenceSet_IntHash.mask_;
     _r0.i = _r0.i & _r5.i;
     _r1.i = 0;
@@ -375,6 +393,7 @@ JAVA_INT java_util_regex_SequenceSet_IntHash_get___int(JAVA_OBJECT me, JAVA_INT 
     label7:;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 201)
     XMLVM_SOURCE_POSITION("SequenceSet.java", 205)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_regex_SequenceSet_IntHash*) _r4.o)->fields.java_util_regex_SequenceSet_IntHash.table_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -382,6 +401,7 @@ JAVA_INT java_util_regex_SequenceSet_IntHash_get___int(JAVA_OBJECT me, JAVA_INT 
     XMLVM_SOURCE_POSITION("SequenceSet.java", 207)
     if (_r2.i != 0) goto label16;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 208)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_regex_SequenceSet_IntHash*) _r4.o)->fields.java_util_regex_SequenceSet_IntHash.size_;
     label15:;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 212)
@@ -390,6 +410,7 @@ JAVA_INT java_util_regex_SequenceSet_IntHash_get___int(JAVA_OBJECT me, JAVA_INT 
     label16:;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 211)
     if (_r2.i != _r5.i) goto label23;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_SequenceSet_IntHash*) _r4.o)->fields.java_util_regex_SequenceSet_IntHash.values_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -399,10 +420,12 @@ JAVA_INT java_util_regex_SequenceSet_IntHash_get___int(JAVA_OBJECT me, JAVA_INT 
     XMLVM_SOURCE_POSITION("SequenceSet.java", 215)
     _r0.i = _r0.i + 1;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 216)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_regex_SequenceSet_IntHash*) _r4.o)->fields.java_util_regex_SequenceSet_IntHash.mask_;
     _r0.i = _r0.i & _r2.i;
     _r1.i = _r1.i + _r0.i;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 219)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_regex_SequenceSet_IntHash*) _r4.o)->fields.java_util_regex_SequenceSet_IntHash.mask_;
     _r1.i = _r1.i & _r2.i;
     XMLVM_SOURCE_POSITION("SequenceSet.java", 204)

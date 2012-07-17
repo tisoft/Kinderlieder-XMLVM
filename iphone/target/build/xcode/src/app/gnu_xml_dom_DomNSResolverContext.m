@@ -313,6 +313,7 @@ void gnu_xml_dom_DomNSResolverContext___INIT____org_w3c_dom_xpath_XPathNSResolve
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("DomNSResolverContext.java", 57)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_DomNSResolverContext*) _r0.o)->fields.gnu_xml_dom_DomNSResolverContext.resolver_ = _r1.o;
     XMLVM_SOURCE_POSITION("DomNSResolverContext.java", 58)
     XMLVM_EXIT_METHOD()
@@ -330,6 +331,7 @@ JAVA_OBJECT gnu_xml_dom_DomNSResolverContext_getNamespaceURI___java_lang_String(
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomNSResolverContext.java", 62)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomNSResolverContext*) _r1.o)->fields.gnu_xml_dom_DomNSResolverContext.resolver_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_xpath_XPathNSResolver_lookupNamespaceURI___java_lang_String])(_r0.o, _r2.o);

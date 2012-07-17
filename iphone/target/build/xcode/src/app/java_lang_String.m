@@ -1983,18 +1983,24 @@ void java_lang_String___INIT___(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("String.java", 58)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_String*) _r2.o)->fields.java_lang_String.charset_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 59)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_String*) _r2.o)->fields.java_lang_String.charset2_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 60)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_String*) _r2.o)->fields.java_lang_String.charset3_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 167)
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r1.i);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_String*) _r2.o)->fields.java_lang_String.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 168)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_String*) _r2.o)->fields.java_lang_String.offset_ = _r1.i;
     XMLVM_SOURCE_POSITION("String.java", 169)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_String*) _r2.o)->fields.java_lang_String.count_ = _r1.i;
     XMLVM_SOURCE_POSITION("String.java", 170)
     XMLVM_EXIT_METHOD()
@@ -2023,31 +2029,45 @@ void java_lang_String___INIT____java_lang_String_char(JAVA_OBJECT me, JAVA_OBJEC
     XMLVM_CHECK_NPE(5)
     java_lang_Object___INIT___(_r5.o);
     XMLVM_SOURCE_POSITION("String.java", 58)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.charset_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 59)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.charset2_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 60)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.charset3_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 177)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.offset_ = _r4.i;
     XMLVM_SOURCE_POSITION("String.java", 178)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.count_;
     _r0.i = _r0.i + 1;
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r0.i);
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 179)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.count_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("String.java", 180)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_lang_String*) _r6.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_lang_String*) _r5.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r1.i, _r2.o, _r4.i, _r3.i);
     XMLVM_SOURCE_POSITION("String.java", 181)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_lang_String*) _r5.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.count_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -2148,10 +2168,13 @@ void java_lang_String___INIT____byte_1ARRAY_int_int_int(JAVA_OBJECT me, JAVA_OBJ
     XMLVM_CHECK_NPE(4)
     java_lang_Object___INIT___(_r4.o);
     XMLVM_SOURCE_POSITION("String.java", 58)
+    XMLVM_CHECK_NPE(4)
     ((java_lang_String*) _r4.o)->fields.java_lang_String.charset_ = _r2.o;
     XMLVM_SOURCE_POSITION("String.java", 59)
+    XMLVM_CHECK_NPE(4)
     ((java_lang_String*) _r4.o)->fields.java_lang_String.charset2_ = _r2.o;
     XMLVM_SOURCE_POSITION("String.java", 60)
+    XMLVM_CHECK_NPE(4)
     ((java_lang_String*) _r4.o)->fields.java_lang_String.charset3_ = _r2.o;
     XMLVM_SOURCE_POSITION("String.java", 278)
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r5.o));
@@ -2161,21 +2184,26 @@ void java_lang_String___INIT____byte_1ARRAY_int_int_int(JAVA_OBJECT me, JAVA_OBJ
     if (_r8.i < 0) goto label50;
     XMLVM_SOURCE_POSITION("String.java", 279)
     _r2.i = 0;
+    XMLVM_CHECK_NPE(4)
     ((java_lang_String*) _r4.o)->fields.java_lang_String.offset_ = _r2.i;
     XMLVM_SOURCE_POSITION("String.java", 280)
     if (!__TIB_char.classInitialized) __INIT_char();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_char, _r8.i);
+    XMLVM_CHECK_NPE(4)
     ((java_lang_String*) _r4.o)->fields.java_lang_String.value_ = _r2.o;
     XMLVM_SOURCE_POSITION("String.java", 281)
+    XMLVM_CHECK_NPE(4)
     ((java_lang_String*) _r4.o)->fields.java_lang_String.count_ = _r8.i;
     XMLVM_SOURCE_POSITION("String.java", 282)
     _r6.i = _r6.i << 8;
     _r0.i = 0;
     label30:;
     XMLVM_SOURCE_POSITION("String.java", 283)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.count_;
     if (_r0.i >= _r2.i) goto label56;
     XMLVM_SOURCE_POSITION("String.java", 284)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_lang_String*) _r4.o)->fields.java_lang_String.value_;
     _r1.i = _r7.i + 1;
     XMLVM_CHECK_NPE(5)
@@ -2229,10 +2257,13 @@ void java_lang_String___INIT____byte_1ARRAY_int_int_java_lang_String(JAVA_OBJECT
     XMLVM_CHECK_NPE(6)
     java_lang_Object___INIT___(_r6.o);
     XMLVM_SOURCE_POSITION("String.java", 58)
+    XMLVM_CHECK_NPE(6)
     ((java_lang_String*) _r6.o)->fields.java_lang_String.charset_ = _r4.o;
     XMLVM_SOURCE_POSITION("String.java", 59)
+    XMLVM_CHECK_NPE(6)
     ((java_lang_String*) _r6.o)->fields.java_lang_String.charset2_ = _r4.o;
     XMLVM_SOURCE_POSITION("String.java", 60)
+    XMLVM_CHECK_NPE(6)
     ((java_lang_String*) _r6.o)->fields.java_lang_String.charset3_ = _r4.o;
     XMLVM_SOURCE_POSITION("String.java", 312)
     if (_r10.o != JAVA_NULL) goto label19;
@@ -2249,6 +2280,7 @@ void java_lang_String___INIT____byte_1ARRAY_int_int_java_lang_String(JAVA_OBJECT
     _r4.i = _r4.i - _r8.i;
     if (_r9.i > _r4.i) goto label76;
     XMLVM_SOURCE_POSITION("String.java", 317)
+    XMLVM_CHECK_NPE(6)
     ((java_lang_String*) _r6.o)->fields.java_lang_String.offset_ = _r5.i;
     XMLVM_SOURCE_POSITION("String.java", 318)
     XMLVM_CHECK_NPE(6)
@@ -2275,8 +2307,10 @@ void java_lang_String___INIT____byte_1ARRAY_int_int_java_lang_String(JAVA_OBJECT
     //java_nio_CharBuffer_array__[7]
     XMLVM_CHECK_NPE(0)
     _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_nio_CharBuffer*) _r0.o)->tib->vtable[7])(_r0.o);
+    XMLVM_CHECK_NPE(6)
     ((java_lang_String*) _r6.o)->fields.java_lang_String.value_ = _r4.o;
     XMLVM_SOURCE_POSITION("String.java", 331)
+    XMLVM_CHECK_NPE(6)
     ((java_lang_String*) _r6.o)->fields.java_lang_String.count_ = _r3.i;
     label55:;
     XMLVM_SOURCE_POSITION("String.java", 339)
@@ -2296,10 +2330,12 @@ void java_lang_String___INIT____byte_1ARRAY_int_int_java_lang_String(JAVA_OBJECT
     goto label41;
     label69:;
     XMLVM_SOURCE_POSITION("String.java", 333)
+    XMLVM_CHECK_NPE(6)
     ((java_lang_String*) _r6.o)->fields.java_lang_String.count_ = _r5.i;
     XMLVM_SOURCE_POSITION("String.java", 334)
     if (!__TIB_char.classInitialized) __INIT_char();
     _r4.o = XMLVMArray_createSingleDimension(__CLASS_char, _r5.i);
+    XMLVM_CHECK_NPE(6)
     ((java_lang_String*) _r6.o)->fields.java_lang_String.value_ = _r4.o;
     goto label55;
     label76:;
@@ -2376,10 +2412,13 @@ void java_lang_String___INIT____char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT 
     XMLVM_CHECK_NPE(3)
     java_lang_Object___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("String.java", 58)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_String*) _r3.o)->fields.java_lang_String.charset_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 59)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_String*) _r3.o)->fields.java_lang_String.charset2_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 60)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_String*) _r3.o)->fields.java_lang_String.charset3_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 391)
     if (_r5.i < 0) goto label35;
@@ -2388,15 +2427,20 @@ void java_lang_String___INIT____char_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT 
     _r0.i = _r0.i - _r5.i;
     if (_r6.i > _r0.i) goto label35;
     XMLVM_SOURCE_POSITION("String.java", 392)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_String*) _r3.o)->fields.java_lang_String.offset_ = _r2.i;
     XMLVM_SOURCE_POSITION("String.java", 393)
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r6.i);
+    XMLVM_CHECK_NPE(3)
     ((java_lang_String*) _r3.o)->fields.java_lang_String.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 394)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_String*) _r3.o)->fields.java_lang_String.count_ = _r6.i;
     XMLVM_SOURCE_POSITION("String.java", 395)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_lang_String*) _r3.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_String*) _r3.o)->fields.java_lang_String.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r4.o, _r5.i, _r0.o, _r2.i, _r1.i);
     XMLVM_SOURCE_POSITION("String.java", 399)
@@ -2429,16 +2473,22 @@ void java_lang_String___INIT____int_int_char_1ARRAY(JAVA_OBJECT me, JAVA_INT n1,
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("String.java", 58)
+    XMLVM_CHECK_NPE(1)
     ((java_lang_String*) _r1.o)->fields.java_lang_String.charset_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 59)
+    XMLVM_CHECK_NPE(1)
     ((java_lang_String*) _r1.o)->fields.java_lang_String.charset2_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 60)
+    XMLVM_CHECK_NPE(1)
     ((java_lang_String*) _r1.o)->fields.java_lang_String.charset3_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 406)
+    XMLVM_CHECK_NPE(1)
     ((java_lang_String*) _r1.o)->fields.java_lang_String.value_ = _r4.o;
     XMLVM_SOURCE_POSITION("String.java", 407)
+    XMLVM_CHECK_NPE(1)
     ((java_lang_String*) _r1.o)->fields.java_lang_String.offset_ = _r2.i;
     XMLVM_SOURCE_POSITION("String.java", 408)
+    XMLVM_CHECK_NPE(1)
     ((java_lang_String*) _r1.o)->fields.java_lang_String.count_ = _r3.i;
     XMLVM_SOURCE_POSITION("String.java", 409)
     XMLVM_EXIT_METHOD()
@@ -2469,10 +2519,13 @@ void java_lang_String___INIT____char_1ARRAY_int_int_boolean(JAVA_OBJECT me, JAVA
     XMLVM_CHECK_NPE(3)
     java_lang_Object___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("String.java", 58)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_String*) _r3.o)->fields.java_lang_String.charset_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 59)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_String*) _r3.o)->fields.java_lang_String.charset2_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 60)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_String*) _r3.o)->fields.java_lang_String.charset3_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 419)
     if (_r5.i >= 0) goto label38;
@@ -2540,11 +2593,14 @@ void java_lang_String___INIT____char_1ARRAY_int_int_boolean(JAVA_OBJECT me, JAVA
     XMLVM_SOURCE_POSITION("String.java", 427)
     if (_r7.i == 0) goto label105;
     XMLVM_SOURCE_POSITION("String.java", 429)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_String*) _r3.o)->fields.java_lang_String.value_ = _r4.o;
     XMLVM_SOURCE_POSITION("String.java", 430)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_String*) _r3.o)->fields.java_lang_String.offset_ = _r5.i;
     label102:;
     XMLVM_SOURCE_POSITION("String.java", 438)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_String*) _r3.o)->fields.java_lang_String.count_ = _r6.i;
     XMLVM_SOURCE_POSITION("String.java", 439)
     XMLVM_EXIT_METHOD()
@@ -2553,11 +2609,14 @@ void java_lang_String___INIT____char_1ARRAY_int_int_boolean(JAVA_OBJECT me, JAVA
     XMLVM_SOURCE_POSITION("String.java", 434)
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r6.i);
+    XMLVM_CHECK_NPE(3)
     ((java_lang_String*) _r3.o)->fields.java_lang_String.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 435)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_lang_String*) _r3.o)->fields.java_lang_String.value_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r4.o, _r5.i, _r0.o, _r1.i, _r6.i);
     XMLVM_SOURCE_POSITION("String.java", 436)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_String*) _r3.o)->fields.java_lang_String.offset_ = _r1.i;
     goto label102;
     //XMLVM_END_WRAPPER
@@ -2577,19 +2636,28 @@ void java_lang_String___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("String.java", 58)
+    XMLVM_CHECK_NPE(1)
     ((java_lang_String*) _r1.o)->fields.java_lang_String.charset_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 59)
+    XMLVM_CHECK_NPE(1)
     ((java_lang_String*) _r1.o)->fields.java_lang_String.charset2_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 60)
+    XMLVM_CHECK_NPE(1)
     ((java_lang_String*) _r1.o)->fields.java_lang_String.charset3_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 448)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_lang_String*) _r2.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(1)
     ((java_lang_String*) _r1.o)->fields.java_lang_String.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 449)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_String*) _r2.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(1)
     ((java_lang_String*) _r1.o)->fields.java_lang_String.offset_ = _r0.i;
     XMLVM_SOURCE_POSITION("String.java", 450)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_String*) _r2.o)->fields.java_lang_String.count_;
+    XMLVM_CHECK_NPE(1)
     ((java_lang_String*) _r1.o)->fields.java_lang_String.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("String.java", 451)
     XMLVM_EXIT_METHOD()
@@ -2618,10 +2686,13 @@ void java_lang_String___INIT____java_lang_String_java_lang_String(JAVA_OBJECT me
     XMLVM_CHECK_NPE(5)
     java_lang_Object___INIT___(_r5.o);
     XMLVM_SOURCE_POSITION("String.java", 58)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.charset_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 59)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.charset2_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 60)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.charset3_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 458)
     if (_r6.o != JAVA_NULL) goto label15;
@@ -2636,28 +2707,43 @@ void java_lang_String___INIT____java_lang_String_java_lang_String(JAVA_OBJECT me
     _r7.o = xmlvm_create_java_string_from_pool(22);
     label19:;
     XMLVM_SOURCE_POSITION("String.java", 464)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.count_;
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_lang_String*) _r7.o)->fields.java_lang_String.count_;
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("String.java", 465)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.count_;
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r0.i);
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 466)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.offset_ = _r4.i;
     XMLVM_SOURCE_POSITION("String.java", 467)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_lang_String*) _r6.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_lang_String*) _r5.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r1.i, _r2.o, _r4.i, _r3.i);
     XMLVM_SOURCE_POSITION("String.java", 468)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_lang_String*) _r7.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_lang_String*) _r7.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_lang_String*) _r5.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.count_;
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_lang_String*) _r7.o)->fields.java_lang_String.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r1.i, _r2.o, _r3.i, _r4.i);
     XMLVM_SOURCE_POSITION("String.java", 469)
@@ -2689,10 +2775,13 @@ void java_lang_String___INIT____java_lang_String_java_lang_String_java_lang_Stri
     XMLVM_CHECK_NPE(5)
     java_lang_Object___INIT___(_r5.o);
     XMLVM_SOURCE_POSITION("String.java", 58)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.charset_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 59)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.charset2_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 60)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.charset3_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 476)
     if (_r6.o != JAVA_NULL) goto label15;
@@ -2713,39 +2802,61 @@ void java_lang_String___INIT____java_lang_String_java_lang_String_java_lang_Stri
     _r8.o = xmlvm_create_java_string_from_pool(22);
     label23:;
     XMLVM_SOURCE_POSITION("String.java", 485)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.count_;
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_lang_String*) _r7.o)->fields.java_lang_String.count_;
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_lang_String*) _r8.o)->fields.java_lang_String.count_;
     _r0.i = _r0.i + _r1.i;
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("String.java", 486)
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.count_;
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r0.i);
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 487)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.offset_ = _r4.i;
     XMLVM_SOURCE_POSITION("String.java", 488)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_lang_String*) _r6.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_lang_String*) _r5.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r1.i, _r2.o, _r4.i, _r3.i);
     XMLVM_SOURCE_POSITION("String.java", 489)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_lang_String*) _r7.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_lang_String*) _r7.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_lang_String*) _r5.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.count_;
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_lang_String*) _r7.o)->fields.java_lang_String.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r1.i, _r2.o, _r3.i, _r4.i);
     XMLVM_SOURCE_POSITION("String.java", 490)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((java_lang_String*) _r8.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(8)
     _r1.i = ((java_lang_String*) _r8.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_lang_String*) _r5.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.count_;
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_lang_String*) _r7.o)->fields.java_lang_String.count_;
     _r3.i = _r3.i + _r4.i;
+    XMLVM_CHECK_NPE(8)
     _r4.i = ((java_lang_String*) _r8.o)->fields.java_lang_String.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r1.i, _r2.o, _r3.i, _r4.i);
     XMLVM_SOURCE_POSITION("String.java", 492)
@@ -2768,13 +2879,17 @@ void java_lang_String___INIT____java_lang_StringBuffer(JAVA_OBJECT me, JAVA_OBJE
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("String.java", 58)
+    XMLVM_CHECK_NPE(1)
     ((java_lang_String*) _r1.o)->fields.java_lang_String.charset_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 59)
+    XMLVM_CHECK_NPE(1)
     ((java_lang_String*) _r1.o)->fields.java_lang_String.charset2_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 60)
+    XMLVM_CHECK_NPE(1)
     ((java_lang_String*) _r1.o)->fields.java_lang_String.charset3_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 502)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_lang_String*) _r1.o)->fields.java_lang_String.offset_ = _r0.i;
     XMLVM_SOURCE_POSITION("String.java", 503)
     java_lang_Object_acquireLockRecursive__(_r2.o);
@@ -2783,10 +2898,12 @@ void java_lang_String___INIT____java_lang_StringBuffer(JAVA_OBJECT me, JAVA_OBJE
     XMLVM_SOURCE_POSITION("String.java", 504)
     XMLVM_CHECK_NPE(2)
     _r0.o = java_lang_AbstractStringBuilder_getValue__(_r2.o);
+    XMLVM_CHECK_NPE(1)
     ((java_lang_String*) _r1.o)->fields.java_lang_String.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 505)
     XMLVM_CHECK_NPE(2)
     _r0.i = java_lang_AbstractStringBuilder_length__(_r2.o);
+    XMLVM_CHECK_NPE(1)
     ((java_lang_String*) _r1.o)->fields.java_lang_String.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("String.java", 506)
     java_lang_Object_releaseLockRecursive__(_r2.o);
@@ -2838,10 +2955,13 @@ void java_lang_String___INIT____int_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n
     XMLVM_CHECK_NPE(5)
     java_lang_Object___INIT___(_r5.o);
     XMLVM_SOURCE_POSITION("String.java", 58)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.charset_ = _r3.o;
     XMLVM_SOURCE_POSITION("String.java", 59)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.charset2_ = _r3.o;
     XMLVM_SOURCE_POSITION("String.java", 60)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.charset3_ = _r3.o;
     XMLVM_SOURCE_POSITION("String.java", 531)
     if (_r7.i < 0) goto label18;
@@ -2858,11 +2978,13 @@ void java_lang_String___INIT____int_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n
     label24:;
     XMLVM_SOURCE_POSITION("String.java", 534)
     _r3.i = 0;
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.offset_ = _r3.i;
     XMLVM_SOURCE_POSITION("String.java", 535)
     _r3.i = _r8.i * 2;
     if (!__TIB_char.classInitialized) __INIT_char();
     _r3.o = XMLVMArray_createSingleDimension(__CLASS_char, _r3.i);
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.value_ = _r3.o;
     XMLVM_SOURCE_POSITION("String.java", 536)
     _r1.i = _r7.i + _r8.i;
@@ -2875,6 +2997,7 @@ void java_lang_String___INIT____int_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n
     XMLVM_CHECK_NPE(6)
     XMLVM_CHECK_ARRAY_BOUNDS(_r6.o, _r2.i);
     _r3.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r6.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
+    XMLVM_CHECK_NPE(5)
     _r4.o = ((java_lang_String*) _r5.o)->fields.java_lang_String.value_;
     _r3.i = java_lang_Character_toChars___int_char_1ARRAY_int(_r3.i, _r4.o, _r0.i);
     _r0.i = _r0.i + _r3.i;
@@ -2882,6 +3005,7 @@ void java_lang_String___INIT____int_1ARRAY_int_int(JAVA_OBJECT me, JAVA_OBJECT n
     goto label37;
     label51:;
     XMLVM_SOURCE_POSITION("String.java", 541)
+    XMLVM_CHECK_NPE(5)
     ((java_lang_String*) _r5.o)->fields.java_lang_String.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("String.java", 542)
     XMLVM_EXIT_METHOD()
@@ -2906,24 +3030,33 @@ void java_lang_String___INIT____java_lang_StringBuilder(JAVA_OBJECT me, JAVA_OBJ
     XMLVM_CHECK_NPE(3)
     java_lang_Object___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("String.java", 58)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_String*) _r3.o)->fields.java_lang_String.charset_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 59)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_String*) _r3.o)->fields.java_lang_String.charset2_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 60)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_String*) _r3.o)->fields.java_lang_String.charset3_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 555)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_String*) _r3.o)->fields.java_lang_String.offset_ = _r2.i;
     XMLVM_SOURCE_POSITION("String.java", 556)
     XMLVM_CHECK_NPE(4)
     _r0.i = java_lang_AbstractStringBuilder_length__(_r4.o);
+    XMLVM_CHECK_NPE(3)
     ((java_lang_String*) _r3.o)->fields.java_lang_String.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("String.java", 557)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_lang_String*) _r3.o)->fields.java_lang_String.count_;
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r0.i);
+    XMLVM_CHECK_NPE(3)
     ((java_lang_String*) _r3.o)->fields.java_lang_String.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("String.java", 558)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_lang_String*) _r3.o)->fields.java_lang_String.count_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_lang_String*) _r3.o)->fields.java_lang_String.value_;
     //java_lang_StringBuilder_getChars___int_int_char_1ARRAY_int[11]
     XMLVM_CHECK_NPE(4)
@@ -2957,10 +3090,13 @@ void java_lang_String___INIT____java_lang_String_int(JAVA_OBJECT me, JAVA_OBJECT
     XMLVM_CHECK_NPE(7)
     java_lang_Object___INIT___(_r7.o);
     XMLVM_SOURCE_POSITION("String.java", 58)
+    XMLVM_CHECK_NPE(7)
     ((java_lang_String*) _r7.o)->fields.java_lang_String.charset_ = _r2.o;
     XMLVM_SOURCE_POSITION("String.java", 59)
+    XMLVM_CHECK_NPE(7)
     ((java_lang_String*) _r7.o)->fields.java_lang_String.charset2_ = _r2.o;
     XMLVM_SOURCE_POSITION("String.java", 60)
+    XMLVM_CHECK_NPE(7)
     ((java_lang_String*) _r7.o)->fields.java_lang_String.charset3_ = _r2.o;
     XMLVM_SOURCE_POSITION("String.java", 566)
     if (_r8.o != JAVA_NULL) goto label15;
@@ -2971,29 +3107,43 @@ void java_lang_String___INIT____java_lang_String_int(JAVA_OBJECT me, JAVA_OBJECT
     XMLVM_SOURCE_POSITION("String.java", 569)
     _r1.o = java_lang_String_valueOf___int(_r9.i);
     XMLVM_SOURCE_POSITION("String.java", 570)
+    XMLVM_CHECK_NPE(8)
     _r2.i = ((java_lang_String*) _r8.o)->fields.java_lang_String.count_;
+    XMLVM_CHECK_NPE(1)
     _r3.i = ((java_lang_String*) _r1.o)->fields.java_lang_String.count_;
     _r0.i = _r2.i + _r3.i;
     XMLVM_SOURCE_POSITION("String.java", 571)
     if (!__TIB_char.classInitialized) __INIT_char();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_char, _r0.i);
+    XMLVM_CHECK_NPE(7)
     ((java_lang_String*) _r7.o)->fields.java_lang_String.value_ = _r2.o;
     XMLVM_SOURCE_POSITION("String.java", 572)
+    XMLVM_CHECK_NPE(7)
     ((java_lang_String*) _r7.o)->fields.java_lang_String.offset_ = _r6.i;
     XMLVM_SOURCE_POSITION("String.java", 573)
+    XMLVM_CHECK_NPE(8)
     _r2.o = ((java_lang_String*) _r8.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_lang_String*) _r8.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_lang_String*) _r7.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(8)
     _r5.i = ((java_lang_String*) _r8.o)->fields.java_lang_String.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r2.o, _r3.i, _r4.o, _r6.i, _r5.i);
     XMLVM_SOURCE_POSITION("String.java", 574)
+    XMLVM_CHECK_NPE(1)
     _r2.o = ((java_lang_String*) _r1.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(1)
     _r3.i = ((java_lang_String*) _r1.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_lang_String*) _r7.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(8)
     _r5.i = ((java_lang_String*) _r8.o)->fields.java_lang_String.count_;
+    XMLVM_CHECK_NPE(1)
     _r6.i = ((java_lang_String*) _r1.o)->fields.java_lang_String.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r2.o, _r3.i, _r4.o, _r5.i, _r6.i);
     XMLVM_SOURCE_POSITION("String.java", 575)
+    XMLVM_CHECK_NPE(7)
     ((java_lang_String*) _r7.o)->fields.java_lang_String.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("String.java", 576)
     XMLVM_EXIT_METHOD()
@@ -3013,10 +3163,13 @@ JAVA_CHAR java_lang_String_charAt___int(JAVA_OBJECT me, JAVA_INT n1)
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("String.java", 588)
     if (_r3.i < 0) goto label14;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_String*) _r2.o)->fields.java_lang_String.count_;
     if (_r3.i >= _r0.i) goto label14;
     XMLVM_SOURCE_POSITION("String.java", 589)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_lang_String*) _r2.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_lang_String*) _r2.o)->fields.java_lang_String.offset_;
     _r1.i = _r1.i + _r3.i;
     XMLVM_CHECK_NPE(0)
@@ -3156,17 +3309,24 @@ JAVA_INT java_lang_String_compareTo___java_lang_String(JAVA_OBJECT me, JAVA_OBJE
     _r10.o = me;
     _r11.o = n1;
     XMLVM_SOURCE_POSITION("String.java", 649)
+    XMLVM_CHECK_NPE(10)
     _r1.i = ((java_lang_String*) _r10.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(11)
     _r3.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.offset_;
     XMLVM_SOURCE_POSITION("String.java", 650)
+    XMLVM_CHECK_NPE(10)
     _r7.i = ((java_lang_String*) _r10.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(10)
     _r8.i = ((java_lang_String*) _r10.o)->fields.java_lang_String.count_;
+    XMLVM_CHECK_NPE(11)
     _r9.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.count_;
     if (_r8.i >= _r9.i) goto label38;
+    XMLVM_CHECK_NPE(10)
     _r8.i = ((java_lang_String*) _r10.o)->fields.java_lang_String.count_;
     label14:;
     _r0.i = _r7.i + _r8.i;
     XMLVM_SOURCE_POSITION("String.java", 651)
+    XMLVM_CHECK_NPE(11)
     _r6.o = ((java_lang_String*) _r11.o)->fields.java_lang_String.value_;
     _r4 = _r3;
     _r2 = _r1;
@@ -3174,6 +3334,7 @@ JAVA_INT java_lang_String_compareTo___java_lang_String(JAVA_OBJECT me, JAVA_OBJE
     XMLVM_SOURCE_POSITION("String.java", 652)
     if (_r2.i >= _r0.i) goto label41;
     XMLVM_SOURCE_POSITION("String.java", 653)
+    XMLVM_CHECK_NPE(10)
     _r7.o = ((java_lang_String*) _r10.o)->fields.java_lang_String.value_;
     _r1.i = _r2.i + 1;
     XMLVM_CHECK_NPE(7)
@@ -3192,10 +3353,13 @@ JAVA_INT java_lang_String_compareTo___java_lang_String(JAVA_OBJECT me, JAVA_OBJE
     XMLVM_EXIT_METHOD()
     return _r7.i;
     label38:;
+    XMLVM_CHECK_NPE(11)
     _r8.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.count_;
     goto label14;
     label41:;
+    XMLVM_CHECK_NPE(10)
     _r7.i = ((java_lang_String*) _r10.o)->fields.java_lang_String.count_;
+    XMLVM_CHECK_NPE(11)
     _r8.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.count_;
     _r7.i = _r7.i - _r8.i;
     _r3 = _r4;
@@ -3229,17 +3393,24 @@ JAVA_INT java_lang_String_compareToIgnoreCase___java_lang_String(JAVA_OBJECT me,
     _r12.o = me;
     _r13.o = n1;
     XMLVM_SOURCE_POSITION("String.java", 681)
+    XMLVM_CHECK_NPE(12)
     _r3.i = ((java_lang_String*) _r12.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(13)
     _r5.i = ((java_lang_String*) _r13.o)->fields.java_lang_String.offset_;
     XMLVM_SOURCE_POSITION("String.java", 682)
+    XMLVM_CHECK_NPE(12)
     _r9.i = ((java_lang_String*) _r12.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(12)
     _r10.i = ((java_lang_String*) _r12.o)->fields.java_lang_String.count_;
+    XMLVM_CHECK_NPE(13)
     _r11.i = ((java_lang_String*) _r13.o)->fields.java_lang_String.count_;
     if (_r10.i >= _r11.i) goto label37;
+    XMLVM_CHECK_NPE(12)
     _r10.i = ((java_lang_String*) _r12.o)->fields.java_lang_String.count_;
     label14:;
     _r2.i = _r9.i + _r10.i;
     XMLVM_SOURCE_POSITION("String.java", 684)
+    XMLVM_CHECK_NPE(13)
     _r8.o = ((java_lang_String*) _r13.o)->fields.java_lang_String.value_;
     _r6 = _r5;
     _r4 = _r3;
@@ -3247,6 +3418,7 @@ JAVA_INT java_lang_String_compareToIgnoreCase___java_lang_String(JAVA_OBJECT me,
     XMLVM_SOURCE_POSITION("String.java", 685)
     if (_r4.i >= _r2.i) goto label54;
     XMLVM_SOURCE_POSITION("String.java", 686)
+    XMLVM_CHECK_NPE(12)
     _r9.o = ((java_lang_String*) _r12.o)->fields.java_lang_String.value_;
     _r3.i = _r4.i + 1;
     XMLVM_CHECK_NPE(9)
@@ -3262,6 +3434,7 @@ JAVA_INT java_lang_String_compareToIgnoreCase___java_lang_String(JAVA_OBJECT me,
     XMLVM_SOURCE_POSITION("String.java", 687)
     goto label20;
     label37:;
+    XMLVM_CHECK_NPE(13)
     _r10.i = ((java_lang_String*) _r13.o)->fields.java_lang_String.count_;
     goto label14;
     label40:;
@@ -3281,7 +3454,9 @@ JAVA_INT java_lang_String_compareToIgnoreCase___java_lang_String(JAVA_OBJECT me,
     XMLVM_EXIT_METHOD()
     return _r9.i;
     label54:;
+    XMLVM_CHECK_NPE(12)
     _r9.i = ((java_lang_String*) _r12.o)->fields.java_lang_String.count_;
+    XMLVM_CHECK_NPE(13)
     _r10.i = ((java_lang_String*) _r13.o)->fields.java_lang_String.count_;
     _r9.i = _r9.i - _r10.i;
     _r5 = _r6;
@@ -3310,6 +3485,7 @@ JAVA_OBJECT java_lang_String_concat___java_lang_String(JAVA_OBJECT me, JAVA_OBJE
     _r7.o = n1;
     _r5.i = 0;
     XMLVM_SOURCE_POSITION("String.java", 707)
+    XMLVM_CHECK_NPE(7)
     _r1.i = ((java_lang_String*) _r7.o)->fields.java_lang_String.count_;
     if (_r1.i != 0) goto label7;
     _r1 = _r6;
@@ -3320,24 +3496,34 @@ JAVA_OBJECT java_lang_String_concat___java_lang_String(JAVA_OBJECT me, JAVA_OBJE
     return _r1.o;
     label7:;
     XMLVM_SOURCE_POSITION("String.java", 711)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.count_;
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_lang_String*) _r7.o)->fields.java_lang_String.count_;
     _r1.i = _r1.i + _r2.i;
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r1.i);
     XMLVM_SOURCE_POSITION("String.java", 712)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.count_;
     if (_r1.i <= 0) goto label27;
     XMLVM_SOURCE_POSITION("String.java", 713)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_lang_String*) _r6.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r2.i, _r0.o, _r5.i, _r3.i);
     label27:;
     XMLVM_SOURCE_POSITION("String.java", 715)
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_lang_String*) _r7.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_lang_String*) _r7.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.count_;
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_lang_String*) _r7.o)->fields.java_lang_String.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r2.i, _r0.o, _r3.i, _r4.i);
     _r1.o = __NEW_java_lang_String();
@@ -3464,10 +3650,13 @@ JAVA_BOOLEAN java_lang_String_endsWith___java_lang_String(JAVA_OBJECT me, JAVA_O
     _r3.o = me;
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("String.java", 791)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_lang_String*) _r3.o)->fields.java_lang_String.count_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.count_;
     _r0.i = _r0.i - _r1.i;
     _r1.i = 0;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.count_;
     XMLVM_CHECK_NPE(3)
     _r0.i = java_lang_String_regionMatches___int_java_lang_String_int_int(_r3.o, _r0.i, _r4.o, _r1.i, _r2.i);
@@ -3514,11 +3703,15 @@ JAVA_BOOLEAN java_lang_String_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJ
     _r0.o = _r0.o;
     _r3 = _r0;
     XMLVM_SOURCE_POSITION("String.java", 812)
+    XMLVM_CHECK_NPE(10)
     _r1.i = ((java_lang_String*) _r10.o)->fields.java_lang_String.hashCode_;
     XMLVM_SOURCE_POSITION("String.java", 813)
+    XMLVM_CHECK_NPE(3)
     _r4.i = ((java_lang_String*) _r3.o)->fields.java_lang_String.hashCode_;
     XMLVM_SOURCE_POSITION("String.java", 814)
+    XMLVM_CHECK_NPE(10)
     _r5.i = ((java_lang_String*) _r10.o)->fields.java_lang_String.count_;
+    XMLVM_CHECK_NPE(3)
     _r6.i = ((java_lang_String*) _r3.o)->fields.java_lang_String.count_;
     if (_r5.i != _r6.i) goto label30;
     if (_r1.i == _r4.i) goto label32;
@@ -3532,16 +3725,21 @@ JAVA_BOOLEAN java_lang_String_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJ
     XMLVM_SOURCE_POSITION("String.java", 817)
     _r2.i = 0;
     label33:;
+    XMLVM_CHECK_NPE(10)
     _r5.i = ((java_lang_String*) _r10.o)->fields.java_lang_String.count_;
     if (_r2.i >= _r5.i) goto label58;
     XMLVM_SOURCE_POSITION("String.java", 818)
+    XMLVM_CHECK_NPE(10)
     _r5.o = ((java_lang_String*) _r10.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(10)
     _r6.i = ((java_lang_String*) _r10.o)->fields.java_lang_String.offset_;
     _r6.i = _r6.i + _r2.i;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r6.i);
     _r5.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r5.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i];
+    XMLVM_CHECK_NPE(3)
     _r6.o = ((java_lang_String*) _r3.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(3)
     _r7.i = ((java_lang_String*) _r3.o)->fields.java_lang_String.offset_;
     _r7.i = _r7.i + _r2.i;
     XMLVM_CHECK_NPE(6)
@@ -3597,7 +3795,9 @@ JAVA_BOOLEAN java_lang_String_equalsIgnoreCase___java_lang_String(JAVA_OBJECT me
     label6:;
     XMLVM_SOURCE_POSITION("String.java", 840)
     if (_r13.o == JAVA_NULL) goto label14;
+    XMLVM_CHECK_NPE(12)
     _r8.i = ((java_lang_String*) _r12.o)->fields.java_lang_String.count_;
+    XMLVM_CHECK_NPE(13)
     _r9.i = ((java_lang_String*) _r13.o)->fields.java_lang_String.count_;
     if (_r8.i == _r9.i) goto label16;
     label14:;
@@ -3606,13 +3806,18 @@ JAVA_BOOLEAN java_lang_String_equalsIgnoreCase___java_lang_String(JAVA_OBJECT me
     goto label5;
     label16:;
     XMLVM_SOURCE_POSITION("String.java", 844)
+    XMLVM_CHECK_NPE(12)
     _r3.i = ((java_lang_String*) _r12.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(13)
     _r5.i = ((java_lang_String*) _r13.o)->fields.java_lang_String.offset_;
     XMLVM_SOURCE_POSITION("String.java", 845)
+    XMLVM_CHECK_NPE(12)
     _r8.i = ((java_lang_String*) _r12.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(12)
     _r9.i = ((java_lang_String*) _r12.o)->fields.java_lang_String.count_;
     _r2.i = _r8.i + _r9.i;
     XMLVM_SOURCE_POSITION("String.java", 847)
+    XMLVM_CHECK_NPE(13)
     _r7.o = ((java_lang_String*) _r13.o)->fields.java_lang_String.value_;
     _r6 = _r5;
     _r4 = _r3;
@@ -3620,6 +3825,7 @@ JAVA_BOOLEAN java_lang_String_equalsIgnoreCase___java_lang_String(JAVA_OBJECT me
     XMLVM_SOURCE_POSITION("String.java", 848)
     if (_r4.i >= _r2.i) goto label66;
     XMLVM_SOURCE_POSITION("String.java", 849)
+    XMLVM_CHECK_NPE(12)
     _r8.o = ((java_lang_String*) _r12.o)->fields.java_lang_String.value_;
     _r3.i = _r4.i + 1;
     XMLVM_CHECK_NPE(8)
@@ -3668,8 +3874,11 @@ JAVA_OBJECT java_lang_String_getBytes__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("String.java", 868)
     XMLVM_CHECK_NPE(6)
     _r2.o = java_lang_String_defaultCharset__(_r6.o);
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_lang_String*) _r6.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(6)
     _r5.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.count_;
     _r3.o = java_nio_CharBuffer_wrap___char_1ARRAY_int_int(_r3.o, _r4.i, _r5.i);
     XMLVM_CHECK_NPE(2)
@@ -3709,14 +3918,17 @@ void java_lang_String_getBytes___int_int_byte_1ARRAY_int(JAVA_OBJECT me, JAVA_IN
     XMLVM_SOURCE_POSITION("String.java", 896)
     if (_r5.i < 0) goto label39;
     if (_r5.i > _r6.i) goto label39;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.count_;
     if (_r6.i > _r3.i) goto label39;
     XMLVM_SOURCE_POSITION("String.java", 897)
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.offset_;
     _r6.i = _r6.i + _r3.i;
     XMLVM_TRY_BEGIN(w9287aaac45b1c14)
     // Begin try
     XMLVM_SOURCE_POSITION("String.java", 899)
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.offset_;
     _r1.i = _r3.i + _r5.i;
     _r2 = _r8;
@@ -3732,6 +3944,7 @@ void java_lang_String_getBytes___int_int_byte_1ARRAY_int(JAVA_OBJECT me, JAVA_IN
     if (_r1.i >= _r6.i) { XMLVM_MEMCPY(curThread_w9287aaac45b1c16->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9287aaac45b1c16, sizeof(XMLVM_JMP_BUF)); goto label45; };
     XMLVM_SOURCE_POSITION("String.java", 900)
     _r8.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_lang_String*) _r4.o)->fields.java_lang_String.value_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
@@ -3789,8 +4002,11 @@ JAVA_OBJECT java_lang_String_getBytes___java_lang_String(JAVA_OBJECT me, JAVA_OB
     XMLVM_SOURCE_POSITION("String.java", 920)
     XMLVM_CHECK_NPE(6)
     _r2.o = java_lang_String_getCharset___java_lang_String(_r6.o, _r7.o);
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_lang_String*) _r6.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(6)
     _r5.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.count_;
     _r3.o = java_nio_CharBuffer_wrap___char_1ARRAY_int_int(_r3.o, _r4.i, _r5.i);
     XMLVM_CHECK_NPE(2)
@@ -3823,8 +4039,11 @@ JAVA_OBJECT java_lang_String_getBytes___java_nio_charset_Charset(JAVA_OBJECT me,
     _r5.o = me;
     _r6.o = n1;
     XMLVM_SOURCE_POSITION("String.java", 946)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_lang_String*) _r5.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.count_;
     _r2.o = java_nio_CharBuffer_wrap___char_1ARRAY_int_int(_r2.o, _r3.i, _r4.i);
     XMLVM_CHECK_NPE(6)
@@ -3930,10 +4149,13 @@ void java_lang_String_getChars___int_int_char_1ARRAY_int(JAVA_OBJECT me, JAVA_IN
     XMLVM_SOURCE_POSITION("String.java", 993)
     if (_r4.i < 0) goto label19;
     if (_r4.i > _r5.i) goto label19;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_lang_String*) _r3.o)->fields.java_lang_String.count_;
     if (_r5.i > _r0.i) goto label19;
     XMLVM_SOURCE_POSITION("String.java", 994)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_lang_String*) _r3.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_String*) _r3.o)->fields.java_lang_String.offset_;
     _r1.i = _r1.i + _r4.i;
     _r2.i = _r5.i - _r4.i;
@@ -3961,9 +4183,11 @@ JAVA_INT java_lang_String_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("String.java", 1002)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.hashCode_;
     if (_r2.i != 0) goto label34;
     XMLVM_SOURCE_POSITION("String.java", 1003)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.count_;
     if (_r2.i != 0) goto label10;
     XMLVM_SOURCE_POSITION("String.java", 1004)
@@ -3976,13 +4200,17 @@ JAVA_INT java_lang_String_hashCode__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("String.java", 1006)
     _r0.i = 0;
     XMLVM_SOURCE_POSITION("String.java", 1007)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.offset_;
     label13:;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.count_;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.offset_;
     _r2.i = _r2.i + _r3.i;
     if (_r1.i >= _r2.i) goto label32;
     XMLVM_SOURCE_POSITION("String.java", 1008)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_lang_String*) _r4.o)->fields.java_lang_String.value_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -3994,8 +4222,10 @@ JAVA_INT java_lang_String_hashCode__(JAVA_OBJECT me)
     goto label13;
     label32:;
     XMLVM_SOURCE_POSITION("String.java", 1010)
+    XMLVM_CHECK_NPE(4)
     ((java_lang_String*) _r4.o)->fields.java_lang_String.hashCode_ = _r0.i;
     label34:;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.hashCode_;
     goto label9;
     //XMLVM_END_WRAPPER
@@ -4035,6 +4265,7 @@ JAVA_INT java_lang_String_indexOf___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_IN
     _r6.i = n2;
     _r3.i = 65535;
     XMLVM_SOURCE_POSITION("String.java", 1042)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.count_;
     if (_r6.i >= _r2.i) goto label68;
     XMLVM_SOURCE_POSITION("String.java", 1043)
@@ -4046,20 +4277,25 @@ JAVA_INT java_lang_String_indexOf___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_IN
     if (_r5.i < 0) goto label39;
     if (_r5.i > _r3.i) goto label39;
     XMLVM_SOURCE_POSITION("String.java", 1047)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.offset_;
     _r1.i = _r2.i + _r6.i;
     label18:;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.count_;
     _r2.i = _r2.i + _r3.i;
     if (_r1.i >= _r2.i) goto label68;
     XMLVM_SOURCE_POSITION("String.java", 1048)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_lang_String*) _r4.o)->fields.java_lang_String.value_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
     _r2.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     if (_r2.i != _r5.i) goto label36;
     XMLVM_SOURCE_POSITION("String.java", 1049)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.offset_;
     _r2.i = _r1.i - _r2.i;
     label35:;
@@ -4077,6 +4313,7 @@ JAVA_INT java_lang_String_indexOf___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_IN
     XMLVM_SOURCE_POSITION("String.java", 1053)
     _r1 = _r6;
     label47:;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.count_;
     if (_r1.i >= _r2.i) goto label68;
     XMLVM_SOURCE_POSITION("String.java", 1054)
@@ -4148,11 +4385,13 @@ JAVA_INT java_lang_String_indexOf___java_lang_String_int(JAVA_OBJECT me, JAVA_OB
     _r13.i = 0;
     label4:;
     XMLVM_SOURCE_POSITION("String.java", 1100)
+    XMLVM_CHECK_NPE(12)
     _r5.i = ((java_lang_String*) _r12.o)->fields.java_lang_String.count_;
     if (_r5.i <= 0) goto label64;
     XMLVM_SOURCE_POSITION("String.java", 1101)
     XMLVM_SOURCE_POSITION("String.java", 1102)
     _r8.i = _r5.i + _r13.i;
+    XMLVM_CHECK_NPE(11)
     _r9.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.count_;
     if (_r8.i <= _r9.i) goto label16;
     _r8 = _r10;
@@ -4163,8 +4402,10 @@ JAVA_INT java_lang_String_indexOf___java_lang_String_int(JAVA_OBJECT me, JAVA_OB
     return _r8.i;
     label16:;
     XMLVM_SOURCE_POSITION("String.java", 1105)
+    XMLVM_CHECK_NPE(12)
     _r7.o = ((java_lang_String*) _r12.o)->fields.java_lang_String.value_;
     XMLVM_SOURCE_POSITION("String.java", 1106)
+    XMLVM_CHECK_NPE(12)
     _r6.i = ((java_lang_String*) _r12.o)->fields.java_lang_String.offset_;
     XMLVM_SOURCE_POSITION("String.java", 1107)
     XMLVM_CHECK_NPE(7)
@@ -4179,6 +4420,7 @@ JAVA_INT java_lang_String_indexOf___java_lang_String_int(JAVA_OBJECT me, JAVA_OB
     if (_r2.i == _r10.i) goto label36;
     XMLVM_SOURCE_POSITION("String.java", 1111)
     _r8.i = _r5.i + _r2.i;
+    XMLVM_CHECK_NPE(11)
     _r9.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.count_;
     if (_r8.i <= _r9.i) goto label38;
     label36:;
@@ -4187,6 +4429,7 @@ JAVA_INT java_lang_String_indexOf___java_lang_String_int(JAVA_OBJECT me, JAVA_OB
     goto label15;
     label38:;
     XMLVM_SOURCE_POSITION("String.java", 1114)
+    XMLVM_CHECK_NPE(11)
     _r8.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.offset_;
     _r3.i = _r8.i + _r2.i;
     _r4 = _r6;
@@ -4194,6 +4437,7 @@ JAVA_INT java_lang_String_indexOf___java_lang_String_int(JAVA_OBJECT me, JAVA_OB
     XMLVM_SOURCE_POSITION("String.java", 1115)
     _r4.i = _r4.i + 1;
     if (_r4.i >= _r0.i) goto label57;
+    XMLVM_CHECK_NPE(11)
     _r8.o = ((java_lang_String*) _r11.o)->fields.java_lang_String.value_;
     _r3.i = _r3.i + 1;
     XMLVM_CHECK_NPE(8)
@@ -4215,11 +4459,13 @@ JAVA_INT java_lang_String_indexOf___java_lang_String_int(JAVA_OBJECT me, JAVA_OB
     XMLVM_SOURCE_POSITION("String.java", 1122)
     goto label24;
     label64:;
+    XMLVM_CHECK_NPE(11)
     _r8.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.count_;
     if (_r13.i >= _r8.i) goto label70;
     _r8 = _r13;
     goto label15;
     label70:;
+    XMLVM_CHECK_NPE(11)
     _r8.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.count_;
     goto label15;
     //XMLVM_END_WRAPPER
@@ -4248,6 +4494,7 @@ JAVA_INT java_lang_String_lastIndexOf___int(JAVA_OBJECT me, JAVA_INT n1)
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("String.java", 1151)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_String*) _r2.o)->fields.java_lang_String.count_;
     _r1.i = 1;
     _r0.i = _r0.i - _r1.i;
@@ -4277,9 +4524,11 @@ JAVA_INT java_lang_String_lastIndexOf___int_int(JAVA_OBJECT me, JAVA_INT n1, JAV
     XMLVM_SOURCE_POSITION("String.java", 1167)
     if (_r7.i < 0) goto label67;
     XMLVM_SOURCE_POSITION("String.java", 1168)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.count_;
     if (_r7.i < _r2.i) goto label14;
     XMLVM_SOURCE_POSITION("String.java", 1169)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.count_;
     _r3.i = 1;
     _r7.i = _r2.i - _r3.i;
@@ -4288,18 +4537,22 @@ JAVA_INT java_lang_String_lastIndexOf___int_int(JAVA_OBJECT me, JAVA_INT n1, JAV
     if (_r6.i < 0) goto label40;
     if (_r6.i > _r4.i) goto label40;
     XMLVM_SOURCE_POSITION("String.java", 1172)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.offset_;
     _r1.i = _r2.i + _r7.i;
     label22:;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.offset_;
     if (_r1.i < _r2.i) goto label67;
     XMLVM_SOURCE_POSITION("String.java", 1173)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_lang_String*) _r5.o)->fields.java_lang_String.value_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
     _r2.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     if (_r2.i != _r6.i) goto label37;
     XMLVM_SOURCE_POSITION("String.java", 1174)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.offset_;
     _r2.i = _r1.i - _r2.i;
     label36:;
@@ -4351,6 +4604,7 @@ JAVA_INT java_lang_String_lastIndexOf___java_lang_String(JAVA_OBJECT me, JAVA_OB
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("String.java", 1205)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_String*) _r1.o)->fields.java_lang_String.count_;
     XMLVM_CHECK_NPE(1)
     _r0.i = java_lang_String_lastIndexOf___java_lang_String_int(_r1.o, _r2.o, _r0.i);
@@ -4382,24 +4636,30 @@ JAVA_INT java_lang_String_lastIndexOf___java_lang_String_int(JAVA_OBJECT me, JAV
     _r13.i = n2;
     _r10.i = -1;
     XMLVM_SOURCE_POSITION("String.java", 1223)
+    XMLVM_CHECK_NPE(12)
     _r5.i = ((java_lang_String*) _r12.o)->fields.java_lang_String.count_;
     XMLVM_SOURCE_POSITION("String.java", 1224)
+    XMLVM_CHECK_NPE(11)
     _r8.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.count_;
     if (_r5.i > _r8.i) goto label72;
     if (_r13.i < 0) goto label72;
     XMLVM_SOURCE_POSITION("String.java", 1225)
     if (_r5.i <= 0) goto label63;
     XMLVM_SOURCE_POSITION("String.java", 1226)
+    XMLVM_CHECK_NPE(11)
     _r8.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.count_;
     _r8.i = _r8.i - _r5.i;
     if (_r13.i <= _r8.i) goto label20;
     XMLVM_SOURCE_POSITION("String.java", 1227)
+    XMLVM_CHECK_NPE(11)
     _r8.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.count_;
     _r13.i = _r8.i - _r5.i;
     label20:;
     XMLVM_SOURCE_POSITION("String.java", 1230)
+    XMLVM_CHECK_NPE(12)
     _r7.o = ((java_lang_String*) _r12.o)->fields.java_lang_String.value_;
     XMLVM_SOURCE_POSITION("String.java", 1231)
+    XMLVM_CHECK_NPE(12)
     _r6.i = ((java_lang_String*) _r12.o)->fields.java_lang_String.offset_;
     XMLVM_SOURCE_POSITION("String.java", 1232)
     XMLVM_CHECK_NPE(7)
@@ -4421,6 +4681,7 @@ JAVA_INT java_lang_String_lastIndexOf___java_lang_String_int(JAVA_OBJECT me, JAV
     return _r8.i;
     label36:;
     XMLVM_SOURCE_POSITION("String.java", 1239)
+    XMLVM_CHECK_NPE(11)
     _r8.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.offset_;
     _r3.i = _r8.i + _r2.i;
     _r4 = _r6;
@@ -4428,6 +4689,7 @@ JAVA_INT java_lang_String_lastIndexOf___java_lang_String_int(JAVA_OBJECT me, JAV
     XMLVM_SOURCE_POSITION("String.java", 1240)
     _r4.i = _r4.i + 1;
     if (_r4.i >= _r0.i) goto label55;
+    XMLVM_CHECK_NPE(11)
     _r8.o = ((java_lang_String*) _r11.o)->fields.java_lang_String.value_;
     _r3.i = _r3.i + 1;
     XMLVM_CHECK_NPE(8)
@@ -4451,11 +4713,13 @@ JAVA_INT java_lang_String_lastIndexOf___java_lang_String_int(JAVA_OBJECT me, JAV
     goto label28;
     label63:;
     XMLVM_SOURCE_POSITION("String.java", 1249)
+    XMLVM_CHECK_NPE(11)
     _r8.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.count_;
     if (_r13.i >= _r8.i) goto label69;
     _r8 = _r13;
     goto label35;
     label69:;
+    XMLVM_CHECK_NPE(11)
     _r8.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.count_;
     goto label35;
     label72:;
@@ -4472,6 +4736,7 @@ JAVA_INT java_lang_String_length__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("String.java", 1260)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_String*) _r1.o)->fields.java_lang_String.count_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -4503,6 +4768,7 @@ JAVA_BOOLEAN java_lang_String_regionMatches___int_java_lang_String_int_int(JAVA_
     _r7.i = 1;
     _r6.i = 0;
     XMLVM_SOURCE_POSITION("String.java", 1282)
+    XMLVM_CHECK_NPE(10)
     _r3.i = ((java_lang_String*) _r10.o)->fields.java_lang_String.count_;
     _r3.i = _r3.i - _r11.i;
     if (_r3.i < _r12.i) goto label9;
@@ -4517,6 +4783,7 @@ JAVA_BOOLEAN java_lang_String_regionMatches___int_java_lang_String_int_int(JAVA_
     label11:;
     XMLVM_SOURCE_POSITION("String.java", 1285)
     if (_r9.i < 0) goto label18;
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_lang_String*) _r8.o)->fields.java_lang_String.count_;
     _r3.i = _r3.i - _r9.i;
     if (_r3.i >= _r12.i) goto label20;
@@ -4532,8 +4799,10 @@ JAVA_BOOLEAN java_lang_String_regionMatches___int_java_lang_String_int_int(JAVA_
     goto label10;
     label24:;
     XMLVM_SOURCE_POSITION("String.java", 1291)
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_lang_String*) _r8.o)->fields.java_lang_String.offset_;
     _r1.i = _r3.i + _r9.i;
+    XMLVM_CHECK_NPE(10)
     _r3.i = ((java_lang_String*) _r10.o)->fields.java_lang_String.offset_;
     _r2.i = _r3.i + _r11.i;
     _r0.i = 0;
@@ -4541,11 +4810,13 @@ JAVA_BOOLEAN java_lang_String_regionMatches___int_java_lang_String_int_int(JAVA_
     XMLVM_SOURCE_POSITION("String.java", 1292)
     if (_r0.i >= _r12.i) goto label54;
     XMLVM_SOURCE_POSITION("String.java", 1293)
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_lang_String*) _r8.o)->fields.java_lang_String.value_;
     _r4.i = _r1.i + _r0.i;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     _r3.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
+    XMLVM_CHECK_NPE(10)
     _r4.o = ((java_lang_String*) _r10.o)->fields.java_lang_String.value_;
     _r5.i = _r2.i + _r0.i;
     XMLVM_CHECK_NPE(4)
@@ -4604,6 +4875,7 @@ JAVA_BOOLEAN java_lang_String_regionMatches___boolean_int_java_lang_String_int_i
     if (_r12.o == JAVA_NULL) goto label80;
     XMLVM_SOURCE_POSITION("String.java", 1327)
     if (_r11.i < 0) goto label17;
+    XMLVM_CHECK_NPE(9)
     _r6.i = ((java_lang_String*) _r9.o)->fields.java_lang_String.count_;
     _r6.i = _r6.i - _r11.i;
     if (_r14.i <= _r6.i) goto label19;
@@ -4614,6 +4886,7 @@ JAVA_BOOLEAN java_lang_String_regionMatches___boolean_int_java_lang_String_int_i
     label19:;
     XMLVM_SOURCE_POSITION("String.java", 1330)
     if (_r13.i < 0) goto label26;
+    XMLVM_CHECK_NPE(12)
     _r6.i = ((java_lang_String*) _r12.o)->fields.java_lang_String.count_;
     _r6.i = _r6.i - _r13.i;
     if (_r14.i <= _r6.i) goto label28;
@@ -4623,13 +4896,16 @@ JAVA_BOOLEAN java_lang_String_regionMatches___boolean_int_java_lang_String_int_i
     goto label7;
     label28:;
     XMLVM_SOURCE_POSITION("String.java", 1334)
+    XMLVM_CHECK_NPE(9)
     _r6.i = ((java_lang_String*) _r9.o)->fields.java_lang_String.offset_;
     _r11.i = _r11.i + _r6.i;
     XMLVM_SOURCE_POSITION("String.java", 1335)
+    XMLVM_CHECK_NPE(12)
     _r6.i = ((java_lang_String*) _r12.o)->fields.java_lang_String.offset_;
     _r13.i = _r13.i + _r6.i;
     _r2.i = _r11.i + _r14.i;
     XMLVM_SOURCE_POSITION("String.java", 1338)
+    XMLVM_CHECK_NPE(12)
     _r4.o = ((java_lang_String*) _r12.o)->fields.java_lang_String.value_;
     _r3 = _r13;
     _r5 = _r11;
@@ -4637,6 +4913,7 @@ JAVA_BOOLEAN java_lang_String_regionMatches___boolean_int_java_lang_String_int_i
     XMLVM_SOURCE_POSITION("String.java", 1339)
     if (_r5.i >= _r2.i) goto label76;
     XMLVM_SOURCE_POSITION("String.java", 1340)
+    XMLVM_CHECK_NPE(9)
     _r6.o = ((java_lang_String*) _r9.o)->fields.java_lang_String.value_;
     _r11.i = _r5.i + 1;
     XMLVM_CHECK_NPE(6)
@@ -4711,12 +4988,16 @@ JAVA_OBJECT java_lang_String_replace___char_char(JAVA_OBJECT me, JAVA_CHAR n1, J
     return _r3.o;
     label10:;
     XMLVM_SOURCE_POSITION("String.java", 1368)
+    XMLVM_CHECK_NPE(8)
     _r3.i = ((java_lang_String*) _r8.o)->fields.java_lang_String.count_;
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r3.i);
     XMLVM_SOURCE_POSITION("String.java", 1369)
+    XMLVM_CHECK_NPE(8)
     _r3.o = ((java_lang_String*) _r8.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(8)
     _r4.i = ((java_lang_String*) _r8.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(8)
     _r5.i = ((java_lang_String*) _r8.o)->fields.java_lang_String.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r3.o, _r4.i, _r0.o, _r6.i, _r5.i);
     label23:;
@@ -4730,6 +5011,7 @@ JAVA_OBJECT java_lang_String_replace___char_char(JAVA_OBJECT me, JAVA_CHAR n1, J
     _r1.i = java_lang_String_indexOf___int_int(_r8.o, _r9.i, _r2.i);
     if (_r1.i != _r7.i) goto label23;
     _r3.o = __NEW_java_lang_String();
+    XMLVM_CHECK_NPE(8)
     _r4.i = ((java_lang_String*) _r8.o)->fields.java_lang_String.count_;
     XMLVM_CHECK_NPE(3)
     java_lang_String___INIT____int_int_char_1ARRAY(_r3.o, _r6.i, _r4.i, _r0.o);
@@ -4809,10 +5091,12 @@ JAVA_OBJECT java_lang_String_replace___java_lang_CharSequence_java_lang_CharSequ
     if (_r7.i == 0) goto label92;
     XMLVM_SOURCE_POSITION("String.java", 1407)
     _r0.o = __NEW_java_lang_StringBuilder();
+    XMLVM_CHECK_NPE(11)
     _r7.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.count_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(3)
     _r8.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r3.o)->tib->vtable[8])(_r3.o);
+    XMLVM_CHECK_NPE(11)
     _r9.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.count_;
     _r9.i = _r9.i + 1;
     _r8.i = _r8.i * _r9.i;
@@ -4825,10 +5109,13 @@ JAVA_OBJECT java_lang_String_replace___java_lang_CharSequence_java_lang_CharSequ
     XMLVM_SOURCE_POSITION("String.java", 1409)
     _r1.i = 0;
     label67:;
+    XMLVM_CHECK_NPE(11)
     _r7.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.count_;
     if (_r1.i >= _r7.i) goto label87;
     XMLVM_SOURCE_POSITION("String.java", 1410)
+    XMLVM_CHECK_NPE(11)
     _r7.o = ((java_lang_String*) _r11.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(11)
     _r8.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.offset_;
     _r8.i = _r8.i + _r1.i;
     XMLVM_CHECK_NPE(7)
@@ -4851,6 +5138,7 @@ JAVA_OBJECT java_lang_String_replace___java_lang_CharSequence_java_lang_CharSequ
     label92:;
     XMLVM_SOURCE_POSITION("String.java", 1416)
     _r0.o = __NEW_java_lang_StringBuilder();
+    XMLVM_CHECK_NPE(11)
     _r7.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.count_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(3)
@@ -4865,7 +5153,9 @@ JAVA_OBJECT java_lang_String_replace___java_lang_CharSequence_java_lang_CharSequ
     label109:;
     XMLVM_SOURCE_POSITION("String.java", 1418)
     XMLVM_SOURCE_POSITION("String.java", 1420)
+    XMLVM_CHECK_NPE(11)
     _r7.o = ((java_lang_String*) _r11.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(11)
     _r8.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.offset_;
     _r8.i = _r8.i + _r4.i;
     _r9.i = _r2.i - _r4.i;
@@ -4881,9 +5171,12 @@ JAVA_OBJECT java_lang_String_replace___java_lang_CharSequence_java_lang_CharSequ
     _r2.i = java_lang_String_indexOf___java_lang_String_int(_r11.o, _r6.o, _r4.i);
     if (_r2.i != _r10.i) goto label109;
     XMLVM_SOURCE_POSITION("String.java", 1425)
+    XMLVM_CHECK_NPE(11)
     _r7.o = ((java_lang_String*) _r11.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(11)
     _r8.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.offset_;
     _r8.i = _r8.i + _r4.i;
+    XMLVM_CHECK_NPE(11)
     _r9.i = ((java_lang_String*) _r11.o)->fields.java_lang_String.count_;
     _r9.i = _r9.i - _r4.i;
     XMLVM_CHECK_NPE(0)
@@ -4927,6 +5220,7 @@ JAVA_BOOLEAN java_lang_String_startsWith___java_lang_String_int(JAVA_OBJECT me, 
     _r4.i = n2;
     XMLVM_SOURCE_POSITION("String.java", 1459)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_String*) _r3.o)->fields.java_lang_String.count_;
     XMLVM_CHECK_NPE(2)
     _r0.i = java_lang_String_regionMatches___int_java_lang_String_int_int(_r2.o, _r4.i, _r3.o, _r0.i, _r1.i);
@@ -4958,13 +5252,17 @@ JAVA_OBJECT java_lang_String_substring___int(JAVA_OBJECT me, JAVA_INT n1)
     label4:;
     XMLVM_SOURCE_POSITION("String.java", 1476)
     if (_r5.i < 0) goto label24;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.count_;
     if (_r5.i > _r0.i) goto label24;
     _r0.o = __NEW_java_lang_String();
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.offset_;
     _r1.i = _r1.i + _r5.i;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.count_;
     _r2.i = _r2.i - _r5.i;
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_lang_String*) _r4.o)->fields.java_lang_String.value_;
     XMLVM_CHECK_NPE(0)
     java_lang_String___INIT____int_int_char_1ARRAY(_r0.o, _r1.i, _r2.i, _r3.o);
@@ -4994,6 +5292,7 @@ JAVA_OBJECT java_lang_String_substring___int_int(JAVA_OBJECT me, JAVA_INT n1, JA
     _r6.i = n2;
     XMLVM_SOURCE_POSITION("String.java", 1495)
     if (_r5.i != 0) goto label8;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.count_;
     if (_r6.i != _r0.i) goto label8;
     _r0 = _r4;
@@ -5021,6 +5320,7 @@ JAVA_OBJECT java_lang_String_substring___int_int(JAVA_OBJECT me, JAVA_INT n1, JA
     XMLVM_THROW_CUSTOM(_r0.o)
     label26:;
     XMLVM_SOURCE_POSITION("String.java", 1502)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.count_;
     if (_r6.i <= _r0.i) goto label36;
     XMLVM_SOURCE_POSITION("String.java", 1503)
@@ -5030,9 +5330,11 @@ JAVA_OBJECT java_lang_String_substring___int_int(JAVA_OBJECT me, JAVA_INT n1, JA
     XMLVM_THROW_CUSTOM(_r0.o)
     label36:;
     _r0.o = __NEW_java_lang_String();
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.offset_;
     _r1.i = _r1.i + _r5.i;
     _r2.i = _r6.i - _r5.i;
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_lang_String*) _r4.o)->fields.java_lang_String.value_;
     XMLVM_CHECK_NPE(0)
     java_lang_String___INIT____int_int_char_1ARRAY(_r0.o, _r1.i, _r2.i, _r3.o);
@@ -5052,13 +5354,17 @@ JAVA_OBJECT java_lang_String_toCharArray__(JAVA_OBJECT me)
     XMLVMElem _r5;
     _r5.o = me;
     XMLVM_SOURCE_POSITION("String.java", 1515)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.count_;
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r1.i);
     XMLVM_SOURCE_POSITION("String.java", 1516)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_lang_String*) _r5.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.offset_;
     _r3.i = 0;
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r2.i, _r0.o, _r3.i, _r4.i);
     XMLVM_SOURCE_POSITION("String.java", 1517)
@@ -5101,13 +5407,17 @@ JAVA_OBJECT java_lang_String_toLowerCase___java_util_Locale(JAVA_OBJECT me, JAVA
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("String.java", 1543)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.offset_;
     label7:;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.count_;
     _r3.i = _r3.i + _r4.i;
     if (_r1.i >= _r3.i) goto label29;
     XMLVM_SOURCE_POSITION("String.java", 1544)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_lang_String*) _r5.o)->fields.java_lang_String.value_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
@@ -5190,13 +5500,17 @@ JAVA_OBJECT java_lang_String_toUpperCase___java_util_Locale(JAVA_OBJECT me, JAVA
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("String.java", 1590)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.offset_;
     label7:;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.count_;
     _r3.i = _r3.i + _r4.i;
     if (_r1.i >= _r3.i) goto label29;
     XMLVM_SOURCE_POSITION("String.java", 1591)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_lang_String*) _r5.o)->fields.java_lang_String.value_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
@@ -5247,8 +5561,11 @@ JAVA_OBJECT java_lang_String_trim__(JAVA_OBJECT me)
     _r6.o = me;
     _r5.i = 32;
     XMLVM_SOURCE_POSITION("String.java", 1612)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.count_;
     _r3.i = _r3.i + _r4.i;
     _r4.i = 1;
@@ -5258,6 +5575,7 @@ JAVA_OBJECT java_lang_String_trim__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("String.java", 1613)
     XMLVM_SOURCE_POSITION("String.java", 1614)
     if (_r2.i > _r0.i) goto label24;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_lang_String*) _r6.o)->fields.java_lang_String.value_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r2.i);
@@ -5269,6 +5587,7 @@ JAVA_OBJECT java_lang_String_trim__(JAVA_OBJECT me)
     label24:;
     XMLVM_SOURCE_POSITION("String.java", 1617)
     if (_r0.i < _r2.i) goto label35;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_lang_String*) _r6.o)->fields.java_lang_String.value_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r0.i);
@@ -5279,6 +5598,7 @@ JAVA_OBJECT java_lang_String_trim__(JAVA_OBJECT me)
     goto label24;
     label35:;
     XMLVM_SOURCE_POSITION("String.java", 1620)
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_lang_String*) _r6.o)->fields.java_lang_String.offset_;
     if (_r2.i != _r3.i) goto label43;
     if (_r0.i != _r1.i) goto label43;
@@ -5292,6 +5612,7 @@ JAVA_OBJECT java_lang_String_trim__(JAVA_OBJECT me)
     _r3.o = __NEW_java_lang_String();
     _r4.i = _r0.i - _r2.i;
     _r4.i = _r4.i + 1;
+    XMLVM_CHECK_NPE(6)
     _r5.o = ((java_lang_String*) _r6.o)->fields.java_lang_String.value_;
     XMLVM_CHECK_NPE(3)
     java_lang_String___INIT____int_int_char_1ARRAY(_r3.o, _r2.i, _r4.i, _r5.o);
@@ -5364,6 +5685,7 @@ JAVA_OBJECT java_lang_String_valueOf___char(JAVA_CHAR n1)
     java_lang_String___INIT____int_int_char_1ARRAY(_r0.o, _r4.i, _r2.i, _r1.o);
     label13:;
     XMLVM_SOURCE_POSITION("String.java", 1677)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_String*) _r0.o)->fields.java_lang_String.hashCode_ = _r4.i;
     XMLVM_SOURCE_POSITION("String.java", 1678)
     XMLVM_EXIT_METHOD()
@@ -5511,6 +5833,7 @@ JAVA_BOOLEAN java_lang_String_contentEquals___java_lang_StringBuffer(JAVA_OBJECT
     XMLVM_CHECK_NPE(6)
     _r0.i = java_lang_AbstractStringBuilder_length__(_r6.o);
     XMLVM_SOURCE_POSITION("String.java", 1767)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.count_;
     if (_r1.i == _r0.i) { XMLVM_MEMCPY(curThread_w9287aaac87b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9287aaac87b1b6, sizeof(XMLVM_JMP_BUF)); goto label13; };
     XMLVM_SOURCE_POSITION("String.java", 1768)
@@ -5589,6 +5912,7 @@ JAVA_BOOLEAN java_lang_String_contentEquals___java_lang_CharSequence(JAVA_OBJECT
     XMLVM_CHECK_NPE(4)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r4.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_CharSequence_length__])(_r4.o);
     XMLVM_SOURCE_POSITION("String.java", 1787)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_String*) _r3.o)->fields.java_lang_String.count_;
     if (_r0.i == _r1.i) goto label11;
     _r1 = _r2;
@@ -5600,6 +5924,7 @@ JAVA_BOOLEAN java_lang_String_contentEquals___java_lang_CharSequence(JAVA_OBJECT
     label11:;
     XMLVM_SOURCE_POSITION("String.java", 1791)
     if (_r0.i != 0) goto label19;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_String*) _r3.o)->fields.java_lang_String.count_;
     if (_r1.i != 0) goto label19;
     XMLVM_SOURCE_POSITION("String.java", 1792)
@@ -5746,6 +6071,7 @@ JAVA_INT java_lang_String_codePointAt___int(JAVA_OBJECT me, JAVA_INT n1)
     _r5.i = n1;
     XMLVM_SOURCE_POSITION("String.java", 1930)
     if (_r5.i < 0) goto label6;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.count_;
     if (_r5.i < _r1.i) goto label12;
     label6:;
@@ -5756,11 +6082,15 @@ JAVA_INT java_lang_String_codePointAt___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r1.o)
     label12:;
     XMLVM_SOURCE_POSITION("String.java", 1933)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.offset_;
     _r0.i = _r5.i + _r1.i;
     XMLVM_SOURCE_POSITION("String.java", 1934)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_lang_String*) _r4.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_lang_String*) _r4.o)->fields.java_lang_String.count_;
     _r2.i = _r2.i + _r3.i;
     _r1.i = java_lang_Character_codePointAt___char_1ARRAY_int_int(_r1.o, _r0.i, _r2.i);
@@ -5782,6 +6112,7 @@ JAVA_INT java_lang_String_codePointBefore___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("String.java", 1951)
     _r1.i = 1;
     if (_r3.i < _r1.i) goto label7;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_lang_String*) _r2.o)->fields.java_lang_String.count_;
     if (_r3.i <= _r1.i) goto label13;
     label7:;
@@ -5792,9 +6123,11 @@ JAVA_INT java_lang_String_codePointBefore___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r1.o)
     label13:;
     XMLVM_SOURCE_POSITION("String.java", 1954)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_lang_String*) _r2.o)->fields.java_lang_String.offset_;
     _r0.i = _r3.i + _r1.i;
     XMLVM_SOURCE_POSITION("String.java", 1955)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_lang_String*) _r2.o)->fields.java_lang_String.value_;
     _r1.i = java_lang_Character_codePointBefore___char_1ARRAY_int(_r1.o, _r0.i);
     XMLVM_EXIT_METHOD()
@@ -5817,6 +6150,7 @@ JAVA_INT java_lang_String_codePointCount___int_int(JAVA_OBJECT me, JAVA_INT n1, 
     _r5.i = n2;
     XMLVM_SOURCE_POSITION("String.java", 1975)
     if (_r4.i < 0) goto label8;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_String*) _r3.o)->fields.java_lang_String.count_;
     if (_r5.i > _r1.i) goto label8;
     if (_r4.i <= _r5.i) goto label14;
@@ -5828,9 +6162,11 @@ JAVA_INT java_lang_String_codePointCount___int_int(JAVA_OBJECT me, JAVA_INT n1, 
     XMLVM_THROW_CUSTOM(_r1.o)
     label14:;
     XMLVM_SOURCE_POSITION("String.java", 1978)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_String*) _r3.o)->fields.java_lang_String.offset_;
     _r0.i = _r4.i + _r1.i;
     XMLVM_SOURCE_POSITION("String.java", 1979)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_lang_String*) _r3.o)->fields.java_lang_String.value_;
     _r2.i = _r5.i - _r4.i;
     _r1.i = java_lang_Character_codePointCount___char_1ARRAY_int_int(_r1.o, _r0.i, _r2.i);
@@ -5881,14 +6217,19 @@ JAVA_INT java_lang_String_offsetByCodePoints___int_int(JAVA_OBJECT me, JAVA_INT 
     _r6.i = n1;
     _r7.i = n2;
     XMLVM_SOURCE_POSITION("String.java", 2012)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.offset_;
     _r1.i = _r6.i + _r2.i;
     XMLVM_SOURCE_POSITION("String.java", 2013)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_lang_String*) _r5.o)->fields.java_lang_String.value_;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.offset_;
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.count_;
     _r0.i = java_lang_Character_offsetByCodePoints___char_1ARRAY_int_int_int_int(_r2.o, _r3.i, _r4.i, _r1.i, _r7.i);
     XMLVM_SOURCE_POSITION("String.java", 2015)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_lang_String*) _r5.o)->fields.java_lang_String.offset_;
     _r2.i = _r0.i - _r2.i;
     XMLVM_EXIT_METHOD()
@@ -5994,16 +6335,22 @@ JAVA_INT java_lang_String_indexOf___java_lang_String_java_lang_String_int_int_ch
     _r12.i = n4;
     _r13.i = n5;
     XMLVM_SOURCE_POSITION("String.java", 2085)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((java_lang_String*) _r9.o)->fields.java_lang_String.value_;
     XMLVM_SOURCE_POSITION("String.java", 2086)
+    XMLVM_CHECK_NPE(9)
     _r1.i = ((java_lang_String*) _r9.o)->fields.java_lang_String.offset_;
     XMLVM_SOURCE_POSITION("String.java", 2087)
+    XMLVM_CHECK_NPE(9)
     _r9.i = ((java_lang_String*) _r9.o)->fields.java_lang_String.count_;
     XMLVM_SOURCE_POSITION("String.java", 2088)
+    XMLVM_CHECK_NPE(10)
     _r3.o = ((java_lang_String*) _r10.o)->fields.java_lang_String.value_;
     XMLVM_SOURCE_POSITION("String.java", 2089)
+    XMLVM_CHECK_NPE(10)
     _r5.i = ((java_lang_String*) _r10.o)->fields.java_lang_String.offset_;
     XMLVM_SOURCE_POSITION("String.java", 2090)
+    XMLVM_CHECK_NPE(10)
     _r10.i = ((java_lang_String*) _r10.o)->fields.java_lang_String.count_;
     _r2.i = 1;
     _r4.i = _r10.i - _r2.i;
@@ -6093,6 +6440,7 @@ JAVA_OBJECT java_lang_String_getValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("String.java", 2121)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_String*) _r1.o)->fields.java_lang_String.value_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

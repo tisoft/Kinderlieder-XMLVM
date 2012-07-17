@@ -220,11 +220,13 @@ void java_util_regex_Matcher_1___INIT____java_util_regex_Matcher_int(JAVA_OBJECT
     _r1.o = n1;
     _r2.i = n2;
     XMLVM_SOURCE_POSITION("Matcher.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_Matcher_1*) _r0.o)->fields.java_util_regex_Matcher_1.this_0_ = _r1.o;
     XMLVM_SOURCE_POSITION("Matcher.java", 154)
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Matcher.java", 155)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_Matcher_1*) _r0.o)->fields.java_util_regex_Matcher_1.grN_ = _r2.i;
     XMLVM_EXIT_METHOD()
     return;
@@ -240,7 +242,9 @@ JAVA_OBJECT java_util_regex_Matcher_1_toString__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Matcher.java", 158)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_Matcher_1*) _r2.o)->fields.java_util_regex_Matcher_1.this_0_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_regex_Matcher_1*) _r2.o)->fields.java_util_regex_Matcher_1.grN_;
     //java_util_regex_Matcher_group___int[10]
     XMLVM_CHECK_NPE(0)

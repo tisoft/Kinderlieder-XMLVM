@@ -382,8 +382,10 @@ void java_util_Collections_CheckedListIterator___INIT____java_util_ListIterator_
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Collections.java", 3080)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Collections_CheckedListIterator*) _r0.o)->fields.java_util_Collections_CheckedListIterator.i_ = _r1.o;
     XMLVM_SOURCE_POSITION("Collections.java", 3081)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Collections_CheckedListIterator*) _r0.o)->fields.java_util_Collections_CheckedListIterator.type_ = _r2.o;
     XMLVM_SOURCE_POSITION("Collections.java", 3082)
     XMLVM_EXIT_METHOD()
@@ -399,6 +401,7 @@ JAVA_BOOLEAN java_util_Collections_CheckedListIterator_hasNext__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 3088)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CheckedListIterator*) _r1.o)->fields.java_util_Collections_CheckedListIterator.i_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_hasNext__])(_r0.o);
@@ -415,6 +418,7 @@ JAVA_OBJECT java_util_Collections_CheckedListIterator_next__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 3095)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CheckedListIterator*) _r1.o)->fields.java_util_Collections_CheckedListIterator.i_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_next__])(_r0.o);
@@ -431,6 +435,7 @@ void java_util_Collections_CheckedListIterator_remove__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 3102)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CheckedListIterator*) _r1.o)->fields.java_util_Collections_CheckedListIterator.i_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_remove__])(_r0.o);
@@ -448,6 +453,7 @@ JAVA_BOOLEAN java_util_Collections_CheckedListIterator_hasPrevious__(JAVA_OBJECT
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 3109)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CheckedListIterator*) _r1.o)->fields.java_util_Collections_CheckedListIterator.i_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_hasPrevious__])(_r0.o);
@@ -464,6 +470,7 @@ JAVA_OBJECT java_util_Collections_CheckedListIterator_previous__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 3116)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CheckedListIterator*) _r1.o)->fields.java_util_Collections_CheckedListIterator.i_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_previous__])(_r0.o);
@@ -480,6 +487,7 @@ JAVA_INT java_util_Collections_CheckedListIterator_nextIndex__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 3123)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CheckedListIterator*) _r1.o)->fields.java_util_Collections_CheckedListIterator.i_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_nextIndex__])(_r0.o);
@@ -496,6 +504,7 @@ JAVA_INT java_util_Collections_CheckedListIterator_previousIndex__(JAVA_OBJECT m
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 3130)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_CheckedListIterator*) _r1.o)->fields.java_util_Collections_CheckedListIterator.i_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_ListIterator_previousIndex__])(_r0.o);
@@ -515,7 +524,9 @@ void java_util_Collections_CheckedListIterator_set___java_lang_Object(JAVA_OBJEC
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 3137)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_CheckedListIterator*) _r2.o)->fields.java_util_Collections_CheckedListIterator.i_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_CheckedListIterator*) _r2.o)->fields.java_util_Collections_CheckedListIterator.type_;
     _r1.o = java_util_Collections_checkType___java_lang_Object_java_lang_Class(_r3.o, _r1.o);
     XMLVM_CHECK_NPE(0)
@@ -537,7 +548,9 @@ void java_util_Collections_CheckedListIterator_add___java_lang_Object(JAVA_OBJEC
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 3144)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Collections_CheckedListIterator*) _r2.o)->fields.java_util_Collections_CheckedListIterator.i_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_CheckedListIterator*) _r2.o)->fields.java_util_Collections_CheckedListIterator.type_;
     _r1.o = java_util_Collections_checkType___java_lang_Object_java_lang_Class(_r3.o, _r1.o);
     XMLVM_CHECK_NPE(0)

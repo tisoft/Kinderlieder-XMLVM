@@ -878,6 +878,7 @@ JAVA_BOOLEAN gnu_xml_dom_html2_DomHTMLOptionElement_getSelected__(JAVA_OBJECT me
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLOptionElement.java", 108)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_html2_DomHTMLOptionElement*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLOptionElement.selected_;
     if (_r0.o != JAVA_NULL) goto label14;
     XMLVM_SOURCE_POSITION("DomHTMLOptionElement.java", 110)
@@ -885,9 +886,11 @@ JAVA_BOOLEAN gnu_xml_dom_html2_DomHTMLOptionElement_getSelected__(JAVA_OBJECT me
     XMLVM_CHECK_NPE(1)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) ((gnu_xml_dom_html2_DomHTMLOptionElement*) _r1.o)->tib->vtable[81])(_r1.o);
     _r0.o = java_lang_Boolean_valueOf___boolean(_r0.i);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_html2_DomHTMLOptionElement*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLOptionElement.selected_ = _r0.o;
     label14:;
     XMLVM_SOURCE_POSITION("DomHTMLOptionElement.java", 112)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_html2_DomHTMLOptionElement*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLOptionElement.selected_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_lang_Boolean_booleanValue__(_r0.o);
@@ -907,6 +910,7 @@ void gnu_xml_dom_html2_DomHTMLOptionElement_setSelected___boolean(JAVA_OBJECT me
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DomHTMLOptionElement.java", 117)
     _r0.o = java_lang_Boolean_valueOf___boolean(_r2.i);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_html2_DomHTMLOptionElement*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLOptionElement.selected_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomHTMLOptionElement.java", 118)
     XMLVM_EXIT_METHOD()

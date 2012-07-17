@@ -779,44 +779,49 @@ void java_text_SimpleDateFormat_readObject___java_io_ObjectInputStream(JAVA_OBJE
     XMLVM_CHECK_NPE(4)
     java_io_ObjectInputStream_defaultReadObject__(_r4.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 267)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_text_SimpleDateFormat*) _r3.o)->fields.java_text_SimpleDateFormat.serialVersionOnStream_;
     if (_r1.i >= _r2.i) goto label26;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 269)
     XMLVM_CHECK_NPE(3)
     java_text_SimpleDateFormat_computeCenturyStart__(_r3.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 270)
+    XMLVM_CHECK_NPE(3)
     ((java_text_SimpleDateFormat*) _r3.o)->fields.java_text_SimpleDateFormat.serialVersionOnStream_ = _r2.i;
     label13:;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 277)
     _r1.o = __NEW_java_util_ArrayList();
     XMLVM_CHECK_NPE(1)
     java_util_ArrayList___INIT___(_r1.o);
+    XMLVM_CHECK_NPE(3)
     ((java_text_SimpleDateFormat*) _r3.o)->fields.java_text_SimpleDateFormat.tokens_ = _r1.o;
-    XMLVM_TRY_BEGIN(w42011aaab9b1c18)
+    XMLVM_TRY_BEGIN(w42016aaab9b1c18)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 280)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_text_SimpleDateFormat*) _r3.o)->fields.java_text_SimpleDateFormat.pattern_;
     XMLVM_CHECK_NPE(3)
     java_text_SimpleDateFormat_compileFormat___java_lang_String(_r3.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaab9b1c18)
-        XMLVM_CATCH_SPECIFIC(w42011aaab9b1c18,java_lang_IllegalArgumentException,32)
-    XMLVM_CATCH_END(w42011aaab9b1c18)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaab9b1c18)
+    XMLVM_CATCH_BEGIN(w42016aaab9b1c18)
+        XMLVM_CATCH_SPECIFIC(w42016aaab9b1c18,java_lang_IllegalArgumentException,32)
+    XMLVM_CATCH_END(w42016aaab9b1c18)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaab9b1c18)
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 286)
     XMLVM_EXIT_METHOD()
     return;
     label26:;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 274)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_text_SimpleDateFormat*) _r3.o)->fields.java_text_SimpleDateFormat.defaultCenturyStart_;
     XMLVM_CHECK_NPE(3)
     java_text_SimpleDateFormat_set2DigitYearStart___java_util_Date(_r3.o, _r1.o);
     goto label13;
     label32:;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 282)
-    java_lang_Thread* curThread_w42011aaab9b1c28 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w42011aaab9b1c28->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w42016aaab9b1c28 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w42016aaab9b1c28->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r1;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 284)
     _r1.o = __NEW_java_io_InvalidObjectException();
@@ -921,6 +926,7 @@ void java_text_SimpleDateFormat_compileFormat___java_lang_String(JAVA_OBJECT me,
     if (_r5.i != _r7.i) goto label104;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 328)
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 329)
+    XMLVM_CHECK_NPE(11)
     _r7.o = ((java_text_SimpleDateFormat*) _r11.o)->fields.java_text_SimpleDateFormat.tokens_;
     // "'"
     _r8.o = xmlvm_create_java_string_from_pool(388);
@@ -983,6 +989,7 @@ void java_text_SimpleDateFormat_compileFormat___java_lang_String(JAVA_OBJECT me,
     if (_r7.i == _r9.i) goto label177;
     label167:;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 352)
+    XMLVM_CHECK_NPE(11)
     _r7.o = ((java_text_SimpleDateFormat*) _r11.o)->fields.java_text_SimpleDateFormat.tokens_;
     //gnu_java_lang_CPStringBuilder_toString__[5]
     XMLVM_CHECK_NPE(0)
@@ -1006,6 +1013,7 @@ void java_text_SimpleDateFormat_compileFormat___java_lang_String(JAVA_OBJECT me,
     goto label111;
     label189:;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 359)
+    XMLVM_CHECK_NPE(11)
     _r7.o = ((java_text_SimpleDateFormat*) _r11.o)->fields.java_text_SimpleDateFormat.tokens_;
     _r8.o = java_lang_Character_valueOf___char(_r6.i);
     //java_util_ArrayList_add___java_lang_Object[7]
@@ -1015,11 +1023,14 @@ void java_text_SimpleDateFormat_compileFormat___java_lang_String(JAVA_OBJECT me,
     label199:;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 365)
     if (_r1.o == JAVA_NULL) goto label212;
+    XMLVM_CHECK_NPE(1)
     _r7.i = ((java_text_SimpleDateFormat_CompiledField*) _r1.o)->fields.java_text_SimpleDateFormat_CompiledField.field_;
     if (_r2.i != _r7.i) goto label212;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 366)
+    XMLVM_CHECK_NPE(1)
     _r7.i = ((java_text_SimpleDateFormat_CompiledField*) _r1.o)->fields.java_text_SimpleDateFormat_CompiledField.size_;
     _r7.i = _r7.i + 1;
+    XMLVM_CHECK_NPE(1)
     ((java_text_SimpleDateFormat_CompiledField*) _r1.o)->fields.java_text_SimpleDateFormat_CompiledField.size_ = _r7.i;
     goto label101;
     label212:;
@@ -1029,6 +1040,7 @@ void java_text_SimpleDateFormat_compileFormat___java_lang_String(JAVA_OBJECT me,
     XMLVM_CHECK_NPE(1)
     java_text_SimpleDateFormat_CompiledField___INIT____java_text_SimpleDateFormat_int_int_char(_r1.o, _r11.o, _r2.i, _r7.i, _r6.i);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 370)
+    XMLVM_CHECK_NPE(11)
     _r7.o = ((java_text_SimpleDateFormat*) _r11.o)->fields.java_text_SimpleDateFormat.tokens_;
     //java_util_ArrayList_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(7)
@@ -1064,6 +1076,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 387)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_text_SimpleDateFormat*) _r2.o)->fields.java_text_SimpleDateFormat.tokens_;
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_Object(_r0.o, _r1.o);
@@ -1073,6 +1086,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 389)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_text_SimpleDateFormat*) _r2.o)->fields.java_text_SimpleDateFormat.formatData_;
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_Object(_r0.o, _r1.o);
@@ -1082,6 +1096,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 391)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_text_SimpleDateFormat*) _r2.o)->fields.java_text_SimpleDateFormat.defaultCenturyStart_;
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_Object(_r0.o, _r1.o);
@@ -1091,6 +1106,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 393)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_text_SimpleDateFormat*) _r2.o)->fields.java_text_SimpleDateFormat.defaultCentury_;
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___int(_r0.o, _r1.i);
@@ -1100,6 +1116,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 395)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_text_SimpleDateFormat*) _r2.o)->fields.java_text_SimpleDateFormat.pattern_;
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
@@ -1109,6 +1126,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 397)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_text_SimpleDateFormat*) _r2.o)->fields.java_text_SimpleDateFormat.serialVersionOnStream_;
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___int(_r0.o, _r1.i);
@@ -1155,6 +1173,7 @@ void java_text_SimpleDateFormat___INIT___(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(6)
     java_text_DateFormat___INIT___(_r6.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 231)
+    XMLVM_CHECK_NPE(6)
     ((java_text_SimpleDateFormat*) _r6.o)->fields.java_text_SimpleDateFormat.serialVersionOnStream_ = _r4.i;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 416)
     _r0.o = java_util_Locale_getDefault__();
@@ -1162,6 +1181,7 @@ void java_text_SimpleDateFormat___INIT___(JAVA_OBJECT me)
     _r1.o = __NEW_java_util_GregorianCalendar();
     XMLVM_CHECK_NPE(1)
     java_util_GregorianCalendar___INIT____java_util_Locale(_r1.o, _r0.o);
+    XMLVM_CHECK_NPE(6)
     ((java_text_DateFormat*) _r6.o)->fields.java_text_DateFormat.calendar_ = _r1.o;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 418)
     XMLVM_CHECK_NPE(6)
@@ -1170,17 +1190,21 @@ void java_text_SimpleDateFormat___INIT___(JAVA_OBJECT me)
     _r1.o = __NEW_java_util_ArrayList();
     XMLVM_CHECK_NPE(1)
     java_util_ArrayList___INIT___(_r1.o);
+    XMLVM_CHECK_NPE(6)
     ((java_text_SimpleDateFormat*) _r6.o)->fields.java_text_SimpleDateFormat.tokens_ = _r1.o;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 420)
     _r1.o = __NEW_java_text_DateFormatSymbols();
     XMLVM_CHECK_NPE(1)
     java_text_DateFormatSymbols___INIT____java_util_Locale(_r1.o, _r0.o);
+    XMLVM_CHECK_NPE(6)
     ((java_text_SimpleDateFormat*) _r6.o)->fields.java_text_SimpleDateFormat.formatData_ = _r1.o;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 421)
     _r1.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT___(_r1.o);
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_text_SimpleDateFormat*) _r6.o)->fields.java_text_SimpleDateFormat.formatData_;
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_text_DateFormatSymbols*) _r2.o)->fields.java_text_DateFormatSymbols.dateFormats_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r5.i);
@@ -1191,7 +1215,9 @@ void java_text_SimpleDateFormat___INIT___(JAVA_OBJECT me)
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r1.o)->tib->vtable[21])(_r1.o, _r2.i);
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_text_SimpleDateFormat*) _r6.o)->fields.java_text_SimpleDateFormat.formatData_;
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_text_DateFormatSymbols*) _r2.o)->fields.java_text_DateFormatSymbols.timeFormats_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r5.i);
@@ -1201,8 +1227,10 @@ void java_text_SimpleDateFormat___INIT___(JAVA_OBJECT me)
     //java_lang_StringBuilder_toString__[5]
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r1.o)->tib->vtable[5])(_r1.o);
+    XMLVM_CHECK_NPE(6)
     ((java_text_SimpleDateFormat*) _r6.o)->fields.java_text_SimpleDateFormat.pattern_ = _r1.o;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 423)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_text_SimpleDateFormat*) _r6.o)->fields.java_text_SimpleDateFormat.pattern_;
     XMLVM_CHECK_NPE(6)
     java_text_SimpleDateFormat_compileFormat___java_lang_String(_r6.o, _r1.o);
@@ -1211,20 +1239,24 @@ void java_text_SimpleDateFormat___INIT___(JAVA_OBJECT me)
     
     // Red class access removed: java.text.NumberFormat::getInstance
     XMLVM_RED_CLASS_DEPENDENCY();
+    XMLVM_CHECK_NPE(6)
     ((java_text_DateFormat*) _r6.o)->fields.java_text_DateFormat.numberFormat_ = _r1.o;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 425)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_text_DateFormat*) _r6.o)->fields.java_text_DateFormat.numberFormat_;
 
     
     // Red class access removed: java.text.NumberFormat::setGroupingUsed
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 426)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_text_DateFormat*) _r6.o)->fields.java_text_DateFormat.numberFormat_;
 
     
     // Red class access removed: java.text.NumberFormat::setParseIntegerOnly
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 427)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_text_DateFormat*) _r6.o)->fields.java_text_DateFormat.numberFormat_;
 
     
@@ -1274,11 +1306,13 @@ void java_text_SimpleDateFormat___INIT____java_lang_String_java_util_Locale(JAVA
     XMLVM_CHECK_NPE(3)
     java_text_DateFormat___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 231)
+    XMLVM_CHECK_NPE(3)
     ((java_text_SimpleDateFormat*) _r3.o)->fields.java_text_SimpleDateFormat.serialVersionOnStream_ = _r2.i;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 455)
     _r0.o = __NEW_java_util_GregorianCalendar();
     XMLVM_CHECK_NPE(0)
     java_util_GregorianCalendar___INIT____java_util_Locale(_r0.o, _r5.o);
+    XMLVM_CHECK_NPE(3)
     ((java_text_DateFormat*) _r3.o)->fields.java_text_DateFormat.calendar_ = _r0.o;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 456)
     XMLVM_CHECK_NPE(3)
@@ -1287,36 +1321,43 @@ void java_text_SimpleDateFormat___INIT____java_lang_String_java_util_Locale(JAVA
     _r0.o = __NEW_java_util_ArrayList();
     XMLVM_CHECK_NPE(0)
     java_util_ArrayList___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_text_SimpleDateFormat*) _r3.o)->fields.java_text_SimpleDateFormat.tokens_ = _r0.o;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 458)
     _r0.o = __NEW_java_text_DateFormatSymbols();
     XMLVM_CHECK_NPE(0)
     java_text_DateFormatSymbols___INIT____java_util_Locale(_r0.o, _r5.o);
+    XMLVM_CHECK_NPE(3)
     ((java_text_SimpleDateFormat*) _r3.o)->fields.java_text_SimpleDateFormat.formatData_ = _r0.o;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 459)
     XMLVM_CHECK_NPE(3)
     java_text_SimpleDateFormat_compileFormat___java_lang_String(_r3.o, _r4.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 460)
+    XMLVM_CHECK_NPE(3)
     ((java_text_SimpleDateFormat*) _r3.o)->fields.java_text_SimpleDateFormat.pattern_ = _r4.o;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 461)
 
     
     // Red class access removed: java.text.NumberFormat::getInstance
     XMLVM_RED_CLASS_DEPENDENCY();
+    XMLVM_CHECK_NPE(3)
     ((java_text_DateFormat*) _r3.o)->fields.java_text_DateFormat.numberFormat_ = _r0.o;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 462)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_text_DateFormat*) _r3.o)->fields.java_text_DateFormat.numberFormat_;
 
     
     // Red class access removed: java.text.NumberFormat::setGroupingUsed
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 463)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_text_DateFormat*) _r3.o)->fields.java_text_DateFormat.numberFormat_;
 
     
     // Red class access removed: java.text.NumberFormat::setParseIntegerOnly
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 464)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_text_DateFormat*) _r3.o)->fields.java_text_DateFormat.numberFormat_;
 
     
@@ -1347,11 +1388,13 @@ void java_text_SimpleDateFormat___INIT____java_lang_String_java_text_DateFormatS
     XMLVM_CHECK_NPE(3)
     java_text_DateFormat___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 231)
+    XMLVM_CHECK_NPE(3)
     ((java_text_SimpleDateFormat*) _r3.o)->fields.java_text_SimpleDateFormat.serialVersionOnStream_ = _r2.i;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 480)
     _r0.o = __NEW_java_util_GregorianCalendar();
     XMLVM_CHECK_NPE(0)
     java_util_GregorianCalendar___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_text_DateFormat*) _r3.o)->fields.java_text_DateFormat.calendar_ = _r0.o;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 481)
     XMLVM_CHECK_NPE(3)
@@ -1360,6 +1403,7 @@ void java_text_SimpleDateFormat___INIT____java_lang_String_java_text_DateFormatS
     _r0.o = __NEW_java_util_ArrayList();
     XMLVM_CHECK_NPE(0)
     java_util_ArrayList___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_text_SimpleDateFormat*) _r3.o)->fields.java_text_SimpleDateFormat.tokens_ = _r0.o;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 483)
     if (_r5.o != JAVA_NULL) goto label34;
@@ -1372,31 +1416,37 @@ void java_text_SimpleDateFormat___INIT____java_lang_String_java_text_DateFormatS
     XMLVM_THROW_CUSTOM(_r0.o)
     label34:;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 485)
+    XMLVM_CHECK_NPE(3)
     ((java_text_SimpleDateFormat*) _r3.o)->fields.java_text_SimpleDateFormat.formatData_ = _r5.o;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 486)
     XMLVM_CHECK_NPE(3)
     java_text_SimpleDateFormat_compileFormat___java_lang_String(_r3.o, _r4.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 487)
+    XMLVM_CHECK_NPE(3)
     ((java_text_SimpleDateFormat*) _r3.o)->fields.java_text_SimpleDateFormat.pattern_ = _r4.o;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 488)
 
     
     // Red class access removed: java.text.NumberFormat::getInstance
     XMLVM_RED_CLASS_DEPENDENCY();
+    XMLVM_CHECK_NPE(3)
     ((java_text_DateFormat*) _r3.o)->fields.java_text_DateFormat.numberFormat_ = _r0.o;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 489)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_text_DateFormat*) _r3.o)->fields.java_text_DateFormat.numberFormat_;
 
     
     // Red class access removed: java.text.NumberFormat::setGroupingUsed
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 490)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_text_DateFormat*) _r3.o)->fields.java_text_DateFormat.numberFormat_;
 
     
     // Red class access removed: java.text.NumberFormat::setParseIntegerOnly
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 491)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_text_DateFormat*) _r3.o)->fields.java_text_DateFormat.numberFormat_;
 
     
@@ -1416,6 +1466,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_toPattern__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 502)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_SimpleDateFormat*) _r1.o)->fields.java_text_SimpleDateFormat.pattern_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1432,10 +1483,12 @@ JAVA_OBJECT java_text_SimpleDateFormat_toLocalizedPattern__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 513)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_text_SimpleDateFormat*) _r3.o)->fields.java_text_SimpleDateFormat.formatData_;
     XMLVM_CHECK_NPE(1)
     _r0.o = java_text_DateFormatSymbols_getLocalPatternChars__(_r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 514)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_text_SimpleDateFormat*) _r3.o)->fields.java_text_SimpleDateFormat.pattern_;
     // "GyMdkHmsSEDFwWahKzYeugAZvcL"
     _r2.o = xmlvm_create_java_string_from_pool(2409);
@@ -1456,6 +1509,7 @@ void java_text_SimpleDateFormat_applyPattern___java_lang_String(JAVA_OBJECT me, 
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 527)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_SimpleDateFormat*) _r1.o)->fields.java_text_SimpleDateFormat.tokens_;
     //java_util_ArrayList_clear__[8]
     XMLVM_CHECK_NPE(0)
@@ -1464,6 +1518,7 @@ void java_text_SimpleDateFormat_applyPattern___java_lang_String(JAVA_OBJECT me, 
     XMLVM_CHECK_NPE(1)
     java_text_SimpleDateFormat_compileFormat___java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 529)
+    XMLVM_CHECK_NPE(1)
     ((java_text_SimpleDateFormat*) _r1.o)->fields.java_text_SimpleDateFormat.pattern_ = _r2.o;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 530)
     XMLVM_EXIT_METHOD()
@@ -1482,6 +1537,7 @@ void java_text_SimpleDateFormat_applyLocalizedPattern___java_lang_String(JAVA_OB
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 542)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_text_SimpleDateFormat*) _r2.o)->fields.java_text_SimpleDateFormat.formatData_;
     XMLVM_CHECK_NPE(1)
     _r0.o = java_text_DateFormatSymbols_getLocalPatternChars__(_r1.o);
@@ -1583,6 +1639,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_get2DigitYearStart__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 593)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_SimpleDateFormat*) _r1.o)->fields.java_text_SimpleDateFormat.defaultCenturyStart_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1601,16 +1658,20 @@ void java_text_SimpleDateFormat_set2DigitYearStart___java_util_Date(JAVA_OBJECT 
     _r3.o = me;
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 604)
+    XMLVM_CHECK_NPE(3)
     ((java_text_SimpleDateFormat*) _r3.o)->fields.java_text_SimpleDateFormat.defaultCenturyStart_ = _r4.o;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 605)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_text_DateFormat*) _r3.o)->fields.java_text_DateFormat.calendar_;
     XMLVM_CHECK_NPE(1)
     java_util_Calendar_clear__(_r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 606)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_text_DateFormat*) _r3.o)->fields.java_text_DateFormat.calendar_;
     XMLVM_CHECK_NPE(1)
     java_util_Calendar_setTime___java_util_Date(_r1.o, _r4.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 607)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_text_DateFormat*) _r3.o)->fields.java_text_DateFormat.calendar_;
     _r2.i = 1;
     XMLVM_CHECK_NPE(1)
@@ -1618,6 +1679,7 @@ void java_text_SimpleDateFormat_set2DigitYearStart___java_util_Date(JAVA_OBJECT 
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 608)
     _r1.i = _r0.i % 100;
     _r1.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(3)
     ((java_text_SimpleDateFormat*) _r3.o)->fields.java_text_SimpleDateFormat.defaultCentury_ = _r1.i;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 609)
     XMLVM_EXIT_METHOD()
@@ -1633,6 +1695,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_getDateFormatSymbols__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 619)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_SimpleDateFormat*) _r1.o)->fields.java_text_SimpleDateFormat.formatData_;
     //java_text_DateFormatSymbols_clone__[0]
     XMLVM_CHECK_NPE(0)
@@ -1664,6 +1727,7 @@ void java_text_SimpleDateFormat_setDateFormatSymbols___java_text_DateFormatSymbo
     XMLVM_THROW_CUSTOM(_r0.o)
     label10:;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 636)
+    XMLVM_CHECK_NPE(2)
     ((java_text_SimpleDateFormat*) _r2.o)->fields.java_text_SimpleDateFormat.formatData_ = _r3.o;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 637)
     XMLVM_EXIT_METHOD()
@@ -1709,7 +1773,9 @@ JAVA_BOOLEAN java_text_SimpleDateFormat_equals___java_lang_Object(JAVA_OBJECT me
     _r0.o = _r0.o;
     _r1 = _r0;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 668)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_text_SimpleDateFormat*) _r5.o)->fields.java_text_SimpleDateFormat.defaultCentury_;
+    XMLVM_CHECK_NPE(1)
     _r3.i = ((java_text_SimpleDateFormat*) _r1.o)->fields.java_text_SimpleDateFormat.defaultCentury_;
     if (_r2.i == _r3.i) goto label27;
     _r2 = _r4;
@@ -1764,6 +1830,7 @@ JAVA_INT java_text_SimpleDateFormat_hashCode__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[4])(_r1.o);
     _r0.i = _r0.i ^ _r1.i;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_text_SimpleDateFormat*) _r2.o)->fields.java_text_SimpleDateFormat.defaultCentury_;
     _r0.i = _r0.i ^ _r1.i;
     XMLVM_CHECK_NPE(2)
@@ -1810,6 +1877,7 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     _r22.o = n3;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 700)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r16 = _r0;
     _r0 = _r16;
@@ -1818,6 +1886,7 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     java_util_Calendar_setTime___java_util_Date(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 703)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_SimpleDateFormat*) _r0.o)->fields.java_text_SimpleDateFormat.tokens_;
     _r16 = _r0;
     //java_util_ArrayList_iterator__[12]
@@ -1891,12 +1960,15 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     label84:;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 715)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_SimpleDateFormat*) _r0.o)->fields.java_text_SimpleDateFormat.formatData_;
     _r16 = _r0;
     _r0 = _r16;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormatSymbols*) _r0.o)->fields.java_text_DateFormatSymbols.eras_;
     _r16 = _r0;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r17 = _r0;
     _r18.i = 0;
@@ -1973,6 +2045,7 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     XMLVM_CHECK_NPE(16)
     _r16.o = java_lang_StringBuilder_append___java_lang_String(_r16.o, _r17.o);
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r17 = _r0;
     _r18.i = 1;
@@ -2002,6 +2075,7 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     label249:;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 727)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r16 = _r0;
     _r17.i = 1;
@@ -2032,6 +2106,7 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     if (_r0.i >= _r1.i) goto label330;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 732)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r16 = _r0;
     _r17.i = 2;
@@ -2057,12 +2132,15 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     if (_r0.i >= _r1.i) goto label377;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 734)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_SimpleDateFormat*) _r0.o)->fields.java_text_SimpleDateFormat.formatData_;
     _r16 = _r0;
     _r0 = _r16;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormatSymbols*) _r0.o)->fields.java_text_DateFormatSymbols.shortMonths_;
     _r16 = _r0;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r17 = _r0;
     _r18.i = 2;
@@ -2079,12 +2157,15 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     label377:;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 736)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_SimpleDateFormat*) _r0.o)->fields.java_text_SimpleDateFormat.formatData_;
     _r16 = _r0;
     _r0 = _r16;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormatSymbols*) _r0.o)->fields.java_text_DateFormatSymbols.months_;
     _r16 = _r0;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r17 = _r0;
     _r18.i = 2;
@@ -2107,6 +2188,7 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_gnu_java_text_FormatBuffer_setDefaultAttribute___java_text_AttributedCharacterIterator_Attribute])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 740)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r16 = _r0;
     _r17.i = 5;
@@ -2130,6 +2212,7 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_gnu_java_text_FormatBuffer_setDefaultAttribute___java_text_AttributedCharacterIterator_Attribute])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 744)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r16 = _r0;
     _r17.i = 11;
@@ -2156,6 +2239,7 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_gnu_java_text_FormatBuffer_setDefaultAttribute___java_text_AttributedCharacterIterator_Attribute])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 749)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r16 = _r0;
     _r17.i = 11;
@@ -2179,6 +2263,7 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_gnu_java_text_FormatBuffer_setDefaultAttribute___java_text_AttributedCharacterIterator_Attribute])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 753)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r16 = _r0;
     _r17.i = 12;
@@ -2202,6 +2287,7 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_gnu_java_text_FormatBuffer_setDefaultAttribute___java_text_AttributedCharacterIterator_Attribute])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 758)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r16 = _r0;
     _r17.i = 13;
@@ -2225,6 +2311,7 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_gnu_java_text_FormatBuffer_setDefaultAttribute___java_text_AttributedCharacterIterator_Attribute])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 763)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r16 = _r0;
     _r17.i = 14;
@@ -2255,12 +2342,15 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     if (_r0.i >= _r1.i) goto label702;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 768)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_SimpleDateFormat*) _r0.o)->fields.java_text_SimpleDateFormat.formatData_;
     _r16 = _r0;
     _r0 = _r16;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormatSymbols*) _r0.o)->fields.java_text_DateFormatSymbols.shortWeekdays_;
     _r16 = _r0;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r17 = _r0;
     _r18.i = 7;
@@ -2277,12 +2367,15 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     label702:;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 770)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_SimpleDateFormat*) _r0.o)->fields.java_text_SimpleDateFormat.formatData_;
     _r16 = _r0;
     _r0 = _r16;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormatSymbols*) _r0.o)->fields.java_text_DateFormatSymbols.weekdays_;
     _r16 = _r0;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r17 = _r0;
     _r18.i = 7;
@@ -2305,6 +2398,7 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_gnu_java_text_FormatBuffer_setDefaultAttribute___java_text_AttributedCharacterIterator_Attribute])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 774)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r16 = _r0;
     _r17.i = 6;
@@ -2328,6 +2422,7 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_gnu_java_text_FormatBuffer_setDefaultAttribute___java_text_AttributedCharacterIterator_Attribute])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 778)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r16 = _r0;
     _r17.i = 8;
@@ -2351,6 +2446,7 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_gnu_java_text_FormatBuffer_setDefaultAttribute___java_text_AttributedCharacterIterator_Attribute])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 783)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r16 = _r0;
     _r17.i = 3;
@@ -2374,6 +2470,7 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_gnu_java_text_FormatBuffer_setDefaultAttribute___java_text_AttributedCharacterIterator_Attribute])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 788)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r16 = _r0;
     _r17.i = 4;
@@ -2397,12 +2494,15 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_gnu_java_text_FormatBuffer_setDefaultAttribute___java_text_AttributedCharacterIterator_Attribute])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 793)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_SimpleDateFormat*) _r0.o)->fields.java_text_SimpleDateFormat.formatData_;
     _r16 = _r0;
     _r0 = _r16;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormatSymbols*) _r0.o)->fields.java_text_DateFormatSymbols.ampms_;
     _r16 = _r0;
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r17 = _r0;
     _r18.i = 9;
@@ -2425,6 +2525,7 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_gnu_java_text_FormatBuffer_setDefaultAttribute___java_text_AttributedCharacterIterator_Attribute])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 797)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r16 = _r0;
     _r17.i = 10;
@@ -2451,6 +2552,7 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_gnu_java_text_FormatBuffer_setDefaultAttribute___java_text_AttributedCharacterIterator_Attribute])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 802)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r16 = _r0;
     _r17.i = 10;
@@ -2474,12 +2576,14 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_gnu_java_text_FormatBuffer_setDefaultAttribute___java_text_AttributedCharacterIterator_Attribute])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 806)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r16 = _r0;
     XMLVM_CHECK_NPE(16)
     _r14.o = java_util_Calendar_getTimeZone__(_r16.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 807)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r16 = _r0;
     _r17.i = 16;
@@ -2525,12 +2629,14 @@ void java_text_SimpleDateFormat_formatWithAttribute___java_util_Date_gnu_java_te
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_gnu_java_text_FormatBuffer_setDefaultAttribute___java_text_AttributedCharacterIterator_Attribute])(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 815)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r16 = _r0;
     _r17.i = 15;
     XMLVM_CHECK_NPE(16)
     _r16.i = java_util_Calendar_get___int(_r16.o, _r17.i);
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r17 = _r0;
     _r18.i = 16;
@@ -2840,6 +2946,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r8.i = 0;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 899)
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_SimpleDateFormat*) _r0.o)->fields.java_text_SimpleDateFormat.pattern_;
     _r38 = _r0;
     //java_lang_String_length__[8]
@@ -2847,6 +2954,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r9.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r38.o)->tib->vtable[8])(_r38.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 901)
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r38 = _r0;
     XMLVM_CHECK_NPE(38)
@@ -2859,10 +2967,11 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 904)
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 907)
     if (_r8.i >= _r9.i) goto label992;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c24)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c24)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 909)
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_SimpleDateFormat*) _r0.o)->fields.java_text_SimpleDateFormat.pattern_;
     _r38 = _r0;
     _r0 = _r38;
@@ -2873,15 +2982,16 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r38.i = 39;
     _r0 = _r5;
     _r1 = _r38;
-    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1c24->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c24, sizeof(XMLVM_JMP_BUF)); goto label107; };
+    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1c24->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c24, sizeof(XMLVM_JMP_BUF)); goto label107; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 910)
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 912)
     _r38.i = 1;
     _r38.i = _r9.i - _r38.i;
     _r0 = _r8;
     _r1 = _r38;
-    if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1c24->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c24, sizeof(XMLVM_JMP_BUF)); goto label97; };
+    if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1c24->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c24, sizeof(XMLVM_JMP_BUF)); goto label97; };
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_SimpleDateFormat*) _r0.o)->fields.java_text_SimpleDateFormat.pattern_;
     _r38 = _r0;
     _r39.i = _r8.i + 1;
@@ -2891,7 +3001,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r39.i = 39;
     _r0 = _r38;
     _r1 = _r39;
-    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1c24->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c24, sizeof(XMLVM_JMP_BUF)); goto label97; };
+    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1c24->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c24, sizeof(XMLVM_JMP_BUF)); goto label97; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 915)
     _r0 = _r41;
     _r1 = _r42;
@@ -2899,136 +3009,136 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r3 = _r5;
     XMLVM_CHECK_NPE(0)
     _r38.i = java_text_SimpleDateFormat_expect___java_lang_String_java_text_ParsePosition_char(_r0.o, _r1.o, _r2.o, _r3.i);
-    if (_r38.i != 0) { XMLVM_MEMCPY(curThread_w42011aaac32b1c24->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c24, sizeof(XMLVM_JMP_BUF)); goto label92; };
+    if (_r38.i != 0) { XMLVM_MEMCPY(curThread_w42016aaac32b1c24->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c24, sizeof(XMLVM_JMP_BUF)); goto label92; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 916)
     _r38.o = JAVA_NULL;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c24)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c24,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c24)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c24)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c24)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c24,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c24)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c24)
     label91:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c26)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c26)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1215)
-    XMLVM_MEMCPY(curThread_w42011aaac32b1c26->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c26, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w42016aaac32b1c26->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c26, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r38.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c26)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c26,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c26)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c26)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c26)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c26,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c26)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c26)
     label92:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c28)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c28)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 917)
     _r8.i = _r8.i + 1;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c28)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c28,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c28)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c28)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c28)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c28,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c28)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c28)
     label94:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c30)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c30)
     // Begin try
     _r8.i = _r8.i + 1;
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1c30->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c30, sizeof(XMLVM_JMP_BUF)); goto label25; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1c30->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c30, sizeof(XMLVM_JMP_BUF)); goto label25; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 920)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c30)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c30,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c30)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c30)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c30)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c30,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c30)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c30)
     label97:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c32)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c32)
     // Begin try
-    if (_r25.i >= 0) { XMLVM_MEMCPY(curThread_w42011aaac32b1c32->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c32, sizeof(XMLVM_JMP_BUF)); goto label102; };
+    if (_r25.i >= 0) { XMLVM_MEMCPY(curThread_w42016aaac32b1c32->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c32, sizeof(XMLVM_JMP_BUF)); goto label102; };
     _r25 = _r8;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c32)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c32,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c32)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c32)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c32)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c32,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c32)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c32)
     label101:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c34)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c34)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 921)
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1c34->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c34, sizeof(XMLVM_JMP_BUF)); goto label94; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1c34->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c34, sizeof(XMLVM_JMP_BUF)); goto label94; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c34)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c34,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c34)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c34)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c34)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c34,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c34)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c34)
     label102:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c36)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c36)
     // Begin try
     _r38.i = -1;
     _r25 = _r38;
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1c36->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c36, sizeof(XMLVM_JMP_BUF)); goto label101; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1c36->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c36, sizeof(XMLVM_JMP_BUF)); goto label101; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 924)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c36)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c36,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c36)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c36)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c36)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c36,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c36)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c36)
     label107:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c38)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c38)
     // Begin try
     _r38.i = -1;
     _r0 = _r25;
     _r1 = _r38;
-    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1c38->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c38, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1c38->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c38, sizeof(XMLVM_JMP_BUF)); goto label143; };
     _r38.i = 97;
     _r0 = _r5;
     _r1 = _r38;
-    if (_r0.i < _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1c38->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c38, sizeof(XMLVM_JMP_BUF)); goto label129; };
+    if (_r0.i < _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1c38->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c38, sizeof(XMLVM_JMP_BUF)); goto label129; };
     _r38.i = 122;
     _r0 = _r5;
     _r1 = _r38;
-    if (_r0.i <= _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1c38->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c38, sizeof(XMLVM_JMP_BUF)); goto label245; };
+    if (_r0.i <= _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1c38->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c38, sizeof(XMLVM_JMP_BUF)); goto label245; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c38)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c38,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c38)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c38)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c38)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c38,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c38)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c38)
     label129:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c40)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c40)
     // Begin try
     _r38.i = 65;
     _r0 = _r5;
     _r1 = _r38;
-    if (_r0.i < _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1c40->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c40, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    if (_r0.i < _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1c40->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c40, sizeof(XMLVM_JMP_BUF)); goto label143; };
     _r38.i = 90;
     _r0 = _r5;
     _r1 = _r38;
-    if (_r0.i <= _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1c40->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c40, sizeof(XMLVM_JMP_BUF)); goto label245; };
+    if (_r0.i <= _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1c40->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c40, sizeof(XMLVM_JMP_BUF)); goto label245; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c40)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c40,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c40)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c40)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c40)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c40,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c40)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c40)
     label143:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c42)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c42)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 928)
     _r38.i = -1;
     _r0 = _r25;
     _r1 = _r38;
-    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1c42->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c42, sizeof(XMLVM_JMP_BUF)); goto label228; };
+    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1c42->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c42, sizeof(XMLVM_JMP_BUF)); goto label228; };
     _r38.i = 32;
     _r0 = _r5;
     _r1 = _r38;
-    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1c42->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c42, sizeof(XMLVM_JMP_BUF)); goto label228; };
+    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1c42->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c42, sizeof(XMLVM_JMP_BUF)); goto label228; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 932)
 
     
@@ -3037,12 +3147,12 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r26 = _r13;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c42)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c42,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c42)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c42)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c42)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c42,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c42)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c42)
     label164:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c44)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c44)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 933)
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 935)
@@ -3051,30 +3161,30 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r38.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r42.o)->tib->vtable[8])(_r42.o);
     _r0 = _r13;
     _r1 = _r38;
-    if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1c44->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c44, sizeof(XMLVM_JMP_BUF)); goto label189; };
+    if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1c44->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c44, sizeof(XMLVM_JMP_BUF)); goto label189; };
     _r0 = _r42;
     _r1 = _r13;
     //java_lang_String_charAt___int[6]
     XMLVM_CHECK_NPE(0)
     _r38.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) ((java_lang_String*) _r0.o)->tib->vtable[6])(_r0.o, _r1.i);
     _r38.i = java_lang_Character_isWhitespace___char(_r38.i);
-    if (_r38.i == 0) { XMLVM_MEMCPY(curThread_w42011aaac32b1c44->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c44, sizeof(XMLVM_JMP_BUF)); goto label189; };
+    if (_r38.i == 0) { XMLVM_MEMCPY(curThread_w42016aaac32b1c44->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c44, sizeof(XMLVM_JMP_BUF)); goto label189; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 936)
     _r13.i = _r13.i + 1;
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1c44->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c44, sizeof(XMLVM_JMP_BUF)); goto label164; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1c44->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c44, sizeof(XMLVM_JMP_BUF)); goto label164; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 937)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c44)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c44,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c44)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c44)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c44)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c44,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c44)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c44)
     label189:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c46)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c46)
     // Begin try
     _r0 = _r13;
     _r1 = _r26;
-    if (_r0.i <= _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1c46->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c46, sizeof(XMLVM_JMP_BUF)); goto label218; };
+    if (_r0.i <= _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1c46->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c46, sizeof(XMLVM_JMP_BUF)); goto label218; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 938)
     _r0 = _r43;
     _r1 = _r13;
@@ -3084,15 +3194,15 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     XMLVM_RED_CLASS_DEPENDENCY();
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c46)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c46,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c46)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c46)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c46)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c46,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c46)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c46)
     goto label94;
     label201:;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1212)
-    java_lang_Thread* curThread_w42011aaac32b1c50 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r38.o = curThread_w42011aaac32b1c50->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w42016aaac32b1c50 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r38.o = curThread_w42016aaac32b1c50->fields.java_lang_Thread.xmlvmException_;
     _r34 = _r38;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1214)
 
@@ -3108,7 +3218,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r38.o = JAVA_NULL;
     goto label91;
     label218:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c60)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c60)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 942)
     _r0 = _r43;
@@ -3119,16 +3229,16 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 943)
     _r38.o = JAVA_NULL;
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1c60->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c60, sizeof(XMLVM_JMP_BUF)); goto label91; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1c60->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c60, sizeof(XMLVM_JMP_BUF)); goto label91; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 946)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c60)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c60,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c60)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c60)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c60)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c60,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c60)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c60)
     label228:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c62)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c62)
     // Begin try
     _r0 = _r41;
     _r1 = _r42;
@@ -3136,34 +3246,35 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r3 = _r5;
     XMLVM_CHECK_NPE(0)
     _r38.i = java_text_SimpleDateFormat_expect___java_lang_String_java_text_ParsePosition_char(_r0.o, _r1.o, _r2.o, _r3.i);
-    if (_r38.i != 0) { XMLVM_MEMCPY(curThread_w42011aaac32b1c62->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c62, sizeof(XMLVM_JMP_BUF)); goto label94; };
+    if (_r38.i != 0) { XMLVM_MEMCPY(curThread_w42016aaac32b1c62->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c62, sizeof(XMLVM_JMP_BUF)); goto label94; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 947)
     _r38.o = JAVA_NULL;
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1c62->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c62, sizeof(XMLVM_JMP_BUF)); goto label91; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1c62->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c62, sizeof(XMLVM_JMP_BUF)); goto label91; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 953)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c62)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c62,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c62)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c62)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c62)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c62,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c62)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c62)
     label245:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c64)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c64)
     // Begin try
     _r7.i = 1;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c64)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c64,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c64)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c64)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c64)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c64,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c64)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c64)
     label246:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c66)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c66)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 954)
     _r8.i = _r8.i + 1;
-    if (_r8.i >= _r9.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1c66->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c66, sizeof(XMLVM_JMP_BUF)); goto label271; };
+    if (_r8.i >= _r9.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1c66->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c66, sizeof(XMLVM_JMP_BUF)); goto label271; };
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_SimpleDateFormat*) _r0.o)->fields.java_text_SimpleDateFormat.pattern_;
     _r38 = _r0;
     _r0 = _r38;
@@ -3173,26 +3284,27 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r38.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) ((java_lang_String*) _r0.o)->tib->vtable[6])(_r0.o, _r1.i);
     _r0 = _r38;
     _r1 = _r5;
-    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1c66->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c66, sizeof(XMLVM_JMP_BUF)); goto label271; };
+    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1c66->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c66, sizeof(XMLVM_JMP_BUF)); goto label271; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 956)
     _r7.i = _r7.i + 1;
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1c66->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c66, sizeof(XMLVM_JMP_BUF)); goto label246; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1c66->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c66, sizeof(XMLVM_JMP_BUF)); goto label246; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 962)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c66)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c66,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c66)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c66)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c66)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c66,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c66)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c66)
     label271:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c68)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c68)
     // Begin try
     _r18.i = 0;
-    if (_r8.i >= _r9.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1c68->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c68, sizeof(XMLVM_JMP_BUF)); goto label298; };
+    if (_r8.i >= _r9.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1c68->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c68, sizeof(XMLVM_JMP_BUF)); goto label298; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 963)
     // "GyMdkHmsSEDFwWahKzYeugAZvcL"
     _r38.o = xmlvm_create_java_string_from_pool(2409);
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_SimpleDateFormat*) _r0.o)->fields.java_text_SimpleDateFormat.pattern_;
     _r39 = _r0;
     _r0 = _r39;
@@ -3202,17 +3314,17 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r39.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) ((java_lang_String*) _r0.o)->tib->vtable[6])(_r0.o, _r1.i);
     XMLVM_CHECK_NPE(38)
     _r38.i = java_lang_String_indexOf___int(_r38.o, _r39.i);
-    if (_r38.i < 0) { XMLVM_MEMCPY(curThread_w42011aaac32b1c68->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c68, sizeof(XMLVM_JMP_BUF)); goto label298; };
+    if (_r38.i < 0) { XMLVM_MEMCPY(curThread_w42016aaac32b1c68->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c68, sizeof(XMLVM_JMP_BUF)); goto label298; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 965)
     _r18.i = 1;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c68)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c68,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c68)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c68)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c68)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c68,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c68)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c68)
     label298:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c70)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c70)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 966)
     _r8.i = _r8.i + -1;
@@ -3225,24 +3337,24 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r29.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 982)
     switch (_r5.i) {
-    case 68: { XMLVM_MEMCPY(curThread_w42011aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label425; };
-    case 69: { XMLVM_MEMCPY(curThread_w42011aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label430; };
-    case 70: { XMLVM_MEMCPY(curThread_w42011aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label427; };
-    case 72: { XMLVM_MEMCPY(curThread_w42011aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label516; };
-    case 75: { XMLVM_MEMCPY(curThread_w42011aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label506; };
-    case 77: { XMLVM_MEMCPY(curThread_w42011aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label459; };
-    case 83: { XMLVM_MEMCPY(curThread_w42011aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label534; };
-    case 87: { XMLVM_MEMCPY(curThread_w42011aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label457; };
-    case 90: { XMLVM_MEMCPY(curThread_w42011aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label553; };
-    case 97: { XMLVM_MEMCPY(curThread_w42011aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label538; };
-    case 100: { XMLVM_MEMCPY(curThread_w42011aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label331; };
-    case 104: { XMLVM_MEMCPY(curThread_w42011aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label510; };
-    case 107: { XMLVM_MEMCPY(curThread_w42011aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label520; };
-    case 109: { XMLVM_MEMCPY(curThread_w42011aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label526; };
-    case 115: { XMLVM_MEMCPY(curThread_w42011aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label530; };
-    case 119: { XMLVM_MEMCPY(curThread_w42011aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label455; };
-    case 121: { XMLVM_MEMCPY(curThread_w42011aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label494; };
-    case 122: { XMLVM_MEMCPY(curThread_w42011aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label553; };
+    case 68: { XMLVM_MEMCPY(curThread_w42016aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label425; };
+    case 69: { XMLVM_MEMCPY(curThread_w42016aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label430; };
+    case 70: { XMLVM_MEMCPY(curThread_w42016aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label427; };
+    case 72: { XMLVM_MEMCPY(curThread_w42016aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label516; };
+    case 75: { XMLVM_MEMCPY(curThread_w42016aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label506; };
+    case 77: { XMLVM_MEMCPY(curThread_w42016aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label459; };
+    case 83: { XMLVM_MEMCPY(curThread_w42016aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label534; };
+    case 87: { XMLVM_MEMCPY(curThread_w42016aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label457; };
+    case 90: { XMLVM_MEMCPY(curThread_w42016aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label553; };
+    case 97: { XMLVM_MEMCPY(curThread_w42016aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label538; };
+    case 100: { XMLVM_MEMCPY(curThread_w42016aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label331; };
+    case 104: { XMLVM_MEMCPY(curThread_w42016aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label510; };
+    case 107: { XMLVM_MEMCPY(curThread_w42016aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label520; };
+    case 109: { XMLVM_MEMCPY(curThread_w42016aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label526; };
+    case 115: { XMLVM_MEMCPY(curThread_w42016aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label530; };
+    case 119: { XMLVM_MEMCPY(curThread_w42016aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label455; };
+    case 121: { XMLVM_MEMCPY(curThread_w42016aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label494; };
+    case 122: { XMLVM_MEMCPY(curThread_w42016aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label553; };
     }
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1102)
 
@@ -3257,34 +3369,35 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1103)
     _r38.o = JAVA_NULL;
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label91; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1c70->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c70, sizeof(XMLVM_JMP_BUF)); goto label91; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 985)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c70)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c70,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c70)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c70)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c70)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c70,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c70)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c70)
     label331:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c72)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c72)
     // Begin try
     _r4.i = 5;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c72)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c72,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c72)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c72)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c72)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c72,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c72)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c72)
     label332:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c74)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c74)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 986)
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1108)
     _r13.i = -1;
-    if (_r15.i == 0) { XMLVM_MEMCPY(curThread_w42011aaac32b1c74->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c74, sizeof(XMLVM_JMP_BUF)); goto label849; };
+    if (_r15.i == 0) { XMLVM_MEMCPY(curThread_w42016aaac32b1c74->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c74, sizeof(XMLVM_JMP_BUF)); goto label849; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1109)
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1111)
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.numberFormat_;
     _r38 = _r0;
     _r0 = _r38;
@@ -3294,7 +3407,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     // Red class access removed: java.text.NumberFormat::setMinimumIntegerDigits
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1112)
-    if (_r19.i == 0) { XMLVM_MEMCPY(curThread_w42011aaac32b1c74->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c74, sizeof(XMLVM_JMP_BUF)); goto label353; };
+    if (_r19.i == 0) { XMLVM_MEMCPY(curThread_w42016aaac32b1c74->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c74, sizeof(XMLVM_JMP_BUF)); goto label353; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1113)
 
     
@@ -3302,16 +3415,16 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     XMLVM_RED_CLASS_DEPENDENCY();
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c74)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c74,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c74)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c74)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c74)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c74,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c74)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c74)
     label353:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c76)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c76)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1114)
     _r20.o = JAVA_NULL;
-    if (_r18.i == 0) { XMLVM_MEMCPY(curThread_w42011aaac32b1c76->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c76, sizeof(XMLVM_JMP_BUF)); goto label761; };
+    if (_r18.i == 0) { XMLVM_MEMCPY(curThread_w42016aaac32b1c76->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c76, sizeof(XMLVM_JMP_BUF)); goto label761; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1115)
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1120)
 
@@ -3328,6 +3441,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1122)
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.numberFormat_;
     _r38 = _r0;
     _r39.i = _r24.i + _r7.i;
@@ -3357,301 +3471,307 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     XMLVM_RED_CLASS_DEPENDENCY();
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c76)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c76,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c76)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c76)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c76)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c76,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c76)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c76)
     label411:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c78)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c78)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1127)
-    if (_r43.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w42011aaac32b1c78->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c78, sizeof(XMLVM_JMP_BUF)); goto label421; };
+    if (_r43.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w42016aaac32b1c78->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c78, sizeof(XMLVM_JMP_BUF)); goto label421; };
     _r0 = _r20;
     if (!__TIB_java_lang_Long.classInitialized) __INIT_java_lang_Long();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_java_lang_Long);
     _r38 = _r0;
-    if (_r38.i != 0) { XMLVM_MEMCPY(curThread_w42011aaac32b1c78->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c78, sizeof(XMLVM_JMP_BUF)); goto label779; };
+    if (_r38.i != 0) { XMLVM_MEMCPY(curThread_w42016aaac32b1c78->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c78, sizeof(XMLVM_JMP_BUF)); goto label779; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c78)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c78,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c78)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c78)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c78)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c78,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c78)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c78)
     label421:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c80)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c80)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1128)
     _r38.o = JAVA_NULL;
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1c80->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c80, sizeof(XMLVM_JMP_BUF)); goto label91; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1c80->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c80, sizeof(XMLVM_JMP_BUF)); goto label91; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 988)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c80)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c80,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c80)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c80)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c80)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c80,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c80)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c80)
     label425:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c82)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c82)
     // Begin try
     _r4.i = 6;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 989)
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1c82->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c82, sizeof(XMLVM_JMP_BUF)); goto label332; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1c82->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c82, sizeof(XMLVM_JMP_BUF)); goto label332; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 991)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c82)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c82,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c82)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c82)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c82)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c82,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c82)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c82)
     label427:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c84)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c84)
     // Begin try
     _r4.i = 8;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 992)
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1c84->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c84, sizeof(XMLVM_JMP_BUF)); goto label332; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1c84->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c84, sizeof(XMLVM_JMP_BUF)); goto label332; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 994)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c84)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c84,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c84)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c84)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c84)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c84,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c84)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c84)
     label430:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c86)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c86)
     // Begin try
     _r15.i = 0;
     _r21.i = 1;
     _r4.i = 7;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 997)
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_SimpleDateFormat*) _r0.o)->fields.java_text_SimpleDateFormat.formatData_;
     _r38 = _r0;
     XMLVM_CHECK_NPE(38)
     _r28.o = java_text_DateFormatSymbols_getWeekdays__(_r38.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 998)
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_SimpleDateFormat*) _r0.o)->fields.java_text_SimpleDateFormat.formatData_;
     _r38 = _r0;
     XMLVM_CHECK_NPE(38)
     _r29.o = java_text_DateFormatSymbols_getShortWeekdays__(_r38.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 999)
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1c86->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c86, sizeof(XMLVM_JMP_BUF)); goto label332; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1c86->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c86, sizeof(XMLVM_JMP_BUF)); goto label332; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1001)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c86)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c86,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c86)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c86)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c86)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c86,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c86)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c86)
     label455:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c88)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c88)
     // Begin try
     _r4.i = 3;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1002)
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1c88->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c88, sizeof(XMLVM_JMP_BUF)); goto label332; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1c88->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c88, sizeof(XMLVM_JMP_BUF)); goto label332; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1004)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c88)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c88,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c88)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c88)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c88)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c88,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c88)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c88)
     label457:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c90)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c90)
     // Begin try
     _r4.i = 4;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1005)
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1c90->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c90, sizeof(XMLVM_JMP_BUF)); goto label332; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1c90->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c90, sizeof(XMLVM_JMP_BUF)); goto label332; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1007)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c90)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c90,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c90)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c90)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c90)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c90,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c90)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c90)
     label459:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c92)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c92)
     // Begin try
     _r4.i = 2;
     _r38.i = 2;
     _r0 = _r7;
     _r1 = _r38;
-    if (_r0.i > _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1c92->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c92, sizeof(XMLVM_JMP_BUF)); goto label471; };
+    if (_r0.i > _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1c92->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c92, sizeof(XMLVM_JMP_BUF)); goto label471; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1008)
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1009)
     _r21.i = -1;
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1c92->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c92, sizeof(XMLVM_JMP_BUF)); goto label332; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1c92->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c92, sizeof(XMLVM_JMP_BUF)); goto label332; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1012)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c92)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c92,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c92)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c92)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c92)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c92,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c92)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c92)
     label471:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c94)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c94)
     // Begin try
     _r15.i = 0;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1013)
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_SimpleDateFormat*) _r0.o)->fields.java_text_SimpleDateFormat.formatData_;
     _r38 = _r0;
     XMLVM_CHECK_NPE(38)
     _r28.o = java_text_DateFormatSymbols_getMonths__(_r38.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1014)
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_SimpleDateFormat*) _r0.o)->fields.java_text_SimpleDateFormat.formatData_;
     _r38 = _r0;
     XMLVM_CHECK_NPE(38)
     _r29.o = java_text_DateFormatSymbols_getShortMonths__(_r38.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1016)
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1c94->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c94, sizeof(XMLVM_JMP_BUF)); goto label332; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1c94->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c94, sizeof(XMLVM_JMP_BUF)); goto label332; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1018)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c94)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c94,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c94)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c94)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c94)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c94,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c94)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c94)
     label494:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c96)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c96)
     // Begin try
     _r4.i = 1;
     _r38.i = 2;
     _r0 = _r7;
     _r1 = _r38;
-    if (_r0.i > _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1c96->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c96, sizeof(XMLVM_JMP_BUF)); goto label332; };
+    if (_r0.i > _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1c96->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c96, sizeof(XMLVM_JMP_BUF)); goto label332; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1019)
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1020)
     _r19.i = 1;
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1c96->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c96, sizeof(XMLVM_JMP_BUF)); goto label332; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1c96->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c96, sizeof(XMLVM_JMP_BUF)); goto label332; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1023)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c96)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c96,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c96)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c96)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c96)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c96,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c96)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c96)
     label506:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1c98)
+    XMLVM_TRY_BEGIN(w42016aaac32b1c98)
     // Begin try
     _r4.i = 10;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1024)
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1c98->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1c98, sizeof(XMLVM_JMP_BUF)); goto label332; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1c98->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1c98, sizeof(XMLVM_JMP_BUF)); goto label332; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1026)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1c98)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1c98,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1c98)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1c98)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1c98)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1c98,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1c98)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1c98)
     label510:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d100)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d100)
     // Begin try
     _r4.i = 10;
     _r22.i = 1;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1028)
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1d100->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d100, sizeof(XMLVM_JMP_BUF)); goto label332; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1d100->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d100, sizeof(XMLVM_JMP_BUF)); goto label332; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1030)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d100)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d100,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d100)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d100)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d100)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d100,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d100)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d100)
     label516:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d102)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d102)
     // Begin try
     _r4.i = 11;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1031)
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1d102->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d102, sizeof(XMLVM_JMP_BUF)); goto label332; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1d102->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d102, sizeof(XMLVM_JMP_BUF)); goto label332; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1033)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d102)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d102,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d102)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d102)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d102)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d102,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d102)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d102)
     label520:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d104)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d104)
     // Begin try
     _r4.i = 11;
     _r23.i = 1;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1035)
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1d104->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d104, sizeof(XMLVM_JMP_BUF)); goto label332; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1d104->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d104, sizeof(XMLVM_JMP_BUF)); goto label332; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1037)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d104)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d104,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d104)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d104)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d104)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d104,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d104)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d104)
     label526:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d106)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d106)
     // Begin try
     _r4.i = 12;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1038)
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1d106->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d106, sizeof(XMLVM_JMP_BUF)); goto label332; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1d106->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d106, sizeof(XMLVM_JMP_BUF)); goto label332; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1040)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d106)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d106,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d106)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d106)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d106)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d106,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d106)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d106)
     label530:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d108)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d108)
     // Begin try
     _r4.i = 13;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1041)
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1d108->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d108, sizeof(XMLVM_JMP_BUF)); goto label332; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1d108->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d108, sizeof(XMLVM_JMP_BUF)); goto label332; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1043)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d108)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d108,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d108)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d108)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d108)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d108,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d108)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d108)
     label534:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d110)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d110)
     // Begin try
     _r4.i = 14;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1044)
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1d110->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d110, sizeof(XMLVM_JMP_BUF)); goto label332; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1d110->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d110, sizeof(XMLVM_JMP_BUF)); goto label332; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1046)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d110)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d110,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d110)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d110)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d110)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d110,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d110)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d110)
     label538:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d112)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d112)
     // Begin try
     _r15.i = 0;
     _r4.i = 9;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1048)
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_SimpleDateFormat*) _r0.o)->fields.java_text_SimpleDateFormat.formatData_;
     _r38 = _r0;
     XMLVM_CHECK_NPE(38)
     _r28.o = java_text_DateFormatSymbols_getAmPmStrings__(_r38.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1049)
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1d112->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d112, sizeof(XMLVM_JMP_BUF)); goto label332; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1d112->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d112, sizeof(XMLVM_JMP_BUF)); goto label332; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1054)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d112)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d112,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d112)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d112)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d112)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d112,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d112)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d112)
     label553:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d114)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d114)
     // Begin try
     _r15.i = 0;
     _r4.i = 15;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1056)
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_SimpleDateFormat*) _r0.o)->fields.java_text_SimpleDateFormat.formatData_;
     _r38 = _r0;
     XMLVM_CHECK_NPE(38)
@@ -3676,13 +3796,14 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r2 = _r43;
     XMLVM_CHECK_NPE(0)
     _r30.o = java_text_SimpleDateFormat_computeOffset___java_lang_String_java_text_ParsePosition(_r0.o, _r1.o, _r2.o);
-    if (_r30.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w42011aaac32b1d114->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d114, sizeof(XMLVM_JMP_BUF)); goto label632; };
+    if (_r30.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w42016aaac32b1d114->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d114, sizeof(XMLVM_JMP_BUF)); goto label632; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1061)
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1063)
     _r11.i = 1;
     _r27.i = 1;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1065)
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r38 = _r0;
     _r39.i = 16;
@@ -3695,15 +3816,15 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r21.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_Integer*) _r30.o)->tib->vtable[9])(_r30.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d114)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d114,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d114)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d114)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d114)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d114,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d114)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d114)
     label615:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d116)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d116)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1095)
-    if (_r11.i != 0) { XMLVM_MEMCPY(curThread_w42011aaac32b1d116->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d116, sizeof(XMLVM_JMP_BUF)); goto label332; };
+    if (_r11.i != 0) { XMLVM_MEMCPY(curThread_w42016aaac32b1d116->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d116, sizeof(XMLVM_JMP_BUF)); goto label332; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1097)
 
     
@@ -3717,30 +3838,30 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1098)
     _r38.o = JAVA_NULL;
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1d116->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d116, sizeof(XMLVM_JMP_BUF)); goto label91; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1d116->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d116, sizeof(XMLVM_JMP_BUF)); goto label91; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1070)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d116)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d116,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d116)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d116)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d116)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d116,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d116)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d116)
     label632:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d118)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d118)
     // Begin try
     _r16.i = 0;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d118)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d118,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d118)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d118)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d118)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d118,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d118)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d118)
     label634:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d120)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d120)
     // Begin try
     _r0 = _r16;
     _r1 = _r36;
-    if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1d120->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d120, sizeof(XMLVM_JMP_BUF)); goto label615; };
+    if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1d120->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d120, sizeof(XMLVM_JMP_BUF)); goto label615; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1072)
     XMLVM_CHECK_NPE(37)
     XMLVM_CHECK_ARRAY_BOUNDS(_r37.o, _r16.i);
@@ -3748,12 +3869,12 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r17.i = 0;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d120)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d120,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d120)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d120)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d120)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d120,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d120)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d120)
     label644:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d122)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d122)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1074)
     _r0 = _r31;
@@ -3761,7 +3882,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r38 = _r0;
     _r0 = _r17;
     _r1 = _r38;
-    if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1d122->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d122, sizeof(XMLVM_JMP_BUF)); goto label668; };
+    if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1d122->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d122, sizeof(XMLVM_JMP_BUF)); goto label668; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1076)
     XMLVM_CHECK_NPE(31)
     XMLVM_CHECK_ARRAY_BOUNDS(_r31.o, _r17.i);
@@ -3771,15 +3892,15 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r2 = _r13;
     XMLVM_CHECK_NPE(0)
     _r38.i = java_lang_String_startsWith___java_lang_String_int(_r0.o, _r1.o, _r2.i);
-    if (_r38.i == 0) { XMLVM_MEMCPY(curThread_w42011aaac32b1d122->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d122, sizeof(XMLVM_JMP_BUF)); goto label741; };
+    if (_r38.i == 0) { XMLVM_MEMCPY(curThread_w42016aaac32b1d122->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d122, sizeof(XMLVM_JMP_BUF)); goto label741; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d122)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d122,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d122)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d122)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d122)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d122,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d122)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d122)
     label668:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d124)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d124)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1079)
     _r0 = _r31;
@@ -3787,7 +3908,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r38 = _r0;
     _r0 = _r17;
     _r1 = _r38;
-    if (_r0.i == _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1d124->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d124, sizeof(XMLVM_JMP_BUF)); goto label758; };
+    if (_r0.i == _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1d124->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d124, sizeof(XMLVM_JMP_BUF)); goto label758; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1081)
     _r11.i = 1;
     _r27.i = 1;
@@ -3800,23 +3921,24 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r38.i = 3;
     _r0 = _r17;
     _r1 = _r38;
-    if (_r0.i == _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1d124->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d124, sizeof(XMLVM_JMP_BUF)); goto label706; };
+    if (_r0.i == _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1d124->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d124, sizeof(XMLVM_JMP_BUF)); goto label706; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1085)
     _r38.i = 4;
     _r0 = _r17;
     _r1 = _r38;
-    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1d124->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d124, sizeof(XMLVM_JMP_BUF)); goto label744; };
+    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1d124->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d124, sizeof(XMLVM_JMP_BUF)); goto label744; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d124)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d124,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d124)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d124)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d124)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d124,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d124)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d124)
     label706:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d126)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d126)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1086)
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r38 = _r0;
     _r39.i = 16;
@@ -3827,12 +3949,12 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     java_util_Calendar_set___int_int(_r38.o, _r39.i, _r40.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d126)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d126,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d126)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d126)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d126)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d126,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d126)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d126)
     label721:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d128)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d128)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1089)
     //java_util_TimeZone_getRawOffset__[9]
@@ -3852,58 +3974,60 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     
     // Red class access removed: java.text.ParsePosition::setIndex
     XMLVM_RED_CLASS_DEPENDENCY();
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1d128->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d128, sizeof(XMLVM_JMP_BUF)); goto label615; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1d128->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d128, sizeof(XMLVM_JMP_BUF)); goto label615; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d128)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d128,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d128)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d128)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d128)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d128,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d128)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d128)
     label741:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d130)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d130)
     // Begin try
     _r17.i = _r17.i + 1;
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1d130->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d130, sizeof(XMLVM_JMP_BUF)); goto label644; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1d130->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d130, sizeof(XMLVM_JMP_BUF)); goto label644; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1088)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d130)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d130,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d130)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d130)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d130)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d130,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d130)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d130)
     label744:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d132)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d132)
     // Begin try
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r38 = _r0;
     _r39.i = 16;
     _r40.i = 0;
     XMLVM_CHECK_NPE(38)
     java_util_Calendar_set___int_int(_r38.o, _r39.i, _r40.i);
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1d132->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d132, sizeof(XMLVM_JMP_BUF)); goto label721; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1d132->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d132, sizeof(XMLVM_JMP_BUF)); goto label721; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d132)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d132,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d132)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d132)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d132)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d132,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d132)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d132)
     label758:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d134)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d134)
     // Begin try
     _r16.i = _r16.i + 1;
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1d134->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d134, sizeof(XMLVM_JMP_BUF)); goto label634; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1d134->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d134, sizeof(XMLVM_JMP_BUF)); goto label634; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1126)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d134)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d134,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d134)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d134)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d134)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d134,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d134)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d134)
     label761:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d136)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d136)
     // Begin try
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.numberFormat_;
     _r38 = _r0;
     _r0 = _r38;
@@ -3913,16 +4037,16 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     
     // Red class access removed: java.text.NumberFormat::parse
     XMLVM_RED_CLASS_DEPENDENCY();
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1d136->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d136, sizeof(XMLVM_JMP_BUF)); goto label411; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1d136->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d136, sizeof(XMLVM_JMP_BUF)); goto label411; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1129)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d136)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d136,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d136)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d136)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d136)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d136,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d136)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d136)
     label779:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d138)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d138)
     // Begin try
     //java_lang_Number_intValue__[9]
     XMLVM_CHECK_NPE(20)
@@ -3930,16 +4054,16 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r33.i = _r38.i + _r21.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d138)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d138,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d138)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d138)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d138)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d138,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d138)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d138)
     label785:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d140)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d140)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1130)
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1171)
-    if (_r19.i == 0) { XMLVM_MEMCPY(curThread_w42011aaac32b1d140->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d140, sizeof(XMLVM_JMP_BUF)); goto label809; };
+    if (_r19.i == 0) { XMLVM_MEMCPY(curThread_w42016aaac32b1d140->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d140, sizeof(XMLVM_JMP_BUF)); goto label809; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1175)
 
     
@@ -3949,60 +4073,62 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r38.i = 2;
     _r0 = _r6;
     _r1 = _r38;
-    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1d140->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d140, sizeof(XMLVM_JMP_BUF)); goto label809; };
+    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1d140->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d140, sizeof(XMLVM_JMP_BUF)); goto label809; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1176)
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1178)
     _r14.i = 1;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1179)
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_text_SimpleDateFormat*) _r0.o)->fields.java_text_SimpleDateFormat.defaultCentury_;
     _r38 = _r0;
     _r33.i = _r33.i + _r38.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d140)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d140,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d140)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d140)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d140)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d140,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d140)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d140)
     label809:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d142)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d142)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1185)
-    if (_r22.i == 0) { XMLVM_MEMCPY(curThread_w42011aaac32b1d142->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d142, sizeof(XMLVM_JMP_BUF)); goto label821; };
+    if (_r22.i == 0) { XMLVM_MEMCPY(curThread_w42016aaac32b1d142->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d142, sizeof(XMLVM_JMP_BUF)); goto label821; };
     _r38.i = 12;
     _r0 = _r33;
     _r1 = _r38;
-    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1d142->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d142, sizeof(XMLVM_JMP_BUF)); goto label821; };
+    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1d142->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d142, sizeof(XMLVM_JMP_BUF)); goto label821; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1186)
     _r33.i = 0;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d142)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d142,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d142)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d142)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d142)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d142,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d142)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d142)
     label821:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d144)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d144)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1188)
-    if (_r23.i == 0) { XMLVM_MEMCPY(curThread_w42011aaac32b1d144->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d144, sizeof(XMLVM_JMP_BUF)); goto label833; };
+    if (_r23.i == 0) { XMLVM_MEMCPY(curThread_w42016aaac32b1d144->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d144, sizeof(XMLVM_JMP_BUF)); goto label833; };
     _r38.i = 24;
     _r0 = _r33;
     _r1 = _r38;
-    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1d144->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d144, sizeof(XMLVM_JMP_BUF)); goto label833; };
+    if (_r0.i != _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1d144->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d144, sizeof(XMLVM_JMP_BUF)); goto label833; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1189)
     _r33.i = 0;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d144)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d144,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d144)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d144)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d144)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d144,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d144)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d144)
     label833:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d146)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d146)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1192)
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r38 = _r0;
     _r0 = _r38;
@@ -4010,18 +4136,18 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r2 = _r33;
     XMLVM_CHECK_NPE(0)
     java_util_Calendar_set___int_int(_r0.o, _r1.i, _r2.i);
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1d146->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d146, sizeof(XMLVM_JMP_BUF)); goto label94; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1d146->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d146, sizeof(XMLVM_JMP_BUF)); goto label94; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1131)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d146)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d146,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d146)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d146)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d146)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d146,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d146)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d146)
     label849:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d148)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d148)
     // Begin try
-    if (_r28.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w42011aaac32b1d148->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d148, sizeof(XMLVM_JMP_BUF)); goto label988; };
+    if (_r28.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w42016aaac32b1d148->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d148, sizeof(XMLVM_JMP_BUF)); goto label988; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1133)
 
     
@@ -4031,12 +4157,12 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r12 = _r21;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d148)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d148,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d148)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d148)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d148)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d148,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d148)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d148)
     label858:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d150)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d150)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1136)
     _r0 = _r28;
@@ -4044,12 +4170,12 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r38 = _r0;
     _r0 = _r12;
     _r1 = _r38;
-    if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1d150->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d150, sizeof(XMLVM_JMP_BUF)); goto label909; };
+    if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1d150->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d150, sizeof(XMLVM_JMP_BUF)); goto label909; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1138)
     XMLVM_CHECK_NPE(28)
     XMLVM_CHECK_ARRAY_BOUNDS(_r28.o, _r12.i);
     _r38.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r28.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r12.i];
-    if (_r38.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w42011aaac32b1d150->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d150, sizeof(XMLVM_JMP_BUF)); goto label978; };
+    if (_r38.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w42016aaac32b1d150->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d150, sizeof(XMLVM_JMP_BUF)); goto label978; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1139)
     XMLVM_CHECK_NPE(42)
     _r38.o = java_lang_String_toUpperCase__(_r42.o);
@@ -4063,7 +4189,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r2 = _r13;
     XMLVM_CHECK_NPE(0)
     _r38.i = java_lang_String_startsWith___java_lang_String_int(_r0.o, _r1.o, _r2.i);
-    if (_r38.i == 0) { XMLVM_MEMCPY(curThread_w42011aaac32b1d150->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d150, sizeof(XMLVM_JMP_BUF)); goto label978; };
+    if (_r38.i == 0) { XMLVM_MEMCPY(curThread_w42016aaac32b1d150->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d150, sizeof(XMLVM_JMP_BUF)); goto label978; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1142)
     _r10.i = 1;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1143)
@@ -4082,38 +4208,38 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     XMLVM_RED_CLASS_DEPENDENCY();
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d150)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d150,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d150)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d150)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d150)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d150,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d150)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d150)
     label909:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d152)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d152)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1147)
-    if (_r10.i != 0) { XMLVM_MEMCPY(curThread_w42011aaac32b1d152->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d152, sizeof(XMLVM_JMP_BUF)); goto label966; };
-    if (_r29.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w42011aaac32b1d152->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d152, sizeof(XMLVM_JMP_BUF)); goto label966; };
+    if (_r10.i != 0) { XMLVM_MEMCPY(curThread_w42016aaac32b1d152->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d152, sizeof(XMLVM_JMP_BUF)); goto label966; };
+    if (_r29.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w42016aaac32b1d152->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d152, sizeof(XMLVM_JMP_BUF)); goto label966; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1149)
     _r12 = _r21;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d152)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d152,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d152)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d152)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d152)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d152,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d152)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d152)
     label915:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d154)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d154)
     // Begin try
     _r0 = _r29;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r38 = _r0;
     _r0 = _r12;
     _r1 = _r38;
-    if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w42011aaac32b1d154->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d154, sizeof(XMLVM_JMP_BUF)); goto label966; };
+    if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w42016aaac32b1d154->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d154, sizeof(XMLVM_JMP_BUF)); goto label966; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1151)
     XMLVM_CHECK_NPE(29)
     XMLVM_CHECK_ARRAY_BOUNDS(_r29.o, _r12.i);
     _r38.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r29.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r12.i];
-    if (_r38.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w42011aaac32b1d154->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d154, sizeof(XMLVM_JMP_BUF)); goto label981; };
+    if (_r38.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w42016aaac32b1d154->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d154, sizeof(XMLVM_JMP_BUF)); goto label981; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1152)
     XMLVM_CHECK_NPE(42)
     _r38.o = java_lang_String_toUpperCase__(_r42.o);
@@ -4127,7 +4253,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r2 = _r13;
     XMLVM_CHECK_NPE(0)
     _r38.i = java_lang_String_startsWith___java_lang_String_int(_r0.o, _r1.o, _r2.i);
-    if (_r38.i == 0) { XMLVM_MEMCPY(curThread_w42011aaac32b1d154->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d154, sizeof(XMLVM_JMP_BUF)); goto label981; };
+    if (_r38.i == 0) { XMLVM_MEMCPY(curThread_w42016aaac32b1d154->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d154, sizeof(XMLVM_JMP_BUF)); goto label981; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1155)
     _r10.i = 1;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1156)
@@ -4146,15 +4272,15 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     XMLVM_RED_CLASS_DEPENDENCY();
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d154)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d154,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d154)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d154)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d154)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d154,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d154)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d154)
     label966:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d156)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d156)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1161)
-    if (_r10.i != 0) { XMLVM_MEMCPY(curThread_w42011aaac32b1d156->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d156, sizeof(XMLVM_JMP_BUF)); goto label984; };
+    if (_r10.i != 0) { XMLVM_MEMCPY(curThread_w42016aaac32b1d156->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d156, sizeof(XMLVM_JMP_BUF)); goto label984; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1163)
     _r0 = _r43;
     _r1 = _r13;
@@ -4164,67 +4290,68 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     XMLVM_RED_CLASS_DEPENDENCY();
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1164)
     _r38.o = JAVA_NULL;
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1d156->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d156, sizeof(XMLVM_JMP_BUF)); goto label91; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1d156->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d156, sizeof(XMLVM_JMP_BUF)); goto label91; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d156)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d156,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d156)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d156)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d156)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d156,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d156)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d156)
     label978:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d158)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d158)
     // Begin try
     _r12.i = _r12.i + 1;
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1d158->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d158, sizeof(XMLVM_JMP_BUF)); goto label858; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1d158->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d158, sizeof(XMLVM_JMP_BUF)); goto label858; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d158)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d158,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d158)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d158)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d158)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d158,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d158)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d158)
     label981:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d160)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d160)
     // Begin try
     _r12.i = _r12.i + 1;
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1d160->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d160, sizeof(XMLVM_JMP_BUF)); goto label915; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1d160->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d160, sizeof(XMLVM_JMP_BUF)); goto label915; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1166)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d160)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d160,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d160)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d160)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d160)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d160,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d160)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d160)
     label984:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d162)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d162)
     // Begin try
     _r33 = _r12;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1167)
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1d162->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d162, sizeof(XMLVM_JMP_BUF)); goto label785; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1d162->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d162, sizeof(XMLVM_JMP_BUF)); goto label785; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1169)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d162)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d162,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d162)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d162)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d162)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d162,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d162)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d162)
     label988:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d164)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d164)
     // Begin try
     _r33 = _r21;
-    { XMLVM_MEMCPY(curThread_w42011aaac32b1d164->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d164, sizeof(XMLVM_JMP_BUF)); goto label785; };
+    { XMLVM_MEMCPY(curThread_w42016aaac32b1d164->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d164, sizeof(XMLVM_JMP_BUF)); goto label785; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1195)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d164)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d164,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d164)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d164)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d164)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d164,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d164)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d164)
     label992:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d166)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d166)
     // Begin try
-    if (_r14.i == 0) { XMLVM_MEMCPY(curThread_w42011aaac32b1d166->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d166, sizeof(XMLVM_JMP_BUF)); goto label1041; };
+    if (_r14.i == 0) { XMLVM_MEMCPY(curThread_w42016aaac32b1d166->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d166, sizeof(XMLVM_JMP_BUF)); goto label1041; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1199)
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r38 = _r0;
     _r39.i = 1;
@@ -4232,18 +4359,21 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     _r35.i = java_util_Calendar_get___int(_r38.o, _r39.i);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1200)
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r38 = _r0;
     XMLVM_CHECK_NPE(38)
     _r38.o = java_util_Calendar_getTime__(_r38.o);
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_SimpleDateFormat*) _r0.o)->fields.java_text_SimpleDateFormat.defaultCenturyStart_;
     _r39 = _r0;
     XMLVM_CHECK_NPE(38)
     _r38.i = java_util_Date_compareTo___java_util_Date(_r38.o, _r39.o);
-    if (_r38.i >= 0) { XMLVM_MEMCPY(curThread_w42011aaac32b1d166->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d166, sizeof(XMLVM_JMP_BUF)); goto label1041; };
+    if (_r38.i >= 0) { XMLVM_MEMCPY(curThread_w42016aaac32b1d166->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d166, sizeof(XMLVM_JMP_BUF)); goto label1041; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1201)
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r38 = _r0;
     _r39.i = 1;
@@ -4252,17 +4382,18 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     java_util_Calendar_set___int_int(_r38.o, _r39.i, _r40.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d166)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d166,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d166)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d166)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d166)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d166,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d166)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d166)
     label1041:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d168)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d168)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1203)
-    if (_r27.i != 0) { XMLVM_MEMCPY(curThread_w42011aaac32b1d168->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42011aaac32b1d168, sizeof(XMLVM_JMP_BUF)); goto label1065; };
+    if (_r27.i != 0) { XMLVM_MEMCPY(curThread_w42016aaac32b1d168->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42016aaac32b1d168, sizeof(XMLVM_JMP_BUF)); goto label1065; };
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1207)
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r38 = _r0;
     _r39.i = 16;
@@ -4270,6 +4401,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     java_util_Calendar_clear___int(_r38.o, _r39.i);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1208)
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r38 = _r0;
     _r39.i = 15;
@@ -4277,25 +4409,26 @@ JAVA_OBJECT java_text_SimpleDateFormat_parse___java_lang_String_java_text_ParseP
     java_util_Calendar_clear___int(_r38.o, _r39.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d168)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d168,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d168)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d168)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d168)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d168,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d168)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d168)
     label1065:;
-    XMLVM_TRY_BEGIN(w42011aaac32b1d170)
+    XMLVM_TRY_BEGIN(w42016aaac32b1d170)
     // Begin try
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1210)
     _r0 = _r41;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_text_DateFormat*) _r0.o)->fields.java_text_DateFormat.calendar_;
     _r38 = _r0;
     XMLVM_CHECK_NPE(38)
     _r38.o = java_util_Calendar_getTime__(_r38.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac32b1d170)
-        XMLVM_CATCH_SPECIFIC(w42011aaac32b1d170,java_lang_IllegalArgumentException,201)
-    XMLVM_CATCH_END(w42011aaac32b1d170)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac32b1d170)
+    XMLVM_CATCH_BEGIN(w42016aaac32b1d170)
+        XMLVM_CATCH_SPECIFIC(w42016aaac32b1d170,java_lang_IllegalArgumentException,201)
+    XMLVM_CATCH_END(w42016aaac32b1d170)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac32b1d170)
     goto label91;
     label1078:;
     //XMLVM_END_WRAPPER
@@ -4333,7 +4466,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_computeOffset___java_lang_String_java_tex
     _r0.i = java_util_regex_Matcher_lookingAt__(_r3.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1268)
     _r8.i = 2;
-    XMLVM_TRY_BEGIN(w42011aaac33b1c13)
+    XMLVM_TRY_BEGIN(w42016aaac33b1c13)
     // Begin try
     //java_util_regex_Matcher_group___int[10]
     XMLVM_CHECK_NPE(3)
@@ -4350,10 +4483,10 @@ JAVA_OBJECT java_text_SimpleDateFormat_computeOffset___java_lang_String_java_tex
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) ((java_util_regex_Matcher*) _r3.o)->tib->vtable[10])(_r3.o, _r8.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42011aaac33b1c13)
-        XMLVM_CATCH_SPECIFIC(w42011aaac33b1c13,java_lang_IllegalStateException,92)
-    XMLVM_CATCH_END(w42011aaac33b1c13)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42011aaac33b1c13)
+    XMLVM_CATCH_BEGIN(w42016aaac33b1c13)
+        XMLVM_CATCH_SPECIFIC(w42016aaac33b1c13,java_lang_IllegalStateException,92)
+    XMLVM_CATCH_END(w42016aaac33b1c13)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42016aaac33b1c13)
     label26:;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1276)
     if (_r0.i == 0) goto label125;
@@ -4414,8 +4547,8 @@ JAVA_OBJECT java_text_SimpleDateFormat_computeOffset___java_lang_String_java_tex
     return _r8.o;
     label92:;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1272)
-    java_lang_Thread* curThread_w42011aaac33b1c57 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r8.o = curThread_w42011aaac33b1c57->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w42016aaac33b1c57 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r8.o = curThread_w42016aaac33b1c57->fields.java_lang_Thread.xmlvmException_;
     _r2 = _r8;
     _r0.i = 0;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1274)
@@ -4486,16 +4619,19 @@ void java_text_SimpleDateFormat_computeCenturyStart__(JAVA_OBJECT me)
     _r4.o = me;
     _r3.i = 1;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1304)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_text_DateFormat*) _r4.o)->fields.java_text_DateFormat.calendar_;
     XMLVM_CHECK_NPE(1)
     _r0.i = java_util_Calendar_get___int(_r1.o, _r3.i);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1305)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_text_DateFormat*) _r4.o)->fields.java_text_DateFormat.calendar_;
     _r2.i = 80;
     _r2.i = _r0.i - _r2.i;
     XMLVM_CHECK_NPE(1)
     java_util_Calendar_set___int_int(_r1.o, _r3.i, _r2.i);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1306)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_text_DateFormat*) _r4.o)->fields.java_text_DateFormat.calendar_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_util_Calendar_getTime__(_r1.o);
@@ -4520,6 +4656,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_clone__(JAVA_OBJECT me)
     _r0.o = java_text_DateFormat_clone__(_r2.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1318)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_text_SimpleDateFormat*) _r2.o)->fields.java_text_SimpleDateFormat.formatData_;
     //java_text_DateFormatSymbols_clone__[0]
     XMLVM_CHECK_NPE(1)
@@ -4528,6 +4665,7 @@ JAVA_OBJECT java_text_SimpleDateFormat_clone__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_text_SimpleDateFormat_setDateFormatSymbols___java_text_DateFormatSymbols(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SimpleDateFormat.java", 1319)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_text_SimpleDateFormat*) _r2.o)->fields.java_text_SimpleDateFormat.defaultCenturyStart_;
     //java_util_Date_clone__[0]
     XMLVM_CHECK_NPE(1)

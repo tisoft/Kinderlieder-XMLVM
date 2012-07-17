@@ -322,14 +322,18 @@ void gnu_xml_stream_XMLParser_ContentModel___INIT____gnu_xml_stream_XMLParser_in
     _r3.i = n2;
     _r0.i = 1;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4825)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_ContentModel*) _r1.o)->fields.gnu_xml_stream_XMLParser_ContentModel.this_0_ = _r2.o;
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 4826)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_ContentModel*) _r1.o)->fields.gnu_xml_stream_XMLParser_ContentModel.type_ = _r3.i;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4827)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_ContentModel*) _r1.o)->fields.gnu_xml_stream_XMLParser_ContentModel.min_ = _r0.i;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4828)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_stream_XMLParser_ContentModel*) _r1.o)->fields.gnu_xml_stream_XMLParser_ContentModel.max_ = _r0.i;
     XMLVM_SOURCE_POSITION("XMLParser.java", 4829)
     XMLVM_EXIT_METHOD()

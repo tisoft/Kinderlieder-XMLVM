@@ -410,6 +410,7 @@ void java_net_InetAddress_Cache_add___java_net_InetAddress(JAVA_OBJECT n1)
     // Begin try
     XMLVM_SOURCE_POSITION("InetAddress.java", 574)
     _r2.o = java_net_InetAddress_Cache_GET_head();
+    XMLVM_CHECK_NPE(0)
     ((java_net_InetAddress_CacheElement*) _r0.o)->fields.java_net_InetAddress_CacheElement.next_ = _r2.o;
     XMLVM_SOURCE_POSITION("InetAddress.java", 575)
     java_net_InetAddress_Cache_PUT_head( _r0.o);
@@ -498,6 +499,7 @@ JAVA_OBJECT java_net_InetAddress_Cache_get___java_lang_String(JAVA_OBJECT n1)
     XMLVM_SOURCE_POSITION("InetAddress.java", 584)
     _r2 = _r0;
     XMLVM_SOURCE_POSITION("InetAddress.java", 585)
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_net_InetAddress_CacheElement*) _r0.o)->fields.java_net_InetAddress_CacheElement.next_;
     // End try
     XMLVM_TRY_END
@@ -603,11 +605,13 @@ void java_net_InetAddress_Cache_deleteTail__()
     XMLVM_TRY_BEGIN(w3731aaab7b1c17)
     // Begin try
     XMLVM_SOURCE_POSITION("InetAddress.java", 604)
+    XMLVM_CHECK_NPE(0)
     _r3.o = ((java_net_InetAddress_CacheElement*) _r0.o)->fields.java_net_InetAddress_CacheElement.next_;
     if (_r3.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w3731aaab7b1c17->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w3731aaab7b1c17, sizeof(XMLVM_JMP_BUF)); goto label28; };
     XMLVM_SOURCE_POSITION("InetAddress.java", 605)
     _r1 = _r0;
     XMLVM_SOURCE_POSITION("InetAddress.java", 606)
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_net_InetAddress_CacheElement*) _r0.o)->fields.java_net_InetAddress_CacheElement.next_;
     { XMLVM_MEMCPY(curThread_w3731aaab7b1c17->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w3731aaab7b1c17, sizeof(XMLVM_JMP_BUF)); goto label20; };
     XMLVM_SOURCE_POSITION("InetAddress.java", 608)
@@ -621,6 +625,7 @@ void java_net_InetAddress_Cache_deleteTail__()
     XMLVM_TRY_BEGIN(w3731aaab7b1c19)
     // Begin try
     _r3.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(1)
     ((java_net_InetAddress_CacheElement*) _r1.o)->fields.java_net_InetAddress_CacheElement.next_ = _r3.o;
     // End try
     XMLVM_TRY_END
@@ -672,10 +677,13 @@ void java_net_InetAddress_Cache_moveToHead___java_net_InetAddress_CacheElement_j
     XMLVM_TRY_BEGIN(w3731aaab8b1c13)
     // Begin try
     XMLVM_SOURCE_POSITION("InetAddress.java", 616)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_net_InetAddress_CacheElement*) _r2.o)->fields.java_net_InetAddress_CacheElement.next_;
+    XMLVM_CHECK_NPE(3)
     ((java_net_InetAddress_CacheElement*) _r3.o)->fields.java_net_InetAddress_CacheElement.next_ = _r1.o;
     XMLVM_SOURCE_POSITION("InetAddress.java", 617)
     _r1.o = java_net_InetAddress_Cache_GET_head();
+    XMLVM_CHECK_NPE(2)
     ((java_net_InetAddress_CacheElement*) _r2.o)->fields.java_net_InetAddress_CacheElement.next_ = _r1.o;
     XMLVM_SOURCE_POSITION("InetAddress.java", 618)
     java_net_InetAddress_Cache_PUT_head( _r2.o);

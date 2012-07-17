@@ -307,6 +307,7 @@ JAVA_BOOLEAN java_util_Collections_UnmodifiableSet_equals___java_lang_Object(JAV
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 1384)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableCollection*) _r1.o)->fields.java_util_Collections_UnmodifiableCollection.c_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_equals___java_lang_Object])(_r0.o, _r2.o);
@@ -323,6 +324,7 @@ JAVA_INT java_util_Collections_UnmodifiableSet_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1389)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableCollection*) _r1.o)->fields.java_util_Collections_UnmodifiableCollection.c_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_hashCode__])(_r0.o);

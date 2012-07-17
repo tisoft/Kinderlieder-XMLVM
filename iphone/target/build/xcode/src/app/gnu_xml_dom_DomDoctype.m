@@ -712,10 +712,13 @@ void gnu_xml_dom_DomDoctype___INIT____org_w3c_dom_DOMImplementation_java_lang_St
     _r0.o = __NEW_java_util_HashMap();
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_dom_DomDoctype*) _r6.o)->fields.gnu_xml_dom_DomDoctype.elements_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 119)
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_dom_DomDoctype*) _r6.o)->fields.gnu_xml_dom_DomDoctype.implementation_ = _r7.o;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 120)
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_dom_DomDoctype*) _r6.o)->fields.gnu_xml_dom_DomDoctype.subset_ = _r11.o;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 121)
     XMLVM_EXIT_METHOD()
@@ -756,11 +759,13 @@ void gnu_xml_dom_DomDoctype___INIT____gnu_xml_dom_DomDocument_java_lang_String_j
     _r0.o = __NEW_java_util_HashMap();
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_dom_DomDoctype*) _r6.o)->fields.gnu_xml_dom_DomDoctype.elements_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 136)
     //gnu_xml_dom_DomDocument_getImplementation__[73]
     XMLVM_CHECK_NPE(7)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((gnu_xml_dom_DomDocument*) _r7.o)->tib->vtable[73])(_r7.o);
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_dom_DomDoctype*) _r6.o)->fields.gnu_xml_dom_DomDoctype.implementation_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 137)
     XMLVM_EXIT_METHOD()
@@ -793,6 +798,7 @@ JAVA_OBJECT gnu_xml_dom_DomDoctype_getEntities__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 161)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_DomDoctype*) _r2.o)->fields.gnu_xml_dom_DomDoctype.entities_;
     if (_r0.o != JAVA_NULL) goto label12;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 163)
@@ -800,9 +806,11 @@ JAVA_OBJECT gnu_xml_dom_DomDoctype_getEntities__(JAVA_OBJECT me)
     _r1.i = 6;
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_DomNamedNodeMap___INIT____gnu_xml_dom_DomNode_short(_r0.o, _r2.o, _r1.i);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomDoctype*) _r2.o)->fields.gnu_xml_dom_DomDoctype.entities_ = _r0.o;
     label12:;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 165)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_DomDoctype*) _r2.o)->fields.gnu_xml_dom_DomDoctype.entities_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -867,11 +875,13 @@ JAVA_OBJECT gnu_xml_dom_DomDoctype_declareEntity___java_lang_String_java_lang_St
     XMLVM_CHECK_NPE(6)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((gnu_xml_dom_DomDoctype*) _r6.o)->tib->vtable[52])(_r6.o);
     XMLVM_SOURCE_POSITION("DomDoctype.java", 202)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((gnu_xml_dom_DomNode*) _r6.o)->fields.gnu_xml_dom_DomNode.owner_;
     if (_r0.o == JAVA_NULL) goto label65;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 203)
     // "1.1"
     _r0.o = xmlvm_create_java_string_from_pool(283);
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((gnu_xml_dom_DomNode*) _r6.o)->fields.gnu_xml_dom_DomNode.owner_;
     //gnu_xml_dom_DomDocument_getXmlVersion__[78]
     XMLVM_CHECK_NPE(1)
@@ -882,6 +892,7 @@ JAVA_OBJECT gnu_xml_dom_DomDoctype_declareEntity___java_lang_String_java_lang_St
     label52:;
     gnu_xml_dom_DomDocument_checkName___java_lang_String_boolean(_r7.o, _r0.i);
     XMLVM_SOURCE_POSITION("DomDoctype.java", 204)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((gnu_xml_dom_DomDoctype*) _r6.o)->fields.gnu_xml_dom_DomDoctype.entities_;
     //gnu_xml_dom_DomNamedNodeMap_getNamedItem___java_lang_String[8]
     XMLVM_CHECK_NPE(0)
@@ -896,6 +907,7 @@ JAVA_OBJECT gnu_xml_dom_DomDoctype_declareEntity___java_lang_String_java_lang_St
     label67:;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 209)
     _r0.o = __NEW_gnu_xml_dom_DomEntity();
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((gnu_xml_dom_DomNode*) _r6.o)->fields.gnu_xml_dom_DomNode.owner_;
     _r2 = _r7;
     _r3 = _r8;
@@ -904,6 +916,7 @@ JAVA_OBJECT gnu_xml_dom_DomDoctype_declareEntity___java_lang_String_java_lang_St
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_DomEntity___INIT____gnu_xml_dom_DomDocument_java_lang_String_java_lang_String_java_lang_String_java_lang_String(_r0.o, _r1.o, _r2.o, _r3.o, _r4.o, _r5.o);
     XMLVM_SOURCE_POSITION("DomDoctype.java", 210)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((gnu_xml_dom_DomDoctype*) _r6.o)->fields.gnu_xml_dom_DomDoctype.entities_;
     //gnu_xml_dom_DomNamedNodeMap_setNamedItem___org_w3c_dom_Node[13]
     XMLVM_CHECK_NPE(1)
@@ -921,6 +934,7 @@ JAVA_OBJECT gnu_xml_dom_DomDoctype_getNotations__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 226)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_DomDoctype*) _r2.o)->fields.gnu_xml_dom_DomDoctype.notations_;
     if (_r0.o != JAVA_NULL) goto label13;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 228)
@@ -928,9 +942,11 @@ JAVA_OBJECT gnu_xml_dom_DomDoctype_getNotations__(JAVA_OBJECT me)
     _r1.i = 12;
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_DomNamedNodeMap___INIT____gnu_xml_dom_DomNode_short(_r0.o, _r2.o, _r1.i);
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomDoctype*) _r2.o)->fields.gnu_xml_dom_DomDoctype.notations_ = _r0.o;
     label13:;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 230)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_DomDoctype*) _r2.o)->fields.gnu_xml_dom_DomDoctype.notations_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -967,11 +983,13 @@ JAVA_OBJECT gnu_xml_dom_DomDoctype_declareNotation___java_lang_String_java_lang_
     XMLVM_CHECK_NPE(2)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((gnu_xml_dom_DomDoctype*) _r2.o)->tib->vtable[55])(_r2.o);
     XMLVM_SOURCE_POSITION("DomDoctype.java", 258)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_DomNode*) _r2.o)->fields.gnu_xml_dom_DomNode.owner_;
     if (_r0.o == JAVA_NULL) goto label48;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 259)
     // "1.1"
     _r0.o = xmlvm_create_java_string_from_pool(283);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_dom_DomNode*) _r2.o)->fields.gnu_xml_dom_DomNode.owner_;
     //gnu_xml_dom_DomDocument_getXmlVersion__[78]
     XMLVM_CHECK_NPE(1)
@@ -983,10 +1001,12 @@ JAVA_OBJECT gnu_xml_dom_DomDoctype_declareNotation___java_lang_String_java_lang_
     gnu_xml_dom_DomDocument_checkName___java_lang_String_boolean(_r3.o, _r0.i);
     XMLVM_SOURCE_POSITION("DomDoctype.java", 261)
     _r0.o = __NEW_gnu_xml_dom_DomNotation();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_dom_DomNode*) _r2.o)->fields.gnu_xml_dom_DomNode.owner_;
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_DomNotation___INIT____gnu_xml_dom_DomDocument_java_lang_String_java_lang_String_java_lang_String(_r0.o, _r1.o, _r3.o, _r4.o, _r5.o);
     XMLVM_SOURCE_POSITION("DomDoctype.java", 262)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_dom_DomDoctype*) _r2.o)->fields.gnu_xml_dom_DomDoctype.notations_;
     //gnu_xml_dom_DomNamedNodeMap_setNamedItem___org_w3c_dom_Node[13]
     XMLVM_CHECK_NPE(1)
@@ -1008,6 +1028,7 @@ JAVA_OBJECT gnu_xml_dom_DomDoctype_getInternalSubset__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 282)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomDoctype*) _r1.o)->fields.gnu_xml_dom_DomDoctype.subset_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1039,17 +1060,21 @@ void gnu_xml_dom_DomDoctype_makeReadonly__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_DomNode_makeReadonly__(_r1.o);
     XMLVM_SOURCE_POSITION("DomDoctype.java", 302)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomDoctype*) _r1.o)->fields.gnu_xml_dom_DomDoctype.entities_;
     if (_r0.o == JAVA_NULL) goto label12;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 304)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomDoctype*) _r1.o)->fields.gnu_xml_dom_DomDoctype.entities_;
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_DomNamedNodeMap_makeReadonly__(_r0.o);
     label12:;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 306)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomDoctype*) _r1.o)->fields.gnu_xml_dom_DomDoctype.notations_;
     if (_r0.o == JAVA_NULL) goto label21;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 308)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomDoctype*) _r1.o)->fields.gnu_xml_dom_DomDoctype.notations_;
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_DomNamedNodeMap_makeReadonly__(_r0.o);
@@ -1070,19 +1095,25 @@ void gnu_xml_dom_DomDoctype_setOwner___gnu_xml_dom_DomDocument(JAVA_OBJECT me, J
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 314)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomDoctype*) _r1.o)->fields.gnu_xml_dom_DomDoctype.entities_;
     if (_r0.o == JAVA_NULL) goto label10;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 316)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomDoctype*) _r1.o)->fields.gnu_xml_dom_DomDoctype.entities_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_dom_DomNamedNodeMap*) _r0.o)->fields.gnu_xml_dom_DomNamedNodeMap.first_;
     label8:;
     if (_r0.o != JAVA_NULL) goto label24;
     label10:;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 321)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomDoctype*) _r1.o)->fields.gnu_xml_dom_DomDoctype.notations_;
     if (_r0.o == JAVA_NULL) goto label20;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 323)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomDoctype*) _r1.o)->fields.gnu_xml_dom_DomDoctype.notations_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_dom_DomNamedNodeMap*) _r0.o)->fields.gnu_xml_dom_DomNamedNodeMap.first_;
     label18:;
     if (_r0.o != JAVA_NULL) goto label30;
@@ -1098,6 +1129,7 @@ void gnu_xml_dom_DomDoctype_setOwner___gnu_xml_dom_DomDocument(JAVA_OBJECT me, J
     //gnu_xml_dom_DomNode_setOwner___gnu_xml_dom_DomDocument[48]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_dom_DomNode*) _r0.o)->tib->vtable[48])(_r0.o, _r2.o);
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_dom_DomNode*) _r0.o)->fields.gnu_xml_dom_DomNode.next_;
     goto label8;
     label30:;
@@ -1105,6 +1137,7 @@ void gnu_xml_dom_DomDoctype_setOwner___gnu_xml_dom_DomDocument(JAVA_OBJECT me, J
     //gnu_xml_dom_DomNode_setOwner___gnu_xml_dom_DomDocument[48]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_dom_DomNode*) _r0.o)->tib->vtable[48])(_r0.o, _r2.o);
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((gnu_xml_dom_DomNode*) _r0.o)->fields.gnu_xml_dom_DomNode.next_;
     goto label18;
     //XMLVM_END_WRAPPER
@@ -1122,6 +1155,7 @@ JAVA_BOOLEAN gnu_xml_dom_DomDoctype_supports___java_lang_String_java_lang_String
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 338)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomDoctype*) _r1.o)->fields.gnu_xml_dom_DomDoctype.implementation_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_DOMImplementation_hasFeature___java_lang_String_java_lang_String])(_r0.o, _r2.o, _r3.o);
@@ -1138,6 +1172,7 @@ JAVA_OBJECT gnu_xml_dom_DomDoctype_getImplementation__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 346)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomDoctype*) _r1.o)->fields.gnu_xml_dom_DomDoctype.implementation_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1166,6 +1201,7 @@ void gnu_xml_dom_DomDoctype_elementDecl___java_lang_String_java_lang_String(JAVA
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_DTDElementTypeInfo___INIT____java_lang_String_java_lang_String(_r0.o, _r3.o, _r4.o);
     XMLVM_SOURCE_POSITION("DomDoctype.java", 355)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_dom_DomDoctype*) _r2.o)->fields.gnu_xml_dom_DomDoctype.elements_;
     //java_util_HashMap_put___java_lang_Object_java_lang_Object[14]
     XMLVM_CHECK_NPE(1)
@@ -1176,6 +1212,7 @@ void gnu_xml_dom_DomDoctype_elementDecl___java_lang_String_java_lang_String(JAVA
     return;
     label17:;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 359)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_DTDElementTypeInfo*) _r0.o)->fields.gnu_xml_dom_DTDElementTypeInfo.model_ = _r4.o;
     goto label16;
     //XMLVM_END_WRAPPER
@@ -1191,6 +1228,7 @@ JAVA_OBJECT gnu_xml_dom_DomDoctype_getElementTypeInfo___java_lang_String(JAVA_OB
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 365)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomDoctype*) _r1.o)->fields.gnu_xml_dom_DomDoctype.elements_;
     //java_util_HashMap_get___java_lang_Object[10]
     XMLVM_CHECK_NPE(0)
@@ -1243,6 +1281,7 @@ void gnu_xml_dom_DomDoctype_attributeDecl___java_lang_String_java_lang_String_ja
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_DTDElementTypeInfo___INIT____java_lang_String_java_lang_String(_r1.o, _r7.o, _r2.o);
     XMLVM_SOURCE_POSITION("DomDoctype.java", 377)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_xml_dom_DomDoctype*) _r6.o)->fields.gnu_xml_dom_DomDoctype.elements_;
     //java_util_HashMap_put___java_lang_Object_java_lang_Object[14]
     XMLVM_CHECK_NPE(2)
@@ -1260,6 +1299,7 @@ void gnu_xml_dom_DomDoctype_attributeDecl___java_lang_String_java_lang_String_ja
     if (_r0.i == 0) goto label41;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 382)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_dom_DomDoctype*) _r6.o)->fields.gnu_xml_dom_DomDoctype.ids_ = _r0.i;
     label41:;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 384)
@@ -1280,6 +1320,7 @@ JAVA_OBJECT gnu_xml_dom_DomDoctype_getAttributeTypeInfo___java_lang_String_java_
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 389)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomDoctype*) _r1.o)->fields.gnu_xml_dom_DomDoctype.elements_;
     //java_util_HashMap_get___java_lang_Object[10]
     XMLVM_CHECK_NPE(0)
@@ -1307,6 +1348,7 @@ JAVA_BOOLEAN gnu_xml_dom_DomDoctype_hasIds__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 396)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_dom_DomDoctype*) _r1.o)->fields.gnu_xml_dom_DomDoctype.ids_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -1408,6 +1450,7 @@ JAVA_OBJECT gnu_xml_dom_DomDoctype_clone__(JAVA_OBJECT me)
     _r0.o = gnu_xml_dom_DomNode_clone__(_r5.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 435)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_xml_dom_DomDoctype*) _r5.o)->fields.gnu_xml_dom_DomDoctype.entities_;
     if (_r1.o == JAVA_NULL) goto label25;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 437)
@@ -1415,14 +1458,18 @@ JAVA_OBJECT gnu_xml_dom_DomDoctype_clone__(JAVA_OBJECT me)
     _r2.i = 6;
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_DomNamedNodeMap___INIT____gnu_xml_dom_DomNode_short(_r1.o, _r0.o, _r2.i);
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_DomDoctype*) _r0.o)->fields.gnu_xml_dom_DomDoctype.entities_ = _r1.o;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 438)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_xml_dom_DomDoctype*) _r5.o)->fields.gnu_xml_dom_DomDoctype.entities_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((gnu_xml_dom_DomNamedNodeMap*) _r1.o)->fields.gnu_xml_dom_DomNamedNodeMap.first_;
     label23:;
     if (_r1.o != JAVA_NULL) goto label45;
     label25:;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 443)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_xml_dom_DomDoctype*) _r5.o)->fields.gnu_xml_dom_DomDoctype.notations_;
     if (_r1.o == JAVA_NULL) goto label44;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 445)
@@ -1430,9 +1477,12 @@ JAVA_OBJECT gnu_xml_dom_DomDoctype_clone__(JAVA_OBJECT me)
     _r2.i = 12;
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_DomNamedNodeMap___INIT____gnu_xml_dom_DomNode_short(_r1.o, _r0.o, _r2.i);
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_DomDoctype*) _r0.o)->fields.gnu_xml_dom_DomDoctype.notations_ = _r1.o;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 446)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_xml_dom_DomDoctype*) _r5.o)->fields.gnu_xml_dom_DomDoctype.notations_;
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((gnu_xml_dom_DomNamedNodeMap*) _r1.o)->fields.gnu_xml_dom_DomNamedNodeMap.first_;
     label42:;
     if (_r1.o != JAVA_NULL) goto label57;
@@ -1442,6 +1492,7 @@ JAVA_OBJECT gnu_xml_dom_DomDoctype_clone__(JAVA_OBJECT me)
     return _r0.o;
     label45:;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 440)
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((gnu_xml_dom_DomDoctype*) _r0.o)->fields.gnu_xml_dom_DomDoctype.entities_;
     //gnu_xml_dom_DomNode_cloneNode___boolean[8]
     XMLVM_CHECK_NPE(1)
@@ -1449,10 +1500,12 @@ JAVA_OBJECT gnu_xml_dom_DomDoctype_clone__(JAVA_OBJECT me)
     //gnu_xml_dom_DomNamedNodeMap_setNamedItem___org_w3c_dom_Node[13]
     XMLVM_CHECK_NPE(2)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_dom_DomNamedNodeMap*) _r2.o)->tib->vtable[13])(_r2.o, _r3.o);
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((gnu_xml_dom_DomNode*) _r1.o)->fields.gnu_xml_dom_DomNode.next_;
     goto label23;
     label57:;
     XMLVM_SOURCE_POSITION("DomDoctype.java", 448)
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((gnu_xml_dom_DomDoctype*) _r0.o)->fields.gnu_xml_dom_DomDoctype.notations_;
     //gnu_xml_dom_DomNode_cloneNode___boolean[8]
     XMLVM_CHECK_NPE(1)
@@ -1460,6 +1513,7 @@ JAVA_OBJECT gnu_xml_dom_DomDoctype_clone__(JAVA_OBJECT me)
     //gnu_xml_dom_DomNamedNodeMap_setNamedItem___org_w3c_dom_Node[13]
     XMLVM_CHECK_NPE(2)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_dom_DomNamedNodeMap*) _r2.o)->tib->vtable[13])(_r2.o, _r3.o);
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((gnu_xml_dom_DomNode*) _r1.o)->fields.gnu_xml_dom_DomNode.next_;
     goto label42;
     //XMLVM_END_WRAPPER

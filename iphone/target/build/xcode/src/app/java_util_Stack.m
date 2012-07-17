@@ -387,7 +387,9 @@ JAVA_OBJECT java_util_Stack_peek__(JAVA_OBJECT me)
     java_lang_Object_acquireLockRecursive__(_r3.o);
     XMLVM_TRY_BEGIN(w20442aaab3b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Vector*) _r3.o)->fields.java_util_Vector.elementData_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_Vector*) _r3.o)->fields.java_util_Vector.elementCount_;
     _r2.i = 1;
     _r1.i = _r1.i - _r2.i;
@@ -442,6 +444,7 @@ JAVA_OBJECT java_util_Stack_pop__(JAVA_OBJECT me)
     java_lang_Object_acquireLockRecursive__(_r4.o);
     XMLVM_TRY_BEGIN(w20442aaab4b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_Vector*) _r4.o)->fields.java_util_Vector.elementCount_;
     if (_r0.i != 0) { XMLVM_MEMCPY(curThread_w20442aaab4b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w20442aaab4b1b4, sizeof(XMLVM_JMP_BUF)); goto label14; };
     XMLVM_SOURCE_POSITION("Stack.java", 74)
@@ -464,24 +467,30 @@ JAVA_OBJECT java_util_Stack_pop__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w20442aaab4b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("Stack.java", 76)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_Vector*) _r4.o)->fields.java_util_Vector.elementCount_;
     _r1.i = 1;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(4)
     ((java_util_Vector*) _r4.o)->fields.java_util_Vector.elementCount_ = _r0.i;
     XMLVM_SOURCE_POSITION("Stack.java", 77)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Vector*) _r4.o)->fields.java_util_Vector.elementData_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     _r1.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
     XMLVM_SOURCE_POSITION("Stack.java", 78)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Vector*) _r4.o)->fields.java_util_Vector.elementData_;
     _r3.o = JAVA_NULL;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i] = _r3.o;
     XMLVM_SOURCE_POSITION("Stack.java", 79)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_AbstractList*) _r4.o)->fields.java_util_AbstractList.modCount_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((java_util_AbstractList*) _r4.o)->fields.java_util_AbstractList.modCount_ = _r0.i;
     // End try
     XMLVM_TRY_END
@@ -530,8 +539,10 @@ JAVA_INT java_util_Stack_search___java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n
     java_lang_Object_acquireLockRecursive__(_r4.o);
     XMLVM_TRY_BEGIN(w20442aaab6b1b6)
     // Begin try
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Vector*) _r4.o)->fields.java_util_Vector.elementData_;
     XMLVM_SOURCE_POSITION("Stack.java", 108)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_Vector*) _r4.o)->fields.java_util_Vector.elementCount_;
     // End try
     XMLVM_TRY_END

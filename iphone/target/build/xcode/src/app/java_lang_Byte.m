@@ -676,6 +676,7 @@ void java_lang_Byte___INIT____byte(JAVA_OBJECT me, JAVA_BYTE n1)
     XMLVM_CHECK_NPE(0)
     java_lang_Number___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Byte.java", 74)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_Byte*) _r0.o)->fields.java_lang_Byte.value_ = _r1.i;
     XMLVM_SOURCE_POSITION("Byte.java", 75)
     XMLVM_EXIT_METHOD()
@@ -710,6 +711,7 @@ JAVA_BYTE java_lang_Byte_byteValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Byte.java", 97)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_Byte*) _r1.o)->fields.java_lang_Byte.value_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -727,7 +729,9 @@ JAVA_INT java_lang_Byte_compareTo___java_lang_Byte(JAVA_OBJECT me, JAVA_OBJECT n
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Byte.java", 114)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_Byte*) _r2.o)->fields.java_lang_Byte.value_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_Byte*) _r3.o)->fields.java_lang_Byte.value_;
     if (_r0.i <= _r1.i) goto label8;
     _r0.i = 1;
@@ -735,7 +739,9 @@ JAVA_INT java_lang_Byte_compareTo___java_lang_Byte(JAVA_OBJECT me, JAVA_OBJECT n
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label8:;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_Byte*) _r2.o)->fields.java_lang_Byte.value_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_Byte*) _r3.o)->fields.java_lang_Byte.value_;
     if (_r0.i >= _r1.i) goto label16;
     _r0.i = -1;
@@ -786,6 +792,7 @@ JAVA_DOUBLE java_lang_Byte_doubleValue__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Byte.java", 140)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_Byte*) _r2.o)->fields.java_lang_Byte.value_;
     _r0.d = (JAVA_DOUBLE) _r0.i;
     XMLVM_EXIT_METHOD()
@@ -809,8 +816,10 @@ JAVA_BOOLEAN java_lang_Byte_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJEC
     _r0.i = XMLVM_ISA(_r3.o, __CLASS_java_lang_Byte);
     if (_r0.i == 0) goto label14;
     XMLVM_SOURCE_POSITION("Byte.java", 156)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_Byte*) _r2.o)->fields.java_lang_Byte.value_;
     _r3.o = _r3.o;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_Byte*) _r3.o)->fields.java_lang_Byte.value_;
     if (_r0.i == _r1.i) goto label16;
     label14:;
@@ -832,6 +841,7 @@ JAVA_FLOAT java_lang_Byte_floatValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Byte.java", 161)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_Byte*) _r1.o)->fields.java_lang_Byte.value_;
     _r0.f = (JAVA_FLOAT) _r0.i;
     XMLVM_EXIT_METHOD()
@@ -847,6 +857,7 @@ JAVA_INT java_lang_Byte_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Byte.java", 166)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_Byte*) _r1.o)->fields.java_lang_Byte.value_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -861,6 +872,7 @@ JAVA_INT java_lang_Byte_intValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Byte.java", 171)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_Byte*) _r1.o)->fields.java_lang_Byte.value_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -876,6 +888,7 @@ JAVA_LONG java_lang_Byte_longValue__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Byte.java", 176)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_Byte*) _r2.o)->fields.java_lang_Byte.value_;
     _r0.l = (JAVA_LONG) _r0.i;
     XMLVM_EXIT_METHOD()
@@ -947,6 +960,7 @@ JAVA_SHORT java_lang_Byte_shortValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Byte.java", 227)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_Byte*) _r1.o)->fields.java_lang_Byte.value_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -961,6 +975,7 @@ JAVA_OBJECT java_lang_Byte_toString__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Byte.java", 232)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_Byte*) _r1.o)->fields.java_lang_Byte.value_;
     _r0.o = java_lang_Integer_toString___int(_r0.i);
     XMLVM_EXIT_METHOD()
@@ -1034,7 +1049,7 @@ JAVA_OBJECT java_lang_Byte_valueOf___byte(JAVA_BYTE n1)
     XMLVM_SOURCE_POSITION("Byte.java", 299)
     _r1.i = -128;
     _r1.i = _r4.i - _r1.i;
-    XMLVM_TRY_BEGIN(w40059aaac26b1b8)
+    XMLVM_TRY_BEGIN(w40064aaac26b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("Byte.java", 300)
     _r2.o = java_lang_Byte_GET_CACHE();
@@ -1042,7 +1057,7 @@ JAVA_OBJECT java_lang_Byte_valueOf___byte(JAVA_BYTE n1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
     _r2.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     XMLVM_SOURCE_POSITION("Byte.java", 301)
-    if (_r2.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w40059aaac26b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w40059aaac26b1b8, sizeof(XMLVM_JMP_BUF)); goto label25; };
+    if (_r2.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w40064aaac26b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w40064aaac26b1b8, sizeof(XMLVM_JMP_BUF)); goto label25; };
     _r2.o = java_lang_Byte_GET_CACHE();
     _r3.o = __NEW_java_lang_Byte();
     XMLVM_CHECK_NPE(3)
@@ -1053,46 +1068,46 @@ JAVA_OBJECT java_lang_Byte_valueOf___byte(JAVA_BYTE n1)
     _r1 = _r3;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40059aaac26b1b8)
-        XMLVM_CATCH_SPECIFIC(w40059aaac26b1b8,java_lang_Object,27)
-    XMLVM_CATCH_END(w40059aaac26b1b8)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40059aaac26b1b8)
+    XMLVM_CATCH_BEGIN(w40064aaac26b1b8)
+        XMLVM_CATCH_SPECIFIC(w40064aaac26b1b8,java_lang_Object,27)
+    XMLVM_CATCH_END(w40064aaac26b1b8)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40064aaac26b1b8)
     label23:;
-    XMLVM_TRY_BEGIN(w40059aaac26b1c10)
+    XMLVM_TRY_BEGIN(w40064aaac26b1c10)
     // Begin try
     java_lang_Object_releaseLockRecursive__(_r0.o);
-    XMLVM_MEMCPY(curThread_w40059aaac26b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w40059aaac26b1c10, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w40064aaac26b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w40064aaac26b1c10, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r1.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40059aaac26b1c10)
-        XMLVM_CATCH_SPECIFIC(w40059aaac26b1c10,java_lang_Object,27)
-    XMLVM_CATCH_END(w40059aaac26b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40059aaac26b1c10)
+    XMLVM_CATCH_BEGIN(w40064aaac26b1c10)
+        XMLVM_CATCH_SPECIFIC(w40064aaac26b1c10,java_lang_Object,27)
+    XMLVM_CATCH_END(w40064aaac26b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40064aaac26b1c10)
     label25:;
-    XMLVM_TRY_BEGIN(w40059aaac26b1c12)
+    XMLVM_TRY_BEGIN(w40064aaac26b1c12)
     // Begin try
     _r1 = _r2;
-    { XMLVM_MEMCPY(curThread_w40059aaac26b1c12->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w40059aaac26b1c12, sizeof(XMLVM_JMP_BUF)); goto label23; };
+    { XMLVM_MEMCPY(curThread_w40064aaac26b1c12->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w40064aaac26b1c12, sizeof(XMLVM_JMP_BUF)); goto label23; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40059aaac26b1c12)
-        XMLVM_CATCH_SPECIFIC(w40059aaac26b1c12,java_lang_Object,27)
-    XMLVM_CATCH_END(w40059aaac26b1c12)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40059aaac26b1c12)
+    XMLVM_CATCH_BEGIN(w40064aaac26b1c12)
+        XMLVM_CATCH_SPECIFIC(w40064aaac26b1c12,java_lang_Object,27)
+    XMLVM_CATCH_END(w40064aaac26b1c12)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40064aaac26b1c12)
     label27:;
-    XMLVM_TRY_BEGIN(w40059aaac26b1c14)
+    XMLVM_TRY_BEGIN(w40064aaac26b1c14)
     // Begin try
-    java_lang_Thread* curThread_w40059aaac26b1c14aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w40059aaac26b1c14aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w40064aaac26b1c14aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w40064aaac26b1c14aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40059aaac26b1c14)
-        XMLVM_CATCH_SPECIFIC(w40059aaac26b1c14,java_lang_Object,27)
-    XMLVM_CATCH_END(w40059aaac26b1c14)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40059aaac26b1c14)
+    XMLVM_CATCH_BEGIN(w40064aaac26b1c14)
+        XMLVM_CATCH_SPECIFIC(w40064aaac26b1c14,java_lang_Object,27)
+    XMLVM_CATCH_END(w40064aaac26b1c14)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40064aaac26b1c14)
     XMLVM_THROW_CUSTOM(_r1.o)
     //XMLVM_END_WRAPPER
 }

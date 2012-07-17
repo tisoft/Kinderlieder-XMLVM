@@ -270,6 +270,7 @@ JAVA_BOOLEAN java_nio_MappedByteBuffer_isLoaded__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("MappedByteBuffer.java", 58)
+    XMLVM_CHECK_NPE(1)
     _r1.o = ((java_nio_MappedByteBuffer*) _r1.o)->fields.java_nio_MappedByteBuffer.address_;
 
     
@@ -292,6 +293,7 @@ JAVA_OBJECT java_nio_MappedByteBuffer_load__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("MappedByteBuffer.java", 68)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_MappedByteBuffer*) _r1.o)->fields.java_nio_MappedByteBuffer.address_;
 
     
@@ -316,10 +318,12 @@ JAVA_OBJECT java_nio_MappedByteBuffer_force__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("MappedByteBuffer.java", 81)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_nio_MappedByteBuffer*) _r2.o)->fields.java_nio_MappedByteBuffer.mapMode_;
     _r1.i = 2;
     if (_r0.i != _r1.i) goto label12;
     XMLVM_SOURCE_POSITION("MappedByteBuffer.java", 82)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_nio_MappedByteBuffer*) _r2.o)->fields.java_nio_MappedByteBuffer.address_;
 
     

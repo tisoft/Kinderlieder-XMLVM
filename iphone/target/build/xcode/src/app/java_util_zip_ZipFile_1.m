@@ -217,6 +217,7 @@ void java_util_zip_ZipFile_1___INIT____java_util_zip_ZipFile(JAVA_OBJECT me, JAV
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("ZipFile.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_zip_ZipFile_1*) _r0.o)->fields.java_util_zip_ZipFile_1.this_0_ = _r1.o;
     XMLVM_SOURCE_POSITION("ZipFile.java", 151)
     XMLVM_CHECK_NPE(0)
@@ -236,6 +237,7 @@ JAVA_OBJECT java_util_zip_ZipFile_1_run__(JAVA_OBJECT me)
     _r2.o = me;
     XMLVM_SOURCE_POSITION("ZipFile.java", 153)
     _r0.o = __NEW_java_io_File();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_zip_ZipFile_1*) _r2.o)->fields.java_util_zip_ZipFile_1.this_0_;
     _r1.o = java_util_zip_ZipFile_access$0___java_util_zip_ZipFile(_r1.o);
     XMLVM_CHECK_NPE(0)

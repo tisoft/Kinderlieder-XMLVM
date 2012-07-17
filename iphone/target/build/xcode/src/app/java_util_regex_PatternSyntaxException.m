@@ -314,12 +314,16 @@ void java_util_regex_PatternSyntaxException___INIT____java_lang_String_java_lang
     java_lang_IllegalArgumentException___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("PatternSyntaxException.java", 57)
     _r0.i = -1;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_PatternSyntaxException*) _r1.o)->fields.java_util_regex_PatternSyntaxException.index_ = _r0.i;
     XMLVM_SOURCE_POSITION("PatternSyntaxException.java", 74)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_PatternSyntaxException*) _r1.o)->fields.java_util_regex_PatternSyntaxException.desc_ = _r2.o;
     XMLVM_SOURCE_POSITION("PatternSyntaxException.java", 75)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_PatternSyntaxException*) _r1.o)->fields.java_util_regex_PatternSyntaxException.pattern_ = _r3.o;
     XMLVM_SOURCE_POSITION("PatternSyntaxException.java", 76)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_PatternSyntaxException*) _r1.o)->fields.java_util_regex_PatternSyntaxException.index_ = _r4.i;
     XMLVM_SOURCE_POSITION("PatternSyntaxException.java", 77)
     XMLVM_EXIT_METHOD()
@@ -335,6 +339,7 @@ JAVA_OBJECT java_util_regex_PatternSyntaxException_getPattern__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("PatternSyntaxException.java", 86)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_PatternSyntaxException*) _r1.o)->fields.java_util_regex_PatternSyntaxException.pattern_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -361,9 +366,11 @@ JAVA_OBJECT java_util_regex_PatternSyntaxException_getMessage__(JAVA_OBJECT me)
     // ""
     _r0.o = xmlvm_create_java_string_from_pool(0);
     XMLVM_SOURCE_POSITION("PatternSyntaxException.java", 98)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_util_regex_PatternSyntaxException*) _r7.o)->fields.java_util_regex_PatternSyntaxException.index_;
     if (_r0.i < _r6.i) goto label85;
     XMLVM_SOURCE_POSITION("PatternSyntaxException.java", 99)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_util_regex_PatternSyntaxException*) _r7.o)->fields.java_util_regex_PatternSyntaxException.index_;
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r0.i);
@@ -378,13 +385,16 @@ JAVA_OBJECT java_util_regex_PatternSyntaxException_getMessage__(JAVA_OBJECT me)
     label24:;
     XMLVM_SOURCE_POSITION("PatternSyntaxException.java", 103)
     _r1.o = __NEW_java_lang_StringBuilder();
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_util_regex_PatternSyntaxException*) _r7.o)->fields.java_util_regex_PatternSyntaxException.desc_;
     _r2.o = java_lang_String_valueOf___java_lang_Object(_r2.o);
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder___INIT____java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("PatternSyntaxException.java", 104)
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_util_regex_PatternSyntaxException*) _r7.o)->fields.java_util_regex_PatternSyntaxException.pattern_;
     if (_r2.o == JAVA_NULL) goto label81;
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_util_regex_PatternSyntaxException*) _r7.o)->fields.java_util_regex_PatternSyntaxException.pattern_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(2)
@@ -397,11 +407,13 @@ JAVA_OBJECT java_util_regex_PatternSyntaxException_getMessage__(JAVA_OBJECT me)
     if (!__TIB_java_lang_Object.classInitialized) __INIT_java_lang_Object();
     _r3.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Object, _r3.i);
     _r4.i = 0;
+    XMLVM_CHECK_NPE(7)
     _r5.i = ((java_util_regex_PatternSyntaxException*) _r7.o)->fields.java_util_regex_PatternSyntaxException.index_;
     _r5.o = java_lang_Integer_valueOf___int(_r5.i);
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i] = _r5.o;
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_util_regex_PatternSyntaxException*) _r7.o)->fields.java_util_regex_PatternSyntaxException.pattern_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r6.i);
@@ -438,6 +450,7 @@ JAVA_OBJECT java_util_regex_PatternSyntaxException_getDescription__(JAVA_OBJECT 
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("PatternSyntaxException.java", 115)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_PatternSyntaxException*) _r1.o)->fields.java_util_regex_PatternSyntaxException.desc_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -452,6 +465,7 @@ JAVA_INT java_util_regex_PatternSyntaxException_getIndex__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("PatternSyntaxException.java", 126)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_PatternSyntaxException*) _r1.o)->fields.java_util_regex_PatternSyntaxException.index_;
     XMLVM_EXIT_METHOD()
     return _r0.i;

@@ -335,8 +335,10 @@ void gnu_xml_xpath_ContainsFunction___INIT____gnu_xml_xpath_Expr_gnu_xml_xpath_E
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_Expr___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("ContainsFunction.java", 64)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_ContainsFunction*) _r0.o)->fields.gnu_xml_xpath_ContainsFunction.arg1_ = _r1.o;
     XMLVM_SOURCE_POSITION("ContainsFunction.java", 65)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_ContainsFunction*) _r0.o)->fields.gnu_xml_xpath_ContainsFunction.arg2_ = _r2.o;
     XMLVM_SOURCE_POSITION("ContainsFunction.java", 66)
     XMLVM_EXIT_METHOD()
@@ -359,11 +361,13 @@ JAVA_OBJECT gnu_xml_xpath_ContainsFunction_evaluate___org_w3c_dom_Node_int_int(J
     _r4.i = n2;
     _r5.i = n3;
     XMLVM_SOURCE_POSITION("ContainsFunction.java", 71)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_xpath_ContainsFunction*) _r2.o)->fields.gnu_xml_xpath_ContainsFunction.arg1_;
     //gnu_xml_xpath_Expr_evaluate___org_w3c_dom_Node_int_int[9]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) ((gnu_xml_xpath_Expr*) _r0.o)->tib->vtable[9])(_r0.o, _r3.o, _r4.i, _r5.i);
     XMLVM_SOURCE_POSITION("ContainsFunction.java", 72)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_ContainsFunction*) _r2.o)->fields.gnu_xml_xpath_ContainsFunction.arg2_;
     //gnu_xml_xpath_Expr_evaluate___org_w3c_dom_Node_int_int[9]
     XMLVM_CHECK_NPE(1)
@@ -400,10 +404,12 @@ JAVA_OBJECT gnu_xml_xpath_ContainsFunction_clone___java_lang_Object(JAVA_OBJECT 
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("ContainsFunction.java", 80)
     _r0.o = __NEW_gnu_xml_xpath_ContainsFunction();
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_xpath_ContainsFunction*) _r3.o)->fields.gnu_xml_xpath_ContainsFunction.arg1_;
     //gnu_xml_xpath_Expr_clone___java_lang_Object[6]
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_xpath_Expr*) _r1.o)->tib->vtable[6])(_r1.o, _r4.o);
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_xpath_ContainsFunction*) _r3.o)->fields.gnu_xml_xpath_ContainsFunction.arg2_;
     //gnu_xml_xpath_Expr_clone___java_lang_Object[6]
     XMLVM_CHECK_NPE(2)
@@ -425,11 +431,13 @@ JAVA_BOOLEAN gnu_xml_xpath_ContainsFunction_references___javax_xml_namespace_QNa
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("ContainsFunction.java", 85)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_ContainsFunction*) _r1.o)->fields.gnu_xml_xpath_ContainsFunction.arg1_;
     //gnu_xml_xpath_Expr_references___javax_xml_namespace_QName[12]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_xpath_Expr*) _r0.o)->tib->vtable[12])(_r0.o, _r2.o);
     if (_r0.i != 0) goto label18;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_ContainsFunction*) _r1.o)->fields.gnu_xml_xpath_ContainsFunction.arg2_;
     //gnu_xml_xpath_Expr_references___javax_xml_namespace_QName[12]
     XMLVM_CHECK_NPE(0)
@@ -459,6 +467,7 @@ JAVA_OBJECT gnu_xml_xpath_ContainsFunction_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(3099);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_ContainsFunction*) _r2.o)->fields.gnu_xml_xpath_ContainsFunction.arg1_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);
@@ -466,6 +475,7 @@ JAVA_OBJECT gnu_xml_xpath_ContainsFunction_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(2);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_ContainsFunction*) _r2.o)->fields.gnu_xml_xpath_ContainsFunction.arg2_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);

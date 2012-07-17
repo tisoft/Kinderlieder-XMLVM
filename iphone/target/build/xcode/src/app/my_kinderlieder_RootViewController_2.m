@@ -230,7 +230,9 @@ void my_kinderlieder_RootViewController_2___INIT____my_kinderlieder_RootViewCont
     _r1.o = n1;
     _r2.o = n2;
     XMLVM_SOURCE_POSITION("RootViewController.java", 33)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_RootViewController_2*) _r0.o)->fields.my_kinderlieder_RootViewController_2.this_0_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_RootViewController_2*) _r0.o)->fields.my_kinderlieder_RootViewController_2.val_window_ = _r2.o;
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
@@ -249,21 +251,26 @@ void my_kinderlieder_RootViewController_2_clicked__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("RootViewController.java", 36)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((my_kinderlieder_RootViewController_2*) _r3.o)->fields.my_kinderlieder_RootViewController_2.this_0_;
     _r0.o = my_kinderlieder_RootViewController_access$000___my_kinderlieder_RootViewController(_r0.o);
     if (_r0.o != JAVA_NULL) goto label20;
     XMLVM_SOURCE_POSITION("RootViewController.java", 37)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((my_kinderlieder_RootViewController_2*) _r3.o)->fields.my_kinderlieder_RootViewController_2.this_0_;
     _r1.o = __NEW_my_kinderlieder_ShopViewController();
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((my_kinderlieder_RootViewController_2*) _r3.o)->fields.my_kinderlieder_RootViewController_2.val_window_;
     XMLVM_CHECK_NPE(1)
     my_kinderlieder_ShopViewController___INIT____org_xmlvm_iphone_UIWindow(_r1.o, _r2.o);
     my_kinderlieder_RootViewController_access$002___my_kinderlieder_RootViewController_org_xmlvm_iphone_UIViewController(_r0.o, _r1.o);
     label20:;
     XMLVM_SOURCE_POSITION("RootViewController.java", 39)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((my_kinderlieder_RootViewController_2*) _r3.o)->fields.my_kinderlieder_RootViewController_2.this_0_;
     XMLVM_CHECK_NPE(0)
     _r0.o = org_xmlvm_iphone_UIViewController_getNavigationController__(_r0.o);
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((my_kinderlieder_RootViewController_2*) _r3.o)->fields.my_kinderlieder_RootViewController_2.this_0_;
     _r1.o = my_kinderlieder_RootViewController_access$000___my_kinderlieder_RootViewController(_r1.o);
     _r2.i = 1;

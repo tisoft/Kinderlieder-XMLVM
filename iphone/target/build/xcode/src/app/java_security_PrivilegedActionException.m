@@ -273,6 +273,7 @@ void java_security_PrivilegedActionException___INIT____java_lang_Exception(JAVA_
     XMLVM_CHECK_NPE(0)
     java_lang_Exception___INIT____java_lang_Throwable(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("PrivilegedActionException.java", 52)
+    XMLVM_CHECK_NPE(0)
     ((java_security_PrivilegedActionException*) _r0.o)->fields.java_security_PrivilegedActionException.exception_ = _r1.o;
     XMLVM_SOURCE_POSITION("PrivilegedActionException.java", 53)
     XMLVM_EXIT_METHOD()
@@ -288,6 +289,7 @@ JAVA_OBJECT java_security_PrivilegedActionException_getException__(JAVA_OBJECT m
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("PrivilegedActionException.java", 63)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_security_PrivilegedActionException*) _r1.o)->fields.java_security_PrivilegedActionException.exception_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -302,6 +304,7 @@ JAVA_OBJECT java_security_PrivilegedActionException_getCause__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("PrivilegedActionException.java", 76)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_security_PrivilegedActionException*) _r1.o)->fields.java_security_PrivilegedActionException.exception_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -323,6 +326,7 @@ JAVA_OBJECT java_security_PrivilegedActionException_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_Class_getName__(_r0.o);
     XMLVM_SOURCE_POSITION("PrivilegedActionException.java", 89)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_security_PrivilegedActionException*) _r2.o)->fields.java_security_PrivilegedActionException.exception_;
     if (_r1.o != JAVA_NULL) goto label13;
     label12:;
@@ -337,6 +341,7 @@ JAVA_OBJECT java_security_PrivilegedActionException_toString__(JAVA_OBJECT me)
     _r0.o = xmlvm_create_java_string_from_pool(268);
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_security_PrivilegedActionException*) _r2.o)->fields.java_security_PrivilegedActionException.exception_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);

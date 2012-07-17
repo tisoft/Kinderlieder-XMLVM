@@ -1216,10 +1216,12 @@ void gnu_java_lang_CPStringBuilder___INIT____int(JAVA_OBJECT me, JAVA_INT n1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 84)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((gnu_java_lang_CPStringBuilder*) _r1.o)->fields.gnu_java_lang_CPStringBuilder.allocated_ = _r0.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 119)
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r2.i);
+    XMLVM_CHECK_NPE(1)
     ((gnu_java_lang_CPStringBuilder*) _r1.o)->fields.gnu_java_lang_CPStringBuilder.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 120)
     XMLVM_EXIT_METHOD()
@@ -1243,21 +1245,27 @@ void gnu_java_lang_CPStringBuilder___INIT____java_lang_String(JAVA_OBJECT me, JA
     XMLVM_CHECK_NPE(3)
     java_lang_Object___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 84)
+    XMLVM_CHECK_NPE(3)
     ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.allocated_ = _r2.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 132)
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(4)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[8])(_r4.o);
+    XMLVM_CHECK_NPE(3)
     ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 133)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r1.i = gnu_java_lang_CPStringBuilder_GET_DEFAULT_CAPACITY();
     _r0.i = _r0.i + _r1.i;
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r0.i);
+    XMLVM_CHECK_NPE(3)
     ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 134)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     XMLVM_CHECK_NPE(4)
     java_lang_String_getChars___int_int_char_1ARRAY_int(_r4.o, _r2.i, _r0.i, _r1.o, _r2.i);
@@ -1283,20 +1291,26 @@ void gnu_java_lang_CPStringBuilder___INIT____java_lang_StringBuffer(JAVA_OBJECT 
     XMLVM_CHECK_NPE(3)
     java_lang_Object___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 84)
+    XMLVM_CHECK_NPE(3)
     ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.allocated_ = _r2.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 147)
     XMLVM_CHECK_NPE(4)
     _r0.i = java_lang_AbstractStringBuilder_length__(_r4.o);
+    XMLVM_CHECK_NPE(3)
     ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 148)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r1.i = gnu_java_lang_CPStringBuilder_GET_DEFAULT_CAPACITY();
     _r0.i = _r0.i + _r1.i;
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r0.i);
+    XMLVM_CHECK_NPE(3)
     ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 149)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     //java_lang_StringBuffer_getChars___int_int_char_1ARRAY_int[11]
     XMLVM_CHECK_NPE(4)
@@ -1323,20 +1337,26 @@ void gnu_java_lang_CPStringBuilder___INIT____java_lang_StringBuilder(JAVA_OBJECT
     XMLVM_CHECK_NPE(3)
     java_lang_Object___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 84)
+    XMLVM_CHECK_NPE(3)
     ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.allocated_ = _r2.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 162)
     XMLVM_CHECK_NPE(4)
     _r0.i = java_lang_AbstractStringBuilder_length__(_r4.o);
+    XMLVM_CHECK_NPE(3)
     ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 163)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r1.i = gnu_java_lang_CPStringBuilder_GET_DEFAULT_CAPACITY();
     _r0.i = _r0.i + _r1.i;
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r0.i);
+    XMLVM_CHECK_NPE(3)
     ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 164)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     //java_lang_StringBuilder_getChars___int_int_char_1ARRAY_int[11]
     XMLVM_CHECK_NPE(4)
@@ -1364,6 +1384,7 @@ void gnu_java_lang_CPStringBuilder___INIT____java_lang_CharSequence(JAVA_OBJECT 
     XMLVM_CHECK_NPE(4)
     java_lang_Object___INIT___(_r4.o);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 84)
+    XMLVM_CHECK_NPE(4)
     ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.allocated_ = _r2.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 180)
     XMLVM_CHECK_NPE(5)
@@ -1371,19 +1392,23 @@ void gnu_java_lang_CPStringBuilder___INIT____java_lang_CharSequence(JAVA_OBJECT 
     if (_r1.i > 0) goto label37;
     label12:;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 181)
+    XMLVM_CHECK_NPE(4)
     ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_ = _r2.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 182)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r3.i = gnu_java_lang_CPStringBuilder_GET_DEFAULT_CAPACITY();
     _r2.i = _r2.i + _r3.i;
     if (!__TIB_char.classInitialized) __INIT_char();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_char, _r2.i);
+    XMLVM_CHECK_NPE(4)
     ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.value_ = _r2.o;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 183)
     _r0.i = 0;
     label24:;
     if (_r0.i >= _r1.i) goto label39;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 184)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     XMLVM_CHECK_NPE(5)
     _r3.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_CharSequence_charAt___int])(_r5.o, _r0.i);
@@ -1423,6 +1448,7 @@ void gnu_java_lang_CPStringBuilder_setLength___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_THROW_CUSTOM(_r1.o)
     label8:;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 204)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     _r0.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r5.i <= 0) goto label16;
@@ -1434,6 +1460,7 @@ void gnu_java_lang_CPStringBuilder_setLength___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 213)
     if (_r5.i >= _r0.i) goto label21;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 218)
+    XMLVM_CHECK_NPE(4)
     ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_ = _r5.i;
     label20:;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 227)
@@ -1441,12 +1468,16 @@ void gnu_java_lang_CPStringBuilder_setLength___int(JAVA_OBJECT me, JAVA_INT n1)
     return;
     label21:;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 224)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     if (_r1.i >= _r5.i) goto label20;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 225)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.value_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r3.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_ = _r3.i;
     _r3.i = 0;
     XMLVM_CHECK_NPE(1)
@@ -1467,6 +1498,7 @@ JAVA_CHAR gnu_java_lang_CPStringBuilder_charAt___int(JAVA_OBJECT me, JAVA_INT n1
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 239)
     if (_r2.i < 0) goto label6;
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r1.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     if (_r2.i < _r0.i) goto label12;
     label6:;
@@ -1477,6 +1509,7 @@ JAVA_CHAR gnu_java_lang_CPStringBuilder_charAt___int(JAVA_OBJECT me, JAVA_INT n1
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 241)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_java_lang_CPStringBuilder*) _r1.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -1497,7 +1530,9 @@ JAVA_INT gnu_java_lang_CPStringBuilder_codePointAt___int(JAVA_OBJECT me, JAVA_IN
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 256)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_java_lang_CPStringBuilder*) _r2.o)->fields.gnu_java_lang_CPStringBuilder.value_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((gnu_java_lang_CPStringBuilder*) _r2.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r0.i = java_lang_Character_codePointAt___char_1ARRAY_int_int(_r0.o, _r3.i, _r1.i);
     XMLVM_EXIT_METHOD()
@@ -1516,6 +1551,7 @@ JAVA_INT gnu_java_lang_CPStringBuilder_codePointBefore___int(JAVA_OBJECT me, JAV
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 272)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r2.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     if (_r3.i < _r0.i) goto label10;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 273)
@@ -1525,6 +1561,7 @@ JAVA_INT gnu_java_lang_CPStringBuilder_codePointBefore___int(JAVA_OBJECT me, JAV
     XMLVM_THROW_CUSTOM(_r0.o)
     label10:;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 274)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_java_lang_CPStringBuilder*) _r2.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     _r1.i = 1;
     _r0.i = java_lang_Character_codePointBefore___char_1ARRAY_int_int(_r0.o, _r3.i, _r1.i);
@@ -1551,6 +1588,7 @@ void gnu_java_lang_CPStringBuilder_getChars___int_int_char_1ARRAY_int(JAVA_OBJEC
     _r6.i = n4;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 295)
     if (_r3.i < 0) goto label8;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r2.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     if (_r4.i > _r0.i) goto label8;
     if (_r4.i >= _r3.i) goto label14;
@@ -1562,6 +1600,7 @@ void gnu_java_lang_CPStringBuilder_getChars___int_int_char_1ARRAY_int(JAVA_OBJEC
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 297)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_java_lang_CPStringBuilder*) _r2.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     _r1.i = _r4.i - _r3.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r3.i, _r5.o, _r6.i, _r1.i);
@@ -1584,6 +1623,7 @@ void gnu_java_lang_CPStringBuilder_setCharAt___int_char(JAVA_OBJECT me, JAVA_INT
     _r3.i = n2;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 310)
     if (_r2.i < 0) goto label6;
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r1.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     if (_r2.i < _r0.i) goto label12;
     label6:;
@@ -1594,10 +1634,12 @@ void gnu_java_lang_CPStringBuilder_setCharAt___int_char(JAVA_OBJECT me, JAVA_INT
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 313)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r1.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     XMLVM_CHECK_NPE(1)
     gnu_java_lang_CPStringBuilder_ensureCapacity___int(_r1.o, _r0.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 314)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_java_lang_CPStringBuilder*) _r1.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -1649,19 +1691,24 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_append___java_lang_String(JAVA_OBJECT 
     XMLVM_CHECK_NPE(5)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r5.o)->tib->vtable[8])(_r5.o);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 344)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r1.i = _r1.i + _r0.i;
     XMLVM_CHECK_NPE(4)
     gnu_java_lang_CPStringBuilder_ensureCapacity___int(_r4.o, _r1.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 345)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.value_;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     XMLVM_CHECK_NPE(5)
     java_lang_String_getChars___int_int_char_1ARRAY_int(_r5.o, _r1.i, _r0.i, _r2.o, _r3.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 346)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r1.i = _r1.i + _r0.i;
+    XMLVM_CHECK_NPE(4)
     ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_ = _r1.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 347)
     XMLVM_EXIT_METHOD()
@@ -1701,20 +1748,25 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_append___java_lang_StringBuffer(JAVA_O
     XMLVM_CHECK_NPE(5)
     _r0.i = java_lang_AbstractStringBuilder_length__(_r5.o);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 366)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r1.i = _r1.i + _r0.i;
     XMLVM_CHECK_NPE(4)
     gnu_java_lang_CPStringBuilder_ensureCapacity___int(_r4.o, _r1.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 367)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.value_;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     //java_lang_StringBuffer_getChars___int_int_char_1ARRAY_int[11]
     XMLVM_CHECK_NPE(5)
     (*(void (*)(JAVA_OBJECT, JAVA_INT, JAVA_INT, JAVA_OBJECT, JAVA_INT)) ((java_lang_StringBuffer*) _r5.o)->tib->vtable[11])(_r5.o, _r1.i, _r0.i, _r2.o, _r3.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 368)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r1.i = _r1.i + _r0.i;
+    XMLVM_CHECK_NPE(4)
     ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_ = _r1.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 369)
     java_lang_Object_releaseLockRecursive__(_r5.o);
@@ -1790,17 +1842,22 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_append___char_1ARRAY_int_int(JAVA_OBJE
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 406)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r2.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r0.i = _r0.i + _r5.i;
     XMLVM_CHECK_NPE(2)
     gnu_java_lang_CPStringBuilder_ensureCapacity___int(_r2.o, _r0.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 407)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_java_lang_CPStringBuilder*) _r2.o)->fields.gnu_java_lang_CPStringBuilder.value_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((gnu_java_lang_CPStringBuilder*) _r2.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r3.o, _r4.i, _r0.o, _r1.i, _r5.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 408)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r2.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r0.i = _r0.i + _r5.i;
+    XMLVM_CHECK_NPE(2)
     ((gnu_java_lang_CPStringBuilder*) _r2.o)->fields.gnu_java_lang_CPStringBuilder.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 409)
     XMLVM_EXIT_METHOD()
@@ -1845,14 +1902,18 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_append___char(JAVA_OBJECT me, JAVA_CHA
     _r3.o = me;
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 434)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r0.i = _r0.i + 1;
     XMLVM_CHECK_NPE(3)
     gnu_java_lang_CPStringBuilder_ensureCapacity___int(_r3.o, _r0.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 435)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.value_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_ = _r2.i;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r1.i);
@@ -1916,6 +1977,7 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_append___java_lang_CharSequence_int_in
     _r0.i = _r6.i - _r5.i;
     if (_r0.i <= 0) goto label39;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 469)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r0.i = _r0.i + _r6.i;
     _r0.i = _r0.i - _r5.i;
@@ -1925,9 +1987,12 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_append___java_lang_CharSequence_int_in
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 470)
     if (_r5.i >= _r6.i) goto label39;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 471)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.value_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r2.i = _r1.i + 1;
+    XMLVM_CHECK_NPE(3)
     ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_ = _r2.i;
     XMLVM_CHECK_NPE(4)
     _r2.i = (*(JAVA_CHAR (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r4.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_CharSequence_charAt___int])(_r4.o, _r5.i);
@@ -2031,17 +2096,22 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_appendCodePoint___int(JAVA_OBJECT me, 
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 545)
     _r0.i = java_lang_Character_charCount___int(_r4.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 546)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r1.i = _r1.i + _r0.i;
     XMLVM_CHECK_NPE(3)
     gnu_java_lang_CPStringBuilder_ensureCapacity___int(_r3.o, _r1.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 547)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.value_;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     java_lang_Character_toChars___int_char_1ARRAY_int(_r4.i, _r1.o, _r2.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 548)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r1.i = _r1.i + _r0.i;
+    XMLVM_CHECK_NPE(3)
     ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_ = _r1.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 549)
     XMLVM_EXIT_METHOD()
@@ -2064,6 +2134,7 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_delete___int_int(JAVA_OBJECT me, JAVA_
     _r5.i = n2;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 565)
     if (_r4.i < 0) goto label8;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     if (_r4.i > _r0.i) goto label8;
     if (_r4.i <= _r5.i) goto label14;
@@ -2075,30 +2146,39 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_delete___int_int(JAVA_OBJECT me, JAVA_
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 567)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     if (_r5.i <= _r0.i) goto label20;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 568)
+    XMLVM_CHECK_NPE(3)
     _r5.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     label20:;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 569)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     XMLVM_CHECK_NPE(3)
     gnu_java_lang_CPStringBuilder_ensureCapacity___int(_r3.o, _r0.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 570)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r0.i = _r0.i - _r5.i;
     if (_r0.i == 0) goto label40;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 571)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.value_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.value_;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r2.i = _r2.i - _r5.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r5.i, _r1.o, _r4.i, _r2.i);
     label40:;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 572)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r1.i = _r5.i - _r4.i;
     _r0.i = _r0.i - _r1.i;
+    XMLVM_CHECK_NPE(3)
     ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 573)
     XMLVM_EXIT_METHOD()
@@ -2144,6 +2224,7 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_replace___int_int_java_lang_String(JAV
     _r9.o = n3;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 605)
     if (_r7.i < 0) goto label8;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((gnu_java_lang_CPStringBuilder*) _r6.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     if (_r7.i > _r2.i) goto label8;
     if (_r7.i <= _r8.i) goto label14;
@@ -2159,37 +2240,47 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_replace___int_int_java_lang_String(JAV
     XMLVM_CHECK_NPE(9)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r9.o)->tib->vtable[8])(_r9.o);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 610)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((gnu_java_lang_CPStringBuilder*) _r6.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     if (_r8.i <= _r2.i) goto label64;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((gnu_java_lang_CPStringBuilder*) _r6.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     label24:;
     _r2.i = _r1.i - _r2.i;
     _r0.i = _r2.i + _r7.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 611)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((gnu_java_lang_CPStringBuilder*) _r6.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r2.i = _r2.i + _r0.i;
     XMLVM_CHECK_NPE(6)
     gnu_java_lang_CPStringBuilder_ensureCapacity___int(_r6.o, _r2.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 613)
     if (_r0.i == 0) goto label52;
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((gnu_java_lang_CPStringBuilder*) _r6.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     if (_r8.i >= _r2.i) goto label52;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 614)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((gnu_java_lang_CPStringBuilder*) _r6.o)->fields.gnu_java_lang_CPStringBuilder.value_;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((gnu_java_lang_CPStringBuilder*) _r6.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     _r4.i = _r8.i + _r0.i;
+    XMLVM_CHECK_NPE(6)
     _r5.i = ((gnu_java_lang_CPStringBuilder*) _r6.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r5.i = _r5.i - _r8.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r2.o, _r8.i, _r3.o, _r4.i, _r5.i);
     label52:;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 616)
     _r2.i = 0;
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((gnu_java_lang_CPStringBuilder*) _r6.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     XMLVM_CHECK_NPE(9)
     java_lang_String_getChars___int_int_char_1ARRAY_int(_r9.o, _r2.i, _r1.i, _r3.o, _r7.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 617)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((gnu_java_lang_CPStringBuilder*) _r6.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r2.i = _r2.i + _r0.i;
+    XMLVM_CHECK_NPE(6)
     ((gnu_java_lang_CPStringBuilder*) _r6.o)->fields.gnu_java_lang_CPStringBuilder.count_ = _r2.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 618)
     XMLVM_EXIT_METHOD()
@@ -2220,6 +2311,7 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_insert___int_char_1ARRAY_int_int(JAVA_
     _r8.i = n4;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 636)
     if (_r5.i < 0) goto label14;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     if (_r5.i > _r0.i) goto label14;
     if (_r8.i < 0) goto label14;
@@ -2235,23 +2327,30 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_insert___int_char_1ARRAY_int_int(JAVA_
     XMLVM_THROW_CUSTOM(_r0.o)
     label20:;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 639)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r0.i = _r0.i + _r8.i;
     XMLVM_CHECK_NPE(4)
     gnu_java_lang_CPStringBuilder_ensureCapacity___int(_r4.o, _r0.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 640)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.value_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     _r2.i = _r5.i + _r8.i;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r3.i = _r3.i - _r5.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r5.i, _r1.o, _r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 641)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r6.o, _r7.i, _r0.o, _r5.i, _r8.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 642)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r0.i = _r0.i + _r8.i;
+    XMLVM_CHECK_NPE(4)
     ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 643)
     XMLVM_EXIT_METHOD()
@@ -2304,6 +2403,7 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_insert___int_java_lang_String(JAVA_OBJ
     _r7.o = n2;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 674)
     if (_r6.i < 0) goto label6;
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((gnu_java_lang_CPStringBuilder*) _r5.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     if (_r6.i <= _r1.i) goto label12;
     label6:;
@@ -2324,25 +2424,32 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_insert___int_java_lang_String(JAVA_OBJ
     XMLVM_CHECK_NPE(7)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r7.o)->tib->vtable[8])(_r7.o);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 679)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((gnu_java_lang_CPStringBuilder*) _r5.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r1.i = _r1.i + _r0.i;
     XMLVM_CHECK_NPE(5)
     gnu_java_lang_CPStringBuilder_ensureCapacity___int(_r5.o, _r1.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 680)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((gnu_java_lang_CPStringBuilder*) _r5.o)->fields.gnu_java_lang_CPStringBuilder.value_;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((gnu_java_lang_CPStringBuilder*) _r5.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     _r3.i = _r6.i + _r0.i;
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((gnu_java_lang_CPStringBuilder*) _r5.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r4.i = _r4.i - _r6.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r6.i, _r2.o, _r3.i, _r4.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 681)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((gnu_java_lang_CPStringBuilder*) _r5.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     XMLVM_CHECK_NPE(7)
     java_lang_String_getChars___int_int_char_1ARRAY_int(_r7.o, _r1.i, _r0.i, _r2.o, _r6.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 682)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((gnu_java_lang_CPStringBuilder*) _r5.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r1.i = _r1.i + _r0.i;
+    XMLVM_CHECK_NPE(5)
     ((gnu_java_lang_CPStringBuilder*) _r5.o)->fields.gnu_java_lang_CPStringBuilder.count_ = _r1.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 683)
     XMLVM_EXIT_METHOD()
@@ -2423,14 +2530,18 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_insert___int_java_lang_CharSequence_in
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 724)
     _r1.i = _r11.i - _r10.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 725)
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((gnu_java_lang_CPStringBuilder*) _r7.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r3.i = _r3.i + _r1.i;
     XMLVM_CHECK_NPE(7)
     gnu_java_lang_CPStringBuilder_ensureCapacity___int(_r7.o, _r3.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 726)
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((gnu_java_lang_CPStringBuilder*) _r7.o)->fields.gnu_java_lang_CPStringBuilder.value_;
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((gnu_java_lang_CPStringBuilder*) _r7.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     _r5.i = _r8.i + _r1.i;
+    XMLVM_CHECK_NPE(7)
     _r6.i = ((gnu_java_lang_CPStringBuilder*) _r7.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r6.i = _r6.i - _r8.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r3.o, _r8.i, _r4.o, _r5.i, _r6.i);
@@ -2440,6 +2551,7 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_insert___int_java_lang_CharSequence_in
     label44:;
     if (_r0.i >= _r11.i) goto label60;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 728)
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((gnu_java_lang_CPStringBuilder*) _r7.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     _r8.i = _r2.i + 1;
     XMLVM_CHECK_NPE(9)
@@ -2452,8 +2564,10 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_insert___int_java_lang_CharSequence_in
     goto label44;
     label60:;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 729)
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((gnu_java_lang_CPStringBuilder*) _r7.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r3.i = _r3.i + _r1.i;
+    XMLVM_CHECK_NPE(7)
     ((gnu_java_lang_CPStringBuilder*) _r7.o)->fields.gnu_java_lang_CPStringBuilder.count_ = _r3.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 730)
     XMLVM_EXIT_METHOD()
@@ -2526,6 +2640,7 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_insert___int_char(JAVA_OBJECT me, JAVA
     _r6.i = n2;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 775)
     if (_r5.i < 0) goto label6;
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     if (_r5.i <= _r0.i) goto label12;
     label6:;
@@ -2536,25 +2651,32 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_insert___int_char(JAVA_OBJECT me, JAVA
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 777)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r0.i = _r0.i + 1;
     XMLVM_CHECK_NPE(4)
     gnu_java_lang_CPStringBuilder_ensureCapacity___int(_r4.o, _r0.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 778)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.value_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     _r2.i = _r5.i + 1;
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r3.i = _r3.i - _r5.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r5.i, _r1.o, _r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 779)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r5.i);
     ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r5.i] = _r6.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 780)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r0.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(4)
     ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_ = _r0.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 781)
     XMLVM_EXIT_METHOD()
@@ -2690,10 +2812,13 @@ JAVA_INT gnu_java_lang_CPStringBuilder_indexOf___java_lang_String_int(JAVA_OBJEC
     XMLVM_CHECK_NPE(7)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r7.o)->tib->vtable[8])(_r7.o);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 878)
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((gnu_java_lang_CPStringBuilder*) _r6.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r0.i = _r3.i - _r1.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 879)
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((gnu_java_lang_CPStringBuilder*) _r6.o)->fields.gnu_java_lang_CPStringBuilder.value_;
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((gnu_java_lang_CPStringBuilder*) _r6.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r2.o = gnu_java_lang_VMCPStringBuilder_toString___char_1ARRAY_int_int(_r3.o, _r5.i, _r4.i);
     label20:;
@@ -2729,6 +2854,7 @@ JAVA_INT gnu_java_lang_CPStringBuilder_lastIndexOf___java_lang_String(JAVA_OBJEC
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 897)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r2.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(3)
@@ -2758,6 +2884,7 @@ JAVA_INT gnu_java_lang_CPStringBuilder_lastIndexOf___java_lang_String_int(JAVA_O
     _r7.i = n2;
     _r4.i = 0;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 914)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((gnu_java_lang_CPStringBuilder*) _r5.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(6)
@@ -2765,7 +2892,9 @@ JAVA_INT gnu_java_lang_CPStringBuilder_lastIndexOf___java_lang_String_int(JAVA_O
     _r2.i = _r2.i - _r3.i;
     _r7.i = java_lang_Math_min___int_int(_r7.i, _r2.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 915)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((gnu_java_lang_CPStringBuilder*) _r5.o)->fields.gnu_java_lang_CPStringBuilder.value_;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((gnu_java_lang_CPStringBuilder*) _r5.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r1.o = gnu_java_lang_VMCPStringBuilder_toString___char_1ARRAY_int_int(_r2.o, _r4.i, _r3.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 916)
@@ -2806,24 +2935,30 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_reverse__(JAVA_OBJECT me)
     XMLVMElem _r5;
     _r5.o = me;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 932)
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((gnu_java_lang_CPStringBuilder*) _r5.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     XMLVM_CHECK_NPE(5)
     gnu_java_lang_CPStringBuilder_ensureCapacity___int(_r5.o, _r3.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 933)
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((gnu_java_lang_CPStringBuilder*) _r5.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r1.i = _r3.i >> 1;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((gnu_java_lang_CPStringBuilder*) _r5.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r2.i = _r3.i - _r1.i;
     label13:;
     _r1.i = _r1.i + -1;
     if (_r1.i < 0) goto label36;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 935)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((gnu_java_lang_CPStringBuilder*) _r5.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
     _r0.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 936)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((gnu_java_lang_CPStringBuilder*) _r5.o)->fields.gnu_java_lang_CPStringBuilder.value_;
+    XMLVM_CHECK_NPE(5)
     _r4.o = ((gnu_java_lang_CPStringBuilder*) _r5.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r2.i);
@@ -2832,6 +2967,7 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_reverse__(JAVA_OBJECT me)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
     ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r4.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 937)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((gnu_java_lang_CPStringBuilder*) _r5.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r2.i);
@@ -2855,8 +2991,10 @@ void gnu_java_lang_CPStringBuilder_trimToSize__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 951)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r0.i = _r1.i - _r2.i;
     _r1.i = 20;
@@ -2871,11 +3009,13 @@ void gnu_java_lang_CPStringBuilder_trimToSize__(JAVA_OBJECT me)
     _r1.i = 200;
     if (_r0.i > _r1.i) goto label23;
     _r1.i = _r0.i * 4;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     if (_r1.i <= _r2.i) goto label11;
     label23:;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 959)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     XMLVM_CHECK_NPE(3)
     gnu_java_lang_CPStringBuilder_allocateArray___int(_r3.o, _r1.i);
@@ -2899,6 +3039,7 @@ JAVA_INT gnu_java_lang_CPStringBuilder_codePointCount___int_int(JAVA_OBJECT me, 
     _r6.i = n2;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 976)
     if (_r5.i < 0) goto label8;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     if (_r6.i >= _r2.i) goto label8;
     if (_r5.i <= _r6.i) goto label14;
@@ -2915,6 +3056,7 @@ JAVA_INT gnu_java_lang_CPStringBuilder_codePointCount___int_int(JAVA_OBJECT me, 
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 980)
     if (_r5.i >= _r6.i) goto label65;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 982)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r5.i);
@@ -2926,6 +3068,7 @@ JAVA_INT gnu_java_lang_CPStringBuilder_codePointCount___int_int(JAVA_OBJECT me, 
     if (_r0.i > _r2.i) goto label57;
     if (_r5.i == _r6.i) goto label57;
     if (_r5.i == _r1.i) goto label57;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     _r3.i = _r5.i + 1;
     XMLVM_CHECK_NPE(2)
@@ -2933,6 +3076,7 @@ JAVA_INT gnu_java_lang_CPStringBuilder_codePointCount___int_int(JAVA_OBJECT me, 
     _r2.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i];
     _r3.i = 56320;
     if (_r2.i < _r3.i) goto label57;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     _r3.i = _r5.i + 1;
     XMLVM_CHECK_NPE(2)
@@ -2974,6 +3118,7 @@ JAVA_INT gnu_java_lang_CPStringBuilder_offsetByCodePoints___int_int(JAVA_OBJECT 
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 1016)
     if (_r5.i <= 0) goto label50;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 1018)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r4.i);
@@ -2983,8 +3128,10 @@ JAVA_INT gnu_java_lang_CPStringBuilder_offsetByCodePoints___int_int(JAVA_OBJECT 
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 1019)
     _r1.i = 56319;
     if (_r0.i > _r1.i) goto label42;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     if (_r4.i == _r1.i) goto label42;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     _r2.i = _r4.i + 1;
     XMLVM_CHECK_NPE(1)
@@ -2992,6 +3139,7 @@ JAVA_INT gnu_java_lang_CPStringBuilder_offsetByCodePoints___int_int(JAVA_OBJECT 
     _r1.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
     _r2.i = 56320;
     if (_r1.i < _r2.i) goto label42;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     _r2.i = _r4.i + 1;
     XMLVM_CHECK_NPE(1)
@@ -3027,17 +3175,21 @@ void gnu_java_lang_CPStringBuilder_ensureCapacity___int(JAVA_OBJECT me, JAVA_INT
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 1051)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((gnu_java_lang_CPStringBuilder*) _r2.o)->fields.gnu_java_lang_CPStringBuilder.allocated_;
     if (_r1.i != 0) goto label9;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_java_lang_CPStringBuilder*) _r2.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r3.i <= _r1.i) goto label27;
     label9:;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 1053)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_java_lang_CPStringBuilder*) _r2.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     if (_r3.i <= _r1.i) goto label28;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 1055)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_java_lang_CPStringBuilder*) _r2.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r1.o));
     _r1.i = _r1.i * 2;
@@ -3078,12 +3230,16 @@ void gnu_java_lang_CPStringBuilder_allocateArray___int(JAVA_OBJECT me, JAVA_INT 
     if (!__TIB_char.classInitialized) __INIT_char();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_char, _r5.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 1075)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.value_;
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r1.o, _r3.i, _r0.o, _r3.i, _r2.i);
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 1076)
+    XMLVM_CHECK_NPE(4)
     ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.value_ = _r0.o;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 1077)
+    XMLVM_CHECK_NPE(4)
     ((gnu_java_lang_CPStringBuilder*) _r4.o)->fields.gnu_java_lang_CPStringBuilder.allocated_ = _r3.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 1078)
     XMLVM_EXIT_METHOD()
@@ -3099,6 +3255,7 @@ JAVA_INT gnu_java_lang_CPStringBuilder_length__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 1091)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r1.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -3134,6 +3291,7 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_substring___int(JAVA_OBJECT me, JAVA_I
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 1123)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_java_lang_CPStringBuilder*) _r1.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_java_lang_CPStringBuilder_substring___int_int(_r1.o, _r2.i, _r0.i);
@@ -3156,6 +3314,7 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_substring___int_int(JAVA_OBJECT me, JA
     _r4.i = n2;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 1138)
     if (_r3.i < 0) goto label8;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((gnu_java_lang_CPStringBuilder*) _r2.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     if (_r4.i > _r1.i) goto label8;
     if (_r4.i >= _r3.i) goto label14;
@@ -3180,7 +3339,9 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_substring___int_int(JAVA_OBJECT me, JA
     label21:;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 1143)
     _r1.i = 1;
+    XMLVM_CHECK_NPE(2)
     ((gnu_java_lang_CPStringBuilder*) _r2.o)->fields.gnu_java_lang_CPStringBuilder.allocated_ = _r1.i;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_java_lang_CPStringBuilder*) _r2.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     _r1.o = gnu_java_lang_VMCPStringBuilder_toString___char_1ARRAY_int_int(_r1.o, _r3.i, _r0.i);
     goto label20;
@@ -3198,10 +3359,13 @@ JAVA_OBJECT gnu_java_lang_CPStringBuilder_toString__(JAVA_OBJECT me)
     _r3.o = me;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 1157)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(3)
     ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.allocated_ = _r0.i;
     XMLVM_SOURCE_POSITION("CPStringBuilder.java", 1158)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.value_;
     _r1.i = 0;
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((gnu_java_lang_CPStringBuilder*) _r3.o)->fields.gnu_java_lang_CPStringBuilder.count_;
     _r0.o = gnu_java_lang_VMCPStringBuilder_toString___char_1ARRAY_int_int(_r0.o, _r1.i, _r2.i);
     XMLVM_EXIT_METHOD()

@@ -222,6 +222,7 @@ JAVA_OBJECT java_util_regex_AbstractCharClass_LazyJavaUpperCase_computeValue__(J
     java_util_regex_AbstractCharClass_LazyJavaUpperCase_1___INIT____java_util_regex_AbstractCharClass_LazyJavaUpperCase(_r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 436)
     _r1.i = 1;
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractCharClass*) _r0.o)->fields.java_util_regex_AbstractCharClass.mayContainSupplCodepoints_ = _r1.i;
     XMLVM_SOURCE_POSITION("AbstractCharClass.java", 437)
     XMLVM_EXIT_METHOD()

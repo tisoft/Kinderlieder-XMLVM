@@ -414,6 +414,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_Header___INIT___(JAV
     _r1.i = 20;
     XMLVM_CHECK_NPE(0)
     java_util_ArrayList___INIT____int(_r0.o, _r1.i);
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r2.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.props_ = _r0.o;
     XMLVM_SOURCE_POSITION("Header.java", 53)
     _r0.o = __NEW_java_util_TreeMap();
@@ -421,6 +422,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_Header___INIT___(JAV
     _r1.o = java_lang_String_GET_CASE_INSENSITIVE_ORDER();
     XMLVM_CHECK_NPE(0)
     java_util_TreeMap___INIT____java_util_Comparator(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r2.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.keyTable_ = _r0.o;
     XMLVM_SOURCE_POSITION("Header.java", 55)
     XMLVM_EXIT_METHOD()
@@ -481,6 +483,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_Header___INIT____jav
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r4.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_hasNext__])(_r4.o);
     if (_r0.i != 0) goto label57;
     XMLVM_SOURCE_POSITION("Header.java", 75)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r6.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.keyTable_;
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedMap_put___java_lang_Object_java_lang_Object])(_r0.o, _r1.o, _r3.o);
@@ -494,11 +497,13 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_Header___INIT____jav
     XMLVM_CHECK_NPE(3)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_LinkedList*) _r3.o)->tib->vtable[7])(_r3.o, _r0.o);
     XMLVM_SOURCE_POSITION("Header.java", 72)
+    XMLVM_CHECK_NPE(6)
     _r5.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r6.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.props_;
     //java_util_ArrayList_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(5)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_ArrayList*) _r5.o)->tib->vtable[7])(_r5.o, _r1.o);
     XMLVM_SOURCE_POSITION("Header.java", 73)
+    XMLVM_CHECK_NPE(6)
     _r5.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r6.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.props_;
     //java_util_ArrayList_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(5)
@@ -517,18 +522,20 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_Header_clone_
     XMLVMElem _r3;
     XMLVMElem _r4;
     _r4.o = me;
-    XMLVM_TRY_BEGIN(w38713aaab5b1b2)
+    XMLVM_TRY_BEGIN(w38718aaab5b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("Header.java", 83)
     XMLVM_CHECK_NPE(4)
     _r0.o = java_lang_Object_clone__(_r4.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("Header.java", 84)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r4.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.props_;
     //java_util_ArrayList_clone__[0]
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_ArrayList*) _r1.o)->tib->vtable[0])(_r1.o);
     _r1.o = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r0.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.props_ = _r1.o;
     XMLVM_SOURCE_POSITION("Header.java", 85)
     _r1.o = __NEW_java_util_TreeMap();
@@ -536,8 +543,10 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_Header_clone_
     _r2.o = java_lang_String_GET_CASE_INSENSITIVE_ORDER();
     XMLVM_CHECK_NPE(1)
     java_util_TreeMap___INIT____java_util_Comparator(_r1.o, _r2.o);
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r0.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.keyTable_ = _r1.o;
     XMLVM_SOURCE_POSITION("Header.java", 87)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r4.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.keyTable_;
     XMLVM_SOURCE_POSITION("Header.java", 88)
     XMLVM_CHECK_NPE(1)
@@ -546,28 +555,28 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_Header_clone_
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Set_iterator__])(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38713aaab5b1b2)
-        XMLVM_CATCH_SPECIFIC(w38713aaab5b1b2,java_lang_CloneNotSupportedException,72)
-    XMLVM_CATCH_END(w38713aaab5b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38713aaab5b1b2)
+    XMLVM_CATCH_BEGIN(w38718aaab5b1b2)
+        XMLVM_CATCH_SPECIFIC(w38718aaab5b1b2,java_lang_CloneNotSupportedException,72)
+    XMLVM_CATCH_END(w38718aaab5b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38718aaab5b1b2)
     label35:;
-    XMLVM_TRY_BEGIN(w38713aaab5b1b4)
+    XMLVM_TRY_BEGIN(w38718aaab5b1b4)
     // Begin try
     XMLVM_CHECK_NPE(2)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_hasNext__])(_r2.o);
-    if (_r1.i != 0) { XMLVM_MEMCPY(curThread_w38713aaab5b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38713aaab5b1b4, sizeof(XMLVM_JMP_BUF)); goto label42; };
+    if (_r1.i != 0) { XMLVM_MEMCPY(curThread_w38718aaab5b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38718aaab5b1b4, sizeof(XMLVM_JMP_BUF)); goto label42; };
     XMLVM_SOURCE_POSITION("Header.java", 93)
-    XMLVM_MEMCPY(curThread_w38713aaab5b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38713aaab5b1b4, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w38718aaab5b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38718aaab5b1b4, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38713aaab5b1b4)
-        XMLVM_CATCH_SPECIFIC(w38713aaab5b1b4,java_lang_CloneNotSupportedException,72)
-    XMLVM_CATCH_END(w38713aaab5b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38713aaab5b1b4)
+    XMLVM_CATCH_BEGIN(w38718aaab5b1b4)
+        XMLVM_CATCH_SPECIFIC(w38718aaab5b1b4,java_lang_CloneNotSupportedException,72)
+    XMLVM_CATCH_END(w38718aaab5b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38718aaab5b1b4)
     label42:;
-    XMLVM_TRY_BEGIN(w38713aaab5b1b6)
+    XMLVM_TRY_BEGIN(w38718aaab5b1b6)
     // Begin try
     XMLVM_CHECK_NPE(2)
     _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_next__])(_r2.o);
@@ -582,6 +591,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_Header_clone_
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_LinkedList*) _r1.o)->tib->vtable[0])(_r1.o);
     _r1.o = _r1.o;
     XMLVM_SOURCE_POSITION("Header.java", 91)
+    XMLVM_CHECK_NPE(0)
     _r3.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r0.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.keyTable_;
     XMLVM_CHECK_NPE(4)
     _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r4.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_Entry_getKey__])(_r4.o);
@@ -590,15 +600,15 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_Header_clone_
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedMap_put___java_lang_Object_java_lang_Object])(_r3.o, _r4.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38713aaab5b1b6)
-        XMLVM_CATCH_SPECIFIC(w38713aaab5b1b6,java_lang_CloneNotSupportedException,72)
-    XMLVM_CATCH_END(w38713aaab5b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38713aaab5b1b6)
+    XMLVM_CATCH_BEGIN(w38718aaab5b1b6)
+        XMLVM_CATCH_SPECIFIC(w38718aaab5b1b6,java_lang_CloneNotSupportedException,72)
+    XMLVM_CATCH_END(w38718aaab5b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38718aaab5b1b6)
     goto label35;
     label72:;
     XMLVM_SOURCE_POSITION("Header.java", 94)
-    java_lang_Thread* curThread_w38713aaab5b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w38713aaab5b1c10->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38718aaab5b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w38718aaab5b1c10->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("Header.java", 95)
     _r1.o = __NEW_java_lang_AssertionError();
     XMLVM_CHECK_NPE(1)
@@ -628,6 +638,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_Header_add___java_la
     XMLVM_THROW_CUSTOM(_r0.o)
     label8:;
     XMLVM_SOURCE_POSITION("Header.java", 109)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r2.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.keyTable_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedMap_get___java_lang_Object])(_r0.o, _r3.o);
@@ -639,6 +650,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_Header_add___java_la
     XMLVM_CHECK_NPE(0)
     java_util_LinkedList___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Header.java", 112)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r2.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.keyTable_;
     XMLVM_CHECK_NPE(1)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedMap_put___java_lang_Object_java_lang_Object])(_r1.o, _r3.o, _r0.o);
@@ -648,11 +660,13 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_Header_add___java_la
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_LinkedList*) _r0.o)->tib->vtable[7])(_r0.o, _r4.o);
     XMLVM_SOURCE_POSITION("Header.java", 115)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r2.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.props_;
     //java_util_ArrayList_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_ArrayList*) _r0.o)->tib->vtable[7])(_r0.o, _r3.o);
     XMLVM_SOURCE_POSITION("Header.java", 116)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r2.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.props_;
     //java_util_ArrayList_add___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
@@ -685,6 +699,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_Header_set___java_la
     XMLVM_THROW_CUSTOM(_r0.o)
     label8:;
     XMLVM_SOURCE_POSITION("Header.java", 130)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r3.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.keyTable_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedMap_get___java_lang_Object])(_r0.o, _r4.o);
@@ -711,12 +726,14 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_Header_set___java_la
     _r0.i = 0;
     _r1 = _r0;
     label30:;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r3.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.props_;
     //java_util_ArrayList_size__[16]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_util_ArrayList*) _r0.o)->tib->vtable[16])(_r0.o);
     if (_r1.i >= _r0.i) goto label21;
     XMLVM_SOURCE_POSITION("Header.java", 137)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r3.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.props_;
     //java_util_ArrayList_get___int[21]
     XMLVM_CHECK_NPE(0)
@@ -729,6 +746,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_Header_set___java_la
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r4.o)->tib->vtable[1])(_r4.o, _r0.o);
     if (_r0.i == 0) goto label61;
     XMLVM_SOURCE_POSITION("Header.java", 139)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r3.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.props_;
     _r2.i = _r1.i + 1;
     //java_util_ArrayList_set___int_java_lang_Object[28]
@@ -753,12 +771,14 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_Header_getFie
     XMLVM_SOURCE_POSITION("Header.java", 155)
     _r1.o = __NEW_java_util_HashMap();
     XMLVM_SOURCE_POSITION("Header.java", 156)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r3.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.keyTable_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedMap_size__])(_r0.o);
     XMLVM_CHECK_NPE(1)
     java_util_HashMap___INIT____int(_r1.o, _r0.i);
     XMLVM_SOURCE_POSITION("Header.java", 157)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r3.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.keyTable_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedMap_entrySet__])(_r0.o);
@@ -803,6 +823,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_Header_get___
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("Header.java", 173)
     if (_r3.i < 0) goto label26;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r2.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.props_;
     //java_util_ArrayList_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -810,6 +831,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_Header_get___
     _r0.i = _r0.i / 2;
     if (_r3.i >= _r0.i) goto label26;
     XMLVM_SOURCE_POSITION("Header.java", 174)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r2.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.props_;
     _r1.i = _r3.i * 2;
     _r1.i = _r1.i + 1;
@@ -840,6 +862,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_Header_getKey
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("Header.java", 189)
     if (_r3.i < 0) goto label24;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r2.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.props_;
     //java_util_ArrayList_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -847,6 +870,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_Header_getKey
     _r0.i = _r0.i / 2;
     if (_r3.i >= _r0.i) goto label24;
     XMLVM_SOURCE_POSITION("Header.java", 190)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r2.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.props_;
     _r1.i = _r3.i * 2;
     //java_util_ArrayList_get___int[21]
@@ -874,6 +898,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_Header_get___
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Header.java", 204)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r1.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.keyTable_;
     XMLVM_CHECK_NPE(0)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedMap_get___java_lang_Object])(_r0.o, _r2.o);
@@ -904,6 +929,7 @@ JAVA_INT org_apache_harmony_luni_internal_net_www_protocol_http_Header_length__(
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Header.java", 217)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r1.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.props_;
     //java_util_ArrayList_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -926,8 +952,10 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_Header_setStatusLine
     _r3.o = me;
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("Header.java", 227)
+    XMLVM_CHECK_NPE(3)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r3.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.statusLine_ = _r4.o;
     XMLVM_SOURCE_POSITION("Header.java", 235)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r3.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.props_;
     _r1.i = 0;
     _r2.o = JAVA_NULL;
@@ -935,6 +963,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_Header_setStatusLine
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_INT, JAVA_OBJECT)) ((java_util_ArrayList*) _r0.o)->tib->vtable[20])(_r0.o, _r1.i, _r2.o);
     XMLVM_SOURCE_POSITION("Header.java", 236)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r3.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.props_;
     _r1.i = 1;
     //java_util_ArrayList_add___int_java_lang_Object[20]
@@ -954,6 +983,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_Header_getSta
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Header.java", 246)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_Header*) _r1.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_Header.statusLine_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

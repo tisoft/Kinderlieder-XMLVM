@@ -217,6 +217,7 @@ void java_util_Hashtable_5___INIT____java_util_Hashtable(JAVA_OBJECT me, JAVA_OB
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("Hashtable.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Hashtable_5*) _r0.o)->fields.java_util_Hashtable_5.this_0_ = _r1.o;
     XMLVM_SOURCE_POSITION("Hashtable.java", 587)
     XMLVM_CHECK_NPE(0)
@@ -236,6 +237,7 @@ JAVA_OBJECT java_util_Hashtable_5_get___java_util_MapEntry(JAVA_OBJECT me, JAVA_
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Hashtable.java", 589)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_MapEntry*) _r2.o)->fields.java_util_MapEntry.key_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

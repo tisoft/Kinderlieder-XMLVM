@@ -834,20 +834,28 @@ void java_lang_reflect_Field___INIT____java_lang_Class_java_lang_String_java_lan
     XMLVM_CHECK_NPE(0)
     java_lang_reflect_AccessibleObject___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Field.java", 52)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Field*) _r0.o)->fields.java_lang_reflect_Field.clazz_ = _r1.o;
     XMLVM_SOURCE_POSITION("Field.java", 53)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Field*) _r0.o)->fields.java_lang_reflect_Field.name_ = _r2.o;
     XMLVM_SOURCE_POSITION("Field.java", 54)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Field*) _r0.o)->fields.java_lang_reflect_Field.type_ = _r3.o;
     XMLVM_SOURCE_POSITION("Field.java", 55)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Field*) _r0.o)->fields.java_lang_reflect_Field.modifiers_ = _r4.i;
     XMLVM_SOURCE_POSITION("Field.java", 56)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Field*) _r0.o)->fields.java_lang_reflect_Field.offset_ = _r5.i;
     XMLVM_SOURCE_POSITION("Field.java", 57)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Field*) _r0.o)->fields.java_lang_reflect_Field.address_ = _r6.o;
     XMLVM_SOURCE_POSITION("Field.java", 58)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Field*) _r0.o)->fields.java_lang_reflect_Field.signature_ = _r7.o;
     XMLVM_SOURCE_POSITION("Field.java", 59)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Field*) _r0.o)->fields.java_lang_reflect_Field.annotations_ = _r8.o;
     XMLVM_SOURCE_POSITION("Field.java", 60)
     XMLVM_EXIT_METHOD()
@@ -893,6 +901,7 @@ JAVA_INT java_lang_reflect_Field_getModifiers__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Field.java", 349)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_reflect_Field*) _r1.o)->fields.java_lang_reflect_Field.modifiers_;
     XMLVM_EXIT_METHOD()
     return _r0.i;

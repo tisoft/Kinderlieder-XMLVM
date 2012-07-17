@@ -2212,7 +2212,21 @@ void java_lang_System_exit___int(JAVA_INT n1)
 
 //XMLVM_NATIVE[void java_lang_System_nativeExit___int(JAVA_INT n1)]
 
-//XMLVM_NATIVE[void java_lang_System_gc__()]
+void java_lang_System_gc__()
+{
+    if (!__TIB_java_lang_System.classInitialized) __INIT_java_lang_System();
+    //XMLVM_BEGIN_WRAPPER[java_lang_System_gc__]
+    XMLVM_ENTER_METHOD("java.lang.System", "gc", "?")
+    XMLVMElem _r0;
+    XMLVM_SOURCE_POSITION("System.java", 589)
+    _r0.o = java_lang_Runtime_getRuntime__();
+    XMLVM_CHECK_NPE(0)
+    java_lang_Runtime_gc__(_r0.o);
+    XMLVM_SOURCE_POSITION("System.java", 590)
+    XMLVM_EXIT_METHOD()
+    return;
+    //XMLVM_END_WRAPPER
+}
 
 JAVA_OBJECT java_lang_System_getenv___java_lang_String(JAVA_OBJECT n1)
 {
@@ -2225,19 +2239,19 @@ JAVA_OBJECT java_lang_System_getenv___java_lang_String(JAVA_OBJECT n1)
     XMLVMElem _r3;
     XMLVMElem _r4;
     _r4.o = n1;
-    XMLVM_SOURCE_POSITION("System.java", 604)
+    XMLVM_SOURCE_POSITION("System.java", 606)
     if (_r4.o != JAVA_NULL) goto label8;
-    XMLVM_SOURCE_POSITION("System.java", 605)
+    XMLVM_SOURCE_POSITION("System.java", 607)
     _r1.o = __NEW_java_lang_NullPointerException();
     XMLVM_CHECK_NPE(1)
     java_lang_NullPointerException___INIT___(_r1.o);
     XMLVM_THROW_CUSTOM(_r1.o)
     label8:;
-    XMLVM_SOURCE_POSITION("System.java", 607)
+    XMLVM_SOURCE_POSITION("System.java", 609)
     _r0.o = java_lang_System_getSecurityManager__();
     if (_r0.o == JAVA_NULL) goto label41;
-    XMLVM_SOURCE_POSITION("System.java", 608)
-    XMLVM_SOURCE_POSITION("System.java", 609)
+    XMLVM_SOURCE_POSITION("System.java", 610)
+    XMLVM_SOURCE_POSITION("System.java", 611)
     _r1.o = __NEW_java_lang_RuntimePermission();
     _r2.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(2)
@@ -2256,7 +2270,7 @@ JAVA_OBJECT java_lang_System_getenv___java_lang_String(JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkPermission___java_security_Permission(_r0.o, _r1.o);
     label41:;
-    XMLVM_SOURCE_POSITION("System.java", 611)
+    XMLVM_SOURCE_POSITION("System.java", 613)
     _r1.o = __NEW_java_lang_Error();
     XMLVM_CHECK_NPE(1)
     java_lang_Error___INIT___(_r1.o);
@@ -2272,11 +2286,11 @@ JAVA_OBJECT java_lang_System_getenv__()
     XMLVMElem _r0;
     XMLVMElem _r1;
     XMLVMElem _r2;
-    XMLVM_SOURCE_POSITION("System.java", 624)
+    XMLVM_SOURCE_POSITION("System.java", 626)
     _r0.o = java_lang_System_getSecurityManager__();
     if (_r0.o == JAVA_NULL) goto label16;
-    XMLVM_SOURCE_POSITION("System.java", 625)
-    XMLVM_SOURCE_POSITION("System.java", 626)
+    XMLVM_SOURCE_POSITION("System.java", 627)
+    XMLVM_SOURCE_POSITION("System.java", 628)
     _r1.o = __NEW_java_lang_RuntimePermission();
     // "getenv.*"
     _r2.o = xmlvm_create_java_string_from_pool(2523);
@@ -2285,7 +2299,7 @@ JAVA_OBJECT java_lang_System_getenv__()
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkPermission___java_security_Permission(_r0.o, _r1.o);
     label16:;
-    XMLVM_SOURCE_POSITION("System.java", 628)
+    XMLVM_SOURCE_POSITION("System.java", 630)
     _r1.o = __NEW_java_lang_Error();
     XMLVM_CHECK_NPE(1)
     java_lang_Error___INIT___(_r1.o);
@@ -2299,7 +2313,7 @@ JAVA_OBJECT java_lang_System_inheritedChannel__()
     //XMLVM_BEGIN_WRAPPER[java_lang_System_inheritedChannel__]
     XMLVM_ENTER_METHOD("java.lang.System", "inheritedChannel", "?")
     XMLVMElem _r0;
-    XMLVM_SOURCE_POSITION("System.java", 642)
+    XMLVM_SOURCE_POSITION("System.java", 644)
 
     
     // Red class access removed: java.nio.channels.spi.SelectorProvider::provider
@@ -2320,15 +2334,15 @@ JAVA_OBJECT java_lang_System_getProperties__()
     XMLVM_ENTER_METHOD("java.lang.System", "getProperties", "?")
     XMLVMElem _r0;
     XMLVMElem _r1;
-    XMLVM_SOURCE_POSITION("System.java", 656)
+    XMLVM_SOURCE_POSITION("System.java", 658)
     _r0.o = java_lang_System_getSecurityManager__();
     if (_r0.o == JAVA_NULL) goto label9;
-    XMLVM_SOURCE_POSITION("System.java", 657)
-    XMLVM_SOURCE_POSITION("System.java", 658)
+    XMLVM_SOURCE_POSITION("System.java", 659)
+    XMLVM_SOURCE_POSITION("System.java", 660)
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkPropertiesAccess__(_r0.o);
     label9:;
-    XMLVM_SOURCE_POSITION("System.java", 660)
+    XMLVM_SOURCE_POSITION("System.java", 662)
     _r1.o = java_lang_System_GET_systemProperties();
     XMLVM_EXIT_METHOD()
     return _r1.o;
@@ -2341,7 +2355,7 @@ JAVA_OBJECT java_lang_System_internalGetProperties__()
     //XMLVM_BEGIN_WRAPPER[java_lang_System_internalGetProperties__]
     XMLVM_ENTER_METHOD("java.lang.System", "internalGetProperties", "?")
     XMLVMElem _r0;
-    XMLVM_SOURCE_POSITION("System.java", 670)
+    XMLVM_SOURCE_POSITION("System.java", 672)
     _r0.o = java_lang_System_GET_systemProperties();
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2356,7 +2370,7 @@ JAVA_OBJECT java_lang_System_getProperty___java_lang_String(JAVA_OBJECT n1)
     XMLVMElem _r0;
     XMLVMElem _r1;
     _r1.o = n1;
-    XMLVM_SOURCE_POSITION("System.java", 707)
+    XMLVM_SOURCE_POSITION("System.java", 709)
     _r0.o = JAVA_NULL;
     _r0.o = java_lang_System_getProperty___java_lang_String_java_lang_String(_r1.o, _r0.o);
     XMLVM_EXIT_METHOD()
@@ -2375,71 +2389,71 @@ JAVA_OBJECT java_lang_System_getProperty___java_lang_String_java_lang_String(JAV
     XMLVMElem _r3;
     _r2.o = n1;
     _r3.o = n2;
-    XMLVM_SOURCE_POSITION("System.java", 726)
+    XMLVM_SOURCE_POSITION("System.java", 728)
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(2)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[8])(_r2.o);
     if (_r1.i != 0) goto label12;
-    XMLVM_SOURCE_POSITION("System.java", 727)
+    XMLVM_SOURCE_POSITION("System.java", 729)
     _r1.o = __NEW_java_lang_IllegalArgumentException();
     XMLVM_CHECK_NPE(1)
     java_lang_IllegalArgumentException___INIT___(_r1.o);
     XMLVM_THROW_CUSTOM(_r1.o)
     label12:;
-    XMLVM_SOURCE_POSITION("System.java", 729)
+    XMLVM_SOURCE_POSITION("System.java", 731)
     // "file.separator"
     _r1.o = xmlvm_create_java_string_from_pool(2524);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
     if (_r1.i == 0) goto label23;
-    XMLVM_SOURCE_POSITION("System.java", 730)
+    XMLVM_SOURCE_POSITION("System.java", 732)
     // "/"
     _r1.o = xmlvm_create_java_string_from_pool(394);
     label22:;
-    XMLVM_SOURCE_POSITION("System.java", 745)
+    XMLVM_SOURCE_POSITION("System.java", 747)
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label23:;
-    XMLVM_SOURCE_POSITION("System.java", 732)
+    XMLVM_SOURCE_POSITION("System.java", 734)
     // "path.separator"
     _r1.o = xmlvm_create_java_string_from_pool(2525);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
     if (_r1.i == 0) goto label34;
-    XMLVM_SOURCE_POSITION("System.java", 733)
+    XMLVM_SOURCE_POSITION("System.java", 735)
     // ":"
     _r1.o = xmlvm_create_java_string_from_pool(60);
     goto label22;
     label34:;
-    XMLVM_SOURCE_POSITION("System.java", 735)
+    XMLVM_SOURCE_POSITION("System.java", 737)
     // "user.dir"
     _r1.o = xmlvm_create_java_string_from_pool(1574);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
     if (_r1.i == 0) goto label47;
-    XMLVM_SOURCE_POSITION("System.java", 736)
+    XMLVM_SOURCE_POSITION("System.java", 738)
     _r1.o = org_xmlvm_runtime_XMLVMUtil_getCurrentWorkingDirectory__();
     goto label22;
     label47:;
-    XMLVM_SOURCE_POSITION("System.java", 738)
+    XMLVM_SOURCE_POSITION("System.java", 740)
     // "javax.xml.parsers.DocumentBuilderFactory"
     _r1.o = xmlvm_create_java_string_from_pool(2526);
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[1])(_r2.o, _r1.o);
     if (_r1.i == 0) goto label57;
-    XMLVM_SOURCE_POSITION("System.java", 739)
+    XMLVM_SOURCE_POSITION("System.java", 741)
     _r1.o = JAVA_NULL;
     goto label22;
     label57:;
-    XMLVM_SOURCE_POSITION("System.java", 741)
+    XMLVM_SOURCE_POSITION("System.java", 743)
     _r0.o = java_lang_System_getSecurityManager__();
     if (_r0.o == JAVA_NULL) goto label66;
-    XMLVM_SOURCE_POSITION("System.java", 742)
-    XMLVM_SOURCE_POSITION("System.java", 743)
+    XMLVM_SOURCE_POSITION("System.java", 744)
+    XMLVM_SOURCE_POSITION("System.java", 745)
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkPropertyAccess___java_lang_String(_r0.o, _r2.o);
     label66:;
@@ -2462,22 +2476,22 @@ JAVA_OBJECT java_lang_System_setProperty___java_lang_String_java_lang_String(JAV
     XMLVMElem _r4;
     _r3.o = n1;
     _r4.o = n2;
-    XMLVM_SOURCE_POSITION("System.java", 762)
+    XMLVM_SOURCE_POSITION("System.java", 764)
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(3)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r3.o)->tib->vtable[8])(_r3.o);
     if (_r1.i != 0) goto label12;
-    XMLVM_SOURCE_POSITION("System.java", 763)
+    XMLVM_SOURCE_POSITION("System.java", 765)
     _r1.o = __NEW_java_lang_IllegalArgumentException();
     XMLVM_CHECK_NPE(1)
     java_lang_IllegalArgumentException___INIT___(_r1.o);
     XMLVM_THROW_CUSTOM(_r1.o)
     label12:;
-    XMLVM_SOURCE_POSITION("System.java", 765)
+    XMLVM_SOURCE_POSITION("System.java", 767)
     _r0.o = java_lang_System_getSecurityManager__();
     if (_r0.o == JAVA_NULL) goto label28;
-    XMLVM_SOURCE_POSITION("System.java", 766)
-    XMLVM_SOURCE_POSITION("System.java", 767)
+    XMLVM_SOURCE_POSITION("System.java", 768)
+    XMLVM_SOURCE_POSITION("System.java", 769)
     _r1.o = __NEW_java_util_PropertyPermission();
     // "write"
     _r2.o = xmlvm_create_java_string_from_pool(259);
@@ -2486,7 +2500,7 @@ JAVA_OBJECT java_lang_System_setProperty___java_lang_String_java_lang_String(JAV
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkPermission___java_security_Permission(_r0.o, _r1.o);
     label28:;
-    XMLVM_SOURCE_POSITION("System.java", 769)
+    XMLVM_SOURCE_POSITION("System.java", 771)
     _r1.o = java_lang_System_GET_systemProperties();
     XMLVM_CHECK_NPE(1)
     _r3.o = java_util_Properties_setProperty___java_lang_String_java_lang_String(_r1.o, _r3.o, _r4.o);
@@ -2506,30 +2520,30 @@ JAVA_OBJECT java_lang_System_clearProperty___java_lang_String(JAVA_OBJECT n1)
     XMLVMElem _r2;
     XMLVMElem _r3;
     _r3.o = n1;
-    XMLVM_SOURCE_POSITION("System.java", 788)
+    XMLVM_SOURCE_POSITION("System.java", 790)
     if (_r3.o != JAVA_NULL) goto label8;
-    XMLVM_SOURCE_POSITION("System.java", 789)
+    XMLVM_SOURCE_POSITION("System.java", 791)
     _r1.o = __NEW_java_lang_NullPointerException();
     XMLVM_CHECK_NPE(1)
     java_lang_NullPointerException___INIT___(_r1.o);
     XMLVM_THROW_CUSTOM(_r1.o)
     label8:;
-    XMLVM_SOURCE_POSITION("System.java", 791)
+    XMLVM_SOURCE_POSITION("System.java", 793)
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(3)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r3.o)->tib->vtable[8])(_r3.o);
     if (_r1.i != 0) goto label20;
-    XMLVM_SOURCE_POSITION("System.java", 792)
+    XMLVM_SOURCE_POSITION("System.java", 794)
     _r1.o = __NEW_java_lang_IllegalArgumentException();
     XMLVM_CHECK_NPE(1)
     java_lang_IllegalArgumentException___INIT___(_r1.o);
     XMLVM_THROW_CUSTOM(_r1.o)
     label20:;
-    XMLVM_SOURCE_POSITION("System.java", 795)
+    XMLVM_SOURCE_POSITION("System.java", 797)
     _r0.o = java_lang_System_getSecurityManager__();
     if (_r0.o == JAVA_NULL) goto label36;
-    XMLVM_SOURCE_POSITION("System.java", 796)
-    XMLVM_SOURCE_POSITION("System.java", 797)
+    XMLVM_SOURCE_POSITION("System.java", 798)
+    XMLVM_SOURCE_POSITION("System.java", 799)
     _r1.o = __NEW_java_util_PropertyPermission();
     // "write"
     _r2.o = xmlvm_create_java_string_from_pool(259);
@@ -2538,7 +2552,7 @@ JAVA_OBJECT java_lang_System_clearProperty___java_lang_String(JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkPermission___java_security_Permission(_r0.o, _r1.o);
     label36:;
-    XMLVM_SOURCE_POSITION("System.java", 799)
+    XMLVM_SOURCE_POSITION("System.java", 801)
     _r1.o = java_lang_System_GET_systemProperties();
     //java_util_Properties_remove___java_lang_Object[11]
     XMLVM_CHECK_NPE(1)
@@ -2559,7 +2573,7 @@ JAVA_OBJECT java_lang_System_getSecurityManager__()
     //XMLVM_BEGIN_WRAPPER[java_lang_System_getSecurityManager__]
     XMLVM_ENTER_METHOD("java.lang.System", "getSecurityManager", "?")
     XMLVMElem _r0;
-    XMLVM_SOURCE_POSITION("System.java", 824)
+    XMLVM_SOURCE_POSITION("System.java", 826)
     _r0.o = java_lang_System_GET_security();
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2578,7 +2592,7 @@ void java_lang_System_loadLibrary___java_lang_String(JAVA_OBJECT n1)
     XMLVMElem _r2;
     XMLVMElem _r3;
     _r3.o = n1;
-    XMLVM_SOURCE_POSITION("System.java", 869)
+    XMLVM_SOURCE_POSITION("System.java", 871)
     _r0.o = __NEW_java_lang_IllegalArgumentException();
     _r1.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(1)
@@ -2604,11 +2618,11 @@ void java_lang_System_runFinalization__()
     //XMLVM_BEGIN_WRAPPER[java_lang_System_runFinalization__]
     XMLVM_ENTER_METHOD("java.lang.System", "runFinalization", "?")
     XMLVMElem _r0;
-    XMLVM_SOURCE_POSITION("System.java", 878)
+    XMLVM_SOURCE_POSITION("System.java", 880)
     _r0.o = java_lang_System_GET_RUNTIME();
     XMLVM_CHECK_NPE(0)
     java_lang_Runtime_runFinalization__(_r0.o);
-    XMLVM_SOURCE_POSITION("System.java", 879)
+    XMLVM_SOURCE_POSITION("System.java", 881)
     XMLVM_EXIT_METHOD()
     return;
     //XMLVM_END_WRAPPER
@@ -2621,9 +2635,9 @@ void java_lang_System_runFinalizersOnExit___boolean(JAVA_BOOLEAN n1)
     XMLVM_ENTER_METHOD("java.lang.System", "runFinalizersOnExit", "?")
     XMLVMElem _r0;
     _r0.i = n1;
-    XMLVM_SOURCE_POSITION("System.java", 893)
+    XMLVM_SOURCE_POSITION("System.java", 895)
     java_lang_Runtime_runFinalizersOnExit___boolean(_r0.i);
-    XMLVM_SOURCE_POSITION("System.java", 894)
+    XMLVM_SOURCE_POSITION("System.java", 896)
     XMLVM_EXIT_METHOD()
     return;
     //XMLVM_END_WRAPPER
@@ -2637,24 +2651,24 @@ void java_lang_System_setProperties___java_util_Properties(JAVA_OBJECT n1)
     XMLVMElem _r0;
     XMLVMElem _r1;
     _r1.o = n1;
-    XMLVM_SOURCE_POSITION("System.java", 908)
+    XMLVM_SOURCE_POSITION("System.java", 910)
     _r0.o = java_lang_System_getSecurityManager__();
     if (_r0.o == JAVA_NULL) goto label9;
-    XMLVM_SOURCE_POSITION("System.java", 909)
-    XMLVM_SOURCE_POSITION("System.java", 910)
+    XMLVM_SOURCE_POSITION("System.java", 911)
+    XMLVM_SOURCE_POSITION("System.java", 912)
     XMLVM_CHECK_NPE(0)
     java_lang_SecurityManager_checkPropertiesAccess__(_r0.o);
     label9:;
-    XMLVM_SOURCE_POSITION("System.java", 912)
+    XMLVM_SOURCE_POSITION("System.java", 914)
     if (_r1.o != JAVA_NULL) goto label15;
-    XMLVM_SOURCE_POSITION("System.java", 913)
+    XMLVM_SOURCE_POSITION("System.java", 915)
     java_lang_System_ensureProperties__();
     label14:;
-    XMLVM_SOURCE_POSITION("System.java", 917)
+    XMLVM_SOURCE_POSITION("System.java", 919)
     XMLVM_EXIT_METHOD()
     return;
     label15:;
-    XMLVM_SOURCE_POSITION("System.java", 915)
+    XMLVM_SOURCE_POSITION("System.java", 917)
     java_lang_System_PUT_systemProperties( _r1.o);
     goto label14;
     //XMLVM_END_WRAPPER
@@ -2667,9 +2681,9 @@ void java_lang_System_setSecurityManager___java_lang_SecurityManager(JAVA_OBJECT
     XMLVM_ENTER_METHOD("java.lang.System", "setSecurityManager", "?")
     XMLVMElem _r0;
     _r0.o = n1;
-    XMLVM_SOURCE_POSITION("System.java", 943)
+    XMLVM_SOURCE_POSITION("System.java", 945)
     java_lang_System_PUT_security( _r0.o);
-    XMLVM_SOURCE_POSITION("System.java", 944)
+    XMLVM_SOURCE_POSITION("System.java", 946)
     XMLVM_EXIT_METHOD()
     return;
     //XMLVM_END_WRAPPER

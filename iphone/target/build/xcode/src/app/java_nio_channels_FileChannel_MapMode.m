@@ -308,6 +308,7 @@ void java_nio_channels_FileChannel_MapMode___INIT____java_lang_String(JAVA_OBJEC
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("FileChannel.java", 109)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_channels_FileChannel_MapMode*) _r0.o)->fields.java_nio_channels_FileChannel_MapMode.displayName_ = _r1.o;
     XMLVM_SOURCE_POSITION("FileChannel.java", 110)
     XMLVM_EXIT_METHOD()
@@ -323,6 +324,7 @@ JAVA_OBJECT java_nio_channels_FileChannel_MapMode_toString__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FileChannel.java", 119)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_nio_channels_FileChannel_MapMode*) _r1.o)->fields.java_nio_channels_FileChannel_MapMode.displayName_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

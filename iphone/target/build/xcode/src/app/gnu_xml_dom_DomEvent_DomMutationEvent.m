@@ -383,6 +383,7 @@ JAVA_OBJECT gnu_xml_dom_DomEvent_DomMutationEvent_getRelatedNode__(JAVA_OBJECT m
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomEvent.java", 240)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomEvent_DomMutationEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent_DomMutationEvent.relatedNode_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -397,6 +398,7 @@ JAVA_OBJECT gnu_xml_dom_DomEvent_DomMutationEvent_getPrevValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomEvent.java", 246)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomEvent_DomMutationEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent_DomMutationEvent.prevValue_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -411,6 +413,7 @@ JAVA_OBJECT gnu_xml_dom_DomEvent_DomMutationEvent_getNewValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomEvent.java", 252)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomEvent_DomMutationEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent_DomMutationEvent.newValue_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -425,6 +428,7 @@ JAVA_OBJECT gnu_xml_dom_DomEvent_DomMutationEvent_getAttrName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomEvent.java", 258)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomEvent_DomMutationEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent_DomMutationEvent.attrName_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -439,6 +443,7 @@ JAVA_SHORT gnu_xml_dom_DomEvent_DomMutationEvent_getAttrChange__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomEvent.java", 264)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_dom_DomEvent_DomMutationEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent_DomMutationEvent.attrChange_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -471,25 +476,35 @@ void gnu_xml_dom_DomEvent_DomMutationEvent_initMutationEvent___java_lang_String_
     _r10.i = n8;
     XMLVM_SOURCE_POSITION("DomEvent.java", 279)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomEvent*) _r2.o)->fields.gnu_xml_dom_DomEvent.eventPhase_ = _r0.i;
     XMLVM_SOURCE_POSITION("DomEvent.java", 280)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomEvent*) _r2.o)->fields.gnu_xml_dom_DomEvent.type_ = _r3.o;
     XMLVM_SOURCE_POSITION("DomEvent.java", 281)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomEvent*) _r2.o)->fields.gnu_xml_dom_DomEvent.bubbles_ = _r4.i;
     XMLVM_SOURCE_POSITION("DomEvent.java", 282)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomEvent*) _r2.o)->fields.gnu_xml_dom_DomEvent.cancelable_ = _r5.i;
     XMLVM_SOURCE_POSITION("DomEvent.java", 283)
     _r0.l = java_lang_System_currentTimeMillis__();
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomEvent*) _r2.o)->fields.gnu_xml_dom_DomEvent.timeStamp_ = _r0.l;
     XMLVM_SOURCE_POSITION("DomEvent.java", 285)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomEvent_DomMutationEvent*) _r2.o)->fields.gnu_xml_dom_DomEvent_DomMutationEvent.relatedNode_ = _r6.o;
     XMLVM_SOURCE_POSITION("DomEvent.java", 286)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomEvent_DomMutationEvent*) _r2.o)->fields.gnu_xml_dom_DomEvent_DomMutationEvent.prevValue_ = _r7.o;
     XMLVM_SOURCE_POSITION("DomEvent.java", 287)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomEvent_DomMutationEvent*) _r2.o)->fields.gnu_xml_dom_DomEvent_DomMutationEvent.newValue_ = _r8.o;
     XMLVM_SOURCE_POSITION("DomEvent.java", 288)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomEvent_DomMutationEvent*) _r2.o)->fields.gnu_xml_dom_DomEvent_DomMutationEvent.attrName_ = _r9.o;
     XMLVM_SOURCE_POSITION("DomEvent.java", 289)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomEvent_DomMutationEvent*) _r2.o)->fields.gnu_xml_dom_DomEvent_DomMutationEvent.attrChange_ = _r10.i;
     XMLVM_SOURCE_POSITION("DomEvent.java", 290)
     XMLVM_EXIT_METHOD()
@@ -506,16 +521,23 @@ void gnu_xml_dom_DomEvent_DomMutationEvent_clear__(JAVA_OBJECT me)
     _r1.o = me;
     _r0.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("DomEvent.java", 295)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent.type_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomEvent.java", 296)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent.target_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomEvent.java", 297)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomEvent_DomMutationEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent_DomMutationEvent.relatedNode_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomEvent.java", 298)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent.currentNode_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomEvent.java", 299)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomEvent_DomMutationEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent_DomMutationEvent.attrName_ = _r0.o;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomEvent_DomMutationEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent_DomMutationEvent.newValue_ = _r0.o;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomEvent_DomMutationEvent*) _r1.o)->fields.gnu_xml_dom_DomEvent_DomMutationEvent.prevValue_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomEvent.java", 300)
     XMLVM_EXIT_METHOD()

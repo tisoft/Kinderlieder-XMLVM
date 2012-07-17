@@ -360,6 +360,7 @@ void my_kinderlieder_PdfViewController___INIT____org_xmlvm_iphone_UIWindow(JAVA_
     _r0.o = __NEW_java_util_HashMap();
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((my_kinderlieder_PdfViewController*) _r2.o)->fields.my_kinderlieder_PdfViewController.requests_ = _r0.o;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 23)
     _r0.o = __NEW_org_xmlvm_iphone_UIWebView();
@@ -367,12 +368,15 @@ void my_kinderlieder_PdfViewController___INIT____org_xmlvm_iphone_UIWindow(JAVA_
     _r1.o = org_xmlvm_iphone_UIView_getFrame__(_r3.o);
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UIWebView___INIT____org_xmlvm_iphone_CGRect(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((my_kinderlieder_PdfViewController*) _r2.o)->fields.my_kinderlieder_PdfViewController.pdfView_ = _r0.o;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 24)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((my_kinderlieder_PdfViewController*) _r2.o)->fields.my_kinderlieder_PdfViewController.pdfView_;
     XMLVM_CHECK_NPE(2)
     org_xmlvm_iphone_UIViewController_setView___org_xmlvm_iphone_UIView(_r2.o, _r0.o);
     XMLVM_SOURCE_POSITION("PdfViewController.java", 25)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((my_kinderlieder_PdfViewController*) _r2.o)->fields.my_kinderlieder_PdfViewController.pdfView_;
     _r1.i = 1;
     XMLVM_CHECK_NPE(0)
@@ -405,6 +409,7 @@ void my_kinderlieder_PdfViewController_show___my_kinderlieder_SongInfo(JAVA_OBJE
     _r6.i = 1;
     _r5.i = 0;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 29)
+    XMLVM_CHECK_NPE(9)
     ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.songInfo_ = _r10.o;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 30)
     XMLVM_CHECK_NPE(10)
@@ -418,6 +423,7 @@ void my_kinderlieder_PdfViewController_show___my_kinderlieder_SongInfo(JAVA_OBJE
     _r2.o = java_io_File_getPath__(_r2.o);
     _r0.o = org_xmlvm_iphone_NSURL_fileURLWithPath___java_lang_String(_r2.o);
     XMLVM_SOURCE_POSITION("PdfViewController.java", 32)
+    XMLVM_CHECK_NPE(9)
     _r2.o = ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.requests_;
     XMLVM_CHECK_NPE(2)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_get___java_lang_Object])(_r2.o, _r10.o);
@@ -427,11 +433,13 @@ void my_kinderlieder_PdfViewController_show___my_kinderlieder_SongInfo(JAVA_OBJE
     XMLVM_SOURCE_POSITION("PdfViewController.java", 34)
     _r1.o = org_xmlvm_iphone_NSURLRequest_requestWithURL___org_xmlvm_iphone_NSURL(_r0.o);
     XMLVM_SOURCE_POSITION("PdfViewController.java", 35)
+    XMLVM_CHECK_NPE(9)
     _r2.o = ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.requests_;
     XMLVM_CHECK_NPE(2)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_put___java_lang_Object_java_lang_Object])(_r2.o, _r10.o, _r1.o);
     label44:;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 37)
+    XMLVM_CHECK_NPE(9)
     _r2.o = ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.pdfView_;
     XMLVM_CHECK_NPE(2)
     org_xmlvm_iphone_UIWebView_loadRequest___org_xmlvm_iphone_NSURLRequest(_r2.o, _r1.o);
@@ -446,6 +454,7 @@ void my_kinderlieder_PdfViewController_show___my_kinderlieder_SongInfo(JAVA_OBJE
     my_kinderlieder_PdfViewController_1___INIT____my_kinderlieder_PdfViewController_org_xmlvm_iphone_NSURL(_r4.o, _r9.o, _r0.o);
     XMLVM_CHECK_NPE(2)
     org_xmlvm_iphone_UIBarButtonItem___INIT____int_org_xmlvm_iphone_UIBarButtonItemDelegate(_r2.o, _r3.i, _r4.o);
+    XMLVM_CHECK_NPE(9)
     ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.rightBarButtonItem_ = _r2.o;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 53)
     XMLVM_CHECK_NPE(9)
@@ -453,6 +462,7 @@ void my_kinderlieder_PdfViewController_show___my_kinderlieder_SongInfo(JAVA_OBJE
     XMLVM_SOURCE_POSITION("PdfViewController.java", 54)
     XMLVM_CHECK_NPE(9)
     _r2.o = org_xmlvm_iphone_UIViewController_getNavigationItem__(_r9.o);
+    XMLVM_CHECK_NPE(9)
     _r3.o = ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.rightBarButtonItem_;
     XMLVM_CHECK_NPE(2)
     org_xmlvm_iphone_UINavigationItem_setRightBarButtonItem___org_xmlvm_iphone_UIBarButtonItem(_r2.o, _r3.o);
@@ -465,6 +475,7 @@ void my_kinderlieder_PdfViewController_show___my_kinderlieder_SongInfo(JAVA_OBJE
     my_kinderlieder_PdfViewController_2___INIT____my_kinderlieder_PdfViewController_my_kinderlieder_SongInfo(_r4.o, _r9.o, _r10.o);
     XMLVM_CHECK_NPE(2)
     org_xmlvm_iphone_UIBarButtonItem___INIT____int_org_xmlvm_iphone_UIBarButtonItemDelegate(_r2.o, _r3.i, _r4.o);
+    XMLVM_CHECK_NPE(9)
     ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.playButton_ = _r2.o;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 104)
     _r2.o = __NEW_org_xmlvm_iphone_UIBarButtonItem();
@@ -474,6 +485,7 @@ void my_kinderlieder_PdfViewController_show___my_kinderlieder_SongInfo(JAVA_OBJE
     my_kinderlieder_PdfViewController_3___INIT____my_kinderlieder_PdfViewController(_r4.o, _r9.o);
     XMLVM_CHECK_NPE(2)
     org_xmlvm_iphone_UIBarButtonItem___INIT____int_org_xmlvm_iphone_UIBarButtonItemDelegate(_r2.o, _r3.i, _r4.o);
+    XMLVM_CHECK_NPE(9)
     ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.pauseButton_ = _r2.o;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 110)
     _r2.o = __NEW_org_xmlvm_iphone_UIBarButtonItem();
@@ -483,8 +495,10 @@ void my_kinderlieder_PdfViewController_show___my_kinderlieder_SongInfo(JAVA_OBJE
     my_kinderlieder_PdfViewController_4___INIT____my_kinderlieder_PdfViewController(_r4.o, _r9.o);
     XMLVM_CHECK_NPE(2)
     org_xmlvm_iphone_UIBarButtonItem___INIT____int_org_xmlvm_iphone_UIBarButtonItemDelegate(_r2.o, _r3.i, _r4.o);
+    XMLVM_CHECK_NPE(9)
     ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.stopButton_ = _r2.o;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 116)
+    XMLVM_CHECK_NPE(9)
     ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.repeat_ = _r5.i;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 117)
     _r2.o = __NEW_org_xmlvm_iphone_UIBarButtonItem();
@@ -496,56 +510,69 @@ void my_kinderlieder_PdfViewController_show___my_kinderlieder_SongInfo(JAVA_OBJE
     my_kinderlieder_PdfViewController_5___INIT____my_kinderlieder_PdfViewController(_r4.o, _r9.o);
     XMLVM_CHECK_NPE(2)
     org_xmlvm_iphone_UIBarButtonItem___INIT____org_xmlvm_iphone_UIImage_int_org_xmlvm_iphone_UIBarButtonItemDelegate(_r2.o, _r3.o, _r5.i, _r4.o);
+    XMLVM_CHECK_NPE(9)
     ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.repeatButton_ = _r2.o;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 130)
     if (!__TIB_org_xmlvm_iphone_UIBarButtonItem.classInitialized) __INIT_org_xmlvm_iphone_UIBarButtonItem();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_org_xmlvm_iphone_UIBarButtonItem, _r7.i);
+    XMLVM_CHECK_NPE(9)
     _r3.o = ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.playButton_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r5.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r5.i] = _r3.o;
+    XMLVM_CHECK_NPE(9)
     _r3.o = ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.repeatButton_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
     _r2.o = java_util_Arrays_asList___java_lang_Object_1ARRAY(_r2.o);
+    XMLVM_CHECK_NPE(9)
     ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.buttonsPlay_ = _r2.o;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 131)
     if (!__TIB_org_xmlvm_iphone_UIBarButtonItem.classInitialized) __INIT_org_xmlvm_iphone_UIBarButtonItem();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_org_xmlvm_iphone_UIBarButtonItem, _r8.i);
+    XMLVM_CHECK_NPE(9)
     _r3.o = ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.pauseButton_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r5.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r5.i] = _r3.o;
+    XMLVM_CHECK_NPE(9)
     _r3.o = ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.stopButton_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
+    XMLVM_CHECK_NPE(9)
     _r3.o = ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.repeatButton_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
     _r2.o = java_util_Arrays_asList___java_lang_Object_1ARRAY(_r2.o);
+    XMLVM_CHECK_NPE(9)
     ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.buttonsPauseStop_ = _r2.o;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 132)
     if (!__TIB_org_xmlvm_iphone_UIBarButtonItem.classInitialized) __INIT_org_xmlvm_iphone_UIBarButtonItem();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_org_xmlvm_iphone_UIBarButtonItem, _r8.i);
+    XMLVM_CHECK_NPE(9)
     _r3.o = ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.playButton_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r5.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r5.i] = _r3.o;
+    XMLVM_CHECK_NPE(9)
     _r3.o = ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.stopButton_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r6.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r6.i] = _r3.o;
+    XMLVM_CHECK_NPE(9)
     _r3.o = ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.repeatButton_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r7.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r7.i] = _r3.o;
     _r2.o = java_util_Arrays_asList___java_lang_Object_1ARRAY(_r2.o);
+    XMLVM_CHECK_NPE(9)
     ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.buttonsPlayStop_ = _r2.o;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 133)
     _r2.o = __NEW_java_util_ArrayList();
+    XMLVM_CHECK_NPE(9)
     _r3.o = ((my_kinderlieder_PdfViewController*) _r9.o)->fields.my_kinderlieder_PdfViewController.buttonsPlay_;
     XMLVM_CHECK_NPE(2)
     java_util_ArrayList___INIT____java_util_Collection(_r2.o, _r3.o);
@@ -572,6 +599,7 @@ void my_kinderlieder_PdfViewController_updateRepeatMode__(JAVA_OBJECT me)
     _r0.o = my_kinderlieder_Main_getAudioPlayer__();
     if (_r0.o == JAVA_NULL) goto label18;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 140)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((my_kinderlieder_PdfViewController*) _r2.o)->fields.my_kinderlieder_PdfViewController.repeat_;
     if (_r0.i == 0) goto label19;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 141)
@@ -615,6 +643,7 @@ void my_kinderlieder_PdfViewController_stop__(JAVA_OBJECT me)
     label15:;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 153)
     _r0.o = my_kinderlieder_Main_GET_library();
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((my_kinderlieder_PdfViewController*) _r4.o)->fields.my_kinderlieder_PdfViewController.songInfo_;
     XMLVM_CHECK_NPE(0)
     _r0.o = my_kinderlieder_Library_getMusicInfos___my_kinderlieder_SongInfo(_r0.o, _r1.o);
@@ -622,16 +651,19 @@ void my_kinderlieder_PdfViewController_stop__(JAVA_OBJECT me)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_size__])(_r0.o);
     if (_r0.i != 0) goto label50;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 154)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((my_kinderlieder_PdfViewController*) _r4.o)->fields.my_kinderlieder_PdfViewController.playButton_;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UIBarItem_setEnabled___boolean(_r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("PdfViewController.java", 155)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((my_kinderlieder_PdfViewController*) _r4.o)->fields.my_kinderlieder_PdfViewController.repeatButton_;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UIBarItem_setEnabled___boolean(_r0.o, _r2.i);
     label39:;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 164)
     _r0.o = __NEW_java_util_ArrayList();
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((my_kinderlieder_PdfViewController*) _r4.o)->fields.my_kinderlieder_PdfViewController.buttonsPlay_;
     XMLVM_CHECK_NPE(0)
     java_util_ArrayList___INIT____java_util_Collection(_r0.o, _r1.o);
@@ -643,6 +675,7 @@ void my_kinderlieder_PdfViewController_stop__(JAVA_OBJECT me)
     label50:;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 156)
     _r0.o = my_kinderlieder_Main_GET_library();
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((my_kinderlieder_PdfViewController*) _r4.o)->fields.my_kinderlieder_PdfViewController.songInfo_;
     XMLVM_CHECK_NPE(0)
     _r0.o = my_kinderlieder_Library_getMusicInfos___my_kinderlieder_SongInfo(_r0.o, _r1.o);
@@ -656,6 +689,7 @@ void my_kinderlieder_PdfViewController_stop__(JAVA_OBJECT me)
     label69:;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 159)
     _r0.o = my_kinderlieder_Main_GET_library();
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((my_kinderlieder_PdfViewController*) _r4.o)->fields.my_kinderlieder_PdfViewController.songInfo_;
     XMLVM_CHECK_NPE(0)
     _r0.o = my_kinderlieder_Library_getMusicInfos___my_kinderlieder_SongInfo(_r0.o, _r1.o);
@@ -675,6 +709,7 @@ void my_kinderlieder_PdfViewController_stop__(JAVA_OBJECT me)
     org_xmlvm_iphone_AVAudioPlayer_prepareToPlay__(_r0.o);
     XMLVM_SOURCE_POSITION("PdfViewController.java", 162)
     _r0.o = my_kinderlieder_Main_getAudioPlayer__();
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((my_kinderlieder_PdfViewController*) _r4.o)->fields.my_kinderlieder_PdfViewController.repeat_;
     if (_r1.i == 0) goto label122;
     _r1.i = -1;
@@ -697,6 +732,7 @@ JAVA_OBJECT my_kinderlieder_PdfViewController_access$000___my_kinderlieder_PdfVi
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 7)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((my_kinderlieder_PdfViewController*) _r1.o)->fields.my_kinderlieder_PdfViewController.rightBarButtonItem_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -712,6 +748,7 @@ JAVA_OBJECT my_kinderlieder_PdfViewController_access$200___my_kinderlieder_PdfVi
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 7)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((my_kinderlieder_PdfViewController*) _r1.o)->fields.my_kinderlieder_PdfViewController.playButton_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -757,6 +794,7 @@ JAVA_OBJECT my_kinderlieder_PdfViewController_access$500___my_kinderlieder_PdfVi
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 7)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((my_kinderlieder_PdfViewController*) _r1.o)->fields.my_kinderlieder_PdfViewController.buttonsPauseStop_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -772,6 +810,7 @@ JAVA_OBJECT my_kinderlieder_PdfViewController_access$600___my_kinderlieder_PdfVi
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 7)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((my_kinderlieder_PdfViewController*) _r1.o)->fields.my_kinderlieder_PdfViewController.buttonsPlayStop_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

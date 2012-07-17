@@ -1614,6 +1614,7 @@ void java_lang_Thread_addSelfToMap__(JAVA_OBJECT me)
     org_xmlvm_runtime_Mutex_lock__(_r0.o);
     XMLVM_SOURCE_POSITION("Thread.java", 161)
     _r0.o = java_lang_Thread_GET_threadMap();
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.nativeThreadId_;
     _r1.o = java_lang_Long_valueOf___long(_r1.l);
     XMLVM_CHECK_NPE(0)
@@ -1643,6 +1644,7 @@ void java_lang_Thread_removeSelfFromMap__(JAVA_OBJECT me)
     org_xmlvm_runtime_Mutex_lock__(_r0.o);
     XMLVM_SOURCE_POSITION("Thread.java", 169)
     _r0.o = java_lang_Thread_GET_threadMap();
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.nativeThreadId_;
     _r1.o = java_lang_Long_valueOf___long(_r1.l);
     XMLVM_CHECK_NPE(0)
@@ -1666,6 +1668,7 @@ JAVA_LONG java_lang_Thread_getNativeThreadId__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Thread.java", 177)
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.nativeThreadId_;
     XMLVM_EXIT_METHOD()
     return _r0.l;
@@ -1689,38 +1692,48 @@ void java_lang_Thread___INIT____long(JAVA_OBJECT me, JAVA_LONG n1)
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("Thread.java", 131)
     _r0.i = 5;
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.priority_ = _r0.i;
     XMLVM_SOURCE_POSITION("Thread.java", 132)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.daemon_ = _r1.i;
     XMLVM_SOURCE_POSITION("Thread.java", 133)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.alive_ = _r1.i;
     XMLVM_SOURCE_POSITION("Thread.java", 137)
     _r0.o = java_lang_Thread_State_GET_NEW();
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadState_ = _r0.o;
     XMLVM_SOURCE_POSITION("Thread.java", 143)
     _r0.o = __NEW_java_util_HashMap();
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadLocalMap_ = _r0.o;
     XMLVM_SOURCE_POSITION("Thread.java", 187)
     XMLVM_CHECK_NPE(2)
     java_lang_Thread_initMainThread__(_r2.o);
     XMLVM_SOURCE_POSITION("Thread.java", 189)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.nativeThreadId_ = _r3.l;
     XMLVM_SOURCE_POSITION("Thread.java", 192)
     XMLVM_CHECK_NPE(2)
     java_lang_Thread_addSelfToMap__(_r2.o);
     XMLVM_SOURCE_POSITION("Thread.java", 194)
     _r0.l = 1;
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadId_ = _r0.l;
     XMLVM_SOURCE_POSITION("Thread.java", 195)
     // "main"
     _r0.o = xmlvm_create_java_string_from_pool(262);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadName_ = _r0.o;
     XMLVM_SOURCE_POSITION("Thread.java", 197)
     _r0.o = java_lang_Thread_GET_mainThreadGroup();
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadGroup_ = _r0.o;
     XMLVM_SOURCE_POSITION("Thread.java", 198)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadGroup_;
     XMLVM_CHECK_NPE(0)
     java_lang_ThreadGroup_add___java_lang_Thread(_r0.o, _r2.o);
@@ -1798,7 +1811,9 @@ JAVA_BOOLEAN java_lang_Thread_equals___java_lang_Object(JAVA_OBJECT me, JAVA_OBJ
     _r0.o = _r0.o;
     _r2 = _r0;
     XMLVM_SOURCE_POSITION("Thread.java", 230)
+    XMLVM_CHECK_NPE(7)
     _r3.l = ((java_lang_Thread*) _r7.o)->fields.java_lang_Thread.nativeThreadId_;
+    XMLVM_CHECK_NPE(2)
     _r5.l = ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.nativeThreadId_;
     _r3.i = _r3.l > _r5.l ? 1 : (_r3.l == _r5.l ? 0 : -1);
     if (_r3.i != 0) goto label20;
@@ -1831,9 +1846,11 @@ void java_lang_Thread_initThread___java_lang_ThreadGroup_java_lang_Runnable_java
     _r5.o = n2;
     _r6.o = n3;
     XMLVM_SOURCE_POSITION("Thread.java", 259)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.targetRunnable_ = _r5.o;
     XMLVM_SOURCE_POSITION("Thread.java", 260)
     _r0.l = java_lang_Thread_getNextThreadId__();
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.threadId_ = _r0.l;
     XMLVM_SOURCE_POSITION("Thread.java", 262)
     if (_r6.o != JAVA_NULL) goto label46;
@@ -1845,12 +1862,14 @@ void java_lang_Thread_initThread___java_lang_ThreadGroup_java_lang_Runnable_java
     _r1.o = xmlvm_create_java_string_from_pool(263);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(3)
     _r1.l = ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.threadId_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___long(_r0.o, _r1.l);
     //java_lang_StringBuilder_toString__[5]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[5])(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.threadName_ = _r0.o;
     label33:;
     XMLVM_SOURCE_POSITION("Thread.java", 268)
@@ -1859,6 +1878,7 @@ void java_lang_Thread_initThread___java_lang_ThreadGroup_java_lang_Runnable_java
     _r0.o = java_lang_Thread_currentThread__();
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_Thread_getThreadGroup__(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.threadGroup_ = _r0.o;
     label45:;
     XMLVM_SOURCE_POSITION("Thread.java", 274)
@@ -1866,10 +1886,12 @@ void java_lang_Thread_initThread___java_lang_ThreadGroup_java_lang_Runnable_java
     return;
     label46:;
     XMLVM_SOURCE_POSITION("Thread.java", 265)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.threadName_ = _r6.o;
     goto label33;
     label49:;
     XMLVM_SOURCE_POSITION("Thread.java", 272)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.threadGroup_ = _r4.o;
     goto label45;
     //XMLVM_END_WRAPPER
@@ -1891,18 +1913,23 @@ void java_lang_Thread___INIT___(JAVA_OBJECT me)
     java_lang_Object___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("Thread.java", 131)
     _r0.i = 5;
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.priority_ = _r0.i;
     XMLVM_SOURCE_POSITION("Thread.java", 132)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.daemon_ = _r2.i;
     XMLVM_SOURCE_POSITION("Thread.java", 133)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.alive_ = _r2.i;
     XMLVM_SOURCE_POSITION("Thread.java", 137)
     _r0.o = java_lang_Thread_State_GET_NEW();
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.threadState_ = _r0.o;
     XMLVM_SOURCE_POSITION("Thread.java", 143)
     _r0.o = __NEW_java_util_HashMap();
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.threadLocalMap_ = _r0.o;
     XMLVM_SOURCE_POSITION("Thread.java", 284)
     XMLVM_CHECK_NPE(3)
@@ -1931,18 +1958,23 @@ void java_lang_Thread___INIT____java_lang_Runnable(JAVA_OBJECT me, JAVA_OBJECT n
     java_lang_Object___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("Thread.java", 131)
     _r0.i = 5;
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.priority_ = _r0.i;
     XMLVM_SOURCE_POSITION("Thread.java", 132)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.daemon_ = _r1.i;
     XMLVM_SOURCE_POSITION("Thread.java", 133)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.alive_ = _r1.i;
     XMLVM_SOURCE_POSITION("Thread.java", 137)
     _r0.o = java_lang_Thread_State_GET_NEW();
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.threadState_ = _r0.o;
     XMLVM_SOURCE_POSITION("Thread.java", 143)
     _r0.o = __NEW_java_util_HashMap();
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.threadLocalMap_ = _r0.o;
     XMLVM_SOURCE_POSITION("Thread.java", 298)
     XMLVM_CHECK_NPE(3)
@@ -1971,18 +2003,23 @@ void java_lang_Thread___INIT____java_lang_Runnable_java_lang_String(JAVA_OBJECT 
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("Thread.java", 131)
     _r0.i = 5;
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.priority_ = _r0.i;
     XMLVM_SOURCE_POSITION("Thread.java", 132)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.daemon_ = _r1.i;
     XMLVM_SOURCE_POSITION("Thread.java", 133)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.alive_ = _r1.i;
     XMLVM_SOURCE_POSITION("Thread.java", 137)
     _r0.o = java_lang_Thread_State_GET_NEW();
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadState_ = _r0.o;
     XMLVM_SOURCE_POSITION("Thread.java", 143)
     _r0.o = __NEW_java_util_HashMap();
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadLocalMap_ = _r0.o;
     XMLVM_SOURCE_POSITION("Thread.java", 313)
     _r0.o = JAVA_NULL;
@@ -2012,18 +2049,23 @@ void java_lang_Thread___INIT____java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1)
     java_lang_Object___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("Thread.java", 131)
     _r0.i = 5;
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.priority_ = _r0.i;
     XMLVM_SOURCE_POSITION("Thread.java", 132)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.daemon_ = _r1.i;
     XMLVM_SOURCE_POSITION("Thread.java", 133)
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.alive_ = _r1.i;
     XMLVM_SOURCE_POSITION("Thread.java", 137)
     _r0.o = java_lang_Thread_State_GET_NEW();
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.threadState_ = _r0.o;
     XMLVM_SOURCE_POSITION("Thread.java", 143)
     _r0.o = __NEW_java_util_HashMap();
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.threadLocalMap_ = _r0.o;
     XMLVM_SOURCE_POSITION("Thread.java", 326)
     XMLVM_CHECK_NPE(3)
@@ -2052,18 +2094,23 @@ void java_lang_Thread___INIT____java_lang_ThreadGroup_java_lang_Runnable(JAVA_OB
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("Thread.java", 131)
     _r0.i = 5;
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.priority_ = _r0.i;
     XMLVM_SOURCE_POSITION("Thread.java", 132)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.daemon_ = _r1.i;
     XMLVM_SOURCE_POSITION("Thread.java", 133)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.alive_ = _r1.i;
     XMLVM_SOURCE_POSITION("Thread.java", 137)
     _r0.o = java_lang_Thread_State_GET_NEW();
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadState_ = _r0.o;
     XMLVM_SOURCE_POSITION("Thread.java", 143)
     _r0.o = __NEW_java_util_HashMap();
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadLocalMap_ = _r0.o;
     XMLVM_SOURCE_POSITION("Thread.java", 346)
     _r0.o = JAVA_NULL;
@@ -2098,18 +2145,23 @@ void java_lang_Thread___INIT____java_lang_ThreadGroup_java_lang_Runnable_java_la
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("Thread.java", 131)
     _r0.i = 5;
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.priority_ = _r0.i;
     XMLVM_SOURCE_POSITION("Thread.java", 132)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.daemon_ = _r1.i;
     XMLVM_SOURCE_POSITION("Thread.java", 133)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.alive_ = _r1.i;
     XMLVM_SOURCE_POSITION("Thread.java", 137)
     _r0.o = java_lang_Thread_State_GET_NEW();
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadState_ = _r0.o;
     XMLVM_SOURCE_POSITION("Thread.java", 143)
     _r0.o = __NEW_java_util_HashMap();
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadLocalMap_ = _r0.o;
     XMLVM_SOURCE_POSITION("Thread.java", 368)
     XMLVM_CHECK_NPE(2)
@@ -2140,18 +2192,23 @@ void java_lang_Thread___INIT____java_lang_ThreadGroup_java_lang_Runnable_java_la
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("Thread.java", 131)
     _r0.i = 5;
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.priority_ = _r0.i;
     XMLVM_SOURCE_POSITION("Thread.java", 132)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.daemon_ = _r1.i;
     XMLVM_SOURCE_POSITION("Thread.java", 133)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.alive_ = _r1.i;
     XMLVM_SOURCE_POSITION("Thread.java", 137)
     _r0.o = java_lang_Thread_State_GET_NEW();
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadState_ = _r0.o;
     XMLVM_SOURCE_POSITION("Thread.java", 143)
     _r0.o = __NEW_java_util_HashMap();
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadLocalMap_ = _r0.o;
     XMLVM_SOURCE_POSITION("Thread.java", 389)
     XMLVM_CHECK_NPE(2)
@@ -2180,18 +2237,23 @@ void java_lang_Thread___INIT____java_lang_ThreadGroup_java_lang_String(JAVA_OBJE
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("Thread.java", 131)
     _r0.i = 5;
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.priority_ = _r0.i;
     XMLVM_SOURCE_POSITION("Thread.java", 132)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.daemon_ = _r1.i;
     XMLVM_SOURCE_POSITION("Thread.java", 133)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.alive_ = _r1.i;
     XMLVM_SOURCE_POSITION("Thread.java", 137)
     _r0.o = java_lang_Thread_State_GET_NEW();
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadState_ = _r0.o;
     XMLVM_SOURCE_POSITION("Thread.java", 143)
     _r0.o = __NEW_java_util_HashMap();
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadLocalMap_ = _r0.o;
     XMLVM_SOURCE_POSITION("Thread.java", 407)
     _r0.o = JAVA_NULL;
@@ -2212,6 +2274,7 @@ void java_lang_Thread_setInterruptAction___java_lang_Runnable(JAVA_OBJECT me, JA
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("Thread.java", 423)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_Thread*) _r0.o)->fields.java_lang_Thread.action_ = _r1.o;
     XMLVM_SOURCE_POSITION("Thread.java", 424)
     XMLVM_EXIT_METHOD()
@@ -2263,6 +2326,7 @@ JAVA_LONG java_lang_Thread_getId__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Thread.java", 566)
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadId_;
     XMLVM_EXIT_METHOD()
     return _r0.l;
@@ -2277,6 +2341,7 @@ JAVA_OBJECT java_lang_Thread_getName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Thread.java", 575)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_Thread*) _r1.o)->fields.java_lang_Thread.threadName_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2291,6 +2356,7 @@ JAVA_INT java_lang_Thread_getPriority__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Thread.java", 585)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_Thread*) _r1.o)->fields.java_lang_Thread.priority_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -2317,6 +2383,7 @@ JAVA_OBJECT java_lang_Thread_getState__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     java_io_PrintStream_println___java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("Thread.java", 613)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadState_;
     // End try
     XMLVM_TRY_END
@@ -2343,6 +2410,7 @@ JAVA_OBJECT java_lang_Thread_getThreadGroup__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Thread.java", 622)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_Thread*) _r1.o)->fields.java_lang_Thread.threadGroup_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2359,6 +2427,7 @@ JAVA_OBJECT java_lang_Thread_getThreadLocal___java_lang_ThreadLocal(JAVA_OBJECT 
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Thread.java", 636)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_Thread*) _r1.o)->fields.java_lang_Thread.threadLocalMap_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_get___java_lang_Object])(_r0.o, _r2.o);
@@ -2378,9 +2447,11 @@ void java_lang_Thread_interrupt__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Thread.java", 680)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.action_;
     if (_r1.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("Thread.java", 681)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.action_;
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_Runnable_run__])(_r1.o);
@@ -2393,11 +2464,14 @@ void java_lang_Thread_interrupt__(JAVA_OBJECT me)
     _r1.i = 1;
     XMLVM_TRY_BEGIN(w4267aaac61b1c15)
     // Begin try
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.interrupted_ = _r1.i;
     XMLVM_SOURCE_POSITION("Thread.java", 688)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.waitingCondition_;
     if (_r1.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w4267aaac61b1c15->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w4267aaac61b1c15, sizeof(XMLVM_JMP_BUF)); goto label20; };
     XMLVM_SOURCE_POSITION("Thread.java", 689)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.waitingCondition_;
     // End try
     XMLVM_TRY_END
@@ -2464,6 +2538,7 @@ JAVA_BOOLEAN java_lang_Thread_interrupted__()
     _r1.i = java_lang_Thread_isInterrupted__(_r0.o);
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("Thread.java", 716)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_Thread*) _r0.o)->fields.java_lang_Thread.interrupted_ = _r2.i;
     XMLVM_SOURCE_POSITION("Thread.java", 717)
     java_lang_Object_releaseLockRecursive__(_r0.o);
@@ -2504,6 +2579,7 @@ JAVA_BOOLEAN java_lang_Thread_isAlive__(JAVA_OBJECT me)
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_TRY_BEGIN(w4267aaac63b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_Thread*) _r1.o)->fields.java_lang_Thread.alive_;
     // End try
     XMLVM_TRY_END
@@ -2533,6 +2609,7 @@ JAVA_BOOLEAN java_lang_Thread_isDaemon__(JAVA_OBJECT me)
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_TRY_BEGIN(w4267aaac64b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_Thread*) _r1.o)->fields.java_lang_Thread.daemon_;
     // End try
     XMLVM_TRY_END
@@ -2566,6 +2643,7 @@ JAVA_BOOLEAN java_lang_Thread_isInterrupted__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w4267aaac65b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("Thread.java", 760)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.interrupted_;
     XMLVM_SOURCE_POSITION("Thread.java", 761)
     java_lang_Object_releaseLockRecursive__(_r2.o);
@@ -2763,6 +2841,7 @@ void java_lang_Thread_run0___long(JAVA_OBJECT me, JAVA_LONG n1)
     // "\042 "
     _r4.o = xmlvm_create_java_string_from_pool(267);
     XMLVM_SOURCE_POSITION("Thread.java", 854)
+    XMLVM_CHECK_NPE(6)
     ((java_lang_Thread*) _r6.o)->fields.java_lang_Thread.nativeThreadId_ = _r7.l;
     XMLVM_SOURCE_POSITION("Thread.java", 855)
     XMLVM_CHECK_NPE(6)
@@ -2773,6 +2852,7 @@ void java_lang_Thread_run0___long(JAVA_OBJECT me, JAVA_LONG n1)
     _r1.i = 1;
     XMLVM_TRY_BEGIN(w4267aaac70b1c13)
     // Begin try
+    XMLVM_CHECK_NPE(6)
     ((java_lang_Thread*) _r6.o)->fields.java_lang_Thread.alive_ = _r1.i;
     XMLVM_SOURCE_POSITION("Thread.java", 859)
     java_lang_Object_releaseLockRecursive__(_r6.o);
@@ -2785,6 +2865,7 @@ void java_lang_Thread_run0___long(JAVA_OBJECT me, JAVA_LONG n1)
     XMLVM_TRY_BEGIN(w4267aaac70b1c14)
     // Begin try
     XMLVM_SOURCE_POSITION("Thread.java", 862)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_lang_Thread*) _r6.o)->fields.java_lang_Thread.targetRunnable_;
     if (_r1.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w4267aaac70b1c14->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w4267aaac70b1c14, sizeof(XMLVM_JMP_BUF)); goto label44; };
     XMLVM_SOURCE_POSITION("Thread.java", 863)
@@ -2804,6 +2885,7 @@ void java_lang_Thread_run0___long(JAVA_OBJECT me, JAVA_LONG n1)
     _r1.i = 0;
     XMLVM_TRY_BEGIN(w4267aaac70b1c20)
     // Begin try
+    XMLVM_CHECK_NPE(6)
     ((java_lang_Thread*) _r6.o)->fields.java_lang_Thread.alive_ = _r1.i;
     XMLVM_SOURCE_POSITION("Thread.java", 881)
     XMLVM_CHECK_NPE(6)
@@ -2820,6 +2902,7 @@ void java_lang_Thread_run0___long(JAVA_OBJECT me, JAVA_LONG n1)
     XMLVM_CHECK_NPE(6)
     java_lang_Thread_removeSelfFromMap__(_r6.o);
     XMLVM_SOURCE_POSITION("Thread.java", 886)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_lang_Thread*) _r6.o)->fields.java_lang_Thread.threadGroup_;
     XMLVM_CHECK_NPE(1)
     java_lang_ThreadGroup_remove___java_lang_Thread(_r1.o, _r6.o);
@@ -2846,6 +2929,7 @@ void java_lang_Thread_run0___long(JAVA_OBJECT me, JAVA_LONG n1)
     XMLVM_TRY_BEGIN(w4267aaac70b1c35)
     // Begin try
     XMLVM_SOURCE_POSITION("Thread.java", 865)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_lang_Thread*) _r6.o)->fields.java_lang_Thread.targetRunnable_;
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_Runnable_run__])(_r1.o);
@@ -2964,6 +3048,7 @@ void java_lang_Thread_threadTerminating__(JAVA_OBJECT me)
     // Begin try
     XMLVM_SOURCE_POSITION("Thread.java", 895)
     _r0.o = java_lang_Thread_State_GET_TERMINATED();
+    XMLVM_CHECK_NPE(3)
     ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.threadState_ = _r0.o;
     XMLVM_SOURCE_POSITION("Thread.java", 896)
     java_lang_Object_releaseLockRecursive__(_r3.o);
@@ -2974,6 +3059,7 @@ void java_lang_Thread_threadTerminating__(JAVA_OBJECT me)
     XMLVM_CATCH_END(w4267aaac72b1b4)
     XMLVM_RESTORE_EXCEPTION_ENV(w4267aaac72b1b4)
     XMLVM_SOURCE_POSITION("Thread.java", 900)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.daemon_;
     if (_r0.i != 0) goto label28;
     XMLVM_SOURCE_POSITION("Thread.java", 901)
@@ -3071,6 +3157,7 @@ void java_lang_Thread_setDaemon___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
     java_lang_Object_acquireLockRecursive__(_r2.o);
     XMLVM_TRY_BEGIN(w4267aaac75b1b5)
     // Begin try
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadState_;
     _r1.o = java_lang_Thread_State_GET_NEW();
     if (_r0.o == _r1.o) { XMLVM_MEMCPY(curThread_w4267aaac75b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w4267aaac75b1b5, sizeof(XMLVM_JMP_BUF)); goto label16; };
@@ -3094,6 +3181,7 @@ void java_lang_Thread_setDaemon___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
     XMLVM_TRY_BEGIN(w4267aaac75b1c11)
     // Begin try
     XMLVM_SOURCE_POSITION("Thread.java", 949)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.daemon_ = _r3.i;
     // End try
     XMLVM_TRY_END
@@ -3119,6 +3207,7 @@ void java_lang_Thread_setName___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1)
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("Thread.java", 977)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_Thread*) _r0.o)->fields.java_lang_Thread.threadName_ = _r1.o;
     XMLVM_SOURCE_POSITION("Thread.java", 978)
     XMLVM_EXIT_METHOD()
@@ -3140,6 +3229,7 @@ void java_lang_Thread_setThreadLocal___java_lang_ThreadLocal_java_lang_Object(JA
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("Thread.java", 1008)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_Thread*) _r1.o)->fields.java_lang_Thread.threadLocalMap_;
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_put___java_lang_Object_java_lang_Object])(_r0.o, _r2.o, _r3.o);
@@ -3291,6 +3381,7 @@ void java_lang_Thread_start__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w4267aaac83b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("Thread.java", 1086)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadState_;
     _r1.o = java_lang_Thread_State_GET_NEW();
     if (_r0.o == _r1.o) { XMLVM_MEMCPY(curThread_w4267aaac83b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w4267aaac83b1b4, sizeof(XMLVM_JMP_BUF)); goto label16; };
@@ -3324,6 +3415,7 @@ void java_lang_Thread_start__(JAVA_OBJECT me)
     // Begin try
     XMLVM_SOURCE_POSITION("Thread.java", 1089)
     _r0.o = java_lang_Thread_State_GET_RUNNABLE();
+    XMLVM_CHECK_NPE(2)
     ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadState_ = _r0.o;
     java_lang_Object_releaseLockRecursive__(_r2.o);
     // End try
@@ -3333,6 +3425,7 @@ void java_lang_Thread_start__(JAVA_OBJECT me)
     XMLVM_CATCH_END(w4267aaac83b1b9)
     XMLVM_RESTORE_EXCEPTION_ENV(w4267aaac83b1b9)
     XMLVM_SOURCE_POSITION("Thread.java", 1094)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.daemon_;
     if (_r0.i != 0) goto label35;
     XMLVM_SOURCE_POSITION("Thread.java", 1095)
@@ -3355,6 +3448,7 @@ void java_lang_Thread_start__(JAVA_OBJECT me)
     XMLVM_RESTORE_EXCEPTION_ENV(w4267aaac83b1c16)
     label35:;
     XMLVM_SOURCE_POSITION("Thread.java", 1099)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_lang_Thread*) _r2.o)->fields.java_lang_Thread.threadGroup_;
     XMLVM_CHECK_NPE(0)
     java_lang_ThreadGroup_add___java_lang_Thread(_r0.o, _r2.o);
@@ -3407,6 +3501,7 @@ JAVA_OBJECT java_lang_Thread_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(271);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.threadName_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
@@ -3414,6 +3509,7 @@ JAVA_OBJECT java_lang_Thread_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(2);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r2.o);
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.priority_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___int(_r0.o, _r1.i);
@@ -3421,6 +3517,7 @@ JAVA_OBJECT java_lang_Thread_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(2);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r2.o);
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.threadGroup_;
     if (_r1.o != JAVA_NULL) goto label58;
     // ""
@@ -3438,6 +3535,7 @@ JAVA_OBJECT java_lang_Thread_toString__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label58:;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_lang_Thread*) _r3.o)->fields.java_lang_Thread.threadGroup_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_ThreadGroup_getName__(_r1.o);
@@ -3463,6 +3561,7 @@ void java_lang_Thread_setWaitingCondition___org_xmlvm_runtime_Condition(JAVA_OBJ
     XMLVM_TRY_BEGIN(w4267aaac91b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("Thread.java", 1202)
+    XMLVM_CHECK_NPE(1)
     ((java_lang_Thread*) _r1.o)->fields.java_lang_Thread.waitingCondition_ = _r2.o;
     XMLVM_SOURCE_POSITION("Thread.java", 1203)
     java_lang_Object_releaseLockRecursive__(_r1.o);

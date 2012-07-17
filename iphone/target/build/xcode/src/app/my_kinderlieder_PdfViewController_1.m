@@ -230,7 +230,9 @@ void my_kinderlieder_PdfViewController_1___INIT____my_kinderlieder_PdfViewContro
     _r1.o = n1;
     _r2.o = n2;
     XMLVM_SOURCE_POSITION("PdfViewController.java", 39)
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_PdfViewController_1*) _r0.o)->fields.my_kinderlieder_PdfViewController_1.this_0_ = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_PdfViewController_1*) _r0.o)->fields.my_kinderlieder_PdfViewController_1.val_pdfURL_ = _r2.o;
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
@@ -252,10 +254,12 @@ void my_kinderlieder_PdfViewController_1_clicked__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("PdfViewController.java", 41)
     _r0.o = org_xmlvm_iphone_UIPrintInteractionController_sharedPrintController__();
     XMLVM_SOURCE_POSITION("PdfViewController.java", 42)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((my_kinderlieder_PdfViewController_1*) _r4.o)->fields.my_kinderlieder_PdfViewController_1.val_pdfURL_;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UIPrintInteractionController_setPrintingItem___org_xmlvm_iphone_NSObject(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("PdfViewController.java", 43)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((my_kinderlieder_PdfViewController_1*) _r4.o)->fields.my_kinderlieder_PdfViewController_1.this_0_;
     _r1.o = my_kinderlieder_PdfViewController_access$000___my_kinderlieder_PdfViewController(_r1.o);
     _r2.i = 1;

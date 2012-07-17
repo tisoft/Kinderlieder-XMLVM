@@ -342,14 +342,17 @@ void java_io_FileDescriptor___CLINIT_()
     XMLVM_SOURCE_POSITION("FileDescriptor.java", 66)
     _r0.o = java_io_FileDescriptor_GET_in();
     _r1.l = 0;
+    XMLVM_CHECK_NPE(0)
     ((java_io_FileDescriptor*) _r0.o)->fields.java_io_FileDescriptor.descriptor_ = _r1.l;
     XMLVM_SOURCE_POSITION("FileDescriptor.java", 67)
     _r0.o = java_io_FileDescriptor_GET_out();
     _r1.l = 1;
+    XMLVM_CHECK_NPE(0)
     ((java_io_FileDescriptor*) _r0.o)->fields.java_io_FileDescriptor.descriptor_ = _r1.l;
     XMLVM_SOURCE_POSITION("FileDescriptor.java", 68)
     _r0.o = java_io_FileDescriptor_GET_err();
     _r1.l = 2;
+    XMLVM_CHECK_NPE(0)
     ((java_io_FileDescriptor*) _r0.o)->fields.java_io_FileDescriptor.descriptor_ = _r1.l;
     XMLVM_SOURCE_POSITION("FileDescriptor.java", 70)
     java_io_FileDescriptor_oneTimeInitialization__();
@@ -374,9 +377,11 @@ void java_io_FileDescriptor___INIT___(JAVA_OBJECT me)
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("FileDescriptor.java", 59)
     _r0.l = -1;
+    XMLVM_CHECK_NPE(2)
     ((java_io_FileDescriptor*) _r2.o)->fields.java_io_FileDescriptor.descriptor_ = _r0.l;
     XMLVM_SOURCE_POSITION("FileDescriptor.java", 61)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((java_io_FileDescriptor*) _r2.o)->fields.java_io_FileDescriptor.readOnly_ = _r0.i;
     XMLVM_SOURCE_POSITION("FileDescriptor.java", 79)
     XMLVM_EXIT_METHOD()
@@ -392,6 +397,7 @@ void java_io_FileDescriptor_sync__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FileDescriptor.java", 90)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_io_FileDescriptor*) _r1.o)->fields.java_io_FileDescriptor.readOnly_;
     if (_r0.i != 0) goto label7;
     XMLVM_SOURCE_POSITION("FileDescriptor.java", 91)
@@ -417,6 +423,7 @@ JAVA_BOOLEAN java_io_FileDescriptor_valid__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("FileDescriptor.java", 104)
+    XMLVM_CHECK_NPE(4)
     _r0.l = ((java_io_FileDescriptor*) _r4.o)->fields.java_io_FileDescriptor.descriptor_;
     _r2.l = -1;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);

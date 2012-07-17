@@ -374,6 +374,7 @@ void java_util_regex_HighSurrogateCharSet___INIT____char(JAVA_OBJECT me, JAVA_CH
     XMLVM_CHECK_NPE(0)
     java_util_regex_JointSet___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("HighSurrogateCharSet.java", 99)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_HighSurrogateCharSet*) _r0.o)->fields.java_util_regex_HighSurrogateCharSet.high_ = _r1.i;
     XMLVM_SOURCE_POSITION("HighSurrogateCharSet.java", 100)
     XMLVM_EXIT_METHOD()
@@ -389,6 +390,7 @@ JAVA_OBJECT java_util_regex_HighSurrogateCharSet_getNext__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("HighSurrogateCharSet.java", 106)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_AbstractSet*) _r1.o)->fields.java_util_regex_AbstractSet.next_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -404,6 +406,7 @@ void java_util_regex_HighSurrogateCharSet_setNext___java_util_regex_AbstractSet(
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("HighSurrogateCharSet.java", 115)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractSet*) _r0.o)->fields.java_util_regex_AbstractSet.next_ = _r1.o;
     XMLVM_SOURCE_POSITION("HighSurrogateCharSet.java", 116)
     XMLVM_EXIT_METHOD()
@@ -436,6 +439,7 @@ JAVA_INT java_util_regex_HighSurrogateCharSet_matches___int_java_lang_CharSequen
     if (_r1.i <= _r0.i) goto label14;
     XMLVM_SOURCE_POSITION("HighSurrogateCharSet.java", 123)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(7)
     ((java_util_regex_MatchResultImpl*) _r7.o)->fields.java_util_regex_MatchResultImpl.hitEnd_ = _r0.i;
     _r0 = _r3;
     label13:;
@@ -462,9 +466,11 @@ JAVA_INT java_util_regex_HighSurrogateCharSet_matches___int_java_lang_CharSequen
     goto label13;
     label36:;
     XMLVM_SOURCE_POSITION("HighSurrogateCharSet.java", 141)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_regex_HighSurrogateCharSet*) _r4.o)->fields.java_util_regex_HighSurrogateCharSet.high_;
     if (_r0.i != _r1.i) goto label49;
     XMLVM_SOURCE_POSITION("HighSurrogateCharSet.java", 142)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_AbstractSet*) _r4.o)->fields.java_util_regex_AbstractSet.next_;
     _r1.i = _r5.i + 1;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
@@ -520,6 +526,7 @@ JAVA_INT java_util_regex_HighSurrogateCharSet_find___int_java_lang_CharSequence_
     return _r1.i;
     label18:;
     XMLVM_SOURCE_POSITION("HighSurrogateCharSet.java", 157)
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_util_regex_HighSurrogateCharSet*) _r7.o)->fields.java_util_regex_HighSurrogateCharSet.high_;
     XMLVM_CHECK_NPE(1)
     _r3.i = java_lang_String_indexOf___int_int(_r1.o, _r4.i, _r3.i);
@@ -545,6 +552,7 @@ JAVA_INT java_util_regex_HighSurrogateCharSet_find___int_java_lang_CharSequence_
     goto label14;
     label47:;
     XMLVM_SOURCE_POSITION("HighSurrogateCharSet.java", 173)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_util_regex_AbstractSet*) _r7.o)->fields.java_util_regex_AbstractSet.next_;
     _r5.i = _r3.i + 1;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
@@ -610,6 +618,7 @@ JAVA_INT java_util_regex_HighSurrogateCharSet_findBack___int_int_java_lang_CharS
     return _r1.i;
     label18:;
     XMLVM_SOURCE_POSITION("HighSurrogateCharSet.java", 192)
+    XMLVM_CHECK_NPE(7)
     _r4.i = ((java_util_regex_HighSurrogateCharSet*) _r7.o)->fields.java_util_regex_HighSurrogateCharSet.high_;
     XMLVM_CHECK_NPE(1)
     _r3.i = java_lang_String_lastIndexOf___int_int(_r1.o, _r4.i, _r3.i);
@@ -637,6 +646,7 @@ JAVA_INT java_util_regex_HighSurrogateCharSet_findBack___int_int_java_lang_CharS
     goto label14;
     label49:;
     XMLVM_SOURCE_POSITION("HighSurrogateCharSet.java", 209)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_util_regex_AbstractSet*) _r7.o)->fields.java_util_regex_AbstractSet.next_;
     _r5.i = _r3.i + 1;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
@@ -669,6 +679,7 @@ JAVA_OBJECT java_util_regex_HighSurrogateCharSet_getName__(JAVA_OBJECT me)
     _r0.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_regex_HighSurrogateCharSet*) _r2.o)->fields.java_util_regex_HighSurrogateCharSet.high_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -689,6 +700,7 @@ JAVA_INT java_util_regex_HighSurrogateCharSet_getChar__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("HighSurrogateCharSet.java", 227)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_regex_HighSurrogateCharSet*) _r1.o)->fields.java_util_regex_HighSurrogateCharSet.high_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -758,7 +770,9 @@ JAVA_BOOLEAN java_util_regex_HighSurrogateCharSet_first___java_util_regex_Abstra
     if (_r0.i == 0) goto label48;
     XMLVM_SOURCE_POSITION("HighSurrogateCharSet.java", 242)
     _r5.o = _r5.o;
+    XMLVM_CHECK_NPE(5)
     _r0.i = ((java_util_regex_HighSurrogateCharSet*) _r5.o)->fields.java_util_regex_HighSurrogateCharSet.high_;
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_regex_HighSurrogateCharSet*) _r4.o)->fields.java_util_regex_HighSurrogateCharSet.high_;
     if (_r0.i != _r1.i) goto label46;
     _r0 = _r3;

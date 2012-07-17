@@ -676,24 +676,34 @@ void java_lang_reflect_Method___INIT____java_lang_String_java_lang_Class_java_la
     XMLVM_CHECK_NPE(0)
     java_lang_reflect_AccessibleObject___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Method.java", 56)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Method*) _r0.o)->fields.java_lang_reflect_Method.name_ = _r1.o;
     XMLVM_SOURCE_POSITION("Method.java", 57)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Method*) _r0.o)->fields.java_lang_reflect_Method.clazz_ = _r2.o;
     XMLVM_SOURCE_POSITION("Method.java", 58)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Method*) _r0.o)->fields.java_lang_reflect_Method.parameterTypes_ = _r3.o;
     XMLVM_SOURCE_POSITION("Method.java", 59)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Method*) _r0.o)->fields.java_lang_reflect_Method.exceptionTypes_ = _r4.o;
     XMLVM_SOURCE_POSITION("Method.java", 60)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Method*) _r0.o)->fields.java_lang_reflect_Method.modifiers_ = _r5.i;
     XMLVM_SOURCE_POSITION("Method.java", 61)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Method*) _r0.o)->fields.java_lang_reflect_Method.address_ = _r6.o;
     XMLVM_SOURCE_POSITION("Method.java", 62)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Method*) _r0.o)->fields.java_lang_reflect_Method.slot_ = _r7.i;
     XMLVM_SOURCE_POSITION("Method.java", 63)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Method*) _r0.o)->fields.java_lang_reflect_Method.signature_ = _r8.o;
     XMLVM_SOURCE_POSITION("Method.java", 64)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Method*) _r0.o)->fields.java_lang_reflect_Method.annotations_ = _r9.o;
     XMLVM_SOURCE_POSITION("Method.java", 65)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_reflect_Method*) _r0.o)->fields.java_lang_reflect_Method.parameterAnnotations_ = _r10.o;
     XMLVM_SOURCE_POSITION("Method.java", 66)
     XMLVM_EXIT_METHOD()
@@ -735,6 +745,7 @@ JAVA_INT java_lang_reflect_Method_getModifiers__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Method.java", 216)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_reflect_Method*) _r1.o)->fields.java_lang_reflect_Method.modifiers_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -751,6 +762,7 @@ JAVA_OBJECT java_lang_reflect_Method_getParameterTypes__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Method.java", 235)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_reflect_Method*) _r1.o)->fields.java_lang_reflect_Method.parameterTypes_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -772,11 +784,14 @@ JAVA_OBJECT java_lang_reflect_Method_getReturnType__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_lang_reflect_GenericSignatureParser___INIT____java_lang_ClassLoader(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("Method.java", 246)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_lang_reflect_Method*) _r3.o)->fields.java_lang_reflect_Method.signature_;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_lang_reflect_Method*) _r3.o)->fields.java_lang_reflect_Method.exceptionTypes_;
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseForMethod___java_lang_reflect_GenericDeclaration_java_lang_String_java_lang_Class_1ARRAY(_r0.o, _r3.o, _r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("Method.java", 247)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r0.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.returnType_;
     _r3.o = org_apache_harmony_luni_lang_reflect_Types_getType___java_lang_reflect_Type(_r1.o);
     _r3.o = _r3.o;

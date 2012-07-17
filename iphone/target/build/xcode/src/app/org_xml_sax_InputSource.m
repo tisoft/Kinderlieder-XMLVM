@@ -502,6 +502,7 @@ void org_xml_sax_InputSource_setPublicId___java_lang_String(JAVA_OBJECT me, JAVA
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("InputSource.java", 154)
+    XMLVM_CHECK_NPE(0)
     ((org_xml_sax_InputSource*) _r0.o)->fields.org_xml_sax_InputSource.publicId_ = _r1.o;
     XMLVM_SOURCE_POSITION("InputSource.java", 155)
     XMLVM_EXIT_METHOD()
@@ -517,6 +518,7 @@ JAVA_OBJECT org_xml_sax_InputSource_getPublicId__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("InputSource.java", 166)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_InputSource*) _r1.o)->fields.org_xml_sax_InputSource.publicId_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -532,6 +534,7 @@ void org_xml_sax_InputSource_setSystemId___java_lang_String(JAVA_OBJECT me, JAVA
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("InputSource.java", 195)
+    XMLVM_CHECK_NPE(0)
     ((org_xml_sax_InputSource*) _r0.o)->fields.org_xml_sax_InputSource.systemId_ = _r1.o;
     XMLVM_SOURCE_POSITION("InputSource.java", 196)
     XMLVM_EXIT_METHOD()
@@ -547,6 +550,7 @@ JAVA_OBJECT org_xml_sax_InputSource_getSystemId__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("InputSource.java", 213)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_InputSource*) _r1.o)->fields.org_xml_sax_InputSource.systemId_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -562,6 +566,7 @@ void org_xml_sax_InputSource_setByteStream___java_io_InputStream(JAVA_OBJECT me,
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("InputSource.java", 236)
+    XMLVM_CHECK_NPE(0)
     ((org_xml_sax_InputSource*) _r0.o)->fields.org_xml_sax_InputSource.byteStream_ = _r1.o;
     XMLVM_SOURCE_POSITION("InputSource.java", 237)
     XMLVM_EXIT_METHOD()
@@ -577,6 +582,7 @@ JAVA_OBJECT org_xml_sax_InputSource_getByteStream__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("InputSource.java", 252)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_InputSource*) _r1.o)->fields.org_xml_sax_InputSource.byteStream_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -592,6 +598,7 @@ void org_xml_sax_InputSource_setEncoding___java_lang_String(JAVA_OBJECT me, JAVA
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("InputSource.java", 273)
+    XMLVM_CHECK_NPE(0)
     ((org_xml_sax_InputSource*) _r0.o)->fields.org_xml_sax_InputSource.encoding_ = _r1.o;
     XMLVM_SOURCE_POSITION("InputSource.java", 274)
     XMLVM_EXIT_METHOD()
@@ -607,6 +614,7 @@ JAVA_OBJECT org_xml_sax_InputSource_getEncoding__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("InputSource.java", 289)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_InputSource*) _r1.o)->fields.org_xml_sax_InputSource.encoding_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -622,6 +630,7 @@ void org_xml_sax_InputSource_setCharacterStream___java_io_Reader(JAVA_OBJECT me,
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("InputSource.java", 307)
+    XMLVM_CHECK_NPE(0)
     ((org_xml_sax_InputSource*) _r0.o)->fields.org_xml_sax_InputSource.characterStream_ = _r1.o;
     XMLVM_SOURCE_POSITION("InputSource.java", 308)
     XMLVM_EXIT_METHOD()
@@ -637,6 +646,7 @@ JAVA_OBJECT org_xml_sax_InputSource_getCharacterStream__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("InputSource.java", 319)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_InputSource*) _r1.o)->fields.org_xml_sax_InputSource.characterStream_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

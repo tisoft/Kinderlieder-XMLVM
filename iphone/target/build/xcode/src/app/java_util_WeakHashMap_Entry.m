@@ -347,14 +347,18 @@ void java_util_WeakHashMap_Entry___INIT____java_lang_Object_java_lang_Object_jav
     if (_r3.o != JAVA_NULL) goto label19;
     _r0.i = 1;
     label7:;
+    XMLVM_CHECK_NPE(2)
     ((java_util_WeakHashMap_Entry*) _r2.o)->fields.java_util_WeakHashMap_Entry.isNull_ = _r0.i;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 73)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_WeakHashMap_Entry*) _r2.o)->fields.java_util_WeakHashMap_Entry.isNull_;
     if (_r0.i == 0) goto label21;
     _r0 = _r1;
     label14:;
+    XMLVM_CHECK_NPE(2)
     ((java_util_WeakHashMap_Entry*) _r2.o)->fields.java_util_WeakHashMap_Entry.hash_ = _r0.i;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 74)
+    XMLVM_CHECK_NPE(2)
     ((java_util_WeakHashMap_Entry*) _r2.o)->fields.java_util_WeakHashMap_Entry.value_ = _r4.o;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 75)
     XMLVM_EXIT_METHOD()
@@ -393,6 +397,7 @@ JAVA_OBJECT java_util_WeakHashMap_Entry_getValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 82)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_WeakHashMap_Entry*) _r1.o)->fields.java_util_WeakHashMap_Entry.value_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -409,8 +414,10 @@ JAVA_OBJECT java_util_WeakHashMap_Entry_setValue___java_lang_Object(JAVA_OBJECT 
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 86)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_WeakHashMap_Entry*) _r1.o)->fields.java_util_WeakHashMap_Entry.value_;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 87)
+    XMLVM_CHECK_NPE(1)
     ((java_util_WeakHashMap_Entry*) _r1.o)->fields.java_util_WeakHashMap_Entry.value_ = _r2.o;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 88)
     XMLVM_EXIT_METHOD()
@@ -453,8 +460,10 @@ JAVA_BOOLEAN java_util_WeakHashMap_Entry_equals___java_lang_Object(JAVA_OBJECT m
     if (_r0.o != _r1.o) goto label45;
     label21:;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 100)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_WeakHashMap_Entry*) _r3.o)->fields.java_util_WeakHashMap_Entry.value_;
     if (_r0.o != JAVA_NULL) goto label47;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_WeakHashMap_Entry*) _r3.o)->fields.java_util_WeakHashMap_Entry.value_;
     XMLVM_CHECK_NPE(4)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r4.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_Entry_getValue__])(_r4.o);
@@ -474,6 +483,7 @@ JAVA_BOOLEAN java_util_WeakHashMap_Entry_equals___java_lang_Object(JAVA_OBJECT m
     _r0 = _r2;
     goto label6;
     label47:;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_WeakHashMap_Entry*) _r3.o)->fields.java_util_WeakHashMap_Entry.value_;
     XMLVM_CHECK_NPE(4)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r4.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_Entry_getValue__])(_r4.o);
@@ -494,7 +504,9 @@ JAVA_INT java_util_WeakHashMap_Entry_hashCode__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("WeakHashMap.java", 106)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_WeakHashMap_Entry*) _r2.o)->fields.java_util_WeakHashMap_Entry.hash_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_WeakHashMap_Entry*) _r2.o)->fields.java_util_WeakHashMap_Entry.value_;
     if (_r1.o != JAVA_NULL) goto label9;
     _r1.i = 0;
@@ -503,6 +515,7 @@ JAVA_INT java_util_WeakHashMap_Entry_hashCode__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label9:;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_WeakHashMap_Entry*) _r2.o)->fields.java_util_WeakHashMap_Entry.value_;
     //java_lang_Object_hashCode__[4]
     XMLVM_CHECK_NPE(1)
@@ -531,6 +544,7 @@ JAVA_OBJECT java_util_WeakHashMap_Entry_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(162);
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_WeakHashMap_Entry*) _r2.o)->fields.java_util_WeakHashMap_Entry.value_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_Object(_r0.o, _r1.o);

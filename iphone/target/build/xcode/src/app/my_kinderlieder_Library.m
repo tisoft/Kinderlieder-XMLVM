@@ -294,6 +294,7 @@ void my_kinderlieder_Library___INIT___(JAVA_OBJECT me)
     _r0.o = __NEW_java_util_ArrayList();
     XMLVM_CHECK_NPE(0)
     java_util_ArrayList___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((my_kinderlieder_Library*) _r1.o)->fields.my_kinderlieder_Library.collectionInfos_ = _r0.o;
     XMLVM_SOURCE_POSITION("Library.java", 15)
     XMLVM_CHECK_NPE(1)
@@ -319,6 +320,7 @@ JAVA_OBJECT my_kinderlieder_Library_getSongInfos__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_util_ArrayList___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("Library.java", 32)
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((my_kinderlieder_Library*) _r4.o)->fields.my_kinderlieder_Library.collectionInfos_;
     XMLVM_CHECK_NPE(3)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_iterator__])(_r3.o);
@@ -365,6 +367,7 @@ JAVA_OBJECT my_kinderlieder_Library_getMusicInfos___my_kinderlieder_SongInfo(JAV
     XMLVM_CHECK_NPE(3)
     java_util_ArrayList___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("Library.java", 47)
+    XMLVM_CHECK_NPE(5)
     _r4.o = ((my_kinderlieder_Library*) _r5.o)->fields.my_kinderlieder_Library.collectionInfos_;
     XMLVM_CHECK_NPE(4)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r4.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_iterator__])(_r4.o);
@@ -406,6 +409,7 @@ void my_kinderlieder_Library_load__(JAVA_OBJECT me)
     XMLVMElem _r8;
     _r8.o = me;
     XMLVM_SOURCE_POSITION("Library.java", 56)
+    XMLVM_CHECK_NPE(8)
     _r5.o = ((my_kinderlieder_Library*) _r8.o)->fields.my_kinderlieder_Library.collectionInfos_;
     XMLVM_CHECK_NPE(5)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_clear__])(_r5.o);
@@ -423,24 +427,24 @@ void my_kinderlieder_Library_load__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
     _r4.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
-    XMLVM_TRY_BEGIN(w41548aaab4b1c15)
+    XMLVM_TRY_BEGIN(w41553aaab4b1c15)
     // Begin try
     XMLVM_SOURCE_POSITION("Library.java", 65)
     XMLVM_CHECK_NPE(8)
     my_kinderlieder_Library_loadProduct___java_io_File(_r8.o, _r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w41548aaab4b1c15)
-        XMLVM_CATCH_SPECIFIC(w41548aaab4b1c15,org_json_JSONException,28)
-    XMLVM_CATCH_END(w41548aaab4b1c15)
-    XMLVM_RESTORE_EXCEPTION_ENV(w41548aaab4b1c15)
+    XMLVM_CATCH_BEGIN(w41553aaab4b1c15)
+        XMLVM_CATCH_SPECIFIC(w41553aaab4b1c15,org_json_JSONException,28)
+    XMLVM_CATCH_END(w41553aaab4b1c15)
+    XMLVM_RESTORE_EXCEPTION_ENV(w41553aaab4b1c15)
     label25:;
     _r2.i = _r2.i + 1;
     goto label18;
     label28:;
     XMLVM_SOURCE_POSITION("Library.java", 66)
-    java_lang_Thread* curThread_w41548aaab4b1c21 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w41548aaab4b1c21->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w41553aaab4b1c21 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w41553aaab4b1c21->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("Library.java", 67)
     _r5.o = java_lang_System_GET_out();
     _r6.o = __NEW_java_lang_StringBuilder();
@@ -491,6 +495,7 @@ void my_kinderlieder_Library_loadProduct___java_io_File(JAVA_OBJECT me, JAVA_OBJ
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_Library_3___INIT____my_kinderlieder_Library_java_lang_String_java_io_File(_r0.o, _r2.o, _r1.o, _r3.o);
     XMLVM_SOURCE_POSITION("Library.java", 115)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((my_kinderlieder_Library*) _r2.o)->fields.my_kinderlieder_Library.collectionInfos_;
     XMLVM_CHECK_NPE(1)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_add___java_lang_Object])(_r1.o, _r0.o);
@@ -521,6 +526,7 @@ JAVA_BOOLEAN my_kinderlieder_Library_isInstalled___java_lang_String(JAVA_OBJECT 
     _r3.o = me;
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("Library.java", 123)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((my_kinderlieder_Library*) _r3.o)->fields.my_kinderlieder_Library.collectionInfos_;
     XMLVM_CHECK_NPE(2)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_iterator__])(_r2.o);

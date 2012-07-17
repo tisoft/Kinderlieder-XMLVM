@@ -309,6 +309,7 @@ void my_kinderlieder_ShopViewController___INIT____org_xmlvm_iphone_UIWindow(JAVA
     _r0.o = __NEW_java_util_HashMap();
     XMLVM_CHECK_NPE(0)
     java_util_HashMap___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(7)
     ((my_kinderlieder_ShopViewController*) _r7.o)->fields.my_kinderlieder_ShopViewController.cells_ = _r0.o;
     XMLVM_SOURCE_POSITION("ShopViewController.java", 16)
     _r0.o = __NEW_org_xmlvm_iphone_UITableView();
@@ -316,6 +317,7 @@ void my_kinderlieder_ShopViewController___INIT____org_xmlvm_iphone_UIWindow(JAVA
     _r1.o = org_xmlvm_iphone_UIView_getFrame__(_r8.o);
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UITableView___INIT____org_xmlvm_iphone_CGRect_int(_r0.o, _r1.o, _r5.i);
+    XMLVM_CHECK_NPE(7)
     ((my_kinderlieder_ShopViewController*) _r7.o)->fields.my_kinderlieder_ShopViewController.shopView_ = _r0.o;
     XMLVM_SOURCE_POSITION("ShopViewController.java", 17)
     // "Downloads"
@@ -323,6 +325,7 @@ void my_kinderlieder_ShopViewController___INIT____org_xmlvm_iphone_UIWindow(JAVA
     XMLVM_CHECK_NPE(7)
     org_xmlvm_iphone_UIViewController_setTitle___java_lang_String(_r7.o, _r0.o);
     XMLVM_SOURCE_POSITION("ShopViewController.java", 18)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((my_kinderlieder_ShopViewController*) _r7.o)->fields.my_kinderlieder_ShopViewController.shopView_;
     XMLVM_CHECK_NPE(7)
     org_xmlvm_iphone_UIViewController_setView___org_xmlvm_iphone_UIView(_r7.o, _r0.o);
@@ -330,6 +333,7 @@ void my_kinderlieder_ShopViewController___INIT____org_xmlvm_iphone_UIWindow(JAVA
     _r0.o = __NEW_my_kinderlieder_ShopViewController_1();
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_ShopViewController_1___INIT____my_kinderlieder_ShopViewController(_r0.o, _r7.o);
+    XMLVM_CHECK_NPE(7)
     ((my_kinderlieder_ShopViewController*) _r7.o)->fields.my_kinderlieder_ShopViewController.restoreAction_ = _r0.o;
     XMLVM_SOURCE_POSITION("ShopViewController.java", 25)
     _r0.o = __NEW_java_util_ArrayList();
@@ -338,6 +342,7 @@ void my_kinderlieder_ShopViewController___INIT____org_xmlvm_iphone_UIWindow(JAVA
     _r2.o = __NEW_org_xmlvm_iphone_UIBarButtonItem();
     // "Restore"
     _r3.o = xmlvm_create_java_string_from_pool(1375);
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((my_kinderlieder_ShopViewController*) _r7.o)->fields.my_kinderlieder_ShopViewController.restoreAction_;
     XMLVM_CHECK_NPE(2)
     org_xmlvm_iphone_UIBarButtonItem___INIT____java_lang_String_int_org_xmlvm_iphone_UIBarButtonItemDelegate(_r2.o, _r3.o, _r6.i, _r4.o);
@@ -353,14 +358,18 @@ void my_kinderlieder_ShopViewController___INIT____org_xmlvm_iphone_UIWindow(JAVA
     _r0.o = __NEW_my_kinderlieder_ShopDetailViewController();
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_ShopDetailViewController___INIT____org_xmlvm_iphone_UIWindow(_r0.o, _r8.o);
+    XMLVM_CHECK_NPE(7)
     ((my_kinderlieder_ShopViewController*) _r7.o)->fields.my_kinderlieder_ShopViewController.detailViewController_ = _r0.o;
     XMLVM_SOURCE_POSITION("ShopViewController.java", 30)
     _r0.o = __NEW_my_kinderlieder_ShopViewController_2();
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_ShopViewController_2___INIT____my_kinderlieder_ShopViewController(_r0.o, _r7.o);
+    XMLVM_CHECK_NPE(7)
     ((my_kinderlieder_ShopViewController*) _r7.o)->fields.my_kinderlieder_ShopViewController.tableViewDelegate_ = _r0.o;
     XMLVM_SOURCE_POSITION("ShopViewController.java", 50)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((my_kinderlieder_ShopViewController*) _r7.o)->fields.my_kinderlieder_ShopViewController.shopView_;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((my_kinderlieder_ShopViewController*) _r7.o)->fields.my_kinderlieder_ShopViewController.tableViewDelegate_;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UITableView_setDelegate___org_xmlvm_iphone_UITableViewDelegate(_r0.o, _r1.o);
@@ -368,9 +377,12 @@ void my_kinderlieder_ShopViewController___INIT____org_xmlvm_iphone_UIWindow(JAVA
     _r0.o = __NEW_my_kinderlieder_ShopViewController_3();
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_ShopViewController_3___INIT____my_kinderlieder_ShopViewController(_r0.o, _r7.o);
+    XMLVM_CHECK_NPE(7)
     ((my_kinderlieder_ShopViewController*) _r7.o)->fields.my_kinderlieder_ShopViewController.dataSource_ = _r0.o;
     XMLVM_SOURCE_POSITION("ShopViewController.java", 127)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((my_kinderlieder_ShopViewController*) _r7.o)->fields.my_kinderlieder_ShopViewController.shopView_;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((my_kinderlieder_ShopViewController*) _r7.o)->fields.my_kinderlieder_ShopViewController.dataSource_;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UITableView_setDataSource___org_xmlvm_iphone_UITableViewDataSource(_r0.o, _r1.o);
@@ -455,6 +467,7 @@ JAVA_OBJECT my_kinderlieder_ShopViewController_access$000___my_kinderlieder_Shop
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("ShopViewController.java", 7)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((my_kinderlieder_ShopViewController*) _r1.o)->fields.my_kinderlieder_ShopViewController.detailViewController_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -470,6 +483,7 @@ JAVA_OBJECT my_kinderlieder_ShopViewController_access$100___my_kinderlieder_Shop
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("ShopViewController.java", 7)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((my_kinderlieder_ShopViewController*) _r1.o)->fields.my_kinderlieder_ShopViewController.cells_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -485,6 +499,7 @@ JAVA_OBJECT my_kinderlieder_ShopViewController_access$200___my_kinderlieder_Shop
     XMLVMElem _r1;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("ShopViewController.java", 7)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((my_kinderlieder_ShopViewController*) _r1.o)->fields.my_kinderlieder_ShopViewController.shopView_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

@@ -2456,18 +2456,23 @@ void java_util_Calendar___INIT____java_util_TimeZone(JAVA_OBJECT me, JAVA_OBJECT
     XMLVM_CHECK_NPE(3)
     java_lang_Object___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("Calendar.java", 344)
+    XMLVM_CHECK_NPE(3)
     ((java_util_Calendar*) _r3.o)->fields.java_util_Calendar.serialVersionOnStream_ = _r1.i;
     XMLVM_SOURCE_POSITION("Calendar.java", 698)
     if (!__TIB_int.classInitialized) __INIT_int();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_int, _r2.i);
+    XMLVM_CHECK_NPE(3)
     ((java_util_Calendar*) _r3.o)->fields.java_util_Calendar.fields_ = _r0.o;
     XMLVM_SOURCE_POSITION("Calendar.java", 699)
     if (!__TIB_boolean.classInitialized) __INIT_boolean();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_boolean, _r2.i);
+    XMLVM_CHECK_NPE(3)
     ((java_util_Calendar*) _r3.o)->fields.java_util_Calendar.isSet_ = _r0.o;
     XMLVM_SOURCE_POSITION("Calendar.java", 700)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(3)
     ((java_util_Calendar*) _r3.o)->fields.java_util_Calendar.isTimeSet_ = _r0.i;
+    XMLVM_CHECK_NPE(3)
     ((java_util_Calendar*) _r3.o)->fields.java_util_Calendar.areFieldsSet_ = _r0.i;
     XMLVM_SOURCE_POSITION("Calendar.java", 701)
     XMLVM_CHECK_NPE(3)
@@ -2626,18 +2631,22 @@ void java_util_Calendar_clear__(JAVA_OBJECT me)
     _r1.i = 17;
     if (_r0.i < _r1.i) goto label11;
     XMLVM_SOURCE_POSITION("Calendar.java", 783)
+    XMLVM_CHECK_NPE(3)
     ((java_util_Calendar*) _r3.o)->fields.java_util_Calendar.isTimeSet_ = _r2.i;
+    XMLVM_CHECK_NPE(3)
     ((java_util_Calendar*) _r3.o)->fields.java_util_Calendar.areFieldsSet_ = _r2.i;
     XMLVM_SOURCE_POSITION("Calendar.java", 784)
     XMLVM_EXIT_METHOD()
     return;
     label11:;
     XMLVM_SOURCE_POSITION("Calendar.java", 780)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Calendar*) _r3.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i] = _r2.i;
     XMLVM_SOURCE_POSITION("Calendar.java", 781)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Calendar*) _r3.o)->fields.java_util_Calendar.isSet_;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r0.i);
@@ -2659,17 +2668,21 @@ void java_util_Calendar_clear___int(JAVA_OBJECT me, JAVA_INT n1)
     _r3.i = n1;
     _r1.i = 0;
     XMLVM_SOURCE_POSITION("Calendar.java", 793)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Calendar*) _r2.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r3.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i] = _r1.i;
     XMLVM_SOURCE_POSITION("Calendar.java", 794)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Calendar*) _r2.o)->fields.java_util_Calendar.isSet_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r3.i);
     ((JAVA_ARRAY_BOOLEAN*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i] = _r1.i;
     XMLVM_SOURCE_POSITION("Calendar.java", 795)
+    XMLVM_CHECK_NPE(2)
     ((java_util_Calendar*) _r2.o)->fields.java_util_Calendar.isTimeSet_ = _r1.i;
+    XMLVM_CHECK_NPE(2)
     ((java_util_Calendar*) _r2.o)->fields.java_util_Calendar.areFieldsSet_ = _r1.i;
     XMLVM_SOURCE_POSITION("Calendar.java", 796)
     XMLVM_EXIT_METHOD()
@@ -2692,25 +2705,31 @@ JAVA_OBJECT java_util_Calendar_clone__(JAVA_OBJECT me)
     _r0.o = java_lang_Object_clone__(_r2.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("Calendar.java", 809)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Calendar*) _r2.o)->fields.java_util_Calendar.fields_;
     //int_1ARRAY_clone__[0]
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((org_xmlvm_runtime_XMLVMArray*) _r1.o)->tib->vtable[0])(_r1.o);
     _r1.o = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.fields_ = _r1.o;
     XMLVM_SOURCE_POSITION("Calendar.java", 810)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Calendar*) _r2.o)->fields.java_util_Calendar.isSet_;
     //boolean_1ARRAY_clone__[0]
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((org_xmlvm_runtime_XMLVMArray*) _r1.o)->tib->vtable[0])(_r1.o);
     _r1.o = _r1.o;
+    XMLVM_CHECK_NPE(0)
     ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.isSet_ = _r1.o;
     XMLVM_SOURCE_POSITION("Calendar.java", 811)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Calendar*) _r2.o)->fields.java_util_Calendar.zone_;
     //java_util_TimeZone_clone__[0]
     XMLVM_CHECK_NPE(1)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_TimeZone*) _r1.o)->tib->vtable[0])(_r1.o);
     _r2.o = _r2.o;
+    XMLVM_CHECK_NPE(0)
     ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.zone_ = _r2.o;
     // End try
     XMLVM_TRY_END
@@ -2740,6 +2759,7 @@ void java_util_Calendar_complete__(JAVA_OBJECT me)
     _r2.o = me;
     _r1.i = 1;
     XMLVM_SOURCE_POSITION("Calendar.java", 827)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_Calendar*) _r2.o)->fields.java_util_Calendar.isTimeSet_;
     if (_r0.i != 0) goto label10;
     XMLVM_SOURCE_POSITION("Calendar.java", 828)
@@ -2747,9 +2767,11 @@ void java_util_Calendar_complete__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     (*(void (*)(JAVA_OBJECT)) ((java_util_Calendar*) _r2.o)->tib->vtable[9])(_r2.o);
     XMLVM_SOURCE_POSITION("Calendar.java", 829)
+    XMLVM_CHECK_NPE(2)
     ((java_util_Calendar*) _r2.o)->fields.java_util_Calendar.isTimeSet_ = _r1.i;
     label10:;
     XMLVM_SOURCE_POSITION("Calendar.java", 831)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_Calendar*) _r2.o)->fields.java_util_Calendar.areFieldsSet_;
     if (_r0.i != 0) goto label19;
     XMLVM_SOURCE_POSITION("Calendar.java", 832)
@@ -2757,6 +2779,7 @@ void java_util_Calendar_complete__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     (*(void (*)(JAVA_OBJECT)) ((java_util_Calendar*) _r2.o)->tib->vtable[8])(_r2.o);
     XMLVM_SOURCE_POSITION("Calendar.java", 833)
+    XMLVM_CHECK_NPE(2)
     ((java_util_Calendar*) _r2.o)->fields.java_util_Calendar.areFieldsSet_ = _r1.i;
     label19:;
     XMLVM_SOURCE_POSITION("Calendar.java", 835)
@@ -2855,6 +2878,7 @@ JAVA_INT java_util_Calendar_get___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_CHECK_NPE(1)
     java_util_Calendar_complete__(_r1.o);
     XMLVM_SOURCE_POSITION("Calendar.java", 895)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Calendar*) _r1.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -2895,6 +2919,7 @@ JAVA_INT java_util_Calendar_getActualMaximum___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_CHECK_NPE(4)
     java_util_Calendar_complete__(_r4.o);
     XMLVM_SOURCE_POSITION("Calendar.java", 911)
+    XMLVM_CHECK_NPE(4)
     _r2.l = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.time_;
     XMLVM_SOURCE_POSITION("Calendar.java", 912)
     XMLVM_CHECK_NPE(4)
@@ -2912,9 +2937,11 @@ JAVA_INT java_util_Calendar_getActualMaximum___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("Calendar.java", 917)
     if (_r1.i > _r0.i) goto label20;
     XMLVM_SOURCE_POSITION("Calendar.java", 918)
+    XMLVM_CHECK_NPE(4)
     ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.time_ = _r2.l;
     XMLVM_SOURCE_POSITION("Calendar.java", 919)
     _r1.i = 0;
+    XMLVM_CHECK_NPE(4)
     ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.areFieldsSet_ = _r1.i;
     goto label11;
     //XMLVM_END_WRAPPER
@@ -2953,6 +2980,7 @@ JAVA_INT java_util_Calendar_getActualMinimum___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_CHECK_NPE(5)
     java_util_Calendar_complete__(_r5.o);
     XMLVM_SOURCE_POSITION("Calendar.java", 936)
+    XMLVM_CHECK_NPE(5)
     _r2.l = ((java_util_Calendar*) _r5.o)->fields.java_util_Calendar.time_;
     XMLVM_SOURCE_POSITION("Calendar.java", 937)
     XMLVM_CHECK_NPE(5)
@@ -2969,8 +2997,10 @@ JAVA_INT java_util_Calendar_getActualMinimum___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("Calendar.java", 942)
     if (_r1.i < _r0.i) goto label21;
     XMLVM_SOURCE_POSITION("Calendar.java", 943)
+    XMLVM_CHECK_NPE(5)
     ((java_util_Calendar*) _r5.o)->fields.java_util_Calendar.time_ = _r2.l;
     XMLVM_SOURCE_POSITION("Calendar.java", 944)
+    XMLVM_CHECK_NPE(5)
     ((java_util_Calendar*) _r5.o)->fields.java_util_Calendar.areFieldsSet_ = _r4.i;
     goto label12;
     //XMLVM_END_WRAPPER
@@ -3015,6 +3045,7 @@ JAVA_INT java_util_Calendar_getFirstDayOfWeek__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Calendar.java", 963)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_Calendar*) _r1.o)->fields.java_util_Calendar.firstDayOfWeek_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -3169,6 +3200,7 @@ JAVA_INT java_util_Calendar_getMinimalDaysInFirstWeek__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Calendar.java", 1056)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_Calendar*) _r1.o)->fields.java_util_Calendar.minimalDaysInFirstWeek_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -3204,6 +3236,7 @@ JAVA_LONG java_util_Calendar_getTimeInMillis__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Calendar.java", 1092)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_Calendar*) _r2.o)->fields.java_util_Calendar.isTimeSet_;
     if (_r0.i != 0) goto label10;
     XMLVM_SOURCE_POSITION("Calendar.java", 1093)
@@ -3212,9 +3245,11 @@ JAVA_LONG java_util_Calendar_getTimeInMillis__(JAVA_OBJECT me)
     (*(void (*)(JAVA_OBJECT)) ((java_util_Calendar*) _r2.o)->tib->vtable[9])(_r2.o);
     XMLVM_SOURCE_POSITION("Calendar.java", 1094)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(2)
     ((java_util_Calendar*) _r2.o)->fields.java_util_Calendar.isTimeSet_ = _r0.i;
     label10:;
     XMLVM_SOURCE_POSITION("Calendar.java", 1096)
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((java_util_Calendar*) _r2.o)->fields.java_util_Calendar.time_;
     XMLVM_EXIT_METHOD()
     return _r0.l;
@@ -3229,6 +3264,7 @@ JAVA_OBJECT java_util_Calendar_getTimeZone__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Calendar.java", 1105)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Calendar*) _r1.o)->fields.java_util_Calendar.zone_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -3280,6 +3316,7 @@ JAVA_INT java_util_Calendar_internalGet___int(JAVA_OBJECT me, JAVA_INT n1)
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("Calendar.java", 1130)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Calendar*) _r1.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -3297,6 +3334,7 @@ JAVA_BOOLEAN java_util_Calendar_isLenient__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Calendar.java", 1140)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_Calendar*) _r1.o)->fields.java_util_Calendar.lenient_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -3313,6 +3351,7 @@ JAVA_BOOLEAN java_util_Calendar_isSet___int(JAVA_OBJECT me, JAVA_INT n1)
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("Calendar.java", 1151)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Calendar*) _r1.o)->fields.java_util_Calendar.isSet_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -3382,11 +3421,13 @@ void java_util_Calendar_set___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     _r3.i = 10;
     _r2.i = 9;
     XMLVM_SOURCE_POSITION("Calendar.java", 1195)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r5.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r5.i] = _r6.i;
     XMLVM_SOURCE_POSITION("Calendar.java", 1196)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.isSet_;
     _r1.i = 1;
     XMLVM_CHECK_NPE(0)
@@ -3394,13 +3435,16 @@ void java_util_Calendar_set___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     ((JAVA_ARRAY_BOOLEAN*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r5.i] = _r1.i;
     XMLVM_SOURCE_POSITION("Calendar.java", 1197)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(4)
     ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.isTimeSet_ = _r0.i;
+    XMLVM_CHECK_NPE(4)
     ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.areFieldsSet_ = _r0.i;
     XMLVM_SOURCE_POSITION("Calendar.java", 1198)
     _r0.i = 2;
     if (_r5.i <= _r0.i) goto label25;
     if (_r5.i >= _r2.i) goto label25;
     XMLVM_SOURCE_POSITION("Calendar.java", 1199)
+    XMLVM_CHECK_NPE(4)
     ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.lastDateFieldSet_ = _r5.i;
     label25:;
     XMLVM_SOURCE_POSITION("Calendar.java", 1201)
@@ -3409,11 +3453,13 @@ void java_util_Calendar_set___int_int(JAVA_OBJECT me, JAVA_INT n1, JAVA_INT n2)
     if (_r5.i != _r0.i) goto label33;
     label31:;
     XMLVM_SOURCE_POSITION("Calendar.java", 1202)
+    XMLVM_CHECK_NPE(4)
     ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.lastTimeFieldSet_ = _r5.i;
     label33:;
     XMLVM_SOURCE_POSITION("Calendar.java", 1204)
     if (_r5.i != _r2.i) goto label37;
     XMLVM_SOURCE_POSITION("Calendar.java", 1205)
+    XMLVM_CHECK_NPE(4)
     ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.lastTimeFieldSet_ = _r3.i;
     label37:;
     XMLVM_SOURCE_POSITION("Calendar.java", 1207)
@@ -3528,6 +3574,7 @@ void java_util_Calendar_setFirstDayOfWeek___int(JAVA_OBJECT me, JAVA_INT n1)
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("Calendar.java", 1278)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.firstDayOfWeek_ = _r1.i;
     XMLVM_SOURCE_POSITION("Calendar.java", 1279)
     XMLVM_EXIT_METHOD()
@@ -3544,6 +3591,7 @@ void java_util_Calendar_setLenient___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("Calendar.java", 1289)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.lenient_ = _r1.i;
     XMLVM_SOURCE_POSITION("Calendar.java", 1290)
     XMLVM_EXIT_METHOD()
@@ -3560,6 +3608,7 @@ void java_util_Calendar_setMinimalDaysInFirstWeek___int(JAVA_OBJECT me, JAVA_INT
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("Calendar.java", 1299)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Calendar*) _r0.o)->fields.java_util_Calendar.minimalDaysInFirstWeek_ = _r1.i;
     XMLVM_SOURCE_POSITION("Calendar.java", 1300)
     XMLVM_EXIT_METHOD()
@@ -3600,21 +3649,27 @@ void java_util_Calendar_setTimeInMillis___long(JAVA_OBJECT me, JAVA_LONG n1)
     _r2.o = me;
     _r3.l = n1;
     XMLVM_SOURCE_POSITION("Calendar.java", 1319)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_Calendar*) _r2.o)->fields.java_util_Calendar.isTimeSet_;
     if (_r0.i == 0) goto label14;
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_Calendar*) _r2.o)->fields.java_util_Calendar.areFieldsSet_;
     if (_r0.i == 0) goto label14;
+    XMLVM_CHECK_NPE(2)
     _r0.l = ((java_util_Calendar*) _r2.o)->fields.java_util_Calendar.time_;
     _r0.i = _r0.l > _r3.l ? 1 : (_r0.l == _r3.l ? 0 : -1);
     if (_r0.i == 0) goto label25;
     label14:;
     XMLVM_SOURCE_POSITION("Calendar.java", 1320)
+    XMLVM_CHECK_NPE(2)
     ((java_util_Calendar*) _r2.o)->fields.java_util_Calendar.time_ = _r3.l;
     XMLVM_SOURCE_POSITION("Calendar.java", 1321)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(2)
     ((java_util_Calendar*) _r2.o)->fields.java_util_Calendar.isTimeSet_ = _r0.i;
     XMLVM_SOURCE_POSITION("Calendar.java", 1322)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(2)
     ((java_util_Calendar*) _r2.o)->fields.java_util_Calendar.areFieldsSet_ = _r0.i;
     XMLVM_SOURCE_POSITION("Calendar.java", 1323)
     XMLVM_CHECK_NPE(2)
@@ -3636,9 +3691,11 @@ void java_util_Calendar_setTimeZone___java_util_TimeZone(JAVA_OBJECT me, JAVA_OB
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Calendar.java", 1334)
+    XMLVM_CHECK_NPE(1)
     ((java_util_Calendar*) _r1.o)->fields.java_util_Calendar.zone_ = _r2.o;
     XMLVM_SOURCE_POSITION("Calendar.java", 1335)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Calendar*) _r1.o)->fields.java_util_Calendar.areFieldsSet_ = _r0.i;
     XMLVM_SOURCE_POSITION("Calendar.java", 1336)
     XMLVM_EXIT_METHOD()
@@ -3672,8 +3729,10 @@ JAVA_OBJECT java_util_Calendar_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("Calendar.java", 1347)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.isTimeSet_;
     if (_r2.i == 0) goto label121;
+    XMLVM_CHECK_NPE(4)
     _r2.l = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.time_;
     _r2.o = java_lang_String_valueOf___long(_r2.l);
     label35:;
@@ -3685,6 +3744,7 @@ JAVA_OBJECT java_util_Calendar_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("Calendar.java", 1349)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.areFieldsSet_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___boolean(_r1.o, _r2.i);
@@ -3693,6 +3753,7 @@ JAVA_OBJECT java_util_Calendar_toString__(JAVA_OBJECT me)
     _r2.o = xmlvm_create_java_string_from_pool(226);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.lenient_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___boolean(_r1.o, _r2.i);
@@ -3700,6 +3761,7 @@ JAVA_OBJECT java_util_Calendar_toString__(JAVA_OBJECT me)
     _r2.o = xmlvm_create_java_string_from_pool(227);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.zone_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_Object(_r1.o, _r2.o);
@@ -3708,6 +3770,7 @@ JAVA_OBJECT java_util_Calendar_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("Calendar.java", 1352)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.firstDayOfWeek_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___int(_r1.o, _r2.i);
@@ -3716,6 +3779,7 @@ JAVA_OBJECT java_util_Calendar_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("Calendar.java", 1353)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.minimalDaysInFirstWeek_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___int(_r1.o, _r2.i);
@@ -3763,12 +3827,14 @@ JAVA_OBJECT java_util_Calendar_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r0.o)->tib->vtable[21])(_r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("Calendar.java", 1358)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.isSet_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
     _r2.i = ((JAVA_ARRAY_BOOLEAN*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     if (_r2.i == 0) goto label157;
     XMLVM_SOURCE_POSITION("Calendar.java", 1359)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.fields_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
@@ -3869,6 +3935,7 @@ JAVA_OBJECT java_util_Calendar_getDisplayName___int_int_java_util_Locale(JAVA_OB
     XMLVM_SOURCE_POSITION("Calendar.java", 1414)
     if (_r6.i != 0) goto label97;
     XMLVM_SOURCE_POSITION("Calendar.java", 1415)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.lenient_;
     if (_r0.i != 0) goto label26;
     XMLVM_SOURCE_POSITION("Calendar.java", 1416)
@@ -4322,6 +4389,7 @@ void java_util_Calendar_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me,
     XMLVM_SOURCE_POSITION("Calendar.java", 1558)
     // "areFieldsSet"
     _r1.o = xmlvm_create_java_string_from_pool(213);
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.areFieldsSet_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_boolean[6]
     XMLVM_CHECK_NPE(0)
@@ -4329,6 +4397,7 @@ void java_util_Calendar_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me,
     XMLVM_SOURCE_POSITION("Calendar.java", 1559)
     // "fields"
     _r1.o = xmlvm_create_java_string_from_pool(214);
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.fields_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_java_lang_Object[12]
     XMLVM_CHECK_NPE(0)
@@ -4336,6 +4405,7 @@ void java_util_Calendar_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me,
     XMLVM_SOURCE_POSITION("Calendar.java", 1560)
     // "firstDayOfWeek"
     _r1.o = xmlvm_create_java_string_from_pool(215);
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.firstDayOfWeek_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_int[11]
     XMLVM_CHECK_NPE(0)
@@ -4343,6 +4413,7 @@ void java_util_Calendar_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me,
     XMLVM_SOURCE_POSITION("Calendar.java", 1561)
     // "isSet"
     _r1.o = xmlvm_create_java_string_from_pool(216);
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.isSet_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_java_lang_Object[12]
     XMLVM_CHECK_NPE(0)
@@ -4350,6 +4421,7 @@ void java_util_Calendar_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me,
     XMLVM_SOURCE_POSITION("Calendar.java", 1562)
     // "isTimeSet"
     _r1.o = xmlvm_create_java_string_from_pool(217);
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.isTimeSet_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_boolean[6]
     XMLVM_CHECK_NPE(0)
@@ -4357,6 +4429,7 @@ void java_util_Calendar_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me,
     XMLVM_SOURCE_POSITION("Calendar.java", 1563)
     // "lenient"
     _r1.o = xmlvm_create_java_string_from_pool(218);
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.lenient_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_boolean[6]
     XMLVM_CHECK_NPE(0)
@@ -4364,6 +4437,7 @@ void java_util_Calendar_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me,
     XMLVM_SOURCE_POSITION("Calendar.java", 1564)
     // "minimalDaysInFirstWeek"
     _r1.o = xmlvm_create_java_string_from_pool(219);
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.minimalDaysInFirstWeek_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_int[11]
     XMLVM_CHECK_NPE(0)
@@ -4385,6 +4459,7 @@ void java_util_Calendar_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me,
     XMLVM_SOURCE_POSITION("Calendar.java", 1567)
     // "time"
     _r1.o = xmlvm_create_java_string_from_pool(222);
+    XMLVM_CHECK_NPE(4)
     _r2.l = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.time_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_long[13]
     XMLVM_CHECK_NPE(0)
@@ -4392,6 +4467,7 @@ void java_util_Calendar_writeObject___java_io_ObjectOutputStream(JAVA_OBJECT me,
     XMLVM_SOURCE_POSITION("Calendar.java", 1568)
     // "zone"
     _r1.o = xmlvm_create_java_string_from_pool(223);
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Calendar*) _r4.o)->fields.java_util_Calendar.zone_;
     //java_io_ObjectOutputStream_PutField_put___java_lang_String_java_lang_Object[12]
     XMLVM_CHECK_NPE(0)
@@ -4430,6 +4506,7 @@ void java_util_Calendar_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, J
     //java_io_ObjectInputStream_GetField_get___java_lang_String_boolean[8]
     XMLVM_CHECK_NPE(1)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) ((java_io_ObjectInputStream_GetField*) _r1.o)->tib->vtable[8])(_r1.o, _r0.o, _r3.i);
+    XMLVM_CHECK_NPE(5)
     ((java_util_Calendar*) _r5.o)->fields.java_util_Calendar.areFieldsSet_ = _r0.i;
     XMLVM_SOURCE_POSITION("Calendar.java", 1577)
     // "fields"
@@ -4438,6 +4515,7 @@ void java_util_Calendar_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, J
     XMLVM_CHECK_NPE(1)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_io_ObjectInputStream_GetField*) _r1.o)->tib->vtable[14])(_r1.o, _r0.o, _r4.o);
     _r0.o = _r0.o;
+    XMLVM_CHECK_NPE(5)
     ((java_util_Calendar*) _r5.o)->fields.java_util_Calendar.fields_ = _r0.o;
     XMLVM_SOURCE_POSITION("Calendar.java", 1578)
     // "firstDayOfWeek"
@@ -4445,6 +4523,7 @@ void java_util_Calendar_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, J
     //java_io_ObjectInputStream_GetField_get___java_lang_String_int[13]
     XMLVM_CHECK_NPE(1)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectInputStream_GetField*) _r1.o)->tib->vtable[13])(_r1.o, _r0.o, _r2.i);
+    XMLVM_CHECK_NPE(5)
     ((java_util_Calendar*) _r5.o)->fields.java_util_Calendar.firstDayOfWeek_ = _r0.i;
     XMLVM_SOURCE_POSITION("Calendar.java", 1579)
     // "isSet"
@@ -4453,6 +4532,7 @@ void java_util_Calendar_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, J
     XMLVM_CHECK_NPE(1)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_io_ObjectInputStream_GetField*) _r1.o)->tib->vtable[14])(_r1.o, _r0.o, _r4.o);
     _r0.o = _r0.o;
+    XMLVM_CHECK_NPE(5)
     ((java_util_Calendar*) _r5.o)->fields.java_util_Calendar.isSet_ = _r0.o;
     XMLVM_SOURCE_POSITION("Calendar.java", 1580)
     // "isTimeSet"
@@ -4460,6 +4540,7 @@ void java_util_Calendar_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, J
     //java_io_ObjectInputStream_GetField_get___java_lang_String_boolean[8]
     XMLVM_CHECK_NPE(1)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) ((java_io_ObjectInputStream_GetField*) _r1.o)->tib->vtable[8])(_r1.o, _r0.o, _r3.i);
+    XMLVM_CHECK_NPE(5)
     ((java_util_Calendar*) _r5.o)->fields.java_util_Calendar.isTimeSet_ = _r0.i;
     XMLVM_SOURCE_POSITION("Calendar.java", 1581)
     // "lenient"
@@ -4467,6 +4548,7 @@ void java_util_Calendar_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, J
     //java_io_ObjectInputStream_GetField_get___java_lang_String_boolean[8]
     XMLVM_CHECK_NPE(1)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) ((java_io_ObjectInputStream_GetField*) _r1.o)->tib->vtable[8])(_r1.o, _r0.o, _r2.i);
+    XMLVM_CHECK_NPE(5)
     ((java_util_Calendar*) _r5.o)->fields.java_util_Calendar.lenient_ = _r0.i;
     XMLVM_SOURCE_POSITION("Calendar.java", 1582)
     // "minimalDaysInFirstWeek"
@@ -4474,6 +4556,7 @@ void java_util_Calendar_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, J
     //java_io_ObjectInputStream_GetField_get___java_lang_String_int[13]
     XMLVM_CHECK_NPE(1)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) ((java_io_ObjectInputStream_GetField*) _r1.o)->tib->vtable[13])(_r1.o, _r0.o, _r2.i);
+    XMLVM_CHECK_NPE(5)
     ((java_util_Calendar*) _r5.o)->fields.java_util_Calendar.minimalDaysInFirstWeek_ = _r0.i;
     XMLVM_SOURCE_POSITION("Calendar.java", 1583)
     // "time"
@@ -4482,6 +4565,7 @@ void java_util_Calendar_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, J
     //java_io_ObjectInputStream_GetField_get___java_lang_String_long[15]
     XMLVM_CHECK_NPE(1)
     _r2.l = (*(JAVA_LONG (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_LONG)) ((java_io_ObjectInputStream_GetField*) _r1.o)->tib->vtable[15])(_r1.o, _r0.o, _r2.l);
+    XMLVM_CHECK_NPE(5)
     ((java_util_Calendar*) _r5.o)->fields.java_util_Calendar.time_ = _r2.l;
     XMLVM_SOURCE_POSITION("Calendar.java", 1584)
     // "zone"
@@ -4490,6 +4574,7 @@ void java_util_Calendar_readObject___java_io_ObjectInputStream(JAVA_OBJECT me, J
     XMLVM_CHECK_NPE(1)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_io_ObjectInputStream_GetField*) _r1.o)->tib->vtable[14])(_r1.o, _r0.o, _r4.o);
     _r0.o = _r0.o;
+    XMLVM_CHECK_NPE(5)
     ((java_util_Calendar*) _r5.o)->fields.java_util_Calendar.zone_ = _r0.o;
     XMLVM_SOURCE_POSITION("Calendar.java", 1585)
     XMLVM_EXIT_METHOD()

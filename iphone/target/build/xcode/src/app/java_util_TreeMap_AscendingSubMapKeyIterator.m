@@ -229,6 +229,7 @@ JAVA_OBJECT java_util_TreeMap_AscendingSubMapKeyIterator_next__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("TreeMap.java", 351)
     XMLVM_CHECK_NPE(1)
     _r0.o = java_util_TreeMap_AscendingSubMapIterator_getNext__(_r1.o);
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_MapEntry*) _r0.o)->fields.java_util_MapEntry.key_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

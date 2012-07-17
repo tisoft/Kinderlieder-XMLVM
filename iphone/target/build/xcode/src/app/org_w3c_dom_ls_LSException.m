@@ -246,6 +246,7 @@ void org_w3c_dom_ls_LSException___INIT____short_java_lang_String(JAVA_OBJECT me,
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimeException___INIT____java_lang_String(_r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("LSException.java", 32)
+    XMLVM_CHECK_NPE(0)
     ((org_w3c_dom_ls_LSException*) _r0.o)->fields.org_w3c_dom_ls_LSException.code_ = _r1.i;
     XMLVM_SOURCE_POSITION("LSException.java", 33)
     XMLVM_EXIT_METHOD()

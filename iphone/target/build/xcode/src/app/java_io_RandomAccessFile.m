@@ -1019,20 +1019,24 @@ void java_io_RandomAccessFile___INIT____java_io_File_java_lang_String(JAVA_OBJEC
     XMLVM_CHECK_NPE(6)
     java_lang_Object___INIT___(_r6.o);
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 43)
+    XMLVM_CHECK_NPE(6)
     ((java_io_RandomAccessFile*) _r6.o)->fields.java_io_RandomAccessFile.syncMetadata_ = _r2.i;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 49)
     _r0.o = org_apache_harmony_luni_platform_Platform_getFileSystem__();
+    XMLVM_CHECK_NPE(6)
     ((java_io_RandomAccessFile*) _r6.o)->fields.java_io_RandomAccessFile.fileSystem_ = _r0.o;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 56)
     _r0.o = __NEW_java_io_RandomAccessFile_RepositionLock();
     _r1.o = JAVA_NULL;
     XMLVM_CHECK_NPE(0)
     java_io_RandomAccessFile_RepositionLock___INIT____java_io_RandomAccessFile_RepositionLock(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(6)
     ((java_io_RandomAccessFile*) _r6.o)->fields.java_io_RandomAccessFile.repositionLock_ = _r0.o;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 110)
     _r0.o = __NEW_java_io_FileDescriptor();
     XMLVM_CHECK_NPE(0)
     java_io_FileDescriptor___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(6)
     ((java_io_RandomAccessFile*) _r6.o)->fields.java_io_RandomAccessFile.fd_ = _r0.o;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 112)
     // "r"
@@ -1042,9 +1046,12 @@ void java_io_RandomAccessFile___INIT____java_io_File_java_lang_String(JAVA_OBJEC
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r8.o)->tib->vtable[1])(_r8.o, _r0.o);
     if (_r0.i == 0) goto label105;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 113)
+    XMLVM_CHECK_NPE(6)
     ((java_io_RandomAccessFile*) _r6.o)->fields.java_io_RandomAccessFile.isReadOnly_ = _r3.i;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 114)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_io_RandomAccessFile*) _r6.o)->fields.java_io_RandomAccessFile.fd_;
+    XMLVM_CHECK_NPE(0)
     ((java_io_FileDescriptor*) _r0.o)->fields.java_io_FileDescriptor.readOnly_ = _r3.i;
     _r0 = _r2;
     label47:;
@@ -1059,6 +1066,7 @@ void java_io_RandomAccessFile___INIT____java_io_File_java_lang_String(JAVA_OBJEC
     XMLVM_CHECK_NPE(1)
     java_lang_SecurityManager_checkRead___java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 134)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_io_RandomAccessFile*) _r6.o)->fields.java_io_RandomAccessFile.isReadOnly_;
     if (_r2.i != 0) goto label71;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 135)
@@ -1068,25 +1076,33 @@ void java_io_RandomAccessFile___INIT____java_io_File_java_lang_String(JAVA_OBJEC
     java_lang_SecurityManager_checkWrite___java_lang_String(_r1.o, _r2.o);
     label71:;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 139)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_io_RandomAccessFile*) _r6.o)->fields.java_io_RandomAccessFile.fd_;
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_io_RandomAccessFile*) _r6.o)->fields.java_io_RandomAccessFile.fileSystem_;
     XMLVM_CHECK_NPE(7)
     _r3.o = java_io_File_properPath___boolean(_r7.o, _r3.i);
     XMLVM_CHECK_NPE(2)
     _r2.l = (*(JAVA_LONG (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_IFileSystem_open___byte_1ARRAY_int])(_r2.o, _r3.o, _r0.i);
+    XMLVM_CHECK_NPE(1)
     ((java_io_FileDescriptor*) _r1.o)->fields.java_io_FileDescriptor.descriptor_ = _r2.l;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 140)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_io_RandomAccessFile*) _r6.o)->fields.java_io_RandomAccessFile.fd_;
+    XMLVM_CHECK_NPE(1)
     _r1.l = ((java_io_FileDescriptor*) _r1.o)->fields.java_io_FileDescriptor.descriptor_;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 141)
     _r0.o = org_apache_harmony_nio_FileChannelFactory_getFileChannel___java_lang_Object_long_int(_r6.o, _r1.l, _r0.i);
+    XMLVM_CHECK_NPE(6)
     ((java_io_RandomAccessFile*) _r6.o)->fields.java_io_RandomAccessFile.channel_ = _r0.o;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 144)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((java_io_RandomAccessFile*) _r6.o)->fields.java_io_RandomAccessFile.syncMetadata_;
     if (_r0.i == 0) goto label104;
     XMLVM_TRY_BEGIN(w281aaab6b1c65)
     // Begin try
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 146)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_io_RandomAccessFile*) _r6.o)->fields.java_io_RandomAccessFile.fd_;
     XMLVM_CHECK_NPE(0)
     java_io_FileDescriptor_sync__(_r0.o);
@@ -1122,6 +1138,7 @@ void java_io_RandomAccessFile___INIT____java_io_File_java_lang_String(JAVA_OBJEC
     if (_r0.i == 0) goto label155;
     label129:;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 117)
+    XMLVM_CHECK_NPE(6)
     ((java_io_RandomAccessFile*) _r6.o)->fields.java_io_RandomAccessFile.isReadOnly_ = _r2.i;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 118)
     _r0.i = 16;
@@ -1133,6 +1150,7 @@ void java_io_RandomAccessFile___INIT____java_io_File_java_lang_String(JAVA_OBJEC
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r8.o)->tib->vtable[1])(_r8.o, _r5.o);
     if (_r1.i == 0) goto label144;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 122)
+    XMLVM_CHECK_NPE(6)
     ((java_io_RandomAccessFile*) _r6.o)->fields.java_io_RandomAccessFile.syncMetadata_ = _r3.i;
     goto label47;
     label144:;
@@ -1196,17 +1214,20 @@ void java_io_RandomAccessFile_close__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 188)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_io_RandomAccessFile*) _r4.o)->fields.java_io_RandomAccessFile.channel_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w281aaab8b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 189)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_io_RandomAccessFile*) _r4.o)->fields.java_io_RandomAccessFile.channel_;
     //java_nio_channels_FileChannel_isOpen__[8]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) ((java_nio_channels_FileChannel*) _r1.o)->tib->vtable[8])(_r1.o);
     if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w281aaab8b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w281aaab8b1b5, sizeof(XMLVM_JMP_BUF)); goto label16; };
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 190)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_io_RandomAccessFile*) _r4.o)->fields.java_io_RandomAccessFile.channel_;
     //java_nio_channels_FileChannel_close__[6]
     XMLVM_CHECK_NPE(1)
@@ -1232,22 +1253,30 @@ void java_io_RandomAccessFile_close__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w281aaab8b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 194)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_io_RandomAccessFile*) _r4.o)->fields.java_io_RandomAccessFile.fd_;
     if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w281aaab8b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w281aaab8b1c10, sizeof(XMLVM_JMP_BUF)); goto label47; };
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_io_RandomAccessFile*) _r4.o)->fields.java_io_RandomAccessFile.fd_;
+    XMLVM_CHECK_NPE(0)
     _r0.l = ((java_io_FileDescriptor*) _r0.o)->fields.java_io_FileDescriptor.descriptor_;
     _r2.l = 0;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r0.i < 0) { XMLVM_MEMCPY(curThread_w281aaab8b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w281aaab8b1c10, sizeof(XMLVM_JMP_BUF)); goto label47; };
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 195)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_io_RandomAccessFile*) _r4.o)->fields.java_io_RandomAccessFile.fileSystem_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_io_RandomAccessFile*) _r4.o)->fields.java_io_RandomAccessFile.fd_;
+    XMLVM_CHECK_NPE(1)
     _r1.l = ((java_io_FileDescriptor*) _r1.o)->fields.java_io_FileDescriptor.descriptor_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_LONG)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_IFileSystem_close___long])(_r0.o, _r1.l);
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 196)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_io_RandomAccessFile*) _r4.o)->fields.java_io_RandomAccessFile.fd_;
     _r1.l = -1;
+    XMLVM_CHECK_NPE(0)
     ((java_io_FileDescriptor*) _r0.o)->fields.java_io_FileDescriptor.descriptor_ = _r1.l;
     // End try
     XMLVM_TRY_END
@@ -1308,6 +1337,7 @@ JAVA_OBJECT java_io_RandomAccessFile_getChannel__(JAVA_OBJECT me)
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_TRY_BEGIN(w281aaab9b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_RandomAccessFile*) _r1.o)->fields.java_io_RandomAccessFile.channel_;
     // End try
     XMLVM_TRY_END
@@ -1334,6 +1364,7 @@ JAVA_OBJECT java_io_RandomAccessFile_getFD__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 225)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_RandomAccessFile*) _r1.o)->fields.java_io_RandomAccessFile.fd_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1356,8 +1387,11 @@ JAVA_LONG java_io_RandomAccessFile_getFilePointer__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(6)
     java_io_RandomAccessFile_openCheck__(_r6.o);
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 240)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_io_RandomAccessFile*) _r6.o)->fields.java_io_RandomAccessFile.fileSystem_;
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_io_RandomAccessFile*) _r6.o)->fields.java_io_RandomAccessFile.fd_;
+    XMLVM_CHECK_NPE(1)
     _r1.l = ((java_io_FileDescriptor*) _r1.o)->fields.java_io_FileDescriptor.descriptor_;
     _r3.l = 0;
     _r5.i = 2;
@@ -1382,7 +1416,9 @@ void java_io_RandomAccessFile_openCheck__(JAVA_OBJECT me)
     java_lang_Object_acquireLockRecursive__(_r4.o);
     XMLVM_TRY_BEGIN(w281aaac12b1b4)
     // Begin try
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_io_RandomAccessFile*) _r4.o)->fields.java_io_RandomAccessFile.fd_;
+    XMLVM_CHECK_NPE(0)
     _r0.l = ((java_io_FileDescriptor*) _r0.o)->fields.java_io_FileDescriptor.descriptor_;
     _r2.l = 0;
     _r0.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
@@ -1424,8 +1460,11 @@ JAVA_LONG java_io_RandomAccessFile_length__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(3)
     java_io_RandomAccessFile_openCheck__(_r3.o);
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 265)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_io_RandomAccessFile*) _r3.o)->fields.java_io_RandomAccessFile.fileSystem_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_RandomAccessFile*) _r3.o)->fields.java_io_RandomAccessFile.fd_;
+    XMLVM_CHECK_NPE(1)
     _r1.l = ((java_io_FileDescriptor*) _r1.o)->fields.java_io_FileDescriptor.descriptor_;
     XMLVM_CHECK_NPE(0)
     _r0.l = (*(JAVA_LONG (*)(JAVA_OBJECT, JAVA_LONG)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_IFileSystem_size___long])(_r0.o, _r1.l);
@@ -1455,13 +1494,17 @@ JAVA_INT java_io_RandomAccessFile_read__(JAVA_OBJECT me)
     if (!__TIB_byte.classInitialized) __INIT_byte();
     _r3.o = XMLVMArray_createSingleDimension(__CLASS_byte, _r0.i);
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 281)
+    XMLVM_CHECK_NPE(7)
     _r6.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.repositionLock_;
     java_lang_Object_acquireLockRecursive__(_r6.o);
     XMLVM_TRY_BEGIN(w281aaac14b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 282)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.fileSystem_;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.fd_;
+    XMLVM_CHECK_NPE(1)
     _r1.l = ((java_io_FileDescriptor*) _r1.o)->fields.java_io_FileDescriptor.descriptor_;
     _r4.i = 0;
     _r5.i = 1;
@@ -1587,12 +1630,16 @@ JAVA_INT java_io_RandomAccessFile_read___byte_1ARRAY_int_int(JAVA_OBJECT me, JAV
     XMLVM_CHECK_NPE(7)
     java_io_RandomAccessFile_openCheck__(_r7.o);
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 334)
+    XMLVM_CHECK_NPE(7)
     _r6.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.repositionLock_;
     java_lang_Object_acquireLockRecursive__(_r6.o);
     XMLVM_TRY_BEGIN(w281aaac16b1c30)
     // Begin try
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.fileSystem_;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.fd_;
+    XMLVM_CHECK_NPE(1)
     _r1.l = ((java_io_FileDescriptor*) _r1.o)->fields.java_io_FileDescriptor.descriptor_;
     _r3 = _r8;
     _r4 = _r9;
@@ -2300,13 +2347,17 @@ void java_io_RandomAccessFile_seek___long(JAVA_OBJECT me, JAVA_LONG n1)
     XMLVM_CHECK_NPE(7)
     java_io_RandomAccessFile_openCheck__(_r7.o);
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 689)
+    XMLVM_CHECK_NPE(7)
     _r6.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.repositionLock_;
     java_lang_Object_acquireLockRecursive__(_r6.o);
     XMLVM_TRY_BEGIN(w281aaac31b1c19)
     // Begin try
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 690)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.fileSystem_;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.fd_;
+    XMLVM_CHECK_NPE(1)
     _r1.l = ((java_io_FileDescriptor*) _r1.o)->fields.java_io_FileDescriptor.descriptor_;
     _r5.i = 1;
     _r3 = _r8;
@@ -2369,21 +2420,28 @@ void java_io_RandomAccessFile_setLength___long(JAVA_OBJECT me, JAVA_LONG n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label15:;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 713)
+    XMLVM_CHECK_NPE(7)
     _r6.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.repositionLock_;
     java_lang_Object_acquireLockRecursive__(_r6.o);
     XMLVM_TRY_BEGIN(w281aaac32b1c17)
     // Begin try
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 714)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.fileSystem_;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.fd_;
+    XMLVM_CHECK_NPE(1)
     _r1.l = ((java_io_FileDescriptor*) _r1.o)->fields.java_io_FileDescriptor.descriptor_;
     _r3.l = 0;
     _r5.i = 2;
     XMLVM_CHECK_NPE(0)
     _r0.l = (*(JAVA_LONG (*)(JAVA_OBJECT, JAVA_LONG, JAVA_LONG, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_IFileSystem_seek___long_long_int])(_r0.o, _r1.l, _r3.l, _r5.i);
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 716)
+    XMLVM_CHECK_NPE(7)
     _r2.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.fileSystem_;
+    XMLVM_CHECK_NPE(7)
     _r3.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.fd_;
+    XMLVM_CHECK_NPE(3)
     _r3.l = ((java_io_FileDescriptor*) _r3.o)->fields.java_io_FileDescriptor.descriptor_;
     XMLVM_CHECK_NPE(2)
     (*(void (*)(JAVA_OBJECT, JAVA_LONG, JAVA_LONG)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_apache_harmony_luni_platform_IFileSystem_truncate___long_long])(_r2.o, _r3.l, _r8.l);
@@ -2410,9 +2468,11 @@ void java_io_RandomAccessFile_setLength___long(JAVA_OBJECT me, JAVA_LONG n1)
     XMLVM_CATCH_END(w281aaac32b1c19)
     XMLVM_RESTORE_EXCEPTION_ENV(w281aaac32b1c19)
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 721)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.syncMetadata_;
     if (_r0.i == 0) goto label58;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 722)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.fd_;
     XMLVM_CHECK_NPE(0)
     java_io_FileDescriptor_sync__(_r0.o);
@@ -2548,13 +2608,17 @@ void java_io_RandomAccessFile_write___byte_1ARRAY_int_int(JAVA_OBJECT me, JAVA_O
     return;
     label17:;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 792)
+    XMLVM_CHECK_NPE(7)
     _r6.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.repositionLock_;
     java_lang_Object_acquireLockRecursive__(_r6.o);
     XMLVM_TRY_BEGIN(w281aaac35b1c26)
     // Begin try
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 793)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.fileSystem_;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.fd_;
+    XMLVM_CHECK_NPE(1)
     _r1.l = ((java_io_FileDescriptor*) _r1.o)->fields.java_io_FileDescriptor.descriptor_;
     _r3 = _r8;
     _r4 = _r9;
@@ -2569,9 +2633,11 @@ void java_io_RandomAccessFile_write___byte_1ARRAY_int_int(JAVA_OBJECT me, JAVA_O
     XMLVM_CATCH_END(w281aaac35b1c26)
     XMLVM_RESTORE_EXCEPTION_ENV(w281aaac35b1c26)
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 797)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.syncMetadata_;
     if (_r0.i == 0) goto label16;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 798)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.fd_;
     XMLVM_CHECK_NPE(0)
     java_io_FileDescriptor_sync__(_r0.o);
@@ -2622,13 +2688,17 @@ void java_io_RandomAccessFile_write___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
     ((JAVA_ARRAY_BYTE*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r0.i;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 816)
+    XMLVM_CHECK_NPE(7)
     _r6.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.repositionLock_;
     java_lang_Object_acquireLockRecursive__(_r6.o);
     XMLVM_TRY_BEGIN(w281aaac36b1c16)
     // Begin try
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 817)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.fileSystem_;
+    XMLVM_CHECK_NPE(7)
     _r1.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.fd_;
+    XMLVM_CHECK_NPE(1)
     _r1.l = ((java_io_FileDescriptor*) _r1.o)->fields.java_io_FileDescriptor.descriptor_;
     _r4.i = 0;
     _r5.i = 1;
@@ -2642,9 +2712,11 @@ void java_io_RandomAccessFile_write___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_CATCH_END(w281aaac36b1c16)
     XMLVM_RESTORE_EXCEPTION_ENV(w281aaac36b1c16)
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 821)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.syncMetadata_;
     if (_r0.i == 0) goto label36;
     XMLVM_SOURCE_POSITION("RandomAccessFile.java", 822)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_io_RandomAccessFile*) _r7.o)->fields.java_io_RandomAccessFile.fd_;
     XMLVM_CHECK_NPE(0)
     java_io_FileDescriptor_sync__(_r0.o);

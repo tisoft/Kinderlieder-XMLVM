@@ -312,6 +312,7 @@ void java_nio_charset_CodingErrorAction___INIT____java_lang_String(JAVA_OBJECT m
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("CodingErrorAction.java", 54)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_charset_CodingErrorAction*) _r0.o)->fields.java_nio_charset_CodingErrorAction.action_ = _r1.o;
     XMLVM_SOURCE_POSITION("CodingErrorAction.java", 55)
     XMLVM_EXIT_METHOD()
@@ -333,6 +334,7 @@ JAVA_OBJECT java_nio_charset_CodingErrorAction_toString__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(2333);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_nio_charset_CodingErrorAction*) _r2.o)->fields.java_nio_charset_CodingErrorAction.action_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);

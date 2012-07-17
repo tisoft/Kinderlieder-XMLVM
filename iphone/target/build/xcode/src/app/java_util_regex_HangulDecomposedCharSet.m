@@ -345,10 +345,13 @@ void java_util_regex_HangulDecomposedCharSet___INIT____char_1ARRAY_int(JAVA_OBJE
     java_util_regex_JointSet___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("HangulDecomposedCharSet.java", 36)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_HangulDecomposedCharSet*) _r1.o)->fields.java_util_regex_HangulDecomposedCharSet.decomposedCharUTF16_ = _r0.o;
     XMLVM_SOURCE_POSITION("HangulDecomposedCharSet.java", 45)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_HangulDecomposedCharSet*) _r1.o)->fields.java_util_regex_HangulDecomposedCharSet.decomposedChar_ = _r2.o;
     XMLVM_SOURCE_POSITION("HangulDecomposedCharSet.java", 46)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_HangulDecomposedCharSet*) _r1.o)->fields.java_util_regex_HangulDecomposedCharSet.decomposedCharLength_ = _r3.i;
     XMLVM_SOURCE_POSITION("HangulDecomposedCharSet.java", 47)
     XMLVM_EXIT_METHOD()
@@ -364,6 +367,7 @@ JAVA_OBJECT java_util_regex_HangulDecomposedCharSet_getNext__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("HangulDecomposedCharSet.java", 53)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_AbstractSet*) _r1.o)->fields.java_util_regex_AbstractSet.next_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -379,6 +383,7 @@ void java_util_regex_HangulDecomposedCharSet_setNext___java_util_regex_AbstractS
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("HangulDecomposedCharSet.java", 62)
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_AbstractSet*) _r0.o)->fields.java_util_regex_AbstractSet.next_ = _r1.o;
     XMLVM_SOURCE_POSITION("HangulDecomposedCharSet.java", 63)
     XMLVM_EXIT_METHOD()
@@ -395,19 +400,23 @@ JAVA_OBJECT java_util_regex_HangulDecomposedCharSet_getDecomposedChar__(JAVA_OBJ
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("HangulDecomposedCharSet.java", 71)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_HangulDecomposedCharSet*) _r2.o)->fields.java_util_regex_HangulDecomposedCharSet.decomposedCharUTF16_;
     if (_r0.o != JAVA_NULL) goto label14;
     XMLVM_SOURCE_POSITION("HangulDecomposedCharSet.java", 72)
     _r0.o = __NEW_java_lang_String();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_regex_HangulDecomposedCharSet*) _r2.o)->fields.java_util_regex_HangulDecomposedCharSet.decomposedChar_;
     XMLVM_CHECK_NPE(0)
     java_lang_String___INIT____char_1ARRAY(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((java_util_regex_HangulDecomposedCharSet*) _r2.o)->fields.java_util_regex_HangulDecomposedCharSet.decomposedCharUTF16_ = _r0.o;
     label13:;
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label14:;
     XMLVM_SOURCE_POSITION("HangulDecomposedCharSet.java", 73)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_HangulDecomposedCharSet*) _r2.o)->fields.java_util_regex_HangulDecomposedCharSet.decomposedCharUTF16_;
     goto label13;
     //XMLVM_END_WRAPPER
@@ -553,6 +562,7 @@ JAVA_INT java_util_regex_HangulDecomposedCharSet_matches___int_java_lang_CharSeq
     if (_r0.i < _r4.i) goto label122;
     label88:;
     XMLVM_SOURCE_POSITION("HangulDecomposedCharSet.java", 152)
+    XMLVM_CHECK_NPE(10)
     _r0.i = ((java_util_regex_HangulDecomposedCharSet*) _r10.o)->fields.java_util_regex_HangulDecomposedCharSet.decomposedCharLength_;
     _r3.i = 2;
     if (_r0.i != _r3.i) goto label120;
@@ -561,6 +571,7 @@ JAVA_INT java_util_regex_HangulDecomposedCharSet_matches___int_java_lang_CharSeq
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
     _r0.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
+    XMLVM_CHECK_NPE(10)
     _r3.o = ((java_util_regex_HangulDecomposedCharSet*) _r10.o)->fields.java_util_regex_HangulDecomposedCharSet.decomposedChar_;
     _r4.i = 0;
     XMLVM_CHECK_NPE(3)
@@ -572,6 +583,7 @@ JAVA_INT java_util_regex_HangulDecomposedCharSet_matches___int_java_lang_CharSeq
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
     _r0.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
+    XMLVM_CHECK_NPE(10)
     _r2.o = ((java_util_regex_HangulDecomposedCharSet*) _r10.o)->fields.java_util_regex_HangulDecomposedCharSet.decomposedChar_;
     _r3.i = 1;
     XMLVM_CHECK_NPE(2)
@@ -579,6 +591,7 @@ JAVA_INT java_util_regex_HangulDecomposedCharSet_matches___int_java_lang_CharSeq
     _r2.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i];
     if (_r0.i != _r2.i) goto label120;
     XMLVM_SOURCE_POSITION("HangulDecomposedCharSet.java", 155)
+    XMLVM_CHECK_NPE(10)
     _r0.o = ((java_util_regex_AbstractSet*) _r10.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)
@@ -597,6 +610,7 @@ JAVA_INT java_util_regex_HangulDecomposedCharSet_matches___int_java_lang_CharSeq
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r5.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r5.i] = _r3.i;
     XMLVM_SOURCE_POSITION("HangulDecomposedCharSet.java", 165)
+    XMLVM_CHECK_NPE(10)
     _r1.i = ((java_util_regex_HangulDecomposedCharSet*) _r10.o)->fields.java_util_regex_HangulDecomposedCharSet.decomposedCharLength_;
     _r3.i = 3;
     if (_r1.i != _r3.i) goto label171;
@@ -605,6 +619,7 @@ JAVA_INT java_util_regex_HangulDecomposedCharSet_matches___int_java_lang_CharSeq
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
     _r1.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
+    XMLVM_CHECK_NPE(10)
     _r3.o = ((java_util_regex_HangulDecomposedCharSet*) _r10.o)->fields.java_util_regex_HangulDecomposedCharSet.decomposedChar_;
     _r4.i = 0;
     XMLVM_CHECK_NPE(3)
@@ -616,6 +631,7 @@ JAVA_INT java_util_regex_HangulDecomposedCharSet_matches___int_java_lang_CharSeq
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
     _r1.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
+    XMLVM_CHECK_NPE(10)
     _r3.o = ((java_util_regex_HangulDecomposedCharSet*) _r10.o)->fields.java_util_regex_HangulDecomposedCharSet.decomposedChar_;
     _r4.i = 1;
     XMLVM_CHECK_NPE(3)
@@ -627,6 +643,7 @@ JAVA_INT java_util_regex_HangulDecomposedCharSet_matches___int_java_lang_CharSeq
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
     _r1.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
+    XMLVM_CHECK_NPE(10)
     _r2.o = ((java_util_regex_HangulDecomposedCharSet*) _r10.o)->fields.java_util_regex_HangulDecomposedCharSet.decomposedChar_;
     _r3.i = 2;
     XMLVM_CHECK_NPE(2)
@@ -634,6 +651,7 @@ JAVA_INT java_util_regex_HangulDecomposedCharSet_matches___int_java_lang_CharSeq
     _r2.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i];
     if (_r1.i != _r2.i) goto label171;
     XMLVM_SOURCE_POSITION("HangulDecomposedCharSet.java", 169)
+    XMLVM_CHECK_NPE(10)
     _r1.o = ((java_util_regex_AbstractSet*) _r10.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(1)
@@ -648,6 +666,7 @@ JAVA_INT java_util_regex_HangulDecomposedCharSet_matches___int_java_lang_CharSeq
     _r0.i = 0;
     XMLVM_SOURCE_POSITION("HangulDecomposedCharSet.java", 179)
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r7.o));
+    XMLVM_CHECK_NPE(10)
     _r2.i = ((java_util_regex_HangulDecomposedCharSet*) _r10.o)->fields.java_util_regex_HangulDecomposedCharSet.decomposedCharLength_;
     if (_r1.i == _r2.i) goto label196;
     XMLVM_SOURCE_POSITION("HangulDecomposedCharSet.java", 180)
@@ -658,6 +677,7 @@ JAVA_INT java_util_regex_HangulDecomposedCharSet_matches___int_java_lang_CharSeq
     XMLVM_CHECK_NPE(7)
     XMLVM_CHECK_ARRAY_BOUNDS(_r7.o, _r0.i);
     _r1.i = ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r7.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r0.i];
+    XMLVM_CHECK_NPE(10)
     _r2.o = ((java_util_regex_HangulDecomposedCharSet*) _r10.o)->fields.java_util_regex_HangulDecomposedCharSet.decomposedChar_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
@@ -670,8 +690,10 @@ JAVA_INT java_util_regex_HangulDecomposedCharSet_matches___int_java_lang_CharSeq
     XMLVM_SOURCE_POSITION("HangulDecomposedCharSet.java", 183)
     _r0.i = _r0.i + 1;
     label196:;
+    XMLVM_CHECK_NPE(10)
     _r1.i = ((java_util_regex_HangulDecomposedCharSet*) _r10.o)->fields.java_util_regex_HangulDecomposedCharSet.decomposedCharLength_;
     if (_r0.i < _r1.i) goto label183;
+    XMLVM_CHECK_NPE(10)
     _r0.o = ((java_util_regex_AbstractSet*) _r10.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(0)

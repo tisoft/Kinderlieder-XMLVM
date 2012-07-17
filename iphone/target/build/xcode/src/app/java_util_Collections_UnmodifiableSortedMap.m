@@ -363,6 +363,7 @@ void java_util_Collections_UnmodifiableSortedMap___INIT____java_util_SortedMap(J
     XMLVM_CHECK_NPE(0)
     java_util_Collections_UnmodifiableMap___INIT____java_util_Map(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("Collections.java", 1401)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Collections_UnmodifiableSortedMap*) _r0.o)->fields.java_util_Collections_UnmodifiableSortedMap.sm_ = _r1.o;
     XMLVM_SOURCE_POSITION("Collections.java", 1402)
     XMLVM_EXIT_METHOD()
@@ -378,6 +379,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableSortedMap_comparator__(JAVA_OBJECT
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1405)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableSortedMap*) _r1.o)->fields.java_util_Collections_UnmodifiableSortedMap.sm_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedMap_comparator__])(_r0.o);
@@ -394,6 +396,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableSortedMap_firstKey__(JAVA_OBJECT m
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1409)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableSortedMap*) _r1.o)->fields.java_util_Collections_UnmodifiableSortedMap.sm_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedMap_firstKey__])(_r0.o);
@@ -414,6 +417,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableSortedMap_headMap___java_lang_Obje
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 1413)
     _r0.o = __NEW_java_util_Collections_UnmodifiableSortedMap();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_UnmodifiableSortedMap*) _r2.o)->fields.java_util_Collections_UnmodifiableSortedMap.sm_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedMap_headMap___java_lang_Object])(_r1.o, _r3.o);
@@ -432,6 +436,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableSortedMap_lastKey__(JAVA_OBJECT me
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1417)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_UnmodifiableSortedMap*) _r1.o)->fields.java_util_Collections_UnmodifiableSortedMap.sm_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedMap_lastKey__])(_r0.o);
@@ -454,6 +459,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableSortedMap_subMap___java_lang_Objec
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("Collections.java", 1421)
     _r0.o = __NEW_java_util_Collections_UnmodifiableSortedMap();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_UnmodifiableSortedMap*) _r2.o)->fields.java_util_Collections_UnmodifiableSortedMap.sm_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedMap_subMap___java_lang_Object_java_lang_Object])(_r1.o, _r3.o, _r4.o);
@@ -476,6 +482,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableSortedMap_tailMap___java_lang_Obje
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 1425)
     _r0.o = __NEW_java_util_Collections_UnmodifiableSortedMap();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_UnmodifiableSortedMap*) _r2.o)->fields.java_util_Collections_UnmodifiableSortedMap.sm_;
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedMap_tailMap___java_lang_Object])(_r1.o, _r3.o);

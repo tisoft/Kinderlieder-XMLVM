@@ -299,6 +299,7 @@ void org_xmlvm_runtime_Condition___INIT____java_lang_Object(JAVA_OBJECT me, JAVA
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Condition.java", 41)
+    XMLVM_CHECK_NPE(0)
     ((org_xmlvm_runtime_Condition*) _r0.o)->fields.org_xmlvm_runtime_Condition.synchronizedObject_ = _r1.o;
     XMLVM_SOURCE_POSITION("Condition.java", 42)
     XMLVM_CHECK_NPE(0)
@@ -319,6 +320,7 @@ JAVA_OBJECT org_xmlvm_runtime_Condition_getSynchronizedObject__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Condition.java", 52)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xmlvm_runtime_Condition*) _r1.o)->fields.org_xmlvm_runtime_Condition.synchronizedObject_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

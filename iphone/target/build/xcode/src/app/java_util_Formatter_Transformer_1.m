@@ -217,6 +217,7 @@ void java_util_Formatter_Transformer_1___INIT____java_util_Formatter_Transformer
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("Formatter.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Formatter_Transformer_1*) _r0.o)->fields.java_util_Formatter_Transformer_1.this_1_ = _r1.o;
     XMLVM_SOURCE_POSITION("Formatter.java", 1462)
     XMLVM_CHECK_NPE(0)

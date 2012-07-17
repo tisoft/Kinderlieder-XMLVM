@@ -903,30 +903,36 @@ void java_lang_ThreadGroup___INIT___(JAVA_OBJECT me)
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 50)
     _r0.i = 10;
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ThreadGroup*) _r2.o)->fields.java_lang_ThreadGroup.maxPriority_ = _r0.i;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 58)
     _r0.i = 5;
     if (!__TIB_java_lang_Thread.classInitialized) __INIT_java_lang_Thread();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Thread, _r0.i);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ThreadGroup*) _r2.o)->fields.java_lang_ThreadGroup.childrenThreads_ = _r0.o;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 64)
     _r0.i = 3;
     if (!__TIB_java_lang_ThreadGroup.classInitialized) __INIT_java_lang_ThreadGroup();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_ThreadGroup, _r0.i);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ThreadGroup*) _r2.o)->fields.java_lang_ThreadGroup.childrenGroups_ = _r0.o;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 68)
     _r0.o = __NEW_java_lang_ThreadGroup_ChildrenGroupsLock();
     XMLVM_CHECK_NPE(0)
     java_lang_ThreadGroup_ChildrenGroupsLock___INIT____java_lang_ThreadGroup_java_lang_ThreadGroup_1(_r0.o, _r2.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ThreadGroup*) _r2.o)->fields.java_lang_ThreadGroup.childrenGroupsLock_ = _r0.o;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 72)
     _r0.o = __NEW_java_lang_ThreadGroup_ChildrenThreadsLock();
     XMLVM_CHECK_NPE(0)
     java_lang_ThreadGroup_ChildrenThreadsLock___INIT____java_lang_ThreadGroup_java_lang_ThreadGroup_1(_r0.o, _r2.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ThreadGroup*) _r2.o)->fields.java_lang_ThreadGroup.childrenThreadsLock_ = _r0.o;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 85)
     // "system"
     _r0.o = xmlvm_create_java_string_from_pool(824);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ThreadGroup*) _r2.o)->fields.java_lang_ThreadGroup.name_ = _r0.o;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 86)
     XMLVM_EXIT_METHOD()
@@ -973,26 +979,31 @@ void java_lang_ThreadGroup___INIT____java_lang_ThreadGroup_java_lang_String(JAVA
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 50)
     _r0.i = 10;
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ThreadGroup*) _r2.o)->fields.java_lang_ThreadGroup.maxPriority_ = _r0.i;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 58)
     _r0.i = 5;
     if (!__TIB_java_lang_Thread.classInitialized) __INIT_java_lang_Thread();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Thread, _r0.i);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ThreadGroup*) _r2.o)->fields.java_lang_ThreadGroup.childrenThreads_ = _r0.o;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 64)
     _r0.i = 3;
     if (!__TIB_java_lang_ThreadGroup.classInitialized) __INIT_java_lang_ThreadGroup();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_ThreadGroup, _r0.i);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ThreadGroup*) _r2.o)->fields.java_lang_ThreadGroup.childrenGroups_ = _r0.o;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 68)
     _r0.o = __NEW_java_lang_ThreadGroup_ChildrenGroupsLock();
     XMLVM_CHECK_NPE(0)
     java_lang_ThreadGroup_ChildrenGroupsLock___INIT____java_lang_ThreadGroup_java_lang_ThreadGroup_1(_r0.o, _r2.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ThreadGroup*) _r2.o)->fields.java_lang_ThreadGroup.childrenGroupsLock_ = _r0.o;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 72)
     _r0.o = __NEW_java_lang_ThreadGroup_ChildrenThreadsLock();
     XMLVM_CHECK_NPE(0)
     java_lang_ThreadGroup_ChildrenThreadsLock___INIT____java_lang_ThreadGroup_java_lang_ThreadGroup_1(_r0.o, _r2.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ThreadGroup*) _r2.o)->fields.java_lang_ThreadGroup.childrenThreadsLock_ = _r0.o;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 121)
     _r0.o = java_lang_Thread_currentThread__();
@@ -1010,6 +1021,7 @@ void java_lang_ThreadGroup___INIT____java_lang_ThreadGroup_java_lang_String(JAVA
     java_lang_ThreadGroup_checkAccess__(_r3.o);
     label49:;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 136)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ThreadGroup*) _r2.o)->fields.java_lang_ThreadGroup.name_ = _r4.o;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 137)
     XMLVM_CHECK_NPE(2)
@@ -1052,30 +1064,36 @@ void java_lang_ThreadGroup___INIT____java_lang_ThreadGroup(JAVA_OBJECT me, JAVA_
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 50)
     _r0.i = 10;
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ThreadGroup*) _r2.o)->fields.java_lang_ThreadGroup.maxPriority_ = _r0.i;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 58)
     _r0.i = 5;
     if (!__TIB_java_lang_Thread.classInitialized) __INIT_java_lang_Thread();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Thread, _r0.i);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ThreadGroup*) _r2.o)->fields.java_lang_ThreadGroup.childrenThreads_ = _r0.o;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 64)
     _r0.i = 3;
     if (!__TIB_java_lang_ThreadGroup.classInitialized) __INIT_java_lang_ThreadGroup();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_ThreadGroup, _r0.i);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ThreadGroup*) _r2.o)->fields.java_lang_ThreadGroup.childrenGroups_ = _r0.o;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 68)
     _r0.o = __NEW_java_lang_ThreadGroup_ChildrenGroupsLock();
     XMLVM_CHECK_NPE(0)
     java_lang_ThreadGroup_ChildrenGroupsLock___INIT____java_lang_ThreadGroup_java_lang_ThreadGroup_1(_r0.o, _r2.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ThreadGroup*) _r2.o)->fields.java_lang_ThreadGroup.childrenGroupsLock_ = _r0.o;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 72)
     _r0.o = __NEW_java_lang_ThreadGroup_ChildrenThreadsLock();
     XMLVM_CHECK_NPE(0)
     java_lang_ThreadGroup_ChildrenThreadsLock___INIT____java_lang_ThreadGroup_java_lang_ThreadGroup_1(_r0.o, _r2.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ThreadGroup*) _r2.o)->fields.java_lang_ThreadGroup.childrenThreadsLock_ = _r0.o;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 150)
     // "main"
     _r0.o = xmlvm_create_java_string_from_pool(262);
+    XMLVM_CHECK_NPE(2)
     ((java_lang_ThreadGroup*) _r2.o)->fields.java_lang_ThreadGroup.name_ = _r0.o;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 151)
     XMLVM_CHECK_NPE(2)
@@ -1097,8 +1115,10 @@ JAVA_INT java_lang_ThreadGroup_activeCount__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 161)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_lang_ThreadGroup*) _r4.o)->fields.java_lang_ThreadGroup.numThreads_;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 163)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_lang_ThreadGroup*) _r4.o)->fields.java_lang_ThreadGroup.childrenGroupsLock_;
     java_lang_Object_acquireLockRecursive__(_r2.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 164)
@@ -1106,9 +1126,11 @@ JAVA_INT java_lang_ThreadGroup_activeCount__(JAVA_OBJECT me)
     label6:;
     XMLVM_TRY_BEGIN(w9978aaac15b1c10)
     // Begin try
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_lang_ThreadGroup*) _r4.o)->fields.java_lang_ThreadGroup.numGroups_;
     if (_r1.i >= _r3.i) { XMLVM_MEMCPY(curThread_w9978aaac15b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac15b1c10, sizeof(XMLVM_JMP_BUF)); goto label22; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 165)
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_lang_ThreadGroup*) _r4.o)->fields.java_lang_ThreadGroup.childrenGroups_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
@@ -1168,6 +1190,7 @@ JAVA_INT java_lang_ThreadGroup_activeGroupCount__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 178)
     _r0.i = 0;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 180)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_lang_ThreadGroup*) _r4.o)->fields.java_lang_ThreadGroup.childrenGroupsLock_;
     java_lang_Object_acquireLockRecursive__(_r2.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 181)
@@ -1175,9 +1198,11 @@ JAVA_INT java_lang_ThreadGroup_activeGroupCount__(JAVA_OBJECT me)
     label5:;
     XMLVM_TRY_BEGIN(w9978aaac16b1c10)
     // Begin try
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_lang_ThreadGroup*) _r4.o)->fields.java_lang_ThreadGroup.numGroups_;
     if (_r1.i >= _r3.i) { XMLVM_MEMCPY(curThread_w9978aaac16b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac16b1c10, sizeof(XMLVM_JMP_BUF)); goto label23; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 183)
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_lang_ThreadGroup*) _r4.o)->fields.java_lang_ThreadGroup.childrenGroups_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r1.i);
@@ -1240,38 +1265,48 @@ void java_lang_ThreadGroup_add___java_lang_Thread(JAVA_OBJECT me, JAVA_OBJECT n1
     _r6.o = me;
     _r7.o = n1;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 202)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenThreadsLock_;
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_TRY_BEGIN(w9978aaac17b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 203)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.isDestroyed_;
     if (_r2.i != 0) { XMLVM_MEMCPY(curThread_w9978aaac17b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac17b1b6, sizeof(XMLVM_JMP_BUF)); goto label56; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 204)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenThreads_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numThreads_;
     if (_r2.i != _r3.i) { XMLVM_MEMCPY(curThread_w9978aaac17b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac17b1b6, sizeof(XMLVM_JMP_BUF)); goto label42; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 205)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenThreads_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     _r2.i = _r2.i * 2;
     if (!__TIB_java_lang_Thread.classInitialized) __INIT_java_lang_Thread();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_Thread, _r2.i);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 206)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenThreads_;
     _r3.i = 0;
     _r4.i = 0;
+    XMLVM_CHECK_NPE(6)
     _r5.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numThreads_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r2.o, _r3.i, _r0.o, _r4.i, _r5.i);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 207)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numThreads_;
     _r3.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(6)
     ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numThreads_ = _r3.i;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i] = _r7.o;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 208)
+    XMLVM_CHECK_NPE(6)
     ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenThreads_ = _r0.o;
     // End try
     XMLVM_TRY_END
@@ -1298,9 +1333,12 @@ void java_lang_ThreadGroup_add___java_lang_Thread(JAVA_OBJECT me, JAVA_OBJECT n1
     XMLVM_TRY_BEGIN(w9978aaac17b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 210)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenThreads_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numThreads_;
     _r4.i = _r3.i + 1;
+    XMLVM_CHECK_NPE(6)
     ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numThreads_ = _r4.i;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
@@ -1357,38 +1395,48 @@ void java_lang_ThreadGroup_add___java_lang_ThreadGroup(JAVA_OBJECT me, JAVA_OBJE
     _r6.o = me;
     _r7.o = n1;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 227)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenGroupsLock_;
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_TRY_BEGIN(w9978aaac18b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 228)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.isDestroyed_;
     if (_r2.i != 0) { XMLVM_MEMCPY(curThread_w9978aaac18b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac18b1b6, sizeof(XMLVM_JMP_BUF)); goto label56; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 229)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenGroups_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numGroups_;
     if (_r2.i != _r3.i) { XMLVM_MEMCPY(curThread_w9978aaac18b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac18b1b6, sizeof(XMLVM_JMP_BUF)); goto label42; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 230)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenGroups_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     _r2.i = _r2.i * 2;
     if (!__TIB_java_lang_ThreadGroup.classInitialized) __INIT_java_lang_ThreadGroup();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_java_lang_ThreadGroup, _r2.i);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 231)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenGroups_;
     _r3.i = 0;
     _r4.i = 0;
+    XMLVM_CHECK_NPE(6)
     _r5.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numGroups_;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r2.o, _r3.i, _r0.o, _r4.i, _r5.i);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 232)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numGroups_;
     _r3.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(6)
     ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numGroups_ = _r3.i;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
     ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i] = _r7.o;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 233)
+    XMLVM_CHECK_NPE(6)
     ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenGroups_ = _r0.o;
     // End try
     XMLVM_TRY_END
@@ -1415,9 +1463,12 @@ void java_lang_ThreadGroup_add___java_lang_ThreadGroup(JAVA_OBJECT me, JAVA_OBJE
     XMLVM_TRY_BEGIN(w9978aaac18b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 235)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenGroups_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numGroups_;
     _r4.i = _r3.i + 1;
+    XMLVM_CHECK_NPE(6)
     ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numGroups_ = _r4.i;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r3.i);
@@ -1512,11 +1563,13 @@ void java_lang_ThreadGroup_destroy__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(6)
     java_lang_ThreadGroup_checkAccess__(_r6.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 291)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenThreadsLock_;
     java_lang_Object_acquireLockRecursive__(_r2.o);
     XMLVM_TRY_BEGIN(w9978aaac21b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 292)
+    XMLVM_CHECK_NPE(6)
     _r3.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenGroupsLock_;
     java_lang_Object_acquireLockRecursive__(_r3.o);
     // End try
@@ -1528,6 +1581,7 @@ void java_lang_ThreadGroup_destroy__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w9978aaac21b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 293)
+    XMLVM_CHECK_NPE(6)
     _r1.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numGroups_;
     _r0.i = 0;
     // End try
@@ -1542,6 +1596,7 @@ void java_lang_ThreadGroup_destroy__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 295)
     if (_r0.i >= _r1.i) { XMLVM_MEMCPY(curThread_w9978aaac21b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac21b1c10, sizeof(XMLVM_JMP_BUF)); goto label25; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 299)
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenGroups_;
     _r5.i = 0;
     XMLVM_CHECK_NPE(4)
@@ -1561,9 +1616,11 @@ void java_lang_ThreadGroup_destroy__(JAVA_OBJECT me)
     label25:;
     XMLVM_TRY_BEGIN(w9978aaac21b1c12)
     // Begin try
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.parent_;
     if (_r4.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w9978aaac21b1c12->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac21b1c12, sizeof(XMLVM_JMP_BUF)); goto label34; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 303)
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.parent_;
     XMLVM_CHECK_NPE(4)
     java_lang_ThreadGroup_remove___java_lang_ThreadGroup(_r4.o, _r6.o);
@@ -1578,6 +1635,7 @@ void java_lang_ThreadGroup_destroy__(JAVA_OBJECT me)
     // Begin try
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 308)
     _r4.i = 1;
+    XMLVM_CHECK_NPE(6)
     ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.isDestroyed_ = _r4.i;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 309)
     java_lang_Object_releaseLockRecursive__(_r3.o);
@@ -1647,18 +1705,23 @@ void java_lang_ThreadGroup_destroyIfEmptyDaemon__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 323)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_lang_ThreadGroup*) _r3.o)->fields.java_lang_ThreadGroup.childrenThreadsLock_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w9978aaac22b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 324)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_ThreadGroup*) _r3.o)->fields.java_lang_ThreadGroup.isDaemon_;
     if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w9978aaac22b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac22b1b5, sizeof(XMLVM_JMP_BUF)); goto label26; };
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_ThreadGroup*) _r3.o)->fields.java_lang_ThreadGroup.isDestroyed_;
     if (_r1.i != 0) { XMLVM_MEMCPY(curThread_w9978aaac22b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac22b1b5, sizeof(XMLVM_JMP_BUF)); goto label26; };
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_lang_ThreadGroup*) _r3.o)->fields.java_lang_ThreadGroup.numThreads_;
     if (_r1.i != 0) { XMLVM_MEMCPY(curThread_w9978aaac22b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac22b1b5, sizeof(XMLVM_JMP_BUF)); goto label26; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 325)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_lang_ThreadGroup*) _r3.o)->fields.java_lang_ThreadGroup.childrenGroupsLock_;
     java_lang_Object_acquireLockRecursive__(_r1.o);
     // End try
@@ -1670,6 +1733,7 @@ void java_lang_ThreadGroup_destroyIfEmptyDaemon__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w9978aaac22b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 326)
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_lang_ThreadGroup*) _r3.o)->fields.java_lang_ThreadGroup.numGroups_;
     if (_r2.i != 0) { XMLVM_MEMCPY(curThread_w9978aaac22b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac22b1b6, sizeof(XMLVM_JMP_BUF)); goto label25; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 327)
@@ -1846,12 +1910,14 @@ JAVA_INT java_lang_ThreadGroup_enumerateGeneric___java_lang_Object_1ARRAY_boolea
     java_lang_ThreadGroup_checkAccess__(_r6.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 409)
     if (_r10.i == 0) goto label44;
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenThreads_;
     _r4.o = _r4.o;
     _r2 = _r4;
     label10:;
     if (_r10.i == 0) goto label50;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 411)
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenThreadsLock_;
     _r3 = _r4;
     label15:;
@@ -1861,6 +1927,7 @@ JAVA_INT java_lang_ThreadGroup_enumerateGeneric___java_lang_Object_1ARRAY_boolea
     if (_r10.i == 0) goto label54;
     XMLVM_TRY_BEGIN(w9978aaac27b1c23)
     // Begin try
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numThreads_;
     // End try
     XMLVM_TRY_END
@@ -1911,17 +1978,20 @@ JAVA_INT java_lang_ThreadGroup_enumerateGeneric___java_lang_Object_1ARRAY_boolea
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label44:;
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenGroups_;
     _r4.o = _r4.o;
     _r2 = _r4;
     goto label10;
     label50:;
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenGroupsLock_;
     _r3 = _r4;
     goto label15;
     label54:;
     XMLVM_TRY_BEGIN(w9978aaac27b1c49)
     // Begin try
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numGroups_;
     _r1 = _r4;
     { XMLVM_MEMCPY(curThread_w9978aaac27b1c49->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac27b1c49, sizeof(XMLVM_JMP_BUF)); goto label21; };
@@ -1964,6 +2034,7 @@ JAVA_INT java_lang_ThreadGroup_enumerateGeneric___java_lang_Object_1ARRAY_boolea
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 424)
     if (_r8.i == 0) goto label107;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 425)
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenGroupsLock_;
     java_lang_Object_acquireLockRecursive__(_r4.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 426)
@@ -1972,6 +2043,7 @@ JAVA_INT java_lang_ThreadGroup_enumerateGeneric___java_lang_Object_1ARRAY_boolea
     label74:;
     XMLVM_TRY_BEGIN(w9978aaac27b1c65)
     // Begin try
+    XMLVM_CHECK_NPE(6)
     _r5.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numGroups_;
     if (_r1.i >= _r5.i) { XMLVM_MEMCPY(curThread_w9978aaac27b1c65->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac27b1c65, sizeof(XMLVM_JMP_BUF)); goto label98; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 427)
@@ -2005,6 +2077,7 @@ JAVA_INT java_lang_ThreadGroup_enumerateGeneric___java_lang_Object_1ARRAY_boolea
     XMLVM_TRY_BEGIN(w9978aaac27b1c74)
     // Begin try
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 430)
+    XMLVM_CHECK_NPE(6)
     _r5.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenGroups_;
     XMLVM_CHECK_NPE(5)
     XMLVM_CHECK_ARRAY_BOUNDS(_r5.o, _r1.i);
@@ -2073,6 +2146,7 @@ JAVA_INT java_lang_ThreadGroup_getMaxPriority__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 446)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_ThreadGroup*) _r1.o)->fields.java_lang_ThreadGroup.maxPriority_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -2087,6 +2161,7 @@ JAVA_OBJECT java_lang_ThreadGroup_getName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 455)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_ThreadGroup*) _r1.o)->fields.java_lang_ThreadGroup.name_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2101,14 +2176,17 @@ JAVA_OBJECT java_lang_ThreadGroup_getParent__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 466)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_ThreadGroup*) _r1.o)->fields.java_lang_ThreadGroup.parent_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 467)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_ThreadGroup*) _r1.o)->fields.java_lang_ThreadGroup.parent_;
     XMLVM_CHECK_NPE(0)
     java_lang_ThreadGroup_checkAccess__(_r0.o);
     label9:;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 469)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_ThreadGroup*) _r1.o)->fields.java_lang_ThreadGroup.parent_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2128,6 +2206,7 @@ void java_lang_ThreadGroup_interrupt__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(3)
     java_lang_ThreadGroup_checkAccess__(_r3.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 484)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_lang_ThreadGroup*) _r3.o)->fields.java_lang_ThreadGroup.childrenThreadsLock_;
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 485)
@@ -2135,9 +2214,11 @@ void java_lang_ThreadGroup_interrupt__(JAVA_OBJECT me)
     label7:;
     XMLVM_TRY_BEGIN(w9978aaac31b1c10)
     // Begin try
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_lang_ThreadGroup*) _r3.o)->fields.java_lang_ThreadGroup.numThreads_;
     if (_r0.i >= _r2.i) { XMLVM_MEMCPY(curThread_w9978aaac31b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac31b1c10, sizeof(XMLVM_JMP_BUF)); goto label21; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 486)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_lang_ThreadGroup*) _r3.o)->fields.java_lang_ThreadGroup.childrenThreads_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
@@ -2164,6 +2245,7 @@ void java_lang_ThreadGroup_interrupt__(JAVA_OBJECT me)
     XMLVM_CATCH_END(w9978aaac31b1c12)
     XMLVM_RESTORE_EXCEPTION_ENV(w9978aaac31b1c12)
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 490)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_lang_ThreadGroup*) _r3.o)->fields.java_lang_ThreadGroup.childrenGroupsLock_;
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 491)
@@ -2171,9 +2253,11 @@ void java_lang_ThreadGroup_interrupt__(JAVA_OBJECT me)
     label26:;
     XMLVM_TRY_BEGIN(w9978aaac31b1c19)
     // Begin try
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_lang_ThreadGroup*) _r3.o)->fields.java_lang_ThreadGroup.numGroups_;
     if (_r0.i >= _r2.i) { XMLVM_MEMCPY(curThread_w9978aaac31b1c19->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac31b1c19, sizeof(XMLVM_JMP_BUF)); goto label43; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 492)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_lang_ThreadGroup*) _r3.o)->fields.java_lang_ThreadGroup.childrenGroups_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
@@ -2240,6 +2324,7 @@ JAVA_BOOLEAN java_lang_ThreadGroup_isDaemon__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 506)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_ThreadGroup*) _r1.o)->fields.java_lang_ThreadGroup.isDaemon_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -2254,6 +2339,7 @@ JAVA_BOOLEAN java_lang_ThreadGroup_isDestroyed__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 517)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_lang_ThreadGroup*) _r1.o)->fields.java_lang_ThreadGroup.isDestroyed_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -2317,6 +2403,7 @@ void java_lang_ThreadGroup_list___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_CHECK_NPE(2)
     java_io_PrintStream_println___java_lang_String(_r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 549)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_lang_ThreadGroup*) _r5.o)->fields.java_lang_ThreadGroup.childrenThreadsLock_;
     java_lang_Object_acquireLockRecursive__(_r2.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 550)
@@ -2324,6 +2411,7 @@ void java_lang_ThreadGroup_list___int(JAVA_OBJECT me, JAVA_INT n1)
     label28:;
     XMLVM_TRY_BEGIN(w9978aaac35b1c25)
     // Begin try
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_lang_ThreadGroup*) _r5.o)->fields.java_lang_ThreadGroup.numThreads_;
     if (_r0.i >= _r3.i) { XMLVM_MEMCPY(curThread_w9978aaac35b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac35b1c25, sizeof(XMLVM_JMP_BUF)); goto label57; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 552)
@@ -2357,6 +2445,7 @@ void java_lang_ThreadGroup_list___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_TRY_BEGIN(w9978aaac35b1c29)
     // Begin try
     _r3.o = java_lang_System_GET_out();
+    XMLVM_CHECK_NPE(5)
     _r4.o = ((java_lang_ThreadGroup*) _r5.o)->fields.java_lang_ThreadGroup.childrenThreads_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r0.i);
@@ -2383,6 +2472,7 @@ void java_lang_ThreadGroup_list___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_CATCH_END(w9978aaac35b1c31)
     XMLVM_RESTORE_EXCEPTION_ENV(w9978aaac35b1c31)
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 558)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_lang_ThreadGroup*) _r5.o)->fields.java_lang_ThreadGroup.childrenGroupsLock_;
     java_lang_Object_acquireLockRecursive__(_r2.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 559)
@@ -2390,9 +2480,11 @@ void java_lang_ThreadGroup_list___int(JAVA_OBJECT me, JAVA_INT n1)
     label62:;
     XMLVM_TRY_BEGIN(w9978aaac35b1c38)
     // Begin try
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_lang_ThreadGroup*) _r5.o)->fields.java_lang_ThreadGroup.numGroups_;
     if (_r0.i >= _r3.i) { XMLVM_MEMCPY(curThread_w9978aaac35b1c38->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac35b1c38, sizeof(XMLVM_JMP_BUF)); goto label81; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 560)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_lang_ThreadGroup*) _r5.o)->fields.java_lang_ThreadGroup.childrenGroups_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r0.i);
@@ -2474,6 +2566,7 @@ JAVA_BOOLEAN java_lang_ThreadGroup_parentOf___java_lang_ThreadGroup(JAVA_OBJECT 
     return _r0.i;
     label6:;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 579)
+    XMLVM_CHECK_NPE(2)
     _r2.o = ((java_lang_ThreadGroup*) _r2.o)->fields.java_lang_ThreadGroup.parent_;
     goto label0;
     label9:;
@@ -2497,6 +2590,7 @@ void java_lang_ThreadGroup_remove___java_lang_Thread(JAVA_OBJECT me, JAVA_OBJECT
     _r6.o = me;
     _r7.o = n1;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 593)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenThreadsLock_;
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 594)
@@ -2504,9 +2598,11 @@ void java_lang_ThreadGroup_remove___java_lang_Thread(JAVA_OBJECT me, JAVA_OBJECT
     label4:;
     XMLVM_TRY_BEGIN(w9978aaac37b1b9)
     // Begin try
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numThreads_;
     if (_r0.i >= _r2.i) { XMLVM_MEMCPY(curThread_w9978aaac37b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac37b1b9, sizeof(XMLVM_JMP_BUF)); goto label43; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 595)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenThreads_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
@@ -2516,19 +2612,26 @@ void java_lang_ThreadGroup_remove___java_lang_Thread(JAVA_OBJECT me, JAVA_OBJECT
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_Thread*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
     if (_r2.i == 0) { XMLVM_MEMCPY(curThread_w9978aaac37b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac37b1b9, sizeof(XMLVM_JMP_BUF)); goto label48; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 596)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numThreads_;
     _r3.i = 1;
     _r2.i = _r2.i - _r3.i;
+    XMLVM_CHECK_NPE(6)
     ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numThreads_ = _r2.i;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 597)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenThreads_;
     _r3.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenThreads_;
+    XMLVM_CHECK_NPE(6)
     _r5.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numThreads_;
     _r5.i = _r5.i - _r0.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r2.o, _r3.i, _r4.o, _r0.i, _r5.i);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 600)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenThreads_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numThreads_;
     _r4.o = JAVA_NULL;
     XMLVM_CHECK_NPE(2)
@@ -2591,6 +2694,7 @@ void java_lang_ThreadGroup_remove___java_lang_ThreadGroup(JAVA_OBJECT me, JAVA_O
     _r6.o = me;
     _r7.o = n1;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 617)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenGroupsLock_;
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 618)
@@ -2598,9 +2702,11 @@ void java_lang_ThreadGroup_remove___java_lang_ThreadGroup(JAVA_OBJECT me, JAVA_O
     label4:;
     XMLVM_TRY_BEGIN(w9978aaac38b1b9)
     // Begin try
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numGroups_;
     if (_r0.i >= _r2.i) { XMLVM_MEMCPY(curThread_w9978aaac38b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac38b1b9, sizeof(XMLVM_JMP_BUF)); goto label43; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 619)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenGroups_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
@@ -2610,19 +2716,26 @@ void java_lang_ThreadGroup_remove___java_lang_ThreadGroup(JAVA_OBJECT me, JAVA_O
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_Object*) _r2.o)->tib->vtable[1])(_r2.o, _r7.o);
     if (_r2.i == 0) { XMLVM_MEMCPY(curThread_w9978aaac38b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac38b1b9, sizeof(XMLVM_JMP_BUF)); goto label48; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 620)
+    XMLVM_CHECK_NPE(6)
     _r2.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numGroups_;
     _r3.i = 1;
     _r2.i = _r2.i - _r3.i;
+    XMLVM_CHECK_NPE(6)
     ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numGroups_ = _r2.i;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 621)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenGroups_;
     _r3.i = _r0.i + 1;
+    XMLVM_CHECK_NPE(6)
     _r4.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenGroups_;
+    XMLVM_CHECK_NPE(6)
     _r5.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numGroups_;
     _r5.i = _r5.i - _r0.i;
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r2.o, _r3.i, _r4.o, _r0.i, _r5.i);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 622)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.childrenGroups_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_lang_ThreadGroup*) _r6.o)->fields.java_lang_ThreadGroup.numGroups_;
     _r4.o = JAVA_NULL;
     XMLVM_CHECK_NPE(2)
@@ -2683,6 +2796,7 @@ void java_lang_ThreadGroup_resume__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(3)
     java_lang_ThreadGroup_checkAccess__(_r3.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 647)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_lang_ThreadGroup*) _r3.o)->fields.java_lang_ThreadGroup.childrenThreadsLock_;
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 648)
@@ -2690,9 +2804,11 @@ void java_lang_ThreadGroup_resume__(JAVA_OBJECT me)
     label7:;
     XMLVM_TRY_BEGIN(w9978aaac39b1c10)
     // Begin try
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_lang_ThreadGroup*) _r3.o)->fields.java_lang_ThreadGroup.numThreads_;
     if (_r0.i >= _r2.i) { XMLVM_MEMCPY(curThread_w9978aaac39b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac39b1c10, sizeof(XMLVM_JMP_BUF)); goto label21; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 649)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_lang_ThreadGroup*) _r3.o)->fields.java_lang_ThreadGroup.childrenThreads_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
@@ -2719,6 +2835,7 @@ void java_lang_ThreadGroup_resume__(JAVA_OBJECT me)
     XMLVM_CATCH_END(w9978aaac39b1c12)
     XMLVM_RESTORE_EXCEPTION_ENV(w9978aaac39b1c12)
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 653)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_lang_ThreadGroup*) _r3.o)->fields.java_lang_ThreadGroup.childrenGroupsLock_;
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 654)
@@ -2726,9 +2843,11 @@ void java_lang_ThreadGroup_resume__(JAVA_OBJECT me)
     label26:;
     XMLVM_TRY_BEGIN(w9978aaac39b1c19)
     // Begin try
+    XMLVM_CHECK_NPE(3)
     _r2.i = ((java_lang_ThreadGroup*) _r3.o)->fields.java_lang_ThreadGroup.numGroups_;
     if (_r0.i >= _r2.i) { XMLVM_MEMCPY(curThread_w9978aaac39b1c19->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac39b1c19, sizeof(XMLVM_JMP_BUF)); goto label43; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 655)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_lang_ThreadGroup*) _r3.o)->fields.java_lang_ThreadGroup.childrenGroups_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
@@ -2799,6 +2918,7 @@ void java_lang_ThreadGroup_setDaemon___boolean(JAVA_OBJECT me, JAVA_BOOLEAN n1)
     XMLVM_CHECK_NPE(0)
     java_lang_ThreadGroup_checkAccess__(_r0.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 675)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_ThreadGroup*) _r0.o)->fields.java_lang_ThreadGroup.isDaemon_ = _r1.i;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 676)
     XMLVM_EXIT_METHOD()
@@ -2822,6 +2942,7 @@ void java_lang_ThreadGroup_setMaxPriority___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_CHECK_NPE(4)
     java_lang_ThreadGroup_checkAccess__(_r4.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 698)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_lang_ThreadGroup*) _r4.o)->fields.java_lang_ThreadGroup.maxPriority_;
     if (_r5.i > _r2.i) goto label50;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 699)
@@ -2831,6 +2952,7 @@ void java_lang_ThreadGroup_setMaxPriority___int(JAVA_OBJECT me, JAVA_INT n1)
     _r5.i = 1;
     label11:;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 703)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_lang_ThreadGroup*) _r4.o)->fields.java_lang_ThreadGroup.parent_;
     if (_r2.o != JAVA_NULL) goto label39;
     _r1 = _r5;
@@ -2839,8 +2961,10 @@ void java_lang_ThreadGroup_setMaxPriority___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 704)
     _r2 = _r1;
     label19:;
+    XMLVM_CHECK_NPE(4)
     ((java_lang_ThreadGroup*) _r4.o)->fields.java_lang_ThreadGroup.maxPriority_ = _r2.i;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 706)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_lang_ThreadGroup*) _r4.o)->fields.java_lang_ThreadGroup.childrenGroupsLock_;
     java_lang_Object_acquireLockRecursive__(_r2.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 708)
@@ -2848,9 +2972,11 @@ void java_lang_ThreadGroup_setMaxPriority___int(JAVA_OBJECT me, JAVA_INT n1)
     label25:;
     XMLVM_TRY_BEGIN(w9978aaac41b1c30)
     // Begin try
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_lang_ThreadGroup*) _r4.o)->fields.java_lang_ThreadGroup.numGroups_;
     if (_r0.i >= _r3.i) { XMLVM_MEMCPY(curThread_w9978aaac41b1c30->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac41b1c30, sizeof(XMLVM_JMP_BUF)); goto label49; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 709)
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_lang_ThreadGroup*) _r4.o)->fields.java_lang_ThreadGroup.childrenGroups_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r0.i);
@@ -2866,6 +2992,7 @@ void java_lang_ThreadGroup_setMaxPriority___int(JAVA_OBJECT me, JAVA_INT n1)
     _r0.i = _r0.i + 1;
     goto label25;
     label39:;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_lang_ThreadGroup*) _r4.o)->fields.java_lang_ThreadGroup.parent_;
     XMLVM_CHECK_NPE(2)
     _r2.i = java_lang_ThreadGroup_getMaxPriority__(_r2.o);
@@ -2929,6 +3056,7 @@ void java_lang_ThreadGroup_setParent___java_lang_ThreadGroup(JAVA_OBJECT me, JAV
     java_lang_ThreadGroup_add___java_lang_ThreadGroup(_r1.o, _r0.o);
     label5:;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 730)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_ThreadGroup*) _r0.o)->fields.java_lang_ThreadGroup.parent_ = _r1.o;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 731)
     XMLVM_EXIT_METHOD()
@@ -2975,6 +3103,7 @@ JAVA_BOOLEAN java_lang_ThreadGroup_stopHelper__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 761)
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 763)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_lang_ThreadGroup*) _r5.o)->fields.java_lang_ThreadGroup.childrenThreadsLock_;
     java_lang_Object_acquireLockRecursive__(_r3.o);
     XMLVM_TRY_BEGIN(w9978aaac44b1b9)
@@ -2992,9 +3121,11 @@ JAVA_BOOLEAN java_lang_ThreadGroup_stopHelper__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w9978aaac44b1c11)
     // Begin try
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 765)
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((java_lang_ThreadGroup*) _r5.o)->fields.java_lang_ThreadGroup.numThreads_;
     if (_r1.i >= _r4.i) { XMLVM_MEMCPY(curThread_w9978aaac44b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac44b1c11, sizeof(XMLVM_JMP_BUF)); goto label37; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 766)
+    XMLVM_CHECK_NPE(5)
     _r4.o = ((java_lang_ThreadGroup*) _r5.o)->fields.java_lang_ThreadGroup.childrenThreads_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r1.i);
@@ -3023,6 +3154,7 @@ JAVA_BOOLEAN java_lang_ThreadGroup_stopHelper__(JAVA_OBJECT me)
     label26:;
     XMLVM_TRY_BEGIN(w9978aaac44b1c15)
     // Begin try
+    XMLVM_CHECK_NPE(5)
     _r4.o = ((java_lang_ThreadGroup*) _r5.o)->fields.java_lang_ThreadGroup.childrenThreads_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r1.i);
@@ -3061,6 +3193,7 @@ JAVA_BOOLEAN java_lang_ThreadGroup_stopHelper__(JAVA_OBJECT me)
     XMLVM_CATCH_END(w9978aaac44b1c20)
     XMLVM_RESTORE_EXCEPTION_ENV(w9978aaac44b1c20)
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 774)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_lang_ThreadGroup*) _r5.o)->fields.java_lang_ThreadGroup.childrenGroupsLock_;
     java_lang_Object_acquireLockRecursive__(_r3.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 775)
@@ -3068,9 +3201,11 @@ JAVA_BOOLEAN java_lang_ThreadGroup_stopHelper__(JAVA_OBJECT me)
     label42:;
     XMLVM_TRY_BEGIN(w9978aaac44b1c27)
     // Begin try
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((java_lang_ThreadGroup*) _r5.o)->fields.java_lang_ThreadGroup.numGroups_;
     if (_r1.i >= _r4.i) { XMLVM_MEMCPY(curThread_w9978aaac44b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac44b1c27, sizeof(XMLVM_JMP_BUF)); goto label58; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 776)
+    XMLVM_CHECK_NPE(5)
     _r4.o = ((java_lang_ThreadGroup*) _r5.o)->fields.java_lang_ThreadGroup.childrenGroups_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r1.i);
@@ -3156,6 +3291,7 @@ JAVA_BOOLEAN java_lang_ThreadGroup_suspendHelper__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 810)
     _r2.i = 0;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 812)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_lang_ThreadGroup*) _r5.o)->fields.java_lang_ThreadGroup.childrenThreadsLock_;
     java_lang_Object_acquireLockRecursive__(_r3.o);
     XMLVM_TRY_BEGIN(w9978aaac46b1b9)
@@ -3173,9 +3309,11 @@ JAVA_BOOLEAN java_lang_ThreadGroup_suspendHelper__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w9978aaac46b1c11)
     // Begin try
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 814)
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((java_lang_ThreadGroup*) _r5.o)->fields.java_lang_ThreadGroup.numThreads_;
     if (_r1.i >= _r4.i) { XMLVM_MEMCPY(curThread_w9978aaac46b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac46b1c11, sizeof(XMLVM_JMP_BUF)); goto label37; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 815)
+    XMLVM_CHECK_NPE(5)
     _r4.o = ((java_lang_ThreadGroup*) _r5.o)->fields.java_lang_ThreadGroup.childrenThreads_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r1.i);
@@ -3204,6 +3342,7 @@ JAVA_BOOLEAN java_lang_ThreadGroup_suspendHelper__(JAVA_OBJECT me)
     label26:;
     XMLVM_TRY_BEGIN(w9978aaac46b1c15)
     // Begin try
+    XMLVM_CHECK_NPE(5)
     _r4.o = ((java_lang_ThreadGroup*) _r5.o)->fields.java_lang_ThreadGroup.childrenThreads_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r1.i);
@@ -3242,6 +3381,7 @@ JAVA_BOOLEAN java_lang_ThreadGroup_suspendHelper__(JAVA_OBJECT me)
     XMLVM_CATCH_END(w9978aaac46b1c20)
     XMLVM_RESTORE_EXCEPTION_ENV(w9978aaac46b1c20)
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 823)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_lang_ThreadGroup*) _r5.o)->fields.java_lang_ThreadGroup.childrenGroupsLock_;
     java_lang_Object_acquireLockRecursive__(_r3.o);
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 824)
@@ -3249,9 +3389,11 @@ JAVA_BOOLEAN java_lang_ThreadGroup_suspendHelper__(JAVA_OBJECT me)
     label42:;
     XMLVM_TRY_BEGIN(w9978aaac46b1c27)
     // Begin try
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((java_lang_ThreadGroup*) _r5.o)->fields.java_lang_ThreadGroup.numGroups_;
     if (_r1.i >= _r4.i) { XMLVM_MEMCPY(curThread_w9978aaac46b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9978aaac46b1c27, sizeof(XMLVM_JMP_BUF)); goto label58; };
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 825)
+    XMLVM_CHECK_NPE(5)
     _r4.o = ((java_lang_ThreadGroup*) _r5.o)->fields.java_lang_ThreadGroup.childrenGroups_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r1.i);
@@ -3357,9 +3499,11 @@ void java_lang_ThreadGroup_uncaughtException___java_lang_Thread_java_lang_Throwa
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 858)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_ThreadGroup*) _r1.o)->fields.java_lang_ThreadGroup.parent_;
     if (_r0.o == JAVA_NULL) goto label10;
     XMLVM_SOURCE_POSITION("ThreadGroup.java", 859)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_ThreadGroup*) _r1.o)->fields.java_lang_ThreadGroup.parent_;
     //java_lang_ThreadGroup_uncaughtException___java_lang_Thread_java_lang_Throwable[6]
     XMLVM_CHECK_NPE(0)

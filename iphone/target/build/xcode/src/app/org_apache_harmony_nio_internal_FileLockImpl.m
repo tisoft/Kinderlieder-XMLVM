@@ -243,6 +243,7 @@ void org_apache_harmony_nio_internal_FileLockImpl___INIT____java_nio_channels_Fi
     java_nio_channels_FileLock___INIT____java_nio_channels_FileChannel_long_long_boolean(_r1.o, _r2.o, _r3.l, _r5.l, _r7.i);
     XMLVM_SOURCE_POSITION("FileLockImpl.java", 30)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_nio_internal_FileLockImpl*) _r1.o)->fields.org_apache_harmony_nio_internal_FileLockImpl.isReleased_ = _r0.i;
     XMLVM_SOURCE_POSITION("FileLockImpl.java", 47)
     XMLVM_EXIT_METHOD()
@@ -258,6 +259,7 @@ JAVA_BOOLEAN org_apache_harmony_nio_internal_FileLockImpl_isValid__(JAVA_OBJECT 
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("FileLockImpl.java", 57)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((org_apache_harmony_nio_internal_FileLockImpl*) _r1.o)->fields.org_apache_harmony_nio_internal_FileLockImpl.isReleased_;
     if (_r0.i != 0) goto label16;
     XMLVM_CHECK_NPE(1)
@@ -302,6 +304,7 @@ void org_apache_harmony_nio_internal_FileLockImpl_release__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r0.o)
     label16:;
     XMLVM_SOURCE_POSITION("FileLockImpl.java", 72)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((org_apache_harmony_nio_internal_FileLockImpl*) _r1.o)->fields.org_apache_harmony_nio_internal_FileLockImpl.isReleased_;
     if (_r0.i != 0) goto label32;
     XMLVM_SOURCE_POSITION("FileLockImpl.java", 73)
@@ -312,6 +315,7 @@ void org_apache_harmony_nio_internal_FileLockImpl_release__(JAVA_OBJECT me)
     org_apache_harmony_nio_internal_FileChannelImpl_release___java_nio_channels_FileLock(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("FileLockImpl.java", 74)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((org_apache_harmony_nio_internal_FileLockImpl*) _r1.o)->fields.org_apache_harmony_nio_internal_FileLockImpl.isReleased_ = _r0.i;
     label32:;
     XMLVM_SOURCE_POSITION("FileLockImpl.java", 76)

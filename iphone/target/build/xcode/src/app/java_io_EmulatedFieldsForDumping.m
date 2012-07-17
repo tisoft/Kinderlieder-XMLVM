@@ -428,8 +428,10 @@ void java_io_EmulatedFieldsForDumping___INIT____java_io_ObjectOutputStream_java_
     _r2.o = JAVA_NULL;
     XMLVM_CHECK_NPE(0)
     java_io_EmulatedFields___INIT____java_io_ObjectStreamField_1ARRAY_java_io_ObjectStreamField_1ARRAY(_r0.o, _r1.o, _r2.o);
+    XMLVM_CHECK_NPE(3)
     ((java_io_EmulatedFieldsForDumping*) _r3.o)->fields.java_io_EmulatedFieldsForDumping.emulatedFields_ = _r0.o;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForDumping.java", 50)
+    XMLVM_CHECK_NPE(3)
     ((java_io_EmulatedFieldsForDumping*) _r3.o)->fields.java_io_EmulatedFieldsForDumping.oos_ = _r4.o;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForDumping.java", 51)
     XMLVM_EXIT_METHOD()
@@ -445,6 +447,7 @@ JAVA_OBJECT java_io_EmulatedFieldsForDumping_emulatedFields__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForDumping.java", 61)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFieldsForDumping*) _r1.o)->fields.java_io_EmulatedFieldsForDumping.emulatedFields_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -463,6 +466,7 @@ void java_io_EmulatedFieldsForDumping_put___java_lang_String_byte(JAVA_OBJECT me
     _r2.o = n1;
     _r3.i = n2;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForDumping.java", 75)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFieldsForDumping*) _r1.o)->fields.java_io_EmulatedFieldsForDumping.emulatedFields_;
     XMLVM_CHECK_NPE(0)
     java_io_EmulatedFields_put___java_lang_String_byte(_r0.o, _r2.o, _r3.i);
@@ -484,6 +488,7 @@ void java_io_EmulatedFieldsForDumping_put___java_lang_String_char(JAVA_OBJECT me
     _r2.o = n1;
     _r3.i = n2;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForDumping.java", 89)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFieldsForDumping*) _r1.o)->fields.java_io_EmulatedFieldsForDumping.emulatedFields_;
     XMLVM_CHECK_NPE(0)
     java_io_EmulatedFields_put___java_lang_String_char(_r0.o, _r2.o, _r3.i);
@@ -506,6 +511,7 @@ void java_io_EmulatedFieldsForDumping_put___java_lang_String_double(JAVA_OBJECT 
     _r2.o = n1;
     _r3.d = n2;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForDumping.java", 103)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFieldsForDumping*) _r1.o)->fields.java_io_EmulatedFieldsForDumping.emulatedFields_;
     XMLVM_CHECK_NPE(0)
     java_io_EmulatedFields_put___java_lang_String_double(_r0.o, _r2.o, _r3.d);
@@ -527,6 +533,7 @@ void java_io_EmulatedFieldsForDumping_put___java_lang_String_float(JAVA_OBJECT m
     _r2.o = n1;
     _r3.f = n2;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForDumping.java", 117)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFieldsForDumping*) _r1.o)->fields.java_io_EmulatedFieldsForDumping.emulatedFields_;
     XMLVM_CHECK_NPE(0)
     java_io_EmulatedFields_put___java_lang_String_float(_r0.o, _r2.o, _r3.f);
@@ -548,6 +555,7 @@ void java_io_EmulatedFieldsForDumping_put___java_lang_String_int(JAVA_OBJECT me,
     _r2.o = n1;
     _r3.i = n2;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForDumping.java", 131)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFieldsForDumping*) _r1.o)->fields.java_io_EmulatedFieldsForDumping.emulatedFields_;
     XMLVM_CHECK_NPE(0)
     java_io_EmulatedFields_put___java_lang_String_int(_r0.o, _r2.o, _r3.i);
@@ -570,6 +578,7 @@ void java_io_EmulatedFieldsForDumping_put___java_lang_String_long(JAVA_OBJECT me
     _r2.o = n1;
     _r3.l = n2;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForDumping.java", 145)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFieldsForDumping*) _r1.o)->fields.java_io_EmulatedFieldsForDumping.emulatedFields_;
     XMLVM_CHECK_NPE(0)
     java_io_EmulatedFields_put___java_lang_String_long(_r0.o, _r2.o, _r3.l);
@@ -591,6 +600,7 @@ void java_io_EmulatedFieldsForDumping_put___java_lang_String_java_lang_Object(JA
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForDumping.java", 159)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFieldsForDumping*) _r1.o)->fields.java_io_EmulatedFieldsForDumping.emulatedFields_;
     XMLVM_CHECK_NPE(0)
     java_io_EmulatedFields_put___java_lang_String_java_lang_Object(_r0.o, _r2.o, _r3.o);
@@ -612,6 +622,7 @@ void java_io_EmulatedFieldsForDumping_put___java_lang_String_short(JAVA_OBJECT m
     _r2.o = n1;
     _r3.i = n2;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForDumping.java", 173)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFieldsForDumping*) _r1.o)->fields.java_io_EmulatedFieldsForDumping.emulatedFields_;
     XMLVM_CHECK_NPE(0)
     java_io_EmulatedFields_put___java_lang_String_short(_r0.o, _r2.o, _r3.i);
@@ -633,6 +644,7 @@ void java_io_EmulatedFieldsForDumping_put___java_lang_String_boolean(JAVA_OBJECT
     _r2.o = n1;
     _r3.i = n2;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForDumping.java", 187)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFieldsForDumping*) _r1.o)->fields.java_io_EmulatedFieldsForDumping.emulatedFields_;
     XMLVM_CHECK_NPE(0)
     java_io_EmulatedFields_put___java_lang_String_boolean(_r0.o, _r2.o, _r3.i);
@@ -657,6 +669,7 @@ void java_io_EmulatedFieldsForDumping_write___java_io_ObjectOutput(JAVA_OBJECT m
     _r6.o = n1;
     _r4.i = 0;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForDumping.java", 202)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_io_EmulatedFieldsForDumping*) _r5.o)->fields.java_io_EmulatedFieldsForDumping.oos_;
     //java_lang_Object_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(6)
@@ -672,6 +685,7 @@ void java_io_EmulatedFieldsForDumping_write___java_io_ObjectOutput(JAVA_OBJECT m
     XMLVM_THROW_CUSTOM(_r0.o)
     label21:;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForDumping.java", 207)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_io_EmulatedFieldsForDumping*) _r5.o)->fields.java_io_EmulatedFieldsForDumping.emulatedFields_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_io_EmulatedFields_slots__(_r0.o);

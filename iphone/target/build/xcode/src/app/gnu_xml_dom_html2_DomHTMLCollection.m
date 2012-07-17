@@ -452,8 +452,10 @@ void gnu_xml_dom_html2_DomHTMLCollection___INIT____gnu_xml_dom_html2_DomHTMLDocu
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("DomHTMLCollection.java", 71)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_html2_DomHTMLCollection*) _r0.o)->fields.gnu_xml_dom_html2_DomHTMLCollection.doc_ = _r1.o;
     XMLVM_SOURCE_POSITION("DomHTMLCollection.java", 72)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_html2_DomHTMLCollection*) _r0.o)->fields.gnu_xml_dom_html2_DomHTMLCollection.root_ = _r2.o;
     XMLVM_SOURCE_POSITION("DomHTMLCollection.java", 73)
     XMLVM_EXIT_METHOD()
@@ -471,15 +473,18 @@ void gnu_xml_dom_html2_DomHTMLCollection_addNodeName___java_lang_String(JAVA_OBJ
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLCollection.java", 79)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_html2_DomHTMLCollection*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLCollection.nodeNames_;
     if (_r0.o != JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("DomHTMLCollection.java", 81)
     _r0.o = __NEW_java_util_LinkedList();
     XMLVM_CHECK_NPE(0)
     java_util_LinkedList___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_html2_DomHTMLCollection*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLCollection.nodeNames_ = _r0.o;
     label11:;
     XMLVM_SOURCE_POSITION("DomHTMLCollection.java", 83)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_html2_DomHTMLCollection*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLCollection.nodeNames_;
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_add___java_lang_Object])(_r0.o, _r2.o);
@@ -499,15 +504,18 @@ void gnu_xml_dom_html2_DomHTMLCollection_addAttributeName___java_lang_String(JAV
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLCollection.java", 88)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_html2_DomHTMLCollection*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLCollection.attributeNames_;
     if (_r0.o != JAVA_NULL) goto label11;
     XMLVM_SOURCE_POSITION("DomHTMLCollection.java", 90)
     _r0.o = __NEW_java_util_LinkedList();
     XMLVM_CHECK_NPE(0)
     java_util_LinkedList___INIT___(_r0.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_html2_DomHTMLCollection*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLCollection.attributeNames_ = _r0.o;
     label11:;
     XMLVM_SOURCE_POSITION("DomHTMLCollection.java", 92)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_html2_DomHTMLCollection*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLCollection.attributeNames_;
     XMLVM_CHECK_NPE(0)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_add___java_lang_Object])(_r0.o, _r2.o);
@@ -552,6 +560,7 @@ JAVA_SHORT gnu_xml_dom_html2_DomHTMLCollection_acceptNode___org_w3c_dom_Node(JAV
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_Node_getNodeName__])(_r5.o);
     label20:;
     XMLVM_SOURCE_POSITION("DomHTMLCollection.java", 106)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_dom_html2_DomHTMLCollection*) _r4.o)->fields.gnu_xml_dom_html2_DomHTMLCollection.nodeNames_;
     if (_r1.o == JAVA_NULL) goto label32;
     XMLVM_CHECK_NPE(4)
@@ -562,6 +571,7 @@ JAVA_SHORT gnu_xml_dom_html2_DomHTMLCollection_acceptNode___org_w3c_dom_Node(JAV
     goto label9;
     label32:;
     XMLVM_SOURCE_POSITION("DomHTMLCollection.java", 110)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_dom_html2_DomHTMLCollection*) _r4.o)->fields.gnu_xml_dom_html2_DomHTMLCollection.attributeNames_;
     if (_r0.o == JAVA_NULL) goto label48;
     XMLVM_CHECK_NPE(5)
@@ -589,6 +599,7 @@ JAVA_BOOLEAN gnu_xml_dom_html2_DomHTMLCollection_acceptName___java_lang_String(J
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLCollection.java", 119)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_html2_DomHTMLCollection*) _r2.o)->fields.gnu_xml_dom_html2_DomHTMLCollection.nodeNames_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_iterator__])(_r0.o);
@@ -627,6 +638,7 @@ JAVA_BOOLEAN gnu_xml_dom_html2_DomHTMLCollection_acceptAttributes___org_w3c_dom_
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("DomHTMLCollection.java", 132)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_html2_DomHTMLCollection*) _r2.o)->fields.gnu_xml_dom_html2_DomHTMLCollection.attributeNames_;
     XMLVM_CHECK_NPE(0)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_iterator__])(_r0.o);
@@ -727,7 +739,9 @@ void gnu_xml_dom_html2_DomHTMLCollection_evaluate__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("DomHTMLCollection.java", 175)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_dom_html2_DomHTMLCollection*) _r3.o)->fields.gnu_xml_dom_html2_DomHTMLCollection.doc_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_dom_html2_DomHTMLCollection*) _r3.o)->fields.gnu_xml_dom_html2_DomHTMLCollection.root_;
     //gnu_xml_dom_html2_DomHTMLDocument_createNodeIterator___org_w3c_dom_Node_int_org_w3c_dom_traversal_NodeFilter_boolean[63]
     XMLVM_CHECK_NPE(0)
@@ -736,6 +750,7 @@ void gnu_xml_dom_html2_DomHTMLCollection_evaluate__(JAVA_OBJECT me)
     _r1.o = __NEW_java_util_ArrayList();
     XMLVM_CHECK_NPE(1)
     java_util_ArrayList___INIT___(_r1.o);
+    XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_html2_DomHTMLCollection*) _r3.o)->fields.gnu_xml_dom_html2_DomHTMLCollection.results_ = _r1.o;
     XMLVM_SOURCE_POSITION("DomHTMLCollection.java", 178)
     XMLVM_CHECK_NPE(0)
@@ -747,6 +762,7 @@ void gnu_xml_dom_html2_DomHTMLCollection_evaluate__(JAVA_OBJECT me)
     return;
     label23:;
     XMLVM_SOURCE_POSITION("DomHTMLCollection.java", 180)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_dom_html2_DomHTMLCollection*) _r3.o)->fields.gnu_xml_dom_html2_DomHTMLCollection.results_;
     XMLVM_CHECK_NPE(2)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_add___java_lang_Object])(_r2.o, _r1.o);
@@ -764,6 +780,7 @@ JAVA_INT gnu_xml_dom_html2_DomHTMLCollection_getLength__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomHTMLCollection.java", 188)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_html2_DomHTMLCollection*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLCollection.results_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_size__])(_r0.o);
@@ -801,6 +818,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLCollection_item___int(JAVA_OBJECT me, JAVA_
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("DomHTMLCollection.java", 198)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_html2_DomHTMLCollection*) _r1.o)->fields.gnu_xml_dom_html2_DomHTMLCollection.results_;
     XMLVM_CHECK_NPE(0)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_get___int])(_r0.o, _r2.i);
@@ -826,6 +844,7 @@ JAVA_OBJECT gnu_xml_dom_html2_DomHTMLCollection_namedItem___java_lang_String(JAV
     XMLVM_SOURCE_POSITION("DomHTMLCollection.java", 203)
     _r1.i = 0;
     XMLVM_SOURCE_POSITION("DomHTMLCollection.java", 204)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_dom_html2_DomHTMLCollection*) _r5.o)->fields.gnu_xml_dom_html2_DomHTMLCollection.results_;
     XMLVM_CHECK_NPE(0)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_iterator__])(_r0.o);

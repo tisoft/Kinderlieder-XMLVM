@@ -257,6 +257,7 @@ void java_nio_charset_MalformedInputException___INIT____int(JAVA_OBJECT me, JAVA
     XMLVM_CHECK_NPE(0)
     java_nio_charset_CharacterCodingException___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("MalformedInputException.java", 44)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_charset_MalformedInputException*) _r0.o)->fields.java_nio_charset_MalformedInputException.inputLength_ = _r1.i;
     XMLVM_SOURCE_POSITION("MalformedInputException.java", 45)
     XMLVM_EXIT_METHOD()
@@ -272,6 +273,7 @@ JAVA_INT java_nio_charset_MalformedInputException_getInputLength__(JAVA_OBJECT m
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("MalformedInputException.java", 53)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_nio_charset_MalformedInputException*) _r1.o)->fields.java_nio_charset_MalformedInputException.inputLength_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -289,6 +291,7 @@ JAVA_OBJECT java_nio_charset_MalformedInputException_getMessage__(JAVA_OBJECT me
     XMLVM_SOURCE_POSITION("MalformedInputException.java", 64)
     // "niochar.05"
     _r0.o = xmlvm_create_java_string_from_pool(3363);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_nio_charset_MalformedInputException*) _r2.o)->fields.java_nio_charset_MalformedInputException.inputLength_;
     _r0.o = org_apache_harmony_niochar_internal_nls_Messages_getString___java_lang_String_int(_r0.o, _r1.i);
     XMLVM_EXIT_METHOD()

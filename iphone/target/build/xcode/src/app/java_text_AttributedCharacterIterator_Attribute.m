@@ -407,6 +407,7 @@ void java_text_AttributedCharacterIterator_Attribute___INIT____java_lang_String(
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("AttributedCharacterIterator.java", 77)
+    XMLVM_CHECK_NPE(0)
     ((java_text_AttributedCharacterIterator_Attribute*) _r0.o)->fields.java_text_AttributedCharacterIterator_Attribute.name_ = _r1.o;
     XMLVM_SOURCE_POSITION("AttributedCharacterIterator.java", 78)
     XMLVM_EXIT_METHOD()
@@ -443,6 +444,7 @@ JAVA_OBJECT java_text_AttributedCharacterIterator_Attribute_getName__(JAVA_OBJEC
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("AttributedCharacterIterator.java", 101)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_text_AttributedCharacterIterator_Attribute*) _r1.o)->fields.java_text_AttributedCharacterIterator_Attribute.name_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

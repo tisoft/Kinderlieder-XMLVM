@@ -447,6 +447,7 @@ void javax_xml_parsers_SAXParserFactory_setNamespaceAware___boolean(JAVA_OBJECT 
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("SAXParserFactory.java", 106)
+    XMLVM_CHECK_NPE(0)
     ((javax_xml_parsers_SAXParserFactory*) _r0.o)->fields.javax_xml_parsers_SAXParserFactory.namespaceAware_ = _r1.i;
     XMLVM_SOURCE_POSITION("SAXParserFactory.java", 107)
     XMLVM_EXIT_METHOD()
@@ -463,6 +464,7 @@ void javax_xml_parsers_SAXParserFactory_setValidating___boolean(JAVA_OBJECT me, 
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("SAXParserFactory.java", 115)
+    XMLVM_CHECK_NPE(0)
     ((javax_xml_parsers_SAXParserFactory*) _r0.o)->fields.javax_xml_parsers_SAXParserFactory.validating_ = _r1.i;
     XMLVM_SOURCE_POSITION("SAXParserFactory.java", 116)
     XMLVM_EXIT_METHOD()
@@ -478,6 +480,7 @@ JAVA_BOOLEAN javax_xml_parsers_SAXParserFactory_isNamespaceAware__(JAVA_OBJECT m
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXParserFactory.java", 124)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((javax_xml_parsers_SAXParserFactory*) _r1.o)->fields.javax_xml_parsers_SAXParserFactory.namespaceAware_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -492,6 +495,7 @@ JAVA_BOOLEAN javax_xml_parsers_SAXParserFactory_isValidating__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXParserFactory.java", 133)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((javax_xml_parsers_SAXParserFactory*) _r1.o)->fields.javax_xml_parsers_SAXParserFactory.validating_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -506,6 +510,7 @@ JAVA_OBJECT javax_xml_parsers_SAXParserFactory_getSchema__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXParserFactory.java", 163)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((javax_xml_parsers_SAXParserFactory*) _r1.o)->fields.javax_xml_parsers_SAXParserFactory.schema_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -521,6 +526,7 @@ void javax_xml_parsers_SAXParserFactory_setSchema___javax_xml_validation_Schema(
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("SAXParserFactory.java", 173)
+    XMLVM_CHECK_NPE(0)
     ((javax_xml_parsers_SAXParserFactory*) _r0.o)->fields.javax_xml_parsers_SAXParserFactory.schema_ = _r1.o;
     XMLVM_SOURCE_POSITION("SAXParserFactory.java", 174)
     XMLVM_EXIT_METHOD()
@@ -536,6 +542,7 @@ JAVA_BOOLEAN javax_xml_parsers_SAXParserFactory_isXIncludeAware__(JAVA_OBJECT me
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("SAXParserFactory.java", 183)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((javax_xml_parsers_SAXParserFactory*) _r1.o)->fields.javax_xml_parsers_SAXParserFactory.xIncludeAware_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -551,6 +558,7 @@ void javax_xml_parsers_SAXParserFactory_setXIncludeAware___boolean(JAVA_OBJECT m
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("SAXParserFactory.java", 192)
+    XMLVM_CHECK_NPE(0)
     ((javax_xml_parsers_SAXParserFactory*) _r0.o)->fields.javax_xml_parsers_SAXParserFactory.xIncludeAware_ = _r1.i;
     XMLVM_SOURCE_POSITION("SAXParserFactory.java", 193)
     XMLVM_EXIT_METHOD()

@@ -254,8 +254,10 @@ void java_util_LinkedHashMap_LinkedHashMapEntry___INIT____java_lang_Object_java_
     XMLVM_CHECK_NPE(1)
     java_util_HashMap_Entry___INIT____java_lang_Object_java_lang_Object(_r1.o, _r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 254)
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedHashMap_LinkedHashMapEntry*) _r1.o)->fields.java_util_LinkedHashMap_LinkedHashMapEntry.chainForward_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 255)
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedHashMap_LinkedHashMapEntry*) _r1.o)->fields.java_util_LinkedHashMap_LinkedHashMapEntry.chainBackward_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 256)
     XMLVM_EXIT_METHOD()
@@ -279,8 +281,10 @@ void java_util_LinkedHashMap_LinkedHashMapEntry___INIT____java_lang_Object_int(J
     XMLVM_CHECK_NPE(1)
     java_util_HashMap_Entry___INIT____java_lang_Object_int(_r1.o, _r2.o, _r3.i);
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 260)
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedHashMap_LinkedHashMapEntry*) _r1.o)->fields.java_util_LinkedHashMap_LinkedHashMapEntry.chainForward_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 261)
+    XMLVM_CHECK_NPE(1)
     ((java_util_LinkedHashMap_LinkedHashMapEntry*) _r1.o)->fields.java_util_LinkedHashMap_LinkedHashMapEntry.chainBackward_ = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 262)
     XMLVM_EXIT_METHOD()
@@ -302,12 +306,17 @@ JAVA_OBJECT java_util_LinkedHashMap_LinkedHashMapEntry_clone__(JAVA_OBJECT me)
     _r0.o = java_util_HashMap_Entry_clone__(_r2.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 269)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_LinkedHashMap_LinkedHashMapEntry*) _r2.o)->fields.java_util_LinkedHashMap_LinkedHashMapEntry.chainBackward_;
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedHashMap_LinkedHashMapEntry*) _r0.o)->fields.java_util_LinkedHashMap_LinkedHashMapEntry.chainBackward_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 270)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_LinkedHashMap_LinkedHashMapEntry*) _r2.o)->fields.java_util_LinkedHashMap_LinkedHashMapEntry.chainForward_;
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedHashMap_LinkedHashMapEntry*) _r0.o)->fields.java_util_LinkedHashMap_LinkedHashMapEntry.chainForward_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 271)
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((java_util_HashMap_Entry*) _r0.o)->fields.java_util_HashMap_Entry.next_;
     _r2.o = _r2.o;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 272)
@@ -317,6 +326,7 @@ JAVA_OBJECT java_util_LinkedHashMap_LinkedHashMapEntry_clone__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_LinkedHashMap_LinkedHashMapEntry*) _r2.o)->tib->vtable[0])(_r2.o);
     _r2.o = _r2.o;
+    XMLVM_CHECK_NPE(0)
     ((java_util_HashMap_Entry*) _r0.o)->fields.java_util_HashMap_Entry.next_ = _r2.o;
     label28:;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 275)

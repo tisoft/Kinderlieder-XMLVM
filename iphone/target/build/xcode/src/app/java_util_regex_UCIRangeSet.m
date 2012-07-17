@@ -265,14 +265,18 @@ void java_util_regex_UCIRangeSet___INIT____java_util_regex_AbstractCharClass_jav
     java_util_regex_LeafSet___INIT____java_util_regex_AbstractSet(_r1.o, _r3.o);
     XMLVM_SOURCE_POSITION("UCIRangeSet.java", 34)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_UCIRangeSet*) _r1.o)->fields.java_util_regex_UCIRangeSet.alt_ = _r0.i;
     XMLVM_SOURCE_POSITION("UCIRangeSet.java", 38)
     //java_util_regex_AbstractCharClass_getInstance__[9]
     XMLVM_CHECK_NPE(2)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_regex_AbstractCharClass*) _r2.o)->tib->vtable[9])(_r2.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_UCIRangeSet*) _r1.o)->fields.java_util_regex_UCIRangeSet.chars_ = _r0.o;
     XMLVM_SOURCE_POSITION("UCIRangeSet.java", 39)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_AbstractCharClass*) _r2.o)->fields.java_util_regex_AbstractCharClass.alt_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_UCIRangeSet*) _r1.o)->fields.java_util_regex_UCIRangeSet.alt_ = _r0.i;
     XMLVM_SOURCE_POSITION("UCIRangeSet.java", 40)
     XMLVM_EXIT_METHOD()
@@ -294,14 +298,18 @@ void java_util_regex_UCIRangeSet___INIT____java_util_regex_AbstractCharClass(JAV
     java_util_regex_LeafSet___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("UCIRangeSet.java", 34)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_UCIRangeSet*) _r1.o)->fields.java_util_regex_UCIRangeSet.alt_ = _r0.i;
     XMLVM_SOURCE_POSITION("UCIRangeSet.java", 43)
     //java_util_regex_AbstractCharClass_getInstance__[9]
     XMLVM_CHECK_NPE(2)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_util_regex_AbstractCharClass*) _r2.o)->tib->vtable[9])(_r2.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_UCIRangeSet*) _r1.o)->fields.java_util_regex_UCIRangeSet.chars_ = _r0.o;
     XMLVM_SOURCE_POSITION("UCIRangeSet.java", 44)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_AbstractCharClass*) _r2.o)->fields.java_util_regex_AbstractCharClass.alt_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_UCIRangeSet*) _r1.o)->fields.java_util_regex_UCIRangeSet.alt_ = _r0.i;
     XMLVM_SOURCE_POSITION("UCIRangeSet.java", 45)
     XMLVM_EXIT_METHOD()
@@ -322,6 +330,7 @@ JAVA_INT java_util_regex_UCIRangeSet_accepts___int_java_lang_CharSequence(JAVA_O
     _r3.i = n1;
     _r4.o = n2;
     XMLVM_SOURCE_POSITION("UCIRangeSet.java", 48)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_UCIRangeSet*) _r2.o)->fields.java_util_regex_UCIRangeSet.chars_;
     XMLVM_SOURCE_POSITION("UCIRangeSet.java", 49)
     XMLVM_CHECK_NPE(4)
@@ -356,6 +365,7 @@ JAVA_OBJECT java_util_regex_UCIRangeSet_getName__(JAVA_OBJECT me)
     _r1.o = xmlvm_create_java_string_from_pool(1403);
     XMLVM_CHECK_NPE(0)
     java_lang_StringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_regex_UCIRangeSet*) _r2.o)->fields.java_util_regex_UCIRangeSet.alt_;
     if (_r1.i == 0) goto label32;
     // "^ "
@@ -363,6 +373,7 @@ JAVA_OBJECT java_util_regex_UCIRangeSet_getName__(JAVA_OBJECT me)
     label13:;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_StringBuilder_append___java_lang_String(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_regex_UCIRangeSet*) _r2.o)->fields.java_util_regex_UCIRangeSet.chars_;
     //java_lang_Object_toString__[5]
     XMLVM_CHECK_NPE(1)

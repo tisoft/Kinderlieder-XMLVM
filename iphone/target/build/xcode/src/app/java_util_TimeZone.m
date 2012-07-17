@@ -974,6 +974,7 @@ void java_util_TimeZone___INIT___(JAVA_OBJECT me)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("TimeZone.java", 95)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(1)
     ((java_util_TimeZone*) _r1.o)->fields.java_util_TimeZone.icuTimeZone_ = _r0.o;
     XMLVM_SOURCE_POSITION("TimeZone.java", 129)
     XMLVM_EXIT_METHOD()
@@ -1277,9 +1278,12 @@ JAVA_OBJECT java_util_TimeZone_getDisplayName___boolean_int_java_util_Locale(JAV
     _r4.i = n2;
     _r5.o = n3;
     XMLVM_SOURCE_POSITION("TimeZone.java", 251)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_TimeZone*) _r2.o)->fields.java_util_TimeZone.icuTimeZone_;
     if (_r0.o == JAVA_NULL) goto label18;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_TimeZone*) _r2.o)->fields.java_util_TimeZone.ID_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_TimeZone*) _r2.o)->fields.java_util_TimeZone.icuTimeZone_;
 
     
@@ -1291,14 +1295,17 @@ JAVA_OBJECT java_util_TimeZone_getDisplayName___boolean_int_java_util_Locale(JAV
     if (_r0.i != 0) goto label26;
     label18:;
     XMLVM_SOURCE_POSITION("TimeZone.java", 252)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_TimeZone*) _r2.o)->fields.java_util_TimeZone.ID_;
 
     
     // Red class access removed: com.ibm.icu.util.TimeZone::getTimeZone
     XMLVM_RED_CLASS_DEPENDENCY();
+    XMLVM_CHECK_NPE(2)
     ((java_util_TimeZone*) _r2.o)->fields.java_util_TimeZone.icuTimeZone_ = _r0.o;
     label26:;
     XMLVM_SOURCE_POSITION("TimeZone.java", 254)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_TimeZone*) _r2.o)->fields.java_util_TimeZone.icuTimeZone_;
 
     
@@ -1317,6 +1324,7 @@ JAVA_OBJECT java_util_TimeZone_getID__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("TimeZone.java", 264)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_TimeZone*) _r1.o)->fields.java_util_TimeZone.ID_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -2202,6 +2210,7 @@ void java_util_TimeZone_setID___java_lang_String(JAVA_OBJECT me, JAVA_OBJECT n1)
     XMLVM_THROW_CUSTOM(_r0.o)
     label8:;
     XMLVM_SOURCE_POSITION("TimeZone.java", 542)
+    XMLVM_CHECK_NPE(1)
     ((java_util_TimeZone*) _r1.o)->fields.java_util_TimeZone.ID_ = _r2.o;
     XMLVM_SOURCE_POSITION("TimeZone.java", 543)
     XMLVM_EXIT_METHOD()

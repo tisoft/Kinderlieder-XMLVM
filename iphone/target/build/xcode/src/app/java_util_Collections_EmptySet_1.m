@@ -253,6 +253,7 @@ void java_util_Collections_EmptySet_1___INIT____java_util_Collections_EmptySet(J
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Collections_EmptySet_1*) _r0.o)->fields.java_util_Collections_EmptySet_1.this_1_ = _r1.o;
     XMLVM_SOURCE_POSITION("Collections.java", 115)
     XMLVM_CHECK_NPE(0)

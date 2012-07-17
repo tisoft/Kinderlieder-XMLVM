@@ -438,6 +438,7 @@ void java_io_EmulatedFieldsForLoading___INIT____java_io_ObjectStreamClass(JAVA_O
     XMLVM_CHECK_NPE(3)
     java_io_ObjectInputStream_GetField___INIT___(_r3.o);
     XMLVM_SOURCE_POSITION("EmulatedFieldsForLoading.java", 45)
+    XMLVM_CHECK_NPE(3)
     ((java_io_EmulatedFieldsForLoading*) _r3.o)->fields.java_io_EmulatedFieldsForLoading.streamClass_ = _r4.o;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForLoading.java", 46)
     _r0.o = __NEW_java_io_EmulatedFields();
@@ -448,6 +449,7 @@ void java_io_EmulatedFieldsForLoading___INIT____java_io_ObjectStreamClass(JAVA_O
     _r2.o = java_io_ObjectStreamClass_fields__(_r4.o);
     XMLVM_CHECK_NPE(0)
     java_io_EmulatedFields___INIT____java_io_ObjectStreamField_1ARRAY_java_io_ObjectStreamField_1ARRAY(_r0.o, _r1.o, _r2.o);
+    XMLVM_CHECK_NPE(3)
     ((java_io_EmulatedFieldsForLoading*) _r3.o)->fields.java_io_EmulatedFieldsForLoading.emulatedFields_ = _r0.o;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForLoading.java", 48)
     XMLVM_EXIT_METHOD()
@@ -465,6 +467,7 @@ JAVA_BOOLEAN java_io_EmulatedFieldsForLoading_defaulted___java_lang_String(JAVA_
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForLoading.java", 68)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFieldsForLoading*) _r1.o)->fields.java_io_EmulatedFieldsForLoading.emulatedFields_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_io_EmulatedFields_defaulted___java_lang_String(_r0.o, _r2.o);
@@ -481,6 +484,7 @@ JAVA_OBJECT java_io_EmulatedFieldsForLoading_emulatedFields__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForLoading.java", 79)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFieldsForLoading*) _r1.o)->fields.java_io_EmulatedFieldsForLoading.emulatedFields_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -499,6 +503,7 @@ JAVA_BYTE java_io_EmulatedFieldsForLoading_get___java_lang_String_byte(JAVA_OBJE
     _r2.o = n1;
     _r3.i = n2;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForLoading.java", 102)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFieldsForLoading*) _r1.o)->fields.java_io_EmulatedFieldsForLoading.emulatedFields_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_io_EmulatedFields_get___java_lang_String_byte(_r0.o, _r2.o, _r3.i);
@@ -519,6 +524,7 @@ JAVA_CHAR java_io_EmulatedFieldsForLoading_get___java_lang_String_char(JAVA_OBJE
     _r2.o = n1;
     _r3.i = n2;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForLoading.java", 125)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFieldsForLoading*) _r1.o)->fields.java_io_EmulatedFieldsForLoading.emulatedFields_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_io_EmulatedFields_get___java_lang_String_char(_r0.o, _r2.o, _r3.i);
@@ -541,6 +547,7 @@ JAVA_DOUBLE java_io_EmulatedFieldsForLoading_get___java_lang_String_double(JAVA_
     _r3.o = n1;
     _r4.d = n2;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForLoading.java", 148)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_EmulatedFieldsForLoading*) _r2.o)->fields.java_io_EmulatedFieldsForLoading.emulatedFields_;
     XMLVM_CHECK_NPE(0)
     _r0.d = java_io_EmulatedFields_get___java_lang_String_double(_r0.o, _r3.o, _r4.d);
@@ -561,6 +568,7 @@ JAVA_FLOAT java_io_EmulatedFieldsForLoading_get___java_lang_String_float(JAVA_OB
     _r2.o = n1;
     _r3.f = n2;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForLoading.java", 171)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFieldsForLoading*) _r1.o)->fields.java_io_EmulatedFieldsForLoading.emulatedFields_;
     XMLVM_CHECK_NPE(0)
     _r0.f = java_io_EmulatedFields_get___java_lang_String_float(_r0.o, _r2.o, _r3.f);
@@ -581,6 +589,7 @@ JAVA_INT java_io_EmulatedFieldsForLoading_get___java_lang_String_int(JAVA_OBJECT
     _r2.o = n1;
     _r3.i = n2;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForLoading.java", 194)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFieldsForLoading*) _r1.o)->fields.java_io_EmulatedFieldsForLoading.emulatedFields_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_io_EmulatedFields_get___java_lang_String_int(_r0.o, _r2.o, _r3.i);
@@ -603,6 +612,7 @@ JAVA_LONG java_io_EmulatedFieldsForLoading_get___java_lang_String_long(JAVA_OBJE
     _r3.o = n1;
     _r4.l = n2;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForLoading.java", 217)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_io_EmulatedFieldsForLoading*) _r2.o)->fields.java_io_EmulatedFieldsForLoading.emulatedFields_;
     XMLVM_CHECK_NPE(0)
     _r0.l = java_io_EmulatedFields_get___java_lang_String_long(_r0.o, _r3.o, _r4.l);
@@ -623,6 +633,7 @@ JAVA_OBJECT java_io_EmulatedFieldsForLoading_get___java_lang_String_java_lang_Ob
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForLoading.java", 240)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFieldsForLoading*) _r1.o)->fields.java_io_EmulatedFieldsForLoading.emulatedFields_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_io_EmulatedFields_get___java_lang_String_java_lang_Object(_r0.o, _r2.o, _r3.o);
@@ -643,6 +654,7 @@ JAVA_SHORT java_io_EmulatedFieldsForLoading_get___java_lang_String_short(JAVA_OB
     _r2.o = n1;
     _r3.i = n2;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForLoading.java", 263)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFieldsForLoading*) _r1.o)->fields.java_io_EmulatedFieldsForLoading.emulatedFields_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_io_EmulatedFields_get___java_lang_String_short(_r0.o, _r2.o, _r3.i);
@@ -663,6 +675,7 @@ JAVA_BOOLEAN java_io_EmulatedFieldsForLoading_get___java_lang_String_boolean(JAV
     _r2.o = n1;
     _r3.i = n2;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForLoading.java", 287)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFieldsForLoading*) _r1.o)->fields.java_io_EmulatedFieldsForLoading.emulatedFields_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_io_EmulatedFields_get___java_lang_String_boolean(_r0.o, _r2.o, _r3.i);
@@ -679,6 +692,7 @@ JAVA_OBJECT java_io_EmulatedFieldsForLoading_getObjectStreamClass__(JAVA_OBJECT 
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("EmulatedFieldsForLoading.java", 298)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_io_EmulatedFieldsForLoading*) _r1.o)->fields.java_io_EmulatedFieldsForLoading.streamClass_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

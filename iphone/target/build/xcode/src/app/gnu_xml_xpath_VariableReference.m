@@ -293,8 +293,10 @@ void gnu_xml_xpath_VariableReference___INIT____javax_xml_xpath_XPathVariableReso
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_Expr___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("VariableReference.java", 56)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_VariableReference*) _r0.o)->fields.gnu_xml_xpath_VariableReference.resolver_ = _r1.o;
     XMLVM_SOURCE_POSITION("VariableReference.java", 57)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_VariableReference*) _r0.o)->fields.gnu_xml_xpath_VariableReference.name_ = _r2.o;
     XMLVM_SOURCE_POSITION("VariableReference.java", 58)
     XMLVM_EXIT_METHOD()
@@ -317,9 +319,11 @@ JAVA_OBJECT gnu_xml_xpath_VariableReference_evaluate___org_w3c_dom_Node_int_int(
     _r4.i = n2;
     _r5.i = n3;
     XMLVM_SOURCE_POSITION("VariableReference.java", 62)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_xpath_VariableReference*) _r2.o)->fields.gnu_xml_xpath_VariableReference.resolver_;
     if (_r0.o == JAVA_NULL) goto label30;
     XMLVM_SOURCE_POSITION("VariableReference.java", 64)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_xpath_VariableReference*) _r2.o)->fields.gnu_xml_xpath_VariableReference.resolver_;
 
     
@@ -327,11 +331,13 @@ JAVA_OBJECT gnu_xml_xpath_VariableReference_evaluate___org_w3c_dom_Node_int_int(
     XMLVM_RED_CLASS_DEPENDENCY();
     if (_r0.i == 0) goto label21;
     XMLVM_SOURCE_POSITION("VariableReference.java", 67)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_xpath_VariableReference*) _r2.o)->fields.gnu_xml_xpath_VariableReference.resolver_;
 
     
     // Red class access removed: gnu.xml.transform.Bindings::check-cast
     XMLVM_RED_CLASS_DEPENDENCY();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_VariableReference*) _r2.o)->fields.gnu_xml_xpath_VariableReference.name_;
 
     
@@ -342,7 +348,9 @@ JAVA_OBJECT gnu_xml_xpath_VariableReference_evaluate___org_w3c_dom_Node_int_int(
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label21:;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_xpath_VariableReference*) _r2.o)->fields.gnu_xml_xpath_VariableReference.resolver_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_xpath_VariableReference*) _r2.o)->fields.gnu_xml_xpath_VariableReference.name_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_xpath_XPathVariableResolver_resolveVariable___javax_xml_namespace_QName])(_r0.o, _r1.o);
@@ -370,6 +378,7 @@ JAVA_OBJECT gnu_xml_xpath_VariableReference_clone___java_lang_Object(JAVA_OBJECT
     _r3.o = me;
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("VariableReference.java", 76)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((gnu_xml_xpath_VariableReference*) _r3.o)->fields.gnu_xml_xpath_VariableReference.resolver_;
     XMLVM_SOURCE_POSITION("VariableReference.java", 77)
     if (!__TIB_javax_xml_xpath_XPathVariableResolver.classInitialized) __INIT_javax_xml_xpath_XPathVariableResolver();
@@ -381,6 +390,7 @@ JAVA_OBJECT gnu_xml_xpath_VariableReference_clone___java_lang_Object(JAVA_OBJECT
     label9:;
     XMLVM_SOURCE_POSITION("VariableReference.java", 81)
     _r1.o = __NEW_gnu_xml_xpath_VariableReference();
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((gnu_xml_xpath_VariableReference*) _r3.o)->fields.gnu_xml_xpath_VariableReference.name_;
     XMLVM_CHECK_NPE(1)
     gnu_xml_xpath_VariableReference___INIT____javax_xml_xpath_XPathVariableResolver_javax_xml_namespace_QName(_r1.o, _r0.o, _r2.o);
@@ -399,6 +409,7 @@ JAVA_BOOLEAN gnu_xml_xpath_VariableReference_references___javax_xml_namespace_QN
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("VariableReference.java", 86)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_VariableReference*) _r1.o)->fields.gnu_xml_xpath_VariableReference.name_;
     //javax_xml_namespace_QName_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -424,6 +435,7 @@ JAVA_OBJECT gnu_xml_xpath_VariableReference_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder___INIT____java_lang_String(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("VariableReference.java", 92)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_xpath_VariableReference*) _r3.o)->fields.gnu_xml_xpath_VariableReference.name_;
     XMLVM_CHECK_NPE(1)
     _r1.o = javax_xml_namespace_QName_getPrefix__(_r1.o);
@@ -445,6 +457,7 @@ JAVA_OBJECT gnu_xml_xpath_VariableReference_toString__(JAVA_OBJECT me)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((gnu_java_lang_CPStringBuilder*) _r0.o)->tib->vtable[6])(_r0.o, _r1.i);
     label31:;
     XMLVM_SOURCE_POSITION("VariableReference.java", 98)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_xpath_VariableReference*) _r3.o)->fields.gnu_xml_xpath_VariableReference.name_;
     XMLVM_CHECK_NPE(1)
     _r1.o = javax_xml_namespace_QName_getLocalPart__(_r1.o);

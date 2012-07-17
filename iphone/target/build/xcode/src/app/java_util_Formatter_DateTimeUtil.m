@@ -729,6 +729,7 @@ void java_util_Formatter_DateTimeUtil___INIT____java_util_Locale(JAVA_OBJECT me,
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2201)
+    XMLVM_CHECK_NPE(0)
     ((java_util_Formatter_DateTimeUtil*) _r0.o)->fields.java_util_Formatter_DateTimeUtil.locale_ = _r1.o;
     XMLVM_SOURCE_POSITION("Formatter.java", 2202)
     XMLVM_EXIT_METHOD()
@@ -752,8 +753,10 @@ void java_util_Formatter_DateTimeUtil_transform___java_util_Formatter_FormatToke
     _r5.o = n2;
     _r6.o = n3;
     XMLVM_SOURCE_POSITION("Formatter.java", 2206)
+    XMLVM_CHECK_NPE(3)
     ((java_util_Formatter_DateTimeUtil*) _r3.o)->fields.java_util_Formatter_DateTimeUtil.result_ = _r6.o;
     XMLVM_SOURCE_POSITION("Formatter.java", 2207)
+    XMLVM_CHECK_NPE(3)
     ((java_util_Formatter_DateTimeUtil*) _r3.o)->fields.java_util_Formatter_DateTimeUtil.calendar_ = _r5.o;
     XMLVM_SOURCE_POSITION("Formatter.java", 2208)
     XMLVM_CHECK_NPE(4)
@@ -981,11 +984,13 @@ void java_util_Formatter_DateTimeUtil_transform_e__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2342)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     _r1.i = 5;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Calendar_get___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2343)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder_append___int(_r1.o, _r0.i);
@@ -1006,11 +1011,13 @@ void java_util_Formatter_DateTimeUtil_transform_d__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2347)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     _r1.i = 5;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Calendar_get___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2348)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     _r2.l = (JAVA_LONG) _r0.i;
     _r0.i = 2;
@@ -1036,12 +1043,14 @@ void java_util_Formatter_DateTimeUtil_transform_m__(JAVA_OBJECT me)
     _r5.o = me;
     _r4.i = 2;
     XMLVM_SOURCE_POSITION("Formatter.java", 2352)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r5.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Calendar_get___int(_r0.o, _r4.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2355)
     _r0.i = _r0.i + 1;
     XMLVM_SOURCE_POSITION("Formatter.java", 2356)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r5.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     _r2.l = (JAVA_LONG) _r0.i;
     _r0.o = java_util_Formatter_DateTimeUtil_paddingZeros___long_int(_r2.l, _r4.i);
@@ -1064,11 +1073,13 @@ void java_util_Formatter_DateTimeUtil_transform_j__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2360)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     _r1.i = 6;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Calendar_get___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2361)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     _r2.l = (JAVA_LONG) _r0.i;
     _r0.i = 3;
@@ -1092,6 +1103,7 @@ void java_util_Formatter_DateTimeUtil_transform_y__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2365)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     _r1.i = 1;
     XMLVM_CHECK_NPE(0)
@@ -1099,6 +1111,7 @@ void java_util_Formatter_DateTimeUtil_transform_y__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Formatter.java", 2366)
     _r0.i = _r0.i % 100;
     XMLVM_SOURCE_POSITION("Formatter.java", 2367)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     _r2.l = (JAVA_LONG) _r0.i;
     _r0.i = 2;
@@ -1122,11 +1135,13 @@ void java_util_Formatter_DateTimeUtil_transform_Y__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2371)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     _r1.i = 1;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Calendar_get___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2372)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     _r2.l = (JAVA_LONG) _r0.i;
     _r0.i = 4;
@@ -1150,6 +1165,7 @@ void java_util_Formatter_DateTimeUtil_transform_C__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2376)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     _r1.i = 1;
     XMLVM_CHECK_NPE(0)
@@ -1157,6 +1173,7 @@ void java_util_Formatter_DateTimeUtil_transform_C__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Formatter.java", 2377)
     _r0.i = _r0.i / 100;
     XMLVM_SOURCE_POSITION("Formatter.java", 2378)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     _r2.l = (JAVA_LONG) _r0.i;
     _r0.i = 2;
@@ -1179,11 +1196,13 @@ void java_util_Formatter_DateTimeUtil_transform_a__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2382)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r3.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     _r1.i = 7;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Calendar_get___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2383)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r3.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     XMLVM_CHECK_NPE(3)
     _r2.o = java_util_Formatter_DateTimeUtil_getDateFormatSymbols__(_r3.o);
@@ -1210,11 +1229,13 @@ void java_util_Formatter_DateTimeUtil_transform_A__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2387)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r3.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     _r1.i = 7;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Calendar_get___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2388)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r3.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     XMLVM_CHECK_NPE(3)
     _r2.o = java_util_Formatter_DateTimeUtil_getDateFormatSymbols__(_r3.o);
@@ -1241,11 +1262,13 @@ void java_util_Formatter_DateTimeUtil_transform_b__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2392)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r3.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     _r1.i = 2;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Calendar_get___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2393)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r3.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     XMLVM_CHECK_NPE(3)
     _r2.o = java_util_Formatter_DateTimeUtil_getDateFormatSymbols__(_r3.o);
@@ -1272,11 +1295,13 @@ void java_util_Formatter_DateTimeUtil_transform_B__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2397)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r3.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     _r1.i = 2;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Calendar_get___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2398)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r3.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     XMLVM_CHECK_NPE(3)
     _r2.o = java_util_Formatter_DateTimeUtil_getDateFormatSymbols__(_r3.o);
@@ -1303,10 +1328,12 @@ void java_util_Formatter_DateTimeUtil_transform_Q__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2402)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r3.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     XMLVM_CHECK_NPE(0)
     _r0.l = java_util_Calendar_getTimeInMillis__(_r0.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2403)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_Formatter_DateTimeUtil*) _r3.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuilder_append___long(_r2.o, _r0.l);
@@ -1327,6 +1354,7 @@ void java_util_Formatter_DateTimeUtil_transform_s__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2407)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     XMLVM_CHECK_NPE(0)
     _r0.l = java_util_Calendar_getTimeInMillis__(_r0.o);
@@ -1334,6 +1362,7 @@ void java_util_Formatter_DateTimeUtil_transform_s__(JAVA_OBJECT me)
     _r2.l = 1000;
     _r0.l = _r0.l / _r2.l;
     XMLVM_SOURCE_POSITION("Formatter.java", 2409)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     XMLVM_CHECK_NPE(2)
     java_lang_StringBuilder_append___long(_r2.o, _r0.l);
@@ -1355,12 +1384,15 @@ void java_util_Formatter_DateTimeUtil_transform_Z__(JAVA_OBJECT me)
     XMLVMElem _r5;
     _r5.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2413)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r5.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_util_Calendar_getTimeZone__(_r0.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2414)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r5.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     XMLVM_SOURCE_POSITION("Formatter.java", 2416)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_util_Formatter_DateTimeUtil*) _r5.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     XMLVM_CHECK_NPE(2)
     _r2.o = java_util_Calendar_getTime__(_r2.o);
@@ -1369,6 +1401,7 @@ void java_util_Formatter_DateTimeUtil_transform_Z__(JAVA_OBJECT me)
     _r2.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_TimeZone*) _r0.o)->tib->vtable[11])(_r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2417)
     _r3.i = 0;
+    XMLVM_CHECK_NPE(5)
     _r4.o = ((java_util_Formatter_DateTimeUtil*) _r5.o)->fields.java_util_Formatter_DateTimeUtil.locale_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_util_TimeZone_getDisplayName___boolean_int_java_util_Locale(_r0.o, _r2.i, _r3.i, _r4.o);
@@ -1391,6 +1424,7 @@ void java_util_Formatter_DateTimeUtil_transform_z__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2421)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     _r1.i = 15;
     XMLVM_CHECK_NPE(0)
@@ -1403,6 +1437,7 @@ void java_util_Formatter_DateTimeUtil_transform_z__(JAVA_OBJECT me)
     if (_r0.i < 0) goto label23;
     XMLVM_SOURCE_POSITION("Formatter.java", 2424)
     XMLVM_SOURCE_POSITION("Formatter.java", 2425)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     _r2.i = 43;
     //java_lang_StringBuilder_append___char[21]
@@ -1410,6 +1445,7 @@ void java_util_Formatter_DateTimeUtil_transform_z__(JAVA_OBJECT me)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((java_lang_StringBuilder*) _r1.o)->tib->vtable[21])(_r1.o, _r2.i);
     label23:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2427)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     _r2.l = (JAVA_LONG) _r0.i;
     _r0.i = 4;
@@ -1433,6 +1469,7 @@ void java_util_Formatter_DateTimeUtil_transform_p___boolean(JAVA_OBJECT me, JAVA
     _r2.o = me;
     _r3.i = n1;
     XMLVM_SOURCE_POSITION("Formatter.java", 2431)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     _r1.i = 9;
     XMLVM_CHECK_NPE(0)
@@ -1448,11 +1485,13 @@ void java_util_Formatter_DateTimeUtil_transform_p___boolean(JAVA_OBJECT me, JAVA
     XMLVM_SOURCE_POSITION("Formatter.java", 2433)
     if (_r3.i == 0) goto label26;
     XMLVM_SOURCE_POSITION("Formatter.java", 2434)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.locale_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_toLowerCase___java_util_Locale(_r0.o, _r1.o);
     label26:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2436)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder_append___java_lang_String(_r1.o, _r0.o);
@@ -1473,6 +1512,7 @@ void java_util_Formatter_DateTimeUtil_transform_N__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2441)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     _r1.i = 14;
     XMLVM_CHECK_NPE(0)
@@ -1481,6 +1521,7 @@ void java_util_Formatter_DateTimeUtil_transform_N__(JAVA_OBJECT me)
     _r2.l = 1000000;
     _r0.l = _r0.l * _r2.l;
     XMLVM_SOURCE_POSITION("Formatter.java", 2442)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     _r3.i = 9;
     _r0.o = java_util_Formatter_DateTimeUtil_paddingZeros___long_int(_r0.l, _r3.i);
@@ -1503,11 +1544,13 @@ void java_util_Formatter_DateTimeUtil_transform_L__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2446)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     _r1.i = 14;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Calendar_get___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2447)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     _r2.l = (JAVA_LONG) _r0.i;
     _r0.i = 3;
@@ -1531,11 +1574,13 @@ void java_util_Formatter_DateTimeUtil_transform_S__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2451)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     _r1.i = 13;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Calendar_get___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2452)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     _r2.l = (JAVA_LONG) _r0.i;
     _r0.i = 2;
@@ -1559,11 +1604,13 @@ void java_util_Formatter_DateTimeUtil_transform_M__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2456)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     _r1.i = 12;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Calendar_get___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2457)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     _r2.l = (JAVA_LONG) _r0.i;
     _r0.i = 2;
@@ -1585,6 +1632,7 @@ void java_util_Formatter_DateTimeUtil_transform_l__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2461)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     _r1.i = 10;
     XMLVM_CHECK_NPE(0)
@@ -1595,6 +1643,7 @@ void java_util_Formatter_DateTimeUtil_transform_l__(JAVA_OBJECT me)
     _r0.i = 12;
     label12:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2465)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder_append___int(_r1.o, _r0.i);
@@ -1613,11 +1662,13 @@ void java_util_Formatter_DateTimeUtil_transform_k__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2469)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     _r1.i = 11;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Calendar_get___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2470)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     XMLVM_CHECK_NPE(1)
     java_lang_StringBuilder_append___int(_r1.o, _r0.i);
@@ -1638,6 +1689,7 @@ void java_util_Formatter_DateTimeUtil_transform_I__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2474)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     _r1.i = 10;
     XMLVM_CHECK_NPE(0)
@@ -1648,6 +1700,7 @@ void java_util_Formatter_DateTimeUtil_transform_I__(JAVA_OBJECT me)
     _r0.i = 12;
     label12:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2478)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     _r2.l = (JAVA_LONG) _r0.i;
     _r0.i = 2;
@@ -1671,11 +1724,13 @@ void java_util_Formatter_DateTimeUtil_transform_H__(JAVA_OBJECT me)
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2482)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.calendar_;
     _r1.i = 11;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_Calendar_get___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Formatter.java", 2483)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r4.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     _r2.l = (JAVA_LONG) _r0.i;
     _r0.i = 2;
@@ -1700,6 +1755,7 @@ void java_util_Formatter_DateTimeUtil_transform_R__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_util_Formatter_DateTimeUtil_transform_H__(_r2.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2488)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     _r1.i = 58;
     //java_lang_StringBuilder_append___char[21]
@@ -1727,6 +1783,7 @@ void java_util_Formatter_DateTimeUtil_transform_T__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_util_Formatter_DateTimeUtil_transform_H__(_r2.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2494)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -1735,6 +1792,7 @@ void java_util_Formatter_DateTimeUtil_transform_T__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_util_Formatter_DateTimeUtil_transform_M__(_r2.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2496)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -1761,6 +1819,7 @@ void java_util_Formatter_DateTimeUtil_transform_r__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_util_Formatter_DateTimeUtil_transform_I__(_r2.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2502)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -1769,6 +1828,7 @@ void java_util_Formatter_DateTimeUtil_transform_r__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_util_Formatter_DateTimeUtil_transform_M__(_r2.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2504)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -1777,6 +1837,7 @@ void java_util_Formatter_DateTimeUtil_transform_r__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_util_Formatter_DateTimeUtil_transform_S__(_r2.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2506)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     _r1.i = 32;
     //java_lang_StringBuilder_append___char[21]
@@ -1805,6 +1866,7 @@ void java_util_Formatter_DateTimeUtil_transform_D__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_util_Formatter_DateTimeUtil_transform_m__(_r2.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2512)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -1813,6 +1875,7 @@ void java_util_Formatter_DateTimeUtil_transform_D__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_util_Formatter_DateTimeUtil_transform_d__(_r2.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2514)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -1839,6 +1902,7 @@ void java_util_Formatter_DateTimeUtil_transform_F__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_util_Formatter_DateTimeUtil_transform_Y__(_r2.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2520)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -1847,6 +1911,7 @@ void java_util_Formatter_DateTimeUtil_transform_F__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_util_Formatter_DateTimeUtil_transform_m__(_r2.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2522)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -1873,6 +1938,7 @@ void java_util_Formatter_DateTimeUtil_transform_c__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_util_Formatter_DateTimeUtil_transform_a__(_r2.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2528)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -1881,6 +1947,7 @@ void java_util_Formatter_DateTimeUtil_transform_c__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_util_Formatter_DateTimeUtil_transform_b__(_r2.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2530)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -1889,6 +1956,7 @@ void java_util_Formatter_DateTimeUtil_transform_c__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_util_Formatter_DateTimeUtil_transform_d__(_r2.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2532)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -1897,6 +1965,7 @@ void java_util_Formatter_DateTimeUtil_transform_c__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_util_Formatter_DateTimeUtil_transform_T__(_r2.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2534)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -1905,6 +1974,7 @@ void java_util_Formatter_DateTimeUtil_transform_c__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     java_util_Formatter_DateTimeUtil_transform_Z__(_r2.o);
     XMLVM_SOURCE_POSITION("Formatter.java", 2536)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.result_;
     //java_lang_StringBuilder_append___char[21]
     XMLVM_CHECK_NPE(0)
@@ -1992,16 +2062,20 @@ JAVA_OBJECT java_util_Formatter_DateTimeUtil_getDateFormatSymbols__(JAVA_OBJECT 
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Formatter.java", 2559)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.dateFormatSymbols_;
     if (_r0.o != JAVA_NULL) goto label13;
     XMLVM_SOURCE_POSITION("Formatter.java", 2560)
     _r0.o = __NEW_java_text_DateFormatSymbols();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.locale_;
     XMLVM_CHECK_NPE(0)
     java_text_DateFormatSymbols___INIT____java_util_Locale(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(2)
     ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.dateFormatSymbols_ = _r0.o;
     label13:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2562)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Formatter_DateTimeUtil*) _r2.o)->fields.java_util_Formatter_DateTimeUtil.dateFormatSymbols_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

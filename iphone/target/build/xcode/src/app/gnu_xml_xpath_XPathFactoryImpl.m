@@ -383,6 +383,7 @@ void gnu_xml_xpath_XPathFactoryImpl_setXPathVariableResolver___javax_xml_xpath_X
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("XPathFactoryImpl.java", 77)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_XPathFactoryImpl*) _r0.o)->fields.gnu_xml_xpath_XPathFactoryImpl.variableResolver_ = _r1.o;
     XMLVM_SOURCE_POSITION("XPathFactoryImpl.java", 78)
     XMLVM_EXIT_METHOD()
@@ -399,6 +400,7 @@ void gnu_xml_xpath_XPathFactoryImpl_setXPathFunctionResolver___javax_xml_xpath_X
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("XPathFactoryImpl.java", 82)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_xpath_XPathFactoryImpl*) _r0.o)->fields.gnu_xml_xpath_XPathFactoryImpl.functionResolver_ = _r1.o;
     XMLVM_SOURCE_POSITION("XPathFactoryImpl.java", 83)
     XMLVM_EXIT_METHOD()
@@ -419,7 +421,9 @@ JAVA_OBJECT gnu_xml_xpath_XPathFactoryImpl_newXPath__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("XPathFactoryImpl.java", 87)
     _r0.o = __NEW_gnu_xml_xpath_XPathImpl();
     _r1.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_xpath_XPathFactoryImpl*) _r4.o)->fields.gnu_xml_xpath_XPathFactoryImpl.variableResolver_;
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((gnu_xml_xpath_XPathFactoryImpl*) _r4.o)->fields.gnu_xml_xpath_XPathFactoryImpl.functionResolver_;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_XPathImpl___INIT____javax_xml_namespace_NamespaceContext_javax_xml_xpath_XPathVariableResolver_javax_xml_xpath_XPathFunctionResolver(_r0.o, _r1.o, _r2.o, _r3.o);

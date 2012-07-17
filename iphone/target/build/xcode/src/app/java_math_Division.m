@@ -1149,7 +1149,9 @@ JAVA_INT java_math_Division_remainder___java_math_BigInteger_int(JAVA_OBJECT n1,
     _r2.o = n1;
     _r3.i = n2;
     XMLVM_SOURCE_POSITION("Division.java", 253)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_math_BigInteger*) _r2.o)->fields.java_math_BigInteger.digits_;
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_math_BigInteger*) _r2.o)->fields.java_math_BigInteger.numberLength_;
     _r0.i = java_math_Division_remainderArrayByInt___int_1ARRAY_int_int(_r0.o, _r1.i, _r3.i);
     XMLVM_EXIT_METHOD()
@@ -1278,10 +1280,13 @@ JAVA_OBJECT java_math_Division_divideAndRemainderByInteger___java_math_BigIntege
     _r8.i = 0;
     _r7.i = 1;
     XMLVM_SOURCE_POSITION("Division.java", 311)
+    XMLVM_CHECK_NPE(10)
     _r0.o = ((java_math_BigInteger*) _r10.o)->fields.java_math_BigInteger.digits_;
     XMLVM_SOURCE_POSITION("Division.java", 312)
+    XMLVM_CHECK_NPE(10)
     _r1.i = ((java_math_BigInteger*) _r10.o)->fields.java_math_BigInteger.numberLength_;
     XMLVM_SOURCE_POSITION("Division.java", 313)
+    XMLVM_CHECK_NPE(10)
     _r2.i = ((java_math_BigInteger*) _r10.o)->fields.java_math_BigInteger.sign_;
     XMLVM_SOURCE_POSITION("Division.java", 314)
     if (_r1.i != _r7.i) goto label47;
@@ -1528,12 +1533,15 @@ JAVA_OBJECT java_math_Division_gcdBinary___java_math_BigInteger_java_math_BigInt
     label27:;
     XMLVM_SOURCE_POSITION("Division.java", 400)
     XMLVM_SOURCE_POSITION("Division.java", 407)
+    XMLVM_CHECK_NPE(0)
     _r3.i = ((java_math_BigInteger*) _r0.o)->fields.java_math_BigInteger.numberLength_;
     if (_r3.i == _r9.i) goto label42;
     XMLVM_SOURCE_POSITION("Division.java", 408)
+    XMLVM_CHECK_NPE(0)
     _r3.i = ((java_math_BigInteger*) _r0.o)->fields.java_math_BigInteger.numberLength_;
     _r4.i = 2;
     if (_r3.i != _r4.i) goto label63;
+    XMLVM_CHECK_NPE(0)
     _r3.o = ((java_math_BigInteger*) _r0.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r9.i);
@@ -1558,8 +1566,10 @@ JAVA_OBJECT java_math_Division_gcdBinary___java_math_BigInteger_java_math_BigInt
     return _r0.o;
     label63:;
     XMLVM_SOURCE_POSITION("Division.java", 416)
+    XMLVM_CHECK_NPE(0)
     _r3.i = ((java_math_BigInteger*) _r0.o)->fields.java_math_BigInteger.numberLength_;
     _r3.d = (JAVA_DOUBLE) _r3.i;
+    XMLVM_CHECK_NPE(1)
     _r5.i = ((java_math_BigInteger*) _r1.o)->fields.java_math_BigInteger.numberLength_;
     _r5.d = (JAVA_DOUBLE) _r5.i;
     _r7.d = 1.2;
@@ -1579,6 +1589,7 @@ JAVA_OBJECT java_math_Division_gcdBinary___java_math_BigInteger_java_math_BigInt
     java_math_BitLevel_inplaceShiftRight___java_math_BigInteger_int(_r0.o, _r3.i);
     label96:;
     XMLVM_SOURCE_POSITION("Division.java", 433)
+    XMLVM_CHECK_NPE(0)
     _r3.i = ((java_math_BigInteger*) _r0.o)->fields.java_math_BigInteger.sign_;
     if (_r3.i != 0) goto label119;
     _r0 = _r1;
@@ -1699,6 +1710,7 @@ JAVA_OBJECT java_math_Division_modInverseMontgomery___java_math_BigInteger_java_
     // "math.19"
     _r9.o = xmlvm_create_java_string_from_pool(176);
     XMLVM_SOURCE_POSITION("Division.java", 482)
+    XMLVM_CHECK_NPE(11)
     _r0.i = ((java_math_BigInteger*) _r11.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i != 0) goto label20;
     XMLVM_SOURCE_POSITION("Division.java", 485)
@@ -1722,6 +1734,7 @@ JAVA_OBJECT java_math_Division_modInverseMontgomery___java_math_BigInteger_java_
     return _r0.o;
     label31:;
     XMLVM_SOURCE_POSITION("Division.java", 494)
+    XMLVM_CHECK_NPE(12)
     _r0.i = ((java_math_BigInteger*) _r12.o)->fields.java_math_BigInteger.numberLength_;
     _r0.i = _r0.i * 32;
     XMLVM_SOURCE_POSITION("Division.java", 497)
@@ -1731,7 +1744,9 @@ JAVA_OBJECT java_math_Division_modInverseMontgomery___java_math_BigInteger_java_
     XMLVM_CHECK_NPE(11)
     _r2.o = java_math_BigInteger_copy__(_r11.o);
     XMLVM_SOURCE_POSITION("Division.java", 499)
+    XMLVM_CHECK_NPE(2)
     _r3.i = ((java_math_BigInteger*) _r2.o)->fields.java_math_BigInteger.numberLength_;
+    XMLVM_CHECK_NPE(1)
     _r4.i = ((java_math_BigInteger*) _r1.o)->fields.java_math_BigInteger.numberLength_;
     _r3.i = java_lang_Math_max___int_int(_r3.i, _r4.i);
     XMLVM_SOURCE_POSITION("Division.java", 500)
@@ -1749,6 +1764,7 @@ JAVA_OBJECT java_math_Division_modInverseMontgomery___java_math_BigInteger_java_
     XMLVM_CHECK_NPE(5)
     java_math_BigInteger___INIT____int_int_int_1ARRAY(_r5.o, _r7.i, _r7.i, _r3.o);
     XMLVM_SOURCE_POSITION("Division.java", 502)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r8.i);
@@ -1772,6 +1788,7 @@ JAVA_OBJECT java_math_Division_modInverseMontgomery___java_math_BigInteger_java_
     _r3.i = _r3.i + _r8.i;
     label94:;
     XMLVM_SOURCE_POSITION("Division.java", 523)
+    XMLVM_CHECK_NPE(4)
     ((java_math_BigInteger*) _r4.o)->fields.java_math_BigInteger.sign_ = _r7.i;
     label96:;
     XMLVM_SOURCE_POSITION("Division.java", 524)
@@ -1903,6 +1920,7 @@ JAVA_INT java_math_Division_calcN___java_math_BigInteger(JAVA_OBJECT n1)
     _r14.o = n1;
     _r10.l = 4294967295;
     XMLVM_SOURCE_POSITION("Division.java", 573)
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_math_BigInteger*) _r14.o)->fields.java_math_BigInteger.digits_;
     _r1.i = 0;
     XMLVM_CHECK_NPE(0)
@@ -2042,6 +2060,7 @@ JAVA_OBJECT java_math_Division_modInverseHars___java_math_BigInteger_java_math_B
     XMLVM_SOURCE_POSITION("Division.java", 627)
     if (_r1.i > _r7.i) goto label50;
     XMLVM_SOURCE_POSITION("Division.java", 652)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_math_BigInteger*) _r4.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i != 0) goto label118;
     XMLVM_SOURCE_POSITION("Division.java", 653)
@@ -2060,7 +2079,9 @@ JAVA_OBJECT java_math_Division_modInverseHars___java_math_BigInteger_java_math_B
     goto label17;
     label50:;
     XMLVM_SOURCE_POSITION("Division.java", 628)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.sign_;
+    XMLVM_CHECK_NPE(4)
     _r6.i = ((java_math_BigInteger*) _r4.o)->fields.java_math_BigInteger.sign_;
     if (_r1.i != _r6.i) goto label101;
     XMLVM_SOURCE_POSITION("Division.java", 629)
@@ -2113,6 +2134,7 @@ JAVA_OBJECT java_math_Division_modInverseHars___java_math_BigInteger_java_math_B
     goto label72;
     label118:;
     XMLVM_SOURCE_POSITION("Division.java", 655)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((java_math_BigInteger*) _r4.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i >= 0) goto label146;
     XMLVM_SOURCE_POSITION("Division.java", 656)
@@ -2129,6 +2151,7 @@ JAVA_OBJECT java_math_Division_modInverseHars___java_math_BigInteger_java_math_B
     goto label42;
     label137:;
     XMLVM_SOURCE_POSITION("Division.java", 661)
+    XMLVM_CHECK_NPE(0)
     _r1.i = ((java_math_BigInteger*) _r0.o)->fields.java_math_BigInteger.sign_;
     if (_r1.i >= 0) goto label42;
     XMLVM_SOURCE_POSITION("Division.java", 662)
@@ -2292,6 +2315,7 @@ JAVA_OBJECT java_math_Division_oddModPow___java_math_BigInteger_java_math_BigInt
     _r6.o = n2;
     _r7.o = n3;
     XMLVM_SOURCE_POSITION("Division.java", 729)
+    XMLVM_CHECK_NPE(7)
     _r0.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     _r0.i = _r0.i << 5;
     XMLVM_SOURCE_POSITION("Division.java", 731)
@@ -2306,6 +2330,7 @@ JAVA_OBJECT java_math_Division_oddModPow___java_math_BigInteger_java_math_BigInt
     XMLVM_SOURCE_POSITION("Division.java", 737)
     _r2.i = java_math_Division_calcN___java_math_BigInteger(_r7.o);
     XMLVM_SOURCE_POSITION("Division.java", 738)
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     _r4.i = 1;
     if (_r3.i != _r4.i) goto label40;
@@ -2360,6 +2385,7 @@ JAVA_OBJECT java_math_Division_evenModPow___java_math_BigInteger_java_math_BigIn
     XMLVM_SOURCE_POSITION("Division.java", 773)
     java_math_Division_inplaceModPow2___java_math_BigInteger_int(_r3.o, _r0.i);
     XMLVM_SOURCE_POSITION("Division.java", 774)
+    XMLVM_CHECK_NPE(3)
     _r4.i = ((java_math_BigInteger*) _r3.o)->fields.java_math_BigInteger.sign_;
     if (_r4.i >= 0) goto label52;
     XMLVM_SOURCE_POSITION("Division.java", 775)
@@ -2485,10 +2511,12 @@ void java_math_Division_monReduction___int_1ARRAY_java_math_BigInteger_int(JAVA_
     _r20.i = n3;
     XMLVM_SOURCE_POSITION("Division.java", 818)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_math_BigInteger*) _r0.o)->fields.java_math_BigInteger.digits_;
     _r4 = _r0;
     XMLVM_SOURCE_POSITION("Division.java", 819)
     _r0 = _r19;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_math_BigInteger*) _r0.o)->fields.java_math_BigInteger.numberLength_;
     _r19 = _r0;
     XMLVM_SOURCE_POSITION("Division.java", 820)
@@ -2620,6 +2648,7 @@ JAVA_OBJECT java_math_Division_monPro___java_math_BigInteger_java_math_BigIntege
     _r8.o = n3;
     _r9.i = n4;
     XMLVM_SOURCE_POSITION("Division.java", 858)
+    XMLVM_CHECK_NPE(8)
     _r0.i = ((java_math_BigInteger*) _r8.o)->fields.java_math_BigInteger.numberLength_;
     XMLVM_SOURCE_POSITION("Division.java", 859)
     _r1.i = _r0.i << 1;
@@ -2627,11 +2656,15 @@ JAVA_OBJECT java_math_Division_monPro___java_math_BigInteger_java_math_BigIntege
     if (!__TIB_int.classInitialized) __INIT_int();
     _r1.o = XMLVMArray_createSingleDimension(__CLASS_int, _r1.i);
     XMLVM_SOURCE_POSITION("Division.java", 860)
+    XMLVM_CHECK_NPE(6)
     _r2.o = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.digits_;
+    XMLVM_CHECK_NPE(6)
     _r3.i = ((java_math_BigInteger*) _r6.o)->fields.java_math_BigInteger.numberLength_;
     _r3.i = java_lang_Math_min___int_int(_r0.i, _r3.i);
     XMLVM_SOURCE_POSITION("Division.java", 861)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.digits_;
+    XMLVM_CHECK_NPE(7)
     _r5.i = ((java_math_BigInteger*) _r7.o)->fields.java_math_BigInteger.numberLength_;
     _r0.i = java_lang_Math_min___int_int(_r0.i, _r5.i);
     java_math_Multiplication_multArraysPAP___int_1ARRAY_int_int_1ARRAY_int_int_1ARRAY(_r2.o, _r3.i, _r4.o, _r0.i, _r1.o);
@@ -2666,6 +2699,7 @@ JAVA_OBJECT java_math_Division_finalSubtraction___int_1ARRAY_java_math_BigIntege
     _r6.i = 0;
     _r5.i = 1;
     XMLVM_SOURCE_POSITION("Division.java", 875)
+    XMLVM_CHECK_NPE(10)
     _r0.i = ((java_math_BigInteger*) _r10.o)->fields.java_math_BigInteger.numberLength_;
     XMLVM_SOURCE_POSITION("Division.java", 876)
     XMLVM_CHECK_NPE(9)
@@ -2677,6 +2711,7 @@ JAVA_OBJECT java_math_Division_finalSubtraction___int_1ARRAY_java_math_BigIntege
     XMLVM_SOURCE_POSITION("Division.java", 877)
     if (_r1.i != 0) goto label23;
     XMLVM_SOURCE_POSITION("Division.java", 878)
+    XMLVM_CHECK_NPE(10)
     _r1.o = ((java_math_BigInteger*) _r10.o)->fields.java_math_BigInteger.digits_;
     XMLVM_SOURCE_POSITION("Division.java", 880)
     _r2.i = _r0.i - _r5.i;
@@ -2765,14 +2800,17 @@ JAVA_OBJECT java_math_Division_modPow2Inverse___java_math_BigInteger_int(JAVA_OB
     XMLVM_CHECK_NPE(0)
     java_math_BigInteger___INIT____int_int_1ARRAY(_r0.o, _r6.i, _r1.o);
     XMLVM_SOURCE_POSITION("Division.java", 907)
+    XMLVM_CHECK_NPE(0)
     ((java_math_BigInteger*) _r0.o)->fields.java_math_BigInteger.numberLength_ = _r6.i;
     XMLVM_SOURCE_POSITION("Division.java", 908)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((java_math_BigInteger*) _r0.o)->fields.java_math_BigInteger.digits_;
     _r2.i = 0;
     XMLVM_CHECK_NPE(1)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r2.i);
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i] = _r6.i;
     XMLVM_SOURCE_POSITION("Division.java", 909)
+    XMLVM_CHECK_NPE(0)
     ((java_math_BigInteger*) _r0.o)->fields.java_math_BigInteger.sign_ = _r6.i;
     _r1 = _r6;
     label20:;
@@ -2788,6 +2826,7 @@ JAVA_OBJECT java_math_Division_modPow2Inverse___java_math_BigInteger_int(JAVA_OB
     _r2.i = java_math_BitLevel_testBit___java_math_BigInteger_int(_r2.o, _r1.i);
     if (_r2.i == 0) goto label46;
     XMLVM_SOURCE_POSITION("Division.java", 914)
+    XMLVM_CHECK_NPE(0)
     _r2.o = ((java_math_BigInteger*) _r0.o)->fields.java_math_BigInteger.digits_;
     _r3.i = _r1.i >> 5;
     XMLVM_CHECK_NPE(2)
@@ -2823,6 +2862,7 @@ void java_math_Division_inplaceModPow2___java_math_BigInteger_int(JAVA_OBJECT n1
     XMLVM_SOURCE_POSITION("Division.java", 928)
     _r0.i = _r6.i >> 5;
     XMLVM_SOURCE_POSITION("Division.java", 931)
+    XMLVM_CHECK_NPE(5)
     _r1.i = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.numberLength_;
     if (_r1.i < _r0.i) goto label14;
     XMLVM_CHECK_NPE(5)
@@ -2838,8 +2878,10 @@ void java_math_Division_inplaceModPow2___java_math_BigInteger_int(JAVA_OBJECT n1
     _r1.i = _r4.i - _r1.i;
     _r2.i = _r0.i + 1;
     XMLVM_SOURCE_POSITION("Division.java", 935)
+    XMLVM_CHECK_NPE(5)
     ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.numberLength_ = _r2.i;
     XMLVM_SOURCE_POSITION("Division.java", 936)
+    XMLVM_CHECK_NPE(5)
     _r2.o = ((java_math_BigInteger*) _r5.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);

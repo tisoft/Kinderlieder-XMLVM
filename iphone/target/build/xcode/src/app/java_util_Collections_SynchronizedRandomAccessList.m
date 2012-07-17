@@ -357,16 +357,19 @@ JAVA_OBJECT java_util_Collections_SynchronizedRandomAccessList_subList___int_int
     _r5.i = n1;
     _r6.i = n2;
     XMLVM_SOURCE_POSITION("Collections.java", 526)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Collections_SynchronizedCollection*) _r4.o)->fields.java_util_Collections_SynchronizedCollection.mutex_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     XMLVM_TRY_BEGIN(w3896aaab3b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("Collections.java", 527)
     _r1.o = __NEW_java_util_Collections_SynchronizedRandomAccessList();
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_Collections_SynchronizedList*) _r4.o)->fields.java_util_Collections_SynchronizedList.list_;
     XMLVM_SOURCE_POSITION("Collections.java", 528)
     XMLVM_CHECK_NPE(2)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT, JAVA_INT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_subList___int_int])(_r2.o, _r5.i, _r6.i);
+    XMLVM_CHECK_NPE(4)
     _r3.o = ((java_util_Collections_SynchronizedCollection*) _r4.o)->fields.java_util_Collections_SynchronizedCollection.mutex_;
     XMLVM_CHECK_NPE(1)
     java_util_Collections_SynchronizedRandomAccessList___INIT____java_util_List_java_lang_Object(_r1.o, _r2.o, _r3.o);
@@ -406,6 +409,7 @@ JAVA_OBJECT java_util_Collections_SynchronizedRandomAccessList_writeReplace__(JA
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 544)
     _r0.o = __NEW_java_util_Collections_SynchronizedList();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_Collections_SynchronizedList*) _r2.o)->fields.java_util_Collections_SynchronizedList.list_;
     XMLVM_CHECK_NPE(0)
     java_util_Collections_SynchronizedList___INIT____java_util_List(_r0.o, _r1.o);

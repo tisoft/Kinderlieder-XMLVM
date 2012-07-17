@@ -285,7 +285,9 @@ void java_util_regex_BackReferencedSingleSet___INIT____java_util_regex_SingleSet
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("BackReferencedSingleSet.java", 53)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_SingleSet*) _r3.o)->fields.java_util_regex_SingleSet.kid_;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_JointSet*) _r3.o)->fields.java_util_regex_JointSet.fSet_;
     _r0.o = _r0.o;
     XMLVM_CHECK_NPE(2)
@@ -330,14 +332,17 @@ JAVA_INT java_util_regex_BackReferencedSingleSet_find___int_java_lang_CharSequen
     return _r0.i;
     label11:;
     XMLVM_SOURCE_POSITION("BackReferencedSingleSet.java", 63)
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_util_regex_JointSet*) _r5.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(8)
     _r2.i = java_util_regex_MatchResultImpl_getStart___int(_r8.o, _r2.i);
     XMLVM_SOURCE_POSITION("BackReferencedSingleSet.java", 65)
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_util_regex_JointSet*) _r5.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(8)
     java_util_regex_MatchResultImpl_setStart___int_int(_r8.o, _r3.i, _r0.i);
     XMLVM_SOURCE_POSITION("BackReferencedSingleSet.java", 66)
+    XMLVM_CHECK_NPE(5)
     _r3.o = ((java_util_regex_SingleSet*) _r5.o)->fields.java_util_regex_SingleSet.kid_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(3)
@@ -345,6 +350,7 @@ JAVA_INT java_util_regex_BackReferencedSingleSet_find___int_java_lang_CharSequen
     XMLVM_SOURCE_POSITION("BackReferencedSingleSet.java", 67)
     if (_r3.i >= 0) goto label10;
     XMLVM_SOURCE_POSITION("BackReferencedSingleSet.java", 71)
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((java_util_regex_JointSet*) _r5.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(8)
     java_util_regex_MatchResultImpl_setStart___int_int(_r8.o, _r4.i, _r2.i);
@@ -386,14 +392,17 @@ JAVA_INT java_util_regex_BackReferencedSingleSet_findBack___int_int_java_lang_Ch
     return _r0.i;
     label7:;
     XMLVM_SOURCE_POSITION("BackReferencedSingleSet.java", 84)
+    XMLVM_CHECK_NPE(4)
     _r1.i = ((java_util_regex_JointSet*) _r4.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(8)
     _r1.i = java_util_regex_MatchResultImpl_getStart___int(_r8.o, _r1.i);
     XMLVM_SOURCE_POSITION("BackReferencedSingleSet.java", 86)
+    XMLVM_CHECK_NPE(4)
     _r2.i = ((java_util_regex_JointSet*) _r4.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(8)
     java_util_regex_MatchResultImpl_setStart___int_int(_r8.o, _r2.i, _r0.i);
     XMLVM_SOURCE_POSITION("BackReferencedSingleSet.java", 87)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((java_util_regex_SingleSet*) _r4.o)->fields.java_util_regex_SingleSet.kid_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(2)
@@ -401,6 +410,7 @@ JAVA_INT java_util_regex_BackReferencedSingleSet_findBack___int_int_java_lang_Ch
     XMLVM_SOURCE_POSITION("BackReferencedSingleSet.java", 88)
     if (_r2.i >= 0) goto label6;
     XMLVM_SOURCE_POSITION("BackReferencedSingleSet.java", 92)
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_util_regex_JointSet*) _r4.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(8)
     java_util_regex_MatchResultImpl_setStart___int_int(_r8.o, _r3.i, _r1.i);

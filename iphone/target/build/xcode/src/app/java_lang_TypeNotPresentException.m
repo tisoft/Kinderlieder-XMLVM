@@ -259,6 +259,7 @@ void java_lang_TypeNotPresentException___INIT____java_lang_String_java_lang_Thro
     XMLVM_CHECK_NPE(2)
     java_lang_RuntimeException___INIT____java_lang_String_java_lang_Throwable(_r2.o, _r0.o, _r4.o);
     XMLVM_SOURCE_POSITION("TypeNotPresentException.java", 44)
+    XMLVM_CHECK_NPE(2)
     ((java_lang_TypeNotPresentException*) _r2.o)->fields.java_lang_TypeNotPresentException.typeName_ = _r3.o;
     XMLVM_SOURCE_POSITION("TypeNotPresentException.java", 45)
     XMLVM_EXIT_METHOD()
@@ -274,6 +275,7 @@ JAVA_OBJECT java_lang_TypeNotPresentException_typeName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("TypeNotPresentException.java", 53)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_lang_TypeNotPresentException*) _r1.o)->fields.java_lang_TypeNotPresentException.typeName_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

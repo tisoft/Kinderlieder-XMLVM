@@ -265,6 +265,7 @@ void java_util_UnknownFormatConversionException___INIT____java_lang_String(JAVA_
     XMLVM_THROW_CUSTOM(_r0.o)
     label11:;
     XMLVM_SOURCE_POSITION("UnknownFormatConversionException.java", 42)
+    XMLVM_CHECK_NPE(1)
     ((java_util_UnknownFormatConversionException*) _r1.o)->fields.java_util_UnknownFormatConversionException.s_ = _r2.o;
     XMLVM_SOURCE_POSITION("UnknownFormatConversionException.java", 43)
     XMLVM_EXIT_METHOD()
@@ -280,6 +281,7 @@ JAVA_OBJECT java_util_UnknownFormatConversionException_getConversion__(JAVA_OBJE
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("UnknownFormatConversionException.java", 51)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_UnknownFormatConversionException*) _r1.o)->fields.java_util_UnknownFormatConversionException.s_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -297,6 +299,7 @@ JAVA_OBJECT java_util_UnknownFormatConversionException_getMessage__(JAVA_OBJECT 
     XMLVM_SOURCE_POSITION("UnknownFormatConversionException.java", 61)
     // "luni.45"
     _r0.o = xmlvm_create_java_string_from_pool(2323);
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_UnknownFormatConversionException*) _r2.o)->fields.java_util_UnknownFormatConversionException.s_;
     _r0.o = org_apache_harmony_luni_internal_nls_Messages_getString___java_lang_String_java_lang_Object(_r0.o, _r1.o);
     XMLVM_EXIT_METHOD()

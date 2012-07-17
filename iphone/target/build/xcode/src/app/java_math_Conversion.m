@@ -382,10 +382,13 @@ JAVA_OBJECT java_math_Conversion_bigInteger2String___java_math_BigInteger_int(JA
     _r12.i = 1;
     _r11.i = 0;
     XMLVM_SOURCE_POSITION("Conversion.java", 54)
+    XMLVM_CHECK_NPE(14)
     _r0.i = ((java_math_BigInteger*) _r14.o)->fields.java_math_BigInteger.sign_;
     XMLVM_SOURCE_POSITION("Conversion.java", 55)
+    XMLVM_CHECK_NPE(14)
     _r1.i = ((java_math_BigInteger*) _r14.o)->fields.java_math_BigInteger.numberLength_;
     XMLVM_SOURCE_POSITION("Conversion.java", 56)
+    XMLVM_CHECK_NPE(14)
     _r2.o = ((java_math_BigInteger*) _r14.o)->fields.java_math_BigInteger.digits_;
     XMLVM_SOURCE_POSITION("Conversion.java", 58)
     if (_r0.i != 0) goto label18;
@@ -640,14 +643,17 @@ JAVA_OBJECT java_math_Conversion_toDecimalScaledString___java_math_BigInteger_in
     _r21.i = n2;
     XMLVM_SOURCE_POSITION("Conversion.java", 137)
     _r0 = _r20;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_math_BigInteger*) _r0.o)->fields.java_math_BigInteger.sign_;
     _r5 = _r0;
     XMLVM_SOURCE_POSITION("Conversion.java", 138)
     _r0 = _r20;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_math_BigInteger*) _r0.o)->fields.java_math_BigInteger.numberLength_;
     _r6 = _r0;
     XMLVM_SOURCE_POSITION("Conversion.java", 139)
     _r0 = _r20;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_math_BigInteger*) _r0.o)->fields.java_math_BigInteger.digits_;
     _r20 = _r0;
     XMLVM_SOURCE_POSITION("Conversion.java", 144)
@@ -1607,11 +1613,14 @@ JAVA_DOUBLE java_math_Conversion_bigInteger2Double___java_math_BigInteger(JAVA_O
     _r10.l = 2;
     _r9.i = 1;
     XMLVM_SOURCE_POSITION("Conversion.java", 418)
+    XMLVM_CHECK_NPE(14)
     _r0.i = ((java_math_BigInteger*) _r14.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i < _r1.i) goto label22;
     XMLVM_SOURCE_POSITION("Conversion.java", 419)
+    XMLVM_CHECK_NPE(14)
     _r0.i = ((java_math_BigInteger*) _r14.o)->fields.java_math_BigInteger.numberLength_;
     if (_r0.i != _r1.i) goto label28;
+    XMLVM_CHECK_NPE(14)
     _r0.o = ((java_math_BigInteger*) _r14.o)->fields.java_math_BigInteger.digits_;
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r9.i);
@@ -1629,10 +1638,12 @@ JAVA_DOUBLE java_math_Conversion_bigInteger2Double___java_math_BigInteger(JAVA_O
     return _r0.d;
     label28:;
     XMLVM_SOURCE_POSITION("Conversion.java", 423)
+    XMLVM_CHECK_NPE(14)
     _r0.i = ((java_math_BigInteger*) _r14.o)->fields.java_math_BigInteger.numberLength_;
     _r1.i = 32;
     if (_r0.i <= _r1.i) goto label42;
     XMLVM_SOURCE_POSITION("Conversion.java", 424)
+    XMLVM_CHECK_NPE(14)
     _r0.i = ((java_math_BigInteger*) _r14.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i <= 0) goto label40;
     _r0 = _r12;
@@ -1672,6 +1683,7 @@ JAVA_DOUBLE java_math_Conversion_bigInteger2Double___java_math_BigInteger(JAVA_O
     _r5.i = _r3.l > _r5.l ? 1 : (_r3.l == _r5.l ? 0 : -1);
     if (_r5.i != 0) goto label97;
     XMLVM_SOURCE_POSITION("Conversion.java", 439)
+    XMLVM_CHECK_NPE(14)
     _r0.i = ((java_math_BigInteger*) _r14.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i <= 0) goto label95;
     _r0 = _r12;
@@ -1686,6 +1698,7 @@ JAVA_DOUBLE java_math_Conversion_bigInteger2Double___java_math_BigInteger(JAVA_O
     _r5.i = _r3.l > _r5.l ? 1 : (_r3.l == _r5.l ? 0 : -1);
     if (_r5.i != 0) goto label122;
     XMLVM_SOURCE_POSITION("Conversion.java", 443)
+    XMLVM_CHECK_NPE(14)
     _r0.i = ((java_math_BigInteger*) _r14.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i <= 0) goto label116;
     _r0.d = 1.7976931348623157E308;
@@ -1705,6 +1718,7 @@ JAVA_DOUBLE java_math_Conversion_bigInteger2Double___java_math_BigInteger(JAVA_O
     _r5.i = _r5.l > _r10.l ? 1 : (_r5.l == _r10.l ? 0 : -1);
     if (_r5.i == 0) goto label145;
     XMLVM_SOURCE_POSITION("Conversion.java", 449)
+    XMLVM_CHECK_NPE(14)
     _r5.o = ((java_math_BigInteger*) _r14.o)->fields.java_math_BigInteger.digits_;
     _r0.i = java_math_BitLevel_nonZeroDroppedBits___int_int_1ARRAY(_r0.i, _r5.o);
     if (_r0.i == 0) goto label146;
@@ -1715,6 +1729,7 @@ JAVA_DOUBLE java_math_Conversion_bigInteger2Double___java_math_BigInteger(JAVA_O
     XMLVM_SOURCE_POSITION("Conversion.java", 452)
     _r3.l = _r3.l >> (0x3f & _r9.l);
     XMLVM_SOURCE_POSITION("Conversion.java", 453)
+    XMLVM_CHECK_NPE(14)
     _r0.i = ((java_math_BigInteger*) _r14.o)->fields.java_math_BigInteger.sign_;
     if (_r0.i >= 0) goto label171;
     _r5.l = -9223372036854775808;

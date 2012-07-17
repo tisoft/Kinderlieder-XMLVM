@@ -561,6 +561,7 @@ void org_w3c_dom_DOMException___INIT____short_java_lang_String(JAVA_OBJECT me, J
     XMLVM_CHECK_NPE(0)
     java_lang_RuntimeException___INIT____java_lang_String(_r0.o, _r2.o);
     XMLVM_SOURCE_POSITION("DOMException.java", 36)
+    XMLVM_CHECK_NPE(0)
     ((org_w3c_dom_DOMException*) _r0.o)->fields.org_w3c_dom_DOMException.code_ = _r1.i;
     XMLVM_SOURCE_POSITION("DOMException.java", 37)
     XMLVM_EXIT_METHOD()

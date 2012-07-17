@@ -262,12 +262,14 @@ void java_util_Collections_SingletonSet_1___INIT____java_util_Collections_Single
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 1)
+    XMLVM_CHECK_NPE(1)
     ((java_util_Collections_SingletonSet_1*) _r1.o)->fields.java_util_Collections_SingletonSet_1.this_1_ = _r2.o;
     XMLVM_SOURCE_POSITION("Collections.java", 265)
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("Collections.java", 266)
     _r0.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Collections_SingletonSet_1*) _r1.o)->fields.java_util_Collections_SingletonSet_1.hasNext_ = _r0.i;
     XMLVM_EXIT_METHOD()
     return;
@@ -282,6 +284,7 @@ JAVA_BOOLEAN java_util_Collections_SingletonSet_1_hasNext__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 269)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_Collections_SingletonSet_1*) _r1.o)->fields.java_util_Collections_SingletonSet_1.hasNext_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -296,13 +299,17 @@ JAVA_OBJECT java_util_Collections_SingletonSet_1_next__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 273)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_util_Collections_SingletonSet_1*) _r1.o)->fields.java_util_Collections_SingletonSet_1.hasNext_;
     if (_r0.i == 0) goto label12;
     XMLVM_SOURCE_POSITION("Collections.java", 274)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(1)
     ((java_util_Collections_SingletonSet_1*) _r1.o)->fields.java_util_Collections_SingletonSet_1.hasNext_ = _r0.i;
     XMLVM_SOURCE_POSITION("Collections.java", 275)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Collections_SingletonSet_1*) _r1.o)->fields.java_util_Collections_SingletonSet_1.this_1_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_util_Collections_SingletonSet*) _r0.o)->fields.java_util_Collections_SingletonSet.element_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

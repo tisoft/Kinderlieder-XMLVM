@@ -250,10 +250,12 @@ JAVA_INT java_util_regex_ReluctantCompositeQuantifierSet_matches___int_java_lang
     _r7.i = 1;
     _r6.i = -1;
     XMLVM_SOURCE_POSITION("ReluctantCompositeQuantifierSet.java", 36)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((java_util_regex_CompositeQuantifierSet*) _r9.o)->fields.java_util_regex_CompositeQuantifierSet.quantifier_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_regex_Quantifier_min__(_r0.o);
     XMLVM_SOURCE_POSITION("ReluctantCompositeQuantifierSet.java", 37)
+    XMLVM_CHECK_NPE(9)
     _r1.o = ((java_util_regex_CompositeQuantifierSet*) _r9.o)->fields.java_util_regex_CompositeQuantifierSet.quantifier_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_util_regex_Quantifier_max__(_r1.o);
@@ -267,6 +269,7 @@ JAVA_INT java_util_regex_ReluctantCompositeQuantifierSet_matches___int_java_lang
     _r0 = _r2;
     _r2 = _r3;
     XMLVM_SOURCE_POSITION("ReluctantCompositeQuantifierSet.java", 56)
+    XMLVM_CHECK_NPE(9)
     _r3.o = ((java_util_regex_AbstractSet*) _r9.o)->fields.java_util_regex_AbstractSet.next_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(3)
@@ -281,6 +284,7 @@ JAVA_INT java_util_regex_ReluctantCompositeQuantifierSet_matches___int_java_lang
     return _r0.i;
     label30:;
     XMLVM_SOURCE_POSITION("ReluctantCompositeQuantifierSet.java", 43)
+    XMLVM_CHECK_NPE(9)
     _r4.o = ((java_util_regex_LeafQuantifierSet*) _r9.o)->fields.java_util_regex_LeafQuantifierSet.leaf_;
     //java_util_regex_LeafSet_charCount__[18]
     XMLVM_CHECK_NPE(4)
@@ -290,12 +294,14 @@ JAVA_INT java_util_regex_ReluctantCompositeQuantifierSet_matches___int_java_lang
     _r5.i = java_util_regex_MatchResultImpl_getRightBound__(_r12.o);
     if (_r4.i <= _r5.i) goto label47;
     XMLVM_SOURCE_POSITION("ReluctantCompositeQuantifierSet.java", 44)
+    XMLVM_CHECK_NPE(12)
     ((java_util_regex_MatchResultImpl*) _r12.o)->fields.java_util_regex_MatchResultImpl.hitEnd_ = _r7.i;
     _r0 = _r6;
     XMLVM_SOURCE_POSITION("ReluctantCompositeQuantifierSet.java", 45)
     goto label29;
     label47:;
     XMLVM_SOURCE_POSITION("ReluctantCompositeQuantifierSet.java", 48)
+    XMLVM_CHECK_NPE(9)
     _r4.o = ((java_util_regex_LeafQuantifierSet*) _r9.o)->fields.java_util_regex_LeafQuantifierSet.leaf_;
     //java_util_regex_LeafSet_accepts___int_java_lang_CharSequence[17]
     XMLVM_CHECK_NPE(4)
@@ -312,6 +318,7 @@ JAVA_INT java_util_regex_ReluctantCompositeQuantifierSet_matches___int_java_lang
     goto label16;
     label61:;
     XMLVM_SOURCE_POSITION("ReluctantCompositeQuantifierSet.java", 61)
+    XMLVM_CHECK_NPE(9)
     _r4.o = ((java_util_regex_LeafQuantifierSet*) _r9.o)->fields.java_util_regex_LeafQuantifierSet.leaf_;
     //java_util_regex_LeafSet_charCount__[18]
     XMLVM_CHECK_NPE(4)
@@ -321,6 +328,7 @@ JAVA_INT java_util_regex_ReluctantCompositeQuantifierSet_matches___int_java_lang
     _r5.i = java_util_regex_MatchResultImpl_getRightBound__(_r12.o);
     if (_r4.i > _r5.i) goto label93;
     XMLVM_SOURCE_POSITION("ReluctantCompositeQuantifierSet.java", 62)
+    XMLVM_CHECK_NPE(9)
     _r3.o = ((java_util_regex_LeafQuantifierSet*) _r9.o)->fields.java_util_regex_LeafQuantifierSet.leaf_;
     //java_util_regex_LeafSet_accepts___int_java_lang_CharSequence[17]
     XMLVM_CHECK_NPE(3)

@@ -609,6 +609,7 @@ void gnu_xml_dom_DomCharacterData___INIT____short_gnu_xml_dom_DomDocument_java_l
     // ""
     _r0.o = xmlvm_create_java_string_from_pool(0);
     label7:;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomCharacterData*) _r1.o)->fields.gnu_xml_dom_DomCharacterData.text_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 91)
     XMLVM_EXIT_METHOD()
@@ -644,6 +645,7 @@ void gnu_xml_dom_DomCharacterData___INIT____short_gnu_xml_dom_DomDocument_char_1
     // ""
     _r0.o = xmlvm_create_java_string_from_pool(0);
     label7:;
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_dom_DomCharacterData*) _r1.o)->fields.gnu_xml_dom_DomCharacterData.text_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 99)
     XMLVM_EXIT_METHOD()
@@ -679,6 +681,7 @@ void gnu_xml_dom_DomCharacterData_appendData___java_lang_String(JAVA_OBJECT me, 
     label13:;
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 112)
     _r0.o = __NEW_java_lang_StringBuilder();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((gnu_xml_dom_DomCharacterData*) _r2.o)->fields.gnu_xml_dom_DomCharacterData.text_;
     _r1.o = java_lang_String_valueOf___java_lang_Object(_r1.o);
     XMLVM_CHECK_NPE(0)
@@ -692,6 +695,7 @@ void gnu_xml_dom_DomCharacterData_appendData___java_lang_String(JAVA_OBJECT me, 
     XMLVM_CHECK_NPE(2)
     gnu_xml_dom_DomCharacterData_mutating___java_lang_String(_r2.o, _r0.o);
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 114)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomCharacterData*) _r2.o)->fields.gnu_xml_dom_DomCharacterData.text_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 115)
     XMLVM_EXIT_METHOD()
@@ -728,6 +732,7 @@ void gnu_xml_dom_DomCharacterData_deleteData___int_int(JAVA_OBJECT me, JAVA_INT 
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 128)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((gnu_xml_dom_DomCharacterData*) _r6.o)->fields.gnu_xml_dom_DomCharacterData.text_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_toCharArray__(_r0.o);
@@ -784,6 +789,7 @@ void gnu_xml_dom_DomCharacterData_deleteData___int_int(JAVA_OBJECT me, JAVA_INT 
     XMLVM_CHECK_NPE(6)
     gnu_xml_dom_DomCharacterData_mutating___java_lang_String(_r6.o, _r0.o);
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 149)
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_dom_DomCharacterData*) _r6.o)->fields.gnu_xml_dom_DomCharacterData.text_ = _r0.o;
     // End try
     XMLVM_TRY_END
@@ -814,6 +820,7 @@ JAVA_OBJECT gnu_xml_dom_DomCharacterData_getNodeValue__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 163)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomCharacterData*) _r1.o)->fields.gnu_xml_dom_DomCharacterData.text_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -828,6 +835,7 @@ JAVA_OBJECT gnu_xml_dom_DomCharacterData_getData__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 172)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomCharacterData*) _r1.o)->fields.gnu_xml_dom_DomCharacterData.text_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -842,6 +850,7 @@ JAVA_INT gnu_xml_dom_DomCharacterData_getLength__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 181)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_DomCharacterData*) _r1.o)->fields.gnu_xml_dom_DomCharacterData.text_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(0)
@@ -878,6 +887,7 @@ void gnu_xml_dom_DomCharacterData_insertData___int_java_lang_String(JAVA_OBJECT 
     XMLVM_THROW_CUSTOM(_r0.o)
     label13:;
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 194)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_dom_DomCharacterData*) _r5.o)->fields.gnu_xml_dom_DomCharacterData.text_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_toCharArray__(_r0.o);
@@ -915,6 +925,7 @@ void gnu_xml_dom_DomCharacterData_insertData___int_java_lang_String(JAVA_OBJECT 
     XMLVM_CHECK_NPE(5)
     gnu_xml_dom_DomCharacterData_mutating___java_lang_String(_r5.o, _r0.o);
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 206)
+    XMLVM_CHECK_NPE(5)
     ((gnu_xml_dom_DomCharacterData*) _r5.o)->fields.gnu_xml_dom_DomCharacterData.text_ = _r0.o;
     // End try
     XMLVM_TRY_END
@@ -957,6 +968,7 @@ void gnu_xml_dom_DomCharacterData_replaceData___int_int_java_lang_String(JAVA_OB
     _r9.o = n3;
     _r5.i = 1;
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 221)
+    XMLVM_CHECK_NPE(6)
     _r0.i = ((gnu_xml_dom_DomNode*) _r6.o)->fields.gnu_xml_dom_DomNode.readonly_;
     if (_r0.i == 0) goto label12;
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 223)
@@ -967,6 +979,7 @@ void gnu_xml_dom_DomCharacterData_replaceData___int_int_java_lang_String(JAVA_OB
     XMLVM_THROW_CUSTOM(_r0.o)
     label12:;
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 225)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((gnu_xml_dom_DomCharacterData*) _r6.o)->fields.gnu_xml_dom_DomCharacterData.text_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_toCharArray__(_r0.o);
@@ -1040,6 +1053,7 @@ void gnu_xml_dom_DomCharacterData_replaceData___int_int_java_lang_String(JAVA_OB
     XMLVM_CHECK_NPE(6)
     gnu_xml_dom_DomCharacterData_mutating___java_lang_String(_r6.o, _r0.o);
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 252)
+    XMLVM_CHECK_NPE(6)
     ((gnu_xml_dom_DomCharacterData*) _r6.o)->fields.gnu_xml_dom_DomCharacterData.text_ = _r0.o;
     // End try
     XMLVM_TRY_END
@@ -1095,6 +1109,7 @@ void gnu_xml_dom_DomCharacterData_setNodeValue___java_lang_String(JAVA_OBJECT me
     XMLVM_CHECK_NPE(2)
     gnu_xml_dom_DomCharacterData_mutating___java_lang_String(_r2.o, _r0.o);
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 276)
+    XMLVM_CHECK_NPE(2)
     ((gnu_xml_dom_DomCharacterData*) _r2.o)->fields.gnu_xml_dom_DomCharacterData.text_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 277)
     XMLVM_EXIT_METHOD()
@@ -1138,6 +1153,7 @@ JAVA_OBJECT gnu_xml_dom_DomCharacterData_substringData___int_int(JAVA_OBJECT me,
     XMLVM_TRY_BEGIN(w25044aaac14b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 296)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_DomCharacterData*) _r2.o)->fields.gnu_xml_dom_DomCharacterData.text_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_substring___int_int(_r0.o, _r3.i, _r4.i);
@@ -1157,11 +1173,13 @@ JAVA_OBJECT gnu_xml_dom_DomCharacterData_substringData___int_int(JAVA_OBJECT me,
     _r0.o = curThread_w25044aaac14b1c10->fields.java_lang_Thread.xmlvmException_;
     if (_r3.i < 0) goto label27;
     if (_r4.i < 0) goto label27;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_DomCharacterData*) _r2.o)->fields.gnu_xml_dom_DomCharacterData.text_;
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[8])(_r0.o);
     if (_r3.i >= _r0.i) goto label27;
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((gnu_xml_dom_DomCharacterData*) _r2.o)->fields.gnu_xml_dom_DomCharacterData.text_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_String_substring___int(_r0.o, _r3.i);
@@ -1236,6 +1254,7 @@ void gnu_xml_dom_DomCharacterData_mutating___java_lang_String(JAVA_OBJECT me, JA
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 339)
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 340)
+    XMLVM_CHECK_NPE(9)
     _r5.o = ((gnu_xml_dom_DomCharacterData*) _r9.o)->fields.gnu_xml_dom_DomCharacterData.text_;
     _r6 = _r10;
     _r7 = _r4;

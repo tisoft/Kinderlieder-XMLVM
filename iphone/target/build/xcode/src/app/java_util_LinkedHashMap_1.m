@@ -326,6 +326,7 @@ void java_util_LinkedHashMap_1___INIT____java_util_LinkedHashMap(JAVA_OBJECT me,
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 1)
+    XMLVM_CHECK_NPE(0)
     ((java_util_LinkedHashMap_1*) _r0.o)->fields.java_util_LinkedHashMap_1.this_0_ = _r1.o;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 509)
     XMLVM_CHECK_NPE(0)
@@ -345,6 +346,7 @@ JAVA_BOOLEAN java_util_LinkedHashMap_1_contains___java_lang_Object(JAVA_OBJECT m
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 512)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_LinkedHashMap_1*) _r1.o)->fields.java_util_LinkedHashMap_1.this_0_;
     //java_util_LinkedHashMap_containsKey___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
@@ -362,6 +364,7 @@ JAVA_INT java_util_LinkedHashMap_1_size__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 517)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_LinkedHashMap_1*) _r1.o)->fields.java_util_LinkedHashMap_1.this_0_;
     //java_util_LinkedHashMap_size__[16]
     XMLVM_CHECK_NPE(0)
@@ -379,6 +382,7 @@ void java_util_LinkedHashMap_1_clear__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 522)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_LinkedHashMap_1*) _r1.o)->fields.java_util_LinkedHashMap_1.this_0_;
     //java_util_LinkedHashMap_clear__[6]
     XMLVM_CHECK_NPE(0)
@@ -399,12 +403,14 @@ JAVA_BOOLEAN java_util_LinkedHashMap_1_remove___java_lang_Object(JAVA_OBJECT me,
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 527)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_LinkedHashMap_1*) _r1.o)->fields.java_util_LinkedHashMap_1.this_0_;
     //java_util_LinkedHashMap_containsKey___java_lang_Object[7]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_LinkedHashMap*) _r0.o)->tib->vtable[7])(_r0.o, _r2.o);
     if (_r0.i == 0) goto label15;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 528)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_LinkedHashMap_1*) _r1.o)->fields.java_util_LinkedHashMap_1.this_0_;
     //java_util_LinkedHashMap_remove___java_lang_Object[15]
     XMLVM_CHECK_NPE(0)
@@ -431,6 +437,7 @@ JAVA_OBJECT java_util_LinkedHashMap_1_iterator__(JAVA_OBJECT me)
     _r2.o = me;
     XMLVM_SOURCE_POSITION("LinkedHashMap.java", 536)
     _r0.o = __NEW_java_util_LinkedHashMap_KeyIterator();
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_LinkedHashMap_1*) _r2.o)->fields.java_util_LinkedHashMap_1.this_0_;
     XMLVM_CHECK_NPE(0)
     java_util_LinkedHashMap_KeyIterator___INIT____java_util_LinkedHashMap(_r0.o, _r1.o);

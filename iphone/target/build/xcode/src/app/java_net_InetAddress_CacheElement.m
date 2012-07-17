@@ -242,12 +242,14 @@ void java_net_InetAddress_CacheElement___INIT____java_net_InetAddress(JAVA_OBJEC
     _r2.o = me;
     _r3.o = n1;
     XMLVM_SOURCE_POSITION("InetAddress.java", 542)
+    XMLVM_CHECK_NPE(2)
     ((java_net_InetAddress_CacheElement*) _r2.o)->fields.java_net_InetAddress_CacheElement.this_0_ = _r3.o;
     XMLVM_SOURCE_POSITION("InetAddress.java", 543)
     XMLVM_CHECK_NPE(2)
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("InetAddress.java", 538)
     _r0.l = java_lang_System_currentTimeMillis__();
+    XMLVM_CHECK_NPE(2)
     ((java_net_InetAddress_CacheElement*) _r2.o)->fields.java_net_InetAddress_CacheElement.timeAdded_ = _r0.l;
     XMLVM_SOURCE_POSITION("InetAddress.java", 544)
     XMLVM_EXIT_METHOD()
@@ -263,7 +265,9 @@ JAVA_OBJECT java_net_InetAddress_CacheElement_hostName__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("InetAddress.java", 547)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_InetAddress_CacheElement*) _r1.o)->fields.java_net_InetAddress_CacheElement.this_0_;
+    XMLVM_CHECK_NPE(0)
     _r0.o = ((java_net_InetAddress*) _r0.o)->fields.java_net_InetAddress.hostName_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -278,6 +282,7 @@ JAVA_OBJECT java_net_InetAddress_CacheElement_inetAddress__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("InetAddress.java", 551)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_net_InetAddress_CacheElement*) _r1.o)->fields.java_net_InetAddress_CacheElement.this_0_;
     XMLVM_EXIT_METHOD()
     return _r0.o;

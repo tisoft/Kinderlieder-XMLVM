@@ -411,8 +411,10 @@ void gnu_xml_xpath_ArithmeticExpr___INIT____gnu_xml_xpath_Expr_gnu_xml_xpath_Exp
     XMLVM_CHECK_NPE(1)
     gnu_xml_xpath_Expr___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("ArithmeticExpr.java", 66)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_xpath_ArithmeticExpr*) _r1.o)->fields.gnu_xml_xpath_ArithmeticExpr.lhs_ = _r2.o;
     XMLVM_SOURCE_POSITION("ArithmeticExpr.java", 67)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_xpath_ArithmeticExpr*) _r1.o)->fields.gnu_xml_xpath_ArithmeticExpr.rhs_ = _r3.o;
     XMLVM_SOURCE_POSITION("ArithmeticExpr.java", 68)
     switch (_r4.i) {
@@ -429,6 +431,7 @@ void gnu_xml_xpath_ArithmeticExpr___INIT____gnu_xml_xpath_Expr_gnu_xml_xpath_Exp
     XMLVM_THROW_CUSTOM(_r0.o)
     label16:;
     XMLVM_SOURCE_POSITION("ArithmeticExpr.java", 75)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_xpath_ArithmeticExpr*) _r1.o)->fields.gnu_xml_xpath_ArithmeticExpr.op_ = _r4.i;
     XMLVM_SOURCE_POSITION("ArithmeticExpr.java", 80)
     XMLVM_EXIT_METHOD()
@@ -456,11 +459,13 @@ JAVA_OBJECT gnu_xml_xpath_ArithmeticExpr_evaluate___org_w3c_dom_Node_int_int(JAV
     _r8.i = n2;
     _r9.i = n3;
     XMLVM_SOURCE_POSITION("ArithmeticExpr.java", 84)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((gnu_xml_xpath_ArithmeticExpr*) _r6.o)->fields.gnu_xml_xpath_ArithmeticExpr.lhs_;
     //gnu_xml_xpath_Expr_evaluate___org_w3c_dom_Node_int_int[9]
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) ((gnu_xml_xpath_Expr*) _r0.o)->tib->vtable[9])(_r0.o, _r7.o, _r8.i, _r9.i);
     XMLVM_SOURCE_POSITION("ArithmeticExpr.java", 85)
+    XMLVM_CHECK_NPE(6)
     _r1.o = ((gnu_xml_xpath_ArithmeticExpr*) _r6.o)->fields.gnu_xml_xpath_ArithmeticExpr.rhs_;
     //gnu_xml_xpath_Expr_evaluate___org_w3c_dom_Node_int_int[9]
     XMLVM_CHECK_NPE(1)
@@ -470,6 +475,7 @@ JAVA_OBJECT gnu_xml_xpath_ArithmeticExpr_evaluate___org_w3c_dom_Node_int_int(JAV
     XMLVM_SOURCE_POSITION("ArithmeticExpr.java", 88)
     _r0.d = gnu_xml_xpath_Expr__number___org_w3c_dom_Node_java_lang_Object(_r7.o, _r1.o);
     XMLVM_SOURCE_POSITION("ArithmeticExpr.java", 89)
+    XMLVM_CHECK_NPE(6)
     _r4.i = ((gnu_xml_xpath_ArithmeticExpr*) _r6.o)->fields.gnu_xml_xpath_ArithmeticExpr.op_;
     switch (_r4.i) {
     case 0: goto label31;
@@ -621,14 +627,17 @@ JAVA_OBJECT gnu_xml_xpath_ArithmeticExpr_clone___java_lang_Object(JAVA_OBJECT me
     _r5.o = n1;
     XMLVM_SOURCE_POSITION("ArithmeticExpr.java", 134)
     _r0.o = __NEW_gnu_xml_xpath_ArithmeticExpr();
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((gnu_xml_xpath_ArithmeticExpr*) _r4.o)->fields.gnu_xml_xpath_ArithmeticExpr.lhs_;
     //gnu_xml_xpath_Expr_clone___java_lang_Object[6]
     XMLVM_CHECK_NPE(1)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_xpath_Expr*) _r1.o)->tib->vtable[6])(_r1.o, _r5.o);
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((gnu_xml_xpath_ArithmeticExpr*) _r4.o)->fields.gnu_xml_xpath_ArithmeticExpr.rhs_;
     //gnu_xml_xpath_Expr_clone___java_lang_Object[6]
     XMLVM_CHECK_NPE(2)
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_xpath_Expr*) _r2.o)->tib->vtable[6])(_r2.o, _r5.o);
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((gnu_xml_xpath_ArithmeticExpr*) _r4.o)->fields.gnu_xml_xpath_ArithmeticExpr.op_;
     XMLVM_CHECK_NPE(0)
     gnu_xml_xpath_ArithmeticExpr___INIT____gnu_xml_xpath_Expr_gnu_xml_xpath_Expr_int(_r0.o, _r1.o, _r2.o, _r3.i);
@@ -647,11 +656,13 @@ JAVA_BOOLEAN gnu_xml_xpath_ArithmeticExpr_references___javax_xml_namespace_QName
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("ArithmeticExpr.java", 139)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_ArithmeticExpr*) _r1.o)->fields.gnu_xml_xpath_ArithmeticExpr.lhs_;
     //gnu_xml_xpath_Expr_references___javax_xml_namespace_QName[12]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_xpath_Expr*) _r0.o)->tib->vtable[12])(_r0.o, _r2.o);
     if (_r0.i != 0) goto label18;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_xpath_ArithmeticExpr*) _r1.o)->fields.gnu_xml_xpath_ArithmeticExpr.rhs_;
     //gnu_xml_xpath_Expr_references___javax_xml_namespace_QName[12]
     XMLVM_CHECK_NPE(0)
@@ -682,6 +693,7 @@ JAVA_OBJECT gnu_xml_xpath_ArithmeticExpr_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("ArithmeticExpr.java", 145)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_xpath_ArithmeticExpr*) _r3.o)->fields.gnu_xml_xpath_ArithmeticExpr.lhs_;
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_Object(_r0.o, _r1.o);
@@ -690,6 +702,7 @@ JAVA_OBJECT gnu_xml_xpath_ArithmeticExpr_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((gnu_java_lang_CPStringBuilder*) _r0.o)->tib->vtable[6])(_r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("ArithmeticExpr.java", 147)
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((gnu_xml_xpath_ArithmeticExpr*) _r3.o)->fields.gnu_xml_xpath_ArithmeticExpr.op_;
     switch (_r1.i) {
     case 0: goto label33;
@@ -704,6 +717,7 @@ JAVA_OBJECT gnu_xml_xpath_ArithmeticExpr_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_CHAR)) ((gnu_java_lang_CPStringBuilder*) _r0.o)->tib->vtable[6])(_r0.o, _r2.i);
     XMLVM_SOURCE_POSITION("ArithmeticExpr.java", 166)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((gnu_xml_xpath_ArithmeticExpr*) _r3.o)->fields.gnu_xml_xpath_ArithmeticExpr.rhs_;
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___java_lang_Object(_r0.o, _r1.o);

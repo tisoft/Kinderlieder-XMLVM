@@ -663,11 +663,13 @@ void org_xml_sax_helpers_XMLReaderAdapter_setup___org_xml_sax_XMLReader(JAVA_OBJ
     XMLVM_THROW_CUSTOM(_r0.o)
     label10:;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 105)
+    XMLVM_CHECK_NPE(2)
     ((org_xml_sax_helpers_XMLReaderAdapter*) _r2.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.xmlReader_ = _r3.o;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 106)
     _r0.o = __NEW_org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter();
     XMLVM_CHECK_NPE(0)
     org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter___INIT____org_xml_sax_helpers_XMLReaderAdapter(_r0.o, _r2.o);
+    XMLVM_CHECK_NPE(2)
     ((org_xml_sax_helpers_XMLReaderAdapter*) _r2.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.qAtts_ = _r0.o;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 107)
     XMLVM_EXIT_METHOD()
@@ -705,6 +707,7 @@ void org_xml_sax_helpers_XMLReaderAdapter_setEntityResolver___org_xml_sax_Entity
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 141)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.xmlReader_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setEntityResolver___org_xml_sax_EntityResolver])(_r0.o, _r2.o);
@@ -724,6 +727,7 @@ void org_xml_sax_helpers_XMLReaderAdapter_setDTDHandler___org_xml_sax_DTDHandler
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 153)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.xmlReader_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setDTDHandler___org_xml_sax_DTDHandler])(_r0.o, _r2.o);
@@ -742,6 +746,7 @@ void org_xml_sax_helpers_XMLReaderAdapter_setDocumentHandler___org_xml_sax_Docum
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 168)
+    XMLVM_CHECK_NPE(0)
     ((org_xml_sax_helpers_XMLReaderAdapter*) _r0.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.documentHandler_ = _r1.o;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 169)
     XMLVM_EXIT_METHOD()
@@ -759,6 +764,7 @@ void org_xml_sax_helpers_XMLReaderAdapter_setErrorHandler___org_xml_sax_ErrorHan
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 180)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.xmlReader_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setErrorHandler___org_xml_sax_ErrorHandler])(_r0.o, _r2.o);
@@ -803,6 +809,7 @@ void org_xml_sax_helpers_XMLReaderAdapter_parse___org_xml_sax_InputSource(JAVA_O
     XMLVM_CHECK_NPE(1)
     org_xml_sax_helpers_XMLReaderAdapter_setupXMLReader__(_r1.o);
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 225)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.xmlReader_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_parse___org_xml_sax_InputSource])(_r0.o, _r2.o);
@@ -822,6 +829,7 @@ void org_xml_sax_helpers_XMLReaderAdapter_setupXMLReader__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 235)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r3.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.xmlReader_;
     // "http://xml.org/sax/features/namespace-prefixes"
     _r1.o = xmlvm_create_java_string_from_pool(41);
@@ -831,6 +839,7 @@ void org_xml_sax_helpers_XMLReaderAdapter_setupXMLReader__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w17663aaac13b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 237)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r3.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.xmlReader_;
     // "http://xml.org/sax/features/namespaces"
     _r1.o = xmlvm_create_java_string_from_pool(40);
@@ -846,6 +855,7 @@ void org_xml_sax_helpers_XMLReaderAdapter_setupXMLReader__(JAVA_OBJECT me)
     XMLVM_RESTORE_EXCEPTION_ENV(w17663aaac13b1b7)
     label16:;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 242)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r3.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.xmlReader_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setContentHandler___org_xml_sax_ContentHandler])(_r0.o, _r3.o);
@@ -869,9 +879,11 @@ void org_xml_sax_helpers_XMLReaderAdapter_setDocumentLocator___org_xml_sax_Locat
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 260)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.documentHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 261)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.documentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_setDocumentLocator___org_xml_sax_Locator])(_r0.o, _r2.o);
@@ -890,9 +902,11 @@ void org_xml_sax_helpers_XMLReaderAdapter_startDocument__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 275)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.documentHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 276)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.documentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_startDocument__])(_r0.o);
@@ -911,9 +925,11 @@ void org_xml_sax_helpers_XMLReaderAdapter_endDocument__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 290)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.documentHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 291)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.documentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_endDocument__])(_r0.o);
@@ -971,14 +987,18 @@ void org_xml_sax_helpers_XMLReaderAdapter_startElement___java_lang_String_java_l
     _r5.o = n3;
     _r6.o = n4;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 333)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r2.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.documentHandler_;
     if (_r0.o == JAVA_NULL) goto label16;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 334)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r2.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.qAtts_;
     XMLVM_CHECK_NPE(0)
     org_xml_sax_helpers_XMLReaderAdapter_AttributesAdapter_setAttributes___org_xml_sax_Attributes(_r0.o, _r6.o);
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 335)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r2.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.documentHandler_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r2.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.qAtts_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_startElement___java_lang_String_org_xml_sax_AttributeList])(_r0.o, _r5.o, _r1.o);
@@ -1003,9 +1023,11 @@ void org_xml_sax_helpers_XMLReaderAdapter_endElement___java_lang_String_java_lan
     _r3.o = n2;
     _r4.o = n3;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 354)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.documentHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 355)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.documentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_endElement___java_lang_String])(_r0.o, _r4.o);
@@ -1030,9 +1052,11 @@ void org_xml_sax_helpers_XMLReaderAdapter_characters___char_1ARRAY_int_int(JAVA_
     _r3.i = n2;
     _r4.i = n3;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 372)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.documentHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 373)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.documentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_characters___char_1ARRAY_int_int])(_r0.o, _r2.o, _r3.i, _r4.i);
@@ -1057,9 +1081,11 @@ void org_xml_sax_helpers_XMLReaderAdapter_ignorableWhitespace___char_1ARRAY_int_
     _r3.i = n2;
     _r4.i = n3;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 390)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.documentHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 391)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.documentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_ignorableWhitespace___char_1ARRAY_int_int])(_r0.o, _r2.o, _r3.i, _r4.i);
@@ -1082,9 +1108,11 @@ void org_xml_sax_helpers_XMLReaderAdapter_processingInstruction___java_lang_Stri
     _r2.o = n1;
     _r3.o = n2;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 407)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.documentHandler_;
     if (_r0.o == JAVA_NULL) goto label9;
     XMLVM_SOURCE_POSITION("XMLReaderAdapter.java", 408)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_xml_sax_helpers_XMLReaderAdapter*) _r1.o)->fields.org_xml_sax_helpers_XMLReaderAdapter.documentHandler_;
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_DocumentHandler_processingInstruction___java_lang_String_java_lang_String])(_r0.o, _r2.o, _r3.o);

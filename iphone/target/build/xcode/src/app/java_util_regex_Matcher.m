@@ -953,9 +953,12 @@ JAVA_OBJECT java_util_regex_Matcher_appendReplacement___java_lang_StringBuffer_j
     XMLVM_SOURCE_POSITION("Matcher.java", 96)
     XMLVM_CHECK_NPE(3)
     _r0.o = java_util_regex_Matcher_processReplacement___java_lang_String(_r3.o, _r5.o);
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.processedRepl_ = _r0.o;
     XMLVM_SOURCE_POSITION("Matcher.java", 97)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.string_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.appendPos_;
     //java_util_regex_Matcher_start__[11]
     XMLVM_CHECK_NPE(3)
@@ -966,6 +969,7 @@ JAVA_OBJECT java_util_regex_Matcher_appendReplacement___java_lang_StringBuffer_j
     XMLVM_CHECK_NPE(4)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_StringBuffer*) _r4.o)->tib->vtable[22])(_r4.o, _r0.o);
     XMLVM_SOURCE_POSITION("Matcher.java", 98)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.processedRepl_;
     XMLVM_CHECK_NPE(4)
     java_lang_StringBuffer_append___java_lang_String(_r4.o, _r0.o);
@@ -973,6 +977,7 @@ JAVA_OBJECT java_util_regex_Matcher_appendReplacement___java_lang_StringBuffer_j
     //java_util_regex_Matcher_end__[6]
     XMLVM_CHECK_NPE(3)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_util_regex_Matcher*) _r3.o)->tib->vtable[6])(_r3.o);
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.appendPos_ = _r0.i;
     XMLVM_SOURCE_POSITION("Matcher.java", 100)
     XMLVM_EXIT_METHOD()
@@ -1001,18 +1006,22 @@ JAVA_OBJECT java_util_regex_Matcher_processReplacement___java_lang_String(JAVA_O
     _r9.i = 1;
     _r8.i = 0;
     XMLVM_SOURCE_POSITION("Matcher.java", 107)
+    XMLVM_CHECK_NPE(10)
     _r0.o = ((java_util_regex_Matcher*) _r10.o)->fields.java_util_regex_Matcher.replacement_;
     if (_r0.o == JAVA_NULL) goto label52;
     XMLVM_SOURCE_POSITION("Matcher.java", 108)
+    XMLVM_CHECK_NPE(10)
     _r0.o = ((java_util_regex_Matcher*) _r10.o)->fields.java_util_regex_Matcher.replacement_;
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r11.o);
     if (_r0.i == 0) goto label52;
     XMLVM_SOURCE_POSITION("Matcher.java", 109)
+    XMLVM_CHECK_NPE(10)
     _r0.o = ((java_util_regex_Matcher*) _r10.o)->fields.java_util_regex_Matcher.replacementParts_;
     if (_r0.o != JAVA_NULL) goto label21;
     XMLVM_SOURCE_POSITION("Matcher.java", 110)
+    XMLVM_CHECK_NPE(10)
     _r0.o = ((java_util_regex_Matcher*) _r10.o)->fields.java_util_regex_Matcher.processedRepl_;
     label20:;
     XMLVM_SOURCE_POSITION("Matcher.java", 183)
@@ -1026,6 +1035,7 @@ JAVA_OBJECT java_util_regex_Matcher_processReplacement___java_lang_String(JAVA_O
     _r1 = _r8;
     label27:;
     XMLVM_SOURCE_POSITION("Matcher.java", 113)
+    XMLVM_CHECK_NPE(10)
     _r2.o = ((java_util_regex_Matcher*) _r10.o)->fields.java_util_regex_Matcher.replacementParts_;
     //java_util_ArrayList_size__[16]
     XMLVM_CHECK_NPE(2)
@@ -1038,6 +1048,7 @@ JAVA_OBJECT java_util_regex_Matcher_processReplacement___java_lang_String(JAVA_O
     goto label20;
     label40:;
     XMLVM_SOURCE_POSITION("Matcher.java", 114)
+    XMLVM_CHECK_NPE(10)
     _r2.o = ((java_util_regex_Matcher*) _r10.o)->fields.java_util_regex_Matcher.replacementParts_;
     //java_util_ArrayList_get___int[21]
     XMLVM_CHECK_NPE(2)
@@ -1048,6 +1059,7 @@ JAVA_OBJECT java_util_regex_Matcher_processReplacement___java_lang_String(JAVA_O
     goto label27;
     label52:;
     XMLVM_SOURCE_POSITION("Matcher.java", 120)
+    XMLVM_CHECK_NPE(10)
     ((java_util_regex_Matcher*) _r10.o)->fields.java_util_regex_Matcher.replacement_ = _r11.o;
     XMLVM_SOURCE_POSITION("Matcher.java", 121)
     XMLVM_CHECK_NPE(11)
@@ -1058,6 +1070,7 @@ JAVA_OBJECT java_util_regex_Matcher_processReplacement___java_lang_String(JAVA_O
     java_lang_StringBuilder___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("Matcher.java", 123)
     _r2.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(10)
     ((java_util_regex_Matcher*) _r10.o)->fields.java_util_regex_Matcher.replacementParts_ = _r2.o;
     _r2 = _r8;
     _r3 = _r8;
@@ -1067,12 +1080,14 @@ JAVA_OBJECT java_util_regex_Matcher_processReplacement___java_lang_String(JAVA_O
     _r5.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     if (_r4.i < _r5.i) goto label100;
     XMLVM_SOURCE_POSITION("Matcher.java", 179)
+    XMLVM_CHECK_NPE(10)
     _r0.o = ((java_util_regex_Matcher*) _r10.o)->fields.java_util_regex_Matcher.replacementParts_;
     if (_r0.o == JAVA_NULL) goto label95;
     XMLVM_CHECK_NPE(1)
     _r0.i = java_lang_AbstractStringBuilder_length__(_r1.o);
     if (_r3.i == _r0.i) goto label95;
     XMLVM_SOURCE_POSITION("Matcher.java", 180)
+    XMLVM_CHECK_NPE(10)
     _r0.o = ((java_util_regex_Matcher*) _r10.o)->fields.java_util_regex_Matcher.replacementParts_;
     XMLVM_SOURCE_POSITION("Matcher.java", 181)
     XMLVM_CHECK_NPE(1)
@@ -1124,12 +1139,14 @@ JAVA_OBJECT java_util_regex_Matcher_processReplacement___java_lang_String(JAVA_O
     _r6.i = 36;
     if (_r5.i != _r6.i) goto label213;
     XMLVM_SOURCE_POSITION("Matcher.java", 141)
+    XMLVM_CHECK_NPE(10)
     _r5.o = ((java_util_regex_Matcher*) _r10.o)->fields.java_util_regex_Matcher.replacementParts_;
     if (_r5.o != JAVA_NULL) goto label140;
     XMLVM_SOURCE_POSITION("Matcher.java", 142)
     _r5.o = __NEW_java_util_ArrayList();
     XMLVM_CHECK_NPE(5)
     java_util_ArrayList___INIT___(_r5.o);
+    XMLVM_CHECK_NPE(10)
     ((java_util_regex_Matcher*) _r10.o)->fields.java_util_regex_Matcher.replacementParts_ = _r5.o;
     label140:;
     XMLVM_TRY_BEGIN(w2135aaac14b1d107)
@@ -1147,6 +1164,7 @@ JAVA_OBJECT java_util_regex_Matcher_processReplacement___java_lang_String(JAVA_O
     _r6.i = java_lang_AbstractStringBuilder_length__(_r1.o);
     if (_r3.i == _r6.i) { XMLVM_MEMCPY(curThread_w2135aaac14b1d107->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w2135aaac14b1d107, sizeof(XMLVM_JMP_BUF)); goto label175; };
     XMLVM_SOURCE_POSITION("Matcher.java", 149)
+    XMLVM_CHECK_NPE(10)
     _r6.o = ((java_util_regex_Matcher*) _r10.o)->fields.java_util_regex_Matcher.replacementParts_;
     XMLVM_SOURCE_POSITION("Matcher.java", 150)
     XMLVM_CHECK_NPE(1)
@@ -1171,6 +1189,7 @@ JAVA_OBJECT java_util_regex_Matcher_processReplacement___java_lang_String(JAVA_O
     XMLVM_TRY_BEGIN(w2135aaac14b1d109)
     // Begin try
     XMLVM_SOURCE_POSITION("Matcher.java", 154)
+    XMLVM_CHECK_NPE(10)
     _r6.o = ((java_util_regex_Matcher*) _r10.o)->fields.java_util_regex_Matcher.replacementParts_;
     _r7.o = __NEW_java_util_regex_Matcher_1();
     XMLVM_CHECK_NPE(7)
@@ -1250,6 +1269,7 @@ JAVA_OBJECT java_util_regex_Matcher_reset___java_lang_CharSequence(JAVA_OBJECT m
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("Matcher.java", 202)
+    XMLVM_CHECK_NPE(2)
     ((java_util_regex_Matcher*) _r2.o)->fields.java_util_regex_Matcher.string_ = _r3.o;
     XMLVM_SOURCE_POSITION("Matcher.java", 203)
     XMLVM_CHECK_NPE(2)
@@ -1272,27 +1292,38 @@ JAVA_OBJECT java_util_regex_Matcher_reset__(JAVA_OBJECT me)
     _r5.o = me;
     _r4.i = 0;
     XMLVM_SOURCE_POSITION("Matcher.java", 215)
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_Matcher*) _r5.o)->fields.java_util_regex_Matcher.leftBound_ = _r4.i;
     XMLVM_SOURCE_POSITION("Matcher.java", 216)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_regex_Matcher*) _r5.o)->fields.java_util_regex_Matcher.string_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_CharSequence_length__])(_r0.o);
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_Matcher*) _r5.o)->fields.java_util_regex_Matcher.rightBound_ = _r0.i;
     XMLVM_SOURCE_POSITION("Matcher.java", 217)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_regex_Matcher*) _r5.o)->fields.java_util_regex_Matcher.matchResult_;
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_util_regex_Matcher*) _r5.o)->fields.java_util_regex_Matcher.string_;
+    XMLVM_CHECK_NPE(5)
     _r2.i = ((java_util_regex_Matcher*) _r5.o)->fields.java_util_regex_Matcher.leftBound_;
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_util_regex_Matcher*) _r5.o)->fields.java_util_regex_Matcher.rightBound_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_MatchResultImpl_reset___java_lang_CharSequence_int_int(_r0.o, _r1.o, _r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("Matcher.java", 218)
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_Matcher*) _r5.o)->fields.java_util_regex_Matcher.appendPos_ = _r4.i;
     XMLVM_SOURCE_POSITION("Matcher.java", 219)
     _r0.o = JAVA_NULL;
+    XMLVM_CHECK_NPE(5)
     ((java_util_regex_Matcher*) _r5.o)->fields.java_util_regex_Matcher.replacement_ = _r0.o;
     XMLVM_SOURCE_POSITION("Matcher.java", 220)
+    XMLVM_CHECK_NPE(5)
     _r0.o = ((java_util_regex_Matcher*) _r5.o)->fields.java_util_regex_Matcher.matchResult_;
     _r1.i = -1;
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_MatchResultImpl*) _r0.o)->fields.java_util_regex_MatchResultImpl.previousMatch_ = _r1.i;
     XMLVM_SOURCE_POSITION("Matcher.java", 221)
     XMLVM_EXIT_METHOD()
@@ -1320,10 +1351,12 @@ JAVA_OBJECT java_util_regex_Matcher_region___int_int(JAVA_OBJECT me, JAVA_INT n1
     if (_r5.i < 0) goto label23;
     if (_r6.i < 0) goto label23;
     XMLVM_SOURCE_POSITION("Matcher.java", 237)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_Matcher*) _r4.o)->fields.java_util_regex_Matcher.string_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_CharSequence_length__])(_r0.o);
     if (_r5.i > _r0.i) goto label23;
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_Matcher*) _r4.o)->fields.java_util_regex_Matcher.string_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_CharSequence_length__])(_r0.o);
@@ -1342,17 +1375,22 @@ JAVA_OBJECT java_util_regex_Matcher_region___int_int(JAVA_OBJECT me, JAVA_INT n1
     XMLVM_THROW_CUSTOM(_r0.o)
     label43:;
     XMLVM_SOURCE_POSITION("Matcher.java", 242)
+    XMLVM_CHECK_NPE(4)
     ((java_util_regex_Matcher*) _r4.o)->fields.java_util_regex_Matcher.leftBound_ = _r5.i;
     XMLVM_SOURCE_POSITION("Matcher.java", 243)
+    XMLVM_CHECK_NPE(4)
     ((java_util_regex_Matcher*) _r4.o)->fields.java_util_regex_Matcher.rightBound_ = _r6.i;
     XMLVM_SOURCE_POSITION("Matcher.java", 244)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_regex_Matcher*) _r4.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_MatchResultImpl_reset___java_lang_CharSequence_int_int(_r0.o, _r1.o, _r5.i, _r6.i);
     XMLVM_SOURCE_POSITION("Matcher.java", 245)
     _r0.i = 0;
+    XMLVM_CHECK_NPE(4)
     ((java_util_regex_Matcher*) _r4.o)->fields.java_util_regex_Matcher.appendPos_ = _r0.i;
     XMLVM_SOURCE_POSITION("Matcher.java", 246)
+    XMLVM_CHECK_NPE(4)
     ((java_util_regex_Matcher*) _r4.o)->fields.java_util_regex_Matcher.replacement_ = _r1.o;
     XMLVM_SOURCE_POSITION("Matcher.java", 248)
     XMLVM_EXIT_METHOD()
@@ -1372,8 +1410,11 @@ JAVA_OBJECT java_util_regex_Matcher_appendTail___java_lang_StringBuffer(JAVA_OBJ
     _r3.o = me;
     _r4.o = n1;
     XMLVM_SOURCE_POSITION("Matcher.java", 265)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.string_;
+    XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.appendPos_;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.string_;
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_CharSequence_length__])(_r2.o);
@@ -1421,6 +1462,7 @@ JAVA_OBJECT java_util_regex_Matcher_replaceFirst___java_lang_String(JAVA_OBJECT 
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label26:;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Matcher*) _r1.o)->fields.java_util_regex_Matcher.string_;
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_CharSequence_toString__])(_r0.o);
@@ -1474,6 +1516,7 @@ JAVA_OBJECT java_util_regex_Matcher_pattern__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Matcher.java", 312)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Matcher*) _r1.o)->fields.java_util_regex_Matcher.pat_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -1490,6 +1533,7 @@ JAVA_OBJECT java_util_regex_Matcher_group___int(JAVA_OBJECT me, JAVA_INT n1)
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("Matcher.java", 326)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Matcher*) _r1.o)->fields.java_util_regex_Matcher.matchResult_;
     //java_util_regex_MatchResultImpl_group___int[10]
     XMLVM_CHECK_NPE(0)
@@ -1528,6 +1572,7 @@ JAVA_BOOLEAN java_util_regex_Matcher_find___int(JAVA_OBJECT me, JAVA_INT n1)
     _r3.o = me;
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("Matcher.java", 352)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.string_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_CharSequence_length__])(_r0.o);
@@ -1551,11 +1596,13 @@ JAVA_BOOLEAN java_util_regex_Matcher_find___int(JAVA_OBJECT me, JAVA_INT n1)
     _r0.i = java_util_regex_Matcher_findAt___int(_r3.o, _r4.i);
     XMLVM_SOURCE_POSITION("Matcher.java", 359)
     if (_r0.i < 0) goto label47;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_regex_MatchResultImpl_isValid__(_r0.o);
     if (_r0.i == 0) goto label47;
     XMLVM_SOURCE_POSITION("Matcher.java", 360)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_MatchResultImpl_finalizeMatch__(_r0.o);
@@ -1567,8 +1614,10 @@ JAVA_BOOLEAN java_util_regex_Matcher_find___int(JAVA_OBJECT me, JAVA_INT n1)
     return _r0.i;
     label47:;
     XMLVM_SOURCE_POSITION("Matcher.java", 363)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.matchResult_;
     _r1.i = -1;
+    XMLVM_CHECK_NPE(0)
     ((java_util_regex_MatchResultImpl*) _r0.o)->fields.java_util_regex_MatchResultImpl.startIndex_ = _r1.i;
     _r0.i = 0;
     goto label46;
@@ -1587,21 +1636,27 @@ JAVA_INT java_util_regex_Matcher_findAt___int(JAVA_OBJECT me, JAVA_INT n1)
     _r3.o = me;
     _r4.i = n1;
     XMLVM_SOURCE_POSITION("Matcher.java", 368)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_MatchResultImpl_reset__(_r0.o);
     XMLVM_SOURCE_POSITION("Matcher.java", 369)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.matchResult_;
     _r1.i = java_util_regex_Matcher_GET_MODE_FIND();
     XMLVM_CHECK_NPE(0)
     java_util_regex_MatchResultImpl_setMode___int(_r0.o, _r1.i);
     XMLVM_SOURCE_POSITION("Matcher.java", 370)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_MatchResultImpl_setStartIndex___int(_r0.o, _r4.i);
     XMLVM_SOURCE_POSITION("Matcher.java", 371)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.start_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.string_;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.matchResult_;
     //java_util_regex_AbstractSet_find___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[7]
     XMLVM_CHECK_NPE(0)
@@ -1610,8 +1665,10 @@ JAVA_INT java_util_regex_Matcher_findAt___int(JAVA_OBJECT me, JAVA_INT n1)
     _r1.i = -1;
     if (_r0.i != _r1.i) goto label35;
     XMLVM_SOURCE_POSITION("Matcher.java", 373)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.matchResult_;
     _r2.i = 1;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_MatchResultImpl*) _r1.o)->fields.java_util_regex_MatchResultImpl.hitEnd_ = _r2.i;
     label35:;
     XMLVM_SOURCE_POSITION("Matcher.java", 375)
@@ -1630,6 +1687,7 @@ JAVA_BOOLEAN java_util_regex_Matcher_find__(JAVA_OBJECT me)
     XMLVMElem _r3;
     _r3.o = me;
     XMLVM_SOURCE_POSITION("Matcher.java", 387)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.string_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_CharSequence_length__])(_r0.o);
@@ -1638,46 +1696,62 @@ JAVA_BOOLEAN java_util_regex_Matcher_find__(JAVA_OBJECT me)
     _r1.i = java_util_regex_Matcher_hasTransparentBounds__(_r3.o);
     if (_r1.i != 0) goto label14;
     XMLVM_SOURCE_POSITION("Matcher.java", 389)
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.rightBound_;
     label14:;
     XMLVM_SOURCE_POSITION("Matcher.java", 390)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.matchResult_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_regex_MatchResultImpl*) _r1.o)->fields.java_util_regex_MatchResultImpl.startIndex_;
     if (_r1.i < 0) goto label79;
     XMLVM_SOURCE_POSITION("Matcher.java", 391)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(1)
     _r1.i = java_util_regex_MatchResultImpl_mode__(_r1.o);
     _r2.i = java_util_regex_Matcher_GET_MODE_FIND();
     if (_r1.i != _r2.i) goto label79;
     XMLVM_SOURCE_POSITION("Matcher.java", 392)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.matchResult_;
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.matchResult_;
     //java_util_regex_MatchResultImpl_end__[6]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_util_regex_MatchResultImpl*) _r2.o)->tib->vtable[6])(_r2.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_MatchResultImpl*) _r1.o)->fields.java_util_regex_MatchResultImpl.startIndex_ = _r2.i;
     XMLVM_SOURCE_POSITION("Matcher.java", 393)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.matchResult_;
     //java_util_regex_MatchResultImpl_end__[6]
     XMLVM_CHECK_NPE(1)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_util_regex_MatchResultImpl*) _r1.o)->tib->vtable[6])(_r1.o);
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.matchResult_;
     //java_util_regex_MatchResultImpl_start__[11]
     XMLVM_CHECK_NPE(2)
     _r2.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_util_regex_MatchResultImpl*) _r2.o)->tib->vtable[11])(_r2.o);
     if (_r1.i != _r2.i) goto label62;
     XMLVM_SOURCE_POSITION("Matcher.java", 394)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.matchResult_;
+    XMLVM_CHECK_NPE(1)
     _r2.i = ((java_util_regex_MatchResultImpl*) _r1.o)->fields.java_util_regex_MatchResultImpl.startIndex_;
     _r2.i = _r2.i + 1;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_MatchResultImpl*) _r1.o)->fields.java_util_regex_MatchResultImpl.startIndex_ = _r2.i;
     label62:;
     XMLVM_SOURCE_POSITION("Matcher.java", 397)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.matchResult_;
+    XMLVM_CHECK_NPE(1)
     _r1.i = ((java_util_regex_MatchResultImpl*) _r1.o)->fields.java_util_regex_MatchResultImpl.startIndex_;
     if (_r1.i > _r0.i) goto label77;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.matchResult_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_regex_MatchResultImpl*) _r0.o)->fields.java_util_regex_MatchResultImpl.startIndex_;
     XMLVM_CHECK_NPE(3)
     _r0.i = java_util_regex_Matcher_find___int(_r3.o, _r0.i);
@@ -1690,6 +1764,7 @@ JAVA_BOOLEAN java_util_regex_Matcher_find__(JAVA_OBJECT me)
     _r0.i = 0;
     goto label76;
     label79:;
+    XMLVM_CHECK_NPE(3)
     _r0.i = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.leftBound_;
     XMLVM_CHECK_NPE(3)
     _r0.i = java_util_regex_Matcher_find___int(_r3.o, _r0.i);
@@ -1707,6 +1782,7 @@ JAVA_INT java_util_regex_Matcher_start___int(JAVA_OBJECT me, JAVA_INT n1)
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("Matcher.java", 416)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Matcher*) _r1.o)->fields.java_util_regex_Matcher.matchResult_;
     //java_util_regex_MatchResultImpl_start___int[12]
     XMLVM_CHECK_NPE(0)
@@ -1726,6 +1802,7 @@ JAVA_INT java_util_regex_Matcher_end___int(JAVA_OBJECT me, JAVA_INT n1)
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("Matcher.java", 431)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Matcher*) _r1.o)->fields.java_util_regex_Matcher.matchResult_;
     //java_util_regex_MatchResultImpl_end___int[7]
     XMLVM_CHECK_NPE(0)
@@ -1744,6 +1821,7 @@ JAVA_BOOLEAN java_util_regex_Matcher_matches__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Matcher.java", 442)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_Matcher*) _r2.o)->fields.java_util_regex_Matcher.leftBound_;
     _r1.i = java_util_regex_Matcher_GET_MODE_MATCH();
     XMLVM_CHECK_NPE(2)
@@ -1856,6 +1934,7 @@ JAVA_BOOLEAN java_util_regex_Matcher_runMatch___java_util_regex_AbstractSet_int_
     _r3.i = n2;
     _r4.o = n3;
     XMLVM_SOURCE_POSITION("Matcher.java", 489)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Matcher*) _r1.o)->fields.java_util_regex_Matcher.string_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(2)
@@ -1885,6 +1964,7 @@ JAVA_BOOLEAN java_util_regex_Matcher_lookingAt__(JAVA_OBJECT me)
     XMLVMElem _r2;
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Matcher.java", 505)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_Matcher*) _r2.o)->fields.java_util_regex_Matcher.leftBound_;
     _r1.i = java_util_regex_Matcher_GET_MODE_FIND();
     XMLVM_CHECK_NPE(2)
@@ -1907,19 +1987,24 @@ JAVA_BOOLEAN java_util_regex_Matcher_lookingAt___int_int(JAVA_OBJECT me, JAVA_IN
     _r3.i = n1;
     _r4.i = n2;
     XMLVM_SOURCE_POSITION("Matcher.java", 509)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_Matcher*) _r2.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_MatchResultImpl_reset__(_r0.o);
     XMLVM_SOURCE_POSITION("Matcher.java", 510)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_Matcher*) _r2.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_MatchResultImpl_setMode___int(_r0.o, _r4.i);
     XMLVM_SOURCE_POSITION("Matcher.java", 511)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_Matcher*) _r2.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_MatchResultImpl_setStartIndex___int(_r0.o, _r3.i);
     XMLVM_SOURCE_POSITION("Matcher.java", 512)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_Matcher*) _r2.o)->fields.java_util_regex_Matcher.start_;
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_regex_Matcher*) _r2.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(2)
     _r0.i = java_util_regex_Matcher_runMatch___java_util_regex_AbstractSet_int_java_util_regex_MatchResultImpl(_r2.o, _r0.o, _r3.i, _r1.o);
@@ -1953,6 +2038,7 @@ JAVA_INT java_util_regex_Matcher_groupCount__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Matcher.java", 534)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Matcher*) _r1.o)->fields.java_util_regex_Matcher.matchResult_;
     //java_util_regex_MatchResultImpl_groupCount__[8]
     XMLVM_CHECK_NPE(0)
@@ -1987,6 +2073,7 @@ JAVA_OBJECT java_util_regex_Matcher_toMatchResult__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Matcher.java", 559)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Matcher*) _r1.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_util_regex_MatchResultImpl_cloneImpl__(_r0.o);
@@ -2005,6 +2092,7 @@ JAVA_OBJECT java_util_regex_Matcher_useAnchoringBounds___boolean(JAVA_OBJECT me,
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("Matcher.java", 573)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Matcher*) _r1.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_MatchResultImpl_useAnchoringBounds___boolean(_r0.o, _r2.i);
@@ -2022,6 +2110,7 @@ JAVA_BOOLEAN java_util_regex_Matcher_hasAnchoringBounds__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Matcher.java", 586)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Matcher*) _r1.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_regex_MatchResultImpl_hasAnchoringBounds__(_r0.o);
@@ -2040,6 +2129,7 @@ JAVA_OBJECT java_util_regex_Matcher_useTransparentBounds___boolean(JAVA_OBJECT m
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("Matcher.java", 600)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Matcher*) _r1.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_MatchResultImpl_useTransparentBounds___boolean(_r0.o, _r2.i);
@@ -2057,6 +2147,7 @@ JAVA_BOOLEAN java_util_regex_Matcher_hasTransparentBounds__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Matcher.java", 613)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Matcher*) _r1.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_regex_MatchResultImpl_hasTransparentBounds__(_r0.o);
@@ -2073,6 +2164,7 @@ JAVA_INT java_util_regex_Matcher_regionStart__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Matcher.java", 623)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Matcher*) _r1.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_regex_MatchResultImpl_getLeftBound__(_r0.o);
@@ -2089,6 +2181,7 @@ JAVA_INT java_util_regex_Matcher_regionEnd__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Matcher.java", 633)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Matcher*) _r1.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(0)
     _r0.i = java_util_regex_MatchResultImpl_getRightBound__(_r0.o);
@@ -2105,7 +2198,9 @@ JAVA_BOOLEAN java_util_regex_Matcher_requireEnd__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Matcher.java", 644)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Matcher*) _r1.o)->fields.java_util_regex_Matcher.matchResult_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_regex_MatchResultImpl*) _r0.o)->fields.java_util_regex_MatchResultImpl.requireEnd_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -2120,7 +2215,9 @@ JAVA_BOOLEAN java_util_regex_Matcher_hitEnd__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("Matcher.java", 653)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_Matcher*) _r1.o)->fields.java_util_regex_Matcher.matchResult_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_regex_MatchResultImpl*) _r0.o)->fields.java_util_regex_MatchResultImpl.hitEnd_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -2156,22 +2253,30 @@ JAVA_OBJECT java_util_regex_Matcher_usePattern___java_util_regex_Pattern(JAVA_OB
     XMLVM_THROW_CUSTOM(_r0.o)
     label14:;
     XMLVM_SOURCE_POSITION("Matcher.java", 670)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((java_util_regex_Matcher*) _r9.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(0)
     _r7.i = java_util_regex_MatchResultImpl_getPreviousMatchEnd__(_r0.o);
     XMLVM_SOURCE_POSITION("Matcher.java", 671)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((java_util_regex_Matcher*) _r9.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(0)
     _r8.i = java_util_regex_MatchResultImpl_mode__(_r0.o);
     XMLVM_SOURCE_POSITION("Matcher.java", 672)
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Matcher*) _r9.o)->fields.java_util_regex_Matcher.pat_ = _r10.o;
     XMLVM_SOURCE_POSITION("Matcher.java", 673)
+    XMLVM_CHECK_NPE(10)
     _r0.o = ((java_util_regex_Pattern*) _r10.o)->fields.java_util_regex_Pattern.start_;
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Matcher*) _r9.o)->fields.java_util_regex_Matcher.start_ = _r0.o;
     XMLVM_SOURCE_POSITION("Matcher.java", 674)
     _r0.o = __NEW_java_util_regex_MatchResultImpl();
+    XMLVM_CHECK_NPE(9)
     _r1.o = ((java_util_regex_Matcher*) _r9.o)->fields.java_util_regex_Matcher.string_;
+    XMLVM_CHECK_NPE(9)
     _r2.i = ((java_util_regex_Matcher*) _r9.o)->fields.java_util_regex_Matcher.leftBound_;
+    XMLVM_CHECK_NPE(9)
     _r3.i = ((java_util_regex_Matcher*) _r9.o)->fields.java_util_regex_Matcher.rightBound_;
     XMLVM_SOURCE_POSITION("Matcher.java", 675)
     XMLVM_CHECK_NPE(10)
@@ -2182,12 +2287,15 @@ JAVA_OBJECT java_util_regex_Matcher_usePattern___java_util_regex_Pattern(JAVA_OB
     _r6.i = java_util_regex_Pattern_consCount__(_r10.o);
     XMLVM_CHECK_NPE(0)
     java_util_regex_MatchResultImpl___INIT____java_lang_CharSequence_int_int_int_int_int(_r0.o, _r1.o, _r2.i, _r3.i, _r4.i, _r5.i, _r6.i);
+    XMLVM_CHECK_NPE(9)
     ((java_util_regex_Matcher*) _r9.o)->fields.java_util_regex_Matcher.matchResult_ = _r0.o;
     XMLVM_SOURCE_POSITION("Matcher.java", 676)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((java_util_regex_Matcher*) _r9.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_MatchResultImpl_setStartIndex___int(_r0.o, _r7.i);
     XMLVM_SOURCE_POSITION("Matcher.java", 677)
+    XMLVM_CHECK_NPE(9)
     _r0.o = ((java_util_regex_Matcher*) _r9.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(0)
     java_util_regex_MatchResultImpl_setMode___int(_r0.o, _r8.i);
@@ -2221,42 +2329,61 @@ void java_util_regex_Matcher___INIT____java_util_regex_Pattern_java_lang_CharSeq
     XMLVM_CHECK_NPE(7)
     java_lang_Object___INIT___(_r7.o);
     XMLVM_SOURCE_POSITION("Matcher.java", 57)
+    XMLVM_CHECK_NPE(7)
     ((java_util_regex_Matcher*) _r7.o)->fields.java_util_regex_Matcher.pat_ = _r0.o;
     XMLVM_SOURCE_POSITION("Matcher.java", 59)
+    XMLVM_CHECK_NPE(7)
     ((java_util_regex_Matcher*) _r7.o)->fields.java_util_regex_Matcher.start_ = _r0.o;
     XMLVM_SOURCE_POSITION("Matcher.java", 61)
+    XMLVM_CHECK_NPE(7)
     ((java_util_regex_Matcher*) _r7.o)->fields.java_util_regex_Matcher.string_ = _r0.o;
     XMLVM_SOURCE_POSITION("Matcher.java", 63)
+    XMLVM_CHECK_NPE(7)
     ((java_util_regex_Matcher*) _r7.o)->fields.java_util_regex_Matcher.matchResult_ = _r0.o;
     XMLVM_SOURCE_POSITION("Matcher.java", 66)
+    XMLVM_CHECK_NPE(7)
     ((java_util_regex_Matcher*) _r7.o)->fields.java_util_regex_Matcher.leftBound_ = _r1.i;
     XMLVM_SOURCE_POSITION("Matcher.java", 68)
+    XMLVM_CHECK_NPE(7)
     ((java_util_regex_Matcher*) _r7.o)->fields.java_util_regex_Matcher.rightBound_ = _r1.i;
     XMLVM_SOURCE_POSITION("Matcher.java", 71)
+    XMLVM_CHECK_NPE(7)
     ((java_util_regex_Matcher*) _r7.o)->fields.java_util_regex_Matcher.appendPos_ = _r2.i;
     XMLVM_SOURCE_POSITION("Matcher.java", 73)
+    XMLVM_CHECK_NPE(7)
     ((java_util_regex_Matcher*) _r7.o)->fields.java_util_regex_Matcher.replacement_ = _r0.o;
     XMLVM_SOURCE_POSITION("Matcher.java", 75)
+    XMLVM_CHECK_NPE(7)
     ((java_util_regex_Matcher*) _r7.o)->fields.java_util_regex_Matcher.processedRepl_ = _r0.o;
     XMLVM_SOURCE_POSITION("Matcher.java", 77)
+    XMLVM_CHECK_NPE(7)
     ((java_util_regex_Matcher*) _r7.o)->fields.java_util_regex_Matcher.replacementParts_ = _r0.o;
     XMLVM_SOURCE_POSITION("Matcher.java", 682)
+    XMLVM_CHECK_NPE(7)
     ((java_util_regex_Matcher*) _r7.o)->fields.java_util_regex_Matcher.pat_ = _r8.o;
     XMLVM_SOURCE_POSITION("Matcher.java", 683)
+    XMLVM_CHECK_NPE(8)
     _r0.o = ((java_util_regex_Pattern*) _r8.o)->fields.java_util_regex_Pattern.start_;
+    XMLVM_CHECK_NPE(7)
     ((java_util_regex_Matcher*) _r7.o)->fields.java_util_regex_Matcher.start_ = _r0.o;
     XMLVM_SOURCE_POSITION("Matcher.java", 684)
+    XMLVM_CHECK_NPE(7)
     ((java_util_regex_Matcher*) _r7.o)->fields.java_util_regex_Matcher.string_ = _r9.o;
     XMLVM_SOURCE_POSITION("Matcher.java", 685)
+    XMLVM_CHECK_NPE(7)
     ((java_util_regex_Matcher*) _r7.o)->fields.java_util_regex_Matcher.leftBound_ = _r2.i;
     XMLVM_SOURCE_POSITION("Matcher.java", 686)
+    XMLVM_CHECK_NPE(7)
     _r0.o = ((java_util_regex_Matcher*) _r7.o)->fields.java_util_regex_Matcher.string_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_CharSequence_length__])(_r0.o);
+    XMLVM_CHECK_NPE(7)
     ((java_util_regex_Matcher*) _r7.o)->fields.java_util_regex_Matcher.rightBound_ = _r0.i;
     XMLVM_SOURCE_POSITION("Matcher.java", 687)
     _r0.o = __NEW_java_util_regex_MatchResultImpl();
+    XMLVM_CHECK_NPE(7)
     _r2.i = ((java_util_regex_Matcher*) _r7.o)->fields.java_util_regex_Matcher.leftBound_;
+    XMLVM_CHECK_NPE(7)
     _r3.i = ((java_util_regex_Matcher*) _r7.o)->fields.java_util_regex_Matcher.rightBound_;
     XMLVM_SOURCE_POSITION("Matcher.java", 688)
     XMLVM_CHECK_NPE(8)
@@ -2268,6 +2395,7 @@ void java_util_regex_Matcher___INIT____java_util_regex_Pattern_java_lang_CharSeq
     _r1 = _r9;
     XMLVM_CHECK_NPE(0)
     java_util_regex_MatchResultImpl___INIT____java_lang_CharSequence_int_int_int_int_int(_r0.o, _r1.o, _r2.i, _r3.i, _r4.i, _r5.i, _r6.i);
+    XMLVM_CHECK_NPE(7)
     ((java_util_regex_Matcher*) _r7.o)->fields.java_util_regex_Matcher.matchResult_ = _r0.o;
     XMLVM_SOURCE_POSITION("Matcher.java", 689)
     XMLVM_EXIT_METHOD()
@@ -2315,6 +2443,7 @@ JAVA_OBJECT java_util_regex_Matcher_toString__(JAVA_OBJECT me)
     _r2.o = xmlvm_create_java_string_from_pool(136);
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.pat_;
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_Object(_r1.o, _r2.o);
@@ -2323,6 +2452,7 @@ JAVA_OBJECT java_util_regex_Matcher_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("Matcher.java", 699)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(2)
     _r2.i = java_util_regex_MatchResultImpl_getLeftBound__(_r2.o);
@@ -2333,6 +2463,7 @@ JAVA_OBJECT java_util_regex_Matcher_toString__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(1)
     _r1.o = java_lang_StringBuilder_append___java_lang_String(_r1.o, _r2.o);
     XMLVM_SOURCE_POSITION("Matcher.java", 700)
+    XMLVM_CHECK_NPE(3)
     _r2.o = ((java_util_regex_Matcher*) _r3.o)->fields.java_util_regex_Matcher.matchResult_;
     XMLVM_CHECK_NPE(2)
     _r2.i = java_util_regex_MatchResultImpl_getRightBound__(_r2.o);

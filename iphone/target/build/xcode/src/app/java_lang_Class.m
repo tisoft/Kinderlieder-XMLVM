@@ -1320,6 +1320,7 @@ void java_lang_Class___INIT____java_lang_Object(JAVA_OBJECT me, JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("Class.java", 128)
+    XMLVM_CHECK_NPE(0)
     ((java_lang_Class*) _r0.o)->fields.java_lang_Class.tib_ = _r1.o;
     XMLVM_SOURCE_POSITION("Class.java", 129)
     XMLVM_EXIT_METHOD()
@@ -1754,6 +1755,7 @@ JAVA_OBJECT java_lang_Class_getGenericInterfaces__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseForClass___java_lang_reflect_GenericDeclaration_java_lang_String(_r0.o, _r2.o, _r1.o);
     XMLVM_SOURCE_POSITION("Class.java", 634)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r0.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.interfaceTypes_;
     _r1.o = org_apache_harmony_luni_lang_reflect_Types_getClonedTypeArray___org_apache_harmony_luni_lang_reflect_ListOfTypes(_r1.o);
     XMLVM_EXIT_METHOD()
@@ -1780,6 +1782,7 @@ JAVA_OBJECT java_lang_Class_getGenericSuperclass__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseForClass___java_lang_reflect_GenericDeclaration_java_lang_String(_r0.o, _r2.o, _r1.o);
     XMLVM_SOURCE_POSITION("Class.java", 648)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r0.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.superclassType_;
     _r1.o = org_apache_harmony_luni_lang_reflect_Types_getType___java_lang_reflect_Type(_r1.o);
     XMLVM_EXIT_METHOD()
@@ -2120,6 +2123,7 @@ JAVA_OBJECT java_lang_Class_getTypeParameters__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     org_apache_harmony_luni_lang_reflect_GenericSignatureParser_parseForClass___java_lang_reflect_GenericDeclaration_java_lang_String(_r0.o, _r2.o, _r1.o);
     XMLVM_SOURCE_POSITION("Class.java", 887)
+    XMLVM_CHECK_NPE(0)
     _r1.o = ((org_apache_harmony_luni_lang_reflect_GenericSignatureParser*) _r0.o)->fields.org_apache_harmony_luni_lang_reflect_GenericSignatureParser.formalTypeParameters_;
     //java_lang_reflect_TypeVariable_1ARRAY_clone__[0]
     XMLVM_CHECK_NPE(1)

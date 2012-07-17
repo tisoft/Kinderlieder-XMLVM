@@ -239,6 +239,7 @@ void gnu_xml_dom_ImplementationList___INIT____java_util_List(JAVA_OBJECT me, JAV
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("ImplementationList.java", 57)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_dom_ImplementationList*) _r0.o)->fields.gnu_xml_dom_ImplementationList.list_ = _r1.o;
     XMLVM_SOURCE_POSITION("ImplementationList.java", 58)
     XMLVM_EXIT_METHOD()
@@ -254,6 +255,7 @@ JAVA_INT gnu_xml_dom_ImplementationList_getLength__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ImplementationList.java", 62)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_ImplementationList*) _r1.o)->fields.gnu_xml_dom_ImplementationList.list_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_size__])(_r0.o);
@@ -272,6 +274,7 @@ JAVA_OBJECT gnu_xml_dom_ImplementationList_item___int(JAVA_OBJECT me, JAVA_INT n
     _r1.o = me;
     _r2.i = n1;
     XMLVM_SOURCE_POSITION("ImplementationList.java", 67)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_dom_ImplementationList*) _r1.o)->fields.gnu_xml_dom_ImplementationList.list_;
     XMLVM_CHECK_NPE(0)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_get___int])(_r0.o, _r2.i);

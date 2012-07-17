@@ -319,12 +319,15 @@ void java_util_regex_SingleSet___INIT____java_util_regex_AbstractSet_java_util_r
     XMLVM_CHECK_NPE(1)
     java_util_regex_JointSet___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("SingleSet.java", 32)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_SingleSet*) _r1.o)->fields.java_util_regex_SingleSet.kid_ = _r2.o;
     XMLVM_SOURCE_POSITION("SingleSet.java", 33)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_JointSet*) _r1.o)->fields.java_util_regex_JointSet.fSet_ = _r3.o;
     XMLVM_SOURCE_POSITION("SingleSet.java", 34)
     XMLVM_CHECK_NPE(3)
     _r0.i = java_util_regex_FSet_getGroupIndex__(_r3.o);
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_JointSet*) _r1.o)->fields.java_util_regex_JointSet.groupIndex_ = _r0.i;
     XMLVM_SOURCE_POSITION("SingleSet.java", 35)
     XMLVM_EXIT_METHOD()
@@ -347,14 +350,17 @@ JAVA_INT java_util_regex_SingleSet_matches___int_java_lang_CharSequence_java_uti
     _r4.o = n2;
     _r5.o = n3;
     XMLVM_SOURCE_POSITION("SingleSet.java", 39)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((java_util_regex_JointSet*) _r2.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(5)
     _r0.i = java_util_regex_MatchResultImpl_getStart___int(_r5.o, _r0.i);
     XMLVM_SOURCE_POSITION("SingleSet.java", 40)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_regex_JointSet*) _r2.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(5)
     java_util_regex_MatchResultImpl_setStart___int_int(_r5.o, _r1.i, _r3.i);
     XMLVM_SOURCE_POSITION("SingleSet.java", 41)
+    XMLVM_CHECK_NPE(2)
     _r1.o = ((java_util_regex_SingleSet*) _r2.o)->fields.java_util_regex_SingleSet.kid_;
     //java_util_regex_AbstractSet_matches___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[13]
     XMLVM_CHECK_NPE(1)
@@ -369,6 +375,7 @@ JAVA_INT java_util_regex_SingleSet_matches___int_java_lang_CharSequence_java_uti
     return _r0.i;
     label21:;
     XMLVM_SOURCE_POSITION("SingleSet.java", 45)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_regex_JointSet*) _r2.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(5)
     java_util_regex_MatchResultImpl_setStart___int_int(_r5.o, _r1.i, _r0.i);
@@ -392,6 +399,7 @@ JAVA_INT java_util_regex_SingleSet_find___int_java_lang_CharSequence_java_util_r
     _r4.o = n2;
     _r5.o = n3;
     XMLVM_SOURCE_POSITION("SingleSet.java", 51)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_SingleSet*) _r2.o)->fields.java_util_regex_SingleSet.kid_;
     //java_util_regex_AbstractSet_find___int_java_lang_CharSequence_java_util_regex_MatchResultImpl[7]
     XMLVM_CHECK_NPE(0)
@@ -399,6 +407,7 @@ JAVA_INT java_util_regex_SingleSet_find___int_java_lang_CharSequence_java_util_r
     XMLVM_SOURCE_POSITION("SingleSet.java", 52)
     if (_r0.i < 0) goto label13;
     XMLVM_SOURCE_POSITION("SingleSet.java", 53)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_regex_JointSet*) _r2.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(5)
     java_util_regex_MatchResultImpl_setStart___int_int(_r5.o, _r1.i, _r0.i);
@@ -426,6 +435,7 @@ JAVA_INT java_util_regex_SingleSet_findBack___int_int_java_lang_CharSequence_jav
     _r5.o = n3;
     _r6.o = n4;
     XMLVM_SOURCE_POSITION("SingleSet.java", 59)
+    XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_regex_SingleSet*) _r2.o)->fields.java_util_regex_SingleSet.kid_;
     //java_util_regex_AbstractSet_findBack___int_int_java_lang_CharSequence_java_util_regex_MatchResultImpl[6]
     XMLVM_CHECK_NPE(0)
@@ -433,6 +443,7 @@ JAVA_INT java_util_regex_SingleSet_findBack___int_int_java_lang_CharSequence_jav
     XMLVM_SOURCE_POSITION("SingleSet.java", 60)
     if (_r0.i < 0) goto label13;
     XMLVM_SOURCE_POSITION("SingleSet.java", 61)
+    XMLVM_CHECK_NPE(2)
     _r1.i = ((java_util_regex_JointSet*) _r2.o)->fields.java_util_regex_JointSet.groupIndex_;
     XMLVM_CHECK_NPE(6)
     java_util_regex_MatchResultImpl_setStart___int_int(_r6.o, _r1.i, _r0.i);
@@ -453,6 +464,7 @@ JAVA_BOOLEAN java_util_regex_SingleSet_first___java_util_regex_AbstractSet(JAVA_
     _r1.o = me;
     _r2.o = n1;
     XMLVM_SOURCE_POSITION("SingleSet.java", 66)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_regex_SingleSet*) _r1.o)->fields.java_util_regex_SingleSet.kid_;
     //java_util_regex_AbstractSet_first___java_util_regex_AbstractSet[8]
     XMLVM_CHECK_NPE(0)
@@ -474,6 +486,7 @@ JAVA_OBJECT java_util_regex_SingleSet_processBackRefReplacement__(JAVA_OBJECT me
     XMLVM_CHECK_NPE(0)
     java_util_regex_BackReferencedSingleSet___INIT____java_util_regex_SingleSet(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("SingleSet.java", 84)
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_AbstractSet*) _r1.o)->fields.java_util_regex_AbstractSet.next_ = _r0.o;
     XMLVM_SOURCE_POSITION("SingleSet.java", 85)
     XMLVM_EXIT_METHOD()
@@ -492,26 +505,35 @@ void java_util_regex_SingleSet_processSecondPass__(JAVA_OBJECT me)
     _r3.o = me;
     _r2.i = 1;
     XMLVM_SOURCE_POSITION("SingleSet.java", 93)
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_AbstractSet*) _r3.o)->fields.java_util_regex_AbstractSet.isSecondPassVisited_ = _r2.i;
     XMLVM_SOURCE_POSITION("SingleSet.java", 95)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_JointSet*) _r3.o)->fields.java_util_regex_JointSet.fSet_;
     if (_r0.o == JAVA_NULL) goto label18;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_JointSet*) _r3.o)->fields.java_util_regex_JointSet.fSet_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_regex_AbstractSet*) _r0.o)->fields.java_util_regex_AbstractSet.isSecondPassVisited_;
     if (_r0.i != 0) goto label18;
     XMLVM_SOURCE_POSITION("SingleSet.java", 104)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_JointSet*) _r3.o)->fields.java_util_regex_JointSet.fSet_;
     //java_util_regex_AbstractSet_processSecondPass__[15]
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT)) ((java_util_regex_AbstractSet*) _r0.o)->tib->vtable[15])(_r0.o);
     label18:;
     XMLVM_SOURCE_POSITION("SingleSet.java", 107)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_SingleSet*) _r3.o)->fields.java_util_regex_SingleSet.kid_;
     if (_r0.o == JAVA_NULL) goto label47;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_SingleSet*) _r3.o)->fields.java_util_regex_SingleSet.kid_;
+    XMLVM_CHECK_NPE(0)
     _r0.i = ((java_util_regex_AbstractSet*) _r0.o)->fields.java_util_regex_AbstractSet.isSecondPassVisited_;
     if (_r0.i != 0) goto label47;
     XMLVM_SOURCE_POSITION("SingleSet.java", 112)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_SingleSet*) _r3.o)->fields.java_util_regex_SingleSet.kid_;
     //java_util_regex_AbstractSet_processBackRefReplacement__[14]
     XMLVM_CHECK_NPE(0)
@@ -519,12 +541,16 @@ void java_util_regex_SingleSet_processSecondPass__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("SingleSet.java", 114)
     if (_r0.o == JAVA_NULL) goto label42;
     XMLVM_SOURCE_POSITION("SingleSet.java", 115)
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((java_util_regex_SingleSet*) _r3.o)->fields.java_util_regex_SingleSet.kid_;
+    XMLVM_CHECK_NPE(1)
     ((java_util_regex_AbstractSet*) _r1.o)->fields.java_util_regex_AbstractSet.isSecondPassVisited_ = _r2.i;
     XMLVM_SOURCE_POSITION("SingleSet.java", 116)
+    XMLVM_CHECK_NPE(3)
     ((java_util_regex_SingleSet*) _r3.o)->fields.java_util_regex_SingleSet.kid_ = _r0.o;
     label42:;
     XMLVM_SOURCE_POSITION("SingleSet.java", 123)
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((java_util_regex_SingleSet*) _r3.o)->fields.java_util_regex_SingleSet.kid_;
     //java_util_regex_AbstractSet_processSecondPass__[15]
     XMLVM_CHECK_NPE(0)

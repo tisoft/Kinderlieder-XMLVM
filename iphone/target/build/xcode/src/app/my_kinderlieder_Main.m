@@ -6,6 +6,7 @@
 #include "java_lang_String.h"
 #include "java_lang_Thread.h"
 #include "java_util_List.h"
+#include "java_util_Map.h"
 #include "my_kinderlieder_Library.h"
 #include "my_kinderlieder_Main_1.h"
 #include "my_kinderlieder_RootViewController.h"
@@ -171,9 +172,13 @@ static JAVA_OBJECT* __method3_arg_types[] = {
 
 static JAVA_OBJECT* __method4_arg_types[] = {
     &__CLASS_org_xmlvm_iphone_UIApplication,
+    &__CLASS_java_util_Map,
 };
 
 static JAVA_OBJECT* __method5_arg_types[] = {
+};
+
+static JAVA_OBJECT* __method6_arg_types[] = {
     &__CLASS_java_lang_String_1ARRAY,
 };
 
@@ -214,18 +219,27 @@ static XMLVM_METHOD_REFLECTION_DATA __method_reflection_data[] = {
     "()V",
     JAVA_NULL,
     JAVA_NULL},
-    {"applicationDidFinishLaunching",
+    {"applicationDidFinishLaunchingWithOptions",
     &__method4_arg_types[0],
     sizeof(__method4_arg_types) / sizeof(JAVA_OBJECT*),
     JAVA_NULL,
     0,
     0,
-    "(Lorg/xmlvm/iphone/UIApplication;)V",
+    "(Lorg/xmlvm/iphone/UIApplication;Ljava/util/Map;)Z",
+    JAVA_NULL,
+    JAVA_NULL},
+    {"registerAudioSession",
+    &__method5_arg_types[0],
+    sizeof(__method5_arg_types) / sizeof(JAVA_OBJECT*),
+    JAVA_NULL,
+    0,
+    0,
+    "()V",
     JAVA_NULL,
     JAVA_NULL},
     {"main",
-    &__method5_arg_types[0],
-    sizeof(__method5_arg_types) / sizeof(JAVA_OBJECT*),
+    &__method6_arg_types[0],
+    sizeof(__method6_arg_types) / sizeof(JAVA_OBJECT*),
     JAVA_NULL,
     0,
     0,
@@ -256,9 +270,14 @@ static JAVA_OBJECT method_dispatcher(JAVA_OBJECT method, JAVA_OBJECT receiver, J
         my_kinderlieder_Main_registerCrashReporter__(receiver);
         break;
     case 4:
-        my_kinderlieder_Main_applicationDidFinishLaunching___org_xmlvm_iphone_UIApplication(receiver, argsArray[0]);
+        conversion.i = (JAVA_BOOLEAN) my_kinderlieder_Main_applicationDidFinishLaunchingWithOptions___org_xmlvm_iphone_UIApplication_java_util_Map(receiver, argsArray[0], argsArray[1]);
+        result = __NEW_java_lang_Boolean();
+        java_lang_Boolean___INIT____boolean(result, conversion.i);
         break;
     case 5:
+        my_kinderlieder_Main_registerAudioSession__(receiver);
+        break;
+    case 6:
         my_kinderlieder_Main_main___java_lang_String_1ARRAY(argsArray[0]);
         break;
     default:
@@ -303,7 +322,7 @@ void __INIT_IMPL_my_kinderlieder_Main()
     // Copy vtable from base class
     XMLVM_MEMCPY(__TIB_my_kinderlieder_Main.vtable, __TIB_org_xmlvm_iphone_UIApplicationDelegate.vtable, sizeof(__TIB_org_xmlvm_iphone_UIApplicationDelegate.vtable));
     // Initialize vtable for this class
-    __TIB_my_kinderlieder_Main.vtable[6] = (VTABLE_PTR) &my_kinderlieder_Main_applicationDidFinishLaunching___org_xmlvm_iphone_UIApplication;
+    __TIB_my_kinderlieder_Main.vtable[6] = (VTABLE_PTR) &my_kinderlieder_Main_applicationDidFinishLaunchingWithOptions___org_xmlvm_iphone_UIApplication_java_util_Map;
     xmlvm_init_native_my_kinderlieder_Main();
     // Initialize interface information
     __TIB_my_kinderlieder_Main.numImplementedInterfaces = 0;
@@ -487,7 +506,7 @@ void my_kinderlieder_Main___INIT___(JAVA_OBJECT me)
     XMLVM_ENTER_METHOD("my.kinderlieder.Main", "<init>", "?")
     XMLVMElem _r0;
     _r0.o = me;
-    XMLVM_SOURCE_POSITION("Main.java", 11)
+    XMLVM_SOURCE_POSITION("Main.java", 12)
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UIApplicationDelegate___INIT___(_r0.o);
     XMLVM_EXIT_METHOD()
@@ -508,16 +527,16 @@ void my_kinderlieder_Main_setSkipBackupAttribute___java_io_File(JAVA_OBJECT n1)
     XMLVMElem _r5;
     XMLVMElem _r6;
     _r6.o = n1;
-    XMLVM_SOURCE_POSITION("Main.java", 36)
+    XMLVM_SOURCE_POSITION("Main.java", 37)
     XMLVM_CHECK_NPE(6)
     _r5.o = java_io_File_getAbsolutePath__(_r6.o);
     org_xmlvm_iphone_NSFileManager_setSkipBackupAttribute___java_lang_String(_r5.o);
-    XMLVM_SOURCE_POSITION("Main.java", 37)
+    XMLVM_SOURCE_POSITION("Main.java", 38)
     XMLVM_CHECK_NPE(6)
     _r2.o = java_io_File_listFiles__(_r6.o);
     if (_r2.o == JAVA_NULL) goto label26;
-    XMLVM_SOURCE_POSITION("Main.java", 38)
     XMLVM_SOURCE_POSITION("Main.java", 39)
+    XMLVM_SOURCE_POSITION("Main.java", 40)
     _r0 = _r2;
     _r4.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r3.i = 0;
@@ -526,12 +545,12 @@ void my_kinderlieder_Main_setSkipBackupAttribute___java_io_File(JAVA_OBJECT n1)
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r3.i);
     _r1.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r3.i];
-    XMLVM_SOURCE_POSITION("Main.java", 40)
+    XMLVM_SOURCE_POSITION("Main.java", 41)
     my_kinderlieder_Main_setSkipBackupAttribute___java_io_File(_r1.o);
     _r3.i = _r3.i + 1;
     goto label16;
     label26:;
-    XMLVM_SOURCE_POSITION("Main.java", 43)
+    XMLVM_SOURCE_POSITION("Main.java", 44)
     XMLVM_EXIT_METHOD()
     return;
     //XMLVM_END_WRAPPER
@@ -544,9 +563,9 @@ void my_kinderlieder_Main_setAudioPlayer___org_xmlvm_iphone_AVAudioPlayer(JAVA_O
     XMLVM_ENTER_METHOD("my.kinderlieder.Main", "setAudioPlayer", "?")
     XMLVMElem _r0;
     _r0.o = n1;
-    XMLVM_SOURCE_POSITION("Main.java", 53)
-    my_kinderlieder_Main_PUT_audioPlayer( _r0.o);
     XMLVM_SOURCE_POSITION("Main.java", 54)
+    my_kinderlieder_Main_PUT_audioPlayer( _r0.o);
+    XMLVM_SOURCE_POSITION("Main.java", 55)
     XMLVM_EXIT_METHOD()
     return;
     //XMLVM_END_WRAPPER
@@ -558,7 +577,7 @@ JAVA_OBJECT my_kinderlieder_Main_getAudioPlayer__()
     //XMLVM_BEGIN_WRAPPER[my_kinderlieder_Main_getAudioPlayer__]
     XMLVM_ENTER_METHOD("my.kinderlieder.Main", "getAudioPlayer", "?")
     XMLVMElem _r0;
-    XMLVM_SOURCE_POSITION("Main.java", 57)
+    XMLVM_SOURCE_POSITION("Main.java", 58)
     _r0.o = my_kinderlieder_Main_GET_audioPlayer();
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -567,34 +586,40 @@ JAVA_OBJECT my_kinderlieder_Main_getAudioPlayer__()
 
 //XMLVM_NATIVE[void my_kinderlieder_Main_registerCrashReporter__(JAVA_OBJECT me)]
 
-void my_kinderlieder_Main_applicationDidFinishLaunching___org_xmlvm_iphone_UIApplication(JAVA_OBJECT me, JAVA_OBJECT n1)
+JAVA_BOOLEAN my_kinderlieder_Main_applicationDidFinishLaunchingWithOptions___org_xmlvm_iphone_UIApplication_java_util_Map(JAVA_OBJECT me, JAVA_OBJECT n1, JAVA_OBJECT n2)
 {
-    //XMLVM_BEGIN_WRAPPER[my_kinderlieder_Main_applicationDidFinishLaunching___org_xmlvm_iphone_UIApplication]
-    XMLVM_ENTER_METHOD("my.kinderlieder.Main", "applicationDidFinishLaunching", "?")
+    //XMLVM_BEGIN_WRAPPER[my_kinderlieder_Main_applicationDidFinishLaunchingWithOptions___org_xmlvm_iphone_UIApplication_java_util_Map]
+    XMLVM_ENTER_METHOD("my.kinderlieder.Main", "applicationDidFinishLaunchingWithOptions", "?")
     XMLVMElem _r0;
     XMLVMElem _r1;
     XMLVMElem _r2;
     XMLVMElem _r3;
     XMLVMElem _r4;
     XMLVMElem _r5;
-    _r4.o = me;
-    _r5.o = n1;
-    XMLVM_SOURCE_POSITION("Main.java", 64)
-    XMLVM_CHECK_NPE(4)
-    my_kinderlieder_Main_registerCrashReporter__(_r4.o);
+    XMLVMElem _r6;
+    XMLVMElem _r7;
+    _r5.o = me;
+    _r6.o = n1;
+    _r7.o = n2;
+    _r4.i = 1;
     XMLVM_SOURCE_POSITION("Main.java", 65)
+    XMLVM_CHECK_NPE(5)
+    my_kinderlieder_Main_registerCrashReporter__(_r5.o);
+    XMLVM_SOURCE_POSITION("Main.java", 66)
+    XMLVM_CHECK_NPE(5)
+    my_kinderlieder_Main_registerAudioSession__(_r5.o);
+    XMLVM_SOURCE_POSITION("Main.java", 67)
     _r1.o = __NEW_org_xmlvm_iphone_UIWindow();
     _r2.o = org_xmlvm_iphone_UIScreen_mainScreen__();
     XMLVM_CHECK_NPE(2)
     _r2.o = org_xmlvm_iphone_UIScreen_getBounds__(_r2.o);
     XMLVM_CHECK_NPE(1)
     org_xmlvm_iphone_UIWindow___INIT____org_xmlvm_iphone_CGRect(_r1.o, _r2.o);
-    XMLVM_SOURCE_POSITION("Main.java", 68)
-    _r2.o = org_xmlvm_iphone_UIApplication_sharedApplication__();
-    _r3.i = 1;
-    XMLVM_CHECK_NPE(2)
-    org_xmlvm_iphone_UIApplication_setIdleTimerDisabled___boolean(_r2.o, _r3.i);
     XMLVM_SOURCE_POSITION("Main.java", 70)
+    _r2.o = org_xmlvm_iphone_UIApplication_sharedApplication__();
+    XMLVM_CHECK_NPE(2)
+    org_xmlvm_iphone_UIApplication_setIdleTimerDisabled___boolean(_r2.o, _r4.i);
+    XMLVM_SOURCE_POSITION("Main.java", 72)
     _r2.o = __NEW_my_kinderlieder_RootViewController();
     _r3.o = my_kinderlieder_Main_GET_library();
     XMLVM_CHECK_NPE(3)
@@ -602,41 +627,43 @@ void my_kinderlieder_Main_applicationDidFinishLaunching___org_xmlvm_iphone_UIApp
     XMLVM_CHECK_NPE(2)
     my_kinderlieder_RootViewController___INIT____org_xmlvm_iphone_UIWindow_java_util_List(_r2.o, _r1.o, _r3.o);
     my_kinderlieder_Main_PUT_rootViewController( _r2.o);
-    XMLVM_SOURCE_POSITION("Main.java", 71)
+    XMLVM_SOURCE_POSITION("Main.java", 73)
     _r2.o = __NEW_org_xmlvm_iphone_UINavigationController();
     _r3.o = my_kinderlieder_Main_GET_rootViewController();
     XMLVM_CHECK_NPE(2)
     org_xmlvm_iphone_UINavigationController___INIT____org_xmlvm_iphone_UIViewController(_r2.o, _r3.o);
     my_kinderlieder_Main_PUT_navigationController( _r2.o);
-    XMLVM_SOURCE_POSITION("Main.java", 72)
+    XMLVM_SOURCE_POSITION("Main.java", 74)
     _r2.o = my_kinderlieder_Main_GET_navigationController();
     _r3.i = 0;
     XMLVM_CHECK_NPE(2)
     org_xmlvm_iphone_UINavigationController_setToolbarHidden___boolean(_r2.o, _r3.i);
-    XMLVM_SOURCE_POSITION("Main.java", 84)
+    XMLVM_SOURCE_POSITION("Main.java", 86)
     _r2.o = my_kinderlieder_Main_GET_navigationController();
     XMLVM_CHECK_NPE(2)
     _r2.o = org_xmlvm_iphone_UIViewController_getView__(_r2.o);
     XMLVM_CHECK_NPE(1)
     org_xmlvm_iphone_UIView_addSubview___org_xmlvm_iphone_UIView(_r1.o, _r2.o);
-    XMLVM_SOURCE_POSITION("Main.java", 86)
+    XMLVM_SOURCE_POSITION("Main.java", 88)
     XMLVM_CHECK_NPE(1)
     org_xmlvm_iphone_UIWindow_makeKeyAndVisible__(_r1.o);
-    XMLVM_SOURCE_POSITION("Main.java", 89)
+    XMLVM_SOURCE_POSITION("Main.java", 91)
     _r0.o = __NEW_my_kinderlieder_Main_1();
     XMLVM_CHECK_NPE(0)
-    my_kinderlieder_Main_1___INIT____my_kinderlieder_Main(_r0.o, _r4.o);
-    XMLVM_SOURCE_POSITION("Main.java", 104)
+    my_kinderlieder_Main_1___INIT____my_kinderlieder_Main(_r0.o, _r5.o);
+    XMLVM_SOURCE_POSITION("Main.java", 106)
     _r2.o = __NEW_java_lang_Thread();
     XMLVM_CHECK_NPE(2)
     java_lang_Thread___INIT____java_lang_Runnable(_r2.o, _r0.o);
     XMLVM_CHECK_NPE(2)
     java_lang_Thread_start__(_r2.o);
-    XMLVM_SOURCE_POSITION("Main.java", 106)
+    XMLVM_SOURCE_POSITION("Main.java", 108)
     XMLVM_EXIT_METHOD()
-    return;
+    return _r4.i;
     //XMLVM_END_WRAPPER
 }
+
+//XMLVM_NATIVE[void my_kinderlieder_Main_registerAudioSession__(JAVA_OBJECT me)]
 
 void my_kinderlieder_Main_main___java_lang_String_1ARRAY(JAVA_OBJECT n1)
 {
@@ -647,12 +674,12 @@ void my_kinderlieder_Main_main___java_lang_String_1ARRAY(JAVA_OBJECT n1)
     XMLVMElem _r1;
     XMLVMElem _r2;
     _r2.o = n1;
-    XMLVM_SOURCE_POSITION("Main.java", 109)
+    XMLVM_SOURCE_POSITION("Main.java", 114)
     _r0.o = JAVA_NULL;
     if (!__TIB_my_kinderlieder_Main.classInitialized) __INIT_my_kinderlieder_Main();
     _r1.o = __CLASS_my_kinderlieder_Main;
     org_xmlvm_iphone_UIApplication_main___java_lang_String_1ARRAY_java_lang_Class_java_lang_Class(_r2.o, _r0.o, _r1.o);
-    XMLVM_SOURCE_POSITION("Main.java", 110)
+    XMLVM_SOURCE_POSITION("Main.java", 115)
     XMLVM_EXIT_METHOD()
     return;
     //XMLVM_END_WRAPPER
@@ -666,7 +693,7 @@ void my_kinderlieder_Main___CLINIT_()
     XMLVMElem _r1;
     XMLVMElem _r2;
     XMLVMElem _r3;
-    XMLVM_SOURCE_POSITION("Main.java", 15)
+    XMLVM_SOURCE_POSITION("Main.java", 16)
     _r0.o = __NEW_java_io_File();
     _r1.o = org_xmlvm_iphone_NSBundle_mainBundle__();
     // "info"
@@ -680,12 +707,12 @@ void my_kinderlieder_Main___CLINIT_()
     XMLVM_CHECK_NPE(0)
     _r0.o = java_io_File_getParentFile__(_r0.o);
     my_kinderlieder_Main_PUT_APP_DIR( _r0.o);
-    XMLVM_SOURCE_POSITION("Main.java", 23)
+    XMLVM_SOURCE_POSITION("Main.java", 24)
     _r0.o = my_kinderlieder_Main_GET_APP_DIR();
     XMLVM_CHECK_NPE(0)
     _r0.o = java_io_File_getParentFile__(_r0.o);
     my_kinderlieder_Main_PUT_ROOT_DIR( _r0.o);
-    XMLVM_SOURCE_POSITION("Main.java", 24)
+    XMLVM_SOURCE_POSITION("Main.java", 25)
     _r0.o = __NEW_java_io_File();
     _r1.o = my_kinderlieder_Main_GET_ROOT_DIR();
     // "Library"
@@ -693,7 +720,7 @@ void my_kinderlieder_Main___CLINIT_()
     XMLVM_CHECK_NPE(0)
     java_io_File___INIT____java_io_File_java_lang_String(_r0.o, _r1.o, _r2.o);
     my_kinderlieder_Main_PUT_LIBRARY_DIR( _r0.o);
-    XMLVM_SOURCE_POSITION("Main.java", 25)
+    XMLVM_SOURCE_POSITION("Main.java", 26)
     _r0.o = __NEW_java_io_File();
     _r1.o = my_kinderlieder_Main_GET_LIBRARY_DIR();
     // "Caches"
@@ -701,7 +728,7 @@ void my_kinderlieder_Main___CLINIT_()
     XMLVM_CHECK_NPE(0)
     java_io_File___INIT____java_io_File_java_lang_String(_r0.o, _r1.o, _r2.o);
     my_kinderlieder_Main_PUT_CACHES_DIR( _r0.o);
-    XMLVM_SOURCE_POSITION("Main.java", 27)
+    XMLVM_SOURCE_POSITION("Main.java", 28)
     _r0.o = __NEW_java_io_File();
     _r1.o = my_kinderlieder_Main_GET_CACHES_DIR();
     // "products"
@@ -709,19 +736,19 @@ void my_kinderlieder_Main___CLINIT_()
     XMLVM_CHECK_NPE(0)
     java_io_File___INIT____java_io_File_java_lang_String(_r0.o, _r1.o, _r2.o);
     my_kinderlieder_Main_PUT_PRODUCTS_DIR( _r0.o);
-    XMLVM_SOURCE_POSITION("Main.java", 30)
+    XMLVM_SOURCE_POSITION("Main.java", 31)
     _r0.o = my_kinderlieder_Main_GET_PRODUCTS_DIR();
     XMLVM_CHECK_NPE(0)
     java_io_File_mkdirs__(_r0.o);
-    XMLVM_SOURCE_POSITION("Main.java", 31)
+    XMLVM_SOURCE_POSITION("Main.java", 32)
     _r0.o = __NEW_my_kinderlieder_Library();
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_Library___INIT___(_r0.o);
     my_kinderlieder_Main_PUT_library( _r0.o);
-    XMLVM_SOURCE_POSITION("Main.java", 32)
+    XMLVM_SOURCE_POSITION("Main.java", 33)
     _r0.o = my_kinderlieder_Main_GET_PRODUCTS_DIR();
     my_kinderlieder_Main_setSkipBackupAttribute___java_io_File(_r0.o);
-    XMLVM_SOURCE_POSITION("Main.java", 33)
+    XMLVM_SOURCE_POSITION("Main.java", 34)
     XMLVM_EXIT_METHOD()
     return;
     //XMLVM_END_WRAPPER

@@ -600,21 +600,26 @@ JAVA_OBJECT java_nio_ReadOnlyHeapByteBuffer_copy___java_nio_HeapByteBuffer_int(J
     XMLVM_SOURCE_POSITION("ReadOnlyHeapByteBuffer.java", 35)
     _r0.o = __NEW_java_nio_ReadOnlyHeapByteBuffer();
     XMLVM_SOURCE_POSITION("ReadOnlyHeapByteBuffer.java", 36)
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((java_nio_HeapByteBuffer*) _r4.o)->fields.java_nio_HeapByteBuffer.backingArray_;
     XMLVM_CHECK_NPE(4)
     _r2.i = java_nio_Buffer_capacity__(_r4.o);
+    XMLVM_CHECK_NPE(4)
     _r3.i = ((java_nio_HeapByteBuffer*) _r4.o)->fields.java_nio_HeapByteBuffer.offset_;
     XMLVM_CHECK_NPE(0)
     java_nio_ReadOnlyHeapByteBuffer___INIT____byte_1ARRAY_int_int(_r0.o, _r1.o, _r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("ReadOnlyHeapByteBuffer.java", 37)
     XMLVM_CHECK_NPE(4)
     _r1.i = java_nio_Buffer_limit__(_r4.o);
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.limit_ = _r1.i;
     XMLVM_SOURCE_POSITION("ReadOnlyHeapByteBuffer.java", 38)
     XMLVM_CHECK_NPE(4)
     _r1.i = java_nio_Buffer_position__(_r4.o);
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.position_ = _r1.i;
     XMLVM_SOURCE_POSITION("ReadOnlyHeapByteBuffer.java", 39)
+    XMLVM_CHECK_NPE(0)
     ((java_nio_Buffer*) _r0.o)->fields.java_nio_Buffer.mark_ = _r5.i;
     XMLVM_SOURCE_POSITION("ReadOnlyHeapByteBuffer.java", 40)
     XMLVM_CHECK_NPE(4)
@@ -656,6 +661,7 @@ JAVA_OBJECT java_nio_ReadOnlyHeapByteBuffer_asReadOnlyBuffer__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReadOnlyHeapByteBuffer.java", 50)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.mark_;
     _r0.o = java_nio_ReadOnlyHeapByteBuffer_copy___java_nio_HeapByteBuffer_int(_r1.o, _r0.i);
     XMLVM_EXIT_METHOD()
@@ -686,6 +692,7 @@ JAVA_OBJECT java_nio_ReadOnlyHeapByteBuffer_duplicate__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("ReadOnlyHeapByteBuffer.java", 60)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((java_nio_Buffer*) _r1.o)->fields.java_nio_Buffer.mark_;
     _r0.o = java_nio_ReadOnlyHeapByteBuffer_copy___java_nio_HeapByteBuffer_int(_r1.o, _r0.i);
     XMLVM_EXIT_METHOD()
@@ -1022,17 +1029,22 @@ JAVA_OBJECT java_nio_ReadOnlyHeapByteBuffer_slice__(JAVA_OBJECT me)
     _r5.o = me;
     XMLVM_SOURCE_POSITION("ReadOnlyHeapByteBuffer.java", 155)
     _r0.o = __NEW_java_nio_ReadOnlyHeapByteBuffer();
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_nio_HeapByteBuffer*) _r5.o)->fields.java_nio_HeapByteBuffer.backingArray_;
     XMLVM_SOURCE_POSITION("ReadOnlyHeapByteBuffer.java", 156)
     XMLVM_CHECK_NPE(5)
     _r2.i = java_nio_Buffer_remaining__(_r5.o);
+    XMLVM_CHECK_NPE(5)
     _r3.i = ((java_nio_HeapByteBuffer*) _r5.o)->fields.java_nio_HeapByteBuffer.offset_;
+    XMLVM_CHECK_NPE(5)
     _r4.i = ((java_nio_Buffer*) _r5.o)->fields.java_nio_Buffer.position_;
     _r3.i = _r3.i + _r4.i;
     XMLVM_CHECK_NPE(0)
     java_nio_ReadOnlyHeapByteBuffer___INIT____byte_1ARRAY_int_int(_r0.o, _r1.o, _r2.i, _r3.i);
     XMLVM_SOURCE_POSITION("ReadOnlyHeapByteBuffer.java", 157)
+    XMLVM_CHECK_NPE(5)
     _r1.o = ((java_nio_ByteBuffer*) _r5.o)->fields.java_nio_ByteBuffer.order_;
+    XMLVM_CHECK_NPE(0)
     ((java_nio_ByteBuffer*) _r0.o)->fields.java_nio_ByteBuffer.order_ = _r1.o;
     XMLVM_SOURCE_POSITION("ReadOnlyHeapByteBuffer.java", 158)
     XMLVM_EXIT_METHOD()

@@ -346,16 +346,20 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration___
     XMLVM_CHECK_NPE(2)
     java_lang_Object___INIT___(_r2.o);
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 44)
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r2.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.uri_ = _r3.o;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 45)
     XMLVM_CHECK_NPE(3)
     _r0.o = java_net_URI_getHost__(_r3.o);
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r2.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.hostName_ = _r0.o;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 46)
     XMLVM_CHECK_NPE(3)
     _r0.i = java_net_URI_getPort__(_r3.o);
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r2.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.hostPort_ = _r0.i;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 47)
+    XMLVM_CHECK_NPE(2)
     _r0.i = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r2.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.hostPort_;
     _r1.i = -1;
     if (_r0.i != _r1.i) goto label38;
@@ -370,6 +374,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration___
     if (_r0.i == 0) goto label39;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 49)
     _r0.i = 443;
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r2.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.hostPort_ = _r0.i;
     label38:;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 54)
@@ -378,6 +383,7 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration___
     label39:;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 51)
     _r0.i = 80;
+    XMLVM_CHECK_NPE(2)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r2.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.hostPort_ = _r0.i;
     goto label38;
     //XMLVM_END_WRAPPER
@@ -403,8 +409,10 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration___
     XMLVM_CHECK_NPE(4)
     java_lang_Object___INIT___(_r4.o);
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 57)
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r4.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.uri_ = _r5.o;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 58)
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r4.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.proxy_ = _r6.o;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 59)
     XMLVM_CHECK_NPE(6)
@@ -436,13 +444,16 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration___
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 66)
     XMLVM_CHECK_NPE(0)
     _r1.o = java_net_InetSocketAddress_getHostName__(_r0.o);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r4.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.hostName_ = _r1.o;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 67)
     XMLVM_CHECK_NPE(0)
     _r0.i = java_net_InetSocketAddress_getPort__(_r0.o);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r4.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.hostPort_ = _r0.i;
     label55:;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 80)
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r4.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.uri_ = _r5.o;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 81)
     XMLVM_CHECK_NPE(6)
@@ -467,12 +478,15 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration___
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 70)
     XMLVM_CHECK_NPE(5)
     _r0.o = java_net_URI_getHost__(_r5.o);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r4.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.hostName_ = _r0.o;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 71)
     XMLVM_CHECK_NPE(5)
     _r0.i = java_net_URI_getPort__(_r5.o);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r4.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.hostPort_ = _r0.i;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 72)
+    XMLVM_CHECK_NPE(4)
     _r0.i = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r4.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.hostPort_;
     _r1.i = -1;
     if (_r0.i != _r1.i) goto label55;
@@ -487,11 +501,13 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration___
     if (_r0.i == 0) goto label115;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 74)
     _r0.i = 443;
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r4.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.hostPort_ = _r0.i;
     goto label55;
     label115:;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 76)
     _r0.i = 80;
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r4.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.hostPort_ = _r0.i;
     goto label55;
     label120:;
@@ -500,10 +516,12 @@ void org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration___
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 87)
     XMLVM_CHECK_NPE(0)
     _r1.o = java_net_InetSocketAddress_getHostName__(_r0.o);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r4.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.hostName_ = _r1.o;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 88)
     XMLVM_CHECK_NPE(0)
     _r0.i = java_net_InetSocketAddress_getPort__(_r0.o);
+    XMLVM_CHECK_NPE(4)
     ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r4.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.hostPort_ = _r0.i;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 89)
     XMLVM_EXIT_METHOD()
@@ -519,6 +537,7 @@ JAVA_BOOLEAN org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfigur
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 95)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r1.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.proxy_;
     if (_r0.o == JAVA_NULL) goto label6;
     _r0.i = 1;
@@ -539,6 +558,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfigura
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 103)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r1.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.proxy_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -553,6 +573,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfigura
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 110)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r1.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.hostName_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -567,6 +588,7 @@ JAVA_INT org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguratio
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 117)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r1.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.hostPort_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -599,18 +621,24 @@ JAVA_BOOLEAN org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfigur
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 125)
     _r4.o = _r4.o;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 126)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r4.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.proxy_;
     if (_r0.o == JAVA_NULL) goto label41;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r3.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.proxy_;
     if (_r0.o == JAVA_NULL) goto label41;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 127)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r4.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.proxy_;
+    XMLVM_CHECK_NPE(3)
     _r1.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r3.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.proxy_;
     //java_net_Proxy_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_net_Proxy*) _r0.o)->tib->vtable[1])(_r0.o, _r1.o);
     if (_r0.i == 0) goto label39;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r3.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.uri_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r4.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.uri_;
     //java_net_URI_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -622,7 +650,9 @@ JAVA_BOOLEAN org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfigur
     _r0 = _r2;
     goto label6;
     label41:;
+    XMLVM_CHECK_NPE(3)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r3.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.uri_;
+    XMLVM_CHECK_NPE(4)
     _r1.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r4.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.uri_;
     //java_net_URI_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(0)
@@ -639,6 +669,7 @@ JAVA_INT org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguratio
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("HttpConfiguration.java", 135)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration*) _r1.o)->fields.org_apache_harmony_luni_internal_net_www_protocol_http_HttpConfiguration.uri_;
     //java_net_URI_hashCode__[4]
     XMLVM_CHECK_NPE(0)

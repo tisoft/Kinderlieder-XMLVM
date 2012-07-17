@@ -341,6 +341,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableMap_UnmodifiableEntrySet_toArray__
     XMLVMElem _r4;
     _r4.o = me;
     XMLVM_SOURCE_POSITION("Collections.java", 1278)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((java_util_Collections_UnmodifiableCollection*) _r4.o)->fields.java_util_Collections_UnmodifiableCollection.c_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_size__])(_r0.o);
@@ -384,6 +385,7 @@ JAVA_OBJECT java_util_Collections_UnmodifiableMap_UnmodifiableEntrySet_toArray__
     _r6.o = me;
     _r7.o = n1;
     XMLVM_SOURCE_POSITION("Collections.java", 1290)
+    XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_Collections_UnmodifiableCollection*) _r6.o)->fields.java_util_Collections_UnmodifiableCollection.c_;
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Collection_size__])(_r0.o);

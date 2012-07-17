@@ -566,22 +566,27 @@ void org_apache_harmony_niochar_CharsetProviderImpl___INIT___(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(4)
     java_util_HashMap___INIT___(_r4.o);
     _r4.o = java_util_Collections_synchronizedMap___java_util_Map(_r4.o);
+    XMLVM_CHECK_NPE(7)
     ((org_apache_harmony_niochar_CharsetProviderImpl*) _r7.o)->fields.org_apache_harmony_niochar_CharsetProviderImpl.cache_ = _r4.o;
     XMLVM_SOURCE_POSITION("CharsetProviderImpl.java", 143)
     XMLVM_CHECK_NPE(7)
     _r4.o = org_apache_harmony_niochar_CharsetProviderImpl_getCharsetsInfo__(_r7.o);
+    XMLVM_CHECK_NPE(7)
     ((org_apache_harmony_niochar_CharsetProviderImpl*) _r7.o)->fields.org_apache_harmony_niochar_CharsetProviderImpl.charsets_ = _r4.o;
     XMLVM_SOURCE_POSITION("CharsetProviderImpl.java", 144)
     XMLVM_CHECK_NPE(7)
     _r4.o = org_apache_harmony_niochar_CharsetProviderImpl_getPackageName__(_r7.o);
+    XMLVM_CHECK_NPE(7)
     ((org_apache_harmony_niochar_CharsetProviderImpl*) _r7.o)->fields.org_apache_harmony_niochar_CharsetProviderImpl.packageName_ = _r4.o;
     XMLVM_SOURCE_POSITION("CharsetProviderImpl.java", 145)
     _r3.i = 0;
     label27:;
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((org_apache_harmony_niochar_CharsetProviderImpl*) _r7.o)->fields.org_apache_harmony_niochar_CharsetProviderImpl.charsets_;
     _r4.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r4.o));
     if (_r3.i >= _r4.i) goto label70;
     XMLVM_SOURCE_POSITION("CharsetProviderImpl.java", 146)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((org_apache_harmony_niochar_CharsetProviderImpl*) _r7.o)->fields.org_apache_harmony_niochar_CharsetProviderImpl.charsets_;
     XMLVM_CHECK_NPE(4)
     XMLVM_CHECK_ARRAY_BOUNDS(_r4.o, _r3.i);
@@ -600,11 +605,13 @@ void org_apache_harmony_niochar_CharsetProviderImpl___INIT___(JAVA_OBJECT me)
     _r4.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     if (_r1.i >= _r4.i) goto label67;
     XMLVM_SOURCE_POSITION("CharsetProviderImpl.java", 148)
+    XMLVM_CHECK_NPE(7)
     _r4.o = ((org_apache_harmony_niochar_CharsetProviderImpl*) _r7.o)->fields.org_apache_harmony_niochar_CharsetProviderImpl.cache_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r1.i);
     _r5.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r2.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i];
     _r5.o = org_apache_harmony_niochar_CharsetProviderImpl_toUpperCase___java_lang_String(_r5.o);
+    XMLVM_CHECK_NPE(7)
     _r6.o = ((org_apache_harmony_niochar_CharsetProviderImpl*) _r7.o)->fields.org_apache_harmony_niochar_CharsetProviderImpl.charsets_;
     XMLVM_CHECK_NPE(6)
     XMLVM_CHECK_ARRAY_BOUNDS(_r6.o, _r3.i);
@@ -640,10 +647,12 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_charsets__(JAVA_OBJEC
     _r0.i = 0;
     label6:;
     XMLVM_SOURCE_POSITION("CharsetProviderImpl.java", 161)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((org_apache_harmony_niochar_CharsetProviderImpl*) _r4.o)->fields.org_apache_harmony_niochar_CharsetProviderImpl.charsets_;
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
     if (_r0.i >= _r2.i) goto label35;
     XMLVM_SOURCE_POSITION("CharsetProviderImpl.java", 162)
+    XMLVM_CHECK_NPE(4)
     _r2.o = ((org_apache_harmony_niochar_CharsetProviderImpl*) _r4.o)->fields.org_apache_harmony_niochar_CharsetProviderImpl.charsets_;
     XMLVM_CHECK_NPE(2)
     XMLVM_CHECK_ARRAY_BOUNDS(_r2.o, _r0.i);
@@ -698,6 +707,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_charsetForName___java
     _r8.i = 0;
     _r7.i = 1;
     XMLVM_SOURCE_POSITION("CharsetProviderImpl.java", 180)
+    XMLVM_CHECK_NPE(10)
     _r5.o = ((org_apache_harmony_niochar_CharsetProviderImpl*) _r10.o)->fields.org_apache_harmony_niochar_CharsetProviderImpl.cache_;
     _r6.o = org_apache_harmony_niochar_CharsetProviderImpl_toUpperCase___java_lang_String(_r11.o);
     XMLVM_CHECK_NPE(5)
@@ -721,6 +731,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_charsetForName___java
     _r5.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(5)
     java_lang_StringBuilder___INIT___(_r5.o);
+    XMLVM_CHECK_NPE(10)
     _r6.o = ((org_apache_harmony_niochar_CharsetProviderImpl*) _r10.o)->fields.org_apache_harmony_niochar_CharsetProviderImpl.packageName_;
     XMLVM_CHECK_NPE(5)
     _r5.o = java_lang_StringBuilder_append___java_lang_String(_r5.o, _r6.o);
@@ -4637,23 +4648,23 @@ void org_apache_harmony_niochar_CharsetProviderImpl___CLINIT_()
     org_apache_harmony_niochar_CharsetProviderImpl_PUT_HAS_LOADED_NATIVES( _r0.i);
     XMLVM_SOURCE_POSITION("CharsetProviderImpl.java", 55)
     _r0.i = 1;
-    XMLVM_TRY_BEGIN(w37638aaac16b1b6)
+    XMLVM_TRY_BEGIN(w37643aaac16b1b6)
     // Begin try
     org_apache_harmony_niochar_CharsetProviderImpl_PUT_HAS_LOADED_NATIVES( _r0.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w37638aaac16b1b6)
-        XMLVM_CATCH_SPECIFIC(w37638aaac16b1b6,java_lang_UnsatisfiedLinkError,7)
-    XMLVM_CATCH_END(w37638aaac16b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w37638aaac16b1b6)
+    XMLVM_CATCH_BEGIN(w37643aaac16b1b6)
+        XMLVM_CATCH_SPECIFIC(w37643aaac16b1b6,java_lang_UnsatisfiedLinkError,7)
+    XMLVM_CATCH_END(w37643aaac16b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w37643aaac16b1b6)
     label6:;
     XMLVM_SOURCE_POSITION("CharsetProviderImpl.java", 59)
     XMLVM_EXIT_METHOD()
     return;
     label7:;
     XMLVM_SOURCE_POSITION("CharsetProviderImpl.java", 56)
-    java_lang_Thread* curThread_w37638aaac16b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w37638aaac16b1c12->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w37643aaac16b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w37643aaac16b1c12->fields.java_lang_Thread.xmlvmException_;
     goto label6;
     //XMLVM_END_WRAPPER
 }

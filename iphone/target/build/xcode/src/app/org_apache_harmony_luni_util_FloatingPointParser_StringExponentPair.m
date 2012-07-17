@@ -217,10 +217,13 @@ void org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair___INIT_
     XMLVM_CHECK_NPE(0)
     java_lang_Object___INIT___(_r0.o);
     XMLVM_SOURCE_POSITION("FloatingPointParser.java", 35)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair*) _r0.o)->fields.org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair.s_ = _r1.o;
     XMLVM_SOURCE_POSITION("FloatingPointParser.java", 36)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair*) _r0.o)->fields.org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair.e_ = _r2.i;
     XMLVM_SOURCE_POSITION("FloatingPointParser.java", 37)
+    XMLVM_CHECK_NPE(0)
     ((org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair*) _r0.o)->fields.org_apache_harmony_luni_util_FloatingPointParser_StringExponentPair.negative_ = _r3.i;
     XMLVM_SOURCE_POSITION("FloatingPointParser.java", 38)
     XMLVM_EXIT_METHOD()

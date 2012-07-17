@@ -564,19 +564,25 @@ void gnu_xml_pipeline_DomConsumer___INIT____java_lang_Class(JAVA_OBJECT me, JAVA
     XMLVM_CHECK_NPE(1)
     java_lang_Object___INIT___(_r1.o);
     XMLVM_SOURCE_POSITION("DomConsumer.java", 110)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_DomConsumer*) _r1.o)->fields.gnu_xml_pipeline_DomConsumer.hidingCDATA_ = _r0.i;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 111)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_DomConsumer*) _r1.o)->fields.gnu_xml_pipeline_DomConsumer.hidingComments_ = _r0.i;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 112)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_DomConsumer*) _r1.o)->fields.gnu_xml_pipeline_DomConsumer.hidingWhitespace_ = _r0.i;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 113)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_DomConsumer*) _r1.o)->fields.gnu_xml_pipeline_DomConsumer.hidingReferences_ = _r0.i;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 138)
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_DomConsumer*) _r1.o)->fields.gnu_xml_pipeline_DomConsumer.domImpl_ = _r2.o;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 139)
     _r0.o = __NEW_gnu_xml_pipeline_DomConsumer_Handler();
     XMLVM_CHECK_NPE(0)
     gnu_xml_pipeline_DomConsumer_Handler___INIT____gnu_xml_pipeline_DomConsumer(_r0.o, _r1.o);
+    XMLVM_CHECK_NPE(1)
     ((gnu_xml_pipeline_DomConsumer*) _r1.o)->fields.gnu_xml_pipeline_DomConsumer.handler_ = _r0.o;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 140)
     XMLVM_EXIT_METHOD()
@@ -593,6 +599,7 @@ void gnu_xml_pipeline_DomConsumer_setHandler___gnu_xml_pipeline_DomConsumer_Hand
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 151)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_pipeline_DomConsumer*) _r0.o)->fields.gnu_xml_pipeline_DomConsumer.handler_ = _r1.o;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 152)
     XMLVM_EXIT_METHOD()
@@ -613,6 +620,7 @@ JAVA_OBJECT gnu_xml_pipeline_DomConsumer_emptyDocument__(JAVA_OBJECT me)
     XMLVM_TRY_BEGIN(w10333aaac10b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("DomConsumer.java", 159)
+    XMLVM_CHECK_NPE(4)
     _r0.o = ((gnu_xml_pipeline_DomConsumer*) _r4.o)->fields.gnu_xml_pipeline_DomConsumer.domImpl_;
     //java_lang_Class_newInstance__[12]
     XMLVM_CHECK_NPE(0)
@@ -690,6 +698,7 @@ void gnu_xml_pipeline_DomConsumer___INIT____java_lang_Class_gnu_xml_pipeline_Eve
     XMLVM_CHECK_NPE(0)
     gnu_xml_pipeline_DomConsumer___INIT____java_lang_Class(_r0.o, _r1.o);
     XMLVM_SOURCE_POSITION("DomConsumer.java", 192)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_pipeline_DomConsumer*) _r0.o)->fields.gnu_xml_pipeline_DomConsumer.next_ = _r2.o;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 193)
     XMLVM_EXIT_METHOD()
@@ -705,6 +714,7 @@ JAVA_OBJECT gnu_xml_pipeline_DomConsumer_getDocument__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 204)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_DomConsumer*) _r1.o)->fields.gnu_xml_pipeline_DomConsumer.handler_;
     XMLVM_CHECK_NPE(0)
     _r0.o = gnu_xml_pipeline_DomConsumer_Handler_clearDocument__(_r0.o);
@@ -722,6 +732,7 @@ void gnu_xml_pipeline_DomConsumer_setErrorHandler___org_xml_sax_ErrorHandler(JAV
     _r0.o = me;
     _r1.o = n1;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 209)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_pipeline_DomConsumer*) _r0.o)->fields.gnu_xml_pipeline_DomConsumer.errHandler_ = _r1.o;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 210)
     XMLVM_EXIT_METHOD()
@@ -737,6 +748,7 @@ JAVA_BOOLEAN gnu_xml_pipeline_DomConsumer_isHidingReferences__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 223)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_pipeline_DomConsumer*) _r1.o)->fields.gnu_xml_pipeline_DomConsumer.hidingReferences_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -752,6 +764,7 @@ void gnu_xml_pipeline_DomConsumer_setHidingReferences___boolean(JAVA_OBJECT me, 
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 233)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_pipeline_DomConsumer*) _r0.o)->fields.gnu_xml_pipeline_DomConsumer.hidingReferences_ = _r1.i;
     XMLVM_EXIT_METHOD()
     return;
@@ -766,6 +779,7 @@ JAVA_BOOLEAN gnu_xml_pipeline_DomConsumer_isHidingComments__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 243)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_pipeline_DomConsumer*) _r1.o)->fields.gnu_xml_pipeline_DomConsumer.hidingComments_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -781,6 +795,7 @@ void gnu_xml_pipeline_DomConsumer_setHidingComments___boolean(JAVA_OBJECT me, JA
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 251)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_pipeline_DomConsumer*) _r0.o)->fields.gnu_xml_pipeline_DomConsumer.hidingComments_ = _r1.i;
     XMLVM_EXIT_METHOD()
     return;
@@ -795,6 +810,7 @@ JAVA_BOOLEAN gnu_xml_pipeline_DomConsumer_isHidingWhitespace__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 262)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_pipeline_DomConsumer*) _r1.o)->fields.gnu_xml_pipeline_DomConsumer.hidingWhitespace_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -810,6 +826,7 @@ void gnu_xml_pipeline_DomConsumer_setHidingWhitespace___boolean(JAVA_OBJECT me, 
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 270)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_pipeline_DomConsumer*) _r0.o)->fields.gnu_xml_pipeline_DomConsumer.hidingWhitespace_ = _r1.i;
     XMLVM_EXIT_METHOD()
     return;
@@ -824,6 +841,7 @@ JAVA_BOOLEAN gnu_xml_pipeline_DomConsumer_isHidingCDATA__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 280)
+    XMLVM_CHECK_NPE(1)
     _r0.i = ((gnu_xml_pipeline_DomConsumer*) _r1.o)->fields.gnu_xml_pipeline_DomConsumer.hidingCDATA_;
     XMLVM_EXIT_METHOD()
     return _r0.i;
@@ -839,6 +857,7 @@ void gnu_xml_pipeline_DomConsumer_setHidingCDATA___boolean(JAVA_OBJECT me, JAVA_
     _r0.o = me;
     _r1.i = n1;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 290)
+    XMLVM_CHECK_NPE(0)
     ((gnu_xml_pipeline_DomConsumer*) _r0.o)->fields.gnu_xml_pipeline_DomConsumer.hidingCDATA_ = _r1.i;
     XMLVM_EXIT_METHOD()
     return;
@@ -853,6 +872,7 @@ JAVA_OBJECT gnu_xml_pipeline_DomConsumer_getContentHandler__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 296)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_DomConsumer*) _r1.o)->fields.gnu_xml_pipeline_DomConsumer.handler_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -867,6 +887,7 @@ JAVA_OBJECT gnu_xml_pipeline_DomConsumer_getDTDHandler__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 300)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_DomConsumer*) _r1.o)->fields.gnu_xml_pipeline_DomConsumer.handler_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -890,6 +911,7 @@ JAVA_OBJECT gnu_xml_pipeline_DomConsumer_getProperty___java_lang_String(JAVA_OBJ
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r2.o);
     if (_r0.i == 0) goto label11;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 310)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_DomConsumer*) _r1.o)->fields.gnu_xml_pipeline_DomConsumer.handler_;
     label10:;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 312)
@@ -903,6 +925,7 @@ JAVA_OBJECT gnu_xml_pipeline_DomConsumer_getProperty___java_lang_String(JAVA_OBJ
     XMLVM_CHECK_NPE(0)
     _r0.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r0.o)->tib->vtable[1])(_r0.o, _r2.o);
     if (_r0.i == 0) goto label22;
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_DomConsumer*) _r1.o)->fields.gnu_xml_pipeline_DomConsumer.handler_;
     goto label10;
     label22:;
@@ -922,6 +945,7 @@ JAVA_OBJECT gnu_xml_pipeline_DomConsumer_getNext__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 316)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_DomConsumer*) _r1.o)->fields.gnu_xml_pipeline_DomConsumer.next_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
@@ -936,6 +960,7 @@ JAVA_OBJECT gnu_xml_pipeline_DomConsumer_getErrorHandler__(JAVA_OBJECT me)
     XMLVMElem _r1;
     _r1.o = me;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 318)
+    XMLVM_CHECK_NPE(1)
     _r0.o = ((gnu_xml_pipeline_DomConsumer*) _r1.o)->fields.gnu_xml_pipeline_DomConsumer.errHandler_;
     XMLVM_EXIT_METHOD()
     return _r0.o;
