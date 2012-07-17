@@ -4,8 +4,8 @@ import org.xmlvm.iphone.*;
 
 import java.util.*;
 
-class RootViewController extends RotatingViewController implements Observer{
-    private Map<SongInfo, UITableViewCell> cells=new HashMap<SongInfo, UITableViewCell>();
+class RootViewController extends RotatingViewController implements Observer {
+    private Map<SongInfo, UITableViewCell> cells = new HashMap<SongInfo, UITableViewCell>();
     private final UIButton infoButton;
     private UIViewController shopViewController;
     private final UITableView mainView;
@@ -19,13 +19,18 @@ class RootViewController extends RotatingViewController implements Observer{
 
     public RootViewController(final UIWindow window, List<SongInfo> songInfos) {
         this.songInfos = songInfos;
-        pdfViewController=new PdfViewController(window);
+        pdfViewController = new PdfViewController(window);
         mainView = new UITableView(window.getFrame(), UITableViewStyle.Plain);
         setTitle("Kinderlieder");
         infoButton = UIButton.buttonWithType(UIButtonType.InfoLight);
         infoAction = new UIControlDelegate() {
+
+            private UIViewController infoController;
+
             public void raiseEvent(UIControl sender, int uiControlEvent) {
-                UIViewController infoController = new InfoViewController(window);
+                if (infoController == null) {
+                    infoController = new InfoViewController(window);
+                }
                 getNavigationController().pushViewController(infoController, true);
             }
         };
@@ -33,7 +38,7 @@ class RootViewController extends RotatingViewController implements Observer{
         shopAction = new UIBarButtonItemDelegate() {
 
             public void clicked() {
-                if(shopViewController==null){
+                if (shopViewController == null) {
                     shopViewController = new ShopViewController(window);
                 }
                 getNavigationController().pushViewController(shopViewController, true);
@@ -79,7 +84,7 @@ class RootViewController extends RotatingViewController implements Observer{
 
         Main.library.addObserver(this);
     }
-    
+
     private void reloadDataOnMainThread() {
         NSObject.performSelectorOnMainThread(new NSSelector<Void>() {
 
@@ -96,7 +101,7 @@ class RootViewController extends RotatingViewController implements Observer{
     }
 
     public void update(Observable o, Object arg) {
-        if(o==Main.library){
+        if (o == Main.library) {
             reloadSongList();
         }
     }
