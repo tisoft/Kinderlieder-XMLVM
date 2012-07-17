@@ -63,6 +63,7 @@ public class Main extends UIApplicationDelegate {
 	@Override
 	public boolean applicationDidFinishLaunchingWithOptions(UIApplication app, Map<String, Object> launchOptions) {
         registerCrashReporter();
+        registerAudioSession();
 		final UIWindow window = new UIWindow(org.xmlvm.iphone.UIScreen.mainScreen().getBounds());
 
 		// don't go to sleep
@@ -104,9 +105,12 @@ public class Main extends UIApplicationDelegate {
 
         new Thread(runnable).start();
 
+        return true;
     }
 
-	public static void main(String[] args) {
+    private native void registerAudioSession();
+
+    public static void main(String[] args) {
 		UIApplication.main(args, null, Main.class);
 	}
 }

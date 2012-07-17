@@ -1027,3 +1027,6 @@ void my_kinderlieder_Main_registerCrashReporter__(JAVA_OBJECT me){
     //[[BWQuincyManager sharedQuincyManager] setDelegate:((org_xmlvm_iphone_NSObject*)me)->fields.org_xmlvm_iphone_NSObject.wrappedObjCObj];
 }
 
+void my_kinderlieder_Main_registerAudioSession__(JAVA_OBJECT me){
+    [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
+}
