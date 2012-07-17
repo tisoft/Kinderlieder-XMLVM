@@ -36,6 +36,13 @@ JAVA_OBJECT __CLASS_my_kinderlieder_RootViewController_1_3ARRAY;
 #include "xmlvm-reflection.h"
 
 static XMLVM_FIELD_REFLECTION_DATA __field_reflection_data[] = {
+    {"infoController",
+    &__CLASS_org_xmlvm_iphone_UIViewController,
+    0 | java_lang_reflect_Modifier_PRIVATE,
+    XMLVM_OFFSETOF(my_kinderlieder_RootViewController_1, fields.my_kinderlieder_RootViewController_1.infoController_),
+    0,
+    "",
+    JAVA_NULL},
     {"val$window",
     &__CLASS_org_xmlvm_iphone_UIWindow,
     0,
@@ -199,6 +206,7 @@ void __DELETE_my_kinderlieder_RootViewController_1(void* me, void* client_data)
 void __INIT_INSTANCE_MEMBERS_my_kinderlieder_RootViewController_1(JAVA_OBJECT me, int derivedClassWillRegisterFinalizer)
 {
     __INIT_INSTANCE_MEMBERS_java_lang_Object(me, 0 || derivedClassWillRegisterFinalizer);
+    ((my_kinderlieder_RootViewController_1*) me)->fields.my_kinderlieder_RootViewController_1.infoController_ = (org_xmlvm_iphone_UIViewController*) JAVA_NULL;
     ((my_kinderlieder_RootViewController_1*) me)->fields.my_kinderlieder_RootViewController_1.val_window_ = (org_xmlvm_iphone_UIWindow*) JAVA_NULL;
     ((my_kinderlieder_RootViewController_1*) me)->fields.my_kinderlieder_RootViewController_1.this_0_ = (my_kinderlieder_RootViewController*) JAVA_NULL;
     //XMLVM_BEGIN_WRAPPER[__INIT_INSTANCE_MEMBERS_my_kinderlieder_RootViewController_1]
@@ -257,21 +265,30 @@ void my_kinderlieder_RootViewController_1_raiseEvent___org_xmlvm_iphone_UIContro
     _r3.o = me;
     _r4.o = n1;
     _r5.i = n2;
-    XMLVM_SOURCE_POSITION("RootViewController.java", 28)
+    XMLVM_SOURCE_POSITION("RootViewController.java", 31)
+    XMLVM_CHECK_NPE(3)
+    _r0.o = ((my_kinderlieder_RootViewController_1*) _r3.o)->fields.my_kinderlieder_RootViewController_1.infoController_;
+    if (_r0.o != JAVA_NULL) goto label13;
+    XMLVM_SOURCE_POSITION("RootViewController.java", 32)
     _r0.o = __NEW_my_kinderlieder_InfoViewController();
     XMLVM_CHECK_NPE(3)
     _r1.o = ((my_kinderlieder_RootViewController_1*) _r3.o)->fields.my_kinderlieder_RootViewController_1.val_window_;
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_InfoViewController___INIT____org_xmlvm_iphone_UIWindow(_r0.o, _r1.o);
-    XMLVM_SOURCE_POSITION("RootViewController.java", 29)
     XMLVM_CHECK_NPE(3)
-    _r1.o = ((my_kinderlieder_RootViewController_1*) _r3.o)->fields.my_kinderlieder_RootViewController_1.this_0_;
-    XMLVM_CHECK_NPE(1)
-    _r1.o = org_xmlvm_iphone_UIViewController_getNavigationController__(_r1.o);
+    ((my_kinderlieder_RootViewController_1*) _r3.o)->fields.my_kinderlieder_RootViewController_1.infoController_ = _r0.o;
+    label13:;
+    XMLVM_SOURCE_POSITION("RootViewController.java", 34)
+    XMLVM_CHECK_NPE(3)
+    _r0.o = ((my_kinderlieder_RootViewController_1*) _r3.o)->fields.my_kinderlieder_RootViewController_1.this_0_;
+    XMLVM_CHECK_NPE(0)
+    _r0.o = org_xmlvm_iphone_UIViewController_getNavigationController__(_r0.o);
+    XMLVM_CHECK_NPE(3)
+    _r1.o = ((my_kinderlieder_RootViewController_1*) _r3.o)->fields.my_kinderlieder_RootViewController_1.infoController_;
     _r2.i = 1;
-    XMLVM_CHECK_NPE(1)
-    org_xmlvm_iphone_UINavigationController_pushViewController___org_xmlvm_iphone_UIViewController_boolean(_r1.o, _r0.o, _r2.i);
-    XMLVM_SOURCE_POSITION("RootViewController.java", 30)
+    XMLVM_CHECK_NPE(0)
+    org_xmlvm_iphone_UINavigationController_pushViewController___org_xmlvm_iphone_UIViewController_boolean(_r0.o, _r1.o, _r2.i);
+    XMLVM_SOURCE_POSITION("RootViewController.java", 35)
     XMLVM_EXIT_METHOD()
     return;
     //XMLVM_END_WRAPPER

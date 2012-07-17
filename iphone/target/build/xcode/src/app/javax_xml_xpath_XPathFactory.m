@@ -385,7 +385,7 @@ JAVA_OBJECT javax_xml_xpath_XPathFactory_newInstance__()
     XMLVMElem _r0;
     XMLVMElem _r1;
     XMLVMElem _r2;
-    XMLVM_TRY_BEGIN(w38532aaab3b1b1)
+    XMLVM_TRY_BEGIN(w38534aaab3b1b1)
     // Begin try
     XMLVM_SOURCE_POSITION("XPathFactory.java", 74)
     // "http://java.sun.com/jaxp/xpath/dom"
@@ -393,16 +393,16 @@ JAVA_OBJECT javax_xml_xpath_XPathFactory_newInstance__()
     _r1.o = javax_xml_xpath_XPathFactory_newInstance___java_lang_String(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38532aaab3b1b1)
-        XMLVM_CATCH_SPECIFIC(w38532aaab3b1b1,javax_xml_xpath_XPathFactoryConfigurationException,7)
-    XMLVM_CATCH_END(w38532aaab3b1b1)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38532aaab3b1b1)
+    XMLVM_CATCH_BEGIN(w38534aaab3b1b1)
+        XMLVM_CATCH_SPECIFIC(w38534aaab3b1b1,javax_xml_xpath_XPathFactoryConfigurationException,7)
+    XMLVM_CATCH_END(w38534aaab3b1b1)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38534aaab3b1b1)
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label7:;
     XMLVM_SOURCE_POSITION("XPathFactory.java", 76)
-    java_lang_Thread* curThread_w38532aaab3b1b5 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w38532aaab3b1b5->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38534aaab3b1b5 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w38534aaab3b1b5->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r1;
     XMLVM_SOURCE_POSITION("XPathFactory.java", 78)
     _r1.o = __NEW_java_lang_RuntimeException();

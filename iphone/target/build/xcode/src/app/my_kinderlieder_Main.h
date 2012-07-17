@@ -82,10 +82,6 @@ XMLVM_FORWARD_DECL(org_xmlvm_iphone_UINavigationController)
 #define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIScreen
 XMLVM_FORWARD_DECL(org_xmlvm_iphone_UIScreen)
 #endif
-#ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIView
-#define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIView
-XMLVM_FORWARD_DECL(org_xmlvm_iphone_UIView)
-#endif
 #ifndef XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIViewController
 #define XMLVM_FORWARD_DECL_org_xmlvm_iphone_UIViewController
 XMLVM_FORWARD_DECL(org_xmlvm_iphone_UIViewController)

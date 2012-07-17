@@ -745,7 +745,7 @@ void gnu_xml_dom_ls_ReaderInputStream_mark___int(JAVA_OBJECT me, JAVA_INT n1)
     XMLVM_CHECK_NPE(4)
     ((gnu_xml_dom_ls_ReaderInputStream*) _r4.o)->fields.gnu_xml_dom_ls_ReaderInputStream.pos_marked_ = _r0.i;
     label26:;
-    XMLVM_TRY_BEGIN(w17722aaac13b1c22)
+    XMLVM_TRY_BEGIN(w17725aaac13b1c22)
     // Begin try
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 171)
     XMLVM_CHECK_NPE(4)
@@ -755,10 +755,10 @@ void gnu_xml_dom_ls_ReaderInputStream_mark___int(JAVA_OBJECT me, JAVA_INT n1)
     (*(void (*)(JAVA_OBJECT, JAVA_INT)) ((java_io_Reader*) _r0.o)->tib->vtable[8])(_r0.o, _r5.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17722aaac13b1c22)
-        XMLVM_CATCH_SPECIFIC(w17722aaac13b1c22,java_io_IOException,36)
-    XMLVM_CATCH_END(w17722aaac13b1c22)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17722aaac13b1c22)
+    XMLVM_CATCH_BEGIN(w17725aaac13b1c22)
+        XMLVM_CATCH_SPECIFIC(w17725aaac13b1c22,java_io_IOException,36)
+    XMLVM_CATCH_END(w17725aaac13b1c22)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17725aaac13b1c22)
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 177)
     XMLVM_EXIT_METHOD()
     return;
@@ -770,8 +770,8 @@ void gnu_xml_dom_ls_ReaderInputStream_mark___int(JAVA_OBJECT me, JAVA_INT n1)
     goto label26;
     label36:;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 173)
-    java_lang_Thread* curThread_w17722aaac13b1c32 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w17722aaac13b1c32->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w17725aaac13b1c32 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w17725aaac13b1c32->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("ReaderInputStream.java", 175)
     _r1.o = __NEW_java_lang_RuntimeException();
     XMLVM_CHECK_NPE(1)

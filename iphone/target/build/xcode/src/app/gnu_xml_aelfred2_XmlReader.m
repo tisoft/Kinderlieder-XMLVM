@@ -1068,12 +1068,12 @@ void gnu_xml_aelfred2_XmlReader_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     XMLVM_CHECK_NPE(5)
     _r0.o = ((gnu_xml_aelfred2_XmlReader*) _r5.o)->fields.gnu_xml_aelfred2_XmlReader.aelfred2_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
-    XMLVM_TRY_BEGIN(w12210aaac21b1b8)
+    XMLVM_TRY_BEGIN(w12213aaac21b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("XmlReader.java", 334)
     XMLVM_CHECK_NPE(5)
     _r1.i = ((gnu_xml_aelfred2_XmlReader*) _r5.o)->fields.gnu_xml_aelfred2_XmlReader.active_;
-    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w12210aaac21b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w12210aaac21b1b8, sizeof(XMLVM_JMP_BUF)); goto label21; };
+    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w12213aaac21b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w12213aaac21b1b8, sizeof(XMLVM_JMP_BUF)); goto label21; };
     XMLVM_SOURCE_POSITION("XmlReader.java", 336)
     _r1.o = __NEW_java_lang_IllegalStateException();
     // "already parsing"
@@ -1083,37 +1083,37 @@ void gnu_xml_aelfred2_XmlReader_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     XMLVM_THROW_CUSTOM(_r1.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w12210aaac21b1b8)
-        XMLVM_CATCH_SPECIFIC(w12210aaac21b1b8,java_lang_Object,18)
-    XMLVM_CATCH_END(w12210aaac21b1b8)
-    XMLVM_RESTORE_EXCEPTION_ENV(w12210aaac21b1b8)
+    XMLVM_CATCH_BEGIN(w12213aaac21b1b8)
+        XMLVM_CATCH_SPECIFIC(w12213aaac21b1b8,java_lang_Object,18)
+    XMLVM_CATCH_END(w12213aaac21b1b8)
+    XMLVM_RESTORE_EXCEPTION_ENV(w12213aaac21b1b8)
     label18:;
-    XMLVM_TRY_BEGIN(w12210aaac21b1c10)
+    XMLVM_TRY_BEGIN(w12213aaac21b1c10)
     // Begin try
-    java_lang_Thread* curThread_w12210aaac21b1c10aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w12210aaac21b1c10aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w12213aaac21b1c10aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w12213aaac21b1c10aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w12210aaac21b1c10)
-        XMLVM_CATCH_SPECIFIC(w12210aaac21b1c10,java_lang_Object,18)
-    XMLVM_CATCH_END(w12210aaac21b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w12210aaac21b1c10)
+    XMLVM_CATCH_BEGIN(w12213aaac21b1c10)
+        XMLVM_CATCH_SPECIFIC(w12213aaac21b1c10,java_lang_Object,18)
+    XMLVM_CATCH_END(w12213aaac21b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w12213aaac21b1c10)
     XMLVM_THROW_CUSTOM(_r1.o)
     label21:;
     XMLVM_SOURCE_POSITION("XmlReader.java", 338)
     _r1.i = 1;
-    XMLVM_TRY_BEGIN(w12210aaac21b1c15)
+    XMLVM_TRY_BEGIN(w12213aaac21b1c15)
     // Begin try
     XMLVM_CHECK_NPE(5)
     ((gnu_xml_aelfred2_XmlReader*) _r5.o)->fields.gnu_xml_aelfred2_XmlReader.active_ = _r1.i;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w12210aaac21b1c15)
-        XMLVM_CATCH_SPECIFIC(w12210aaac21b1c15,java_lang_Object,18)
-    XMLVM_CATCH_END(w12210aaac21b1c15)
-    XMLVM_RESTORE_EXCEPTION_ENV(w12210aaac21b1c15)
+    XMLVM_CATCH_BEGIN(w12213aaac21b1c15)
+        XMLVM_CATCH_SPECIFIC(w12213aaac21b1c15,java_lang_Object,18)
+    XMLVM_CATCH_END(w12213aaac21b1c15)
+    XMLVM_RESTORE_EXCEPTION_ENV(w12213aaac21b1c15)
     XMLVM_SOURCE_POSITION("XmlReader.java", 342)
     XMLVM_CHECK_NPE(5)
     _r0.i = ((gnu_xml_aelfred2_XmlReader*) _r5.o)->fields.gnu_xml_aelfred2_XmlReader.isValidating_;
@@ -1151,7 +1151,7 @@ void gnu_xml_aelfred2_XmlReader_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) ((gnu_xml_aelfred2_SAXDriver*) _r0.o)->tib->vtable[42])(_r0.o, _r4.o, _r3.i);
     label61:;
-    XMLVM_TRY_BEGIN(w12210aaac21b1c40)
+    XMLVM_TRY_BEGIN(w12213aaac21b1c40)
     // Begin try
     XMLVM_SOURCE_POSITION("XmlReader.java", 365)
     XMLVM_CHECK_NPE(5)
@@ -1161,10 +1161,10 @@ void gnu_xml_aelfred2_XmlReader_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_aelfred2_SAXDriver*) _r0.o)->tib->vtable[36])(_r0.o, _r6.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w12210aaac21b1c40)
-        XMLVM_CATCH_SPECIFIC(w12210aaac21b1c40,java_lang_Object,72)
-    XMLVM_CATCH_END(w12210aaac21b1c40)
-    XMLVM_RESTORE_EXCEPTION_ENV(w12210aaac21b1c40)
+    XMLVM_CATCH_BEGIN(w12213aaac21b1c40)
+        XMLVM_CATCH_SPECIFIC(w12213aaac21b1c40,java_lang_Object,72)
+    XMLVM_CATCH_END(w12213aaac21b1c40)
+    XMLVM_RESTORE_EXCEPTION_ENV(w12213aaac21b1c40)
     XMLVM_SOURCE_POSITION("XmlReader.java", 369)
     XMLVM_CHECK_NPE(5)
     ((gnu_xml_aelfred2_XmlReader*) _r5.o)->fields.gnu_xml_aelfred2_XmlReader.active_ = _r3.i;
@@ -1178,8 +1178,8 @@ void gnu_xml_aelfred2_XmlReader_parse___org_xml_sax_InputSource(JAVA_OBJECT me, 
     goto label39;
     label72:;
     XMLVM_SOURCE_POSITION("XmlReader.java", 368)
-    java_lang_Thread* curThread_w12210aaac21b1c51 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w12210aaac21b1c51->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w12213aaac21b1c51 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w12213aaac21b1c51->fields.java_lang_Thread.xmlvmException_;
     XMLVM_CHECK_NPE(5)
     ((gnu_xml_aelfred2_XmlReader*) _r5.o)->fields.gnu_xml_aelfred2_XmlReader.active_ = _r3.i;
     XMLVM_SOURCE_POSITION("XmlReader.java", 370)

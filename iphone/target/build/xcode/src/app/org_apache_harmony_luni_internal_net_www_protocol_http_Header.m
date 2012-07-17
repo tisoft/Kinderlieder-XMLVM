@@ -522,7 +522,7 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_Header_clone_
     XMLVMElem _r3;
     XMLVMElem _r4;
     _r4.o = me;
-    XMLVM_TRY_BEGIN(w38718aaab5b1b2)
+    XMLVM_TRY_BEGIN(w38720aaab5b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("Header.java", 83)
     XMLVM_CHECK_NPE(4)
@@ -555,28 +555,28 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_Header_clone_
     _r2.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Set_iterator__])(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38718aaab5b1b2)
-        XMLVM_CATCH_SPECIFIC(w38718aaab5b1b2,java_lang_CloneNotSupportedException,72)
-    XMLVM_CATCH_END(w38718aaab5b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38718aaab5b1b2)
+    XMLVM_CATCH_BEGIN(w38720aaab5b1b2)
+        XMLVM_CATCH_SPECIFIC(w38720aaab5b1b2,java_lang_CloneNotSupportedException,72)
+    XMLVM_CATCH_END(w38720aaab5b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38720aaab5b1b2)
     label35:;
-    XMLVM_TRY_BEGIN(w38718aaab5b1b4)
+    XMLVM_TRY_BEGIN(w38720aaab5b1b4)
     // Begin try
     XMLVM_CHECK_NPE(2)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_hasNext__])(_r2.o);
-    if (_r1.i != 0) { XMLVM_MEMCPY(curThread_w38718aaab5b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38718aaab5b1b4, sizeof(XMLVM_JMP_BUF)); goto label42; };
+    if (_r1.i != 0) { XMLVM_MEMCPY(curThread_w38720aaab5b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38720aaab5b1b4, sizeof(XMLVM_JMP_BUF)); goto label42; };
     XMLVM_SOURCE_POSITION("Header.java", 93)
-    XMLVM_MEMCPY(curThread_w38718aaab5b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38718aaab5b1b4, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w38720aaab5b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w38720aaab5b1b4, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38718aaab5b1b4)
-        XMLVM_CATCH_SPECIFIC(w38718aaab5b1b4,java_lang_CloneNotSupportedException,72)
-    XMLVM_CATCH_END(w38718aaab5b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38718aaab5b1b4)
+    XMLVM_CATCH_BEGIN(w38720aaab5b1b4)
+        XMLVM_CATCH_SPECIFIC(w38720aaab5b1b4,java_lang_CloneNotSupportedException,72)
+    XMLVM_CATCH_END(w38720aaab5b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38720aaab5b1b4)
     label42:;
-    XMLVM_TRY_BEGIN(w38718aaab5b1b6)
+    XMLVM_TRY_BEGIN(w38720aaab5b1b6)
     // Begin try
     XMLVM_CHECK_NPE(2)
     _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_next__])(_r2.o);
@@ -600,15 +600,15 @@ JAVA_OBJECT org_apache_harmony_luni_internal_net_www_protocol_http_Header_clone_
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_SortedMap_put___java_lang_Object_java_lang_Object])(_r3.o, _r4.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w38718aaab5b1b6)
-        XMLVM_CATCH_SPECIFIC(w38718aaab5b1b6,java_lang_CloneNotSupportedException,72)
-    XMLVM_CATCH_END(w38718aaab5b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w38718aaab5b1b6)
+    XMLVM_CATCH_BEGIN(w38720aaab5b1b6)
+        XMLVM_CATCH_SPECIFIC(w38720aaab5b1b6,java_lang_CloneNotSupportedException,72)
+    XMLVM_CATCH_END(w38720aaab5b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w38720aaab5b1b6)
     goto label35;
     label72:;
     XMLVM_SOURCE_POSITION("Header.java", 94)
-    java_lang_Thread* curThread_w38718aaab5b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w38718aaab5b1c10->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w38720aaab5b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w38720aaab5b1c10->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("Header.java", 95)
     _r1.o = __NEW_java_lang_AssertionError();
     XMLVM_CHECK_NPE(1)

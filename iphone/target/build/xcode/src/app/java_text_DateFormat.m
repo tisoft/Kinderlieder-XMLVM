@@ -1751,23 +1751,23 @@ JAVA_OBJECT java_text_DateFormat_getDateInstance___int_java_util_Locale(JAVA_INT
     XMLVM_SOURCE_POSITION("DateFormat.java", 650)
     _r8.i = 1;
     _r9.i = 0;
-    XMLVM_TRY_BEGIN(w11878aaac39b1b6)
+    XMLVM_TRY_BEGIN(w11881aaac39b1b6)
     // Begin try
     _r8.o = java_text_DateFormat_computeInstance___int_java_util_Locale_boolean_boolean(_r10.i, _r11.o, _r8.i, _r9.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w11878aaac39b1b6)
-        XMLVM_CATCH_SPECIFIC(w11878aaac39b1b6,java_util_MissingResourceException,7)
-    XMLVM_CATCH_END(w11878aaac39b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w11878aaac39b1b6)
+    XMLVM_CATCH_BEGIN(w11881aaac39b1b6)
+        XMLVM_CATCH_SPECIFIC(w11881aaac39b1b6,java_util_MissingResourceException,7)
+    XMLVM_CATCH_END(w11881aaac39b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w11881aaac39b1b6)
     label6:;
     XMLVM_SOURCE_POSITION("DateFormat.java", 668)
     XMLVM_EXIT_METHOD()
     return _r8.o;
     label7:;
     XMLVM_SOURCE_POSITION("DateFormat.java", 652)
-    java_lang_Thread* curThread_w11878aaac39b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w11878aaac39b1c12->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w11881aaac39b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w11881aaac39b1c12->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("DateFormat.java", 655)
     if (!__TIB_java_text_spi_DateFormatProvider.classInitialized) __INIT_java_text_spi_DateFormatProvider();
     _r8.o = __CLASS_java_text_spi_DateFormatProvider;
@@ -1875,23 +1875,23 @@ JAVA_OBJECT java_text_DateFormat_getDateTimeInstance___int_int_java_util_Locale(
     XMLVM_SOURCE_POSITION("DateFormat.java", 711)
     _r8.i = 1;
     _r9.i = 1;
-    XMLVM_TRY_BEGIN(w11878aaac42b1b7)
+    XMLVM_TRY_BEGIN(w11881aaac42b1b7)
     // Begin try
     _r8.o = java_text_DateFormat_computeInstance___int_int_java_util_Locale_boolean_boolean(_r10.i, _r11.i, _r12.o, _r8.i, _r9.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w11878aaac42b1b7)
-        XMLVM_CATCH_SPECIFIC(w11878aaac42b1b7,java_util_MissingResourceException,7)
-    XMLVM_CATCH_END(w11878aaac42b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w11878aaac42b1b7)
+    XMLVM_CATCH_BEGIN(w11881aaac42b1b7)
+        XMLVM_CATCH_SPECIFIC(w11881aaac42b1b7,java_util_MissingResourceException,7)
+    XMLVM_CATCH_END(w11881aaac42b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w11881aaac42b1b7)
     label6:;
     XMLVM_SOURCE_POSITION("DateFormat.java", 730)
     XMLVM_EXIT_METHOD()
     return _r8.o;
     label7:;
     XMLVM_SOURCE_POSITION("DateFormat.java", 713)
-    java_lang_Thread* curThread_w11878aaac42b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w11878aaac42b1c13->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w11881aaac42b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w11881aaac42b1c13->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("DateFormat.java", 716)
     if (!__TIB_java_text_spi_DateFormatProvider.classInitialized) __INIT_java_text_spi_DateFormatProvider();
     _r8.o = __CLASS_java_text_spi_DateFormatProvider;
@@ -2026,23 +2026,23 @@ JAVA_OBJECT java_text_DateFormat_getTimeInstance___int_java_util_Locale(JAVA_INT
     XMLVM_SOURCE_POSITION("DateFormat.java", 796)
     _r8.i = 0;
     _r9.i = 1;
-    XMLVM_TRY_BEGIN(w11878aaac47b1b6)
+    XMLVM_TRY_BEGIN(w11881aaac47b1b6)
     // Begin try
     _r8.o = java_text_DateFormat_computeInstance___int_java_util_Locale_boolean_boolean(_r10.i, _r11.o, _r8.i, _r9.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w11878aaac47b1b6)
-        XMLVM_CATCH_SPECIFIC(w11878aaac47b1b6,java_util_MissingResourceException,7)
-    XMLVM_CATCH_END(w11878aaac47b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w11878aaac47b1b6)
+    XMLVM_CATCH_BEGIN(w11881aaac47b1b6)
+        XMLVM_CATCH_SPECIFIC(w11881aaac47b1b6,java_util_MissingResourceException,7)
+    XMLVM_CATCH_END(w11881aaac47b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w11881aaac47b1b6)
     label6:;
     XMLVM_SOURCE_POSITION("DateFormat.java", 814)
     XMLVM_EXIT_METHOD()
     return _r8.o;
     label7:;
     XMLVM_SOURCE_POSITION("DateFormat.java", 798)
-    java_lang_Thread* curThread_w11878aaac47b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w11878aaac47b1c12->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w11881aaac47b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w11881aaac47b1c12->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("DateFormat.java", 801)
     if (!__TIB_java_text_spi_DateFormatProvider.classInitialized) __INIT_java_text_spi_DateFormatProvider();
     _r8.o = __CLASS_java_text_spi_DateFormatProvider;

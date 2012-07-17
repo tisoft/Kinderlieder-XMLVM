@@ -1342,25 +1342,25 @@ JAVA_OBJECT java_util_Locale_clone__(JAVA_OBJECT me)
     XMLVMElem _r1;
     XMLVMElem _r2;
     _r2.o = me;
-    XMLVM_TRY_BEGIN(w12571aaac33b1b2)
+    XMLVM_TRY_BEGIN(w12574aaac33b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("Locale.java", 274)
     XMLVM_CHECK_NPE(2)
     _r1.o = java_lang_Object_clone__(_r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w12571aaac33b1b2)
-        XMLVM_CATCH_SPECIFIC(w12571aaac33b1b2,java_lang_CloneNotSupportedException,5)
-    XMLVM_CATCH_END(w12571aaac33b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w12571aaac33b1b2)
+    XMLVM_CATCH_BEGIN(w12574aaac33b1b2)
+        XMLVM_CATCH_SPECIFIC(w12574aaac33b1b2,java_lang_CloneNotSupportedException,5)
+    XMLVM_CATCH_END(w12574aaac33b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w12574aaac33b1b2)
     label4:;
     XMLVM_SOURCE_POSITION("Locale.java", 276)
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label5:;
     XMLVM_SOURCE_POSITION("Locale.java", 275)
-    java_lang_Thread* curThread_w12571aaac33b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w12571aaac33b1b8->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w12574aaac33b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w12574aaac33b1b8->fields.java_lang_Thread.xmlvmException_;
     _r1.o = JAVA_NULL;
     goto label4;
     //XMLVM_END_WRAPPER
@@ -1808,7 +1808,7 @@ JAVA_INT java_util_Locale_hashCode__(JAVA_OBJECT me)
     _r2.o = me;
     XMLVM_SOURCE_POSITION("Locale.java", 547)
     java_lang_Object_acquireLockRecursive__(_r2.o);
-    XMLVM_TRY_BEGIN(w12571aaac52b1b4)
+    XMLVM_TRY_BEGIN(w12574aaac52b1b4)
     // Begin try
     XMLVM_CHECK_NPE(2)
     _r0.o = ((java_util_Locale*) _r2.o)->fields.java_util_Locale.countryCode_;
@@ -1828,17 +1828,17 @@ JAVA_INT java_util_Locale_hashCode__(JAVA_OBJECT me)
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r1.o)->tib->vtable[4])(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w12571aaac52b1b4)
-        XMLVM_CATCH_SPECIFIC(w12571aaac52b1b4,java_lang_Object,23)
-    XMLVM_CATCH_END(w12571aaac52b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w12571aaac52b1b4)
+    XMLVM_CATCH_BEGIN(w12574aaac52b1b4)
+        XMLVM_CATCH_SPECIFIC(w12574aaac52b1b4,java_lang_Object,23)
+    XMLVM_CATCH_END(w12574aaac52b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w12574aaac52b1b4)
     _r0.i = _r0.i + _r1.i;
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label23:;
-    java_lang_Thread* curThread_w12571aaac52b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w12571aaac52b1b9->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w12574aaac52b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w12574aaac52b1b9->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER
@@ -1858,22 +1858,22 @@ void java_util_Locale_setDefault___java_util_Locale(JAVA_OBJECT n1)
     _r0.o = __CLASS_java_util_Locale;
     java_lang_Object_acquireLockRecursive__(_r0.o);
     if (_r2.o == JAVA_NULL) goto label9;
-    XMLVM_TRY_BEGIN(w12571aaac53b1b6)
+    XMLVM_TRY_BEGIN(w12574aaac53b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("Locale.java", 566)
     java_util_Locale_PUT_defaultLocale( _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w12571aaac53b1b6)
-        XMLVM_CATCH_SPECIFIC(w12571aaac53b1b6,java_lang_Object,15)
-    XMLVM_CATCH_END(w12571aaac53b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w12571aaac53b1b6)
+    XMLVM_CATCH_BEGIN(w12574aaac53b1b6)
+        XMLVM_CATCH_SPECIFIC(w12574aaac53b1b6,java_lang_Object,15)
+    XMLVM_CATCH_END(w12574aaac53b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w12574aaac53b1b6)
     XMLVM_SOURCE_POSITION("Locale.java", 570)
     java_lang_Object_releaseLockRecursive__(_r0.o);
     XMLVM_EXIT_METHOD()
     return;
     label9:;
-    XMLVM_TRY_BEGIN(w12571aaac53b1c11)
+    XMLVM_TRY_BEGIN(w12574aaac53b1c11)
     // Begin try
     XMLVM_SOURCE_POSITION("Locale.java", 568)
     _r1.o = __NEW_java_lang_NullPointerException();
@@ -1882,13 +1882,13 @@ void java_util_Locale_setDefault___java_util_Locale(JAVA_OBJECT n1)
     XMLVM_THROW_CUSTOM(_r1.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w12571aaac53b1c11)
-        XMLVM_CATCH_SPECIFIC(w12571aaac53b1c11,java_lang_Object,15)
-    XMLVM_CATCH_END(w12571aaac53b1c11)
-    XMLVM_RESTORE_EXCEPTION_ENV(w12571aaac53b1c11)
+    XMLVM_CATCH_BEGIN(w12574aaac53b1c11)
+        XMLVM_CATCH_SPECIFIC(w12574aaac53b1c11,java_lang_Object,15)
+    XMLVM_CATCH_END(w12574aaac53b1c11)
+    XMLVM_RESTORE_EXCEPTION_ENV(w12574aaac53b1c11)
     label15:;
-    java_lang_Thread* curThread_w12571aaac53b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w12571aaac53b1c13->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w12574aaac53b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w12574aaac53b1c13->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     XMLVM_THROW_CUSTOM(_r1.o)
     //XMLVM_END_WRAPPER

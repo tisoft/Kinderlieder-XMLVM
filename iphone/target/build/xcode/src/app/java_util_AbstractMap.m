@@ -704,7 +704,7 @@ JAVA_BOOLEAN java_util_AbstractMap_equals___java_lang_Object(JAVA_OBJECT me, JAV
     XMLVM_SOURCE_POSITION("AbstractMap.java", 370)
     goto label5;
     label24:;
-    XMLVM_TRY_BEGIN(w17870aaab7b1c26)
+    XMLVM_TRY_BEGIN(w17873aaab7b1c26)
     // Begin try
     XMLVM_SOURCE_POSITION("AbstractMap.java", 374)
     //java_util_AbstractMap_entrySet__[9]
@@ -714,29 +714,29 @@ JAVA_BOOLEAN java_util_AbstractMap_equals___java_lang_Object(JAVA_OBJECT me, JAV
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Set_iterator__])(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17870aaab7b1c26)
-        XMLVM_CATCH_SPECIFIC(w17870aaab7b1c26,java_lang_NullPointerException,78)
-        XMLVM_CATCH_SPECIFIC(w17870aaab7b1c26,java_lang_ClassCastException,81)
-    XMLVM_CATCH_END(w17870aaab7b1c26)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17870aaab7b1c26)
+    XMLVM_CATCH_BEGIN(w17873aaab7b1c26)
+        XMLVM_CATCH_SPECIFIC(w17873aaab7b1c26,java_lang_NullPointerException,78)
+        XMLVM_CATCH_SPECIFIC(w17873aaab7b1c26,java_lang_ClassCastException,81)
+    XMLVM_CATCH_END(w17873aaab7b1c26)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17873aaab7b1c26)
     label32:;
-    XMLVM_TRY_BEGIN(w17870aaab7b1c28)
+    XMLVM_TRY_BEGIN(w17873aaab7b1c28)
     // Begin try
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_hasNext__])(_r0.o);
-    if (_r1.i != 0) { XMLVM_MEMCPY(curThread_w17870aaab7b1c28->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17870aaab7b1c28, sizeof(XMLVM_JMP_BUF)); goto label40; };
+    if (_r1.i != 0) { XMLVM_MEMCPY(curThread_w17873aaab7b1c28->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17873aaab7b1c28, sizeof(XMLVM_JMP_BUF)); goto label40; };
     _r0 = _r5;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 391)
-    { XMLVM_MEMCPY(curThread_w17870aaab7b1c28->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17870aaab7b1c28, sizeof(XMLVM_JMP_BUF)); goto label5; };
+    { XMLVM_MEMCPY(curThread_w17873aaab7b1c28->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17873aaab7b1c28, sizeof(XMLVM_JMP_BUF)); goto label5; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17870aaab7b1c28)
-        XMLVM_CATCH_SPECIFIC(w17870aaab7b1c28,java_lang_NullPointerException,78)
-        XMLVM_CATCH_SPECIFIC(w17870aaab7b1c28,java_lang_ClassCastException,81)
-    XMLVM_CATCH_END(w17870aaab7b1c28)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17870aaab7b1c28)
+    XMLVM_CATCH_BEGIN(w17873aaab7b1c28)
+        XMLVM_CATCH_SPECIFIC(w17873aaab7b1c28,java_lang_NullPointerException,78)
+        XMLVM_CATCH_SPECIFIC(w17873aaab7b1c28,java_lang_ClassCastException,81)
+    XMLVM_CATCH_END(w17873aaab7b1c28)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17873aaab7b1c28)
     label40:;
-    XMLVM_TRY_BEGIN(w17870aaab7b1c30)
+    XMLVM_TRY_BEGIN(w17873aaab7b1c30)
     // Begin try
     XMLVM_CHECK_NPE(0)
     _r6.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_next__])(_r0.o);
@@ -751,60 +751,60 @@ JAVA_BOOLEAN java_util_AbstractMap_equals___java_lang_Object(JAVA_OBJECT me, JAV
     XMLVM_CHECK_NPE(7)
     _r3.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r7.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_get___java_lang_Object])(_r7.o, _r1.o);
     XMLVM_SOURCE_POSITION("AbstractMap.java", 378)
-    if (_r2.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w17870aaab7b1c30->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17870aaab7b1c30, sizeof(XMLVM_JMP_BUF)); goto label70; };
+    if (_r2.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w17873aaab7b1c30->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17873aaab7b1c30, sizeof(XMLVM_JMP_BUF)); goto label70; };
     XMLVM_SOURCE_POSITION("AbstractMap.java", 379)
-    if (_r3.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w17870aaab7b1c30->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17870aaab7b1c30, sizeof(XMLVM_JMP_BUF)); goto label68; };
+    if (_r3.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w17873aaab7b1c30->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17873aaab7b1c30, sizeof(XMLVM_JMP_BUF)); goto label68; };
     XMLVM_CHECK_NPE(7)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r7.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_containsKey___java_lang_Object])(_r7.o, _r1.o);
-    if (_r1.i != 0) { XMLVM_MEMCPY(curThread_w17870aaab7b1c30->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17870aaab7b1c30, sizeof(XMLVM_JMP_BUF)); goto label32; };
+    if (_r1.i != 0) { XMLVM_MEMCPY(curThread_w17873aaab7b1c30->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17873aaab7b1c30, sizeof(XMLVM_JMP_BUF)); goto label32; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17870aaab7b1c30)
-        XMLVM_CATCH_SPECIFIC(w17870aaab7b1c30,java_lang_NullPointerException,78)
-        XMLVM_CATCH_SPECIFIC(w17870aaab7b1c30,java_lang_ClassCastException,81)
-    XMLVM_CATCH_END(w17870aaab7b1c30)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17870aaab7b1c30)
+    XMLVM_CATCH_BEGIN(w17873aaab7b1c30)
+        XMLVM_CATCH_SPECIFIC(w17873aaab7b1c30,java_lang_NullPointerException,78)
+        XMLVM_CATCH_SPECIFIC(w17873aaab7b1c30,java_lang_ClassCastException,81)
+    XMLVM_CATCH_END(w17873aaab7b1c30)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17873aaab7b1c30)
     label68:;
-    XMLVM_TRY_BEGIN(w17870aaab7b1c32)
+    XMLVM_TRY_BEGIN(w17873aaab7b1c32)
     // Begin try
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 380)
-    { XMLVM_MEMCPY(curThread_w17870aaab7b1c32->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17870aaab7b1c32, sizeof(XMLVM_JMP_BUF)); goto label5; };
+    { XMLVM_MEMCPY(curThread_w17873aaab7b1c32->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w17873aaab7b1c32, sizeof(XMLVM_JMP_BUF)); goto label5; };
     XMLVM_SOURCE_POSITION("AbstractMap.java", 382)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17870aaab7b1c32)
-        XMLVM_CATCH_SPECIFIC(w17870aaab7b1c32,java_lang_NullPointerException,78)
-        XMLVM_CATCH_SPECIFIC(w17870aaab7b1c32,java_lang_ClassCastException,81)
-    XMLVM_CATCH_END(w17870aaab7b1c32)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17870aaab7b1c32)
+    XMLVM_CATCH_BEGIN(w17873aaab7b1c32)
+        XMLVM_CATCH_SPECIFIC(w17873aaab7b1c32,java_lang_NullPointerException,78)
+        XMLVM_CATCH_SPECIFIC(w17873aaab7b1c32,java_lang_ClassCastException,81)
+    XMLVM_CATCH_END(w17873aaab7b1c32)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17873aaab7b1c32)
     label70:;
-    XMLVM_TRY_BEGIN(w17870aaab7b1c34)
+    XMLVM_TRY_BEGIN(w17873aaab7b1c34)
     // Begin try
     //java_lang_Object_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(2)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_Object*) _r2.o)->tib->vtable[1])(_r2.o, _r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w17870aaab7b1c34)
-        XMLVM_CATCH_SPECIFIC(w17870aaab7b1c34,java_lang_NullPointerException,78)
-        XMLVM_CATCH_SPECIFIC(w17870aaab7b1c34,java_lang_ClassCastException,81)
-    XMLVM_CATCH_END(w17870aaab7b1c34)
-    XMLVM_RESTORE_EXCEPTION_ENV(w17870aaab7b1c34)
+    XMLVM_CATCH_BEGIN(w17873aaab7b1c34)
+        XMLVM_CATCH_SPECIFIC(w17873aaab7b1c34,java_lang_NullPointerException,78)
+        XMLVM_CATCH_SPECIFIC(w17873aaab7b1c34,java_lang_ClassCastException,81)
+    XMLVM_CATCH_END(w17873aaab7b1c34)
+    XMLVM_RESTORE_EXCEPTION_ENV(w17873aaab7b1c34)
     if (_r1.i != 0) goto label32;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 383)
     goto label5;
     label78:;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 387)
-    java_lang_Thread* curThread_w17870aaab7b1c41 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w17870aaab7b1c41->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w17873aaab7b1c41 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w17873aaab7b1c41->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r4;
     goto label5;
     label81:;
     XMLVM_SOURCE_POSITION("AbstractMap.java", 389)
-    java_lang_Thread* curThread_w17870aaab7b1c46 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w17870aaab7b1c46->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w17873aaab7b1c46 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w17873aaab7b1c46->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r4;
     goto label5;
     label84:;

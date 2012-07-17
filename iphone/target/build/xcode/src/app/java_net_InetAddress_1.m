@@ -318,7 +318,7 @@ void java_net_InetAddress_1_run__(JAVA_OBJECT me)
     java_lang_Object_acquireLockRecursive__(_r1.o);
     XMLVM_SOURCE_POSITION("InetAddress.java", 906)
     if (_r0.i == 0) goto label60;
-    XMLVM_TRY_BEGIN(w23537aaab6b1c21)
+    XMLVM_TRY_BEGIN(w23540aaab6b1c21)
     // Begin try
     XMLVM_SOURCE_POSITION("InetAddress.java", 909)
     XMLVM_CHECK_NPE(6)
@@ -333,26 +333,26 @@ void java_net_InetAddress_1_run__(JAVA_OBJECT me)
     java_lang_Object_notifyAll__(_r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23537aaab6b1c21)
-        XMLVM_CATCH_SPECIFIC(w23537aaab6b1c21,java_lang_Object,83)
-    XMLVM_CATCH_END(w23537aaab6b1c21)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23537aaab6b1c21)
+    XMLVM_CATCH_BEGIN(w23540aaab6b1c21)
+        XMLVM_CATCH_SPECIFIC(w23540aaab6b1c21,java_lang_Object,83)
+    XMLVM_CATCH_END(w23540aaab6b1c21)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23540aaab6b1c21)
     label45:;
-    XMLVM_TRY_BEGIN(w23537aaab6b1c23)
+    XMLVM_TRY_BEGIN(w23540aaab6b1c23)
     // Begin try
     XMLVM_SOURCE_POSITION("InetAddress.java", 919)
     java_lang_Object_releaseLockRecursive__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23537aaab6b1c23)
-        XMLVM_CATCH_SPECIFIC(w23537aaab6b1c23,java_lang_Object,83)
-    XMLVM_CATCH_END(w23537aaab6b1c23)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23537aaab6b1c23)
+    XMLVM_CATCH_BEGIN(w23540aaab6b1c23)
+        XMLVM_CATCH_SPECIFIC(w23540aaab6b1c23,java_lang_Object,83)
+    XMLVM_CATCH_END(w23540aaab6b1c23)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23540aaab6b1c23)
     XMLVM_SOURCE_POSITION("InetAddress.java", 920)
     XMLVM_EXIT_METHOD()
     return;
     label47:;
-    XMLVM_TRY_BEGIN(w23537aaab6b1c27)
+    XMLVM_TRY_BEGIN(w23540aaab6b1c27)
     // Begin try
     XMLVM_SOURCE_POSITION("InetAddress.java", 898)
     XMLVM_CHECK_NPE(6)
@@ -366,13 +366,13 @@ void java_net_InetAddress_1_run__(JAVA_OBJECT me)
     _r0.i = java_net_InetAddress_access$200___java_net_InetAddress_java_net_InetAddress_java_net_InetAddress_int(_r1.o, _r2.o, _r3.o, _r4.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23537aaab6b1c27)
-        XMLVM_CATCH_SPECIFIC(w23537aaab6b1c27,java_io_IOException,86)
-    XMLVM_CATCH_END(w23537aaab6b1c27)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23537aaab6b1c27)
+    XMLVM_CATCH_BEGIN(w23540aaab6b1c27)
+        XMLVM_CATCH_SPECIFIC(w23540aaab6b1c27,java_io_IOException,86)
+    XMLVM_CATCH_END(w23540aaab6b1c27)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23540aaab6b1c27)
     goto label21;
     label60:;
-    XMLVM_TRY_BEGIN(w23537aaab6b1c30)
+    XMLVM_TRY_BEGIN(w23540aaab6b1c30)
     // Begin try
     XMLVM_SOURCE_POSITION("InetAddress.java", 912)
     XMLVM_CHECK_NPE(6)
@@ -382,37 +382,37 @@ void java_net_InetAddress_1_run__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(6)
     _r2.o = ((java_net_InetAddress_1*) _r6.o)->fields.java_net_InetAddress_1.this_0_;
     _r2.i = java_net_InetAddress_access$500___java_net_InetAddress(_r2.o);
-    if (_r2.i != 0) { XMLVM_MEMCPY(curThread_w23537aaab6b1c30->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23537aaab6b1c30, sizeof(XMLVM_JMP_BUF)); goto label45; };
+    if (_r2.i != 0) { XMLVM_MEMCPY(curThread_w23540aaab6b1c30->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23540aaab6b1c30, sizeof(XMLVM_JMP_BUF)); goto label45; };
     XMLVM_SOURCE_POSITION("InetAddress.java", 916)
     XMLVM_CHECK_NPE(6)
     _r2.o = ((java_net_InetAddress_1*) _r6.o)->fields.java_net_InetAddress_1.this_0_;
     _r2.o = java_net_InetAddress_access$300___java_net_InetAddress(_r2.o);
     XMLVM_CHECK_NPE(2)
     java_lang_Object_notifyAll__(_r2.o);
-    { XMLVM_MEMCPY(curThread_w23537aaab6b1c30->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23537aaab6b1c30, sizeof(XMLVM_JMP_BUF)); goto label45; };
+    { XMLVM_MEMCPY(curThread_w23540aaab6b1c30->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23540aaab6b1c30, sizeof(XMLVM_JMP_BUF)); goto label45; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23537aaab6b1c30)
-        XMLVM_CATCH_SPECIFIC(w23537aaab6b1c30,java_lang_Object,83)
-    XMLVM_CATCH_END(w23537aaab6b1c30)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23537aaab6b1c30)
+    XMLVM_CATCH_BEGIN(w23540aaab6b1c30)
+        XMLVM_CATCH_SPECIFIC(w23540aaab6b1c30,java_lang_Object,83)
+    XMLVM_CATCH_END(w23540aaab6b1c30)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23540aaab6b1c30)
     label83:;
-    XMLVM_TRY_BEGIN(w23537aaab6b1c32)
+    XMLVM_TRY_BEGIN(w23540aaab6b1c32)
     // Begin try
-    java_lang_Thread* curThread_w23537aaab6b1c32aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w23537aaab6b1c32aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w23540aaab6b1c32aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w23540aaab6b1c32aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23537aaab6b1c32)
-        XMLVM_CATCH_SPECIFIC(w23537aaab6b1c32,java_lang_Object,83)
-    XMLVM_CATCH_END(w23537aaab6b1c32)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23537aaab6b1c32)
+    XMLVM_CATCH_BEGIN(w23540aaab6b1c32)
+        XMLVM_CATCH_SPECIFIC(w23540aaab6b1c32,java_lang_Object,83)
+    XMLVM_CATCH_END(w23540aaab6b1c32)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23540aaab6b1c32)
     XMLVM_THROW_CUSTOM(_r2.o)
     label86:;
     XMLVM_SOURCE_POSITION("InetAddress.java", 900)
-    java_lang_Thread* curThread_w23537aaab6b1c36 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w23537aaab6b1c36->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w23540aaab6b1c36 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w23540aaab6b1c36->fields.java_lang_Thread.xmlvmException_;
     goto label21;
     //XMLVM_END_WRAPPER
 }

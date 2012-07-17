@@ -626,7 +626,7 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSInput_getStringData__(JAVA_OBJECT me)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((gnu_xml_dom_ls_DomLSInput*) _r5.o)->tib->vtable[9])(_r5.o);
     XMLVM_SOURCE_POSITION("DomLSInput.java", 91)
     _r2.i = 4096;
-    XMLVM_TRY_BEGIN(w13762aaac11b1b9)
+    XMLVM_TRY_BEGIN(w13765aaac11b1b9)
     // Begin try
     if (!__TIB_char.classInitialized) __INIT_char();
     _r2.o = XMLVMArray_createSingleDimension(__CLASS_char, _r2.i);
@@ -636,10 +636,10 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSInput_getStringData__(JAVA_OBJECT me)
     _r3.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_io_Reader*) _r1.o)->tib->vtable[10])(_r1.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w13762aaac11b1b9)
-        XMLVM_CATCH_SPECIFIC(w13762aaac11b1b9,java_io_IOException,34)
-    XMLVM_CATCH_END(w13762aaac11b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w13762aaac11b1b9)
+    XMLVM_CATCH_BEGIN(w13765aaac11b1b9)
+        XMLVM_CATCH_SPECIFIC(w13765aaac11b1b9,java_io_IOException,34)
+    XMLVM_CATCH_END(w13765aaac11b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w13765aaac11b1b9)
     label17:;
     _r4.i = -1;
     if (_r3.i != _r4.i) goto label25;
@@ -653,7 +653,7 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSInput_getStringData__(JAVA_OBJECT me)
     label25:;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 94)
     _r4.i = 0;
-    XMLVM_TRY_BEGIN(w13762aaac11b1c20)
+    XMLVM_TRY_BEGIN(w13765aaac11b1c20)
     // Begin try
     XMLVM_CHECK_NPE(0)
     gnu_java_lang_CPStringBuilder_append___char_1ARRAY_int_int(_r0.o, _r2.o, _r4.i, _r3.i);
@@ -662,15 +662,15 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSInput_getStringData__(JAVA_OBJECT me)
     _r3.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_io_Reader*) _r1.o)->tib->vtable[10])(_r1.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w13762aaac11b1c20)
-        XMLVM_CATCH_SPECIFIC(w13762aaac11b1c20,java_io_IOException,34)
-    XMLVM_CATCH_END(w13762aaac11b1c20)
-    XMLVM_RESTORE_EXCEPTION_ENV(w13762aaac11b1c20)
+    XMLVM_CATCH_BEGIN(w13765aaac11b1c20)
+        XMLVM_CATCH_SPECIFIC(w13765aaac11b1c20,java_io_IOException,34)
+    XMLVM_CATCH_END(w13765aaac11b1c20)
+    XMLVM_RESTORE_EXCEPTION_ENV(w13765aaac11b1c20)
     goto label17;
     label34:;
     XMLVM_SOURCE_POSITION("DomLSInput.java", 99)
-    java_lang_Thread* curThread_w13762aaac11b1c24 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w13762aaac11b1c24->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w13765aaac11b1c24 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w13765aaac11b1c24->fields.java_lang_Thread.xmlvmException_;
     _r0.o = JAVA_NULL;
     goto label24;
     //XMLVM_END_WRAPPER

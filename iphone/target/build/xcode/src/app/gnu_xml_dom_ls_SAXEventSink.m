@@ -1236,7 +1236,7 @@ void gnu_xml_dom_ls_SAXEventSink_startDocument__(JAVA_OBJECT me)
     //gnu_xml_dom_DomDocument_setXmlStandalone___boolean[84]
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT, JAVA_BOOLEAN)) ((gnu_xml_dom_DomDocument*) _r1.o)->tib->vtable[84])(_r1.o, _r0.i);
-    XMLVM_TRY_BEGIN(w21077aaac24b1c38)
+    XMLVM_TRY_BEGIN(w21080aaac24b1c38)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 159)
     XMLVM_CHECK_NPE(3)
@@ -1254,13 +1254,13 @@ void gnu_xml_dom_ls_SAXEventSink_startDocument__(JAVA_OBJECT me)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_dom_DomDocument*) _r1.o)->tib->vtable[85])(_r1.o, _r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21077aaac24b1c38)
-        XMLVM_CATCH_SPECIFIC(w21077aaac24b1c38,org_xml_sax_SAXNotRecognizedException,116)
-        XMLVM_CATCH_SPECIFIC(w21077aaac24b1c38,org_xml_sax_SAXNotSupportedException,114)
-    XMLVM_CATCH_END(w21077aaac24b1c38)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21077aaac24b1c38)
+    XMLVM_CATCH_BEGIN(w21080aaac24b1c38)
+        XMLVM_CATCH_SPECIFIC(w21080aaac24b1c38,org_xml_sax_SAXNotRecognizedException,116)
+        XMLVM_CATCH_SPECIFIC(w21080aaac24b1c38,org_xml_sax_SAXNotSupportedException,114)
+    XMLVM_CATCH_END(w21080aaac24b1c38)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21080aaac24b1c38)
     label71:;
-    XMLVM_TRY_BEGIN(w21077aaac24b1c40)
+    XMLVM_TRY_BEGIN(w21080aaac24b1c40)
     // Begin try
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 171)
     XMLVM_CHECK_NPE(3)
@@ -1277,11 +1277,11 @@ void gnu_xml_dom_ls_SAXEventSink_startDocument__(JAVA_OBJECT me)
     gnu_xml_dom_DomDocument_setXmlEncoding___java_lang_String(_r1.o, _r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21077aaac24b1c40)
-        XMLVM_CATCH_SPECIFIC(w21077aaac24b1c40,org_xml_sax_SAXNotRecognizedException,112)
-        XMLVM_CATCH_SPECIFIC(w21077aaac24b1c40,org_xml_sax_SAXNotSupportedException,110)
-    XMLVM_CATCH_END(w21077aaac24b1c40)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21077aaac24b1c40)
+    XMLVM_CATCH_BEGIN(w21080aaac24b1c40)
+        XMLVM_CATCH_SPECIFIC(w21080aaac24b1c40,org_xml_sax_SAXNotRecognizedException,112)
+        XMLVM_CATCH_SPECIFIC(w21080aaac24b1c40,org_xml_sax_SAXNotSupportedException,110)
+    XMLVM_CATCH_END(w21080aaac24b1c40)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21080aaac24b1c40)
     label86:;
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 182)
     XMLVM_CHECK_NPE(3)
@@ -1308,22 +1308,22 @@ void gnu_xml_dom_ls_SAXEventSink_startDocument__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return;
     label110:;
-    java_lang_Thread* curThread_w21077aaac24b1c59 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w21077aaac24b1c59->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w21080aaac24b1c59 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w21080aaac24b1c59->fields.java_lang_Thread.xmlvmException_;
     goto label86;
     label112:;
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 175)
-    java_lang_Thread* curThread_w21077aaac24b1c63 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w21077aaac24b1c63->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w21080aaac24b1c63 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w21080aaac24b1c63->fields.java_lang_Thread.xmlvmException_;
     goto label86;
     label114:;
-    java_lang_Thread* curThread_w21077aaac24b1c66 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w21077aaac24b1c66->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w21080aaac24b1c66 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w21080aaac24b1c66->fields.java_lang_Thread.xmlvmException_;
     goto label71;
     label116:;
     XMLVM_SOURCE_POSITION("SAXEventSink.java", 163)
-    java_lang_Thread* curThread_w21077aaac24b1c70 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w21077aaac24b1c70->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w21080aaac24b1c70 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w21080aaac24b1c70->fields.java_lang_Thread.xmlvmException_;
     goto label71;
     //XMLVM_END_WRAPPER
 }

@@ -811,7 +811,7 @@ JAVA_OBJECT org_json_JSONArray_toString__(JAVA_OBJECT me)
     XMLVMElem _r2;
     XMLVMElem _r3;
     _r3.o = me;
-    XMLVM_TRY_BEGIN(w20823aaac11b1b2)
+    XMLVM_TRY_BEGIN(w20826aaac11b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("JSONArray.java", 834)
     _r1.o = __NEW_java_lang_StringBuffer();
@@ -836,18 +836,18 @@ JAVA_OBJECT org_json_JSONArray_toString__(JAVA_OBJECT me)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuffer*) _r1.o)->tib->vtable[5])(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w20823aaac11b1b2)
-        XMLVM_CATCH_SPECIFIC(w20823aaac11b1b2,java_lang_Exception,32)
-    XMLVM_CATCH_END(w20823aaac11b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w20823aaac11b1b2)
+    XMLVM_CATCH_BEGIN(w20826aaac11b1b2)
+        XMLVM_CATCH_SPECIFIC(w20826aaac11b1b2,java_lang_Exception,32)
+    XMLVM_CATCH_END(w20826aaac11b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w20826aaac11b1b2)
     label31:;
     XMLVM_SOURCE_POSITION("JSONArray.java", 836)
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label32:;
     XMLVM_SOURCE_POSITION("JSONArray.java", 835)
-    java_lang_Thread* curThread_w20823aaac11b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w20823aaac11b1b8->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w20826aaac11b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w20826aaac11b1b8->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r1;
     _r1.o = JAVA_NULL;
     goto label31;

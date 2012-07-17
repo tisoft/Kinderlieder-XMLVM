@@ -240,7 +240,7 @@ JAVA_OBJECT java_util_TimeZone_1_run__(JAVA_OBJECT me)
     _r3.o = me;
     // "defaultZone"
     _r0.o = xmlvm_create_java_string_from_pool(3357);
-    XMLVM_TRY_BEGIN(w43837aaab2b1b3)
+    XMLVM_TRY_BEGIN(w43839aaab2b1b3)
     // Begin try
     XMLVM_SOURCE_POSITION("TimeZone.java", 518)
     XMLVM_SOURCE_POSITION("TimeZone.java", 520)
@@ -266,18 +266,18 @@ JAVA_OBJECT java_util_TimeZone_1_run__(JAVA_OBJECT me)
     java_lang_reflect_Field_set___java_lang_Object_java_lang_Object(_r0.o, _r1.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w43837aaab2b1b3)
-        XMLVM_CATCH_SPECIFIC(w43837aaab2b1b3,java_lang_Exception,22)
-    XMLVM_CATCH_END(w43837aaab2b1b3)
-    XMLVM_RESTORE_EXCEPTION_ENV(w43837aaab2b1b3)
+    XMLVM_CATCH_BEGIN(w43839aaab2b1b3)
+        XMLVM_CATCH_SPECIFIC(w43839aaab2b1b3,java_lang_Exception,22)
+    XMLVM_CATCH_END(w43839aaab2b1b3)
+    XMLVM_RESTORE_EXCEPTION_ENV(w43839aaab2b1b3)
     label21:;
     XMLVM_SOURCE_POSITION("TimeZone.java", 527)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label22:;
     XMLVM_SOURCE_POSITION("TimeZone.java", 525)
-    java_lang_Thread* curThread_w43837aaab2b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w43837aaab2b1b9->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w43839aaab2b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w43839aaab2b1b9->fields.java_lang_Thread.xmlvmException_;
     _r0.o = JAVA_NULL;
     goto label21;
     //XMLVM_END_WRAPPER

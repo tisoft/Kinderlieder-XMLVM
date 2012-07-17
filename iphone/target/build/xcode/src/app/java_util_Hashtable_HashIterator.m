@@ -542,7 +542,7 @@ void java_util_Hashtable_HashIterator_remove__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(6)
     _r0.o = ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.this_0_;
     java_lang_Object_acquireLockRecursive__(_r0.o);
-    XMLVM_TRY_BEGIN(w23574aaac10b1c17)
+    XMLVM_TRY_BEGIN(w23577aaac10b1c17)
     // Begin try
     XMLVM_SOURCE_POSITION("Hashtable.java", 196)
     XMLVM_CHECK_NPE(6)
@@ -557,7 +557,7 @@ void java_util_Hashtable_HashIterator_remove__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Hashtable.java", 197)
     XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.lastEntry_;
-    if (_r1.o != _r2.o) { XMLVM_MEMCPY(curThread_w23574aaac10b1c17->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23574aaac10b1c17, sizeof(XMLVM_JMP_BUF)); goto label69; };
+    if (_r1.o != _r2.o) { XMLVM_MEMCPY(curThread_w23577aaac10b1c17->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23577aaac10b1c17, sizeof(XMLVM_JMP_BUF)); goto label69; };
     XMLVM_SOURCE_POSITION("Hashtable.java", 198)
     XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.this_0_;
@@ -574,15 +574,15 @@ void java_util_Hashtable_HashIterator_remove__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("Hashtable.java", 199)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23574aaac10b1c17)
-        XMLVM_CATCH_SPECIFIC(w23574aaac10b1c17,java_lang_Object,94)
-    XMLVM_CATCH_END(w23574aaac10b1c17)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23574aaac10b1c17)
+    XMLVM_CATCH_BEGIN(w23577aaac10b1c17)
+        XMLVM_CATCH_SPECIFIC(w23577aaac10b1c17,java_lang_Object,94)
+    XMLVM_CATCH_END(w23577aaac10b1c17)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23577aaac10b1c17)
     label42:;
-    XMLVM_TRY_BEGIN(w23574aaac10b1c19)
+    XMLVM_TRY_BEGIN(w23577aaac10b1c19)
     // Begin try
     XMLVM_SOURCE_POSITION("Hashtable.java", 209)
-    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w23574aaac10b1c19->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23574aaac10b1c19, sizeof(XMLVM_JMP_BUF)); goto label87; };
+    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w23577aaac10b1c19->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23577aaac10b1c19, sizeof(XMLVM_JMP_BUF)); goto label87; };
     XMLVM_SOURCE_POSITION("Hashtable.java", 210)
     XMLVM_CHECK_NPE(6)
     _r1.o = ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.this_0_;
@@ -607,48 +607,48 @@ void java_util_Hashtable_HashIterator_remove__(JAVA_OBJECT me)
     ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.expectedModCount_ = _r1.i;
     XMLVM_SOURCE_POSITION("Hashtable.java", 213)
     java_lang_Object_releaseLockRecursive__(_r0.o);
-    XMLVM_MEMCPY(curThread_w23574aaac10b1c19->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23574aaac10b1c19, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w23577aaac10b1c19->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23577aaac10b1c19, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23574aaac10b1c19)
-        XMLVM_CATCH_SPECIFIC(w23574aaac10b1c19,java_lang_Object,94)
-    XMLVM_CATCH_END(w23574aaac10b1c19)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23574aaac10b1c19)
+    XMLVM_CATCH_BEGIN(w23577aaac10b1c19)
+        XMLVM_CATCH_SPECIFIC(w23577aaac10b1c19,java_lang_Object,94)
+    XMLVM_CATCH_END(w23577aaac10b1c19)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23577aaac10b1c19)
     label67:;
-    XMLVM_TRY_BEGIN(w23574aaac10b1c21)
+    XMLVM_TRY_BEGIN(w23577aaac10b1c21)
     // Begin try
     XMLVM_SOURCE_POSITION("Hashtable.java", 202)
     XMLVM_CHECK_NPE(1)
     _r1.o = ((java_util_Hashtable_Entry*) _r1.o)->fields.java_util_Hashtable_Entry.next_;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23574aaac10b1c21)
-        XMLVM_CATCH_SPECIFIC(w23574aaac10b1c21,java_lang_Object,94)
-    XMLVM_CATCH_END(w23574aaac10b1c21)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23574aaac10b1c21)
+    XMLVM_CATCH_BEGIN(w23577aaac10b1c21)
+        XMLVM_CATCH_SPECIFIC(w23577aaac10b1c21,java_lang_Object,94)
+    XMLVM_CATCH_END(w23577aaac10b1c21)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23577aaac10b1c21)
     label69:;
-    XMLVM_TRY_BEGIN(w23574aaac10b1c23)
+    XMLVM_TRY_BEGIN(w23577aaac10b1c23)
     // Begin try
     XMLVM_SOURCE_POSITION("Hashtable.java", 201)
-    if (_r1.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w23574aaac10b1c23->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23574aaac10b1c23, sizeof(XMLVM_JMP_BUF)); goto label77; };
+    if (_r1.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w23577aaac10b1c23->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23577aaac10b1c23, sizeof(XMLVM_JMP_BUF)); goto label77; };
     XMLVM_CHECK_NPE(1)
     _r2.o = ((java_util_Hashtable_Entry*) _r1.o)->fields.java_util_Hashtable_Entry.next_;
     XMLVM_CHECK_NPE(6)
     _r3.o = ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.lastEntry_;
-    if (_r2.o != _r3.o) { XMLVM_MEMCPY(curThread_w23574aaac10b1c23->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23574aaac10b1c23, sizeof(XMLVM_JMP_BUF)); goto label67; };
+    if (_r2.o != _r3.o) { XMLVM_MEMCPY(curThread_w23577aaac10b1c23->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23577aaac10b1c23, sizeof(XMLVM_JMP_BUF)); goto label67; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23574aaac10b1c23)
-        XMLVM_CATCH_SPECIFIC(w23574aaac10b1c23,java_lang_Object,94)
-    XMLVM_CATCH_END(w23574aaac10b1c23)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23574aaac10b1c23)
+    XMLVM_CATCH_BEGIN(w23577aaac10b1c23)
+        XMLVM_CATCH_SPECIFIC(w23577aaac10b1c23,java_lang_Object,94)
+    XMLVM_CATCH_END(w23577aaac10b1c23)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23577aaac10b1c23)
     label77:;
-    XMLVM_TRY_BEGIN(w23574aaac10b1c25)
+    XMLVM_TRY_BEGIN(w23577aaac10b1c25)
     // Begin try
     XMLVM_SOURCE_POSITION("Hashtable.java", 204)
-    if (_r1.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w23574aaac10b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23574aaac10b1c25, sizeof(XMLVM_JMP_BUF)); goto label103; };
+    if (_r1.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w23577aaac10b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23577aaac10b1c25, sizeof(XMLVM_JMP_BUF)); goto label103; };
     XMLVM_SOURCE_POSITION("Hashtable.java", 205)
     XMLVM_CHECK_NPE(6)
     _r2.o = ((java_util_Hashtable_HashIterator*) _r6.o)->fields.java_util_Hashtable_HashIterator.lastEntry_;
@@ -658,23 +658,23 @@ void java_util_Hashtable_HashIterator_remove__(JAVA_OBJECT me)
     ((java_util_Hashtable_Entry*) _r1.o)->fields.java_util_Hashtable_Entry.next_ = _r2.o;
     _r1 = _r4;
     XMLVM_SOURCE_POSITION("Hashtable.java", 206)
-    { XMLVM_MEMCPY(curThread_w23574aaac10b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23574aaac10b1c25, sizeof(XMLVM_JMP_BUF)); goto label42; };
+    { XMLVM_MEMCPY(curThread_w23577aaac10b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23577aaac10b1c25, sizeof(XMLVM_JMP_BUF)); goto label42; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23574aaac10b1c25)
-        XMLVM_CATCH_SPECIFIC(w23574aaac10b1c25,java_lang_Object,94)
-    XMLVM_CATCH_END(w23574aaac10b1c25)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23574aaac10b1c25)
+    XMLVM_CATCH_BEGIN(w23577aaac10b1c25)
+        XMLVM_CATCH_SPECIFIC(w23577aaac10b1c25,java_lang_Object,94)
+    XMLVM_CATCH_END(w23577aaac10b1c25)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23577aaac10b1c25)
     label87:;
-    XMLVM_TRY_BEGIN(w23574aaac10b1c27)
+    XMLVM_TRY_BEGIN(w23577aaac10b1c27)
     // Begin try
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23574aaac10b1c27)
-        XMLVM_CATCH_SPECIFIC(w23574aaac10b1c27,java_lang_Object,94)
-    XMLVM_CATCH_END(w23574aaac10b1c27)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23574aaac10b1c27)
+    XMLVM_CATCH_BEGIN(w23577aaac10b1c27)
+        XMLVM_CATCH_SPECIFIC(w23577aaac10b1c27,java_lang_Object,94)
+    XMLVM_CATCH_END(w23577aaac10b1c27)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23577aaac10b1c27)
     label88:;
     XMLVM_SOURCE_POSITION("Hashtable.java", 226)
     _r0.o = __NEW_java_util_ConcurrentModificationException();
@@ -682,17 +682,17 @@ void java_util_Hashtable_HashIterator_remove__(JAVA_OBJECT me)
     java_util_ConcurrentModificationException___INIT___(_r0.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label94:;
-    java_lang_Thread* curThread_w23574aaac10b1c34 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w23574aaac10b1c34->fields.java_lang_Thread.xmlvmException_;
-    XMLVM_TRY_BEGIN(w23574aaac10b1c35)
+    java_lang_Thread* curThread_w23577aaac10b1c34 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w23577aaac10b1c34->fields.java_lang_Thread.xmlvmException_;
+    XMLVM_TRY_BEGIN(w23577aaac10b1c35)
     // Begin try
     java_lang_Object_releaseLockRecursive__(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23574aaac10b1c35)
-        XMLVM_CATCH_SPECIFIC(w23574aaac10b1c35,java_lang_Object,94)
-    XMLVM_CATCH_END(w23574aaac10b1c35)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23574aaac10b1c35)
+    XMLVM_CATCH_BEGIN(w23577aaac10b1c35)
+        XMLVM_CATCH_SPECIFIC(w23577aaac10b1c35,java_lang_Object,94)
+    XMLVM_CATCH_END(w23577aaac10b1c35)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23577aaac10b1c35)
     XMLVM_THROW_CUSTOM(_r1.o)
     label97:;
     XMLVM_SOURCE_POSITION("Hashtable.java", 223)

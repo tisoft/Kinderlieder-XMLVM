@@ -1477,7 +1477,7 @@ void gnu_xml_dom_DomElement_removeAttribute___java_lang_String(JAVA_OBJECT me, J
     XMLVM_EXIT_METHOD()
     return;
     label5:;
-    XMLVM_TRY_BEGIN(w20680aaac21b1c10)
+    XMLVM_TRY_BEGIN(w20683aaac21b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("DomElement.java", 346)
     XMLVM_CHECK_NPE(3)
@@ -1487,15 +1487,15 @@ void gnu_xml_dom_DomElement_removeAttribute___java_lang_String(JAVA_OBJECT me, J
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((gnu_xml_dom_DomNamedNodeMap*) _r0.o)->tib->vtable[11])(_r0.o, _r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w20680aaac21b1c10)
-        XMLVM_CATCH_SPECIFIC(w20680aaac21b1c10,gnu_xml_dom_DomDOMException,11)
-    XMLVM_CATCH_END(w20680aaac21b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w20680aaac21b1c10)
+    XMLVM_CATCH_BEGIN(w20683aaac21b1c10)
+        XMLVM_CATCH_SPECIFIC(w20683aaac21b1c10,gnu_xml_dom_DomDOMException,11)
+    XMLVM_CATCH_END(w20683aaac21b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w20683aaac21b1c10)
     goto label4;
     label11:;
     XMLVM_SOURCE_POSITION("DomElement.java", 348)
-    java_lang_Thread* curThread_w20680aaac21b1c14 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w20680aaac21b1c14->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w20683aaac21b1c14 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w20683aaac21b1c14->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("DomElement.java", 350)
     XMLVM_CHECK_NPE(0)
     _r1.i = ((org_w3c_dom_DOMException*) _r0.o)->fields.org_w3c_dom_DOMException.code_;

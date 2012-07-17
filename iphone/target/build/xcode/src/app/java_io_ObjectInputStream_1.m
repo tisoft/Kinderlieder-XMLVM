@@ -266,7 +266,7 @@ JAVA_OBJECT java_io_ObjectInputStream_1_run__(JAVA_OBJECT me)
     XMLVMElem _r2;
     XMLVMElem _r3;
     _r3.o = me;
-    XMLVM_TRY_BEGIN(w11064aaab4b1b2)
+    XMLVM_TRY_BEGIN(w11067aaab4b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("ObjectInputStream.java", 390)
     XMLVM_CHECK_NPE(3)
@@ -286,24 +286,24 @@ JAVA_OBJECT java_io_ObjectInputStream_1_run__(JAVA_OBJECT me)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_reflect_Method*) _r0.o)->tib->vtable[12])(_r0.o);
     XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_ObjectInputStream_1*) _r3.o)->fields.java_io_ObjectInputStream_1.val_thisClass_;
-    if (_r0.o == _r1.o) { XMLVM_MEMCPY(curThread_w11064aaab4b1b2->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w11064aaab4b1b2, sizeof(XMLVM_JMP_BUF)); goto label22; };
+    if (_r0.o == _r1.o) { XMLVM_MEMCPY(curThread_w11067aaab4b1b2->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w11067aaab4b1b2, sizeof(XMLVM_JMP_BUF)); goto label22; };
     XMLVM_SOURCE_POSITION("ObjectInputStream.java", 395)
     _r0.o = java_lang_Boolean_GET_TRUE();
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w11064aaab4b1b2)
-        XMLVM_CATCH_SPECIFIC(w11064aaab4b1b2,java_lang_NoSuchMethodException,21)
-    XMLVM_CATCH_END(w11064aaab4b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w11064aaab4b1b2)
+    XMLVM_CATCH_BEGIN(w11067aaab4b1b2)
+        XMLVM_CATCH_SPECIFIC(w11067aaab4b1b2,java_lang_NoSuchMethodException,21)
+    XMLVM_CATCH_END(w11067aaab4b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w11067aaab4b1b2)
     label20:;
     XMLVM_SOURCE_POSITION("ObjectInputStream.java", 409)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label21:;
-    java_lang_Thread* curThread_w11064aaab4b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w11064aaab4b1b7->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w11067aaab4b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w11067aaab4b1b7->fields.java_lang_Thread.xmlvmException_;
     label22:;
-    XMLVM_TRY_BEGIN(w11064aaab4b1b9)
+    XMLVM_TRY_BEGIN(w11067aaab4b1b9)
     // Begin try
     XMLVM_SOURCE_POSITION("ObjectInputStream.java", 400)
     XMLVM_CHECK_NPE(3)
@@ -323,19 +323,19 @@ JAVA_OBJECT java_io_ObjectInputStream_1_run__(JAVA_OBJECT me)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_reflect_Method*) _r0.o)->tib->vtable[12])(_r0.o);
     XMLVM_CHECK_NPE(3)
     _r1.o = ((java_io_ObjectInputStream_1*) _r3.o)->fields.java_io_ObjectInputStream_1.val_thisClass_;
-    if (_r0.o == _r1.o) { XMLVM_MEMCPY(curThread_w11064aaab4b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w11064aaab4b1b9, sizeof(XMLVM_JMP_BUF)); goto label44; };
+    if (_r0.o == _r1.o) { XMLVM_MEMCPY(curThread_w11067aaab4b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w11067aaab4b1b9, sizeof(XMLVM_JMP_BUF)); goto label44; };
     XMLVM_SOURCE_POSITION("ObjectInputStream.java", 405)
     _r0.o = java_lang_Boolean_GET_TRUE();
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w11064aaab4b1b9)
-        XMLVM_CATCH_SPECIFIC(w11064aaab4b1b9,java_lang_NoSuchMethodException,43)
-    XMLVM_CATCH_END(w11064aaab4b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w11064aaab4b1b9)
+    XMLVM_CATCH_BEGIN(w11067aaab4b1b9)
+        XMLVM_CATCH_SPECIFIC(w11067aaab4b1b9,java_lang_NoSuchMethodException,43)
+    XMLVM_CATCH_END(w11067aaab4b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w11067aaab4b1b9)
     goto label20;
     label43:;
-    java_lang_Thread* curThread_w11064aaab4b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w11064aaab4b1c12->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w11067aaab4b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w11067aaab4b1c12->fields.java_lang_Thread.xmlvmException_;
     label44:;
     _r0.o = java_lang_Boolean_GET_FALSE();
     goto label20;

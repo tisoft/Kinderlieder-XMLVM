@@ -682,7 +682,7 @@ JAVA_OBJECT java_lang_Enum_getValues___java_lang_Class(JAVA_OBJECT n1)
     XMLVMElem _r3;
     _r3.o = n1;
     _r2.o = JAVA_NULL;
-    XMLVM_TRY_BEGIN(w28459aaac13b1b3)
+    XMLVM_TRY_BEGIN(w28462aaac13b1b3)
     // Begin try
     XMLVM_SOURCE_POSITION("Enum.java", 196)
     _r0.o = __NEW_java_lang_Enum_1();
@@ -698,18 +698,18 @@ JAVA_OBJECT java_lang_Enum_getValues___java_lang_Class(JAVA_OBJECT n1)
     _r3.o = _r3.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28459aaac13b1b3)
-        XMLVM_CATCH_SPECIFIC(w28459aaac13b1b3,java_lang_Exception,21)
-    XMLVM_CATCH_END(w28459aaac13b1b3)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28459aaac13b1b3)
+    XMLVM_CATCH_BEGIN(w28462aaac13b1b3)
+        XMLVM_CATCH_SPECIFIC(w28462aaac13b1b3,java_lang_Exception,21)
+    XMLVM_CATCH_END(w28462aaac13b1b3)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28462aaac13b1b3)
     _r0 = _r3;
     label20:;
     XMLVM_SOURCE_POSITION("Enum.java", 206)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label21:;
-    java_lang_Thread* curThread_w28459aaac13b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w28459aaac13b1b9->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w28462aaac13b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w28462aaac13b1b9->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r2;
     goto label20;
     //XMLVM_END_WRAPPER

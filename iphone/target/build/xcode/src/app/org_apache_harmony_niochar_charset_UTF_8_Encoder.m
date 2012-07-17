@@ -572,23 +572,23 @@ JAVA_OBJECT org_apache_harmony_niochar_charset_UTF_8_Encoder_encodeLoop___java_n
     label331:;
     XMLVM_SOURCE_POSITION("UTF_8.java", 324)
     if (_r1.i != 0) goto label341;
-    XMLVM_TRY_BEGIN(w23126aaab2b1d248)
+    XMLVM_TRY_BEGIN(w23129aaab2b1d248)
     // Begin try
     XMLVM_SOURCE_POSITION("UTF_8.java", 325)
     _r1.o = java_nio_charset_CoderResult_GET_OVERFLOW();
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23126aaab2b1d248)
-        XMLVM_CATCH_SPECIFIC(w23126aaab2b1d248,java_lang_Object,584)
-    XMLVM_CATCH_END(w23126aaab2b1d248)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23126aaab2b1d248)
+    XMLVM_CATCH_BEGIN(w23129aaab2b1d248)
+        XMLVM_CATCH_SPECIFIC(w23129aaab2b1d248,java_lang_Object,584)
+    XMLVM_CATCH_END(w23129aaab2b1d248)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23129aaab2b1d248)
     XMLVM_SOURCE_POSITION("UTF_8.java", 397)
     XMLVM_CHECK_NPE(13)
     java_nio_Buffer_position___int(_r13.o, _r0.i);
     _r0 = _r1;
     goto label57;
     label341:;
-    XMLVM_TRY_BEGIN(w23126aaab2b1d254)
+    XMLVM_TRY_BEGIN(w23129aaab2b1d254)
     // Begin try
     XMLVM_SOURCE_POSITION("UTF_8.java", 328)
     //java_nio_CharBuffer_get__[19]
@@ -597,19 +597,19 @@ JAVA_OBJECT org_apache_harmony_niochar_charset_UTF_8_Encoder_encodeLoop___java_n
     _r4.i = 65535;
     _r3.i = _r3.i & _r4.i;
     _r4.i = 127;
-    if (_r3.i > _r4.i) { XMLVM_MEMCPY(curThread_w23126aaab2b1d254->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23126aaab2b1d254, sizeof(XMLVM_JMP_BUF)); goto label381; };
+    if (_r3.i > _r4.i) { XMLVM_MEMCPY(curThread_w23129aaab2b1d254->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23129aaab2b1d254, sizeof(XMLVM_JMP_BUF)); goto label381; };
     XMLVM_SOURCE_POSITION("UTF_8.java", 330)
     XMLVM_SOURCE_POSITION("UTF_8.java", 332)
     _r4.i = 1;
-    if (_r1.i >= _r4.i) { XMLVM_MEMCPY(curThread_w23126aaab2b1d254->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23126aaab2b1d254, sizeof(XMLVM_JMP_BUF)); goto label364; };
+    if (_r1.i >= _r4.i) { XMLVM_MEMCPY(curThread_w23129aaab2b1d254->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23129aaab2b1d254, sizeof(XMLVM_JMP_BUF)); goto label364; };
     XMLVM_SOURCE_POSITION("UTF_8.java", 333)
     _r1.o = java_nio_charset_CoderResult_GET_OVERFLOW();
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23126aaab2b1d254)
-        XMLVM_CATCH_SPECIFIC(w23126aaab2b1d254,java_lang_Object,584)
-    XMLVM_CATCH_END(w23126aaab2b1d254)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23126aaab2b1d254)
+    XMLVM_CATCH_BEGIN(w23129aaab2b1d254)
+        XMLVM_CATCH_SPECIFIC(w23129aaab2b1d254,java_lang_Object,584)
+    XMLVM_CATCH_END(w23129aaab2b1d254)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23129aaab2b1d254)
     XMLVM_CHECK_NPE(13)
     java_nio_Buffer_position___int(_r13.o, _r0.i);
     _r0 = _r1;
@@ -618,17 +618,17 @@ JAVA_OBJECT org_apache_harmony_niochar_charset_UTF_8_Encoder_encodeLoop___java_n
     XMLVM_SOURCE_POSITION("UTF_8.java", 335)
     _r3.i = _r3.i & 255;
     _r3.i = (_r3.i << 24) >> 24;
-    XMLVM_TRY_BEGIN(w23126aaab2b1d262)
+    XMLVM_TRY_BEGIN(w23129aaab2b1d262)
     // Begin try
     //java_nio_ByteBuffer_put___byte[51]
     XMLVM_CHECK_NPE(14)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_BYTE)) ((java_nio_ByteBuffer*) _r14.o)->tib->vtable[51])(_r14.o, _r3.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23126aaab2b1d262)
-        XMLVM_CATCH_SPECIFIC(w23126aaab2b1d262,java_lang_Object,584)
-    XMLVM_CATCH_END(w23126aaab2b1d262)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23126aaab2b1d262)
+    XMLVM_CATCH_BEGIN(w23129aaab2b1d262)
+        XMLVM_CATCH_SPECIFIC(w23129aaab2b1d262,java_lang_Object,584)
+    XMLVM_CATCH_END(w23129aaab2b1d262)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23129aaab2b1d262)
     XMLVM_SOURCE_POSITION("UTF_8.java", 336)
     _r1.i = _r1.i + -1;
     label372:;
@@ -647,16 +647,16 @@ JAVA_OBJECT org_apache_harmony_niochar_charset_UTF_8_Encoder_encodeLoop___java_n
     XMLVM_SOURCE_POSITION("UTF_8.java", 340)
     _r4.i = 2;
     if (_r1.i >= _r4.i) goto label396;
-    XMLVM_TRY_BEGIN(w23126aaab2b1d280)
+    XMLVM_TRY_BEGIN(w23129aaab2b1d280)
     // Begin try
     XMLVM_SOURCE_POSITION("UTF_8.java", 341)
     _r1.o = java_nio_charset_CoderResult_GET_OVERFLOW();
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23126aaab2b1d280)
-        XMLVM_CATCH_SPECIFIC(w23126aaab2b1d280,java_lang_Object,584)
-    XMLVM_CATCH_END(w23126aaab2b1d280)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23126aaab2b1d280)
+    XMLVM_CATCH_BEGIN(w23129aaab2b1d280)
+        XMLVM_CATCH_SPECIFIC(w23129aaab2b1d280,java_lang_Object,584)
+    XMLVM_CATCH_END(w23129aaab2b1d280)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23129aaab2b1d280)
     XMLVM_CHECK_NPE(13)
     java_nio_Buffer_position___int(_r13.o, _r0.i);
     _r0 = _r1;
@@ -667,7 +667,7 @@ JAVA_OBJECT org_apache_harmony_niochar_charset_UTF_8_Encoder_encodeLoop___java_n
     _r4.i = _r4.i & 31;
     _r4.i = _r4.i + 192;
     _r4.i = (_r4.i << 24) >> 24;
-    XMLVM_TRY_BEGIN(w23126aaab2b1d290)
+    XMLVM_TRY_BEGIN(w23129aaab2b1d290)
     // Begin try
     //java_nio_ByteBuffer_put___byte[51]
     XMLVM_CHECK_NPE(14)
@@ -681,32 +681,32 @@ JAVA_OBJECT org_apache_harmony_niochar_charset_UTF_8_Encoder_encodeLoop___java_n
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_BYTE)) ((java_nio_ByteBuffer*) _r14.o)->tib->vtable[51])(_r14.o, _r3.i);
     XMLVM_SOURCE_POSITION("UTF_8.java", 345)
     _r1.i = _r1.i + -2;
-    { XMLVM_MEMCPY(curThread_w23126aaab2b1d290->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23126aaab2b1d290, sizeof(XMLVM_JMP_BUF)); goto label372; };
+    { XMLVM_MEMCPY(curThread_w23129aaab2b1d290->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23129aaab2b1d290, sizeof(XMLVM_JMP_BUF)); goto label372; };
     XMLVM_SOURCE_POSITION("UTF_8.java", 347)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23126aaab2b1d290)
-        XMLVM_CATCH_SPECIFIC(w23126aaab2b1d290,java_lang_Object,584)
-    XMLVM_CATCH_END(w23126aaab2b1d290)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23126aaab2b1d290)
+    XMLVM_CATCH_BEGIN(w23129aaab2b1d290)
+        XMLVM_CATCH_SPECIFIC(w23129aaab2b1d290,java_lang_Object,584)
+    XMLVM_CATCH_END(w23129aaab2b1d290)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23129aaab2b1d290)
     label417:;
-    XMLVM_TRY_BEGIN(w23126aaab2b1d292)
+    XMLVM_TRY_BEGIN(w23129aaab2b1d292)
     // Begin try
     _r4.i = 55296;
-    if (_r3.i < _r4.i) { XMLVM_MEMCPY(curThread_w23126aaab2b1d292->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23126aaab2b1d292, sizeof(XMLVM_JMP_BUF)); goto label541; };
+    if (_r3.i < _r4.i) { XMLVM_MEMCPY(curThread_w23129aaab2b1d292->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23129aaab2b1d292, sizeof(XMLVM_JMP_BUF)); goto label541; };
     _r4.i = 57343;
-    if (_r3.i > _r4.i) { XMLVM_MEMCPY(curThread_w23126aaab2b1d292->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23126aaab2b1d292, sizeof(XMLVM_JMP_BUF)); goto label541; };
+    if (_r3.i > _r4.i) { XMLVM_MEMCPY(curThread_w23129aaab2b1d292->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23129aaab2b1d292, sizeof(XMLVM_JMP_BUF)); goto label541; };
     XMLVM_SOURCE_POSITION("UTF_8.java", 350)
     _r4.i = _r0.i + 1;
-    if (_r2.i > _r4.i) { XMLVM_MEMCPY(curThread_w23126aaab2b1d292->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23126aaab2b1d292, sizeof(XMLVM_JMP_BUF)); goto label439; };
+    if (_r2.i > _r4.i) { XMLVM_MEMCPY(curThread_w23129aaab2b1d292->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23129aaab2b1d292, sizeof(XMLVM_JMP_BUF)); goto label439; };
     XMLVM_SOURCE_POSITION("UTF_8.java", 351)
     _r1.o = java_nio_charset_CoderResult_GET_UNDERFLOW();
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23126aaab2b1d292)
-        XMLVM_CATCH_SPECIFIC(w23126aaab2b1d292,java_lang_Object,584)
-    XMLVM_CATCH_END(w23126aaab2b1d292)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23126aaab2b1d292)
+    XMLVM_CATCH_BEGIN(w23129aaab2b1d292)
+        XMLVM_CATCH_SPECIFIC(w23129aaab2b1d292,java_lang_Object,584)
+    XMLVM_CATCH_END(w23129aaab2b1d292)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23129aaab2b1d292)
     XMLVM_CHECK_NPE(13)
     java_nio_Buffer_position___int(_r13.o, _r0.i);
     _r0 = _r1;
@@ -715,16 +715,16 @@ JAVA_OBJECT org_apache_harmony_niochar_charset_UTF_8_Encoder_encodeLoop___java_n
     XMLVM_SOURCE_POSITION("UTF_8.java", 354)
     _r4.i = 4;
     if (_r1.i >= _r4.i) goto label450;
-    XMLVM_TRY_BEGIN(w23126aaab2b1d300)
+    XMLVM_TRY_BEGIN(w23129aaab2b1d300)
     // Begin try
     XMLVM_SOURCE_POSITION("UTF_8.java", 355)
     _r1.o = java_nio_charset_CoderResult_GET_OVERFLOW();
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23126aaab2b1d300)
-        XMLVM_CATCH_SPECIFIC(w23126aaab2b1d300,java_lang_Object,584)
-    XMLVM_CATCH_END(w23126aaab2b1d300)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23126aaab2b1d300)
+    XMLVM_CATCH_BEGIN(w23129aaab2b1d300)
+        XMLVM_CATCH_SPECIFIC(w23129aaab2b1d300,java_lang_Object,584)
+    XMLVM_CATCH_END(w23129aaab2b1d300)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23129aaab2b1d300)
     XMLVM_CHECK_NPE(13)
     java_nio_Buffer_position___int(_r13.o, _r0.i);
     _r0 = _r1;
@@ -735,21 +735,21 @@ JAVA_OBJECT org_apache_harmony_niochar_charset_UTF_8_Encoder_encodeLoop___java_n
     if (_r3.i < _r4.i) goto label466;
     XMLVM_SOURCE_POSITION("UTF_8.java", 360)
     _r1.i = 1;
-    XMLVM_TRY_BEGIN(w23126aaab2b1d310)
+    XMLVM_TRY_BEGIN(w23129aaab2b1d310)
     // Begin try
     _r1.o = java_nio_charset_CoderResult_malformedForLength___int(_r1.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23126aaab2b1d310)
-        XMLVM_CATCH_SPECIFIC(w23126aaab2b1d310,java_lang_Object,584)
-    XMLVM_CATCH_END(w23126aaab2b1d310)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23126aaab2b1d310)
+    XMLVM_CATCH_BEGIN(w23129aaab2b1d310)
+        XMLVM_CATCH_SPECIFIC(w23129aaab2b1d310,java_lang_Object,584)
+    XMLVM_CATCH_END(w23129aaab2b1d310)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23129aaab2b1d310)
     XMLVM_CHECK_NPE(13)
     java_nio_Buffer_position___int(_r13.o, _r0.i);
     _r0 = _r1;
     goto label57;
     label466:;
-    XMLVM_TRY_BEGIN(w23126aaab2b1d315)
+    XMLVM_TRY_BEGIN(w23129aaab2b1d315)
     // Begin try
     XMLVM_SOURCE_POSITION("UTF_8.java", 363)
     //java_nio_CharBuffer_get__[19]
@@ -758,17 +758,17 @@ JAVA_OBJECT org_apache_harmony_niochar_charset_UTF_8_Encoder_encodeLoop___java_n
     _r5.i = 65535;
     _r4.i = _r4.i & _r5.i;
     _r5.i = 56320;
-    if (_r4.i >= _r5.i) { XMLVM_MEMCPY(curThread_w23126aaab2b1d315->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23126aaab2b1d315, sizeof(XMLVM_JMP_BUF)); goto label490; };
+    if (_r4.i >= _r5.i) { XMLVM_MEMCPY(curThread_w23129aaab2b1d315->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23129aaab2b1d315, sizeof(XMLVM_JMP_BUF)); goto label490; };
     XMLVM_SOURCE_POSITION("UTF_8.java", 366)
     XMLVM_SOURCE_POSITION("UTF_8.java", 367)
     _r1.i = 1;
     _r1.o = java_nio_charset_CoderResult_malformedForLength___int(_r1.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23126aaab2b1d315)
-        XMLVM_CATCH_SPECIFIC(w23126aaab2b1d315,java_lang_Object,584)
-    XMLVM_CATCH_END(w23126aaab2b1d315)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23126aaab2b1d315)
+    XMLVM_CATCH_BEGIN(w23129aaab2b1d315)
+        XMLVM_CATCH_SPECIFIC(w23129aaab2b1d315,java_lang_Object,584)
+    XMLVM_CATCH_END(w23129aaab2b1d315)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23129aaab2b1d315)
     XMLVM_CHECK_NPE(13)
     java_nio_Buffer_position___int(_r13.o, _r0.i);
     _r0 = _r1;
@@ -783,7 +783,7 @@ JAVA_OBJECT org_apache_harmony_niochar_charset_UTF_8_Encoder_encodeLoop___java_n
     _r4.i = _r4.i & 7;
     _r4.i = _r4.i + 240;
     _r4.i = (_r4.i << 24) >> 24;
-    XMLVM_TRY_BEGIN(w23126aaab2b1d329)
+    XMLVM_TRY_BEGIN(w23129aaab2b1d329)
     // Begin try
     XMLVM_SOURCE_POSITION("UTF_8.java", 377)
     //java_nio_ByteBuffer_put___byte[51]
@@ -816,27 +816,27 @@ JAVA_OBJECT org_apache_harmony_niochar_charset_UTF_8_Encoder_encodeLoop___java_n
     _r1.i = _r1.i + -4;
     _r0.i = _r0.i + 1;
     XMLVM_SOURCE_POSITION("UTF_8.java", 382)
-    { XMLVM_MEMCPY(curThread_w23126aaab2b1d329->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23126aaab2b1d329, sizeof(XMLVM_JMP_BUF)); goto label372; };
+    { XMLVM_MEMCPY(curThread_w23129aaab2b1d329->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23129aaab2b1d329, sizeof(XMLVM_JMP_BUF)); goto label372; };
     XMLVM_SOURCE_POSITION("UTF_8.java", 386)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23126aaab2b1d329)
-        XMLVM_CATCH_SPECIFIC(w23126aaab2b1d329,java_lang_Object,584)
-    XMLVM_CATCH_END(w23126aaab2b1d329)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23126aaab2b1d329)
+    XMLVM_CATCH_BEGIN(w23129aaab2b1d329)
+        XMLVM_CATCH_SPECIFIC(w23129aaab2b1d329,java_lang_Object,584)
+    XMLVM_CATCH_END(w23129aaab2b1d329)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23129aaab2b1d329)
     label541:;
-    XMLVM_TRY_BEGIN(w23126aaab2b1d331)
+    XMLVM_TRY_BEGIN(w23129aaab2b1d331)
     // Begin try
     _r4.i = 3;
-    if (_r1.i >= _r4.i) { XMLVM_MEMCPY(curThread_w23126aaab2b1d331->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23126aaab2b1d331, sizeof(XMLVM_JMP_BUF)); goto label552; };
+    if (_r1.i >= _r4.i) { XMLVM_MEMCPY(curThread_w23129aaab2b1d331->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w23129aaab2b1d331, sizeof(XMLVM_JMP_BUF)); goto label552; };
     XMLVM_SOURCE_POSITION("UTF_8.java", 387)
     _r1.o = java_nio_charset_CoderResult_GET_OVERFLOW();
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23126aaab2b1d331)
-        XMLVM_CATCH_SPECIFIC(w23126aaab2b1d331,java_lang_Object,584)
-    XMLVM_CATCH_END(w23126aaab2b1d331)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23126aaab2b1d331)
+    XMLVM_CATCH_BEGIN(w23129aaab2b1d331)
+        XMLVM_CATCH_SPECIFIC(w23129aaab2b1d331,java_lang_Object,584)
+    XMLVM_CATCH_END(w23129aaab2b1d331)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23129aaab2b1d331)
     XMLVM_CHECK_NPE(13)
     java_nio_Buffer_position___int(_r13.o, _r0.i);
     _r0 = _r1;
@@ -847,7 +847,7 @@ JAVA_OBJECT org_apache_harmony_niochar_charset_UTF_8_Encoder_encodeLoop___java_n
     _r4.i = _r4.i & 15;
     _r4.i = _r4.i + 224;
     _r4.i = (_r4.i << 24) >> 24;
-    XMLVM_TRY_BEGIN(w23126aaab2b1d341)
+    XMLVM_TRY_BEGIN(w23129aaab2b1d341)
     // Begin try
     //java_nio_ByteBuffer_put___byte[51]
     XMLVM_CHECK_NPE(14)
@@ -869,17 +869,17 @@ JAVA_OBJECT org_apache_harmony_niochar_charset_UTF_8_Encoder_encodeLoop___java_n
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_BYTE)) ((java_nio_ByteBuffer*) _r14.o)->tib->vtable[51])(_r14.o, _r3.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w23126aaab2b1d341)
-        XMLVM_CATCH_SPECIFIC(w23126aaab2b1d341,java_lang_Object,584)
-    XMLVM_CATCH_END(w23126aaab2b1d341)
-    XMLVM_RESTORE_EXCEPTION_ENV(w23126aaab2b1d341)
+    XMLVM_CATCH_BEGIN(w23129aaab2b1d341)
+        XMLVM_CATCH_SPECIFIC(w23129aaab2b1d341,java_lang_Object,584)
+    XMLVM_CATCH_END(w23129aaab2b1d341)
+    XMLVM_RESTORE_EXCEPTION_ENV(w23129aaab2b1d341)
     XMLVM_SOURCE_POSITION("UTF_8.java", 392)
     _r1.i = _r1.i + -3;
     goto label372;
     label584:;
     XMLVM_SOURCE_POSITION("UTF_8.java", 396)
-    java_lang_Thread* curThread_w23126aaab2b1d347 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w23126aaab2b1d347->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w23129aaab2b1d347 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w23129aaab2b1d347->fields.java_lang_Thread.xmlvmException_;
     XMLVM_CHECK_NPE(13)
     java_nio_Buffer_position___int(_r13.o, _r0.i);
     XMLVM_SOURCE_POSITION("UTF_8.java", 398)

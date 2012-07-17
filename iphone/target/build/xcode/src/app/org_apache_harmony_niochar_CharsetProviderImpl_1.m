@@ -279,7 +279,7 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_1_run__(JAVA_OBJECT m
     XMLVMElem _r5;
     XMLVMElem _r6;
     _r6.o = me;
-    XMLVM_TRY_BEGIN(w19934aaab5b1b2)
+    XMLVM_TRY_BEGIN(w19937aaab5b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("CharsetProviderImpl.java", 194)
     XMLVM_CHECK_NPE(6)
@@ -327,18 +327,18 @@ JAVA_OBJECT org_apache_harmony_niochar_CharsetProviderImpl_1_run__(JAVA_OBJECT m
     _r3.o = java_lang_reflect_Constructor_newInstance___java_lang_Object_1ARRAY(_r1.o, _r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w19934aaab5b1b2)
-        XMLVM_CATCH_SPECIFIC(w19934aaab5b1b2,java_lang_Exception,45)
-    XMLVM_CATCH_END(w19934aaab5b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w19934aaab5b1b2)
+    XMLVM_CATCH_BEGIN(w19937aaab5b1b2)
+        XMLVM_CATCH_SPECIFIC(w19937aaab5b1b2,java_lang_Exception,45)
+    XMLVM_CATCH_END(w19937aaab5b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w19937aaab5b1b2)
     label44:;
     XMLVM_SOURCE_POSITION("CharsetProviderImpl.java", 202)
     XMLVM_EXIT_METHOD()
     return _r3.o;
     label45:;
     XMLVM_SOURCE_POSITION("CharsetProviderImpl.java", 201)
-    java_lang_Thread* curThread_w19934aaab5b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r3.o = curThread_w19934aaab5b1b8->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w19937aaab5b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r3.o = curThread_w19937aaab5b1b8->fields.java_lang_Thread.xmlvmException_;
     _r2 = _r3;
     _r3.o = JAVA_NULL;
     goto label44;

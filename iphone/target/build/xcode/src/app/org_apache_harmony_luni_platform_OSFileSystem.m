@@ -1590,7 +1590,7 @@ JAVA_LONG org_apache_harmony_luni_platform_OSFileSystem_open___byte_1ARRAY_int(J
     _r2.l = 0;
     _r2.i = _r0.l > _r2.l ? 1 : (_r0.l == _r2.l ? 0 : -1);
     if (_r2.i >= 0) goto label51;
-    XMLVM_TRY_BEGIN(w18536aaac30b1c17)
+    XMLVM_TRY_BEGIN(w18539aaac30b1c17)
     // Begin try
     XMLVM_SOURCE_POSITION("OSFileSystem.java", 236)
     _r0.o = __NEW_java_io_FileNotFoundException();
@@ -1604,14 +1604,14 @@ JAVA_LONG org_apache_harmony_luni_platform_OSFileSystem_open___byte_1ARRAY_int(J
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w18536aaac30b1c17)
-        XMLVM_CATCH_SPECIFIC(w18536aaac30b1c17,java_io_UnsupportedEncodingException,31)
-    XMLVM_CATCH_END(w18536aaac30b1c17)
-    XMLVM_RESTORE_EXCEPTION_ENV(w18536aaac30b1c17)
+    XMLVM_CATCH_BEGIN(w18539aaac30b1c17)
+        XMLVM_CATCH_SPECIFIC(w18539aaac30b1c17,java_io_UnsupportedEncodingException,31)
+    XMLVM_CATCH_END(w18539aaac30b1c17)
+    XMLVM_RESTORE_EXCEPTION_ENV(w18539aaac30b1c17)
     label31:;
     XMLVM_SOURCE_POSITION("OSFileSystem.java", 237)
-    java_lang_Thread* curThread_w18536aaac30b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w18536aaac30b1c20->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w18539aaac30b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w18539aaac30b1c20->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("OSFileSystem.java", 239)
     _r1.o = __NEW_java_io_FileNotFoundException();
     _r2.o = __NEW_java_lang_String();

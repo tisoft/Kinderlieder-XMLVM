@@ -1027,7 +1027,7 @@ JAVA_OBJECT java_util_BitSet_clone__(JAVA_OBJECT me)
     XMLVMElem _r1;
     XMLVMElem _r2;
     _r2.o = me;
-    XMLVM_TRY_BEGIN(w24178aaac13b1b2)
+    XMLVM_TRY_BEGIN(w24181aaac13b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("BitSet.java", 130)
     XMLVM_CHECK_NPE(2)
@@ -1044,17 +1044,17 @@ JAVA_OBJECT java_util_BitSet_clone__(JAVA_OBJECT me)
     ((java_util_BitSet*) _r0.o)->fields.java_util_BitSet.bits_ = _r2.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w24178aaac13b1b2)
-        XMLVM_CATCH_SPECIFIC(w24178aaac13b1b2,java_lang_CloneNotSupportedException,17)
-    XMLVM_CATCH_END(w24178aaac13b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w24178aaac13b1b2)
+    XMLVM_CATCH_BEGIN(w24181aaac13b1b2)
+        XMLVM_CATCH_SPECIFIC(w24181aaac13b1b2,java_lang_CloneNotSupportedException,17)
+    XMLVM_CATCH_END(w24181aaac13b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w24181aaac13b1b2)
     label16:;
     XMLVM_SOURCE_POSITION("BitSet.java", 134)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label17:;
-    java_lang_Thread* curThread_w24178aaac13b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w24178aaac13b1b7->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w24181aaac13b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w24181aaac13b1b7->fields.java_lang_Thread.xmlvmException_;
     _r0.o = JAVA_NULL;
     goto label16;
     //XMLVM_END_WRAPPER

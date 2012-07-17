@@ -238,7 +238,7 @@ void my_kinderlieder_RootViewController_3___INIT____my_kinderlieder_RootViewCont
     XMLVMElem _r1;
     _r0.o = me;
     _r1.o = n1;
-    XMLVM_SOURCE_POSITION("RootViewController.java", 48)
+    XMLVM_SOURCE_POSITION("RootViewController.java", 53)
     XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_RootViewController_3*) _r0.o)->fields.my_kinderlieder_RootViewController_3.this_0_ = _r1.o;
     XMLVM_CHECK_NPE(0)
@@ -262,7 +262,7 @@ JAVA_OBJECT my_kinderlieder_RootViewController_3_cellForRowAtIndexPath___org_xml
     _r4.o = me;
     _r5.o = n1;
     _r6.o = n2;
-    XMLVM_SOURCE_POSITION("RootViewController.java", 51)
+    XMLVM_SOURCE_POSITION("RootViewController.java", 56)
     XMLVM_CHECK_NPE(4)
     _r2.o = ((my_kinderlieder_RootViewController_3*) _r4.o)->fields.my_kinderlieder_RootViewController_3.this_0_;
     _r2.o = my_kinderlieder_RootViewController_access$100___my_kinderlieder_RootViewController(_r2.o);
@@ -271,7 +271,7 @@ JAVA_OBJECT my_kinderlieder_RootViewController_3_cellForRowAtIndexPath___org_xml
     XMLVM_CHECK_NPE(2)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_INT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_get___int])(_r2.o, _r3.i);
     _r1.o = _r1.o;
-    XMLVM_SOURCE_POSITION("RootViewController.java", 52)
+    XMLVM_SOURCE_POSITION("RootViewController.java", 57)
     XMLVM_CHECK_NPE(4)
     _r2.o = ((my_kinderlieder_RootViewController_3*) _r4.o)->fields.my_kinderlieder_RootViewController_3.this_0_;
     _r2.o = my_kinderlieder_RootViewController_access$200___my_kinderlieder_RootViewController(_r2.o);
@@ -279,28 +279,28 @@ JAVA_OBJECT my_kinderlieder_RootViewController_3_cellForRowAtIndexPath___org_xml
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_get___java_lang_Object])(_r2.o, _r1.o);
     _r0.o = _r0.o;
     if (_r0.o != JAVA_NULL) goto label57;
-    XMLVM_SOURCE_POSITION("RootViewController.java", 53)
-    XMLVM_SOURCE_POSITION("RootViewController.java", 54)
+    XMLVM_SOURCE_POSITION("RootViewController.java", 58)
+    XMLVM_SOURCE_POSITION("RootViewController.java", 59)
     _r0.o = __NEW_org_xmlvm_iphone_UITableViewCell();
     _r2.i = 0;
     _r3.o = JAVA_NULL;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UITableViewCell___INIT____int_java_lang_String(_r0.o, _r2.i, _r3.o);
-    XMLVM_SOURCE_POSITION("RootViewController.java", 55)
+    XMLVM_SOURCE_POSITION("RootViewController.java", 60)
     XMLVM_CHECK_NPE(0)
     _r2.o = org_xmlvm_iphone_UITableViewCell_getTextLabel__(_r0.o);
     XMLVM_CHECK_NPE(1)
     _r3.o = my_kinderlieder_SongInfo_getName__(_r1.o);
     XMLVM_CHECK_NPE(2)
     org_xmlvm_iphone_UILabel_setText___java_lang_String(_r2.o, _r3.o);
-    XMLVM_SOURCE_POSITION("RootViewController.java", 57)
+    XMLVM_SOURCE_POSITION("RootViewController.java", 62)
     XMLVM_CHECK_NPE(4)
     _r2.o = ((my_kinderlieder_RootViewController_3*) _r4.o)->fields.my_kinderlieder_RootViewController_3.this_0_;
     _r2.o = my_kinderlieder_RootViewController_access$200___my_kinderlieder_RootViewController(_r2.o);
     XMLVM_CHECK_NPE(2)
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Map_put___java_lang_Object_java_lang_Object])(_r2.o, _r1.o, _r0.o);
     label57:;
-    XMLVM_SOURCE_POSITION("RootViewController.java", 59)
+    XMLVM_SOURCE_POSITION("RootViewController.java", 64)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     //XMLVM_END_WRAPPER
@@ -317,7 +317,7 @@ JAVA_INT my_kinderlieder_RootViewController_3_numberOfRowsInSection___org_xmlvm_
     _r1.o = me;
     _r2.o = n1;
     _r3.i = n2;
-    XMLVM_SOURCE_POSITION("RootViewController.java", 64)
+    XMLVM_SOURCE_POSITION("RootViewController.java", 69)
     XMLVM_CHECK_NPE(1)
     _r0.o = ((my_kinderlieder_RootViewController_3*) _r1.o)->fields.my_kinderlieder_RootViewController_3.this_0_;
     _r0.o = my_kinderlieder_RootViewController_access$100___my_kinderlieder_RootViewController(_r0.o);

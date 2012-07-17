@@ -701,7 +701,7 @@ JAVA_OBJECT java_net_NetworkInterface_getInetAddresses__(JAVA_OBJECT me)
     XMLVM_CHECK_ARRAY_BOUNDS(_r1.o, _r4.i);
     _r2.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r1.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     if (_r6.o == JAVA_NULL) goto label78;
-    XMLVM_TRY_BEGIN(w42878aaac13b1c39)
+    XMLVM_TRY_BEGIN(w42880aaac13b1c39)
     // Begin try
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 163)
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 169)
@@ -712,18 +712,18 @@ JAVA_OBJECT java_net_NetworkInterface_getInetAddresses__(JAVA_OBJECT me)
     _r8.o = xmlvm_create_java_string_from_pool(2453);
     XMLVM_CHECK_NPE(3)
     _r8.i = java_lang_String_contains___java_lang_CharSequence(_r3.o, _r8.o);
-    if (_r8.i == 0) { XMLVM_MEMCPY(curThread_w42878aaac13b1c39->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42878aaac13b1c39, sizeof(XMLVM_JMP_BUF)); goto label71; };
+    if (_r8.i == 0) { XMLVM_MEMCPY(curThread_w42880aaac13b1c39->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w42880aaac13b1c39, sizeof(XMLVM_JMP_BUF)); goto label71; };
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 171)
     XMLVM_CHECK_NPE(10)
     _r3.o = java_net_NetworkInterface_getFullFormOfCompressedIPV6Address___java_lang_String(_r10.o, _r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42878aaac13b1c39)
-        XMLVM_CATCH_SPECIFIC(w42878aaac13b1c39,java_lang_SecurityException,106)
-    XMLVM_CATCH_END(w42878aaac13b1c39)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42878aaac13b1c39)
+    XMLVM_CATCH_BEGIN(w42880aaac13b1c39)
+        XMLVM_CATCH_SPECIFIC(w42880aaac13b1c39,java_lang_SecurityException,106)
+    XMLVM_CATCH_END(w42880aaac13b1c39)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42880aaac13b1c39)
     label71:;
-    XMLVM_TRY_BEGIN(w42878aaac13b1c41)
+    XMLVM_TRY_BEGIN(w42880aaac13b1c41)
     // Begin try
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 173)
     _r8.i = -1;
@@ -735,10 +735,10 @@ JAVA_OBJECT java_net_NetworkInterface_getInetAddresses__(JAVA_OBJECT me)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_Vector*) _r0.o)->tib->vtable[7])(_r0.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42878aaac13b1c41)
-        XMLVM_CATCH_SPECIFIC(w42878aaac13b1c41,java_lang_SecurityException,106)
-    XMLVM_CATCH_END(w42878aaac13b1c41)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42878aaac13b1c41)
+    XMLVM_CATCH_BEGIN(w42880aaac13b1c41)
+        XMLVM_CATCH_SPECIFIC(w42880aaac13b1c41,java_lang_SecurityException,106)
+    XMLVM_CATCH_END(w42880aaac13b1c41)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42880aaac13b1c41)
     label78:;
     _r4.i = _r4.i + 1;
     goto label49;
@@ -763,8 +763,8 @@ JAVA_OBJECT java_net_NetworkInterface_getInetAddresses__(JAVA_OBJECT me)
     goto label14;
     label106:;
     XMLVM_SOURCE_POSITION("NetworkInterface.java", 176)
-    java_lang_Thread* curThread_w42878aaac13b1c61 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r8.o = curThread_w42878aaac13b1c61->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w42880aaac13b1c61 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r8.o = curThread_w42880aaac13b1c61->fields.java_lang_Thread.xmlvmException_;
     goto label78;
     //XMLVM_END_WRAPPER
 }

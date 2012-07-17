@@ -862,7 +862,7 @@ void java_util_Formatter___INIT____java_io_File_java_lang_String_java_util_Local
     ((java_util_Formatter*) _r4.o)->fields.java_util_Formatter.closed_ = _r0.i;
     XMLVM_SOURCE_POSITION("Formatter.java", 629)
     _r0.o = JAVA_NULL;
-    XMLVM_TRY_BEGIN(w14470aaac13b1c12)
+    XMLVM_TRY_BEGIN(w14473aaac13b1c12)
     // Begin try
     XMLVM_SOURCE_POSITION("Formatter.java", 631)
     _r1.o = __NEW_java_io_FileOutputStream();
@@ -870,12 +870,12 @@ void java_util_Formatter___INIT____java_io_File_java_lang_String_java_util_Local
     java_io_FileOutputStream___INIT____java_io_File(_r1.o, _r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w14470aaac13b1c12)
-        XMLVM_CATCH_SPECIFIC(w14470aaac13b1c12,java_lang_RuntimeException,27)
-        XMLVM_CATCH_SPECIFIC(w14470aaac13b1c12,java_io_UnsupportedEncodingException,35)
-    XMLVM_CATCH_END(w14470aaac13b1c12)
-    XMLVM_RESTORE_EXCEPTION_ENV(w14470aaac13b1c12)
-    XMLVM_TRY_BEGIN(w14470aaac13b1c13)
+    XMLVM_CATCH_BEGIN(w14473aaac13b1c12)
+        XMLVM_CATCH_SPECIFIC(w14473aaac13b1c12,java_lang_RuntimeException,27)
+        XMLVM_CATCH_SPECIFIC(w14473aaac13b1c12,java_io_UnsupportedEncodingException,35)
+    XMLVM_CATCH_END(w14473aaac13b1c12)
+    XMLVM_RESTORE_EXCEPTION_ENV(w14473aaac13b1c12)
+    XMLVM_TRY_BEGIN(w14473aaac13b1c13)
     // Begin try
     XMLVM_SOURCE_POSITION("Formatter.java", 632)
     _r0.o = __NEW_java_io_OutputStreamWriter();
@@ -889,11 +889,11 @@ void java_util_Formatter___INIT____java_io_File_java_lang_String_java_util_Local
     ((java_util_Formatter*) _r4.o)->fields.java_util_Formatter.out_ = _r2.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w14470aaac13b1c13)
-        XMLVM_CATCH_SPECIFIC(w14470aaac13b1c13,java_lang_RuntimeException,45)
-        XMLVM_CATCH_SPECIFIC(w14470aaac13b1c13,java_io_UnsupportedEncodingException,43)
-    XMLVM_CATCH_END(w14470aaac13b1c13)
-    XMLVM_RESTORE_EXCEPTION_ENV(w14470aaac13b1c13)
+    XMLVM_CATCH_BEGIN(w14473aaac13b1c13)
+        XMLVM_CATCH_SPECIFIC(w14473aaac13b1c13,java_lang_RuntimeException,45)
+        XMLVM_CATCH_SPECIFIC(w14473aaac13b1c13,java_io_UnsupportedEncodingException,43)
+    XMLVM_CATCH_END(w14473aaac13b1c13)
+    XMLVM_RESTORE_EXCEPTION_ENV(w14473aaac13b1c13)
     XMLVM_SOURCE_POSITION("Formatter.java", 642)
     XMLVM_CHECK_NPE(4)
     ((java_util_Formatter*) _r4.o)->fields.java_util_Formatter.locale_ = _r7.o;
@@ -902,8 +902,8 @@ void java_util_Formatter___INIT____java_io_File_java_lang_String_java_util_Local
     return;
     label27:;
     XMLVM_SOURCE_POSITION("Formatter.java", 634)
-    java_lang_Thread* curThread_w14470aaac13b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w14470aaac13b1c20->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w14473aaac13b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w14473aaac13b1c20->fields.java_lang_Thread.xmlvmException_;
     _r3 = _r1;
     _r1 = _r0;
     _r0 = _r3;
@@ -914,8 +914,8 @@ void java_util_Formatter___INIT____java_io_File_java_lang_String_java_util_Local
     XMLVM_THROW_CUSTOM(_r0.o)
     label35:;
     XMLVM_SOURCE_POSITION("Formatter.java", 637)
-    java_lang_Thread* curThread_w14470aaac13b1c31 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w14470aaac13b1c31->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w14473aaac13b1c31 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w14473aaac13b1c31->fields.java_lang_Thread.xmlvmException_;
     _r3 = _r1;
     _r1 = _r0;
     _r0 = _r3;
@@ -925,12 +925,12 @@ void java_util_Formatter___INIT____java_io_File_java_lang_String_java_util_Local
     XMLVM_SOURCE_POSITION("Formatter.java", 639)
     XMLVM_THROW_CUSTOM(_r0.o)
     label43:;
-    java_lang_Thread* curThread_w14470aaac13b1c41 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w14470aaac13b1c41->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w14473aaac13b1c41 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w14473aaac13b1c41->fields.java_lang_Thread.xmlvmException_;
     goto label39;
     label45:;
-    java_lang_Thread* curThread_w14470aaac13b1c44 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w14470aaac13b1c44->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w14473aaac13b1c44 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w14473aaac13b1c44->fields.java_lang_Thread.xmlvmException_;
     goto label31;
     //XMLVM_END_WRAPPER
 }
@@ -1168,7 +1168,7 @@ void java_util_Formatter_flush__(JAVA_OBJECT me)
     if (!__TIB_java_io_Flushable.classInitialized) __INIT_java_io_Flushable();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_java_io_Flushable);
     if (_r0.i == 0) goto label16;
-    XMLVM_TRY_BEGIN(w14470aaac22b1b8)
+    XMLVM_TRY_BEGIN(w14473aaac22b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("Formatter.java", 780)
     XMLVM_CHECK_NPE(1)
@@ -1178,18 +1178,18 @@ void java_util_Formatter_flush__(JAVA_OBJECT me)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_io_Flushable_flush__])(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w14470aaac22b1b8)
-        XMLVM_CATCH_SPECIFIC(w14470aaac22b1b8,java_io_IOException,17)
-    XMLVM_CATCH_END(w14470aaac22b1b8)
-    XMLVM_RESTORE_EXCEPTION_ENV(w14470aaac22b1b8)
+    XMLVM_CATCH_BEGIN(w14473aaac22b1b8)
+        XMLVM_CATCH_SPECIFIC(w14473aaac22b1b8,java_io_IOException,17)
+    XMLVM_CATCH_END(w14473aaac22b1b8)
+    XMLVM_RESTORE_EXCEPTION_ENV(w14473aaac22b1b8)
     label16:;
     XMLVM_SOURCE_POSITION("Formatter.java", 785)
     XMLVM_EXIT_METHOD()
     return;
     label17:;
     XMLVM_SOURCE_POSITION("Formatter.java", 781)
-    java_lang_Thread* curThread_w14470aaac22b1c14 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w14470aaac22b1c14->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w14473aaac22b1c14 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w14473aaac22b1c14->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("Formatter.java", 782)
     XMLVM_CHECK_NPE(1)
     ((java_util_Formatter*) _r1.o)->fields.java_util_Formatter.lastIOException_ = _r0.o;
@@ -1208,14 +1208,14 @@ void java_util_Formatter_close__(JAVA_OBJECT me)
     _r0.i = 1;
     XMLVM_CHECK_NPE(1)
     ((java_util_Formatter*) _r1.o)->fields.java_util_Formatter.closed_ = _r0.i;
-    XMLVM_TRY_BEGIN(w14470aaac23b1b5)
+    XMLVM_TRY_BEGIN(w14473aaac23b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("Formatter.java", 800)
     XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Formatter*) _r1.o)->fields.java_util_Formatter.out_;
     if (!__TIB_java_io_Closeable.classInitialized) __INIT_java_io_Closeable();
     _r0.i = XMLVM_ISA(_r0.o, __CLASS_java_io_Closeable);
-    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w14470aaac23b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w14470aaac23b1b5, sizeof(XMLVM_JMP_BUF)); goto label16; };
+    if (_r0.i == 0) { XMLVM_MEMCPY(curThread_w14473aaac23b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w14473aaac23b1b5, sizeof(XMLVM_JMP_BUF)); goto label16; };
     XMLVM_SOURCE_POSITION("Formatter.java", 801)
     XMLVM_CHECK_NPE(1)
     _r0.o = ((java_util_Formatter*) _r1.o)->fields.java_util_Formatter.out_;
@@ -1224,18 +1224,18 @@ void java_util_Formatter_close__(JAVA_OBJECT me)
     (*(void (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_io_Closeable_close__])(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w14470aaac23b1b5)
-        XMLVM_CATCH_SPECIFIC(w14470aaac23b1b5,java_io_IOException,17)
-    XMLVM_CATCH_END(w14470aaac23b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w14470aaac23b1b5)
+    XMLVM_CATCH_BEGIN(w14473aaac23b1b5)
+        XMLVM_CATCH_SPECIFIC(w14473aaac23b1b5,java_io_IOException,17)
+    XMLVM_CATCH_END(w14473aaac23b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w14473aaac23b1b5)
     label16:;
     XMLVM_SOURCE_POSITION("Formatter.java", 807)
     XMLVM_EXIT_METHOD()
     return;
     label17:;
     XMLVM_SOURCE_POSITION("Formatter.java", 803)
-    java_lang_Thread* curThread_w14470aaac23b1c11 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w14470aaac23b1c11->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w14473aaac23b1c11 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w14473aaac23b1c11->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("Formatter.java", 805)
     XMLVM_CHECK_NPE(1)
     ((java_util_Formatter*) _r1.o)->fields.java_util_Formatter.lastIOException_ = _r0.o;
@@ -1352,7 +1352,7 @@ JAVA_OBJECT java_util_Formatter_format___java_util_Locale_java_lang_String_java_
     XMLVM_SOURCE_POSITION("Formatter.java", 879)
     XMLVM_SOURCE_POSITION("Formatter.java", 895)
     if (_r0.o == JAVA_NULL) goto label139;
-    XMLVM_TRY_BEGIN(w14470aaac26b1c46)
+    XMLVM_TRY_BEGIN(w14473aaac26b1c46)
     // Begin try
     XMLVM_SOURCE_POSITION("Formatter.java", 897)
     XMLVM_CHECK_NPE(11)
@@ -1361,10 +1361,10 @@ JAVA_OBJECT java_util_Formatter_format___java_util_Locale_java_lang_String_java_
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r4.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_lang_Appendable_append___java_lang_CharSequence])(_r4.o, _r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w14470aaac26b1c46)
-        XMLVM_CATCH_SPECIFIC(w14470aaac26b1c46,java_io_IOException,136)
-    XMLVM_CATCH_END(w14470aaac26b1c46)
-    XMLVM_RESTORE_EXCEPTION_ENV(w14470aaac26b1c46)
+    XMLVM_CATCH_BEGIN(w14473aaac26b1c46)
+        XMLVM_CATCH_SPECIFIC(w14473aaac26b1c46,java_io_IOException,136)
+    XMLVM_CATCH_END(w14473aaac26b1c46)
+    XMLVM_RESTORE_EXCEPTION_ENV(w14473aaac26b1c46)
     _r5 = _r1;
     _r4 = _r2;
     _r0 = _r3;
@@ -1431,8 +1431,8 @@ JAVA_OBJECT java_util_Formatter_format___java_util_Locale_java_lang_String_java_
     goto label109;
     label136:;
     XMLVM_SOURCE_POSITION("Formatter.java", 898)
-    java_lang_Thread* curThread_w14470aaac26b1d102 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w14470aaac26b1d102->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w14473aaac26b1d102 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w14473aaac26b1d102->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("Formatter.java", 899)
     XMLVM_CHECK_NPE(11)
     ((java_util_Formatter*) _r11.o)->fields.java_util_Formatter.lastIOException_ = _r0.o;
@@ -1528,7 +1528,7 @@ void java_util_Formatter_closeOutputStream___java_io_OutputStream(JAVA_OBJECT n1
     XMLVM_EXIT_METHOD()
     return;
     label3:;
-    XMLVM_TRY_BEGIN(w14470aaac28b1b8)
+    XMLVM_TRY_BEGIN(w14473aaac28b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("Formatter.java", 932)
     //java_io_OutputStream_close__[7]
@@ -1536,14 +1536,14 @@ void java_util_Formatter_closeOutputStream___java_io_OutputStream(JAVA_OBJECT n1
     (*(void (*)(JAVA_OBJECT)) ((java_io_OutputStream*) _r1.o)->tib->vtable[7])(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w14470aaac28b1b8)
-        XMLVM_CATCH_SPECIFIC(w14470aaac28b1b8,java_io_IOException,7)
-    XMLVM_CATCH_END(w14470aaac28b1b8)
-    XMLVM_RESTORE_EXCEPTION_ENV(w14470aaac28b1b8)
+    XMLVM_CATCH_BEGIN(w14473aaac28b1b8)
+        XMLVM_CATCH_SPECIFIC(w14473aaac28b1b8,java_io_IOException,7)
+    XMLVM_CATCH_END(w14473aaac28b1b8)
+    XMLVM_RESTORE_EXCEPTION_ENV(w14473aaac28b1b8)
     goto label2;
     label7:;
-    java_lang_Thread* curThread_w14470aaac28b1c11 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w14470aaac28b1c11->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w14473aaac28b1c11 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w14473aaac28b1c11->fields.java_lang_Thread.xmlvmException_;
     goto label2;
     //XMLVM_END_WRAPPER
 }

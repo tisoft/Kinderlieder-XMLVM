@@ -301,7 +301,7 @@ void gnu_xml_dom_DomXPathExpression___INIT____gnu_xml_dom_DomDocument_java_lang_
     XMLVM_CHECK_NPE(0)
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_xpath_XPath_setNamespaceContext___javax_xml_namespace_NamespaceContext])(_r0.o, _r1.o);
     label25:;
-    XMLVM_TRY_BEGIN(w28172aaab3b1c22)
+    XMLVM_TRY_BEGIN(w28175aaab3b1c22)
     // Begin try
     XMLVM_SOURCE_POSITION("DomXPathExpression.java", 85)
     XMLVM_CHECK_NPE(0)
@@ -310,17 +310,17 @@ void gnu_xml_dom_DomXPathExpression___INIT____gnu_xml_dom_DomDocument_java_lang_
     ((gnu_xml_dom_DomXPathExpression*) _r3.o)->fields.gnu_xml_dom_DomXPathExpression.expression_ = _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28172aaab3b1c22)
-        XMLVM_CATCH_SPECIFIC(w28172aaab3b1c22,javax_xml_xpath_XPathExpressionException,32)
-    XMLVM_CATCH_END(w28172aaab3b1c22)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28172aaab3b1c22)
+    XMLVM_CATCH_BEGIN(w28175aaab3b1c22)
+        XMLVM_CATCH_SPECIFIC(w28175aaab3b1c22,javax_xml_xpath_XPathExpressionException,32)
+    XMLVM_CATCH_END(w28175aaab3b1c22)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28175aaab3b1c22)
     XMLVM_SOURCE_POSITION("DomXPathExpression.java", 92)
     XMLVM_EXIT_METHOD()
     return;
     label32:;
     XMLVM_SOURCE_POSITION("DomXPathExpression.java", 87)
-    java_lang_Thread* curThread_w28172aaab3b1c27 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w28172aaab3b1c27->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w28175aaab3b1c27 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w28175aaab3b1c27->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("DomXPathExpression.java", 89)
     _r1.o = __NEW_org_w3c_dom_xpath_XPathException();
     _r2.i = 51;
@@ -364,7 +364,7 @@ JAVA_OBJECT gnu_xml_dom_DomXPathExpression_evaluate___org_w3c_dom_Node_short_jav
     case 8: goto label49;
     case 9: goto label49;
     }
-    XMLVM_TRY_BEGIN(w28172aaab4b1b9)
+    XMLVM_TRY_BEGIN(w28175aaab4b1b9)
     // Begin try
     XMLVM_SOURCE_POSITION("DomXPathExpression.java", 122)
     _r0.o = __NEW_org_w3c_dom_xpath_XPathException();
@@ -375,14 +375,14 @@ JAVA_OBJECT gnu_xml_dom_DomXPathExpression_evaluate___org_w3c_dom_Node_short_jav
     XMLVM_THROW_CUSTOM(_r0.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28172aaab4b1b9)
-        XMLVM_CATCH_SPECIFIC(w28172aaab4b1b9,javax_xml_xpath_XPathException,14)
-    XMLVM_CATCH_END(w28172aaab4b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28172aaab4b1b9)
+    XMLVM_CATCH_BEGIN(w28175aaab4b1b9)
+        XMLVM_CATCH_SPECIFIC(w28175aaab4b1b9,javax_xml_xpath_XPathException,14)
+    XMLVM_CATCH_END(w28175aaab4b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28175aaab4b1b9)
     label14:;
     XMLVM_SOURCE_POSITION("DomXPathExpression.java", 136)
-    java_lang_Thread* curThread_w28172aaab4b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w28172aaab4b1c12->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w28175aaab4b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w28175aaab4b1c12->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("DomXPathExpression.java", 138)
     _r1.o = __NEW_org_w3c_dom_xpath_XPathException();
     //javax_xml_xpath_XPathException_getMessage__[7]
@@ -392,18 +392,18 @@ JAVA_OBJECT gnu_xml_dom_DomXPathExpression_evaluate___org_w3c_dom_Node_short_jav
     org_w3c_dom_xpath_XPathException___INIT____short_java_lang_String(_r1.o, _r3.i, _r0.o);
     XMLVM_THROW_CUSTOM(_r1.o)
     label25:;
-    XMLVM_TRY_BEGIN(w28172aaab4b1c19)
+    XMLVM_TRY_BEGIN(w28175aaab4b1c19)
     // Begin try
     XMLVM_SOURCE_POSITION("DomXPathExpression.java", 103)
     _r0.o = javax_xml_xpath_XPathConstants_GET_BOOLEAN();
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28172aaab4b1c19)
-        XMLVM_CATCH_SPECIFIC(w28172aaab4b1c19,javax_xml_xpath_XPathException,14)
-    XMLVM_CATCH_END(w28172aaab4b1c19)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28172aaab4b1c19)
+    XMLVM_CATCH_BEGIN(w28175aaab4b1c19)
+        XMLVM_CATCH_SPECIFIC(w28175aaab4b1c19,javax_xml_xpath_XPathException,14)
+    XMLVM_CATCH_END(w28175aaab4b1c19)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28175aaab4b1c19)
     label27:;
-    XMLVM_TRY_BEGIN(w28172aaab4b1c21)
+    XMLVM_TRY_BEGIN(w28175aaab4b1c21)
     // Begin try
     XMLVM_SOURCE_POSITION("DomXPathExpression.java", 124)
     XMLVM_CHECK_NPE(4)
@@ -412,83 +412,83 @@ JAVA_OBJECT gnu_xml_dom_DomXPathExpression_evaluate___org_w3c_dom_Node_short_jav
     _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_javax_xml_xpath_XPathExpression_evaluate___java_lang_Object_javax_xml_namespace_QName])(_r1.o, _r5.o, _r0.o);
     XMLVM_SOURCE_POSITION("DomXPathExpression.java", 125)
     switch (_r6.i) {
-    case 5: { XMLVM_MEMCPY(curThread_w28172aaab4b1c21->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28172aaab4b1c21, sizeof(XMLVM_JMP_BUF)); goto label55; };
-    case 7: { XMLVM_MEMCPY(curThread_w28172aaab4b1c21->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28172aaab4b1c21, sizeof(XMLVM_JMP_BUF)); goto label55; };
+    case 5: { XMLVM_MEMCPY(curThread_w28175aaab4b1c21->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28175aaab4b1c21, sizeof(XMLVM_JMP_BUF)); goto label55; };
+    case 7: { XMLVM_MEMCPY(curThread_w28175aaab4b1c21->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28175aaab4b1c21, sizeof(XMLVM_JMP_BUF)); goto label55; };
     }
     _r0 = _r4;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28172aaab4b1c21)
-        XMLVM_CATCH_SPECIFIC(w28172aaab4b1c21,javax_xml_xpath_XPathException,14)
-    XMLVM_CATCH_END(w28172aaab4b1c21)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28172aaab4b1c21)
+    XMLVM_CATCH_BEGIN(w28175aaab4b1c21)
+        XMLVM_CATCH_SPECIFIC(w28175aaab4b1c21,javax_xml_xpath_XPathException,14)
+    XMLVM_CATCH_END(w28175aaab4b1c21)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28175aaab4b1c21)
     label37:;
-    XMLVM_TRY_BEGIN(w28172aaab4b1c23)
+    XMLVM_TRY_BEGIN(w28175aaab4b1c23)
     // Begin try
     XMLVM_SOURCE_POSITION("DomXPathExpression.java", 134)
     _r1.o = __NEW_gnu_xml_dom_DomXPathResult();
     XMLVM_CHECK_NPE(1)
     gnu_xml_dom_DomXPathResult___INIT____java_lang_Object_short(_r1.o, _r0.o, _r6.i);
-    XMLVM_MEMCPY(curThread_w28172aaab4b1c23->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28172aaab4b1c23, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w28175aaab4b1c23->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28175aaab4b1c23, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r1.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28172aaab4b1c23)
-        XMLVM_CATCH_SPECIFIC(w28172aaab4b1c23,javax_xml_xpath_XPathException,14)
-    XMLVM_CATCH_END(w28172aaab4b1c23)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28172aaab4b1c23)
+    XMLVM_CATCH_BEGIN(w28175aaab4b1c23)
+        XMLVM_CATCH_SPECIFIC(w28175aaab4b1c23,javax_xml_xpath_XPathException,14)
+    XMLVM_CATCH_END(w28175aaab4b1c23)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28175aaab4b1c23)
     label43:;
-    XMLVM_TRY_BEGIN(w28172aaab4b1c25)
+    XMLVM_TRY_BEGIN(w28175aaab4b1c25)
     // Begin try
     XMLVM_SOURCE_POSITION("DomXPathExpression.java", 106)
     _r0.o = javax_xml_xpath_XPathConstants_GET_NUMBER();
-    { XMLVM_MEMCPY(curThread_w28172aaab4b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28172aaab4b1c25, sizeof(XMLVM_JMP_BUF)); goto label27; };
+    { XMLVM_MEMCPY(curThread_w28175aaab4b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28175aaab4b1c25, sizeof(XMLVM_JMP_BUF)); goto label27; };
     XMLVM_SOURCE_POSITION("DomXPathExpression.java", 109)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28172aaab4b1c25)
-        XMLVM_CATCH_SPECIFIC(w28172aaab4b1c25,javax_xml_xpath_XPathException,14)
-    XMLVM_CATCH_END(w28172aaab4b1c25)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28172aaab4b1c25)
+    XMLVM_CATCH_BEGIN(w28175aaab4b1c25)
+        XMLVM_CATCH_SPECIFIC(w28175aaab4b1c25,javax_xml_xpath_XPathException,14)
+    XMLVM_CATCH_END(w28175aaab4b1c25)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28175aaab4b1c25)
     label46:;
-    XMLVM_TRY_BEGIN(w28172aaab4b1c27)
+    XMLVM_TRY_BEGIN(w28175aaab4b1c27)
     // Begin try
     _r0.o = javax_xml_xpath_XPathConstants_GET_STRING();
-    { XMLVM_MEMCPY(curThread_w28172aaab4b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28172aaab4b1c27, sizeof(XMLVM_JMP_BUF)); goto label27; };
+    { XMLVM_MEMCPY(curThread_w28175aaab4b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28175aaab4b1c27, sizeof(XMLVM_JMP_BUF)); goto label27; };
     XMLVM_SOURCE_POSITION("DomXPathExpression.java", 113)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28172aaab4b1c27)
-        XMLVM_CATCH_SPECIFIC(w28172aaab4b1c27,javax_xml_xpath_XPathException,14)
-    XMLVM_CATCH_END(w28172aaab4b1c27)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28172aaab4b1c27)
+    XMLVM_CATCH_BEGIN(w28175aaab4b1c27)
+        XMLVM_CATCH_SPECIFIC(w28175aaab4b1c27,javax_xml_xpath_XPathException,14)
+    XMLVM_CATCH_END(w28175aaab4b1c27)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28175aaab4b1c27)
     label49:;
-    XMLVM_TRY_BEGIN(w28172aaab4b1c29)
+    XMLVM_TRY_BEGIN(w28175aaab4b1c29)
     // Begin try
     _r0.o = javax_xml_xpath_XPathConstants_GET_NODE();
-    { XMLVM_MEMCPY(curThread_w28172aaab4b1c29->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28172aaab4b1c29, sizeof(XMLVM_JMP_BUF)); goto label27; };
+    { XMLVM_MEMCPY(curThread_w28175aaab4b1c29->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28175aaab4b1c29, sizeof(XMLVM_JMP_BUF)); goto label27; };
     XMLVM_SOURCE_POSITION("DomXPathExpression.java", 119)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28172aaab4b1c29)
-        XMLVM_CATCH_SPECIFIC(w28172aaab4b1c29,javax_xml_xpath_XPathException,14)
-    XMLVM_CATCH_END(w28172aaab4b1c29)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28172aaab4b1c29)
+    XMLVM_CATCH_BEGIN(w28175aaab4b1c29)
+        XMLVM_CATCH_SPECIFIC(w28175aaab4b1c29,javax_xml_xpath_XPathException,14)
+    XMLVM_CATCH_END(w28175aaab4b1c29)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28175aaab4b1c29)
     label52:;
-    XMLVM_TRY_BEGIN(w28172aaab4b1c31)
+    XMLVM_TRY_BEGIN(w28175aaab4b1c31)
     // Begin try
     _r0.o = javax_xml_xpath_XPathConstants_GET_NODESET();
-    { XMLVM_MEMCPY(curThread_w28172aaab4b1c31->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28172aaab4b1c31, sizeof(XMLVM_JMP_BUF)); goto label27; };
+    { XMLVM_MEMCPY(curThread_w28175aaab4b1c31->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w28175aaab4b1c31, sizeof(XMLVM_JMP_BUF)); goto label27; };
     XMLVM_SOURCE_POSITION("DomXPathExpression.java", 130)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28172aaab4b1c31)
-        XMLVM_CATCH_SPECIFIC(w28172aaab4b1c31,javax_xml_xpath_XPathException,14)
-    XMLVM_CATCH_END(w28172aaab4b1c31)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28172aaab4b1c31)
+    XMLVM_CATCH_BEGIN(w28175aaab4b1c31)
+        XMLVM_CATCH_SPECIFIC(w28175aaab4b1c31,javax_xml_xpath_XPathException,14)
+    XMLVM_CATCH_END(w28175aaab4b1c31)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28175aaab4b1c31)
     label55:;
-    XMLVM_TRY_BEGIN(w28172aaab4b1c33)
+    XMLVM_TRY_BEGIN(w28175aaab4b1c33)
     // Begin try
     _r0.o = __NEW_java_util_ArrayList();
     _r4.o = _r4.o;
@@ -501,10 +501,10 @@ JAVA_OBJECT gnu_xml_dom_DomXPathExpression_evaluate___org_w3c_dom_Node_short_jav
     java_util_Collections_sort___java_util_List_java_util_Comparator(_r0.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28172aaab4b1c33)
-        XMLVM_CATCH_SPECIFIC(w28172aaab4b1c33,javax_xml_xpath_XPathException,14)
-    XMLVM_CATCH_END(w28172aaab4b1c33)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28172aaab4b1c33)
+    XMLVM_CATCH_BEGIN(w28175aaab4b1c33)
+        XMLVM_CATCH_SPECIFIC(w28175aaab4b1c33,javax_xml_xpath_XPathException,14)
+    XMLVM_CATCH_END(w28175aaab4b1c33)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28175aaab4b1c33)
     goto label37;
     label72:;
     label94:;

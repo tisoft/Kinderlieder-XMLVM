@@ -724,29 +724,29 @@ void my_kinderlieder_ShopService_delete___my_kinderlieder_Product(JAVA_OBJECT me
     _r4.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r4.o)->tib->vtable[5])(_r4.o);
     XMLVM_CHECK_NPE(1)
     java_io_File___INIT____java_io_File_java_lang_String(_r1.o, _r2.o, _r4.o);
-    XMLVM_TRY_BEGIN(w36905aaab9b1c19)
+    XMLVM_TRY_BEGIN(w36907aaab9b1c19)
     // Begin try
     XMLVM_SOURCE_POSITION("ShopService.java", 153)
     XMLVM_CHECK_NPE(6)
     my_kinderlieder_ShopService_deleteRecursive___java_io_File(_r6.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36905aaab9b1c19)
-        XMLVM_CATCH_SPECIFIC(w36905aaab9b1c19,java_io_IOException,54)
-    XMLVM_CATCH_END(w36905aaab9b1c19)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36905aaab9b1c19)
+    XMLVM_CATCH_BEGIN(w36907aaab9b1c19)
+        XMLVM_CATCH_SPECIFIC(w36907aaab9b1c19,java_io_IOException,54)
+    XMLVM_CATCH_END(w36907aaab9b1c19)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36907aaab9b1c19)
     label38:;
-    XMLVM_TRY_BEGIN(w36905aaab9b1c21)
+    XMLVM_TRY_BEGIN(w36907aaab9b1c21)
     // Begin try
     XMLVM_SOURCE_POSITION("ShopService.java", 158)
     XMLVM_CHECK_NPE(6)
     my_kinderlieder_ShopService_deleteRecursive___java_io_File(_r6.o, _r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36905aaab9b1c21)
-        XMLVM_CATCH_SPECIFIC(w36905aaab9b1c21,java_io_IOException,65)
-    XMLVM_CATCH_END(w36905aaab9b1c21)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36905aaab9b1c21)
+    XMLVM_CATCH_BEGIN(w36907aaab9b1c21)
+        XMLVM_CATCH_SPECIFIC(w36907aaab9b1c21,java_io_IOException,65)
+    XMLVM_CATCH_END(w36907aaab9b1c21)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36907aaab9b1c21)
     label41:;
     XMLVM_SOURCE_POSITION("ShopService.java", 162)
     _r4.o = my_kinderlieder_Main_GET_library();
@@ -764,8 +764,8 @@ void my_kinderlieder_ShopService_delete___my_kinderlieder_Product(JAVA_OBJECT me
     return;
     label54:;
     XMLVM_SOURCE_POSITION("ShopService.java", 154)
-    java_lang_Thread* curThread_w36905aaab9b1c35 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w36905aaab9b1c35->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36907aaab9b1c35 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w36907aaab9b1c35->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("ShopService.java", 155)
     _r4.o = java_lang_System_GET_out();
     //java_io_IOException_getMessage__[7]
@@ -776,8 +776,8 @@ void my_kinderlieder_ShopService_delete___my_kinderlieder_Product(JAVA_OBJECT me
     goto label38;
     label65:;
     XMLVM_SOURCE_POSITION("ShopService.java", 159)
-    java_lang_Thread* curThread_w36905aaab9b1c43 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w36905aaab9b1c43->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36907aaab9b1c43 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w36907aaab9b1c43->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("ShopService.java", 160)
     _r4.o = java_lang_System_GET_out();
     //java_io_IOException_getMessage__[7]
@@ -1437,7 +1437,7 @@ void my_kinderlieder_ShopService_download___my_kinderlieder_Product_org_xmlvm_ip
     XMLVM_SOURCE_POSITION("ShopService.java", 282)
     XMLVM_CHECK_NPE(29)
     my_kinderlieder_ShopService_doNotify__(_r29.o);
-    XMLVM_TRY_BEGIN(w36905aaac11b1d381)
+    XMLVM_TRY_BEGIN(w36907aaac11b1d381)
     // Begin try
     XMLVM_SOURCE_POSITION("ShopService.java", 285)
     _r3.o = my_kinderlieder_Main_GET_library();
@@ -1447,15 +1447,15 @@ void my_kinderlieder_ShopService_download___my_kinderlieder_Product_org_xmlvm_ip
     my_kinderlieder_Library_loadProduct___java_io_File(_r0.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36905aaac11b1d381)
-        XMLVM_CATCH_SPECIFIC(w36905aaac11b1d381,org_json_JSONException,737)
-    XMLVM_CATCH_END(w36905aaac11b1d381)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36905aaac11b1d381)
+    XMLVM_CATCH_BEGIN(w36907aaac11b1d381)
+        XMLVM_CATCH_SPECIFIC(w36907aaac11b1d381,org_json_JSONException,737)
+    XMLVM_CATCH_END(w36907aaac11b1d381)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36907aaac11b1d381)
     goto label57;
     label737:;
     XMLVM_SOURCE_POSITION("ShopService.java", 286)
-    java_lang_Thread* curThread_w36905aaac11b1d385 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r3.o = curThread_w36905aaac11b1d385->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36907aaac11b1d385 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r3.o = curThread_w36907aaac11b1d385->fields.java_lang_Thread.xmlvmException_;
     _r18 = _r3;
     XMLVM_SOURCE_POSITION("ShopService.java", 287)
     _r3.o = __NEW_java_io_IOException();
@@ -1494,7 +1494,7 @@ JAVA_OBJECT my_kinderlieder_ShopService_loadProducts__(JAVA_OBJECT me)
     _r7.o = __NEW_java_util_ArrayList();
     XMLVM_CHECK_NPE(7)
     java_util_ArrayList___INIT___(_r7.o);
-    XMLVM_TRY_BEGIN(w36905aaac12b1b7)
+    XMLVM_TRY_BEGIN(w36907aaac12b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("ShopService.java", 294)
     _r9.o = __NEW_java_net_URL();
@@ -1522,18 +1522,18 @@ JAVA_OBJECT my_kinderlieder_ShopService_loadProducts__(JAVA_OBJECT me)
     _r3.i = 0;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36905aaac12b1b7)
-        XMLVM_CATCH_SPECIFIC(w36905aaac12b1b7,java_net_MalformedURLException,187)
-        XMLVM_CATCH_SPECIFIC(w36905aaac12b1b7,java_io_IOException,201)
-    XMLVM_CATCH_END(w36905aaac12b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36905aaac12b1b7)
+    XMLVM_CATCH_BEGIN(w36907aaac12b1b7)
+        XMLVM_CATCH_SPECIFIC(w36907aaac12b1b7,java_net_MalformedURLException,187)
+        XMLVM_CATCH_SPECIFIC(w36907aaac12b1b7,java_io_IOException,201)
+    XMLVM_CATCH_END(w36907aaac12b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36907aaac12b1b7)
     label41:;
-    XMLVM_TRY_BEGIN(w36905aaac12b1b9)
+    XMLVM_TRY_BEGIN(w36907aaac12b1b9)
     // Begin try
     XMLVM_SOURCE_POSITION("ShopService.java", 298)
     XMLVM_CHECK_NPE(6)
     _r10.i = org_json_JSONArray_length__(_r6.o);
-    if (_r3.i >= _r10.i) { XMLVM_MEMCPY(curThread_w36905aaac12b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36905aaac12b1b9, sizeof(XMLVM_JMP_BUF)); goto label195; };
+    if (_r3.i >= _r10.i) { XMLVM_MEMCPY(curThread_w36907aaac12b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36907aaac12b1b9, sizeof(XMLVM_JMP_BUF)); goto label195; };
     XMLVM_SOURCE_POSITION("ShopService.java", 299)
     XMLVM_CHECK_NPE(6)
     _r5.o = org_json_JSONArray_getJSONObject___int(_r6.o, _r3.i);
@@ -1547,7 +1547,7 @@ JAVA_OBJECT my_kinderlieder_ShopService_loadProducts__(JAVA_OBJECT me)
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(10)
     _r10.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r10.o)->tib->vtable[1])(_r10.o, _r11.o);
-    if (_r10.i == 0) { XMLVM_MEMCPY(curThread_w36905aaac12b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36905aaac12b1b9, sizeof(XMLVM_JMP_BUF)); goto label111; };
+    if (_r10.i == 0) { XMLVM_MEMCPY(curThread_w36907aaac12b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36907aaac12b1b9, sizeof(XMLVM_JMP_BUF)); goto label111; };
     XMLVM_SOURCE_POSITION("ShopService.java", 301)
     _r2.o = __NEW_my_kinderlieder_FreeProduct();
     XMLVM_CHECK_NPE(2)
@@ -1578,32 +1578,32 @@ JAVA_OBJECT my_kinderlieder_ShopService_loadProducts__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("ShopService.java", 304)
     XMLVM_CHECK_NPE(2)
     _r10.i = ((my_kinderlieder_Product*) _r2.o)->fields.my_kinderlieder_Product.active_;
-    if (_r10.i == 0) { XMLVM_MEMCPY(curThread_w36905aaac12b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36905aaac12b1b9, sizeof(XMLVM_JMP_BUF)); goto label108; };
+    if (_r10.i == 0) { XMLVM_MEMCPY(curThread_w36907aaac12b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36907aaac12b1b9, sizeof(XMLVM_JMP_BUF)); goto label108; };
     XMLVM_SOURCE_POSITION("ShopService.java", 305)
     XMLVM_CHECK_NPE(7)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r7.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_add___java_lang_Object])(_r7.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36905aaac12b1b9)
-        XMLVM_CATCH_SPECIFIC(w36905aaac12b1b9,java_net_MalformedURLException,187)
-        XMLVM_CATCH_SPECIFIC(w36905aaac12b1b9,java_io_IOException,201)
-    XMLVM_CATCH_END(w36905aaac12b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36905aaac12b1b9)
+    XMLVM_CATCH_BEGIN(w36907aaac12b1b9)
+        XMLVM_CATCH_SPECIFIC(w36907aaac12b1b9,java_net_MalformedURLException,187)
+        XMLVM_CATCH_SPECIFIC(w36907aaac12b1b9,java_io_IOException,201)
+    XMLVM_CATCH_END(w36907aaac12b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36907aaac12b1b9)
     label108:;
-    XMLVM_TRY_BEGIN(w36905aaac12b1c11)
+    XMLVM_TRY_BEGIN(w36907aaac12b1c11)
     // Begin try
     _r3.i = _r3.i + 1;
-    { XMLVM_MEMCPY(curThread_w36905aaac12b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36905aaac12b1c11, sizeof(XMLVM_JMP_BUF)); goto label41; };
+    { XMLVM_MEMCPY(curThread_w36907aaac12b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36907aaac12b1c11, sizeof(XMLVM_JMP_BUF)); goto label41; };
     XMLVM_SOURCE_POSITION("ShopService.java", 306)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36905aaac12b1c11)
-        XMLVM_CATCH_SPECIFIC(w36905aaac12b1c11,java_net_MalformedURLException,187)
-        XMLVM_CATCH_SPECIFIC(w36905aaac12b1c11,java_io_IOException,201)
-    XMLVM_CATCH_END(w36905aaac12b1c11)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36905aaac12b1c11)
+    XMLVM_CATCH_BEGIN(w36907aaac12b1c11)
+        XMLVM_CATCH_SPECIFIC(w36907aaac12b1c11,java_net_MalformedURLException,187)
+        XMLVM_CATCH_SPECIFIC(w36907aaac12b1c11,java_io_IOException,201)
+    XMLVM_CATCH_END(w36907aaac12b1c11)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36907aaac12b1c11)
     label111:;
-    XMLVM_TRY_BEGIN(w36905aaac12b1c13)
+    XMLVM_TRY_BEGIN(w36907aaac12b1c13)
     // Begin try
     // "InAppProduct"
     _r10.o = xmlvm_create_java_string_from_pool(2687);
@@ -1614,7 +1614,7 @@ JAVA_OBJECT my_kinderlieder_ShopService_loadProducts__(JAVA_OBJECT me)
     //java_lang_String_equals___java_lang_Object[1]
     XMLVM_CHECK_NPE(10)
     _r10.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_lang_String*) _r10.o)->tib->vtable[1])(_r10.o, _r11.o);
-    if (_r10.i == 0) { XMLVM_MEMCPY(curThread_w36905aaac12b1c13->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36905aaac12b1c13, sizeof(XMLVM_JMP_BUF)); goto label108; };
+    if (_r10.i == 0) { XMLVM_MEMCPY(curThread_w36907aaac12b1c13->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36907aaac12b1c13, sizeof(XMLVM_JMP_BUF)); goto label108; };
     XMLVM_SOURCE_POSITION("ShopService.java", 307)
     _r4.o = __NEW_my_kinderlieder_InAppProduct();
     XMLVM_CHECK_NPE(4)
@@ -1653,40 +1653,40 @@ JAVA_OBJECT my_kinderlieder_ShopService_loadProducts__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(4)
     _r10.o = ((my_kinderlieder_Product*) _r4.o)->fields.my_kinderlieder_Product.state_;
     _r11.o = my_kinderlieder_Product_State_GET_INSTALLED();
-    if (_r10.o == _r11.o) { XMLVM_MEMCPY(curThread_w36905aaac12b1c13->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36905aaac12b1c13, sizeof(XMLVM_JMP_BUF)); goto label179; };
+    if (_r10.o == _r11.o) { XMLVM_MEMCPY(curThread_w36907aaac12b1c13->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36907aaac12b1c13, sizeof(XMLVM_JMP_BUF)); goto label179; };
     XMLVM_SOURCE_POSITION("ShopService.java", 312)
     _r10.o = my_kinderlieder_Product_State_GET_INFO();
     XMLVM_CHECK_NPE(4)
     ((my_kinderlieder_Product*) _r4.o)->fields.my_kinderlieder_Product.state_ = _r10.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36905aaac12b1c13)
-        XMLVM_CATCH_SPECIFIC(w36905aaac12b1c13,java_net_MalformedURLException,187)
-        XMLVM_CATCH_SPECIFIC(w36905aaac12b1c13,java_io_IOException,201)
-    XMLVM_CATCH_END(w36905aaac12b1c13)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36905aaac12b1c13)
+    XMLVM_CATCH_BEGIN(w36907aaac12b1c13)
+        XMLVM_CATCH_SPECIFIC(w36907aaac12b1c13,java_net_MalformedURLException,187)
+        XMLVM_CATCH_SPECIFIC(w36907aaac12b1c13,java_io_IOException,201)
+    XMLVM_CATCH_END(w36907aaac12b1c13)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36907aaac12b1c13)
     label179:;
-    XMLVM_TRY_BEGIN(w36905aaac12b1c15)
+    XMLVM_TRY_BEGIN(w36907aaac12b1c15)
     // Begin try
     XMLVM_SOURCE_POSITION("ShopService.java", 314)
     XMLVM_CHECK_NPE(4)
     _r10.i = ((my_kinderlieder_Product*) _r4.o)->fields.my_kinderlieder_Product.active_;
-    if (_r10.i == 0) { XMLVM_MEMCPY(curThread_w36905aaac12b1c15->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36905aaac12b1c15, sizeof(XMLVM_JMP_BUF)); goto label108; };
+    if (_r10.i == 0) { XMLVM_MEMCPY(curThread_w36907aaac12b1c15->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w36907aaac12b1c15, sizeof(XMLVM_JMP_BUF)); goto label108; };
     XMLVM_SOURCE_POSITION("ShopService.java", 315)
     XMLVM_CHECK_NPE(7)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r7.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_add___java_lang_Object])(_r7.o, _r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36905aaac12b1c15)
-        XMLVM_CATCH_SPECIFIC(w36905aaac12b1c15,java_net_MalformedURLException,187)
-        XMLVM_CATCH_SPECIFIC(w36905aaac12b1c15,java_io_IOException,201)
-    XMLVM_CATCH_END(w36905aaac12b1c15)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36905aaac12b1c15)
+    XMLVM_CATCH_BEGIN(w36907aaac12b1c15)
+        XMLVM_CATCH_SPECIFIC(w36907aaac12b1c15,java_net_MalformedURLException,187)
+        XMLVM_CATCH_SPECIFIC(w36907aaac12b1c15,java_io_IOException,201)
+    XMLVM_CATCH_END(w36907aaac12b1c15)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36907aaac12b1c15)
     goto label108;
     label187:;
     XMLVM_SOURCE_POSITION("ShopService.java", 319)
-    java_lang_Thread* curThread_w36905aaac12b1c19 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r10.o = curThread_w36905aaac12b1c19->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36907aaac12b1c19 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r10.o = curThread_w36907aaac12b1c19->fields.java_lang_Thread.xmlvmException_;
     _r1 = _r10;
     XMLVM_SOURCE_POSITION("ShopService.java", 320)
     _r10.o = __NEW_org_json_JSONException();
@@ -1694,7 +1694,7 @@ JAVA_OBJECT my_kinderlieder_ShopService_loadProducts__(JAVA_OBJECT me)
     org_json_JSONException___INIT____java_lang_Throwable(_r10.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r10.o)
     label195:;
-    XMLVM_TRY_BEGIN(w36905aaac12b1c26)
+    XMLVM_TRY_BEGIN(w36907aaac12b1c26)
     // Begin try
     XMLVM_SOURCE_POSITION("ShopService.java", 318)
     _r10.o = java_lang_System_GET_out();
@@ -1702,18 +1702,18 @@ JAVA_OBJECT my_kinderlieder_ShopService_loadProducts__(JAVA_OBJECT me)
     java_io_PrintStream_println___java_lang_Object(_r10.o, _r6.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36905aaac12b1c26)
-        XMLVM_CATCH_SPECIFIC(w36905aaac12b1c26,java_net_MalformedURLException,187)
-        XMLVM_CATCH_SPECIFIC(w36905aaac12b1c26,java_io_IOException,201)
-    XMLVM_CATCH_END(w36905aaac12b1c26)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36905aaac12b1c26)
+    XMLVM_CATCH_BEGIN(w36907aaac12b1c26)
+        XMLVM_CATCH_SPECIFIC(w36907aaac12b1c26,java_net_MalformedURLException,187)
+        XMLVM_CATCH_SPECIFIC(w36907aaac12b1c26,java_io_IOException,201)
+    XMLVM_CATCH_END(w36907aaac12b1c26)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36907aaac12b1c26)
     XMLVM_SOURCE_POSITION("ShopService.java", 325)
     XMLVM_EXIT_METHOD()
     return _r7.o;
     label201:;
     XMLVM_SOURCE_POSITION("ShopService.java", 321)
-    java_lang_Thread* curThread_w36905aaac12b1c31 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r10.o = curThread_w36905aaac12b1c31->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36907aaac12b1c31 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r10.o = curThread_w36907aaac12b1c31->fields.java_lang_Thread.xmlvmException_;
     _r1 = _r10;
     XMLVM_SOURCE_POSITION("ShopService.java", 322)
     _r10.o = __NEW_org_json_JSONException();

@@ -705,18 +705,18 @@ JAVA_BOOLEAN gnu_xml_dom_ls_DomLSSerializer_write___org_w3c_dom_Node_org_w3c_dom
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r8.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSOutput_getByteStream__])(_r8.o);
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 124)
     if (_r1.o != JAVA_NULL) goto label41;
-    XMLVM_TRY_BEGIN(w9939aaac10b1b9)
+    XMLVM_TRY_BEGIN(w9942aaac10b1b9)
     // Begin try
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 126)
     XMLVM_CHECK_NPE(8)
     _r3.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r8.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_w3c_dom_ls_LSOutput_getSystemId__])(_r8.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w9939aaac10b1b9)
-        XMLVM_CATCH_SPECIFIC(w9939aaac10b1b9,java_io_IOException,61)
-    XMLVM_CATCH_END(w9939aaac10b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w9939aaac10b1b9)
-    XMLVM_TRY_BEGIN(w9939aaac10b1c10)
+    XMLVM_CATCH_BEGIN(w9942aaac10b1b9)
+        XMLVM_CATCH_SPECIFIC(w9942aaac10b1b9,java_io_IOException,61)
+    XMLVM_CATCH_END(w9942aaac10b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w9942aaac10b1b9)
+    XMLVM_TRY_BEGIN(w9942aaac10b1c10)
     // Begin try
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 129)
     _r1.o = __NEW_java_net_URL();
@@ -732,7 +732,7 @@ JAVA_BOOLEAN gnu_xml_dom_ls_DomLSSerializer_write___org_w3c_dom_Node_org_w3c_dom
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 132)
     if (!__TIB_java_net_HttpURLConnection.classInitialized) __INIT_java_net_HttpURLConnection();
     _r1.i = XMLVM_ISA(_r2.o, __CLASS_java_net_HttpURLConnection);
-    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w9939aaac10b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9939aaac10b1c10, sizeof(XMLVM_JMP_BUF)); goto label37; };
+    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w9942aaac10b1c10->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9942aaac10b1c10, sizeof(XMLVM_JMP_BUF)); goto label37; };
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 134)
     _r0 = _r2;
     _r0.o = _r0.o;
@@ -743,13 +743,13 @@ JAVA_BOOLEAN gnu_xml_dom_ls_DomLSSerializer_write___org_w3c_dom_Node_org_w3c_dom
     java_net_HttpURLConnection_setRequestMethod___java_lang_String(_r1.o, _r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w9939aaac10b1c10)
-        XMLVM_CATCH_SPECIFIC(w9939aaac10b1c10,java_net_MalformedURLException,48)
-        XMLVM_CATCH_SPECIFIC(w9939aaac10b1c10,java_io_IOException,61)
-    XMLVM_CATCH_END(w9939aaac10b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w9939aaac10b1c10)
+    XMLVM_CATCH_BEGIN(w9942aaac10b1c10)
+        XMLVM_CATCH_SPECIFIC(w9942aaac10b1c10,java_net_MalformedURLException,48)
+        XMLVM_CATCH_SPECIFIC(w9942aaac10b1c10,java_io_IOException,61)
+    XMLVM_CATCH_END(w9942aaac10b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w9942aaac10b1c10)
     label37:;
-    XMLVM_TRY_BEGIN(w9939aaac10b1c12)
+    XMLVM_TRY_BEGIN(w9942aaac10b1c12)
     // Begin try
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 136)
     //java_net_URLConnection_getOutputStream__[14]
@@ -757,13 +757,13 @@ JAVA_BOOLEAN gnu_xml_dom_ls_DomLSSerializer_write___org_w3c_dom_Node_org_w3c_dom
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_net_URLConnection*) _r2.o)->tib->vtable[14])(_r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w9939aaac10b1c12)
-        XMLVM_CATCH_SPECIFIC(w9939aaac10b1c12,java_net_MalformedURLException,48)
-        XMLVM_CATCH_SPECIFIC(w9939aaac10b1c12,java_io_IOException,61)
-    XMLVM_CATCH_END(w9939aaac10b1c12)
-    XMLVM_RESTORE_EXCEPTION_ENV(w9939aaac10b1c12)
+    XMLVM_CATCH_BEGIN(w9942aaac10b1c12)
+        XMLVM_CATCH_SPECIFIC(w9942aaac10b1c12,java_net_MalformedURLException,48)
+        XMLVM_CATCH_SPECIFIC(w9942aaac10b1c12,java_io_IOException,61)
+    XMLVM_CATCH_END(w9942aaac10b1c12)
+    XMLVM_RESTORE_EXCEPTION_ENV(w9942aaac10b1c12)
     label41:;
-    XMLVM_TRY_BEGIN(w9939aaac10b1c14)
+    XMLVM_TRY_BEGIN(w9942aaac10b1c14)
     // Begin try
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 144)
     //gnu_xml_dom_ls_DomLSSerializer_serialize___org_w3c_dom_Node_java_io_OutputStream[6]
@@ -774,21 +774,21 @@ JAVA_BOOLEAN gnu_xml_dom_ls_DomLSSerializer_write___org_w3c_dom_Node_org_w3c_dom
     XMLVM_CHECK_NPE(1)
     (*(void (*)(JAVA_OBJECT)) ((java_io_OutputStream*) _r1.o)->tib->vtable[8])(_r1.o);
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 146)
-    XMLVM_MEMCPY(curThread_w9939aaac10b1c14->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9939aaac10b1c14, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w9942aaac10b1c14->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w9942aaac10b1c14, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r5.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w9939aaac10b1c14)
-        XMLVM_CATCH_SPECIFIC(w9939aaac10b1c14,java_io_IOException,61)
-    XMLVM_CATCH_END(w9939aaac10b1c14)
-    XMLVM_RESTORE_EXCEPTION_ENV(w9939aaac10b1c14)
+    XMLVM_CATCH_BEGIN(w9942aaac10b1c14)
+        XMLVM_CATCH_SPECIFIC(w9942aaac10b1c14,java_io_IOException,61)
+    XMLVM_CATCH_END(w9942aaac10b1c14)
+    XMLVM_RESTORE_EXCEPTION_ENV(w9942aaac10b1c14)
     label48:;
-    XMLVM_TRY_BEGIN(w9939aaac10b1c16)
+    XMLVM_TRY_BEGIN(w9942aaac10b1c16)
     // Begin try
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 140)
-    java_lang_Thread* curThread_w9939aaac10b1c16ab1 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w9939aaac10b1c16ab1->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w9942aaac10b1c16ab1 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w9942aaac10b1c16ab1->fields.java_lang_Thread.xmlvmException_;
     _r1.o = __NEW_java_io_File();
     XMLVM_CHECK_NPE(1)
     java_io_File___INIT____java_lang_String(_r1.o, _r3.o);
@@ -798,16 +798,16 @@ JAVA_BOOLEAN gnu_xml_dom_ls_DomLSSerializer_write___org_w3c_dom_Node_org_w3c_dom
     java_io_FileOutputStream___INIT____java_io_File(_r2.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w9939aaac10b1c16)
-        XMLVM_CATCH_SPECIFIC(w9939aaac10b1c16,java_io_IOException,61)
-    XMLVM_CATCH_END(w9939aaac10b1c16)
-    XMLVM_RESTORE_EXCEPTION_ENV(w9939aaac10b1c16)
+    XMLVM_CATCH_BEGIN(w9942aaac10b1c16)
+        XMLVM_CATCH_SPECIFIC(w9942aaac10b1c16,java_io_IOException,61)
+    XMLVM_CATCH_END(w9942aaac10b1c16)
+    XMLVM_RESTORE_EXCEPTION_ENV(w9942aaac10b1c16)
     _r1 = _r2;
     goto label41;
     label61:;
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 148)
-    java_lang_Thread* curThread_w9939aaac10b1c21 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w9939aaac10b1c21->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w9942aaac10b1c21 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w9942aaac10b1c21->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("DomLSSerializer.java", 150)
     _r2.o = __NEW_gnu_xml_dom_ls_DomLSException();
     _r3.i = 82;

@@ -437,12 +437,12 @@
 #include "gnu_xml_xpath_UnionExpr.h"
 #include "gnu_xml_dom_html2_DomHTMLLegendElement.h"
 #include "gnu_xml_dom_html2_DomHTMLDirectoryElement.h"
-#include "java_util_regex_CharClass_14.h"
 #include "java_net_NegativeCache.h"
+#include "java_util_regex_CharClass_14.h"
 #include "java_util_regex_CharClass_15.h"
-#include "java_util_regex_CharClass_16.h"
 #include "org_apache_harmony_luni_util_FloatingPointParser.h"
 #include "java_nio_DoubleBuffer.h"
+#include "java_util_regex_CharClass_16.h"
 #include "java_nio_HeapByteBuffer.h"
 #include "java_util_regex_CanClasses.h"
 #include "java_util_regex_CharClass_17.h"
@@ -933,8 +933,8 @@
 #include "java_nio_ReadOnlyDoubleArrayBuffer.h"
 #include "java_util_regex_AbstractCharClass_LazyJavaMirrored_1.h"
 #include "java_util_HashMap_EntryIterator.h"
-#include "java_io_ObjectStreamField.h"
 #include "org_xmlvm_iphone_CGPDFPage.h"
+#include "java_io_ObjectStreamField.h"
 #include "java_net_Inet4Address.h"
 #include "java_util_TreeMap_DescendingSubMap_DescendingSubMapValuesCollection.h"
 #include "java_util_Collections_SingletonMap_1_1_1.h"
@@ -1090,8 +1090,8 @@
 #include "java_io_ObjectInputStream_GetField.h"
 #include "java_util_HashMap_HashMapEntrySet.h"
 #include "java_util_ListResourceBundle_2.h"
-#include "java_net_Authenticator.h"
 #include "org_xmlvm_iphone_CAMediaTiming.h"
+#include "java_net_Authenticator.h"
 #include "java_util_Collections_UnmodifiableSortedMap.h"
 #include "org_w3c_dom_html2_HTMLLegendElement.h"
 #include "java_util_Collections_UnmodifiableList.h"
@@ -1118,8 +1118,8 @@
 #include "org_apache_harmony_niochar_charset_ISO_8859_7_Decoder.h"
 #include "gnu_xml_xpath_XPathParser_YyCheckClass.h"
 #include "java_io_FileInputStream_RepositioningLock.h"
-#include "java_util_LinkedList_ReverseLinkIterator.h"
 #include "org_xmlvm_iphone_UIWindow.h"
+#include "java_util_LinkedList_ReverseLinkIterator.h"
 #include "java_net_BindException.h"
 #include "gnu_xml_dom_DomEvent_DomMutationEvent.h"
 #include "java_util_regex_AbstractCharClass_LazyJavaLowerCase.h"
@@ -1239,8 +1239,8 @@
 #include "org_w3c_dom_html2_HTMLUListElement.h"
 #include "java_io_PrintStream.h"
 #include "java_nio_CharToByteBufferAdapter.h"
-#include "org_apache_harmony_luni_util_DeleteOnExit.h"
 #include "org_xmlvm_iphone_CGContext.h"
+#include "org_apache_harmony_luni_util_DeleteOnExit.h"
 #include "org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager.h"
 #include "java_util_regex_Pattern.h"
 #include "java_util_MissingFormatArgumentException.h"
@@ -1313,8 +1313,8 @@
 #include "java_lang_reflect_Constructor.h"
 #include "java_net_URLConnection.h"
 #include "org_w3c_dom_traversal_DocumentTraversal.h"
-#include "org_xml_sax_InputSource.h"
 #include "java_util_regex_UMultiLineEOLSet.h"
+#include "org_xml_sax_InputSource.h"
 #include "gnu_xml_xpath_RelationalExpr.h"
 #include "java_text_AttributedString_Range.h"
 #include "org_w3c_dom_DOMImplementation.h"
@@ -1384,8 +1384,8 @@
 #include "gnu_xml_dom_DTDElementTypeInfo.h"
 #include "java_lang_Integer.h"
 #include "java_util_regex_UCIDecomposedCharSet.h"
-#include "java_lang_Short.h"
 #include "java_io_File_TempFileLocker.h"
+#include "java_lang_Short.h"
 #include "org_xmlvm_iphone_UIBarButtonItem.h"
 #include "org_w3c_dom_html2_HTMLOptGroupElement.h"
 #include "java_util_Collections_ReverseComparator.h"
@@ -1876,12 +1876,12 @@ __TIB_DEFINITION_TEMPLATE* __xmlvm_tib_list[] = {
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_gnu_xml_xpath_UnionExpr,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_gnu_xml_dom_html2_DomHTMLLegendElement,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_gnu_xml_dom_html2_DomHTMLDirectoryElement,
-    (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_regex_CharClass_14,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_net_NegativeCache,
+    (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_regex_CharClass_14,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_regex_CharClass_15,
-    (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_regex_CharClass_16,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_apache_harmony_luni_util_FloatingPointParser,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_nio_DoubleBuffer,
+    (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_regex_CharClass_16,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_nio_HeapByteBuffer,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_regex_CanClasses,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_regex_CharClass_17,
@@ -2372,8 +2372,8 @@ __TIB_DEFINITION_TEMPLATE* __xmlvm_tib_list[] = {
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_nio_ReadOnlyDoubleArrayBuffer,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_regex_AbstractCharClass_LazyJavaMirrored_1,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_HashMap_EntryIterator,
-    (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_io_ObjectStreamField,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_xmlvm_iphone_CGPDFPage,
+    (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_io_ObjectStreamField,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_net_Inet4Address,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_TreeMap_DescendingSubMap_DescendingSubMapValuesCollection,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_Collections_SingletonMap_1_1_1,
@@ -2529,8 +2529,8 @@ __TIB_DEFINITION_TEMPLATE* __xmlvm_tib_list[] = {
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_io_ObjectInputStream_GetField,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_HashMap_HashMapEntrySet,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_ListResourceBundle_2,
-    (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_net_Authenticator,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_xmlvm_iphone_CAMediaTiming,
+    (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_net_Authenticator,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_Collections_UnmodifiableSortedMap,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_w3c_dom_html2_HTMLLegendElement,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_Collections_UnmodifiableList,
@@ -2557,8 +2557,8 @@ __TIB_DEFINITION_TEMPLATE* __xmlvm_tib_list[] = {
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_apache_harmony_niochar_charset_ISO_8859_7_Decoder,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_gnu_xml_xpath_XPathParser_YyCheckClass,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_io_FileInputStream_RepositioningLock,
-    (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_LinkedList_ReverseLinkIterator,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_xmlvm_iphone_UIWindow,
+    (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_LinkedList_ReverseLinkIterator,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_net_BindException,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_gnu_xml_dom_DomEvent_DomMutationEvent,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_regex_AbstractCharClass_LazyJavaLowerCase,
@@ -2678,8 +2678,8 @@ __TIB_DEFINITION_TEMPLATE* __xmlvm_tib_list[] = {
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_w3c_dom_html2_HTMLUListElement,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_io_PrintStream,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_nio_CharToByteBufferAdapter,
-    (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_apache_harmony_luni_util_DeleteOnExit,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_xmlvm_iphone_CGContext,
+    (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_apache_harmony_luni_util_DeleteOnExit,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_regex_Pattern,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_MissingFormatArgumentException,
@@ -2752,8 +2752,8 @@ __TIB_DEFINITION_TEMPLATE* __xmlvm_tib_list[] = {
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_lang_reflect_Constructor,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_net_URLConnection,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_w3c_dom_traversal_DocumentTraversal,
-    (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_xml_sax_InputSource,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_regex_UMultiLineEOLSet,
+    (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_xml_sax_InputSource,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_gnu_xml_xpath_RelationalExpr,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_text_AttributedString_Range,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_w3c_dom_DOMImplementation,
@@ -2823,8 +2823,8 @@ __TIB_DEFINITION_TEMPLATE* __xmlvm_tib_list[] = {
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_gnu_xml_dom_DTDElementTypeInfo,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_lang_Integer,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_regex_UCIDecomposedCharSet,
-    (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_lang_Short,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_io_File_TempFileLocker,
+    (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_lang_Short,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_xmlvm_iphone_UIBarButtonItem,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_org_w3c_dom_html2_HTMLOptGroupElement,
     (__TIB_DEFINITION_TEMPLATE*) &__TIB_java_util_Collections_ReverseComparator,

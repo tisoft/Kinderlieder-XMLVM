@@ -1303,20 +1303,20 @@ JAVA_OBJECT java_lang_Integer_getInteger___java_lang_String(JAVA_OBJECT n1)
     XMLVM_SOURCE_POSITION("Integer.java", 216)
     goto label10;
     label19:;
-    XMLVM_TRY_BEGIN(w44786aaac16b1c22)
+    XMLVM_TRY_BEGIN(w44788aaac16b1c22)
     // Begin try
     XMLVM_SOURCE_POSITION("Integer.java", 219)
     _r0.o = java_lang_Integer_decode___java_lang_String(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44786aaac16b1c22)
-        XMLVM_CATCH_SPECIFIC(w44786aaac16b1c22,java_lang_NumberFormatException,24)
-    XMLVM_CATCH_END(w44786aaac16b1c22)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44786aaac16b1c22)
+    XMLVM_CATCH_BEGIN(w44788aaac16b1c22)
+        XMLVM_CATCH_SPECIFIC(w44788aaac16b1c22,java_lang_NumberFormatException,24)
+    XMLVM_CATCH_END(w44788aaac16b1c22)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44788aaac16b1c22)
     goto label10;
     label24:;
-    java_lang_Thread* curThread_w44786aaac16b1c25 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w44786aaac16b1c25->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w44788aaac16b1c25 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w44788aaac16b1c25->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r1;
     goto label10;
     //XMLVM_END_WRAPPER
@@ -1354,20 +1354,20 @@ JAVA_OBJECT java_lang_Integer_getInteger___java_lang_String_int(JAVA_OBJECT n1, 
     _r0.o = java_lang_Integer_valueOf___int(_r2.i);
     goto label12;
     label24:;
-    XMLVM_TRY_BEGIN(w44786aaac17b1c22)
+    XMLVM_TRY_BEGIN(w44788aaac17b1c22)
     // Begin try
     XMLVM_SOURCE_POSITION("Integer.java", 248)
     _r0.o = java_lang_Integer_decode___java_lang_String(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44786aaac17b1c22)
-        XMLVM_CATCH_SPECIFIC(w44786aaac17b1c22,java_lang_NumberFormatException,29)
-    XMLVM_CATCH_END(w44786aaac17b1c22)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44786aaac17b1c22)
+    XMLVM_CATCH_BEGIN(w44788aaac17b1c22)
+        XMLVM_CATCH_SPECIFIC(w44788aaac17b1c22,java_lang_NumberFormatException,29)
+    XMLVM_CATCH_END(w44788aaac17b1c22)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44788aaac17b1c22)
     goto label12;
     label29:;
-    java_lang_Thread* curThread_w44786aaac17b1c25 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w44786aaac17b1c25->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w44788aaac17b1c25 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w44788aaac17b1c25->fields.java_lang_Thread.xmlvmException_;
     _r0.o = java_lang_Integer_valueOf___int(_r2.i);
     goto label12;
     //XMLVM_END_WRAPPER
@@ -1405,20 +1405,20 @@ JAVA_OBJECT java_lang_Integer_getInteger___java_lang_String_java_lang_Integer(JA
     XMLVM_SOURCE_POSITION("Integer.java", 274)
     goto label9;
     label18:;
-    XMLVM_TRY_BEGIN(w44786aaac18b1c22)
+    XMLVM_TRY_BEGIN(w44788aaac18b1c22)
     // Begin try
     XMLVM_SOURCE_POSITION("Integer.java", 277)
     _r0.o = java_lang_Integer_decode___java_lang_String(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44786aaac18b1c22)
-        XMLVM_CATCH_SPECIFIC(w44786aaac18b1c22,java_lang_NumberFormatException,23)
-    XMLVM_CATCH_END(w44786aaac18b1c22)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44786aaac18b1c22)
+    XMLVM_CATCH_BEGIN(w44788aaac18b1c22)
+        XMLVM_CATCH_SPECIFIC(w44788aaac18b1c22,java_lang_NumberFormatException,23)
+    XMLVM_CATCH_END(w44788aaac18b1c22)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44788aaac18b1c22)
     goto label9;
     label23:;
-    java_lang_Thread* curThread_w44786aaac18b1c25 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w44786aaac18b1c25->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w44788aaac18b1c25 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w44788aaac18b1c25->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r2;
     goto label9;
     //XMLVM_END_WRAPPER

@@ -426,7 +426,7 @@ void java_net_NegativeCache_put___java_lang_String_java_lang_String(JAVA_OBJECT 
     if (!__TIB_java_net_NegativeCache.classInitialized) __INIT_java_net_NegativeCache();
     _r0.o = __CLASS_java_net_NegativeCache;
     java_lang_Object_acquireLockRecursive__(_r0.o);
-    XMLVM_TRY_BEGIN(w13857aaab6b1b6)
+    XMLVM_TRY_BEGIN(w13849aaab6b1b6)
     // Begin try
     java_net_NegativeCache_checkCacheExists__();
     XMLVM_SOURCE_POSITION("NegativeCache.java", 83)
@@ -439,17 +439,17 @@ void java_net_NegativeCache_put___java_lang_String_java_lang_String(JAVA_OBJECT 
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_net_NegativeCache*) _r1.o)->tib->vtable[14])(_r1.o, _r3.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w13857aaab6b1b6)
-        XMLVM_CATCH_SPECIFIC(w13857aaab6b1b6,java_lang_Object,18)
-    XMLVM_CATCH_END(w13857aaab6b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w13857aaab6b1b6)
+    XMLVM_CATCH_BEGIN(w13849aaab6b1b6)
+        XMLVM_CATCH_SPECIFIC(w13849aaab6b1b6,java_lang_Object,18)
+    XMLVM_CATCH_END(w13849aaab6b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w13849aaab6b1b6)
     XMLVM_SOURCE_POSITION("NegativeCache.java", 84)
     java_lang_Object_releaseLockRecursive__(_r0.o);
     XMLVM_EXIT_METHOD()
     return;
     label18:;
-    java_lang_Thread* curThread_w13857aaab6b1c11 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w13857aaab6b1c11->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w13849aaab6b1c11 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w13849aaab6b1c11->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     XMLVM_THROW_CUSTOM(_r1.o)
     //XMLVM_END_WRAPPER
@@ -475,7 +475,7 @@ JAVA_OBJECT java_net_NegativeCache_getFailedMessage___java_lang_String(JAVA_OBJE
     if (!__TIB_java_net_NegativeCache.classInitialized) __INIT_java_net_NegativeCache();
     _r2.o = __CLASS_java_net_NegativeCache;
     java_lang_Object_acquireLockRecursive__(_r2.o);
-    XMLVM_TRY_BEGIN(w13857aaab7b1b6)
+    XMLVM_TRY_BEGIN(w13849aaab7b1b6)
     // Begin try
     java_net_NegativeCache_checkCacheExists__();
     XMLVM_SOURCE_POSITION("NegativeCache.java", 97)
@@ -485,7 +485,7 @@ JAVA_OBJECT java_net_NegativeCache_getFailedMessage___java_lang_String(JAVA_OBJE
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_net_NegativeCache*) _r0.o)->tib->vtable[10])(_r0.o, _r8.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("NegativeCache.java", 98)
-    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w13857aaab7b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w13857aaab7b1b6, sizeof(XMLVM_JMP_BUF)); goto label50; };
+    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w13849aaab7b1b6->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w13849aaab7b1b6, sizeof(XMLVM_JMP_BUF)); goto label50; };
     XMLVM_SOURCE_POSITION("NegativeCache.java", 101)
     _r1.o = __NEW_org_apache_harmony_luni_util_PriviAction();
     XMLVM_SOURCE_POSITION("NegativeCache.java", 102)
@@ -497,15 +497,15 @@ JAVA_OBJECT java_net_NegativeCache_getFailedMessage___java_lang_String(JAVA_OBJE
     _r1.o = _r1.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w13857aaab7b1b6)
-        XMLVM_CATCH_SPECIFIC(w13857aaab7b1b6,java_lang_Object,85)
-    XMLVM_CATCH_END(w13857aaab7b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w13857aaab7b1b6)
+    XMLVM_CATCH_BEGIN(w13849aaab7b1b6)
+        XMLVM_CATCH_SPECIFIC(w13849aaab7b1b6,java_lang_Object,85)
+    XMLVM_CATCH_END(w13849aaab7b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w13849aaab7b1b6)
     XMLVM_SOURCE_POSITION("NegativeCache.java", 103)
     _r3.i = 10;
     XMLVM_SOURCE_POSITION("NegativeCache.java", 105)
     if (_r1.o == JAVA_NULL) goto label57;
-    XMLVM_TRY_BEGIN(w13857aaab7b1c11)
+    XMLVM_TRY_BEGIN(w13849aaab7b1c11)
     // Begin try
     XMLVM_SOURCE_POSITION("NegativeCache.java", 106)
     _r1.o = java_lang_Integer_decode___java_lang_String(_r1.o);
@@ -514,15 +514,15 @@ JAVA_OBJECT java_net_NegativeCache_getFailedMessage___java_lang_String(JAVA_OBJE
     _r1.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_Integer*) _r1.o)->tib->vtable[9])(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w13857aaab7b1c11)
-        XMLVM_CATCH_SPECIFIC(w13857aaab7b1c11,java_lang_NumberFormatException,56)
-        XMLVM_CATCH_SPECIFIC(w13857aaab7b1c11,java_lang_Object,85)
-    XMLVM_CATCH_END(w13857aaab7b1c11)
-    XMLVM_RESTORE_EXCEPTION_ENV(w13857aaab7b1c11)
+    XMLVM_CATCH_BEGIN(w13849aaab7b1c11)
+        XMLVM_CATCH_SPECIFIC(w13849aaab7b1c11,java_lang_NumberFormatException,56)
+        XMLVM_CATCH_SPECIFIC(w13849aaab7b1c11,java_lang_Object,85)
+    XMLVM_CATCH_END(w13849aaab7b1c11)
+    XMLVM_RESTORE_EXCEPTION_ENV(w13849aaab7b1c11)
     label42:;
     XMLVM_SOURCE_POSITION("NegativeCache.java", 110)
     if (_r1.i != 0) goto label59;
-    XMLVM_TRY_BEGIN(w13857aaab7b1c15)
+    XMLVM_TRY_BEGIN(w13849aaab7b1c15)
     // Begin try
     XMLVM_SOURCE_POSITION("NegativeCache.java", 111)
     _r0.o = java_net_NegativeCache_GET_negCache();
@@ -533,32 +533,32 @@ JAVA_OBJECT java_net_NegativeCache_getFailedMessage___java_lang_String(JAVA_OBJE
     XMLVM_SOURCE_POSITION("NegativeCache.java", 112)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w13857aaab7b1c15)
-        XMLVM_CATCH_SPECIFIC(w13857aaab7b1c15,java_lang_Object,85)
-    XMLVM_CATCH_END(w13857aaab7b1c15)
-    XMLVM_RESTORE_EXCEPTION_ENV(w13857aaab7b1c15)
+    XMLVM_CATCH_BEGIN(w13849aaab7b1c15)
+        XMLVM_CATCH_SPECIFIC(w13849aaab7b1c15,java_lang_Object,85)
+    XMLVM_CATCH_END(w13849aaab7b1c15)
+    XMLVM_RESTORE_EXCEPTION_ENV(w13849aaab7b1c15)
     label50:;
-    XMLVM_TRY_BEGIN(w13857aaab7b1c17)
+    XMLVM_TRY_BEGIN(w13849aaab7b1c17)
     // Begin try
     XMLVM_SOURCE_POSITION("NegativeCache.java", 122)
-    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w13857aaab7b1c17->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w13857aaab7b1c17, sizeof(XMLVM_JMP_BUF)); goto label83; };
+    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w13849aaab7b1c17->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w13849aaab7b1c17, sizeof(XMLVM_JMP_BUF)); goto label83; };
     XMLVM_SOURCE_POSITION("NegativeCache.java", 123)
     XMLVM_CHECK_NPE(0)
     _r0.o = ((java_net_NegCacheElement*) _r0.o)->fields.java_net_NegCacheElement.hostName_;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w13857aaab7b1c17)
-        XMLVM_CATCH_SPECIFIC(w13857aaab7b1c17,java_lang_Object,85)
-    XMLVM_CATCH_END(w13857aaab7b1c17)
-    XMLVM_RESTORE_EXCEPTION_ENV(w13857aaab7b1c17)
+    XMLVM_CATCH_BEGIN(w13849aaab7b1c17)
+        XMLVM_CATCH_SPECIFIC(w13849aaab7b1c17,java_lang_Object,85)
+    XMLVM_CATCH_END(w13849aaab7b1c17)
+    XMLVM_RESTORE_EXCEPTION_ENV(w13849aaab7b1c17)
     label54:;
     XMLVM_SOURCE_POSITION("NegativeCache.java", 125)
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label56:;
-    java_lang_Thread* curThread_w13857aaab7b1c23 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w13857aaab7b1c23->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w13849aaab7b1c23 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w13849aaab7b1c23->fields.java_lang_Thread.xmlvmException_;
     label57:;
     _r1 = _r3;
     goto label42;
@@ -566,7 +566,7 @@ JAVA_OBJECT java_net_NegativeCache_getFailedMessage___java_lang_String(JAVA_OBJE
     XMLVM_SOURCE_POSITION("NegativeCache.java", 113)
     _r3.i = -1;
     if (_r1.i == _r3.i) goto label50;
-    XMLVM_TRY_BEGIN(w13857aaab7b1c31)
+    XMLVM_TRY_BEGIN(w13849aaab7b1c31)
     // Begin try
     XMLVM_SOURCE_POSITION("NegativeCache.java", 114)
     XMLVM_CHECK_NPE(0)
@@ -577,7 +577,7 @@ JAVA_OBJECT java_net_NegativeCache_getFailedMessage___java_lang_String(JAVA_OBJE
     XMLVM_SOURCE_POSITION("NegativeCache.java", 115)
     _r5.l = java_lang_System_currentTimeMillis__();
     _r1.i = _r3.l > _r5.l ? 1 : (_r3.l == _r5.l ? 0 : -1);
-    if (_r1.i >= 0) { XMLVM_MEMCPY(curThread_w13857aaab7b1c31->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w13857aaab7b1c31, sizeof(XMLVM_JMP_BUF)); goto label50; };
+    if (_r1.i >= 0) { XMLVM_MEMCPY(curThread_w13849aaab7b1c31->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w13849aaab7b1c31, sizeof(XMLVM_JMP_BUF)); goto label50; };
     XMLVM_SOURCE_POSITION("NegativeCache.java", 117)
     _r0.o = java_net_NegativeCache_GET_negCache();
     //java_net_NegativeCache_remove___java_lang_Object[15]
@@ -585,10 +585,10 @@ JAVA_OBJECT java_net_NegativeCache_getFailedMessage___java_lang_String(JAVA_OBJE
     (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_net_NegativeCache*) _r0.o)->tib->vtable[15])(_r0.o, _r8.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w13857aaab7b1c31)
-        XMLVM_CATCH_SPECIFIC(w13857aaab7b1c31,java_lang_Object,85)
-    XMLVM_CATCH_END(w13857aaab7b1c31)
-    XMLVM_RESTORE_EXCEPTION_ENV(w13857aaab7b1c31)
+    XMLVM_CATCH_BEGIN(w13849aaab7b1c31)
+        XMLVM_CATCH_SPECIFIC(w13849aaab7b1c31,java_lang_Object,85)
+    XMLVM_CATCH_END(w13849aaab7b1c31)
+    XMLVM_RESTORE_EXCEPTION_ENV(w13849aaab7b1c31)
     _r0 = _r7;
     XMLVM_SOURCE_POSITION("NegativeCache.java", 118)
     goto label50;
@@ -596,8 +596,8 @@ JAVA_OBJECT java_net_NegativeCache_getFailedMessage___java_lang_String(JAVA_OBJE
     _r0 = _r7;
     goto label54;
     label85:;
-    java_lang_Thread* curThread_w13857aaab7b1c39 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w13857aaab7b1c39->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w13849aaab7b1c39 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w13849aaab7b1c39->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r2.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER
@@ -617,10 +617,10 @@ void java_net_NegativeCache_checkCacheExists__()
     if (!__TIB_java_net_NegativeCache.classInitialized) __INIT_java_net_NegativeCache();
     _r0.o = __CLASS_java_net_NegativeCache;
     java_lang_Object_acquireLockRecursive__(_r0.o);
-    XMLVM_TRY_BEGIN(w13857aaab8b1b4)
+    XMLVM_TRY_BEGIN(w13849aaab8b1b4)
     // Begin try
     _r1.o = java_net_NegativeCache_GET_negCache();
-    if (_r1.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w13857aaab8b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w13857aaab8b1b4, sizeof(XMLVM_JMP_BUF)); goto label18; };
+    if (_r1.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w13849aaab8b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w13849aaab8b1b4, sizeof(XMLVM_JMP_BUF)); goto label18; };
     XMLVM_SOURCE_POSITION("NegativeCache.java", 139)
     _r1.o = __NEW_java_net_NegativeCache();
     XMLVM_SOURCE_POSITION("NegativeCache.java", 140)
@@ -632,18 +632,18 @@ void java_net_NegativeCache_checkCacheExists__()
     java_net_NegativeCache_PUT_negCache( _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w13857aaab8b1b4)
-        XMLVM_CATCH_SPECIFIC(w13857aaab8b1b4,java_lang_Object,20)
-    XMLVM_CATCH_END(w13857aaab8b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w13857aaab8b1b4)
+    XMLVM_CATCH_BEGIN(w13849aaab8b1b4)
+        XMLVM_CATCH_SPECIFIC(w13849aaab8b1b4,java_lang_Object,20)
+    XMLVM_CATCH_END(w13849aaab8b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w13849aaab8b1b4)
     label18:;
     XMLVM_SOURCE_POSITION("NegativeCache.java", 142)
     java_lang_Object_releaseLockRecursive__(_r0.o);
     XMLVM_EXIT_METHOD()
     return;
     label20:;
-    java_lang_Thread* curThread_w13857aaab8b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w13857aaab8b1c10->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w13849aaab8b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w13849aaab8b1c10->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r0.o);
     XMLVM_THROW_CUSTOM(_r1.o)
     //XMLVM_END_WRAPPER

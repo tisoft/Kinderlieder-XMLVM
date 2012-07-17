@@ -1754,7 +1754,7 @@ void java_util_zip_ZipEntry___INIT____java_util_zip_ZipEntry_LittleEndianReader_
     XMLVM_CHECK_NPE(10)
     java_util_zip_ZipEntry_myReadFully___java_io_InputStream_byte_1ARRAY(_r10.o, _r12.o, _r2.o);
     label353:;
-    XMLVM_TRY_BEGIN(w14580aaac34b1d237)
+    XMLVM_TRY_BEGIN(w14583aaac34b1d237)
     // Begin try
     XMLVM_SOURCE_POSITION("ZipEntry.java", 412)
     _r2.o = __NEW_java_lang_String();
@@ -1765,7 +1765,7 @@ void java_util_zip_ZipEntry___INIT____java_util_zip_ZipEntry_LittleEndianReader_
     XMLVM_CHECK_NPE(10)
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.name_ = _r2.o;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 413)
-    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w14580aaac34b1d237->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w14580aaac34b1d237, sizeof(XMLVM_JMP_BUF)); goto label374; };
+    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w14583aaac34b1d237->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w14583aaac34b1d237, sizeof(XMLVM_JMP_BUF)); goto label374; };
     XMLVM_SOURCE_POSITION("ZipEntry.java", 414)
     _r1.o = __NEW_java_lang_String();
     // "ISO-8859-1"
@@ -1776,25 +1776,25 @@ void java_util_zip_ZipEntry___INIT____java_util_zip_ZipEntry_LittleEndianReader_
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.comment_ = _r1.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w14580aaac34b1d237)
-        XMLVM_CATCH_SPECIFIC(w14580aaac34b1d237,java_io_UnsupportedEncodingException,378)
-    XMLVM_CATCH_END(w14580aaac34b1d237)
-    XMLVM_RESTORE_EXCEPTION_ENV(w14580aaac34b1d237)
+    XMLVM_CATCH_BEGIN(w14583aaac34b1d237)
+        XMLVM_CATCH_SPECIFIC(w14583aaac34b1d237,java_io_UnsupportedEncodingException,378)
+    XMLVM_CATCH_END(w14583aaac34b1d237)
+    XMLVM_RESTORE_EXCEPTION_ENV(w14583aaac34b1d237)
     label373:;
-    XMLVM_TRY_BEGIN(w14580aaac34b1d239)
+    XMLVM_TRY_BEGIN(w14583aaac34b1d239)
     // Begin try
     XMLVM_SOURCE_POSITION("ZipEntry.java", 421)
-    XMLVM_MEMCPY(curThread_w14580aaac34b1d239->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w14580aaac34b1d239, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w14583aaac34b1d239->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w14583aaac34b1d239, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w14580aaac34b1d239)
-        XMLVM_CATCH_SPECIFIC(w14580aaac34b1d239,java_io_UnsupportedEncodingException,378)
-    XMLVM_CATCH_END(w14580aaac34b1d239)
-    XMLVM_RESTORE_EXCEPTION_ENV(w14580aaac34b1d239)
+    XMLVM_CATCH_BEGIN(w14583aaac34b1d239)
+        XMLVM_CATCH_SPECIFIC(w14583aaac34b1d239,java_io_UnsupportedEncodingException,378)
+    XMLVM_CATCH_END(w14583aaac34b1d239)
+    XMLVM_RESTORE_EXCEPTION_ENV(w14583aaac34b1d239)
     label374:;
-    XMLVM_TRY_BEGIN(w14580aaac34b1d241)
+    XMLVM_TRY_BEGIN(w14583aaac34b1d241)
     // Begin try
     XMLVM_SOURCE_POSITION("ZipEntry.java", 416)
     _r0.o = JAVA_NULL;
@@ -1802,15 +1802,15 @@ void java_util_zip_ZipEntry___INIT____java_util_zip_ZipEntry_LittleEndianReader_
     ((java_util_zip_ZipEntry*) _r10.o)->fields.java_util_zip_ZipEntry.comment_ = _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w14580aaac34b1d241)
-        XMLVM_CATCH_SPECIFIC(w14580aaac34b1d241,java_io_UnsupportedEncodingException,378)
-    XMLVM_CATCH_END(w14580aaac34b1d241)
-    XMLVM_RESTORE_EXCEPTION_ENV(w14580aaac34b1d241)
+    XMLVM_CATCH_BEGIN(w14583aaac34b1d241)
+        XMLVM_CATCH_SPECIFIC(w14583aaac34b1d241,java_io_UnsupportedEncodingException,378)
+    XMLVM_CATCH_END(w14583aaac34b1d241)
+    XMLVM_RESTORE_EXCEPTION_ENV(w14583aaac34b1d241)
     goto label373;
     label378:;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 418)
-    java_lang_Thread* curThread_w14580aaac34b1d245 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w14580aaac34b1d245->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w14583aaac34b1d245 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w14583aaac34b1d245->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("ZipEntry.java", 419)
     _r1.o = __NEW_java_lang_InternalError();
     //java_io_UnsupportedEncodingException_getMessage__[7]

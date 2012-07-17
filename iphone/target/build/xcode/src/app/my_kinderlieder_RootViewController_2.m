@@ -229,7 +229,7 @@ void my_kinderlieder_RootViewController_2___INIT____my_kinderlieder_RootViewCont
     _r0.o = me;
     _r1.o = n1;
     _r2.o = n2;
-    XMLVM_SOURCE_POSITION("RootViewController.java", 33)
+    XMLVM_SOURCE_POSITION("RootViewController.java", 38)
     XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_RootViewController_2*) _r0.o)->fields.my_kinderlieder_RootViewController_2.this_0_ = _r1.o;
     XMLVM_CHECK_NPE(0)
@@ -250,12 +250,12 @@ void my_kinderlieder_RootViewController_2_clicked__(JAVA_OBJECT me)
     XMLVMElem _r2;
     XMLVMElem _r3;
     _r3.o = me;
-    XMLVM_SOURCE_POSITION("RootViewController.java", 36)
+    XMLVM_SOURCE_POSITION("RootViewController.java", 41)
     XMLVM_CHECK_NPE(3)
     _r0.o = ((my_kinderlieder_RootViewController_2*) _r3.o)->fields.my_kinderlieder_RootViewController_2.this_0_;
     _r0.o = my_kinderlieder_RootViewController_access$000___my_kinderlieder_RootViewController(_r0.o);
     if (_r0.o != JAVA_NULL) goto label20;
-    XMLVM_SOURCE_POSITION("RootViewController.java", 37)
+    XMLVM_SOURCE_POSITION("RootViewController.java", 42)
     XMLVM_CHECK_NPE(3)
     _r0.o = ((my_kinderlieder_RootViewController_2*) _r3.o)->fields.my_kinderlieder_RootViewController_2.this_0_;
     _r1.o = __NEW_my_kinderlieder_ShopViewController();
@@ -265,7 +265,7 @@ void my_kinderlieder_RootViewController_2_clicked__(JAVA_OBJECT me)
     my_kinderlieder_ShopViewController___INIT____org_xmlvm_iphone_UIWindow(_r1.o, _r2.o);
     my_kinderlieder_RootViewController_access$002___my_kinderlieder_RootViewController_org_xmlvm_iphone_UIViewController(_r0.o, _r1.o);
     label20:;
-    XMLVM_SOURCE_POSITION("RootViewController.java", 39)
+    XMLVM_SOURCE_POSITION("RootViewController.java", 44)
     XMLVM_CHECK_NPE(3)
     _r0.o = ((my_kinderlieder_RootViewController_2*) _r3.o)->fields.my_kinderlieder_RootViewController_2.this_0_;
     XMLVM_CHECK_NPE(0)
@@ -276,7 +276,7 @@ void my_kinderlieder_RootViewController_2_clicked__(JAVA_OBJECT me)
     _r2.i = 1;
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UINavigationController_pushViewController___org_xmlvm_iphone_UIViewController_boolean(_r0.o, _r1.o, _r2.i);
-    XMLVM_SOURCE_POSITION("RootViewController.java", 40)
+    XMLVM_SOURCE_POSITION("RootViewController.java", 45)
     XMLVM_EXIT_METHOD()
     return;
     //XMLVM_END_WRAPPER

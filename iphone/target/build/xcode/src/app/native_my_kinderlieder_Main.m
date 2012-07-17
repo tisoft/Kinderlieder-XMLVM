@@ -1029,7 +1029,4 @@ void my_kinderlieder_Main_registerCrashReporter__(JAVA_OBJECT me){
 
 void my_kinderlieder_Main_registerAudioSession__(JAVA_OBJECT me){
     [[AVAudioSession sharedInstance] setCategory:AVAudioSessionCategoryPlayback error:nil];
-
 }
-
-

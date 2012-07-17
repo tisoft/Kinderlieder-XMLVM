@@ -197,7 +197,7 @@ void my_kinderlieder_ShopViewController_5___CLINIT_()
     if (!__TIB_int.classInitialized) __INIT_int();
     _r0.o = XMLVMArray_createSingleDimension(__CLASS_int, _r0.i);
     my_kinderlieder_ShopViewController_5_PUT__SwitchMap_my_kinderlieder_Product_State( _r0.o);
-    XMLVM_TRY_BEGIN(w14128aaab1b1b6)
+    XMLVM_TRY_BEGIN(w14131aaab1b1b6)
     // Begin try
     _r0.o = my_kinderlieder_ShopViewController_5_GET__SwitchMap_my_kinderlieder_Product_State();
     _r1.o = my_kinderlieder_Product_State_GET_INSTALLED();
@@ -209,12 +209,12 @@ void my_kinderlieder_ShopViewController_5___CLINIT_()
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w14128aaab1b1b6)
-        XMLVM_CATCH_SPECIFIC(w14128aaab1b1b6,java_lang_NoSuchFieldError,86)
-    XMLVM_CATCH_END(w14128aaab1b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w14128aaab1b1b6)
+    XMLVM_CATCH_BEGIN(w14131aaab1b1b6)
+        XMLVM_CATCH_SPECIFIC(w14131aaab1b1b6,java_lang_NoSuchFieldError,86)
+    XMLVM_CATCH_END(w14131aaab1b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w14131aaab1b1b6)
     label20:;
-    XMLVM_TRY_BEGIN(w14128aaab1b1b8)
+    XMLVM_TRY_BEGIN(w14131aaab1b1b8)
     // Begin try
     _r0.o = my_kinderlieder_ShopViewController_5_GET__SwitchMap_my_kinderlieder_Product_State();
     _r1.o = my_kinderlieder_Product_State_GET_EXTRACT();
@@ -226,12 +226,12 @@ void my_kinderlieder_ShopViewController_5___CLINIT_()
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w14128aaab1b1b8)
-        XMLVM_CATCH_SPECIFIC(w14128aaab1b1b8,java_lang_NoSuchFieldError,84)
-    XMLVM_CATCH_END(w14128aaab1b1b8)
-    XMLVM_RESTORE_EXCEPTION_ENV(w14128aaab1b1b8)
+    XMLVM_CATCH_BEGIN(w14131aaab1b1b8)
+        XMLVM_CATCH_SPECIFIC(w14131aaab1b1b8,java_lang_NoSuchFieldError,84)
+    XMLVM_CATCH_END(w14131aaab1b1b8)
+    XMLVM_RESTORE_EXCEPTION_ENV(w14131aaab1b1b8)
     label31:;
-    XMLVM_TRY_BEGIN(w14128aaab1b1c10)
+    XMLVM_TRY_BEGIN(w14131aaab1b1c10)
     // Begin try
     _r0.o = my_kinderlieder_ShopViewController_5_GET__SwitchMap_my_kinderlieder_Product_State();
     _r1.o = my_kinderlieder_Product_State_GET_DOWNLOAD();
@@ -243,12 +243,12 @@ void my_kinderlieder_ShopViewController_5___CLINIT_()
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w14128aaab1b1c10)
-        XMLVM_CATCH_SPECIFIC(w14128aaab1b1c10,java_lang_NoSuchFieldError,82)
-    XMLVM_CATCH_END(w14128aaab1b1c10)
-    XMLVM_RESTORE_EXCEPTION_ENV(w14128aaab1b1c10)
+    XMLVM_CATCH_BEGIN(w14131aaab1b1c10)
+        XMLVM_CATCH_SPECIFIC(w14131aaab1b1c10,java_lang_NoSuchFieldError,82)
+    XMLVM_CATCH_END(w14131aaab1b1c10)
+    XMLVM_RESTORE_EXCEPTION_ENV(w14131aaab1b1c10)
     label42:;
-    XMLVM_TRY_BEGIN(w14128aaab1b1c12)
+    XMLVM_TRY_BEGIN(w14131aaab1b1c12)
     // Begin try
     _r0.o = my_kinderlieder_ShopViewController_5_GET__SwitchMap_my_kinderlieder_Product_State();
     _r1.o = my_kinderlieder_Product_State_GET_BUYING();
@@ -260,12 +260,12 @@ void my_kinderlieder_ShopViewController_5___CLINIT_()
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w14128aaab1b1c12)
-        XMLVM_CATCH_SPECIFIC(w14128aaab1b1c12,java_lang_NoSuchFieldError,80)
-    XMLVM_CATCH_END(w14128aaab1b1c12)
-    XMLVM_RESTORE_EXCEPTION_ENV(w14128aaab1b1c12)
+    XMLVM_CATCH_BEGIN(w14131aaab1b1c12)
+        XMLVM_CATCH_SPECIFIC(w14131aaab1b1c12,java_lang_NoSuchFieldError,80)
+    XMLVM_CATCH_END(w14131aaab1b1c12)
+    XMLVM_RESTORE_EXCEPTION_ENV(w14131aaab1b1c12)
     label53:;
-    XMLVM_TRY_BEGIN(w14128aaab1b1c14)
+    XMLVM_TRY_BEGIN(w14131aaab1b1c14)
     // Begin try
     _r0.o = my_kinderlieder_ShopViewController_5_GET__SwitchMap_my_kinderlieder_Product_State();
     _r1.o = my_kinderlieder_Product_State_GET_AVAILABLE();
@@ -277,12 +277,12 @@ void my_kinderlieder_ShopViewController_5___CLINIT_()
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w14128aaab1b1c14)
-        XMLVM_CATCH_SPECIFIC(w14128aaab1b1c14,java_lang_NoSuchFieldError,78)
-    XMLVM_CATCH_END(w14128aaab1b1c14)
-    XMLVM_RESTORE_EXCEPTION_ENV(w14128aaab1b1c14)
+    XMLVM_CATCH_BEGIN(w14131aaab1b1c14)
+        XMLVM_CATCH_SPECIFIC(w14131aaab1b1c14,java_lang_NoSuchFieldError,78)
+    XMLVM_CATCH_END(w14131aaab1b1c14)
+    XMLVM_RESTORE_EXCEPTION_ENV(w14131aaab1b1c14)
     label64:;
-    XMLVM_TRY_BEGIN(w14128aaab1b1c16)
+    XMLVM_TRY_BEGIN(w14131aaab1b1c16)
     // Begin try
     _r0.o = my_kinderlieder_ShopViewController_5_GET__SwitchMap_my_kinderlieder_Product_State();
     _r1.o = my_kinderlieder_Product_State_GET_INFO();
@@ -294,36 +294,36 @@ void my_kinderlieder_ShopViewController_5___CLINIT_()
     ((JAVA_ARRAY_INT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r1.i] = _r2.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w14128aaab1b1c16)
-        XMLVM_CATCH_SPECIFIC(w14128aaab1b1c16,java_lang_NoSuchFieldError,76)
-    XMLVM_CATCH_END(w14128aaab1b1c16)
-    XMLVM_RESTORE_EXCEPTION_ENV(w14128aaab1b1c16)
+    XMLVM_CATCH_BEGIN(w14131aaab1b1c16)
+        XMLVM_CATCH_SPECIFIC(w14131aaab1b1c16,java_lang_NoSuchFieldError,76)
+    XMLVM_CATCH_END(w14131aaab1b1c16)
+    XMLVM_RESTORE_EXCEPTION_ENV(w14131aaab1b1c16)
     label75:;
     XMLVM_EXIT_METHOD()
     return;
     label76:;
-    java_lang_Thread* curThread_w14128aaab1b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w14128aaab1b1c20->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w14131aaab1b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w14131aaab1b1c20->fields.java_lang_Thread.xmlvmException_;
     goto label75;
     label78:;
-    java_lang_Thread* curThread_w14128aaab1b1c23 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w14128aaab1b1c23->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w14131aaab1b1c23 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w14131aaab1b1c23->fields.java_lang_Thread.xmlvmException_;
     goto label64;
     label80:;
-    java_lang_Thread* curThread_w14128aaab1b1c26 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w14128aaab1b1c26->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w14131aaab1b1c26 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w14131aaab1b1c26->fields.java_lang_Thread.xmlvmException_;
     goto label53;
     label82:;
-    java_lang_Thread* curThread_w14128aaab1b1c29 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w14128aaab1b1c29->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w14131aaab1b1c29 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w14131aaab1b1c29->fields.java_lang_Thread.xmlvmException_;
     goto label42;
     label84:;
-    java_lang_Thread* curThread_w14128aaab1b1c32 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w14128aaab1b1c32->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w14131aaab1b1c32 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w14131aaab1b1c32->fields.java_lang_Thread.xmlvmException_;
     goto label31;
     label86:;
-    java_lang_Thread* curThread_w14128aaab1b1c35 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w14128aaab1b1c35->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w14131aaab1b1c35 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w14131aaab1b1c35->fields.java_lang_Thread.xmlvmException_;
     goto label20;
     //XMLVM_END_WRAPPER
 }

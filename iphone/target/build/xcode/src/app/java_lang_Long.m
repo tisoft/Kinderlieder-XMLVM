@@ -1288,20 +1288,20 @@ JAVA_OBJECT java_lang_Long_getLong___java_lang_String(JAVA_OBJECT n1)
     XMLVM_SOURCE_POSITION("Long.java", 208)
     goto label10;
     label19:;
-    XMLVM_TRY_BEGIN(w10211aaac15b1c22)
+    XMLVM_TRY_BEGIN(w10214aaac15b1c22)
     // Begin try
     XMLVM_SOURCE_POSITION("Long.java", 211)
     _r0.o = java_lang_Long_decode___java_lang_String(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w10211aaac15b1c22)
-        XMLVM_CATCH_SPECIFIC(w10211aaac15b1c22,java_lang_NumberFormatException,24)
-    XMLVM_CATCH_END(w10211aaac15b1c22)
-    XMLVM_RESTORE_EXCEPTION_ENV(w10211aaac15b1c22)
+    XMLVM_CATCH_BEGIN(w10214aaac15b1c22)
+        XMLVM_CATCH_SPECIFIC(w10214aaac15b1c22,java_lang_NumberFormatException,24)
+    XMLVM_CATCH_END(w10214aaac15b1c22)
+    XMLVM_RESTORE_EXCEPTION_ENV(w10214aaac15b1c22)
     goto label10;
     label24:;
-    java_lang_Thread* curThread_w10211aaac15b1c25 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w10211aaac15b1c25->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w10214aaac15b1c25 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w10214aaac15b1c25->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r1;
     goto label10;
     //XMLVM_END_WRAPPER
@@ -1340,20 +1340,20 @@ JAVA_OBJECT java_lang_Long_getLong___java_lang_String_long(JAVA_OBJECT n1, JAVA_
     _r0.o = java_lang_Long_valueOf___long(_r2.l);
     goto label12;
     label24:;
-    XMLVM_TRY_BEGIN(w10211aaac16b1c22)
+    XMLVM_TRY_BEGIN(w10214aaac16b1c22)
     // Begin try
     XMLVM_SOURCE_POSITION("Long.java", 240)
     _r0.o = java_lang_Long_decode___java_lang_String(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w10211aaac16b1c22)
-        XMLVM_CATCH_SPECIFIC(w10211aaac16b1c22,java_lang_NumberFormatException,29)
-    XMLVM_CATCH_END(w10211aaac16b1c22)
-    XMLVM_RESTORE_EXCEPTION_ENV(w10211aaac16b1c22)
+    XMLVM_CATCH_BEGIN(w10214aaac16b1c22)
+        XMLVM_CATCH_SPECIFIC(w10214aaac16b1c22,java_lang_NumberFormatException,29)
+    XMLVM_CATCH_END(w10214aaac16b1c22)
+    XMLVM_RESTORE_EXCEPTION_ENV(w10214aaac16b1c22)
     goto label12;
     label29:;
-    java_lang_Thread* curThread_w10211aaac16b1c25 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w10211aaac16b1c25->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w10214aaac16b1c25 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w10214aaac16b1c25->fields.java_lang_Thread.xmlvmException_;
     _r0.o = java_lang_Long_valueOf___long(_r2.l);
     goto label12;
     //XMLVM_END_WRAPPER
@@ -1391,20 +1391,20 @@ JAVA_OBJECT java_lang_Long_getLong___java_lang_String_java_lang_Long(JAVA_OBJECT
     XMLVM_SOURCE_POSITION("Long.java", 266)
     goto label9;
     label18:;
-    XMLVM_TRY_BEGIN(w10211aaac17b1c22)
+    XMLVM_TRY_BEGIN(w10214aaac17b1c22)
     // Begin try
     XMLVM_SOURCE_POSITION("Long.java", 269)
     _r0.o = java_lang_Long_decode___java_lang_String(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w10211aaac17b1c22)
-        XMLVM_CATCH_SPECIFIC(w10211aaac17b1c22,java_lang_NumberFormatException,23)
-    XMLVM_CATCH_END(w10211aaac17b1c22)
-    XMLVM_RESTORE_EXCEPTION_ENV(w10211aaac17b1c22)
+    XMLVM_CATCH_BEGIN(w10214aaac17b1c22)
+        XMLVM_CATCH_SPECIFIC(w10214aaac17b1c22,java_lang_NumberFormatException,23)
+    XMLVM_CATCH_END(w10214aaac17b1c22)
+    XMLVM_RESTORE_EXCEPTION_ENV(w10214aaac17b1c22)
     goto label9;
     label23:;
-    java_lang_Thread* curThread_w10211aaac17b1c25 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w10211aaac17b1c25->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w10214aaac17b1c25 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w10214aaac17b1c25->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r2;
     goto label9;
     //XMLVM_END_WRAPPER

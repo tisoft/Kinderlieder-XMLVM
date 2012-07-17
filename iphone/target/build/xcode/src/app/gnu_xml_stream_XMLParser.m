@@ -6217,14 +6217,14 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     _r9.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((gnu_xml_stream_XMLParser*) _r12.o)->tib->vtable[50])(_r12.o);
     goto label76;
     label124:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1c81)
+    XMLVM_TRY_BEGIN(w21267aaad122b1c81)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLParser.java", 1056)
     XMLVM_CHECK_NPE(12)
     _r9.o = ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.input_;
     XMLVM_CHECK_NPE(9)
     _r9.i = ((gnu_xml_stream_XMLParser_Input*) _r9.o)->fields.gnu_xml_stream_XMLParser_Input.initialized_;
-    if (_r9.i != 0) { XMLVM_MEMCPY(curThread_w21264aaad122b1c81->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1c81, sizeof(XMLVM_JMP_BUF)); goto label135; };
+    if (_r9.i != 0) { XMLVM_MEMCPY(curThread_w21267aaad122b1c81->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1c81, sizeof(XMLVM_JMP_BUF)); goto label135; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1057)
     XMLVM_CHECK_NPE(12)
     _r9.o = ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.input_;
@@ -6232,22 +6232,22 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     gnu_xml_stream_XMLParser_Input_init__(_r9.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1c81)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1c81,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1c81)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1c81)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1c81)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1c81,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1c81)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1c81)
     label135:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1c83)
+    XMLVM_TRY_BEGIN(w21267aaad122b1c83)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLParser.java", 1058)
     XMLVM_CHECK_NPE(12)
     _r9.i = ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.state_;
     switch (_r9.i) {
-    case 0: { XMLVM_MEMCPY(curThread_w21264aaad122b1c83->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1c83, sizeof(XMLVM_JMP_BUF)); goto label436; };
-    case 1: { XMLVM_MEMCPY(curThread_w21264aaad122b1c83->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1c83, sizeof(XMLVM_JMP_BUF)); goto label460; };
-    case 2: { XMLVM_MEMCPY(curThread_w21264aaad122b1c83->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1c83, sizeof(XMLVM_JMP_BUF)); goto label146; };
-    case 3: { XMLVM_MEMCPY(curThread_w21264aaad122b1c83->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1c83, sizeof(XMLVM_JMP_BUF)); goto label388; };
-    case 4: { XMLVM_MEMCPY(curThread_w21264aaad122b1c83->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1c83, sizeof(XMLVM_JMP_BUF)); goto label569; };
+    case 0: { XMLVM_MEMCPY(curThread_w21267aaad122b1c83->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1c83, sizeof(XMLVM_JMP_BUF)); goto label436; };
+    case 1: { XMLVM_MEMCPY(curThread_w21267aaad122b1c83->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1c83, sizeof(XMLVM_JMP_BUF)); goto label460; };
+    case 2: { XMLVM_MEMCPY(curThread_w21267aaad122b1c83->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1c83, sizeof(XMLVM_JMP_BUF)); goto label146; };
+    case 3: { XMLVM_MEMCPY(curThread_w21267aaad122b1c83->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1c83, sizeof(XMLVM_JMP_BUF)); goto label388; };
+    case 4: { XMLVM_MEMCPY(curThread_w21267aaad122b1c83->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1c83, sizeof(XMLVM_JMP_BUF)); goto label569; };
     }
     XMLVM_SOURCE_POSITION("XMLParser.java", 1209)
     _r9.i = -1;
@@ -6255,31 +6255,31 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.event_ = _r9.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1c83)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1c83,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1c83)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1c83)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1c83)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1c83,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1c83)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1c83)
     label143:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1c85)
+    XMLVM_TRY_BEGIN(w21267aaad122b1c85)
     // Begin try
     XMLVM_CHECK_NPE(12)
     _r9.i = ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.event_;
-    { XMLVM_MEMCPY(curThread_w21264aaad122b1c85->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1c85, sizeof(XMLVM_JMP_BUF)); goto label76; };
+    { XMLVM_MEMCPY(curThread_w21267aaad122b1c85->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1c85, sizeof(XMLVM_JMP_BUF)); goto label76; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1061)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1c85)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1c85,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1c85)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1c85)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1c85)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1c85,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1c85)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1c85)
     label146:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1c87)
+    XMLVM_TRY_BEGIN(w21267aaad122b1c87)
     // Begin try
     // "</"
     _r9.o = xmlvm_create_java_string_from_pool(1532);
     XMLVM_CHECK_NPE(12)
     _r9.i = gnu_xml_stream_XMLParser_tryRead___java_lang_String(_r12.o, _r9.o);
-    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad122b1c87->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1c87, sizeof(XMLVM_JMP_BUF)); goto label183; };
+    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad122b1c87->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1c87, sizeof(XMLVM_JMP_BUF)); goto label183; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1063)
     XMLVM_CHECK_NPE(12)
     gnu_xml_stream_XMLParser_readEndElement__(_r12.o);
@@ -6289,19 +6289,19 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     //java_util_LinkedList_isEmpty__[11]
     XMLVM_CHECK_NPE(9)
     _r9.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) ((java_util_LinkedList*) _r9.o)->tib->vtable[11])(_r9.o);
-    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad122b1c87->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1c87, sizeof(XMLVM_JMP_BUF)); goto label168; };
+    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad122b1c87->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1c87, sizeof(XMLVM_JMP_BUF)); goto label168; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1065)
     _r9.i = 4;
     XMLVM_CHECK_NPE(12)
     ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.state_ = _r9.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1c87)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1c87,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1c87)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1c87)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1c87)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1c87,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1c87)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1c87)
     label168:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1c89)
+    XMLVM_TRY_BEGIN(w21267aaad122b1c89)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLParser.java", 1066)
     _r9.i = 2;
@@ -6309,15 +6309,15 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.event_ = _r9.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1c89)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1c89,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1c89)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1c89)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1c89)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1c89,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1c89)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1c89)
     goto label143;
     label172:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 1213)
-    java_lang_Thread* curThread_w21264aaad122b1c93 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r9.o = curThread_w21264aaad122b1c93->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w21267aaad122b1c93 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r9.o = curThread_w21267aaad122b1c93->fields.java_lang_Thread.xmlvmException_;
     _r1 = _r9;
     XMLVM_SOURCE_POSITION("XMLParser.java", 1215)
     _r2.o = __NEW_javax_xml_stream_XMLStreamException();
@@ -6329,14 +6329,14 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("XMLParser.java", 1217)
     XMLVM_THROW_CUSTOM(_r2.o)
     label183:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d103)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d103)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLParser.java", 1068)
     // "<!--"
     _r9.o = xmlvm_create_java_string_from_pool(1533);
     XMLVM_CHECK_NPE(12)
     _r9.i = gnu_xml_stream_XMLParser_tryRead___java_lang_String(_r12.o, _r9.o);
-    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad122b1d103->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d103, sizeof(XMLVM_JMP_BUF)); goto label199; };
+    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad122b1d103->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d103, sizeof(XMLVM_JMP_BUF)); goto label199; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1070)
     _r9.i = 0;
     XMLVM_CHECK_NPE(12)
@@ -6345,22 +6345,22 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     _r9.i = 5;
     XMLVM_CHECK_NPE(12)
     ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.event_ = _r9.i;
-    { XMLVM_MEMCPY(curThread_w21264aaad122b1d103->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d103, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    { XMLVM_MEMCPY(curThread_w21267aaad122b1d103->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d103, sizeof(XMLVM_JMP_BUF)); goto label143; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1073)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d103)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d103,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d103)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d103)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d103)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d103,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d103)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d103)
     label199:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d105)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d105)
     // Begin try
     // "<?"
     _r9.o = xmlvm_create_java_string_from_pool(1534);
     XMLVM_CHECK_NPE(12)
     _r9.i = gnu_xml_stream_XMLParser_tryRead___java_lang_String(_r12.o, _r9.o);
-    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad122b1d105->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d105, sizeof(XMLVM_JMP_BUF)); goto label215; };
+    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad122b1d105->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d105, sizeof(XMLVM_JMP_BUF)); goto label215; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1075)
     _r9.i = 0;
     XMLVM_CHECK_NPE(12)
@@ -6369,22 +6369,22 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     _r9.i = 3;
     XMLVM_CHECK_NPE(12)
     ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.event_ = _r9.i;
-    { XMLVM_MEMCPY(curThread_w21264aaad122b1d105->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d105, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    { XMLVM_MEMCPY(curThread_w21267aaad122b1d105->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d105, sizeof(XMLVM_JMP_BUF)); goto label143; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1078)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d105)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d105,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d105)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d105)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d105)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d105,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d105)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d105)
     label215:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d107)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d107)
     // Begin try
     // "<![CDATA["
     _r9.o = xmlvm_create_java_string_from_pool(1535);
     XMLVM_CHECK_NPE(12)
     _r9.i = gnu_xml_stream_XMLParser_tryRead___java_lang_String(_r12.o, _r9.o);
-    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad122b1d107->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d107, sizeof(XMLVM_JMP_BUF)); goto label231; };
+    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad122b1d107->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d107, sizeof(XMLVM_JMP_BUF)); goto label231; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1080)
     XMLVM_CHECK_NPE(12)
     gnu_xml_stream_XMLParser_readCDSect__(_r12.o);
@@ -6392,22 +6392,22 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     _r9.i = 12;
     XMLVM_CHECK_NPE(12)
     ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.event_ = _r9.i;
-    { XMLVM_MEMCPY(curThread_w21264aaad122b1d107->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d107, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    { XMLVM_MEMCPY(curThread_w21267aaad122b1d107->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d107, sizeof(XMLVM_JMP_BUF)); goto label143; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1083)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d107)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d107,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d107)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d107)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d107)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d107,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d107)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d107)
     label231:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d109)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d109)
     // Begin try
     // "<"
     _r9.o = xmlvm_create_java_string_from_pool(108);
     XMLVM_CHECK_NPE(12)
     _r9.i = gnu_xml_stream_XMLParser_tryRead___java_lang_String(_r12.o, _r9.o);
-    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad122b1d109->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d109, sizeof(XMLVM_JMP_BUF)); goto label249; };
+    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad122b1d109->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d109, sizeof(XMLVM_JMP_BUF)); goto label249; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1085)
     XMLVM_CHECK_NPE(12)
     _r9.i = gnu_xml_stream_XMLParser_readStartElement__(_r12.o);
@@ -6417,16 +6417,16 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     _r9.i = 1;
     XMLVM_CHECK_NPE(12)
     ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.event_ = _r9.i;
-    { XMLVM_MEMCPY(curThread_w21264aaad122b1d109->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d109, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    { XMLVM_MEMCPY(curThread_w21267aaad122b1d109->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d109, sizeof(XMLVM_JMP_BUF)); goto label143; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1091)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d109)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d109,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d109)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d109)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d109)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d109,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d109)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d109)
     label249:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d111)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d111)
     // Begin try
     _r9.i = 8;
     XMLVM_CHECK_NPE(12)
@@ -6435,13 +6435,13 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(12)
     _r0.i = gnu_xml_stream_XMLParser_readCh__(_r12.o);
     _r9.i = 38;
-    if (_r0.i != _r9.i) { XMLVM_MEMCPY(curThread_w21264aaad122b1d111->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d111, sizeof(XMLVM_JMP_BUF)); goto label359; };
+    if (_r0.i != _r9.i) { XMLVM_MEMCPY(curThread_w21267aaad122b1d111->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d111, sizeof(XMLVM_JMP_BUF)); goto label359; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1093)
     XMLVM_SOURCE_POSITION("XMLParser.java", 1095)
     XMLVM_CHECK_NPE(12)
     _r0.i = gnu_xml_stream_XMLParser_readCh__(_r12.o);
     _r9.i = 35;
-    if (_r0.i != _r9.i) { XMLVM_MEMCPY(curThread_w21264aaad122b1d111->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d111, sizeof(XMLVM_JMP_BUF)); goto label282; };
+    if (_r0.i != _r9.i) { XMLVM_MEMCPY(curThread_w21267aaad122b1d111->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d111, sizeof(XMLVM_JMP_BUF)); goto label282; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1096)
     XMLVM_SOURCE_POSITION("XMLParser.java", 1098)
     XMLVM_CHECK_NPE(12)
@@ -6452,16 +6452,16 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     _r9.i = gnu_xml_stream_XMLParser_readCharData___java_lang_String(_r12.o, _r9.o);
     XMLVM_CHECK_NPE(12)
     ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.event_ = _r9.i;
-    { XMLVM_MEMCPY(curThread_w21264aaad122b1d111->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d111, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    { XMLVM_MEMCPY(curThread_w21267aaad122b1d111->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d111, sizeof(XMLVM_JMP_BUF)); goto label143; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1104)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d111)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d111,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d111)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d111)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d111)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d111,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d111)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d111)
     label282:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d113)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d113)
     // Begin try
     XMLVM_CHECK_NPE(12)
     gnu_xml_stream_XMLParser_reset__(_r12.o);
@@ -6483,36 +6483,36 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(9)
     _r8.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT)) ((java_util_LinkedHashMap*) _r9.o)->tib->vtable[10])(_r9.o, _r7.o);
     _r8.o = _r8.o;
-    if (_r8.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w21264aaad122b1d113->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d113, sizeof(XMLVM_JMP_BUF)); goto label315; };
+    if (_r8.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w21267aaad122b1d113->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d113, sizeof(XMLVM_JMP_BUF)); goto label315; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1109)
     XMLVM_SOURCE_POSITION("XMLParser.java", 1111)
     XMLVM_CHECK_NPE(12)
     _r9.i = gnu_xml_stream_XMLParser_readCharData___java_lang_String(_r12.o, _r8.o);
     XMLVM_CHECK_NPE(12)
     ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.event_ = _r9.i;
-    { XMLVM_MEMCPY(curThread_w21264aaad122b1d113->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d113, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    { XMLVM_MEMCPY(curThread_w21267aaad122b1d113->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d113, sizeof(XMLVM_JMP_BUF)); goto label143; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1113)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d113)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d113,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d113)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d113)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d113)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d113,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d113)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d113)
     label315:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d115)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d115)
     // Begin try
     XMLVM_CHECK_NPE(12)
     _r9.i = ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.replaceERefs_;
-    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad122b1d115->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d115, sizeof(XMLVM_JMP_BUF)); goto label353; };
+    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad122b1d115->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d115, sizeof(XMLVM_JMP_BUF)); goto label353; };
     XMLVM_CHECK_NPE(12)
     _r9.i = gnu_xml_stream_XMLParser_isUnparsedEntity___java_lang_String(_r12.o, _r7.o);
-    if (_r9.i != 0) { XMLVM_MEMCPY(curThread_w21264aaad122b1d115->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d115, sizeof(XMLVM_JMP_BUF)); goto label353; };
+    if (_r9.i != 0) { XMLVM_MEMCPY(curThread_w21267aaad122b1d115->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d115, sizeof(XMLVM_JMP_BUF)); goto label353; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1116)
     _r6.i = 0;
     XMLVM_SOURCE_POSITION("XMLParser.java", 1117)
     XMLVM_CHECK_NPE(12)
     _r9.o = ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.doctype_;
-    if (_r9.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w21264aaad122b1d115->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d115, sizeof(XMLVM_JMP_BUF)); goto label341; };
+    if (_r9.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w21267aaad122b1d115->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d115, sizeof(XMLVM_JMP_BUF)); goto label341; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1119)
     XMLVM_CHECK_NPE(12)
     _r9.o = ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.doctype_;
@@ -6521,17 +6521,17 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("XMLParser.java", 1120)
     if (!__TIB_gnu_xml_stream_XMLParser_ExternalIds.classInitialized) __INIT_gnu_xml_stream_XMLParser_ExternalIds();
     _r9.i = XMLVM_ISA(_r4.o, __CLASS_gnu_xml_stream_XMLParser_ExternalIds);
-    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad122b1d115->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d115, sizeof(XMLVM_JMP_BUF)); goto label341; };
+    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad122b1d115->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d115, sizeof(XMLVM_JMP_BUF)); goto label341; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1121)
     _r6.i = 1;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d115)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d115,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d115)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d115)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d115)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d115,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d115)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d115)
     label341:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d117)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d117)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLParser.java", 1123)
     _r9.i = 0;
@@ -6543,30 +6543,30 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     _r9.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((gnu_xml_stream_XMLParser*) _r12.o)->tib->vtable[50])(_r12.o);
     XMLVM_CHECK_NPE(12)
     ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.event_ = _r9.i;
-    { XMLVM_MEMCPY(curThread_w21264aaad122b1d117->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d117, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    { XMLVM_MEMCPY(curThread_w21267aaad122b1d117->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d117, sizeof(XMLVM_JMP_BUF)); goto label143; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1128)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d117)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d117,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d117)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d117)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d117)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d117,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d117)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d117)
     label353:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d119)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d119)
     // Begin try
     _r9.i = 9;
     XMLVM_CHECK_NPE(12)
     ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.event_ = _r9.i;
-    { XMLVM_MEMCPY(curThread_w21264aaad122b1d119->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d119, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    { XMLVM_MEMCPY(curThread_w21267aaad122b1d119->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d119, sizeof(XMLVM_JMP_BUF)); goto label143; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1134)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d119)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d119,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d119)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d119)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d119)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d119,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d119)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d119)
     label359:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d121)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d121)
     // Begin try
     XMLVM_CHECK_NPE(12)
     gnu_xml_stream_XMLParser_reset__(_r12.o);
@@ -6579,10 +6579,10 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("XMLParser.java", 1136)
     XMLVM_CHECK_NPE(12)
     _r9.i = ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.validating_;
-    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad122b1d121->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d121, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad122b1d121->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d121, sizeof(XMLVM_JMP_BUF)); goto label143; };
     XMLVM_CHECK_NPE(12)
     _r9.o = ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.doctype_;
-    if (_r9.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w21264aaad122b1d121->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d121, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    if (_r9.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w21267aaad122b1d121->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d121, sizeof(XMLVM_JMP_BUF)); goto label143; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1137)
     XMLVM_CHECK_NPE(12)
     _r9.o = ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.buf_;
@@ -6591,16 +6591,16 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     _r9.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuffer*) _r9.o)->tib->vtable[5])(_r9.o);
     XMLVM_CHECK_NPE(12)
     gnu_xml_stream_XMLParser_validatePCData___java_lang_String(_r12.o, _r9.o);
-    { XMLVM_MEMCPY(curThread_w21264aaad122b1d121->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d121, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    { XMLVM_MEMCPY(curThread_w21267aaad122b1d121->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d121, sizeof(XMLVM_JMP_BUF)); goto label143; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1142)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d121)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d121,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d121)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d121)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d121)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d121,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d121)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d121)
     label388:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d123)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d123)
     // Begin try
     XMLVM_CHECK_NPE(12)
     _r9.o = ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.stack_;
@@ -6626,16 +6626,16 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     //java_util_LinkedList_isEmpty__[11]
     XMLVM_CHECK_NPE(9)
     _r9.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) ((java_util_LinkedList*) _r9.o)->tib->vtable[11])(_r9.o);
-    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad122b1d123->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d123, sizeof(XMLVM_JMP_BUF)); goto label434; };
+    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad122b1d123->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d123, sizeof(XMLVM_JMP_BUF)); goto label434; };
     _r9.i = 4;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d123)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d123,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d123)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d123)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d123)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d123,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d123)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d123)
     label416:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d125)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d125)
     // Begin try
     XMLVM_CHECK_NPE(12)
     ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.state_ = _r9.i;
@@ -6646,51 +6646,51 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("XMLParser.java", 1147)
     XMLVM_CHECK_NPE(12)
     _r9.i = ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.validating_;
-    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad122b1d125->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d125, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad122b1d125->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d125, sizeof(XMLVM_JMP_BUF)); goto label143; };
     XMLVM_CHECK_NPE(12)
     _r9.o = ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.doctype_;
-    if (_r9.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w21264aaad122b1d125->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d125, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    if (_r9.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w21267aaad122b1d125->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d125, sizeof(XMLVM_JMP_BUF)); goto label143; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1148)
     XMLVM_CHECK_NPE(12)
     gnu_xml_stream_XMLParser_endElementValidationHook__(_r12.o);
-    { XMLVM_MEMCPY(curThread_w21264aaad122b1d125->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d125, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    { XMLVM_MEMCPY(curThread_w21267aaad122b1d125->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d125, sizeof(XMLVM_JMP_BUF)); goto label143; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d125)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d125,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d125)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d125)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d125)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d125,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d125)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d125)
     label434:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d127)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d127)
     // Begin try
     _r9 = _r11;
-    { XMLVM_MEMCPY(curThread_w21264aaad122b1d127->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d127, sizeof(XMLVM_JMP_BUF)); goto label416; };
+    { XMLVM_MEMCPY(curThread_w21267aaad122b1d127->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d127, sizeof(XMLVM_JMP_BUF)); goto label416; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1151)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d127)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d127,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d127)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d127)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d127)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d127,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d127)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d127)
     label436:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d129)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d129)
     // Begin try
     // "<?xml"
     _r9.o = xmlvm_create_java_string_from_pool(1536);
     XMLVM_CHECK_NPE(12)
     _r9.i = gnu_xml_stream_XMLParser_tryRead___java_lang_String(_r12.o, _r9.o);
-    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad122b1d129->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d129, sizeof(XMLVM_JMP_BUF)); goto label447; };
+    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad122b1d129->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d129, sizeof(XMLVM_JMP_BUF)); goto label447; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1152)
     XMLVM_CHECK_NPE(12)
     gnu_xml_stream_XMLParser_readXMLDecl__(_r12.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d129)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d129,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d129)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d129)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d129)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d129,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d129)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d129)
     label447:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d131)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d131)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLParser.java", 1153)
     XMLVM_CHECK_NPE(12)
@@ -6705,28 +6705,28 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     _r9.i = 1;
     XMLVM_CHECK_NPE(12)
     ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.state_ = _r9.i;
-    { XMLVM_MEMCPY(curThread_w21264aaad122b1d131->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d131, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    { XMLVM_MEMCPY(curThread_w21267aaad122b1d131->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d131, sizeof(XMLVM_JMP_BUF)); goto label143; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1158)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d131)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d131,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d131)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d131)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d131)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d131,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d131)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d131)
     label460:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d133)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d133)
     // Begin try
     XMLVM_CHECK_NPE(12)
     gnu_xml_stream_XMLParser_skipWhitespace__(_r12.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 1159)
     XMLVM_CHECK_NPE(12)
     _r9.o = ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.doctype_;
-    if (_r9.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w21264aaad122b1d133->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d133, sizeof(XMLVM_JMP_BUF)); goto label484; };
+    if (_r9.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w21267aaad122b1d133->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d133, sizeof(XMLVM_JMP_BUF)); goto label484; };
     // "<!DOCTYPE"
     _r9.o = xmlvm_create_java_string_from_pool(1537);
     XMLVM_CHECK_NPE(12)
     _r9.i = gnu_xml_stream_XMLParser_tryRead___java_lang_String(_r12.o, _r9.o);
-    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad122b1d133->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d133, sizeof(XMLVM_JMP_BUF)); goto label484; };
+    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad122b1d133->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d133, sizeof(XMLVM_JMP_BUF)); goto label484; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1161)
     XMLVM_CHECK_NPE(12)
     gnu_xml_stream_XMLParser_readDoctypeDecl__(_r12.o);
@@ -6734,22 +6734,22 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     _r9.i = 11;
     XMLVM_CHECK_NPE(12)
     ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.event_ = _r9.i;
-    { XMLVM_MEMCPY(curThread_w21264aaad122b1d133->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d133, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    { XMLVM_MEMCPY(curThread_w21267aaad122b1d133->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d133, sizeof(XMLVM_JMP_BUF)); goto label143; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1164)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d133)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d133,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d133)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d133)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d133)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d133,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d133)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d133)
     label484:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d135)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d135)
     // Begin try
     // "<!--"
     _r9.o = xmlvm_create_java_string_from_pool(1533);
     XMLVM_CHECK_NPE(12)
     _r9.i = gnu_xml_stream_XMLParser_tryRead___java_lang_String(_r12.o, _r9.o);
-    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad122b1d135->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d135, sizeof(XMLVM_JMP_BUF)); goto label501; };
+    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad122b1d135->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d135, sizeof(XMLVM_JMP_BUF)); goto label501; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1166)
     _r9.i = 0;
     XMLVM_CHECK_NPE(12)
@@ -6758,22 +6758,22 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     _r9.i = 5;
     XMLVM_CHECK_NPE(12)
     ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.event_ = _r9.i;
-    { XMLVM_MEMCPY(curThread_w21264aaad122b1d135->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d135, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    { XMLVM_MEMCPY(curThread_w21267aaad122b1d135->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d135, sizeof(XMLVM_JMP_BUF)); goto label143; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1169)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d135)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d135,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d135)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d135)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d135)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d135,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d135)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d135)
     label501:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d137)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d137)
     // Begin try
     // "<?"
     _r9.o = xmlvm_create_java_string_from_pool(1534);
     XMLVM_CHECK_NPE(12)
     _r9.i = gnu_xml_stream_XMLParser_tryRead___java_lang_String(_r12.o, _r9.o);
-    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad122b1d137->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d137, sizeof(XMLVM_JMP_BUF)); goto label518; };
+    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad122b1d137->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d137, sizeof(XMLVM_JMP_BUF)); goto label518; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1171)
     _r9.i = 0;
     XMLVM_CHECK_NPE(12)
@@ -6782,22 +6782,22 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     _r9.i = 3;
     XMLVM_CHECK_NPE(12)
     ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.event_ = _r9.i;
-    { XMLVM_MEMCPY(curThread_w21264aaad122b1d137->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d137, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    { XMLVM_MEMCPY(curThread_w21267aaad122b1d137->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d137, sizeof(XMLVM_JMP_BUF)); goto label143; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1174)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d137)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d137,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d137)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d137)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d137)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d137,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d137)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d137)
     label518:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d139)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d139)
     // Begin try
     // "<"
     _r9.o = xmlvm_create_java_string_from_pool(108);
     XMLVM_CHECK_NPE(12)
     _r9.i = gnu_xml_stream_XMLParser_tryRead___java_lang_String(_r12.o, _r9.o);
-    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad122b1d139->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d139, sizeof(XMLVM_JMP_BUF)); goto label537; };
+    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad122b1d139->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d139, sizeof(XMLVM_JMP_BUF)); goto label537; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1176)
     XMLVM_CHECK_NPE(12)
     _r9.i = gnu_xml_stream_XMLParser_readStartElement__(_r12.o);
@@ -6807,16 +6807,16 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     _r9.i = 1;
     XMLVM_CHECK_NPE(12)
     ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.event_ = _r9.i;
-    { XMLVM_MEMCPY(curThread_w21264aaad122b1d139->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d139, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    { XMLVM_MEMCPY(curThread_w21267aaad122b1d139->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d139, sizeof(XMLVM_JMP_BUF)); goto label143; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1181)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d139)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d139,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d139)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d139)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d139)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d139,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d139)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d139)
     label537:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d141)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d141)
     // Begin try
     XMLVM_CHECK_NPE(12)
     _r0.i = gnu_xml_stream_XMLParser_readCh__(_r12.o);
@@ -6836,16 +6836,16 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     _r9.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) ((java_lang_StringBuilder*) _r9.o)->tib->vtable[5])(_r9.o);
     XMLVM_CHECK_NPE(12)
     gnu_xml_stream_XMLParser_error___java_lang_String(_r12.o, _r9.o);
-    { XMLVM_MEMCPY(curThread_w21264aaad122b1d141->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d141, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    { XMLVM_MEMCPY(curThread_w21267aaad122b1d141->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d141, sizeof(XMLVM_JMP_BUF)); goto label143; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1186)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d141)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d141,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d141)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d141)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d141)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d141,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d141)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d141)
     label569:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d143)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d143)
     // Begin try
     XMLVM_CHECK_NPE(12)
     gnu_xml_stream_XMLParser_skipWhitespace__(_r12.o);
@@ -6854,7 +6854,7 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     _r9.o = xmlvm_create_java_string_from_pool(1533);
     XMLVM_CHECK_NPE(12)
     _r9.i = gnu_xml_stream_XMLParser_tryRead___java_lang_String(_r12.o, _r9.o);
-    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad122b1d143->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d143, sizeof(XMLVM_JMP_BUF)); goto label589; };
+    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad122b1d143->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d143, sizeof(XMLVM_JMP_BUF)); goto label589; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1189)
     _r9.i = 0;
     XMLVM_CHECK_NPE(12)
@@ -6863,22 +6863,22 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     _r9.i = 5;
     XMLVM_CHECK_NPE(12)
     ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.event_ = _r9.i;
-    { XMLVM_MEMCPY(curThread_w21264aaad122b1d143->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d143, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    { XMLVM_MEMCPY(curThread_w21267aaad122b1d143->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d143, sizeof(XMLVM_JMP_BUF)); goto label143; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1192)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d143)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d143,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d143)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d143)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d143)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d143,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d143)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d143)
     label589:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d145)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d145)
     // Begin try
     // "<?"
     _r9.o = xmlvm_create_java_string_from_pool(1534);
     XMLVM_CHECK_NPE(12)
     _r9.i = gnu_xml_stream_XMLParser_tryRead___java_lang_String(_r12.o, _r9.o);
-    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad122b1d145->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d145, sizeof(XMLVM_JMP_BUF)); goto label606; };
+    if (_r9.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad122b1d145->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d145, sizeof(XMLVM_JMP_BUF)); goto label606; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1194)
     _r9.i = 0;
     XMLVM_CHECK_NPE(12)
@@ -6887,21 +6887,21 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     _r9.i = 3;
     XMLVM_CHECK_NPE(12)
     ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.event_ = _r9.i;
-    { XMLVM_MEMCPY(curThread_w21264aaad122b1d145->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d145, sizeof(XMLVM_JMP_BUF)); goto label143; };
+    { XMLVM_MEMCPY(curThread_w21267aaad122b1d145->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d145, sizeof(XMLVM_JMP_BUF)); goto label143; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1199)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d145)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d145,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d145)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d145)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d145)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d145,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d145)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d145)
     label606:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d147)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d147)
     // Begin try
     XMLVM_CHECK_NPE(12)
     _r9.i = ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.event_;
     _r10.i = 8;
-    if (_r9.i != _r10.i) { XMLVM_MEMCPY(curThread_w21264aaad122b1d147->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d147, sizeof(XMLVM_JMP_BUF)); goto label618; };
+    if (_r9.i != _r10.i) { XMLVM_MEMCPY(curThread_w21267aaad122b1d147->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d147, sizeof(XMLVM_JMP_BUF)); goto label618; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1200)
     _r9.o = __NEW_java_util_NoSuchElementException();
     XMLVM_CHECK_NPE(9)
@@ -6909,18 +6909,18 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r9.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d147)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d147,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d147)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d147)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d147)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d147,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d147)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d147)
     label618:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d149)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d149)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLParser.java", 1201)
     XMLVM_CHECK_NPE(12)
     _r0.i = gnu_xml_stream_XMLParser_readCh__(_r12.o);
     _r9.i = -1;
-    if (_r0.i == _r9.i) { XMLVM_MEMCPY(curThread_w21264aaad122b1d149->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad122b1d149, sizeof(XMLVM_JMP_BUF)); goto label630; };
+    if (_r0.i == _r9.i) { XMLVM_MEMCPY(curThread_w21267aaad122b1d149->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad122b1d149, sizeof(XMLVM_JMP_BUF)); goto label630; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1202)
     XMLVM_SOURCE_POSITION("XMLParser.java", 1203)
     // "Only comments and PIs may appear after the root element"
@@ -6929,12 +6929,12 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     gnu_xml_stream_XMLParser_error___java_lang_String(_r12.o, _r9.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d149)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d149,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d149)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d149)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d149)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d149,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d149)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d149)
     label630:;
-    XMLVM_TRY_BEGIN(w21264aaad122b1d151)
+    XMLVM_TRY_BEGIN(w21267aaad122b1d151)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLParser.java", 1205)
     _r9.i = 8;
@@ -6942,10 +6942,10 @@ JAVA_INT gnu_xml_stream_XMLParser_next__(JAVA_OBJECT me)
     ((gnu_xml_stream_XMLParser*) _r12.o)->fields.gnu_xml_stream_XMLParser.event_ = _r9.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad122b1d151)
-        XMLVM_CATCH_SPECIFIC(w21264aaad122b1d151,java_io_IOException,172)
-    XMLVM_CATCH_END(w21264aaad122b1d151)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad122b1d151)
+    XMLVM_CATCH_BEGIN(w21267aaad122b1d151)
+        XMLVM_CATCH_SPECIFIC(w21267aaad122b1d151,java_io_IOException,172)
+    XMLVM_CATCH_END(w21267aaad122b1d151)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad122b1d151)
     goto label143;
     label636:;
     //XMLVM_END_WRAPPER
@@ -7398,17 +7398,17 @@ void gnu_xml_stream_XMLParser_readUntil___java_lang_String(JAVA_OBJECT me, JAVA_
     XMLVM_CHECK_NPE(3)
     _r2.i = ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.line_;
     label6:;
-    XMLVM_TRY_BEGIN(w21264aaad133b1b8)
+    XMLVM_TRY_BEGIN(w21267aaad133b1b8)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLParser.java", 1406)
     XMLVM_CHECK_NPE(6)
     _r3.i = gnu_xml_stream_XMLParser_tryRead___java_lang_String(_r6.o, _r7.o);
-    if (_r3.i != 0) { XMLVM_MEMCPY(curThread_w21264aaad133b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad133b1b8, sizeof(XMLVM_JMP_BUF)); goto label55; };
+    if (_r3.i != 0) { XMLVM_MEMCPY(curThread_w21267aaad133b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad133b1b8, sizeof(XMLVM_JMP_BUF)); goto label55; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1408)
     XMLVM_CHECK_NPE(6)
     _r0.i = gnu_xml_stream_XMLParser_readCh__(_r6.o);
     _r3.i = -1;
-    if (_r0.i != _r3.i) { XMLVM_MEMCPY(curThread_w21264aaad133b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad133b1b8, sizeof(XMLVM_JMP_BUF)); goto label56; };
+    if (_r0.i != _r3.i) { XMLVM_MEMCPY(curThread_w21267aaad133b1b8->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad133b1b8, sizeof(XMLVM_JMP_BUF)); goto label56; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1409)
     XMLVM_SOURCE_POSITION("XMLParser.java", 1410)
     _r3.o = __NEW_java_io_EOFException();
@@ -7417,14 +7417,14 @@ void gnu_xml_stream_XMLParser_readUntil___java_lang_String(JAVA_OBJECT me, JAVA_
     XMLVM_THROW_CUSTOM(_r3.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad133b1b8)
-        XMLVM_CATCH_SPECIFIC(w21264aaad133b1b8,java_io_EOFException,25)
-    XMLVM_CATCH_END(w21264aaad133b1b8)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad133b1b8)
+    XMLVM_CATCH_BEGIN(w21267aaad133b1b8)
+        XMLVM_CATCH_SPECIFIC(w21267aaad133b1b8,java_io_EOFException,25)
+    XMLVM_CATCH_END(w21267aaad133b1b8)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad133b1b8)
     label25:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 1423)
-    java_lang_Thread* curThread_w21264aaad133b1c11 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r3.o = curThread_w21264aaad133b1c11->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w21267aaad133b1c11 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r3.o = curThread_w21267aaad133b1c11->fields.java_lang_Thread.xmlvmException_;
     _r1 = _r3;
     XMLVM_SOURCE_POSITION("XMLParser.java", 1425)
     _r3.o = __NEW_java_lang_StringBuilder();
@@ -7450,27 +7450,27 @@ void gnu_xml_stream_XMLParser_readUntil___java_lang_String(JAVA_OBJECT me, JAVA_
     XMLVM_EXIT_METHOD()
     return;
     label56:;
-    XMLVM_TRY_BEGIN(w21264aaad133b1c27)
+    XMLVM_TRY_BEGIN(w21267aaad133b1c27)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLParser.java", 1411)
     XMLVM_CHECK_NPE(6)
     _r3.o = ((gnu_xml_stream_XMLParser*) _r6.o)->fields.gnu_xml_stream_XMLParser.input_;
     XMLVM_CHECK_NPE(3)
     _r3.i = ((gnu_xml_stream_XMLParser_Input*) _r3.o)->fields.gnu_xml_stream_XMLParser_Input.xml11_;
-    if (_r3.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad133b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad133b1c27, sizeof(XMLVM_JMP_BUF)); goto label112; };
+    if (_r3.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad133b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad133b1c27, sizeof(XMLVM_JMP_BUF)); goto label112; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1413)
     _r3.i = gnu_xml_stream_XMLParser_isXML11Char___int(_r0.i);
-    if (_r3.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad133b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad133b1c27, sizeof(XMLVM_JMP_BUF)); goto label74; };
+    if (_r3.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad133b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad133b1c27, sizeof(XMLVM_JMP_BUF)); goto label74; };
     _r3.i = gnu_xml_stream_XMLParser_isXML11RestrictedChar___int(_r0.i);
-    if (_r3.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad133b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad133b1c27, sizeof(XMLVM_JMP_BUF)); goto label102; };
+    if (_r3.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad133b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad133b1c27, sizeof(XMLVM_JMP_BUF)); goto label102; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad133b1c27)
-        XMLVM_CATCH_SPECIFIC(w21264aaad133b1c27,java_io_EOFException,25)
-    XMLVM_CATCH_END(w21264aaad133b1c27)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad133b1c27)
+    XMLVM_CATCH_BEGIN(w21267aaad133b1c27)
+        XMLVM_CATCH_SPECIFIC(w21267aaad133b1c27,java_io_EOFException,25)
+    XMLVM_CATCH_END(w21267aaad133b1c27)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad133b1c27)
     label74:;
-    XMLVM_TRY_BEGIN(w21264aaad133b1c29)
+    XMLVM_TRY_BEGIN(w21267aaad133b1c29)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLParser.java", 1414)
     // "illegal XML 1.1 character"
@@ -7492,12 +7492,12 @@ void gnu_xml_stream_XMLParser_readUntil___java_lang_String(JAVA_OBJECT me, JAVA_
     gnu_xml_stream_XMLParser_error___java_lang_String_java_lang_Object(_r6.o, _r3.o, _r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad133b1c29)
-        XMLVM_CATCH_SPECIFIC(w21264aaad133b1c29,java_io_EOFException,25)
-    XMLVM_CATCH_END(w21264aaad133b1c29)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad133b1c29)
+    XMLVM_CATCH_BEGIN(w21267aaad133b1c29)
+        XMLVM_CATCH_SPECIFIC(w21267aaad133b1c29,java_io_EOFException,25)
+    XMLVM_CATCH_END(w21267aaad133b1c29)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad133b1c29)
     label102:;
-    XMLVM_TRY_BEGIN(w21264aaad133b1c31)
+    XMLVM_TRY_BEGIN(w21267aaad133b1c31)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLParser.java", 1420)
     XMLVM_CHECK_NPE(6)
@@ -7505,19 +7505,19 @@ void gnu_xml_stream_XMLParser_readUntil___java_lang_String(JAVA_OBJECT me, JAVA_
     _r4.o = java_lang_Character_toChars___int(_r0.i);
     XMLVM_CHECK_NPE(3)
     java_lang_StringBuffer_append___char_1ARRAY(_r3.o, _r4.o);
-    { XMLVM_MEMCPY(curThread_w21264aaad133b1c31->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad133b1c31, sizeof(XMLVM_JMP_BUF)); goto label6; };
+    { XMLVM_MEMCPY(curThread_w21267aaad133b1c31->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad133b1c31, sizeof(XMLVM_JMP_BUF)); goto label6; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1417)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad133b1c31)
-        XMLVM_CATCH_SPECIFIC(w21264aaad133b1c31,java_io_EOFException,25)
-    XMLVM_CATCH_END(w21264aaad133b1c31)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad133b1c31)
+    XMLVM_CATCH_BEGIN(w21267aaad133b1c31)
+        XMLVM_CATCH_SPECIFIC(w21267aaad133b1c31,java_io_EOFException,25)
+    XMLVM_CATCH_END(w21267aaad133b1c31)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad133b1c31)
     label112:;
-    XMLVM_TRY_BEGIN(w21264aaad133b1c33)
+    XMLVM_TRY_BEGIN(w21267aaad133b1c33)
     // Begin try
     _r3.i = gnu_xml_stream_XMLParser_isChar___int(_r0.i);
-    if (_r3.i != 0) { XMLVM_MEMCPY(curThread_w21264aaad133b1c33->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad133b1c33, sizeof(XMLVM_JMP_BUF)); goto label102; };
+    if (_r3.i != 0) { XMLVM_MEMCPY(curThread_w21267aaad133b1c33->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad133b1c33, sizeof(XMLVM_JMP_BUF)); goto label102; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 1418)
     // "illegal XML character"
     _r3.o = xmlvm_create_java_string_from_pool(1570);
@@ -7538,10 +7538,10 @@ void gnu_xml_stream_XMLParser_readUntil___java_lang_String(JAVA_OBJECT me, JAVA_
     gnu_xml_stream_XMLParser_error___java_lang_String_java_lang_Object(_r6.o, _r3.o, _r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad133b1c33)
-        XMLVM_CATCH_SPECIFIC(w21264aaad133b1c33,java_io_EOFException,25)
-    XMLVM_CATCH_END(w21264aaad133b1c33)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad133b1c33)
+    XMLVM_CATCH_BEGIN(w21267aaad133b1c33)
+        XMLVM_CATCH_SPECIFIC(w21267aaad133b1c33,java_io_EOFException,25)
+    XMLVM_CATCH_END(w21267aaad133b1c33)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad133b1c33)
     goto label102;
     //XMLVM_END_WRAPPER
 }
@@ -8506,7 +8506,7 @@ JAVA_OBJECT gnu_xml_stream_XMLParser_resolve___java_lang_String(JAVA_OBJECT n1)
     XMLVMElem _r3;
     XMLVMElem _r4;
     _r4.o = n1;
-    XMLVM_TRY_BEGIN(w21264aaad144b1b2)
+    XMLVM_TRY_BEGIN(w21267aaad144b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLParser.java", 1718)
     _r2.o = __NEW_java_net_URL();
@@ -8516,26 +8516,26 @@ JAVA_OBJECT gnu_xml_stream_XMLParser_resolve___java_lang_String(JAVA_OBJECT n1)
     _r2.o = java_net_URL_openStream__(_r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad144b1b2)
-        XMLVM_CATCH_SPECIFIC(w21264aaad144b1b2,java_net_MalformedURLException,10)
-        XMLVM_CATCH_SPECIFIC(w21264aaad144b1b2,java_io_IOException,14)
-    XMLVM_CATCH_END(w21264aaad144b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad144b1b2)
+    XMLVM_CATCH_BEGIN(w21267aaad144b1b2)
+        XMLVM_CATCH_SPECIFIC(w21267aaad144b1b2,java_net_MalformedURLException,10)
+        XMLVM_CATCH_SPECIFIC(w21267aaad144b1b2,java_io_IOException,14)
+    XMLVM_CATCH_END(w21267aaad144b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad144b1b2)
     label9:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 1722)
     XMLVM_EXIT_METHOD()
     return _r2.o;
     label10:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 1720)
-    java_lang_Thread* curThread_w21264aaad144b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w21264aaad144b1b8->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w21267aaad144b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w21267aaad144b1b8->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r2;
     _r2.o = JAVA_NULL;
     goto label9;
     label14:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 1724)
-    java_lang_Thread* curThread_w21264aaad144b1c14 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w21264aaad144b1c14->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w21267aaad144b1c14 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w21267aaad144b1c14->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r2;
     XMLVM_SOURCE_POSITION("XMLParser.java", 1726)
     _r1.o = __NEW_java_io_IOException();
@@ -14924,7 +14924,7 @@ JAVA_OBJECT gnu_xml_stream_XMLParser_readCharacterRef___int(JAVA_OBJECT me, JAVA
     _r1.i = gnu_xml_stream_XMLParser_readCh__(_r6.o);
     goto label9;
     label28:;
-    XMLVM_TRY_BEGIN(w21264aaad183b1c19)
+    XMLVM_TRY_BEGIN(w21267aaad183b1c19)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLParser.java", 3538)
     //gnu_java_lang_CPStringBuilder_toString__[5]
@@ -14936,10 +14936,10 @@ JAVA_OBJECT gnu_xml_stream_XMLParser_readCharacterRef___int(JAVA_OBJECT me, JAVA
     _r4.o = ((gnu_xml_stream_XMLParser*) _r6.o)->fields.gnu_xml_stream_XMLParser.input_;
     XMLVM_CHECK_NPE(4)
     _r4.i = ((gnu_xml_stream_XMLParser_Input*) _r4.o)->fields.gnu_xml_stream_XMLParser_Input.xml11_;
-    if (_r4.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad183b1c19->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad183b1c19, sizeof(XMLVM_JMP_BUF)); goto label79; };
+    if (_r4.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad183b1c19->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad183b1c19, sizeof(XMLVM_JMP_BUF)); goto label79; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 3541)
     _r4.i = gnu_xml_stream_XMLParser_isXML11Char___int(_r3.i);
-    if (_r4.i != 0) { XMLVM_MEMCPY(curThread_w21264aaad183b1c19->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad183b1c19, sizeof(XMLVM_JMP_BUF)); goto label74; };
+    if (_r4.i != 0) { XMLVM_MEMCPY(curThread_w21267aaad183b1c19->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad183b1c19, sizeof(XMLVM_JMP_BUF)); goto label74; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 3542)
     _r4.o = __NEW_java_lang_StringBuilder();
     XMLVM_CHECK_NPE(4)
@@ -14958,82 +14958,82 @@ JAVA_OBJECT gnu_xml_stream_XMLParser_readCharacterRef___int(JAVA_OBJECT me, JAVA
     gnu_xml_stream_XMLParser_error___java_lang_String(_r6.o, _r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad183b1c19)
-        XMLVM_CATCH_SPECIFIC(w21264aaad183b1c19,java_lang_NumberFormatException,147)
-    XMLVM_CATCH_END(w21264aaad183b1c19)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad183b1c19)
+    XMLVM_CATCH_BEGIN(w21267aaad183b1c19)
+        XMLVM_CATCH_SPECIFIC(w21267aaad183b1c19,java_lang_NumberFormatException,147)
+    XMLVM_CATCH_END(w21267aaad183b1c19)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad183b1c19)
     label74:;
-    XMLVM_TRY_BEGIN(w21264aaad183b1c21)
+    XMLVM_TRY_BEGIN(w21267aaad183b1c21)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLParser.java", 3554)
     _r4.o = java_lang_Character_toChars___int(_r3.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad183b1c21)
-        XMLVM_CATCH_SPECIFIC(w21264aaad183b1c21,java_lang_NumberFormatException,147)
-    XMLVM_CATCH_END(w21264aaad183b1c21)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad183b1c21)
+    XMLVM_CATCH_BEGIN(w21267aaad183b1c21)
+        XMLVM_CATCH_SPECIFIC(w21267aaad183b1c21,java_lang_NumberFormatException,147)
+    XMLVM_CATCH_END(w21267aaad183b1c21)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad183b1c21)
     label78:;
-    XMLVM_TRY_BEGIN(w21264aaad183b1c23)
+    XMLVM_TRY_BEGIN(w21267aaad183b1c23)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLParser.java", 3559)
-    XMLVM_MEMCPY(curThread_w21264aaad183b1c23->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad183b1c23, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w21267aaad183b1c23->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad183b1c23, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r4.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad183b1c23)
-        XMLVM_CATCH_SPECIFIC(w21264aaad183b1c23,java_lang_NumberFormatException,147)
-    XMLVM_CATCH_END(w21264aaad183b1c23)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad183b1c23)
+    XMLVM_CATCH_BEGIN(w21267aaad183b1c23)
+        XMLVM_CATCH_SPECIFIC(w21267aaad183b1c23,java_lang_NumberFormatException,147)
+    XMLVM_CATCH_END(w21267aaad183b1c23)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad183b1c23)
     label79:;
-    XMLVM_TRY_BEGIN(w21264aaad183b1c25)
+    XMLVM_TRY_BEGIN(w21267aaad183b1c25)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLParser.java", 3547)
     _r4.i = 32;
-    if (_r3.i >= _r4.i) { XMLVM_MEMCPY(curThread_w21264aaad183b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad183b1c25, sizeof(XMLVM_JMP_BUF)); goto label95; };
+    if (_r3.i >= _r4.i) { XMLVM_MEMCPY(curThread_w21267aaad183b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad183b1c25, sizeof(XMLVM_JMP_BUF)); goto label95; };
     _r4.i = 10;
-    if (_r3.i == _r4.i) { XMLVM_MEMCPY(curThread_w21264aaad183b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad183b1c25, sizeof(XMLVM_JMP_BUF)); goto label95; };
+    if (_r3.i == _r4.i) { XMLVM_MEMCPY(curThread_w21267aaad183b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad183b1c25, sizeof(XMLVM_JMP_BUF)); goto label95; };
     _r4.i = 9;
-    if (_r3.i == _r4.i) { XMLVM_MEMCPY(curThread_w21264aaad183b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad183b1c25, sizeof(XMLVM_JMP_BUF)); goto label95; };
+    if (_r3.i == _r4.i) { XMLVM_MEMCPY(curThread_w21267aaad183b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad183b1c25, sizeof(XMLVM_JMP_BUF)); goto label95; };
     _r4.i = 13;
-    if (_r3.i != _r4.i) { XMLVM_MEMCPY(curThread_w21264aaad183b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad183b1c25, sizeof(XMLVM_JMP_BUF)); goto label120; };
+    if (_r3.i != _r4.i) { XMLVM_MEMCPY(curThread_w21267aaad183b1c25->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad183b1c25, sizeof(XMLVM_JMP_BUF)); goto label120; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad183b1c25)
-        XMLVM_CATCH_SPECIFIC(w21264aaad183b1c25,java_lang_NumberFormatException,147)
-    XMLVM_CATCH_END(w21264aaad183b1c25)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad183b1c25)
+    XMLVM_CATCH_BEGIN(w21267aaad183b1c25)
+        XMLVM_CATCH_SPECIFIC(w21267aaad183b1c25,java_lang_NumberFormatException,147)
+    XMLVM_CATCH_END(w21267aaad183b1c25)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad183b1c25)
     label95:;
-    XMLVM_TRY_BEGIN(w21264aaad183b1c27)
+    XMLVM_TRY_BEGIN(w21267aaad183b1c27)
     // Begin try
     _r4.i = 55296;
-    if (_r3.i < _r4.i) { XMLVM_MEMCPY(curThread_w21264aaad183b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad183b1c27, sizeof(XMLVM_JMP_BUF)); goto label105; };
+    if (_r3.i < _r4.i) { XMLVM_MEMCPY(curThread_w21267aaad183b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad183b1c27, sizeof(XMLVM_JMP_BUF)); goto label105; };
     _r4.i = 57343;
-    if (_r3.i <= _r4.i) { XMLVM_MEMCPY(curThread_w21264aaad183b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad183b1c27, sizeof(XMLVM_JMP_BUF)); goto label120; };
+    if (_r3.i <= _r4.i) { XMLVM_MEMCPY(curThread_w21267aaad183b1c27->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad183b1c27, sizeof(XMLVM_JMP_BUF)); goto label120; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad183b1c27)
-        XMLVM_CATCH_SPECIFIC(w21264aaad183b1c27,java_lang_NumberFormatException,147)
-    XMLVM_CATCH_END(w21264aaad183b1c27)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad183b1c27)
+    XMLVM_CATCH_BEGIN(w21267aaad183b1c27)
+        XMLVM_CATCH_SPECIFIC(w21267aaad183b1c27,java_lang_NumberFormatException,147)
+    XMLVM_CATCH_END(w21267aaad183b1c27)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad183b1c27)
     label105:;
-    XMLVM_TRY_BEGIN(w21264aaad183b1c29)
+    XMLVM_TRY_BEGIN(w21267aaad183b1c29)
     // Begin try
     _r4.i = 65534;
-    if (_r3.i == _r4.i) { XMLVM_MEMCPY(curThread_w21264aaad183b1c29->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad183b1c29, sizeof(XMLVM_JMP_BUF)); goto label120; };
+    if (_r3.i == _r4.i) { XMLVM_MEMCPY(curThread_w21267aaad183b1c29->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad183b1c29, sizeof(XMLVM_JMP_BUF)); goto label120; };
     _r4.i = 65535;
-    if (_r3.i == _r4.i) { XMLVM_MEMCPY(curThread_w21264aaad183b1c29->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad183b1c29, sizeof(XMLVM_JMP_BUF)); goto label120; };
+    if (_r3.i == _r4.i) { XMLVM_MEMCPY(curThread_w21267aaad183b1c29->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad183b1c29, sizeof(XMLVM_JMP_BUF)); goto label120; };
     _r4.i = 1114111;
-    if (_r3.i <= _r4.i) { XMLVM_MEMCPY(curThread_w21264aaad183b1c29->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad183b1c29, sizeof(XMLVM_JMP_BUF)); goto label74; };
+    if (_r3.i <= _r4.i) { XMLVM_MEMCPY(curThread_w21267aaad183b1c29->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad183b1c29, sizeof(XMLVM_JMP_BUF)); goto label74; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad183b1c29)
-        XMLVM_CATCH_SPECIFIC(w21264aaad183b1c29,java_lang_NumberFormatException,147)
-    XMLVM_CATCH_END(w21264aaad183b1c29)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad183b1c29)
+    XMLVM_CATCH_BEGIN(w21267aaad183b1c29)
+        XMLVM_CATCH_SPECIFIC(w21267aaad183b1c29,java_lang_NumberFormatException,147)
+    XMLVM_CATCH_END(w21267aaad183b1c29)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad183b1c29)
     label120:;
-    XMLVM_TRY_BEGIN(w21264aaad183b1c31)
+    XMLVM_TRY_BEGIN(w21267aaad183b1c31)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLParser.java", 3551)
     _r4.o = __NEW_java_lang_StringBuilder();
@@ -15053,15 +15053,15 @@ JAVA_OBJECT gnu_xml_stream_XMLParser_readCharacterRef___int(JAVA_OBJECT me, JAVA
     gnu_xml_stream_XMLParser_error___java_lang_String(_r6.o, _r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad183b1c31)
-        XMLVM_CATCH_SPECIFIC(w21264aaad183b1c31,java_lang_NumberFormatException,147)
-    XMLVM_CATCH_END(w21264aaad183b1c31)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad183b1c31)
+    XMLVM_CATCH_BEGIN(w21267aaad183b1c31)
+        XMLVM_CATCH_SPECIFIC(w21267aaad183b1c31,java_lang_NumberFormatException,147)
+    XMLVM_CATCH_END(w21267aaad183b1c31)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad183b1c31)
     goto label74;
     label147:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 3556)
-    java_lang_Thread* curThread_w21264aaad183b1c35 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r4.o = curThread_w21264aaad183b1c35->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w21267aaad183b1c35 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r4.o = curThread_w21267aaad183b1c35->fields.java_lang_Thread.xmlvmException_;
     _r2 = _r4;
     XMLVM_SOURCE_POSITION("XMLParser.java", 3558)
     // "illegal characters in character reference"
@@ -15359,39 +15359,39 @@ JAVA_BOOLEAN gnu_xml_stream_XMLParser_isNmtoken___java_lang_String_boolean(JAVA_
     _r7.o = n1;
     _r8.i = n2;
     _r5.i = 0;
-    XMLVM_TRY_BEGIN(w21264aaad188b1b5)
+    XMLVM_TRY_BEGIN(w21267aaad188b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLParser.java", 3667)
     _r0.o = gnu_xml_stream_UnicodeReader_toCodePointArray___java_lang_String(_r7.o);
     XMLVM_SOURCE_POSITION("XMLParser.java", 3668)
     _r3.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
-    if (_r3.i != 0) { XMLVM_MEMCPY(curThread_w21264aaad188b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad188b1b5, sizeof(XMLVM_JMP_BUF)); goto label10; };
+    if (_r3.i != 0) { XMLVM_MEMCPY(curThread_w21267aaad188b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad188b1b5, sizeof(XMLVM_JMP_BUF)); goto label10; };
     _r3 = _r5;
     XMLVM_SOURCE_POSITION("XMLParser.java", 3669)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad188b1b5)
-        XMLVM_CATCH_SPECIFIC(w21264aaad188b1b5,java_io_IOException,65)
-    XMLVM_CATCH_END(w21264aaad188b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad188b1b5)
+    XMLVM_CATCH_BEGIN(w21267aaad188b1b5)
+        XMLVM_CATCH_SPECIFIC(w21267aaad188b1b5,java_io_IOException,65)
+    XMLVM_CATCH_END(w21267aaad188b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad188b1b5)
     label9:;
-    XMLVM_TRY_BEGIN(w21264aaad188b1b7)
+    XMLVM_TRY_BEGIN(w21267aaad188b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLParser.java", 3689)
-    XMLVM_MEMCPY(curThread_w21264aaad188b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad188b1b7, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w21267aaad188b1b7->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad188b1b7, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r3.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad188b1b7)
-        XMLVM_CATCH_SPECIFIC(w21264aaad188b1b7,java_io_IOException,65)
-    XMLVM_CATCH_END(w21264aaad188b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad188b1b7)
+    XMLVM_CATCH_BEGIN(w21267aaad188b1b7)
+        XMLVM_CATCH_SPECIFIC(w21267aaad188b1b7,java_io_IOException,65)
+    XMLVM_CATCH_END(w21267aaad188b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad188b1b7)
     label10:;
-    XMLVM_TRY_BEGIN(w21264aaad188b1b9)
+    XMLVM_TRY_BEGIN(w21267aaad188b1b9)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLParser.java", 3670)
-    if (_r8.i == 0) { XMLVM_MEMCPY(curThread_w21264aaad188b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad188b1b9, sizeof(XMLVM_JMP_BUF)); goto label27; };
+    if (_r8.i == 0) { XMLVM_MEMCPY(curThread_w21267aaad188b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad188b1b9, sizeof(XMLVM_JMP_BUF)); goto label27; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 3672)
     _r3.i = 0;
     XMLVM_CHECK_NPE(0)
@@ -15402,19 +15402,19 @@ JAVA_BOOLEAN gnu_xml_stream_XMLParser_isNmtoken___java_lang_String_boolean(JAVA_
     XMLVM_CHECK_NPE(4)
     _r4.i = ((gnu_xml_stream_XMLParser_Input*) _r4.o)->fields.gnu_xml_stream_XMLParser_Input.xml11_;
     _r3.i = gnu_xml_stream_XMLParser_isNameStartCharacter___int_boolean(_r3.i, _r4.i);
-    if (_r3.i != 0) { XMLVM_MEMCPY(curThread_w21264aaad188b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad188b1b9, sizeof(XMLVM_JMP_BUF)); goto label42; };
+    if (_r3.i != 0) { XMLVM_MEMCPY(curThread_w21267aaad188b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad188b1b9, sizeof(XMLVM_JMP_BUF)); goto label42; };
     _r3 = _r5;
     XMLVM_SOURCE_POSITION("XMLParser.java", 3673)
-    { XMLVM_MEMCPY(curThread_w21264aaad188b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad188b1b9, sizeof(XMLVM_JMP_BUF)); goto label9; };
+    { XMLVM_MEMCPY(curThread_w21267aaad188b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad188b1b9, sizeof(XMLVM_JMP_BUF)); goto label9; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 3677)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad188b1b9)
-        XMLVM_CATCH_SPECIFIC(w21264aaad188b1b9,java_io_IOException,65)
-    XMLVM_CATCH_END(w21264aaad188b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad188b1b9)
+    XMLVM_CATCH_BEGIN(w21267aaad188b1b9)
+        XMLVM_CATCH_SPECIFIC(w21267aaad188b1b9,java_io_IOException,65)
+    XMLVM_CATCH_END(w21267aaad188b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad188b1b9)
     label27:;
-    XMLVM_TRY_BEGIN(w21264aaad188b1c11)
+    XMLVM_TRY_BEGIN(w21267aaad188b1c11)
     // Begin try
     _r3.i = 0;
     XMLVM_CHECK_NPE(0)
@@ -15425,32 +15425,32 @@ JAVA_BOOLEAN gnu_xml_stream_XMLParser_isNmtoken___java_lang_String_boolean(JAVA_
     XMLVM_CHECK_NPE(4)
     _r4.i = ((gnu_xml_stream_XMLParser_Input*) _r4.o)->fields.gnu_xml_stream_XMLParser_Input.xml11_;
     _r3.i = gnu_xml_stream_XMLParser_isNameCharacter___int_boolean(_r3.i, _r4.i);
-    if (_r3.i != 0) { XMLVM_MEMCPY(curThread_w21264aaad188b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad188b1c11, sizeof(XMLVM_JMP_BUF)); goto label42; };
+    if (_r3.i != 0) { XMLVM_MEMCPY(curThread_w21267aaad188b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad188b1c11, sizeof(XMLVM_JMP_BUF)); goto label42; };
     _r3 = _r5;
     XMLVM_SOURCE_POSITION("XMLParser.java", 3678)
-    { XMLVM_MEMCPY(curThread_w21264aaad188b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad188b1c11, sizeof(XMLVM_JMP_BUF)); goto label9; };
+    { XMLVM_MEMCPY(curThread_w21267aaad188b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad188b1c11, sizeof(XMLVM_JMP_BUF)); goto label9; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 3680)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad188b1c11)
-        XMLVM_CATCH_SPECIFIC(w21264aaad188b1c11,java_io_IOException,65)
-    XMLVM_CATCH_END(w21264aaad188b1c11)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad188b1c11)
+    XMLVM_CATCH_BEGIN(w21267aaad188b1c11)
+        XMLVM_CATCH_SPECIFIC(w21267aaad188b1c11,java_io_IOException,65)
+    XMLVM_CATCH_END(w21267aaad188b1c11)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad188b1c11)
     label42:;
-    XMLVM_TRY_BEGIN(w21264aaad188b1c13)
+    XMLVM_TRY_BEGIN(w21267aaad188b1c13)
     // Begin try
     _r2.i = 1;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad188b1c13)
-        XMLVM_CATCH_SPECIFIC(w21264aaad188b1c13,java_io_IOException,65)
-    XMLVM_CATCH_END(w21264aaad188b1c13)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad188b1c13)
+    XMLVM_CATCH_BEGIN(w21267aaad188b1c13)
+        XMLVM_CATCH_SPECIFIC(w21267aaad188b1c13,java_io_IOException,65)
+    XMLVM_CATCH_END(w21267aaad188b1c13)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad188b1c13)
     label43:;
-    XMLVM_TRY_BEGIN(w21264aaad188b1c15)
+    XMLVM_TRY_BEGIN(w21267aaad188b1c15)
     // Begin try
     _r3.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
-    if (_r2.i >= _r3.i) { XMLVM_MEMCPY(curThread_w21264aaad188b1c15->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21264aaad188b1c15, sizeof(XMLVM_JMP_BUF)); goto label63; };
+    if (_r2.i >= _r3.i) { XMLVM_MEMCPY(curThread_w21267aaad188b1c15->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w21267aaad188b1c15, sizeof(XMLVM_JMP_BUF)); goto label63; };
     XMLVM_SOURCE_POSITION("XMLParser.java", 3682)
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
@@ -15462,10 +15462,10 @@ JAVA_BOOLEAN gnu_xml_stream_XMLParser_isNmtoken___java_lang_String_boolean(JAVA_
     _r3.i = gnu_xml_stream_XMLParser_isNameCharacter___int_boolean(_r3.i, _r4.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w21264aaad188b1c15)
-        XMLVM_CATCH_SPECIFIC(w21264aaad188b1c15,java_io_IOException,65)
-    XMLVM_CATCH_END(w21264aaad188b1c15)
-    XMLVM_RESTORE_EXCEPTION_ENV(w21264aaad188b1c15)
+    XMLVM_CATCH_BEGIN(w21267aaad188b1c15)
+        XMLVM_CATCH_SPECIFIC(w21267aaad188b1c15,java_io_IOException,65)
+    XMLVM_CATCH_END(w21267aaad188b1c15)
+    XMLVM_RESTORE_EXCEPTION_ENV(w21267aaad188b1c15)
     if (_r3.i != 0) goto label60;
     _r3 = _r5;
     XMLVM_SOURCE_POSITION("XMLParser.java", 3683)
@@ -15479,8 +15479,8 @@ JAVA_BOOLEAN gnu_xml_stream_XMLParser_isNmtoken___java_lang_String_boolean(JAVA_
     goto label9;
     label65:;
     XMLVM_SOURCE_POSITION("XMLParser.java", 3687)
-    java_lang_Thread* curThread_w21264aaad188b1c29 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r3.o = curThread_w21264aaad188b1c29->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w21267aaad188b1c29 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r3.o = curThread_w21267aaad188b1c29->fields.java_lang_Thread.xmlvmException_;
     _r1 = _r3;
     _r3 = _r5;
     goto label9;

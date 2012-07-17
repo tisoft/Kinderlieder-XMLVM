@@ -1521,7 +1521,7 @@ JAVA_OBJECT java_util_ArrayList_clone__(JAVA_OBJECT me)
     XMLVMElem _r1;
     XMLVMElem _r2;
     _r2.o = me;
-    XMLVM_TRY_BEGIN(w19105aaac15b1b2)
+    XMLVM_TRY_BEGIN(w19108aaac15b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("ArrayList.java", 286)
     XMLVM_CHECK_NPE(2)
@@ -1538,17 +1538,17 @@ JAVA_OBJECT java_util_ArrayList_clone__(JAVA_OBJECT me)
     ((java_util_ArrayList*) _r0.o)->fields.java_util_ArrayList.array_ = _r2.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w19105aaac15b1b2)
-        XMLVM_CATCH_SPECIFIC(w19105aaac15b1b2,java_lang_CloneNotSupportedException,17)
-    XMLVM_CATCH_END(w19105aaac15b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w19105aaac15b1b2)
+    XMLVM_CATCH_BEGIN(w19108aaac15b1b2)
+        XMLVM_CATCH_SPECIFIC(w19108aaac15b1b2,java_lang_CloneNotSupportedException,17)
+    XMLVM_CATCH_END(w19108aaac15b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w19108aaac15b1b2)
     label16:;
     XMLVM_SOURCE_POSITION("ArrayList.java", 290)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label17:;
-    java_lang_Thread* curThread_w19105aaac15b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w19105aaac15b1b7->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w19108aaac15b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w19108aaac15b1b7->fields.java_lang_Thread.xmlvmException_;
     _r0.o = JAVA_NULL;
     goto label16;
     //XMLVM_END_WRAPPER

@@ -449,12 +449,12 @@ JAVA_OBJECT java_util_ServiceLoader_ServiceIterator_next__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r0.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Queue_remove__])(_r0.o);
     _r0.o = _r0.o;
-    XMLVM_TRY_BEGIN(w31257aaac10b1c14)
+    XMLVM_TRY_BEGIN(w31260aaac10b1c14)
     // Begin try
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 192)
     XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_ServiceLoader_ServiceIterator*) _r4.o)->fields.java_util_ServiceLoader_ServiceIterator.cl_;
-    if (_r1.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w31257aaac10b1c14->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w31257aaac10b1c14, sizeof(XMLVM_JMP_BUF)); goto label39; };
+    if (_r1.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w31260aaac10b1c14->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w31260aaac10b1c14, sizeof(XMLVM_JMP_BUF)); goto label39; };
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 193)
     XMLVM_CHECK_NPE(4)
     _r1.o = ((java_util_ServiceLoader_ServiceIterator*) _r4.o)->fields.java_util_ServiceLoader_ServiceIterator.service_;
@@ -466,25 +466,25 @@ JAVA_OBJECT java_util_ServiceLoader_ServiceIterator_next__(JAVA_OBJECT me)
     _r0.o = java_lang_Class_cast___java_lang_Object(_r1.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w31257aaac10b1c14)
-        XMLVM_CATCH_SPECIFIC(w31257aaac10b1c14,java_lang_Exception,56)
-    XMLVM_CATCH_END(w31257aaac10b1c14)
-    XMLVM_RESTORE_EXCEPTION_ENV(w31257aaac10b1c14)
+    XMLVM_CATCH_BEGIN(w31260aaac10b1c14)
+        XMLVM_CATCH_SPECIFIC(w31260aaac10b1c14,java_lang_Exception,56)
+    XMLVM_CATCH_END(w31260aaac10b1c14)
+    XMLVM_RESTORE_EXCEPTION_ENV(w31260aaac10b1c14)
     label38:;
-    XMLVM_TRY_BEGIN(w31257aaac10b1c16)
+    XMLVM_TRY_BEGIN(w31260aaac10b1c16)
     // Begin try
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 197)
-    XMLVM_MEMCPY(curThread_w31257aaac10b1c16->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w31257aaac10b1c16, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w31260aaac10b1c16->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w31260aaac10b1c16, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w31257aaac10b1c16)
-        XMLVM_CATCH_SPECIFIC(w31257aaac10b1c16,java_lang_Exception,56)
-    XMLVM_CATCH_END(w31257aaac10b1c16)
-    XMLVM_RESTORE_EXCEPTION_ENV(w31257aaac10b1c16)
+    XMLVM_CATCH_BEGIN(w31260aaac10b1c16)
+        XMLVM_CATCH_SPECIFIC(w31260aaac10b1c16,java_lang_Exception,56)
+    XMLVM_CATCH_END(w31260aaac10b1c16)
+    XMLVM_RESTORE_EXCEPTION_ENV(w31260aaac10b1c16)
     label39:;
-    XMLVM_TRY_BEGIN(w31257aaac10b1c18)
+    XMLVM_TRY_BEGIN(w31260aaac10b1c18)
     // Begin try
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 195)
     XMLVM_CHECK_NPE(4)
@@ -500,15 +500,15 @@ JAVA_OBJECT java_util_ServiceLoader_ServiceIterator_next__(JAVA_OBJECT me)
     _r0.o = java_lang_Class_cast___java_lang_Object(_r1.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w31257aaac10b1c18)
-        XMLVM_CATCH_SPECIFIC(w31257aaac10b1c18,java_lang_Exception,56)
-    XMLVM_CATCH_END(w31257aaac10b1c18)
-    XMLVM_RESTORE_EXCEPTION_ENV(w31257aaac10b1c18)
+    XMLVM_CATCH_BEGIN(w31260aaac10b1c18)
+        XMLVM_CATCH_SPECIFIC(w31260aaac10b1c18,java_lang_Exception,56)
+    XMLVM_CATCH_END(w31260aaac10b1c18)
+    XMLVM_RESTORE_EXCEPTION_ENV(w31260aaac10b1c18)
     goto label38;
     label56:;
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 198)
-    java_lang_Thread* curThread_w31257aaac10b1c22 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w31257aaac10b1c22->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w31260aaac10b1c22 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w31260aaac10b1c22->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 200)
     _r2.o = __NEW_java_util_ServiceConfigurationError();
     // "KB005"
@@ -588,7 +588,7 @@ void java_util_ServiceLoader_ServiceIterator_readClass__(JAVA_OBJECT me)
     java_lang_NullPointerException___INIT___(_r0.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     label49:;
-    XMLVM_TRY_BEGIN(w31257aaac11b1c40)
+    XMLVM_TRY_BEGIN(w31260aaac11b1c40)
     // Begin try
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 219)
     _r2.o = __NEW_java_io_BufferedReader();
@@ -606,12 +606,12 @@ void java_util_ServiceLoader_ServiceIterator_readClass__(JAVA_OBJECT me)
     ((java_util_ServiceLoader_ServiceIterator*) _r10.o)->fields.java_util_ServiceLoader_ServiceIterator.reader_ = _r2.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w31257aaac11b1c40)
-        XMLVM_CATCH_SPECIFIC(w31257aaac11b1c40,java_lang_Exception,131)
-    XMLVM_CATCH_END(w31257aaac11b1c40)
-    XMLVM_RESTORE_EXCEPTION_ENV(w31257aaac11b1c40)
+    XMLVM_CATCH_BEGIN(w31260aaac11b1c40)
+        XMLVM_CATCH_SPECIFIC(w31260aaac11b1c40,java_lang_Exception,131)
+    XMLVM_CATCH_END(w31260aaac11b1c40)
+    XMLVM_RESTORE_EXCEPTION_ENV(w31260aaac11b1c40)
     label67:;
-    XMLVM_TRY_BEGIN(w31257aaac11b1c42)
+    XMLVM_TRY_BEGIN(w31260aaac11b1c42)
     // Begin try
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 225)
     XMLVM_CHECK_NPE(10)
@@ -619,7 +619,7 @@ void java_util_ServiceLoader_ServiceIterator_readClass__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(2)
     _r2.o = java_io_BufferedReader_readLine__(_r2.o);
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 226)
-    if (_r2.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w31257aaac11b1c42->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w31257aaac11b1c42, sizeof(XMLVM_JMP_BUF)); goto label26; };
+    if (_r2.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w31260aaac11b1c42->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w31260aaac11b1c42, sizeof(XMLVM_JMP_BUF)); goto label26; };
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 229)
     XMLVM_CHECK_NPE(2)
     _r2.o = java_lang_String_trim__(_r2.o);
@@ -629,7 +629,7 @@ void java_util_ServiceLoader_ServiceIterator_readClass__(JAVA_OBJECT me)
     _r2.o = java_lang_String_split___java_lang_String(_r2.o, _r3.o);
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 230)
     _r3.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r2.o));
-    if (_r3.i == 0) { XMLVM_MEMCPY(curThread_w31257aaac11b1c42->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w31257aaac11b1c42, sizeof(XMLVM_JMP_BUF)); goto label67; };
+    if (_r3.i == 0) { XMLVM_MEMCPY(curThread_w31260aaac11b1c42->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w31260aaac11b1c42, sizeof(XMLVM_JMP_BUF)); goto label67; };
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 231)
     _r3.i = 0;
     XMLVM_CHECK_NPE(2)
@@ -642,12 +642,12 @@ void java_util_ServiceLoader_ServiceIterator_readClass__(JAVA_OBJECT me)
     _r3.o = xmlvm_create_java_string_from_pool(2475);
     XMLVM_CHECK_NPE(2)
     _r3.i = java_lang_String_startsWith___java_lang_String(_r2.o, _r3.o);
-    if (_r3.i != 0) { XMLVM_MEMCPY(curThread_w31257aaac11b1c42->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w31257aaac11b1c42, sizeof(XMLVM_JMP_BUF)); goto label67; };
+    if (_r3.i != 0) { XMLVM_MEMCPY(curThread_w31260aaac11b1c42->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w31260aaac11b1c42, sizeof(XMLVM_JMP_BUF)); goto label67; };
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 233)
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(2)
     _r3.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r2.o)->tib->vtable[8])(_r2.o);
-    if (_r3.i == 0) { XMLVM_MEMCPY(curThread_w31257aaac11b1c42->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w31257aaac11b1c42, sizeof(XMLVM_JMP_BUF)); goto label67; };
+    if (_r3.i == 0) { XMLVM_MEMCPY(curThread_w31260aaac11b1c42->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w31260aaac11b1c42, sizeof(XMLVM_JMP_BUF)); goto label67; };
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 236)
     XMLVM_CHECK_NPE(2)
     _r3.o = java_lang_String_toCharArray__(_r2.o);
@@ -655,21 +655,21 @@ void java_util_ServiceLoader_ServiceIterator_readClass__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 237)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w31257aaac11b1c42)
-        XMLVM_CATCH_SPECIFIC(w31257aaac11b1c42,java_lang_Exception,131)
-    XMLVM_CATCH_END(w31257aaac11b1c42)
-    XMLVM_RESTORE_EXCEPTION_ENV(w31257aaac11b1c42)
+    XMLVM_CATCH_BEGIN(w31260aaac11b1c42)
+        XMLVM_CATCH_SPECIFIC(w31260aaac11b1c42,java_lang_Exception,131)
+    XMLVM_CATCH_END(w31260aaac11b1c42)
+    XMLVM_RESTORE_EXCEPTION_ENV(w31260aaac11b1c42)
     label114:;
-    XMLVM_TRY_BEGIN(w31257aaac11b1c44)
+    XMLVM_TRY_BEGIN(w31260aaac11b1c44)
     // Begin try
     _r5.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r3.o));
-    if (_r4.i < _r5.i) { XMLVM_MEMCPY(curThread_w31257aaac11b1c44->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w31257aaac11b1c44, sizeof(XMLVM_JMP_BUF)); goto label144; };
+    if (_r4.i < _r5.i) { XMLVM_MEMCPY(curThread_w31260aaac11b1c44->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w31260aaac11b1c44, sizeof(XMLVM_JMP_BUF)); goto label144; };
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 247)
     XMLVM_CHECK_NPE(10)
     _r3.o = ((java_util_ServiceLoader_ServiceIterator*) _r10.o)->fields.java_util_ServiceLoader_ServiceIterator.que_;
     XMLVM_CHECK_NPE(3)
     _r3.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Queue_contains___java_lang_Object])(_r3.o, _r2.o);
-    if (_r3.i != 0) { XMLVM_MEMCPY(curThread_w31257aaac11b1c44->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w31257aaac11b1c44, sizeof(XMLVM_JMP_BUF)); goto label67; };
+    if (_r3.i != 0) { XMLVM_MEMCPY(curThread_w31260aaac11b1c44->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w31260aaac11b1c44, sizeof(XMLVM_JMP_BUF)); goto label67; };
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 248)
     XMLVM_CHECK_NPE(10)
     _r3.o = ((java_util_ServiceLoader_ServiceIterator*) _r10.o)->fields.java_util_ServiceLoader_ServiceIterator.que_;
@@ -677,15 +677,15 @@ void java_util_ServiceLoader_ServiceIterator_readClass__(JAVA_OBJECT me)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r3.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Queue_add___java_lang_Object])(_r3.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w31257aaac11b1c44)
-        XMLVM_CATCH_SPECIFIC(w31257aaac11b1c44,java_lang_Exception,131)
-    XMLVM_CATCH_END(w31257aaac11b1c44)
-    XMLVM_RESTORE_EXCEPTION_ENV(w31257aaac11b1c44)
+    XMLVM_CATCH_BEGIN(w31260aaac11b1c44)
+        XMLVM_CATCH_SPECIFIC(w31260aaac11b1c44,java_lang_Exception,131)
+    XMLVM_CATCH_END(w31260aaac11b1c44)
+    XMLVM_RESTORE_EXCEPTION_ENV(w31260aaac11b1c44)
     goto label67;
     label131:;
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 253)
-    java_lang_Thread* curThread_w31257aaac11b1c48 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w31257aaac11b1c48->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w31260aaac11b1c48 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w31260aaac11b1c48->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 255)
     _r2.o = __NEW_java_util_ServiceConfigurationError();
     // "KB006"
@@ -696,19 +696,19 @@ void java_util_ServiceLoader_ServiceIterator_readClass__(JAVA_OBJECT me)
     java_util_ServiceConfigurationError___INIT____java_lang_String_java_lang_Throwable(_r2.o, _r0.o, _r1.o);
     XMLVM_THROW_CUSTOM(_r2.o)
     label144:;
-    XMLVM_TRY_BEGIN(w31257aaac11b1c57)
+    XMLVM_TRY_BEGIN(w31260aaac11b1c57)
     // Begin try
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 239)
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     _r5.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     _r5.i = java_lang_Character_isJavaIdentifierPart___char(_r5.i);
-    if (_r5.i != 0) { XMLVM_MEMCPY(curThread_w31257aaac11b1c57->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w31257aaac11b1c57, sizeof(XMLVM_JMP_BUF)); goto label172; };
+    if (_r5.i != 0) { XMLVM_MEMCPY(curThread_w31260aaac11b1c57->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w31260aaac11b1c57, sizeof(XMLVM_JMP_BUF)); goto label172; };
     XMLVM_CHECK_NPE(3)
     XMLVM_CHECK_ARRAY_BOUNDS(_r3.o, _r4.i);
     _r5.i = ((JAVA_ARRAY_CHAR*) (((org_xmlvm_runtime_XMLVMArray*) _r3.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r4.i];
     _r6.i = 46;
-    if (_r5.i == _r6.i) { XMLVM_MEMCPY(curThread_w31257aaac11b1c57->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w31257aaac11b1c57, sizeof(XMLVM_JMP_BUF)); goto label172; };
+    if (_r5.i == _r6.i) { XMLVM_MEMCPY(curThread_w31260aaac11b1c57->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w31260aaac11b1c57, sizeof(XMLVM_JMP_BUF)); goto label172; };
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 240)
     _r1.o = __NEW_java_util_ServiceConfigurationError();
     XMLVM_SOURCE_POSITION("ServiceLoader.java", 241)
@@ -724,10 +724,10 @@ void java_util_ServiceLoader_ServiceIterator_readClass__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r1.o)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w31257aaac11b1c57)
-        XMLVM_CATCH_SPECIFIC(w31257aaac11b1c57,java_lang_Exception,131)
-    XMLVM_CATCH_END(w31257aaac11b1c57)
-    XMLVM_RESTORE_EXCEPTION_ENV(w31257aaac11b1c57)
+    XMLVM_CATCH_BEGIN(w31260aaac11b1c57)
+        XMLVM_CATCH_SPECIFIC(w31260aaac11b1c57,java_lang_Exception,131)
+    XMLVM_CATCH_END(w31260aaac11b1c57)
+    XMLVM_RESTORE_EXCEPTION_ENV(w31260aaac11b1c57)
     label172:;
     _r4.i = _r4.i + 1;
     goto label114;

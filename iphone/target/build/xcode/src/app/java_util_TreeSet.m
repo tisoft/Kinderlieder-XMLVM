@@ -1071,7 +1071,7 @@ JAVA_OBJECT java_util_TreeSet_clone__(JAVA_OBJECT me)
     XMLVMElem _r2;
     XMLVMElem _r3;
     _r3.o = me;
-    XMLVM_TRY_BEGIN(w14362aaac11b1b2)
+    XMLVM_TRY_BEGIN(w14365aaac11b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("TreeSet.java", 157)
     XMLVM_CHECK_NPE(3)
@@ -1082,7 +1082,7 @@ JAVA_OBJECT java_util_TreeSet_clone__(JAVA_OBJECT me)
     _r1.o = ((java_util_TreeSet*) _r3.o)->fields.java_util_TreeSet.backingMap_;
     if (!__TIB_java_util_TreeMap.classInitialized) __INIT_java_util_TreeMap();
     _r1.i = XMLVM_ISA(_r1.o, __CLASS_java_util_TreeMap);
-    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w14362aaac11b1b2->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w14362aaac11b1b2, sizeof(XMLVM_JMP_BUF)); goto label25; };
+    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w14365aaac11b1b2->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w14365aaac11b1b2, sizeof(XMLVM_JMP_BUF)); goto label25; };
     XMLVM_SOURCE_POSITION("TreeSet.java", 160)
     XMLVM_CHECK_NPE(3)
     _r3.o = ((java_util_TreeSet*) _r3.o)->fields.java_util_TreeSet.backingMap_;
@@ -1096,25 +1096,25 @@ JAVA_OBJECT java_util_TreeSet_clone__(JAVA_OBJECT me)
     ((java_util_TreeSet*) _r0.o)->fields.java_util_TreeSet.backingMap_ = _r3.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w14362aaac11b1b2)
-        XMLVM_CATCH_SPECIFIC(w14362aaac11b1b2,java_lang_CloneNotSupportedException,35)
-    XMLVM_CATCH_END(w14362aaac11b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w14362aaac11b1b2)
+    XMLVM_CATCH_BEGIN(w14365aaac11b1b2)
+        XMLVM_CATCH_SPECIFIC(w14365aaac11b1b2,java_lang_CloneNotSupportedException,35)
+    XMLVM_CATCH_END(w14365aaac11b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w14365aaac11b1b2)
     label24:;
-    XMLVM_TRY_BEGIN(w14362aaac11b1b4)
+    XMLVM_TRY_BEGIN(w14365aaac11b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("TreeSet.java", 166)
-    XMLVM_MEMCPY(curThread_w14362aaac11b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w14362aaac11b1b4, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w14365aaac11b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w14365aaac11b1b4, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w14362aaac11b1b4)
-        XMLVM_CATCH_SPECIFIC(w14362aaac11b1b4,java_lang_CloneNotSupportedException,35)
-    XMLVM_CATCH_END(w14362aaac11b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w14362aaac11b1b4)
+    XMLVM_CATCH_BEGIN(w14365aaac11b1b4)
+        XMLVM_CATCH_SPECIFIC(w14365aaac11b1b4,java_lang_CloneNotSupportedException,35)
+    XMLVM_CATCH_END(w14365aaac11b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w14365aaac11b1b4)
     label25:;
-    XMLVM_TRY_BEGIN(w14362aaac11b1b6)
+    XMLVM_TRY_BEGIN(w14365aaac11b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("TreeSet.java", 162)
     _r1.o = __NEW_java_util_TreeMap();
@@ -1126,14 +1126,14 @@ JAVA_OBJECT java_util_TreeSet_clone__(JAVA_OBJECT me)
     ((java_util_TreeSet*) _r0.o)->fields.java_util_TreeSet.backingMap_ = _r1.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w14362aaac11b1b6)
-        XMLVM_CATCH_SPECIFIC(w14362aaac11b1b6,java_lang_CloneNotSupportedException,35)
-    XMLVM_CATCH_END(w14362aaac11b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w14362aaac11b1b6)
+    XMLVM_CATCH_BEGIN(w14365aaac11b1b6)
+        XMLVM_CATCH_SPECIFIC(w14365aaac11b1b6,java_lang_CloneNotSupportedException,35)
+    XMLVM_CATCH_END(w14365aaac11b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w14365aaac11b1b6)
     goto label24;
     label35:;
-    java_lang_Thread* curThread_w14362aaac11b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w14362aaac11b1b9->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w14365aaac11b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w14365aaac11b1b9->fields.java_lang_Thread.xmlvmException_;
     _r0.o = JAVA_NULL;
     goto label24;
     //XMLVM_END_WRAPPER

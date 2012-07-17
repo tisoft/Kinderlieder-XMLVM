@@ -447,7 +447,7 @@ void my_kinderlieder_Library_3_load__(JAVA_OBJECT me)
     _r8.i = _r8.i + 1;
     goto label65;
     label247:;
-    XMLVM_TRY_BEGIN(w36880aaab3b1d139)
+    XMLVM_TRY_BEGIN(w36882aaab3b1d139)
     // Begin try
     XMLVM_SOURCE_POSITION("Library.java", 106)
     //java_io_BufferedReader_close__[6]
@@ -455,17 +455,17 @@ void my_kinderlieder_Library_3_load__(JAVA_OBJECT me)
     (*(void (*)(JAVA_OBJECT)) ((java_io_BufferedReader*) _r5.o)->tib->vtable[6])(_r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w36880aaab3b1d139)
-        XMLVM_CATCH_SPECIFIC(w36880aaab3b1d139,java_io_IOException,251)
-    XMLVM_CATCH_END(w36880aaab3b1d139)
-    XMLVM_RESTORE_EXCEPTION_ENV(w36880aaab3b1d139)
+    XMLVM_CATCH_BEGIN(w36882aaab3b1d139)
+        XMLVM_CATCH_SPECIFIC(w36882aaab3b1d139,java_io_IOException,251)
+    XMLVM_CATCH_END(w36882aaab3b1d139)
+    XMLVM_RESTORE_EXCEPTION_ENV(w36882aaab3b1d139)
     XMLVM_SOURCE_POSITION("Library.java", 113)
     XMLVM_EXIT_METHOD()
     return;
     label251:;
     XMLVM_SOURCE_POSITION("Library.java", 107)
-    java_lang_Thread* curThread_w36880aaab3b1d144 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r6.o = curThread_w36880aaab3b1d144->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w36882aaab3b1d144 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r6.o = curThread_w36882aaab3b1d144->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("Library.java", 108)
     _r19.o = __NEW_org_json_JSONException();
     _r0 = _r19;

@@ -659,7 +659,7 @@ JAVA_LONG java_io_ObjectStreamField_getFieldID___org_apache_harmony_misc_accesso
     XMLVM_EXIT_METHOD()
     return _r0.l;
     label11:;
-    XMLVM_TRY_BEGIN(w29030aaab9b1c15)
+    XMLVM_TRY_BEGIN(w29035aaab9b1c15)
     // Begin try
     XMLVM_SOURCE_POSITION("ObjectStreamField.java", 62)
     XMLVM_CHECK_NPE(4)
@@ -672,18 +672,18 @@ JAVA_LONG java_io_ObjectStreamField_getFieldID___org_apache_harmony_misc_accesso
     ((java_io_ObjectStreamField*) _r4.o)->fields.java_io_ObjectStreamField.assocFieldID_ = _r0.l;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w29030aaab9b1c15)
-        XMLVM_CATCH_SPECIFIC(w29030aaab9b1c15,java_lang_NoSuchFieldError,22)
-    XMLVM_CATCH_END(w29030aaab9b1c15)
-    XMLVM_RESTORE_EXCEPTION_ENV(w29030aaab9b1c15)
+    XMLVM_CATCH_BEGIN(w29035aaab9b1c15)
+        XMLVM_CATCH_SPECIFIC(w29035aaab9b1c15,java_lang_NoSuchFieldError,22)
+    XMLVM_CATCH_END(w29035aaab9b1c15)
+    XMLVM_RESTORE_EXCEPTION_ENV(w29035aaab9b1c15)
     label19:;
     XMLVM_CHECK_NPE(4)
     _r0.l = ((java_io_ObjectStreamField*) _r4.o)->fields.java_io_ObjectStreamField.assocFieldID_;
     goto label10;
     label22:;
     XMLVM_SOURCE_POSITION("ObjectStreamField.java", 64)
-    java_lang_Thread* curThread_w29030aaab9b1c21 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w29030aaab9b1c21->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w29035aaab9b1c21 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w29035aaab9b1c21->fields.java_lang_Thread.xmlvmException_;
     _r0.l = -2;
     XMLVM_CHECK_NPE(4)
     ((java_io_ObjectStreamField*) _r4.o)->fields.java_io_ObjectStreamField.assocFieldID_ = _r0.l;
@@ -1358,56 +1358,56 @@ void java_io_ObjectStreamField_resolve___java_lang_ClassLoader(JAVA_OBJECT me, J
     label64:;
     XMLVM_SOURCE_POSITION("ObjectStreamField.java", 354)
     _r1.i = 0;
-    XMLVM_TRY_BEGIN(w29030aaac26b1c42)
+    XMLVM_TRY_BEGIN(w29035aaac26b1c42)
     // Begin try
     _r0.o = java_lang_Class_forName___java_lang_String_boolean_java_lang_ClassLoader(_r0.o, _r1.i, _r6.o);
     XMLVM_SOURCE_POSITION("ObjectStreamField.java", 355)
     XMLVM_CHECK_NPE(0)
     _r1.o = java_lang_Class_getClassLoader__(_r0.o);
-    if (_r1.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w29030aaac26b1c42->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29030aaac26b1c42, sizeof(XMLVM_JMP_BUF)); goto label80; };
+    if (_r1.o != JAVA_NULL) { XMLVM_MEMCPY(curThread_w29035aaac26b1c42->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29035aaac26b1c42, sizeof(XMLVM_JMP_BUF)); goto label80; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w29030aaac26b1c42)
-        XMLVM_CATCH_SPECIFIC(w29030aaac26b1c42,java_lang_ClassNotFoundException,78)
-    XMLVM_CATCH_END(w29030aaac26b1c42)
-    XMLVM_RESTORE_EXCEPTION_ENV(w29030aaac26b1c42)
+    XMLVM_CATCH_BEGIN(w29035aaac26b1c42)
+        XMLVM_CATCH_SPECIFIC(w29035aaac26b1c42,java_lang_ClassNotFoundException,78)
+    XMLVM_CATCH_END(w29035aaac26b1c42)
+    XMLVM_RESTORE_EXCEPTION_ENV(w29035aaac26b1c42)
     label75:;
-    XMLVM_TRY_BEGIN(w29030aaac26b1c44)
+    XMLVM_TRY_BEGIN(w29035aaac26b1c44)
     // Begin try
     XMLVM_CHECK_NPE(5)
     ((java_io_ObjectStreamField*) _r5.o)->fields.java_io_ObjectStreamField.type_ = _r0.o;
-    { XMLVM_MEMCPY(curThread_w29030aaac26b1c44->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29030aaac26b1c44, sizeof(XMLVM_JMP_BUF)); goto label36; };
+    { XMLVM_MEMCPY(curThread_w29035aaac26b1c44->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29035aaac26b1c44, sizeof(XMLVM_JMP_BUF)); goto label36; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w29030aaac26b1c44)
-        XMLVM_CATCH_SPECIFIC(w29030aaac26b1c44,java_lang_ClassNotFoundException,78)
-    XMLVM_CATCH_END(w29030aaac26b1c44)
-    XMLVM_RESTORE_EXCEPTION_ENV(w29030aaac26b1c44)
+    XMLVM_CATCH_BEGIN(w29035aaac26b1c44)
+        XMLVM_CATCH_SPECIFIC(w29035aaac26b1c44,java_lang_ClassNotFoundException,78)
+    XMLVM_CATCH_END(w29035aaac26b1c44)
+    XMLVM_RESTORE_EXCEPTION_ENV(w29035aaac26b1c44)
     label78:;
-    XMLVM_TRY_BEGIN(w29030aaac26b1c46)
+    XMLVM_TRY_BEGIN(w29035aaac26b1c46)
     // Begin try
-    java_lang_Thread* curThread_w29030aaac26b1c46aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w29030aaac26b1c46aa->fields.java_lang_Thread.xmlvmException_;
-    { XMLVM_MEMCPY(curThread_w29030aaac26b1c46->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29030aaac26b1c46, sizeof(XMLVM_JMP_BUF)); goto label36; };
+    java_lang_Thread* curThread_w29035aaac26b1c46aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w29035aaac26b1c46aa->fields.java_lang_Thread.xmlvmException_;
+    { XMLVM_MEMCPY(curThread_w29035aaac26b1c46->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w29035aaac26b1c46, sizeof(XMLVM_JMP_BUF)); goto label36; };
     XMLVM_SOURCE_POSITION("ObjectStreamField.java", 356)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w29030aaac26b1c46)
-        XMLVM_CATCH_SPECIFIC(w29030aaac26b1c46,java_lang_ClassNotFoundException,78)
-    XMLVM_CATCH_END(w29030aaac26b1c46)
-    XMLVM_RESTORE_EXCEPTION_ENV(w29030aaac26b1c46)
+    XMLVM_CATCH_BEGIN(w29035aaac26b1c46)
+        XMLVM_CATCH_SPECIFIC(w29035aaac26b1c46,java_lang_ClassNotFoundException,78)
+    XMLVM_CATCH_END(w29035aaac26b1c46)
+    XMLVM_RESTORE_EXCEPTION_ENV(w29035aaac26b1c46)
     label80:;
-    XMLVM_TRY_BEGIN(w29030aaac26b1c48)
+    XMLVM_TRY_BEGIN(w29035aaac26b1c48)
     // Begin try
     _r1.o = __NEW_java_lang_ref_WeakReference();
     XMLVM_CHECK_NPE(1)
     java_lang_ref_WeakReference___INIT____java_lang_Object(_r1.o, _r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w29030aaac26b1c48)
-        XMLVM_CATCH_SPECIFIC(w29030aaac26b1c48,java_lang_ClassNotFoundException,78)
-    XMLVM_CATCH_END(w29030aaac26b1c48)
-    XMLVM_RESTORE_EXCEPTION_ENV(w29030aaac26b1c48)
+    XMLVM_CATCH_BEGIN(w29035aaac26b1c48)
+        XMLVM_CATCH_SPECIFIC(w29035aaac26b1c48,java_lang_ClassNotFoundException,78)
+    XMLVM_CATCH_END(w29035aaac26b1c48)
+    XMLVM_RESTORE_EXCEPTION_ENV(w29035aaac26b1c48)
     _r0 = _r1;
     goto label75;
     //XMLVM_END_WRAPPER

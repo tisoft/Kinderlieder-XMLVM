@@ -1314,16 +1314,16 @@ JAVA_INT java_util_Formatter_ParserStateMachine_parseInt___java_nio_CharBuffer(J
     XMLVM_SOURCE_POSITION("Formatter.java", 2810)
     XMLVM_CHECK_NPE(5)
     java_nio_Buffer_position___int(_r5.o, _r1.i);
-    XMLVM_TRY_BEGIN(w28198aaac26b1c22)
+    XMLVM_TRY_BEGIN(w28201aaac26b1c22)
     // Begin try
     XMLVM_SOURCE_POSITION("Formatter.java", 2812)
     _r0.i = java_lang_Integer_parseInt___java_lang_String(_r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28198aaac26b1c22)
-        XMLVM_CATCH_SPECIFIC(w28198aaac26b1c22,java_lang_NumberFormatException,52)
-    XMLVM_CATCH_END(w28198aaac26b1c22)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28198aaac26b1c22)
+    XMLVM_CATCH_BEGIN(w28201aaac26b1c22)
+        XMLVM_CATCH_SPECIFIC(w28201aaac26b1c22,java_lang_NumberFormatException,52)
+    XMLVM_CATCH_END(w28201aaac26b1c22)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28201aaac26b1c22)
     label35:;
     XMLVM_SOURCE_POSITION("Formatter.java", 2814)
     XMLVM_EXIT_METHOD()
@@ -1342,8 +1342,8 @@ JAVA_INT java_util_Formatter_ParserStateMachine_parseInt___java_nio_CharBuffer(J
     XMLVM_SOURCE_POSITION("Formatter.java", 2805)
     goto label16;
     label52:;
-    java_lang_Thread* curThread_w28198aaac26b1c37 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w28198aaac26b1c37->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w28201aaac26b1c37 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w28201aaac26b1c37->fields.java_lang_Thread.xmlvmException_;
     _r0.i = -1;
     goto label35;
     //XMLVM_END_WRAPPER

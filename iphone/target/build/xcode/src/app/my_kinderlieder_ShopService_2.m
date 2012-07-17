@@ -249,7 +249,7 @@ void my_kinderlieder_ShopService_2_run__(JAVA_OBJECT me)
     XMLVMElem _r6;
     XMLVMElem _r7;
     _r7.o = me;
-    XMLVM_TRY_BEGIN(w11200aaab2b1b2)
+    XMLVM_TRY_BEGIN(w11203aaab2b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("ShopService.java", 345)
     XMLVM_CHECK_NPE(7)
@@ -281,23 +281,23 @@ void my_kinderlieder_ShopService_2_run__(JAVA_OBJECT me)
     _r1.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r5.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_List_iterator__])(_r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w11200aaab2b1b2)
-        XMLVM_CATCH_SPECIFIC(w11200aaab2b1b2,org_json_JSONException,59)
-    XMLVM_CATCH_END(w11200aaab2b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w11200aaab2b1b2)
+    XMLVM_CATCH_BEGIN(w11203aaab2b1b2)
+        XMLVM_CATCH_SPECIFIC(w11203aaab2b1b2,org_json_JSONException,59)
+    XMLVM_CATCH_END(w11203aaab2b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w11203aaab2b1b2)
     label35:;
-    XMLVM_TRY_BEGIN(w11200aaab2b1b4)
+    XMLVM_TRY_BEGIN(w11203aaab2b1b4)
     // Begin try
     XMLVM_CHECK_NPE(1)
     _r5.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_hasNext__])(_r1.o);
-    if (_r5.i == 0) { XMLVM_MEMCPY(curThread_w11200aaab2b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w11200aaab2b1b4, sizeof(XMLVM_JMP_BUF)); goto label65; };
+    if (_r5.i == 0) { XMLVM_MEMCPY(curThread_w11203aaab2b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w11203aaab2b1b4, sizeof(XMLVM_JMP_BUF)); goto label65; };
     XMLVM_CHECK_NPE(1)
     _r3.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r1.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Iterator_next__])(_r1.o);
     _r3.o = _r3.o;
     XMLVM_SOURCE_POSITION("ShopService.java", 349)
     if (!__TIB_my_kinderlieder_InAppProduct.classInitialized) __INIT_my_kinderlieder_InAppProduct();
     _r5.i = XMLVM_ISA(_r3.o, __CLASS_my_kinderlieder_InAppProduct);
-    if (_r5.i == 0) { XMLVM_MEMCPY(curThread_w11200aaab2b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w11200aaab2b1b4, sizeof(XMLVM_JMP_BUF)); goto label35; };
+    if (_r5.i == 0) { XMLVM_MEMCPY(curThread_w11203aaab2b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w11203aaab2b1b4, sizeof(XMLVM_JMP_BUF)); goto label35; };
     XMLVM_SOURCE_POSITION("ShopService.java", 350)
     _r3.o = _r3.o;
     XMLVM_CHECK_NPE(3)
@@ -306,15 +306,15 @@ void my_kinderlieder_ShopService_2_run__(JAVA_OBJECT me)
     (*(JAVA_BOOLEAN (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Set_add___java_lang_Object])(_r2.o, _r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w11200aaab2b1b4)
-        XMLVM_CATCH_SPECIFIC(w11200aaab2b1b4,org_json_JSONException,59)
-    XMLVM_CATCH_END(w11200aaab2b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w11200aaab2b1b4)
+    XMLVM_CATCH_BEGIN(w11203aaab2b1b4)
+        XMLVM_CATCH_SPECIFIC(w11203aaab2b1b4,org_json_JSONException,59)
+    XMLVM_CATCH_END(w11203aaab2b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w11203aaab2b1b4)
     goto label35;
     label59:;
     XMLVM_SOURCE_POSITION("ShopService.java", 380)
-    java_lang_Thread* curThread_w11200aaab2b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r5.o = curThread_w11200aaab2b1b8->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w11203aaab2b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r5.o = curThread_w11203aaab2b1b8->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r5;
     XMLVM_SOURCE_POSITION("ShopService.java", 381)
     my_kinderlieder_Util_showErrorDialog___java_lang_Exception(_r0.o);
@@ -323,12 +323,12 @@ void my_kinderlieder_ShopService_2_run__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return;
     label65:;
-    XMLVM_TRY_BEGIN(w11200aaab2b1c16)
+    XMLVM_TRY_BEGIN(w11203aaab2b1c16)
     // Begin try
     XMLVM_SOURCE_POSITION("ShopService.java", 352)
     XMLVM_CHECK_NPE(2)
     _r5.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_java_util_Set_isEmpty__])(_r2.o);
-    if (_r5.i != 0) { XMLVM_MEMCPY(curThread_w11200aaab2b1c16->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w11200aaab2b1c16, sizeof(XMLVM_JMP_BUF)); goto label98; };
+    if (_r5.i != 0) { XMLVM_MEMCPY(curThread_w11203aaab2b1c16->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w11203aaab2b1c16, sizeof(XMLVM_JMP_BUF)); goto label98; };
     XMLVM_SOURCE_POSITION("ShopService.java", 353)
     _r4.o = __NEW_org_xmlvm_iphone_SKProductsRequest();
     XMLVM_CHECK_NPE(4)
@@ -351,12 +351,12 @@ void my_kinderlieder_ShopService_2_run__(JAVA_OBJECT me)
     org_xmlvm_iphone_SKRequest_start__(_r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w11200aaab2b1c16)
-        XMLVM_CATCH_SPECIFIC(w11200aaab2b1c16,org_json_JSONException,59)
-    XMLVM_CATCH_END(w11200aaab2b1c16)
-    XMLVM_RESTORE_EXCEPTION_ENV(w11200aaab2b1c16)
+    XMLVM_CATCH_BEGIN(w11203aaab2b1c16)
+        XMLVM_CATCH_SPECIFIC(w11203aaab2b1c16,org_json_JSONException,59)
+    XMLVM_CATCH_END(w11203aaab2b1c16)
+    XMLVM_RESTORE_EXCEPTION_ENV(w11203aaab2b1c16)
     label98:;
-    XMLVM_TRY_BEGIN(w11200aaab2b1c18)
+    XMLVM_TRY_BEGIN(w11203aaab2b1c18)
     // Begin try
     XMLVM_SOURCE_POSITION("ShopService.java", 379)
     XMLVM_CHECK_NPE(7)
@@ -364,10 +364,10 @@ void my_kinderlieder_ShopService_2_run__(JAVA_OBJECT me)
     my_kinderlieder_ShopService_access$200___my_kinderlieder_ShopService(_r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w11200aaab2b1c18)
-        XMLVM_CATCH_SPECIFIC(w11200aaab2b1c18,org_json_JSONException,59)
-    XMLVM_CATCH_END(w11200aaab2b1c18)
-    XMLVM_RESTORE_EXCEPTION_ENV(w11200aaab2b1c18)
+    XMLVM_CATCH_BEGIN(w11203aaab2b1c18)
+        XMLVM_CATCH_SPECIFIC(w11203aaab2b1c18,org_json_JSONException,59)
+    XMLVM_CATCH_END(w11203aaab2b1c18)
+    XMLVM_RESTORE_EXCEPTION_ENV(w11203aaab2b1c18)
     goto label64;
     //XMLVM_END_WRAPPER
 }

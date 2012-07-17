@@ -489,23 +489,23 @@ JAVA_OBJECT gnu_xml_util_Resolver_getURL___java_lang_String(JAVA_OBJECT n1)
     XMLVMElem _r0;
     XMLVMElem _r1;
     _r1.o = n1;
-    XMLVM_TRY_BEGIN(w18449aaab4b1b2)
+    XMLVM_TRY_BEGIN(w18452aaab4b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("Resolver.java", 158)
     _r0.o = gnu_xml_util_Resolver_fileNameToURL___java_lang_String(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w18449aaab4b1b2)
-        XMLVM_CATCH_SPECIFIC(w18449aaab4b1b2,java_lang_Exception,5)
-    XMLVM_CATCH_END(w18449aaab4b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w18449aaab4b1b2)
+    XMLVM_CATCH_BEGIN(w18452aaab4b1b2)
+        XMLVM_CATCH_SPECIFIC(w18452aaab4b1b2,java_lang_Exception,5)
+    XMLVM_CATCH_END(w18452aaab4b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w18452aaab4b1b2)
     label4:;
     XMLVM_SOURCE_POSITION("Resolver.java", 160)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label5:;
-    java_lang_Thread* curThread_w18449aaab4b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w18449aaab4b1b7->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w18452aaab4b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w18452aaab4b1b7->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r1;
     goto label4;
     //XMLVM_END_WRAPPER

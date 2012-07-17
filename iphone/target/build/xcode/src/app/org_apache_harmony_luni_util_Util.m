@@ -536,7 +536,7 @@ JAVA_OBJECT org_apache_harmony_luni_util_Util_getBytes___java_lang_String(JAVA_O
     XMLVM_SOURCE_POSITION("Util.java", 58)
     _r0.o = org_apache_harmony_luni_util_Util_GET_defaultEncoding();
     if (_r0.o == JAVA_NULL) goto label12;
-    XMLVM_TRY_BEGIN(w40423aaab4b1b5)
+    XMLVM_TRY_BEGIN(w40425aaab4b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("Util.java", 60)
     _r0.o = org_apache_harmony_luni_util_Util_GET_defaultEncoding();
@@ -544,18 +544,18 @@ JAVA_OBJECT org_apache_harmony_luni_util_Util_getBytes___java_lang_String(JAVA_O
     _r0.o = java_lang_String_getBytes___java_lang_String(_r1.o, _r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40423aaab4b1b5)
-        XMLVM_CATCH_SPECIFIC(w40423aaab4b1b5,java_io_UnsupportedEncodingException,11)
-    XMLVM_CATCH_END(w40423aaab4b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40423aaab4b1b5)
+    XMLVM_CATCH_BEGIN(w40425aaab4b1b5)
+        XMLVM_CATCH_SPECIFIC(w40425aaab4b1b5,java_io_UnsupportedEncodingException,11)
+    XMLVM_CATCH_END(w40425aaab4b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40425aaab4b1b5)
     label10:;
     XMLVM_SOURCE_POSITION("Util.java", 64)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label11:;
     XMLVM_SOURCE_POSITION("Util.java", 61)
-    java_lang_Thread* curThread_w40423aaab4b1c11 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w40423aaab4b1c11->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w40425aaab4b1c11 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w40425aaab4b1c11->fields.java_lang_Thread.xmlvmException_;
     label12:;
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_String_getBytes__(_r1.o);
@@ -572,7 +572,7 @@ JAVA_OBJECT org_apache_harmony_luni_util_Util_getUTF8Bytes___java_lang_String(JA
     XMLVMElem _r1;
     XMLVMElem _r2;
     _r2.o = n1;
-    XMLVM_TRY_BEGIN(w40423aaab5b1b2)
+    XMLVM_TRY_BEGIN(w40425aaab5b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("Util.java", 75)
     // "UTF-8"
@@ -581,18 +581,18 @@ JAVA_OBJECT org_apache_harmony_luni_util_Util_getUTF8Bytes___java_lang_String(JA
     _r1.o = java_lang_String_getBytes___java_lang_String(_r2.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40423aaab5b1b2)
-        XMLVM_CATCH_SPECIFIC(w40423aaab5b1b2,java_io_UnsupportedEncodingException,7)
-    XMLVM_CATCH_END(w40423aaab5b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40423aaab5b1b2)
+    XMLVM_CATCH_BEGIN(w40425aaab5b1b2)
+        XMLVM_CATCH_SPECIFIC(w40425aaab5b1b2,java_io_UnsupportedEncodingException,7)
+    XMLVM_CATCH_END(w40425aaab5b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40425aaab5b1b2)
     label6:;
     XMLVM_SOURCE_POSITION("Util.java", 77)
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label7:;
     XMLVM_SOURCE_POSITION("Util.java", 76)
-    java_lang_Thread* curThread_w40423aaab5b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w40423aaab5b1b8->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w40425aaab5b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w40425aaab5b1b8->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r1;
     _r1.o = org_apache_harmony_luni_util_Util_getBytes___java_lang_String(_r2.o);
     goto label6;
@@ -615,7 +615,7 @@ JAVA_OBJECT org_apache_harmony_luni_util_Util_toString___byte_1ARRAY(JAVA_OBJECT
     XMLVM_SOURCE_POSITION("Util.java", 82)
     _r0.o = org_apache_harmony_luni_util_Util_GET_defaultEncoding();
     if (_r0.o == JAVA_NULL) goto label16;
-    XMLVM_TRY_BEGIN(w40423aaab6b1b6)
+    XMLVM_TRY_BEGIN(w40425aaab6b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("Util.java", 84)
     _r0.o = __NEW_java_lang_String();
@@ -626,18 +626,18 @@ JAVA_OBJECT org_apache_harmony_luni_util_Util_toString___byte_1ARRAY(JAVA_OBJECT
     java_lang_String___INIT____byte_1ARRAY_int_int_java_lang_String(_r0.o, _r5.o, _r1.i, _r2.i, _r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40423aaab6b1b6)
-        XMLVM_CATCH_SPECIFIC(w40423aaab6b1b6,java_io_UnsupportedEncodingException,15)
-    XMLVM_CATCH_END(w40423aaab6b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40423aaab6b1b6)
+    XMLVM_CATCH_BEGIN(w40425aaab6b1b6)
+        XMLVM_CATCH_SPECIFIC(w40425aaab6b1b6,java_io_UnsupportedEncodingException,15)
+    XMLVM_CATCH_END(w40425aaab6b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40425aaab6b1b6)
     label14:;
     XMLVM_SOURCE_POSITION("Util.java", 88)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label15:;
     XMLVM_SOURCE_POSITION("Util.java", 85)
-    java_lang_Thread* curThread_w40423aaab6b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w40423aaab6b1c12->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w40425aaab6b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w40425aaab6b1c12->fields.java_lang_Thread.xmlvmException_;
     label16:;
     _r0.o = __NEW_java_lang_String();
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r5.o));
@@ -681,7 +681,7 @@ JAVA_OBJECT org_apache_harmony_luni_util_Util_toString___byte_1ARRAY_int_int(JAV
     XMLVM_SOURCE_POSITION("Util.java", 96)
     _r0.o = org_apache_harmony_luni_util_Util_GET_defaultEncoding();
     if (_r0.o == JAVA_NULL) goto label13;
-    XMLVM_TRY_BEGIN(w40423aaab8b1b7)
+    XMLVM_TRY_BEGIN(w40425aaab8b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("Util.java", 98)
     _r0.o = __NEW_java_lang_String();
@@ -690,18 +690,18 @@ JAVA_OBJECT org_apache_harmony_luni_util_Util_toString___byte_1ARRAY_int_int(JAV
     java_lang_String___INIT____byte_1ARRAY_int_int_java_lang_String(_r0.o, _r2.o, _r3.i, _r4.i, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40423aaab8b1b7)
-        XMLVM_CATCH_SPECIFIC(w40423aaab8b1b7,java_io_UnsupportedEncodingException,12)
-    XMLVM_CATCH_END(w40423aaab8b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40423aaab8b1b7)
+    XMLVM_CATCH_BEGIN(w40425aaab8b1b7)
+        XMLVM_CATCH_SPECIFIC(w40425aaab8b1b7,java_io_UnsupportedEncodingException,12)
+    XMLVM_CATCH_END(w40425aaab8b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40425aaab8b1b7)
     label11:;
     XMLVM_SOURCE_POSITION("Util.java", 102)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label12:;
     XMLVM_SOURCE_POSITION("Util.java", 99)
-    java_lang_Thread* curThread_w40423aaab8b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w40423aaab8b1c13->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w40425aaab8b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w40425aaab8b1c13->fields.java_lang_Thread.xmlvmException_;
     label13:;
     _r0.o = __NEW_java_lang_String();
     XMLVM_CHECK_NPE(0)
@@ -724,7 +724,7 @@ JAVA_OBJECT org_apache_harmony_luni_util_Util_toUTF8String___byte_1ARRAY_int_int
     _r3.o = n1;
     _r4.i = n2;
     _r5.i = n3;
-    XMLVM_TRY_BEGIN(w40423aaab9b1b4)
+    XMLVM_TRY_BEGIN(w40425aaab9b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("Util.java", 107)
     _r1.o = __NEW_java_lang_String();
@@ -734,18 +734,18 @@ JAVA_OBJECT org_apache_harmony_luni_util_Util_toUTF8String___byte_1ARRAY_int_int
     java_lang_String___INIT____byte_1ARRAY_int_int_java_lang_String(_r1.o, _r3.o, _r4.i, _r5.i, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40423aaab9b1b4)
-        XMLVM_CATCH_SPECIFIC(w40423aaab9b1b4,java_io_UnsupportedEncodingException,8)
-    XMLVM_CATCH_END(w40423aaab9b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40423aaab9b1b4)
+    XMLVM_CATCH_BEGIN(w40425aaab9b1b4)
+        XMLVM_CATCH_SPECIFIC(w40425aaab9b1b4,java_io_UnsupportedEncodingException,8)
+    XMLVM_CATCH_END(w40425aaab9b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40425aaab9b1b4)
     label7:;
     XMLVM_SOURCE_POSITION("Util.java", 109)
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label8:;
     XMLVM_SOURCE_POSITION("Util.java", 108)
-    java_lang_Thread* curThread_w40423aaab9b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w40423aaab9b1c10->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w40425aaab9b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w40425aaab9b1c10->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r1;
     _r1.o = org_apache_harmony_luni_util_Util_toString___byte_1ARRAY_int_int(_r3.o, _r4.i, _r5.i);
     goto label7;
@@ -1671,7 +1671,7 @@ JAVA_OBJECT org_apache_harmony_luni_util_Util_decode___java_lang_String_boolean_
     java_lang_StringBuilder_append___java_lang_String(_r6.o, _r7.o);
     goto label30;
     label156:;
-    XMLVM_TRY_BEGIN(w40423aaac15b1d102)
+    XMLVM_TRY_BEGIN(w40425aaac15b1d102)
     // Begin try
     XMLVM_SOURCE_POSITION("Util.java", 315)
     XMLVM_CHECK_NPE(5)
@@ -1680,15 +1680,15 @@ JAVA_OBJECT org_apache_harmony_luni_util_Util_decode___java_lang_String_boolean_
     java_lang_StringBuilder_append___java_lang_String(_r6.o, _r7.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40423aaac15b1d102)
-        XMLVM_CATCH_SPECIFIC(w40423aaac15b1d102,java_io_UnsupportedEncodingException,165)
-    XMLVM_CATCH_END(w40423aaac15b1d102)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40423aaac15b1d102)
+    XMLVM_CATCH_BEGIN(w40425aaac15b1d102)
+        XMLVM_CATCH_SPECIFIC(w40425aaac15b1d102,java_io_UnsupportedEncodingException,165)
+    XMLVM_CATCH_END(w40425aaac15b1d102)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40425aaac15b1d102)
     goto label30;
     label165:;
     XMLVM_SOURCE_POSITION("Util.java", 316)
-    java_lang_Thread* curThread_w40423aaac15b1d106 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r7.o = curThread_w40423aaac15b1d106->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w40425aaac15b1d106 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r7.o = curThread_w40425aaac15b1d106->fields.java_lang_Thread.xmlvmException_;
     _r3 = _r7;
     XMLVM_SOURCE_POSITION("Util.java", 317)
     _r7.o = __NEW_java_lang_IllegalArgumentException();
@@ -1828,7 +1828,7 @@ JAVA_OBJECT org_apache_harmony_luni_util_Util_encodeURL___java_lang_String(JAVA_
     label121:;
     XMLVM_SOURCE_POSITION("Util.java", 358)
     _r1.o = JAVA_NULL;
-    XMLVM_TRY_BEGIN(w40423aaac16b1c68)
+    XMLVM_TRY_BEGIN(w40425aaac16b1c68)
     // Begin try
     XMLVM_SOURCE_POSITION("Util.java", 360)
     _r7.o = __NEW_java_lang_String();
@@ -1847,10 +1847,10 @@ JAVA_OBJECT org_apache_harmony_luni_util_Util_encodeURL___java_lang_String(JAVA_
     _r1.o = java_lang_String_getBytes___java_lang_String(_r7.o, _r8.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40423aaac16b1c68)
-        XMLVM_CATCH_SPECIFIC(w40423aaac16b1c68,java_io_UnsupportedEncodingException,173)
-    XMLVM_CATCH_END(w40423aaac16b1c68)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40423aaac16b1c68)
+    XMLVM_CATCH_BEGIN(w40425aaac16b1c68)
+        XMLVM_CATCH_SPECIFIC(w40425aaac16b1c68,java_io_UnsupportedEncodingException,173)
+    XMLVM_CATCH_END(w40425aaac16b1c68)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40425aaac16b1c68)
     XMLVM_SOURCE_POSITION("Util.java", 364)
     _r6.i = 0;
     label140:;
@@ -1887,8 +1887,8 @@ JAVA_OBJECT org_apache_harmony_luni_util_Util_encodeURL___java_lang_String(JAVA_
     goto label140;
     label173:;
     XMLVM_SOURCE_POSITION("Util.java", 361)
-    java_lang_Thread* curThread_w40423aaac16b1c91 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r7.o = curThread_w40423aaac16b1c91->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w40425aaac16b1c91 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r7.o = curThread_w40425aaac16b1c91->fields.java_lang_Thread.xmlvmException_;
     _r4 = _r7;
     XMLVM_SOURCE_POSITION("Util.java", 362)
     _r7.o = __NEW_java_lang_AssertionError();
@@ -2166,7 +2166,7 @@ void org_apache_harmony_luni_util_Util___CLINIT_()
     _r2.o = xmlvm_create_java_string_from_pool(2511);
     _r0.o = java_lang_System_getProperty___java_lang_String(_r2.o);
     if (_r0.o == JAVA_NULL) goto label124;
-    XMLVM_TRY_BEGIN(w40423aaac19b1c68)
+    XMLVM_TRY_BEGIN(w40425aaac19b1c68)
     // Begin try
     XMLVM_SOURCE_POSITION("Util.java", 41)
     XMLVM_SOURCE_POSITION("Util.java", 43)
@@ -2176,10 +2176,10 @@ void org_apache_harmony_luni_util_Util___CLINIT_()
     java_lang_String_getBytes___java_lang_String(_r2.o, _r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40423aaac19b1c68)
-        XMLVM_CATCH_SPECIFIC(w40423aaac19b1c68,java_lang_Throwable,127)
-    XMLVM_CATCH_END(w40423aaac19b1c68)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40423aaac19b1c68)
+    XMLVM_CATCH_BEGIN(w40425aaac19b1c68)
+        XMLVM_CATCH_SPECIFIC(w40425aaac19b1c68,java_lang_Throwable,127)
+    XMLVM_CATCH_END(w40425aaac19b1c68)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40425aaac19b1c68)
     label124:;
     XMLVM_SOURCE_POSITION("Util.java", 48)
     org_apache_harmony_luni_util_Util_PUT_defaultEncoding( _r0.o);
@@ -2188,8 +2188,8 @@ void org_apache_harmony_luni_util_Util___CLINIT_()
     return;
     label127:;
     XMLVM_SOURCE_POSITION("Util.java", 44)
-    java_lang_Thread* curThread_w40423aaac19b1c76 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w40423aaac19b1c76->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w40425aaac19b1c76 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w40425aaac19b1c76->fields.java_lang_Thread.xmlvmException_;
     _r1 = _r2;
     _r0.o = JAVA_NULL;
     XMLVM_SOURCE_POSITION("Util.java", 45)

@@ -251,7 +251,7 @@ void my_kinderlieder_ShopDetailViewController_2_run__(JAVA_OBJECT me)
     XMLVMElem _r3;
     XMLVMElem _r4;
     _r4.o = me;
-    XMLVM_TRY_BEGIN(w18585aaab3b1b2)
+    XMLVM_TRY_BEGIN(w18588aaab3b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 61)
     _r1.o = my_kinderlieder_ShopService_getInstance__();
@@ -262,18 +262,18 @@ void my_kinderlieder_ShopDetailViewController_2_run__(JAVA_OBJECT me)
     my_kinderlieder_ShopService_download___my_kinderlieder_Product_org_xmlvm_iphone_SKPaymentTransaction(_r1.o, _r2.o, _r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w18585aaab3b1b2)
-        XMLVM_CATCH_SPECIFIC(w18585aaab3b1b2,java_io_IOException,11)
-    XMLVM_CATCH_END(w18585aaab3b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w18585aaab3b1b2)
+    XMLVM_CATCH_BEGIN(w18588aaab3b1b2)
+        XMLVM_CATCH_SPECIFIC(w18588aaab3b1b2,java_io_IOException,11)
+    XMLVM_CATCH_END(w18588aaab3b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w18588aaab3b1b2)
     label10:;
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 65)
     XMLVM_EXIT_METHOD()
     return;
     label11:;
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 62)
-    java_lang_Thread* curThread_w18585aaab3b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w18585aaab3b1b8->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w18588aaab3b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w18588aaab3b1b8->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r1;
     XMLVM_SOURCE_POSITION("ShopDetailViewController.java", 63)
     my_kinderlieder_Util_showErrorDialog___java_lang_Exception(_r0.o);

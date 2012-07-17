@@ -3504,7 +3504,7 @@ JAVA_OBJECT gnu_xml_transform_StreamSerializer_toString___org_w3c_dom_Node(JAVA_
     _r0.o = __NEW_java_io_ByteArrayOutputStream();
     XMLVM_CHECK_NPE(0)
     java_io_ByteArrayOutputStream___INIT___(_r0.o);
-    XMLVM_TRY_BEGIN(w22718aaac34b1b6)
+    XMLVM_TRY_BEGIN(w22721aaac34b1b6)
     // Begin try
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 725)
     //gnu_xml_transform_StreamSerializer_serialize___org_w3c_dom_Node_java_io_OutputStream[6]
@@ -3520,16 +3520,16 @@ JAVA_OBJECT gnu_xml_transform_StreamSerializer_toString___org_w3c_dom_Node(JAVA_
     java_lang_String___INIT____byte_1ARRAY_java_lang_String(_r1.o, _r0.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w22718aaac34b1b6)
-        XMLVM_CATCH_SPECIFIC(w22718aaac34b1b6,java_io_IOException,20)
-    XMLVM_CATCH_END(w22718aaac34b1b6)
-    XMLVM_RESTORE_EXCEPTION_ENV(w22718aaac34b1b6)
+    XMLVM_CATCH_BEGIN(w22721aaac34b1b6)
+        XMLVM_CATCH_SPECIFIC(w22721aaac34b1b6,java_io_IOException,20)
+    XMLVM_CATCH_END(w22721aaac34b1b6)
+    XMLVM_RESTORE_EXCEPTION_ENV(w22721aaac34b1b6)
     XMLVM_EXIT_METHOD()
     return _r1.o;
     label20:;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 728)
-    java_lang_Thread* curThread_w22718aaac34b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w22718aaac34b1c10->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w22721aaac34b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w22721aaac34b1c10->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("StreamSerializer.java", 730)
     _r1.o = __NEW_java_lang_RuntimeException();
     //java_io_IOException_getMessage__[7]

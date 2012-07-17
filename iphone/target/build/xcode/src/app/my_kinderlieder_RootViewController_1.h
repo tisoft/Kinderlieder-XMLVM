@@ -49,6 +49,7 @@ extern JAVA_OBJECT __CLASS_my_kinderlieder_RootViewController_1_3ARRAY;
 #define __INSTANCE_FIELDS_my_kinderlieder_RootViewController_1 \
     __INSTANCE_FIELDS_java_lang_Object; \
     struct { \
+        JAVA_OBJECT infoController_; \
         JAVA_OBJECT val_window_; \
         JAVA_OBJECT this_0_; \
         __ADDITIONAL_INSTANCE_FIELDS_my_kinderlieder_RootViewController_1 \

@@ -462,12 +462,12 @@
 		2300 /* gnu_xml_xpath_UnionExpr.m in Sources */ = {isa = PBXBuildFile; fileRef = 2299 /* gnu_xml_xpath_UnionExpr.m */; };
 		2303 /* gnu_xml_dom_html2_DomHTMLLegendElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2302 /* gnu_xml_dom_html2_DomHTMLLegendElement.m */; };
 		2306 /* gnu_xml_dom_html2_DomHTMLDirectoryElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2305 /* gnu_xml_dom_html2_DomHTMLDirectoryElement.m */; };
-		2309 /* java_util_regex_CharClass_14.m in Sources */ = {isa = PBXBuildFile; fileRef = 2308 /* java_util_regex_CharClass_14.m */; };
-		2312 /* java_net_NegativeCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2311 /* java_net_NegativeCache.m */; };
+		2309 /* java_net_NegativeCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2308 /* java_net_NegativeCache.m */; };
+		2312 /* java_util_regex_CharClass_14.m in Sources */ = {isa = PBXBuildFile; fileRef = 2311 /* java_util_regex_CharClass_14.m */; };
 		2315 /* java_util_regex_CharClass_15.m in Sources */ = {isa = PBXBuildFile; fileRef = 2314 /* java_util_regex_CharClass_15.m */; };
-		2318 /* java_util_regex_CharClass_16.m in Sources */ = {isa = PBXBuildFile; fileRef = 2317 /* java_util_regex_CharClass_16.m */; };
-		2321 /* org_apache_harmony_luni_util_FloatingPointParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2320 /* org_apache_harmony_luni_util_FloatingPointParser.m */; };
-		2324 /* java_nio_DoubleBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2323 /* java_nio_DoubleBuffer.m */; };
+		2318 /* org_apache_harmony_luni_util_FloatingPointParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2317 /* org_apache_harmony_luni_util_FloatingPointParser.m */; };
+		2321 /* java_nio_DoubleBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2320 /* java_nio_DoubleBuffer.m */; };
+		2324 /* java_util_regex_CharClass_16.m in Sources */ = {isa = PBXBuildFile; fileRef = 2323 /* java_util_regex_CharClass_16.m */; };
 		2327 /* java_nio_HeapByteBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2326 /* java_nio_HeapByteBuffer.m */; };
 		2330 /* java_util_regex_CanClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = 2329 /* java_util_regex_CanClasses.m */; };
 		2333 /* java_util_regex_CharClass_17.m in Sources */ = {isa = PBXBuildFile; fileRef = 2332 /* java_util_regex_CharClass_17.m */; };
@@ -958,8 +958,8 @@
 		3788 /* java_nio_ReadOnlyDoubleArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3787 /* java_nio_ReadOnlyDoubleArrayBuffer.m */; };
 		3791 /* java_util_regex_AbstractCharClass_LazyJavaMirrored_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 3790 /* java_util_regex_AbstractCharClass_LazyJavaMirrored_1.m */; };
 		3794 /* java_util_HashMap_EntryIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 3793 /* java_util_HashMap_EntryIterator.m */; };
-		3797 /* java_io_ObjectStreamField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3796 /* java_io_ObjectStreamField.m */; };
-		3800 /* org_xmlvm_iphone_CGPDFPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3799 /* org_xmlvm_iphone_CGPDFPage.m */; };
+		3797 /* org_xmlvm_iphone_CGPDFPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3796 /* org_xmlvm_iphone_CGPDFPage.m */; };
+		3800 /* java_io_ObjectStreamField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3799 /* java_io_ObjectStreamField.m */; };
 		3803 /* java_net_Inet4Address.m in Sources */ = {isa = PBXBuildFile; fileRef = 3802 /* java_net_Inet4Address.m */; };
 		3806 /* java_util_TreeMap_DescendingSubMap_DescendingSubMapValuesCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = 3805 /* java_util_TreeMap_DescendingSubMap_DescendingSubMapValuesCollection.m */; };
 		3809 /* java_util_Collections_SingletonMap_1_1_1.m in Sources */ = {isa = PBXBuildFile; fileRef = 3808 /* java_util_Collections_SingletonMap_1_1_1.m */; };
@@ -1115,8 +1115,8 @@
 		4259 /* java_io_ObjectInputStream_GetField.m in Sources */ = {isa = PBXBuildFile; fileRef = 4258 /* java_io_ObjectInputStream_GetField.m */; };
 		4262 /* java_util_HashMap_HashMapEntrySet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4261 /* java_util_HashMap_HashMapEntrySet.m */; };
 		4265 /* java_util_ListResourceBundle_2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4264 /* java_util_ListResourceBundle_2.m */; };
-		4268 /* java_net_Authenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267 /* java_net_Authenticator.m */; };
-		4271 /* org_xmlvm_iphone_CAMediaTiming.m in Sources */ = {isa = PBXBuildFile; fileRef = 4270 /* org_xmlvm_iphone_CAMediaTiming.m */; };
+		4268 /* org_xmlvm_iphone_CAMediaTiming.m in Sources */ = {isa = PBXBuildFile; fileRef = 4267 /* org_xmlvm_iphone_CAMediaTiming.m */; };
+		4271 /* java_net_Authenticator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4270 /* java_net_Authenticator.m */; };
 		4274 /* java_util_Collections_UnmodifiableSortedMap.m in Sources */ = {isa = PBXBuildFile; fileRef = 4273 /* java_util_Collections_UnmodifiableSortedMap.m */; };
 		4277 /* org_w3c_dom_html2_HTMLLegendElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4276 /* org_w3c_dom_html2_HTMLLegendElement.m */; };
 		4280 /* java_util_Collections_UnmodifiableList.m in Sources */ = {isa = PBXBuildFile; fileRef = 4279 /* java_util_Collections_UnmodifiableList.m */; };
@@ -1143,8 +1143,8 @@
 		4343 /* org_apache_harmony_niochar_charset_ISO_8859_7_Decoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4342 /* org_apache_harmony_niochar_charset_ISO_8859_7_Decoder.m */; };
 		4346 /* gnu_xml_xpath_XPathParser_YyCheckClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 4345 /* gnu_xml_xpath_XPathParser_YyCheckClass.m */; };
 		4349 /* java_io_FileInputStream_RepositioningLock.m in Sources */ = {isa = PBXBuildFile; fileRef = 4348 /* java_io_FileInputStream_RepositioningLock.m */; };
-		4352 /* java_util_LinkedList_ReverseLinkIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4351 /* java_util_LinkedList_ReverseLinkIterator.m */; };
-		4355 /* org_xmlvm_iphone_UIWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4354 /* org_xmlvm_iphone_UIWindow.m */; };
+		4352 /* org_xmlvm_iphone_UIWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4351 /* org_xmlvm_iphone_UIWindow.m */; };
+		4355 /* java_util_LinkedList_ReverseLinkIterator.m in Sources */ = {isa = PBXBuildFile; fileRef = 4354 /* java_util_LinkedList_ReverseLinkIterator.m */; };
 		4358 /* java_net_BindException.m in Sources */ = {isa = PBXBuildFile; fileRef = 4357 /* java_net_BindException.m */; };
 		4361 /* gnu_xml_dom_DomEvent_DomMutationEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4360 /* gnu_xml_dom_DomEvent_DomMutationEvent.m */; };
 		4364 /* java_util_regex_AbstractCharClass_LazyJavaLowerCase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4363 /* java_util_regex_AbstractCharClass_LazyJavaLowerCase.m */; };
@@ -1264,8 +1264,8 @@
 		4706 /* org_w3c_dom_html2_HTMLUListElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4705 /* org_w3c_dom_html2_HTMLUListElement.m */; };
 		4709 /* java_io_PrintStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 4708 /* java_io_PrintStream.m */; };
 		4712 /* java_nio_CharToByteBufferAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4711 /* java_nio_CharToByteBufferAdapter.m */; };
-		4715 /* org_apache_harmony_luni_util_DeleteOnExit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4714 /* org_apache_harmony_luni_util_DeleteOnExit.m */; };
-		4718 /* org_xmlvm_iphone_CGContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 4717 /* org_xmlvm_iphone_CGContext.m */; };
+		4715 /* org_xmlvm_iphone_CGContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 4714 /* org_xmlvm_iphone_CGContext.m */; };
+		4718 /* org_apache_harmony_luni_util_DeleteOnExit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4717 /* org_apache_harmony_luni_util_DeleteOnExit.m */; };
 		4721 /* org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4720 /* org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager.m */; };
 		4724 /* java_util_regex_Pattern.m in Sources */ = {isa = PBXBuildFile; fileRef = 4723 /* java_util_regex_Pattern.m */; };
 		4727 /* java_util_MissingFormatArgumentException.m in Sources */ = {isa = PBXBuildFile; fileRef = 4726 /* java_util_MissingFormatArgumentException.m */; };
@@ -1338,8 +1338,8 @@
 		4928 /* java_lang_reflect_Constructor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4927 /* java_lang_reflect_Constructor.m */; };
 		4931 /* java_net_URLConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = 4930 /* java_net_URLConnection.m */; };
 		4934 /* org_w3c_dom_traversal_DocumentTraversal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4933 /* org_w3c_dom_traversal_DocumentTraversal.m */; };
-		4937 /* org_xml_sax_InputSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936 /* org_xml_sax_InputSource.m */; };
-		4940 /* java_util_regex_UMultiLineEOLSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4939 /* java_util_regex_UMultiLineEOLSet.m */; };
+		4937 /* java_util_regex_UMultiLineEOLSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4936 /* java_util_regex_UMultiLineEOLSet.m */; };
+		4940 /* org_xml_sax_InputSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 4939 /* org_xml_sax_InputSource.m */; };
 		4943 /* gnu_xml_xpath_RelationalExpr.m in Sources */ = {isa = PBXBuildFile; fileRef = 4942 /* gnu_xml_xpath_RelationalExpr.m */; };
 		4946 /* java_text_AttributedString_Range.m in Sources */ = {isa = PBXBuildFile; fileRef = 4945 /* java_text_AttributedString_Range.m */; };
 		4949 /* org_w3c_dom_DOMImplementation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4948 /* org_w3c_dom_DOMImplementation.m */; };
@@ -1409,8 +1409,8 @@
 		5141 /* gnu_xml_dom_DTDElementTypeInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5140 /* gnu_xml_dom_DTDElementTypeInfo.m */; };
 		5144 /* java_lang_Integer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5143 /* java_lang_Integer.m */; };
 		5147 /* java_util_regex_UCIDecomposedCharSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5146 /* java_util_regex_UCIDecomposedCharSet.m */; };
-		5150 /* java_lang_Short.m in Sources */ = {isa = PBXBuildFile; fileRef = 5149 /* java_lang_Short.m */; };
-		5153 /* java_io_File_TempFileLocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5152 /* java_io_File_TempFileLocker.m */; };
+		5150 /* java_io_File_TempFileLocker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5149 /* java_io_File_TempFileLocker.m */; };
+		5153 /* java_lang_Short.m in Sources */ = {isa = PBXBuildFile; fileRef = 5152 /* java_lang_Short.m */; };
 		5156 /* org_xmlvm_iphone_UIBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5155 /* org_xmlvm_iphone_UIBarButtonItem.m */; };
 		5159 /* org_w3c_dom_html2_HTMLOptGroupElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 5158 /* org_w3c_dom_html2_HTMLOptGroupElement.m */; };
 		5162 /* java_util_Collections_ReverseComparator.m in Sources */ = {isa = PBXBuildFile; fileRef = 5161 /* java_util_Collections_ReverseComparator.m */; };
@@ -2442,18 +2442,18 @@
 		2302 /* gnu_xml_dom_html2_DomHTMLLegendElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gnu_xml_dom_html2_DomHTMLLegendElement.m; sourceTree = "<group>"; };
 		2304 /* gnu_xml_dom_html2_DomHTMLDirectoryElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gnu_xml_dom_html2_DomHTMLDirectoryElement.h; sourceTree = "<group>"; };
 		2305 /* gnu_xml_dom_html2_DomHTMLDirectoryElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gnu_xml_dom_html2_DomHTMLDirectoryElement.m; sourceTree = "<group>"; };
-		2307 /* java_util_regex_CharClass_14.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_util_regex_CharClass_14.h; sourceTree = "<group>"; };
-		2308 /* java_util_regex_CharClass_14.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_util_regex_CharClass_14.m; sourceTree = "<group>"; };
-		2310 /* java_net_NegativeCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_net_NegativeCache.h; sourceTree = "<group>"; };
-		2311 /* java_net_NegativeCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_net_NegativeCache.m; sourceTree = "<group>"; };
+		2307 /* java_net_NegativeCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_net_NegativeCache.h; sourceTree = "<group>"; };
+		2308 /* java_net_NegativeCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_net_NegativeCache.m; sourceTree = "<group>"; };
+		2310 /* java_util_regex_CharClass_14.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_util_regex_CharClass_14.h; sourceTree = "<group>"; };
+		2311 /* java_util_regex_CharClass_14.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_util_regex_CharClass_14.m; sourceTree = "<group>"; };
 		2313 /* java_util_regex_CharClass_15.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_util_regex_CharClass_15.h; sourceTree = "<group>"; };
 		2314 /* java_util_regex_CharClass_15.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_util_regex_CharClass_15.m; sourceTree = "<group>"; };
-		2316 /* java_util_regex_CharClass_16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_util_regex_CharClass_16.h; sourceTree = "<group>"; };
-		2317 /* java_util_regex_CharClass_16.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_util_regex_CharClass_16.m; sourceTree = "<group>"; };
-		2319 /* org_apache_harmony_luni_util_FloatingPointParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_apache_harmony_luni_util_FloatingPointParser.h; sourceTree = "<group>"; };
-		2320 /* org_apache_harmony_luni_util_FloatingPointParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = org_apache_harmony_luni_util_FloatingPointParser.m; sourceTree = "<group>"; };
-		2322 /* java_nio_DoubleBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_nio_DoubleBuffer.h; sourceTree = "<group>"; };
-		2323 /* java_nio_DoubleBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_nio_DoubleBuffer.m; sourceTree = "<group>"; };
+		2316 /* org_apache_harmony_luni_util_FloatingPointParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_apache_harmony_luni_util_FloatingPointParser.h; sourceTree = "<group>"; };
+		2317 /* org_apache_harmony_luni_util_FloatingPointParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = org_apache_harmony_luni_util_FloatingPointParser.m; sourceTree = "<group>"; };
+		2319 /* java_nio_DoubleBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_nio_DoubleBuffer.h; sourceTree = "<group>"; };
+		2320 /* java_nio_DoubleBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_nio_DoubleBuffer.m; sourceTree = "<group>"; };
+		2322 /* java_util_regex_CharClass_16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_util_regex_CharClass_16.h; sourceTree = "<group>"; };
+		2323 /* java_util_regex_CharClass_16.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_util_regex_CharClass_16.m; sourceTree = "<group>"; };
 		2325 /* java_nio_HeapByteBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_nio_HeapByteBuffer.h; sourceTree = "<group>"; };
 		2326 /* java_nio_HeapByteBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_nio_HeapByteBuffer.m; sourceTree = "<group>"; };
 		2328 /* java_util_regex_CanClasses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_util_regex_CanClasses.h; sourceTree = "<group>"; };
@@ -3434,10 +3434,10 @@
 		3790 /* java_util_regex_AbstractCharClass_LazyJavaMirrored_1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_util_regex_AbstractCharClass_LazyJavaMirrored_1.m; sourceTree = "<group>"; };
 		3792 /* java_util_HashMap_EntryIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_util_HashMap_EntryIterator.h; sourceTree = "<group>"; };
 		3793 /* java_util_HashMap_EntryIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_util_HashMap_EntryIterator.m; sourceTree = "<group>"; };
-		3795 /* java_io_ObjectStreamField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_io_ObjectStreamField.h; sourceTree = "<group>"; };
-		3796 /* java_io_ObjectStreamField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_io_ObjectStreamField.m; sourceTree = "<group>"; };
-		3798 /* org_xmlvm_iphone_CGPDFPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_xmlvm_iphone_CGPDFPage.h; sourceTree = "<group>"; };
-		3799 /* org_xmlvm_iphone_CGPDFPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = org_xmlvm_iphone_CGPDFPage.m; sourceTree = "<group>"; };
+		3795 /* org_xmlvm_iphone_CGPDFPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_xmlvm_iphone_CGPDFPage.h; sourceTree = "<group>"; };
+		3796 /* org_xmlvm_iphone_CGPDFPage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = org_xmlvm_iphone_CGPDFPage.m; sourceTree = "<group>"; };
+		3798 /* java_io_ObjectStreamField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_io_ObjectStreamField.h; sourceTree = "<group>"; };
+		3799 /* java_io_ObjectStreamField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_io_ObjectStreamField.m; sourceTree = "<group>"; };
 		3801 /* java_net_Inet4Address.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_net_Inet4Address.h; sourceTree = "<group>"; };
 		3802 /* java_net_Inet4Address.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_net_Inet4Address.m; sourceTree = "<group>"; };
 		3804 /* java_util_TreeMap_DescendingSubMap_DescendingSubMapValuesCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_util_TreeMap_DescendingSubMap_DescendingSubMapValuesCollection.h; sourceTree = "<group>"; };
@@ -3748,10 +3748,10 @@
 		4261 /* java_util_HashMap_HashMapEntrySet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_util_HashMap_HashMapEntrySet.m; sourceTree = "<group>"; };
 		4263 /* java_util_ListResourceBundle_2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_util_ListResourceBundle_2.h; sourceTree = "<group>"; };
 		4264 /* java_util_ListResourceBundle_2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_util_ListResourceBundle_2.m; sourceTree = "<group>"; };
-		4266 /* java_net_Authenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_net_Authenticator.h; sourceTree = "<group>"; };
-		4267 /* java_net_Authenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_net_Authenticator.m; sourceTree = "<group>"; };
-		4269 /* org_xmlvm_iphone_CAMediaTiming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_xmlvm_iphone_CAMediaTiming.h; sourceTree = "<group>"; };
-		4270 /* org_xmlvm_iphone_CAMediaTiming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = org_xmlvm_iphone_CAMediaTiming.m; sourceTree = "<group>"; };
+		4266 /* org_xmlvm_iphone_CAMediaTiming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_xmlvm_iphone_CAMediaTiming.h; sourceTree = "<group>"; };
+		4267 /* org_xmlvm_iphone_CAMediaTiming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = org_xmlvm_iphone_CAMediaTiming.m; sourceTree = "<group>"; };
+		4269 /* java_net_Authenticator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_net_Authenticator.h; sourceTree = "<group>"; };
+		4270 /* java_net_Authenticator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_net_Authenticator.m; sourceTree = "<group>"; };
 		4272 /* java_util_Collections_UnmodifiableSortedMap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_util_Collections_UnmodifiableSortedMap.h; sourceTree = "<group>"; };
 		4273 /* java_util_Collections_UnmodifiableSortedMap.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_util_Collections_UnmodifiableSortedMap.m; sourceTree = "<group>"; };
 		4275 /* org_w3c_dom_html2_HTMLLegendElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_w3c_dom_html2_HTMLLegendElement.h; sourceTree = "<group>"; };
@@ -3804,10 +3804,10 @@
 		4345 /* gnu_xml_xpath_XPathParser_YyCheckClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gnu_xml_xpath_XPathParser_YyCheckClass.m; sourceTree = "<group>"; };
 		4347 /* java_io_FileInputStream_RepositioningLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_io_FileInputStream_RepositioningLock.h; sourceTree = "<group>"; };
 		4348 /* java_io_FileInputStream_RepositioningLock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_io_FileInputStream_RepositioningLock.m; sourceTree = "<group>"; };
-		4350 /* java_util_LinkedList_ReverseLinkIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_util_LinkedList_ReverseLinkIterator.h; sourceTree = "<group>"; };
-		4351 /* java_util_LinkedList_ReverseLinkIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_util_LinkedList_ReverseLinkIterator.m; sourceTree = "<group>"; };
-		4353 /* org_xmlvm_iphone_UIWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_xmlvm_iphone_UIWindow.h; sourceTree = "<group>"; };
-		4354 /* org_xmlvm_iphone_UIWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = org_xmlvm_iphone_UIWindow.m; sourceTree = "<group>"; };
+		4350 /* org_xmlvm_iphone_UIWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_xmlvm_iphone_UIWindow.h; sourceTree = "<group>"; };
+		4351 /* org_xmlvm_iphone_UIWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = org_xmlvm_iphone_UIWindow.m; sourceTree = "<group>"; };
+		4353 /* java_util_LinkedList_ReverseLinkIterator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_util_LinkedList_ReverseLinkIterator.h; sourceTree = "<group>"; };
+		4354 /* java_util_LinkedList_ReverseLinkIterator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_util_LinkedList_ReverseLinkIterator.m; sourceTree = "<group>"; };
 		4356 /* java_net_BindException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_net_BindException.h; sourceTree = "<group>"; };
 		4357 /* java_net_BindException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_net_BindException.m; sourceTree = "<group>"; };
 		4359 /* gnu_xml_dom_DomEvent_DomMutationEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gnu_xml_dom_DomEvent_DomMutationEvent.h; sourceTree = "<group>"; };
@@ -4046,10 +4046,10 @@
 		4708 /* java_io_PrintStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_io_PrintStream.m; sourceTree = "<group>"; };
 		4710 /* java_nio_CharToByteBufferAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_nio_CharToByteBufferAdapter.h; sourceTree = "<group>"; };
 		4711 /* java_nio_CharToByteBufferAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_nio_CharToByteBufferAdapter.m; sourceTree = "<group>"; };
-		4713 /* org_apache_harmony_luni_util_DeleteOnExit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_apache_harmony_luni_util_DeleteOnExit.h; sourceTree = "<group>"; };
-		4714 /* org_apache_harmony_luni_util_DeleteOnExit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = org_apache_harmony_luni_util_DeleteOnExit.m; sourceTree = "<group>"; };
-		4716 /* org_xmlvm_iphone_CGContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_xmlvm_iphone_CGContext.h; sourceTree = "<group>"; };
-		4717 /* org_xmlvm_iphone_CGContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = org_xmlvm_iphone_CGContext.m; sourceTree = "<group>"; };
+		4713 /* org_xmlvm_iphone_CGContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_xmlvm_iphone_CGContext.h; sourceTree = "<group>"; };
+		4714 /* org_xmlvm_iphone_CGContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = org_xmlvm_iphone_CGContext.m; sourceTree = "<group>"; };
+		4716 /* org_apache_harmony_luni_util_DeleteOnExit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_apache_harmony_luni_util_DeleteOnExit.h; sourceTree = "<group>"; };
+		4717 /* org_apache_harmony_luni_util_DeleteOnExit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = org_apache_harmony_luni_util_DeleteOnExit.m; sourceTree = "<group>"; };
 		4719 /* org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager.h; sourceTree = "<group>"; };
 		4720 /* org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager.m; sourceTree = "<group>"; };
 		4722 /* java_util_regex_Pattern.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_util_regex_Pattern.h; sourceTree = "<group>"; };
@@ -4194,10 +4194,10 @@
 		4930 /* java_net_URLConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_net_URLConnection.m; sourceTree = "<group>"; };
 		4932 /* org_w3c_dom_traversal_DocumentTraversal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_w3c_dom_traversal_DocumentTraversal.h; sourceTree = "<group>"; };
 		4933 /* org_w3c_dom_traversal_DocumentTraversal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = org_w3c_dom_traversal_DocumentTraversal.m; sourceTree = "<group>"; };
-		4935 /* org_xml_sax_InputSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_xml_sax_InputSource.h; sourceTree = "<group>"; };
-		4936 /* org_xml_sax_InputSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = org_xml_sax_InputSource.m; sourceTree = "<group>"; };
-		4938 /* java_util_regex_UMultiLineEOLSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_util_regex_UMultiLineEOLSet.h; sourceTree = "<group>"; };
-		4939 /* java_util_regex_UMultiLineEOLSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_util_regex_UMultiLineEOLSet.m; sourceTree = "<group>"; };
+		4935 /* java_util_regex_UMultiLineEOLSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_util_regex_UMultiLineEOLSet.h; sourceTree = "<group>"; };
+		4936 /* java_util_regex_UMultiLineEOLSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_util_regex_UMultiLineEOLSet.m; sourceTree = "<group>"; };
+		4938 /* org_xml_sax_InputSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_xml_sax_InputSource.h; sourceTree = "<group>"; };
+		4939 /* org_xml_sax_InputSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = org_xml_sax_InputSource.m; sourceTree = "<group>"; };
 		4941 /* gnu_xml_xpath_RelationalExpr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = gnu_xml_xpath_RelationalExpr.h; sourceTree = "<group>"; };
 		4942 /* gnu_xml_xpath_RelationalExpr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = gnu_xml_xpath_RelationalExpr.m; sourceTree = "<group>"; };
 		4944 /* java_text_AttributedString_Range.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_text_AttributedString_Range.h; sourceTree = "<group>"; };
@@ -4336,10 +4336,10 @@
 		5143 /* java_lang_Integer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_lang_Integer.m; sourceTree = "<group>"; };
 		5145 /* java_util_regex_UCIDecomposedCharSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_util_regex_UCIDecomposedCharSet.h; sourceTree = "<group>"; };
 		5146 /* java_util_regex_UCIDecomposedCharSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_util_regex_UCIDecomposedCharSet.m; sourceTree = "<group>"; };
-		5148 /* java_lang_Short.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_lang_Short.h; sourceTree = "<group>"; };
-		5149 /* java_lang_Short.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_lang_Short.m; sourceTree = "<group>"; };
-		5151 /* java_io_File_TempFileLocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_io_File_TempFileLocker.h; sourceTree = "<group>"; };
-		5152 /* java_io_File_TempFileLocker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_io_File_TempFileLocker.m; sourceTree = "<group>"; };
+		5148 /* java_io_File_TempFileLocker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_io_File_TempFileLocker.h; sourceTree = "<group>"; };
+		5149 /* java_io_File_TempFileLocker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_io_File_TempFileLocker.m; sourceTree = "<group>"; };
+		5151 /* java_lang_Short.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = java_lang_Short.h; sourceTree = "<group>"; };
+		5152 /* java_lang_Short.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = java_lang_Short.m; sourceTree = "<group>"; };
 		5154 /* org_xmlvm_iphone_UIBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_xmlvm_iphone_UIBarButtonItem.h; sourceTree = "<group>"; };
 		5155 /* org_xmlvm_iphone_UIBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = org_xmlvm_iphone_UIBarButtonItem.m; sourceTree = "<group>"; };
 		5157 /* org_w3c_dom_html2_HTMLOptGroupElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = org_w3c_dom_html2_HTMLOptGroupElement.h; sourceTree = "<group>"; };
@@ -5506,18 +5506,18 @@
 				2302 /* gnu_xml_dom_html2_DomHTMLLegendElement.m */,
 				2304 /* gnu_xml_dom_html2_DomHTMLDirectoryElement.h */,
 				2305 /* gnu_xml_dom_html2_DomHTMLDirectoryElement.m */,
-				2307 /* java_util_regex_CharClass_14.h */,
-				2308 /* java_util_regex_CharClass_14.m */,
-				2310 /* java_net_NegativeCache.h */,
-				2311 /* java_net_NegativeCache.m */,
+				2307 /* java_net_NegativeCache.h */,
+				2308 /* java_net_NegativeCache.m */,
+				2310 /* java_util_regex_CharClass_14.h */,
+				2311 /* java_util_regex_CharClass_14.m */,
 				2313 /* java_util_regex_CharClass_15.h */,
 				2314 /* java_util_regex_CharClass_15.m */,
-				2316 /* java_util_regex_CharClass_16.h */,
-				2317 /* java_util_regex_CharClass_16.m */,
-				2319 /* org_apache_harmony_luni_util_FloatingPointParser.h */,
-				2320 /* org_apache_harmony_luni_util_FloatingPointParser.m */,
-				2322 /* java_nio_DoubleBuffer.h */,
-				2323 /* java_nio_DoubleBuffer.m */,
+				2316 /* org_apache_harmony_luni_util_FloatingPointParser.h */,
+				2317 /* org_apache_harmony_luni_util_FloatingPointParser.m */,
+				2319 /* java_nio_DoubleBuffer.h */,
+				2320 /* java_nio_DoubleBuffer.m */,
+				2322 /* java_util_regex_CharClass_16.h */,
+				2323 /* java_util_regex_CharClass_16.m */,
 				2325 /* java_nio_HeapByteBuffer.h */,
 				2326 /* java_nio_HeapByteBuffer.m */,
 				2328 /* java_util_regex_CanClasses.h */,
@@ -6498,10 +6498,10 @@
 				3790 /* java_util_regex_AbstractCharClass_LazyJavaMirrored_1.m */,
 				3792 /* java_util_HashMap_EntryIterator.h */,
 				3793 /* java_util_HashMap_EntryIterator.m */,
-				3795 /* java_io_ObjectStreamField.h */,
-				3796 /* java_io_ObjectStreamField.m */,
-				3798 /* org_xmlvm_iphone_CGPDFPage.h */,
-				3799 /* org_xmlvm_iphone_CGPDFPage.m */,
+				3795 /* org_xmlvm_iphone_CGPDFPage.h */,
+				3796 /* org_xmlvm_iphone_CGPDFPage.m */,
+				3798 /* java_io_ObjectStreamField.h */,
+				3799 /* java_io_ObjectStreamField.m */,
 				3801 /* java_net_Inet4Address.h */,
 				3802 /* java_net_Inet4Address.m */,
 				3804 /* java_util_TreeMap_DescendingSubMap_DescendingSubMapValuesCollection.h */,
@@ -6812,10 +6812,10 @@
 				4261 /* java_util_HashMap_HashMapEntrySet.m */,
 				4263 /* java_util_ListResourceBundle_2.h */,
 				4264 /* java_util_ListResourceBundle_2.m */,
-				4266 /* java_net_Authenticator.h */,
-				4267 /* java_net_Authenticator.m */,
-				4269 /* org_xmlvm_iphone_CAMediaTiming.h */,
-				4270 /* org_xmlvm_iphone_CAMediaTiming.m */,
+				4266 /* org_xmlvm_iphone_CAMediaTiming.h */,
+				4267 /* org_xmlvm_iphone_CAMediaTiming.m */,
+				4269 /* java_net_Authenticator.h */,
+				4270 /* java_net_Authenticator.m */,
 				4272 /* java_util_Collections_UnmodifiableSortedMap.h */,
 				4273 /* java_util_Collections_UnmodifiableSortedMap.m */,
 				4275 /* org_w3c_dom_html2_HTMLLegendElement.h */,
@@ -6868,10 +6868,10 @@
 				4345 /* gnu_xml_xpath_XPathParser_YyCheckClass.m */,
 				4347 /* java_io_FileInputStream_RepositioningLock.h */,
 				4348 /* java_io_FileInputStream_RepositioningLock.m */,
-				4350 /* java_util_LinkedList_ReverseLinkIterator.h */,
-				4351 /* java_util_LinkedList_ReverseLinkIterator.m */,
-				4353 /* org_xmlvm_iphone_UIWindow.h */,
-				4354 /* org_xmlvm_iphone_UIWindow.m */,
+				4350 /* org_xmlvm_iphone_UIWindow.h */,
+				4351 /* org_xmlvm_iphone_UIWindow.m */,
+				4353 /* java_util_LinkedList_ReverseLinkIterator.h */,
+				4354 /* java_util_LinkedList_ReverseLinkIterator.m */,
 				4356 /* java_net_BindException.h */,
 				4357 /* java_net_BindException.m */,
 				4359 /* gnu_xml_dom_DomEvent_DomMutationEvent.h */,
@@ -7110,10 +7110,10 @@
 				4708 /* java_io_PrintStream.m */,
 				4710 /* java_nio_CharToByteBufferAdapter.h */,
 				4711 /* java_nio_CharToByteBufferAdapter.m */,
-				4713 /* org_apache_harmony_luni_util_DeleteOnExit.h */,
-				4714 /* org_apache_harmony_luni_util_DeleteOnExit.m */,
-				4716 /* org_xmlvm_iphone_CGContext.h */,
-				4717 /* org_xmlvm_iphone_CGContext.m */,
+				4713 /* org_xmlvm_iphone_CGContext.h */,
+				4714 /* org_xmlvm_iphone_CGContext.m */,
+				4716 /* org_apache_harmony_luni_util_DeleteOnExit.h */,
+				4717 /* org_apache_harmony_luni_util_DeleteOnExit.m */,
 				4719 /* org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager.h */,
 				4720 /* org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager.m */,
 				4722 /* java_util_regex_Pattern.h */,
@@ -7258,10 +7258,10 @@
 				4930 /* java_net_URLConnection.m */,
 				4932 /* org_w3c_dom_traversal_DocumentTraversal.h */,
 				4933 /* org_w3c_dom_traversal_DocumentTraversal.m */,
-				4935 /* org_xml_sax_InputSource.h */,
-				4936 /* org_xml_sax_InputSource.m */,
-				4938 /* java_util_regex_UMultiLineEOLSet.h */,
-				4939 /* java_util_regex_UMultiLineEOLSet.m */,
+				4935 /* java_util_regex_UMultiLineEOLSet.h */,
+				4936 /* java_util_regex_UMultiLineEOLSet.m */,
+				4938 /* org_xml_sax_InputSource.h */,
+				4939 /* org_xml_sax_InputSource.m */,
 				4941 /* gnu_xml_xpath_RelationalExpr.h */,
 				4942 /* gnu_xml_xpath_RelationalExpr.m */,
 				4944 /* java_text_AttributedString_Range.h */,
@@ -7400,10 +7400,10 @@
 				5143 /* java_lang_Integer.m */,
 				5145 /* java_util_regex_UCIDecomposedCharSet.h */,
 				5146 /* java_util_regex_UCIDecomposedCharSet.m */,
-				5148 /* java_lang_Short.h */,
-				5149 /* java_lang_Short.m */,
-				5151 /* java_io_File_TempFileLocker.h */,
-				5152 /* java_io_File_TempFileLocker.m */,
+				5148 /* java_io_File_TempFileLocker.h */,
+				5149 /* java_io_File_TempFileLocker.m */,
+				5151 /* java_lang_Short.h */,
+				5152 /* java_lang_Short.m */,
 				5154 /* org_xmlvm_iphone_UIBarButtonItem.h */,
 				5155 /* org_xmlvm_iphone_UIBarButtonItem.m */,
 				5157 /* org_w3c_dom_html2_HTMLOptGroupElement.h */,
@@ -8156,12 +8156,12 @@
 				2300 /* gnu_xml_xpath_UnionExpr.m in Sources */,
 				2303 /* gnu_xml_dom_html2_DomHTMLLegendElement.m in Sources */,
 				2306 /* gnu_xml_dom_html2_DomHTMLDirectoryElement.m in Sources */,
-				2309 /* java_util_regex_CharClass_14.m in Sources */,
-				2312 /* java_net_NegativeCache.m in Sources */,
+				2309 /* java_net_NegativeCache.m in Sources */,
+				2312 /* java_util_regex_CharClass_14.m in Sources */,
 				2315 /* java_util_regex_CharClass_15.m in Sources */,
-				2318 /* java_util_regex_CharClass_16.m in Sources */,
-				2321 /* org_apache_harmony_luni_util_FloatingPointParser.m in Sources */,
-				2324 /* java_nio_DoubleBuffer.m in Sources */,
+				2318 /* org_apache_harmony_luni_util_FloatingPointParser.m in Sources */,
+				2321 /* java_nio_DoubleBuffer.m in Sources */,
+				2324 /* java_util_regex_CharClass_16.m in Sources */,
 				2327 /* java_nio_HeapByteBuffer.m in Sources */,
 				2330 /* java_util_regex_CanClasses.m in Sources */,
 				2333 /* java_util_regex_CharClass_17.m in Sources */,
@@ -8652,8 +8652,8 @@
 				3788 /* java_nio_ReadOnlyDoubleArrayBuffer.m in Sources */,
 				3791 /* java_util_regex_AbstractCharClass_LazyJavaMirrored_1.m in Sources */,
 				3794 /* java_util_HashMap_EntryIterator.m in Sources */,
-				3797 /* java_io_ObjectStreamField.m in Sources */,
-				3800 /* org_xmlvm_iphone_CGPDFPage.m in Sources */,
+				3797 /* org_xmlvm_iphone_CGPDFPage.m in Sources */,
+				3800 /* java_io_ObjectStreamField.m in Sources */,
 				3803 /* java_net_Inet4Address.m in Sources */,
 				3806 /* java_util_TreeMap_DescendingSubMap_DescendingSubMapValuesCollection.m in Sources */,
 				3809 /* java_util_Collections_SingletonMap_1_1_1.m in Sources */,
@@ -8809,8 +8809,8 @@
 				4259 /* java_io_ObjectInputStream_GetField.m in Sources */,
 				4262 /* java_util_HashMap_HashMapEntrySet.m in Sources */,
 				4265 /* java_util_ListResourceBundle_2.m in Sources */,
-				4268 /* java_net_Authenticator.m in Sources */,
-				4271 /* org_xmlvm_iphone_CAMediaTiming.m in Sources */,
+				4268 /* org_xmlvm_iphone_CAMediaTiming.m in Sources */,
+				4271 /* java_net_Authenticator.m in Sources */,
 				4274 /* java_util_Collections_UnmodifiableSortedMap.m in Sources */,
 				4277 /* org_w3c_dom_html2_HTMLLegendElement.m in Sources */,
 				4280 /* java_util_Collections_UnmodifiableList.m in Sources */,
@@ -8837,8 +8837,8 @@
 				4343 /* org_apache_harmony_niochar_charset_ISO_8859_7_Decoder.m in Sources */,
 				4346 /* gnu_xml_xpath_XPathParser_YyCheckClass.m in Sources */,
 				4349 /* java_io_FileInputStream_RepositioningLock.m in Sources */,
-				4352 /* java_util_LinkedList_ReverseLinkIterator.m in Sources */,
-				4355 /* org_xmlvm_iphone_UIWindow.m in Sources */,
+				4352 /* org_xmlvm_iphone_UIWindow.m in Sources */,
+				4355 /* java_util_LinkedList_ReverseLinkIterator.m in Sources */,
 				4358 /* java_net_BindException.m in Sources */,
 				4361 /* gnu_xml_dom_DomEvent_DomMutationEvent.m in Sources */,
 				4364 /* java_util_regex_AbstractCharClass_LazyJavaLowerCase.m in Sources */,
@@ -8958,8 +8958,8 @@
 				4706 /* org_w3c_dom_html2_HTMLUListElement.m in Sources */,
 				4709 /* java_io_PrintStream.m in Sources */,
 				4712 /* java_nio_CharToByteBufferAdapter.m in Sources */,
-				4715 /* org_apache_harmony_luni_util_DeleteOnExit.m in Sources */,
-				4718 /* org_xmlvm_iphone_CGContext.m in Sources */,
+				4715 /* org_xmlvm_iphone_CGContext.m in Sources */,
+				4718 /* org_apache_harmony_luni_util_DeleteOnExit.m in Sources */,
 				4721 /* org_apache_harmony_luni_internal_net_www_protocol_http_HttpConnectionManager.m in Sources */,
 				4724 /* java_util_regex_Pattern.m in Sources */,
 				4727 /* java_util_MissingFormatArgumentException.m in Sources */,
@@ -9032,8 +9032,8 @@
 				4928 /* java_lang_reflect_Constructor.m in Sources */,
 				4931 /* java_net_URLConnection.m in Sources */,
 				4934 /* org_w3c_dom_traversal_DocumentTraversal.m in Sources */,
-				4937 /* org_xml_sax_InputSource.m in Sources */,
-				4940 /* java_util_regex_UMultiLineEOLSet.m in Sources */,
+				4937 /* java_util_regex_UMultiLineEOLSet.m in Sources */,
+				4940 /* org_xml_sax_InputSource.m in Sources */,
 				4943 /* gnu_xml_xpath_RelationalExpr.m in Sources */,
 				4946 /* java_text_AttributedString_Range.m in Sources */,
 				4949 /* org_w3c_dom_DOMImplementation.m in Sources */,
@@ -9103,8 +9103,8 @@
 				5141 /* gnu_xml_dom_DTDElementTypeInfo.m in Sources */,
 				5144 /* java_lang_Integer.m in Sources */,
 				5147 /* java_util_regex_UCIDecomposedCharSet.m in Sources */,
-				5150 /* java_lang_Short.m in Sources */,
-				5153 /* java_io_File_TempFileLocker.m in Sources */,
+				5150 /* java_io_File_TempFileLocker.m in Sources */,
+				5153 /* java_lang_Short.m in Sources */,
 				5156 /* org_xmlvm_iphone_UIBarButtonItem.m in Sources */,
 				5159 /* org_w3c_dom_html2_HTMLOptGroupElement.m in Sources */,
 				5162 /* java_util_Collections_ReverseComparator.m in Sources */,
@@ -9252,6 +9252,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				COPY_PHASE_STRIP = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -9286,6 +9290,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -9380,6 +9388,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = (
+					armv6,
+					armv7,
+				);
 				COPY_PHASE_STRIP = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

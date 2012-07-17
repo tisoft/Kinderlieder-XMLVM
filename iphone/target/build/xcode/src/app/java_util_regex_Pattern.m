@@ -3853,32 +3853,32 @@ JAVA_OBJECT java_util_regex_Pattern_processRangeExpression___boolean(JAVA_OBJECT
     if (_r5.i == _r11.i) goto label338;
     if (_r3.i >= 0) goto label384;
     label338:;
-    XMLVM_TRY_BEGIN(w40683aaac37b1d244)
+    XMLVM_TRY_BEGIN(w40685aaac37b1d244)
     // Begin try
     XMLVM_SOURCE_POSITION("Pattern.java", 1169)
     _r5.i = java_util_regex_Lexer_isLetter___int(_r0.i);
-    if (_r5.i != 0) { XMLVM_MEMCPY(curThread_w40683aaac37b1d244->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w40683aaac37b1d244, sizeof(XMLVM_JMP_BUF)); goto label348; };
+    if (_r5.i != 0) { XMLVM_MEMCPY(curThread_w40685aaac37b1d244->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w40685aaac37b1d244, sizeof(XMLVM_JMP_BUF)); goto label348; };
     XMLVM_SOURCE_POSITION("Pattern.java", 1170)
     _r5.i = 65535;
     _r0.i = _r0.i & _r5.i;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40683aaac37b1d244)
-        XMLVM_CATCH_SPECIFIC(w40683aaac37b1d244,java_lang_Exception,361)
-    XMLVM_CATCH_END(w40683aaac37b1d244)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40683aaac37b1d244)
+    XMLVM_CATCH_BEGIN(w40685aaac37b1d244)
+        XMLVM_CATCH_SPECIFIC(w40685aaac37b1d244,java_lang_Exception,361)
+    XMLVM_CATCH_END(w40685aaac37b1d244)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40685aaac37b1d244)
     label348:;
-    XMLVM_TRY_BEGIN(w40683aaac37b1d246)
+    XMLVM_TRY_BEGIN(w40685aaac37b1d246)
     // Begin try
     XMLVM_SOURCE_POSITION("Pattern.java", 1172)
     XMLVM_CHECK_NPE(4)
     java_util_regex_CharClass_add___int_int(_r4.o, _r3.i, _r0.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w40683aaac37b1d246)
-        XMLVM_CATCH_SPECIFIC(w40683aaac37b1d246,java_lang_Exception,361)
-    XMLVM_CATCH_END(w40683aaac37b1d246)
-    XMLVM_RESTORE_EXCEPTION_ENV(w40683aaac37b1d246)
+    XMLVM_CATCH_BEGIN(w40685aaac37b1d246)
+        XMLVM_CATCH_SPECIFIC(w40685aaac37b1d246,java_lang_Exception,361)
+    XMLVM_CATCH_END(w40685aaac37b1d246)
+    XMLVM_RESTORE_EXCEPTION_ENV(w40685aaac37b1d246)
     XMLVM_SOURCE_POSITION("Pattern.java", 1178)
     XMLVM_CHECK_NPE(13)
     _r0.o = ((java_util_regex_Pattern*) _r13.o)->fields.java_util_regex_Pattern.lexemes_;
@@ -3891,8 +3891,8 @@ JAVA_OBJECT java_util_regex_Pattern_processRangeExpression___boolean(JAVA_OBJECT
     goto label101;
     label361:;
     XMLVM_SOURCE_POSITION("Pattern.java", 1174)
-    java_lang_Thread* curThread_w40683aaac37b1d257 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w40683aaac37b1d257->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w40685aaac37b1d257 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w40685aaac37b1d257->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_java_util_regex_PatternSyntaxException();
     XMLVM_SOURCE_POSITION("Pattern.java", 1175)
     // "regex.0E"

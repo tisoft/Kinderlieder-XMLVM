@@ -427,24 +427,24 @@ void my_kinderlieder_Library_load__(JAVA_OBJECT me)
     XMLVM_CHECK_NPE(0)
     XMLVM_CHECK_ARRAY_BOUNDS(_r0.o, _r2.i);
     _r4.o = ((JAVA_ARRAY_OBJECT*) (((org_xmlvm_runtime_XMLVMArray*) _r0.o)->fields.org_xmlvm_runtime_XMLVMArray.array_))[_r2.i];
-    XMLVM_TRY_BEGIN(w41553aaab4b1c15)
+    XMLVM_TRY_BEGIN(w41555aaab4b1c15)
     // Begin try
     XMLVM_SOURCE_POSITION("Library.java", 65)
     XMLVM_CHECK_NPE(8)
     my_kinderlieder_Library_loadProduct___java_io_File(_r8.o, _r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w41553aaab4b1c15)
-        XMLVM_CATCH_SPECIFIC(w41553aaab4b1c15,org_json_JSONException,28)
-    XMLVM_CATCH_END(w41553aaab4b1c15)
-    XMLVM_RESTORE_EXCEPTION_ENV(w41553aaab4b1c15)
+    XMLVM_CATCH_BEGIN(w41555aaab4b1c15)
+        XMLVM_CATCH_SPECIFIC(w41555aaab4b1c15,org_json_JSONException,28)
+    XMLVM_CATCH_END(w41555aaab4b1c15)
+    XMLVM_RESTORE_EXCEPTION_ENV(w41555aaab4b1c15)
     label25:;
     _r2.i = _r2.i + 1;
     goto label18;
     label28:;
     XMLVM_SOURCE_POSITION("Library.java", 66)
-    java_lang_Thread* curThread_w41553aaab4b1c21 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w41553aaab4b1c21->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w41555aaab4b1c21 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w41555aaab4b1c21->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("Library.java", 67)
     _r5.o = java_lang_System_GET_out();
     _r6.o = __NEW_java_lang_StringBuilder();

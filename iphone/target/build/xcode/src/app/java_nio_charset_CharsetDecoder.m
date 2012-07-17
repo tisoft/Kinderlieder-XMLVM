@@ -1039,7 +1039,7 @@ JAVA_OBJECT java_nio_charset_CharsetDecoder_decode___java_nio_ByteBuffer_java_ni
     XMLVM_CHECK_NPE(5)
     java_nio_Buffer_position___int(_r5.o, _r0.i);
     label35:;
-    XMLVM_TRY_BEGIN(w11079aaac17b1c29)
+    XMLVM_TRY_BEGIN(w11082aaac17b1c29)
     // Begin try
     XMLVM_SOURCE_POSITION("CharsetDecoder.java", 350)
     //java_nio_charset_CharsetDecoder_decodeLoop___java_nio_ByteBuffer_java_nio_CharBuffer[6]
@@ -1047,11 +1047,11 @@ JAVA_OBJECT java_nio_charset_CharsetDecoder_decode___java_nio_ByteBuffer_java_ni
     _r0.o = (*(JAVA_OBJECT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_OBJECT)) ((java_nio_charset_CharsetDecoder*) _r4.o)->tib->vtable[6])(_r4.o, _r5.o, _r6.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w11079aaac17b1c29)
-        XMLVM_CATCH_SPECIFIC(w11079aaac17b1c29,java_nio_BufferOverflowException,69)
-        XMLVM_CATCH_SPECIFIC(w11079aaac17b1c29,java_nio_BufferUnderflowException,76)
-    XMLVM_CATCH_END(w11079aaac17b1c29)
-    XMLVM_RESTORE_EXCEPTION_ENV(w11079aaac17b1c29)
+    XMLVM_CATCH_BEGIN(w11082aaac17b1c29)
+        XMLVM_CATCH_SPECIFIC(w11082aaac17b1c29,java_nio_BufferOverflowException,69)
+        XMLVM_CATCH_SPECIFIC(w11082aaac17b1c29,java_nio_BufferUnderflowException,76)
+    XMLVM_CATCH_END(w11082aaac17b1c29)
+    XMLVM_RESTORE_EXCEPTION_ENV(w11082aaac17b1c29)
     XMLVM_SOURCE_POSITION("CharsetDecoder.java", 362)
     XMLVM_CHECK_NPE(0)
     _r1.i = java_nio_charset_CoderResult_isUnderflow__(_r0.o);
@@ -1081,8 +1081,8 @@ JAVA_OBJECT java_nio_charset_CharsetDecoder_decode___java_nio_ByteBuffer_java_ni
     return _r0.o;
     label69:;
     XMLVM_SOURCE_POSITION("CharsetDecoder.java", 351)
-    java_lang_Thread* curThread_w11079aaac17b1c54 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w11079aaac17b1c54->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w11082aaac17b1c54 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w11082aaac17b1c54->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("CharsetDecoder.java", 353)
     _r1.o = __NEW_java_nio_charset_CoderMalfunctionError();
     XMLVM_CHECK_NPE(1)
@@ -1090,8 +1090,8 @@ JAVA_OBJECT java_nio_charset_CharsetDecoder_decode___java_nio_ByteBuffer_java_ni
     XMLVM_THROW_CUSTOM(_r1.o)
     label76:;
     XMLVM_SOURCE_POSITION("CharsetDecoder.java", 354)
-    java_lang_Thread* curThread_w11079aaac17b1c61 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w11079aaac17b1c61->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w11082aaac17b1c61 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w11082aaac17b1c61->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("CharsetDecoder.java", 356)
     _r1.o = __NEW_java_nio_charset_CoderMalfunctionError();
     XMLVM_CHECK_NPE(1)

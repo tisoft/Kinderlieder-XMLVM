@@ -318,26 +318,26 @@ JAVA_OBJECT org_xml_sax_helpers_XMLReaderFactory_loadClass___java_lang_ClassLoad
     _r9.o = n2;
     // "SAX2 driver class "
     _r7.o = xmlvm_create_java_string_from_pool(1115);
-    XMLVM_TRY_BEGIN(w15830aaab4b1b4)
+    XMLVM_TRY_BEGIN(w15833aaab4b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("XMLReaderFactory.java", 136)
     _r8.o = org_xml_sax_helpers_NewInstance_newInstance___java_lang_ClassLoader_java_lang_String(_r8.o, _r9.o);
     _r8.o = _r8.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w15830aaab4b1b4)
-        XMLVM_CATCH_SPECIFIC(w15830aaab4b1b4,java_lang_ClassNotFoundException,9)
-        XMLVM_CATCH_SPECIFIC(w15830aaab4b1b4,java_lang_IllegalAccessException,42)
-        XMLVM_CATCH_SPECIFIC(w15830aaab4b1b4,java_lang_InstantiationException,75)
-        XMLVM_CATCH_SPECIFIC(w15830aaab4b1b4,java_lang_ClassCastException,108)
-    XMLVM_CATCH_END(w15830aaab4b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w15830aaab4b1b4)
+    XMLVM_CATCH_BEGIN(w15833aaab4b1b4)
+        XMLVM_CATCH_SPECIFIC(w15833aaab4b1b4,java_lang_ClassNotFoundException,9)
+        XMLVM_CATCH_SPECIFIC(w15833aaab4b1b4,java_lang_IllegalAccessException,42)
+        XMLVM_CATCH_SPECIFIC(w15833aaab4b1b4,java_lang_InstantiationException,75)
+        XMLVM_CATCH_SPECIFIC(w15833aaab4b1b4,java_lang_ClassCastException,108)
+    XMLVM_CATCH_END(w15833aaab4b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w15833aaab4b1b4)
     XMLVM_EXIT_METHOD()
     return _r8.o;
     label9:;
     XMLVM_SOURCE_POSITION("XMLReaderFactory.java", 137)
-    java_lang_Thread* curThread_w15830aaab4b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r4.o = curThread_w15830aaab4b1b8->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w15833aaab4b1b8 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r4.o = curThread_w15833aaab4b1b8->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r4;
     XMLVM_SOURCE_POSITION("XMLReaderFactory.java", 138)
     _r4.o = __NEW_org_xml_sax_SAXException();
@@ -362,8 +362,8 @@ JAVA_OBJECT org_xml_sax_helpers_XMLReaderFactory_loadClass___java_lang_ClassLoad
     XMLVM_THROW_CUSTOM(_r4.o)
     label42:;
     XMLVM_SOURCE_POSITION("XMLReaderFactory.java", 140)
-    java_lang_Thread* curThread_w15830aaab4b1c24 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r4.o = curThread_w15830aaab4b1c24->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w15833aaab4b1c24 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r4.o = curThread_w15833aaab4b1c24->fields.java_lang_Thread.xmlvmException_;
     _r1 = _r4;
     XMLVM_SOURCE_POSITION("XMLReaderFactory.java", 141)
     _r4.o = __NEW_org_xml_sax_SAXException();
@@ -388,8 +388,8 @@ JAVA_OBJECT org_xml_sax_helpers_XMLReaderFactory_loadClass___java_lang_ClassLoad
     XMLVM_THROW_CUSTOM(_r4.o)
     label75:;
     XMLVM_SOURCE_POSITION("XMLReaderFactory.java", 143)
-    java_lang_Thread* curThread_w15830aaab4b1c40 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r4.o = curThread_w15830aaab4b1c40->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w15833aaab4b1c40 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r4.o = curThread_w15833aaab4b1c40->fields.java_lang_Thread.xmlvmException_;
     _r2 = _r4;
     XMLVM_SOURCE_POSITION("XMLReaderFactory.java", 144)
     _r4.o = __NEW_org_xml_sax_SAXException();
@@ -414,8 +414,8 @@ JAVA_OBJECT org_xml_sax_helpers_XMLReaderFactory_loadClass___java_lang_ClassLoad
     XMLVM_THROW_CUSTOM(_r4.o)
     label108:;
     XMLVM_SOURCE_POSITION("XMLReaderFactory.java", 147)
-    java_lang_Thread* curThread_w15830aaab4b1c56 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r4.o = curThread_w15830aaab4b1c56->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w15833aaab4b1c56 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r4.o = curThread_w15833aaab4b1c56->fields.java_lang_Thread.xmlvmException_;
     _r3 = _r4;
     XMLVM_SOURCE_POSITION("XMLReaderFactory.java", 148)
     _r4.o = __NEW_org_xml_sax_SAXException();

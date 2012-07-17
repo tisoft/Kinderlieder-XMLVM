@@ -354,7 +354,7 @@ void org_apache_harmony_niochar_internal_nls_Messages___CLINIT_()
     XMLVM_SOURCE_POSITION("Messages.java", 52)
     _r0.o = JAVA_NULL;
     org_apache_harmony_niochar_internal_nls_Messages_PUT_bundle( _r0.o);
-    XMLVM_TRY_BEGIN(w43676aaab1b1b4)
+    XMLVM_TRY_BEGIN(w43678aaab1b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("Messages.java", 237)
     _r0.o = java_util_Locale_getDefault__();
@@ -365,18 +365,18 @@ void org_apache_harmony_niochar_internal_nls_Messages___CLINIT_()
     org_apache_harmony_niochar_internal_nls_Messages_PUT_bundle( _r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w43676aaab1b1b4)
-        XMLVM_CATCH_SPECIFIC(w43676aaab1b1b4,java_lang_Throwable,16)
-    XMLVM_CATCH_END(w43676aaab1b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w43676aaab1b1b4)
+    XMLVM_CATCH_BEGIN(w43678aaab1b1b4)
+        XMLVM_CATCH_SPECIFIC(w43678aaab1b1b4,java_lang_Throwable,16)
+    XMLVM_CATCH_END(w43678aaab1b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w43678aaab1b1b4)
     label15:;
     XMLVM_SOURCE_POSITION("Messages.java", 49)
     XMLVM_EXIT_METHOD()
     return;
     label16:;
     XMLVM_SOURCE_POSITION("Messages.java", 239)
-    java_lang_Thread* curThread_w43676aaab1b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w43676aaab1b1c10->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w43678aaab1b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w43678aaab1b1c10->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("Messages.java", 240)
     //java_lang_Throwable_printStackTrace__[8]
     XMLVM_CHECK_NPE(0)
@@ -418,7 +418,7 @@ JAVA_OBJECT org_apache_harmony_niochar_internal_nls_Messages_getString___java_la
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label6:;
-    XMLVM_TRY_BEGIN(w43676aaab3b1c11)
+    XMLVM_TRY_BEGIN(w43678aaab3b1c11)
     // Begin try
     XMLVM_SOURCE_POSITION("Messages.java", 65)
     _r0.o = org_apache_harmony_niochar_internal_nls_Messages_GET_bundle();
@@ -426,14 +426,14 @@ JAVA_OBJECT org_apache_harmony_niochar_internal_nls_Messages_getString___java_la
     _r0.o = java_util_ResourceBundle_getString___java_lang_String(_r0.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w43676aaab3b1c11)
-        XMLVM_CATCH_SPECIFIC(w43676aaab3b1c11,java_util_MissingResourceException,13)
-    XMLVM_CATCH_END(w43676aaab3b1c11)
-    XMLVM_RESTORE_EXCEPTION_ENV(w43676aaab3b1c11)
+    XMLVM_CATCH_BEGIN(w43678aaab3b1c11)
+        XMLVM_CATCH_SPECIFIC(w43678aaab3b1c11,java_util_MissingResourceException,13)
+    XMLVM_CATCH_END(w43678aaab3b1c11)
+    XMLVM_RESTORE_EXCEPTION_ENV(w43678aaab3b1c11)
     goto label5;
     label13:;
-    java_lang_Thread* curThread_w43676aaab3b1c14 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w43676aaab3b1c14->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w43678aaab3b1c14 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w43678aaab3b1c14->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_java_lang_StringBuilder();
     // "Missing message: "
     _r1.o = xmlvm_create_java_string_from_pool(1039);
@@ -572,7 +572,7 @@ JAVA_OBJECT org_apache_harmony_niochar_internal_nls_Messages_getString___java_la
     XMLVM_SOURCE_POSITION("Messages.java", 137)
     _r0.o = org_apache_harmony_niochar_internal_nls_Messages_GET_bundle();
     if (_r0.o == JAVA_NULL) goto label16;
-    XMLVM_TRY_BEGIN(w43676aaab8b1b7)
+    XMLVM_TRY_BEGIN(w43678aaab8b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("Messages.java", 139)
     _r0.o = org_apache_harmony_niochar_internal_nls_Messages_GET_bundle();
@@ -580,18 +580,18 @@ JAVA_OBJECT org_apache_harmony_niochar_internal_nls_Messages_getString___java_la
     _r0.o = java_util_ResourceBundle_getString___java_lang_String(_r0.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w43676aaab8b1b7)
-        XMLVM_CATCH_SPECIFIC(w43676aaab8b1b7,java_util_MissingResourceException,15)
-    XMLVM_CATCH_END(w43676aaab8b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w43676aaab8b1b7)
+    XMLVM_CATCH_BEGIN(w43678aaab8b1b7)
+        XMLVM_CATCH_SPECIFIC(w43678aaab8b1b7,java_util_MissingResourceException,15)
+    XMLVM_CATCH_END(w43678aaab8b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w43678aaab8b1b7)
     label10:;
     XMLVM_SOURCE_POSITION("Messages.java", 144)
     _r0.o = org_apache_harmony_niochar_internal_nls_Messages_format___java_lang_String_java_lang_Object_1ARRAY(_r0.o, _r2.o);
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label15:;
-    java_lang_Thread* curThread_w43676aaab8b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w43676aaab8b1c13->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w43678aaab8b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w43678aaab8b1c13->fields.java_lang_Thread.xmlvmException_;
     label16:;
     _r0 = _r1;
     goto label10;
@@ -813,7 +813,7 @@ JAVA_OBJECT org_apache_harmony_niochar_internal_nls_Messages_setLocale___java_ut
     XMLVMElem _r3;
     _r2.o = n1;
     _r3.o = n2;
-    XMLVM_TRY_BEGIN(w43676aaac10b1b3)
+    XMLVM_TRY_BEGIN(w43678aaac10b1b3)
     // Begin try
     XMLVM_SOURCE_POSITION("Messages.java", 221)
 
@@ -828,10 +828,10 @@ JAVA_OBJECT org_apache_harmony_niochar_internal_nls_Messages_setLocale___java_ut
     _r2.o = _r2.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w43676aaac10b1b3)
-        XMLVM_CATCH_SPECIFIC(w43676aaac10b1b3,java_util_MissingResourceException,17)
-    XMLVM_CATCH_END(w43676aaac10b1b3)
-    XMLVM_RESTORE_EXCEPTION_ENV(w43676aaac10b1b3)
+    XMLVM_CATCH_BEGIN(w43678aaac10b1b3)
+        XMLVM_CATCH_SPECIFIC(w43678aaac10b1b3,java_util_MissingResourceException,17)
+    XMLVM_CATCH_END(w43678aaac10b1b3)
+    XMLVM_RESTORE_EXCEPTION_ENV(w43678aaac10b1b3)
     _r0 = _r2;
     label16:;
     XMLVM_SOURCE_POSITION("Messages.java", 222)
@@ -839,8 +839,8 @@ JAVA_OBJECT org_apache_harmony_niochar_internal_nls_Messages_setLocale___java_ut
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label17:;
-    java_lang_Thread* curThread_w43676aaac10b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w43676aaac10b1c10->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w43678aaac10b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w43678aaac10b1c10->fields.java_lang_Thread.xmlvmException_;
     _r0.o = JAVA_NULL;
     goto label16;
     //XMLVM_END_WRAPPER

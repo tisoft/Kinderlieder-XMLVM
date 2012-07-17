@@ -763,7 +763,7 @@ void gnu_xml_dom_DomCharacterData_deleteData___int_int(JAVA_OBJECT me, JAVA_INT 
     XMLVM_EXIT_METHOD()
     return;
     label43:;
-    XMLVM_TRY_BEGIN(w25044aaab6b1c42)
+    XMLVM_TRY_BEGIN(w25047aaab6b1c42)
     // Begin try
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 143)
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
@@ -793,15 +793,15 @@ void gnu_xml_dom_DomCharacterData_deleteData___int_int(JAVA_OBJECT me, JAVA_INT 
     ((gnu_xml_dom_DomCharacterData*) _r6.o)->fields.gnu_xml_dom_DomCharacterData.text_ = _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25044aaab6b1c42)
-        XMLVM_CATCH_SPECIFIC(w25044aaab6b1c42,java_lang_IndexOutOfBoundsException,72)
-    XMLVM_CATCH_END(w25044aaab6b1c42)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25044aaab6b1c42)
+    XMLVM_CATCH_BEGIN(w25047aaab6b1c42)
+        XMLVM_CATCH_SPECIFIC(w25047aaab6b1c42,java_lang_IndexOutOfBoundsException,72)
+    XMLVM_CATCH_END(w25047aaab6b1c42)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25047aaab6b1c42)
     goto label42;
     label72:;
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 153)
-    java_lang_Thread* curThread_w25044aaab6b1c46 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25044aaab6b1c46->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w25047aaab6b1c46 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25047aaab6b1c46->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_gnu_xml_dom_DomDOMException();
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_DomDOMException___INIT____short(_r0.o, _r5.i);
@@ -903,7 +903,7 @@ void gnu_xml_dom_DomCharacterData_insertData___int_java_lang_String(JAVA_OBJECT 
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 200)
     _r3.i = 0;
     _r4.i = 0;
-    XMLVM_TRY_BEGIN(w25044aaac10b1c26)
+    XMLVM_TRY_BEGIN(w25047aaac10b1c26)
     // Begin try
     java_lang_System_arraycopy___java_lang_Object_int_java_lang_Object_int_int(_r0.o, _r3.i, _r2.o, _r4.i, _r6.i);
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 201)
@@ -929,17 +929,17 @@ void gnu_xml_dom_DomCharacterData_insertData___int_java_lang_String(JAVA_OBJECT 
     ((gnu_xml_dom_DomCharacterData*) _r5.o)->fields.gnu_xml_dom_DomCharacterData.text_ = _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25044aaac10b1c26)
-        XMLVM_CATCH_SPECIFIC(w25044aaac10b1c26,java_lang_IndexOutOfBoundsException,56)
-    XMLVM_CATCH_END(w25044aaac10b1c26)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25044aaac10b1c26)
+    XMLVM_CATCH_BEGIN(w25047aaac10b1c26)
+        XMLVM_CATCH_SPECIFIC(w25047aaac10b1c26,java_lang_IndexOutOfBoundsException,56)
+    XMLVM_CATCH_END(w25047aaac10b1c26)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25047aaac10b1c26)
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 212)
     XMLVM_EXIT_METHOD()
     return;
     label56:;
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 210)
-    java_lang_Thread* curThread_w25044aaac10b1c31 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25044aaac10b1c31->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w25047aaac10b1c31 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25047aaac10b1c31->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_gnu_xml_dom_DomDOMException();
     _r1.i = 1;
     XMLVM_CHECK_NPE(0)
@@ -1003,7 +1003,7 @@ void gnu_xml_dom_DomCharacterData_replaceData___int_int_java_lang_String(JAVA_OB
     _r1.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
     _r1.i = _r1.i - _r7.i;
     label38:;
-    XMLVM_TRY_BEGIN(w25044aaac11b1c37)
+    XMLVM_TRY_BEGIN(w25047aaac11b1c37)
     // Begin try
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 238)
     _r2.i = XMLVMArray_count(((org_xmlvm_runtime_XMLVMArray*) _r0.o));
@@ -1057,17 +1057,17 @@ void gnu_xml_dom_DomCharacterData_replaceData___int_int_java_lang_String(JAVA_OB
     ((gnu_xml_dom_DomCharacterData*) _r6.o)->fields.gnu_xml_dom_DomCharacterData.text_ = _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25044aaac11b1c37)
-        XMLVM_CATCH_SPECIFIC(w25044aaac11b1c37,java_lang_IndexOutOfBoundsException,93)
-    XMLVM_CATCH_END(w25044aaac11b1c37)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25044aaac11b1c37)
+    XMLVM_CATCH_BEGIN(w25047aaac11b1c37)
+        XMLVM_CATCH_SPECIFIC(w25047aaac11b1c37,java_lang_IndexOutOfBoundsException,93)
+    XMLVM_CATCH_END(w25047aaac11b1c37)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25047aaac11b1c37)
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 258)
     XMLVM_EXIT_METHOD()
     return;
     label93:;
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 256)
-    java_lang_Thread* curThread_w25044aaac11b1c42 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25044aaac11b1c42->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w25047aaac11b1c42 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25047aaac11b1c42->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_gnu_xml_dom_DomDOMException();
     XMLVM_CHECK_NPE(0)
     gnu_xml_dom_DomDOMException___INIT____short(_r0.o, _r5.i);
@@ -1150,7 +1150,7 @@ JAVA_OBJECT gnu_xml_dom_DomCharacterData_substringData___int_int(JAVA_OBJECT me,
     _r2.o = me;
     _r3.i = n1;
     _r4.i = n2;
-    XMLVM_TRY_BEGIN(w25044aaac14b1b4)
+    XMLVM_TRY_BEGIN(w25047aaac14b1b4)
     // Begin try
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 296)
     XMLVM_CHECK_NPE(2)
@@ -1159,18 +1159,18 @@ JAVA_OBJECT gnu_xml_dom_DomCharacterData_substringData___int_int(JAVA_OBJECT me,
     _r0.o = java_lang_String_substring___int_int(_r0.o, _r3.i, _r4.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w25044aaac14b1b4)
-        XMLVM_CATCH_SPECIFIC(w25044aaac14b1b4,java_lang_StringIndexOutOfBoundsException,7)
-    XMLVM_CATCH_END(w25044aaac14b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w25044aaac14b1b4)
+    XMLVM_CATCH_BEGIN(w25047aaac14b1b4)
+        XMLVM_CATCH_SPECIFIC(w25047aaac14b1b4,java_lang_StringIndexOutOfBoundsException,7)
+    XMLVM_CATCH_END(w25047aaac14b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w25047aaac14b1b4)
     label6:;
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 302)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label7:;
     XMLVM_SOURCE_POSITION("DomCharacterData.java", 300)
-    java_lang_Thread* curThread_w25044aaac14b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w25044aaac14b1c10->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w25047aaac14b1c10 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w25047aaac14b1c10->fields.java_lang_Thread.xmlvmException_;
     if (_r3.i < 0) goto label27;
     if (_r4.i < 0) goto label27;
     XMLVM_CHECK_NPE(2)

@@ -1115,7 +1115,7 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____gnu_xml_pipeline_EventConsume
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 268)
     XMLVM_CHECK_NPE(2)
     gnu_xml_pipeline_EventFilter_setDTDHandler___org_xml_sax_DTDHandler(_r2.o, _r2.o);
-    XMLVM_TRY_BEGIN(w11488aaac19b1c38)
+    XMLVM_TRY_BEGIN(w11491aaac19b1c38)
     // Begin try
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 269)
     // "http://xml.org/sax/properties/declaration-handler"
@@ -1124,12 +1124,12 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____gnu_xml_pipeline_EventConsume
     gnu_xml_pipeline_EventFilter_setProperty___java_lang_String_java_lang_Object(_r2.o, _r0.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w11488aaac19b1c38)
-        XMLVM_CATCH_SPECIFIC(w11488aaac19b1c38,java_lang_Exception,72)
-    XMLVM_CATCH_END(w11488aaac19b1c38)
-    XMLVM_RESTORE_EXCEPTION_ENV(w11488aaac19b1c38)
+    XMLVM_CATCH_BEGIN(w11491aaac19b1c38)
+        XMLVM_CATCH_SPECIFIC(w11491aaac19b1c38,java_lang_Exception,72)
+    XMLVM_CATCH_END(w11491aaac19b1c38)
+    XMLVM_RESTORE_EXCEPTION_ENV(w11491aaac19b1c38)
     label64:;
-    XMLVM_TRY_BEGIN(w11488aaac19b1c40)
+    XMLVM_TRY_BEGIN(w11491aaac19b1c40)
     // Begin try
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 271)
     // "http://xml.org/sax/properties/lexical-handler"
@@ -1138,21 +1138,21 @@ void gnu_xml_pipeline_ValidationConsumer___INIT____gnu_xml_pipeline_EventConsume
     gnu_xml_pipeline_EventFilter_setProperty___java_lang_String_java_lang_Object(_r2.o, _r0.o, _r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w11488aaac19b1c40)
-        XMLVM_CATCH_SPECIFIC(w11488aaac19b1c40,java_lang_Exception,70)
-    XMLVM_CATCH_END(w11488aaac19b1c40)
-    XMLVM_RESTORE_EXCEPTION_ENV(w11488aaac19b1c40)
+    XMLVM_CATCH_BEGIN(w11491aaac19b1c40)
+        XMLVM_CATCH_SPECIFIC(w11491aaac19b1c40,java_lang_Exception,70)
+    XMLVM_CATCH_END(w11491aaac19b1c40)
+    XMLVM_RESTORE_EXCEPTION_ENV(w11491aaac19b1c40)
     label69:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 273)
     XMLVM_EXIT_METHOD()
     return;
     label70:;
-    java_lang_Thread* curThread_w11488aaac19b1c45 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w11488aaac19b1c45->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w11491aaac19b1c45 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w11491aaac19b1c45->fields.java_lang_Thread.xmlvmException_;
     goto label69;
     label72:;
-    java_lang_Thread* curThread_w11488aaac19b1c48 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w11488aaac19b1c48->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w11491aaac19b1c48 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w11491aaac19b1c48->fields.java_lang_Thread.xmlvmException_;
     goto label64;
     //XMLVM_END_WRAPPER
 }
@@ -3884,7 +3884,7 @@ void gnu_xml_pipeline_ValidationConsumer_endElement___java_lang_String_java_lang
     _r4.o = n1;
     _r5.o = n2;
     _r6.o = n3;
-    XMLVM_TRY_BEGIN(w11488aaac44b1b5)
+    XMLVM_TRY_BEGIN(w11491aaac44b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1231)
     XMLVM_CHECK_NPE(3)
@@ -3893,11 +3893,11 @@ void gnu_xml_pipeline_ValidationConsumer_endElement___java_lang_String_java_lang
     _r0.o = java_util_Stack_pop__(_r0.o);
     _r0.o = _r0.o;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1233)
-    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w11488aaac44b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w11488aaac44b1b5, sizeof(XMLVM_JMP_BUF)); goto label52; };
+    if (_r0.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w11491aaac44b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w11491aaac44b1b5, sizeof(XMLVM_JMP_BUF)); goto label52; };
     //gnu_xml_pipeline_ValidationConsumer_Recognizer_completed__[8]
     XMLVM_CHECK_NPE(0)
     _r1.i = (*(JAVA_BOOLEAN (*)(JAVA_OBJECT)) ((gnu_xml_pipeline_ValidationConsumer_Recognizer*) _r0.o)->tib->vtable[8])(_r0.o);
-    if (_r1.i != 0) { XMLVM_MEMCPY(curThread_w11488aaac44b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w11488aaac44b1b5, sizeof(XMLVM_JMP_BUF)); goto label52; };
+    if (_r1.i != 0) { XMLVM_MEMCPY(curThread_w11491aaac44b1b5->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w11491aaac44b1b5, sizeof(XMLVM_JMP_BUF)); goto label52; };
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1235)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "Premature end for element '"
@@ -3930,10 +3930,10 @@ void gnu_xml_pipeline_ValidationConsumer_endElement___java_lang_String_java_lang
     gnu_xml_pipeline_ValidationConsumer_error___java_lang_String(_r3.o, _r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w11488aaac44b1b5)
-        XMLVM_CATCH_SPECIFIC(w11488aaac44b1b5,java_util_EmptyStackException,56)
-    XMLVM_CATCH_END(w11488aaac44b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w11488aaac44b1b5)
+    XMLVM_CATCH_BEGIN(w11491aaac44b1b5)
+        XMLVM_CATCH_SPECIFIC(w11491aaac44b1b5,java_util_EmptyStackException,56)
+    XMLVM_CATCH_END(w11491aaac44b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w11491aaac44b1b5)
     label52:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1249)
     XMLVM_CHECK_NPE(3)
@@ -3943,8 +3943,8 @@ void gnu_xml_pipeline_ValidationConsumer_endElement___java_lang_String_java_lang
     return;
     label56:;
     XMLVM_SOURCE_POSITION("ValidationConsumer.java", 1244)
-    java_lang_Thread* curThread_w11488aaac44b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w11488aaac44b1c13->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w11491aaac44b1c13 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w11491aaac44b1c13->fields.java_lang_Thread.xmlvmException_;
     _r0.o = __NEW_java_lang_StringBuilder();
     // "endElement without startElement: "
     _r1.o = xmlvm_create_java_string_from_pool(953);

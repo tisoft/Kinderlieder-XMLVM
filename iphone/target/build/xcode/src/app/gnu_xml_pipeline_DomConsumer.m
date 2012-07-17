@@ -617,7 +617,7 @@ JAVA_OBJECT gnu_xml_pipeline_DomConsumer_emptyDocument__(JAVA_OBJECT me)
     XMLVMElem _r3;
     XMLVMElem _r4;
     _r4.o = me;
-    XMLVM_TRY_BEGIN(w10333aaac10b1b2)
+    XMLVM_TRY_BEGIN(w10336aaac10b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("DomConsumer.java", 159)
     XMLVM_CHECK_NPE(4)
@@ -628,17 +628,17 @@ JAVA_OBJECT gnu_xml_pipeline_DomConsumer_emptyDocument__(JAVA_OBJECT me)
     _r4.o = _r4.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w10333aaac10b1b2)
-        XMLVM_CATCH_SPECIFIC(w10333aaac10b1b2,java_lang_IllegalAccessException,9)
-        XMLVM_CATCH_SPECIFIC(w10333aaac10b1b2,java_lang_InstantiationException,35)
-    XMLVM_CATCH_END(w10333aaac10b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w10333aaac10b1b2)
+    XMLVM_CATCH_BEGIN(w10336aaac10b1b2)
+        XMLVM_CATCH_SPECIFIC(w10336aaac10b1b2,java_lang_IllegalAccessException,9)
+        XMLVM_CATCH_SPECIFIC(w10336aaac10b1b2,java_lang_InstantiationException,35)
+    XMLVM_CATCH_END(w10336aaac10b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w10336aaac10b1b2)
     XMLVM_EXIT_METHOD()
     return _r4.o;
     label9:;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 160)
-    java_lang_Thread* curThread_w10333aaac10b1b6 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w10333aaac10b1b6->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w10336aaac10b1b6 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w10336aaac10b1b6->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 161)
     _r1.o = __NEW_org_xml_sax_SAXException();
     _r2.o = __NEW_java_lang_StringBuilder();
@@ -660,8 +660,8 @@ JAVA_OBJECT gnu_xml_pipeline_DomConsumer_emptyDocument__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r1.o)
     label35:;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 163)
-    java_lang_Thread* curThread_w10333aaac10b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w10333aaac10b1c20->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w10336aaac10b1c20 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w10336aaac10b1c20->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("DomConsumer.java", 164)
     _r1.o = __NEW_org_xml_sax_SAXException();
     _r2.o = __NEW_java_lang_StringBuilder();

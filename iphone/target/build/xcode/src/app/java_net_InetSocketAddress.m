@@ -576,7 +576,7 @@ void java_net_InetSocketAddress___INIT____java_lang_String_int_boolean(JAVA_OBJE
     ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.port_ = _r3.i;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 104)
     if (_r4.i == 0) goto label36;
-    XMLVM_TRY_BEGIN(w42796aaab8b1c27)
+    XMLVM_TRY_BEGIN(w42798aaab8b1c27)
     // Begin try
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 106)
     XMLVM_CHECK_NPE(1)
@@ -586,10 +586,10 @@ void java_net_InetSocketAddress___INIT____java_lang_String_int_boolean(JAVA_OBJE
     ((java_net_InetSocketAddress*) _r1.o)->fields.java_net_InetSocketAddress.addr_ = _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w42796aaab8b1c27)
-        XMLVM_CATCH_SPECIFIC(w42796aaab8b1c27,java_net_UnknownHostException,40)
-    XMLVM_CATCH_END(w42796aaab8b1c27)
-    XMLVM_RESTORE_EXCEPTION_ENV(w42796aaab8b1c27)
+    XMLVM_CATCH_BEGIN(w42798aaab8b1c27)
+        XMLVM_CATCH_SPECIFIC(w42798aaab8b1c27,java_net_UnknownHostException,40)
+    XMLVM_CATCH_END(w42798aaab8b1c27)
+    XMLVM_RESTORE_EXCEPTION_ENV(w42798aaab8b1c27)
     label35:;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 113)
     XMLVM_EXIT_METHOD()
@@ -602,8 +602,8 @@ void java_net_InetSocketAddress___INIT____java_lang_String_int_boolean(JAVA_OBJE
     goto label35;
     label40:;
     XMLVM_SOURCE_POSITION("InetSocketAddress.java", 107)
-    java_lang_Thread* curThread_w42796aaab8b1c38 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w42796aaab8b1c38->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w42798aaab8b1c38 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w42798aaab8b1c38->fields.java_lang_Thread.xmlvmException_;
     goto label35;
     //XMLVM_END_WRAPPER
 }

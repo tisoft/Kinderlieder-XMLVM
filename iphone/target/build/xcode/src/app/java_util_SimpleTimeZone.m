@@ -1965,7 +1965,7 @@ JAVA_INT java_util_SimpleTimeZone_hashCode__(JAVA_OBJECT me)
     _r3.o = me;
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 409)
     java_lang_Object_acquireLockRecursive__(_r3.o);
-    XMLVM_TRY_BEGIN(w19492aaac38b1b4)
+    XMLVM_TRY_BEGIN(w19495aaac38b1b4)
     // Begin try
     XMLVM_CHECK_NPE(3)
     _r0.o = java_util_TimeZone_getID__(_r3.o);
@@ -1978,7 +1978,7 @@ JAVA_INT java_util_SimpleTimeZone_hashCode__(JAVA_OBJECT me)
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 410)
     XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.useDaylight_;
-    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w19492aaac38b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w19492aaac38b1b4, sizeof(XMLVM_JMP_BUF)); goto label52; };
+    if (_r1.i == 0) { XMLVM_MEMCPY(curThread_w19495aaac38b1b4->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w19495aaac38b1b4, sizeof(XMLVM_JMP_BUF)); goto label52; };
     XMLVM_SOURCE_POSITION("SimpleTimeZone.java", 411)
     XMLVM_CHECK_NPE(3)
     _r1.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.startYear_;
@@ -2018,10 +2018,10 @@ JAVA_INT java_util_SimpleTimeZone_hashCode__(JAVA_OBJECT me)
     _r2.i = ((java_util_SimpleTimeZone*) _r3.o)->fields.java_util_SimpleTimeZone.dstSavings_;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w19492aaac38b1b4)
-        XMLVM_CATCH_SPECIFIC(w19492aaac38b1b4,java_lang_Object,54)
-    XMLVM_CATCH_END(w19492aaac38b1b4)
-    XMLVM_RESTORE_EXCEPTION_ENV(w19492aaac38b1b4)
+    XMLVM_CATCH_BEGIN(w19495aaac38b1b4)
+        XMLVM_CATCH_SPECIFIC(w19495aaac38b1b4,java_lang_Object,54)
+    XMLVM_CATCH_END(w19495aaac38b1b4)
+    XMLVM_RESTORE_EXCEPTION_ENV(w19495aaac38b1b4)
     _r1.i = _r1.i + _r2.i;
     _r0.i = _r0.i + _r1.i;
     label52:;
@@ -2030,8 +2030,8 @@ JAVA_INT java_util_SimpleTimeZone_hashCode__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.i;
     label54:;
-    java_lang_Thread* curThread_w19492aaac38b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w19492aaac38b1c12->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w19495aaac38b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w19495aaac38b1c12->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r3.o);
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER

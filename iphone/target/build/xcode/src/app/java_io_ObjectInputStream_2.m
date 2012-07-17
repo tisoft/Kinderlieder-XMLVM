@@ -265,7 +265,7 @@ JAVA_OBJECT java_io_ObjectInputStream_2_run__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label10:;
-    XMLVM_TRY_BEGIN(w11148aaab3b1c13)
+    XMLVM_TRY_BEGIN(w11151aaab3b1c13)
     // Begin try
     XMLVM_SOURCE_POSITION("ObjectInputStream.java", 1325)
     XMLVM_CHECK_NPE(2)
@@ -276,15 +276,15 @@ JAVA_OBJECT java_io_ObjectInputStream_2_run__(JAVA_OBJECT me)
     _r0.o = java_lang_reflect_Field_getType__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w11148aaab3b1c13)
-        XMLVM_CATCH_SPECIFIC(w11148aaab3b1c13,java_lang_NoSuchFieldException,21)
-    XMLVM_CATCH_END(w11148aaab3b1c13)
-    XMLVM_RESTORE_EXCEPTION_ENV(w11148aaab3b1c13)
+    XMLVM_CATCH_BEGIN(w11151aaab3b1c13)
+        XMLVM_CATCH_SPECIFIC(w11151aaab3b1c13,java_lang_NoSuchFieldException,21)
+    XMLVM_CATCH_END(w11151aaab3b1c13)
+    XMLVM_RESTORE_EXCEPTION_ENV(w11151aaab3b1c13)
     goto label9;
     label21:;
     XMLVM_SOURCE_POSITION("ObjectInputStream.java", 1330)
-    java_lang_Thread* curThread_w11148aaab3b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w11148aaab3b1c17->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w11151aaab3b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w11151aaab3b1c17->fields.java_lang_Thread.xmlvmException_;
     XMLVM_CHECK_NPE(0)
     _r0.o = java_lang_Class_getSuperclass__(_r0.o);
     goto label6;

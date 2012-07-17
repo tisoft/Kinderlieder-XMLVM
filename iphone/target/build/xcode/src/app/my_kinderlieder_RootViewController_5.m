@@ -217,7 +217,7 @@ void my_kinderlieder_RootViewController_5___INIT____my_kinderlieder_RootViewCont
     XMLVMElem _r1;
     _r0.o = me;
     _r1.o = n1;
-    XMLVM_SOURCE_POSITION("RootViewController.java", 84)
+    XMLVM_SOURCE_POSITION("RootViewController.java", 89)
     XMLVM_CHECK_NPE(0)
     ((my_kinderlieder_RootViewController_5*) _r0.o)->fields.my_kinderlieder_RootViewController_5.this_0_ = _r1.o;
     XMLVM_CHECK_NPE(0)
@@ -236,13 +236,13 @@ void my_kinderlieder_RootViewController_5_invokeWithArgument___java_lang_Void(JA
     XMLVMElem _r2;
     _r1.o = me;
     _r2.o = n1;
-    XMLVM_SOURCE_POSITION("RootViewController.java", 87)
+    XMLVM_SOURCE_POSITION("RootViewController.java", 92)
     XMLVM_CHECK_NPE(1)
     _r0.o = ((my_kinderlieder_RootViewController_5*) _r1.o)->fields.my_kinderlieder_RootViewController_5.this_0_;
     _r0.o = my_kinderlieder_RootViewController_access$400___my_kinderlieder_RootViewController(_r0.o);
     XMLVM_CHECK_NPE(0)
     org_xmlvm_iphone_UITableView_reloadData__(_r0.o);
-    XMLVM_SOURCE_POSITION("RootViewController.java", 88)
+    XMLVM_SOURCE_POSITION("RootViewController.java", 93)
     XMLVM_EXIT_METHOD()
     return;
     //XMLVM_END_WRAPPER
@@ -256,7 +256,7 @@ void my_kinderlieder_RootViewController_5_invokeWithArgument___java_lang_Object(
     XMLVMElem _r1;
     _r0.o = me;
     _r1.o = n1;
-    XMLVM_SOURCE_POSITION("RootViewController.java", 84)
+    XMLVM_SOURCE_POSITION("RootViewController.java", 89)
     _r1.o = _r1.o;
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_RootViewController_5_invokeWithArgument___java_lang_Void(_r0.o, _r1.o);

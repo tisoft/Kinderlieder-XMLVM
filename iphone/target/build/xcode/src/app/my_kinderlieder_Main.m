@@ -17,7 +17,6 @@
 #include "org_xmlvm_iphone_UIApplication.h"
 #include "org_xmlvm_iphone_UINavigationController.h"
 #include "org_xmlvm_iphone_UIScreen.h"
-#include "org_xmlvm_iphone_UIView.h"
 #include "org_xmlvm_iphone_UIViewController.h"
 #include "org_xmlvm_iphone_UIWindow.h"
 
@@ -638,26 +637,24 @@ JAVA_BOOLEAN my_kinderlieder_Main_applicationDidFinishLaunchingWithOptions___org
     _r3.i = 0;
     XMLVM_CHECK_NPE(2)
     org_xmlvm_iphone_UINavigationController_setToolbarHidden___boolean(_r2.o, _r3.i);
-    XMLVM_SOURCE_POSITION("Main.java", 86)
+    XMLVM_SOURCE_POSITION("Main.java", 76)
     _r2.o = my_kinderlieder_Main_GET_navigationController();
-    XMLVM_CHECK_NPE(2)
-    _r2.o = org_xmlvm_iphone_UIViewController_getView__(_r2.o);
     XMLVM_CHECK_NPE(1)
-    org_xmlvm_iphone_UIView_addSubview___org_xmlvm_iphone_UIView(_r1.o, _r2.o);
-    XMLVM_SOURCE_POSITION("Main.java", 88)
+    org_xmlvm_iphone_UIWindow_setRootViewController___org_xmlvm_iphone_UIViewController(_r1.o, _r2.o);
+    XMLVM_SOURCE_POSITION("Main.java", 77)
     XMLVM_CHECK_NPE(1)
     org_xmlvm_iphone_UIWindow_makeKeyAndVisible__(_r1.o);
-    XMLVM_SOURCE_POSITION("Main.java", 91)
+    XMLVM_SOURCE_POSITION("Main.java", 80)
     _r0.o = __NEW_my_kinderlieder_Main_1();
     XMLVM_CHECK_NPE(0)
     my_kinderlieder_Main_1___INIT____my_kinderlieder_Main(_r0.o, _r5.o);
-    XMLVM_SOURCE_POSITION("Main.java", 106)
+    XMLVM_SOURCE_POSITION("Main.java", 95)
     _r2.o = __NEW_java_lang_Thread();
     XMLVM_CHECK_NPE(2)
     java_lang_Thread___INIT____java_lang_Runnable(_r2.o, _r0.o);
     XMLVM_CHECK_NPE(2)
     java_lang_Thread_start__(_r2.o);
-    XMLVM_SOURCE_POSITION("Main.java", 108)
+    XMLVM_SOURCE_POSITION("Main.java", 97)
     XMLVM_EXIT_METHOD()
     return _r4.i;
     //XMLVM_END_WRAPPER
@@ -674,12 +671,12 @@ void my_kinderlieder_Main_main___java_lang_String_1ARRAY(JAVA_OBJECT n1)
     XMLVMElem _r1;
     XMLVMElem _r2;
     _r2.o = n1;
-    XMLVM_SOURCE_POSITION("Main.java", 114)
+    XMLVM_SOURCE_POSITION("Main.java", 103)
     _r0.o = JAVA_NULL;
     if (!__TIB_my_kinderlieder_Main.classInitialized) __INIT_my_kinderlieder_Main();
     _r1.o = __CLASS_my_kinderlieder_Main;
     org_xmlvm_iphone_UIApplication_main___java_lang_String_1ARRAY_java_lang_Class_java_lang_Class(_r2.o, _r0.o, _r1.o);
-    XMLVM_SOURCE_POSITION("Main.java", 115)
+    XMLVM_SOURCE_POSITION("Main.java", 104)
     XMLVM_EXIT_METHOD()
     return;
     //XMLVM_END_WRAPPER

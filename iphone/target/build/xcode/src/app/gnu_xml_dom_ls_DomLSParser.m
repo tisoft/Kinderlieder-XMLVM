@@ -1007,30 +1007,30 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSParser_parse___org_w3c_dom_ls_LSInput(JAVA_OBJEC
     label9:;
     XMLVM_SOURCE_POSITION("DomLSParser.java", 163)
     java_lang_Object_acquireLockRecursive__(_r1.o);
-    XMLVM_TRY_BEGIN(w16969aaac23b1c14)
+    XMLVM_TRY_BEGIN(w16972aaac23b1c14)
     // Begin try
     XMLVM_CHECK_NPE(1)
     _r0.o = gnu_xml_dom_ls_DomLSParser_doParse___org_w3c_dom_ls_LSInput(_r1.o, _r2.o);
     java_lang_Object_releaseLockRecursive__(_r1.o);
-    { XMLVM_MEMCPY(curThread_w16969aaac23b1c14->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w16969aaac23b1c14, sizeof(XMLVM_JMP_BUF)); goto label8; };
+    { XMLVM_MEMCPY(curThread_w16972aaac23b1c14->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w16972aaac23b1c14, sizeof(XMLVM_JMP_BUF)); goto label8; };
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16969aaac23b1c14)
-        XMLVM_CATCH_SPECIFIC(w16969aaac23b1c14,java_lang_Object,16)
-    XMLVM_CATCH_END(w16969aaac23b1c14)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16969aaac23b1c14)
+    XMLVM_CATCH_BEGIN(w16972aaac23b1c14)
+        XMLVM_CATCH_SPECIFIC(w16972aaac23b1c14,java_lang_Object,16)
+    XMLVM_CATCH_END(w16972aaac23b1c14)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16972aaac23b1c14)
     label16:;
-    XMLVM_TRY_BEGIN(w16969aaac23b1c16)
+    XMLVM_TRY_BEGIN(w16972aaac23b1c16)
     // Begin try
-    java_lang_Thread* curThread_w16969aaac23b1c16aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w16969aaac23b1c16aa->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w16972aaac23b1c16aa = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w16972aaac23b1c16aa->fields.java_lang_Thread.xmlvmException_;
     java_lang_Object_releaseLockRecursive__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16969aaac23b1c16)
-        XMLVM_CATCH_SPECIFIC(w16969aaac23b1c16,java_lang_Object,16)
-    XMLVM_CATCH_END(w16969aaac23b1c16)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16969aaac23b1c16)
+    XMLVM_CATCH_BEGIN(w16972aaac23b1c16)
+        XMLVM_CATCH_SPECIFIC(w16972aaac23b1c16,java_lang_Object,16)
+    XMLVM_CATCH_END(w16972aaac23b1c16)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16972aaac23b1c16)
     XMLVM_THROW_CUSTOM(_r0.o)
     //XMLVM_END_WRAPPER
 }
@@ -1302,7 +1302,7 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSParser_doParse___org_w3c_dom_ls_LSInput(JAVA_OBJ
     _r3.o = ((gnu_xml_dom_ls_DomLSParser*) _r7.o)->fields.gnu_xml_dom_ls_DomLSParser.eventSink_;
     XMLVM_CHECK_NPE(3)
     ((gnu_xml_dom_ls_SAXEventSink*) _r3.o)->fields.gnu_xml_dom_ls_SAXEventSink.reader_ = _r2.o;
-    XMLVM_TRY_BEGIN(w16969aaac27b1c48)
+    XMLVM_TRY_BEGIN(w16972aaac27b1c48)
     // Begin try
     XMLVM_SOURCE_POSITION("DomLSParser.java", 266)
     XMLVM_CHECK_NPE(7)
@@ -1355,13 +1355,13 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSParser_doParse___org_w3c_dom_ls_LSInput(JAVA_OBJ
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setFeature___java_lang_String_boolean])(_r2.o, _r3.o, _r4.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16969aaac27b1c48)
-        XMLVM_CATCH_SPECIFIC(w16969aaac27b1c48,org_w3c_dom_DOMException,178)
-        XMLVM_CATCH_SPECIFIC(w16969aaac27b1c48,org_xml_sax_SAXException,182)
-        XMLVM_CATCH_SPECIFIC(w16969aaac27b1c48,java_io_IOException,191)
-    XMLVM_CATCH_END(w16969aaac27b1c48)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16969aaac27b1c48)
-    XMLVM_TRY_BEGIN(w16969aaac27b1c49)
+    XMLVM_CATCH_BEGIN(w16972aaac27b1c48)
+        XMLVM_CATCH_SPECIFIC(w16972aaac27b1c48,org_w3c_dom_DOMException,178)
+        XMLVM_CATCH_SPECIFIC(w16972aaac27b1c48,org_xml_sax_SAXException,182)
+        XMLVM_CATCH_SPECIFIC(w16972aaac27b1c48,java_io_IOException,191)
+    XMLVM_CATCH_END(w16972aaac27b1c48)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16972aaac27b1c48)
+    XMLVM_TRY_BEGIN(w16972aaac27b1c49)
     // Begin try
     XMLVM_SOURCE_POSITION("DomLSParser.java", 280)
     // "http://gnu.org/sax/features/coalescing"
@@ -1373,15 +1373,15 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSParser_doParse___org_w3c_dom_ls_LSInput(JAVA_OBJ
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setFeature___java_lang_String_boolean])(_r2.o, _r3.o, _r4.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16969aaac27b1c49)
-        XMLVM_CATCH_SPECIFIC(w16969aaac27b1c49,org_xml_sax_SAXNotRecognizedException,204)
-        XMLVM_CATCH_SPECIFIC(w16969aaac27b1c49,org_w3c_dom_DOMException,178)
-        XMLVM_CATCH_SPECIFIC(w16969aaac27b1c49,org_xml_sax_SAXException,182)
-        XMLVM_CATCH_SPECIFIC(w16969aaac27b1c49,java_io_IOException,191)
-    XMLVM_CATCH_END(w16969aaac27b1c49)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16969aaac27b1c49)
+    XMLVM_CATCH_BEGIN(w16972aaac27b1c49)
+        XMLVM_CATCH_SPECIFIC(w16972aaac27b1c49,org_xml_sax_SAXNotRecognizedException,204)
+        XMLVM_CATCH_SPECIFIC(w16972aaac27b1c49,org_w3c_dom_DOMException,178)
+        XMLVM_CATCH_SPECIFIC(w16972aaac27b1c49,org_xml_sax_SAXException,182)
+        XMLVM_CATCH_SPECIFIC(w16972aaac27b1c49,java_io_IOException,191)
+    XMLVM_CATCH_END(w16972aaac27b1c49)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16972aaac27b1c49)
     label120:;
-    XMLVM_TRY_BEGIN(w16969aaac27b1c51)
+    XMLVM_TRY_BEGIN(w16972aaac27b1c51)
     // Begin try
     XMLVM_SOURCE_POSITION("DomLSParser.java", 289)
     // "http://xml.org/sax/features/use-attributes2"
@@ -1392,15 +1392,15 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSParser_doParse___org_w3c_dom_ls_LSInput(JAVA_OBJ
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setFeature___java_lang_String_boolean])(_r2.o, _r3.o, _r4.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16969aaac27b1c51)
-        XMLVM_CATCH_SPECIFIC(w16969aaac27b1c51,org_xml_sax_SAXNotRecognizedException,202)
-        XMLVM_CATCH_SPECIFIC(w16969aaac27b1c51,org_w3c_dom_DOMException,178)
-        XMLVM_CATCH_SPECIFIC(w16969aaac27b1c51,org_xml_sax_SAXException,182)
-        XMLVM_CATCH_SPECIFIC(w16969aaac27b1c51,java_io_IOException,191)
-    XMLVM_CATCH_END(w16969aaac27b1c51)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16969aaac27b1c51)
+    XMLVM_CATCH_BEGIN(w16972aaac27b1c51)
+        XMLVM_CATCH_SPECIFIC(w16972aaac27b1c51,org_xml_sax_SAXNotRecognizedException,202)
+        XMLVM_CATCH_SPECIFIC(w16972aaac27b1c51,org_w3c_dom_DOMException,178)
+        XMLVM_CATCH_SPECIFIC(w16972aaac27b1c51,org_xml_sax_SAXException,182)
+        XMLVM_CATCH_SPECIFIC(w16972aaac27b1c51,java_io_IOException,191)
+    XMLVM_CATCH_END(w16972aaac27b1c51)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16972aaac27b1c51)
     label126:;
-    XMLVM_TRY_BEGIN(w16969aaac27b1c53)
+    XMLVM_TRY_BEGIN(w16972aaac27b1c53)
     // Begin try
     XMLVM_SOURCE_POSITION("DomLSParser.java", 298)
     // "http://xml.org/sax/features/external-general-entities"
@@ -1411,15 +1411,15 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSParser_doParse___org_w3c_dom_ls_LSInput(JAVA_OBJ
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_BOOLEAN)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_setFeature___java_lang_String_boolean])(_r2.o, _r3.o, _r4.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16969aaac27b1c53)
-        XMLVM_CATCH_SPECIFIC(w16969aaac27b1c53,org_xml_sax_SAXNotRecognizedException,200)
-        XMLVM_CATCH_SPECIFIC(w16969aaac27b1c53,org_w3c_dom_DOMException,178)
-        XMLVM_CATCH_SPECIFIC(w16969aaac27b1c53,org_xml_sax_SAXException,182)
-        XMLVM_CATCH_SPECIFIC(w16969aaac27b1c53,java_io_IOException,191)
-    XMLVM_CATCH_END(w16969aaac27b1c53)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16969aaac27b1c53)
+    XMLVM_CATCH_BEGIN(w16972aaac27b1c53)
+        XMLVM_CATCH_SPECIFIC(w16972aaac27b1c53,org_xml_sax_SAXNotRecognizedException,200)
+        XMLVM_CATCH_SPECIFIC(w16972aaac27b1c53,org_w3c_dom_DOMException,178)
+        XMLVM_CATCH_SPECIFIC(w16972aaac27b1c53,org_xml_sax_SAXException,182)
+        XMLVM_CATCH_SPECIFIC(w16972aaac27b1c53,java_io_IOException,191)
+    XMLVM_CATCH_END(w16972aaac27b1c53)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16972aaac27b1c53)
     label132:;
-    XMLVM_TRY_BEGIN(w16969aaac27b1c55)
+    XMLVM_TRY_BEGIN(w16972aaac27b1c55)
     // Begin try
     XMLVM_SOURCE_POSITION("DomLSParser.java", 305)
     XMLVM_CHECK_NPE(7)
@@ -1436,12 +1436,12 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSParser_doParse___org_w3c_dom_ls_LSInput(JAVA_OBJ
     (*(void (*)(JAVA_OBJECT, JAVA_OBJECT)) *(((java_lang_Object*)_r2.o)->tib->itableBegin)[XMLVM_ITABLE_IDX_org_xml_sax_XMLReader_parse___org_xml_sax_InputSource])(_r2.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16969aaac27b1c55)
-        XMLVM_CATCH_SPECIFIC(w16969aaac27b1c55,org_w3c_dom_DOMException,178)
-        XMLVM_CATCH_SPECIFIC(w16969aaac27b1c55,org_xml_sax_SAXException,182)
-        XMLVM_CATCH_SPECIFIC(w16969aaac27b1c55,java_io_IOException,191)
-    XMLVM_CATCH_END(w16969aaac27b1c55)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16969aaac27b1c55)
+    XMLVM_CATCH_BEGIN(w16972aaac27b1c55)
+        XMLVM_CATCH_SPECIFIC(w16972aaac27b1c55,org_w3c_dom_DOMException,178)
+        XMLVM_CATCH_SPECIFIC(w16972aaac27b1c55,org_xml_sax_SAXException,182)
+        XMLVM_CATCH_SPECIFIC(w16972aaac27b1c55,java_io_IOException,191)
+    XMLVM_CATCH_END(w16972aaac27b1c55)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16972aaac27b1c55)
     XMLVM_SOURCE_POSITION("DomLSParser.java", 329)
     XMLVM_CHECK_NPE(7)
     _r1.o = ((gnu_xml_dom_ls_DomLSParser*) _r7.o)->fields.gnu_xml_dom_ls_DomLSParser.eventSink_;
@@ -1479,8 +1479,8 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSParser_doParse___org_w3c_dom_ls_LSInput(JAVA_OBJ
     goto label28;
     label178:;
     XMLVM_SOURCE_POSITION("DomLSParser.java", 310)
-    java_lang_Thread* curThread_w16969aaac27b1c83 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w16969aaac27b1c83->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w16972aaac27b1c83 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w16972aaac27b1c83->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("DomLSParser.java", 313)
     XMLVM_CHECK_NPE(7)
     ((gnu_xml_dom_ls_DomLSParser*) _r7.o)->fields.gnu_xml_dom_ls_DomLSParser.eventSink_ = _r5.o;
@@ -1488,8 +1488,8 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSParser_doParse___org_w3c_dom_ls_LSInput(JAVA_OBJ
     XMLVM_THROW_CUSTOM(_r1.o)
     label182:;
     XMLVM_SOURCE_POSITION("DomLSParser.java", 316)
-    java_lang_Thread* curThread_w16969aaac27b1c90 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w16969aaac27b1c90->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w16972aaac27b1c90 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w16972aaac27b1c90->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("DomLSParser.java", 319)
     XMLVM_CHECK_NPE(7)
     ((gnu_xml_dom_ls_DomLSParser*) _r7.o)->fields.gnu_xml_dom_ls_DomLSParser.eventSink_ = _r5.o;
@@ -1500,8 +1500,8 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSParser_doParse___org_w3c_dom_ls_LSInput(JAVA_OBJ
     XMLVM_THROW_CUSTOM(_r2.o)
     label191:;
     XMLVM_SOURCE_POSITION("DomLSParser.java", 322)
-    java_lang_Thread* curThread_w16969aaac27b1c99 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w16969aaac27b1c99->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w16972aaac27b1c99 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w16972aaac27b1c99->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("DomLSParser.java", 325)
     XMLVM_CHECK_NPE(7)
     ((gnu_xml_dom_ls_DomLSParser*) _r7.o)->fields.gnu_xml_dom_ls_DomLSParser.eventSink_ = _r5.o;
@@ -1511,16 +1511,16 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSParser_doParse___org_w3c_dom_ls_LSInput(JAVA_OBJ
     gnu_xml_dom_ls_DomLSException___INIT____short_java_lang_Exception(_r2.o, _r6.i, _r1.o);
     XMLVM_THROW_CUSTOM(_r2.o)
     label200:;
-    java_lang_Thread* curThread_w16969aaac27b1d107 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r3.o = curThread_w16969aaac27b1d107->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w16972aaac27b1d107 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r3.o = curThread_w16972aaac27b1d107->fields.java_lang_Thread.xmlvmException_;
     goto label132;
     label202:;
-    java_lang_Thread* curThread_w16969aaac27b1d110 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r3.o = curThread_w16969aaac27b1d110->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w16972aaac27b1d110 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r3.o = curThread_w16972aaac27b1d110->fields.java_lang_Thread.xmlvmException_;
     goto label126;
     label204:;
-    java_lang_Thread* curThread_w16969aaac27b1d113 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r3.o = curThread_w16969aaac27b1d113->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w16972aaac27b1d113 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r3.o = curThread_w16972aaac27b1d113->fields.java_lang_Thread.xmlvmException_;
     goto label120;
     //XMLVM_END_WRAPPER
 }
@@ -1560,7 +1560,7 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSParser_getXMLReader__(JAVA_OBJECT me)
     _r1.i = ((gnu_xml_dom_ls_DomLSParser*) _r3.o)->fields.gnu_xml_dom_ls_DomLSParser.xIncludeAware_;
     XMLVM_CHECK_NPE(0)
     javax_xml_parsers_SAXParserFactory_setXIncludeAware___boolean(_r0.o, _r1.i);
-    XMLVM_TRY_BEGIN(w16969aaac28b1c18)
+    XMLVM_TRY_BEGIN(w16972aaac28b1c18)
     // Begin try
     XMLVM_SOURCE_POSITION("DomLSParser.java", 349)
     XMLVM_CHECK_NPE(3)
@@ -1576,11 +1576,11 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSParser_getXMLReader__(JAVA_OBJECT me)
     ((gnu_xml_dom_ls_DomLSParser*) _r3.o)->fields.gnu_xml_dom_ls_DomLSParser.reader_ = _r0.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16969aaac28b1c18)
-        XMLVM_CATCH_SPECIFIC(w16969aaac28b1c18,javax_xml_parsers_ParserConfigurationException,42)
-        XMLVM_CATCH_SPECIFIC(w16969aaac28b1c18,org_xml_sax_SAXException,49)
-    XMLVM_CATCH_END(w16969aaac28b1c18)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16969aaac28b1c18)
+    XMLVM_CATCH_BEGIN(w16972aaac28b1c18)
+        XMLVM_CATCH_SPECIFIC(w16972aaac28b1c18,javax_xml_parsers_ParserConfigurationException,42)
+        XMLVM_CATCH_SPECIFIC(w16972aaac28b1c18,org_xml_sax_SAXException,49)
+    XMLVM_CATCH_END(w16972aaac28b1c18)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16972aaac28b1c18)
     label39:;
     XMLVM_SOURCE_POSITION("DomLSParser.java", 361)
     XMLVM_CHECK_NPE(3)
@@ -1589,8 +1589,8 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSParser_getXMLReader__(JAVA_OBJECT me)
     return _r0.o;
     label42:;
     XMLVM_SOURCE_POSITION("DomLSParser.java", 352)
-    java_lang_Thread* curThread_w16969aaac28b1c25 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w16969aaac28b1c25->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w16972aaac28b1c25 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w16972aaac28b1c25->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("DomLSParser.java", 354)
     _r1.o = __NEW_gnu_xml_dom_ls_DomLSException();
     XMLVM_CHECK_NPE(1)
@@ -1598,8 +1598,8 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSParser_getXMLReader__(JAVA_OBJECT me)
     XMLVM_THROW_CUSTOM(_r1.o)
     label49:;
     XMLVM_SOURCE_POSITION("DomLSParser.java", 356)
-    java_lang_Thread* curThread_w16969aaac28b1c32 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w16969aaac28b1c32->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w16972aaac28b1c32 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w16972aaac28b1c32->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("DomLSParser.java", 358)
     _r1.o = __NEW_gnu_xml_dom_ls_DomLSException();
     XMLVM_CHECK_NPE(1)
@@ -1651,21 +1651,21 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSParser_getInputSource___org_w3c_dom_ls_LSInput(J
     label29:;
     XMLVM_SOURCE_POSITION("DomLSParser.java", 384)
     if (_r2.o != JAVA_NULL) goto label77;
-    XMLVM_TRY_BEGIN(w16969aaac29b1c28)
+    XMLVM_TRY_BEGIN(w16972aaac29b1c28)
     // Begin try
     _r2.o = __NEW_java_net_URL();
     XMLVM_CHECK_NPE(2)
     java_net_URL___INIT____java_lang_String(_r2.o, _r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16969aaac29b1c28)
-        XMLVM_CATCH_SPECIFIC(w16969aaac29b1c28,java_net_MalformedURLException,61)
-        XMLVM_CATCH_SPECIFIC(w16969aaac29b1c28,java_io_IOException,101)
-    XMLVM_CATCH_END(w16969aaac29b1c28)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16969aaac29b1c28)
+    XMLVM_CATCH_BEGIN(w16972aaac29b1c28)
+        XMLVM_CATCH_SPECIFIC(w16972aaac29b1c28,java_net_MalformedURLException,61)
+        XMLVM_CATCH_SPECIFIC(w16972aaac29b1c28,java_io_IOException,101)
+    XMLVM_CATCH_END(w16972aaac29b1c28)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16972aaac29b1c28)
     _r0 = _r2;
     label37:;
-    XMLVM_TRY_BEGIN(w16969aaac29b1c31)
+    XMLVM_TRY_BEGIN(w16972aaac29b1c31)
     // Begin try
     XMLVM_SOURCE_POSITION("DomLSParser.java", 393)
     XMLVM_CHECK_NPE(0)
@@ -1683,39 +1683,39 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSParser_getInputSource___org_w3c_dom_ls_LSInput(J
     org_xml_sax_InputSource_setSystemId___java_lang_String(_r2.o, _r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16969aaac29b1c31)
-        XMLVM_CATCH_SPECIFIC(w16969aaac29b1c31,java_io_IOException,101)
-    XMLVM_CATCH_END(w16969aaac29b1c31)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16969aaac29b1c31)
+    XMLVM_CATCH_BEGIN(w16972aaac29b1c31)
+        XMLVM_CATCH_SPECIFIC(w16972aaac29b1c31,java_io_IOException,101)
+    XMLVM_CATCH_END(w16972aaac29b1c31)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16972aaac29b1c31)
     _r0 = _r2;
     label54:;
     XMLVM_SOURCE_POSITION("DomLSParser.java", 403)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label55:;
-    XMLVM_TRY_BEGIN(w16969aaac29b1c37)
+    XMLVM_TRY_BEGIN(w16972aaac29b1c37)
     // Begin try
     _r2.o = __NEW_java_net_URL();
     XMLVM_CHECK_NPE(2)
     java_net_URL___INIT____java_lang_String(_r2.o, _r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16969aaac29b1c37)
-        XMLVM_CATCH_SPECIFIC(w16969aaac29b1c37,java_net_MalformedURLException,61)
-        XMLVM_CATCH_SPECIFIC(w16969aaac29b1c37,java_io_IOException,101)
-    XMLVM_CATCH_END(w16969aaac29b1c37)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16969aaac29b1c37)
+    XMLVM_CATCH_BEGIN(w16972aaac29b1c37)
+        XMLVM_CATCH_SPECIFIC(w16972aaac29b1c37,java_net_MalformedURLException,61)
+        XMLVM_CATCH_SPECIFIC(w16972aaac29b1c37,java_io_IOException,101)
+    XMLVM_CATCH_END(w16972aaac29b1c37)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16972aaac29b1c37)
     goto label29;
     label61:;
     XMLVM_SOURCE_POSITION("DomLSParser.java", 389)
-    java_lang_Thread* curThread_w16969aaac29b1c41 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w16969aaac29b1c41->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w16972aaac29b1c41 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w16972aaac29b1c41->fields.java_lang_Thread.xmlvmException_;
     if (_r1.o != JAVA_NULL) goto label84;
     _r1 = _r4;
     label65:;
     XMLVM_SOURCE_POSITION("DomLSParser.java", 390)
     if (_r1.o != JAVA_NULL) goto label91;
-    XMLVM_TRY_BEGIN(w16969aaac29b1c47)
+    XMLVM_TRY_BEGIN(w16972aaac29b1c47)
     // Begin try
     _r1.o = __NEW_java_io_File();
     XMLVM_CHECK_NPE(1)
@@ -1724,13 +1724,13 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSParser_getInputSource___org_w3c_dom_ls_LSInput(J
     _r0.o = java_io_File_toURL__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16969aaac29b1c47)
-        XMLVM_CATCH_SPECIFIC(w16969aaac29b1c47,java_io_IOException,101)
-    XMLVM_CATCH_END(w16969aaac29b1c47)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16969aaac29b1c47)
+    XMLVM_CATCH_BEGIN(w16972aaac29b1c47)
+        XMLVM_CATCH_SPECIFIC(w16972aaac29b1c47,java_io_IOException,101)
+    XMLVM_CATCH_END(w16972aaac29b1c47)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16972aaac29b1c47)
     goto label37;
     label77:;
-    XMLVM_TRY_BEGIN(w16969aaac29b1c50)
+    XMLVM_TRY_BEGIN(w16972aaac29b1c50)
     // Begin try
     XMLVM_SOURCE_POSITION("DomLSParser.java", 385)
     _r3.o = __NEW_java_net_URL();
@@ -1738,30 +1738,30 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSParser_getInputSource___org_w3c_dom_ls_LSInput(J
     java_net_URL___INIT____java_net_URL_java_lang_String(_r3.o, _r2.o, _r0.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16969aaac29b1c50)
-        XMLVM_CATCH_SPECIFIC(w16969aaac29b1c50,java_net_MalformedURLException,61)
-        XMLVM_CATCH_SPECIFIC(w16969aaac29b1c50,java_io_IOException,101)
-    XMLVM_CATCH_END(w16969aaac29b1c50)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16969aaac29b1c50)
+    XMLVM_CATCH_BEGIN(w16972aaac29b1c50)
+        XMLVM_CATCH_SPECIFIC(w16972aaac29b1c50,java_net_MalformedURLException,61)
+        XMLVM_CATCH_SPECIFIC(w16972aaac29b1c50,java_io_IOException,101)
+    XMLVM_CATCH_END(w16972aaac29b1c50)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16972aaac29b1c50)
     _r0 = _r3;
     goto label37;
     label84:;
-    XMLVM_TRY_BEGIN(w16969aaac29b1c54)
+    XMLVM_TRY_BEGIN(w16972aaac29b1c54)
     // Begin try
     _r2.o = __NEW_java_io_File();
     XMLVM_CHECK_NPE(2)
     java_io_File___INIT____java_lang_String(_r2.o, _r1.o);
     _r1 = _r2;
-    { XMLVM_MEMCPY(curThread_w16969aaac29b1c54->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w16969aaac29b1c54, sizeof(XMLVM_JMP_BUF)); goto label65; };
+    { XMLVM_MEMCPY(curThread_w16972aaac29b1c54->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w16972aaac29b1c54, sizeof(XMLVM_JMP_BUF)); goto label65; };
     XMLVM_SOURCE_POSITION("DomLSParser.java", 391)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16969aaac29b1c54)
-        XMLVM_CATCH_SPECIFIC(w16969aaac29b1c54,java_io_IOException,101)
-    XMLVM_CATCH_END(w16969aaac29b1c54)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16969aaac29b1c54)
+    XMLVM_CATCH_BEGIN(w16972aaac29b1c54)
+        XMLVM_CATCH_SPECIFIC(w16972aaac29b1c54,java_io_IOException,101)
+    XMLVM_CATCH_END(w16972aaac29b1c54)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16972aaac29b1c54)
     label91:;
-    XMLVM_TRY_BEGIN(w16969aaac29b1c56)
+    XMLVM_TRY_BEGIN(w16972aaac29b1c56)
     // Begin try
     _r2.o = __NEW_java_io_File();
     XMLVM_CHECK_NPE(2)
@@ -1770,15 +1770,15 @@ JAVA_OBJECT gnu_xml_dom_ls_DomLSParser_getInputSource___org_w3c_dom_ls_LSInput(J
     _r0.o = java_io_File_toURL__(_r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w16969aaac29b1c56)
-        XMLVM_CATCH_SPECIFIC(w16969aaac29b1c56,java_io_IOException,101)
-    XMLVM_CATCH_END(w16969aaac29b1c56)
-    XMLVM_RESTORE_EXCEPTION_ENV(w16969aaac29b1c56)
+    XMLVM_CATCH_BEGIN(w16972aaac29b1c56)
+        XMLVM_CATCH_SPECIFIC(w16972aaac29b1c56,java_io_IOException,101)
+    XMLVM_CATCH_END(w16972aaac29b1c56)
+    XMLVM_RESTORE_EXCEPTION_ENV(w16972aaac29b1c56)
     goto label37;
     label101:;
     XMLVM_SOURCE_POSITION("DomLSParser.java", 398)
-    java_lang_Thread* curThread_w16969aaac29b1c60 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w16969aaac29b1c60->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w16972aaac29b1c60 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w16972aaac29b1c60->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("DomLSParser.java", 400)
     _r1.o = __NEW_gnu_xml_dom_ls_DomLSException();
     _r2.i = 81;

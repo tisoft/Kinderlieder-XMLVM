@@ -384,7 +384,7 @@ JAVA_OBJECT gnu_xml_dom_JAXPFactory_newDocumentBuilder__(JAVA_OBJECT me)
     _r1.i = javax_xml_parsers_DocumentBuilderFactory_isNamespaceAware__(_r3.o);
     XMLVM_CHECK_NPE(0)
     javax_xml_parsers_SAXParserFactory_setNamespaceAware___boolean(_r0.o, _r1.i);
-    XMLVM_TRY_BEGIN(w30836aaab5b1c18)
+    XMLVM_TRY_BEGIN(w30839aaab5b1c18)
     // Begin try
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 111)
     XMLVM_CHECK_NPE(3)
@@ -409,16 +409,16 @@ JAVA_OBJECT gnu_xml_dom_JAXPFactory_newDocumentBuilder__(JAVA_OBJECT me)
     gnu_xml_dom_JAXPFactory_JAXPBuilder___INIT____org_xml_sax_XMLReader_gnu_xml_dom_JAXPFactory(_r0.o, _r1.o, _r3.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w30836aaab5b1c18)
-        XMLVM_CATCH_SPECIFIC(w30836aaab5b1c18,org_xml_sax_SAXException,53)
-    XMLVM_CATCH_END(w30836aaab5b1c18)
-    XMLVM_RESTORE_EXCEPTION_ENV(w30836aaab5b1c18)
+    XMLVM_CATCH_BEGIN(w30839aaab5b1c18)
+        XMLVM_CATCH_SPECIFIC(w30839aaab5b1c18,org_xml_sax_SAXException,53)
+    XMLVM_CATCH_END(w30839aaab5b1c18)
+    XMLVM_RESTORE_EXCEPTION_ENV(w30839aaab5b1c18)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label53:;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 115)
-    java_lang_Thread* curThread_w30836aaab5b1c22 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w30836aaab5b1c22->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w30839aaab5b1c22 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w30839aaab5b1c22->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("JAXPFactory.java", 117)
     _r1.o = __NEW_java_lang_StringBuilder();
     // "can't create JAXP DocumentBuilder: "

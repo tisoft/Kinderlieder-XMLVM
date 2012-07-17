@@ -464,7 +464,7 @@ JAVA_CHAR org_json_JSONTokener_next__(JAVA_OBJECT me)
     XMLVM_EXIT_METHOD()
     return _r2.i;
     label20:;
-    XMLVM_TRY_BEGIN(w13664aaab6b1c22)
+    XMLVM_TRY_BEGIN(w13667aaab6b1c22)
     // Begin try
     XMLVM_SOURCE_POSITION("JSONTokener.java", 135)
     XMLVM_CHECK_NPE(4)
@@ -474,10 +474,10 @@ JAVA_CHAR org_json_JSONTokener_next__(JAVA_OBJECT me)
     _r0.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_io_Reader*) _r2.o)->tib->vtable[9])(_r2.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w13664aaab6b1c22)
-        XMLVM_CATCH_SPECIFIC(w13664aaab6b1c22,java_io_IOException,32)
-    XMLVM_CATCH_END(w13664aaab6b1c22)
-    XMLVM_RESTORE_EXCEPTION_ENV(w13664aaab6b1c22)
+    XMLVM_CATCH_BEGIN(w13667aaab6b1c22)
+        XMLVM_CATCH_SPECIFIC(w13667aaab6b1c22,java_io_IOException,32)
+    XMLVM_CATCH_END(w13667aaab6b1c22)
+    XMLVM_RESTORE_EXCEPTION_ENV(w13667aaab6b1c22)
     XMLVM_SOURCE_POSITION("JSONTokener.java", 140)
     if (_r0.i > 0) goto label40;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 141)
@@ -488,8 +488,8 @@ JAVA_CHAR org_json_JSONTokener_next__(JAVA_OBJECT me)
     goto label19;
     label32:;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 136)
-    java_lang_Thread* curThread_w13664aaab6b1c32 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r2.o = curThread_w13664aaab6b1c32->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w13667aaab6b1c32 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r2.o = curThread_w13667aaab6b1c32->fields.java_lang_Thread.xmlvmException_;
     _r1 = _r2;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 137)
     _r2.o = __NEW_org_json_JSONException();
@@ -560,7 +560,7 @@ JAVA_OBJECT org_json_JSONTokener_next___int(JAVA_OBJECT me, JAVA_INT n1)
     label20:;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 192)
     if (_r3.i >= _r7.i) goto label43;
-    XMLVM_TRY_BEGIN(w13664aaab7b1c28)
+    XMLVM_TRY_BEGIN(w13667aaab7b1c28)
     // Begin try
     XMLVM_CHECK_NPE(6)
     _r4.o = ((org_json_JSONTokener*) _r6.o)->fields.org_json_JSONTokener.reader_;
@@ -570,10 +570,10 @@ JAVA_OBJECT org_json_JSONTokener_next___int(JAVA_OBJECT me, JAVA_INT n1)
     _r2.i = (*(JAVA_INT (*)(JAVA_OBJECT, JAVA_OBJECT, JAVA_INT, JAVA_INT)) ((java_io_Reader*) _r4.o)->tib->vtable[11])(_r4.o, _r0.o, _r3.i, _r5.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w13664aaab7b1c28)
-        XMLVM_CATCH_SPECIFIC(w13664aaab7b1c28,java_io_IOException,35)
-    XMLVM_CATCH_END(w13664aaab7b1c28)
-    XMLVM_RESTORE_EXCEPTION_ENV(w13664aaab7b1c28)
+    XMLVM_CATCH_BEGIN(w13667aaab7b1c28)
+        XMLVM_CATCH_SPECIFIC(w13667aaab7b1c28,java_io_IOException,35)
+    XMLVM_CATCH_END(w13667aaab7b1c28)
+    XMLVM_RESTORE_EXCEPTION_ENV(w13667aaab7b1c28)
     _r4.i = -1;
     if (_r2.i == _r4.i) goto label43;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 193)
@@ -581,8 +581,8 @@ JAVA_OBJECT org_json_JSONTokener_next___int(JAVA_OBJECT me, JAVA_INT n1)
     goto label20;
     label35:;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 195)
-    java_lang_Thread* curThread_w13664aaab7b1c36 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r4.o = curThread_w13664aaab7b1c36->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w13667aaab7b1c36 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r4.o = curThread_w13667aaab7b1c36->fields.java_lang_Thread.xmlvmException_;
     _r1 = _r4;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 196)
     _r4.o = __NEW_org_json_JSONException();
@@ -1009,7 +1009,7 @@ JAVA_OBJECT org_json_JSONTokener_nextValue__(JAVA_OBJECT me)
     _r8.i = 88;
     if (_r7.i != _r8.i) goto label210;
     label161:;
-    XMLVM_TRY_BEGIN(w13664aaac10b1d109)
+    XMLVM_TRY_BEGIN(w13667aaac10b1d109)
     // Begin try
     XMLVM_SOURCE_POSITION("JSONTokener.java", 429)
     _r7.o = __NEW_java_lang_Integer();
@@ -1022,17 +1022,17 @@ JAVA_OBJECT org_json_JSONTokener_nextValue__(JAVA_OBJECT me)
     java_lang_Integer___INIT____int(_r7.o, _r8.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w13664aaac10b1d109)
-        XMLVM_CATCH_SPECIFIC(w13664aaac10b1d109,java_lang_Exception,179)
-    XMLVM_CATCH_END(w13664aaac10b1d109)
-    XMLVM_RESTORE_EXCEPTION_ENV(w13664aaac10b1d109)
+    XMLVM_CATCH_BEGIN(w13667aaac10b1d109)
+        XMLVM_CATCH_SPECIFIC(w13667aaac10b1d109,java_lang_Exception,179)
+    XMLVM_CATCH_END(w13667aaac10b1d109)
+    XMLVM_RESTORE_EXCEPTION_ENV(w13667aaac10b1d109)
     goto label41;
     label179:;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 431)
-    java_lang_Thread* curThread_w13664aaac10b1d113 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r7.o = curThread_w13664aaac10b1d113->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w13667aaac10b1d113 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r7.o = curThread_w13667aaac10b1d113->fields.java_lang_Thread.xmlvmException_;
     label180:;
-    XMLVM_TRY_BEGIN(w13664aaac10b1d115)
+    XMLVM_TRY_BEGIN(w13667aaac10b1d115)
     // Begin try
     XMLVM_SOURCE_POSITION("JSONTokener.java", 443)
     _r7.o = __NEW_java_lang_Integer();
@@ -1040,17 +1040,17 @@ JAVA_OBJECT org_json_JSONTokener_nextValue__(JAVA_OBJECT me)
     java_lang_Integer___INIT____java_lang_String(_r7.o, _r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w13664aaac10b1d115)
-        XMLVM_CATCH_SPECIFIC(w13664aaac10b1d115,java_lang_Exception,187)
-    XMLVM_CATCH_END(w13664aaac10b1d115)
-    XMLVM_RESTORE_EXCEPTION_ENV(w13664aaac10b1d115)
+    XMLVM_CATCH_BEGIN(w13667aaac10b1d115)
+        XMLVM_CATCH_SPECIFIC(w13667aaac10b1d115,java_lang_Exception,187)
+    XMLVM_CATCH_END(w13667aaac10b1d115)
+    XMLVM_RESTORE_EXCEPTION_ENV(w13667aaac10b1d115)
     goto label41;
     label187:;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 444)
-    java_lang_Thread* curThread_w13664aaac10b1d119 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r7.o = curThread_w13664aaac10b1d119->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w13667aaac10b1d119 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r7.o = curThread_w13667aaac10b1d119->fields.java_lang_Thread.xmlvmException_;
     _r2 = _r7;
-    XMLVM_TRY_BEGIN(w13664aaac10b1d121)
+    XMLVM_TRY_BEGIN(w13667aaac10b1d121)
     // Begin try
     XMLVM_SOURCE_POSITION("JSONTokener.java", 446)
     _r7.o = __NEW_java_lang_Long();
@@ -1058,17 +1058,17 @@ JAVA_OBJECT org_json_JSONTokener_nextValue__(JAVA_OBJECT me)
     java_lang_Long___INIT____java_lang_String(_r7.o, _r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w13664aaac10b1d121)
-        XMLVM_CATCH_SPECIFIC(w13664aaac10b1d121,java_lang_Exception,196)
-    XMLVM_CATCH_END(w13664aaac10b1d121)
-    XMLVM_RESTORE_EXCEPTION_ENV(w13664aaac10b1d121)
+    XMLVM_CATCH_BEGIN(w13667aaac10b1d121)
+        XMLVM_CATCH_SPECIFIC(w13667aaac10b1d121,java_lang_Exception,196)
+    XMLVM_CATCH_END(w13667aaac10b1d121)
+    XMLVM_RESTORE_EXCEPTION_ENV(w13667aaac10b1d121)
     goto label41;
     label196:;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 447)
-    java_lang_Thread* curThread_w13664aaac10b1d125 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r7.o = curThread_w13664aaac10b1d125->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w13667aaac10b1d125 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r7.o = curThread_w13667aaac10b1d125->fields.java_lang_Thread.xmlvmException_;
     _r3 = _r7;
-    XMLVM_TRY_BEGIN(w13664aaac10b1d127)
+    XMLVM_TRY_BEGIN(w13667aaac10b1d127)
     // Begin try
     XMLVM_SOURCE_POSITION("JSONTokener.java", 449)
     _r7.o = __NEW_java_lang_Double();
@@ -1076,21 +1076,21 @@ JAVA_OBJECT org_json_JSONTokener_nextValue__(JAVA_OBJECT me)
     java_lang_Double___INIT____java_lang_String(_r7.o, _r5.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w13664aaac10b1d127)
-        XMLVM_CATCH_SPECIFIC(w13664aaac10b1d127,java_lang_Exception,205)
-    XMLVM_CATCH_END(w13664aaac10b1d127)
-    XMLVM_RESTORE_EXCEPTION_ENV(w13664aaac10b1d127)
+    XMLVM_CATCH_BEGIN(w13667aaac10b1d127)
+        XMLVM_CATCH_SPECIFIC(w13667aaac10b1d127,java_lang_Exception,205)
+    XMLVM_CATCH_END(w13667aaac10b1d127)
+    XMLVM_RESTORE_EXCEPTION_ENV(w13667aaac10b1d127)
     goto label41;
     label205:;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 450)
-    java_lang_Thread* curThread_w13664aaac10b1d131 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r7.o = curThread_w13664aaac10b1d131->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w13667aaac10b1d131 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r7.o = curThread_w13667aaac10b1d131->fields.java_lang_Thread.xmlvmException_;
     _r4 = _r7;
     _r7 = _r5;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 451)
     goto label41;
     label210:;
-    XMLVM_TRY_BEGIN(w13664aaac10b1d137)
+    XMLVM_TRY_BEGIN(w13667aaac10b1d137)
     // Begin try
     XMLVM_SOURCE_POSITION("JSONTokener.java", 436)
     _r7.o = __NEW_java_lang_Integer();
@@ -1100,15 +1100,15 @@ JAVA_OBJECT org_json_JSONTokener_nextValue__(JAVA_OBJECT me)
     java_lang_Integer___INIT____int(_r7.o, _r8.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w13664aaac10b1d137)
-        XMLVM_CATCH_SPECIFIC(w13664aaac10b1d137,java_lang_Exception,223)
-    XMLVM_CATCH_END(w13664aaac10b1d137)
-    XMLVM_RESTORE_EXCEPTION_ENV(w13664aaac10b1d137)
+    XMLVM_CATCH_BEGIN(w13667aaac10b1d137)
+        XMLVM_CATCH_SPECIFIC(w13667aaac10b1d137,java_lang_Exception,223)
+    XMLVM_CATCH_END(w13667aaac10b1d137)
+    XMLVM_RESTORE_EXCEPTION_ENV(w13667aaac10b1d137)
     goto label41;
     label223:;
     XMLVM_SOURCE_POSITION("JSONTokener.java", 437)
-    java_lang_Thread* curThread_w13664aaac10b1d141 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r7.o = curThread_w13664aaac10b1d141->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w13667aaac10b1d141 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r7.o = curThread_w13667aaac10b1d141->fields.java_lang_Thread.xmlvmException_;
     goto label180;
     label225:;
     _r7 = _r5;

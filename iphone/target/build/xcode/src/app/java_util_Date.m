@@ -1341,24 +1341,24 @@ JAVA_OBJECT java_util_Date_clone__(JAVA_OBJECT me)
     XMLVMElem _r0;
     XMLVMElem _r1;
     _r1.o = me;
-    XMLVM_TRY_BEGIN(w28014aaac14b1b2)
+    XMLVM_TRY_BEGIN(w28017aaac14b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("Date.java", 195)
     XMLVM_CHECK_NPE(1)
     _r0.o = java_lang_Object_clone__(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w28014aaac14b1b2)
-        XMLVM_CATCH_SPECIFIC(w28014aaac14b1b2,java_lang_CloneNotSupportedException,5)
-    XMLVM_CATCH_END(w28014aaac14b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w28014aaac14b1b2)
+    XMLVM_CATCH_BEGIN(w28017aaac14b1b2)
+        XMLVM_CATCH_SPECIFIC(w28017aaac14b1b2,java_lang_CloneNotSupportedException,5)
+    XMLVM_CATCH_END(w28017aaac14b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w28017aaac14b1b2)
     label4:;
     XMLVM_SOURCE_POSITION("Date.java", 197)
     XMLVM_EXIT_METHOD()
     return _r0.o;
     label5:;
-    java_lang_Thread* curThread_w28014aaac14b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r0.o = curThread_w28014aaac14b1b7->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w28017aaac14b1b7 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r0.o = curThread_w28017aaac14b1b7->fields.java_lang_Thread.xmlvmException_;
     _r0.o = JAVA_NULL;
     goto label4;
     //XMLVM_END_WRAPPER

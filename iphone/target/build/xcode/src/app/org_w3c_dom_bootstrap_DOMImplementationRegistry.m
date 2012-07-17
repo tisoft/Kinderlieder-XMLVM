@@ -616,16 +616,16 @@ JAVA_OBJECT org_w3c_dom_bootstrap_DOMImplementationRegistry_getClassLoader__()
     XMLVMElem _r3;
     if (!__TIB_org_w3c_dom_bootstrap_DOMImplementationRegistry.classInitialized) __INIT_org_w3c_dom_bootstrap_DOMImplementationRegistry();
     _r3.o = __CLASS_org_w3c_dom_bootstrap_DOMImplementationRegistry;
-    XMLVM_TRY_BEGIN(w44570aaab8b1b2)
+    XMLVM_TRY_BEGIN(w44572aaab8b1b2)
     // Begin try
     XMLVM_SOURCE_POSITION("DOMImplementationRegistry.java", 209)
     _r0.o = org_w3c_dom_bootstrap_DOMImplementationRegistry_getContextClassLoader__();
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44570aaab8b1b2)
-        XMLVM_CATCH_SPECIFIC(w44570aaab8b1b2,java_lang_Exception,10)
-    XMLVM_CATCH_END(w44570aaab8b1b2)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44570aaab8b1b2)
+    XMLVM_CATCH_BEGIN(w44572aaab8b1b2)
+        XMLVM_CATCH_SPECIFIC(w44572aaab8b1b2,java_lang_Exception,10)
+    XMLVM_CATCH_END(w44572aaab8b1b2)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44572aaab8b1b2)
     if (_r0.o == JAVA_NULL) goto label18;
     XMLVM_SOURCE_POSITION("DOMImplementationRegistry.java", 211)
     _r2 = _r0;
@@ -636,8 +636,8 @@ JAVA_OBJECT org_w3c_dom_bootstrap_DOMImplementationRegistry_getClassLoader__()
     return _r2.o;
     label10:;
     XMLVM_SOURCE_POSITION("DOMImplementationRegistry.java", 214)
-    java_lang_Thread* curThread_w44570aaab8b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w44570aaab8b1c12->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w44572aaab8b1c12 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w44572aaab8b1c12->fields.java_lang_Thread.xmlvmException_;
     XMLVM_SOURCE_POSITION("DOMImplementationRegistry.java", 217)
     if (!__TIB_org_w3c_dom_bootstrap_DOMImplementationRegistry.classInitialized) __INIT_org_w3c_dom_bootstrap_DOMImplementationRegistry();
     _r2.o = __CLASS_org_w3c_dom_bootstrap_DOMImplementationRegistry;
@@ -673,18 +673,18 @@ JAVA_OBJECT org_w3c_dom_bootstrap_DOMImplementationRegistry_getServiceValue___ja
     XMLVM_SOURCE_POSITION("DOMImplementationRegistry.java", 231)
     // "META-INF/services/org.w3c.dom.DOMImplementationSourceList"
     _r4.o = xmlvm_create_java_string_from_pool(3373);
-    XMLVM_TRY_BEGIN(w44570aaab9b1b5)
+    XMLVM_TRY_BEGIN(w44572aaab9b1b5)
     // Begin try
     XMLVM_SOURCE_POSITION("DOMImplementationRegistry.java", 234)
     _r2.o = org_w3c_dom_bootstrap_DOMImplementationRegistry_getResourceAsStream___java_lang_ClassLoader_java_lang_String(_r9.o, _r4.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44570aaab9b1b5)
-        XMLVM_CATCH_SPECIFIC(w44570aaab9b1b5,java_lang_Exception,55)
-    XMLVM_CATCH_END(w44570aaab9b1b5)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44570aaab9b1b5)
+    XMLVM_CATCH_BEGIN(w44572aaab9b1b5)
+        XMLVM_CATCH_SPECIFIC(w44572aaab9b1b5,java_lang_Exception,55)
+    XMLVM_CATCH_END(w44572aaab9b1b5)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44572aaab9b1b5)
     if (_r2.o == JAVA_NULL) goto label59;
-    XMLVM_TRY_BEGIN(w44570aaab9b1b7)
+    XMLVM_TRY_BEGIN(w44572aaab9b1b7)
     // Begin try
     XMLVM_SOURCE_POSITION("DOMImplementationRegistry.java", 236)
     XMLVM_SOURCE_POSITION("DOMImplementationRegistry.java", 239)
@@ -699,13 +699,13 @@ JAVA_OBJECT org_w3c_dom_bootstrap_DOMImplementationRegistry_getServiceValue___ja
     java_io_BufferedReader___INIT____java_io_Reader_int(_r3.o, _r6.o, _r7.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44570aaab9b1b7)
-        XMLVM_CATCH_SPECIFIC(w44570aaab9b1b7,java_io_UnsupportedEncodingException,40)
-        XMLVM_CATCH_SPECIFIC(w44570aaab9b1b7,java_lang_Exception,55)
-    XMLVM_CATCH_END(w44570aaab9b1b7)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44570aaab9b1b7)
+    XMLVM_CATCH_BEGIN(w44572aaab9b1b7)
+        XMLVM_CATCH_SPECIFIC(w44572aaab9b1b7,java_io_UnsupportedEncodingException,40)
+        XMLVM_CATCH_SPECIFIC(w44572aaab9b1b7,java_lang_Exception,55)
+    XMLVM_CATCH_END(w44572aaab9b1b7)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44572aaab9b1b7)
     label23:;
-    XMLVM_TRY_BEGIN(w44570aaab9b1b9)
+    XMLVM_TRY_BEGIN(w44572aaab9b1b9)
     // Begin try
     XMLVM_SOURCE_POSITION("DOMImplementationRegistry.java", 247)
     XMLVM_CHECK_NPE(3)
@@ -715,38 +715,38 @@ JAVA_OBJECT org_w3c_dom_bootstrap_DOMImplementationRegistry_getServiceValue___ja
     XMLVM_CHECK_NPE(3)
     (*(void (*)(JAVA_OBJECT)) ((java_io_BufferedReader*) _r3.o)->tib->vtable[6])(_r3.o);
     XMLVM_SOURCE_POSITION("DOMImplementationRegistry.java", 249)
-    if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w44570aaab9b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44570aaab9b1b9, sizeof(XMLVM_JMP_BUF)); goto label59; };
+    if (_r5.o == JAVA_NULL) { XMLVM_MEMCPY(curThread_w44572aaab9b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44572aaab9b1b9, sizeof(XMLVM_JMP_BUF)); goto label59; };
     //java_lang_String_length__[8]
     XMLVM_CHECK_NPE(5)
     _r6.i = (*(JAVA_INT (*)(JAVA_OBJECT)) ((java_lang_String*) _r5.o)->tib->vtable[8])(_r5.o);
-    if (_r6.i <= 0) { XMLVM_MEMCPY(curThread_w44570aaab9b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44570aaab9b1b9, sizeof(XMLVM_JMP_BUF)); goto label59; };
+    if (_r6.i <= 0) { XMLVM_MEMCPY(curThread_w44572aaab9b1b9->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44572aaab9b1b9, sizeof(XMLVM_JMP_BUF)); goto label59; };
     _r6 = _r5;
     XMLVM_SOURCE_POSITION("DOMImplementationRegistry.java", 250)
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44570aaab9b1b9)
-        XMLVM_CATCH_SPECIFIC(w44570aaab9b1b9,java_lang_Exception,55)
-    XMLVM_CATCH_END(w44570aaab9b1b9)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44570aaab9b1b9)
+    XMLVM_CATCH_BEGIN(w44572aaab9b1b9)
+        XMLVM_CATCH_SPECIFIC(w44572aaab9b1b9,java_lang_Exception,55)
+    XMLVM_CATCH_END(w44572aaab9b1b9)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44572aaab9b1b9)
     label39:;
-    XMLVM_TRY_BEGIN(w44570aaab9b1c11)
+    XMLVM_TRY_BEGIN(w44572aaab9b1c11)
     // Begin try
     XMLVM_SOURCE_POSITION("DOMImplementationRegistry.java", 256)
-    XMLVM_MEMCPY(curThread_w44570aaab9b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44570aaab9b1c11, sizeof(XMLVM_JMP_BUF));
+    XMLVM_MEMCPY(curThread_w44572aaab9b1c11->fields.java_lang_Thread.xmlvmExceptionEnv_, local_env_w44572aaab9b1c11, sizeof(XMLVM_JMP_BUF));
     XMLVM_EXIT_METHOD()
     return _r6.o;
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44570aaab9b1c11)
-        XMLVM_CATCH_SPECIFIC(w44570aaab9b1c11,java_lang_Exception,55)
-    XMLVM_CATCH_END(w44570aaab9b1c11)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44570aaab9b1c11)
+    XMLVM_CATCH_BEGIN(w44572aaab9b1c11)
+        XMLVM_CATCH_SPECIFIC(w44572aaab9b1c11,java_lang_Exception,55)
+    XMLVM_CATCH_END(w44572aaab9b1c11)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44572aaab9b1c11)
     label40:;
-    XMLVM_TRY_BEGIN(w44570aaab9b1c13)
+    XMLVM_TRY_BEGIN(w44572aaab9b1c13)
     // Begin try
     XMLVM_SOURCE_POSITION("DOMImplementationRegistry.java", 242)
-    java_lang_Thread* curThread_w44570aaab9b1c13ab1 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r6.o = curThread_w44570aaab9b1c13ab1->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w44572aaab9b1c13ab1 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r6.o = curThread_w44572aaab9b1c13ab1->fields.java_lang_Thread.xmlvmException_;
     _r0 = _r6;
     XMLVM_SOURCE_POSITION("DOMImplementationRegistry.java", 243)
     _r3.o = __NEW_java_io_BufferedReader();
@@ -758,15 +758,15 @@ JAVA_OBJECT org_w3c_dom_bootstrap_DOMImplementationRegistry_getServiceValue___ja
     java_io_BufferedReader___INIT____java_io_Reader_int(_r3.o, _r6.o, _r7.i);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44570aaab9b1c13)
-        XMLVM_CATCH_SPECIFIC(w44570aaab9b1c13,java_lang_Exception,55)
-    XMLVM_CATCH_END(w44570aaab9b1c13)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44570aaab9b1c13)
+    XMLVM_CATCH_BEGIN(w44572aaab9b1c13)
+        XMLVM_CATCH_SPECIFIC(w44572aaab9b1c13,java_lang_Exception,55)
+    XMLVM_CATCH_END(w44572aaab9b1c13)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44572aaab9b1c13)
     goto label23;
     label55:;
     XMLVM_SOURCE_POSITION("DOMImplementationRegistry.java", 253)
-    java_lang_Thread* curThread_w44570aaab9b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r6.o = curThread_w44570aaab9b1c17->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w44572aaab9b1c17 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r6.o = curThread_w44572aaab9b1c17->fields.java_lang_Thread.xmlvmException_;
     _r1 = _r6;
     _r6 = _r8;
     XMLVM_SOURCE_POSITION("DOMImplementationRegistry.java", 254)
@@ -784,7 +784,7 @@ JAVA_BOOLEAN org_w3c_dom_bootstrap_DOMImplementationRegistry_isJRE11__()
     XMLVM_ENTER_METHOD("org.w3c.dom.bootstrap.DOMImplementationRegistry", "isJRE11", "?")
     XMLVMElem _r0;
     XMLVMElem _r1;
-    XMLVM_TRY_BEGIN(w44570aaac10b1b1)
+    XMLVM_TRY_BEGIN(w44572aaac10b1b1)
     // Begin try
     XMLVM_SOURCE_POSITION("DOMImplementationRegistry.java", 266)
     // "java.security.AccessController"
@@ -792,10 +792,10 @@ JAVA_BOOLEAN org_w3c_dom_bootstrap_DOMImplementationRegistry_isJRE11__()
     _r0.o = java_lang_Class_forName___java_lang_String(_r1.o);
     // End try
     XMLVM_TRY_END
-    XMLVM_CATCH_BEGIN(w44570aaac10b1b1)
-        XMLVM_CATCH_SPECIFIC(w44570aaac10b1b1,java_lang_Exception,8)
-    XMLVM_CATCH_END(w44570aaac10b1b1)
-    XMLVM_RESTORE_EXCEPTION_ENV(w44570aaac10b1b1)
+    XMLVM_CATCH_BEGIN(w44572aaac10b1b1)
+        XMLVM_CATCH_SPECIFIC(w44572aaac10b1b1,java_lang_Exception,8)
+    XMLVM_CATCH_END(w44572aaac10b1b1)
+    XMLVM_RESTORE_EXCEPTION_ENV(w44572aaac10b1b1)
     _r1.i = 0;
     label7:;
     XMLVM_SOURCE_POSITION("DOMImplementationRegistry.java", 270)
@@ -804,8 +804,8 @@ JAVA_BOOLEAN org_w3c_dom_bootstrap_DOMImplementationRegistry_isJRE11__()
     return _r1.i;
     label8:;
     XMLVM_SOURCE_POSITION("DOMImplementationRegistry.java", 271)
-    java_lang_Thread* curThread_w44570aaac10b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
-    _r1.o = curThread_w44570aaac10b1b9->fields.java_lang_Thread.xmlvmException_;
+    java_lang_Thread* curThread_w44572aaac10b1b9 = (java_lang_Thread*)java_lang_Thread_currentThread__();
+    _r1.o = curThread_w44572aaac10b1b9->fields.java_lang_Thread.xmlvmException_;
     _r1.i = 1;
     goto label7;
     //XMLVM_END_WRAPPER
